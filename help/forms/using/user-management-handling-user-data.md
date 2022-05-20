@@ -1,6 +1,6 @@
 ---
 title: User Management Forms | Gestion des données utilisateur
-seo-title: User Management Forms | Gestion des données utilisateur
+seo-title: Forms user management | Handling user data
 description: User Management Forms | Gestion des données utilisateur
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
@@ -9,9 +9,9 @@ discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 81%
+workflow-type: ht
+source-wordcount: '884'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ User Management est un composant d’AEM Forms JEE qui permet de créer, de gér
 
 ## Données utilisateur et stockage de données {#user-data-and-data-stores}
 
-User Management stocke des données utilisateur dans une base de données telle que MySQL, Oracle, MS SQL Server et IBM DB2. En outre, tout utilisateur qui s’est connecté au moins une fois dans des applications Forms sur AEM auteur à l’adresse `https://'[server]:[port]'lc`, l’utilisateur est créé dans AEM référentiel. User Management est donc enregistré dans les stockages de données suivants :
+User Management stocke des données utilisateur dans une base de données telle que MySQL, Oracle, MS SQL Server et IBM DB2. De plus, tout utilisateur qui s’est connecté au moins une fois dans les applications Forms sur l’instance d’auteur AEM à l’adresse `https://'[server]:[port]'lc`, est créé dans le référentiel AEM. User Management est donc enregistré dans les stockages de données suivants :
 
 * Base de données
 * Référentiel AEM
@@ -88,7 +88,7 @@ User Management stocke les données utilisateur dans les tables de base de donn�
 
 ### Référentiel AEM {#aem-repository}
 
-Les données de gestion des utilisateurs pour les utilisateurs qui ont accédé au moins une fois aux applications Forms sous `https://'[server]:[port]'lc` sont également stockées dans le référentiel AEM.
+Les données User Management qui ont accédé au moins une fois aux applications Forms à l’adresse `https://'[server]:[port]'lc` sont également stockées dans le référentiel AEM.
 
 ## Accès et suppression des données utilisateur {#access-and-delete-user-data}
 
@@ -98,7 +98,7 @@ Vous pouvez accéder et exporter les données User Management pour les utilisate
 
 Pour exporter ou supprimer des données utilisateur d’une base de données User Management, vous devez vous connecter à la base de données à l’aide d’un client de base de données et rechercher l’ID principal en fonction des informations d’identification personnelle de l’utilisateur. Par exemple, pour récupérer l’ID principal d’un utilisateur à l’aide d’un ID de connexion, exécutez la commande `select` suivante sur la base de données.
 
-Dans la commande `select`, remplacez `<user_login_id>` par l’ID de connexion de l’utilisateur dont vous souhaitez récupérer l’ID principal.
+Dans la commande `select`, remplacez l’ID de connexion `<user_login_id>` par l’ID de connexion de l’utilisateur dont vous souhaitez récupérer l’ID principal.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -114,19 +114,15 @@ Exécutez les commandes de base de données suivantes pour exporter les données
 >
 >Les commandes suivantes utilisent des noms de tables de base de données dans les bases de données MySQL et IBM DB2. Lors de l’exécution de ces commandes sur les bases de données Oracle et MS SQL, remplacez les noms de table suivantes dans les commandes :
 >
->* Remplacer `EdcPrincipalLocalAccountEntity` par `EdcPrincipalLocalAccount`
-   >
-   >
-* Remplacer `EdcPrincipalEmailAliasEntity` par `EdcPrincipalEmailAliasEn`
-   >
-   >
-* Remplacer `EdcPrincipalMappingEntity` par `EdcPrincipalMappingEntit`
-   >
-   >
-* Remplacer `EdcPrincipalGrpCtmntEntity` par `EdcPrincipalGrpCtmntEnti`
+>* Remplacez `EdcPrincipalLocalAccountEntity` par `EdcPrincipalLocalAccount`
+>
+>* Remplacez `EdcPrincipalEmailAliasEntity` par `EdcPrincipalEmailAliasEn`
+>
+>* Remplacez `EdcPrincipalMappingEntity` par `EdcPrincipalMappingEntit`
+>
+>* Remplacez `EdcPrincipalGrpCtmntEntity` par `EdcPrincipalGrpCtmntEnti`
 
 >
-
 
 
 ```sql
@@ -181,13 +177,13 @@ Les données des utilisateurs Forms JEE se trouvent dans le référentiel AEM s�
 
 #### Accès aux données utilisateur {#access-user-data}
 
-Pour afficher l’utilisateur créé dans AEM référentiel, connectez-vous à `https://'[server]:[port]'/lc/useradmin` avec les informations d’identification d’administrateur AEM. Notez que les valeurs `server` et `port` indiquées dans l’URL sont celles de l’instance d’auteur AEM. Ici, vous pouvez rechercher des utilisateurs avec leur nom d’utilisateur. Cliquez deux fois sur un utilisateur pour afficher des informations telles que les propriétés, les autorisations et les groupes de l’utilisateur. La propriété `Path` d’un utilisateur indique le chemin d’accès au nœud d’utilisateur créé dans le référentiel AEM.
+Pour afficher un utilisateur créé dans le référentiel AEM, connectez-vous à `https://'[server]:[port]'/lc/useradmin` à l’aide des informations d’identification de l’administrateur AEM. Notez que les valeurs `server` et `port` indiquées dans l’URL sont celles de l’instance d’auteur AEM. Ici, vous pouvez rechercher des utilisateurs avec leur nom d’utilisateur. Cliquez deux fois sur un utilisateur pour afficher des informations telles que les propriétés, les autorisations et les groupes de l’utilisateur. La propriété `Path` d’un utilisateur indique le chemin d’accès au nœud d’utilisateur créé dans le référentiel AEM.
 
 #### Suppression de données utilisateur {#delete-aem}
 
 Pour supprimer un utilisateur :
 
-1. Accédez à `https://'[server]:[port]'/lc/useradmin` avec les informations d’identification AEM administrateur.
-1. Recherchez un utilisateur et cliquez deux fois sur le nom d’utilisateur pour ouvrir ses propriétés. Copiez la propriété `Path` .
-1. Accédez à AEM CRX DELite à l’adresse `https://'[server]:[port]'/lc/crx/de/index.jsp` et recherchez ou recherchez le chemin d’accès de l’utilisateur.
+1. Accédez à `https://'[server]:[port]'/lc/useradmin` à lʼaide des informations d’identification de lʼadministrateur AEM.
+1. Recherchez un utilisateur et cliquez deux fois sur le nom d’utilisateur pour ouvrir ses propriétés. Copiez la propriété `Path`.
+1. Accédez à AEM CRX DELite à l’adresse `https://'[server]:[port]'/lc/crx/de/index.jsp`, puis accédez ou recherchez le chemin d’accès de l’utilisateur.
 1. Supprimer le chemin d’accès et cliquez sur **[!UICONTROL Enregistrer tout]** pour supprimer définitivement l’utilisateur du référentiel AEM.
