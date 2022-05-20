@@ -1,8 +1,8 @@
 ---
-title: Surveillance des déploiements d’AEM Forms
-seo-title: Surveillance des déploiements d’AEM forms
+title: Surveillance des déploiements d’AEM forms
+seo-title: Monitoring AEM forms deployments
 description: Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Ce document vous permet d’en savoir plus sur la surveillance des déploiements d’AEM Forms.
-seo-description: Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Ce document vous permet d’en savoir plus sur la surveillance des déploiements d’AEM Forms.
+seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 76%
+workflow-type: ht
+source-wordcount: '605'
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ AEM forms propose deux MBeans qui fournissent des informations de navigation et 
 * **ServiceStatistic :** ce MBean fournit des informations sur le nom du service et sur sa version.
 * **OperationStatistic :** ce MBean fournit les statistiques de chaque service du serveur Forms. C’est là que les administrateurs peuvent obtenir des informations sur un service donné, par exemple l’heure d’appel, le nombre d’erreurs, etc.
 
-### Interfaces publiques de ServiceStatisticMbean  {#servicestatisticmbean-public-interfaces}
+### Interfaces publiques de ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
 
 Vous pouvez accéder à ces interfaces publiques du MBean ServiceStatistic à des fins de test :
 
@@ -40,7 +40,7 @@ Vous pouvez accéder à ces interfaces publiques du MBean ServiceStatistic à de
  public int getMinorVersion();
 ```
 
-### Interfaces publiques de OperationStatisticMbean  {#operationstatisticmbean-public-interfaces}
+### Interfaces publiques de OperationStatisticMbean {#operationstatisticmbean-public-interfaces}
 
 Vous pouvez accéder à ces interfaces publiques du MBean OperationStatistic à des fins de test :
 
@@ -68,43 +68,43 @@ Vous pouvez accéder à ces interfaces publiques du MBean OperationStatistic à 
  public void setExceptionMessage(String errorMessage);
 ```
 
-### Arborescence des MBeans et statistiques sur les opérations  {#mbean-tree-operation-statistics}
+### Arborescence des MBeans et statistiques sur les opérations {#mbean-tree-operation-statistics}
 
 Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une console JMX (JConsole). Ces statistiques sont des attributs de MBean et vous pouvez les parcourir dans l’arborescence suivante :
 
 **Arborescence de MBean**
 
-**Nom de domaine de l’Adobe :** dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
+**Nom de domaine Adobe :** dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
 
-**ServiceType :** AdobeService est le nom utilisé pour répertorier tous les services.
+**ServiceType :** AdobeService est le nom utilisé pour répertorier tous les services.
 
-**AdobeServiceName :** nom du service ou ID du service.
+**AdobeServiceName :** nom ou identifiant du service.
 
-**Version :** version du service.
+**Version :** version du service.
 
 **Statistiques des opérations**
 
-**Invocation Time :** temps pris pour l’exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
+**Durée d’appel :** durée de l’exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
 
-**Invocation count :** nombre de fois où le service est appelé.
+**Nombre d’appels :** nombre de fois où le service a été appelé.
 
-**Temps moyen d’appel :** temps moyen de tous les appels exécutés depuis le démarrage du serveur.
+**Durée moyenne d’appel :** durée moyenne de tous les appels qui ont été exécutés depuis le démarrage du serveur.
 
-**Délai d’appel maximal :**  durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
+**Durée maximale d’appel :** durée de l’appel le plus long qui a été exécuté depuis le démarrage du serveur.
 
-**Délai d’appel min.**  : durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
+**Durée minimale d’appel :** durée de l’appel le plus court qui a été exécuté depuis le démarrage du serveur.
 
-**Nombre d’exceptions :** nombre d’appels ayant entraîné des échecs.
+**Nombre d’exceptions :** nombre d’échecs d’appel.
 
-**Message d’exception :** message d’erreur de la dernière exception survenue.
+**Message d’erreur :** message d’erreur de la dernière exception survenue.
 
-**Date du dernier échantillonnage :** date du dernier appel.
+**Heure du dernier échantillonnage :** date du dernier appel.
 
-**Unité de temps :** la valeur par défaut est de millisecondes.
+**Unité de temps :** la valeur par défaut est la milliseconde.
 
 Pour activer le contrôle JMX, les serveurs d’applications ont généralement besoin d’être configurés. Veuillez consulter la documentation de votre serveur d’applications pour obtenir des informations détaillées.
 
-### Exemples de configuration d’un accès JMX ouvert  {#examples-of-how-to-set-up-open-jmx-access}
+### Exemples de configuration d’un accès JMX ouvert {#examples-of-how-to-set-up-open-jmx-access}
 
 **JBoss 4.0.3/4.2.0 - configuration du démarrage de la JVM**
 
@@ -119,7 +119,7 @@ Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres 
 
 **WebLogic 9.2 /10 - configuration du démarrage de la JVM**
 
-1. Modifiez le fichier startWebLogic.bat situé sous `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
+1. Modifiez le fichier startWebLogic.bat se trouvant sous `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
 1. Recherchez la ligne JAVA_OPTS et ajoutez le code suivant :
 
    ```shell
