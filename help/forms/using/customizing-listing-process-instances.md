@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de la liste des instances de processus
-seo-title: Personnalisation de la liste des instances de processus
+seo-title: Customizing the listing of process instances
 description: Comment personnaliser les propriétés affichées dans une instance de processus de l’espace de travail AEM Forms.
-seo-description: Comment personnaliser les propriétés affichées dans une instance de processus de l’espace de travail AEM Forms.
+seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
 uuid: 3b55d9b9-7f73-46dd-9eb6-42be218440a1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '284'
+ht-degree: 100%
 
 ---
 
@@ -62,20 +62,20 @@ Dans la liste des instances de processus, pour chaque instance de processus, l�
   </tr>
   <tr>
    <td>processVariables</td>
-   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient les paramètres <strong>name</strong> (le nom de la variable de processus), <strong>value</strong> (la valeur de la variable de processus, et<strong> type</strong> (le type de la valeur de processus).</td>
+   <td>Tableau d’objets de variables de processus. Chaque objet de variable de processus contient les paramètres <strong>name</strong> (le nom de la variable de processus), <strong>value</strong> (la valeur de la variable de processus), et<strong> type</strong> (le type de la valeur de processus).</td>
   </tr>
  </tbody>
 </table>
 
 **Exemple:**
 
-Pour afficher la propriété `description` de l’instance de processus dans la carte de l’instance de processus, procédez comme suit.
+Pour afficher la propriété `description` de l’instance de processus dans la vignette d’instance de processus, effectuez les étapes suivantes.
 
 1. Suivez la [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Procédez comme suit :
 
    1. Copiez /libs/ws/js/runtime/templates/processinstance.html dans /apps/ws/js/runtime/templates/, s’il n’existe pas. Cliquez sur **Enregistrer tout**.
-   1. Ajoutez la description du processus div avec class = &#39;processDescription&#39; inprocessinstance.html.
+   1. Ajoutez la description du processus div avec class = ’processDescription’ dans processinstance.html.
 
    ```jsp
    <div class="processDescription" title="<%= description%>"><%= description%></div>
@@ -84,7 +84,7 @@ Pour afficher la propriété `description` de l’instance de processus dans la 
 1. Procédez comme suit :
 
    1. Ouvrez /apps/ws/js/registry.js pour le modifier.
-   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html`par `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
+   1. Recherchez et remplacez `text!/lc/libs/ws/js/runtime/templates/processinstance.html` par `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
 
 1. Les changements ci-dessus peuvent nécessiter une mise à jour du fichier CSS en ajoutant une entrée dans la feuille de style /apps/ws/css/newStyle.css comme suit :
 
