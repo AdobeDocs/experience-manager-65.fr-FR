@@ -1,8 +1,8 @@
 ---
 title: Sauvegarde et récupération du référentiel EMC Documentum
-seo-title: Sauvegarde et récupération du référentiel EMC Documentum
+seo-title: Backing up and recovering the EMC Documentum repository
 description: Ce document décrit les tâches nécessaires à la sauvegarde et à la récupération du référentiel EMC Documentum configuré pour votre environnement AEM Forms.
-seo-description: Ce document décrit les tâches nécessaires à la sauvegarde et à la récupération du référentiel EMC Documentum configuré pour votre environnement AEM Forms.
+seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
 uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 88%
+workflow-type: ht
+source-wordcount: '803'
+ht-degree: 100%
 
 ---
 
 # Sauvegarde et récupération du référentiel EMC Documentum {#backing-up-and-recovering-the-emc-documentum-repository}
 
-Cette section décrit les tâches nécessaires à la sauvegarde et à la récupération du référentiel EMC Documentum configuré pour votre environnement AEM Forms.
+Cette section décrit les tâches nécessaires à la sauvegarde et à la récupération du référentiel EMC Documentum configuré pour votre environnement AEM forms.
 
 >[!NOTE]
 >
@@ -187,26 +187,26 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
     NMDDE_DM_PASSWD=XAtup9pl
    ```
 
-   Laissez vide le champ du mot de passe du fichier de configuration `NMDDE_DM_PASSWD`. Vous définirez ce mot de passe à l’étape suivante.
+   Ne renseignez pas le champ du mot de passe du fichier de configuration `NMDDE_DM_PASSWD`. Vous définirez ce mot de passe à l’étape suivante.
 
 1. Définissez le mot de passe du fichier de configuration comme suit :
 
-   * Ouvrez une invite de commande et remplacez-la par `[NetWorker_root]\Legato\nsr\bin`.
-   * Exécutez la commande suivante : `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;password>*
+   * Ouvrez une invite de commande, puis modifiez la valeur sur `[NetWorker_root]\Legato\nsr\bin`.
+   * Exécutez la commande suivante : `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;mot de passe>*
 
 1. Créez les fichiers de commande (.bat) exécutables utilisés pour sauvegarder la base de données (reportez-vous à la documentation de NetWorker). Définissez les fichiers de commandes en fonction de votre installation.
 
    * Sauvegarde complète de la base de données (nsrnmddbf.bat) :
 
-      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+      `NetWorker_database_module_root` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P`*[mot de passe ]*`-l full`*&lt;nom_base_de_données>*
 
    * Sauvegarde incrémentielle de la base de données (nsrnmddbi.bat) :
 
-      `[NetWorker_database_module_root]` `-s`*&lt;networker_server_name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+      `[NetWorker_database_module_root]` `-s`*&lt;Nom_Serveur_Networker>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;nom_base_de_données>*
 
    * Sauvegarde du journal de la base de données (nsrnmddbl.bat) :
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;nom_base_de_données>*
 
       Où :
 
@@ -214,7 +214,7 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
       `NetWorker_Server_Name` est le serveur sur lequel NetWorker est installé.
 
-      `username` &amp;  `password` sont le nom d’utilisateur et le mot de passe de l’utilisateur administrateur de base de données.
+      `username` et `password` sont le nom d’utilisateur et le mot de passe de l’administrateur de la base de données.
 
       `database_name` est le nom de la base de données à sauvegarder.
 
@@ -227,14 +227,14 @@ Cette section décrit l’installation et la configuration du logiciel EMC NetW
 
    **Nom :** chemin d’accès complet au répertoire partagé
 
-   **Type de média :** `File`
+   **Type de média :** `File`
 
 1. Cliquez avec le bouton droit de la souris sur le nouveau périphérique, puis sélectionnez Operations.
 1. Cliquez sur Label, saisissez un nom, puis cliquez sur Mount.
 
 Un périphérique est ajouté sur lequel les fichiers sauvegardés seront enregistrés. Vous pouvez ajouter plusieurs périphériques de formats différents.
 
-## Sauvegarde d’EMC Documentum Content Server  {#back-up-the-emc-documentum-content-server}
+## Sauvegarde d’EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
 Après avoir réalisé une sauvegarde complète des données AEM forms, procédez comme suit (voir [Sauvegarde des données AEM forms](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data)).
 
@@ -242,14 +242,14 @@ Après avoir réalisé une sauvegarde complète des données AEM forms, procéde
 >
 >les scripts de commande exigent que le chemin d’accès complet soit configuré sur le fichier nsrnmd_win.cfg créé dans la section [Préparation d’EMC Document Content Server pour la sauvegarde et la récupération](backing-recovering-emc-documentum-repository.md#preparing-the-emc-document-content-server-for-backup-and-recovery).
 
-1. Ouvrez une invite de commande et remplacez-la par `[NetWorker_root]\Legato\nsr\bin`.
+1. Ouvrez une invite de commande, puis modifiez la valeur sur `[NetWorker_root]\Legato\nsr\bin`.
 1. Exécutez la commande suivante :
 
    ```shell
     - nsrnmdsv.exe -f <path_to_cfg_file>
    ```
 
-## Restauration d’EMC Documentum Content Server  {#restore-the-emc-documentum-content-server}
+## Restauration d’EMC Documentum Content Server {#restore-the-emc-documentum-content-server}
 
 Avant de restaurer les données de votre environnement AEM forms, procédez comme suit (voir [Récupération des données AEM forms](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)).
 
@@ -262,7 +262,7 @@ Avant de restaurer les données de votre environnement AEM forms, procédez comm
 1. Cliquez sur l’outil Restore, puis sélectionnez Normal.
 1. A gauche de l’écran, sélectionnez la base de données correspondant à votre Docbase, puis cliquez sur le bouton Start de la barre d’outils.
 1. Lorsque la base de données est restaurée, redémarrez le service Docbase.
-1. Ouvrez une invite de commande et remplacez-la par *[racine_NetWorker]*\Legato\nsr\bin
+1. Ouvrez une invite de commande, puis saisissez *[racine_NetWorker]*\Legato\nsr\bin
 1. Exécutez la commande suivante :
 
    ```shell
