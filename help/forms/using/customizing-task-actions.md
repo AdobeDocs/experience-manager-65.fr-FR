@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des actions de tâche
-seo-title: Personnalisation des actions de tâche
+seo-title: Customizing Task Actions
 description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions, et personnaliser les images utilisées dans des actions d’acheminement.
-seo-description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions, et personnaliser les images utilisées dans des actions d’acheminement.
+seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
 uuid: f6aebcd5-beac-41bf-95bf-2c07d36afa8b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: d17863fb-7950-493d-b378-16861c4af176
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 62%
+workflow-type: ht
+source-wordcount: '287'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ L’espace de travail AEM Forms permet aux utilisateurs de personnaliser les act
 
 ## Personnalisation du style de texte {#customizing-text-style}
 
-Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css` :
+Pour personnaliser le style de texte, ajoutez le fragment de code suivant dans le fichier `/apps/ws/css/newStyle.css` :
 
 ```css
 /*-------- For Task Actions visible in task list task action popup ----------------------------------------------------*/
@@ -131,15 +131,15 @@ Pour personnaliser les images, ajoutez le fragment de code suivant dans le fichi
 }
 ```
 
-## Affichage des images pour des actions uniquement  {#showing-only-images-for-actions}
+## Affichage des images pour des actions uniquement {#showing-only-images-for-actions}
 
-Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d’informations, voir [Images pour actions d’itinéraire](/help/forms/using/images-route-actions.md).
+Pour afficher uniquement des images pour des actions, personnalisez les images utilisées dans les actions d’acheminement. Pour plus d’informations, voir [Images pour les actions d’itinéraire](/help/forms/using/images-route-actions.md).
 
 ### Menu contextuel de l’action de tâche Liste de tâches {#task-list-task-action-nbsp-pop-up-menu}
 
-1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un module de développement, voir [Création du code de l’espace de travail AEM Forms.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. Vous avez besoin du paquet de développement pour personnaliser les éléments du menu contextuel de l’action de tâche Liste de tâches de l’espace de travail AEM Forms. Pour plus d’informations sur la création d’un programme de développement, voir [Générer du code de l’espace de travail AEM Forms](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code).
 
-1. Copiez /libs/ws/js/runtime/templates/task.html dans `/apps/ws/js/runtime/templates/task.html`remplacez le fragment de code suivant :
+1. Copiez /libs/ws/js/runtime/templates/task.html dans `/apps/ws/js/runtime/templates/task.html`pour remplacer le fragment de code suivant :
 
    ```html
    // Orignal code
@@ -212,7 +212,7 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
        </div>
    ```
 
-1. Supprimez la largeur fixe affectée à une balise d’ancrage dans le fichier `/apps/ws/css/newStyle.css` :
+1. Supprimez la largeur fixe associée à une balise d’ancrage dans le fichier `/apps/ws/css/newStyle.css` :
 
    ```css
    .task .taskActionsPopUp ul{
@@ -264,10 +264,10 @@ Pour afficher uniquement des images pour des actions, personnalisez les images u
 
 ### Menu contextuel de l’action de tâche Détails de la tâche {#task-details-task-action-pop-up-menu}
 
-Effectuez les étapes suivantes pour personnaliser le menu contextuel des actions de tâche Détails :
+Effectuez les étapes suivantes pour personnaliser le menu contextuel des actions de tâche Détails :
 
-* Copiez le fichier /libs/ws/js/runtime/templates/taskdetails.html dans le dossier `/apps/ws/js/runtime/templates/` :
-* Encapsulez la balise de l’icône dans la balise d’ancrage au lieu du texte. Par exemple, le *nouveau code* répertorié ci-dessous encapsule la balise d’icône dans la balise d’ancrage :
+* Copiez le fichier /libs/ws/js/runtime/templates/taskdetails.html dans le dossier `/apps/ws/js/runtime/templates/` :
+* Encapsulez la balise de l’icône dans la balise d’ancrage au lieu du texte. Par exemple, le *nouveau code* répertorié ci-dessous inclut la balise de l’icône dans la balise d’ancrage :
 
 ```html
 // Original code
@@ -359,5 +359,5 @@ Effectuez les étapes suivantes pour personnaliser le menu contextuel des action
 ```
 
 * Ouvrez le fichier /apps/ws/js/registry.js pour le modifier.
-* Recherchez le texte suivant :  `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
-* Remplacez le texte localisé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`
+* Recherchez le texte suivant : `text!/lc/libs/ws/js/runtime/templates/taskdetails.html`
+* Remplacez le texte localisé par le texte suivant : `text!/lc/apps/ws/js/runtime/templates/taskdetails.html`.
