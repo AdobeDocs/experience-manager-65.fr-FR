@@ -1,8 +1,8 @@
 ---
 title: Configuration des emplacements pour Forms
-seo-title: Configuration des emplacements pour Forms
+seo-title: Configuring locations for Forms
 description: Découvrez comment configurer l’emplacement pour Forms.
-seo-description: Découvrez comment configurer l’emplacement pour Forms.
+seo-description: Learn how to configure location for Forms.
 uuid: ba35888b-492c-4678-890b-160b53e7d659
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 75%
+workflow-type: ht
+source-wordcount: '804'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez indiquer les emplacements URL, URI et fichier des attributs, tels qu
 
 ## Paramètres des emplacements {#locations-settings}
 
-**URL de base :** URL de base où se trouvent les ressources de formulaire telles que les images et les scripts. Cette valeur est nécessaire pour les transformations HTML incluant des références HREF à des dépendances externes, telles que des images ou des scripts. Un tel script est xfasubset.js, requis pour que les formulaires HTML exécutent les fonctions intelligentes XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
+**URL de base :** URL de base où se trouvent les ressources de formulaires telles que les images et les scripts. Cette valeur est nécessaire pour les transformations HTML incluant des références HREF à des dépendances externes, telles que des images ou des scripts. Un tel script est xfasubset.js, requis pour que les formulaires HTML exécutent les fonctions intelligentes XFA. Cette valeur doit être l’équivalent HTTP de l’URI racine du contenu.
 
 >[!NOTE]
 >
@@ -43,29 +43,29 @@ L’exemple suivant pointe vers le même contenu (en utilisant l’URI racine du
 
 `(BaseURL)/subdir/image1.jpg`
 
-**URI racine Web FS :** URL de l’application Web Forms. Vous pouvez laisser ce champ vide si l’application Web de Forms et l’application cliente sont déployées sur le même serveur d’applications ; l’URL racine Web de l’API de Forms est utilisée.
+**URI racine web FS :** URL de l’application web de Forms. Vous pouvez laisser ce champ vide si l’application Web de Forms et l’application cliente sont déployées sur le même serveur d’applications ; l’URL racine Web de l’API de Forms est utilisée.
 
 Si l’application Web de Forms et l’application cliente ne sont pas déployées sur le même serveur d’applications, vous devez indiquer l’URL de l’application Web de Forms dans ce champ, comme indiqué dans l’exemple qui suit :
 
 `https://<host name>:<port>/FormServer`
 
-Où `host name`et `port` sont le nom du serveur et le numéro de port du serveur qui héberge l’application web Forms.
+Où `host name` et `port` correspondent au nom du serveur et au numéro de port du serveur hébergeant l’application web de Forms.
 
 La valeur par défaut est une chaîne vide.
 
-**URI racine Web :** racine Web de l’application. Cette valeur est combinée avec le paramètre sTargetURL (lorsque sTargetURL est fourni en tant que valeur relative), indiqué via le SDK d’AEM forms, pour construire une URL absolue et accéder ainsi au contenu Web spécifique de l’application.
+**URI racine web :** racine web de l’application. Cette valeur est combinée avec le paramètre sTargetURL (lorsque sTargetURL est fourni en tant que valeur relative), indiqué via le SDK d’AEM forms, pour construire une URL absolue et accéder ainsi au contenu Web spécifique de l’application.
 
 La valeur par défaut est une chaîne vide.
 
-**URI racine du contenu :** URI ou emplacement absolu à partir duquel les formulaires sont récupérés. Cette valeur est combinée avec le paramètre sFormQuery, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut faire référence à un répertoire ou à un emplacement Web accessible par HTTP.
+**URI racine du contenu :** URI ou emplacement absolu pour la récupération des formulaires. Cette valeur est combinée avec le paramètre sFormQuery, indiqué via l’API, pour construire l’URL absolue vers le formulaire à récupérer. Cette valeur peut faire référence à un répertoire ou à un emplacement Web accessible par HTTP.
 
 La valeur par défaut est une chaîne vide.
 
-**URI de configuration XCI :**  emplacement relatif ou absolu dans lequel se trouve le fichier XCI utilisé pour le rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
+**URI de configuration XCI :** emplacement relatif ou absolu du fichier XCI utilisé pour le rendu. Si la valeur est relative, il est supposé que le fichier XCI réside dans le fichier EAR déployable d’AEM forms.
 
 La valeur par défaut est `com/adobe/formServer/PA/pa.xci`.
 
-**URI de mappage de polices :** emplacement relatif ou absolu du fichier de mappage de polices. Si la valeur est relative, il est supposé que ce fichier réside dans le fichier EAR déployable d’AEM forms.
+**URI de mappage de polices :** emplacement relatif ou absolu du fichier de mappage de polices. Si la valeur est relative, il est supposé que ce fichier réside dans le fichier EAR déployable d’AEM forms.
 
 Le fichier de mappage de polices est utilisé pour créer des mappages de polices personnalisés pour les transformations HTML dans Forms, ce qui permet d’indiquer la police qui sera remplacée lorsqu’une police n’est pas disponible sur l’ordinateur du client.
 
@@ -75,19 +75,19 @@ L’exemple suivant présente une entrée dans le fichier de mappage de polices�
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**Fichier PDF d’entrée :**  fichier PDF initial utilisé dans une transformation PDFForm pour optimiser la diffusion. Le fichier PDF initial indique un fichier PDF personnalisé (qui ne contient que des ressources de flux XFA, d’image et de police) qui est ajouté à la conception et aux données du formulaire. Le formulaire est rendu par Acrobat (version 7 ou ultérieure) et s’applique à la transformation PDFForm.
+**Fichier PDF initial :** fichier PDF initial utilisé dans une transformation PDFForm pour un envoi optimisé. Le fichier PDF initial indique un fichier PDF personnalisé (qui ne contient que des ressources de flux XFA, d’image et de police) qui est ajouté à la conception et aux données du formulaire. Le formulaire est rendu par Acrobat (version 7 ou ultérieure) et s’applique à la transformation PDFForm.
 
 La valeur par défaut est une chaîne vide.
 
-**Emplacement du cache :** indique l’emplacement du cache disque Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
+**Emplacement du cache :** détermine l’emplacement du cache disque de Forms. Lorsque ce paramètre est modifié, toutes les informations concernant le cache de l’emplacement courant sont réinitialisées et un nouveau cache est créé dans le nouveau répertoire. Sélectionnez l’une des options suivantes :
 
-**Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
+**Emplacement par défaut :** il s’agit de la sélection par défaut. Lorsque cette option est sélectionnée, le cache est créé à un emplacement différent selon le serveur d’applications utilisé :
 
-* **JBoss :** [JBoss Home]\server\[type d’installation]\svcdata\FormServer\Cache
-* **WebLogic :** [WebLogic Home]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur forms]\FormServer\Cache
-* **WebSphere :** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
+* **JBoss :** [JBoss Home]\server\[install type]\svcdata\FormServer\Cache
+* **WebLogic :** [Répertoire racine WebLogic]\user_projects\domains\[nom de domaine aem-forms]\adobe\[nom du serveur forms]\FormServer\Cache
+* **WebSphere :** [Répertoire racine IBM]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**Répertoire temporaire LC :** le cache est créé dans un sous-répertoire du répertoire temporaire d’AEM forms, qui est spécifié dans Administration Console sous Paramètres > Paramètres de Core System > Configurations > Emplacement du répertoire temporaire. Le sous-répertoire est nommé adobeform_[servername].
+**Répertoire temporaire LC :** le cache est créé dans le sous-répertoire du répertoire temporaire dʼAEM Forms, qui est spécifié dans la console dʼadministration sous Paramètres > Paramètres de Core System > Configurations > Emplacement du répertoire temporaire. Le sous-répertoire se nomme adobeform_[nom_serveur].
 
 >[!NOTE]
 >
