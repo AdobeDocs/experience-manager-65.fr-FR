@@ -1,8 +1,8 @@
 ---
 title: Obtention de documents XDP et PDF dans AEM Forms
-seo-title: Obtention de documents XDP et PDF dans AEM Forms
+seo-title: Getting XDP and PDF documents in AEM Forms
 description: AEM Forms vous permet de transférer des formulaires et des ressources prises en charge en vue de les utiliser avec des formulaires adaptatifs. Vous pouvez également transférer en bloc les formulaires et les ressources connexes sous la forme d’un fichier ZIP.
-seo-description: AEM Forms vous permet de transférer des formulaires et des ressources prises en charge en vue de les utiliser avec des formulaires adaptatifs. Vous pouvez également transférer en bloc les formulaires et les ressources connexes sous la forme d’un fichier ZIP.
+seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,9 +12,9 @@ docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 93%
+workflow-type: ht
+source-wordcount: '673'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez importer vos formulaires depuis votre système de fichiers local ver
 * Formulaires PDF
 * Document (documents PDF aplatis)
 
-Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger une ressource de type `Resource`, uniquement à côté d’un formulaire XFA dans une archive ZIP.
+Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Vous pouvez télécharger une ressource de type `Resource`, uniquement avec un formulaire XFA dans une archive ZIP.
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Vous pouvez charger les types de ressource pris en charge individuellement ou so
 
 ## Chargement de formulaires {#uploading-forms}
 
-1. Connectez-vous à l’interface utilisateur d’AEM Forms en accédant à `https://'[server]:[port]'/aem/forms.html`.
+1. Connectez-vous à l’interface utilisateur d’AEM Forms à l’adresse `https://'[server]:[port]'/aem/forms.html`.
 1. Accédez au dossier vers lequel vous souhaitez transférer le formulaire ou le dossier contenant des formulaires.
 1. Dans la barre d’outils des actions, appuyez sur **Créer > Chargement de fichier**.
 
@@ -68,7 +68,7 @@ Le serveur AEM Forms vous permet d’exécuter du code JavaScript. Du code Java
 
 Le mode Protégé est activé par défaut. Si nécessaire, vous pouvez désactiver le mode Protégé :
 
-1. Connectez-vous à la console Web AEM en tant qu’administrateur. L’URL est https://&#39;[server]:[port]&#39;/system/console/configMgr
+1. Connectez-vous à la console Web AEM en tant qu’administrateur. L’URL est la suivante : https://&#39;[serveur]:[port]&#39;/system/console/configMgr
 1. Ouvrez les configurations de Mobile Forms pour l’édition.
 1. Désélectionnez l’option Mode Protégé et cliquez sur **Enregistrer**. Le mode Protégé est désactivé.
 
@@ -85,6 +85,6 @@ La suppression d’un modèle de formulaire altère le formulaire adaptatif ou l
 
 ![Avertissement de formulaire adaptatif désynchronisé après la mise à jour du formulaire DFA associé](assets/dirtyaf.png)
 
-Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Uniquement pour les formulaires adaptatifs non conformes, une propriété de métadonnées `Model Refresh` affiche la valeur `Recommended`.
+Un indicateur est conservé pour indiquer si un formulaire adaptatif est de type « dirty ». Ces informations sont disponibles sur la page de propriétés du formulaire, avec les métadonnées du formulaire. Pour les formulaires adaptatifs « dirty » uniquement, une propriété de métadonnées `Model Refresh` affiche la valeur `Recommended`.
 
 ![Indication d’un formulaire adaptatif désynchronisé par rapport au modèle XFA](assets/model-refresh.png)
