@@ -1,20 +1,20 @@
 ---
 title: Condition intégrée et répétition dans les communications interactives et les lettres
-seo-title: Condition intégrée et répétition dans les communications interactives et les lettres
+seo-title: Inline condition and repeat in Interactive Communications and letters
 description: La condition intégrée et la répétition dans les communications interactives et les lettres permettent de créer des communications hautement contextuelles et parfaitement structurées.
-seo-description: La condition intégrée et la répétition dans les communications interactives et les lettres permettent de créer des communications hautement contextuelles et parfaitement structurées.
+seo-description: Using inline condition and repeat in Interactive Communications and letters, you can create communications that are highly contextual and well structured.
 uuid: 32b48a8b-431d-4f9c-9f51-8e7e9ac624a0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
-feature: Correspondence Management
+feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 89%
+workflow-type: ht
+source-wordcount: '1664'
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ Pour en savoir plus, voir:
 
 Pour conditionner une phrase, un paragraphe ou une chaîne de texte dans une communication interactive, vous pouvez créer une règle dans le fragment de document texte approprié. L’exemple suivant utilise une règle pour afficher un numéro sans frais uniquement pour les destinataires des États-Unis de la communication interactive.
 
-Pour plus d’informations, voir Créer une règle dans du texte dans [Textes dans les communications interactives](../../forms/using/texts-interactive-communications.md).
+Pour plus dʼinformations, consultez la section Créer une règle dans le texte dans les [Textes dans les communications interactives](../../forms/using/texts-interactive-communications.md).
 
-Une fois que vous avez inclus le fragment de texte dans une communication interactive et que l’agent utilise l’interface utilisateur de l’agent pour préparer une communication interactive, les données (modèle de données de formulaire) des destinataires sont évaluées et le texte est présenté uniquement aux destinataires aux États-Unis.
+Une fois que vous avez inclus le fragment de texte dans une communication interactive et que l’agent utilise l’interface utilisateur pour préparer une communication interactive, les données (modèle de données de formulaire) des destinataires sont évaluées et le texte n’est affiché qu’aux destinataires aux États-Unis.
 
 ### Exemple : utilisation d’une condition intégrée dans une lettre pour effectuer le rendu de l’adresse appropriée  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
@@ -58,7 +58,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    >[!NOTE]
    >
-   >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Pour enregistrer l’expression, une expression conditionnelle valide doit se trouver à l’intérieur de `${}`.
+   >Une expression conditionnelle vide ou non valide ne peut pas être enregistrée. Il doit y avoir une expression conditionnelle valide à l’intérieur de `${}` pour enregistrer l’expression.
 
 1. Procédez comme suit pour créer une condition pour déterminer si le texte sélectionné/soumis à une condition apparaît dans la lettre, puis appuyez sur la coche pour enregistrer l’expression :
 
@@ -72,7 +72,7 @@ Vous pouvez insérer une condition intégrée dans une lettre en insérant la co
 
    Une fois que la condition est insérée, vous pouvez placer le pointeur sur la poignée située à gauche de la condition pour afficher la condition. Vous pouvez appuyer sur la poignée pour afficher le menu contextuel de la condition, qui permet de modifier ou de supprimer la condition.
 
-   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editcondition removeconditionpopup](assets/4_editconditionremoveconditionpopup.png)
+   ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
 1. Insérez une condition similaire en sélectionnant le texte `Ma'am`.
 
@@ -131,11 +131,11 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
 1. Enregistrez la condition/règle, puis enregistrez la répétition. La répétition conditionnelle est appliquée au contenu sélectionné.
 
-   ![5_onmouseovercondition rule](assets/5_onmouseoverconditionrule.png)
+   ![5_onmouseoverconditionrule](assets/5_onmouseoverconditionrule.png)
 
    Au passage de la souris, le fragment de document texte affiche la condition et le séparateur utilisé dans la répétition appliquée au contenu.
 
-1. Enregistrez le fragment de document texte et prévisualisez la communication interactive concernée. Selon les données du modèle de données de formulaire, la répétition appliquée aux éléments effectue le rendu des détails de transaction similaires à ce qui suit dans l’aperçu :
+1. Enregistrez le fragment de document texte et prévisualisez la communication interactive concernée. En fonction des données du modèle de données de formulaire, la répétition appliquée aux éléments rend les détails de la transaction similaires aux éléments suivants dans l’aperçu :
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
@@ -164,7 +164,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
 
    Toutefois, la tâche de rendu d’une instruction mise en forme correctement n’est pas terminée. Si vous effectuez le rendu d’une lettre en fonction du travail réalisé jusqu’à présent, elle s’affiche comme suit :
 
-   ![1_1renderwithout_repeat](assets/1_1renderwithoutrepeat.png)
+   ![1_1renderwithoutrepeat](assets/1_1renderwithoutrepeat.png)
 
    Pour répéter le texte statique avec les éléments DD, vous devez appliquer la répétition comme expliqué dans les étapes supplémentaires.
 
@@ -182,7 +182,7 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Dans le cas contraire, si vous n’avez pas besoin de rendre les informations (ici les transactions) de manière sélective, laissez la condition vide en supprimant ce qui suit dans la boîte de dialogue : `${}`. L’enregistrement d’une expression de répétition est activé lorsque la fenêtre d’expression de répétition est vide (sans ${} lorsqu’aucune de répétition n’est nécessaire) ou lorsqu’elle contient une condition valide pour la répétition.
+   Sinon, si vous n’avez pas besoin d’effectuer un rendu des informations (ici les transactions) de manière sélective, laissez la condition vide en supprimant ce qui suit dans la boîte de dialogue : `${}`. L’enregistrement d’une expression de répétition est activé lorsque la fenêtre d’expression de répétition est vide (sans ${} lorsqu’aucune de répétition n’est nécessaire) ou lorsqu’elle contient une condition valide pour la répétition.
 
 1. Sélectionnez un séparateur pour mettre en forme le texte dynamique et appuyez sur la coche pour enregistrer :
 
@@ -202,11 +202,11 @@ L’exemple suivant présente les étapes de l’utilisation de la répétition 
    * Un exemple de fichier de données XML créé en fonction du dictionnaire de données approprié lors de l’affichage de l’aperçu de la lettre avec des exemples de données.
    * Le fichier de données XML associé au dictionnaire de données approprié.
 
-   Pour de plus amples informations, voir [Dictionnaires de données](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html).
+   Pour de plus amples informations, voir [Dictionnaires de données](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
-   Le texte statique se répète avec les détails de la transaction. La répétition du texte statique est facilitée par la répétition appliquée au texte dans cette procédure. La condition, ${DD_creditcard_TransactionAmount > 0.5}, garantit que les transactions inférieures à 0,5 USD ne sont pas rendues dans la lettre.
+   Le texte statique se répète avec les détails de la transaction. La répétition du texte statique est facilitée par la répétition appliquée au texte dans cette procédure. La condition, ${DD_creditcard_TransactionAmount > 0.5}, garantit que les transactions inférieures à 0,5 USD ne sont pas rendues dans la lettre.
 
    >[!NOTE]
    >
