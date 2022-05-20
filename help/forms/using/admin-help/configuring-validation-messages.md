@@ -1,8 +1,8 @@
 ---
 title: Configuration des messages de validation
-seo-title: Configuration des messages de validation
+seo-title: Configuring validation messages
 description: Découvrez comment spécifier l’affichage des messages de validation et leur emplacement par rapport au formulaire renvoyé dans le navigateur Web.
-seo-description: Découvrez comment spécifier l’affichage des messages de validation et leur emplacement par rapport au formulaire renvoyé dans le navigateur Web.
+seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
 uuid: f6bff4fa-f90f-4135-ae40-7ab3d3613122
 contentOwner: admin
 content-type: reference
@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 14314383-5228-4904-98c1-586f48a1142c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '374'
+workflow-type: ht
+source-wordcount: '350'
 ht-degree: 100%
 
 ---
@@ -40,7 +40,7 @@ Pour les formulaires rendus au format HTML, les erreurs de validation de formula
 
 1. Cliquez sur Enregistrer.
 
-## Définition de l’emplacement des messages de validation par rapport au formulaire renvoyé dans le navigateur Web  {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
+## Définition de l’emplacement des messages de validation par rapport au formulaire renvoyé dans le navigateur Web {#specify-the-location-of-validation-messages-relative-to-the-form-returned-in-the-web-browser}
 
 Lorsque l’option Rapport est définie sur Cadre ou Aucun cadre, vous pouvez indiquer l’emplacement des messages de validation.
 
@@ -56,7 +56,7 @@ Lorsque l’option Rapport est définie sur Cadre ou Aucun cadre, vous pouvez in
 
 1. Cliquez sur Enregistrer.
 
-## Définition de la taille du cadre  {#specify-the-frame-border-size}
+## Définition de la taille du cadre {#specify-the-frame-border-size}
 
 Lorsque l’option Rapport est définie sur Cadre, vous pouvez indiquer la taille du cadre.
 
