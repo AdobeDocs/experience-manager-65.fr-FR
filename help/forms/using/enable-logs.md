@@ -1,8 +1,8 @@
 ---
 title: Activation de la journalisation des formulaires au format HTML5
-seo-title: Activation de la journalisation des formulaires au format HTML5
+seo-title: Enable logging for HTML5 forms
 description: L’utilitaire de journalisation permet la création d’un journal pour un formulaire et vous permet de déboguer les problèmes liés au formulaire.
-seo-description: L’utilitaire de journalisation permet la création d’un journal pour un formulaire et vous permet de déboguer les problèmes liés au formulaire.
+seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
 uuid: 322306ba-8ad7-463d-8a9d-4cea5a0c4b55
 contentOwner: robhagat
 content-type: reference
@@ -13,9 +13,9 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 73%
+workflow-type: ht
+source-wordcount: '626'
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez configurer l’utilitaire de journalisation pour créer des journaux
 
 Effectuez les étapes suivantes pour configurer les journaux côté serveur :
 
-1. Accédez à `https://'[server]:[port]'/system/console/configMgr`. Recherchez et ouvrez l’option *Configuration des journaux de journalisation Apache Sling* . Une boîte de dialogue s’affiche:
+1. Accédez à `https://'[server]:[port]'/system/console/configMgr`. Recherchez et ouvrez l’option *Configuration des journaux de journalisation Apache Sling*. Une boîte de dialogue s’affiche:
 
    ![ Boîte de dialogue des options de configuration des journaux de journalisation](assets/logconfig.png)
 
@@ -52,7 +52,7 @@ Vous pouvez utiliser les méthodes suivantes pour activer la journalisation côt
 
 ### Activation de la journalisation à l’aide du paramètre de requête {#enabling-logging-using-request-parameter}
 
-Grâce à cette méthode, vous pouvez générer les journaux d’une requête particulière. Le nom du paramètre de requête est `log`. L&#39;URL du journal est la suivante :
+Grâce à cette méthode, vous pouvez générer les journaux d’une requête particulière. Le nom du paramètre de requête est `log`. L’URL du journal se présente comme suit :
 
 `https://<server>:<port>/content/xfaforms/profiles/test.html?contentRoot=<path of the folder containing form xdp>&template=<name of the xdp>&log=<log configuration>.`
 
@@ -81,7 +81,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
  </tbody>
 </table>
 
-#### Niveaux de journalisation  {#log-levels}
+#### Niveaux de journalisation {#log-levels}
 
 <table>
  <tbody>
@@ -102,7 +102,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
    <td>ERROR<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>1</td>
+   <td>3</td>
    <td>WARN<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ La configuration du journal comprend le niveau et la catégorie de journalisatio
  </tbody>
 </table>
 
-#### Configuration de la journalisation  {#log-configuration}
+#### Configuration de la journalisation {#log-configuration}
 
 Dans l’URL du journal, le paramètre de chaîne de requête de configuration de la journalisation est défini comme suit :
 
@@ -171,15 +171,15 @@ Par exemple :
 >[!NOTE]
 >
 >Le niveau de journalisation par défaut de chaque catégorie de journalisation a (xfa), b (xfaView) et c (xfaPerf) est de 2 (ERROR). En conséquence, pour configurer la journalisation 2-b6, les niveaux de journalisation des différentes catégories sont les suivants :
->a (xfa) : 2 (niveau par défaut ERROR)
->b (xfaView) : 6 (TRACE spécifiée par l’utilisateur)
->a (xfaPerf) : 2 (niveau par défaut ERROR)
+>a (xfa) : 2 (niveau par défaut ERROR)
+>b (xfaView) : 6 (TRACE spécifié par l’utilisateur)
+>a (xfaPerf) : 2 (niveau par défaut ERROR)
 
 ### Activation de la journalisation à l’aide de Configuration Manager {#enabling-logging-using-configuration-manager}
 
-Si vous utilisez Configuration Manager pour activer la journalisation, les journaux sont générés pour chaque demande de rendu jusqu’à ce que la journalisation soit à nouveau désactivée.
+Si vous utilisez Configuration Manager pour activer la journalisation, les journaux sont générés pour chaque demande de rendu jusqu’à ce que la journalisation soit de nouveau désactivée.
 
-1. Connectez-vous à CQ Configuration Manager à l’adresse `https://'[server]:[port]'/system/console/configMgr` et connectez-vous à l’aide des informations d’identification d’administrateur.
+1. Connectez-vous à CQ Configuration Manager à l’adresse `https://'[server]:[port]'/system/console/configMgr` à lʼaide de vos informations d’identification d’administrateur.
 1. Recherchez et cliquez sur **Configurations des formulaires mobiles**.
 1. Dans la zone de texte Options de débogage, saisissez les configurations des journaux comme décrit dans la section précédente. Par exemple : **2-a4-b5-c6**
 
@@ -189,23 +189,23 @@ Si vous utilisez Configuration Manager pour activer la journalisation, les journ
 
 ## Téléchargement des journaux {#uploading-logs}
 
-Si la destination est définie sur 1, tous les messages du journal de script du client sont dirigés vers la console. Si un administrateur a besoin de ces journaux avec les journaux du serveur, définissez le niveau de destination sur 2. À ce niveau, tous les journaux sont collectés dans un objet JS côté client et si le formulaire est rendu avec le profil par défaut, un bouton **Envoyer les journaux** s’affiche à gauche du bouton **Mettre en surbrillance les champs existants** dans la barre d’outils. Lorsque l’utilisateur clique sur le lien, tous les journaux collectés sont publiés sur le serveur et consignés dans le fichier journal des erreurs configuré sur le serveur.
+Si la destination est définie sur 1, tous les messages du journal de script du client sont dirigés vers la console. Si un administrateur a besoin de ces journaux ainsi que des journaux de serveur, définissez le niveau de destination sur 2. À ce niveau, tous les journaux sont rassemblés dans un objet JS côté client et, si le formulaire est généré avec le profil par défaut, un bouton **Envoyer des journaux** apparaît à gauche du bouton **Mettre les champs existants en surbrillance** dans la barre d’outils. Lorsque l’utilisateur clique sur le lien, tous les journaux rassemblés sont publiés sur le serveur et consignés dans le fichier de journalisation des erreurs configuré sur le serveur.
 
 Par défaut, toutes les informations sont ajoutées dans le fichier error.log du répertoire /crx-repository/logs/.
 
 Pour modifier l’emplacement et le nom du fichier journal :
 
-1. Connectez-vous à Configuration Manager en tant qu’administrateur. L’URL par défaut de Configuration Manager est `https://'[server]:[port]'/system/console/configMgr`.
-1. Cliquez sur **Configuration des journaux de journalisation Sling d’Apache** Une boîte de dialogue s’affiche.
+1. Connectez-vous à Configuration Manager en tant qu’administrateur. L’URL de Configuration Manager définie par défaut est `https://'[server]:[port]'/system/console/configMgr`.
+1. Cliquez sur **Configuration des journaux de journalisation Sling d’Apache**. Une boîte de dialogue s’affiche.
 
    ![logconfig-1](assets/logconfig-1.png)
 
 1. Remplacez le **Niveau de journal** par Débogage.
 
-1. Spécifiez le chemin et le nom du **Fichier journal**.
+1. Spécifiez le chemin d’accès et le nom du **fichier journal**.
 
    >[!NOTE]
    >
    >Pour créer des journaux dans le répertoire où les autres fichiers journaux sont conservés, spécifiez ../logs/&lt;nom_fichier> dans la propriété Fichiers journaux.
 
-1. Remplacez **Enregistreur** par **HTMLFormsPerfLogger** et cliquez sur **Enregistrer**.
+1. Modifiez **Logger** en **HTMLFormsPerfLogger** et cliquez sur **Enregistrer**.
