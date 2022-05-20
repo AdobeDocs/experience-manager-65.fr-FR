@@ -1,8 +1,8 @@
 ---
 title: Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable
-seo-title: Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable
+seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
 description: Les extensions Reader permettent d’activer des fonctions interactives dans les documents Adobe PDF via Acrobat Reader. Vous pouvez utiliser la bibliothèque portable de protection (PPL) et étendre Reader aux document PDF protégés DRM.
-seo-description: Les extensions Reader permettent d’activer des fonctions interactives dans les documents Adobe PDF via Acrobat Reader. Vous pouvez utiliser la bibliothèque portable de protection (PPL) et étendre Reader aux document PDF protégés DRM.
+seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
 uuid: 0da17641-d24c-43c2-b918-8b5abe1e5473
 contentOwner: khsingh
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 98%
+workflow-type: ht
+source-wordcount: '796'
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Vous pouvez exécuter les tâches ci-dessous à l’aide du service Reader Exten
 * Supprimer les droits d’utilisation d’un document PDF protégé par une stratégie.
 * Rechercher les droits d’utilisation appliqués à un document PDF protégé par une stratégie.
 
-### Appliquer les droits d’utilisation à un document PDF protégé par une stratégie de sécurité documentaire.{#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
+### Appliquer les droits d’utilisation à un document PDF protégé par une stratégie de sécurité documentaire. {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
 Vous pouvez utiliser l’API Java `applyUsageRights` pour appliquer des droits d’utilisation aux documents PDF protégés par une stratégie. Les droits d’utilisation appartiennent à la fonctionnalité disponible par défaut dans Acrobat mais non dans Adobe Reader, telle que la capacité à ajouter des commentaires à un formulaire ou à remplir des champs de formulaire et enregistrer ce dernier. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document dont les droits sont activés dans Adobe Reader peut effectuer les opérations autorisées pour ce document spécifique.
 
-**Syntaxe :** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
+**Syntaxe :** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 
 <table>
  <tbody>
@@ -79,7 +79,7 @@ Vous pouvez utiliser l’API Java `applyUsageRights` pour appliquer des droits d
 
 Vous pouvez utiliser l’API Java `getDocumentUsageRights` pour récupérer les droits d’utilisation de l’extension Reader appliqués à un document PDF protégé par une stratégie. En récupérant des informations sur les droits d’utilisation, vous pourrez en savoir davantage sur les fonctionnalités Reader Extension activées pour le document PDF protégé par une stratégie.
 
-**Syntaxe :** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
+**Syntaxe :** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 
 <table>
  <tbody>
@@ -144,7 +144,7 @@ System.out.println("RE rights for the file are :\n"+right1);
 
 Vous pouvez utiliser l’API Java `removeUsageRights` pour supprimer des droits d’utilisation d’un document protégé par une stratégie. La suppression des droits d’utilisation d’un document PDF protégé par une stratégie est nécessaire avant d’exécuter d’autres opérations AEM Forms sur le document. Vous devez par exemple signer numériquement (ou certifier) un document PDF avant de définir ses droits d’utilisation. Par conséquent, pour effectuer des opérations sur un document défini avec des droits d’utilisation, vous devez supprimer les droits du document PDF, effectuer les autres opérations, comme la signature numérique d’un document, puis réappliquer des droits d’utilisation à ce même document.
 
-**Syntaxe :** `InputStream removeUsageRights(InputStream inputFile)`
+**Syntaxe :** `InputStream removeUsageRights(InputStream inputFile)`
 
 <table>
  <tbody>
