@@ -1,14 +1,14 @@
 ---
-title: Comment créer un Forms adaptatif à l’aide d’un schéma XML ?
-description: Découvrez comment utiliser le schéma XML comme modèle de formulaire dans un formulaire adaptatif. Vous pouvez appliquer des modèles XSD existants pour créer des formulaires adaptatifs et faire glisser des éléments de schéma depuis XSD sur votre formulaire adaptatif. Explorez un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
-feature: Formulaires adaptatifs
+title: Comment créer des formulaires adaptatifs à l’aide d’un schéma XML ?
+description: Découvrez comment utiliser un schéma XML comme modèle de formulaire dans un formulaire adaptatif. Vous pouvez appliquer des modèles XSD existants afin de créer des formulaires adaptatifs et faire glisser et déposer des éléments de schéma du modèle XSD jusqu’à votre formulaire adaptatif. Explorez plus en détail un exemple de schéma XML, ajoutez des propriétés spéciales aux champs à l’aide du schéma XML et limitez les valeurs acceptables pour un composant de formulaire adaptatif.
+feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 85%
+workflow-type: ht
+source-wordcount: '1073'
+ht-degree: 100%
 
 ---
 
@@ -143,18 +143,18 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
   <tr>
    <td><code>default="default value"</code></td>
    <td>Ajoute une valeur par défaut.</td>
-   <td>Elément et attribut</td>
+   <td>Élément et attribut</td>
   </tr>
   <tr>
    <td><code>minOccurs="3"</code></td>
    <td><p>Spécifie les occurrences minimales.</p> <p>(Pour les sous-formulaires répétables (types complexes))</p> </td>
-   <td>Elément (type complexe)</td>
+   <td>Élément (type complexe)</td>
   </tr>
   <tr>
    <td><code class="code">maxOccurs="10"
       </code></td>
    <td><p>Spécifie les occurrences maximales.</p> <p>(Pour les sous-formulaires répétables (types complexes))</p> </td>
-   <td>Elément (type complexe)</td>
+   <td>Élément (type complexe)</td>
   </tr>
  </tbody>
 </table>
@@ -167,12 +167,11 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 >* l’insertion d’un espace entre la casse mixte.
 
 >
->
-Par exemple, si vous ajoutez l’élément de schéma `userFirstName` , la légende générée dans le formulaire adaptatif est `User First Name`.
+>Par exemple, si vous ajoutez l’élément de schéma `userFirstName`, la légende générée dans le formulaire adaptatif est `User First Name`.
 
 ## Valeurs possibles de limite pour un composant de formulaire adaptatif {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pour limiter les valeurs acceptables pour un composant de formulaire adaptatif :
+Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pour limiter les valeurs possibles pour un composant de formulaire adaptatif :
 
 <table>
  <tbody>
@@ -284,11 +283,11 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
  </tbody>
 </table>
 
-## Questions fréquemment posées {#frequently-asked-questions}
+## Questions fréquemment posées  {#frequently-asked-questions}
 
 **Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
-Lorsque vous double-cliquez sur un élément dans l’outil de recherche de contenu, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
+Lorsque vous double-cliquez sur un élément dans l’Outil de recherche de contenu, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
@@ -296,7 +295,7 @@ Le champ bindRef</code> affiche l’association entre un élément de l’arbore
 
 >[!NOTE]
 >
->Les attributs comportent un symbole `@` dans leur valeur `bindRef`pour les distinguer des éléments. Par exemple, `/config/projectDetails/@duration`.
+>Les attributs sont dotés du symbole `@` dans la valeur `bindRef` pour les différencier des éléments. Par exemple, `/config/projectDetails/@duration`.
 
 **Pourquoi est-ce que je ne parviens pas à faire glisser des éléments individuels d’un sous-formulaire (structure générée à partir de n’importe quel type complexe) pour les sous-formulaires répétables (les valeurs minOccurs ou maxOccurs sont supérieures à 1) ?**
 
