@@ -1,8 +1,8 @@
 ---
 title: Suivi des processus
-seo-title: Suivi des processus
+seo-title: Tracking processes
 description: Suivi de vos processus en les recherchant et en affichant leurs détails.
-seo-description: Suivi de vos processus en les recherchant et en affichant leurs détails.
+seo-description: How to track your processes by searching for them and viewing their details.
 uuid: 7bda9b61-0a40-4349-9aee-dc6636e5e692
 contentOwner: robhagat
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 exl-id: 381a46c6-c73c-476a-a1a0-20d921069c37
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '406'
+ht-degree: 100%
 
 ---
 
@@ -31,21 +31,21 @@ Vous pouvez définir les colonnes qui s’affichent dans les résultats de reche
 >
 >Les résultats de recherche n’incluent pas les tâches qui se sont affichées dans une liste de groupe ou partagée, à laquelle vous avez accès, à moins que nous n’ayez modifié les tâches. Les résultats n’incluent pas les instances de processus terminées que l’administrateur a purgées.
 
-### Recherche par nom de processus  {#search-by-process-name}
+### Recherche par nom de processus {#search-by-process-name}
 
 1. Sur la page Suivi, dans le volet de gauche, sélectionnez un nom du processus. Toutes les instances du processus pour lequel vous avez lancé ou exécuté une tâche sont affichées sur le panneau principal.
 1. Cliquez sur une instance de processus pour afficher plus d’informations sur cette dernière.
 
-### Recherche d’une tâche à l’aide d’un modèle de recherche  {#search-for-a-task-using-a-search-template}
+### Recherche d’une tâche à l’aide d’un modèle de recherche {#search-for-a-task-using-a-search-template}
 
 1. Sur la page Suivi, dans la liste de gauche, sélectionnez **Modèles de recherche** et choisissez un modèle de recherche.
 1. Si le modèle prend en charge les paramètres de recherche, remplissez les champs de modèle pour les restreindre, puis cliquez sur **Rechercher**. Affiche une liste de toutes les tâches que vous avez modifiées, correspondant aux critères de recherche.
 
-## Affichage des détails du processus  {#view-process-details}
+## Affichage des détails du processus {#view-process-details}
 
 Sur la page Suivi, vous pouvez sélectionner un processus et afficher ses détails. Vous pouvez effectuer une recherche portant sur les processus en fonction de divers paramètres pour afficher les détails de la tâche. Vous pouvez également afficher l’onglet Etat pour les processus qui présentent plusieurs utilisateurs recevant des tâches en parallèle où les outils pour la révision de documents sont activés.
 
-**Etat :** l&#39;état des tâches dans un processus est affiché dans la colonne &#39;Action sélectionnée&#39; lorsque vous cliquez sur une tâche. Toutefois, l’état du processus n’est pas disponible.
+**Statut :** le statut des tâches dans un processus est affiché dans la colonne « Action sélectionnée » lorsque vous cliquez sur une tâche. Toutefois, l’état du processus n’est pas disponible.
 
 1. Sélectionnez l’instance du processus dans la liste des résultats de la recherche, pour afficher les détails des tâches qui font partie de l’instance du processus.
 1. Pour afficher plus d’informations sur une tâche, effectuez une ou plusieurs des actions suivantes :
