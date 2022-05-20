@@ -1,8 +1,8 @@
 ---
 title: Activation des pièces jointes à un formulaire HTML5
-seo-title: Activation des pièces jointes à un formulaire HTML5
+seo-title: Enabling attachments for an HTML5 form
 description: Par défaut, la prise en charge de pièces jointes des formulaires HTML5 est désactivée.
-seo-description: Par défaut, la prise en charge de pièces jointes des formulaires HTML5 est désactivée.
+seo-description: By default, the attachment support for HTML5 forms is disabled.
 uuid: 2c62ac3e-4b27-46c7-a61d-a805fb5d26fb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
-workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 64%
+workflow-type: ht
+source-wordcount: '335'
+ht-degree: 100%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 64%
 
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
-1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec une propriété de chaîne à sélection multiple `mfAttachmentOptions`. Chaque chaîne de la propriété `mfAttachmentOptions` doit avoir un format `property=value` pour configurer les options du widget de pièce jointe. Les valeurs `property` et `value` peuvent correspondre à l’une des valeurs suivantes :
+1. Créez un [profil personnalisé](/help/forms/using/custom-profile.md) avec une propriété de chaîne MultiSelect `mfAttachmentOptions`. Chaque chaîne de la propriété `mfAttachmentOptions` doit être au format `property=value` pour configurer les options du widget de pièce jointe. `property` et `value` peuvent avoir l’une des valeurs suivantes :
 
    | Propriété | Valeur |
    |--- |---|
    | multiSelect | vrai ou faux (vrai par défaut) |
-   | fileSizeLimit | Nombre en Mo (2 Mo par défaut). Par exemple, 5. |
-   | buttonText | Texte de bouton pour la fenêtre contextuelle (&quot;Joindre&quot; par défaut) |
-   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; par défaut). |
+   | fileSizeLimit | Nombre en Mo (2 Mo par défaut). Par exemple, 5. |
+   | buttonText | Texte des boutons de la fenêtre contextuelle (« Joindre » par défaut). |
+   | d’accepter ; | liste séparée par des virgules des types de fichiers à accepter (« audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf » par défaut). |
 
    Par exemple :
 
-   ![configuration des options](assets/mfAttachmentOptions.png)
+   ![configurer les options](assets/mfAttachmentOptions.png)
 
    Au besoin, vous pouvez également spécifier d’autres options personnalisées pour la propriété `mfAttachmentOptions`.
 
@@ -59,10 +59,10 @@ Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec d
 
 ## Format d’envoi de pièce jointe {#attachment-submission-format}
 
-Lorsque les pièces jointes sont activées, le formulaire HTML5 envoie des données multipartie. Les données d’envoi en plusieurs parties comportent deux parties **dataXml** et **pièces jointes**.
+Lorsque les pièces jointes sont activées, le formulaire HTML5 envoie des données multipartie. Les données multipartie sont envoyées en deux parties : fichier **dataXML** et **pièces jointes**.
 
 >[!NOTE]
 >
->Pour une compatibilité descendante, si l’option `mfAllowAttachments` est désactivée, les formulaires HTML5 n’envoient pas les données en plusieurs parties. Il envoie un fichier XML de données simple au format **application/xml**.
+>Pour une compatibilité ascendante, si l’option `mfAllowAttachments` est désactivée, les formulaires HTML5 n’envoient pas les données multipartie. Ils envoient seulement le fichier de données XML au format **application/xml**.
 
 Si l’indicateur mfAllowAttachments est activé, le [service proxy du service d’envoi](/help/forms/using/service-proxy.md) traite également les données multipartie avec les données Xml et les pièces jointes.
