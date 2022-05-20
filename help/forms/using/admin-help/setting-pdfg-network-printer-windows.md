@@ -1,8 +1,8 @@
 ---
 title: Configuration d’une imprimante réseau PDFG Network Printer (Windows uniquement)
-seo-title: Configuration d’une imprimante réseau PDFG Network Printer (Windows uniquement)
+seo-title: Setting up a PDFG Network Printer (Windows only)
 description: Découvrez comment installer une imprimante réseau PDFG Network Printer (Windows uniquement)
-seo-description: Découvrez comment installer une imprimante réseau PDFG Network Printer (Windows uniquement)
+seo-description: Learn how to set up a PDFG Network Printer ( Windows only )
 uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 97%
+workflow-type: ht
+source-wordcount: '608'
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Pour configurer une imprimante réseau PDFG Network Printer, procédez comme sui
 1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des services.
 1. Sur la page Gestion des services, cliquez sur provider.email_sendmail_service, spécifiez les paramètres SMTP et cliquez sur Enregistrer.
 
-## Configuration des paramètres de l’imprimante réseau PDFG Network Printer  {#configure-the-pdfg-network-printer-settings}
+## Configuration des paramètres de l’imprimante réseau PDFG Network Printer {#configure-the-pdfg-network-printer-settings}
 
 1. Dans Administration Console, cliquez sur Services > PDF Generator > PDFG Network Printer.
 1. Dans les listes Paramètres Adobe PDF et Paramètres de protection, sélectionnez les options à appliquer au PDF généré. Pour plus d’informations sur ces paramètres, voir [Configuration des paramètres Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) et [Configuration des paramètres de protection](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
@@ -57,13 +57,13 @@ Pour configurer une imprimante réseau PDFG Network Printer, procédez comme sui
 
 Si vous souhaitez rétablir le message électronique par défaut, cliquez sur Rétablir le contenu du courrier électronique.
 
-## Installation de l’imprimante réseau PDFG sur l’ordinateur d’un utilisateur  {#install-pdfg-network-printer-on-a-user-s-computer}
+## Installation de l’imprimante réseau PDFG sur l’ordinateur d’un utilisateur {#install-pdfg-network-printer-on-a-user-s-computer}
 
 Les utilisateurs qui possèdent le rôle Administrateur de PDFG ou Utilisateur de PDFG peuvent installer une imprimante réseau PDFG. Vous devez disposer d’un JDK 32 bits installé sur l’ordinateur.
 
 1. (Administrateurs de PDFG) Dans Administration Console, cliquez sur Services > PDF Generator > PDFG Network Printer.
 
-   (Utilisateurs de PDFG) Accédez à `http(s)://[host]:'port'/pdfgui` et cliquez sur le lien sous Installation de l’imprimante réseau PDFG.
+   (Utilisateurs PDFG) Accédez à lʼadresse `http(s)://[host]:'port'/pdfgui` et cliquez sur le lien sous Installation de l’imprimante réseau PDFG Network Printer.
 
 1. Sous Installation de l’imprimante réseau PDFG, cliquez sur le lien. Lorsque vous êtes invité à saisir les informations de votre compte utilisateur, indiquez le nom d’utilisateur et le mot de passe utilisés à l’étape 1 pour vous connecter. Un message apparaît, indiquant que l’installation de l’imprimante est terminée.
 
