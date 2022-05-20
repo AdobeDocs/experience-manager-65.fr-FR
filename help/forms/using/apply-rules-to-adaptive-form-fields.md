@@ -1,21 +1,21 @@
 ---
 title: Application de règles aux champs de formulaires adaptatifs
-seo-title: Application de règles aux champs de formulaires adaptatifs
+seo-title: Apply rules to adaptive form fields
 description: Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif.
-seo-description: Créez des règles pour ajouter de l’interactivité, une logique d’entreprise et des validations intelligentes à un formulaire adaptatif.
+seo-description: Create rules to add interactivity, business logic, and smart validations to an adaptive form.
 page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
-workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 70%
+workflow-type: ht
+source-wordcount: '1124'
+ht-degree: 100%
 
 ---
 
-# Didacticiel : application de règles aux champs de formulaires adaptatifs {#tutorial-apply-rules-to-adaptive-form-fields}
+# Didacticiel : application de règles aux champs de formulaires adaptatifs {#tutorial-apply-rules-to-adaptive-form-fields}
 
 ![06-apply-rules-to-adaptive-form_main](assets/06-apply-rules-to-adaptive-form_main.png)
 
@@ -48,19 +48,19 @@ Chaque client se voit attribuer un numéro d’ID de client unique, ce qui perme
 1. Appuyez sur le champ **[!UICONTROL ID de client]** et appuyez sur l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
 1. Appuyez sur l’icône **[!UICONTROL + Créer]** pour ajouter une règle. L’éditeur visuel s’ouvre.
 
-   Dans l’éditeur visuel, l’instruction **[!UICONTROL WHEN]** est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, **[!UICONTROL ID de client]**) à partir duquel vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL WHEN]**.
+   Dans l’éditeur visuel, l’instruction **[!UICONTROL QUAND]** est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, **[!UICONTROL ID de client]**) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL QUAND]**.
 
-1. Appuyez sur la liste déroulante **[!UICONTROL Sélectionner l’état]** et sélectionnez **[!UICONTROL est modifié]**.
+1. Cliquez sur le menu déroulant **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL a changé]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
 1. Dans l’instruction **[!UICONTROL PUIS]**, sélectionnez **[!UICONTROL Appeler un service]** à partir du menu déroulant **[!UICONTROL Sélectionner une action.]**
 1. Sélectionnez le service **[!UICONTROL Extraire l’adresse d’expédition]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
-1. Faites glisser et déposez le champ **[!UICONTROL ID client]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]** dans la zone **[!UICONTROL INPUT]**.
+1. Faites glisser et déposez le champ **[!UICONTROL ID du client]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]** dans la zone **[!UICONTROL ENTREE]**.
 
    ![dropobjectstoinputfield-retrievedata](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. Faites glisser et déposez le champ **[!UICONTROL ID client, nom, adresse d’expédition, état et code postal]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]** dans la zone **[!UICONTROL SORTIE]**.
+1. Faites glisser et déposez le champ **[!UICONTROL ID du client, Nom, Adresse d’expédition, État et Code postal]** de l’onglet Objets de formulaire vers le champ **[!UICONTROL Déposer l’objet ou sélectionner ici]** dans la zone **[!UICONTROL SORTIE]**.
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
@@ -75,28 +75,28 @@ Chaque client se voit attribuer un numéro d’ID de client unique, ce qui perme
 Une fois les détails du client extraits de la base de données, vous pouvez mettre à jour l’adresse de livraison, l’État et le code postal. La procédure ci-dessous appelle un service de modèle de données de formulaire pour mettre à jour les informations client dans la base de données :
 
 1. Sélectionnez le champ **[!UICONTROL Envoyer]** et appuyez sur l’icône **[!UICONTROL Modifier les règles]**. La fenêtre Éditeur de règles s’ouvre.
-1. Sélectionnez la règle **[!UICONTROL Envoyer - Cliquez sur]** et appuyez sur l’icône **[!UICONTROL Modifier]**. Les options permettant de modifier la règle Envoi s’affichent.
+1. Sélectionnez la règle **[!UICONTROL Envoyer - Cliquer]** et appuyez sur l’icône **[!UICONTROL Modifier]**. Les options permettant de modifier la règle Envoi s’affichent.
 
-   ![submit-rule](assets/submit-rule.png)
+   ![règle-envoi](assets/submit-rule.png)
 
-   Dans l’option WHEN , les options **[!UICONTROL Submit]** et **[!UICONTROL sont déjà sélectionnées.]**
+   Dans l’option WHEN, les options **[!UICONTROL Envoi]** et **[!UICONTROL est activé]** sont déjà sélectionnées.
 
-   ![submit-is-clicked](assets/submit-is-clicked.png)
+   ![envoi-est-activé](assets/submit-is-clicked.png)
 
 1. Dans l’option **[!UICONTROL PUIS]**, appuyez sur l’option **[!UICONTROL + Ajoutez l’instruction]**. Sélectionnez **[!UICONTROL Appel du service]** à partir du menu déroulant **[!UICONTROL Sélectionner l’action]**.
 1. Sélectionnez le service **[!UICONTROL Mettre à jour l’adresse de livraison]** dans le menu déroulant **[!UICONTROL Sélectionner]**.
 
-   ![update-shipping-address](assets/update-shipping-address.png)
+   ![mettre-à-jour-l’adresse-de-livraison](assets/update-shipping-address.png)
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. Glissez-déposez le champ **[!UICONTROL Adresse d’expédition, État et Code postal]** de l’onglet [!UICONTROL Objets de formulaire] vers la propriété .table correspondante (par exemple, customerdetails .shippingAddress) du **[!UICONTROL Déposez l’objet ou sélectionnez ici]** dans la zone **[!UICONTROL INPUT]**. Tous les champs portant le préfixe tablename (par exemple, customerdetails dans ce cas pratique) servent de données d’entrée pour le service de mise à jour. Tout le contenu fourni dans ces champs est mis à jour dans la source de données.
+1. Faites glisser et déposez le champ **[!UICONTROL Adresse d’expédition, état et code postal]** de l’onglet [!UICONTROL Objets de formulaire] vers l’élément tablename.property correspondant (par exemple, customerdetails.shippingAddress) du champ **[!UICONTROL Déposer l’objet ou sélectionnez ici]** dans la zone **[!UICONTROL ENTRÉE]**. Tous les champs portant le préfixe tablename (par exemple, customerdetails dans ce cas d’utilisation) servent de données d’entrée pour le service de mise à jour. Tout le contenu fourni dans ces champs est mis à jour dans la source de données.
 
    >[!NOTE]
    >
-   >Ne faites pas glisser les champs **[!UICONTROL Nom]** et **[!UICONTROL ID client]** vers la propriété tablename.property correspondante (par exemple, customerdetails.name). Cela permet d’éviter de mettre à jour le nom et l’ID du client par erreur.
+   >Ne faites pas glisser les champs **[!UICONTROL Nom]** et **[!UICONTROL ID du client]** vers l’élément tablename.property correspondant (par exemple, customerdetails.name). Cela permet d’éviter de mettre à jour le nom et l’ID du client par erreur.
 
-1. Glissez-déposez le champ **[!UICONTROL ID du client]** de l’onglet Objets de formulaire vers le champ ID dans la zone **[!UICONTROL ENTREE]**. Les champs sans nom de table prédéfini (par exemple, customerdetails dans ce cas pratique) servent de paramètre de recherche pour le service de mise à jour. Le champ **[!UICONTROL id]** de ce cas pratique identifie de manière unique un enregistrement dans la table **customerdetails**.
+1. Glissez-déposez le champ **[!UICONTROL ID du client]** de l’onglet [!UICONTROL Objets de formulaire] vers le champ ID dans la zone **[!UICONTROL ENTREE]**. Les champs sans préfixe tablename (par exemple, customerdetails dans ce cas d’utilisation) servent de paramètre de recherche pour le service de mise à jour. Le champ **[!UICONTROL id]** dans ce cas d’utilisation identifie de manière unique un enregistrement dans la tableau **customerdetails**.
 1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer la règle. Dans la fenêtre Éditeur de règles, appuyez sur **[!UICONTROL Fermer]**.
 1. Prévisualisez le formulaire adaptatif. Récupérez les détails d’un client, mettez à jour l’adresse de livraison et envoyez le formulaire. Lorsque vous récupérez à nouveau les détails du même client, l’adresse de livraison mise à jour s’affiche.
 
@@ -106,14 +106,14 @@ Vous devez exécuter la validation sur le formulaire pour vous assurer que les d
 
 Les formulaires adaptatifs fournissent plusieurs composants avec des validations intégrées, par exemple, des champs d’adresse électronique et des champs numériques que vous pouvez utiliser pour les cas d’utilisation courants. Utilisez l’éditeur de règles pour les cas d’utilisation avancés, par exemple, pour afficher un message d’erreur lorsque la base de données renvoie zéro (0) enregistrement (aucun enregistrement).
 
-La procédure suivante montre comment créer une règle pour afficher un message d’erreur si l’ID de client saisi dans le formulaire n’existe pas dans la base de données. La règle met également l’accent sur le champ **[!UICONTROL ID de client]** et le réinitialise. La règle utilise [l’API dataIntegrationUtils du service de modèle de données de formulaire](/help/forms/using/invoke-form-data-model-services.md) pour vérifier si l’ID du client existe dans la base de données.
+La procédure suivante montre comment créer une règle pour afficher un message d’erreur si l’ID du client entré dans le formulaire n’existe pas dans la base de données. La règle met également l’accent sur le champ **[!UICONTROL ID du client]** et le réinitialise. La règle utilise [l’API dataIntegrationUtils du service de modèle de données de formulaire](/help/forms/using/invoke-form-data-model-services.md) pour vérifier si l’ID du client existe dans la base de données.
 
-1. Appuyez sur le champ **[!UICONTROL ID de client]** et appuyez sur l’icône `Edit Rules`. La fenêtre [!UICONTROL Éditeur de règles] s’ouvre.
+1. Appuyez sur le champ **[!UICONTROL ID du client]** et sur l’icône `Edit Rules`. La fenêtre [!UICONTROL Éditeur de règles] s’ouvre.
 1. Appuyez sur l’icône **[!UICONTROL + Créer]** pour ajouter une règle. L’éditeur visuel s’ouvre.
 
-   Dans l’éditeur visuel, l’instruction **[!UICONTROL WHEN]** est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, **[!UICONTROL ID de client]**) à partir duquel vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL WHEN]**.
+   Dans l’éditeur visuel, l’instruction **[!UICONTROL QUAND]** est sélectionnée par défaut. De même, l’objet du formulaire (dans ce cas, **[!UICONTROL ID du client]**) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL QUAND]**.
 
-1. Appuyez sur la liste déroulante **[!UICONTROL Sélectionner l’état]** et sélectionnez **[!UICONTROL est modifié]**.
+1. Appuyez sur la liste déroulante **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL est modifié]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 
@@ -121,7 +121,7 @@ La procédure suivante montre comment créer une règle pour afficher un message
 
 1. Basculez de l’**[!UICONTROL éditeur visuel]** à l’**[!UICONTROL éditeur de code]**. Le contrôle du commutateur est sur le côté droit de la fenêtre. L’éditeur de code s’ouvre, affichant un code similaire à celui-ci :
 
-   ![éditeur de code](assets/code-editor.png)
+   ![éditeur-de-code](assets/code-editor.png)
 
 1. Remplacez la section de variable d’entrée par le code suivant :
 
@@ -131,7 +131,7 @@ La procédure suivante montre comment créer une règle pour afficher un message
    };
    ```
 
-1. Remplacez la section `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` par le code suivant :
+1. Remplacez la section `guidelib.dataIntegrationUtils.executeOperation (operationInfo, inputs, outputs)` par le code suivant :
 
    ```javascript
    guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs, function (result) {
