@@ -1,20 +1,20 @@
 ---
 title: Création et utilisation des thèmes
-seo-title: Création et utilisation des thèmes
+seo-title: Creating and using themes
 description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif ou à une communication interactive. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs ou de communications interactives.
-seo-description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif ou à une communication interactive. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs ou de communications interactives.
+seo-description: You can use themes to stylize and provide a visual identity to an adaptive form or interactive communication. You can share a theme across any number of adaptive forms or interactive communications.
 uuid: 88b6b6fd-181b-48c5-ac15-2b37592bd14b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
-feature: Formulaires adaptatifs
+feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '6064'
-ht-degree: 92%
+workflow-type: ht
+source-wordcount: '6026'
+ht-degree: 100%
 
 ---
 
@@ -41,16 +41,16 @@ Procédez comme suit pour créer un thème :
 
 1. Cliquez sur **Adobe Experience Manager**, sur **Formulaires**, puis sur **Thèmes**.
 
-1. Sur la page Thèmes, cliquez sur **Créer > Thème**.
+1. Sur la page Thèmes, cliquez sur **Créer > Thème**.
 Un assistant de création de thème se lance.
 
 1. Dans l’onglet Réglages de base de l’assistant de création de thème, indiquez le **titre** et le **nom** du thème. Il s’agit de champs obligatoires.
 
-1. Dans l&#39;onglet Avancé , vous avez deux champs :
+1. Dans l’onglet Réglages avancés, vous verrez deux champs :
 
-   * **Emplacement** de la bibliothèque cliente : Emplacement dans le référentiel qui stocke les clientlibs pour le thème.
+   * **Emplacement de la bibliothèque cliente** : emplacement dans le référentiel contenant les clientlibs de ce thème.
 
-   * **Catégorie** de bibliothèque cliente : Fournit un champ de texte pour saisir le nom de la catégorie clientlib du thème.
+   * **Catégorie Clientlib** : fournit un champ de texte permettant de saisir le nom de la catégorie clientlib du thème.
 
 1. Cliquez sur **Créer**, puis sur **Modifier** pour ouvrir le thème dans l’éditeur de thèmes, ou cliquez sur **Terminé** pour revenir à la page de thèmes.
 
@@ -76,7 +76,7 @@ Pour charger un thème :
 
 1. Cliquez sur **Adobe Experience Manager**, sur **Formulaires**, puis sur **Thèmes**.
 
-1. Sur la page Thèmes, cliquez sur **Créer > Chargement de fichier**.
+1. Sur la page Thèmes, cliquez sur **Créer > Chargement de fichier**.
 1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **Charger**.
 Le thème chargé est disponible dans la page Thèmes.
 
@@ -162,7 +162,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
    <td>Liens</td>
    <td>
     <ul>
-     <li>Contient la section "Référencé par". Répertorie les formulaires qui utilisent le thème.</li>
+     <li>Contient la section « Référencé par ». Répertorie les formulaires qui utilisent le thème.</li>
      <li>Etant donné que le thème ne fait référence à aucun autre actif, il n’y a pas de section « Référence ».</li>
     </ul> </td>
   </tr>
@@ -173,9 +173,9 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
    <td>
     <ul>
      <li>Le chemin d’accès défini par l’utilisateur du référentiel de « /etc » dans lequel les bibliothèques clientes correspondant à ce thème sont stockées.</li>
-     <li>Valeur par défaut : « /etc/clientlibs/fd/themes » + chemin d’accès relatif de l’actif du thème.</li>
+     <li>Valeur par défaut : « /etc/clientlibs/fd/themes » + chemin d’accès relatif de l’actif du thème.</li>
      <li>Si l’emplacement n’existe pas, la hiérarchie des dossiers est générée automatiquement.</li>
-     <li>Lorsque cette valeur change, la structure de nœud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> Si vous modifiez l’emplacement de la bibliothèque cliente par défaut, dans le référentiel CRXDE, affectez- <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>à  <code>forms-users</code> et  <code>crx:replicate</code>,  <code>jcr:read </code>à  <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre liste de contrôle d’accès en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em></li>
+     <li>Lorsque cette valeur change, la structure de nœud clientlib est déplacée vers le nouvel emplacement saisi.<br /> <em><strong>Remarque :</strong> si vous modifiez l’emplacement clientlib par défaut, dans le référentiel CRXDE, affectez <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code> à <code>forms-users</code> et <code>crx:replicate</code>, <code>jcr:read </code> à <code>fd-service</code> dans le nouvel emplacement. Joignez également une autre liste ACL en ajoutant <code>deny jcr:addChildNodes</code> pour <code>forms-user</code></em>.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -186,7 +186,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
     <ul>
      <li>Nom de la catégorie de bibliothèque cliente défini par l’utilisateur pour ce thème.</li>
      <li>Un message d’erreur s’affiche si le nom est déjà utilisé par un autre thème existant.</li>
-     <li>Valeur par défaut : calculée à l’aide de l’emplacement du thème.</li>
+     <li>Valeur par défaut : calculée à l’aide de l’emplacement du thème.</li>
      <li>Lorsque cette valeur est modifiée, le nom de la catégorie est mis à jour sur le nœud de la bibliothèque cliente correspondant. La mise à jour du Nom de la catégorie de bibliothèque cliente dans les fichiers jsp n’est pas obligatoire, car le nom de la catégorie de bibliothèque cliente est utilisé par référence.</li>
     </ul> </td>
   </tr>
@@ -195,7 +195,7 @@ Liste de propriétés des métadonnées d’un thème (sur la page Propriétés 
 
 ## À propos de l’éditeur de thèmes {#about-the-theme-editor}
 
-AEM Forms est assorti d’un éditeur de thème. Il s’agit d’une interface conviviale pour les utilisateurs professionnels et les concepteurs web/développeurs qui fournit les fonctionnalités nécessaires pour spécifier facilement le style de divers éléments de formulaire adaptatif et de communication interactive. Lorsque vous créez un thème, il est stocké en tant qu’entité distincte, telle que les formulaires, les communications interactives, les lettres, les fragments de document et les dictionnaires de données.
+AEM Forms est assorti d’un éditeur de thème. Il s’agit d’une interface conviviale pour les utilisateurs professionnels et les concepteurs web/développeurs qui fournit les fonctionnalités nécessaires pour spécifier facilement le style de différents éléments des formulaires adaptatifs et de la communication interactive. Lorsque vous créez un thème, il est stocké en tant qu’entité distincte comme les formulaires, les communications interactives, les lettres, les fragments de documents et les dictionnaires de données.
 
 L’éditeur de thèmes vous permet de personnaliser les styles des composants mis en forme dans un thème. Vous pouvez personnaliser l’apparence d’un formulaire ou d’une communication interactive sur un périphérique.
 
@@ -224,7 +224,7 @@ Lorsque vous mettez en forme un champ, tous les champs tels que l’âge, le nom
    * **Affichage CSS** : vous permet d’afficher le fichier CSS du composant sélectionné
    En outre, dans la barre latérale, vous verrez une flèche dans la partie inférieure. Lorsque vous cliquez sur la flèche, vous bénéficiez de deux options supplémentaires : **Simuler la réussite** et **Simuler une erreur.** Ces options, ainsi que les options décrites ci-dessus, sont expliquées en détails [ci-dessous](../../forms/using/themes.md#using-rail).
 
-[ ![Editeur de thème où Rampe et Zone de travail sont mis en surbrillance.](assets/themes.png)](assets/themes-1.png) **A.** Barre latérale  **B.** Canevas
+[ ![Editeur de thème où Rampe et Zone de travail sont mis en surbrillance.](assets/themes.png)](assets/themes-1.png) **A.** Barre latérale **B.** Zone de travail
 
 ### Mise en forme des composants {#styling-components}
 
@@ -236,7 +236,7 @@ Les options de la barre latérale vous permettent de sélectionner et de mettre 
 
 Cliquer sur le bouton Modifier au niveau d’un composant dans la barre latérale sélectionne le composant dans Zone de travail et vous permet de mettre en forme le composant à l’aide des options de la barre latérale.
 
-Certains composants tels que la zone de texte, la zone numérique, le bouton radio et la case à cocher sont classés sous des composants génériques comme Champ. Par exemple, vous souhaitez personnaliser le style des boutons radio. Pour sélectionner des boutons radio à mettre en forme, sélectionnez **Champ > Widget > Bouton radio**.
+Certains composants tels que la zone de texte, la zone numérique, le bouton radio et la case à cocher sont classés sous des composants génériques comme Champ. Par exemple, vous souhaitez personnaliser le style des boutons radio. Pour sélectionner des boutons radio à mettre en forme, sélectionnez **Champ > Widget > Bouton radio**.
 
 Cliquez sur **DÉVELOPPER TOUT** dans l’encadré pour afficher, sélectionner et mettre en forme les composants classés qui ne sont pas visibles immédiatement.
 
@@ -271,7 +271,7 @@ Utilisez des points d’arrêt de l’éditeur de thèmes pour définir une autr
 
 >[!NOTE]
 >
->Le thème est d’abord créé à l’aide d’un formulaire ou d’une communication interactive, puis appliqué sur différents formulaires ou communications interactives. Les points d’arrêt utilisés lors de la création du thème peuvent être différents du formulaire ou de la communication interactive auquel/à laquelle le thème est appliqué. Les requêtes multimédias CSS sont basées sur le formulaire ou la communication interactive utilisé lors de la création du thème, et non sur le formulaire ou la communication interactive sur lequel le thème est appliqué.
+>Le thème est d’abord créé à l’aide d’un formulaire ou d’une communication interactive, puis appliqué sur différents formulaires ou communications interactives. Les points d’arrêt utilisés lors de la création du thème peuvent être différents du formulaire ou de la communication interactive auquel/à laquelle le thème est appliqué. Les requêtes multimédias CSS sont basées sur le formulaire ou la communication interactive utilisée lors de la création du thème, et non sur le formulaire ou la communication interactive à laquelle le thème est appliqué.
 
 ### Mise en forme des modifications en contexte des propriétés de la barre latérale lors de la sélection d’objets {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
@@ -281,7 +281,7 @@ Lorsque vous sélectionnez un composant dans Zone de travail, ses propriétés d
 
 L’éditeur de thèmes met en cache jusqu’à 10 styles appliqués à un composant. Vous pouvez utiliser les styles mis en cache avec d’autres composants d’un thème. Les styles récemment utilisés sont disponibles juste en dessous du composant sélectionné dans la barre latérale sous forme de liste. Au début, la liste de styles récemment utilisée est vide.
 
-![asset-library](assets/asset-library.png)
+![Bibliothèque de ressources](assets/asset-library.png)
 
 Lorsque vous créez un composant, les styles sont mis en cache et répertoriés dans la zone de liste. Dans cet exemple, l’étiquette de la zone de texte est conçue pour modifier la taille et la couleur de la police. Vous pouvez suivre des étapes similaires pour choisir une image ou modifier les couleurs pour personnaliser un composant. Observez comment le style est mis en cache et répertorié dans la zone de liste lorsque le style d’étiquette de champ est modifié.
 
@@ -289,7 +289,7 @@ Lorsque vous créez un composant, les styles sont mis en cache et répertoriés 
 
 Dans cet exemple, le style de l’étiquette de champ est modifié et, lorsque l’option Description du panneau réactif est sélectionnée pour le style, une entrée de liste est ajoutée dans la bibliothèque de ressources. L’entrée dans la bibliothèque de ressources peut être utilisée pour modifier le style de Description du panneau réactif.
 
-Lorsqu’un style est ajouté à la bibliothèque de ressources, il est disponible pour d’autres thèmes et dans le [mode Style](../../forms/using/inline-style-adaptive-forms.md) de l’interface utilisateur de l’éditeur de formulaire ou de communication interactive. De même, lorsque vous utilisez le mode Style de l’interface utilisateur de l’éditeur de formulaires ou de communication interactive pour appliquer un style à un composant, le style est mis en cache et disponible dans les thèmes.
+Lorsqu’un style est ajouté à la bibliothèque de ressources, il est disponible pour d’autres thèmes et dans le [mode Style](../../forms/using/inline-style-adaptive-forms.md) de l’interface utilisateur de l’éditeur de formulaire ou de communication interactive. De même, lorsque vous utilisez le mode Style de l’interface utilisateur de l’éditeur de formulaire ou de communication interactive pour personnaliser un composant, le style est mis en cache et disponible dans les thèmes.
 
 Le bouton Plus de la bibliothèque de ressources vous permet d’enregistrer le style de façon permanente avec le nom de votre choix. Le bouton Plus enregistre le style même si vous ne cliquez pas sur le bouton Enregistrer dans la barre latérale pour appliquer le style à un composant. Le bouton Plus pour enregistrer un style pour une utilisation ultérieure n’est pas disponible en mode Style.
 
@@ -297,7 +297,7 @@ Le bouton Plus de la bibliothèque de ressources vous permet d’enregistrer le 
 
 Lorsque vous attribuez un nom personnalisé pour un style, le style est lié à un thème et n’est plus disponible pour les autres thèmes. Pour supprimer un style enregistré :
 
-1. Dans la barre d’outils ZONE DE TRAVAIL, cliquez sur **Options du thème** ![theme-options](assets/theme-options.png) > **Gérer les styles**.
+1. Dans la barre d’outils ZONE DE TRAVAIL, cliquez sur **Options du thème** ![theme-options](assets/theme-options.png) > **Gérer les styles**.
 1. Dans la boîte de dialogue Gérer les styles, sélectionnez un style enregistré, cliquez sur **Supprimer**.
 
    ![Supprimer le style enregistré](assets/manage-styles.png)
@@ -312,13 +312,13 @@ Les modifications apportées au style sont immédiatement répercutées dans le 
 
 ### Thème avec un autre formulaire adaptatif ou communication interactive {#theme-with-another-adaptive-form-or-interactive-communication}
 
-Lorsque vous créez un thème, il est créé à l’aide d’un formulaire fourni avec l’éditeur de thèmes. Vous indiquez la mise en forme pour les composants de ce formulaire. Au lieu du formulaire fourni avec l’éditeur de thème, vous pouvez sélectionner un formulaire ou une communication interactive de votre choix pour fournir un style et prévisualiser ses résultats.
+Lorsque vous créez un thème, il est créé à l’aide d’un formulaire fourni avec l’éditeur de thèmes. Vous indiquez la mise en forme pour les composants de ce formulaire. Au lieu du formulaire fourni avec l’éditeur de thème, vous pouvez sélectionner un formulaire ou une communication interactive de votre choix pour indiquer un style et prévisualiser ses résultats.
 
 Pour remplacer le formulaire ou la communication interactive actif/active dans la zone de travail de l’éditeur de thème :
 
 1. Dans le panneau ÉDITEUR DE THÈMES, cliquez sur **Options du thème** ![theme-options](assets/theme-options.png) >**Configurer**.
 
-1. Dans l’onglet Général , recherchez et sélectionnez un formulaire ou une communication interactive pour le champ **Formulaire/document adaptatif**.
+1. Dans l’onglet Général, recherchez et sélectionnez un formulaire adaptatif ou une communication interactive pour le champ **Formulaire/document adaptatif**.
 
 ### Rétablir/annuler {#redo-undo}
 
@@ -332,10 +332,10 @@ Les boutons Rétablir/annuler apparaissent lorsque vous mettez en forme un compo
 
 ## Utilisation de l’éditeur de thèmes {#using-the-theme-editor}
 
-L’éditeur de thèmes vous permet de modifier un thème que vous avez créé ou téléchargé. Accédez à **Formulaires et documents > Thèmes**, sélectionnez un thème et ouvrez-le. Le thème s’ouvre dans l’éditeur de thèmes.
+L’éditeur de thèmes vous permet de modifier un thème que vous avez créé ou téléchargé. Accédez à **Formulaires et documents > Thèmes**, sélectionnez un thème et ouvrez-le. Le thème s’ouvre dans l’éditeur de thèmes.
 
 Comme nous l’avons mentionné ci-dessus, l’éditeur de thèmes présente deux panneaux : Barre latérale et Zone de travail.
-![theme-editor](assets/theme-editor.png)
+![Éditeur de thèmes](assets/theme-editor.png)
 
 Personnalisation du style de réussite du composant Widget de zone de texte dans l’éditeur de thèmes. Le composant est sélectionné dans la zone de travail, et son état est sélectionné dans la barre latérale. Les options de mise en forme disponibles dans la barre latérale sont utilisées pour personnaliser l’aspect d’un composant.
 
@@ -348,7 +348,7 @@ Dans la barre d’outils de la zone de travail se trouvent les éléments suivan
 * **Activer/désactiver le panneau latéral** ![toggle-side-panel](assets/toggle-side-panel.png) : permet d’afficher ou de masquer la barre latérale.
 * **Options du thème** ![theme-options](assets/theme-options.png) : propose trois options.
 
-   * Configuration : Fournit des options pour sélectionner le formulaire d’aperçu ou la communication interactive, la bibliothèque cliente de base et la configuration Adobe Fonts.
+   * Configurer : fournit des options de sélection de la prévisualisation du formulaire ou de la communication interactive, de la bibliothèque de clients de base et de la configuration Adobe Fonts.
    * Afficher le thème CSS : génère des CSS pour le thème sélectionné.
    * Gérer les styles : fournit des options de gestion des styles de texte et d’images
    * Aide : exécute une visite guidée de l’image de l’éditeur de thèmes.
@@ -360,7 +360,7 @@ Lorsque vous sélectionnez un composant dans la zone de travail, vous voyez la b
 * **Widget de zone numérique** : vous permet de sélectionner le composant pour personnaliser son aspect dans la barre latérale.
 * **Widget de champ** : vous permet de sélectionner le composant générique pour la mise en forme. Dans cet exemple, tous les composants de saisie de texte (zone de texte/zone numérique/exécution numérique pas à pas/saisie de date) sont sélectionnés pour la mise en forme.
 
-* ![au niveau du champ](assets/field-level.png) : Permet de basculer vers un composant générique pour la mise en forme. Si vous sélectionnez la zone numérique et appuyez sur cette icône, le composant de champ est sélectionné. Si vous sélectionnez le composant de champ et appuyez sur cette icône, le panneau est sélectionné. Si vous continuez à appuyer sur cette icône pour la sélection, vous finissez par sélectionner le style de la mise en forme.
+* ![field-level](assets/field-level.png) : vous permet de basculer vers un composant générique pour le mettre en forme. Si vous sélectionnez la zone numérique et appuyez sur cette icône, le composant de champ est sélectionné. Si vous sélectionnez le composant de champ et appuyez sur cette icône, le panneau est sélectionné. Si vous continuez à appuyer sur cette icône pour la sélection, vous finissez par sélectionner le style de la mise en forme.
 
 >[!NOTE]
 >
@@ -432,21 +432,23 @@ Les options Simuler une erreur et une réussite sont situées en bas de la barre
 
 Par exemple, vous ajoutez un champ numérique dans votre formulaire, puis indiquez son style dans l’éditeur de thèmes. Lorsque les utilisateurs saisissent une valeur alphanumérique dans le champ, vous souhaitez que la couleur d’arrière-plan de la zone de texte change. Sélectionnez le champ numérique dans le thème, et utilisez l’option d’état dans la barre latérale. Vous sélectionnez l’état d’erreur dans la barre latérale et modifiez la couleur d’arrière-plan en rouge. Pour prévisualiser le comportement, vous pouvez utiliser l’option Simuler une erreur disponible dans la barre latérale. Les options Simuler une erreur et une réussite sont décrites en détails ci-dessous :
 
-* **Simuler la réussite **: vous permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état de réussite. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe en suivant tous les conseils que vous avez fournis, la zone de texte se met en vert. Lorsque la zone de texte passe au vert, elle est en état de réussite. Vous pouvez spécifier la mise en forme d’un composant dans l’état de réussite et simuler son aspect à l’aide de l’option Simuler la réussite.
+* **Simuler la réussite** :
+vous permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état de réussite. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe en suivant tous les conseils que vous avez fournis, la zone de texte se met en vert. Lorsque la zone de texte passe au vert, elle est en état de réussite. Vous pouvez spécifier la mise en forme d’un composant dans l’état de réussite et simuler son aspect à l’aide de l’option Simuler la réussite.
 
-* **Simuler une erreur **: vous permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état d’erreur. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe qui ne suit pas toutes les directives données, la zone de texte passe au rouge. Lorsque la zone de texte passe au rouge, elle est en état d’erreur. Vous pouvez spécifier la mise en forme d’un composant à l’état d’erreur, et simuler son aspect à l’aide de l’option Simuler une erreur.
+* **Simuler une erreur**:
+vous permet de voir à quoi ressemble un composant si vous spécifiez sa mise en forme pour l’état d’erreur. Par exemple, dans un formulaire, les clients définissent le mot de passe. Les utilisateurs peuvent définir un mot de passe en fonction des directives que vous donnez. Lorsqu’un utilisateur saisit un mot de passe qui ne suit pas toutes les directives données, la zone de texte passe au rouge. Lorsque la zone de texte passe au rouge, elle est en état d’erreur. Vous pouvez spécifier la mise en forme d’un composant à l’état d’erreur, et simuler son aspect à l’aide de l’option Simuler une erreur.
 
 ### Mise en forme d’un composant {#styling-a-component}
 
-Par exemple, dans votre formulaire, vous disposez de deux types de zones de texte : une qui accepte uniquement les valeurs numériques et d’autres qui acceptent des valeurs alphanumériques. Vous pouvez personnaliser la mise en forme de la zone de texte acceptant les valeurs numériques uniquement (une zone numérique).
+Par exemple, dans votre formulaire, vous disposez de deux types de zones de texte : une qui accepte uniquement les valeurs numériques et d’autres qui acceptent des valeurs alphanumériques. Vous pouvez personnaliser la mise en forme de la zone de texte acceptant les valeurs numériques uniquement (une zone numérique).
 
-Effectuez les étapes suivantes pour personnaliser la mise en forme d’un composant particulier (une zone numérique dans cet exemple) :
+Effectuez les étapes suivantes pour personnaliser la mise en forme d’un composant particulier (une zone numérique dans cet exemple) :
 
 1. Dans l’éditeur de thèmes, sélectionnez la zone numérique dans la zone de travail.
-1. Lorsque vous sélectionnez la zone numérique, vous pouvez afficher la barre d’outils des composants avec trois options :
+1. Lorsque vous sélectionnez la zone numérique, vous pouvez afficher la barre d’outils des composants avec trois options :
 
    * **Widget de zone numérique**
-   * **Widget de champ**  ![champ-level](assets/field-level.png)
+   * **Widget de champ** ![field-level](assets/field-level.png)
 
 1. Sélectionnez **Widget de zone numérique**.
 1. Le titre de la barre latérale passe à Widget de zone numérique et affiche des options pour personnaliser son aspect.
@@ -458,7 +460,7 @@ Au lieu de sélectionner **Widget de zone numérique**, sélectionnez **Widget d
 
 Avec la barre d’outils de composants, vous pouvez également spécifier la mise en forme des composants pour les différents états. Par exemple, si un composant est désactivé, il est à l’état désactivé. Les états généralement utilisés d’un composant que vous pouvez mettre en forme dans l’éditeur de thèmes sont les suivants : Par défaut, Activé, Désactivé, Erreur, Succès et Survol. Vous pouvez sélectionner un composant dans la zone de travail et utiliser l’option État de la zone de travail pour personnaliser son aspect.
 
-Effectuez les étapes suivantes pour personnaliser la mise en forme d’un composant à un état spécifique :
+Effectuez les étapes suivantes pour personnaliser la mise en forme d’un composant à un état spécifique :
 
 1. Sélectionnez un composant dans la zone de travail, puis sélectionnez l’option appropriée dans la barre d’outils de composants.
 La barre latérale affiche les options de personnalisation de la mise en forme du composant.
@@ -472,9 +474,9 @@ Pour simuler le comportement d’états autres que l’erreur et la réussite, u
 
 ### Mise en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
 
-Utilisez la règle dans la zone de travail pour sélectionner des points d’arrêt pour les périphériques équipés de plus petits écrans. Cliquez sur l’émulateur ![ruler](assets/ruler.png) dans la zone de travail pour afficher la règle et les points d’arrêt. Les points d’arrêt vous permettent de prévisualiser un formulaire ou une communication interactive pour les formats d’affichage relatifs à différents appareils tels que les téléphones et les tablettes. Plusieurs formats d’affichage sont pris en charge dans l’éditeur de thèmes.
+Utilisez la règle dans la zone de travail pour sélectionner des points d’arrêt pour les périphériques équipés de plus petits écrans. Cliquez sur l’émulateur ![ruler](assets/ruler.png) dans la zone de travail pour afficher la règle et les points d’arrêt. Les points d’arrêt vous permettent de prévisualiser un formulaire ou une communication interactive pour les formats d’affichage de différents appareils, tels que les téléphones et les tablettes. Plusieurs formats d’affichage sont pris en charge dans l’éditeur de thèmes.
 
-Pour mettre en forme des composants pour différents points d’arrêt :
+Pour mettre en forme des composants pour différents points d’arrêt :
 
 1. Dans la zone de travail, sélectionnez un point d’arrêt au-dessus de la règle.
 Un point d’arrêt représente un périphérique mobile et son format d’affichage.
@@ -487,9 +489,9 @@ Vous pouvez définir le style des composants de formulaire ou de communication i
 
 Vous pouvez désormais utiliser les polices disponibles dans un service Web dans un formulaire adaptatif ou une communication interactive. [Adobe Fonts](https://fonts.adobe.com/), le service prêt à l’emploi de polices Web d’Adobe, est disponible sous forme de configuration. Pour utiliser Adobe Fonts, créez un kit, ajoutez-y des polices et obtenez l’identifiant du kit auprès de [Adobe Fonts](https://fonts.adobe.com/).
 
-Effectuez les étapes suivantes pour configurer Adobe Fonts dans AEM :
+Pour configurer Adobe Fonts dans AEM, procédez comme suit :
 
-1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![marteau](assets/hammer.png) > Déploiement > Cloud Services.
+1. Dans l’instance d’auteur, cliquez sur ![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Outils ![icône des réglages](assets/hammer.png) > Déploiement > Services Cloud.
 1. Sur la page **Cloud Services**, accédez à l’option **Adobe Fonts** et ouvrez-la. Ouvrez le dossier de configuration, puis cliquez sur **Créer**.
 1. Dans la boîte de dialogue **Créer une configuration**, indiquez un titre pour la configuration et cliquez sur **Créer**.
 
@@ -497,19 +499,19 @@ Effectuez les étapes suivantes pour configurer Adobe Fonts dans AEM :
 
 1. Dans la boîte de dialogue Modifier le composant qui s’affiche, indiquez votre ID de kit et cliquez sur **OK**.
 
-Effectuez les étapes suivantes pour configurer un thème afin d’utiliser la configuration Adobe Fonts :
+Pour configurer un thème de sorte qu’il utilise la configuration Adobe Fonts, procédez comme suit :
 
 1. Dans l’instance de l’auteur, ouvrez un thème dans l’éditeur de thèmes.
 1. Dans l’éditeur de thèmes, cliquez sur **Options du thème** ![theme-options](assets/theme-options.png) > **Configurer**.
-1. Dans le champ **Configuration de Adobe Fonts**, sélectionnez un kit et cliquez sur **Enregistrer**.
+1. Dans le champ **Configuration d’Adobe Fonts**, sélectionnez un kit et cliquez sur **Enregistrer**.
 
    Maintenant, vous pouvez voir que les polices sont ajoutées à la propriété font-family du thème.
 
-### Énumération et sélection des polices dans l’éditeur de thèmes  {#listing-and-selecting-fonts-in-theme-editor}
+### Énumération et sélection des polices dans l’éditeur de thèmes {#listing-and-selecting-fonts-in-theme-editor}
 
 Vous pouvez utiliser le service de configuration de thèmes pour ajouter plus de polices à l’éditeur de thèmes. Effectuez les opérations suivantes pour ajouter les polices :
 
-1. Connectez-vous à la console Web AEM avec les droits d’administrateur. L’URL de la console web AEM est `https://'[server]:[port]'/system/console/configMgr`.
+1. Connectez-vous à la console Web AEM avec les droits d’administrateur. L’URL de la console web AEM est la suivante : `https://'[server]:[port]'/system/console/configMgr`
 1. Ouvrez **le service de configuration des thèmes de formulaire adaptatif**.
 
    ![theme-config](assets/theme-config.png)
@@ -534,7 +536,7 @@ Vous pouvez voir la modification de la police du composant.
 
 Le champ Famille de polices prend en charge plusieurs polices. Lorsque vous saisissez une police, le navigateur la recherche et l’applique au composant sélectionné. Si le navigateur ne trouve pas la police, il recherche une police à côté de celle-ci dans la famille. Vous pouvez commencer par saisir la police spécifique que vous recherchez. Si vous ne trouvez pas la police que vous voulez utiliser, vous pouvez saisir une police générique dans la famille et l’utiliser.
 
-#### Masquage les styles appliqués dans l’éditeur de thèmes  {#mask-styles-applied-in-theme-editor}
+#### Masquage les styles appliqués dans l’éditeur de thèmes {#mask-styles-applied-in-theme-editor}
 
 Vous pouvez masquer les styles appliqués dans un thème. Dans la barre latérale de l’éditeur de thèmes, vous pouvez utiliser l’icône ![toggle_eye](assets/toggle_eye.png) pour désactiver un style appliqué. Par exemple, si vous modifiez les dimensions d’un composant dans un formulaire ou une communication interactive, vous pouvez utiliser le bouton de masquage situé à gauche d’une propriété pour la désactiver. Lorsque vous enregistrez un thème, les options de masquage sélectionnées sont conservées.
 
@@ -544,26 +546,26 @@ L’exemple ci-dessous montre des styles masqués et non masqués dans un thème
 
 ![Styles masqués et non masqués](assets/mask2.png)
 
-## Application d’un thème à un formulaire ou à une communication interactive {#applying-a-theme-to-a-form-or-interactive-communication-br}
+## Appliquer un thème à un formulaire adaptatif ou à une communication interactive {#applying-a-theme-to-a-form-or-interactive-communication-br}
 
 Pour appliquer un thème à un formulaire adaptatif :
 
 1. Ouvrez votre formulaire en mode d’édition. Pour ouvrir un formulaire en mode d’édition, sélectionnez-le et cliquez sur **Ouvrir**.
-1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **Conteneur de formulaires adaptatifs**, puis sur ![cmppr](assets/cmppr.png).
 
    Vous pouvez modifier les propriétés de votre formulaire dans la barre latérale.
 
 1. Dans la barre latérale, cliquez sur **Mise en forme**.
 1. Sélectionnez votre thème dans le menu déroulant **Thème de formulaire adaptatif** et cliquez sur **Terminé** ![bouton de vérification.](assets/check-button.png)
 
-Pour appliquer un thème à une communication interactive :
+Pour appliquer un thème à une communication interactive :
 
 1. Ouvrez votre communication interactive en mode d’édition. Pour ouvrir une communication interactive en mode d’édition, sélectionnez-la et cliquez sur **Ouvrir**.
-1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) >**Document Container**, puis sur ![cmppr](assets/cmppr.png).
+1. En mode d’édition, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **Conteneur de documents**, puis sélectionnez ![cmppr](assets/cmppr.png).
 
    Vous pouvez modifier les propriétés de votre formulaire dans la barre latérale.
 
-1. Dans la barre latérale, sous **Basique**, sélectionnez votre thème dans la liste déroulante **Thème** et cliquez sur **Terminé** ![Bouton-cocher](assets/check-button.png)
+1. Dans la barre latérale, sous **Réglages de base**, sélectionnez votre thème dans le menu déroulant **Thème** et cliquez sur **Terminé** ![bouton de coche](assets/check-button.png).
 
 ### Modifier le thème d’un formulaire au moment de l’exécution {#change-theme-of-a-form-at-runtime}
 
@@ -583,7 +585,7 @@ Avec AEM Forms et le thème de la zone de travail prête à l’emploi par déf
 
 Pour copier un thème, procédez comme suit :
 
-1. Dans l’instance de création, accédez à **Adobe Experience Manager > Formulaires > Thèmes**.
+1. Dans l’instance de création, accédez à **Adobe Experience Manager > Formulaires > Thèmes**.
 1. Ouvrez le dossier de la bibliothèque des thèmes.
 1. Dans ce dossier, déplacez le pointeur de la souris sur le thème prêt à l’emploi correspondant, puis appuyez sur **Copier**.
 1. Collez le thème copié en dehors du dossier de la bibliothèque des thèmes.
@@ -598,10 +600,10 @@ Après avoir personnalisé le thème, appliquez-le à votre formulaire ou à vot
 ## Impact sur d’autres cas d’utilisation de formulaire adaptatif {#impact-on-other-adaptive-form-use-cases}
 
 * **Publier/désactiver la publication d’un formulaire :** à la publication d’un formulaire, le thème appliqué est également publié (si ce n’est pas déjà fait)
-* **Importer/exporter un formulaire :** à l’importation ou à l’exportation d’un formulaire, son thème associé est automatiquement importé ou exporté également.
-* **Références d’un formulaire :** la section Référence dans les références du formulaire contient une entrée supplémentaire pour le thème.
-* **Heure de la dernière modification d’un formulaire :** mise à jour lors de la modification du thème associé.
-* **Tests A/B :** vous pouvez appliquer un thème différent à deux versions du formulaire dans le test A/B. Les informations des deux thèmes sont stockées individuellement stockées sur les deux conteneurs de guide.
+* **Importer/exporter un formulaire :** à l’importation ou à l’exportation d’un formulaire, son thème associé est automatiquement importé ou exporté également.
+* **Références d’un formulaire :** la section Référence dans les références du formulaire contient une entrée supplémentaire pour le thème.
+* **Heure de la dernière modification d’un formulaire :** mise à jour lors de la modification du thème associé.
+* **Test A/B :** vous pouvez appliquer un thème différent à deux versions du formulaire dans le test A/B. Les informations des deux thèmes sont stockées individuellement stockées sur les deux conteneurs de guide.
 
 ## Séquence de génération CSS {#css-generation-sequence}
 
@@ -615,25 +617,25 @@ Par exemple, la couleur d’arrière-plan d’une zone de texte est bleue dans l
 
 ## Débogage des styles {#debugging-styles}
 
-Lorsque vous spécifiez des styles pour les composants dans l’éditeur de thèmes, un fichier CSS est généré. Lorsque vous définissez le style d’un composant générique, plusieurs composants intégrés sont également mis en forme. Par exemple, lorsque vous définissez le style d’un champ, la zone de texte et l’étiquette qu’elle contient sont également mises en forme.  Lorsque vous mettez en forme la zone de texte dans le champ, elle obtient son propre CSS. Si vous souhaitez déboguer le CSS généré pour le champ et le composant, l’éditeur de thèmes fournit des options qui vous permettent d’afficher le CSS.
+Lorsque vous spécifiez des styles pour les composants dans l’éditeur de thèmes, un fichier CSS est généré. Lorsque vous définissez le style d’un composant générique, plusieurs composants intégrés sont également mis en forme. Par exemple, lorsque vous définissez le style d’un champ, la zone de texte et l’étiquette qu’elle contient sont également mises en forme. Lorsque vous mettez en forme la zone de texte dans le champ, elle obtient son propre CSS. Si vous souhaitez déboguer le CSS généré pour le champ et le composant, l’éditeur de thèmes fournit des options qui vous permettent d’afficher le CSS.
 
 Vous pouvez voir le fichier CSS généré à l’aide des options suivantes :
 
 * Option **Affichage CSS** dans la barre latérale : lorsque vous sélectionnez un composant dans le thème, vous pouvez voir l’option AFFICHAGE CSS dans la barre latérale. Elle affiche le fichier CSS généré, y compris le CSS pour les pseudo éléments `::before` et `::after`.
-* Option **Afficher le thème CSS** dans la barre d’outils de la zone de travail : dans la barre d’outils de la zone de travail, cliquez sur ![theme-option](assets/theme-options.png) > **Afficher le thème CSS**. Vous pouvez voir tout le thème CSS généré à partir des propriétés que vous définissez dans l’éditeur de thèmes.
+* Option **Afficher le thème CSS** dans la barre d’outils de la zone de travail : dans la barre d’outils de la zone de travail, cliquez sur ![theme-option](assets/theme-options.png) > **Afficher le thème CSS**. Vous pouvez voir tout le thème CSS généré à partir des propriétés que vous définissez dans l’éditeur de thèmes.
 
 ## Dépannage, recommandations et bonnes pratiques {#troubleshooting-recommendations-and-best-practices}
 
 * **éviter les actifs d’un autre thème**
 
-   Lorsque vous modifiez un thème, vous pouvez parcourir et ajouter des actifs (tels que des images) d’autres thèmes. Par exemple, vous pouvez modifier l’arrière-plan d’une page. Par exemple, lorsque vous sélectionnez la **Page** ![bouton de modification](assets/edit-button.png) >  **Arrière plan** > **Ajoutez** > **Image**, une boîte de dialogue s’affiche et vous permet de parcourir et d’ajouter des images dans l’autre thème.
+   Lorsque vous modifiez un thème, vous pouvez parcourir et ajouter des actifs (tels que des images) d’autres thèmes. Par exemple, vous pouvez modifier l’arrière-plan d’une page. Par exemple, lorsque vous sélectionnez la **Page** ![bouton de modification](assets/edit-button.png) > **Arrière plan** > **Ajoutez** > **Image**, une boîte de dialogue s’affiche et vous permet de parcourir et d’ajouter des images dans l’autre thème.
 
 * Vous pouvez rencontrer des problèmes avec votre thème actuel si un actif est ajouté à partir d’un autre thème et l’autre thème est déplacé ou supprimé. Nous vous recommandons d’éviter de parcourir les actifs d’autres thèmes et de les ajouter.
 * **Utilisation de la bibliothèque de clients de base, de l’éditeur de thème et de la mise en forme intégrée**
 
-   * **Bibliothèque cliente** de base :
+   * **Bibliothèque cliente de base** :
 
-      La bibliothèque cliente de base contient des informations de style. Pour utiliser des informations de mise en forme dans les bibliothèques côté client des thèmes.
+      La bibliothèque cliente de base contient des informations de mise en forme. Pour utiliser des informations de mise en forme dans les bibliothèques côté client des thèmes.
 
       1. Accédez à **Experience Manager > Formulaires > Thèmes**.
       1. Dans la page Thèmes, sélectionnez un thème, puis cliquez sur **Afficher les propriétés**.
@@ -647,16 +649,16 @@ Voir [Obtention d’un aspect spécifique à l’aide des thèmes](#specific-af-
 
    * **Éditeur de thème:**
 
-      L’éditeur de thèmes vous permet de créer des thèmes pour mettre en forme votre formulaire ou votre communication interactive. Vous pouvez spécifier le style de composants dans un thème, ce qui permet d’assurer la cohérence de l’apparence parmi les multiples formulaires ou communications interactives que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
+      L’éditeur de thème vous permet de créer des thèmes pour la mise en forme de votre formulaire ou de votre communication interactive. Vous pouvez spécifier le style de composants dans un thème, ce qui permet d’assurer la cohérence de l’apparence parmi les multiples formulaires ou communications interactives que vous développez. La spécification des informations de style dans un thème, puis l’application du thème à un formulaire sont recommandées.
 
-   * **Style intégré :**
+   * **Style intégré :**
 
-      Vous pouvez mettre en forme des composants à l’aide du mode Style dans l’éditeur multicanal de formulaire ou de communication interactive lorsque vous utilisez un formulaire. L’utilisation du mode Style pour modifier la mise en forme d’un composant de formulaire remplace la mise en forme indiquée dans le thème. Si vous choisissez de modifier le style de certains composants d’un formulaire spécifique, voir [Style intégré de composants](../../forms/using/inline-style-adaptive-forms.md).
+      Vous pouvez mettre en forme des composants à l’aide du mode Style de l’éditeur de formulaires ou de communications interactives multicanal lorsque vous utilisez un formulaire. L’utilisation du mode Style pour modifier la mise en forme d’un composant de formulaire remplace la mise en forme indiquée dans le thème. Si vous choisissez de modifier le style de certains composants d’un formulaire spécifique, voir [Style intégré de composants](../../forms/using/inline-style-adaptive-forms.md).
 
 
-* **Utilisation de bibliothèques côté client**
+* **Utiliser des bibliothèques côté client**
 
-   Si vous souhaitez créer des bibliothèques clientes pour importer des informations de style, voir [Utilisation de bibliothèques côté client](/help/sites-developing/clientlibs.md). Après avoir créé une bibliothèque client, vous pouvez l’importer dans votre thème à l’aide des étapes mentionnées ci-dessus.
+   Si vous souhaitez créer des bibliothèques clientes pour importer des informations de mise en forme, voir [Utiliser des bibliothèques côté client](/help/sites-developing/clientlibs.md). Après avoir créé une bibliothèque client, vous pouvez l’importer dans votre thème à l’aide des étapes mentionnées ci-dessus.
 
 * **Modification de la largeur de disposition du panneau conteneur**
 
