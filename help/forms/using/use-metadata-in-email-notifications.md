@@ -155,7 +155,7 @@ Vous pouvez également utiliser des métadonnées personnalisées dans une notif
 
 ### Utilisation de ECMAScript pour ajouter des métadonnées personnalisées  {#use-ecmascript-to-add-custom-metadata}
 
-[ECMAScript](htthttps://fr.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
+[ECMAScript](https://fr.wikipedia.org/wiki/ECMAScript) est un langage de script. Il est utilisé pour les scripts et les applications serveur côté client. Procédez comme suit pour utiliser ECMAScript afin d’ajouter des métadonnées personnalisées pour un modèle de courrier électronique :
 
 1. Connectez-vous à CRX DE à l’aide d’un compte administratif. L’URL est https://&#39;[server]:[port]&#39;/crx/de/index.jsp
 
