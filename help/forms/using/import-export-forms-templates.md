@@ -25,7 +25,6 @@ Vous pouvez déplacer des formulaires ainsi que les ressources, thèmes, diction
 >[!NOTE]
 >
 >* Dans AEM 6.4 Forms, la structure ainsi que les chemins d’accès du référentiel crx ont changé. Si vous importez des ressources d’une version précédente vers AEM 6.4 Forms et que le formulaire comporte certaines dépendances sur l’ancienne structure, vous devez exporter manuellement les dépendances. Pour plus d’informations sur les modifications apportées à la structure et aux chemins du référentiel, voir [Restructurer les référentiels dans AEM](/help/sites-deploying/repository-restructuring.md).
-
 >
 
 

@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ---
 
-#  API de rapports de transactions facturables{#transaction-reports-billable-apis}
+# API de rapports de transactions facturables{#transaction-reports-billable-apis}
 
 AEM Forms fournit plusieurs API permettant d’envoyer des formulaires, de traiter et de générer des documents. Certaines API sont comptabilisées comme des transactions et d’autres sont gratuites. Ce document fournit une liste de toutes les API comptabilisées comme des transactions dans un rapport de transaction. Voici quelques scénarios courants dans lesquels une API facturable est utilisée :
 
@@ -309,7 +309,6 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
 >
 >* L’API Invoke du service Assembler peut appeler en interne une API facturable d’un autre service selon l’entrée. Ainsi, l’API Invoke peut être comptabilisée comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend de l’entrée et des API internes appelées.
 >* Un seul document PDF produit à l’aide du service Assembler peut être comptabilisé comme aucune, une ou plusieurs transactions. Le nombre de transactions comptabilisées dépend du code DDX fourni.
-
 >
 
 

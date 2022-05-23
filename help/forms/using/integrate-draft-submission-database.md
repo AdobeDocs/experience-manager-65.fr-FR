@@ -81,6 +81,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
    Pour spécifier un autre nom pour le tableau de données :
 
    * Dans la configuration de la console Web, recherchez et cliquez sur Exemple d’implémentation de service de données du portail de formulaires. Vous pouvez modifier les valeurs de la source de données, et le nom du tableau de données.
+
    >[!NOTE]
    >
    >Si vous modifiez les noms du tableau, renseignez-les dans la configuration du portail Formulaires.
@@ -163,7 +164,6 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 >
 > * Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous de vous l’être procuré et spécifiez les informations requises pour configurer le pool de connexions JDBC. 
 > * Pointez vos instances d’auteur et de publication pour utiliser la même base de données. La valeur du champ URI de la connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
-
 >
 
 

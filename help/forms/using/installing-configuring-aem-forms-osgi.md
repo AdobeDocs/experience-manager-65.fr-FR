@@ -98,7 +98,6 @@ Avant de commencer à installer et configurer la fonctionnalité de capture de d
 >
 >* Si OpenSSL est déjà installé sur le serveur, mettez-le à niveau vers la dernière version.
 >* Créez les liens symboliques libcurl.so, libcrypto.so et libssl.so pointant vers la dernière version respective des bibliothèques libcurl, libcrypto et libssl.
-
 >
 
 

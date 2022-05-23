@@ -28,7 +28,6 @@ AEM Forms prend en charge CAPTCHA dans les formulaires adaptatifs. Vous pouvez u
 >
 >* AEM Forms prend en charge uniquement reCaptcha 2. Toute autre version n’est pas prise en charge.
 >* CAPTCHA dans les formulaires adaptatifs n’est pas pris en charge dans le mode hors ligne sur l’application AEM Forms.
-
 >
 
 

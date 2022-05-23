@@ -200,9 +200,9 @@ Utilisez l’attribut de requête pour récupérer les propriétés associées �
    >[!NOTE]
    >
    > * Si vous utilisez un modèle statique, superposez le fichier head.jsp à l’adresse suivante :
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Si vous utilisez un modèle modifiable, superposez le fichier aftemplatedpage.jsp à l’adresse suivante :
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Définissez [!DNL paramMap] pour l’attribut de requête. Par exemple, incluez le code suivant dans le fichier .jsp du dossier des applications :
@@ -381,7 +381,7 @@ Dans cet exemple, vous pouvez également choisir l’objet de modèle de sortie 
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-De même, vous pouvez choisir un service `GET LINK` et configurer ses propriétés de navigation lors de l’ajout d’associations dans le modèle de données de formulaire. Toutefois, pour pouvoir sélectionner une propriété de navigation, assurez-vous que le champ ]**Liaison à**[!UICONTROL  est défini sur **Littéral**.
+De même, vous pouvez choisir un service `GET LINK` et configurer ses propriétés de navigation lors de l’ajout d’associations dans le modèle de données de formulaire. Toutefois, pour pouvoir sélectionner une propriété de navigation, assurez-vous que le champ **Liaison à** est défini sur **Littéral**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 

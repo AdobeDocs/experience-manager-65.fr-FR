@@ -239,7 +239,6 @@ Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité
 >
 >* Utilisez une image carrée pour la vignette. Lorsque vous utilisez une image qui n’est pas carrée et affichez la vignette dans une vue de liste, la vignette apparaît tronquée.
 >* Une fois qu’une nouvelle image est téléchargée ou générée, la vignette est remplacée par celle-ci et l’image précédente ne peut pas être rétablie.
-
 >
 
 

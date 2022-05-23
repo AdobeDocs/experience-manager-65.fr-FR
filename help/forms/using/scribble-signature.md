@@ -73,7 +73,7 @@ Une fois qu’un champ de signature tactile a été ajouté au formulaire et gé
 Si vous cliquez sur l’icône de géolocalisation lors de la création de la zone de saisie tactile, l’emplacement géographique et les informations temporelles sont ajoutés au champ.
 
 >[!NOTE]
-Sur l’iPad, l’intégration des informations de géolocalisation est obligatoire par défaut.
+>Sur l’iPad, l’intégration des informations de géolocalisation est obligatoire par défaut.
 
 Sur l’iPad, l’icône de géolocalisation n’est pas affichée par défaut et les informations de géolocalisation sont automatiquement intégrées lorsque vous cliquez sur **OK**.
 

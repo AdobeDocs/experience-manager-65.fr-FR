@@ -52,7 +52,6 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 >
 >* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
 >* MAC OS : Commande + clic sur les composants nécessaires.
-
 >
 
 

@@ -165,7 +165,6 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 >
 >* la mise en majuscule du premier caractère du nom de l’élément ;
 >* l’insertion d’un espace entre la casse mixte.
-
 >
 >Par exemple, si vous ajoutez l’élément de schéma `userFirstName`, la légende générée dans le formulaire adaptatif est `User First Name`.
 

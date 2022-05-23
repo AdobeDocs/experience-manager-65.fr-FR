@@ -121,7 +121,6 @@ Exécutez les commandes de base de données suivantes pour exporter les données
 >* Remplacez `EdcPrincipalMappingEntity` par `EdcPrincipalMappingEntit`
 >
 >* Remplacez `EdcPrincipalGrpCtmntEntity` par `EdcPrincipalGrpCtmntEnti`
-
 >
 
 

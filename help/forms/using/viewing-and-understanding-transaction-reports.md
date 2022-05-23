@@ -27,14 +27,13 @@ La fonction Rapports de transaction est disponible dans le cadre du module compl
 * Activer la réplication inverse sur toutes les instances de publication
 * Activer les rapports de transactions
 * Fournir des droits pour afficher un rapport de transaction
-* (Facultatif) Configurer la période de purge des transactions et des boîtes d’envoi [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Facultatif) Configurer la période de purge des transactions et des boîtes d’envoi [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >
 >* Les rapports de transaction AEM Forms ne prennent pas en charge les topologies contenant uniquement des instances de publication.
 >* Avant d’utiliser les rapports de transaction, assurez-vous que la réplication inverse est activée pour toutes les instances de publication.
 >* Les données de transaction sont répliquées à l’inverse d’une instance de publication vers une instance de création ou de traitement correspondante. L’instance de création ou de traitement ne peut pas répliquer davantage les données vers une autre instance.
-
 >
 
 
