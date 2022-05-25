@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 9f7bd996d2ec77d29fbee3ee51ac6469f94e9bd7
+source-git-commit: c9df4b43083376f0110368afe642ec74290a52f8
 workflow-type: tm+mt
 source-wordcount: '4679'
 ht-degree: 86%
@@ -19,7 +19,7 @@ ht-degree: 86%
 
 # Bonnes pratiques relatives aux requêtes et à l’indexation{#best-practices-for-queries-and-indexing}
 
-Avec la transition vers Oak dans AEM 6, certains changements majeurs ont été apportés à la façon dont les requêtes et les index sont gérés. Sous Jackrabbit 2, tout le contenu était indexé par défaut et pouvait être interrogé librement. In Oak, indexes must be created manually under the `oak:index` node. Une requête peut être exécutée sans index, mais pour les jeux de données volumineux, elle l’est très lentement et risque même d’être abandonnée.
+Avec la transition vers Oak dans AEM 6, certains changements majeurs ont été apportés à la façon dont les requêtes et les index sont gérés. Sous Jackrabbit 2, tout le contenu était indexé par défaut et pouvait être interrogé librement. Dans Oak, les index doivent être créés manuellement sous la propriété `oak:index` noeud . Une requête peut être exécutée sans index, mais pour les jeux de données volumineux, elle l’est très lentement et risque même d’être abandonnée.
 
 Cet article contient les informations suivantes : quand créer des index et dans quels cas ils ne sont pas nécessaires ; astuces pour ne pas utiliser de requêtes lorsqu’elles ne sont pas indispensables ; conseils pour optimiser les index et les requêtes.
 
@@ -77,7 +77,7 @@ Lors de l’exécution de requêtes complexes, la ventilation de la requête en 
 
 AEM permet d’écrire des requêtes de l’une des trois façons suivantes :
 
-* Via the [QueryBuilder APIs](/help/sites-developing/querybuilder-api.md) (recommended)
+* Via le [API QueryBuilder](/help/sites-developing/querybuilder-api.md) (recommandé)
 * Au moyen de XPath (recommandé)
 * En utilisant SQL2
 
@@ -127,7 +127,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
 
 #### **Post-déploiement** {#post-deployment}
 
-* Monitor the logs for queries triggering large node traversal or large heap memory consumption : ``
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de noeuds importante ou une consommation importante de mémoire de tas : &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimisez la requête afin de réduire le nombre de nœuds parcourus transversalement.
@@ -190,7 +190,7 @@ La documentation d’Oak sur les index Lucene présente plusieurs points à pre
 * Si la requête utilise le tri, définissez une propriété explicite pour la propriété triée et définissez `ordered` sur `true`. Vous pouvez ainsi ordonner les résultats en tant que tels dans l’index et vous économisez sur les opérations de tri coûteuses au moment de l’exécution de la requête.
 
 * Ne mettez que ce qui est nécessaire dans l’index. L’ajout de fonctionnalités ou de propriétés inutiles entraîne la croissance de l’index et ralentit les performances.
-* Dans un index de propriété, un nom de propriété unique contribue à réduire la taille de l’index, mais dans le cas des index Lucene, l’utilisation de `nodeTypes` et `mixins` est conseillée pour obtenir des index cohérents. Requête sur une `nodeType` ou `mixin` sera plus performant que l’interrogation `nt:base`. When using this approach, define `indexRules` for the `nodeTypes` in question.
+* Dans un index de propriété, un nom de propriété unique contribue à réduire la taille de l’index, mais dans le cas des index Lucene, l’utilisation de `nodeTypes` et `mixins` est conseillée pour obtenir des index cohérents. Requête sur une `nodeType` ou `mixin` sera plus performant que l’interrogation `nt:base`. Lors de l’utilisation de cette approche, définissez `indexRules` pour le `nodeTypes` en question.
 
 * Si vos requêtes ne sont exécutées que sous certains chemins, créez ces index sous ces chemins. Les index ne doivent pas obligatoirement résider à la racine du référentiel.
 * Il est recommandé d’utiliser un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer autant de restrictions de propriétés que possible nativement. En outre, une requête n’utilisera qu’un index, même lors d’une jointure.
@@ -215,7 +215,7 @@ Lors de la suppression d’un index sur une instance MongoDB, le coût de la sup
 
 ### Aide-mémoire sur les requêtes JCR {#jcrquerycheatsheet}
 
-To support the creation of efficient JCR queries and index definitions, the [JCR Query Cheat Sheet](assets/JCR_query_cheatsheet-v1.0.pdf) is available for download and use as a reference during development. Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la création ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM 6.5 et à AEM as a Cloud Service.
+Pour prendre en charge la création de requêtes JCR et de définitions d’index efficaces, la variable [Aide-mémoire pour les requêtes JCR](assets/JCR_query_cheatsheet-v1.1.pdf) peut être téléchargé et utilisé comme référence pendant le développement. Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la création ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM 6.5 et à AEM as a Cloud Service.
 
 ## Réindexation {#re-indexing}
 
@@ -232,7 +232,6 @@ La réindexation des index Oak doit être évitée à moins d’être justifié
 >* la requête est correcte ;
 >* la requête résout l’index attendu (au moyen de l’outil [Expliquer la requête](/help/sites-administering/operations-dashboard.md#diagnosis-tools)) ;
 >* le processus d’indexation est terminé.
-
 >
 
 
@@ -277,7 +276,7 @@ Problèmes possibles et solutions :
 * S’applique pour/si :
 
    * Toutes les versions d’Oak
-   * Only [lucene indexes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Uniquement [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
@@ -321,7 +320,7 @@ Problèmes possibles et solutions :
 * S’applique pour/si :
 
    * Toutes les versions d’Oak
-   * Only [lucene indexes](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Uniquement [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
@@ -340,7 +339,7 @@ Problèmes possibles et solutions :
       le parcours du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
 
    * Si des binaires autres que les index Lucene sont manquants, restaurez à partir de la sauvegarde
-   * Otherwise, [re-index](#how-to-re-index) *all* lucene indexes
+   * Sinon, [re-index](#how-to-re-index) *all* index Lucene
    * Remarque :
 
       Cette condition indique qu’une banque de données mal configurée peut entraîner un fichier binaire QUELCONQUE (par ex. des binaires de ressources).
@@ -374,7 +373,7 @@ Problèmes possibles et solutions :
    * Si le problème n’est pas résolu, et la variable `AsyncIndexUpdate` les exceptions persistent alors :
 
       1. [Réindexez ](#how-to-re-index)l’index erroné
-      1. Also file an [Adobe Support](https://helpx.adobe.com/fr/support.html) ticket
+      1. Créez également un fichier [Prise en charge des Adobes](https://helpx.adobe.com/fr/support.html) ticket
 
 
 ### Procédure de réindexation {#how-to-re-index}
@@ -420,7 +419,7 @@ La pré-extraction de texte est un processus permettant d’extraire et de trait
 
 Réindexation d’un index Lucene **existant** avec extraction binaire activée
 
-* Re-indexing processing **all** candidate content in the repository; when the binaries to extract full-text from are numerous or complex, an increased computational burden to performthefull-text extraction is placed on AEM. La pré-extraction de texte déplace les tâches coûteuses en calcul du processus d’extraction de texte vers un processus isolé qui accède directement à l’entrepôt de données d’AEM, évitant ainsi la surcharge et les conflits de ressources dans AEM.
+* Traitement de la réindexation **all** contenu candidat dans le référentiel ; lorsque les binaires à partir desquels extraire le texte intégral sont nombreux ou complexes, une charge de calcul accrue pour effectuer l’extraction de texte intégral est placée sur AEM. La pré-extraction de texte déplace les tâches coûteuses en calcul du processus d’extraction de texte vers un processus isolé qui accède directement à l’entrepôt de données d’AEM, évitant ainsi la surcharge et les conflits de ressources dans AEM.
 
 Prise en charge du déploiement d’un **nouvel** index Lucene sur AEM avec extraction de binaires activée
 
@@ -441,7 +440,7 @@ Dans le cadre du fonctionnement normal d’AEM, par exemple le chargement de res
 * Une fenêtre de maintenance permettant de générer le fichier CSV ET d’effectuer la réindexation finale
 * Version d’Oak : 1.0.18+, 1.2.3+
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)version 1.7.4+
-* A file system folder/share to store extracted text accessible from the indexing AEM instance(s)
+* Un dossier/partage de système de fichiers pour stocker le texte extrait accessible à partir des instances d’AEM d’indexation
 
    * La config OSGi de pré-extraction de texte requiert un chemin d’accès au système de fichiers vers les fichiers texte extraits. Ils doivent donc être accessibles directement depuis l’instance AEM (lecteur local ou montage de partage de fichiers).
 
@@ -449,7 +448,7 @@ Dans le cadre du fonctionnement normal d’AEM, par exemple le chargement de res
 
 >[!NOTE]
 >
->***The oak-run.jar commands outlined below are fully enumerated at [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
+>***Les commandes oak-run.jar décrites ci-dessous sont entièrement énumérées à l’adresse [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
 >
 >Le schéma ci-dessus et les étapes ci-dessous servent à expliquer et à compléter les étapes de pré-extraction de texte technique décrites dans la documentation d’Apache Oak.
 
