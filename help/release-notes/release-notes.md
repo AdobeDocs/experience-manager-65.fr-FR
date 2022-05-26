@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
-mini-toc-levels: 4
+mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 3b6671d5ca58aedb43babdd539d182c3a1d06574
+source-git-commit: 6c9e8f1e62fe1a193cb9938e5f789e1e08b8339d
 workflow-type: tm+mt
-source-wordcount: '3547'
+source-wordcount: '3546'
 ht-degree: 7%
 
 ---
@@ -384,7 +384,7 @@ Pour plus d’informations sur l’installation du programme d’installation cu
 
 ### UberJar {#uber-jar}
 
-UberJar pour [!DNL Experience Manager] 6.5.13.0 est disponible dans la [Référentiel Maven Central](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.13/)(https://).
+UberJar pour [!DNL Experience Manager] 6.5.13.0 est disponible dans la [Référentiel Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.13/)(https://).
 
 Pour utiliser UberJar dans un projet Maven, voir [utilisation d’UberJar](/help/sites-developing/ht-projects-maven.md) et incluez la dépendance suivante dans le POM de votre projet :
 
