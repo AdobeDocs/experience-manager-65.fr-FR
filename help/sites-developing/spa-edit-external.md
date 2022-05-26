@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
 workflow-type: tm+mt
-source-wordcount: '2118'
-ht-degree: 99%
+source-wordcount: '2392'
+ht-degree: 88%
 
 ---
 
@@ -75,9 +75,9 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
 `initializationAsync` peut éventuellement accepter un objet `options` comme paramètre :
 
-* `path` - Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Vous pouvez l’utiliser pour récupérer le `rootModel` à l’initialisation, si nécessaire.
-* `modelClient` - Permet de fournir un client personnalisé chargé de récupérer le modèle.
-* `model` - Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’[utilisation de SSR.](spa-ssr.md)
+* `path` – Lors de l’initialisation, le modèle au niveau du chemin d’accès défini est récupéré et stocké dans le `ModelStore`. Vous pouvez l’utiliser pour récupérer le `rootModel` à l’initialisation, si nécessaire.
+* `modelClient` – Permet de fournir un client personnalisé chargé de récupérer le modèle.
+* `model` – Un objet `model` transmis en tant que paramètre généralement renseigné lors de l’[utilisation de SSR.](spa-ssr.md)
 
 ### Composants feuille AEM modifiables {#authorable-leaf-components}
 
@@ -258,6 +258,42 @@ Il existe un certain nombre d’exigences à satisfaire pour ajouter des composa
    * Dans cet exemple, `root/responsivegrid` doit exister pour que le nœud `text_20` puisse y être créé.
 * Seule la création de composants feuille est prise en charge. Les conteneurs et pages virtuels seront pris en charge dans les versions futures.
 
+### Conteneurs virtuels {#virtual-containers}
+
+La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à [composants feuilles virtuels.](#virtual-leaf-components)
+
+Le développeur front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les noeuds requis dans la structure JCR.
+
+Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et le développeur souhaite ajouter un nouveau conteneur enfant :
+
+![Emplacement du conteneur](assets/container-location.png)
+
+`newContainer` n’existe pas encore dans l’AEM.
+
+Lors de la modification de la page contenant ce composant dans AEM, un espace réservé vide pour un conteneur s’affiche dans lequel l’auteur peut ajouter du contenu.
+
+![Espace réservé du conteneur](assets/container-placeholder.png)
+
+![Emplacement du conteneur dans JCR](assets/container-jcr-structure.png)
+
+Une fois que l’auteur ajoute un composant enfant au conteneur, le nouveau noeud de conteneur est créé avec le nom correspondant dans la structure JCR.
+
+![Conteneur avec contenu](assets/container-with-content.png)
+
+![Conteneur avec contenu dans JCR](assets/container-with-content-jcr.png)
+
+Vous pouvez désormais ajouter plus de composants et de contenu au conteneur, selon les besoins de l’auteur, et les modifications seront conservées.
+
+#### Exigences et restrictions {#container-limitations}
+
+Il existe plusieurs exigences pour ajouter des conteneurs virtuels, ainsi que certaines limites.
+
+* La stratégie permettant de déterminer les composants qui peuvent être ajoutés sera héritée du conteneur parent.
+* Le parent immédiat du conteneur à créer doit déjà exister dans AEM.
+   * Si le conteneur `root/responsivegrid` existe déjà dans le conteneur AEM, un nouveau conteneur peut être créé en indiquant le chemin d’accès. `root/responsivegrid/newContainer`.
+   * Cependant `root/responsivegrid/newContainer/secondNewContainer` n’est pas possible.
+* Un seul nouveau niveau de composant peut être créé virtuellement à la fois.
+
 ## Personnalisations supplémentaires {#additional-customizations}
 
 Si vous avez suivi les exemples précédents, votre SPA externe est désormais modifiable dans AEM. Cependant, vous pouvez personnaliser encore davantage d’autres aspects de votre SPA externe.
@@ -298,7 +334,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Identifiez le niveau racine pour AEM.
 
-   * Pour notre exemple, nous considérons `wknd-spa-react/us/en` comme la racine du SPA. Cela signifie que tout ce qui précède ce chemin ne concerne que des pages ou du contenu AEM.
+   * Pour notre échantillon, nous considérons `wknd-spa-react/us/en` comme racine du SPA. Cela signifie que tout ce qui précède ce chemin ne concerne que des pages ou du contenu AEM.
 
 1. Créez une page au niveau requis.
 
