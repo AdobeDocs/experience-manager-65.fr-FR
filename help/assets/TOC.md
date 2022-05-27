@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 57%
+source-wordcount: '672'
+ht-degree: 59%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 57%
    + [Utilisation des métadonnées de ressource](metadata.md)
    + [Ressources multilingues](multilingual-assets.md)
    + [Utilisation [!DNL Adobe Stock] ressources dans Assets](aem-assets-adobe-stock.md)
-   + [Prévisualisation de ressources 3D](previewing-3d-assets.md)
+   + [Prévisualiser les ressources 3D](previewing-3d-assets.md)
    + [Révision de collections et de ressources situées dans un dossier](bulk-approval.md)
    + [Balises intelligentes améliorées](enhanced-smart-tags.md)
    + [Flux d’activité dans la chronologie](activity-stream.md)
@@ -43,7 +43,7 @@ ht-degree: 57%
    + [Facultatif - Configuration de Dynamic Media - Mode Scene7, Paramètres généraux](dm-general-settings.md)
    + [Facultatif - Configuration du mode Dynamic Media - Scene7, Configuration de la publication](dm-publish-settings.md)
    + [Dépannage de Dynamic Media - mode Scene7](troubleshoot-dms7.md)
-   + [Configuration d’un compte d’alias de société Dynamic Media](dm-alias-account.md)
+   + [Configurer un compte d’alias de société Dynamic Media](dm-alias-account.md)
    + [Configuration de Dynamic Media - mode hybride](config-dynamic.md)
    + [Migration de Dynamic Media - mode hybride vers Dynamic Media - mode S7](migrate-from-hybrid-to-dms7.md)
    + [Accessibilité dans Dynamic Media](accessibility-dm.md)
@@ -56,6 +56,7 @@ ht-degree: 57%
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
+   + [Imagerie dynamique avec rapport des pixels côté client](client-side-dpr.md)
    + [Vidéo ](s7-video.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Gestion des ressources Dynamic Media](delivering-dynamic-media-assets.md)
@@ -172,6 +173,6 @@ ht-degree: 57%
    + [Partage de dossiers privés](private-folder.md)
    + [Rendus vidéo](video-renditions.md)
 + Intégration à d’autres solutions {#integrations}
-   + [Intégrations avec [!DNL Adobe Workfront]](workfront-integrations.md)
-   + [Installer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-install.md)
-   + [Configurer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-configure.md)
+   + [Intégrations à  [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurer le [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-configure.md)
