@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: 9b02a5363d32771cd9c039f97044e8a1d72fe286
+source-git-commit: bb42b5990993b0f8cea95cf1f6c033aed2713c1c
 workflow-type: tm+mt
-source-wordcount: '3518'
-ht-degree: 47%
+source-wordcount: '3519'
+ht-degree: 46%
 
 ---
 
@@ -129,7 +129,7 @@ Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règ
 
 ## Comment fonctionne l’imagerie intelligente ? {#how-does-smart-imaging-work}
 
-Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caractéristiques utilisateur et les convertit au format approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
+Lorsqu’une image est demandée par un consommateur, l’imagerie dynamique vérifie les caractéristiques de l’utilisateur et la convertit au format d’image approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
 * Conversion automatique au format AVIF si le navigateur prend en charge le format
 * Conversion automatique au format WebP si la conversion AVIF n’a pas été bénéfique ou si le navigateur ne prend pas en charge AVIF
