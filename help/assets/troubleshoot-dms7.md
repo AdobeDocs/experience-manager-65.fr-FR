@@ -1,5 +1,5 @@
 ---
-title: Dépannage de Dynamic Media - mode Scene7
+title: Dépannage de Dynamic Media - Mode Scene7
 description: Résolution des problèmes liés à Dynamic Media en mode Scene7.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
@@ -10,11 +10,12 @@ discoiquuid: 0d48c031-d3ee-4143-b739-a79ba28fd63a
 docset: aem65
 role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
-feature: Résolution des problèmes
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+feature: Troubleshooting
+mini-toc-levels: 3
+source-git-commit: d5824078ca3e1ff2b48874446aaebe3fdd60cfdc
 workflow-type: tm+mt
-source-wordcount: '1286'
-ht-degree: 85%
+source-wordcount: '1386'
+ht-degree: 76%
 
 ---
 
@@ -26,14 +27,14 @@ Le document suivant décrit la résolution des problèmes affectant Dynamic Medi
 
 Assurez-vous que Dynamic Media a été correctement configuré en procédant comme suit :
 
-* La commande Start up contient l’argument `-r dynamicmedia_scene7` run mode.
-* Tous les packs de correctifs cumulatifs (CFP) Adobe Experience Manager 6.4 ont été installés en premier *avant* les packs de fonctionnalités Dynamic Media disponibles.
+* La commande Start up contient la commande `-r dynamicmedia_scene7` argument du mode d’exécution.
+* Tout pack de correctifs cumulatifs (CFP) Adobe Experience Manager 6.4 a été installé en premier. *before* tous les Feature Packs Dynamic Media disponibles.
 * Le Feature Pack 18912 facultatif est installé.
 
    Ce Feature Pack facultatif est utile pour la prise en charge FTP ou si vous effectuez une migration des ressources de Dynamic Media vers Dynamic Media Classic.
 
 * Accédez à l’interface utilisateur des services cloud et vérifiez que le compte fourni s’affiche sous **[!UICONTROL Configurations disponibles]**.
-* Assurez-vous que l’agent de réplication `Dynamic Media Asset Activation (scene7)` est activé.
+* Assurez-vous que la variable `Dynamic Media Asset Activation (scene7)` l’agent de réplication est activé.
 
    Cet agent de réplication est accessible sous Agents dans l’instance d’auteur.
 
@@ -161,7 +162,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
      <li>Attribuez un profil vidéo au dossier.</li>
      <li>Modifiez le profil vidéo de sorte qu’il inclue plusieurs paramètres de codage prédéfinis.</li>
      <li>Attendez que le traitement de la vidéo soit terminé.</li>
-     <li>Que vous rechargiez la vidéo, assurez-vous que le workflow Vidéo de codage Dynamic Media n’est pas en cours d’exécution.<br /> </li>
+     <li>Si vous rechargez la vidéo, assurez-vous que le workflow Vidéo de codage Dynamic Media n’est pas en cours d’exécution.<br /> </li>
      <li>Rechargez la vidéo.</li>
     </ol> </td>
   </tr>
@@ -176,7 +177,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td>
     <ol>
      <li>Vérifiez votre instance de Experience Manager avec <code>-r dynamicmedia_scene7</code></li>
-     <li>Vérifiez que la configuration Dynamic Media sous Cloud Services est correctement configurée.</li>
+     <li>Vérifiez que la configuration Dynamic Media sous Cloud Service est correctement effectuée.</li>
      <li>Vérifiez que le dossier contient un profil vidéo. Vérifiez également le profil vidéo.</li>
     </ol> </td>
   </tr>
@@ -209,56 +210,71 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
 
 Si vous rencontrez des problèmes avec les visionneuses, reportez-vous aux conseils de dépannage ci-dessous.
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>Problème</strong></td>
-   <td><strong>Débogage</strong></td>
-   <td><strong>Solution</strong></td>
-  </tr>
-  <tr>
-   <td>Les paramètres prédéfinis de la visionneuse ne sont pas publiés.</td>
-   <td><p>Accédez à la page de diagnostic du gestionnaire d’échantillons : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Observez les valeurs calculées. Lorsque le fonctionnement est correct, les éléments suivants s’affichent :</p> <p><code>_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Remarque</strong> : Environ 10 minutes peuvent être nécessaires après la configuration des paramètres cloud de Dynamic Media pour que les ressources de visionneuse se synchronisent.</p> <p>Si les ressources non activées restent, sélectionnez l’un des boutons <strong>Lister toutes les ressources non activées</strong> pour afficher les détails.</p> </td>
-   <td>
-    <ol>
-     <li>Accédez à la liste des paramètres prédéfinis de la visionneuse dans les outils d’administration : <code>https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li>
-     <li>Sélectionnez tous les paramètres prédéfinis de la visionneuse, puis <strong>Publier</strong>.</li>
-     <li>Revenez au gestionnaire d’échantillons et notez que le nombre de ressources non activées est maintenant égal à zéro.</li>
-    </ol> </td>
-  </tr>
-  <tr>
-   <td>Le paramètre prédéfini de visionneuse retourne 404 à partir de l’aperçu des détails de ressource ou de la copie d’URL/de code intégré.</td>
-   <td><p>Dans CRXDE Lite, procédez comme suit :</p>
-    <ol>
-     <li>Accédez au dossier <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> dans votre dossier de synchronisation Dynamic Media (par exemple, <code>/content/dam/_CSS/_OOTB</code>),</li>
-     <li>Recherchez le nœud de métadonnées de la ressource qui pose problème (par exemple, <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li>
-     <li>Vérifiez que les propriétés <code>dam:scene7*</code> sont présentes. Si la ressource a été correctement synchronisée et publiée, <code>dam:scene7FileStatus</code> est défini sur <strong>PublishComplete</strong>.</li>
-     <li>Essayez de demander l’illustration directement à partir de Dynamic Media en concaténant les valeurs des propriétés suivantes et des littéraux de chaîne.
-      <ul>
-       <li><code>dam:scene7Domain</code></li>
-       <li><code>"is/content"</code></li>
-       <li><code>dam:scene7Folder</code></li>
-       <li><code>&lt;asset-name&gt;</code></li>
-       <li>Exemple : <code>https://&lt;server&gt;/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png</code></li>
-      </ul> </li>
-    </ol> </td>
-   <td><p>Si les exemples de ressources ou l’illustration du paramètre prédéfini de la visionneuse n’ont pas été synchronisés ou publiés, redémarrez le processus de copie ou de synchronisation entier :</p>
-    <ol>
-     <li>Accédez à CRXDE Lite.
-      <ul>
-       <li>Supprimez <code>&lt;sync-folder&gt;/_CSS/_OOTB</code>.</li>
-      </ul> </li>
-     <li>Accédez au gestionnaire de modules CRX : <code>https://localhost:4502/crx/packmgr/</code><a href="https://localhost:4502/crx/packmgr/"></a>
-      <ol>
-       <li>Recherchez le module de visionneuse dans la liste (il commence par <code>cq-dam-scene7-viewers-content</code>).</li>
-       <li>Sélectionnez <strong>Réinstaller</strong>.</li>
-      </ol> </li>
-     <li>Sous Cloud Services, accédez à la page Configuration Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.
-      <ul>
-       <li>N’effectuez aucune modification, sélectionnez <strong>Enregistrer</strong>. Cette action déclenche à nouveau la logique pour créer et synchroniser les exemples de ressources, le CSS du paramètre prédéfini de la visionneuse et l’illustration.<br />  </li>
-      </ul> </li>
-    </ol> </td>
-  </tr>
- </tbody>
-</table>
+### Problème: Les paramètres prédéfinis de la visionneuse ne sont pas publiés. {#viewers-not-published}
+
+**Débogage**
+
+1. Accédez à la page de diagnostic du gestionnaire d’échantillons : `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
+1. Observez les valeurs calculées. Lorsque le fonctionnement est correct, les éléments suivants s’affichent : `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+
+   >[!NOTE]
+   >
+   >La synchronisation des ressources de la visionneuse peut prendre environ 10 minutes après la configuration des paramètres cloud de Dynamic Media.
+
+1. S’il reste des ressources non activées, sélectionnez l’un des boutons **Répertorier toutes les ressources non activées** pour afficher des informations détaillées.
+
+**Solution**
+
+1. Accédez à la liste des paramètres prédéfinis de la visionneuse dans les outils d’administration : `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
+1. Sélectionnez tous les paramètres prédéfinis de visionneuse, puis sélectionnez **Publier**.
+1. Revenez au gestionnaire d’échantillons et notez que le nombre de ressources non activées est maintenant égal à zéro.
+
+### Problème : L’illustration du paramètre prédéfini de la visionneuse renvoie 404 à partir de l’aperçu dans les détails de la ressource ou de la copie de l’URL/du code intégré. {#viewer-preset-404}
+
+**Débogage**
+
+Dans CRXDE Lite, procédez comme suit :
+
+1. Accédez au dossier `<sync-folder>/_CSS/_OOTB` dans votre dossier de synchronisation Dynamic Media (par exemple, `/content/dam/_CSS/_OOTB`).
+1. Recherchez le nœud de métadonnées de la ressource qui pose problème (par exemple, `<sync-folder>/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/`).
+1. Vérifiez que les propriétés `dam:scene7*` sont présentes. Si la ressource a été correctement synchronisée et publiée, `dam:scene7FileStatus` est défini sur **PublishComplete**.
+1. Essayez de demander l’illustration directement à partir de Dynamic Media en concaténant les valeurs des propriétés suivantes et des littéraux de chaîne :
+
+   * `dam:scene7Domain`
+   * `"is/content"`
+   * `dam:scene7Folder`
+   * `<asset-name>`
+Exemple: 
+`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+
+**Solution**
+
+Si les exemples de ressources ou l’illustration du paramètre prédéfini de la visionneuse n’ont pas été synchronisés ou publiés, redémarrez le processus de copie ou de synchronisation entier :
+
+1. Accédez à CRXDE Lite.
+1. Supprimez `<sync-folder>/_CSS/_OOTB`.
+1. Accédez au gestionnaire de modules CRX : `https://localhost:4502/crx/packmgr/`.
+1. Recherchez le module de visionneuse dans la liste ; commence par `cq-dam-scene7-viewers-content`.
+1. Sélectionner **Réinstaller**.
+1. Sous Cloud Services, accédez à la page Configuration Dynamic Media, puis ouvrez la boîte de dialogue de configuration correspondant à la configuration S7 de Dynamic Media.
+1. Ne pas apporter de modifications, sélectionnez **Enregistrer**.
+Cette action d’enregistrement déclenche à nouveau la logique pour créer et synchroniser les exemples de ressources, le CSS du paramètre prédéfini de visionneuse et l’illustration.
+
+### Problème : L’aperçu de l’image ne se charge pas dans la création des paramètres prédéfinis de la visionneuse. {#image-preview-not-loading}
+
+**Solution**
+
+1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Dans le rail de gauche, accédez au dossier de contenu d’exemple à l’emplacement suivant :
+
+   `/content/dam/_DMSAMPLE`
+
+1. Supprimez la variable `_DMSAMPLE` dossier.
+1. Dans le rail de gauche, accédez au dossier des paramètres prédéfinis à l’emplacement suivant :
+
+   `/conf/global/settings/dam/dm/presets/viewer`
+
+1. Supprimez la variable `viewer` dossier.
+1. Dans le coin supérieur gauche de la page CRXDE Lite, sélectionnez **[!UICONTROL Tout enregistrer]**.
+1. Dans le coin supérieur gauche de la page du CRXDE Lite, sélectionnez la variable **Retour à la maison** icône .
+1. Recréez une [Configuration de Dynamic Media en Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
