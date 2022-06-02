@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: db94e464b130c6ca223314c3c5ffb8893a92a142
+source-git-commit: a45d66dc2226dbe2879aa61d95cc5379dce882bb
 workflow-type: tm+mt
-source-wordcount: '3752'
+source-wordcount: '3774'
 ht-degree: 7%
 
 ---
@@ -371,6 +371,7 @@ Pour connaître les plates-formes certifiées pour travailler avec cette version
 1. Assurez-vous que vous avez installé le [!DNL Experience Manager] Service Pack.
 1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [versions AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) pour votre système d’exploitation.
 1. Installez le module complémentaire Forms comme décrit dans [Installation des packages de modules complémentaires AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
+1. Si vous utilisez des lettres dans Experience Manager 6.5 Forms, installez la variable [dernier package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates).
 
 ### Installer [!DNL Experience Manager] Forms on JEE {#install-aem-forms-jee-installer}
 
