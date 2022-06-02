@@ -11,9 +11,9 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 73d5b894dfa1bbb3ae3f2973cc4f9db1ace90ef8
+source-git-commit: dab643ffd64217018bf2f5544ae3c417963cea82
 workflow-type: tm+mt
-source-wordcount: '3515'
+source-wordcount: '3533'
 ht-degree: 96%
 
 ---
@@ -419,8 +419,12 @@ Tenez également compte des points suivants lors de votre choix de logiciels pou
    <td>8.5 </td>
   </tr>
   <tr>
-   <td>Microsoft Sharepoint</td>
-   <td>2016<br /> </td>
+   <td>Microsoft Sharepoint </td>
+   <td>2016 (obsolète)<br /> </td>
+  </tr>
+  <tr>
+   <td>Microsoft SharePoint </td>
+   <td>2019<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -755,6 +759,10 @@ Adobe se réserve le droit de modifier les plateformes de fournisseurs tiers de 
 Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en recherchant sur le site Support Adobe aux entreprises les articles de la base de connaissances relatifs à votre produit.
 
 ## Mises à jour de Platform {#platform-updates}
+
+Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.13.0 du 2 juin 2022 :
+
+- Microsoft SharePoint 2016
 
 Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.12.0 du 3 mars 2022 :
 

@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
 workflow-type: tm+mt
-source-wordcount: '3775'
+source-wordcount: '3788'
 ht-degree: 99%
 
 ---
@@ -399,7 +399,7 @@ ht-degree: 99%
 + Rapports de transaction {#transaction-reports}
    + [Présentation des rapports de transaction](using/transaction-reports-overview.md)
    + [Afficher et comprendre les rapports de transaction](using/viewing-and-understanding-transaction-reports.md)
-   + [ API de rapports de transactions facturables](using/transaction-reports-billable-apis.md)
+   + [API de rapports de transactions facturables](using/transaction-reports-billable-apis.md)
    + [Enregistrer une transaction pour les implémentations personnalisées](using/record-transaction-custom-implementation.md)
 + Aide de l’administrateur pour AEM Forms sur JEE {#administrator-help}
    + Prise en main {#get-started}
@@ -681,9 +681,12 @@ ht-degree: 99%
          + [Gestion par programmation des nœuds de préférences](developing/programmatically-preferences-nodes.md)
          + [Protéger des documents à lʼaide de stratégies](developing/protecting-documents-policies.md)
          + [Valider un document DDX à l’aide de l’API de service web](developing/validate-ddx-document-using-web.md)
-      + Documentation héritée {#legacy-documentation}
-         + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
-         + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)
-         + [Configurer et dépanner un cluster de serveurs AEM Forms on JEE](developing/configure-server-cluster.md)
-         + [Génération et utilisation de hachages dans les PDF forms dynamiques](developing/hashing-forms.md)
-         + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](developing/passing-credentials.md)
++ Résolution des problèmes {#troubleshooting}
+   + [Impossible d’utiliser certaines fonctionnalités de formulaires avec certaines versions du JDK Oracle](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
++ Documentation héritée {#legacy-documentation}
+   + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
+   + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)
+   + [Configurer et dépanner un cluster de serveurs AEM Forms on JEE](developing/configure-server-cluster.md)
+   + [Génération et utilisation de hachages dans les PDF forms dynamiques](developing/hashing-forms.md)
+   + [Transmettre des informations d’identification à l’aide des en-têtes WS-Security](developing/passing-credentials.md)
+

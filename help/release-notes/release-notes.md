@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6c9e8f1e62fe1a193cb9938e5f789e1e08b8339d
+source-git-commit: db94e464b130c6ca223314c3c5ffb8893a92a142
 workflow-type: tm+mt
-source-wordcount: '3546'
+source-wordcount: '3752'
 ht-degree: 7%
 
 ---
@@ -24,6 +24,22 @@ ht-degree: 7%
 ## Éléments compris dans [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
 
 [!DNL Experience Manager] 6.5.13.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients, ainsi que des améliorations en termes de performances, de stabilité et de sécurité, publiées depuis la version initiale de 6.5 en avril 2019. [Installer ce Service Pack](#install) on [!DNL Experience Manager] 6.5.
+
+Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experience Manager] 6.5.13.0 sont :
+
+* Utiliser CAPTCHA invisible dans un formulaire adaptatif : Vous pouvez désormais utiliser un CAPTCHA invisible pour montrer le défi CAPTCHA uniquement en cas d&#39;activité suspecte. Si aucune activité suspecte n&#39;est trouvée, le défi CAPTCHA ne s&#39;affiche pas. Il permet d’évaluer l’achèvement du formulaire humain sans conditions de case à cocher, de réduire les efforts de personnalisation et d’améliorer l’expérience de l’utilisateur final. (NPR-38500)
+
+* Ajout de la prise en charge de la récupération des en-têtes de réponse dans le post-processeur du modèle de données de formulaire pour les points de terminaison REST. (NPR-38275)
+
+* Désormais, lors de la génération d’un fichier de traduction de formulaire adaptatif, la même séquence de textes que le fichier XLIFF généré est identique à la séquence de composants dans le formulaire adaptatif correspondant. (NPR-37700)
+
+* Lorsque vous localisez un formulaire adaptatif et apportez même une petite modification au texte de la langue de base, la traduction complète est manquante pour toutes les autres langues. Le problème est corrigé dans [!DNL Experience Manager] 6.5.13.0. (NPR-37189)
+
+* Améliorations de l’accessibilité pour Forms :
+
+   * Ajout de la prise en charge pour les lecteurs d’écran de reconnaître l’en-tête et le corps d’un tableau comme des entités continues et connectées. Cela permet aux lecteurs d’écran de naviguer correctement dans les tableaux. (NPR-37139)
+   * Ajout de la prise en charge des lecteurs d’écran pour arrêter la navigation dans l’espace de travail de HTML jusqu’à l’ouverture d’une boîte de dialogue. (NPR-37134)
+   * Possibilité de spécifier du texte de Reader d’écran pour les hyperliens dans Forms Designer.(NPR-36221)
 
 Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont été introduits dans [!DNL Experience Manager] 6.5.13.0 :
 
@@ -120,20 +136,6 @@ Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont 
 >
 >* [!DNL Experience Manager Forms] publie les packages de modules complémentaires une semaine après la date de publication prévue du Service Pack [!DNL Experience Manager].
 
-
-<!-- **Adaptive Forms**
-
-**Form Data Model**
-
-**Interactive Communication**
-
-**Document Services**
-
-**Document Security**
-
-**Foundation JEE**
-
-**Workflow** -->
 
 ## Granite {#granite-6513}
 
