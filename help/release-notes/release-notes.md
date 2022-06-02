@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a45d66dc2226dbe2879aa61d95cc5379dce882bb
+source-git-commit: f78d12d6fa1daa1c1b3afdfe22ecb8c183e8e1d0
 workflow-type: tm+mt
-source-wordcount: '3774'
+source-wordcount: '3737'
 ht-degree: 7%
 
 ---
@@ -92,9 +92,9 @@ Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont 
 
 ## [!DNL Forms] {#forms-65130}
 
-* Lorsque vous utilisez le service de préremplissage pour remplir un formulaire adaptatif qui contient un fragment et que le fragment contient une zone de texte qui prend en charge le texte enrichi, le formulaire ne parvient pas à être envoyé et l’erreur suivante se produit :
+<!-- * When you use the prefill service to fill an adaptive form that contains a fragment and the fragment contains a Text box that supports rich text, the form fails to submit, and the following error occurs:
 
-   `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542)
+  `[AF] [AEM-AF-901-004]: Encountered an internal error while submitting the form.` (NPR-38542) -->
 
 * Les composants Bouton radio, Case à cocher et Téléchargement de fichier ne sont pas correctement traduits de l’allemand vers l’anglais. (NPR-38527)
 * Encodage du code à barres PDF417 produit par [!DNL Experience Manager] Forms n’est pas valide pour un groupe de boutons radio. (NPR-38525)
