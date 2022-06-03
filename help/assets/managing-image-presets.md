@@ -13,10 +13,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
+source-git-commit: 0d3bcdaa10d16c292aa0dd60254302d30fd700d6
 workflow-type: tm+mt
 source-wordcount: '3839'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -68,7 +68,7 @@ La gestion des paramètres d’image prédéfinis dans Experience Manager s’ef
 >
 >Le système affiche différents rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres d’image prédéfinis affichés. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
-### Recadrages intelligents, formats de fichiers Adobe Illustrator (AI), PostScript (EPS) et PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Recadrages intelligents, formats de fichier Adobe Illustrator (AI), Postscript (EPS) et PDF {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus d
 
 >[!NOTE]
 >
->Dans le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques], l’étape **[!UICONTROL Miniatures EPS]** génère des miniatures pour les fichiers EPS.
+>Dans le [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] le workflow, **[!UICONTROL Miniatures EPS]** génère des miniatures pour les fichiers EPS.
 
 #### Propriétés des métadonnées de ressource PDF/AI/EPS {#pdf-ai-eps-asset-metadata-properties}
 
@@ -106,7 +106,7 @@ Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus d
 
 Vous accédez aux options des composants de processus `Rasterize PDF/AI Image Preview Rendition` par le biais du workflow `DAM Update Asset`.
 
-Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**. Sur la page Modèles de workflows, sélectionnez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**, puis appuyez sur **[!UICONTROL Modifier]**. Sur la page de workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques] , appuyez deux fois sur le composant de processus `Rasterize PDF/AI Image Preview Rendition` pour ouvrir sa boîte de dialogue Propriétés des étapes .
+Appuyez sur Adobe Experience Manager dans le coin supérieur gauche de l’écran, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Modèles]**. Sur la page Modèles de workflows, sélectionnez **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**, puis appuyez sur **[!UICONTROL Modifier]**. Sur le [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] page de processus, appuyez deux fois sur la `Rasterize PDF/AI Image Preview Rendition` pour ouvrir la boîte de dialogue Propriétés des étapes .
 
 #### Options Pixelliser le rendu d’aperçus d’image PDF/AI {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -156,13 +156,13 @@ Si vous avez l’intention de prendre en charge l’assimilation de fichiers IND
 
 Dans le cas des fichiers InDesign, les sous-ressources ne sont extraites que si Adobe InDesign Server est intégré à Experience Manager. Les ressources référencées sont reliées en fonction de leurs métadonnées. InDesign Server n’est pas requis pour la liaison. Cependant, les ressources référencées doivent être présentes dans Experience Manager avant que les fichiers InDesign soient traités, pour que les liens soient créés entre les fichiers InDesign et les ressources référencées.
 
-Voir [Intégration de ressources Experience Manager à InDesign Server](/help/assets/indesign.md).
+Voir [Intégration de Experience Manager Assets à InDesign Server](/help/assets/indesign.md).
 
-Le composant Extraction de médias du workflow `DAM Update Asset` exécute plusieurs scripts d’extension préconfigurés pour traiter les fichiers d’InDesign.
+Le composant Processus d’extraction de médias dans `DAM Update Asset` workflow exécute plusieurs scripts d’extension préconfigurés pour traiter les fichiers d’InDesign.
 
 ![Chemins ExtendScript dans les arguments du processus Extraction de médias](assets/6_5_mediaextractionprocess.png)
 
-Chemins ExtendScript dans les arguments du composant de processus Extraction de médias dans le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques].
+Chemins ExtendScript dans les arguments du composant de processus Extraction de médias dans la variable [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow.
 
 Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
 
@@ -176,12 +176,12 @@ Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
   <tr>
    <td>ThumbnailExport.jsx</td>
    <td>Oui</td>
-   <td>Génère un rendu <code>thumbnail.jpg</code> de 300 ppp optimisé et transformé en rendu PTIFF par le composant de processus <code>Dynamic Media Process Image Assets</code>.<br /> </td>
+   <td>Génère une valeur de 300 ppp <code>thumbnail.jpg</code> rendu optimisé et transformé en rendu PTIFF par <code>Dynamic Media Process Image Assets</code> composant de processus.<br /> </td>
   </tr>
   <tr>
    <td>JPEGPagesExport.jsx</td>
    <td>Oui</td>
-   <td>Génère une sous-ressource JPEG 300 ppp pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Elle est également optimisée et transformée en PTIFF par le workflow <code>DAM Update Asset</code>.<br /> </td>
+   <td>Génère une sous-ressource JPEG de 300 PPP pour chaque page. Une sous-ressource JPEG est une véritable ressource stockée sous la ressource InDesign. Elle est également optimisée et transformée en PTIFF par le workflow <code>DAM Update Asset</code>.<br /> </td>
   </tr>
   <tr>
    <td>PDFPagesExport.jsx</td>
@@ -193,18 +193,17 @@ Les scripts suivants sont utilisés par l’intégration de Dynamic Media :
 
 ## Configuration de la taille des miniatures d’images {#configuring-image-thumbnail-size}
 
-Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Bien que (**[!UICONTROL Dynamic Media Process Image Assets]**) soit utilisé pour les ressources d’image dynamique et (**[!UICONTROL Miniatures de processus]**) soit destiné à la génération de miniatures statiques, ou lorsque tous les autres processus ne parviennent pas à générer des miniatures, *les deux* doivent avoir les mêmes paramètres.
+Vous pouvez définir la taille des miniatures en configurant ces paramètres dans le workflow **[!UICONTROL Ressource de mise à jour de gestion des actifs numériques (DAM)]**. Le workflow comprend deux étapes au cours desquelles vous pouvez configurer la taille de miniature des ressources d’images. Bien que (**[!UICONTROL Ressources d’image de processus Dynamic Media]**) est utilisé pour les ressources d’image dynamique, et (**[!UICONTROL Miniatures des processus]**) est destiné à la génération de miniatures statiques, ou lorsque tous les autres processus ne parviennent pas à générer de miniatures, *both* doivent avoir les mêmes paramètres.
 
 Avec l’étape **[!UICONTROL Ressources d’image du processus Dynamic Media]**, les miniatures sont générées par le serveur d’images et cette configuration est indépendante de la configuration appliquée à l’étape des **[!UICONTROL miniatures de processus]**. La génération de miniatures en passant par l’étape **[!UICONTROL Miniatures des processus]** constitue la méthode la plus lente et la plus gourmande en mémoire.
 
-Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL width:height:center]**, par exemple `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur du centre est false ou true et, si elle est définie sur true, elle indique que la taille de l’image miniature est exactement la même que celle donnée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
+Le dimensionnement des miniatures est défini au format suivant : **[!UICONTROL :height:width:center]** (largeur:hauteur:centrer), par exemple `80:80:false`. La largeur et la hauteur déterminent la taille en pixels de la miniature. La valeur du centre est false ou true et, si elle est définie sur true, elle indique que la taille de l’image miniature est exactement la même que celle donnée dans la configuration. Si l’image redimensionnée est plus petite, elle est centrée dans la miniature.
 
 >[!NOTE]
 >
 >* La taille des miniatures pour les fichiers EPS est configurée à l’étape **[!UICONTROL Miniatures EPS]**, dans l’onglet **[!UICONTROL Arguments]** sous Miniatures.
 >
 >* Les tailles des miniatures pour les vidéos sont configurées à l’étape **[!UICONTROL Miniatures FFmpeg]**, dans l’onglet **[!UICONTROL Processus]** sous **[!UICONTROL Arguments]**.
-
 >
 
 
@@ -303,7 +302,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 * **[!UICONTROL Activer l’accentuation simple]** : ne sélectionnez pas l’option **[!UICONTROL Activer l’accentuation simple]** (ce filtre d’accentuation est moins précis que les paramètres Accentuation).
 
-* **[!UICONTROL Accentuation : Mode Rééchantillonnage]** : sélectionnez l’option **[!UICONTROL Bicubique]**.
+* **[!UICONTROL Accentuation : Mode Rééchantillonnage]** - Sélectionner **[!UICONTROL Sharp2]**.
 
 #### Options de l’onglet De base {#basic-tab-options}
 
@@ -341,7 +340,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
       Lorsque vous sélectionnez les options <strong>PDF</strong>, <strong>TIFF</strong> ou <strong>TIFF avec couche alpha</strong>, les autres options suivantes sont proposées :
     </div>
     <ul>
-     <li><strong>Compression</strong> : sélectionnez un algorithme de compression. Les options d’algorithme pour PDF sont <strong>None</strong>, <strong>Zip</strong> et <strong>Jpeg</strong> ; pour TIFF, les options sont <strong>Aucune</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> et <strong>Zip</strong>; et pour TIFF avec couche alpha sont <strong>Aucun</strong>, <strong>LZW</strong> et <strong>Zip</strong>.</li>
+     <li><strong>Compression</strong> : sélectionnez un algorithme de compression. Les options d’algorithme pour le PDF sont les suivantes : <strong>Aucun</strong>, <strong>Zip</strong>, et <strong>Jpeg</strong>; pour le TIFF, les options sont les suivantes : <strong>Aucun</strong>, <strong>LZW</strong>, <strong>Jpeg</strong>, et <strong>Zip</strong>; et pour le TIFF avec Alpha sont <strong>Aucun</strong>, <strong>LZW</strong>, et <strong>Zip</strong>.</li>
     </ul> <p>Aucune option supplémentaire n’est fournie si vous sélectionnez <strong>PNG</strong>, <strong>PNG avec couche alpha</strong> ou <strong>EPS</strong>.</p> </td>
   </tr>
   <tr>
@@ -390,7 +389,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
    <td><p>Sélectionnez <strong>Aucun</strong>, <strong>Accentuer</strong> ou <strong>Accentuation</strong>. </p>
     <ul>
      <li>Sélectionnez <strong>Aucun</strong> si vous souhaitez désactiver l’accentuation.</li>
-     <li>Sélectionnez <strong>Accentuer</strong> si vous souhaitez appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. </li>
+     <li>Sélectionner <strong>Accentuer</strong> si vous souhaitez appliquer un filtre d’accentuation de base à l’image à l’issue des opérations de mise à l’échelle. L’accentuation peut compenser le flou produit lors de l’affichage d’une image à une taille différente. </li>
      <li>Sélectionnez <strong>Accentuation</strong> pour affiner l’effet d’un filtre d’accentuation sur l’image finale sous-échantillonnée. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre de masquage flou de Photoshop.</li>
     </ul> <p>L’option <strong>Accentuation</strong> propose les options suivantes :</p>
     <ul>
@@ -437,7 +436,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 ## Définition des options de paramètre d’image prédéfini à l’aide des modificateurs d’image {#defining-image-preset-options-with-image-modifiers}
 
-Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu d’image repose sur l’API de rendu d’image qui est définie en détail dans la [référence au protocole HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
+Outre les options disponibles dans les onglets Simple et Avancé, vous pouvez définir des modificateurs d’image afin de disposer d’un plus grand nombre d’options lors de la définition de paramètres d’image prédéfinis. Le rendu d’image repose sur l’API de rendu d’image qui est définie en détail dans la section [Référence du protocole HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api).
 
 Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l’aide des modificateurs d’image.
 
@@ -511,5 +510,5 @@ Si vous exécutez le mode hybride de Dynamic Media, vous devez publier manuellem
 ## Suppression de paramètres d’image prédéfinis Dynamic Media {#deleting-image-presets}
 
 1. Dans Experience Manager, appuyez ou cliquez sur le logo du Experience Manager pour accéder à la console de navigation globale.
-1. Appuyez sur l’icône **[!UICONTROL Outils]**, puis accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres d’image prédéfinis]**.
+1. Appuyez sur le bouton **[!UICONTROL Outils]** , puis accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres d’image prédéfinis]**.
 1. Sélectionnez un paramètre prédéfini, puis cliquez sur **[!UICONTROL Supprimer]**. Dynamic Media vous invite à confirmer la suppression. Appuyez sur **[!UICONTROL Supprimer]** pour le supprimer ou sur **[!UICONTROL Annuler]** pour annuler.
