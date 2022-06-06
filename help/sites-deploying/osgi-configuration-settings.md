@@ -12,10 +12,10 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9a3f26b6709461a911e833f7e340d11c759c7dae
+source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
 workflow-type: tm+mt
-source-wordcount: '3558'
-ht-degree: 63%
+source-wordcount: '3557'
+ht-degree: 62%
 
 ---
 
@@ -97,7 +97,7 @@ La valeur recommandée est la suivante : `-1` car cela définit la file d’atte
 **Servlet de GET Apache Sling** Configurez certains aspects du rendu :
 
 * **Auto index (Index automatique)** pour activer/désactiver le rendu du répertoire pour la navigation. 
-* **Activez** (ou désactivez) les rendus par défaut, tels que **HTML**, **texte brut**, **JSON** ou **XML**.
+* **Activer** (ou désactiver) les rendus par défaut, tels que **HTML**, **Texte brut**, **JSON** ou **XML**.
 Ne désactivez pas le JSON.
 
 >[!NOTE]
@@ -108,7 +108,7 @@ Ne désactivez pas le JSON.
 
 Certains paramètres peuvent nuire aux performances et doivent être désactivés dans la mesure du possible, en particulier pour une instance de production. 
 
-* La **machine virtuelle source** et la **machine virtuelle cible** définissent la version du JDK utilisée comme mode d’exécution JVM
+* **VM source** et **Target VM**, définissez la version du JDK comme celle utilisée comme JVM d’exécution.
 
 * Pour les instances de production :
 
@@ -116,7 +116,7 @@ Certains paramètres peuvent nuire aux performances et doivent être désactivé
 
 **Programme d’installation JCR Apache Sling** Ces paramètres n’ont probablement pas besoin d’être configurés, mais peuvent s’avérer utiles lors du développement ou du débogage. Par exemple, le dossier d’installation peut être utile pour archiver/extraire ou créer un module.
 
-* **Installation folders name regexp (Regexp nom de dossiers d’installation)** et **Max hierarchy depth of install folders (Profondeur de hiérarchie maximale des fichiersd’installation)** - spécifiez où et à quel niveau les fichiers de référentiel sont recherchées pour que les ressources soient installées. Lorsqu’un caractère générique est utilisé (comme dans .*/install) toutes les correspondances appropriées seront recherchées, par exemple : `/libs/sling/install` et `/libs/cq/core/install`.
+* **Installation folders name regexp (Regexp nom de dossiers d’installation)** et **Max hierarchy depth of install folders (Profondeur de hiérarchie maximale des fichiersd’installation)** - spécifiez où et à quel niveau les fichiers de référentiel sont recherchées pour que les ressources soient installées. Lorsqu’un caractère générique est utilisé (comme dans .&#42;/install) toutes les correspondances appropriées seront recherchées, par exemple : `/libs/sling/install` et `/libs/cq/core/install`.
 
 * **Search Path (Chemin de recherche)** : la liste des chemins d’accès recherchés par jcrinstall pour l’installation des ressources, ainsi qu’un nombre indiquant le facteur de pondération pour ce chemin. 
 
@@ -319,19 +319,19 @@ Lorsque vous utilisez des [groupes d’utilisateurs fermés](/help/sites-adminis
 Il existe deux interfaces utilisateur disponibles dans AEM :
 
 * L’IU tactile est l’IU standard
-* et l’IU classique obsolète est toujours pleinement opérationnelle
+* et l’IU classique obsolète est toujours entièrement opérationnelle
 
 En utilisant le mappage racine d’AEM, vous pouvez configurer l’IU que vous souhaitez utiliser en tant que valeur par défaut pour votre instance :
 
 * Pour que l’IU tactile soit l’IU par défaut, **Chemin cible** doit pointer vers :
 
-   ```
+   ```shell
       /projects.html
    ```
 
 * Pour que l’IU classique soit l’IU par défaut, **Chemin cible** doit pointer vers :
 
-   ```
+   ```shell
       /welcome.html
    ```
 
