@@ -12,10 +12,10 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1950'
-ht-degree: 100%
+source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+workflow-type: tm+mt
+source-wordcount: '1995'
+ht-degree: 95%
 
 ---
 
@@ -172,6 +172,10 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
    Réponse : les formulaires HTML5 ne prennent pas en charge les modèles d’affichage pour les champs flottants.
 
+1. Quel est le format du champ Date dans HTML5 Forms ?
+
+Réponse : Le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ Date n’accepte pas la mise en forme tant que l’utilisateur n’a pas quitté le champ à l’aide de la touche de tabulation.
+
 ### Script {#scripting}
 
 1. Existe-t-il des restrictions de mise en œuvre JavaScript pour les formulaires HTML ?
@@ -188,7 +192,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Existe-t-il une convention de dénomination recommandée et des mots-clés réservés à éviter ?
 
-   * Dans AEM Forms Designer, il est recommandé de ne pas faire commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un tiret bas (_). Pour utiliser le tiret bas au début du nom, ajoutez un préfixe à sa suite, _&lt;prefix>&lt;objectname>.
+   * Dans AEM Forms Designer, il est recommandé de ne pas commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un trait de soulignement (_). Pour utiliser un trait de soulignement au début du nom, ajoutez un préfixe après le trait de soulignement,_&lt;prefix>&lt;objectname>.
    * Toutes les API des formulaires HTML5 API sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md).
 
 1. Les formulaires HTML5 prennent-ils en charge les champs flottants ?
