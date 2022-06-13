@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 57bccab9b95d328591e6cbb1070fd9e59712c016
+source-git-commit: 2d12f1652a3b8ec4e6ca9c737dc844d1f53f7d08
 workflow-type: tm+mt
-source-wordcount: '5364'
-ht-degree: 68%
+source-wordcount: '5365'
+ht-degree: 67%
 
 ---
 
@@ -479,7 +479,7 @@ Sous Microsoft® Windows, le service PDF Generator utilise Adobe Acrobat pour co
 
    1. Ouvrir [AEM Gestionnaire de modules](http://localhost:4502/crx/packmgr/index.jsp) et téléchargez le fichier `adobe-aemfd-pdfg-common-pkg-[version].zip` à partir du gestionnaire de modules.
    1. Décompressez le fichier .zip téléchargé. Ouvrez l’invite de commande avec des droits d’administrateurs.
-   1. Accédez au répertoire `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Exécutez le fichier de commandes suivant :
+   1. Accédez au [extracted-zip-file]`\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\adobe-aemfd-pdfg-common-pkg-[version]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]` répertoire . Exécutez le fichier de commandes suivant :
 
       `Acrobat_for_PDFG_Configuration.bat`
 
