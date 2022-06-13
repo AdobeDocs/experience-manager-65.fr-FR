@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: f78d12d6fa1daa1c1b3afdfe22ecb8c183e8e1d0
+source-git-commit: 6b75c41cf796b28409c263175cf3f3a2044422ff
 workflow-type: tm+mt
-source-wordcount: '3737'
+source-wordcount: '3733'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | Version | 6.5.13.0 |
 | Type | Version du Service Pack |
-| Date  | 26 mai 2022 |
+| Date | 26 mai 2022 |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.13.0.zip) |
 
 ## Éléments compris dans [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
@@ -80,7 +80,7 @@ Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont 
 * Accessibilité : les utilisateurs qui dépendent des lecteurs d’écran sont affectés pour naviguer dans les formulaires. Ils ont des difficultés à comprendre les informations sur les commandes de formulaire si la variable NVDA ne décrit pas les informations d’étiquette des commandes de rotation &quot;Largeur et hauteur&quot;. Ces commandes sont présentes sous l’en-tête Recadrage d’image réactive lors de la navigation dans le mode de formulaire NVDA &quot;F&quot;. (ASSETS-5393)
 * Après l’ajout d’un composant Dynamic Media sur un site et la publication de la page, la ressource Dynamic Media nouvellement ajoutée n’est pas visible sur la page publiée, ni elle n’est visible dans la page Aperçu. Ce problème survenait pour les types de ressources image et vidéo. (ASSETS-9467)
 
-## Commerce {#commerce-6513}
+## Commerce  {#commerce-6513}
 
 * &quot;everyone&quot; a jcr:write sur `/content/usergenerated/etc/commerce/smartlists`. (NPR-35230)
 * Le tri local des produits de commerce ne fonctionne plus. (CQ-4343750)
@@ -232,7 +232,7 @@ Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont 
 
 <!-- version 2 of description above * Allow new email templated under campaign and ambit. (NPR-38445) * The "Approve for Adobe Campaign" workflow was only running for pages which are of type or extending the resource types: "mcm/neolane/components/newsletter", "mcm/campaign/components/newsletter" and "mcm/campaign/components/campaign_newsletterpage". (NPR-38204) -->
 
-### Fragments d’expérience {#sites-experiencefragments-6513}
+### Présentation {#sites-experiencefragments-6513}
 
 * Lorsque vous utilisez l’action Accéder à la page dans Références d’un fragment d’expérience, elle ouvre la mauvaise page. (NPR-38062)
 * Les propriétés de mise en page provenant du modèle XF ne sont pas observées dans le côté d’une page. (NPR-38214)
@@ -281,8 +281,9 @@ Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont 
 
 ## Sling {#sling-6513}
 
-* Fuite de mémoire dans `DiscoveryLiteDescriptor`. (NPR-38288)
+<!-- OBSOLETE BASED ON CQDOC-19400 * Memory leak in `DiscoveryLiteDescriptor`. (NPR-38288) -->
 * Mettre à jour `sling-javax.activation` lot avec le correctif de SLING-8777. (NPR-38077)
+
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * Security issues reported under `org.apache.sling.scripting.jst`. (NPR-38067) -->
 
 ## Projets de traduction {#translation-6513}
@@ -413,7 +414,7 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 | Zone | Fonctionnalité | Remplacement |
 |---|---|---|
 | Intégrations | Le **[!UICONTROL Accord préalable des services cloud AEM]** est obsolète, car la variable [!DNL Experience Manager] et [!DNL Adobe Target] l’intégration est mise à jour dans [!DNL Experience Manager] 6.5. L’intégration prend en charge l’API Adobe Target Standard. L’API utilise l’authentification au moyen d’Adobe IMS et [!DNL Adobe I/O]. Il prend en charge le rôle croissant d’Adobe Launch pour l’instrumenter. [!DNL Experience Manager] pour les analyses et la personnalisation, l’assistant de souscription n’a aucune utilité sur le plan fonctionnel. | Configuration des connexions système, de l’authentification Adobe IMS et [!DNL Adobe I/O] intégrations via les [!DNL Experience Manager] services cloud. |
-| Connecteurs | Adobe JCR Connector for Microsoft® SharePoint 2010 et Microsoft® SharePoint 2013 est obsolète pour [!DNL Experience Manager] 6.5. | N/A |
+| Connecteurs | Adobe JCR Connector for Microsoft® SharePoint 2010 et Microsoft® SharePoint 2013 est obsolète pour [!DNL Experience Manager] 6.5. | S/O |
 
 ## Problèmes connus {#known-issues}
 
