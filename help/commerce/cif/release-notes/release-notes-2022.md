@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2022
 description: Notes de mise à jour d’AEM Content and Commerce 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: aacb497b10f46be3157aae86a5973aa277fda967
+source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 21%
+source-wordcount: '573'
+ht-degree: 29%
 
 ---
 
@@ -21,6 +21,30 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
+## Date de publication : Mai 2022
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2022.05.31.00 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip) |
+| Composants principaux CIF | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
+| Site de référence CIF Venia | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
+
+### Nouveautés {#what-is-new-may}
+
+* Nouvelle page des propriétés du cockpit du produit pour un aperçu meilleur et simplifié
+
+![Présentation des propriétés du cockpit du produit](/help/assets/CIF/product_cockpit_properties_overview.png)
+
+* Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
+
+* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définir le comportement de mise en cache personnalisée)
+
+### Correctifs {#bug-fixes-may}
+
+* Le champ de sélecteur de produits à plusieurs valeurs affiche le deuxième et les produits supplémentaires comme non valides
+
+* Le sélecteur de produit est parfois masqué derrière les composants.
+
 ## Date de publication : Avril 2022
 
 | Composant | Version | Détails |
@@ -29,7 +53,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 | Composants principaux CIF | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
 | Site de référence CIF Venia | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
 
-### Nouveautés {#what-is-new}
+### Nouveautés {#what-is-new-april}
 
 * Accès rapide au cockpit du produit : Accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de sites.
 
@@ -68,9 +92,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 * Amélioration des composants myAccount
 * Le composant de recommandation de produit prend en charge d’autres types de page (page d’accueil, panier, confirmation de commande).
 * **Liste de souhaits**
-   * Les visiteurs connectés peuvent ajouter des produits à une liste bloquée.
+   * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
    * La gestion de la liste des souhaits et de ses produits est possible via myAccount
-   * Le bouton &quot;Ajouter à la liste des souhaits&quot; peut être activé/désactivé au niveau des composants via une stratégie (par exemple, teaser de produit, détails de produit).
-   * Disponible en tant que composant principal et dans l’AEM Venia Storefront
+   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une stratégie (par exemple un teaser de produit ou les informations de produit).
+   * Disponible en tant que composant principal et dans AEM Venia Storefront
 
 ![Liste de souhaits](/help/assets/CIF/wishlist.png)
