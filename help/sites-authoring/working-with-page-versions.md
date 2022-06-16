@@ -1,8 +1,8 @@
 ---
 title: Utilisation des versions de page
-seo-title: Utilisation des versions de page
+seo-title: Working with Page Versions
 description: Création, comparaison et restauration des versions d’une page
-seo-description: Création, comparaison et restauration des versions d’une page
+seo-description: Create, compare, and restore versions of a page
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 4d5f7057178ea0a1f00ea363b76dacdfb714b5e3
+source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
-source-wordcount: '1487'
-ht-degree: 98%
+source-wordcount: '1491'
+ht-degree: 97%
 
 ---
 
@@ -164,7 +164,7 @@ Cette méthode permet de restaurer une version d’une arborescence à une date 
 
 1. Sélectionnez **Restaurer** pour la version sélectionnée de l’arborescence à restaurer comme version *actuelle*.
 
-## Aperçu d’une version  {#previewing-a-version}
+## Aperçu d’une version {#previewing-a-version}
 
 Vous pouvez prévisualiser une version spécifique :
 
@@ -200,6 +200,10 @@ Pour comparer la version actuelle de la page avec une version précédente :
 ## Distorsion du temps Timewarp {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état *publié* d’une page à des moments spécifiques dans le passé.
+
+>[!TIP]
+>
+>[La fonction Timewarp peut également être utilisée avec les lancements pour prévisualiser le futur.](/help/sites-authoring/launches.md) lors de l’exécution d’AEM version 6.5.10.0 ou ultérieure.
 
 La création de contenu étant un processus continu et collaboratif, l’objectif de Timewarp est de permettre aux auteurs d’effectuer le suivi d’un site web publié au fil du temps afin de comprendre l’évolution du contenu. Cette fonction utilise les versions de page pour déterminer l’état de l’environnement de publication.
 
