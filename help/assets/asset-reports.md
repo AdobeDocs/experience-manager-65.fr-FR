@@ -1,18 +1,24 @@
 ---
 title: Rapports sur l’utilisation et le partage des ressources
-description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Des rapports sur vos ressources dans [!DNL Adobe Experience Manager Assets] vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 role: User, Admin
-feature: Rapports de ressources,Gestion des ressources
+feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 89%
+source-wordcount: '1174'
+ht-degree: 87%
 
 ---
 
 # Rapports de ressources {#asset-reports}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/asset-reports.html?lang=en) |
 
 Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
@@ -28,7 +34,7 @@ Si un rapport est généré, vous êtes averti par un courrier électronique (fa
 
 Pour générer des rapports, procédez comme suit :
 
-* Activez le service Enregistreur d’événements de la gestion des actifs numériques Day CQ ] à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.[!UICONTROL 
+* Activer [!UICONTROL Enregistreur d’événements DAM Day CQ] service à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 * Sélectionnez les activités ou les événements sur lesquels vous souhaitez créer des rapports. Par exemple, pour générer un rapport sur les ressources téléchargées, sélectionnez [!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)].
 
 ![Activation de la création de rapports de ressources dans la console web](assets/reports-config-day-cq-dam-event-recorder.png)
@@ -113,7 +119,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
 
-## Ajout de colonnes personnalisées   {#add-custom-columns}
+## Ajout de colonnes personnalisées  {#add-custom-columns}
 
 Vous pouvez ajouter des colonnes personnalisées aux rapports suivants pour afficher davantage de données en fonction de vos besoins :
 
@@ -156,7 +162,7 @@ Pour supprimer les rapports dont vous n’avez plus besoin, configurez le servic
 
 ## Informations, conseils et limites de dépannage {#best-practices-and-limitations}
 
-* Si certains rapports ou nombres ne sont pas disponibles ou comme prévu, assurez-vous que le service Enregistreur d’événements de la gestion des actifs numériques Day CQ ] est activé.[!UICONTROL 
+* Si certains rapports ou nombres ne sont pas disponibles ou comme prévu, assurez-vous que la variable [!UICONTROL Enregistreur d’événements DAM Day CQ] est activé.
 
 * Supprimez les rapports qui ne sont plus requis. Utilisez les options de configuration du service Purge des rapports de la gestion des actifs numériques pour configurer les critères de purge des rapports.
 

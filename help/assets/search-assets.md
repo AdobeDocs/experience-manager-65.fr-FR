@@ -6,14 +6,20 @@ mini-toc-levels: 1
 feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '5570'
+source-wordcount: '5605'
 ht-degree: 88%
 
 ---
 
 # Recherche de ressources dans [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/search-assets.html?lang=fr) |
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire les délais de mise sur le marché grâce à une expérience de recherche intelligente et transparente, aux fonctionnalités prêtes à l’emploi et aux méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
 
@@ -74,16 +80,16 @@ Il arrive que des ressources inattendues apparaissent dans les résultats de la 
 
 ### Résultats avec et sans balises intelligentes améliorées {#withsmarttags}
 
-Par défaut, la recherche [!DNL Experience Manager] combine les termes de recherche avec une clause AND. Par exemple, envisagez de rechercher des mots-clés dans la section femme sportive. Seules les ressources contenant à la fois des mots-clés féminins et en cours d’exécution dans les métadonnées apparaissent par défaut dans les résultats de recherche. Le même comportement est conservé lorsque des caractères spéciaux (points, traits de soulignement ou tirets) sont utilisés avec les mots-clés. Les requêtes de recherche suivantes renvoient les mêmes résultats :
+Par défaut, [!DNL Experience Manager] search combine les termes de recherche avec une clause AND. Par exemple, envisagez de rechercher des mots-clés dans la section femme sportive. Seules les ressources contenant à la fois des mots-clés féminins et en cours d’exécution dans les métadonnées apparaissent par défaut dans les résultats de recherche. Le même comportement est conservé lorsque des caractères spéciaux (points, traits de soulignement ou tirets) sont utilisés avec les mots-clés. Les requêtes de recherche suivantes renvoient les mêmes résultats :
 
 * `woman running`
 * `woman.running`
 * `woman-running`
 
-Cependant, la requête `woman -running` renvoie des ressources sans `running` dans leurs métadonnées.
-L’utilisation des balises intelligentes ajoute une clause `OR` supplémentaire pour trouver l’un des termes de recherche comme balises intelligentes appliquées. Une ressource balisée avec `woman` ou `running` à l’aide de balises intelligentes apparaît également dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
+Toutefois, la requête `woman -running` renvoie des ressources sans `running` dans leurs métadonnées.
+L’utilisation des balises intelligentes ajoute un élément supplémentaire. `OR` pour rechercher l’un des termes de recherche comme balises intelligentes appliquées. Une ressource balisée avec : `woman` ou `running` l’utilisation de balises intelligentes apparaît également dans une telle requête de recherche. Les résultats de la recherche sont donc une combinaison de :
 
-* Ressources avec des mots-clés `woman` et `running` dans les métadonnées (comportement par défaut).
+* Ressources avec `woman` et `running` mots-clés dans les métadonnées (comportement par défaut).
 
 * Ressources balisées intelligemment avec l’un des mots-clés (comportement des balises intelligentes).
 
@@ -289,7 +295,7 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 
 * **Indexation** : seules les métadonnées et les ressources indexées sont renvoyées dans les résultats de recherche. Pour une meilleure couverture et de meilleures performances, veillez à une indexation appropriée et suivez les bonnes pratiques. Voir [Indexation](#searchindex).
 
-* Pour exclure des ressources spécifiques des résultats de recherche, utilisez la propriété `excludedPath` dans l’index Lucene.
+* Pour exclure des ressources spécifiques des résultats de recherche, utilisez `excludedPath` dans l’index Lucene.
 
 ## Quelques exemples illustrant la recherche {#samples}
 
@@ -332,41 +338,41 @@ Utilisez des guillemets doubles autour des mots-clés pour rechercher des ressou
 
 ### Recherche des configurations d’index {#searchindex}
 
-La découverte de ressources repose sur l’indexation du contenu de la gestion des actifs numériques, y compris les métadonnées. Une découverte de ressources plus rapide et précise repose sur une indexation optimisée et des configurations appropriées. Voir [index de recherche](/help/assets/performance-tuning-guidelines.md#search-indexes), [requêtes oak et indexation](/help/sites-deploying/queries-and-indexing.md) et [bonnes pratiques](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+La découverte de ressources repose sur l’indexation du contenu de la gestion des actifs numériques, y compris les métadonnées. Une découverte de ressources plus rapide et précise repose sur une indexation optimisée et des configurations appropriées. Voir [index de recherche](/help/assets/performance-tuning-guidelines.md#search-indexes), [requêtes oak et indexation](/help/sites-deploying/queries-and-indexing.md), et [bonnes pratiques](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-Pour exclure des ressources spécifiques des résultats de recherche, utilisez la propriété `excludedPath` dans l’index Lucene.
+Pour exclure des ressources spécifiques des résultats de recherche, utilisez `excludedPath` dans l’index Lucene.
 
 ### Recherche visuelle ou par analogie {#configvisualsearch}
 
 La recherche visuelle utilise des balises intelligentes. Après avoir configuré la fonctionnalité de balisage intelligent, procédez comme suit.
 
-1. Dans [!DNL Experience Manager] CRXDE, dans le noeud `/oak:index/lucene`, ajoutez les propriétés et valeurs suivantes et enregistrez les modifications.
+1. Dans [!DNL Experience Manager] CRXDE, dans `/oak:index/lucene` , ajoutez les propriétés et valeurs suivantes et enregistrez les modifications.
 
-   * `costPerEntry` de type  `Double` avec la valeur  `10`.
-   * `costPerExecution` de type  `Double` avec la valeur  `2`.
-   * `refresh` de type  `Boolean` avec la valeur  `true`.
+   * `costPerEntry` propriété de type `Double` avec la valeur `10`.
+   * `costPerExecution` propriété de type `Double` avec la valeur `2`.
+   * `refresh` propriété de type `Boolean` avec la valeur `true`.
 
    Cette configuration permet d’effectuer des recherches à partir de l’index approprié.
 
-1. Pour créer l’index Lucene, dans CRXDE, à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, créez un noeud nommé `imageFeatures` de type `nt-unstructured`. Dans le noeud `imageFeatures`,
+1. Pour créer l’index Lucene, dans CRXDE, à l’adresse `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, créez le noeud nommé `imageFeatures` de type `nt-unstructured`. Dans `imageFeatures` noeud,
 
-   * Ajoutez la propriété `name` de type `String` avec la valeur `jcr:content/metadata/imageFeatures/haystack0`.
-   * Ajoutez la propriété `nodeScopeIndex` de type `Boolean` avec la valeur `true`.
-   * Ajoutez la propriété `propertyIndex` de type `Boolean` avec la valeur `true`.
-   * Ajoutez la propriété `useInSimilarity` de type `Boolean` avec la valeur `true`.
+   * Ajouter `name` propriété de type `String` avec la valeur `jcr:content/metadata/imageFeatures/haystack0`.
+   * Ajouter `nodeScopeIndex` propriété de type `Boolean` avec la valeur de `true`.
+   * Ajouter `propertyIndex` propriété de type `Boolean` avec la valeur de `true`.
+   * Ajouter `useInSimilarity` propriété de type `Boolean` avec la valeur `true`.
 
    Enregistrez les modifications.
 
-1. Accédez à `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` et ajoutez la propriété `similarityTags` de type `Boolean` avec la valeur `true`.
-1. Appliquez des balises intelligentes aux ressources de votre référentiel [!DNL Experience Manager]. Voir [Configuration des balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. Dans CRXDE, dans le noeud `/oak-index/damAssetLucene`, définissez la propriété `reindex` sur `true`. Enregistrez les modifications.
-1. (Facultatif) Si vous avez un formulaire de recherche personnalisé, copiez le noeud `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` dans `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
+1. Accès `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` et ajouter `similarityTags` propriété de type `Boolean` avec la valeur de `true`.
+1. Application de balises intelligentes aux ressources dans votre [!DNL Experience Manager] référentiel. Voir [configuration des balises intelligentes](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
+1. Dans CRXDE, dans `/oak-index/damAssetLucene` , définissez la variable `reindex` de `true`. Enregistrez les modifications.
+1. (Facultatif) Si vous disposez d’un formulaire de recherche personnalisé, copiez la variable `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` noeud à `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Enregistrez les modifications.
 
-Pour plus d’informations connexes, voir [Comprendre les balises intelligentes en Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) et [comment gérer les balises intelligentes](/help/assets/enhanced-smart-tags.md).
+Pour obtenir des informations connexes, voir [Présentation des balises intelligentes dans Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) et [comment gérer les balises intelligentes](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
->Si l’indexation Lucene est effectuée à partir de [!DNL Adobe Experience Manager], la recherche basée sur les balises intelligentes ne fonctionne pas comme prévu.
+>Si l’indexation Lucene est terminée à partir de [!DNL Adobe Experience Manager], la recherche basée sur les balises intelligentes ne fonctionne pas comme prévu.
 
 ### Métadonnées obligatoires {#mandatorymetadata}
 
@@ -374,13 +380,13 @@ Les utilisateurs de l’entreprise, les administrateurs ou les bibliothécaires 
 
 ### Modification des facettes de recherche {#searchfacets}
 
-Pour accélérer la découverte, [!DNL Experience Manager Assets] propose des facettes de recherche à l’aide desquelles vous pouvez filtrer les résultats de la recherche. Le panneau Filtres comprend quelques facettes standard par défaut. Les administrateurs peuvent personnaliser le panneau Filtres pour modifier les facettes par défaut à l’aide des prédicats intégrés. [!DNL Experience Manager] fournit une bonne collection de prédicats intégrés et un éditeur pour personnaliser les facettes. Voir [Facettes de recherche](/help/assets/search-facets.md).
+Pour accélérer la découverte, [!DNL Experience Manager Assets] propose des facettes de recherche à l’aide desquelles vous pouvez filtrer les résultats de la recherche. Le panneau Filtres comprend quelques facettes standard par défaut. Les administrateurs peuvent personnaliser le panneau Filtres pour modifier les facettes par défaut à l’aide des prédicats intégrés. [!DNL Experience Manager] fournit une bonne collection de prédicats intégrés et un éditeur pour personnaliser les facettes. Voir [facettes de recherche](/help/assets/search-facets.md).
 
 ### Extraction de texte lors du téléchargement de ressources {#extracttextupload}
 
 Vous pouvez configurer [!DNL Experience Manager] pour extraire le texte des ressources lorsque les utilisateurs chargent des ressources, telles que des fichiers de PSD ou de PDF. [!DNL Experience Manager] indexe le texte extrait et aide les utilisateurs à rechercher ces ressources en fonction du texte extrait. Consultez [Chargement de ressources](/help/assets/manage-assets.md#uploading-assets).
 
-Si l’extraction de texte devient trop gourmande en ressources pour votre déploiement, envisagez de [désactiver l’extraction de texte](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
+Si l’extraction de texte consomme trop de ressources pour votre déploiement, pensez à [désactivation de l’extraction de texte](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 
 ### Prédicats personnalisés pour filtrer les résultats de la recherche {#custompredicates}
 

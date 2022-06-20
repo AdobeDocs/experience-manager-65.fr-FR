@@ -6,20 +6,26 @@ mini-toc-levels: 1
 role: User
 feature: Asset Management,Search
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: dd1e08bee03a6c7b07b32b0fb929d02dad467744
 workflow-type: tm+mt
-source-wordcount: '9878'
-ht-degree: 60%
+source-wordcount: '9913'
+ht-degree: 61%
 
 ---
 
 # Gérer vos ressources numériques {#manage-digital-assets}
 
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-assets-touch-ui.html?lang=en) |
+
 Dans [!DNL Adobe Experience Manager Assets], vous pouvez faire plus que stocker et gérer vos ressources. [!DNL Experience Manager] offre des fonctionnalités de gestion des ressources de niveau entreprise. Vous pouvez modifier et partager des ressources, lancer des recherches avancées et créer plusieurs rendus de dizaines de formats de fichiers pris en charge. Vous pouvez également gérer les versions et les droits numériques, automatiser le traitement des ressources, gérer et gérer les métadonnées, collaborer à l’aide d’annotations, etc.
 
 Cet article décrit les tâches de base de gestion des ressources, telles que la création ou le chargement ; mises à jour des métadonnées ; copier, déplacer et supprimer ; publier, annuler la publication et rechercher des ressources. Pour comprendre l’interface utilisateur, voir [prise en main de l’interface utilisateur de ressources](/help/sites-authoring/basic-handling.md). Pour gérer les fragments de contenu, voir [gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) ressources.
 
-## Création de dossiers   {#creating-folders}
+## Création de dossiers  {#creating-folders}
 
 Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager Assets] ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
@@ -91,7 +97,7 @@ Pour configurer la tâche de nettoyage pour les tâches de transfert de blocs no
 
 >[!CAUTION]
 >
->Le chargement de bloc est déclenché lorsque la valeur par défaut est de 500 Mo et que la taille du bloc est de 50 Mo. Si vous modifiez [Apache Jackrabbit Oak Token Configuration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html) et définissez la variable `timeout configuration` moins de temps que le chargement d’une ressource, vous rencontrez un délai d’expiration de session pendant le chargement de la ressource. Par conséquent, modifiez la variable `chunkUploadMinFileSize` et `chunksize` afin que chaque requête de bloc actualise la session.
+>Le chargement de bloc est déclenché lorsque la valeur par défaut est de 500 Mo et que la taille du bloc est de 50 Mo. Si vous modifiez [Apache Jackrabbit Oak Token Configuration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=fr) et définissez la variable `timeout configuration` moins de temps que le chargement d’une ressource, vous rencontrez un délai d’expiration de session pendant le chargement de la ressource. Par conséquent, modifiez la variable `chunkUploadMinFileSize` et `chunksize` afin que chaque requête de bloc actualise la session.
 >
 >Compte tenu du délai d’expiration des informations d’identification, de la latence, de la bande passante et des chargements simultanés prévus, la valeur la plus élevée qui vous permet de vous assurer que les éléments suivants sont sélectionnés :
 >
@@ -169,7 +175,7 @@ Dynamic Media permet de transférer des ressources par lots via un serveur FTP. 
 
 1. Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) puis connectez-vous à votre compte.
 
-   Vos informations d’identification et votre connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
+   Vos informations d’identification et votre connexion ont été fournies par Adobe au moment de la mise en service. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
 1. Cliquez sur **[!UICONTROL Télécharger]** dans la barre de navigation globale.
 1. Cliquez sur l’onglet **[!UICONTROL Via FTP]** dans le coin supérieur gauche de la page Télécharger.
@@ -194,7 +200,7 @@ Pour annuler une tâche de téléchargement en cours, cliquez sur **[!UICONTROL 
 |---|---|---|
 | Nom de la tâche |  | Le nom par défaut qui est prérempli dans le champ de texte comprend la portion du nom saisie par l’utilisateur, ainsi que l’horodatage. Vous pouvez utiliser le nom par défaut ou indiquer un nom personnalisé pour cette tâche de transfert. <br>Cette tâche, ainsi que les autres tâches de transfert et de publication, sont enregistrées sur la page Tâches, où vous pouvez vérifier leur état. |
 | Publier après le téléchargement |  | Publie automatiquement les ressources que vous téléchargez. |
-| Écraser dans n’importe quel dossier, même nom de ressource de base, quelle que soit l’extension |  | Sélectionnez cette option si vous voulez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut varier en fonction des paramètres définis sous **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Télécharger dans l’application]** > **[!UICONTROL Écraser les images]**. |
+| Remplacer dans un dossier, même nom de ressource de base, quelle que soit l’extension |  | Sélectionnez cette option si vous voulez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut varier en fonction des paramètres définis sous **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Télécharger dans l’application]** > **[!UICONTROL Écraser les images]**. |
 | Décompresser les fichiers zip ou tar lors du téléchargement |  |  |
 | Options de tâche |  | Cliquez sur **[!UICONTROL Options de tâche]** afin que vous puissiez ouvrir la [!UICONTROL Télécharger les options de la tâche] et choisissez des options qui affectent l’ensemble de la tâche de téléchargement. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour télécharger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Sélectionnez la **[!UICONTROL Options de téléchargement par défaut]** pour ouvrir la [!UICONTROL Télécharger les options de la tâche] de la boîte de dialogue |
 |  | Quand | Sélectionnez Unique ou Périodique. Pour définir une tâche périodique, sélectionnez une option de répétition (Quotidien, Hebdomadaire, Mensuel ou Personnalisé) afin d’indiquer la fréquence souhaitée pour la tâche de transfert FTP. Indiquez ensuite les options de planification suivant vos besoins. |
@@ -205,7 +211,7 @@ Pour annuler une tâche de téléchargement en cours, cliquez sur **[!UICONTROL 
 |  | Options Postscript | Vous pouvez pixelliser les fichiers PostScript®, recadrer les fichiers, conserver les arrière-plans transparents et choisir une résolution ainsi qu’un espace colorimétrique.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la méthode d’attribution des noms de calque, extraire du texte et indiquer le mode d’ancrage des images dans les modèles.<br> Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Voir [Définition des options de téléchargement Photoshop](#setting-photoshop-upload-options). |
 |  | Options PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace de couleurs.<br>Les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Voir [Définition des options de téléchargement PDF](#setting-pdf-upload-options). |
-|  | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace de couleurs.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
+|  | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique.<br> Voir [Définition des options de téléchargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
 |  | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un paramètre vidéo prédéfini.<br> Voir [Définition des options de téléchargement eVideo](#setting-evideo-upload-options). |
 |  | Paramètres prédéfinis de lot | Pour créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir de fichiers téléchargés, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Les paramètres prédéfinis sont créés sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, voir [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Voir [Définition de paramètres prédéfinis d’ensemble par lot lors du téléchargement](#setting-batch-set-presets-at-upload). |
 
@@ -267,9 +273,9 @@ Utilisez la variable [!UICONTROL Options de recadrage] et [!UICONTROL Options de
 | Conserver les calques |  | Pixellise les calques du fichier PSD, le cas échéant, dans des fichiers individuels. Les calques de ces fichiers restent associés au fichier PSD. Pour les afficher, ouvrez le fichier PSD dans le mode d’affichage Détail et sélectionnez le panneau Calque. |
 | Créer un modèle |  | Crée un modèle à partir des calques du fichier PSD. |
 | Extraire du texte |  | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
-| Étendre les calques à la taille du fond |  | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
+| Étendre les calques à la taille de l’arrière-plan |  | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
 | Affectation de nom de calque |  | Les calques du fichier PSD sont téléchargés comme des images distinctes. |
-|  | Nom de couche | Les images adoptent le nom de leur calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les noms de calque dans le fichier de PSD sont des noms de calque Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier de PSD. Ils ne portent pas de nom en fonction de leurs noms de calque par défaut. |
+|  | Nom de couche | Les images adoptent le nom de leur calque dans le fichier PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD. Ils ne portent pas de nom en fonction de leurs noms de calque par défaut. |
 |  | Photoshop et numéro de couche | Nomme les images d’après leur numéro de calque dans le fichier PSD, leur nom de calque d’origine étant ignoré. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque. Par exemple, le deuxième calque d’un fichier appelé Pub printemps.psd est nommé Pub printemps_2, même s’il portait un nom personnalisé dans Photoshop. |
 |  | Photoshop et nom de couche | Nomme les images en reprenant le nom du fichier PSD suivi du nom ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque nommé Étiquette de prix dans un fichier PSD appelé Pub Printemps est nommé Pub Printemps_Étiquette de prix. Un calque portant le nom par défaut Calque 2 est nommé Pub Printemps_2. |
 | Ancre |  | Indiquez le mode d’ancrage des images dans les modèles qui sont générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est au centre. Un ancrage au centre permet aux images de remplacement de remplir de manière optimale le même espace, quelles que soient les proportions de l’image de remplacement. Les images qui remplacent cette image et qui présentent un aspect différent occupent le même espace lorsque le modèle est référencé et le paramètre de substitution utilisé. Changez de paramètre si votre application exige que les images de remplacement occupent l’espace alloué dans le modèle. |
@@ -544,7 +550,7 @@ Le déplacement de ressources en les faisant glisser ne s’ouvre pas [!UICONTRO
 
    >[!NOTE]
    >
-   >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
+   >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 Pour plus d’informations sur la génération et l’affichage de sous-ressources, voir [gestion des sous-ressources](managing-linked-subassets.md#generate-subassets).
 
@@ -573,11 +579,11 @@ Pour supprimer une ressource ou un dossier contenant une ressource :
 
 >[!NOTE]
 >
->Si vous supprimez un dossier à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés.
+>Si vous supprimez un dossier de l’interface utilisateur à l’aide de la méthode ci-dessus, les groupes d’utilisateurs associés sont également supprimés.
 >
 >Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de `clean` dans JMX dans votre instance d’auteur (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
 
-## Téléchargement de ressources {#downloading-assets}
+## Télécharger des ressources {#downloading-assets}
 
 Voir [Téléchargement de ressources à partir de Experience Manager](/help/assets/download-assets-from-aem.md).
 
@@ -705,7 +711,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 >[!NOTE]
 >
->Dans la [console Collections](/help/assets/manage-collections.md#navigating-the-collections-console), la liste **[!UICONTROL Afficher tout]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
+>Dans la [console Collections](/help/assets/manage-collections.md#navigating-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
 
 >[!NOTE]
 >
@@ -715,7 +721,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
-Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Formats vidéo qui [!DNL Assets] La prise en charge dépend du navigateur. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
+Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Formats vidéo qui [!DNL Assets] La prise en charge dépend du navigateur. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 >[!NOTE]
 >
@@ -748,7 +754,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    >[!NOTE]
    >
-   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](/help/assets/managing-video-assets.md). Le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
+   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, consultez la section [Gestion de ressources vidéo](/help/assets/managing-video-assets.md). Le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 1. Pour choisir une autre couleur afin de différencier les utilisateurs, cliquez sur l’option Profil et cliquez sur **[!UICONTROL Mes préférences]**.
 
@@ -777,7 +783,7 @@ Vous ne pouvez afficher qu’une annotation à la fois.
 1. Accédez à l’emplacement de la ressource et ouvrez la page Ressource.
 
 1. Dans l’interface du Experience Manager, choisissez **[!UICONTROL Chronologie]**.
-1. Dans la liste **[!UICONTROL Afficher tout]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
+1. Dans la liste **[!UICONTROL Tout afficher]** de la chronologie, sélectionnez **[!UICONTROL Commentaires]** pour filtrer les résultats selon les annotations.
 
    Cliquez sur un commentaire dans le **[!UICONTROL Chronologie]** si vous souhaitez afficher l’annotation correspondante sur l’image.
 
@@ -787,9 +793,9 @@ Vous ne pouvez afficher qu’une annotation à la fois.
 
 ### Impression des annotations {#printing-annotations}
 
-Si une ressource comporte des annotations ou si elle a fait l’objet d’un workflow de révision, vous pouvez l’imprimer avec les annotations et l’état de révision sous la forme d’un fichier PDF en vue d’effectuer une révision hors ligne.
+Si une ressource comporte des annotations ou si elle a fait l’objet d’un workflow de révision, vous pouvez l’imprimer avec les annotations et le statut de révision sous la forme d’un fichier PDF en vue d’effectuer une révision hors ligne.
 
-Vous pouvez également choisir de n’imprimer que les annotations ou l’état de révision.
+Vous pouvez également choisir de n’imprimer que les annotations ou le statut de révision.
 
 >[!NOTE]
 >
@@ -800,22 +806,22 @@ Pour imprimer les annotations et l’état de révision, cliquez sur **[!UICONTR
 1. Dans la [!DNL Assets] , ouvrez la page d’aperçu d’une ressource.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Pour imprimer toutes les annotations et l’état de révision, ignorez l’étape 3 et passez directement à l’étape 4.
-   * Pour imprimer des annotations et un état de révision spécifiques, ouvrez la [chronologie](/help/assets/manage-assets.md#timeline), puis passez à l’étape 3.
+   * Pour imprimer toutes les annotations et le statut de révision, ignorez l’étape 3 et passez directement à l’étape 4.
+   * Pour imprimer des annotations et un statut de révision spécifiques, ouvrez la [chronologie](/help/assets/manage-assets.md#timeline), puis passez à l’étape 3.
 
 1. Pour imprimer des annotations spécifiques, sélectionnez-les dans la chronologie.
 
    ![Sélectionnez une annotation dans la chronologie pour l’imprimer.](assets/timeline-select-annotations.png)
 
-   Pour n’imprimer que l’état de révision, sélectionnez-le dans la chronologie.
+   Pour n’imprimer que le statut de révision, sélectionnez-le dans la chronologie.
 
 1. Cliquez sur **[!UICONTROL Imprimer]** dans la barre d’outils.
 
-1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/l’état de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou l’état de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
+1. Dans la boîte de dialogue Imprimer, sélectionnez la position dans laquelle vous souhaitez afficher les annotations/le statut de révision dans le fichier PDF. Par exemple, si vous souhaitez que les annotations ou le statut de révision soient imprimés dans le coin supérieur droit de la page qui contient l’image imprimée, sélectionnez le paramètre **Haut et gauche**. Ce paramètre est sélectionné par défaut.
 
-   Vous pouvez choisir d’autres paramètres selon la position à laquelle vous souhaitez que les annotations ou l’état de révision apparaissent dans le document PDF imprimé. Si vous souhaitez que les annotations ou l’état de révision apparaissent sur une page différente de la ressource imprimée, sélectionnez **[!UICONTROL Page suivante]**.
+   Vous pouvez choisir d’autres paramètres selon la position à laquelle vous souhaitez que les annotations ou le statut de révision apparaissent dans le document PDF imprimé. Si vous souhaitez que les annotations ou le statut de révision apparaissent sur une page différente de la ressource imprimée, sélectionnez **[!UICONTROL Page suivante]**.
 
-1. Cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations/l’état de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et l’état de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
+1. Cliquez sur **[!UICONTROL Imprimer]**. En fonction de l’option sélectionnée à l’étape 2, le fichier PDF généré affiche les annotations ou le statut de révision à l’emplacement spécifié. Par exemple, si vous choisissez d’imprimer à la fois les annotations et le statut de révision à l’aide du paramètre **Haut et gauche**, vous obtiendrez un fichier PDF comparable à l’illustration ci-dessous.
 
    ![Annotation et état de révision sur le PDF généré](assets/annotation-status-pdf.png)
 
@@ -825,7 +831,7 @@ Pour imprimer les annotations et l’état de révision, cliquez sur **[!UICONTR
    >
    >Si la ressource contient des sous-ressources, vous pouvez les imprimer avec leurs annotations spécifiques.
 
-   Pour modifier l’aspect du fichier de PDF rendu, par exemple la couleur, la taille et le style de la police, ouvrez le **[!UICONTROL Configuration du PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage de l’état approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/manage-assets.md#annotating).
+   Pour modifier l’aspect du fichier de PDF rendu, par exemple la couleur, la taille et le style de la police, ouvrez le **[!UICONTROL Configuration du PDF d’annotation]** dans Configuration Manager, puis modifiez les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/manage-assets.md#annotating).
 
    ![Configuration pour imprimer une annotation de ressource sur un document PDF](assets/annotation-print-pdf-config.png)
 

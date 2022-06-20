@@ -5,15 +5,21 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '586'
 ht-degree: 92%
 
 ---
 
 
 # Utilisation de Media Library pour la gestion de base des ressources {#manage-assets-using-media-library}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=fr) |
 
 La plateforme [!DNL Adobe Experience Manager] offre différentes fonctionnalités de gestion des ressources. Media Library permet aux utilisateurs de charger un petit nombre de ressources dans le référentiel, de les rechercher et de les utiliser dans les pages web et de réaliser des tâches de gestion simples des ressources.
 
@@ -64,7 +70,7 @@ Pour utiliser la fonctionnalité Media Library, vous pouvez utiliser l’interfa
 * Ajouter des ressources aux pages [!DNL Sites] via l’outil de recherche de contenu.
 * Utilisation [!DNL Content Fragments].
 * Utilisation des API HTTP REST et GraphQL pour les [!DNL Content Fragments] et les ressources multimédias référencées, sous licence Sites.
-* Intégration de Marketing Cloud.
+* Intégration d’Experience Cloud.
 * Personnalisez et étendez l’interface utilisateur de gestion des ressources.
 * Accédez à Query Builder (API) pour étendre la fonctionnalité de recherche.
 * Créez des balises statiques.
@@ -88,6 +94,6 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 >[!MORELIKETHIS]
 >
 >* [Fonctionnalités de gestion des actifs numériques dans [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=fr)
->* [[!DNL Experience Manager] 6.5 Description du produit Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 Description du produit on-premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [[!DNL Experience Manager] 6.5 Description du produit Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 Description du produit on-premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html)
 

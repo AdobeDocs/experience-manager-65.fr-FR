@@ -5,14 +5,20 @@ contentOwner: AG
 role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
-source-git-commit: b9def70b86d3313a5f6d429ae49ba6ef3947a35a
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2429'
 ht-degree: 78%
 
 ---
 
 # Facettes de recherche {#search-facets}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/search-facets.html?lang=en) |
 
 Déploiement à l’échelle de l’entreprise de [!DNL Adobe Experience Manager Assets] dispose de la capacité de stocker de nombreuses ressources. Parfois, la recherche de la ressource appropriée peut être ardue et chronophage si vous utilisez uniquement les fonctionnalités de recherche générique de [!DNL Experience Manager].
 

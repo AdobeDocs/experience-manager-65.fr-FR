@@ -2,14 +2,21 @@
 title: Prise en charge des fragments de contenu Adobe Experience Manager dans l’API HTTP Assets
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 feature: Content Fragments,Assets HTTP API
-source-git-commit: 2f647fc640d3809dc684bce397831ab37fb94b07
+exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1957'
 ht-degree: 97%
 
 ---
 
 # Prise en charge des fragments de contenu dans l’API HTTP AEM Assets {#content-fragments-support-in-aem-assets-http-api}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=en) |
+| AEM 6.5 | Cet article |
+
 
 ## Présentation {#overview}
 
@@ -21,7 +28,6 @@ Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets,
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
-
 >
 >L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
@@ -47,7 +53,7 @@ L’API REST Assets :
 
 * met en œuvre le [format SIREN](https://github.com/kevinswiber/siren)
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 L’API REST Assets est disponible sur chaque installation prête à l’emploi d’une version AEM récente.
 
@@ -147,7 +153,6 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr)
 >* [Vidéo – Développement pour CORS et AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
-
 >
 
 
@@ -298,7 +303,7 @@ Mode d’utilisation :
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restrictions {#limitations}
+## Limites {#limitations}
 
 Il existe quelques restrictions :
 

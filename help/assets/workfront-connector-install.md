@@ -4,24 +4,26 @@ description: Installation de la version [!DNL Workfront for Experience Manager e
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
-source-git-commit: fa701a480af1d1f1860586db606f83446822f718
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '501'
+ht-degree: 49%
 
 ---
 
 # Installation de la version [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experience Manager]  installe le connecteur amélioré. Avant de procéder à l’installation, vérifiez la prise en charge de la plateforme et d’autres [conditions préalables pour le connecteur](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-install.html?lang=en) |
 
->[!TIP]
->
->Recherchez-vous la variable [!DNL Workfront for Experience Manager enhanced connector] documentation pour AEM as a Cloud Service ? Cliquez sur [here](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en).
+Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experience Manager]  installe le connecteur amélioré. Avant de procéder à l’installation, vérifiez la prise en charge de la plateforme et d’autres [conditions préalables pour le connecteur](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
->* Adobe requiert le déploiement et la configuration du [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou d’[!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
+>* Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou [!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 >
 >* Adobe peut apporter des mises à jour à [!DNL Adobe Workfront] et [!DNL Adobe Experience Manager], lesquelles peuvent rendre ce connecteur inutile. Si cela se produit, les clients peuvent être amenés à abandonner l’utilisation de ce connecteur.
 >

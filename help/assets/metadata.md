@@ -6,14 +6,20 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: a76772b8761e35a828814ffe0ac3b019266ff008
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 55%
+source-wordcount: '2371'
+ht-degree: 57%
 
 ---
 
 # Gestion des métadonnées des ressources numériques {#managing-metadata-for-digital-assets}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata.html?lang=en) |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -25,43 +31,43 @@ ht-degree: 55%
 
 ## Métadonnées et origine {#how-to-edit-or-add-metadata}
 
-Les métadonnées sont des informations supplémentaires sur la ressource qui peuvent faire l’objet d’une recherche. Il est ajouté aux ressources et dans [!DNL Experience Manager] il est traité lorsque vous chargez une ressource. Vous pouvez modifier les métadonnées existantes et ajouter de nouvelles propriétés de métadonnées aux champs existants. Les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables. Par conséquent, [!DNL Experience Manager Assets] ne permet pas l’ajout à la demande de nouvelles propriétés de métadonnées. Seuls les administrateurs et les développeurs peuvent ajouter de nouvelles propriétés ou de nouveaux champs contenant des métadonnées. Les utilisateurs peuvent renseigner les champs existants avec des métadonnées.
+Les métadonnées sont des informations supplémentaires sur la ressource qui peuvent faire l’objet d’une recherche. Il est ajouté aux ressources et dans [!DNL Experience Manager] il est traité lorsque vous chargez une ressource. Vous pouvez modifier les métadonnées existantes et ajouter de nouvelles propriétés de métadonnées aux champs existants. Les entreprises ont besoin de vocabulaires de métadonnées contrôlés et fiables. Par [!DNL Experience Manager Assets] ne permet pas l’ajout à la demande de nouvelles propriétés de métadonnées. Seuls les administrateurs et les développeurs peuvent ajouter de nouvelles propriétés ou de nouveaux champs contenant des métadonnées. Les utilisateurs peuvent renseigner les champs existants avec des métadonnées.
 
 Vous pouvez utiliser les méthodes suivantes pour ajouter des métadonnées à des ressources numériques :
 
-* Pour commencer, les applications natives qui créent des ressources y ajoutent des métadonnées. Par exemple, [Acrobat ajoute des métadonnées](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) aux fichiers du PDF ou un appareil photo ajoute des métadonnées de base aux photos. Lors de la génération de ressources, vous pouvez ajouter les métadonnées dans les applications natives elles-mêmes. Par exemple, vous pouvez [ajouter des métadonnées IPTC dans Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
+* Pour commencer, les applications natives qui créent des ressources y ajoutent des métadonnées. Par exemple : [Acrobat ajoute quelques métadonnées](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html) pour ajouter des fichiers PDF ou un appareil photo ajoute des métadonnées de base aux photos. Lors de la génération de ressources, vous pouvez ajouter les métadonnées dans les applications natives elles-mêmes. Par exemple, vous pouvez [Ajout de métadonnées IPTC dans Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html).
 
-* Avant de charger une ressource vers [!DNL Experience Manager], vous pouvez modifier les métadonnées à l’aide de l’application native utilisée pour créer une ressource ou à l’aide d’une autre application de modification des métadonnées. Lorsque vous chargez une ressource vers Experience Manager, les métadonnées sont traitées. Par exemple, découvrez comment [utiliser les métadonnées dans [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) et consultez le panneau [balises pour [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) dans [!DNL Adobe Exchange].
+* Avant de télécharger une ressource vers [!DNL Experience Manager], vous pouvez modifier les métadonnées à l’aide de l’application native utilisée pour créer une ressource ou à l’aide d’une autre application de modification des métadonnées. Lorsque vous chargez une ressource vers Experience Manager, les métadonnées sont traitées. Par exemple, reportez-vous à la section [utilisation des métadonnées dans [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) et reportez-vous à la section [panneau balises pour [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html) in [!DNL Adobe Exchange].
 
-* Dans [!DNL Experience Manager Assets], vous pouvez ajouter ou modifier manuellement des métadonnées de ressources dans la page [!UICONTROL Propriétés].
+* Dans [!DNL Experience Manager Assets], vous pouvez ajouter ou modifier manuellement les métadonnées des ressources dans le [!UICONTROL Propriétés] page.
 
-* Vous pouvez tirer parti de la fonctionnalité [profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) de [!DNL Experience Manager Assets] pour ajouter automatiquement des métadonnées lorsque des ressources sont chargées dans la gestion des ressources numériques.
+* Vous pouvez tirer parti de [profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) fonctionnalité de [!DNL Experience Manager Assets] pour ajouter automatiquement des métadonnées lorsque des ressources sont chargées dans la gestion des ressources numériques.
 
 ## Ajout ou modification de métadonnées dans [!DNL Experience Manager Assets] {#add-edit-metadata}
 
-Pour modifier les métadonnées d’une ressource dans l’interface utilisateur [!DNL Assets], procédez comme suit :
+Pour modifier les métadonnées d’une ressource dans [!DNL Assets] dans l’interface utilisateur, procédez comme suit :
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * Dans l’interface [!DNL Assets], sélectionnez la ressource et cliquez sur **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
+   * Dans la [!DNL Assets] , sélectionnez la ressource et cliquez sur **[!UICONTROL Afficher les propriétés]** dans la barre d’outils.
    * À partir de la miniature de la ressource, sélectionnez l’action rapide **[!UICONTROL Afficher les propriétés]**.
-   * Sur la page Ressource, cliquez sur **[!UICONTROL Afficher les propriétés]** ![Icône d’informations sur les ressources](assets/do-not-localize/info-circle-icon.png) dans la barre d’outils.
+   * Dans la page Ressource, cliquez sur **[!UICONTROL Afficher les propriétés]** ![Icône Informations sur les ressources](assets/do-not-localize/info-circle-icon.png) dans la barre d’outils.
 
    La page Ressource affiche toutes les métadonnées de la ressource. Les métadonnées sont extraites lorsque la ressource est chargée (ingérée) dans [!DNL Experience Manager].
 
    ![Sélectionner les propriétés d’une ressource pour afficher ses métadonnées](assets/asset-metadata.png)
 
-   *Figure : Modification ou ajout de métadonnées sur la page   Propriétés de la ressource.*
+   *Figure : Modification ou ajout de métadonnées sur une ressource [!UICONTROL Propriétés] page.*
 
-1. Apportez les modifications nécessaires aux métadonnées sous les différents onglets. Une fois l’opération terminée, cliquez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer vos modifications. Cliquez sur **[!UICONTROL Fermer]** pour revenir à l’interface web [!DNL Assets].
+1. Apportez les modifications nécessaires aux métadonnées sous les différents onglets. Une fois l’opération terminée, cliquez sur **[!UICONTROL Enregistrer]** dans la barre d’outils pour enregistrer vos modifications. Cliquez sur **[!UICONTROL Fermer]** pour revenir au [!DNL Assets] interface web.
 
    >[!NOTE]
    >
    >Si un champ de texte est vide, cela signifie qu’aucune métadonnée n’a été définie. Vous pouvez saisir une valeur dans le champ et l’enregistrer pour ajouter cette propriété de métadonnées.
 
-Toute modification apportée aux métadonnées d’une ressource est écrite dans les données XMP du binaire d’origine. Le processus d’écriture différée des métadonnées ajoute les métadonnées au fichier binaire d’origine. Les modifications apportées aux propriétés existantes (telles que `dc:title`) sont écrasées et de nouvelles propriétés (y compris des propriétés personnalisées telles que `cq:tags`) sont ajoutées avec le schéma.
+Toute modification apportée aux métadonnées d’une ressource est écrite dans les données XMP du binaire d’origine. Le processus d’écriture différée des métadonnées ajoute les métadonnées au fichier binaire d’origine. Modifications apportées aux propriétés existantes (telles que `dc:title`) sont remplacées et de nouvelles propriétés (y compris des propriétés personnalisées telles que `cq:tags`) sont ajoutées avec le schéma .
 
-XMP l’écriture différée est prise en charge et activée pour les plateformes et les formats de fichiers décrits dans [les exigences techniques.](/help/sites-deploying/technical-requirements.md)
+XMP l’écriture différée est prise en charge et activée pour les plateformes et les formats de fichiers décrits dans la section [exigences techniques.](/help/sites-deploying/technical-requirements.md)
 
 ## Modification des propriétés de métadonnées de plusieurs ressources {#editing-metadata-properties-of-multiple-assets}
 
@@ -70,13 +76,13 @@ XMP l’écriture différée est prise en charge et activée pour les plateforme
 * Remplacer les propriétés de métadonnées par une valeur commune
 * Ajouter ou modifier des balises
 
-Pour personnaliser la page des propriétés de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez l’ [éditeur de schéma](metadata-config.md#folder-metadata-schema).
+Pour personnaliser la page des propriétés de métadonnées, notamment ajouter, modifier et supprimer des propriétés de métadonnées, utilisez le [éditeur de schéma](metadata-config.md#folder-metadata-schema).
 
 >[!NOTE]
 >
 >Les méthodes de modification en masse fonctionnent pour les ressources disponibles dans un dossier ou une collection. Pour les ressources disponibles dans plusieurs dossiers ou correspondant à un critère commun, il est possible de mettre à jour [les métadonnées en masse après une recherche](search-assets.md#metadataupdates).
 
-1. Dans l’interface utilisateur [!DNL Assets], accédez à l’emplacement des ressources à modifier.
+1. Dans le [!DNL Assets] , accédez à l’emplacement des ressources à modifier.
 1. Sélectionnez les ressources dont vous souhaitez modifier les propriétés communes.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page des propriétés des ressources sélectionnées.
 1. Modifiez les propriétés de métadonnées des ressources sélectionnées dans les différents onglets.
@@ -100,24 +106,24 @@ L’importation des métadonnées est asynchrone et n’entrave pas les performa
 >
 >Pour importer des métadonnées sur des espaces de noms personnalisés, commencez par enregistrer les espaces de noms.
 
-1. Accédez à l’interface utilisateur [!DNL Assets], puis cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
+1. Accédez au [!DNL Assets] de l’interface utilisateur, puis cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
 1. Dans le menu, sélectionnez **[!UICONTROL Métadonnées]**.
-1. Sur la page **[!UICONTROL Importation des métadonnées]** , cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
-1. Spécifiez les paramètres suivants. Voir un exemple de fichier CSV à l’adresse [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
+1. Dans la page **[!UICONTROL Importation des métadonnées]**, cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
+1. Spécifiez les paramètres suivants. Consultez un exemple de fichier CSV à l’adresse [metadata-import-sample-file.csv](/help/assets/assets/metadata-import-sample-file.csv).
 
    | Paramètres d’importation des métadonnées | Description |
    |:---|:---|
    | [!UICONTROL Taille du lot] | Nombre de ressources dans un lot pour lesquelles les métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | [!UICONTROL Séparateur de champs] | La valeur par défaut est `,` (une virgule). Vous pouvez spécifier n’importe quel autre caractère. |
    | [!UICONTROL Délimiteur à plusieurs valeurs] | Séparateur des valeurs de métadonnées. La valeur par défaut est `|`. |
-   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont en vigueur pour le workflow [!UICONTROL Écriture différée des métadonnées de gestion des actifs numériques] (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows ralentit le système. |
+   | [!UICONTROL Lancer les workflows] | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont utilisés pour le workflow Écriture différée des métadonnées de gestion des ressources numériques (DAM) (qui écrit des métadonnées dans les données XMP binaires).  L’activation des workflows ralentit le système. |
    | [!UICONTROL Nom de colonne du chemin d’accès à la ressource] | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
-1. Cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification s’affiche dans la boîte de réception [!UICONTROL Notification].
+1. Cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification s’affiche dans [!UICONTROL Notification] boîte de réception.
 
-1. Pour vérifier l’importation correcte, accédez à la page [!UICONTROL Propriétés] d’une ressource et vérifiez les valeurs dans les champs.
+1. Pour vérifier l’importation correcte, accédez au [!UICONTROL Propriétés] et vérifiez les valeurs dans les champs.
 
-Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` est le 26 mars 2020 à 11h:26:00.000 heure du Pacifique.
+Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` correspond au 26 mars 2020 à 11:26:00.000, heure du Pacifique.
 
 >[!CAUTION]
 >
@@ -125,7 +131,7 @@ Pour ajouter une date et un horodatage au cours de l’importation de métadonn�
 
 ## Exportation de métadonnées {#export-metadata}
 
-Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, [!DNL Experience Manager] parcourt les propriétés du noeud de ressource `jcr:content/metadata` et de ses noeuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
+Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, procédez comme suit : [!DNL Experience Manager] parcourt les propriétés du noeud de ressource `jcr:content/metadata` et ses noeuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
 Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot :
 
@@ -136,7 +142,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
 
-1. Dans la boîte de dialogue [!UICONTROL Exportation des métadonnées], indiquez un nom pour le fichier CSV. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
+1. Dans le [!UICONTROL Exportation des métadonnées] spécifiez un nom pour le fichier CSV. Pour exporter des métadonnées des ressources dans les sous-dossiers, sélectionnez **[!UICONTROL Inclure les ressources dans les sous-dossiers]**.
 
    ![Interface et options d’exportation des métadonnées de toutes les ressources dans un dossier](assets/export_metadata_page.png "Interface et options d’exportation des métadonnées de toutes les ressources dans un dossier")
 
@@ -154,7 +160,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées par lot
 
 ## Modification des métadonnées des collections {#collections-metadata}
 
-Pour plus d’informations, voir [Affichage et modification des métadonnées de collection](/help/assets/manage-collections.md#view-edit-collection-metadata) et [modification des métadonnées de plusieurs collections en bloc](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
+Pour plus d’informations, voir [affichage et modification des métadonnées de collection](/help/assets/manage-collections.md#view-edit-collection-metadata) et [modification en masse des métadonnées de plusieurs collections](/help/assets/manage-collections.md#editing-collection-metadata-in-bulk).
 
 ## Application d’un profil de métadonnées à des dossiers {#applying-a-metadata-profile-to-folders}
 
@@ -179,20 +185,20 @@ Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profi
 
 Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comporte déjà un profil vidéo que vous avez modifié. Voir [Retraitement des ressources dans un dossier après avoir modifié son profil de traitement](processing-profiles.md#reprocessing-assets).
 
-### Application de profils de métadonnées à des dossiers à partir de l’interface utilisateur [!UICONTROL Profils] {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
+### Application de profils de métadonnées à des dossiers à partir de [!UICONTROL Profils] interface utilisateur {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 Pour appliquer un profil de métadonnées, procédez comme suit :
 
-1. Cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
+1. Cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à appliquer à un ou à plusieurs dossiers.
-1. Cliquez sur **[!UICONTROL Appliquer le profil de métadonnées au(x) dossier(s)]** et sélectionnez le ou les dossiers que vous souhaitez utiliser pour recevoir les nouvelles ressources chargées, puis cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+1. Cliquez sur **[!UICONTROL Application d’un profil de métadonnées à un ou plusieurs dossiers]** et sélectionnez le ou les dossiers à utiliser pour recevoir les ressources récemment chargées, puis cliquez sur **[!UICONTROL Terminé]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 ### Application de profils de métadonnées à des dossiers à partir de [!UICONTROL Propriétés] {#applying-metadata-profiles-to-folders-from-properties}
 
-1. Dans le rail de gauche, cliquez sur **[!UICONTROL Ressources]** , puis accédez au dossier auquel vous souhaitez appliquer un profil de métadonnées.
+1. Dans le rail de gauche, cliquez sur **[!UICONTROL Ressources]** accédez ensuite au dossier auquel vous souhaitez appliquer un profil de métadonnées.
 1. Dans le dossier, cliquez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 
-1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]** , sélectionnez le profil dans le menu contextuel, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Sélectionnez la **[!UICONTROL Profils de métadonnées]** et sélectionnez le profil dans le menu contextuel, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
@@ -206,11 +212,11 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 Lorsque vous supprimez un profil de métadonnées d’un dossier, tout sous-dossier hérite automatiquement de la suppression du profil de son dossier parent. Cependant, le traitement des fichiers qui s’est produit dans les dossiers reste intact.
 
-Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du menu **[!UICONTROL Outils]** ou à partir du dossier **[!UICONTROL Propriétés]**.
+Vous pouvez supprimer un profil de métadonnées d’un dossier à partir de la fonction **[!UICONTROL Outils]** ou à partir du **[!UICONTROL Propriétés]** depuis le dossier .
 
 #### Suppression de profils de métadonnées d’un dossier via l’interface utilisateur Profils {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
-1. Cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
+1. Cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
 1. Sélectionnez le profil de métadonnées à supprimer d’un ou de plusieurs dossiers.
 1. Cliquez sur **[!UICONTROL Supprimer le profil de métadonnées du ou des dossiers]**, puis sélectionnez le ou les dossiers desquels vous souhaitez supprimer le profil. Ensuite, cliquez sur **[!UICONTROL Terminé]**.
 
@@ -218,17 +224,17 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 
 #### Suppression de profils de métadonnées des dossiers via Propriétés {#removing-metadata-profiles-from-folders-via-properties}
 
-1. Cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Ressources]** , puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
+1. Cliquez sur le bouton [!DNL Experience Manager] logo et navigation **[!UICONTROL Ressources]** puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
 1. Dans le dossier, cliquez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant, et cliquez sur **[!UICONTROL Enregistrer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
 
 ## Conseils et restrictions {#best-practices-limitations}
 
-* Les mises à jour des métadonnées par le biais de l’interface utilisateur modifient les propriétés de métadonnées dans l’espace de noms `dc`. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans l’espace de noms `jcr`. Voir [Comment mettre à jour les métadonnées à l’aide de l’API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
+* Les mises à jour des métadonnées par le biais de l’interface utilisateur modifient les propriétés de métadonnées dans la variable `dc` espace de noms. Toute mise à jour effectuée via l’API HTTP modifie les propriétés de métadonnées dans la variable `jcr` espace de noms. Voir [mise à jour des métadonnées à l’aide de l’API HTTP](/help/assets/mac-api-assets.md#update-asset-metadata).
 
 * Le fichier CSV d’importation de métadonnées de ressources est dans un format très spécifique. Pour gagner du temps et du temps et éviter les erreurs involontaires, vous pouvez commencer à créer le fichier CSV au format d’un fichier CSV exporté.
 
-* Lors de l’importation de métadonnées à l’aide d’un fichier CSV, le format de date requis est `YYYY-MM-DDThh:mm:ss.fff-00:00`. Si un autre format est utilisé, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exportées sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez son contenu dans un format acceptable en ajoutant la valeur en nanosecondes indiquée par `fff`.
+* Lors de l’importation de métadonnées à l’aide d’un fichier CSV, le format de date requis est le suivant : `YYYY-MM-DDThh:mm:ss.fff-00:00`. Si un autre format est utilisé, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exportées sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez son contenu dans un format acceptable en ajoutant la valeur en nanosecondes indiquée par `fff`.
 
 >[!MORELIKETHIS]
 >

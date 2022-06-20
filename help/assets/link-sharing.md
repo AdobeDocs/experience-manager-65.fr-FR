@@ -5,14 +5,20 @@ contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: fb9de8a0303edd7e54639f7bb9c8a4f8e9227fa8
+source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1043'
 ht-degree: 32%
 
 ---
 
 # Partage d’une ressource en tant que lien {#asset-link-sharing}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/link-sharing.html?lang=en) |
 
 [!DNL Adobe Experience Manager Assets] vous permet de partager des ressources, des dossiers et des collections sous forme d’URL avec des collaborateurs dans l’entreprise et des tiers, notamment des partenaires et des fournisseurs. Le partage de ressources par le biais d’un lien est un moyen pratique de mettre des ressources à la disposition de tiers sans qu’ils aient à se connecter au préalable à [!DNL Assets].
 
@@ -22,7 +28,7 @@ ht-degree: 32%
 >* Pour envoyer des emails aux utilisateurs, configurez les détails du serveur SMTP dans [Service de messagerie Day CQ](#configmailservice).
 
 
-## Partage de ressources {#share-assets}
+## Partager des ressources {#share-assets}
 
 Pour générer l’URL des ressources que vous souhaitez partager avec les utilisateurs, utilisez le [!UICONTROL Partage de liens] boîte de dialogue.
 

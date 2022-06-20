@@ -5,14 +5,20 @@ contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 84%
+source-wordcount: '1758'
+ht-degree: 83%
 
 ---
 
 # API HTTP [!DNL Assets] {#assets-http-api}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
+| AEM 6.5 | Cet article |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=en) |
 
 ## Présentation {#overview}
 
@@ -98,7 +104,7 @@ L’API HTTP d’[!DNL Assets] offre les fonctionnalités suivantes :
 >
 >Pour faciliter la lecture, la notation cURL complète n’est pas utilisée dans les exemples suivants. En fait, la notation est liée à [Resty](https://github.com/micha/resty) qui est un wrapper de script pour `cURL`.
 
-**Prérequis**
+**Conditions préalables**
 
 * Accédez à l’adresse `https://[aem_server]:[port]/system/console/configMgr`.
 * Accédez à **[!UICONTROL Adobe du filtre CSRF Granite]**.
