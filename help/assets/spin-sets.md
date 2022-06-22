@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 90%
+source-wordcount: '1946'
+ht-degree: 88%
 
 ---
 
@@ -32,6 +32,14 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources](/help/assets/manage-assets.md).
 
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+
+| Type de limite | Bonne pratique | Limite implémentée |
+| --- | --- | --- |
+| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
+
 ## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
 
 Pour démarrer rapidement, procédez comme suit :
@@ -40,7 +48,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être effectuées à intervalles réguliers afin de donner l’impression que l’élément pivote et s’incline. Par exemple, si une visionneuse unidimensionnelle inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chacune d’elles.
 
-   Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
+   Consultez la page [Dynamic Media - Formats d’images pixellisées pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
 
 1. [Création d’une visionneuse à 360°](#creating-spin-sets).
 
@@ -88,7 +96,7 @@ Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une
 
 Vous pouvez charger des images pour les visionneuses à 360° comme vous le [feriez pour n’importe quelle autre ressource dans Experience Manager Assets](/help/assets/manage-assets.md).
 
-Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
+Consultez la page [Dynamic Media - Formats d’images pixellisées pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
 
 ### Instructions relatives à la capture d’images pour la visionneuse à 360°  {#guidelines-for-shooting-spin-set-images}
 
@@ -112,7 +120,15 @@ Cette section décrit comment créer une visionneuse à 360° en Experience Mana
 
 >[!NOTE]
 >
->L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les classer de sorte que la rotation soit une vue lisse de 360°.
+>L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les mettre dans le bon ordre afin que la rotation offre une vue à 360° parfaite.
+
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+
+| Type de limite | Bonne pratique | Limite implémentée |
+| --- | --- | --- |
+| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 **Pour créer une visionneuse à 360°, procédez comme suit :**
 

@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 66958dc5328177d27dbdddf0c8983096e38f76b6
+source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
-source-wordcount: '672'
-ht-degree: 59%
+source-wordcount: '675'
+ht-degree: 58%
 
 ---
 
@@ -62,6 +62,7 @@ ht-degree: 59%
    + [Gestion des ressources Dynamic Media](delivering-dynamic-media-assets.md)
    + [Activation de la protection de lien dynamique dans Dynamic Media](hotlink-protection.md)
    + [Prise en charge 3D](/help/assets/assets-3d.md)
+   + [Limites de Dynamic Media](limitations.md)
    + [Visionneuses d’images](image-sets.md)
    + [Images panoramiques](panoramic-images.md)
    + [Visionneuses de médias mixtes](mixed-media-sets.md)
@@ -75,7 +76,7 @@ ht-degree: 59%
    + [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](custom-pop-ups.md)
    + [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
    + [Aperçu de ressources Dynamic Media](previewing-assets.md)
-   + [Ajout de ressources Dynamic Media aux pages](adding-dynamic-media-assets-to-pages.md)
+   + [Ajout de ressources Dynamic Media à des pages](adding-dynamic-media-assets-to-pages.md)
    + [Ajout de fonctionnalités Dynamic Media Classic aux pages](scene7.md)
    + [Intégration de la visionneuse de vidéos ou d’images Dynamic dans une page web](embed-code.md)
    + [Liaison d’URL à votre application web](linking-urls-to-yourwebapplication.md)
