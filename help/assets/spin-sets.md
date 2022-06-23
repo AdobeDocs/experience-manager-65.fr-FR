@@ -11,10 +11,10 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '1946'
-ht-degree: 88%
+source-wordcount: '1952'
+ht-degree: 87%
 
 ---
 
@@ -34,7 +34,7 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 
 Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite implémentée |
+| Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
 
@@ -68,7 +68,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Voir [Ajout et modification des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
-1. [Affichage des visionneuses à 360°](#viewing-spin-sets).
+1. [Affichage d’une visionneuse à 360°](#viewing-spin-sets).
 
    Vous pouvez afficher les visionneuses créées par le biais des paramètres prédéfinis d’ensemble par lot et y accéder de trois manières différentes. Les visionneuses créées à l’aide de paramètres prédéfinis d’ensemble par lot ne s’affichent *pas* dans l’interface utilisateur.
 
@@ -88,9 +88,9 @@ Pour démarrer rapidement, procédez comme suit :
 
    Voir [Liaison d’une visionneuse à 360° à une page web](/help/assets/linking-urls-to-yourwebapplication.md) et [Intégration d’une visionneuse de vidéo ou d’images](/help/assets/embed-code.md).
 
-Si nécessaire, vous pouvez [modifier les visionneuses à 360°](#editing-spin-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse à 360°](/help/assets/manage-assets.md#editing-properties).
+Si nécessaire, vous pouvez [modification d’une visionneuse à 360°](#editing-spin-sets). Vous pouvez, en outre, afficher et modifier les [propriétés de la visionneuse à 360°](/help/assets/manage-assets.md#editing-properties).
 
-## Chargement de ressources pour les visionneuses à 360° {#uploading-assets-for-spin-sets}
+## Chargement de ressources pour une visionneuse à 360° {#uploading-assets-for-spin-sets}
 
 Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être effectuées à intervalles réguliers afin de donner l’impression que l’élément pivote et s’incline. Par exemple, si une visionneuse unidimensionnelle inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chacune d’elles.
 
@@ -124,7 +124,7 @@ Cette section décrit comment créer une visionneuse à 360° en Experience Mana
 
 Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite implémentée |
+| Type de limite | Bonne pratique | Limité imposée |
 | --- | --- | --- |
 | Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
 

@@ -11,10 +11,10 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
 workflow-type: tm+mt
-source-wordcount: '2194'
-ht-degree: 64%
+source-wordcount: '2184'
+ht-degree: 63%
 
 ---
 
@@ -38,10 +38,10 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 
 Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
-| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
-| --- | --- | --- | --- |
-| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
-| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Type de limite | Bonne pratique | Limite imposée |
+| --- | --- | --- |
+| Nombre de ressources en double par ensemble | Aucun doublon | 20 |
+| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -57,7 +57,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 <!--    Adobe Experience Manager Assets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-1. [Créez une visionneuse d’images](#creating-image-sets).
+1. [Création d’une visionneuse d’images](#creating-image-sets).
 
    Dans les visionneuses d’images, les utilisateurs sélectionnent des images miniatures dans la visionneuse d’images.
 
@@ -78,12 +78,12 @@ Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
    Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]** si vous souhaitez créer ou modifier des paramètres prédéfinis de visionneuse.
 
-1. (Facultatif) [Afficher les visionneuses d’images](/help/assets/image-sets.md#viewing-image-sets) créées à l’aide de paramètres prédéfinis d’ensemble par lot.
+1. (Facultatif) [Affichage d’une visionneuse d’images](/help/assets/image-sets.md#viewing-image-sets) qui ont été créés à l’aide des paramètres prédéfinis d’ensemble par lot.
 1. [Prévisualisez une visionneuse d’images](/help/assets/previewing-assets.md).
 
    Sélectionnez la visionneuse d’images pour pouvoir la prévisualiser. Sélectionnez les icônes des miniatures afin d’examiner votre visionneuse d’images dans la visionneuse sélectionnée. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
-1. [Publiez une visionneuse d’images](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Publication d’une visionneuse d’images](/help/assets/publishing-dynamicmedia-assets.md).
 
    La publication d’une visionneuse d’images active l’URL et le code intégré. En outre, vous devez [publier tous les paramètres prédéfinis de visionneuse personnalisés](/help/assets/managing-viewer-presets.md) que vous avez créés. Les paramètres prédéfinis de visionneuse prêts à l’emploi sont déjà publiés.
 
@@ -125,7 +125,7 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >* Une miniature de couleur noire, marron et verte.
 
 
-## Créez une visionneuse d’images {#creating-image-sets}
+## Création d’une visionneuse d’images {#creating-image-sets}
 
 Vous pouvez créer des visionneuses d’images par l’interface utilisateur ou par l’API. Cette section décrit comment créer des visionneuses d’images dans l’interface utilisateur.
 
@@ -142,14 +142,14 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
-| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
-| --- | --- | --- | --- |
-| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
-| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Type de limite | Bonne pratique | Limite imposée |
+| --- | --- | --- |
+| Nombre de ressources en double par ensemble | Aucun doublon | 20 |
+| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
-**Pour créer une visionneuse d’images** :
+**Pour créer une visionneuse d’images :**
 
 1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Navigation]** > **[!UICONTROL Ressources]**. Accédez à l’emplacement où vous souhaitez créer une visionneuse d’images, puis accédez à **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse d’images]** pour ouvrir la page de l’éditeur de visionneuse d’images.
 
@@ -193,7 +193,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**. La nouvelle visionneuse d’images apparaît dans le dossier dans lequel vous l’avez créée.
 
-## Affichage de visionneuses d’images {#viewing-image-sets}
+## Affichage d’une visionneuse d’images {#viewing-image-sets}
 
 Vous pouvez créer des visionneuses d’images dans l’interface utilisateur ou automatiquement à l’aide des [paramètres prédéfinis d’ensemble par lot](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
@@ -231,7 +231,7 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Appliquer des paramètres prédéfinis de visionneuse.
 * Supprimer la visionneuse d’images.
 
-**Pour modifier les visionneuses d’images :**
+**Pour modifier une visionneuse d’images, procédez comme suit :**
 
 1. Effectuez l’une des opérations suivantes :
 
@@ -259,10 +259,10 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
-## Prévisualisez une visionneuse d’images {#previewing-image-sets}
+## Aperçu d’une visionneuse d’images {#previewing-image-sets}
 
 Voir aussi [Aperçu des ressources](/help/assets/previewing-assets.md).
 
-## Publiez une visionneuse d’images {#publishing-image-sets}
+## Publication d’une visionneuse d’images {#publishing-image-sets}
 
 Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
