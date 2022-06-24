@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 80298613370c7187288b33e5a665a074ccb5cd3e
+source-git-commit: 3643534fa0f24a1c2ea00c35853a2671b156bf9a
 workflow-type: tm+mt
-source-wordcount: '3292'
-ht-degree: 82%
+source-wordcount: '3329'
+ht-degree: 84%
 
 ---
 
@@ -97,8 +97,8 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Oracle Java SE 8 JDK – 64 bits | A : Pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | Machine virtuelle IBM J9 – Version 2.9, JRE 1.8.0 | A : Pris en charge `[2]` |
 | Machine virtuelle IBM J9 – Version 2.8, JRE 1.8.0 | A : Pris en charge `[2]` |
-| Azul Zulu OpenJDK 11 - 64 bits | A : Pris en charge `[3]` |  |
-| Azul Zulu OpenJDK 8 - 64 bits | A : Pris en charge `[3]` |  |
+| Azul Zulu OpenJDK 11 64 bits | A : Pris en charge `[3]` |  |
+| Azul Zulu OpenJDK 8 64 bits | A : Pris en charge `[3]` |  |
 
 1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10 et Java 12 sont des versions non-LTS par Oracle (voir [Feuille de route du support Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement de production, Adobe assure uniquement la prise en charge des versions LTS de Java. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Voir [Stratégie de prise en charge Java pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) pour plus d’informations.
 
@@ -114,16 +114,16 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 
 | **Plate-forme** | **Description** | **Niveau de prise en charge** |
 |---|---|---|
-| **Système de fichiers avec fichiers TAR** `[1]` | Référentiel | A : Pris en charge  |
+| **Système de fichiers avec fichiers TAR** `[1]` | Référentiel | A : Pris en charge |
 | **Système de fichiers avec entrepôt de données** `[1]` | Binaires | A : Pris en charge |
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : Pris en charge |
 | Stockage Microsoft Azure Blob | Binaires | A : Pris en charge |
-| MongoDB Enterprise 4.2 | Référentiel | A : Pris en charge `[2, 3, 4]` |
+| MongoDB Enterprise 4.2  | Référentiel | A : Pris en charge `[2, 3, 4]` |
 | MongoDB Enterprise 4.0  | Référentiel | Z : Non pris en charge |
-| MongoDB Enterprise 3.6 | Référentiel | Z : Non pris en charge |
-| MongoDB Enterprise 3.4 | Référentiel | Z : Non pris en charge |
-| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée  `[5]` |
+| MongoDB Enterprise 3.6  | Référentiel | Z : Non pris en charge |
+| MongoDB Enterprise 3.4  | Référentiel | Z : Non pris en charge |
+| IBM DB2 10.5 | Base de données de formulaires et de référentiels | R : Prise en charge limitée `[5]` |
 | Oracle de données 12c (12.1.x) | Base de données de formulaires et de référentiels | R : Prise en charge limitée  |
 | Microsoft SQL Server 2016 | Base de données de formulaires | A : Pris en charge |
 | **Apache Lucene (démarrage rapide intégré)** | Service de recherche | A : Pris en charge |
@@ -188,7 +188,7 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 | **Plate-forme** | **Niveau de prise en charge** |
 |---|---|
 | **Linux, en fonction de la distribution Red Hat**  | A : Pris en charge `[1]` `[3]` |
-| Linux, en fonction de la distribution Debian, y compris Ubuntu | A : Pris en charge `[2]` |
+| Linux, en fonction de la distribution Debian, y compris Ubuntu  | A : Pris en charge `[2]` |
 | Linux, en fonction de la distribution SUSE | A : Pris en charge |
 | Microsoft Windows Server 2019 `[4]` | R : Prise en charge restreinte des nouveaux contrats |
 | Microsoft Windows Server 2016 `[4]` | R : Prise en charge restreinte des nouveaux contrats `[5]` |
@@ -207,7 +207,9 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 
 Adobe Experience Manager exécuté sur une machine virtuelle sur des environnements de cloud computing, tels que Microsoft Azure et Amazon Web Services (AWS), est pris en charge conformément aux exigences techniques répertoriées sur cette page, et d’après les conditions de prise en charge standard d’Adobe.
 
-Adobe recommande l’utilisation d’Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit aux experts les compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez notre [documentation complémentaire sur Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Pour un environnement natif dans le cloud, passez en revue la dernière offre de la gamme de produits AEM : Adobe Experience Manager as a Cloud Service. Voir [Documentation Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) pour plus d’informations.
+
+Adobe propose également Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit aux experts les compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez notre [documentation complémentaire sur Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 Dans tous les autres cas, lorsqu’AEM est déployé sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe sera limitée à l’environnement informatique virtuel, conformément aux caractéristiques techniques répertoriées sur cette page. Tout problème signalé lié à l’exécution d’AEM dans ces environnements cloud devra être reproductible indépendamment de tout service cloud spécifique à l’environnement de cloud computing, à moins que le service cloud ne soit spécifiquement pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple le stockage Azure Blob ou AWS S3.
 
@@ -259,7 +261,7 @@ L’interface utilisateur d’AEM est optimisée en vue d’une utilisation sur 
    <td>A : Pris en charge</td>
   </tr>
   <tr>
-   <td>Microsoft Edge (Evergreen)</td>
+   <td>Microsoft Edge (Evergreen)</td>
    <td>A : Pris en charge</td>
    <td>A : Pris en charge</td>
   </tr>
@@ -427,7 +429,7 @@ Pour Windows x86 :
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2017</a> dernière version</td>
+   <td>Dernière version <a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2017</a></td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
@@ -452,7 +454,7 @@ Pour Windows x86 :
   </tr>
   <tr>
    <td>OpenOffice 4.1.2</td>
-   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, JPF, JPX, JP2, J2K, J2C, JPC, HTML, HTM, , RTF et TXT</td>
+   <td>ODT, ODP, ODS, ODG, ODF, SXW, SXI, SXC, SXD, XLS, XLSX, DOC, DOCX, PPT, PPTX, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, RTF et TXT</td>
   </tr>
  </tbody>
 </table>
@@ -463,12 +465,12 @@ Pour Windows x86 :
 >
 >En outre :
 >
->* PDF Generator requiert la version 32 bits de [Acrobat 2017 Classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
+>* PDF Generator requiert la version 32 bits de [Acrobat 2017 Classic track version 17.011.30078 ou ultérieure](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) pour effectuer la conversion.
 >* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms en fonction de votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >
 >* Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
 >
