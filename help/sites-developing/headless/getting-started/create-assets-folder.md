@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide sur la création d’un dossier de ressources découplées
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: a5cb385aa369a5e59889e77597119358b77b55be
+source-git-commit: 40922b222e15aa3ef12b54d65addff32b679d36e
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
