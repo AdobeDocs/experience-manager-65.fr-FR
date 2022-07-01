@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
-source-wordcount: '4260'
-ht-degree: 100%
+source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+workflow-type: tm+mt
+source-wordcount: '4398'
+ht-degree: 96%
 
 ---
 
@@ -172,6 +172,7 @@ Afin de résoudre ces problèmes de performances dans les formulaires volumineux
    * Les composants des pièces jointes et des conditions générales ne sont pas pris en charge dans les fragments chargés en différé.
    * Marquez une valeur dans un panneau chargé en différé comme Utiliser la valeur globalement si cette valeur est utilisée dans une autre partie du formulaire afin qu’elle soit disponible lorsque le panneau de contenu est déchargé.
    * Pensez à créer des règles de visibilité pour les fragments qui doivent s’afficher ou être masqués en fonction d’une condition.
+* Définissez la valeur de la variable **Nombre d’appels par requête** dans le **Servlet principal Apache Sling** à un nombre assez élevé. Il permet au serveur Forms d’autoriser des appels supplémentaires. La configuration affiche une valeur par défaut de 1 500. La valeur, 1 500 appels, correspond à d’autres composants de Experience Manager tels que Sites et Assets. Le jeu de valeurs par défaut des formulaires adaptatifs est 20 000. Si vous rencontrez la variable `too many calls` dans les journaux ou si le rendu du formulaire échoue, essayez d’augmenter la valeur à un grand nombre pour résoudre le problème. Si le nombre d’appels est supérieur à 20 000, cela signifie que le formulaire est complexe et qu’il peut prendre un certain temps pour générer le formulaire dans le navigateur. Cela ne se produit que lors du premier chargement du formulaire, une fois le formulaire mis en cache et une fois le formulaire mis en cache, cela n’a aucun impact significatif sur les performances.
 
 ### Préremplissage des formulaires adaptatifs {#prefilling-adaptive-forms}
 
