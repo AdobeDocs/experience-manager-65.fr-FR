@@ -9,9 +9,9 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
 workflow-type: tm+mt
-source-wordcount: '7466'
+source-wordcount: '7575'
 ht-degree: 98%
 
 ---
@@ -85,7 +85,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
    * **Enregistrer le modèle de mise en page en utilisant :** enregistrez le modèle de mise en page à l’aide d’un chemin d’accès relatif à la payload ou stockez-le dans une variable de type de données Document. Le [modèle de disposition](../../forms/using/layout-design-details.md) fait référence à un fichier XDP que vous créez à l’aide de Forms Designer. Cette option est disponible uniquement si vous sélectionnez l’interface utilisateur de l’agent de communication interactive dans la liste déroulante Type.
 
 * **Personne désignée > options d’affectation :** indiquez la méthode d’affectation de la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
-* **Programme de sélection des participants :** cette option est disponible lorsque l’option **Sélectionner de manière dynamique un utilisateur ou un groupe** est activée dans le champ Options d’affectation. Vous pouvez utiliser un script ECMAScript ou un service pour sélectionner de manière dynamique un utilisateur ou un groupe. Pour plus d’informations, voir [Affecter de manière dynamique un processus à des utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape Participant dynamique Adobe Experience Manager personnalisé.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **Programme de sélection des participants :** cette option est disponible lorsque l’option **Sélectionner de manière dynamique un utilisateur ou un groupe** est activée dans le champ Options d’affectation. Vous pouvez utiliser un script ECMAScript ou un service pour sélectionner de manière dynamique un utilisateur ou un groupe. Pour plus d’informations, voir [Affecter de manière dynamique un processus à des utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape Participant dynamique Adobe Experience Manager personnalisé.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 
 * **Participants :** le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ **Programme de sélection des participants**. Le champ vous permet de sélectionner des utilisateurs ou des groupes pour l’option RandomParticipantChooser.
 
@@ -283,6 +283,13 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 * **Configuration cloud Adobe Sign** : sélectionnez une configuration cloud Adobe Sign. Si vous n’avez pas configuré Adobe Sign pour AEM Forms, voir [Intégrer Adobe Sign à AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 * **Sélectionner le document à signer en utilisant :** vous pouvez choisir un document à partir d’un emplacement relatif à la payload, utiliser la payload comme document, spécifier un chemin d’accès absolu au document ou récupérer le document stocké dans une variable de type de données Document.
+
+
+* **Sélectionnez Input Attachment Path à l’aide de :** Chemin des pièces jointes. Ces pièces jointes sont incluses dans le document de signature. Vous pouvez conserver les pièces jointes à un emplacement relatif à la charge utile, spécifier un chemin absolu pour les pièces jointes ou récupérer les pièces jointes stockées dans une variable de tableau de type de données Document.
+
+
+Si vous spécifiez le chemin d’accès d’un dossier, par exemple des pièces jointes, tous les fichiers directement disponibles dans le dossier sont joints au document de signature. Si des fichiers sont disponibles dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans Signing Document en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
+
 * **Jours avant l’échéance :** un document est marqué comme dû (délai expiré) lorsqu’il n’y a plus aucune activité sur la tâche pour le nombre de jours spécifié dans le champ **Jours avant l’échéance.** Le nombre de jours est calculé à partir du jour de l’affectation du document à un utilisateur pour signature.
 * **Fréquence des messages de rappel :** vous pouvez envoyer un message de rappel à intervalle quotidien ou hebdomadaire. La semaine est calculée à compter du jour de l’affectation du document à un utilisateur pour signature.
 * **Processus de signature :** vous pouvez signer un document dans un ordre séquentiel ou parallèle. Dans un ordre séquentiel, un signataire à la fois reçoit le document à signer. Une fois que le premier signataire a terminé la signature du document, il est envoyé au signataire suivant, et ainsi de suite. Dans l’ordre parallèle, plusieurs signataires signent un document en même temps.
