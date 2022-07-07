@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e3bc820dd9bfce95cdc0c8c58c075893a1f0a625
+source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
 workflow-type: tm+mt
 source-wordcount: '7575'
 ht-degree: 98%
@@ -288,7 +288,7 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 * **Sélectionnez Input Attachment Path à l’aide de :** Chemin des pièces jointes. Ces pièces jointes sont incluses dans le document de signature. Vous pouvez conserver les pièces jointes à un emplacement relatif à la charge utile, spécifier un chemin absolu pour les pièces jointes ou récupérer les pièces jointes stockées dans une variable de tableau de type de données Document.
 
 
-Si vous spécifiez le chemin d’accès d’un dossier, par exemple des pièces jointes, tous les fichiers directement disponibles dans le dossier sont joints au document de signature. Si des fichiers sont disponibles dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans Signing Document en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
+   Si vous spécifiez le chemin d’accès d’un dossier, par exemple des pièces jointes, tous les fichiers directement disponibles dans le dossier sont joints au document de signature. Si des fichiers sont disponibles dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans Signing Document en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
 
 * **Jours avant l’échéance :** un document est marqué comme dû (délai expiré) lorsqu’il n’y a plus aucune activité sur la tâche pour le nombre de jours spécifié dans le champ **Jours avant l’échéance.** Le nombre de jours est calculé à partir du jour de l’affectation du document à un utilisateur pour signature.
 * **Fréquence des messages de rappel :** vous pouvez envoyer un message de rappel à intervalle quotidien ou hebdomadaire. La semaine est calculée à compter du jour de l’affectation du document à un utilisateur pour signature.
