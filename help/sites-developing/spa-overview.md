@@ -1,8 +1,8 @@
 ---
 title: Présentation de l’éditeur de SPA
-seo-title: Présentation de l’éditeur de SPA
+seo-title: SPA Editor Overview
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
-seo-description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
+seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
 uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1657'
 ht-degree: 92%
 
 ---
@@ -101,9 +101,7 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 >* La SPA est toujours responsable de son affichage.
 >* L’éditeur de SPA est isolé de la SPA elle-même.
 >* En cours de production (publication), l’éditeur de SPA n’est jamais chargé.
-
 >
-
 
 
 ### Workflow d’édition de pages client-serveur {#client-server-page-editing-workflow}
@@ -162,7 +160,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et restrictions {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application sur une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main de SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) pour obtenir le minimum de connaissances nécessaires pour que le vôtre soit en cours d’exécution.
+Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application sur une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Veuillez consulter la [Prise en main de SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) document pour obtenir le minimum de connaissances nécessaires pour que le vôtre soit en cours d’exécution.
 
 ### Frameworks pris en charge {#supported-frameworks}
 
@@ -185,22 +183,21 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
-1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas de l’exemple de contenu WKND Journal, il s’agit d’un élément `<div>` et le sélecteur utilisé est `data-rte-editelement`.
+1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas de l’exemple de contenu du journal WKND, il s’agit d’un `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
 1. Définissez la propriété `editElementQuery` sur la configuration `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
-Pour obtenir un exemple de la façon dont cela est fait, consultez l’ [exemple de contenu du journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la section [Exemple de contenu du journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md)
 
 ### Restrictions {#limitations}
 
-Le SDK de l’éditeur SPA d’AEM a été introduit avec le Service Pack 2 d’Adobe 6.4. Il est entièrement pris en charge par Adobe et, en tant que nouvelle fonctionnalité, il continue d’être amélioré et développé. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
+Le SDK de l’éditeur SPA d’AEM a été introduit avec le Service Pack 2 d’Adobe 6.4. Elle est entièrement soutenue par l’Adobe et continue d’être améliorée et développée. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
 
 * Mode cible
 * ContextHub
 * Modification des images en ligne
 * Modification des configurations (ex. listeners)
-* Système de style
 * Annuler/rétablir
 * Outil de comparaison des pages et déformation temporelle
 * Fonctionnalités de réécriture HTML côté serveur telles que le vérificateur de liens, le service de réécriture CDN, le raccourcissement des URL, etc.
