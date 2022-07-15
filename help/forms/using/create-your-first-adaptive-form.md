@@ -9,9 +9,9 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1056'
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+workflow-type: tm+mt
+source-wordcount: '957'
 ht-degree: 100%
 
 ---
@@ -107,21 +107,7 @@ Objectifs:
 
 [![Voir le guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Étape 5 : test de votre formulaire adaptatif {#step-test-your-adaptive-form}
-
-![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
-
-Les formulaires adaptatifs font partie intégrante de vos interactions avec les clients. Il est important de tester vos formulaires adaptatifs à chaque modification apportée. Tester tous les champs d’un formulaire est fastidieux. AEM [!DNL Forms] fournit un SDK (Calvin SDK) pour automatiser les tests de formulaires adaptatifs. Calvin vous permet d’automatiser les tests de vos formulaires adaptatifs dans le navigateur Web.
-
-Objectifs:
-
-* Créer une suite de tests pour le formulaire adaptatif
-* Créer des cas de test pour les formulaires adaptatifs
-* Exécuter les cas de test
-
-[![Voir le guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](testing-your-adaptive-form.md)
-
-## Étape 6: publication de votre formulaire adaptatif {#step-publish-your-adaptive-form}
+## Étape 5: publication de votre formulaire adaptatif {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

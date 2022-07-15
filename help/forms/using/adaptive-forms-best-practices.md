@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 64ba9b1082e39552cd27e5616de2a35f7870270b
+source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
 workflow-type: tm+mt
-source-wordcount: '4398'
+source-wordcount: '4322'
 ht-degree: 96%
 
 ---
@@ -134,7 +134,7 @@ L’éditeur de règles fournit un éditeur vidéo et un éditeur de code destin
    * En outre, vous pouvez utiliser les propriétés de champ suivantes :
 
       * `field.value` pour modifier la valeur d’un champ ;
-      * f`ield.enabled` pour activer/désactiver un champ ;
+      * `field.enabled` pour activer/désactiver un champ ;
       * `field.visible` pour modifier la visibilité d’un champ.
 
 * Les auteurs de formulaire adaptatif peuvent avoir à écrire du code JavaScript pour créer la logique d’entreprise dans un formulaire. Lorsque JavaScript est puissant et efficace, il est probable qu’il fasse un compromis sur les attentes en matière de sécurité. Par conséquent, vous devez vous assurer que l’auteur du formulaire est une personne de confiance et qu’il existe des processus permettant de passer en revue et d’approuver le code JavaScript avant qu’un formulaire soit mis en production. L’administrateur peut restreindre l’accès à l’éditeur de règles aux groupes d’utilisateurs en fonction de leur rôle ou de leur fonction. Voir [Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs définis](/help/forms/using/rule-editor-access-user-groups.md).
@@ -228,17 +228,6 @@ Un document d’enregistrement (DE) est une version PDF aplatie d’un formulair
 * Découverte et apprentissage des API guideBridge
 
 Pour plus d’informations, voir [Plug-in AEM pour Chrome - Formulaire adaptatif](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/).
-
-Calvin SDK est une API utilitaire pour les développeurs de formulaires adaptatifs pour les tester. Calvin SDK est construit sur la [structure de test Hobbes.js](https://docs.adobe.com/docs/fr/aem/6-3/develop/ref/test-api/index.html). Vous pouvez utiliser le cadre pour tester les éléments suivants :
-
-* Expérience de rendu d’un formulaire adaptatif
-* Expérience de remplissage automatique d’un formulaire adaptatif
-* Expérience d’envoi d’un formulaire adaptatif
-* Règles d’expression
-* Validations
-* Chargement différé
-
-Pour plus d’informations, voir [Automatiser les tests des formulaires adaptatifs](/help/forms/using/calvin.md).
 
 ### Validation de formulaires adaptatifs sur le serveur AEM {#validating-adaptive-forms-on-aem-server}
 

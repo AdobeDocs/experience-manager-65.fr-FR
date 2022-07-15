@@ -10,9 +10,9 @@ topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1043'
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+workflow-type: tm+mt
+source-wordcount: '981'
 ht-degree: 100%
 
 ---
@@ -142,19 +142,7 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 
 [ ](/help/forms/using/create-interactive-communication0.md)
 
-## Étape 6 : Tester votre communication interactive {#step-test-your-interactive-communication}
-
-![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
-
-Une fois que vous avez créé une communication interactive, il est important de tester chaque modification que vous y apportez. Testez tous les champs d’une communication interactive est fastidieux. AEM Forms fournit un SDK (Calvin SDK) pour automatiser les tests de communications interactives dans un navigateur web.
-
-**Objectifs:**
-
-* Créer une suite de tests
-* Créer des cas de test
-* Exécuter les cas de test
-
-## Étape 7 : Publier votre communication interactive {#step-publish-your-interactive-communication}
+## Étape 6 : Publier votre communication interactive {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

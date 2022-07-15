@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 91b012f8024350effc19613bcecfc42dee4130d9
+source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3778'
 ht-degree: 99%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 99%
       + [Didacticiel : appliquer des règles aux champs de formulaires adaptatifs l](using/apply-rules-to-adaptive-form-fields.md)
       + [Tutoriel : appliquer un style à votre formulaire adaptatif](using/style-your-adaptive-form.md)
       + [Tutoriel : publier votre formulaire adaptatif](/help/forms/using/publish-your-adaptive-form.md)
-      + [Tutoriel : tester votre formulaire adaptatif](/help/forms/using/testing-your-adaptive-form.md)
    + Tutoriel : créer votre première communication interactive {#create-first-interactive-communication}
       + [Didacticiel : Créer votre première communication interactive](using/create-your-first-interactive-communication.md)
       + [Didacticiel : Planifier la communication interactive](using/planning-interactive-communications.md)
@@ -175,7 +174,6 @@ ht-degree: 99%
    + [Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP](using/xfa-api-supported-in-adaptive-form.md)
    + [Autorisation d’accès à l’éditeur de règles pour des groupes d’utilisateurs sélectionnés](using/rule-editor-access-user-groups.md)
    + [Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement](using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
-   + [Automatiser les tests des formulaires adaptatifs](using/calvin.md)
    + [Mise en forme des éléments pour les formulaires adaptatifs](using/styling-constructs-adaptive-forms.md)
    + [Synchronisation de formulaires adaptatifs avec des modèles de formulaire XFA](using/synchronizing-adaptive-forms-xfa.md)
    + [Incorporation d’Adobe Sign à AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
