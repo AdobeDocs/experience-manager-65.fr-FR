@@ -5,19 +5,19 @@ audience: end-user
 user-guide-title: Guide de l’utilisateur pour la gestion d’AEM 6.5
 breadcrumb-title: Guide de gestion
 user-guide-description: Découvrez comment gérer un projet AEM.
-feature: Déploiement
+feature: Deploying
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '73'
-ht-degree: 93%
+source-wordcount: '72'
+ht-degree: 97%
 
 ---
 
 
 # Guide de l’utilisateur pour la gestion d’AEM 6.5 {#managing}
 
-+ [Gestion du guide de l’utilisateur](home.md)
++ [Guide de l’utilisateur pour la gestion](home.md)
 + Gestion : liste de contrôle des meilleures pratiques {#managing-best-practices-checklist}
    + [Gestion des projets : liste de contrôle des meilleures pratiques](best-practices.md)
    + [La liste de contrôle](best-practices-checklist.md)

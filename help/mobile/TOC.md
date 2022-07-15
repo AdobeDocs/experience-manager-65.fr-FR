@@ -9,8 +9,8 @@ feature: Mobile
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 30%
+source-wordcount: '331'
+ht-degree: 29%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 30%
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile – Préparation pour le RGPD](aem-mobile-gdpr-compliance.md)
    + [Développement d’applications mobiles](develop-mobile-apps.md)
-+ Création de l’application On-Demand Services {#authoring}
++ Création d&#39;une application On-Demand Services {#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [Gestion du contenu](mobile-apps-ondemand-manage-content-ondemand.md)
    + [Publication du contenu Annuler la publication](mobile-on-demand-publishing-unpublishing.md)
@@ -35,7 +35,7 @@ ht-degree: 30%
    + [Chargement de ressources partagées](mobile-on-demand-shared-resources.md)
    + [Configuration du cloud](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [Gestion des bannières](mobile-on-demand-managing-banners.md)
-+ Développement de l’application On-Demand Services {#developing}
++ Développement d’une application On-Demand Services {#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [Modèles et composants d’application](app-templates-and-components1.md)
    + [Propriétés et noeuds de contenu](content-properties.md)
@@ -49,7 +49,7 @@ ht-degree: 30%
    + [Rendu et diffusion](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [Diffusion de contenu](develop-content-as-a-service.md)
-+ Administration de l’application On-Demand Services {#administering}
++ Administration de l&#39;application On-Demand Services {#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
    + [Configuration d’AEM Mobile](aem-mobile-setup.md)
    + [Configuration d’utilisateurs et de groupes d’utilisateurs](aem-mobile-configure-users.md)

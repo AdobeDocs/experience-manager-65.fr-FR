@@ -6,12 +6,12 @@ user-guide-description: Découvrez comment utiliser et administrer le contenu AE
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 78%
+ht-degree: 86%
 
 ---
 
 
-# Commerce {#commerce}
+# Commerce  {#commerce}
 
 + [Contenu et commerce AEM](/help/commerce/home.md)
 + [Modifications notables apportées à AEM contenu et à Commerce](cif/changes.md)
@@ -22,9 +22,9 @@ ht-degree: 78%
 + AEM Storefront {#storefront}
    + [Prise en main](cif/getting-started.md)
    + Création {#authoring}
-      + [Expériences commerciales](cif/authoring/authoring-commerce-experiences.md)
-      + [Product Cockpit](cif/authoring/product-cockpit.md)
-      + [Enrichissement des données de produit avec du contenu associé](cif/authoring/enrich-product-associated-content.md)
+      + [Expériences de Commerce](cif/authoring/authoring-commerce-experiences.md)
+      + [Console du produit](cif/authoring/product-cockpit.md)
+      + [Enrichissement des données de produit avec le contenu associé](cif/authoring/enrich-product-associated-content.md)
       + [Recommandations de produits](cif/authoring/product-recommendations.md)
    + Administration {#administering}
       + [Configuration multi-magasin](cif/configuring/multi-store-setup.md)

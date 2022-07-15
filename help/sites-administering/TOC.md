@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: a1821ab210b3735ca5b59b075659ff30d5872b8e
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -100,8 +100,8 @@ ht-degree: 90%
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies du même site](same-site-cookie-support.md)
-+ Personnalisation {#personalization}
-   + [Personnalisation](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation ](personalization.md)
    + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html)
    + [ClientContext](client-context.md)
    + [Campagnes](campaigns.md)
@@ -129,7 +129,7 @@ ht-degree: 90%
    + [Intégration à Adobe Campaign Standard](campaignstandard.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](flash-viewers-eol.md)
    + [Flux de produit](product-feed.md)
-   + [Intégration à Adobe Dynamic Tag Management](dtm.md)
+   + [Intégration à la gestion dynamique des balises](dtm.md)
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
    + [Portails et portlets AEM](aem-as-portal.md)
    + [Intégration à Dynamic Media Classic (Scene7)](scene7.md)
@@ -148,7 +148,7 @@ ht-degree: 90%
    + [Adobe Classifications](adobeanalytics-classifications.md)
    + [Intégration à Adobe Search&amp;Promote](search-and-promote.md)
    + [Intégration de solutions](integration.md)
-   + [Exportation de fragments d’expérience vers Adobe Target](experience-fragments-target.md)
+   + [Exportation de fragments d’expérience vers Adobe Target](experience-fragments-target.md)
    + [Meilleures pratiques des modèles de courrier électronique](best-practices-for-email-templates.md)
    + [Intégration à Livefyre](livefyre.md)
 + Bonnes pratiques {#bestpractices}

@@ -9,8 +9,8 @@ feature: Communities
 role: User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 30%
+source-wordcount: '501'
+ht-degree: 31%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 30%
    + [Expérience du site publié](published-site.md)
    + [Création de groupes imbriqués](nested-groups.md)
    + [Configuration initiale pour l’activation](enablement-setup.md)
-   + [Création d’un site communautaire pour l’activation](enablement-create-site.md)
+   + [Création d’un site de communauté pour activation](enablement-create-site.md)
    + [Créer et attribuer des ressources d’activation](resource.md)
    + [Expérience du site d’activation publié](enablement-published-site.md)
 + Déploiement {#deploy}

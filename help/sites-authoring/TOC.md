@@ -81,8 +81,8 @@ ht-degree: 87%
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
    + [Ajout de fonctionnalités Search&amp;Promote à une page](search-and-promote.md)
-+ Personnalisation {#personalization}
-   + [Personnalisation](personalization.md)
++ Personnalisation  {#personalization}
+   + [Personnalisation ](personalization.md)
    + [Aperçu des pages à l’aide des données ContextHub](ch-previewing.md)
    + [Création de contenu ciblé en mode Ciblage](content-targeting-touch.md)
    + [Utilisation de contenu ciblé sur plusieurs sites](multisite-support-targeted-content.md)

@@ -99,7 +99,7 @@ ht-degree: 75%
 + [Couplage et découplage dans AEM](headful-headless.md)
 + Gestion de l’expérience découplée{#headless}
    + [Le découplage et AEM](headless/introduction.md)
-   + Parcours découplés{#journeys}
+   + Parcours découplés {#journeys}
       + Parcours de développement découplé {#developer}
          + [Comprendre le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/overview.html)
          + [En savoir plus sur le développement CMS découplé](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/learn-about.html)
@@ -175,9 +175,9 @@ ht-degree: 75%
    + [Utilisation de l’outil VLT](ht-vlttool.md)
    + [Utilisation de l’outil de serveur proxy](ht-proxy-server.md)
    + [Extension AEM Brackets](aem-brackets.md)
-   + [AEM Developer Tools for Eclipse](aem-eclipse.md)
+   + [Developer Tools d’AEM pour Eclipse](aem-eclipse.md)
    + [Outil AEM Repo](aem-repo-tool.md)
-+ Personnalisation{#personlization}
++ Personnalisation {#personlization}
    + [ContextHub](contexthub.md)
    + [Configuration de ContextHub](ch-configuring.md)
    + [Ajout de ContextHub à des pages et accès à des magasins](ch-adding.md)
@@ -191,14 +191,14 @@ ht-degree: 75%
       + [Présentation détaillée de ClientContext](client-context.md)
       + [API Javascript pour ClientContext](ccjsapi.md)
 + Extension d’AEM{#extending-aem}
-   + [Extension d’AEM à l’aide d’Adobe Developer App Builder](app-builder.md)
+   + [Étendre AEM à l’aide d’Adobe Developer App Builder](app-builder.md)
    + [Personnalisation de la création de pages](customizing-page-authoring-touch.md)
    + [Personnalisation des consoles](customizing-consoles-touch.md)
    + [Personnalisation des vues des propriétés de la page](page-properties-views.md)
    + [Configuration d’une page pour la modification en masse des propriétés de page](bulk-editing.md)
    + [Personnalisation et extensions de fragments de contenu](customizing-content-fragments.md)
    + [Fragments de contenu – Configuration des composants pour le rendu](content-fragments-config-components-rendering.md)
-   + [Fragments d’expérience](experience-fragments.md)
+   + [Présentation](experience-fragments.md)
    + Extension des workflows{#extending-workflows}
       + [Développement et extension des workflows](workflows.md)
       + [Création de modèles de workflow](workflows-models.md)
@@ -207,7 +207,7 @@ ht-degree: 75%
       + [Référence sur les étapes de workflow](workflows-step-ref.md)
       + [Meilleures pratiques en matière de workflow](workflows-best-practices.md)
       + [Référence sur les processus de workflow](workflows-process-ref.md)
-      + [Variables dans les workflows AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
+      + [Variables dans les workflows d’AEM](/help/sites-developing/using-variables-in-aem-workflows.md)
    + [Extension du Multi Site Manager](extending-msm.md)
    + Suivi et analyses{#extending-analytics}
       + [Extension du suivi des événements](extending-analytics.md)
@@ -215,7 +215,7 @@ ht-degree: 75%
       + [Personnalisation de la structure Adobe Analytics](extending-analytics-framework.md)
       + [Implémentation de l’appellation des pages côté serveur pour Analytics](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Configurations du service cloud](extending-cloud-config.md)
+      + [Configuration de Cloud Services](extending-cloud-config.md)
       + [Création d’un service cloud personnalisé](extending-cloud-config-custom-cloud.md)
    + [Création d’extensions personnalisées](extending-campaign-extensions.md)
    + Forms{#extending-forms}
