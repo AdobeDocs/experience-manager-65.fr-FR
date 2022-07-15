@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) avec l’API GraphQL AEM pour la diffusion de contenu sans interface utilisateur.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: e7a2a4ad89a58e5fad0acb521adb100cf0bcd1d8
+source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
 workflow-type: tm+mt
-source-wordcount: '3942'
-ht-degree: 97%
+source-wordcount: '3986'
+ht-degree: 96%
 
 ---
 
@@ -433,6 +433,10 @@ Le champ `_variations` a été implémenté pour simplifier la recherche de vari
 
 Voir [Modèle de requête – Toutes les villes avec une variante nommée](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation).
 
+>[!NOTE]
+>
+>Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur par défaut (de secours).
+
 <!--
 ## Security Considerations {#security-considerations}
 -->
@@ -541,38 +545,43 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
-   * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](#sample-all-persons-jobs-smith)
+   * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
 
 * L’opérateur logique ET existe également, mais est (souvent) implicite
 
 * Vous pouvez appliquer des requêtes aux noms de champ qui correspondent aux champs du modèle de fragment de contenu.
-   * Voir [Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise](#sample-full-details-company-ceos-employees)
+   * Voir [Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-full-details-company-ceos-employees)
 
 * Outre les champs de votre modèle, il existe certains champs générés par le système (précédés d’un trait de soulignement) :
 
    * Pour le contenu :
 
       * `_locale` : pour afficher la langue ; basé sur Language Manager
-         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné](#sample-wknd-multiple-fragments-given-locale)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-given-locale)
       * `_metadata` : pour afficher les métadonnées de votre fragment
-         * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](#sample-metadata-awards-gb)
+         * Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées des prix intitulés GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
       * `_model` : autoriser l’interrogation d’un modèle de fragment de contenu (chemin et titre)
-         * Voir [Exemple de requête pour un modèle de fragment de contenu à partir d’un modèle](#sample-wknd-content-fragment-model-from-model)
+         * Voir [Exemple de requête pour un modèle de fragment de contenu à partir d’un modèle](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-content-fragment-model-from-model)
       * `_path` : chemin d’accès au fragment de contenu dans le référentiel.
-         * Voir [Exemple de requête – Un fragment de ville unique et spécifique](#sample-single-specific-city-fragment)
+         * Voir [Exemple de requête – Un fragment de ville unique et spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
       * `_reference` : pour afficher les références ; y compris les références intégrées dans l’éditeur de texte enrichi
-         * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées](#sample-wknd-multiple-fragments-prefetched-references)
+         * Voir [Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-multiple-fragments-prefetched-references)
       * `_variation` : pour afficher des variantes spécifiques dans votre fragment de contenu
-         * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
+
+         >[!NOTE]
+         >
+         >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur par défaut (de secours).
+
+         * Voir [Exemple de requête – Toutes les villes avec une variante nommée](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
    * Et les opérations :
 
       * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
-         * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](#sample-all-persons-not-jobs)
-         * Voir [Exemple de requête – Toutes les aventures où `_path` commence par un préfixe spécifique](#sample-wknd-all-adventures-cycling-path-filter)
+         * Voir [Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-not-jobs)
+         * Voir [Exemple de requête – Toutes les aventures où `_path` commence par un préfixe spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-all-adventures-cycling-path-filter)
       * `_apply` : pour appliquer des conditions spécifiques ; par exemple `AT_LEAST_ONCE`
-         * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois](#sample-array-item-occur-at-least-once)
+         * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
-         * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse](#sample-all-cities-san-ignore-case)
+         * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
 
 
 
@@ -585,11 +594,11 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 * Les types d’union GraphQL sont pris en charge :
 
    * Utilisez `... on`
-      * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
+      * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-specific-model-content-reference)
 
-* Secours lors de l’interrogation de fragments imbriqués :
+* Secours lors de l’interrogation de fragments imbriqués :
 
-   * Si la variation demandée n’existe pas dans un fragment imbriqué, la variable **Principal** variation est renvoyée.
+   * Si la variation demandée n’existe pas dans un fragment imbriqué, la variation **Principal** est renvoyée.
 
 ## Requêtes conservées (cache) {#persisted-queries-caching}
 
