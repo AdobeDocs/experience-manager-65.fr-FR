@@ -1,22 +1,19 @@
 ---
 title: Mise à niveau vers AEM 6.5
-seo-title: Mise à niveau vers AEM 6.5
+seo-title: Upgrading to AEM 6.5
 description: Découvrez les principes de base de la mise à niveau d’une installation d’AEM vers la version AEM 6.5.
-seo-description: Découvrez les principes de base de la mise à niveau d’une installation d’AEM vers la version AEM 6.5.
-uuid: 45368056-273c-4f1a-9da6-e7ba5c2bbc0d
+seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
 contentOwner: sarchiz
 topic-tags: upgrading
-products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: ebd99cc4-8762-4c28-a177-d62dac276afe
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: 02fc145d5ec1458d1f71a2f353b56b944a267f3e
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 77%
+source-wordcount: '694'
+ht-degree: 75%
 
 ---
 
@@ -47,7 +44,7 @@ Pour une référence conviviale aux instances d’AEM incluses dans ces procédu
 >
 >Dans le cadre des efforts pour améliorer la fiabilité des mises à niveau, AEM a subi une restructuration complète des référentiels. Pour plus d’informations sur la façon de les aligner avec la nouvelle structure, voir[ Restructuration des référentiels dans AEM.](/help/sites-deploying/repository-restructuring.md)
 
-## Qu’est-ce qui a changé ? {#what-has-changed}
+## Qu’est-ce qui a changé ? {#what-has-changed}
 
 Voici quelques changements majeurs mis en œuvre avec les dernières versions d’AEM :
 
@@ -73,12 +70,10 @@ AEM a récemment introduit un [outil de détection des motifs](/help/sites-deplo
 
 Pour plus d’informations sur les autres points modifiés dans les versions récentes d’AEM, consultez les notes de mise à jour complètes :
 
-* [https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/fr/experience-manager/6-4/release-notes.html)
-* [https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html ](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html )
+* [Notes de mise à jour générales d’Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=fr)
+* [Notes de mise à jour d’Adobe Experience Manager 6.5 dernier Service Pack](/help/release-notes/release-notes.md)
 
-## Vue d’ensemble de la mise à niveau {#upgrade-overview}
+## Vue d’ensemble de la mise à niveau  {#upgrade-overview}
 
 La mise à niveau d’AEM consiste en plusieurs étapes et peut parfois se dérouler sur plusieurs mois. L’aperçu suivant vous donne une vue d’ensemble du contenu d’un projet de mise à niveau, ainsi que des éléments inclus dans cette documentation :
 
@@ -86,10 +81,10 @@ La mise à niveau d’AEM consiste en plusieurs étapes et peut parfois se déro
 
 ## Flux de mise à niveau {#upgrade-overview-1}
 
-Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit commencer par le détecteur de motifs (voir [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)), qui doit vous permettre de choisir le chemin que vous souhaitez prendre pour des raisons de compatibilité avec AEM 6.4 en fonction des modèles du rapport généré.
+Le diagramme ci-dessous illustre le flux recommandé pour la méthode de mise à niveau. Notez la référence aux nouvelles fonctionnalités que nous avons ajoutées. La mise à niveau doit commencer avec le détecteur de motifs (voir [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de motifs](/help/sites-deploying/pattern-detector.md)) qui vous permet de choisir le chemin que vous souhaitez prendre pour des raisons de compatibilité avec AEM 6.4 en fonction des modèles du rapport généré.
 
 Dans la version 6.5, nous avons mis l’accent sur la compatibilité descendante de toutes les nouvelles fonctionnalités. Cependant, lorsque des problèmes de compatibilité descendante se produisent, le mode de compatibilité vous permet de différer temporairement le développement pour que votre code personnalisé reste compatible avec la version 6.5. Cette approche vous permet d’éviter les efforts de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
-Enfin, dans votre cycle de développement 6.5, les fonctionnalités introduites sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les bonnes pratiques pour rendre les mises à niveau futures encore plus efficaces et transparentes.
+Enfin, dans votre cycle de développement 6.5, les fonctionnalités introduites sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aider à suivre les bonnes pratiques pour rendre les futures mises à niveau encore plus efficaces et transparentes.
 
 ![6_4_upgrade_overviewflowchart-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)

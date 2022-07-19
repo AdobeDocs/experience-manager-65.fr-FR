@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2022
 description: Notes de mise à jour d’AEM Content and Commerce 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: f6a16e5744222600b3a1760efe3c61619160b6cd
+source-git-commit: 600a836ff7ae0be9fde107ff2828bb41e8eed98f
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '660'
 ht-degree: 29%
 
 ---
@@ -20,6 +20,26 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Juin 2022
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2022.06.xx.00 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
+| Composants principaux CIF | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| Site de référence CIF Venia | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
+
+### Nouveautés {#what-is-new-june}
+
+* Le nom du modèle est maintenant visible dans l’éditeur de sites lors de la création d’un modèle de catalogue de produits.
+
+* Diverses améliorations du composant principal CIF
+
+### Correctifs {#bug-fixes-june}
+
+* Ajout d’un jeton de connexion à la récupération de prix côté client
+
+* Composant de page incorrect dans le lecteur de données
 
 ## Date de publication : Mai 2022
 
@@ -63,7 +83,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
    ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Date de publication : Mars 2022
+## Date de publication : Février 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
