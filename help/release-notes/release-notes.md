@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 6b75c41cf796b28409c263175cf3f3a2044422ff
+source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3742'
 ht-degree: 7%
 
 ---
@@ -298,10 +298,10 @@ Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont 
 
 ## Interface utilisateur {#ui-6513}
 
+* Mettre à jour vers `favicon.ico` utilisé en Experience Manager. (CQ-4315324)
 * Lorsque vous êtes sur la page de démarrage > dans la section Outils , cliquez sur le bouton [!DNL Experience Manager] , l’icône [!DNL Experience Manager] L’écran de navigation doit s’afficher. (NPR-38417)
 * Activer ES6 pour `/libs/granite/ui/references/clientlibs/coral/references`. (NPR-38303)
 * Activer ES6 pour `/libs/granite/datavisualization/clientlibs/d3-3.x`. (NPR-38302)
-
 <!-- VULNERABILITY ISSUE - REMOVED AND ADDED TO https://wiki.corp.adobe.com/display/DXContent/Security+and+Vulnerability+issues+for+SP+and+CFP+releases * AEM‑OP‑09 ‑ Persistent cross‑site scripting selecting paths in templates. (NPR-38301) -->
 * Le sélecteur de date dans l’interface utilisateur tactile s’affiche en coréen. (NPR-38079)
 * Boîte de dialogue de création avec plusieurs champs, lors de la réorganisation des champs en perdant la valeur de sélection du bouton radio. (NPR-38063)
