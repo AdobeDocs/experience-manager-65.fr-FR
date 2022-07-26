@@ -1,8 +1,8 @@
 ---
 title: API Query Builder
-seo-title: API Query Builder
+seo-title: Query Builder API
 description: La fonctionnalité du Query Builder Asset Share est exposée via une API Java et une API REST.
-seo-description: La fonctionnalité du Query Builder Asset Share est exposée via une API Java et une API REST.
+seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,9 +12,9 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: bfb02e79d6895be498e6e40888c6d8d4e3a8fcd4
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2313'
 ht-degree: 91%
 
 ---
@@ -41,7 +41,7 @@ L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP
 
 >[!NOTE]
 >
->Pour obtenir un aperçu détaillé du générateur de requêtes, reportez-vous à la session AEM Gem [Formulaires de recherche simplifiés avec AEM querybuilder](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) .
+>Voir la session AEM Gem [Formulaires de recherche simplifiés avec AEM Query Builder](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html) pour une présentation détaillée de query builder.
 
 ## Exemples de requêtes {#sample-queries}
 
@@ -61,7 +61,7 @@ Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre 
 >
 >Pour afficher les données JSON renvoyées dans votre navigateur, vous pouvez utiliser un module externe tel que JSONView for Firefox.
 
-### Renvoi de tous les résultats  {#returning-all-results}
+### Renvoi de tous les résultats {#returning-all-results}
 
 La requête suivante **renvoie dix résultats** (ou, pour être précis, un maximum de dix), mais vous informe du **Nombre d’accès** réellement disponibles :
 
@@ -218,7 +218,7 @@ Cette requête utilise un *groupe* (appelé « `group` »), qui sert à délim
 
 `"Management" and ("/content/geometrixx/en/company/management" or "/content/geometrixx/en/company/bod")`
 
-Le prédicat `path` est utilisé à plusieurs reprises dans le groupe de l’exemple précédent. Pour différencier et classer les deux instances du prédicat (un ordre est requis pour certains prédicats), vous devez ajouter un préfixe aux prédicats avec *N* `_ where`*N* comme index d’ordonnancement. Dans l’exemple précédent, les prédicats obtenus sont `1_path` et `2_path`.
+Le prédicat `path` est utilisé à plusieurs reprises dans le groupe de l’exemple précédent. Pour différencier et classer les deux instances du prédicat (un ordre est requis pour certains prédicats), vous devez ajouter un préfixe aux prédicats avec *N* `_ where`*N* est l’index de classement. Dans l’exemple précédent, les prédicats obtenus sont `1_path` et `2_path`.
 
 Le `p` dans `p.or` est un délimiteur spécial qui indique que ce qui suit (dans ce cas, `or`) est un *paramètre* du groupe, par opposition à un sous-prédicat du groupe, tel que `1_path`.
 
@@ -228,7 +228,7 @@ Si aucun `p.or` n’est indiqué, tous les prédicats sont associés avec AND ;
 >
 >Vous ne pouvez pas utiliser le même préfixe numérique dans une seule requête, même pour des prédicats différents.
 
-### Recherche de propriétés  {#search-for-properties}
+### Recherche de propriétés {#search-for-properties}
 
 Dans ce cas, vous recherchez toutes les pages d’un modèle donné, à l’aide de la propriété `cq:template` :
 
@@ -363,11 +363,11 @@ Pour plus de prédicats, consultez la [page de référence des prédicats de Que
 
 Vous pouvez également consulter le [JavaDoc relatif aux `PredicateEvaluator`classes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Ce JavaDoc contient la liste des propriétés que vous pouvez utiliser.
 
-Le préfixe du nom de classe (par exemple, &quot; `similar`&quot; dans [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) est la *propriété principale* de la classe. Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
+Préfixe du nom de classe (par exemple, &quot; `similar`&quot; dans [`SimilarityPredicateEvaluator`](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/SimilarityPredicateEvaluator.html)) est la variable *propriété principale* de la classe . Cette propriété est également le nom du prédicat à utiliser dans la requête (en minuscules).
 
-Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser &quot;`similar=/content/en`&quot; au lieu de la variante complète &quot;`similar.similar=/content/en`&quot;. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
+Pour ces propriétés principales, vous pouvez raccourcir la requête et utiliser &quot; `similar=/content/en`&quot; au lieu de la variante entièrement qualifiée &quot; `similar.similar=/content/en`&quot;. La forme complète doit être utilisée pour toutes les propriétés non principales d’une classe.
 
-## Exemple d’utilisation de l’API Query Builder  {#example-query-builder-api-usage}
+## Exemple d’utilisation de l’API Query Builder {#example-query-builder-api-usage}
 
 ```java
    String fulltextSearchTerm = "Geometrixx";
@@ -433,7 +433,7 @@ La même requête exécutée sur HTTP à l’aide du servlet Query Builder (JSON
 
 ## Stockage et chargement de requêtes {#storing-and-loading-queries}
 
-Les requêtes peuvent être stockées dans le référentiel de manière à pouvoir les utiliser ultérieurement. `QueryBuilder` fournit la méthode &quot;`storeQuery` avec la signature suivante :
+Les requêtes peuvent être stockées dans le référentiel de manière à pouvoir les utiliser ultérieurement. Le `QueryBuilder` fournit le `storeQuery` avec la signature suivante :
 
 ```java
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
@@ -484,7 +484,7 @@ Expliquez **toutes** les requêtes pendant le cycle de développement par rappor
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête.
+* Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) comme XPath pour obtenir le plan de requête
 
 ### Obtention de la requête XPath explicable via le débogueur Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
@@ -503,7 +503,7 @@ Expliquez **toutes** les requêtes pendant le cycle de développement par rappor
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
-* Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath pour obtenir le plan de requête.
+* Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) comme XPath pour obtenir le plan de requête
 
 **Obtention de la requête XPath explicable via le débogueur Query Builder**
 
@@ -530,7 +530,7 @@ Pour un aperçu du débogage des requêtes avec Query Builder, visionnez la vid
 
 >[!NOTE]
 >
->La configuration des enregistreurs est décrite dans la section [Création de vos propres enregistreurs et rédacteurs](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
+>La configuration des enregistreurs est décrite dans la section . [Création de vos propres enregistreurs et rédacteurs](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
 
 Sortie de journal (niveau INFO) de l’implémentation Query Builder lors de l’exécution de la requête décrite à la section Tests et débogage :
 
@@ -564,7 +564,7 @@ com.day.cq.search.impl.builder.QueryImpl filtering predicates: {nodename=nodenam
 com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 ```
 
-## Liens JavaDoc   {#javadoc-links}
+## Liens JavaDoc {#javadoc-links}
 
 | **Javadoc** | **Description** |
 |---|---|
