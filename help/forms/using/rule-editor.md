@@ -10,8 +10,8 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 84ae92f889661a639e931b2a7ba9a999d5258841
+workflow-type: tm+mt
 source-wordcount: '6794'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ L’éditeur de règles fournit une interface utilisateur intuitive et simplifi�
 * Appeler un service de modèle de données de formulaire et effectuer une opération
 * Définir la propriété d’un objet
 
-L’éditeur de règles remplace les fonctionnalités de script dans AEM Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles. Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[ Impact de l’éditeur de règles sur les scripts existants](../../forms/using/rule-editor.md#p-impact-of-rule-editor-on-existing-scripts-p).
+L’éditeur de règles remplace les fonctionnalités de script dans AEM Forms 6.1 et les versions antérieures. Toutefois, les scripts existants sont conservés dans le nouvel éditeur de règles. Pour plus d’informations sur l’utilisation des scripts existants dans l’éditeur de règles, reportez-vous à la section[ Impact de l’éditeur de règles sur les scripts existants](#impact-of-rule-editor-on-existing-scripts).
 
 Les utilisateurs ajoutés au groupe des utilisateurs avancés de formulaires peuvent créer de nouveaux scripts et modifier les scripts existants. Les utilisateurs appartenant au groupe d’utilisateurs de formulaires peuvent utiliser les scripts, mais ne peuvent ni en créer ni en modifier.
 
@@ -57,11 +57,11 @@ Les types de règles Afficher, Masquer, Activer, Désactiver, Définir la valeur
 >
 >Les types de règle disponibles, y compris les conditions et les actions que vous définissez dans l’éditeur de règles, dépendent également du type de l’objet de formulaire pour lequel vous créez une règle. L’éditeur de règles affiche uniquement les types de règle et les options valides lors de la création des instructions de condition et d’action pour un type particulier d’objet de formulaire. Par exemple, les types de règle Valider, Définir la valeur de, Activer et Désactiver ne s’affichent pas pour un objet de panneau.
 
-Pour plus d’informations sur les types de règle disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règle disponibles dans l’éditeur de règles](../../forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Pour plus d’informations sur les types de règle disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règle disponibles dans l’éditeur de règles](#available-rule-types-in-rule-editor).
 
 ### Recommandations pour la sélection d’un concept de règle {#guidelines-for-choosing-a-rule-construct}
 
-Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe quel concept de règle, voici quelques recommandations pour sélectionner un concept plutôt qu’un autre. Pour plus d’informations sur les règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](../../forms/using/rule-editor.md#p-available-rule-types-in-rule-editor-p).
+Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe quel concept de règle, voici quelques recommandations pour sélectionner un concept plutôt qu’un autre. Pour plus d’informations sur les règles disponibles dans l’éditeur de règles, reportez-vous à la section [Types de règles disponibles dans l’éditeur de règles](#available-rule-types-in-rule-editor).
 
 * Lors de la création d’une règle, un des principes de base consiste à penser à cette règle dans le contexte de l’objet pour lequel vous créez une règle. Imaginons que vous souhaitez masquer ou afficher le champ B selon la valeur qu’un utilisateur indique dans le champ A. Dans ce cas, vous évaluez une condition du champ A, et en fonction de la valeur qu’elle renvoie, vous déclenchez une action sur le champ B.
 
@@ -94,7 +94,7 @@ L’éditeur de règles fournit les opérateurs logiques et les événements sui
 
 ## Types de règle disponibles dans l’éditeur de règles {#available-rule-types-in-rule-editor}
 
-L’éditeur de règles fournit un ensemble de types de règle prédéfinis que vous pouvez utiliser pour créer des règles. Examinons en détail chaque type de règle. Pour plus d’informations sur la création de règles dans l’éditeur de règles, reportez-vous à la section[ Création de règles](../../forms/using/rule-editor.md#p-write-rules-p).
+L’éditeur de règles fournit un ensemble de types de règle prédéfinis que vous pouvez utiliser pour créer des règles. Examinons en détail chaque type de règle. Pour plus d’informations sur la création de règles dans l’éditeur de règles, reportez-vous à la section[ Création de règles](#write-rules).
 
 ### Quand {#whenruletype}
 
@@ -336,7 +336,7 @@ Pour lancer l’interface utilisateur de l’éditeur de règles :
 
    ![create-rules](assets/create-rules.png)
 
-   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](../../forms/using/rule-editor.md#p-manage-rules-p).
+   Toutes les règles existantes pour les objets de formulaire sélectionnés sont répertoriées dans cet écran. Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](#manage-rules).
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer une règle. L’éditeur visuel de l’interface utilisateur de l’éditeur de règles s’affiche par défaut la première fois que vous lancez l’éditeur de règles.
 
@@ -364,7 +364,7 @@ L’onglet Fonctions comporte un jeu de fonctions intégrées, comme Somme de, M
 >
 >Vous pouvez effectuer une recherche de texte dans les noms et titres des objets et des fonctions à partir des onglets Objets de formulaire et Fonctions.
 
-Dans l’arborescence de gauche des objets de formulaire, vous pouvez appuyer sur les objets de formulaire pour afficher les règles appliquées à chacun des objets. Vous pouvez non seulement parcourir les règles des différents objets de formulaire mais également copier-coller des règles entre les objets du formulaire. Pour plus d’informations, reportez-vous à la section[ Règles de Copier-coller](../../forms/using/rule-editor.md#p-copy-paste-rules-p).
+Dans l’arborescence de gauche des objets de formulaire, vous pouvez appuyer sur les objets de formulaire pour afficher les règles appliquées à chacun des objets. Vous pouvez non seulement parcourir les règles des différents objets de formulaire mais également copier-coller des règles entre les objets du formulaire. Pour plus d’informations, reportez-vous à la section[ Règles de Copier-coller](#copy-paste-rules).
 
 ### C. Basculement entre les objets de formulaire et les fonctions {#c-form-objects-and-functions-toggle-br}
 
@@ -374,7 +374,7 @@ Le bouton Basculer, lorsqu’il est sélectionné, permet de basculer entre le v
 
 Lorsque l’interface utilisateur de l’éditeur de règles est en mode éditeur visuel, l’éditeur de règles visuel est la zone dans laquelle vous créez des règles. Il vous permet de sélectionner un type de règle et de définir en conséquence des conditions et des actions. Lors de la définition des conditions et des actions dans une règle, vous pouvez glisser-déposer des objets de formulaire et des fonctions depuis le volet Objets de formulaire et Fonctions.
 
-Pour plus d’informations sur l’utilisation de l’éditeur de règles visuel, voir [Création de règles](../../forms/using/rule-editor.md#p-write-rules-p).
+Pour plus d’informations sur l’utilisation de l’éditeur de règles visuel, voir [Création de règles](#write-rules).
 
 ### E. Sélecteur des modes éditeur visuel-éditeur de code {#e-visual-code-editors-switcher}
 
@@ -390,7 +390,7 @@ AEM Forms suit le mode Éditeur de règles que vous avez utilisé en dernier pou
 
 ### F. Boutons Terminé et Annuler {#f-done-and-cancel-buttons}
 
-Le bouton **[!UICONTROL Terminé]** permet d’enregistrer une règle. Vous pouvez enregistrer une règle incomplète. Toutefois, les règles incomplètes ne sont pas valides et ne s’exécutent pas. Les règles enregistrées sur un objet de formulaire sont répertoriées lorsque vous lancez l’éditeur de règles à l’ouverture suivante du même objet de formulaire. Vous pouvez gérer les règles existantes dans cette vue. Pour plus d’informations, consultez la section [Gérer les règles](../../forms/using/rule-editor.md#p-manage-rules-p).
+Le bouton **[!UICONTROL Terminé]** permet d’enregistrer une règle. Vous pouvez enregistrer une règle incomplète. Toutefois, les règles incomplètes ne sont pas valides et ne s’exécutent pas. Les règles enregistrées sur un objet de formulaire sont répertoriées lorsque vous lancez l’éditeur de règles à l’ouverture suivante du même objet de formulaire. Vous pouvez gérer les règles existantes dans cette vue. Pour plus d’informations, consultez la section [Gérer les règles](#manage-rules).
 
 Le bouton **[!UICONTROL Annuler]** annule tous les changements apportés à une règle et ferme l’éditeur de règles.
 
@@ -722,7 +722,7 @@ Pour copier-coller des règles, procédez comme suit :
 
    ![copyrule](assets/copyrule.png)
 
-   Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](../../forms/using/rule-editor.md#p-manage-rules-p).
+   Pour plus d’informations sur la gestion des règles existantes, voir [Gestion des règles](#manage-rules).
 
 1. Cochez la case en regard du titre de la règle. D’autres options de gestion des règles s’affichent. Appuyez sur **Copier**.
 
