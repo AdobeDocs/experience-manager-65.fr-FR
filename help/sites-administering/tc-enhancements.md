@@ -1,19 +1,19 @@
 ---
 title: Amélioration des traductions
-seo-title: Amélioration des traductions
+seo-title: Translation Enhancements
 description: Amélioration des traductions dans AEM.
-seo-description: Amélioration des traductions dans AEM.
+seo-description: Translation enhancements in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
-feature: Copie de la langue
+feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3de9f3c97b99644297a2f07344f6aebae1c5ae83
 workflow-type: tm+mt
-source-wordcount: '560'
-ht-degree: 70%
+source-wordcount: '609'
+ht-degree: 63%
 
 ---
 
@@ -65,17 +65,20 @@ Il est possible de configurer plusieurs langues cibles dans un projet de traduct
 
 Les modifications manuelles du contenu traduit peuvent être synchronisées avec le système de gestion de traduction (TMS) pour entraîner sa mémoire de traduction.
 
-1. Dans la console Sites , après avoir mis à jour le contenu textuel dans une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
+1. Dans la console Sites , après avoir mis à jour le contenu textuel d’une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
+1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction à synchroniser avec la mémoire de traduction, puis sélectionnez **Mettre à jour la mémoire**.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
-   >[!NOTE]
-   >
-   >AEM enverra les chaînes sélectionnées vers le système de gestion de traduction.
+AEM enverra les chaînes sélectionnées vers le système de gestion de traduction.
+
+* L’action met à jour la traduction des chaînes existantes dans la mémoire de traduction des systèmes de gestion de traduction (TMS) configurés.
+* Il ne crée pas de nouvelles tâches de traduction.
+* Il envoie les paires valeur de chaînes et leurs traductions au TMS, via AEM API de traduction.
+* Cette fonctionnalité nécessite qu’un système de gestion de traduction soit configuré pour être utilisé avec AEM.
 
 ## Copies de langue à plusieurs niveaux {#language-copies-on-multiple-levels}
 
@@ -89,10 +92,8 @@ Les racines de langues peuvent désormais être regroupées sous des nœuds, par
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
-
 >
->
-Cette copie de la langue `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
+>Cette copie de la langue `es` n’est pas détectée, car elle se trouve à deux niveaux (americas/central-america) du nœud `en`.
 
 >[!NOTE]
 >
