@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: d28d78e426f1e89caa8bd28b067765d40b95cb8a
 workflow-type: tm+mt
-source-wordcount: '484'
-ht-degree: 51%
+source-wordcount: '494'
+ht-degree: 50%
 
 ---
 
@@ -66,10 +66,12 @@ Accédez au répertoire approprié, puis, à l’invite de commande, saisissez
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 
-   * [Installation et déploiement d’AEM Forms pour JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [Installation et déploiement d’AEM Forms pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [Installation et déploiement d’AEM Forms pour JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65_fr)
+   * [Installation et déploiement d’AEM Forms pour WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_65_fr)
 
 1. (JBoss uniquement) Après avoir installé le correctif et configuré le serveur, supprimez les répertoires tmp et work du serveur d’applications JBoss.
+
+>**Remarque :** Avant le lancement **Configuration Manager**, télécharger et remplacer [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) fichier .
 
 ## Configurations après le déploiement {#post-deployment-configurations}
 
