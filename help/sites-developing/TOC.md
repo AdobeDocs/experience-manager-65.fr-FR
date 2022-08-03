@@ -86,7 +86,7 @@ ht-degree: 75%
    + [Tester votre IU](hobbes.md)
    + [Composants pour les fragments de contenu](components-content-fragments.md)
    + [Obtention d’informations sur la page au format JSON](pageinfo.md)
-   + Internationalisation  {#internationalization}
+   + Internationalisation{#internationalization}
       + [Internationalisation de composants](i18n.md)
       + [Internationalisation des chaînes d’interface utilisateur](i18n-dev.md)
       + [Utilisation du traducteur pour gérer les dictionnaires](i18n-translator.md)
