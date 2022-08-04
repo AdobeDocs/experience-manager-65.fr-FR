@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 0f1724cbb7ef4fec366fb8b63511a981b47b5429
+source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
 workflow-type: tm+mt
-source-wordcount: '4322'
-ht-degree: 96%
+source-wordcount: '4529'
+ht-degree: 92%
 
 ---
 
@@ -95,6 +95,19 @@ Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/f
    * Intégrez les interactivités personnalisées en créant des widgets ou des apparences personnalisés. Il n’est pas recommandé de modifier les composants par défaut. Pour plus d’informations, reportez-vous à la section [Aspect des structures](/help/forms/using/introduction-widgets.md).
 
 * Pour connaître les recommandations relatives à la gestion des données d’identification personnelle, reportez-vous à la section [Gestion des informations d’identification personnelle.](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p)
+
+### Création de modèles de formulaire
+
+Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaire activés dans **Explorateur de configuration**. Pour activer les modèles de formulaire, reportez-vous à la section [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+
+Les modèles de formulaire peuvent également être chargés à partir des modules de formulaire adaptatif créés sur un autre ordinateur de création. Les modèles de formulaire sont disponibles lors de l’installation [packages aemforms-reference-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Voici quelques-unes des bonnes pratiques recommandées :
+* Le **nosamplecontent** runmode est recommandé uniquement pour les noeuds author et non pour les noeuds publish.
+* La création de ressources telles que les formulaires adaptatifs, les thèmes, les modèles ou les configurations cloud s’effectue uniquement sur les noeuds d’auteur, qui peuvent être publiés sur les noeuds de publication configurés.
+Pour plus d’informations, voir [Publication et annulation de la publication de formulaires et documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
+* Le module complémentaire Forms est nécessaire pour la création ainsi que pour la publication afin de prendre en charge les opérations de service de document ; par conséquent, il peut être considéré comme une dépendance.
+Si vous souhaitez uniquement des exemples de modules de modèle, de thèmes et de document d’enregistrement liés à Forms, vous pouvez les télécharger à partir de [packages aemforms-reference-*](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+
+Pour plus d’informations, voir les bonnes pratiques de la section [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
 ## Création de formulaires adaptatifs {#author-adaptive-forms}
 
@@ -309,3 +322,5 @@ Le traitement des données d’identification personnelle (PII) représente l’
 
 * Utilisez un stockage sécurisé et externe, comme une base de données, pour le stockage des données de brouillons et de formulaires envoyés. Voir [Configuration du stockage pour les données de brouillons et de formulaires envoyés](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Utilisez le composant de formulaire relatif aux termes et conditions pour demander le consentement explicite de l’utilisateur avant l’enregistrement automatique. Dans ce cas, activez l’enregistrement automatique uniquement lorsque l’utilisateur accepte les conditions énoncées.
+
+
