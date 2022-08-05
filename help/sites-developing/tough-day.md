@@ -4,7 +4,7 @@ description: Le test Tough Day simule la charge quotidienne d’environ 1 000 a
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: ca6d41740dbb24dbba7cf7691c51435cc40d3ead
+source-git-commit: 1b92b973209fdbd2509b1c644c1064a1e9224a9e
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 51%
@@ -15,7 +15,7 @@ ht-degree: 51%
 
 ## Qu’est-ce que Tough Day 2 ? {#what-is-tough-day}
 
-« Tough Day 2 » est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. [Cet enregistrement](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-toughday2-stress-testing-benchmarking-tool.html) est une présentation de l’application.
+« Tough Day 2 » est une application qui vous permet de tester les limites de votre instance AEM. Prête à l’emploi, elle peut être exécutée avec la suite de tests par défaut ou configurée pour répondre à vos impératifs de test. [Cet enregistrement](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) est une présentation de l’application.
 
 >[!CAUTION]
 >
@@ -347,7 +347,7 @@ Tough Day 2 génère à la fois des métriques de test et des journaux. Pour pl
 
 Tough Day 2 fait actuellement état de 9 métriques de test que vous pouvez évaluer. Mesures avec la variable **&#42;** Les symboles ne sont signalés qu’après des exécutions réussies :
 
-| **Nom**. | **Description** |
+| **Nom** | **Description** |
 |---|---|
 | Timestamp | Horodatage de la dernière exécution de test terminée. |
 | Transmis | Nombre d’exécutions réussies. |
