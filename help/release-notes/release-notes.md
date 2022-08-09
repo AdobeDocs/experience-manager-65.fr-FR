@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 9f957175573eeb2b40d79a5087dc3034c56819cc
+source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
 workflow-type: tm+mt
-source-wordcount: '3742'
+source-wordcount: '3653'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | Version | 6.5.13.0 |
 | Type | Version du Service Pack |
-| Date | 26 mai 2022 |
+| Date  | 26 mai 2022 |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.13.0.zip) |
 
 ## Éléments compris dans [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
@@ -27,7 +27,7 @@ ht-degree: 7%
 
 Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experience Manager] 6.5.13.0 sont :
 
-* Utiliser CAPTCHA invisible dans un formulaire adaptatif : Vous pouvez désormais utiliser un CAPTCHA invisible pour montrer le défi CAPTCHA uniquement en cas d&#39;activité suspecte. Si aucune activité suspecte n&#39;est trouvée, le défi CAPTCHA ne s&#39;affiche pas. Il permet d’évaluer l’achèvement du formulaire humain sans conditions de case à cocher, de réduire les efforts de personnalisation et d’améliorer l’expérience de l’utilisateur final. (NPR-38500)
+* Utiliser CAPTCHA invisible dans un formulaire adaptatif : Vous pouvez désormais utiliser un CAPTCHA invisible pour montrer le défi CAPTCHA uniquement en cas d&#39;activité suspecte. Si aucune activité suspecte n&#39;est trouvée, le défi CAPTCHA ne s&#39;affiche pas. Il permet d’évaluer le remplissage du formulaire par un humain sans exiger de case à cocher, de réduire les efforts de personnalisation et d’améliorer l’expérience de l’utilisateur final. (NPR-38500)
 
 * Ajout de la prise en charge de la récupération des en-têtes de réponse dans le post-processeur du modèle de données de formulaire pour les points de terminaison REST. (NPR-38275)
 
@@ -39,7 +39,12 @@ Les fonctionnalités et améliorations clés introduites dans [!DNL Adobe Experi
 
    * Ajout de la prise en charge pour les lecteurs d’écran de reconnaître l’en-tête et le corps d’un tableau comme des entités continues et connectées. Cela permet aux lecteurs d’écran de naviguer correctement dans les tableaux. (NPR-37139)
    * Ajout de la prise en charge des lecteurs d’écran pour arrêter la navigation dans l’espace de travail de HTML jusqu’à l’ouverture d’une boîte de dialogue. (NPR-37134)
-   * Possibilité de spécifier du texte de Reader d’écran pour les hyperliens dans Forms Designer.(NPR-36221)
+
+   <!-- 
+
+    * Added ability to specify Screen Reader Text for Hyperlinks in Forms Designer.(NPR-36221)
+  
+  -->
 
 Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont été introduits dans [!DNL Experience Manager] 6.5.13.0 :
 
@@ -123,11 +128,19 @@ Les correctifs de bogues, fonctionnalités clés et améliorations suivants ont 
 * Lorsqu’un utilisateur ajoute des balises de HTML à la section de commentaire lors de l’exécution d’un workflow, les balises de HTML sont rendues. (NPR-37591)
 * Lors de l’importation et de la publication d’une lettre contenant un nouveau fichier XDP, les lettres ne parviennent pas à être prévisualisées sur l’instance de publication. Toutefois, si les lettres sont importées et publiées une seconde fois à l’aide du même fichier de CMP, les lettres sont prévisualisées avec succès. (CQ-4343599)
 * Le rendu d’un formulaire avec le jeu de propriétés de processus de données Préparer échoue dans HTML Workspace. (CQ-4343294)
-* Pour les PDF forms statiques créés avec Forms 6.5 Designer, l’accessibilité du PDF échoue en cas d’erreur. `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
+<!--
+For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility fails with error `Tab order entry in page with annotations not set to "S"`. (CQ-4343117) 
+ -->
 * Impossible de convertir une image en PDF à l’aide du service PDFG avec OCR, après avoir appliqué le correctif AEMForms-6.5.0-0038 (log4jv2.16). (CQ-4342450)
-* Une valeur incorrecte s’affiche pour le code à barres SSCC-18. Les serveurs Forms omettent la valeur dans la partie droite du code à barres. (CQ-4342400)
+
+<!-- 
+* Incorrect value is displayed for barcode SSCC-18. Forms servers omit the value on the right part of the barcode. (CQ-4342400)
+-->
 * Impossible d’importer un fichier Microsoft® Word dans Forms Designer. L’utilisateur rencontre une erreur `Word (version XP or onwards) could not be found on the machine`. (CQ-4342146)
-* Dans Forms 6.5 Designer, lorsque vous ouvrez un formulaire créé avec Forms 6.1 Designer et modifiez une zone de texte, l’espacement des paragraphes dépasse l’espace spécifié. Tous les paramètres précédents de l’espace sont supprimés et un reformatage manuel de la zone de texte est requis. (CQ-4341899)
+
+<!-- 
+* In Forms 6.5 Designer, when you open a form created with Forms 6.1 Designer and edit a textbox, paragraph spacing exceeds the specified space. All previous settings to the space are removed and manual reformatting of the text box is required. (CQ-4341899) 
+-->
 * L’utilisateur ne peut pas définir d’heure personnalisée dans le planificateur de purge de tâche. (CQ-4339192)
 * L’utilisateur ne peut pas mettre à jour une configuration sous l’interface utilisateur de gestion des points de fin et rencontrer une erreur ` Uncaught ReferenceError: updateEndpoint_required is not defined`. (CQ-4331523)
 * Pour les balises non valides, la gestion correcte du message d’erreur ne fonctionne pas comme prévu. (NPR-38106 et CQ-4337173)
