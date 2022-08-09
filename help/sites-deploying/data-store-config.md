@@ -6,16 +6,16 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 6257b56c61ae14889d9ecefed5030e123a415fd7
+source-git-commit: 4e68a8a8d84d0ffa1d28ab13c196731e58b4cf9a
 workflow-type: tm+mt
-source-wordcount: '3455'
+source-wordcount: '3447'
 ht-degree: 64%
 
 ---
 
 # Configuration des magasins de nœuds et des entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Dans Adobe Experience Manager (AEM), les données binaires peuvent être stockées indépendamment des nœuds de contenu. Les données binaires sont stockées dans un entrepôt de données alors que les nœuds de contenu sont stockés dans un magasin de nœuds.
 
@@ -207,8 +207,7 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
 Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
 * accessKey : Clé d’accès AWS.
-* secretKey : clé d’accès secrète AWS. **Remarque :** Vous pouvez également : [Rôles IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) peut être utilisé pour l’authentification. Si vous utilisez des rôles IAM, vous n’avez plus besoin de spécifier la variable `accessKey` et `secretKey`.
-
+* secretKey : clé d’accès secrète AWS. **Remarque :** Lorsque la variable `accessKey` ou `secretKey` n’est pas spécifié, alors la variable [Rôle IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) est utilisée pour l’authentification.
 * s3Bucket: Nom du compartiment.
 * s3Region : La région du seau.
 * path: Chemin d’accès de l’entrepôt de données. La valeur par défaut est **&lt;aem install=&quot;&quot; folder=&quot;&quot;>/repository/datastore**
