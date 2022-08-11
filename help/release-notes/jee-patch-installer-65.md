@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: c425caa9aadd8bae3c2863f24e73b5265ec0b358
+source-git-commit: 6c6ddaba0e42df4b4701670e8abfdabe5205879c
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 49%
+source-wordcount: '525'
+ht-degree: 33%
 
 ---
 
@@ -47,17 +47,23 @@ Accédez au répertoire approprié, puis, à l’invite de commande, saisissez
    Un assistant s’ouvre alors et vous guide tout au long de l’installation.
 
 1. Dans le panneau Introduction, cliquez sur **[!UICONTROL Suivant]**.
-1. Dans l’écran Choisir le répertoire d’installation, vérifiez que l’emplacement par défaut affiché correspond à votre installation ou cliquez sur **[!UICONTROL Parcourir]** pour sélectionner le dossier dans lequel AEM Forms est actuellement installé, puis cliquez sur **[!UICONTROL Suivant]**.
+1. Sur le **Choisir le dossier d’installation** vérifiez que l’emplacement par défaut affiché est correct pour votre installation existante, ou cliquez sur **[!UICONTROL Parcourir]** pour sélectionner l’autre dossier dans lequel AEM forms est installé, puis cliquez sur **[!UICONTROL Suivant]**.
 1. Lisez le résumé du correctif Quick Fix, puis cliquez sur **[!UICONTROL Suivant]**.
 1. Lisez le résumé relatif à la pré-installation, puis cliquez sur **[!UICONTROL Installer]**.
 1. Lorsque l’installation est terminée, cliquez sur **[!UICONTROL Suivant]** pour appliquer les mises à jour du Quick Fix à vos fichiers installés.
 
-1. **[Windows uniquement]** Effectuez les étapes suivantes :
+1. **[Pour Windows uniquement]:** Effectuez l’une des étapes suivantes :
+   * Désélectionnez l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Exécuter **Configuration Manager** en utilisant la variable **ConfigurationManager.bat** fichier situé dans `[aem-forms root]\configurationManager\bin`.
 
-   Désélectionnez l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant d’exécuter Configuration Manager à l’aide de **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez à `<AEMForms_Install_Dir>\configurationManager\bin` répertoire et remplacer [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) fichier .
-1. La case à cocher Démarrer Configuration Manager est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager.
+   * Désélectionnez l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant exécution **Configuration Manager** using **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez à *`<AEMForms_Install_Dir>\configurationManager\bin`* répertoire et remplacer [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) fichiers .
+   >[!NOTE]
+   >Utilisation **ConfigurationManager.bat** vous permet d’éviter de mettre à jour manuellement le nom des fichiers .lax.
 
-1. pour exécuter Configuration Manager ultérieurement, désélectionnez l’option Démarrer Configuration Manager avant de cliquer sur **[!UICONTROL Terminé]**. Vous pouvez démarrer Configuration Manager ultérieurement à l’aide du script approprié dans la variable `[AEM_forms_root]/configurationManager/bin` répertoire .
+1. **[Pour Unix uniquement]:** Effectuez l’une des étapes suivantes :
+
+   * Le **Démarrez Configuration Manager** est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager immédiatement.
+
+   * Pour exécuter **Configuration Manager** désélectionnez ensuite l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Vous pouvez commencer **Configuration Manager** par la suite, en utilisant le script approprié dans la variable `[AEM_forms_root]/configurationManager/bin` répertoire .
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 
