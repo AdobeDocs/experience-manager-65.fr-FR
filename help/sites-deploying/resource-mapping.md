@@ -1,8 +1,8 @@
 ---
 title: Mappage de ressource
-seo-title: Mappage de ressource
+seo-title: Resource Mapping
 description: Découvrez comment définir des redirections, des URL Vanity et les hôtes virtuels pour AEM à l’aide du mappage de ressource.
-seo-description: Découvrez comment définir des redirections, des URL Vanity et les hôtes virtuels pour AEM à l’aide du mappage de ressource.
+seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
 uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,25 +10,25 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
-feature: Configuration
+feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 66%
+source-wordcount: '519'
+ht-degree: 100%
 
 ---
 
-# Mappage de ressources{#resource-mapping}
+# Mappage de ressource{#resource-mapping}
 
 Le mappage de ressource permet de définir des redirections, des URL Vanity et des hôtes virtuels pour AEM.
 
 Par exemple, vous pouvez utiliser ces mappages pour :
 
-* Ajoutez un préfixe `/content` à toutes les requêtes afin que la structure interne soit masquée aux visiteurs de votre site web.
-* Définissez une redirection de sorte que toutes les requêtes sur la page `/content/en/gateway` de votre site web soient redirigées vers `https://gbiv.com/`.
+* faire précéder toutes les requêtes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
+* définir une redirection afin que toutes les requêtes en direction de la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
 
-Un mappage HTTP possible préfixe toutes les requêtes envoyées à `localhost:4503` avec `/content`. Un mappage de ce type peut être utilisé pour masquer la structure interne vis-à-vis des visiteurs du site web, car il rend :
+Un mappage HTTP possible consiste à préfixer toutes les demandes à `localhost:4503` avec le répertoire `/content`. Un mappage de ce type peut être utilisé pour masquer la structure interne vis-à-vis des visiteurs du site web, car il rend :
 
 `localhost:4503/content/we-retail/en/products.html`
 
@@ -50,11 +50,11 @@ car le mappage ajoutera automatiquement le préfixe `/content` à `/we-retail/en
 
 Les mappages forment deux listes que le résolveur de ressources JCR analyse (du haut vers le bas) pour trouver une correspondance.
 
-Ces listes peuvent être visualisées (avec les informations de configuration) sous l’option **JCR ResourceResolver** de la console Felix ; par exemple, `https://<*host*>:<*port*>/system/console/jcrresolver` :
+Ces listes peuvent être visualisées (ainsi que des informations de configuration) sous l’option **JCR ResourceResolver** de la console Felix ; par exemple, `https://<*host*>:<*port*>/system/console/jcrresolver` :
 
-* Configuration indique la configuration actuelle (telle que définie pour [le résolveur de ressource Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)). 
+* Configuration indique la configuration actuelle (telle que définie pour le [résolveur de ressource Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)). 
 
-* Test de configuration. Cela permet de saisir une URL ou un chemin d’accès vers la ressource. Cliquez sur **Résoudre** ou **Mapper** pour confirmer la façon dont le système transforme l’entrée.
+* Test de configuration. Cela permet de saisir une URL ou un chemin d’accès vers la ressource. Cliquez sur **Resolve (Résoudre)** ou **Map (Mapper)** pour confirmer la façon dont le système transforme l’entrée.
 
 * **Resolver Map Entries (Entrées de mappage du résolveur)** La liste des entrées utilisées par les méthodes ResourceResolver.resolve pour mapper les URL aux ressources. 
 
@@ -76,7 +76,7 @@ pour rediriger une requête :
 
 `https://localhost:4503/welcome` ``
 
-vers:
+vers :
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -84,7 +84,7 @@ De nouvelles définitions de mappage sont créées dans le référentiel.
 
 >[!NOTE]
 >
->De nombreuses ressources sont disponibles pour expliquer comment définir des expressions régulières. par exemple [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Il existe de nombreuses ressources disponibles qui permettent d’expliquer comment définir les expressions régulières ; par exemple, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Création des définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
 
@@ -92,11 +92,11 @@ Dans une installation d’AEM standard, vous pouvez trouver le dossier :
 
 `/etc/map/http`
 
-Il s’agit de la structure utilisée lors de la définition des mappages pour le protocole HTTP. D’autres dossiers ( `sling:Folder`) peuvent être créés sous `/etc/map` pour tout autre protocole que vous souhaitez mapper.
+Il s’agit de la structure utilisée lors de la définition des mappages pour le protocole HTTP. D’autres dossiers (`sling:Folder`) peuvent être créés sous `/etc/map` pour tout autre protocole que vous souhaitez mapper.
 
 #### Configuration d’une redirection interne vers /content {#configuring-an-internal-redirect-to-content}
 
-Pour créer le mappage qui préfixe toute requête vers https://localhost:4503/ avec `/content` :
+Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ avec `/content` :
 
 1. À l’aide de CRXDE, accédez à `/etc/map/http`.
 
@@ -116,16 +116,16 @@ Pour créer le mappage qui préfixe toute requête vers https://localhost:4503/ 
       * **Valeur** `localhost.4503/`
    * **Nom** `sling:internalRedirect`
 
-      * **Type** `String`
+      * **Type** `String[]`
 
       * **Valeur** `/content/`
 
 
 1. Cliquez sur **Enregistrer tout**.
 
-Cela permet de gérer une requête telle que :
+Cela permet de gérer une demande telle que :
 `localhost:4503/geometrixx/en/products.html`
-comme si :
+comme si :
 `localhost:4503/content/geometrixx/en/products.html`
 avait été demandé.
 
@@ -135,4 +135,4 @@ avait été demandé.
 
 >[!NOTE]
 >
->Vous pouvez utiliser `/etc/map.publish` pour contenir les configurations pour l’environnement de publication. Ils doivent ensuite être répliqués et le nouvel emplacement ( `/etc/map.publish`) configuré pour l’**emplacement de mappage** du [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) de l’environnement de publication.
+>Vous pouvez utiliser `/etc/map.publish` pour conserver les configurations dans l’environnement de publication. Elles doivent ensuite être dupliquées, et le nouvel emplacement (`/etc/map.publish`) configuré pour l’**emplacement du mappage** du [résolveur de ressource Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) de l’environnement de publication.
