@@ -1,8 +1,8 @@
 ---
 title: Administration des workflows
-seo-title: Administration des workflows
+seo-title: Administering Workflows
 description: Découvrez comment administrer les workflows dans AEM.
-seo-description: Découvrez comment administrer les workflows dans AEM.
+seo-description: Learn how to administer workflows in AEM.
 uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '779'
 ht-degree: 83%
 
 ---
@@ -41,9 +41,7 @@ Les workflows d’entreprise que votre organisation a établis peuvent être rep
 >* Application et participation aux workflows : [Utilisation des workflows](/help/sites-authoring/workflows.md).
 >* Création de modèles de workflows et extension de la fonctionnalité de workflow : [Développement et extension des workflows](/help/sites-developing/workflows.md).
 >* Amélioration des performances des workflows qui utilisent des ressources de serveur significatives : [Traitement de workflows simultanés](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
-
 >
-
 
 
 ## Modèles et instances de workflow {#workflow-models-and-instances}
@@ -59,7 +57,7 @@ Lorsqu’un modèle de workflow est démarré (exécuté), une instance de workf
 
 >[!CAUTION]
 >
->Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Développement de processus](/help/sites-developing/workflows.md#model) pour plus de détails.
+>Les étapes exécutées sont celles définies par le modèle de workflow *au moment où l’instance est générée*. Voir [Développement de workflows](/help/sites-developing/workflows.md#model) pour plus de détails.
 
 Les instances de workflow passent par le cycle de vie suivant :
 
@@ -89,28 +87,28 @@ Un utilisateur ou un service exécute les étapes de workflow, selon le type d�
 >
 >Si une erreur se produit, la mise en œuvre du service/de l’étape doit gérer le comportement pour un scénario d’erreur. Le moteur de workflow lui-même relance la tâche, puis consigne une erreur et arrête l’’instance.
 
-## Statut et actions de workflow  {#workflow-status-and-actions}
+## Statut et actions de workflow {#workflow-status-and-actions}
 
 Les workflows peuvent présenter l’un des statuts suivants :
 
 * **EN COURS** : l’instance de workflow est en cours d’exécution.
 * **TERMINÉ** : l’instance de workflow s’est terminée correctement.
 
-* **SUSPENDU** : Marque le workflow comme suspendu. Toutefois, reportez-vous à la remarque Attention ci-dessous sur un problème de connaissance avec cet état.
+* **SUSPENDU**: Marque le workflow comme suspendu. Toutefois, reportez-vous à la remarque Attention ci-dessous sur un problème de connaissance avec cet état.
 * **ABANDON** : l’instance de workflow a été arrêtée.
 * **PÉRIMÉ** : la progression de l’instance de workflow nécessite l’exécution d’une tâche en arrière-plan, mais la tâche est introuvable dans le système. Cette situation peut se produire lorsqu’une erreur survient pendant l’exécution du workflow.
 
 >[!NOTE]
 >
->Lorsque l’exécution d’une étape de processus génère des erreurs, l’étape apparaît dans la boîte de réception de l’administrateur et l’état du workflow est **EN COURS**.
+>Lorsque l’exécution d’une étape de processus génère des erreurs, l’étape s’affiche dans la boîte de réception de l’administrateur et l’état du workflow est **EN COURS**.
 
 En fonction du statut actuel, vous pouvez effectuer des actions sur les instances de workflows en cours d’exécution lorsque vous devez intervenir dans la progression normale d’une instance de workflow :
 
-* **Suspendre** : L’état Suspendu du workflow passe à Suspendu. Voir Attention ci-dessous :
+* **Suspendre**: L’état Suspendu du workflow passe à Suspendu. Voir Attention ci-dessous :
 
 >[!CAUTION]
 >
 >Le marquage de l’état d’un workflow sur &quot;Suspendre&quot; présente un problème connu. Dans cet état, il est possible d’agir sur les éléments de workflow suspendus dans une boîte de réception.
 
-* **Reprendre** : Redémarre un workflow suspendu au même endroit d’exécution que celui où il a été suspendu, avec la même configuration.
-* **Arrêter** : Met fin à l’exécution du workflow et définit l’état sur  **ABANDON**. Une instance de workflow abandonnée ne peut pas être redémarrée.
+* **Reprendre**: Redémarre un workflow suspendu au même endroit d’exécution que celui où il a été suspendu, avec la même configuration.
+* **Arrêter**: Met fin à l’exécution du workflow et définit l’état sur **ABORDÉ**. Une instance de workflow abandonnée ne peut pas être redémarrée.

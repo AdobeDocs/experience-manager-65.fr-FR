@@ -1,8 +1,8 @@
 ---
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
-seo-title: Prise en main du développement d’AEM Sites – Tutoriel WKND
+seo-title: Getting Started Developing AEM Sites - WKND Tutorial
 description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
-seo-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
+seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
 uuid: 12861ca8-b5b9-404e-9788-9d13aa7c5a68
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 88%
+source-wordcount: '265'
+ht-degree: 86%
 
 ---
 
@@ -46,4 +46,4 @@ Veuillez parcourir le tutoriel avant de vous plonger dans les concepts ci-dessus
 
 ## Étapes suivantes {#next-steps}
 
-Une fois que vous avez terminé le [tutoriel](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), envisagez de parcourir le document [AEM Concepts de base](/help/sites-developing/the-basics.md) afin de mieux comprendre certaines des technologies sous-jacentes et des paradigmes de développement d’AEM.
+Une fois que vous avez terminé la [tutoriel](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), envisagez de réviser le document. [Concepts de base d’AEM](/help/sites-developing/the-basics.md) pour mieux comprendre certaines des technologies sous-jacentes et des paradigmes de développement de l&#39;AEM.

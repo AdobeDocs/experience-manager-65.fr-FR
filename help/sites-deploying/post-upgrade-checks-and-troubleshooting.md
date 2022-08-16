@@ -1,8 +1,8 @@
 ---
 title: 'Vérifications et dépannage après une mise à niveau '
-seo-title: 'Vérifications et dépannage après une mise à niveau '
+seo-title: Post Upgrade Checks and Troubleshooting
 description: Découvrez comment résoudre les problèmes qui peuvent apparaître à la suite d’une mise à niveau.
-seo-description: Découvrez comment résoudre les problèmes qui peuvent apparaître à la suite d’une mise à niveau.
+seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
 uuid: 3f525f2c-8d25-4bb8-a57e-3adf667edde8
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,18 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
-feature: Mise à niveau
+feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1830'
+source-wordcount: '1813'
 ht-degree: 95%
 
 ---
 
 # Vérifications et dépannage après une mise à niveau {#post-upgrade-checks-and-troubleshooting}
 
-## Vérifications après une mise à niveau {#post-upgrade-checks}
+## Vérifications après une mise à niveau  {#post-upgrade-checks}
 
 Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), les activités suivantes doivent être exécutées pour finaliser la mise à niveau. Nous partons du principe qu’AEM a été démarré avec le jar 6.5 et que la base de code mis à niveau a été déployée.
 
@@ -73,15 +73,15 @@ Voici un exemple de rapport affichant un lot n’ayant pas été installé lors 
 
 Le fichier error.log doit être soigneusement passé en revue pendant et après le démarrage d’AEM à l’aide du jar de la version cible. Les avertissements ou les erreurs doivent être vérifiés. En général, il est conseillé de rechercher les problèmes au début du journal. Les erreurs qui surviennent par la suite dans le journal peuvent en réalité être des effets secondaires d’une cause principale signalée tôt au début du fichier. Si des erreurs et des avertissements s’affichent à plusieurs reprises, voir la section ci-dessous [Analyse des problèmes avec la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
-### Vérification des lots OSGi  {#verify-osgi-bundles}
+### Vérification des lots OSGi {#verify-osgi-bundles}
 
 Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots ne sont pas démarrés. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
 
-### Vérifiez la version Oak {#verify-oak-version}
+### Vérification de la version Oak {#verify-oak-version}
 
 Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers la version **1.10.2**. Pour vérifier la version Oak, accédez à la console OSGi et inspectez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
-### Inspectez le fichier PreUpgradeBackup {#inspect-preupgradebackup-folder}
+### Inspection du dossier PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
 Pendant la mise à niveau, AEM tentera de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous avez peut-être besoin d’[activer temporairement CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
@@ -89,11 +89,11 @@ Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStat
 
 Désactivez CRXDE Lite après cet exercice si vous êtes dans un environnement intermédiaire ou de production.
 
-### Validation initiale des pages  {#initial-validation-of-pages}
+### Validation initiale des pages {#initial-validation-of-pages}
 
 Effectuez une première validation de plusieurs pages dans AEM. Si vous mettez à niveau un environnement de création, ouvrez la page de démarrage et la page d’accueil ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Dans les environnements de création et de publication, ouvrez quelques pages d’application et testez-les pour vous assurer qu’elles fonctionnent correctement. En cas de problème, veuillez consulter le fichier `error.log` pour un dépannage.
 
-### Appliquez les modules de service AEM {#apply-aem-service-packs}
+### Application des modules de service AEM {#apply-aem-service-packs}
 
 Appliquez tout Service Pack AEM 6.5 qui a été publié, le cas échéant.
 
@@ -101,7 +101,7 @@ Appliquez tout Service Pack AEM 6.5 qui a été publié, le cas échéant.
 
 Plusieurs fonctions AEM requièrent des étapes supplémentaires après la mise à niveau. Une liste complète de ces fonctions et les étapes permettant de les migrer dans AEM 6.5 se trouve sur la page [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
 
-### Vérifiez les configurations de maintenance planifiée {#verify-scheduled-maintenance-configurations}
+### Vérification des configurations de maintenance planifiées {#verify-scheduled-maintenance-configurations}
 
 #### Activation du nettoyage de la mémoire d’entrepôt de données {#enable-data-store-garbage-collection}
 
@@ -111,23 +111,23 @@ Si vous utilisez un entrepôt de données de fichiers, assurez-vous que la tâch
 >
 >Cette méthode n’est pas recommandée pour les installations d’entrepôt des données personnalisées s3 ni lors de l’utilisation d’un entrepôt de données partagé.
 
-#### Activation du nettoyage des révisions en ligne  {#enable-online-revision-cleanup}
+#### Activation du nettoyage des révisions en ligne {#enable-online-revision-cleanup}
 
 Si vous utilisez MongoMK ou le nouveau format de segment TarMK, assurez-vous que la tâche de nettoyage des révisions est activée et ajoutée à la liste de maintenance quotidienne. Les instructions sont décrites [ici](/help/sites-deploying/revision-cleanup.md).
 
-### Exécution du plan de test  {#execute-test-plan}
+### Exécution du plan de test {#execute-test-plan}
 
 Exécutez le plan de test détaillé tel que défini dans [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) dans la section **Procédure de test**.
 
-### Activation des agents de réplication  {#enable-replication-agents}
+### Activation des agents de réplication {#enable-replication-agents}
 
 Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents peuvent se connecter aux instances de publication respectives. Voir [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus de détails sur l’ordre des événements. 
 
-### Activez les tâches planifiées personnalisées {#enable-custom-scheduled-jobs}
+### Activation des tâches planifiées personnalisées {#enable-custom-scheduled-jobs}
 
 Toutes les tâches planifiées dans le cadre de la base de code peuvent être activées.
 
-## Analyse des problèmes de la mise à niveau  {#analyzing-issues-with-upgrade}
+## Analyse des problèmes de la mise à niveau {#analyzing-issues-with-upgrade}
 
 Cette section comporte des scénarios de problèmes que l’on peut rencontrer au cours d’une procédure de mise à niveau vers AEM 6.3.
 
@@ -139,15 +139,15 @@ La migration des données de CRX2 à Oak doit être réalisable en toutes situat
 
 Si la migration est toujours en échec, vous pouvez déterminer la cause première en consultant le fichier `upgrade.log`. Si le problème n’est pas encore connu, signalez-le au service clientèle.
 
-### Échec de l’exécution de la mise à niveau  {#the-upgrade-did-not-run}
+### Échec de l’exécution de la mise à niveau {#the-upgrade-did-not-run}
 
 Avant de lancer les étapes de préparation, assurez-vous d’abord de lancer l’instance **source** en l’exécutant avec la commande Java aem-quickstart.jar. Cela est nécessaire pour vous assurer que le fichier quickstart.properties est généré correctement. Autrement, la mise à niveau ne peut pas fonctionner. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, le démarrage d’AEM pour lancer la mise à niveau doit être exécuté avec la commande Java -jar aem-quickstart.jar. Le lancement à partir d’un script de démarrage ne permettra pas de démarrer AEM en mode de mise à niveau.
 
-### Échec de la mise à jour des modules et des lots   {#packages-and-bundles-fail-to-update-}
+### Échec de la mise à jour des modules et des lots  {#packages-and-bundles-fail-to-update-}
 
 Si l’installation des modules échoue au cours de la mise à niveau, les lots qu’ils contiennent ne sont également pas mis à jour. Ce type d’erreur provient généralement d’une mauvaise configuration du magasin de données. Il apparaît sous la forme de messages nommés **ERROR** et **WARN** dans le journal error.log. Comme, dans la plupart des cas, la connexion par défaut ne fonctionne pas, vous pouvez utiliser CRXDE directement afin d’inspecter et de rechercher les problèmes de configuration.
 
-### Certains lots AEM ne passent pas à l’état actif  {#some-aem-bundles-are-not-switching-to-the-active-state}
+### Certains lots AEM ne passent pas à l’état actif {#some-aem-bundles-are-not-switching-to-the-active-state}
 
 En présence de lots qui ne démarrent pas, vous devez rechercher des dépendances non respectées.
 
@@ -163,7 +163,7 @@ L’API qui a été supprimée doit être marquée comme obsolète dans l’une 
 
 Il est également recommandé de vérifier si la modification qui a causé le problème était absolument nécessaire et l’annuler si ce n’est pas le cas. Vérifiez également si l’augmentation de version de l’exportation du module a été plus importante que nécessaire, en suivant une création de versions sémantique.
 
-### Dysfonctionnement de l’interface utilisateur de la plate-forme  {#malfunctioning-platform-ui}
+### Dysfonctionnement de l’interface utilisateur de la plate-forme {#malfunctioning-platform-ui}
 
 Lorsque certaines fonctionnalités de l’interface utilisateur ne fonctionnent pas correctement après la mise à niveau, vous devez tout d’abord vérifier les recouvrements personnalisés de l’interface. Certaines structures peuvent avoir changé et le recouvrement peut nécessiter une mise à jour ou est obsolète.
 
@@ -171,17 +171,17 @@ Ensuite, recherchez les erreurs Javascript qui peuvent être attribuées à des 
 
 Enfin, recherchez une configuration incorrecte que Javascript n’arrive pas à gérer. C’est généralement le cas avec des extensions incorrectement désactivées.
 
-### Dysfonctionnement de composants, modèles ou extensions de l’interface utilisateur personnalisée  {#malfunctioning-custom-components-templates-or-ui-extensions}
+### Dysfonctionnement de composants, modèles ou extensions de l’interface utilisateur personnalisée {#malfunctioning-custom-components-templates-or-ui-extensions}
 
 Dans la plupart des cas, les causes premières de ces problèmes sont les mêmes que pour les lots qui ne sont pas démarrés ou les modules non installés avec pour seule différence que les problèmes commencent à se produire lors de la première utilisation des composants.
 
-La manière de gérer le code personnalisé erroné consiste à réaliser en premier lieu un test de détection de fumée afin d’identifier la cause. Une fois que vous l’avez trouvé, consultez les recommandations de cette section [link] de l’article pour savoir comment les corriger.
+La manière de gérer le code personnalisé erroné consiste à réaliser en premier lieu un test de détection de fumée afin d’identifier la cause. Une fois que vous l’avez trouvée, consultez les recommandations de la section [link] de l’article pour savoir comment les corriger.
 
 ### Personnalisations manquantes sous /etc {#missing-customizations-under-etc}
 
-`/apps` et  `/libs` sont bien gérés par la mise à niveau, mais les modifications sous  `/etc` peuvent devoir être restaurées manuellement  `/var/upgrade/PreUpgradeBackup` après la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
+`/apps` et `/libs` sont bien gérés par la mise à niveau, mais les modifications sous `/etc` peut nécessiter une restauration manuelle à partir de `/var/upgrade/PreUpgradeBackup` après la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
 
-### Analyse des journaux error.log et upgrade.log  {#analyzing-the-error.log-and-upgrade.log}
+### Analyse des journaux error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 Dans la plupart des cas, les journaux doivent être consultés à la recherche d’erreurs afin de trouver la cause d’un problème. Néanmoins, dans le cas d’une mise à niveau, il est également requis de surveiller les problèmes de dépendance car des lots anciens n’ont peut-être pas été mis à niveau correctement.
 
@@ -201,6 +201,6 @@ ou
 
 Dans quelques rares cas, vous rencontrez des messages WARN accompagnant l’erreur. En effet, l’erreur peut provenir d’un problème réel et l’application n’est pas toujours en mesure de déterminer s’il s’agit d’une véritable erreur. Assurez-vous de consulter également ces messages.
 
-### Contacter le support technique d’Adobe  {#contacting-adobe-support}
+### Contacter le support technique d’Adobe {#contacting-adobe-support}
 
 Si vous avez consulté les recommandations de cette page, mais continuez toujours à avoir des problèmes, veuillez vous adresser au support technique d’Adobe. Pour fournir le plus d’information possible au technicien d’assistance qui s’occupe de votre cas, veillez à inclure le fichier upgrade.log de votre mise à niveau.

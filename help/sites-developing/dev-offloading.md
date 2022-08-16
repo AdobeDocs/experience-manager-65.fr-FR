@@ -1,8 +1,8 @@
 ---
 title: Création et utilisation de tâches pour le déchargement
-seo-title: Création et utilisation de tâches pour le déchargement
+seo-title: Creating and Consuming Jobs for Offloading
 description: La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
-seo-description: La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
+seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
 uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 86%
+source-wordcount: '392'
+ht-degree: 85%
 
 ---
 
@@ -37,13 +37,13 @@ Utilisez l’énumération `OffloadingJobProperties` pour faire référence aux 
 
 Une charge utile n’est pas obligatoire pour les tâches. Elle est toutefois nécessaire si la tâche requiert la manipulation d’une ressource et si l’ordinateur sur lequel elle est déchargée n’a pas servi à la créer.
 
-## Création de tâches pour le déchargement  {#creating-jobs-for-offloading}
+## Création de tâches pour le déchargement {#creating-jobs-for-offloading}
 
 Créez un client qui appelle la méthode JobManager.addJob afin de créer une tâche exécutée par un service JobConsumer sélectionné automatiquement. Indiquez les informations suivantes pour créer la tâche :
 
 * Rubrique : rubrique de tâche.
 * Nom : (Facultatif).
-* Carte des propriétés : Objet `Map<String, Object>` contenant un nombre indéfini de propriétés, telles que les chemins de charge utile d’entrée et les chemins de charge utile de sortie. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
+* Carte des propriétés : A `Map<String, Object>` qui contient un nombre indéfini de propriétés, telles que les chemins de charge utile d’entrée et les chemins de charge utile de sortie. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
 
 L’exemple de service suivant crée une tâche pour un chemin de charge utile en entrée et de rubrique donné.
 
@@ -93,7 +93,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est appelé pour la rubrique `com/adobe/example/offloading` et la charge utile `/content/geometrixx/de/services` :
+Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est appelé pour la fonction `com/adobe/example/offloading` et la rubrique `/content/geometrixx/de/services` payload :
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -103,7 +103,7 @@ Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est ap
 
 Pour exécuter des tâches, développez un service OSGi qui met en œuvre l’interface `org.apache.sling.event.jobs.consumer.JobConsumer`. Effectuez l’identification avec la rubrique à consommer à l’aide de la propriété `JobConsumer.PROPERTY_TOPICS`.
 
-L’exemple suivant d’implémentation de JobConsumer est enregistré avec la rubrique `com/adobe/example/offloading`. Le consommateur définit simplement la propriété Consumed du nœud de contenu de charge utile sur True.
+L’exemple suivant d’implémentation de JobConsumer est enregistré avec la variable `com/adobe/example/offloading` rubrique. Le consommateur définit simplement la propriété Consumed du nœud de contenu de charge utile sur True.
 
 ```java
 package com.adobe.example.offloading;

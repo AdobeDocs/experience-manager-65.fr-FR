@@ -1,8 +1,8 @@
 ---
 title: Fontionnalités Configuration de l’activation
-seo-title: Fontionnalités Configuration de l’activation
+seo-title: Configuring Enablement Features
 description: Configuration des fonctionnalités d’activation dans Communities
-seo-description: Configuration des fonctionnalités d’activation dans Communities
+seo-description: Configure enablement features in Communities
 uuid: 27be3128-1a7d-412e-99a9-6e3b3b0aec1c
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: b635e2ed-4637-4b2f-a746-ec8dc7541bab
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 4%
+source-wordcount: '439'
+ht-degree: 5%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 ## Présentation {#overview}
 
-Les fonctionnalités d’activation permettent de créer des [communautés d’activation](overview.md#enablement-community).
+Les fonctions d’activation permettent de créer des [communautés d’activation](overview.md#enablement-community).
 
 * Cette fonctionnalité nécessite des licences supplémentaires pour être utilisée dans un environnement de production.
 
@@ -40,13 +40,13 @@ Installation de :
 
 * **FFmpeg**
 
-   FFmpeg est une solution pour la conversion et la diffusion en continu d’audio et de vidéo. Lorsqu’elle est installée, elle est utilisée pour le transcodage correct des [ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video). Pour les communautés d’activation, elle est utilisée dans l’environnement de création pour obtenir des métadonnées pour les ressources chargées et générer une miniature à afficher lors de la mise en liste de la ressource.
+   FFmpeg est une solution pour la conversion et la diffusion en continu d’audio et de vidéo. Lorsqu’elle est installée, elle est utilisée pour le transcodage correct de [Ressources vidéo](../../help/sites-authoring/default-components-foundation.md#video). Pour les communautés d’activation, elle est utilisée dans l’environnement de création pour obtenir des métadonnées pour les ressources chargées et générer une miniature à afficher lors de la mise en liste de la ressource.
 
 Configuration de :
 
 * **Gestionnaires de la communauté**
 
-   Pour les communautés d’activation, seuls les membres du groupe d’utilisateurs `Community Enablement Managers` peuvent se voir attribuer le rôle `Community Site Enablement Manager`, dont les autorisations peuvent inclure la création de contenu, les affectations et la gestion des membres dans l’environnement de publication.
+   Pour les communautés d’activation, seuls les membres de `Community Enablement Managers` un groupe d’utilisateurs peut se voir attribuer le rôle de `Community Site Enablement Manager`, dont les autorisations peuvent inclure la création de contenu, les affectations et la gestion des membres dans l’environnement de publication.
 
 Configuration facultative de :
 
@@ -68,7 +68,7 @@ Chaque étape renvoie à la documentation qui fournit les détails nécessaires.
 
    Utiliser la console web (lots) : *http://localhost:4502/system/console/bundles*
 
-   Installez *avant* d’installer le package SCORM.
+   Installer *before* installation du package SCORM
 
 1. **[Installer le package SCORM](deploy-communities.md#scorm-package)**
 
@@ -105,7 +105,7 @@ Chaque étape renvoie à la documentation qui fournit les détails nécessaires.
 
 **Sur l’instance d’auteur :**
 
-1. (*Facultatif*) **[Configurer le service Analytics](analytics.md)**
+1. (*Facultatif*) **[Configuration du service Analytics](analytics.md)**
 
    Utilisez la console Outils, Déploiement, Cloud Services : *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
@@ -130,4 +130,4 @@ Chaque étape renvoie à la documentation qui fournit les détails nécessaires.
 
 ## Dispatcher {#dispatcher}
 
-Lorsque le déploiement comprend [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html), pour que les fonctionnalités d’activation fonctionnent correctement, les sections `clientheader` et `filter` doivent être modifiées. Voir [Configuration de Dispatcher pour Communities](dispatcher.md#enablement).
+Lorsque le déploiement inclut [AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html), pour que les fonctions d’activation fonctionnent correctement, la variable `clientheader` et `filter` Les sections doivent être modifiées. Voir [Configuration de Dispatcher pour Communities](dispatcher.md#enablement).

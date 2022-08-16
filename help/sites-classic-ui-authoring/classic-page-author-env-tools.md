@@ -1,8 +1,8 @@
 ---
-title: Création – Environnement et outils
-seo-title: Création – Environnement et outils
+title: Création – Environnement et outils
+seo-title: Authoring - the Environment and Tools
 description: La console Sites web vous permet de parcourir et de gérer votre site web. Les deux volets permettent de développer la structure de votre site web et d’effectuer des actions sur les éléments souhaités.
-seo-description: La console Sites web vous permet de parcourir et de gérer votre site web. Les deux volets permettent de développer la structure de votre site web et d’effectuer des actions sur les éléments souhaités.
+seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
 uuid: 0a9ce725-042a-4697-81fe-ac86cbab0398
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '899'
 ht-degree: 90%
 
 ---
 
 # Création – Environnement et outils {#authoring-the-environment-and-tools}
 
-L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
+L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils fournis sont accessibles dans plusieurs consoles et éditeurs de page.
 
 ## Administration du site {#site-administration}
 
@@ -36,7 +36,7 @@ L’IU classique comporte un éditeur de page distinct, qui utilise l’outil de
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Accès à l’Aide    {#accessing-help}
+## Accès à l’Aide   {#accessing-help}
 
 Plusieurs ressources d’**Aide** sont accessibles directement depuis AEM :
 
@@ -151,7 +151,7 @@ Vous pouvez utiliser un nombre indéfini de caractères génériques dans une re
 
 >[!NOTE]
 >
->Vous pouvez également utiliser la recherche [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
+>Vous pouvez également utiliser [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) rechercher.
 
 ## Affichage de références {#showing-references}
 
@@ -163,7 +163,7 @@ Pour afficher les références de page directes :
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins d’accès.
+1. Sélectionner **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins d’accès.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +184,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 ## Informations sur la page {#page-information}
 
-La console Sites Web [fournit également des informations sur l’état actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), telles que la publication, la modification, le verrouillage, la Live Copy, etc.
+La console Sites Web [fournit des informations sur l’état actuel de la page.](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) telles que publication, modification, verrouillé, live copy, etc.
 
 ## Modes de page {#page-modes}
 
@@ -208,9 +208,9 @@ Dans ce mode, vous avez la possibilité de modifier la conception de la page en 
 >D’autres options sont également disponibles :
 >
 >* [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
-* [Contexte client](/help/sites-administering/client-context.md)
-* Sites web : ouvre la console Sites web .
-* Recharger - Actualise la page.
+>* [Contexte client](/help/sites-administering/client-context.md)
+>* Sites web - Ouvre la console Sites web.
+>* Recharger - Actualise la page.
 
 
 ## Raccourcis clavier {#keyboard-shortcuts}

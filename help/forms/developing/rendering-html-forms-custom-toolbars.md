@@ -13,7 +13,7 @@ discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2345'
 ht-degree: 100%
 
@@ -225,7 +225,7 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
 1. Référencer un fichier XML fscmenu personnalisé
 
    * Créez un objet `HTMLRenderSpec` en utilisant son constructeur.
-   * Pour effectuer le rendu d’un formulaire HTML avec une barre d’outils, appelez la méthode `setHTMLToolbar` de l’objet `HTMLRenderSpec` et transmettez une valeur d’énumération `HTMLToolbar`. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
+   * Pour générer un formulaire HTML avec une barre d’outils, appelez la méthode `setHTMLToolbar` de l’objet `HTMLRenderSpec` et transmettez une valeur d’énumération `HTMLToolbar`. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
    * Indiquez l’emplacement du fichier XML fscmenu en appelant la méthode `setToolbarURI` de l’objet `HTMLRenderSpec` et en transmettant une valeur de chaîne qui spécifie l’emplacement URI du fichier XML.
    * Le cas échéant, définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `HTMLRenderSpec` et en transmettant une valeur de chaîne qui spécifie la valeur des paramètres régionaux. La valeur par défaut est l’anglais.
 
@@ -237,9 +237,9 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
 
    Appelez la méthode `renderHTMLForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous faites référence à une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Une valeur d’énumération `TransformTo` qui spécifie le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Un objet `com.adobe.idp.Document` qui contient des données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner de données, transmettez un objet `com.adobe.idp.Document` vide.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * L’objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Un objet `URLSpec` qui stocke les valeurs URI nécessaires pour effectuer le rendu d’un formulaire HTML.
@@ -250,12 +250,12 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
    * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Obtenez le type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données du formulaire dans le navigateur web du client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et renseignez-le avec le flux de données du formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -281,20 +281,20 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
 1. Référencer un fichier XML fscmenu personnalisé
 
    * Créez un objet `HTMLRenderSpec` en utilisant son constructeur.
-   * Pour effectuer le rendu d’un formulaire HTML avec une barre d’outils, appelez la méthode `setHTMLToolbar` de l’objet `HTMLRenderSpec` et transmettez une valeur d’énumération `HTMLToolbar`. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
+   * Pour générer un formulaire HTML avec une barre d’outils, appelez la méthode `setHTMLToolbar` de l’objet `HTMLRenderSpec` et transmettez une valeur d’énumération `HTMLToolbar`. Par exemple, pour afficher une barre d’outils HTML verticale, transmettez `HTMLToolbar.Vertical`.
    * Indiquez l’emplacement du fichier XML fscmenu en appelant la méthode `setToolbarURI` de l’objet `HTMLRenderSpec` et en transmettant une valeur de chaîne qui spécifie l’emplacement URI du fichier XML.
    * Le cas échéant, définissez la valeur des paramètres régionaux en appelant la méthode `setLocale` de l’objet `HTMLRenderSpec` et en transmettant une valeur de chaîne qui spécifie la valeur des paramètres régionaux. La valeur par défaut est l’anglais.
 
    >[!NOTE]
    >
-   >Les démarrages rapides consacrés à cette section définissent cette valeur sur `fr_FR`*.*
+   >Les démarrages rapides se rapportant à cette section définissent cette valeur sur `fr_FR`*.*
 
 1. Effectuer le rendu d’un formulaire HTML
 
    Appelez la méthode `renderHTMLForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous faites référence à une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Une valeur d’énumération `TransformTo` qui spécifie le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
    * Un objet `BLOB` qui contient les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez `null`.
    * Lʼobjet `HTMLRenderSpec` qui stocke les options d’exécution du formulaire HTML.
    * Une valeur de chaîne qui spécifie la valeur de lʼen-tête `HTTP_USER_AGENT`, comme `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
@@ -307,17 +307,17 @@ Effectuez le rendu d’un formulaire HTML contenant une barre d’outils personn
    * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `renderHTMLForm`. Cet argument stocke la valeur de rendu HTML utilisée.
    * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
 
-   La méthode `renderHTMLForm` renseigne lʼobjet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis comme dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web du client.
+   La méthode `renderHTMLForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de lʼobjet `com.adobe.idp.services.holders.FormsResultHolder`.
-   * Créez un objet `BLOB` qui contient des données de formulaire en appelant la méthode `getOutputContent` de lʼobjet `FormsResult`.
-   * Obtenez le type de contenu de lʼobjet `BLOB` en appelant sa méthode `getContentType`.
-   * Définissez le type de contenu de lʼobjet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de lʼobjet `BLOB`.
+   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
    * Créez un objet `javax.servlet.ServletOutputStream`, utilisé pour enregistrer le flux de données de formulaire dans le navigateur web du client, en appelant la méthode `getOutputStream` de lʼobjet `javax.servlet.http.HttpServletResponse`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche assigne le contenu de lʼobjet `FormsResult` au tableau dʼoctets.
-   * Appelez la méthode `write` de lʼobjet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

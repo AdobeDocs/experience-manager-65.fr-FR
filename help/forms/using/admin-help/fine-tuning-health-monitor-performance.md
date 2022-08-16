@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '407'
 ht-degree: 100%
 
 ---
 
-# Réglage précis des performances d’Health Monitor{#fine-tuning-health-monitor-performance}
+# Réglage précis des performances de Health Monitor{#fine-tuning-health-monitor-performance}
 
 La collecte des statistiques système qui remplissent Health Monitor a une incidence sur les performances de votre environnement AEM forms. Vous pouvez contrôler cette incidence en définissant les options Java répertoriées ci-dessous dans votre serveur d’applications.
 
@@ -74,9 +74,9 @@ La collecte des statistiques système qui remplissent Health Monitor a une incid
 1. Ouvrez la console d’administration WebLogic en saisissant https://[nom hôte]:&#39;port&#39;/console dans la ligne d’URL d’un navigateur web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
-1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
+1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, ajouter ‑ `Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ## Ajout d’options Java à WebSphere {#add-java-options-to-websphere}

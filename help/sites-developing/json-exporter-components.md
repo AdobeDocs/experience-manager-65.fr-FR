@@ -1,8 +1,8 @@
 ---
 title: Activation de l’exportateur JSON pour un composant
-seo-title: Activation de l’exportateur JSON pour un composant
+seo-title: Enabling JSON Export for a Component
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
-seo-description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
+seo-description: Components can be adapted to generate JSON export of their content based on a modeler framework.
 uuid: d7cc3347-2adb-4ea5-94a4-a847a2e66d28
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '540'
 ht-degree: 98%
 
 ---
@@ -30,7 +30,7 @@ Cela signifie que le composant doit avoir un modèle Sling pour effectuer une ex
 * [Définition d’un modèle Sling pour le composant](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Annotation de l’interface du modèle Sling](#annotate-the-sling-model-interface)
 
-## Définition d’un modèle Sling pour le composant  {#define-a-sling-model-for-the-component}
+## Définition d’un modèle Sling pour le composant {#define-a-sling-model-for-the-component}
 
 Il faut d’abord définir un modèle Sling pour le composant.
 

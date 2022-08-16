@@ -1,8 +1,8 @@
 ---
 title: Création de mappages de formulaires personnalisés
-seo-title: Création de mappages de formulaires personnalisés
+seo-title: Creating Custom Form Mappings
 description: Lorsque vous créez un tableau personnalisé dans Adobe Campaign, vous pouvez créer un formulaire dans AEM qui renvoie vers ce tableau.
-seo-description: Lorsque vous créez un tableau personnalisé dans Adobe Campaign, vous pouvez créer un formulaire dans AEM qui renvoie vers ce tableau.
+seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '530'
 ht-degree: 92%
 
 ---
@@ -23,7 +23,7 @@ Lorsque vous créez un tableau personnalisé dans Adobe Campaign, vous pouvez c
 
 Ce document vous explique comment créer des mappages de formulaire personnalisés. Dès que vous aurez accompli les étapes de ce document, vous proposerez à vos utilisateurs une page sur laquelle ils pourront s’inscrire pour un événement à venir. Vous suivrez ensuite ces utilisateurs via Adobe Campaign.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Les éléments suivants doivent être installés :
 
@@ -58,13 +58,13 @@ Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exe
 
 Après avoir créé le tableau d’événements, exécutez l’**Assistant Mise à jour de la structure de base de données** pour créer le tableau.
 
-### Extension du tableau Seed  {#extending-the-seed-table}
+### Extension du tableau Seed {#extending-the-seed-table}
 
 Dans Adobe Campaign, appuyez/cliquez sur **Ajouter** pour créer une extension du tableau **Seed addresses (nms)**.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Maintenant, utilisez les champs de la table **event** pour étendre la table **seed** :
+Maintenant, utilisez les champs de la **event** pour étendre le tableau **seed** table :
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -77,7 +77,7 @@ Maintenant, utilisez les champs de la table **event** pour étendre la table **s
 
 Ensuite, exécutez l’**Assistant Mise à jour de la base de données** pour appliquer les modifications.
 
-### Création d’un mappage cible personnalisé  {#creating-custom-target-mapping}
+### Création d’un mappage cible personnalisé {#creating-custom-target-mapping}
 
 Dans **Administration/Gestion de campagnes**, accédez à **Mappings de ciblage** et ajoutez un nouveau **Mapping de ciblage**.
 

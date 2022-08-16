@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3483'
 ht-degree: 100%
 
@@ -158,7 +158,7 @@ Les sections suivantes décrivent l’apparence des éléments du formulaire ada
    <td> </td>
   </tr>
   <tr>
-   <td>Conditions d’utilisation</td>
+   <td>Termes et conditions</td>
    <td> </td>
    <td>true</td>
    <td> </td>

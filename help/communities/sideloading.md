@@ -1,8 +1,8 @@
 ---
 title: Chargement partiel des composants
-seo-title: Chargement partiel des composants
+seo-title: Component Sideloading
 description: Le téléchargement local des composants de communauté est utile lorsqu’une page web est conçue comme une application simple d’une seule page qui modifie dynamiquement ce qui s’affiche en fonction de ce qui est sélectionné par le visiteur du site.
-seo-description: Le téléchargement local des composants de communauté est utile lorsqu’une page web est conçue comme une application simple d’une seule page qui modifie dynamiquement ce qui s’affiche en fonction de ce qui est sélectionné par le visiteur du site.
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,12 @@ discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 960e132c-b370-43d1-bd8f-e7d0ded7c0b3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
 
-# Chargement des composants {#component-sideloading}
+# Chargement partiel des composants {#component-sideloading}
 
 ## Présentation {#overview}
 
@@ -33,7 +33,7 @@ Les étapes d’ajout dynamique de composants SCF sont les suivantes :
 
 1. [Ajouter le composant au DOM](#dynamically-add-component-to-dom)
 
-1. [Téléchargez le ](#sideload-by-invoking-scf) composant de l’une des deux façons suivantes :
+1. [Chargement partiel du composant](#sideload-by-invoking-scf) en utilisant l’une des deux méthodes suivantes :
 
 * [Inclusion dynamique](#dynamic-inclusion)
    * Boostrap tous les composants dynamiquement ajoutés
@@ -42,9 +42,9 @@ Les étapes d’ajout dynamique de composants SCF sont les suivantes :
 
 >[!NOTE]
 >
->Le téléchargement de [ressources non existantes](scf.md#add-or-include-a-communities-component) n’est pas pris en charge.
+>Chargement partiel de [ressources non existantes](scf.md#add-or-include-a-communities-component) n’est pas prise en charge.
 
-## Ajouter dynamiquement le composant au DOM {#dynamically-add-component-to-dom}
+## Ajout dynamique de composant à DOM {#dynamically-add-component-to-dom}
 
 Que le composant soit inclus dynamiquement ou chargé dynamiquement, il doit d’abord être ajouté au DOM.
 
@@ -89,4 +89,4 @@ Au lieu d’amorcer tous les composants SCF du modèle DOM, il est possible de s
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-Où `someId` est la valeur de l’attribut `data-component-id`.
+Où `someId` est la valeur de la variable `data-component-id` attribut.

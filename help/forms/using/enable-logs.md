@@ -13,7 +13,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '626'
 ht-degree: 100%
 
@@ -195,7 +195,7 @@ Par défaut, toutes les informations sont ajoutées dans le fichier error.log du
 
 Pour modifier l’emplacement et le nom du fichier journal :
 
-1. Connectez-vous à Configuration Manager en tant qu’administrateur. L’URL de Configuration Manager définie par défaut est `https://'[server]:[port]'/system/console/configMgr`.
+1. Connectez-vous à  Configuration Manager en tant qu’administrateur. L’URL de Configuration Manager définie par défaut est `https://'[server]:[port]'/system/console/configMgr`.
 1. Cliquez sur **Configuration des journaux de journalisation Sling d’Apache**. Une boîte de dialogue s’affiche.
 
    ![logconfig-1](assets/logconfig-1.png)

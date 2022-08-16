@@ -1,8 +1,8 @@
 ---
-title: Content Insight
-seo-title: 'Content Insight '
+title: 'Content Insight '
+seo-title: Content Insight
 description: Content Insight fournit des informations sur les performances des pages à l’aide de l’analyse web et de la recommandation d’optimisation pour les moteurs de recherche.
-seo-description: Content Insight fournit des informations sur les performances des pages à l’aide de l’analyse web et de la recommandation d’optimisation pour les moteurs de recherche.
+seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 92%
+source-wordcount: '521'
+ht-degree: 95%
 
 ---
 
-# Content Insight {#content-insight}
+# Content Insight{#content-insight}
 
 Content Insight fournit des informations sur les performances des pages à l’aide de l’analyse web et des recommandations d’optimisation pour les moteurs de recherche. Utilisez Content Insight pour prendre des décisions sur la manière de modifier les pages ou pour savoir comment les modifications précédentes ont changé les performances. Pour chaque page que vous créez, vous pouvez ouvrir Content Insight afin d’analyser la page.
 
@@ -50,7 +50,7 @@ Voir [Modification de la période de création de rapports](/help/sites-authorin
 
 >[!NOTE]
 >
->Les rapports Content Insights nécessitent que votre administrateur ait intégré AEM à SiteCatalyst, Target et BrightEdge. Voir [Intégration à SightCatalyst](/help/sites-administering/adobeanalytics.md), [Intégration à Adobe Target](/help/sites-administering/target.md) et [Intégration à BrightEdge](/help/sites-administering/brightedge.md).
+>Les rapports Content Insights nécessitent que votre administrateur ait intégré AEM à SiteCatalyst, Target et BrightEdge. Voir [Intégration à SightCatalyst](/help/sites-administering/adobeanalytics.md), [Intégration à Adobe Target](/help/sites-administering/target.md), et [Intégration à BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Rapport Vues {#the-views-report}
 

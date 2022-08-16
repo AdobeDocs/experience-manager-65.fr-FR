@@ -1,19 +1,19 @@
 ---
 title: Identification du contenu à traduire
-seo-title: Identification du contenu à traduire
+seo-title: Identifying Content to Translate
 description: Apprenez à identifier le contenu à traduire.
-seo-description: Apprenez à identifier le contenu à traduire.
+seo-description: Learn how to identify content that needs translating.
 uuid: 81b9575c-1c7a-4955-b03f-3f26cbd4f956
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
-feature: Copie de la langue
+feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1150'
 ht-degree: 87%
 
 ---
@@ -39,7 +39,7 @@ Le fichier s’applique à tous les projets de traduction.
 Les règles comprennent les informations suivantes :
 
 * Le chemin d’accès au nœud auquel la règle s’applique. La règle s’applique également aux descendants du nœud.
-* Les noms des propriétés de nœud contenant le contenu à traduire : Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
+* Les noms des propriétés de nœud contenant le contenu à traduire. Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `foundation/components/text`.
 
@@ -163,7 +163,7 @@ Pour y accéder :
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-À partir de là, vous pouvez **Ajouter le contexte**. Ceci vous permet d’ajouter un chemin d’accès.
+À partir de là, vous pouvez **Ajouter un contexte**. Ceci vous permet d’ajouter un chemin d’accès.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -173,11 +173,11 @@ Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cet
 
 Il existe quatre attributs que vous pouvez modifier via l’interface utilisateur : `isDeep`, `inherit`, `translate` et `updateDestinationLanguage`.
 
-**** isDeepCet attribut s’applique aux filtres de noeud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
+**isDeep** Cet attribut s’applique aux filtres de noeud et est défini sur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
 
-Par exemple, les noeuds enfants sont ajoutés dans une tâche de traduction même si la propriété `draftOnly` du noeud parent est définie sur true pour marquer le contenu de brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
+Par exemple, les noeuds enfants sont ajoutés à une tâche de traduction même lorsque le noeud parent possède une propriété . `draftOnly` définissez cette variable sur true pour marquer le contenu du brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
-Dans l’éditeur, vous pouvez vérifier/décocher **Is Deep** dans l’onglet **Filtres** .
+Dans l’éditeur, vous pouvez vérifier/décocher **Is Deep** dans le **Filtres** .
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
@@ -189,19 +189,19 @@ Voici un exemple du fichier xml obtenu lorsque l’option **isDeep** n’est pas
 </filter>
 ```
 
-**** inheritCeci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement sur ce nœud spécifique.
+**inherit** Cela s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement sur ce nœud spécifique.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l’onglet **Propriétés**.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**** translateL’attribut translate est utilisé simplement pour indiquer s’il faut traduire ou non une propriété.
+**translate** L’attribut translate est simplement utilisé pour spécifier si une propriété doit être traduite ou non.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**** updateDestinationLanguageCet attribut est utilisé pour les propriétés qui n’ont pas de texte mais de codes de langue, par exemple jcr:language. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
+**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais des codes de langue, par exemple jcr:language. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
 
-Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques dont la valeur est Codes de langue.
+Dans l’interface utilisateur, vous pouvez vérifier/décocher **Traduire** dans le **Propriétés** , mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 
 Pour aider à clarifier la différence entre `updateDestinationLanguage` et `translate`, voici l’exemple simple d’un contexte ne comportant que deux règles :
 
@@ -224,7 +224,7 @@ Si vous modifiez le fichier translation_rules.xml, conservez une copie de sauveg
 >
 >Après avoir créé le module de contenu, recréez le module chaque fois que vous modifiez le fichier.
 
-## Exemple de fichier de règles de traduction  {#example-translation-rules-file}
+## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 
 ```xml
 <nodelist>

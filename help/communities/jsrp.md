@@ -1,8 +1,8 @@
 ---
 title: JSRP - Fournisseur de ressources de stockage JCR
-seo-title: JSRP - Fournisseur de ressources de stockage JCR
+seo-title: JSRP - JCR Storage Resource Provider
 description: JSRP est généralement mieux adapté aux environnements de démonstration ou de développement d’une instance de publication et d’une instance d’auteur.
-seo-description: JSRP est généralement mieux adapté aux environnements de démonstration ou de développement d’une instance de publication et d’une instance d’auteur.
+seo-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 873e013c-a2da-4b37-b0e3-56bdf240004a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -34,13 +34,13 @@ Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristi
 
 Par défaut, JSRP est l’option de stockage du contenu généré par l’utilisateur.
 
-La [console Configuration du stockage](srp-config.md) permet de sélectionner la configuration du stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
+Le [Console de configuration de stockage](srp-config.md) permet de sélectionner la configuration de stockage par défaut, qui identifie l’implémentation de la SRP à utiliser.
 
 Dans l’environnement de création, pour accéder à la console Configuration de stockage
 
 * À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Configuration de stockage]**
 
-* Sélectionnez **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+* Sélectionner **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
 
 * Sélectionnez **[!UICONTROL Envoyer]**
 
@@ -51,15 +51,15 @@ Dans l’environnement de création, pour accéder à la console Configuration d
 Bien que JSRP soit la configuration par défaut, assurez-vous que la configuration identique est définie dans l’environnement de publication :
 
 * À partir de la navigation globale : **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**
-* Sélectionnez **[!UICONTROL Activer l’arborescence]** > **[!UICONTROL Chemin de début]** :
+* Sélectionner **[!UICONTROL Activer l’arborescence]** > **[!UICONTROL Chemin de début]**:
 
    * Accédez à `/conf/global/settings/community/srpc/`
 
-* Sélectionnez **[!UICONTROL Activer]**
+* Sélectionner **[!UICONTROL Activer]**
 
 ## Gestion des données utilisateur {#managing-user-data}
 
-Pour plus d’informations sur les *utilisateurs*, les *profils utilisateur* et les *groupes d’utilisateurs*, souvent renseignés dans l’environnement de publication, consultez :
+Pour plus d’informations sur *utilisateurs*, *profils utilisateur* et *groupes d’utilisateurs*, souvent entrées dans l’environnement de publication, consultez :
 
 * [Synchronisation des utilisateurs](sync.md)
 * [Gestion des utilisateurs et des groupes d’utilisateurs](users.md)
@@ -74,7 +74,7 @@ Sur toutes les instances d’AEM de création et de publication, consultez à no
 
 * Dans JCR, si [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * Ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), cela signifie que le fournisseur de stockage est JSRP.
+   * Ne contient pas d’objet [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) , cela signifie que le fournisseur de stockage est JSRP.
    * Si le noeud srpc existe et contient le noeud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir JSRP comme fournisseur par défaut.
 
 ### Contenu généré par l’utilisateur non visible sur l’instance d’auteur {#ugc-not-visible-on-author-instance}
@@ -83,7 +83,7 @@ Ce n&#39;est pas un bogue. L’une des caractéristiques de JSRP est que le cont
 
 ### Contenu généré par l’utilisateur non visible sur l’instance de publication {#ugc-not-visible-on-publish-instance}
 
-Si une instance de publication unique ou si une grappe de publication est déployée, suivez les instructions pour [UGC non visible dans JCR](#ugc-not-visible-in-jcr).
+Si une instance de publication unique ou si une grappe de publication est déployée, suivez les instructions pour [UGC invisible dans JCR](#ugc-not-visible-in-jcr).
 
 Si une ferme de publication est déployée, une caractéristique de JSRP est que le contenu de la communauté n’est visible que sur l’instance de publication à laquelle il a été publié.
 

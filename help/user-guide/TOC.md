@@ -4,12 +4,12 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: Guide de l’utilisateur d’AEM 6.5
 user-guide-description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.5
-feature: Informations sur la version
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 9%
+source-wordcount: '60'
+ht-degree: 6%
 
 ---
 

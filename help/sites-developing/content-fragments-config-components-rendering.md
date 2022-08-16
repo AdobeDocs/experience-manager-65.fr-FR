@@ -1,8 +1,8 @@
 ---
 title: Fragments de contenu – Configuration des composants pour le rendu
-seo-title: Fragments de contenu – Configuration des composants pour le rendu
+seo-title: Content Fragments Configuring Components for Rendering
 description: Fragments de contenu – Configuration des composants pour le rendu
-seo-description: Fragments de contenu – Configuration des composants pour le rendu
+seo-description: Content Fragments Configuring Components for Rendering
 uuid: 3f5aaf36-e6a7-4a3c-b305-e35ebcc98d0d
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -12,8 +12,8 @@ docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 86%
+source-wordcount: '455'
+ht-degree: 85%
 
 ---
 

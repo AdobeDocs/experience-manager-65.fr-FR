@@ -1,8 +1,8 @@
 ---
 title: Bonnes pratiques
-seo-title: Bonnes pratiques
+seo-title: Best Practices
 description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
-seo-description: Les meilleures pratiques en matière de création décrivent comment utiliser AEM de la manière la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 65%
+source-wordcount: '282'
+ht-degree: 62%
 
 ---
 
@@ -25,7 +25,7 @@ Une documentation sur les meilleures pratiques est disponible pour les aspects s
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Formulaires](#forms)
+* [Forms](#forms)
 
 Pour connaître les meilleures pratiques en matière d’administration, de déploiement, de maintenance ou de développement, reportez-vous à l’une des ressources suivantes :
 
@@ -37,7 +37,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>
@@ -70,8 +70,8 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 
 Création : [Environnement et outils de création](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Fournit un aperçu de la création de pages.
 
-## Formulaires {#forms}
+## Forms {#forms}
 
-Formulaires adaptatifs : [Bonnes pratiques relatives à l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) : décrit les bonnes pratiques relatives à la configuration, la création et la personnalisation de formulaires adaptatifs.
+Formulaires adaptatifs : [Bonnes pratiques relatives à l’utilisation des formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) - Décrit les bonnes pratiques pour la configuration, la création et la personnalisation de formulaires adaptatifs.
 
-Formulaires HTML5 : [Bonnes pratiques pour la conception de formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Décrit les bonnes pratiques pour travailler sur la mise en page et la conception de formulaires HTML5.
+HTML5 forms : [Bonnes pratiques pour la conception de formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) - Décrit les bonnes pratiques pour travailler sur la mise en page et la conception de formulaires HTML5.

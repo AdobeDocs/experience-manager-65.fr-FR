@@ -1,8 +1,8 @@
 ---
 title: Configuration d’une page pour la modification en masse des propriétés de page
-seo-title: Configuration d’une page pour la modification en masse des propriétés de page
+seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: La modification des propriétés de page vous permet de modifier les propriétés de plusieurs pages à la fois
-seo-description: La modification des propriétés de page vous permet de modifier les propriétés de plusieurs pages à la fois
+seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 88%
+source-wordcount: '416'
+ht-degree: 87%
 
 ---
 
@@ -35,14 +35,12 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >* Indisponible dans l’IU classique.
 >* Indisponible pour les pages d’une live copy.
 >* Uniquement disponible pour les pages ayant le même type de ressource.
-
 >
-
 
 
 >[!NOTE]
 >
->La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/metadata.md) Vous pouvez personnaliser les champs de l’éditeur de métadonnées en bloc pour les ressources à l’aide de l’[éditeur de schémas](/help/assets/metadata-schemas.md).
+>La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/metadata.md) Vous pouvez personnaliser les champs de l’éditeur de métadonnées en bloc pour les ressources à l’aide de la variable [Éditeur de schéma](/help/assets/metadata-schemas.md).
 
 ## Activation d’un champ {#enabling-a-field}
 
@@ -56,9 +54,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
-
 >
-
 
 
 Les champs sont activés sur le composant de page (et *non* sur le modèle) :
@@ -71,7 +67,7 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
    >
    >Cet exemple suppose que les composants de base ont été installés sur l’instance, ce qui est le cas si l’instance est exécutée avec un exemple de contenu We.Retail. Pour plus d’informations, voir la [documentation relative aux composants de base](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html).
 
-1. Accédez au champ requis dans la définition `cq:dialog`.
+1. Accédez au champ requis dans le `cq:dialog` définition.
 1. Définissez la propriété suivante sur le nœud de champ :
 
    * **Nom** : `allowBulkEdit`
@@ -94,7 +90,7 @@ Les champs sont activés sur le composant de page (et *non* sur le modèle) :
    >
    >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   >    1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
+   >    1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
    >    1. Apportez les modifications désirées dans `/apps`
 
 

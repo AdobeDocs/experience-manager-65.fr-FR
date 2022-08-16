@@ -1,8 +1,8 @@
 ---
 title: Opérations de développement d’entreprise (DevOps)
-seo-title: Opérations de développement d’entreprise (DevOps)
+seo-title: Enterprise DevOps
 description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
-seo-description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
+seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
 uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -12,7 +12,7 @@ discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1005'
+source-wordcount: '989'
 ht-degree: 98%
 
 ---
@@ -36,7 +36,7 @@ Un déploiement d’Adobe Experience Manager (AEM) implique généralement plu
 
 * [Développement](#development)
 * [Assurance qualité](#quality-assurance)
-* [Évaluation ](#staging)
+* [Évaluation](#staging)
 * [Production](#production-author-and-publish)
 
 >[!NOTE]
@@ -62,7 +62,7 @@ Selon l’échelle de votre système, l’environnement de développement peut c
 
 ### Assurance qualité {#quality-assurance}
 
-Cet environnement est utilisé par l’équipe d’assurance qualité pour tester entièrement [votre nouveau système. conception et fonction. ](/help/sites-developing/test-plan.md) Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
+Cet environnement est utilisé par l’équipe de l’assurance qualité pour [test](/help/sites-developing/test-plan.md) votre nouveau système; conception et fonction. Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
 
 ### Évaluation  {#staging}
 
@@ -107,7 +107,7 @@ L’environnement de publication est généralement situé dans la zone démilit
 
 L’environnement de publication génère du contenu de manière dynamique et en temps réel, et le contenu peut être personnalisé pour chaque utilisateur.
 
-## Mouvement de code   {#code-movement}
+## Mouvement de code  {#code-movement}
 
 Le code doit toujours être propagé du bas vers le haut :
 

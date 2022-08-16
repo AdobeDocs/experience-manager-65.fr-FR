@@ -11,7 +11,7 @@ discoiquuid: 9f1beb89-8eb1-4e37-a5e8-19752b21374a
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 100%
 
@@ -31,9 +31,9 @@ AEM Forms fournit des composants de portail qui réduisent les surcharges de ges
 
 Les composants de portail de formulaires vous permettent d’ajouter les fonctionnalités suivantes :
 
-* Création d’une liste de formulaires dans des mises en page personnalisées Mises en page de vues Liste, Carte et Panneau prêtes à l’emploi. Vous pouvez créer vos propres mises en page personnalisées.
+* Créez une liste de formulaires dans des mises en page personnalisées. Mises en page de vues Liste, Carte et Panneau prêtes à l’emploi. Vous pouvez créer vos propres mises en page personnalisées.
 * Possibilité d’afficher les métadonnées et les actions personnalisées lorsque vous les répertoriez.
-* Création d’une liste des formulaires publiés par l’interface utilisateur d’AEM Forms sur l’instance de publication où sont utilisés les composants de portail de formulaires.
+* Créez des listes de formulaires publiés par l’interface utilisateur d’AEM Forms sur l’instance de publication où sont utilisés les composants du portail Formulaires.
 * Possibilité pour les utilisateurs finaux d’afficher les formulaires aux formats HTML et PDF.
 * Utilisation d’un profil HTML personnalisé pour le rendu des formulaires.
 * Activation de la recherche de formulaires en fonction de différents critères, tels que les propriétés, les métadonnées et les balises du formulaire.

@@ -1,8 +1,8 @@
 ---
 title: Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
-seo-title: Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Découvrez comment utiliser l’outil de détection des motifs pour évaluer la complexité de votre mise à niveau.
-seo-description: Découvrez comment utiliser l’outil de détection des motifs pour évaluer la complexité de votre mise à niveau.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 84d0add9-3123-4188-9877-758911b1899f
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
-feature: Mise à niveau
+feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 89%
+source-wordcount: '522'
+ht-degree: 88%
 
 ---
 
@@ -42,16 +42,14 @@ L’outil de détection des motifs est publié séparément sous forme de [modul
 >
 >* augmenter le taux de détection
 >* éviter les ralentissements sur les instances critiques de l’entreprise
-
 >
->
-en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements de production sur le plan des applications utilisateur, du contenu et des configurations.
+>en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements de production sur le plan des applications utilisateur, du contenu et des configurations.
 
 Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’outil de détection des motifs :
 
 * **Via la console Felix Inventory :**
 
-1. Accédez à la console web AEM en accédant à *https://serveraddress:serverport/system/console/configMgr*
+1. Accédez à la console Web AEM en accédant à *https://serveraddress:serverport/system/console/configMgr*
 1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
 
    ![capture d’écran-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
@@ -70,7 +68,7 @@ Le résultat est actuellement disponible sous 2 URL :
 1. Interface en mode texte brut
 1. Interface JSON
 
-## Gestion de l’interface en mode texte brut  {#handling-the-plain-text-interface}
+## Gestion de l’interface en mode texte brut {#handling-the-plain-text-interface}
 
 Les informations contenues dans la sortie se présentent sous la forme d’une série d’entrées d’événement. Il existe deux canaux : un pour la publication des infractions et un autre pour la publication de la progression.
 
@@ -100,7 +98,7 @@ Ce qui donne le résultat suivant :
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## Gestion de l’interface JSON  {#handling-the-json-interface}
+## Gestion de l’interface JSON {#handling-the-json-interface}
 
 De même, JSON pourra être traité à l’aide de l’[outil jq](https://stedolan.github.io/jq/) dès qu’il sera publié.
 

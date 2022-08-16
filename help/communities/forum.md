@@ -1,8 +1,8 @@
 ---
 title: Fonction Forum
-seo-title: Fonction Forum
+seo-title: Forum Feature
 description: Ajout et configuration de la fonction de forum
-seo-description: Ajout et configuration de la fonction de forum
+seo-description: How to add and configure the forum feature
 uuid: e69be4e1-c9d5-4d51-8e7e-609e5460e378
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1216'
 ht-degree: 35%
 
 ---
 
 # Fonction Forum{#forum-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La fonction Forum offre un espace aux visiteurs connectés (membres de la communauté) dans l’environnement de publication pour leur permettre de :
 
@@ -34,25 +34,25 @@ La fonction Forum offre un espace aux visiteurs connectés (membres de la commun
 Cette section de la documentation décrit:
 
 * Ajout de la fonction Forum à un site AEM.
-* Paramètres de configuration du composant `Forum`.
+* Paramètres de configuration de la variable `Forum` composant.
 
 ### Ajout d’un forum à une page {#adding-a-forum-to-a-page}
 
-Pour ajouter un composant `Forum` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
+Pour ajouter une `Forum` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Forum`
 
 et faites glisser le composant sur la page où le forum doit être visible.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client requises](/help/communities/essentials-forum.md#essentials-for-client-side) sont incluses, voici comment le composant `Forum` apparaîtra :
+Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-forum.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Forum` apparaît :
 
 ![forum-component](assets/forum-component.png)
 
 ### Configuration d’un forum {#configuring-a-forum}
 
-Sélectionnez le composant `Forum` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Forum` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -93,7 +93,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser le balisage**
 
-   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir l’onglet **Champ de balise** ). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir **Champ de balise** ). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les transferts de fichiers**
 
@@ -101,7 +101,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser abonnement**
 
-   Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [notify](/help/communities/notifications.md) de nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Autoriser l’épinglage**
 
@@ -109,22 +109,22 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres des sujets et des r�
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée en tant que [contenu présenté](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](/help/communities/subscriptions.md)). `Allow Following` doit être vérifié et [email configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
 
 * **Taille maximale du fichier**
 
-   Convient uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Convient uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
-* **Max Attach Image File**
-SizeRelevant uniquement si l’option Autoriser les chargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
+* **Taille max. du fichier image joint**
+À définir uniquement si l’option Autoriser les chargements de fichiers est cochée. Taille maximale en octets pour un fichier image chargé. La valeur par défaut est 2097152 (2 Mo).
 
 * **Autoriser les réponses à thème**
 
@@ -144,7 +144,7 @@ SizeRelevant uniquement si l’option Autoriser les chargements de fichiers est 
 
 * **Afficher les badges**
 
-   Si cette case est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’entrée de blog d’un membre. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les membres privilégiés**
 
@@ -172,11 +172,11 @@ SizeRelevant uniquement si l’option Autoriser les chargements de fichiers est 
 
 >[!NOTE]
 >
->Il peut être nécessaire de vérifier `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` pour activer les commentaires sur un sujet.
+>Il peut être nécessaire de vérifier les deux `AllowThreaded Replies` et `Allow users to Delete Comments and Topics` pour activer les commentaires sur un sujet.
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous l’onglet **Modération d’utilisateur** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 * **Refuser les publications**
 
@@ -216,7 +216,7 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Espaces de noms autorisés**
 
-   Convient si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestions**
 
@@ -232,7 +232,7 @@ Sous l’onglet **Traduction**, si la traduction est activée pour le site de la
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet **Paramètres de tri**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
+Sous , **Paramètres de tri** , indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
 * **Trier par**
 

@@ -1,8 +1,8 @@
 ---
 title: Résolution des problèmes de lenteur des requêtes
-seo-title: Résolution des problèmes de lenteur des requêtes
+seo-title: Troubleshooting Slow Queries
 description: Résolution des problèmes de lenteur des requêtes
-seo-description: 'null'
+seo-description: null
 uuid: ad09546a-c049-44b2-99a3-cb74ee68f040
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2265'
 ht-degree: 69%
 
 ---
@@ -35,7 +35,7 @@ Dans AEM, les requêtes lentes sont classées dans 3 catégories principales, s
 
    * Requêtes qui renvoient un très grand nombre de résultats
 
-Les deux premières classifications de requêtes (sans index et mal limitées) sont lentes, car elles forcent le moteur de requête Oak à inspecter chaque résultat **potentiel** (noeud de contenu ou entrée d’index) pour identifier celui qui appartient au jeu de résultats **réel**.
+Les 2 premières classifications de requêtes (sans index et mal limitées) sont lentes, car elles forcent le moteur de requête Oak à inspecter chacune des **potentiel** résultat (noeud de contenu ou entrée d’index) pour identifier celui qui appartient à **réel** jeu de résultats.
 
 Le fait d’inspecter chaque résultat potentiel est désigné sous le nom de traversée.
 
@@ -49,7 +49,7 @@ Par défaut, dans AEM 6.3, lorsqu’une traversée de 100 000 est atteinte, la
 
 #### Pendant le développement {#during-development}
 
-Expliquez **toutes** les requêtes et assurez-vous que leurs plans de requête ne contiennent pas les caractères **/&amp;ast; parcourir** l’explication qui s’y trouve. Exemple de parcours du plan de requête :
+Expliquer **all** et assurez-vous que leurs plans de requête ne contiennent pas les éléments **/&amp;ast; traverse** leurs explications. Exemple de parcours du plan de requête :
 
 * **PLAN :** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -60,7 +60,7 @@ Expliquez **toutes** les requêtes et assurez-vous que leurs plans de requête n
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
    * Ce message n’est consigné que si aucun index n’est disponible et si la requête traverse potentiellement de nombreux nœuds. Les messages ne sont pas consignés si un index est disponible, mais que la quantité à traverser est faible et, par conséquent, rapide.
 
-* Visitez la console d’opérations [Performances des requêtes](/help/sites-administering/operations-dashboard.md#query-performance) et [Expliquer](/help/sites-administering/operations-dashboard.md#explain-query) les requêtes lentes à la recherche d’explications de traversée ou d’aucune explication de requête d’index.
+* Visitez l’AEM [Performances des requêtes](/help/sites-administering/operations-dashboard.md#query-performance) la console des opérations et [Expliquer](/help/sites-administering/operations-dashboard.md#explain-query) requêtes lentes recherchant des explications de traversée ou aucune requête d’index.
 
 ### Détection des requêtes mal limitées {#detecting-poorly-restricted-queries}
 
@@ -115,25 +115,25 @@ Après avoir ajouté la règle d’index cq:tags
 
    `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-L’ajout de la règle d’index pour `jcr:content/cq:tags` dans l’index `cqPageLucene` permet de stocker les données `cq:tags` de manière optimisée.
+Ajout de la règle indexRule pour `jcr:content/cq:tags` dans le `cqPageLucene` index allows `cq:tags` données à stocker de manière optimisée.
 
-Lorsqu’une requête avec la restriction `jcr:content/cq:tags` est exécutée, l’index peut rechercher les résultats par valeur. Cela signifie que si 100 nœuds `cq:Page` ont `myTagNamespace:myTag` comme valeur, seuls ces 100 résultats sont renvoyés. Les 999 000 autres résultats sont exclus des contrôles de restriction, ce qui améliore les performances d’un facteur 10 000.
+Lorsqu’une requête avec la variable `jcr:content/cq:tags` est effectuée, l’index peut rechercher les résultats par valeur. Cela signifie que si 100 nœuds `cq:Page` ont `myTagNamespace:myTag` comme valeur, seuls ces 100 résultats sont renvoyés. Les 999 000 autres résultats sont exclus des contrôles de restriction, ce qui améliore les performances d’un facteur 10 000.
 
 Il va sans dire que des restrictions de requête supplémentaires réduisent les jeux de résultats éligibles et améliorent encore l’optimisation des requêtes.
 
-De même, sans règle d’index supplémentaire pour la propriété `cq:tags` , même une requête de texte intégral avec une restriction sur `cq:tags` ne fonctionnerait pas correctement, car les résultats de l’index retourneraient toutes les correspondances de texte intégral. La restriction sur cq:tags sera filtrée après.
+De même, sans règle d’index supplémentaire pour la variable `cq:tags` , même une requête en texte intégral avec une restriction sur `cq:tags` ne fonctionnerait pas correctement, car les résultats de l’index retourneraient toutes les correspondances de texte intégral. La restriction sur cq:tags sera filtrée après.
 
 Les listes de contrôle d’accès constituent une autre cause de filtrage post index. Bien souvent, il n’en est pas tenu compte en cours de développement. Tâchez de vous assurer que la requête ne renvoie pas de chemins d’accès auxquels l’utilisateur risque ne pas avoir accès. En règle générale, cela passe par une meilleure structure de contenu, ainsi que la définition d’une restriction de chemin d’accès appropriée sur la requête.
 
-Une méthode utile pour déterminer si l’index Lucene renvoie de nombreux résultats pour renvoyer un très petit sous-ensemble en tant que résultat de la requête consiste à activer les journaux DEBUG pour `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` et à voir le nombre de documents chargés à partir de l’index. Le nombre de résultats finaux par rapport au nombre de documents chargés ne devrait pas être disproportionné. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
+Une méthode utile pour déterminer si l’index Lucene renvoie de nombreux résultats pour renvoyer un très petit sous-ensemble en tant que résultat de la requête consiste à activer les journaux DEBUG pour `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` et voir le nombre de documents chargés à partir de l’index. Le nombre de résultats finaux par rapport au nombre de documents chargés ne devrait pas être disproportionné. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
 
 #### Après le déploiement {#post-deployment-1}
 
-* Surveillez `error.log` pour les requêtes transversales :
+* Surveillez la variable `error.log` pour les requêtes traversales :
 
    * `*WARN* org.apache.jackrabbit.oak.spi.query.Cursors$TraversingCursor Traversed ### nodes ... consider creating an index or changing the query`
 
-* Accédez à la console d’opérations [Performances des requêtes](/help/sites-administering/operations-dashboard.md#query-performance) et [Expliquer](/help/sites-administering/operations-dashboard.md#explain-query) les requêtes lentes à la recherche de plans de requête qui ne résolvent pas les restrictions de propriété de requête en règles de propriété d’index.
+* Visitez l’AEM [Performances des requêtes](/help/sites-administering/operations-dashboard.md#query-performance) la console des opérations et [Expliquer](/help/sites-administering/operations-dashboard.md#explain-query) requêtes lentes recherchant des plans de requête qui ne résolvent pas les restrictions de propriété de requête en règles de propriété d’index.
 
 ### Détection des requêtes avec jeu de résultats volumineux {#detecting-large-result-set-queries}
 
@@ -172,7 +172,7 @@ S’agissant de l’optimisation des performances des requêtes dans AEM, la dev
 
 Voici un aperçu des réglages recommandés pour garantir les performances des requêtes. Commencez par optimiser la requête, qui est une opération plus discrète, puis, si nécessaire, optimisez les définitions d’index.
 
-### Réglage de l’instruction de requête  {#adjusting-the-query-statement}
+### Réglage de l’instruction de requête {#adjusting-the-query-statement}
 
 AEM prend en charge les langages de requête suivants :
 
@@ -201,7 +201,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
 
    Dans le cas des requêtes dépourvues d’une restriction du type de nœud, AEM suppose qu’il s’agit du type de nœud `nt:base`, dont chaque nœud d’AEM est un sous-type, ce qui se traduit effectivement par l’absence de restriction de ce type.
 
-   La définition de `type=cq:Page` limite cette requête aux seuls noeuds `cq:Page` et résout la requête sur AEM cqPageLucene, en limitant les résultats à un sous-ensemble de noeuds (seulement `cq:Page` noeuds) dans AEM.
+   Paramètre `type=cq:Page` limite cette requête à uniquement `cq:Page` et résout la requête en AEM cqPageLucene, en limitant les résultats à un sous-ensemble de noeuds (uniquement `cq:Page` ) dans AEM.
 
 1. Réglez la restriction de type de nœud de la requête, de sorte que cette dernière soit résolue sur un index de propriété Lucene existant.
 
@@ -221,10 +221,10 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    property.value=article-page
    ```
 
-   `nt:hierarchyNode` est le type de noeud parent de  `cq:Page`. En supposant  `jcr:content/contentType=article-page` qu’il soit appliqué uniquement aux  `cq:Page` noeuds par le biais de notre application personnalisée, cette requête ne renverra que  `cq:Page` les noeuds où  `jcr:content/contentType=article-page`. Il s’agit toutefois d’une restriction sous-optimale, pour les raisons suivantes :
+   `nt:hierarchyNode` est le type de noeud parent de `cq:Page`, et en supposant `jcr:content/contentType=article-page` n’est appliqué qu’à `cq:Page` noeuds via notre application personnalisée, cette requête ne renverra que `cq:Page` noeud où `jcr:content/contentType=article-page`. Il s’agit toutefois d’une restriction sous-optimale, pour les raisons suivantes :
 
-   * Un autre noeud hérite de `nt:hierarchyNode` (par ex. `dam:Asset`) en ajoutant inutilement à l’ensemble des résultats potentiels.
-   * Il n’existe aucun index fourni AEM pour `nt:hierarchyNode`, mais il existe un index fourni pour `cq:Page`.
+   * Un autre noeud hérite de `nt:hierarchyNode` (p. ex. `dam:Asset`) en ajoutant inutilement à l’ensemble des résultats potentiels.
+   * Il n’existe aucun index fourni AEM pour `nt:hierarchyNode`, toutefois, car il existe un index fourni pour `cq:Page`.
    Le fait de définir `type=cq:Page` limite cette requête aux seuls nœuds `cq:Page` et résout la requête sur l’index cqPageLucene d’AEM, ce qui limite les résultats à un sous-ensemble de nœuds (uniquement les nœuds cq:Page) dans AEM.
 
 1. Vous pouvez également ajuster la ou les restrictions de propriété afin que la requête soit résolue sur un index de propriété existant.
@@ -243,11 +243,11 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    property.value=my-site/components/structure/article-page
    ```
 
-   La modification de la restriction de propriété de `jcr:content/contentType` (une valeur personnalisée) à la propriété bien connue `sling:resourceType` permet à la requête de résoudre l’index de propriété `slingResourceType` qui indexe tout le contenu par `sling:resourceType`.
+   Modification de la restriction de propriété de `jcr:content/contentType` (valeur personnalisée) à la propriété bien connue `sling:resourceType` permet à la requête de se résoudre sur l’index de propriété `slingResourceType` qui indexe tout le contenu en `sling:resourceType`.
 
    Les index de propriété (contrairement aux index de propriété Lucene) conviennent mieux lorsque la requête ne fait pas de distinction par type de nœud et qu’une seule restriction de propriété domine le jeu de résultats.
 
-1. Ajoutez la restriction de chemin la plus stricte possible à la requête. Par exemple, préférez `/content/my-site/us/en` à `/content/my-site` ou `/content/dam` à `/`.
+1. Ajoutez la restriction de chemin la plus stricte possible à la requête. Par exemple, préférez `/content/my-site/us/en` over `/content/my-site`ou `/content/dam` over `/`.
 
 * **Requête non optimisée**
 
@@ -267,9 +267,9 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    property.value=article-page
    ```
 
-   La définition de la restriction de chemin d’accès de `path=/content`à `path=/content/my-site/us/en` permet aux index de réduire le nombre d’entrées d’index qui doivent être inspectées. Lorsque la requête peut très bien restreindre le chemin, au-delà de `/content` ou `/content/dam`, assurez-vous que l’index contient `evaluatePathRestrictions=true`.
+   Application de la restriction de chemin à partir de `path=/content`to `path=/content/my-site/us/en` permet aux index de réduire le nombre d’entrées d’index qui doivent être inspectées. Lorsque la requête peut très bien restreindre le chemin, au-delà de la seule `/content` ou `/content/dam`, assurez-vous que l’index comporte `evaluatePathRestrictions=true`.
 
-   Notez que l’utilisation de `evaluatePathRestrictions` augmente la taille de l’index.
+   Remarque : `evaluatePathRestrictions` augmente la taille de l’index.
 
 1. Si possible, évitez d’utiliser des fonctions/opérations de requête telles que `LIKE` et `fn:XXXX`, car leur coût évolue en fonction du nombre de résultats basés sur une restriction.
 
@@ -290,9 +290,9 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    fulltext.relPath=jcr:content/contentType
    ```
 
-   La condition LIKE est lente à être évaluée, car aucun index ne peut être utilisé si le texte commence par un caractère générique (&quot;%..&quot;). La condition jcr:contains autorise un index en texte intégral et est, de ce fait, à privilégier. Pour ce faire, l’index de propriété Lucene résolu doit avoir indexRule pour `jcr:content/contentType` avec `analayzed=true`.
+   La condition LIKE est lente à être évaluée, car aucun index ne peut être utilisé si le texte commence par un caractère générique (&quot;%..&quot;). La condition jcr:contains autorise un index en texte intégral et est, de ce fait, à privilégier. Cela nécessite que l’index de propriété Lucene résolu ait indexRule pour `jcr:content/contentType` avec `analayzed=true`.
 
-   L’utilisation de fonctions de requête telles que `fn:lowercase(..)` peut s’avérer plus difficile à optimiser, car il n’existe pas d’équivalents plus rapides (en dehors de configurations d’analyseur d’index plus complexes et plus discrètes). Il est préférable d’identifier d’autres restrictions d’étendue afin d’améliorer les performances globales des requêtes, ce qui exige que les fonctions s’exécutent sur le plus petit jeu possible de résultats potentiels.
+   Utilisation de fonctions de requête comme `fn:lowercase(..)` peut s’avérer plus difficile à optimiser, car il n’existe pas d’équivalents plus rapides (en dehors des configurations d’analyseur d’index plus complexes et intrusives). Il est préférable d’identifier d’autres restrictions d’étendue afin d’améliorer les performances globales des requêtes, ce qui exige que les fonctions s’exécutent sur le plus petit jeu possible de résultats potentiels.
 
 1. ***Ce réglage est spécifique à Query Builder et ne s’applique pas à JCR-SQL2 ni à XPath.***
 
@@ -316,7 +316,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
 
    Le paramètre `p.guessTotal=100` indique à Query Builder de ne collecter que les 100 premiers résultats et de définir un indicateur booléen pour signaler l’existence d’au moins un résultat supplémentaire (sans calculer toutefois ce nombre, car cela entraînerait un ralentissement des performances). Cette optimisation donne d’excellents résultats pour la pagination ou le chargement infini, deux scénarios dans lesquels seul un sous-ensemble de résultats est affiché de manière incrémentielle.
 
-## Optimisation d’un index existant  {#existing-index-tuning}
+## Optimisation d’un index existant {#existing-index-tuning}
 
 1. Si la requête optimale est résolue sur un index de propriété, il n’y a rien d’autre à faire, dans la mesure où les index de ce type présentent des capacités de réglage minimales.
 1. Dans le cas contraire, la requête doit se résoudre sur un index de propriété Lucene. Si aucun index ne peut être résolu, passez à la création d’un index.
@@ -366,7 +366,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
    1. Identifiez le delta de configuration entre la définition d’index optimisée (étape n° 4) et l’index existant (/oak:index/cqPageLucene), puis ajoutez les configurations manquantes depuis l’index optimisé à la définition d’index existante.
    1. Conformément aux meilleures pratiques en matière de réindexation d’AEM, une actualisation ou une réindexation est acceptable, selon que le contenu existant est affecté par cette modification de configuration d’index.
 
-## Créer un nouvel index {#create-a-new-index}
+## Création d’un index {#create-a-new-index}
 
 1. Vérifiez que la requête n’est pas résolue sur un index de propriété Lucene existant. Si tel est le cas, consultez la section précédente traitant de l’optimisation d’un index existant.
 1. Le cas échéant, convertissez la requête au format XPath ou JCR-SQL2.
@@ -414,7 +414,7 @@ Query Builder est utilisé dans l’exemple suivant, car il s’agit du langage
 
 Compte tenu de l’architecture de contenu flexible d’AEM, il est difficile d’affirmer que les structures de contenu n’évolueront pas au fil du temps pour atteindre des proportions inacceptables.
 
-Par conséquent, assurez-vous que les index répondent aux requêtes, sauf si la combinaison de la restriction de chemin et de la restriction de type de noeud garantit que **moins de 20 noeuds sont jamais parcourus.**
+Par conséquent, assurez-vous que les index répondent aux requêtes, sauf si la combinaison de la restriction de chemin d’accès et de la restriction de type de noeud garantit que **moins de 20 noeuds sont jamais parcourus.**
 
 ## Outils de développement de requêtes {#query-development-tools}
 
@@ -423,12 +423,12 @@ Par conséquent, assurez-vous que les index répondent aux requêtes, sauf si la
 * **Débogueur Query Builder**
 
    * Interface utilisateur web destinée à exécuter des requêtes Query Builder et à générer le XPath connexe (à utiliser dans l’outil Expliquer la requête ou dans le Générateur de définitions d’index en Oak).
-   * Situé sur l’AEM à l’adresse [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+   * Situé sur AEM à l’adresse [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
 * **CRXDE LITE : outil de requête**
 
    * Interface utilisateur web destinée à exécuter des requêtes XPath et JCR-SQL2.
-   * Situé sur l’AEM à l’adresse [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Outils > Requête...
+   * Situé sur AEM à l’adresse [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Outils > Requête...
 
 * **[Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query)**
 
@@ -455,12 +455,12 @@ Par conséquent, assurez-vous que les index répondent aux requêtes, sauf si la
 * **Configuration OSGi des paramètres du moteur de requête Apache Jackrabbit**
 
    * Configuration OSGi qui configure le comportement d’échec pour les requêtes de traversée.
-   * Situé sur l’AEM à l’adresse [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+   * Situé sur AEM à l’adresse [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **Mbean JMX NodeCounter**
 
    * MBean JMX utilisé pour estimer le nombre de nœuds des arborescences de contenu dans AEM.
-   * Situé sur l’AEM à l’adresse [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * Situé sur AEM à l’adresse [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Prise en charge par la communauté {#community-supported}
 

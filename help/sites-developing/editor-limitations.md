@@ -1,8 +1,8 @@
 ---
 title: Limites de l’éditeur
-seo-title: Limites de l’éditeur
+seo-title: Editor Limitations
 description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
-seo-description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
+seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
 uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '316'
 ht-degree: 94%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 94%
 
 L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions lorsque cela s’avère possible.
 
-## Limites fonctionnelles  {#functional-limitations}
+## Limites fonctionnelles {#functional-limitations}
 
 Un auteur peut être confronté aux limites fonctionnelles suivantes lors de l’utilisation de l’éditeur pour créer des pages.
 
-### Liens inactifs   {#links-not-active}
+### Liens inactifs {#links-not-active}
 
 Lors de la [modification d’une page](/help/sites-authoring/editing-content.md), les liens ne sont pas actifs.
 
@@ -39,13 +39,13 @@ Les pages ne peuvent pas être nommées `structure`. Les pages nommées `structu
 
 Un développeur peut être confronté aux limites suivantes concernant les interactions de l’éditeur avec CSS.
 
-### Éléments à positionnement absolu   {#absolutely-positioned-elements}
+### Éléments à positionnement absolu {#absolutely-positioned-elements}
 
 Les éléments à positionnement absolu peuvent occasionner des problèmes au niveau de la position de leur incrustation.
 
 * Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur créera une incrustation ayant exactement les mêmes dimensions.
 
-### Unités vh   {#vh-units}
+### Unités vh {#vh-units}
 
 Les unités `vh` ne sont pas prises en charge, car la hauteur de l’iFrame doit être réglée automatiquement par AEM.
 

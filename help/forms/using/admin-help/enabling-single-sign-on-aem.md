@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Si AEM forms n’est pas en mesure d’authentifier un utilisateur à l’aide d
 
 La page Configuration du portail permet d’activer l’authentification unique (SSO) entre les applications et les applications prenant en charge l’acheminement de l’identité via l’en-tête HTTP. Lorsque la fonction SSO est implémentée, les pages d’ouverture de session utilisateur d’AEM forms ne sont plus obligatoires. Elles ne s’affichent pas si l’utilisateur s’est déjà authentifié via le portail de son entreprise.
 
-Vous pouvez également activer la fonction SSO via SPNEGO (voir [Activation de la fonction SSO à l’aide de SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego)).
+Vous pouvez également activer la fonction SSO via SPNEGO Voir [Activation de la fonction SSO à l’aide de SPNEGO](enabling-single-sign-on-aem.md#enable-sso-using-spnego).
 
 1. Dans Administration Console, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs de portail.
 1. Sélectionnez Oui pour activer l’authentification unique. Si vous sélectionnez Non, les autres paramètres de la page ne sont pas disponibles.

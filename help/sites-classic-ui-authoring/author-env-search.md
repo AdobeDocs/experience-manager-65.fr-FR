@@ -1,8 +1,8 @@
 ---
 title: Rechercher
-seo-title: Rechercher
+seo-title: Search
 description: L’environnement de création d’AEM comporte divers mécanismes de recherche de contenu, selon le type de ressource que vous utilisez.
-seo-description: L’environnement de création d’AEM comporte divers mécanismes de recherche de contenu, selon le type de ressource que vous utilisez.
+seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '470'
 ht-degree: 87%
 
 ---
@@ -45,15 +45,11 @@ Le panneau de recherche vous permet de rechercher sur toutes les pages de votre 
 >
 >* [Caractères génériques](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches) 
 >* [Opérateurs booléens](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)  
-
-   >
-   >
-* [Expressions régulières](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
+>
+>* [Expressions régulières](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Regroupement de champs](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping) 
 >* [Amplification](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
-
 >
-
 
 
 Pour exécuter la recherche, cliquez sur **Rechercher** au bas du volet. Cliquez sur **Réinitialiser** pour effacer les critères de recherche.
@@ -81,7 +77,7 @@ Dans la console **Sites web**, l’option de menu **Rechercher et remplacer** pe
    * indiquer si la recherche doit être sensible à la casse ;
    * indiquer si la recherche doit uniquement porter sur des mots entiers (dans le cas contraire, elle porte également sur des sous-chaînes).
 
-   Cliquer sur **Aperçu** répertorie l’endroit où le terme a été trouvé. Vous pouvez sélectionner/effacer les instances spécifiques à remplacer :
+   Cliquer **Aperçu** répertorie l’endroit où le terme a été trouvé. Vous pouvez sélectionner/effacer les instances spécifiques à remplacer :
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -94,7 +90,7 @@ L’étendue par défaut du servlet de recherche et de remplacement couvre les p
 * `jcr:text`
 * `text`
 
-La portée peut être modifiée à l’aide de la console de gestion web Apache Felix (par exemple, à l’adresse `https://localhost:4502/system/console/configMgr`). Sélectionnez `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` et configurez la portée selon les besoins.
+La portée peut être modifiée à l’aide de la console de gestion web Apache Felix (par exemple, à l’adresse `https://localhost:4502/system/console/configMgr`). Sélectionner `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` et configurez la portée selon les besoins.
 
 >[!NOTE]
 >

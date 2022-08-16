@@ -1,8 +1,8 @@
 ---
 title: Modification de l’aspect
-seo-title: Modification de l’aspect
+seo-title: Alter the Appearance
 description: Modification du script
-seo-description: Modification du script
+seo-description: Modify the script
 uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,29 +13,29 @@ docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 0%
+source-wordcount: '213'
+ht-degree: 1%
 
 ---
 
-# Modifier l’aspect {#alter-the-appearance}
+# Modification de l’aspect {#alter-the-appearance}
 
 ## Modification du script {#modify-the-script}
 
-Le script comment.hbs est chargé de créer le code HTML global pour chaque commentaire.
+Le script comment.hbs est chargé de créer le HTML global de chaque commentaire.
 
 Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
 
-1. Copiez `comment.hbs`de `libs`vers `apps`
+1. Copier `comment.hbs`de `libs`to `apps`
 
    1. Sélectionner `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Sélectionnez **[!UICONTROL Copier]**
+   1. Sélectionnez **[!UICONTROL Copie]**
    1. Sélectionner `/apps/social/commons/components/hbs/comments/comment`
-   1. Sélectionnez **[!UICONTROL Coller]**
+   1. Sélectionner **[!UICONTROL Coller]**
 
-1. Ouvrez le `comment.hbs` recouvert.
+1. Ouvrir le recouvert `comment.hbs`
 
-   * Double-cliquez sur le noeud `comment.hbs` dans `/apps/social/commons/components/hbs/comments/comment folder`
+   * Double-cliquez sur le noeud `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Recherchez les lignes suivantes et supprimez-les ou mettez-les en commentaire :
 
@@ -59,18 +59,18 @@ Poussez le composant de commentaires superposés vers l’instance de publicatio
 
 >[!NOTE]
 >
->Une forme de réplication plus robuste consiste à créer un module dans le gestionnaire de modules et à l’activer [](/help/sites-administering/package-manager.md#replicating-packages). Un package peut être exporté et archivé.
+>Une forme de réplication plus robuste serait de créer un package dans le gestionnaire de modules et [activate](/help/sites-administering/package-manager.md#replicating-packages) c&#39;est le cas. Un package peut être exporté et archivé.
 
 Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** et cliquez sur **[!UICONTROL Activer l’arborescence]**.
 
-Pour le chemin de début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
+Pour le champ Chemin de début , saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
-### Afficher les résultats {#view-results}
+### Affichage des résultats {#view-results}
 
 Si vous vous connectez à l’instance de publication en tant qu’administrateur, par exemple https://localhost:4503/crx/de en tant qu’administrateur/administrateur, vous pouvez vérifier que les composants superposés sont présents.
 
-Si vous vous déconnectez puis vous reconnectez en tant que `aaron.mcdonald@mailinator.com/password` et actualisez la page, vous constaterez que le commentaire publié ne s’affiche plus avec un avatar, mais avec un simple &quot;xxx&quot;.
+Si vous vous déconnectez et vous reconnectez en tant que `aaron.mcdonald@mailinator.com/password` et actualisez la page. Vous remarquerez que le commentaire publié ne s’affiche plus avec un avatar, mais avec un simple &quot;xxx&quot;.
 
 ![create-template-component](assets/create-template-component.png)

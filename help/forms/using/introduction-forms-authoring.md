@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3138'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ L’interface utilisateur optimisée pour les écrans tactiles permet de créer 
 Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
-* [Barre d’outils Page](#page-toolbar)
+* [Barre d’outils de la page](#page-toolbar)
 * [Barre d’outils de composants](#component-toolbar)
 * [Page de formulaires adaptatifs](#af-page)
 

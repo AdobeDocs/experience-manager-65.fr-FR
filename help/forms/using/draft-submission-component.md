@@ -9,13 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
-source-git-commit: 23252989bb8649b2f0b96a58972c831257e0c5dc
-workflow-type: ht
+exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 100%
 
 ---
-
 
 # Composant Drafts &amp; Submissions{#drafts-and-submissions-component}
 

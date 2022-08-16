@@ -1,19 +1,19 @@
 ---
 title: Modes d’exécution
-seo-title: Modes d’exécution
+seo-title: Run Modes
 description: Découvrez comment optimiser une instance AEM dans des buts précis en utilisant les modes d’exécution.
-seo-description: Découvrez comment optimiser une instance AEM dans des buts précis en utilisant les modes d’exécution.
+seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
 uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
-feature: Configuration
+feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '747'
 ht-degree: 85%
 
 ---
@@ -45,7 +45,7 @@ Les modes d’exécution d’installation sont fournis prêts à l’emploi :
 
 Ce sont deux paires de modes d’exécution mutuellement exclusifs. Par exemple, vous pouvez :
 
-* définissez `author` ou `publish`, mais pas les deux en même temps.
+* définir `author` ou `publish`, pas les deux en même temps
 
 * combiner `author` avec `samplecontent` ou `nosamplecontent` (mais pas les deux)
 
@@ -61,11 +61,11 @@ Vous pouvez également créer vos propres modes d’exécution personnalisés. I
 
 * `author` + `development`
 
-* `publish` +  `test`
+* `publish` + `test`
 
 * `publish` + `test` + `golive`
 
-* `publish` +  `intranet`
+* `publish` + `intranet`
 
 * le cas échéant.
 
@@ -81,7 +81,7 @@ Ces modes permettent de contrôler l’utilisation d’un échantillon de conten
 
 Le mode d’exécution nosamplecontent est conçu pour les installations de production.
 
-## Définition des propriétés de configuration d’un mode d’exécution  {#defining-configuration-properties-for-a-run-mode}
+## Définition des propriétés de configuration d’un mode d’exécution {#defining-configuration-properties-for-a-run-mode}
 
 Une collection de valeurs pour les propriétés de configuration, utilisée pour un mode d’exécution spécifique, peut être enregistrée dans le référentiel.
 
@@ -109,7 +109,7 @@ Pour plus d’informations sur la définition des différents nœuds de configur
 >
 >Pour les [modes d’exécution d’installation](#installation-run-modes) (author, par exemple), le mode d’exécution ne peut pas être modifié après l’installation. Cependant, les modifications apportées aux différentes propriétés de configuration seront appliquées au redémarrage.
 
-## Définition de lots supplémentaires à installer pour un mode d’exécution  {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Définition de lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
 Il est également possible de spécifier des lots supplémentaires à installer pour un mode d’exécution en particulier. Pour ces définitions, les dossiers d’installation sont utilisés pour contenir les lots. Là aussi, le mode d’exécution est indiqué par un préfixe :
 
@@ -144,7 +144,7 @@ Vous pouvez utiliser le fichier `sling.properties` pour définir le mode d’ex�
 
 ### Utilisation de l’option -r {#using-the-r-option}
 
-Un mode d’exécution personnalisé peut être activé à l’aide de l’option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
+Un mode d’exécution personnalisé peut être activé à l’aide de la fonction `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -163,7 +163,7 @@ Une propriété système dans le script de démarrage peut être utilisée pour 
 Les deux modes d&#39;exécution d&#39;installation suivants peuvent être activés en renommant le fichier jar d&#39;installation avant l&#39;installation :
 
 * publish
-* Auteur 
+* auteur 
 
 Le fichier JAR doit suivre la convention de dénomination :
 

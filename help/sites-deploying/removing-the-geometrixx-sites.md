@@ -1,8 +1,8 @@
 ---
 title: Suppression des sites Geometrixx
-seo-title: Suppression des sites Geometrixx
+seo-title: Removing the Geometrixx Sites
 description: Découvrez comment supprimer l’échantillon de contenu Geometrixx.
-seo-description: Découvrez comment supprimer l’échantillon de contenu Geometrixx.
+seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
 source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '132'
 ht-degree: 100%
 
 ---

@@ -9,11 +9,11 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
-feature: Collaboration, Gestion des ressources
+feature: Collaboration,Asset Management
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '422'
-ht-degree: 80%
+source-wordcount: '419'
+ht-degree: 83%
 
 ---
 
@@ -27,9 +27,9 @@ Dynamic Media offre des expériences de visualisation interactives, notamment de
 >
 >A Community article is available on [Working with Adobe Experience Manager and Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html). -->
 
-## Tâches que vous pouvez effectuer avec Dynamic Media   {#what-you-can-do-with-dynamic-media}
+## Tâches que vous pouvez effectuer avec Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation des ressources en général est traitée en détail dans la section [Utilisation des ressources numériques](manage-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
+Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation des ressources en général est traitée en détail. [Utilisation de ressources numériques](manage-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
 Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes :
 
@@ -41,16 +41,16 @@ Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes�
 * [Images panoramiques](panoramic-images.md)
 
 * [Visionneuses à 360°](spin-sets.md)
-* [Vidéo](video.md)
-* [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
-* [Gestion des ressources](managing-assets.md)
+* [Vidéo ](video.md)
+* [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
+* [Gestion des actifs](managing-assets.md)
 * [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](custom-pop-ups.md)
 
 Voir aussi [Configuration de Dynamic Media](administering-dynamic-media.md).
 
 >[!NOTE]
 >
->Pour comprendre les différences entre l’utilisation de Dynamic Media et l’intégration de Dynamic Media Classic à Adobe Experience Manager, voir [Intégration de Dynamic Media Classic par rapport à Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Pour comprendre les différences entre l’utilisation de Dynamic Media et l’intégration de Dynamic Media Classic à Adobe Experience Manager, voir [Intégration de Dynamic Media Classic et Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media activé ou Dynamic Media désactivé {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -60,7 +60,7 @@ Les caractéristiques suivantes permettent de déterminer si Dynamic Media est 
 * Des visionneuses d’images, à 360° et de supports variés sont disponibles.
 * Des rendus PTIFF sont créés.
 
-Lorsque vous sélectionnez une ressource image, l’affichage de la ressource est différent avec Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
+Lorsque vous sélectionnez une ressource image, l’affichage de la ressource est différent avec Dynamic Media. [enabled](config-dynamic.md#enabling-dynamic-media). Dynamic Media utilise les visionneuses HTML5 à la demande.
 
 ### Rendus dynamiques {#dynamic-renditions}
 
@@ -76,7 +76,7 @@ Des visionneuses d’images, à 360° et de supports variés sont disponibles lo
 
 ### Rendus PTIFF {#ptiff-renditions}
 
-Les ressources activées pour Dynamic Media comprennent `pyramid.tiffs`.
+Les ressources compatibles avec Dynamic Media sont les suivantes : `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Publication et annulation de publication de formulaires et documents
+title: Publier et annuler la publication de formulaires et documents
 seo-title: Publishing and unpublishing forms and documents
 description: Vous pouvez planifier la publication de formulaires et l’annulation de leur publication. Les formulaires publiés sont répliqués sur l’instance de publication.
 seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
@@ -12,7 +12,7 @@ discoiquuid: 32a7a50c-74f4-49bc-a0bd-a9ec142527cb
 docset: aem65
 exl-id: f26c4268-7885-4e61-a258-219d98288548
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 100%
 

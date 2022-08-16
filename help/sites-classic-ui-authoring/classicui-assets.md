@@ -1,8 +1,8 @@
 ---
 title: Utilisation des ressources
-seo-title: Utilisation des ressources
+seo-title: Working with Assets
 description: La section Environnement et outils de l’auteur fournit des informations sur l’utilisation de l’outil de recherche de contenu permettant de rechercher et d’utiliser des ressources lors de la modification des pages. AEM Assets offre d’autres méthodes pour utiliser les ressources.
-seo-description: La section Environnement et outils de l’auteur fournit des informations sur l’utilisation de l’outil de recherche de contenu permettant de rechercher et d’utiliser des ressources lors de la modification des pages. AEM Assets offre d’autres méthodes pour utiliser les ressources.
+seo-description: The Author Environment and Tools section provides information about using Content Finder to find and use assets when editing pages. AEM Assets provides other methods for working with assets.
 uuid: 65d1e593-9957-45b7-8831-45055aa41a1d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,8 +12,8 @@ discoiquuid: f3b4d49b-5873-4825-91b9-71a3204516b1
 exl-id: daf5c934-8a98-4891-94a1-029056d87931
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 92%
+source-wordcount: '80'
+ht-degree: 90%
 
 ---
 

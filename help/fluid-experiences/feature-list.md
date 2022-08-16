@@ -2,11 +2,11 @@
 title: Liste des fonctionnalités des expériences fluides AEM
 description: Liste des fonctionnalités des expériences fluides
 index: n
-feature: 'Création '
+feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '350'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 Les expériences fluides Adobe Experience Manager s’inspirent des puissants ensembles de fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste pour la diffusion de contenu sans interface utilisateur.
 
-AEM Expériences fluides se différencie de l’AEM classique en ce que seul le cas d’utilisation de diffusion sans interface est traité. La création et la diffusion de contenu performantes et la prise en charge AEM des cas d’utilisation hybrides sont disponibles avec les [solutions AEM Sites, Assets et Dynamic Media complètes.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/user-guide/home.html)
+AEM Expériences fluides se différencie de l’AEM classique en ce que seul le cas d’utilisation de diffusion sans interface est traité. La création et la diffusion de contenu performantes et AEM prise en charge efficace des cas d’utilisation hybrides sont disponibles avec la méthode [solutions AEM Sites, Assets et Dynamic Media complètes.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/user-guide/home.html)
 
 Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences fluides et renvoient vers la documentation d’assistance appropriée.
 
@@ -47,7 +47,7 @@ Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences
 
 |  |
 |---|
-| API HTTP [ ](/help/assets/mac-api-assets.md) |
+| [API HTTP](/help/assets/mac-api-assets.md) |
 | [Modèles de contenu structuré](/help/assets/content-fragments/content-fragments.md) |
 | [Content Services](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) |
@@ -62,7 +62,7 @@ Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences
 |---|
 | [Gestion des utilisateurs](/help/sites-administering/user-group-ac-admin.md) |
 | [Gestion des ressources multilingues](/help/assets/multilingual-assets.md) |
-| [Internationalisation  ](/help/sites-developing/i18n.md) |
+| [Internationalisation](/help/sites-developing/i18n.md) |
 | [Traduction de contenu](/help/sites-administering/translation.md) |
 | [Surveillance](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sauvegarde](/help/sites-administering/backup-and-restore.md) |

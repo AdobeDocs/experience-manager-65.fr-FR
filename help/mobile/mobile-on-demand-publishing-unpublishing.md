@@ -1,8 +1,8 @@
 ---
 title: Publication du contenu Annuler la publication
-seo-title: Publication du contenu Annuler la publication
+seo-title: Publish UnPublish Content
 description: Une fois que vous connaissez les actions de gestion de contenu sur les articles, bannières et collections, suivez cette page pour découvrir comment publier votre contenu. Vous pouvez également annuler la publication de votre contenu.
-seo-description: Une fois que vous connaissez les actions de gestion de contenu sur les articles, bannières et collections, suivez cette page pour découvrir comment publier votre contenu. Vous pouvez également annuler la publication de votre contenu.
+seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
 uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 7%
+source-wordcount: '268'
+ht-degree: 8%
 
 ---
 
-# Publier Un Contenu De Publication{#publish-unpublish-content}
+# Publication du contenu Annuler la publication{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -27,7 +27,7 @@ Une fois que vous connaissez les actions de gestion de contenu sur les articles,
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, voir [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception des applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 ## Publication/annulation de la publication du contenu {#publishing-unpublishing-the-content}
 
@@ -51,7 +51,7 @@ Processus général de publication/annulation de la publication d’un article :
 
 ![chlimage_1-9](assets/chlimage_1-9.gif)
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez appris à créer et publier du contenu, reportez-vous à la section
 

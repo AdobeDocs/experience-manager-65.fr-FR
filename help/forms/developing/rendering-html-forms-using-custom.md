@@ -13,7 +13,7 @@ discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1688'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Vous pouvez récupérer un exemple de fichier CSS à l’aide de l’application
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Référencer des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -115,24 +115,24 @@ Rendez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide de 
 
    Appelez la méthode `(Deprecated) (Deprecated) renderHTMLForm` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Une valeur dʼénumération `TransformTo` qui spécifie le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, indiquez `TransformTo.MSDHTML`.
-   * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document` vide.
-   * Lʼobjet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
+   * L’objet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Une valeur de chaîne qui spécifie la valeur dʼen-tête `HTTP_USER_AGENT`, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * Un objet `URLSpec` qui stocke les valeurs URI nécessaires à la restitution dʼun formulaire HTML.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif. Si vous ne souhaitez pas joindre de fichier au formulaire, spécifiez `null`.
+   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif, si vous ne souhaitez pas joindre de fichier au formulaire, indiquez `null`.
 
-   La méthode `(Deprecated) renderHTMLForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être enregistré dans le navigateur web du client.
+   La méthode `(Deprecated) renderHTMLForm` renvoie un objet `FormsResult` qui contient un flux de données de formulaire qui doit être écrit dans le navigateur web du client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de lʼobjet `FormsResult`.
-   * Obtenez le type de contenu de lʼobjet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
-   * Définir le type de contenu de lʼobjet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de lʼobjet `com.adobe.idp.Document`.
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web du client en appelant la méthode `getOutputStream` de lʼobjet `javax.servlet.h\ttp.HttpServletResponse`.
-   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de lʼobjet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de lʼobjet `InputStream` et en transmettant le tableau d’octets comme argument.
+   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.h\ttp.HttpServletResponse`.
+   * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
+   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
    * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
@@ -161,36 +161,36 @@ Restituez un formulaire HTML utilisant un fichier CSS personnalisé à l’aide 
 1. Référencer le fichier CSS
 
    * Créez un objet `HTMLRenderSpec` en utilisant son constructeur.
-   * Pour restituer le formulaire HTML utilisant un fichier CSS personnalisé, appelez la méthode `setCustomCSSURI` de lʼobjet `HTMLRenderSpec` et transmettez une valeur de chaîne spécifiant l’emplacement et le nom du fichier CSS.
+   * Pour effectuer le rendu du formulaire HTML qui utilise un fichier CSS personnalisé, appelez la méthode `setCustomCSSURI` de l’objet `HTMLRenderSpec` et transmettez une valeur de chaîne qui spécifie l’emplacement et le nom du fichier CSS.
 
 1. Effectuer le rendu d’un formulaire HTML
 
-   Appelez la méthode `(Deprecated) renderHTMLForm` de lʼobjet `FormsService` et transmettez les valeurs suivantes :
+   Appelez la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Une valeur dʼénumération `TransformTo` qui spécifie le type de préférence HTML. Par exemple, pour restituer un formulaire HTML compatible avec le code HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
-   * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez `null`. (Consultez la section [Insérer automatiquement des données dans les formulaires de Forms avec des dispositions souples](/help/forms/developing/prepopulating-forms-flowable-layouts.md)).
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Une valeur d’énumération `TransformTo` spécifiant le type de préférence HTML. Par exemple, pour effectuer le rendu d’un formulaire HTML compatible avec le HTML dynamique pour Internet Explorer 5.0 ou version ultérieure, spécifiez `TransformTo.MSDHTML`.
+   * Objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez `null`. (Voir [Préremplir des formulaires avec des mises en page modulables](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Lʼobjet `HTMLRenderSpec` qui stocke les options d’exécution HTML.
    * Une valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, telle que `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Vous pouvez transmettre une chaîne vide si vous ne souhaitez pas définir cette valeur.
    * Un objet `URLSpec` qui stocke les valeurs URI nécessaires à la restitution dʼun formulaire HTML.
-   * Objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif. Si vous ne souhaitez pas joindre de fichier au formulaire, spécifiez `null`.
+   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il s’agit d’un paramètre facultatif. Si vous ne souhaitez pas joindre de fichier au formulaire, spécifiez `null`.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide renseigné par la méthode `(Deprecated) renderHTMLForm`. La valeur de ce paramètre enregistre le formulaire rendu.
-   * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide renseigné par la méthode `(Deprecated) renderHTMLForm`. Ce paramètre stocke les données XML de sortie.
-   * Un objet `javax.xml.rpc.holders.LongHolder` vide renseigné par la méthode `(Deprecated) renderHTMLForm`. Cet argument stocke le nombre de pages du formulaire.
-   * Un objet `javax.xml.rpc.holders.StringHolder` vide renseigné par la méthode `(Deprecated) renderHTMLForm`. Cet argument stocke la valeur du paramètre régional.
-   * Un objet `javax.xml.rpc.holders.StringHolder` vide renseigné par la méthode `(Deprecated) renderHTMLForm`. Cet argument stocke la valeur de rendu HTML utilisée.
+   * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide, renseigné par la méthode `(Deprecated) renderHTMLForm`. Ce paramètre stocke les données XML de sortie.
+   * Un objet `javax.xml.rpc.holders.LongHolder` vide, renseigné par la méthode `(Deprecated) renderHTMLForm`. Cet argument stocke le nombre de pages du formulaire.
+   * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `(Deprecated) renderHTMLForm`. Cet argument stocke la valeur du paramètre régional.
+   * Un objet `javax.xml.rpc.holders.StringHolder` vide, renseigné par la méthode `(Deprecated) renderHTMLForm`. Cet argument stocke la valeur de rendu HTML utilisée.
    * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
 
-   La méthode `(Deprecated) renderHTMLForm` renseigne lʼobjet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis comme dernière valeur d’argument avec un flux de données de formulaire à écrire dans le navigateur web du client.
+   La méthode `(Deprecated) renderHTMLForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
-   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de lʼobjet `com.adobe.idp.services.holders.FormsResultHolder`.
-   * Créez un objet `BLOB` qui contient des données de formulaire en appelant la méthode `getOutputContent` de lʼobjet `FormsResult`.
-   * Obtenez le type de contenu de lʼobjet `BLOB` en appelant sa méthode `getContentType`.
-   * Définissez le type de contenu de lʼobjet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de lʼobjet `BLOB`.
-   * Créez un objet `javax.servlet.ServletOutputStream`, utilisé pour écrire le flux de données de formulaire dans le navigateur web du client, en appelant la méthode `getOutputStream` de lʼobjet `javax.servlet.http.HttpServletResponse`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de l’objet `com.adobe.idp.services.holders.FormsResultHolder`.
+   * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
+   * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
+   * Créez un objet `javax.servlet.ServletOutputStream` servant à écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
    * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**

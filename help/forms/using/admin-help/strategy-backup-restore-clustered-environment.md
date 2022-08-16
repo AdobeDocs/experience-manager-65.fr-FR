@@ -1,7 +1,7 @@
 ---
 title: Stratégie de sauvegarde et de restauration dans un environnement organisé en grappes
 seo-title: Strategy for backup and restore in a clustered environment
-description: Si votre déploiement d’AEM Forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM Forms.
+description: Si votre déploiement d’AEM forms stocke les données personnalisées supplémentaires dans une base de données différente, vous devez mettre en place une stratégie de sauvegarde pour ces données veillant à ce qu’elles soient synchronisées avec les données AEM forms.
 seo-description: If your AEM forms implementation stores additional custom data in a different database, you must implement a strategy to back up this data ensuring that it remains in sync with the AEM forms data.
 uuid: c29b989c-30ed-4a8e-bab8-9b7746291a33
 contentOwner: admin
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 98c96349-f253-475f-b646-352269814a38
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1476'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ Cette rubrique présente les stratégies suivantes pour sauvegarder tout environ
    1. Sauvegardez tous les fichiers de tout nœud secondaire du cluster, notamment les sous-répertoires.
    1. Sauvegardez le fichier repository/system.id de chaque nœud de la grappe séparément.
 
-   Pour les étapes détaillées, voir [Sauvegarde et restauration](https://docs.adobe.com/docs/fr/crx/current/administering/backup_and_restore.html).
+   Pour les étapes détaillées, voir [Sauvegarde et restauration](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 1. Le cas échéant, sauvegardez toutes les autres données, telles que les polices du client.
 1. Redémarrez la grappe.
@@ -177,7 +177,7 @@ Dans le cas d’un échec de l’ensemble de la grappe en raison d’échecs tel
 
 ## Sauvegarde et restauration du nœud d’éditeur de la solution Correspondence Management {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-Le nœud d’éditeur ne dispose pas d’une relation maître-esclave dans un environnement organisé en grappes. Vous pouvez réaliser une sauvegarde de tout nœud d’éditeur en suivant le document [Sauvegarde et restauration](https://docs.adobe.com/docs/fr/crx/current/administering/backup_and_restore.html).
+Le nœud d’éditeur ne dispose pas d’une relation maître-esclave dans un environnement organisé en grappes. Vous pouvez réaliser une sauvegarde de tout nœud d’éditeur en suivant le document [Sauvegarde et restauration](https://docs.adobe.com/docs/en/crx/current/administering/backup_and_restore.html).
 
 ### Récupération d’un seul nœud d’éditeur {#recover-a-single-publisher-node}
 

@@ -1,8 +1,8 @@
 ---
 title: Création et modification d’applications à l’aide de la console Applications
-seo-title: Création et modification d’applications à l’aide de la console Applications
+seo-title: Creating and Editing Apps Using the Apps Console
 description: Consultez cette page pour en savoir plus sur la création et la modification d’applications à l’aide de la console d’applications.
-seo-description: Consultez cette page pour en savoir plus sur la création et la modification d’applications à l’aide de la console d’applications.
+seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2638'
+source-wordcount: '2617'
 ht-degree: 2%
 
 ---
@@ -41,7 +41,7 @@ AEM Mobile fournit le plan directeur de l’application PhoneGap pour la créati
 
 La page racine des applications mobiles que vous créez dans AEM apparaît dans la console Applications.
 
-La page racine est stockée sous la propriété Destination Path de l’application qui a été spécifiée lors de la création de l’application (le chemin par défaut est /content/phonegap/apps). Le nom de la page est la propriété Name de l’application. Par exemple, l’URL par défaut de la page racine du site nommée `myphonegapapp` est `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+La page racine est stockée sous la propriété Destination Path de l’application qui a été spécifiée lors de la création de l’application (le chemin par défaut est /content/phonegap/apps). Le nom de la page est la propriété Name de l’application. Par exemple, l’URL par défaut de la page racine du site nommée `myphonegapapp` is `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -68,19 +68,19 @@ La page d’accueil, ou la page index.html d’une variante linguistique d’une
 
 Les applications mobiles sont basées sur un plan directeur qui définit une structure de page et des propriétés. Vous pouvez configurer les propriétés de l’application suivantes :
 
-* **Titre :** titre de l’application.
-* **Chemin d’accès de destination :**  emplacement dans le référentiel où est stockée l’application. Laissez la valeur par défaut pour créer un chemin d’accès en fonction du nom de l’application.
+* **Titre :** Titre de l’application.
+* **Chemin de destination :** Emplacement dans le référentiel où l’application est stockée. Laissez la valeur par défaut pour créer un chemin d’accès en fonction du nom de l’application.
 
-* **Nom :** la valeur par défaut est la valeur de la propriété Title avec les caractères d’espace supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple pour le noeud de référentiel qui représente l’application.
-* **Description :**  description de l’application.
-* **URL du serveur :** URL qui fournit des mises à jour de contenu en direct (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
+* **Nom :** La valeur par défaut est la valeur de la propriété Title avec les caractères d’espace supprimés. Le nom est utilisé dans CQ pour faire référence à l’application, par exemple pour le noeud de référentiel qui représente l’application.
+* **Description :** Description de l’application.
+* **URL du serveur :** URL qui fournit des mises à jour de contenu en vol (OTA) à l’application. La valeur par défaut est l’URL du serveur de publication de l’instance utilisée pour créer une application (provenant du service externalizer). Notez qu’il doit s’agir d’une instance de serveur de publication plutôt que d’un auteur, ce qui nécessite une authentification.
 
 Vous pouvez également fournir un fichier image à utiliser comme miniature de l’application, sélectionner la configuration de PhoneGap Build à utiliser et sélectionner la configuration d’analyse de l’application mobile à utiliser. Cette image est utilisée uniquement comme miniature pour représenter votre application mobile dans la console des applications mobiles en Experience Manager.
 
 Il existe des onglets supplémentaires (et facultatifs) pour créer le service cloud et intégrer le module SDK Mobile Services Adobe dans votre application.
 
 * Build : Cliquez sur Gérer les configurations et configurez ici votre service de génération build build.phonegap.com. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service cloud PhoneGap Build.
-* Analytics : Cliquez sur Gérer les configurations et configurez le service cloud [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html). Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
+* Analytics : Cliquez sur Gérer les configurations et configurez vos [SDK Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
 
 >[!NOTE]
 >
@@ -109,7 +109,7 @@ La procédure suivante utilise l’interface utilisateur tactile pour créer une
 
 Après avoir créé une application mobile, vous pouvez modifier ses propriétés.
 
-#### Modifier le titre, la description et l’icône {#change-the-title-description-and-icon}
+#### Modification du titre, de la description et de l’icône {#change-the-title-description-and-icon}
 
 1. Sur le rail, cliquez ou appuyez sur Applications.
 1. Sélectionnez l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de page .
@@ -124,7 +124,7 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 
    ![](do-not-localize/chlimage_1-10.png)
 
-#### Configuration d’une variation linguistique de l’application {#configure-a-language-variation-of-the-application}
+#### Configuration d’une variation de langue de l’application {#configure-a-language-variation-of-the-application}
 
 1. Sur le rail, cliquez ou appuyez sur Applications.
 1. Cliquez pour accéder à l’application mobile que vous souhaitez modifier dans l’Admin Console des applications. Sélectionnez la version linguistique de l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de l’application .
@@ -267,7 +267,7 @@ Contient un bouton Précédent. Le système de paragraphes vous permet d’ajout
 
 Lors de l’utilisation de l’application, la page Actualités est disponible dans le carrousel sur la page en anglais.
 
-### Page À propos de nous - Application mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
+### Page À Propos De Nous - Application Mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
 La page À propos de nous contient plusieurs composants de ligne à deux colonnes. Chaque colonne contient un composant Image ou Texte . Les composants sont modifiables et le système de paragraphes vous permet d’ajouter des composants.
 
@@ -334,7 +334,7 @@ Renseignez la liste à l’aide des résultats d’une recherche par mot-clé. L
 
 **Recherche avancée**
 
-Renseignez la liste à l’aide d’une requête [Query Builder](/help/sites-developing/querybuilder-api.md).
+Renseignez la liste à l’aide d’une [Query Builder](/help/sites-developing/querybuilder-api.md) requête.
 
 ### Image {#image}
 

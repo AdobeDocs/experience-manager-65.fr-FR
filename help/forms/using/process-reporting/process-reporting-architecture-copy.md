@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 source-git-commit: 56c6cfd437ef185336e81373bd5f758205b96317
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 100%
 
@@ -74,4 +74,4 @@ Le service utilise ensuite les services OSGi pour obtenir les données de rappor
 
 Vous pouvez créer des rapports personnalisés et les afficher dans l’onglet Rapports personnalisés de l’interface utilisateur de Process Reporting.
 
-Pour connaître les étapes de création d’un rapport personnalisé, voir Pour créer un rapport personnalisé dans l’article [Rapports personnalisés dans les rapports de processus](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+Pour connaître les étapes de création d’un rapport personnalisé, voir la section Pour créer un rapport personnalisé dans l’article [Rapports personnalisés dans Process Reporting](/help/forms/using/process-reporting/process-reporting-custom-reports.md).

@@ -11,7 +11,7 @@ discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
 
@@ -153,7 +153,7 @@ String browserLocale = "en";
     }
 ```
 
-To
+À
 
 ```jsp
 String browserLocale = "en";
@@ -225,7 +225,7 @@ String browserLocale = "en";
                        <% if (loginFailed) {%>
    ```
 
-   To
+   À
 
    ```jsp
    div class="loginContent">
@@ -276,7 +276,7 @@ css.newLoginContentArea {
    <div class="loginContentArea">
    ```
 
-   To
+   À
 
    ```jsp
    <div class="newLoginContentArea">
@@ -319,7 +319,7 @@ Par exemple :
 <div class="loginContainerBkg">
 ```
 
-To
+À
 
 ```jsp
 <div class="newLginContainerBkg">

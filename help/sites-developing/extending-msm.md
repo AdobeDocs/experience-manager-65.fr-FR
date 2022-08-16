@@ -1,8 +1,8 @@
 ---
 title: Extension du Multi Site Manager
-seo-title: Extension du Multi Site Manager
+seo-title: Extending the Multi Site Manager
 description: Cette page vous explique comment étendre les fonctionnalités de Multi Site Manager
-seo-description: Cette page vous explique comment étendre les fonctionnalités de Multi Site Manager
+seo-description: This page helps you extend the functionalities of the Multi Site Manager
 uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
 workflow-type: tm+mt
-source-wordcount: '2601'
+source-wordcount: '2584'
 ht-degree: 67%
 
 ---
@@ -54,32 +54,32 @@ Les principaux objets de l’API MSM interagissent comme suit (voir aussi [Terme
 
 * **`Blueprint`**
 
-   Un `Blueprint` (comme dans [configuration de plan directeur](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) spécifie les pages à partir desquelles une Live Copy peut hériter du contenu.
+   A `Blueprint` (comme dans [configuration du plan directeur](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) indique les pages à partir desquelles une Live Copy peut hériter du contenu.
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
-   * L’utilisation d’une configuration de plan directeur ( `Blueprint`) est facultative, mais :
+   * Utilisation d’une configuration de plan directeur ( `Blueprint`) est facultatif, mais :
 
-      * Permet à l’auteur d’utiliser l’option **Déploiement** sur la source (pour (explicitement) pousser les modifications vers les Live Copies qui héritent de cette source).
+      * Permet à l’auteur d’utiliser la variable **Déploiement** sur la source (pour pousser (explicitement) les modifications vers les Live Copies qui héritent de cette source).
       * Permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
       * Définit la configuration de déploiement par défaut pour toutes les Live Copy résultantes.
 
 * **`LiveRelationship`**
 
-   `LiveRelationship` spécifie la connexion (relation) entre une ressource dans la branche Live Copy et sa ressource source/plan directeur équivalente.
+   Le `LiveRelationship` spécifie la connexion (relation) entre une ressource de la branche Live Copy et sa ressource source/plan directeur équivalente.
 
    * Les relations sont utilisées lors de la réalisation de l’héritage et du déploiement.
-   * `LiveRelationship` permettent d’accéder (référence) aux configurations de déploiement (  `RolloutConfig`),  `LiveCopy` et aux  `LiveStatus` objets liés à la relation.
+   * `LiveRelationship` Les objets permettent d’accéder (références) aux configurations de déploiement ( `RolloutConfig`), `LiveCopy`, et `LiveStatus` objets liés à la relation.
 
-   * Par exemple, une Live Copy est créée dans `/content/copy/us` à partir de la source/du plan directeur à `/content/we-retail/language-masters`. Les ressources `/content/we.retail/language-masters/en/jcr:content` et `/content/copy/us/en/jcr:content` forment une relation.
+   * Par exemple, une Live Copy est créée dans `/content/copy/us` à partir de la source/du plan directeur à l’adresse `/content/we-retail/language-masters`. Les ressources `/content/we.retail/language-masters/en/jcr:content` et `/content/copy/us/en/jcr:content` forment une relation.
 
 * **`LiveCopy`**
 
-   `LiveCopy` contient les détails de configuration des relations (  `LiveRelationship`) entre les ressources Live Copy et leurs ressources source/de plan directeur.
+   `LiveCopy` contient les détails de configuration des relations ( `LiveRelationship`) entre les ressources Live Copy et leurs ressources source/de plan directeur.
 
-   * Utilisez la classe `LiveCopy` pour accéder au chemin de la page, au chemin de la page source/du plan directeur, aux configurations de déploiement et si les pages enfants sont également incluses dans la balise `LiveCopy`.
+   * Utilisez la variable `LiveCopy` pour accéder au chemin d’accès de la page, au chemin d’accès de la page source/de plan directeur, aux configurations de déploiement et si les pages enfants sont également incluses dans la variable `LiveCopy`.
 
-   * Un noeud `LiveCopy` est créé chaque fois que **Créer un site** ou **Créer une Live Copy** est utilisé.
+   * A `LiveCopy` noeud est créé chaque fois que **Créer un site** ou **Créer une Live Copy** est utilisée.
 
 * **`LiveStatus`**
 
@@ -93,11 +93,11 @@ Les principaux objets de l’API MSM interagissent comme suit (voir aussi [Terme
 
 * **`LiveActionFactory`**
 
-   Crée des objets `LiveAction` selon une configuration `LiveAction`. Les configurations sont stockées en tant que ressources dans le référentiel.
+   Crée `LiveAction` objets donnés `LiveAction` configuration. Les configurations sont stockées en tant que ressources dans le référentiel.
 
 * **`RolloutConfig`**
 
-   `RolloutConfig` contient une liste de `LiveActions`, à utiliser lors du déclenchement. `LiveCopy` hérite de la balise `RolloutConfig` et le résultat est présent dans la balise `LiveRelationship`.
+   Le `RolloutConfig` contient une liste de `LiveActions`, à utiliser lors du déclenchement. Le `LiveCopy` hérite de la propriété `RolloutConfig` et le résultat est présent dans la variable `LiveRelationship`.
 
    * La première configuration d&#39;une Live Copy utilise également un RolloutConfig (qui déclenche les LiveActions).
 
@@ -105,10 +105,10 @@ Les principaux objets de l’API MSM interagissent comme suit (voir aussi [Terme
 
 Créez des actions de synchronisation personnalisées à utiliser avec vos configurations de déploiement. Créez une action de synchronisation lorsque les actions [installées](/help/sites-administering/msm-sync.md#installed-synchronization-actions) ne répondent pas aux exigences spécifiques de votre application. Pour ce faire, créez deux classes :
 
-* Une implémentation de l’interface [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) qui exécute l’action.
+* Une implémentation de la variable [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) qui exécute l’action.
 * Un composant OSGI qui implémente l’interface [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) et crée des instances de votre classe `LiveAction`.
 
-`LiveActionFactory` crée des instances de la classe `LiveAction` pour une configuration donnée :
+Le `LiveActionFactory` crée des instances de la fonction `LiveAction` pour une configuration donnée :
 
 * Les classes `LiveAction` incluent les méthodes suivantes :
 
@@ -117,11 +117,11 @@ Créez des actions de synchronisation personnalisées à utiliser avec vos confi
 
 * Les classes `LiveActionFactory` incluent les méthodes suivantes :
 
-   * `LIVE_ACTION_NAME`: Champ contenant le nom du  `LiveAction`associé. Ce nom doit coïncider avec la valeur renvoyée par la méthode `getName` de la classe `LiveAction`.
+   * `LIVE_ACTION_NAME`: Un champ contenant le nom de l’objet associé `LiveAction`. Ce nom doit coïncider avec la valeur renvoyée par la méthode `getName` de la classe `LiveAction`.
 
-   * `createAction`: Crée une instance de la  `LiveAction`. Le paramètre facultatif `Resource` peut être utilisé pour fournir des informations de configuration.
+   * `createAction`: Crée une instance de la fonction `LiveAction`. Le paramètre facultatif `Resource` peut être utilisé pour fournir des informations de configuration.
 
-   * `createsAction`: Renvoie le nom du  `LiveAction`associé.
+   * `createsAction`: Renvoie le nom de l’objet associé `LiveAction`.
 
 ### Accès au nœud de configuration LiveAction {#accessing-the-liveaction-configuration-node}
 
@@ -129,7 +129,7 @@ Utilisez le nœud de configuration `LiveAction` dans le référentiel pour stock
 
 Par exemple, une `LiveAction` doit stocker le nom de l’auteur du plan directeur. Une propriété du nœud de configuration inclut le nom de la propriété de la page plan directeur qui stocke les informations. Lorsqu’elle est exécutée, la `LiveAction` récupère le nom de la propriété à partir de la configuration, puis obtient la valeur de la propriété.
 
-Le paramètre de la méthode ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` est un objet `Resource`. Cet objet `Resource`  représente le nœud `cq:LiveSyncAction`   pour cette LiveAction dans la configuration du déploiement. Voir [Création d’une configuration de déploiement](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Comme d’habitude, lorsque vous utilisez un nœud de configuration, vous devez l’adapter à un objet `ValueMap` :
+Le paramètre de la variable ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` est une méthode `Resource` . Cet objet `Resource`  représente le nœud `cq:LiveSyncAction`   pour cette LiveAction dans la configuration du déploiement. Voir [Création d’une configuration de déploiement](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Comme d’habitude, lorsque vous utilisez un nœud de configuration, vous devez l’adapter à un objet `ValueMap` :
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -154,7 +154,7 @@ Les objets suivants sont fournis en tant que paramètres de la méthode `execute
 
 * La valeur reset indique le mode de réinitialisation du déploiement.
 
-À partir de ces objets, vous pouvez obtenir toutes les informations sur la `LiveCopy`. Vous pouvez également utiliser les objets `Resource` pour obtenir les objets `ResourceResolver`, `Session` et `Node`. Ces objets sont utiles pour manipuler le contenu du référentiel :
+À partir de ces objets, vous pouvez obtenir toutes les informations sur la `LiveCopy`. Vous pouvez également utiliser la variable `Resource` Objets à obtenir `ResourceResolver`, `Session`, et `Node` objets. Ces objets sont utiles pour manipuler le contenu du référentiel :
 
 Dans la première ligne du code suivant, source est l’objet `Resource` de la page source :
 
@@ -166,7 +166,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Les arguments `Resource` peuvent être des objets `null` ou `Resources` qui ne s’adaptent pas aux objets `Node`, tels que les objets [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
+>Le `Resource` les arguments peuvent `null` ou `Resources` objets qui ne s’adaptent pas à `Node` des objets, tels que [ `NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objets.
 
 ## Création d’une configuration de déploiement {#creating-a-new-rollout-configuration}
 
@@ -205,24 +205,24 @@ Pour créer une configuration de déploiement :
    >* Le cas échéant, effectuez des modifications dans /apps.
 
 
-1. Sous cette balise **Créez** un noeud avec les propriétés suivantes :
+1. Sous **Créer** un noeud avec les propriétés suivantes :
 
-   * **Nom** : Nom du noeud de la configuration du déploiement. md#installed-sync-actions), par exemple `contentCopy` ou `workflow`.
+   * **Nom**: Nom du noeud de la configuration du déploiement. md#installed-sync-actions), par exemple `contentCopy` ou `workflow`.
    * **Type** : `cq:RolloutConfig`
 
 1. Ajoutez les propriétés suivantes à ce nœud :
    * **Nom** : `jcr:title`
 
       **Type** : `String`
-      **Valeur** : Titre d’identification qui apparaîtra dans l’interface utilisateur.
+      **Valeur**: Titre d’identification qui apparaîtra dans l’interface utilisateur.
    * **Nom** : `jcr:description`
 
       **Type** : `String`
-      **Valeur** : Description facultative.
+      **Valeur**: Description facultative.
    * **Nom** : `cq:trigger`
 
       **Type** : `String`
-      **Valeur** : Le  [Déploiement ](/help/sites-administering/msm-sync.md#rollout-triggers) à utiliser. Faites un choix parmi 
+      **Valeur**: Le [Déclencheur de déploiement](/help/sites-administering/msm-sync.md#rollout-triggers) à utiliser. Faites un choix parmi 
       * `rollout`
       * `modification`
       * `publish`
@@ -232,19 +232,19 @@ Pour créer une configuration de déploiement :
 
 ### Ajouter des actions de synchronisation à la configuration de déploiement {#add-synchronization-actions-to-the-rollout-configuration}
 
-Les configurations de déploiement sont stockées sous le [noeud de configuration de déploiement](#create-the-rollout-configuration) que vous avez créé sous le noeud `/apps/msm/<your-project>/rolloutconfigs`.
+Les configurations de déploiement sont stockées sous le [noeud de configuration de déploiement](#create-the-rollout-configuration) que vous avez créé sous `/apps/msm/<your-project>/rolloutconfigs` noeud .
 
-Ajoutez des noeuds enfants de type `cq:LiveSyncAction` pour ajouter des actions de synchronisation à la configuration de déploiement. L’ordre des nœuds d’action de synchronisation détermine l’ordre dans lequel les actions se produisent.
+Ajout de noeuds enfants de type `cq:LiveSyncAction` pour ajouter des actions de synchronisation à la configuration de déploiement. L’ordre des nœuds d’action de synchronisation détermine l’ordre dans lequel les actions se produisent.
 
-1. Toujours en CRXDE Lite, sélectionnez le noeud [Configuration du déploiement](#create-the-rollout-configuration).
+1. Toujours en CRXDE Lite, sélectionnez votre [Configuration du déploiement](#create-the-rollout-configuration) noeud .
 
    Par exemple :
    `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. **** Créez un noeud avec les propriétés de noeud suivantes :
+1. **Créer** un noeud avec les propriétés de noeud suivantes :
 
    * **Name** : nom de nœud de l’action de synchronisation.
-Le nom doit être identique au **Nom de l’action** dans le tableau sous [Actions de synchronisation](/help/sites-administering/msm-sync.md#installed-synchronization-actions), par exemple `contentCopy` ou `workflow`.
+Le nom doit être identique au nom **Nom de l’action** dans le tableau sous [Actions de synchronisation](/help/sites-administering/msm-sync.md#installed-synchronization-actions), par exemple `contentCopy` ou `workflow`.
    * **Type** : `cq:LiveSyncAction`
 
 1. Ajoutez et configurez autant de nœuds d’action de synchronisation que vous le souhaitez. Réorganisez les nœuds d’action afin que leur ordre corresponde à celui dans lequel vous souhaitez qu’ils se produisent. Le nœud d’action le plus haut se produit en premier.
@@ -285,12 +285,12 @@ La procédure suivante requiert l’ajout préalable du profil adobe-public à v
 1. Spécifiez les valeurs suivantes à l’invite interactive :
 
    * `groupId`: `com.adobe.example.msm`
-   * `artifactId`:  `MyLiveActionFactory`
-   * `version`:  `1.0-SNAPSHOT`
-   * `package`:  `MyPackage`
-   * `appsFolderName`:  `myapp`
-   * `artifactName`:  `MyLiveActionFactory package`
-   * `packageGroup`:  `myPackages`
+   * `artifactId`: `MyLiveActionFactory`
+   * `version`: `1.0-SNAPSHOT`
+   * `package`: `MyPackage`
+   * `appsFolderName`: `myapp`
+   * `artifactName`: `MyLiveActionFactory package`
+   * `packageGroup`: `myPackages`
 
 1. Lancez Eclipse et [importez le projet Maven](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
@@ -302,7 +302,7 @@ Ajoutez des dépendances pour que le compilateur Eclipse puisse référencer les
 
    `MyLiveActionFactory/pom.xml`
 
-1. Dans l’éditeur, cliquez sur l’onglet `pom.xml` et localisez la section `project/dependencyManagement/dependencies`.
+1. Dans l’éditeur, cliquez sur le bouton `pom.xml` et localisez la `project/dependencyManagement/dependencies` .
 1. Ajoutez le code XML suivant dans l’élément `dependencyManagement`, puis enregistrez le fichier.
 
    ```xml
@@ -388,7 +388,7 @@ Ajoutez des dépendances pour que le compilateur Eclipse puisse référencer les
 
 La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregistre les messages sur les pages source et cible et copie la propriété `cq:lastModifiedBy` du nœud source vers le nœud cible. Le nom de l’action en direct est `exampleLiveAction`.
 
-1. Dans l’Explorateur de projets Eclipse, cliquez avec le bouton droit sur le package `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` et cliquez sur **New** > **Classe**. Comme **nom**, entrez `ExampleLiveActionFactory`, puis cliquez sur **Terminer**.
+1. Dans l’Explorateur de projets Eclipse, cliquez avec le bouton droit sur la `MyLiveActionFactory-bundle/src/main/java/com.adobe.example.msm` module et cliquez sur **Nouveau** > **Classe**. Comme **nom**, entrez `ExampleLiveActionFactory`, puis cliquez sur **Terminer**.
 1. Ouvrez le fichier `ExampleLiveActionFactory.java`, remplacez le contenu par le code suivant et enregistrez le fichier.
 
    ```java
@@ -540,7 +540,7 @@ La classe `LiveActionFactory` suivante implémente une `LiveAction` qui enregist
 
    Le fichier AEM `error.log` doit indiquer que le bundle est démarré.
 
-   Par exemple, [https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs).
+   Par exemple : [https://localhost:4502/system/console/status-slinglogs](https://localhost:4502/system/console/status-slinglogs).
 
    ```xml
    13.08.2013 14:34:55.450 *INFO* [OsgiInstallerImpl] com.adobe.example.msm.MyLiveActionFactory-bundle BundleEvent RESOLVED
@@ -558,14 +558,14 @@ Créez la configuration de déploiement MSM qui utilise la `LiveActionFactory` q
 
    * **Titre** : Exemple de configuration de déploiement
    * **Nom** : examplerolloutconfig
-   * **cq:trigger** :  `publish`
+   * **cq:trigger**: `publish`
 
 ### Ajouter la LiveAction à l’exemple de configuration de déploiement {#add-the-live-action-to-the-example-rollout-configuration}
 
-Configurez la configuration de déploiement que vous avez créée lors de la procédure précédente afin qu’elle utilise la classe `ExampleLiveActionFactory`.
+Configurez la configuration de déploiement que vous avez créée lors de la procédure précédente afin qu’elle utilise la variable `ExampleLiveActionFactory` classe .
 
 1. Ouvrir le CRXDE Lite ; par exemple, [https://localhost:4502/crx/de](https://localhost:4502/crx/de).
-1. Créez le noeud suivant sous `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content` :
+1. Créez le noeud suivant sous `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Nom** : `exampleLiveAction`
    * **Type** : `cq:LiveSyncAction`
@@ -630,30 +630,30 @@ MSM utilise une liste stockée de codes de langue et de pays pour déterminer le
 * Noms des pays
 * Pays par défaut pour les langues (pour les codes tels que `en`, `de`, entre autres)
 
-La liste des langues est stockée sous le noeud `/libs/wcm/core/resources/languages` . Chaque nœud enfant représente une langue ou un code langue-pays :
+La liste des langues est stockée sous le `/libs/wcm/core/resources/languages` noeud . Chaque nœud enfant représente une langue ou un code langue-pays :
 
-* Le nom du noeud est le code de langue (tel que `en` ou `de`) ou le code language_country (tel que `en_us` ou `de_ch`).
+* Le nom du noeud est le code de langue (par exemple, `en` ou `de`) ou le code language_country (par exemple `en_us` ou `de_ch`).
 
 * La propriété `language` du nœud stocke le nom complet de la langue pour le code.
 * La propriété `country` du nœud stocke le nom complet du pays pour le code.
-* Lorsque le nom du noeud se compose uniquement d’un code de langue (tel que `en`), la propriété country est `*`, et une propriété `defaultCountry` supplémentaire stocke le code de la langue-country pour indiquer le pays à utiliser.
+* Lorsque le nom du noeud est constitué uniquement d’un code de langue (tel que `en`), la propriété country est `*`, et un `defaultCountry` stocke le code de la langue-country pour indiquer le pays à utiliser.
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
 Pour modifier les langues :
 
 1. Ouvrez le CRXDE Lite dans votre navigateur web ; par exemple, [https://localhost:4502/crx/de](https://localhost:4502/crx/de)
-1. Sélectionnez le dossier `/apps` et cliquez sur **Créer**, puis sur **Créer un dossier.**
+1. Sélectionnez la `/apps` et cliquez sur **Créer**, puis **Créer un dossier.**
 
-   Nommez le nouveau dossier `wcm`.
+   Nommez le nouveau dossier. `wcm`.
 
-1. Répétez l’étape précédente pour créer l’arborescence de dossiers `/apps/wcm/core`. Créez un noeud de type `sling:Folder` dans `core` appelé `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
+1. Répétez l’étape précédente pour créer le `/apps/wcm/core` arborescence de dossiers. Création d’un noeud de type `sling:Folder` in `core` appelé `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
 
-1. Cliquez avec le bouton droit sur le noeud `/libs/wcm/core/resources/languages` et cliquez sur **Copier**.
-1. Cliquez avec le bouton droit sur le dossier `/apps/wcm/core/resources` et cliquez sur **Coller**. Modifiez les nœuds enfants selon les besoins.
+1. Cliquez avec le bouton droit de la souris sur le `/libs/wcm/core/resources/languages` noeud et cliquez sur **Copier**.
+1. Cliquez avec le bouton droit de la souris sur le `/apps/wcm/core/resources` et cliquez sur **Coller**. Modifiez les nœuds enfants selon les besoins.
 1. Cliquez sur **Enregistrer tout**.
 1. Cliquez sur **Outils**, **Opérations** puis **Console Web**. Depuis cette console, cliquez sur **OSGi**, puis sur **Configuration**.
-1. Recherchez et cliquez sur **Gestionnaire de langues de la gestion du contenu web Day CQ**, remplacez la valeur de **Liste de langues** par `/apps/wcm/core/resources/languages`, puis cliquez sur **Enregistrer**.
+1. Recherchez et cliquez sur **Gestionnaire de langues de la gestion du contenu web Day CQ** et modifiez la valeur de **Liste des langues** to `/apps/wcm/core/resources/languages`, puis cliquez sur **Enregistrer**.
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -691,19 +691,19 @@ Le fait qu’une propriété de page puisse être déployée et, par conséquent
    * s’applique uniquement au premier niveau enfant de la ressource.
    * **Type** : `String`
 
-   * **Valeur** : contient le nom de la propriété en question (et peut être comparé à la valeur de la propriété  `name`; par exemple, voir
+   * **Valeur**: contient le nom de la propriété en question (et est comparable à la valeur de la propriété `name`; par exemple, voir
       `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Lorsque `cq-msm-lockable` a été défini, la rupture/le verrouillage de la chaîne interagit avec MSM de la façon suivante :
 
 * si la valeur de `cq-msm-lockable` est :
 
-   * **Relatif**  (par ex.  `myProperty` ou  `./myProperty`)
+   * **Relatif** (par exemple, `myProperty` ou `./myProperty`)
 
       * il ajoute et supprime la propriété de `cq:propertyInheritanceCancelled`.
-   * **Absolu**  (par ex.  `/image`)
+   * **Absolu** (par exemple, `/image`)
 
-      * rompre la chaîne annule l’héritage en ajoutant le mixin `cq:LiveSyncCancelled` à `./image` et en définissant `cq:isCancelledForChildren` sur `true`.
+      * la rupture de la chaîne annule l’héritage en ajoutant la variable `cq:LiveSyncCancelled` mixin to `./image` et définition `cq:isCancelledForChildren` to `true`.
 
       * la fermeture de la chaîne rétablit l’héritage.
 

@@ -1,8 +1,8 @@
 ---
 title: Annotations lors de la modification d’une page
-seo-title: Annotations lors de la modification d’une page
+seo-title: Annotations when Editing a Page
 description: De nombreux composants directement liés au contenu permettent d’ajouter une annotation.
-seo-description: De nombreux composants directement liés au contenu permettent d’ajouter une annotation.
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '634'
 ht-degree: 97%
 
 ---
@@ -52,8 +52,8 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 >Vous pouvez annoter un large éventail de ressources :
 >
 >* [Annotation de ressources](/help/assets/manage-assets.md#annotating)
-* [Annotation de ressources vidéo](/help/assets/managing-video-assets.md#annotate-video-assets)
-
+>* [Annotation de ressources vidéo](/help/assets/managing-video-assets.md#annotate-video-assets)
+>
 
 
 ### Annotation d’un composant {#annotating-a-component}
@@ -67,12 +67,14 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
    Vous pouvez maintenant afficher les annotations existantes.
 
    >[!NOTE]
-   Pour quitter le mode Annotation, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
+   >
+   >Pour quitter le mode Annotation, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 
 1. Cliquez/appuyez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
    >[!NOTE]
-   Pour mettre un terme à l’ajout d’annotations (et revenir à l’affichage), appuyez/cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
+   >
+   >Pour mettre un terme à l’ajout d’annotations (et revenir à l’affichage), appuyez/cliquez sur l’icône Annuler (symbole x dans un cercle blanc) à gauche de la barre d’outils supérieure.
 
 1. Cliquez/appuyez sur le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
@@ -113,7 +115,8 @@ Le mode Annoter permet de créer, de modifier, de déplacer ou de supprimer des 
 1. Pour quitter le mode Annotation et revenir au mode précédemment affiché, appuyez ou cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 
 >[!NOTE]
-Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur.
+>
+>Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur.
 
 ### Indicateur d’annotations {#annotation-indicator}
 

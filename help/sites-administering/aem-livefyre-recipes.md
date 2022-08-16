@@ -1,8 +1,8 @@
 ---
 title: Recettes AEM Livefyre
-seo-title: Recettes AEM Livefyre
+seo-title: AEM Livefyre Recipes
 description: Cette section contient des instructions détaillées sur les cas d’utilisation courants d’Adobe Experience Manager Livefyre.
-seo-description: Cette section contient des instructions détaillées sur les cas d’utilisation courants d’Adobe Experience Manager Livefyre.
+seo-description: Step-by-step instructions on common use cases for Adobe Experience Manager Livefyre.
 uuid: 78695a63-fca6-4990-9755-0aeaae4a7f64
 contentOwner: alba
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 exl-id: 7ccd67a7-9945-48c1-9986-f4eaf0f2b961
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1545'
 ht-degree: 75%
 
 ---
@@ -31,7 +31,7 @@ Le module AEM Livefyre fournit une implémentation prête à l’emploi, tandis 
 
 Le package Adobe Experience Manager Livefyre est disponible pour AEM 6.1, 6.2 SP1, 6.3, 6.4 et 6.4 SP1. AEM 5.x et 6.0 ne sont pas pris en charge. Pour obtenir des instructions détaillées, voir [Intégration à Livefyre](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-Pour savoir quelles applications Livefyre sont prises en charge, consultez la [Matrice de prise en charge AEM des applications Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+Pour savoir quelles applications Livefyre sont prises en charge, reportez-vous à la section [Matrice de prise en charge AEM des applications Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
 ### Implémentation classique (pour les composants AEM personnalisés) {#traditional-implementation-for-customized-aem-components}
 
@@ -40,7 +40,7 @@ Il existe trois manières d’implémenter Livefyre dans un composant AEM person
 **Méthode 1 : implémentation de l’application Designer**
 
 * **Description :** méthode la plus simple et la plus rapide d’intégrer une application Livefyre. Vous pouvez concevoir, configurer et générer un code intégré JavaScript personnalisé pour intégrer une application Mur multimédia à une page en quelques minutes.
-* **Comment :**  [créer, prévisualiser, publier et incorporer une application Mur multimédia](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **Comment :**  [Création, prévisualisation, publication et incorporation d’une application Mur multimédia](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
 
 * **Exemple :**[https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
@@ -58,14 +58,14 @@ Pour des personnalisations avancées à l’aide du SDK, consultez la page [SDK 
 
 * Pour des expériences et des visualisations de données personnalisées, vous pouvez créer des applications Livefyre de A à Z en utilisant des données Livefyre et des données des médias sociaux, à l’aide des [API Bootstrap et Stream](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-Veillez à suivre les [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://fr.facebookbrand.com/#brand-guidelines-assets) et [Instagram](https://en.instagram-brand.com/) directives d’affichage lors de la création de l’interface utilisateur pour le contenu généré par l’utilisateur.
+Veillez à suivre [Twitter](https://developer.twitter.com/en/developer-terms/display-requirements.html), [Facebook](https://fr.facebookbrand.com/#brand-guidelines-assets), et [Instagram](https://en.instagram-brand.com/) afficher des instructions lors de la création de l’interface utilisateur pour le contenu généré par l’utilisateur.
 
 ### Intégration de l’authentification au mur multimédia {#media-wall-authentication-integration}
 
 Pour les intégrations de murs multimédias nécessitant une authentification, consultez la page :
 
-* [Personnalisation de l’](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) intégration de l’authentification unique pour AEM Identity Management
-* [Intégration d’identité](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces
+* [Personnalisation de l’intégration de connexion unique](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) pour Identity Management AEM
+* [Intégration d’identité](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces (en anglais)
 
 ### Cas d’utilisation {#use-case-overview}
 
@@ -87,12 +87,12 @@ Pour visionner des vidéos de formation sur la diffusion en continu de contenu c
 
 Pour des expériences et des visualisations de données personnalisées, vous pouvez créer des applications Livefyre de A à Z en utilisant des données Livefyre et des données des médias sociaux, à l’aide des [API Bootstrap et Stream](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-Pour les applications Livefyre nécessitant une authentification, voir [Intégration d’identités](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces.
+Pour les applications Livefyre nécessitant une authentification, reportez-vous à la section [Intégration d’identités](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces.
 
 * [Mur multimédia du PGA Tour](https://www.pgatour.com/social-hub.html)
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 
-## Intégration de Livefyre Comments à l’aide des composants AEM ou de l’intégration Livefyre classique  {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
+## Intégration de Livefyre Comments à l’aide des composants AEM ou de l’intégration Livefyre classique {#integrate-livefyre-comments-using-aem-components-or-traditional-livefyre-integration}
 
 ### Intégration d’AEM {#aem-integration-1}
 
@@ -105,7 +105,7 @@ Il existe trois façons d’implémenter l’application Livefyre Comments dans 
 **Méthode 1 : implémentation de l’application Designer**
 
 * **Description :** méthode la plus simple et la plus rapide d’intégrer une application Livefyre. Vous pouvez concevoir, configurer et générer un code intégré JavaScript personnalisé pour intégrer une application Mur multimédia à une page en quelques minutes.
-* **Comment :** [créer, prévisualiser, publier et incorporer une application de commentaires](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
+* **Comment :** [Créer, prévisualiser, publier et incorporer une application de commentaires](https://docs.adobe.com/content/help/en/livefyre/using/apps/c-create-an-app.html)
 
 * **Exemple :**[https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
@@ -120,15 +120,15 @@ Il existe trois façons d’implémenter l’application Livefyre Comments dans 
 
 * **Exemple :**[https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
-Pour des personnalisations avancées à l’aide du SDK, voir [SDK StreamHub](https://github.com/Livefyre/streamhub-sdk).
+Pour des personnalisations avancées à l’aide du SDK, reportez-vous à la section [SDK StreamHub](https://github.com/Livefyre/streamhub-sdk).
 
 **Méthode 3 : implémentation de l’API**
 
 * Pour des expériences et des visualisations de données personnalisées, vous pouvez créer des applications Livefyre de A à Z en utilisant des données Livefyre et des données des médias sociaux, à l’aide des [API Bootstrap et Stream](https://docs.adobe.com/content/help/en/livefyre/implementation/advanced-topics/bootstrap-stream-api.html).
 
-### Intégration de l’authentification à l’application Comments  {#comments-app-authentication-integration}
+### Intégration de l’authentification à l’application Comments {#comments-app-authentication-integration}
 
-* [Personnalisation de l’](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) intégration de l’authentification unique pour AEM Identity Management
+* [Personnalisation de l’intégration de connexion unique](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) pour Identity Management AEM
 * [Intégration d’identité](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces
 
 ### Exemples de clients {#customer-examples-1}
@@ -157,7 +157,7 @@ Pour des personnalisations avancées à l’aide du SDK, voir [SDK StreamHub](ht
 
 * [Office du tourisme d’Australie](https://www.australia.com/fr-fr)
 
-## Intégration de Livefyre Reviews à l’aide des composants AEM ou de l’intégration Livefyre classique  {#integrate-livefyre-reviews-using-aem-components-or-traditional-livefyre-integration}
+## Intégration de Livefyre Reviews à l’aide des composants AEM ou de l’intégration Livefyre classique {#integrate-livefyre-reviews-using-aem-components-or-traditional-livefyre-integration}
 
 ### Intégration d’AEM {#aem-integration-2}
 
@@ -165,7 +165,7 @@ Le package Adobe Experience Manager Livefyre est disponible pour AEM 6.1, 6.2 
 
 Reviews n’est pas prise en charge par AEM 6.1. Veuillez consulter la [grille de prise en charge d’AEM pour l’ensemble des applications Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
-### Implémentation classique (pour les composants AEM personnalisés)  {#traditional-implementation-for-customized-aem-components-2}
+### Implémentation classique (pour les composants AEM personnalisés) {#traditional-implementation-for-customized-aem-components-2}
 
 Il existe deux façons d’implémenter l’application Livefyre Reviews dans un composant AEM personnalisé ou dans d’autres systèmes de gestion de contenu tels que WordPress, Sitecore ou DemandWare. L’intégration Livefyre classique est compatible avec tous types de systèmes de gestion de contenu.
 
@@ -180,17 +180,17 @@ Il existe deux façons d’implémenter l’application Livefyre Reviews dans un
 
 * **Exemple :**[https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
-Pour des personnalisations avancées à l’aide du SDK, voir [SDK StreamHub](https://github.com/Livefyre/streamhub-sdk).
+Pour des personnalisations avancées à l’aide du SDK, reportez-vous à la section [SDK StreamHub](https://github.com/Livefyre/streamhub-sdk).
 
 **Méthode 2 : implémentation de l’API**
 
 * Pour des expériences et des visualisations de données personnalisées, vous pouvez créer des applications Livefyre de A à Z en utilisant des données Livefyre et des données des médias sociaux, à l’aide des API Bootstrap et Stream.
 
-D’autres API d’évaluation et de révision sont disponibles [ici](https://api.livefyre.com/docs/apis/by-category/ratings-and-reviews).
+Vous trouverez des API d’évaluation et de révision supplémentaires. [here](https://api.livefyre.com/docs/apis/by-category/ratings-and-reviews).
 
 ### Intégration de l’authentification à l’application Comments {#comments-app-authentication-integration-1}
 
-* [Personnalisation de l’](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) intégration de l’authentification unique pour AEM Identity Management
+* [Personnalisation de l’intégration de connexion unique](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) pour Identity Management AEM
 * [Intégration d’identité](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) pour les plateformes d’authentification tierces
 
 ### Exemples de clients {#customer-examples-2}

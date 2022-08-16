@@ -1,8 +1,8 @@
 ---
 title: Utilisation des versions de page
-seo-title: Utilisation des versions de page
+seo-title: Working with Page Versions
 description: Le contrôle de version permet de créer un « instantané » d’une page à un moment donné.
-seo-description: Le contrôle de version permet de créer un « instantané » d’une page à un moment donné.
+seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1362'
 ht-degree: 92%
 
 ---
@@ -36,15 +36,14 @@ Pour créer une version d’une page :
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Entrez un commentaire dans la zone **Commenter** (facultatif).
-1. Pour définir un libellé sur la version (facultatif), cliquez sur le bouton **Plus &quot;** et définissez le **libellé** pour nommer la version. Si le libellé n’est pas défini, la version est un nombre incrémenté automatiquement.
-1. Cliquez sur **Créer la version**. Un message grisé s’affiche sur la page ; par exemple :
-Version 1.2 créée pour : Chemises.
+1. Pour définir un libellé sur la version (facultatif), cliquez sur le bouton **Plus &quot;** et définissez la variable **Libellé** pour nommer la version. Si le libellé n’est pas défini, la version est un nombre incrémenté automatiquement.
+1. Cliquez sur **Créer une version**. Un message grisé s’affiche sur la page ; par exemple : Version 1.2 créée pour : Chemises.
 
 >[!NOTE]
 >
 >Une version est automatiquement créée lorsque la page est activée.
 
-## Restauration de la version d’une page à partir du sidekick  {#restoring-a-page-version-from-sidekick}
+## Restauration de la version d’une page à partir du sidekick {#restoring-a-page-version-from-sidekick}
 
 Pour restaurer une version précédente de la page :
 
@@ -70,7 +69,7 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 
 1. Sélectionnez la version à restaurer et cliquez sur **Restaurer**. AEM restaure la ou les versions (ou arborescences) sélectionnées.
 
-### Restauration d’une arborescence à partir de la console  {#restoring-a-tree-from-the-console}
+### Restauration d’une arborescence à partir de la console {#restoring-a-tree-from-the-console}
 
 Appliquez cette méthode pour restaurer une version de page. Vous pouvez également l’appliquer pour restaurer des pages qui ont été précédemment supprimées :
 
@@ -87,7 +86,7 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Dans votre navigateur, ouvrez la page pour laquelle vous souhaitez effectuer une comparaison avec une version précédente.
-1. Dans le sidekick, sélectionnez l’onglet **Création de versions**, puis le sous-onglet **Restaurer la version** n.
+1. Dans le sidekick, sélectionnez la variable **Contrôle de version** , puis le **Restaurer la version** sous-onglet .
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -119,7 +118,7 @@ Pour ce faire :
 >
 >Si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte. De même, si des éléments (tels que du code, des feuilles css, des images, etc.) destinés au rendu du site web ont été modifiés, la vue sera différente de ce qu’elle était initialement, étant donné que ces éléments ne sont pas versionnés dans le référentiel.
 
-### Utilisation du calendrier Timewarp  {#using-the-timewarp-calendar}
+### Utilisation du calendrier Timewarp {#using-the-timewarp-calendar}
 
 La fonctionnalité Timewarp est disponible à partir du sidekick.
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 100%
 
@@ -23,6 +23,6 @@ Le service Output permet de contrôler la résolution des entités externes dans
 
 **Blocage du traitement des fichiers de données XML contenant des références aux entités externes**
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Désélectionnez la case Résoudre les entités externes.
 1. Cliquez sur Enregistrer.

@@ -1,8 +1,8 @@
 ---
 title: Création d’une page d’entrée efficace pour une newsletter
-seo-title: Création d’une page d’entrée efficace pour une newsletter
+seo-title: Creating an Effective Newsletter Landing Page
 description: Une page d’entrée efficace pour newsletter vous permet d’inciter autant de personnes que possible à s’abonner à votre newsletter (ou à toute autre campagne de marketing par messagerie électronique). Vous pouvez utiliser les informations que vous collectez via les abonnements à votre newsletter pour obtenir des pistes.
-seo-description: Une page d’entrée efficace pour newsletter vous permet d’inciter autant de personnes que possible à s’abonner à votre newsletter (ou à toute autre campagne de marketing par messagerie électronique). Vous pouvez utiliser les informations que vous collectez via les abonnements à votre newsletter pour obtenir des pistes.
+seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
 uuid: 0799b954-076b-4e95-8724-3661ae8fddb6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 95%
+source-wordcount: '613'
+ht-degree: 94%
 
 ---
 

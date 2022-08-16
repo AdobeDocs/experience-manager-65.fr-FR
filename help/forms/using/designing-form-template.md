@@ -1,7 +1,7 @@
 ---
 title: Conception de modèles de formulaires HTML5
 seo-title: Designing form templates for HTML5 forms
-description: AEM Forms permet d’effectuer le rendu d’un modèle de formulaire XFA au format HTML5. Les concepteurs de formulaires peuvent concevoir des modèles de formulaire à l’aide de Designer et utiliser la fonction de génération de rendu au format HTML5.
+description: AEM Forms permet d’effectuer le rendu d’un modèle de formulaire XFA au format HTML5. Les concepteurs de formulaires peuvent créer des modèles de formulaire à l’aide de Designer et utiliser la fonction de génération de rendu au format HTML5.
 seo-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability.
 uuid: 4f6b7231-4479-400a-adcd-c68064f06b4e
 content-type: reference
@@ -12,7 +12,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 100%
 

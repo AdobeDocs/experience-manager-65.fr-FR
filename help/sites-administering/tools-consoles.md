@@ -1,8 +1,8 @@
 ---
-title: Consoles Outils
-seo-title: Consoles Outils
+title: 'Consoles Outils '
+seo-title: Tools Consoles
 description: Découvrez les différentes consoles Outils disponibles dans AEM.
-seo-description: Découvrez les différentes consoles Outils disponibles dans AEM.
+seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '609'
 ht-degree: 99%
 
 ---
 
-# Consoles Outils{#tools-consoles}
+# Consoles Outils {#tools-consoles}
 
 Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Pour le moment, il existe deux versions de la console **Outils** selon l’interface utilisateur que vous utilisez :
 
@@ -350,7 +350,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Badges de communauté</td>
   </tr>
   <tr>
-   <td>Commerce</td>
+   <td>Commerce </td>
    <td> </td>
   </tr>
   <tr>
@@ -389,11 +389,11 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Paramètres du gestionnaire de configuration.</td>
   </tr>
   <tr>
-   <td>Commerce</td>
+   <td>Commerce </td>
    <td>Permet d’accéder aux importateurs et aux différentes données de produit.</td>
   </tr>
   <tr>
-   <td>Gestion des ressources numériques (DAM)  </td>
+   <td>Gestion des ressources numériques (DAM) </td>
    <td>Permet d’accéder à différentes options.</td>
   </tr>
   <tr>
@@ -445,7 +445,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet de configurer les messages électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td>
   </tr>
   <tr>
-   <td>Segmentation </td>
+   <td>Segmentation</td>
    <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en caractérisant les détails d’un visiteur.<br /> </td>
   </tr>
   <tr>

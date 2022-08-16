@@ -1,8 +1,8 @@
 ---
 title: Fonction Calendrier
-seo-title: Fonction Calendrier
+seo-title: Calendar Feature
 description: Fournit des informations sur les événements de la communauté au format calendrier
-seo-description: Fournit des informations sur les événements de la communauté au format calendrier
+seo-description: Provides community event information in a calendar format
 uuid: 262f6afa-d8aa-4815-8440-a8ed5668c76d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,39 +13,39 @@ docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1160'
 ht-degree: 42%
 
 ---
 
 # Fonction Calendrier {#calendar-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La fonction Calendrier offre des informations relatives aux événements de la communauté dans un calendrier. Sont concernés tous les visiteurs ou uniquement ceux qui sont inscrits (membres de la communauté). Tous les membres autorisés peuvent ajouter des événements.
 
 Cette section de la documentation décrit :
 
 * Ajout de la fonction Calendrier à un site AEM
-* Paramètres de configuration des composants `Calendar`
+* Paramètres de configuration pour `Calendar` components
 
 ## Ajout d’un calendrier à une page {#adding-a-calendar-to-a-page}
 
-Pour ajouter un composant `Calendar` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
+Pour ajouter une `Calendar` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Calendar`
 
 et faites glisser le composant sur une page, par exemple à un endroit relatif à la fonction, pour permettre aux utilisateurs de le consulter.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client requises](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) sont incluses, voici comment le composant `Calendar` apparaîtra.
+Lorsque la variable [bibliothèques côté client requises](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Calendar` s’affiche.
 
 ![calendar-component](assets/calendar-component.png)
 
 ### Configuration du calendrier {#configuring-calendar}
 
-Sélectionnez le composant `Calendar` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Calendar` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -53,7 +53,7 @@ Sélectionnez le composant `Calendar` inséré pour y accéder et sélectionnez 
 
 #### Onglet Settings {#settings-tab}
 
-Sous l’onglet **Paramètres**, indiquez si les balises doivent être appliquées ou non aux entrées du calendrier.
+Sous , **Paramètres** , indiquez si les balises doivent être appliquées aux entrées de calendrier.
 
 * **Événements par page**
 
@@ -73,7 +73,7 @@ Sous l’onglet **Paramètres**, indiquez si les balises doivent être appliqué
 
 * **Autoriser le balisage**
 
-   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise aux événements qu’ils publient (voir l’onglet **Champ de balise** ). Cette option est cochée par défaut.
+   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise aux événements qu’ils publient (voir **Champ de balise** ). Cette option est cochée par défaut.
 
 * **Autoriser les transferts de fichiers**
 
@@ -85,11 +85,11 @@ Sous l’onglet **Paramètres**, indiquez si les balises doivent être appliqué
 
 * **Taille maximale du fichier**
 
-   Convient uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Convient uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -121,9 +121,9 @@ Sous l’onglet **Paramètres**, indiquez si les balises doivent être appliqué
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée en tant que [contenu présenté](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
 
-Sous l’onglet **Modération d’utilisateur** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous , **Modération d’utilisateur** , indiquez comment les sujets et réponses publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
@@ -133,7 +133,7 @@ Sous l’onglet **Modération d’utilisateur** , indiquez comment les sujets et
 
 * **Fermer/rouvrir les événements**
 
-   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer un événement afin d’apporter d’autres modifications et commentaires et rouvrir un événement. Cette option est cochée par défaut.
+   Si cette case est cochée, les membres modérateurs autorisés peuvent fermer un événement pour ajouter des modifications et des commentaires, et peuvent également rouvrir un événement. Cette option est cochée par défaut.
 
 * **Marquer les publications**
 
@@ -161,7 +161,7 @@ Dans l’onglet **Champ de balise**, les balises qui peuvent être appliquées, 
 
 * **Espaces de noms autorisés**
 
-   Convient si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestions**
 
@@ -195,7 +195,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 #### Membres {#members}
 
-Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Event` pour créer et publier un nouvel événement de calendrier.
+Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), ils peuvent sélectionner `New Event` pour créer et publier un événement de calendrier.
 
 Plus précisément, il est autorisé à:
 
@@ -217,10 +217,10 @@ Les visiteurs non inscrits peuvent lire les événements de calendrier et les tr
 
 ## Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur le calendrier](/help/communities/calendar-basics-for-developers.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Principes de base du calendrier](/help/communities/calendar-basics-for-developers.md) pour les développeurs.
 
 Pour des informations sur la modération des événements et des commentaires de calendrier, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
-Pour baliser les événements et commentaires de calendrier, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
+Pour baliser des événements et des commentaires de calendrier, voir [Balisage du contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
 
-Pour la traduction des événements et des commentaires du calendrier, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
+Pour consulter la traduction des événements et des commentaires de calendrier, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).

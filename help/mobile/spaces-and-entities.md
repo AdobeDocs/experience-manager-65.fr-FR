@@ -1,8 +1,8 @@
 ---
 title: Espaces et entités
-seo-title: Développement d’AEM Mobile Content Services
+seo-title: Developing AEM Mobile Content Services
 description: Cette page sert de page d’entrée pour le développement d’AEM Mobile Content Services.
-seo-description: Cette page sert de page d’entrée pour le développement d’AEM Mobile Content Services.
+seo-description: This page serves a landing page for developing AEM Mobile Content Services.
 uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
@@ -11,7 +11,7 @@ discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1209'
+source-wordcount: '1192'
 ht-degree: 4%
 
 ---
@@ -32,23 +32,23 @@ Un espace est un emplacement pratique pour stocker les entités exposées par le
 
 Si l’utilisateur souhaite exposer un ensemble de contenu et de ressources à une application mobile, il crée l’espace à l’aide du tableau de bord AEM Mobile.
 
-Pour la première fois, si un utilisateur n’a pas configuré les services de contenu pour qu’ils fonctionnent avec les espaces, le tableau de bord AEM Mobile affiche uniquement les applications après avoir sélectionné **Content Services**.
+Pour la première fois, si un utilisateur n’a pas configuré les services de contenu pour qu’ils fonctionnent avec des espaces, le tableau de bord AEM Mobile affiche uniquement les applications après avoir sélectionné **Content Services**.
 
 >[!CAUTION]
 >
 >**Conditions préalables pour l’ajout d’un espace**
 >
->Cochez la case **Activer AEM Content Services** pour utiliser les espaces et l’activer dans le tableau de bord de votre application AEM Mobile.
+>Vérifiez les **Activation d’AEM Content Services** pour utiliser des espaces et l’activer dans le tableau de bord de votre application AEM Mobile.
 >
 >Voir [Administration de Content Services](/help/mobile/developing-content-services.md) pour plus d’informations.
 
 Une fois que vous avez configuré les espaces dans le tableau de bord, procédez comme suit pour créer des espaces :
 
-1. Sélectionnez **Espaces** dans Content Services.
+1. Choisir **Espaces** de Content Services.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-1. Sélectionnez **Créer** pour créer un espace. Saisissez **Titre**, **Nom** et **Description** pour l’espace.
+1. Choisir **Créer** pour créer un espace. Entrée **Titre**, **Nom**, et **Description** pour l’espace.
 
    Cliquez sur **Créer**.
 
@@ -65,17 +65,17 @@ Vous pouvez afficher les propriétés de l’espace, supprimer l’espace ou pub
 **Affichage et modification des propriétés d’un espace**
 
 1. Sélectionner l’espace dans la liste
-1. Sélectionnez **Propriétés** dans la barre d’outils.
-1. Cliquez sur **Fermer** une fois terminé.
+1. Choisir **Propriétés** de la barre d’outils ;
+1. Cliquez sur **Fermer** when
 
-**Publication d’un** espace : lorsqu’un espace est publié, tous les dossiers et entités de cet espace sont également publiés.
+**Publication d’un espace** Lorsqu’un espace est publié, tous les dossiers et entités de cet espace sont également publiés.
 
 1. Sélectionnez l’espace en cliquant sur son icône dans la liste Console d’espace
-1. Sélectionnez **Publier l’arborescence**
+1. Choisir **Arborescence de publication**
 
 >[!NOTE]
 >
->Vous pouvez **Annuler la publication** d’un espace, ce qui supprime l’espace de l’instance de publication.
+>Vous pouvez **Annuler la publication** un espace qui supprime l’espace de l’instance de publication.
 >
 >L’image suivante illustre les actions qui peuvent être effectuées après la publication de l’espace.
 
@@ -87,15 +87,15 @@ Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les 
 
 ### Création d’un dossier {#creating-a-folder}
 
-1. Cliquez sur l’espace dans la liste de la console d’espace et cliquez sur **Créer un dossier**
+1. Cliquez sur l’espace dans la liste de la console des espaces, puis cliquez sur **Créer un dossier**
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Saisissez le **Titre**, **Nom,** et **Description** du dossier.
+1. Saisissez le **Titre**, **Nom,** et **Description** pour le dossier
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Cliquez sur **Créer** pour créer le dossier dans un espace.
+1. Cliquez sur **Créer** pour créer le dossier dans un espace
 
 ## Copie de la langue {#language-copy}
 
@@ -103,7 +103,7 @@ Les espaces peuvent inclure des dossiers pour mieux organiser le contenu et les 
 >
 >La copie de langue n’est pas entièrement fonctionnelle dans cette version. Il ne fait que configurer la structure.
 
-La fonction **Copie de langue** permet aux auteurs de copier leur copie de langue principale, puis de créer un projet et un workflow pour traduire automatiquement le contenu. Copie de langue crée la structure appropriée. Une fois que vous avez ajouté un dossier dans un espace, vous pouvez y ajouter une copie de la langue.
+Le **Copie de la langue** permet aux auteurs de copier leur copie de langue principale, puis de créer un projet et un workflow pour traduire automatiquement le contenu. Copie de langue crée la structure appropriée. Une fois que vous avez ajouté un dossier dans un espace, vous pouvez y ajouter une copie de la langue.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ La fonction **Copie de langue** permet aux auteurs de copier leur copie de langu
 
 1. Une fois que vous avez créé l’espace, cliquez sur cet espace pour créer une copie de langue.
 
-   Cliquez sur **Créer** et sélectionnez **Copie de la langue**.
+   Cliquez sur **Créer** et choisissez **Copie de la langue**.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -121,24 +121,24 @@ La fonction **Copie de langue** permet aux auteurs de copier leur copie de langu
    >
    >Les noeuds Copie de langue ne peuvent exister qu’en tant qu’enfant direct de l’espace.
 
-1. Sélectionnez **Content Package Language&amp;ast;** et saisissez **Title&amp;ast;** dans la boîte de dialogue **Créer une copie de langue**.
+1. Choisir **Content Package Language&amp;ast;** et saisissez la variable **Title&amp;ast;** in **Créer une copie de langue** boîte de dialogue.
 
    Cliquez sur **Créer**.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Une fois que vous avez créé une copie de langue, elle apparaît dans votre espace sous **Principal de langue**.
+1. Une fois que vous avez créé une copie de la langue, elle apparaît dans l’espace prévu à l’étape **Principal de langue**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Sélectionnez **Principal de langue** pour afficher les dossiers de copie de langue.
+   >Sélectionner **Principal de langue** pour afficher les dossiers de copie de langue.
 
 ### Suppression d’un dossier de l’espace {#removing-a-folder-from-the-space}
 
 1. Sélectionner le dossier dans la liste des contenus d&#39;espace
-1. Cliquez sur **Supprimer** dans la barre d’outils.
+1. Cliquez sur **Supprimer** de la barre d’outils ;
 
    >[!NOTE]
    >
@@ -154,7 +154,7 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
 
 >[!NOTE]
 >
->Les entités sont toujours associées à un espace. Par conséquent, la plupart de l’interface utilisateur de l’entité est accessible par le biais de la console d’espace.
+>Les entités sont toujours associées à un espace. La plupart de l’interface utilisateur de l’entité est donc accessible par le biais de la console d’espace.
 
 ### Création d’une entité {#creating-an-entity}
 
@@ -170,11 +170,11 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
 
    >[!NOTE]
    >
-   >Vous avez la possibilité de choisir **Modèle de ressources**, **Modèle de pages** ou un modèle de type d’entité que vous avez créé précédemment.
+   >Vous avez la possibilité de choisir la variable **Modèle Assets**, **Modèle de pages** ou un modèle de type d’entité que vous avez créé précédemment.
    >
-   >Voir [Création d’un modèle](/help/mobile/administer-mobile-apps.md) pour créer votre entité personnalisée.
+   >Voir [Création d’un modèle](/help/mobile/administer-mobile-apps.md), pour créer votre entité personnalisée.
 
-1. Saisissez un **Titre**, **Nom**, **Description** et **Balises** pour l’entité. Cliquez sur **Créer**.
+1. Saisissez un **Titre**, **Nom**, **Description**, et **Balises** pour l’entité. Cliquez sur **Créer**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -194,7 +194,7 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
    >
    >Selon le modèle que vous choisissez de créer votre entité, l’interface utilisateur sera différente pour les deux, pour la modification et l’affichage des propriétés de votre entité. Pour plus d’informations, voir les étapes ci-dessous.
 
-   ***Si vous choisissez le modèle de création de l’entité comme Modèles*** d’actifs, cliquez sur  **** Modifier pour ajouter des actifs, comme illustré dans la figure ci-dessous :
+   ***Si vous choisissez le modèle pour créer l’entité en tant que modèles Assets***, en cliquant sur **Modifier** vous permet d’ajouter des ressources, comme illustré dans la figure ci-dessous :
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -202,23 +202,23 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Si vous choisissez le modèle de création de l’entité comme Modèles de pages***, cliquez sur  **** Modifier pour ajouter des ressources, comme illustré dans la figure ci-dessous :
+   ***Si vous choisissez le modèle de création de l’entité comme Modèles de pages***, en cliquant sur **Modifier** vous permet d’ajouter des ressources, comme illustré dans la figure ci-dessous :
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-   Cliquez sur l’icône **Chemin** pour ajouter une ressource.
+   Cliquez sur l’icône dans la **Chemin** pour ajouter une ressource
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
-   >Une fois que vous avez ajouté une entité, elle doit être enregistrée pour que le lien Aperçu fonctionne. Pour afficher l’aperçu, cliquez sur **Enregistrer**. Cliquez sur **Aperçu** pour afficher le fichier json de la ressource ajoutée, comme illustré dans la figure ci-dessous :
+   >Une fois que vous avez ajouté une entité, elle doit être enregistrée pour que le lien Aperçu fonctionne. Pour afficher l’aperçu, cliquez sur **Enregistrer**. Cliquez sur le **Aperçu** affiche le fichier json de la ressource ajoutée, comme illustré dans la figure ci-dessous :
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Lorsque vous avez terminé d’ajouter des ressources à votre entité, vous pouvez soit sélectionner **Enregistrer** pour enregistrer les modifications, soit sélectionner **Enregistrer et fermer** pour enregistrer et rediriger vers la liste de la console Espace dans laquelle les entités sont définies.
+   >Lorsque vous avez terminé d’ajouter des ressources à votre entité, vous pouvez choisir **Enregistrer** pour enregistrer les modifications ou choisir **Enregistrer et fermer** pour enregistrer et rediriger vers la liste de la console Espace dans laquelle les entités sont définies.
 
    De plus, sélectionnez une entité dans la liste de la console d’espace et cliquez sur **Propriétés** pour afficher et modifier les propriétés d’une entité définie.
 
@@ -234,11 +234,11 @@ Si les enfants d’entités, qui sont d’autres entités, sont collectés pour 
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Cliquez sur **Supprimer** dans la barre d’outils pour supprimer l’entité spécifique de l’espace.
+1. Cliquez sur **Supprimer** de la barre d’outils pour supprimer l’entité spécifique de l’espace ;
 
 ### Publication d’une entité {#publishing-an-entity}
 
-Vous avez la possibilité de choisir **Publier l’arborescence** ou **Publication rapide** pour publier votre entité.
+Vous avez la possibilité de choisir **Arborescence de publication** ou **Publication rapide** pour publier votre entité.
 
 1. Sélectionnez une entité dans la liste de la console d’espace et cliquez sur **Publier l’arborescence **pour publier cette entité et ses enfants.
 

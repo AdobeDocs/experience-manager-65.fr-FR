@@ -7,7 +7,7 @@ topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2244'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Les ressources indiquées dans le tableau ci-dessous peuvent vous aider à en sa
   </tr>
   <tr>
    <td><p>Toute la documentation disponible relative à AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65_fr">Documentation dʼAEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Documentation dʼAEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Les mises à jour des correctifs, les explications techniques et les informations complémentaires sur cette version du produit</p> </td>
@@ -172,7 +172,7 @@ Avant d’installer Workbench, vérifiez que votre environnement inclut les logi
 1. Vérifiez le récapitulatif de l’installation. Sélectionnez Démarrer AEM Forms Workbench pour lancer Workbench, puis cliquez sur Suivant.
 1. Passez en revue les notes de mise à jour, puis cliquez sur Terminé.
 1. Les éléments suivants sont désormais installés sur votre ordinateur :
-   * **Workbench** : pour exécuter Workbench via le menu Démarrer, sélectionnez Tous les programmes > AEM Forms > Workbench, si vous avez choisi d’y stocker le dossier de raccourci. Pour plus d’informations, consultez la documentation sur lʼ<a href="https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilisation de Workbench</a>.
+   * **Workbench** : pour exécuter Workbench via le menu Démarrer, sélectionnez Tous les programmes > AEM Forms > Workbench, si vous avez choisi d’y stocker le dossier de raccourci. Pour plus d’informations, consultez la documentation sur lʼ<a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilisation de Workbench</a>.
    * **Designer** : vous pouvez accéder à Designer depuis Workbench. Pour plus d’informations, consultez la section Prise en main de l’<a href="https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf">aide de Designer</a>.
    * **SDK AEM Forms** : pour plus d’informations sur l’utilisation du SDK, consultez la section <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmer avec AEM Forms</a>.
 

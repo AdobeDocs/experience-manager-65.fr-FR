@@ -7,29 +7,29 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
-feature: Gestion des ressources
+feature: Asset Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 72%
+source-wordcount: '334'
+ht-degree: 83%
 
 ---
 
-# Diffuser des images optimisées pour un site réactif {#delivering-optimized-images-for-a-responsive-site}
+# Diffusion d’images optimisées pour un site réactif {#delivering-optimized-images-for-a-responsive-site}
 
 Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web. Utilisez la fonctionnalité de code réactif (**[!UICONTROL RESS]**) lorsque vous souhaitez partager le code de diffusion réactive avec votre développeur web.
 
 Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve plutôt sur Adobe Experience Manager, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
 
-Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
+Voir aussi [Intégration de la visionneuse de vidéos à une page web](embed-code.md).
 
-Voir aussi [Lier les URL à votre application web](linking-urls-to-yourwebapplication.md).
+Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
 **Pour diffuser des images optimisées pour un site réactif, procédez comme suit :**
 
-1. Accédez à l’image pour laquelle vous souhaitez fournir du code réactif et, dans le menu déroulant, sélectionnez **[!UICONTROL Rendus]**.
+1. Accédez à l’image pour laquelle vous voulez fournir du code réactif et, dans le menu déroulant, sélectionnez **[!UICONTROL Rendus]**.
 
    ![chlimage_1-408](assets/chlimage_1-408.png)
 

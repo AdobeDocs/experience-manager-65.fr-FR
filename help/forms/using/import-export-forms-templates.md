@@ -12,7 +12,7 @@ docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2516'
 ht-degree: 100%
 
@@ -175,7 +175,7 @@ Vous pouvez importer des ressources qui sont exportées dans un fichier .cmp. Un
    >
    >Pour que vous puissiez télécharger des fichiers XDP (comme partie du fichier cmp ou autre), vous devez faire partie du groupe forms-power-users. Pour obtenir les droits d’accès, contactez l’administrateur.
 
-## Exportation d’une application de processus {#export-a-workflow-application}
+## Exporter une application de workflow {#export-a-workflow-application}
 
 Vous pouvez utiliser le gestionnaire de modules AEM pour exporter des applications de processus. Pour ce faire, procédez comme suit :
 

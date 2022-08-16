@@ -1,8 +1,8 @@
 ---
-title: 'Exporter au format CSV  '
-seo-title: 'Exporter au format CSV  '
+title: Exporter au format CSV
+seo-title: Export to CSV
 description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
-seo-description: Exportez les informations relatives à vos pages vers un fichier CSV situé sur votre système local
+seo-description: Export information about your pages to a CSV file on your local system
 uuid: 6eee607b-3510-4f6a-ba82-b27480a4fbe1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 86%
+source-wordcount: '191'
+ht-degree: 85%
 
 ---
 
-# Exporter au format CSV  {#export-to-csv}
+# Exporter au format CSV{#export-to-csv}
 
 L’option **Créer une exportation CSV** vous permet d’exporter les informations relatives à vos pages vers un fichier CSV situé sur votre système local.
 
@@ -33,7 +33,7 @@ L’option **Créer une exportation CSV** vous permet d’exporter les informati
 L’assistant **Créer une exportation CSV** vous permet de sélectionner les éléments suivants :
 
 * Propriétés à exporter
-   * Métadonnées  
+   * Métadonnées
       * Nom
       * Modifié
       * Publié
@@ -55,7 +55,7 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 ![etc-01](assets/etc-01.png)
 
-L’option Créer un **rapport CSV** est disponible lorsque vous parcourez la console **Sites** (en mode Liste) : il s’agit d’une option du menu déroulant **Créer** :
+La création **Rapport CSV** est disponible lors de la navigation dans la **Sites** console (en mode Liste) : il s’agit d’une option de la fonction **Créer** menu déroulant :
 
 ![etc-02](assets/etc-02.png)
 

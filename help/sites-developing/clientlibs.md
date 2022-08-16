@@ -1,8 +1,8 @@
 ---
 title: Utilisation de bibliothèques côté client
-seo-title: Utilisation de bibliothèques côté client
+seo-title: Using Client-Side Libraries
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
-seo-description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
+seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2850'
 ht-degree: 78%
 
 ---
@@ -26,7 +26,7 @@ Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté
 
 ## Fonctionnement des bibliothèques côté client dans AEM {#how-client-side-libraries-work-in-aem}
 
-La méthode standard pour inclure une bibliothèque côté client (c’est-à-dire un fichier JS ou CSS) dans le code HTML d’une page consiste simplement à inclure une balise `<script>` ou `<link>` dans le JSP de cette page, contenant le chemin d’accès au fichier en question. Par exemple,
+La méthode standard pour inclure une bibliothèque côté client (c’est-à-dire un fichier JS ou CSS) dans le HTML d’une page consiste simplement à inclure une `<script>` ou `<link>` dans le JSP de cette page, contenant le chemin d’accès au fichier en question. Par exemple,
 
 ```xml
 ...
@@ -50,43 +50,43 @@ Un dossier de bibliothèques côté client est un nœud de référentiel de type
   - channels (string) multiple
 ```
 
-Par défaut, les noeuds `cq:ClientLibraryFolder` peuvent être placés n’importe où dans les sous-arborescences `/apps`, `/libs` et `/etc` du référentiel (ces valeurs par défaut et d’autres paramètres peuvent être contrôlés par le biais du panneau **Adobe Gestionnaire de bibliothèques HTML Granite** de la [console système](https://localhost:4502/system/console/configMgr)).
+Par défaut, `cq:ClientLibraryFolder` Les noeuds peuvent être placés n’importe où dans la fonction `/apps`, `/libs` et `/etc` les sous-arborescences du référentiel (ces valeurs par défaut et d’autres paramètres peuvent être contrôlées via la propriété **Gestionnaire de bibliothèques de HTMLS Adobe Granite** du panneau [Console système](https://localhost:4502/system/console/configMgr)).
 
-Chaque dossier `cq:ClientLibraryFolder` est rempli avec un jeu de fichiers JS et/ou CSS, ainsi que quelques fichiers annexes (voir ci-dessous). Les propriétés de `cq:ClientLibraryFolder` sont configurées comme suit :
+Chaque dossier `cq:ClientLibraryFolder` est rempli avec un jeu de fichiers JS et/ou CSS, ainsi que quelques fichiers annexes (voir ci-dessous). Les propriétés de la variable `cq:ClientLibraryFolder` sont configurés comme suit :
 
 * `categories` : identifie les catégories dans lesquelles se trouve le jeu de fichiers JS et/ou CSS de ce dossier `cq:ClientLibraryFolder`. La propriété `categories` comportant plusieurs valeurs, elle permet à un dossier de bibliothèques d’appartenir à plusieurs catégories (voir ci-dessous pour savoir en quoi cela peut se révéler utile).
 
 * `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. Par exemple, étant donné deux nœuds `cq:ClientLibraryFolder`, `F` et `G`, si un fichier du nœud `F` nécessite un autre fichier du nœud `G` pour fonctionner correctement, au moins l’une des propriétés `categories` de `G` doit figurer parmi les propriétés `dependencies` de `F`.
 
-* `embed` : utilisé pour incorporer du code d’autres bibliothèques. Si le noeud F incorpore les noeuds G et H, le code HTML qui en résulte est une concentration de contenu des noeuds G et H.
-* `allowProxy`: Si une bibliothèque cliente se trouve sous  `/apps`, cette propriété lui permet d’y accéder par le biais d’un servlet proxy. Voir [Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) ci-dessous.
+* `embed` : utilisé pour incorporer du code d’autres bibliothèques. Si le noeud F incorpore les noeuds G et H, le HTML qui en résulte sera une concentration de contenu des noeuds G et H.
+* `allowProxy`: Si une bibliothèque cliente se trouve sous `/apps`, cette propriété lui permet d’y accéder par le biais d’un servlet proxy. Voir [Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) ci-dessous.
 
 ## Référencement des bibliothèques côté client {#referencing-client-side-libraries}
 
 Le langage HTL étant la technologie recommandée pour développer des sites AEM, il doit être utilisé pour inclure des bibliothèques côté client dans AEM. Cependant, il est également possible d’utiliser JSP à cette fin.
 
-### Utilisation de HTL  {#using-htl}
+### Utilisation de HTL {#using-htl}
 
 Dans HTL, les bibliothèques clientes sont chargées à l’aide d’un modèle d’assistance fourni par AEM, accessible via [ `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Trois modèles sont disponibles dans ce fichier, qui peut être appelé via [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call) :
 
-* **css**  : charge uniquement les fichiers CSS des bibliothèques client référencées.
-* **js**  charge uniquement les fichiers JavaScript des bibliothèques client référencées.
-* **all**  - charge tous les fichiers des bibliothèques client référencées (CSS et JavaScript).
+* **css** charge uniquement les fichiers CSS des bibliothèques client référencées.
+* **js** charge uniquement les fichiers JavaScript des bibliothèques client référencées.
+* **all** charge tous les fichiers des bibliothèques client référencées (CSS et JavaScript).
 
 Chaque modèle d’assistance exige une option `categories` pour référencer les bibliothèques clientes souhaitées. Cette option peut être un tableau de valeurs de chaîne ou une chaîne contenant une liste de valeurs séparées par des virgules.
 
-Pour plus de détails et un exemple d’utilisation, consultez le document [Prise en main du langage HTL](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Pour plus d’informations et d’exemples d’utilisation, consultez le document . [Prise en main du langage de modèle de HTML](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
 ### Utilisation de JSP {#using-jsp}
 
-Ajoutez une balise `ui:includeClientLib` au code JSP pour ajouter un lien vers les bibliothèques clientes dans la page HTML générée. Pour référencer les bibliothèques, vous utilisez la valeur de la propriété `categories` du noeud `ui:includeClientLib`.
+Ajouter un `ui:includeClientLib` de votre code JSP pour ajouter un lien vers les bibliothèques clientes dans la page de HTML générée. Pour référencer les bibliothèques, vous utilisez la valeur de la variable `categories` de la propriété `ui:includeClientLib` noeud .
 
 ```
 <%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
 <ui:includeClientLib categories="<%= categories %>" />
 ```
 
-Par exemple, le noeud `/etc/clientlibs/foundation/jquery` est de type `cq:ClientLibraryFolder` avec une propriété categories de valeur `cq.jquery`. Le code suivant dans un fichier JSP référence les bibliothèques :
+Par exemple, la variable `/etc/clientlibs/foundation/jquery` Le noeud est de type `cq:ClientLibraryFolder` avec une propriété categories de valeur `cq.jquery`. Le code suivant dans un fichier JSP référence les bibliothèques :
 
 ```xml
 <ui:includeClientLib categories="cq.jquery"/>
@@ -102,7 +102,7 @@ Pour obtenir plus d’informations, y compris des attributs de filtrage des bibl
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, qui était généralement utilisé pour inclure des bibliothèques clientes, a été abandonné depuis AEM 5.6.  [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) doit être utilisé à la place comme décrit ci-dessus.
+>`<cq:includeClientLib>`, qui auparavant était généralement utilisé pour inclure des bibliothèques clientes, est obsolète depuis AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) doit être utilisé à la place comme décrit ci-dessus.
 
 ## Création de dossiers de bibliothèques clientes {#creating-client-library-folders}
 
@@ -124,21 +124,21 @@ Pour plus d’informations sur les exigences spécifiques aux bibliothèques cli
 
 Le client web doit être autorisé à accéder au nœud `cq:ClientLibraryFolder`. Vous pouvez également exposer les bibliothèques à partir de zones sécurisées du référentiel (voir la section « Incorporation de code d’autres bibliothèques »·ci-dessous).
 
-### Remplacement de bibliothèques dans /lib  {#overriding-libraries-in-lib}
+### Remplacement de bibliothèques dans /lib {#overriding-libraries-in-lib}
 
-Les dossiers de bibliothèque cliente situés sous `/apps` ont la priorité sur les dossiers portant le même nom et se trouvant également dans `/libs`. Par exemple, `/apps/cq/ui/widgets` a la priorité sur `/libs/cq/ui/widgets`. Lorsque ces bibliothèques appartiennent à la même catégorie, la bibliothèque `/apps` est utilisée.
+Dossiers de bibliothèques clientes situés sous `/apps` ont la priorité sur les dossiers portant le même nom qui se trouvent de manière similaire dans `/libs`. Par exemple : `/apps/cq/ui/widgets` a priorité sur `/libs/cq/ui/widgets`. Lorsque ces bibliothèques appartiennent à la même catégorie, la bibliothèque ci-dessous `/apps` est utilisée.
 
 ### Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
-Dans les versions précédentes, les dossiers de bibliothèque cliente se trouvaient sous `/etc/clientlibs` dans le référentiel. Cela est toujours pris en charge. Cependant, il est recommandé de placer désormais les bibliothèques clientes sous `/apps`. Il s’agit de localiser les bibliothèques clientes à proximité des autres scripts, qui se trouvent généralement sous `/apps` et `/libs`.
+Dans les versions précédentes, les dossiers de bibliothèque cliente se trouvaient sous `/etc/clientlibs` dans le référentiel. Cela est toujours pris en charge. Cependant, il est recommandé de placer désormais les bibliothèques clientes sous `/apps`. Il s’agit de localiser les bibliothèques clientes à proximité des autres scripts, qui se trouvent généralement ci-dessous. `/apps` et `/libs`.
 
 >[!NOTE]
 >
->Les ressources statiques situées sous le dossier de bibliothèque cliente doivent se trouver dans un dossier appelé *resources*. Si vous ne disposez pas des ressources statiques, telles que les images, sous le dossier *resources*, il ne peut pas être référencé sur une instance de publication. Voici un exemple : https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+>Les ressources statiques situées sous le dossier de bibliothèque cliente doivent se trouver dans un dossier appelé *ressources*. Si vous ne disposez pas des ressources statiques, telles que des images, sous le dossier *ressources*, il ne peut pas être référencé sur une instance de publication. Voici un exemple : https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
->Afin de mieux isoler le code du contenu et de la configuration, il est recommandé de localiser les bibliothèques clientes sous `/apps` et de les exposer via `/etc.clientlibs` en utilisant la propriété `allowProxy`.
+>Pour mieux isoler le code du contenu et de la configuration, il est recommandé de localiser les bibliothèques clientes sous `/apps` et les exposer via `/etc.clientlibs` en exploitant la variable `allowProxy` .
 
 Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, un servlet proxy est utilisé. Les listes de contrôle d’accès (ACL) sont toujours appliquées sur le dossier de bibliothèques clientes, mais le servlet permet la lecture du contenu via `/etc.clientlibs/` si la propriété `allowProxy` est définie sur `true`.
 
@@ -149,7 +149,7 @@ Par exemple :
 * Vous avez une bibliothèque cliente dans `/apps/myproject/clientlibs/foo`.
 * Vous avez une image statique dans `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
-Ensuite, définissez la propriété `allowProxy` sur `foo` sur true.
+Ensuite, définissez la variable `allowProxy` sur `foo` sur true.
 
 * Vous pouvez ensuite demander `/etc.clientlibs/myprojects/clientlibs/foo.js`
 * Vous pouvez ensuite référencer l’image via `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
@@ -160,7 +160,7 @@ Ensuite, définissez la propriété `allowProxy` sur `foo` sur true.
 
 >[!CAUTION]
 >
->Adobe recommande de localiser les bibliothèques clientes sous `/apps` et de les rendre disponibles à l’aide du servlet proxy. Toutefois, gardez à l’esprit que les bonnes pratiques exigent toujours que les sites publics n’incluent jamais rien qui est fourni directement sur un chemin `/apps` ou `/libs`.
+>Adobe recommande de placer les bibliothèques clientes sous `/apps` et les rendre disponibles à l’aide du servlet proxy. Toutefois, gardez à l’esprit que les bonnes pratiques exigent toujours que les sites publics n’incluent jamais rien qui soit diffusé directement sur une `/apps` ou `/libs` chemin d’accès.
 
 ### Création d’un dossier de bibliothèques clientes {#create-a-client-library-folder}
 
@@ -188,7 +188,7 @@ Ensuite, définissez la propriété `allowProxy` sur `foo` sur true.
 
    `#base=*[root]*`
 
-   Remplacez * `[root]`* par le chemin d’accès au dossier contenant les fichiers source, par rapport au fichier TXT. Utilisez, par exemple, le texte suivant lorsque les fichiers sources se trouvent dans le même dossier que le fichier TXT :
+   Remplacer * `[root]`* avec le chemin d’accès au dossier contenant les fichiers source, par rapport au fichier TXT. Utilisez, par exemple, le texte suivant lorsque les fichiers sources se trouvent dans le même dossier que le fichier TXT :
 
    `#base=.`
 
@@ -209,7 +209,7 @@ Les dépendances doivent être un autre nœud `cq:ClientLibraryFolder`. Pour ide
 * **Type :** chaîne[]
 * **Valeurs :** valeur de la propriété categories du nœud cq:ClientLibraryFolder dont dépend le dossier de bibliothèques en cours.
 
-Par exemple, / `etc/clientlibs/myclientlibs/publicmain` dépend de la bibliothèque `cq.jquery`. Le JSP qui fait référence à la bibliothèque cliente principale génère un fichier HTML qui comprend le code suivant :
+Par exemple, le / `etc/clientlibs/myclientlibs/publicmain` comporte une dépendance sur la variable `cq.jquery` bibliothèque . Le JSP qui fait référence à la bibliothèque cliente principale génère un fichier HTML qui comprend le code suivant :
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -222,7 +222,7 @@ Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibl
 
 Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques qui sont stockées dans des zones sécurisées du référentiel.
 
-#### Dossiers de bibliothèques clientes spécifiques à une application   {#app-specific-client-library-folders}
+#### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
 Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/app`. Il est également recommandé d’empêcher les internautes d’accéder au dossier `/app`. Pour répondre à ces deux exigences, créez sous `/etc` un dossier de bibliothèques clientes qui incorpore la bibliothèque cliente qui est située sous `/app`.
 
@@ -234,7 +234,7 @@ Utilisez la propriété categories pour identifier le dossier de bibliothèque c
 
 #### Utilisation de l’incorporation pour réduire les requêtes {#using-embedding-to-minimize-requests}
 
-Dans certains cas, il se peut que le code HTML final généré pour une page type par votre instance de publication comporte un nombre relativement important d’éléments `<script>`, en particulier si votre site utilise des informations contextuelles client à des fins d’analyse ou de ciblage. Par exemple, dans un projet non optimisé, vous pouvez trouver la série d’éléments `<script>` suivante dans le code HTML d’une page :
+Dans certains cas, il se peut que le HTML final généré pour une page type par votre instance de publication comporte un nombre relativement important de `<script>` , en particulier si votre site utilise des informations contextuelles client à des fins d’analyse ou de ciblage. Par exemple, dans un projet non optimisé, vous trouverez peut-être la série de `<script>` éléments dans le HTML pour une page :
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
@@ -300,11 +300,11 @@ body {
 
 Utilisez la propriété `channels` d’un dossier de bibliothèques clientes pour identifier le groupe mobile qui utilise la bibliothèque. La propriété `channels` est utile lorsque des bibliothèques de la même catégorie sont conçues pour différentes fonctionnalités de périphérique.
 
-Pour associer un dossier de bibliothèques clientes à un groupe d’appareils, ajoutez une propriété à votre noeud `cq:ClientLibraryFolder` avec les attributs suivants :
+Pour associer un dossier de bibliothèque cliente à un groupe d’appareils, ajoutez une propriété à votre `cq:ClientLibraryFolder` avec les attributs suivants :
 
 * **Nom :** channels
 * **Type :** chaîne[]
-* **Valeurs :** nom du groupe mobile. Pour exclure le dossier de bibliothèques d’un groupe, faites précéder son nom de domaine d’un point d’exclamation (« ! »).
+* **Valeurs :** Nom du groupe mobile. Pour exclure le dossier de bibliothèques d’un groupe, faites précéder son nom de domaine d’un point d’exclamation (« ! »).
 
 Par exemple, le tableau suivant répertorie la valeur de la propriété `channels` pour chaque dossier de bibliothèques clientes de la catégorie `cq.widgets` :
 
@@ -389,7 +389,7 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 Pour plus d’informations sur les options GCC, consultez la [documentation de GCC](https://developers.google.com/closure/compiler/docs/compilation_levels).
 
-### Définition de l’outil de minification par défaut du système   {#set-system-default-minifier}
+### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 
 YUI est défini comme outil de minification par défaut dans AEM. Pour le définir sur GCC, procédez comme suit.
 
@@ -406,7 +406,7 @@ YUI est défini comme outil de minification par défaut dans AEM. Pour le défin
 
 AEM s’accompagne de plusieurs outils pour déboguer et tester des dossiers de bibliothèques clientes.
 
-### Affichage des fichiers incorporés  {#see-embedded-files}
+### Affichage des fichiers incorporés {#see-embedded-files}
 
 Pour remonter à l’origine du code incorporé, ou vous assurer que les bibliothèques clientes incorporées produisent les résultats escomptés, vous pouvez afficher les noms des fichiers incorporés au moment de l’exécution. Pour afficher les noms de fichiers, ajoutez le paramètre `debugClientLibs=true` à l’URL de votre page web. La bibliothèque générée contient des instructions `@import` au lieu du code incorporé.
 

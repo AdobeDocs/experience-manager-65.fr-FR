@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 100%
 
@@ -89,12 +89,12 @@ Vous pouvez configurer le ralentissement de Work Manager, de façon que les tâc
 1. Démarrez la console d’administration WebLogic en saisissant `https://[host name]:[port]/console` dans un navigateur web.
 1. Saisissez le nom d’utilisateur et le mot de passe créés pour le domaine WebLogic Server, puis cliquez sur Log. Sous Change Center, cliquez sur Lock &amp; Edit.
 1. Sous Domain Structure, cliquez sur Environment > Servers et, dans le volet de droite, cliquez sur le nom du serveur géré.
-1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
+1. Dans l’écran suivant, cliquez sur les onglets Configuration > Server Start.
 1. Dans la zone Arguments, ajoutez les arguments souhaités à la fin du contenu actuel. Par exemple, pour désactiver Health Monitor, ajoutez :
 
    `-Dadobe.healthmonitor.enabled=false` permet de désactiver Health Monitor.
 
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 **Ajout d’options Java à WebSphere**

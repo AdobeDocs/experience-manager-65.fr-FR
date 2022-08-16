@@ -1,8 +1,8 @@
 ---
 title: Outil de comparaison des pages
-seo-title: Outil de comparaison des pages
+seo-title: Page Diff
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
-seo-description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: 5af8b466-5922-4fe6-9eae-7bad99be23e0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '560'
 ht-degree: 100%
 
 ---
@@ -70,7 +70,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 >
 >Lorsque vous comparez des copies de langue, la mise en surbrillance est désactivée. En effet, dans la mesure où la traduction modifie tout le contenu, la mise en surbrillance ne présente aucun intérêt.
 
-### Affichage en mode plein écran  {#fullscreen-and-exiting}
+### Affichage en mode plein écran {#fullscreen-and-exiting}
 
 Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
 

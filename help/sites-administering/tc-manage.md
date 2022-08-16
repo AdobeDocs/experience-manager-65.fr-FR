@@ -1,19 +1,19 @@
 ---
 title: Gestion de projets de traduction
-seo-title: Gestion de projets de traduction
+seo-title: Managing Translation Projects
 description: Découvrez comment gérer des projets de traduction dans AEM.
-seo-description: Découvrez comment gérer des projets de traduction dans AEM.
+seo-description: Learn how to manage translation projects in AEM.
 uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Copie de la langue
+feature: Language Copy
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3455'
+source-wordcount: '3442'
 ht-degree: 94%
 
 ---
@@ -182,7 +182,7 @@ Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires 
 
 Les pages et/ou les ressources sont ajoutées à la tâche de traduction.
 
-## Ajout de dictionnaires d’internationalisation à une tâche de traduction  {#adding-i-n-dictionaries-to-a-translation-job}
+## Ajout de dictionnaires d’internationalisation à une tâche de traduction {#adding-i-n-dictionaries-to-a-translation-job}
 
 Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires d’internationalisation (i18n) à la tâche de traduction de votre projet de traduction. Pour ajouter un dictionnaire d’internationalisation :
 
@@ -204,7 +204,7 @@ Le dictionnaire se trouve maintenant dans la tâche de traduction.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les dictionnaires i18n, consultez [Utilisation du traducteur pour gérer les dictionnaires](/help/sites-developing/i18n-translator.md).
+>Pour plus d’informations sur les dictionnaires i18n, reportez-vous à la section [Utilisation du traducteur pour gérer les dictionnaires](/help/sites-developing/i18n-translator.md).
 
 ## Ajout de balises à une tâche de traduction {#adding-tags-to-a-translation-job}
 
@@ -234,7 +234,7 @@ La mosaïque Résumé de traduction contient les propriétés configurées pour 
 * Langue cible : langue dans laquelle les pages sont traduites.
 * Méthode de traduction : processus de traduction. La traduction humaine et la traduction automatique sont prises en charge.
 * Fournisseur de traduction : prestataire de services de traduction qui effectue la traduction.
-* Catégorie de contenu : (traduction automatique) - La catégorie de contenu utilisée pour la traduction.
+* Catégorie de contenu : (traduction automatique) – La catégorie de contenu utilisée pour la traduction.
 * Configuration du cloud : configuration de cloud pour le connecteur du service de traduction utilisé pour le projet.
 
 Lors de la création d’un projet à l’aide du volet Ressources d’une page, ces propriétés sont configurées automatiquement en fonction des propriétés de la page source.
@@ -266,7 +266,7 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 
 Pour afficher le statut des différents fichiers de la tâche, cliquez ou appuyez sur le bouton de sélection de la mosaïque.
 
-## Définition du délai des tâches de traduction  {#setting-the-due-date-of-translation-jobs}
+## Définition du délai des tâches de traduction {#setting-the-due-date-of-translation-jobs}
 
 Spécifiez la date à laquelle le fournisseur de traduction doit renvoyer les fichiers traduits. Vous pouvez définir le délai de livraison du projet ou d’une tâche spécifique :
 
@@ -307,7 +307,7 @@ Pour plus d’informations sur les résultats de la définition de la portée, c
 >
 >La définition de la portée est facultative. Vous pouvez commencer une tâche de traduction sans définir la portée.
 
-Lorsque vous définissez la portée d’une tâche de traduction, l’état de la tâche est `Scope Requested`. Lorsque le fournisseur de traduction renvoie la portée, l’état est remplacé par `Scope Completed`. Lorsque la définition de la portée est terminée, vous pouvez utiliser la commande Afficher la portée pour consulter les résultats de la définition de la portée.
+Lorsque vous définissez l’étendue d’une tâche de traduction, l’état de la tâche est `Scope Requested`. Lorsque le fournisseur de traduction renvoie la portée, l’état est remplacé par `Scope Completed`. Lorsque la définition de la portée est terminée, vous pouvez utiliser la commande Afficher la portée pour consulter les résultats de la définition de la portée.
 
 La définition de la portée ne fonctionne correctement que lorsque le fournisseur de traduction auquel vous faites appel prend en charge cette fonctionnalité.
 
@@ -318,7 +318,7 @@ La définition de la portée ne fonctionne correctement que lorsque le fournisse
 
 1. Lorsque le statut de la tâche devient PORTÉE TERMINÉE, sur la mosaïque Tâche de traduction, cliquez ou appuyez sur le menu Commandes, puis cliquez ou appuyez sur Afficher la portée.
 
-## Début d’une tâche de traduction  {#starting-a-translation-job}
+## Début d’une tâche de traduction {#starting-a-translation-job}
 
 Commencez une tâche de traduction pour traduire les pages source dans la langue cible. La traduction est effectuée selon les valeurs des propriétés de la mosaïque Résumé de traduction.
 
@@ -335,13 +335,13 @@ Une fois que vous avez commencé la tâche de traduction, la mosaïque Tâche de
 
 ## Annulation d’une tâche de traduction {#canceling-a-translation-job}
 
-Annulez une tâche de traduction pour suspendre le processus de traduction et empêcher le fournisseur de traduction d’effectuer d’autres traductions. Vous pouvez annuler une tâche lorsque celle-ci a le statut `Committed For Translation` ou `Translation In Progress`.
+Annulez une tâche de traduction pour suspendre le processus de traduction et empêcher le fournisseur de traduction d’effectuer d’autres traductions. Vous pouvez annuler une tâche lorsque la tâche a la propriété `Committed For Translation` ou `Translation In Progress` statut.
 
 1. Dans la console Projets, ouvrez le projet de traduction.
 1. Sur la mosaïque Tâche de traduction, cliquez ou appuyez sur le menu Commandes, puis cliquez ou appuyez sur Annuler.
 1. Dans la boîte de dialogue Action qui confirme l’annulation de la traduction, cliquez ou appuyez sur OK.
 
-## Workflow Accepter/rejeter  {#accept-reject-workflow}
+## Workflow Accepter/rejeter {#accept-reject-workflow}
 
 Lorsque le contenu revient après traduction et possède le statut Prêt pour la révision, vous pouvez passer à la tâche de traduction et accepter/rejeter le contenu.
 
@@ -353,7 +353,7 @@ Si vous sélectionnez Rejeter la traduction, vous avez la possibilité d’ajout
 
 Le rejet du contenu le renvoie au fournisseur de traduction, qui peut consulter le commentaire.
 
-## Affichage et promotion d’un contenu mis à jour  {#reviewing-and-promoting-updated-content}
+## Affichage et promotion d’un contenu mis à jour {#reviewing-and-promoting-updated-content}
 
 Lorsque le contenu est traduit pour une copie de langue existante, révisez les traductions, apportez-y des modifications, si nécessaire, puis convertissez les traductions pour les déplacer vers la copie de langue. Vous pouvez réviser les fichiers traduits lorsque la tâche de traduction possède le statut Prêt pour la révision.
 

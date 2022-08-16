@@ -1,8 +1,8 @@
 ---
 title: Flux de produit
-seo-title: Flux de produit
+seo-title: Product Feed
 description: Découvrez-en davantage sur le flux de produits AEM.
-seo-description: Découvrez-en davantage sur le flux de produits AEM.
+seo-description: Learn about the AEM Product Feed.
 uuid: 99eb9bdc-2717-45d4-9203-6394b7d7ddc6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 1f920892-c52e-42ca-900c-2c7ab3c503b3
 exl-id: 11a3d636-040a-40bb-ad35-6b8430a81a49
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 71%
+source-wordcount: '576'
+ht-degree: 70%
 
 ---
 
@@ -26,7 +26,7 @@ AEM s’intègre à [Search &amp; Promote](https://www.adobe.com/solutions/testi
 * de tirer parti de la fonction de contrôle à distance de Search&amp;Promote pour effectuer des requêtes à la demande ou planifiées du flux de produit ;
 * de générer des flux pour différents comptes Search&amp;Promote, configurés comme configurations de services cloud.
 
-Vous devez disposer d’un compte valide et [configurer la connexion à Search &amp; Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). Vous devez également vérifier que vous utilisez le [centre de données](/help/sites-administering/search-and-promote.md#configuring-the-data-center) correct et vous assurer que l’**URI de serveur distant **est configuré.
+Vous devez disposer d’un compte valide et [configurer la connexion à Search &amp; Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). Vous devez également vérifier que vous utilisez le [centre de données](/help/sites-administering/search-and-promote.md#configuring-the-data-center) et assurez-vous que l’**URI de serveur distant **est configuré.
 
 ## Configuration du flux de produit {#set-up-the-product-feed}
 
@@ -35,13 +35,13 @@ Vous devez d’abord saisir une racine de site web et un attribut d’identifian
 1. Accédez à la configuration de Search&amp;Promote.
 1. Cliquez sur **[!UICONTROL Modifier]**.
 1. Cliquez sur l’onglet **[!UICONTROL Configuration des flux du connecteur d’index]**.
-1. Saisissez la **[!UICONTROL racine du site Web]** et **[!UICONTROL Attribut d’identifiant]**.
+1. Saisissez le **[!UICONTROL racine du site web]** et **[!UICONTROL Attribut d’identifiant]**.
 
    >[!NOTE]
    >
-   >La **[!UICONTROL racine du site Web]** est la racine de votre site Web eCommerce, par exemple `/content/geometrixx-outdoors/en`.
+   >Le **[!UICONTROL racine du site web]** est la racine de votre site web eCommerce, par exemple `/content/geometrixx-outdoors/en`.
    >
-   >**[!UICONTROL L’attribut Identifier]** est une propriété JCR qui identifie de manière unique le produit : `identifier`.
+   >Le **[!UICONTROL Attribut d’identifiant]** est une propriété JCR qui identifie de manière unique le produit : `identifier`.
 
 1. Cliquez sur **[!UICONTROL OK]**.
 
@@ -54,21 +54,21 @@ Vous devez également modifier deux configurations dans la console web pour gén
 1. Spécifiez le numéro de compte Search&amp;Promote auquel ce moteur de recherche est lié. Il sera utilisé pour rechercher une configuration de services cloud utilisée par ce moteur de recherche.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-### Configuration du générateur de flux de produits Search&amp;Promote Day CQ pour Geometrixx  {#configuring-the-day-cq-search-promote-products-feed-generator-for-geometrixx}
+### Configuration du générateur de flux de produits Search&amp;Promote Day CQ pour Geometrixx {#configuring-the-day-cq-search-promote-products-feed-generator-for-geometrixx}
 
 1. Accédez à [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Cliquez sur **[!UICONTROL Configuration de la mise en œuvre du générateur de flux de produits Search&amp;Promote Day CQ pour Geometrixx]**.
 1. Spécifiez le numéro de compte Search&amp;Promote auquel ce générateur est lié. Il sera utilisé pour rechercher une configuration de services cloud utilisée par ce générateur.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Planification du flux de produit  {#schedule-the-product-feed}
+## Planification du flux de produit {#schedule-the-product-feed}
 
 Pour activer la génération de flux planifiée, vous devez configurer le planificateur.
 Un planificateur est configuré comme configuration enfant de votre configuration de services cloud de Search&amp;Promote.
 
 1. Accédez à la configuration de Search&amp;Promote.
 1. Cliquez sur **[!UICONTROL +]** en regard de **[!UICONTROL Configuration du planificateur]**.
-1. Saisissez un **[!UICONTROL titre]** reconnaissable par les auteurs de pages, et un **[!UICONTROL nom]** unique.
+1. Saisissez un **[!UICONTROL Titre]** qui est reconnaissable par les auteurs de pages, et un **[!UICONTROL Nom]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Une boîte de dialogue s’ouvre.
 
    ![chlimage_1-108](assets/chlimage_1-108a.png)
@@ -81,7 +81,7 @@ Un planificateur est configuré comme configuration enfant de votre configuratio
 
 1. Cochez la case **[!UICONTROL Activer la planification]**.
 1. Sélectionnez une **[!UICONTROL planification]**. Il s’agit de la planification de génération de flux.
-1. Cochez ou non **[!UICONTROL Indexation à la demande]**. Cette fonction sert à appeler manuellement l’index Search&amp;Promote. Si **[!UICONTROL Demander le flux de produits complet]** est coché, Search &amp; Promote demande un flux de produits complet. Dans le cas contraire, un flux de produits incrémentiel est demandé.
+1. Cochez ou non **[!UICONTROL Indexation à la demande]**. Cette fonction sert à appeler manuellement l’index Search&amp;Promote. If **[!UICONTROL Demande de flux de produits complet]** est cochée, Search &amp; Promote demande un flux de produits complet. Dans le cas contraire, un flux de produits incrémentiel est demandé.
 
    >[!NOTE]
    >

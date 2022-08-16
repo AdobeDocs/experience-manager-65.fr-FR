@@ -1,8 +1,8 @@
 ---
 title: Conditions préalables à l’intégration à Adobe Target
-seo-title: Conditions préalables à l’intégration à Adobe Target
+seo-title: Prerequisites for Integrating with Adobe Target
 description: Découvrez les conditions requises pour l’intégration avec Adobe Target.
-seo-description: Découvrez les conditions requises pour l’intégration avec Adobe Target.
+seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,18 +13,18 @@ docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 63%
+source-wordcount: '557'
+ht-degree: 62%
 
 ---
 
 # Conditions préalables à l’intégration à Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
-Dans le cadre de l’intégration [d’AEM et d’Adobe Target](/help/sites-administering/target.md), vous devez vous enregistrer auprès d’Adobe Target, configurer l’agent de réplication et sécuriser les paramètres d’activité sur le noeud de publication.
+Dans le cadre de la [intégration d’AEM et d’Adobe Target](/help/sites-administering/target.md), vous devez vous enregistrer auprès d’Adobe Target, configurer l’agent de réplication et sécuriser les paramètres d’activité sur le noeud de publication.
 
 ## Inscription à Adobe Target {#registering-with-adobe-target}
 
-Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des autorisations de niveau **approbateur**. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de vos nom d’utilisateur et mot de passe Adobe Target pour connecter AEM à Adobe Target.
+Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit comporter **approbateur** autorisations de niveau supérieur au minimum. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de vos nom d’utilisateur et mot de passe Adobe Target pour connecter AEM à Adobe Target.
 
 Le code client identifie le compte client Adobe Target en appelant le serveur Adobe Target.
 
@@ -32,11 +32,11 @@ Le code client identifie le compte client Adobe Target en appelant le serveur A
 >
 >Votre compte doit également être activé par l’équipe Target pour pouvoir utiliser l’intégration.
 >
->Si ce n’est pas le cas, veuillez contacter [l’Assistance clientèle Adobe](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
+>Si ce n&#39;est pas le cas, veuillez contacter [Assistance clientèle Adobe](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 
-L’agent de réplication [Test et Target ](/help/sites-deploying/replication.md) doit être activé sur l’instance d’auteur. Notez que cet agent de réplication n’est pas activé par défaut si vous avez utilisé le mode d’exécution [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) pour installer AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
+Test et Target [agent de réplication](/help/sites-deploying/replication.md) doit être activé sur l’instance d’auteur. Notez que cet agent de réplication n’est pas activé par défaut si vous avez utilisé la variable [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) mode d’exécution pour l’installation d’AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
 1. Sur la page d’accueil d’AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
 1. Cliquez ou appuyez sur **Agents sur l’auteur**.
@@ -53,9 +53,9 @@ L’agent de réplication [Test et Target ](/help/sites-deploying/replication.md
 
 Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 
-Le noeud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le noeud jcr:content des activités ;* *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
+Le **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/campaigns/*nameofbrand*`* *sous le noeud jcr:content des activités ;* *par exemple `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Ce nœud est créé après que vous ciblez un composant.
 
-Le noeud **cq:ActivitySettings** sous le noeud jcr:content de l’activité est protégé par les listes de contrôle d’accès suivantes :
+Le **cq:ActivitySettings** sous le noeud jcr:content de l’activité est protégé par les listes de contrôle d’accès suivantes :
 
 * Tout refuser pour tout le monde
 * Autoriser jcr:read,rep:write pour target-activity-authors (l’auteur est membre de ce groupe par défaut)
@@ -65,7 +65,7 @@ Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont p
 
 ## Configuration de l’externaliseur de liens d’AEM {#configuring-the-aem-link-externalizer}
 
-Lors de la modification d’une activité dans Adobe Target, l’URL pointe sur **localhost**, à moins que vous ne modifiiez l’URL sur le nœud de création AEM. Vous pouvez configurer l’externaliseur de liens d’AEM si vous souhaitez que le contenu exporté pointe vers un domaine *publish* spécifique.
+Lors de la modification d’une activité dans Adobe Target, l’URL pointe sur **localhost**, à moins que vous ne modifiiez l’URL sur le nœud de création AEM. Vous pouvez configurer l’externaliseur de liens d’AEM si vous souhaitez que le contenu exporté pointe vers un *publier* domaine.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Pour configurer l’externaliseur AEM :
 >
 >Pour plus d’informations, voir [Externalisation des URL](/help/sites-developing/externalizer.md).
 
-1. Accédez à la console web OSGi à l’adresse **https://&lt;serveur>:&lt;port>/system/console/configMgr.**
+1. Accédez à la console web OSGi à l’adresse **https://&lt;server>:&lt;port>/system/console/configMgr**
 1. Recherchez **Day CQ Link Externalizer** et saisissez le domaine du nœud de création.
 
    ![chlimage_1-120](assets/aem-externalizer-01.png)

@@ -1,8 +1,8 @@
 ---
 title: Système de style
-seo-title: Système de style
+seo-title: Style System
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la stratégie de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
-seo-description: Le système de style permet à un auteur de modèles de définir des classes de style dans la stratégie de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
+seo-description: The Style System allows a template author to define style classes in the content policy of a component so that a content author is able to select them when editing the component on a page. These styles can be alternative visual variations of a component, making it more flexible.
 uuid: 0d857650-8738-49e6-b431-f69c088be74f
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,7 +11,7 @@ discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1314'
 ht-degree: 98%
 
 ---
@@ -22,7 +22,7 @@ Le système de style permet à un auteur de modèles de définir des classes de 
 
 Cela rend inutile le développement d’un composant personnalisé pour chaque style ou la personnalisation d’une boîte de dialogue de composant pour activer une telle fonctionnalité de style. On obtient ainsi des composants plus réutilisables, pouvant être adaptés, rapidement et aisément, aux besoins des auteurs de contenu sans développement back-end dans AEM.
 
-## Exemple d’utilisation  {#use-case}
+## Cas d’utilisation {#use-case}
 
 Les auteurs de modèles doivent être en mesure de configurer non seulement le mode de fonctionnement des composants pour les auteurs de contenu, mais aussi diverses variantes visuelles d’un composant.
 
@@ -73,7 +73,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 1. Configurez les classes CSS que vous souhaitez rendre disponibles à vos auteurs de contenu, comme décrit dans la section [En tant qu’auteur de modèles](#as-a-template-author).
 1. Les auteurs de contenu peuvent alors utiliser les styles, comme décrit dans la section [En tant qu’auteur de contenu](#as-a-content-author).
 
-### En tant qu’auteur de contenu   {#as-a-content-author}
+### En tant qu’auteur de contenu {#as-a-content-author}
 
 1. Après avoir installé le projet WKND, accédez à la page d’accueil principale de WKND `http://<host>:<port>/sites.html/content/wknd/language-masters/en` (en anglais) et modifiez la page.
 1. Sélectionnez un composant **Titre** plus bas dans la page
@@ -88,7 +88,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
    >
    >Dans cet exemple, les styles **Couleurs** (**Noir**, **Blanc** et **Gris**) s’excluent mutuellement, tandis que les options **Style** (**Souligné**, **Aligner à droite** et **Mini Espacement**) peuvent être combinées. Vous pouvez [configurer ce paramètre dans le modèle en tant qu’auteur du modèle](#as-a-template-author).
 
-### En tant qu’auteur de modèles   {#as-a-template-author}
+### En tant qu’auteur de modèles {#as-a-template-author}
 
 1. Alors que vous modifiez la page d’accueil de WKND (`http://<host>:<port>/sites.html/content/wknd/language-masters/en`) (en anglais), modifiez le modèle de la page via **Informations sur la page -> Modifier le modèle**.
 
@@ -141,7 +141,7 @@ L’onglet de la boîte de dialogue Modifier peut être inclus de la même mani�
 >
 >L’onglet Styles de la boîte de dialogue Modifier n’est pas activé par défaut.
 
-### Styles avec noms d’éléments   {#styles-with-element-names}
+### Styles avec noms d’éléments {#styles-with-element-names}
 
 Les développeurs peuvent aussi configurer une liste de noms d’éléments autorisés pour les styles du composant avec la propriété de table de chaînes `cq:styleElements`. Ensuite, dans l’onglet Styles de la stratégie, dans la boîte de dialogue de conception, l’auteur de modèles peut aussi choisir un nom d’élément pour chaque style. Cela permet de définir le nom de l’élément wrapper.
 
@@ -158,7 +158,6 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 >1. Enfin, le nom `cq:htmlTag`/ `cq:tagName` du composant est considéré comme une valeur de repli.
 
 >
-
 
 
 Cette capacité à définir des noms de styles est utile pour les composants génériques, tels que le conteneur de mise en page ou le composant Fragment de contenu. Cela permet de leur donner davantage de sens.

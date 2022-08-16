@@ -1,42 +1,42 @@
 ---
 title: Étendre la fonctionnalité de recherche
-description: Étendez les fonctionnalités de recherche de  [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
+description: Étendre les fonctionnalités de recherche de [!DNL Adobe Experience Manager Assets] au-delà des valeurs par défaut.
 contentOwner: AG
 role: Developer
-feature: Rechercher
+feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
 workflow-type: tm+mt
-source-wordcount: '839'
-ht-degree: 74%
+source-wordcount: '838'
+ht-degree: 75%
 
 ---
 
 # Étendre la recherche de ressources {#extending-assets-search}
 
-Vous pouvez étendre les fonctionnalités de recherche [!DNL Adobe Experience Manager Assets]. [!DNL Experience Manager Assets] recherche des ressources par chaînes.
+Vous pouvez étendre [!DNL Adobe Experience Manager Assets] fonctionnalités de recherche. Prêt à l’emploi, [!DNL Experience Manager Assets] recherche des ressources par chaînes.
 
 La recherche est effectuée par le biais de l’interface QueryBuilder, de sorte qu’elle puisse être personnalisée avec plusieurs prédicats. Vous pouvez remplacer l’ensemble des prédicats par défaut dans le répertoire suivant : `/apps/dam/content/search/searchpanel/facets`.
 
-Vous pouvez également ajouter des onglets supplémentaires au panneau d’administration [!DNL Assets].
+Vous pouvez également ajouter d’autres onglets au [!DNL Assets] panneau d’administration.
 
 >[!CAUTION]
 >
->À compter de la version [!DNL Experience Manager] 6.4, l’interface utilisateur classique est obsolète. Pour plus d’informations, voir [Fonctionnalités obsolètes et supprimées](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html). Adobe recommande d’utiliser l’IU tactile. Pour la personnalisation, voir [Facettes de recherche](/help/assets/search-facets.md).
+>À partir de [!DNL Experience Manager] 6.4, l’interface utilisateur classique est obsolète. Pour l’annonce, voir [fonctionnalités obsolètes et supprimées](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=fr). Adobe recommande d’utiliser l’IU tactile. Pour la personnalisation, voir [facettes de recherche](/help/assets/search-facets.md).
 
 ## Recouvrement {#overlaying}
 
-Pour superposer les prédicats préconfigurés, copiez le noeud `facets` de `/libs/dam/content/search/searchpanel` vers `/apps/dam/content/search/searchpanel/` ou spécifiez une autre propriété `facetURL` dans la configuration `searchpanel` (la valeur par défaut est `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
+Pour superposer les prédicats préconfigurés, copiez la variable `facets` noeud à partir de `/libs/dam/content/search/searchpanel` to `/apps/dam/content/search/searchpanel/` ou spécifiez un autre `facetURL` dans la propriété `searchpanel` configuration (la valeur par défaut est de `/libs/dam/content/search/searchpanel/facets.overlay.infinity.json`).
 
 ![screen_shot_2012-06-05at113619am](assets/screen_shot_2012-06-05at113619am.png)
 
 >[!NOTE]
 >
->Par défaut, la structure de répertoire sous `/apps` n’existe pas et créez-la. Assurez-vous que les types de nœuds correspondent à ceux existant sous `/libs`.
+>Par défaut, la structure de répertoires sous `/apps` n’existe pas, alors créez-le. Assurez-vous que les types de nœuds correspondent à ceux existant sous `/libs`.
 
 ## Ajouter des onglets {#adding-tabs}
 
-Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant dans l&#39;interface d&#39;administration [!DNL Assets]. Pour créer des onglets supplémentaires, procédez comme suit :
+Vous pouvez ajouter d’autres onglets de recherche en les configurant dans le [!DNL Assets] interface d’administration. Pour créer des onglets supplémentaires, procédez comme suit :
 
 1. Créez la structure de dossiers `/apps/wcm/core/content/damadmin/tabs,`si elle n’existe pas encore, puis copiez le nœud `tabs` dans le répertoire `/libs/wcm/core/content/damadmin` et collez-le.
 1. Créez et configurez le second onglet, le cas échéant.
@@ -47,9 +47,9 @@ Vous pouvez ajouter des onglets de recherche supplémentaires en les configurant
 
 ## Création de prédicats personnalisés {#creating-custom-predicates}
 
-[!DNL Assets] est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. La personnalisation d’un partage de ressources de cette manière est traitée dans [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
+[!DNL Assets] est fourni avec un ensemble de prédicats prédéfinis qui peuvent être utilisés pour personnaliser une page de partage de ressources. La personnalisation d’un partage de ressources de cette manière est traitée dans [création et configuration d’une page Partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Outre l’utilisation de prédicats préexistants, les développeurs [!DNL Experience Manager] peuvent également créer leurs propres prédicats à l’aide de l’[API Query Builder](/help/sites-developing/querybuilder-api.md).
+En plus d’utiliser des prédicats préexistants, [!DNL Experience Manager] les développeurs peuvent également créer leurs propres prédicats à l’aide de la variable [API Query Builder](/help/sites-developing/querybuilder-api.md).
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
@@ -299,4 +299,4 @@ Les prédicats suivants sont disponibles sous forme de widgets ExtJS préconfigu
 
 La présentation des résultats de la recherche sur une page de partage des ressources est régie par la loupe sélectionnée. [!DNL Experience Manager Assets] est fourni avec un ensemble de loupes prédéfinies qui peuvent être utilisées pour personnaliser une page de partage de ressources. Ce processus de personnalisation d’un partage de ressources est abordé dans la section [Création et configuration d’une page de partage de ressources](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Outre l’utilisation de loupes préexistantes, les développeurs [!DNL Experience Manager] peuvent également créer leurs propres loupes.
+En plus d&#39;utiliser des lentilles préexistantes, [!DNL Experience Manager] les développeurs peuvent également créer leurs propres loupes.

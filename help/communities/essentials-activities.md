@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les flux d’activités
-seo-title: Notions fondamentales sur les flux d’activités
+seo-title: Activity Stream Essentials
 description: Liste des activités récentes effectuées par un membre ou liste des activités récentes sur un seul fil de contenu
-seo-description: Liste des activités récentes effectuées par un membre ou liste des activités récentes sur un seul fil de contenu
+seo-description: List of recent activites performed by a member or a list of recent activities on a single thread of content
 uuid: 30c5ac08-0af0-4670-9d81-0beb5c93e00a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: d98bcbe4-3f80-49ec-b40c-417be0d97350
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 3%
 
 ---
 
@@ -24,17 +24,17 @@ Les activités d’un membre de la communauté connecté, comme la publication s
 
 La possibilité de suivre ajoute un autre ensemble d’activités lorsque les membres de la communauté suivent des messages d’intérêt ou d’autres membres de la communauté.
 
-Tous les [sites communautaires](/help/communities/overview.md#communitiessites) incluent une page de profil utilisateur pour le membre connecté qui affichera les activités du membre de la même manière.
+Tous [sites communautaires](/help/communities/overview.md#communitiessites) incluez une page de profil utilisateur pour le membre connecté qui affichera les activités du membre de la même manière.
 
-## Concepts  {#concepts}
+## Concepts {#concepts}
 
-Un *flux d’activités* est la liste des activités récentes exécutées par un membre ou une liste des activités récentes sur un seul fil de contenu, tel qu’un sujet de forum ou un blog.
+Un *flux d’activités* est la liste des activités récentes effectuées par un membre ou une liste des activités récentes sur un seul fil de contenu, comme un sujet de forum ou un blog.
 
 Un membre peut suivre un flux d’activité en suivant un autre individu ou un autre contenu.
 
-Un *fil d’actualités* est une fusion des flux d’activité suivis par un membre dans un seul flux.
+A *fil d&#39;actualités* est une fusion des flux d’activité suivis par un membre dans un seul flux.
 
-Un *[graphique social](/help/communities/essentials-socialgraph.md)* capture les relations suivantes d’un membre à un autre.
+A *[graphique social](/help/communities/essentials-socialgraph.md)* capture les relations suivantes d’un membre à un autre.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -62,14 +62,14 @@ Un *[graphique social](/help/communities/essentials-socialgraph.md)* capture les
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="/help/communities/activities.md">Fonctionnalité de flux d’activités</a></td>
+   <td>Voir <a href="/help/communities/activities.md">Fonctionnalité Flux d’activités</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personnalisations côté client](/help/communities/client-customize.md)
 
-## Principes élémentaires côté serveur {#essentials-for-server-side}
+## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 * [API Flux d’activités](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/activitystreams/api/package-frame.html)
 
@@ -79,4 +79,4 @@ Un *[graphique social](/help/communities/essentials-socialgraph.md)* capture les
 
 ### Fonction Flux d&#39;activités {#activity-stream-function}
 
-Une structure de site de communauté qui comprend la fonction [Flux d’activités](/help/communities/functions.md#activity-stream-function), comprend un composant `activity streams` configuré.
+Une structure de site de communauté qui inclut [Fonction de flux d’activités](/help/communities/functions.md#activity-stream-function), inclut une `activity streams` composant.

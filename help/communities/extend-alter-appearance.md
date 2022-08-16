@@ -1,8 +1,8 @@
 ---
 title: Modification de l’aspect (HBS)
-seo-title: Modification de l’aspect
+seo-title: Alter the Appearance
 description: Modification des scripts HBS
-seo-description: Modification des scripts HBS
+seo-description: Modify the HBS scripts
 uuid: cff24505-dbb3-4312-9b1b-c1693b8d1c98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 0%
+source-wordcount: '271'
+ht-degree: 1%
 
 ---
 
-# Modifier l’aspect (HBS) {#alter-the-appearance-hbs}
+# Modification de l’aspect (HBS) {#alter-the-appearance-hbs}
 
 Maintenant que les composants du système de commentaires personnalisé dans le répertoire de l’application (/apps) sont en place, avec un resourceSuperType référençant le système de commentaires par défaut et le modèle/affichage personnalisé enregistré, il est possible de modifier l’implémentation.
 
@@ -30,9 +30,9 @@ Pour une démonstration simple, l’avatar affiché pour l’utilisateur connect
 
 ## Modification des scripts HBS {#modify-the-hbs-scripts}
 
-Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
+Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
-* Ouvrez [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* Ouvrir [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * Commentez la balise qui contient l’avatar d’une publication de commentaire (~ ligne 21) :
 
@@ -42,7 +42,7 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
          -->
       ```
 
-* Ouvrez [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* Ouvrir [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * Mettez en commentaire la balise qui contient l’avatar pour la prochaine entrée de commentaire (~ ligne 44) :
 
@@ -52,9 +52,9 @@ Utilisation de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md
          -->
       ```
 
-* Sélectionnez **Enregistrer tout**.
+* Sélectionnez **Enregistrer tout**
 
-### Répliquer l’application personnalisée {#replicate-custom-app}
+### Répliquer une application personnalisée {#replicate-custom-app}
 
 Une fois l’application modifiée, il est nécessaire de répliquer à nouveau le composant personnalisé.
 
@@ -62,15 +62,15 @@ Pour ce faire, procédez comme suit :
 
 * À partir du menu principal
 
-   * Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
-   * Sélectionnez **[!UICONTROL Activer l’arborescence]**.
-   * Définissez `Start Path` sur `/apps/custom`.
-   * Désélectionnez **[!UICONTROL Uniquement Modifié]**.
-   * Sélectionnez le bouton **[!UICONTROL Activer]** .
+   * Sélectionner **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Réplication]**.
+   * Sélectionner **[!UICONTROL Activer l’arborescence]**.
+   * Définir `Start Path` to `/apps/custom`.
+   * Désélectionner **[!UICONTROL Modifié uniquement]**.
+   * Sélectionner **[!UICONTROL Activer]** bouton .
 
 ### Afficher le commentaire modifié sur l’exemple de page publié {#view-modified-comment-on-published-sample-page}
 
-[En poursuivant l’](/help/communities/extend-sample-page.md#publish-sample-page) expérience sur l’instance de publication, toujours connecté en tant qu’utilisateur identique, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
+[Continuer l’expérience](/help/communities/extend-sample-page.md#publish-sample-page) sur l’instance de publication, toujours connecté en tant que même utilisateur, il est désormais possible d’actualiser la page dans l’environnement de publication pour afficher la modification afin de supprimer l’avatar :
 
 ![view-modified-content](assets/view-modified-content.png)
 

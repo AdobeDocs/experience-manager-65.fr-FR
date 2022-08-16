@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales relatives au tableau de bord
-seo-title: Notions fondamentales relatives au tableau de bord
+seo-title: Leaderboard Essentials
 description: Présentation des fonctionnalités du tableau de classement
-seo-description: Présentation des fonctionnalités du tableau de classement
+seo-description: Leaderboard feature overview
 uuid: 815a6928-b147-496d-9751-13159ad1304d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,12 @@ discoiquuid: 7449f99e-77d7-4c0f-96d5-b67d5e1f124a
 exl-id: fd1b1749-13f9-4079-ae39-348676105852
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '99'
+source-wordcount: '94'
 ht-degree: 8%
 
 ---
 
-# Notions fondamentales sur le tableau de bord {#leaderboard-essentials}
+# Notions fondamentales relatives au tableau de bord {#leaderboard-essentials}
 
 Cette page fournit les informations essentielles pour utiliser la fonctionnalité de classement.
 
@@ -60,4 +60,4 @@ Voir [Notions fondamentales sur la notation et les badges](configure-scoring.md)
 
 ### Fonction Bibliothèque de fichiers {#file-library-function}
 
-Une structure de site de communauté qui comprend la fonction [Leaderboard](functions.md#leaderboard-function), comprend un composant `leaderboard` configuré.
+Une structure de site de communauté qui inclut [Fonction de classement](functions.md#leaderboard-function), inclut une `leaderboard` composant.

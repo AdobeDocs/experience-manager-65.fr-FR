@@ -1,8 +1,8 @@
 ---
 title: Connexion à des bases de données SQL
-seo-title: Connexion à des bases de données SQL
+seo-title: Connecting to SQL Databases
 description: Accédez à une base de données SQL externe, de sorte que vos applications AEM puissent interagir avec les données.
-seo-description: Accédez à une base de données SQL externe, de sorte que vos applications AEM puissent interagir avec les données.
+seo-description: Access an external SQL database to so that your AEM applications can interact with the data
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 82%
+source-wordcount: '948'
+ht-degree: 81%
 
 ---
 
@@ -40,7 +40,7 @@ Le module externe détermine automatiquement les packages à importer et les ré
 
 Une connaissance du code source vous permet de déterminer la solution à utiliser. Vous pouvez également essayer l’une des solutions et réaliser des tests pour la valider.
 
-### POM qui compile le fichier hsqldb.jar  {#pom-that-bundles-hsqldb-jar}
+### POM qui compile le fichier hsqldb.jar {#pom-that-bundles-hsqldb-jar}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -88,9 +88,9 @@ Les liens suivants ouvrent les pages de téléchargement pour certaines solution
 
 * [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
-* [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
+* [IBM DB2 ](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
-### Configuration du service Pool de connexions JDBC  {#configuring-the-jdbc-connection-pool-service}
+### Configuration du service Pool de connexions JDBC {#configuring-the-jdbc-connection-pool-service}
 
 Ajoutez une configuration pour le service Pool de connexions JDBC qui utilise le pilote JDBC pour créer des objets de source de données. Votre code d’application utilise ce service pour obtenir l’objet et se connecter à la base de données.
 
@@ -108,7 +108,7 @@ Les propriétés suivantes sont disponibles pour configurer un service de connex
 
 * Mot de passe (`jdbc.password`) : mot de passe à utiliser pour l’authentification de l’utilisateur. Le type de données est `String`.
 
-* Requête de validation ( `jdbc.validation.query`) : L’instruction SQL à utiliser pour vérifier la connexion, par exemple `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Le type de données est `String`.
+* Requête de validation ( `jdbc.validation.query`) : L’instruction SQL à utiliser pour vérifier que la connexion est réussie, par exemple `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Le type de données est `String`.
 
 * Lecture seule par défaut (default.readonly) : sélectionnez cette option si vous voulez que la connexion fournisse un accès en lecture seule. Le type de données est `Boolean`.
 * Validation automatique par défaut (`default.autocommit`) : sélectionnez cette option pour créer des transactions distinctes pour chaque commande SQL envoyée à la base de données ; chaque transaction est alors automatiquement validée. Ne sélectionnez pas cette option lorsque vous validez explicitement des transactions dans votre code. Le type de données est `Boolean`.
@@ -121,7 +121,7 @@ Les propriétés suivantes sont disponibles pour configurer un service de connex
 
 * Propriétés de service supplémentaires (`datasource.svc.properties`) : ensemble de paires nom/valeur que vous souhaitez ajouter à l’URL de connexion. Le type de données est `String[]`.
 
-Pool de connexions JDBC est un service de fabrique. Par conséquent, si vous utilisez un noeud `sling:OsgiConfig` pour configurer le service de connexion, le nom du noeud doit inclure le PID du service d’usine suivi de *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool` est un exemple de nom de noeud.
+Pool de connexions JDBC est un service de fabrique. Par conséquent, si vous utilisez une `sling:OsgiConfig` pour configurer le service de connexion, le nom du noeud doit inclure le PID du service d’usine, suivi de *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. Un exemple de nom de noeud est `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
@@ -131,7 +131,7 @@ Dans votre code Java, utilisez le service DataSourcePool pour obtenir un objet `
 
 L’exemple de code JSP suivant obtient une instance de la source de données hsqldbds, exécute une requête SQL simple et affiche le nombre de résultats renvoyés.
 
-#### JSP qui effectue une recherche de base de données  {#jsp-that-performs-a-database-lookup}
+#### JSP qui effectue une recherche de base de données {#jsp-that-performs-a-database-lookup}
 
 ```java
 <%@include file="/libs/foundation/global.jsp"%><%
@@ -170,7 +170,6 @@ L’exemple de code JSP suivant obtient une instance de la source de données hs
 >[!NOTE]
 >
 >Si la méthode getDataSource renvoie une exception en raison d’une source de données introuvable, assurez-vous que la configuration du service Pool de connexions est correcte. Vérifiez les noms des propriétés, les valeurs et les types de données.
-
 
 >[!NOTE]
 >

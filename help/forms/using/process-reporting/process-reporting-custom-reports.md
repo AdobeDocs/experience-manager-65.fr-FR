@@ -11,7 +11,7 @@ discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1010'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ Avant d’ajouter un rapport personnalisé, procédez comme suit :
 
 ## Utiliser l’interface REST de QueryBuilder {#using-the-rest-interface-of-the-querybuilder}
 
-L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de partage de ressources via une API Java et une API REST. Familiarisez -vous avec lʼ[interface REST de CRX QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) avant d’effectuer les étapes suivantes :
+L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de partage de ressources via une API Java et une API REST. Familiarisez -vous avec lʼ[interface REST de CRX QueryBuilder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html) avant d’effectuer les étapes suivantes :
 
 1. Accédez à l’URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. Créez une requête basée sur la structure du nœud de stockage et les propriétés de nœud de Process Reporting.
@@ -49,7 +49,7 @@ L’interface REST de CRX QueryBuilder offre la fonctionnalité QueryBuilder de
 
 ## Créer un service à l’aide de l’API Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
-Avant de créer un service à l’aide de l’API Query Builder, vous devez [créer et déployer un bundle CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) et [utiliser l’API Query Builder](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+Avant de créer un service à l’aide de l’API Query Builder, vous devez [créer et déployer un bundle CQ OSGI](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) et [utiliser l’API Query Builder](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
 1. Créez un service OSGi avec des annotations appropriées. Pour accéder à QueryBuilder, utilisez le code suivant :
 
@@ -632,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Intégrer l’interface utilisateur des rapports dans l’interface utilisateur Process Reporting existante  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont les suivantes : [Notions de base de Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Créer un nœud CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr#Creating%20a%20Node) et fournir les [droits d’accès](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr#Access%20Control) adéquats.
+Les conditions préalables à la création d’une interface utilisateur distincte pour l’affichage des résultats sont les suivantes : [Notions de base de Sling](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), [Créer un nœud CRX](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) et fournir les [droits d’accès](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control) adéquats.
 
 1. Créez une interface utilisateur distincte.
 1. Créez un nœud enfant `nt:unstructured` au niveau du nœud `/content/process-reporting-runtime/custom-reports` pour chaque rapport enfichable.

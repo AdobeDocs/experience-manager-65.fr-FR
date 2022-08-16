@@ -1,8 +1,8 @@
 ---
 title: Développement sur AEM – Conseils et meilleures pratiques
-seo-title: Développement sur AEM – Conseils et meilleures pratiques
+seo-title: AEM Development - Guidelines and Best Practices
 description: Conseils et meilleures pratiques pour développer sur AEM.
-seo-description: Conseils et meilleures pratiques pour développer sur AEM.
+seo-description: Guidelines and best practices for developing on AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1091'
 ht-degree: 87%
 
 ---
@@ -52,7 +52,7 @@ Les règles générales suivantes sont pertinentes pour les développeurs dans l
 
 Lors de la création de vos propres composants ou de la personnalisation d’un composant existant, il est souvent plus simple (et plus sûr) de recycler les définitions existantes. Les mêmes principes s’appliquent également à d’autres éléments dans AEM, par exemple le gestionnaire d’erreurs.
 
-Cela peut être effectué en copiant et en remplaçant la définition existante. En d’autres termes, en copiant la définition de `/libs` vers `/apps/<your-project>`. Cette nouvelle définition, dans `/apps`, peut être mise à jour en fonction de vos besoins.
+Cela peut être effectué en copiant et en remplaçant la définition existante. En d’autres termes, copier la définition depuis `/libs` to `/apps/<your-project>`. Cette nouvelle définition, dans `/apps`, peut être mis à jour selon vos besoins.
 
 >[!NOTE]
 >
@@ -88,8 +88,8 @@ Par exemple :
 >
 >Pour la configuration et les autres modifications :
 >
->1. Copiez l’élément dans `/libs` vers `/apps`
->1. apporter des modifications dans `/apps`
+>1. copier l’élément dans `/libs` to `/apps`
+>1. Apportez les modifications voulues dans `/apps`
 
 
 ## Quand utiliser ou non les requêtes JCR {#when-to-use-jcr-queries-and-when-not-to-use-them}
@@ -113,12 +113,11 @@ Pour effectuer le rendu du contenu, utilisez l’accès de navigation à l’arb
 >
 >Si vous utilisez [Query Builder](/help/sites-developing/querybuilder-api.md), vous utilisez des requêtes JCR, car Query Builder génère des requêtes JCR en interne.
 
-
-## Considérations relatives à la sécurité  {#security-considerations}
+## Considérations relatives à la sécurité {#security-considerations}
 
 >[!NOTE]
 >
->Il est également utile de référencer la [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
+>Il est également utile de mentionner la [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
 ### Sessions (de référentiel) JCR {#jcr-repository-sessions}
 
@@ -128,13 +127,13 @@ Vous devez utiliser la session utilisateur, et non la session administrative. Ce
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protection contre les scripts de site à site (XSS)  {#protect-against-cross-site-scripting-xss}
+### Protection contre les scripts de site à site (XSS) {#protect-against-cross-site-scripting-xss}
 
 Les scripts de site à site (XSS) permettent aux pirates d’injecter du code dans des pages web consultées par d’autres utilisateurs. Cette faille de sécurité peut être exploitée par des internautes malveillants pour contourner les contrôles d’accès.
 
 AEM applique le principe de filtrage de l’ensemble du contenu fourni par l’utilisateur lors de la sortie. La prévention du script intersite (XSS) se voit accorder la priorité la plus élevée lors des phases de développement et de test.
 
-En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://modsecurity.org), peut fournir un contrôle central fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
+En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://modsecurity.org), peut fournir un contrôle central et fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
 
 >[!CAUTION]
 >
@@ -155,7 +154,7 @@ Comme pour toute application Internet, lors du transport d’informations confid
 
 Cela s’applique aux informations confidentielles au sein du système (comme la configuration ou l’accès administrateur), ainsi qu’aux informations confidentielles pour ses utilisateurs (comme leurs détails personnels).
 
-## Tâches distinctes de développement  {#distinct-development-tasks}
+## Tâches distinctes de développement {#distinct-development-tasks}
 
 ### Personnalisation des pages d’erreur {#customizing-error-pages}
 
@@ -163,7 +162,7 @@ Les pages d’erreur peuvent être personnalisées pour AEM. Cela est recommand�
 
 Voir [Personnalisation des pages d’erreur affichées par le gestionnaire d’erreur](/help/sites-developing/customizing-errorhandler-pages.md) pour plus de détails.
 
-### Fichiers ouverts dans le processus Java  {#open-files-in-the-java-process}
+### Fichiers ouverts dans le processus Java {#open-files-in-the-java-process}
 
 Étant donné qu’AEM peut accéder à un grand nombre de fichiers, il est recommandé que le nombre de [fichiers ouverts pour un processus Java](/help/sites-deploying/configuring.md#open-files-in-the-java-process) soit configuré explicitement pour AEM.
 

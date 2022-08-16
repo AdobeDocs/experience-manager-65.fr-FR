@@ -1,8 +1,8 @@
 ---
 title: Suivi des messages rejetés
-seo-title: Suivi des messages rejetés
+seo-title: Tracking Bounced Emails
 description: Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds.
-seo-description: Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds.
+seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 85%
+source-wordcount: '711'
+ht-degree: 84%
 
 ---
 
@@ -65,7 +65,7 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
 
    Permet de définir des indicateurs pour la recherche.
 
-   `imap.flag.SEEN`: définissez false pour le message nouveau/invisible, true pour les messages déjà lus.
+   `imap.flag.SEEN`:Définissez false pour le message nouveau/invisible, true pour les messages déjà lus.
 
    Voir [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) pour obtenir la liste complète des indicateurs.
 
@@ -76,9 +76,9 @@ Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez c
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Utilisation du protocole IMAP sur SSL pour se connecter à GMail sur le port 993 avec les identifiants user/secret. Seuls les messages déjà lus sont récupérés. |
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Utilisation du protocole IMAP sur SSL pour se connecter à GMail sur le port 993 avec les identifiants user/secret. Seuls les nouveaux messages OU les messages déjà lus sont récupérés. |
 
-1. Enregistrez la configuration.
+1. enregistrez la configuration.
 
-## Configuration du composant Service de newsletter  {#configuring-the-newsletter-service-component}
+## Configuration du composant Service de newsletter {#configuring-the-newsletter-service-component}
 
 Après avoir configuré Feed Importer, vous devez configurer l’adresse de l’expéditeur et le compteur de rebonds.
 

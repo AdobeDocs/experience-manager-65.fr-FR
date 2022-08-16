@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 100%
 
@@ -103,5 +103,5 @@ AEM forms utilise un mécanisme IPC/RPC basé sur les services Web. Ce mécanism
 
 Ce mécanisme ne prend pas en charge la création en ligne de profils HSM ou les vérifications d’état. Toutefois, il existe deux façons de créer des profils HSM et d’effectuer des vérifications d’état :
 
-* Créez des informations d’identification client pour AEM Forms en lui transmettant le certificat du signataire. Suivez les étapes mentionnées dans la rubrique [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://helpx.adobe.com/fr/livecycle/kb/configuring-hsm-support-using-sun.html) pour plus d’informations. L’emplacement du service Web est transmise sous forme de propriété des informations d’identification. Les profils HSM créés à l’aide d’un certificat DER ou d’un certificat SHA-1 hex sont également pris en charge. Toutefois, si vous avez effectué la mise à niveau vers AEM forms à partir d’une version antérieure d’AEM forms, effectuez les modifications de client car les informations d’identification portent des données de certificat et de service Web.
+* Créez des informations d’identification client pour AEM Forms en lui transmettant le certificat du signataire. Suivez les étapes mentionnées dans la rubrique [Configuration de la prise en charge HSM pour AEM Forms ES à l’aide du JDK Sun sur une plateforme Windows 64 bits](https://kb2.adobe.com/cps/808/cpsid_80835.html) pour plus d’informations. L’emplacement du service Web est transmise sous forme de propriété des informations d’identification. Les profils HSM créés à l’aide d’un certificat DER ou d’un certificat SHA-1 hex sont également pris en charge. Toutefois, si vous avez effectué la mise à niveau vers AEM forms à partir d’une version antérieure d’AEM forms, effectuez les modifications de client car les informations d’identification portent des données de certificat et de service Web.
 * L’emplacement du service Web est spécifié dans Administration Console pour le service Signature (voir [Paramètres du service Signature](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)). Ici, le client porte uniquement l’alias du profil HSM dans le Trust Store. Vous pouvez utiliser cette option directement sans modifications de client, même si vous avez effectué la mise à niveau vers AEM Forms à partir d’une version antérieure d’AEM Forms. Cette option ne prend pas en charge les profils HSM créés à l’aide d’un certificat SHA-1.

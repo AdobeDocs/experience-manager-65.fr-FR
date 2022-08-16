@@ -1,8 +1,8 @@
 ---
 title: Utilisation d’Adobe Campaign
-seo-title: Utilisation d’Adobe Campaign
+seo-title: Working with Adobe Campaign
 description: Adobe Campaign est un ensemble de solutions qui permet de personnaliser les campagnes et de les diffuser via tous vos canaux en ligne et hors ligne
-seo-description: Adobe Campaign est un ensemble de solutions qui permet de personnaliser les campagnes et de les diffuser via tous vos canaux en ligne et hors ligne
+seo-description: Adobe Campaign is a set of solutions that lets you personalize and deliver campaigns across all of your online and offline channels
 uuid: 1f7b48e2-9ec2-4ee8-b017-78c9d2cac48e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 28582d42-ef24-4ca1-98e6-e02248fc9dea
 exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 98%
+source-wordcount: '126'
+ht-degree: 97%
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: Intégration à Adobe Target
-seo-title: Intégration à Adobe Target
+seo-title: Integrating with Adobe Target
 description: Pour en savoir plus sur l’intégration d’AEM à Adobe Target.
-seo-description: Pour en savoir plus sur l’intégration d’AEM à Adobe Target.
+seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '600'
 ht-degree: 94%
 
 ---
@@ -49,9 +49,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >* La version 3.x est configurée avec [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
 >
-
 
 
 >[!CAUTION]
@@ -66,7 +64,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/hel
 >
 >Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
-## Sources d’informations sur le contexte  {#background-information-sources}
+## Sources d’informations sur le contexte {#background-information-sources}
 
 Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des publics AEM. Vous devez connaître les éléments suivants :
 
@@ -82,7 +80,5 @@ Intégrer AEM à Adobe Target nécessite des connaissances sur Adobe Target, la 
 >* 2 000 expériences
 >* 50 mesures
 >* 50 segments de création de rapports
-
 >
-
 

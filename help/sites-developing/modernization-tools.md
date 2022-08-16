@@ -1,15 +1,15 @@
 ---
 title: Outils de modernisation d’AEM
-seo-title: Outils de modernisation d’AEM
-description: Outils de modernisation d’AEM vous aider à convertir vos fonctionnalités d’AEM héritées en nouvelles technologies
-seo-description: Les outils de modernisation d’AEM vous aident à convertir facilement vos fonctionnalités d’AEM héritées en technologies de pointe.
+seo-title: AEM Modernization Tools
+description: Les outils de modernisation d’AEM vous aident à convertir vos fonctionnalités d’AEM héritées en technologies de pointe
+seo-description: AEM Modernization Tools help you easily convert your legacy AEM features to the latest technology
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 8865a641-fdac-43ab-b1c3-722f120cd749
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '107'
-ht-degree: 75%
+source-wordcount: '89'
+ht-degree: 84%
 
 ---
 

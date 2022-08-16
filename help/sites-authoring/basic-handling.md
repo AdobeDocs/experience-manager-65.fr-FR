@@ -1,8 +1,8 @@
 ---
 title: Manipulation de base
-seo-title: Manipulation de base
+seo-title: Basic Handling
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
-seo-description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+seo-description: Get comfortable with navigating AEM and its basic usage
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
 workflow-type: tm+mt
-source-wordcount: '2980'
+source-wordcount: '2969'
 ht-degree: 95%
 
 ---
@@ -23,13 +23,10 @@ ht-degree: 95%
 >[!NOTE]
 >
 >* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console **Sites** comme base.
-   >
-   >
-* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et des fonctionnalités supplémentaires peuvent être disponibles dans certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
->* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
-
 >
-
+>* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et des fonctionnalités supplémentaires peuvent être disponibles dans certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
+>* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>
 
 
 ## Prise en main {#getting-started}
@@ -58,7 +55,7 @@ La première fois que vous accédez à une console, un didacticiel de navigation
 
 ![bh-02](assets/bh-02.png)
 
-Cliquez ou appuyez sur **Suivant** pour accéder à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou à l’extérieur de la boîte de dialogue de présentation pour la fermer.
+Cliquez ou appuyez sur **Suivant** pour accéder à la page suivante de l’aperçu. Cliquez ou appuyez sur **Fermer** ou à l’extérieur de la boîte de dialogue de l’aperçu pour la fermer.
 
 Si vous ne désactivez pas l’option **Ne plus afficher ce message**, la présentation redémarrera la prochaine fois que vous accéderez à la console.
 
@@ -76,12 +73,12 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
-* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole
+* **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** : représenté par une boussole 
 * **[Outils](/help/sites-authoring/basic-handling.md#tools-panel)** : représenté par un marteau
 
 Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
-### Panneau de navigation  {#navigation-panel}
+### Panneau de navigation {#navigation-panel}
 
 Le panneau Navigation permet d’accéder aux consoles AEM :
 
@@ -106,19 +103,19 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
    <td>Cette console permet de créer et de gérer des <a href="/help/communities/sites-console.md">sites de communauté</a> pour l’<a href="/help/communities/overview.md#engagement-community">engagement</a> et l’<a href="/help/communities/overview.md#enablement-community">activation</a>.</td>
   </tr>
   <tr>
-   <td>Commerce</td>
+   <td>Commerce </td>
    <td>Vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de <a href="/help/commerce/cif-classic/administering/ecommerce.md">commerce</a>.</td>
   </tr>
   <tr>
-   <td>Fragments d’expérience</td>
+   <td>Présentation</td>
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">fragment d’expérience</a> est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et présentant des variations, vous évitant ainsi de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences.</td>
   </tr>
   <tr>
-   <td>Formulaires</td>
+   <td>Forms</td>
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/home.md">formulaires et documents</a>.</td>
   </tr>
   <tr>
-   <td>Personnalisation</td>
+   <td>Personnalisation </td>
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td>
   </tr>
   <tr>
@@ -192,7 +189,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Chemin de navigation
 
-   ![bh-03](assets/bh-05.png)
+   ![bh-05](assets/bh-05.png)
 
    Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site web.
 
@@ -204,7 +201,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. Voir [vue de liste](#list-view) pour plus d’informations.
+   Cet élément est disponible en mode Liste uniquement. Voir [mode liste](#list-view) pour plus d’informations.
 
 * Bouton **Créer**
 
@@ -224,13 +221,13 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
 * Navigation au clavier
 
-   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Elle utilise la fonctionnalité de navigateur standard de la clé **TAB** (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page qui sont *activables*.
+   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Elle utilise la fonctionnalité de navigateur standard de la fonction **ONGLET** clé (ou **OPT+TABULATION**) pour vous déplacer entre les éléments de la page qui sont *focalisable*.
 
-   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cela devient visible lorsque vous *onglet* par le biais des options d’en-tête, et cela accélère votre navigation en vous permettant d’ignorer les éléments standard dans la barre d’outils (produit) et de vous emmener directement au contenu principal.
+   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cela devient visible à mesure que vous *tab* via les options d’en-tête et accélère votre navigation en vous permettant d’ignorer les éléments standard dans la barre d’outils (produit) et de vous diriger directement vers le contenu principal.
 
    ![bh-30](assets/bh-30.png)
 
-## Accès à l’aide {#accessing-help}
+## Accès à l’Aide    {#accessing-help}
 
 Plusieurs ressources d’aide sont disponibles :
 
@@ -270,10 +267,10 @@ Ressources et téléchargements pour les développeurs.
    >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
    >
    >    * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+   >    * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
 
-## Barre d’outils d’actions {#actions-toolbar}
+## Barre d’outils Actions {#actions-toolbar}
 
 Lorsque vous sélectionnez une ressource (une page ou une ressource, par exemple), diverses actions sont indiquées par des icônes, avec un texte explicatif dans la barre d’outils. Ces actions dépendent de différents éléments :
 
@@ -287,12 +284,13 @@ La manière dont vous [sélectionnez une ressource](/help/sites-authoring/basic-
 
 En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. En cliquant ou en appuyant sur les points de suspension (**…**), vous ouvrez un menu déroulant contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
 
-![Barre d’outils d’actions](assets/bh-12.png)
+![Barre d’outils Actions](assets/bh-12.png)
 
 >[!NOTE]
-Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
+>
+>Les icônes individuelles disponibles sont documentées par rapport à la console, à la fonction ou au scénario approprié.
 
-## Actions rapides  {#quick-actions}
+## Actions rapides {#quick-actions}
 
 Dans le [mode Carte](#cardviewquickactions), certaines actions, en plus d’être disponibles dans la barre d’outils, le sont également sous la forme d’icônes d’actions rapides. Les icônes d’actions rapides sont disponibles pour un seul élément à la fois et évitent d’avoir à présélectionner l’action.
 
@@ -312,9 +310,10 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 * [Mode Liste](#list-view)
 
 >[!NOTE]
-Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
+>
+>Par défaut, AEM Assets n’affiche pas les rendus d’origine des ressources dans l’interface utilisateur sous la forme de miniatures, et ce, quel que soit le mode. Si vous êtes administrateur, vous pouvez utiliser des incrustations pour configurer AEM Assets afin d’afficher les rendus d’origine sous la forme de miniatures.
 
-### Sélection de ressources  {#selecting-resources}
+### Sélection de ressources {#selecting-resources}
 
 La sélection d’une ressource en particulier dépend de la combinaison du mode et de l’appareil :
 
@@ -342,13 +341,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td>
    <td>
     <ul>
-     <li>Bureau :<br /> pointez, puis utilisez l’action rapide en forme de coche.</li>
+     <li>Bureau :<br /> Pointez dessus, puis utilisez l’action rapide en forme de coche.</li>
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Bureau :<br /> cliquez sur la carte</li>
-     <li>Appareil mobile :<br /> Appuyez sur la carte</li>
+     <li>Bureau :<br /> Cliquez sur la carte</li>
+     <li>Appareil mobile :<br /> Appuyez sur la carte.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -395,7 +394,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 1. Par exemple, en mode Carte :
 
-   ![bh-17](assets/bh-15.png)
+   ![bh-15](assets/bh-15.png)
 
 1. Une fois que vous avez sélectionné une ressource, l’en-tête de premier niveau est couvert par la [barre d’outils Actions](#actionstoolbar), qui permet d’accéder aux actions actuellement applicables à la ressource sélectionnée.
 
@@ -481,7 +480,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 
    * **Nom** : nom de la page ; cela peut s’avérer utile dans un environnement de création multilingue, dans la mesure où il fait partie de l’URL de la page et où il ne change pas, quelle que soit la langue.
    * **Modifié** : date de la dernière modification et nom de l’utilisateur responsable de la modification.
-   * **Publié** : état de la publication.
+   * **Publié** : statut de la publication.
    * **Modèle** : modèle sur lequel la page est basée.
    * **Workflow** : workflow actuellement appliqué à la page. D’autres informations sont disponibles lorsque vous déplacez la souris ou lorsque vous ouvrez la chronologie.
 
@@ -496,7 +495,8 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
    >[!NOTE]
-   La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+   >
+   >La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
    ![bh-22](assets/bh-22.png)
 
@@ -521,7 +521,8 @@ Par exemple, dans la console Sites, vous pouvez sélectionner le contenu uniquem
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
 >[!NOTE]
-Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
+>
+>Des [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) sont disponibles pour basculer rapidement entre les options d’affichage du rail.
 
 ### Arborescence de contenu {#content-tree}
 
@@ -532,8 +533,10 @@ En utilisant le panneau latéral d’arborescence de contenu en même temps qu�
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
-Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
-Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
+>
+>Une fois qu’une entrée est sélectionnée dans la vue hiérarchique, les touches fléchées peuvent être utilisées pour naviguer rapidement au sein de la hiérarchie.
+>
+>Voir les [raccourcis clavier](/help/sites-authoring/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
@@ -547,7 +550,7 @@ La colonne Chronologie permet d’effectuer les actions suivantes :
 
       * [Commentaires](#timelineaddingandviewingcomments)
       * Annotations
-      * Activités  
+      * Activités
       * [Lancements](/help/sites-authoring/launches.md)
       * [Versions](/help/sites-authoring/working-with-page-versions.md)
       * [Workflows](/help/sites-authoring/workflows-applying.md)
@@ -572,7 +575,7 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 Les **références** affichent toutes les connexions avec la ressource sélectionnée. Dans la console **Sites**, par exemple, les [références](/help/sites-authoring/author-environment-tools.md#showingpagereferences) des pages affichent les informations suivantes :
 
 * [Lancements](/help/sites-authoring/launches.md#launches-in-references-sites-console)
-* [Live copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
+* [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [Copies de langue](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * Références du contenu :
 

@@ -1,8 +1,8 @@
 ---
 title: Rendu de modèle adaptatif
-seo-title: Rendu de modèle adaptatif
+seo-title: Adaptive Template Rendering
 description: Rendu de modèle adaptatif
-seo-description: 'null'
+seo-description: null
 uuid: 97226ae1-e42a-40ae-a5e0-886cd77559d8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '486'
 ht-degree: 86%
 
 ---
@@ -64,7 +64,7 @@ Dans cet exemple, nous allons configurer le groupe d’appareils existant **Smar
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. À l’aide de CRX DE Lite, autorisez l’utilisation du groupe d’appareils sur votre site en l’ajoutant à la propriété de chaîne à plusieurs valeurs `cq:deviceGroups` sur la structure de votre site.
+1. À l’aide de CRX DE Lite, autorisez le groupe d’appareils à être utilisé sur votre site en l’ajoutant à la propriété de chaîne à plusieurs valeurs. `cq:deviceGroups` sur la structure de votre site.
 
    `/content/<your-site>/jcr:content`
 
@@ -76,7 +76,7 @@ Dans cet exemple, nous allons configurer le groupe d’appareils existant **Smar
 
 À présent, lorsque vous utilisez l’[émulateur](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) dans l’éditeur de pages (par exemple pour [modifier la mise en page ](/help/sites-authoring/responsive-layout.md)) et que vous choisissez un appareil du groupe d’appareils configuré, la page est rendue avec un sélecteur dans l’URL.
 
-Dans notre exemple, lors de la modification d’une page basée sur le modèle **Page d’expérience** et du choix de l’iPhone 4 dans l’émulateur, la page est rendue, y compris le sélecteur `arctic-surfing-in-lofoten.smart.html` au lieu de `arctic-surfing-in-lofoten.html`.
+Dans notre exemple, lors de la modification d’une page en fonction de la variable **Page d’expérience** et en choisissant iPhone 4 dans l’émulateur, la page est rendue, y compris le sélecteur comme `arctic-surfing-in-lofoten.smart.html` au lieu de `arctic-surfing-in-lofoten.html`
 
 La page peut également être appelée directement à l’aide de ce sélecteur.
 

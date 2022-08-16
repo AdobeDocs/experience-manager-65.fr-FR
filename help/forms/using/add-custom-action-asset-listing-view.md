@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1360'
 ht-degree: 100%
 
@@ -152,7 +152,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       **Emplacement :** /apps/
 
-      **Faire correspondre les types de nœud :** sélectionné
+      **Faire correspondre les types de nœud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications. Cliquez sur **Enregistrer tout**.
 
@@ -242,7 +242,7 @@ Pour personnaliser Correspondence Management et permettre aux utilisateurs de t�
 
       **Emplacement :** /apps/
 
-      **Faire correspondre les types de nœud :** sélectionné
+      **Faire correspondre les types de nœud :** Sélectionné
 
    1. Cliquez sur **OK**. La structure du dossier est créée dans le dossier des applications.
 

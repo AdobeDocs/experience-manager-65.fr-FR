@@ -184,7 +184,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 
 1. Les trois tableaux (Trafic, Conversion, Événement) répertorient toutes les variables Adobe Analytics disponibles. des RSID sélectionnés. Les mappages affichés ici doivent être identiques à ceux de la vue AEM :
 
-   * **Trafic** :
+   * **Trafic**:
 
       * Variable de trafic ( `prop1`) mappé à une variable CQ ( `eventdata.downloadLink`)
 

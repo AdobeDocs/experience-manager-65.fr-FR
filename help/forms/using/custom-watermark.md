@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ Vous pouvez utiliser les étapes suivantes pour personnaliser le texte et l’ap
 
       **Emplacement du recouvrement :** /apps/
 
-      **Correspondance des types de nœuds :** activé
+      **Correspondance des types de nœud :** vérifié.
 
       >[!NOTE]
       >

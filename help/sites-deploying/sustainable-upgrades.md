@@ -1,8 +1,8 @@
 ---
 title: Mises à niveau possibles
-seo-title: Mises à niveau possibles
+seo-title: Sustainable Upgrades
 description: Découvrez les mises à niveau possibles dans AEM 6.4.
-seo-description: Découvrez les mises à niveau possibles dans AEM 6.4.
+seo-description: Learn about sustainable upgrades in AEM 6.4.
 uuid: 80673076-624b-4308-8233-129cb4422bd5
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: e35c9352-f0d5-4db5-b88f-0720af8f6883
 docset: aem65
-feature: Mise à niveau
+feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 77%
+source-wordcount: '851'
+ht-degree: 76%
 
 ---
 
@@ -37,7 +37,7 @@ Dans les versions précédentes d’AEM, de nombreuses API étaient exposées pa
 
 * Les API publiques seront rétrocompatibles avec l’installation d’un module de compatibilité.
 * Le module de compatibilité contiendra un jar Uber de compatibilité pour garantir la compatibilité descendante.
-* Les API Java marquées comme `Private` sont destinées uniquement à être utilisées par AEM lots internes et ne doivent pas être utilisées par des lots personnalisés.
+* API Java marquées comme `Private` sont destinés uniquement à être utilisés par AEM bundles internes et ne doivent pas l’être par des bundles personnalisés.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Pour permettre aux utilisateurs de mieux comprendre les zones de **/libs** qui p
 
 * **Public (granite:PublicArea)** : définit un nœud comme étant public afin qu’il puisse être superposé, hérité (`sling:resourceSuperType`) ou utilisé directement ( `sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un module de compatibilité. En règle générale, les utilisateurs doivent uniquement exploiter les nœuds publics.
 
-* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les noeuds peuvent être superposés ou hérités ( `sling:resourceSupertype`), mais ne doivent pas être utilisés directement ( `sling:resourceType`).
+* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les noeuds peuvent être superposés ou hérités ( `sling:resourceSupertype`), mais ne doit pas être utilisé directement ( `sling:resourceType`).
 
 * **Final (granite:FinalArea)** : définit un nœud comme étant final. Les noeuds classés comme finaux idéalement ne doivent pas être superposés ni hérités. Les noeuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
 
@@ -63,11 +63,11 @@ Pour permettre aux utilisateurs de mieux comprendre les zones de **/libs** qui p
 
 >[!NOTE]
 >
->Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. D’autres zones de **/libs** comme une bibliothèque côté client peuvent être marquées comme `Internal`, mais peuvent toujours être utilisées avec l’inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
+>Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. Autres domaines **/libs** comme une bibliothèque côté client peut être marquée comme `Internal`, mais peut toujours être utilisé avec l’inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
 
 #### Indicateurs de type de contenu CRXDE Lite {#crxde-lite-content-type-indicators}
 
-Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arborescences marqués comme `INTERNAL` grisés. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
+Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arborescences marqués comme `INTERNAL` comme grisé. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
 
 **Public**
 

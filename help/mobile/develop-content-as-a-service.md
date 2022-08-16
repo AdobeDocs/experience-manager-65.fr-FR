@@ -1,8 +1,8 @@
 ---
 title: Diffusion de contenu
-seo-title: Diffusion de contenu
+seo-title: Content Delivery
 description: Diffusion de contenu
-seo-description: 'null'
+seo-description: null
 uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
@@ -11,8 +11,8 @@ discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 4%
+source-wordcount: '968'
+ht-degree: 3%
 
 ---
 
@@ -28,7 +28,7 @@ Cela inclut l’utilisation de ressources, de contenu de site, de contenu CaS (e
 
 >[!NOTE]
 >
->**Le** contenu en direct peut provenir de n’importe lequel des éléments ci-dessus via les gestionnaires ContentSync . Il peut être utilisé pour le lot et la diffusion via des fichiers ZIP, ainsi que pour gérer les mises à jour de ces packages.
+>**Contenu hors diffusion** peut provenir de l’une des fonctions ci-dessus via les gestionnaires ContentSync . Il peut être utilisé pour le lot et la diffusion via des fichiers ZIP, ainsi que pour gérer les mises à jour de ces packages.
 
 Content Services fournit trois types principaux de contenu :
 
@@ -64,7 +64,7 @@ Le workflow de la ressource est le suivant :
    1. Sélectionner une ressource ou collection de ressources
    1. Personnalisation du rendu JSON
 
-Le diagramme suivant présente le **Workflow de référence des ressources** :
+Le diagramme suivant illustre la variable **Workflow de référence des ressources**:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
@@ -108,20 +108,20 @@ Le fichier JSON fournit une URL pour chaque image, générée par Content Servic
 
 Pour obtenir le binaire de l’image &quot;panier&quot;, la bibliothèque cliente est de nouveau utilisée.
 
-## Contenu HTML compressé {#packaged-html-content}
+## Contenu du HTML compressé {#packaged-html-content}
 
-Le contenu HTML est nécessaire pour les clients qui doivent conserver la mise en page du contenu. Cela s’avère utile pour les applications natives qui utilisent un conteneur web (un affichage web Cordova, par exemple) pour afficher le contenu.
+Le contenu HTML est nécessaire pour les clients qui doivent maintenir la mise en page du contenu. Cela s’avère utile pour les applications natives qui utilisent un conteneur web (un affichage web Cordova, par exemple) pour afficher le contenu.
 
-AEM Content Services pourra fournir du contenu HTML à l’application mobile via l’API. Les clients qui souhaitent exposer AEM contenu au format HTML créent une entité de page HTML pointant vers la source de contenu AEM.
+AEM Content Services pourra fournir du contenu par HTML à l’application mobile via l’API. Les clients qui souhaitent exposer AEM contenu en tant que HTML créent une entité de page de HTML qui pointe vers la source de contenu AEM.
 
 Les options suivantes sont prises en compte :
 
-* **Fichier zip :** pour avoir la meilleure chance de s’afficher correctement sur l’appareil, tous les éléments de la page référencés (css, JavaScript, ressources, etc.). - sera inclus dans un seul fichier compressé avec la réponse . Les références dans la page HTML seront ajustées afin d’utiliser un chemin relatif vers ces fichiers.
+* **Fichier Zip :** Pour avoir la meilleure chance de s’afficher correctement sur l’appareil, toutes les ressources référencées de la page (css, JavaScript, ressources, etc.). - sera inclus dans un seul fichier compressé avec la réponse . Les références de la page de HTML seront ajustées afin d’utiliser un chemin relatif vers ces fichiers.
 * **Diffusion en continu :** Obtention d’un manifeste des fichiers requis à partir d’AEM. Utilisez ensuite ce manifeste pour demander tous les fichiers (HTML, CSS, JS, etc.) avec les requêtes suivantes.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
-## Contenu indépendant des canaux {#channel-independent-content}
+## Contenu indépendant du canal {#channel-independent-content}
 
 Le contenu indépendant d’un canal est un moyen d’exposer les éléments de contenu AEM, tels que les pages, sans se soucier de la mise en page, des composants ou d’autres informations spécifiques à un canal.
 

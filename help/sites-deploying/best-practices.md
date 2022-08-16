@@ -1,8 +1,8 @@
 ---
 title: Meilleures pratiques de déploiement
-seo-title: Meilleures pratiques de déploiement
+seo-title: Deploying Best Practices
 description: Meilleures pratiques de déploiement et de maintenance.
-seo-description: Meilleures pratiques de déploiement et de maintenance.
+seo-description: Deploying and maintaining best practices.
 uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 57%
+source-wordcount: '430'
+ht-degree: 56%
 
 ---
 
@@ -74,9 +74,9 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 AEM Communities simplifie la création et la gestion des communautés on-premise. Les bonnes pratiques relatives à AEM Communities sont décrites ici :
 
-[Magasin de contenu de communauté](/help/communities/working-with-srp.md)  : aborde la nouvelle fonctionnalité de stockage partagé pour le contenu généré par l’utilisateur et les considérations à prendre en compte pour choisir la  [topologie](/help/communities/topologies.md) sous-jacente.
+[Community Content Store](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité de stockage partagé pour le contenu généré par l’utilisateur et des considérations à prendre en compte pour le choix de la sous-jacente [topologie](/help/communities/topologies.md).
 
-[Déploiements recommandés pour les communautés](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  : décrit les déploiements recommandés pour les communautés. |
+[Déploiements recommandés pour les communautés](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Décrit les déploiements recommandés pour Communities. |
 
 ## Interface utilisateur {#ui}
 
@@ -95,7 +95,7 @@ Les meilleures pratiques relatives à la performance sont répertoriées ici :
   <tr>
    <td>Meilleures pratiques pour l’assurance qualité</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Meilleures pratiques pour l’assurance qualité</a></td>
-   <td>Présentation normalisée des problèmes liés à la définition d’un concept de test spécifiquement pour les tests de performance sur votre environnement de <em>publication</em>. Il intéressera principalement les ingénieurs d’assurance qualité, les chefs de projets et les administrateurs système.</td>
+   <td>Présentation normalisée des problèmes liés à la définition d’un concept de test spécifiquement pour les tests de performance sur vos <em>publier</em> environnement. Il intéressera principalement les ingénieurs d’assurance qualité, les chefs de projets et les administrateurs système.</td>
   </tr>
   <tr>
    <td>Utilisation de Dispatcher avec un CDN </td>

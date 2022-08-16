@@ -1,8 +1,8 @@
 ---
-title: Création – Environnement et outils
-seo-title: Création – Environnement et outils
+title: Création – Environnement et outils
+seo-title: Authoring - the Environment and Tools
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
-seo-description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
+seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
 uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '2239'
+source-wordcount: '2220'
 ht-degree: 97%
 
 ---
 
 # Création – Environnement et outils{#authoring-the-environment-and-tools}
 
-L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils proposés sont accessibles dans les divers éditeurs de pages et consoles.
+L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu. Les outils fournis sont accessibles dans plusieurs consoles et éditeurs de page.
 
 ## Gestion de votre site {#managing-your-site}
 
@@ -44,7 +44,7 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 >
 >Vous pouvez ignorer cette présentation ou la revoir à tout moment en la sélectionnant dans le menu **Informations sur la page**.
 
-## Accès à l’aide {#accessing-help}
+## Accès à l’Aide   {#accessing-help}
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
@@ -127,7 +127,7 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 
    * Par exemple, vous pouvez faire glisser une ressource de type image sur un composant Image ;
 
-* d’un [emplacement réservé](/help/sites-authoring/editing-content.md#component-placeholder) dans le système de paragraphes où créer un composant du type approprié.
+* d’un [espace réservé](/help/sites-authoring/editing-content.md#component-placeholder) dans le système de paragraphes où créer un composant du type approprié.
 
    * Par exemple, vous pouvez faire glisser une ressource de type image sur le système de paragraphes afin de créer un composant Image.
 
@@ -170,7 +170,7 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ![](do-not-localize/screen_shot_2018-03-22at142448.png)
 
-## Arborescence de contenu  {#content-tree}
+## Arborescence de contenu {#content-tree}
 
 L’**arborescence de contenu** présente une vue d’ensemble des composants sur la page sous forme de structure hiérarchique pour que vous puissiez visualiser la composition de la page en un seul coup d’œil.
 
@@ -222,7 +222,7 @@ Si votre page contient des fragments de contenu, vous aurez dans ce cas égaleme
 
 * Plans directeurs
 * Lancements
-* Live copies
+* Live Copies
 * Copies de langue
 * Liens entrants
 * Utilisation du composant de référence : contenu emprunté et prêté
@@ -285,11 +285,11 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 Le cas échéant, le menu **Informations sur la page** propose également les options suivantes :
 
 * [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement.
-* [Ouvrir dans l’](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) interface utilisateur classique si cette option a été  [activée par un administrateur.](/help/sites-administering/enable-classic-ui-editor.md)
+* [Ouvrir dans l’interface utilisateur classique](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si cette option a été [activé par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
-## Modes de page  {#page-modes}
+## Modes de page {#page-modes}
 
 Lors de la modification d’une page, plusieurs modes permettent d’effectuer différentes actions :
 
@@ -320,9 +320,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
-
 >
-
 
 
 ## Sélection du chemin d’accès {#path-selection}
@@ -343,7 +341,7 @@ Vous pouvez également effectuer une saisie dans le champ de chemin d’accès. 
 
 ![ateat-19](assets/ateat-19.png)
 
-### Explorateur de chemins d’accès {#path-browser}
+### Chemin  Navigateur {#path-browser}
 
 L’explorateur de chemins d’accès est organisé de la même façon que le [mode Colonnes](/help/sites-authoring/basic-handling.md#column-view) de la console Sites afin de permettre une sélection plus détaillée des ressources.
 

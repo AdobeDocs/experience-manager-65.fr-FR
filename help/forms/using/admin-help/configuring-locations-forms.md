@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Vous pouvez indiquer les emplacements URL, URI et fichier des attributs, tels que la racine Web, l’emplacement des formulaires à récupérer et le fichier PDF initial utilisé dans les transformations PDFForm et l’emplacement du cache.
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Sous Emplacements, définissez les options appropriées. Les options sont décrites ci-dessous.
 1. Cliquez sur Enregistrer.
 

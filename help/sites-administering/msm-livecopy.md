@@ -5,8 +5,8 @@ feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
 workflow-type: tm+mt
-source-wordcount: '4174'
-ht-degree: 87%
+source-wordcount: '4171'
+ht-degree: 88%
 
 ---
 
@@ -20,7 +20,7 @@ Une configuration de plan directeur identifie un site web existant que vous souh
 
 >[!NOTE]
 >
->Les configurations de plan directeur permettent d’appliquer des modifications de contenu à des Live Copies. Voir [Live Copies - Source, plans directeurs et configurations de plan directeur](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations).
+>Les configurations de plan directeur permettent d’appliquer des modifications de contenu à des Live Copies. Voir [Live Copies – Source, plans directeurs et configurations de plan directeur](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations).
 
 Lorsque vous créez une configuration de plan directeur, vous sélectionnez un modèle qui définit la structure interne du plan directeur. Le modèle de plan directeur par défaut suppose que le site web source présente les caractéristiques suivantes :
 
@@ -111,7 +111,7 @@ Pour créer une Live Copy :
    >
    >Le chemin de destination ne peut pas être dans le chemin source.
 
-1. Entrer :
+1. Enter:
 
    * Le **Titre** de la page.
    * Le **Nom** utilisé dans l’URL.
@@ -126,11 +126,11 @@ Pour créer une Live Copy :
 1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, sélectionnez ces configurations dans la liste déroulante **Configurations du déploiement**. Les configurations sélectionnées s’affichent sous le sélecteurdéroulant.
 1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche, dans lequel vous pouvez sélectionner **Ouvrir** ou **Terminé**.
 
-### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur  {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
+### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
 Créez une Live Copy à l’aide d’une configuration de plan directeur pour créer un site en fonction du contenu de plan directeur (source). Lorsque vous créez une Live Copy à partir d’une configuration de plan directeur, vous sélectionnez une ou plusieurs branches de langue de la source de plan directeur à copier, puis vous sélectionnez les chapitres à copier à partir des branches de langue. Consultez [Création d’une configuration de plan directeur](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
-Si vous omettez certaines branches de langue ou certains chapitres de la Live Copy, vous pouvez les ajouter ultérieurement ; voir [Création d’une Live Copy dans une Live Copy (configuration de plan directeur)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
+Si vous omettez certaines branches de langue ou certains chapitres de la Live Copy, vous pouvez les ajouter ultérieurement ; see [Création d’une Live Copy dans une Live Copy (configuration de plan directeur)](#creating-a-live-copy-inside-a-live-copy-blueprint-configuration).
 
 >[!CAUTION]
 >
@@ -138,14 +138,14 @@ Si vous omettez certaines branches de langue ou certains chapitres de la Live Co
 
 Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivantes :
 
-* **Langues initiales** : Branches de langue de la source de plan directeur à inclure dans la Live Copy.
+* **Langues initiales**: Branches de langue de la source de plan directeur à inclure dans la Live Copy.
 * **Chapitres initiaux** : les pages enfants des branches de langue de plan directeur à inclure dans la Live Copy.
 * **Chemin de destination** : l’emplacement de la page racine du site Live Copy.
 * **Titre** : le titre de la page racine du site Live Copy.
-* **Nom** : (Facultatif) Nom du noeud JCR qui stocke la page racine de la Live Copy. La valeur par défaut est basée sur le titre.
+* **Nom**: (Facultatif) Nom du noeud JCR qui stocke la page racine de la Live Copy. La valeur par défaut est basée sur le titre.
 * **Propriétaire du site** : (Facultatif)
 * **Live Copy** : sélectionnez cette option pour établir une relation en direct avec le site source. Si vous ne sélectionnez pas cette option, une copie du plan directeur est créée, mais n’est pas ensuite synchronisée avec la source.
-* **Configurations du déploiement** : (Facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur ; Voir [Spécification des configurations de déploiement à utiliser](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) pour plus d’informations.
+* **Configurations du déploiement** : (Facultatif) sélectionnez une ou plusieurs configurations de déploiement à utiliser pour synchroniser la Live Copy. Par défaut, les configurations de déploiement sont héritées du plan directeur ; see [Spécification des configurations de déploiement à utiliser](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use) pour plus d’informations.
 
 Pour créer une Live Copy d’un site à partir d’une configuration de plan directeur :
 
@@ -165,7 +165,7 @@ Pour créer une Live Copy d’un site à partir d’une configuration de plan di
 1. Utilisez la liste déroulante **Chapitres initiaux** pour sélectionner les sections du plan directeur à inclure dans la Live Copy. De même, tous les chapitres disponibles sont inclus par défaut, mais peuvent être supprimés.
 1. Saisissez les valeurs des propriétés restantes, puis sélectionnez **Créer**. Dans la boîte de dialogue de confirmation, sélectionnez **Terminé** pour retourner à la console **Sites** ou **Ouvrir le site** pour ouvrir la page racine du site.
 
-### Création d’une Live Copy dans une Live Copy (configuration de plan directeur)  {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
+### Création d’une Live Copy dans une Live Copy (configuration de plan directeur) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
 Lorsque vous créez une Live Copy à l’intérieur de la Live Copy existante (créée avec une configuration de plan directeur), vous pouvez insérer n’importe quelle copie de langue ou n’importe quel chapitre qui n’était pas inclus(e) lors de la création initiale de la Live Copy.
 
@@ -185,7 +185,7 @@ Les propriétés d’une page Live Copy affichent les informations suivantes sur
 
 Pour afficher les propriétés :
 
-1. Dans la console **Sites** , sélectionnez la page Live Copy et ouvrez les propriétés.
+1. Dans le **Sites** , sélectionnez la page Live Copy et ouvrez les propriétés.
 1. Sélectionnez l’onglet **Live Copy**.
 
    Par exemple :
@@ -214,8 +214,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](/help/sites-administering/msm-rollout-conflicts.md).
 
-
-#### Déploiement d’un plan directeur à partir des propriétés de page  {#rolling-out-a-blueprint-from-page-properties}
+#### Déploiement d’un plan directeur à partir des propriétés de page {#rolling-out-a-blueprint-from-page-properties}
 
 1. Dans la console **Sites**, sélectionnez la page dans le plan directeur et ouvrez les propriétés.
 1. Ouvrez l’onglet **Plan directeur**.
@@ -231,7 +230,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
    ![Plan directeur de déploiement](assets/rollout-blueprint.png)
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés dans le [**État des tâches asynchrones** tableau de bord](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) à l’adresse **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**
+Les déploiements sont traités comme des tâches asynchrones et peuvent être archivés dans la variable [**État des tâches asynchrones** tableau de bord](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**
 
 >[!NOTE]
 >
@@ -239,7 +238,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
-1. Dans la console **Sites** , sélectionnez la page dans la Live Copy et ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** (dans la barre d’outils).
+1. Dans la console **Sites**, sélectionnez la page dans la Live Copy et ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** (via la barre d’outils).
 1. Sélectionnez l’option **Plan directeur** dans la liste pour afficher les plans directeurs associés à cette page.
 1. Sélectionnez le plan directeur requis dans la liste.
 1. Cliquez ou appuyez sur **Déployer**.
@@ -257,11 +256,11 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
 1. Après avoir défini ces détails, sélectionnez **Déployer** pour exécuter l’opération.
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés dans le [**État des tâches asynchrones** tableau de bord](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) à l’adresse **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**
+Les déploiements sont traités comme des tâches asynchrones et peuvent être archivés dans la variable [**État des tâches asynchrones** tableau de bord](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**
 
 >[!NOTE]
 >
->Le traitement du déploiement asynchrone nécessite AEM version 6.5.3.0 ou ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone, sauf si l’option **Mise en place en arrière-plan** était cochée.
+>Le traitement du déploiement asynchrone nécessite AEM version 6.5.3.0 ou ultérieure. Dans les versions précédentes, les pages étaient traitées immédiatement et de manière synchrone, sauf si la variable **Déploiement en arrière-plan** a été cochée.
 
 #### Déploiement d’un plan directeur de l’aperçu de la Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -277,7 +276,7 @@ L’action [Déployer est également disponible dans l’aperçu de la Live Copy
 
    ![Plan directeur de déploiement](assets/rollout-blueprint.png)
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés dans le [**État des tâches asynchrones** tableau de bord](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) à l’adresse **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**
+Les déploiements sont traités comme des tâches asynchrones et peuvent être archivés dans la variable [**État des tâches asynchrones** tableau de bord](asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) at **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**
 
 >[!NOTE]
 >
@@ -295,7 +294,7 @@ Synchronisez une Live Copy pour extraire des modifications de la source vers la 
 >
 >La synchronisation effectue les configurations de déploiement qui utilisent le déclencheur [En cas de déploiement](/help/sites-administering/msm-sync.md#rollout-triggers).
 
-1. Dans la console **Sites** , sélectionnez la page Live Copy et ouvrez les propriétés.
+1. Dans le **Sites** , sélectionnez la page Live Copy et ouvrez les propriétés.
 1. Ouvrez l’onglet **Live Copy**.
 1. Cliquez ou appuyez sur **Synchroniser**.
 
@@ -303,7 +302,7 @@ Synchronisez une Live Copy pour extraire des modifications de la source vers la 
 
    Une confirmation est demandée ; utilisez **Synchroniser** pour continuer.
 
-#### Synchronisation d’une Live Copy à partir de l’aperçu de la Live Copy  {#synchronize-a-live-copy-from-the-live-copy-overview}
+#### Synchronisation d’une Live Copy à partir de l’aperçu de la Live Copy {#synchronize-a-live-copy-from-the-live-copy-overview}
 
 L’[action Synchroniser est également disponible dans l’aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
@@ -335,8 +334,7 @@ Pour modifier le contenu de Live Copy, vous pouvez :
 >
 >Ces [conflits doivent être traités et résolus lors du déploiement](/help/sites-administering/msm-rollout-conflicts.md).
 
-
-### Ajout de composants à une page Live Copy  {#adding-components-to-a-live-copy-page}
+### Ajout de composants à une page Live Copy {#adding-components-to-a-live-copy-page}
 
 Vous pouvez ajouter des composants à une page Live Copy à tout moment. L’état d’héritage de la Live Copy et de son système de paragraphes ne contrôle pas votre capacité à ajouter des composants.
 
@@ -456,11 +454,11 @@ Pour spécifier ou changer la profondeur :
    >
    >Le passage à une Live Copy superficielle a un effet immédiat et est irréversible.
    >
-   >Voir [Live Copies - Composition](/help/sites-administering/msm.md#live-copies-composition) pour plus d’informations.
+   >Voir [Live Copies – Composition](/help/sites-administering/msm.md#live-copies-composition) pour plus d’informations.
 
 1. Cliquez ou appuyez sur **Enregistrer** pour conserver vos mises à jour.
 
-### Annulation de l’héritage pour un composant  {#cancelling-inheritance-for-a-component}
+### Annulation de l’héritage pour un composant {#cancelling-inheritance-for-a-component}
 
 Annulez l’héritage Live Copy d’un composant afin que ce composant ne soit plus synchronisé avec le composant source. Vous pouvez activer l’héritage ultérieurement si nécessaire.
 
@@ -486,7 +484,7 @@ Annulez l’héritage pour modifier le contenu du composant ou supprimer le comp
 
    La barre d’outils du composant est mise à jour pour inclure toutes les commandes de modification (appropriées).
 
-### Réactivation de l’héritage pour un composant  {#re-enabling-inheritance-for-a-component}
+### Réactivation de l’héritage pour un composant {#re-enabling-inheritance-for-a-component}
 
 Pour activer l’héritage pour un composant, appuyez ou cliquez sur **Réactiver l’héritage** dans la barre d’outils du composant.
 
@@ -510,7 +508,7 @@ Utilisez la procédure suivante pour annuler l’héritage du système de paragr
 1. Faites glisser un composant existant vers un nouvel emplacement sur la page.
 1. Dans la boîte de dialogue **Annuler l’héritage**, confirmez l’action en cliquant sur **Oui**.
 
-### Remplacement des propriétés d’une page Live Copy  {#overriding-properties-of-a-live-copy-page}
+### Remplacement des propriétés d’une page Live Copy {#overriding-properties-of-a-live-copy-page}
 
 Les propriétés d’une page Live Copy sont héritées (et non modifiables) à partir de la page source par défaut.
 
@@ -528,14 +526,14 @@ Vous pourrez par la suite réactiver l’héritage pour une propriété, si néc
 >
 >Lorsque vous réactivez l’héritage, la propriété de la page Live Copy n’est pas automatiquement synchronisée avec la propriété source. Vous pouvez demander manuellement une synchronisation si nécessaire.
 
-1. Ouvrez les propriétés de la page Live Copy à l’aide de l’option **Afficher les propriétés** de la console **Sites** ou de l’icône **Informations sur la page** dans la barre d’outils de la page.
+1. Ouvrez les propriétés de la page Live Copy à l’aide de l’option **Afficher les propriétés** de l’option **Sites** console ou **Informations sur la page** dans la barre d’outils de la page.
 1. Pour annuler l’héritage d’une propriété, appuyez ou cliquez sur l’icône de lien qui s’affiche à droite de la propriété.
 
    ![image](do-not-localize/chlimage_1-10.png)
 
 1. Dans la boîte de dialogue de confirmation **Annuler l’héritage**, cliquez ou appuyez sur **Oui**.
 
-### Rétablissement des propriétés d’une page de la Live Copy  {#revert-properties-of-a-live-copy-page}
+### Rétablissement des propriétés d’une page de la Live Copy {#revert-properties-of-a-live-copy-page}
 
 Pour activer l’héritage d’une propriété, appuyez ou cliquez sur l’icône **Inverser l’héritage** qui apparaît en regard de la propriété.
 
@@ -560,7 +558,7 @@ La réinitialisation affecte les modifications que vous avez apportées aux prop
 
 1. Dans la boîte de dialogue **Réinitialiser la Live Copy**, confirmez en cliquant sur **Réinitialiser**.
 
-#### Réinitialisation d’une page Live Copy à partir de l’aperçu de la Live Copy  {#reset-a-live-copy-page-from-the-live-copy-overview}
+#### Réinitialisation d’une page Live Copy à partir de l’aperçu de la Live Copy {#reset-a-live-copy-page-from-the-live-copy-overview}
 
 L’action [Réinitialiser est également disponible dans l’aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 
@@ -572,18 +570,18 @@ L’action [Réinitialiser est également disponible dans l’aperçu de la Live
 
 ## Comparaison d’une page Live Copy à une page de plan directeur {#comparing-a-live-copy-page-with-a-blueprint-page}
 
-Pour suivre les modifications que vous avez apportées, vous pouvez afficher la page de plan directeur dans **Références** et la comparer à sa page Live Copy :
+Pour effectuer le suivi des modifications que vous avez apportées, vous pouvez afficher la page de plan directeur dans **Références** et comparez-le à sa page Live Copy :
 
 1. Dans la console **Sites**, [accédez à la page Live Copy ou de plan directeur et sélectionnez-la](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** et sélectionnez :
 
-   * **Plan directeur**  (lorsqu’une page Live Copy est sélectionnée)
-   * **Live Copies**  (lorsqu’une page de plan directeur est sélectionnée)
+   * **Blueprint** (lorsqu’une page Live Copy est sélectionnée)
+   * **Live Copies** (lorsqu’une page de plan directeur est sélectionnée)
 
 1. Sélectionnez votre Live Copy, puis choisissez entre :
 
    * **Comparer au plan directeur** (lorsqu’une page Live Copy est sélectionnée)
-   * **Comparer à la Live Copy**  (lorsqu’une page de plan directeur est sélectionnée)
+   * **Comparaison avec Live Copy** (lorsqu’une page de plan directeur est sélectionnée)
 
    Par exemple :
 
@@ -641,7 +639,7 @@ Pour désolidariser une Live Copy :
 
 1. Une boîte de dialogue de confirmation s’affiche. Sélectionnez **Désolidariser** pour exécuter l’opération.
 
-### Désolidarisation d’une page Live Copy à partir de l’aperçu de la Live Copy  {#detach-a-live-copy-page-from-the-live-copy-overview}
+### Désolidarisation d’une page Live Copy à partir de l’aperçu de la Live Copy {#detach-a-live-copy-page-from-the-live-copy-overview}
 
 L’[action Désolidariser est également disponible dans l’aperçu de la Live Copy](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), lorsqu’une page Live Copy est sélectionnée.
 

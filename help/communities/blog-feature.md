@@ -1,8 +1,8 @@
 ---
 title: Fonction Blog
-seo-title: Fonction Blog
+seo-title: Blog Feature
 description: Informations de la communauté dans un format de journalisation
-seo-description: Informations de la communauté dans un format de journalisation
+seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1666'
 ht-degree: 46%
 
 ---
 
 # Fonction Blog {#blog-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La fonction Blog pour AEM Communities a été transformée. D’une activité de création, elle est passée à une véritable activité communautaire au sein même de l’environnement de publication.
 
@@ -57,15 +57,15 @@ Si vous souhaitez ajouter un blog à une page en mode création, utilisez l’ex
 
 et faites glisser les composants sur la page à l’endroit où le blog doit figurer.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client requises](/help/communities/blog-developer-basics.md#essentials-for-client-side) sont incluses, voici comment le composant `Blog` apparaîtra :
+Lorsque la variable [bibliothèques côté client requises](/help/communities/blog-developer-basics.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Blog` apparaît :
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Configuration du blog {#configuring-blog}
 
-Sélectionnez le composant `Blog` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Blog` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -119,7 +119,7 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Sujets par page**
 
-   Définit le nombre d’entrées/de commentaires de blog affichés par page. La valeur par défaut est de 10.
+   Définit le nombre d’entrées/de commentaires de blog affichés par page. La valeur par défaut est 10.
 
 * **Modéré**
 
@@ -135,7 +135,7 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Autoriser le balisage**
 
-   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir l’onglet **Champ de balise** ). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir **Champ de balise** ). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les transferts de fichiers**
 
@@ -143,11 +143,11 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Taille maximale du fichier**
 
-   Convient uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Convient uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -167,21 +167,21 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Autoriser abonnement**
 
-   Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notify](/help/communities/notifications.md) de nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](/help/communities/subscriptions.md)). `Allow Following` doit être vérifié et [email configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
 
 * **Afficher les badges**
 
-   Si cette case est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’entrée de blog d’un membre. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. Cette option n’est pas cochée par défaut.
 
 * **Ne pas recevoir de réponses sur la page de liste**
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée en tant que [contenu présenté](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
 
 * **Activer la mention**
 
@@ -193,7 +193,7 @@ Sous l’onglet **Paramètres**, définissez les fonctionnalités de base du blo
 
 * **Modèle des mentions de l’IU**
 
-   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple : ~{{familyName}{{givenName}}.
+   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple ~{{familyName}}{{givenName}}.
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
@@ -233,7 +233,7 @@ Dans l’onglet **Champ de balise**, spécifiez les balises qui peuvent être ap
 
 * **Espaces de noms autorisés**
 
-   Convient si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestions**
 
@@ -241,7 +241,7 @@ Dans l’onglet **Champ de balise**, spécifiez les balises qui peuvent être ap
 
 ### Configuration de la barre latérale de blog {#configuring-blog-sidebar}
 
-Lorsque vous double-cliquez sur le composant `Blog Sidebar`, une boîte de dialogue de modification s’ouvre.
+Lorsque vous double-cliquez sur le `Blog Sidebar` , une boîte de dialogue de modification s’ouvre.
 
 Sous l’onglet **Paramètres de la barre latérale du journal**, spécifiez le format de date pour les archives et le type d’entrées à afficher dans la barre latérale :
 
@@ -269,7 +269,7 @@ Sous l’onglet **Paramètres de la barre latérale du journal**, spécifiez le 
 
 * **Chemin d’accès aux composants bloqués**
 
-   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, utilisez le composant resourceType `social/journal/components/hbs/journal` qui apparaît sur la même page.
+   *(Facultatif)* Emplacement de la ressource de blog à partir de laquelle les articles de blog doivent être répertoriés. Si rien n’est indiqué, le composant de resourceType est utilisé. `social/journal/components/hbs/journal` qui apparaît sur la même page.
 
    * Par exemple, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -287,9 +287,9 @@ Lorsqu’un article de blog est sélectionné, l’article et ses commentaires s
 
 Les autres choix varient selon que le visiteur est modérateur, administrateur, membre de la communauté, membre privilégié ou anonyme.
 
-### Fonctionnement des articles  {#working-with-articles}
+### Fonctionnement des articles {#working-with-articles}
 
-Lors de la création d’un nouvel article de blog, vous avez le choix entre:
+Lors de la création d’un nouvel article de blog, vous avez le choix entre : :
 
 1. le publier immédiatement ;
 1. publier son brouillon ;
@@ -297,7 +297,7 @@ Lors de la création d’un nouvel article de blog, vous avez le choix entre:
 
 Les articles de blog sont visibles sous l’onglet correspondant (Publié, Versions préliminaires ou Planifié) pour les membres autorisés à créer ou à publier.
 
-#### Modérateurs et administrateurs  {#moderators-and-administrators}
+#### Modérateurs et administrateurs {#moderators-and-administrators}
 
 Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’administrateur, il peut se charger d’[activités de modération](/help/communities/moderate-ugc.md) (autorisées par la configuration du composant) pour tous les articles et commentaires de blog publiés sur un blog.
 
@@ -305,7 +305,7 @@ Lorsque l’utilisateur connecté dispose de privilèges de modérateur ou d’a
 
 #### Membres {#members}
 
-Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), il peut sélectionner `New Article` pour créer et publier un nouvel article de blog.
+Lorsque l’utilisateur connecté est membre de la communauté ou [membre privilégié](/help/communities/users.md#privileged-members-group) (selon la configuration), ils peuvent sélectionner `New Article` pour créer et publier un nouvel article de blog.
 
 Plus précisément, il est autorisé à:
 

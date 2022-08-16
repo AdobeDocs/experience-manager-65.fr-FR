@@ -1,8 +1,8 @@
 ---
 title: Test de la structure de site globalisée dans We.Retail
-seo-title: Test de la structure de site globalisée dans We.Retail
+seo-title: Trying out the Globalized Site Structure in We.Retail
 description: Test de la structure de site globalisée dans We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 92%
+source-wordcount: '421'
+ht-degree: 91%
 
 ---
 
@@ -72,4 +72,4 @@ We.Retail a été conçu avec une structure de site globalisée qui offre des ga
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations, reportez-vous au document de création [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir des détails techniques complets.
+Voir à ce sujet le document de création. [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir des informations techniques complètes.

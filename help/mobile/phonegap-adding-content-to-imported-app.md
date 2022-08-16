@@ -1,8 +1,8 @@
 ---
 title: Votre application hybride est-elle prête pour AEM Mobile ?
-seo-title: Votre application hybride est-elle prête pour AEM Mobile ?
+seo-title: Is your hybrid app ready for AEM Mobile?
 description: Consultez cette page pour en savoir plus sur les applications hrybrid. Une application dans AEM est généralement divisée en deux parties. Le "shell" et le "contenu" et cette page fournissent des informations supplémentaires sur ces sujets.
-seo-description: Consultez cette page pour en savoir plus sur les applications hrybrid. Une application dans AEM est généralement divisée en deux parties. Le "shell" et le "contenu" et cette page fournissent des informations supplémentaires sur ces sujets.
+seo-description: Follow this page to learn about hrybrid apps. An app in AEM is commonly divided into two parts. The 'shell' and 'content' and this page provides more insight on these topics.
 uuid: cbcce3fa-9100-46ea-9f24-931b42666709
 contentOwner: User
 content-type: reference
@@ -13,7 +13,7 @@ pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '741'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 Vous avez importé votre application PhoneGap hybride ou Cordova dans AEM, et maintenant ? Il est probable que vous souhaitiez ajouter du contenu modifiable à votre application. Pour accomplir cette tâche, vous aurez besoin d’une compréhension générale de la structure d’une application AEM. Une application dans AEM est généralement divisée en deux parties. &quot;shell&quot; et &quot;contenu&quot;. Le &quot;shell&quot; comprend les parties statiques de votre application ; tels que les fichiers de configuration PhoneGap, la structure de l’application et les commandes de navigation. Le contenu de l’archive que vous avez importée est stocké dans le shell. Dans le contexte de ce document, le shell est tout le contenu créé non AEM de votre application PhoneGap hybride créée par le développeur de l’application.
 
-Le contenu fait référence aux composants, aux modèles et aux pages créées dans AEM générés par le développeur AEM. Le contenu est classé comme contenu de développement ou comme contenu créé. Les composants, conceptions et modèles de page sont considérés comme du contenu de développement puisqu’ils sont créés par un développeur. author-content sont des pages qui ont été créées à l’aide des composants et des modèles. Elles sont généralement effectuées par un concepteur ou un spécialiste du marketing.
+Le contenu fait référence aux composants, modèles et pages créés dans AEM générés par le développeur AEM. Le contenu est classé comme contenu de développement ou comme contenu créé. Les composants, conceptions et modèles de page sont considérés comme du contenu de développement puisqu’ils sont créés par un développeur. author-content sont des pages qui ont été créées à l’aide des composants et des modèles. Elles sont généralement effectuées par un concepteur ou un spécialiste du marketing.
 
 L’ajout de pages d’AEM créées à votre application hybride nécessite une coordination entre le développeur de l’application et le développeur AEM. Partout dans l’application où vous souhaitez ajouter du contenu créé, le développeur de l’application doit organiser ces pages dans une structure qui peut être superposée dans AEM. Le développeur de l’application doit être en mesure de fournir au développeur de l’AEM les chemins d’accès vers lesquels le contenu créé AEM doit être ajouté, puis fournir une page d’espace réservé dans l’application hybride qui sera remplacée après que le développeur de l’AEM a créé le contenu de la page.
 
@@ -34,7 +34,7 @@ Pour faciliter le suivi de l’explication, nous utiliserons le Marketing Cloud 
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-Dans cet exemple, nous allons créer la page de bienvenue de l’application. Consulter la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Nous constatons que le développeur de l’application a défini une page de bienvenue et fourni un modèle pour la page rendue par l’application. C’est là que le développeur de l’application et le développeur AEM doivent se coordonner. Le chemin d’accès au modèle de page de bienvenue dans l’application de référence hybride est défini sur &quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est extrêmement important, car le développeur AEM va créer sa page de bienvenue dans le référentiel AEM en utilisant le même chemin d’accès.
+Dans cet exemple, nous allons créer la page de bienvenue de l’application. Jetez un coup d&#39;oeil à la source [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). Nous constatons que le développeur de l’application a défini une page de bienvenue et fourni un modèle pour la page rendue par l’application. C’est là que le développeur de l’application et le développeur AEM doivent se coordonner. Le chemin d’accès au modèle de page de bienvenue dans l’application de référence hybride est défini sur &quot;content/mobileapps/hybrid-reference-app/en/welcome.template.html&quot;. Ce chemin d’accès est extrêmement important, car le développeur AEM va créer sa page de bienvenue dans le référentiel AEM en utilisant le même chemin d’accès.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 

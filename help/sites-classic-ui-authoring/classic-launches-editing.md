@@ -1,8 +1,8 @@
 ---
 title: Modification de lancements
-seo-title: Modification de lancements
+seo-title: Editing Launches
 description: Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
-seo-description: Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
+seo-description: When a launch has been created for a page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 3a310eeb-553d-4d2b-98b5-c5bc523b2aca
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '291'
 ht-degree: 100%
 
 ---
@@ -57,7 +57,7 @@ Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vou
 
 1. Cliquez sur **Enregistrer**.
 
-## Identification du statut de lancement d’une page  {#discovering-the-launch-status-of-a-page}
+## Identification du statut de lancement d’une page {#discovering-the-launch-status-of-a-page}
 
 Lorsque vous modifiez le lancement d’une page, les informations sur le lancement s’affichent au bas de l’onglet **Création de versions** du sidekick :
 

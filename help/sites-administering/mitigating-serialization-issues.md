@@ -1,8 +1,8 @@
 ---
 title: Réduction des problèmes de sérialisation dans AEM
-seo-title: Réduction des problèmes de sérialisation dans AEM
+seo-title: Mitigating serialization issues in AEM
 description: Apprenez à réduire les problèmes de sérialisation dans AEM.
-seo-description: Apprenez à réduire les problèmes de sérialisation dans AEM.
+seo-description: Learn how to mitigate serialization issues in AEM.
 uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '956'
 ht-degree: 66%
 
 ---
@@ -43,7 +43,7 @@ Adobe prend officiellement en charge Java 6, 7 et 8, toutefois, il semble que N
 
 1. Installez le lot **com.adobe.cq.cq-serialization-tester**.
 
-1. Accédez à la console Web du bundle à l’adresse `https://server:port/system/console/bundles`
+1. Accédez à la console web du bundle à l’adresse `https://server:port/system/console/bundles`
 1. Recherchez le lot de sérialisation et démarrez-le. Cela devrait charger automatiquement et dynamiquement l’agent NotSoSerial.
 
 ## Installation de l’agent sur les serveurs d’applications {#installing-the-agent-on-application-servers}
@@ -56,9 +56,9 @@ L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM p
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Accédez à l’emplacement du démarrage rapide de l’AEM décompressé et copiez le dossier `crx-quickstart/opt/notsoserial/` dans le dossier `crx-quickstart` de l’installation AEM serveur d’applications.
+1. Accédez à l’emplacement de l’AEM de démarrage rapide que vous venez de décompresser, puis copiez la variable `crx-quickstart/opt/notsoserial/` vers le dossier `crx-quickstart` du dossier d’installation du serveur d’applications AEM.
 
-1. Remplacez la propriété de `/opt` par l’utilisateur exécutant le serveur :
+1. Modifier la propriété de `/opt` à l’utilisateur exécutant le serveur :
 
    ```shell
    chown -R opt <user running the server>
@@ -66,7 +66,7 @@ L’agent NotSoSerial n’est pas inclus dans la distribution standard des AEM p
 
 1. Configurez l’agent et vérifiez qu’il a été correctement activé, comme indiqué dans les sections suivantes de cet article.
 
-## Configuration de l’agent  {#configuring-the-agent}
+## Configuration de l’agent {#configuring-the-agent}
 
 La configuration par défaut est appropriée pour la plupart des installations. Cela inclut une liste bloquée de classes vulnérables connues d’exécution distante et une liste autorisée de packages où la désérialisation de données approuvées doit être relativement sûre.
 
@@ -112,7 +112,7 @@ Pour plus d’informations sur la résolution des incidents avec l’agent, voir
 
 >[!NOTE]
 >
->Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, le contrôle de l’intégrité échoue toujours.
+>Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée , le contrôle de l’intégrité échouera toujours.
 
 ## Gestion des erreurs lors du chargement dynamique de l’agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -132,12 +132,12 @@ Pour charger l’agent manuellement, suivez les instructions ci-dessous :
 
    >[!NOTE]
    >
-   >La distribution Adobe du fichier jar de l’agent NotSoSerial se trouve dans le dossier `crx-quickstart/opt/notsoserial/` de votre installation AEM.
+   >La distribution par Adobe du fichier jar de l’agent NotSoSerial se trouve dans la variable `crx-quickstart/opt/notsoserial/` de votre installation AEM.
 
 1. Arrêtez et redémarrez la JVM.
 
 1. Vérifiez à nouveau l’activation de l’agent en suivant les étapes décrites ci-dessus dans [Vérification de l’activation de l’agent](/help/sites-administering/mitigating-serialization-issues.md#verifying-the-agent-s-activation).
 
-## Autres considérations  {#other-considerations}
+## Autres considérations {#other-considerations}
 
 Si vous exécutez sur une JVM IBM, voir la documentation sur la prise en charge de l’API Attach Java à cet [emplacement](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).

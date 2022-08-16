@@ -1,8 +1,8 @@
 ---
-title: 'Votre boîte de réception  '
-seo-title: 'Votre boîte de réception  '
+title: Votre boîte de réception
+seo-title: Your Inbox
 description: Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
-seo-description: Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
+seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,21 +13,21 @@ docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '611'
+source-wordcount: '581'
 ht-degree: 95%
 
 ---
 
-# Votre boîte de réception  {#your-inbox}
+# Votre boîte de réception{#your-inbox}
 
 Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
 
 Ces notifications arrivent dans deux boîtes de réception, en fonction de leur type :
 
 * Une boîte de réception dans laquelle parviennent les notifications liées à des abonnements, décrite à la section suivante.
-* Une boîte de réception spécialisée pour les éléments de workflow est décrite dans le document [Participation aux workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) .
+* Une boîte de réception spécialisée pour les éléments de workflow est décrite dans la section [Participation aux workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
 
-## Viewing Your Notifications {#viewing-your-notifications}
+## Affichage des notifications {#viewing-your-notifications}
 
 Pour afficher vos notifications, procédez comme suit :
 
@@ -49,7 +49,7 @@ Pour afficher vos notifications, procédez comme suit :
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-## S’abonner aux notifications {#subscribing-to-notifications}
+## Abonnement aux notifications {#subscribing-to-notifications}
 
 Pour souscrire à des notifications :
 
@@ -92,7 +92,7 @@ Lorsqu’une page est supprimée ou déplacée, une action de suppression est au
 1. Définissez les chemins d’accès des pages pour lesquelles vous recevrez une notification :
 
    * Cliquez sur **Ajouter** pour ajouter une nouvelle ligne au tableau.
-   * Cliquez sur la cellule de tableau **Chemin** et saisissez le chemin, par exemple : `/content/docs`.
+   * Cliquez sur le bouton **Chemin** et saisissez le chemin, par exemple `/content/docs`.
 
    * Si vous souhaitez être averti pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** sur **Non**.
 Si vous souhaitez n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.

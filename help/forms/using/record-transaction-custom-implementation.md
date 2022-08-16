@@ -10,7 +10,7 @@ topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 exl-id: a1d97b15-14a6-4c3d-bdd3-6366f7acdfc8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 100%
 
@@ -94,4 +94,4 @@ $.ajax({
 
 * [Présentation des rapports de transaction](/help/forms/using/transaction-reports-overview.md)
 * [Afficher et comprendre des rapports de transaction](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [ API de rapports de transactions facturables](/help/forms/using/transaction-reports-billable-apis.md)
+* [API de rapports de transactions facturables](/help/forms/using/transaction-reports-billable-apis.md)

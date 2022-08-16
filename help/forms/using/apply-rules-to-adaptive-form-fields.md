@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
 exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 source-git-commit: 63bc43bba88a42d62fb574bc8ce42470ac61d693
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1124'
 ht-degree: 100%
 
@@ -111,9 +111,9 @@ La procédure suivante montre comment créer une règle pour afficher un message
 1. Appuyez sur le champ **[!UICONTROL ID du client]** et sur l’icône `Edit Rules`. La fenêtre [!UICONTROL Éditeur de règles] s’ouvre.
 1. Appuyez sur l’icône **[!UICONTROL + Créer]** pour ajouter une règle. L’éditeur visuel s’ouvre.
 
-   Dans l’éditeur visuel, l’instruction **[!UICONTROL QUAND]** est sélectionnée par défaut. De même, l’objet du formulaire (dans ce cas, **[!UICONTROL ID du client]**) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL QUAND]**.
+   Dans l’éditeur visuel, l’instruction **[!UICONTROL QUAND]** est sélectionnée par défaut. En outre, l’objet de formulaire (dans ce cas, **[!UICONTROL ID de client]**) d’où vous avez lancé l’éditeur de règles est spécifié dans l’instruction **[!UICONTROL QUAND]**.
 
-1. Appuyez sur la liste déroulante **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL est modifié]**.
+1. Cliquez sur le menu déroulant **[!UICONTROL Sélectionner un état]** et sélectionnez **[!UICONTROL a changé]**.
 
    ![whencustomeridischanged](assets/whencustomeridischanged.png)
 

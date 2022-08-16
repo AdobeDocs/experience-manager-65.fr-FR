@@ -1,8 +1,8 @@
 ---
 title: Création de rapports
-seo-title: Création de rapports
+seo-title: Reporting
 description: Découvrez comment utiliser la création de rapports dans AEM.
-seo-description: Découvrez comment utiliser la création de rapports dans AEM.
+seo-description: Learn how to work with Reporting in AEM.
 uuid: eee4befd-5fa9-4ebc-8eea-56e1534a6b9b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2806'
 ht-degree: 82%
 
 ---
@@ -33,7 +33,7 @@ Pour vous aider à analyser et surveiller l’état de votre instance, AEM propo
 
 >[!NOTE]
 >
->Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance du système et la création de rapports dans l’interface utilisateur moderne, voir le [Tableau de bord des opérations.](/help/sites-administering/operations-dashboard.md)
+>Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance du système et la création de rapports dans l’interface utilisateur moderne, voir [Tableau de bord des opérations.](/help/sites-administering/operations-dashboard.md)
 
 Tous ces rapports sont accessibles à partir de la console **Tools**. Sélectionnez **Rapports** dans le panneau de gauche, puis double-cliquez sur le rapport dans le panneau de droite pour l’ouvrir afin de l’afficher et/ou de le configurer.
 
@@ -61,12 +61,10 @@ Divers formats de rapport sont disponibles. Les rapports suivants utilisent tous
 >* Le rapport [Contrôle de l’intégrité](#health-check) utilise des champs de sélection pour spécifier les données sur lesquelles vous souhaitez générer des rapports.
 >* Le rapport [Utilisation du disque](#disk-usage) utilise des liens permettant d’explorer la structure du référentiel.
 >* Le [rapport de workflow](/help/sites-administering/reporting.md#workflow-report) offre un aperçu des workflows exécutés sur votre instance.
-
 >
->
-Les procédures suivantes concernant la configuration de colonne ne sont donc pas appropriées. Voir la description des différents rapports pour en connaître les détails.
+>Les procédures suivantes concernant la configuration de colonne ne sont donc pas appropriées. Voir la description des différents rapports pour en connaître les détails.
 
-### Sélection et positionnement des colonnes de données  {#selecting-and-positioning-the-data-columns}
+### Sélection et positionnement des colonnes de données {#selecting-and-positioning-the-data-columns}
 
 Vous pouvez ajouter des colonnes, les repositionner ou les supprimer à partir de n’importe lequel des rapports, standard ou personnalisés.
 
@@ -82,7 +80,7 @@ Pour modifier la sélection de données :
 * Pour déplacer une colonne, cliquez sur l’en-tête, puis faites-le glisser vers la nouvelle position.
 * Pour supprimer une colonne, cliquez sur le titre de la colonne, faites-le glisser et déposez-le sur la zone d’en-tête de rapport (un signe moins rouge indique que la position est valide). Relâchez le bouton de la souris, et la boîte de dialogue Supprimer le(s) composant(s) vous demande de confirmer que vous souhaitez vraiment supprimer la colonne.
 
-### Menu déroulant de colonne  {#column-drop-down-menu}
+### Menu déroulant de colonne {#column-drop-down-menu}
 
 Chaque colonne du rapport comprend un menu déroulant. Ce menu apparaît lorsque le curseur de la souris se trouve au-dessus de la cellule du titre de colonne.
 
@@ -99,7 +97,7 @@ Les données peuvent être triées selon une colonne en procédant comme suit, a
 * Cliquez sur l’en-tête de colonne voulu. Le tri bascule entre l’ordre croissant et décroissant, indiqué par une flèche immédiatement en regard du texte de titre.
 * Utilisez le [menu déroulant de la colonne](#column-drop-down-menu) pour sélectionner spécifiquement **Trier par ordre croissant** ou **Trier par ordre décroissant**. De même, cette option est indiquée par une flèche immédiatement en regard du texte du titre.
 
-### Groupes et graphique des données actuelles  {#groups-and-the-current-data-chart}
+### Groupes et graphique des données actuelles {#groups-and-the-current-data-chart}
 
 Sur les colonnes appropriées, vous pouvez sélectionner **Groupe par cette colonne** dans le [menu déroulant de la colonne](#column-drop-down-menu). Ceci a pour effet de regrouper les données selon chaque valeur distincte dans cette colonne. Vous pouvez sélectionner plusieurs colonnes à regrouper. Cette option est grisée lorsque les données de la colonne ne sont pas appropriées : chaque entrée est distincte et unique et aucun groupe ne peut donc être formé. Par exemple, la colonne ID de l’utilisateur du rapport d’utilisateur.
 
@@ -177,7 +175,7 @@ Une fois la collecte de données commencée, vous pouvez sélectionner les optio
     Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
 
    * Si l’intervalle est défini sur `Day`, chaque instantané est présenté comme une valeur unique dans le graphique.
-   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont agrégés en une seule valeur (affichée sous la forme d’un &quot;point&quot; unique dans le graphique).
+   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont agrégés dans une seule valeur (affichée sous la forme d’un &quot;point&quot; unique dans le graphique).
 
 Faites vos choix selon vos besoins, puis cliquez sur **Aller** pour les appliquer au rapport. Pour mettre à jour l’affichage après la création d’autres instantanés, cliquez de nouveau sur **OK**.
 
@@ -202,7 +200,7 @@ Lorsque des instantanés sont en cours de collecte, vous pouvez :
 
 >[!NOTE]
 >
->Les rapports préconfigurés n’exigent pas de performances élevées, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à un moment de la journée où votre site web ne présente pas beaucoup d’activité ; cela peut être défini avec le paramètre `Daily snapshots (repconf.hourofday)` pour la **configuration des rapports Day CQ** ; voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration.
+>Les rapports préconfigurés n’exigent pas de performances élevées, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à un moment de la journée où votre site web ne présente pas beaucoup d’activité ; peut être défini à l’aide de la fonction `Daily snapshots (repconf.hourofday)` paramètre pour **Configuration des rapports Day CQ**; see [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration.
 
 #### Limites d’affichage {#display-limits}
 
@@ -247,7 +245,7 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
    Vous pouvez définir votre propre description.
 
-* **Chemin d’accès racine**  (*uniquement principal pour certains rapports*)
+* **Chemin racine** (*principal uniquement pour certains rapports*)
 
    Utilisez cette option pour limiter le rapport à une sous-section du référentiel.
 
@@ -283,7 +281,7 @@ Choisir d’actualiser manuellement les données signifie que :
 
 1. Si vous souhaitez réafficher les données du rapport, vous devez cliquer sur **Charger les données** pour recharger les données.
 
-### Terminer (rapport)  {#finish-report}
+### Terminer (rapport) {#finish-report}
 
 Lorsque vous avez **terminé** le rapport :
 
@@ -324,7 +322,7 @@ Signifient que vous pouvez voir, par exemple :
 
 Tous les composants sont inclus, ceux standard produit comme ceux spécifiques aux projets. Avec la boîte de dialogue **Modifier**, l’utilisateur peut également définir un **Chemin racine** qui définit le point de départ du rapport. Tous les composants sous cette racine sont pris en compte pour le rapport.
 
-![](assets/reportcomponent.png) ![reportcomponentreportcompentall](assets/reportcompentall.png)
+![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png)
 
 ### Utilisation du disque {#disk-usage}
 
@@ -382,7 +380,7 @@ Le rapport d’activité de la page répertorie les pages et les actions effectu
 [Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
 
 * Page
-* Heure
+* estimé
 * Type
 * User
 
@@ -469,7 +467,7 @@ Dans l’onglet **Définitions**, vous pouvez définir :
 
 * **Chemin**
 
-   En règle générale, la propriété est extraite de `profile`.
+   En règle générale, la propriété est extraite de la propriété `profile`.
 
 * **Type**
 
@@ -479,13 +477,13 @@ Dans l’onglet **Définitions**, vous pouvez définir :
 
    Cette opération définit l&#39;agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l’agrégat requis à partir de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Par exemple, *Comptage* pour un champ `String` signifie que le nombre de valeurs `String` distinctes est affiché pour la colonne dans l’état agrégé.
+   Par exemple : *Count* pour un `String` field signifie que le nombre de `String` s’affiche pour la colonne dans l’état agrégé.
 
 Dans l’onglet **Étendu**, vous pouvez également définir les agrégats et les filtres disponibles :
 
 ![reportusrgenericcolmextalized](assets/reportusrgenericcolmextented.png)
 
-### Rapport d’instance de processus {#workflow-instance-report}
+### Rapport d’instance de workflow {#workflow-instance-report}
 
 Ce rapport offre un aperçu précis et fournit des informations sur chaque instance de workflow, à la fois en cours d’exécution et terminé.
 
@@ -505,7 +503,7 @@ Signifie que vous pouvez :
 
 ![reportworkflowintance](assets/reportworkflowintance.png)
 
-### Rapports de processus {#workflow-report}
+### Rapport de workflow {#workflow-report}
 
 Ce rapport fournit des statistiques clés sur les workflows s’exécutant sur votre instance.
 
@@ -535,7 +533,7 @@ Puisqu’aucune configuration de rapport n’est autorisée dans l’environneme
 
 >[!CAUTION]
 >
->L’accès à ces rapports peut poser un problème de sécurité ; nous vous recommandons donc de configurer Dispatcher de sorte que `/etc/reports` ne soit pas disponible pour les visiteurs externes. Voir la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
+>L’accès à ces rapports peut poser un problème de sécurité ; nous vous recommandons donc de configurer Dispatcher de sorte que `/etc/reports` n’est pas disponible pour les visiteurs externes. Voir la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
 
 ## Autorisations requises pour exécuter des rapports {#permissions-needed-for-running-reports}
 
@@ -566,4 +564,4 @@ Dans une installation AEM standard, les autorisations suivantes sont prédéfini
 
    `workflow-users` - lecture et écriture
 
-Tous les membres du groupe `administrators` disposent des droits nécessaires pour créer de nouveaux rapports.
+Tous les membres de `administrators` ont les droits nécessaires pour créer de nouveaux rapports.

@@ -1,8 +1,8 @@
 ---
 title: Architecture de contenu
-seo-title: Architecture de contenu
+seo-title: Content Architecture
 description: 'Conseils pour la conception de votre contenu (conseil : tout est contenu)'
-seo-description: Conseils pour la conception de votre contenu dans Adobe Experience Manager (AEM). (indice - tout est contenu)
+seo-description: Tips for architecting your content in Adobe Experience Manager (AEM). (hint - everything is content)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 83%
+source-wordcount: '432'
+ht-degree: 86%
 
 ---
 
-# Content Architecture{#content-architecture}
+# Architecture de contenu{#content-architecture}
 
 ## Suivez le modèle de David {#follow-david-s-model}
 
@@ -25,7 +25,7 @@ Le modèle de David a été élaboré par David Nuescheler il y a quelques ann�
 
 * Les données viennent en premier, la structure plus tard. Normalement…
 * Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger.
-* Les espaces de travail sont pour `clone()`, `merge()` et `update()`.
+* Les espaces de travail sont destinés à `clone()`, `merge()`, et `update()`.
 * Méfiez-vous des SNS (Same Name Siblings).
 * Les références sont considérées comme dangereuses.
 * Les fichiers sont des fichiers, et rien d’autre.

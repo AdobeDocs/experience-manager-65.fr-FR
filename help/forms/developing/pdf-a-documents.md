@@ -12,7 +12,7 @@ discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2358'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Bien que PDF/A soit le standard d’archivage des documents PDF, il n’est pas 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -165,7 +165,7 @@ Convertissez un document PDF en document PDF/A à l’aide de l’API DocConvert
 1. Référencer un document PDF à convertir en document PDF/A
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF converti en document PDF/A.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du document PDF et le mode d’ouverture du fichier.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant à sa propriété `binaryData` le contenu du tableau d’octets.
@@ -206,7 +206,7 @@ Vous pouvez utiliser le service DocConverter pour déterminer si un document PDF
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service DocConverter, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -230,11 +230,11 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement des fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client DocConvert**
 
-Avant d’effectuer par programmation une opération DocConverter, vous devez créer un client DocConverter. Si vous utilisez l’API Java, créez un objet `DocConverterServiceClient`. Si vous utilisez l’API Web Service DocConverter, créez un objet `DocConverterServiceService`.
+Avant d’effectuer une opération DocConverter par programmation, vous devez créer un client DocConverter. Si vous utilisez l’API Java, créez un objet `DocConverterServiceClient`. Si vous utilisez l’API Web Service DocConverter, créez un objet `DocConverterServiceService`.
 
 **Référencer un document PDF utilisé pour déterminer la conformité au format PDF/A**
 
@@ -280,11 +280,11 @@ Déterminez la conformité au format PDF/A à l’aide de l’API Java :
 
    * Créez un objet `PDFAValidationOptionSpec` en utilisant son constructeur.
    * Définissez le niveau de conformité en appelant la méthode `setCompliance` de l’objet `PDFAValidationOptionSpec` et en transmettant `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
-   * Définissez le niveau de suivi des informations en appelant la méthode `setLogLevel` de l’objet `PDFAValidationOptionSpec` et en transmettant une valeur de chaîne qui spécifie le niveau de suivi. Par exemple, transmettez la valeur `FINE`. Pour plus d’informations à propos des différentes valeurs, voir la méthode `setLogLevel` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Définissez le niveau de suivi des informations en appelant la méthode `setLogLevel` de l’objet `PDFAValidationOptionSpec` et en transmettant une valeur de chaîne qui spécifie le niveau de suivi. Par exemple, transmettez la valeur `FINE`. Pour plus d’informations à propos des différentes valeurs, voir la méthode `setLogLevel` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Récupérer des informations sur le document PDF
 
-   Déterminez la conformité du PDF/A en appelant la méthode `isPDFA` de l’objet `DocConverterServiceClient` et en transmettant les valeurs suivantes :
+   Déterminez la conformité au format PDF/A en appelant la méthode `isPDFA` de l’objet `DocConverterServiceClient` et en transmettant les valeurs suivantes :
 
    * Objet `com.adobe.idp.Document` contenant le document PDF.
    * Objet `PDFAValidationOptionSpec` spécifiant les options d’exécution.

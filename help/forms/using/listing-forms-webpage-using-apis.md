@@ -8,13 +8,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-source-git-commit: 1343cc33a1e1ce26c0770a3b49317e82353497ab
-workflow-type: ht
+exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 100%
 
 ---
-
 
 # Affichage d’une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
 

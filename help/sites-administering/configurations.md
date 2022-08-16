@@ -1,19 +1,19 @@
 ---
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
-source-git-commit: 8f5159d92f64b218d9e2e72d119e6de9d3e01ce6
+exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
+source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
 workflow-type: tm+mt
 source-wordcount: '1496'
 ht-degree: 100%
 
 ---
 
-
 # Configurations et l’explorateur de configurations {#configuration-browser}
 
 Les configurations AEM permettent de gérer les paramètres dans AEM et servent d’espaces de travail.
 
-## Qu’est-ce qu’une configuration ? {#what-is-a-configuration}
+## Qu’est-ce qu’une configuration ?  {#what-is-a-configuration}
 
 Une configuration peut être considérée sous deux angles différents.
 

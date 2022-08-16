@@ -11,7 +11,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6906'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Fragments de document {#document-fragments-1}
 
-Dans une correspondance, les fragments de document sont des parties ou composants réutilisables avec lesquels vous pouvez composer des lettres ou correspondances. Les fragments de document sont des types suivants :
+Dans une correspondance, les fragments de document sont des parties ou composants réutilisables avec lesquels vous pouvez composer des lettres ou correspondances. Les fragments de document sont composés des types suivants :
 
 * **Texte** : Un actif de texte est un élément de contenu comprenant un ou plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
 * **Liste** : La liste est un groupe de fragments du document, y compris le texte, les listes, les conditions et les images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou la totalité des éléments de liste pour reproduire un modèle d’éléments réutilisable.
@@ -120,7 +120,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
 1. Dans le volet de données, faites glisser des éléments du dictionnaire de données et des éléments d’espace réservé dans le texte.
 
-   Pour :
+   To:
 
    * Ajoutez au texte un élément du dictionnaire de données, sélectionnez un élément de données dans la liste, puis cliquez sur Insérer (![insertion](assets/insert.png)). Si vous sélectionnez Protégé, l’élément de dictionnaire de données est en lecture seule et il apparaît dans l’éditeur de lettre, mais pas dans l’interface utilisateur de création de correspondance ni dans le créateur de correspondance.
    * Ajoutez un élément d’espace réservé dans le texte, dans le panneau Éléments de données, appuyez sur Nouveau, saisissez les détails du nouvel élément de données, puis appuyez sur Créer pour ajouter le nouvel élément à la liste. Le nouvel espace réservé peut être inséré dans le texte de la même façon qu’un élément du dictionnaire de données. Pour modifier un espace réservé, sélectionnez l’espace réservé et appuyez sur Modifier.
@@ -243,7 +243,7 @@ Une liste est un groupe de contenus associés pouvant être utilisés dans un mo
    * **Nom :** il s’agit du nom unique de la liste. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ nom est automatiquement renseigné par la valeur dans le champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description (facultatif)** : entrez une description de la ressource.
    * **Élément de données (facultatif)** : sélectionnez le dictionnaire de données auquel se connecter. Seuls peuvent être ajoutés à la liste les actifs qui utilisent le même dictionnaire de données que la liste ou les actifs auxquels aucun dictionnaire de données n’a été affecté. L’affectation d’un dictionnaire de données à une liste permet à une personne créant un modèle de lettre de trouver facilement la liste appropriée.
-   * **Balises (facultatives)** : sélectionnez les balises à appliquer. Vous pouvez également taper un nouveau nom d’étiquette pour créer une étiquette. (La nouvelle balise est créée lorsque vous cliquez sur **Enregistrer**.)
+   * **Balises (facultatives)** : sélectionnez les balises à appliquer. Vous pouvez également taper un nouveau nom d’étiquette pour créer une étiquette. (La nouvelle balise est créée lorsque vous cliquez sur **Enregistrer**).
 
 1. Appuyez sur **Suivant**.
 1. Appuyez sur **Ajouter une ressource**.
@@ -306,7 +306,7 @@ L’Editeur de condition vous permet de spécifier une condition par défaut. Si
 ### Création d’une condition {#create-a-condition}
 
 1. Sélectionnez **Formulaires** > **Fragments de document**.
-1. Sélectionnez **Créer > condition**.
+1. Sélectionnez **Créer > Condition**.
 1. Spécifiez les informations suivantes pour la liste :
 
    * **Titre (facultatif) :** saisissez le titre de la condition. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Les conditions sont référencées par leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource.
@@ -453,7 +453,7 @@ Si la version définitive de la lettre créée dans l’interface utilisateur de
 
 Lors de la création d’une mise en page dans Designer, assurez-vous que les formats des champs de dates sont conformes aux formats de dates définis dans Data Display Formats dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md). Pour plus d’informations, voir Formater des valeurs de champ et utiliser des modèles dans l’Aide de Designer.
 
-#### Capture des plages de dates {#capturing-date-ranges}
+#### Capture des périodes {#capturing-date-ranges}
 
 Lorsque vous avez affaire à une combinaison de dates, telles que startDate-endDate, utilisez un sous-formulaire unique afin de garantir un alignement correct dans la lettre définitive et de minimiser le nombre de champs.
 

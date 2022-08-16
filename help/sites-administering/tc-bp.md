@@ -1,19 +1,19 @@
 ---
 title: Bonnes pratiques de traduction
-seo-title: Bonnes pratiques de traduction
+seo-title: Translation Best Practices
 description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de consulting d’Adobe afin de vous aider à mener à bien les projets de traduction.
-seo-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de consulting d’Adobe afin de vous aider à mener à bien les projets de traduction.
+seo-description: Find best practices compiled by Adobe engineering and consulting teams to help you get up and running with translation projects.
 uuid: 3bac1d73-9696-4c9b-8bdd-6f00fac40cf7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
-feature: Copie de la langue
+feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '836'
 ht-degree: 100%
 
 ---
@@ -48,7 +48,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Utilisez MSM pour créer des sites de pays à partir des gabarits de langue traduits et déployer le contenu sur les sites partageant la même langue. Par exemple, le gabarit de langue française peut être déployé sur les sites de France, de Belgique et de Suisse.
 * Planifiez, prototypez et testez avant de lancer la mise en œuvre.
 
-## Processus et méthodes de traduction  {#translation-processes-and-methods}
+## Processus et méthodes de traduction {#translation-processes-and-methods}
 
 * Faites appel à un **prestataire de services de localisation (LSP en anglais)** habitué aux tâches de traduction et maîtrisant les activités de localisation associées. Les LSP peuvent vous aider à ajuster l’échelle de votre activité internationale en fournissant un éventail de ressources et de technologies pour accroître l’efficacité et économiser sur les coûts de traduction :
 

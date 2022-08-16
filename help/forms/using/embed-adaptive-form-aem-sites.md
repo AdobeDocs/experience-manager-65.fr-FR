@@ -11,7 +11,7 @@ discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ AEM Forms fournit un composant que vous pouvez ajouter à vos pages de site. Le
 
 * **[Explorateur des actifs](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)** Tous les formulaires et toutes les communications interactives que vous créez sont disponibles sous Actifs. Vous pouvez faire glisser et déposer le formulaire sous forme de ressource dans votre page.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour incorporer un formulaire adaptatif ou une communication interactive dans une page AEM Sites qui utilise un modèle modifiable, vérifiez que le composant AEM Forms est configuré en tant que composant autorisé dans le modèle associé. Pour plus d’informations, voir **Stratégie et propriétés (conteneur de disposition)** dans [Création de modèles de page](/help/sites-authoring/templates.md).
 

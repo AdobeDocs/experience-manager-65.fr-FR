@@ -7,13 +7,13 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
-feature: Gestion des ressources
+feature: Asset Management
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 64%
+source-wordcount: '112'
+ht-degree: 63%
 
 ---
 
@@ -23,7 +23,7 @@ La gestion des ressources Dynamic Media (images, vidéos et ressources interacti
 
 Lors de l’aperçu, vous pouvez également appliquer des paramètres d’image prédéfinis (pour les images uniquement) ou des paramètres prédéfinis de visionneuse (pour la vidéo et les images). Vous ne pouvez pas appliquer les deux à une ressource. Voir [Application de paramètres prédéfinis de visionneuse](/help/assets/viewer-presets.md) et [Application de paramètres d’image prédéfinis](/help/assets/image-sets.md).
 
-Vous trouverez des informations générales sur la gestion des ressources dans [Gestion des ressources](/help/assets/manage-assets.md).
+Vous trouverez des informations générales sur la gestion des ressources dans la section [Gestion des ressources](/help/assets/manage-assets.md).
 
 Les rubriques suivantes décrivent la gestion des ressources Dynamic Media :
 

@@ -1,19 +1,19 @@
 ---
 title: Connexion à Microsoft Translator
-seo-title: Connexion à Microsoft Translator
+seo-title: Connecting to Microsoft Translator
 description: Découvrez comment connecter AEM à Microsoft Translator.
-seo-description: Découvrez comment connecter AEM à Microsoft Translator.
+seo-description: Learn how to connect AEM to Microsoft Translator.
 uuid: 5e3916ec-36a0-4d31-94ff-c340a462411a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
-feature: Copie de la langue
+feature: Language Copy
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '604'
 ht-degree: 85%
 
 ---
@@ -45,11 +45,11 @@ La procédure suivante utilise l’interface utilisateur optimisée pour les éc
 
 ## Exemples de configurations du service cloud Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
 
-Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configuration utilisent un compte d’évaluation de Microsoft Traduction qui permet un maximum de 2 000 000 caractères traduits gratuitement par mois.
+Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configuration utilisent un compte de traduction Microsoft d’évaluation qui permet de traduire gratuitement un maximum de 2 000 000 caractères par mois.
 
 ### Licence d’évaluation de Microsoft Translator {#microsoft-translator-trial-license}
 
-La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration est installé avec le module d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator qui comporte un abonnement gratuit qui permet de traduire 2 000 000 caractères par mois.
+La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration est installé avec le module d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator avec un abonnement gratuit qui permet de traduire 2 000 000 caractères par mois.
 
 ### Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors {#microsoft-translator-trial-license-geometrixx-outdoors}
 
@@ -78,9 +78,9 @@ Les pages de configuration de Microsoft Translator fournissent un lien pratique
 1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur la configuration que vous souhaitez personnaliser.
 1. Sur la page de configuration, cliquez sur Personnaliser le traducteur. Utilisez la page web de Microsoft qui s’ouvre pour personnaliser votre service.
 
-## Activation des configurations du service de traducteur  {#activating-the-translator-service-configurations}
+## Activation des configurations du service de traducteur {#activating-the-translator-service-configurations}
 
-Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Utilisez la méthode [d’activation d’une section complète (arborescence)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) pour activer les noeuds de référentiel qui stockent les configurations de Microsoft Translator ou de service cloud tiers. Les nœuds se trouvent sous les nœuds parents suivants :
+Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Utilisez la méthode de [activation d’une section complète (arborescence)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) pour activer les noeuds du référentiel qui stockent les configurations du service cloud de Microsoft Translator ou tiers. Les nœuds se trouvent sous les nœuds parents suivants :
 
 * Service de traduction Microsoft : /libs/settings/cloudconfigs/translation/msft-translation
 * Traduction tierce : /etc/cloudservices/machine-translation

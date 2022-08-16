@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '310'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 
 ## Modification d’un domaine {#edit-an-existing-domain}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à modifier.
 1. Pour modifier le nom du domaine, entrez les modifications voulues dans le champ Nom.
 1. Pour modifier les informations d’authentification d’un domaine d’entreprise ou hybride, cliquez sur le nom de l’authentification approprié situé au bas de la page. Dans la page Modifier l’authentification, modifiez les paramètres selon les besoins. Voir [Paramètres d’authentification](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).
@@ -32,7 +32,7 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 
 ## Conversion d’un domaine d’entreprise en domaine hybride {#convert-an-enterprise-domain-to-a-hybrid-domain}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine à convertir.
 1. Cliquez sur Convertir en domaine hybride.
 1. Vérifiez les informations affichées concernant les données des utilisateurs et des groupes ainsi que l’authentification des utilisateurs, puis cliquez sur OK.
@@ -44,7 +44,7 @@ Vous pouvez modifier les paramètres des domaines existants à partir de la page
 
 ## Conversion d’un domaine hybride en domaine d’entreprise {#convert-a-hybrid-domain-to-an-enterprise-domain}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le nom du domaine hybride à convertir.
 1. Cliquez sur Convertir en domaine d’entreprise.
 1. Vérifiez les informations affichées concernant les données des utilisateurs et des groupes ainsi que l’authentification des utilisateurs, puis cliquez sur OK.

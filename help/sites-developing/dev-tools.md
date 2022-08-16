@@ -1,8 +1,8 @@
 ---
 title: Outils de développement
-seo-title: Outils de développement
+seo-title: Development Tools
 description: Pour développer vos applications JCR, Apache Sling ou AEM, plusieurs jeux d’outils sont disponibles.
-seo-description: Pour développer vos applications JCR, Apache Sling ou AEM, plusieurs jeux d’outils sont disponibles.
+seo-description: To develop your JCR, Apache Sling or AEM applications, a number of tool sets are available
 uuid: 1bee3a52-5d76-4b0c-a222-a02e12ff3a43
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 62%
+source-wordcount: '392'
+ht-degree: 60%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 62%
 
 Pour développer vos applications JCR, Apache Sling ou AEM, les jeux d’outils suivants sont disponibles :
 
-* un jeu composé de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) et WebDAV. CRXDE Lite est incorporé dans CRX/AEM et permet d’effectuer des tâches de développement standard dans le navigateur. Avec CRXDE Lite, vous pouvez créer et modifier des fichiers (par exemple, dotés des extensions .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des nœuds, des propriétés et des lots lors de la connexion et de l’intégration à SVN.
+* un ensemble constitué de [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) et WebDAV. CRXDE Lite est incorporé dans CRX/AEM et permet d’effectuer des tâches de développement standard dans le navigateur. Avec CRXDE Lite, vous pouvez créer et modifier des fichiers (par exemple, dotés des extensions .jsp et .java), des dossiers, des modèles, des composants, des boîtes de dialogue, des nœuds, des propriétés et des lots lors de la connexion et de l’intégration à SVN.
 
    CRXDE Lite est recommandé lorsque vous n’avez pas d’accès direct au serveur CRX/AEM, lorsque vous développez une application en étendant ou modifiant les composants prêts à l’emploi et les lots Java ou lorsque vous n’avez pas besoin d’un débogueur dédié, de la complétion de code et de la mise en surbrillance de la syntaxe.
 
-* un ensemble constitué d’un environnement de développement intégré (par exemple : [Eclipse](/help/sites-developing/howto-projects-eclipse.md) ou [IntelliJ](/help/sites-developing/ht-intellij.md), un outil de génération (par exemple : [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault qui a été développé par Adobe pour mapper un référentiel à un système de fichiers, un système de contrôle de version (par exemple : Subversion), un système de suivi des bogues (par exemple : Jira), un système central de gestion des dépendances (par exemple : Apache Archiva) et un système d’automatisation de génération (par exemple : Apache Continuum).
+* un ensemble constitué d’un environnement de développement intégré (par exemple : [Eclipse](/help/sites-developing/howto-projects-eclipse.md) ou [IntelliJ](/help/sites-developing/ht-intellij.md)), un outil de génération (par exemple : [Apache Maven](/help/sites-developing/ht-projects-maven.md)), FileVault qui a été développé par Adobe pour mapper un référentiel à un système de fichiers, un système de contrôle de version (par exemple : Subversion), un système de suivi des bogues (par exemple : Jira), un système central de gestion des dépendances (par exemple : Apache Archiva) et un système d’automatisation de génération (par exemple : Apache Continuum).
 
    Cette configuration permet d’intégrer complètement votre application (contenu, code, configuration) dans tout environnement et processus de développement. Le lien entre les différents éléments est la représentation du système de fichiers du référentiel par l’intermédiaire de FileVault car tous les outils de développement mentionnés ci-dessus peuvent utiliser des fichiers.
 
@@ -60,4 +60,4 @@ Outils facilitant la création de projets :
 >[!NOTE]
 >
 >Le tutoriel suivant peut s’avérer intéressant pour démarrer un nouveau projet AEM :
->[Prise en main d’AEM Sites Partie 1 - Configuration du projet](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
+>[Prise en main d’AEM Sites - Partie 1 - Configuration du projet](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)

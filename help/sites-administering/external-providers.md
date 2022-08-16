@@ -1,8 +1,8 @@
 ---
 title: Analytics avec des fournisseurs externes
-seo-title: Analytics avec des fournisseurs externes
+seo-title: Analytics with External Providers
 description: Découvrez le fonctionnement d’Analytics avec des fournisseurs externes.
-seo-description: Découvrez le fonctionnement d’Analytics avec des fournisseurs externes.
+seo-description: Learn about Analytics with External Providers.
 uuid: 31a773ca-901e-45f2-be8f-951c26f9dbc5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '432'
 ht-degree: 79%
 
 ---
@@ -56,9 +56,9 @@ Ces fragments de code permettent de collecter des données et de générer des r
 
 >[!CAUTION]
 >
->Le site de démonstration Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source HTML (juste au-dessus de la balise de fin `</html>` ) dans le script `js` correspondant.
+>Le site de démonstration de Geometrixx-Outdoors est configuré de sorte que les attributs fournis dans les Propriétés de la page soient ajoutés au code source HTML (juste au-dessus de la balise `</html>` (endtag) dans la balise `js` script.
 >
->Si votre propre `/apps` n’hérite pas du composant de page par défaut ( `/libs/foundation/components/page`), vous (ou vos développeurs) devez vous assurer que les scripts `js` correspondants sont inclus, par exemple en incluant `cq/cloudserviceconfigs/components/servicescomponents` ou en utilisant un mécanisme similaire.
+>Si vous le souhaitez `/apps` n’héritez pas du composant de page par défaut ( `/libs/foundation/components/page`) vous (ou vos développeurs) devez vous assurer que la variable `js` les scripts sont inclus, par exemple, en incluant `cq/cloudserviceconfigs/components/servicescomponents`ou en utilisant un mécanisme similaire.
 >
 >Autrement, aucun des services (Générique, Analytics, Target, etc.) ne fonctionne.
 
@@ -93,7 +93,7 @@ Après avoir créé la configuration de service, vous devez maintenant configure
    ![](assets/analytics_selectservice.png)
 
 1. Cliquez sur **OK** pour enregistrer.
-1. Vous revenez sur l’onglet **Services cloud**. Le **fragment de code Analytics générique** est désormais répertorié avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique, par exemple, « google-analytics » :
+1. Vous revenez sur l’onglet **Services cloud**. Le **Fragment de code Analytics générique** est maintenant répertorié avec le message `Configuration reference missing`. Utilisez la liste déroulante pour sélectionner votre instance de service spécifique, par exemple, « google-analytics » :
 
    ![](assets/analytics_selectspecificservice.png)
 

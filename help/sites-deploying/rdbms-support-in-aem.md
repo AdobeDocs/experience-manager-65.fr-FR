@@ -1,8 +1,8 @@
 ---
 title: Prise en charge RDBMS dans AEM 6.4
-seo-title: Prise en charge RDBMS dans AEM 6.4
+seo-title: RDBMS Support in AEM 6.4
 description: 'Obtenez des informations sur la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles. '
-seo-description: 'Obtenez des informations sur la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles. '
+seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
-feature: Configuration
+feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 84%
+source-wordcount: '621'
+ht-degree: 83%
 
 ---
 
@@ -63,11 +63,11 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
 
 1. Ensuite, préparez les lots OSGi JDBC à utiliser avec AEM :
 
-   1. Dans le dossier `crx-quickstart/install` , créez un dossier nommé `9`.
+   1. Dans le `crx-quickstart/install` créer un dossier, créer un dossier nommé `9`.
 
    1. Placez le jar JDBC dans le nouveau dossier. 
 
-1. Enfin, commencez AEM par les modes d’exécution `crx3` et `crx3rdb` :
+1. Enfin, commencez AEM par le `crx3` et `crx3rdb` Modes d’exécution :
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
