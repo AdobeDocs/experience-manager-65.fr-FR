@@ -1,18 +1,18 @@
 ---
 title: Donner un style aux composants principaux AEM CIF
-description: Découvrez comment donner un style aux composants principaux AEM CIF. Ce tutoriel explique comment les bibliothèques côté client (clientlibs) sont utilisées afin de déployer et de gérer le code CSS et Javascript pour une implémentation Commerce d’Adobe Experience Manager (AEM). Il explique également comment le module ui.frontend et un projet webpack sont intégrés dans le processus de création de bout en bout.
+description: Découvrez comment donner un style aux composants principaux AEM CIF. Ce tutoriel explique comment les bibliothèques côté client (clientlibs) sont utilisées afin de déployer et de gérer le code CSS et Javascript pour une implémentation Commerce d’Adobe Experience Manager (AEM). Il explique également comment le module ui.frontend et un projet webpack sont intégrés dans le processus de création de bout en bout.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
 workflow-type: tm+mt
 source-wordcount: '2567'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -32,7 +32,7 @@ Dans ce tutoriel, un nouveau style ressemblant à une carte sera mis en œuvre p
 
 ## Prérequis {#prerequisites}
 
-Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance d’AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes pour [configuration d’un développement local avec AEM](../develop.md).
+Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes pour [configuration d’un développement local avec AEM](../develop.md).
 
 ## Clonage du projet Venia {#clone-venia-project}
 
@@ -55,11 +55,11 @@ Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-ven
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance Adobe Commerce ou ajoutez les configurations au projet nouvellement créé.
+1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance Adobe Commerce ou ajoutez les configurations au projet nouvellement créé.
 
-1. À ce stade, vous devez disposer d’une version fonctionnelle d’une vitrine connectée à une instance Adobe Commerce. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. À ce stade, vous devriez disposer d’une version fonctionnelle d’un storefront connecté à une instance Adobe Commerce. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Vous devriez voir que le storefront utilise actuellement le thème Venia. En développant le menu principal du storefront, vous devriez voir différentes catégories, indiquant que la connexion à Adobe Commerce fonctionne.
+   Vous devriez voir que le storefront utilise actuellement le thème Venia. En développant le menu principal du storefront, vous devriez voir différentes catégories indiquant que la connexion à Adobe Commerce fonctionne.
 
    ![Storefont configuré avec le thème Venia](../assets/style-cif-component/venia-store-configured.png)
 
