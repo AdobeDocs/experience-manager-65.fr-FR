@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
-description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
+description: '"Trouvez les informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: e51cf7a5b7d14bc4aed053496c7fe6685dd2b0b8
+source-git-commit: 3c3efe108b020d9c64e456d409f114c8969f2723
 workflow-type: tm+mt
-source-wordcount: '3653'
+source-wordcount: '3652'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 | -------- | ---------------------------- |
 | Version | 6.5.13.0 |
 | Type | Version du Service Pack |
-| Date  | 26 mai 2022 |
+| Date | 26 mai 2022 |
 | URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.13.0.zip) |
 
 ## Éléments compris dans [!DNL Experience Manager] 6.5.13.0 {#what-is-included-in-aem}
