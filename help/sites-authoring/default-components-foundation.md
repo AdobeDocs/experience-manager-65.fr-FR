@@ -1,8 +1,8 @@
 ---
 title: Composants de base
-seo-title: Composants de base
+seo-title: Foundation Components
 description: Composants de base
-seo-description: 'null'
+seo-description: null
 uuid: 3caf9123-ae58-4590-af2f-57ef076daf7f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7365'
+source-wordcount: '7362'
 ht-degree: 85%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 85%
 
 >[!CAUTION]
 >
->La plupart des composants de base sont désormais obsolètes avec AEM 6.5. Voir les [notes de mise à jour](/help/release-notes/deprecated-removed-features.md) pour plus d’informations.
+>La plupart des composants de base sont désormais obsolètes avec AEM 6.5. Voir la section [notes de mise à jour](/help/release-notes/deprecated-removed-features.md) pour plus d’informations.
 >
->Adobe recommande l’utilisation des ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)composants principaux[ plus modernes et extensibles dans les projets AEM. Ils font partie de l’[exemple de contenu We.Retail](/help/sites-developing/we-retail.md) et peuvent également être [installés séparément et utilisés pour le développement](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/get-started/using.html) par votre administrateur.
+>Adobe recommande l’utilisation des ](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)composants principaux[ plus modernes et extensibles dans les projets AEM. Ils font partie de la [Exemple de contenu We.Retail](/help/sites-developing/we-retail.md) et peut également [installé séparément et utilisé pour le développement](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/get-started/using.html) par votre administrateur.
 >
->Vous pouvez utiliser [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) pour refactoriser votre site basé sur les composants de base afin d’utiliser les composants principaux.
+>Vous pouvez utiliser la variable [AEM Moderniser la suite d’outils](https://opensource.adobe.com/aem-modernize-tools/) pour refactoriser votre site basé sur les composants de base afin d’utiliser les composants principaux.
 
 Les composants de base ont été conçus pour être utilisés lors de la création de contenu d’une page web standard. Ils forment un sous-ensemble des composants disponibles « prêts à l’emploi » pour une installation AEM standard.
 
-Certains sont immédiatement disponibles via l’explorateur de composants, d’autres le sont également en utilisant le [mode de conception](/help/sites-authoring/default-components-designmode.md) (si la page est basée sur un modèle statique) ou en modifiant le modèle](/help/sites-authoring/templates.md) (si la page est basée sur un modèle modifiable).[
+Certains sont immédiatement disponibles via l’explorateur de composants, d’autres le sont également à l’aide de la fonction [mode de conception](/help/sites-authoring/default-components-designmode.md) (si la page est basée sur un modèle statique) ou par [modification du modèle](/help/sites-authoring/templates.md) (si la page est basée sur un modèle modifiable).
 
 L’utilisation de composants de base est prise en charge, mais elle est pratiquement obsolète et désormais remplacée par des composants principaux offrant davantage d’évolutivité et de flexibilité.
 
@@ -93,7 +93,7 @@ Utilisez les fichiers image avec les extensions suivantes dans le composant d’
 * .jpg
 * .jpeg
 * .png
-* .gif **
+* .gif &#42;&#42;
 
 >[!CAUTION]
 >
@@ -198,8 +198,8 @@ Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page actuelle comme page parente.
       * **Options de la liste fixe**
 
-         * ****
-PagesSélectionnez une liste de pages. Utilisation 
+         * **Pages**
+Sélectionnez une liste de pages. Utilisation 
 `+` pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
       * **Options de recherche**
 
@@ -210,9 +210,9 @@ PagesSélectionnez une liste de pages. Utilisation
 
          * **Notation des prédicats de Query Builder** Entrez une requête de recherche à l’aide de la notation des prédicats de Query Builder. Par exemple, entrez « fulltext=Marketing » pour afficher dans le carrousel toutes les pages comportant le terme « Marketing » dans leur contenu.
 Voir [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour consulter une discussion complète sur les expressions de requête et d’autres exemples.
-   * **Order**
-bySelect 
-`jcr:title`,  `jcr:created`,  `cq:lastModified` ou  `cq:template` dans le menu déroulant.
+   * **Classer par**
+Sélectionner 
+`jcr:title`, `jcr:created`, `cq:lastModified`ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 Nombre maximal d’éléments que vous souhaitez utiliser dans le carrousel (facultatif).
@@ -235,8 +235,8 @@ Le composant Graphique permet d’ajouter un histogramme ou un graphique en cour
 
 * **Données**
 
-   * **Données de graphique**
-Ajoutez vos données de graphique au format CSV ; une virgule (« , ») est utilisée comme séparateur de valeurs.
+   * **Données du graphique**
+Entrez vos données de graphique au format CSV ; Le format Valeurs séparées par des virgules utilise des virgules (&quot;,&quot;) comme séparateur de champ.
 
 * **Avancé**
 
@@ -306,8 +306,8 @@ Le composant d’intégration d’application externe (**Externe**) permet d’i
 
 * **Externe**
 
-   * ****
-Application cible : indiquez l’URL de l’application web à intégrer. par exemple :
+   * **Application cible**
+Indiquez l&#39;URL de l&#39;application web à intégrer. par exemple :
 
       ```
       https://en.wikipedia.org/wiki/Main_Page
@@ -316,8 +316,7 @@ Application cible : indiquez l’URL de l’application web à intégrer. par ex
    * **Transmettre les paramètres**
 Cochez les cases correspondant aux paramètres à transmettre à l’application, lorsque cela s’avère nécessaire.
 
-   * **Largeur et hauteur
-**Définition de la taille de l’iframe
+   * **Largeur et hauteur **Définissez la taille de l’iframe.
 
 L’application externe est intégrée au système de paragraphes de la page AEM, par exemple, lorsque vous utilisez une application cible de `https://en.wikipedia.org/wiki/Main_Page` :
 
@@ -369,7 +368,7 @@ Le composant Flash vous permet de charger une animation Flash. Faites glisser un
 
    * **Version minimale**
 
-      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La valeur par défaut est de 9.0.0.
+      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La version minimale par défaut est 9.0.0.
 
    * **Attributs**
 
@@ -409,7 +408,7 @@ Différentes autres options sont disponibles en mode Plein écran. Par exemple, 
 >
 >Les utilisateurs d’Internet Explorer doivent charger l’image, cliquer sur **OK**, puis rouvrir l’image pour afficher le fichier téléchargé dans l’aperçu et être en mesure d’y apporter des modifications (un recadrage, par exemple).
 >
->Voir la section [Plateformes certifiées](/help/release-notes/release-notes.md#certifiedplatforms) pour plus d’informations sur les fonctionnalités HTML5 utilisées par AEM.
+>Voir [Plateformes certifiées](/help/release-notes/release-notes.md#certifiedplatforms) pour plus d’informations sur les fonctionnalités de HTML5 utilisées par AEM.
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
@@ -485,7 +484,7 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
       * **Options des pages enfants**
 
-         * **Enfants de**  (page parente)
+         * **Enfants de** (Page parente)
 
             Spécifiez un chemin manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page active comme parent.
       * **Options de la liste fixe**
@@ -508,7 +507,7 @@ Le composant Liste vous permet de configurer des critères de recherche pour aff
 
             Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de Query Builder. Par exemple, vous pouvez saisir &quot;fulltext=Marketing&quot; pour que toutes les pages comportant &quot;Marketing&quot; dans leur contenu s’affichent dans le carrousel.
 
-            Voir [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète sur les expressions de requête et d’autres exemples.
+            Voir [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour une discussion complète des expressions de requête et d’autres exemples.
       * **Balises**
 
          Permet de spécifier la **Page parente**, les **Tags / Mots-clés** et les critères de correspondance.
@@ -714,7 +713,7 @@ L&#39;exemple suivant montre un terme de recherche mal orthographié et non disp
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt d’utiliser les [composants principaux de la navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html), [navigation par langue](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/language-navigation.html) et [chemin de navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/breadcrumb.html) .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/navigation.html), [Navigation par langue](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/language-navigation.html), et [Composants principaux du chemin de navigation](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/breadcrumb.html) au lieu de .
 
 Liste automatique du plan du site qui (avec les paramètres par défaut) répertorie toutes les pages (sous forme de liens actifs) du site web actuel. Par exemple (extrait) :
 
@@ -732,7 +731,7 @@ Si nécessaire, vous pouvez configurer l’option suivante :
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html).
+>Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=fr).
 
 >[!CAUTION]
 >
@@ -746,7 +745,7 @@ Vous pouvez configurer :
 
    * **Nouvelle diapositive**
 
-      Vous pouvez spécifier une sélection de diapositives à l’aide des boutons **Ajouter** (et **Supprimer**).
+      Vous pouvez spécifier une sélection de diapositives à l’aide de l’option **Ajouter** (et **Supprimer**).
 
    * **Titre**
 
@@ -825,7 +824,7 @@ Le composant Texte vous permet de saisir un bloc de texte à l’aide d’un éd
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
-Lorsque vous ouvrez la boîte de dialogue **Configurer**, vous pouvez également définir :
+Lorsque vous ouvrez le **Configurer** , vous pouvez également définir :
 
 * **Espacement**
 * **Style de texte**
@@ -852,11 +851,11 @@ Le composant Texte et image permet d’ajouter un bloc de texte et une image. Vo
 
 Vous pouvez configurer :
 
-* **Styles de composant**  (**Styles**)
+* **Styles de composant** (**Styles**)
 
    Vous pouvez ici aligner l’image à droite ou à gauche. Le paramètre par défaut est aligné à **Gauche**, avec l’image à gauche.
 
-* **Propriétés de l’image**  (**Propriétés avancées de l’image**)
+* **Propriétés de l’image** (**Propriétés d’image avancées**)
 
    Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
@@ -917,11 +916,11 @@ L’exemple suivant montre un composant **Titre** affiché (la conception est d�
 
 ![dc_title_use](assets/dc_title_use.png)
 
-### Vidéo {#video}
+### Vidéo  {#video}
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande plutôt d’utiliser le [composant Incorporer des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant Incorporer des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html) au lieu de .
 
 >[!CAUTION]
 >
@@ -933,7 +932,7 @@ Voir également [configurer vos profils vidéo](/help/sites-administering/config
 
 Une fois une instance du composant placée sur la page, vous pouvez configurer les options suivantes :
 
-* Vidéo
+* Vidéo 
 
    * **Contenu vidéo**
 
@@ -964,7 +963,7 @@ L’exemple suivant illustre l’utilisation du composant 2 colonnes. Vous pouv
 
 Composant Contrôle de colonne qui est égal par défaut à 2 colonnes.
 
-### 3 colonnes  {#columns-2}
+### 3 colonnes {#columns-2}
 
 Composant Contrôle de colonne qui est égal par défaut à 3 colonnes.
 
@@ -1057,7 +1056,7 @@ Il s’agit d’un champ obligatoire qui ne doit contenir que les caractères su
 
       Ce champ vous permet de fournir des informations supplémentaires pour l’utilisateur, si cela s’avère nécessaire. Sur le formulaire, cela est indiqué sous le champ, dans une police plus petite que celle du titre.
 
-   * **Afficher/masquer**
+   * **Afficher/Masquer**
 
       Cette case à cocher détermine les conditions de visibilité du champ.
 
@@ -1132,7 +1131,7 @@ Ce composant est nécessaire pour définir le début d’un nouveau formulaire s
 
    * **Type d’action**
 
-      Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains ont besoin d’une **Configuration de l’action** correspondante.
+      Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains ont besoin d’une **Configuration d’action**.
 Plusieurs types d’action sont inclus dans une installation d’AEM standard :
 
       * **Demande de compte**
@@ -1187,7 +1186,7 @@ Plusieurs types d’action sont inclus dans une installation d’AEM standard :
          `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
    * **Configuration de l’action**
 
-      Les options disponibles dans **Configuration de l’action** dépendent du **Type d’action** sélectionné :
+      Les options disponibles dans **Configuration d’action** dépendent de la variable **Type d’action** selected :
 
       * **Demande de compte**
 
@@ -1240,10 +1239,10 @@ Plusieurs types d’action sont inclus dans une installation d’AEM standard :
 
          * **Afficher des données...**
 
-            Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. À partir de là, vous pouvez exporter les informations vers un fichier `.tsv` (séparé par des tabulations) (à utiliser, par exemple, dans une feuille de calcul Excel).
+            Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. À partir de là, vous pouvez exporter les informations vers une `.tsv` (séparé par des tabulations) (pour une utilisation dans une feuille de calcul Excel, par exemple).
       * **Courrier**
 
-         * **Du**
+         * **Origine**
 
             Saisissez l’adresse électronique à partir de laquelle le courrier électronique doit être envoyé.
 
@@ -1279,7 +1278,7 @@ Plusieurs types d’action sont inclus dans une installation d’AEM standard :
             Cliquez sur ce bouton pour accéder aux informations sur les résultats de formulaire dans l’éditeur en masse. Vous avez alors la possibilité d’exporter les informations vers un fichier .tsv (séparé par des tabulations) en vue de l’utiliser, par exemple, dans une feuille de calcul Excel).
       * **Stocker le contenu avec les chargements**
 
-         Il dispose des mêmes options que **Stocker le contenu**.
+         Cette option présente les mêmes options que la variable **Stocker le contenu**.
 
       * **Désabonner l’abonné**
 
@@ -1364,7 +1363,7 @@ Le composant Captcha requiert que l’utilisateur saisisse une chaîne alphanum�
 
 Vous pouvez configurer plusieurs paramètres différents pour ce composant, notamment un message à afficher lorsque la chaîne Captcha n’est pas valide.
 
-### Groupe de cases à cocher  {#checkbox-group}
+### Groupe de cases à cocher {#checkbox-group}
 
 >[!CAUTION]
 >
@@ -1566,7 +1565,7 @@ Le champ de texte standard peut être configuré selon la taille et la largeur r
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### Bouton(s) d’envoi de workflow {#workflow-submit-button-s}
+### Bouton d’envoi du workflow {#workflow-submit-button-s}
 
 >[!CAUTION]
 >

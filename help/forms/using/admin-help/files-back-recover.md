@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '2072'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ L’emplacement du répertoire de stockage global de documents peut être modifi
 
 Vous pouvez activer le stockage de documents AEM Forms dans la base de données AEM Forms à l’aide d’Administration Console. Cette option conserve tous les documents persistants dans la base de données ; AEM Forms a tout de même besoin du répertoire de stockage global de documents reposant sur le système de fichiers car il est utilisé pour le stockage des fichiers et ressources permanents et temporaires associés aux sessions et aux appels d’AEM Forms.
 
-Lorsque vous sélectionnez l’option « Activer le stockage de documents dans la base de données » dans les paramètres de Core System dans Administration Console ou à l’aide du gestionnaire de configuration, AEM Forms n’autorise pas les modes de sauvegarde d’instantané et de sauvegarde de restauration. Par conséquent, vous n’avez pas besoin de gérer les modes de sauvegarde à l’aide d’AEM Forms. Si vous utilisez cette option, sauvegardez le répertoire de stockage global de documents uniquement après avoir activé cette option. Lors de la récupération d’AEM Forms à partir d’une sauvegarde, il n’est pas nécessaire de renommer le répertoire de sauvegarde du stockage global de documents ni de restaurer ce dernier.
+Lorsque vous sélectionnez l’option &quot;Activer le stockage de documents dans la base de données&quot; dans les paramètres de Core System dans Administration Console ou à l’aide de Configuration Manager, AEM forms n’autorise pas le mode de sauvegarde instantané et le mode de sauvegarde restauration. Par conséquent, vous n’avez pas besoin de gérer les modes de sauvegarde à l’aide d’AEM Forms. Si vous utilisez cette option, sauvegardez le répertoire de stockage global de documents uniquement après avoir activé cette option. Lors de la récupération d’AEM Forms à partir d’une sauvegarde, il n’est pas nécessaire de renommer le répertoire de sauvegarde du stockage global de documents ni de restaurer ce dernier.
 
 ## Référentiel AEM {#aem-repository}
 

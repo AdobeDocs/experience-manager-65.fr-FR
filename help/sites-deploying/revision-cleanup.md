@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '5904'
 ht-degree: 67%
@@ -387,7 +387,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Où trouver les statistiques des dernières exécutions de nettoyage des révisions en ligne ?</strong></td>
-   <td><p>L’état, la progression et les statistiques sont présentés via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Pour plus d’informations sur la variable <code>SegmentRevisionGarbageCollection</code> MBean, lisez la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">paragraphe suivant</a>.</p> <p>Les progrès peuvent être suivis à partir du <code>EstimatedRevisionGCCompletion</code> de l’attribut <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>N’oubliez pas que les statistiques sont dospnibles uniquement avec le dernier démarrage de système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> </td>
+   <td><p>L’état, la progression et les statistiques sont présentés via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Pour plus d’informations sur la variable <code>SegmentRevisionGarbageCollection</code> MBean, lisez la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">paragraphe suivant</a>.</p> <p>Les progrès peuvent être suivis à partir du <code>EstimatedRevisionGCCompletion</code> de l’attribut <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>N’oubliez pas que les statistiques sont dospnibles uniquement avec le dernier démarrage de système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -400,7 +400,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
       </ul> </li>
      <li>Espace disque gagné par le nettoyage de révision
       <ul>
-       <li>L’espace n’est récupéré que lorsque la phase de nettoyage est terminée. La fin de la phase de nettoyage est marquée par le message du journal "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimension après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).”.</li>
+       <li>L’espace n’est récupéré que lorsque la phase de nettoyage est terminée. La fin de la phase de nettoyage est marquée par le message du journal "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimension après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).".</li>
       </ul> </li>
      <li>Un problème s’est produit pendant le nettoyage de la révision.
       <ul>
@@ -435,7 +435,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><p><strong>Comment surveiller le nettoyage automatique sur une instance Secondaire ?</strong></p> </td>
-   <td><p>L’état, la progression et les statistiques sont présentés via JMX à l’aide de la variable <code>SegmentRevisionGarbageCollection</code> MBean. Voir également ce qui suit : <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Documentation Oak</a>. </p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Notez que les statistiques sont disponibles uniquement à partir du dernier démarrage du système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir aussi <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> <p>Les fichiers de journal peuvent aussi être utilisés pour vérifier l’état, le progrès et les statistiques du nettoyage automatique.</p> </td>
+   <td><p>L’état, la progression et les statistiques sont présentés via JMX à l’aide de la variable <code>SegmentRevisionGarbageCollection</code> MBean. Voir également ce qui suit : <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Documentation Oak</a>. </p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Notez que les statistiques sont disponibles uniquement à partir du dernier démarrage du système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir aussi <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> <p>Les fichiers de journal peuvent aussi être utilisés pour vérifier l’état, le progrès et les statistiques du nettoyage automatique.</p> </td>
    <td> </td>
   </tr>
   <tr>

@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '641'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -30,7 +30,7 @@ Seuls les certificats X509v3 sont pris en charge. Ce type de certificat peut êt
 
 Les certificats requis pour vérifier des signatures doivent résider au même emplacement de stockage (module HSM ou base de données).
 
-Vous pouvez également importer et supprimer des certificats à l’aide de l’API Trust Manager. Pour plus d’informations, reportez-vous aux sections « Importation des certificats à l’aide de l’API Trust Manager » et « Suppression des certificats à l’aide de l’API Trust Manager » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
+Vous pouvez également importer et supprimer des certificats à l’aide de l’API Trust Manager. Pour plus d’informations, voir &quot;Importation de certificats à l’aide de l’API Trust Manager&quot; et &quot;Suppression de certificats à l’aide de l’API Trust Manager&quot; dans [Programmation avec les AEM forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
 
 ## Importation d’un certificat {#import-a-certificate}
 

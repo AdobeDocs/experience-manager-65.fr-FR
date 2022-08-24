@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '6228'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -248,12 +248,12 @@ Ajoutez des utilisateurs à l’aide de l’API du service Directory Manager (se
 
 1. Ajoutez l’utilisateur à AEM Forms.
 
-   Appelez la méthode `createLocalUser` de lʼobjet `DirectoryManagerServiceClient` et transmettez les valeurs suivantes :
+   Appeler la méthode `createLocalUser` de l’objet `DirectoryManagerServiceClient` et transmettez les valeurs suivantes :
 
-   * Lʼobjet `UserImpl` qui représente le nouvel utilisateur
+   * Objet `UserImpl` qui représente le nouvel utilisateur
    * Valeur de chaîne qui représente le mot de passe de l’utilisateur
 
-   La méthode `createLocalUser` renvoie une valeur de chaîne qui spécifie la valeur de l’identifiant de lʼutilisateur local.
+   La méthode `createLocalUser` renvoie une valeur de chaîne qui spécifie la valeur de l’identifiant utilisateur local.
 
 1. Vérifiez que l’utilisateur a été ajouté.
 
@@ -325,8 +325,8 @@ Pour supprimer des utilisateurs à l’aide de l’API Directory Manager Servi
 1. Spécifiez lʼutilisateur à supprimer.
 
    * Créez un objet `PrincipalSearchFilter` en utilisant son constructeur.
-   * Définissez la valeur de l’identifiant dʼutilisateur en appelant la méthode `setUserId` de lʼobjet `PrincipalSearchFilter`. Transmettez une valeur de chaîne qui représente l’identifiant de l’utilisateur.
-   * Appelez la méthode `findPrincipals` de l’objet `DirectoryManagerServiceClient` et transmettez l’objet `PrincipalSearchFilter`. Cette méthode renvoie une instance `java.util.List` où chaque élément est un objet `User`. Effectuez une itération au sein de lʼinstance `java.util.List` pour localiser l’utilisateur à supprimer.
+   * Définissez la valeur de l’identifiant utilisateur en appelant la méthode `setUserId` de l’objet `PrincipalSearchFilter`. Transmettez une valeur de chaîne qui représente l’identifiant de l’utilisateur.
+   * Appelez la méthode `findPrincipals` de l’objet `DirectoryManagerServiceClient` et transmettez-la à l’objet `PrincipalSearchFilter`. Cette méthode renvoie une instance `java.util.List` où chaque élément est un objet `User`. Effectuez une itération au sein de lʼinstance `java.util.List` pour localiser l’utilisateur à supprimer.
 
 1. Supprimez l’utilisateur d’AEM Forms.
 
@@ -355,12 +355,12 @@ Supprimez des utilisateurs à l’aide de l’API Directory Manager Service (s
 1. Créez un client DirectoryManagerService.
 
    * Créez un objet `DirectoryManagerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `DirectoryManagerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne indiquant le fichier WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Vous n’avez pas besoin d’utiliser lʼattribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Veillez à spécifier `blob=mtom.`.
+   * Créez un objet `DirectoryManagerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service. Veillez à spécifier `blob=mtom.`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `DirectoryManagerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `MessageEncoding` de lʼobjet `System.ServiceModel.BasicHttpBinding` à `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Attribuer la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
@@ -475,7 +475,7 @@ Créez un groupe à l’aide de l’API Directory Manager Service (Java) :
 
    * Créez un objet `PrincipalSearchFilter` en utilisant son constructeur.
    * Définissez la valeur de l’identifiant utilisateur en appelant la méthode `setUserId` de l’objet `PrincipalSearchFilter`. Transmettez une valeur de chaîne qui représente l’identifiant de l’utilisateur.
-   * Appelez la méthode `findPrincipals` de l’objet `DirectoryManagerServiceClient` et transmettez l’objet `PrincipalSearchFilter`. Cette méthode renvoie une instance `java.util.List` où chaque élément est un objet `User`. Itérez à travers l’instance `java.util.List` afin de localiser l’utilisateur.
+   * Appelez la méthode `findPrincipals` de l’objet `DirectoryManagerServiceClient` et transmettez-la à l’objet `PrincipalSearchFilter`. Cette méthode renvoie une instance `java.util.List` où chaque élément est un objet `User`. Itérez à travers l’instance `java.util.List` afin de localiser l’utilisateur.
    * Ajoutez un utilisateur au groupe en appelant la méthode `DirectoryManagerServiceClient` de l’objet `addPrincipalToLocalGroup`. Transmettez la valeur renvoyée par la méthode `User` de l’objet `getOid`. Transmettez la valeur renvoyée par la méthode `Group` de l’objet `getOid` (utilisez l’instance `Group` qui représente le nouveau groupe).
 
 **Voir également**
@@ -555,7 +555,7 @@ Pour gérer par programmation les utilisateurs, les groupes et les domaines à l
 
    Pour supprimer un utilisateur local, appelez la méthode `DirectoryManagerServiceClient` de l’objet `deleteLocalUser` et transmettez l’identifiant de l’utilisateur.
 
-   Pour supprimer un groupe local, appelez la méthod `DirectoryManagerServiceClient` de l’objet `deleteLocalGroup` et transmettez l’identifiant du groupe.
+   Pour supprimer un groupe local, appelez la méthode `deleteLocalGroup` de l’objet `DirectoryManagerServiceClient` et transmettez l’identifiant du groupe.
 
 **Voir également**
 
@@ -683,7 +683,7 @@ Gérez les rôles et les autorisations à l’aide de l’API Authorization Mana
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/AuthorizationManagerService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/AuthorizationManagerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -692,14 +692,14 @@ Gérez les rôles et les autorisations à l’aide de l’API Authorization Mana
 1. Créez un client AuthorizationManagerService.
 
    * Créez un `AuthorizationManagerServiceClient` objet en utilisant son constructeur par défaut.
-   * Créez un objet `AuthorizationManagerServiceClient.Endpoint.Address` en utilisant l’objet `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne qui indique le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `AuthorizationManagerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AuthorizationManagerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuer le nom d’utilisateur AEM forms au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuer la valeur de mot de passe correspondante au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Attribuer la valeur de constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Attribuer la valeur de constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Appelez les opérations de rôle ou d’autorisation appropriées.
@@ -711,8 +711,8 @@ Gérez les rôles et les autorisations à l’aide de l’API Authorization Mana
 
    Pour supprimer un rôle d’un principal, appelez la méthode `unassignRole` de l’objet `AuthorizationManagerServiceService` et transmettez les valeurs suivantes :
 
-   * Objet `string` contenant l’identifiant du rôle.
-   * Tableau d’objets `string` contenant les identifiants des entités.
+   * Un objet `string` contenant l’identifiant du rôle.
+   * Un tableau d’objets `string` contenant les identifiants des principaux.
 
 
 **Voir également**
@@ -833,7 +833,7 @@ Authentifiez un utilisateur à l’aide de l’API Authentication Manager Servic
 1. Incluez les fichiers de projet.
 
    * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL d’Authentication Manager. (Voir [Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Référencez l’assemblage client Microsoft .NET. (Voir « Référence à l’assemblage client .NET » dans [Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Référencez l’assemblage client Microsoft .NET. (Voir &quot;Référence à l’assemblage client .NET&quot; dans [Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 1. Créez un client AuthenticationManagerService.
 

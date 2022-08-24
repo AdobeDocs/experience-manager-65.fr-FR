@@ -10,10 +10,10 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3838'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -488,8 +488,8 @@ Validations appliquées au niveau de l’Elément du dictionnaire de données.
 * Tous les DDE doivent comporter un type d’élément « not null/non null ».
 * Aucun nom de référence de DDE ne doit être nul.
 * Tous les noms de référence de DDE doivent être uniques.
-* Tous les noms de référence de DDE ne doivent contenir que des caractères alphanumériques et le signe « _ ».
-* Tous les noms d’affichage de DDE ne doivent contenir que des caractères alphanumériques et le signe « _ ».
+* Toutes les références de DDE ne doivent contenir que des caractères alphanumériques et le signe &quot;_&quot;.
+* Tous les noms d’affichage de DDE ne doivent contenir que des caractères alphanumériques et le signe &quot;_&quot;.
 * Les éléments Composite et Collection ne sont pas autorisés au niveau de la feuille. Seuls les éléments de type primitif (chaîne, date, nombre, booléen) sont autorisés au niveau feuille. Cette validation permet de s’assurer qu’il n’existe aucun élément Composite et Collection sans DDE enfant.
 * Un DDE composite parent ne doit pas avoir deux éléments enfants portant le même nom.
 * Le sous-type ENUM est utilisé uniquement pour les éléments Chaîne et Nombre.
@@ -592,7 +592,7 @@ Lors du mappage d’un DDE de collection à un élément de schéma XML :
 
 * La liaison pour tous les DDE enfants d’éléments de collection doit être relative à l’élément de collection parent.
 
-Le schéma XML ci-dessous déclare un élément portant le nom Tokens et doté d’un attribut maxOccurs de type « unbounded » (illimité). Par conséquent, Tokens est un élément Collection.
+Le schéma XML ci-dessous déclare un élément nommé Tokens et un attribut maxOccurs de &quot;unbounded&quot; (illimité). Par conséquent, Tokens est un élément Collection.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

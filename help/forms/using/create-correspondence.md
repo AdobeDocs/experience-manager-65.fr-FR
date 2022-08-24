@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '3695'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
 Sous l’onglet Données, renseignez les champs de mise en page et les espaces réservés disponibles.
 
-1. Entrez les données et les variables de contenu dans les champs requis. Remplissez tous les champs obligatoires identifiés par un astérisque (*) pour activer le bouton **Envoyer**.
+1. Entrez les données et les variables de contenu dans les champs requis. Renseignez tous les champs obligatoires marqués d’un astérisque (&#42;) pour activer la variable **Envoyer** bouton .
 
    Appuyez sur une valeur de champ de données dans l’aperçu de lettre HTML pour mettre en surbrillance le champ de données correspondant dans l’onglet Données.
 
@@ -129,7 +129,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    * Symboles de devise tels que €,￥et £
    * Symboles mathématiques tels que ∑, √, ∂ et ^
-   * Symboles de ponctuation tels que ‟ et ”
+   * Symboles de ponctuation tels que ‟ et &quot;
 
    ![specialcharacters](assets/specialcharacters.png)
 
@@ -245,7 +245,7 @@ Vous pouvez effectuer des modifications relatives à la mise en page et au conte
 
    >[!NOTE]
    >
-   >Les formulaires mobiles ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page apparaissent qu’une seule fois. En revanche, vous pouvez définir explicitement les en-têtes et pieds de page dans la mise en page (par page) pour qu’ils s’affichent dans l’aperçu des formulaires mobiles. En outre, les pages vierges dans la lettre, le cas échéant, n’apparaissent pas dans l’aperçu de formulaires pour périphériques mobiles.
+   >Les formulaires mobiles ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. En revanche, vous pouvez définir explicitement les en-têtes et pieds de page dans la mise en page (par page) pour qu’ils s’affichent dans l’aperçu des formulaires mobiles. En outre, les pages vierges dans la lettre, le cas échéant, n’apparaissent pas dans l’aperçu de formulaires pour périphériques mobiles.
 
    ![Saut de page explicite](assets/8_pagebreak.png)
 
@@ -353,7 +353,7 @@ Pour plus d’informations sur la prise en charge des scripts dans des formulair
 
 Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de prévisualisation d’une lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
 
-Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
 Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 

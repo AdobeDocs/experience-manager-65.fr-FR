@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '1491'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Si la base de données principale d’AEM forms est déplacée ou modifiée, con
 
 ### Modification du nom d’hôte ou de l’adresse IP d’AEM Forms {#changing-the-aem-forms-hostname-or-ip-address}
 
-Dans une grappe, lorsque vous utilisez une mise en cache TCP plutôt qu’UDP, vous devez mettre à jour la configuration du localisateur de mise en cache. Voir Configuration des localisateurs de mise en cache (mise en cache via TCP uniquement), dans le guide de configuration correspondant au serveur d’applications.
+Dans une grappe, lorsque vous utilisez une mise en cache TCP plutôt qu’UDP, vous devez mettre à jour la configuration du localisateur de mise en cache. Voir &quot;Configuration des localisateurs de mise en cache (mise en cache via TCP uniquement)&quot; dans le guide de configuration correspondant à votre serveur d’applications.
 
 ### Modification des chemins d’accès au système de fichiers des nœuds AEM forms {#changing-the-aem-forms-node-file-system-paths}
 

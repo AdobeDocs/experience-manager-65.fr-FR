@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de la structure Adobe Analytics
-seo-title: Personnalisation de la structure Adobe Analytics
+seo-title: Customizing the Adobe Analytics Framework
 description: Personnalisation de la structure Adobe Analytics
-seo-description: 'null'
+seo-description: null
 uuid: 444a29c2-3b4e-4d21-adc0-5f317ece2b77
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '1624'
-ht-degree: 54%
+source-wordcount: '1618'
+ht-degree: 53%
 
 ---
 
@@ -23,9 +23,9 @@ La structure Adobe Analytics détermine les informations suivies avec Adobe Anal
 
 ## À propos du javascript généré pour des frameworks {#about-the-generated-javascript-for-frameworks}
 
-Lorsqu’une page est associée à une structure Adobe Analytics et qu’elle contient [des références au module Analytics](/help/sites-administering/adobeanalytics.md), un fichier analytics.sitecatalyst.js est automatiquement généré pour la page.
+Lorsqu’une page est associée à une structure Adobe Analytics et que la page inclut [références au module Analytics](/help/sites-administering/adobeanalytics.md), un fichier analytics.sitecatalyst.js est automatiquement généré pour la page.
 
-Le code JavaScript de la page crée un objet `s_gi`(que la bibliothèque Adobe Analytics s_code.js définit) et affecte des valeurs à ses propriétés. Le nom de l’instance d’objet est `s`. Les exemples de code présentés dans cette section font plusieurs références à cette variable `s`.
+Le code JavaScript de la page crée une `s_gi`(que la bibliothèque Adobe Analytics s_code.js définit) et attribue des valeurs à ses propriétés. Le nom de l’instance d’objet est `s`. Les exemples de code présentés dans cette section font plusieurs références à cette section `s` .
 
 L’exemple de code suivant est similaire au code d’un fichier analytics.sitecatalyst.js :
 
@@ -63,11 +63,11 @@ Lorsque vous utilisez un code javascript personnalisé pour personnaliser le fra
 
 ## Configuration des propriétés Adobe Analytics {#configuring-adobe-analytics-properties}
 
-Il existe un certain nombre de variables prédéfinies dans Adobe Analytics qui peuvent être configurées sur une structure. Les variables **charset**, **cookieLifetime**, **currencyCode** et **trackInlineStats** sont incluses par défaut dans la liste **Paramètres généraux d’Analytics**.
+Il existe un certain nombre de variables prédéfinies dans Adobe Analytics qui peuvent être configurées sur une structure. Le **charset**, **cookieLifetime**, **currencyCode** et **trackInlineStats** sont incluses dans la variable **Paramètres généraux d’Analytics** liste par défaut.
 
 ![aa-22](assets/aa-22.png)
 
-Vous pouvez ajouter des noms de variables et des valeurs à la liste. Ces variables prédéfinies et les variables que vous ajoutez servent à configurer les propriétés de l’objet `s` dans le fichier analytics.sitecatalyst.js . L’exemple suivant montre comment la propriété `prop10` ajoutée de la valeur `CONSTANT` est représentée dans le code javascript :
+Vous pouvez ajouter des noms de variables et des valeurs à la liste. Ces variables prédéfinies et les variables que vous ajoutez servent à configurer les propriétés de la variable `s` dans le fichier analytics.sitecatalyst.js. L’exemple suivant montre comment la propriété `prop10` ajoutée de la valeur `CONSTANT` est représentée dans le code javascript :
 
 ```
 var s_account = "my_sitecatalyst_account";
@@ -93,7 +93,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 Utilisez la procédure suivante pour ajouter des variables à la liste :
 
-1. Sur votre page de structure Adobe Analytics, développez la zone **Paramètres généraux d’Analytics**.
+1. Sur votre page de structure Adobe Analytics, développez la **Paramètres généraux d’Analytics** zone.
 1. Sous la liste des variables, cliquez sur Ajouter un élément pour ajouter une nouvelle variable à la liste.
 1. Dans la cellule de gauche, entrez le nom de la variable, par exemple `prop10`.
 
@@ -109,25 +109,25 @@ Utilisez la procédure suivante pour ajouter des variables à la liste :
 
 >[!CAUTION]
 >
->Certaines des variables de cette liste sont **mandatory** pour que les appels Adobe Analytics fonctionnent correctement (par ex. **currencyCode**, **charSet**)
+>Certaines des variables de cette liste sont **mandatory** pour que les appels Adobe Analytics fonctionnent correctement (par exemple, **currencyCode**, **charSet**)
 >
 >Ainsi, même s’ils sont supprimés de la structure elle-même, ils seront toujours associés à une valeur par défaut lorsque l’appel Adobe Analytics est effectué.
 
 ### Ajout de code JavaScript personnalisé à une structure Adobe Analytics {#adding-custom-javascript-to-an-adobe-analytics-framework}
 
-La zone JavaScript gratuite de la zone **Paramètres généraux d’Analytics** vous permet d’ajouter du code personnalisé à une structure Adobe Analytics.
+La zone JavaScript gratuite dans la variable **Paramètres généraux d’Analytics** vous permet d’ajouter du code personnalisé à une structure Adobe Analytics.
 
 ![aa-21](assets/aa-21.png)
 
-Le code que vous ajoutez est ajouté au fichier analytics.sitecatalyst.js. Par conséquent, vous pouvez accéder à la variable `s`, qui est une instance de l’objet JavaScript `s_gi` défini dans `s_code.js`. Par exemple, l’ajout du code suivant équivaut à ajouter une variable nommée `prop10` de valeur `CONSTANT` qui est l’exemple de la section précédente :
+Le code que vous ajoutez est ajouté au fichier analytics.sitecatalyst.js. Par conséquent, vous pouvez accéder au `s` qui est une instance de la variable `s_gi` objet JavaScript défini dans `s_code.js`. Par exemple, l’ajout du code suivant équivaut à ajouter une variable nommée `prop10` de valeur `CONSTANT` qui est l’exemple de la section précédente :
 
 `s.prop10= 'CONSTANT';`
 
-Le code du fichier [analytics.sitecatalyst.js](/help/sites-developing/extending-analytics-components.md) (qui contient le contenu du fichier `s-code.js` Adobe Analytics) contient le code suivant :
+Le code de la variable [analytics.sitecatalyst.js](/help/sites-developing/extending-analytics-components.md) (qui inclut le contenu d’Adobe Analytics) `s-code.js` ) contient le code suivant :
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-La procédure suivante explique comment utiliser la boîte JavaScript pour personnaliser le suivi Adobe Analytics. Si votre JavaScript doit utiliser des modules externes Adobe Analytics, [intégrez-les](/help/sites-administering/adobeanalytics.md) dans AEM.
+La procédure suivante explique comment utiliser la boîte JavaScript pour personnaliser le suivi Adobe Analytics. Si votre JavaScript doit utiliser des modules externes Adobe Analytics, [intégrer](/help/sites-administering/adobeanalytics.md) dans AEM.
 
 1. Ajoutez le code javascript suivant à la zone afin que `s.doPlugins` soit exécuté :
 
@@ -145,15 +145,15 @@ La procédure suivante explique comment utiliser la boîte JavaScript pour perso
    >
    >Si les variables personnalisées se trouvent en dehors de la fonction s_doPlugins, elles sont envoyées sous la forme *undefined* dans l’appel Adobe Analytics
 
-1. Ajoutez votre code JavaScript dans la fonction **s_doPlugins** .
+1. Ajoutez votre code JavaScript dans la section **s_doPlugins** fonction .
 
-L’exemple suivant concatène les données capturées sur une page dans l’ordre hiérarchique, en utilisant un séparateur commun de &quot;|&quot;.
+L’exemple suivant concatène les données capturées sur une page dans un ordre hiérarchique, à l’aide d’un séparateur commun de &quot;|&quot;.
 
 Une structure Adobe Analytics comporte les configurations suivantes :
 
-* La variable Adobe Analytics `prop2` est mappée à la propriété de site `pagedata.sitesection`.
+* Le `prop2` La variable Adobe Analytics est mappée à la variable `pagedata.sitesection` propriété du site.
 
-* La variable Adobe Analytics `prop3` est mappée à la propriété de site `pagedata.subsection`.
+* Le `prop3` La variable Adobe Analytics est mappée à la variable `pagedata.subsection` propriété du site.
 
 * Le code suivant est ajouté à la zone javascript au format libre :
 
@@ -173,7 +173,7 @@ Par exemple, les valeurs suivantes sont générées dans Adobe Analytics :
 
 ### Ajout de code personnalisé global pour tous les frameworks Adobe Analytics {#adding-global-custom-code-for-all-adobe-analytics-frameworks}
 
-Fournissez du code JavaScript personnalisé intégré à toutes les structures Adobe Analytics. Lorsque la structure Adobe Analytics d’une page ne contient pas de code JavaScript de forme libre [personnalisé, le code JavaScript généré par le script /libs/cq/analytics/components/sitecatalyst/config.js.jsp est ajouté au fichier [analytics.sitecatalyst.js](/help/sites-administering/adobeanalytics.md). ](/help/sites-administering/adobeanalytics.md) Par défaut, le script n’a aucun effet car il est commenté. Le code définit également `s.usePlugins` sur `false` :
+Fournissez du code JavaScript personnalisé intégré à toutes les structures Adobe Analytics. Lorsque la structure Adobe Analytics d’une page ne contient pas de structure personnalisée [javascript de forme libre](/help/sites-administering/adobeanalytics.md), le code JavaScript généré par le script /libs/cq/analytics/components/sitecatalyst/config.js.jsp est ajouté à la variable [analytics.sitecatalyst.js](/help/sites-administering/adobeanalytics.md) fichier . Par défaut, le script n’a aucun effet car il est commenté. Le code définit également `s.usePlugins` to `false`:
 
 ```
 /* Plugin Config */
@@ -190,7 +190,7 @@ Le code du fichier analytics.sitecatalyst.js (qui comprend le contenu du fichier
 
 if (s.usePlugins) s.doPlugins(s)
 
-Par conséquent, votre JavaScript doit définir `s.usePlugins` sur `true` afin que tout code de la fonction `s_doPlugins` soit exécuté. Pour personnaliser le code, superposez le fichier config.js.jsp avec celui qui utilise votre propre javascript. Si votre JavaScript doit utiliser des modules externes Adobe Analytics, [intégrez-les](/help/sites-administering/adobeanalytics.md) dans AEM.
+Par conséquent, votre JavaScript doit être défini sur `s.usePlugins` to `true` de sorte que tout code de la variable `s_doPlugins` est exécutée. Pour personnaliser le code, superposez le fichier config.js.jsp avec celui qui utilise votre propre javascript. Si votre JavaScript doit utiliser des modules externes Adobe Analytics, [intégrer](/help/sites-administering/adobeanalytics.md) dans AEM.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Par conséquent, votre JavaScript doit définir `s.usePlugins` sur `true` afin q
 
    1. Sélectionnez le dossier /apps et cliquez sur Créer > Créer un dossier.
    1. Indiquez `cq` comme nom de dossier, puis cliquez sur OK.
-   1. De même, créez les dossiers `analytics` et `components` .
+   1. De même, créez la variable `analytics` et `components` dossiers.
 
 1. Cliquez avec le bouton droit sur le dossier `components` que vous venez de créer et cliquez sur Créer > Créer un composant. Spécifiez les valeurs de propriété suivantes :
 
@@ -243,7 +243,7 @@ Par conséquent, votre JavaScript doit définir `s.usePlugins` sur `true` afin q
 
 Procurez-vous le code JavaScript des modules externes Adobe Analytics et intégrez-les à votre structure Adobe Analytics dans AEM. Ajoutez le code dans un dossier de bibliothèque cliente de la catégorie `sitecatalyst.plugins` afin qu’il soit disponible pour votre code javascript personnalisé.
 
-Par exemple, si vous intégrez le module externe `getQueryParams`, vous pouvez appeler le module externe depuis la fonction `s_doPlugins` de votre javascript personnalisé. L’exemple de code suivant envoie la chaîne de requête dans **&quot;pid&quot;** à partir de l’URL du référent sous la forme **eVar1**, lorsqu’un appel Adobe Analytics est déclenché.
+Par exemple, si vous intégrez le module externe `getQueryParams`, vous pouvez appeler le module externe depuis la fonction `s_doPlugins` de votre javascript personnalisé. L’exemple de code suivant envoie la chaîne de requête dans **&quot;pid&quot;** de l’URL du référent en tant que **eVar1**, lorsqu’un appel Adobe Analytics est déclenché.
 
 ```
 s.usePlugins=true;
@@ -264,7 +264,7 @@ Le dossier de bibliothèque cliente /libs/cq/analytics/clientlibs/sitecatalyst/p
 
 >[!NOTE]
 >
->Créez un dossier de bibliothèque cliente pour vos modules externes. N’ajoutez pas de modules externes au dossier `/libs/cq/analytics/clientlibs/sitecatalyst/plugins`. Cette pratique garantit que votre contribution à la catégorie `sitecatalyst.plugins` ne se retrouve pas remplacée lors de réinstallations d’AEM ou d’activités de mise à niveau.
+>Créez un dossier de bibliothèque cliente pour vos modules externes. N’ajoutez pas de modules externes à la variable `/libs/cq/analytics/clientlibs/sitecatalyst/plugins` dossier. Cette pratique garantit que votre contribution à la catégorie `sitecatalyst.plugins` ne se retrouve pas remplacée lors de réinstallations d’AEM ou d’activités de mise à niveau.
 
 Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente de vos modules externes. Vous n’avez à réaliser cette opération qu’une seule fois. Pour ajouter un module externe au dossier de bibliothèque cliente, procédez comme suit.
 
@@ -291,7 +291,7 @@ Suivez la procédure ci-après pour créer le dossier de bibliothèque cliente d
 
 Procédez comme suit pour obtenir le code du module externe, stocker le code dans le référentiel AEM et l’ajouter dans votre dossier de bibliothèque cliente.
 
-1. Connectez-vous à [sc.omniture.com](https://sc.omniture.com) à l’aide de votre compte Adobe Analytics.
+1. Connectez-vous à [sc.omniture.com](https://sc.omniture.com) en utilisant votre compte Adobe Analytics.
 1. Sur la page d’accueil, accédez à Help (Aide) > Help Home (Aide Accueil).
 1. Dans la table des matières sur le côté gauche, cliquez sur Implementation Plug-ins (Modules externes d’implémentation).
 1. Cliquez sur le lien vers le module externe que vous souhaitez ajouter. Quand la page s’ouvre, recherchez le code source javascript pour le module externe, puis sélectionnez-le et copiez-le. 

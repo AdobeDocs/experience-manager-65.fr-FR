@@ -3,7 +3,7 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: '"Trouvez les informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5."'
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 3c3efe108b020d9c64e456d409f114c8969f2723
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3652'
 ht-degree: 7%
@@ -260,7 +260,7 @@ For static PDF forms that are created with Forms 6.5 Designer, PDF accessibility
 <!-- version 2 of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
 * La liste déroulante Système de style a peut-être été positionnée en haut de la page au lieu de dans le contexte du composant, pour les composants qui utilisent `cq:editConfig` &quot;afteredit: REFRESH_PAGE&quot;. Ce problème est maintenant résolu. (NPR-38384)
 
-<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig “afteredit: REFRESH_PAGE”. (NPR-38384) -->
+<!-- version 2 of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
 * Le composant Texte n’est pas aligné lorsqu’il est ajouté aux conteneurs de mise en page imbriqués. (NPR-38193)
 * Un onglet de style vide s’affichait lorsqu’il n’y avait aucune configuration de système de style pour un composant ; l’onglet est maintenant masqué lorsqu’aucune configuration n’est présente. (NPR-38218)
 <!-- version 2 of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
@@ -453,7 +453,7 @@ Pour récupérer votre copie d’exécution, Adobe recommande de synchroniser la
 * Lorsqu’un utilisateur choisit de configurer un champ pour la première fois dans un formulaire adaptatif, l’option permettant d’enregistrer une configuration ne s’affiche pas dans l’explorateur de propriétés. Sélectionner pour configurer un autre champ du formulaire adaptatif dans le même éditeur résout le problème.
 
 * Les erreurs et messages d’avertissement suivants peuvent s’afficher lors de l’installation : [!DNL Experience Manager] 6.5.x.x :
-   * &quot;Lorsque l’intégration Adobe Target est configurée dans [!DNL Experience Manager] l’utilisation de l’API Target Standard (authentification IMS), puis l’exportation de fragments d’expérience vers Target entraîne la création de types d’offres incorrects. Au lieu du type « Fragment d’expérience » / source « Adobe Experience Manager », Target crée plusieurs offres avec le type « HTML » / source « Adobe Target Classic ».
+   * &quot;Lorsque l’intégration Adobe Target est configurée dans [!DNL Experience Manager] l’utilisation de l’API Target Standard (authentification IMS), puis l’exportation de fragments d’expérience vers Target entraîne la création de types d’offres incorrects. Au lieu de saisir &quot;Fragment d’expérience&quot;/source &quot;Adobe Experience Manager&quot;, Target crée plusieurs offres avec le type &quot;HTML&quot;/la source &quot;Adobe Target Classic&quot;.
    * `com.adobe.granite.maintenance.impl.TaskScheduler`: Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.
    * La validation côté serveur du formulaire adaptatif échoue lorsque des fonctions d’agrégat telles que SUM, MAX et MIN sont utilisées (CQ-4274424).
    * `com.adobe.granite.maintenance.impl.TaskScheduler` - Aucune fenêtre de maintenance n’a été trouvée sur granite/operations/maintenance.

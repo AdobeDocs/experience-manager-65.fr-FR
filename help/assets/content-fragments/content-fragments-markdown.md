@@ -3,10 +3,11 @@ title: Texte (Markdown)
 description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu découplé.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -98,7 +99,7 @@ Les images de style de référence présentent la syntaxe suivante :
 
     `![Alt text][id]`
 
-Où « id » est le nom d’une référence d’image définie. Les références d’image sont définies à l’aide d’une syntaxe identique à celle des références de lien :
+Où &quot;id&quot; est le nom d’une référence d’image définie. Les références d’image sont définies à l’aide d’une syntaxe identique à celle des références de lien :
 
     `[id]: url/to/image "Optional title attribute"`
 
@@ -164,7 +165,7 @@ Vous pouvez mettre du texte en gras comme suit :
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-Pour indiquer une plage de code, entourez-la de guillemets antiretour (&amp;grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
+Pour désigner une plage de code, entourez-la de guillemets obliques (&grave;). Contrairement à un bloc de code préformaté, une plage de code indique du code dans un paragraphe normal.
 
 Par exemple :
 

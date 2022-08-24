@@ -11,10 +11,10 @@ discoiquuid: 68e3071e-7ce6-4bdc-8561-14bcaeae2b6c
 docset: aem65
 feature: Correspondence Management
 exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -69,7 +69,7 @@ Vous trouverez plus d’informations dans [Spécification de l’EL JSP](https:/
 
 ### Fonction distante {#remote-function}
 
-Les fonctions distantes offrent la possibilité d’utiliser la logique personnalisée dans les expressions. Vous pouvez écrire une logique personnalisée à utiliser dans l’expression comme méthode dans Java et la même fonction peut être utilisée dans les expressions. Les fonctions distantes disponibles sont répertoriées sous l’onglet Fonctions distantes sur le côté gauche du gestionnaire d’expression.
+Les fonctions distantes offrent la possibilité d’utiliser la logique personnalisée dans les expressions. Vous pouvez écrire une logique personnalisée à utiliser dans l’expression comme méthode dans Java et la même fonction peut être utilisée dans les expressions. Les fonctions distantes disponibles sont répertoriées sous l’onglet &quot;Fonctions distantes&quot; sur le côté gauche de l’éditeur d’expression.
 
 ![remotefunction](assets/remotefunction.png)
 

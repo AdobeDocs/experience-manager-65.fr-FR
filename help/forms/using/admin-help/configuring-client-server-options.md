@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '10242'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -258,7 +258,7 @@ Si vous utilisez une application compatible Document Security qui gère le contr
 Vous pouvez exporter des événements de contrôle vers un fichier dans un but d’archivage.
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Gestion des événements.
-1. Modifiez les paramètres de la section Exporter les événements de contrôle selon les besoins. Vous pouvez préciser les points suivants :
+1. Modifiez les paramètres de la section Exporter les événements de contrôle selon les besoins. Vous pouvez préciser:
 
    * L’âge minimum des événements de contrôle à exporter.
    * Le nombre maximum d’événements de contrôle à inclure dans un seul fichier. Le serveur génère un ou plusieurs fichiers en fonction de cette valeur.
@@ -406,7 +406,7 @@ Pour afficher les événements suivis vous pouvez utiliser le filtre des événe
 
 Ces paramètres contrôlent le texte affiché dans l’invite d’ouverture de session qui apparaît lorsqu’un utilisateur se connecte à Document Security par le biais d’une application cliente.
 
-**Texte de bienvenue :** texte du message de bienvenue, par exemple « Veuillez vous connecter à l’aide de votre nom d’utilisateur et de votre mot de passe. » Le message de bienvenue doit contenir des informations sur la marche à suivre pour ouvrir une session Document Security et pour contacter un administrateur ou une autre personne chargée du support dans votre entreprise. Par exemple, des utilisateurs externes peuvent être amenés à contacter un administrateur s’ils ont oublié leur mot de passe ou qu’ils ont besoin d’aide pour ouvrir une session ou pour s’enregistrer. Le texte de bienvenue peut contenir un maximum de 512 caractères.
+**Texte de bienvenue :** texte du message de bienvenue, par exemple &quot;Veuillez vous connecter avec votre nom d’utilisateur et votre mot de passe&quot;. Le message de bienvenue doit contenir des informations sur la marche à suivre pour ouvrir une session Document Security et pour contacter un administrateur ou une autre personne chargée du support dans votre entreprise. Par exemple, des utilisateurs externes peuvent être amenés à contacter un administrateur s’ils ont oublié leur mot de passe ou qu’ils ont besoin d’aide pour ouvrir une session ou pour s’enregistrer. Le texte de bienvenue peut contenir un maximum de 512 caractères.
 
 **Texte du nom d’utilisateur :** libellé de texte de la zone de nom d’utilisateur.
 
@@ -445,7 +445,7 @@ Vous pouvez créer un filigrane dynamique avec plusieurs éléments de filigrane
 
 Si vous choisissez un filigrane au format texte, vous pouvez définir plusieurs éléments dans le filigrane, comportant plusieurs entrées de texte, et vous pouvez également définir l’emplacement de chaque élément. Donnez des noms significatifs à ces éléments, tels en-tête, pied de page, etc.
 
-Par exemple, si vous souhaitez définir un texte différent pour les en-têtes, les pieds de page et autres marges, dans l’ensemble du document en tant que filigrane, créez plusieurs éléments de filigrane et précisez leur emplacement. Si vous souhaitez que l’ID utilisateur et la date actuelle d’accès au document apparaissent dans l’en-tête, que le nom de la police soit indiqué dans la marge de droite et qu’un texte personnalisé indiquant « CONFIDENTIEL » apparaissent en diagonale sur le document, définissez des éléments de filigrane différents de type texte et précisez leur formatage et leur emplacement. Lorsque le filigrane est appliqué à un document, tous les éléments du filigrane sont appliqués en même temps à ce document, dans l’ordre dans lequel ils ont été ajoutés au filigrane.
+Par exemple, si vous souhaitez définir un texte différent pour les en-têtes, les pieds de page et autres marges, dans l’ensemble du document en tant que filigrane, créez plusieurs éléments de filigrane et précisez leur emplacement. Si vous souhaitez que l’ID utilisateur et la date actuelle d’accès au document apparaissent dans l’en-tête, que le nom de la stratégie dans la marge de droite et qu’un texte personnalisé &quot;CONFIDENTIEL&quot; s’affichent en diagonale sur le document, vous pouvez définir des éléments de filigrane distincts avec le texte comme type, et spécifier sa mise en forme et son positionnement. Lorsque le filigrane est appliqué à un document, tous les éléments du filigrane sont appliqués en même temps à ce document, dans l’ordre dans lequel ils ont été ajoutés au filigrane.
 
 En règle générale, les filigranes au format PDF sont utilisés pour ajouter du contenu graphique, tel que des logos, ou des symboles spéciaux, tels que le symbole de droits d’auteur ou celui de marque déposée.
 
@@ -548,7 +548,7 @@ Lorsqu’un utilisateur invité est activé, il devient un utilisateur local. La
 Selon les paramètres que vous activez pour les utilisateurs invités, ces derniers peuvent également utiliser les fonctionnalités Document Security suivantes :
 
 * application de stratégies à des documents ;
-* création de stratégies ;
+* Créer des stratégies
 * ajout d’utilisateurs invités à des stratégies.
 
 Document Security génère automatiquement un courrier électronique d’invitation à l’enregistrement lorsque les événements suivants ont lieu, excepté si l’utilisateur figure déjà dans l’annuaire LDAP source ou a déjà été invité à s’enregistrer :
@@ -558,7 +558,7 @@ Document Security génère automatiquement un courrier électronique d’invitat
 
 Le courrier électronique d’enregistrement contient un lien permettant d’accéder à une page d’enregistrement et décrit la marche à suivre pour s’enregistrer. Une fois l’utilisateur invité enregistré, Document Security envoie un courrier électronique contenant un lien vers une page d’activation. Un compte reste activé tant que vous ne le désactivez pas ou que vous ne le supprimez pas.
 
-L’activation de l’enregistrement intégré vous permet de ne spécifier votre serveur SMTP, les détails du courrier électronique d’enregistrement, les droits d’accès et le courrier électronique de réinitialisation du mot de passe qu’une seule et unique fois. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans Gestion des utilisateurs et que le rôle Invitation d’un utilisateur de Document Security a été affecté aux utilisateurs et groupes appropriés de votre entreprise (voir [Ajout d’un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement d’utilisateurs créé à l’aide du SDK d’AEM forms. Consultez l’aide de la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est conseillé de configurer un message dans le courrier électronique d’activation, ainsi que dans l’écran d’ouverture de session du client, pour expliquer aux utilisateurs comment contacter l’administrateur et lui demander un nouveau mot de passe ou d’autres informations.
+L’activation de l’enregistrement intégré vous permet de ne spécifier votre serveur SMTP, les détails du courrier électronique d’enregistrement, les droits d’accès et le courrier électronique de réinitialisation du mot de passe qu’une seule et unique fois. Avant d’activer l’enregistrement intégré, assurez-vous que vous avez créé un domaine local dans User Management et que le rôle &quot;Invitation d’un utilisateur de Document Security&quot; a été attribué aux utilisateurs et groupes appropriés de votre organisation. (voir [Ajout d’un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement d’utilisateurs créé à l’aide du SDK d’AEM forms. Consultez l’aide sur le &quot;développement d’interfaces SPI pour AEM forms&quot; dans [Programmation avec les AEM forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est conseillé de configurer un message dans le courrier électronique d’activation, ainsi que dans l’écran d’ouverture de session du client, pour expliquer aux utilisateurs comment contacter l’administrateur et lui demander un nouveau mot de passe ou d’autres informations.
 
 **Activation et configuration de l’enregistrement d’un utilisateur invité**
 
@@ -905,7 +905,7 @@ Dans cet exemple, l’accès est refusé pour My Application version 3.0 et My O
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>
@@ -930,7 +930,7 @@ Dans cet exemple, toutes les requêtes émanant d’une installation Microsoft P
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>

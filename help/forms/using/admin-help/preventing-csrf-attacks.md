@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a3cbffb7-c1d1-47c2-bcfd-70f1e2d81ac9
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '971'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -37,9 +37,9 @@ Imaginons, par exemple, un scénario où vous êtes connecté à Administration 
 * lorsqu’un utilisateur final effectue une requête HTTP sur un point de fin SOAP ou REST AEM Forms ;
 * lorsque vous ouvrez une nouvelle fenêtre de navigation et que l’URL de la page de connexion d’une application Web AEM forms est déjà saisie.
 
-Autorisez la valeur de référent NULL sur les points de fin SOAP et REST. Autorisez également la valeur de référent NULL sur toutes les pages de connexion URI telles que /adminui et /contentspace, ainsi que leurs ressources mappées correspondantes. Par exemple, la servlet mappée pour /contentspace est /contentspace/faces/jsp/login.jsp ; sa valeur de référent doit pouvoir être NULL. Cette exception est obligatoire uniquement si vous activez le filtrage GET pour votre application Web. Vos applications peuvent indiquer s’il convient d’autoriser des référents de valeur NULL Consultez la section « Se protéger des attaques Cross-Site Request Forgery » dans [Renforcement et sécurité dʼAEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/HardeningSecurity/index.html).
+Autorisez la valeur de référent NULL sur les points de fin SOAP et REST. Autorisez également la valeur de référent NULL sur toutes les pages de connexion URI telles que /adminui et /contentspace, ainsi que leurs ressources mappées correspondantes. Par exemple, la servlet mappée pour /contentspace est /contentspace/faces/jsp/login.jsp ; sa valeur de référent doit pouvoir être NULL. Cette exception est obligatoire uniquement si vous activez le filtrage GET pour votre application Web. Vos applications peuvent indiquer s’il convient d’autoriser des référents de valeur NULL Voir &quot;Protection contre les attaques multisites par usurpation de requête&quot; dans [Renforcement et sécurité des formulaires AEM](https://help.adobe.com/fr_FR/livecycle/11.0/HardeningSecurity/index.html).
 
-**Exceptions aux référents autorisés :** les exceptions aux référents autorisés constituent une sous-liste de la liste de référents autorisés, dont les requêtes sont bloquées. Les exceptions aux référents autorisés sont spécifiques à une application Web. Si vous souhaitez que certains référents de vos référents autorisés ne soient pas en mesure d’appeler une application web spécifique, vous pouvez les placer sur la liste bloquée à l’aide des exceptions aux référents autorisés. Les exceptions aux référents autorisés peuvent être spécifiées dans le fichier web.xml de votre application (consultez la section Protection contre les attaques multisite par usurpation de requête dans Renforcement et sécurité d’AEM Forms sur la page Aide et didacticiels).
+**Exceptions aux référents autorisés :** les exceptions aux référents autorisés constituent une sous-liste de la liste de référents autorisés, dont les requêtes sont bloquées. Les exceptions aux référents autorisés sont spécifiques à une application Web. Si vous souhaitez que certains référents de vos référents autorisés ne soient pas en mesure d’appeler une application web spécifique, vous pouvez les placer sur la liste bloquée à l’aide des exceptions aux référents autorisés. Les exceptions aux référents autorisés peuvent être spécifiées dans le fichier web.xml de votre application (Voir &quot;Protection contre les attaques multisites par usurpation de requête&quot; dans Renforcement et sécurité d’AEM forms sur la page Aide et Tutorials .)
 
 ## Fonctionnement des référents autorisés {#how-allowed-referers-work}
 
@@ -48,7 +48,7 @@ AEM forms offre une option de filtrage des référents aidant à prévenir les a
 1. Le serveur Forms vérifie la méthode HTTP utilisée pour l’appel :
 
    * S’il s’agit d’une méthode POST, le serveur Forms vérifie l’en-tête référent.
-   * S’il s’agit d’une méthode GET, le serveur Forms ignore la vérification du référent, à moins que la variable CSRF_CHECK_GETS ne soit définie sur true. Dans ce cas, il vérifie l’en-tête du référent. La variable CSRF_CHECK_GETS peut être spécifiée dans le fichier web.xml de votre application (voir Protection contre les attaques multisites par usurpation de requête dans le [Guide de renforcement et de sécurité](https://help.adobe.com/fr_FR/livecycle/11.0/HardeningSecurity/index.html)).
+   * S’il s’agit d’une méthode GET, le serveur Forms ignore la vérification du référent, à moins que la variable CSRF_CHECK_GETS ne soit définie sur true. Dans ce cas, il vérifie l’en-tête du référent. La variable CSRF_CHECK_GETS est spécifiée dans le fichier web.xml pour votre application. (Voir &quot;Protection contre les attaques multisites par usurpation de requête&quot; dans [Guide de renforcement et de sécurité](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
 1. Le serveur Forms vérifie si l’URI requis est placé sur la liste autorisée :
 

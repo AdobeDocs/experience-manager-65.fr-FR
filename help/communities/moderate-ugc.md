@@ -12,7 +12,7 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 812b9f3af3ad04343e648a8d07d53f8442978b82
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1516'
 ht-degree: 3%
@@ -211,7 +211,7 @@ La détection des messages indésirables est une fonctionnalité d’auto-modér
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Cependant, pour personnaliser ou étendre les mots indésirables par défaut, créez un ensemble de mots dans le répertoire /apps en suivant la structure des mots indésirables par défaut au moyen de la fonction [superposition](/help/communities/overlay-comments.md).
+Toutefois, pour personnaliser ou étendre les mots indésirables par défaut, créez un ensemble de mots dans le répertoire /apps en suivant la structure des mots indésirables par défaut au moyen de la fonction [superposition](/help/communities/overlay-comments.md).
 
 Une publication générée par l’utilisateur (dans tous les types de contenu, par exemple les blogs, les forums et les commentaires) contenant un ou plusieurs mots indésirables est marquée avec le texte &quot;Cette publication a été classée comme spam&quot; au-dessus de la publication.
 
@@ -267,7 +267,7 @@ Le **sentimentprocess.name** peut également être modifié pour référencer l�
 
 Pour configurer l’opinion et les mots-clés :
 
-* Connectez-vous à votre instance de création  en tant qu’administrateur.
+* Connectez-vous à votre instance d’auteur en tant qu’administrateur 
 * Ouvrir [Console web](https://localhost:4502/system/console/configMgr).
 * Localiser `sentimentprocess.name`.
 * Sélectionnez la configuration à ouvrir en mode d’édition.

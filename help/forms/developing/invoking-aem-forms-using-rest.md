@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '2506'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -30,7 +30,7 @@ Lorsque vous utilisez des requêtes REST, il est recommandé de ne pas appeler d
 
 Lorsque vous appelez un service à l’aide de REST, vous êtes invité à saisir un nom d’utilisateur et un mot de passe AEM Forms. Toutefois, si vous ne souhaitez pas spécifier un nom d’utilisateur et un mot de passe, vous pouvez désactiver la sécurité du service.
 
-Pour appeler un service Forms (un processus devient un service lorsque le processus est activé) à l’aide de REST, configurez un point de terminaison REST. (Consultez la section « Gérer les points de terminaison » dans lʼ[Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr)).
+Pour appeler un service Forms (un processus devient un service lorsque le processus est activé) à l’aide de REST, configurez un point de terminaison REST. (Voir &quot;Gestion des points de fin&quot; dans [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
 
 Une fois la configuration dʼun point de terminaison REST terminée, vous pouvez appeler un service Forms à l’aide d’une méthode HTTP GET ou POST.
 
@@ -99,7 +99,7 @@ Un service AEM Forms peut être appelé de manière asynchrone en remplaçant `
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
-Cette URL renvoie la valeur de l’identifiant (au format « text/plain ») de la tâche responsable de cet appel.
+Cette URL renvoie la valeur de l’identifiant (au format &quot;text/plain&quot;) de la tâche responsable de cet appel.
 
 Le statut de l’appel asynchrone peut être récupéré à lʼaide dʼune URL d’appel où `services` est remplacé par `async_status`. L’URL doit contenir un paramètre `job_id` spécifiant la valeur d’identifiant de la tâche associée à cet appel. Par exemple :
 
@@ -107,7 +107,7 @@ Le statut de l’appel asynchrone peut être récupéré à lʼaide dʼune URL d
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
-Cette URL renvoie une valeur sous forme dʼentier (au format « text/plain ») codant le statut de la tâche selon la spécification Job Manager (par exemple, 2 signifie en cours d’exécution, 3 signifie terminé, 4 signifie échoué, etc.).
+Cette URL renvoie une valeur entière (au format &quot;text/plain&quot;) encodant l’état de la tâche selon la spécification de Job Manager (par exemple, 2 signifie en cours d’exécution, 3 signifie terminé, 4 signifie en échec, etc.).
 
 Si la tâche est terminée, l’URL renvoie le même résultat que si le service avait été appelé de manière synchrone.
 
@@ -291,7 +291,7 @@ Vous pouvez appeler un processus de courte durée AEM Forms nommé *MyApplicatio
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus appelé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus appelé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 

@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
 source-wordcount: '2558'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -164,7 +164,7 @@ Pour assembler un document PDF contenant de nouveaux signets, utilisez l’opér
 
 **Enregistrer le document PDF contenant des signets**
 
-Vous devez extraire les résultats de l’objet map renvoyé et enregistrer le document PDF correspondant. (Consultez la rubrique « Extraire les résultats » dans la section [Assembler par programmation des documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md)).
+Vous devez extraire les résultats de l’objet map renvoyé et enregistrer le document PDF correspondant. (Voir &quot;Extraction des résultats&quot; dans [Assemblage par programmation de documents PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Voir également**
 

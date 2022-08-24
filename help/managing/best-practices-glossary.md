@@ -1,8 +1,8 @@
 ---
 title: Glossaire
-seo-title: Glossaire
+seo-title: Glossary
 description: Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables de la liste de contrôle de projet.
-seo-description: Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables de la liste de contrôle de projet.
+seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
 uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '7050'
+source-wordcount: '7036'
 ht-degree: 96%
 
 ---
 
 # Glossaire{#glossary}
 
-Ce glossaire répertorie (de manière alpaïque) les détails de tous les documents livrables de la [liste de contrôle de projet](/help/managing/best-practices-checklist.md).
+Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables figurant dans la section [Liste de contrôle du projet](/help/managing/best-practices-checklist.md).
 
 ## Acceptation des parties prenantes {#acceptance-from-business-stakeholders}
 
@@ -93,7 +93,7 @@ La feuille de route du client se compose de jalons de haut niveau et d’objecti
 
 ### Définition de l’architecture des applications {#application-architecture-definition}
 
-L’ [architecture de l’application](/help/managing/best-practices.md#development-preparation) doit définir clairement le comportement des applications proposées.
+Le [architecture de l’application](/help/managing/best-practices.md#development-preparation) doit définir clairement le comportement des applications proposées.
 
 Notamment :
 
@@ -207,8 +207,7 @@ Les indicateurs de performances clés métier définissent des valeurs mesurable
 
 Le document des exigences de l’entreprise décrit la solution d’entreprise pour un projet, en spécifiant clairement les besoins et attentes métier du client. Le document des exigences de l’entreprise distingue également la solution métier et la solution technique.
 
-Lors de l’examen de la solution commerciale, l’outil BRD doit répondre à la question suivante :
-&quot;Que veut faire l&#39;entreprise ?&quot;
+Lors de l’examen de la solution commerciale, l’outil BRD doit répondre à la question suivante : &quot;Que veut faire l&#39;entreprise ?&quot;
 
 ### Validation par l’entreprise de tous les réglages nécessaires de la solution ou de l’architecture identifiée et alignée par rapport aux attentes de retour sur investissement et d’IPC {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -463,7 +462,7 @@ Un schéma (ou un ensemble de schémas) des systèmes et des dépendances exista
 
 ### Définitions et critères de réussite attendus {#expected-success-definitions-and-criteria}
 
-Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de l’ensemble des attentes disponibles au début d’un projet, car elles devraient influencer toutes les décisions prises tout au long de la mise en oeuvre.
+Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de l’ensemble des attentes disponibles au début d’un projet, car celles-ci devraient influencer toutes les décisions prises tout au long de la mise en oeuvre.
 
 Les exceptions peuvent inclure :
 
@@ -968,7 +967,7 @@ Elles sont utilisées avec le runbook pour effectuer des étapes et des vérific
 
 >[!NOTE]
 >
->Pour obtenir un exemple, consultez les [Notes de mise à jour AEM](/help/release-notes/release-notes.md).
+>Pour consulter un exemple, reportez-vous à la section [Notes de mise à jour AEM](/help/release-notes/release-notes.md).
 
 ### Exécution de la version dans l’environnement de production {#release-running-on-production-environment}
 
@@ -1065,7 +1064,7 @@ Définissez et documentez les détails de la configuration de sécurité requis 
 Une description de haut niveau de la configuration de sécurité de :
 
 * l’application ;
-* Architecture d’
+* Architecture
 * l’infrastructure.
 
 ### Problèmes de sécurité répertoriés et évalués {#security-issues-listed-and-assessed}

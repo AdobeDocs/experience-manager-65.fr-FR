@@ -11,10 +11,10 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: a81367c2a07031d8c6cf549050a1445ff0c1a8dc
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '3483'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -394,7 +394,7 @@ Pour plus d’informations sur la manière d’appliquer des sauts de page et d�
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si des champs sont masqués au moment de l’envoi du formulaire, ils seront exclus du document d’enregistrement si la propriété est définie sur True, à condition que la propriété « Exclure du document d’enregistrement » ne soit pas définie.
+* **Exclure les champs du document d’enregistrement s’ils sont masqués :** La définition de la propriété remplace le comportement de la propriété de niveau champ &quot;Exclure du document d’enregistrement&quot; lorsqu’elle n’est pas vraie. Si les champs sont masqués au moment de l’envoi du formulaire, ils seront exclus du document d’enregistrement si la propriété est définie sur true, à condition que la propriété &quot;Exclure du document d’enregistrement&quot; ne soit pas définie.
 
 ## Appliquer un saut de page dans un document d’enregistrement {#apply-page-breaks-in-dor}
 

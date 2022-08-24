@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '1920'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser l’API du service Barcoded Forms pour décoder les donnée
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Barcoded Forms, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Barcoded Forms, consultez la section [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -179,7 +179,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Inclure les fichiers du projet
 
    * Créez un assemblage client Microsoft .NET qui utilise le WSDL du service Barcoded Forms. Pour plus d’informations, consultez la section [Appeler AEM Forms en utilisant le codage base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
-   * Référencez l’assemblage client Microsoft .NET. Pour plus d’informations, consultez la rubrique « Référencer l’assemblage client .NET » dans la section [Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Référencez l’assemblage client Microsoft .NET. Pour plus d’informations, voir &quot;Référence à l’assemblage client .NET&quot; dans [Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Créer un objet API client Barcoded Forms
 
@@ -198,7 +198,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
    Décodez les données du formulaire en appelant la méthode `decode` de l’objet `BarcodedFormsServiceService` et en transmettant les valeurs suivantes :
 
    * L’objet `BLOB` contenant le formulaire PDF.
-   * Objet `Boolean` spécifiant s’il faut décoder un code à barres PDF417.
+   * Un objet `Boolean` spécifiant s’il faut décoder un code à barres PDF417.
    * Un objet `Boolean` spécifiant s’il faut décoder un code à barres DataMatrix.
    * Un objet `Boolean` spécifiant s’il faut décoder un code à barres de type code QR.
    * Un objet `Boolean` spécifiant s’il faut décoder un code à barres Codabar.
@@ -217,7 +217,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
    * Une valeur de chaîne qui contient des données décodées (veillez à utiliser la valeur de retour de la méthode `decode`).
    * Une valeur d’énumération `Delimiter` spécifiant le délimiteur de ligne. Il est recommandé de spécifier `Delimiter.Carriage_Return`.
    * Une valeur d’énumération `Delimiter` spécifiant le délimiteur de champ. Par exemple, spécifiez `Delimiter.Tab`.
-   * Une valeur d’énumération `XMLFormat` spécifiant s’il faut convertir les données du code à barres en données XML, XDP ou XFDF. Par exemple, spécifiez `XMLFormat.XDP` pour convertir les données en données XDP.
+   * Une valeur d’énumération `XMLFormat` spécifiant s’il faut convertir les données du code à barres en données XML XDP ou XFDF. Par exemple, spécifiez `XMLFormat.XDP` pour convertir les données en données XDP.
 
    >[!NOTE]
    >
@@ -228,8 +228,8 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Traiter les données décodées
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF sécurisé.
-   * Créez un tableau d’octets stockant le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**

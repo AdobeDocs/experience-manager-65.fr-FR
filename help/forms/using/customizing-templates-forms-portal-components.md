@@ -10,13 +10,13 @@ topic-tags: customization
 discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
-workflow-type: ht
+exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '1225'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
-
 
 # Personnalisation de modèles pour les composants Forms Portal{#customizing-templates-for-forms-portal-components}
 
@@ -99,7 +99,7 @@ Chaque espace réservé possède un jeu de métadonnées prêtes à l’emploi e
 
 Les différents composants de Forms Portal fournissent des jeux exclusifs de métadonnées prêtes à l’emploi que vous pouvez utiliser pour les listes.
 
-### Composant Recherche et énumérateur {#search-amp-lister-component}
+### Composant Search &amp; Lister {#search-amp-lister-component}
 
 * **Title :** titre du formulaire
 * **name** : nom du formulaire (il s’agit généralement du titre)
@@ -108,7 +108,7 @@ Les différents composants de Forms Portal fournissent des jeux exclusifs de mé
 * **pdfUrl** : URL permettant d’effectuer le rendu du formulaire au format PDF.
 * **assetType** : type de la ressource. Les valeurs valides sont les suivantes : **Formulaire**,**Formulaire PDF**, **Imprimer le formulaire** et **Formulaire adaptatif**.
 
-* **htmlStyle** et **pdfStyle** : style d’affichage des icônes HTML et PDF utilisées pour le rendu. Les valeurs valides sont les suivantes : « **__FP_display_none** » ou vide.
+* **htmlStyle** et **pdfStyle** : style d’affichage des icônes HTML et PDF utilisées pour le rendu. Les valeurs valides sont &quot;**__FP_display_none**&quot; ou vide.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 * **Title :** titre du formulaire
 * **formUrl** : URL permettant d’effectuer le rendu du formulaire au format HTML.
-* **target** : attribut cible du lien. Les valeurs valides sont les suivantes : &quot;_blank&quot; et &quot;_self&quot;.
+* **target** : attribut cible du lien. Les valeurs valides sont &quot;_blank&quot; et &quot;_self&quot;.
 * **linkText** : légende du lien.
 
 ### Composant Brouillons et envois {#drafts-amp-submissions-component}

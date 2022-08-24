@@ -1,19 +1,19 @@
 ---
 title: Mettre à jour des certificats expirés du service Reader Extension
-description: 'Les documents étendus par Reader ne fonctionnent pas, mettre à jour les certificats '
-source-git-commit: a26e4fb53458beae9b259e5ee5dc74a95264f9e1
-workflow-type: ht
+description: Les documents étendus par Reader ne fonctionnent pas, mettre à jour les certificats
+exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '1581'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
-
 
 # Mettre à jour des certificats expirés du service Reader Extension {#Updating-expired-Reader-Extension-service-certificates}
 
 Les clients Adobe Experience Manager Forms (AEM Forms) disposant de licences Adobe Managed Services ou On-premise Enterprise Base ont le droit d’utiliser le service Reader Extension. Le service permet à une entreprise de partager facilement des documents PDF interactifs en étendant la fonctionnalité d’Adobe Reader avec des droits d’utilisation supplémentaires. Le service ajoute des droits d’utilisation à un document PDF et active des fonctionnalités qui ne sont généralement pas disponibles à l’ouverture d’un document PDF dans Adobe Acrobat Reader DC, comme l’ajout de commentaires dans un document, le remplissage de formulaires et l’enregistrement du document. Les utilisateurs tiers n’ont pas besoin de disposer d’un logiciel supplémentaire ni de modules externes pour utiliser les documents définis avec des droits d’utilisation. Les documents PDF dotés de droits d’utilisation sont appelés des documents dont les droits sont activés. Un utilisateur qui ouvre un document PDF dont les droits sont activés dans Adobe Reader peut effectuer les opérations qui sont autorisées pour ce document.
 
-Adobe exploite une infrastructure à clé publique (PKI) pour émettre les certificats numériques à utiliser dans le cadre de l’activation de licences et de fonctionnalités. Adobe a émis des certificats sous l’autorité de certification « Adobe Root CA », qui arrivera à expiration le 7 janvier 2023. Dès lors, tous les certificats émis sous cette autorité de certification arriveront également à expiration. Une fois le certificat expiré, toutes les fonctionnalités qui en dépendent ne fonctionneront plus. Par exemple, un document PDF étendu par Reader qui permet d’ajouter des commentaires à l’aide d’Adobe Acrobat Reader cessera de fonctionner pour les clients après le 7 janvier 2023. Pour résoudre ce problème, l’administrateur du service Reader Extension, à l’aide d’anciens certificats, doit obtenir et réappliquer de nouveaux certificats émis par la nouvelle autorité de certification racine G2 d’Adobe dans ses documents PDF (étend les documents PDF pour Reader avec de nouveaux certificats).
+Adobe exploite une infrastructure à clé publique (PKI) pour émettre les certificats numériques à utiliser dans le cadre de l’activation de licences et de fonctionnalités. Adobe a émis des certificats sous l’autorité de certification &quot;Adobe Root CA&quot;, qui expirera le 7 janvier 2023. Dès lors, tous les certificats émis sous cette autorité de certification arriveront également à expiration. Une fois le certificat expiré, toutes les fonctionnalités qui en dépendent ne fonctionneront plus. Par exemple, un document PDF étendu par Reader qui permet d’ajouter des commentaires à l’aide d’Adobe Acrobat Reader cessera de fonctionner pour les clients après le 7 janvier 2023. Pour résoudre ce problème, l’administrateur du service Reader Extension, à l’aide d’anciens certificats, doit obtenir et réappliquer de nouveaux certificats émis par la nouvelle autorité de certification racine G2 d’Adobe dans ses documents PDF (étend les documents PDF pour Reader avec de nouveaux certificats).
 
 L’expiration des certificats a un impact sur les piles AEM Forms sur JEE et AEM Forms sur OSGi. Ces deux piles comportent un ensemble d’instructions différent. Dès que vous respectez les [conditions préalables](#Pre-requisites) et que vous [disposez des nouveaux certificats](#obtain-the-certificates), en fonction de votre pile, sélectionnez l’un des chemins suivants :
 
@@ -73,7 +73,7 @@ Pour importer les informations d’identification :
 1. Dans la zone Alias, saisissez un identificateur pour les informations d’identification. Cet identifiant sert de nom d’affichage aux informations d’identification dans les extensions d’Acrobat Reader DC. Il permet également d’accéder automatiquement aux informations d’identification via le SDK d’AEM Forms.
 1. Cliquez sur Choisir un fichier pour accéder aux informations d’identification, saisissez le mot de passe correspondant, puis cliquez sur OK.
 
-Si le message d’erreur « Échec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
+Si le message d’erreur « Echec de l’importation des informations d’identification en raison d’un format de fichier incorrect ou d’un mot de passe incorrect » s’affiche, assurez-vous que le mot de passe est valide.
 
 vous pouvez également importer et supprimer des informations d’identification automatiquement (Voir [Programmation avec AEM Forms](../../developing/credentials.md)).
 

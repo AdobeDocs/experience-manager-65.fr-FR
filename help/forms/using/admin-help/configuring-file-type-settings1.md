@@ -9,10 +9,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
-workflow-type: ht
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: tm+mt
 source-wordcount: '6171'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -27,7 +27,7 @@ Dans la page Paramètres de type de fichier, vous pouvez effectuer les tâches s
 * Spécifiez les paramètres de type de fichier à utiliser par défaut (voir [Importation et exportation de fichiers de configuration PDF Generator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr))
 * [Modification des paramètres par défaut](/help/forms/using/admin-help/configuring-file-type-settings1.md#change-the-default-settings)
 * [Activation de la prise en charge de PDF/A](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
-* [Suppression d’un paramètre de type de fichier](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+* [Suppression d’un paramètre de type de fichier](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Vous créez ou modifiez un paramètre de type de fichier pour définir la maniè
 
 1. Fournissez les informations requises dans ces zones :
 
-   [Importation et exportation des fichiers de configuration de PDF Generator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+   [Importation et exportation des fichiers de configuration de PDF Generator](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
 
 [Paramètres d’exportation Adobe PDF (Windows uniquement)](#adobe-pdf-export-settings-windows-only)
 
@@ -106,7 +106,7 @@ Vous pouvez modifier la valeur par défaut des paramètres Adobe PDF, des param�
 
 Vous pouvez supprimer un paramètre de type de fichier qui n’est plus utilisé.
 
-1. Dans Administration Console, cliquez sur **[!UICONTROL Services > PDF Generator > Paramètres de type de fichier]**.
+1. Dans Administration Console, cliquez sur **[!UICONTROL Services > PDF Generator > Paramètres de type de fichier]**.
 1. Cochez la case en regard du paramètre à supprimer. Vous pouvez sélectionner plusieurs sources. Les paramètres en regard desquels ne figure aucune case à cocher sont toujours inclus dans PDF Generator et ne peuvent pas être supprimés.
 1. Cliquez sur **[!UICONTROL Supprimer]**, puis, dans la page Confirmation de suppression, cliquez à nouveau sur **[!UICONTROL Supprimer]**.
 
@@ -257,7 +257,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Création ou m
 
    >[!NOTE]
    >
-   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police (par exemple : +Helvetica).*
+   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police Par exemple, &quot;+Helvetica&quot;.*
 
 1. Pour incorporer uniquement les jeux partiels utilisés des polices incorporées, sélectionnez **Créer des jeux partiels de toutes les polices incorporées**.
 
@@ -450,7 +450,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 **[!UICONTROL Joindre le fichier source au fichier Adobe PDF]** : permet d’ajouter le fichier source au fichier PDF sous forme de pièce jointe. Cette option est désélectionnée par défaut.
 
-**[!UICONTROL Activer l’accessibilité et la redistribution avec un fichier Adobe PDF balisé]** : permet d’incorporer des balises dans le fichier PDF. Cette option est désélectionnée par défaut.
+**[!UICONTROL Activer l’accessibilité et la redistribution avec un fichier Adobe PDF balisé]** : permet d’incorporer les balises dans le fichier PDF. Cette option est désélectionnée par défaut.
 
 **[!UICONTROL Convertir le multimédia en multimédia PDF]** : permet de convertir le multimédia en multimédia PDF, lorsque cela est possible. Cette option est sélectionnée par défaut.
 
@@ -519,7 +519,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Word sont 
 
 styleName1=level1[,styleName2=level2...]
 
-Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (\). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
+Si un nom de style Mot Microsoft contient une virgule (,) ou un signe égal (=), précédez les caractères spéciaux du caractère d’échappement (&quot;\_). Par exemple, spécifiez un style nommé &quot;En-tête, 1&quot; comme En-tête\, 1.
 
 ## Paramètres de Microsoft Visio (Windows uniquement) {#visio}
 
@@ -623,6 +623,6 @@ Vous ne pouvez pas modifier les paramètres d’autres applications dans Adminis
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Il est possible de personnaliser la prise en charge de ces types de fichier. Pour plus d’informations, consultez la section « Ajout de formats de fichier natifs pris en charge » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_62).
+Il est possible de personnaliser la prise en charge de ces types de fichier. Pour plus d’informations, voir &quot;Ajout de formats de fichier natifs pris en charge&quot; dans [Programmation avec les AEM forms](https://www.adobe.com/go/learn_aemforms_programming_62).
 
 Pour obtenir de l’aide sur la configuration d’une imprimante réseau PDFG, voir [Configuration d’une imprimante réseau PDFG (Windows uniquement)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).

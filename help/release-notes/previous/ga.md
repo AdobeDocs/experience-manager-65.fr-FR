@@ -1,7 +1,8 @@
 ---
 title: Notes de mise à jour générales de [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4696'
 ht-degree: 57%
@@ -136,7 +137,7 @@ Concevez, diffusez et optimisez efficacement les expériences sur tous les écra
 * Effectuez des personnalisations par emplacement ou configuration du contenu déclenché par les données en utilisant des espaces réservés dynamiques.
 * Informations unifiées grâce à l’intégration d’Adobe Analytics dans le lecteur AEM Screens
 
-Pour plus d’informations sur les modifications apportées à AEM Screens, voir les Notes de mise à jour dans la section [Guide de l’utilisateur d’AEM Screens](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Pour plus d’informations sur les modifications apportées à AEM Screens, voir les Notes de mise à jour dans la section [Guide de l’utilisateur d’AEM Screens](https://docs.adobe.com/content/help/fr/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 #### Développement de composants et de modèles {#component-amp-template-development}
 
@@ -202,7 +203,7 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, voir
 * Le rapport sur le téléchargement des ressources affiche désormais des fragments de contenu en conséquence
 * Ajoutez [la prise en charge des fragments de contenu à l’API HTTP Assets](/help/assets/assets-api-content-fragments.md) par l’intermédiaire de /api.json. Il existe des API pour créer, mettre à jour, lire et supprimer des fragments de contenu.
 
-#### Fragments d’expérience {#experience-fragments}
+#### Présentation {#experience-fragments}
 
 * Amélioration de l’indexation des [fragments d’expérience](/help/sites-authoring/experience-fragments.md) afin que leur contenu soit trouvé dans la recherche des pages où ils sont utilisés.
 * L’option [Exporter vers la cible](/help/sites-administering/experience-fragments-target.md) permet désormais d’envoyer le fragment d’expérience sous forme de fichier JSON (HTML par défaut), ou les deux.
@@ -337,7 +338,7 @@ Lisez ce qui suit pour connaître les fonctionnalités spécifiques et les inté
 
 Votre entreprise peut utiliser les [!DNL Adobe Stock] formule d’entreprise dans [!DNL Experience Manager Assets] pour vous assurer que les ressources sous licence sont largement disponibles pour vos projets de création et marketing. Vous pouvez rapidement rechercher, prévisualiser et obtenir une licence [!DNL Adobe Stock] ressources enregistrées dans Experience Manager, à l’aide des puissantes fonctionnalités de gestion des ressources numériques de [!DNL Experience Manager].
 
-Le service [!DNL Adobe Stock] permet aux créateurs et aux entreprises d’accéder à des millions de photos, de vecteurs, d’illustrations, de vidéos, de modèles et de ressources 3D organisés, de haute qualité et libres de droits pour tous leurs projets de création. 
+Le service [!DNL Adobe Stock] permet aux concepteurs et aux entreprises d’accéder à des millions de photos, de vecteurs, d’illustrations, de vidéos, de modèles et de ressources 3D organisés, de grande qualité et libres de droits d’auteur pour tous leurs projets de création. 
 
 Pour plus d’informations, voir [Utilisation de ressources Adobe Stock dans Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
@@ -465,10 +466,10 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées su
 
 * Modèles linguistiques pour le contenu dynamique. La version anglaise est préinstallée ; d’autres langues peuvent être téléchargées :
 
-   * [Allemand](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-   * [Espagnol](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-   * [Italien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-   * [Français](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [Allemand](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+   * [Espagnol](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+   * [Italien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [Français](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM Modernize Tools Suite, par exemple. Outil de conversion de dialogue. ([Projet GitHub](https://github.com/adobe/aem-modernize-tools) )
 
@@ -477,9 +478,9 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées su
 * Package permettant d’ajouter un rasteriseur PDF amélioré ([en savoir plus](/help/assets/aem-pdf-rasterizer.md))
 * Module pour ajouter la prise en charge étendue des images RAW ([plus d’infos](/help/assets/camera-raw.md))
 
-**Formulaires**
+**Forms**
 
-* [Packages pour les fonctionnalités AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* [Packages pour les fonctionnalités AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr)
 * [SDK client AEM Forms OSGi](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Langues {#languages}
@@ -556,13 +557,13 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * **Utilisation des versions de page**: [Si une page a été déplacée, vous ne pouvez plus effectuer d’aperçu sur les versions antérieures au déplacement.](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
-### Ressources {#assets}
+### Assets {#assets}
 
 * **Rechercher :** La recherche ne renvoie aucun résultat si la chaîne de recherche contient des espaces au début ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Schéma de métadonnées des dossiers** : après l’ajout d’un bouton de choix, les champs ID et Valeur ne sont pas restitués comme prévu et la fonctionnalité de suppression ne fonctionne pas. (CQ-4261144)
 * Lors de l’attribution d’un nouveau nom à une ressource, il n’est pas possible d’utiliser un espace dans le nom. (CQ-4266403)
 
-### Formulaires {#forms}
+### Forms {#forms}
 
 * Lorsque AEM Forms est installé sur un système d’exploitation Linux, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721)
 * (AEM Forms sur WebSphere uniquement) L’option **Forms Workflow**> **Recherche de tâche** ne renvoie aucun résultat si vous recherchez un **Administrateur** avec un **Nom d’utilisateur** comme critère de recherche. (CQ-4266457)

@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ public Boolean assign(User user);
 
 ### Création d’un domaine d’approvisionnement juste à temps {#create-a-just-in-time-enabled-domain}
 
-1. Ecrivez un DSC de la section « API pour l’approvisionnement juste à temps », qui met les API en œuvre.
+1. Créez un DSC mettant en oeuvre les API dans la section &quot;API pour la mise en service juste à temps&quot;.
 1. Déployez le DSC sur le serveur Forms.
 1. Créez un domaine de provisionnement juste à temps :
 

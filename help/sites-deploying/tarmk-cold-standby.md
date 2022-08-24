@@ -12,16 +12,16 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 88e4d8b56aa844e9a264615250971d0afdb68137
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '2730'
-ht-degree: 78%
+ht-degree: 77%
 
 ---
 
 # Exécution d’AEM avec TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La fonction Cold Standby du micronoyau Tar permet à une ou plusieurs instances AEM de secours de se connecter à une instance principale. Le processus de synchronisation est à sens unique, c’est à dire qu’il s’exécute de l’instance principale aux instances de secours.
 
@@ -90,7 +90,6 @@ En outre, vous pouvez spécifier les instances de secours qui sont autorisées �
 >
 >* de org.apache.jackrabbit.oak.**plugins**.segment.Secondaire.store.StandbyStoreService à org.apache.jackrabbit.oak.segment.Secondaire.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >Assurez-vous d’effectuer les réglages de configuration nécessaires pour refléter ces modifications.
 
@@ -152,7 +151,7 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Créez un enregistreur de journalisation Apache Sling pour module **org.apache.jackrabbit.oak.segment.**. Définissez le niveau du journal sur « Déboguer », puis orientez la sortie du journal vers un fichier journal distinct, tel que */logs/tarmk-coldstandby.log*. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
+1. Créez un enregistreur de journalisation Apache Sling pour module **org.apache.jackrabbit.oak.segment.**. Définissez le niveau de journal sur &quot;Débogage&quot; et pointez sa sortie de journal vers un fichier journal distinct, comme */logs/tarmk-coldstandby.log*. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
 1. Accédez à l’emplacement de l’instance **de secours** et démarrez-la en exécutant le fichier jar.
 1. Créez la même configuration de journalisation que pour l’instance principale. Ensuite, arrêtez l’instance.
 1. Préparez l’instance de secours. Vous pouvez le faire en suivant le même processus que pour l’instance principale :

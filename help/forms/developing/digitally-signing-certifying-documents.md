@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: tm+mt
 source-wordcount: '17046'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -61,7 +61,7 @@ Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’AP
 
 >[!NOTE]
 >
->certains types de documents PDF ne vous permettent pas d’ajouter un champ de signature par programme. Pour plus d’informations sur le service Signature et l’ajout de champs de signature, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>certains types de documents PDF ne vous permettent pas d’ajouter un champ de signature par programme. Pour plus d’informations sur le service Signature et l’ajout de champs de signature, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -73,7 +73,7 @@ Pour ajouter un champ de signature à un document PDF, effectuez les tâches su
 1. Ajouter un champ de signature.
 1. Enregistrez le document PDF au format PDF.
 
-**Inclure les fichiers du projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -160,23 +160,23 @@ Pour ajouter un champ de signature à l’aide de l’API Signature (service web
 
 1. Inclure les fichiers du projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créer une Signature client
 
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne spécifiant le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur la valeur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenir un document PDF auquel un champ de signature est ajouté
@@ -184,7 +184,7 @@ Pour ajouter un champ de signature à l’aide de l’API Signature (service web
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF qui contiendra un champ de signature.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement de fichier du document PDF et le mode d’ouverture du fichier
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à ses propriétés `MTOM` le contenu du tableau d’octets.
 
 1. Ajouter un champ de signature
@@ -196,7 +196,7 @@ Pour ajouter un champ de signature à l’aide de l’API Signature (service web
    * Une valeur entière qui représente le numéro de page auquel un champ de signature est ajouté.
    * Objet `PositionRect` spécifiant l’emplacement du champ de signature.
    * Objet `FieldMDPOptions` spécifiant les champs du document PDF verrouillés après l’application d’une signature numérique au champ de signature. Cette valeur de paramètre est facultative et vous pouvez transmettre `null`.
-   * Objet `PDFSeedValueOptions` spécifiant différentes valeurs d’exécution. Cette valeur de paramètre est facultative et vous pouvez transmettre `null`.
+   * Objet `PDFSeedValueOptions` spécifiant différentes valeurs de temps d’exécution. Cette valeur de paramètre est facultative et vous pouvez transmettre `null`.
 
    La méthode `addSignatureField` renvoie un objet `BLOB` représentant un document PDF contenant un champ de signature.
 
@@ -219,7 +219,7 @@ Vous pouvez récupérer les noms de tous les champs de signature d’un document
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Signature, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -307,7 +307,7 @@ Récupérez les noms des champs de signature à l’aide de l’API de signature
 
 1. Inclure les fichiers du projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -316,14 +316,14 @@ Récupérez les noms des champs de signature à l’aide de l’API de signature
 1. Créer une Signature client
 
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur du mot de passe correspondant au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Accéder au document PDF contenant les champs de signature
@@ -359,7 +359,7 @@ Cette section explique comment modifier un champ de signature en modifiant les v
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la modification des champs de signature, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Signature et la modification des champs de signature, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -372,7 +372,7 @@ Pour modifier les champs de signature d’un document PDF, procédez comme suit�
 1. Modifiez le champ de signature.
 1. Enregistrez le document PDF au format PDF.
 
-**Inclure des fichiers de projet**
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -498,12 +498,12 @@ Modifiez un champ de signature à l’aide de l’API Signature (Web Service) :
 1. Créer une Signature client
 
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne spécifiant le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/SignatureService?WSDL`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
@@ -534,9 +534,9 @@ Modifiez un champ de signature à l’aide de l’API Signature (Web Service) :
 
    Modifiez le champ de signature en appelant la méthode `modifySignatureField` de l’objet `SignatureServiceClient` et en transmettant les valeurs suivantes :
 
-   * L’objet `BLOB` qui stocke le document PDF contenant le champ de signature à modifier.
+   * Objet `BLOB` stockant le document PDF contenant le champ de signature à modifier.
    * Valeur de chaîne spécifiant le nom du champ de signature.
-   * L’objet `PDFSignatureFieldProperties` qui stocke les informations du dictionnaire de verrouillage de champs de signature et du dictionnaire de valeurs de départ
+   * Objet `PDFSignatureFieldProperties` stockant les informations du dictionnaire de verrouillage de champs de signature et du dictionnaire de valeurs de départ.
 
    La méthode `modifySignatureField` renvoie un objet `BLOB` qui stocke un document PDF contenant le champ de signature modifié.
 
@@ -579,7 +579,7 @@ Pour plus d’informations sur la gestion des informations d’identification de
 
 >[!NOTE]
 >
->Tous les documents PDF ne prennent pas en charge la signature. Pour plus d’informations sur le service Signature et la signature numérique de documents, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Tous les documents PDF ne prennent pas en charge la signature. Pour plus d’informations sur le service Signature et la signature numérique de documents, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -618,7 +618,7 @@ Pour signer numériquement un document PDF, effectuez les tâches suivantes :
 1. Signez le document PDF.
 1. Enregistrez le document PDF signé en tant que fichier PDF.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -646,7 +646,7 @@ Lors de la signature d’un document PDF, vous pouvez définir les options d’
 * Vérification de la révocation
 * Valeurs d’horodatage
 
-Pour définir les options d’aspect, utilisez un objet `PDFSignatureAppearanceOptionSpec`. Par exemple, vous pouvez afficher la date dans une signature en appelant la méthode `setShowDate` de l’objet `PDFSignatureAppearanceOptionSpec` et en transmettant `true`.
+Pour définir les options d’apparence, utilisez un objet `PDFSignatureAppearanceOptionSpec`. Par exemple, vous pouvez afficher la date dans une signature en appelant la méthode `setShowDate` de l’objet `PDFSignatureAppearanceOptionSpec` et en transmettant `true`.
 
 Vous pouvez également indiquer s’il faut effectuer ou non une vérification de révocation qui détermine si le certificat utilisé pour signer numériquement un document PDF a été révoqué. Pour effectuer une vérification de révocation, vous pouvez spécifier l’une des valeurs suivantes :
 
@@ -657,9 +657,9 @@ Vous pouvez également indiquer s’il faut effectuer ou non une vérification d
 
 Pour effectuer une vérification de révocation sur un certificat, vous pouvez spécifier une URL vers un serveur de liste de révocation des certificats (CRL) à l’aide d’un objet `CRLOptionSpec`. Cependant, si vous souhaitez effectuer une vérification de révocation et que vous ne spécifiez pas d’URL vers un serveur CRL, le service Signature obtient l’URL à partir du certificat.
 
-Au lieu d’utiliser un serveur CRL, vous pouvez utiliser un serveur OCSP (Online Certificate Status Protocol) lors de la vérification de révocation. En règle générale, lorsque vous utilisez un serveur OCSP plutôt qu’un serveur CRL, la vérification de révocation est effectuée plus rapidement. (Voir « Online Certificate Status Protocol » à l’adresse [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
+Au lieu d’utiliser un serveur CRL, vous pouvez utiliser un serveur OCSP (Online Certificate Status Protocol) lors de la vérification de révocation. En règle générale, lorsque vous utilisez un serveur OCSP plutôt qu’un serveur CRL, la vérification de révocation est effectuée plus rapidement. (Voir &quot;Protocole d’état du certificat en ligne&quot; à l’adresse [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
-Vous pouvez définir l’ordre des serveurs CRL et OCSP que le service Signature utilise à l’aide d’Adobe Applications and Services. Par exemple, si le serveur OCSP est défini en premier lieu dans Adobe Applications and Services, le serveur OCSP est vérifié, suivi du serveur CRL. (Voir « Gérer les certificats et les informations d’identification à l’aide de TrustStore » dans l’aide d’AAC.)
+Vous pouvez définir l’ordre des serveurs CRL et OCSP que le service Signature utilise à l’aide d’Adobe Applications and Services. Par exemple, si le serveur OCSP est défini en premier lieu dans Adobe Applications and Services, le serveur OCSP est vérifié, suivi du serveur CRL. (Voir &quot;Gestion des certificats et des informations d’identification à l’aide de Trust Store&quot; dans l’aide d’AAC).
 
 Si vous indiquez de ne pas effectuer de vérification de révocation, le service Signature ne vérifie pas si le certificat utilisé pour signer ou certifier un document a été révoqué. En d’autres termes, les informations des serveurs CRL et OCSP sont ignorées.
 
@@ -667,7 +667,7 @@ Si vous indiquez de ne pas effectuer de vérification de révocation, le service
 >
 >bien qu’un serveur CRL ou OCSP puisse être spécifié dans le certificat, vous pouvez remplacer l’URL spécifiée dans le certificat à l’aide d’un élément `CRLOptionSpec` et d’un objet `OCSPOptionSpec`. Par exemple, pour remplacer le serveur CRL, vous pouvez appeler la méthode `setLocalURI` de l’objet `CRLOptionSpec`.
 
-L’horodatage désigne le processus de suivi de l’heure de modification d’un document signé ou certifié. Une fois signé, un document ne doit pas être modifié, même par son propriétaire. L’horodatage aide à assurer la validité d’un document signé ou certifié. Vous pouvez définir les options d’horodatage à l’aide d’un objet `TSPOptionSpec`. Par exemple, vous pouvez spécifier l’URL d’un serveur de fournisseur d’horodatage (TSP).
+L’horodatage désigne le processus de suivi de l’heure de modification d’un document signé ou certifié. Une fois signé, un document ne doit pas être modifié, même par son propriétaire. L’horodatage aide à assurer la validité d’un document signé ou certifié. Vous pouvez définir des options d’horodatage à l’aide d’un objet `TSPOptionSpec`. Par exemple, vous pouvez spécifier l’URL d’un serveur de fournisseur d’horodatage (TSP).
 
 >[!NOTE]
 >
@@ -723,10 +723,10 @@ Signez numériquement un document PDF à l’aide de l’API Signature (Java) 
    * Un objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour synthétiser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
    * Valeur string représentant les informations de contact du signataire.
-   * Objet `PDFSignatureAppearanceOptions` contrôlant l’apparence de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
-   * Objet `java.lang.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire.
-   * Un objet `OCSPOptionSpec` stockant des préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de la révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
-   * Objet `CRLPreferences` stockant les préférences de la liste de révocation des certificats (CRL). Si la vérification de la révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
+   * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
+   * Un objet `java.lang.Boolean` indiquant si la révocation doit être vérifiée sur le certificat du signataire.
+   * Un objet `OCSPOptionSpec` stockant les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
+   * Objet `CRLPreferences` stockant les préférences de la liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`. Pour plus d’informations, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
    La méthode `sign` renvoie un objet `com.adobe.idp.Document` représentant le document PDF signé.
@@ -752,7 +752,7 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
 
 1. Inclure les fichiers du projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -763,46 +763,46 @@ Pour signer numériquement un document PDF à l’aide de l’API Signature (ser
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `System.ServiceModel.BasicHttpBinding` de l’objet `MessageEncoding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenir le document PDF à signer
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF signé.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF à signer et le mode d’ouverture du fichier.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement de fichier du document PDF à signer et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Signer un document PDF
 
-   Signez le document PDF en appelant la méthode `sign` de l’objet `SignatureServiceClient` et en transmettant les valeurs suivantes :
+   Signez le document PDF en appelant la méthode `sign` de l’objet `SignatureServiceClient` et en transmettant les valeurs suivantes :
 
-   * Objet `BLOB` représentant le document PDF à signer.
-   * Valeur de chaîne représentant le nom du champ de signature qui contiendra la signature numérique.
-   * Objet `Credential` représentant les informations d’identification utilisées pour la signature numérique du document PDF. Créez un objet `Credential` en utilisant son constructeur et en spécifiant l’alias en affectant une valeur à la propriété `alias` de l’objet `Credential`.
-   * Objet `HashAlgorithm` spécifiant un membre de données statique représentant l’algorithme de hachage à utiliser pour condenser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
-   * Valeur booléenne spécifiant si l’algorithme de hachage est utilisé.
+   * Un objet `BLOB` représentant le document PDF à signer.
+   * Une valeur de chaîne qui représente le nom du champ de signature qui contiendra la signature numérique.
+   * Objet `Credential` représentant les informations d’identification utilisées pour la signature numérique du document PDF. Créez un objet `Credential` en utilisant son constructeur et en spécifiant l’alias en attribuant une valeur à la propriété `alias` de l’objet `Credential`.
+   * Objet `HashAlgorithm` spécifiant un membre de données statique qui représente l’algorithme de hachage à utiliser pour condenser le document PDF. Par exemple, vous pouvez spécifier `HashAlgorithm.SHA1` pour utiliser l’algorithme SHA1.
+   * Une valeur booléenne qui indique si l’algorithme de hachage est utilisé.
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
-   * Valeur string représentant l’emplacement du signataire.
-   * Valeur string représentant les informations de contact du signataire.
-   * Objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
-   * Objet `System.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
-   * Objet `OCSPOptionSpec` stockant des préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Objet `CRLPreferences` stockant les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
-   * Objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
+   * Une valeur de chaîne représentant l’emplacement du signataire.
+   * Une valeur de chaîne représentant les informations de contact du signataire.
+   * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
+   * Un objet `System.Boolean` qui spécifie s’il faut effectuer une vérification de la révocation sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
+   * Un objet `OCSPOptionSpec` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de la révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Un objet `CRLPreferences` qui stocke les préférences de la liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
+   * Un objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
 
-   La méthode `sign` renvoie un objet `BLOB` représentant le document PDF signé.
+   La méthode `sign` renvoie un objet `BLOB` représentant le document PDF signé.
 
 1. Enregistrer le document PDF signé
 
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` renvoyé par la méthode `sign`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `sign`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
@@ -947,7 +947,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
    * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
    * Un objet `java.lang.Boolean` indiquant si la révocation doit être vérifiée sur le certificat du signataire.
    * Un objet `OCSPPreferences` stockant les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
-   * Un objet `CRLPreferences` stockant les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
+   * Objet `CRLPreferences` stockant les préférences de la liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
    * Un objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
 
    La méthode `sign` renvoie un objet `com.adobe.idp.Document` représentant le document PDF signé.
@@ -986,12 +986,12 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 1. Créez un client Forms et Signatures
 
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le langage WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur la valeur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
@@ -1005,21 +1005,21 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF signé.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement de fichier du document PDF à signer et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Remplissez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Remplissez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker des données de formulaire.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier XML contenant les données de formulaire, ainsi que le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Remplissez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
    * Créez un objet `PDFFormRenderSpec` utilisé pour définir les options d’exécution. Attribuez la valeur `true` au champ `PDFFormRenderSpec` de l’objet `generateServerAppearance`.
    * Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * Objet `BLOB` contenant le formulaire PDF à renvoyer.
-      * Objet `BLOB` contenant les données à fusionner avec le formulaire.
-      * Objet `PDFFormRenderSpec` stockant les options d’exécution.
-      * Objet `URLSpec` contenant les valeurs URI requises par le service Forms. Vous pouvez spécifier `null` pour cette valeur de paramètre.
-      * Objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+      * Un objet `BLOB` contenant le formulaire PDF à afficher.
+      * Un objet `BLOB` contenant les données à fusionner avec le formulaire.
+      * Un objet `PDFFormRenderSpec` stockant les options d’exécution.
+      * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms. Vous pouvez indiquer la valeur `null` pour ce paramètre.
+      * Un objet `java.util.HashMap` stockant les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
       * Paramètre de sortie long utilisé pour stocker le nombre de pages dans le formulaire.
       * Paramètre de sortie de chaîne utilisé pour la valeur des paramètres régionaux.
       * Valeur `FormResult` étant un paramètre de sortie utilisé pour stocker le formulaire interactif.
@@ -1028,7 +1028,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 
 1. Signer le formulaire interactif
 
-   Signez le document PDF en appelant la méthode `sign` de l’objet `SignatureServiceClient` et en transmettant les valeurs suivantes :
+   Signez le document PDF en appelant la méthode `sign` de l’objet `SignatureServiceClient` et en transmettant les valeurs suivantes :
 
    * Objet `BLOB` représentant le document PDF à signer. Utilisez l’instance `BLOB` renvoyée par le service Forms.
    * Une valeur de chaîne représentant le nom du champ de signature signé.
@@ -1038,20 +1038,20 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
    * Une valeur de chaîne qui représente la raison pour laquelle le document PDF a été signé numériquement.
    * Une valeur de chaîne représentant l’emplacement du signataire.
    * Une valeur de chaîne représentant les informations de contact du signataire.
-   * Un objet `PDFSignatureAppearanceOptions` qui contrôle l’apparence de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
+   * Un objet `PDFSignatureAppearanceOptions` contrôlant l’aspect de la signature numérique. Vous pouvez, par exemple, utiliser cet objet pour ajouter un logo personnalisé à une signature numérique.
    * Un objet `System.Boolean` qui spécifie s’il faut effectuer une vérification de la révocation sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
    * Un objet `OCSPPreferences` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de la révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * Un objet `CRLPreferences` qui stocke les préférences de la liste de révocation des certificats (CRL). Si la vérification de la révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez indiquer `null`.
-   * Un objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
+   * Un objet `CRLPreferences` qui stocke les préférences de la liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
+   * Un objet `TSPPreferences` stockant les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Ce paramètre est facultatif et peut être `null`.
 
-   La méthode de `sign` renvoie un objet `BLOB` qui représente le document PDF signé.
+   La méthode `sign` renvoie un objet `BLOB` représentant le document PDF signé.
 
 1. Enregistrer le document PDF signé
 
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `sign`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -1064,7 +1064,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 Vous pouvez définir un document PDF en le certifiant avec un type de signature particulier appelé signature certifiée. Une signature certifiée se différencie d’une signature numérique de plusieurs manières :
 
 * Elle doit être la première signature appliquée au document PDF ; cela veut dire que lorsque la signature certifiée est appliquée, tous les autres champs de signature du document doivent être non signés. Une seule signature certifiée est autorisée dans un document PDF. Si vous souhaitez signer ou certifier un document PDF, vous devez le certifier avant de le signer. Après avoir certifié un document PDF, vous pouvez signer numériquement les champs de signature supplémentaires.
-* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique est autorisée, Acrobat limite ainsi les utilisateurs dans la modification du document. Si ces modifications sont effectuées, à l’aide d’une autre application par exemple, la signature certifiée est alors non valide et Acrobat affiche un avertissement à l’ouverture du document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
+* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, à l’aide d’une autre application par exemple, la signature certifiée est alors non valide et Acrobat affiche un avertissement à l’ouverture du document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
 * Au moment de la signature, les différents types de contenus du document susceptibles de rendre le document ambigu ou trompeur sont analysés. Par exemple, une annotation peut assombrir du texte sur une page qui est essentiel pour comprendre ce qui est certifié. Une explication (attestation légale) peut être fournie pour un type de contenu.
 
 Vous pouvez certifier des documents PDF par programmation en utilisant l’API Java du service Signature ou l’API du service web de Signature. Lorsque vous certifiez un document PDF, vous devez faire référence à des informations d’identification de sécurité qui existent dans le service d’informations d’identification. Pour plus d’informations sur les informations d’identification de sécurité, consultez le guide *Installation et déploiement d’AEM Forms* pour votre serveur d’applications.
@@ -1087,7 +1087,7 @@ Après avoir ajouté cette valeur de configuration au fichier cknfastrc, les nou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la certification d’un document, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Signature et la certification d’un document, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -1111,7 +1111,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux classe
 * adobe-utility.jar (obligatoire si AEM Forms est déployé sur JBoss)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure les fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers JAR, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un client Signature**
 
@@ -1188,10 +1188,10 @@ Certifiez un document PDF à l’aide de l’API Signature (Java) :
    * Un objet `PDFSignatureAppearanceOptions` qui contrôle l’aspect de la signature certifiée. Si vous le souhaitez, modifiez l’aspect de la signature en appelant une méthode, telle que `setShowDate`.
    * Une valeur de chaîne qui fournit une explication des actions qui invalident la signature.
    * Un objet `java.lang.Boolean` spécifiant si la révocation doit être vérifiée sur le certificat du signataire. Si cette vérification de la révocation est effectuée, elle est intégrée à la signature. La valeur par défaut est de `false`.
-   * Un objet `java.lang.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé. Si le champ est verrouillé, le champ de signature est marqué comme étant en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par un utilisateur ne disposant pas d’autorisations requises. La valeur par défaut est de `false`.
-   * Un objet `OCSPPreferences` qui stocke des préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Objet `java.lang.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé. Si le champ est verrouillé, le champ de signature est marqué comme étant en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par un utilisateur ne disposant pas d’autorisations requises. La valeur par défaut est de `false`.
+   * Un objet `OCSPPreferences` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Un objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
-   * Un objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Par exemple, après avoir créé un objet `TSPPreferences`, vous pouvez définir l’URL du serveur TSP en appelant la méthode `setTspServerURL` de l’objet `TSPPreferences`. Ce paramètre est facultatif et peut être `null`. Pour plus d’informations, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+   * Un objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Par exemple, après avoir créé un objet `TSPPreferences`, vous pouvez définir l’URL du serveur TSP en appelant la méthode `setTspServerURL` de l’objet `TSPPreferences`. Ce paramètre est facultatif et peut être `null`. Pour plus d’informations, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
    La méthode `certify` renvoie un objet `com.adobe.idp.Document` représentant le document PDF certifié.
 
@@ -1216,7 +1216,7 @@ Certifiez un document PDF à l’aide de l’API Signature (service web) :
 
 1. Inclure les fichiers du projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -1272,7 +1272,7 @@ Certifiez un document PDF à l’aide de l’API Signature (service web) :
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF qui contiendra le document PDF certifié et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `certify`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
@@ -1295,7 +1295,7 @@ De même, lorsque vous vérifiez par programmation une signature numérique, vou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1453,7 +1453,7 @@ Vérifiez une signature numérique en utilisant l’API du service Signature (We
 
 1. Inclure les fichiers du projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -1462,14 +1462,14 @@ Vérifiez une signature numérique en utilisant l’API du service Signature (We
 1. Créer une Signature client
 
    * Créez un objet `SignatureServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL du service AEM Forms (par exemple `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `SignatureServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/SignatureService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `SignatureServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur du mot de passe correspondant au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenir le document PDF qui contient la signature à vérifier
@@ -1477,7 +1477,7 @@ Vérifiez une signature numérique en utilisant l’API du service Signature (We
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF qui contient une signature numérique ou certifiée à vérifier.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne représentant l’emplacement du fichier du document PDF signé et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Définir les options d’exécution PKI
@@ -1492,10 +1492,10 @@ Vérifiez une signature numérique en utilisant l’API du service Signature (We
 
    * Objet `BLOB` contenant un document PDF signé numériquement ou certifié.
    * Valeur de chaîne représentant le nom du champ de signature qui contient la signature à vérifier.
-   * Objet `PKIOptions` contenant les options d’exécution PKI.
-   * Instance `VerifySPIOptions` contenant des informations SPI. Vous pouvez indiquer `null` pour ce paramètre.
+   * Un objet `PKIOptions` qui contient des options d’exécution PKI.
+   * Une instance `VerifySPIOptions` qui contient des informations SPI. Vous pouvez spécifier `null` pour ce paramètre.
 
-   La méthode `verify2` renvoie un objet `PDFSignatureVerificationInfo` contenant des informations qui peuvent être utilisées pour vérifier la signature numérique.
+   La méthode `verify2` renvoie un objet `PDFSignatureVerificationInfo` qui contient des informations pouvant être utilisées pour vérifier la signature numérique.
 
 1. Déterminer le statut de la signature
 
@@ -1520,7 +1520,7 @@ AEM Forms permet de vérifier toutes les signatures numériques qui se trouvent 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1563,9 +1563,9 @@ Définissez les options d’exécution PKI que le service Signature utilise lors
 * Vérification de la révocation
 * Valeurs d’horodatage
 
-Dans le cadre de la définition de ces options, vous pouvez indiquer l’heure de vérification. Par exemple, vous pouvez sélectionner l’heure actuelle (l’heure sur l’ordinateur du programme de validation), qui indique d’utiliser l’heure actuelle. Pour plus d’informations sur les différentes valeurs temporelles, voir la valeur d’énumération `VerificationTime` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Dans le cadre de la définition de ces options, vous pouvez indiquer l’heure de vérification. Par exemple, vous pouvez sélectionner l’heure actuelle (l’heure sur l’ordinateur du programme de validation), qui indique d’utiliser l’heure actuelle. Pour plus d’informations sur les différentes valeurs temporelles, reportez-vous à la valeur d’énumération `VerificationTime` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-Vous pouvez également indiquer si la vérification de révocation doit être effectuée dans le cadre du processus de vérification. Par exemple, vous pouvez effectuer une vérification de révocation pour déterminer si le certificat est révoqué. Pour plus d’informations sur les options de vérification de révocation, voir la valeur d’énumération `RevocationCheckStyle` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Vous pouvez également indiquer si la vérification de révocation doit être effectuée dans le cadre du processus de vérification. Par exemple, vous pouvez effectuer une vérification de révocation pour déterminer si le certificat est révoqué. Pour plus d’informations sur les options de vérification de révocation, reportez-vous à la valeur d’énumération `RevocationCheckStyle` dans [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 Pour effectuer une vérification de révocation sur un certificat, spécifiez une URL à un serveur de liste de révocation des certificats (CRL) à l’aide d’un objet `CRLOptionSpec`. Cependant, si vous ne spécifiez pas d’URL à un serveur CRL, le service Signature obtient l’URL à partir du certificat.
 
@@ -1583,7 +1583,7 @@ L’horodatage est le processus de suivi de l’heure de modification d’un doc
 
 >[!NOTE]
 >
->Dans les démarrages rapides de Java et Web Service, l’heure de vérification est définie sur `VerificationTime.CURRENT_TIME` et la vérification de révocation est définie sur `RevocationCheckStyle.BestEffort`. Étant donné qu’aucune information du serveur CRL ou OCSP n’est spécifiée, les informations du serveur sont obtenues à partir du certificat.
+>Dans les démarrages rapides Java et de service web, l’heure de vérification est définie sur `VerificationTime.CURRENT_TIME` et la vérification de révocation est définie sur `RevocationCheckStyle.BestEffort`. Étant donné qu’aucune information du serveur CRL ou OCSP n’est spécifiée, les informations du serveur sont obtenues à partir du certificat.
 
 **Récupérer toutes les signatures numériques**
 
@@ -1641,7 +1641,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service Sig
 
    * Objet `com.adobe.idp.Document` contenant un document PDF contenant plusieurs signatures numériques.
    * Objet `PKIOptions` contenant des options d’exécution PKI.
-   * Instance `VerifySPIOptions` contenant des informations SPI. Vous pouvez indiquer `null` pour ce paramètre.
+   * Une instance `VerifySPIOptions` qui contient des informations SPI. Vous pouvez indiquer `null` pour ce paramètre.
 
    La méthode `verifyPDFDocument` renvoie un objet `PDFDocumentVerificationInfo` qui contient des informations sur toutes les signatures numériques figurant dans le document PDF.
 
@@ -1668,7 +1668,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
 
 1. Inclure les fichiers du projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -1682,9 +1682,9 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur du mot de passe correspondant au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Accéder au document PDF contenant les signatures à vérifier
@@ -1692,7 +1692,7 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` stocke un document PDF qui contient plusieurs signatures numériques à vérifier.
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document PDF et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Définir des options d’exécution PKI
@@ -1703,10 +1703,10 @@ Vérifiez plusieurs signatures numériques à l’aide de l’API du service de 
 
 1. Récupérer toutes les signatures numériques
 
-   Appeler la méthode `verifyPDFDocument` de l’objet `SignatureServiceClient` et transmettez les valeurs suivantes :
+   Appelez la méthode `verifyPDFDocument` de l’objet `SignatureServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `BLOB` contenant un document PDF contenant plusieurs signatures numériques.
-   * Un objet `PKIOptions` contenant des options d’exécution PKI.
+   * Objet `BLOB` contenant un document PDF contenant plusieurs signatures numériques.
+   * Objet `PKIOptions` contenant des options d’exécution PKI.
    * Un objet `VerifySPIOptions` contenant des informations SPI. Vous pouvez spécifier la valeur null pour ce paramètre.
 
    La méthode `verifyPDFDocument` renvoie un objet `PDFDocumentVerificationInfo` contenant des informations sur toutes les signatures numériques figurant dans le document PDF.
@@ -1730,7 +1730,7 @@ Les signatures numériques doivent être supprimées d’un champ de signature p
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Signature, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-8}
 
@@ -1832,7 +1832,7 @@ Supprimez une signature numérique en utilisant l’API de signature (service We
 
 1. Inclure les fichiers du projet
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/SignatureService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -1847,8 +1847,8 @@ Supprimez une signature numérique en utilisant l’API de signature (service We
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `SignatureServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur du mot de passe correspondant au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur de mot de passe correspondante au champ `SignatureServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Accéder au document PDF contenant une signature à supprimer

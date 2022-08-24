@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 role: Developer
 exl-id: 4677b9e5-3811-4de3-b4f4-9574b5898486
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
 workflow-type: tm+mt
 source-wordcount: '1775'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -154,9 +154,9 @@ Assemblez un document PDF non interactif à l’aide de l’API du service Assem
 1. Enregistrez le document PDF non interactif.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du nom du fichier est .pdf.
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier. Assurez-vous d’utiliser l’objet `Document` que la méthode `invokeOneDocument` a renvoyé.
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier. Veillez à utiliser l’objet `Document` renvoyé par la méthode `invokeOneDocument`.
 
-* « Démarrage rapide (mode SOAP) : assembler un document PDF non interactif à l’aide de l’API Java. »
+* &quot;Démarrage rapide (mode SOAP) : Assemblage d’un document de PDF non interactif à l’aide de l’API Java&quot;
 
 ## Assembler un document PDF non interactif à l’aide de l’API Web Service {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
@@ -221,7 +221,7 @@ Assemblez un document PDF non interactif en utilisant l’API du Service Assembl
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
-* « Démarrage rapide (MTOM) : assembler un document PDF non interactif à l’aide de l’API de service web ».
+* &quot;Démarrage rapide (MTOM) : Assemblage d’un document de PDF non interactif à l’aide de l’API de service Web&quot;.
 
 **Voir également**
 

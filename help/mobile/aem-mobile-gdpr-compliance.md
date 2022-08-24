@@ -1,15 +1,15 @@
 ---
 title: AEM Mobile – Préparation pour le RGPD
-seo-title: AEM Mobile – Préparation pour le RGPD
+seo-title: AEM Mobile - GDPR Readiness
 description: '"AEM Mobile – Préparation pour le RGPD"'
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '692'
 ht-degree: 85%
 
 ---
@@ -50,9 +50,9 @@ Fournissez au moins l’une des informations suivantes :
 * Pour les utilisateurs d’applications Windows, l’ID de la boutique d’applications de l’utilisateur final : *dpsc-windowsAppStoreId*
 * L’adresse électronique de utilisateur final utilisée pour interagir avec l’application DPS : *email*
 
-### Questions fréquentes  {#frequently-asked-questions-faq}
+### Questions fréquentes {#frequently-asked-questions-faq}
 
-**L’Adobe supprimera-t-il mes achats de la boutique d’applications lors du lancement d’une demande de DELETE ?**
+**Adobe supprimera-t-il mes achats App Store lors du lancement d’une demande de DELETE ?**
 
 Adobe supprime les informations qu’il contient au sujet des achats dans les boutiques d’applications (abonnements, etc.), mais les achats resteront enregistrés dans les boutiques d’applications. Si l’application (pour l’utilisateur final) est consignée dans la boutique d’applications, ces reçus seront à nouveau détectés et envoyés à Adobe ; ils seront considérés comme de nouveaux achats et restaurés par l’application afin d’en rétablir l’accès.
 
@@ -85,10 +85,10 @@ Voici un exemple des entrées et des sorties résultantes d’une demande en ver
 #### Entrées : {#inputs}
 
 ```
-dpsc-contractId = “12345-1234-12416234” 
-directEntitlementId = “1234-1234-1234” 
-windowsAppStoreId = “testWinAppStoreId” 
-email = “test@what.com”
+dpsc-contractId = "12345-1234-12416234" 
+directEntitlementId = "1234-1234-1234" 
+windowsAppStoreId = "testWinAppStoreId" 
+email = "test@what.com"
 ```
 
 #### Sorties {#outputs}

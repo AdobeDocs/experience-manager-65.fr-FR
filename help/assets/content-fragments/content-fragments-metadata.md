@@ -3,10 +3,11 @@ title: Métadonnées – propriétés des fragments
 description: Découvrez comment afficher et modifier les propriétés de métadonnées des fragments de contenu dans AEM pour ajuster votre contenu découplé.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 67%
+ht-degree: 84%
 
 ---
 
@@ -33,7 +34,7 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * **Titre**
    * **Description**
    * **Balises**
-      * [](/help/sites-authoring/tags.md) Les balises sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
-Par exemple, vous pouvez baliser les fragments pertinents en tant que &quot;lancement de Noël&quot; pour ne les parcourir que sous forme de sous-ensemble ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
+      * Les [balises](/help/sites-authoring/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
+Par exemple, vous pouvez baliser les fragments pertinents en tant que &quot;lancement de Noël&quot; afin de ne les parcourir que sous forme de sous-ensemble ou de les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
    * Créé (affichage uniquement)
    ![métadonnées](assets/cfm-metadata-02.png)
