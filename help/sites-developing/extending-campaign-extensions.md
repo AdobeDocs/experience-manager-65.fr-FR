@@ -1,8 +1,8 @@
 ---
 title: Création d’extensions personnalisées
-seo-title: Création d’extensions personnalisées
+seo-title: Creating Custom Extensions
 description: Vous pouvez appeler du code personnalisé dans Adobe Campaign à partir d’AEM ou depuis AEM vers Adobe Campaign
-seo-description: Vous pouvez appeler du code personnalisé dans Adobe Campaign à partir d’AEM ou depuis AEM vers Adobe Campaign
+seo-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
 uuid: 8392aa0d-06cd-4b37-bb20-f67e6a0550b1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '518'
 ht-degree: 81%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Généralement, lorsque vous implémentez un projet, vous disposez d’un code personnalisé dans AEM et Adobe Campaign. Grâce à l’API existante, vous pouvez appeler le code personnalisé dans Adobe Campaign à partir d’AEM ou depuis AEM vers Adobe Campaign. Ce document explique comment procéder.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Les éléments suivants doivent être installés :
 
@@ -38,15 +38,15 @@ L’intégration standard entre AEM et Campaign est basée sur JSON et JSSP (Jav
 
 >[!NOTE]
 >
->[Pour cet exemple, reportez-vous à la section ](/help/sites-developing/we-retail.md), disponible à partir du partage de modules.
+>[Pour consulter cet exemple, reportez-vous à la section Geometrixx](/help/sites-developing/we-retail.md), disponible à partir de Package Share.
 
 Dans cet exemple, nous créons un fichier JSSP personnalisé et l’appelons du côté AEM pour récupérer le résultat. Il peut être utilisé, par exemple, pour extraire des données d’Adobe Campaign ou pour enregistrer des données dans Adobe Campaign.
 
-1. Dans Adobe Campaign, pour créer un fichier JSSP, cliquez sur l’icône **New** .
+1. Dans Adobe Campaign, pour créer un fichier JSSP, cliquez sur le bouton **Nouveau** icône .
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Entrez le nom de ce fichier JSSP. Dans cet exemple, nous utilisons **cus:custom.jssp** (ce qui signifie qu’il se trouve dans l’espace de noms **cus**).
+1. Entrez le nom de ce fichier JSSP. Dans cet exemple, nous utilisons **cus:custom.jssp** (c’est-à-dire qu’il sera dans la variable **cus** ).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -65,7 +65,7 @@ Dans cet exemple, nous créons un fichier JSSP personnalisé et l’appelons du 
    * Vous avez établi une connexion entre AEM et Campaign
    * Le service cloud de Campaign est configuré sur **/content/geometrixx-outdoors**
 
-   L’objet le plus important de cet exemple est **GenericCampaignConnector**, qui vous permet d’appeler (get et post) des fichiers jssp du côté Adobe Campaign.
+   L’objet le plus important de cet exemple est le suivant : **GenericCampaignConnector**, qui vous permet d’appeler (obtenir et publier) des fichiers jssp du côté Adobe Campaign.
 
    Voici un petit extrait de code :
 
@@ -170,7 +170,7 @@ AEM propose des API prêtes à l’emploi pour récupérer les objets disponible
 
 >[!NOTE]
 >
->[Pour cet exemple, reportez-vous à la section ](/help/sites-developing/we-retail.md), disponible à partir du partage de modules.
+>[Pour consulter cet exemple, reportez-vous à la section Geometrixx](/help/sites-developing/we-retail.md), disponible à partir de Package Share.
 
 Pour chaque noeud de l’explorateur, une API lui est associée. Par exemple, pour le noeud :
 
@@ -188,7 +188,7 @@ Pour utiliser l’API, nous devons savoir qu’AEM utilise l’authentification 
 
 Une bibliothèque JS nommée **amcIntegration.js** est disponible dans 6.1.1 (build 8624 et supérieur) qui implémente cette logique parmi plusieurs autres.
 
-### Appel API AEM  {#aem-api-call}
+### Appel API AEM {#aem-api-call}
 
 ```java
 loadLibrary("nms:amcIntegration.js");

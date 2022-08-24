@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 ## Travailler selon une « définition de fini » (DoD) {#work-according-to-a-definition-of-done}
 
-Chaque équipe a une définition différente de ce que signifie &quot;fait&quot;, mais il est important d’en avoir une et de s’assurer qu’une histoire répond aux critères définis avant d’être acceptée.
+Chaque équipe possède une définition différente du concept de « fini » ; c’est ce que l’on désigne en anglais sous le nom de « Definition of Done » (DoD). Cependant, il est essentiel d’en établir une et de s’assurer qu’une story répond aux critères définis avant d’être acceptée.
 
 Voici un aperçu des critères généralement définis par les équipes :
 
@@ -64,7 +64,7 @@ Les outils d’analyse de code peuvent se révéler très utiles, mais à la seu
 
 ### Appliquer la règle du boy-scout {#follow-the-boy-scout-rule}
 
-Les Scouts ont une règle : &quot;Laisse-le mieux que tu ne l&#39;as trouvé.&quot; Tant que tous les membres de l’équipe de développement respecteront cette règle et remettront de l’ordre là où règne le désordre, le code ne cessera de s’améliorer.
+Les boy-scouts ont une règle : « Laissons (ce monde) dans un meilleur état que nous l’avons trouvé ». Tant que tous les membres de l’équipe de développement respecteront cette règle et remettront de l’ordre là où règne le désordre, le code ne cessera de s’améliorer.
 
 ### Éviter la mise en œuvre de fonctionnalités YAGNI {#avoid-implementing-yagni-features}
 

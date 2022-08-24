@@ -10,9 +10,9 @@ topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6430'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -30,7 +30,7 @@ Les extraits et exemples de ce document vous aident à comprendre et à utiliser
 
 * Avant d’utiliser les API du service DocAssurance, [configurez le service DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Téléchargez et configurez [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec votre projet Maven AEM. Les classes de client requises pour générer des projets Maven utilisant AEM Document Services sont disponibles dans [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+* Téléchargez et configurez [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec votre projet Maven AEM. Les classes de client requises pour générer des projets Maven utilisant AEM Document Services sont disponibles dans [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
 * En savoir plus sur [Comment créer votre projet AEM à l’aide de Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -76,7 +76,7 @@ Vous pouvez effectuer les opérations suivantes à l’aide du service DocAssura
 
 ### Ajout d’un champ de signature invisible {#adding-an-invisible-signature-field}
 
-Les signatures numériques apparaissent dans les champs de signature qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature existante ou l’ajout d’un champ de signature peut être programmé. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF. Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’API Java du service Signature ou de l’API du service Web de signature. Vous pouvez ajouter plus d’un champ de signature à un document PDF. Toutefois, chaque nom de champ de signature doit être unique.
+Les signatures numériques apparaissent dans les champs de signature qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature existante ou l’ajout d’un champ de signature peut être programmé. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF. Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’API Java du service Signature ou de l’API du service Web de signature. Vous pouvez ajouter plusieurs champs de signature à un document de PDF. Cependant, chaque nom de champ de signature doit être unique.
 
 **Syntaxe** : `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -238,7 +238,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-Vous pouvez également utiliser la spécification [CAdES](https://fr.wikipedia.org/wiki/CAdES) pour signer des documents. Utilisez l’exemple de code suivant pour définir le format de signature sur [CAdES.](https://fr.wikipedia.org/wiki/CAdES)
+Vous pouvez également utiliser la spécification [CAdES](https://fr.wikipedia.org/wiki/CAdES) pour signer des documents. Utilisez l’exemple de code suivant pour définir le format de signature sur [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -428,7 +428,7 @@ public class AddSignatureField {
 
 ### Application de l’horodatage au document {#apply-document-timestamp}
 
-Vous pouvez horodater par programme un document conformément aux spécifications [PAdES 4](https://fr.wikipedia.org/wiki/PAdES). Vous pouvez également utiliser la spécification [CAdES](https://fr.wikipedia.org/wiki/CAdES) pour les documents liés aux transactions.
+Vous pouvez horodater par programme un document conformément aux spécifications [PAdES 4](https://fr.wikipedia.org/wiki/PAdES). Vous pouvez également utiliser la spécification [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) pour les documents liés aux transactions.
 
 **Syntaxe** : `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -463,7 +463,7 @@ Vous pouvez horodater par programme un document conformément aux spécification
  </tbody>
 </table>
 
-Les exemples de code suivants ajoutent un horodatage à un document conformément à [PAdES 4](https://fr.wikipedia.org/wiki/PAdES).
+Les exemples de code suivants ajoutent un horodatage à un document conformément à [PAdES 4](https://en.wikipedia.org/wiki/PAdES).
 
 ```java
 package com.adobe.signatures.test;
@@ -1395,7 +1395,7 @@ La clé publique est stockée dans le certificat de l’utilisateur, celle-ci do
 
 >[!NOTE]
 >
->AEM Forms prend également en charge la spécification *[CAdES](https://fr.wikipedia.org/wiki/CAdES)* pour la signature numérique de documents PDF.
+>AEM Forms prend également en charge la spécification *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* pour la signature numérique de documents PDF.
 
 **Certification de documents PDF**
 
@@ -4970,7 +4970,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
     <ul>
      <li>High_Quality_Print<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
-     <li>PDFA1b_2005_CMYK<br /> </li>
+     <li>PDFA1b_2005_CMJN<br /> </li>
      <li>PDFX1a_2001<br /> </li>
      <li>PDFX3_2002<br /> </li>
      <li>Press_Quality<br /> </li>

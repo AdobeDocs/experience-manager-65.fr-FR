@@ -9,10 +9,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
 workflow-type: tm+mt
 source-wordcount: '6167'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -257,7 +257,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Création ou m
 
    >[!NOTE]
    >
-   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police Par exemple, &quot;+Helvetica&quot;.*
+   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police (par exemple : +Helvetica).*
 
 1. Pour incorporer uniquement les jeux partiels utilisés des polices incorporées, sélectionnez **Créer des jeux partiels de toutes les polices incorporées**.
 
@@ -519,7 +519,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Word sont 
 
 styleName1=level1[,styleName2=level2...]
 
-Si un nom de style Mot Microsoft contient une virgule (,) ou un signe égal (=), précédez les caractères spéciaux du caractère d’échappement (&quot;\_). Par exemple, spécifiez un style nommé &quot;En-tête, 1&quot; comme En-tête\, 1.
+Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (\). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
 
 ## Paramètres de Microsoft Visio (Windows uniquement) {#visio}
 
@@ -623,6 +623,6 @@ Vous ne pouvez pas modifier les paramètres d’autres applications dans Adminis
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Il est possible de personnaliser la prise en charge de ces types de fichier. Pour plus d’informations, voir &quot;Ajout de formats de fichier natifs pris en charge&quot; dans [Programmation avec les AEM forms](https://www.adobe.com/go/learn_aemforms_programming_62).
+Il est possible de personnaliser la prise en charge de ces types de fichier. Pour plus d’informations, consultez la section « Ajout de formats de fichier natifs pris en charge » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_62).
 
 Pour obtenir de l’aide sur la configuration d’une imprimante réseau PDFG, voir [Configuration d’une imprimante réseau PDFG (Windows uniquement)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).

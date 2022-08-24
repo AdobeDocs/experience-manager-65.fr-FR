@@ -48,7 +48,7 @@ Tous les accès aux objets de données sont arbitrés par le référentiel et do
 
 La falsification de requête intersite (CSRF) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et requêtes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
 
-En outre, AEM est fourni avec un filtre basé sur l’en-tête référent, qui peut être configuré sur *uniquement* pour autoriser les requêtes de POST provenant d’hôtes spécifiques (définis dans une liste).
+En outre, AEM est fourni avec un filtre basé sur l’en-tête référent, qui peut être configuré comme *only* autorisez les demandes de POST provenant d’hôtes spécifiques (définis dans une liste).
 
 ## 6. Configuration incorrecte de la sécurité {#security-misconfiguration}
 

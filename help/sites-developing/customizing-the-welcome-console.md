@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de la console de bienvenue (IU classique)
-seo-title: Personnalisation de la console de bienvenue (IU classique)
+seo-title: Customizing the Welcome Console (Classic UI)
 description: La console de bienvenue propose une liste de liens vers les différentes consoles et fonctionnalités au sein d’AEM.
-seo-description: La console de bienvenue propose une liste de liens vers les différentes consoles et fonctionnalités au sein d’AEM.
+seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 79%
+source-wordcount: '464'
+ht-degree: 78%
 
 ---
 
@@ -62,13 +62,13 @@ Les autorisations au niveau du nœud déterminent si les liens sont visibles ou 
 
 Par exemple :
 
-* Pour restreindre l’accès à **Outils**, supprimez l’accès en lecture à partir de
+* Pour restreindre l’accès à **Outils**, supprimez l’accès en lecture de
 
    `/libs/wcm/core/content/misc`
 
 Pour plus d’informations sur la définition des autorisations souhaitées, consultez la section [Sécurité](/help/sites-administering/security.md).
 
-### Liens de la barre latérale (volet de droite)  {#links-in-sidebar-right-pane}
+### Liens de la barre latérale (volet de droite) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
@@ -85,7 +85,7 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td> </td>
   </tr>
   <tr>
-   <td> Cloud Services</td>
+   <td> Services cloud</td>
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>
@@ -177,7 +177,7 @@ Il est possible de masquer un lien pour des utilisateurs ou des groupes spécifi
 
 Par exemple :
 
-* Pour supprimer le lien vers **Reports**, supprimez l’accès en lecture de
+* Pour supprimer le lien vers **Rapports**, supprimez l’accès en lecture de
 
    `/libs/cq/core/content/welcome/resources/reports`
 
@@ -187,20 +187,18 @@ Par exemple :
 
 Pour plus d’informations sur la définition des autorisations souhaitées, consultez la section [Sécurité](/help/sites-administering/security.md).
 
-### Mécanisme de sélection de liens  {#link-selection-mechanism}
+### Mécanisme de sélection de liens {#link-selection-mechanism}
 
-Dans `/libs/cq/core/components/welcome/welcome.jsp` , l’utilisation est faite de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds possédant la propriété :
+Dans `/libs/cq/core/components/welcome/welcome.jsp` use est fait de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds possédant la propriété :
 
-* `jcr:mixinTypes` avec la valeur :  `cq:Console`
+* `jcr:mixinTypes` avec la valeur : `cq:Console`
 
 >[!NOTE]
 >
 >Exécutez la requête suivante pour afficher la liste existante :
 >
 >* `select * from cq:Console`
-
 >
-
 
 
 Si un utilisateur ou un groupe ne possède pas l’autorisation de lecture sur un nœud avec le mixin `cq:Console`, ce nœud est récupéré par le biais d’une recherche `ConsoleUtil`. Par conséquent, il n’est pas répertorié dans la console.
@@ -209,6 +207,6 @@ Si un utilisateur ou un groupe ne possède pas l’autorisation de lecture sur u
 
 Vous pouvez utiliser le [mécanisme de sélection de liens](#link-selection-mechanism) pour ajouter votre propre élément personnalisé à la liste des liens.
 
-Ajoutez votre élément personnalisé à la liste en ajoutant le mixin `cq:Console` à votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
+Ajoutez votre élément personnalisé à la liste en ajoutant le `cq:Console` mixin dans votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
 
-* `jcr:mixinTypes` avec la valeur :  `cq:Console`
+* `jcr:mixinTypes` avec la valeur : `cq:Console`

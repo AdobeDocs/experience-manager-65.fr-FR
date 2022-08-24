@@ -5,40 +5,40 @@ exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
 workflow-type: tm+mt
 source-wordcount: '237'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
 # En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu {#author-headless-metadata-tagging}
 
-## L&#39;histoire jusqu&#39;à présent {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
-Au début du [AEM Parcours de création de contenu sans affichage](overview.md) la valeur [Introduction](introduction.md) couvrait les concepts de base et la terminologie relatifs à la création pour les sans-tête.
+Au début du [Parcours de création de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
-À l’étape précédente, vous avez découvert l’utilisation de références pour la création CMS sans affichage. Vous avez appris quels types de références sont disponibles et à quels fins : Références de contenu, Références de ressources/médias et Références de fragments.
+À l’étape précédente, vous avez découvert l’utilisation de références pour la création CMS découplée. Vous avez appris quels types de références sont disponibles et à quels fins : références de contenu, références de ressources/médias et références de fragments.
 
-Cet article s’appuie sur ces éléments afin que vous compreniez comment utiliser les métadonnées et le balisage pour créer votre propre contenu pour votre projet AEM sans interface utilisateur.
+Cet article s’appuie sur ces éléments afin que vous compreniez comment utiliser les métadonnées et le balisage en vue de créer votre propre contenu pour votre projet AEM découplé.
 
 ## Objectif {#objective}
 
 * **Audience** : Niveau avancé
-* **Objectif**: Introduisez l’utilisation des métadonnées et du balisage pour la création CMS sans affichage.
+* **Objectif** : introduisez l’utilisation des métadonnées et du balisage pour la création CMS découplée.
 
 ## Ajout de métadonnées et de balises {#adding-metadata-and-tags}
 
-Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balises :
+Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balises :
 
-* Lors de la première création de votre fragment :
+* Dès la création de votre fragment :
 
-   ![Créer un fragment de contenu - indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* Le **Métadonnées** de l’éditeur de fragment de contenu vous permet d’ajouter différents champs de métadonnées et des champs prédéfinis. **Balises** de votre projet :
+* L’onglet **Métadonnées** de l’éditeur de fragment de contenu vous permet d’ajouter différents champs de métadonnées et des **Balises** prédéfinies à partir de votre projet :
 
-   ![Éditeur de fragment de contenu - Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * Vous pouvez également y accéder directement à l’aide de la fonction **Propriétés** dans la barre d’outils de la console Ressources.
+   * Vous pouvez également y accéder directement à l’aide de l’option **Propriétés** dans la barre d’outils de la console Ressources.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à créer des fragments de contenu pour votre projet.
 
@@ -48,4 +48,4 @@ Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à
 
 * [Utilisation des balises](/help/sites-authoring/tags.md)
 
-* [Modèles de fragment de contenu - Autorisation des modèles de fragment de contenu sur votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

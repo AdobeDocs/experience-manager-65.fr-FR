@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 44f866e1435bd98f7dbe3f4ba8500830075db001
 workflow-type: tm+mt
 source-wordcount: '7149'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -594,7 +594,7 @@ Les mappages des paramètres de sortie peuvent également spécifier des modèle
 * %F = nom du fichier source
 * %E = extension du nom du fichier source
 
-Si le modèle de mappage des paramètres de sortie se termine par &quot;File.separator&quot; (qui est le séparateur de chemin), un dossier est créé et le contenu est copié dans ce dossier. Si le modèle ne se termine pas par &quot;File.separator&quot;, le contenu (fichier ou dossier des résultats) est créé avec ce nom.
+Si le modèle de mappage des paramètres de sortie se termine par « File.separator » (qui correspond au séparateur de chemin), un dossier est créé dans lequel le contenu est copié. Si le modèle ne se termine pas par « File.separator », le contenu (fichier ou dossier des résultats) est créé et utilise ce nom.
 
 ## Utilisation de PDF Generator avec un dossier de contrôle {#using-pdf-generator-with-a-watched-folder}
 

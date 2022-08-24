@@ -38,7 +38,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 
 * **`cq:noDecoration {boolean}` :** cette propriété peut être ajoutée à un composant et une valeur « true » contraint AEM à ne pas générer d’éléments wrapper sur le composant.
 
-* **`cq:htmlTag`Nœud :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
+* **`cq:htmlTag`nœud :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
 
    * **`cq:tagName {String}` :** cette propriété peut être utilisée pour spécifier une balise HTML personnalisée dans le but d’encapsuler les composants au lieu de l’élément DIV par défaut.
    * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
@@ -46,7 +46,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 
 ## Contrôles de script {#script-controls}
 
-Le comportement de l’élément wrapper diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
+Le comportement de l’élément wrapper diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément .
 
 ### HTL {#htl}
 
@@ -139,13 +139,13 @@ Résultat obtenu `/content/test.html` :
 
 ## JSP {#jsp}
 
-Lors de l’inclusion d’un composant à l’aide de `cq:includ`e ou `sling:include`, le comportement par défaut dans AEM consiste à utiliser une balise DIV pour encapsuler l’élément. Toutefois, cet encapsulage peut être personnalisé de deux façons :
+Lors de l’inclusion d’un composant à l’aide de `cq:includ`e ou `sling:include`, le comportement par défaut dans AEM consiste à utiliser un élément DIV pour encapsuler l’élément. Toutefois, cet encapsulage peut être personnalisé de deux façons :
 
 * Indiquer explicitement à AEM de ne pas encapsuler le composant à l’aide de `cq:noDecoration`.
-* Utilisez une balise HTML personnalisée pour encapsuler le composant à l’aide de `cq:htmlTag`/ `cq:tagName` ou `decorationTagName`.
+* Utilisez une balise de HTML personnalisée pour encapsuler le composant à l’aide de `cq:htmlTag`/ `cq:tagName` ou `decorationTagName`.
 
 ### Arborescence de décision {#decision-tree-1}
 
-L’arborescence de décision suivante illustre la manière dont `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l’élément wrapper.
+L’arborescence de décision suivante illustre comment `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, et `decorationTagName` affecte le comportement de l’élément wrapper.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)

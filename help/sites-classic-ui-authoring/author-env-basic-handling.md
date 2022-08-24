@@ -1,8 +1,8 @@
 ---
 title: Manipulation de base
-seo-title: Manipulation de base
+seo-title: Basic Handling
 description: Aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console Sites comme base.
-seo-description: Aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console Sites comme base.
+seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1194'
 ht-degree: 91%
 
 ---
@@ -22,13 +22,10 @@ ht-degree: 91%
 >[!NOTE]
 >
 >* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console **Sites** comme base.
-   >
-   >
-* Certaines fonctionnalités ne sont pas disponibles sur toutes les consoles et/ou des fonctionnalités supplémentaires sont disponibles sur certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
->* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et de la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
-
 >
-
+>* Certaines fonctionnalités ne sont pas disponibles sur toutes les consoles et/ou des fonctionnalités supplémentaires sont disponibles sur certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
+>* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et de la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
+>
 
 
 ## Écran de bienvenue {#the-welcome-screen}
@@ -59,7 +56,7 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Lancements</strong></td>
-   <td>Cela vous aide à gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a> ; cela vous permet de développer le contenu pour une prochaine version d’une ou de plusieurs pages web activées.<br /> <i>Remarque : Dans l’interface utilisateur tactile, une grande partie de la même fonctionnalité est disponible dans la console Sites, avec le rail Références .</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
+   <td>Cela vous aide à gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a>; cela vous permet de développer le contenu pour une prochaine version d’une ou de plusieurs pages web activées.<br /> <i>Remarque : Dans l’interface utilisateur tactile, une grande partie de la même fonctionnalité est disponible dans la console Sites, avec le rail Références .</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
   </tr>
   <tr>
    <td><strong>Boîte de réception </strong></td>
@@ -108,7 +105,7 @@ D’ici, vous pouvez [gérer vos pages](/help/sites-authoring/managing-pages.md)
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Accès à l’aide {#accessing-help}
+## Accès à l’Aide   {#accessing-help}
 
 Sur diverses consoles (Sites web, par exemple), un bouton **Aide** permet d’ouvrir le Partage de modules ou le site de documentation.
 
@@ -143,12 +140,12 @@ La console **Sites web** répertorie vos pages de contenu dans une structure arb
 >Ou à l’échelle du thème :
 >Définissez la valeur :
 >`TREE_AUTOEXPAND_MAX`
->dans :
+>dans:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >Pour plus d’informations, voir [SiteAdmin dans l’API CQ Widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
 
-## Informations sur la page dans la console Sites web  {#page-information-on-the-websites-console}
+## Informations sur la page dans la console Sites web {#page-information-on-the-websites-console}
 
 Le volet de droite de la console **Sites web** répertorie les informations sur les pages :
 
@@ -228,7 +225,7 @@ Les couleurs en regard des pages des colonnes **Publié** et **Modifié** indiqu
 | Modifié | Bleu | La page a été modifiée depuis la dernière publication. |
 | Modifié | *vide* | Cette page n’a jamais été modifiée ou n’a pas été modifiée depuis la dernière publication. |
 
-## Context Menus {#context-menus}
+## Menus contextuels {#context-menus}
 
 L’IU classique applique des mécanismes courants pour la navigation et le déclenchement des opérations, notamment clic et double-clic. Selon la situation actuelle, divers menus contextuels (qui s’ouvrent généralement en cliquant avec le bouton droit de la souris) sont également disponibles :
 

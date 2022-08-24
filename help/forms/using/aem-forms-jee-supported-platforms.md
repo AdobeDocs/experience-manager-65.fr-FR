@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: f1dade2cb15f98bb7830f6afb27ec493dc182a37
 workflow-type: tm+mt
 source-wordcount: '3550'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -517,7 +517,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 > - PDF Generator ne prend pas en charge Microsoft Office 365.
 > - Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 > - Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
-> - Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+> - Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms en fonction de votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >
 > - Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
 
@@ -633,7 +633,7 @@ Pour des conditions requises supplémentaires, voir :
 
 >[!NOTE]
 >
-> La famille de produits Acrobat DC introduit deux suivis pour Acrobat et Reader, qui sont essentiellement des produits différents : &quot;Classic&quot; et &quot;Continuous&quot;. Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
+> La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
 
 ### Navigateurs {#browsers}
 
@@ -749,7 +749,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs 
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour les logiciels tiers pour AEM Forms on JEE est présentée dans la section &quot;Configuration requise&quot; de leurs documents produit respectifs. Toute la documentation est accessible sur [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels de fournisseurs tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Toute la documentation est accessible sur [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/Service Pack de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 

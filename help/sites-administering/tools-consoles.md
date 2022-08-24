@@ -327,7 +327,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Stockage   Configuration</td>
+   <td>Configuration du stockage</td>
   </tr>
   <tr>
    <td> </td>

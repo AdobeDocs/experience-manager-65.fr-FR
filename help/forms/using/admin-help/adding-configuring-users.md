@@ -9,7 +9,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 100%
 
@@ -150,7 +150,7 @@ Evitez de créer des noms d’utilisateur commençant par un dièse (#). Les rec
 1. Pour rechercher l’utilisateur à supprimer, procédez comme suit :
 
    * Dans la zone **[!UICONTROL Rechercher]**, saisissez vos critères de recherche.
-   * Dans la liste **[!UICONTROL Utilisation]**, sélectionnez **[!UICONTROL Nom]**, **[!UICONTROL Adresse électronique]** ou **[!UICONTROL ID utilisateur]**.
+   * Dans la liste **[!UICONTROL Utilisation]**, sélectionnez **[!UICONTROL Nom]**, **[!UICONTROL E-mail]** ou **[!UICONTROL ID utilisateur]**.
    * Dans la liste **[!UICONTROL Dans]**, sélectionnez **[!UICONTROL Utilisateurs]**.
    * Sélectionnez le domaine, indiquez le nombre d’éléments à afficher, puis cliquez sur **[!UICONTROL Rechercher]**.
 

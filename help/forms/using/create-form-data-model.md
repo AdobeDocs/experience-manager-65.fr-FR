@@ -10,9 +10,9 @@ discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1421'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -77,7 +77,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
-      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez * depuis customerdetails**.
+      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple : **select &#42; de customerdetails**.
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
 
          Laissez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et cliquez sur **[!UICONTROL Enregistrer]**.

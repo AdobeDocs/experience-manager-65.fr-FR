@@ -1,8 +1,8 @@
 ---
 title: Développement de composants AEM – Échantillons de code
-seo-title: Développement de composants AEM – Échantillons de code
+seo-title: Developing AEM Components - Code Samples
 description: Cette section présente quelques exemples de création de composants personnalisés pour AEM.
-seo-description: Cette section présente quelques exemples de création de composants personnalisés pour AEM.
+seo-description: This section provides some examples on how to create your own components for AEM.
 uuid: 764b5dad-d3bb-48c6-9e93-9dc4e3f623db
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '217'
 ht-degree: 97%
 
 ---
@@ -34,8 +34,8 @@ Pour plus d’informations sur l’interface utilisateur classique, voir [Compos
 >Pour vous aider à analyser, tester et déboguer vos composants, AEM propose :
 >
 >* [Mode Développeur](/help/sites-developing/developer-mode.md)
-* une [structure permettant d’automatiser les tests sur la base de la bibliothèque Hobbes.js](/help/sites-developing/hobbes.md).
-
+>* une [structure permettant d’automatiser les tests sur la base de la bibliothèque Hobbes.js](/help/sites-developing/hobbes.md).
+>
 
 
 ## Exemple de code – Personnalisation des champs de la boîte de dialogue {#code-sample-how-to-customize-dialog-fields}
@@ -48,7 +48,8 @@ Vous pouvez trouver le code de cette page sur GitHub.
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip).
 
 >[!NOTE]
-Cet exemple de code est lié à la session AEM Gems traitant de la [Personnalisation des champs de la boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>
+>Cet exemple de code est lié à la session AEM Gems traitant de la [Personnalisation des champs de la boîte de dialogue](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Ressources connexes {#related-resources}
 

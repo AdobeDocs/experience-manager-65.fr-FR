@@ -12,7 +12,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ L’interface utilisateur de création d’une [Communication interactive](/help
 Lorsque vous [créez une communication interactive ou en modifiez une existante](../../forms/using/create-interactive-communication.md), vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
-* [Barre d’outils Page](#page-toolbar)
+* [Barre d’outils de la page](#page-toolbar)
 * [Barre d’outils de composants](#component-toolbar)
 * Zone de contenu
 
@@ -71,13 +71,13 @@ isole différents types de contenu, tels que des fragments de disposition, des i
 | Fragment de document | ✓ | ✓ | Vous permet d’ajouter un composant réutilisable, du texte, une liste ou une condition à une communication interactive. Le composant réutilisable que vous ajoutez à une communication interactive peut être basé sur modèle de données de formulaire ou sans modèle de données de formulaire. |
 | Image | ✓ | ✓ | Permet d’insérer une image. |
 | Panneau | - | ✓ | Le composant Panneau est un espace réservé pour regrouper d’autres composants et contrôle la disposition d’un groupe de composants dans une communication interactive. Un composant de panneau vous permet également de permettre la répétition d’un groupe de composants pour l’utilisateur final, par exemple dans plusieurs entrées requises pour remplir les informations d’identification. Il est également recommandé d’utiliser un panneau pour chaque onglet d’une communication interactive dotée de plusieurs onglets. |
-| Tableau | * | ✓ | Ajoute un tableau qui permet de classer les données par lignes et par colonnes. |
-| Zone cible | ** | ✓ | Insère une zone cible dans un canal web pour organiser les composants spécifiques au canal web. |
+| Tableau | &#42; | ✓ | Ajoute un tableau qui permet de classer les données par lignes et par colonnes. |
+| Zone cible | &#42;&#42; | ✓ | Insère une zone cible dans un canal web pour organiser les composants spécifiques au canal web. |
 | Texte | - | ✓ | Ajoute le texte au canal web d’une communication interactive. Le texte peut utiliser des objets de modèle de données de formulaire pour rendre le contenu dynamique. |
 
-* Utilisez les fragments de mise en page dans le canal d’impression pour ajouter des tableaux.
+&#42; Utilisez les fragments de mise en page dans le canal d’impression pour ajouter des tableaux.
 
-** Dans le canal d’impression, les zones cibles sont prédéfinies dans le XDP/modèle d’impression. Vous ne pouvez pas ajouter de nouvelles zones cibles à l’aide de l’interface utilisateur de création de communication interactive.
+&#42;&#42; Dans le canal d’impression, les zones cibles sont prédéfinies dans le XDP/modèle d’impression. Vous ne pouvez pas ajouter de nouvelles zones cibles à l’aide de l’interface utilisateur de création de communication interactive.
 
 * **Explorateur de sources de données** L’explorateur de sources de données affiche les sources de données disponibles dans le modèle de données de formulaire que vous avez sélectionné lors de la création de la communication interactive.
 
@@ -85,7 +85,7 @@ isole différents types de contenu, tels que des fragments de disposition, des i
 
 Les points clés lorsque vous utilisez des composants de communication interactive sont les suivants :
 
-* Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, cliquez dessus, puis sur ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
+* Chaque composant est associé à des propriétés qui contrôlent son apparence et ses fonctionnalités. Pour configurer les propriétés d’un composant, appuyez sur celui-ci et sélectionnez ![cmppr](assets/cmppr.png) pour ouvrir les propriétés du composant dans l’explorateur de propriétés.
 * Un composant est identifié par son nom d’élément. Lorsque vous cliquez sur ![cmppr](assets/cmppr.png), vous pouvez changer le nom du composant en modifiant la valeur du champ Nom de l’élément dans l’explorateur de propriétés. Vous pouvez saisir uniquement des lettres, des chiffres, des traits d’union (-) et des traits de soulignement (_) dans le champ Nom de l’élément. D’autres caractères spéciaux ne sont pas autorisés et le nom de l’élément doit commencer par une lettre.
 * Vous pouvez modifier la propriété de titre d’un composant de communication interactive en ligne dans l’éditeur sans ouvrir l’explorateur de propriétés tant que le titre est visible sur la communication interactive. Pour ce faire :
 

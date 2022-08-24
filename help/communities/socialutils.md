@@ -1,8 +1,8 @@
 ---
 title: Refactorisation de SocialUtils
-seo-title: Refactorisation de SocialUtils
+seo-title: SocialUtils Refactoring
 description: Le package com.adobe.cq.social.ugcbase.SocialUtils a été abandonné dans AEM 6.1.
-seo-description: Le package com.adobe.cq.social.ugcbase.SocialUtils a été abandonné dans AEM 6.1.
+seo-description: The package com.adobe.cq.social.ugcbase.SocialUtils was deprecated in AEM 6.1
 uuid: 54a0d98e-5ead-4c12-850f-8252ea9b3263
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,8 +12,8 @@ discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 Le package `com.adobe.cq.social.ugcbase.SocialUtils` a été abandonné dans AEM 6.1.
 
-Les tableaux suivants répertorient les méthodes à utiliser à la place des méthodes `SocialUtils`.
+Les tableaux suivants répertorient les méthodes à utiliser au lieu de `SocialUtils` méthodes.
 
-## Package SocialResourceUtilities {#socialresourceutilities-package}
+## Package SocialResourceUtilities  {#socialresourceutilities-package}
 
 | Méthodes dans com.adobe.cq.social.srp.utility.api.SocialResourceUtilities |
 |---|
@@ -43,7 +43,7 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 | Chaîne UGCToResourcePath(String ugcPath) | signature de méthode modifiée |
 | Chaîne UGCToResourcePath(chaîne ugcPath, résolveur ResourceResolver) | new |
 
-| Méthodes de `com.adobe.cq.social.`utility.resource.api.SocialResourceUtilities |
+| Méthodes dans `com.adobe.cq.social.`Utilitaires.resource.api.SocialResourceUtilities |
 |---|
 | SocialResourceProvider getSocialResourceProvider(Resource) | remplace SocialResourceProvider getConfiguredProvider(Resource ressource) |
 
@@ -59,7 +59,7 @@ Les tableaux suivants répertorient les méthodes à utiliser à la place des m�
 | Chaîne getSocialProfileURL(Chaîne nom d’utilisateur, résolveur ResourceResolver, page) |
 | UserProperties getUserProperties(ResourceResolver resolver, String userId) |
 
-## Pour Une Utilisation Interne Uniquement {#for-internal-use-only}
+## Pour une utilisation interne uniquement {#for-internal-use-only}
 
 | booléen canAddNode(session de session, chemin de chaîne) |
 |---|

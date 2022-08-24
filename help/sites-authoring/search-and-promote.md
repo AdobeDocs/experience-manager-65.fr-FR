@@ -28,4 +28,4 @@ Vous ne pouvez utiliser les fonctionnalités de Search &amp; Promote que si votr
 
 >[!NOTE]
 >
->Vous trouverez des informations détaillées sur l’ajout de fonctionnalités de Search &amp; Promote à votre page dans la documentation de création de l’interface utilisateur classique. Pour plus d’informations, voir [Ajout de fonctionnalités Search &amp; Promote à votre page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) .
+>Vous trouverez des informations détaillées sur l’ajout de fonctionnalités de Search &amp; Promote à votre page dans la documentation de création de l’interface utilisateur classique. Voir [Ajout de fonctionnalités Search&amp;Promote à votre page](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) pour plus d’informations.

@@ -2,7 +2,7 @@
 title: Identity Management
 seo-title: Identity Management
 description: Découvrez la gestion de l’identité dans AEM.
-seo-description: Découvrez la gestion de l’identité dans AEM.
+seo-description: Learn about identity management in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1230'
-ht-degree: 79%
+source-wordcount: '1222'
+ht-degree: 78%
 
 ---
 
@@ -25,15 +25,15 @@ Les visiteurs individuels de votre site web ne peuvent être identifiés que lor
 * [AEM Communities](/help/communities/overview.md) Les visiteurs du site doivent se connecter pour publier du contenu à l’intention de la communauté.
 * [Groupes d’utilisateurs fermés](/help/sites-administering/cug.md)
 
-   Vous devrez peut-être limiter l’accès à votre site web (ou à certaines sections) à des visiteurs spécifiques.
+   Vous devrez peut-être limiter l’accès à votre site web (ou à certaines de ses sections) à des visiteurs spécifiques.
 
-* [](/help/sites-administering/personalization.md) Personnalisation : permet aux visiteurs de configurer certains aspects de leur accès à votre site web.
+* [Personnalisation](/help/sites-administering/personalization.md) Permet aux visiteurs de configurer certains aspects de leur accès à votre site web.
 
 La fonctionnalité de connexion (et de déconnexion) est mise à disposition par un [compte avec un **profil**](#profiles-and-user-accounts) contenant des informations supplémentaires sur le visiteur (utilisateur) enregistré. Les processus réels pour l’enregistrement et l’autorisation peuvent différer :
 
 * Auto-inscription sur le site web
 
-   Un [site communautaire](/help/communities/sites-console.md) peut être configuré pour permettre aux visiteurs de s’inscrire ou de se connecter avec leurs comptes Facebook ou Twitter.
+   A [Site de la communauté](/help/communities/sites-console.md) peut être configuré pour permettre aux visiteurs de s’inscrire ou de se connecter avec leurs comptes Facebook ou Twitter.
 
 * Demande d’enregistrement sur le site web
 
@@ -85,7 +85,7 @@ Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’ai
 
 Tout comme il y a un mécanisme de connexion, un mécanisme de déconnexion est également nécessaire. Il est disponible sous la forme de l’option **Se connecter** dans Geometrixx.
 
-## Affichage et mise à jour d’un profil  {#viewing-and-updating-a-profile}
+## Affichage et mise à jour d’un profil {#viewing-and-updating-a-profile}
 
 En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré des informations sur son profil. Il doit pouvoir les afficher et/ou les mettre à jour ultérieurement. Cela peut se faire sous une forme similaire; par exemple, en Geometrixx :
 
@@ -93,7 +93,7 @@ En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple avec le compte `admin` :
+Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec la fonction `admin` compte :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
@@ -116,7 +116,7 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 
 1. Vous pouvez maintenant utiliser **Modifier le profil** ou **Modifier le mot de passe** pour mettre à jour les informations.
 
-## Ajout de champs à la définition d’un profil  {#adding-fields-to-the-profile-definition}
+## Ajout de champs à la définition d’un profil {#adding-fields-to-the-profile-definition}
 
 Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ Couleur préférée au profil Geometrixx :
 
@@ -144,7 +144,7 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
 ## États du profil {#profile-states}
 
-Un certain nombre de cas d’utilisation nécessitent de savoir si un utilisateur (ou plutôt son profil) se trouve dans un *état spécifique* ou non.
+Il existe plusieurs cas d’utilisation qui nécessitent de savoir si un utilisateur (ou plutôt son profil) se trouve dans une *état spécifique* ou pas.
 
 Cela implique de définir, dans le profil utilisateur, une propriété appropriée qui :
 
@@ -184,9 +184,9 @@ Un workflow est nécessaire à la mise en œuvre des actions associées aux éta
 
 ## Profils et comptes utilisateur {#profiles-and-user-accounts}
 
-Les profils sont stockés dans le référentiel de contenu dans le cadre du [compte utilisateur](/help/sites-administering/user-group-ac-admin.md).
+Les profils sont stockés dans le référentiel de contenu dans le cadre du[compte utilisateur](/help/sites-administering/user-group-ac-admin.md).
 
-Le profil se trouve sous `/home/users/geometrixx` :
+Le profil se trouve sous `/home/users/geometrixx`:
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -194,7 +194,7 @@ Dans une configuration standard (création ou publication), chacun possède un a
 
 Ces droits d’accès sont définis par la liste de contrôle d’accès générique suivante :
 
-/home everyone autoriser jcr:read rep:glob = */profile*
+/home everyone autoriser jcr:read rep:glob = &#42;/profile&#42;
 
 Elle autorise :
 
@@ -203,7 +203,7 @@ Elle autorise :
 
 Si cet accès n’est pas approprié pour votre installation, vous pouvez modifier ces paramètres par défaut.
 
-Pour ce faire, utilisez l’onglet **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** :
+Pour ce faire, utilisez la méthode **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab :
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -211,7 +211,7 @@ Pour ce faire, utilisez l’onglet **[Contrôle d’accès](/help/sites-administ
 
 Une plage de composants Profil est également disponible pour définir les exigences de profil de votre site.
 
-### Champ du mot de passe coché  {#checked-password-field}
+### Champ du mot de passe coché {#checked-password-field}
 
 Ce composant fournit deux champs pour :
 

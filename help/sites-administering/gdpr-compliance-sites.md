@@ -1,8 +1,8 @@
 ---
 title: AEM Sites – Préparation pour le RGPD
-seo-title: AEM Sites – Préparation pour le RGPD
+seo-title: AEM Sites - GDPR Readiness
 description: Découvrez les détails de la préparation d’AEM Sites pour le RGPD.
-seo-description: Découvrez les détails de la préparation d’AEM Sites pour le RGPD.
+seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: aheimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 91%
+source-wordcount: '836'
+ht-degree: 92%
 
 ---
 
@@ -41,11 +41,11 @@ Les comptes utilisateur et le contenu généré par les utilisateurs sur le serv
 
 Les comptes utilisateur utilisés pour authentifier les visiteurs sur le site et le contenu généré par les utilisateurs sur le serveur de publication sont abordés dans la [documentation de la plate-forme relative au RGPD](/help/managing/data-protection-and-privacy.md).
 
-Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le   serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
+Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
-AEM a un [service d’exclusion des cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion des utilisateurs.
+AEM a une [service d’exclusion de cookies](/help/sites-developing/cookie-optout.md) qui peut être utilisé pour gérer l’inclusion/exclusion pour les utilisateurs.
 
 ## Enhanced Insights by Analytics {#enhanced-insights-by-analytics}
 
@@ -57,7 +57,7 @@ Pour plus d’informations sur la gestion des requêtes RGPD des personnes titul
 
 AEM Sites comprend une intégration facultative à Enhanced Personalization by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
 
-Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Target, voir [Adobe Target : Confidentialité et règlement général sur la protection des données (RGPD)](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Target, voir [Adobe Target : Confidentialité et règlement général sur la protection des données (RGPD)](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=fr).
 
 ## ContextHub {#contexthub}
 
@@ -71,7 +71,7 @@ Par défaut, ces données sur les visiteurs ne sont pas stockées dans AEM ; AE
 >
 >Les versions 5.5 et antérieures d’Adobe CQ sont désormais en fin de vie et ne sont pas abordées dans cette documentation.
 
-### Mise en œuvre de la souscription/l’exclusion  {#implementing-opt-in-opt-out}
+### Mise en œuvre de la souscription/l’exclusion {#implementing-opt-in-opt-out}
 
 Le propriétaire du site doit mettre en œuvre un composant d’exclusion en suivant les instructions ci-après.
 
@@ -103,27 +103,27 @@ Ces instructions mettent en œuvre la souscription comme valeur par défaut. Ain
    // if isOptedOut is true, ContextHub is running in opt-out mode
    ```
 
-### Aperçu de la persistance de ContextHub  {#previewing-persistence-of-contexthub}
+### Aperçu de la persistance de ContextHub {#previewing-persistence-of-contexthub}
 
 Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisateur peut :
 
 * utiliser la console du navigateur, par exemple :
 
-   * Chrome:
+   * Chrome :
 
       * Ouvrez Outils de développement > Application > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Firefox:
+   * Firefox :
 
       * Ouvrez Outils de développement > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
-   * Safari:
+   * Safari :
 
       * Ouvrez Préférences > Avancé > Afficher le menu Développement dans la barre de menus
       * Ouvrez Développement > Afficher la console JavaScript
@@ -131,7 +131,7 @@ Pour afficher un aperçu de la persistance utilisée par ContextHub, l’utilisa
          * Console > Stockage > Stockage local > (site web) > ContextHubPersistence
          * Console > Stockage > Stockage de session > (site web) > ContextHubPersistence
          * Console > Stockage > Cookies > (site web) > ContextHubPersistence
-   * Internet Explorer:
+   * Internet Explorer :
 
       * Ouvrez Outils de développement > Console :
 
@@ -191,7 +191,7 @@ var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persiste
 console.log(storage.getTree());
 ```
 
-### Effacement de la persistance de ContextHub  {#clearing-persistence-of-contexthub}
+### Effacement de la persistance de ContextHub {#clearing-persistence-of-contexthub}
 
 Pour effacer la persistance de ContextHub :
 

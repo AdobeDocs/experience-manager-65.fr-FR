@@ -9,15 +9,15 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
-feature: Publication
+feature: Publishing
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 69%
+source-wordcount: '461'
+ht-degree: 72%
 
 ---
 
-# Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
+# Publication de ressources Dynamic Media {#publishing-dynamic-media-assets}
 
 Vous publiez vos ressources Dynamic Media en sélectionnant celles que vous avez déjà chargées et en appuyant sur **[!UICONTROL Publier]** ou **[!UICONTROL Publication rapide]**. Une fois vos ressources Dynamic Media publiées, vous pouvez les inclure dans une page web au moyen d’une URL ou en incorporant le code sur la page.
 
@@ -32,7 +32,7 @@ En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît di
 
 Si vous envisagez de publier des ressources vidéo immédiatement après les avoir codées, vérifiez que l’encodage est terminé. Pendant le codage des vidéos, le système vous informe qu’un workflow de traitement vidéo est en cours. Lorsque l’encodage vidéo est terminé, vous pouvez prévisualiser les rendus vidéo. À ce stade, vous pouvez publier en toute sécurité les vidéos, sans entraîner aucune erreur de publication.
 
-Voir aussi [Lier les URL à votre application web](linking-urls-to-yourwebapplication.md).
+Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Media dans une page web](embed-code.md)
 
@@ -40,9 +40,7 @@ Voir aussi [Incorporation de la visionneuse de vidéos ou d’images Dynamic Med
 >
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
-
 >
-
 
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, voir [Publication de ressources](manage-assets.md).
@@ -51,4 +49,4 @@ Pour plus d’informations sur la publication d’une visionneuse ou d’une res
 
 Experience Manager prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
-Pour en savoir plus, consultez la section [Diffusion HTTP/2 de contenu aux questions fréquentes](/help/sites-administering/scene7-http2faq.md).
+Pour en savoir plus, voir [Questions fréquentes sur la diffusion de contenu HTTP/2](/help/sites-administering/scene7-http2faq.md).

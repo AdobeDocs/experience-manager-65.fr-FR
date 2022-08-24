@@ -13,7 +13,7 @@ docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Une fois qu’un champ de signature tactile a été ajouté au formulaire et gé
 Si vous cliquez sur l’icône de géolocalisation lors de la création de la zone de saisie tactile, l’emplacement géographique et les informations temporelles sont ajoutés au champ.
 
 >[!NOTE]
->Sur l’iPad, l’intégration des informations de géolocalisation est obligatoire par défaut.
+Sur l’iPad, l’intégration des informations de géolocalisation est obligatoire par défaut.
 
 Sur l’iPad, l’icône de géolocalisation n’est pas affichée par défaut et les informations de géolocalisation sont automatiquement intégrées lorsque vous cliquez sur **OK**.
 

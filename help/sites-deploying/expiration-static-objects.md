@@ -1,20 +1,20 @@
 ---
 title: Expiration des objets statiques
-seo-title: Expiration des objets statiques
+seo-title: Expiration of Static Objects
 description: Découvrez comment configurer AEM pour que les objets statiques n’expirent pas (pendant un intervalle de temps raisonnable).
-seo-description: Découvrez comment configurer AEM pour que les objets statiques n’expirent pas (pendant un intervalle de temps raisonnable).
+seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
-feature: Configuration
+feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 95%
+source-wordcount: '414'
+ht-degree: 94%
 
 ---
 
@@ -75,7 +75,7 @@ Tous les fichiers, qui ne sont pas dynamiques et qui ne changent pas au fil du t
    </Location>
    ```
 
-   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Bien que cet exemple illustre les paramètres globaux pour tout ce qui se trouve sous `/content` et `/etc/designs`, vous devez le rendre plus granulaire.
+   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Bien que cet exemple illustre les paramètres globaux pour tout ce qui suit `/content` et `/etc/designs`, vous devriez le rendre plus granulaire.
 
    Selon la fréquence de mise à jour de votre site, vous pouvez également envisager de mettre en cache les pages HTML. Un intervalle de temps raisonnable serait d’une heure :
 

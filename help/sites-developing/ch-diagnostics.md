@@ -1,8 +1,8 @@
 ---
 title: Diagnostic ContextHub
-seo-title: Diagnostic ContextHub
+seo-title: ContextHub Diagnostics
 description: ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub
-seo-description: ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub
+seo-description: ContextHub provides a diagnostics page where you can see an overview of the ContextHub framework
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,14 +10,14 @@ content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '491'
-ht-degree: 72%
+source-wordcount: '474'
+ht-degree: 71%
 
 ---
 
 # Diagnostic ContextHub {#contexthub-diagnostics}
 
-ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub. Pour ouvrir la page, accédez à la page `contexthub.diagnostics.html` de votre instance de création AEM par exemple :
+ContextHub fournit une page de diagnostics qui affiche un aperçu de sa structure. Pour ouvrir la page, accédez à la page `contexthub.diagnostics.html` de votre instance de création AEM par exemple :
 
 `http://<host>:<port>/conf/<tenant>/settings/cloudsettings/default/contexthub.diagnostics.html`
 
@@ -63,8 +63,8 @@ La section URL contient des liens vers les fonctionnalités de ContextHub :
 
 * **Éditeur de configuration :** ouvre la [page de configuration ContextHub](ch-configuring.md) où vous pouvez configurer les magasins, les modes IU et les modules d’IU.
 
-* **Configuration des modules ContextHub :** ouvre le fichier /etc/cloudsettings/default/contexthub.config.kernel.js, qui contient la représentation de l’objet JavaScript des configurations de magasin ContextHub.
-* **Configuration de l’IU ContextHub :** ouvre le fichier /etc/cloudsettings/default/contexthub.config.ui.js, qui contient la représentation de l’objet JavaScript des configurations du mode d’IU ContextHub.
-* **kernel.js :** ouvre le fichier /etc/cloudsettings/default/contexthub.kernel.js, qui contient le code source des bibliothèques clientes qui implémentent le framework ContextHub, le moteur de segment et les types de magasin.
-* **ui.js :** ouvre le fichier /etc/cloudsettings/default/contexthub.ui.js, qui contient le code source des bibliothèques clientes qui implémentent les types de modules d’IU et l’IU ContextHub.
-* **style.css :** ouvre le fichier /etc/cloudsettings/default/contexthub.styles.css, qui contient les styles CSS pour les modules d’IU et d’IU ContextHub.
+* **Configuration des modules ContextHub :** Ouvre le fichier /etc/cloudsettings/default/contexthub.config.kernel.js, qui contient la représentation de l’objet JavaScript des configurations de magasin ContextHub.
+* **Configuration de l’IU ContextHub :** Ouvre le fichier /etc/cloudsettings/default/contexthub.config.ui.js qui contient la représentation de l’objet JavaScript des configurations du mode d’IU ContextHub.
+* **kernel.js :** Ouvre le fichier /etc/cloudsettings/default/contexthub.kernel.js, qui contient le code source des bibliothèques clientes qui implémentent la structure ContextHub, le moteur de segment et les types de magasin.
+* **ui.js :** Ouvre le fichier /etc/cloudsettings/default/contexthub.ui.js, qui contient le code source des bibliothèques clientes qui implémentent les types de modules d’IU et l’IU ContextHub.
+* **style.css :** Ouvre le fichier /etc/cloudsettings/default/contexthub.styles.css, qui contient les styles CSS des modules d’IU et d’IU ContextHub.

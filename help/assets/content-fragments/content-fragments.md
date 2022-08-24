@@ -7,13 +7,13 @@ exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
 # Utilisation de fragments de contenu {#working-with-content-fragments}
 
-Avec Adobe Experience Manager (AEM), les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md) Ils vous permettent de préparer du contenu prêt à être utilisé dans plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface utilisateur.
+Avec Adobe Experience Manager (AEM), les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md) Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface.
 
 Les fragments de contenu contiennent du contenu structuré :
 
@@ -79,11 +79,10 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >* Les **fragments de contenu** sont du contenu éditorial, qui peut être utilisé pour accéder à des données structurées, y compris du texte, des chiffres et des dates. Il s’agit d’un contenu pur, avec définition et structure, mais sans conception visuelle et/ou mise en page supplémentaires.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
-
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments).
+>Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
 >[!NOTE]
 >

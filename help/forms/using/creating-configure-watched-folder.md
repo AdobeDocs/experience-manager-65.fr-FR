@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1820'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
    * **Analyser le dossier d’entrée toutes les :** spécifiez l’intervalle de temps, en secondes, entre les analyses du dossier de contrôle des entrées. À moins que le paramètre Ralentissement ne soit activé, l’attribut Intervalle de répétition doit être supérieur à la durée du traitement d’une tâche moyenne, faute de quoi le système risque d’être surchargé. La valeur de l’intervalle doit être supérieure ou égale à un.
    * **Exclure le modèle de fichier** : indiquez une liste délimitée par des points-virgules (;) de modèles utilisés par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Inclure le modèle de fichier** : spécifiez une liste délimitée par des points-virgules (;) des modèles utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si le paramètre Inclure le modèle de fichier a pour valeur input&amp;ast;, tous les fichiers et dossiers correspondant à input&amp;ast; sont sélectionnés. La valeur par défaut, &amp;ast;, désigne tous les fichiers et les dossiers. Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
-   * **Durée d’attente :** indiquez le temps, en millisecondes, à patienter avant l’analyse d’un dossier ou fichier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé une minute auparavant, ce dernier est sélectionné après 59 minutes ou plus. La valeur par défaut est 0.
+   * **Durée d’attente :** indiquez le temps, en millisecondes, à patienter avant l’analyse d’un dossier ou fichier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. La valeur par défaut est 0.
 
       Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1000 millisecondes. Cet intervalle évite que le dossier de contrôle analyse le fichier tant que ce dernier a une existence inférieure à dix minutes.
 

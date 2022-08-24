@@ -143,9 +143,9 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 >[!MORELIKETHIS]
 >
 >* [Création et organisation des pages](/help/sites-authoring/managing-pages.md)
-* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
-* [Configurez le courrier électronique dans Experience Manager](/help/sites-administering/notification.md).
-* [Importation des métadonnées de ressource](/help/assets/metadata.md#import-metadata).
-* [Exportation des métadonnées des ressources](/help/assets/metadata.md#export-metadata).
-* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
+>* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
+>* [Configuration du courrier électronique dans Experience Manager](/help/sites-administering/notification.md).
+>* [Importation de métadonnées de ressource](/help/assets/metadata.md#import-metadata).
+>* [Exportation des métadonnées de ressources](/help/assets/metadata.md#export-metadata).
+>* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
 

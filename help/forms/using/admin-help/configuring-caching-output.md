@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ Ce mode de mise en cache garantit l’utilisation des ressources les plus récen
 
 **Définition de la mise en cache sans condition**
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Sans condition et cliquez sur Enregistrer.
 
 ### Utilisation du point de contrôle du cache {#use-the-cache-check-point}
@@ -68,14 +68,14 @@ Utilisez ce mode de cache dans des environnements de production hautes performan
 
 **Réinitialisation du point de contrôle du cache**
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Sous Paramètres de contrôle du cache de sortie, cliquez sur Point de contrôle du cache.
 
 ### Réinitialisation du contenu du cache {#reset-the-cache-contents}
 
 Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la première demande est plus lente pour chaque formulaire, car le service Output effectue un rendu complet et crée un nouveau contenu de cache.
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Réinitialiser le cache.
 
 ## Configuration des paramètres du cache {#configuring-cache-settings}
@@ -92,7 +92,7 @@ Pour accéder à ces paramètres, dans Administration Console, cliquez sur Servi
 
 Les paramètres de la zone **Paramètres du cache global** affectent tous les types de cache. Si vous modifiez l’un de ces paramètres, redémarrez le service Output pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
-**Taille max. du document du cache (Ko) :** la taille maximale, en kilo-octets, d’une conception de formulaire ou d’une autre ressource pouvant être stockée dans tout cache en mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille max. du document du cache (Ko) :** taille maximale, en kilo-octets, d’une conception de formulaire ou autre ressource pouvant être stockée dans un cache mémoire. Ce paramètre global s’applique à tous les caches mémoire. Si une ressource est supérieure à cette valeur, elle n’est pas mise en cache dans la mémoire. La valeur par défaut est 1024 kilo-octets. Ce paramètre n’a aucune incidence sur le cache disque.
 
 **Mise en cache des rendus de formulaire activée :** cette option est sélectionnée par défaut, ce qui signifie que les formulaires rendus sont mis en cache pour récupération ultérieure. Ce paramètre a peu d’incidence sur les performances du service Output, car il ne met pas les documents non interactifs en cache. Cette option n’a aucune incidence lorsque vous utilisez le service Output avec des documents non interactifs rendus sur le client.
 
@@ -104,9 +104,9 @@ Le service Output met toujours les conceptions de formulaire en cache sur le dis
 
 **Taille du cache de configuration des modèles :** nombre maximal d’objets de configuration de modèle à conserver en mémoire. La valeur par défaut est 100. Il est recommandé de la définir sur une valeur supérieure ou égale à celle de la Taille du cache des modèles. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Taille de cache des modèles :** nombre maximal d’objets de contenu de modèle à conserver en mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
+**Taille du cache des modèles :** nombre maximal d’objets de contenu de modèle à conserver en mémoire. La valeur par défaut est 100. Ce paramètre n’a aucune incidence sur le cache disque.
 
-**Activée :** cette case est cochée par défaut, ce qui signifie que les modèles de formulaire sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les modèles de formulaire sont uniquement mis en cache sur le disque.
+**Activé :** cette case est cochée par défaut, ce qui signifie que les modèles de formulaire sont mis en mémoire cache. Si cette option n’est pas sélectionnée, les modèles de formulaire sont uniquement mis en cache sur le disque.
 
 ### Mise en cache des fragments et images {#caching-fragments-and-images}
 

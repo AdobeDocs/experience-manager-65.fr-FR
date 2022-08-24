@@ -55,7 +55,7 @@ Par exemple :
 
 Pour configurer plusieurs éditeurs, procédez comme suit :
 
-1. Sur le noeud `cq:inplaceEditing` (de type `cq:InplaceEditingConfig`), définissez les propriétés suivantes :
+1. Sur le noeud `cq:inplaceEditing` (de type `cq:InplaceEditingConfig`) définissent les propriétés suivantes :
 
    * Nom:`editorType`
    * Type : `String`
@@ -66,16 +66,16 @@ Pour configurer plusieurs éditeurs, procédez comme suit :
    * Nom : `cq:ChildEditors`
    * Type : `nt:unstructured`
 
-1. Sous le noeud `cq:childEditors` , créez un noeud pour chaque éditeur statique :
+1. Sous `cq:childEditors` , créez un noeud pour chaque éditeur statique :
 
    * Nom : Le nom de chaque noeud est le nom de la propriété qu’il représente, comme c’est le cas avec les cibles de dépôt. Par exemple, `image` et `text`.
    * Type : `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Il existe une corrélation entre les cibles de dépôt définies et les éditeurs enfants. Le nom du noeud `cq:ChildEditorConfig` est considéré comme l’identifiant de la cible de dépôt à utiliser comme paramètre pour l’éditeur enfant sélectionné. Si la sous-zone modifiable ne comporte pas de cible de dépôt, par exemple, dans un composant de texte, le nom de l’éditeur enfant est toujours considéré comme un identifiant pour identifier la zone modifiable correspondante.
+   >Il existe une corrélation entre les cibles de dépôt définies et les éditeurs enfants. Nom de la variable `cq:ChildEditorConfig` est considéré comme l’identifiant de la cible de dépôt à utiliser comme paramètre pour l’éditeur enfant sélectionné. Si la sous-zone modifiable ne comporte pas de cible de dépôt, par exemple, dans un composant de texte, le nom de l’éditeur enfant est toujours considéré comme un identifiant pour identifier la zone modifiable correspondante.
 
-1. Sur chacun de ces noeuds (`cq:ChildEditorConfig`), définissez les propriétés :
+1. Sur chacun de ces noeuds (`cq:ChildEditorConfig`) définissent les propriétés :
 
    * Nom: `type`.
    * Valeur : le nom de l’éditeur statique enregistré ; par exemple, `image` et `text`.
@@ -85,7 +85,7 @@ Pour configurer plusieurs éditeurs, procédez comme suit :
 
 ### Configuration supplémentaire pour les éditeurs de texte enrichi {#additional-configuration-for-rich-text-editors}
 
-La configuration des éditeurs de texte enrichi est légèrement différente, dans la mesure où vous pouvez configurer chaque instance RTE séparément. Pour plus d’informations, voir [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md). Pour que plusieurs éditeurs de texte enrichi créent une configuration pour chaque éditeur de texte enrichi statique. Adobe recommande de créer le noeud de configuration sous `cq:InplaceEditingConfig`, car chaque éditeur de texte enrichi peut avoir une configuration différente. Sous le nouveau noeud, créez chaque configuration d’éditeur de texte enrichi.
+La configuration des éditeurs de texte enrichi est légèrement différente, dans la mesure où vous pouvez configurer chaque instance RTE séparément. Pour plus d’informations, voir [configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md). Pour que plusieurs éditeurs de texte enrichi créent une configuration pour chaque éditeur de texte enrichi statique. Adobe recommande de créer le noeud de configuration sous `cq:InplaceEditingConfig` car chaque éditeur de texte enrichi peut avoir une configuration différente. Sous le nouveau noeud, créez chaque configuration d’éditeur de texte enrichi.
 
 ```xml
     texttext
@@ -102,19 +102,19 @@ La configuration des éditeurs de texte enrichi est légèrement différente, da
 
 >[!NOTE]
 >
->Cependant, dans le cas de l’éditeur de texte enrichi, la propriété `configPath` est prise en charge lorsque le composant ne contient qu’une seule instance de l’éditeur (sous-zone modifiable). Cette utilisation de `configPath` est fournie pour prendre en charge la compatibilité descendante avec les anciennes boîtes de dialogue de l’interface utilisateur du composant.
+>Cependant, dans le cas de l’éditeur de texte enrichi, la propriété `configPath` est prise en charge lorsque le composant ne contient qu’une seule instance de l’éditeur (sous-zone modifiable). Cette utilisation de `configPath` est fourni pour prendre en charge la compatibilité descendante avec les anciennes boîtes de dialogue de l’interface utilisateur du composant.
 
 >[!CAUTION]
 >
->Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Dans le cas contraire, les configurations de l’éditeur de texte enrichi sont disponibles uniquement pour les administrateurs et non pour les utilisateurs du groupe `content-author`.
+>Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Dans le cas contraire, les configurations de l’éditeur de texte enrichi sont disponibles uniquement pour les administrateurs et non pour les utilisateurs du groupe. `content-author`.
 
 ## Exemples de code {#code-samples}
 
-Vous trouverez le code de cette page sur [projet aem-authoring-hybrideditors sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Vous pouvez télécharger le projet complet sous la forme [d’une archive ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+Vous trouverez le code de cette page sur [projet aem-authoring-hybrideditors sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Vous pouvez télécharger l’intégralité du projet sous la forme [une archive ZIP ;](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
 
 ## Ajout d’un éditeur statique {#add-an-in-place-editor}
 
-Pour obtenir des informations générales sur l’ajout d’un éditeur statique, reportez-vous au document [Personnalisation de la création de pages](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Pour plus d’informations sur l’ajout d’un éditeur statique, voir le document [personnalisation de la création de pages](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
 >[!MORELIKETHIS]
 >

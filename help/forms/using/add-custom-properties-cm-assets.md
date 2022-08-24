@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4443'
 ht-degree: 100%
 
@@ -923,7 +923,7 @@ Pour ce faire, effectuez les étapes suivantes :
    <tr>
       <td>sling:orderBefore<br /> </td>
       <td>Chaîne</td>
-      <td>card</td>
+      <td>carte</td>
    </tr>
    </tbody>
    </table>

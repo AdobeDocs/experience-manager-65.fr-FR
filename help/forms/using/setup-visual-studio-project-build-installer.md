@@ -9,7 +9,7 @@ discoiquuid: c71c2a17-54f9-4c95-a90a-3c89d6d45721
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 100%
 
@@ -25,8 +25,8 @@ Pour obtenir le code source de l’application AEM Forms, procédez comme suit�
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
 1. Dans la section **[!UICONTROL Filtres]** :
    1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
-   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
-1. Cliquez sur le nom du package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis cliquez sur **[!UICONTROL Télécharger]**.
+   2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
+1. Appuyez sur le nom applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://docs.adobe.com/content/help/fr/experience-manager-65/administering/contentmanagement/package-manager.html) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
 1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 

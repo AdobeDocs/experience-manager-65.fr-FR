@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 100%
@@ -29,7 +29,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
    * Évaluez le statut de maturité actuel de votre organisation en termes de localisation. Déterminez si vous disposez des **outils**, **processus** et **ressources** nécessaires pour prendre en charge une expansion internationale.
    * Tenez compte des **réglementations internationales** et des **préférences linguistiques régionales**. Concevez des structures de contenu et des processus flexibles qui peuvent s’adapter à un environnement professionnel global en constante évolution.
 
-* Déterminez un modèle de **gouvernance** soutenant votre activité globale et utilisez des mécanismes AEM comme MSM et les permissions d’utilisateur afin d’appliquer le modèle sélectionné. Par exemple, déterminez si le contenu sera rédigé de manière centralisée et transmis ou extrait vers les régions ou pays. Déterminez le contenu qui peut être déverrouillé et modifié dans les zones géographiques. Déterminez qui est responsable du lancement et de la gestion des traductions.
+* Déterminez un modèle de **gouvernance** soutenant votre activité globale et utilisez des mécanismes AEM comme MSM et les permissions d’utilisateur afin d’appliquer le modèle sélectionné. Par exemple, déterminez si le contenu sera rédigé de manière centralisée et transmis ou extrait vers les régions/pays. Déterminez le contenu qui peut être déverrouillé et modifié dans les zones géographiques. Déterminez qui est responsable du lancement et de la gestion des traductions.
 * Si les ressources le permettent, il est préférable de gérer l’activité de traduction avec une équipe centrale qui peut développer une expertise dans les outils, les processus et les relations avec les fournisseurs nécessaires.
 * **Planifiez**, **prototypez** et **testez** votre structure et vos processus globaux en vous assurant qu’ils soutiennent votre activité et que vous bénéficiez de l’appui nécessaire de la part des parties prenantes des différentes zones géographiques.
 

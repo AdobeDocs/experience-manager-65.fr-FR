@@ -12,8 +12,8 @@ exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 64%
+source-wordcount: '1276'
+ht-degree: 86%
 
 ---
 
@@ -31,13 +31,13 @@ Pour placer ces chaînes URL dans vos pages et applications web, copiez-les depu
 
 Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](embed-code.md).
 
-Voir aussi [Lier les URL YouTube à votre application web](video.md).
+Voir aussi [Liaison d’URL YouTube à une application web](video.md).
 
-Voir aussi [Diffuser des images optimisées pour un site réactif](responsive-site.md).
+Voir aussi [Diffusion d’images optimisées pour un site réactif](responsive-site.md).
 
 Voir aussi [Chargement de ressources](manage-assets.md#uploading-assets).
 
-## Obtention de l’URL d’une ressource {#obtaining-a-url-for-an-asset}
+## Obtention d’une URL pour une ressource {#obtaining-a-url-for-an-asset}
 
 Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
@@ -47,29 +47,29 @@ Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’ima
 >
 >Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 >
->Voir [Publier les paramètres prédéfinis de la visionneuse](managing-viewer-presets.md#publishing-viewer-presets).
+>Voir [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
 >
->Voir [Publication des paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
+>Voir [Publication de paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
 
 Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étapes ci-dessous ne vous présentent qu’une seule méthode.
 
 **Obtention de l’URL d’une ressource:**
 
-1. Accédez à la ressource *publiée* dont vous souhaitez copier l’URL du paramètre d’image ou de visionneuse prédéfini, puis sélectionnez la ressource à ouvrir.
+1. Accédez à la ressource *publiée* dont vous souhaitez copier l’URL du paramètre d’image ou de visionneuse prédéfini, puis sélectionnez la ressource pour l’ouvrir.
 
    N’oubliez pas que les URL ne peuvent être copiées qu’*après* la *publication* des ressources. En outre, le paramètre de visionneuse prédéfini ou le paramètre d’image prédéfini doit également être publié.
 
    Voir [Publication de ressources](publishing-dynamicmedia-assets.md).
 
-   Voir [Publier les paramètres prédéfinis de la visionneuse](managing-viewer-presets.md#publishing-viewer-presets).
+   Voir [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
 
-   Voir [Publication des paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
+   Voir [Publication de paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
 
 1. Selon la ressource sélectionnée, procédez comme suit :
 
    * Si vous avez sélectionné une image, dans le menu déroulant, sélectionnez **[!UICONTROL Rendus]**.
 
-      Sous l’en-tête **[!UICONTROL Dynamic]**, sélectionnez un nom de paramètre prédéfini pour afficher son rendu dans le cadre de droite. Si nécessaire, faites défiler la liste Rendus pour afficher l’en-tête Dynamic.
+      Sous l’en-tête **[!UICONTROL Dynamique]**, sélectionnez un nom de paramètre prédéfini afin d’afficher son rendu dans le cadre de droite. Si nécessaire, faites défiler la liste Rendus pour afficher l’en-tête Dynamic.
 
       Dans la partie inférieure du rail gauche, sélectionnez **[!UICONTROL URL]**.
 
@@ -77,17 +77,17 @@ Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étape
 
    * Si vous avez sélectionné une visionneuse à 360°, une visionneuse d’images, un ensemble de carrousel ou une vidéo, dans le menu déroulant, sélectionnez **[!UICONTROL Visionneuses]**.
 
-      Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
+      Dans le rail de gauche, sélectionnez un nom de paramètre prédéfini de la visionneuse. Un aperçu de la visionneuse ou de la vidéo s’ouvre dans une page distincte.
 
-      Dans le rail de gauche, en bas, sélectionnez **[!UICONTROL URL]**.
+      Dans le rail de gauche, dans la partie inférieure, sélectionnez **[!UICONTROL URL]**.
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Sélectionnez le texte et copiez-le dans votre navigateur web afin de pouvoir prévisualiser la ressource ou l’ajouter à votre page de contenu web.
 
-   Pour quitter la fenêtre URL, sélectionnez la balise **[!UICONTROL X]** ou sélectionnez **[!UICONTROL Fermer]**.
+   Pour fermer la fenêtre d’URL, sélectionnez **[!UICONTROL X]** ou **[!UICONTROL Fermer]**.
 
-## Obtention de l’URL d’une ressource statique {#obtaining-a-url-for-a-static-asset}
+## Obtention d’une URL pour une ressource statique {#obtaining-a-url-for-a-static-asset}
 
 Dynamic Media prend en charge le déploiement de ressources statiques, qui sont des ressources supplémentaires au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
 
@@ -103,7 +103,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 **Obtention de l’URL d’une ressource statique:**
 
-1. Accédez à la ressource statique *publiée* dont vous souhaitez copier l’URL et sélectionnez la ressource à ouvrir.
+1. Accédez à la ressource statique *publiée* dont vous souhaitez copier l’URL et sélectionnez-la pour l’ouvrir.
 
    N’oubliez pas que les URL ne peuvent être copiées qu’*après* la *publication* de la ressource statique.
 
@@ -124,8 +124,8 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 ## Obtention d’une URL de vidéo pour un rendu vidéo publié {#obtaining-a-video-url-for-a-published-video-rendition}
 
 1. Dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud]** > **[!UICONTROL Services Cloud]**.
-1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’à l’en-tête **[!UICONTROL Cloud Services Dynamic Media]**, puis sélectionnez **[!UICONTROL Afficher les configurations]**.
-1. Sous **[!UICONTROL Configurations disponibles]**, sélectionnez le nom de la configuration de votre choix.
+1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis sélectionnez **[!UICONTROL Afficher les configurations]**.
+1. Sous **[!UICONTROL Configurations disponibles]**, sélectionnez le nom de la configuration qui vous intéresse.
 
 1. Sur la page **[!UICONTROL Paramètres de cloud Dynamic Media]**, sous **[!UICONTROL URL du service vidéo]**, copiez le chemin URL complet. Vous devrez indiquer le chemin d’accès à l’URL copiée plus loin dans les étapes.
 
@@ -139,7 +139,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Par exemple, si l’ID d’enregistrement est `87654321|MyCompany`, le nom du client est `MyCompany`.
 
-1. Près du coin supérieur gauche de la page, sélectionnez **[!UICONTROL Cloud Services]**, puis sélectionnez le logo du Experience Manager et accédez à **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Cloud Services]**, puis sélectionnez le logo du Experience Manager et accédez à **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
 1. Copiez le chemin URL du rendu vidéo à partir du référentiel JCR (Java™ Content Repository).
 
    Par exemple, le chemin URL du rendu vidéo est similaire au suivant :
@@ -158,11 +158,11 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Cet exemple représente l’URL complète d’un rendu vidéo publié.
 
-## Obtention d’une URL de vidéo pour la diffusion en continu adaptative (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtention d’une URL de vidéo pour la diffusion adaptative (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud]** > **[!UICONTROL Services Cloud]**.
-1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’à l’en-tête **[!UICONTROL Cloud Services Dynamic Media]**, puis sélectionnez **[!UICONTROL Afficher les configurations]**.
-1. Sous **[!UICONTROL Configurations disponibles]**, sélectionnez le nom de la configuration de votre choix.
+1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis sélectionnez **[!UICONTROL Afficher les configurations]**.
+1. Sous **[!UICONTROL Configurations disponibles]**, sélectionnez le nom de la configuration qui vous intéresse.
 1. Sur la page **[!UICONTROL Paramètres Dynamic Media Cloud Services]**, procédez comme suit :
 
    * Sous **[!UICONTROL URL du service vidéo]**, copiez le chemin d’URL entier. Le chemin URL copié est nécessaire ultérieurement dans ces étapes. Par exemple, le chemin URL est similaire au suivant :
@@ -180,7 +180,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    | Protocole de diffusion vidéo que vous utilisez | Sélecteur de protocole à utiliser |
    |---|---|
-   | HTTP  <br> Si vous utilisez HTTP (diffusion vidéo non sécurisée), veillez à remplacer https par http dans la valeur URL du service vidéo que vous avez copiée précédemment. | `public/` |
+   | HTTP <br> Si vous utilisez HTTP (diffusion vidéo non sécurisée), veillez à remplacer https par http dans la valeur URL du service vidéo que vous avez copiée précédemment. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Copiez le chemin complet de la ressource vidéo dans Experience Manager, tel qu’il est traité par Dynamic Media. Le chemin d’accès à la ressource vidéo copié est nécessaire ultérieurement dans ces étapes.
@@ -201,7 +201,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    `https://gateway-na.assetsadobe.com/DMGateway/public-ssl/demoCo/content/dam/marketing/MyVideo.mp4.m3u8`
 
-## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
+## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 

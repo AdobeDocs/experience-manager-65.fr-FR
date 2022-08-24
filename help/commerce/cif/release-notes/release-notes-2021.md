@@ -5,7 +5,7 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 41%
+ht-degree: 56%
 
 ---
 
@@ -31,13 +31,13 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-november}
 
-* Extension des composants myAccount basés sur les composants Peregrine extensibles de Commerce
+* Extension des composants myAccount, basés sur les composants extensibles Peregrine de Commerce
 
 ![Extension des composants myAccount](/help/assets/CIF/extended-myAccount-components.png)
 
-* Les auteurs peuvent créer des Recommendations de produit Commerce ad hoc à l’aide de types de recommandations supplémentaires.
+* Les auteurs peuvent créer des recommandations de produits Commerce ad hoc à l’aide de types de recommandations supplémentaires.
 
-* Prise en charge des cartes-cadeaux dans AEM Storefront
+* Prise en charge des cartes-cadeaux dans la vitrine AEM
 
 ## Date de publication : Octobre 2021
 
@@ -49,15 +49,15 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-october}
 
-* Le module complémentaire CIF prend en charge la dernière version de Commerce v2.4.3 avec de nouvelles API et schémas GraphQL.
+* Le module complémentaire CIF prend en charge la dernière version de Commerce v2.4.3 avec de nouveaux schémas et API GraphQL.
 
-* Les auteurs peuvent ajouter des liens vers des pages de produits et de catalogues dans des champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
+* Les auteurs peuvent ajouter des liens vers les pages de produits et de catalogues dans les champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
 
-* Le panier et le passage en caisse des fenêtres contextuelles existantes ont été remplacés par un panier AEM dédié et des pages de passage en caisse. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
+* Les fenêtres contextuelles de panier et de passage en caisse existantes ont été remplacées par des pages de panier et de passage en caisse AEM dédiées. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
 
-* Les vendeurs peuvent masquer certaines catégories de catalogues de produits dans la navigation à l’aide du serveur principal Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de commerce &quot;inclure dans le menu&quot; pour afficher/masquer les catégories dans la navigation.
+* Les commerces peuvent masquer certaines catégories de catalogues de produits lors de la navigation à l’aide du serveur principal de Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de Commerce « inclure dans le menu » pour afficher/masquer les catégories dans la navigation.
 
-* AEM Storefront Venia renvoie une erreur HTTP 404 si la page de catégorie ou de produit est introuvable
+* Le storefront Venia d’AEM renvoie une erreur HTTP 404 si la catégorie ou page produit est introuvable.
 
 ## Date de publication : Septembre 2021
 

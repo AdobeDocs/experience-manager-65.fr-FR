@@ -1,8 +1,8 @@
 ---
 title: Utilisation de Maven pour Communities
-seo-title: Utilisation de Maven pour Communities
+seo-title: Using Maven for Communities
 description: Fichier jar de l’API Uber AEM
-seo-description: Fichier jar de l’API Uber AEM
+seo-description: AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '117'
+source-wordcount: '109'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Cette section de la documentation d’AEM Communities s’ajoute aux éléments 
 
 Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts individuels :
 
-* AEM [Jar de l’API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+* AEM [Fichier jar d’API Uber](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 >
 >Il est recommandé de rester à jour avec la version la plus récente de Communities.
 >
->Voir la section [Dernières versions](deploy-communities.md#latest-releases) pour identifier la version la plus récente.
+>Voir [Dernières versions](deploy-communities.md#latest-releases) pour identifier la version la plus récente.
 
 ## Exemple de dépendance Maven {#maven-dependency-example}
 
@@ -50,7 +50,7 @@ Il n’existe qu’un seul artefact &quot;uber&quot; qui remplace les artefacts 
 
 >[!NOTE]
 >
->Voir [AEM référentiel Uber jar](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) pour identifier le dernier artefact Uber jar.
+>Voir [Référentiel Uber jar AEM](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) pour identifier le dernier artefact Uber jar.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

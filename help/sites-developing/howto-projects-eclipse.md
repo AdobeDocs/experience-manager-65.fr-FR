@@ -1,8 +1,8 @@
 ---
 title: Développement de projets AEM à l’aide d’Eclipse
-seo-title: Développement de projets AEM à l’aide d’Eclipse
+seo-title: How to Develop AEM Projects Using Eclipse
 description: Ce guide décrit comment utiliser Eclipse pour le développement de projets basés sur AEM
-seo-description: Ce guide décrit comment utiliser Eclipse pour le développement de projets basés sur AEM
+seo-description: This guide describes how to use Eclipse for developing AEM based projects
 uuid: 79fee76f-6bcc-498f-af46-530816b41bbe
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '454'
-ht-degree: 76%
+source-wordcount: '435'
+ht-degree: 75%
 
 ---
 
@@ -48,7 +48,7 @@ Installez Eclipse en suivant les [instructions d’installation](https://wiki.ec
 
 ## Configuration du projet AEM basé sur Maven {#set-up-your-aem-project-based-on-maven}
 
-Ensuite, configurez votre projet à l’aide de Maven comme décrit dans la section [Comment créer des projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Ensuite, configurez votre projet à l’aide de Maven, comme décrit dans la section [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ## Préparation de la prise en charge des JSP pour Eclipse {#prepare-jsp-support-for-eclipse}
 
@@ -59,12 +59,12 @@ Eclipse peut également fournir une assistance lors de l’utilisation des JSP, 
 
 Pour que cela fonctionne :
 
-1. Suivez les instructions de la section [Comment travailler avec des JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) dans [Comment créer des projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
+1. Suivez les instructions de la section [Utilisation des JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
 1. Ajoutez la section &lt;build /> suivante au POM du module de contenu.
 
    Maven d’Eclipse prend en charge le plugin m2e, ne prend pas en charge le plugin maven-jspc-plugin et cette configuration indique à m2e d’ignorer le plugin et la tâche associée consistant à nettoyer les résultats de la compilation temporaire.
 
-   Ce n&#39;est pas un problème : comme indiqué dans [Comment travailler avec des JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), le plug-in maven-jspc-plugin de cette configuration n’est utilisé que pour valider la compilation des JSP dans le cadre du processus de création. Eclipse signale déjà les problèmes rencontrés dans les JSP et ne se repose pas sur ce plugin Maven pour le faire.
+   Ce n&#39;est pas un problème : comme indiqué dans [Utilisation des JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), le plug-in maven-jspc-plugin de cette configuration n’est utilisé que pour valider la compilation des JSP dans le cadre du processus de création. Eclipse signale déjà les problèmes rencontrés dans les JSP et ne se repose pas sur ce plugin Maven pour le faire.
 
    **myproject/content/pom.xml**
 
@@ -133,4 +133,4 @@ Pour que cela fonctionne :
 
    >[!NOTE]
    >
-   >Si vous incluez `/libs/foundation/global.jsp` ou d’autres JSP dans `/libs`, vous devez les copier dans votre projet afin qu’Eclipse puisse résoudre l’inclusion. En même temps, vous devez vous assurer qu’ils ne sont pas inclus dans le module de contenu Maven. La procédure à suivre pour ce faire est décrite dans la section [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   >Si vous incluez `/libs/foundation/global.jsp` ou d’autres JSP dans `/libs`, vous devez le copier dans votre projet afin qu’Eclipse puisse résoudre l’inclusion. En même temps, vous devez vous assurer qu’ils ne sont pas inclus dans le module de contenu Maven. La procédure à suivre pour ce faire est décrite dans la section [Création de projets AEM à l’aide d’Apache Maven](/help/sites-developing/ht-projects-maven.md).

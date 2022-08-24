@@ -12,7 +12,7 @@ discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '10805'
 ht-degree: 100%
 
@@ -134,9 +134,9 @@ Ajoutez un point de terminaison EJB à l’aide de l’API Java :
 1. Définissez les attributs du point de terminaison EJB.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identifiant du connecteur en appelant la méthode `CreateEndpointInfo` de l’objet `setConnectorId` et en transmettant la valeur de chaîne `EJB`.
-   * Spécifiez la description du point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setDescription` et en transmettant une valeur string qui décrit le point de terminaison.
-   * Indiquez le nom du point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setName` et en transmettant une valeur string qui en spécifie le nom.
+   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `EJB`.
+   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
+   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string spécifiant le nom du service.
    * Spécifiez l’opération appelée en appelant la méthode `CreateEndpointInfo` de l’objet `setOperationName` et en transmettant une valeur string qui spécifie le nom de l’opération. Pour les points de terminaison SOAP et EJB, spécifiez un caractère générique (`*`) qui implique toutes les opérations.
 
@@ -180,7 +180,7 @@ Pour ajouter un point d’entrée SOAP à un service, effectuez les tâches suiv
 1. Créez un point d’entrée SOAP.
 1. Activez le point d’entrée.
 
-**Inclure les fichiers de projet**
+**Incluez les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -239,7 +239,7 @@ Ajoutez un point d’entrée SOAP à un service à l’aide de l’API Java :
 1. Définissez les attributs de point d’entrée SOAP.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identifiant du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `SOAP`.
+   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `SOAP`.
    * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
@@ -336,7 +336,7 @@ La liste suivante spécifie les valeurs de configuration définies lors de l’a
 * **waitTime** : délai d’attente (en millisecondes) avant l’analyse d’un dossier ou d’un fichier après sa création. Par exemple, si la durée d’attente est de 36 000 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&amp;ast;60 &amp;ast;1000 millisecondes. Ce paramètre empêche le dossier de contrôle d’analyser le fichier s’il n’a pas attendu dix minutes. La valeur par défaut est 0.
 * **excludeFilePattern** : le modèle utilisé par un dossier de contrôle pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. Ainsi, si l’attribut excludeFilePattern a la valeur `data*`, tous les fichiers et les dossiers correspondant à `data*` ne sont pas sélectionnés. Cela inclut les fichiers et les dossiers nommés `data1`, `data2`, etc. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières.
 * **includeFilePattern** : le modèle utilisé par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si l’attribut IncludeFilePattern a la valeur `*`, tous les fichiers et les dossiers correspondant à `input*` sont sélectionnés. Cela inclut les fichiers et les dossiers nommés `input1`, `input2`, etc. La valeur par défaut est `*`. Cette valeur indique tous les fichiers et dossiers. En outre, le modèle peut être complété par des caractères génériques pour spécifier des modèles de fichier. Le dossier de contrôle modifie l’expression régulière afin de prendre en charge les modèles génériques tels que `*.*` et `*.pdf`. Ces modèles de caractères génériques ne sont pas pris en charge par les expressions régulières. Cette valeur n’est pas obligatoire.
-* **resultFolderName** : le dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d’accès absolu ou relatif au répertoire. Si les résultats ne se trouvent pas dans ce dossier, vérifiez le dossier failure. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier de résultats dans le dossier de contrôle.
+* **resultFolderName** : le dossier dans lequel les résultats enregistrés sont stockés. Cet emplacement peut être un chemin d’accès absolu ou relatif au répertoire. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `result/%Y/%M/%D/`. Il s’agit du dossier de résultats dans le dossier de contrôle.
 * **preserveFolderName :** l’emplacement où les fichiers sont stockés après avoir été analysés et sélectionnés. Cet emplacement peut être un chemin d’accès de répertoire absolu, relatif ou nul. La valeur par défaut est `preserve/%Y/%M/%D/`.
 * **failureFolderName :** le dossier dans lequel les fichiers d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Les fichiers en lecture seule ne sont pas traités et ils sont enregistrés dans le dossier failure. La valeur par défaut est `failure/%Y/%M/%D/`.
 * **preserveOnFailure :** conserve les fichiers d’entrée en cas d’échec de l’exécution de l’opération sur un service. La valeur par défaut est true.
@@ -365,13 +365,13 @@ Lors de la création d’un point d’entrée de dossier de contrôle, vous deve
 
 Pour définir une valeur de paramètre de sortie requise pour un point d’entrée de dossier de contrôle, spécifiez les valeurs suivantes :
 
-**Nom du paramètre de sortie :** le nom du paramètre de sortie. Le nom d’une valeur de sortie de processus est spécifié dans Workbench. Si la valeur de sortie appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom de sortie est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre de sortie pour le processus présenté dans cette section est `SecuredDoc`.
+**Nom du paramètre de sortie :** le nom du paramètre de sortie. Le nom d’une valeur de sortie de processus est spécifié dans Workbench. Si la valeur de sortie appartient à une opération de service (un service qui n’est pas un processus créé dans Workbench), le nom de sortie est spécifié dans le fichier component.xml. Par exemple, le nom du paramètre de sortie pour le processus introduit dans cette section est `SecuredDoc`.
 
-**Type de mappage :** permet de configurer les sorties du service et de l’opération. Les options suivantes sont disponibles :
+**Type de mappage** : permet de configurer les sorties du service et de l’opération. Les options suivantes sont disponibles :
 
-* Si le service renvoie un seul objet (un seul document), le motif est `%F.pdf` et la destination source est sourcefilename.pdf. Par exemple, le processus présenté dans cette section renvoie un seul document. Par conséquent, le type de mappage peut être défini comme `%F.pdf` (`%F` signifie utiliser le nom du fichier donné). Le motif `%E` spécifie l’extension du document d’entrée.
-* Si le service renvoie une liste, le motif est `Result\%F\`, et la destination source est Result\sourcefilename\source1 (sortie 1) et Result\sourcefilename\source2 (sortie 2).
-* Si le service renvoie une carte, le modèle est `Result\%F\` et la destination source est Result\nom_fichier_source\fichier1 et Result\nom_fichier_source\fichier2. Si la carte comporte plusieurs objets, le modèle est `Result\%F.pdf` et la destination source est Result\nom_fichier_source1.pdf (sortie 1), Result\nom_fichier_source2.pdf (sortie 2), etc.
+* Si le service renvoie un seul objet (un seul document), le modèle est `%F.pdf` et la destination de la source est sourcefilename.pdf. Par exemple, le processus présenté dans cette section renvoie un seul document. Par conséquent, le type de mappage peut être défini en tant que `%F.pdf` (`%F` signifie utiliser le nom de fichier donné). Le motif `%E` spécifie l’extension du document d’entrée.
+* Si le service renvoie une liste, le modèle est `Result\%F\`et la destination de la source est Result\nom_fichier_source1 (sortie 1) et Result\nom_fichier_source2 (sortie 2).
+* Si le service renvoie une carte, le modèle est `Result\%F\` et la destination de la source est Result\nom_fichier_source\fichier1 et Result\nom_fichier_source\fichier2. Si la carte comporte plusieurs objets, le modèle est `Result\%F.pdf` et la destination de la source est Result\nom_fichier_source1.pdf (sortie 1), Result\sourcefilenam2.pdf (sortie 2), etc.
 
 **Type de données** : indique le type de données de la valeur renvoyée. Par exemple, le type de données de la valeur renvoyée par le processus introduit dans cette section est `com.adobe.idp.Document`.
 
@@ -407,8 +407,8 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 1. Définissez les attributs du point de terminaison Watched Folder.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identifiant du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `WatchedFolder`.
-   * Spécifiez la description du point de fin en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
+   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `WatchedFolder`.
+   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
    * Spécifiez l’opération appelée en appelant la méthode `setOperationName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée Watched Folder pour un service issu d’un processus créé dans Workbench, le nom de l’opération est appelé.
@@ -426,7 +426,7 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
 1. Définissez les valeurs des paramètres d’entrée.
 
-   Définissez une valeur de paramètre d’entrée en appelant la méthode `setInputParameterMapping` de l’objet `CreateEndpointInfo` et transmettez les valeurs suivantes :
+   Définissez une valeur de paramètre d’entrée en appelant la méthode `CreateEndpointInfo` de l’objet `setInputParameterMapping` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du nouveau paramètre d’entrée. Par exemple, le nom du paramètre d’entrée pour le service EncryptDocument est `InDoc`.
    * Valeur string qui spécifie le type de données du paramètre d’entrée. Par exemple, le type de données du paramètre d’entrée `InDoc` est `com.adobe.idp.Document`.
@@ -435,14 +435,14 @@ Ajoutez un point d’entrée Watched Folder à l’aide de l’API Java AEM Form
 
    >[!NOTE]
    >
-   >Appeler la méthode `setInputParameterMapping` pour chaque valeur de paramètre d’entrée à définir. Le processus EncryptDocument n’ayant qu’un seul paramètre d’entrée, vous devez appeler cette méthode une seule fois.
+   >Appelez la méthode `setInputParameterMapping` pour chaque valeur de paramètre d’entrée à définir. Le processus EncryptDocument n’ayant qu’un seul paramètre d’entrée, vous devez appeler cette méthode une seule fois.
 
 1. Définissez une valeur de paramètre de sortie.
 
    Définissez une valeur de paramètre de sortie en appelant la méthode `setOutputParameterMapping` de l’objet `CreateEndpointInfo` et transmettez les valeurs suivantes :
 
    * Valeur string spécifiant le nom du paramètre de sortie. Par exemple, le nom du paramètre de sortie pour le service EncryptDocument est `SecuredDoc`.
-   * Une valeur de chaîne qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
+   * Valeur string qui spécifie le type de données du paramètre de sortie. Par exemple, le type de données du paramètre de sortie `SecuredDoc` est `com.adobe.idp.Document`.
    * Valeur string qui spécifie le type de mappage. Par exemple, vous pouvez spécifier `%F.pdf`.
 
 1. Créez un point de terminaison Watched Folder.
@@ -534,7 +534,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure les fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un objet client EndpointRegistry**
 
@@ -789,7 +789,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consulte la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un objet client EndpointRegistry**
 
@@ -837,8 +837,8 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
 1. Définissez les attributs des points de terminaison Remoting.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identifiant du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `Remoting`.
-   * Fournissez une description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
+   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `Remoting`.
+   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
    * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point d’entrée en appelant la méthode `setServiceId` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom du service.
    * Spécifiez l’opération appelée par la méthode `setOperationName` de l’objet `CreateEndpointInfo` et transmettez une valeur de chaîne qui spécifie le nom de l’opération. Pour un point d’entrée Remoting, spécifiez un caractère générique (&amp;ast;).
@@ -849,7 +849,7 @@ Poir ajouter un point d’entrée Remoting à l’aide de l’API Java, procéde
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `enable` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -880,7 +880,7 @@ Pour ajouter un point d’entrée TaskManager à un service, procédez comme sui
 1. Créez un point d’entrée TaskManager.
 1. Activez le point d’entrée.
 
-**Inclure les fichiers de projet**
+**Incluez les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
@@ -891,7 +891,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure les fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un objet client EndpointRegistry**
 
@@ -957,9 +957,9 @@ Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
 1. Définissez les attributs du point d’entrée TaskManager.
 
    * Créez un objet `CreateEndpointInfo` en utilisant son constructeur.
-   * Spécifiez la valeur de l’identifiant du connecteur en appelant la méthode `CreateEndpointInfo` de l’objet `setConnectorId` et en transmettant la valeur de chaîne `TaskManagerConnector`.
-   * Spécifiez la description du point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setDescription` et en transmettant une valeur string décrivant le point de terminaison.
-   * Indiquez le nom du point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setName` et en transmettant une valeur string spécifiant le nom.
+   * Spécifiez la valeur de l’identificateur du connecteur en appelant la méthode `setConnectorId` de l’objet `CreateEndpointInfo` et en transmettant la valeur de chaîne `TaskManagerConnector`.
+   * Spécifiez la description du point d’entrée en appelant la méthode `setDescription` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui décrit le point d’entrée.
+   * Indiquez le nom du point d’entrée en appelant la méthode `setName` de l’objet `CreateEndpointInfo` et en transmettant une valeur de chaîne qui spécifie le nom.
    * Spécifiez le service auquel appartient le point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setServiceId` et en transmettant une valeur string qui spécifie le nom du service.
    * Spécifiez la catégorie à laquelle appartient le point de terminaison en appelant la méthode `CreateEndpointInfo` de l’objet `setCategoryId` et en transmettant une valeur string qui spécifie la valeur de l’identifiant de catégorie. Vous pouvez appeler la méthode `EndpointCategory` de l’objet `getId` afin d’obtenir la valeur d’identifiant de cette catégorie.
    * Spécifiez l’opération appelée en appelant la méthode `CreateEndpointInfo` de l’objet `setOperationName` et en transmettant une valeur string qui spécifie le nom de l’opération. En règle générale, lors de la création d’un point d’entrée `TaskManager` pour un service qui provient d’un processus créé dans Workbench, le nom de l’opération est `invoke`.
@@ -970,7 +970,7 @@ Ajoutez un point de terminaison TaskManager à l’aide de l’API Java :
 
 1. Activez le point d’entrée.
 
-   Activez le point d’entrée en appelant la méthode `enable` de l’objet `EndpointRegistryClient` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
+   Activez le point de terminaison en appelant la méthode `EndpointRegistryClient` de l’objet `enable` et en transmettant l’objet `Endpoint` qui a été renvoyé par la méthode `createEndpoint`.
 
 **Voir également**
 
@@ -1012,7 +1012,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un objet EndpointRegistry Client**
 
@@ -1114,7 +1114,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 * adobe-utilities.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 * jbossall-client.jar (obligatoire si AEM Forms est déployé sur JBoss Application Server)
 
-Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la section [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+Pour plus d’informations sur l’emplacement de ces fichiers, voir [Inclure des fichiers de bibliothèque Java AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **Créer un objet client EndpointRegistry**
 

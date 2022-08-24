@@ -1,8 +1,8 @@
 ---
 title: Aperçu des pages à l’aide des données ContextHub
-seo-title: Aperçu des pages à l’aide des données ContextHub
+seo-title: Previewing Pages Using ContextHub Data
 description: La barre d’outils ContextHub affiche les données ContextHub, vous permet de modifier les données de la boutique, et se révèle utile pour prévisualiser le contenu.
-seo-description: La barre d’outils ContextHub affiche les données ContextHub, vous permet de modifier les données de la boutique, et se révèle utile pour prévisualiser le contenu.
+seo-description: The ContextHub toolbar displays data from ContextHub stores and enables you to change store data and  is useful for previewing content
 uuid: 0150555a-0a92-4692-a706-bbe59fd34d6a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '365'
 ht-degree: 96%
 
 ---
 
-# Aperçu des pages à l’aide des données ContextHub {#previewing-pages-using-contexthub-data}
+# Aperçu des pages à l’aide des données ContextHub{#previewing-pages-using-contexthub-data}
 
 La barre d’outils [ContextHub](/help/sites-developing/contexthub.md) affiche les données ContextHub et vous permet de modifier les données de la boutique. Elle est utile pour prévisualiser le contenu déterminé par des données dans une boutique ContextHub.
 
@@ -64,7 +64,7 @@ Certains modules d’IU affichent une fenêtre contextuelle lorsque l’utilisat
 
 La fenêtre contextuelle d’un module peut contenir des éléments de formulaire qui vous permettent de changer les données contenues dans la boutique ContextHub. Si le contenu de la page est déterminé par les données de la boutique, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
 
-### Mode Plein écran  {#fullscreen-mode}
+### Mode Plein écran {#fullscreen-mode}
 
 Les fenêtres contextuelles peuvent inclure une icône sur laquelle vous cliquez ou appuyez afin que le contenu de la fenêtre contextuelle englobe l’intégralité de la fenêtre du navigateur.
 

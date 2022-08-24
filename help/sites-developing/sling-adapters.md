@@ -13,7 +13,7 @@ exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
 source-wordcount: '2318'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
@@ -152,7 +152,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td>S’il s’agit d’une ressource de nœud <code>cq:Component</code>.</td>
   </tr>  
   <tr>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">Conception</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Design.html">Conception</a></td>
    <td>S’il s’agit d’un nœud de conception (<code>cq:Page</code>).</td>
   </tr>
   <tr>
@@ -231,7 +231,7 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
    <td> </td>
   </tr>
   <tr>

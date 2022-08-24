@@ -7,7 +7,7 @@ exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '715'
-ht-degree: 39%
+ht-degree: 43%
 
 ---
 
@@ -19,7 +19,7 @@ Pour commencer à utiliser AEM Content and Commerce, vous devez installer AEM mo
 
 [AEM Service Pack 6.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) La version 7 ou ultérieure est requise.
 
-## Intégration  {#onboarding}
+## Intégration {#onboarding}
 
 L’intégration à AEM Content and Commerce est un processus en deux étapes :
 
@@ -51,24 +51,24 @@ Le module complémentaire Content and Commerce AEM et les composants principaux 
 
 Le module complémentaire CIF fournit une servlet proxy GraphQL à l’adresse `/api/graphql` qui peut éventuellement être utilisé pour [développement local](develop.md). Pour les déploiements de production, il est vivement recommandé de configurer un proxy inverse vers le point d’entrée GraphQL de commerce via le Dispatcher AEM ou sur d’autres couches réseau (comme CDN).
 
-## Configuration de magasins et de catalogues {#catalog}
+## Configuration des magasins et des catalogues {#catalog}
 
 Le module complémentaire et la variable [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components) peut être utilisé sur plusieurs structures de site AEM connectées à différents magasins de commerce (ou vues de magasin, etc.). Par défaut, le module complémentaire CIF est déployé avec une configuration par défaut se connectant au magasin et au catalogue par défaut d’Adobe Commerce.
 
-Cette configuration peut être ajustée pour le projet par le biais de la configuration de Cloud Service CIF en procédant comme suit :
+Cette configuration peut être ajustée pour le projet par le biais de la configuration de Cloud Service CIF en procédant comme suit :
 
-1. Dans AEM, accédez à Outils -> Cloud Services -> Configuration CIF.
+1. Dans AEM, accédez à Outils -> Cloud Services -> Configuration CIF.
 
 2. Sélectionnez la configuration commerciale à modifier.
 
 3. Ouvrez les propriétés de configuration via la barre d’actions.
 
-![Configuration des Cloud Services CIF](/help/commerce/cif/assets/cif-cloud-service-config.png)
+![Configuration des Cloud Services CIF](/help/commerce/cif/assets/cif-cloud-service-config.png)
 
 Les propriétés suivantes peuvent être configurées :
 
 - Client GraphQL : sélectionnez le client GraphQL configuré pour la communication du serveur principal Commerce. Cette sélection doit généralement être maintenue par défaut.
-- Affichage de magasin : identifiant de vue de magasin. Si cette valeur est vide, la vue de magasin par défaut est utilisée.
+- Affichage de magasin : identifiant d’affichage du magasin. Si cette valeur est vide, la vue de magasin par défaut est utilisée.
 - Chemin du proxy GraphQL : chemin d’URL du proxy GraphQL dans AEM utilisé pour les requêtes proxy vers le point d’entrée GraphQL principal de commerce.
    >[!NOTE]
    >
@@ -76,7 +76,7 @@ Les propriétés suivantes peuvent être configurées :
 - Activer la prise en charge de l’UID du catalogue : activez la prise en charge de l’UID au lieu de l’ID dans les appels GraphQL du serveur principal de commerce.
    >[!NOTE]
    >
-   > La prise en charge des UID a été introduite dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+   > La prise en charge des UID a été introduite dans Adobe Commerce version 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 - Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
    >[!CAUTION]
    >

@@ -12,7 +12,7 @@ discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 role: Developer
 exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1761'
 ht-degree: 100%
 
@@ -130,12 +130,12 @@ Désassemblez un document PDF à l’aide de l’API Assembler Service (Java) :
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier DDX.
+   * Créez un objet `java.io.FileInputStream` qui représente le document DDX en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du fichier DDX.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Référencez un document de PDF à désassembler.
 
-   * Créez un objet `java.util.Map` utilisé pour stocker des documents PDF d’entrée à l’aide d’un constructeur `HashMap`.
+   * Créez un objet `java.util.Map` servant à stocker des documents PDF d’entrée à l’aide d’un constructeur `HashMap`.
    * Créez un objet `java.io.FileInputStream` en utilisant son constructeur et en transmettant l’emplacement du document PDF à désassembler.
    * Créez un objet `com.adobe.idp.Document` et transmettez l’objet `java.io.FileInputStream` contenant le document PDF à désassembler.
    * Ajoutez une entrée à l’objet `java.util.Map` en appelant sa méthode `put` et en transmettant les arguments suivants :
@@ -146,7 +146,7 @@ Désassemblez un document PDF à l’aide de l’API Assembler Service (Java) :
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez des options d’exécution pour répondre à vos besoins professionnels en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
 
 1. Désassemblez le document PDF.
 
@@ -154,17 +154,17 @@ Désassemblez un document PDF à l’aide de l’API Assembler Service (Java) :
 
    * Un objet `com.adobe.idp.Document` qui représente le document DDX à utiliser.
    * Un objet `java.util.Map` qui contient le document PDF à désassembler.
-   * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` qui spécifie les options d’exécution, dont la police par défaut et le niveau de journalisation de la tâche.
+   * Un objet `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` spécifiant les options d’exécution, notamment la police par défaut et le niveau de journalisation de la tâche
 
-   La méthode `invokeDDX` renvoie un objet `com.adobe.livecycle.assembler.client.AssemblerResult` qui contient les documents PDF désassemblés et les exceptions survenues.
+   La méthode `invokeDDX` renvoie un objet `com.adobe.livecycle.assembler.client.AssemblerResult` contenant les documents PDF désassemblés et les exceptions survenues.
 
 1. Enregistrez les documents PDF désassemblés.
 
    Pour obtenir des documents PDF désassemblés, procédez comme suit :
 
-   * Appelez la méthode `getDocuments` de l’objet `AssemblerResult`. Cette fonction renvoie un objet `java.util.Map`.
+   * Appelez la méthode `getDocuments` de l’objet `AssemblerResult`. Cette méthode renvoie un objet `java.util.Map`.
    * Effectuez une itération au sein de l’objet `java.util.Map` jusqu’à ce que vous trouviez l’objet `com.adobe.idp.Document` résultant.
-   * Appeler la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
+   * Appelez la méthode `copyToFile` de l’objet `com.adobe.idp.Document` pour extraire le document PDF.
 
 **Voir également**
 
@@ -186,17 +186,17 @@ Pour désassembler un document PDF à l’aide de l’API du service Assembler (
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Assembler PDF.
 
    * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
@@ -206,7 +206,7 @@ Pour désassembler un document PDF à l’aide de l’API du service Assembler (
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document DDX.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur. Transmettez une valeur de chaîne qui représente l’emplacement du fichier du document DDX et son mode d’ouverture.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant sa propriété `MTOM` au contenu du tableau d’octets.
 
 1. Référencez un document de PDF à désassembler.
@@ -242,8 +242,8 @@ Pour désassembler un document PDF à l’aide de l’API du service Assembler (
    Pour obtenir les documents PDF nouvellement créés, procédez comme suit :
 
    * Accédez au champ `documents` de l’objet `AssemblerResult`, qui est un objet `Map` contenant les documents PDF désassemblés.
-   * Effectuez une itération à l’aide de l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite l’élément `value` du membre de tableau en `BLOB`.
-   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de leur objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
+   * Effectuez une itération par le biais de l’objet `Map` pour obtenir chaque document généré. Convertissez ensuite l’élément `value` du membre de tableau en `BLOB`.
+   * Extrayez les données binaires qui représentent le document PDF en accédant à la propriété `MTOM` de son objet `BLOB`. Cette opération renvoie un tableau d’octets que vous pouvez enregistrer dans un fichier PDF.
 
 **Voir également**
 

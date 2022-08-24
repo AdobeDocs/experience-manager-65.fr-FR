@@ -11,7 +11,7 @@ discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 100%
 
@@ -47,7 +47,7 @@ L’illustration suivante représente un exemple de processus de courte durée n
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre les exemples de code qui expliquent comment appeler ce processus, créez un processus nommé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre les exemples de code qui expliquent comment appeler ce processus, créez un processus nommé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
 Lorsque ce processus est invoqué, il effectue les actions suivantes :
 
@@ -59,7 +59,7 @@ Lorsque ce processus est invoqué, il effectue les actions suivantes :
 
    >[!NOTE]
    >
-   >En règle générale, un processus de courte durée comprend plus de trois actions. La création dʼun processus sʼeffectue à lʼaide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
+   >En règle générale, un processus de courte durée comprend plus de trois actions. La création dʼun processus sʼeffectue à lʼaide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
 
    La section *Programmation avec AEM Forms* décrit les différentes méthodes dʼappel par programmation de ce processus de courte durée, à savoir :
 

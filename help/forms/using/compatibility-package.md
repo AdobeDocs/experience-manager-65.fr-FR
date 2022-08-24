@@ -13,7 +13,7 @@ docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 100%
 
@@ -38,9 +38,9 @@ Pour plus d’informations, consultez la section [Ressources devenues compatible
 
 Après avoir effectué une mise à niveau, exécutez les opérations suivantes pour installer le package de compatibilité AEMFD et rendre vos actifs compatibles avec la version 6.5 :
 
-Assurez-vous que le [package de compatibilité AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) est préinstallé.
+Assurez-vous que le [package de compatibilité AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) est préinstallé.
 
-1. Installez le dernier [package de compatibilité](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) 6.5.
+1. Installez le dernier [package de compatibilité](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 6.5.
 
    Pour plus d’informations sur le téléchargement et l’installation du package, voir [Utilisation de packages](/help/sites-administering/package-manager.md).
 
@@ -59,7 +59,7 @@ En installant le package de compatibilité, vous pouvez rendre les ressources et
    * [Dictionnaires de données](/help/forms/using/data-dictionary.md)
    * Fragments de document
 
-* Modèles obsolètes de formulaires adaptatifs :
+* Modèles obsolètes de formulaires adaptatifs:
 
    * /libs/fd/af/templates/blankTemplate2
    * /libs/fd/af/templates/simpleEnrollmentTemplate

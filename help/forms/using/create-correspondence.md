@@ -10,7 +10,7 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 99%
@@ -129,7 +129,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    * Symboles de devise tels que €,￥et £
    * Symboles mathématiques tels que ∑, √, ∂ et ^
-   * Symboles de ponctuation tels que ‟ et &quot;
+   * Symboles de ponctuation tels que ‟ et ”
 
    ![specialcharacters](assets/specialcharacters.png)
 

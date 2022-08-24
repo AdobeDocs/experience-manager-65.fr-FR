@@ -1,8 +1,8 @@
 ---
 title: Installation du serveur d’applications
-seo-title: Installation du serveur d’applications
+seo-title: Application Server Install
 description: 'Découvrez comment installer AEM avec un serveur d’applications. '
-seo-description: 'Découvrez comment installer AEM avec un serveur d’applications. '
+seo-description: Learn how to install AEM with an application server.
 uuid: c9571f80-6ed1-46fe-b7c3-946658dfc3f4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1163'
 ht-degree: 63%
 
 ---
@@ -23,8 +23,7 @@ ht-degree: 63%
 >
 >`JAR` et `WAR` sont les types de fichiers dans lesquels AEM est publié. Ces formats font l’objet d’une assurance qualité afin d’offrir les niveaux d’assistance qu’Adobe s’est engagé à fournir.
 
-
-Cette section vous explique comment installer Adobe Experience Manager (AEM) avec un serveur d’applications. Consultez la section [Plates-formes prises en charge](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) pour afficher les niveaux de prise en charge relatifs aux différents serveurs d’applications.
+Cette section vous explique comment installer Adobe Experience Manager (AEM) avec un serveur d’applications. Consultez la section [Plateformes prises en charge](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) pour afficher les niveaux de prise en charge relatifs aux différents serveurs d’applications.
 
 La procédure d’installation est décrite pour les serveurs d’applications suivants :
 
@@ -37,7 +36,7 @@ Pour plus d’informations sur l’installation d’applications web, sur les co
 
 >[!NOTE]
 >
->Si vous utilisez Dynamic Media dans un déploiement WAR, consultez la [documentation Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>Si vous utilisez Dynamic Media dans un déploiement WAR, reportez-vous à la section [Documentation Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 ## Description générale {#general-description}
 
@@ -48,7 +47,7 @@ AEM se présente sous la forme d’un seul fichier war à déployer.
 En cas de déploiement, le comportement par défaut est le suivant :
 
 * le mode d’exécution est `author`
-* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installé dans `${user.dir}/crx-quickstart`où `${user.dir}` est le répertoire de travail actuel, ce chemin d’accès à crx-quickstart est appelé `sling.home`
+* l’instance (référentiel, environnement Felix OSGI, lots, etc.) est installé dans `${user.dir}/crx-quickstart`where `${user.dir}` est le répertoire de travail actuel, ce chemin d’accès à crx-quickstart est appelé `sling.home`
 
 * la racine du contexte est le nom du fichier war, par exemple : `aem-6`
 
@@ -76,7 +75,7 @@ Pour qu’une instance de publication soit déployée, vous devez définir le mo
 Pour vérifier que tous les éléments ont été installés, vous pouvez :
 
 * parcourir le fichier `error.log` jusqu’à la fin pour vous assurer que tout le contenu est installé ;
-* Vérifiez dans `/system/console` que tous les lots sont installés.
+* look `/system/console` que tous les lots sont installés ;
 
 #### Deux instances sur le même serveur d’applications {#two-instances-on-the-same-application-server}
 
@@ -125,7 +124,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
 * Démarrez l’application web AEM.
 
-#### JBoss EAP 6.3.0/6.4.0  {#jboss-eap}
+#### JBoss EAP 6.3.0/6.4.0 {#jboss-eap}
 
 Avant de procéder à un déploiement, lisez la [Description générale](#general-description) ci-dessus.
 
@@ -135,7 +134,7 @@ Définissez des arguments de mémoire dans votre fichier conf (par exemple, `sta
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-si vous utilisez le scanner de déploiement pour installer l’application web AEM, il peut être utile d’augmenter le `deployment-timeout,` pour que l’attribut `deployment-timeout` soit défini dans le fichier xml de votre instance (par exemple `configuration/standalone.xml)` :
+Si vous utilisez le scanner de déploiement pour installer l’application web AEM, il peut être bénéfique d’augmenter la valeur de la variable `deployment-timeout,` pour ce jeu de `deployment-timeout` dans le fichier xml de votre instance (par exemple, `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -159,22 +158,22 @@ Dans ce cas, une simple disposition serveur est utilisée avec uniquement un ser
 
 * Dans `${myDomain}/config/config.xml`ajoutez à la section security-configuration :
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` voir sur  [https://xmlns.oracle.com/weblogic/domain/1.0/domain.](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) xsdpour connaître la position correcte (par défaut, la position à la fin de la section est ok).
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` voir sur [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) pour la position correcte (par défaut, la position à la fin de la section est ok).
 
 * Augmentez les paramètres mémoire de la machine virtuelle :
 
-   * Ouvrez `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) recherchez WLS_MEM_ARGS, définissez par exemple `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * open `${myDomain}/bin/setDomainEnv.cmd` (resp.sh) recherchez WLS_MEM_ARGS, définissez par exemple set. `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * Redémarrez WebLogic Server
 
-* Créez dans `${myDomain}` un dossier de modules et à l’intérieur d’un dossier cq et, dans celui-ci, un dossier Plan
+* Créer dans `${myDomain}` un dossier de modules et, à l’intérieur d’un dossier cq, un dossier Plan ;
 
 **Déploiement de l’application web AEM**
 
 * Téléchargez le fichier war AEM.
 * Placez le fichier war AEM dans le dossier ${myDomain}/packages/cq .
-* Effectuez vos configurations dans `WEB-INF/web.xml` si nécessaire (voir ci-dessus dans la Description générale).
+* Effectuez vos configurations dans `WEB-INF/web.xml` si nécessaire (voir ci-dessus dans la description générale)
 
-   * Décompressez le fichier `WEB-INF/web.xml`.
+   * Décompresser `WEB-INF/web.xml`fichier
    * Modifiez le paramètre sling.run.modes pour publier
    * Supprimez les commentaires du paramètre initial sling.home et définissez ce chemin selon vos besoins (voir Description générale).
    * Réparation du fichier web.xml
@@ -182,7 +181,7 @@ Dans ce cas, une simple disposition serveur est utilisée avec uniquement un ser
 * Déployez le fichier war AEM en tant qu’application (pour les autres paramètres, utilisez les valeurs par défaut).
 * L’installation peut prendre un certain temps.
 * Vérifiez que l’installation est bien terminée, comme indiqué ci-dessus dans la section Description générale (par exemple, en parcourant le fichier error.log jusqu’à la fin).
-* Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application web dans WebLogic `/console`
+* Vous pouvez modifier la racine du contexte dans l’onglet Configuration de l’application web dans WebLogic. `/console`
 
 #### Tomcat 8/8.5 {#tomcat}
 
@@ -192,7 +191,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
    * Augmentez les paramètres mémoire de la machine virtuelle :
 
-      * Dans `bin/catalina.bat` (resp `catalina.sh` sous unix), ajoutez le paramètre suivant :
+      * Dans `bin/catalina.bat` (resp `catalina.sh` sur unix) ajoutez le paramètre suivant :
       * `set "JAVA_OPTS= -Xmx2048m`
    * Tomcat n’active aucun accès de type administrateur ou gestionnaire au niveau de l’installation. Vous devez donc modifier manuellement le fichier `tomcat-users.xml` si vous souhaitez autoriser l’accès pour ces comptes :
 
@@ -221,7 +220,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
 
       `webapps/manager/WEB-INF/web.xml`
 
-      et augmentez la taille maximale du fichier et la taille maximale de la requête à au moins 500 Mo, voir l’exemple `multipart-config` suivant d’un fichier `web.xml` de ce type.
+      et augmentez la taille de fichier maximale et la taille de requête maximale à au moins 500 Mo. Voir à ce propos la section `multipart-config` exemple d’un tel événement `web.xml` fichier .
 
       ```xml
       <multipart-config>

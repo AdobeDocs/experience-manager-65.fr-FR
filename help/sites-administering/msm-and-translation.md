@@ -1,8 +1,8 @@
 ---
 title: Administration de sites web
-seo-title: Administration de sites web
+seo-title: Website Administration
 description: Découvrez comment gérer des sites web multilingues dans AEM.
-seo-description: Découvrez comment gérer des sites web multilingues dans AEM.
+seo-description: Learn how to manage multilingual websites in AEM.
 uuid: a32d458b-a5ad-46ef-a68c-4717c63b4bdd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '341'
 ht-degree: 94%
 
 ---
@@ -61,8 +61,9 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
 >* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md); en particulier :
+   >
+   >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
->   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >* [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md)
 

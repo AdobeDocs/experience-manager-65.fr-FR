@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau du code et des personnalisations
-seo-title: Mise à niveau du code et des personnalisations
+seo-title: Upgrading Code and Customizations
 description: En savoir plus sur la mise à jour de code personnalisé dans AEM.
-seo-description: En savoir plus sur la mise à jour de code personnalisé dans AEM.
+seo-description: Learn more about upgrading custom code in AEM.
 uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: 59780112-6a9b-4de2-bf65-f026c8c74a31
 docset: aem65
 targetaudience: target-audience upgrader
-feature: Mise à niveau
+feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2192'
 ht-degree: 77%
 
 ---
@@ -31,20 +31,20 @@ En planifiant une mise à niveau, les parties suivantes de l’implémentation d
 
 ## Présentation {#overview}
 
-1. **Outil de détection des motifs**  : exécutez l’outil de détection des motifs comme décrit dans la planification de la mise à niveau et décrit en détail dans  [cette ](/help/sites-deploying/pattern-detector.md) page pour obtenir un rapport de détecteur de motifs contenant plus de détails sur les zones à traiter en plus des API/bundles indisponibles dans la version cible d’AEM. Le rapport Détection des motifs doit vous donner une indication des incompatibilités de votre code. S’il n’en existe aucune, votre déploiement est déjà compatible avec la version 6.5, vous pouvez tout de même choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin uniquement pour des raisons de compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir : a) S’exécuter en mode de compatibilité et différer votre développement pour de nouvelles fonctionnalités ou compatibilité, b) Décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Pour plus d’informations, voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md).
+1. **Outil de détection des motifs** - Exécutez le détecteur de motifs comme décrit dans la planification de la mise à niveau et décrit en détail [cette page](/help/sites-deploying/pattern-detector.md) pour obtenir un rapport de détecteur de motifs qui contient plus de détails sur les zones qui doivent être traitées en plus des API/bundles indisponibles dans la version cible d’AEM. Le rapport Détection des motifs doit vous donner une indication des incompatibilités de votre code. S’il n’en existe aucune, votre déploiement est déjà compatible avec la version 6.5, vous pouvez tout de même choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin uniquement pour des raisons de compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir : a) S’exécuter en mode de compatibilité et différer votre développement pour de nouvelles fonctionnalités ou compatibilité, b) Décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Veuillez consulter [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) pour plus d’informations.
 
 1. **Développement de la base de code pour la version 6.5 **- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
 1. **Compilation avec 6.5 Uber jar **- Mettez à jour les POM de la base de code pour pointer vers 6.5 Uber jar et compilez le code à cet effet.
-1. **Mettre à jour AEM personnalisations*** - *Toutes les personnalisations ou extensions vers AEM doivent être mises à jour/validées pour fonctionner dans la version 6.5 et ajoutées à la base de code 6.5. Comprend des formulaires de recherche d’interface utilisateur, des personnalisations de ressources, tout élément utilisant /mnt/overlay
+1. **Mise à jour AEM personnalisations*** - *Toutes les personnalisations ou extensions à AEM doivent être mises à jour/validées pour fonctionner dans la version 6.5 et ajoutées à la base de code 6.5. Comprend des formulaires de recherche d’interface utilisateur, des personnalisations de ressources, tout élément utilisant /mnt/overlay
 
-1. **Déployer dans l’environnement**  6.5 : une instance propre d’AEM 6.5 (auteur + publication) doit être conservée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de la production actuelle) doivent être déployés.
-1. **Validation de l’assurance qualité et correction de bogues**  - L’assurance qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.5. Tous les bogues détectés doivent être corrigés et validés dans la base de code 6.5. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
+1. **Déploiement dans l’environnement 6.5** - Une instance propre d’AEM 6.5 (auteur + publication) doit être créée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de la production actuelle) doivent être déployés.
+1. **Validation de l’assurance qualité et correction de bogues** - Le contrôle qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.5. Tous les bogues détectés doivent être corrigés et validés dans la base de code 6.5. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
 
 Avant d’effectuer une mise à niveau, vous devez disposer d’une base stable de code d’application qui a été complètement testée par rapport à la version cible d’AEM. En fonction des observations effectuées durant le test, il existe des façons d’optimiser le code personnalisé. Cela peut inclure la restructuration du code pour éviter de parcourir le référentiel, l’indexation personnalisée pour optimiser la recherche ou l’utilisation des nœuds non classés dans le JCR, entre autres.
 
 Outre la possibilité de mettre à niveau votre base du code et vos personnalisations afin qu’elles fonctionnent avec la nouvelle version d’AEM, la version 6.5 permet de gérer plus efficacement vos personnalisations à l’aide de la fonctionnalité de compatibilité descendante (ou de rétrocompatibilité) décrite sur [cette page](/help/sites-deploying/backward-compatibility.md).
 
-Comme indiqué ci-dessus et dans le diagramme ci-dessous, le fait d’exécuter l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) au cours de la première étape vous aide à évaluer la complexité globale de la mise à niveau et à déterminer si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations afin d’utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Pour plus d’informations, consultez la page [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) .
+Comme indiqué ci-dessus et dans le diagramme ci-dessous, le fait d’exécuter l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) au cours de la première étape vous aide à évaluer la complexité globale de la mise à niveau et à déterminer si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations afin d’utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Veuillez consulter la [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) pour plus d’informations.
 [ ![opt_crpped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Mise à niveau de la base de code {#upgrade-code-base}
@@ -69,9 +69,9 @@ AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans l
 
 ### Élimination graduelle de l’utilisation de l’Administrative Resource Resolver  {#phase-out-use-of-administrative-resource-resolver}
 
-L’utilisation d’une session d’administration par `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` était très courante dans les bases de code avant la version 6.0 d’AEM. Ces méthodes ont été abandonnées pour des raisons de sécurité, car elles offrent un niveau d’accès trop large. [Dans les prochaines versions de Sling, ces méthodes seront supprimées](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Il est vivement recommandé de restructurer les codes afin d’utiliser les utilisateurs de service à la place. Plus d’informations sur les utilisateurs de service et [la manière d’éliminer les sessions administrative progressivement sont présentées ici](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
+Utilisation d’une session d’administration via `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` était assez répandu dans les bases de code avant AEM 6.0. Ces méthodes ont été abandonnées pour des raisons de sécurité car elles offrent un niveau d’accès trop large. [Dans les prochaines versions de Sling, ces méthodes seront supprimées](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Il est vivement recommandé de restructurer les codes afin d’utiliser les utilisateurs de service à la place. Plus d’informations sur les utilisateurs de service et [la manière d’éliminer les sessions administrative progressivement sont présentées ici](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
-### Requêtes et index Oak  {#queries-and-oak-indexes}
+### Requêtes et index Oak {#queries-and-oak-indexes}
 
 Toute utilisation des requêtes dans la base de code doit être complètement testée dans le cadre de la mise à jour de la base de code. Pour les clients mettant à niveau depuis Jackrabbit 2 (versions AEM plus anciennes que 6.0), cela est particulièrement important, puisque Oak n’indexe pas de contenu automatiquement, et des index personnalisés doivent être créés. Si la mise à jour est effectuée à partir d’une version 6.x d’AEM, les définitions d’index d’Oak ont peut-être été modifiées et sont susceptible d’impacter les requêtes existantes.
 
@@ -83,15 +83,15 @@ Plusieurs outils pour l’analyse et l’inspection de la performance des requê
 
 * [Oak Utils](https://oakutils.appspot.com/) Il s’agit d’un outil Open Source qui n’est pas géré par Adobe. 
 
-### IU classique - Création  {#classic-ui-authoring}
+### IU classique - Création {#classic-ui-authoring}
 
-La création de l’IU classique est toujours disponible dans AEM 6.5, mais elle sera bientôt obsolète. Vous trouverez plus d’informations[ ici](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Si votre application s’exécute dans l’environnement de création de l’interface utilisateur classique, il est recommandé de la mettre à niveau vers AEM 6.5 et de continuer à utiliser l’interface utilisateur classique. La migration vers l’interface utilisateur optimisée pour les écrans tactiles peut ensuite être prévue en tant que projet distinct à effectuer sur plusieurs cycles de développement. Pour utiliser l’interface utilisateur classique dans la version 6.5, plusieurs configurations OSGi sont nécessaires pour être intégrées dans la base de code. Vous trouverez plus d’informations sur la configuration de cette fonctionnalité [ici](/help/sites-administering/enable-classic-ui.md).
+La création de l’IU classique est toujours disponible dans AEM 6.5, mais elle sera bientôt obsolète. Vous trouverez plus d’informations[ ici](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Si votre application s’exécute dans l’environnement de création de l’interface utilisateur classique, il est recommandé de la mettre à niveau vers AEM 6.5 et de continuer à utiliser l’interface utilisateur classique. La migration vers l’interface utilisateur optimisée pour les écrans tactiles peut ensuite être prévue en tant que projet distinct à effectuer sur plusieurs cycles de développement. Pour utiliser l’interface utilisateur classique dans la version 6.5, plusieurs configurations OSGi sont nécessaires pour être intégrées dans la base de code. Vous trouverez plus d’informations sur la configuration de cette [here](/help/sites-administering/enable-classic-ui.md).
 
 ## Alignement avec la structure de référentiel de la version 6.5 {#align-repository-structure}
 
 Pour faciliter les mises à niveau et s’assurer que les configurations ne soient pas remplacées au cours de celles-ci, le référentiel est restructuré dans la version 6.4 afin de séparer le contenu de la configuration.
 
-Par conséquent, un certain nombre de paramètres doivent être déplacés pour ne plus résider sous `/etc` comme cela avait été le cas par le passé. Pour passer en revue l’ensemble des préoccupations relatives à la restructuration du référentiel qui doivent être examinées et prises en compte dans la mise à jour vers AEM 6.4, voir [Restructuration du référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+Par conséquent, plusieurs paramètres doivent être déplacés pour ne plus résider sous . `/etc` comme par le passé. Pour consulter l’ensemble des préoccupations relatives à la restructuration du référentiel qui doivent être examinées et prises en compte dans la mise à jour vers AEM 6.4, voir [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## Personnalisations d’AEM  {#aem-customizations}
 
@@ -101,7 +101,7 @@ Toutes les personnalisations apportées à l’environnement de création d’AE
 
 Il est courant d’étendre la fonctionnalité prête à l’emploi d’AEM en superposant des nœuds et/ou des fichiers sous /libs avec d’autres nœuds sous /apps. Ces recouvrementsdoivent être suivis dans le contrôle de version et être testés avec la version cible d’AEM. Si un fichier (que ce soit, JS, JSP ou HTL) est superposé, il est recommandé de laisser un commentaire sur la fonctionnalité qui a été améliorée pour simplifier le test de régression de la version cible d’AEM. Vous trouverez plus d’informations sur les recouvrements en général[ ici](/help/sites-developing/overlays.md). Des instructions sur les recouvremets spécifiques d’AEM figurent ci-dessous.
 
-### Mise à niveau des formulaires de recherche personnalisée  {#upgrading-custom-search-forms}
+### Mise à niveau des formulaires de recherche personnalisée {#upgrading-custom-search-forms}
 
 Les facettes de la recherche personnalisée requièrent certains réglages manuels après la mise à niveau pour fonctionner correctement. Pour en savoir plus, voir [Mise à niveau des formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md).
 
@@ -123,13 +123,13 @@ Vous pouvez préparer les personnalisations à l’interface utilisateur d’Ass
 
 1. Renommez le nœud content en **content_backup**. Vous pouvez le faire en cliquant avec le bouton droit sur le volet d’exploration sur le côté gauche de la fenêtre, puis en sélectionnant **Renommer**.
 
-1. Une fois le noeud renommé, créez un noeud nommé content sous `/apps/dam` nommé **content** et définissez son type de noeud sur **sling:Folder**.
+1. Une fois le noeud renommé, créez un noeud nommé content sous `/apps/dam` named **content** et définissez son type de noeud sur **sling:Folder**.
 
 1. Déplacez tous les nœuds enfants de **content_backup** vers le nœud content que vous venez de créer. Vous pouvez le faire en cliquant avec le bouton droit sur chaque nœud enfant dans le volet d’exploration, puis en sélectionnant **Déplacer**. 
 
 1. Supprimez le nœud **content_backup**.
 
-1. Les noeuds mis à jour sous `/apps/dam` avec le type de noeud correct `sling:Folder` doivent idéalement être enregistrés dans le contrôle de version et déployés avec la base de code ou au minimum sauvegardés sous la forme d’un module de contenu.
+1. Les noeuds mis à jour sous `/apps/dam` avec le type de noeud correct de `sling:Folder` doit idéalement être enregistré dans le contrôle de version et déployé avec la base de code ou au minimum sauvegardé en tant que module de contenu.
 
 ### Génération d’identifiants pour les ressources existantes {#generating-asset-ids-for-existing-assets}
 
@@ -141,19 +141,19 @@ Pour mettre à niveau les ressources, configurez le module d’identifiants de r
 
 Si vous avez besoin de plusieurs identifiants de ressources pour un sous-ensemble de vos ressources totales, utilisez l’API `migrateAssetsAtPath`.
 
-Pour tout autre usage, utilisez l’API `migrateAllAssets()`.
+Pour tout autre usage, utilisez la variable `migrateAllAssets()` API.
 
 ### Personnalisations de script InDesign {#indesign-script-customizations}
 
-Adobe recommande de placer des scripts personnalisés à l’emplacement `/apps/settings/dam/indesign/scripts`. Pour en savoir plus sur les personnalisations de script InDesign, rendez-vous[ ici](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+Adobe recommande de placer des scripts personnalisés à l’adresse `/apps/settings/dam/indesign/scripts` emplacement. Pour en savoir plus sur les personnalisations de script InDesign, rendez-vous[ ici](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
-### Récupération des configurations ContextHub  {#recovering-contexthub-configurations}
+### Récupération des configurations ContextHub {#recovering-contexthub-configurations}
 
-Les configurations ContextHub sont affectées par une mise à niveau. Vous trouverez des instructions sur la manière de récupérer les configurations ContextHub existantes [ici](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
+Les configurations ContextHub sont affectées par une mise à niveau. Vous trouverez des instructions sur la manière de récupérer les configurations ContextHub existantes. [here](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
 
 ### Personnalisations des workflows {#workflow-customizations}
 
-Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. Un workflow courant personnalisé est le workflow [!UICONTROL Ressource de mise à jour de gestion des actifs numériques]. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
+Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. Un workflow courant personnalisé est le suivant : [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
 
 ### Modèles modifiables {#editable-templates}
 
@@ -163,7 +163,7 @@ Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou su
 
 La structure des modèles modifiables a changé entre les versions 6.2 et 6.3 d’AEM. Si vous effectuez une mise à niveau à partir de la version 6.2 ou antérieure et si le contenu de votre site est créé à l’aide de modèles modifiables, vous devez utiliser l’[outil de nettoyage de nœuds réactifs](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration). L’outil est prévu pour fonctionner **après** une mise à niveau pour nettoyer le contenu. Il doit être exécuté sur les niveau d’auteur et de publication.
 
-### Modifications d’une implémentation de groupes d’utilisateurs fermés  {#cug-implementation-changes}
+### Modifications d’une implémentation de groupes d’utilisateurs fermés {#cug-implementation-changes}
 
 L’implémentation des groupes d’utilisateurs fermés a considérablement évolué pour contourner les limitations de performance et d’évolutivité dans les versions précédentes d’AEM. La version précédente des groupes d’utilisateurs fermés a été abandonnée dans la version 6.3. En outre, la nouvelle implémentation est uniquement prise en charge dans l’interface utilisateur tactile. Si vous effectuez une mise à niveau à partir de la version 6.2 ou antérieure, vous trouverez les instructions de migration vers la nouvelle implémentation [ici](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
 
@@ -171,7 +171,7 @@ L’implémentation des groupes d’utilisateurs fermés a considérablement év
 
 Un plan evaluation complet doit être préparé en vue de tester les mises à niveau. Le test de la base de code améliorée et de l’application doit être d’abord effectué dans des environnements inférieur. Tous les bugs détectés doivent être corrigés de manière itérative jusqu’à ce que la base de code soit stable. Ce n’est qu’à ce moment que les environnements de niveau supérieur doivent être mis à niveau.
 
-### Procédure de test de la mise à niveau  {#testing-the-upgrade-procedure}
+### Procédure de test de la mise à niveau {#testing-the-upgrade-procedure}
 
 La procédure de mise à niveau, comme décrit ici, doit être testée sur des environnements de développement et de contrôle qualité, tel que cela est décrit dans votre runbook personnalisé (voir [Planification de votre mise à niveau](/help/sites-deploying/upgrade-planning.md)). La procédure de mise à niveau doit être répétée jusqu’à ce que toutes les étapes soient documentées dans le runbook de mise à niveau et que le processus de mise à niveau soit fluide.
 
@@ -190,7 +190,7 @@ Vous trouverez ci-dessous les domaines stratégiques de toute implémentation AE
    <td>Test de l’implémentation d’AEM et du code associé sur le niveau de publication<br /> via le dispatcher. Doit inclure des critères pour les mises à jour de la page et<br /> l’invalidation du cache.</td>
   </tr>
   <tr>
-   <td>Création  </td>
+   <td>Création</td>
    <td>Test de votre implémentation d’AEM et du code associé sur le niveau d’auteur. Doit inclure la page, la création de composants et les boîtes de dialogue.</td>
   </tr>
   <tr>
@@ -224,6 +224,6 @@ Vous trouverez ci-dessous les domaines stratégiques de toute implémentation AE
  </tbody>
 </table>
 
-### Document de plan de tests et résultats  {#document-test-plan-and-results}
+### Document de plan de tests et résultats {#document-test-plan-and-results}
 
 Vous devez créer un plan de tests qui couvre les zones de tests d’implémentation décrites ci-dessus. Dans la plupart des cas, il semble logique de séparer le protocole de test par des listes de tâche d’auteur et de publication. Ce plan de tests doit être effectué sur les environnements de développement, de contrôle qualité et d’évaluation avant de mettre à niveau les environnements de production. Les résultats des tests et les mesures de performance doivent être collectés dans des environnements inférieurs pour fournir une comparaison lors de la mise à niveau des environnements d’évaluation et de production.

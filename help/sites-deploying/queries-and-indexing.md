@@ -25,7 +25,7 @@ ht-degree: 84%
 >
 >Cet article porte sur la configuration des index dans AEM 6. Pour connaître les meilleures pratiques sur l’optimisation des requêtes et l’indexation des performances, voir [Meilleures pratiques pour les requêtes et l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Contrairement à Jackrabbit 2, Oak n’indexe pas le contenu par défaut. Des index personnalisés doivent être créés si nécessaire, comme pour les bases de données relationnelles classiques. S’il n’existe aucun index pour une requête spécifique, plusieurs nœuds seront probablement parcourus. La requête peut toujours fonctionner, mais sera probablement très lente.
 
@@ -52,7 +52,7 @@ Un l’indexeur est **l’index des propriétés**, pour lequel la définition d
 
 Les implémentations d’**Apache Lucene** et **Solr** sont également disponibles par défaut, et prennent en charge l’indexation du texte intégral.
 
-**L’index de traversée** est utilisé si aucun autre indexeur n’est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances à la requête.
+Le **Index de traversée** est utilisé si aucun autre indexeur n’est disponible. Cela signifie que le contenu n’est pas indexé et que les nœuds de contenu sont parcourus pour trouver des correspondances à la requête.
 
 Si plusieurs indexeurs sont disponibles pour une requête, chaque indexeur disponible calcule le coût d’exécution de la requête. Oak sélectionne ensuite l’indexeur avec le coût estimé le plus bas.
 
@@ -68,7 +68,7 @@ Ensuite, chaque index est consulté pour estimer le coût de la requête. Une fo
 
 >[!NOTE]
 >
->Pour un référentiel volumineux, la création d’un index prend du temps. Cela est vrai pour la création initiale d’un index et pour la réindexation (reconstruction d’un index après modification de la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention de la réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
+>Pour un référentiel volumineux, la création d’un index prend du temps. Cela est vrai pour la création initiale d’un index et pour la réindexation (reconstruction d’un index après modification de la définition). Voir aussi [Dépannage des index Oak](/help/sites-deploying/troubleshooting-oak-indexes.md) et [Prévention d’une réindexation lente](/help/sites-deploying/troubleshooting-oak-indexes.md#preventing-slow-re-indexing).
 
 Si la réindexation est nécessaire dans des référentiels très volumineux, en particulier lors de l’utilisation de MongoDB et pour les index de texte intégral, envisagez la pré-extraction de texte et l’utilisation de oak-run pour créer l’index initial et réindexer.
 
@@ -85,8 +85,8 @@ L’index de propriété est généralement utile pour les requêtes limitées p
 1. Nommez le nœud **PropertyIndex**, puis définissez le type de nœud sur **oak:QueryIndexDefinition**
 1. Définissez les propriétés suivantes pour le nouveau nœud :
 
-   * **type :**  `property`  (de type Chaîne)
-   * **propertyNames :**  `jcr:uuid`  (de type Nom)
+   * **type :**  `property` (de type Chaîne)
+   * **propertyNames :**  `jcr:uuid` (de type Nom)
 
    Cet exemple particulier indexera la propriété `jcr:uuid`, dont la tâche est de présenter l’UUID (universally unique identifier) du nœud associé.
 
@@ -101,11 +101,11 @@ L’index de propriété dispose des options de configuration suivantes :
 * L’indicateur **unique**, qui, défini sur **true**, ajoute une limite d’unicité à l’index de propriété.
 
 * La propriété **declaringNodeTypes** vous permet de spécifier un certain type de nœud que l’index appliquera uniquement.
-* L’indicateur **reindex** qui, s’il est défini sur **true**, déclenche une réindexation complète du contenu.
+* Le **reindex** qui, s’il est défini sur **true**, déclenche une réindexation complète du contenu.
 
 ### Index organisé {#the-ordered-index}
 
-L’index organisé est une extension de l’index de propriété. Toutefois, il est obsolète. Les index de ce type doivent être remplacés par l’[index de propriété Lucene](#the-lucene-property-index).
+L’index organisé est une extension de l’index de propriété. Toutefois, il est obsolète. Les index de ce type doivent être remplacés par le [Index de propriété Lucene](#the-lucene-property-index).
 
 ### Index de texte intégral Lucene {#the-lucene-full-text-index}
 
@@ -121,10 +121,10 @@ Vous pouvez configurer un index de texte intégral Lucene en suivant la procédu
 
 1. Ouvrez CRXDE et créez un nœud sous **oak:index**.
 1. Nommez le nœud **LuceneIndex** et définissez le type de nœud sur **oak:QueryIndexDefinition**
-1. Ajoutez les propriétés suivantes au nœud  :
+1. Ajoutez les propriétés suivantes au nœud :
 
-   * **type :**  `lucene`  (de type Chaîne)
-   * **async:**  `async`  (de type Chaîne)
+   * **type :**  `lucene` (de type Chaîne)
+   * **async:**  `async` (de type Chaîne)
 
 1. Enregistrez les modifications.
 
@@ -133,7 +133,7 @@ L’index Lucene présente les options de configuration suivantes :
 * La propriété **type**, qui spécifie le type d’index, doit être définie sur **lucene**
 * La propriété **async** doit être définie sur **async**. Cela permettra d’envoyer le processus de mise à jour de l’index à un thread en arrière-plan.
 * La propriété **includePropertyTypes**, qui définira le sous-ensemble de types de propriétés qui sera inclus dans l’index.
-* La propriété **excludePropertyNames** qui définira une liste de noms de propriétés - propriétés qui doivent être exclues de l’index.
+* Le **excludePropertyNames** qui définira une liste de noms de propriétés - propriétés qui doivent être exclues de l’index.
 * L’indicateur **reindex**, qui, défini sur **true**, déclenche une réindexation de l’ensemble du contenu.
 
 ### Index de propriété Lucene {#the-lucene-property-index}
@@ -189,9 +189,9 @@ Depuis la version 1.2.0, Oak prend en charge les analyseurs Lucene.
 
 Les analyseurs sont utilisés lorsqu’un document est indexé, au moment de la requête. Un analyseur examine le texte des champs et génère un flux de jeton. Les analyseurs Lucene se composent de séries de jetons et de classes de filtres.
 
-Les analyseurs peuvent être configurés à partir du noeud `analyzers` (de type `nt:unstructured`) de la définition `oak:index`.
+Les analyseurs peuvent être configurés à l’aide de l’option `analyzers` noeud (de type `nt:unstructured`) à l’intérieur du `oak:index` définition.
 
-L’analyseur par défaut pour un index est configuré dans l’enfant `default` du noeud analyzers.
+L’analyseur par défaut d’un index est configuré dans la variable `default` enfant du noeud analyzers.
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -223,7 +223,7 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
    Si `luceneMatchVersion` n’est pas spécifié, Oak utilise la version Lucene avec laquelle il est envoyée. 
 
-1. Si vous souhaitez ajouter un fichier stopwords aux configurations de l’analyseur, vous pouvez créer un nouveau noeud sous le noeud `default` avec les propriétés suivantes :
+1. Si vous souhaitez ajouter un fichier stopwords aux configurations de l’analyseur, vous pouvez créer un noeud sous le noeud `default` l’une avec les propriétés suivantes :
 
    * **Nom:** `stopwords`
    * **Type :** `nt:file`
@@ -272,11 +272,11 @@ Prenez cette structure de nœud comme exemple :
 
 Les noms de filtres, charFilters et jetons sont créés en supprimant les suffixes de fabrique. Ainsi :
 
-* `org.apache.lucene.analysis.standard.StandardTokenizerFactory` devient  `standard`
+* `org.apache.lucene.analysis.standard.StandardTokenizerFactory` devient `standard`
 
-* `org.apache.lucene.analysis.charfilter.MappingCharFilterFactory` devient  `Mapping`
+* `org.apache.lucene.analysis.charfilter.MappingCharFilterFactory` devient `Mapping`
 
-* `org.apache.lucene.analysis.core.StopFilterFactory` devient  `Stop`
+* `org.apache.lucene.analysis.core.StopFilterFactory` devient `Stop`
 
 Tout paramètre de configuration requis pour la fabrique est spécifié comme propriété du code en question.
 
@@ -313,9 +313,9 @@ Vous pouvez configurer le serveur Solr intégré en procédant comme suit :
 1. Ouvrez CRXDE et connectez-vous en tant qu’administrateur.
 1. Ajoutez un nœud nommé **solrlndex** de type **oak:QueryIndexDefinition** sous **oak:index** avec les propriétés suivantes :
 
-   * **type :** `solr` (de type Chaîne)
-   * **async:** `async` (de type Chaîne)
-   * **reindex :** `true` (de type booléen)
+   * **type :** `solr`(de type Chaîne)
+   * **async:** `async`(de type Chaîne)
+   * **reindex :** `true`(de type booléen)
 
 1. Enregistrez les modifications.
 
@@ -451,7 +451,7 @@ Vous pouvez activer la journalisation en suivant cette procédure :
 
 La façon dont la requête est évaluée est largement affectée par la configuration de l’index. Il est donc important d’obtenir la configuration d’index pour l’analyser ou l’envoyer à l’assistance. Vous pouvez obtenir la configuration en tant que module de contenu ou en tant que rendu JSON.
 
-Comme dans la plupart des cas, la configuration d’indexation est stockée sous le noeud `/oak:index` dans CRXDE, vous pouvez obtenir la version JSON à l’adresse :
+Dans la plupart des cas, la configuration d’indexation est stockée sous la variable `/oak:index` dans CRXDE, vous pouvez obtenir la version JSON à l’adresse :
 
 `https://serveraddress:port/oak:index.tidy.-1.json`
 

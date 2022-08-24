@@ -10,7 +10,7 @@ discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '859'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ La fonction Rapports de transaction est disponible dans le cadre du module compl
 * Activer la réplication inverse sur toutes les instances de publication
 * Activer les rapports de transactions
 * Fournir des droits pour afficher un rapport de transaction
-* (Facultatif) Configurer la période de purge des transactions et des boîtes d’envoi [&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* (Facultatif) Configurer la période de purge des transactions et des boîtes d’envoi [](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >
@@ -93,5 +93,5 @@ Le rapport de transaction consigne toutes les informations affichées dans le ra
 ## Articles connexes {#related-articles}
 
 * [Présentation des rapports de transaction](../../forms/using/transaction-reports-overview.md)
-* [ API de rapports de transactions facturables](../../forms/using/transaction-reports-billable-apis.md)
+* [API de rapports de transactions facturables](../../forms/using/transaction-reports-billable-apis.md)
 * [Enregistrer une transaction pour les implémentations personnalisées](/help/forms/using/record-transaction-custom-implementation.md)

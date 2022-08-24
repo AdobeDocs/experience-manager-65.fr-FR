@@ -1,8 +1,8 @@
 ---
 title: Marketing par messagerie électronique
-seo-title: Marketing par messagerie électronique
+seo-title: E-mail Marketing
 description: Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
-seo-description: Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
+seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1803'
+source-wordcount: '1758'
 ht-degree: 96%
 
 ---
@@ -255,7 +255,7 @@ Envoi d’une newsletter à partir d’une campagne :
    >
    >Assurez-vous que vous êtes l’un des destinataires pour vérifier que la newsletter a bien été reçue.
 
-### Envoi de newsletters à partir d’une liste  {#sending-newsletters-from-a-list}
+### Envoi de newsletters à partir d’une liste {#sending-newsletters-from-a-list}
 
 Envoi d’une newsletter à partir d’une liste :
 
@@ -285,7 +285,7 @@ Envoi d’une newsletter à partir d’une liste :
 
 Cette section décrit comment s’abonner à une newsletter.
 
-### Abonnement à une newsletter  {#subscribing-to-a-newsletter-1}
+### Abonnement à une newsletter {#subscribing-to-a-newsletter-1}
 
 S’abonner à une newsletter (en utilisant le site Web Geometrixx comme exemple) :
 

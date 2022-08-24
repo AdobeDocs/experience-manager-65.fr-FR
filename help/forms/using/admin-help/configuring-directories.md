@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3227'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 
 ### Ajout d’un annuaire {#add-a-directory}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
 1. Cliquez sur Ajouter un annuaire.
 1. Dans la zone Nom du profil, saisissez un nom permettant de distinguer cet annuaire, puis cliquez sur Suivant.
@@ -45,7 +45,7 @@ Pour chaque domaine d’entreprise que vous configurez, indiquez les annuaires q
 
 Pour plus d’informations sur la création d’une interface SPI personnalisée, consultez la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr). Afin de rendre disponible une interface SPI personnalisée déployée récemment pour une association au domaine, redémarrez le serveur.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise ou sélectionnez un domaine d’entreprise existant.
 1. Cliquez sur Ajouter un annuaire.
 1. Saisissez un nom dans la zone Nom du profil, sélectionnez Fournisseur SPI personnalisé, puis cliquez sur Suivant.
@@ -56,7 +56,7 @@ Pour plus d’informations sur la création d’une interface SPI personnalisée
 
 Vous pouvez modifier les détails d’un annuaire déjà configuré.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur le domaine voulu dans la liste, puis, dans la page qui apparaît, sélectionnez l’annuaire approprié dans la liste.
 1. Configurez les paramètres relatifs à l’annuaire, à l’utilisateur et au groupe. Voir [Paramètres d’annuaire](configuring-directories.md#directory-settings).
 1. Cliquez sur OK.
@@ -69,7 +69,7 @@ Lorsque vous synchronisez vos domaines après la suppression d’un annuaire, to
 >
 >les domaines d’entreprise requièrent au moins un fournisseur d’authentification et un fournisseur d’annuaires.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Sélectionnez le domaine approprié dans la liste.
 1. Cochez la case correspondant à l’annuaire approprié, puis cliquez sur Supprimer.
 1. Cliquez sur OK dans la page de confirmation qui s’affiche, puis de nouveau sur OK.

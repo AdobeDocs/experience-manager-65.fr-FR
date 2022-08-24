@@ -13,7 +13,7 @@ discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1684'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 Avant d’effectuer par programmation une opération d’API de service Forms, créez un objet API client Forms. En outre, comme ce workflow récupère un fichier XDP de Content Services (obsolète), créez un objet API Document Management.
 
-**Récupérer la conception du formulaire à partir de Content Services (obsolète)**
+**Récupérer la conception de formulaire à partir de Content Services (obsolète)**
 
 Récupérez le fichier XDP à partir de Content Services (obsolète) à l’aide de l’API Java ou de service web. Le fichier XDP est renvoyé dans une instance `com.adobe.idp.Document` (ou une instance `BLOB` si vous utilisez des services Web). Vous pouvez ensuite transmettre l’instance `com.adobe.idp.Document` au service Forms.
 
@@ -93,8 +93,8 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
 
    Appelez la méthode `retrieveContent` de l’objet `DocumentManagementServiceClientImpl` et transmettez les valeurs suivantes :
 
-   * Valeur string qui spécifie le magasin où le contenu est ajouté. Le stock par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
-   * Une valeur de chaîne qui spécifie le chemin d’accès complet du contenu à récupérer (par exemple, `/Company Home/Form Designs/Loan.xdp`). Cette valeur est un paramètre obligatoire.
+   * Valeur string qui spécifie le magasin où le contenu est ajouté. Le magasin par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
+   * Valeur string qui spécifie le chemin d’accès complet du contenu à récupérer (par exemple `/Company Home/Form Designs/Loan.xdp`). Cette valeur est un paramètre obligatoire.
    * Valeur string qui spécifie la version. Cette valeur est un paramètre facultatif et vous pouvez transmettre une chaîne vide. Dans ce cas, la dernière version est récupérée.
 
    La méthode `retrieveContent` renvoie un objet `CRCResult` qui contient le fichier XDP. Obtenez une instance `com.adobe.idp.Document` en appelant la méthode `getDocument` de l’objet `CRCResult`.
@@ -104,7 +104,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
    Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
    * Un objet `com.adobe.idp.Document` contenant la conception du formulaire récupéré dans Content Services (obsolète).
-   * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document` vide.
+   * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `com.adobe.idp.Document`.
    * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` qui contient des valeurs URI. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null`.
    * Un objet `java.util.HashMap` qui stocke les pièces jointes. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
@@ -114,9 +114,9 @@ Transmettez un document obtenu à partir de Content Services (obsolète) à l’
 1. Effectuer une action avec le flux de données du formulaire
 
    * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Obtenez le type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
-   * Créez un `javax.servlet.ServletOutputStream` objet utilisé pour écrire le flux de données du formulaire dans le navigateur Web du client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données du formulaire en appelant la méthode `read` de l’objet `InputStream`. Transmettez le tableau d’octets comme argument.
    * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur Web du client. Transmettez le tableau d’octets à la méthode `write`.
@@ -139,7 +139,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
 
    Utilisez la définition WSDL suivante pour la référence de service associée au service Document Management : `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Comme le type de données `BLOB` est commun aux deux références de service, qualifiez entièrement le type de données `BLOB` lorsque vous l’utilisez. Dans le démarrage rapide du service web correspondant, toutes les instances `BLOB` sont entièrement qualifiées.
+   Étant donné que le type de données `BLOB` est commun aux deux références de service, il qualifie entièrement le type de données `BLOB` lors de son utilisation. Dans le démarrage rapide du service web correspondant, toutes les instances `BLOB` sont entièrement qualifiées.
 
    >[!NOTE]
    >
@@ -149,14 +149,14 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
 
    * Créez un objet `FormsServiceClient` en utilisant son constructeur par défaut.
    * Créez un objet `FormsServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/FormsService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `FormsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `FormsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
       * Attribuez le nom d’utilisateur AEM forms au champ `FormsServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur du mot de passe correspondant au champ `FormsServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez la valeur de mot de passe correspondante au champ `FormsServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
    >
@@ -166,20 +166,20 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
 
    Récupérez le contenu en appelant la méthode `retrieveContent` de l’objet `DocumentManagementServiceClient` et en transmettant les valeurs suivantes :
 
-   * Valeur string qui spécifie le magasin où le contenu est ajouté. Le stock par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
-   * Une valeur de chaîne qui spécifie le chemin d’accès complet du contenu à récupérer (par exemple, `/Company Home/Form Designs/Loan.xdp`). Cette valeur est un paramètre obligatoire.
+   * Valeur string qui spécifie le magasin où le contenu est ajouté. Le magasin par défaut est `SpacesStore`. Cette valeur est un paramètre obligatoire.
+   * Valeur string qui spécifie le chemin d’accès complet du contenu à récupérer (par exemple `/Company Home/Form Designs/Loan.xdp`). Cette valeur est un paramètre obligatoire.
    * Valeur string qui spécifie la version. Cette valeur est un paramètre facultatif et vous pouvez transmettre une chaîne vide. Dans ce cas, la dernière version est récupérée.
    * Paramètre de sortie string qui stocke la valeur du lien de navigation.
-   * Un paramètre de sortie `BLOB` qui stocke le contenu. Vous pouvez utiliser ce paramètre de sortie pour récupérer le contenu.
-   * Un paramètre de sortie `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` qui stocke les attributs du contenu.
+   * Paramètre de sortie `BLOB` stockant le contenu. Vous pouvez utiliser ce paramètre de sortie pour récupérer le contenu.
+   * Paramètre de sortie `ServiceReference1.MyMapOf_xsd_string_To_xsd_anyType` stockant les attributs de contenu.
    * Un paramètre de sortie `CRCResult`. Au lieu d’utiliser cet objet, vous pouvez utiliser le paramètre de sortie `BLOB` pour obtenir le contenu.
 
 1. Effectuer le rendu d’un formulaire PDF interactif
 
    Appelez la méthode `renderPDFForm2` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Un objet `BLOB` contenant la conception du formulaire récupéré à partir de Content Services (obsolète).
-   * Un objet `BLOB` qui contient les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner de données, transmettez un objet `BLOB` vide.
+   * Un objet `BLOB` contenant la conception du formulaire récupéré dans Content Services (obsolète).
+   * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner des données, transmettez un objet `BLOB`.
    * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution. Cette valeur est un paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas spécifier d’options d’exécution.
    * Un objet `URLSpec` qui contient des valeurs URI. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null`.
    * Un objet `Map` qui stocke les pièces jointes. Cette valeur est un paramètre facultatif. Vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
@@ -195,7 +195,7 @@ Transmettez un document obtenu à partir de Content Services (obsolète) en util
    * Créez un objet `System.IO.FileStream` en utilisant son constructeur. Transmettez une valeur string qui représente l’emplacement du fichier du document PDF interactif et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` récupéré dans l’objet `FormsResult`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 

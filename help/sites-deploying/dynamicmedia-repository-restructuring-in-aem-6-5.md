@@ -6,18 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '413'
 ht-degree: 33%
 
 ---
 
 # Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Comme décrit sur la page parent [Restructuration des référentiels dans Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers Experience Manager 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur Dynamic Media. Certaines modifications nécessitent des efforts lors de la mise à niveau vers Experience Manager 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme décrit sur le parent [Restructuration des référentiels dans Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers Experience Manager 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur Dynamic Media. Certaines modifications nécessitent des efforts lors de la mise à niveau vers Experience Manager 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avant la mise à niveau ultérieure**
 
@@ -74,7 +74,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans Adobe 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
@@ -116,7 +116,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans Adobe 
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris en copiant tous les canaux de l’ancien emplacement <br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration de YouTube TouchUI, plusieurs URL YouTube sont répertoriées sous Propriétés, car les canaux recréés sont republiés, le cas échéant. Cette fonctionnalité signifie que vous disposez d’URL inutiles répertoriées sous Propriétés.</p> </td>
+   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris la copie de tous les canaux de l’ancien emplacement ;<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration de YouTube TouchUI, plusieurs URL YouTube sont répertoriées sous Propriétés, car les canaux recréés sont republiés, le cas échéant. Cette fonctionnalité signifie que vous disposez d’URL inutiles répertoriées sous Propriétés.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -143,7 +143,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans Adobe 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
@@ -164,7 +164,7 @@ Comme décrit sur la page parent [Restructuration des référentiels dans Adobe 
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>

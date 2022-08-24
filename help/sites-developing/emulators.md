@@ -1,8 +1,8 @@
 ---
 title: Émulateurs
-seo-title: Émulateurs
+seo-title: Emulators
 description: AEM permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page.
-seo-description: AEM permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page.
+seo-description: AEM enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '654'
-ht-degree: 67%
+source-wordcount: '631'
+ht-degree: 65%
 
 ---
 
@@ -45,7 +45,7 @@ Un émulateur :
 * a une apparence définie via CSS ;
 * prend en charge les modules externes (par exemple, le module externe de rotation sur des appareils mobiles) ;
 * est uniquement actif sur l’auteur ;
-* Son composant de base se trouve à `/libs/wcm/emulator/components/base`.
+* Son composant de base se trouve à l’adresse `/libs/wcm/emulator/components/base`.
 
 ### Transformation du contenu par l’émulateur {#how-the-emulator-transforms-the-content}
 
@@ -103,7 +103,7 @@ De cette manière, l’aspect complet de l’émulateur peut être contrôlé à
 >
 >Il est recommandé que le projet HTML encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, les résultats peuvent être imprévisibles.
 
-### Émulateurs mobiles  {#mobile-emulators}
+### Émulateurs mobiles {#mobile-emulators}
 
 Les émulateurs mobiles existants :
 
@@ -112,13 +112,13 @@ Les émulateurs mobiles existants :
 
    http://localhost:4502/bin/wcm/mobile/emulators.json
 
-Lorsque le composant de page repose sur le composant de page mobile ( `/libs/wcm/mobile/components/page`), la fonctionnalité d’émulateur est automatiquement intégrée à la page par le biais du mécanisme suivant :
+Lorsque le composant de page repose sur le composant de page mobile ( `/libs/wcm/mobile/components/page`), la fonctionnalité d’émulateur est automatiquement intégrée dans la page par le biais du mécanisme suivant :
 
 * Le composant de page mobile `head.jsp` inclut le composant init de l’émulateur associé au groupe de périphériques (uniquement en mode de création) et le CSS de rendu du groupe de périphériques via : .
 
    `deviceGroup.drawHead(pageContext);`
 
-* La méthode `DeviceGroup.drawHead(pageContext)` inclut le composant init de l’émulateur, c’est-à-dire appelle la balise `init.html.jsp` du composant de l’émulateur. Si le composant d’émulateur ne possède pas son propre `init.html.jsp` et repose sur l’émulateur de base mobile ( `wcm/mobile/components/emulators/base)`), le script init de l’émulateur de base mobile est appelé ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* La méthode `DeviceGroup.drawHead(pageContext)` inclut le composant init de l’émulateur, c’est-à-dire qu’elle appelle la fonction `init.html.jsp` du composant d’émulateur. Si le composant de l’émulateur n’a pas son propre `init.html.jsp` et repose sur l’émulateur de base mobile ( `wcm/mobile/components/emulators/base)`, le script init de l’émulateur de base mobile est appelé ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
 * Le script init de l’émulateur de base mobile définit via JavaScript :
 
@@ -135,21 +135,21 @@ Lorsque le composant de page repose sur le composant de page mobile ( `/libs/wcm
 
 Pour créer un émulateur mobile personnalisé :
 
-1. Sous `/apps/myapp/components/emulators`, créez le composant `myemulator` (type de noeud : `cq:Component`).
+1. Ci-dessous `/apps/myapp/components/emulators` créer le composant ; `myemulator` (type de noeud : `cq:Component`).
 
 1. Définissez la propriété `sling:resourceSuperType` sur `/libs/wcm/mobile/components/emulators/base`
 
-1. Définissez une bibliothèque cliente CSS avec la catégorie `cq.wcm.mobile.emulator` pour l’aspect de l’émulateur : name = `css`, type de noeud = `cq:ClientLibrary`
+1. Définition d’une bibliothèque cliente CSS avec une catégorie `cq.wcm.mobile.emulator` pour l’aspect de l’émulateur : name = `css`, type de noeud = `cq:ClientLibrary`
 
-   Par exemple, vous pouvez vous référer au noeud `/libs/wcm/mobile/components/emulators/iPhone/css`
+   À titre d’exemple, vous pouvez vous reporter au noeud `/libs/wcm/mobile/components/emulators/iPhone/css`
 
 1. Si nécessaire, définissez une bibliothèque cliente JS, par exemple pour définir un module externe spécifique : name = js, type de noeud = cq:ClientLibrary
 
-   Par exemple, vous pouvez vous référer au noeud `/libs/wcm/mobile/components/emulators/base/js`
+   À titre d’exemple, vous pouvez vous reporter au noeud `/libs/wcm/mobile/components/emulators/base/js`
 
 1. Si l’émulateur prend en charge des fonctionnalités spécifiques définies par des modules externes (comme le défilement tactile), créez un noeud de configuration sous l’émulateur : name = `cq:emulatorConfig`, type de noeud = `nt:unstructured` et ajoutez la propriété qui définit le module externe :
 
-   * Nom = `canRotate`, Type = `Boolean`, Valeur = `true` : pour inclure la fonctionnalité de rotation.
+   * Nom = `canRotate`, Type = `Boolean`, Valeur = `true`: pour inclure la fonctionnalité de rotation.
 
-   * Nom = `touchScrolling`, Type = `Boolean`, Valeur = `true` : pour inclure la fonctionnalité de défilement tactile.
+   * Nom = `touchScrolling`, Type = `Boolean`, Valeur = `true`: pour inclure la fonctionnalité de défilement tactile.
    Plus de fonctionnalités peuvent être ajoutées en définissant vos propres modules externes.

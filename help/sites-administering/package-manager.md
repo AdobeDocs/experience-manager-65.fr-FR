@@ -1,5 +1,5 @@
 ---
-title: Gestionnaire de modules
+title: Gestionnaire de packs
 description: Découvrez les principes de base de la gestion des packages d’AEM avec Package Manager.
 feature: Administering
 role: Admin
@@ -13,124 +13,124 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 source-git-commit: de58ba638c22b7148e1349417d1f514c26c5887e
 workflow-type: tm+mt
 source-wordcount: '3525'
-ht-degree: 18%
+ht-degree: 93%
 
 ---
 
 
-# Gestionnaire de modules {#working-with-packages}
+# Gestionnaire de packs {#working-with-packages}
 
-Les modules permettent d’importer et d’exporter le contenu du référentiel. Vous pouvez utiliser des packages pour installer un nouveau contenu, installer de nouvelles fonctionnalités, transférer du contenu entre les instances et sauvegarder le contenu du référentiel.
+Les packs permettent d’importer et d’exporter le contenu du référentiel. Vous pouvez utiliser des packages pour installer un nouveau contenu, installer de nouvelles fonctionnalités, transférer du contenu entre les instances et sauvegarder le contenu du référentiel.
 
-À l’aide de Package Manager, vous pouvez transférer des modules entre votre instance AEM et votre système de fichiers local à des fins de développement.
+À l’aide du gestionnaire de packs, vous pouvez transférer des packs entre votre instance AEM et votre système de fichiers local à des fins de développement.
 
-## Que sont les modules ? {#what-are-packages}
+## Que sont les packs ? {#what-are-packages}
 
-Un package est un fichier zip contenant du contenu de référentiel dans un formulaire de sérialisation de système de fichiers, appelé sérialisation par coffre, fournissant une représentation facile à utiliser et à modifier des fichiers et des dossiers. Le contenu inclus dans le package est défini à l’aide de filtres.
+Un pack est un fichier zip contenant le contenu du référentiel dans un formulaire de sérialisation de système de fichiers, appelé sérialisation du coffre, fournissant une représentation des fichiers et des dossiers facile à utiliser et à modifier. Le contenu inclus dans le pack est défini à l’aide de filtres.
 
-Un module contient également les méta-informations du coffre-fort, dont les définitions des filtres et les informations de configuration de l’importation. D’autres propriétés de contenu, qui ne sont pas utilisées pour l’extraction de package, peuvent être incluses dans le package, telles qu’une description, une image visuelle ou une icône. Ces propriétés de contenu supplémentaires sont destinées au consommateur de module de contenu et à titre d’information uniquement.
+Un pack contient également les méta-informations du coffre, notamment les définitions des filtres et les informations de configuration de l’importation. Des propriétés de contenu supplémentaires, qui ne sont pas utilisées pour l’extraction du pack, peuvent être incluses dans le pack, telles qu’une description, une image visuelle ou une icône. Ces propriétés de contenu supplémentaires sont destinées au consommateur du pack de contenu et ne sont fournies qu’à titre d’informations.
 
 >[!NOTE]
 >
 >Les modules représentent la version actuelle du contenu au moment où le module est créé. Ils n’incluent pas les versions précédentes du contenu qu’AEM conserve dans le référentiel.
 
-## Gestionnaire de modules {#package-manager}
+## Gestionnaire de packs {#package-manager}
 
-Package Manager gère les modules de votre installation AEM. Après avoir [attribué les autorisations nécessaires](#permissions-needed-for-using-the-package-manager) vous pouvez utiliser le gestionnaire de modules pour diverses actions, notamment la configuration, la création, le téléchargement et l’installation de vos modules.
+Le Gestionnaire de packs gère les packs de votre installation AEM. Après avoir [attribué les autorisations nécessaires](#permissions-needed-for-using-the-package-manager), vous pouvez utiliser le Gestionnaire de packs pour différentes actions, comme la configuration, la création, le téléchargement et l’installation des packs.
 
 ### Autorisations requises {#required-permissions}
 
-Pour créer, modifier, charger et installer des packages, les utilisateurs doivent disposer des autorisations appropriées sur les noeuds suivants :
+Pour créer, modifier, charger et installer des packs, les utilisateurs doivent disposer des autorisations appropriées sur les nœuds suivants :
 
 * Droits complets à l’exception de la suppression sur `/etc/packages`
-* Noeud contenant le contenu du package
+* Le nœud contenant le contenu du pack
 
 >[!CAUTION]
 >
->L’octroi d’autorisations pour les packages peut entraîner une divulgation des informations sensibles et une perte de données.
+>L’octroi d’autorisations pour les packs peut entraîner la divulgation d’informations sensibles et la perte de données.
 >
->Pour limiter ces risques, il est vivement recommandé d’accorder des autorisations de groupe spécifiques sur des sous-arborescences dédiées uniquement.
+>Pour limiter ces risques, il est vivement recommandé d’accorder des autorisations à des groupes spécifiques sur des sous-arborescences dédiées uniquement.
 
-### Accès au gestionnaire de modules {#accessing}
+### Accéder au gestionnaire de packs {#accessing}
 
-Vous pouvez accéder au gestionnaire de modules de trois façons :
+Vous pouvez accéder au gestionnaire de packs de trois façons :
 
-1. Dans le menu principal AEM -> **Outils** -> **Déploiement** -> **Packages**
-1. De [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) utilisation de la barre de sélecteur supérieure
-1. En accédant directement à `http://<host>:<port>/crx/packmgr/`
+1. À partir du menu principal d’AEM -> **Outils** -> **Déploiement** -> **Packs**
+1. Depuis [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en utilisant la barre de sélection supérieure
+1. Directement en accédant à `http://<host>:<port>/crx/packmgr/`
 
-### Interface utilisateur de Package Manager {#ui}
+### Interface utilisateur du gestionnaire de packs {#ui}
 
-Package Manager se divise en quatre principaux domaines fonctionnels :
+Le gestionnaire de packs est divisé en quatre zones fonctionnelles principales :
 
-* **Panneau de navigation gauche** - Ce panneau vous permet de filtrer et de trier la liste des packages.
-* **Liste de modules** - Il s’agit de la liste des packages de votre instance filtrés et triés par sélection dans le panneau de navigation de gauche.
-* **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité de Package Manager, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
+* **Panneau de navigation de gauche** - Ce panneau vous permet de filtrer et de trier la liste des packs.
+* **Liste de packs** - Il s’agit de la liste des packs de votre instance, filtrée et triée selon les sélections effectuées dans le panneau de navigation de gauche.
+* **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packs, comme lorsqu’un pack est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
    * **Effacer le journal**
-   * **Afficher/masquer**
-* **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste de modules, ainsi que des boutons permettant de rechercher, créer et charger des modules.
+   * **Afficher/Masquer**
+* **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste des packs, ainsi que des boutons pour rechercher, créer et charger des packs.
 
-![Interface utilisateur de Package Manager](assets/package-manager-ui.png)
+![Interface utilisateur du gestionnaire de packs](assets/package-manager-ui.png)
 
-Cliquer sur une option dans le panneau de navigation de gauche filtre immédiatement la liste de modules.
+Cliquez sur une option dans le panneau de navigation de gauche pour filtrer immédiatement la liste des packs.
 
-Cliquez sur le nom d’un module pour développer l’entrée dans la liste des modules afin d’afficher plus de détails sur le module.
+Cliquez sur le nom d’un pack pour développer l’entrée dans la liste des packs et afficher plus de détails sur le pack.
 
-![Détails du module étendu](assets/package-expand.png)
+![Détails développés du pack](assets/package-expand.png)
 
-Plusieurs actions peuvent être effectuées sur un package via les boutons de la barre d’outils disponibles lorsque le détail du package est développé.
+Plusieurs actions peuvent être effectuées sur un pack via les boutons de la barre d’outils disponibles lorsque les détails du pack sont développés.
 
 * [Modifier](#edit-package)
-* [Compilation](#building-a-package)
+* [Créer](#building-a-package)
 * [Réinstaller](#reinstalling-packages)
 * [Télécharger](#downloading-packages-to-your-file-system)
 * [Partager](#share)
 
-D’autres actions sont disponibles sous la variable **Plus** bouton .
+D’autres actions sont disponibles sous le bouton **Plus**.
 
 * [Supprimer](#deleting-packages)
 * [Couverture](#package-coverage)
-* [Sommaire](#viewing-package-contents-and-testing-installation)
+* [Contenu](#viewing-package-contents-and-testing-installation)
 * [Réencapsuler](#rewrapping-a-package)
 * [Autres versions](#other-versions)
 * [Désinstaller](#uninstalling-packages)
-* [Test Install](#viewing-package-contents-and-testing-installation)
+* [Tester l’installation](#viewing-package-contents-and-testing-installation)
 * [Valider](#validating-packages)
 * [Répliquer](#replicating-packages)
 
-### État du package {#package-status}
+### Statut du pack {#package-status}
 
-Chaque entrée de la liste des packages comporte un indicateur d’état pour vous informer en un coup d’oeil du statut du package. Pointez sur l’état pour afficher l’info-bulle avec le détail de l’état.
+Chaque entrée de la liste des packs comporte un indicateur de statut qui vous permet de connaître d&#39;un coup d’œil le statut du pack. Si vous passez la souris sur le statut, vous verrez apparaître une info-bulle contenant le détail du statut.
 
-![État du package](assets/package-status.png)
+![Statut du pack](assets/package-status.png)
 
-Si le package a été modifié ou n’a jamais été créé, l’état est présenté sous la forme d’un lien pour effectuer une action rapide afin de le recréer ou de l’installer.
+Si le pack a été modifié ou n’a jamais été conçu, le statut est présenté comme un lien permettant de prendre des mesures rapides afin de le concevoir à nouveau ou de l’installer.
 
-## Paramètres du module {#package-settings}
+## Paramètres du pack {#package-settings}
 
-Un package est essentiellement un ensemble de filtres et de données de référentiel basés sur ces filtres. À l’aide de l’interface utilisateur du gestionnaire de modules, vous pouvez cliquer sur un module, puis sur le **Modifier** pour afficher les détails d’un package, y compris les paramètres suivants.
+Un pack est essentiellement un ensemble de filtres et les données du référentiel basées sur ces filtres. Dans l’interface utilisateur du gestionnaire de packs, vous pouvez cliquer sur un pack, puis sur le bouton **Modifier** pour afficher les détails d’un pack, y compris les paramètres suivants.
 
 * [Paramètres généraux](#general-settings)
-* [Filtres de module](#package-filters)
-* [Dépendances de modules](#package-dependencies)
+* [Filtres de pack](#package-filters)
+* [Dépendances des packs](#package-dependencies)
 * [Paramètres avancés](#advanced-settings)
-* [Captures d’écran de module](#package-screenshots)
+* [Captures d’écran des packs](#package-screenshots)
 
 ### Paramètres généraux {#general-settings}
 
-Vous pouvez modifier divers paramètres de package pour définir des informations telles que la description du package, les dépendances et les détails du fournisseur.
+Vous pouvez modifier différents paramètres du pack pour définir des informations telles que la description du pack, les dépendances et les informations sur le fournisseur.
 
-Le **Paramètres du module** est disponible via la boîte de dialogue **Modifier** lorsque [création](#creating-a-new-package) ou [édition](#viewing-and-editing-package-information) un package. Une fois les modifications effectuées, cliquez sur **Enregistrer**.
+La boîte de dialogue **Paramètres du pack** est accessible via le bouton **Modifier** lors de la [création](#creating-a-new-package) ou de la [modification](#viewing-and-editing-package-information) d’un pack. Une fois les modifications effectuées, cliquez sur **Enregistrer**.
 
-![Boîte de dialogue Modifier le module, paramètres généraux](assets/general-settings.png)
+![Boîte de dialogue Modifier le pack, paramètres généraux](assets/general-settings.png)
 
 | Champ | Description |
 |---|---|
-| Nom | Nom du module |
-| Groupe | Pour organiser des modules, vous pouvez saisir le nom d’un nouveau groupe ou sélectionner un groupe existant. |
+| Nom | Le nom du pack |
+| Groupe | Pour organiser des packs, vous pouvez saisir le nom d’un nouveau groupe ou sélectionner un groupe existant. |
 | Version | Texte à utiliser pour la version |
-| Description | Brève description du module permettant le balisage de HTML pour le formatage |
-| Miniature | Icône qui s’affiche avec la liste des packages |
+| Description | Brève description du pack permettant le balisage HTML pour le formatage |
+| Miniature | L’icône qui s’affiche dans la liste des packs |
 
 #### Miniatures des modules {#thumbnails}
 
@@ -152,35 +152,35 @@ Service Pack officiel
 
 Utilisez une icône unique pour votre module. Ne réutilisez pas une icône utilisée par Adobe.
 
-### Filtres de module {#package-filters}
+### Filtres de pack {#package-filters}
 
-Les filtres identifient les nœuds du référentiel à inclure dans le module. A **Définition du filtre** indique les informations suivantes :
+Les filtres identifient les nœuds du référentiel à inclure dans le module. Une **définition de filtre** spécifie les informations suivantes :
 
 * **Chemin d’accès racine** du contenu à inclure
-* **Règles** qui incluent ou excluent des noeuds spécifiques sous le chemin d’accès racine
+* **Règles** incluant ou excluant certains nœuds sous le chemin d’accès racine
 
-Ajoutez des règles à l’aide du **+** bouton . Supprimez les règles à l’aide de la fonction **-** bouton .
+Ajoutez des règles à l’aide du bouton **+**. Supprimez des règles à l’aide du bouton **-**.
 
-Les règles sont appliquées selon leur ordre, positionnez-les selon vos besoins à l’aide de la fonction **Monter** et **Descendre** boutons fléchés.
+Les règles sont appliquées selon leur ordre, donc positionnez-les dans l’ordre de votre choix à l’aide des boutons fléchés **haut** et **bas**.
 
 Les filtres peuvent ne comporter aucune règle ou en comporter plusieurs. Lorsqu’aucune règle n’est définie, le module contient tout le contenu sous le chemin d’accès racine.
 
-Vous pouvez définir une ou plusieurs définitions de filtre pour un module. Utilisez plusieurs filtres pour inclure le contenu de plusieurs chemins racine.
+Vous pouvez définir une ou plusieurs définitions de filtre pour un module. Utilisez plusieurs filtres de manière à inclure le contenu de différents chemins d’accès racine.
 
 ![Onglet Filtres](assets/edit-filter.png)
 
-Lors de la création de filtres, vous pouvez définir un chemin d’accès ou utiliser une expression régulière pour spécifier tous les noeuds que vous souhaitez inclure ou exclure.
+Lors de la création de filtres, vous pouvez définir un chemin dʼaccès ou utiliser une expression régulière pour spécifier tous les nœuds à inclure ou exclure.
 
 | Type de règle | Description |
 |---|---|
-| inclusion | L’inclusion d’un répertoire inclut ce répertoire et tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière), mais **ne sera pas** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
+| inclusion | L’inclusion d’un répertoire inclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière) mais n’inclut **pas** d’autres fichiers ou dossiers situés sous le chemin d’accès racine spécifié. |
 | exclusion | L’exclusion d’un répertoire exclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière). |
 
-Les filtres de module sont le plus souvent définis lors de votre première utilisation. [créez le package.](#creating-a-new-package) Cependant, elles peuvent également être modifiées ultérieurement, après quoi le module doit être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
+Les filtres de module sont le plus souvent définis lors de la première [création du module.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le module devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 
 >[!TIP]
 >
->Un package peut contenir plusieurs définitions de filtre afin que les noeuds de différents emplacements puissent être facilement combinés en un seul package.
+>Un module peut contenir plusieurs définitions de filtre de manière à pouvoir combiner facilement des nœuds de différents emplacements en un seul module.
 
 ### Dépendances {#dependencies}
 
@@ -188,9 +188,9 @@ Les filtres de module sont le plus souvent définis lors de votre première util
 
 | Champ | Description | Exemple/Détails |
 |---|---|---|
-| Testé avec | Le nom et la version du produit auxquels ce module est ciblé ou est compatible. | `6.5` |
-| Problèmes résolus | Un champ de texte permettant de répertorier les détails des bogues corrigés avec ce module, un bogue par ligne. | - |
-| Dépend de | Répertorie les autres packages nécessaires pour que le package actuel s’exécute comme prévu lorsqu’il est installé. | `groupId:name:version` |
+| Testé avec | Le nom et la version du produit auquel ce paquet est destiné ou avec lequel il est compatible. | `6.5` |
+| Problèmes résolus | Champ de texte permettant de répertorier les informations relatives aux bugs corrigés dans ce module, un bug par ligne. | - |
+| Dépend de | Répertorie les autres modules nécessaires pour que le module actuel s’exécute comme prévu une fois installé. | `groupId:name:version` |
 | Remplace | Liste des modules obsolètes que ce module remplace | `groupId:name:version` |
 
 ### Paramètres avancés {#advanced-settings}
@@ -199,129 +199,129 @@ Les filtres de module sont le plus souvent définis lors de votre première util
 
 | Champ | Description | Exemple/Détails |
 |---|---|---|
-| Nom | Nom du fournisseur du package | `WKND Media Group` |
-| URL | URL du fournisseur | `https://wknd.site` |
+| Nom | Nom du fournisseur du module | `WKND Media Group` |
+| URL | Adresse URL du fournisseur | `https://wknd.site` |
 | Lien | Lien spécifique au module vers une page de fournisseur | `https://wknd.site/package/` |
-| Requiert | Définit s’il existe des restrictions lors de l’installation du package. | **Administration** - Le package ne doit être installé qu’avec les privilèges d’administrateur.<br>**Redémarrer** - AEM doit être redémarré après l’installation du package |
-| Traitement AC | Indique le mode de traitement des informations de contrôle d’accès définies dans le package lors de l’importation du package. | **Ignorer** - Conserver les listes de contrôle d’accès dans le référentiel <br>**Remplacer** - Remplacer les listes de contrôle d’accès dans le référentiel <br>**Fusion** - Fusionner les deux ensembles de listes de contrôle d’accès <br>**MergePreserve** - Fusionner le contrôle d’accès dans le contenu avec celui fourni avec le package en ajoutant les entrées de contrôle d’accès des entités non présentes dans le contenu <br>**Effacer** - Effacer les listes ACL |
+| Requiert | Définit s’il existe des restrictions lors de l’installation du module. | **Administrateur** - Le module ne doit être installé qu’avec des privilèges Administrateur <br>**Redémarrage** - AEM doit être redémarré après l’installation du module |
+| Traitement AC | Indique comment les informations de contrôle d’accès définies dans le module sont traitées lors de son importation | **Ignorer** - Les listes ACL dans le référentiel sont conservées <br>**Remplacer** - Les listes ACL dans le référentiel sont remplacées <br>**Fusionner** - Les deux ensembles de listes ACL sont fusionnés <br>**FusionnerConserver** - Le contrôle dʼaccès dans le contenu est fusionné avec celui fourni avec le module en ajoutant les entrées de contrôle dʼaccès des entités non présentes dans le contenu <br>**Effacer** - Les listes ACL sont effacées |
 
-### Captures d’écran de module {#package-screenshots}
+### Captures d’écran des packs {#package-screenshots}
 
-Vous pouvez joindre plusieurs captures d’écran à votre module afin de fournir une représentation visuelle de l’affichage du contenu.
+Vous pouvez joindre plusieurs captures dʼécran à votre module pour fournir une représentation visuelle de la façon dont le contenu apparaît.
 
 ![Onglet Captures d’écran](assets/screenshots.png)
 
 ## Actions de module {#package-actions}
 
-De nombreuses actions peuvent être entreprises sur un package.
+De nombreuses actions peuvent être entreprises sur un module.
 
 ### Création d’un module {#creating-a-new-package}
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Cliquez sur **Créer un package**.
+1. Cliquez sur **Créer un module**.
 
    >[!TIP]
    >
-   >Si votre instance comporte de nombreux packages, il se peut qu’une structure de dossiers soit en place. Dans ce cas, il est plus facile d’accéder au dossier cible requis avant de créer le module.
+   >Si votre instance comporte de nombreux packs, une structure de dossiers peut être mise en place. Il est alors plus facile de naviguer vers le dossier cible requis avant de créer le nouveau pack.
 
-1. Dans le **Nouveau package** saisissez les champs suivants :
+1. Dans la boîte de dialogue **Nouveau pack**, saisissez les champs suivants :
 
-   ![Boîte de dialogue Nouveau package](assets/new-package-dialog.png)
+   ![Boîte de dialogue Nouveau pack](assets/new-package-dialog.png)
 
-   * **Nom du module** - Sélectionnez un nom explicite pour vous aider (et d’autres) à identifier facilement le contenu du package.
+   * **Nom du pack** - Sélectionnez un nom explicite pour vous aider (vous et les autres) à identifier facilement le contenu du pack.
 
-   * **Version** - Il s’agit d’un champ de texte que vous pouvez spécifier une version. Il est ajouté au nom du module pour former le nom du fichier zip.
+   * **Version** - Champ de texte permettant d’indiquer une version. Elle est ajoutée au nom du pack pour former le nom du fichier ZIP.
 
-   * **Groupe** - Il s’agit du nom du groupe cible (ou dossier). Les groupes vous aident à organiser vos modules. Un dossier est créé pour le groupe s’il n’existe pas déjà. Si vous laissez le nom du groupe vide, il crée le module dans la liste des modules principaux.
+   * **Groupe** - Il s’agit du nom du groupe (ou du dossier) cible. Les groupes vous aident à organiser vos packs. Si le dossier n’existe pas encore, il est créé pour le groupe. Si vous ne renseignez pas le nom du groupe, le pack est créé dans la liste des packs principale.
 
-1. Cliquez sur **OK** pour créer le module.
+1. Cliquez sur **OK** pour créer le pack.
 
-1. AEM liste le nouveau package en haut de la liste des packages.
+1. AEM place le nouveau pack en haut de la liste des packs.
 
-   ![Nouveau package](assets/new-package.png)
+   ![Nouveau pack](assets/new-package.png)
 
-1. Cliquez sur **Modifier** pour définir la variable [contenu du module.](#package-contents) Cliquez sur **Enregistrer** une fois que vous avez terminé de modifier les paramètres.
+1. Cliquez sur **Modifier** pour définir le [contenu du pack.](#package-contents) Une fois que vous avez fini de modifier les paramètres, cliquez sur **Enregistrer**.
 
-1. Vous pouvez maintenant [créer](#building-a-package) votre module.
+1. Vous pouvez maintenant [créer](#building-a-package) votre pack.
 
-Il n’est pas obligatoire de créer immédiatement le package après sa création. Un module non créé ne contient aucun contenu et se compose uniquement des données de filtre et autres métadonnées du module.
+Il n’est pas obligatoire de concevoir immédiatement le pack après lʼavoir créé. Un pack non conçu ne contient aucun contenu et se compose uniquement des données du filtre et des autres métadonnées.
 
-### Création d’un module {#building-a-package}
+### Concevoir un pack {#building-a-package}
 
-Un module est souvent créé en même temps que vous [créer le module ;](#creating-a-new-package), mais vous pouvez renvoyer ultérieurement pour créer ou recréer le module. Cela peut s’avérer utile si le contenu du référentiel a changé ou si les filtres de package ont changé.
+Un pack est souvent conçu au moment où vous [créez le pack](#creating-a-new-package), mais vous pouvez y revenir ultérieurement pour concevoir ou reconcevoir le pack. Cela peut s’avérer utile si le contenu du référentiel ou les filtres du pack ont été modifiés.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
-1. Cliquez sur **Créer**. Une boîte de dialogue vous demande de confirmer que vous souhaitez créer le module, car tout contenu existant du module sera remplacé.
+1. Cliquez sur **Concevoir**. Une boîte de dialogue vous demande de confirmer que vous souhaitez concevoir le pack, car tout contenu existant du pack sera remplacé.
 
-1. Cliquez sur **OK**. AEM crée le module, répertoriant tout le contenu ajouté au module comme il le fait dans la liste des activités. Une fois l’opération terminée, AEM affiche un message de confirmation indiquant que le module a été créé et (lorsque vous fermez la boîte de dialogue) met à jour les informations de la liste de modules.
+1. Cliquez sur **OK**. AEM crée le pack et répertorie tout le contenu ajouté au pack dans la liste des activités. Une fois l’opération terminée, AEM affiche un message de confirmation indiquant que le pack a été conçu et (lorsque vous fermez la boîte de dialogue) met à jour les informations de la liste de packs.
 
-### Modification d’un module {#edit-package}
+### Modifier un pack {#edit-package}
 
-Une fois un package téléchargé dans AEM, vous pouvez modifier ses paramètres.
+Une fois quʼun pack est téléchargé dans AEM, vous pouvez modifier ses paramètres.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
-1. Cliquez sur **Modifier** et mettez à jour **[Paramètres du module](#package-settings)**, au besoin.
+1. Cliquez sur **Modifier** et mettez à jour les **[Paramètres du pack](#package-settings)**, au besoin.
 
-1. Cliquez sur **Enregistrer** pour enregistrer.
+1. Cliquez sur **Enregistrer**.
 
-Vous devrez peut-être [recréer le module](#building-a-package) pour mettre à jour son contenu en fonction des modifications que vous avez apportées.
+En fonction des modifications que vous avez apportées, vous devrez peut-être [concevoir à nouveau le pack](#building-a-package) pour mettre à jour son contenu.
 
-### Réencapsulation d’un module {#rewrapping-a-package}
+### Réencapsuler un pack {#rewrapping-a-package}
 
-Une fois qu’un package a été créé, il peut être réencapsulé. Le retour à la ligne modifie les informations du module sans qu’il y ait de miniature, de description, etc., sans modifier le contenu du module.
+Une fois qu’un pack a été créé, il peut être réencapsulé. La réencapsulation modifie les informations du pack telles que la miniature, la description, etc. sans toucher à son contenu.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
-1. Cliquez sur **Modifier** et mettez à jour **[Paramètres du module](#package-settings)**, au besoin.
+1. Cliquez sur **Modifier** et mettez à jour les **[Paramètres du pack](#package-settings)**, au besoin.
 
-1. Cliquez sur **Enregistrer** pour enregistrer.
+1. Cliquez sur **Enregistrer**.
 
-1. Cliquez sur **Plus** -> **Réencapsuler** et une boîte de dialogue de confirmation s’affiche.
+1. Cliquez sur **Plus** -> **Réencapsuler**. Une boîte de dialogue vous demandera une confirmation.
 
-### Affichage d’autres versions de module {#other-versions}
+### Afficher d’autres versions de package {#other-versions}
 
-Comme chaque version d’un module apparaît dans la liste comme n’importe quel autre module, le gestionnaire de modules peut trouver d’autres versions d’un module sélectionné.
+Comme chaque version d’un pack apparaît dans la liste comme n’importe quel autre pack, le gestionnaire de packs peut trouver d’autres versions d’un pack sélectionné.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
-1. Cliquez sur **Plus** -> **Autres versions** et une boîte de dialogue s’ouvre avec une liste d’autres versions du même package avec des informations d’état.
+1. Cliquez sur **Plus** -> **Autres versions** et une boîte de dialogue s’ouvre avec une liste d’autres versions du même pack avec des informations sur le statut.
 
-### Affichage du contenu du module et test de l’installation {#viewing-package-contents-and-testing-installation}
+### Afficher le contenu du pack et test de l’installation {#viewing-package-contents-and-testing-installation}
 
-Une fois qu’un module a été créé, vous pouvez en afficher le contenu.
+Une fois un pack créé, vous pouvez afficher son contenu.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
-1. Pour afficher le contenu, cliquez sur **Plus** -> **Contenu** et Package Manager répertorie l’intégralité du contenu du module dans le journal d’activité.
+1. Pour afficher le contenu, cliquez sur **Plus** -> **Contenu**, et le gestionnaire de packs répertorie l’intégralité du contenu du pack dans le journal des activités.
 
-   ![Contenu du package](assets/package-contents.png)
+   ![Contenu du pack](assets/package-contents.png)
 
-1. Pour exécuter une exécution d’essai de l’installation, cliquez sur **Plus** -> **Test Install** et les rapports Gestionnaire de modules dans l’activité consignent les résultats comme si l’installation avait été effectuée.
+1. Pour exécuter une essai de l’installation, cliquez sur **Plus** -> **Test de l’installation** et le Gestionnaire de packs établit un rapport sur les résultats dans le journal d’activité comme si l’installation avait été effectuée.
 
    ![Test de l’installation](assets/test-install.png)
 
-### Téléchargement des modules sur votre système de fichiers {#downloading-packages-to-your-file-system}
+### Télécharer des packs sur votre système de fichiers {#downloading-packages-to-your-file-system}
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
-1. Cliquez sur le bouton **Télécharger** ou le nom du fichier lié du package dans la zone des détails du package.
+1. Cliquez sur le bouton **Télécharger** ou sur le nom du fichier lié au pack dans la zone des détails du pack.
 
-1. AEM télécharge le module sur votre ordinateur.
+1. AEM télécharge le pack sur votre ordinateur.
 
 ### Partage d’un package {#share}
 
@@ -329,26 +329,26 @@ Le partage de modules était un service public centralisé pour distribuer des m
 
 ### Chargement des modules à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Sélectionnez le dossier du groupe dans lequel vous souhaitez charger le package.
+1. Sélectionnez le dossier de groupe dans lequel vous souhaitez que le module soit chargé.
 
-1. Cliquez sur le bouton **Télécharger le module** bouton .
+1. Cliquez sur le bouton **Charger le module**.
 
-1. Fournissez les informations nécessaires sur le package téléchargé.
+1. Fournissez les informations nécessaires sur le module chargé.
 
    ![Boîte de dialogue de chargement de module](assets/package-upload-dialog.png)
 
-   * **Package** - Utilisez la variable **Parcourir..** pour sélectionner le package requis dans votre système de fichiers local.
-   * **Forcer le chargement** - Si un package portant ce nom existe déjà, cette option force le téléchargement et remplace le package existant.
+   * **Module** - Servez-vous du bouton **Parcourir..** pour sélectionner le module requis dans votre système de fichiers local.
+   * **Forcer le chargement** - Si un module portant ce nom existe déjà, cette option force le chargement et remplace le module existant.
 
-1. Cliquez sur **OK** et le package sélectionné est téléchargé et la liste des packages est mise à jour en conséquence.
+1. Cliquez sur **OK**, le module sélectionné est chargé et la liste des modules est mise à jour en conséquence.
 
-Le contenu du module existe désormais sur AEM, mais pour rendre le contenu disponible, veillez à [installer le package](#installing-packages).
+Le contenu du module existe désormais sur AEM, mais pour rendre le contenu disponible, veillez à [installer le module](#installing-packages).
 
 ### Validation de modules {#validating-packages}
 
-Les packages pouvant modifier du contenu existant, il est souvent utile de valider ces modifications avant l’installation.
+Les modules pouvant modifier le contenu existant, il est souvent utile de valider ces modifications avant de les installer.
 
 #### Options de validation {#validation-options}
 
@@ -360,33 +360,33 @@ Le gestionnaire de modules peut effectuer les validations suivantes :
 
 ##### Valider les importations de modules OSGi {#osgi-package-imports}
 
-**Éléments vérifiés**
+**Contenu vérifié**
 
-Cette validation inspecte le package pour tous les fichiers JAR (lots OSGi), extrait leurs `manifest.xml` (qui contient les dépendances versionnées sur lesquelles repose le bundle OSGi) et vérifie que l’instance AEM exporte ces dépendances avec les versions correctes.
+Cette validation inspecte le module pour tous les fichiers JAR (lots OSGi), extrait leur `manifest.xml` (qui contient les dépendances de version sur lesquelles le lot OSGi repose) et vérifie que l’instance AEM exporte lesdites dépendances avec les versions correctes.
 
-**Comment sont-ils signalés ?**
+**Comment c’est rapporté ?**
 
-Toutes les dépendances versionnées qui ne peuvent pas être satisfaites par l’instance AEM sont répertoriées dans le Journal d’activité de Package Manager.
+Toutes les dépendances de version qui ne peuvent pas être satisfaites par l’instance AEM est répertoriées dans le journal d’activité du Gestionnaire de modules.
 
 **États d’erreur**
 
-Si les dépendances ne sont pas satisfaites, les lots OSGi du module avec ces dépendances ne démarrent pas. Cela entraîne un déploiement d’application interrompu, car tout ce qui dépend du lot OSGi non démarré ne fonctionnera pas correctement.
+Si les dépendances ne sont pas satisfaites, les lots OSGi du module avec ces dépendances ne démarrent pas. Cela entraîne un déploiement d’application interrompu, car tout ce qui repose sur le lot OSGi non démarré ne fonctionnera pas correctement.
 
 **Résolution d’erreurs**
 
-Pour résoudre les erreurs dues à des lots OSGi insatisfaits, la version de dépendance du lot avec des importations insatisfaites doit être ajustée.
+Pour résoudre des erreurs dues à des lots OSGi non satisfaits, il faut ajuster la version dépendante du lot avec des importations non satisfaites.
 
 ##### Valider les recouvrements {#overlays}
 
-**Éléments vérifiés**
+**Contenu vérifié**
 
 Cette validation détermine si le module en cours d’installation contient un fichier déjà recouvert dans l’instance AEM de destination.
 
-Par exemple, selon une superposition existante à l’emplacement `/apps/sling/servlet/errorhandler/404.jsp`, un module contenant `/libs/sling/servlet/errorhandler/404.jsp`, de sorte qu’il modifie le fichier existant à l’adresse `/libs/sling/servlet/errorhandler/404.jsp`.
+Par exemple, étant donné un recouvrement présent dans `/apps/sling/servlet/errorhandler/404.jsp`, un module contenant `/libs/sling/servlet/errorhandler/404.jsp`, il modifiera donc le fichier existant dans `/libs/sling/servlet/errorhandler/404.jsp`.
 
 **Comment sont-ils signalés ?**
 
-Toutes ces superpositions sont décrites dans le Journal d’activité du Gestionnaire de modules.
+Ces recouvrements sont décrits dans le Journal d’activités du Gestionnaire de modules.
 
 **États d’erreur**
 
@@ -394,21 +394,21 @@ Un état d’erreur signifie que le module tente de déployer un fichier déjà 
 
 **Résolution d’erreurs**
 
-Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/apps` doit réviser les modifications apportées au fichier recouvert dans `/libs` et incorporer les modifications nécessaires dans le recouvrement ( `/apps`), puis redéployez le fichier recouvert.
+Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/apps` doit réviser les modifications apportées au fichier recouvert dans `/libs` et incorporer les modifications requises, le cas échéant, dans le recouvrement (`/apps`) et redéployer le fichier recouvert.
 
 >[!NOTE]
 >
->Le mécanisme de validation ne permet pas de réconcilier le contenu superposé correctement incorporé dans le fichier de recouvrement. Par conséquent, cette validation continuera à signaler des conflits même après que les modifications nécessaires auront été apportées.
+>Le mécanisme de validation ne peut pas vérifier si le contenu recouvert a été correctement incorporé dans le fichier recouvert. Par conséquent, cette validation continuera à signaler des conflits même après que les modifications nécessaires auront été apportées.
 
 ##### Valider les listes ACL {#acls}
 
-**Éléments vérifiés**
+**Contenu vérifié**
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles seront gérées (fusion/remplacement) et si les autorisations actuelles seront affectées.
 
-**Comment sont-ils signalés ?**
+**Comment c’est rapporté ?**
 
-Les autorisations sont décrites dans le Journal d’activité du Gestionnaire de modules.
+Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de modules.
 
 **États d’erreur**
 
@@ -420,7 +420,7 @@ Grâce aux informations fournies par la validation, les nœuds affectés peuvent
 
 >[!CAUTION]
 >
->Il est recommandé que les packages n’affectent pas les listes de contrôle d’accès fournies par AEM, car cela peut entraîner un comportement inattendu.
+>Il est recommandé de sʼassurer que les modules n’affectent pas les listes ACL fournies par AEM, car cela pourrait entraîner un comportement inattendu du produit.
 
 #### Validation {#performing-validation}
 
@@ -431,17 +431,17 @@ La validation des modules peut être effectuée de deux manières différentes 
 
 La validation doit toujours avoir lieu après le chargement du module, mais avant son installation.
 
-##### Validation De Package Via Package Manager {#via-package-manager}
+##### Validation de modules via le Gestionnaire de modules {#via-package-manager}
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
-1. Pour valider le package, cliquez sur **Plus** -> **Valider**,
+1. Pour valider le module, cliquez sur **Plus** -> **Valider**.
 
 1. Dans la boîte de dialogue modale qui s’affiche alors, utilisez les cases à cocher pour sélectionner le ou les types de validation et commencez la validation en cliquant sur **Valider**.
 
-1. La ou les validations sélectionnées sont ensuite exécutées et les résultats s’affichent dans le Journal d’activité du Gestionnaire de modules.
+1. La ou les validations sélectionnées sont ensuite exécutées et les résultats sont affichés dans le Journal d’activité du Gestionnaire de modules.
 
 ##### Validation de modules via une requête HTTP POST {#via-post-request}
 
@@ -451,119 +451,119 @@ La requête POST se présente comme suit.
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
 ```
 
-Le `type` peut être n’importe quelle liste non triée séparée par des virgules composée des éléments suivants :
+Le paramètre `type` peut être n’importe quelle liste non triée séparée par des virgules qui comprend :
 
 * `osgiPackageImports`
 * `overlays`
 * `acls`
 
-La valeur de `type` par défaut : `osgiPackageImports` si elle n’est pas explicitement transmise.
+La valeur par défaut de `type` est `osgiPackageImports` si elle n’est pas explicitement transmise.
 
-Lors de l’utilisation de cURL, exécutez une instruction similaire à celle-ci :
+Si vous utilisez cURL, exécutez une instruction semblable à celle-ci :
 
 ```shell
 curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.components.all-1.1.0.zip 'http://localhost:4502/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls'
 ```
 
-Lors de la validation via une requête de POST, la réponse est renvoyée sous la forme d’un objet JSON.
+Lors de la validation par le biais dʼune requête POST, la réponse est renvoyée sous la forme d’un objet JSON.
 
-### Affichage de la couverture de module {#package-coverage}
+### Affichage de la couverture du module {#package-coverage}
 
-Les packages sont définis par leurs filtres. Vous pouvez demander au gestionnaire de modules d’appliquer des filtres d’un module au contenu de votre référentiel existant afin d’afficher le contenu du référentiel couvert par la définition de filtre du module.
+Les packs sont définis par leurs filtres. Vous pouvez demander au Gestionnaire de packs d’appliquer les filtres d’un pack au contenu de votre référentiel existant, afin de montrer le contenu du référentiel qui est couvert par la définition du filtre du pack.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du module dans la liste des modules en cliquant sur son nom.
 
 1. Cliquez sur **Plus** -> **Couverture**.
 
 1. Les détails de la couverture sont répertoriés dans le journal d’activité.
 
-### Installation des modules {#installing-packages}
+### Installation des packs {#installing-packages}
 
-Le téléchargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Vous devez installer le package téléchargé pour utiliser le contenu du package.
+Le chargement d’un pack ajoute uniquement le contenu du pack au référentiel, mais il n’est pas accessible. Vous devez installer le pack chargé pour utiliser son contenu.
 
 >[!CAUTION]
 >
 >L’installation d’un module peut remplacer ou supprimer le contenu existant. Ne chargez un module que si vous êtes sûr qu’il ne supprime ou ne remplace pas du contenu dont vous avez besoin.
 
-Avant l’installation de votre package, Package Manager crée automatiquement un package instantané qui contient le contenu qui sera remplacé. Cet instantané sera réinstallé si vous désinstallez votre package.
+Avant l’installation de votre pack, le Gestionnaire de packs crée automatiquement un pack instantané qui contient le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le pack.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du package que vous souhaitez installer dans la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du pack que vous souhaitez installer à partir de la liste des packs en cliquant sur le nom du pack.
 
-1. Cliquez sur l’icône **Installer** dans les détails de l’élément ou le **Installer** dans le statut du package.
+1. Cliquez soit sur le bouton **Installer** dans les détails de l’élément, soit sur le lien **Installer** dans le statut du pack.
 
-1. Une boîte de dialogue vous invite à confirmer la demande et vous permet de spécifier des options supplémentaires.
+1. Une boîte de dialogue demande confirmation et permet de spécifier des options supplémentaires.
 
-   * **Extract Only** - Extrayez le package uniquement afin qu’aucun instantané ne soit créé et que la désinstallation ne soit donc pas possible
-   * **Seuil d’enregistrement** - Nombre de noeuds transitoires jusqu’au déclenchement de l’enregistrement automatique (augmenter si vous rencontrez des exceptions de modification simultanée)
-   * **Extraire les sous-modules** - Activer l&#39;extraction automatique des sous-packages
-   * **Gestion du contrôle d’accès** - Indique la manière dont les informations de contrôle d’accès définies dans le package sont gérées lors de l’installation du package (les options sont les mêmes que la variable [paramètres de package avancés](#advanced-settings))
-   * **Gestion des dépendances** - Spécifier la manière dont les dépendances sont gérées lors de l’installation
+   * **Extraire uniquement** - Extraire le pack uniquement afin qu’aucun instantané ne soit créé et que la désinstallation ne soit pas possible
+   * **Enregistrer le seuil** - Nombre de nœuds transitoires jusqu’au déclenchement de la sauvegarde automatique (augmentez si vous rencontrez des exceptions de modifications simultanées).
+   * **Extraire les sous-packs** - Activer l&#39;extraction automatique des sous-packs
+   * **Gestion du contrôle d’accès** - Spécifie comment les informations de contrôle d’accès définies dans le pak sont traitées lors de l’installation du pack (les options sont les mêmes que les[paramètres avancés des packs](#advanced-settings))
+   * **Gestion des dépendances** - Spécifier comment les dépendances sont gérées lors de l’installation
 
 1. Cliquez sur **Installer**.
 
 1. Le journal des activités détaille la progression de l’installation.
 
-Une fois l’installation terminée et réussie, la liste des packages est mise à jour et le mot **Installé** apparaît dans le statut du package.
+Une fois l’installation terminée et réussie, la liste des packs est mise à jour et le mot **Installé** apparaît dans le statut du pack.
 
-### Réinstallation des modules {#reinstalling-packages}
+### Réinstaller les packs {#reinstalling-packages}
 
-La réinstallation des packages effectue les mêmes étapes sur un package déjà installé qui est traité lors du [installez d’abord le package.](#installing-packages)
+La réinstallation des packs effectue les mêmes étapes sur un pack déjà installé que celle traitées lors de [l’installation initiale du pack.](#installing-packages)
 
 ### Chargement et installation basés sur le système de fichiers {#file-system-based-upload-and-installation}
 
-Vous pouvez complètement renoncer au gestionnaire de modules lors de l’installation des modules. AEM peut détecter les packages placés à un emplacement spécifique sur le système de fichiers local de l’ordinateur hôte et les télécharger et les installer automatiquement.
+Vous pouvez complètement renoncer au gestionnaire de packs lors de l’installation de packs. AEM peut détecter les packs placés à un emplacement spécifique du système de fichiers local de l’ordinateur hôte et les charger et installer automatiquement.
 
-1. Sous le dossier d’installation d’AEM, une `crx-quicksart` dossier à côté du jar et `license.properties` fichier . Créez un dossier nommé `install` under `crx-quickstart` ce qui entraîne le chemin `<aem-home>/crx-quickstart/install`.
+1. Sous le dossier d’installation d’AEM, il y a un dossier `crx-quicksart` à côté du fichier jar et du fichier `license.properties`. Créez un dossier nommé `install` sous `crx-quickstart` résultant au chemin d’accès `<aem-home>/crx-quickstart/install`.
 
-1. Dans ce dossier, ajoutez vos packages. Ils sont chargés et installés automatiquement sur votre instance.
+1. Dans ce dossier, ajoutez vos packs. Ils sont chargés et installés automatiquement sur votre instance.
 
-1. Une fois le chargement et l’installation terminés, vous pouvez voir les modules dans Package Manager comme si vous aviez utilisé l’interface utilisateur de Package Manager pour les installer.
+1. Une fois le chargement et l’installation terminés, vous pouvez voir les packs dans Gestionnaire de packs comme si vous aviez utilisé l’interface utilisateur du Gestionnaire de packs pour les installer.
 
-Si l’instance est en cours d’exécution, le téléchargement et l’installation démarrent immédiatement lorsque vous l’ajoutez au module dans la `install` folder
+Si l’instance est en cours d’exécution, le chargement et l’installation démarrent immédiatement lorsque vous l’ajoutez au pack dans le dossier `install`.
 
-Si l’instance n’est pas en cours d’exécution, les modules placés dans la variable `install` sont installés au démarrage par ordre alphabétique.
+Si l’instance n’est pas en cours d’exécution, les packs placés dans le dossier `install` sont installés au démarrage par ordre alphabétique.
 
-### Désinstallation des modules {#uninstalling-packages}
+### Désinstaller les packs {#uninstalling-packages}
 
-La désinstallation du package rétablit l’instantané automatique du contenu du référentiel par Package Manager avant l’installation.
+La désinstallation d’un pack ramène le contenu du référentiel à l&#39;instantané réalisé automatiquement par le gestionnaire de packs avant l’installation.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du package que vous souhaitez désinstaller dans la liste des packages en cliquant sur le nom du package.
+1. Ouvrez les détails du pack que vous souhaitez désinstaller à partir de la liste des packs en cliquant sur le nom du pack.
 
-1. Cliquez sur **Plus** -> **Désinstaller**, pour supprimer le contenu de ce module du référentiel.
+1. Pour supprimer le contenu de ce pack du référentiel, cliquez sur **Plus** -> **Désinstaller**.
 
-1. Une boîte de dialogue vous invite à confirmer et répertorie toutes les modifications apportées.
+1. Une boîte de dialogue vous invite à confirmer et énumère toutes les modifications apportées.
 
-1. Le package est supprimé et l’instantané est appliqué. La progression du processus s’affiche dans le journal des activités.
+1. Le pack est supprimé et l’instantané est appliqué. La progression du processus s’affiche dans le journal des activités.
 
-### Suppression de modules {#deleting-packages}
+### Supprimer des packs {#deleting-packages}
 
-La suppression d’un module supprime uniquement ses détails du gestionnaire de modules. Si ce package a déjà été installé, le contenu installé ne sera pas supprimé.
+La suppression d’un pack supprime uniquement ses détails du gestionnaire de packs. Si ce pack a déjà été installé, le contenu installé n’est pas supprimé.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module que vous souhaitez supprimer de la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du pack que vous souhaitez supprimer de la liste des packs en cliquant sur le nom du pack.
 
 1. Le gestionnaire de modules vous demande de confirmer que vous souhaitez supprimer le module. Cliquez sur **OK** pour confirmer la suppression.
 
-1. Les informations sur le module sont supprimées et les détails sont signalés dans le journal d’activité.
+1. Les informations sur le pack sont supprimées et les détails sont signalés dans le journal d’activité.
 
-### Réplication des modules {#replicating-packages}
+### Répliquer les packs {#replicating-packages}
 
-Répliquez le contenu d’un package pour l’installer sur l’instance de publication.
+Répliquez le contenu d’un pack afin de l’installer dans l’instance de publication.
 
-1. [Accédez à Package Manager.](#accessing)
+1. [Accédez au Gestionnaire de modules.](#accessing)
 
-1. Ouvrez les détails du module que vous souhaitez répliquer dans la liste des modules en cliquant sur le nom du module.
+1. Ouvrez les détails du pack que vous souhaitez répliquer depuis la liste des packs en cliquant sur le nom du pack.
 
 1. Cliquez sur **Plus** -> **Répliquer**.
 
-1. Le module est répliqué et les détails sont signalés dans le journal d’activité.
+1. Le package est répliqué et les détails sont signalés dans le journal d’activité.
 
 ## Distribution logicielle {#software-distribution}
 
@@ -571,7 +571,7 @@ AEM Les packages peuvent être utilisés pour créer et partager du contenu dans
 
 [Distribution logicielle](https://downloads.experiencecloud.adobe.com) est un service centralisé conçu pour simplifier la recherche et le téléchargement des packages d’AEM.
 
-Pour plus d’informations, reportez-vous à la section [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Pour plus d’informations, reportez-vous à la section [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
 
 >[!NOTE]
 >

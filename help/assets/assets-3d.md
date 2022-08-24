@@ -11,7 +11,7 @@ exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
 workflow-type: tm+mt
 source-wordcount: '2358'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -44,7 +44,7 @@ Voir aussi [Formats 3D pris en charge](/help/assets/assets-formats.md).
 
 >[!NOTE]
 >
->Le composant 3D Media WCM et l’aperçu 3D sur la page Détails d’une ressource ne sont pas compatibles avec la dernière version de Chrome (9.x). Pour utiliser des ressources 3D, utilisez plutôt Firefox ou Safari ou une version antérieure de Chrome (96.x).
+>Le composant 3D Media WCM et l’aperçu 3D sur la page Détails d’une ressource ne sont pas compatibles avec la dernière version de Chrome (97.x). Pour utiliser des ressources 3D, utilisez plutôt Firefox ou Safari ou une version antérieure de Chrome (96.x).
 
 ## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 

@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité de classement
-seo-title: Fonctionnalité de classement
+seo-title: Leaderboard Feature
 description: Ajout d’un composant Leaderboard à une page
-seo-description: Ajout d’un composant Leaderboard à une page
+seo-description: Adding a Leaderboard component to a page
 uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,41 +13,41 @@ docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 20%
+source-wordcount: '400'
+ht-degree: 21%
 
 ---
 
-# Fonctionnalité du tableau de classement {#leaderboard-feature}
+# Fonctionnalité de classement {#leaderboard-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
-Le composant `Leaderboard` permet d’obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (notation de base) ou de leur expertise (notation avancée).
+Le `Leaderboard` composant permet d’obtenir une idée de la façon dont les membres interagissent au sein de la communauté en classant les membres en fonction des points gagnés (notation de base) ou de leur expertise (notation avancée).
 
 Avant d’inclure le composant de classement sur une page, il est nécessaire de configurer [Notation et badges des communautés](/help/communities/implementing-scoring.md).
 
 Cette section de la documentation décrit:
 
-* Ajout du composant `Leaderboard` à un [site communautaire](/help/communities/overview.md#community-sites).
-* Paramètres de configuration du composant `Leaderboard`.
+* Ajouter le `Leaderboard` en un composant [site communautaire](/help/communities/overview.md#community-sites).
+* Paramètres de configuration de la variable `Leaderboard` composant.
 
-### Ajout d’un tableau de classement à une page {#adding-a-leaderboard-to-a-page}
+### Ajout d’un panneau de classement à une page {#adding-a-leaderboard-to-a-page}
 
-Pour ajouter un composant `Leaderboard` à une page en mode création, localisez le composant .
+Pour ajouter une `Leaderboard` à une page en mode création, recherchez le composant.
 
 * `Communities / Leaderboard`
 
 et faites-le glisser sur la page.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
 Placé pour la première fois sur une page d’un site de communauté, voici à quoi ressemble le composant :
 
 ![tableau de classement](assets/leaderboard.png)
 
-### Configuration de Leaderboard {#configuring-leaderboard}
+### Configuration du tableau de classement {#configuring-leaderboard}
 
-Sélectionnez le composant `Leaderboard` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Leaderboard` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -55,12 +55,12 @@ Sélectionnez le composant `Leaderboard` inséré pour y accéder et sélectionn
 
 #### Onglet Settings {#settings-tab}
 
-Sous l’onglet **[!UICONTROL Paramètres]** , indiquez les informations relatives au membre qui s’affichent :
+Sous , **[!UICONTROL Paramètres]** , indiquez les informations relatives au membre qui s’affichent :
 
 * **Nom d’affichage**
 
    Nom descriptif à afficher pour le panorama, reflétant les règles sélectionnées pour l’affichage des badges et des scores.
-La valeur par défaut est `Leaderboard`, si rien n’est renseigné.
+La valeur par défaut est `Leaderboard`, si rien n’est entré.
 
 * **Badge**
 
@@ -79,7 +79,7 @@ Cette option n’est pas cochée par défaut.
 
 #### Onglet Règles {#rules-tab}
 
-Sous l’onglet **Règles**, le site de la communauté et ses règles de notation et de badge
+Sous , **Règles** , le site de la communauté et ses règles de notation et de badge
 
 * **Emplacement des règles**
 
@@ -146,6 +146,6 @@ Configuration des composants de classement :
 
 ### Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur le tableau de classement](/help/communities/leaderboard.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales relatives au tableau de bord](/help/communities/leaderboard.md) pour les développeurs.
 
-Les instructions de création de règles sont fournies sur la page [Notation et badges communautaires](/help/communities/implementing-scoring.md) pour les administrateurs.
+Les instructions de création de règles sont fournies sur la page [Notation et badges des communautés](/help/communities/implementing-scoring.md) pour les administrateurs.

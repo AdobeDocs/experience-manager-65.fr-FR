@@ -7,30 +7,30 @@ products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
-feature: Paramètres prédéfinis de la visionneuse
+feature: Viewer Presets
 role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 61%
+source-wordcount: '219'
+ht-degree: 89%
 
 ---
 
-# Application de paramètres prédéfinis de visionneuse Dynamic Media {#applying-viewer-presets}
+# Application de paramètres prédéfinis de la visionneuse Dynamic Media {#applying-viewer-presets}
 
 Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui déterminent la manière dont les utilisateurs voient les ressources multimédia enrichies sur leurs écrans d’ordinateur et appareils mobiles. Vous pouvez appliquer à une ressource n’importe quel paramètre prédéfini de visionneuse créé par votre administrateur.
 
-Si vous êtes administrateur et que vous devez gérer, créer, trier et supprimer des paramètres prédéfinis de visionneuse, voir [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md).
+Si, en tant qu’administrateur, vous devez gérer, créer, trier et supprimer des paramètres prédéfinis de visionneuse, consultez [Gestion des paramètres prédéfinis de visionneuse](managing-viewer-presets.md).
 
-Voir aussi [Publier les paramètres prédéfinis de la visionneuse](managing-viewer-presets.md#publishing-viewer-presets).
+Voir également [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
 
 Il n’est pas nécessaire de publier les paramètres prédéfinis de la visionneuse en fonction du mode de publication que vous utilisez.
-Pour tout problème lié aux paramètres prédéfinis de visionneuse, voir [Dépannage de Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+Pour tout problème lié aux paramètres prédéfinis de visionneuse, voir [Résolution des problèmes liés à Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
 
-## Application d’un paramètre prédéfini de visionneuse Dynamic Media à une ressource {#applying-a-viewer-preset-to-an-asset}
+## Application d’un paramètre prédéfini de visionneuse Dynamic Media à une ressource {#applying-a-viewer-preset-to-an-asset}
 
-1. Ouvrez la ressource et, dans le rail de gauche, sélectionnez **[!UICONTROL Visionneuses]**.
+1. Ouvrez la ressource et, sur le rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
@@ -41,4 +41,4 @@ Pour tout problème lié aux paramètres prédéfinis de visionneuse, voir [Dép
 
 ## Obtention des URL de paramètre prédéfini de visionneuse {#obtaining-viewer-preset-urls}
 
-Pour obtenir les URL des paramètres de visionneuse prédéfinis, voir [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
+Pour obtenir les URL des paramètres de visionneuse prédéfinis, reportez-vous à la section [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).

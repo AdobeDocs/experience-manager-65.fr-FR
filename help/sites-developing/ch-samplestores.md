@@ -1,8 +1,8 @@
 ---
-title: 'Exemples de magasins candidats ContextHub '
-seo-title: 'Exemples de magasins candidats ContextHub '
+title: Exemples de magasins candidats ContextHub
+seo-title: Sample ContextHub Store Candidates
 description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
-seo-description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
+seo-description: ContextHub provides several sample store candidates that you can use in your solutions
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -10,12 +10,12 @@ content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '473'
 ht-degree: 95%
 
 ---
 
-# Exemples de magasins candidats ContextHub {#sample-contexthub-store-candidates}
+# Exemples de magasins candidats ContextHub{#sample-contexthub-store-candidates}
 
 ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies pour chaque exemple :
 
@@ -111,7 +111,7 @@ Le magasin utilise une arborescence de données similaire à l’exemple suivant
 >
 >Une stratégie de sécurité introduite dans Chrome 50.x requiert que tous les appels liés à la géolocalisation soient effectués via une connexion sécurisée. Par conséquent, AEM force l’utilisation de https pour les appels d’API de géolocalisation si AEM s’exécute également sur https. Sinon, http est utilisé afin de respecter la politique de même origine. Voir [cet article de blog Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) pour plus de détails sur les changements dans Chrome.
 
-## Exemple de magasin candidat contexthub.surferinfo  {#contexthub-surferinfo-sample-store-candidate}
+## Exemple de magasin candidat contexthub.surferinfo {#contexthub-surferinfo-sample-store-candidate}
 
 Stocke des informations sur l’environnement client actuel, telles que l’appareil, la fenêtre, le navigateur, la date et l’heure.
 
@@ -311,7 +311,7 @@ L’arborescence de données de magasin est similaire à l’exemple suivant :
 }
 ```
 
-## Exemple de magasin candidat granite.profile   {#granite-profile-sample-store-candidate}
+## Exemple de magasin candidat granite.profile {#granite-profile-sample-store-candidate}
 
 Stocke des informations sur l’utilisateur actuel.
 

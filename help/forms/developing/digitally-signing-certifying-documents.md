@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '17046'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -657,9 +657,9 @@ Vous pouvez également indiquer s’il faut effectuer ou non une vérification d
 
 Pour effectuer une vérification de révocation sur un certificat, vous pouvez spécifier une URL vers un serveur de liste de révocation des certificats (CRL) à l’aide d’un objet `CRLOptionSpec`. Cependant, si vous souhaitez effectuer une vérification de révocation et que vous ne spécifiez pas d’URL vers un serveur CRL, le service Signature obtient l’URL à partir du certificat.
 
-Au lieu d’utiliser un serveur CRL, vous pouvez utiliser un serveur OCSP (Online Certificate Status Protocol) lors de la vérification de révocation. En règle générale, lorsque vous utilisez un serveur OCSP plutôt qu’un serveur CRL, la vérification de révocation est effectuée plus rapidement. (Voir &quot;Protocole d’état du certificat en ligne&quot; à l’adresse [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
+Au lieu d’utiliser un serveur CRL, vous pouvez utiliser un serveur OCSP (Online Certificate Status Protocol) lors de la vérification de révocation. En règle générale, lorsque vous utilisez un serveur OCSP plutôt qu’un serveur CRL, la vérification de révocation est effectuée plus rapidement. (Voir « Online Certificate Status Protocol » à l’adresse [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
-Vous pouvez définir l’ordre des serveurs CRL et OCSP que le service Signature utilise à l’aide d’Adobe Applications and Services. Par exemple, si le serveur OCSP est défini en premier lieu dans Adobe Applications and Services, le serveur OCSP est vérifié, suivi du serveur CRL. (Voir &quot;Gestion des certificats et des informations d’identification à l’aide de Trust Store&quot; dans l’aide d’AAC).
+Vous pouvez définir l’ordre des serveurs CRL et OCSP que le service Signature utilise à l’aide d’Adobe Applications and Services. Par exemple, si le serveur OCSP est défini en premier lieu dans Adobe Applications and Services, le serveur OCSP est vérifié, suivi du serveur CRL. (Voir « Gérer les certificats et les informations d’identification à l’aide de TrustStore » dans l’aide d’AAC.)
 
 Si vous indiquez de ne pas effectuer de vérification de révocation, le service Signature ne vérifie pas si le certificat utilisé pour signer ou certifier un document a été révoqué. En d’autres termes, les informations des serveurs CRL et OCSP sont ignorées.
 

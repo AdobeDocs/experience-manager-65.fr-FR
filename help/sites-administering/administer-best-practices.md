@@ -1,8 +1,8 @@
 ---
 title: Bonnes pratiques
-seo-title: Bonnes pratiques
+seo-title: Best Practices
 description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
-seo-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
+seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '524'
 ht-degree: 91%
 
 ---
@@ -36,7 +36,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>

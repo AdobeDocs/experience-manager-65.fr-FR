@@ -1,8 +1,8 @@
 ---
 title: Outils de test et de suivi
-seo-title: Outils de test et de suivi
+seo-title: Testing and Tracking Tools
 description: AEM propose une structure pour tester l’interface utilisateur des composants, ainsi qu’un mécanisme destiné au test et au débogage des composants.
-seo-description: AEM propose une structure pour tester l’interface utilisateur des composants, ainsi qu’un mécanisme destiné au test et au débogage des composants.
+seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
 uuid: 12abedb5-4ee7-4389-9340-e628adbbc053
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 94%
+source-wordcount: '292'
+ht-degree: 93%
 
 ---
 

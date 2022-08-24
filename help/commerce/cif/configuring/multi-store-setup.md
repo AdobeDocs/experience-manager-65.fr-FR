@@ -1,6 +1,6 @@
 ---
 title: Configuration multi-magasin Commerce
-description: Découvrez comment mapper plusieurs vues de magasin d’Adobe Commerce à AEM. Cela permet aux projets de prendre en charge des cas d’utilisation à plusieurs clients et multilingues.
+description: Découvrez comment faire correspondre plusieurs vues de stockage d’Adobe Commerce vers AEM. Cela permet aux projets de prendre en charge des cas d’utilisation à plusieurs clients et multilingues.
 sub-product: Commerce
 doc-type: technical-video
 activity: setup
@@ -12,13 +12,13 @@ exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 55%
+ht-degree: 87%
 
 ---
 
-# Commerce Configuration multi-magasin {#multi-store}
+# Commerce  Configuration multi-magasin {#multi-store}
 
-Les composants principaux CIF AEM peuvent être utilisés sur plusieurs structures de site AEM et l’implémentation du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Adobe Commerce. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
+Les composants principaux AEM CIF peuvent être utilisés sur plusieurs structures de site AEM et la mise en œuvre du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Adobe Commerce. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
 
 Présentation vidéo détaillant les options d’intégration de plusieurs vues de magasin Adobe Commerce à Adobe Experience Manager Sites.
 
@@ -26,15 +26,15 @@ Présentation vidéo détaillant les options d’intégration de plusieurs vues 
 
 Les fonctions de gestion multi-site AEM de Live Copy et Language Copy sont utilisées conjointement avec Commerce Integration Framework pour gérer globalement les sites dans les régions et les paramètres régionaux.
 
-La configuration recommandée consiste à utiliser une relation 1:1 entre AEM site et la vue de magasin Adobe Commerce.
+La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de magasin Adobe Commerce.
 
 Pour connecter un site AEM et les composants principaux AEM CIF à une vue de magasin dédiée, procédez comme suit :
 
 ## Configuration {#configuration}
 
-1. Configurez plusieurs magasins et vues de magasin en fonction du modèle décrit dans la section [Sites web, magasins et vues Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html)
+1. Configurez plusieurs magasins et vues de magasin en fonction du modèle décrit dans [Sites web, magasins et vues Adobe Commerce](https://docs.magento.com/m2/ce/user_guide/stores/websites-stores-views.html).
 
-2. Vérifiez que la connexion entre AEM et Adobe Commerce fonctionne.
+2. Assurez-vous que la connexion entre AEM et Adobe Commerce fonctionne.
 
 3. Créez une configuration enfant de la configuration de CIF Cloud Service en procédant comme suit :
 
@@ -46,7 +46,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 
    >[!TIP]
    >
-   > Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+   > Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 4. Affectez la configuration enfant à un site AEM
 

@@ -1,7 +1,7 @@
 ---
-title: Fragments d’expérience
+title: Présentation
 seo-title: Experience Fragments
-description: Fragments d’expérience
+description: Présentation
 seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -14,11 +14,11 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
-# Fragments d’expérience{#experience-fragments}
+# Présentation{#experience-fragments}
 
 Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. Il peut contenir n’importe quel composant.
 
@@ -27,12 +27,12 @@ Un fragment d’expérience :
 * fait partie d’une expérience (page) ;
 * peut être utilisé sur plusieurs pages ;
 * est basé sur un modèle (uniquement modifiable) qui définit la structure et les composants ;
-* Ce modèle est utilisé pour créer la variable *page racine* du fragment d’expérience.
+* Ce modèle est utilisé pour créer la *page racine* du fragment d’expérience.
 * comprend un ou plusieurs composants, avec mise en page, dans un système de paragraphes ;
 * peut contenir d’autres fragments d’expérience ;
 * peut être combiné à d’autres composants (y compris d’autres fragments d’expérience) pour former une page entière (expérience) ;
 * Il est possible de créer une ou plusieurs variations en fonction de la page racine.
-* Ces variations peuvent partager du contenu et/ou des composants.
+* Ces variations peuvent partager du contenu et des composants.
 * peut être scindé en blocs de création utilisables dans plusieurs variations du fragment.
 
 Vous pouvez utiliser des fragments d’expérience :
@@ -55,9 +55,9 @@ Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
    * Expériences qui seront réutilisées avec un contenu identique ou similaire
 
-* Lorsque vous utilisez AEM en tant que plate-forme de diffusion de contenu à des tiers.
+* Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
 
-   * Toute solution qui souhaite utiliser AEM comme plate-forme de diffusion de contenu
+   * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu
    * Intégration de contenu dans des points de contact tiers
 
 * Si l’une de vos expériences se décline en plusieurs variations ou rendus.
@@ -261,7 +261,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 Vous pouvez sélectionner un ou plusieurs composants pour créer un bloc de création à recycler dans votre fragment :
 
-### Création d’un bloc {#creating-a-building-block}
+### Création d’un bloc de création {#creating-a-building-block}
 
 Pour créer un bloc de ce type, procédez comme suit :
 
@@ -285,7 +285,7 @@ Pour créer un bloc de ce type, procédez comme suit :
 
 Le bloc de création est visible dans l’onglet **Blocs de création**. Pour chaque bloc, les actions suivantes peuvent être effectuées :
 
-* Accédez au gabarit : ouvrir la variation de page racine dans un nouvel onglet ;
+* Atteindre l’élément principal : ouvre la variation de la page racine dans un nouvel onglet.
 * Renommer
 * Supprimer
 
@@ -295,7 +295,7 @@ Le bloc de création est visible dans l’onglet **Blocs de création**. Pour ch
 
 Vous pouvez faire glisser votre bloc de création vers le système de paragraphes de n’importe quel fragment, comme avec n’importe quel composant.
 
-## Détails de votre Éditeur de fragments {#details-of-your-experience-fragment}
+## Détails de votre fragment d’expérience {#details-of-your-experience-fragment}
 
 Les détails de votre fragment sont visibles :
 
@@ -327,10 +327,10 @@ Les détails de votre fragment sont visibles :
       * **Nombre de variantes non-Web** - inf **ormations uniquement**
 
       * **Nombre de pages utilisant ce fragment** – informations uniquement
-   * **Cloud Services**
+   * **Cloud Services**
 
       * **Configuration du cloud**
-      * **Configuration de Cloud Services**
+      * **Configuration de Cloud Services**
       * **Identifiant de page Facebook**
       * **Panorama Pinterest**
    * **Références**
@@ -343,7 +343,7 @@ Les détails de votre fragment sont visibles :
 
 
 
-## Rendu HTML brut {#the-plain-html-rendition}
+## Rendu HTML brut {#the-plain-html-rendition}
 
 Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut à partir du navigateur.
 

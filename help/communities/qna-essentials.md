@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur la qualité de vie
-seo-title: Notions fondamentales sur la qualité de vie
+seo-title: QnA Essentials
 description: Fonctionnalité de forum Questions et réponses
-seo-description: Fonctionnalité de forum Questions et réponses
+seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '249'
 ht-degree: 3%
 
 ---
@@ -47,14 +47,14 @@ Cette page fournit les informations essentielles pour utiliser la fonction de fo
   </tr>
   <tr>
    <td> properties</td>
-   <td>Voir <a href="working-with-qna.md">Fonctionnalité du forum Q&amp;A</a></td>
+   <td>Voir <a href="working-with-qna.md">Fonction Forum Q&amp;R</a></td>
   </tr>
  </tbody>
 </table>
 
 * [Personnalisations côté client](client-customize.md)
 
-## Principes élémentaires côté serveur {#essentials-for-server-side}
+## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 * [API Q&amp;R](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
@@ -64,20 +64,20 @@ Cette page fournit les informations essentielles pour utiliser la fonction de fo
 
 ### Fonction Q&amp;R {#qna-function}
 
-Une structure de site de communauté qui inclut la fonction [Q&amp;R](functions.md#qna-function) aura un composant `QnA` configuré, ainsi que des paramètres affectant la modération et le balisage. La fonction Q&amp;R prend en charge l’identification d’un [groupe d’utilisateurs privilégiés](users.md#privileged-members-group).
+Une structure de site de communauté qui inclut [Fonction Q&amp;R](functions.md#qna-function) dispose d’un `QnA` , ainsi que les paramètres affectant la modération et le balisage. La fonction Q&amp;R prend en charge l’identification d’une [groupe d’utilisateurs de membres privilégiés](users.md#privileged-members-group).
 
 ### Accès aux publications du forum Q&amp;R (UGC) {#accessing-qna-forum-posts-ugc}
 
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement**.
+**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md)  : présentation et utilisation du référentiel.
-* [SRP et UGC Essentials](srp-and-ugc.md)  - Méthodes et exemples d’utilitaire SRP.
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md)  - Instructions de codage.
-* [Refactorisation de SocialUtils](socialutils.md)  : mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - introduction et présentation de l’utilisation du référentiel.
+* [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
+* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Refactorisation de SocialUtils](socialutils.md) - mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

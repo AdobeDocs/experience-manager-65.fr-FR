@@ -13,7 +13,7 @@ discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
 exl-id: 2caaca74-640a-4257-a81b-3e8b295cd182
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 100%
 
@@ -39,9 +39,9 @@ Dans le cadre de cette discussion, supposons que le document DDX suivant soit ut
  </DDX>
 ```
 
-Dans ce document DDX, notez que la valeur `inDoc` est attribuée à l’attribut source. Dans les situations où un seul document PDF d’entrée est transmis au service Assembler et où un seul document PDF est renvoyé, et que vous appelez l’opération `invokeOneDocument`, attribuez la valeur `inDoc` à l’attribut PDF source. Lorsque vous appelez l’opération `invokeOneDocument`, la valeur `inDoc` est une clé prédéfinie qui doit être spécifiée dans le document DDX.
+Dans ce document DDX, remarquez que la valeur `inDoc` est attribuée à lʼattribut source. Dans les cas où un seul document PDF d’entrée est transmis au service Assembler et un seul document PDF est renvoyé, et que vous appelez lʼopération `invokeOneDocument`, attribuez la valeur `inDoc` à l’attribut source du PDF. Lors de l’appel de lʼopération `invokeOneDocument`, la valeur `inDoc` est une clé prédéfinie qui doit être spécifiée dans le document DDX.
 
-En revanche, lorsque vous transmettez deux ou plusieurs documents PDF d’entrée au service Assembler, vous pouvez appeler l’opération `invokeDDX`. Dans ce cas, attribuez le nom de fichier du document PDF d’entrée à l’attribut `source`.
+En revanche, lors de la transmission de plusieurs documents PDF d’entrée au service Assembler, vous pouvez appeler lʼopération `invokeDDX`. Dans ce cas, attribuez le nom de fichier du document PDF d’entrée à l’attribut `source`.
 
 Il n’est pas nécessaire que le service de chiffrement fasse partie de votre installation AEM Forms pour chiffrer un document PDF avec un mot de passe. Voir [Chiffrer et déchiffrer des documents PDF](/help/forms/developing/encrypting-decrypting-pdf-documents.md).
 
@@ -51,7 +51,7 @@ Il n’est pas nécessaire que le service de chiffrement fasse partie de votre i
 
 >[!NOTE]
 >
->Pour plus d’informations sur un document DDX, voir [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Pour plus d’informations sur les documents DDX, consultez la section [Guide de référence du service Assembler et de DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -135,7 +135,7 @@ Si un seul document PDF est transmis au service Assembler, ce dernier renvoie un
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez les options d’exécution pour répondre aux besoins de votre entreprise en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en appelant une méthode appartenant à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de continuer à traiter une tâche en cas d’erreur, appelez la méthode `setFailOnError` de l’objet `AssemblerOptionSpec` et transmettez `false`.
 
 1. Chiffrez le document.
 
@@ -160,7 +160,7 @@ Si un seul document PDF est transmis au service Assembler, ce dernier renvoie un
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante lorsque vous définissez une référence de service : `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante lors de la définition d’une référence de service : `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -169,36 +169,36 @@ Si un seul document PDF est transmis au service Assembler, ce dernier renvoie un
 1. Créez un client Assembler.
 
    * Créez un objet `AssemblerServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `AssemblerServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `AssemblerServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur du mot de passe correspondant au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Référencez un document DX existant.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document DDX.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document DDX et le mode d’ouverture du fichier.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document DDX.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document DDX et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Remplissez le tableau d’octets avec un flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets à son champ `MTOM`.
 
 1. Référencez un document PDF non sécurisé.
 
-   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker le document PDF d’entrée. Cet objet `BLOB` est transmis à `invokeOneDocument` en tant qu’argument.
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF d’entrée et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en récupérant la propriété `Length` de lʼobjet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données du flux en appelant la méthode `Read` de lʼobjet `System.IO.FileStream` et transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker le document PDF d’entrée. Cet objet `BLOB` est transmis à `invokeOneDocument` comme argument.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier PDF d’entrée et le mode d’ouverture du fichier.
+   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez lʼobjet `BLOB` en assignant à son champ `MTOM` le contenu du tableau dʼoctets.
 
 1. Définissez les options d’exécution.
 
    * Créez un objet `AssemblerOptionSpec` qui stocke les options d’exécution en utilisant son constructeur.
-   * Définissez des options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données appartenant à lʼobjet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement dʼune tâche lorsquʼune erreur se produit, affectez `false` au membre de données `failOnError` de lʼobjet `AssemblerOptionSpec`.
+   * Définissez les options d’exécution pour répondre à vos exigences professionnelles en attribuant une valeur à un membre de données qui appartient à l’objet `AssemblerOptionSpec`. Par exemple, pour demander au service Assembler de poursuivre le traitement dʼune tâche lorsquʼune erreur se produit, affectez `false` au membre de données `failOnError` de lʼobjet `AssemblerOptionSpec`.
 
 1. Chiffrez le document.
 
@@ -214,8 +214,8 @@ Si un seul document PDF est transmis au service Assembler, ce dernier renvoie un
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF chiffré et le mode d’ouverture du fichier.
    * Créez un tableau dʼoctets qui stocke le contenu de lʼobjet `BLOB` que la méthode `invokeOneDocument` a renvoyé. Remplissez le tableau dʼoctets en obtenant la valeur du membre de données `MTOM` de lʼobjet `BLOB`.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Enregistrez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de lʼobjet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 

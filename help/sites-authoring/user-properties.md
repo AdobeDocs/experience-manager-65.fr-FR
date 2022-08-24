@@ -1,8 +1,8 @@
 ---
 title: Configuration de votre environnement de compte
-seo-title: Configuration de votre environnement de compte
+seo-title: Configuring Your Account Environment
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
-seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '517'
 ht-degree: 99%
 
 ---

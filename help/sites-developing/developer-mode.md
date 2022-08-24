@@ -1,8 +1,8 @@
 ---
 title: Mode Développeur
-seo-title: Mode Développeur
+seo-title: Developer Mode
 description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
-seo-description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
+seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
 uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 88%
+source-wordcount: '687'
+ht-degree: 91%
 
 ---
 
@@ -29,20 +29,18 @@ Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-authori
 Ils aident les développeurs à :
 
 * découvrir ce qui compose les pages ;
-* déboguer en vérifiant la nature des événements, ainsi que leur emplacement et le moment où ils surviennent, afin de résoudre des problèmes ;
+* déboguer en vérifiant la nature des événements, ainsi que leur emplacement et le moment où ils surviennent, afin de résoudre des problèmes.
 * tester si l’application se comporte comme prévu.
 
 >[!CAUTION]
 >
->Mode Développeur:
+>Le mode Développeur :
 >
 >* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
-
    >
-   >   
-   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
->* N’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
+   >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
+>* n’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
 
 
 >[!CAUTION]
@@ -53,10 +51,8 @@ Ils aident les développeurs à :
 >
 >* sur une instance d’auteur à l’aide du mode d’exécution nosamplecontent
 >* sur une instance de publication.
-
 >
->
-Il doit être désactivé à nouveau après utilisation.
+>Il doit être désactivé à nouveau après utilisation.
 
 >[!NOTE]
 >
@@ -64,9 +60,7 @@ Il doit être désactivé à nouveau après utilisation.
 >
 >* L’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour d’autres conseils et outils.
 >* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
-
 >
-
 
 
 ## Ouverture du mode Développeur {#opening-developer-mode}
@@ -77,7 +71,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](/help/sites-developing/developer-mode.md#components)**  : affiche une arborescence de composants, similaire à l’arborescence de  [contenu ](/help/sites-authoring/author-environment-tools.md#content-tree) pour les auteurs.
+* **[Composants](/help/sites-developing/developer-mode.md#components)** : il présente une arborescence de composants, similaire à l’[arborescence de contenu](/help/sites-authoring/author-environment-tools.md#content-tree) pour les auteurs.
 
 * **[Erreurs](/help/sites-developing/developer-mode.md#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
@@ -126,7 +120,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 >[!CAUTION]
 >
->Certains liens pointent sur des scripts sous `/libs`. Toutefois, ces modifications sont proposées à des fins de référence uniquement. Vous **ne devez pas** modifier quoi que ce soit sous `/libs`, car toute modification que vous apportez peut être perdue. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toutes les modifications dont vous avez besoin doivent être apportées sous `/apps`, voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
+>Certains liens pointent sur des scripts sous `/libs`. Cependant, elles sont proposées à des fins de référence uniquement, vous **must not** modifier tout élément sous `/libs`, car toutes les modifications que vous apportez peuvent être perdues. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toutes les modifications dont vous avez besoin doivent être effectuées sous `/apps`, voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
 
 ### Erreurs {#errors}
 

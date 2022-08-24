@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2526'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -200,8 +200,8 @@ Aya répond à quelques questions pour confirmer son éligibilité en remplissan
    >
    >Si l’utilisateur gagne plus de 200 000 $ par an, il n’est pas éligible.
 
-1. Cliquez sur le bouton **Suis-je éligible ?**&quot; button.
-1. Cliquez sur le bouton **Appliquer maintenant**&quot; pour continuer.
+1. Cliquez sur “**Suis-je éligible ?**” button.
+1. Cliquez sur le bouton « **Déposer une candidature maintenant** » pour continuer.
 
    ![Lien Déposer une candidature maintenant](/help/forms/using/assets/apply_now_link.png)
 
@@ -246,8 +246,8 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 **Instructions utilisateur :**
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. Dans la barre de navigation, sélectionnez cliquez sur &quot;**Services en ligne**&quot;.
-1. Dans le panneau &quot;Version préliminaire de Forms&quot;, sélectionnez la demande d’inscription existante pour les prestations d’intégrité.
+1. Dans la barre de navigation, sélectionnez cliquer sur « **Services en ligne** ».
+1. Dans le panneau « Version préliminaire de formulaires », sélectionnez la « Demande d’inscription existante pour les prestations d’intégrité » existante.
 
    ![Demande d’inscription pour les prestations de santé](/help/forms/using/assets/enrollment_application.png)
 
@@ -280,8 +280,8 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 
 **Instructions utilisateur :**
 
-1. Vérifiez le **Je suis d&#39;accord.**&quot;.
-1. Cliquez sur &quot;**Accepter**&quot;.
+1. Cochez la case « **J’accepte** ».
+1. Cliquez sur « **Accepter** ».
 1. Faites défiler jusqu’en bas du document révisé.
 1. Cliquez sur l’onglet jaune en surbrillance pour signer le document.
 
@@ -298,7 +298,7 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
 **Instructions utilisateur :**
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Cliquez sur l’icône de l’utilisateur (coin supérieur droit) et utilisez le **Se déconnecter**&quot;, ou le &quot;**Se faire passer pour**&quot; si vous êtes actuellement connecté avec un utilisateur administrateur.
+1. Cliquez sur l’icône de l’utilisateur (coin supérieur droit) et utilisez l’option « **Se déconnecter** » ou « **Se faire passer pour** » si vous êtes actuellement connecté avec un utilisateur administrateur.
 
    1. Connectez-vous avec :
 
@@ -306,14 +306,14 @@ Aya doit consulter certains documents à la maison avant de pouvoir remplir la d
       1. **Mot de passe :** password
    1. Ou empruntez l’identité :
 
-      1. Type &quot;**George**&quot; dans le **Se faire passer pour**&quot;.
+      1. Tapez « **George** » dans le champ « **Se faire passer pour** ».
 
       1. Cliquez sur OK pour emprunter l’identité.
 
 
 1. Dans le coin supérieur droit, cliquez sur l’icône Notification (cloche).
-1. Cliquez sur &quot;**Afficher tout**&quot; pour accéder à la boîte de réception.
-1. Dans la boîte de réception, ouvrez le dernier &quot;**Examen des demandes d’avantages sociaux**&quot;.
+1. Cliquez sur « **Afficher tout** » pour accéder à la boîte de réception.
+1. Dans la boîte de réception, ouvrez le dernier « **Examen des demandes d’avantages sociaux** ».
 
    ![Examen des demandes d’avantages sociaux](/help/forms/using/assets/health_benefits.png)
 
@@ -324,7 +324,7 @@ Grâce aux intégrations de données et aux workflows automatisés, la demande d
 **Instructions utilisateur :**
 
 1. Ouvrez et examinez le formulaire adaptatif en lecture seule.
-1. Cliquez sur le **Ouvrir MS Dynamics**&quot; pour ouvrir l’enregistrement MS Dynamics dans une nouvelle fenêtre.
+1. Cliquez sur le bouton « **Ouvrir MS Dynamics** » pour ouvrir l’enregistrement MS Dynamics dans une nouvelle fenêtre.
 1. Dans le CRM, toutes les informations peuvent être mises à jour.
 
    1. Vous pouvez éventuellement ajouter des notes de révision directement dans Dynamics.
@@ -339,7 +339,7 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 
 **Instructions d’utilisation :**
 
-1. Accédez au coin supérieur gauche et cliquez sur &quot;**Approuver**&quot; pour approuver la demande.
+1. Accédez au coin supérieur gauche et cliquez sur « **Approuver** » pour approuver la demande.
 1. Dans la fenêtre modale, vous pouvez laisser un message pour le responsable Expérience Client.
 1. Cliquez sur Terminé.
 1. (Rôle citoyen) Ouvrez votre client de messagerie pour afficher l’e-mail envoyé à Aya.
@@ -357,7 +357,7 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 **Instructions d’utilisation :**
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Cliquez sur l’icône de l’utilisateur (coin supérieur droit) et utilisez le **Se déconnecter**&quot;, ou le &quot;**Se faire passer pour**&quot; si vous êtes actuellement connecté avec un utilisateur administrateur.
+1. Cliquez sur l’icône de l’utilisateur (coin supérieur droit) et utilisez l’option « **Se déconnecter** » ou « **Se faire passer pour** » si vous êtes actuellement connecté avec un utilisateur administrateur.
 
    1. Connectez-vous avec :
 
@@ -365,30 +365,30 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
       1. **Mot de passe** : password
    1. Ou empruntez l’identité :
 
-      1. Type &quot;**Camila**&quot; dans le **Se faire passer pour**&quot;.
+      1. Écrivez « **Camila** » dans le champ « **Se faire passer pour** ».
 
       1. Cliquez sur OK pour emprunter l’identité.
 
 
 1. Dans le coin supérieur droit, cliquez sur l’icône Notification (cloche).
-1. Cliquez sur &quot;**Afficher tout**&quot; pour accéder à la boîte de réception.
-1. Dans la boîte de réception, ouvrez le dernier &quot;**Nouvelle approbation de contact**&quot;.
+1. Cliquez sur « **Afficher tout** » pour accéder à la boîte de réception.
+1. Dans la boîte de réception, ouvrez la dernière tâche « **Nouvelle approbation de contact** »
 
 ![Nouvelle approbation de contact](/help/forms/using/assets/new_contact_approval.png)
 
 **(Facultatif) Instructions d’utilisation :**
 
 1. Ouvrez et examinez le formulaire adaptatif en lecture seule.
-1. Cliquez sur le **Ouvrir MS Dynamics**&quot; pour ouvrir l’enregistrement MS Dynamics dans une nouvelle fenêtre.
+1. Cliquez sur le bouton « **Ouvrir MS Dynamics** » pour ouvrir l’enregistrement MS Dynamics dans une nouvelle fenêtre.
 1. Dans le CRM, toutes les informations peuvent être mises à jour.
 
    1. Vous pouvez éventuellement ajouter une nouvelle activité d’appel directement dans Dynamics.
-   1. Ouvrez le **Activités**&quot;.
-   1. Cliquez sur le **Nouvel appel téléphonique**&quot;.
+   1. Ouvrez la section « **Activités** ».
+   1. Cliquez sur l’option « **Nouvel appel téléphonique** ».
    1. Ajoutez les détails de l’appel téléphonique.
    1. Enregistrez le fichier, puis fermez la fenêtre.
 
-1. De retour dans AEM, accédez au coin supérieur gauche et cliquez sur &quot;**Envoyer**&quot; pour envoyer la demande.
+1. De retour dans AEM, accédez au coin supérieur gauche et cliquez sur « **Envoyer** » pour envoyer la demande.
 1. Dans la fenêtre modale, vous pouvez laisser un message.
 1. Cliquez sur Terminé.
 
@@ -405,7 +405,7 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 1. Recherchez et ouvrez le courrier électronique du kit de bienvenue.
 1. Faites défiler la page jusqu’à la pièce jointe PDF.
 1. Cliquez pour ouvrir la pièce jointe PDF.
-1. Faites défiler l’écran vers le haut dans votre client de messagerie et cliquez sur &quot;**Afficher le kit de bienvenue en ligne**&quot;.
+1. Faites défiler l’écran vers le haut dans votre client de messagerie et cliquez sur « **Afficher le kit de bienvenue en ligne** ».
 
    1. Cette opération ouvre la version du canal web du même document.
 
@@ -429,7 +429,7 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 
 1. Accédez à votre client de messagerie.
 1. Recherchez et ouvrez le courrier électronique Rappel de renouvellement.
-1. Cliquez sur le **Envoyer une nouvelle application**&quot; pour ouvrir le formulaire adaptatif.
+1. Cliquez sur le bouton « **Envoyer une nouvelle demande** » pour ouvrir le formulaire adaptatif.
 
    1. Cette section est délibérément laissée vide pour prendre en charge le pré-remplissage de données lors de la phase 2.
 
@@ -486,8 +486,8 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 ### Rapports sur les sites Adobe Analytics (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Sélectionnez le **Site AEM Forms We.Gov**&quot; pour afficher les pages du site.
-1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez &quot;**Analytics et Recommendations**&quot;.
+1. Sélectionnez le « **Site We.Gov d’AEM Forms** » pour afficher les pages du site.
+1. Sélectionnez l’une des pages du site (par exemple Accueil), puis choisissez « **Analytics et Recommendations** ».
 
    ![Analytics et Recommandations](/help/forms/using/assets/analytics_recommendation.jpg)
 
@@ -495,16 +495,16 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 
    ![Mesures clés Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. De retour sur la page vue (accessible à l’étape 3.), vous pouvez également afficher les informations de page vue en modifiant le paramètre d’affichage afin d’afficher les éléments dans le **Mode Liste**&quot;.
-1. Recherchez le **Affichage**&quot; menu déroulant et sélectionnez &quot;**Mode Liste**&quot;.
+1. De retour sur la page vue (accessible à l’étape 3.), vous pouvez également afficher les informations de la page vue en modifiant le paramètre d’affichage afin d’afficher les éléments dans l’« **Affichage de liste** ».
+1. Recherchez le menu déroulant « **Affichage** » et sélectionnez « **Affichage de liste** ».
 
    ![Affichage de liste dans le menu déroulant Affichage](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Dans le même menu, sélectionnez &quot;**Paramètre d’affichage**&quot; et sélectionnez les colonnes que vous souhaitez afficher dans le **Analytics**&quot;.
+1. Dans le même menu, sélectionnez « **Paramètre d’affichage** » et sélectionnez les colonnes que vous souhaitez afficher dans la section **Analytics**.
 
    ![Configurer l’affichage des colonnes](/help/forms/using/assets/view_setting_analytics.jpg)
 
-1. Cliquez sur &quot;**Mettre à jour**&quot; pour rendre les nouvelles colonnes disponibles.
+1. Cliquez sur « **Mettre à jour** » pour rendre les nouvelles colonnes disponibles.
 
    ![Mettre de nouvelles colonnes à disposition](/help/forms/using/assets/new_columns_available.jpg)
 
@@ -512,9 +512,9 @@ George approuve la demande d’Aya et, grâce à un workflow automatisé existan
 
 1. Accédez à
 
-   *https://&lt;serveur_AEM>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
+   *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Sélectionnez le **Demande D’Inscription Pour Les Avantages De Santé**&quot;formulaire adaptatif et sélectionnez le **Rapport Analytics**&quot;.
+1. Sélectionnez le formulaire adaptatif « **Demande d’inscription pour les prestations de santé** » et sélectionnez le « **Rapport Analytics** ».
 
    ![Demande d’inscription pour les prestations de santé](/help/forms/using/assets/analytics_report_benefits.jpg)
 

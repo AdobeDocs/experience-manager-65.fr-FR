@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 source-git-commit: 2a2f8538b6554540b546f4d345c0b3c0d3e706f3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Lorsque la synchronisation d’annuaires Delta est activée, User Management eff
 >
 >les utilisateurs et les groupes supprimés de l’annuaire ne sont pas supprimés de la base de données User Management avant la synchronisation complète de l’annuaire.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Sous Synchronisation des modifications Delta, cochez la case et cliquez sur Enregistrer.
 1. Modifiez les paramètres de chacun des domaines d’entreprise destinés à utiliser la fonctionnalité de synchronisation d’annuaires delta. Dans les pages Paramètres utilisateur et Paramètres du groupe, recherchez le paramètre Modifier l’horodatage et affectez-lui la valeur `modify TimeStamp`. Pour plus d’informations sur la modification des domaines d’entreprise, voir [Modification et conversion de domaines existants](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
@@ -61,21 +61,21 @@ Lorsque la synchronisation d’annuaires Delta est activée, User Management eff
 
 Par défaut, User Management crée un journal des statistiques détaillées pendant le processus de synchronisation.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
+1. Dans la console d’administration, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs système avancés.
 1. Sous Consignation de statistiques de synchronisation, désélectionnez la case afin de désactiver la journalisation détaillée ou cochez-la pour l’activer, puis cliquez sur Enregistrer.
 
 ## Configuration de l’option de nouvelle synchronisation des annuaires {#configure-the-directory-synchronization-retry-option}
 
 Vous pouvez configurer User Management de manière à ce qu’il vérifie périodiquement si des tentatives de synchronisation d’annuaires ont échoué. User Management tente ensuite de terminer ces tentatives de synchronisation échouées.
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
+1. Dans la console d’administration, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs système avancés.
 1. Sous Expression cron d’achèvement de synchronisation, saisissez une expression cron représentant l’intervalle auquel User Management tente d’effectuer à nouveau les synchronisations ayant échoué. L’utilisation de l’expression cron est basée sur le système de planification des tâches Open Source de Quartz, version 1.4.0 
 
    La valeur par défaut est 0 0/13 &amp;ast; ? &amp;ast; , ce qui signifie que la vérification survient toutes les 13 minutes.
 
 ## Synchronisation manuelle des annuaires {#manually-synchronize-directories}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. (Facultatif) Pour envoyer des informations sur les utilisateurs et les groupes à Content Services (obsolète), activez Sélectionnez cette option pour forcer les utilisateurs et les groupes à devenir des fournisseurs de stockage d’entités de sécurité externes enregistrés. Cette option s’applique également lors de l’ajout de nouveaux utilisateurs et groupes via la page Utilisateurs et groupes.
 1. Cochez la case correspondant à chaque domaine d’entreprise à synchroniser et cliquez sur Synchroniser maintenant.
 
@@ -83,7 +83,7 @@ Vous pouvez configurer User Management de manière à ce qu’il vérifie pério
 
 ## Programmation de la synchronisation des annuaires {#schedule-directory-synchronization}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Programmez la synchronisation :
 
    * Pour activer une synchronisation automatique quotidienne, sélectionnez Se produit sous Planificateur. Sélectionnez Quotidiennement dans la liste, et saisissez l’heure au format 24 heures dans la zone correspondante. Lorsque vous enregistrez vos paramètres, cette valeur est convertie en une expression cron qui s’affiche dans la zone Expression Cron.
@@ -97,5 +97,5 @@ L’utilisation de l’expression cron est basée sur le système de planificati
 
 ## Arrêt de toutes les synchronisations d’annuaires en cours {#stop-all-directory-synchronizations-currently-in-progress}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Abandonner. Ce bouton apparaît uniquement lorsqu’une synchronisation d’annuaires est en cours.

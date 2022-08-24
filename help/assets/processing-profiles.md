@@ -9,12 +9,12 @@ content-type: reference
 discoiquuid: b555bf0c-44cb-4fbf-abc4-15971663904d
 docset: aem65
 role: User, Admin
-feature: Workflow,Gestion des ressources,Rendus
+feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 65%
+source-wordcount: '1375'
+ht-degree: 79%
 
 ---
 
@@ -32,8 +32,8 @@ Vous devez disposer de droits d’administrateur pour créer, modifier et suppri
 
 Une fois votre profil vidéo, de métadonnées ou d’image créé, vous pouvez l’affecter à un ou plusieurs dossiers utilisés comme destination des ressources qui viennent d’être chargées.
 
-Un concept important concernant l’utilisation des profils dans les ressources Experience Manager est qu’ils sont affectés à des dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Par conséquent, la manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers a un impact significatif sur la manière dont ces ressources sont traitées par un profil.
-En appliquant des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi que de bonnes pratiques de métadonnées, vous tirez pleinement parti de votre collecte de ressources numériques et assurez-vous que les fichiers appropriés sont traités par le profil approprié.
+Un élément à connaître lorsque l’on utilise les profils dans Experience Manager Assets est qu’ils sont attribués aux dossiers. Un profil contient des paramètres sous la forme de profils de métadonnées, avec des profils vidéo ou des profils d’image. Ces paramètres traitent le contenu d’un dossier et de tous ses sous-dossiers. Aussi, la façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers a un impact significatif sur le traitement des ressources par les profils.
+Grâce à des stratégies d’attribution de nom aux fichiers et dossiers cohérentes et adéquates et à une bonne pratique en matière de métadonnées, vous tirez pleinement parti de votre collection de ressources numériques et vous vous assurez que les bons fichiers sont traités par le profil adéquat.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Vous pouvez exécuter le workflow de retraitement sur une ressource pour laquell
 
 Vous pouvez, au besoin, régler la taille de lot du workflow de retraitement sur une valeur comprise entre 50 (valeur par défaut) et 1 000 ressources. Lorsque vous exécutez le workflow _Scene7 : Retraiter les ressources_ sur un dossier, les ressources sont regroupées par lots, puis envoyées au serveur Dynamic Media en vue du traitement. Après le traitement, les métadonnées de chaque ressource de l’ensemble du jeu de lots sont mises à jour sur Experience Manager. Si la taille du lot est importante, le traitement peut être retardé. Si le lot est trop petit, cela peut entraîner un trop grand nombre d’allers-retours avec le serveur Dynamic Media.
 
-Voir [Ajuster la taille du lot du workflow de retraitement](#adjusting-load).
+Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load).
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Voir [Ajuster la taille du lot du workflow de retraitement](#adjusting-load).
 
 **Pour retraiter des ressources dans un dossier :**
 
-1. Dans Experience Manager, à partir de la page Ressources, accédez à un dossier de ressources auquel un profil de traitement est affecté et pour lequel vous souhaitez appliquer le **[!UICONTROL Scene7 : Workflow Retraiter la ressource]**,
+1. Dans Experience Manager, à partir de la page Ressources, accédez à un dossier de ressources auquel un profil de traitement est affecté et pour lequel vous souhaitez appliquer l’événement **[!UICONTROL Scene7 : Retraiter la ressource]** workflow,
 
    Dans le cas des dossiers auxquels un profil de traitement est déjà affecté, le nom du profil est affiché directement sous celui du dossier en mode Carte.
 
@@ -77,12 +77,12 @@ Voir [Ajuster la taille du lot du workflow de retraitement](#adjusting-load).
    * Si le dossier principal sélectionné contient un ou plusieurs sous-dossiers avec des ressources, le workflow retraite chaque ressource de la hiérarchie de dossiers.
    * Il est conseillé d’éviter d’exécuter ce workflow sur une hiérarchie de dossiers contenant plus de 1 000 ressources.
 
-1. Près du coin supérieur gauche de la page, dans la liste déroulante, sélectionnez **[!UICONTROL Chronologie]**.
-1. Près du coin inférieur gauche de la page, à droite du champ Commentaire , sélectionnez l’icône représentant un carat ( **^** ).
+1. Dans la liste déroulante située dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Journal]**.
+1. Dans le coin inférieur gauche de la page, à droite du champ Commentaire, sélectionnez l’icône représentant un signe d’insertion (**^**).
 
    ![Workflow de retraitement des ressources 1](/help/assets/assets/reprocess-assets1.png)
 
-1. Sélectionnez **[!UICONTROL Démarrer le processus]**.
+1. Sélectionnez **[!UICONTROL Démarrer le workflow]**.
 1. Dans la liste déroulante **[!UICONTROL Démarrer le processus]**, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 1. (Facultatif) Dans la zone de texte **Entrer le titre du processus**, saisissez le nom du workflow. Si nécessaire, vous pouvez utiliser le nom pour faire référence à l’instance de workflow.
 
@@ -90,7 +90,7 @@ Voir [Ajuster la taille du lot du workflow de retraitement](#adjusting-load).
 
 1. Sélectionnez **[!UICONTROL Démarrer]**, puis **[!UICONTROL Confirmer]**.
 
-   Pour surveiller le workflow ou vérifier sa progression, dans la page de console principale du Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]**. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menus, sélectionnez **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
+   Pour surveiller le workflow ou vérifier sa progression, dans la page de console principale du Experience Manager, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Workflow]**. Sélectionnez un workflow dans la page Instances de processus. Dans la barre de menu, sélectionnez **[!UICONTROL Ouvrir l’historique]**. Vous pouvez également arrêter, suspendre ou renommer un workflow sélectionné à partir de la même page Instances de processus.
 
 ### Ajuster la taille du lot du workflow de retraitement {#adjusting-load}
 
@@ -98,18 +98,18 @@ Voir [Ajuster la taille du lot du workflow de retraitement](#adjusting-load).
 
 **Pour régler, si nécessaire, la taille de lot du workflow de retraitement, procédez comme suit :**
 
-1. Dans Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
+1. Dans Experience Manager, sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’option **[!UICONTROL Outils]** (marteau) icône > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 
    ![Page Modèles de processus avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Un nouvel onglet de navigateur ouvre la page du modèle de processus Scene7 : Retraiter les ressources.
-1. Sur Scene7 : Retraiter la page du workflow Ressources, près du coin supérieur droit, sélectionnez **[!UICONTROL Modifier]** pour &quot;déverrouiller&quot; le workflow.
+1. Dans le coin supérieur droit de la page du modèle de processus Scene7 : Retraiter les ressources, sélectionnez **[!UICONTROL Modifier]** pour « déverrouiller » le workflow.
 1. Dans le workflow, sélectionnez le composant Transfert par lots Scene7 pour ouvrir la barre d’outils, puis sélectionnez **[!UICONTROL Configurer]** dans la barre d’outils.
 
    ![Composant Transfert par lots Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 - Propriétés des étapes]**, définissez les éléments suivants :
+1. Sur le **[!UICONTROL Transfert par lots vers Scene7 - Propriétés des étapes]** , définissez les options suivantes :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.
    * Sélectionnez **[!UICONTROL Avance du gestionnaire]** si votre gestionnaire doit passer à l’étape suivante.
    * Dans le champ **[!UICONTROL Délai d’expiration]**, saisissez le délai d’expiration du processus externe (en secondes).
@@ -119,9 +119,9 @@ Voir [Ajuster la taille du lot du workflow de retraitement](#adjusting-load).
 
    ![Boîte de dialogue des propriétés](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 - Propriétés des étapes]**, sélectionnez **[!UICONTROL Terminé]**.
+1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 – Propriétés des étapes]**, sélectionnez **[!UICONTROL Terminé]**.
 
-1. Dans le coin supérieur droit de Scene7 : Retraiter la page du modèle de workflow Ressources, sélectionnez **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
+1. Dans le coin supérieur droit de la page du modèle de workflow Scene7 : Retraiter les ressources, sélectionnez **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
    ![Synchronisation du modèle de workflow](/help/assets/assets-dm/reprocess-assets1.png)
 

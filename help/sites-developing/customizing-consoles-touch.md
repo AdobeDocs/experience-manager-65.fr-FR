@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des consoles
-seo-title: Personnalisation des consoles
+seo-title: Customizing the Consoles
 description: AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
-seo-description: AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
+seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
 uuid: 8ecce9ff-5907-41e1-af3b-a8646352d633
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '699'
 ht-degree: 77%
 
 ---
@@ -26,10 +26,9 @@ ht-degree: 77%
 
 AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles (et la [fonctionnalité de création de pages](/help/sites-developing/customizing-page-authoring-touch.md)) de votre instance de création.
 
-* Clientlibs Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, elle peut contenir le code requis pour votre composant personnalisé.
+* Clientlibs Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` Par exemple, il peut contenir le code requis pour votre composant personnalisé.
 
-* Recouvrements
-Les superpositions sont basées sur des définitions de noeud et vous permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
+* Recouvrements Les superpositions reposent sur des définitions de noeud et permettent de superposer la fonctionnalité standard (dans `/libs`) avec vos propres fonctionnalités personnalisées (dans `/apps`). Lors de la création d’un recouvrement, une copie 1:1 de l’original n’est pas nécessaire, car la fusion de ressources Sling prend en compte l’héritage.
 
 Ils peuvent être utilisés de différentes manières pour étendre les consoles AEM. Une petite sélection est abordée ci-dessous (à un niveau élevé).
 
@@ -40,10 +39,8 @@ Ils peuvent être utilisés de différentes manières pour étendre les consoles
 >* Utilisation et création de [bibliothèques clientes](/help/sites-developing/clientlibs.md).
 >* Utilisation et création d’[incrustations](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
-
 >
->
-Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+>Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
@@ -53,16 +50,14 @@ Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.c
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
-   >
-   >
-1. Apportez les modifications désirées dans `/apps`
+>1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>
+>1. Apportez les modifications désirées dans `/apps`
 
 >
 
 
-
-Par exemple, l’emplacement suivant dans la structure `/libs` peut être superposé :
+Par exemple, l’emplacement suivant dans la variable `/libs` peut être superposée :
 
 * Consoles (toutes les consoles basées sur les pages de l’IU Granite), par exemple :
 
@@ -132,13 +127,13 @@ Vous pouvez personnaliser le mode par défaut (colonnes, carte ou liste) pour un
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   En utilisant les propriétés sur ce noeud, vous pouvez définir la balise `groups` autorisée à exécuter l’action spécifique. par exemple, `administrators`
+   À l’aide des propriétés sur ce noeud, vous pouvez définir la variable `groups` autorisé à effectuer l’action spécifique ; par exemple, `administrators`
 
 ### Personnalisation des colonnes en mode Liste {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Cette fonctionnalité est optimisée pour les colonnes de champs de texte ; pour les autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` dans `/apps`.
+>Cette fonctionnalité est optimisée pour les colonnes de champs de texte ; pour d’autres types de données, il est possible de superposer `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
 Pour personnaliser les colonnes en mode Liste :
 
@@ -155,14 +150,14 @@ Pour personnaliser les colonnes en mode Liste :
 
 1. Si vous le souhaitez :
 
-   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire une balise [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une balise
-      `pageInfoProviderType` property.
+   * Si vous souhaitez ajouter des données supplémentaires, vous devez écrire une [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec un
+      `pageInfoProviderType`.
 
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
 
 1. Vous pouvez maintenant sélectionner la colonne dans le configurateur de colonnes du mode Liste.
 
-### Filtrage des ressources  {#filtering-resources}
+### Filtrage des ressources {#filtering-resources}
 
 Lorsqu’une console est utilisée, un cas d’utilisation fréquent est la nécessité pour l’utilisateur de choisir des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste dans laquelle l’auteur doit sélectionner un élément.
 

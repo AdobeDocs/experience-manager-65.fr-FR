@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3757'
 ht-degree: 100%
 
@@ -196,7 +196,7 @@ Pour désactiver ce paramètre, laissez-le vide. Dans certains cas, il se peut q
 
 **Mot de passe SMTP :** mot de passe du compte SMTP. Certains serveurs de messagerie ne nécessitent pas de mot de passe SMTP.
 
-**De :** adresse e-mail (utilisateur@entreprise.com, par exemple) utilisée afin d’envoyer des e-mails pour signaler des résultats et des erreurs. Si vous n’indiquez pas de valeur pour l’élément De, le serveur de messagerie tentera de déterminer l’adresse électronique en combinant la valeur spécifiée dans le paramètre Utilisateur SMTP avec un domaine par défaut configuré sur le serveur de messagerie. Si votre serveur de messagerie n’a pas de domaine par défaut et que vous n’indiquez pas de valeur pour l’élément De, des erreurs peuvent se produire. Pour vous assurer que les courriers électroniques auront la bonne adresse d’envoi De, indiquez une valeur pour le paramètre De.
+**Envoyé par :** adresse e-mail (utilisateur@entreprise.com, par exemple) utilisée pour envoyer des notifications par e-mail de résultats et d’erreurs. Si vous n’indiquez pas de valeur pour l’élément De, le serveur de messagerie tentera de déterminer l’adresse électronique en combinant la valeur spécifiée dans le paramètre Utilisateur SMTP avec un domaine par défaut configuré sur le serveur de messagerie. Si votre serveur de messagerie n’a pas de domaine par défaut et que vous n’indiquez pas de valeur pour l’élément De, des erreurs peuvent se produire. Pour vous assurer que les courriers électroniques auront la bonne adresse d’envoi De, indiquez une valeur pour le paramètre De.
 
 **SMTP SSL activé :** sélectionnez ce paramètre pour forcer le fournisseur d’e-mail à utiliser le protocole SSL pour analyser la boîte de réception. Vérifiez que le serveur de messagerie prend en charge le protocole SSL.
 
@@ -212,17 +212,17 @@ La valeur par défaut est asynchrone.
 
 **Utiliser la ligne d’objet d’origine pour les e-mails de résultats :** par défaut, le serveur Forms utilise les valeurs spécifiées dans les paramètres d’objet des e-mails de réussite et d’erreur en tant qu’objet des e-mails de résultat envoyés. Pour que l’objet des messages électroniques de résultat soit le même que l’objet du message électronique original envoyé au serveur, sélectionnez cette option.
 
-**Objet de l’e-mail de réussite :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre message électronique est fructueux, vous recevez un message de réussite. Si votre message électronique échoue, vous recevez un message d’erreur expliquant les raisons de cet échec. Ce paramètre vous permet de spécifier l’objet d’un message électronique de réussite envoyé pour ce point de fin.
+**Objet de l’e-mail de succès :** après l’envoi d’un e-mail à un point d’entrée d’e-mail pour commencer ou continuer un processus, le serveur AEM Forms vous renvoie un message. Si votre message électronique est fructueux, vous recevez un message de réussite. Si votre message électronique échoue, vous recevez un message d’erreur expliquant les raisons de cet échec. Ce paramètre vous permet de spécifier l’objet d’un message électronique de réussite envoyé pour ce point de fin.
 
-**Corps de l’e-mail de succès :** permet de spécifier le corps du texte des e-mails de succès envoyés pour ce point d’entrée.
+**Corps de l’e-mail de succès :** permet de spécifier le corps de texte des e-mails de succès envoyés pour ce point d’entrée.
 
-**Préfixe de l’objet des e-mails d’erreur :** permet de préciser le texte utilisé au début de l’objet des e-mails d’erreur envoyés pour ce point d’entrée.
+**Préfixe d’objet des e-mails d’erreurs :** permet de spécifier le préfixe utilisé au début de l’objet des e-mails d’erreur envoyés pour ce point d’entrée.
 
-**Objet des e-mails d’erreur :** permet d’indiquer l’objet des e-mails d’erreur envoyés pour ce point d’entrée. Ce texte est affichée après le préfixe de l’objet des messages électroniques d’erreur.
+**Objet de l’e-mail d’erreur :** permet de spécifier l’objet des e-mails d’erreur envoyés pour ce point d’entrée. Ce texte est affichée après le préfixe de l’objet des messages électroniques d’erreur.
 
-**Corps de l’e-mail d’erreur :** permet d’indiquer la première ligne du corps du texte des e-mails d’erreur envoyés pour ce point d’entrée.
+**Corps des e-mails d’erreur :** permet de spécifier la première ligne du corps du texte des e-mails d’erreur envoyés pour ce point d’entrée.
 
-**Informations générales sur l’e-mail :** chaque e-mail de succès ou d’erreur comporte une section comprenant le texte de l’e-mail original que vous avez envoyé au serveur Forms. Ce paramètre spécifie le texte qui apparaît au-dessus cette section.
+**Informations du résumé de l’e-mail :** chaque e-mail de succès ou d’erreur comporte une section comprenant le texte de l’e-mail original que vous avez envoyé au serveur Forms. Ce paramètre spécifie le texte qui apparaît au-dessus cette section.
 
 **Valider la boîte de réception avant de créer/mettre à jour ce point d’entrée :** lorsque cette option est sélectionnée, le serveur Forms vérifie que les paramètres SMTP/POP3 sont corrects avant de créer le point d’entrée. Lorsque vous cliquez sur Ajouter, un message s’affiche pour indiquer si le compte de boîte de réception est valide ou non. Si cette option n’est pas sélectionnée, le serveur AEM forms crée le point de fin, sans vérifier la validité du compte de boîte de réception.
 

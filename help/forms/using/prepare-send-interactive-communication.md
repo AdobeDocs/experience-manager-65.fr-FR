@@ -10,7 +10,7 @@ discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 source-git-commit: b6774acc4ec32c87a5ad5f5b2ea885e1e1aa867e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2021'
 ht-degree: 100%
 

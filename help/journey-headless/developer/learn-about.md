@@ -1,7 +1,8 @@
 ---
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
-source-git-commit: 919cef01470dd930884e97b15f2d40a38872c0d0
+exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1595'
 ht-degree: 96%

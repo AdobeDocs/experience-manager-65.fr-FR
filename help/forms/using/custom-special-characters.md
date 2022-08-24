@@ -11,10 +11,10 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez par exemple insérer les caractères spéciaux suivants :
 
 * Symboles de devise tels que €,￥et £
 * Symboles mathématiques tels que ∑, √, ∂ et ^
-* Symboles de ponctuation comme ‟ et &quot;
+* Les symboles de ponctuation comme « et ».
 
 Vous pouvez insérer des caractères spéciaux sous forme de lettres :
 
@@ -98,7 +98,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Ajouter un caractère spécial personnalisé</td>
    <td>
     <ol>
-     <li>Ajoutez un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters avec les propriétés obligatoires.</li>
+     <li>Ajoutez un nœud enfant sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters » avec les propriétés obligatoires.</li>
      <li>Cliquez sur Enregistrer tout</li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.</li>
     </ol> </td>
@@ -117,7 +117,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Masquer un caractère spécial</td>
    <td>
     <ol>
-     <li>Recouvrez le noeud à masquer sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters".</li>
+     <li>Superposez le nœud à masquer sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters ».</li>
      <li>Ajoutez la propriété sling:hideResource (booléenne) au nœud à masquer (sous applications). </li>
      <li>Cliquez sur Enregistrer tout. </li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li>
@@ -127,7 +127,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Masquer plusieurs caractères spéciaux</td>
    <td>
     <ol>
-     <li>Ajoutez la propriété "sling:hideChildren (String ou String[])" à "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
+     <li>Ajoutez la propriété « sling:hideChildren (String or String[]) » sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters ». </li>
      <li>Ajoutez des noms de nœud (caractères spéciaux à masquer) sous forme de valeurs pour la propriété sling:hideChildren. </li>
      <li>Cliquez sur Enregistrer tout. </li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li>
@@ -137,7 +137,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Classement des caractères spéciaux</td>
    <td>
     <ol>
-     <li>Ajoutez un noeud enfant sous "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters avec les propriétés obligatoires. </li>
+     <li>Ajoutez un nœud enfant sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters » avec les propriétés obligatoires. </li>
      <li>Ajoutez la propriété « sling:orderBefore (String) » au nœud enfant qui vient d’être créé. </li>
      <li>Ajoutez le nom du nœud comme valeur devant laquelle le caractère spécial récemment ajouté doit être affiché. </li>
      <li>Cliquez sur Enregistrer tout. </li>

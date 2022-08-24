@@ -99,7 +99,7 @@ L’intégration d’authentification par défaut peut ne pas être parfaite pou
 
    Pour plus d’informations sur la personnalisation d’un délégué d’authentification, voir [Intégration d’identités](https://answers.livefyre.com/developers/identity-integration/).
 
-   Pour plus d’informations sur AEM Clientlibs, voir [Utilisation de bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
+   Pour plus d’informations sur AEM Clientlibs, voir [Utilisation de bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr).
 
 ## Utilisation de Livefyre avec AEM Sites {#use-livefyre-with-aem-sites}
 

@@ -243,7 +243,7 @@ Pour activer MSSL, configurez les propriétés sur l’onglet Transport en fonct
    <td>Aucune valeur</td>
   </tr>
   <tr>
-   <td>Mot de passe</td>
+   <td>mot de passe ;</td>
    <td>Aucune valeur</td>
   </tr>
   <tr>

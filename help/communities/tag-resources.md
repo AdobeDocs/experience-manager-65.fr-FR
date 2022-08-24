@@ -1,8 +1,8 @@
 ---
 title: 'Balisage des ressources d’activation '
-seo-title: 'Balisage des ressources d’activation '
+seo-title: Tagging Enablement Resources
 description: Le balisage des ressources d’activation permet de filtrer les ressources et les parcours de formation lorsque les membres parcourent les catalogues.
-seo-description: Le balisage des ressources d’activation permet de filtrer les ressources et les parcours de formation lorsque les membres parcourent les catalogues.
+seo-description: Tagging of enablement resources allows for filtering of resources and learning paths as members browse catalogs
 uuid: daf8a4f4-486b-498c-99e9-d1533a830e64
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: ce58c8e9-8b4a-43fb-a108-ed2ac40268c7
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '637'
-ht-degree: 2%
+source-wordcount: '618'
+ht-degree: 1%
 
 ---
 
@@ -22,19 +22,19 @@ ht-degree: 2%
 
 ## Présentation {#overview}
 
-Le balisage des ressources d’activation permet de filtrer les ressources et les parcours d’apprentissage lorsque les membres parcourent les [catalogues](functions.md#catalog-function).
+Le balisage des ressources d’activation permet de filtrer les ressources et les parcours d’apprentissage lorsque les membres naviguent [catalogues](functions.md#catalog-function).
 
 Essentiellement :
 
-* [Créer un espace de ](../../help/sites-administering/tags.md#creating-a-namespace) noms de balise pour chaque catalogue
+* [Création d’un espace de noms de balise](../../help/sites-administering/tags.md#creating-a-namespace) pour chaque catalogue
 
    * [Définition des autorisations de balises](../../help/sites-administering/tags.md#setting-tag-permissions)
    * Pour les membres de la communauté uniquement (communauté fermée)
 
-      * Autoriser l’accès en lecture au groupe de membres du site de la communauté [](users.md#publish-group-roles)
+      * Autoriser l’accès en lecture au [groupe de membres du site de la communauté](users.md#publish-group-roles)
    * Pour tout visiteur du site, qu’il soit connecté ou anonyme (communauté ouverte)
 
-      * Autoriser l’accès en lecture au groupe `Everyone`
+      * Autoriser l’accès en lecture au `Everyone` group
    * [Publication des balises](../../help/sites-administering/tags.md#publishing-tags)
 
 
@@ -44,15 +44,15 @@ Essentiellement :
    * [Configuration des catalogues qui existent dans la structure du site](functions.md#catalog-function)
 
       * Peut ajouter des balises à l’instance de catalogue pour contrôler la liste des balises présentées dans les filtres de l’interface utilisateur.
-      * Peut ajouter [pre-filters](catalog-developer-essentials.md#pre-filters) pour limiter les ressources incluses d’un catalogue.
+      * Peut ajouter [pré-filtres](catalog-developer-essentials.md#pre-filters), afin de restreindre les ressources incluses d’un catalogue.
 
 * [Publier le site de la communauté](sites-console.md#publishing-the-site)
-* [Application de balises à la ](resources.md#create-a-resource) ressource d’activation qui peut être filtrée de manière catégorique
+* [Application de balises aux ressources d’activation](resources.md#create-a-resource) afin qu’elles puissent être filtrées de manière catégorique
 * [Publier les ressources d&#39;activation](resources.md#publish)
 
 ## Balises de site de communauté {#community-site-tags}
 
-Lors de la création ou de la modification d’un site de communauté, le [paramètre de balisage](sites-console.md#tagging) définit la portée des balises disponibles pour les fonctionnalités du site en sélectionnant un sous-ensemble d’espaces de noms de balise existants.
+Lors de la création ou de la modification d’un site communautaire, la variable [Paramètre de balisage](sites-console.md#tagging) définit la portée des balises disponibles pour les fonctionnalités du site en sélectionnant un sous-ensemble d’espaces de noms de balise existants.
 
 Bien que des balises puissent être créées et ajoutées au site de la communauté à tout moment, il est recommandé de concevoir au préalable une taxonomie, comme pour la conception d’une base de données. Voir [Utilisation des balises](../../help/sites-authoring/tags.md).
 
@@ -74,7 +74,7 @@ La fonction Catalog comprend un paramètre de balise qui définit les balises r�
 
 ## Application de balises aux ressources d’activation {#applying-tags-to-enablement-resources}
 
-Les ressources d’activation et les parcours de formation s’affichent dans tous les catalogues lorsque `Show in Catalog` est coché. L’ajout de balises aux ressources et aux cursus de formation permet de pré-filtrer des catalogues spécifiques, ainsi que de les filtrer dans l’interface utilisateur du catalogue.
+Les ressources d’activation et les parcours de formation s’affichent dans tous les catalogues lorsque `Show in Catalog` est cochée. L’ajout de balises aux ressources et aux cursus de formation permet de pré-filtrer des catalogues spécifiques, ainsi que de les filtrer dans l’interface utilisateur du catalogue.
 
 Pour limiter les ressources d’activation et les parcours de formation à des catalogues spécifiques, créez des [pré-filtres](catalog-developer-essentials.md#pre-filters).
 
@@ -82,7 +82,7 @@ L’interface utilisateur du catalogue permet aux visiteurs d’appliquer un fil
 
 L’administrateur qui applique les balises aux ressources d’activation doit connaître les espaces de noms de balise associés aux catalogues, ainsi que la taxonomie afin de sélectionner une sous-balise pour une catégorisation plus précise.
 
-Par exemple, si un espace de noms `ski-catalog` a été créé et défini sur un catalogue nommé `Ski Catalog`, il peut y avoir deux balises enfants : `lesson-1` et `lesson-2`.
+Par exemple, si une `ski-catalog` Un espace de noms a été créé et défini dans un catalogue nommé `Ski Catalog`, il peut avoir deux balises enfants : `lesson-1` et `lesson-2`.
 
 Ainsi, toute ressource d’activation balisée avec l’une des ressources suivantes :
 

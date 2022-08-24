@@ -1,8 +1,8 @@
 ---
 title: Configuration de composants en mode de conception
-seo-title: Configuration de composants en mode de conception
+seo-title: Configuring Components in Design Mode
 description: Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans le sidekick. D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour activer/désactiver ces composants.
-seo-description: Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans le sidekick. D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour activer/désactiver ces composants.
+seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '500'
 ht-degree: 91%
 
 ---
@@ -41,7 +41,7 @@ Par exemple, le contenu d’une page des produits peut contenir un système de p
 >
 >Reportez-vous aux sections [Développement de composants](/help/sites-developing/components.md#paragraphsystem) et [Consignes d’utilisation des modèles et des composants](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) pour en savoir plus sur `parsys`.
 
-## Activation/désactivation des composants {#enable-disable-components}
+## Activation/désactivation de composants {#enable-disable-components}
 
 En mode de conception, le sidekick est réduit et vous avez la possibilité de configurer les composants accessibles dans le cadre de la création :
 
@@ -49,7 +49,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Cliquez sur **Modifier** dans le système Paragraphe (**Conception de par**).
+1. Cliquez sur **Modifier** sur le système Paragraphe (**Conception de paragraphe**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -73,7 +73,7 @@ En mode de conception, vous pouvez également configurer des attributs pour les 
 
 1. Vous pouvez configurer la conception des composants.
 
-   Par exemple, si vous cliquez sur **Modifier** sur le composant Image (**Conception d’image**), vous pouvez configurer les paramètres spécifiques au composant :
+   Par exemple, si vous cliquez sur **Modifier** sur le composant Image (**Conception d’une image**) vous pouvez configurer les paramètres spécifiques au composant :
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 

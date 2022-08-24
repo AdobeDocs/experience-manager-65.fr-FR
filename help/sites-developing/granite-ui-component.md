@@ -1,8 +1,8 @@
 ---
 title: Création d’un composant de champ d’IU Granite
-seo-title: Création d’un composant de champ d’IU Granite
+seo-title: Creating a New Granite UI Field Component
 description: L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires, appelés champs.
-seo-description: L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires, appelés champs.
+seo-description: Granite UI provides a range of components designed to be used in forms, called fields
 uuid: cf26e057-4b0c-45f4-8975-2c658517f20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 89%
+source-wordcount: '539'
+ht-degree: 88%
 
 ---
 
@@ -46,7 +46,7 @@ Utilisez la structure de base de l’IU Granite pour développer et/ou étendre 
 
    * Une collection de clientlibs fournissant un certain vocabulaire (c’est-à-dire une extension du langage HTML) pour obtenir des motifs génériques d’interaction via une IU pilotée par hypermédia.
 
-Le composant d’IU Granite générique `field` est composé de deux fichiers ciblés :
+Composant d’IU Granite générique `field` est composé de deux fichiers ciblés :
 
 * `init.jsp` : gère le traitement générique ; le balisage et la description, et fournit la valeur de formulaire dont vous aurez besoin lors du rendu du champ.
 * `render.jsp` : il s’agit de l’emplacement où le rendu du champ est effectué et doit être remplacé pour votre champ personnalisé ; il est inclus par `init.jsp`.
@@ -100,9 +100,9 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
 Pour ajouter un comportement côté client spécifique à votre composant :
 
 1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog`.
-1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog` et définissez vos `JS`/ `CSS` à l’intérieur.
+1. Création d’une bibliothèque cliente de catégorie `cq.authoring.dialog` et définissez vos `JS`/ `CSS` à l&#39;intérieur.
 
-   Définissez votre `JS`/ `CSS` dans la bibliothèque cliente.
+   Définissez vos `JS`/ `CSS` dans la bibliothèque cliente.
 
    >[!NOTE]
    >

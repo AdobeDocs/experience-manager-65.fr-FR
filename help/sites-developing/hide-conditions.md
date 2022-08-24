@@ -1,8 +1,8 @@
 ---
 title: Utilisation de conditions de masquage
-seo-title: Utilisation de conditions de masquage
+seo-title: Using Hide Conditions
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
-seo-description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
+seo-description: Hide conditions can be used to determine if a component resource is rendered or not.
 uuid: 93b4f450-1d94-4222-9199-27b5f295f8e6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 source-git-commit: baf2c6339a554743b6cc69486fb77b121048ba4b
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '628'
 ht-degree: 98%
 
 ---
@@ -31,7 +31,7 @@ Grâce aux conditions de masquage, les administrateurs, développeurs et super-u
 >
 >Le masquage d’une ressource sur la base d’une expression ne remplace pas les autorisations ACL. Le contenu peut toujours être modifié, mais il n’est pas simplement affiché.
 
-## Détails relatifs à la mise en œuvre et à l’utilisation  {#implementation-and-usage-details}
+## Détails relatifs à la mise en œuvre et à l’utilisation {#implementation-and-usage-details}
 
 `com.adobe.granite.ui.components.FilteringResourceWrapper` est chargé de filtrer les ressources en fonction de l’existence et de la valeur de la propriété `granite:hide`, située sur le champ à filtrer. L’implémentation de `/libs/cq/gui/components/authoring/dialog/dialog.jsp` comprend une instance de `FilteringResourceWrapper.`
 

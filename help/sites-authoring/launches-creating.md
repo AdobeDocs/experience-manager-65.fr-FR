@@ -1,8 +1,8 @@
 ---
 title: Création de lancements
-seo-title: Création de lancements
+seo-title: Creating Launches
 description: Vous pouvez créer un lancement afin de permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
-seo-description: Vous pouvez créer un lancement afin de permettre la mise à jour d’une nouvelle version des pages web existantes en vue d’une activation future.
+seo-description: You can create a launch to enable the updating of a new version of existing web pages for future activation.
 uuid: c1a32710-8189-4a2e-bf2f-428ab30d48c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '986'
 ht-degree: 98%
 
 ---
@@ -84,7 +84,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Titre du lancement** : nom du lancement. Ce nom doit être explicite pour les auteurs.
    * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
-   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option permet d’y parvenir en transformant le lancement en [Live Copy](/help/sites-administering/msm.md).
+   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option permet d’y parvenir en effectuant un lancement [Live Copy](/help/sites-administering/msm.md).
 
       Par défaut, cette option est sélectionnée.
 

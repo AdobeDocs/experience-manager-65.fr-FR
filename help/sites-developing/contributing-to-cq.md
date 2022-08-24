@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
 source-wordcount: '2709'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -63,7 +63,7 @@ La façon dont le contenu doit être modélisé dans un référentiel de contenu
 
 L’approche REST est profondément ancrée dans tous nos projets. Cela signifie, entre autres, que nous évitons les interactions avec état et appliquons le principe que les URI sont des adresses définitives pour le contenu et les services.
 
-REST (REpresentational State Transfer) fait référence à l’architecture logicielle sur laquelle le World Wide Web est basé. Il décrit les éléments clés qui font fonctionner le web et fournit ainsi un ensemble de principes pour la conception d’un logiciel basé sur le web. Lors de la conception d’une API à utiliser sur le Web, il est donc logique de respecter ces &quot;bonnes pratiques&quot;.
+REST (REpresentational State Transfer) fait référence à l’architecture logicielle sur laquelle le World Wide Web est basé. Il décrit les éléments clés qui font fonctionner le web et fournit ainsi un ensemble de principes pour la conception d’un logiciel basé sur le web. Lors de la conception d’une API à utiliser sur le web, il est donc logique d’adhérer à ces « bonnes pratiques ».
 
 Dans la mesure où REST offre une approche que nous suivons dans nombreux de nos projets, vous devriez vous attacher à maîtriser les principes de la conception RESTful. La dissertation de [Roy Fielding](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) est un excellent point de départ.
 

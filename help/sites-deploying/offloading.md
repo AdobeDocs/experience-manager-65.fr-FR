@@ -1,26 +1,26 @@
 ---
 title: Tâches de déchargement
-seo-title: Tâches de déchargement
+seo-title: Offloading Jobs
 description: Découvrez comment configurer et utiliser les instances AEM dans une topologie afin d’exécuter des types de traitement spécifiques.
-seo-description: Découvrez comment configurer et utiliser les instances AEM dans une topologie afin d’exécuter des types de traitement spécifiques.
+seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
-feature: Configuration
+feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2404'
+source-wordcount: '2382'
 ht-degree: 76%
 
 ---
 
 # Tâches de déchargement{#offloading-jobs}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Le déchargement répartit les tâches de traitement entre les instances de Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances spécifiques d’Experience Manager pour exécuter des types de traitement spécifiques. Le traitement spécialisé permet d’optimiser l’utilisation des ressources disponibles sur le serveur.
 
@@ -67,7 +67,7 @@ Le service de recherche de tous les membres du point de topologie pointe vers le
 
 Chaque cluster de la topologie contient une instance qui est identifiée en tant que leader. Le leader du cluster interagit avec la topologie au nom des autres membres du cluster. Lorsque le leader quitte le cluster, un nouveau leader du cluster est automatiquement sélectionné.
 
-### Affichage de la topologie  {#viewing-the-topology}
+### Affichage de la topologie {#viewing-the-topology}
 
 Utilisez le navigateur de topologies pour explorer l’état de la topologie à laquelle l’instance d’Experience Manager participe. Le navigateur de topologies présente les clusters et les instances de la topologie.
 
@@ -203,7 +203,7 @@ Les tâches sont réparties entre les instances pour lesquelles la rubrique asso
 
    **Remarque :** Lorsque vous sélectionnez Exclusif pour une rubrique, toutes les autres rubriques sont automatiquement réglées sur Désactivé.
 
-### Consommateurs de tâches installés  {#installed-job-consumers}
+### Consommateurs de tâches installés {#installed-job-consumers}
 
 Plusieurs implémentations de JobConsumer sont installées avec Experience Manager. Les rubriques auxquelles ces JobConsumers sont inscrits sont affichées dans le navigateur de déchargement. Les rubriques supplémentaires qui s’affichent sont celles que les JobConsumers personnalisés ont enregistrées. Le tableau ci-dessous décrit les JobConsumers par défaut.
 
@@ -222,7 +222,7 @@ Le service Apache Sling Job Consumer Manager fournit les propriétés de liste a
 
 **Remarque :** Si l’instance appartient à une topologie, vous pouvez également utiliser le navigateur de déchargement sur tout ordinateur de la topologie pour activer ou désactiver les rubriques.
 
-La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a pas de valeur).
+La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a aucune valeur).
 
 Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Job Consumer Manager est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
@@ -257,19 +257,19 @@ Ce modèle de réplication est similaire à celui utilisé entre les instances d
 
 ### Nommage des agents de réplication pour le déchargement {#naming-the-replication-agents-for-offloading}
 
-Utilisez un format spécifique pour la propriété ***Name*** des agents de réplication afin que la structure de déchargement utilise automatiquement l’agent correct pour des instances de travail spécifiques.
+Utilisez un format spécifique pour la variable ***Nom*** des agents de réplication, de sorte que la structure de déchargement utilise automatiquement l’agent correct pour des instances de programme de travail spécifiques.
 
 **Nommer un agent sortant sur l’instance d’auteur :** 
 
-`offloading_<slingid>`, où  `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_<slingid>`où `<slingid>` est l’identifiant Sling de l’instance de travail.
 
-Exemple: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
+Exemple : `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nommer l’agent inverse sur l’instance d’auteur :** 
 
-`offloading_reverse_<slingid>`, où  `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_reverse_<slingid>`où `<slingid>` est l’identifiant Sling de l’instance de travail.
 
-Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
+Exemple : `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nommer le dossier d’envoi sur l’instance de travail :**
 
@@ -277,10 +277,10 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent sortant {#creating-the-outgoing-agent}
 
-1. Créez un **agent de réplication** sur l’auteur. (Voir la [documentation pour les agents de réplication](/help/sites-deploying/replication.md)). Spécifiez un **titre**. Le **nom** doit respecter la convention d’affectation des noms.
+1. Créez un **agent de réplication** sur l’auteur. (Voir [documentation pour les agents de réplication](/help/sites-deploying/replication.md)). Spécifiez les **Titre**. Le **Nom** doit respecter la convention d’affectation des noms.
 1. Créez un agent en utilisant les propriétés suivantes :
 
-   | Propriétés | Valeur |
+   | Propriété | Valeur |
    |---|---|
    | Paramètres > Type de sérialisation | Valeur par défaut |
    | Transport >URI de transport | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
@@ -291,10 +291,10 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent inverse {#creating-the-reverse-agent}
 
-1. Créez un **agent de réplication inverse** sur l’auteur. (Voir la [documentation pour les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez un **titre**. Le **nom** doit respecter la convention d’affectation des noms.
+1. Créez un **Agent de réplication inverse** sur l’auteur. (Voir [documentation pour les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez les **Titre**. Le **Nom** doit respecter la convention d’affectation des noms.
 1. Créez un agent en utilisant les propriétés suivantes :
 
-   | Propriétés | Valeur |
+   | Propriété | Valeur |
    |---|---|
    | Paramètres > Type de sérialisation | Valeur par défaut |
    | Transport >URI de transport | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
@@ -304,16 +304,16 @@ Exemple: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent de dossier d’envoi {#creating-the-outbox-agent}
 
-1. Créez un **agent de réplication** sur l’instance de travail. (Voir la [documentation pour les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez un **titre**. **Le nom** doit être `offloading_outbox`.
+1. Créez un **Agent de réplication** sur l’instance de travail. (Voir [documentation pour les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez les **Titre**. Le **Nom** must `offloading_outbox`.
 1. Créez l’agent en utilisant les propriétés suivantes.
 
-   | Propriétés | Valeur |
+   | Propriété | Valeur |
    |---|---|
    | Paramètres > Type de sérialisation | Valeur par défaut |
    | Transport >URI de transport | repo://var/replication/outbox |
    | Déclencheur > Ignorer la valeur par défaut | True |
 
-###  Recherche de l’identifiant Sling{#finding-the-sling-id}
+###  Recherche de l’identifiant Sling {#finding-the-sling-id}
 
 Obtenez l’identifiant Sling d’une instance Experience Manager en utilisant l’une des méthodes suivantes :
 

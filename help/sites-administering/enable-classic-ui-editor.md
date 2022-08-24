@@ -1,8 +1,8 @@
 ---
 title: Éditeur
-seo-title: Éditeur
+seo-title: Editor
 description: Découvrez comment revenir à l’éditeur de l’interface utilisateur classique.
-seo-description: Découvrez comment revenir à l’éditeur de l’interface utilisateur classique.
+seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: ca8b07e7-014f-428e-82bd-87f3aae12f6e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '100'
 ht-degree: 90%
 
 ---
@@ -32,7 +32,7 @@ Pour réactiver l’option **Ouvrir dans l’IU classique** dans le menu **infor
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Créez une superposition à l’aide de l’option **Noeud de recouvrement** ; par exemple :
+1. Créez une superposition à l’aide de la fonction **Noeud de recouvrement** option; par exemple :
 
    * **Chemin**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Emplacement du recouvrement**: `/apps/`

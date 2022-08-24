@@ -1,5 +1,5 @@
 ---
-title: Utilisation de la publication sélective dans Dynamic Media
+title: Utilisation de la publication sélective dans Dynamic Media
 description: Vous pouvez choisir de publier ou d’annuler la publication de ressources dans Adobe Experience Manager ou Dynamic Media au niveau du dossier. Vous pouvez utiliser Gérer la publication ou Publication rapide au lieu de vous reposer uniquement sur la configuration de Dynamic Media dont les paramètres sont globaux pour tous les dossiers de votre instance Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS

@@ -1,8 +1,8 @@
 ---
 title: Configuration d’utilisateurs et de groupes d’utilisateurs
-seo-title: Configuration d’utilisateurs et de groupes d’utilisateurs
+seo-title: Configure Your Users and User Groups
 description: Consultez cette page pour comprendre les rôles utilisateur et comment configurer vos utilisateurs et groupes afin de prendre en charge la création et la gestion de votre application mobile On-Demand Services.
-seo-description: Consultez cette page pour comprendre les rôles utilisateur et comment configurer vos utilisateurs et groupes afin de prendre en charge la création et la gestion de votre application mobile On-Demand Services.
+seo-description: Follow this page to understand the user roles and how to configure your users and groups to support the authoring and mangement of your mobile On-Demand services app.
 uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 53%
+source-wordcount: '515'
+ht-degree: 56%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 53%
 
 Ce chapitre décrit les rôles utilisateur et comment configurer vos utilisateurs et groupes pour prendre en charge la création et la gestion de vos applications mobiles.
 
-## Utilisateurs de l’application AEM Mobile et administration des groupes {#aem-mobile-application-users-and-group-administration}
+## Utilisateurs des applications AEM Mobile et administration des groupes {#aem-mobile-application-users-and-group-administration}
 
 ### Développeurs de contenu d’application AEM Mobile (groupe app-author) {#aem-mobile-application-content-authors-app-author-group}
 
@@ -60,7 +60,7 @@ Les membres du groupe app-author sont chargés de la création AEM contenu de l�
 
 ### Groupe Administrateurs d’application AEM Mobile (groupe app-admins) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors **ET** en outre sont également responsables des éléments suivants :
+Les membres du groupe app-admins peuvent créer du contenu d’application avec les mêmes autorisations que celles incluses avec app-authors. **ET** en outre, il est également chargé des tâches suivantes :
 
 * La mise à jour, la publication et la suppression des mises à jour ContentSync OTA d’application
 
@@ -84,7 +84,7 @@ Les membres du groupe app-admins peuvent créer du contenu d’application avec 
    >
    >Des autorisations workflow-users sont nécessaires pour la compilation à distance avec le service PhoneGap Build.
 
-1. Accédez à la [console Autorisations](http://localhost:4502/useradmin) et ajoutez des autorisations pour administrer les services cloud.
+1. Accédez au [Console Autorisations](http://localhost:4502/useradmin) et ajouter des autorisations pour administrer des services cloud
 
    * (lire, modifier, créer, supprimer, répliquer) sur /etc/cloudservices/mobileservices
 

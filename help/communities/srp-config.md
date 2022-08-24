@@ -1,8 +1,8 @@
 ---
-title: Stockage   Configuration
-seo-title: Stockage   Configuration
+title: Configuration du stockage
+seo-title: Storage Configuration
 description: Accès à la console de configuration de stockage
-seo-description: Accès à la console de configuration de stockage
+seo-description: How to access the Storage Configuration Console
 uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,12 +13,12 @@ role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 5%
+source-wordcount: '199'
+ht-degree: 4%
 
 ---
 
-# Stockage   Configuration {#storage-configuration}
+# Configuration du stockage {#storage-configuration}
 
 La configuration du stockage est le moyen d’identifier le stockage choisi pour le contenu de la communauté, également appelé contenu généré par l’utilisateur (UGC).
 
@@ -35,16 +35,16 @@ Pour une discussion sur les options de stockage et les topologies de déploiemen
 
 Dans l’environnement de création, pour accéder à la console de configuration du stockage.
 
-* Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Configuration du stockage]**
+* Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Communautés]** > **[!UICONTROL Configuration de stockage]**
 
 Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 * Sélectionner une option
 * Configurer correctement
 
-   * Voir les détails de la [sélection de MSRP](msrp.md#select-msrp)
-   * Voir les détails de la [sélection de DSRP](dsrp.md#select-dsrp)
-   * Voir les détails de la [sélection de l’ASRP](asrp.md#select-asrp)
+   * Voir les détails de [sélection de MSRP](msrp.md#select-msrp)
+   * Voir les détails de [sélection de DSRP](dsrp.md#select-dsrp)
+   * Voir les détails de [sélection de l’ASRP](asrp.md#select-asrp)
 
 * Sélectionnez **[!UICONTROL Envoyer]**.
 
@@ -52,10 +52,10 @@ Pour sélectionner une option de stockage autre que le JCR par défaut :
 
 Notez que si aucune sélection n’est effectuée, la valeur par défaut est le référentiel AEM, JCR.
 
-JCR est *et non* un magasin commun partagé par les environnements de création et de publication. Le contenu de la communauté n’est visible que depuis l’environnement de création ou de publication dans lequel il a été créé.
+JCR est *not* un magasin commun partagé par les environnements de création et de publication. Le contenu de la communauté n’est visible que depuis l’environnement de création ou de publication dans lequel il a été créé.
 
-Pour plus d’informations, consultez la [boutique JCR](jsrp.md).
+Visite [Magasin JCR](jsrp.md) pour plus d’informations.
 
 >[!NOTE]
 >
->L’absence du noeud `srpc` sous `/etc/socialconfig` indique le [magasin JCR par défaut](jsrp.md).
+>L’absence du noeud `srpc` under `/etc/socialconfig` indique la valeur par défaut [Magasin JCR](jsrp.md).

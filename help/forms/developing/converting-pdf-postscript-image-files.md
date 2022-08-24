@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2809'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 Avant d’effectuer par programmation une opération du service Convert PDF, vous devez créer un client de service Convert PDF. Si vous utilisez l’API Java, créez un objet `ConvertPdfServiceClient`. Si vous utilisez l’API de service web, créez un objet `ConvertPDFServiceService`.
 
-Cette section utilise la nouvelle fonctionnalité de service web introduite dans AEM Forms. Pour accéder à cette nouvelle fonctionnalité, vous devez construire votre objet proxy à l’aide de lʼattribut `lc_version`. (Voir &quot;Accès aux nouvelles fonctionnalités à l’aide des services web&quot; dans [Appel d’AEM Forms à l’aide de services web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+Cette section utilise la nouvelle fonctionnalité de service web introduite dans AEM Forms. Pour accéder à cette nouvelle fonctionnalité, vous devez construire votre objet proxy à l’aide de lʼattribut `lc_version`. (Consultez la rubrique « Accéder aux nouvelles fonctionnalités à l’aide des services web » dans la section [Appeler AEM Forms à l’aide de services web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)).
 
 **Référencer le document PDF à convertir en fichier PostScript**
 

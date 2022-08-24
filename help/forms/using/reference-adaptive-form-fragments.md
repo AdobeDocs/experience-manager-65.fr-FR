@@ -10,7 +10,7 @@ discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 docset: aem65
 exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 100%
 
@@ -24,14 +24,14 @@ Pour les auteurs de formulaires adaptatifs, des fragments de référence sont fo
 
 * Adresse
 * Coordonnées
-* Informations de carte de crédit
+* Informations de la carte de crédit
 * Emploi actuel
 * Informations sur les personnes à charge
 * Historique d’emploi
 * Recettes et dépenses
 * Nom
 * Conditions générales
-* Conditions générales avec saisie tactile
+* Conditions générales avec griffonnage
 
 Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un pack, voir [Utilisation de packs](/help/sites-administering/package-manager.md).
 

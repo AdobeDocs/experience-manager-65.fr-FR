@@ -13,7 +13,7 @@ discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Pour restituer un formulaire dont les droits sont activés, procédez comme suit
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Créer un objet API du client Forms**
+**Créer un objet de lʼAPI client de Forms**
 
 Avant d’effectuer par programmation une opération de l’API du client de service Forms, vous devez créer un client de service Forms.
 
@@ -114,8 +114,8 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 
    Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin d’accès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document` vide.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document` vide.
    * Un objet `PDFFormRenderSpec` stockant les options d’exécution.
    * Un objet `ReaderExtensionSpec` stockant les options d’exécution des droits d’utilisation.
    * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
@@ -125,12 +125,12 @@ Pour restituer un formulaire dont les droits sont activés à l’aide de l’AP
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
    * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Obtenez le type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+   * Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de lʼobjet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
-   * Appelez la méthode `write` de lʼobjet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets pour le remplir avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 
@@ -156,17 +156,17 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
 1. Définir des options d’exécution des droits d’utilisation
 
    * Créez un objet `ReaderExtensionSpec` en utilisant son constructeur.
-   * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de l’objet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur d’alias.
-   * Définissez les droits d’utilisation en appelant la méthode correspondante qui appartient à l’objet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation permettant à l’utilisateur de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
+   * Spécifiez l’alias des informations d’identification en appelant la méthode `setReCredentialAlias` de lʼobjet `ReaderExtensionSpec` et indiquez une valeur de chaîne qui représente la valeur de l’alias.
+   * Définissez chaque droit dʼutilisation en appelant la méthode correspondante qui appartient à lʼobjet `ReaderExtensionSpec`. Cependant, vous ne pouvez définir un droit d’utilisation que si les informations d’identification que vous référencez vous le permettent. En d’autres termes, vous ne pouvez pas définir un droit d’utilisation si les informations d’identification ne vous le permettent pas. Pour définir le droit d’utilisation permettant à l’utilisateur de remplir des champs de formulaire et d’enregistrer ce dernier, appelez la méthode `setReFillIn` de l’objet `ReaderExtensionSpec` et transmettez `true`.
 
 1. Générer un formulaire défini avec des droits
 
    Appelez la méthode `renderPDFFormWithUsageRights` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire faisant partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Valeur string spécifiant le nom du modèle de formulaire, y compris l’extension du nom du fichier. Si vous référencez une conception de formulaire qui fait partie d’une application Forms, veillez à spécifier le chemin dʼaccès complet, tel que `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner de données avec le formulaire, vous devez transmettre un objet `BLOB` basé sur une source de données XML vide. Vous ne pouvez pas transmettre un objet `BLOB` nul ; dans le cas contraire, une exception est générée.
    * Un objet `PDFFormRenderSpec` permettant de stocker les options d’exécution.
-   * Un objet `ReaderExtensionSpec` permettant de stocker les options d’exécution des droits d’utilisation.
+   * Un objet `ReaderExtensionSpec` stockant les options d’exécution des droits d’utilisation.
    * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
 
    La méthode `renderPDFFormWithUsageRights` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
@@ -176,9 +176,9 @@ Pour générer un formulaire défini avec des droits à l’aide de l’API Form
    * Créez un objet `BLOB` contenant des données de formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Obtenez le type de contenu de l’objet `BLOB` en appelant sa méthode `getContentType`.
    * Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `BLOB`.
-   * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+   * Créez un objet `javax.servlet.ServletOutputStream` servant à écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
    * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de l’objet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` afin dʼenvoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

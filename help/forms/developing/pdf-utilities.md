@@ -12,7 +12,7 @@ discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 role: Developer
 exl-id: e4b204ee-7261-42b8-8db8-a92aa9fd0a28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2579'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour converti
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -85,7 +85,7 @@ Pour convertir des documents PDF en documents XDP à l’aide de l’API PDF Uti
 
 1. Créer un client PDFUtilityService
 
-   Créez un objet `PDFUtilityServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion.
+   Créez un objet `PDFUtilityServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` qui contient des propriétés de connexion.
 
 1. Appeler l’opération de conversion PDF vers XDP
 
@@ -105,7 +105,7 @@ Pour convertir des documents PDF en documents XDP à l’aide de l’API PDF Ut
 
 1. Inclure les fichiers du projet
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service PDF Utilities.
+   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service PDF Utilities.
    * Référencez l’assemblage client Microsoft .NET.
 
 1. Créer un client PDFUtilityService
@@ -130,7 +130,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour convertir
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Forms, consultez la section [Guide de référence des services AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -192,7 +192,7 @@ Pour convertir des documents XDP en documents PDF à l’aide de l’API PDF Ut
 
 1. Inclure les fichiers du projet
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service PDF Utilities.
+   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service PDF Utilities.
    * Référencez l’assemblage client Microsoft .NET.
 
 1. Créer un client PDFUtilityService
@@ -217,7 +217,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour récupé
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service web PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service web PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -314,7 +314,7 @@ Vous pouvez utiliser les API Java et du service web du service PDF Utilities pou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service PDF Utilities, consultez [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -332,7 +332,7 @@ Incluez les fichiers nécessaires dans votre projet de développement. Si vous c
 
 **Créer un client PDFUtilityService**
 
-Avant d’effectuer par programmation une opération PDF Utilities, vous devez créer un client PDFUtilityService. Avec l’API Java, vous pouvez le faire en créant un objet `PDFUtilityServiceClient`. Avec l’API de service web, cela se fait à l’aide d’un objet `PDFUtilityServiceService`.
+Avant d’effectuer par programmation une opération PDF Utilities, vous devez créer un client PDFUtilityService. Si vous utilisez l’API Java, créez un objet `PDFUtilityServiceClient`. Avec l’API de service web, cela se fait à l’aide d’un objet `PDFUtilityServiceService`.
 
 **Définir le mode d’enregistrement**
 
@@ -411,7 +411,7 @@ Pour définir les options d’enregistrement du document PDF à l’aide de l’
 
 1. Inclure les fichiers du projet
 
-   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service PDF Utilities.
+   * Créez un assemblage client Microsoft .NET qui utilise le fichier WSDL du service PDF Utilities.
    * Référencez l’assemblage client Microsoft .NET.
 
 1. Créer un client PDFUtilityService
@@ -425,7 +425,7 @@ Pour définir les options d’enregistrement du document PDF à l’aide de l’
 
 1. Appeler l’opération d’enregistrement de style
 
-   Appelez la méthode `setSaveMode` de l’objet `PDFUtilityServiceService` et transmettez les valeurs suivantes :
+   Appeler la méthode `setSaveMode` de l’objet `PDFUtilityServiceService` et transmettez les valeurs suivantes :
 
    * Un objet `BLOB` qui représente le document PDF.
    * Un objet `PDFUtilitySaveMode` contenant le style d’enregistrement à utiliser.
@@ -451,7 +451,7 @@ Vous pouvez utiliser les API Java PDF Utilities pour convertir par programmation
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-4}
 

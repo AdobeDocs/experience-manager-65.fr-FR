@@ -1,8 +1,8 @@
 ---
 title: Configuration de MongoDB pour la démonstration
-seo-title: Configuration de MongoDB pour la démonstration
+seo-title: How to Setup MongoDB for Demo
 description: Comment configurer MSRP pour une instance d’auteur et une instance de publication
-seo-description: Comment configurer MSRP pour une instance d’auteur et une instance de publication
+seo-description: How to setup MSRP for one author instance and one publish instance
 uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,22 +13,22 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
 
 # Configuration de MongoDB pour la démonstration {#how-to-setup-mongodb-for-demo}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
-Ce tutoriel explique comment configurer [MSRP](msrp.md) pour *une instance d’auteur* et *une instance de publication*.
+Ce tutoriel décrit la configuration [MSRP](msrp.md) pour *un auteur* instance et *publication unique* instance.
 
 Avec cette configuration, le contenu de la communauté est accessible à partir des environnements de création et de publication sans avoir à transférer ou à répliquer à l’envers le contenu généré par l’utilisateur.
 
-Cette configuration est adaptée aux environnements *hors production* tels que le développement et/ou la démonstration.
+Ce paramétrage est adapté aux *hors production* des environnements tels que pour le développement et/ou la démonstration.
 
-**Un environnement  ** de production doit :**
+**A *production* L’environnement doit :**
 
 * Exécution de MongoDB avec un jeu de réplications
 * Utilisation de SolrCloud
@@ -38,7 +38,7 @@ Cette configuration est adaptée aux environnements *hors production* tels que l
 
 ### Installation de MongoDB {#install-mongodb}
 
-* Téléchargez MongoDB à partir de [https://www.mongodb.org/](https://www.mongodb.org/)
+* Télécharger MongoDB depuis [https://www.mongodb.org/](https://www.mongodb.org/)
 
    * Choix du système d’exploitation :
 
@@ -64,15 +64,15 @@ Cette configuration est adaptée aux environnements *hors production* tels que l
 
 ### Démarrer MongoDB {#start-mongodb}
 
-* &lt;mongo-install>/bin/mongod —dbpath  &lt;mongo-dbpath>
+* &lt;mongo-install>/bin/mongod —dbpath &lt;mongo-dbpath>
 
 Cela démarrera un serveur MongoDB à l’aide du port par défaut 27017.
 
-* Pour Mac, augmentez ulimit avec l’arg de démarrage &#39;ulimit -n 2048&#39;
+* Pour Mac, augmentez ulimit avec l’arg de début &#39;ulimit -n 2048&#39;.
 
 >[!NOTE]
 >
->Si MongoDB est démarré *après* AEM, **restart** toutes les instances **AEM** afin qu’elles se connectent correctement à MongoDB.
+>Si MongoDB est démarré *after* AEM, **restart** all **AEM** afin qu’elles se connectent correctement à MongoDB.
 
 ### Option de production de démonstration : Configuration d’un jeu de Secondaires MongoDB {#demo-production-option-setup-mongodb-replica-set}
 
@@ -96,7 +96,7 @@ Les commandes suivantes constituent un exemple de configuration d’un ensemble 
 
 ### Installer Solr {#install-solr}
 
-* Téléchargez Solr à partir de [Apache Lucene](https://archive.apache.org/dist/lucene/solr/) :
+* Télécharger Solr depuis [Apache Lucene](https://archive.apache.org/dist/lucene/solr/):
 
    * Adapté à tous les systèmes d’exploitation.
    * Solr version 7.0.
@@ -106,18 +106,18 @@ Les commandes suivantes constituent un exemple de configuration d’un ensemble 
 
    * Suivez &quot;exemple&quot; Configuration Solr.
    * Aucun service n’est nécessaire.
-   * Le dossier Solr installé sera appelé &lt;solr-install>.
+   * Le dossier Solr installé est appelé &lt;solr-install>.
 
 ### Configuration de Solr pour AEM Communities {#configure-solr-for-aem-communities}
 
 Pour configurer une collection Solr pour MSRP à des fins de démonstration, deux décisions doivent être prises (pour plus de détails, cliquez sur les liens vers la documentation principale) :
 
-1. Exécutez Solr en mode autonome ou [SolrCloud ](msrp.md#solrcloudmode).
-1. Installez [standard](msrp.md#installingstandardmls) ou [recherche avancée](msrp.md#installingadvancedmls) multilingue (MLS).
+1. Exécutez Solr en mode autonome ou [Mode SolrCloud](msrp.md#solrcloudmode).
+1. Installer [standard](msrp.md#installingstandardmls) ou [advanced](msrp.md#installingadvancedmls) recherche multilingue (MLS).
 
 ### Solr autonome {#standalone-solr}
 
-La méthode d’exécution de Solr peut varier en fonction de la version et du mode d’installation. Le [guide de référence Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) est la documentation faisant autorité.
+La méthode d’exécution de Solr peut varier en fonction de la version et du mode d’installation. Le [Guide de référence Solr](https://archive.apache.org/dist/lucene/solr/ref-guide/) est la documentation faisant autorité.
 
 Pour plus de simplicité, à l’aide de la version 4.10, démarrez Solr en mode autonome :
 
@@ -130,7 +130,7 @@ Cela lancera un serveur HTTP Solr en utilisant le port par défaut 8983. Vous po
 
 >[!NOTE]
 >
->Si la console Solr n’est pas disponible, vérifiez les journaux sous &lt;solrinstall>/example/logs. Vérifiez si SOLR tente de se lier à un nom d’hôte spécifique qui ne peut pas être résolu (par exemple : &quot;user-macbook-pro&quot;).
+>Si la console Solr n’est pas disponible, vérifiez les journaux sous &lt;solrinstall>/exemple/logs. Vérifiez si SOLR tente de se lier à un nom d’hôte spécifique qui ne peut pas être résolu (par exemple : &quot;user-macbook-pro&quot;).
 Si tel est le cas, mettez à jour le fichier etc/hosts avec une nouvelle entrée pour ce nom d’hôte (par exemple, 127.0.0.1 user-macbook-pro) et Solr démarrera correctement.
 
 ### SolrCloud {#solrcloud}
@@ -145,32 +145,32 @@ Lancez les instances d’AEM de création et de publication, si nécessaire.
 
 Si AEM était en cours d’exécution avant le démarrage de MongoDB, les instances AEM doivent être redémarrées.
 
-Suivez les instructions de la page de documentation principale : [MSRP - MongoDB Common Store](msrp.md)
+Suivez les instructions de la page de documentation principale : [MSRP - Magasin commun MongoDB](msrp.md)
 
 ## Test {#test}
 
 Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l’instance de publication et affichez-le sur l’instance d’auteur, ainsi que le contenu créé par l’utilisateur dans MongoDB et Solr :
 
-1. Sur l’instance de publication, accédez à la page [Guide des composants de la communauté](http://localhost:4503/content/community-components/en/comments.html) et sélectionnez le composant Commentaires .
+1. Sur l’instance de publication, accédez à la [Guide des composants de communauté](http://localhost:4503/content/community-components/en/comments.html) et sélectionnez le composant Commentaires .
 1. Connectez-vous pour publier un commentaire :
-1. Saisissez du texte dans la zone de saisie du texte du commentaire, puis cliquez sur **[!UICONTROL Publier]**
+1. Saisissez du texte dans la zone de saisie de texte de commentaire, puis cliquez sur **[!UICONTROL Post]**
 
    ![post-commentaire](assets/post-comment.png)
 
-1. Consultez simplement le commentaire sur l’ [instance d’auteur](http://localhost:4502/content/community-components/en/comments.html) (probablement toujours connecté en tant qu’administrateur/administrateur).
+1. Consultez simplement le commentaire sur la [instance d’auteur](http://localhost:4502/content/community-components/en/comments.html) (probablement toujours connecté en tant qu’administrateur/administrateur).
 
    ![view-comment](assets/view-comment.png)
 
    Remarque : Bien qu’il existe des noeuds JCR sous *asipath* sur l’auteur, ils sont destinés à la structure SCF. Le contenu généré par l’utilisateur réel n’est pas dans JCR, mais dans MongoDB.
 
-1. Affichez le contenu généré par l’utilisateur dans mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Contenu]**
+1. Afficher le contenu généré par l’utilisateur dans mongodb **[!UICONTROL Communautés]** > **[!UICONTROL Collections]** > **[!UICONTROL Contenu]**
 
    ![ugc-content](assets/ugc-content.png)
 
 1. Affichez le contenu généré par l’utilisateur dans Solr :
 
    * Accédez au tableau de bord Solr : [http://localhost:8983/solr/](http://localhost:8983/solr/).
-   * Utilisateur `core selector` à sélectionner `collection1`.
+   * Utilisateur `core selector` pour sélectionner `collection1`.
    * Sélectionner `Query`.
    * Sélectionner `Execute Query`.
 
@@ -184,9 +184,9 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
 1. Vérifiez que MSRP a été configuré comme fournisseur par défaut :
 
-   * Sur toutes les instances d’AEM de création et de publication, consultez à nouveau la [console Configuration de stockage](srp-config.md) ou vérifiez le référentiel AEM :
+   * Sur toutes les instances d’AEM de création et de publication, consultez à nouveau la [Console de configuration de stockage](srp-config.md) ou vérifiez le référentiel AEM :
 
-   * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) ne contient pas de noeud [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc), cela signifie que le fournisseur de stockage est JSRP.
+   * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) ne contient pas d’objet [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur de stockage est JSRP.
    * Si le noeud srpc existe et contient le noeud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
 
 1. Assurez-vous que AEM a été redémarré une fois que MSRP a été sélectionné.

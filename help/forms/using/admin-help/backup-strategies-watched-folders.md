@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1092'
+workflow-type: tm+mt
+source-wordcount: '1090'
 ht-degree: 100%
 
 ---
@@ -116,7 +116,7 @@ Le texte suivant décrit la manipulation des fichiers à chacun des temps défin
 
 **T2 :** l’opération de service déplace le fichier1 dans la scène dossier stage pour la manipulation.
 
-**T3 :** l’opération de service déplace le fichier2 dans le dossier stage pour la manipulation. Elle place les résultats du fichier1 dans le dossier output et déplace le fichier1 dans le dossier preserve.
+**T3 :** l’opération de service déplace le fichier2 dans la scène dossier stage pour la manipulation. Elle place les résultats du fichier1 dans le dossier output et déplace le fichier1 dans le dossier preserve.
 
 **T4 :** l’opération de service déplace le fichier3 dans le dossier stage pour la manipulation. Elle place les résultats du fichier2 dans le dossier output, et déplace le fichier2 dans le dossier preserve.
 

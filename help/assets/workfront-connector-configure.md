@@ -4,7 +4,7 @@ description: Configuration de  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 96%
@@ -130,14 +130,14 @@ Cette étape du workflow permet à l’utilisateur de mapper une propriété à 
    * Une propriété AEM. Cette référence doit être relative à la payload du workflow.
    * Une valeur nommée. Ils doivent être entourés de crochets.
    * Une concaténation des 3 éléments ci-dessus. Spécifiez-la à l’aide de `{+}`.
-   * Modification des 3 éléments ci-dessus en entourant la valeur avec `{replace(<value>,"old-char","new-char")}`.
+   * Modification des 3 éléments ci-dessus en entourant la valeur avec `{replace(<value>,”old-char”,”new-char”)}`.
 
 * Voici quelques exemples :
 
    * `status="INP"`
    * `DE:Asset Type=jcr:content/metadata/assetType`
    * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+   * `URL=”https://my-aem-author/assets.html”{+}{path}`
 
 ![Configurer la propriété de mappage](/help/assets/assets/wf-map-property-config.png)
 

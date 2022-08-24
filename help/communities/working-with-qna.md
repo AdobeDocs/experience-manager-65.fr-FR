@@ -1,8 +1,8 @@
 ---
 title: Fonction Forum Q&R
-seo-title: Fonction Forum Q&R
+seo-title: Q&A Forum Feature
 description: Ajout de la fonction Forum Q&R à une page
-seo-description: Ajout de la fonction Forum Q&R à une page
+seo-description: Adding the QnA forum feature to a page
 uuid: e0d95009-0d04-4fa7-8d05-5948c4e37f08
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1368'
 ht-degree: 19%
 
 ---
 
 # Fonction Forum Q&amp;R{#q-a-forum-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La fonction Forum Q&amp;R (questions et réponses) offre aux membres de la communauté un espace où poser leurs questions et y répondre. Il permet aux membres de :
 
@@ -35,21 +35,21 @@ La fonction Forum Q&amp;R (questions et réponses) offre aux membres de la commu
 La documentation décrit :
 
 * Ajout de la fonction Forum Q&amp;R à un site AEM.
-* Paramètres de configuration du composant `QnA`.
+* Paramètres de configuration de la variable `QnA`composant.
 
 ## Ajout d’un forum Q&amp;R à une page {#adding-a-q-a-forum-to-a-page}
 
-Pour ajouter un composant `QnA` à une page en mode création, utilisez l’explorateur de composants pour localiser `Communities / QnA` et faites-le glisser sur une page où le forum Q&amp;R doit apparaître.
+Pour ajouter une `QnA` sur une page en mode création, utilisez l’explorateur de composants pour accéder à `Communities / QnA` et faites-le glisser sur une page où le forum Q&amp;R doit apparaître.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client requises](/help/communities/qna-essentials.md#essentials-for-client-side) sont incluses, voici comment le composant `QnA` apparaît :
+Lorsque la variable [bibliothèques côté client requises](/help/communities/qna-essentials.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `QnA` Le composant apparaît :
 
 ![qna-component](assets/qna-component.png)
 
 ### Configuration de Q&amp;R {#configuring-qna}
 
-Sélectionnez le composant `QnA` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `QnA` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -93,7 +93,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser le balisage**
 
-   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir l’onglet **Champ de balise** ). La valeur par défaut est désélectionnée.
+   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir **Champ de balise** ). La valeur par défaut est désélectionnée.
 
 * **Autoriser les transferts de fichiers**
 
@@ -101,7 +101,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser abonnement**
 
-   Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. La valeur par défaut est désélectionnée.
+   Si cette case est cochée, incluez la fonction suivante pour les publications de forum, ce qui permet aux membres d’être [notify](/help/communities/notifications.md) de nouvelles publications. La valeur par défaut est désélectionnée.
 
 * **Autoriser l’épinglage**
 
@@ -109,15 +109,15 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](/help/communities/subscriptions.md)). Nécessite que l’option Autoriser le suivi soit cochée et que l’adresse [email soit ](/help/communities/email.md) configurée. La valeur par défaut est désélectionnée.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Requiert que l’option Autoriser le suivi soit cochée et [email configuré](/help/communities/email.md). La valeur par défaut est désélectionnée.
 
 * **Taille maximale du fichier**
 
-   Convient uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Convient uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que** ** tous les types de fichiers soient autorisés.
+   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne sont pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que** ** tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -148,11 +148,11 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
    Si cette case est cochée, la première réponse affichée est une réponse sélectionnée. La valeur par défaut est désélectionnée.
 * **Afficher les badges**
 
-   Si cette case est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’entrée de blog d’un membre. La valeur par défaut est désélectionnée.
+   Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;entrée de blog d&#39;un membre. La valeur par défaut est désélectionnée.
 
 * **Autoriser le contenu proposé**
 
-   si cette case est cochée, l’idée peut être identifiée en tant que [contenu présenté](/help/communities/featured.md). La valeur par défaut est désélectionnée.
+   si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est désélectionnée.
 
 * **Activer la mention**
 
@@ -168,7 +168,7 @@ Sous l’onglet **Paramètres**, spécifiez les paramètres pour les sujets (que
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous l’onglet **Modération d’utilisateur** , indiquez comment les sujets publiés (questions) et les réponses (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous , **Modération d’utilisateur** , indiquez comment gérer les sujets publiés (questions) et les réponses (contenu généré par l’utilisateur). Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 * **Refuser les réponses**
 
@@ -178,8 +178,8 @@ Sous l’onglet **Modération d’utilisateur** , indiquez comment les sujets pu
 
    Si cette case est cochée, les membres modérateurs autorisés peuvent fermer une question (rubrique) pour apporter d’autres modifications et réponses, puis rouvrir une question. La valeur par défaut est désélectionnée.
 
-* **Déplacer les**
-rubriques Si cette option est cochée, les modérateurs côté publication peuvent déplacer les questions. La valeur par défaut est désélectionnée.
+* **Déplacer les rubriques**
+Si cette case est cochée, les modérateurs côté publication peuvent déplacer les questions. La valeur par défaut est désélectionnée.
 
 * **Marquer les publications**
 
@@ -203,11 +203,11 @@ rubriques Si cette option est cochée, les modérateurs côté publication peuve
 
 #### Onglet Champ de balise {#tag-field-tab}
 
-Sous l’onglet **Champ de balise** , les balises qui peuvent être appliquées, si elles sont autorisées sous l’onglet **Paramètres**, sont limitées en fonction des espaces de noms choisis.
+Sous , **Champ de balise** , les balises qui peuvent être appliquées, le cas échéant, sous l’onglet **Paramètres** sont limités en fonction des espaces de noms sélectionnés.
 
 * **Espaces de noms autorisés**
 
-   Convient si `Allow Tagging` est coché sous l’onglet **Paramètres**. Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous **Paramètres** . Les balises qui peuvent être appliquées sont limitées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (espace de noms par défaut) et &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestions**
 
@@ -215,7 +215,7 @@ Sous l’onglet **Champ de balise** , les balises qui peuvent être appliquées,
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet **Paramètres de tri**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
+Sous , **Paramètres de tri** , indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
 * **Trier par**
 
@@ -227,17 +227,17 @@ Sous l’onglet **Paramètres de tri**, indiquez comment les commentaires publi�
 
 * **Sélectionner les options de temps pour le tri Analytics**
 
-   Déposez pour sélectionner l’une des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
+   Menu déroulant pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
 ### Identification des réponses {#identifying-answers}
 
-Une réponse peut être indiquée comme réponse correcte ou utile à l&#39;aide du bouton `Select Answer`. Une fois qu&#39;une question est marquée comme &quot;A répondre&quot;, une autre réponse ne peut pas être sélectionnée tant que la première n&#39;a pas été désélectionnée à l&#39;aide du bouton `Unmark Chosen Answer`.
+Une réponse peut être indiquée comme réponse correcte ou utile à l’aide de la variable `Select Answer` bouton . Une fois qu&#39;une question est marquée comme ayant reçu une réponse, une autre réponse ne peut pas être sélectionnée tant que la première question n&#39;a pas été désélectionnée à l&#39;aide de la variable `Unmark Chosen Answer` bouton .
 
-Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide du bouton `Unmark Chosen Answer`.
+Une fois sélectionnée comme réponse viable, elle peut être désélectionnée à l’aide de la variable `Unmark Chosen Answer` bouton .
 
-Une fois qu’une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered` s’affiche en regard du sujet de la question sur la page principale Q&amp;R.
+Une fois qu&#39;une réponse est sélectionnée comme réponse viable, une indication que la question a été `Answered` s’affiche en regard de la rubrique de question sur la page Q&amp;R principale.
 
 #### Modérateurs et administrateurs {#moderators-and-administrators}
 
@@ -260,7 +260,7 @@ Les visiteurs qui ne sont pas connectés peuvent uniquement lire les questions e
 
 ## Informations supplémentaires {#additional-information}
 
-Vous trouverez plus d’informations sur la page [Notions fondamentales sur la qualité de l’expérience](/help/communities/qna-essentials.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales sur la qualité de vie](/help/communities/qna-essentials.md) pour les développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 

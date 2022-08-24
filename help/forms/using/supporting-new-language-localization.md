@@ -13,7 +13,7 @@ feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Pour ajouter un nouveau paramètre régional lors de l’exécution des formulai
 
 1. [Ajouter des paramètres régionaux au service GuideLocalizationService](../../forms/using/supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
 
-1. [Ajouter la bibliothèque XFA cliente pour des paramètres régionaux](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
+1. [Ajouter une bibliothèque XFA cliente pour des paramètres régionaux](../../forms/using/supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
 
 1. [Ajouter la bibliothèque cliente de formulaires adaptatifs pour un paramètre régional](../../forms/using/supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
 1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](../../forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)

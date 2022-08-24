@@ -1,8 +1,8 @@
 ---
 title: Développement d’applications avec l’interface de ligne de commande PhoneGap
-seo-title: Développement d’applications avec l’interface de ligne de commande PhoneGap
+seo-title: Developing Apps with PhoneGap CLI
 description: Consultez cette page pour en savoir plus sur le développement d’applications avec l’interface de ligne de commande PhoneGap.
-seo-description: Consultez cette page pour en savoir plus sur le développement d’applications avec l’interface de ligne de commande PhoneGap.
+seo-description: Follow this page to learn about developing apps with PhoneGap CLI.
 uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '712'
-ht-degree: 4%
+source-wordcount: '696'
+ht-degree: 5%
 
 ---
 
@@ -25,23 +25,23 @@ ht-degree: 4%
 
 En tant que développeur, vous pouvez à tout moment exécuter votre application sur un appareil ou dans un émulateur, à condition d’avoir configuré votre environnement de développement.
 
-Pour exécuter les exemples suivants, vous aurez besoin d’un système exécutant OSx (Mac) avec Xcode, ou d’un système Mac/Win/Linux avec le SDK Android installé.
+Pour exécuter les exemples suivants, vous aurez besoin d’un système exécutant OSx (Mac) avec Xcode ou d’un système Mac/Win/Linux avec le SDK Android installé.
 
 ## Bootstrap de votre environnement de développement {#bootstrap-your-development-environment}
 
 [Configuration de l’interface de ligne de commande PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
-Pour iOS : Pour développer pour iPhone et iPad, vous avez besoin de l’IDE Xcode d’Apple.
+Pour iOS : Pour développer pour iPhone et iPad, vous avez besoin d’Apple Xcode IDE.
 
-* Téléchargez-le gratuitement [ici](https://developer.apple.com/xcode/downloads/).
+* Téléchargez-le gratuitement [here](https://developer.apple.com/xcode/downloads/).
 * [Guide de la plateforme PhoneGap iOS](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
-Pour Android : Pour développer pour iPhone et iPad, vous avez besoin de l’IDE Android Studio de Google.
+Pour Android : Pour développer pour iPhone et iPad, vous avez besoin de Google Android Studio IDE.
 
-* Téléchargez-le gratuitement [ici](https://developer.android.com/sdk/index.html).
+* Téléchargez-le gratuitement [here](https://developer.android.com/sdk/index.html).
 * [Guide de la plateforme PhoneGap Android](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
-## Téléchargez la source {#download-the-source}
+## Téléchargement de la source {#download-the-source}
 
 Une fois que vous avez correctement redémarré votre environnement de développement, téléchargez la source à partir de la mosaïque AEM App Build :
 
@@ -63,7 +63,7 @@ Une fois que vous avez correctement redémarré votre environnement de développ
 * Cliquez sur Télécharger et enregistrez le fichier ZIP sur votre ordinateur.
 * Extrayez le fichier zip téléchargé dans votre espace de travail.
 
-## Créer et charger l’application (à partir de la source) {#build-and-load-the-app-from-source}
+## Création et chargement de l’application (à partir de la source) {#build-and-load-the-app-from-source}
 
 L’interface de ligne de commande de PhoneGap peut créer un projet de plateforme, compiler la source et déployer l’application dans une seule commande.
 
@@ -95,14 +95,13 @@ phonegap run ios
 >1. L’émulateur ouvre l’exécution de votre application PhoneGap nouvellement créée, indiquant &quot;Prêt pour l’appareil&quot; si le pont JavaScript vers natif est opérationnel.
 
 >
->
-Cela vous permet de vérifier que votre environnement de développement de l’interface de ligne de commande PhoneGap est opérationnel correctement.
+>Cela vous permet de vérifier que votre environnement de développement de l’interface de ligne de commande PhoneGap est opérationnel correctement.
 
 ## Débogage des scripts JavaScript avec Safari et débogage IOS {#debug-javascripts-with-safari-and-ios-debug}
 
 Vous pouvez déboguer les scripts JavaScript de votre application à l’aide des outils de développement de Safari, comme vous le feriez avec une application web.
 
-## Activer les outils de développement Safari {#enable-safari-developer-tools}
+## Activation des outils de développement Safari {#enable-safari-developer-tools}
 
 Pour activer les outils de développement :
 
@@ -140,7 +139,7 @@ phonegap run <platform> --emulator
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
-## Déboguer JavaScript avec l’Inspecteur Web de Safari {#debug-javascript-with-safari-s-web-inspector}
+## Débogage de JavaScript avec l’Inspecteur Web de Safari {#debug-javascript-with-safari-s-web-inspector}
 
 Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lorsque vous interagissez avec votre émulateur ou appareil, l’exécution de votre application s’arrête à ces points d’arrêt. Vous pouvez parcourir l’exécution et inspecter les valeurs des variables.
 
@@ -159,6 +158,6 @@ Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lo
 >
 >Pour afficher les valeurs des variables, dans la méthode actuelle, pointez avec la souris.
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
-Une fois que vous avez appris à propos du développement d’applications avec l’interface de ligne de commande PhoneGap, voir [Accès aux fonctionnalités de périphérique](/help/mobile/phonegap-access-device-features.md).
+Une fois que vous avez appris à propos du développement d’applications avec l’interface de ligne de commande de PhoneGap, voir [Accès aux fonctionnalités du périphérique](/help/mobile/phonegap-access-device-features.md).

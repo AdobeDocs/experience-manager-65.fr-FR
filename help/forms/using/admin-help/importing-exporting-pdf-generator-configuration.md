@@ -11,10 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Le fichier de configuration contient les informations de conversion de PDF Gener
 
 >[!NOTE]
 >
->vous ne pouvez pas modifier le paramètre de délai d’expiration de PDF Generator en important un fichier native2pdfconfig.xml personnalisé. Le paramètre de délai d’expiration dans ce fichier est donné à titre purement indicatif et affiche le paramètre actuel dans PDF Generator. Pour modifier le paramètre de délai d’expiration, voir &quot;Définition des paramètres de performances du générateur de PDF&quot; dans [Installation et déploiement d’AEM forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63_fr).
+>vous ne pouvez pas modifier le paramètre de délai d’expiration de PDF Generator en important un fichier native2pdfconfig.xml personnalisé. Le paramètre de délai d’expiration dans ce fichier est donné à titre purement indicatif et affiche le paramètre actuel dans PDF Generator. Pour le modifier, consultez la section Définition des paramètres de performance de PDF Generator dans [Installation et déploiement d’AEM forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63_fr).
 
 ## Exportation du fichier de configuration {#export-your-current-configuration-file}
 

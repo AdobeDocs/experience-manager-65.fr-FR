@@ -13,7 +13,7 @@ discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1874'
 ht-degree: 100%
 
@@ -104,13 +104,13 @@ Pour plus d’informations sur l’emplacement de ces fichiers JAR, consultez la
 **Pour ajouter les fichiers JAR requis à votre projet :**
 
 1. Dans lʼexplorateur de projets, cliquez avec le bouton droit sur le projet `FragmentsWebApplication` et sélectionnez **Propriétés**.
-1. Cliquez sur **Chemin dʼaccès de la génération Java**, puis sélectionnez lʼonglet **Bibliothèques**.
+1. Cliquez sur le **Chemin d’accès création Java**, puis sur l’onglet **Bibliothèques**.
 1. Cliquez sur le bouton **Ajouter des fichiers JAR externes** et recherchez les fichiers JAR à inclure.
 
 **Pour ajouter une servlet Java au projet :**
 
 1. Dans lʼexplorateur de projets, cliquez avec le bouton droit sur le projet `FragmentsWebApplication` et sélectionnez **Nouveau** > **Autre**.
-1. Développez le dossier **Web** et sélectionnez **Servlet**, puis cliquez sur **Suivant**.
+1. Développez le dossier **Web**, sélectionnez **Servlet**, puis cliquez sur **Suivant**.
 1. Dans la boîte de dialogue Créer une servlet, saisissez `RenderFormFragment` comme nom de servlet, puis cliquez sur **Terminer**.
 
 **Pour ajouter une page HTML à votre projet :**
@@ -149,8 +149,8 @@ Pour restituer un formulaire reposant sur les fragments à l’aide de l’API d
 1. Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Créez un objet `FormsServiceClient` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory`.
 1. Créez un objet `URLSpec` qui stocke les valeurs URI en utilisant son constructeur.
-1. Appelez la méthode `setApplicationWebRoot` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui représente la racine web de l’application.
-1. Appelez la méthode `setContentRootURI` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur de l’URI de la racine du contenu. Assurez-vous que la conception de formulaire et les fragments sont situés dans lʼURI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel AEM Forms, spécifiez `repository://`.
+1. Appelez la méthode `setApplicationWebRoot` de l’objet `URLSpec` et transmettez une valeur de chaîne qui représente la racine web de l’application.
+1. Appelez la méthode `setContentRootURI` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URI de la racine du contenu. Assurez-vous que la conception de formulaire et les fragments sont situés dans lʼURI racine du contenu. Dans le cas contraire, le service Forms renvoie une exception. Pour référencer le référentiel AEM Forms, spécifiez `repository://`.
 1. Appelez la méthode `setTargetURL` de lʼobjet `URLSpec` et transmettez une valeur de chaîne qui spécifie la valeur URL cible vers laquelle les données du formulaire sont affichées. Si vous définissez l’URL cible dans la conception de formulaire, vous pouvez transmettre une chaîne vide. Vous pouvez également spécifier l’URL vers laquelle un formulaire est envoyé afin dʼeffectuer des calculs.
 1. Appelez la méthode `renderPDFForm` de lʼobjet `FormsServiceClient` et transmettez les valeurs suivantes :
 
@@ -158,17 +158,17 @@ Pour restituer un formulaire reposant sur les fragments à l’aide de l’API d
    * Un objet `com.adobe.idp.Document` qui contient les données à fusionner avec le formulaire (créé à l’étape 2).
    * Un objet `PDFFormRenderSpec` qui stocke les options d’exécution. Pour plus d’informations, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Un objet `URLSpec` qui contient les valeurs URI requises par le service Forms pour effectuer le rendu d’un formulaire basé sur des fragments.
-   * Un objet `java.util.HashMap` qui stocke les pièces jointes des fichiers. Ce paramètre est facultatif et vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
    La méthode `renderPDFForm` renvoie un objet `FormsResult` qui contient un flux de données de formulaire qui doit être écrit dans le navigateur web du client.
 
 1. Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-1. Obtenez le type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
+1. Accédez au type de contenu de l’objet `com.adobe.idp.Document` en appelant sa méthode `getContentType`.
 1. Définissez le type de contenu de l’objet `javax.servlet.http.HttpServletResponse` en appelant sa méthode `setContentType` et en transmettant le type de contenu de l’objet `com.adobe.idp.Document`.
-1. Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données du formulaire dans le navigateur web du client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
-1. Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-1. Créez un tableau d’octets et remplissez-le avec le flux de données du formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
-1. Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+1. Créez un objet `javax.servlet.ServletOutputStream` utilisé pour écrire le flux de données de formulaire dans le navigateur web client en appelant la méthode `getOutputStream` de l’objet `javax.servlet.http.HttpServletResponse`.
+1. Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de lʼobjet `com.adobe.idp.Document`.
+1. Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de lʼobjet `InputStream` et en transmettant le tableau d’octets comme argument.
+1. Appelez la méthode `write` de lʼobjet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
 
 L’exemple de code suivant représente le servlet Java qui appelle le service Forms et effectue le rendu d’un formulaire basé sur des fragments.
 

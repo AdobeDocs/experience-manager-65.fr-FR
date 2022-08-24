@@ -1,8 +1,8 @@
 ---
 title: Premières étapes pour les auteurs
-seo-title: Premières étapes pour les auteurs
+seo-title: First Steps for Authors
 description: Aperçu des tâches principales que vous exécuterez lorsque vous commencerez à créer du contenu avec AEM.
-seo-description: Aperçu des tâches principales que vous exécuterez lorsque vous commencerez à créer du contenu avec AEM.
+seo-description: An overview of the main tasks that you will be using when starting to author content with AEM
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '403'
 ht-degree: 93%
 
 ---
@@ -46,7 +46,7 @@ Avant de procéder à l’édition, vous devez [créer une page](/help/sites-aut
 
 Pour la plupart des opérations (l’édition par exemple), vous devez [ouvrir une page](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
-### Modification d’une page  {#editing-a-page}
+### Modification d’une page {#editing-a-page}
 
 Si votre instance comprend déjà des pages ou si vous venez d’en créer une, vous pouvez [modifier une page](/help/sites-authoring/editing-content.md) en effectuant l’une des opérations suivantes :
 
@@ -63,7 +63,7 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 
 Dès que vous avez fini de modifier la page, vous pouvez [la publier (ou l’activer)](/help/sites-authoring/publishing-pages.md#main-pars-title-10) afin que les visiteurs de votre site web puissent y accéder :
 
-## Autres opérations  {#further-actions}
+## Autres opérations {#further-actions}
 
 Une fois les étapes de base accomplies, de nombreuses autres opérations de création sont à votre disposition.
 
@@ -75,7 +75,7 @@ Il est parfois plus facile de [copier une page](/help/sites-authoring/managing-p
 
 La procédure à appliquer pour [déplacer et renommer des pages](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) est sensiblement la même.
 
-### Annulation de publication d’une page  {#unpublishing-a-page}
+### Annulation de publication d’une page {#unpublishing-a-page}
 
 Pour faire en sorte que du contenu précédemment publié (ou activé) ne soit plus disponible sur votre site web public, vous devez [annuler la publication de la page (la désactiver)](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
@@ -83,14 +83,14 @@ Pour faire en sorte que du contenu précédemment publié (ou activé) ne soit p
 
 Si vous n’avez plus besoin d’une page, vous pouvez [la supprimer](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Configuration des propriétés de page  {#setting-the-page-properties}
+### Configuration des propriétés de page {#setting-the-page-properties}
 
 Chaque [page est dotée de propriétés](/help/sites-authoring/editing-page-properties.md) que vous pouvez définir afin de déterminer les différents aspects de son fonctionnement. Vous pouvez le faire dans l’une ou l’autre des interfaces utilisateur.
 
-### Création d’une version d’une page  {#creating-a-version-of-a-page}
+### Création d’une version d’une page {#creating-a-version-of-a-page}
 
 Vous pouvez [créer une version d’une page](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version), puis [revenir à une version donnée](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version) si nécessaire.
 
-## Informations supplémentaires  {#more-information}
+## Informations supplémentaires {#more-information}
 
 Pour plus d’informations sur la création, consultez la section [Création de page](/help/sites-authoring/page-authoring.md).

@@ -12,7 +12,7 @@ discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2169'
 ht-degree: 100%
 
@@ -142,7 +142,7 @@ Lorsque vous changez une stratégie, la nouvelle est appliquée comme suit :
 
 ## Recherche d’un document {#search-for-a-document}
 
-Vous pouvez rechercher des documents dans la page Documents en combinant des plages de dates et des critères de recherche disponibles dans la liste. Ces critères incluent le nom du document, le nom de la stratégie ou tous les documents.
+Vous pouvez rechercher des documents dans la page Documents en combinant des périodes et des critères de recherche disponibles dans la liste. Ces critères incluent le nom du document, le nom de la stratégie ou tous les documents.
 
 Des options de recherche supplémentaires sont disponibles uniquement pour les administrateurs :
 

@@ -27,7 +27,7 @@ Le site web ci-dessous décrit simplement HTTP/2 et les avantages qu’il procur
 
 ## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ?  {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Performance improvement varies widely based on factors such as your website&#39;s code, how you use Dynamic Media, the customer&#39;s device, screen, and location.
+L’amélioration des performances varie considérablement en fonction de facteurs tels que le code de votre site web, la manière dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du client.
 
 Les tests d’Adobe ont donné les résultats suivants :
 
@@ -70,7 +70,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
 
 ## Quand puis-je espérer passer à HTTP/2 ?  {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Requests are processed in the order that they are received by Adobe Customer Support.
+Les demandes sont traitées dans l’ordre dans lequel elles sont reçues par le service clientèle d’Adobe.
 
 >[!NOTE]
 >

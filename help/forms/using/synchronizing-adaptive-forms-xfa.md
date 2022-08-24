@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ AEM Forms permet de conserver les champs des formulaires adaptatifs synchronisé
 
 Dans l’environnement de création d’AEM Forms, vous pouvez faire glisser des champs d’un formulaire XFA (à gauche) jusqu’à un formulaire adaptatif (à droite).
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour utiliser les informations fournies dans cet article, il est recommandé de disposer de connaissances dans les domaines suivants :
 

@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '1778'
 ht-degree: 77%

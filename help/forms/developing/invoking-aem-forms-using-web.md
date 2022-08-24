@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
 workflow-type: tm+mt
 source-wordcount: '9905'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -1072,7 +1072,7 @@ Après avoir créé une référence web, vous pouvez utiliser les deux types de 
 
 >[!NOTE]
 >
->Avant de créer une référence web au service Forms, veillez à référencer Web Services Enhancements 2.0 dans votre projet. (Voir &quot;Installation des améliorations des services Web 2.0&quot;.)
+>Avant de créer une référence web au service Forms, veillez à référencer Web Services Enhancements 2.0 dans votre projet. (Voir « Installer Web Services Enhancements 2.0 ».)
 
 **Référencer la bibliothèque WSE**
 

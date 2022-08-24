@@ -1,8 +1,8 @@
 ---
 title: Configuration de la messagerie
-seo-title: Configuration de la messagerie
+seo-title: Configuring Messaging
 description: Messagerie des communautés
-seo-description: Messagerie des communautés
+seo-description: Communities messaging
 uuid: 159dcf9d-7948-4a3d-9f51-a5b4d03e172b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '822'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 La fonction de messagerie d’AEM Communities permet aux visiteurs (membres) du site connectés d’envoyer entre eux des messages accessibles lorsqu’ils sont connectés au site.
 
-La messagerie est activée pour un site communautaire en cochant une case pendant la [création du site communautaire](/help/communities/sites-console.md).
+La messagerie est activée pour un site de communauté en cochant une case pendant [création de site communautaire](/help/communities/sites-console.md).
 
 Cette page contient des informations sur la configuration par défaut et les réglages possibles.
 
@@ -33,19 +33,19 @@ Pour plus d’informations à l’intention des développeurs, voir [Notions fon
 
 ## Service des opérations de messagerie {#messaging-operations-service}
 
-La configuration [Service des opérations de messagerie AEM Communities](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point de terminaison qui gère les requêtes liées à la messagerie, les dossiers que le service doit utiliser pour le stockage des messages, et si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
+La configuration [Service des opérations de messagerie AEM Communities](https://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identifie le point de terminaison qui gère les requêtes liées aux messages, les dossiers que le service doit utiliser pour le stockage des messages, et si les messages peuvent inclure des pièces jointes, quels types de fichiers sont autorisés.
 
-Pour les sites de communauté créés à l’aide de `Communities Sites console`, il existe déjà une instance du service, la boîte de réception étant définie sur `/mail/inbox`.
+Pour les sites de communauté créés à l’aide de la variable `Communities Sites console`, il existe déjà une instance du service, la boîte de réception étant définie sur `/mail/inbox`.
 
 ### Service des opérations de messagerie communautaire {#community-messaging-operations-service}
 
-Comme illustré ci-dessous, il existe une configuration du service pour les sites créés avec l’[assistant de création de site](/help/communities/sites-console.md). La configuration peut être visualisée ou modifiée en sélectionnant l’icône en forme de crayon en regard de la configuration.
+Comme illustré ci-dessous, il existe une configuration du service pour les sites créés avec le [assistant de création de site](/help/communities/sites-console.md). La configuration peut être visualisée ou modifiée en sélectionnant l’icône en forme de crayon en regard de la configuration.
 
 ![messaging-operations](assets/messaging-operations.png)
 
 ### Ajouter une nouvelle configuration {#add-new-configuration}
 
-Pour ajouter une nouvelle configuration, cliquez sur l’icône &quot;**+**&quot; en regard du nom du service :
+Pour ajouter une nouvelle configuration, sélectionnez le plus &quot;**+** Icône &#39; en regard du nom du service :
 
 * **Liste autorisée des champs de message**
 
@@ -57,11 +57,11 @@ Pour ajouter une nouvelle configuration, cliquez sur l’icône &quot;**+**&quot
 
 * **Limite du nombre de messages**
 
-   Nombre total de messages autorisés par utilisateur. La valeur -1 indique qu’un nombre illimité de messages est autorisé, sous réserve de la limite de taille de la zone de message. La valeur par défaut est *10000* (10k).
+   Nombre total de messages autorisés par utilisateur. La valeur -1 indique qu’un nombre illimité de messages est autorisé, sous réserve de la limite de taille de la zone de message. La valeur par défaut est *10 000* (10k).
 
 * **Notifier l’échec de la diffusion**
 
-   Si cette case est cochée, avertissez l’expéditeur si la diffusion du message échoue à certains destinataires. La valeur par défaut est *cochée*.
+   Si cette case est cochée, avertissez l’expéditeur si la diffusion du message échoue à certains destinataires. La valeur par défaut est *vérifié*.
 
 * **Identifiant de l&#39;expéditeur de la diffusion en échec**
 
@@ -85,21 +85,21 @@ Pour ajouter une nouvelle configuration, cliquez sur l’icône &quot;**+**&quot
 
 * **Chemin de la boîte de réception**
 
-   (*Obligatoire*) Chemin d’accès, relatif au noeud de l’utilisateur (/home/users/*nom d’utilisateur*), à utiliser pour le dossier `inbox`. Le chemin ne doit PAS se terminer par une barre oblique (/) à la fin. La valeur par défaut est */mail/inbox*.
+   (*Obligatoire*) Chemin d’accès, relatif au noeud de l’utilisateur (/home/users/*username*), à utiliser pour le `inbox` dossier. Le chemin ne doit PAS se terminer par une barre oblique (/) à la fin. La valeur par défaut est */mail/inbox*.
 
 * **Chemin des éléments envoyés**
 
-   (*Obligatoire*) Chemin d’accès, relatif au noeud de l’utilisateur (/home/users/*nom d’utilisateur*), à utiliser pour le dossier `sent items`. Le chemin ne doit PAS se terminer par une barre oblique (/) à la fin. La valeur par défaut est */mail/stitems* .
+   (*Obligatoire*) Chemin d’accès, relatif au noeud de l’utilisateur (/home/users/*username*), à utiliser pour le `sent items` dossier. Le chemin ne doit PAS se terminer par une barre oblique (/) à la fin. La valeur par défaut est */mail/stitems* .
 
 * **Pièces jointes de support**
 
-   Si cette case est cochée, les utilisateurs peuvent ajouter des pièces jointes à leurs messages. La valeur par défaut est *cochée*.
+   Si cette case est cochée, les utilisateurs peuvent ajouter des pièces jointes à leurs messages. La valeur par défaut est *vérifié*.
 
 * **Activation de la messagerie de groupe**
 
-   Si cette option est sélectionnée, les utilisateurs enregistrés peuvent envoyer des messages en bloc à un groupe de membres. La valeur par défaut est *désélectionnée*.
+   Si cette option est sélectionnée, les utilisateurs enregistrés peuvent envoyer des messages en bloc à un groupe de membres. La valeur par défaut est *désélectionné*.
 
-* **Nombre maximal. de tous les destinataires**
+* **Nombre maximal. des destinataires totaux**
 
    Si la messagerie du groupe est activée, indiquez le nombre maximal de destinataires auxquels le message du groupe peut être envoyé à la fois. La valeur par défaut est *100*.
 
@@ -113,31 +113,31 @@ Pour ajouter une nouvelle configuration, cliquez sur l’icône &quot;**+**&quot
 
 * **Liste bloquée de type de pièce jointe**
 
-   Liste bloquée des extensions de nom de fichier, précédée de &#39;**.**&#39;, qui sera rejeté par le système. Si elle n’est pas placée sur la liste bloquée, l’extension est autorisée. Les extensions peuvent être ajoutées ou supprimées à l’aide des icônes &#39;**+**&#39; et &#39;**-**&#39;.
+   Liste bloquée des extensions de nom de fichier, précédée de &quot;**.**&#39;, qui sera rejeté par le système. Si elle n’est pas placée sur la liste bloquée, l’extension est autorisée. Les extensions peuvent être ajoutées ou supprimées à l’aide du &quot;&quot;**+**&#39; et &#39;**-**&quot;.
 
 * **Types de pièces jointes autorisés**
 
-   **(*Action requise*)** liste autorisée des extensions de nom de fichier, à l’opposé de la liste bloquée. Pour autoriser toutes les extensions de nom de fichier, à l’exception de celles placées sur la liste bloquée, utilisez l’icône &#39;**-**&#39; pour supprimer l’entrée vide unique.
+   **(*Action requise*)** Liste autorisée des extensions de nom de fichier, à l’opposé de la liste bloquée. Pour autoriser toutes les extensions de nom de fichier, à l’exception de celles placées sur la liste bloquée, utilisez le signe &quot;&quot;.**-** icône &quot;&quot; pour supprimer l’entrée vide unique.
 
 * **Sélecteur de service**
 
-   (*Obligatoire*) Chemin absolu (point de terminaison) par lequel le service est appelé (une ressource virtuelle). La racine du chemin choisi doit être incluse dans le paramètre de configuration *Chemins d’exécution* de la configuration OSGi [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), par exemple `/bin/`, `/apps/` et `/services/`. Pour sélectionner cette configuration pour la fonction de messagerie d’un site, ce point de terminaison est fourni comme valeur **`Service selector`** pour la balise `Message List and Compose Message components` (voir [Fonctionnalité du message](/help/communities/configure-messaging.md)).
+   (*Obligatoire*) Chemin absolu (point de terminaison) par lequel le service est appelé (une ressource virtuelle). La racine du chemin choisi doit être incluse dans la variable *Chemins d’exécution* paramètre de configuration de la configuration OSGi [ `Apache Sling Servlet/Script Resolver and Error Handler`](https://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), par exemple `/bin/`, `/apps/`, et `/services/`. Pour sélectionner cette configuration pour la fonction de messagerie d’un site, ce point de terminaison est fourni en tant que **`Service selector`** de la variable `Message List and Compose Message components` (voir [Fonctionnalité du message](/help/communities/configure-messaging.md)).
 
    La valeur par défaut est */bin/messaging* .
 
 * **Liste autorisée de champ**
 
-   Utilisez la **Liste autorisée Champs du message**.
+   Utilisation **Liste autorisée des champs de message**.
 
 >[!CAUTION]
 >
->Chaque fois qu’une configuration `Messaging Operations Service` est ouverte pour modification, si `allowedAttachmentTypes.name` a été supprimé, une entrée vide est ajoutée pour rendre la propriété configurable. Une seule entrée vide désactive efficacement les pièces jointes.
+>Chaque fois qu’une `Messaging Operations Service` la configuration est ouverte pour modification, si `allowedAttachmentTypes.name` a été supprimé, une entrée vide est de nouveau ajoutée pour rendre la propriété configurable. Une seule entrée vide désactive efficacement les pièces jointes.
 >
->Pour autoriser toutes les extensions de nom de fichier, à l’exception de celles placées sur la liste bloquée, utilisez l’icône &quot;**-**&quot; pour (à nouveau) supprimer l’entrée vide unique avant de cliquer sur **Enregistrer**.
+>Pour autoriser toutes les extensions de nom de fichier, à l’exception de celles placées sur la liste bloquée, utilisez le signe &quot;&quot;.**-** L’icône &quot; pour (à nouveau) supprimer l’entrée vide unique avant de cliquer sur **Enregistrer**.
 
 ## Messagerie de groupe {#group-messaging}
 
-Pour permettre aux utilisateurs enregistrés d’envoyer des messages directs en bloc aux groupes d’utilisateurs, veillez à **activer la messagerie de groupe** dans les deux instances suivantes de la configuration **Services d’opération de messagerie** :
+Pour permettre aux utilisateurs enregistrés d’envoyer des messages directs en masse aux groupes d’utilisateurs, veillez à **Activation de la messagerie de groupe** dans les deux instances suivantes de **Services des opérations de messagerie** configuration :
 
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-console`
 * `com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl~social-messaging`
@@ -152,7 +152,7 @@ Pour permettre aux utilisateurs enregistrés d’envoyer des messages directs en
 
 ## Résolution des problèmes {#troubleshooting}
 
-Pour résoudre les problèmes, une méthode consiste à activer [le débogage des messages dans le journal.](/help/sites-administering/troubleshooting.md)
+Pour résoudre les problèmes, une méthode consiste à activer [débogage des messages dans le journal.](/help/sites-administering/troubleshooting.md)
 
 Voir aussi [Enregistreurs et rédacteurs pour les services individuels](/help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
 

@@ -13,7 +13,7 @@ discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 100%
 
@@ -109,7 +109,7 @@ Pour calculer les données d’un formulaire, effectuez les tâches suivantes :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Création d’un objet API client Forms**
+**Créer un objet API client Forms**
 
 Avant d’effectuer par programmation une opération d’API client de service Forms, vous devez créer un client de service Forms. Si vous utilisez l’API Java, créez un objet `FormsServiceClient`. Si vous utilisez l’API du service Web Forms, créez un objet `FormsServiceService`.
 
@@ -151,7 +151,7 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
    * Pour récupérer des données de formulaire contenant un script de calcul, créez un objet `com.adobe.idp.Document` à l’aide de son constructeur et en appelant la méthode `getInputStream` de l’objet `javax.servlet.http.HttpServletResponse` à partir du constructeur.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
-      * L’objet `com.adobe.idp.Document` contenant les données de formulaire.
+      * Objet `com.adobe.idp.Document` contenant les données de formulaire.
       * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Vous devez spécifier le type de contenu à gérer en définissant une ou plusieurs valeurs pour la variable d’environnement `CONTENT_TYPE`. Par exemple, pour gérer les données XML et PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
       * Une valeur de chaîne qui spécifie la valeur d’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objet `RenderOptionsSpec` stockant les options d’exécution.
@@ -166,8 +166,8 @@ Calculer les données de formulaire à l’aide de l’API Forms (Java) :
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
    * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de l’objet `com.adobe.idp.Document`.
-   * Créez un tableau d’octets et remplissez-le avec le flux de données du formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets comme argument.
-   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données du formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de l’objet `InputStream` et en transmettant le tableau d’octets en tant qu’argument.
+   * Appelez la méthode `write` de l’objet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir aussi**
 
@@ -195,8 +195,8 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
    * Créez un objet `java.io.ByteArrayOutputStream` en utilisant son constructeur et en transmettant la longueur de l’objet `java.io.InputStream`.
    * Copiez le contenu de l’objet `java.io.InputStream` dans l’objet `java.io.ByteArrayOutputStream`.
    * Créez un tableau d’octets en appelant la méthode `toByteArray` de l’objet `java.io.ByteArrayOutputStream`.
-   * Remplissez l’objet `BLOB` en appelant sa méthode `setBinaryData` et en transmettant le tableau d’octets comme argument.
-   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui la spécifie.
+   * Renseignez l’objet `BLOB` en appelant sa méthode `setBinaryData` et en transmettant le tableau d’octets comme argument.
+   * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui spécifie la valeur du paramètre régional.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsServiceClient` et transmettez les valeurs suivantes :
 
       * Objet `BLOB` contenant les données du formulaire.
@@ -204,11 +204,11 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
       * Valeur de chaîne spécifiant la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Objet `RenderOptionsSpec` stockant les options d’exécution. Pour plus d’informations, .
       * Objet `BLOBHolder` vide qui est rempli par la méthode.
-      * Objet `javax.xml.rpc.holders.StringHolder` vide qui est rempli par la méthode.
-      * Objet `BLOBHolder` vide qui est rempli par la méthode.
-      * Objet `BLOBHolder` vide qui est rempli par la méthode.
-      * Objet `javax.xml.rpc.holders.ShortHolder` vide qui est rempli par la méthode.
-      * Objet `MyArrayOf_xsd_anyTypeHolder` vide qui est rempli par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
+      * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode.
+      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+      * Un objet `BLOBHolder` vide qui est renseigné par la méthode.
+      * Un objet `javax.xml.rpc.holders.ShortHolder` vide qui est renseigné par la méthode.
+      * Un objet `MyArrayOf_xsd_anyTypeHolder` vide qui est renseigné par la méthode. Ce paramètre est utilisé pour stocker les pièces jointes envoyées avec le formulaire.
       * Objet `FormsResultHolder` vide qui est rempli par la méthode avec le formulaire envoyé.
 
       La méthode `processFormSubmission` remplit le paramètre `FormsResultHolder` avec les résultats de l’envoi du formulaire. La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
@@ -220,8 +220,8 @@ Calculez les données du formulaire en utilisant l’API Forms (Web Service) :
 
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données du formulaire au navigateur web du client.
    * Créez un objet `BLOB` qui contient les données du formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
-   * Créez un tableau d’octets et remplissez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de lʼobjet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de lʼobjet `javax.servlet.http.HttpServletResponse` afin dʼenvoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un tableau d’octets et remplissez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Consultez également la section**
 [Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

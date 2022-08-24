@@ -5,7 +5,7 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 73%
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ Consultez l’article [Modification d’un SPA externe dans AEM](spa-edit-extern
 
    ![Entrypoints](assets/asset-manifest-entrypoints.png)
 
-* L’application doit pouvoir être initialisée dans une `<div id="root"></div>` sous l’élément de corps . Si une autre balise est attendue pour l’application, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy qui possède une balise `sling:resourceSuperType="spa-project-core/components/remotepage`.
+* L’application doit pouvoir être initialisée dans une `<div id="root"></div>` sous l’élément de corps. Si une balise différente est attendue pour l’application, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy avec `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Restrictions {#limitations}
 

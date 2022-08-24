@@ -23,7 +23,7 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 1. Indiquez l’URL du cloud.
 1. Configurez la connexion au service Search&amp;Promote.
 1. Ajouter les composants Search&amp;Promote au sidekick.
-1. Utilisez les composants pour créer le contenu. (Voir [Ajout de fonctionnalités de Search &amp; Promote à une page web](/help/sites-authoring/search-and-promote.md).)
+1. Utilisez les composants pour créer le contenu. (Voir [Ajout de fonctions de Search &amp; Promote à une page web](/help/sites-authoring/search-and-promote.md).)
 1. Ajout de bannières à vos pages. Les images de bannière sont sensibles aux données Search&amp;Promote.
 1. Générez un plan du site pour l’utilisation du service Search&amp;Promote.
 
@@ -31,18 +31,16 @@ Pour appeler le service Adobe Search&amp;Promote depuis votre site web, effectue
 >
 >Si vous utilisez Search &amp; Promote avec une configuration de proxy personnalisée, vous devez configurer les deux configurations de proxy client HTTP, car certaines fonctionnalités d’Adobe Experience Manager utilisent les API 3.x et d’autres les API 4.x :
 >
->* La version 3.x est configurée avec [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
->* La version 4.x est configurée avec [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
+>* 3.x est configuré avec [https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>* 4.x est configuré avec [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-
 
 
 ## Modification de l’URL du service Search &amp; Promote {#changing-the-search-promote-service-url}
 
 L’URL par défaut configurée pour le service Search &amp; Promote est `https://searchandpromote.omniture.com/px/`. Pour utiliser un autre service, utilisez la console OSGi afin de spécifier une autre URL.
 
-1. Ouvrez la console OSGi et sélectionnez l’onglet **[!UICONTROL Configuration]** . ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
+1. Ouvrez la console OSGi et sélectionnez l’option **[!UICONTROL Configuration]** . ([https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr))
 1. Sélectionnez l’élément Configuration de la Search &amp; Promote Day CQ .
 1. Saisissez l’URL dans la zone URI du serveur distant, puis sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -50,7 +48,7 @@ L’URL par défaut configurée pour le service Search &amp; Promote est `https:
 
 Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages web puissent interagir avec le service. Pour vous connecter, vous avez besoin du numéro d’identification et de compte du membre de votre compte Search&amp;Promote.
 
-1. Dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > sélectionnez **[!UICONTROL Cloud Services]**.
+1. Dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > sélectionner **[!UICONTROL Cloud Services]**.
 
    Si vous vous trouvez sur un ordinateur local, l’URL du tableau de bord ressemble à ce qui suit :
 
@@ -64,21 +62,21 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
 
    ![](assets/chlimage_1-59.png)
 
-1. Saisissez un **[!UICONTROL Titre]** reconnaissable par les auteurs de pages, et saisissez un **[!UICONTROL Nom]** unique.
+1. Saisissez un **[!UICONTROL Titre]** qui est reconnaissable par les auteurs de pages, et saisissez une valeur unique **[!UICONTROL Nom]**.
 1. Sélectionnez **[!UICONTROL Créer]**.
 
    De plus, la configuration nouvellement créée apparaît sous **Configurations disponibles** dans l’élément de liste Adobe Search&amp;Promote **Tableau de bord Services cloud**.
 
    ![](assets/chlimage_1-60.png)
 
-1. Dans la boîte de dialogue **[!UICONTROL Modifier le composant]**, ajoutez les éléments suivants aux champs.
+1. Dans le **[!UICONTROL Modifier le composant]** , ajoutez les éléments suivants aux champs.
 
    * **ID de membre**
    * **Numéro de compte**
 
    >[!NOTE]
    >
-   >Pour obtenir ces informations **vous-même,** vous devez d’abord vous connecter à
+   >Pour obtenir ces informations **vous-même,** tout d’abord, vous devez vous connecter.
    >
    >[https://searchandpromote.omniture.com/center/](https://searchandpromote.omniture.com/center/)
    >
@@ -90,11 +88,11 @@ Configurez une ou plusieurs connexions à Search&amp;Promote afin que vos pages 
    >
    >**Où :**
    >
-   >    * **** XXXXXXXXcorrespond à votre** ID de membre**
-   >    * **** spYYYYYYYcorrespond à votre numéro de  **compte**
+   >    * **XXXXXX** correspond à votre** ID de membre**
+   >    * **spYYYYYY** correspond à votre **Numéro de compte**
 
 
-1. Sélectionnez **[!UICONTROL Se connecter à Search &amp; Promote]**.
+1. Sélectionner **[!UICONTROL Connexion à Search &amp; Promote]**.
 
    Lorsque le message de réussite de la connexion s’affiche, sélectionnez **[!UICONTROL OK]**.
 
@@ -108,7 +106,7 @@ Si votre compte Search &amp; Promote se trouve en Asie ou en Europe, vous devez 
 
 **Pour configurer le centre de données :**
 
-1. Accédez à la console web à l’adresse `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
+1. Accédez à la console Web à l’adresse `https://localhost:4502/system/console/configMgr/com.day.cq.searchpromote.impl.SearchPromoteServiceImpl`
 
    ![](assets/chlimage_1-61.png)
 
@@ -124,7 +122,7 @@ Si votre compte Search &amp; Promote se trouve en Asie ou en Europe, vous devez 
 
 En mode création, modifiez un composant **par** pour autoriser les composants Search&amp;Promote dans le sidekick. (Voir la documentation [Composants](/help/sites-developing/components.md#addinganewcomponenttotheparagraphsystemdesignmode) pour en savoir plus.)
 
-Pour plus d’informations sur l’utilisation des composants, voir [Ajout de fonctionnalités de Search &amp; Promote à une page web](/help/sites-authoring/search-and-promote.md).
+Pour plus d’informations sur l’utilisation des composants, voir [Ajout de fonctions de Search &amp; Promote à une page web](/help/sites-authoring/search-and-promote.md).)
 
 ## Spécification du service de Search &amp; Promote utilisé par vos pages {#specifying-the-search-promote-service-that-your-pages-use}
 
@@ -142,9 +140,9 @@ Lorsque vous configurez les propriétés Search&amp;Promote d’une page, toutes
 
    ![](assets/sandpinheritpadlock.png)
 
-1. Sélectionnez **[!UICONTROL Ajouter un service]**.
-1. Sélectionnez **[!UICONTROL Adobe de Search &amp; Promote]**, puis **[!UICONTROL OK]**.
-1. Sélectionnez la configuration de la connexion pour votre compte Search &amp; Promote, puis cliquez sur **OK**.
+1. Sélectionner **[!UICONTROL Ajouter un service]**.
+1. Sélectionner **[!UICONTROL Search &amp; Promote Adobe]**, puis sélectionnez **[!UICONTROL OK]**.
+1. Sélectionnez la configuration de la connexion pour votre compte Search &amp; Promote, puis sélectionnez **OK**.
 
 ## Flux de produit {#product-feed}
 
@@ -155,4 +153,4 @@ L&#39;intégration de Search &amp; Promote permet d&#39;effectuer les opération
 * Utilisez la fonction de contrôle à distance de Search &amp; Promote si vous souhaitez effectuer des demandes à la demande ou planifiées du flux de produits.
 * Génération de flux pour différents comptes de Search &amp; Promote, configurés en tant que configurations de services cloud.
 
-Pour plus d’informations, voir [Flux de produits](/help/sites-administering/product-feed.md).
+Pour plus d’informations, voir [Flux de produit](/help/sites-administering/product-feed.md).

@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '4332'
-ht-degree: 84%
+ht-degree: 85%
 
 ---
 
@@ -140,7 +140,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
    <td><strong>Zoom vertical</strong></td>
    <td><p>La visionneuse Zoom vertical permet d’optimiser l’expérience de visionnage d’une imagerie de produit afin d’offrir aux utilisateurs la meilleure représentation d’un produit. L’emplacement vertical des échantillons présente les avantages suivants :</p>
     <ul>
-     <li>Vérifie que les échantillons sont "au-dessus du pli".<br/> Avec des échantillons horizontaux, en fonction de la taille de l’écran de l’utilisateur, ils ne sont pas visibles tant que l’utilisateur n’a pas fait défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
+     <li>Il garantit que les échantillons se trouvent en tête de page.<br/> Avec des échantillons horizontaux, en fonction de la taille de l’écran de l’utilisateur, ils ne sont pas visibles tant que l’utilisateur n’a pas fait défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
      <li>Il optimise la taille de l’image principale.<br />Avec les échantillons horizontaux, il est nécessaire de réserver de la place sur la page afin de vous assurer qu’ils sont visibles. Ce positionnement a réduit la taille de l’image principale. Toutefois, avec une disposition verticale des échantillons, vous n’avez pas besoin d’allouer cet espace. Ainsi, vous pouvez agrandir la taille de l’image principale.</li>
     </ul> </td>
   </tr>
@@ -560,7 +560,7 @@ Voir [Activation ou désactivation des paramètres de visionneuse prédéfinis](
 
 Voir aussi [Prévisualisation de ressources](/help/assets/previewing-assets.md).
 
-**Pour publier des paramètres de visionneuse prédéfinis :**
+**Pour publier des paramètres prédéfinis de visionneuse :**
 
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 1. Sélectionnez un ou plusieurs paramètres de visionneuse prédéfinis que vous souhaitez publier.

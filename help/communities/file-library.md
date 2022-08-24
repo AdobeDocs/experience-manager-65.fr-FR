@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Bibliothèque de fichiers
-seo-title: Fonctionnalité Bibliothèque de fichiers
+seo-title: File Library Feature
 description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
-seo-description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
+seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,39 +13,39 @@ docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 35%
+source-wordcount: '735'
+ht-degree: 36%
 
 ---
 
 # Fonctionnalité Bibliothèque de fichiers{#file-library-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La fonctionnalité Bibliothèque de fichiers fournit un espace où les visiteurs du site connectés (membres de la communauté) peuvent transférer, gérer et télécharger des fichiers sur le site de la communauté.
 
 Cette section de la documentation décrit : :
 
 * Ajout de la fonction Bibliothèque de fichiers à un site AEM.
-* Paramètres de configuration du composant `File Library`.
+* Paramètres de configuration de la variable `File Library` composant.
 
 ### Ajout d’une bibliothèque de fichiers à une page {#adding-a-file-library-to-a-page}
 
-Pour ajouter un composant `File Library` à une page en mode création, localisez le composant :
+Pour ajouter une `File Library` pour accéder à une page en mode création, recherchez le composant :
 
 * `Communities / File Library`
 
 et faites-le glisser sur la page.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, voici comment le composant `File Library` apparaîtra :
+Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `File Library` apparaît :
 
 ![file-library1](assets/file-library1.png)
 
 ### Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Sélectionnez le composant `File Library` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `File Library` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -101,7 +101,7 @@ Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour l
 
 * **Autoriser abonnement**
 
-   Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction suivante pour les articles de blog, ce qui permet aux membres d’être [notify](/help/communities/notifications.md) de nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Activer la mention**
 
@@ -113,7 +113,7 @@ Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour l
 
 * **Modèle des mentions de l’IU**
 
-   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple : ~{{familyName}{{givenName}}.
+   Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple ~{{familyName}}{{givenName}}.
 
 * **Autoriser les réponses à thème**
 
@@ -167,7 +167,7 @@ Définir par défaut
 
 ### Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur la bibliothèque de fichiers](/help/communities/essentials-file-library.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales sur la bibliothèque de fichiers](/help/communities/essentials-file-library.md) pour les développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 

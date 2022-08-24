@@ -1,8 +1,8 @@
 ---
 title: Conversion de lancements
-seo-title: Conversion de lancements
+seo-title: Promoting Launches
 description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
-seo-description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '756'
 ht-degree: 99%
 
 ---
@@ -47,10 +47,8 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 >Il s’agit de l’action manuelle consistant à convertir les pages de lancement lorsqu’il existe un seul niveau de lancement. Voir :
 >
 >* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
->* [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
-
+>* [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
 >
-
 
 
 Vous pouvez convertir des lancements à partir de la console de **sites** ou de la console de **lancements** :
@@ -107,7 +105,7 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 >
 >Cette option est disponible pour les lancements simples et [imbriqués](#promoting-a-nested-launch).
 
-## Promotion d’un lancement imbriqué  {#promoting-a-nested-launch}
+## Promotion d’un lancement imbriqué {#promoting-a-nested-launch}
 
 Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (production).
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Définissez les paramètres suivants pour configurer un point de fin TaskManager
 
 **Nom :** (obligatoire) identifie le point de terminaison. Le nom est affiché dans l’affichage carte de Workspace. N’incluez pas de caractère « &lt; », car le nom affiché dans Workspace serait tronqué. Si vous saisissez une URL en tant que nom de point de fin, assurez-vous que celle-ci est conforme aux normes syntaxiques en la matière précisées dans le document RFC1738.
 
-**Description :** description du point de terminaison. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
+**Description :** fournit une description du point de terminaison. N’incluez pas de caractère « &lt; », car la description affichée dans Workspace serait tronquée.
 
 **Instructions :** instructions destinées à l’utilisateur qui démarre ce workflow.
 

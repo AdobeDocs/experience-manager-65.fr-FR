@@ -27,7 +27,7 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 * Profil utilisateur AEM
 * Services web RESTful
 * Services web SOAP
-* Services OData
+* Services OData 
 
 L’intégration de données prend en charge l’authentification OAuth2.0, de base ou par clé API par défaut, et permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
 
@@ -190,7 +190,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
 >[!NOTE]
 >
-> Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
+> Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
 >Pour obtenir un guide pas à pas sur la configuration de Microsoft Dynamics 365, en ligne ou sur site, voir [Configuration OData de Microsoft Dynamics](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.

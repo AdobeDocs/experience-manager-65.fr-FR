@@ -129,7 +129,7 @@ ht-degree: 91%
    + [Intégration à Adobe Campaign Standard](campaignstandard.md)
    + [Notification de fin de prise en charge de la visionneuse Flash](flash-viewers-eol.md)
    + [Flux de produit](product-feed.md)
-   + [Intégration à la gestion dynamique des balises](dtm.md)
+   + [Intégration à Adobe Dynamic Tag Management](dtm.md)
    + [Souscription à Adobe Analytics et Adobe Target](opt-in.md)
    + [Portails et portlets AEM](aem-as-portal.md)
    + [Intégration à Dynamic Media Classic (Scene7)](scene7.md)

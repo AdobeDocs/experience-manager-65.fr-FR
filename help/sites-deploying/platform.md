@@ -1,8 +1,8 @@
 ---
 title: Introduction à la plateforme AEM
-seo-title: Introduction à la plateforme AEM
+seo-title: Introduction to the AEM Platform
 description: Cet article donne une vue d’ensemble de la plateforme AEM et de ses composants les plus importants.
-seo-description: Cet article donne une vue d’ensemble de la plateforme AEM et de ses composants les plus importants.
+seo-description: This article provides a general overview of the AEM platform and its most important components.
 uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '769'
 ht-degree: 94%
 
 ---
@@ -55,7 +55,7 @@ Le cœur Oak ajoute plusieurs niveaux au niveau de stockage :
 * Recherche et indexation
 * Observation
 
-### Oak JCR  {#oak-jcr}
+### Oak JCR {#oak-jcr}
 
 Le principal objectif de Oak JCR est de transformer la sémantique de JCR en opérations d’arborescence. Il est aussi chargé de :
 
@@ -70,7 +70,7 @@ Le niveau de stockage Oak fournit un niveau d’abstraction pour le stockage de 
 
 Actuellement, il existe deux implémentations de stockage disponibles dans AEM6 : **Stockage tar** et **Stockage MongoDB**.
 
-### Stockage tar {#tar-storage}
+### Stockage Tar {#tar-storage}
 
 Le stockage Tar utilise des fichiers tar. Il stocke le contenu comme divers types d’enregistrements dans des segments plus volumineux. Les journaux sont utilisés pour effectuer le suivi du dernier état du référentiel. 
 
@@ -90,7 +90,7 @@ Les enregistrements associés comme un noeud et ses enfants immédiats sont habi
 
 Le formatage des enregistrements est optimisé pour la taille de sorte à réduire les coûts E/S et pour accueillir le plus de contenu possible dans les caches.
 
-### Stockage Mongo  {#mongo-storage}
+### Stockage Mongo {#mongo-storage}
 
 Le stockage de MongoDB exploite MongoDB pour la fragmentation et la mise en cluster. L’arborescence du référentiel est conservée dans une base de données MongoDB où chaque nœud est un document distinct.
 
@@ -120,7 +120,7 @@ Une configuration en cluster AEM typique avec un stockage MongoDB :
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
-## Qu&#39;est-ce qui diffère de Jackrabbit 2 ? {#what-is-different-from-jackrabbit}
+## Qu’est-ce qui diffère de Jackrabbit 2 ? {#what-is-different-from-jackrabbit}
 
 Étant donné qu’Oak est conçu pour être rétrocompatible avec le standard de JCR 1.0, il n’y a quasiment aucune modification au niveau de l’utilisateur. Toutefois, il existe des différences perceptibles à prendre en compte lors de la configuration d’un Oak basé sur l’installation AEM :
 

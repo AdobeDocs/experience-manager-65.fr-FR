@@ -59,7 +59,7 @@ Les configurations par défaut disponibles sont les suivantes :
 
    Cette configuration définit les options disponibles lors de la recherche de produits dans l’explorateur de ressources (lors de la modification d’une page).
 
-* **Éditeur de page (Dynamic Media Classic  [anciennement Scene7] search)** :
+* **Éditeur de page (Dynamic Media Classic) [anciennement Scene7] search)**:
 
    Cette configuration définit les options disponibles lors de la recherche de ressources Scene7 dans l’explorateur de ressources (lors de la modification d’une page).
 
@@ -135,7 +135,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date </td>
+   <td>Date  </td>
    <td>Recherche de ressources à l’aide d’un curseur en fonction d’une propriété de date.</td>
    <td>
     <ul>
@@ -145,7 +145,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date Plage </td>
+   <td>Date  Plage </td>
    <td>Recherchez les ressources créées pendant une période spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -225,7 +225,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin </td>
+   <td>Chemin  </td>
    <td>Recherchez des ressources situées sous un chemin d’accès spécifique.</td>
    <td>
     <ul>
@@ -260,7 +260,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Plage Options </td>
+   <td>Options d’étendue </td>
    <td>Prédicat de recherche spécifique pour les ressources et identique au prédicat de curseur commun. Il reste disponible en raison de problèmes de rétrocompatibilité.</td>
    <td>
     <ul>
@@ -330,17 +330,13 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 >
 >* Les prédicats de recherche courants sont définis dans :
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
-   >
-   >
-   >
-
-* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
+>
+>
+>* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Ils sont obsolètes et disponibles uniquement à des fins de compatibilité descendante.
-
 >
->
-Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
+>Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
 
 ### Paramètres de prédicat {#predicate-settings}
 
@@ -396,7 +392,7 @@ Si cette case est cochée, les options sont présentées sous forme de cases à 
 * **Nom des propriétés de publication et Live Copy**
 Libellés des cases à cocher Publication et Live Copy pour le prédicat spécifique aux sites.
 
-* &amp;ast; sur les libellés de champ de l’onglet **Paramètres** , cela signifie que les champs sont obligatoires. Si rien n’est indiqué, un message d’erreur s’affiche.
+* &amp;ast; sur les libellés de champ dans la variable **Paramètres** tab signifie que les champs sont obligatoires et, si rien n’est indiqué, un message d’erreur s’affiche.
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 
@@ -480,7 +476,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
 1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
 
-### Ajout de prédicats d’options  {#adding-options-predicates}
+### Ajout de prédicats d’options {#adding-options-predicates}
 
 Les prédicats d’options (options, propriété d’options) permettent de configurer un élément à rechercher. Ils servent généralement à rechercher un élément directement sous la page, par exemple, une propriété sur le nœud de page.
 

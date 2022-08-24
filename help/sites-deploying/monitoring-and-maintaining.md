@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 83383d46a4200eb3d21deee15c71032314694860
 workflow-type: tm+mt
 source-wordcount: '5866'
 ht-degree: 81%
@@ -695,7 +695,7 @@ Ce journal dispose d’une ligne par requête ou réponse :
 
 * Pour les réponses, la ligne contient :
 
-   * le code d’état (200 signifie &quot;succès&quot;, 404 signifie &quot;page introuvable&quot;
+   * le code d’état (200 signifie « réussite », 404 signifie « page non trouvée »
    * le type MIME
    * le temps de réponse
 

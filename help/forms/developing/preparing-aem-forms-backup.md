@@ -12,7 +12,7 @@ discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2520'
 ht-degree: 100%
 
@@ -59,11 +59,11 @@ Vous passez en mode de sauvegarde pour permettre les sauvegardes à chaud d’un
 * La durée d’exécution de la procédure de sauvegarde.
 * Un indicateur qui signale si le mode de sauvegarde en continu doit être activé, ce qui n’est utile que si vous effectuez des sauvegardes en continu.
 
-Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui seront utilisées après avoir activé le mode de sauvegarde sur le serveur Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, reportez-vous à l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
+Avant d’écrire des applications pour passer en mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde qui seront utilisées après avoir activé le mode de sauvegarde sur le serveur Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, reportez-vous à l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -88,7 +88,7 @@ Pour quitter le mode de sauvegarde par programme, créez un objet client BackupS
 
 **Choisir un libellé unique, déterminer le temps nécessaire à la sauvegarde et décider s’il faut passer en mode de sauvegarde continue**
 
-Avant de passer en mode de sauvegarde, vous devez choisir un libellé unique, déterminer le temps que vous souhaitez allouer à l’exécution de la sauvegarde et décider si vous souhaitez que le serveur Forms reste en mode de sauvegarde. Ces considérations sont importantes pour l’intégration aux procédures de sauvegarde établies par votre organisation. (Voir l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
+Avant de passer en mode de sauvegarde, vous devez choisir un libellé unique, déterminer le temps que vous souhaitez allouer à l’exécution de la sauvegarde et décider si vous souhaitez que le serveur Forms reste en mode de sauvegarde. Ces considérations sont importantes pour l’intégration aux procédures de sauvegarde établies par votre organisation. (Voir l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Activer le mode de sauvegarde**
 
@@ -168,7 +168,7 @@ Pour passer en mode de sauvegarde à l’aide du service web fourni par l’API 
 
    * Une valeur `String` qui spécifie un libellé lisible unique qui identifie la session du mode de sauvegarde. Il est recommandé de ne pas utiliser d’espaces ou de caractères qui ne peuvent pas être codés au format XML.
    * Une valeur `Uint32` spécifiant le nombre de minutes à rester en mode de sauvegarde. Vous pouvez spécifier une valeur comprise entre `1` et `10080` (nombre de minutes dans une semaine). Cette valeur est ignorée lors de l’utilisation du mode de sauvegarde continue.
-   * Une valeur `Boolean` spécifiant si lʼon doit être en mode de sauvegarde continue. Une valeur de `True` indique que lʼon est en mode de sauvegarde continue. En mode de sauvegarde continue, la valeur que vous indiquez pour le nombre de minutes de maintien en mode de sauvegarde est ignorée. Le mode de sauvegarde continue signifie qu’une nouvelle session du mode de sauvegarde est lancée une fois la session en cours terminée.
+   * Une valeur `Boolean` spécifiant si lʼon doit être en mode de sauvegarde continu. Une valeur de `True` indique que lʼon est en mode de sauvegarde continue. En mode de sauvegarde continue, la valeur que vous indiquez pour le nombre de minutes de maintien en mode de sauvegarde est ignorée. Le mode de sauvegarde continue signifie qu’une nouvelle session du mode de sauvegarde est lancée une fois la session en cours terminée.
 
       Une valeur de `False` signifie que le mode de sauvegarde continue n’est pas utilisé et, après avoir quitté le mode de sauvegarde, la purge des fichiers du répertoire de stockage global de documents reprend.
 
@@ -184,11 +184,11 @@ Pour passer en mode de sauvegarde à l’aide du service web fourni par l’API 
 
 Vous devez quitter le mode de sauvegarde afin que le serveur Forms puisse reprendre la purge des fichiers du répertoire de stockage global de documents (GDS) sur le serveur Forms.
 
-Avant d’écrire des demandes pour quitter le mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, consultez la section [Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).
+Avant d’écrire des demandes pour quitter le mode de sauvegarde, il est recommandé de comprendre les procédures de sauvegarde utilisées avec AEM Forms. Pour plus d’informations sur les éléments à prendre en compte lors de l’exécution de sauvegardes pour AEM Forms, consultez la section [Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Backup and Restore, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Sauvegarder et Restaurer, reportez-vous aux [références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -233,7 +233,7 @@ Quittez le mode de sauvegarde à l’aide de l’API du service de sauvegarde et
 
 1. Créer un objet API client BackupService
 
-   Vous utilisez un objet `ServiceClientFactory` et l’objet API client BackupService de manière conjointe.
+   Utilisez un objet `ServiceClientFactory` et l’API cliente BackupService ensemble.
 
    * Créez un objet `ServiceClientFactory` qui contient des propriétés de connexion. (Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
    * Créez un objet `BackupService` en utilisant son constructeur et en transmettant l’objet `ServiceClientFactory` en tant que paramètre. 

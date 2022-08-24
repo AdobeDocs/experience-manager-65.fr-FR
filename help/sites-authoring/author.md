@@ -1,8 +1,8 @@
 ---
-title: 'Création  '
-seo-title: 'Création  '
+title: Création
+seo-title: Authoring
 description: Concepts de création dans AEM
-seo-description: Concepts de création dans AEM
+seo-description: Concepts of authoring in AEM
 uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '538'
 ht-degree: 88%
 
 ---
 
-# Création{#authoring}
+# Création  {#authoring}
 
 ## Concept de création (et de publication) {#concept-of-authoring-and-publishing}
 
@@ -68,7 +68,7 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 
 #### Environnement de publication {#publish-environment}
 
-Une fois prêt, le contenu du site AEM est publié dans l’ **environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
+Une fois prêt, le contenu du site d’AEM est publié sur la page **environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
 Dans le cas d’un site web ordinaire, l’environnement de publication est situé à l’intérieur de la zone DMZ ; en d’autres termes, il est disponible sur Internet, mais il ne bénéficie plus de la protection absolue de votre réseau interne.
 
@@ -80,16 +80,13 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 >
 >* **Publier/Annuler la publication**
    >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
-   >
-   >
-* **Activer/Désactiver**
+>
+>* **Activer/Désactiver**
    >  Ces termes sont synonymes de publication/annulation de la publication.
-   >
-   >
-* **Répliquer/Réplication**
+>
+>* **Répliquer/Réplication**
    >  Il s’agit des termes techniques utilisés pour indiquer le mouvement des données (contenu de page, fichiers, code, commentaires utilisateur, etc.) d’un environnement à un autre. c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
 >
-
 
 
 #### Dispatcher {#dispatcher}

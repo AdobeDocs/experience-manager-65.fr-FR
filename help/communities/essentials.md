@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les composants, les fonctions et les fonctionnalités
-seo-title: Notions fondamentales sur les composants, les fonctions et les fonctionnalités
+seo-title: Component, Function and Feature Essentials
 description: Fonctionnement des sites, modèles et groupes de communautés
-seo-description: Fonctionnement des sites, modèles et groupes de communautés
+seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,16 +12,16 @@ discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 18%
+source-wordcount: '209'
+ht-degree: 19%
 
 ---
 
-# Notions fondamentales sur les composants, les fonctions et les fonctionnalités {#component-function-and-feature-essentials}
+# Notions fondamentales sur les composants, les fonctions et les fonctionnalités  {#component-function-and-feature-essentials}
 
-Les fonctionnalités d’AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au [site de la communauté](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, les [modèles de site communautaire](sites.md), à partir desquels un site communautaire est [créé](sites-console.md), sont conçus pour inclure une fonction de connexion ainsi que des profils utilisateur, des messages, des recherches, de la modération et des traductions.
+Les fonctionnalités AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, [modèles de site de communauté](sites.md), à partir de laquelle un site communautaire est [created](sites-console.md), sont conçues pour inclure une fonction de connexion, ainsi que des profils utilisateur, des messages, des recherches, de la modération et des traductions.
 
-Un site communautaire prend en charge la création de groupes communautaires lorsque les [groupes communautaires fonctionnent](functions.md#groups-function) sont inclus dans le modèle de site communautaire sélectionné.
+Un site communautaire permet aux membres de créer des groupes communautaires lorsque la variable [fonction de groupes communautaires](functions.md#groups-function) est inclus dans le modèle de site de la communauté sélectionné.
 
 Vous trouverez ci-dessous des liens vers des informations essentielles pour les composants, fonctions et fonctionnalités de Communities.
 
@@ -69,10 +69,10 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 
 ## Javadocs {#javadocs}
 
-Les [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version 6.3 d’AEM.
-Les API Communities se trouvent dans les packages `com.adobe.cq.social.*`.
+Le [javadocs en ligne](../../help/sites-developing/reference-materials.md) reflètent les API disponibles dans la version 6.3 d’AEM.
+Les API Communities se trouvent dans `com.adobe.cq.social.*` modules.
 
-Pour chaque [Feature Pack](deploy-communities.md#latestfeaturepack), un jar javadoc est disponible. Pour plus d’informations, voir [Utilisation de Maven pour Communities](maven.md#javadocs).
+Pour chaque [feature pack](deploy-communities.md#latestfeaturepack), un jar javadoc est disponible. Pour plus d’informations, voir [Utilisation de Maven pour Communities](maven.md#javadocs).
 
 ## Informations supplémentaires {#additional-information}
 

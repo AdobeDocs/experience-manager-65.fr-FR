@@ -11,7 +11,7 @@ exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 77%
+ht-degree: 87%
 
 ---
 
@@ -21,8 +21,8 @@ ht-degree: 77%
 
 Dynamic Media offre des expériences de visualisation interactives, notamment des fonctions vidéo, de zoom et de rotation à 360°. Cette fonctionnalité intègre de manière unique les processus de la solution de gestion des ressources numériques Adobe Experience Manager (Assets), afin de simplifier et rationaliser le processus de gestion des campagnes numériques.
 
-L’utilisation de Dynamic Media n’est pas disponible dans l’IU classique. Voir [Utilisation de Dynamic Media,](/help/assets/dynamic-media.md) qui couvre l’interface utilisateur tactile.
+L’utilisation de Dynamic Media n’est pas disponible dans l’IU classique. Consultez la section [Utilisation de Dynamic Media](/help/assets/dynamic-media.md) qui traite de l’interface utilisateur tactile.
 
 >[!NOTE]
 >
->Si vous utilisez Dynamic Media, vous ne pouvez pas utiliser simultanément les téléchargements automatiques disponibles si [intégrez Dynamic Media Classic à Adobe Experience Manager](/help/sites-administering/scene7.md). Voir [Activer Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Par défaut, ce module complémentaire est désactivé.
+>Si vous utilisez Dynamic Media, vous ne pouvez pas utiliser simultanément les téléchargements automatiques, disponibles si [Intégration de Dynamic Media Classic dans Adobe Experience Manager](/help/sites-administering/scene7.md). Voir [Activer Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Par défaut, ce module complémentaire est désactivé.

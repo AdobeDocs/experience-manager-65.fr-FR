@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ Un groupe dynamique contient uniquement des utilisateurs. Il ne peut pas conteni
 
 ### Création automatique des groupes dynamiques à partir des domaines d’adresses électroniques {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Configurer les attributs système avancés.
+1. Dans la console d’administration, cliquez sur Paramètres > User Management > Configuration > Configurer les attributs système avancés.
 1. Activez la case à cocher située sous Création automatique de groupe dynamique.
 1. Indiquez à quel moment User Manager recherchera de nouveaux domaines d’adresses électroniques. Cette recherche doit être postérieure à la synchronisation des domaines, car la création de groupes dynamiques n’est pertinente que lorsque la synchronisation des domaines est terminée.
 

@@ -1,8 +1,8 @@
 ---
 title: Modification de lancements
-seo-title: Modification de lancements
+seo-title: Editing Launches
 description: 'Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages. '
-seo-description: 'Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages. '
+seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
 uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '525'
 ht-degree: 99%
 
 ---
@@ -86,7 +86,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
    >
    >Pour ajouter des pages à un lancement, celles-ci doivent se trouver sous une racine de langue commune (c’est-à-dire, sur un seul site).
 
-## Modification d’une configuration de lancement  {#editing-a-launch-configuration}
+## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 
 Vous pouvez à tout moment modifier les propriétés d’un lancement :
 
@@ -103,9 +103,9 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
 
 1. Effectuez les modifications requises, puis confirmez avec **Enregistrer**.
 
-   Consultez [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
+   Consultez [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour plus d’informations sur l’objectif et l’interaction des champs **Date de lancement** et **Prêt pour la production**.
 
-## Identification du statut de lancement d’une page  {#discovering-the-launch-status-of-a-page}
+## Identification du statut de lancement d’une page {#discovering-the-launch-status-of-a-page}
 
 Le statut s’affiche lorsque vous sélectionnez un lancement spécifique dans l’onglet Références (voir [Lancements dans les références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console)).
 

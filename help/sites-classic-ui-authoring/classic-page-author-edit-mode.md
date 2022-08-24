@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '6133'
-ht-degree: 86%
+ht-degree: 87%
 
 ---
 
@@ -201,8 +201,8 @@ Le composant Graphique permet d’ajouter un histogramme ou un graphique en cour
 
 * **Données**
 
-   * **Données du graphique**
-Entrez vos données de graphique au format CSV ; Le format Valeurs séparées par des virgules utilise des virgules (&quot;,&quot;) comme séparateur de champ.
+   * **Données de graphique**
+Ajoutez vos données de graphique au format CSV ; une virgule (« , ») est utilisée comme séparateur de valeurs.
 
 * **Avancé**
 

@@ -3,12 +3,12 @@ title: Utilisation du module de démonstration pour les statistiques sur les res
 description: Utilisez le module de démonstration pour permettre à Adobe Assets Insights de capturer des données à partir de et de générer des informations pour une page web.
 contentOwner: AG
 role: User, Admin
-feature: Statistiques sur les ressources, rapports sur les ressources
+feature: Asset Insights,Asset Reports
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 53%
+source-wordcount: '160'
+ht-degree: 51%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 53%
 
 ## [!DNL Use Experience Manager Assets] Informations avec un exemple de page web  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configurez les statistiques sur les ressources en suivant les instructions de la section [Configuration des statistiques sur les ressources](configure-asset-insights.md).
+1. Configurez les statistiques sur les ressources en suivant les instructions de la rubrique [Configuration des statistiques sur les ressources](configure-asset-insights.md).
 1. Téléchargez le module d’exemple  Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
 
 [Obtenir le fichier](assets/insightsdemo.zip)

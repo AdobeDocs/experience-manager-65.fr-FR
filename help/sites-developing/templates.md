@@ -1,8 +1,8 @@
 ---
 title: Modèles
-seo-title: Modèles
+seo-title: Templates
 description: Les modèles de sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
-seo-description: Les modèles de sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
+seo-description: Templates are used when creating a page which will be used as the base for the new page
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '963'
 ht-degree: 90%
 
 ---
@@ -62,7 +62,7 @@ Avantages des modèles modifiables :
 
 >[!NOTE]
 >
->Un article de la communauté AEM explique comment développer un site de Experience Manager avec des modèles modifiables. Voir [Création d’un site web Adobe Experience Manager 6.5 à l’aide de modèles modifiables](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>Un article de la communauté AEM est disponible pour expliquer comment développer un site de Experience Manager avec des modèles modifiables. Voir [Création d’un site web Adobe Experience Manager 6.5 à l’aide de modèles modifiables](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
 
 ### Modèles statiques {#static-templates}
 
@@ -80,7 +80,7 @@ Modèles statiques:
 >
 >Depuis AEM version 6.5, l’utilisation des modèles statiques n’est plus considérée comme une bonne pratique. Privilégiez les modèles modifiables à la place.
 >
->[AEM ](modernization-tools.md) les outils de modernisation peuvent vous aider à migrer de modèles statiques à des modèles modifiables.
+>[Modernisation des AEM](modernization-tools.md) Les outils peuvent vous aider à migrer de modèles statiques à des modèles modifiables.
 
 ### Disponibilité des modèles {#template-availability}
 
@@ -91,12 +91,10 @@ Modèles statiques:
 >Par conséquent, Adobe vous recommande de commencer simplement, en définissant :
 >
 >* uniquement la propriété `cq:allowedTemplates` ;
-   >
-   >
-* uniquement sur la racine du site.
 >
+>* uniquement sur la racine du site.
 >
-Pour obtenir un exemple, voir We.Retail : `/content/we-retail/jcr:content`
+>Pour obtenir un exemple, voir We.Retail : `/content/we-retail/jcr:content`
 >
 >Les propriétés `allowedPaths`, `allowedParents` et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d’autres propriétés `cq:allowedTemplates` dans des sous-sections du site si des restrictions supplémentaires des modèles autorisés s’imposent.
 >
@@ -142,4 +140,4 @@ Si vous souhaitez ajouter d’autres contraintes, par exemple concernant la hié
 
 ## Modèles - Fragments de contenu {#templates-content-fragments}
 
-Voir [Modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md) pour plus d’informations.
+Voir [Modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md)pour plus d’informations.

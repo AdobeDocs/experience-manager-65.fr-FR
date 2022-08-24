@@ -1,21 +1,21 @@
 ---
 title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
-seo-title: Utilisation de l’aperçu rapide pour créer des fenêtres contextuelles personnalisées
+seo-title: Use Quickview to create custom pop-ups
 description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
-seo-description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
+seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
-feature: Visionneuses
+feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 66%
+source-wordcount: '1051'
+ht-degree: 70%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 66%
 
 L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner une zone réactive, une miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
 
-L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
+L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
 
 * Image interactive (zones réactives cliquables)
 * Vidéo interactive (miniatures cliquables pendant la lecture vidéo)
@@ -31,7 +31,7 @@ L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynami
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
-**Pour créer des fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide :**
+**Pour créer des fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide :**
 
 1. Créez un aperçu rapide pour une ressource téléchargée.
 
@@ -85,8 +85,8 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Le lecteur utilise un gestionnaire appelé `QuickViewActive`.
 
-   ****
-ExempleSupposons que vous utilisiez l’exemple de code intégré suivant sur votre page web pour une image interactive :
+   **Exemple**
+Supposons que vous utilisiez l’exemple de code intégré suivant sur votre page web pour une image interactive :
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -112,9 +112,9 @@ ExempleSupposons que vous utilisiez l’exemple de code intégré suivant sur vo
    * Visionneuse d’images interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
    * Visionneuse vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
 
-1. Vous devez maintenant configurer le gestionnaire `quickViewActivate` .
+1. Vous devez maintenant configurer la variable `quickViewActivate` gestionnaire.
 
-   Le gestionnaire `quickViewActivate` contrôle l’aperçu rapide dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide et un exemple d’appel de fonction `loadQuickView`.
+   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide et un exemple. `loadQuickView` appel de fonction.
 
    **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
 
@@ -180,7 +180,7 @@ ExempleSupposons que vous utilisiez l’exemple de code intégré suivant sur vo
 
 1. Placez la balise `DIV` de la fenêtre contextuelle dans le corps de la page HTML.
 
-   L’un des éléments est défini avec un ID mis à jour avec la valeur de SKU lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
+   L’un des éléments est défini avec un ID qui est mis à jour avec la valeur de SKU lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
 
    ```xml
    <div id="quickview_div" >
@@ -207,7 +207,7 @@ ExempleSupposons que vous utilisiez l’exemple de code intégré suivant sur vo
 
    Certaines visionneuses, comme la visionneuse de vidéos interactives, prennent en charge l’affichage en mode plein écran. Toutefois, l’utilisation de la fenêtre contextuelle comme décrit dans les étapes précédentes provoque l’affichage de celle-ci derrière la visionneuse en mode plein écran.
 
-   Pour que la fenêtre contextuelle puisse s’afficher dans les modes standard et plein écran, vous devez la joindre au conteneur de la visionneuse. Utilisez une deuxième méthode de gestionnaire, `initComplete`.
+   Pour que la fenêtre contextuelle puisse s’afficher dans les modes standard et plein écran, vous devez la joindre au conteneur de la visionneuse. Utiliser une deuxième méthode de gestionnaire, `initComplete`.
 
    Le gestionnaire `initComplete` est appelé après l’initialisation de la visionneuse.
 
@@ -262,8 +262,8 @@ ExempleSupposons que vous utilisiez l’exemple de code intégré suivant sur vo
 
    `*viewerInstance.*init()`
 
-   ****
-ExempleCet exemple utilise la visionneuse d’images interactives.
+   **Exemple**
+Cet exemple utilise la visionneuse d’images interactives.
 
    `s7interactiveimageviewer.init()`
 

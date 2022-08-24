@@ -19,7 +19,7 @@ ht-degree: 86%
 
 # Prise en charge des jetons encapsulés{#encapsulated-token-support}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Par défaut, AEM utilise le gestionnaire d’authentification des jetons pour authentifier chaque demande. Cependant, pour traiter des demandes d’authentification, le gestionnaire d’authentification des jetons doit avoir accès au référentiel pour chaque demande. Ceci est dû au fait que des cookies sont utilisés pour maintenir l’état d’authentification. Logiquement, l’état doit perdurer dans le référentiel afin de valider les demandes ultérieures. En effet, cela signifie que le mécanisme d’authentification tient compte de tous les détails de l’état de l’activité à laquelle il participe.
 
@@ -58,7 +58,7 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 >
 >* Les sessions persistantes sont activées, ou
 >
->* Les utilisateurs sont déjà créés dans AEM au démarrage de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **create** utilisateurs pendant le processus de synchronisation.
+>* Les utilisateurs sont déjà créés dans AEM au démarrage de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **create** durant le processus de synchronisation.
 
 
 Lors de la configuration du jeton encapsulé, différents éléments doivent être pris en compte :
@@ -100,5 +100,5 @@ Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 Une fois la clé HMAC répliquée, vous pouvez activer le jeton encapsulé à l’aide de la console web :
 
 1. Pointez votre navigateur sur `https://serveraddress:port/system/console/configMgr`
-1. Recherchez une entrée appelée **Adobe Gestionnaire d’authentification de jeton Granite** et cliquez dessus.
+1. Recherchez une entrée appelée **Gestionnaire d’authentification des jetons Adobe Granite** et cliquez dessus.
 1. Dans la fenêtre suivante, cochez la case **Activer la prise en charge des jetons encapsulés** et cliquez sur **Enregistrer**.

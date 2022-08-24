@@ -1,8 +1,8 @@
 ---
 title: Restructuration des référentiels dans AEM 6.5
-seo-title: Restructuration des référentiels dans AEM 6.5
+seo-title: Common Repository Restructuring in AEM 6.5
 description: Découvrez comment effectuer les modifications nécessaires pour migrer vers la nouvelle structure du référentiel dans AEM 6.5 commune à tous les domaines AEM.
-seo-description: Découvrez comment effectuer les modifications nécessaires pour migrer vers la nouvelle structure du référentiel dans AEM 6.5 commune à tous les domaines AEM.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
 uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2693'
 ht-degree: 82%
 
 ---
 
 # Restructuration des référentiels dans AEM 6.5 {#common-repository-restructuring-in-aem}
 
-Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact potentiel sur toutes les solutions. Certaines modifications nécessitent des efforts lors du processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications du référentiel qui peuvent impacter toutes les solutions. Certaines modifications nécessitent des efforts lors du processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
 
 **Avec la mise à niveau vers la version 6.5**
 
@@ -55,16 +55,16 @@ Comme décrit sur la page parent [Restructuration des référentiels dans AEM 6.
 
 ### Configurations ContextHub {#contexthub-6.5}
 
-Depuis AEM 6.4, il n’existe plus de configuration ContextHub par défaut. Par conséquent, au niveau racine du site, une valeur `cq:contextHubPathproperty` doit être définie pour indiquer la configuration à utiliser.
+Depuis AEM 6.4, il n’existe plus de configuration ContextHub par défaut. Par conséquent, au niveau racine du site, une `cq:contextHubPathproperty` doit être défini pour indiquer la configuration à utiliser.
 
 1. Accédez à la racine du site.
 1. Ouvrez les propriétés de la page racine et sélectionnez ensuite l’onglet  Personnalisation.
 1. Dans le champ Chemin d’accès ContextHub, saisissez votre propre chemin d’accès de configuration ContextHub.
 
-En outre, sur la configuration ContextHub, la valeur `sling:resourceType` doit être mise à jour pour être relative et non absolue.
+En outre, sur la configuration ContextHub, la variable `sling:resourceType` doit être mis à jour pour être relatif et non absolu.
 
 1. Ouvrez les propriétés du noeud de configuration ContextHub dans CRX DE Lite, par exemple : `/apps/settings/cloudsettings/legacy/contexthub`
-1. Remplacer `sling:resourceType` de `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` par `granite/contexthub/cloudsettings/components/baseconfiguration`
+1. Modifier `sling:resourceType` de `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` to `granite/contexthub/cloudsettings/components/baseconfiguration`
 
 En d’autres termes, la propriété `sling:resourceType` de la configuration ContextHub doit être relative et non absolue.
 
@@ -90,7 +90,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
       <ol>
        <li>L’éditeur de modèle de workflow étant ouvert, modifiez l’URL du navigateur, puis remplacez le segment de chemin /libs/settings/workflow/models par /etc/workflow/models.
         <ul>
-         <li>Par exemple, modifiez : <em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/models</strong>/dam/update_asset.html</em> à <em>http://localhost:4502/editor.html<strong>/etc/workflow/models</strong>/dam/update_asset.html</em></li>
+         <li>Par exemple, modifiez : <em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/models</strong>/dam/update_asset.html</em> to <em>http://localhost:4502/editor.html<strong>/etc/workflow/models</strong>/dam/update_asset.html</em></li>
         </ul> </li>
       </ol> </li>
      <li>Activez le mode d’édition dans l’éditeur de modèle de workflow pour copier la définition du modèle de workflow dans /conf/global/workflow/models.</li>
@@ -136,9 +136,9 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   <tr>
    <td><strong>Remarques</strong></td>
    <td>Toute référence de chemin explicite dans
-    Le code <code>
+    <code>
      custom
-    </code> de l’emplacement précédent doit également prendre en compte le nouvel emplacement. Il est recommandé de refactoriser ce code pour utiliser les API de workflow AEM.</td>
+    </code> Le code de l’emplacement précédent doit également prendre en compte le nouvel emplacement. Il est recommandé de refactoriser ce code pour utiliser les API de workflow AEM.</td>
   </tr>
  </tbody>
 </table>
@@ -169,7 +169,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
      <li><code>/conf/global/settings/workflow/launcher</code></li>
      <li><code>/libs/settings/workflow/launcher</code></li>
      <li><code>/etc/workflow/launcher</code></li>
-    </ol> <p>Par conséquent, toute personnalisation du lanceur de workflow fourni par AEM et conservé à l’emplacement précédent doit être déplacée vers le nouvel emplacement (<code>/conf/global/settings/workflow/launcher</code> si elles doivent être conservées, sinon elles seront remplacées par la définition du lanceur de workflow fourni par AEM dans <code>/libs/settings/workflow/launcher</code>.</p> </td>
+    </ol> <p>Par conséquent, toute personnalisation du lanceur de workflow fourni AEM et conservée à l’emplacement précédent doit être déplacée vers le nouvel emplacement (<code>/conf/global/settings/workflow/launcher</code> s’ils doivent être conservés, sinon ils seront remplacés par la définition de lanceur de workflow fournie par l’AEM dans <code>/libs/settings/workflow/launcher</code>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -207,7 +207,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-## Avant la mise à niveau future {#prior-to-upgrade}
+## Avant la mise à niveau ultérieure {#prior-to-upgrade}
 
 ### Configurations ContextHub {#contexthub-configurations}
 
@@ -235,7 +235,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
@@ -258,10 +258,10 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
     <ol>
      <li>Copiez les conceptions de l’emplacement précédent dans le nouvel emplacement (<code>/apps</code>).</li>
      <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en une <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li>
-     <li>Mettez à jour les références à l’emplacement précédent dans la balise <span class="code">
+     <li>Mettez à jour les références à l’emplacement précédent dans le <span class="code">
        <code>
         cq
-       </code> :
+       </code>:
        <code>
         designPath
        </code></span> .</li>
@@ -274,12 +274,12 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
 
-### Conceptions de tableaux de bord classiques  {#classic-dashboards-designs}
+### Conceptions de tableaux de bord classiques {#classic-dashboards-designs}
 
 <table style="table-layout:auto">
  <tbody>
@@ -300,7 +300,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
      <li>Mettez à jour les références à l’emplacement précédent dans le
       <code>
        cq
-      </code> :
+      </code>:
       <code>
        designPath
       </code> .</li>
@@ -313,12 +313,12 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
 
-### Conceptions de rapports classiques  {#classic-reports-designs}
+### Conceptions de rapports classiques {#classic-reports-designs}
 
 <table style="table-layout:auto">
  <tbody>
@@ -339,7 +339,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
      <li>Mettez à jour les références à l’emplacement précédent dans le
       <code>
        cq
-      </code> :
+      </code>:
       <code>
        designPath
       </code> .</li>
@@ -352,7 +352,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
@@ -378,7 +378,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
      <li>Mettez à jour les références à l’emplacement précédent dans le
       <code>
        cq
-      </code> :
+      </code>:
       <code>
        designPath
       </code> .</li>
@@ -391,12 +391,12 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/D</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
 
-### Point de terminaison Javascript Adobe DTM  {#adobe-dtm-javascript-endpoint}
+### Point de terminaison Javascript Adobe DTM {#adobe-dtm-javascript-endpoint}
 
 <table style="table-layout:auto">
  <tbody>
@@ -414,12 +414,12 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
 
-### Point de terminaison Web-Hook Adobe DTM  {#adobe-dtm-web-hook-endpoint}
+### Point de terminaison Web-Hook Adobe DTM {#adobe-dtm-web-hook-endpoint}
 
 <table style="table-layout:auto">
  <tbody>
@@ -437,12 +437,12 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
 
-### Tâches de la boîte de réception  {#inbox-tasks}
+### Tâches de la boîte de réception {#inbox-tasks}
 
 <table style="table-layout:auto">
  <tbody>
@@ -469,7 +469,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-### Configurations Blueprint de Multi-site Manager  {#multi-site-manager-blueprint-configurations}
+### Configurations Blueprint de Multi-site Manager {#multi-site-manager-blueprint-configurations}
 
 <table style="table-layout:auto">
  <tbody>
@@ -485,18 +485,18 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
    <td><strong>Conseil de restructuration</strong></td>
    <td>
     <ol>
-     <li>Copiez les configurations personnalisées de <code>/etc/blueprints</code> vers <code>/apps/msm</code>.</li>
+     <li>Copie de configurations personnalisées depuis <code>/etc/blueprints</code> to <code>/apps/msm</code>.</li>
      <li>Remove <code>/etc/blueprints</code>.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
 
-### Configurations du gadget de tableau de bord AEM Projects  {#aem-projects-dashboard-gadget-configurations}
+### Configurations du gadget de tableau de bord AEM Projects {#aem-projects-dashboard-gadget-configurations}
 
 <table style="table-layout:auto">
  <tbody>
@@ -526,7 +526,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
  </tbody>
 </table>
 
-### Modèle d’e-mail de notification de réplication  {#replication-notification-e-mail-template}
+### Modèle d’e-mail de notification de réplication {#replication-notification-e-mail-template}
 
 <table style="table-layout:auto">
  <tbody>
@@ -577,18 +577,18 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
     <ol>
      <li>Copiez toutes les balises de l’emplacement précédent dans le nouvel emplacement.</li>
      <li>Supprimez toutes les balises de l’emplacement précédent.</li>
-     <li>Par l’intermédiaire de la console web AEM, redémarrez le lot OSGi Day Communique 5 Tagging à l’adresse <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> pour qu’AEM reconnaisse que le nouvel emplacement contient du contenu et doit être utilisé.</li>
+     <li>Par le biais de la console web AEM, redémarrez le lot OSGi Day Communique 5 Tagging à l’adresse <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> pour que AEM reconnaisse que le nouvel emplacement contient du contenu et doit être utilisé.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td><p>Le redémarrage du lot Day Communique Tagging OSGi n’enregistrera le nouvel emplacement comme racine de balise que si l’emplacement précédent est vide.</p> <p>Les références à l’emplacement précédent continueront à fonctionner après la migration vers un nouvel emplacement pour toutes les fonctionnalités qui utilisent l’API TagManager d’AEM pour la résolution des balises.</p> <p>Tout code personnalisé qui référence explicitement le chemin <code>/etc/tags</code> doit être mis à jour vers <span class="code">/content/
+   <td><p>Le redémarrage du lot Day Communique Tagging OSGi n’enregistrera le nouvel emplacement comme racine de balise que si l’emplacement précédent est vide.</p> <p>Les références à l’emplacement précédent continueront à fonctionner après la migration vers un nouvel emplacement pour toutes les fonctionnalités qui utilisent l’API TagManager d’AEM pour la résolution des balises.</p> <p>Tout code personnalisé qui référence explicitement le chemin d’accès <code>/etc/tags</code> doit être mis à jour vers <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>, ou de préférence réécrit pour utiliser l’API Java TagManager, en même temps que cette migration.</p> </td>
+      </code></span>, ou de préférence réécrite pour utiliser l’API Java TagManager, en même temps que cette migration.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -607,7 +607,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Tous les nouveaux Cloud Services de traduction doivent être migrés vers le nouvel emplacement (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Tout nouveau Cloud Services de traduction doit être migré vers le nouvel emplacement (<code>/apps</code>, <code>/conf/global</code> ou <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ul>
@@ -620,7 +620,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
        <li>Hiérarchies de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li>
        <li>Hiérarchies des dossiers de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Dossier &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.<br /> </li>
        <li>Hiérarchies des dossiers AEM Assets via <strong>AEM Assets &gt; Dossier &gt; Propriétés du dossier &gt; Onglet Cloud Services &gt; Configuration</strong>.</li>
-       <li>AEM Projets via <strong>AEM Projets &gt; Projet &gt; Propriétés du projet &gt; Onglet Avancé &gt; Configuration du cloud</strong>.</li>
+       <li>AEM Projets via <strong>AEM Projets &gt; Projet &gt; Propriétés du projet &gt; Onglet avancé &gt; Configuration cloud</strong>.</li>
       </ol> </li>
      <li>Dissociez les anciens services cloud de traduction migrés des hiérarchies de contenu AEM mentionnées ci-dessus.</li>
     </ol> </td>
@@ -652,7 +652,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Toute définition de langue de traduction nouvelle ou modifiée nécessite une migration de toutes les définitions de langue de traduction vers le nouvel emplacement (<code>/apps</code>).</p>
+   <td><p>Toutes les définitions de langue de traduction nouvelles ou modifiées nécessitent une migration de toutes les définitions de langue de traduction vers le nouvel emplacement (<code>/apps</code>).</p>
     <ol>
      <li>Si des ajouts ou des modifications ont été apportés aux définitions de langue de traduction, copiez toutes les définitions de langue de traduction dans le nouvel emplacement (<code>/apps</code>).</li>
     </ol> </td>
@@ -683,7 +683,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Un fichier XML de règles de traduction modifié doit être migré vers le nouvel emplacement (<code>/apps</code> ou <code>/conf/global</code>).</p> <p>1. Copiez le fichier XML de règles de traduction modifié de l’emplacement précédent dans le nouvel emplacement.</p> </td>
+   <td><p>Un fichier XML de règles de traduction modifié doit être migré vers le nouvel emplacement (<code>/apps</code>ou <code>/conf/global</code>).</p> <p>1. Copiez le fichier XML de règles de traduction modifié de l’emplacement précédent dans le nouvel emplacement.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -721,7 +721,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
      <li>Mettez à jour les références à l’emplacement précédent dans le
       <code>
        cq
-      </code> :
+      </code>:
       <code>
        designPath
       </code> .</li>
@@ -734,12 +734,12 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>
 
-### Console web d’activation des arborescences  {#tree-activation-web-console}
+### Console web d’activation des arborescences {#tree-activation-web-console}
 
 | **Emplacement précédent** | `/etc/replication/treeactivation` |
 |---|---|
@@ -778,7 +778,7 @@ En d’autres termes, la propriété `sling:resourceType` de la configuration Co
        <li>Hiérarchies des fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Fragment d’expérience &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li>
        <li>Hiérarchies des dossiers de fragments d’expérience AEM via <strong>Fragments d’expérience AEM &gt; Dossier &gt; Propriétés &gt; Onglet Services cloud &gt; Configuration cloud</strong>.</li>
        <li>Hiérarchies des dossiers AEM Assets via <strong>AEM Assets &gt; Dossier &gt; Propriétés du dossier &gt; Onglet Cloud Services &gt; Configuration</strong>.</li>
-       <li>AEM Projets via <strong>AEM Projets &gt; Projet &gt; Propriétés du projet &gt; Onglet Avancé &gt; Configuration du cloud</strong>.</li>
+       <li>AEM Projets via <strong>AEM Projets &gt; Projet &gt; Propriétés du projet &gt; Onglet avancé &gt; Configuration cloud</strong>.</li>
       </ol> </li>
      <li>Dissociez les anciens services cloud de traduction migrés des hiérarchies de contenu AEM mentionnées ci-dessus.</li>
     </ol> </td>

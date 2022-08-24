@@ -1,87 +1,88 @@
 ---
-title: AEM Parcours de traduction sans affichage
-description: Commencez ici pour un parcours guidé en traduisant votre contenu sans tête à l’aide AEM puissants outils de traduction.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+title: Parcours de traduction découplée AEM
+description: Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire votre contenu découplé à l’aide des puissants outils de traduction d’AEM.
+exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1037'
-ht-degree: 8%
+ht-degree: 97%
 
 ---
 
-# AEM Parcours de traduction sans affichage {#aem-headless-translation-journey}
+# Parcours de traduction découplée AEM {#aem-headless-translation-journey}
 
-Commencez ici pour un parcours guidé en traduisant votre contenu sans tête à l’aide AEM puissants outils de traduction.
+Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire votre contenu découplé à l’aide des puissants outils de traduction d’AEM.
 
 ## Présentation {#introduction}
 
-L’implémentation sans affichage devient de plus en plus importante pour diffuser des expériences à votre audience, où qu’elle soit et indépendamment du canal, de la région ou des paramètres régionaux.
+L’implémentation découplée devient de plus en plus importante pour offrir des expériences à votre public, où qu’il se trouve et quel que soit son canal, sa zone ou ses paramètres géographiques.
 
-L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. En utilisant AEM puissants outils de traduction, ces fragments réutilisables peuvent être facilement traduits et diffusés à votre audience où qu’il soit.
+L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. En utilisant les puissants outils de traduction d’AEM, ces fragments réutilisables peuvent être facilement traduits et diffusés à votre audience, où qu’elle soit.
 
-Ce guide vous guide tout au long des rubriques de traduction sans tête les plus importantes afin que vous puissiez :
+Ce guide détaille les sujets les plus importants concernant la traduction découplée afin que vous puissiez :
 
-* disposer d’une vue d’ensemble de la diffusion de contenu sans interface ;
-* Ayez une compréhension de base AEM les fonctions sans tête.
-* Découvrez AEM fonctionnalités de traduction et comment elles sont liées au contenu sans interface.
-* Vous pouvez commencer à traduire votre propre contenu sans tête.
+* disposer d’une vue d’ensemble sur la diffusion découplée ;
+* disposer d’une compréhension de base des fonctions découplées d’AEM ;
+* connaître les fonctionnalités de traduction d’AEM et leur lien avec le contenu découplé ;
+* être capable de traduire votre propre contenu découplé.
 
-Le but est de vous donner une large compréhension de la technologie sans tête, comment AEM diffuse du contenu sans tête, et comment vous pouvez le traduire. Si vous ne connaissez aucun de ces sujets, voici le point de départ idéal.
+L’objectif est de vous donner une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire. Si vous ne connaissez aucun de ces sujets, ce parcours représente le parfait point de départ.
 
-Si vous connaissez déjà l&#39;AEM, l&#39;absence de tête et la traduction, vous disposez peut-être déjà des connaissances fondamentales de ce parcours. Pensez à vous référer à notre documentation technique liée au [ressources supplémentaires section ci-dessous.](#additional-resources)
+Si vous connaissez déjà les principes d’AEM, du découplage et de la traduction, vous disposez peut-être déjà des connaissances fondamentales offertes par ce parcours. Pensez à vous référer à notre documentation technique dans la section présentant les [ressources supplémentaires ci-dessous.](#additional-resources)
 
-## AEM Parcours de documentation {#documentation-journeys}
+## Parcours de documentation AEM {#documentation-journeys}
 
-[Un Parcours de documentation](/help/journey-documentation/home.md) Il relie de nombreux sujets et caractéristiques différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
+Un [Parcours de documentation](/help/journey-documentation/home.md) relie de nombreux sujets et fonctionnalités différents et parfois complexes en aidant le lecteur, parfois débutant dans AEM, à comprendre et à résoudre un problème d’activité du début à la fin, tout en présupposant un minimum de connaissances préalables concernant le sujet ou AEM.
 
-Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
+Les parcours de documentation sont conçus autour des principes de bonne pratique, reposent sur les dernières recherches d’Adobe, sur l’expérience éprouvée de mise en œuvre des consultants Adobe, ainsi que sur les retours de projets clients.
 
-Si vous souhaitez savoir comment Adobe recommande de résoudre des affaires sans interface avec AEM, [AEM Parcours sans affichage](/help/journey-headless/home.md) où commencer.
+Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utilisation découplés avec AEM, les [Parcours découplés AEM](/help/journey-headless/home.md) sont un bon endroit pour commencer.
 
 ## Public {#audience}
 
-Ce parcours est conçu pour le personnage spécialisé en traduction, souvent appelé gestionnaire de projet de traduction ou TPM. Ce parcours présente les exigences, les étapes et les méthodes de traduction du contenu headless dans AEM. Le parcours peut définir des personnes supplémentaires avec lesquelles le traducteur doit interagir, mais le point de vue du parcours est celui du traducteur.
+Ce parcours est conçu pour le profil de spécialiste en traduction, souvent appelé gestionnaire de projet de traduction (TPM). Ce parcours présente les exigences, les étapes et les méthodes de traduction du contenu découplé dans AEM. Il définit les personnes supplémentaires avec lesquelles le spécialiste de la traduction doit interagir, mais le point de vue du parcours est celui du spécialiste de la traduction.
 
-Ce parcours suppose que le lecteur a l’expérience de la traduction d’un contenu sur un système CMS volumineux, mais n’a aucune connaissance de la technologie sans interface ni de l’AEM.
+Ce parcours présuppose que le lecteur dispose d’une expérience en traduction de contenu sur un système CMS volumineux sans aucune connaissance de la technologie découplée ou d’AEM.
 
-Voici les personnages qui interagissent dans ce parcours.
+Voici les personnes qui interagissent dans ce parcours.
 
-| Personnage | Description | Rôle dans le Parcours |
+| Personne | Description | Rôle dans le parcours |
 |---|---|---|
-| Spécialiste de traduction | Définit le contenu à traduire et gère ces workflows. | Audience de ce parcours |
-| Auteur de contenu | Crée et gère du contenu diffusé sans interface | Les auteurs de contenu créent du contenu que le spécialiste de traduction doit traduire. |
-| Administrateur | Gère la configuration et la configuration de base d’AEM | Le spécialiste des traductions travaille avec l’administrateur pour apporter les modifications de configuration nécessaires à la traduction, telles que l’installation d’un connecteur de traduction. |
-| Architecte de contenu | Analyse les exigences relatives aux données qui doivent être distribuées sans interface et définit la structure de ces données | Les spécialistes de traduction travaillent avec l’architecte de contenu pour définir l’organisation du contenu afin qu’il puisse être facilement traduit. |
+| Spécialiste de traduction | Définit le contenu à traduire et gère les workflows. | Audience ciblée de ce parcours |
+| Auteur de contenu | Crée et gère le contenu diffusé de façon découplée | Les auteurs de contenu créent du contenu que le spécialiste de traduction doit traduire. |
+| Administrateur | Gère les paramètres et la configuration de base d’AEM | Le spécialiste de la traduction travaille avec l’administrateur pour apporter les modifications de configuration nécessaires à la traduction, telles que l’installation d’un connecteur de traduction. |
+| Architecte de contenu | Analyse les exigences relatives aux données qui doivent être diffusées en mode découplé et définit la structure de ces données | Les spécialistes de la traduction travaillent avec l’architecte de contenu pour définir l’organisation du contenu afin qu’il puisse être facilement traduit. |
 
-L&#39;information dans ce parcours peut bien sûr être utile à tous les acteurs, mais certaines informations peuvent être superflues à certains rôles. Restez à l’écoute pour [les prochains parcours couvrant des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
+Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Tenez-vous informés des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
 
-## Parcours de traduction sans affichage {#the-journey}
+## Le parcours de traduction découplée {#the-journey}
 
-Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants vous donnent des connaissances fondamentales sur la traduction de contenu headless dans AEM et vous proposent des liens vers une documentation technique détaillée.
+Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur la traduction de contenu découplé dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous commencez à traduire sans interface en AEM, nous vous recommandons de commencer par le début et de progresser de manière séquentielle.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de traduction découplée dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
 | Numéro | Article | Description |
 |---|---|---|
-| 0 | AEM Parcours de traduction sans affichage | Ce document |
-| 1 | [Découvrez le contenu sans tête et comment le traduire en AEM](learn-about.md) | Apprenez les concepts sans tête, comment ils s&#39;adaptent à AEM, et la théorie de la traduction AEM. |
-| 2 | [Prise en main de AEM traduction sans interface](getting-started.md) | Découvrez comment organiser votre contenu sans interface et comment AEM outils de traduction fonctionnent. |
+| 0 | Parcours de traduction découplée AEM | Ce document |
+| 1 | [En savoir plus sur le contenu découplé et comment le traduire dans AEM](learn-about.md) | Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM. |
+| 2 | [Prise en main de la traduction découplée dans AEM](getting-started.md) | Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM. |
 | 3 | [Configuration du connecteur de traduction](configure-connector.md) | Découvrez comment connecter AEM à un service de traduction. |
 | 4 | [Configuration des règles de traduction](translation-rules.md) | Découvrez comment définir des règles de traduction pour identifier le contenu à traduire. |
-| 5 | [Traduire le contenu](translate-content.md) | Utilisez le connecteur et les règles de traduction pour traduire votre contenu sans interface utilisateur graphique. |
-| 6 | [Publier le contenu traduit](publish-content.md) | Découvrez comment publier votre contenu traduit et mettre à jour la traduction lorsque le contenu sous-jacent est mis à jour. |
+| 5 | [Traduction du contenu](translate-content.md) | Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé. |
+| 6 | [Publication du contenu traduit](publish-content.md) | Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour. |
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
-Vous êtes maintenant prêt à prendre en main votre parcours de traduction sans interface Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [Découvrez le contenu sans tête et comment le traduire en AEM](learn-about.md)
+Vous êtes maintenant prêt à prendre en main votre parcours de traduction découplée Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [En savoir plus sur le contenu découplé et comment le traduire dans AEM](learn-about.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
-Les parcours de documentation vous montrent comment AEM résoudre un problème d’entreprise en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la façon dont plusieurs fonctionnalités fonctionnent ensemble pour répondre aux besoins d’une seule entreprise.
+Les parcours de documentation vous montrent comment AEM permet de résoudre un problème d’activité en vous fournissant une narration qui vous guide tout au long de processus et de fonctionnalités complexes et interconnectés. Un parcours illustre la façon dont plusieurs fonctionnalités fonctionnent ensemble pour répondre à un unique besoin d’activité.
 
-Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d’entre elles peuvent être liées. Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont AEM puissantes fonctionnalités fonctionnent ensemble.
+Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d’entre eux sont connectés. Consultez ces parcours supplémentaires pour plus d’informations sur la manière dont les puissantes fonctionnalités d’AEM fonctionnent ensemble.
 
-* [Parcours de création sans affichage](/help/journey-headless/author/overview.md) - Commencez ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités headless d’AEM, leurs fonctionnalités et comment modéliser votre contenu sur votre premier projet headless.
+* [Parcours de création découplée](/help/journey-headless/author/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les modéliser votre contenu dans votre premier projet découplé.
 * [Parcours Architecte sans tête](/help/journey-headless/architect/overview.md) - Commencez ici pour découvrir les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager et comment modéliser le contenu de votre projet.
-* [AEM Parcours développeur sans tête](/help/journey-headless/developer/overview.md) - Commencez ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités headless d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
-* [Documentation technique AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) - Si vous connaissez déjà bien les technologies AEM et sans interface, consultez directement nos documents techniques détaillés.
-* [Tutoriels AEM sans affichage](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) - Si vous préférez apprendre par la pratique et êtes techniquement disposé, suivez nos tutoriels pratiques organisés par API et structure, qui explorent la création et l’utilisation d’applications reposant sur AEM Headless.
+* [Parcours de développement découplé AEM](/help/journey-headless/developer/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
+* [Documentation technique d’AEM ](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=fr) – Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
+* [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.

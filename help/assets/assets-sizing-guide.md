@@ -105,7 +105,7 @@ Pour le référentiel, utilisez des SSD ou des disques avec un niveau d’IOPS s
 
 [!DNL Assets] comporte plusieurs cas d’utilisation qui rendent la performance du réseau plus importante que sur la plupart de nos projets [!DNL Experience Manager] Un client peut disposer d’un serveur rapide, mais si la connexion réseau n’est pas assez puissante pour soutenir la charge des utilisateurs qui chargent et téléchargent des ressources à partir du système, il semblera toujours lent. Il existe une bonne méthodologie pour déterminer le point d’étranglement dans la connexion réseau d’un utilisateur à [!DNL Experience Manager] at [Considérations sur les ressources pour l’expérience utilisateur, le dimensionnement des instances, l’évaluation des workflows et la topologie réseau](/help/assets/assets-network-considerations.md).
 
-## Restrictions {#limitations}
+## Limites {#limitations}
 
 Lorsque vous dimensionnez une mise en œuvre, il est important de garder à l’esprit les restrictions du système. Si l’implémentation proposée dépasse ces limites, utilisez des stratégies de création, telles que le partitionnement des ressources sur plusieurs [!DNL Assets] implémentations.
 

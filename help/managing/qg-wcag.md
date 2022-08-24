@@ -17,7 +17,7 @@ Adobe Experience Manager (AEM) a été développé afin de maximiser la conformi
 
 >[!NOTE]
 >
->WCAG 2.1 met à jour la version précédente, WCAG 2.0, de 2008. Voir [WCAG 2.1 - Comparaison avec WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
+>WCAG 2.1 met à jour la version précédente, WCAG 2.0, de 2008. Voir [WCAG 2.1 – Comparaison avec WCAG 2.0](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0).
 
 >[!NOTE]
 >

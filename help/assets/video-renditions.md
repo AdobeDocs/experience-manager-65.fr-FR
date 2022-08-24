@@ -23,13 +23,13 @@ Les rendus statiques sont générés en mode natif à l’aide de FFMPEG (instal
 
 Les rendus avec codage DM sont stockés dans le serveur proxy et diffusés au moment de l’exécution.
 
-Les ressources Experience Manager prennent en charge la lecture de ces rendus côté client.
+Experience Manager Assets fournit la prise en charge de la lecture pour ces rendus côté client.
 
 Pour afficher les rendus d’une ressource vidéo spécifique, ouvrez la page Ressource correspondante, puis sélectionnez l’icône Navigation globale . Choisissez ensuite **[!UICONTROL Rendus]** dans la liste.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-La liste des rendus vidéo s’affiche dans le panneau **[!UICONTROL Rendus]** .
+La liste des rendus vidéo s’affiche dans la **[!UICONTROL Rendus]** du panneau.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
@@ -43,4 +43,4 @@ Une fois que vous avez configuré le serveur proxy et créé les profils vidéo,
 >
 >La lecture audio ne fonctionne pas pour les fichiers OGG et WAV sur Microsoft® Internet Explorer 11. Une erreur `Invalid Source` s’affiche sur la page des détails de la ressource pour les ressources avec l’extension OGG ou WAV.
 >
->Sur MS® Edge et iPad, les fichiers OGG ne sont pas lus et génèrent une erreur de format non prise en charge.
+>Sur MS® Edge et iPad, les fichiers OGG ne sont pas lus et génèrent une erreur de format non pris en charge.

@@ -19,7 +19,7 @@ ht-degree: 88%
 
 # Bonnes pratiques pour les tests de performance{#best-practices-for-performance-testing}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Les tests de performance constituent une partie importante de tout déploiement d’AEM. Selon les exigences du client, les tests de performance peuvent être effectués sur les instances de publication, les instances d’auteur, ou les deux.
 

@@ -1,5 +1,5 @@
 ---
-title: Topologies d’architecture et de déploiement pour AEM Forms
+title: Topologies d’architecture et de déploiement pour AEM Forms
 seo-title: Architecture and deployment topologies for AEM Forms
 description: Informations détaillées sur l’architecture d’AEM Forms et les topologies recommandées pour les nouveaux clients d’AEM et les clients existant, ainsi que pour les clients LiveCycle ES4 évoluant vers AEM Forms.
 seo-description: Architecture details for AEM Forms and recommended topologies for new and existing AEM customers and customers upgrading from LiveCycle ES4 to AEM Forms.
@@ -12,13 +12,13 @@ discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 100%
 
 ---
 
-# Topologies d’architecture et de déploiement pour AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
+# Topologies d’architecture et de déploiement pour AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
 
 ## Architecture {#architecture}
 

@@ -13,7 +13,7 @@ discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 100%
 
@@ -110,13 +110,13 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
 
       La méthode `processFormSubmission` renvoie un objet `FormsResult` contenant les résultats de l’envoi du formulaire.
 
-   * Déterminez si le service Forms a terminé de traiter les données de formulaire en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `0`, les données sont prêtes à être traitées.
+   * Déterminez si le service Forms a terminé le traitement des données de formulaire en appelant la méthode `getAction` de l’objet `FormsResult`. Si cette méthode renvoie la valeur `0`, les données sont prêtes à être traitées.
    * Récupérez les données de formulaire en créant un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`. (Cet objet contient les données de formulaire qui peuvent être envoyées au service Output.)
    * Créez un objet `java.io.InputStream` en appelant le constructeur `java.io.DataInputStream` et en transmettant l’objet `com.adobe.idp.Document`.
-   * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `newInstance` de l’objet `org.w3c.dom.DocumentBuilderFactory` statique.
+   * Créez un objet `org.w3c.dom.DocumentBuilderFactory` en appelant la méthode `newInstance` de l’objet statique `org.w3c.dom.DocumentBuilderFactory`.
    * Créez un objet `org.w3c.dom.DocumentBuilder` en appelant la méthode `newDocumentBuilder` de l’objet `org.w3c.dom.DocumentBuilderFactory`.
    * Créez un objet `org.w3c.dom.Document` en appelant la méthode `parse` de l’objet `org.w3c.dom.DocumentBuilder` et en transmettant l’objet `java.io.InputStream`.
-   * Récupérez la valeur de chaque nœud dans le document XML. Pour accomplir cette tâche, vous pouvez créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
+   * Récupérez la valeur de chaque nœud dans le document XML. Une façon d’accomplir cette tâche est de créer une méthode personnalisée qui accepte deux paramètres : l’objet `org.w3c.dom.Document` et le nom du nœud dont vous souhaitez récupérer la valeur. Cette méthode renvoie une valeur de chaîne représentant la valeur du nœud. Dans l’exemple de code qui suit ce processus, cette méthode personnalisée est appelée `getNodeText`. Le corps de cette méthode est affiché.
 
 
 1. Créez un document PDF non interactif à l’aide du service Output.
@@ -126,7 +126,7 @@ Créez un document PDF avec les données XML envoyées à l’aide de l’API (J
    * Valeur d’énumération `TransformationFormat`. Pour générer un document PDF, spécifiez `TransformationFormat.PDF`.
    * Valeur string spécifiant le nom de la nouvelle conception de formulaire. Assurez-vous que la conception de formulaire est compatible avec les données de formulaire récupérées du service Forms.
    * Une valeur de chaîne qui spécifie la racine de contenu où se trouve la conception de formulaire.
-   * Objet `PDFOutputOptionsSpec` qui contient les options d’exécution PDF.
+   * Objet `PDFOutputOptionsSpec` contenant les options d’exécution du PDF.
    * Objet `RenderOptionsSpec` qui contient les options d’exécution de rendu.
    * Objet `com.adobe.idp.Document` qui contient la source de données XML contenant les données à fusionner avec la conception de formulaire. Assurez-vous que cet objet a été renvoyé par la méthode `getOutputContent` de l’objet `FormsResult`.
    * La méthode `generatePDFOutput` renvoie un objet `OutputResult` qui contient les résultats de l’opération.

@@ -12,10 +12,10 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 88e4d8b56aa844e9a264615250971d0afdb68137
 workflow-type: tm+mt
 source-wordcount: '2730'
-ht-degree: 77%
+ht-degree: 78%
 
 ---
 
@@ -151,7 +151,7 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Créez un enregistreur de journalisation Apache Sling pour module **org.apache.jackrabbit.oak.segment.**. Définissez le niveau de journal sur &quot;Débogage&quot; et pointez sa sortie de journal vers un fichier journal distinct, comme */logs/tarmk-coldstandby.log*. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
+1. Créez un enregistreur de journalisation Apache Sling pour module **org.apache.jackrabbit.oak.segment.**. Définissez le niveau du journal sur « Déboguer », puis orientez la sortie du journal vers un fichier journal distinct, tel que */logs/tarmk-coldstandby.log*. Pour plus d’informations, voir [Journalisation](/help/sites-deploying/configure-logging.md).
 1. Accédez à l’emplacement de l’instance **de secours** et démarrez-la en exécutant le fichier jar.
 1. Créez la même configuration de journalisation que pour l’instance principale. Ensuite, arrêtez l’instance.
 1. Préparez l’instance de secours. Vous pouvez le faire en suivant le même processus que pour l’instance principale :

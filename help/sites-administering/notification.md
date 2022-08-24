@@ -13,7 +13,7 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
 workflow-type: tm+mt
 source-wordcount: '2116'
-ht-degree: 42%
+ht-degree: 52%
 
 ---
 
@@ -388,18 +388,18 @@ Enfin, confirmez la configuration en procédant comme suit :
 
 <!-- clarify if the ip/server address in the last procedure is that of the publish instance -->
 
-### Microsoft Outlook  {#microsoft-outlook}
+### Microsoft Outlook {#microsoft-outlook}
 
 1. Accédez à [https://portal.azure.com/](https://portal.azure.com/) et connectez-vous.
-1. Rechercher **Azure Principal Directory** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. Cliquez sur **Enregistrement de l’application** - **Nouvelle inscription**
+1. Recherchez le **répertoire Azure principal** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+1. Cliquez sur **Enregistrement de l’application** - **Nouvel enregistrement**
 
    ![](assets/oauth-outlook1.png)
 
-1. Renseignez les informations en fonction de vos besoins, puis cliquez sur **Enregistrer**
-1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations d’API**
+1. Renseignez les informations selon vos besoins, puis cliquez sur **Enregistrer**
+1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**
 1. Accédez à **Ajouter une autorisation** - **Autorisation graphique** - **Autorisations déléguées**
-1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation**:
+1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
    * `SMTP.Send`
    * `Mail.Read`
    * `Mail.Send`
@@ -410,14 +410,14 @@ Enfin, confirmez la configuration en procédant comme suit :
 1. Répétez les étapes ci-dessus pour chaque instance de publication.
 1. Configurez les paramètres en fonction de vos besoins.
 1. Ensuite, accédez à **Certificats et secrets**, cliquez sur **Nouveau secret client** et suivez les étapes à l’écran pour créer un secret. Veillez à prendre note de ce secret pour une utilisation ultérieure.
-1. Press **Présentation** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (client)** pour une utilisation ultérieure
+1. Appuyez sur **Aperçu** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (locataire)** pour une utilisation ultérieure.
 
 Pour effectuer une récapitulation, vous aurez besoin des informations suivantes pour configurer OAuth2 pour le service de messagerie du côté AEM :
 
-* L’URL d’authentification, qui sera créée avec l’identifiant du client. Il se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* L’URL du jeton, qui sera construite avec l’identifiant du tenant. Il se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* L’URL d’actualisation, qui sera créée avec l’identifiant du client. Il se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* ID client
+* L’URL d’authentification, qui sera créée avec l’identifiant du client. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* L’URL du jeton, qui sera construite avec l’ID du locataire. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* L’URL d’actualisation, qui sera créée avec l’ID du locataire. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* L’ID client
 * Le secret client
 
 **Configurations AEM côté**
@@ -437,7 +437,7 @@ Ensuite, intégrez vos paramètres OAuth2 avec AEM :
 1. Renseignez les informations requises comme suit :
    * Renseignez l’URL d’autorisation, l’URL du jeton et l’URL du jeton d’actualisation en les construisant comme décrit dans la section [la fin de cette procédure](#microsoft-outlook)
    * ID client et secret client : configurez ces champs avec les valeurs que vous avez récupérées comme décrit ci-dessus.
-   * Ajoutez les étendues suivantes à la configuration :
+   * Ajoutez les portées suivantes à la configuration :
       * openid
       * offline_access
       * `https://outlook.office365.com/Mail.Send`

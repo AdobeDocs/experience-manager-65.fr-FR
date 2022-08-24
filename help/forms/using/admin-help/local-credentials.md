@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Pour obtenir des informations et des instructions concernant les extensions d’
 
 ## Importation d’informations d’identification {#import-a-credential}
 
-1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
+1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
 
    * **Informations d’identification de signature de document :** informations d’identification utilisées pour émettre une signature numérique sur un document.
@@ -52,7 +52,7 @@ Pour obtenir des informations et des instructions concernant les extensions d’
 
 Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 
-1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
+1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Cliquez sur le nom d’alias des informations d’identification à exporter, puis sur Exporter.
 1. Dans le champ Password, saisissez le mot de passe. Ce mot de passe est nouveau et permet de chiffrer les informations d’identification exportées.
 1. Cliquez sur Exporter, suivez les instructions pour exporter les informations d’identification, puis cliquez sur OK.
@@ -61,13 +61,13 @@ Elles sont exportées sous forme de fichiers P12 au format PKCS#12.
 
 Une fois que des informations d’identification ont été importées, vous pouvez modifier le nom d’alias et le type de Trust Store qui leur sont associés.
 
-1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
+1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Cliquez sur le nom d’alias des informations d’identification à modifier.
 1. Cliquez sur Mettre à jour les informations d’identification.
 1. Modifiez le nom d’alias et le type de Trust Store selon vos besoins, puis cliquez sur OK.
 
 ## Suppression d’informations d’identification {#delete-a-credential}
 
-1. Dans Administration Console, cliquez sur Paramètres >Gestion de Trust Store > Informations d’identification locales.
+1. Dans Administration Console, cliquez sur Paramètres > Trust Store Management > Informations d’identification locales.
 1. Cochez les cases correspondant aux informations d’identification à supprimer.
 1. Cliquez sur Supprimer, puis sur OK.

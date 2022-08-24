@@ -1,8 +1,8 @@
 ---
 title: 'Configurer le service cloud Adobe PhoneGap Build '
-seo-title: 'Configurer le service cloud Adobe PhoneGap Build '
+seo-title: Configure your Adobe PhoneGap Build Cloud Service
 description: Consultez cette page pour configurer les services cloud et créer votre application avec PhoneGap Build.
-seo-description: Consultez cette page pour configurer les services cloud et créer votre application avec PhoneGap Build.
+seo-description: Follow this page for configuring the cloud services and building your application with PhoneGap build.
 uuid: 59aa99c3-1425-4cc5-9839-a57a6a545d45
 contentOwner: User
 content-type: reference
@@ -12,22 +12,22 @@ discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
 exl-id: d91a00d1-12fa-4c84-a426-49413f61c126
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 19%
+source-wordcount: '676'
+ht-degree: 18%
 
 ---
 
-# Configurer le service cloud Adobe PhoneGap Build {#configure-your-adobe-phonegap-build-cloud-service}
+# Configurer le service cloud Adobe PhoneGap Build  {#configure-your-adobe-phonegap-build-cloud-service}
 
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La **mosaïque PhoneGap Build** du tableau de bord de l’application permet de créer et de distribuer votre application mobile PhoneGap via le service Adobe PhoneGap Build.
+Le **Mosaïque PhoneGap Build** Le tableau de bord de l’application permet de créer et de distribuer votre application mobile PhoneGap via le service Adobe PhoneGap Build.
 
-Toutes les plateformes prises en charge définies dans la mosaïque **Gérer l’application** seront créées avec le PhoneGap Build lors de la publication d’une version distante avec la mosaïque **PhoneGap Build**.
+Toutes les plateformes prises en charge définies dans la variable **Gérer l’application** La mosaïque sera créée avec le PhoneGap Build lors de l’envoi d’une version distante avec le **PhoneGap Build** Mosaïque.
 
-Vous pouvez envoyer une version distante vers [https://build.phonegap.com](https://build.phonegap.com) ou télécharger la source à créer localement avec [PhoneGap CLI](https://docs.phonegap.com/references/phonegap-cli/).
+Vous pouvez pousser une version distante vers [https://build.phonegap.com](https://build.phonegap.com) ou télécharger la source à créer localement avec [Interface de ligne de commande de PhoneGap](https://docs.phonegap.com/references/phonegap-cli/).
 
 ![Mosaïque PhoneGap Build](assets/chlimage_1-60.png)
 
@@ -37,21 +37,21 @@ Pour exploiter pleinement PhoneGap Build, vous devez configurer le service cloud
 
 Si vous ne possédez pas encore de compte, accédez à [https://build.phonegap.com](https://build.phonegap.com) et inscrivez-vous ! Si vous disposez d’un abonnement Adobe Creative Cloud, vous pouvez prendre en charge jusqu’à 25 applications privées (applications non open source).
 
-Une fois que vous avez vérifié que votre compte PhoneGap Build est principal, accédez à votre console de gestion du cloud AEM, en particulier au [Cloud Service de PhoneGap Build](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Une fois que vous avez vérifié que votre compte PhoneGap Build est principal, accédez à votre console AEM Cloud Management Console, en particulier à l’ [PhoneGap Build Cloud Service](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-Utilisez la mosaïque **Gérer les Cloud Services** pour configurer une nouvelle configuration de service cloud.
+Utilisez la variable **Gestion des Cloud Services** pour configurer une nouvelle configuration de service cloud.
 
-### Utilisation de la mosaïque Gérer les Cloud Services {#using-manage-cloud-services-tile}
+### Utilisation de la mosaïque Gestion des Cloud Services {#using-manage-cloud-services-tile}
 
-Avant de commencer à créer votre application à l’aide de la mosaïque **PhoneGap Build** , vous devez configurer vos services cloud à l’aide de la mosaïque **Gérer les Cloud Services** du tableau de bord AEM Mobile.
+Avant de commencer à créer votre application à l’aide de **PhoneGap Build** , vous devez configurer vos services cloud à l’aide de la **Gestion des Cloud Services** à partir du tableau de bord AEM Mobile.
 
 Pour configurer les services cloud pour votre application, procédez comme suit :
 
-1. Cliquez sur dans le coin supérieur droit de la mosaïque **Gérer les Cloud Services** .
+1. Cliquez sur dans le coin supérieur droit de la **Gestion des Cloud Services** mosaïque.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. Sélectionnez l’option **PhoneGap Build** dans l’écran **Ajouter ou modifier le Cloud Service**.
+1. Choisir **PhoneGap Build** de l’option **Ajouter ou modifier un Cloud Service** écran.
 
    Cliquez sur **Suivant**.
 
@@ -59,13 +59,13 @@ Pour configurer les services cloud pour votre application, procédez comme suit 
 
 1. Saisissez vos informations d’identification pour créer une configuration cloud.
 
-   Une fois la vérification effectuée, cliquez sur **Submit**. Cette configuration de cloud configurée s’affiche désormais dans la mosaïque **Gérer les Cloud Services** .
+   Une fois la vérification effectuée, cliquez sur **Envoyer**. Cette configuration de cloud configurée s’affiche désormais dans la variable **Gestion des Cloud Services** mosaïque.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ### Développement d’une application avec PhoneGap Build {#building-your-application-with-phonegap-build}
 
-Une fois que vous avez configuré les services cloud, vous pouvez créer votre application avec la mosaïque **PhoneGap Build**. Cliquez sur le coin supérieur droit pour choisir parmi les options **Créer à distance** ou **Télécharger la source** .
+Une fois que vous avez configuré les services cloud, vous pouvez créer votre application avec **PhoneGap Build** mosaïque. Cliquez sur dans le coin supérieur droit pour choisir parmi les options **Créer à distance** ou **Source de téléchargement** options.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -86,7 +86,7 @@ Pour tirer parti de l’interface de ligne de commande de PhoneGap, vous devez c
 1. Le SDK spécifique à la plateforme (iOS, Android, WindowsPhone, etc.) et,
 1. La ligne de commande de PhoneGap
 
-Vous pouvez en lire plus [ici](https://docs.phonegap.com/references/phonegap-cli/).
+Vous pouvez en lire plus [here](https://docs.phonegap.com/references/phonegap-cli/).
 
 Une fois que vous avez installé les conditions préalables requises, effectuez un test simple en créant une application simple et en l’exécutant dans votre simulateur ou mieux encore sur votre appareil, à partir d’une tentative de terminal :
 
@@ -100,7 +100,7 @@ phonegap run ios (or android, ...)
 >
 >add —emulate à la fin de cette ligne si vous ne souhaitez pas l’exécuter sur votre appareil connecté.
 
-Une fois que vous avez vérifié que les éléments ci-dessus fonctionnent, utilisez la mosaïque **PhoneGap Build** pour **Télécharger la source**. Enregistrez et décompressez le fichier ZIP sur le système local. Une fois cette opération effectuée :
+Une fois que vous avez vérifié que les éléments ci-dessus fonctionnent, utilisez la variable **PhoneGap Build** Mosaïque pour **Source de téléchargement**. Enregistrez et décompressez le fichier ZIP sur le système local. Une fois cette opération effectuée :
 
 * accéder à ce fichier enregistré (dossier) ;
 * run &#39;phonegap run ios&#39; (ou android, etc.)

@@ -1,8 +1,8 @@
 ---
 title: Comment accéder au JCR AEM par programmation
-seo-title: Comment accéder au JCR AEM par programmation
+seo-title: How to programmatically access the AEM JCR
 description: Vous pouvez modifier, par programmation, les nœuds et propriétés situés dans le référentiel AEM qui fait partie d’Adobe Marketing Cloud.
-seo-description: Vous pouvez modifier, par programmation, les nœuds et propriétés situés dans le référentiel AEM qui fait partie d’Adobe Marketing Cloud.
+seo-description: You can programmatically modify nodes and properties located within the AEM repository, which is part of the Adobe Marketing Cloud
 uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 61%
+source-wordcount: '591'
+ht-degree: 59%
 
 ---
 
@@ -27,7 +27,7 @@ Vous pouvez modifier, par programmation, les nœuds et propriétés situés dans
 
 >[!NOTE]
 >
->Pour utiliser l’API JCR, ajoutez le fichier `jackrabbit-standalone-2.4.0.jar` au chemin de classe de votre application Java. Vous pouvez obtenir ce fichier JAR à partir de la page web de l’API Java JCR à l’adresse [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>Pour utiliser l’API JCR, ajoutez le `jackrabbit-standalone-2.4.0.jar` vers le chemin de classe de votre application Java. Vous pouvez obtenir ce fichier JAR à partir de la page web de l’API Java JCR à l’adresse [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
@@ -46,14 +46,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Création d’une instance de session {#create-a-session-instance}
 
-L’instance `Repository`représente le référentiel CRX. Vous utilisez l’instance `Repository`pour établir une session avec le référentiel. Pour créer une session, appelez la méthode `Repository`de l’instance `login`et transmettez un objet `javax.jcr.SimpleCredentials`. La méthode `login`renvoie une instance `javax.jcr.Session`.
+Le `Repository`représente le référentiel CRX. Vous utilisez le `Repository`pour établir une session avec le référentiel. Pour créer une session, appelez le `Repository`de l’instance `login`et transmettre une `javax.jcr.SimpleCredentials` . Le `login`renvoie une `javax.jcr.Session` instance.
 
-Vous créez un objet `SimpleCredentials`en utilisant son constructeur et en transmettant les valeurs string suivantes :
+Vous créez une `SimpleCredentials`en utilisant son constructeur et en transmettant les valeurs string suivantes :
 
 * Nom de l’utilisateur
 * Mot de passe correspondant
 
-Lors de la transmission du second paramètre, appelez la méthode `toCharArray`de l’objet String. Le code suivant indique comment appeler la méthode `login`qui renvoie une `javax.jcr.Sessioninstance`.
+Lors de la transmission du second paramètre, appelez le `toCharArray`. Le code suivant indique comment appeler la fonction `login`qui renvoie une `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -62,14 +62,14 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## Création d’une instance de nœud {#create-a-node-instance}
 
-Utilisez une instance `Session`pour créer une instance `javax.jcr.Node`. Une instance `Node` vous permet d’effectuer des opérations de nœud. Vous pouvez, par exemple, créer un nœud. Pour créer un nœud qui représente le nœud racine, appelez la méthode `Session` de l’instance `getRootNode`, comme illustré dans la ligne de code ci-dessous.
+Utilisez une `Session`pour créer une instance `javax.jcr.Node` instance. Une instance `Node` vous permet d’effectuer des opérations de nœud. Vous pouvez, par exemple, créer un nœud. Pour créer un nœud qui représente le nœud racine, appelez la méthode `Session` de l’instance `getRootNode`, comme illustré dans la ligne de code ci-dessous.
 
 ```java
 //Create a Node
 Node root = session.getRootNode();
 ```
 
-Une fois que vous avez créé une instance `Node`, vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur. Le code suivant, par exemple, crée deux nœuds et ajoute une valeur au deuxième.
+Une fois que vous avez créé une `Node`vous pouvez exécuter des tâches telles que la création d’un autre noeud et l’ajout d’une valeur. Le code suivant, par exemple, crée deux nœuds et ajoute une valeur au deuxième.
 
 ```java
 // Store content
@@ -77,7 +77,7 @@ Node day = adobe.addNode("day");
 day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suite!");
 ```
 
-## Récupération de valeurs de nœud  {#retrieve-node-values}
+## Récupération de valeurs de nœud {#retrieve-node-values}
 
 Pour récupérer un noeud et sa valeur, appelez la méthode `Node`de l’instance `getNode`et transmettez une valeur string qui représente le chemin d’accès complet au noeud. Examinez la structure de nœud créée dans l’exemple de code précédent. Pour récupérer le nœud day, indiquez adobe/day, comme indiqué dans le code suivant :
 
@@ -88,9 +88,9 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Création de nœuds dans le référentiel Adobe CQ  {#create-nodes-in-the-adobe-cq-repository}
+## Création de nœuds dans le référentiel Adobe CQ {#create-nodes-in-the-adobe-cq-repository}
 
-L’exemple de code Java suivant représente une classe Java qui se connecte à Adobe CQ, crée une instance `Session`et ajoute de nouveaux noeuds. Une valeur de données est affectée au nœud, puis la valeur du nœud et son chemin d’accès sont écrits sur la console. Lorsque vous en avez terminé avec l’instance Session, veillez à vous déconnecter.
+L’exemple de code Java suivant représente une classe Java qui se connecte à Adobe CQ et crée une `Session`et ajoute de nouveaux noeuds. Une valeur de données est affectée au nœud, puis la valeur du nœud et son chemin d’accès sont écrits sur la console. Lorsque vous en avez terminé avec l’instance Session, veillez à vous déconnecter.
 
 ```java
 /*

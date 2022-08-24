@@ -10,7 +10,7 @@ discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptive Forms
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
    >[!NOTE]
    >
-   >Les actions rapides sont des éléments d’action qui sont affichés sur une vignette lors du pointage de la souris.
+   >Les actions rapides sont les éléments d’action qui s’affichent sur une vignette lorsque vous pointez dessus.
 
 1. Sélectionnez le formulaire adaptatif. Le processus de sélection est différent pour chaque vue.
 

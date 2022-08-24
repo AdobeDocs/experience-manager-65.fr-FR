@@ -1,8 +1,8 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: AEM Outils de développement pour Eclipse
+seo-title: AEM Developer Tools for Eclipse
 description: AEM Outils de développement pour Eclipse
-seo-description: 'null'
+seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '808'
 ht-degree: 93%
 
 ---
 
-# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
+# AEM Outils de développement pour Eclipse{#aem-developer-tools-for-eclipse}
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -149,7 +149,7 @@ Pour contourner ce problème, assurez-vous que l’artefact org.apache.sling.scr
 
 Assurez-vous d’ajouter la version appropriée pour votre déploiement d’AEM.
 
-## Informations supplémentaires {#more-information}
+## Informations complémentaires {#more-information}
 
 Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
 

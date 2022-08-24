@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1618'
-ht-degree: 53%
+ht-degree: 55%
 
 ---
 
@@ -147,7 +147,7 @@ La procédure suivante explique comment utiliser la boîte JavaScript pour perso
 
 1. Ajoutez votre code JavaScript dans la section **s_doPlugins** fonction .
 
-L’exemple suivant concatène les données capturées sur une page dans un ordre hiérarchique, à l’aide d’un séparateur commun de &quot;|&quot;.
+L’exemple suivant concatène les données capturées sur une page dans l’ordre hiérarchique, en utilisant un séparateur commun de &quot;|&quot;.
 
 Une structure Adobe Analytics comporte les configurations suivantes :
 

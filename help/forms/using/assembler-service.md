@@ -11,9 +11,9 @@ discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2121'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -282,7 +282,7 @@ L’exemple qui suit représente un document DDX utilisé pour désassembler ce 
 
 ### Division d’un document source en fonction de signets {#divide-a-source-document-based-on-bookmarks}
 
-Dans l’illustration suivante, le document DocA est divisé en plusieurs documents cible. Le signet de niveau 1 d’une page identifie le début d’un nouveau document cible.
+Dans l’illustration suivante, DocA est divisé en plusieurs documents cible. Le signet de premier niveau d’une page identifie le début d’un nouveau document généré.
 
 ![La division d’un document source en fonction de signets en plusieurs documents](assets/as_intro_pdfsfrombookmarks.png)
 

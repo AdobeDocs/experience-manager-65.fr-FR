@@ -1,8 +1,8 @@
 ---
 title: Configuration de l’environnement du compte
-seo-title: Configuration de l’environnement du compte
+seo-title: Configuring your account environment
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
-seo-description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
 uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 88%
+source-wordcount: '224'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ AEM vous dote des outils nécessaires pour configurer votre compte ainsi que cer
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
 * **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous donne la possibilité de 
-**Copiez**,  **Couper**,  **Coller**,  **** Supprimez les boutons utilisables avec les composants de paragraphe sur cette page :
+**Copier**, **Couper**, **Coller**, **Supprimer** des boutons utilisables avec les composants de paragraphe sur cette page :
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher

@@ -1,8 +1,8 @@
 ---
 title: Purge de version
-seo-title: Purge de version
+seo-title: Version Purging
 description: Cet article décrit les options disponibles pour la purge de version.
-seo-description: Cet article décrit les options disponibles pour la purge de version.
+seo-description: This article describes the available options for version purging.
 uuid: a9fa25c7-e60e-4665-a726-99af9aac8f70
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
-feature: Configuration
+feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 69%
+source-wordcount: '728'
+ht-degree: 68%
 
 ---
 
@@ -43,7 +43,7 @@ Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
 
    * L’âge maximal des versions conservées dans le référentiel.  Lorsque l’âge d’une version dépasse cette valeur, elle est purgée du référentiel. 
 
-* la [tâche de maintenance Purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
+* la valeur [Tâche de maintenance de purge de version](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer automatiquement les anciennes versions. Par conséquent, cela réduit la nécessité d’utiliser manuellement les outils de purge de version.
 
 >[!CAUTION]
 >
@@ -53,7 +53,7 @@ Une fois ce nombre dépassé, la version la plus ancienne est supprimée.
 
 En plus de la purge explicite via l’outil de purge, le gestionnaire de versions peut être configuré pour purger d’anciennes versions lorsque de nouvelles versions sont créées.
 
-Pour configurer le gestionnaire de versions, [créez une configuration](/help/sites-deploying/configuring-osgi.md) pour :
+Pour configurer le gestionnaire de versions, procédez comme suit : [création d’une configuration](/help/sites-deploying/configuring-osgi.md) pour :
 
 `PID com.day.cq.wcm.core.impl.VersionManagerImpl`
 
@@ -61,13 +61,13 @@ Les options suivantes sont disponibles :
 
 * `versionmanager.createVersionOnActivation` (booléen, valeur par défaut : true) Indique s’il faut créer une version lorsque les pages sont activées.
 Une version est créée sauf si l’agent de réplication est configuré pour supprimer la création de versions, qui est honorée par le gestionnaire de versions.
-Une version est créée uniquement si l’activation se produit sur un chemin contenu dans `versionmanager.ivPaths` (voir ci-dessous).
+Une version n’est créée que si l’activation se produit sur un chemin contenu dans `versionmanager.ivPaths` (voir ci-dessous).
 
-* `versionmanager.ivPaths`(Chaîne[], valeur par défaut :  `{"/"}`) Spécifie les chemins d’accès sur lesquels les versions sont implicitement créées lors de l’activation si  `versionmanager.createVersionOnActivation` est défini sur true.
+* `versionmanager.ivPaths`(Chaîne)[], par défaut : `{"/"}`) Spécifie les chemins d’accès sur lesquels les versions sont implicitement créées lors de l’activation si `versionmanager.createVersionOnActivation` est définie sur true.
 
 * `versionmanager.purgingEnabled` (booléen, valeur par défaut : false) Définit si la purge doit être activée ou non lors de la création de versions.
 
-* `versionmanager.purgePaths` (Chaîne[], valeur par défaut : {&quot;/content&quot;}) Spécifie les chemins d’accès pour purger les versions lors de la création de nouvelles versions.
+* `versionmanager.purgePaths` (Chaîne)[], par défaut : {&quot;/content&quot;}) Spécifie les chemins d’accès pour purger les versions lors de la création de nouvelles versions.
 
 * `versionmanager.maxAgeDays` (int, valeur par défaut : 30) Lors de la purge de version, toute version antérieure à la valeur configurée est supprimée. Si la valeur est inférieure à 1, la purge ne sera pas effectuée en fonction de l’âge de la version.
 
@@ -81,11 +81,11 @@ Une version est créée uniquement si l’activation se produit sur un chemin co
 
 ### Combinaison d’options de conservation {#combining-retention-options}
 
-Les options définissant la manière dont les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`) peuvent être combinées selon vos besoins.
+Les options définissant la manière dont les versions doivent être conservées ( `maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), peut être combiné selon vos besoins.
 
 Par exemple, en définissant le nombre maximum de versions à conserver ET la version la plus ancienne à conserver :
 
-* paramètre :
+* Configuration:
 
    * `maxNumberVersions` = 7
 
@@ -102,7 +102,7 @@ Par exemple, en définissant le nombre maximum de versions à conserver ET la ve
 
 Par exemple, en définissant les nombres maximum ET minimum de versions à conserver ET la version la plus ancienne à conserver :
 
-* paramètre :
+* Configuration:
 
    * `maxNumberVersions` = 3
    * `maxAgeDays` = 30
@@ -118,4 +118,4 @@ Par exemple, en définissant les nombres maximum ET minimum de versions à conse
 
 ## Outil de purge des versions {#purge-versions-tool}
 
-L’outil [Purge de versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) est prévu pour la purge des versions d’un nœud ou d’une hiérarchie de nœuds dans votre référentiel. Son principal objectif est de vous aider à réduire la taille du référentiel en supprimant les anciennes versions de vos nœuds. 
+L’outil de [purge des versions](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) est conçu pour la purge des versions d’un nœud ou d’une hiérarchie de nœuds dans votre référentiel. Son principal objectif est de vous aider à réduire la taille du référentiel en supprimant les anciennes versions de vos nœuds. 

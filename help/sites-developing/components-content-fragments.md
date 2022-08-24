@@ -1,8 +1,8 @@
 ---
 title: Composants pour les fragments de contenu
-seo-title: Composants pour les fragments de contenu
+seo-title: Components for Content Fragments
 description: Les fragments de contenu AEM sont créés et gérés sous forme de ressources indépendantes de la page
-seo-description: Les fragments de contenu AEM sont créés et gérés sous forme de ressources indépendantes de la page
+seo-description: AEM content fragments are created and managed as page-independent assets
 uuid: 81a9e0fe-ed45-4880-b36c-4f49e2598389
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '946'
 ht-degree: 79%
 
 ---
@@ -39,9 +39,9 @@ Voir [API de gestion des fragments de contenu - côté client](/help/sites-devel
 
 >[!NOTE]
 >
->Voir aussi [Fragments de contenu Configuration des composants pour le rendu](/help/sites-developing/content-fragments-config-components-rendering.md) pour plus d’informations.
+>Voir aussi [Fragments de contenu - Configuration des composants pour le rendu](/help/sites-developing/content-fragments-config-components-rendering.md) pour plus d’informations.
 
-Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). [Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu](/help/sites-authoring/content-fragments.md). Vous pouvez également utiliser une ressource de fragment de contenu existante en la faisant [glisser de l’explorateur de ressources vers la page](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (comme pour d’autres composants basés sur des ressources, tels que le composant de base Image). Le composant de fragment de contenu prêt à l’emploi affiche un seul [élément](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) du fragment de contenu référencé. La boîte de dialogue du composant vous permet de définir l’élément [, la variation et la plage des paragraphes de fragment](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que vous souhaitez afficher sur la page.
+Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md). Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). [Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu](/help/sites-authoring/content-fragments.md). Vous pouvez également utiliser une ressource de fragment de contenu existante en procédant comme suit : [le faisant glisser de l’explorateur de ressources vers la page ;](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) (comme pour d’autres composants basés sur des ressources, tels que le composant de base Image). Le composant de fragment de contenu prêt à l’emploi affiche un seul [élément](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) du fragment de contenu référencé. À l’aide de la boîte de dialogue du composant, vous pouvez définir la variable [élément, variation et plage de paragraphes de fragment](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) que vous souhaitez afficher sur la page.
 
 >[!NOTE]
 >
@@ -98,14 +98,14 @@ Fondamentalement, si la structure de paragraphe de cette instance change (en mod
 
    * Le contenu entre les deux n’est pas affiché (le deuxième parsys n’est plus rendu en raison de la nouvelle configuration).
 
-### Personnalisation du composant Fragment de contenu  {#customizing-the-content-fragment-component}
+### Personnalisation du composant Fragment de contenu {#customizing-the-content-fragment-component}
 
 Pour utiliser le composant de fragment de contenu prêt à l’emploi comme plan directeur d’une extension, vous devez respecter le contrat suivant :
 
 * Réutiliser le script de rendu HTL et son POJO associé pour voir comment la fonctionnalité de contenu intermédiaire est implémentée.
 * Réutiliser le noeud de fragment de contenu : `cq:editConfig`
 
-   * Les écouteurs `afterinsert`/ `afteredit`/ `afterdelete` sont utilisés pour déclencher des événements JS. Ces événements sont gérés dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` pour afficher le contenu associé dans le panneau latéral.
+   * Le `afterinsert`/ `afteredit`/ `afterdelete` Les écouteurs sont utilisés pour déclencher des événements JS. Ces événements sont gérés dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` pour afficher le contenu associé dans le panneau latéral.
    * Les `cq:dropTargets` sont configurés de manière à prendre en charge la gestion des fragments de contenu.
    * `cq:inplaceEditing` est configuré de sorte à prendre en charge la création d’un fragment de contenu dans l’éditeur de pages. L’éditeur de fragment local est défini dans la bibliothèque cliente `cq.authoring.editor.plugin.cfm` et permet à un lien rapide d’ouvrir [l’élément/la variation](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) dans l’[éditeur de fragment](/help/assets/content-fragments/content-fragments-variations.md).
 
@@ -113,11 +113,11 @@ Pour utiliser le composant de fragment de contenu prêt à l’emploi comme plan
 
 La gestion de fragments de contenu utilise un processus de rendu interne pour générer la sortie HTML finale pour une page. Ceci est utilisé en interne par le composant Fragment de contenu, mais également par le processus en arrière-plan qui met à jour les fragments référencés sur les pages de référencement.
 
-En interne, Sling Rewriter est utilisé pour ce rendu. La configuration correspondante se trouve à l’adresse `/libs/dam/config/rewriter/cfm` et peut être ajustée si nécessaire. Pour plus d’informations, voir [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) .
+En interne, Sling Rewriter est utilisé pour ce rendu. La configuration correspondante se trouve à l’adresse `/libs/dam/config/rewriter/cfm` et peuvent être ajustés si nécessaire. Voir [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) pour plus d’informations.
 
 La configuration prête à l’emploi utilise les transformateurs suivants :
 
-* `transformer-cfm-payloadfilter` - pour récupérer la  `body` partie (  `<body>...</body>`) du code HTML du fragment uniquement
+* `transformer-cfm-payloadfilter` - pour récupérer le `body` part ( `<body>...</body>`) du HTML du fragment uniquement
 
 * `transformer-cfm-parfilter` : filtre les paragraphes indésirables si une plage de paragraphes est spécifiée (comme cela peut être fait avec le composant Fragment de contenu)
 * `transformer-cfm-assetprocessor` : est utilisé en interne pour récupérer une liste des ressources incorporées au fragment

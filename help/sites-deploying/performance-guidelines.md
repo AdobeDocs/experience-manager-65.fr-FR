@@ -11,7 +11,7 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2976'
 ht-degree: 85%

@@ -26,7 +26,7 @@ Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses com
 >
 >L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Le composant de page d’une application sur une seule page (SPA) ne fournit pas les composants HTML de ses composants enfants via un fichier HTL ou JSP et des objets de ressource. Cette opération est déléguée à la structure SPA. La représentation des composants enfants est récupérée en tant que structure de données JSON (à savoir le modèle). Les composants SPA sont ensuite ajoutés à la page conformément au modèle JSON fourni. En tant que telle, la composition initiale du corps du composant de page diffère de celle du code HTML prérendu.
 
@@ -93,7 +93,7 @@ Propriétés des ressources de métadonnées qui décrivent le contenu SPA :
 >
 >Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
 >
->Tout projet AEM doit tirer parti de l’[AEM archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou de l’Angular et tire parti du SDK . Tous les projets  sur doivent être basés sur l’ archétype Maven pour le kit de démarrage de.
+>Tout projet AEM doit tirer parti de la variable [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et qui tire parti du SDK SPA. Tous les projets SPA sur doivent être basés sur Maven Archetype for Starter Kit.
 
 ## Synchronisation des recouvrements de l’éditeur de page {#page-editor-overlay-synchronization}
 
@@ -106,4 +106,4 @@ Lorsque les fonctionnalités de routage sont activées, on part du principe que 
 * `structureDepth` : nombre correspondant à la profondeur de l’arborescence exportée
 * `structurePatterns` : regex ou tableau de regex correspondant à la page à exporter
 
-Cela peut être illustré dans l’exemple de contenu SPA dans `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
+Cela peut être affiché dans l’exemple de contenu SPA dans `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.

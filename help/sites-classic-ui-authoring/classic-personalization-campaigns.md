@@ -1,8 +1,8 @@
 ---
 title: Gestion de campagnes
-seo-title: Gestion de campagnes
+seo-title: Campaign Management
 description: La gestion des campagnes offre aux spécialistes du marketing numérique la possibilité de diffuser du contenu personnalisé et de créer ainsi des expériences dédiées pour les visiteurs. Cela vous permet également d’orchestrer vos campagnes marketing sur les services de messagerie, web et mobiles, et ainsi de faire participer vos visiteurs.
-seo-description: La gestion des campagnes offre aux spécialistes du marketing numérique la possibilité de diffuser du contenu personnalisé et de créer ainsi des expériences dédiées pour les visiteurs. Cela vous permet également d’orchestrer vos campagnes marketing sur les services de messagerie, web et mobiles, et ainsi de faire participer vos visiteurs.
+seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
 uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '628'
 ht-degree: 94%
 
 ---
@@ -39,12 +39,12 @@ La gestion de campagnes comprend plusieurs éléments :
 Dans AEM, les marques constituent l’unité de niveau supérieur et forment un ensemble de 
 **Campagnes**.
 
-* ****
-CampagnesUne campagne est un ensemble de différentes 
+* **Campagnes**
+Une campagne est une collection de 
 **Expériences**.
 
-* ****
-Expériences : le contenu ciblé constitue les différentes expériences, présentées au visiteur au 
+* **Expériences**
+Le contenu ciblé forme les différentes expériences, présentées au visiteur au 
 **Points de contact**. Plusieurs types d’expérience sont disponibles :
 
    * **Teasers**

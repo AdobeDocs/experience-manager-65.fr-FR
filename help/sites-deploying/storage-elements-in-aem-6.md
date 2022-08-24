@@ -1,8 +1,8 @@
 ---
 title: Éléments de stockage dans AEM 6.5
-seo-title: Éléments de stockage dans AEM 6.5
+seo-title: Storage Elements in AEM 6.5
 description: Obtenez des informations sur les mises en œuvre du stockage de nœud disponibles dans AEM 6.5 et sur la maintenance du référentiel.
-seo-description: Obtenez des informations sur les mises en œuvre du stockage de nœud disponibles dans AEM 6.5 et sur la maintenance du référentiel.
+seo-description: Learn about the node storage implementations available in AEM 6.5 and how to maintain the repository.
 uuid: 3b018830-c42e-48e0-9b6f-cd230b02d914
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '714'
 ht-degree: 82%
 
 ---
@@ -78,8 +78,8 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
    * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est de `mongodb://localhost:27017`
    * `db` : nom de la base de donnée Mongo. Par défaut, les nouvelles installations d’AEM 6 utilisent **aem-author** comme nom de la base de données.
-   * `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est de 256.
-   * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est de 256.
+   * `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est 256.
+   * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est 256.
    * `customBlobStore` : valeur booléenne indiquant qu’un entrepôt de données personnalisé sera utilisé. La valeur par défaut est false.
 
 1. Créez un fichier de configuration avec le PID de l’entrepôt de données que vous souhaitez utiliser et modifiez le fichier afin de définir les options de configuration. Pour plus d’informations, voir [Configuration des stocks de nœuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
@@ -92,12 +92,12 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
    Où **`-r`** est le mode d’exécution principal. Dans cet exemple, il commence par la prise en charge MongoDB. 
 
-#### Désactiver les pages THP  {#disabling-transparent-huge-pages}
+#### Désactiver les pages THP {#disabling-transparent-huge-pages}
 
 Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transparent Huge Pages (THP). Tandis qu’AEM effectue des lectures et des écritures affinées, THP est optimisé pour des opérations plus volumineuses. Pour cette raison, il est recommandé de désactiver THP sur le stockage Tar et Mongo. Pour désactiver l’algorithme, procédez comme suit :
 
-1. Ouvrez le fichier `/etc/grub.conf` dans l’éditeur de texte de votre choix.
-1. Ajoutez la ligne suivante au fichier **grub.conf** :
+1. Ouvrez le `/etc/grub.conf` dans l’éditeur de texte de votre choix.
+1. Ajoutez la ligne suivante au **grub.conf** fichier :
 
    ```
    transparent_hugepage=never
@@ -119,11 +119,9 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 >
 >De plus, vous pouvez également consulter les ressources suivantes :
 >
->* Pour plus d’informations sur Transparent Huge Pages sous Red Hat Linux, consultez cet [article](https://access.redhat.com/solutions/46111).
->* Pour obtenir des conseils sur le réglage de Linux, consultez cet [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
-
+>* Pour plus d’informations sur Transparent Huge Pages sous Red Hat Linux, voir ceci [article](https://access.redhat.com/solutions/46111).
+>* Pour obtenir des conseils sur l’optimisation pour Linux, voir cette section [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 >
-
 
 
 ## Maintenance du référentiel {#maintaining-the-repository}

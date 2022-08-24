@@ -1,8 +1,8 @@
 ---
 title: Arborescence de la performance
-seo-title: Arborescence de la performance
+seo-title: Performance Tree
 description: 'Découvrez les étapes qui doivent être suivies pour résoudre les problèmes de performances dans AEM. '
-seo-description: 'Découvrez les étapes qui doivent être suivies pour résoudre les problèmes de performances dans AEM. '
+seo-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
 uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 92%
+source-wordcount: '1188'
+ht-degree: 93%
 
 ---
 
@@ -288,7 +288,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étapes 45<br /> et 47</strong><br /> </td>
    <td>Utilisation de HTTP/2</td>
-   <td>Voir la session des étapes 37,38 et 39. Consultez également <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">cette </a> publication de forum sur la prise en charge HTTP/2.<br /> </td>
+   <td>Voir la session des étapes 37,38 et 39. En outre, extrayez <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">this</a> publication du forum sur la prise en charge HTTP/2.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 49</strong></td>
@@ -313,7 +313,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
      <li>Concaténez les ressources (images, sprite CSS, JSON, etc.)<br /> </li>
      <li>Incorporation de Clientlibs :
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers de bibliothèque cliente</a>  - voir la section Utilisation de l’incorporation pour réduire les requêtes</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers de bibliothèque cliente</a> - voir en-tête Utilisation de l’incorporation pour réduire les requêtes</li>
       </ol> </li>
     </ol> </td>
   </tr>

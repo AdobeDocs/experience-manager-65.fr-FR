@@ -1,8 +1,8 @@
 ---
 title: Pages d’entrée
-seo-title: Pages d’entrée
+seo-title: Landing Pages
 description: Les pages d’entrée vous permettent d’importer, en un tournemain, une conception et du contenu dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement.
-seo-description: Les pages d’entrée vous permettent d’importer, en un tournemain, une conception et du contenu dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement.
+seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
 uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3381'
+source-wordcount: '3335'
 ht-degree: 83%
 
 ---
@@ -37,9 +37,9 @@ La préparation du module de conception pour l’importation est traitée dans [
 
 >[!CAUTION]
 >
->Étant donné que l’importateur de conception requiert l’accès à `/apps`, il ne fonctionne pas dans les environnements cloud en conteneur où `/apps` est immuable.
+>Parce que l’importateur de conception requiert l’accès à `/apps`, il ne fonctionnera pas dans les environnements cloud en conteneur où `/apps` est immuable.
 
-## Que sont les landing pages ? {#what-are-landing-pages}
+## Que sont les pages d’entrée ? {#what-are-landing-pages}
 
 Les pages d’entrée sont des sites comportant une ou plusieurs pages. Elles constituent le « point de terminaison » d’un programme marketing. Par exemple, avec une adresse électronique, AdWords/bannières, des réseaux sociaux, etc. Les objectifs d’une page d’entrée peuvent être multiples, mais tous partagent un point commun, à savoir : le visiteur doit accomplir une tâche, ce dont dépend le succès de la page.
 
@@ -74,7 +74,7 @@ La page d’entrée pour mobiles est créée en tant que page enfant de la page 
 >
 >La page d’entrée pour mobiles est supprimée/désactivée si la page pour ordinateur de bureau l’est également.
 
-## Composants de la page d’entrée  {#landing-page-components}
+## Composants de la page d’entrée {#landing-page-components}
 
 Pour faire en sorte que des parties du fichier HTML importé puissent être modifiées dans AEM, vous pouvez mapper directement le contenu du fichier HTML des pages d’entrée sur des composants AEM. L’importateur de conception accepte, par défaut, les composants suivants :
 
@@ -138,9 +138,9 @@ Vous pouvez utiliser ce composant CTA pour ajouter le lien texte sur la page d�
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
-**** LibelléLe texte que les utilisateurs voient. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
+**Libellé** Le texte que les utilisateurs voient. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
 
-**Target** URLE Saisissez l’URI que les utilisateurs doivent consulter s’ils cliquent sur le texte.
+**URL cible** Saisissez l’URI que les utilisateurs doivent consulter s’ils cliquent sur le texte.
 
 **Options de rendu** Décrit les options de rendu. Vous avez le choix entre les options suivantes :
 
@@ -149,9 +149,9 @@ Vous pouvez utiliser ce composant CTA pour ajouter le lien texte sur la page d�
 * Charger la page dans le cadre parent
 * Annuler tous les cadres et charger la page dans un navigateur
 
-**** CSSdans l’onglet Style, saisissez un chemin d’accès à votre feuille de style CSS.
+**CSS** Dans l’onglet Style , saisissez le chemin d’accès à votre feuille de style CSS.
 
-**** Identifiant dans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
+**ID** Dans l’onglet Style , saisissez l’identifiant du composant pour l’identifier de manière unique.
 
 Voici un exemple de lien de clics publicitaires :
 
@@ -163,9 +163,9 @@ Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un l
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
-**** LibelléTexte visible par les utilisateurs dans le graphique. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
+**Libellé** Texte visible par les utilisateurs dans le graphique. Vous pouvez modifier la mise en forme à l’aide de l’éditeur de texte enrichi.
 
-**Target** URLE Saisissez l’URI que les utilisateurs doivent consulter s’ils cliquent sur l’image.
+**URL cible** Saisissez l’URI que les utilisateurs doivent consulter s’ils cliquent sur l’image.
 
 **Options de rendu** Décrit les options de rendu. Vous avez le choix entre les options suivantes :
 
@@ -174,17 +174,17 @@ Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un l
 * Charger la page dans le cadre parent
 * Annuler tous les cadres et charger la page dans un navigateur
 
-**** CSSdans l’onglet Style, saisissez un chemin d’accès à votre feuille de style CSS.
+**CSS** Dans l’onglet Style , saisissez le chemin d’accès à votre feuille de style CSS.
 
-**** Identifiant dans l’onglet Style, saisissez un identifiant pour le composant afin de l’identifier de manière unique.
+**ID** Dans l’onglet Style , saisissez l’identifiant du composant pour l’identifier de manière unique.
 
 Voici un exemple de lien graphique :
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Formulaire de piste CTA (Appel à l’action){#call-to-action-cta-lead-form}
+### Formulaire de piste CTA (Appel à l’action) {#call-to-action-cta-lead-form}
 
-Le formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/prospect. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Il s’agit généralement du titre, du nom, de l’adresse électronique, de la date de naissance, de l’adresse, du centre d’intérêt, etc. Il fait partie du groupe **Formulaire de piste CTA**.
+Un formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/d’une piste. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Il s’agit généralement du titre, du nom, de l’adresse électronique, de la date de naissance, de l’adresse, du centre d’intérêt, etc. Il fait partie du groupe **Formulaire de piste CTA**.
 
 Voici un exemple de formulaire de piste CTA :
 
@@ -201,7 +201,7 @@ Les champs de formulaires et les éléments peuvent inclure des zones textuelles
 * **Composants Profil**
 Les composants Profil sont associés aux profils des visiteurs utilisés pour la collaboration sociale et pour tout autre domaine où la personnalisation des visiteurs est requise.
 
-Le formulaire ci-dessus illustre un exemple de formulaire ; il est composé du composant **Formulaire de piste** (début et fin), avec les champs **Prénom** et **ID de message électronique** utilisés pour l’entrée et un champ **Envoyer**
+Le formulaire ci-dessus illustre un exemple de formulaire ; se compose de la variable **Formulaire de piste** composant (début et fin), avec **Prénom** et **Email Id** champs utilisés pour la saisie et un **Envoyer** field
 
 Les composants suivants sont disponibles à partir du Sidekick pour le formulaire de piste CTA :
 
@@ -235,19 +235,19 @@ Indique la taille et le style des champs.
 
 La section suivante décrit les composants disponibles pour les formulaires de piste Appel à l’action (CTA).
 
-**** À proposPermet aux utilisateurs d’ajouter des informations.
+**A propos** Permet aux utilisateurs d’ajouter des informations à propos.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-**Champ d’adresse** : permet aux utilisateurs de saisir les informations d’adresse. Lorsque vous configurez ce composant, vous devez saisir le Nom de l’élément dans la boîte de dialogue. Le Nom de l’élément est le nom de l’élément de formulaire. Cela indique l’emplacement de stockage des données dans le référentiel.
+**Champ d’adresse** Permet aux utilisateurs de saisir les informations d’adresse. Lorsque vous configurez ce composant, vous devez saisir le Nom de l’élément dans la boîte de dialogue. Le Nom de l’élément est le nom de l’élément de formulaire. Cela indique l’emplacement de stockage des données dans le référentiel.
 
 ![chlimage_1-36](assets/chlimage_1-36.png)
 
-**Date de** naissance Les utilisateurs peuvent saisir la date de naissance.
+**Date de naissance** Les utilisateurs peuvent saisir la date de naissance.
 
 ![chlimage_1-37](assets/chlimage_1-37.png)
 
-**Email** IdPermet aux utilisateurs de saisir une adresse email (identification).
+**Email Id** Permet aux utilisateurs de saisir une adresse email (identification).
 
 ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -255,19 +255,19 @@ La section suivante décrit les composants disponibles pour les formulaires de p
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
-**** GenderUsers peut sélectionner son genre dans une liste déroulante.
+**Genre** Les utilisateurs peuvent sélectionner leur sexe dans une liste déroulante.
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
-**Nom** Les utilisateurs peuvent saisir les informations Nom.
+**Nom** Les utilisateurs peuvent saisir les informations de nom.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**Formulaire** de piste Ajoutez ce composant pour ajouter un formulaire de piste à votre page d’entrée. Un formulaire de piste comprend automatiquement un champ Début du formulaire de piste et un champ Fin de formulaire de piste. Entre les deux, vous ajoutez les composants « Formulaire de piste » décrits dans cette section.
+**Formulaire de piste** Ajoutez ce composant pour ajouter un formulaire de piste à votre landing page. Un formulaire de piste comprend automatiquement un champ Début du formulaire de piste et un champ Fin de formulaire de piste. Entre les deux, vous ajoutez les composants « Formulaire de piste » décrits dans cette section.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-Le composant Formulaire de piste définit le début et la fin d’un formulaire à l’aide des éléments **Début du formulaire** et **Fin de formulaire**. Ces deux paragraphes sont toujours utilisés conjointement pour s’assurer que le formulaire est correctement défini.
+Le composant Formulaire de piste définit le début et la fin d’un formulaire à l’aide de la fonction **Début du formulaire** et **Fin de formulaire** éléments . Ces deux paragraphes sont toujours utilisés conjointement pour s’assurer que le formulaire est correctement défini.
 
 Après avoir ajouté le formulaire de piste, vous pouvez configurer le début ou la fin du formulaire en cliquant sur **Modifier** dans la barre correspondante.
 
@@ -280,11 +280,11 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 **Page de remerciement**
 Page à référencer pour remercier les visiteurs qui ont saisi des données. Si ce champ est laissé vide, le formulaire est réaffiché après la soumission.
 
-**Démarrer** WorkflowDétermine quel workflow est déclenché une fois qu’un formulaire de piste est envoyé.
+**Démarrer le processus** Détermine le workflow qui est déclenché une fois qu’un formulaire de piste est envoyé.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-**Options** de publication Les options de publication suivantes sont disponibles :
+**Options de publication** Les options de publication suivantes sont disponibles :
 
 * Créer une piste
 * Service de messagerie électronique : créer un abonné et l’ajouter à la liste. Sélectionnez cette option si vous utilisez un fournisseur de services de messagerie tel que ExactTarget.
@@ -292,9 +292,9 @@ Page à référencer pour remercier les visiteurs qui ont saisi des données. Si
 * Service de messagerie électronique : Désabonner l’utilisateur de la liste : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
 * Désabonner l’utilisateur
 
-**Identifiant de formulaire** : l’identifiant de formulaire identifie de manière unique le formulaire de piste. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
+**Identifiant de formulaire** L’identifiant du formulaire identifie de manière unique le formulaire de piste. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
 
-**Load** PathChemin d’accès aux propriétés de noeud utilisées pour charger les valeurs prédéfinies dans les champs du formulaire de piste.
+**Chemin de chargement** Chemin d’accès aux propriétés de noeud utilisé pour charger les valeurs prédéfinies dans les champs du formulaire de piste.
 
 Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
@@ -310,7 +310,7 @@ Si vous validez le formulaire dans son intégralité, vous devez également incl
 * Un script pour la validation du côté serveur :
    ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
-**Configuration de l’action** Selon la sélection dans Options de publication, la configuration de l’action change. Lorsque vous sélectionnez, par exemple, Créer une piste, vous pouvez configurer la liste à laquelle la piste est ajoutée.
+**Configuration d’action** Selon la sélection dans Options de publication, la configuration de l’action change. Lorsque vous sélectionnez, par exemple, Créer une piste, vous pouvez configurer la liste à laquelle la piste est ajoutée.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -340,13 +340,13 @@ Trois étapes sont nécessaires lorsque vous créez une page d’entrée :
 1. [Préparez le code HTML pour l’importation.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Importez le module de conception.
 
-### Utilisation de l’importateur de conception  {#use-of-the-design-importer}
+### Utilisation de l’importateur de conception {#use-of-the-design-importer}
 
 Dans la mesure où l’importation de pages implique la préparation du code HTML, la vérification et le test des pages, l’importation de pages d’entrée est conçue comme une tâche d’administrateur. En tant qu’administrateur, les utilisateurs effectuant l’importation doivent disposer d’autorisations de lecture, d’écriture, de création et de suppression sur `/apps`. Si l’utilisateur ne dispose pas de ces autorisations, l’importation échouera.
 
 >[!NOTE]
 >
->L’importateur de conception étant conçu comme un outil d’administration nécessitant des autorisations de lecture, d’écriture, de création et de suppression sur `/apps`, Adobe ne recommande pas d’utiliser l’importateur de conception en production.
+>Parce que l’importateur de conception est conçu comme un outil d’administration qui nécessite des autorisations de lecture, d’écriture, de création et de suppression sur `/apps`, Adobe ne recommande pas d’utiliser l’importateur de conception en production.
 
 Adobe recommande d’utiliser l’importateur de conception sur une instance intermédiaire. Sur une instance intermédiaire, l’importation peut être testée et validée par un développeur qui est ensuite responsable du déploiement du code sur l’instance de production.
 
@@ -369,11 +369,11 @@ Pour créer une page d’entrée, procédez comme suit :
 
    La nouvelle page d’importateur s’affiche.
 
-### Préparation du fichier HTML pour l’importation {#preparing-the-html-for-import}
+### Préparation du fichier HTML en vue de l’importation {#preparing-the-html-for-import}
 
 Avant d’importer le bloc de conception, il convient de préparer le fichier HTML. Pour plus d’informations, reportez-vous à la section [Extension et configuration de l’importateur de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
-### Importation du bloc de conception  {#importing-the-design-package}
+### Importation du bloc de conception {#importing-the-design-package}
 
 Après avoir créé une page d’importateur, vous pouvez y importer un module de conception. Vous obtiendrez des détails sur la création du module de conception et la structure recommandée dans [Extension et configuration de l’importateur de conception](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
@@ -422,13 +422,13 @@ Le téléchargement du fichier compressé vous permet d’enregistrer celui qui 
 
 Pour télécharger le bloc de conception importé, cliquez sur **Télécharger le fichier zip** dans la barre d’outils de la page d’entrée.
 
-### Affichage d’informations d’importation  {#viewing-import-information}
+### Affichage d’informations d’importation {#viewing-import-information}
 
 Dans l’interface utilisateur classique, vous pouvez afficher, à tout moment, des informations sur la dernière importation en cliquant sur le point d’exclamation bleu dans la partie supérieure de la page d’entrée.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
-Si le module de conception importé contient des erreurs (s’il fait référence, par exemple, à des images/scripts qui n’existent pas dans le module), l’importateur de conception affiche ces problèmes sous la forme d’une liste. Pour afficher la liste des problèmes, dans l’interface utilisateur classique, cliquez sur le lien correspondant dans la barre d’outils de la page d’entrée. Dans l’image suivante, cliquez sur le lien **Problèmes** pour ouvrir la fenêtre Problèmes d’importation.
+Si le module de conception importé contient des erreurs (s’il fait référence, par exemple, à des images/scripts qui n’existent pas dans le module), l’importateur de conception affiche ces problèmes sous la forme d’une liste. Pour afficher la liste des problèmes, dans l’interface utilisateur classique, cliquez sur le lien correspondant dans la barre d’outils de la page d’entrée. Dans l’image suivante, cliquez sur **Problèmes** Le lien ouvre la fenêtre Problèmes d’importation .
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -436,7 +436,7 @@ Si le module de conception importé contient des erreurs (s’il fait référenc
 
 Si vous souhaitez réimporter votre module de conception de la page d’entrée après y avoir apporté des modifications, vous pouvez « effacer » la page d’entrée en cliquant sur **Effacer** dans la partie supérieure de la page d’entrée dans l’interface utilisateur classique ou en cliquant sur Effacer dans le menu Paramètres de l’interface utilisateur optimisée pour les écrans tactiles. La page d’entrée importée est alors supprimée et une page d’importateur vierge est créée.
 
-Lors de l’effacement de la page d’entrée, vous pouvez supprimer les modifications du contenu. Si vous cliquez sur **Non**, les modifications de contenu sont conservées, c’est-à-dire que la structure sous `jcr:content/importer`est conservée et que seuls le composant de page d’importateur et les ressources de `etc/design` sont supprimés. En revanche, si vous cliquez sur **Oui**, la balise `jcr:content/importer` est également supprimée.
+Lors de l’effacement de la page d’entrée, vous pouvez supprimer les modifications du contenu. Si vous cliquez sur **Non**, les modifications de contenu sont conservées, c’est-à-dire la structure sous `jcr:content/importer`est conservé et seul le composant de page d’importateur et les ressources dans `etc/design` sont supprimées. En revanche, si vous cliquez sur **Oui**, la variable `jcr:content/importer` est également supprimé.
 
 >[!NOTE]
 >
@@ -452,13 +452,13 @@ Pour ajouter des composants sur la page d’entrée, faites-les glisser et dépo
 >
 >Si un composant de la page d’entrée ne peut pas être modifié, vous devez réimporter le fichier compressé après avoir [modifié le fichier HTML.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Cela signifie que les parties non modifiables n’ont pas été converties en composants AEM au cours de l’importation.
 
-### Suppression d’une page d’entrée  {#deleting-a-landing-page}
+### Suppression d’une page d’entrée {#deleting-a-landing-page}
 
 La suppression d’une page d’entrée s’apparente à la suppression d’une page AEM normale.
 
 Il convient toutefois de signaler une exception : lorsque vous supprimez une page d’entrée d’ordinateur de bureau, la page correspondante pour mobiles l’est également (le cas échéant), mais pas l’inverse.
 
-### Publication d’une page d’entrée  {#publishing-a-landing-page}
+### Publication d’une page d’entrée {#publishing-a-landing-page}
 
 Vous pouvez publier la landing page et toutes ses dépendances comme si vous publiiez une page normale.
 

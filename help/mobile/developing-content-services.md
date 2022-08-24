@@ -1,20 +1,20 @@
 ---
 title: Content Services
-seo-title: Content Services
+seo-title: Content Services
 description: Content Services
-seo-description: 'null'
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-source-git-commit: 48726639e93696f32fa368fad2630e6fca50640e
+exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 10%
+source-wordcount: '299'
+ht-degree: 9%
 
 ---
-
 
 # Content Services{#content-services}
 
@@ -34,7 +34,7 @@ Content Services introduit plusieurs nouveaux éléments d’AEM qui permettent 
 
 Ces éléments sont nécessaires pour préserver la flexibilité et permettre une extension future en fournissant une couche d’abstraction entre le contenu géré AEM et les applications mobiles qui consomment le contenu. Cela permet à AEM Content Services de fonctionner comme une couche d’abstraction entre les exigences de contenu de l’application native et le référentiel de contenu AEM.
 
-Content Services peut diffuser le contenu sous forme de ressources, de code HTML (HTML/CSS/JS) ou de contenu indépendant des canaux.
+Content Services peut diffuser le contenu sous la forme de ressources, de HTML empaqueté (HTML/CSS/JS) ou de contenu indépendant du canal.
 
 >[!CAUTION]
 >
@@ -42,7 +42,7 @@ Content Services peut diffuser le contenu sous forme de ressources, de code HTML
 >
 >Avant de commencer à utiliser Content Services, assurez-vous d’activer l’indicateur Content Services. Pour activer la création et la gestion des modèles dans votre application, vous devez activer les modèles de données dans le navigateur de configuration.
 >
->Pour plus d’informations, voir **[Administration de Content Services](/help/mobile/developing-content-services.md)** et la documentation [Navigateur de configuration](/help/sites-administering/configurations.md) .
+>Voir **[Administration de Content Services](/help/mobile/developing-content-services.md)** et le [Explorateur de configuration](/help/sites-administering/configurations.md) pour plus d’informations.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 

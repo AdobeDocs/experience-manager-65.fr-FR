@@ -1,6 +1,6 @@
 ---
 title: Bonnes pratiques relatives au traitement des formats de fichiers pris en charge
-description: Bonnes pratiques pour traiter les différents types de fichiers pris en charge à l’aide de  [!DNL Experience Manager Assets].
+description: Bonnes pratiques relatives au traitement des différents types de fichiers pris en charge à l’aide de [!DNL Experience Manager Assets].
 contentOwner: AG
 role: Admin
 feature: Asset Management,Developer Tools
@@ -14,17 +14,17 @@ ht-degree: 47%
 
 # Meilleures pratiques relatives au format de fichier des ressources {#assets-file-format-best-practices}
 
-[!DNL Adobe Experience Manager Assets] prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques d’Adobe prises en charge sont les suivantes : [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer et [!DNL Adobe InDesign Server]. En outre, [!DNL Experience Manager Assets] prend en charge les bibliothèques tierces, notamment [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.
+[!DNL Adobe Experience Manager Assets] prend en charge de nombreuses bibliothèques de formats de fichiers propriétaires et tierces pour gérer les divers besoins des utilisateurs en matière de prise en charge des fichiers. Les bibliothèques d’Adobes prises en charge sont les suivantes : [!DNL Adobe Camera Raw], Gibson, Adobe PDF Rasterizer et [!DNL Adobe InDesign Server]. En outre, [!DNL Experience Manager Assets] prend en charge les bibliothèques tierces, notamment [!DNL ImageMagick], [!DNL TwelveMonkeys], etc.
 
 Pour les formats de fichiers pris en charge, voir [Formats pris en charge par AEM Assets](/help/assets/assets-formats.md).
 
 >[!TIP]
 >
->Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez le service clientèle d’Adobe si vous prévoyez de traiter de nombreux fichiers PSD ou PSB volumineux. Collaborez avec le représentant du service clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
+>Si vous utilisez [!DNL Experience Manager] sur Adobe Managed Services (AMS), contactez le service clientèle si vous envisagez de traiter un grand nombre de fichiers PSD ou PSB volumineux. Collaborez avec le représentant du service clientèle d’Adobe afin de mettre en oeuvre ces bonnes pratiques pour votre déploiement AMS et de choisir les meilleurs outils et modèles possibles pour les formats propriétaires d’Adobe. [!DNL Experience Manager] peut ne pas traiter des fichiers PSB à très haute résolution de plus de 3 000 x 2 3 000 pixels.
 
 ## [!DNL Adobe Camera Raw] bibliothèque {#adobe-camera-raw-library}
 
-Pour des performances optimales, Adobe recommande d’utiliser la bibliothèque [!DNL Adobe Camera Raw] pour les fichiers RAW et DNG.
+Pour des performances optimales, Adobe recommande d’utiliser [!DNL Adobe Camera Raw] pour les fichiers RAW et DNG.
 
 [!DNL Adobe Camera Raw] prend en charge le profil colorimétrique CMJN en tant qu’entrée. Cependant, elle génère la sortie dans l’espace colorimétrique RVB et ne la prend en charge qu’au format JPEG. Elle ne conserve pas l’espace colorimétrique du fichier source (CMJN, par exemple) dans les miniatures.
 
@@ -42,11 +42,11 @@ Les miniatures et les aperçus générés à l’aide de l’interpréteur de PD
 
 ## [!DNL Adobe InDesign Server] {#adobe-indesign-server}
 
-Adobe vous recommande d’utiliser [!DNL Adobe InDesign Server] pour extraire des rendus spécifiques à [!DNL Adobe InDesign], tels que IDML et HTML. Pour plus d’informations, voir [Ajout de ressources de Experience Manager comme références dans Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
+Adobe recommande d’utiliser [!DNL Adobe InDesign Server] extraire [!DNL Adobe InDesign]Rendus spécifiques, tels que IDML et HTML. Pour plus d’informations, voir [Ajout de ressources Experience Manager en tant que références dans Adobe InDesign](/help/assets/managing-linked-subassets.md#refai).
 
 ## [!DNL Dynamic Media] {#dynamic-media}
 
-[!DNL Dynamic Media] génère et diffuse plusieurs variations de contenu riche en temps réel via son réseau mondial, extensible et optimisé pour garantir de bonnes performances. Il diffuse des expériences d’affichage interactif et simplifie le processus de gestion des campagnes numériques. Pour plus d’informations sur l’activation de [!DNL Dynamic Media], voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md).
+[!DNL Dynamic Media] génère et diffuse plusieurs variations de contenu riche en temps réel via son réseau mondial, extensible et optimisé pour garantir de bonnes performances. Il diffuse des expériences d’affichage interactif et simplifie le processus de gestion des campagnes numériques. Pour plus d’informations sur l’activation [!DNL Dynamic Media], voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md).
 
 Actuellement, [!DNL Dynamic Media] peut prendre en charge les vidéos jusqu’à 15 Go de contenu par fichier.
 
@@ -59,7 +59,7 @@ Adobe recommande d’utiliser la bibliothèque ImageMagick dans les cas suivants
 * Pour conserver la transparence.
 * Pour traiter des fichiers PSD et PSB.
 
-Pour savoir comment configurer la bibliothèque [!DNL ImageMagick] dans [!DNL Experience Manager], voir [Utilisation d’ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](/help/assets/best-practices-for-imagemagick.md).
+Pour savoir comment configurer le [!DNL ImageMagick] bibliothèque dans [!DNL Experience Manager], voir [Utilisation d’ImageMagick](/help/assets/media-handlers.md#an-example-using-imagemagick). Pour une utilisation optimale, voir [Bonnes pratiques pour configurer ImageMagick](/help/assets/best-practices-for-imagemagick.md).
 
 ## Bibliothèque de transcodage d’imagerie (ITL) {#image-transcoding-library}
 

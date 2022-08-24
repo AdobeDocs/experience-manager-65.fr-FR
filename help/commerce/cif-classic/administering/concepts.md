@@ -36,7 +36,6 @@ Cela signifie que :
 >* [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
 >* [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
 >* [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
@@ -396,7 +395,7 @@ Ces tests des performances impliquent de connaître et d’analyser la cible :
 
 * Volumes de contenu
 
-   * Ressources
+   * Assets
    * Produits internationalisés localisés et codes SKU
 
 * Activité de l’utilisateur
@@ -581,7 +580,7 @@ Une promotion peut être contenue dans une expérience ou directement dans la ca
 >
 >Les [promotions Hybris](https://www.hybris.com/modules/promotion) et les [bons Hybris](https://www.hybris.com/en/modules/voucher) couvrent tout ce qui influence le panier et est lié au prix. Le contenu marketing spécifique à une promotion (bannières, etc.) ne fait pas partie de la promotion Hybris.
 
-## Personnalisation {#personalization}
+## Personnalisation  {#personalization}
 
 ### Enregistrement et comptes des clients {#customer-registration-and-accounts}
 

@@ -38,7 +38,6 @@ Lors de l’administration des workflows, vous pouvez les démarrer selon diffé
 >* [Application de workflows à des ressources de gestion des ressources numériques](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Projets de traduction](/help/sites-administering/tc-manage.md)
-
 >
 
 
@@ -50,7 +49,7 @@ Vous pouvez démarrer un workflow [reposant sur l’un des modèles](/help/sites
 
 Le lanceur de workflows surveille les modifications du référentiel de contenu pour lancer des workflows en fonction du type d’emplacement et de ressource du nœud modifié.
 
-À l’aide de **Launcher**, vous pouvez :
+En utilisant la variable **Lanceur** vous pouvez :
 
 * afficher les workflows déjà lancés pour des nœuds spécifiques ;
 * sélectionner un workflow à lancer lorsqu’un certain nœud/type de nœud a été créé/modifié/supprimé ;
@@ -59,7 +58,7 @@ Le lanceur de workflows surveille les modifications du référentiel de contenu 
 Vous pouvez créer un lanceur sur n’importe quel nœud. Cependant, les modifications apportées à certains nœuds ne lancent pas de workflows. Les modifications apportées à des nœuds sous les chemins d’accès ci-dessous n’entraînent pas le lancement des workflows :
 
 * `/var/workflow/instances`
-* Tout noeud workflow-inbox situé n’importe où dans la branche `/home/users`
+* Tout noeud de boîte de réception de processus situé n’importe où dans `/home/users` branche
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -68,7 +67,7 @@ Vous pouvez créer un lanceur sur n’importe quel nœud. Cependant, les modific
 * `/var/mobile`
 * `/var/statistics`
 
-   * Exception : Les modifications apportées aux noeuds situés sous `/var/statistics/tracking` *do* entraînent le lancement des workflows.
+   * Exception : Modifications apportées aux noeuds sous `/var/statistics/tracking` *do* lancer les workflows.
 
 Différentes définitions sont incluses avec l’installation standard. Elles sont utilisées pour les tâches de gestion des actifs numériques et de collaboration sociale :
 
@@ -88,16 +87,16 @@ Un module de workflow :
 
 ## Démarrage d’un workflow à partir de la console Modèles {#starting-a-workflow-from-the-models-console}
 
-1. Accédez à la console **Modèles** à l’aide de **Outils**, **Workflow**, puis **Modèles**.
+1. Accédez au **Modèles** console à l’aide de **Outils**, **Workflow**, puis **Modèles**.
 1. Sélectionnez le workflow (selon la vue de la console). Vous pouvez également utiliser la fonction Rechercher (dans la partie supérieure gauche), si nécessaire :
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >L’indicateur **[Transitoire](/help/sites-developing/workflows.md#transient-workflows)** affiche les workflows pour lesquels l’historique des workflows ne sera pas conservé.
+   >Le **[Transitoire](/help/sites-developing/workflows.md#transient-workflows)** affiche les workflows pour lesquels l’historique des workflows ne sera pas conservé.
 
-1. Sélectionnez **Démarrer le processus** dans la barre d’outils.
+1. Sélectionner **Démarrer le processus** dans la barre d’outils.
 1. La boîte de dialogue Exécuter le workflow s’ouvre, d’où vous pouvez spécifier les éléments suivants :
 
    * **Charge utile**
@@ -115,8 +114,8 @@ Un module de workflow :
 
 ## Création d’une configuration de lanceur {#creating-a-launcher-configuration}
 
-1. Accédez à la console **Lanceurs de workflow** à l’aide de **Outils**, **Processus**, puis **Lanceurs**.
-1. Sélectionnez **Créer**, puis **Ajouter le lanceur** pour ouvrir la boîte de dialogue :
+1. Accédez au **Lanceurs de workflow** console à l’aide de **Outils**, **Workflow**, puis **Lanceurs**.
+1. Sélectionner **Créer**, puis **Ajouter un lanceur** pour ouvrir la boîte de dialogue :
 
    ![wf-105](assets/wf-105.png)
 
@@ -174,7 +173,7 @@ Un module de workflow :
       Cette propriété de lanceur est une liste d’éléments séparés par des virgules : &quot;
 
       * `property-name` ignore les événements `jcr` déclenchés avec le nom de propriété spécifié. ``
-      * `event-user-data:<*someValue*>` ignore tout événement contenant le  `*<someValue*`>  `user-data` défini via l’ [ `ObservationManager` API] (https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+      * `event-user-data:<*someValue*>` ignore tout événement contenant la variable `*<someValue*`> `user-data` défini par le biais de la variable [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
       Par exemple :
 
@@ -188,7 +187,7 @@ Un module de workflow :
 
 
 
-1. Sélectionnez **Créer** pour créer le lanceur et revenir à la console.
+1. Sélectionner **Créer**, pour créer le lanceur et revenir à la console.
 
    Une fois que l’événement approprié se produit, le lanceur est déclenché et le workflow est démarré.
 

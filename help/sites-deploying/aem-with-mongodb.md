@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '6496'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -277,7 +277,7 @@ MongoDB s’exécute sur un certain nombre de systèmes d’exploitation, dont u
 
 #### Windows {#windows}
 
-* Envisagez de désactiver les mises à jour de &quot;l’heure du dernier accès&quot; NTFS. Cela revient à désactiver atime sur les systèmes de type Unix.
+* Envisagez de désactiver les mises à jour « Heure du dernier accès » NTFS. Cela revient à désactiver atime sur les systèmes de type Unix.
 
 ### WiredTiger {#wiredtiger}
 
@@ -287,7 +287,7 @@ Depuis MongoDB 3.2, le moteur de stockage par défaut de MongoDB est WiredTiger
 
 WiredTiger utilise un contrôle d’accès simultané au niveau du document pour les opérations d’écriture. De cette manière, plusieurs clients peuvent modifier, en même temps, différents documents d’une collection.
 
-Pour la plupart des opérations de lecture et d’écriture, WiredTiger utilise un contrôle d’accès simultané optimiste. WiredTiger utilise uniquement des verrous intentionnels aux niveaux global, de la base de données et de la collection. Lorsque le moteur de stockage détecte des conflits entre deux opérations, un conflit d’écriture entraîne la reprise transparente de l’opération par MongoDB. Certaines opérations globales, généralement de courte durée impliquant plusieurs bases de données, nécessitent toujours un verrouillage global à l’échelle de l’instance.
+Pour la plupart des opérations de lecture et d’écriture, WiredTiger utilise un contrôle d’accès simultané optimiste. WiredTiger utilise uniquement des verrous intentionnels aux niveaux global, de la base de données et de la collection. Lorsque le moteur de stockage détecte des conflits entre deux opérations, l’une d’elles fait l’objet d’un conflit d’écriture et MongoDB tente alors de la relancer de manière transparente. Certaines opérations globales (généralement des opérations de courte durée impliquant plusieurs bases de données) nécessitent toutefois un verrou global « à l’échelle de l’instance ».
 
 D’autres opérations (la suppression d’une collection, par exemple) nécessitent un verrou de base de données exclusif.
 

@@ -12,7 +12,7 @@ discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '7850'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par p
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -212,12 +212,12 @@ Convertissez un document Microsoft Word en document PDF à l’aide de l’API 
 1. Créez un client Generate PDF.
 
    * Créez un objet `GeneratePDFServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne indiquant le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
+   * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `GeneratePDFServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
@@ -265,7 +265,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -364,19 +364,19 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client Generate PDF.
 
    * Créez un objet `GeneratePDFServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le `System.ServiceModel.EndpointAddress` constructeur. Transmettez une valeur de chaîne spécifiant le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
+   * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `GeneratePDFServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le contenu du fichier HTML à convertir en document PDF.
@@ -391,12 +391,12 @@ Pour convertir le contenu HTML en document PDF à l’aide de l’API Generate 
    * Un objet `java.lang.String` contenant les paramètres de type de fichier à utiliser lors de la conversion.
    * Un objet de chaîne contenant les paramètres de sécurité à utiliser.
    * Un objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
-   * Un objet `BLOB` facultatif contenant des informations sur les métadonnées à appliquer au document PDF.
+   * Un objet `BLOB` facultatif contenant des informations de métadonnées à appliquer au document PDF.
    * Un paramètre de sortie de type `BLOB` renseigné par la méthode `CreatePDF2`. La méthode `CreatePDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
 
 1. Récupérez les résultats.
 
-   * Récupérez le document PDF converti en attribuant au champ `MTOM` de l’objet `BLOB` un tableau d’octets. Le tableau d’octets représente le document PDF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `HtmlToPDF2`.
+   * Récupérez le document PDF converti en attribuant au champ `MTOM` de l’objet `BLOB` à un tableau d’octets. Le tableau d’octets représente le document PDF converti. Veillez à utiliser l’objet `BLOB` servant de paramètre de sortie pour la méthode `HtmlToPDF2`.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF converti.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
@@ -415,7 +415,7 @@ Cette section décrit comment utiliser l’API Java Generate PDF et l’API Web 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -431,7 +431,7 @@ Pour convertir un document PDF en l’un des types pris en charge, procédez com
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
-**Créer un client Generate PDF**
+**Créer un client Generate PDF**
 
 Avant de pouvoir effectuer par programmation une opération Generate PDF, vous devez créer un client de service Generate PDF. Si vous utilisez l’API Java, créez un objet `GeneratePdfServiceClient`. Si vous utilisez l’API Web Service, créez un objet `GeneratePDFServiceService`.
 
@@ -520,14 +520,14 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
 1. Créez un client Generate PDF.
 
    * Créez un objet `GeneratePDFServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne indiquant le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
+   * Créez un objet `GeneratePDFServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Toutefois, spécifiez `?blob=mtom`.
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `GeneratePDFServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez le document du PDF à convertir.
@@ -547,7 +547,7 @@ Convertissez un document PDF en fichier RTF à l’aide de l’API Generate PDF 
    * Objet `java.lang.String` indiquant l’emplacement du fichier.
    * Objet de chaîne spécifiant le type de fichier cible pour la conversion. Spécifiez `RTF`.
    * Objet `BLOB` facultatif contenant les paramètres à appliquer lors de la génération du document PDF.
-   * Paramètre de sortie de type `BLOB` renseigné par la méthode `ExportPDF2`. L’objet `ExportPDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
+   * Paramètre de sortie de type `BLOB` renseigné par la méthode `ExportPDF2`. La méthode `ExportPDF2` renseigne cet objet avec le document converti. (Cette valeur de paramètre est requise uniquement pour l’appel du service web).
 
 1. Enregistrez le fichier converti.
 

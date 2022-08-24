@@ -14,13 +14,13 @@ exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 source-git-commit: 08e7cbe50fbfb301b38c3c36dfa22bfc1024e181
 workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 61%
+ht-degree: 60%
 
 ---
 
 # Utilisation de l’outil de migration CRX2OAK{#using-the-crx-oak-migration-tool}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 CRX2Oak est un outil qui a été conçu pour effectuer la migration des données entre différents référentiels.
 
@@ -154,7 +154,7 @@ Voir [Documentation Apache](https://jackrabbit.apache.org/oak/docs/migration.htm
 
 * `--copy-orphaned-versions`: Ignore la copie des versions orphelines. Les paramètres pris en charge sont les suivants : `true`, `false` et `yyyy-mm-dd`. La valeur par défaut est `true`.
 
-* `--copy-versions:` Copie le stockage de la version. Paramètres: `true`, `false`, `yyyy-mm-dd`. La valeur par défaut est `true`.
+* `--copy-versions:` Copie le stockage de la version. Paramètres : `true`, `false`, `yyyy-mm-dd`. La valeur par défaut est `true`.
 
 #### Options de chemin {#path-options}
 

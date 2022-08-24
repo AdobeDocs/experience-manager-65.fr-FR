@@ -1,8 +1,8 @@
 ---
 title: Lancements
-seo-title: Lancements
+seo-title: Launches
 description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
-seo-description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
+seo-description: Launches enable you to efficiently develop content for a future release. They allow you to make changes ready for future publication, while maintaining your current pages
 uuid: 4bbd9865-735d-4232-b69c-b64193ac5d83
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '827'
 ht-degree: 94%
 
 ---
@@ -29,7 +29,7 @@ Par exemple, les pages de produits saisonniers de votre boutique en ligne sont m
 * Modifications apportées aux pages source dans le cadre des tâches de maintenance normales. Ces modifications sont automatiquement dupliquées dans les pages de lancement.
 * Modifications effectuées directement sur les pages de lancement en vue du prochain trimestre.
 
-À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées. 
+À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées.
 
 Les lancements peuvent également être :
 
@@ -60,7 +60,7 @@ La fonction Lancements vous permet de :
 * Modifier la configuration de lancement :
 
    * Ajoutez ou supprimez des pages et/ou des branches vers/à partir du lancement.
-   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**. 
+   * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**.
 
 * Vous pouvez convertir et modifier le contenu manuellement ou automatiquement :
 
@@ -69,7 +69,7 @@ La fonction Lancements vous permet de :
       * Convertissez votre contenu de lancement en **Cible** (pages source) lorsqu’il est prêt à être publié.
       * Modifiez le contenu des pages source (après les avoir à nouveau converties).
       * Convertissez toutes les pages ou uniquement celles qui ont été modifiées.
-   * Automatiquement, ce qui implique les étapes suivantes : 
+   * Automatiquement, ce qui implique les étapes suivantes :
 
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
 
@@ -80,8 +80,8 @@ La fonction Lancements vous permet de :
 
 * Mettez à jour vos pages source et de lancement en parallèle :
 
-   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy). 
-   * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source. 
+   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
+   * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -100,7 +100,7 @@ La fonction Lancements vous permet de :
 >
 >La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
->Si vous rencontrez des difficultés, contactez votre administrateur système. 
+>Si vous rencontrez des difficultés, contactez votre administrateur système.
 
 >[!CAUTION]
 >

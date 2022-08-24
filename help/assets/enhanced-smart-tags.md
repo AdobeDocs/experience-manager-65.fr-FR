@@ -16,9 +16,9 @@ ht-degree: 56%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html?lang=en) |
+| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html?lang=en) |
 
 Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il comprend essentiellement une liste des mots-clés que les employés, les partenaires et les clients utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec un vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources sont facilement identifiées et récupérées.
 
@@ -36,7 +36,7 @@ Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe D
 
 En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
-* Intégration 
+* Intégration
 * Passage en revue des ressources et des balises (définition de la taxonomie)
 * Entraînement du service de contenu dynamique
 * Balisage automatique
@@ -78,7 +78,7 @@ Le service applique des balises intelligentes aux rendus de ressources des types
 * `image/pjpeg`
 * `image/png`
 
-## Intégration  {#onboarding}
+## Intégration {#onboarding}
 
 Le service de contenu dynamique est disponible à l’achat sous la forme d’un module complémentaire pour [!DNL Experience Manager]. Une fois l’achat effectué, un courrier électronique est envoyé à l’administrateur de votre entreprise avec un lien vers [!DNL Adobe I/O].
 

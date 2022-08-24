@@ -1,8 +1,8 @@
 ---
 title: Personnalisation des pages affichées par le gestionnaire d’erreurs
-seo-title: Personnalisation des pages affichées par le gestionnaire d’erreurs
+seo-title: Customizing Pages shown by the Error Handler
 description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP.
-seo-description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP.
+seo-description: AEM comes with a standard error handler for handling HTTP errors
 uuid: aaf940fd-e428-4c7c-af7f-88b1d02c17c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 83%
+source-wordcount: '518'
+ht-degree: 82%
 
 ---
 
@@ -23,7 +23,7 @@ AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Il existe des scripts fournis par le système (sous `/libs/sling/servlet/errorhandler`) pour répondre aux codes d’erreur. Par défaut, les scripts suivants sont disponibles avec une instance CQ standard :
+Les scripts fournis par le système existent (sous `/libs/sling/servlet/errorhandler`) pour répondre aux codes d’erreur, les éléments suivants sont disponibles par défaut avec une instance CQ standard :
 
 * 403.jsp
 * 404.jsp
@@ -40,7 +40,7 @@ Il existe des scripts fournis par le système (sous `/libs/sling/servlet/errorha
 
 ## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
-Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées seront créées sous `/apps` et recouvriront les pages par défaut (qui se trouvent sous `/libs`).
+Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées seront créées sous `/apps` et superposez les pages par défaut (qui se trouvent sous `/libs`).
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-
 
 Dans le cas contraire, le code de réponse est défini sur 500, mais le script `500.jsp` n’est pas exécuté.
 
-Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script. `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!CAUTION]
 >

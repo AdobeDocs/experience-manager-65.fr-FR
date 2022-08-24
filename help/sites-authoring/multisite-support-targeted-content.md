@@ -1,8 +1,8 @@
 ---
 title: Utilisation de contenu ciblé sur plusieurs sites
-seo-title: Utilisation de contenu ciblé sur plusieurs sites
+seo-title: Working with Targeted Content in Multisites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
-seo-description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
+seo-description: If you need to manage targeted content, such as activities, experiences, and offers between your sites, you can take advantage of AEM's built-in multisite support for targeted content
 uuid: acb2ffe1-d846-4580-bb69-d5af860796db
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2906'
+source-wordcount: '2872'
 ht-degree: 100%
 
 ---
@@ -59,8 +59,7 @@ Un site ou une Live Copy présente un lien vers une zone contenant les activité
 >
 
 
-
-## Scénarios d’utilisation  {#use-cases}
+## Scénarios d’utilisation {#use-cases}
 
 Vous pouvez configurer la prise en charge de sites multiples pour le contenu ciblé de plusieurs manières, en fonction de vos besoins. Cette section décrit le fonctionnement théorique dans le cas d’une marque. En outre, dans [Exemple : ciblage de contenu basé sur la géographie](#example-targeting-content-based-on-geography), vous pouvez découvrir une application réelle du ciblage de contenu sur plusieurs sites.
 
@@ -132,7 +131,7 @@ Vous pouvez à tout moment suspendre l’héritage ou désolidariser complèteme
 >
 >Pour une approche plus technique de cette fonction, voir [Structure de la gestion de sites multiples pour le contenu ciblé](/help/sites-authoring/technical-multisite-targeted.md).
 
-### Comparaison de la création d’une zone simple et de la création d’une zone comme Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Comparaison de la création d’une zone simple et de la création d’une zone comme Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
 Dans AEM, vous avez la possibilité de simplement créer une zone ou de la créer comme Live Copy. La création d’une zone permet de regrouper les activités et tout ce qui appartient à ces activités, comme les offres, les expériences, etc. Vous créez une zone lorsque vous souhaitez créer un ensemble complètement distinct de contenu ciblé ou lorsque vous souhaitez partager un ensemble de contenu ciblé.
 
@@ -153,7 +152,7 @@ Pour mettre en place cette configuration dans AEM, procédez comme suit :
 * Le site C est lié à la zone héritée, qui est une Live Copy de la zone maître. Créez une zone comme Live Copy (avec une Live Copy reposant sur la zone maître). La zone héritée hérite des activités de la zone maître lors du déploiement.
 * Le site D est lié à sa propre zone isolée. Créez une zone complètement nouvelle sans aucune activité définie. La zone isolée ne partagera les activités avec aucun autre site.
 
-## Création de zones  {#creating-new-areas}
+## Création de zones {#creating-new-areas}
 
 Les zones peuvent couvrir les activités et les offres. Après avoir créé une zone dans l’une d’entre elles (par exemple, les activités), la zone devient également disponible dans l’autre (par exemple, les offres).
 
@@ -176,7 +175,7 @@ Pour créer une zone :
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-## Création de zones comme Live Copies {#creating-areas-as-live-copies}
+## Création de zones comme Live Copies {#creating-areas-as-live-copies}
 
 Vous créez une zone comme Live Copy afin d’hériter du contenu ciblé à travers les structures de site.
 
@@ -251,8 +250,7 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >
 
 
-
-### Suspension de l’héritage  {#suspending-inheritance}
+### Suspension de l’héritage {#suspending-inheritance}
 
 Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activité :
 
@@ -269,7 +267,7 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
-### Rompre l’héritage {#breaking-inheritance}
+### Rupture de l’héritage {#breaking-inheritance}
 
 Pour rompre l’héritage du contenu ciblé dans une activité :
 
@@ -294,7 +292,7 @@ Pour restaurer l’héritage du contenu ciblé dans une activité :
 
 1. Appuyez ou cliquez sur **Reprendre** pour confirmer que vous souhaitez reprendre l’héritage de Live Copy. Toutes les modifications apportées à l’activité en cours sont perdues si vous reprenez l’héritage.
 
-## Suppression de zones  {#deleting-areas}
+## Suppression de zones {#deleting-areas}
 
 Lorsque vous supprimez une zone, vous supprimez toutes les activités au sein de cette zone. AEM vous avertit avant toute suppression de zone. Si vous supprimez une zone à laquelle un site est lié, le mappage de cette marque sera automatiquement redéfini sur la zone maître.
 

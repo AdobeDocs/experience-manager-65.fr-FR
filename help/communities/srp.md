@@ -1,8 +1,8 @@
 ---
 title: Présentation du fournisseur de ressources de stockage
-seo-title: Présentation du fournisseur de ressources de stockage
+seo-title: Storage Resource Provider Overview
 description: Stockage commun pour les communautés
-seo-description: Stockage commun pour les communautés
+seo-description: Common storage for Communities
 uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,32 +12,32 @@ discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1133'
 ht-degree: 2%
 
 ---
 
 # Présentation du fournisseur de ressources de stockage {#storage-resource-provider-overview}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
-Depuis AEM Communities 6.1, le contenu de la communauté, communément appelé contenu généré par l’utilisateur, est stocké dans un seul magasin commun fourni par un [fournisseur de ressources de stockage](working-with-srp.md) (SRP).
+Depuis AEM Communities 6.1, le contenu de la communauté, communément appelé contenu généré par l’utilisateur (UGC), est stocké dans un seul magasin commun fourni par une [fournisseur de ressources de stockage](working-with-srp.md) (SRP).
 
-Il existe plusieurs options de SRP, qui accèdent toutes au contenu généré par l’utilisateur via une nouvelle interface AEM Communities, l’[API SocialResourceProvider](srp-and-ugc.md) (API SRP), qui inclut toutes les opérations de création, de lecture, de mise à jour et de suppression (CRUD).
+Il existe plusieurs options de SRP, qui accèdent toutes au contenu généré par l’utilisateur par le biais d’une nouvelle interface AEM Communities, la [API SocialResourceProvider](srp-and-ugc.md) (API SRP), qui inclut toutes les opérations CRUD (création, lecture, mise à jour et suppression).
 
-Tous les composants SCF sont implémentés à l’aide de l’API SRP, ce qui permet au code d’être développé sans connaissance de la [topologie sous-jacente](topologies.md) ou de l’emplacement du contenu généré par l’utilisateur.
+Tous les composants SCF sont implémentés à l’aide de l’API SRP, ce qui permet au code d’être développé sans que vous ayez connaissance de l’événement [topologie sous-jacente](topologies.md) ou emplacement du contenu généré par l’utilisateur.
 
 ***L’API SocialResourceProvider est disponible uniquement pour les clients sous licence d’AEM Communities.***
 
 >[!NOTE]
 >
->**Composants** personnalisés : Pour les clients sous licence d’AEM Communities, l’API SRP est disponible pour les développeurs de composants personnalisés dans le but d’accéder au contenu généré par l’utilisateur sans tenir compte de la topologie sous-jacente. Voir [Notions fondamentales relatives à la SRP et au contenu généré par l’utilisateur](srp-and-ugc.md).
+>**Composants personnalisés**: Pour les clients sous licence d’AEM Communities, l’API SRP est disponible pour les développeurs de composants personnalisés dans le but d’accéder au contenu généré par l’utilisateur sans tenir compte de la topologie sous-jacente. Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md).
 
 Voir également :
 
-* [SRP et UGC Essentials](srp-and-ugc.md)  - Méthodes et exemples d’utilitaire SRP.
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md)  - Instructions de codage.
-* [Refactorisation de SocialUtils](socialutils.md)  : mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
+* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Refactorisation de SocialUtils](socialutils.md) - Mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
 
 ## À propos du référentiel {#about-the-repository}
 
@@ -49,11 +49,11 @@ Cette norme définit un modèle de données et une interface de programmation d�
 Une implémentation de JCR est le référentiel AEM, OAK.
 
 **Apache Jackrabbit Oak (OAK)**
-[](../../help/sites-deploying/platform.md) OAK est une implémentation de JCR 2.0 qui est un système de stockage de données spécialement conçu pour les applications centrées sur le contenu. Il s’agit d’un type de base de données hiérarchique conçu pour les données non structurées et semi-structurées. Le référentiel stocke le contenu affiché aux utilisateurs et l’ensemble du code, des modèles et des données internes utilisés par l’application. L’interface utilisateur d’accès au contenu est [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+[OAK](../../help/sites-deploying/platform.md) est une implémentation de JCR 2.0 qui est un système de stockage de données spécialement conçu pour les applications centrées sur le contenu. Il s’agit d’un type de base de données hiérarchique conçu pour les données non structurées et semi-structurées. Le référentiel stocke le contenu affiché aux utilisateurs et l’ensemble du code, des modèles et des données internes utilisés par l’application. L’interface utilisateur d’accès au contenu est [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
 JCR et OAK sont généralement utilisés pour faire référence au référentiel AEM.
 
-Après avoir développé le contenu du site dans l’environnement de création privé, il doit être copié dans l’environnement de publication public. Cela est souvent effectué au moyen d’une opération appelée *[réplication](deploy-communities.md#replication-agents-on-author)*. Cela se produit sous le contrôle de l’auteur/du développeur/de l’administrateur.
+Après avoir développé le contenu du site dans l’environnement de création privé, il doit être copié dans l’environnement de publication public. Cela se fait souvent au moyen d’une opération appelée *[réplication](deploy-communities.md#replication-agents-on-author)*. Cela se produit sous le contrôle de l’auteur/du développeur/de l’administrateur.
 
 Pour le contenu généré par l’utilisateur, le contenu est saisi par les visiteurs enregistrés du site (membres de la communauté) dans l’environnement de publication public. Cela se produit de manière aléatoire.
 
@@ -65,9 +65,9 @@ Lorsque le contenu créé par l’utilisateur est enregistré dans le stockage p
 
 >[!NOTE]
 >
->Voir [Notions fondamentales relatives à la SRP et au contenu généré par l’utilisateur](srp-and-ugc.md) pour obtenir un exemple de code et des détails supplémentaires.
+>Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) pour un exemple de code et des détails supplémentaires.
 >
->Voir [Accès au contenu créé par l’utilisateur avec SRP](accessing-ugc-with-srp.md) pour connaître les bonnes pratiques en matière de codage.
+>Voir [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) pour connaître les bonnes pratiques en matière de codage.
 
 ### ASRP {#asrp}
 
@@ -83,7 +83,7 @@ ASRP utilise Adobe Cloud pour les requêtes.
 
 Dans le cas de MSRP, le contenu généré par l’utilisateur n’est pas stocké dans JCR, mais dans MongoDB. Le contenu généré par l’utilisateur stocké dans MSRP ne peut pas être affiché avec CRXDE Lite ni accessible à l’aide de l’API JCR.
 
-Voir [MSRP - MongoDB Storage Resource Provider](msrp.md).
+Voir [MSRP - Fournisseur de ressources de stockage MongoDB](msrp.md).
 
 Bien que MSRP soit comparable à ASRP, puisque toutes les instances AEM serveur accèdent au même contenu généré par l’utilisateur, il est possible d’utiliser des outils communs pour accéder directement au contenu créé par l’utilisateur stocké dans MongoDB.
 
@@ -93,7 +93,7 @@ MSRP utilise Solr pour les requêtes.
 
 JSRP est le fournisseur par défaut pour accéder à tout le contenu créé par l’utilisateur sur une seule instance AEM. Il permet de tester rapidement AEM Communities 6.1 sans avoir à configurer MSRP ou ASRP.
 
-Voir [JSRP - JCR Storage Resource Provider](jsrp.md).
+Voir [JSRP - Fournisseur de ressources de stockage JCR](jsrp.md).
 
 Dans le cas de JSRP, alors que le contenu créé par l’utilisateur est stocké dans JCR et accessible via l’API CRXDE Lite et JCR, il est vivement recommandé de ne jamais utiliser l’API JCR pour le faire, sinon les modifications futures peuvent affecter le code personnalisé.
 
@@ -118,21 +118,21 @@ Certaines mises en oeuvre de la SRP, telles que ASRP et MSRP, stockent le conten
 
 La vérification ACL utilise une méthode utilitaire qui renvoie un chemin approprié pour vérifier les autorisations appliquées au contenu généré par l’utilisateur de la ressource.
 
-Voir [SRP et UGC Essentials](srp-and-ugc.md) pour consulter un exemple de code.
+Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) pour un exemple de code.
 
 ### Pour les ressources non existantes (NER) {#for-non-existing-resources-ners}
 
-Certains composants de Communities sont inclus dans un script et nécessitent donc un noeud adressable Sling pour prendre en charge les fonctionnalités de Communities. [Les ](scf.md#add-or-include-a-communities-component) composants inclus sont appelés ressources non existantes (NER).
+Certains composants de Communities sont inclus dans un script et nécessitent donc un noeud adressable Sling pour prendre en charge les fonctionnalités de Communities. [Composants inclus](scf.md#add-or-include-a-communities-component) sont appelées ressources non existantes (NER).
 
 Les noeuds fantômes fournissent un emplacement adressable Sling dans le référentiel.
 
 >[!CAUTION]
 >
->Comme le noeud fantôme présente plusieurs utilisations, la présence d’un noeud fantôme n’implique pas ** que le composant soit un NER.
+>Comme le noeud fantôme a plusieurs utilisations, la présence d’un noeud fantôme le fait *not* Cela signifie que le composant est un NER.
 
 ### Emplacement de stockage {#storage-location}
 
-Voici un exemple de noeud fantôme, à l’aide du [composant Commentaires](http://localhost:4502/content/community-components/en/comments.html) dans le [Guide des composants de la communauté](components-guide.md) :
+Voici un exemple de noeud fantôme, à l’aide de la propriété [Composant Commentaires](http://localhost:4502/content/community-components/en/comments.html) dans le [Guide des composants de communauté](components-guide.md):
 
 * Le composant existe dans le référentiel local à l’adresse :
 
@@ -148,7 +148,7 @@ Le comportement par défaut consiste à configurer des noeuds fantômes sur une 
 
 Par exemple, supposons que le déploiement soit [MSRP](msrp.md) avec une ferme de publication TarMK.
 
-Lorsqu’un [membre](users.md) publie du contenu généré par l’utilisateur sur pub1 (stocké dans MongoDB), les noeuds fantômes sont créés dans JCR sur pub1.
+Lorsqu’une [membre](users.md) publications du contenu créé par l’utilisateur sur pub1 (stocké dans MongoDB), les noeuds fantômes sont créés dans JCR sur pub1.
 
 La première fois que le contenu créé par l’utilisateur est lu sur pub2, si rien n’est configuré, le comportement par défaut est de créer les noeuds fantômes.
 

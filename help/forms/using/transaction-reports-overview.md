@@ -10,7 +10,7 @@ discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
 docset: aem65
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 100%
 
@@ -61,5 +61,5 @@ Le nombre de transactions est répliqué par inverse des instances de publicatio
 ## Articles connexes {#related-articles}
 
 * [Afficher et comprendre des rapports de transaction](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [ API de rapports de transactions facturables](../../forms/using/transaction-reports-billable-apis.md)
+* [API de rapports de transactions facturables](../../forms/using/transaction-reports-billable-apis.md)
 * [Enregistrer une transaction pour les implémentations personnalisées](/help/forms/using/record-transaction-custom-implementation.md)

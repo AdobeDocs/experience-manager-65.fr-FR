@@ -1,8 +1,8 @@
 ---
 title: Modification du contenu de la page
-seo-title: Modification du contenu de la page
+seo-title: Editing Page Content
 description: Le contenu est ajouté à l’aide des composants que vous pouvez déplacer sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
-seo-description: Le contenu est ajouté à l’aide des composants que vous pouvez déplacer sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
+seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1755'
 ht-degree: 99%
 
 ---
 
-# Modification du contenu de la page {#editing-page-content}
+# Modification du contenu de la page{#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
@@ -98,7 +98,7 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
 | Image | Image |
 | Document | Télécharger |
 | Produit | Produit |
-| Vidéo | Modèle  |
+| Vidéo  | Modèle  |
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
 1. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
 
-## Modification d’un composant (contenu et propriétés)  {#editing-a-component-content-and-properties}
+## Modification d’un composant (contenu et propriétés) {#editing-a-component-content-and-properties}
 
 Pour modifier un paragraphe existant, procédez comme suit :
 
@@ -176,7 +176,7 @@ Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez
 
 Les composants hérités peuvent être le produit de divers scénarios, notamment :
 
-* [Gestion de plusieurs sites](/help/sites-administering/msm.md); également en combinaison avec [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Gestion de plusieurs sites](/help/sites-administering/msm.md) ; également associé au mode [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une live copy)
 * Des composants spécifiques ; par exemple le système de paragraphes hérité dans Geometrixx.
@@ -205,7 +205,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Les [Annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages  {#previewing-pages}
+## Aperçu des pages {#previewing-pages}
 
 Deux icônes disponibles dans la bordure inférieure du sidekick sont importantes pour afficher un aperçu des pages :
 
@@ -227,7 +227,7 @@ Deux icônes disponibles dans la bordure inférieure du sidekick sont importante
 
 Pour les modifications à plus grande échelle d’une même expression, utilisez l’option **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** pour rechercher et remplacer plusieurs instances d’une chaîne dans une section du site web.
 
-## Verrouillage d’une page {#locking-a-page}
+## Verrouillage d’une page    {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Ceci s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
@@ -287,9 +287,7 @@ Les commandes Annuler et Rétablir fonctionnent de la même manière que dans le
 >* Rétablir des opérations pour autant qu’aucune modification de page n’ait été effectuée depuis la dernière utilisation de la commande Annuler.
 >* Annuler jusqu’à 20 opérations de modification (paramètre par défaut).
 >* Vous pouvez également utiliser les [raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour les opérations d’annulation et de rétablissement.
-
 >
-
 
 
 Vous pouvez utiliser les commandes d’annulation et de rétablissement pour les types de modification suivants :

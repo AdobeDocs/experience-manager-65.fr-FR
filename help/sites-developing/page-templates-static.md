@@ -1,8 +1,8 @@
 ---
 title: Modèles de page - Statiques
-seo-title: Modèles de page - Statiques
+seo-title: Page Templates - Static
 description: Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée
-seo-description: Un modèle sert à créer une page. Il définit les composants pouvant être utilisés dans l’étendue sélectionnée
+seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
 uuid: 7a473c19-9565-476e-9e54-ab179da04d71
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 66%
+source-wordcount: '1626'
+ht-degree: 65%
 
 ---
 
@@ -29,7 +29,7 @@ Chaque modèle présente une sélection de composants disponibles.
 
 >[!NOTE]
 >
->[Les ](/help/sites-developing/page-templates-editable.md) modèles modifiables sont également disponibles. Il s’agit du type de modèle recommandé pour la plus grande flexibilité et pour les fonctionnalités les plus récentes.
+>[Modèles modifiables](/help/sites-developing/page-templates-editable.md) sont également disponibles. Il s’agit du type de modèle recommandé pour une flexibilité maximale et les fonctionnalités les plus récentes.
 
 ## Propriétés et nœuds enfants d’un modèle {#properties-and-child-nodes-of-a-template}
 
@@ -60,7 +60,7 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
   <tr>
    <td> allowedPaths</td>
    <td> Chaîne[]</td>
-   <td>Chemin d’accès d’une page autorisée à partir de ce modèle.<br /> </td>
+   <td>Chemin d’accès d’une page qui peut être basée sur ce modèle.<br /> </td>
   </tr>
   <tr>
    <td> jcr:created</td>
@@ -102,7 +102,7 @@ Un modèle est un nœud de type cq:Template et possède les propriétés et les 
 
 Un modèle sert de fondement pour une page.
 
-Pour créer une page, le modèle doit être copié (node-tree `/apps/<myapp>/template/<mytemplate>`) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de l’onglet **Sites web** .
+Pour créer une page, le modèle doit être copié (arborescence de noeuds) `/apps/<myapp>/template/<mytemplate>`) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de la variable **Sites web** .
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling: resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
@@ -113,7 +113,7 @@ Il y a deux aspects à considérer :
 * la structure du modèle lui-même
 * la structure du contenu produit lorsqu’un modèle est utilisé
 
-### Structure d’un modèle  {#the-structure-of-a-template}
+### Structure d’un modèle {#the-structure-of-a-template}
 
 Un modèle est créé sous un nœud de type **cq:Template**.
 
@@ -160,26 +160,25 @@ Pour voir la liste de tous les modèles disponibles dans le référentiel, proc�
 1. Dans l’onglet Requête :
 1. Indiquez le **Type** **XPath**.
 
-1. Dans le champ de saisie **Requête**, saisissez la chaîne suivante :
-//element(*, cq:Template)
+1. Dans le **Requête** dans le champ de saisie, saisissez la chaîne suivante : //element(&#42;, cq:Template)
 
 1. Cliquez sur **Exécuter**. La liste s’affiche dans la zone des résultats.
 
 Dans la plupart des cas, c’est à partir d’un modèle existant que vous élaborerez un nouveau modèle pour votre usage personnel. Pour plus d’informations, voir [Développement de modèles de page](#developing-page-templates).
 
-Pour activer un modèle existant pour votre site web et l’afficher dans la boîte de dialogue **Créer une page** lors de la création d’une page juste sous **Sites web** à partir de la console **Sites web**, définissez la propriété allowedPaths du noeud de modèle sur : **/content(/.*)?**
+Pour activer un modèle existant pour votre site web et l’afficher dans le **Créer une page** lors de la création d’une page directement sous **Sites web** de la **Sites web** , définissez la propriété allowedPaths du noeud template sur : **/content(/.&#42;)?**
 
 ## Application des conceptions de modèle {#how-template-designs-are-applied}
 
-Lorsque des styles sont définis dans l’interface utilisateur à l’aide du [mode de conception](/help/sites-authoring/default-components-designmode.md), la conception est conservée à l’emplacement exact du noeud de contenu pour lequel le style est défini.
+Lorsque des styles sont définis dans l’interface utilisateur à l’aide de [Mode de conception](/help/sites-authoring/default-components-designmode.md), la conception est conservée à l’emplacement exact du noeud de contenu pour lequel le style est défini.
 
 >[!CAUTION]
 >
->Adobe recommande d’appliquer uniquement des conceptions par [mode de conception](/help/sites-authoring/default-components-designmode.md).
+>Adobe recommande de n’appliquer que des conceptions via [Mode de conception](/help/sites-authoring/default-components-designmode.md).
 >
 >La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu.
 
-Si les conceptions ne sont appliquées qu’en mode de conception, les sections suivantes, [Résolution du chemin de conception](/help/sites-developing/page-templates-static.md#design-path-resolution), [Arborescence de décision](/help/sites-developing/page-templates-static.md#decision-tree) et [Exemple](/help/sites-developing/page-templates-static.md#example) ne sont pas applicables.
+Si les conceptions ne sont appliquées qu’en mode de conception, les sections suivantes, [Résolution du chemin de conception](/help/sites-developing/page-templates-static.md#design-path-resolution), [Arborescence de décision](/help/sites-developing/page-templates-static.md#decision-tree), et la variable [Exemple](/help/sites-developing/page-templates-static.md#example) ne sont pas applicables.
 
 ### Résolution du chemin de conception {#design-path-resolution}
 
@@ -195,7 +194,7 @@ Dans les deux derniers cas, s’il existe plusieurs conceptions applicables, uti
 
 ### Arborescence de décision {#decision-tree}
 
-Il s’agit d’une représentation graphique de la logique [Design Path Resolution](/help/sites-developing/page-templates-static.md#design-path-resolution) .
+Il s’agit d’une représentation graphique de la variable [Résolution du chemin de conception](/help/sites-developing/page-templates-static.md#design-path-resolution) logique.
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
@@ -259,7 +258,7 @@ Le tableau suivant décrit comment AEM choisira une conception.
    <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td>
    <td><code>root</code></td>
-   <td><p>S’il n’y a pas de correspondance exacte, prenez celle située plus bas dans l’arborescence.</p> <p>L’hypothèse est que cela sera toujours applicable, mais plus haut dans l’arborescence peut être trop spécifique.<br /> </p> </td>
+   <td><p>S’il n’y a pas de correspondance exacte, prenez celle située plus bas dans l’arborescence.</p> <p>L'hypothèse est que cela sera toujours applicable, mais plus haut l'arbre peut être trop spécifique.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -268,7 +267,7 @@ Le tableau suivant décrit comment AEM choisira une conception.
 
 Les modèles de pages AEM sont simplement des modèles utilisés pour créer des pages. Ils peuvent contenir autant de contenu initial que nécessaire, leur rôle étant de créer des structures de nœuds correctes avec les propriétés requises (principalement sling:resourceType) définies pour permettre la modification et le rendu.
 
-### Création d’un modèle (basé sur un modèle existant)  {#creating-a-new-template-based-on-an-existing-template}
+### Création d’un modèle (basé sur un modèle existant) {#creating-a-new-template-based-on-an-existing-template}
 
 Inutile de dire qu’un nouveau modèle peut être entièrement créé de toutes pièces, mais en pratique un modèle existant est copié et modifié pour faire gagner du temps. Par exemple, les modèles Geometrixx peuvent servir de point de départ.
 
@@ -286,7 +285,7 @@ Pour créer un modèle d’après un modèle existant :
 
    >[!NOTE]
    >
-   >Si vous souhaitez que votre modèle s’affiche dans la boîte de dialogue **Créer une page** lors de la création d’une page juste sous **Sites Web** à partir de la console **Sites Web**, définissez la propriété `allowedPaths` du noeud de modèle sur : `/content(/.*)?`
+   >Si vous souhaitez que votre modèle s’affiche dans le **Créer une page** lors de la création d’une page directement sous **Sites web** de la **Sites web** , définissez `allowedPaths` du noeud de modèle pour : `/content(/.*)?`
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -316,6 +315,6 @@ Pour plus d’informations, voir [Utilisation des bibliothèques côté client](
 Cet exemple illustre comment autoriser l’utilisation d’un modèle pour certains chemins de contenu. Les modèles disponibles pour l’auteur de la page lors de la création de pages sont déterminés par la logique définie dans [Disponibilité des modèles](/help/sites-developing/templates.md#template-availability).
 
 1. Dans CRXDE Lite, accédez au modèle que vous souhaitez utiliser pour votre page, par exemple, le modèle Newsletter.
-1. Modifiez la propriété `allowedPaths` et les autres propriétés utilisées pour la [disponibilité du modèle](/help/sites-developing/templates.md#template-availability). Par exemple, `allowedPaths` : `/content/geometrixx-outdoors/[^/]+(/.*)?` signifie que ce modèle est autorisé dans n’importe quel chemin sous `/content/geometrixx-outdoors`.
+1. Modifiez la propriété `allowedPaths` et les autres propriétés utilisées pour la [disponibilité du modèle](/help/sites-developing/templates.md#template-availability). Par exemple : `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` signifie que ce modèle est autorisé dans n’importe quel chemin sous `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

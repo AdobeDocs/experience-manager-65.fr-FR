@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les commentaires
-seo-title: Notions fondamentales sur les commentaires
+seo-title: Comments Essentials
 description: Présentation du composant Commentaires
-seo-description: Présentation du composant Commentaires
+seo-description: Comments component overview
 uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '344'
 ht-degree: 5%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 Cette page fournit l’essentiel de l’utilisation du système de commentaires (composant de commentaires) et des options de gestion du contenu généré par l’utilisateur (contenu généré par les utilisateurs) lorsque les membres publient des commentaires ou des réponses.
 
-Le composant Commentaires établit un système de commentaire, de sorte que chaque publication soit représentée par un composant de commentaire (au singulier). Il s’agit du système de commentaires inclus sur la page. Le système de commentaires crée les commentaires individuels lorsqu’ils sont appelés.
+Le composant Commentaires établit un système de commentaires, de sorte que chaque publication soit représentée par un composant de commentaire (au singulier). Il s’agit du système de commentaires inclus sur la page. Le système de commentaires crée les commentaires individuels lorsqu’ils sont appelés.
 
 ## Principes élémentaires pour le côté client {#essentials-for-client-side}
 
@@ -33,7 +33,7 @@ Le composant Commentaires établit un système de commentaire, de sorte que chaq
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>incluable</strong></a></td>
-   <td>Oui - les propriétés sont modifiables en mode <i>conception </i></td>
+   <td>Oui - les propriétés peuvent être modifiées dans <i>design </i>mode</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -77,7 +77,7 @@ La liste des raisons de marquage peut être personnalisée en ajoutant flagreaso
 
 Cela s’applique à tout composant qui étend un système de commentaires.
 
-## Principes élémentaires côté serveur {#essentials-for-server-side}
+## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 * [API de commentaires](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
@@ -90,13 +90,13 @@ Cela s’applique à tout composant qui étend un système de commentaires.
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement**.
+**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md)  - Présentation et utilisation du référentiel.
-* [SRP et UGC Essentials](srp-and-ugc.md)  - Méthodes et exemples d’utilitaire SRP.
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md)  - Instructions de codage.
-* [Refactorisation de SocialUtils](socialutils.md)  : mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et présentation de l’utilisation du référentiel.
+* [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
+* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Refactorisation de SocialUtils](socialutils.md) - Mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

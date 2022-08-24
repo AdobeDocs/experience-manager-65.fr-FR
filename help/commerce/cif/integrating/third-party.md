@@ -6,7 +6,7 @@ exl-id: e99899a4-df86-4108-991a-8b30d303a279
 source-git-commit: 885d0763fca9ad4eab499081adca9b83875b27e1
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 40%
+ht-degree: 60%
 
 ---
 
@@ -28,7 +28,7 @@ Lorsqu’Experience Manager récupère des données à la demande, des API en te
 
 >[!TIP]
 >
->Si aucune API en temps réel n’est disponible, un cache de produit externe avec les API doit être utilisé pour l’intégration. Exemple [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Si aucune API en temps réel n’est disponible, un cache de produit externe avec les API doit être utilisé pour l’intégration. Exemple [Magento open-source](https://business.adobe.com/fr/products/magento/open-source.html).
 
 Il n’est pas nécessaire de mettre en œuvre le schéma GraphQL complet, mais simplement les objets du schéma pour activer les cas d’utilisation souhaités.
 
@@ -56,9 +56,9 @@ Cette couche d’intégration n’est pas requise si une couche tierce est dispo
 
 Les connecteurs constituent un bon point de départ pour les projets. Ils sont fournis avec une connexion spécifique à une solution de commerce et un mappage d’API par défaut. Ces connecteurs sont créés par des tiers et ne sont pas gérés par Adobe. Contactez le partenaire concerné pour obtenir des informations.
 
-* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construit par Diconium
-* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construit par Diconium
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), configuré par Diconium
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), configuré par Diconium
 
 >[!TIP]
 >
->Bien que les connecteurs aident les projets à accélérer l’intégration du commerce, ils ne sont pas plug-in en lecture. Les solutions de commerce d’entreprise sont généralement fortement personnalisées et nécessitent une intégration personnalisée. Une bonne connaissance de la plateforme commerciale, des schémas Adobe Commerce GraphQL et de Adobe I/O Runtime est requise.
+>Bien que les connecteurs aident les projets à accélérer l’intégration du commerce, ils ne sont pas plug-n-play. Les solutions de commerce d’entreprise sont généralement fortement personnalisées et nécessitent une intégration personnalisée. Une bonne connaissance de la plateforme commerciale, des schémas Adobe Commerce GraphQL et d’Adobe I/O Runtime est requise.

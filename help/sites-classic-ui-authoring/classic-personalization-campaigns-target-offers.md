@@ -1,8 +1,8 @@
 ---
 title: Offres Target
-seo-title: Offres Target
+seo-title: Target offers
 description: Création d’offres Target
-seo-description: Création d’offres Target
+seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 71%
+source-wordcount: '91'
+ht-degree: 70%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 71%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Cliquez sur **Nouveau ...**
-1. Vous pouvez spécifier le **Titre**, **Nom** et le type d’expérience à créer ; dans ce cas, offre Test&amp;Target.
+1. Vous pouvez spécifier la variable **Titre**, **Nom** et le type d&#39;expérience à créer ; dans ce cas, offre Test&amp;Target.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -39,4 +39,4 @@ ht-degree: 71%
 
 ## Intégration à Adobe Target {#integrating-with-adobe-target}
 
-Voir [Intégration à Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) pour plus d’informations.
+Voir [Intégration à Adobe](/help/sites-administering/target.md) [Cible](/help/sites-administering/target.md) pour plus d’informations.

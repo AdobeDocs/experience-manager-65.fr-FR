@@ -5,7 +5,7 @@ exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 70%
+ht-degree: 75%
 
 ---
 
@@ -23,7 +23,7 @@ Une fois configuré pour un composant donné, le cache commence à stocker les r
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
-Avant d’envoyer une requête GraphQL, le client vérifie si **exact** la même requête GraphQL est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour qu’il y ait une correspondance, la requête GraphQL DOIT correspondre exactement : en d’autres termes, la requête, le nom de l’opération (le cas échéant) et les variables (le cas échéant) DOIVENT tous être identiques à la requête mise en cache, et tous les en-têtes HTTP personnalisés susceptibles d’être définis DOIVENT également être identiques. Par exemple, Adobe Commerce `Store` header DOIT correspondre.
+Avant d’envoyer une requête GraphQL, le client vérifie si **exact** la même requête GraphQL est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour qu’il y ait une correspondance, la requête GraphQL DOIT correspondre exactement : en d’autres termes, la requête, le nom de l’opération (le cas échéant) et les variables (le cas échéant) DOIVENT tous être identiques à la requête mise en cache, et tous les en-têtes HTTP personnalisés susceptibles d’être définis DOIVENT également être identiques. Par exemple, l’en-tête `Store` Adobe Commerce DOIT correspondre.
 
 ### Exemples
 
@@ -41,7 +41,7 @@ Un autre exemple de scénario où la fonction de mise en cache GraphQl est recom
 venia/components/structure/navigation:true:10:600
 ```
 
-Lorsque vous envisagez la variable [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisée. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
+En considérant que le [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisé. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
 La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur « universelle » qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
 
@@ -49,7 +49,7 @@ La mise en cache d’autres composants doit être définie projet par projet, g�
 
 La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) constitue une bonne pratique pour un projet AEM. En règle générale, elle repose sur des techniques d’invalidation qui garantissent qu’un contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Il s’agit d’une fonctionnalité essentielle de la stratégie de mise en cache du Dispatcher AEM.
 
-Outre le CIF de contenu géré par AEM pur, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’Adobe Commerce via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer, par exemple, si certaines données de produit (telles que le nom ou le prix) changent dans Adobe Commerce.
+Outre le CIF du contenu géré par AEM pur, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’Adobe Commerce via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer, par exemple, si certaines données de produit (telles que le nom ou le prix) changent dans Adobe Commerce.
 
 Pour vous assurer que les pages CIF peuvent être mises en cache pendant une durée limitée dans le Dispatcher AEM, nous vous recommandons donc d’utiliser la variable [Invalidation du cache basée sur le temps](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) (également appelé mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
 

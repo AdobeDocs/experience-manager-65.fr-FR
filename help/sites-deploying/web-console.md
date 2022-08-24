@@ -1,19 +1,19 @@
 ---
 title: Console web
-seo-title: Console web
+seo-title: Web Console
 description: Apprenez à utiliser le console web d’AEM.
-seo-description: Apprenez à utiliser le console web d’AEM.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
-feature: Configuration
+feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '718'
 ht-degree: 75%
 
 ---
@@ -103,7 +103,7 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 ## Lots {#bundles}
 
-L’onglet **Lots** est le mécanisme d’installation des lots OSGi requis pour AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
+Le **Lots** tab est le mécanisme d’installation des lots OSGi requis pour AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
 
 * Le menu déroulant :
 
@@ -121,7 +121,7 @@ En utilisant cet onglet vous pouvez :
 
 * **Installation ou mise à jour**
 
-   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **Démarrer** immédiatement et à quel **niveau de départ**.
+   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **Début** immédiatement et à quel moment **Niveau de départ**.
 
 * **Recharger**
 
@@ -133,7 +133,7 @@ En utilisant cet onglet vous pouvez :
 
    Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, ce qui permettra d’arrêter l’ancienne version.
 
-* **Début**
+* **Démarrer**
 
    Commence un lot en fonction du niveau de départ spécifié.
 
@@ -155,7 +155,7 @@ En utilisant cet onglet vous pouvez :
 
 ## Composants {#components}
 
-L’onglet **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible soit par :
+Le **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible soit par :
 
 * Le menu déroulant :
 

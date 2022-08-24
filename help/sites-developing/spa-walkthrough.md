@@ -28,7 +28,7 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 >
 >L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 ### Objectif de l’article {#article-objective}
 
@@ -104,7 +104,6 @@ Lorsqu’un SPA est créé pour exploiter l’AEM Éditeur, l’auteur du conten
 >
 >* [AEM version 6.4 avec Service Pack 2](/help/release-notes/release-notes.md)
 >* [Installez l’exemple d’application We.Retail Journal disponible sur GitHub ici.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
-
 >
 
 

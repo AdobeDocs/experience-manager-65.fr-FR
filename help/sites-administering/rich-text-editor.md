@@ -44,7 +44,7 @@ L’interface utilisateur tactile est l’interface utilisateur standard de Expe
 
 Les auteurs peuvent créer et modifier du contenu textuel dans Experience Manager en utilisant les différents modes des composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
 
-| Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée | IU tactile | IU classique |
+| Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée | IU tactile | Interface utilisateur classique |
 |--- |--- |--- |--- |--- |
 | En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue | Fonctions minimales d’éditeur de texte enrichi | O | O |
 | Éditeur de texte enrichi en plein écran | Couvre la page entière | Toutes les fonctions requises d’éditeur de texte enrichi | O | N |
@@ -145,7 +145,6 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 >* **Nom** : `configPath`
 >* **Type** : `String`
 >* **Valeur** : chemin du nœud qui contient la configuration proprement dite.
-
 >
 >Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Autrement, les configurations de l’éditeur de texte enrichi prennent effet seulement pour les administrateurs et non pour les utilisateurs du groupe `content-author`.
 
@@ -192,7 +191,6 @@ Pour consulter des configurations détaillées des modules externes de l’édit
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
-
 >
 >Pour créer votre propre composant textuel, copiez le composant ci-dessus au lieu de modifier ces composants.
 
@@ -339,7 +337,7 @@ En particulier, pour connaître les modules externes et les options associées d
 
 Ils peuvent être utilisés pour étendre et personnaliser votre propre éditeur de texte enrichi. Par exemple, pour répertorier les ancres disponibles dans la page en créant un lien, vous pouvez fournir votre propre mise en œuvre de `LinkPlugin`.
 
-## Limitations connues {#known-limitations}
+## Limites connues {#known-limitations}
 
 La fonctionnalité AEM RTE présente les limites suivantes :
 

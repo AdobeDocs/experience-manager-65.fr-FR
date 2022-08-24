@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -13,12 +13,12 @@ ht-degree: 88%
 
 Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 
-## Que sont les API GraphQL et REST Assets ?  {#what-are-the-apis}
+## En quoi consistent les API REST GraphQL et Assets ? {#what-are-the-apis}
 
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
 * [L’API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
-   * Pour l’utiliser, [Les points de fin doivent être définis et activés dans AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint), et si nécessaire, la variable [Interface GraphiQL installée](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
+   * Pour l’utiliser, les [points de fin doivent être définis et activés dans AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint), et si nécessaire, l’[interface GraphiQL installée](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [L’API REST Assets](/help/assets/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.

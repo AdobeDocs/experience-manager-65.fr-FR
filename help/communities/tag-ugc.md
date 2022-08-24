@@ -1,8 +1,8 @@
 ---
 title: Balisage de contenu généré par l’utilisateur
-seo-title: Balisage de contenu généré par l’utilisateur
+seo-title: Tagging User Generated Content
 description: Le balisage du contenu généré par l’utilisateur (UGC) permet aux membres de la communauté d’aider d’autres membres à rechercher du contenu.
-seo-description: Le balisage du contenu généré par l’utilisateur (UGC) permet aux membres de la communauté d’aider d’autres membres à rechercher du contenu.
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ role: Admin
 exl-id: 1ecb41e5-c959-4380-a5c7-df9fc3a7703a
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 9%
+source-wordcount: '227'
+ht-degree: 8%
 
 ---
 
@@ -40,11 +40,11 @@ Les fonctionnalités AEM Communities qui peuvent être configurées pour autoris
 
 ## Administration des balises {#administering-tags}
 
-Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour créer et gérer des espaces de noms et des taxonomies de balise.
+Voir [Administration des balises](../../help/sites-administering/tags.md#tagging-console) pour créer et gérer des espaces de noms de balise et des taxonomies.
 
 Voir [Notions fondamentales sur les balises](tag.md) pour plus d’informations sur les développeurs.
 
-Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour ajouter un composant Nuage de balises sociales à une page afin de faciliter la recherche de contenu créé par l’utilisateur publié à l’aide des balises appliquées.
+Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour ajouter un composant Nuage de balises sociales à une page afin de faciliter la recherche du contenu généré par l’utilisateur publié à l’aide des balises appliquées.
 
 ### Autorisations de balise {#tag-permissions}
 

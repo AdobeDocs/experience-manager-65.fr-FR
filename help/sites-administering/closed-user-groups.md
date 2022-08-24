@@ -12,10 +12,10 @@ discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
 source-wordcount: '6872'
-ht-degree: 60%
+ht-degree: 61%
 
 ---
 
@@ -661,7 +661,7 @@ Les deux composants OSGi suivants ont été ajoutés pour définir les exigences
 
 Les composants de relecture de CUG liés à l’authentification ne proposent qu’une option de configuration associée au gestionnaire d’exigence d’authentification et de chemin de connexion Adobe Granite :
 
-**&quot;Gestionnaire des exigences d’authentification et du chemin de connexion&quot;**
+**« Gestionnaire d’exigence d’authentification et de chemin de connexion »**
 
 <table>
  <tbody>
@@ -682,7 +682,7 @@ Les composants de relecture de CUG liés à l’authentification ne proposent qu
 
 ## Configuration par défaut depuis AEM 6.3 {#default-configuration-since-aem}
 
-Les nouvelles installations d’AEM utilisent par défaut les nouvelles mises en œuvre à la fois pour les composants liés à l’autorisation et à l’authentification de la fonction CUG. L’ancienne mise en oeuvre &quot;Prise en charge des groupes d’utilisateurs fermés (CUG) Adobe Granite&quot; a été abandonnée et sera désactivée par défaut dans toutes les installations AEM. Les nouvelles mises en œuvre sont activées comme suit :
+Les nouvelles installations d’AEM utilisent par défaut les nouvelles mises en œuvre à la fois pour les composants liés à l’autorisation et à l’authentification de la fonction CUG. L’ancienne mise en œuvre « Prise en charge des groupes d’utilisateurs fermés (CUG) par Adobe Granite » a été abandonnée et sera désactivée par défaut dans toutes les installations d’AEM. Les nouvelles mises en œuvre sont activées comme suit :
 
 ### Instances de création {#author-instances}
 
@@ -761,7 +761,7 @@ Cela a été réglé de façon à rendre la référence à `CugSupport` facultat
 
 >[!NOTE]
 >
->Par défaut, la variable **Gestionnaire d’authentification d’en-tête HTTP Adobe** est uniquement configuré en mode d’exécution de publication avec &quot;Désactiver la page de connexion&quot; ( `auth.http.nologin`).
+>Par défaut, **Adobe Granite HTTP Header Authentication Handler** n’est configuré que dans le mode d’exécution de publication avec l’option Désactiver la page de connexion (`auth.http.nologin`) activée.
 
 ### AEM LiveCopy {#aem-livecopy}
 

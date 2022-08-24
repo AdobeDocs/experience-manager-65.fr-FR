@@ -1,8 +1,8 @@
 ---
 title: Accès WebDAV
-seo-title: Accès WebDAV
+seo-title: WebDAV Access
 description: Découvrez comment gérer l’accès WebDAV dans AEM.
-seo-description: Découvrez comment gérer l’accès WebDAV dans AEM.
+seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 78%
+source-wordcount: '1144'
+ht-degree: 79%
 
 ---
 
@@ -98,7 +98,7 @@ http://localhost:4502/crx/repository/staging
 
 ## Connexion par le biais de WebDAV {#connecting-via-webdav}
 
-[Comme mentionné ci-dessus](/help/sites-administering/webdav-access.md#general), pour vous connecter à votre référentiel à l’aide du protocole WebDAV, vous pointez votre client WebDAV vers l’emplacement de votre référentiel. Cependant, en fonction du système d’exploitation, la procédure de connexion au client diffère et il peut être nécessaire de configurer le système d’exploitation.
+[Comme mentionné ci-dessus](/help/sites-administering/webdav-access.md#general), pour vous connecter au référentiel à l’aide du protocole WebDAV, vous pointez votre client WebDAV vers l’emplacement de votre référentiel. Cependant, en fonction du système d’exploitation, la procédure de connexion au client diffère et il peut être nécessaire de configurer le système d’exploitation.
 
 Vous trouverez ci-après des instructions de connexion aux systèmes d’exploitation suivants :
 
@@ -112,7 +112,7 @@ Pour connecter correctement un système Microsoft Windows 7 (et version ultér
 
 Une fois le Registre mis à jour, une instance AEM peut être mappée sous forme d’unité.
 
-#### Configuration Windows 7 et version ultérieure  {#windows-and-greater-configuration}
+#### Configuration Windows 7 et version ultérieure {#windows-and-greater-configuration}
 
 Pour mettre à jour le registre afin d’activer l’authentification de base par un réseau non sécurisé :
 
@@ -122,15 +122,15 @@ Pour mettre à jour le registre afin d’activer l’authentification de base pa
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
    ```
 
-1. Définissez la sous-clé d’entrée de registre `BasicAuthLevel` sur une valeur `2` ou supérieure.
+1. Définissez la variable `BasicAuthLevel` sous-clé d’entrée de registre à une valeur de `2` ou supérieur.
 
    Si la sous-clé est absente, ajoutez-la.
 
 1. Vous devez redémarrer le système pour que la modification du registre soit appliquée.
 
-Voir [Base de connaissances de l’assistance Microsoft 841215](https://support.microsoft.com/default.aspx/kb/841215) pour plus d’informations sur cette modification du registre.
+Voir [Microsoft Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215) pour plus d’informations sur cette modification du registre.
 
-Voir [Base de connaissances du support Microsoft 2445570](https://support.microsoft.com/kb/2445570) pour plus d’informations sur l’amélioration de la réactivité du client WebDav sous Windows.
+Voir [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) pour plus d’informations sur l’amélioration de la réactivité du client WebDav sous Windows.
 
 >[!NOTE]
 >
@@ -140,15 +140,15 @@ Voir [Base de connaissances du support Microsoft 2445570](https://support.micros
 
 Sous Windows 8, vous devez également modifier l’entrée de registre [comme indiqué pour Windows 7 et version ultérieure](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Cependant, auparavant, vous devez activer la fonctionnalité Desktop Experience afin d’afficher l’entrée de registre.
 
-Pour activer l’expérience de bureau, ouvrez **Gestionnaire de serveur**, puis **Fonctionnalités**, puis **Ajouter des fonctionnalités**, puis **Expérience de bureau**.
+Pour activer l’expérience de bureau, ouvrez **Gestionnaire de serveur**, puis **Fonctionnalités**, puis **Ajout de fonctionnalités**, puis **Expérience de bureau**.
 
 Après le redémarrage, l’entrée de registre décrite pour Windows 7 et version ultérieure est disponible. Modifiez-la comme indiqué pour Windows 7 et version ultérieure.
 
-#### Connexion dans Windows  {#connecting-in-windows}
+#### Connexion dans Windows {#connecting-in-windows}
 
 Pour vous connecter à AEM par le biais de WebDAV dans un environnement Windows, procédez comme suit :
 
-1. Ouvrez **l’Explorateur Windows** ou **Explorateur de fichiers** et cliquez sur **Ordinateur** ou **Ce PC**.
+1. Ouvrir **Explorateur Windows** ou **Explorateur de fichiers** et cliquez sur **Ordinateur** ou **Ce PC**.
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
@@ -167,7 +167,7 @@ Pour vous connecter à AEM par le biais de WebDAV dans un environnement Windows,
    >
    >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
 
-1. Saisissez le nom d’utilisateur `admin` et le mot de passe `admin`. Adobe recommande d’utiliser le compte administrateur préconfiguré pour le test.
+1. Saisissez le nom d’utilisateur `admin` et mot de passe `admin`. Adobe recommande d’utiliser le compte administrateur préconfiguré pour le test.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 

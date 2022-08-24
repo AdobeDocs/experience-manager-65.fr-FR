@@ -1,8 +1,8 @@
 ---
-title: Utilisation du gestionnaire de campagne marketing
-seo-title: Utilisation de Marketing Campaign Manager
+title: Utilisation de Marketing Campaign Manager
+seo-title: Working with the Marketing Campaign Manager
 description: La console Marketing Campaign Manager (MCM) vous aide à gérer des campagnes multicanaux. Ce logiciel d’automatisation des activités marketing permet de gérer l’ensemble des marques, campagnes et expériences avec les segments, listes, pistes et rapports qui y sont associés.
-seo-description: La console Marketing Campaign Manager (MCM) vous aide à gérer des campagnes multicanaux. Ce logiciel d’automatisation des activités marketing permet de gérer l’ensemble des marques, campagnes et expériences avec les segments, listes, pistes et rapports qui y sont associés.
+seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1175'
 ht-degree: 97%
 
 ---
@@ -132,7 +132,7 @@ Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
 * Ouvrez l’aperçu de la campagne (double-cliquez sur une campagne dans le volet de droite ou cliquez dans le volet de gauche).
 
-#### Aperçu de la campagne  {#campaign-overview}
+#### Aperçu de la campagne {#campaign-overview}
 
 Deux modes d’affichage sont disponibles pour chaque campagne :
 
@@ -166,7 +166,7 @@ Deux modes d’affichage sont disponibles pour chaque campagne :
 
    Vous pouvez effectuer les opérations suivantes à partir de cette fenêtre :
 
-   * Créer un **nouveau...** expérience; par exemple, les offres Adobe Target, les teasers et les newsletters.
+   * Créez un **Nouveau...** expérience; par exemple, les offres Adobe Target, les teasers et les newsletters.
    * **Modifier** les détails d’une newsletter ou d’une page de teaser spécifique (vous pouvez également effectuer un double-clic).
    * Définir les **Propriétés...** d’une newsletter ou d’une page de teaser spécifique
    * **Simuler** l’aspect et la fonctionnalité d’une expérience (newsletter ou page de teaser).
@@ -178,7 +178,7 @@ Une fois la page simulée ouverte, vous pouvez ouvrir le sidekick afin de bascul
    * **Rechercher** votre texte (la recherche porte sur le champ Titre de l’expérience).
    * Utiliser le mode de recherche **Avancé** pour appliquer des filtres à la recherche.
 
-### Simulation de vos expériences de campagne  {#simulating-your-campaign-experiences}
+### Simulation de vos expériences de campagne {#simulating-your-campaign-experiences}
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Simuler**. Le point de contact (page de newsletter ou de teaser) s’ouvre. Il affiche l’expérience que vous avez sélectionnée, telle qu’elle sera présentée au visiteur.
 
@@ -186,7 +186,7 @@ Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, p
 
 Vous avez également la possibilité d’ouvrir le sidekick (en cliquant sur la petite flèche vers le bas) pour basculer vers le mode d’édition afin de mettre à jour la page.
 
-### Analyse de vos expériences de campagne  {#analyzing-your-campaign-experiences}
+### Analyse de vos expériences de campagne {#analyzing-your-campaign-experiences}
 
 Dans MCM, cliquez sur **Campagnes**. Assurez-vous que le mode Liste est actif, puis sélectionnez l’expérience de campagne requise et cliquez sur **Analyser...** Un graphique des impressions de page au fil du temps s’affiche alors.
 

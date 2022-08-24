@@ -1,19 +1,19 @@
 ---
 title: Préparation du contenu à traduire
-seo-title: Préparation du contenu à traduire
+seo-title: Preparing Content for Translation
 description: Découvrez comment préparer le contenu à traduire.
-seo-description: Découvrez comment préparer le contenu à traduire.
+seo-description: Learn how to prepare content for translation.
 uuid: 369630a8-2ed7-48db-973e-bd8213231d49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
-feature: Copie de la langue
+feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '681'
 ht-degree: 97%
 
 ---
@@ -56,9 +56,9 @@ Pour créer la racine de langue, créez une page, puis utilisez le code de langu
 
 * `<language-code>`Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
 
-* `<language-code>_<country-code>` ou  `<language-code>-<country-code>`Le code de pays pris en charge est un code à deux lettres en minuscules ou en majuscules, tel que défini par la norme ISO 3166, par exemple  `en_US`,  `en_us`,  `en_GB`,  `en-gb`.
+* `<language-code>_<country-code>` ou `<language-code>-<country-code>`Le code de pays pris en charge est un code à deux lettres en minuscules ou en majuscules, comme défini par la norme ISO 3166, par exemple. `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international.  Par exemple, la propriété Nom de la page racine de la copie de langue française de l’exemple de site Geometrixx est définie sur `fr`. Notez que la propriété Nom est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès à la page. (http://localhost:4502/content/geometrixx/fr.html)
+Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la propriété Nom de la page racine de la copie de langue française de l’exemple de site Geometrixx est définie sur `fr`. Notez que la propriété Nom est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès à la page. (http://localhost:4502/content/geometrixx/fr.html)
 
 La procédure ci-dessous utilise l’interface utilisateur optimisée pour les écrans tactiles pour créer une copie de langue d’un site web. Pour obtenir des instructions relatives à l’interface utilisateur classique, voir [Création d’une racine de langue à l’aide de l’interface utilisateur classique](/help/sites-administering/tc-lroot-classic.md).
 

@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité d’orientation
-seo-title: Fonctionnalité d’orientation
+seo-title: Ideation Feature
 description: Ajout et configuration de la fonction Idéation
-seo-description: Ajout et configuration de la fonction Idéation
+seo-description: Adding and configuring the Ideation feature
 uuid: 38468290-6d00-4ee4-91d8-7c2e8ae32712
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1124'
+source-wordcount: '1116'
 ht-degree: 28%
 
 ---
 
-# Fonction d’information {#ideation-feature}
+# Fonctionnalité d’orientation {#ideation-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La fonction d’idéation fournit une zone pour les visiteurs connectés du site (membres de la communauté) dans l’environnement de publication afin que :
 
@@ -36,21 +36,21 @@ Cette section de la documentation décrit:
 
 ### Ajout d’une idée à une page {#adding-a-ideation-to-a-page}
 
-Pour ajouter un composant `Ideation` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
+Pour ajouter une `Ideation` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Ideation`
 
 et faites-le glisser sur la page où l’idée doit apparaître.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client requises](/help/communities/ideation.md#essentials-for-client-side) sont incluses, voici comment le composant `Ideation` apparaîtra :
+Lorsque la variable [bibliothèques côté client requises](/help/communities/ideation.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Ideation` apparaît :
 
 ![idéation](assets/ideation.png)
 
 ### Configuration d’une idée {#configuring-an-ideation}
 
-Sélectionnez le composant `Ideation` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Ideation` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -58,7 +58,7 @@ Sélectionnez le composant `Ideation` inséré pour y accéder et sélectionnez 
 
 #### Onglet Settings {#settings-tab}
 
-Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des idées et des commentaires :
+Sous , **[!UICONTROL Paramètres]** , spécifiez les paramètres des idées et des commentaires :
 
 * **Autoriser les miniatures de pièces jointes**
 * **Taille max. des miniatures de pièces jointes**
@@ -92,7 +92,7 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des id�
 
 * **Autoriser le balisage**
 
-   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir l’onglet **[!UICONTROL Champ de balise]** ). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, les membres ont le droit d’ajouter des libellés de balise à leur publication (voir **[!UICONTROL Champ de balise]** ). Cette option n’est pas cochée par défaut.
 
 * **Autoriser les transferts de fichiers**
 
@@ -100,11 +100,11 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des id�
 
 * **Taille maximale du fichier**
 
-   Convient uniquement si `Allow File Uploads` est coché. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
+   Pertinent uniquement si `Allow File Uploads` est cochée. Ce champ limite la taille (en octets) d’un fichier chargé. La valeur par défaut est 104857600 (10 Mo).
 
 * **Types de fichier autorisés**
 
-   Convient uniquement si `Allow File Uploads` est coché. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
+   Pertinent uniquement si `Allow File Uploads` est cochée. Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés à être chargés. Par défaut, aucun n’est spécifié, de sorte que tous les types de fichiers soient autorisés.
 
 * **Taille max. du fichier image joint**
 
@@ -124,11 +124,11 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des id�
 
 * **Autoriser abonnement**
 
-   Si cette case est cochée, incluez la fonction suivante pour les publications d’idées, ce qui permet aux membres d’être [informés](/help/communities/notifications.md) des nouvelles publications. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, incluez la fonction suivante pour les publications d’idées, ce qui permet aux membres d’être [notify](/help/communities/notifications.md) de nouvelles publications. Cette option n’est pas cochée par défaut.
 
 * **Autoriser les abonnements par courrier électronique**
 
-   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par e-mail ([subscription](/help/communities/subscriptions.md)). `Allow Following` doit être vérifié et [email configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, autorisez les membres à être informés des nouvelles publications par courrier électronique ([abonnement](/help/communities/subscriptions.md)). Nécessite `Allow Following` à vérifier et [email configuré](/help/communities/email.md). Cette option n’est pas cochée par défaut.
 
 * **Autoriser le vote**
 
@@ -136,13 +136,13 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des id�
 
 * **Afficher les badges**
 
-   Si cette case est cochée, affichez les [badges](/help/communities/implementing-scoring.md) gagnés et attribués avec l’idée d’un membre. Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, affichez les droits gagnés et attribués. [badges](/help/communities/implementing-scoring.md) avec l&#39;idée d&#39;un membre. Cette option n’est pas cochée par défaut.
 
 * **Ne pas obtenir de réponses sur la page de liste**
 
 * **Autoriser le contenu proposé**
 
-   Si cette option est cochée, l’idée peut être identifiée en tant que [contenu présenté](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
+   Si cette case est cochée, l’idée peut être identifiée comme [contenu proposé](/help/communities/featured.md). Cette option n’est pas cochée par défaut.
 
 * **Activer la mention**
 * **Nombre max. de mentions**
@@ -150,7 +150,7 @@ Sous l’onglet **[!UICONTROL Paramètres]**, spécifiez les paramètres des id�
 
 #### Onglet Modération d’utilisateur {#user-moderation-tab}
 
-Sous l’onglet **[!UICONTROL Modération d’utilisateur]** , indiquez comment les idées et commentaires publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
+Sous , **[!UICONTROL Modération d’utilisateur]** , indiquez comment les idées et commentaires publiés (contenu généré par l’utilisateur) sont gérés. Pour plus d’informations, voir [Modération de contenu généré par les utilisateurs](/help/communities/moderate-ugc.md).
 
 * **Refuser les publications**
 
@@ -186,15 +186,15 @@ Dans l’onglet **[!UICONTROL Champ de balise]**, les balises qui peuvent être 
 
 * **Espaces de noms autorisés**
 
-   Convient si `Allow Tagging` est coché sous l’onglet **[!UICONTROL Paramètres]**. Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
+   Pertinent si `Allow Tagging` est coché sous **[!UICONTROL Paramètres]** . Les balises pouvant être appliquées se limitent à celles liées aux catégories d’espace de noms cochées. La liste des espaces de noms inclut &quot;Balises standard&quot; (l’espace de noms par défaut) ainsi que &quot;Inclure toutes les balises&quot;. La valeur par défaut n’est pas cochée, ce qui signifie que tous les espaces de noms sont autorisés.
 
 * **Limite de suggestions**
 
-   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur **-1** ne signifie aucune limite. La valeur par défaut est 0.
+   Saisissez le nombre de balises à afficher comme suggestion au membre qui publie sur le forum. Une valeur de **-1** signifie pas de limite. La valeur par défaut est 0.
 
 #### Onglet Paramètres de tri {#sort-settings-tab}
 
-Sous l’onglet **[!UICONTROL Paramètres de tri]**, indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
+Sous , **[!UICONTROL Paramètres de tri]** , indiquez comment les commentaires publiés sont triés lorsqu’ils sont affichés.
 
 * **Trier par**
 
@@ -206,7 +206,7 @@ Sous l’onglet **[!UICONTROL Paramètres de tri]**, indiquez comment les commen
 
 * **Sélectionner les options de temps pour le tri Analytics**
 
-   Appuyez sur la touche pour sélectionner l’une des valeurs `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
+   Menu déroulant pour sélectionner l’un des `All, Last 24 Hours, Last 7 Days, Last 30 Days`. La valeur par défaut est `All`.
 
 ## Expérience des visiteurs {#site-visitor-experience}
 
@@ -220,23 +220,23 @@ Une fois connecté, un membre peut créer une nouvelle idée.
 
 Avant de soumettre l’idée, le membre peut enregistrer un brouillon.
 
-En sélectionnant le bouton `Save as Draft`, un brouillon est enregistré.
+En sélectionnant la variable `Save as Draft` , un brouillon est enregistré.
 
 ![save-idée](assets/save-idea.png)
 
-Lors de l’affichage de brouillons enregistrés dans l’onglet `My Drafts` , sélectionnez `Read More` pour revenir en mode d’édition :
+Lors de l’affichage de brouillons enregistrés dans la `My Drafts` onglet, sélectionnez `Read More` pour revenir en mode d’édition :
 
 ![edit-idée](assets/edit-idea.png)
 
 #### Fournir des commentaires {#providing-feedback}
 
-Une fois l&#39;idée publiée, d&#39;autres membres peuvent se connecter, ouvrir l&#39;idée ( `Read More`) et aimer l&#39;idée, ajoutant ainsi au nombre de votes, et faire des commentaires.
+Une fois l’idée publiée, d’autres membres peuvent se connecter et ouvrir l’idée ( `Read More`) et aimez l&#39;idée, ajoutant ainsi au nombre de votes, et faites des commentaires.
 
 ![feedback](assets/feedback-idea.png)
 
 ### Informations supplémentaires {#additional-information}
 
-Pour plus d’informations, reportez-vous à la page [Notions fondamentales sur les idées](/help/communities/ideation.md) pour les développeurs.
+Vous trouverez plus d’informations sur la [Notions fondamentales relatives aux idées](/help/communities/ideation.md) pour les développeurs.
 
 Pour des informations sur la modération des sujets et des commentaires publiés, reportez-vous à la section [Modération du contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 

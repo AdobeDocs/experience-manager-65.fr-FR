@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
 workflow-type: tm+mt
 source-wordcount: '1668'
 ht-degree: 68%
@@ -116,8 +116,8 @@ Voici quelques paramètres de référence que vous pouvez surveiller pour [!DNL 
 
 Agents de réplication
 
-* MBean : `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
-* URL : `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
+* MBean : `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
+* URL : `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
 * Instances : un auteur et toutes les instances de publication (pour les agents de purge)
 * Seuil d’alarme : lorsque `QueueBlocked``true` a la valeur ou lorsque la valeur de `QueueNumEntries` est supérieure de 150 % à la valeur de référence.
 

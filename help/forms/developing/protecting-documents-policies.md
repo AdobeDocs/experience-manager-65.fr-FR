@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '15514'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -263,7 +263,7 @@ Créez une stratégie à l’aide de l’API Document Security (Java) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux sections suivantes :
 
-* &quot;Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java. »
 
 ### Créer une stratégie à l’aide de l’API Web Service {#create-a-policy-using-the-web-service-api}
 
@@ -321,8 +321,8 @@ Créez une stratégie à l’aide de l’API Document Security (Web Service) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Création d’une stratégie à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Création d’une stratégie à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : créer une stratégie à l’aide de l’API Web Service. »
+* « Démarrage rapide (SwaRef) : créer une stratégie à l’aide de l’API Web Service. »
 
 ## Modifier les stratégies {#modifying-policies}
 
@@ -388,7 +388,7 @@ Modifiez une stratégie existante à l’aide de l’API Document Security (Java
 1. Récupérez une stratégie existante.
 
    * Créez un objet `PolicyManager` en appelant la méthode `getPolicyManager` de l’objet `RightsManagementClient`.
-   * Créez un `Policy` qui représente la stratégie à mettre à jour en appelant le `PolicyManager` de `getPolicy` et transmission des valeurs suivantes&quot;
+   * Créez un objet `Policy` qui représente la stratégie à mettre à jour en appelant la méthode `getPolicy` de l’objet `PolicyManager` et en transmettant les valeurs suivantes.
 
       * Valeur de chaîne représentant le nom du jeu de stratégies auquel appartient la stratégie. Vous pouvez indiquer `null`, ce qui entraîne l’utilisation du jeu de stratégies `MyPolicies`.
       * Valeur de chaîne représentant le nom de la stratégie.
@@ -450,8 +450,8 @@ Modifiez une stratégie existante à l’aide de l’API Document Security (Web 
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Modification d’une stratégie à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Modification d’une stratégie à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : Modifier une stratégie à l’aide de l’API de service Web »
+* « Démarrage rapide (SwaRef) : Modifier une stratégie à l’aide de l’API de service Web »
 
 ## Supprimer des stratégies {#deleting-policies}
 
@@ -506,7 +506,7 @@ Supprimez une stratégie à l’aide de l’API Document Security (Java) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (mode SOAP) : supprimer une stratégie à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode SOAP) : supprimer une stratégie à l’aide de l’API Java »
 
 ### Supprimer des stratégies à l’aide de l’API de service web {#delete-policies-using-the-web-service-api}
 
@@ -545,8 +545,8 @@ Supprimez une stratégie à l’aide de l’API Document Security (service web)�
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Suppression d’une stratégie à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Suppression d’une stratégie à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : supprimer une stratégie à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : supprimer une stratégie à l’aide de l’API de service web »
 
 ## Appliquer des stratégies à des documents PDF {#applying-policies-to-pdf-documents}
 
@@ -642,8 +642,8 @@ Appliquez une stratégie à un document PDF à l’aide de l’API Document Sec
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (mode EJB) : Application d’une stratégie à un document de PDF à l’aide de l’API Java&quot;
-* &quot;Démarrage rapide (mode SOAP) : appliquer une stratégie à un document PDF à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode EJB) : appliquer une stratégie à un document PDF à l’aide de l’API Java »
+* « Démarrage rapide (mode SOAP) : appliquer une stratégie à un document PDF à l’aide de l’API Java »
 
 **Voir également**
 
@@ -713,8 +713,8 @@ Pour appliquer une stratégie à un document PDF à l’aide de l’API Document
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Application d’une stratégie à un document de PDF à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Application d’une stratégie à un document de PDF à l’aide de l’API de service Web &quot;
+* « Démarrage rapide (MTOM) : appliquer une stratégie à un document PDF à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : appliquer une stratégie à un document PDF à l’aide de l’API de service web »
 
 ## Supprimer des stratégies des documents PDF {#removing-policies-from-pdf-documents}
 
@@ -794,7 +794,7 @@ Pour supprimer une stratégie d’un document PDF protégé par une stratégie �
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document PDF à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document PDF à l’aide de l’API Java »
 
 ### Supprimer une stratégie à l’aide de l’API de service web {#remove-a-policy-using-the-web-service-api}
 
@@ -844,8 +844,8 @@ Pour supprimer une stratégie d’un document PDF protégé par une stratégie �
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Suppression d’une stratégie d’un document de PDF à l’aide de l’API de service Web &quot;
-* &quot;Démarrage rapide (SwaRef) : Suppression d’une stratégie d’un document de PDF à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : supprimer une stratégie d’un document PDF à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : supprimer une stratégie d’un document PDF à l’aide de l’API de service web »
 
 **Voir également**
 
@@ -937,7 +937,7 @@ Révoquez l’accès à un document PDF protégé par une stratégie à l’aide
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java. »
 
 ### Révoquer l’accès aux documents à l’aide de l’API Web Service {#revoke-access-to-documents-using-the-web-service-api}
 
@@ -986,8 +986,8 @@ Révoquez l’accès à un document PDF protégé par une stratégie à l’aide
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Révocation d’un document à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Révocation d’un document à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : révoquer un document à l’aide de l’API Web Service. »
+* « Démarrage rapide (SwaRef) : révoquer un document à l’aide de l’API Web Service. »
 
 **Voir également**
 
@@ -1069,7 +1069,7 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (mode SOAP) : Rétablissement de l’accès à un document révoqué à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (mode SOAP) : rétablir l’accès à un document révoqué à l’aide de l’API Web Service. »
 
 ### Rétablir l’accès aux documents révoqués à l’aide de l’API Web Service {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1114,8 +1114,8 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Rétablissement de l’accès à un document révoqué à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Rétablissement de l’accès à un document révoqué à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : rétablir l’accès à un document révoqué à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : rétablir l’accès à un document révoqué à l’aide de l’API de service web »
 
 **Voir également**
 
@@ -1203,7 +1203,7 @@ Pour inspecter un document PDF protégé par une stratégie à l’aide de l’A
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode SOAP) : inspecter des documents de PDF protégés par une stratégie à l’aide de l’API Java »
 
 ### Inspecter des documents PDF protégés par une stratégie à l’aide de l’API de service web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1251,8 +1251,8 @@ Pour inspecter un document PDF protégé par une stratégie à l’aide de l’A
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Inspection des documents de PDF protégés par une stratégie à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Inspection des documents de PDF protégés par une stratégie à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API de service web »
 
 **Voir également**
 
@@ -1423,7 +1423,7 @@ Créer un filigrane à l’aide de l’API Document Security (Java) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (mode SOAP) : créer un filigrane à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode SOAP) : créer un filigrane à l’aide de l’API Java »
 
 ### Créer des filigranes à l’aide de l’API de service Web {#create-watermarks-using-the-web-service-api}
 
@@ -1470,8 +1470,8 @@ Créez un filigrane à l’aide de l’API Document Security (service Web) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Création d’un filigrane à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Création d’un filigrane à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : Créer un filigrane à l’aide de l’API de service Web »
+* « Démarrage rapide (SwaRef) : Créer un filigrane à l’aide de l’API de service Web »
 
 **Voir également**
 
@@ -1618,7 +1618,7 @@ Modifiez un filigrane à l’aide de l’API de Document Security (Web Service)�
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* &quot;Démarrage rapide (MTOM) : Modification d’un filigrane à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : modifier un filigrane à l’aide de l’API Web Service. »
 
 ## Rechercher des événements {#searching-for-events}
 
@@ -1698,7 +1698,7 @@ Pour rechercher des événements à l’aide de l’API Rights Management (Java
 
 Pour obtenir des exemples de code à l’aide du service Rights Management, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (SOAP) : Recherche d’événements à l’aide de l’API Java&quot;
+* « Démarrage rapide (SOAP) : rechercher des événements à l’aide de l’API Java. »
 
 ### Rechercher des événements à l’aide de l’API de service web {#search-for-events-using-the-web-service-api}
 
@@ -1942,8 +1942,8 @@ Pour rechercher des événements à l’aide de l’API Rights Management (servi
 
 Pour obtenir des exemples de code à l’aide du service Rights Management, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* &quot;Démarrage rapide (MTOM) : Recherche d’événements à l’aide de l’API de service Web&quot;
-* &quot;Démarrage rapide (SwaRef) : Recherche d’événements à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : rechercher des événements à l’aide de l’API Web Service. »
+* « Démarrage rapide (SwaRef) : rechercher des événements à l’aide de l’API Web Service. »
 
 **Voir également**
 
@@ -2043,7 +2043,7 @@ Appliquez une stratégie à un document Word à l’aide de l’API Document Sec
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* &quot;Démarrage rapide (mode SOAP) : Application d’une stratégie à un document Word à l’aide de l’API Java&quot;
+* « Démarrage rapide (mode SOAP) : appliquer une stratégie à un document Word à l’aide de l’API Java. »
 
 ### Appliquer une stratégie à un document Word à l’aide de l’API Web Service {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2107,7 +2107,7 @@ Appliquez une stratégie à un document Word à l’aide de l’API Document Sec
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* &quot;Démarrage rapide (MTOM) : Application d’une stratégie à un document Word à l’aide de l’API de service Web &quot;
+* « Démarrage rapide (MTOM) : appliquer une stratégie à un document Word à l’aide de l’API Web Service. »
 
 ## Supprimer des stratégies de documents Word {#removing-policies-from-word-documents}
 
@@ -2187,7 +2187,7 @@ Pour supprimer une stratégie d’un document Word protégé par une stratégie 
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* &quot;Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java &quot;
+* « Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java ».
 
 ### Supprimer une stratégie d’un document Word à l’aide de l’API de service web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
@@ -2237,7 +2237,7 @@ Pour supprimer une stratégie d’un document Word protégé par une stratégie 
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* &quot;Démarrage rapide (MTOM) : Suppression d’une stratégie d’un document Word à l’aide de l’API de service Web&quot;
+* « Démarrage rapide (MTOM) : supprimer une stratégie d’un document Word à l’aide de l’API Web Service. »
 
 **Voir également**
 

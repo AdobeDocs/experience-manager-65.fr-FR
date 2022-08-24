@@ -17,9 +17,9 @@ ht-degree: 96%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=en) |
+| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=en) |
 
 Fonctionnalité de Multi Site Manager (MSM) dans [!DNL Adobe Experience Manager] permet aux utilisateurs de réutiliser du contenu créé une seule fois et réutilisé sur plusieurs emplacements web. Il en est de même pour les ressources numériques que MSM pour [!DNL Assets] . À l’aide de MSM pour [!DNL Assets], vous pouvez :
 
@@ -27,7 +27,7 @@ Fonctionnalité de Multi Site Manager (MSM) dans [!DNL Adobe Experience Manager]
 * conserver plusieurs copies en synchronisation et mettre à jour la copie originale primaire une fois pour transmettre les modifications aux copies enfants ;
 * effectuer des modifications locales en suspendant temporairement ou définitivement la liaison entre les ressources parents et enfants.
 
-## Prérequis {#prereq}
+## Conditions préalables {#prereq}
 
 Pour utiliser MSM pour [!DNL Assets], installez au moins [!DNL Experience Manager] 6.5 Service Pack 1. Pour plus d’informations, voir [les notes de mise à jour du dernier Service Pack ;](/help/release-notes/release-notes.md).
 

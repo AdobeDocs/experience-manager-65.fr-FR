@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Vous pouvez spécifier les emplacements dans lesquels Output recherche certains types de fichiers requis.
 
-1. Dans Administration Console, cliquez sur Services > Output.
+1. Dans la console d’administration, cliquez sur Services > Output.
 1. Sous Emplacements, définissez les options appropriées.
 1. Cliquez sur Enregistrer.
 

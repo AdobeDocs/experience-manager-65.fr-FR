@@ -1,8 +1,8 @@
 ---
 title: Console Aperçu de Live Copy
-seo-title: Console Aperçu de Live Copy
+seo-title: Live Copy Overview Console
 description: Découvrez les principes de la console Aperçu de la Live Copy.
-seo-description: Découvrez les principes de la console Aperçu de la Live Copy.
+seo-description: Learn about the basics of the Live Copy Overview Console.
 uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '534'
 ht-degree: 100%
 
 ---
 
-# Console Aperçu de la Live Copy{#live-copy-overview-console}
+# Console Aperçu de Live Copy{#live-copy-overview-console}
 
 L’**aperçu de la Live Copy** vous permet :
 
@@ -70,7 +70,7 @@ L’**aperçu de la Live Copy** peut être ouvert lorsque lors de l’affichage 
 
 1. Utilisez **Fermer** pour fermer l’aperçu et retourner à la console **Sites**.
 
-## Utilisation de l’aperçu de la Live Copy  {#using-the-live-copy-overview}
+## Utilisation de l’aperçu de la Live Copy {#using-the-live-copy-overview}
 
 L’**aperçu de la Live Copy** peut également être utilisé pour effectuer des actions sur la Live Copy :
 

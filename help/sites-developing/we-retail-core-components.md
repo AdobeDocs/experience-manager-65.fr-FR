@@ -1,8 +1,8 @@
 ---
 title: Test des composants principaux dans We.Retail
-seo-title: Test des composants principaux dans We.Retail
+seo-title: Trying out Core Components in We.Retail
 description: Test des composants principaux dans We.Retail
-seo-description: 'null'
+seo-description: null
 uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 82%
+source-wordcount: '537'
+ht-degree: 81%
 
 ---
 
@@ -39,7 +39,7 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 1. Notez que tous les composants principaux sont nommés **v1** pour indiquer qu’il s’agit de la première version. Des versions seront publiées régulièrement. Elles seront compatibles avec la version d’AEM et permettront une mise à niveau aisée, de sorte que vous puissiez tirer parti des fonctionnalités les plus récentes.
 1. Cliquez sur **Texte (v1)**.
 
-   Vérifiez que le **type de ressource** du composant est `/apps/core/wcm/components/text/v1/text`. Les composants principaux se trouvent sous `/apps/core/wcm/components` et sont versionnés par composant.
+   Voir que la variable **Type de ressource** du composant est `/apps/core/wcm/components/text/v1/text`. Les composants principaux se trouvent sous `/apps/core/wcm/components` et sont versionnés par composant.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -48,11 +48,11 @@ Les composants principaux sont des composants souples et modernes offrant une gr
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Revenez à la console de composants. Effectuez un filtrage sur le groupe **We.Retail** et sélectionnez ensuite le composant **Texte**.
-1. Vérifiez que le **Type de ressource** pointe vers un composant comme prévu sous `/apps/weretail`, mais que le **Type de super-ressource** pointe vers le composant principal `/apps/core/wcm/components/text/v1/text`.
+1. Voir que la variable **Type de ressource** pointe vers un composant comme prévu sous `/apps/weretail` mais le **Resource Super Type** renvoie au composant principal. `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Cliquez sur l’onglet **Utilisation en direct** pour voir sur quelles pages ce composant est actuellement utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
+1. Cliquez sur le bouton **Utilisation en direct** pour voir sur quelles pages ce composant est actuellement utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -89,4 +89,4 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 
 Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html), afin d’obtenir un aperçu des fonctionnalités des composants principaux, et le document de développement [Développement de composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour une présentation technique.
 
-Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Pour plus d’informations sur les modèles modifiables, reportez-vous au document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou au document destiné aux développeurs Page [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) .
+Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Reportez-vous au document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document de développement [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) pour plus d’informations sur les modèles modifiables.

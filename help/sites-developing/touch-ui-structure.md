@@ -1,8 +1,8 @@
 ---
 title: Structure de l’interface utilisateur tactile d’AEM
-seo-title: Structure de l’interface utilisateur tactile d’AEM
+seo-title: Structure of the AEM Touch-Enabled UI
 description: L’interface utilisateur optimisée pour les écrans tactiles, telle qu’elle est implémentée dans AEM, s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés.
-seo-description: L’interface utilisateur optimisée pour les écrans tactiles, telle qu’elle est implémentée dans AEM, s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés.
+seo-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
 uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '861'
 ht-degree: 96%
 
 ---
@@ -148,7 +148,7 @@ AEM s’accompagne de plusieurs calques qui sont déjà implémentés pour la cr
 >
 >Les calques constituent une puissante solution qui affecte la manière dont l’utilisateur affiche le contenu de la page et interagit avec celui-ci. Lorsque vous développez vos propres calques, vous devez veiller à ce qu’ils soient effacés lorsque vous les quittez.
 
-### Sélecteur de calques  {#layer-switcher}
+### Sélecteur de calques {#layer-switcher}
 
 Le sélecteur de calques vous permet de choisir le calque à utiliser. Lorsqu’il est fermé, il indique le calque en cours d’utilisation.
 
@@ -166,6 +166,6 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur les concepts relatifs à l’IU tactile, reportez-vous à l’article [Concepts de l’IU tactile AEM](/help/sites-developing/touch-ui-concepts.md).
+Pour plus d’informations sur les concepts relatifs à l’IU tactile, reportez-vous à l’article [Concepts de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Pour plus d’informations techniques, reportez-vous à la [documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) de l’éditeur de page tactile.
+Pour plus d’informations techniques, voir [Jeu de documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.

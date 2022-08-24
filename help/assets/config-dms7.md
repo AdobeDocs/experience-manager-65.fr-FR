@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 source-git-commit: b14cbc4cad15b06754db8b8c992a596d4d64c096
 workflow-type: tm+mt
 source-wordcount: '6037'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -134,7 +134,7 @@ Pour marquer un dossier sélectionné en vue de sa synchronisation avec Dynamic 
    Une fois qu’une ressource est activée, toutes les mises à jour sont immédiatement publiées en direct sur la livraison S7.
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
-1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, l’auteur du Experience Manager utilise la validation basée sur les jetons et donc l’auteur du Experience Manager prévisualise le contenu Dynamic Media par défaut. Cependant, vous pouvez placer sur la liste autorisée d’autres adresses IP pour permettre aux utilisateurs d’accéder à l’aperçu du contenu en toute sécurité. Pour configurer cette action dans Experience Manager, voir [Configuration de la configuration de la publication Dynamic Media pour Image Server - onglet Sécurité](/help/assets/dm-publish-settings.md#security-tab).
+1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, l’auteur du Experience Manager utilise la validation basée sur les jetons et donc l’auteur du Experience Manager prévisualise le contenu Dynamic Media par défaut. Cependant, vous pouvez également placer en liste autorisée d’autres adresses IP pour permettre aux utilisateurs d’accéder à l’aperçu sécurisé du contenu. Pour configurer cette action dans Experience Manager, voir [Configuration de la configuration de la publication Dynamic Media pour Image Server - onglet Sécurité](/help/assets/dm-publish-settings.md#security-tab).
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -182,7 +182,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 
 **Pour configurer le mode Dynamic Media - Scene7 pour le chargement de ressources de plus de 2 Go :**
 
-1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
 
 1. Dans la fenêtre du CRXDE Lite, effectuez l’une des opérations suivantes :
 
@@ -291,7 +291,7 @@ Voir la section [Chargement des ressources](/help/assets/manage-assets.md#upload
 
 **Pour modifier des types MIME pour les formats pris en charge :**
 
-1. Dans Experience Manager, sélectionnez le logo du Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
+1. Dans Experience Manager, sélectionnez le logo Experience Manager pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -316,7 +316,7 @@ Voir la section [Chargement des ressources](/help/assets/manage-assets.md#upload
 
 Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Assurez-vous que tout nouveau noeud que vous ajoutez dans CRXDE Lite n’est pas supprimé par Experience Manager en déplaçant le type MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
 
-**Pour ajouter des types MIME pour des formats non pris en charge:**
+**Pour ajouter des types MIME pour des formats non pris en charge :**
 
 1. À partir du Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 

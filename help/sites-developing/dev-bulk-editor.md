@@ -1,8 +1,8 @@
 ---
 title: Développement de l’éditeur en masse
-seo-title: Développement de l’éditeur en masse
+seo-title: Developing the Bulk Editor
 description: Le balisage permet de catégoriser et d’organiser le contenu
-seo-description: Le balisage permet de catégoriser et d’organiser le contenu
+seo-description: Tagging allows content to be categorized and organized
 uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1837'
 ht-degree: 65%
 
 ---
@@ -50,34 +50,34 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
    <td> Description <br /> </td>
   </tr>
   <tr>
-   <td> rootPath / rp<br /> </td>
+   <td> rootPath/rp<br /> </td>
    <td> Chaîne </td>
    <td> chemin racine de recherche</td>
   </tr>
   <tr>
-   <td> queryParams / qp<br /> </td>
+   <td> queryParams/qp<br /> </td>
    <td> Chaîne</td>
    <td> requête de recherche</td>
   </tr>
   <tr>
    <td> contentMode / cm<br /> </td>
    <td> Booléen</td>
-   <td> lorsque la valeur est true, le mode de contenu est activé<br /> </td>
+   <td> lorsque la valeur est true, le mode de contenu est activé.<br /> </td>
   </tr>
   <tr>
-   <td> colsValue / cv<br /> </td>
+   <td> colValue / cv<br /> </td>
    <td> Chaîne[]</td>
    <td> propriétés recherchées (valeurs cochées de colsSelection affichées sous forme de cases à cocher)</td>
   </tr>
   <tr>
-   <td> extraCols / ec<br /> </td>
+   <td> extraCols/ec<br /> </td>
    <td> Chaîne[]</td>
    <td> propriétés recherchées supplémentaires (affichées dans un champ de texte séparé par des virgules)</td>
   </tr>
   <tr>
    <td> initialSearch / is<br /> </td>
    <td> Booléen</td>
-   <td> lorsque la valeur est true, la requête est exécutée au chargement de la page<br /> </td>
+   <td> lorsque la valeur est true, la requête est exécutée au chargement de la page.<br /> </td>
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
@@ -85,9 +85,9 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
    <td> sélection des propriétés recherchées (affichée sous forme de cases à cocher)</td>
   </tr>
   <tr>
-   <td> showGridOnly / sgo<br /> </td>
+   <td> showGridOnly/sgo<br /> </td>
    <td> Booléen</td>
-   <td> lorsque la valeur est true, affiche uniquement la grille et non le panneau de recherche <br /> </td>
+   <td> lorsque la valeur est true, affiche uniquement la grille et non le panneau de recherche. <br /> </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed / spc</td>
@@ -266,7 +266,7 @@ Voici une représentation XML des sous-nœuds de la boîte de dialogue :
         </editor>
 ```
 
-### Propriétés de configuration de l’éditeur en masse  {#bulk-editor-configuration-properties}
+### Propriétés de configuration de l’éditeur en masse {#bulk-editor-configuration-properties}
 
 Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivant répertorie toutes les propriétés de configuration pour l’éditeur en masse.
 
@@ -522,7 +522,7 @@ La métadonnée de position forcée forcedPosition vous permet de spécifier l�
 
 Dans le premier exemple, la colonne de sélection est la première colonne configurée avec forcedPosition=&quot;0&quot;.
 
-### Servlet Query  {#query-servlet}
+### Servlet Query {#query-servlet}
 
 Par défaut, le servlet Query se trouve à l’adresse `/libs/wcm/core/components/bulkeditor/json.java`. Vous pouvez configurer un autre chemin pour récupérer les données.
 
@@ -562,7 +562,7 @@ Le concept du servlet Save est le suivant : les modifications ne sont pas direc
 
 Chaque propriété mise à jour est envoyée au servlet au format suivant :
 
-* Nom du paramètre : &lt;chemin d’accès jcr>/&lt;nom de propriété>
+* Nom du paramètre : &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
 
    Exemple : /content/geometrixx/fr/products/jcr:content/par/productlist/1258674859000/SellingSku
 
@@ -572,6 +572,6 @@ Chaque propriété mise à jour est envoyée au servlet au format suivant :
 
 Le servlet doit connaître l’emplacement de stockage de la propriété catalogCode.
 
-Une mise en oeuvre de servlet Save par défaut est disponible à l’adresse /libs/wcm/bulkeditor/save/POST.jsp et est utilisée dans le composant Liste de produits . Il prend tous les paramètres de la requête (avec un format &lt;chemin d’accès jcr>/&lt;nom de propriété>) et écrit des propriétés sur les noeuds à l’aide de l’API JCR. Il crée également un nœud s’il n’existe pas (lignes insérées dans la grille).
+Une mise en oeuvre de servlet Save par défaut est disponible à l’adresse /libs/wcm/bulkeditor/save/POST.jsp et est utilisée dans le composant Liste de produits . Elle prend tous les paramètres de la requête (avec un &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> format) et écrit des propriétés sur les noeuds à l’aide de l’API JCR. Il crée également un nœud s’il n’existe pas (lignes insérées dans la grille).
 
-Le code par défaut ne doit pas être utilisé tel quel, car il met à nouveau en oeuvre ce que le serveur effectue en mode natif (un POST sur &lt;chemin d’accès jcr>/&lt;nom de propriété>). Il ne s’agit donc que d’un bon point de départ pour créer un servlet Save qui gérera un modèle d’héritage de propriété.
+Le code par défaut ne doit pas être utilisé tel quel, car il met à nouveau en oeuvre ce que le serveur fait nativement (un POST sur &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) et n’est donc qu’un bon point de départ pour créer une servlet Save qui gérera un modèle d’héritage de propriétés.

@@ -2,7 +2,7 @@
 source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 # Instructions relatives à la contribution à la documentation d’Adobe Experience Manager
@@ -37,9 +37,9 @@ Les exceptions à cette règle concernent les notes de mise à jour qui réperto
 
 Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les demandes et les demandes d’extraction sont destinés uniquement aux *contributions*. Leur finalité n’est pas de répondre à vos questions sur l’utilisation et la mise en œuvre d’AEM ou la résolution de problèmes techniques.
 
-Toute question relative à l’utilisation d’AEM ou d’erreurs techniques doit être soumise au moyen du processus d’assistance classique par le biais du [portail d’assistance Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) ou posée à la [communauté des Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Toute question relative à l’utilisation d’AEM ou à la résolution d’erreurs techniques doit être soumise au moyen du processus d’assistance classique via le [Portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) ou posée à la [communauté Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***Les contributions à la documentation AEM ne remplacent pas l’*** assistance clientèle d’Adobe et toute contribution de ce type visant à obtenir des réponses à des questions d’assistance sera refusée.
+***Les contributions à la documentation d’AEM ne remplacent pas celles du service clientèle Adobe*** et toute contribution de ce type qui recherche des réponses aux questions liées au support technique sera rejetée.
 
 ### Les contributions doivent clairement référencer les pages de documentation concernées.
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Si vous activez la fonction SSO avec le protocole SPNEGO, ajoutez un fournisseur
 
 ## Ajout d’un fournisseur d’authentification {#add-an-authentication-provider}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur un domaine existant dans la liste. Si vous ajoutez un fournisseur d’authentification pour un nouveau domaine, voir [Ajout d’un domaine d’entreprise](/help/forms/using/admin-help/adding-domains.md#add-an-enterprise-domain) ou [Ajout d’un domaine hybride](/help/forms/using/admin-help/adding-domains.md#add-a-hybrid-domain).
 1. Cliquez sur Ajouter une authentification puis, dans la liste Fournisseur d’authentification, sélectionnez un fournisseur, selon le mécanisme d’authentification utilisé par votre entreprise.
 1. Fournissez toutes les autres informations requises dans la page. Voir [Paramètres d’authentification](configuring-authentication-providers.md#authentication-settings).
@@ -34,14 +34,14 @@ Si vous activez la fonction SSO avec le protocole SPNEGO, ajoutez un fournisseur
 
 ## Modification d’un fournisseur d’authentification {#edit-an-existing-authentication-provider}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Sélectionnez le domaine approprié dans la liste.
 1. Dans la page qui apparaît, sélectionnez le fournisseur d’authentification approprié dans la liste et appliquez les modifications souhaitées. Voir [Paramètres d’authentification](configuring-authentication-providers.md#authentication-settings).
 1. Cliquez sur OK.
 
 ## Suppression d’un fournisseur d’authentification {#delete-an-authentication-provider}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Sélectionnez le domaine approprié dans la liste.
 1. Cochez la case correspondant aux fournisseurs d’authentification à supprimer, puis cliquez sur Supprimer.
 1. Cliquez sur OK dans la page de confirmation qui s’affiche, puis de nouveau sur OK.
@@ -149,7 +149,7 @@ Si l’approvisionnement juste à temps n’est pas activé, lorsque l’authent
 
 1. Ecrivez un conteneur de services qui implémente les interfaces Créateur d’identité (IdentityCreator) et Fournisseur d’affectation (AssignmentProvider). (Voir [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).)
 1. Déployez le conteneur de services sur le serveur Forms.
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 
    Sélectionnez un domaine existant ou cliquez sur Nouveau domaine d’entreprise.
 

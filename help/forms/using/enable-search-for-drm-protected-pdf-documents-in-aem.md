@@ -13,7 +13,7 @@ docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 100%
 
@@ -56,7 +56,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 
 #### Configurer le groupe de SDK client Adobe LiveCycle avec les informations d’identification d’administrateur d’AEM Forms on JEE {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
-1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des champs suivants :
 
    * **URL du serveur** : spécifiez l’URL HTTPS d’AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage de clés AEM Forms on JEE>.
@@ -69,7 +69,7 @@ Vous pouvez utiliser l’une des méthodes suivantes pour créer une connexion s
 #### Configurer le groupe de SDK client Adobe LiveCycle à l’aide de l’authentification mutuelle {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Activez l’authentification mutuelle pour AEM Forms on JEE. Pour plus d’informations, voir [CAC et authentification mutuelle](https://helpx.adobe.com/fr/livecycle/kb/cac-mutual-authentication.html).
-1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
+1. Ouvrez la console Web AEM. L’URL est la suivante : https://&#39;[server]:[port]&#39;/system/console/configMgr.
 1. Recherchez et ouvrez le **bundle Adobe LiveCycle Client SDK**. Spécifiez la valeur des propriétés suivantes :
 
    * **URL du serveur** : indiquez l’URL HTTPS du serveur AEM Forms on JEE. Pour activer la communication via https, redémarrez le serveur AEM avec le paramètre -Djavax.net.ssl.trustStore=&lt;chemin du fichier de stockage de clés AEM Forms on JEE>.

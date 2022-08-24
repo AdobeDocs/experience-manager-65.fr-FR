@@ -5,7 +5,7 @@ exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 68%
+ht-degree: 81%
 
 ---
 
@@ -21,9 +21,9 @@ Les Guides de prise en main sans tête présentent un chemin simple pour créer,
 
 >[!TIP]
 >
->Ce guide de prise en main suppose des connaissances en AEM et en technologies sans tête.
+>Ce guide de prise en main s’appuie sur des connaissances préalables concernant AEM et les technologies découplées.
 >
->Si vous découvrez AEM ou que vous n’avez pas de tête, reportez-vous à la section [Parcours de documentation sans affichage](/help/journey-headless/home.md) pour une introduction de bout en bout sur les headless et la façon dont AEM les prend en charge.
+>Si vous n’êtes pas familier avec AEM ou le découplage, reportez-vous à nos [Parcours de documentation découplés](/help/journey-headless/home.md) pour découvrir tout sur le découplage et sur la façon dont AEM le prend en charge.
 
 ## Public {#audience}
 

@@ -1,8 +1,8 @@
 ---
 title: Fonctionnalité Flux d’activités
-seo-title: Fonctionnalité Flux d’activités
+seo-title: Activity Streams Feature
 description: Activités d’un membre de la communauté connecté
-seo-description: Activités d’un membre de la communauté connecté
+seo-description: Activities of a signed-in community member
 uuid: decd2d6c-4d4b-4698-a92c-2b5b441458cf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,16 +13,16 @@ docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '455'
 ht-degree: 25%
 
 ---
 
 # Fonctionnalité Flux d’activités {#activity-streams-feature}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
-Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont collectées dans un flux qui peut être filtré et affiché de différentes manières via la configuration du composant `Activity Streams`.
+Les activités d’un membre de la communauté connecté, comme la publication sur un forum ou un blog, sont regroupées dans un flux qui peut être filtré et affiché de différentes manières via la configuration de la fonction `Activity Streams` composant.
 
 La possibilité de suivi ajoute une autre vue des activités lorsque des membres de la communauté suivent des publications d’intérêt ou suivent les activités d’autres membres de la communauté.
 
@@ -33,21 +33,21 @@ Le document décrit :
 
 ### Ajout de flux d’activités à une page {#adding-activity-streams-to-a-page}
 
-Si vous souhaitez ajouter un composant `Activity Streams` à une page en mode création, utilisez l’explorateur de composants pour accéder à :
+Si vous souhaitez ajouter une `Activity Streams` sur une page en mode création, utilisez l’explorateur de composants pour accéder à
 
 * `Communities / Activity Streams`
 
 et faites-le glisser sur la page où des flux d’activités doivent apparaître.
 
-Pour plus d’informations, voir [Principes de base des composants des communautés](/help/communities/basics.md).
+Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque les [bibliothèques côté client requises](/help/communities/essentials-activities.md#essentials-for-client-side) sont incluses, voici comment le composant `Activity Streams` apparaîtra :
+Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-activities.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `Activity Streams` apparaît :
 
 ![activity-streams](assets/activity-component.png)
 
 ### Configuration du composant Flux d’activités {#configuring-activity-streams}
 
-Sélectionnez le composant `Activity Streams` inséré pour y accéder et sélectionnez l’icône `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `Activity Streams` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure](assets/configure-new.png)
 
@@ -77,15 +77,15 @@ Dans l’onglet **Activités de l’utilisateur**, spécifiez les activités à 
 
 ### Vue suivante {#following-view}
 
-Les composants doivent être configurés pour activer les éléments suivants. Les fonctions qui permettent ce qui suit sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [Qa](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md) et [commentaires](/help/communities/comments.md).
+Les composants doivent être configurés pour activer les éléments suivants. Les fonctionnalités qui permettent les suivantes sont [blog](/help/communities/blog-feature.md), [forum](/help/communities/forum.md), [Q&amp;R](/help/communities/working-with-qna.md), [calendar](/help/communities/calendar.md), [filelibrary](/help/communities/file-library.md), et [commentaires](/help/communities/comments.md).
 
 ![after-view](assets/following-activities.png)
 
-Le bouton **Suivre** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md) ou [abonnements](/help/communities/subscriptions.md). Chaque fois que le bouton **Suivre** est sélectionné, il est possible d’activer ou de désactiver une sélection. La sélection `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
+Le **Suivez** permet de suivre les entrées en tant qu’activités, [notifications](/help/communities/notifications.md)ou [subscriptions](/help/communities/subscriptions.md). Chaque fois que la fonction **Suivez** est sélectionné, il est possible d’activer ou de désactiver une sélection. Le `Email Subscriptions` n’est présente que lorsqu’elle est configurée.
 
-Si l’une des méthodes suivantes est sélectionnée, le texte du bouton passe à **Suivant**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
+Si l’une des méthodes suivantes est sélectionnée, le texte du bouton devient **Suivre**. Pour des raisons pratiques, il est possible de sélectionner `Unfollow All` pour désactiver toutes les méthodes.
 
-Le bouton **Suivre** s’affiche :
+Le **Suivez** s’affiche :
 
 * Lors de l’affichage du profil d’un autre membre.
 * Sur une page principale, comme les forums, les Q&amp;R et les blogs.

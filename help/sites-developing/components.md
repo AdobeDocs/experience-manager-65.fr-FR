@@ -1,8 +1,8 @@
 ---
 title: Aperçu des composants
-seo-title: Composants
+seo-title: Components
 description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
-seo-description: Les composants sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web.
+seo-description: Components are modular units which realize specific functionality to present your content on your website
 uuid: fb39aeb8-8f43-4091-8083-ebfab89e6e63
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '598'
 ht-degree: 82%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 82%
 
 Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels que ceux [utilisés pour la création de pages](/help/sites-authoring/default-components-foundation.md).
 
-## Que sont les composants ? {#what-exactly-is-a-component}
+## Que sont les composants ?  {#what-exactly-is-a-component}
 
 * sont des unités modulaires qui exécutent des fonctionnalités spécifiques pour présenter du contenu sur votre site web ;
 * peuvent être réutilisés ;
@@ -32,7 +32,7 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 * possèdent une interface utilisateur standardisée ;
 * sont associés à un comportement de modification qui peut être configuré ;
 * Utilisez des boîtes de dialogue créées à l’aide de sous-éléments basés sur les composants de l’IU Granite.
-* sont développés à l’aide de [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) (recommandé) ou JSP ;
+* sont développés à l’aide de [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html) (recommandé) ou JSP.
 * peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
 Compte tenu de la nature modulaire des composants, vous pouvez effectuer les opérations suivantes :
@@ -46,7 +46,7 @@ Chaque composant AEM :
 
 * est un type de ressource ;
 * est un ensemble de scripts qui exécutent complètement une fonction spécifique ;
-* Peut fonctionner dans *isolation*, c’est-à-dire dans AEM ou un portail.
+* Peut fonctionner dans *isolation*, c’est-à-dire dans AEM ou sur un portail.
 
 ## Composants prêts à l’emploi dans AEM {#out-of-the-box-components-within-aem}
 
@@ -67,7 +67,7 @@ Il existe deux groupes de composants AEM fournis par Adobe :
 * [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
 * [Composants de base](/help/sites-authoring/default-components-foundation.md)
 
-**Les** composants principaux ont été introduits avec AEM 6.3 et offrent des fonctionnalités de création flexibles et riches en fonctionnalités. Le [site de référence We.Retail](/help/sites-developing/we-retail.md) illustre comment les composants principaux peuvent être utilisés et représente les bonnes pratiques actuelles en matière de développement de composants.
+**Composants principaux** ont été introduites avec AEM 6.3 et offrent des fonctionnalités de création flexibles et riches en fonctionnalités. Le [Site de référence We.Retail](/help/sites-developing/we-retail.md) illustre comment les composants principaux peuvent être utilisés et représentent les bonnes pratiques actuelles en matière de développement de composants.
 
 Les **composants de base** sont fournis avec AEM depuis de nombreuses versions et sont disponibles prêts à l’emploi dans une installation AEM standard. Bien qu’ils soient toujours pris en charge, la plupart d’entre eux ont été abandonnés, ne sont plus améliorés et reposent sur des technologies héritées.
 
@@ -75,7 +75,7 @@ Les **composants de base** sont fournis avec AEM depuis de nombreuses versions 
 >
 >Les [composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) représentent les méthodes recommandées en matière de conception et de développement de composants. Ils font également office d’implémentations de référence.
 >
->[Les ](modernization-tools.md) outils de modernisation d’AEM permettent la migration vers les composants principaux.
+>[Outils de modernisation d’AEM](modernization-tools.md) peut vous aider à migrer vers les composants principaux.
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
@@ -108,7 +108,7 @@ Les pages suivantes fournissent des informations plus détaillées sur le dével
 * [Internationalisation de composants](/help/sites-developing/i18n.md)
 * [Composants principaux](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Utilisation de conditions de masquage](/help/sites-developing/hide-conditions.md)
-* IU classique
+* Interface utilisateur classique
 
    * [Composants AEM (IU classique)](/help/sites-developing/developing-components-classic.md)
    * [Utilisation et extension de widgets (IU classique)](/help/sites-developing/widgets.md)

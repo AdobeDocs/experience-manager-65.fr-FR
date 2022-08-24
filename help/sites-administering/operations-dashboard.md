@@ -21,7 +21,7 @@ ht-degree: 76%
 
 # Tableau de bord des opérations {#operations-dashboard}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Dans AEM 6, le tableau de bord des opérations permet aux opérateurs système de surveiller d’un simple coup d’œil l’intégrité du système AEM. Il fournit également des informations de diagnostic générées automatiquement sur les aspects pertinents de l’AEM et permet de configurer et d’exécuter l’automatisation de maintenance autonome afin de réduire considérablement les opérations du projet et les cas de support. Le tableau de bord des opérations peut être étendu en y intégrant des contrôles de l’intégrité et des tâches de maintenance personnalisés. En outre, les données du tableau de bord des opérations sont accessibles à l’aide des outils de surveillance externes par le biais de JMX.
 
@@ -766,8 +766,8 @@ Vous pouvez également télécharger un `JSON` pour résumer les informations du
      <li>Espace disque (sur la partition sur laquelle se trouve le répertoire)</li>
      <li>tas maximal, comme renvoyé par <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
     </ul> </td>
-   <td>N/A</td>
-   <td>N/A</td>
+   <td>S/O</td>
+   <td>S/O</td>
   </tr>
   <tr>
    <td>Instance</td>
@@ -777,8 +777,8 @@ Vous pouvez également télécharger un `JSON` pour résumer les informations du
      <li>Liste des modes d’exécution</li>
      <li>Date à laquelle l’instance a été démarrée</li>
     </ul> </td>
-   <td>N/A</td>
-   <td>N/A</td>
+   <td>S/O</td>
+   <td>S/O</td>
   </tr>
   <tr>
    <td>Référentiel</td>
@@ -798,8 +798,8 @@ Vous pouvez également télécharger un `JSON` pour résumer les informations du
       </ul> </li>
      <li>S’il n’y a pas d’entrepôt de données externe personnalisé, un message le mentionnant s’affiche.</li>
     </ul> </td>
-   <td>N/A</td>
-   <td>N/A</td>
+   <td>S/O</td>
+   <td>S/O</td>
   </tr>
   <tr>
    <td>Agents de distribution</td>
@@ -872,7 +872,7 @@ Vous pouvez également télécharger un `JSON` pour résumer les informations du
     <ul>
      <li>L’utilisateur doit vérifier s’il existe des tâches avec des états inattendus ou un nombre élevé.</li>
     </ul> </td>
-   <td>N/A</td>
+   <td>S/O</td>
   </tr>
   <tr>
    <td>Nombre de nœuds estimés</td>
@@ -884,14 +884,14 @@ Vous pouvez également télécharger un `JSON` pour résumer les informations du
      <li>éléments autorisables</li>
      <li>nombre total de nœuds<br /> </li>
     </ul> <p>Le nombre total de noeuds est obtenu à partir de nodeCounterMBean, tandis que le reste des statistiques est obtenu à partir d’IndexInfoService.</p> </td>
-   <td>N/A</td>
-   <td>N/A</td>
+   <td>S/O</td>
+   <td>S/O</td>
   </tr>
   <tr>
    <td>Sauvegarde</td>
    <td>Affiche « Sauvegarde en ligne en cours », le cas échéant.</td>
-   <td>N/A</td>
-   <td>N/A</td>
+   <td>S/O</td>
+   <td>S/O</td>
   </tr>
   <tr>
    <td>Indexation</td>
@@ -900,8 +900,8 @@ Vous pouvez également télécharger un `JSON` pour résumer les informations du
      <li>Indexation en cours</li>
      <li>Requête en cours</li>
     </ul> <p>Si un thread d’indexation ou de requête est présent dans l’image mémoire des threads.</p> </td>
-   <td>N/A</td>
-   <td>N/A</td>
+   <td>S/O</td>
+   <td>S/O</td>
   </tr>
  </tbody>
 </table>

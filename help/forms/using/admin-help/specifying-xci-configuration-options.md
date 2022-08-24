@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
 exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%
 
@@ -28,6 +28,6 @@ Le service Forms vous permet de spécifier un fichier XCI personnalisé à utili
 
 Vous pouvez sélectionner des options qui annulent le remplacement des options répertoriées ci-dessus. Le service Forms utilisera alors les valeurs spécifiées dans le fichier XCI personnalisé.
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Cochez ou désélectionnez la case Utiliser les options XCI par défaut du système. Lorsque cette option est sélectionnée, le service Forms utilise ses valeurs par défaut pour les paramètres paquets, créateur, producteur et compressObjectStream. Lorsque cette option est désélectionnée, le service Forms utilise les valeurs spécifiées dans le fichier XCI personnalisé.
 1. Cliquez sur Enregistrer.

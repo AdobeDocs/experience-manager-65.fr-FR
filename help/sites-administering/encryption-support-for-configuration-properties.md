@@ -1,8 +1,8 @@
 ---
 title: Prise en charge du chiffrement des propriétés de configuration
-seo-title: Prise en charge du chiffrement des propriétés de configuration
+seo-title: Encryption Support for Configuration Properties
 description: Prise en charge du chiffrement des propriétés de configuration
-seo-description: 'null'
+seo-description: null
 uuid: 26dc5e46-9332-4d9b-8874-895b90391e8c
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '277'
 ht-degree: 87%
 
 ---
@@ -33,7 +33,7 @@ La prise en charge du module de configuration OSGi a été ajoutée afin de déc
 
 Ces étapes indiquent comment chiffrer le mot de passe SMTP pour le service de messagerie. Vous pouvez effectuer ces étapes pour une propriété OSGI que vous souhaitez chiffrer.
 
-1. Accédez à la console web d’AEM à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Accédez à la console web AEM à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
 1. Dans le coin supérieur gauche, accédez à **Prise en charge du chiffrement principal**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -53,6 +53,6 @@ Ces étapes indiquent comment chiffrer le mot de passe SMTP pour le service de m
 
 1. Enregistrez les propriétés du Service de messagerie Day CQ. Le mot de passe SMTP est maintenant envoyé sous forme de valeur chiffrée.
 
-## Prise en charge du déchiffrement  {#decryption-support}
+## Prise en charge du déchiffrement {#decryption-support}
 
 AEM fournit désormais un module de configuration pour déchiffrer les propriétés de configuration. Ce module AEM déchiffre et récupère automatiquement les propriétés de texte en clair.

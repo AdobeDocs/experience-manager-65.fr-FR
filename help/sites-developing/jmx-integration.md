@@ -55,7 +55,7 @@ Ajoutez des annotations à l’interface de gestion pour spécifier les métadon
 Les classes sont fournies pour la création de MBeans dynamiques qui consomment les annotations que vous ajoutez à leurs interfaces :
 
 * **AnnotatedStandardMBean :** sous-classe de la classe javax.management.StandardMBean qui fournit automatiquement à la console JMX les métadonnées d’annotation.
-* **OpenAnnotatedStandardMBean :**  sous-classe de la classe AnnotatedStandardMBean pour la création de MBean ouverts qui consomment l’annotation OpenTypeInfo.
+* **OpenAnnotatedStandardMBean :** Sous-classe de la classe AnnotatedStandardMBean pour la création de MBean ouverts qui utilisent l’annotation OpenTypeInfo .
 
 ### Développement de MBeans {#developing-mbeans}
 
@@ -134,15 +134,15 @@ Lorsque vous enregistrez des MBeans en tant que service OSGi, ils sont automatiq
 
 En plus des métadonnées liées à OSGi, vous devez également fournir les métadonnées dont le module Aries JMX Whiteboard a besoin pour enregistrer le MBean avec le serveur MBean :
 
-* **Nom de l’interface DynamicMBean :** Déclarez que le service MBean met en oeuvre l’ `javax.management.DynamicMBea`interface n. Cette déclaration indique au module Aries JMX Whiteboard que le service est un service MBean.
+* **Nom de l’interface DynamicMBean :** Déclarez que le service MBean met en oeuvre le `javax.management.DynamicMBea`n . Cette déclaration indique au module Aries JMX Whiteboard que le service est un service MBean.
 
-* **Propriétés du domaine et de la clé MBean :** sur Felix, vous fournissez ces informations en tant que propriété du service OSGi du MBean. Il s’agit des mêmes informations que celles que vous fournissez habituellement au serveur MBean dans un objet `javax.management.ObjectName`.
+* **Propriétés du domaine et de la clé MBean :** Sur Felix, vous fournissez ces informations en tant que propriété du service OSGi du MBean. Il s’agit des mêmes informations que celles que vous fournissez habituellement au serveur MBean dans une `javax.management.ObjectName` .
 
 Lorsque votre MBean reflète un service unique, une seule instance du service MBean est requise. Dans ce cas, si vous utilisez le module externe Felix SCR Maven, vous pouvez utiliser les annotations SCR (Apache Felix Service Component Runtime) sur la classe d’implémentation MBean pour spécifier les métadonnées associées à JMX. Pour instancier plusieurs instances MBean, vous pouvez créer une autre classe qui effectue cet enregistrement du service OSGi du MBean. Dans ce cas, les métadonnées associées à JMX sont générées lors de l’exécution.
 
 **MBean simple**
 
-Les MBeans pour lesquels vous pouvez définir tous les attributs et toutes les opérations au moment de la conception peuvent être déployés à l’aide d’annotations SCR dans la classe d’implémentation MBean. Dans l’exemple suivant, l’attribut `value` de l’annotation `Service` déclare que le service implémente l’interface `DynamicMBean`. L’attribut `name` de l’annotation `Property` spécifie les propriétés de domaine et de clé JMX.
+Les MBeans pour lesquels vous pouvez définir tous les attributs et toutes les opérations au moment de la conception peuvent être déployés à l’aide d’annotations SCR dans la classe d’implémentation MBean. Dans l’exemple suivant, l’attribut `value` de l’annotation `Service` déclare que le service implémente l’interface `DynamicMBean`. Le `name` de l’attribut `Property` annotation spécifie les propriétés de domaine et de clé JMX.
 
 #### Classe d’implémentation MBean avec annotations SCR {#mbean-implementation-class-with-scr-annotations}
 
@@ -213,7 +213,7 @@ Le MBean de cet exemple fournit des informations sur les modèles de processus C
 * WorkflowMBeanManager : interface de la classe de gestionnaire MBean.
 * WorkflowMBeanManagerImpl : classe d’implémentation du gestionnaire MBean.
 
-**Remarque :** Pour plus de simplicité, le code de cet exemple n’effectue pas de journalisation ni ne réagit aux exceptions générées.
+**Remarque :** Pour plus de simplicité, le code de cet exemple n’effectue pas de journalisation ou ne réagit pas aux exceptions générées.
 
 WorkflowMBeanManagerImpl inclut une méthode d’activation de composant. Lorsque le composant est activé, la méthode exécute les tâches suivantes :
 

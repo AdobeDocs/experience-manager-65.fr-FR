@@ -1,8 +1,8 @@
 ---
 title: Mosaïque Gestion de l’application
-seo-title: Mosaïque Gestion de l’application
+seo-title: Manage App Tile
 description: Consultez cette page pour en savoir plus sur la mosaïque Gérer l’application du tableau de bord de l’application qui permet de modifier les détails de l’application.
-seo-description: Consultez cette page pour en savoir plus sur la mosaïque Gérer l’application du tableau de bord de l’application qui permet de modifier les détails de l’application.
+seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
 uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1263'
 ht-degree: 52%
 
 ---
@@ -29,11 +29,11 @@ La mosaïque **Gestion de l’application** du tableau de bord des applications 
 
 ## Présentation de la mosaïque Gérer l’application {#understanding-the-manage-app-tile}
 
-Vous pouvez parcourir chaque mosaïque de la mosaïque **Gérer l’application** pour afficher ou modifier les détails en cliquant sur &quot;..&quot;. dans le coin inférieur droit.
+Vous pouvez explorer chaque mosaïque de la **Gérer l’application** pour afficher ou modifier les détails en cliquant sur &quot;...&quot;. dans le coin inférieur droit.
 
 ### Onglet De base {#the-basic-tab}
 
-Vous pouvez modifier le **nom**, **auteur**, la **description courte** et la **description** de votre application depuis cet onglet.
+Vous pouvez modifier la variable **Nom**, **Auteur**, **Description courte**, et la variable **Description** pour votre application depuis cet onglet.
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -56,15 +56,15 @@ Chaque boutique d’applications de fournisseurs, telle qu’Apple App Store ou 
 >
 >L’application AEM Vérifier permet d’envoyer des captures d’écran directement aux détails de votre application dans AEM.
 >
->Pour plus d’informations, voir [Démarrage rapide mobile pour AEM vérification](/help/mobile/phonegap-mobile-quickstart.md).
+>Voir [Démarrage rapide mobile pour la vérification AEM](/help/mobile/phonegap-mobile-quickstart.md) pour plus d’informations.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
-### Métadonnées   {#metadata}
+### Métadonnées {#metadata}
 
 >[!NOTE]
 >
->Une fois que vous connaissez la mosaïque **Gérer l’application**, voir [Modification des métadonnées de l’application](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
+>Une fois que vous connaissez le **Gérer l’application** mosaïque, voir [Modification des métadonnées d’application](/help/mobile/phonegap-editmetadata.md) pour afficher et modifier les métadonnées.
 
 #### Métadonnées courantes {#common-metadata}
 
@@ -74,11 +74,11 @@ Il existe une configuration et des métadonnées communes à toutes les platefor
 
 Dans cette section, vous définissez l’URL du serveur de mise à jour de contenu, la page d’entrée de votre application mobile, la version de PhoneGap utilisée pour la compilation, la version, le nom et la description de votre application, etc.
 
-**App** Version est la version opérationnelle de votre application. L’une des pratiques conseillées consiste à utiliser une notation à 3 décimales séparées par un point en commençant en dessous de 1.0.0 avant la première version.
+**Version de l’application** est la version opérationnelle de votre application. L’une des pratiques conseillées consiste à utiliser une notation à 3 décimales séparées par un point en commençant en dessous de 1.0.0 avant la première version.
 
-**PhoneGap** Version est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. L’une des pratiques conseillées consiste à toujours la mettre à jour pour bénéficier des dernières fonctionnalités et des correctifs PhoneGap.
+**Version de PhoneGap** est la version dans laquelle vous souhaitez compiler votre application avec PhoneGap. L’une des pratiques conseillées consiste à toujours la mettre à jour pour bénéficier des dernières fonctionnalités et des correctifs PhoneGap.
 
-**L’** URL du serveur de mise à jour de contenu est l’URL que votre application utilisera pour appeler les mises à jour ContentSync. Elle doit correspondre à l’URL de votre répartiteur. Si vous n’utilisez pas de répartiteur, il doit s’agir de l’une des instances de publication qui sera utilisée pour déployer les mises à jour ContentSync de votre application.
+**URL du serveur de mise à jour de contenu** est l’URL que votre application utilisera pour appeler les mises à jour ContentSync. Elle doit correspondre à l’URL de votre répartiteur. Si vous n’utilisez pas de répartiteur, il doit s’agir de l’une des instances de publication qui sera utilisée pour déployer les mises à jour ContentSync de votre application.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -104,7 +104,7 @@ Dans le cas de plateformes dont le langage n’est pas compris par AEM, un déve
 
 L’Appstore d’Apple nécessite des métadonnées supplémentaires pour la soumission de votre application en vue de sa diffusion. La section Métadonnées iOS tente de collecter les informations nécessaires, qui peuvent être utilisées par l’outil iTMSTransporter d’Apple pour publier les métadonnées sur le compte développeur Apple associé.
 
-Pour obtenir les métadonnées spécifiques à Apple, vous devez d’abord créer votre application sur [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées requises par la section des métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et charger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez uniquement vous procurer les métadonnées à collecter, vous n’êtes pas obligé de renseigner les métadonnées spécifiques à iOS. Vous pouvez exporter les métadonnées qui fusionneront les métadonnées iOS et les métadonnées courantes et collecteront toutes les captures d’écran dans un fichier zip téléchargeable à tout moment.
+Pour obtenir les métadonnées spécifiques à Apple, vous devez d’abord créer votre application sur [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Lors de la création de votre application, Apple génère les métadonnées requises par la section Métadonnées iOS si vous souhaitez utiliser l’outil Apple iTMSTransporter pour valider et charger les métadonnées sur itunesconnect.apple.com. Si vous souhaitez uniquement vous procurer les métadonnées à collecter, vous n’êtes pas obligé de renseigner les métadonnées spécifiques à iOS. Vous pouvez exporter les métadonnées qui fusionneront les métadonnées iOS et les métadonnées courantes et collecteront toutes les captures d’écran dans un fichier zip téléchargeable à tout moment.
 
 Le fichier zip téléchargé contient un fichier itmsp qui peut être contrôlé au niveau du fichier metadata.xml. Le fichier itmsp contient les métadonnées exportées (dans le fichier metadata.xml) et toutes les captures d’écran associées.
 
@@ -134,13 +134,13 @@ La propriété URL du serveur de mise à jour de contenu est l’URL qui doit po
 
 ### Onglet Plugins {#the-plugins-tab}
 
-L’onglet **Plugins** décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié pendant une génération.
+Le **Modules externes** Cette section décrit les modules externes associés à votre application. Ces informations seront utilisées pour récupérer le module externe approprié pendant une génération.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
 ### Onglet Captures d’écran {#the-screenshots-tab}
 
-L’onglet **Captures d’écran** affiche les résolutions de capture d’écran prises en charge sur différentes plateformes.
+Le **Captures d’écran** affiche les résolutions d’écran prises en charge sur différentes plateformes.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -150,11 +150,11 @@ L’onglet **Captures d’écran** affiche les résolutions de capture d’écra
 
 ### Onglet Authentification {#the-authentication-tab}
 
-L’onglet **Authentification** vous permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d’utiliser l’authentification Adobe Experience Manager OAuth.
+Le **Authentification** Cet onglet vous permet de sélectionner un client OAuth à associer à votre application et permet à un développeur d’utiliser l’authentification OAuth de Adobe Experience Manager.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
-### Étapes suivantes {#the-next-steps}
+### Les étapes suivantes {#the-next-steps}
 
 Une fois que vous avez appris à gérer la mosaïque d’application dans le tableau de bord de l’application, reportez-vous aux ressources suivantes pour d’autres rôles de création :
 

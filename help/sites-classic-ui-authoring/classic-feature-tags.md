@@ -1,8 +1,8 @@
 ---
 title: Utilisation des balises
-seo-title: Utilisation des balises
+seo-title: Using Tags
 description: Les balises sont un moyen simple et rapide de classer le contenu de votre site web. Les balises sont en quelque sorte des mots-clés ou des libellés qu’il est possible d’associer à une page, à une ressource ou à tout autre type de contenu, pour permettre aux fonctions de recherche de retrouver le contenu en question et son contenu associé.
-seo-description: Les balises sont un moyen simple et rapide de classer le contenu de votre site web. Les balises sont en quelque sorte des mots-clés ou des libellés qu’il est possible d’associer à une page, à une ressource ou à tout autre type de contenu, pour permettre aux fonctions de recherche de retrouver le contenu en question et son contenu associé.
+seo-description: Tags are a quick and easy method of classifying content within a website. Tags may be thought of as keywords or labels that can be attached to a page, an asset, or other content to enable searches to find that content and related content.
 uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 81%
+source-wordcount: '712'
+ht-degree: 82%
 
 ---
 
@@ -43,7 +43,7 @@ Lors de la conception de la structure du contenu d’un site et du schéma de m�
 
 Dans l’environnement de développement de contenu, les auteurs peuvent appliquer des balises en accédant aux propriétés de la page et en entrant une ou plusieurs balises dans le champ **Balises/Mots-clés**.
 
-Pour appliquer des [balises prédéfinies](/help/sites-administering/tags.md), dans la fenêtre **Propriétés de la page**, utilisez le menu déroulant du champ `Tags/Keywords` pour effectuer une sélection dans la liste des balises autorisées pour la page. L’onglet **Balises standard** est l’espace de noms par défaut, ce qui signifie qu’il n’existe aucun `namespace-string:` préfixé à la taxonomie.
+A appliquer [balises prédéfinies](/help/sites-administering/tags.md), dans la variable **Propriétés de la page** utilisez la fenêtre `Tags/Keywords` menu déroulant de champ pour effectuer une sélection dans la liste des balises autorisées pour la page. La **Balises standard** tab est l’espace de noms par défaut, ce qui signifie qu’il n’y a pas de `namespace-string:` préfixé à la taxonomie.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -67,16 +67,16 @@ Comme c’est le cas avec les pages, vous pouvez effectuer les opérations suiva
 
 ## Nuages de tags {#tag-clouds}
 
-Les nuages de balises affichent un nuage de balises, soit pour la page active, soit pour l’ensemble du site web, soit pour les pages les plus consultées. Les nuages de tags sont un moyen de mettre en évidence les problèmes qui intéressent (ont été) l’utilisateur. La taille du texte utilisé pour afficher la balise varie en termes d’utilisation.
+Les nuages de tags affichent un nuage de tags pour la page en cours, pour l’intégralité du site web ou pour les éléments visités le plus souvent. Les nuages de tags sont un moyen de mettre en évidence les problèmes qui intéressent (ont été) l’utilisateur. La taille du texte utilisé pour afficher la balise varie en termes d’utilisation.
 
 Le composant [Nuage de tags](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (groupe de composants Général) sert à ajouter un nuage de tags à une page.
 
-## Recherche sur des balises  {#searching-on-tags}
+## Recherche sur des balises {#searching-on-tags}
 
 Vous pouvez rechercher des tags dans les environnements de création et de publication.
 
-### Utilisation d’un composant de recherche  {#using-search-component}
+### Utilisation d’un composant de recherche {#using-search-component}
 
-L’ajout d’un [composant de recherche](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) à une page fournit une fonctionnalité de recherche qui inclut des balises et peut être utilisée dans les environnements de création et de publication.
+Ajouter un [Composant Recherche](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) sur une page fournit une fonctionnalité de recherche qui inclut des balises et peut être utilisée dans les environnements de création et de publication.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)

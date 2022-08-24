@@ -12,7 +12,7 @@ discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3892'
 ht-degree: 100%
 
@@ -425,7 +425,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>border</td>
+   <td>bordure</td>
    <td>L’objet border décrit la bordure entourant un objet.</td>
    <td>Aucune</td>
   </tr>
@@ -455,7 +455,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>validate</td>
+   <td>valider</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>
@@ -716,7 +716,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
   </tr>
   <tr>
    <td>ui</td>
-   <td>L’objet ui renferme la description d’interface utilisateur d’un objet de formulaire.<br /> </td>
+   <td>L’objet ui renferme la description d’interface utilisateur d’un objet de formulaire.<br /> </td>
    <td> </td>
   </tr>
   <tr>
@@ -903,7 +903,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>border</td>
+   <td>bordure</td>
    <td>Indique la bordure entourant ce champ.</td>
    <td>Aucune</td>
   </tr>
@@ -953,7 +953,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>validate</td>
+   <td>valider</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>

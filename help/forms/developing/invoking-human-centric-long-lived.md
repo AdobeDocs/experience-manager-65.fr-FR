@@ -12,7 +12,7 @@ discoiquuid: 18a320b4-dce6-4c50-8864-644b0b2d6644
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
 
@@ -179,7 +179,7 @@ Pour appeler le processus `FirstAppSolution/PreLoanProcess`, effectuez les tâch
 
 1. Créez un objet `InvocationRequest` en appelant la méthode `createInvocationRequest` de l’objet `ServiceClientFactory` et en transmettant les valeurs suivantes :
 
-   * Valeur string qui spécifie le nom du processus de longue durée à appeler. Pour appeler le processus `FirstAppSolution/PreLoanProcess`, indiquez `FirstAppSolution/PreLoanProcess`.
+   * Valeur string qui spécifie le nom du processus de longue durée à appeler. Pour appeler le processus `FirstAppSolution/PreLoanProcess`, spécifiez `FirstAppSolution/PreLoanProcess`.
    * Une valeur string qui représente le nom de l’opération de processus. Le nom de l’opération de processus de longue durée est `invoke`.
    * L’objet `java.util.HashMap` qui contient les valeurs de paramètre requises par l’opération de service.
    * Une valeur Boolean définie sur `false` qui crée une demande asynchrone (cette valeur est applicable pour appeler un processus de longue durée).
@@ -595,10 +595,10 @@ Pour créer une page ASP qui appelle le processus `FirstAppSolution/PreLoanProce
 1. Définissez le membre de données `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
 1. Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-   * Affectez le nom d’utilisateur AEM Forms au membre de données `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName`.
-   * Affectez la valeur de mot de passe correspondante au membre de données `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.Password`.
-   * Affectez la valeur constante `HttpClientCredentialType.Basic` au membre de données `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-   * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au membre de données `BasicHttpBindingSecurity.Security.Mode`.
+   * Attribuez le nom d’utilisateur AEM Forms au membre de données `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.UserName`.
+   * Attribuez la valeur du mot de passe correspondant au membre de données `FirstAppSolution_PreLoanProcessClient.ClientCredentials.UserName.Password`.
+   * Attribuez la valeur constante `HttpClientCredentialType.Basic` au membre de données `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+   * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au membre de données `BasicHttpBindingSecurity.Security.Mode`.
 
    L’exemple de code ci-après illustre ces tâches.
 

@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 1. Appuyez sur le composant Image et sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer). Les propriétés de l’image s’affichent dans le volet gauche :
 
    1. Spécifiez **PayNow** comme nom de l’image dans le champ **Nom**.
-   1. Appuyez sur **Télécharger**, sélectionnez l’image enregistrée sur le système de fichiers local, puis appuyez sur **Ouvrir**.
+   1. Appuyez sur **Télécharger**, sélectionnez l’image   enregistrée sur le système de fichiers local puis appuyez sur **Ouvrir**.
    1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés de l’image.
 
 1. Répétez les étapes 13 et 14 pour ajouter l’image **ValueAddedServices** à la zone cible **ValueAddedServices**.
@@ -143,11 +143,11 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
    1. Spécifiez un nom pour le diagramme.
    1. Sélectionnez **Diagramme circulaire** dans la liste déroulante **Type de graphique**.
 
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Appuyer ![done_icon](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe X**. Appuyez sur ![done_icon](assets/done_icon.png).
 
    1. Sélectionnez **Fréquence** dans la liste déroulante **Fonctions**.
 
-   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Calls** dans la section **Axe Y**. Appuyez sur ![done_icon](assets/done_icon.png).
+   1. Sélectionnez la propriété **calltype** à partir du type d’objet du modèle de données **Appels** dans la section **Axe Y**. Appuyez sur ![done_icon](assets/done_icon.png).
 
    1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés du graphique.
 

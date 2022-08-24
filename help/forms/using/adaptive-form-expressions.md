@@ -10,10 +10,10 @@ discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2746'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ L’expression récapitulative est généralement utilisée pour répéter les e
 
 **Type de valeur renvoyée :** l’expression renvoie une chaîne qui devient le titre de l’accordéon.
 
-**Exemple :** &quot;Numéro de compte : &quot; + textbox1.value
+**Exemple :** “Numéro de compte : “ + textbox1.value
 
 ### Expression de validation {#validate-expression}
 

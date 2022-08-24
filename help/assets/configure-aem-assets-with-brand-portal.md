@@ -23,9 +23,9 @@ ht-degree: 63%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=fr) |
+| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=fr) |
 
 Adobe Experience Manager Assets Brand Portal vous permet de publier des ressources de marque approuvées d’Adobe Experience Manager Assets sur Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
 
@@ -56,7 +56,7 @@ Cette aide s’adresse à un public familiarisé avec les technologies suivantes
 
 * Utilisation des systèmes d’exploitation Windows Linux et Microsoft.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour configurer AEM Assets avec Brand Portal, vous devez disposer des éléments suivants :
 

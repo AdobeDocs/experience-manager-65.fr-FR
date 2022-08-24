@@ -1,8 +1,8 @@
 ---
 title: Développement et outil de comparaison des pages
-seo-title: Développement et outil de comparaison des pages
+seo-title: Developing and Page Diff
 description: Développement et outil de comparaison des pages
-seo-description: 'null'
+seo-description: null
 uuid: 06f27bc2-f42a-4176-ab94-255e721c6933
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '360'
 ht-degree: 92%
 
 ---
@@ -40,7 +40,7 @@ Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu te
 
 ## Autorisations {#permissions}
 
-Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement afin de faciliter la AEM (par exemple, en utilisant la bibliothèque de balises `cq:text` ou en intégrant personnalisé le service OSGi `DiffService` dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
+Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement pour faciliter AEM différences (comme l’utilisation de `cq:text` bibliothèque de balises ou intégration personnalisée `DiffService` Service OSGi dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
 
 Cependant, il subsiste un certain nombre de restrictions qui doivent être prises en compte par le développeur.
 

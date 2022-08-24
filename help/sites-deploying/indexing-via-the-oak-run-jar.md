@@ -117,7 +117,7 @@ Cette méthode peut être utilisée si le client juge acceptables les effets sur
 >
 >Pour obtenir des informations détaillées sur ce scénario, voir [Réindexation en ligne – SegmentNodeStore – L’instance AEM est en cours d’exécution](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-La réindexation en ligne de TarMK à l’aide du fichier oak-run.jar est plus rapide que la [réindexation en ligne pour TarMK](#onlinere-indexingfortarmk) décrite ci-dessus. Toutefois, il nécessite également une exécution pendant une période de maintenance ; avec la mention indiquant que la fenêtre sera plus courte et que d’autres étapes sont nécessaires pour effectuer la réindexation.
+La réindexation en ligne de TarMK à l’aide du fichier oak-run.jar est plus rapide que la valeur [Réindexation en ligne pour TarMK](#onlinere-indexingfortarmk) décrits ci-dessus. Toutefois, il nécessite également une exécution pendant une période de maintenance ; avec la mention indiquant que la fenêtre sera plus courte et que d’autres étapes sont nécessaires pour effectuer la réindexation.
 
 >[!NOTE]
 >

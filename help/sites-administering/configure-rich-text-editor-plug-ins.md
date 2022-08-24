@@ -1,5 +1,5 @@
 ---
-title: 'Configuration des modules externes d’éditeur de texte enrichi '
+title: Configuration des modules externes d’éditeur de texte enrichi
 description: Découvrez comment configurer les modules externes de l’éditeur de texte enrichi Adobe Experience Manager pour activer des fonctionnalités individuelles.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
@@ -11,7 +11,7 @@ ht-degree: 93%
 ---
 
 
-# Configuration des modules externes d’éditeur de texte enrichi  {#configure-the-rich-text-editor-plug-ins}
+# Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
 
 Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
@@ -156,7 +156,7 @@ Pour configurer les formats autorisés afin de coller du texte dans AEM à parti
    >
    >Si le format n’est pas défini explicitement, la valeur par défaut true est utilisée et le format est admis.
 
-1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents noeuds, également appliqués au noeud `htmlPasteRules`. Enregistrez toutes les modifications.
+1. D’autres formats peuvent également être définis à l’aide de différentes propriétés ou de différents noeuds, également appliqués au `htmlPasteRules` noeud . Enregistrez toutes les modifications.
 
 Vous pouvez utiliser les propriétés suivantes pour `htmlPasteRules`.
 
@@ -167,7 +167,7 @@ Vous pouvez utiliser les propriétés suivantes pour `htmlPasteRules`.
 | table | nt:unstructured | Définit le comportement lors du collage de tableaux. Ce nœud doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des tableaux. Si allow est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment le contenu du tableau collé est géré. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul> <li>`remove`: supprime le contenu du tableau.</li> <li>`paragraph`: transforme les cellules de tableau en paragraphes.</li> </ul> |
 | list | nt:unstructured | Définit le comportement lors du collage de listes. Doit comporter la propriété `allow` (de type Boolean) pour définir s’il est autorisé de coller des listes. Si `allow` est défini sur `false`, vous devez spécifier la propriété `ignoreMode` (de type String) pour définir comment gérer le contenu d’une liste collée. Les valeurs valides pour `ignoreMode` sont les suivantes : <ul><li> `remove`: supprime le contenu de la liste.</li> <li>`paragraph`: transforme les éléments de la liste en paragraphes.</li> </ul> |
 
-Vous trouverez ci-dessous un exemple de structure `htmlPasteRules` valide.
+Exemple de valeur valide `htmlPasteRules` est ci-dessous.
 
 ```xml
 "htmlPasteRules": {
@@ -203,7 +203,7 @@ Pour les configurations ultérieures, par exemple pour ajouter d’autres styles
 
 >[!NOTE]
 >
->Vous pouvez définir des styles pour les [tableaux ou les cellules de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Ces configurations nécessitent des procédures distinctes.
+>Vous pouvez définir des styles pour [tableau ou cellule de tableau](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles). Ces configurations nécessitent des procédures distinctes.
 
 ### Activation de la liste du sélecteur de liste déroulante Style {#styleselectorlist}
 
@@ -354,7 +354,7 @@ Si le module externe n’est pas configuré davantage, les formats par défaut s
 * En-tête 1 ( `<h1>`)
 * En-tête 2 ( `<h2>`)
 * En-tête 3 ( `<h3>`)
-
+>
 
 
 >[!CAUTION]
@@ -493,7 +493,6 @@ La copie et le collage de tableaux dans ou à partir d’un composant d’édite
    >[!NOTE]
    Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
    * **Type** `String[]`
-
    * **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
       * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
       * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
@@ -560,7 +559,7 @@ Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de
 >[!NOTE]
 Le message `Spell checking failed` s’affiche si une vérification est effectuée pour une langue non installée. Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
-Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et l’anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
+Une installation d’AEM standard inclut les dictionnaires pour l’anglais américain (`en_us`) et anglais britannique (`en_gb`). Pour ajouter d’autres dictionnaires, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -662,7 +661,7 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
    * **Type** `String`
    * **Valeur** `richtext`
 
-   L’emplacement du noeud `../items/text` peut varier en fonction de la structure de votre boîte de dialogue. `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text` sont deux exemples.
+   L’emplacement de la variable `../items/text` peut varier, selon la structure de votre boîte de dialogue ; deux exemples `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 
 1. Sous `htmlRules`, créez un nœud.
 
@@ -675,13 +674,13 @@ Pour configurer la façon dont les liens sont ajoutés dans AEM à partir d’un
 
       * **Nom** `cssInternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
+      * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
    * Style CSS pour les liens externes
 
       * **Nom** `cssExternal`
       * **Type** `String`
-      * **Valeur** Nom de la classe CSS (non précédé d’un point « . »  ; par exemple, `cssClass` au lieu de `.cssClass`)
-   * Tableau des **protocoles** valides. Les protocoles pris en charge sont `http://`, `https://`, `file://` et `mailto:`.
+      * **Valeur** Nom de la classe CSS (non précédé d’un point « . » ; par exemple, `cssClass` au lieu de `.cssClass`)
+   * Tableau valide **protocol**. Les protocoles pris en charge sont les suivants : `http://`, `https://`, `file://`, et `mailto:`.
 
       * **Nom** `protocols`
       * **Type** `String[]`

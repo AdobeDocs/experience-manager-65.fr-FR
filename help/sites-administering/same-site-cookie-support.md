@@ -6,7 +6,7 @@ exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 55%
+ht-degree: 74%
 
 ---
 
@@ -20,13 +20,13 @@ Pour contourner ce problème, vous devez définir la variable `SameSite` attribu
 
 >[!CAUTION]
 >
->Le `SameSite=None` n’est appliqué que si le protocole est sécurisé (HTTPS).
+>Le paramètre `SameSite=None` n’est appliqué que si le protocole est sécurisé (HTTPS).
 >
->Si le protocole n’est pas sécurisé (HTTP), le paramètre est ignoré et le serveur affiche ce message WARN :
+>Si le protocole n’est pas sécurisé (HTTP), le paramètre est ignoré et le serveur affiche ce message WARN :
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
-Vous pouvez ajouter ce paramètre en procédant comme suit :
+Vous pouvez ajouter ce paramètre en procédant comme suit :
 
 1. Accédez à la console web à l’adresse `http://serveraddress:serverport/system/console/configMgr`
 1. Recherchez et cliquez sur le **gestionnaire d’authentification de jeton Granite Adobe**

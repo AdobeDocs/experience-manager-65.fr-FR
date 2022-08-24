@@ -16,7 +16,7 @@ ht-degree: 45%
 
 ---
 
-# Aperçu  Présentation{#ecommerce-overview}
+# Aperçu  des fragments d’expérience{#ecommerce-overview}
 
 Le commerce électronique générique AEM est disponible dans le cadre de l’installation standard et vous offre toutes les fonctionnalités de la structure de commerce électronique.
 
@@ -31,7 +31,7 @@ Adobe propose deux versions de la structure d’intégration de commerce :
 | Évolutivité | - Peut prendre en charge jusqu’à quelques millions de produits (selon le cas d’utilisation) <br> - Mise en cache sur Dispatcher | - Aucune limitation de volume <br>- Mise en cache sur Dispatcher ou CDN |
 | Modèle de données normalisé | Non | Oui, schéma Adobe Commerce GraphQL |
 | Disponibilité | Oui :<br> - Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4) <br>- Commerce Cloud Salesforce (Connecteur Open Source pour prendre en charge AEM 6.4) | Oui via open source via GitHub. <br> Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et est compatible avec la version 2.3.1). |
-| Quand utiliser la personnalisation | Cas d’utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
+| Quand l’utiliser | Cas d’utilisation limités : Dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés | Solution conseillée dans la plupart des cas d’utilisation |
 
 
 ## Déploiement d’autres applications {#deploying-other-implementations}

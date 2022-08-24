@@ -3,7 +3,8 @@ title: Contenu associé
 description: Découvrez comment la fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, ce qui apporte une flexibilité supplémentaire à la diffusion de contenu en mode découplé.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 100%

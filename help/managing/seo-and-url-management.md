@@ -7,7 +7,7 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 8cb016eefc2699ffb3dfa926a289123b96927055
 workflow-type: tm+mt
 source-wordcount: '3802'
 ht-degree: 97%
@@ -30,7 +30,7 @@ Il existe des meilleures pratiques généralement acceptées en ce qui concerne 
 
 Dans votre projet AEM, lors de l’évaluation des URL, posez-vous la question suivante :
 
-&quot;Si un utilisateur voyait cette URL et aucun du contenu de la page, pourrait-il décrire ce qu’était cette page ?&quot;
+« Si un utilisateur voyait cette URL, mais aucun des éléments de contenu de la page, pourrait-il décrire ce qu’est cette page ? »
 
 Si la réponse est oui, il est probable que l’URL fonctionne pour un moteur de recherche.
 
@@ -156,7 +156,7 @@ Les servlets **Sling** permettent d’enregistrer la servlet dans le sens oppos�
 L’annotation SCR pour ce type de servlet doit ressembler à ce qui suit :
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
 ```
 
 Dans ce cas, la ressource que l’URL adresse (une instance de la ressource `myPageType`) est accessible dans la servlet automatiquement. Pour y accéder, vous appelez :
@@ -320,7 +320,7 @@ Exemples :
 Les deux appliqueraient la balise suivante à la tête de la page :
 
 ```xml
-<link rel="canonical" href="my-brand/my-page.html"/>
+<link rel=”canonical” href=”my-brand/my-page.html”/>
 ```
 
 `href` peut être relatif ou absolu. Le code doit être inclus dans le balisage de la page pour déterminer l’URL canonique de la page et générer cette balise.

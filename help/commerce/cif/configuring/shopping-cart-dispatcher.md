@@ -4,7 +4,7 @@ description: Configuration du panier et du Dispatcher
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 87%
+ht-degree: 91%
 
 ---
 
@@ -18,5 +18,5 @@ ht-degree: 87%
 Pour plus d’informations sur cette rubrique, consultez les ressources suivantes :
 
 - [Panier](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/minicart/v1/minicart)
-- [AEM Dispatcher avec proxy Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
+- [Dispatcher AEM avec proxy Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/dispatcher)
 - [Docker Hub](https://hub.docker.com/)

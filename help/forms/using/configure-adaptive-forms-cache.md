@@ -12,7 +12,7 @@ docset: aem65
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '893'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Votre environnement est configuré pour utiliser le cache de formulaires adaptat
 
 Vous pouvez également configurer la mise en cache des formulaires adaptatifs sur Dispatcher pour améliorer les performances.
 
-### Prérequis {#pre-requisites}
+### Conditions préalables {#pre-requisites}
 
 * Activez l’option [fusion ou préremplissage des données au niveau du client](prepopulate-adaptive-form-fields.md#prefill-at-client). Elle permet de fusionner des données uniques pour chaque instance d’un formulaire prérempli.
 

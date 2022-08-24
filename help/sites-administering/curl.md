@@ -1,8 +1,8 @@
 ---
 title: Utilisation de cURL avec AEM
-seo-title: Utilisation de cURL avec AEM
+seo-title: Using cURL with AEM
 description: Découvrez comment utiliser cURL avec AEM.
-seo-description: Découvrez comment utiliser cURL avec AEM.
+seo-description: Learn how to use cURL with AEM.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '878'
 ht-degree: 78%
 
 ---
@@ -35,7 +35,7 @@ Compte tenu de la nature RESTful de la structure Sling sur laquelle repose AEM, 
 >
 >Toute commande AEM exécutée par le biais de cURL doit être autorisée, comme n’importe quel utilisateur, dans AEM. L’ensemble des listes de contrôle d’accès et des droits d’accès sont respectés lors de l’utilisation de cURL pour exécuter une commande AEM.
 
-## Téléchargement de cURL  {#downloading-curl}
+## Téléchargement de cURL {#downloading-curl}
 
 cURL est une partie standard de Mac OS et de certaines distributions Linux. Cependant, il est disponible pour la plupart des systèmes d’exploitation. Les derniers téléchargements sont disponibles à l’adresse [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
 
@@ -49,7 +49,7 @@ Pour déterminer la commande exacte dont vous avez besoin pour une opération pa
 
 La procédure ci-dessous décrit, à titre d’exemple, comment effectuer cette opération en créant une page dans le navigateur Chrome.
 
-1. Préparez l’action à appeler dans AEM. Dans ce cas, nous avons atteint la fin de l’assistant **Créer une page**, mais nous n’avons pas encore cliqué sur **Créer**.
+1. Préparez l’action à appeler dans AEM. Dans ce cas, nous avons atteint la fin de la **Créer une page** , mais n’ont pas encore cliqué **Créer**.
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -62,7 +62,7 @@ La procédure ci-dessous décrit, à titre d’exemple, comment effectuer cette 
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. Copiez la commande cURL dans un éditeur de texte et supprimez tous les en-têtes de la commande, qui commencent par `-H` (mis en surbrillance en bleu dans l’image ci-dessous), puis ajoutez le paramètre d’authentification approprié, tel que `-u <user>:<password>`.
+1. Copiez la commande cURL dans un éditeur de texte et supprimez tous les en-têtes de la commande, qui commencent par `-H` (mise en surbrillance en bleu dans l’image ci-dessous) et ajoutez le paramètre d’authentification approprié, tel que `-u <user>:<password>`.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -78,7 +78,7 @@ Voici une liste de commandes cURL d’AEM pour les tâches administratives et op
 >
 >Les exemples ci-dessous considèrent qu’AEM est exécuté sur `localhost` sur le port `4502` et utilise le nom d’utilisateur `admin` avec le mot de passe `admin`. D’autres espaces réservés aux commandes sont définis entre crochets.
 
-### Gestion de modules  {#package-management}
+### Gestion de modules {#package-management}
 
 #### Liste de tous les modules installés
 
@@ -220,7 +220,7 @@ Voir [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.m
 
 ### OSGi {#osgi}
 
-#### Démarrage d’un lot  {#starting-a-bundle}
+#### Démarrage d’un lot {#starting-a-bundle}
 
 ```shell
 curl -u <user>:<password> -Faction=start http://localhost:4502/system/console/bundles/<bundle-name>
@@ -234,7 +234,7 @@ curl -u <user>:<password> -Faction=stop http://localhost:4502/system/console/bun
 
 ### Dispatcher {#dispatcher}
 
-#### Invalidation du cache  {#invalidate-the-cache}
+#### Invalidation du cache {#invalidate-the-cache}
 
 ```shell
 curl -H "CQ-Action: Activate" -H "CQ-Handle: /content/test-site/" -H "CQ-Path: /content/test-site/" -H "Content-Length: 0" -H "Content-Type: application/octet-stream" http://localhost:4502/dispatcher/invalidate.cache
@@ -281,7 +281,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 ### Communities {#communities}
 
-#### Affectation et révocation de badges  {#assign-and-revoke-badges}
+#### Affectation et révocation de badges {#assign-and-revoke-badges}
 
 Voir [Notation et badges des communautés](/help/communities/implementing-scoring.md#assign-and-revoke-badges) pour plus d’informations.
 
@@ -289,11 +289,11 @@ Voir [Notions fondamentales sur la notation et les badges](/help/communities/con
 
 #### Réindexation de MSRP {#msrp-reindexing}
 
-Voir [MSRP - MongoDB Storage Resource Provider](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) pour plus d’informations.
+Voir [MSRP - Fournisseur de ressources de stockage MongoDB](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) pour plus d’informations.
 
 ### Sécurité {#security}
 
-#### Activation et désactivation de CRXDE Lite  {#enabling-and-disabling-crx-de-lite}
+#### Activation et désactivation de CRXDE Lite {#enabling-and-disabling-crx-de-lite}
 
 Voir [Activation du CRXDE Lite dans AEM](/help/sites-administering/enabling-crxde-lite.md) pour plus d’informations.
 
@@ -309,7 +309,7 @@ Voir [Souscription à Adobe Analytics et Adobe Target](/help/sites-administering
 
 #### Envoi d’un en-tête de test {#send-test-header}
 
-Voir [Connexion unique](/help/sites-deploying/single-sign-on.md) pour plus d’informations.
+Voir [Authentification unique](/help/sites-deploying/single-sign-on.md) pour plus d’informations.
 
 ## Commandes cURL de manipulation de contenu d’AEM courantes {#common-content-manipulation-aem-curl-commands}
 

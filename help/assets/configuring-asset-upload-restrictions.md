@@ -3,11 +3,11 @@ title: Configuration des restrictions de chargement des ressources
 description: 'Limitation du type de ressources (fichiers) que les utilisateurs peuvent charger '
 contentOwner: AG
 role: Developer, Admin, Architect
-feature: Gestion des ressources,Télécharger
+feature: Asset Management,Upload
 exl-id: 0e009b9a-54c4-4715-98ee-0207839f90f6
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '190'
 ht-degree: 55%
 
 ---
@@ -21,7 +21,7 @@ Vous pouvez configurer [!DNL Adobe Experience Manager Assets] pour restreindre l
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
-1. Pour empêcher les utilisateurs de charger des fichiers de certains types MIME uniquement, désélectionnez l’option **[!UICONTROL Autoriser tous les types MIME]** et spécifiez les types MIME autorisés dans les champs **[!UICONTROL Allowed Asset MIMEs (regex)]** à l’aide d’expressions régulières.
+1. Pour empêcher les utilisateurs de charger des fichiers de certains types MIME uniquement, désélectionnez l’option **[!UICONTROL Autoriser tout MIME]** et spécifiez les types MIME autorisés dans la variable **[!UICONTROL MIME des ressources autorisées (regex)]** à l’aide d’expressions régulières.
 
    ![chlimage_1-379](assets/chlimage_1-379.png)
 

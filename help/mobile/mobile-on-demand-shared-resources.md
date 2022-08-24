@@ -1,8 +1,8 @@
 ---
 title: Chargement de ressources partagées
-seo-title: Chargement de ressources partagées
+seo-title: Uploading Shared Resources
 description: Les actions de gestion de contenu sont les blocs de création qui permettent de créer et de gérer du contenu dans une application. Consultez cette page pour en savoir plus sur le téléchargement de ressources partagées.
-seo-description: Les actions de gestion de contenu sont les blocs de création qui permettent de créer et de gérer du contenu dans une application. Consultez cette page pour en savoir plus sur le téléchargement de ressources partagées.
+seo-description: Content Management actions are the building blocks that help to create and manage content within an application. Follow this page to learn about uploading shared resources.
 uuid: f3595299-1279-4b94-9a49-9d1893250549
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 958461b0-4cbb-452b-88ea-9b98ada14750
 exl-id: 4b3acc7c-f1f7-4837-ae3a-9435d6ce1349
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 7%
+source-wordcount: '286'
+ht-degree: 8%
 
 ---
 
@@ -27,7 +27,7 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 >[!NOTE]
 >
->Pour en savoir plus sur les considérations de conception des applications AEM Mobile, voir [Considérations de conception des applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
+>Pour en savoir plus sur les considérations de conception des applications AEM Mobile, voir [Considérations de conception pour les applications AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) dans l’aide en ligne.
 
 >[!CAUTION]
 >
@@ -37,7 +37,7 @@ Les actions de gestion de contenu sont les blocs de création qui permettent de 
 
 En règle générale, le contenu tel que les articles doit avoir la même apparence sur tous les auteurs et même sur toutes les applications. Il est donc essentiel de rendre les scripts, CSS et les polices disponibles pour tous. Cette opération envoie ces ressources partagées à Mobile On-Demand qui peuvent ensuite être consommées selon les besoins.
 
-Une fois que vous avez configuré et associé votre application à une configuration cloud, vous pouvez charger vos ressources partagées. Pour obtenir des instructions détaillées sur l’association de votre application à une configuration cloud, cliquez [ici](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+Une fois que vous avez configuré et associé votre application à une configuration cloud, vous pouvez charger vos ressources partagées. Pour obtenir des instructions détaillées sur l’association de votre application à une configuration cloud, cliquez sur [here](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
 
 >[!NOTE]
 >
@@ -45,8 +45,8 @@ Une fois que vous avez configuré et associé votre application à une configura
 
 Pour charger vos ressources partagées pour un article, procédez comme suit :
 
-1. Sélectionnez l’article dans la mosaïque **Gérer les articles** .
-1. Cliquez sur **Télécharger les ressources partagées** pour télécharger vos ressources HTML partagées.
+1. Sélectionnez l’article dans **Gestion des articles** mosaïque.
+1. Cliquez sur **Chargement des ressources partagées** pour charger vos ressources de HTML partagées.
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

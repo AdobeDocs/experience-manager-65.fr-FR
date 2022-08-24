@@ -1,8 +1,8 @@
 ---
 title: Analyse des performances de page
-seo-title: Analyse des performances de page
+seo-title: Analyzing Page Performance
 description: Utilisez la page Content Insight pour analyser les performances de la page que vous créez.
-seo-description: Utilisez la page Content Insight pour analyser les performances de la page que vous créez.
+seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
 uuid: 563d3e98-20d9-4cca-a174-bafd6e65c1bb
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '662'
 ht-degree: 98%
 
 ---
@@ -62,7 +62,7 @@ Pour modifier la période de rapport d’une page Content Insight :
 
 1. Pour modifier la date de fin de la période de création de rapports, faites glisser le cercle figurant sur le côté droit de la zone ombrée vers la date de fin désirée.
 
-#### Modification de la granularité de la période de création de rapports  {#changing-the-granularity-of-the-reporting-period}
+#### Modification de la granularité de la période de création de rapports {#changing-the-granularity-of-the-reporting-period}
 
 Modifiez la durée couverte par chaque point de données dans un rapport. Par exemple, lorsque la granularité Semaine est sélectionnée, chaque point de données du rapport Vues représente le nombre de vues pour une semaine.
 
@@ -76,7 +76,7 @@ La granularité affecte les rapports qui tracent les données par rapport au tem
 
 1. Cliquez ou appuyez sur la granularité de votre choix. Une fois sélectionné, le rapport est automatiquement mis à jour pour refléter la granularité.
 
-### Affectation de tâches pour les recommandations d’optimisation pour les moteurs de recherche.  {#assigning-tasks-for-seo-recommendations}
+### Affectation de tâches pour les recommandations d’optimisation pour les moteurs de recherche. {#assigning-tasks-for-seo-recommendations}
 
 Utilisez le rapport Recommandations d’optimisation pour les moteurs de recherche afin de créer des tâches pour améliorer la visibilité des pages aux moteurs de recherche. Pour chaque recommandation du rapport ne comportant pas de coche, vous pouvez créer une tâche que vous affectez à un utilisateur qui effectuera le travail requis.
 
@@ -86,7 +86,7 @@ L’état de la recommandations d’optimisation pour les moteurs de recherche i
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation des tâches](/help/sites-authoring/task-content.md).
+Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation de tâches](/help/sites-authoring/task-content.md).
 
 Utilisez la procédure suivante afin de créer une tâche pour une recommandation d’optimisation pour les moteurs de recherche.
 

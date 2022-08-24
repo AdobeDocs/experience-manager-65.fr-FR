@@ -1,8 +1,8 @@
 ---
 title: Personnalisation de la console Sites web (IU classique)
-seo-title: Personnalisation de la console Sites web (IU classique)
+seo-title: Customizing the Websites Console (Classic UI)
 description: La console Administration de sites web peut être étendue pour afficher des colonnes personnalisées.
-seo-description: La console Administration de sites web peut être étendue pour afficher des colonnes personnalisées.
+seo-description: The Websites Administration console can be extended to display custom columns
 uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 64%
+source-wordcount: '781'
+ht-degree: 63%
 
 ---
 
 # Personnalisation de la console Sites web (IU classique){#customizing-the-websites-console-classic-ui}
 
-## Ajout d’une colonne personnalisée à la console Sites web (siteadmin){#adding-a-custom-column-to-the-websites-siteadmin-console}
+## Ajout d’une colonne personnalisée à la console Sites web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
 La console Administration de sites web peut être étendue pour afficher des colonnes personnalisées. La console est générée sur la base d’un objet JSON qui peut être étendu en créant un service OSGI qui implémente l’interface . `ListInfoProvider` Un tel service modifie l’objet JSON envoyé au client pour créer la console.
 
@@ -36,9 +36,7 @@ Ce tutoriel détaillé explique comment afficher une nouvelle colonne dans la co
 >
 >* Console Digital Assets
 >* Console Community
-
 >
-
 
 
 ### Création du service OSGI {#creating-the-osgi-service}
@@ -112,14 +110,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >
 >* Votre implémentation doit déterminer, sur la base de la requête et/ou de la ressource fournies, si elle doit ou non ajouter les informations à l’objet JSON.
 >* Si votre implémentation de `ListInfoProvider` définit une propriété qui existe déjà dans l’objet de réponse, sa valeur est remplacée par celle que vous fournissez.
-
 >
->  
- Vous pouvez utiliser le [classement de service](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) pour gérer l’ordre d’exécution de plusieurs implémentations de `ListInfoProvider`.
+>   Vous pouvez utiliser le [classement de service](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) pour gérer l’ordre d’exécution de plusieurs implémentations de `ListInfoProvider`.
 
 ### Test du nouveau service {#testing-the-new-service}
 
-Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. Par exemple, lorsque vous accédez au dossier `/content/geometrixx` , la requête suivante est envoyée au serveur AEM pour créer la console :
+Lorsque vous ouvrez la console Administration de sites web et parcourez votre site, le navigateur génère un appel ajax pour obtenir l’objet JSON qui est utilisé pour créer la console. Par exemple, lorsque vous accédez au `/content/geometrixx` , la requête suivante est envoyée au serveur AEM pour créer la console :
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -134,41 +130,41 @@ Pour vous assurer que le nouveau service s’exécute après le déploiement du 
 
 ### Affichage de la nouvelle colonne {#displaying-the-new-column}
 
-La dernière étape consiste à adapter la structure des noeuds de la console Administration des sites web afin d’afficher la nouvelle propriété pour toutes les pages de Geometrixx en superposant `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
+La dernière étape consiste à adapter la structure des noeuds de la console d’administration des sites web afin d’afficher la nouvelle propriété pour toutes les pages de Geometrixx en recouvrant `/libs/wcm/core/content/siteadmin`. Procédez comme suit :
 
-1. Dans CRXDE Lite, créez la structure des noeuds `/apps/wcm/core/content` avec des noeuds de type `sling:Folder` pour refléter la structure `/libs/wcm/core/content`.
+1. Dans CRXDE Lite, créez la structure des noeuds. `/apps/wcm/core/content` avec des noeuds de type `sling:Folder` pour refléter la structure `/libs/wcm/core/content`.
 
-1. Copiez le noeud `/libs/wcm/core/content/siteadmin` et collez-le sous `/apps/wcm/core/content`.
+1. Copiez le noeud `/libs/wcm/core/content/siteadmin` et collez-le ci-dessous `/apps/wcm/core/content`.
 
-1. Copiez le noeud `/apps/wcm/core/content/siteadmin/grid/assets` dans `/apps/wcm/core/content/siteadmin/grid/geometrixx` et modifiez ses propriétés :
+1. Copiez le noeud `/apps/wcm/core/content/siteadmin/grid/assets` to `/apps/wcm/core/content/siteadmin/grid/geometrixx` et modifie ses propriétés :
 
    * Supprimez **pageText**
 
-   * Définissez **pathRegex** sur `/content/geometrixx(/.*)?`
+   * Définir **pathRegex** to `/content/geometrixx(/.*)?`
 La configuration de la grille sera ainsi principale pour tous les sites web geometrixx.
 
-   * Définissez **storeProxySuffix** sur `.pages.json`
+   * Définir **storeProxySuffix** to `.pages.json`
 
    * Modifiez la propriété à plusieurs valeurs **storeReaderFields** et ajoutez la valeur `starred`.
 
-   * Pour activer la fonctionnalité MSM, ajoutez les paramètres MSM suivants à la propriété multichaîne **storeReaderFields** :
+   * Pour activer la fonctionnalité MSM, ajoutez les paramètres MSM suivants à la propriété multi-String . **storeReaderFields**:
 
       * **msm:isSource**
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Ajoutez un noeud `starred` (de type **nt:unstructured**) sous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
+1. Ajouter un `starred` noeud (de type **nt:unstructured**) ci-dessous `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` avec les propriétés suivantes :
 
-   * **dataIndex** :  `starred` de type Chaîne
+   * **dataIndex**: `starred` de type Chaîne
 
-   * **header** :  `Starred` de type Chaîne
+   * **header**: `Starred` de type Chaîne
 
-   * **xtype**:  `gridcolumn` de type Chaîne
+   * **xtype**: `gridcolumn` de type Chaîne
 
-1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (Facultatif) Déposez les colonnes que vous ne souhaitez pas afficher à l’adresse `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
-1. `/siteadmin` est un chemin de redirection vers un microsite qui, par défaut, pointe vers  `/libs/wcm/core/content/siteadmin`.
-Pour la rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin`, définissez la propriété `sling:vanityOrder` pour qu’elle ait une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
+1. `/siteadmin` est un chemin de redirection vers un microsite qui, par défaut, pointe vers `/libs/wcm/core/content/siteadmin`.
+Pour le rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/siteadmin` définir la propriété ; `sling:vanityOrder` avoir une valeur supérieure à celle définie sur `/libs/wcm/core/content/siteadmin`. La valeur par défaut est de 300 ; toute valeur plus élevée est donc acceptable.
 
 1. Accédez à la console Administration de sites web et accédez au site Geometrixx :
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -183,4 +179,4 @@ Pour la rediriger vers votre version de siteadmin sur `/apps/wcm/core/content/si
 
 ### Exemple de module {#sample-package}
 
-Le résultat de ce tutoriel est disponible dans le package [Personnalisation de la console d’administration des sites web](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) du partage de modules.
+Le résultat de ce tutoriel est disponible dans la section [Personnalisation de la console d’administration des sites web](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) module sur Package Share.

@@ -1,8 +1,8 @@
 ---
 title: Ajout de polices pour le rendu graphique
-seo-title: Ajout de polices pour le rendu graphique
+seo-title: Adding Fonts for Graphic-Rendering
 description: AEM vous permet de générer des objets graphiques incorporant du texte extrait dynamiquement de votre contenu
-seo-description: AEM vous permet de générer des objets graphiques incorporant du texte extrait dynamiquement de votre contenu
+seo-description: AEM allows you to generate graphics incorporating text dynamically taken from your content
 uuid: 67d9b10f-e986-4d29-bde2-10e08075fe17
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 exl-id: 725c81d0-0258-4118-8b01-29fd7bcaf9b3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 69%
+source-wordcount: '183'
+ht-degree: 66%
 
 ---
 
@@ -29,7 +29,7 @@ Actuellement, toutes les implémentations de la plate-forme Java prennent en cha
 
    `/apps/<your-project>/`
 
-1. Sous `/apps/<your-project>/` , créez un noeud :
+1. Sous `/apps/<your-project>/` créez un noeud :
 
    * **Nom** : `fonts`
    * **Type** : `sling:Folder`
@@ -40,11 +40,11 @@ Actuellement, toutes les implémentations de la plate-forme Java prennent en cha
 
    >[!NOTE]
    >
-   >Les fichiers de polices du référentiel doivent porter le suffixe `*.ttf` ou `*.TTF`.
+   >Les fichiers de polices du référentiel doivent comporter le suffixe `*.ttf` ou `*.TTF`.
 
 1. Mettez à jour la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) de [Day Commons GFX Font Helper](/help/sites-deploying/osgi-configuration-settings.md). Ajoutez le chemin d’accès à votre dossier de polices. c’est-à-dire `/apps/<your-project>/fonts`.
 
-1. Revenez à CRXDE Lite. Vous devriez maintenant voir un noeud `.fontlist` dans votre dossier contenant le nom des polices importées.
+1. Revenez à CRXDE Lite. Vous devriez maintenant voir une `.fontlist` dans votre dossier contenant le nom des polices importées.
 
    Ces polices sont désormais prêtes à être déployées dans l’API Java.
 

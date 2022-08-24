@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 100%
 
 ---
 
-# Récupération des données AEM forms {#recovering-the-aem-forms-data}
+# Récupération des données AEM Forms {#recovering-the-aem-forms-data}
 
 Cette section décrit les étapes nécessaires à la récupération des données AEM forms. Voir également [Remarques spécifiques à la sauvegarde et la récupération](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
 

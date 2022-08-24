@@ -1,8 +1,8 @@
 ---
 title: Immersion dans les SPA
-seo-title: Immersion dans les SPA
+seo-title: SPA Deep Dives
 description: Le SDK de l’éditeur de SPA AEM a été présenté dans une série de sessions AEM Gems. Présentée par des ingénieurs d’Adobe, cette série peut servir de guide efficace pour mieux comprendre le SDK de l’éditeur de SPA AEM dans les détails.
-seo-description: Le SDK de l’éditeur de SPA AEM a été présenté dans une série de sessions AEM Gems. Présentée par des ingénieurs d’Adobe, cette série peut servir de guide efficace pour mieux comprendre le SDK de l’éditeur de SPA AEM dans les détails.
+seo-description: The AEM SPA Editor SDK was featured in a series of AEM Gems sessions. Hosted by Adobe engineers, this series can serve as a great guide to gain a deeper understanding of the AEM SPA Editor SDK at a low level, hosted by Adobe engineers.
 uuid: 326ac431-79d4-48ed-aa48-0c9bfdbd23d0
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 48ab972b-ca26-40d1-b89e-86124ceb173b
 exl-id: aba1dc0f-eab1-40aa-8ab6-317e2fa7891c
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '288'
 ht-degree: 100%
 
 ---

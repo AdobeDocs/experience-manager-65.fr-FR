@@ -1,16 +1,16 @@
 ---
 title: Traitement des demandes RGPD pour AEM Foundation
-seo-title: Traitement des demandes RGPD pour AEM Foundation
+seo-title: Handling GDPR Requests for the AEM Foundation
 description: Traitement des demandes RGPD pour AEM Foundation
-seo-description: 'null'
+seo-description: null
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 58%
+source-wordcount: '435'
+ht-degree: 72%
 
 ---
 
@@ -28,7 +28,7 @@ Au niveau de AEM Foundation, les données personnelles stockées sont le profil 
 
 ### Étapes manuelles {#manual-steps}
 
-1. Ouvrez la console Administration utilisateur en accédant à **[!UICONTROL Paramètres - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`.
+1. Ouvrez la console Administration utilisateur en accédant à **[!UICONTROL Paramètres - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -61,7 +61,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 *Récupération des données utilisateur*
 
-Utilisation du chemin de noeud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
+Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande ci-dessus :
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -92,7 +92,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### Suppression des informations d’un profil utilisateur {#delete-user-profile-information}
 
-1. Connectez-vous à CRXDE Lite, puis recherchez `[!UICONTROL userId]` :
+1. Connectez-vous à CRXDE Lite, puis recherchez le `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
@@ -120,7 +120,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 * *Désactivation de l’utilisateur*
 
-Utilisation du chemin de noeud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
+Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande ci-dessus :
 
 ```shell
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
@@ -128,7 +128,7 @@ curl -X POST -u user:password -FdisableUser="describe the reasons for disabling 
 
 * *Suppression du ou des profils utilisateur*
 
-Utilisation du chemin d’accès au noeud de la propriété home de la charge utile JSON renvoyée par la commande de découverte de compte et des emplacements de noeud de profil prêts à l’emploi connus :
+Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande de découverte de compte et les emplacements de nœuds de profil prêts à l’emploi connus :
 
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'

@@ -1,8 +1,8 @@
 ---
 title: Recommandations d’interfaces utilisateur aux clients
-seo-title: Recommandations d’interfaces utilisateur aux clients
+seo-title: User Interface Recommendations for Customers
 description: Liste de recommandations relatives aux interfaces utilisateur classiques et aux interfaces utilisateur optimisées pour les écrans tactiles.
-seo-description: Liste de recommandations relatives aux interfaces utilisateur classiques et aux interfaces utilisateur optimisées pour les écrans tactiles.
+seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
 uuid: 9ec2c9de-a79e-4f2c-a90f-b38ba9553e07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '815'
-ht-degree: 93%
+source-wordcount: '798'
+ht-degree: 92%
 
 ---
 
@@ -48,7 +48,7 @@ Adobe recommande aux utilisateurs de planifier le passage à la nouvelle interfa
 
 L’interface utilisateur classique est obsolète avec AEM 6.4 et Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. Notez que l’interface utilisateur classique reste complètement prise en charge alors qu’elle est en passe de devenir obsolète.
 
-### Règles et recommandations {#rules-and-recommendations}
+### Règles et recommandations  {#rules-and-recommendations}
 
 Voici une liste de recommandations de la gestion du produit pour Adobe Experience Manager 6.5 :
 
@@ -71,7 +71,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
      <li>Configurez l’action « Modifier la page » pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choix de l’interface utilisateur</a>.</li>
     </ol> <p>Ensuite, lors d’une seconde phase :</p>
     <ol>
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser la variable <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -83,7 +83,7 @@ Voici une liste de recommandations de la gestion du produit pour Adobe Experien
      <li>Configurez l’action « Modifier la page » pour ouvrir l’éditeur de page de l’IU classique. Voir <a href="#selecting-your-ui">Choix de l’interface utilisateur</a>.</li>
     </ol> <p>Ensuite, lors d’une seconde phase :</p>
     <ol>
-     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser les <a href="/help/sites-developing/modernization-tools.md">outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
+     <li>Mettez à jour vos boîtes de dialogue de composants pour utiliser le format de boîte de dialogue Coral 3. Adobe recommande d’utiliser la variable <a href="/help/sites-developing/modernization-tools.md">Outils de modernisation d’AEM</a> pour mettre à jour les composants.</li>
      <li>Configurez ContextHub (le remplacement de ClientContext) et mettez à jour les modèles de pages pour utiliser ContextHub. Notez que le ContextHub a un mode de compatibilité qui permet de transférer les entrepôts ClientContext personnalisés.</li>
     </ol> </td>
   </tr>
@@ -117,7 +117,7 @@ Pour plus d’informations sur la gestion de base :
 Pour des informations détaillées de développement :
 
 * [Architecture de l’interface utilisateur optimisée pour les écrans tactiles](/help/sites-developing/touch-ui-concepts.md).
-* Utilisez les [outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) pour convertir les boîtes de dialogue de modification des composants de l’interface utilisateur classique vers l’interface utilisateur tactile.
+* Utilisez la variable [Outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) pour convertir des boîtes de dialogue de modification de composant de l’IU classique à l’IU tactile.
 
 * [Structure de l’interface utilisateur optimisée pour les écrans tactiles](/help/sites-developing/touch-ui-structure.md).
 

@@ -60,7 +60,7 @@ ht-degree: 31%
    + [Modèles de site](sites.md)
    + [Modèles de groupe](tools-groups.md)
    + [Fonctions de la communauté](functions.md)
-   + [Stockage   Configuration](srp-config.md)
+   + [Configuration du stockage](srp-config.md)
    + [Console Badges](badges.md)
    + [Console Ressources d’activation ](resources.md)
    + [Console Rapports ](reports.md)

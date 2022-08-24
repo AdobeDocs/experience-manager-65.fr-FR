@@ -1,8 +1,8 @@
 ---
 title: Créer et attribuer des ressources d’activation
-seo-title: Créer et attribuer des ressources d’activation
+seo-title: Create and Assign Enablement Resources
 description: Ajout de ressources d’activation
-seo-description: Ajout de ressources d’activation
+seo-description: Add enablement resources
 uuid: da940242-0c9b-4ad8-8880-61fd41461c3b
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 exl-id: 78908a9c-a260-44ff-ad1e-baa6d78ae399
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '711'
 ht-degree: 7%
 
 ---
@@ -24,16 +24,16 @@ ht-degree: 7%
 Pour ajouter une ressource d’activation au nouveau site de la communauté :
 
 * Connectez-vous en tant qu’administrateur système sur l’instance de création :
-   * Par exemple, [http://localhost:4502/](http://localhost:4503/)
+   * Par exemple : [http://localhost:4502/](http://localhost:4503/)
 * Dans la navigation globale, sélectionnez **[!UICONTROL Communautés]** > **[!UICONTROL Ressources]**
 
    ![resources](assets/resources.png)
 
    ![enablement-resource](assets/enablement-resource.png)
 * Sélectionnez le site de la communauté sur lequel des ressources d’activation sont ajoutées :
-   * Sélectionnez **[!UICONTROL Tutoriel d’activation]**.
+   * Sélectionner **[!UICONTROL Tutoriel sur l’activation]**.
 * Dans le menu, sélectionnez **[!UICONTROL Créer]**.
-* Sélectionnez **[!UICONTROL Ressource]**.
+* Sélectionner **[!UICONTROL Ressource]**.
 
 ![create-resource](assets/create-enablement-resource.png)
 
@@ -55,7 +55,7 @@ Renseignez les informations de base de la ressource :
 
 * **[!UICONTROL Afficher dans le catalogue]**
 
-   Définissez-le sur **On**.
+   Définissez-le sur **Activé**.
 
 * **[!UICONTROL Description]**
 
@@ -73,7 +73,7 @@ Renseignez les informations de base de la ressource :
 
 Bien qu’il s’affiche comme si plusieurs ressources pouvaient être sélectionnées, une seule est autorisée.
 
-Sélectionnez `'+' icon`, dans le coin supérieur droit, pour lancer le processus de choix de la ressource en identifiant la source.
+Sélectionnez la `'+' icon`, dans le coin supérieur droit, pour lancer le processus de choix de la ressource en identifiant la source.
 
 ![add-content](assets/add-content.png)
 
@@ -101,13 +101,13 @@ Téléchargez une ressource. Si une ressource vidéo, téléchargez une image pe
 
 * **[!UICONTROL Resource Contact&amp;ast;]**
 
-   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner un membre  `Quinn Harper`.
+   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner un membre. `Quinn Harper`.
 
 * **[!UICONTROL Expert de la ressource]**
 
    *(Facultatif)* Laissez vide.
 
-   **Remarque** : Si les utilisateurs ou les groupes ne sont pas visibles, vérifiez qu’ils ont été ajoutés au  `Community Enable Members` groupe et  ** enregistrés sur l’instance de publication.
+   **Remarque**: Si des utilisateurs ou des groupes ne sont pas visibles, vérifiez qu’ils ont été ajoutés à la variable `Community Enable Members` et *Enregistré* sur l’instance de publication.
 
    ![enablement-settings](assets/enablement-settings.png)
 
@@ -129,23 +129,23 @@ La création réussie de la ressource renvoie à la console Ressources avec la r
 
 Pour charger une nouvelle version de la ressource d’activation, il est recommandé de créer une nouvelle ressource, puis de désinscrire les membres de l’ancienne version et de les inscrire à la nouvelle version.
 
-### Publier la ressource {#publish-the-resource}
+### Publication de la ressource {#publish-the-resource}
 
 Avant que les inscrits puissent voir la ressource affectée, elle doit être publiée :
 
-* Icône Sélectionner le monde `Publish`
+* Sélectionner le monde `Publish` icon
 
 L’activation est confirmée par un message de succès :
 
 ![publish-resource](assets/publish-resource.png)
 
-## Ajout d’une ressource de deuxième activation {#add-a-second-enablement-resource}
+## Ajout d’une deuxième ressource d’activation {#add-a-second-enablement-resource}
 
 Répétez les étapes ci-dessus pour créer et publier une seconde ressource d’activation associée à partir de laquelle un parcours d’apprentissage sera créé.
 
 ![add-resource](assets/add-resource.png)
 
-**** Publiez la deuxième ressource.
+**Publier** la deuxième ressource.
 
 Revenez à la liste des ressources du tutoriel d’activation.
 
@@ -153,16 +153,16 @@ Revenez à la liste des ressources du tutoriel d’activation.
 
 ![refresh-resource](assets/refresh-resource.png)
 
-## Ajouter un chemin d’apprentissage {#add-a-learning-path}
+## Ajout d’un chemin d’apprentissage {#add-a-learning-path}
 
 Un parcours d’apprentissage est un regroupement logique de ressources d’activation qui forment un cours.
 
 * Dans la console Ressources, sélectionnez `+ Create`
-* Sélectionnez **[!UICONTROL Chemin d’apprentissage]**
+* Sélectionner **[!UICONTROL Chemin d’apprentissage]**
 
 ![add-learning-path](assets/add-learning-path.png)
 
-Ajoutez les **[!UICONTROL Informations de base]** :
+Ajoutez la variable **[!UICONTROL Informations de base]**:
 
 * **[!UICONTROL Nom du cursus de formation]**
 
@@ -190,9 +190,9 @@ Ignorez le panneau suivant, car il n’existe aucun parcours d’apprentissage p
 
 Dans le panneau Ajouter des ressources :
 
-* Sélectionnez `+ Add Resources` pour sélectionner les 2 ressources de ski à ajouter au parcours d’apprentissage.
+* Sélectionner `+ Add Resources` pour sélectionner les 2 ressources de ski lessions à ajouter au parcours d’apprentissage.
 
-   Remarque : Seules les ressources **publiées** peuvent être sélectionnées.
+   Remarque : Uniquement **publié** Les ressources peuvent être sélectionnées.
 
 >[!NOTE]
 >
@@ -210,11 +210,11 @@ Dans le panneau Ajouter des ressources :
 
 * **[!UICONTROL Ajouter des cessionnaires]**
 
-   Utilisez le menu déroulant pour sélectionner le groupe `Community Ski Class`, qui doit inclure les membres `Riley Taylor` et `Sidney Croft.`
+   Utilisez le menu déroulant pour sélectionner la variable `Community Ski Class` , qui doit inclure des membres `Riley Taylor` et `Sidney Croft.`
 
 * **[!UICONTROL Formation Path Contact&amp;ast;]**
 
-   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner un membre  `Quinn Harper`.
+   *(Obligatoire)* Utilisez le menu déroulant pour sélectionner un membre. `Quinn Harper`.
 
 * Sélectionnez **[!UICONTROL Créer]**.
 
@@ -222,4 +222,4 @@ Dans le panneau Ajouter des ressources :
 
 La création réussie du chemin d’apprentissage revient à la console Ressources avec le nouveau chemin d’apprentissage sélectionné. Dans cette console, vous pouvez publier, ajouter des apprenants et modifier d’autres paramètres.
 
-**** Publiez le chemin d’apprentissage.
+**Publier** le parcours d’apprentissage.

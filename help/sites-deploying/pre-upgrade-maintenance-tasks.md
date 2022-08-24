@@ -1,8 +1,8 @@
 ---
 title: Tâches de maintenance avant la mise à niveau
-seo-title: Tâches de maintenance avant la mise à niveau
+seo-title: Pre-Upgrade Maintenance Tasks
 description: Découvrez les tâches de maintenance préalables à la mise à niveau dans AEM.
-seo-description: Découvrez les tâches de maintenance préalables à la mise à niveau dans AEM.
+seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,11 +10,11 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2148'
 ht-degree: 76%
 
 ---
@@ -48,21 +48,21 @@ Lors de l’exécution de la mise à niveau, en plus des activités de mise à n
 
 AEM doit être entièrement sauvegardé avant de commencer la mise à niveau. Veillez à sauvegarder votre référentiel, l’installation de l’application, la banque de données et les instances Mongo, le cas échéant. Pour plus d’informations sur la sauvegarde et la restauration d’une instance AEM, voir [Sauvegarde et restauration](/help/sites-administering/backup-and-restore.md). 
 
-## Sauvegarde des modifications sur /etc  {#backup-changes-etc}
+## Sauvegarde des modifications sur /etc {#backup-changes-etc}
 
-Le processus de mise à niveau assure la maintenance et la fusion du contenu et des configurations existants sous les chemins `/apps` et `/libs` dans le référentiel. Pour les modifications apportées au chemin `/etc`, y compris les configurations ContextHub, il est souvent nécessaire de réappliquer ces modifications après la mise à niveau. Bien que la mise à niveau effectue une copie de sauvegarde de toutes les modifications qu’elle ne peut pas fusionner sous `/var`, nous vous recommandons de sauvegarder ces modifications manuellement avant de commencer la mise à niveau.
+Le processus de mise à niveau permet de gérer et de fusionner le contenu et les configurations existants sous le `/apps` et `/libs` chemins d’accès dans le référentiel. Pour les modifications apportées à la variable `/etc` chemin, y compris les configurations ContextHub, il est souvent nécessaire d’appliquer à nouveau ces modifications après la mise à niveau. La mise à niveau effectue une copie de sauvegarde de toutes les modifications qu’elle ne peut pas fusionner sous `/var`, nous vous recommandons de sauvegarder ces modifications manuellement avant de commencer la mise à niveau.
 
 ## Génération du fichier quickstart.properties {#generate-quickstart-properties}
 
 Lors du démarrage d’AEM depuis le fichier jar, un fichier `quickstart.properties` est généré sous `crx-quickstart/conf`. Si AEM a uniquement été lancé avec le script de démarrage dans le passé, ce fichier ne sera pas présent et la mise à niveau échouera. Veillez à vérifier l’existence de ce fichier et à redémarrer AEM depuis le fichier jar s’il n’existe pas. 
 
-## Configuration de la purge du workflow et du journal d’audit  {#configure-wf-audit-purging}
+## Configuration de la purge du workflow et du journal d’audit {#configure-wf-audit-purging}
 
 Les tâches `WorkflowPurgeTask` et `com.day.cq.audit.impl.AuditLogMaintenanceTask` nécessitent des configurations OSGi distinctes et ne fonctionneront pas sans celles-ci. Si elles échouent lors de l’exécution des tâches avant la mise à niveau, les configurations manquantes en sont la cause la plus probable. Par conséquent, veillez à ajouter des configurations OSGi pour ces tâches ou à les supprimer de la liste de tâches d’optimisation avant la mise à niveau si vous ne souhaitez pas les exécuter. La documentation pour la configuration des tâches de purge du workflow se trouve dans la section [Administration des instances de workflow](/help/sites-administering/workflows-administering.md) et la configuration des tâches de maintenance du journal d’audit se trouve dans la section [Maintenance du journal d’audit dans AEM 6](/help/sites-administering/operations-audit-log.md).
 
 Pour la purge du workflow et du journal d’audit dans CQ 5.6 et la purge du journal d’audit dans AEM 6.0, voir [Purge du workflow et des nœuds d’audit](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
-## Installation, configuration et exécution des tâches précédant la mise à niveau  {#install-configure-run-pre-upgrade-tasks}
+## Installation, configuration et exécution des tâches précédant la mise à niveau {#install-configure-run-pre-upgrade-tasks}
 
 En raison du niveau de personnalisation accordé par AEM, il n’existe généralement pas de méthode uniforme pour effectuer les mises à niveau. Ceci complique la création d’une procédure standard de mise à niveau.
 
@@ -74,7 +74,7 @@ Les tâches de maintenance postérieures à la mise à niveau sont actuellement 
 
 Toutes les tâches comprises dans cette étape d’optimisation postérieure à la mise à niveau sont compatibles avec toutes les versions à partir d’AEM 6.0.
 
-### Configuration  {#how-to-set-it-up}
+### Configuration {#how-to-set-it-up}
 
 Dans AEM 6.3 et versions ultérieures, les tâches d’optimisation de la maintenance précédant la mise à niveau sont incluses dans le fichier jar de démarrage rapide. Si vous effectuez une mise à niveau à partir d’une ancienne version d’AEM 6, elles sont disponibles via des packages distincts que vous pouvez télécharger à partir du gestionnaire de modules.
 
@@ -149,7 +149,7 @@ La liste des tâches varie selon le mode d’exécution utilisé pour démarrer 
 >
 >`DataStoreGarbageCollectionTask` appelle l’opération de nettoyage de l’entrepôt de données avec la phase de marquage et de balayage le cas échéant. Pour les déploiements qui utilisent une banque de données partagée, veillez à la reconfigurer correctement ou à préparer l’instance pour éviter la suppression des éléments référencés par une autre instance. Cela peut nécessiter l’exécution manuelle de la phase de marquage sur toutes les instances avant de déclencher cette tâche postérieure à la mise à niveau.
 
-### Configuration par défaut pour les vérifications d’intégrité antérieures à la mise à niveau  {#default-configuration-of-the-pre-upgrade-health-checks}
+### Configuration par défaut pour les vérifications d’intégrité antérieures à la mise à niveau {#default-configuration-of-the-pre-upgrade-health-checks}
 
 Le composant OSGi `PreUpgradeTasksMBeanImpl` est préconfiguré avec une liste de balises de vérification de l’intégrité précédant la mise à niveau à exécuter lorsque la méthode `runAllPreUpgradeHealthChecks` est appelée :
 
@@ -202,7 +202,7 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>Vérifie si la tâche <code>runAllPreUpgradeTasksmaintenance</code> est en cours d’exécution.</td>
+   <td>Vérifie si la variable <code>runAllPreUpgradeTasksmaintenance</code> est en cours d’exécution.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
@@ -222,7 +222,7 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>ACTION </td>
-   <td><p>Exécute toutes les vérifications d’intégrité préalables à la mise à niveau et enregistre leur état dans un fichier nommé <code>preUpgradeHCStatus.properties</code> situé dans le chemin d’accès sling de l’accueil. Si le paramètre <code>shutDownOnSuccess</code> est défini sur <code>true</code>, l’instance d’AEM sera arrêtée, mais seulement si toutes les vérifications d’intégrité préalables à la mise à niveau ont l’état OK.</p> <p>Le fichier des propriétés est utilisé comme prérequis pour une future mise à niveau<br /> et le processus de mise à niveau est interrompu si l’exécution de la vérification de l’intégrité avant la mise à niveau<br /> échoue. Si vous souhaitez ignorer le résultat des vérifications d’intégrité<br /> avant la mise à niveau et lancer la mise à niveau, vous pouvez supprimer le fichier.</p> </td>
+   <td><p>Exécute toutes les vérifications d’intégrité préalables à la mise à niveau et enregistre leur état dans un fichier nommé <code>preUpgradeHCStatus.properties</code> qui se trouve dans le chemin d’accès de l’accueil sling. Si la variable <code>shutDownOnSuccess</code> est défini sur <code>true</code>, l’instance d’AEM sera arrêtée, mais seulement si toutes les vérifications d’intégrité préalables à la mise à niveau ont l’état OK .</p> <p>Le fichier des propriétés est utilisé comme prérequis pour une future mise à niveau<br /> et le processus de mise à niveau est interrompu si l’exécution de la vérification de l’intégrité avant la mise à niveau<br /> échoue. Si vous souhaitez ignorer le résultat des vérifications d’intégrité<br /> avant la mise à niveau et lancer la mise à niveau, vous pouvez supprimer le fichier.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
@@ -239,20 +239,18 @@ Vous trouverez ci-dessous la liste de toutes les méthodes disponibles offertes 
 >* La console JMX
 >* Toute application externe qui se connecte à JMX
 >* cURL
-
 >
 
 
-
-## Désactivation des modules de connexion personnalisés  {#disable-custom-login-modules}
+## Désactivation des modules de connexion personnalisés {#disable-custom-login-modules}
 
 >[!NOTE]
 >
 >Cette étape est nécessaire uniquement si vous effectuez une mise à niveau à partir d’une version d’AEM 5. Elle peut être entièrement ignorée pour les mises à niveau des versions ultérieures à AEM 6.
 
-La façon dont les `LoginModules` personnalisées sont configurées pour l’authentification au niveau du référentiel a fondamentalement changé dans Apache Oak.
+Personnalisation `LoginModules` sont configurés pour l’authentification au niveau du référentiel a fondamentalement changé dans Apache Oak.
 
-Dans AEM versions qui utilisaient CRX2, la configuration était placée dans le fichier `repository.xml`, tandis qu’à partir d’AEM 6, elle est effectuée dans le service Apache Felix JAAS Configuration Factory via la console web.
+Dans AEM versions qui utilisaient la configuration CRX2, a été placé dans le `repository.xml` à partir de la version 6 AEM, il est effectué dans le service Apache Felix JAAS Configuration Factory via la console web.
 
 En conséquence, toute configuration existante doit être désactivée et recréée pour Apache Oak après la mise à niveau.
 
@@ -289,15 +287,15 @@ Pour désactiver les modules personnalisés définis dans la configuration JAAS 
 
 Supprimez tous les Service Packs, les Feature Packs ou les correctifs logiciels qui ont été déployés via le répertoire `crx-quickstart/install` sur le système de fichiers local. Cela empêche l’installation accidentelle d’anciens correctifs et Service Packs sur la nouvelle version d’AEM après la mise à jour.
 
-## Arrêt de toutes les instances Cold Standby  {#stop-tarmk-coldstandby-instance}
+## Arrêt de toutes les instances Cold Standby {#stop-tarmk-coldstandby-instance}
 
 Si vous utilisez TarMK Cold Standby, arrêtez toutes les instances Cold Standby. Cela vous offre une façon efficace de revenir en ligne en cas de problème avec la mise à niveau. Une fois que la mise à niveau a abouti, les instances Cold Standby devront être recréées à partir des instances principales mises à niveau.
 
-## Désactivation des tâches planifiées personnalisées  {#disable-custom-scheduled-jobs}
+## Désactivation des tâches planifiées personnalisées {#disable-custom-scheduled-jobs}
 
 Désactivez toutes les tâches OSGi planifiées qui sont incluses dans le code de l’application.
 
-## Exécution d’un nettoyage des révisions hors ligne  {#execute-offline-revision-cleanup}
+## Exécution d’un nettoyage des révisions hors ligne {#execute-offline-revision-cleanup}
 
 >[!NOTE]
 >
@@ -305,7 +303,7 @@ Désactivez toutes les tâches OSGi planifiées qui sont incluses dans le code d
 
 Si vous utilisez TarMK, vous devez effectuer le nettoyage des révisions hors ligne avant de procéder à la mise à niveau. Ainsi, l’étape de migration du référentiel et les tâches de mise à niveau associées sont nettement plus rapides et permettent de garantir que le nettoyage des révisions en ligne s’exécute correctement une fois la mise à niveau terminée. Pour plus d’informations sur l’exécution du nettoyage des révisions hors ligne, voir [Exécution du nettoyage des révisions hors ligne](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
-## Exécution du nettoyage de la mémoire de l’entrepôt de données  {#execute-datastore-garbage-collection}
+## Exécution du nettoyage de la mémoire de l’entrepôt de données {#execute-datastore-garbage-collection}
 
 >[!NOTE]
 >
@@ -328,7 +326,7 @@ Pour éviter cela, vous devez mettre à niveau le schéma en suivant la procédu
 
 1. Passez à l’AEM de mise à niveau.
 
-## Suppression des utilisateurs susceptibles de bloquer la mise à niveau {#delete-users-that-might-hinder-the-upgrade}
+## Suppression des utilisateurs susceptibles d’entraver la mise à niveau {#delete-users-that-might-hinder-the-upgrade}
 
 >[!NOTE]
 >
@@ -336,9 +334,7 @@ Pour éviter cela, vous devez mettre à niveau le schéma en suivant la procédu
 >
 >* Vous effectuez une mise à niveau à partir AEM versions antérieures à AEM 6.3.
 >* Vous rencontrez les erreurs mentionnées ci-dessous lors de la mise à niveau.
-
 >
-
 
 
 Il existe des cas exceptionnels où les utilisateurs du service peuvent se retrouver dans des versions AEM plus anciennes mal balisées en tant qu’utilisateurs standard.
@@ -353,7 +349,7 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 Pour contourner ce problème, procédez comme suit :
 
 1. Désolidariser l’instance du trafic de production
-1. Créez une sauvegarde du ou des utilisateurs à l’origine du problème. Vous pouvez le faire via le gestionnaire de modules. Pour plus d’informations, voir [Utilisation de modules.](/help/sites-administering/package-manager.md)
+1. Créez une sauvegarde du ou des utilisateurs à l’origine du problème. Vous pouvez le faire via le gestionnaire de modules. Pour plus d’informations, voir [Utilisation des modules.](/help/sites-administering/package-manager.md)
 1. Supprimez le ou les utilisateurs à l’origine du problème. Vous trouverez ci-dessous une liste d’utilisateurs qui peuvent appartenir à cette catégorie :
 
    1. `dynamic-media-replication`

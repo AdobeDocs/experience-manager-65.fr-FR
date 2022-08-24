@@ -5,7 +5,7 @@ exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 44%
+ht-degree: 46%
 
 ---
 
@@ -27,7 +27,7 @@ L’importation de données de catalogue de produits n’est pas prise en charge
 
 >[!TIP]
 >
->Si aucune API en temps réel n’est disponible, un cache de produit externe doté d’API doit être utilisé pour l’intégration. Exemple de [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Si aucune API en temps réel n’est disponible, un cache de produit externe doté d’API doit être utilisé pour l’intégration. Exemple de [Magento open-source](https://business.adobe.com/fr/products/magento/open-source.html).
 
 ## Expériences du catalogue de produits avec rendu AEM
 

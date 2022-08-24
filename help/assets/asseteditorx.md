@@ -3,11 +3,11 @@ title: Étendre l’Éditeur de ressources
 description: Découvrez comment étendre les fonctionnalités de l’Éditeur de ressources en utilisant des composants personnalisés.
 contentOwner: AG
 role: User, Admin
-feature: Outils de développement
+feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '688'
 ht-degree: 87%
 
 ---
@@ -18,7 +18,7 @@ L’Éditeur de ressources est la page qui s’ouvre lorsque l’utilisateur cli
 
 La configuration de l’éditeur à l’aide des composants de modification prédéfinis est traitée dans [Création et configuration d’une page Éditeur de ressources](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
 
-En plus d’utiliser des composants d’éditeur préexistants, les développeurs [!DNL Adobe Experience Manager] peuvent créer leurs propres composants.
+En plus d’utiliser des composants d’éditeur préexistants, [!DNL Adobe Experience Manager] les développeurs peuvent également créer leurs propres composants.
 
 ## Création d’un modèle Éditeur de ressources {#creating-an-asset-editor-template}
 
@@ -42,7 +42,7 @@ Dans la plupart des cas, la copie de l’exemple existant de `init.jsp` (`/apps/
 
 ### Configuration des actions JS {#configuring-js-actions}
 
-Certains composants [!DNL Assets] requièrent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
+Certains [!DNL Assets] Les composants requièrent des fonctions JS définies dans `component.js`. Copiez ce fichier dans votre répertoire de composants et liez-le.
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -52,7 +52,7 @@ L’exemple charge cette source JavaScript dans `head.jsp`(`/apps/geometrixx/com
 
 ### Feuilles de style supplémentaires {#additional-style-sheets}
 
-Certains composants [!DNL Assets] utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
+Certains [!DNL Assets] Les composants utilisent la bibliothèque de widgets. Pour que le rendu soit effectué correctement dans le contexte du contenu, une feuille de style supplémentaire doit être chargée. Le composant d’action de balise nécessite une feuille de style supplémentaire.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">

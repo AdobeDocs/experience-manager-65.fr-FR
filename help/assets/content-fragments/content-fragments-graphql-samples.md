@@ -5,8 +5,8 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1416'
+ht-degree: 100%
 
 ---
 
@@ -32,13 +32,13 @@ Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 * Un certain nombre d’[exemples de requêtes GraphQL](#graphql-sample-queries), basés sur l’exemple de structure de fragments de contenu (modèles de fragments de contenu et fragments de contenu associés).
 
 
-## GraphQL – Exemples de requêtes utilisant l’exemple de structure de fragment de contenu {#graphql-sample-queries-sample-content-fragment-structure}
+## GraphQL - Exemples de requêtes utilisant la structure de fragment de contenu type {#graphql-sample-queries-sample-content-fragment-structure}
 
-Consultez ces exemples de requêtes pour accéder à des illustrations de création de requêtes, ainsi qu’à des exemples de résultats.
+Consultez ces exemples de requêtes pour obtenir un aperçu de la création de requêtes, ainsi que des exemples de résultats.
 
 >[!NOTE]
 >
->Selon votre instance, vous pouvez accéder directement à la variable [Interface GraphiQL incluse avec AEM API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+>Selon votre instance, vous pouvez accéder directement à l’[interface GraphiQL incluse avec l’API GraphQL d’AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour soumettre et tester des requêtes.
 >
 >Par exemple : `http://localhost:4502/content/graphiql.html`
 
@@ -46,7 +46,7 @@ Consultez ces exemples de requêtes pour accéder à des illustrations de créat
 >
 >Les exemples de requêtes sont basés sur l’[exemple de structure de fragment de contenu à utiliser avec GraphQL](#content-fragment-structure-graphql)
 
-### Exemple de requête – Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
+### Exemple de requête - Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
 Tous les `types` seront renvoyés pour tous les schémas disponibles.
 
@@ -139,7 +139,7 @@ Tous les `types` seront renvoyés pour tous les schémas disponibles.
 }
 ```
 
-### Exemple de requête – Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
+### Exemple de requête - Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
 
 Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base :
 **Exemple de requête**
@@ -222,9 +222,9 @@ Une fois l’exécution effectuée, le système développe automatiquement la re
 }
 ```
 
-### Exemple de requête – Noms de toutes les villes {#sample-names-all-cities}
+### Exemple de requête - Noms de toutes les villes {#sample-names-all-cities}
 
-Il s’agit d’une requête simple pour renvoyer l’élément `name`de toutes les entrées dans le schéma `city`.
+Il s’agit d’une requête simple pour renvoyer l’élément `name`de toutes les entrées dans le schéma`city`.
 
 **Exemple de requête**
 
@@ -356,7 +356,7 @@ Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin
 }
 ```
 
-### Exemple de requête – Détails complets relatifs au PDG et aux employés d’une entreprise {#sample-full-details-company-ceos-employees}
+### Exemple de requête - Détails complets relatifs au PDG et aux employés d’une entreprise {#sample-full-details-company-ceos-employees}
 
 Grâce à la structure des fragments imbriqués, cette requête renvoie tous les détails relatifs au PDG d’une entreprise et à tous ses employés.
 
@@ -484,7 +484,7 @@ query {
 }
 ```
 
-### Exemple de Requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »  {#sample-all-persons-jobs-smith}
+### Exemple de Requête - Toutes les personnes qui portent le nom « Jobs » ou « Smith » {#sample-all-persons-jobs-smith}
 
 Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
@@ -538,7 +538,7 @@ query {
 }
 ```
 
-### Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »  {#sample-all-persons-not-jobs}
+### Exemple de requête - Toutes les personnes qui ne portent pas le nom « Jobs » {#sample-all-persons-not-jobs}
 
 Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
@@ -605,7 +605,7 @@ query {
 }
 ```
 
-### Exemple de requête : toutes les aventures dont la balise `_path` commence par un préfixe spécifique {#sample-wknd-all-adventures-cycling-path-filter}
+### Exemple de requête - Toutes les aventures dont `_path` commence par un préfixe spécifique {#sample-wknd-all-adventures-cycling-path-filter}
 
 Toutes les `adventures` où `_path` commence par un préfixe spécifique (`/content/dam/wknd/en/adventures/cycling`).
 
@@ -650,7 +650,7 @@ query {
 }
 ```
 
-### Exemple de requête – Toutes les villes situées en Allemagne ou en Suisse et dont la population se situe entre 400 000 et 999 999 {#sample-all-cities-d-ch-population}
+### Exemple de requête - Toutes les villes situées en Allemagne ou en Suisse et dont la population se situe entre 400 000 et 999 999 {#sample-all-cities-d-ch-population}
 
 Ici, le filtrage concerne une combinaison de champs. Un opérateur `AND` (implicite) est utilisé pour sélectionner la plage `population`, tandis qu’un opérateur `OR` (explicite) est utilisé pour sélectionner les villes requises.
 
@@ -713,7 +713,7 @@ query {
 }
 ```
 
-### Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse {#sample-all-cities-san-ignore-case}
+### Exemple de requête - Toutes les villes dont le nom contient SAN, indépendamment de la casse {#sample-all-cities-san-ignore-case}
 
 Cette requête interroge toutes les villes dont le nom contient `SAN`, indépendamment de la casse.
 
@@ -764,7 +764,7 @@ query {
 }
 ```
 
-### Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois {#sample-array-item-occur-at-least-once}
+### Exemple de requête - Filtrage sur un tableau avec un élément qui doit apparaître au moins une fois {#sample-array-item-occur-at-least-once}
 
 Cette requête effectue un filtrage sur un tableau avec un élément (`city:na`) qui doit se produire au moins une fois.
 
@@ -822,7 +822,7 @@ query {
 }
 ```
 
-### Exemple de requête : effectue un filtrage sur une valeur de tableau exacte {#sample-array-exact-value}
+### Exemple de requête - Filtrage sur une valeur de tableau exacte {#sample-array-exact-value}
 
 Cette requête effectue un filtrage sur une valeur de tableau exacte.
 
@@ -874,7 +874,7 @@ query {
 }
 ```
 
-### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont au moins un employé porte le nom « Smith »  {#sample-companies-employee-smith}
+### Exemple de requête pour les fragments de contenu imbriqués - Toutes les entreprises dont au moins un employé porte le nom « Smith » {#sample-companies-employee-smith}
 
 Cette requête illustre le filtrage pour toute `person` portant le `name` « Smith », qui renvoie des informations provenant de deux fragments imbriqués – `company` et `employee`.
 
@@ -940,7 +940,7 @@ query {
 }
 ```
 
-### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont tous les employés ont reçu la distinction « Gamestar »  {#sample-all-companies-employee-gamestar-award}
+### Exemple de requête pour les fragments de contenu imbriqués - Toutes les entreprises dont tous les employés ont remporté le prix « Gamestar » {#sample-all-companies-employee-gamestar-award}
 
 Cette requête illustre le filtrage de trois fragments imbriqués : `company`, `employee` et `award`.
 
@@ -1032,7 +1032,7 @@ query {
 }
 ```
 
-### Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB {#sample-metadata-awards-gb}
+### Exemple de requête pour les métadonnées – Liste des métadonnées des prix intitulés GB {#sample-metadata-awards-gb}
 
 Cette requête illustre le filtrage de trois fragments imbriqués : `company`, `employee` et `award`.
 
@@ -1241,7 +1241,7 @@ Cet exemple de requête interroge :
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu imbriqué – Type de modèle unique {#sample-wknd-nested-fragment-single-model}
+### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle unique{#sample-wknd-nested-fragment-single-model}
 
 Cette requête interroge :
 
@@ -1269,7 +1269,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de Requête pour un fragment de contenu imbriqué – Type de modèle multiple {#sample-wknd-nested-fragment-multiple-model}
+### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle multiple{#sample-wknd-nested-fragment-multiple-model}
 
 Cette requête interroge :
 
@@ -1299,7 +1299,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références de contenu {#sample-wknd-fragment-specific-model-content-reference}
+### Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références de contenu{#sample-wknd-fragment-specific-model-content-reference}
 
 Cette requête possède deux versions :
 
@@ -1311,7 +1311,7 @@ Ces requêtes interrogent :
 * à la recherche de différents fragments de contenu de type `bookmark` ;
    * avec des références de contenu à d’autres fragments.
 
-#### Exemple de requête pour plusieurs fragments de contenu avec des références préalablement récupérées {#sample-wknd-multiple-fragments-prefetched-references}
+#### Exemple de requête pour plusieurs fragments de contenu avec des références prérécupérées {#sample-wknd-multiple-fragments-prefetched-references}
 
 La requête suivante renvoie toutes les références de contenu en utilisant `_references` :
 
@@ -1347,7 +1347,7 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 }
 ```
 
-#### Exemple de requête pour plusieurs fragments de contenu avec des éléments annexes préalablement récupérés {#sample-wknd-multiple-fragments-attachments}
+#### Exemple de requête pour plusieurs fragments de contenu avec pièces jointes {#sample-wknd-multiple-fragments-attachments}
 
 La requête suivante renvoie tous les `attachments` – un champ spécifique (sous-groupe) de type `content-reference` :
 
@@ -1526,7 +1526,7 @@ Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivant
 
 * [Ville](#model-city)
 
-#### Société {#model-company}
+#### Entreprise {#model-company}
 
 Les champs de base définissant l’entreprise sont les suivants :
 
@@ -1570,7 +1570,7 @@ Les champs permettant de définir une ville sont les suivants :
 
 Les fragments suivants sont utilisés pour le modèle approprié.
 
-#### Société {#fragment-company}
+#### Entreprise {#fragment-company}
 
 | Nom de l’entreprise | PDG | Employés |
 |--- |--- |--- |

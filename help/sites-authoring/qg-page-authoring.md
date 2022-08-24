@@ -1,8 +1,8 @@
 ---
-title: Guide rapide à propos de la création de pages
-seo-title: Guide rapide pour la création de pages
+title: Guide rapide pour la création de pages
+seo-title: Quick Guide to Authoring Pages
 description: Guide rapide de haut niveau des principales actions à entreprendre pour créer le contenu d’une page
-seo-description: Guide rapide de haut niveau des principales actions à entreprendre pour créer le contenu d’une page
+seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1573'
 ht-degree: 97%
 
 ---
@@ -62,8 +62,8 @@ Avant de donner un aperçu des détails, voici quelques conseils et astuces qu�
 >Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-* [Raccourcis clavier pour les consoles  ](/help/sites-authoring/keyboard-shortcuts.md)
-
+>* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
+>
 
 
 ### Recherche de votre page {#finding-your-page}
@@ -88,14 +88,14 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 Pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) :
 
-1. [Accédez à l’emplacement où créer la page.](#finding-your-page)
+1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
 1. Cliquez sur l’icône **Créer** et sélectionnez **Page** dans la liste :
 
    ![qgtap-02](assets/qgtap-02.png)
 
 1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
 
-### Sélection de la page pour d’autres actions   {#selecting-your-page-for-further-action}
+### Sélection de la page pour d’autres actions {#selecting-your-page-for-further-action}
 
 Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
 
@@ -120,7 +120,8 @@ La méthode de sélection d’une page dépend du mode d’affichage dans la con
 
    * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
    >[!NOTE]
-   En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
+   >
+   >En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
 
 ### Actions rapides (mode Carte/Bureau seulement) {#quick-actions-card-view-desktop-only}
 
@@ -175,7 +176,8 @@ Pour modifier votre page :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
    >[!NOTE]
-   Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
+   >
+   >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
 
    * [Supprimer](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
@@ -192,9 +194,10 @@ Pour modifier votre page :
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
 
    >[!NOTE]
-   Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
+   >
+   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
 
-### Modification des propriétés de page    {#editing-the-page-properties}
+### Modification des propriétés de page {#editing-the-page-properties}
 
 Vous pouvez [modifier les propriétés de page](/help/sites-authoring/editing-page-properties.md) de deux (principales) façons :
 
@@ -247,7 +250,7 @@ Il existe deux méthodes principales pour [publier une page](/help/sites-authori
 
    Pour plus d’informations, voir [Publication de pages](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
 
-### Déplacement, copier-coller ou suppression d’une page    {#move-copy-and-paste-or-delete-your-page}
+### Déplacement, copier-coller ou suppression d’une page {#move-copy-and-paste-or-delete-your-page}
 
 Ces actions peuvent être déclenchées en procédant comme suit :
 
@@ -269,7 +272,8 @@ Ces actions peuvent être déclenchées en procédant comme suit :
 
       * Vous serez alors invité à confirmer l’opération.
    >[!NOTE]
-   La suppression n’est pas proposée comme action rapide.
+   >
+   >La suppression n’est pas proposée comme action rapide.
 
 ### Verrouillage d’une page (puis déverrouillage) {#locking-your-page-then-unlocking}
 
@@ -297,7 +301,7 @@ Un [accès rapide aux références](/help/sites-authoring/author-environment-too
 
 1. Appuyez ou cliquez sur le type de référence requis pour afficher d’autres détails et (le cas échéant) accomplir d’autres actions.
 
-### Création d’une version d’une page    {#creating-a-version-of-your-page}
+### Création d’une version d’une page {#creating-a-version-of-your-page}
 
 Pour créer une [version](/help/sites-authoring/working-with-page-versions.md) de votre page :
 

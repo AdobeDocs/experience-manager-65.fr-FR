@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 100%
 
@@ -121,7 +121,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété visible dans le formulaire adaptatif. Vous pouvez le remplacer en utilisant l’expression Visibility</p> </td>
   </tr>
   <tr>
-   <td><p>access </p> </td>
+   <td><p>accès </p> </td>
    <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Access.</p> </td>
   </tr>
   <tr>

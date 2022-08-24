@@ -1,8 +1,8 @@
 ---
 title: Utilisation des balises
-seo-title: Utilisation des balises
+seo-title: Using Tags
 description: Les balises sont un moyen simple et rapide de classer le contenu de votre site web.
-seo-description: Les balises sont un moyen simple et rapide de classer le contenu de votre site web.
+seo-description: Tags are a quick and easy method of classifying content within a website
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 88%
+source-wordcount: '569'
+ht-degree: 87%
 
 ---
 
@@ -44,7 +44,7 @@ Lors de la conception de la structure du contenu d’un site et du schéma de m�
 
 Dans l’environnement de développement de contenu, les auteurs peuvent appliquer des balises en accédant aux propriétés de la page et en entrant une ou plusieurs balises dans le champ **Balises/Mots-clés**.
 
-Pour appliquer des [balises prédéfinies](/help/sites-administering/tags.md), dans la fenêtre **Propriétés de la page**, utilisez le champ **Balises** et la fenêtre **Sélectionner des balises** . Le panneau **Balises standard** est l’espace de noms par défaut, ce qui signifie qu’il n’y a pas de `namespace-string:` préfixé à la taxonomie.
+A appliquer [balises prédéfinies](/help/sites-administering/tags.md), dans la variable **Propriétés de la page** utilisez la fenêtre **Balises** et le champ **Sélectionner des balises** fenêtre. Le panneau **Balises standard** est l’espace de noms par défaut, ce qui signifie qu’il n’y a pas de `namespace-string:` préfixé à la taxonomie.
 
 ![Sélectionnez la fenêtre Balises . Utilisez le bouton X pour désélectionner les balises actuellement sélectionnées.](assets/chlimage_1-41.png)
 

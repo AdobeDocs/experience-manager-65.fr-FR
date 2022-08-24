@@ -1,8 +1,8 @@
 ---
 title: 'Console Rapports '
-seo-title: 'Console Rapports '
+seo-title: Reports Console
 description: Découvrez comment accéder aux rapports
-seo-description: Découvrez comment accéder aux rapports
+seo-description: Learn how to access reports
 uuid: 7bb15a15-077b-4bfb-aaf4-50fddc67f237
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -14,7 +14,7 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '618'
 ht-degree: 8%
 
 ---
@@ -29,7 +29,7 @@ En général, les différents rapports sont les suivants :
 
 * [Rapport des affectations](#assignments-report)
 
-   Pour une [communauté d’activation](/help/communities/overview.md#enablement-community), fournit un aperçu de l’avancement des apprenants sur leurs affectations, y compris un score associé lors de la mise en oeuvre de la norme SCORM.
+   Pour un [communauté d&#39;activation](/help/communities/overview.md#enablement-community), fournit un aperçu de l’avancement des apprenants sur leurs affectations, y compris un score associé lors de la mise en oeuvre de la norme SCORM.
 
 * [Rapport des vues](#views-report)
 
@@ -39,7 +39,7 @@ En général, les différents rapports sont les suivants :
 
    Fournit un graphique des différents types de publications par membres de la communauté sur n’importe quel site de la communauté.
 
-Lorsque [Adobe Analytics est activé](/help/communities/sites-console.md#analytics), les rapports comprennent le nombre de vues, lectures, commentaires et évaluations pour chaque ressource d’activation au fil du temps.
+When [Adobe Analytics est activé](/help/communities/sites-console.md#analytics), les rapports comprennent le nombre de vues, lectures, commentaires et évaluations pour chaque ressource d’activation au fil du temps.
 
 Les rapports tabulaires peuvent être exportés au format .csv pour un traitement ultérieur.
 
@@ -47,7 +47,7 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 ### Rapports pour les sites de la communauté {#reports-for-community-sites}
 
-* À partir de la navigation globale : **[!UICONTROL Navigation]** **[!UICONTROL Communautés]** > **[!UICONTROL Rapports]**
+* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** >  **[!UICONTROL Rapports]**
 
 * Choisissez parmi :
 
@@ -67,13 +67,13 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 ### Rapports pour les ressources d’activation et les chemins d’apprentissage {#reports-for-enablement-resources-and-learning-paths}
 
-* À partir de la navigation globale : **[!UICONTROL Navigation]** **[!UICONTROL Communautés]** > **[!UICONTROL Ressources]**
+* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** >  **[!UICONTROL Ressources]**
 
 * Sélectionnez un site de la communauté d’activation existant :
 
-   * Sélectionnez l’icône **Rapport** pour générer des rapports qui couvrent toutes les ressources d’activation.
+   * Sélectionner **Rapport** pour générer des rapports couvrant toutes les ressources d&#39;activation.
    * Sélectionnez un chemin d’apprentissage d’activation.
-   * Sélectionnez l’icône **Rapport** pour générer des rapports pour :
+   * Sélectionner **Rapport** pour générer des rapports pour :
 
       * Ressources d’activation incluses.
       * Les apprenants affectés au chemin d’apprentissage.
@@ -114,7 +114,7 @@ Sélectionnez les critères du rapport :
 
    Faites votre choix parmi les ressources d’activation affectées aux apprenants sélectionnés.
 
-Sélectionnez **Générer** pour créer le rapport :
+Sélectionner **Générer** pour créer le rapport :
 
 ![generate-report](assets/generate-assignment-report.png)
 
@@ -143,7 +143,7 @@ Sélectionnez les critères du rapport :
    * 90 derniers jours
    * L&#39;année dernière
 
-Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
+Sélectionner **[!UICONTROL Générer]** pour créer le rapport.
 
 ![generate-views](assets/generate-views.png)
 
@@ -172,7 +172,7 @@ Sélectionnez les critères du rapport :
    * 90 derniers jours
    * L&#39;année dernière
 
-Sélectionnez **[!UICONTROL Générer]** pour créer le rapport.
+Sélectionner **[!UICONTROL Générer]** pour créer le rapport.
 
 ![generate-report](assets/generate-posts-report.png)
 
@@ -184,6 +184,6 @@ Si aucun site de communauté n’est répertorié, vérifiez qu’Adobe Analytic
 
 ### Les rapports ne s’affichent pas dans l’instance AEM Author {#reports-do-not-show-in-aem-author-instance}
 
-Si les rapports ne s’affichent pas dans l’instance d’auteur AEM, vérifiez les personnalisations, comme le mappage des URL sur l’instance de publication. Si le mappage des URL n’est effectué que sur l’instance AEM Publish du site Communities, assurez-vous que la même configuration a été configurée dans l’instance AEM Author dans la configuration **Composant Social du rapport de tendance du site** .
+Si les rapports ne s’affichent pas dans l’instance d’auteur AEM, vérifiez les personnalisations, comme le mappage des URL sur l’instance de publication. Si le mappage des URL n’est effectué que sur l’instance AEM Publish du site des communautés, assurez-vous que la même opération a été configurée dans l’instance AEM Author dans **Rapport de tendances du site Fabrique de composants sociaux** configuration.
 
 ![Mappage des URL sur l’auteur AEM](assets/sitetrend.png)

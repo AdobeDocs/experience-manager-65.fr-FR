@@ -12,7 +12,7 @@ discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1367'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Dans la page Paramètres de protection, vous pouvez effectuer les opérations su
 
 Un *paramètre de sécurité* permet de contrôler la sécurité et les autorisations des fichiers convertis avec ce paramètre.
 
-1. Dans Administration Console, cliquez sur Services > PDF Generator > Paramètres de protection.
+1. Dans la console d’administration, cliquez sur Services > PDF Generator > Paramètres de protection.
 1. Cliquez sur Créer ou sur le nom d’un paramètre de sécurité.
 1. Dans la page relative à la création ou à la modification des paramètres de protection, renseignez les champs obligatoires associés à l’option en question (voir [Configuration des paramètres de type de fichier](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings)).
 1. Cliquez sur Enregistrer, puis, dans la boîte de dialogue qui s’affiche, affectez un nom pour le paramètre et cliquez sur OK.

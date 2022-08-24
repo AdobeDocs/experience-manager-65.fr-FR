@@ -85,7 +85,7 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 | Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées Haut et Bas | Accéder aux fichiers et aux dossiers dans la même hiérarchie. |
 | Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées gauche et droite | Accéder aux fichiers et aux dossiers situés au-dessus ou au-dessous du dossier en cours. |
 | Navigation dans les dossiers d’[!DNL Assets] | `/` | Lancer la recherche en ouvrant la zone Omni-recherche. |
-| Console [!DNL Assets] | &amp;grave; | Activer/désactiver les rails |
+| Console [!DNL Assets] | &grave; | Activer/désactiver les rails |
 | Console [!DNL Assets] | `Alt + 1` | Ouvrir l’arborescence de contenu. |
 | Console [!DNL Assets] | `Alt + 2` | Ouvrez le rail de gauche [!UICONTROL Navigation]. |
 | Console [!DNL Assets] | `Alt + 3` | Afficher la [!UICONTROL Chronologie] d’une ressource sélectionnée. |

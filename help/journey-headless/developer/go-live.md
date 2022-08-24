@@ -1,7 +1,8 @@
 ---
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement AEM sans interface utilisateur, apprenez à déployer une application sans interface utilisateur.
-source-git-commit: 20d46a7c37663dac36e6af9582d569a7f782eab7
+exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 87%
@@ -177,7 +178,7 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu�
 Observez ces bonnes pratiques pour votre approche générale de débogage :
 
 * Validez les fonctionnalités et les performances avec la version d’aperçu de l’application.
-* Validez les fonctionnalités et les performances avec la version d’exploitation de l’application.
+* Validez les fonctionnalités et les performances avec la version de production de l’application.
 * Validez à l’aide de l’aperçu JSON de l’éditeur de fragment de contenu.
 * Inspectez le JSON dans l’application cliente pour vérifier la présence de problèmes d’application cliente ou de diffusion.
 * Inspectez le JSON à l’aide de GraphQL pour vérifier la présence de problèmes liés au contenu mis en cache ou à AEM.

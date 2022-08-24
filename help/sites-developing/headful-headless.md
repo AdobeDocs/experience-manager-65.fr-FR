@@ -1,7 +1,8 @@
 ---
 title: Couplage et découplage dans AEM
 description: Les projets AEM peuvent être implémentés dans un modèle headful et headless, mais le choix n’est pas binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
-source-git-commit: cf7e9061bac9004c7efd2f045b4900e4a92d67e9
+exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 94%

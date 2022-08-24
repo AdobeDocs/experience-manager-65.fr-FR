@@ -13,7 +13,7 @@ discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1431'
 ht-degree: 100%
 
@@ -110,14 +110,14 @@ Pour générer un formulaire avec des performances optimisées à l’aide de l�
    * Un objet `com.adobe.idp.Document` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez un objet `com.adobe.idp.Document`.
    * Un objet `PDFFormRenderSpec` prévu pour stocker les options dʼexécution afin dʼaméliorer les performances.
    * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` prévu pour stocker les pièces jointes. Ce paramètre est facultatif, vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
+   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Ce paramètre est facultatif et vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichiers au formulaire.
 
-   La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web du client.
+   La méthode `renderPDFForm` renvoie un objet `FormsResult` contenant un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur web du client.
-   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de lʼobjet `FormsResult`.
+   * Créez un objet `com.adobe.idp.Document` en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
    * Créez un objet `java.io.InputStream` en appelant la méthode `getInputStream` de lʼobjet `com.adobe.idp.Document`.
    * Créez un tableau d’octets et renseignez-le avec le flux de données de formulaire en appelant la méthode `read` de lʼobjet `InputStream` et en transmettant le tableau d’octets comme argument.
    * Appelez la méthode `write` de lʼobjet `javax.servlet.ServletOutputStream` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
@@ -152,27 +152,27 @@ Restituer un formulaire avec des performances optimisées à l’aide de l’API
 
 1. Restituer le formulaire
 
-   Appelez la méthode `renderPDFForm` de lʼobjet `FormsService` et transmettez les valeurs suivantes :
+   Appelez la méthode `renderPDFForm` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
    * Une valeur de chaîne qui spécifie le nom de la conception de formulaire, y compris l’extension du nom de fichier.
    * Un objet `BLOB` contenant les données à fusionner avec le formulaire. Si vous ne souhaitez pas fusionner les données, transmettez `null`.
    * Un objet `PDFFormRenderSpecc` prévu pour stocker les options d’exécution.
-   * Un objet `URLSpec` contenant les valeurs URI requises par le service Forms.
-   * Un objet `java.util.HashMap` prévu pour stocker les pièces jointes. Ce paramètre est facultatif, vous pouvez spécifier `null` si vous ne souhaitez pas joindre de fichier au formulaire.
+   * Un objet `URLSpec` contenant des valeurs URI requises par le service Forms.
+   * Un objet `java.util.HashMap` qui stocke les pièces jointes. Il sʼagit dʼun paramètre facultatif. Vous pouvez indiquer `null` si vous ne souhaitez pas joindre de fichier au formulaire.
    * Un objet `com.adobe.idp.services.holders.BLOBHolder` vide qui est renseigné par la méthode. Il permet de stocker le formulaire PDF rendu.
    * Un objet `javax.xml.rpc.holders.LongHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker le nombre de pages du formulaire).
    * Un objet `javax.xml.rpc.holders.StringHolder` vide qui est renseigné par la méthode. (Cet argument permet de stocker la valeur du paramètre régional).
    * Un objet `com.adobe.idp.services.holders.FormsResultHolder` vide qui contiendra les résultats de cette opération.
 
-   La méthode `renderPDFForm` renseigne lʼobjet `com.adobe.idp.services.holders.FormsResultHolder`, transmis comme dernière valeur d’argument, avec un flux de données de formulaire qui doit être écrit dans le navigateur web du client.
+   La méthode `renderPDFForm` renseigne l’objet `com.adobe.idp.services.holders.FormsResultHolder` qui est transmis en tant que dernière valeur d’argument avec un flux de données de formulaire qui doit être écrit dans le navigateur web client.
 
 1. Écrire le flux de données de formulaire dans le navigateur web client
 
    * Créez un objet `FormResult` en obtenant la valeur du membre de données `value` de lʼobjet `com.adobe.idp.services.holders.FormsResultHolder`.
    * Créez un objet `javax.servlet.ServletOutputStream` utilisé pour envoyer un flux de données de formulaire au navigateur web du client.
-   * Créez un objet `BLOB` contenant les données de formulaire en appelant la méthode `getOutputContent` de lʼobjet `FormsResult`.
-   * Créez un tableau d’octets et renseignez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de lʼobjet `FormsResult` au tableau d’octets.
-   * Appelez la méthode `write` de lʼobjet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web du client. Transmettez le tableau d’octets à la méthode `write`.
+   * Créez un objet `BLOB` qui contient les données du formulaire en appelant la méthode `getOutputContent` de l’objet `FormsResult`.
+   * Créez un tableau d’octets et remplissez-le en appelant la méthode `getBinaryData` de lʼobjet `BLOB`. Cette tâche affecte le contenu de l’objet `FormsResult` au tableau d’octets.
+   * Appelez la méthode `write` de l’objet `javax.servlet.http.HttpServletResponse` pour envoyer le flux de données de formulaire au navigateur web client. Transmettez le tableau d’octets à la méthode `write`.
 
 **Voir également**
 

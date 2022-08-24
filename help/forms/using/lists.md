@@ -10,10 +10,10 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '6906'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Dans une correspondance, les fragments de document sont des parties ou composant
 * **Texte** : Un actif de texte est un élément de contenu comprenant un ou plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
 * **Liste** : La liste est un groupe de fragments du document, y compris le texte, les listes, les conditions et les images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou la totalité des éléments de liste pour reproduire un modèle d’éléments réutilisable.
 * **Condition** : les conditions vous permettent de définir le contenu à inclure lors de la création d’une correspondance, en fonction des données fournies. La condition est décrite en termes de variables de contrôle. Une variable de contrôle peut être soit un élément de dictionnaire de données, soit un espace réservé.
-* **Fragment de disposition** : Un fragment de présentation est une disposition pouvant être utilisée dans une ou plusieurs lettres. Un fragment de disposition est utilisé pour créer des motifs répétables, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire standard tels que &quot;Adresse&quot; et &quot;Numéro de référence&quot;. Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (fichiers XDP) sont créées dans Designer puis sont téléchargées vers AEM Forms.
+* **Fragment de disposition** : Un fragment de présentation est une disposition pouvant être utilisée dans une ou plusieurs lettres. Un fragment de disposition est utilisé pour créer des motifs répétables, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire types tels qu’« Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (fichiers XDP) sont créées dans Designer puis sont téléchargées vers AEM Forms.
 
 ## Texte {#text}
 
@@ -102,7 +102,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
    * Symboles de devise tels que €,￥et £
    * Symboles mathématiques tels que ∑, √, ∂ et ^
-   * Symboles de ponctuation tels que ‟ et &quot;
+   * Symboles de ponctuation tels que ‟ et ”
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
@@ -298,7 +298,7 @@ Selon les options sélectionnées, soit uniquement la première expression véri
 
 L’éditeur de conditions est fourni avec une interface utilisateur [Générateur d’expression](/help/forms/using/expression-builder.md), qui prend en charge la création d’expressions à l’aide à la fois de plusieurs espaces réservés et d’éléments du dictionnaire de données. Vous pouvez utiliser sur ces expressions des opérandes communs et des fonctions locales/globales. Chaque expression peut être associée à un certain contenu et il peut éventuellement y avoir une section par défaut si aucune des expressions n’est évaluée comme vraie. Toutes les expressions sont évaluées dans l’ordre dans lequel elles sont définies et la première expression renvoyant la valeur true est sélectionnée et son contenu associé est renvoyé par ce module conditionnel.
 
-Par exemple, si le texte des termes et conditions d’une lettre diffère selon l’état dans lequel se trouve le client et que le dictionnaire de données contient un élément appelé &quot;état&quot;, vous pouvez ajouter la condition comme suit : ・ state = NY, sélectionnez T&amp;C_NY text paragraph ・ state = NC, sélectionnez T&amp;C_NC text paragraph
+Par exemple, si le texte des termes et conditions d’une lettre diffère selon l’Etat où réside le client, et si le dictionnaire de données contient un élément appelé « Etat », vous pourrez ajouter la condition de la manière suivante : • Etat = NY, select T&amp;C_NY text paragraph • Etat = NC, select T&amp;C_NC text paragraph
 
 L’Editeur de condition vous permet de spécifier une condition par défaut. Si la valeur des variables de contrôle ne correspond à aucune condition, alors le contenu associé à la condition par défaut est utilisé. Suivant l’exemple précédent, vous pourriez ajouter cette ligne de condition :
 • Par défaut, sélectionnez T&amp;C_Rest
@@ -320,7 +320,7 @@ L’Editeur de condition vous permet de spécifier une condition par défaut. Si
 1. Pour ajouter une ressource à la condition, sélectionnez celle de votre choix dans la page Sélection des ressources et cliquez sur **Terminé**. Les actifs sont ajoutés au volet Expression.
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
-   * **Désactiver l’évaluation de résultats multiples\Activer l’évaluation de résultats multiples**: Lorsque cette option est activée (s’affiche sous la forme &quot;Activer plusieurs...&quot;), toutes les conditions sont évaluées et le résultat est la somme de toutes les conditions réelles. Si cette option est désactivée (« Désactiver l’évaluation… »), alors seule la première condition qui s’avère vraie est évaluée et devient la sortie de la condition.
+   * **Désactiver l’évaluation de résultats multiples\Activer l’évaluation de résultats multiples** : Lorsque cette option est activée (s’affiche comme « Activer l’évaluation… »), toutes les conditions sont évaluées et le résultat est la somme de toutes les conditions réelles. Si cette option est désactivée (« Désactiver l’évaluation… »), alors seule la première condition qui s’avère vraie est évaluée et devient la sortie de la condition.
    * **Saut de page** : sélectionnez cette option (![saut de page](assets/break.png)) pour insérer un saut de page entre les modules des conditions. Lorsque cette option nʼest pas sélectionnée (![pas de saut de page](assets/nobreak.png)) et quʼune condition déborde sur la page suivante, la condition entière est décalée vers la page suivante, au lieu de marquer un saut de page entre les modules.
 
 1. Pour modifier l’ordre des ressources dans la condition, cliquez sur les icônes de flèches (![glisser-déposer](assets/dragndrop.png)) sans relâcher le bouton de la souris, puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
@@ -451,7 +451,7 @@ Si la version définitive de la lettre créée dans l’interface utilisateur de
 
 #### Formats des dates dans Designer et Asset Configuration Manager {#date-formats-in-designer-and-asset-configuration-manager}
 
-Lors de la création d’une mise en page dans Designer, assurez-vous que les formats des champs de dates sont conformes aux formats de dates définis dans Data Display Formats dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md). Pour plus d’informations, voir Formatage des valeurs de champ et utilisation de modèles dans l’aide de Designer.
+Lors de la création d’une mise en page dans Designer, assurez-vous que les formats des champs de dates sont conformes aux formats de dates définis dans Data Display Formats dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md). Pour plus d’informations, voir Formater des valeurs de champ et utiliser des modèles dans l’Aide de Designer.
 
 #### Capture des périodes {#capturing-date-ranges}
 

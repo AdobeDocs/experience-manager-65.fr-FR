@@ -13,7 +13,7 @@ feature: Publishing,Configuration
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 58%
+ht-degree: 61%
 
 ---
 
@@ -72,7 +72,7 @@ Vous lancez la requête pour passer à HTTP/2. ce n&#39;est pas fait automatique
       1. Vérifiez que vous utilisez le CDN par Adobe et que vous n’êtes pas géré avec une relation directe.
       1. Vérifiez que vous utilisez un domaine dédié. Si vous utilisez Dynamic Media, vous utilisez un domaine dédié.
    1. Le service clientèle vous ajoute à la liste d’attente des clients HTTP/2 dans l’ordre dans lequel les demandes ont été envoyées.
-   1. Lorsque Adobe est prêt à traiter votre demande, le service clientèle vous contacte pour coordonner la transition et définir une date cible.
+   1. Lorsqu’Adobe est prêt à traiter votre demande, le service clientèle vous contacte pour coordonner la transition et définir une date cible.
    1. Une fois la transition terminée, vous en êtes informé et pouvez vérifier que la transition vers HTTP2 a réussi.
 
       Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
@@ -98,4 +98,4 @@ Le contenu non mis en cache atteint directement les serveurs Adobe d’origine j
 
 Le navigateur ne détecte pas cette transition, il est donc nécessaire de télécharger une extension.
 
-Pour Firefox et Chrome, il existe une extension appelée &quot;HTTP/2 and SPDY Indicator&quot;. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si http/2 est pris en charge, il est indiqué par l’extension sous la forme d’un symbole de Flash bleu et d’un en-tête `X-Firefox-Spdy` : `h2`.
+Pour Firefox et Chrome, il existe une extension appelée &quot;HTTP/2 and SPDY Indicator&quot;. Les navigateurs ne prennent en charge HTTP/2 qu’en mode sécurisé. Par conséquent, appelez une URL avec le protocole HTTPS pour vérifier. Si http/2 est pris en charge, il est indiqué par l’extension sous la forme d’un symbole de Flash bleu et d’un en-tête . `X-Firefox-Spdy` : `h2`.

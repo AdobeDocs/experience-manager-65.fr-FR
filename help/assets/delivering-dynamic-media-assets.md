@@ -1,5 +1,5 @@
 ---
-title: Diffusion de ressources Dynamic Media
+title: Diffusion de ressources Dynamic Media
 description: Découvrez comment diffuser des ressources Dynamic Media
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
@@ -10,21 +10,21 @@ discoiquuid: e3b44330-d476-49c6-b7ba-079d0d60e500
 docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
-feature: Gestion des ressources,Rendus
+feature: Asset Management,Renditions
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 79%
+source-wordcount: '310'
+ht-degree: 87%
 
 ---
 
-# Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
+# Diffusion de ressources Dynamic Media{#delivering-dynamic-media-assets}
 
 La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
 
 Avec Dynamic Media, vous disposez de plusieurs options :
 
-* Si votre site web est hébergé sur Experience Manager, vous souhaiterez ajouter les ressources Dynamic Media directement à votre page.
+* Si votre site web est hébergé sur Adobe Experience Manager, vous souhaiterez ajouter les ressources Dynamic Media directement à votre page.
 * Si votre site web n’est pas hébergé par Experience Manager, les possibilités suivantes s’offrent à vous :
 
    * Intégration de votre vidéo ou image à votre site web.
@@ -39,16 +39,16 @@ Pour plus d’informations, reportez-vous aux rubriques suivantes :
 
 * [Ajout de ressources Dynamic Media aux pages web](/help/assets/adding-dynamic-media-assets-to-pages.md)
 * [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md)
-* [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/hotlink-protection.md)
+* [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/hotlink-protection.md)
 * [Liaison d’URL à votre application web](/help/assets/linking-urls-to-yourwebapplication.md)
-* [Diffuser des images optimisées pour un site réactif](/help/assets/responsive-site.md)
+* [Diffusion d’images optimisées pour un site réactif](/help/assets/responsive-site.md)
 * [Diffusion de contenu HTTP2](/help/assets/http2.md)
-* [Invalidation de votre cache CDN au moyen de Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
+* [Invalidation de votre cache CDN via Dynamic Media Classic](/help/assets/invalidate-cdn-cache-dm-classic.md)
 * [Utilisation de jeux de règles de transformation d’URL](/help/assets/using-rulesets-to-transform-urls.md)
 
 
-## Diffusion de ressources Dynamic Media via HTTP/2  {#http-delivery-of-dynamic-media-assets}
+## Diffusion de ressources Dynamic Media via HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
 Experience Manager prend à présent en charge la diffusion de tout le contenu Dynamic Media (images et vidéo) sur HTTP/2. En d’autres termes, une URL publiée ou un code intégré pour l’image ou la vidéo peut être intégré dans toute application acceptant une ressource hébergée. Cette ressource publiée est alors distribuée par le biais du protocole HTTP/2. Cette méthode de distribution améliore la communication entre les navigateurs et les serveurs, ce qui permet d’améliorer les temps de réponse et de chargement de toutes vos ressources Dynamic Media.
 
-Pour en savoir plus, consultez la section [Diffusion HTTP/2 de contenu aux questions fréquentes](/help/sites-administering/scene7-http2faq.md).
+Pour en savoir plus, voir [Questions fréquentes sur la diffusion de contenu HTTP/2](/help/sites-administering/scene7-http2faq.md).

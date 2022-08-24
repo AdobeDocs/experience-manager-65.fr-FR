@@ -1,8 +1,8 @@
 ---
 title: Bonnes pratiques
-seo-title: Bonnes pratiques
+seo-title: Best Practices
 description: Découvrez comment utiliser AEM de la manière la plus efficace possible.
-seo-description: Découvrez comment utiliser AEM de la manière la plus efficace possible.
+seo-description: How to use AEM in the most efficient and most effective way possible
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 73%
+source-wordcount: '287'
+ht-degree: 72%
 
 ---
 
@@ -25,7 +25,7 @@ Une documentation sur les meilleures pratiques est disponible pour les aspects s
 
 * [Assets](#assets)
 * [Sites](#sites)
-* [Formulaires](#forms)
+* [Forms](#forms)
 
 Pour connaître les meilleures pratiques en matière d’administration, de déploiement, de maintenance ou de développement, reportez-vous à l’une des ressources suivantes :
 
@@ -73,7 +73,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 | Outils de création | [Environnement et outils de création](/help/sites-authoring/author-environment-tools.md)  | Fournit un aperçu des outils utilisés pour créer des pages. |
 | Organisation des pages | [Création et organisation des pages](/help/sites-authoring/managing-pages.md) | Fournit une vue d’ensemble de la meilleure organisation de vos pages, y compris les conventions de dénomination. |
 
-## Formulaires {#forms}
+## Forms {#forms}
 
 |  |  |  |
 |---|---|---|

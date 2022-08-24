@@ -1,8 +1,8 @@
 ---
 title: 'Console Ressources d’activation '
-seo-title: 'Console Ressources d’activation '
+seo-title: Enablement Resources Console
 description: Dans la console Ressources, les responsables de l’activation créent, gèrent et assignent des ressources aux membres d’un site de la communauté d’activation.
-seo-description: Dans la console Ressources, les responsables de l’activation créent, gèrent et assignent des ressources aux membres d’un site de la communauté d’activation.
+seo-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
 uuid: 52445b39-c339-4b39-8004-eb36de99bced
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ role: Admin
 exl-id: 15e16572-c692-41fc-86e4-c1d475afa63c
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2957'
 ht-degree: 6%
 
 ---
 
 # Console Ressources d’activation  {#enablement-resources-console}
 
-Pour AEM Communities, la console Ressources est l’emplacement où les [responsables de l’activation](users.md) créent, gèrent et assignent des ressources aux membres d’un site de la communauté d’activation.
+Pour AEM Communities, la console Ressources est l’emplacement où [Chefs d’activation](users.md) créer, gérer et affecter des ressources aux membres d’un site de communauté d’activation.
 
 ## Conditions requises {#requirements}
 
@@ -37,13 +37,13 @@ Pour plus d’informations, voir [Configuration de l’activation](enablement.md
 
 >[!NOTE]
 >
->Avec la sortie de [AEM 6.3](deploy-communities.md#latestfeaturepack) et les Feature Packs Communities équivalents [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) et [6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la fonctionnalité d’activation ne nécessite plus de [base de données MySQL](mysql.md).
+>Avec la publication de [AEM 6.3](deploy-communities.md#latestfeaturepack) et les Feature Packs Communities équivalents [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) et [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la fonction d’activation ne nécessite plus de balise [Base de données MySQL](mysql.md).
 
 ## Terminologie {#terminology}
 
 ### Ressource {#resource}
 
-Les ressources sont essentielles pour une [communauté d’activation](overview.md#enablement-community). Ce sont les matériaux qui permettent aux membres d&#39;améliorer leurs compétences.
+Les ressources sont essentielles à une [communauté d&#39;activation](overview.md#enablement-community). Ce sont les matériaux qui permettent aux membres d&#39;améliorer leurs compétences.
 
 Caractéristiques d’une ressource :
 
@@ -61,13 +61,13 @@ Un parcours d’apprentissage est un ensemble logique de ressources d’activati
 
 ### Groupe de membres {#members-group}
 
-Lors de la création d’un site communautaire, le nom donné au site pour l’URL est utilisé dans la création des [groupes d’utilisateurs spécifiques au site](users.md) configurés avec différentes autorisations pour différents rôles. Tous ces groupes créés automatiquement sont précédés du préfixe `Community <site-name>`.
+Lors de la création d’un site communautaire, le nom donné au site pour l’URL est utilisé pour la création de la variable [groupes d’utilisateurs spécifiques au site](users.md) configurés avec différentes autorisations pour différents rôles. Tous ces groupes créés automatiquement sont précédés du préfixe `Community <site-name>`.
 
-Un de ces groupes d’utilisateurs est le groupe `Community <site-name> Members`, qui identifie les utilisateurs enregistrés dans l’environnement de publication en tant que membres de la communauté. Pour consulter un exemple, reportez-vous au tutoriel [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md) .
+Un de ces groupes d’utilisateurs est : `Community <site-name> Members` , qui identifie les utilisateurs enregistrés dans l’environnement de publication en tant que membres de la communauté. Voir le tutoriel [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md) par exemple.
 
-Pour les [communautés d’engagement](overview.md#egagementcommunity), il est raisonnable de permettre aux visiteurs du site de s’enregistrer ou d’utiliser la connexion sociale, à ce stade ils sont automatiquement ajoutés au groupe de membres.
+Pour [communautés d&#39;engagement](overview.md#egagementcommunity), il est raisonnable de permettre aux visiteurs du site de s’enregistrer ou d’utiliser la connexion sociale, à ce stade ils sont automatiquement ajoutés au groupe de membres.
 
-Pour les [communautés d’activation](overview.md#enablement-community), il est recommandé de rendre le site privé, ce qui nécessite ensuite qu’un administrateur ajoute des utilisateurs au groupe de membres.
+Pour [communautés d’activation](overview.md#enablement-community), il est recommandé de rendre le site privé, ce qui nécessite ensuite qu’un administrateur ajoute des utilisateurs au groupe de membres.
 
 ## Accès aux ressources d’activation d’un site de la communauté {#accessing-a-community-site-s-enablement-resources}
 
@@ -75,7 +75,7 @@ Pour les [communautés d’activation](overview.md#enablement-community), il est
 
 Dans l’environnement de création, pour accéder à la console Ressources
 
-* À partir de la navigation globale : **[!UICONTROL Navigation]** **[!UICONTROL Communautés]** > **[!UICONTROL Ressources]**
+* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** > **[!UICONTROL Ressources]**
 
    ![enablement-sites](assets/enablement-sites.png)
 
@@ -109,7 +109,7 @@ Pour sélectionner plusieurs ressources d’activation, sélectionnez-les en pre
 
 Pour ajouter une nouvelle ressource d’activation au site de la communauté
 
-* Sélectionnez l’icône `Create` .
+* Sélectionnez la `Create` icône .
 * Dans le sous-menu qui s’affiche, sélectionnez **[!UICONTROL Ressource]**.
 
 Cela lance un processus détaillé de :
@@ -128,13 +128,13 @@ Lorsque la ressource fait partie d’un cours, un parcours d’apprentissage, le
 
 * **[!UICONTROL Ajouter image]**
 
-   (*Facultatif*) Image à afficher sur la carte de la ressource d’activation dans la page des affectations du membre, ainsi que dans la console Ressources. L’image est sélectionnée à partir du système de fichiers local du serveur. Si aucune image n’est fournie, une miniature est générée pour la ressource chargée.
+   (*Facultatif*) Image à afficher sur la carte de la ressource d’activation dans la page d’affectation du membre, ainsi que dans la console Ressources. L’image est sélectionnée à partir du système de fichiers local du serveur. Si aucune image n’est fournie, une miniature est générée pour la ressource chargée.
 
-   ***Remarque*** : La taille d’image recommandée n’est pas simplement de 480 x 480 pixels. En raison de la conception réactive des cartes pour diverses dimensions de navigateur, la taille d’affichage varie de 220 x 165 pixels à 400 x 165 pixels.
+   ***Remarque***: La taille d’image recommandée n’est pas simplement de 480 x 480 pixels. En raison de la conception réactive des cartes pour diverses dimensions de navigateur, la taille d’affichage varie de 220 x 165 pixels à 400 x 165 pixels.
 
 * **[!UICONTROL Nom du site]**
 
-   (*readonly*) Le site communautaire auquel la ressource est ajoutée.
+   (*readonly*) Site de la communauté auquel la ressource est ajoutée.
 
 * **[!UICONTROL Nom de la ressource]**
 
@@ -146,7 +146,7 @@ Lorsque la ressource fait partie d’un cours, un parcours d’apprentissage, le
 
 * **[!UICONTROL Afficher dans le catalogue]**
 
-   Lorsque cette option est désactivée, la ressource d’activation n’apparaît dans aucun catalogue. Si cette case est cochée, la ressource d’activation s’affiche dans tous les catalogues, sauf si [est pré-filtrée](catalog-developer-essentials.md#pre-filters) ou les filtres de membres de l’interface utilisateur. Cette option n’est pas cochée par défaut.
+   Lorsque cette option est désactivée, la ressource d’activation n’apparaît dans aucun catalogue. Si cette case est cochée, la ressource d’activation s’affiche dans tous les catalogues, sauf si [pré-filtré](catalog-developer-essentials.md#pre-filters) ou les filtres membres de l’interface utilisateur. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Description]**
 
@@ -172,13 +172,13 @@ Lorsque la ressource fait partie d’un cours, un parcours d’apprentissage, le
 
 Bien qu’il s’affiche comme si plusieurs ressources d’activation pouvaient être sélectionnées, une seule est autorisée.
 
-Sélectionnez `'+' icon`, dans le coin supérieur droit, pour lancer le processus de choix de la ressource en identifiant la source.
+Sélectionnez la `'+' icon`, dans le coin supérieur droit, pour lancer le processus de choix de la ressource en identifiant la source.
 
 ![upload-resource](assets/upload-resource1.png)
 
 * **[!UICONTROL Transférer depuis mes fichiers locaux]**
 
-   Le téléchargement depuis le système de fichiers local utilise l’explorateur de fichiers natif pour sélectionner et charger un fichier. Les types de fichiers pris en charge sont SCORM.zip (HTML5 ou SWF), MP4 video, SWF, PDF et les types d’image (JPG, PNG, GIF, BMP). Le nom de fichier devient le nom de la ressource, qui est ajouté à la bibliothèque de ressources.
+   Le téléchargement depuis le système de fichiers local utilise l’explorateur de fichiers natif pour sélectionner et charger un fichier. Les types de fichiers pris en charge sont SCORM.zip (HTML5 ou SWF), MP4, vidéo, SWF, PDF et types d’images (JPG, PNG, GIF, BMP). Le nom de fichier devient le nom de la ressource, qui est ajouté à la bibliothèque de ressources.
 
 * **[!UICONTROL Parcourir la bibliothèque de ressources]**
 
@@ -232,7 +232,7 @@ Sélectionnez `'+' icon`, dans le coin supérieur droit, pour lancer le processu
 
 * **[!UICONTROL Image de couverture des ressources]**
 
-   L’image de couverture est une image à afficher lors de la première consultation de la ressource d’activation. Par exemple, l’image de couverture s’affiche lorsqu’une ressource vidéo n’est pas encore en cours de lecture. Si une image personnalisée n’est pas téléchargée, une image par défaut s’affiche. Pour les ressources vidéo, il peut être possible de [générer une miniature](enablement.md#ffmpeg), mais uniquement lors du téléchargement et non lorsque la vidéo est référencée comme URL. Pour les ressources d’emplacement, l’image peut être utilisée pour fournir des informations supplémentaires.
+   L’image de couverture est une image à afficher lors de la première consultation de la ressource d’activation. Par exemple, l’image de couverture s’affiche lorsqu’une ressource vidéo n’est pas encore en cours de lecture. Si une image personnalisée n’est pas téléchargée, une image par défaut s’affiche. Pour les ressources vidéo, il peut être possible de [générer une miniature ;](enablement.md#ffmpeg), mais uniquement lors du chargement et non lorsque la vidéo est référencée en tant qu’URL. Pour les ressources d’emplacement, l’image peut être utilisée pour fournir des informations supplémentaires.
 
    La taille recommandée pour l’image de couverture est de 640 x 360 pixels.
 
@@ -250,7 +250,7 @@ Sélectionnez `'+' icon`, dans le coin supérieur droit, pour lancer le processu
 
 * **[!UICONTROL Paramètres des réseaux sociaux]**
 
-   Ces paramètres déterminent si les apprenants peuvent ou non fournir des informations concernant la ressource d’activation. Les [paramètres de modération](sites-console.md#moderation) sont ceux du site de la communauté parente.
+   Ces paramètres déterminent si les apprenants peuvent ou non fournir des informations concernant la ressource d’activation. Le [paramètres de modération](sites-console.md#moderation) sont ceux du site de la communauté parent.
 
    * **[!UICONTROL Autoriser les commentaires]**
 
@@ -270,15 +270,15 @@ Sélectionnez `'+' icon`, dans le coin supérieur droit, pour lancer le processu
 
 * **[!UICONTROL Auteur de la ressource]**
 
-   *(Facultatif)* L’auteur de la ressource d’activation. Utilisez le menu déroulant pour sélectionner parmi les utilisateurs qui sont membres du groupe [membres](#members-group).
+   *(Facultatif)* L’auteur de la ressource d’activation. Utilisez le menu déroulant pour effectuer une sélection parmi les utilisateurs qui sont membres du groupe [groupe de membres](#members-group).
 
 * **[!UICONTROL Resource Contact&amp;ast;]**
 
-   *(Obligatoire)* Personne avec laquelle le membre peut contacter la ressource d’activation. Utilisez le menu déroulant pour sélectionner parmi les utilisateurs qui sont membres du groupe [membres](#members-group).
+   *(Obligatoire)* Personne que le membre peut contacter concernant la ressource d’activation. Utilisez le menu déroulant pour effectuer une sélection parmi les utilisateurs qui sont membres du groupe [groupe de membres](#members-group).
 
 * **[!UICONTROL Expert de la ressource]**
 
-   *(Facultatif)* Personne avec laquelle le membre peut contacter qui possède une expertise concernant la ressource d’activation. Utilisez le menu déroulant pour sélectionner parmi les utilisateurs qui sont membres du groupe [membres](#members-group).
+   *(Facultatif)* Personne que le membre peut contacter et qui possède une expertise concernant la ressource d’activation. Utilisez le menu déroulant pour effectuer une sélection parmi les utilisateurs qui sont membres de la fonction [groupe de membres](#members-group).
 
 ### 4 affectations {#assignments}
 
@@ -286,13 +286,13 @@ Sélectionnez `'+' icon`, dans le coin supérieur droit, pour lancer le processu
 
 * **[!UICONTROL Ajouter des cessionnaires]**
 
-   Utilisez le menu déroulant pour sélectionner parmi les [membres](#members-group) - Les utilisateurs et les groupes d’utilisateurs (répertoriés en gras) - qui doivent être inscrits en tant qu’apprenants. Lorsque les membres se connectent au site de la communauté, les ressources d’activation (et les parcours d’apprentissage) dans lesquels ils sont inscrits apparaissent sur leur page [Affectations](functions.md#assignments-function).
+   Utilisez le menu déroulant pour effectuer une sélection dans [members](#members-group) - Utilisateurs et groupes d’utilisateurs (en gras) - qui doivent être inscrits en tant qu’apprenants. Lorsque les membres se connectent au site de la communauté, les ressources d’activation (et les parcours d’apprentissage) dans lesquels ils sont inscrits apparaissent sur leur [Affectations](functions.md#assignments-function) page.
 
 * Sélectionnez **[!UICONTROL Créer]**.
 
    ![resourceinfo](assets/resourceinfo.png)
 
-La création réussie de la ressource d’activation renvoie à la console Ressources avec la ressource nouvellement créée sélectionnée. Dans cette console, il est possible de [gérer la ressource](#managing-a-resource).
+La création réussie de la ressource d’activation renvoie à la console Ressources avec la ressource nouvellement créée sélectionnée. Depuis cette console, il est possible de [gérer la ressource](#managing-a-resource).
 
 ## Création d’un parcours d’apprentissage {#create-a-learning-path}
 
@@ -300,7 +300,7 @@ La création réussie de la ressource d’activation renvoie à la console Resso
 
 Ajout d’un nouveau chemin d’apprentissage au site de la communauté
 
-* Sélectionnez l’icône `Create`
+* Sélectionnez la `Create` icon
 * Dans le sous-menu qui s’affiche, sélectionnez **[!UICONTROL Chemin d’apprentissage]**.
 
 Cela lance un processus détaillé de :
@@ -323,7 +323,7 @@ Pour les ressources d’activation incluses dans un parcours d’apprentissage, 
 
    (*Facultatif*) Image à afficher sur la carte du chemin d’apprentissage dans la page des affectations du membre, ainsi que dans la console Ressources. L’image est sélectionnée à partir du système de fichiers local du serveur. Si aucune image n’est fournie, une miniature est générée pour la ressource chargée.
 
-   ***Remarque*** : La taille d’image recommandée n’est plus simplement de 480 x 480 pixels. En raison de la conception réactive des cartes pour diverses dimensions de navigateur, la taille d’affichage varie de 220 x 165 pixels à 400 x 165 pixels.
+   ***Remarque***: La taille d’image recommandée n’est plus simplement de 480 x 480 pixels. En raison de la conception réactive des cartes pour diverses dimensions de navigateur, la taille d’affichage varie de 220 x 165 pixels à 400 x 165 pixels.
 
 * **[!UICONTROL Nom du site]**
 
@@ -335,11 +335,11 @@ Pour les ressources d’activation incluses dans un parcours d’apprentissage, 
 
 * **[!UICONTROL Balises]**
 
-   (*Facultatif*) Une ou plusieurs balises peuvent être sélectionnées pour associer le chemin d’apprentissage à un ou plusieurs catalogues. Voir [Balisage des ressources d’activation](tag-resources.md).
+   (*Facultatif*) Vous pouvez choisir une ou plusieurs balises qui associent le chemin d’apprentissage à un ou plusieurs catalogues. Voir [Balisage des ressources d’activation](tag-resources.md).
 
 * **[!UICONTROL Afficher dans le catalogue]**
 
-   Lorsque cette option est désactivée, le chemin d’apprentissage n’apparaît dans aucun catalogue. Si cette case est cochée, le chemin d’apprentissage s’affiche dans tous les catalogues, sauf si [est pré-filtré](catalog-developer-essentials.md#pre-filters) ou si les filtres de membres de l’interface utilisateur sont activés. L’affichage du parcours d’apprentissage dans un catalogue permet indirectement d’accéder en LECTURE à toutes ses ressources contenues. Cette option n’est pas cochée par défaut.
+   Lorsque cette option est désactivée, le chemin d’apprentissage n’apparaît dans aucun catalogue. Si cette case est cochée, le chemin d’apprentissage s’affiche dans tous les catalogues, sauf si [pré-filtré](catalog-developer-essentials.md#pre-filters) ou les filtres membres de l’interface utilisateur. L’affichage du parcours d’apprentissage dans un catalogue permet indirectement d’accéder en LECTURE à toutes ses ressources contenues. Cette option n’est pas cochée par défaut.
 
 * **[!UICONTROL Description]**
 
@@ -375,11 +375,11 @@ Pour les ressources d’activation incluses dans un parcours d’apprentissage, 
 
 * **[!UICONTROL Mettre en place l’ordre du cursus de formation]**
 
-   (*Facultatif*) Si ce paramètre est défini sur Activé, l’ordre dans lequel les ressources d’activation sont ajoutées est l’ordre dans lequel les apprenants sont nécessaires pour poursuivre le parcours d’apprentissage. La valeur par défaut est Off.
+   (*Facultatif*) Si la valeur est définie sur Activé, l’ordre dans lequel les ressources d’activation sont ajoutées est l’ordre dans lequel les apprenants sont requis pour poursuivre le parcours d’apprentissage. La valeur par défaut est Off.
 
 * **[!UICONTROL Ressources]**
 
-   Une ou plusieurs ressources sélectionnées parmi les *ressources d’activation publiées* créées pour le site de la communauté en cours.
+   Une ou plusieurs ressources sélectionnées parmi les *publié* ressources d’activation créées pour le site de la communauté en cours.
 
 >[!NOTE]
 >
@@ -393,11 +393,11 @@ Pour les ressources d’activation incluses dans un parcours d’apprentissage, 
 
 * **[!UICONTROL Ajouter des inscriptions]**
 
-   Utilisez le menu déroulant pour sélectionner parmi les membres et les groupes de membres (répertoriés en gras) qui sont membres du [groupe de membres](#members-group) du site de la communauté. Il n’est pas nécessaire d’ajouter des affectations lors de la première création du chemin d’apprentissage. Les propriétés du chemin d’apprentissage peuvent être modifiées pour ajouter des apprenants ultérieurement.
+   Utilisez le menu déroulant pour sélectionner parmi les membres et les groupes de membres (répertoriés en gras) qui sont membres du site de la communauté. [groupe de membres](#members-group). Il n’est pas nécessaire d’ajouter des affectations lors de la première création du chemin d’apprentissage. Les propriétés du chemin d’apprentissage peuvent être modifiées pour ajouter des apprenants ultérieurement.
 
 * **[!UICONTROL Formation Path Contact&amp;ast;]**
 
-   *(Obligatoire)* Personne que le membre peut contacter concernant le parcours d’apprentissage. Utilisez le menu déroulant pour sélectionner parmi les utilisateurs qui sont membres du [groupe de membres](#members-group) du site de la communauté.
+   *(Obligatoire)* Personne que le membre peut contacter concernant le parcours d’apprentissage. Utilisez le menu déroulant pour effectuer une sélection parmi les utilisateurs membres du site de la communauté. [groupe de membres](#members-group).
 
 * Sélectionnez **[!UICONTROL Créer]**
 
@@ -411,7 +411,7 @@ Pour les ressources d’activation incluses dans un parcours d’apprentissage, 
 
 Pour gérer une seule ressource d’activation :
 
-* Dans la console **[!UICONTROL Ressources]**, sélectionnez le site de la communauté qui contient la ressource.
+* Dans la **[!UICONTROL Ressources]** , sélectionnez le site de la communauté qui contient la ressource.
 * Sélectionnez la ressource.
 
 Pour la ressource d&#39;activation sélectionnée, il est possible de :
@@ -436,7 +436,7 @@ Si la seule modification consiste à modifier les affectations à l’étape Par
 
 ![delete-resource](assets/delete-resource.png)
 
-En sélectionnant l’icône de corbeille, la ressource d’activation sera `Deleted` après confirmation.
+En sélectionnant l’icône de la corbeille, la ressource d’activation sera `Deleted` après confirmation.
 
 ### Publication {#publish}
 
@@ -444,9 +444,9 @@ En sélectionnant l’icône de corbeille, la ressource d’activation sera `Del
 
 Avant que les apprenants puissent voir une ressource d’activation affectée, elle doit être publiée :
 
-* Sélectionnez l’icône du monde `Publish`.
-* Dans la boîte de dialogue qui s’affiche, sélectionnez à nouveau **[!UICONTROL Publier]**.
-* Sélectionnez **[!UICONTROL Fermer]**.
+* Sélectionnez l’icône représentant un monde pour `Publish`.
+* Dans la boîte de dialogue qui s’affiche, sélectionnez **[!UICONTROL Publier]** encore une fois.
+* Sélectionner **[!UICONTROL Fermer]**.
 
 Même si la boîte de dialogue indique que l’action est mise en file d’attente, elle est souvent publiée immédiatement.
 
@@ -462,13 +462,13 @@ Pour rendre temporairement les ressources d’activation inaccessibles aux membr
 
 L’icône Rapport permet d’accéder aux rapports générés lorsque les apprenants interagissent avec les ressources d’activation qui leur sont affectées dans l’environnement de publication. Le rapport varie en fonction du type de ressource.
 
-Pour tous les parcours d’apprentissage, il est possible d’afficher un rapport en fonction des ressources ou des apprenants ( `User Report`).
+Pour tous les parcours d’apprentissage, il est possible d’afficher un rapport en fonction des ressources ou des apprenants ( `User Report`.)
 
 ![learning-ingpath-info](assets/learningpath-info1.png)
 
-Ce rapport est spécifique à la ressource d’activation actuelle ou au parcours de formation. La profondeur des rapports fournie dépend de si [Adobe Analytics](analytics.md) est ou non sous licence et activé pour le site de la communauté. Les rapports [Chronologie](#timeline), [Engagement de la visionneuse](#viewer-engagement) et [Engagement par appareil](#engagement-by-device) sont importés à partir d’Adobe Analytics en fonction de l’ [intervalle d’interrogation](analytics.md#report-importer).
+Ce rapport est spécifique à la ressource d’activation actuelle ou au parcours de formation. La profondeur des rapports fournie dépend de si oui ou non [Adobe Analytics](analytics.md) est sous licence et activé pour le site de la communauté. Le [Chronologie](#timeline), [Engagement des visionneuses](#viewer-engagement), et [Engagement par appareil](#engagement-by-device) Les rapports sont importés à partir d’Adobe Analytics en fonction de la variable [intervalle d’interrogation](analytics.md#report-importer).
 
-Pour toutes les ressources d’activation, qu’Adobe Analytics soit activé ou non, il existe des rapports sur [État du cessionnaire](#assignee-status) et [Évaluations](#ratings) ainsi qu’un tableau [Résumé du rapport](#report-summary).
+Pour toutes les ressources d’activation, qu’Adobe Analytics soit activé ou non, il existe des rapports sur [État du cessionnaire](#assignee-status) et [Évaluations](#ratings) ainsi que d’une [Résumé du rapport](#report-summary) table.
 
 ![resource-report](assets/resource-report1.png)
 
@@ -554,13 +554,13 @@ Pour un rapport d’utilisateur de chemin d’apprentissage, le résumé du rapp
    * Nombre de ressources terminées.
    * Leur statut.
 
-Il est possible d&#39;ajuster l&#39;affichage du tableau en sélectionnant les colonnes à l&#39;aide du sélecteur `Show / hide columns`.
+Il est possible d&#39;ajuster l&#39;affichage du tableau en sélectionnant les colonnes à l&#39;aide de la fonction `Show / hide columns` sélecteur.
 
 #### Télécharger le rapport au format CSV {#download-report-as-csv}
 
 Le tableau Résumé des rapports peut être téléchargé au format CSV à l’aide d’un bouton situé en haut de la console.
 
-* Pour une ressource d’activation : `Download Resource Report as CSV`.
-* Pour un parcours d’apprentissage : `Download Learning Path Report as CSV`.
+* Pour une ressource d’activation : `Download Resource Report as CSV` bouton .
+* Pour un parcours d’apprentissage : `Download Learning Path Report as CSV` bouton .
 
 L’intégralité du résumé des rapports est téléchargée, quelles que soient les colonnes sélectionnées pour l’affichage.

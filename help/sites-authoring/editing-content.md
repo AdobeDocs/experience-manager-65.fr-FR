@@ -1,8 +1,8 @@
 ---
 title: Modification du contenu de la page
-seo-title: Modification du contenu de la page
+seo-title: Editing Page Content
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
-seo-description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
+seo-description: Once your page is created you can edit the content to make the updates you require
 uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '3064'
-ht-degree: 94%
+source-wordcount: '3045'
+ht-degree: 93%
 
 ---
 
-# Modification du contenu de la page {#editing-page-content}
+# Modification du contenu de la page{#editing-page-content}
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
@@ -106,9 +106,9 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/
 
 La notification indique le workflow exécuté sur la page. Si l’utilisateur prend part à l’étape actuelle du workflow, des options [affectant l’état du workflow](/help/sites-authoring/workflows-participating.md) et permettant d’obtenir plus d’informations sur le workflow sont également disponibles, à savoir :
 
-* **Terminé**  : ouvre la boîte de dialogue  **Terminer** le processus
+* **Terminer** - Ouvre la fenêtre **Terminer l’élément de travail** dialog
 
-* **Déléguer**  : ouvre la boîte de dialogue  **Terminer** le processus
+* **Déléguer** - Ouvre la fenêtre **Terminer l’élément de travail** dialog
 
 * **Afficher les détails** : ouvre la fenêtre **Détails** du workflow
 
@@ -190,7 +190,7 @@ Ceci est valide pour les types de ressources suivants (certains dépendent du sy
    <td>Produit</td>
   </tr>
   <tr>
-   <td>Vidéo</td>
+   <td>Vidéo </td>
    <td>Flash</td>
   </tr>
   <tr>
@@ -311,7 +311,7 @@ Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les comp
 * Ouvrez la [boîte de dialogue de composant pour l’édition](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#draganddropintocomponent) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
-### Boîte de dialogue de modification du composant  {#component-edit-dialog}
+### Boîte de dialogue de modification du composant {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’[icône Modifier (crayon) de la barre d’outils Composant](#edit-configure-copy-cut-delete-paste).
 
@@ -351,10 +351,10 @@ Pour certains types de composants, vous pouvez faire glisser et déposer des él
 | Image | Image |
 | Document | Télécharger |
 | Produit | Produit |
-| Vidéo | Flash |
+| Vidéo  | Flash |
 | Fragment de contenu | Fragment de contenu |
 
-## Modifier (contenu) – Mode Plein écran  {#edit-content-full-screen-mode}
+## Modifier (contenu) – Mode Plein écran {#edit-content-full-screen-mode}
 
 Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitter) avec :
 
@@ -453,7 +453,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 Si la page est basée sur un [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez facilement basculer vers l’[éditeur de modèles](/help/sites-authoring/templates.md#editing-templates-template-authors) en sélectionnant **Éditer le modèle** dans le menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez passer en [mode de conception](/help/sites-authoring/default-components-designmode.md) à l’aide du [sélecteur de mode de page](/help/sites-authoring/author-environment-tools.md#page-modes) de la barre d’outils pour activer/désactiver les composants à utiliser sur la page.
+Si la page est basée sur une [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez passer à [Mode de conception](/help/sites-authoring/default-components-designmode.md) en utilisant la variable [sélecteur de mode page](/help/sites-authoring/author-environment-tools.md#page-modes) sur la barre d’outils pour activer/désactiver les composants à utiliser sur la page.
 
 Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière en mode [Colonnes](/help/sites-authoring/basic-handling.md#column-view) ou [Liste](/help/sites-authoring/basic-handling.md#list-view).
 
@@ -472,7 +472,7 @@ Par exemple :
 
 Les [Annotations](/help/sites-authoring/annotations.md) permettent aux réviseurs et aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
 
-## Aperçu des pages  {#previewing-pages}
+## Aperçu des pages {#previewing-pages}
 
 Deux options sont disponibles pour prévisualiser une page :
 
@@ -485,9 +485,7 @@ Deux options sont disponibles pour prévisualiser une page :
 >* Les liens dans le contenu sont visibles, mais inaccessibles en mode Édition.
 >* Si vous souhaitez naviguer à l’aide des liens, utilisez l’une des options d’aperçu.
 >* Utilisez le [raccourci clavier](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` pour basculer entre le mode Aperçu et le dernier mode sélectionné.
-
 >
-
 
 
 >[!NOTE]
@@ -510,7 +508,7 @@ Lors de la création, le mode Aperçu est accessible par l’intermédiaire de l
 
 L’option **Afficher comme publié(e)** est disponible dans le menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information). La page s’affiche sur un nouvel onglet, actualise le contenu et affiche la page telle qu’elle se présentera dans l’environnement de publication.
 
-## Verrouillage d’une page {#locking-a-page}
+## Verrouillage d’une page    {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
@@ -560,9 +558,9 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 >[!NOTE]
 >
->Le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` est également disponible pour annuler les actions d’édition de la page.
+>Le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Z` est également disponible pour annuler les actions de modification de page.
 >
->Le raccourci clavier `Ctrl-Y` est également disponible pour rétablir les actions d’édition de la page.
+>Raccourci clavier `Ctrl-Y` est également disponible pour rétablir les actions d’édition de page.
 
 >[!NOTE]
 >
@@ -587,9 +585,7 @@ Les commandes Annuler et Rétablir fonctionnent de la même manière que dans le
 >* Rétablir des opérations pour autant qu’aucune modification de page n’ait été effectuée depuis la dernière utilisation de la commande Annuler.
 >* Annuler jusqu’à 20 opérations de modification (paramètre par défaut).
 >* Vous pouvez également utiliser les [raccourcis clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour annuler et rétablir des opérations.
-
 >
-
 
 
 Vous pouvez utiliser les commandes d’annulation et de rétablissement pour les types de modification suivants :

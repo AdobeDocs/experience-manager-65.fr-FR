@@ -3,7 +3,8 @@ title: Résolution des problèmes et FAQ concernant MSM
 description: Découvrez comment résoudre les problèmes les plus courants liés à MSM et comment obtenir des réponses aux questions les plus courantes à ce sujet.
 feature: Multi Site Manager
 role: Admin
-source-git-commit: d4fa331ad048e1d8bd57e0944c8bc5b67be1d203
+exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
+source-git-commit: 289c4644063504ec3c8e02d930933ad7260600f0
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 100%

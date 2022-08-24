@@ -1,8 +1,8 @@
 ---
 title: Résolution des problèmes
-seo-title: Résolution des problèmes
+seo-title: Troubleshooting
 description: Dépannage de la communauté, y compris les problèmes connus
-seo-description: Dépannage de la communauté, y compris les problèmes connus
+seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -33,8 +33,7 @@ L’utilisation de Dispatcher 4.1.6 ou version ultérieure résoudra ce problèm
 
 Si un forum a été créé sur CQ 5.4 et que des sujets ont été publiés, puis que le site a été mis à niveau vers AEM 5.6.1 ou version ultérieure, toute tentative d’affichage des publications existantes peut entraîner une erreur sur la page :
 
-Caractère de modèle non valide &quot;a&quot;
-Impossible d’envoyer la requête à `/content/demoforums/forum-test.html` sur ce serveur et les journaux contiennent les éléments suivants :
+Caractère de modèle non valide &quot;a&quot; Impossible d’envoyer la requête à `/content/demoforums/forum-test.html` sur ce serveur et les logs contiennent les éléments suivants :
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -48,21 +47,21 @@ Le problème est que la chaîne de format pour com.day.cq.commons.date.RelativeT
 Par conséquent, tout code utilisant l’API RelativeTimeFormat() doit changer :
 
 * Origine: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* Pour :`final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* To: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 L’échec est différent sur l’auteur et la publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les sujets du forum. Une fois la publication effectuée, l’erreur est renvoyée sur la page.
 
-Pour plus d’informations, voir l’API [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) .
+Voir [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API pour plus d’informations.
 
-## Questions courantes {#common-concerns}
+## Préoccupations communes {#common-concerns}
 
-### Avertissement dans les journaux : Handlebars Obsolète {#warning-in-logs-handlebars-deprecated}
+### Avertissement dans les journaux : Handlebars obsolètes {#warning-in-logs-handlebars-deprecated}
 
 Au démarrage (et non au premier démarrage), l’avertissement suivant apparaît dans les journaux :
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` a été remplacé par  `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` a été remplacé par `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Cet avertissement peut être ignoré en toute sécurité car `jknack.handlebars.Handlebars`, utilisé par [SCF](scf.md#handlebarsjavascripttemplatinglanguage), est fourni avec son propre utilitaire d’assistance i18n. Au démarrage, elle est remplacée par une [aide i18n](handlebars-helpers.md#i-n) spécifique à l’AEM. Cet avertissement est généré par la bibliothèque tierce pour confirmer le remplacement d’une assistance existante.
+Cet avertissement peut être ignoré en toute sécurité en tant que `jknack.handlebars.Handlebars`, utilisé par [SCF](scf.md#handlebarsjavascripttemplatinglanguage), est fourni avec son propre utilitaire d’assistance i18n. Au démarrage, il est remplacé par un AEM spécifique [Assistant i18n](handlebars-helpers.md#i-n). Cet avertissement est généré par la bibliothèque tierce pour confirmer le remplacement d’une assistance existante.
 
 ### Avertissement dans les journaux : OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

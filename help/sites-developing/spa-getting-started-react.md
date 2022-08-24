@@ -1,8 +1,8 @@
 ---
 title: Prise en main de SPA dans AEM - React
-seo-title: Prise en main de SPA dans AEM - React
+seo-title: Getting Started with SPAs in AEM - React
 description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
-seo-description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
+seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
 uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1203'
+source-wordcount: '1168'
 ht-degree: 87%
 
 ---
@@ -81,7 +81,7 @@ Plus de détails à ce sujet sont disponibles [sur GitHub ici](https://github.co
 
 >[!CAUTION]
 >
->La version minimale de `aem-clientlib-generator` requise est 1.4.1.
+>La version minimale de la variable `aem-clientlib-generator` requis est 1.4.1.
 
 `aem-clientlib-generator` est configuré dans le fichier `clientlib.config.js`comme suit.
 
@@ -279,10 +279,10 @@ Il est régulièrement nécessaire que les composants d’une application sur un
 
 ## Étapes suivantes {#next-steps}
 
-Pour obtenir un guide détaillé sur la création de votre propre SPA, reportez-vous à la section [Prise en main d’AEM Éditeur - WKND Events Tutoriel](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+Pour obtenir un guide détaillé sur la création de votre propre SPA, reportez-vous à la section [Prise en main de l’éditeur SPA d’AEM - Tutoriel WKND Events](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=fr).
 
-Pour plus d’informations sur la manière de vous organiser afin de développer SPA pour AEM, voir l’article [Développement d’un site de développement pour les ](/help/sites-developing/spa-architecture.md).
+Pour plus d’informations sur la manière de vous organiser pour développer SPA pour AEM voir l’article [Développement de SPA pour AEM](/help/sites-developing/spa-architecture.md).
 
-Pour plus d’informations sur le mappage du modèle dynamique sur le composant et son fonctionnement dans SPA dans AEM, consultez l’article [Mappage du modèle dynamique sur le composant pour la ](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Pour plus d’informations sur le mappage du modèle dynamique sur les composants et son fonctionnement dans SPA dans AEM, consultez l’article . [Mappage du modèle dynamique avec le composant pour SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Si vous souhaitez mettre en oeuvre SPA dans AEM pour un framework autre que React ou Angular ou souhaitez simplement découvrir en détail le fonctionnement du kit SDK de l’, reportez-vous à l’article [Plan directeur de ](/help/sites-developing/spa-blueprint.md) .
+Si vous souhaitez mettre en oeuvre SPA dans AEM pour une structure autre que React ou Angular ou que vous souhaitez simplement découvrir en détail le fonctionnement du kit SDK d’SPA pour les , reportez-vous à la section [Blueprint SPA](/help/sites-developing/spa-blueprint.md) article.

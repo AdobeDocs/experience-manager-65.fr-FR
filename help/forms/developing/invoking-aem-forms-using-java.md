@@ -12,7 +12,7 @@ discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5398'
 ht-degree: 100%
 
@@ -223,7 +223,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
 <table>
  <thead>
   <tr>
-   <th><p>File</p> </th>
+   <th><p>Fichier</p> </th>
    <th><p>Description</p> </th>
    <th><p>Emplacement</p> </th>
   </tr>
@@ -362,7 +362,7 @@ Le tableau suivant spécifie les scénarios d’appel et répertorie les fichier
   </tr>
   <tr>
    <td><p>Service Forms</p> <p>Service d’extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
-   <td><p>SOAP</p> </td>
+   <td><p>méthode d’objet</p> </td>
    <td><p>WebLo gic</p> </td>
    <td>
     <ul>

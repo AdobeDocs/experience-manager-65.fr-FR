@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1863'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
    * Capacity Increment
    * Statement Cache Size
 
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configuration des paramètres du pool de connexions sur WebLogic pour SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
@@ -56,10 +56,10 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
 
    * Initial Capacity
    * Maximum Capacity
-   * Capacity Increment
+   * Augmentation de capacité
    * Statement Cache Size
 
-1. Cliquez sur Enregistrer, puis sur Activer les changements.
+1. Cliquez sur Save, puis sur Activate Changes.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configuration des paramètres du pool de connexions sur WebLogic pour DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
@@ -102,7 +102,7 @@ Lorsque le contenu du document est en ligne d’entrée (c’est-à-dire qu’il
 
 **Modification de la taille maximale de la ligne d’entrée**
 
-1. Dans Administration Console, cliquez sur Paramètres > Paramètres de Core System > Configurations.
+1. Dans la console d’administration, cliquez sur Paramètres > Paramètres du système principal > Configurations.
 1. Saisissez une valeur dans le champ Taille maximale par défaut de la ligne d’entrée du document, puis cliquez sur OK.
 
    >[!NOTE]

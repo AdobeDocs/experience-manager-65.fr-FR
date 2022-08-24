@@ -11,13 +11,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 100%
 
 ---
 
-# Modification du contenu de la page zéro avec Designer {#changing-page-zero-content-in-designer}
+# Modifier le contenu de la page zéro dans Designer {#changing-page-zero-content-in-designer}
 
 Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de visualisation PDF autre que celui d’Adobe, tel que la visionneuse de fichiers PDF par défaut dans [!DNL Chrome] ou [!DNL Firefox], ne peut pas lire le contenu d’un formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
 

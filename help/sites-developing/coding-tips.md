@@ -1,8 +1,8 @@
 ---
 title: Conseils pour bien coder
-seo-title: Conseils pour bien coder
+seo-title: Coding Tips
 description: Conseils relatifs au codage pour AEM
-seo-description: Conseils relatifs au codage pour AEM
+seo-description: Tips for coding for AEM
 uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '867'
 ht-degree: 88%
 
 ---
@@ -68,7 +68,7 @@ DRY indique que le même ensemble de code ne doit jamais être dupliqué. Cela s
 
 ### Éviter les règles CSS nues {#avoid-naked-css-rules}
 
-Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *.myapp-* centertextserait une règle plus spécifique, car elle spécifie  ** un texte centré dans le contexte de votre application.
+Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *.myapp-centertext* serait une règle plus spécifique, car elle spécifie centré *text* dans le contexte de votre application.
 
 ### Ne pas utiliser d’API obsolètes {#eliminate-usage-of-deprecated-apis}
 

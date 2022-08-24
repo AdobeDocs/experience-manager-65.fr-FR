@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les balises
-seo-title: Notions fondamentales sur les balises
+seo-title: Tag Essentials
 description: Présentation des balises
-seo-description: Présentation des balises
+seo-description: Tag overview
 uuid: a5d52319-f821-4608-b0ab-abc8a1374343
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,7 +12,7 @@ discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '263'
 ht-degree: 4%
 
 ---
@@ -23,15 +23,15 @@ Lorsque les composants AEM Communities sont configurés avec le balisage activé
 
 L’infrastructure sous-jacente des balises appliquées dans l’environnement de publication est la même que pour les balises appliquées au contenu dans l’environnement de création, telles que les pages et les ressources :
 
-* Voir [Administration des balises](../../help/sites-administering/tags.md) et [Balisage de contenu généré par l’utilisateur](tag-ugc.md) (UGC) pour plus d’informations sur la création et la gestion des balises.
+* Voir [Administration des balises](../../help/sites-administering/tags.md) et [Balisage du contenu généré par l’utilisateur](tag-ugc.md) (contenu généré par l’utilisateur) pour plus d’informations sur la création et la gestion des balises.
 
-* Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d’informations sur la [structure de balisage](../../help/sites-developing/framework.md) ainsi que sur l’inclusion et l’extension de balises dans les [applications personnalisées](../../help/sites-developing/building.md).
+* Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d’informations sur le [framework de balisage](../../help/sites-developing/framework.md) ainsi que l’inclusion et l’extension de balises dans [applications personnalisées](../../help/sites-developing/building.md).
 
-* Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour plus d’informations pour les auteurs sur la manière d’ajouter un composant `social tag cloud` à une page afin de mettre en surbrillance les balises appliquées au contenu créé par l’utilisateur dans l’environnement de publication.
+* Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour plus d’informations pour les auteurs sur la manière d’ajouter une `social tag cloud` à une page pour mettre en surbrillance les balises appliquées au contenu généré par l’utilisateur dans l’environnement de publication.
 
 * Voir [Balisage des ressources d’activation](tag-resources.md) pour plus d’informations sur le balisage des ressources pour les catalogues.
 
-Le balisage du contenu généré par l’utilisateur peut être activé lors de la configuration d’un [site communautaire](sites-console.md#tagging) ou de l’une des fonctionnalités suivantes :
+Le balisage du contenu généré par l’utilisateur peut être activé lors de la configuration d’un [site communautaire](sites-console.md#tagging) ou l’une des fonctionnalités suivantes :
 
 * [Blog](blog-feature.md)
 * [Calendrier](calendar.md)
@@ -74,7 +74,7 @@ Le balisage du contenu généré par l’utilisateur peut être activé lors de 
 
 * [Personnalisations côté client](client-customize.md)
 
-## Principes élémentaires côté serveur {#essentials-for-server-side}
+## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 * [API Social Tag Cloud](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
@@ -84,6 +84,6 @@ Le balisage du contenu généré par l’utilisateur peut être activé lors de 
 
 ## Recherche de balises {#tag-searching}
 
-À compter de [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1), la recherche de balises est effectuée à l’aide des [titres de balises](../../help/sites-developing/framework.md#tag-characteristics).
+À partir de [feature pack 1](deploy-communities.md#latestfeaturepack) (FP1), la recherche de balises est effectuée à l’aide de [titres de balise](../../help/sites-developing/framework.md#tag-characteristics).
 
-Avant FP1, la recherche était effectuée à l’aide des [identifiants de balise](../../help/sites-developing/framework.md#tagid).
+Avant FP1, la recherche était effectuée à l’aide de [ID de balise](../../help/sites-developing/framework.md#tagid).

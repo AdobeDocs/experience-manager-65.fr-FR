@@ -1,8 +1,8 @@
 ---
 title: Configuration de LDAP avec AEM 6
-seo-title: Configuration de LDAP avec AEM 6
+seo-title: Configuring LDAP with AEM 6
 description: Découvrez comment configurer LDAP avec AEM.
-seo-description: Découvrez comment configurer LDAP avec AEM.
+seo-description: Learn how to configure LDAP with AEM.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1661'
+source-wordcount: '1648'
 ht-degree: 67%
 
 ---
@@ -114,7 +114,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
   </tr>
   <tr>
    <td><strong>Filtre supplémentaire utilisateur</strong></td>
-   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
+   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>Chemins de noms utilisateur</strong></td>
@@ -134,7 +134,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
   </tr>
   <tr>
    <td><strong>Filtre supplémentaire de groupe</strong></td>
-   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche de groupes. Le filtre final est formaté comme suit : '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
+   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche de groupes. Le filtre final est formaté comme suit : '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>Chemins d’accès DN du groupe</strong></td>
@@ -179,7 +179,7 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
   </tr>
   <tr>
    <td><strong>Expiration de l’appartenance des utilisateurs</strong></td>
-   <td>Durée à partir de laquelle l’appartenance expire.<br /> </td>
+   <td>Heure à partir de laquelle l’appartenance expire.<br /> </td>
   </tr>
   <tr>
    <td><strong>Profondeur d'imbrication de l'appartenance utilisateur</strong></td>
@@ -218,7 +218,7 @@ Les options de configuration suivantes sont disponibles :
 
 | **Classement JAAS** | Spécification du classement (c’est-à-dire de l’ordre de tri) de cette entrée de module de connexion. Les entrées sont triées dans l’ordre décroissant (les configurations ayant une valeur de rang supérieure apparaissent en premier). |
 |---|---|
-| **Indicateur de contrôle JAAS** | Propriété spécifiant si un module de connexion est OBLIGATOIRE, OBLIGATOIRE, SUFFISANT ou FACULTATIF. Pour plus d’informations sur la signification de ces indicateurs, consultez la documentation sur la configuration JAAS . |
+| **Indicateur de contrôle JAAS** | Propriété spécifiant si un module de connexion est OBLIGATOIRE, OBLIGATOIRE, SUFFISANT ou FACULTATIF. Reportez-vous à la documentation de configuration JAAS pour plus d’informations sur la signification de ces indicateurs. |
 | **Domaine JAAS** | Nom du domaine (ou nom de l’application) sur lequel le module de connexion est enregistré. Si aucun nom de domaine n’est indiqué, le module de connexion est enregistré avec un domaine par défaut tel que configuré dans la configuration Felix JAAS. |
 | **Nom du fournisseur d’identité** | Nom du fournisseur d’identité. |
 | **Nom du gestionnaire de synchronisation** | Nom du gestionnaire de synchronisation. |
@@ -239,7 +239,7 @@ Vous pouvez configurer AEM 6 pour vous authentifier auprès de LDAP via SSL en 
 
 1. Testez la connexion au serveur LDAP.
 
-### Création de certificats SSL  {#creating-ssl-certificates}
+### Création de certificats SSL {#creating-ssl-certificates}
 
 Les certificats auto-signés peuvent être utilisés lors de la configuration d’AEM pour s’authentifier auprès d’AEM via SSL. Voici un exemple de méthode de travail utilisée pour générer des certificats à utiliser avec AEM.
 
@@ -270,7 +270,7 @@ Les certificats auto-signés peuvent être utilisés lors de la configuration d�
 
 1. Enfin, ajoutez le certificat au KeyStore Java.
 
-## Activation de la journalisation du débogage  {#enabling-debug-logging}
+## Activation de la journalisation du débogage {#enabling-debug-logging}
 
 Vous pouvez activer la journalisation du débogage pour le fournisseur d’identités LDAP et le module de connexion externe afin de résoudre les problèmes de connexion.
 

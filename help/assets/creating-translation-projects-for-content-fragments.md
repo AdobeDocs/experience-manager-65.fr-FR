@@ -1,27 +1,27 @@
 ---
 title: Création de projets de traduction pour des fragments de contenu
-seo-title: Création de projets de traduction pour des fragments de contenu
+seo-title: Creating Translation Projects for Content Fragments
 description: Apprenez à traduire des fragments de contenu.
-seo-description: Apprenez à traduire des fragments de contenu.
+seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
-feature: Fragments de contenu
+feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '975'
 ht-degree: 86%
 
 ---
 
 # Création de projets de traduction pour des fragments de contenu {#creating-translation-projects-for-content-fragments}
 
-Outre les ressources, Adobe Experience Manager (AEM) Assets prend en charge les processus de copie de langue pour les [fragments de contenu](/help/assets/content-fragments/content-fragments.md) (y compris les variations). Aucune autre optimisation n’est requise pour exécuter des processus de copie de langue sur des fragments de contenu. Dans chaque processus, le fragment de contenu entier est envoyé en traduction.
+Outre les ressources, Adobe Experience Manager (AEM) Assets prend en charge les processus de copie de langue pour [fragments de contenu](/help/assets/content-fragments/content-fragments.md) (y compris les variations). Aucune autre optimisation n’est requise pour exécuter des processus de copie de langue sur des fragments de contenu. Dans chaque processus, le fragment de contenu entier est envoyé en traduction.
 
 Les types de processus que vous pouvez exécuter sur les fragments de contenu sont exactement identiques aux types de processus que vous exécutez pour les ressources. En outre, les options disponibles dans chaque type de processus correspondent aux options disponibles sous les types de processus correspondants pour les actifs.
 
@@ -47,8 +47,8 @@ Le processus Créer et traduire comprend les options suivantes. Les étapes de p
 
 Le processus de mise à jour des copies de langue comprend les options suivantes. Les étapes de procédure associées à chaque option sont similaires aux étapes de procédure associées à l’option correspondante pour les ressources.
 
-* Créez un projet de traduction : Pour connaître les étapes de la procédure, voir [Création d’un projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project) (workflow de mise à jour).
-* Ajouter à un projet de traduction existant : Pour les étapes de la procédure, voir [Ajouter à un projet de traduction existant pour les ressources](translation-projects.md#add-to-existing-translation-project) (workflow de mise à jour).
+* Créez un projet de traduction : Pour connaître les étapes de la procédure, voir [Création d’un projet de traduction pour les ressources](translation-projects.md#create-a-new-translation-project) (processus de mise à jour).
+* Ajouter à un projet de traduction existant : Pour connaître les étapes de la procédure, voir [Ajouter à un projet de traduction existant pour les ressources](translation-projects.md#add-to-existing-translation-project) (processus de mise à jour).
 
 Vous pouvez également créer des copies de langue temporaires pour les fragments en procédant de la même manière que pour créer des copies temporaires pour les ressources. Pour plus d’informations, reportez-vous à la section [Création de copies de langue temporaires pour les ressources](translation-projects.md#creating-temporary-language-copies).
 
@@ -61,7 +61,7 @@ Si le fragment de contenu inclut une collection, les ressources de la collection
 Pour pouvoir traduire des fragments de contenu comprenant des supports variés, modifiez tout d’abord la structure de traduction par défaut afin de permettre la traduction des ressources intégrées et des collections associées à des fragments de contenu.
 
 1. Cliquez/appuyez sur le logo AEM et accédez à **[!UICONTROL Outils > Déploiement > Services Cloud]**.
-1. Recherchez **[!UICONTROL Intégration de traduction]** sous **[!UICONTROL Adobe Marketing Cloud]**, puis cliquez/appuyez sur **[!UICONTROL Afficher les configurations]**.
+1. Localiser **[!UICONTROL Intégration de traduction]** under **[!UICONTROL Adobe Marketing Cloud]**, puis cliquez/appuyez sur . **[!UICONTROL Afficher les configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
@@ -110,7 +110,7 @@ Pour pouvoir traduire des fragments de contenu comprenant des supports variés, 
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Cliquez/appuyez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure du panneau pour afficher la boîte de dialogue **[!UICONTROL Créer et traduire]**.
+1. Cliquez/appuyez sur **[!UICONTROL Créer et traduire]** dans la partie inférieure du panneau pour afficher la variable **[!UICONTROL Créer et traduire]** boîte de dialogue.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 

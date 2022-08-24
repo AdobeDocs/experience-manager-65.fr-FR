@@ -3,7 +3,8 @@ title: Fragments de contenu – considérations sur la suppression
 description: Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 feature: Content Fragments
 role: User
-source-git-commit: 94145c6428f61e31f6784a3d6ea67aa8d81cedd6
+exl-id: 6212457e-a171-4c33-8d19-54c26516e981
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 92%
@@ -23,7 +24,7 @@ En ce qui concerne les autorisations de suppression, les fragments de contenu do
 1. **Le fragment de contenu en tant qu’entité unique.**
 
    * **Cas d’utilisation** : un utilisateur qui a besoin de modifier/mettre à jour un fragment de contenu **et de supprimer un fragment entier**.
-   * **Autorisations** : l’autorisation [Supprimer](/help/sites-administering/security.md#actions) peut être [affectée via la gestion des utilisateurs et/ou des groupes](/help/sites-administering/security.md#managing-permissions).
+   * **Autorisations**[](/help/sites-administering/security.md#actions)[ : l’autorisation Supprimer peut être affectée via la gestion des utilisateurs et/ou des groupes](/help/sites-administering/security.md#managing-permissions).
 
 2. **Les multiples sous-entités qui constituent un fragment de contenu ; par exemple, les variantes, les sous-nœuds.**
 
@@ -80,10 +81,10 @@ Les conditions requises pour autoriser un utilisateur et/ou un groupe spécifiqu
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` et `jcr:removeChildNodes`, `jcr:removeNode`
 
-Ces privilèges `remove` doivent être [administrés à l’aide des listes de contrôle d’accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+Ces `remove` Les privilèges doivent être [géré à l’aide des listes de contrôle d’accès, dans CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-Les privilèges `add` et `modify` peuvent également être gérés en CRXDE Lite ou à l’aide de la console de gestion des utilisateurs.
+Le `add` et `modify` Les privilèges peuvent également être gérés dans CRXDE Lite ou à l’aide de la console User Management.
 
-Par exemple, la définition des privilèges `remove` pour un groupe `content-authors-no-delete` :
+Par exemple, la définition de la variable `remove` privilèges d’un groupe `content-authors-no-delete`:
 
 ![cf-delete-03](assets/cf-delete-03.png)

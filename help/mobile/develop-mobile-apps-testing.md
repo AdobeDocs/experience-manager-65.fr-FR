@@ -1,8 +1,8 @@
 ---
 title: Test des applications mobiles
-seo-title: Test des applications mobiles
+seo-title: Testing Mobile Apps
 description: Test des applications mobiles
-seo-description: 'null'
+seo-description: null
 uuid: 3b402d34-5cab-4280-b8b9-88ad9f8fc5e4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -12,7 +12,7 @@ discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1029'
+source-wordcount: '1025'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Compte tenu du large éventail d’appareils sur le marché et de périphériques publiés, le test de vos applications est devenu extrêmement important. Il s’agit d’une zone dans laquelle les fonctionnalités et la convivialité peuvent faire l’objet de révisions mineures sur une boutique d’applications, mais où un seul défaut peut entraîner la désinstallation de votre application. Il faut faire attention à vos plans de test et à l’assurance qualité. Le lien suivant couvre de nombreux sujets qui doivent être abordés en général, tels que l’identification de votre environnement, la définition de cas de test, les types de tests, les hypothèses, l’implication du client, etc. Il est également question des outils permettant de contribuer aux efforts de test. Les outils internes, tels que [Hobbes](/help/sites-developing/hobbes.md), peuvent vous aider à tester l’interface utilisateur web. [Tough ](/help/sites-developing/tough-day.md) Daycan peut stresser vos instances avec une charge simulée. Si votre environnement de test possède déjà une expérience avec des outils tiers, tels que Selenium, ils peuvent également être utilisés.
+Compte tenu du large éventail d’appareils sur le marché et de périphériques publiés, le test de vos applications est devenu extrêmement important. Il s’agit d’une zone dans laquelle les fonctionnalités et la convivialité peuvent faire l’objet de révisions mineures sur une boutique d’applications, mais où un seul défaut peut entraîner la désinstallation de votre application. Il faut faire attention à vos plans de test et à l’assurance qualité. Le lien suivant couvre de nombreux sujets qui doivent être abordés en général, tels que l’identification de votre environnement, la définition de cas de test, les types de tests, les hypothèses, l’implication du client, etc. Il est également question des outils permettant de contribuer aux efforts de test. Outils internes, tels que [Hobbes](/help/sites-developing/hobbes.md), peut vous aider à tester l’interface utilisateur web. [Tough Day](/help/sites-developing/tough-day.md) peut stresser vos instances avec une charge simulée. Si votre environnement de test possède déjà une expérience avec des outils tiers, tels que Selenium, ils peuvent également être utilisés.
 
 Lors du développement d’une application mobile, il existe de nombreuses nouvelles préoccupations spécifiques aux appareils qui doivent être prises en compte avec celles des tests traditionnels.
 
@@ -38,15 +38,15 @@ Lors du développement d’une application mobile, il existe de nombreuses nouve
 
 Vous devez répondre à ces questions lors de vos tests automatisés et manuels.
 
-## Tests automatisés {#automated-testing}
+## Test automatisé {#automated-testing}
 
-Un certain degré de test automatisé doit être effectué pour couvrir la variété des tailles d’écran, des contraintes de mémoire, des méthodes d’entrée et des systèmes d’exploitation. Non seulement il couvre la plupart des cas de test, mais il peut accélérer les tests de régression lorsque de nouvelles fonctionnalités ou de nouveaux appareils sont introduits. Idéalement, vos outils d’automatisation devraient réduire ou limiter la duplication des efforts. Utilisez des outils ou des structures afin que vos efforts de test s’appliquent à toutes les plateformes. Le graphique suivant illustre la structure simplifiée d’un environnement de test pour les tests de l’interface utilisateur web et les tests d’applications mobiles. Le côté gauche du graphique affiche une série de noeuds Selenium avec des navigateurs. SeleniumGrid peut mettre en place des tests d’IU web courants sur n’importe lequel de ces noeuds. Le hub Selenium peut également se connecter à Appium pour les tests d’applications multiplateformes. Seuls les simulateurs sont affichés, mais vous pouvez incorporer adb, pour Android et des utilitaires Xcode pour les appareils iOS. Des liens sont fournis ultérieurement dans ce document, où vous trouverez des détails spécifiques sur les outils mentionnés.
+Un certain degré de test automatisé doit être effectué pour couvrir la variété des tailles d’écran, des contraintes de mémoire, des méthodes d’entrée et des systèmes d’exploitation. Non seulement il couvre la plupart des cas de test, mais il peut accélérer les tests de régression lorsque de nouvelles fonctionnalités ou de nouveaux appareils sont introduits. Idéalement, vos outils d’automatisation devraient réduire ou limiter la duplication des efforts. Utilisez des outils ou des structures afin que vos efforts de test s’appliquent à toutes les plateformes. Le graphique suivant illustre la structure simplifiée d’un environnement de test pour les tests de l’interface utilisateur web et les tests d’applications mobiles. Le côté gauche du graphique affiche une série de noeuds Selenium avec des navigateurs. SeleniumGrid peut mettre en place des tests d’IU web courants sur n’importe lequel de ces noeuds. Le hub Selenium peut également se connecter à Appium pour les tests d’applications multiplateformes. Seuls les simulateurs sont affichés, mais vous pouvez incorporer des utilitaires adb, pour Android et Xcode pour les appareils iOS. Des liens sont fournis ultérieurement dans ce document, où vous trouverez des détails spécifiques sur les outils mentionnés.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
 ## Test manuel {#manual-testing}
 
-Outre les tests automatisés, votre application doit passer par un cycle de tests manuels. Les clients exécutant l’application sur un appareil réel ne peuvent pas être dupliqués par un script. Ici aussi, vous avez de nombreuses options. Vous pouvez utiliser une plateforme, telle que HockeyApp, pour définir qui a accès et recueillir des commentaires. Vous pouvez également déléguer l’ensemble du processus à un service tel que UTest, ElusiveStars ou Testin. Si vous disposez d’un groupe de testeurs internes, mais que vous ne disposez pas de variantes d’appareils, il existe des services cloud où vous pouvez effectuer des tests manuels sur leur groupe de périphériques. L&#39;un de ces services est SauceLabs. Vous pouvez également créer des applications à distance sur PhoneGap Enterprise et les installer sur des périphériques locaux sous la forme de tests d’acceptation ou de démonstration. Consultez le site Web [PhoneGap](https://phonegap.com/) pour connaître les dernières fonctionnalités et la documentation la plus récente. Quelle que soit l&#39;approche, les tests manuels devraient être effectués;
+Outre les tests automatisés, votre application doit passer par un cycle de tests manuels. Les clients exécutant l’application sur un appareil réel ne peuvent pas être dupliqués par un script. Ici aussi, vous avez de nombreuses options. Vous pouvez utiliser une plateforme, telle que HockeyApp, pour définir qui a accès et recueillir des commentaires. Vous pouvez également déléguer l’ensemble du processus à un service tel que UTest, ElusiveStars ou Testin. Si vous disposez d’un groupe de testeurs internes, mais que vous ne disposez pas de variantes d’appareils, il existe des services cloud où vous pouvez effectuer des tests manuels sur leur groupe de périphériques. L&#39;un de ces services est SauceLabs. Vous pouvez également créer des applications à distance sur PhoneGap Enterprise et les installer sur des périphériques locaux sous la forme de tests d’acceptation ou de démonstration. Voir [PhoneGap](https://phonegap.com/) site web pour connaître les dernières fonctionnalités et la documentation la plus récente. Quelle que soit l&#39;approche, les tests manuels devraient être effectués;
 
 * atteindre une cible importante de testeurs,
 * tester par rapport à un grand groupe d’appareils (idéalement des appareils réels, mais des simulateurs/émulateurs si des appareils réels ne sont pas disponibles),

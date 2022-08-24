@@ -1,8 +1,8 @@
 ---
 title: Bonnes pratiques
-seo-title: Bonnes pratiques
+seo-title: Best Practices
 description: Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs AEM
-seo-description: Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs AEM
+seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 77%
+source-wordcount: '467'
+ht-degree: 76%
 
 ---
 
@@ -62,7 +62,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Ces documents présentent les concepts et la structure de l’IU tactile.</td>
   </tr>
   <tr>
-   <td>IU tactile : Personnalisation des consoles </td>
+   <td>Interface utilisateur tactile : Personnalisation des consoles </td>
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">Personnalisation des consoles d’IU tactile</a></td>
    <td>Ce document explique comment étendre de manière optimale les consoles pour l’IU tactile.</td>
   </tr>
@@ -81,13 +81,13 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 
 ## Communautés {#communities}
 
-[AEM ](/help/communities/overview.md) Communities simplifie la création et la gestion des communautés on-premise.
+[AEM Communities](/help/communities/overview.md) simplifie la création et la gestion des communautés on-premise.
 
 Les bonnes pratiques pour AEM Communities sont présentées ici :
 
 |  |  |  |
 |---|---|---|
-| Bonnes pratiques relatives à l’utilisation du contenu généré par l’utilisateur | [Consignes de codage](/help/communities/code-guide.md) | Conseils pour le développement de code flexible et portable pour la [structure de composants sociaux](/help/communities/scf.md) (SCF). |
+| Bonnes pratiques relatives à l’utilisation du contenu généré par l’utilisateur | [Consignes de codage](/help/communities/code-guide.md) | Consignes relatives au développement de code flexible et portable destiné à [structure des composants sociaux](/help/communities/scf.md) (SCF). |
 | Exemple d’utilisation des composants Communities | [Guide de composants de communauté](/help/communities/components-guide.md) | Un outil de développement interactif. |
 
 ## Outillage/HTL {#tooling-htl}

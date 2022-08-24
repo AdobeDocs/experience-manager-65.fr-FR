@@ -1,8 +1,8 @@
 ---
 title: Modélisation de données – Modèle de David Nuescheler
-seo-title: Modélisation de données – Modèle de David Nuescheler
+seo-title: Data Modeling - David Nuescheler's Model
 description: Recommandations de David Nuescheler sur le plan de la modélisation de contenu
-seo-description: Recommandations de David Nuescheler sur le plan de la modélisation de contenu
+seo-description: David Nuescheler's content modelling recommendations
 uuid: acb27e81-9143-4e0d-a37a-ba26491a841f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1818'
 ht-degree: 89%
 
 ---
@@ -41,7 +41,7 @@ J’aimerais combler cette lacune en exprimant mon opinion personnelle sur la fa
 
 ## Sept règles simples {#seven-simple-rules}
 
-### Règle #1 : Les données d’abord, la structure ensuite. Peut-être. {#rule-data-first-structure-later-maybe}
+### Règle #1 : Les données d’abord, la structure ensuite. Normalement… {#rule-data-first-structure-later-maybe}
 
 #### Explication {#explanation-1}
 
@@ -103,7 +103,7 @@ Grâce au modèle de contenu ci-dessus, je peux facilement autoriser l’utilisa
 
 #### Explication {#explanation-3}
 
-Si vous n’utilisez pas les méthodes `clone()`, `merge()` ou `update()` dans votre application, un seul espace de travail est probablement la solution.
+Si vous n’utilisez pas `clone()`, `merge()` ou `update()` dans votre application, un seul espace de travail est probablement la solution.
 
 La « correspondance des nœuds » est un concept défini dans la spécification JCR. Il s’agit, en fait, de nœuds qui représentent le même contenu dans ce que l’on désigne comme des espaces de travail différents.
 
@@ -130,7 +130,7 @@ N’utilisez pas d’espaces de travail pour les éléments suivants :
 * Contenu distinct pour différentes audiences cibles, telles que public, privé, local, etc.
 * Boîtes de réception pour différents utilisateurs
 
-### Règle n° 4 : Méfiez-vous des SNS (Same Name Siblings)  {#rule-beware-of-same-name-siblings}
+### Règle n° 4 : Méfiez-vous des SNS (Same Name Siblings) {#rule-beware-of-same-name-siblings}
 
 #### Explication {#explanation-4}
 
@@ -156,7 +156,7 @@ au lieu de
 /content/blog[1]/post[2]
 ```
 
-### Règle n° 5 : Les références sont considérées comme dangereuses.  {#rule-references-considered-harmful}
+### Règle n° 5 : Les références sont considérées comme dangereuses. {#rule-references-considered-harmful}
 
 #### Explication {#explanation-5}
 
@@ -176,13 +176,13 @@ Je pense qu’il est des situations dans lesquelles il est impossible qu’un sy
 
 #### Explication {#explanation-6}
 
-Si un modèle de contenu expose quelque chose qui *sent* à distance comme un fichier ou un dossier que j’essaie d’utiliser (ou d’étendre à partir de) `nt:file`, `nt:folder` et `nt:resource`.
+Si un modèle de contenu expose quelque chose qui existe à distance *smells* comme un fichier ou un dossier que j’essaie d’utiliser (ou à partir duquel je tente d’étendre). `nt:file`, `nt:folder` et `nt:resource`.
 
 Avec l’expérience, j’ai constaté que de nombreuses applications génériques autorisaient implicitement une interaction avec nt:folder et nt:files, et savaient comment traiter et afficher ces événements s’ils étaient enrichis de méta-informations supplémentaires. Par exemple, une interaction directe avec des implémentations de serveurs de fichiers, comme CIFS ou WebDAV au-dessus de JCR, deviennent implicites.
 
-Je pense qu&#39;en règle générale, on pourrait utiliser ce qui suit : Si vous devez stocker le nom du fichier et le type MIME, `nt:file`/ `nt:resource` correspond très bien. Si plusieurs « fichiers » sont possibles, nt:folder constitue l’emplacement de stockage idéal.
+Je pense qu&#39;en règle générale, on pourrait utiliser ce qui suit : Si vous devez stocker le nom de fichier et le type MIME, `nt:file`/ `nt:resource` est une très bonne correspondance. Si plusieurs « fichiers » sont possibles, nt:folder constitue l’emplacement de stockage idéal.
 
-Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur », par exemple), étendez `nt:resource` et non `nt:file`. J’étend rarement nt:file et j’étend souvent `nt:resource`.
+Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur », par exemple), étendez `nt:resource` et non `nt:file`. J’étend rarement nt:file et m’étend fréquemment. `nt:resource`.
 
 #### Exemple {#example-6}
 
@@ -202,7 +202,7 @@ Bien qu’il existe certainement des scénarios dans lesquels l’utilisation d�
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### Règle n° 7 : Les ID, c’est le mal !  {#rule-ids-are-evil}
+### Règle n° 7 : Les ID, c’est le mal ! {#rule-ids-are-evil}
 
 #### Explication {#explanation-7}
 
@@ -214,7 +214,7 @@ Il est vrai que certains nœuds ont besoin d’une identification stable tout au
 
 Gardez également à l’esprit que les éléments peuvent être identifiés par un chemin d’accès et, autant il est judicieux d’utiliser des « liens symboliques » plutôt que des liens matériels dans un système de fichiers UNIX, autant l’utilisation d’un chemin d’accès semble logique dans la plupart des applications pour faire référence à un nœud cible.
 
-Plus important encore, il est **mix**:referenceable, ce qui signifie qu’il peut être appliqué à un noeud au moment où vous avez réellement besoin de le référencer.
+Plus important encore, il s’agit de **mix**:référenceable, ce qui signifie qu’il peut être appliqué à un noeud au moment où vous devez le référencer.
 
 Dès lors, ce n’est pas parce que vous aimeriez être en mesure de référencer un nœud de type « Document » que votre type de nœud « Document » doit s’étendre de manière statique depuis mix:referenceable, car il peut être ajouté de façon dynamique à n’importe quelle instance du « Document ».
 

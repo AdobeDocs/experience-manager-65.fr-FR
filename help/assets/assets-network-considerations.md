@@ -1,13 +1,13 @@
 ---
 title: Remarques et exigences relatives au réseau
-description: Discute des considérations relatives au réseau lors de la conception d’un déploiement  [!DNL Adobe Experience Manager Assets] .
+description: Décrit les considérations relatives au réseau lors de la conception d’une [!DNL Adobe Experience Manager Assets] déploiement.
 contentOwner: AG
 role: Architect, Admin
-feature: Outils de développement
+feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '992'
 ht-degree: 72%
 
 ---
@@ -20,10 +20,10 @@ Veillez à inclure les éléments suivants dans votre diagramme de réseau :
 
 * La connectivité du périphérique client (par exemple, l’ordinateur, le mobile ou la tablette) au réseau.
 * La topologie du réseau d’entreprise.
-* Lien vers Internet à partir du réseau de l’entreprise et de l’environnement [!DNL Experience Manager].
-* Topologie de l’environnement [!DNL Experience Manager].
-* Définissez les consommateurs simultanés de l’interface réseau [!DNL Experience Manager].
-* Workflows définis du déploiement [!DNL Experience Manager].
+* Liaison à Internet à partir du réseau d’entreprise et de [!DNL Experience Manager] environnement.
+* Topologie de [!DNL Experience Manager] environnement.
+* Définir les consommateurs simultanés de la variable [!DNL Experience Manager] interface réseau.
+* Les workflows définis de la [!DNL Experience Manager] déploiement.
 
 ## Connectivité de l’appareil client au réseau d’entreprise {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -31,7 +31,7 @@ Commencez par créer le diagramme de la connectivité entre les différents pér
 
 ![chlimage_1-353](assets/chlimage_1-353.png)
 
-Les périphériques client se connectent au réseau d’entreprise de différentes façons, telles que le wi-fi, Ethernet sur un commutateur partagé et le VPN. L’identification et la compréhension des goulots d’étranglement sur ce réseau sont importantes pour la [!DNL Assets] planification et la modification du réseau.
+Les périphériques client se connectent au réseau d’entreprise de différentes façons, telles que le wi-fi, Ethernet sur un commutateur partagé et le VPN. Identifier et comprendre les goulots d’étranglement sur ce réseau est important pour [!DNL Assets] la planification et la modification du réseau.
 
 En haut à gauche du diagramme, on peut voir trois périphériques partageant un point d’accès WiFi de 48 Mbps. Si tous les périphériques effectuent un chargement simultané, la bande passante du réseau wi-fi est partagée entre les périphériques. Par rapport au système dans son ensemble, un utilisateur peut rencontrer un goulot d’étranglement différent pour les trois clients sur ce canal divisé.
 
@@ -47,7 +47,7 @@ L’ordinateur présenté à droite, connecté au réseau d’entreprise via un 
 
 Le diagramme présente des vitesses de liaison plus élevées au sein du réseau d’entreprise que ce qui est généralement utilisé. Ces canaux sont des ressources partagées. Si le commutateur partagé doit gérer 50 clients, il peut s’agir d’un goulot d’étranglement. Dans le diagramme initial, seuls deux ordinateurs partagent la connexion.
 
-## Liaison à Internet à partir du réseau d’entreprise et de l’environnement [!DNL Experience Manager] {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Liaison à Internet à partir du réseau d’entreprise et [!DNL Experience Manager] environnement {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -55,7 +55,7 @@ Il est important de prendre en compte les facteurs inconnus de la connexion Inte
 
 Au niveau de la liaison du réseau d’entreprise à Internet, il peut exister d’autres services utilisant la bande passante. Il est important de connaître la quantité de bande passante pouvant être dédiée ou donnée en priorité à Assets. Par exemple, si un lien de 1 Gbit/s est déjà utilisé à 80 %, vous ne pouvez allouer qu’un maximum de 20 % de la bande passante pour [!DNL Experience Manager Assets].
 
-Les pare-feu et les proxys de l’entreprise peuvent également influencer la bande passante de différentes manières. Ce type de périphérique peut prioriser la qualité du service de la bande passante, définir la bande passante maximale par utilisateur ou les limites de débit par hôte. Il s’agit de goulets d’étranglement importants à examiner, car ils peuvent avoir un impact significatif sur l’expérience utilisateur [!DNL Assets].
+Les pare-feu et les proxys de l’entreprise peuvent également influencer la bande passante de différentes manières. Ce type de périphérique peut prioriser la qualité du service de la bande passante, définir la bande passante maximale par utilisateur ou les limites de débit par hôte. Il s’agit là de goulots d’étranglement importants à examiner, car ils peuvent avoir un impact significatif. [!DNL Assets] expérience utilisateur.
 
 Dans cet exemple, l’entreprise dispose d’une liaison de 10 Gbps. Cela doit être suffisant pour prendre en charge plusieurs clients. Par ailleurs, le pare-feu impose une limite de débit par hôte de 10 Mbps. Cette restriction risque de ralentir le trafic d’un seul hôte à 10 Mbps, même si la liaison montante à l’Internet est de 10 Gbps.
 
@@ -63,21 +63,21 @@ Il s’agit du plus petit point d’étranglement orienté client. Cependant, vo
 
 Les exemples de diagrammes vous permettent de conclure que six périphériques partagent un canal conceptuel de 10 Mbps. Selon la taille des ressources exploitées, cela peut s’avérer insuffisant pour répondre aux attentes de l’utilisateur.
 
-## Topologie de l’environnement [!DNL Experience Manager] {#topology-of-the-aem-environment}
+## Topologie de [!DNL Experience Manager] environnement {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-La conception de la topologie de l’environnement [!DNL Experience Manager] nécessite une connaissance détaillée de la configuration du système et de la manière dont le réseau est connecté dans l’environnement de l’utilisateur.
+Conception de la topologie du [!DNL Experience Manager] nécessite des connaissances détaillées sur la configuration du système et sur la manière dont le réseau est connecté dans l’environnement utilisateur.
 
 L’exemple de scénario comprend une ferme de publication avec cinq serveurs, un magasin de fichiers binaires S3 et Dynamic Media configuré.
 
-Dispatcher partage une connexion de 100 Mbit/s avec deux entités, le monde extérieur et le déploiement de [!DNL Experience Manager]. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
+Dispatcher partage une connexion de 100 Mbit/s avec deux entités, le monde extérieur et le [!DNL Experience Manager] déploiement. Pour les opérations simultanées de chargement et de téléchargement, vous devez diviser ce nombre par deux. L’espace de stockage externe joint utilise une connexion distincte.
 
-Le déploiement [!DNL Experience Manager] partage sa connexion de 1 Gbit/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
+Le [!DNL Experience Manager] Le déploiement partage sa connexion de 1 Gbit/s avec plusieurs services. Du point de vue de la topologie du réseau, cela équivaut à partager un seul canal avec plusieurs services.
 
-En examinant le réseau de l’appareil client vers le déploiement [!DNL Experience Manager], le plus petit point d’étranglement semble être la limitation de pare-feu d’entreprise de 10 Mbit. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
+Vérification du réseau depuis l’appareil client vers l’ [!DNL Experience Manager] déploiement, le plus petit goulot d’étranglement semble être le coupe-feu d’entreprise 10 Mbit. Vous pouvez utiliser ces valeurs dans le calcul de dimensionnement du [Guide du dimensionnement des ressources](assets-sizing-guide.md) pour déterminer l’expérience de l’utilisateur.
 
-## Workflows définis du déploiement [!DNL Experience Manager] {#defined-workflows-of-the-aem-deployment}
+## Les workflows définis de la [!DNL Experience Manager] déploiement {#defined-workflows-of-the-aem-deployment}
 
 En tenant compte des performances du réseau, il peut être important de prendre en considération les workflows et la publication qui auront lieu dans le système. De plus, S3 ou tout autre stockage en réseau que vous utilisez, ainsi que les requêtes E/S consomment de la bande passante du réseau. Par conséquent, même dans un réseau entièrement optimisé, la performance peut être limitée par les E/S du disque.
 

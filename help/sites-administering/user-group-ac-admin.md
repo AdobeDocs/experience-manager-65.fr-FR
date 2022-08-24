@@ -29,7 +29,7 @@ L’activation de l’accès à un référentiel CRX comprend plusieurs rubrique
 
 Les éléments de base sont les suivants :
 
-**User** AccountsCRX authentifie l’accès en identifiant et en vérifiant un utilisateur (par cette personne ou une autre application) en fonction des détails contenus dans le compte utilisateur.
+**Comptes d’utilisateur** CRX authentifie l’accès en identifiant et en vérifiant un utilisateur (par cette personne ou une autre application) en fonction des détails contenus dans le compte utilisateur.
 
 Dans CRX, chaque compte utilisateur est un nœud dans l’espace de travail. Un compte d’utilisateur CRX possède les propriétés suivantes :
 
@@ -42,7 +42,7 @@ Dans CRX, chaque compte utilisateur est un nœud dans l’espace de travail. Un 
 
     En revanche, pour simplifier la gestion, il est recommandé (dans la plupart des cas) d’affecter des droits d’accès aux comptes de groupe. L’affectation de droits d’accès à chaque utilisateur devient très rapidement difficile à gérer (à l’exception de certains utilisateurs système lorsqu’il n’y a qu’une ou deux instances).
 
-**Les comptes Group** AccountsGroup sont des collections d’utilisateurs et/ou d’autres groupes. Ils sont utilisés pour simplifier la gestion, car toute modification des droits d’accès affectés à un groupe est appliquée automatiquement à tous les utilisateurs de ce groupe. Un même utilisateur n’est pas tenu de faire partie d’un groupe, mais il appartient souvent à plusieurs.
+**Comptes de groupe** Les comptes de groupe sont des collections d’utilisateurs et/ou d’autres groupes. Ils sont utilisés pour simplifier la gestion, car toute modification des droits d’accès affectés à un groupe est appliquée automatiquement à tous les utilisateurs de ce groupe. Un même utilisateur n’est pas tenu de faire partie d’un groupe, mais il appartient souvent à plusieurs.
 
 Dans CRX, un groupe possède les propriétés suivantes :
 
@@ -52,7 +52,7 @@ Dans CRX, un groupe possède les propriétés suivantes :
 * Il est possible de hiérarchiser les groupes grâce aux relations des membres. Vous ne pouvez pas placer de groupes directement sous un autre groupe dans le référentiel.
 * Vous pouvez définir les droits d’accès pour tous les membres d’un groupe.
 
-**Access** RightsCRX utilise des droits d’accès pour contrôler l’accès à des zones spécifiques du référentiel.
+**Droits d’accès** CRX utilise les droits d’accès pour contrôler l’accès à des zones spécifiques du référentiel.
 
 Cette opération est effectuée en affectant des autorisations pour autoriser ou refuser l’accès à une ressource (nœud ou chemin d’accès) dans le référentiel. Lorsque différentes autorisations peuvent être affectées, ils doivent être évalués afin de déterminer la combinaison qui s’applique à la demande actuelle.
 
@@ -109,7 +109,6 @@ La liste des droits d’accès applicables au sujet est créée à partir :
 >* CRX ne prend en compte aucune hiérarchie d’utilisateurs lorsqu’il compile la liste.
 >* CRX n’utilise une hiérarchie des groupes que lorsque vous incluez un groupe comme membre d’un autre groupe. Il n’y a aucun héritage automatique des droits d’accès d’un groupe.
 >* L’ordre dans lequel vous spécifiez les groupes n’affecte pas les droits d’accès.
-
 >
 
 
@@ -117,7 +116,7 @@ La liste des droits d’accès applicables au sujet est créée à partir :
 
 Lorsque CRX traite la demande, il compare la demande d’accès du sujet à la liste de contrôle d’accès sur le nœud du référentiel :
 
-Ainsi, si Linda demande de mettre à jour le noeud `/features` dans la structure de référentiel suivante :
+Si Linda demande la mise à jour de la variable `/features` dans la structure de référentiel suivante :
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -136,7 +135,7 @@ Dans CRX, les droits d’accès sont évalués comme suit :
 >
 >Ce processus d’évaluation est adapté au contrôle d’accès dépendant des ressources d’une installation CRX standard.
 
-En prenant deux exemples où l’utilisateur `aUser` est membre du groupe `aGroup` :
+En prenant deux exemples où l’utilisateur `aUser` est membre du groupe `aGroup`:
 
 ```xml
    + parentNode
@@ -150,7 +149,7 @@ En prenant deux exemples où l’utilisateur `aUser` est membre du groupe `aGrou
 
 Dans le cas ci-dessus :
 
-* `aUser` n’a pas d’autorisation d’écriture sur  `grandChildNode`.
+* `aUser` n’a pas d’autorisation d’écriture sur `grandChildNode`.
 
 ```xml
    + parentNode
@@ -165,7 +164,7 @@ Dans le cas ci-dessus :
 
 Dans ce cas :
 
-* `aUser` n’a pas d’autorisation d’écriture sur  `grandChildNode`.
+* `aUser` n’a pas d’autorisation d’écriture sur `grandChildNode`.
 * Le second ACE pour `aUser` est redondant.
 
 Les droits d’accès de plusieurs entités de groupe sont évalués en fonction de leur ordre dans la hiérarchie et dans une liste de contrôle d’accès unique.
@@ -280,7 +279,6 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 >
 >* utilisateurs ;
 >* de groupes avec de nombreux membres
-
 >
 
 
@@ -376,7 +374,7 @@ La colonne **Hérité** indique l’appartenance héritée en raison de l’appa
 
 >[!NOTE]
 >
->Lorsque le rôle Propriétaire, Éditeur ou Observateur est attribué à un utilisateur sur n’importe quel dossier de ressources, un nouveau groupe est créé. Le nom du groupe est au format `mac-default-<foldername>` pour chaque dossier sur lequel les rôles sont définis.
+>Lorsque le rôle Propriétaire, Éditeur ou Observateur est attribué à un utilisateur sur n’importe quel dossier de ressources, un nouveau groupe est créé. Le nom du groupe est au format suivant : `mac-default-<foldername>` pour chaque dossier sur lequel les rôles sont définis.
 
 ### Création d’un compte de groupe {#creating-a-group-account}
 
@@ -442,7 +440,7 @@ Ou supprimez un membre existant en cliquant sur le symbole de corbeille.
 
 ## Gestion des droits d’accès {#access-right-management}
 
-Avec l’onglet **Contrôle d’accès** du CRXDE Lite, vous pouvez définir les stratégies de contrôle d’accès et attribuer les privilèges associés.
+Avec le **Contrôle d’accès** de CRXDE Lite, vous pouvez définir les stratégies de contrôle d’accès et attribuer les privilèges associés.
 
 Par exemple, pour **Chemin d’accès actuel**, sélectionnez la ressource nécessaire dans le volet de gauche, l’onglet Contrôle d’accès dans le volet inférieur droit :
 

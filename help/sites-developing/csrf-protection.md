@@ -1,8 +1,8 @@
 ---
 title: Le framework de protection CSRF
-seo-title: Le framework de protection CSRF
+seo-title: The CSRF Protection Framework
 description: Le framework utilise des jetons pour garantir que la demande du client est légitime
-seo-description: Le framework utilise des jetons pour garantir que la demande du client est légitime
+seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
 uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '282'
 ht-degree: 72%
 
 ---
@@ -35,7 +35,7 @@ Tout composant associé à la dépendance `granite.jquery` bénéficie automatiq
 
 ### Réplication de la clé de chiffrement {#replicating-crypto-keys}
 
-Pour utiliser les jetons, vous devez répliquer le binaire `/etc/keys/hmac` sur toutes les instances de votre déploiement. Un moyen pratique de copier la clé HMAC sur toutes les instances consiste à créer un module contenant la clé et à l’installer via le gestionnaire de modules sur toutes les instances.
+Pour utiliser les jetons, vous devez répliquer la variable `/etc/keys/hmac` binaire à toutes les instances de votre déploiement. Un moyen pratique de copier la clé HMAC sur toutes les instances consiste à créer un module contenant la clé et à l’installer via le gestionnaire de modules sur toutes les instances.
 
 >[!NOTE]
 >
@@ -43,6 +43,6 @@ Pour utiliser les jetons, vous devez répliquer le binaire `/etc/keys/hmac` sur 
 
 >[!NOTE]
 >
->Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter &quot;**&amp;ast;**&quot; au manifeste afin de vous assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-webapps/).
+>Si vous utilisez le cache de manifeste avec votre application web, veillez à ajouter &quot;**&amp;ast;**&quot; au manifeste afin de s’assurer que le jeton ne prend pas l’appel de génération de jeton CSRF hors ligne. Pour plus d’informations, consultez ce [lien](https://www.w3.org/TR/offline-webapps/).
 >
 >Pour plus d’informations sur les attaques CSRF et les moyens de s’en protéger, consultez la page [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).

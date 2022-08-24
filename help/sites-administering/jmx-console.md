@@ -1,8 +1,8 @@
 ---
 title: Contrôle des ressources de serveur à l’aide de la console JMX
-seo-title: Contrôle des ressources de serveur à l’aide de la console JMX
+seo-title: Monitoring Server Resources Using the JMX Console
 description: Découvrez comment surveiller les ressources du serveur par le biais de la console JMX.
-seo-description: Découvrez comment surveiller les ressources du serveur par le biais de la console JMX.
+seo-description: Learn how to monitor server resources using the JMX console.
 uuid: 0a28aafe-61b2-472b-8f8f-2cd6540cbfee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '4974'
+source-wordcount: '4957'
 ht-degree: 69%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 69%
 
 La console JMX permet de surveiller et de gérer des services sur le serveur CRX. Les sections suivantes résument les attributs et les opérations exposés par le biais de la structure JMX.
 
-Pour plus d’informations sur l’utilisation des commandes de la console, voir [Utilisation de la console JMX](#using-the-jmx-console).  Pour plus d’informations sur JMX, voir la page [Technologie Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) du site Web d’Oracle.
+Pour plus d’informations sur l’utilisation des commandes de la console, voir [Utilisation de la console JMX](#using-the-jmx-console).  Pour plus d’informations sur JMX, voir [Technologie Java Management Extensions (JMX)](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) sur le site web de l’Oracle.
 
 Pour plus d’informations sur la création de beans gérés (MBeans) pour gérer ces services à l’aide de la console JMX, voir [Intégration des services à la console JMX](/help/sites-developing/jmx-integration.md) (en anglais).
 
@@ -39,17 +39,17 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 ### Opérations {#operations}
 
-**** listRunningWorkflowsPerModelRépertorie le nombre d’instances de workflow en cours d’exécution pour chaque modèle de workflow.
+**listRunningWorkflowsPerModel** Répertorie le nombre d’instances de workflow en cours d’exécution pour chaque modèle de workflow.
 
 * Arguments : aucun
 * Valeur renvoyée : données présentées sous forme de tableau, qui contient les colonnes Nombre et ID de modèle.
 
-**** listCompletedWorkflowsPerModelRépertorie le nombre d’instances de workflow terminées pour chaque modèle de workflow.
+**listCompletedWorkflowsPerModel** Répertorie le nombre d’instances de workflow terminées pour chaque modèle de workflow.
 
 * Arguments : aucun
 * Valeur renvoyée : données présentées sous forme de tableau, qui contient les colonnes Nombre et ID de modèle.
 
-**** returnWorkflowQueueInfoInformations sur les éléments de workflow qui ont été traités et qui sont placés en file d’attente pour traitement.
+**returnWorkflowQueueInfo** Répertorie les informations sur les éléments de workflow qui ont été traités et qui sont placés en file d’attente pour traitement.
 
 * Arguments : aucun
 * Valeur renvoyée : données présentées sous forme de tableau, qui contient les colonnes suivantes :
@@ -65,7 +65,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Tâches traitées
    * Tâches en file d’attente
 
-**** returnWorkflowJobTopicInfoListes des informations de traitement pour les tâches de workflow, organisées par rubrique.
+**returnWorkflowJobTopicInfo** Répertorie les informations de traitement des tâches de workflow, organisées par rubrique.
 
 * Arguments : aucun
 * Valeur renvoyée : données présentées sous forme de tableau, qui contient les colonnes suivantes :
@@ -78,7 +78,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Tâches terminées
    * Tâches traitées
 
-**** returnFailedWorkflowCountIndique le nombre d’instances de workflow qui ont échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou extraire les informations pour tous les modèles de workflow.
+**returnFailedWorkflowCount** Affiche le nombre d’instances de workflow qui ont échoué. Vous pouvez spécifier un modèle de workflow pour interroger ou extraire les informations pour tous les modèles de workflow.
 
 * Arguments :
 
@@ -88,12 +88,12 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Valeur renvoyée : nombre d’instances de workflow ayant échoué.
 
-**** returnFailedWorkflowCountPerModelIndique le nombre d’instances de workflow ayant échoué pour chaque modèle de workflow.
+**returnFailedWorkflowCountPerModel** Affiche le nombre d’instances de workflow qui ont échoué pour chaque modèle de workflow.
 
 * Arguments : aucun.
 * Valeur renvoyée : données présentées sous forme de tableau, qui contient les colonnes Nombre et ID de modèle.
 
-**** terminer les instances de workflow FailedInstancesTerminate qui ont échoué. Vous pouvez interrompre toutes les instances ayant échoué ou uniquement les instances ayant échoué pour un modèle spécifique. Vous avez la possibilité de redémarrer les instances après les avoir interrompues. Vous pouvez également tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**lastFailedInstances** Arrêtez les instances de workflow qui ont échoué. Vous pouvez interrompre toutes les instances ayant échoué ou uniquement les instances ayant échoué pour un modèle spécifique. Vous avez la possibilité de redémarrer les instances après les avoir interrompues. Vous pouvez également tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -112,7 +112,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Commentaire de début
    * Titre du workflow
 
-**** retryFailedWorkItemsTente d’exécuter des étapes d’élément de travail qui ont échoué. Vous pouvez réessayer toutes les tâches ayant échoué ou uniquement les tâches ayant échoué pour un modèle de workflow spécifique. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**retryFailedWorkItems** Tente d’exécuter les étapes d’une tâche qui ont échoué. Vous pouvez réessayer toutes les tâches ayant échoué ou uniquement les tâches ayant échoué pour un modèle de workflow spécifique. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -130,7 +130,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Commentaire de début
    * Titre du workflow
 
-**** PurgeActiveSupprime les principales instances de workflow d’une page spécifique. Vous pouvez purger des instances actives pour tous les modèles ou pour un modèle spécifique seulement. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**PurgeActive** Supprime les principales instances de workflow d’une page spécifique. Vous pouvez purger des instances actives pour tous les modèles ou pour un modèle spécifique seulement. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -149,7 +149,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
    * Commentaire de début
    * Titre du workflow
 
-**** countStaleWorkflowsRenvoie le nombre d’instances de workflow obsolètes. Vous pouvez extraire le nombre d’instances obsolètes pour tous les modèles de workflows ou pour un modèle spécifique.
+**countStaleWorkflows** Renvoie le nombre d’instances de workflow obsolètes. Vous pouvez extraire le nombre d’instances obsolètes pour tous les modèles de workflows ou pour un modèle spécifique.
 
 * Arguments :
 
@@ -159,7 +159,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Valeur renvoyée : nombre d’instances de workflows obsolètes.
 
-**** restartStaleWorkflowsRedémarre les instances de workflow obsolètes. Vous pouvez redémarrer toutes les instances obsolètes ou seulement les instances obsolètes pour un modèle spécifique. Vous pouvez également tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**restartStaleWorkflows** Redémarre les instances de workflow obsolètes. Vous pouvez redémarrer toutes les instances obsolètes ou seulement les instances obsolètes pour un modèle spécifique. Vous pouvez également tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -170,12 +170,12 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Valeur renvoyée : une liste d’instances de workflows redémarrées.
 
-**** fetchModelListRépertorie tous les modèles de workflow.
+**fetchModelList** Répertorie tous les modèles de workflow.
 
 * Arguments : aucun
 * Valeur renvoyée : données identifiant les modèles de workflows, présentées sous forme de tableau, qui contient les colonnes ID de modèle et Nom du modèle.
 
-**** countRunningWorkflowsRenvoie le nombre d’instances de workflow en cours d’exécution. Vous pouvez extraire le nombre d’instances en cours d’exécution pour tous les modèles de workflows ou pour un modèle spécifique.
+**countRunningWorkflows** Renvoie le nombre d’instances de workflow en cours d’exécution. Vous pouvez extraire le nombre d’instances en cours d’exécution pour tous les modèles de workflows ou pour un modèle spécifique.
 
 * Arguments :
 
@@ -185,7 +185,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Valeur renvoyée : nombre d’instances de workflows exécutées.
 
-**** countCompletedWorkflowsRenvoie le nombre d’instances de workflow terminées. Vous pouvez extraire le nombre d’instances terminées pour tous les modèles de workflows ou pour un modèle spécifique.
+**countCompletedWorkflows** Renvoie le nombre d’instances de workflow terminées. Vous pouvez extraire le nombre d’instances terminées pour tous les modèles de workflows ou pour un modèle spécifique.
 
 * Arguments :
 
@@ -195,7 +195,7 @@ Opérations d’administration des instances de workflow en cours d’exécution
 
 * Valeur renvoyée : nombre d’instances de workflows terminées.
 
-**** purgeCompletedSupprime du référentiel les enregistrements des workflows terminés d’une page spécifique. Utilisez régulièrement cette opération pour réduire la taille du référentiel lorsque vous utilisez intensivement des workflows. Vous pouvez purger les instances terminées pour tous les modèles ou pour un modèle spécifique seulement. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
+**purgeCompleted** Supprime du référentiel les enregistrements des workflows terminés d’une page spécifique. Utilisez régulièrement cette opération pour réduire la taille du référentiel lorsque vous utilisez intensivement des workflows. Vous pouvez purger les instances terminées pour tous les modèles ou pour un modèle spécifique seulement. Vous avez la possibilité de tester l’opération pour afficher les résultats sans effectuer réellement l’opération.
 
 * Arguments :
 
@@ -223,23 +223,23 @@ Informations sur le référentiel CRX
 
 ### Attributs {#attributes}
 
-**** NomNom de l’implémentation du référentiel JCR. Lecture seule.
+**Nom** Nom de l’implémentation du référentiel JCR. Lecture seule.
 
-**** VersionVersion de mise en oeuvre du référentiel. Lecture seule.
+**Version** Version de mise en oeuvre du référentiel. Lecture seule.
 
-**** HomeDirRépertoire dans lequel se trouve le référentiel. L’emplacement par défaut est &lt;QuickStart_Jar_Location>/crx-quickstart/repository. Lecture seule.
+**HomeDir** Répertoire dans lequel se trouve le référentiel. L’emplacement par défaut est &lt;QuickStart_Jar_Location>/crx-quickstart/repository. Lecture seule.
 
-**** CustomerNameNom du client auquel la licence logicielle est émise. Lecture seule.
+**CustomerName** Nom du client auquel la licence logicielle est émise. Lecture seule.
 
-**** LicenseKeyClé de licence unique pour cette installation du référentiel. Lecture seule.
+**LicenseKey** Clé de licence unique pour cette installation du référentiel. Lecture seule.
 
-**** AvailableDiskSpace Espace disque disponible pour cette instance du référentiel, en Mo. Lecture seule.
+**AvailableDiskSpace** Espace disque disponible pour cette instance du référentiel, en Mo. Lecture seule.
 
-**** MaximumNumberOfOpenFilesNombre de fichiers pouvant être ouverts simultanément. Lecture seule.
+**MaximumNumberOfOpenFiles** Nombre de fichiers pouvant être ouverts simultanément. Lecture seule.
 
-**** SessionTrackerValeur de la variable système crx.debug.sessions. La valeur true indique une session de débogage. false indique une session normale. Lecture/écriture.
+**SessionTracker** La valeur de la variable système crx.debug.sessions . La valeur true indique une session de débogage. false indique une session normale. Lecture/écriture.
 
-**** DescripteursEnsemble de paires clé-valeur qui représentent les propriétés du référentiel. Toutes les propriétés sont en lecture seule.
+**Descripteurs** Ensemble de paires clé-valeur qui représentent les propriétés du référentiel. Toutes les propriétés sont en lecture seule.
 
 <table>
  <tbody>
@@ -489,21 +489,21 @@ Informations sur le référentiel CRX
  </tbody>
 </table>
 
-**** WorkspaceNamesLes noms des espaces de travail dans le référentiel. Lecture seule.
+**WorkspaceNames** Les noms des espaces de travail dans le référentiel. Lecture seule.
 
-**** DataStoreGarbageCollectionDelayDélai, en millisecondes, pendant lequel le nettoyage de la mémoire est mis en veille après avoir analysé chaque dixième noeud. Lecture/écriture.
+**DataStoreGarbageCollectionDelay** Délai en millisecondes pendant lequel le nettoyage de la mémoire est endormi après analyse de chaque dixième noeud. Lecture/écriture.
 
-**** BackupDelayDélai, en millisecondes, pendant lequel le processus de sauvegarde est en veille entre chaque étape de la sauvegarde. Lecture/écriture.
+**BackupDelay** Délai, en millisecondes, pendant lequel le processus de sauvegarde est mis en veille entre chaque étape de la sauvegarde. Lecture/écriture.
 
-**** BackupInProgressUne valeur true indique qu’un processus de sauvegarde est en cours d’exécution. Lecture seule.
+**BackupInProgress** La valeur true indique qu’un processus de sauvegarde est en cours d’exécution. Lecture seule.
 
-**** BackupProgressPour la sauvegarde actuelle, le pourcentage de tous les fichiers qui ont été sauvegardés. Lecture seule.
+**BackupProgress** Pour la sauvegarde actuelle, pourcentage de tous les fichiers qui ont été sauvegardés. Lecture seule.
 
-**** CurrentBackupTargetPour la sauvegarde actuelle, le fichier ZIP dans lequel les fichiers de sauvegarde sont stockés. Lorsqu’une sauvegarde n’est pas en cours, aucune valeur n’apparaît. Lecture seule.
+**CurrentBackupTarget** Pour la sauvegarde actuelle, fichier ZIP dans lequel les fichiers de sauvegarde sont stockés. Lorsqu’une sauvegarde n’est pas en cours, aucune valeur n’apparaît. Lecture seule.
 
-**** BackupWasSuccessUne valeur true indique qu’aucune erreur ne s’est produite pendant la sauvegarde actuelle ou qu’aucune sauvegarde n’est en cours. La valeur false indique qu’une erreur s’est produite lors de la sauvegarde actuelle. Lecture seule.
+**BackupWasSuccess** La valeur true indique qu’aucune erreur ne s’est produite pendant la sauvegarde actuelle ou qu’aucune sauvegarde n’est en cours. La valeur false indique qu’une erreur s’est produite lors de la sauvegarde actuelle. Lecture seule.
 
-**** BackupResultÉtat de la sauvegarde actuelle. Les valeurs possibles sont les suivantes :
+**BackupResult** État de la sauvegarde actuelle. Les valeurs possibles sont les suivantes :
 
 * Sauvegarde en cours : une sauvegarde est en cours d’exécution.
 * Sauvegarde annulée : la sauvegarde a été annulée.
@@ -513,23 +513,23 @@ Informations sur le référentiel CRX
 
 Lecture seule.
 
-**** TarOptimizationRunningSinceL’heure à laquelle le processus actuel d’optimisation des fichiers TAR a commencé. Lecture seule.
+**TarOptimizationRunningSince** Heure à laquelle le processus d’optimisation du fichier TAR actuel a commencé. Lecture seule.
 
-**** TarOptimizationDelayDélai, en millisecondes, pendant lequel le processus d’optimisation TAR dort entre chaque étape du processus. Lecture/écriture.
+**TarOptimizationDelay** Délai, en millisecondes, pendant lequel le processus d’optimisation TAR est mis en attente entre chaque étape du processus. Lecture/écriture.
 
-**** ClusterPropertiesEnsemble de paires clé-valeur qui représentent les propriétés et les valeurs du cluster. Chaque ligne du tableau représente une propriété du cluster. Lecture seule.
+**ClusterProperties** Ensemble de paires clé-valeur qui représentent les propriétés et les valeurs du cluster. Chaque ligne du tableau représente une propriété du cluster. Lecture seule.
 
-**** ClusterNodes : membres de la grappe de référentiel.
+**ClusterNodes** Les membres de la grappe de référentiel.
 
-**** ClusterIdIdentifiant de cette grappe de référentiel. Lecture seule.
+**ClusterId** L’identifiant de cette grappe de référentiel. Lecture seule.
 
-**** ClusterMasterIdIdentifiant du noeud maître de cette grappe de référentiel. Lecture seule.
+**ClusterMasterId** Identifiant du noeud maître de cette grappe de référentiel. Lecture seule.
 
-**** ClusterNodeIdIdentifiant de ce noeud de la grappe de référentiel. Lecture seule.
+**ClusterNodeId** Identifiant de ce noeud de la grappe de référentiel. Lecture seule.
 
 ### Opérations {#operations-1}
 
-**** createWorkspaceCrée un espace de travail dans ce référentiel.
+**createWorkspace** Crée un espace de travail dans ce référentiel.
 
 * Arguments :
 
@@ -537,7 +537,7 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**** runDataStoreGarbageCollectionExécute le nettoyage de la mémoire sur les noeuds du référentiel.
+**runDataStoreGarbageCollection** Exécute le nettoyage de la mémoire sur les noeuds du référentiel.
 
 * Arguments :
 
@@ -545,51 +545,51 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**** stopDataStoreGarbageCollectionArrêt d’un nettoyage de la mémoire d’entrepôt de données en cours d’exécution.
+**stopDataStoreGarbageCollection** Arrête un nettoyage de la mémoire d’entrepôt de données en cours d’exécution.
 
 * Arguments : aucun
 * Valeur renvoyée : représentation de l’état actuel, sous forme de chaîne
 
-**** startBackupSauvegarde les données du référentiel dans un fichier ZIP.
+**startBackup** Sauvegarde les données du référentiel dans un fichier ZIP.
 
 * Arguments :
 
-   * `target`: (Facultatif) Une  `String` valeur qui représente le nom du fichier ZIP ou du répertoire dans lequel archiver les données du référentiel. Pour utiliser un fichier ZIP, incluez l’extension du nom de fichier ZIP. Pour utiliser un répertoire, n’incluez pas d’extension de nom de fichier.
+   * `target`: (Facultatif) A `String` qui représente le nom du fichier ZIP ou du répertoire dans lequel archiver les données du référentiel. Pour utiliser un fichier ZIP, incluez l’extension du nom de fichier ZIP. Pour utiliser un répertoire, n’incluez pas d’extension de nom de fichier.
 
       Pour effectuer une sauvegarde incrémentielle, spécifiez le répertoire qui a déjà été utilisé pour la sauvegarde.
 
         Vous pouvez spécifier un chemin d’accès absolu ou relatif. Les chemins d’accès relatifs sont relatifs par rapport au parent du répertoire crx-quickstart.
 
-      Lorsque vous ne spécifiez aucune valeur, la valeur par défaut `backup-currentdate.zip` est utilisée, où `currentdate` est au format `yyyyMMdd-HHmm`.
+      Lorsque vous n’indiquez aucune valeur, la valeur par défaut de `backup-currentdate.zip` est utilisé, où `currentdate` est au format `yyyyMMdd-HHmm`.
 
 * Valeur renvoyée : aucune
 
-**** cancelBackupArrête le processus de sauvegarde actuel et supprime l’archive temporaire créée pour l’archivage des données.
+**cancelBackup** Arrête le processus de sauvegarde actuel et supprime l’archive temporaire créée par le processus pour l’archivage des données.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** blockRepositoryWritesBlocks modifie les données du référentiel. Tous les programmes d’écoute de la sauvegarde du référentiel sont informés du blocage.
+**blockRepositoryWrites** bloque les modifications apportées aux données du référentiel. Tous les programmes d’écoute de la sauvegarde du référentiel sont informés du blocage.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** unblockRepositoryWritesSupprime le bloc du référentiel. Tous les programmes d’écoute de la sauvegarde du référentiel sont informés de la levée du blocage.
+**unblockRepositoryWrites** Supprime le bloc du référentiel. Tous les programmes d’écoute de la sauvegarde du référentiel sont informés de la levée du blocage.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** startTarOptimizationDémarre le processus d’optimisation du fichier TAR à l’aide de la valeur par défaut pour tarOptimizationDelay.
+**startTarOptimization** Démarre le processus d’optimisation du fichier TAR à l’aide de la valeur par défaut pour tarOptimizationDelay.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** stopTarOptimizationStops Optimisation des fichiers TAR.
+**stopTarOptimization** Arrête l’optimisation du fichier TAR.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** tarIndexMergeFusionne les fichiers d’index supérieurs de tous les ensembles TAR. Les fichiers d’index principaux sont des fichiers avec différentes versions majeures. Par exemple, les fichiers suivants sont fusionnés dans le fichier index_3_1.tar : index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.tar et index_3_0.tar sont supprimés).
+**tarIndexMerge** Fusionne les fichiers d’index supérieurs de tous les ensembles TAR. Les fichiers d’index principaux sont des fichiers avec différentes versions majeures. Par exemple, les fichiers suivants sont fusionnés dans le fichier index_3_1.tar : index_1_1.tar, index_2_0.tar, index_3_0.tar. Les fichiers fusionnés sont supprimés (dans l’exemple précédent, index_1_1.tar, index_2_0.tar et index_3_0.tar sont supprimés).
 
 * Arguments :
 
@@ -597,12 +597,12 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**** getClusterMasterDéfinit ce noeud de référentiel en tant que noeud maître de la grappe. S’il n’est pas déjà le nœud principal, cette commande arrête le programme d’écoute de l’instance principale actuelle et démarre un programme d’écoute sur le nœud actuel. Ce noeud est ensuite défini comme noeud maître et redémarre, ce qui entraîne tous les autres noeuds de la grappe (c’est-à-dire ceux qui sont contrôlés par le maître) à se connecter à cette instance.
+**getClusterMaster** Définit ce noeud de référentiel comme noeud maître de la grappe. S’il n’est pas déjà le nœud principal, cette commande arrête le programme d’écoute de l’instance principale actuelle et démarre un programme d’écoute sur le nœud actuel. Ce noeud est ensuite défini comme noeud maître et redémarre, ce qui entraîne tous les autres noeuds de la grappe (c’est-à-dire ceux qui sont contrôlés par le maître) à se connecter à cette instance.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** joinClusterAjoute ce référentiel à une grappe en tant que noeud contrôlé par le maître de grappe. Vous devez fournir un nom d’utilisateur et un mot de passe pour l’authentification. La connexion utilise l’authentification de base. Les informations de connexion de sécurité sont codées en base 64 avant d’être envoyées au serveur.
+**joinCluster** Ajoute ce référentiel à une grappe en tant que noeud contrôlé par le maître de grappe. Vous devez fournir un nom d’utilisateur et un mot de passe pour l’authentification. La connexion utilise l’authentification de base. Les informations de connexion de sécurité sont codées en base 64 avant d’être envoyées au serveur.
 
 * Arguments :
 
@@ -612,9 +612,9 @@ Lecture seule.
 
 * Valeur renvoyée : aucune
 
-**** traversalCheckTraverses et, éventuellement, corrige les incohérences dans une sous-arborescence commençant à un noeud spécifique. Cet aspect est abordé en détail dans la documentation sur les gestionnaires de persistance.
+**traversalCheck** Parcourt et corrige éventuellement les incohérences dans une sous-arborescence commençant à un noeud spécifique. Cet aspect est abordé en détail dans la documentation sur les gestionnaires de persistance.
 
-**** consistencyCheckChecks et, éventuellement, corrige la cohérence dans la banque de données. Cet aspect est abordé en détail dans la documentation sur l’entrepôt de données.
+**consistencyCheck** Vérifie et corrige éventuellement la cohérence dans l’entrepôt de données. Cet aspect est abordé en détail dans la documentation sur l’entrepôt de données.
 
 ## Statistiques du référentiel (TimeSeries) {#repository-statistics-timeseries}
 
@@ -622,7 +622,7 @@ Valeur du champ TimeSeries pour chaque type de statistiques défini par `org.apa
 
 * Domaine: `com.adobe.granite`
 * Type : `TimeSeries`
-* Nom : Une des valeurs suivantes de la classe `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum :
+* Nom : L’une des valeurs suivantes de la variable `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Classe Enum :
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -665,22 +665,22 @@ Informations statistiques sur les requêtes dans le référentiel.
 
 ### Attributs {#attributes-2}
 
-**** SlowQueriesInformations sur les requêtes de référentiel qui ont pris le plus de temps à se terminer. Lecture seule.
+**SlowQueries** Informations sur les requêtes de référentiel qui ont pris le plus de temps à se terminer. Lecture seule.
 
-**** SlowQueriesQueueSizeNombre maximal de requêtes à inclure dans la liste SlowQueries. Lecture-écriture.
+**SlowQueriesQueueSize** Nombre maximal de requêtes à inclure dans la liste SlowQueries. Lecture-écriture.
 
-**** PopularQueriesInformations sur les requêtes de référentiel qui se sont le plus produites. Lecture seule.
+**PopularQueries** Informations sur les requêtes de référentiel qui se sont le plus produites. Lecture seule.
 
-**** PopularQueriesQueueSizeNombre maximal de requêtes dans la liste PopularQueries. Lecture-écriture.
+**PopularQueriesQueueSize** Nombre maximal de requêtes dans la liste PopularQueries. Lecture-écriture.
 
 ### Opérations {#operations-2}
 
-**** clearSlowQueriesQueueSupprime toutes les requêtes de la liste SlowQueries.
+**clearSlowQueriesQueue** Supprime toutes les requêtes de la liste SlowQueries.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** clearPopularQueriesQueueSupprime toutes les requêtes de la liste PopularQueries.
+**clearPopularQueriesQueue** Supprime toutes les requêtes de la liste PopularQueries .
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
@@ -691,57 +691,57 @@ Surveillez les services pour chaque agent de réplication. Lorsque vous créez u
 
 * **Domaine :** com.adobe.granite.replication
 * **Type :** agent
-* **Nom :** aucune valeur
-* **Propriétés :** {id=&quot;*Name*&quot;}, où  ** Name est la valeur de la propriété de nom de l’agent.
+* **Nom :** pas de valeur
+* **Propriétés :** {id=&quot;*Nom*&quot;}, où *Nom* est la valeur de la propriété Nom de l’agent.
 
 ### Attributs {#attributes-3}
 
-**** IdUne valeur String qui représente l’identifiant de la configuration de l’agent de réplication. Plusieurs agents peuvent utiliser la même configuration. Lecture seule.
+**Id** Une valeur String qui représente l’identifiant de la configuration de l’agent de réplication. Plusieurs agents peuvent utiliser la même configuration. Lecture seule.
 
-**** ValidUne valeur booléenne qui indique si l’agent est configuré correctement :
+**Valide** Une valeur boolean qui indique si l’agent est configuré correctement :
 
 * `true`: Configuration valide.
 * `false` : La configuration contient des erreurs.
 
 Lecture seule.
 
-**** EnabledUne valeur booléenne qui indique si l’agent est activé :
+**Activé** Une valeur boolean qui indique si l’agent est activé :
 
 * `true`: Activé.
 * `false`: Désactivé.
 
-**** QueueBlockedValeur booléenne qui indique si la file d’attente existe et si elle est bloquée :
+**QueueBlocked** Une valeur boolean qui indique si la file d’attente existe et si elle est bloquée :
 
 * `true`: Bloquée. Une nouvelle tentative automatique est en attente.
 * `false` : non bloquée ou inexistante.
 
 Lecture seule.
 
-**** QueuePausedValeur booléenne qui indique si la file d’attente de travaux est mise en pause :
+**QueuePaused** Une valeur boolean qui indique si la file d’attente de la tâche est suspendue :
 
 * `true`: En pause (suspendu)
 * `false` : non suspendue ou inexistante.
 
 Lecture-écriture.
 
-**** QueueNumEntriesValeur int qui représente le nombre de tâches dans la file d’attente de l’agent. Lecture seule.
+**QueueNumEntries** Une valeur int qui représente le nombre de tâches dans la file d’attente de l’agent. Lecture seule.
 
-**** QueueStatusTimeUne valeur Date qui indique l’heure sur le serveur à laquelle les valeurs d’état affichées ont été obtenues. La valeur correspond au délai de chargement de la page. Lecture seule.
+**QueueStatusTime** Une valeur Date qui indique l’heure à laquelle les valeurs d’état affichées ont été obtenues sur le serveur. La valeur correspond au délai de chargement de la page. Lecture seule.
 
-**** QueueNextRetryTimePour les files d’attente bloquées, une valeur Date qui indique le moment où la prochaine reprise automatique se produit. Lorsque aucun délai ne s’affiche, la file d’attente n’est pas bloquée. Lecture seule.
+**QueueNextRetryTime** Pour les files d’attente bloquées, une valeur Date indiquant le moment où la prochaine reprise automatique se produit. Lorsque aucun délai ne s’affiche, la file d’attente n’est pas bloquée. Lecture seule.
 
-**** QueueProcessingSinceUne valeur Date indiquant quand le traitement a commencé pour la tâche en cours. Lorsque aucun délai ne s’affiche, la file d’attente est bloquée ou inactive. Lecture seule.
+**QueueProcessingSince** Une valeur Date qui indique quand le traitement a commencé pour la tâche en cours. Lorsque aucun délai ne s’affiche, la file d’attente est bloquée ou inactive. Lecture seule.
 
-**** QueueLastProcessTimeUne valeur Date indiquant le moment où la tâche précédente a été terminée. Lecture seule.
+**QueueLastProcessTime** Une valeur Date qui indique quand la tâche précédente a été terminée. Lecture seule.
 
 ### Opérations {#operations-3}
 
-**** queueForceRetryPour les files d’attente bloquées, envoie la commande retry à la file d’attente.
+**queueForceRetry** Pour les files d’attente bloquées, envoie la commande retry à la file d’attente.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** queueClearSupprime toutes les tâches de la file d’attente.
+**queueClear** Supprime toutes les tâches de la file d’attente.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
@@ -756,35 +756,35 @@ Fournit des statistiques sur les demandes HTTP afin de pouvoir surveiller les p
 
 ### Attributs {#attributes-4}
 
-**** RequestsCountNombre de demandes qui se sont produites depuis la dernière réinitialisation des statistiques.
+**RequestsCount** Nombre de demandes qui se sont produites depuis la dernière réinitialisation des statistiques.
 
-**** MinRequestDurationMsecDélai le plus court (en millisecondes) nécessaire au traitement d’une demande depuis la dernière réinitialisation des statistiques.
+**MinRequestDurationMsec** Délai le plus court (en millisecondes) nécessaire au traitement d’une demande depuis la dernière réinitialisation des statistiques.
 
-**** MaxRequestDuratioMsecLa durée la plus longue (en millisecondes) nécessaire au traitement d’une demande depuis la dernière réinitialisation des statistiques.
+**MaxRequestDuratioMsec** Durée la plus longue (en millisecondes) nécessaire au traitement d’une demande depuis la dernière réinitialisation des statistiques.
 
-**** StandardDeviationDurationMsecÉcart type du temps nécessaire au traitement des demandes. L’écart-type est calculé à l’aide de toutes les demandes depuis que les statistiques ont été réinitialisées pour la dernière fois.
+**StandardDeviationDurationMsec** Écart type du temps nécessaire au traitement des requêtes. L’écart-type est calculé à l’aide de toutes les demandes depuis que les statistiques ont été réinitialisées pour la dernière fois.
 
-**** MeanRequestDurationMsecDurée moyenne requise pour traiter une requête. La moyenne est calculée à l’aide de toutes les demandes depuis que les statistiques ont été réinitialisées pour la dernière fois.
+**MeanRequestDurationMsec** Durée moyenne requise pour le traitement d’une requête. La moyenne est calculée à l’aide de toutes les demandes depuis que les statistiques ont été réinitialisées pour la dernière fois.
 
 ### Opérations {#operations-4}
 
-**** resetStatisticsDéfinit toutes les statistiques sur zéro. Réinitialisez les statistiques lorsque vous devez analyser les performances de traitement des demandes pendant une période spécifique.
+**resetStatistics** Définit toutes les statistiques sur zéro. Réinitialisez les statistiques lorsque vous devez analyser les performances de traitement des demandes pendant une période spécifique.
 
 * Arguments : aucun
 * Valeur renvoyée : aucune
 
-**** idReprésentation sous forme de chaîne de l’ID de module.
+**id** Représentation sous forme de chaîne de l’ID de module.
 
-**** installedUne valeur booléenne qui indique si le package est installé :
+**installé** Une valeur boolean qui indique si le package est installé :
 
 * `true`: Installé.
 * `false`: Non installé.
 
-**** installedByIdentifiant de l’utilisateur qui a installé le package pour la dernière fois.
+**installedBy** L’identifiant de l’utilisateur qui a installé le package pour la dernière fois.
 
-**** installedDateDateDate à laquelle le package a été installé pour la dernière fois.
+**installedDate** Date à laquelle le package a été installé pour la dernière fois.
 
-**** sizeUne valeur long qui contient la taille du package en octets.
+**size** Une valeur long qui contient la taille du module en octets.
 
 
 ## Lanceur de Quickstart {#quickstart-launcher}
@@ -802,7 +802,7 @@ Affiche un message dans la fenêtre QuickStart.
 
 Arguments :
 
-* p1 : Valeur `String` qui représente le message à afficher.
+* p1 : A `String` qui représente le message à afficher.
 * Valeur renvoyée : aucune
 
 **startupFinished**
@@ -820,7 +820,7 @@ Définit la valeur de fin du processus de démarrage du serveur. La barre de pro
    * p1 : valeur flottante représentant la quantité du processus de démarrage terminée, sous forme de fraction. La valeur doit être comprise entre zéro et un. Par exemple, 0,3 indique que le processus est terminé à 30 %.
 * Valeur renvoyée : aucune.
 
-## Services tiers  {#third-party-services}
+## Services tiers {#third-party-services}
 
 Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui exposent des attributs et des opérations dans la console JMX. Le tableau ci-dessous répertorie les ressources tierces et contient des liens vers des informations supplémentaires.
 
@@ -855,7 +855,7 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
      <li>Runtime</li>
      <li>Threading</li>
     </ul> </td>
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.</a> managementpackage</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> package</td>
   </tr>
   <tr>
    <td>java.util.logging</td>
@@ -871,7 +871,7 @@ Plusieurs ressources de serveur tiers installent des beans gérés (MBeans), qui
      <li>packageState</li>
      <li>serviceState</li>
     </ul> </td>
-   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.</a> frameworkpackage</td>
+   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a> package</td>
   </tr>
  </tbody>
 </table>
@@ -892,16 +892,16 @@ La page principale de la console JMX comporte un tableau des services. Chaque l
 3. Pour modifier une valeur d’attribut, cliquez sur la valeur, spécifiez la valeur dans la boîte de dialogue qui s’affiche, puis cliquez sur Enregistrer.
 4. Pour appeler une opération de service, cliquez sur le nom de l’opération, spécifiez les valeurs des arguments dans la boîte de dialogue qui s’affiche, puis cliquez sur Appeler.
 
-## Utilisation des applications JMX externes pour la surveillance  {#using-external-jmx-applications-for-monitoring}
+## Utilisation des applications JMX externes pour la surveillance {#using-external-jmx-applications-for-monitoring}
 
 CRX permet aux applications externes d’interagir avec les beans gérés (MBeans) par le biais de [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). L’utilisation de consoles génériques comme [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) ou d’applications de surveillance spécifiques au domaine permet d’extraire et de définir les configurations et les propriétés de CRX, ainsi que de surveiller les performances et l’utilisation des ressources.
 
-### Utilisation de JConsole pour la connexion à CRX  {#using-jconsole-to-connect-to-crx}
+### Utilisation de JConsole pour la connexion à CRX {#using-jconsole-to-connect-to-crx}
 
 Pour se connecter à CRX à l’aide de JConsole, procédez comme suit :
 
 1. Ouvrez une fenêtre de terminal.
-1. Exécutez la commande suivante :
+1. Saisissez la commande suivante :
 
    `jconsole`
 

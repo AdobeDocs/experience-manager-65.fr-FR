@@ -1,8 +1,8 @@
 ---
 title: Consoles d’administration
-seo-title: Consoles d’administration
+seo-title: Admin Consoles
 description: Comment utiliser les consoles d’administration disponibles dans AEM.
-seo-description: Comment utiliser les consoles d’administration disponibles dans AEM.
+seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 69%
+source-wordcount: '222'
+ht-degree: 68%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 69%
 
 Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lors du survol du curseur sur certaines icônes de la console, et qui permettaient d’accéder à l’IU classique, ne sont plus affichées.
 
-Chaque console disposant d’une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche une fois de plus sur l’icône de console lorsqu’elle est pointée sur celle-ci.
+Chaque console disposant d’une version d’interface utilisateur classique dans `/libs/cq/core/content/nav` peut être réactivé individuellement de sorte que la variable **IU classique** s’affiche une fois de plus sur l’icône de la console lorsqu’elle est pointée.
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
@@ -38,7 +38,7 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Créez une superposition à l’aide de l’option **Noeud de recouvrement** ; par exemple :
+1. Créez une superposition à l’aide de la fonction **Noeud de recouvrement** option; par exemple :
 
    * **Chemin**: `/apps/cq/core/content/nav/sites`
    * **Emplacement du recouvrement**: `/apps/`

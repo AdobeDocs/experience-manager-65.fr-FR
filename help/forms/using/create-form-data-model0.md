@@ -11,9 +11,9 @@ docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2733'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -115,7 +115,7 @@ Le tableau des **factures** comprend les informations sur la facturation, telles
 
 ## Étape 2 : Configurer la base de données MySQL comme source de données {#step-configure-mysql-database-as-data-source}
 
-Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce didacticiel, vous allez configurer la base de données MySQL qui est configurée et remplie avec des exemples de données. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/data-integration.html).
+Vous pouvez configurer différents types de sources de données pour créer un modèle de données de formulaire. Pour ce didacticiel, vous allez configurer la base de données MySQL qui est configurée et remplie avec des exemples de données. Pour plus d’informations sur les autres sources de données prises en charge et sur leur configuration, reportez-vous à la section [Intégration de données AEM Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Procédez comme suit pour configurer votre base de données MySQL :
 
@@ -145,7 +145,7 @@ Procédez comme suit pour configurer votre base de données MySQL :
 
       * **Test lors du renvoi :** activez l’option **Test lors du renvoi.**
 
-      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez * depuis customer**.
+      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple : **select &#42; du client**.
 
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
    Laissez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et cliquez sur **Enregistrer**.
@@ -266,7 +266,7 @@ Procédez comme suit pour créer des associations entre objets de modèle de don
 
    * Sélectionnez **calls** dans la liste déroulante **Objet de modèle**.
 
-   * Sélectionnez **get** dans la liste déroulante **Service**.
+   * Sélectionnez **get** dans la liste déroulante **Service.**
 
    * Cliquez sur **Ajouter** pour relier l’objet de modèle de données **client** à l’objet de modèle de données **appels** à l’aide d’une propriété. En fonction du cas d’utilisation, l’objet de modèle de données calls doit être lié à la propriété de numéro de mobile dans l’objet de modèle de données customer. La boîte de dialogue **Ajouter un argument** s’affiche.
 

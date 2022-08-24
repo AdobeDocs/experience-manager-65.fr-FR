@@ -1,8 +1,8 @@
 ---
 title: Guide de référence pour l’API JavaScript ContextHub
-seo-title: Guide de référence pour l’API JavaScript ContextHub
+seo-title: ContextHub Javascript API Reference
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
-seo-description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
+seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '5031'
+source-wordcount: '5006'
 ht-degree: 92%
 
 ---
 
-# Guide de référence pour l’API JavaScript ContextHub{#contexthub-javascript-api-reference}
+# Guide de référence pour l’API JavaScript ContextHub {#contexthub-javascript-api-reference}
 
 L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant [ContextHub a été ajouté à la page](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
@@ -75,7 +75,7 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 
 L’objet ContextHub fournit l’accès à tous les magasins.
 
-### Fonctions (ContextHub)  {#functions-contexthub}
+### Fonctions (ContextHub) {#functions-contexthub}
 
 #### getAllStores() {#getallstores}
 
@@ -96,7 +96,7 @@ var allStores = ContextHub.getAllStores();
 var geoloc = allStores.geolocation
 ```
 
-#### getStore(name)   {#getstore-name}
+#### getStore(name) {#getstore-name}
 
 Récupère un magasin en tant qu’objet JavaScript.
 
@@ -116,7 +116,7 @@ L’exemple suivant récupère le magasin de géolocalisation :
 var geoloc = ContextHub.getStore("geolocation");
 ```
 
-## ContextHub.SegmentEngine.Segment   {#contexthub-segmentengine-segment}
+## ContextHub.SegmentEngine.Segment {#contexthub-segmentengine-segment}
 
 Représente un segment ContextHub. Utilisez ContextHub.SegmentEngine.SegmentManager pour récupérer des segments.
 
@@ -126,7 +126,7 @@ Représente un segment ContextHub. Utilisez ContextHub.SegmentEngine.SegmentMana
 
 Renvoie le nom du segment sous forme de chaîne.
 
-#### getPath()  {#getpath}
+#### getPath() {#getpath}
 
 Renvoie le chemin du référentiel pour la définition de segment sous forme de chaîne.
 
@@ -134,7 +134,7 @@ Renvoie le chemin du référentiel pour la définition de segment sous forme de 
 
 Fournit un accès aux segments ContextHub.
 
-### Fonctions (ContextHub.SegmentEngine.SegmentManager)   {#functions-contexthub-segmentengine-segmentmanager}
+### Fonctions (ContextHub.SegmentEngine.SegmentManager) {#functions-contexthub-segmentengine-segmentmanager}
 
 #### getResolvedSegments() {#getresolvedsegments}
 
@@ -169,7 +169,7 @@ Objet ContextHub.Utils.Persistence. Pour plus d’informations sur la valeur par
 Fusionne un objet de données ou un tableau contenant les données de magasin. Chaque paire clé/valeur de l’objet ou du tableau est ajoutée au magasin (via la fonction `setItem`) :
 
 * **Objet :** les clés sont les noms des propriétés.
-* **Tableau :** les clés sont les index de tableau.
+* **Tableau :** Les clés sont les index de tableau.
 
 Notez que les valeurs peuvent être des objets.
 
@@ -206,11 +206,11 @@ Une valeur `boolean` :
 
 Déclenche l’événement `ready` pour ce magasin. Cette fonction ne possède aucun paramètre et ne renvoie aucune valeur.
 
-#### clean()  {#clean}
+#### clean() {#clean}
 
 Supprime toutes les données du magasin. La fonction ne possède aucun paramètre et aucune valeur de retour.
 
-#### getItem(key) {#getitem-key}
+#### getItem(key)  {#getitem-key}
 
 Renvoie la valeur associée à une clé.
 
@@ -222,7 +222,7 @@ Renvoie la valeur associée à une clé.
 
 Un objet qui représente la valeur de la clé.
 
-#### getKeys(includeInternals)   {#getkeys-includeinternals}
+#### getKeys(includeInternals) {#getkeys-includeinternals}
 
 Récupère les clés du magasin. En option, vous pouvez récupérer les clés utilisées en interne par le framework ContextHub.
 
@@ -258,13 +258,13 @@ Récupère l’arbre de données du magasin. Vous pouvez éventuellement inclure
 
 Un objet qui représente l’arbre de données. Les clés sont les noms des propriétés de l’objet.
 
-#### init(name, config) {#init-name-config}
+#### init(name, config)  {#init-name-config}
 
 Initialise le magasin.
 
 * Définit les données du magasin sur un objet vide.
 * Définit les références du magasin sur un objet vide.
-* eventChannel est data:*name*, où *name* est le nom du magasin.
+* eventChannel correspond à data :*name* où *name* est le nom du magasin.
 
 * Le paramètre StoreDataKey est /store/*name* où *name* correspond au nom du magasin.
 
@@ -292,7 +292,7 @@ Une valeur booléenne :
 
 Suspend le mode Eventing pour le magasin afin qu’aucun événement ne soit déclenché. Cette fonction ne possède aucun paramètre et ne renvoie aucune valeur.
 
-#### removeItem(key, options) {#removeitem-key-options}
+#### removeItem(key, options)  {#removeitem-key-options}
 
 Supprime une paire clé/valeur du magasin.
 
@@ -347,7 +347,7 @@ Les valeurs initiales sont fournies dans la propriété initialValues &#x200B;&#
 
 * keepRemainingData : (booléen). Une valeur true entraîne la persistance des données non initiales. Une valeur false entraîne la suppression de toutes les données, à l’exception des valeurs initiales.
 
-#### resolveReference(key, retry)   {#resolvereference-key-retry}
+#### resolveReference(key, retry) {#resolvereference-key-retry}
 
 Récupère une clé référencée. En option, vous pouvez spécifier le nombre d’itérations à utiliser pour résoudre la meilleure correspondance.
 
@@ -365,7 +365,7 @@ Valeur `string` représentant la clé référencée. Si aucune référence n’e
 
 Rétablit le mode Eventing pour ce magasin afin que les événements soient déclenchés. Cette fonction ne définit aucun paramètre et ne renvoie aucune valeur.
 
-#### setItem(key, value, options) {#setitem-key-value-options}
+#### setItem(key, value, options)  {#setitem-key-value-options}
 
 Ajoute une paire clé/valeur au magasin.
 
@@ -408,7 +408,7 @@ Configure les détails de connexion au service JSONP que cet objet utilise. Vous
 * **serviceConfig :** objet qui contient les propriétés ci-dessous.
 
    * host : (chaîne). Nom ou adresse IP du serveur.
-   * jsonp : (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet {callback:&quot;ContextHub.Callbacks.*Object.name*} est ajouté à l’objet service.params.
+   * jsonp : (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet {callback: &quot;ContextHub.Callbacks.*Object.name*} est ajouté à l’objet service.params.
    * params : (Objet) Paramètres d’URL représentés sous forme de propriétés d’objet. Les noms des paramètres correspondent aux noms de propriétés et leurs valeurs aux valeurs des propriétés.
    * path : (chaîne). Chemin d’accès au service.
    * port : (nombre). Numéro de port du service.
@@ -428,7 +428,7 @@ Renvoie la réponse brute mise en cache depuis le dernier appel au service JSONP
 
 Un objet qui représente la réponse brute.
 
-#### getServiceDetails()  {#getservicedetails}
+#### getServiceDetails() {#getservicedetails}
 
 Récupère l’objet de service pour cet objet ContextHub.Store.JSONPStore. L’objet de service contient toutes les informations requises pour créer l’URL du service.
 
@@ -437,9 +437,9 @@ Récupère l’objet de service pour cet objet ContextHub.Store.JSONPStore. L’
 Un objet possédant les propriétés suivantes :
 
 * **host :** (chaîne). Nom ou adresse IP du serveur.
-* **jsonp :** (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet {callback:&quot;ContextHub.Callbacks.*Object.name*} est ajouté à l’objet service.params.
+* **jsonp :** (booléen). Une valeur true indique que le service est un service JSONP, false dans le cas contraire. Si la valeur est true, l’objet {callback: &quot;ContextHub.Callbacks.*Object.name*} est ajouté à l’objet service.params.
 
-* **params :**  (objet) Paramètres d’URL représentés sous forme de propriétés d’objet. Les noms des paramètres correspondent aux noms de propriétés et leurs valeurs aux valeurs des propriétés.
+* **params :** (Objet) Paramètres d’URL représentés sous forme de propriétés d’objet. Les noms des paramètres correspondent aux noms de propriétés et leurs valeurs aux valeurs des propriétés.
 * **path :** (chaîne). Chemin d’accès au service.
 * **port :** (nombre). Numéro de port du service.
 * **secure :** (chaîne ou booléen). Détermine le protocole à utiliser pour l’URL du service:
@@ -460,7 +460,7 @@ Récupère l’URL du service JSONP.
 
 Une valeur `string` représentant l’URL du service.
 
-#### init(name, config) {#init-name-config-1}
+#### init(name, config)  {#init-name-config-1}
 
 initialise l’objet ContextHub.Store.JSONPStore.
 
@@ -488,7 +488,7 @@ initialise l’objet ContextHub.Store.JSONPStore.
       * ttl : délai minimal en millisecondes qui s’écoule entre les appels au service JSONP. (Voir la fonction [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)).
 
 
-#### queryService(reload)   {#queryservice-reload}
+#### queryService(reload) {#queryservice-reload}
 
 Interroge le service JSONP distant et met en cache la réponse. Si la durée écoulée depuis l’appel précédent à cette fonction est inférieure à la valeur de `config.service.ttl`, le service n’est pas appelé et la réponse mise en cache n’est pas modifiée. En option, vous pouvez forcer l’appel du service. La propriété `config.service.ttl` est définie lors de l’appel de la fonction [init](/help/sites-developing/contexthub-api.md#init-name-config) pour initialiser le magasin.
 
@@ -508,27 +508,27 @@ Les valeurs initiales sont fournies dans la propriété initialValues &#x200B;&#
 
 * **keepRemainingData :** (booléen). Une valeur true entraîne la persistance des données non initiales. Une valeur false entraîne la suppression de toutes les données, à l’exception des valeurs initiales.
 
-#### resolveParameter(f)   {#resolveparameter-f}
+#### resolveParameter(f) {#resolveparameter-f}
 
 Résout le paramètre donné.
 
-## ContextHub.Store.PersistedJSONPStore   {#contexthub-store-persistedjsonpstore}
+## ContextHub.Store.PersistedJSONPStore {#contexthub-store-persistedjsonpstore}
 
 ContextHub.Store.PersistedJSONPStore étend le paramètre [ContextHub.Store.JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore) pour qu’il hérite de toutes les fonctions de cette classe. Toutefois, les données extraites du service JSONP sont conservées conformément à la configuration de la persistance ContextHub. (Voir [Modes de persistance](/help/sites-developing/ch-adding.md#persistence-modes).)
 
 ## ContextHub.Store.PersistedStore {#contexthub-store-persistedstore}
 
-ContextHub.Store.PersistedStore étend [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) afin qu’il hérite de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en fonction de la configuration de la persistance ContextHub.
+ContextHub.Store.PersistedStore étend [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) il hérite donc de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en fonction de la configuration de la persistance ContextHub.
 
-## ContextHub.Store.SessionStore   {#contexthub-store-sessionstore}
+## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore étend [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) afin qu’il hérite de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en utilisant la persistance en mémoire (objet JavaScript).
+ContextHub.Store.SessionStore étend [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) il hérite donc de toutes les fonctions de cette classe. Les données de ce magasin sont conservées en utilisant la persistance en mémoire (objet JavaScript).
 
-## ContextHub.UI   {#contexthub-ui}
+## ContextHub.UI {#contexthub-ui}
 
 Gère les modules d’IU et les moteurs de rendu des modules d’IU.
 
-### Fonctions (ContextHub.UI)   {#functions-contexthub-ui}
+### Fonctions (ContextHub.UI) {#functions-contexthub-ui}
 
 #### registerRenderer(moduleType, renderer, dontRender) {#registerrenderer-moduletype-renderer-dontrender}
 
@@ -537,7 +537,7 @@ Enregistre un moteur de rendu de module d’IU avec ContextHub. Une fois le mote
 **Paramètres**
 
 * **moduleType :** (chaîne). Identificateur du rendu du module d’IU. Si un moteur de rendu est déjà enregistré à l’aide de la valeur spécifiée, le moteur de rendu existant n’est pas enregistré avant l’enregistrement de ce convertisseur.
-* **renderer :**  (chaîne). Nom de la classe qui effectue le rendu du module d’IU.
+* **renderer :** (Chaîne) Nom de la classe qui effectue le rendu du module d’IU.
 * **dontRender :** (booléen). Définir sur `true` pour empêcher le rendu de l’IU ContextHub après l’enregistrement du moteur de rendu. La valeur par défaut est `false`.
 
 **Exemple**
@@ -552,7 +552,7 @@ ContextHub.UI.registerRenderer('contexthub.browserinfo', new SurferinfoRenderer(
 
 Classe d’utilitaire permettant d’interagir avec les cookies.
 
-### Fonctions (ContextHub.Utils.Cookie)   {#functions-contexthub-utils-cookie}
+### Fonctions (ContextHub.Utils.Cookie) {#functions-contexthub-utils-cookie}
 
 #### exists(key) {#exists-key}
 
@@ -560,7 +560,7 @@ Détermine si un cookie existe.
 
 **Paramètres**
 
-* **key :**  `String` qui contient la clé du cookie que vous testez.
+* **key:** A `String` qui contient la clé du cookie que vous testez.
 
 **Renvoie**
 
@@ -597,7 +597,7 @@ Un objet de cookies. Les propriétés d’objet sont les clés des cookies et le
 ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### getItem(key) {#getitem-key-1}
+#### getItem(key)  {#getitem-key-1}
 
 Renvoie une valeur de cookie.
 
@@ -638,13 +638,13 @@ Un tableau de chaînes où chaque chaîne est la clé d’un cookie qui répond 
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### removeItem(key, options) {#removeitem-key-options-1}
+#### removeItem(key, options)  {#removeitem-key-options-1}
 
 Supprime un cookie. Pour supprimer le cookie, la valeur est définie sur une chaîne vide et la date d’expiration est définie sur le jour précédant la date actuelle.
 
 **Paramètres**
 
-* **key :**  `String` valeur représentant la clé du cookie à supprimer.
+* **key:** A `String` qui représente la clé du cookie à supprimer.
 
 * **options :** objet contenant des valeurs de propriété pour la configuration des attributs de cookie. Voir la fonction ` [setItem](/help/sites-developing/contexthub-api.md#setitem-key-value-options)` pour plus d’informations. La propriété `expires` n’a aucun effet.
 
@@ -658,7 +658,7 @@ Cette fonction ne retourne pas de valeur.
 ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 ```
 
-#### setItem(key, value, options) {#setitem-key-value-options-1}
+#### setItem(key, value, options)  {#setitem-key-value-options-1}
 
 Crée un cookie de la clé et de la valeur en question et ajoute le cookie au document en cours. En option, vous pouvez spécifier des options qui configurent les attributs du cookie.
 
@@ -668,9 +668,9 @@ Crée un cookie de la clé et de la valeur en question et ajoute le cookie au do
 * **value :** chaîne contenant la valeur du cookie.
 * **options :** (facultatif). Objet contenant l’une des propriétés suivantes qui configurent les attributs de cookie :
 
-   * expire : Valeur `date` ou `number` qui spécifie le moment où le cookie expire. Une valeur de date spécifie l’heure absolue d’expiration. Un nombre (en jours) définit l’heure d’expiration sur l’heure actuelle plus le nombre. La valeur par défaut est `undefined`.
-   * secure : Valeur `boolean` qui spécifie l’attribut `Secure` du cookie. La valeur par défaut est `false`.
-   * path: Valeur `String` à utiliser comme attribut `Path` du cookie. La valeur par défaut est `undefined`.
+   * expire : A `date` ou `number` qui spécifie le moment où le cookie expire. Une valeur de date spécifie l’heure absolue d’expiration. Un nombre (en jours) définit l’heure d’expiration sur l’heure actuelle plus le nombre. La valeur par défaut est `undefined`.
+   * secure : A `boolean` qui spécifie la valeur `Secure` du cookie. La valeur par défaut est `false`.
+   * path: A `String` à utiliser comme valeur `Path` du cookie. La valeur par défaut est `undefined`.
 
 **Renvoie**
 
@@ -701,7 +701,7 @@ Supprime tous les cookies répondant aux critères d’un filtre donné. Les coo
 
 Cette fonction ne retourne pas de valeur.
 
-## ContextHub.Utils.Eventing   {#contexthub-utils-eventing}
+## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
 
 Vous permet d’associer et de dissocier des fonctions aux événements du magasin ContextHub. Accédez aux objets ContextHub.Utils.Eventing d’un magasin à l’aide de sa propriété [eventing](/help/sites-developing/contexthub-api.md#eventing).
 
@@ -713,15 +713,15 @@ Dissocie une fonction d’un événement.
 
 **Paramètres**
 
-* **name :**  [nom de l’](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) événement pour lequel vous dissociez la fonction.
+* **name:** Le [nom de l’événement](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) pour laquelle vous annulez la liaison de la fonction.
 
-* **selector :** sélecteur identifiant l’association. (Voir le paramètre `selector` pour les fonctions [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) et [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) ).
+* **selector :** sélecteur identifiant l’association. (Voir `selector` du paramètre [on](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) et [once](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) ).
 
 **Renvoie**
 
 Cette fonction ne renvoie aucune valeur.
 
-#### on(name, handler, selector, triggerForPastEvents)   {#on-name-handler-selector-triggerforpastevents}
+#### on(name, handler, selector, triggerForPastEvents) {#on-name-handler-selector-triggerforpastevents}
 
 Associe une fonction à un événement. La fonction est appelée à chaque fois que l’événement se produit. En option, la fonction peut être appelée pour les événements qui se sont produits dans le passé, avant que l’association ne soit établie.
 
@@ -730,7 +730,7 @@ Associe une fonction à un événement. La fonction est appelée à chaque fois 
 * **name :** (chaîne). [Nom de l’événement](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) auquel vous associez la fonction.
 
 * **handler :** (fonction). Fonction à associer à l’événement.
-* **selector :**  (chaîne). Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
+* **sélecteur :** (Chaîne) Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
 
 * **triggerForPastEvents :** (booléen). Indique si le gestionnaire doit être exécuté pour les événements survenus dans le passé. Une valeur `true` appelle le gestionnaire pour les événements passés. Une valeur `false`appelle le gestionnaire pour les événements futurs. La valeur par défaut est `true`.
 
@@ -772,7 +772,7 @@ Associe une fonction à un événement. La fonction est appelée une seule fois,
 * **name :** (chaîne). [Nom de l’événement](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) auquel vous associez la fonction.
 
 * **handler :** (fonction). Fonction à associer à l’événement.
-* **selector :**  (chaîne). Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
+* **sélecteur :** (Chaîne) Identifiant unique de la liaison. Le sélecteur est nécessaire pour identifier l’association si vous souhaitez utiliser la fonction `off` pour supprimer l’association.
 
 * **triggerForPastEvents :** (booléen). Indique si le gestionnaire doit être exécuté pour les événements survenus dans le passé. Une valeur `true` appelle le gestionnaire pour les événements passés. Une valeur `false`appelle le gestionnaire pour les événements futurs. La valeur par défaut est `true`.
 
@@ -789,7 +789,7 @@ Si `triggerForPastEvents` est défini sur `false`, cette fonction ne renvoie auc
 
 Classe d’utilitaire qui permet à un objet d’hériter des propriétés et des méthodes d’un autre objet.
 
-### Fonctions (ContextHub.Utils.inheritance)   {#functions-contexthub-utils-inheritance}
+### Fonctions (ContextHub.Utils.inheritance) {#functions-contexthub-utils-inheritance}
 
 #### inherit(child, parent) {#inherit-child-parent}
 
@@ -804,7 +804,7 @@ Permet à l’objet d’hériter des propriétés et des méthodes d’un autre 
 
 Fournit des fonctions pour sérialiser les objets au format JSON et désérialiser des chaînes JSON en objets.
 
-### Fonctions (ContextHub.Utils.JSON)   {#functions-contexthub-utils-json}
+### Fonctions (ContextHub.Utils.JSON) {#functions-contexthub-utils-json}
 
 #### parse(data) {#parse-data}
 
@@ -858,7 +858,7 @@ ContextHub.Utils.JSON.stringify({
 
 Cette classe facilite la manipulation des objets de données à stocker ou à extraire des magasins ContextHub.
 
-### Fonctions (ContextHub.Utils.JSON.tree)   {#functions-contexthub-utils-json-tree}
+### Fonctions (ContextHub.Utils.JSON.tree) {#functions-contexthub-utils-json-tree}
 
 #### addAllItems() {#addallitems}
 
@@ -866,14 +866,14 @@ Crée une copie d’un objet de données et y ajoute l’arbre de données d’u
 
 **Paramètres**
 
-* **tree :** objet copié.
-* **secondTree :** objet fusionné avec la copie de l’ `tree` objet.
+* **tree :** Objet copié.
+* **secondTree :** Objet fusionné avec la copie de la propriété `tree` .
 
 **Renvoie**
 
 Un objet contenant les données fusionnées.
 
-#### cleanup()  {#cleanup}
+#### cleanup() {#cleanup}
 
 Crée une copie d’un objet, identifie et supprime les éléments de l’arbre de données qui ne contiennent aucune valeur, une valeur nulle ou indéfinie et renvoie la copie.
 
@@ -885,7 +885,7 @@ Crée une copie d’un objet, identifie et supprime les éléments de l’arbre 
 
 Copie de l’arbre qui est nettoyé.
 
-#### getItem()  {#getitem}
+#### getItem() {#getitem}
 
 Récupère la valeur d’un objet pour une clé donnée.
 
@@ -942,7 +942,7 @@ Object {
 }
 ```
 
-#### getKeys()  {#getkeys}
+#### getKeys() {#getkeys}
 
 Récupère toutes les clés de l’arbre de données d’un objet. En option, vous pouvez récupérer uniquement les clés des enfants d’une clé spécifique. Vous pouvez également spécifier un ordre de tri des clés récupérées.
 
@@ -1032,7 +1032,7 @@ myObject {
 }
 ```
 
-#### sanitizeKey(key)   {#sanitizekey-key}
+#### sanitizeKey(key) {#sanitizekey-key}
 
 Assainit les valeurs de chaîne pour les rendre utilisables sous forme de clés. Pour assainir une chaîne, cette fonction effectue les actions suivantes :
 
@@ -1042,7 +1042,7 @@ Assainit les valeurs de chaîne pour les rendre utilisables sous forme de clés.
 
 Utilisez le tableau obtenu pour créer une clé utilisable.  **Paramètres**
 
-* **clé :**  `string` à assainir.
+* **key:** Le `string` pour assainir.
 
 **Renvoie**
 
@@ -1101,7 +1101,7 @@ L’objet myObject a la valeur suivante :
 
 Vous permet d’enregistrer des magasins candidats et de récupérer les candidats enregistrés.
 
-### Fonctions (ContextHub.Utils.storeCandidates)   {#functions-contexthub-utils-storecandidates}
+### Fonctions (ContextHub.Utils.storeCandidates) {#functions-contexthub-utils-storecandidates}
 
 #### getRegisteredCandidates(storeType) {#getregisteredcandidates-storetype}
 
@@ -1115,7 +1115,7 @@ Renvoie les types de magasins enregistrés en tant que magasins candidats. Récu
 
 Un objet de types de magasin. Les propriétés de l’objet sont les noms des types de magasin et les valeurs de propriété sont un tableau des magasins candidats enregistrés.
 
-#### getStoreFromCandidates(storeType)   {#getstorefromcandidates-storetype}
+#### getStoreFromCandidates(storeType) {#getstorefromcandidates-storetype}
 
 Renvoie un type de magasin parmi les candidats enregistrés. Si plus d’un type de magasin du même nom est enregistré, la fonction renvoie le type de magasin avec la priorité la plus élevée.
 
@@ -1127,7 +1127,7 @@ Renvoie un type de magasin parmi les candidats enregistrés. Si plus d’un type
 
 Un objet qui représente le magasin candidat enregistré. Si le type de magasin demandé n’est pas enregistré, une erreur est générée.
 
-#### getSupportedStoreTypes()  {#getsupportedstoretypes}
+#### getSupportedStoreTypes() {#getsupportedstoretypes}
 
 Renvoie les noms des magasins enregistrés en tant que magasins candidats. Cette fonction ne nécessite aucun paramètre.
 
@@ -1145,7 +1145,7 @@ La priorité est un nombre qui indique l’importance des magasins de même nom.
 
 * **store :** (objet). Objet magasin à enregistrer en tant que magasin candidat.
 * **storeType :** (chaîne). Nom du magasin candidat. Cette valeur est requise lors de la création d’une instance du magasin candidat.
-* **priority :**  (nombre). Priorité du magasin candidat.
+* **priority :** (Nombre) Priorité du magasin candidat.
 * **applies :** (fonction). Fonction à appeler pour évaluer l’applicabilité du magasin dans l’environnement actuel. La fonction doit renvoyer la valeur `true` si le magasin est applicable, et `false` dans le cas contraire. La valeur par défaut est une fonction qui renvoie la valeur true : `function() {return true;}`
 
 **Exemple**

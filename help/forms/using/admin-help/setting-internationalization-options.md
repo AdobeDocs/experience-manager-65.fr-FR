@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
 exl-id: 6cf82c2b-29f0-49d5-a138-99d7801d5a28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 Vous pouvez préciser les paramètres régionaux utilisés au moment de effectuer le rendu du formulaire au format PDF. Les champs d’un formulaire au format PDF se servent des paramètres régionaux indiqués pour afficher les données. Par exemple, si les paramètres régionaux sont en allemand, le formulaire utilise les séparateurs décimaux allemands pour les valeurs numériques. Les paramètres régionaux servent également à envoyer des messages de validation vers les périphériques clients, tels que les navigateurs Web, dans le cadre des transformations HTML.
 
-1. Dans Administration Console, cliquez sur Services > Forms.
+1. Dans la console d’administration, cliquez sur Services > Forms.
 1. Dans la liste de langues, dans l’onglet Internationalisation, sélectionnez les paramètres régionaux utilisés pour effectuer le rendu d’un formulaire. La valeur par défaut Anglais (Etats-Unis).
 1. Cliquez sur Enregistrer.
 

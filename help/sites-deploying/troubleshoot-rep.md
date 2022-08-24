@@ -1,8 +1,8 @@
 ---
 title: Résolution des problèmes liés à la réplication
-seo-title: Résolution des problèmes liés à la réplication
+seo-title: Troubleshooting Replication
 description: Cet article fournit des informations sur la manière de résoudre les problèmes de réplication.
-seo-description: Cet article fournit des informations sur la manière de résoudre les problèmes de réplication.
+seo-description: This article provides information on how to troubleshoot replication issues.
 uuid: 1662bf60-b000-4eb2-8834-c6da607128fe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,12 +10,12 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
 docset: aem65
-feature: Configuration
+feature: Configuring
 exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 81%
+source-wordcount: '1243'
+ht-degree: 80%
 
 ---
 
@@ -43,8 +43,8 @@ Vérifiez cela en accédant à /etc/replication/agents.author.html , puis clique
 
 **Si une ou plusieurs files d’attente sont bloquées :**
 
-1. La file d’attente affiche-t-elle l’état **bloquée** ? Le cas échéant, l’instance de publication n’est-elle pas en cours d’éxécution ou a-t-elle cessé totalement de répondre ? Vérifiez l’instance de publication pour détecter le problème (c’est-à-dire vérifiez les journaux pour voir s’il existe une erreur OutOfMemory ou un autre problème). S’il s’agit d’une lenteur générale, prenez des thread dumps et analysez-les.
-1. L’état de la file d’attente indique **La file d’attente est-elle principale - # pending** ? La tâche de réplication peut être simplement bloquée dans une fiche, en attente d’une instance de publication ou du dispatcher pour répondre. Il se peut également que l’instance de publication ou le dispatcher subisse un chargement élevé ou qu’il soit coincé dans un verrouillage. Prenez les thread dumps de l’auteur et de la publication dans ce cas.
+1. La file d’attente s’affiche-t-elle ? **bloqué** status ? Le cas échéant, l’instance de publication n’est-elle pas en cours d’éxécution ou a-t-elle cessé totalement de répondre ? Vérifiez l’instance de publication pour détecter le problème (c’est-à-dire vérifiez les journaux pour voir s’il existe une erreur OutOfMemory ou un autre problème). S’il s’agit d’une lenteur générale, prenez des thread dumps et analysez-les.
+1. L’état de la file d’attente s’affiche-t-il ? **La file d’attente est principale - # en attente**? La tâche de réplication peut être simplement bloquée dans une fiche, en attente d’une instance de publication ou du dispatcher pour répondre. Il se peut également que l’instance de publication ou le dispatcher subisse un chargement élevé ou qu’il soit coincé dans un verrouillage. Prenez les thread dumps de l’auteur et de la publication dans ce cas.
 
    * Ouvrez les thread dumps de l’auteur dans un programme d’analyse de thread dump, vérifiez s’il indique que la tâche sling eventing de l’agent de réplication est boquée dans un socketRead.
    * Ouvrez les thread dumps de la publication dans un programme d’analyse de thread dump, analysez ce qui peut causer le manque de réaction de l’instance de publication. Vous devriez voir un thread avec le POST /bin/receive dans son nom, c’est-à-dire le thread recevant la réplication de l’auteur.
@@ -57,7 +57,7 @@ Vérifiez cela en accédant à /etc/replication/agents.author.html , puis clique
    1. Cliquez sur « Outils » dans le menu supérieur.
    1. Cliquez sur le bouton représentant une loupe.
    1. Sélectionnez « XPath » comme type.
-   1. Dans la zone &quot;Requête&quot;, saisissez cette requête /jcr:root/var/eventing/jobs//element(*,slingevent:Job) de @slingevent:created
+   1. Dans la zone &quot;Requête&quot;, saisissez cette requête /jcr:root/var/eventing/jobs//element(&#42;,slingevent:Job) order par @slingevent:created
    1. Cliquez sur « Search » (Rechercher).
    1. Les résultats affichés dans la partie supérieure de la page correspondent aux dernières tâches sling eventing. Cliquez sur chacune d’entre elles et recherchez les réplications bloquées qui correspondent aux résultats visibles dans la partie supérieure de la file d’attente.
 
@@ -76,7 +76,7 @@ Vérifiez cela en accédant à /etc/replication/agents.author.html , puis clique
 Il est parfois très utile de programmer toute la journalisation de la réplication de sorte qu’elle soit ajouté à un fichier journal séparé au niveau de DEBUG. Pour ce faire :
 
 1. Accédez à https://host:port/system/console/configMgr et connectez-vous en tant qu’administrateur.
-1. Recherchez la fabrique Apache Sling Logging Logger et créez une instance en cliquant sur le bouton **+** à droite de la configuration de la fabrique. Cela entraîne la création d’un enregistreur de connexions.
+1. Recherchez la fabrique Apache Sling Logging Logger et créez une instance en cliquant sur la **+** à droite de la configuration de la fabrique. Cela entraîne la création d’un enregistreur de connexions.
 1. Définissez la configuration comme suit :
 
    * Niveau de journal : DEBUG
@@ -98,18 +98,18 @@ Les autorisations de page ne sont pas répliquées, car elles sont stockées sou
 
 En général, des autorisations de page ne doivent pas être répliquées depuis l’instance d’auteur vers l’instance de publication, et ne sont pas définies par défaut. Cela est dû au fait que les droits d’accès doivent être différents dans ces deux environnements. Par conséquent, il est recommandé de configurer les listes de contrôle d’accès de la publication séparément de l’auteur.
 
-## La file d’attente de réplication est bloquée lors de la réplication des informations sur les espaces de noms depuis l’auteur vers la publication.  {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## La file d’attente de réplication est bloquée lors de la réplication des informations sur les espaces de noms depuis l’auteur vers la publication. {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-Dans certains cas, la file d’attente de réplication est bloquée lors de la tentative de réplication des informations sur les espaces de noms depuis l’instance d’auteur vers l’instance de publication. Cela se produit car l’utilisateur de réplication n’a pas le privilège `jcr:namespaceManagement` . Pour éviter ce problème, vérifiez les points suivants :
+Dans certains cas, la file d’attente de réplication est bloquée lors de la tentative de réplication des informations sur les espaces de noms depuis l’instance d’auteur vers l’instance de publication. Cela se produit car l’utilisateur de réplication n’a pas `jcr:namespaceManagement` privilège. Pour éviter ce problème, vérifiez les points suivants :
 
-* L’utilisateur de réplication (tel que configuré sous l’onglet [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) &lt;User) existe également sur l’instance de publication.
+* L’utilisateur de réplication (tel que configuré sous la propriété [Transport](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) tab>User) existe également sur l’instance de publication.
 * L’utilisateur dispose des privilèges de lecture et d’écriture sur le chemin où le contenu est installé.
-* L’utilisateur dispose du privilège `jcr:namespaceManagement` au niveau du référentiel. Vous pouvez accorder le privilège comme suit :
+* L’utilisateur a `jcr:namespaceManagement` au niveau du référentiel. Vous pouvez accorder le privilège comme suit :
 
 1. Connectez-vous à CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) en tant qu’administrateur.
 1. Cliquez sur l’onglet **Contrôle d’accès**.
 1. Sélectionnez **Référentiel**.
 1. Cliquez sur **Ajouter une entrée** (icône Plus).
 1. Entrez le nom de l’utilisateur.
-1. Sélectionnez `jcr:namespaceManagement` dans la liste des privilèges.
+1. Sélectionner `jcr:namespaceManagement` dans la liste des privilèges.
 1. Cliquez sur OK.

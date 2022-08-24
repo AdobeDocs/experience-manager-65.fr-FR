@@ -1,8 +1,8 @@
 ---
 title: Configuration de la synchronisation des Live Copies
-seo-title: Configuration de la synchronisation des Live Copies
+seo-title: Configuring Live Copy Synchronization
 description: Découvrez comment configurer la synchronisation de Live Copies.
-seo-description: Découvrez comment configurer la synchronisation de Live Copies.
+seo-description: Learn about configuring Live Copy Synchronization.
 uuid: a5db0bee-a761-4cff-81dc-31b374525f47
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,12 +14,12 @@ feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2710'
+source-wordcount: '2697'
 ht-degree: 88%
 
 ---
 
-# Configuration de la synchronisation de Live Copies{#configuring-live-copy-synchronization}
+# Configuration de la synchronisation des Live Copies{#configuring-live-copy-synchronization}
 
 Procédez comme suit pour contrôler la façon dont les Live Copies sont synchronisées avec leur contenu source.
 
@@ -32,7 +32,7 @@ Cette section contient des informations sur les configurations du déploiement i
 
 >[!CAUTION]
 >
->Il n’est pas recommandé de mettre à jour ou de modifier une configuration de déploiement prête à l’emploi (installée) **et**. Si une action active personnalisée est requise, elle doit être ajoutée dans une configuration de déploiement personnalisée.
+>La mise à jour ou la modification d’une configuration de déploiement prête à l’emploi (installée) est **not** recommandé. Si une action active personnalisée est requise, elle doit être ajoutée dans une configuration de déploiement personnalisée.
 
 ### Déclencheurs de déploiement {#rollout-triggers}
 
@@ -125,9 +125,9 @@ Le tableau ci-dessous répertorie les configurations de déploiement installées
  </tbody>
 </table>
 
-### Actions de synchronisation installées  {#installed-synchronization-actions}
+### Actions de synchronisation installées {#installed-synchronization-actions}
 
-Le tableau ci-dessous répertorie les actions de synchronisation installées avec AEM. Si les actions installées ne répondent pas à vos besoins, vous pouvez [créer une action de synchronisation](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
+Le tableau ci-dessous répertorie les actions de synchronisation installées avec AEM. Si les actions installées ne répondent pas à vos besoins, vous pouvez [Création d’une action de synchronisation](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table>
  <tbody>
@@ -153,9 +153,9 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>editProperties</td>
-   <td><p>Modifie les propriétés de la Live Copy. La propriété editMap détermine les propriétés modifiées et leur valeur. La valeur de la propriété editMap doit utiliser le format suivant :</p> <p><code>[property_name_1]#[current_value]#</code>[nouvelle_valeur],<br /> <code>[property_name_2]#[current_value]#</code>[nouvelle_valeur],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[nouvelle_valeur]</p> <p>Les éléments <code>current_value</code> et <code>new_value</code> sont des expressions régulières. <br /> </p> <p>Prenons l’exemple de la valeur suivante pour la propriété editMap :</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Cette valeur modifie les propriétés des nœuds de la Live Copy comme suit :</p>
+   <td><p>Modifie les propriétés de la Live Copy. La propriété editMap détermine les propriétés modifiées et leur valeur. La valeur de la propriété editMap doit utiliser le format suivant :</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Le <code>current_value</code> et <code>new_value</code> les éléments sont des expressions régulières. <br /> </p> <p>Prenons l’exemple de la valeur suivante pour la propriété editMap :</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Cette valeur modifie les propriétés des nœuds de la Live Copy comme suit :</p>
     <ul>
-     <li>Les propriétés <code>sling:resourceType</code> définies sur <code>contentpage</code> ou sur <code>homepage</code> sont définies sur <code>mobilecontentpage.</code></li>
+     <li>Le <code>sling:resourceType</code> propriétés définies sur <code>contentpage</code> ou <code>homepage</code> sont définis sur <code>mobilecontentpage.</code></li>
      <li>Les propriétés <code>cq:template</code> qui sont définies sur <code>contentpage</code> sont configurées sur <code>mobilecontentpage.</code></li>
     </ul> </td>
    <td><p> </p> <p>editMap : (chaîne) identifie la propriété, la valeur actuelle et la nouvelle valeur. Pour plus d’informations, consultez la description.<br /> </p> </td>
@@ -191,7 +191,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
    <td> </td>
   </tr>
   <tr>
-   <td>workflow</td>
+   <td>flux de travail</td>
    <td><p>Lance le workflow défini par la propriété cible (pour les pages uniquement) et utilise la Live Copy comme charge utile.</p> <p>Le chemin d’accès à la cible est le chemin d’accès du nœud du modèle.</p> </td>
    <td>target : (chaîne) chemin d’accès au modèle de workflow.<br /> </td>
   </tr>
@@ -263,7 +263,7 @@ Vous pouvez [créer une configuration du déploiement](/help/sites-developing/ex
 * [Créez une configuration du déploiement](/help/sites-developing/extending-msm.md#create-the-rollout-configuration).
 * [Ajoutez des actions de synchronisation à la configuration de déploiement](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
-La nouvelle configuration de déploiement est disponible quand vous définissez des configurations de déploiement sur une page Plan directeur ou Live Copy.
+La nouvelle configuration de déploiement est alors disponible lorsque vous définissez des configurations du déploiement dans un plan directeur ou une page Live Copy.
 
 ### Exclusion des propriétés et des types de nœuds de la synchronisation {#excluding-properties-and-node-types-from-synchronization}
 
@@ -350,7 +350,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles
   </tr>
   <tr>
    <td><p>Mettre à jour les pages de référence</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td>
-   <td>Disponible uniquement pour l’action de déplacement de page CQ MSM. Sélectionnez cette option (console web) ou définissez cette propriété booléenne sur <code>true</code> (configuration du référentiel) pour mettre à jour toutes les références afin d’utiliser la page d’origine pour référencer la page LiveCopy à la place.</td>
+   <td>Disponible uniquement pour l’action de déplacement de page CQ MSM. Sélectionnez cette option (console web) ou définissez cette propriété booléenne sur <code>true</code> (configuration du référentiel) pour mettre à jour toutes les références afin d’utiliser la page d’origine pour faire référence à la page Live Copy.</td>
   </tr>
  </tbody>
 </table>
@@ -363,8 +363,8 @@ La liste ci-après des emplacements où vous pouvez spécifier les configuration
 
 * **[Propriétés des pages Live Copy](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page) :** lorsqu’une page Live Copy est configurée pour utiliser une ou plusieurs configurations de déploiement, MSM utilise ces configurations de déploiement.
 * **[Propriétés des pages de plan directeur](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page) :** lorsqu’une Live Copy est basée sur un plan directeur et que la page Live Copy n’est pas configurée avec une configuration de déploiement, la configuration du déploiement associée à la page source du plan directeur est utilisée.
-* **Propriétés de la page parente Live Copy :**  lorsque ni la page Live Copy ni la page source du plan directeur ne sont configurées avec une configuration de déploiement, la configuration de déploiement qui s’applique à la page parente de la page Live Copy est utilisée.
-* **[Valeur par défaut du système](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration) :** lorsque la configuration du déploiement de la page parente de la Live Copy ne peut pas être déterminée, la configuration du déploiement par défaut du système est utilisée.
+* **Propriétés de la page parente Live Copy :** Lorsque ni la page Live Copy, ni la page source du plan directeur ne sont configurées avec une configuration de déploiement, la configuration de déploiement qui s’applique à la page parente de la page Live Copy est utilisée.
+* **[Par défaut du système](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Lorsque la configuration du déploiement de la page parente de la Live Copy ne peut pas être déterminée, la configuration du déploiement par défaut du système est utilisée.
 
 Par exemple, un plan directeur utilise le site de référence We.Retail comme contenu source. Un site est créé à partir du plan directeur. Chaque élément de la liste ci-dessous décrit un scénario d’utilisation distinct des configurations de déploiement :
 
@@ -415,7 +415,7 @@ Spécifiez une configuration du déploiement à utiliser comme valeur système p
 * **Day CQ WCM Live Relationship Manager**  Le PID du service est . 
 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
-Configurez le service à l’aide de la [console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou d’un [noeud de référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
+Configurez le service à l’aide de l’option [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou [noeud du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
 * Dans la console web, le nom de la propriété à configurer est Configuration de déploiement par défaut.
 * Si vous utilisez un nœud de référentiel, le nom de la propriété à configurer est `liverelationshipmgr.relationsconfig.default`.

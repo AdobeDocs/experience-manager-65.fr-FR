@@ -1,36 +1,36 @@
 ---
 title: Ressources pour les nouveaux utilisateurs AEM
-seo-title: Ressources pour les nouveaux utilisateurs AEM
+seo-title: Resources for New AEM Users
 description: Questions, réponses et ressources destinées aux utilisateurs qui découvrent les AEM
-seo-description: Questions, réponses et ressources destinées aux utilisateurs qui découvrent les AEM
+seo-description: Questions, answers, and resources for users new to AEM
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 29%
+source-wordcount: '360'
+ht-degree: 34%
 
 ---
 
-# Ressources pour les nouveaux utilisateurs d’AEM {#resources-for-new-aem-users}
+# Ressources pour les nouveaux utilisateurs AEM {#resources-for-new-aem-users}
 
 ## Qu’est-ce qu’Adobe Experience Manager (AEM) et où obtenir de la documentation ? {#what-is-aem}
 
 Adobe Experience Manager (AEM) est un système client-serveur web qui permet de créer, gérer et déployer des sites web commerciaux et des services associés. Cette solution associe dans un seul package intégré plusieurs fonctions de niveau application et de niveau infrastructure.
 
 * [Consultez notre documentation pour plus de détails](/help/sites-deploying/home.md)
-* [Mises à jour récentes de la documentation pour AEM](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Mises à jour récentes de la documentation pour AEM](https://helpx.adobe.com/fr/experience-manager/documentation-updates.html)
 
 ## Où télécharger AEM logiciel ? {#download}
 
-Les clients qui ont un contrat de maintenance et d’assistance valide doivent avoir reçu une notification par courrier électronique avec un code et pouvoir télécharger AEM à partir du [site Web de licences d’Adobe](http://licensing.adobe.com/).
+Les clients qui disposent d’un contrat de maintenance et d’assistance valide doivent avoir reçu une notification par courrier électronique comportant un code et être en mesure de télécharger AEM depuis le [Adobe Licensing Website](http://licensing.adobe.com/).
 
 [Plus d’informations sur le déploiement du logiciel AEM.](/help/sites-deploying/home.md)
 
-Pour plus d’informations sur les versions d’AEM, consultez notre [AEM Centre de maintenance](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) .
+Visitez notre [Hub de subsistance AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) pour plus d’informations sur les versions d’AEM.
 
-## Comment obtenir le soutien officiel pour AEM ? {#official-support}
+## Comment puis-je obtenir une assistance officielle pour AEM ? {#official-support}
 
-En tant que client sous licence, vous pouvez obtenir de l’aide pour AEM auprès de notre [équipe d’assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html). Vous pouvez également nous poser des questions dans la [communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager) ou sur le gestionnaire [@AdobeExpCare](https://twitter.com/adobeexpcare) Twitter.
+En tant que client sous licence, vous pouvez obtenir une assistance pour AEM de notre [Équipe d’assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html). Vous pouvez également nous poser des questions dans la section [Communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr) ou sur le [@AdobeExpCare](https://twitter.com/adobeexpcare) Poignée twitter.
 
 ## Où se trouve la documentation pour les autres versions d’AEM ? {#versions}
 
@@ -42,7 +42,7 @@ Nous disposons également de la documentation pour les anciennes versions d’Ad
 * [AEM 6.3](https://helpx.adobe.com/fr/support/experience-manager/6-3.html)
 * [AEM 6.2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr#previous-updates)**
 * [AEM 6.1](https://docs.adobe.com/docs/en/aem/6-1.html)**
-* [AEM 6.0](https://docs.adobe.com/docs/en/aem/6-0.html)**
+* [AEM 6.0](https://docs.adobe.com/docs/en/aem/6-0.html)**
 * [AEM 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr#previous-updates)**
 * [AEM 5.6](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
 * [CQ 5.5](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
@@ -59,4 +59,4 @@ Vous pouvez rechercher toutes les notes de mise à jour d’AEM à l’adresse s
 * [Notes de mise à jour d’AEM 6.5](/help/release-notes/home.md)
 * [Liste des fonctionnalités supprimées et obsolètes dans AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
-Si vous avez des questions, vous pouvez contacter notre [AEM équipe de la communauté](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) ou nous contacter sur Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).
+Si vous avez des questions, vous pouvez contacter notre [Équipe de la communauté AEM](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) ou contactez-nous sur Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).

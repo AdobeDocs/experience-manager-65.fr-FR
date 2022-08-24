@@ -63,18 +63,17 @@ Cette section de la documentation décrit comment connecter une suite de rapport
 1. [Publier](#publish-community-site-and-analytics-cloud-service) site de la communauté
 1. Configurer [import de données de rapport](#obtaining-reports-from-analytics) d’Adobe Analytics au site de la communauté
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour configurer les fonctionnalités d’Analytics for Communities, il est nécessaire de travailler avec le représentant de votre compte pour configurer un compte Adobe Analytics et [suite de rapports](#adobe-analytics-report-suite-for-video-reporting). Une fois établies, les informations suivantes doivent être disponibles :
 
 * **Nom de l’entreprise**
 
-   The company that is associated with the Adobe Analytics account.
+   Société associée au compte Adobe Analytics.
 
 * **Nom d’utilisateur**
 
-   The login user name for the user authorized to manage the Analytics account
-(should include Web Service Access privileges).
+   Nom d’utilisateur de connexion de l’utilisateur autorisé à gérer le compte Analytics (doit inclure les privilèges d’accès au service Web).
 
 * **Mot de passe**
 
@@ -135,7 +134,6 @@ Contactez le représentant de votre compte pour toute question concernant les va
 >* **`evar1`** à **`evar11`**
 >
 >* **`event1`** à **`event7`**
-
 >
 >**Avant que le site de la communauté ne soit publié,** il est important de restaurer le mappage préexistant en déplaçant les variables AEM automatiquement mappées aux variables Analytics lorsque Analytics a été activé pour un site de communauté.
 >
@@ -203,7 +201,7 @@ La création initiale d’une nouvelle configuration Analytics entraîne l’aff
 
 ![analytics-settings](assets/analytics-settings.png)
 
-* **Société**
+* **Entreprise**
 
    Société associée au compte Adobe Analytics.
 
@@ -273,9 +271,9 @@ Par exemple, saisissez *communities*.
 
 La création de la structure Analytics ouvre la structure pour la configuration.
 
-## AEM Analytics Framework Configuration {#aem-analytics-framework-configuration}
+## Configuration de la structure d’AEM Analytics {#aem-analytics-framework-configuration}
 
-L’objectif de la structure est de mapper AEM variables aux variables Analytics (eVars et événements). The Analytics variables available for mapping are [defined in the report suite](#adobe-analytics-report-suite-for-video-reporting).
+L’objectif de la structure est de mapper AEM variables aux variables Analytics (eVars et événements). Les variables Analytics disponibles pour le mappage sont les suivantes : [défini dans la suite de rapports](#adobe-analytics-report-suite-for-video-reporting).
 
 ![analytics-enablement-framework](assets/analytics-framework1.png)
 
@@ -283,12 +281,12 @@ L’objectif de la structure est de mapper AEM variables aux variables Analytics
 
 Sélectionnez la suite de rapports qui a été configurée pour la création de rapports vidéo.
 
-If a report suite has not yet been created or not properly set up, see the previous section:
-[Adobe Analytics Report Suite for Video Reporting](#adobe-analytics-report-suite-for-video-reporting)
+Si une suite de rapports n’a pas encore été créée ou n’a pas été correctement configurée, reportez-vous à la section précédente :
+[Suite de rapports Adobe Analytics pour les rapports vidéo](#adobe-analytics-report-suite-for-video-reporting)
 
 Le sidekick n’est pas nécessaire et peut être réduit afin de ne pas entraver l’accès aux paramètres des suites de rapports.
 
-#### Report Suites dialog before and after selecting &#39;Add Item&#39; {#report-suites-dialog-before-and-after-selecting-add-item}
+#### Boîte de dialogue Suites de rapports avant et après la sélection de l’option &quot;Ajouter un élément&quot; {#report-suites-dialog-before-and-after-selecting-add-item}
 
 ![report-suite](assets/report-suite.png)
 
@@ -409,7 +407,7 @@ Voici un exemple de mappages par défaut après avoir suivi les [tutoriel de pri
    <td><strong>UGC<br /> Type</strong></td>
    <td><strong>UGC<br /> Titre</strong></td>
    <td><strong>Utilisateur<br /> (Membre)</strong></td>
-   <td><strong>UGC<br /> Path</strong></td>
+   <td><strong>UGC<br /> Chemin</strong></td>
    <td><strong>Site<br /> Chemin</strong></td>
   </tr>
   <tr>
@@ -570,22 +568,21 @@ Il est conseillé de vérifier le mappage des variables avant de publier le site
 Voir les sections :
 
 * [Analytics mappé sur AEM variables](#mapped-analytics-to-aem-variables)
-* [Modifying Analytics Variable Mapping](#modifying-analytics-variable-mapping)
+* [Modification du mappage des variables Analytics](#modifying-analytics-variable-mapping)
 
 >[!CAUTION]
 >
->**If using an existing report suite that already uses variables within**
+>**Si vous utilisez une suite de rapports existante qui utilise déjà des variables dans**
 >
 >* **`evar1`** à **`evar11`**
 >
 >* **`event1`** à **`event7`**
-
 >
->**Then before the community site is published,** it is important to restore the pre-existing mapping and move the Communities AEM variables that were automatically mapped (when Analytics was enabled for the community site) to other Analytics variables. Ce remappage doit être cohérent dans tous les composants de Communities.
+>**Avant que le site de la communauté ne soit publié,** il est important de restaurer le mappage préexistant et de déplacer les variables d’AEM Communities qui étaient automatiquement mappées (lorsque Analytics a été activé pour le site de la communauté) vers d’autres variables Analytics. Ce remappage doit être cohérent dans tous les composants de Communities.
 >
->Failure to do so may result in unrecoverable data loss.
+>Si vous ne le faites pas, il se peut qu’il y ait une perte de données irrécupérable.
 
-### Primary Publisher {#primary-publisher}
+### Éditeur Principal {#primary-publisher}
 
 Lorsque le déploiement sélectionné est un [batterie de publication](/help/communities/topologies.md#tarmk-publish-farm), une instance de publication AEM doit être identifiée en tant qu’éditeur Principal pour interroger Adobe Analytics afin que les données de rapport soient écrites dans . [SRP](/help/communities/working-with-srp.md).
 

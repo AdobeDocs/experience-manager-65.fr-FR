@@ -1,8 +1,8 @@
 ---
 title: Développement dans CRXDE Lite
-seo-title: Développement dans CRXDE Lite
+seo-title: Developing with CRXDE Lite
 description: CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur
-seo-description: CRXDE Lite est intégré à CRX/CQ et permet d’effectuer des tâches de développement standard dans le navigateur
+seo-description: CRXDE Lite is embedded into AEM and enables you to perform standard development tasks in the browser
 uuid: f4890354-d8b8-4fb9-af2f-3359f931f883
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2155'
+source-wordcount: '2134'
 ht-degree: 93%
 
 ---
@@ -105,7 +105,7 @@ CRXDE Lite offre les fonctionnalités suivantes :
   </tr>
   <tr>
    <td>Créer ...<br /> </td>
-   <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>Fichier</strong> : noeud nt:file et son sous-noeud nt:resource</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
+   <td><p>Menu déroulant permettant de créer les éléments suivants sous le nœud sélectionné :<br /> </p> <p>- <strong>Nœud</strong> : nœud avec un type de nœud arbitraire<br /> </p> <p>- <strong>Fichier</strong>: noeud nt:file et son sous-noeud nt:resource</p> <p>- <strong>Dossier</strong> : nœud nt:folder</p> <p>- <strong>Modèle</strong> : modèle AEM</p> <p>- <strong>Composant</strong> : composant AEM</p> <p>- <strong>Boîte de dialogue</strong> : boîte de dialogue AEM</p> </td>
   </tr>
   <tr>
    <td>Supprimer<br /> </td>
@@ -164,21 +164,21 @@ Pour créer un modèle avec CRXDE Lite :
 
 1. Cette étape est facultative : définissez **Chemins autorisés**. Cliquez sur **Suivant**
 
-1. Cette étape est facultative : Définissez la **Parents autorisés**. Cliquez sur **Suivant**.
+1. Cette étape est facultative : définissez la variable **Parents autorisés**. Cliquez sur **Suivant**.
 
-1. Cette étape est facultative : définissez **Enfants autorisés**. Cliquez sur **OK**.
+1. Cette étape est facultative : définissez la variable **Enfants autorisés**. Cliquez sur **OK**.
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
 Cela crée :
 
-* Noeud de type `cq:Template` avec propriétés de modèle
+* Un noeud de type `cq:Template` avec les propriétés de modèle
 
 * Un nœud enfant de type `cq:PageContent`avec les propriétés de contenu de page
 
 Vous pouvez ajouter des propriétés à votre modèle : reportez-vous à la section [Création d’une propriété](#creating-a-property).
 
-## Création d’un composant  {#creating-a-component}
+## Création d’un composant {#creating-a-component}
 
 La fonctionnalité décrite ici n’est disponible que si CQ5 est installé, c’est-à-dire si le type de nœud `cq:Component` est disponible dans le référentiel.
 
@@ -203,12 +203,12 @@ Cela crée :
 * Les propriétés du composant
 * Un script .jsp de composant
 
-## Création d’une boîte de dialogue  {#creating-a-dialog}
+## Création d’une boîte de dialogue {#creating-a-dialog}
 
 Pour créer une boîte de dialogue avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Dans le volet de navigation, cliquez avec le bouton droit sur le composant dans lequel vous souhaitez créer la boîte de dialogue, sélectionnez **Créer ...**, puis **Créer une boîte de dialogue...**.
+1. Dans le volet de navigation, cliquez avec le bouton droit sur le composant dans lequel vous souhaitez créer la boîte de dialogue, puis sélectionnez **Créer ...**, puis **Boîte de dialogue Créer ...**.
 
 1. Entrez le **Libellé** et le **Titre**. Cliquez sur **OK**.
 
@@ -249,7 +249,7 @@ Pour créer une propriété avec CRXDE Lite :
 
 1. Cliquez sur **Enregistrer tout** pour enregistrer les modifications sur le serveur.
 
-## Création d’un script  {#creating-a-script}
+## Création d’un script {#creating-a-script}
 
 Pour créer un script :
 
@@ -264,7 +264,7 @@ Pour créer un script :
 
 ## Exportation et importation de types de nœuds {#exporting-and-importing-node-types}
 
-Avec CRXDE Lite, vous pouvez importer et/ou exporter des définitions de type de noeud dans la notation [CND (espace de noms compacte et définition de type de noeud)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+Avec CRXDE Lite, vous pouvez importer et/ou exporter des définitions de type de noeud dans [Notation CND (Compact Namespace et définition de type de noeud)](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Pour exporter une définition de type de nœud :
 

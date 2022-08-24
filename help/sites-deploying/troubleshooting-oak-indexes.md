@@ -136,7 +136,7 @@ Pour identifier et résoudre un processus de réindexation bloqué, procédez co
 La réindexation peut être abandonnée en toute sécurité (arrêtée avant d’être terminée) via le `async, async-reindex`et f `ulltext-async` pistes d’indexation ( `IndexStats` Mbean). Pour plus d’informations, voir également la documentation Apache Oak sur [Abandon de la réindexation](https://jackrabbit.apache.org/oak/docs/query/indexing.html#abort-reindex). En outre, tenez compte des points suivants :
 
 * La réindexation des index Lucene et Lucene Property peut être abandonnée, car ils sont naturellement asynchrones. 
-* La réindexation des index de propriété Oak ne peut être abandonnée que si la réindexation a été initiée via l’événement `PropertyIndexAsyncReindexMBean`.
+* La réindexation des index de propriété Oak ne peut être abandonnée que si la réindexation a été initiée via le `PropertyIndexAsyncReindexMBean`.
 
 Pour abandonner la réindexation, procédez comme suit :
 

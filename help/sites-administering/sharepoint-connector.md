@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 69%
+ht-degree: 70%
 
 ---
 
@@ -204,8 +204,8 @@ AEM Connecteur JCR pour Microsoft SharePoint 2010 et Microsoft SharePoint 2013, 
 Accédez à : [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
 1. Cliquez sur OSGi > Configuration.
-1. Rechercher &quot;Day JCR Connector for Microsoft Share&quot;
-1. Cliquez sur &quot;Editer les valeurs de configuration&quot;.
+1. Recherchez Day JCR Connector for Microsoft SharePoint.
+1. Cliquez sur Modifier les valeurs de configuration.
 1. Définissez la valeur de Fabrique de connexions SharePoint sur com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory/.
 1. Cliquez sur **Enregistrer**.
 

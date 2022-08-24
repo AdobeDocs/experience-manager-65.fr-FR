@@ -1,19 +1,19 @@
 ---
 title: Mise à niveau des formulaires de recherche personnalisée
-seo-title: Mise à niveau des formulaires de recherche personnalisée
+seo-title: Upgrading Custom Search Forms
 description: 'Cet article décrit les réglages nécessaires après une mise à niveau pour les formulaires de recherche personnalisés. '
-seo-description: 'Cet article décrit les réglages nécessaires après une mise à niveau pour les formulaires de recherche personnalisés. '
+seo-description: This article details the adjustments that are required after an upgrade in order for the custom search forms to function.
 uuid: 35b8fbb9-5951-4e1c-bf04-4471a55b9cb0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1710'
+source-wordcount: '1685'
 ht-degree: 63%
 
 ---
@@ -47,9 +47,9 @@ Vous pouvez modifier la propriété en procédant comme suit :
 
 ## Liste de formulaires de recherche personnalisée {#list-of-custom-search-forms}
 
-Vous trouverez ci-dessous une liste de tous les formulaires de recherche personnalisée et des modifications dont ils ont besoin après la mise à niveau. Ils se réfèrent aux noms de `/conf/global/settings/cq/search/facets/sites/items`.
+Vous trouverez ci-dessous une liste de tous les formulaires de recherche personnalisée et des modifications dont ils ont besoin après la mise à niveau. Ils font référence aux noms figurant dans la section `/conf/global/settings/cq/search/facets/sites/items`.
 
-### Prédicat de texte intégral avec le nom de noeud &quot;fulltext&quot; {#fulltext-predicate-with-node-name-fulltext}
+### Prédicat de texte intégral avec pour nom du noeud « fulltext » {#fulltext-predicate-with-node-name-fulltext}
 
 <table>
  <tbody>
@@ -91,7 +91,7 @@ Dans AEM 6.1, le prédicat de texte intégral standard fait partie du formulair
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicats de navigateur de chemin d’accès {#path-browser-predicates}
 
@@ -112,7 +112,7 @@ Dans AEM 6.1, le prédicat de texte intégral standard fait partie du formulair
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicats de balises {#tags-predicates}
 
@@ -128,7 +128,7 @@ Dans AEM 6.1, le prédicat de texte intégral standard fait partie du formulair
   </tr>
   <tr>
    <td>Type de ressource dans la version 6.2</td>
-   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/tagspredicates</p> </td>
+   <td><p>cq/gui/components<strong>/coral/</strong>common/admin/customsearch/searchpredicates/tagspredicate</p> </td>
   </tr>
  </tbody>
 </table>
@@ -158,7 +158,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
 
 **Actions:**
 
-* Supprimer le noeud `pagestatuspredicate`
+* Supprimez le `pagestatuspredicate` node
 * Copier le nœud
 
    * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
@@ -169,9 +169,9 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
    * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
    * vers `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
-* Veillez à définir la propriété `listOrder` du noeud `analyticspredicate` sur &quot;**8**&quot;. Cela est nécessaire pour éviter les conflits.
+* Assurez-vous que la variable `listOrder` pour la propriété `analyticspredicate` noeud à &quot;**8**&quot;. Cela est nécessaire pour éviter les conflits.
 
-### Prédicats de plage de dates  {#date-range-predicates}
+### Prédicats de plage de dates {#date-range-predicates}
 
 <table>
  <tbody>
@@ -190,9 +190,9 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
-### Filtre masqué {#hidden-filter}
+### Masqué Filtrer {#hidden-filter}
 
 <table>
  <tbody>
@@ -232,7 +232,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicat de plage {#range-predicate}
 
@@ -253,7 +253,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 >[!NOTE]
 >
@@ -278,7 +278,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicat de plage de curseurs {#slider-range-predicate}
 
@@ -299,7 +299,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicat de composants {#components-predicate}
 
@@ -320,7 +320,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicat d’auteur {#author-predicate}
 
@@ -341,7 +341,7 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicat de modèles {#templates-predicate}
 
@@ -362,13 +362,13 @@ L’état de page a été remplacé par deux prédicats de propriétés d’opti
  </tbody>
 </table>
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ## Rail de recherche d’administrateurs de ressources {#assets-admin-search-rail}
 
-Les noeuds ci-dessous font référence aux noms dans `/conf/global/settings/dam/search/facets/assets/items`
+Les noeuds ci-dessous font référence aux noms figurant dans `/conf/global/settings/dam/search/facets/assets/items`
 
-### Prédicat de texte intégral avec le nom de noeud &quot;fulltext&quot; {#fulltext-predicate-with-node-name-fulltext-1}
+### Prédicat de texte intégral avec pour nom du noeud « fulltext » {#fulltext-predicate-with-node-name-fulltext-1}
 
 | Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1 | fulltext |
 |---|---|
@@ -379,14 +379,14 @@ Dans la version 6.1, le prédicat de texte intégral standard faisait partie du
 
 **Action :** Supprimez le nœud mentionné ci-dessus.
 
-### Prédicats de navigateur de chemin d’accès  {#path-browser-predicates-1}
+### Prédicats de navigateur de chemin d’accès {#path-browser-predicates-1}
 
 | Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1 | pathbrowser |
 |---|---|
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/pathbrowserpredicate |
 | Type de ressource dans la version 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/pathbrowserpredicate |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicats de type MIME {#mime-type-predicates}
 
@@ -395,7 +395,7 @@ Dans la version 6.1, le prédicat de texte intégral standard faisait partie du
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Type de ressource dans la version 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus).
 
 ### Prédicats de taille de fichier {#file-size-predicates}
 
@@ -424,11 +424,11 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 
 **Actions :**
 
-* Ajustez la propriété `resourceType` (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+* Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
-* Ajoutez une propriété `optionPaths` (de type Chaîne) avec la valeur : `/libs/dam/options/predicates/publish`
+* Ajoutez un `optionPaths` (de type Chaîne) avec la valeur : `/libs/dam/options/predicates/publish`
 
-* Ajoutez la propriété `singleSelect` avec la valeur booléenne `true`.
+* Ajouter `singleSelect` propriété avec valeur booléenne `true`.
 
 ### Prédicats d’état {#status-predicates}
 
@@ -437,7 +437,7 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Type de ressource dans la version 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
 ### Prédicats d’état d’expiration {#expiry-status-predicates}
 
@@ -446,7 +446,7 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/expiredassetpredicate |
 | Type de ressource dans la version 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/expiredassetpredicate |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
 ### Prédicats de validité de métadonnées {#metadata-validity-predicates}
 
@@ -455,7 +455,7 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Type de ressource dans la version 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
 ### Prédicats d’évaluation {#rating-predicates}
 
@@ -464,7 +464,7 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/ratingpredicate |
 | Type de ressource dans la version 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
 ### Prédicats d’orientation {#orientation-predicate}
 
@@ -475,7 +475,7 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 
 **Actions :**
 
-* Ajustez la propriété `resourceType` (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+* Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
 * Ajoutez une propriété `fieldLabel` avec la même valeur que la propriété `text` du même nœud.
 
@@ -492,7 +492,7 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 
 **Actions :**
 
-* Ajustez la propriété `resourceType` (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+* Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
 * Ajoutez une propriété `fieldLabel` avec la même valeur que la propriété `text` du même nœud.
 
@@ -507,7 +507,7 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | Type de ressource dans la version 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)
 
 ### Prédicat de ressource principale {#mainasset-predicate}
 
@@ -516,4 +516,4 @@ Action : Ajustez la propriété resourceType (ajoutez &quot;/coral&quot; comme d
 | Type de ressource dans la version 6.1 | granite/ui/components/foundation/form/hidden |
 | Type de ressource dans la version 6.2 | granite/ui/components/coral/foundation/form/hidden |
 
-**Action :** Ajustez la  `resourceType` propriété (ajoutez &quot;**/coral**&quot; comme dans l’emplacement 6.2 indiqué ci-dessus).
+**Action :** Réglez les `resourceType` (ajouter &quot;**/coral**&quot; comme à l’emplacement 6.2 indiqué ci-dessus)

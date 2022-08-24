@@ -1,20 +1,20 @@
 ---
 title: Connexion unique
-seo-title: Connexion unique
+seo-title: Single Sign On
 description: 'Découvrez comment configurer la connexion unique (SSO) pour une instance AEM. '
-seo-description: 'Découvrez comment configurer la connexion unique (SSO) pour une instance AEM. '
+seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
-feature: Configuration
+feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 81%
+source-wordcount: '740'
+ht-degree: 82%
 
 ---
 
@@ -35,7 +35,7 @@ Configurez les deux services suivants pour identifier le nom de l’attribut qui
 * Le module de connexion.
 * Le service d’authentification SSO.
 
-Vous devez spécifier le même nom d’attribut pour les deux services. L’attribut est inclus dans la balise `SimpleCredentials` fournie à `Repository.login`. La valeur de l’attribut est inutile et ignorée. Sa simple présence est importante et vérifiée.
+Vous devez spécifier le même nom d’attribut pour les deux services. L’attribut est inclus dans la variable `SimpleCredentials` qui est fourni à `Repository.login`. La valeur de l’attribut est inutile et ignorée. Sa simple présence est importante et vérifiée.
 
 ## CONFIGURATION SSO {#configuring-sso}
 
@@ -46,8 +46,8 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
    Par exemple, pour l’ensemble NTLM :
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
-   * **Noms des en-têtes** :  `LOGON_USER`
-   * **Format** d’ID :  `^<DOMAIN>\\(.+)$`
+   * **Noms des en-têtes**: `LOGON_USER`
+   * **Format d’ID**: `^<DOMAIN>\\(.+)$`
 
       Où `<*DOMAIN*>` est remplacé par votre propre nom de domaine.
    Pour CoSign :
@@ -76,44 +76,36 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
 >
 >Assurez-vous également vous configurez uniquement les en-têtes, cookies et noms de paramètres de demandes requis pour votre configuration SSO.
 
-
 >[!NOTE]
 >
 >La connexion unique est souvent utilisée avec [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Si vous utilisez également le [dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) avec le serveur Microsoft Internet Information (IIS) une configuration supplémentaire sera nécessaire dans :
+>Si vous utilisez également le [dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html) avec le serveur Microsoft Internet Information (IIS) une configuration supplémentaire sera nécessaire dans :
 >
 >* `disp_iis.ini`
 >* IIS
-
 >
->
-Dans `disp_iis.ini` défini :
+>Dans `disp_iis.ini` set :
 >(voir [installation de Dispatcher avec Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
 >
 >* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
 >* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « Basic » par son « Basic » équivalent)
-
 >
->
-Dans IIS :
+>Dans IIS :
 >
 >* désactiver **l’accès anonyme**
-   >
-   >
-* autoriser **l’authentification intégrée de Windows**
-
 >
-
+>* autoriser **l’authentification intégrée de Windows**
+>
 
 
 Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’importe quelle section de l’arborescence de contenu à l’aide de l’option **Authentificateur** de la console Felix ; par exemple :
 
 `http://localhost:4502/system/console/slingauth`
 
-Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez handler-A pour le chemin `/` et handler-B pour le chemin `/content`, une requête vers `/content/mypage.html` interrogera d’abord le gestionnaire-B.
+Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez le gestionnaire-A pour le chemin d’accès `/` et gestionnaire-B pour le chemin `/content`, puis une requête à `/content/mypage.html` interrogera d’abord le gestionnaire-B.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
@@ -131,13 +123,13 @@ Utilisation de la configuration suivante :
 
 * **Chemin**: `/`
 
-* **Noms des en-têtes** :  `TestHeader`
+* **Noms des en-têtes**: `TestHeader`
 
-* **Noms des cookies** :  `TestCookie`
+* **Noms des cookies**: `TestCookie`
 
-* **Noms des paramètres** :  `TestParameter`
+* **Noms des paramètres**: `TestParameter`
 
-* **Format** d’ID :  `AsIs`
+* **Format d’ID**: `AsIs`
 
 La réponse est :
 
@@ -160,27 +152,27 @@ Transfer-Encoding: chunked
 Cela fonctionne également si vous demandez :
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Vous pouvez également utiliser la commande curl suivante pour envoyer l’en-tête `TestHeader` à `admin:`.
+Vous pouvez également utiliser la commande curl suivante pour envoyer la variable `TestHeader` en-tête à `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
 >
 >Lorsque vous utilisez le paramètre de demande dans un navigateur, vous ne verrez qu’une partie du HTML, sans le CSS. C’est parce que toutes les demandes HTML sont effectuées sans paramètre de requête.
 
-## Suppression des liens de déconnexion AEM  {#removing-aem-sign-out-links}
+## Suppression des liens de déconnexion AEM {#removing-aem-sign-out-links}
 
 Lorsque vous utilisez le SSO, la connexion et la déconnexion sont traités en externe, de sorte que les liens de déconnexion d’AEM ne s’appliquent plus et doivent être supprimés.
 
 Le lien de déconnexion sur l’écran de bienvenue peut être supprimé en suivant les étapes suivantes.
 
-1. Superposez `/libs/cq/core/components/welcome/welcome.jsp` à `/apps/cq/core/components/welcome/welcome.jsp`
+1. Incrustation `/libs/cq/core/components/welcome/welcome.jsp` to `/apps/cq/core/components/welcome/welcome.jsp`
 1. Supprimez la partie suivante de JSP.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Pour supprimer le lien de déconnexion disponible dans le menu personnel de l’utilisateur dans le coin supérieur droit, procédez comme suit :
 
-1. Superposez `/libs/cq/ui/widgets/source/widgets/UserInfo.js` à `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Incrustation `/libs/cq/ui/widgets/source/widgets/UserInfo.js` to `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. Supprimez la partie suivante du fichier :
 

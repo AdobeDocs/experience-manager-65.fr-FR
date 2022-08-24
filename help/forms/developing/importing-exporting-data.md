@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2778'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,8 +181,8 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
 
 1. Enregistrez le formulaire au format PDF.
 
-   * Créez un `java.io.File` et assurez-vous que l’extension de fichier est &quot;.PDF&quot;.
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` qui a été renvoyé par la méthode `importData`).
+   * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est « .PDF ».
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` qui a été renvoyé par la méthode `importData`).
 
 **Voir également**
 

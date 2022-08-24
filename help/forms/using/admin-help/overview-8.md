@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 100%
 
@@ -31,8 +31,8 @@ Vous pouvez exécuter plusieurs tâches à partir des pages Output d’Administr
 * indiquer des chemins d’accès absolus et relatifs pour les emplacements d’URL, d’URI, de XCI et de fichiers (voir [Définition des emplacements de fichiers pour Output](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)) ;
 * configurer la taille de la mémoire cache et la stratégie de mise en cache (voir [Définition du mode de cache](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) et [Configuration des paramètres du cache](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings)) ;
 * rendre les polices disponibles sur le serveur d’applications (voir [Rendre les polices disponibles](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available)) ;
-* définir les polices à incorporer (voir [Définition des polices à incorporer](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed)) ;
-* définir des options de configuration XCI (voir [Définition des options de configuration XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options)) ;
-* définir les paramètres de protection (voir [Définition des paramètres de protection](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings)).
+* Définition des polices à incorporer. (voir [Définition des polices à incorporer](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed)) ;
+* Définition des options de configuration XCI. (voir [Définition des options de configuration XCI](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options)) ;
+* Définition des paramètres de protection. (voir [Définition des paramètres de protection](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings)).
 
 Une fois les paramètres modifiés, cliquez sur Enregistrer pour les appliquer à Output. Vous n’avez pas besoin de redémarrer le serveur pour que les modifications soient appliquées, mais vous devez redémarrer le service Output lors de la configuration des paramètres du cache.

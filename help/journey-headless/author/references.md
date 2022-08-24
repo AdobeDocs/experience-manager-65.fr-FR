@@ -1,91 +1,92 @@
 ---
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
-description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Introduisez la nécessité et la mécanique des fragments imbriqués pour la création CMS sans affichage.
-source-git-commit: 38525b6cc14e9f6025564c060b8cfb4f9e0ea473
+description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
+exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
 # En savoir plus sur l’utilisation de références dans les fragments de contenu {#author-headless-references}
 
-## L&#39;histoire jusqu&#39;à présent {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
-Au début du [AEM Parcours de création de contenu sans affichage](overview.md) la valeur [Introduction](introduction.md) couvrait les concepts de base et la terminologie relatifs à la création pour les sans-tête.
+Au début du [Parcours de création de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
-Vous avez appris les principes de base de la création CMS sans affichage avec une introduction à la création avec AEMaaCS, et en particulier à la création de fragments de contenu.
+Vous avez appris les principes de base de la création CMS découplée grâce à une introduction à la création avec AEMaaCS et en particulier à la création de fragments de contenu.
 
-Cet article s’appuie sur ces éléments afin que vous compreniez comment utiliser des références pour créer votre propre contenu pour votre projet AEM sans interface.
+Cet article s’appuie sur ces éléments afin que vous compreniez comment utiliser des références pour créer votre propre contenu pour votre projet AEM découplé.
 
 ## Objectif {#objective}
 
 * **Audience** : Niveau avancé
-* **Objectif**: Introduisez l’utilisation de références pour la création CMS sans affichage. Quels types de références sont disponibles et à quelles fins :
+* **Objectif** : découvrez l’utilisation de références pour la création CMS découplée. Quels types de références sont disponibles et à quelles fins :
 
    * Références du contenu
    * Références de ressources/médias
    * Références à un fragment
    * Références ad hoc depuis un bloc de texte
 
-## Références {#what-are-references}
+## Que sont les références {#what-are-references}
 
-Les références sont simplement un mécanisme de connexion de vos ressources, qu’il s’agisse d’autres contenus, ressources (comme dans les images) ou autres fragments. Bien que très similaire, il existe des différences.
+Les références sont simplement un mécanisme de connexion de vos ressources, qu’il s’agisse d’autres contenus, ressources (comme dans les images) ou autres fragments. Bien que très similaires, il existe des différences.
 
 Certaines références comportent des types de données dédiés (par exemple, Références de contenu et Références de fragment), tandis que d’autres sont simplement ajoutées comme référence dans un bloc de texte (références de ressources et références ad hoc).
 
-![Fragments de contenu - Références](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
+![Fragments de contenu – Références](/help/journey-headless/author/assets/headless-journey-author-references-01.png)
 
 ## Références du contenu {#content-references}
 
-C’est exactement ce que font les références de contenu : elles vous permettent de référencer tout autre contenu. Un navigateur s’ouvre, vous permettant de sélectionner l’élément de contenu.
+Leur nom est clair : les références de contenu vous permettent de faire référence à tout autre contenu. Un navigateur s’ouvre, vous permettant de sélectionner l’élément de contenu.
 
 ## Références de ressources/médias {#assets-media-references}
 
-Les ressources (images ou médias, par exemple) peuvent être référencées dans un bloc de texte à l’aide de la fonction **Insérer une ressource** . Un navigateur s’ouvre alors pour vous permettre de sélectionner la ressource.
+Les ressources (images ou médias, par exemple) peuvent être référencées dans un bloc de texte à l’aide de l’option **Insérer une ressource**. Un navigateur s’ouvre alors pour vous permettre de sélectionner la ressource.
 
-![Fragments de contenu - Insérer une ressource](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![Fragments de contenu – Insérer une ressource](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Références à un fragment {#fragment-references}
 
-Encore une fois, les Références de fragment font exactement cela : elles vous permettent de référencer un autre fragment. La raison pour laquelle cela est important nécessite un peu plus d&#39;explications.
+Encore une fois, les références de fragment font exactement ce que leur nom suggère : elles vous permettent de faire référence à un autre fragment. La raison pour laquelle il est important d’insister sur ce fait nécessite un peu plus d’explications.
 
-Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
+Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 
 * Ville
-* Société
+* Entreprise
 * Personne
 * Distinctions
 
-Cela semble assez simple, mais bien sûr, une entreprise a à la fois un PDG et des employés....et ce sont tous des gens, chacun défini comme une Personne.
+Cela semble évident, bien sûr, mais une entreprise compte à la fois un PDG et des employés...Et chaque élément d’entre eux est défini en tant que personne.
 
-Et une Personne peut recevoir un Prix (ou peut-être deux).
+Et une personne peut recevoir une distinction (ou peut-être deux).
 
-* Mon entreprise - Société
-   * PDG - Personne
-   * Employé(s) - Personne
-      * Prix(s) personnel(s) - Prix
+* Mon entreprise – Société
+   * PDG – Personne
+   * Employé(s) – Personne
+      * Récompense(s) personnelle(s) – Distinction
 
-Et c&#39;est juste pour commencer. En fonction de la complexité, une récompense peut être propre à une entreprise ou son siège social dans une ville donnée.
+Voilà pour commencer. En fonction du niveau de complexité, une distinction peut être propre à une entreprise, ou le siège social d’une entreprise peut être situé dans une ville donnée.
 
-Vous pouvez représenter ces interrelations à l’aide des Références de fragment, car elles sont comprises à la fois par vous (l’auteur) et par les applications sans tête.
+Vous pouvez représenter ces interconnexions à l’aide de références de fragments, car ils peuvent être compris à la fois par vous (l’auteur) et par les applications découplées.
 
-En tant qu’auteur, vous n’êtes pas responsable de la définition de ces relations (c’est l’architecte de contenu qui définit ces relations lors de la création du modèle de fragment de contenu), mais vous devez savoir comment reconnaître et modifier les références.
+En tant qu’auteur, vous n’êtes pas responsable de la définition de ces relations (l’architecte de contenu les définit lors de la création du modèle de fragment de contenu), mais vous devez savoir comment reconnaître et modifier les références.
 
 ### Création de fragments imbriqués {#author-nested-fragment}
 
-La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus probablement) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet de naviguer et de sélectionner le fragment dont vous avez besoin.
+La création de références de fragments est assez simple (bien que le champ ne soit généralement pas étiqueté comme **Référence de fragment**). Vous pouvez saisir directement la référence ou (plus couramment) sélectionner l’icône de dossier pour ouvrir un navigateur qui vous permet d’accéder au fragment dont vous avez besoin et de le sélectionner.
 
-![Fragments de contenu - Références](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
+![Fragments de contenu – Références](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
-La définition du modèle de fragment de contenu contrôle :
+La définition du modèle de fragment de contenu contrôle :
 
-* si vous pouvez choisir d’ajouter plusieurs références ;
-* les types de modèles de fragments de contenu que vous pouvez sélectionner ; Le modèle de fragment de contenu définit les modèles de fragment autorisés pour la référence. AEM présente donc uniquement les fragments basés sur ces modèles.
+* si vous pouvez choisir d’ajouter plusieurs références ;
+* les types de modèles de fragments de contenu que vous pouvez sélectionner. Le modèle de fragment de contenu définit les modèles de fragment autorisés comme référence. AEM présente donc uniquement les fragments basés sur ces modèles.
 
 ### Navigation dans les fragments imbriqués {#navigate-nested-fragment}
 
-En utilisant la variable **Arborescence de structure** de l’éditeur de fragment de contenu, vous pouvez parcourir les fragments référencés par votre fragment, puis parcourir toutes les références qu’ils peuvent contenir. La sélection d’une référence ouvre ce fragment en vue de le modifier.
+En utilisant la variable **Arborescence de la structure** de l’éditeur de fragment de contenu, vous pouvez parcourir les fragments référencés par votre fragment, puis parcourir toutes les références qu’ils peuvent contenir. La sélection d’une référence ouvre ce fragment en vue de le modifier.
 
 >[!NOTE]
 >
@@ -95,13 +96,13 @@ En utilisant la variable **Arborescence de structure** de l’éditeur de fragme
 
 ## Références ad hoc {#adhoc-references}
 
-Les références ad hoc peuvent être ajoutées sous la forme d’un lien simple dans un bloc de texte :
+Les références ad hoc peuvent être ajoutées sous la forme d’un simple lien dans un bloc de texte :
 
-![Fragments de contenu - Références ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
+![Fragments de contenu – Références ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
-Maintenant que vous en savez plus sur les références et la structure dans les fragments de contenu, l’étape suivante consiste à [En savoir plus sur les métadonnées et le balisage](metadata-tagging.md). Cette section présente et discute de la manière dont vous pouvez définir des métadonnées et des balises pour vos fragments de contenu.
+Maintenant que vous en savez plus sur les références et la structure dans les fragments de contenu, l’étape suivante consiste à [en savoir plus sur les métadonnées et le balisage](metadata-tagging.md). Cette section présente et discute de la manière dont vous pouvez définir des métadonnées et des balises pour vos fragments de contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -112,18 +113,18 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
       * [Application de la configuration à votre dossier de ressources](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Création d’un fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variations - création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
+   * [Variations – Création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Modèles de fragment de contenu - Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modèles de fragment de contenu - Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 
 * Guides de prise en main
    * [Guide de démarrage rapide sur la création d’un dossier de ressources découplées](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
-* [AEM Parcours d’architecture de contenu sans affichage](/help/journey-headless/architect/overview.md)
+* [Parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
 
-* [AEM Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md)
+* [Parcours de traduction découplée AEM](/help/journey-headless/translation/overview.md)

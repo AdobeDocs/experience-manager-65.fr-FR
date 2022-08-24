@@ -89,7 +89,7 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
    <td>Oui via open source via GitHub. Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et est compatible avec la version 2.3.1).</td>
   </tr>
   <tr>
-   <td>Quand utiliser la personnalisation</td>
+   <td>Quand l’utiliser</td>
    <td>Cas d’utilisation limités : par ex., dans le cas des scénarios dans lesquels de petits catalogues statiques doivent être importés</td>
    <td>Solution conseillée dans la plupart des cas d’utilisation</td>
   </tr>

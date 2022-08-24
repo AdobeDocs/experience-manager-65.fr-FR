@@ -12,7 +12,7 @@ discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3926'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Vous pouvez appliquer des droits d’utilisation aux documents PDF à l’aide d
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -158,7 +158,7 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -167,22 +167,22 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
 1. Créez un objet Client des extensions Acrobat Reader DC.
 
    * Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `ReaderExtensionsServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Veillez à spécifier `?blob=mtom`.)
-   * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
+   * Créez un objet `ReaderExtensionsServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Assurez-vous de spécifier `?blob=mtom`).
+   * Créez un objet `System.ServiceModel.BasicHttpBinding` en récupérant la valeur du champ `ReaderExtensionsServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur de mot de passe correspondante au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez un document PDF.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF auquel des droits d’utilisation sont appliqués.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec le flux de données en appelant la méthode `Read` de l’objet `System.IO.FileStream`. Transmettez le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
 
 1. Spécifiez les droits d’utilisation à appliquer.
@@ -197,12 +197,12 @@ Appliquez des droits d’utilisation à un document PDF à l’aide de l’API d
    * Affectez une valeur de chaîne spécifiant le message qu’un utilisateur voit lorsqu’un document PDF défini avec des droits d’utilisation est ouvert dans Adobe Reader au membre de données `message` de l’objet `ReaderExtensionsOptionSpec`.
    * Appliquez des droits d’utilisation au document PDF en appelant la méthode `applyUsageRights` de l’objet `ReaderExtensionsServiceClient` et en transmettant les valeurs suivantes :
 
-      * Objet `BLOB` contenant le document PDF auquel des droits d’utilisation sont appliqués.
+      * Objet `BLOB` contenant le document PDF auquel les droits d’utilisation sont appliqués.
       * Valeur de chaîne spécifiant l’alias des informations d’identification qui vous permettent d’appliquer les droits d’utilisation.
       * Valeur string qui spécifie la valeur du mot de passe correspondant. (Actuellement, ce paramètre est ignoré. Vous pouvez transmettre `null`.)
    * Objet `ReaderExtensionsOptionSpec` contenant les options d’exécution.
 
-   La méthode `applyUsageRights` renvoie un objet `BLOB` contenant le document PDF défini avec des droits d’utilisation.
+   La méthode `applyUsageRights` renvoie un objet `BLOB` qui contient le document PDF dont les droits sont activés.
 
 1. Enregistrez le document PDF défini avec des droits d’utilisation.
 
@@ -225,7 +225,7 @@ Vous pouvez supprimer des droits d’utilisation d’un document défini avec de
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -277,11 +277,11 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 
 1. Incluez les fichiers de projet.
 
-   Incluez les fichiers JAR du client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
+   Incluez les fichiers JAR client, tels qu’adobe-livecycle-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
 1. Créez un objet Client des extensions Acrobat Reader DC.
 
-   Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` qui contient des propriétés de connexion.
+   Créez un objet `ReaderExtensionsServiceClient` en utilisant son constructeur et en transmettant un objet `ServiceClientFactory` contenant des propriétés de connexion.
 
 1. Récupérez un document PDF.
 
@@ -313,7 +313,7 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -327,10 +327,10 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur du mot de passe correspondant au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez un document PDF.
 
@@ -338,11 +338,11 @@ Supprimez les droits d’utilisation d’un document PDF dont les droits sont ac
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
-   * Renseignez l’objet `BLOB` en affectant à sa propriété `MTOM` le contenu du tableau d’octets.
+   * Renseignez l’objet `BLOB` en affectant sa propriété `MTOM` au contenu du tableau d’octets.
 
 1. Supprimez les droits d’utilisation du document PDF.
 
-   Supprimez les droits d’utilisation du document PDF en appelant la méthode `removeUsageRights` de l’objet `ReaderExtensionsServiceClient` et en transmettant l’objet `BLOB` contenant le document PDF défini avec des droits d’utilisation. Cette méthode renvoie un objet `BLOB` contenant un document PDF ne disposant pas de droits d’utilisation.
+   Supprimez les droits d’utilisation du document PDF en appelant la méthode `removeUsageRights` de l’objet `ReaderExtensionsServiceClient` et en transmettant l’objet `BLOB` qui contient le document PDF dont les droits sont activés. Cette méthode renvoie un objet `BLOB` qui contient un document PDF ne disposant pas de droits d’utilisation.
 
 1. Appliquez les droits d’utilisation au document PDF.
 
@@ -364,14 +364,14 @@ Vous pouvez récupérer des informations sur les informations d’identification
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
 Pour récupérer des informations sur les informations d’identification utilisées pour appliquer des droits d’utilisation à un document PDF, procédez comme suit :
 
 1. Incluez les fichiers de projet.
-1. Créez un objet client Extensions Acrobat Reader DC.
+1. Créez un objet Client des extensions Acrobat Reader DC.
 1. Récupérez un document PDF dont les droits sont activés.
 1. Récupérez des informations sur les informations d’identification.
 
@@ -379,7 +379,7 @@ Pour récupérer des informations sur les informations d’identification utilis
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, veillez à inclure les fichiers proxy.
 
-**Créer un objet client d’extensions Acrobat Reader DC**
+**Créer un objet client Extensions Acrobat Reader DC**
 
 Avant d’effectuer par programmation une opération de service d’extensions Acrobat Reader DC, vous devez créer un objet client de service d’extensions Acrobat Reader DC. Si vous utilisez l’API Java, créez un objet `ReaderExtensionsServiceClient`. Si vous utilisez l’API Web Service Extensions Acrobat Reader DC, créez un objet `ReaderExtensionsServiceService`.
 
@@ -448,7 +448,7 @@ Récupérez les informations d’identification à l’aide de l’API des exten
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -462,17 +462,17 @@ Récupérez les informations d’identification à l’aide de l’API des exten
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM Forms au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur de mot de passe correspondante au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Récupérez un document PDF.
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` est utilisé pour stocker un document de PDF dont les droits sont activés.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF dont les droits sont activés et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de flux en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en affectant sa propriété `MTOM` au contenu du tableau d’octets.
 
 1. Supprimez les droits d’utilisation du document PDF.

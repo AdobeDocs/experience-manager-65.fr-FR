@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '922'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 ## Ajout d’un domaine d’entreprise {#add-an-enterprise-domain}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine d’entreprise.
 1. Dans la zone ID, saisissez un identifiant unique pour le domaine et dans la zone Nom, saisissez un nom descriptif pour le domaine. Voir [Remarques importantes concernant les noms et les ID de domaine](adding-domains.md#important-considerations-for-domain-names-and-ids).
 1. Spécifiez s’il convient ou non d’activer le verrouillage des comptes. Voir [Configuration des paramètres de verrouillage des comptes](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings). Par défaut, l’option Activer le verrouillage de compte est sélectionnée.
@@ -37,14 +37,14 @@ Après avoir créé un domaine d’entreprise, synchronisez manuellement l’ann
 
 ## Ajout d’un domaine local {#add-a-local-domain}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine local.
 1. Dans la zone ID, saisissez un identifiant unique pour le domaine et, dans la zone Nom, saisissez un nom descriptif pour le domaine. Voir [Remarques importantes concernant les noms et les ID de domaine](adding-domains.md#important-considerations-for-domain-names-and-ids).
 1. Spécifiez s’il convient d’activer le verrouillage des comptes, puis cliquez sur OK. Voir [Configuration des paramètres de verrouillage des comptes](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings). Par défaut, l’option Activer le verrouillage de compte est sélectionnée.
 
 ## Ajout d’un domaine hybride {#add-a-hybrid-domain}
 
-1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
+1. Dans la console dʼadministration, cliquez sur Paramètres > Gestion des utilisateurs > Gestion des domaines.
 1. Cliquez sur Nouveau domaine hybride.
 1. Dans la zone ID, saisissez un identifiant unique pour le domaine et, dans la zone Nom, saisissez un nom descriptif pour le domaine. Voir [Remarques importantes concernant les noms et les ID de domaine](adding-domains.md#important-considerations-for-domain-names-and-ids).
 1. Cliquez sur Ajouter une authentification puis, dans la liste Fournisseur d’authentification, sélectionnez un fournisseur, selon le mécanisme d’authentification utilisé par votre entreprise. Les valeurs possibles sont LDAP, Kerberos, SAML ou un fournisseur d’authentification personnalisé.

@@ -1,8 +1,8 @@
 ---
 title: Configuration de l’utilisation de cookies
-seo-title: Configuration de l’utilisation de cookies
+seo-title: Configuring Cookie Usage
 description: AEM propose un service qui vous permet de configurer et contrôler le mode d’utilisation des cookies avec vos pages web.
-seo-description: AEM propose un service qui vous permet de configurer et contrôler le mode d’utilisation des cookies avec vos pages web.
+seo-description: AEM provides a service that enables you to configure and control how cookies are used with your web pages
 uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,14 +12,14 @@ discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 81%
+source-wordcount: '554'
+ht-degree: 84%
 
 ---
 
 # Configuration de l’utilisation de cookies{#configuring-cookie-usage}
 
-AEM fournit un service qui vous permet de configurer et de contrôler la manière dont les cookies sont utilisés avec vos pages web :
+AEM propose un service qui vous permet de configurer et contrôler le mode d’utilisation des cookies avec vos pages web. :
 
 * Un service configurable côté serveur conserve la liste des cookies qui peuvent être utilisés.
 * Une API JavaScript permet à votre code JavaScript de vérifier qu’un cookie peut être utilisé.
@@ -64,11 +64,11 @@ function writeCookie(value){
 }
 ```
 
-## Objet JavaScript Granite.OptOutUtil  {#the-granite-optoututil-javascript-object}
+## Objet JavaScript Granite.OptOutUtil {#the-granite-optoututil-javascript-object}
 
 L’objet Granite.OptOutUtil vous permet de déterminer si l’utilisation des cookies est autorisée.
 
-### Fonction getCookieNames()  {#getcookienames-function}
+### Fonction getCookieNames() {#getcookienames-function}
 
 Renvoie les noms des cookies qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à ce que les cookies soient utilisés.
 
@@ -80,7 +80,7 @@ Aucune.
 
 Tableau de noms de cookies.
 
-#### Fonction getWhitelistCookieNames()  {#getwhitelistcookienames-function}
+#### Fonction getWhitelistCookieNames() {#getwhitelistcookienames-function}
 
 Renvoie les noms des cookies qui peuvent être utilisés indépendamment de l’autorisation de l’utilisateur.
 
@@ -92,7 +92,7 @@ Aucune.
 
 Tableau de noms de cookies.
 
-#### Fonction isOptedOut()  {#isoptedout-function}
+#### Fonction isOptedOut() {#isoptedout-function}
 
 Détermine si le navigateur de l’utilisateur contient des cookies qui indiquent que l’autorisation d’utilisation des cookies n’a pas été accordée.
 
@@ -104,7 +104,7 @@ Aucune.
 
 Valeur booléenne `true` si un cookie indique que l’autorisation n’a pas été accordée et valeur `false` si aucun cookie n’indique une absence d’autorisation.
 
-### Fonction maySetCookie(cookieName){#maysetcookie-cookiename-function}
+### Fonction maySetCookie(cookieName) {#maysetcookie-cookiename-function}
 
 Détermine si un cookie spécifique peut être utilisé dans le navigateur de l’utilisateur. Cette fonction revient à utiliser `isOptedOut` parallèlement à la fonction permettant de déterminer si le cookie en question est inclus dans la liste renvoyée par la fonction `getWhitelistCookieNames`.
 
@@ -114,4 +114,4 @@ Détermine si un cookie spécifique peut être utilisé dans le navigateur de l�
 
 **Renvoie**
 
-Une valeur booléenne `true` si `cookieName` peut être utilisée ou une valeur `false` si `cookieName` ne peut pas être utilisée.
+Une valeur booléenne de `true` if `cookieName` peut être utilisé ou une valeur de `false` if `cookieName` ne peut pas être utilisé.

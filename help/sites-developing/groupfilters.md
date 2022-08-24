@@ -1,8 +1,8 @@
 ---
 title: Création de filtres de groupe d’appareils
-seo-title: Création de filtres de groupe d’appareils
+seo-title: Creating Device Group Filters
 description: Créez un filtre de groupe d’appareils pour définir un ensemble d’exigences en termes de caractéristiques d’appareil.
-seo-description: Créez un filtre de groupe d’appareils pour définir un ensemble d’exigences en termes de caractéristiques d’appareil.
+seo-description: Create a device group filter to define a set of device capability requirements
 uuid: 30c0699d-2388-41b5-a062-f5ea9d6f08bc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -14,7 +14,7 @@ legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '799'
 ht-degree: 86%
 
 ---
@@ -35,7 +35,7 @@ Après avoir créé un filtre, vous pouvez l’utiliser dans la [configuration d
 
 Un filtre de groupe d’appareils est un composant OSGi qui implémente l’interface [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html). Une fois déployée, la classe d’implémentation fournit un service de filtrage disponible pour les configurations de groupes d’appareils.
 
-La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java utilise les annotations `@Component`et `@Service`. La classe comporte la structure suivante :
+La solution décrite dans cet article utilise le module externe Apache Felix Maven SCR pour faciliter le développement du composant et du service. Par conséquent, l’exemple de classe Java utilise la propriété `@Component`et `@Service` annotations. La classe comporte la structure suivante :
 
 ```java
 package com.adobe.example.myapp;
@@ -89,7 +89,7 @@ public String getTitle() {
 
 Le codage en dur du nom et du texte descriptif est suffisant pour les environnements de création unilingues. Pensez à externaliser les chaînes dans le cas d’une utilisation multilingue ou à activer le changement de chaîne sans recompiler le code source.
 
-### Évaluation par rapport aux critères de filtrage  {#evaluating-against-filter-criteria}
+### Évaluation par rapport aux critères de filtrage {#evaluating-against-filter-criteria}
 
 La fonction `matches` renvoie la valeur `true` si les caractéristiques de l’appareil satisfont à tous les critères de filtre. Évaluez les informations fournies dans les arguments de méthode pour déterminer si l’appareil appartient au groupe. Les valeurs suivantes sont fournies en tant qu’arguments : 
 
@@ -106,7 +106,7 @@ boolean cssSupport = true;
 cssSupport = NumberUtils.toInt(capabilities.get(DeviceSpecsConstants.DSPEC_XHTML_SUPPORT_LEVEL)) > 1;
 ```
 
-Le package `org.apache.commons.lang.math` fournit la classe `NumberUtils`.
+Le `org.apache.commons.lang.math` fournit la variable `NumberUtils` classe .
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Le package `org.apache.commons.lang.math` fournit la classe `NumberUtils`.
 
 L’exemple d’implémentation de DeviceGroupFilter suivant détermine si la taille physique de l’appareil répond aux exigences minimales. Ce filtre est destiné à ajouter un niveau de granularité au groupe d’appareils tactiles. La taille des boutons dans l’interface utilisateur de l’application doit être identique quelle que soit la taille de l’écran physique. La taille des autres éléments, tels que le texte, peut varier. Le filtre permet la sélection dynamique d’un CSS particulier qui contrôle la taille des éléments de l’interface utilisateur.
 
-Ce filtre applique des critères de taille aux noms de propriété `physical_screen_height` et `physical_screen_width` WURFL™.
+Ce filtre applique les critères de taille à la variable `physical_screen_height` et `physical_screen_width` Noms de propriétés WURFL™.
 
 ```java
 package com.adobe.example.myapp;
@@ -191,7 +191,7 @@ Le code POM suivant est utile si vous utilisez Maven pour créer vos application
 
 Les interfaces DeviceGroup et DeviceGroupFilter sont incluses dans le bundle de l’API Day Communique 5 WCM Mobile. Les annotations Felix sont incluses dans le lot Apache Felix Declarative Services. Vous pouvez obtenir ce fichier JAR à partir du référentiel Adobe public.
 
-Au moment de la création, la version 5.5.2 est la version du bundle WCM Mobile API qui figure dans la dernière version d’AEM. Utilisez Adobe Web Console ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer qu’il s’agit de la version du lot déployée dans votre environnement.
+Au moment de la création, la version 5.5.2 est la version du bundle WCM Mobile API qui figure dans la dernière version d’AEM. Utiliser la console web Adobe ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) pour vous assurer qu’il s’agit de la version du lot déployée dans votre environnement.
 
 **POM :**(votre code POM utilisera un autre groupId et une autre version.) 
 

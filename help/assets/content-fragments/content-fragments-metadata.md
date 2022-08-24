@@ -4,10 +4,10 @@ description: Découvrez comment afficher et modifier les propriétés de métado
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '206'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -35,6 +35,6 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * **Description**
    * **Balises**
       * Les [balises](/help/sites-authoring/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
-Par exemple, vous pouvez baliser les fragments pertinents en tant que &quot;lancement de Noël&quot; afin de ne les parcourir que sous forme de sous-ensemble ou de les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
+Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
    * Créé (affichage uniquement)
    ![métadonnées](assets/cfm-metadata-02.png)

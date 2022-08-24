@@ -1,19 +1,19 @@
 ---
 title: Hub du guide de l’utilisateur d’AEM 6.5
-seo-title: Hub du guide de l’utilisateur d’AEM 6.5
+seo-title: AEM 6.5 User Guide Hub
 description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.5
-seo-description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.5
+seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 31%
+source-wordcount: '214'
+ht-degree: 34%
 
 ---
 
 # Hub du guide de l’utilisateur d’AEM 6.5 {#aem-64-user-guide}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 | [Premiers pas](https://helpx.adobe.com/fr/experience-manager/get-started.html) | [Vidéos sur les fonctionnalités](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html) | [Notes de mise à jour](https://helpx.adobe.com/fr/experience-manager/6-5/release-notes.html ) |
 |:-:|:-:|:-:|
@@ -42,7 +42,7 @@ Les délégués de l’assistance peuvent obtenir de l’aide via :
 
 >[!NOTE]
 >
->Vous ne savez pas si vous êtes un **délégué du support** ? Découvrez si ce [type d’utilisateur s’applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez les [conditions de prise en charge de l’entreprise](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+>Vous ne savez pas si vous êtes une **délégué du support**? Découvrez si : [le type d’utilisateur s’applique à vous](https://helpx.adobe.com/experience-cloud/supported-users.html) et découvrez notre [conditions d’assistance aux entreprises](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Communauté {#community}
 

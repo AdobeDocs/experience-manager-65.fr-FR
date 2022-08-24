@@ -1,8 +1,8 @@
 ---
 title: Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector
-seo-title: Licences, notices de copyright et clauses de non-responsabilité de SharePoint Connector
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
 description: Découvrez les licences, les notices de copyright et les clauses de non-responsabilité de SharePoint Connector.
-seo-description: Découvrez les licences, les notices de copyright et les clauses de non-responsabilité de SharePoint Connector.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 74%
+source-wordcount: '362'
+ht-degree: 73%
 
 ---
 
@@ -41,7 +41,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | commons-httpclient | [Apache ](#apache) |
 | commons-io | [Apache ](#apache) |
 | commons-lang | [Apache ](#apache) |
-| simultané | [Concurrent](#concurrent)  (domaine public) |
+| simultané | [Contextuel](#concurrent) (Domaine public) |
 | geronimo-activation_1.1_spec | [Apache ](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache ](#apache) |
 | httpcore | [Apache ](#apache) |
@@ -60,7 +60,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans les
 | wstx-asl | [Apache ](#apache) |
 | xalan | [Apache ](#apache) |
 | xbean | [Apache ](#apache) |
-| xml-apis | [Apache](#apache)  (contient des portions couvertes par les licences de domaine public et de logiciels W3C) |
+| xml-apis | [Apache](#apache) (contient des portions couvertes par les licences de domaine public et de logiciels W3C) |
 | XmlSchema | [Apache ](#apache) |
 
 ## Présentation des bibliothèques CRX tierces {#overview-of-crx-rd-party-libraries}
@@ -438,7 +438,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## Day JCR  {#day-jcr}
+## Day JCR {#day-jcr}
 
 ```xml
      Day Management AG ("Licensor") is willing to license this
@@ -567,7 +567,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      implementations, and test suites thereof.
 ```
 
-## Hypersonic SQL Group {#hypersonic-sql-group}
+## Groupe Hypersonic SQL {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -744,7 +744,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      2000-05-05
 ```
 
-## SLF4J.ORG  {#slf-j-org}
+## SLF4J.ORG {#slf-j-org}
 
 ```xml
      Copyright (c) 2004-2007 QOS.ch

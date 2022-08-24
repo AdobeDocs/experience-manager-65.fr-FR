@@ -1,8 +1,8 @@
 ---
 title: Extension de ContextHub
-seo-title: Extension de ContextHub
-description: Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins en termes de solution.
-seo-description: Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins en termes de solution.
+seo-title: Extending ContextHub
+description: Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins en termes de solution
+seo-description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
 uuid: 1d80c01d-ec5d-4e76-849d-bec0e1c3941a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '650'
 ht-degree: 97%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 97%
 
 Définissez de nouveaux types de modules et de magasins ContextHub lorsque ceux qui sont fournis ne répondent pas à vos besoins en termes de solution.
 
-## Création de candidats de magasin personnalisés  {#creating-custom-store-candidates}
+## Création de candidats de magasin personnalisés {#creating-custom-store-candidates}
 
 Les magasins ContextHub sont créés à partir de candidats de magasin enregistrés. Pour créer un magasin personnalisé, vous devez créer et enregistrer un candidat de magasin.
 
@@ -78,7 +78,7 @@ Pour créer un moteur de rendu de module d’interface utilisateur, créez un ob
 
 * Indiquez une configuration par défaut. Créez une propriété `defaultConfig`. Cette propriété est un objet qui contient les propriétés définies pour le module d’IU [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type), ainsi que toute autre propriété dont vous avez besoin.
 
-La source de `ContextHub.UI.BaseModuleRenderer` se trouve à l’adresse /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.  Pour enregistrer le moteur de rendu, utilisez la méthode [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) de la classe `ContextHub.UI`. Vous devez indiquer un nom pour le type de module. Lorsque les administrateurs créent un module d’IU basé sur ce moteur de rendu, ils spécifient ce nom.
+La source pour `ContextHub.UI.BaseModuleRenderer` se trouve à l’adresse /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.  Pour enregistrer le moteur de rendu, utilisez la méthode [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) de la classe `ContextHub.UI`. Vous devez indiquer un nom pour le type de module. Lorsque les administrateurs créent un module d’IU basé sur ce moteur de rendu, ils spécifient ce nom.
 
 Créez et enregistrez la classe du module de rendu dans une fonction anonyme à exécution automatique. L’exemple suivant est basé sur le code source du module d’IU contexthub.browserinfo. Ce module est une extension simple de la classe `ContextHub.UI.BaseModuleRenderer`.
 

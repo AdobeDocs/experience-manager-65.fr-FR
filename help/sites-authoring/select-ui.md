@@ -1,8 +1,8 @@
 ---
 title: Choix de l’interface utilisateur
-seo-title: Choix de l’interface utilisateur
+seo-title: Selecting your UI
 description: Configurez l’interface que vous utiliserez pour travailler dans AEM.
-seo-description: Configurez l’interface que vous utiliserez pour travailler dans AEM.
+seo-description: Configure which interface you will use to work in AEM
 uuid: ab127f2f-2f8a-4398-90dd-c5d48eed9e53
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 82%
+source-wordcount: '743'
+ht-degree: 81%
 
 ---
 
@@ -49,7 +49,7 @@ Active l’IU classique pour la session en cours.
 >
 >Les instances mises à niveau à partir d’une version précédente conservent l’IU classique pour la création de pages.
 >
->Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **service WCM Authoring UI Mode** (service `AuthoringUIMode`). Voir [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
+>Après la mise à niveau, la création de pages ne passe pas automatiquement à l’interface utilisateur tactile, mais vous pouvez la configurer à l’aide de l’option [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) de **Service WCM Author UI Mode** ( `AuthoringUIMode` ). Voir [IU par défaut en fonction de l’éditeur](#ui-overrides-for-the-editor).
 
 ## Configuration de l’IU par défaut pour votre instance {#configuring-the-default-ui-for-your-instance}
 
@@ -63,7 +63,7 @@ Chaque utilisateur peut accéder à ses [préférences utilisateur](/help/sites-
 
 Les paramètres de la session peuvent remplacer ce comportement.
 
-## Activation de l’IU classique pour la session en cours  {#switching-to-classic-ui-for-the-current-session}
+## Activation de l’IU classique pour la session en cours {#switching-to-classic-ui-for-the-current-session}
 
 Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisateurs peuvent souhaiter revenir à l’IU classique (ordinateur de bureau uniquement). Plusieurs méthodes permettent de basculer vers l’IU classique pour la session en cours :
 
@@ -84,7 +84,7 @@ Ainsi, si l’IU tactile est activée sur un ordinateur de bureau, les utilisate
 
 * **URL**
 
-   L’IU classique est accessible à partir de l’URL de l’écran de bienvenue à l’adresse `welcome.html`. Par exemple :
+   L’IU classique est accessible à l’aide de l’URL de l’écran de bienvenue à l’adresse `welcome.html`. Par exemple :
 
    `https://localhost:4502/welcome.html`
 
@@ -107,7 +107,7 @@ Si cette option est activée, l’option **Ouvrir l’IU classique** est dispon
 
 ![syui-02](assets/syui-02.png)
 
-### UI Overrides for the Editor {#ui-overrides-for-the-editor}
+### IU par défaut en fonction de l’éditeur {#ui-overrides-for-the-editor}
 
 Les paramètres définis par un utilisateur ou un administrateur du système peuvent être remplacés par les paramètres système en cas de création de page.
 
@@ -121,9 +121,9 @@ Les paramètres définis par un utilisateur ou un administrateur du système peu
 
 * Tout recours forcé à un certain éditeur est temporaire et valide uniquement pour la session en cours.
 
-   * Un jeu de cookies sera défini selon que tactile ( `editor.html`) ou classique ( `cf#`) est utilisé ou non.
+   * Un jeu de cookies est défini selon qu’il est tactile ou non ( `editor.html`) ou classique ( `cf#`) est utilisée.
 
-* Lors de l’ouverture de pages par `siteadmin`, des vérifications sont effectuées pour vérifier l’existence des éléments suivants :
+* Lors de l’ouverture de pages par `siteadmin`, des contrôles seront effectués pour vérifier l’existence des éléments suivants :
 
    * présence du cookie ;
    * préférence utilisateur ;

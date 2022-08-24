@@ -1,8 +1,8 @@
 ---
 title: Création de modèles de page
-seo-title: Création de modèles de page
+seo-title: Creating Page Templates
 description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
-seo-description: Le modèle définit la structure de la page créée et, à l’aide de l’éditeur de modèles, les tâches de création et de gestion des modèles ne sont plus réservées aux développeurs.
+seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
 uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
-source-wordcount: '4901'
+source-wordcount: '4874'
 ht-degree: 97%
 
 ---
@@ -45,7 +45,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!CAUTION]
 >
->Les pages et les modèles créés avec la **console Modèles** ne sont pas destinés à être utilisés avec l’interface utilisateur classique et cette utilisation n’est pas prise en charge.
+>Pages et modèles créés à l’aide de la fonction **Console de modèles** ne sont pas destinées à être utilisées avec l’interface utilisateur classique et cette utilisation n’est pas prise en charge.
 
 ## Avant de commencer {#before-you-start}
 
@@ -110,7 +110,7 @@ AEM comporte maintenant deux types de modèles standard :
    * Ils sont [fournis par les développeurs](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
    * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
    * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
-   * La modification des modèles statiques étant la tâche exclusive d’un développeur, reportez-vous au document destiné aux développeurs [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
+   * La modification des modèles statiques étant la tâche exclusive d’un développeur, consultez le document destiné aux développeurs. [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et la modification des modèles modifiables. Par conséquent, ce document décrit exclusivement les modèles modifiables.
 
@@ -296,7 +296,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles – Créateurs de modèles {#editing-templates-template-authors}
+## Modification des modèles  – Créateurs de modèles {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -622,7 +622,7 @@ La conception de la page, y compris les bibliothèques côté client requises et
 
 Pour accéder à la boîte de dialogue **Conception de page** :
 
-1. Dans l’**éditeur de modèles**, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
+1. Dans la **Éditeur de modèles**, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
 1. La boîte de dialogue **Conception de page** s’ouvre. Elle est divisée en deux sections :
 
    * La moitié gauche définit les [stratégies de page](/help/sites-authoring/templates.md#page-policies).

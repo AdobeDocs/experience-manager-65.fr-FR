@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 100%
@@ -123,7 +123,7 @@ Les utilisateurs finaux peuvent s’authentifier auprès d’AEM Forms via Workb
 1. Cliquez sur **Exporter** pour produire un fichier config.xml contenant les paramètres d’AEM Forms existants.
 1. Ouvrez le fichier XML dans un éditeur et recherchez l’entrée suivante :
 
-   `<entry key="assertionValidityInMinutes" value="120"/>`
+   `<entry key=”assertionValidityInMinutes” value=”120”/>`
 
 1. Spécifiez une valeur en minutes supérieure ou égale à 5 et enregistrez le fichier.
 1. Dans la console d’administration, naviguez jusqu’à la page Importer et exporter des fichiers de configuration.

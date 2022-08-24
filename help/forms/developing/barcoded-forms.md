@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1920'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Pour décoder les données de formulaire à l’aide de l’API Barcoded Forms 
 1. Inclure les fichiers du projet
 
    * Créez un assemblage client Microsoft .NET qui utilise le WSDL du service Barcoded Forms. Pour plus d’informations, consultez la section [Appeler AEM Forms en utilisant le codage base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
-   * Référencez l’assemblage client Microsoft .NET. Pour plus d’informations, voir &quot;Référence à l’assemblage client .NET&quot; dans [Appel d’AEM Forms à l’aide du codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Référencez l’assemblage client Microsoft .NET. Pour plus d’informations, consultez la rubrique « Référencer l’assemblage client .NET » dans la section [Appeler AEM Forms en utilisant le codage Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Créer un objet API client Barcoded Forms
 

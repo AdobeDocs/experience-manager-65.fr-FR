@@ -11,7 +11,7 @@ discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 100%
 
@@ -164,7 +164,7 @@ Un cadre Adobe Analytics est un ensemble de mappages entre les variables Adobe A
    * **Cadre Adobe SiteCatalyst** : sélectionnez le cadre/la configuration que vous avez défini(e) dans la section Configuration d’un cadre pour le suivi.
    * **Ligne de base de suivi du temps passé sur le champ** : spécifiez la durée en secondes après laquelle un suivi doit être effectué sur la visite du champ. La valeur par défaut est 0. Lorsque la valeur est supérieure à 0 (zéro), deux événements de suivi distincts sont envoyés au serveur Adobe Analytics. Le premier événement demande au serveur d’analyse de cesser de suivre le champ désactivé. Le deuxième événement est envoyé après l’écoulement de la durée spécifiée. Le deuxième événement demande au serveur d’analyse de commencer le suivi du champ activé. L’utilisation de deux événements distincts permet de mesurer exactement le temps passé dans un champ. Lorsque la valeur est définie sur 0 (zéro), l’événement de suivi unique est envoyé au serveur Adobe Analytics.
 
-   * **Expression cron de synchronisation des rapports d’analyse** : spécifiez l’expression cron pour récupérer les rapports d’Adobe Analytics. La valeur par défaut est 0 0 2 ? * *.
+   * **Expression cron de synchronisation des rapports d’analyse** : spécifiez l’expression cron pour récupérer les rapports d’Adobe Analytics. La valeur par défaut est 0 0 2 ? &#42; &#42;.
 
    * **Délai de rapport d’extraction :** spécifiez la durée, en secondes, à attendre pour que le serveur réponde au rapport d’analyse. La valeur par défaut est de 120 secondes.
    >[!NOTE]

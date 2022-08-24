@@ -1,8 +1,8 @@
 ---
 title: Opérations Granite - Administration des utilisateurs et des groupes
-seo-title: Opérations Granite - Administration des utilisateurs et des groupes
+seo-title: Granite Operations - User and Group Administration
 description: En savoir plus sur l’administration des utilisateurs et des groupes Granite.
-seo-description: En savoir plus sur l’administration des utilisateurs et des groupes Granite.
+seo-description: Learn about Granite user and group administration.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
-feature: Sécurité
+feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '923'
 ht-degree: 84%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 Au fur et à mesure que Granite intègre l’implémentation du référentiel CRX de la spécification API JCR, il applique sa propre administration des utilisateurs et des groupes.
 
-Ces comptes constituent la base sous-jacente des [comptes AEM](/help/sites-administering/security.md) et toute modification de compte effectuée avec l’administration Granite sera prise en compte si/lorsque les comptes sont accessibles à partir de la [console Utilisateurs AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
+Ces comptes constituent la base sous-jacente de la [Comptes AEM](/help/sites-administering/security.md) et toutes les modifications apportées au compte avec l’administration Granite sont répercutées si/quand les comptes sont accessibles depuis la variable [AEM console Utilisateurs](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
 
 Les consoles d’administration des utilisateurs et des groupes Granite sont disponibles via la console **[Outils](/help/sites-administering/tools-consoles.md)** de l’interface utilisateur optimisée pour les écrans tactiles :
 
@@ -89,12 +89,12 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **État**
    * **Titre**
    * **Sexe**
-   * **À propos d’**
+   * **À propos**
    * **Paramètres du compte**
 
-      * ****
-ÉtatVous pouvez marquer le compte comme étant 
-**** actif ou  **inactif**.
+      * **État**
+Vous pouvez marquer le compte comme 
+**principal** ou **inactive**.
    * **Photo**
 
       Vous pouvez ici télécharger une photo à utiliser comme avatar.
@@ -186,7 +186,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
        Il s’agit d’un identifiant unique pour le groupe. Il est obligatoire et ne peut pas contenir d’espaces.
 
-   * **Name** (Nom)
+   * **Nom**
 
       Nom du groupe. elle s’affiche dans la console Groupes .
 
@@ -222,7 +222,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
 1. Le formulaire **Modifier les paramètres de groupe** s’ouvre.
 
-   L’ID de groupe est identique à l’ID d’origine, mais précédé du préfixe `Copy of`. Vous devez le modifier, car l’identifiant ne peut pas contenir d’espaces. Tous les autres détails sont identiques aux détails d’origine.
+   L’identifiant de groupe est identique à l’identifiant d’origine, mais précédé du préfixe `Copy of`. Vous devez le modifier, car l’identifiant ne peut pas contenir d’espaces. Tous les autres détails sont identiques aux détails d’origine.
 
    Vous pouvez à présent modifier les détails comme indiqué dans la rubrique [Ajout d’un nouveau groupe](#adding-a-new-group).
 

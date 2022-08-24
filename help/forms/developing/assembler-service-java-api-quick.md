@@ -11,7 +11,7 @@ discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 
@@ -1189,7 +1189,7 @@ L’exemple de code Java suivant assemble un document PDF contenant des signets.
 L’exemple de code Java suivant crée dynamiquement un document DDX qui désassemble un document PDF. Un nouveau document PDF est créé pour chaque signet de niveau 1 dans le document PDF d’entrée. Cet exemple de code contient deux méthodes définies par l’utilisateur :
 
 * `createDDX` : crée un objet `org.w3c.dom.Document` qui représente le document DDX envoyé au service Assembler. Cette méthode définie par l’utilisateur renvoie l’objet `org.w3c.dom.Document`.
-* `convertDDX` : convertit un objet `org.w3c.dom.Document` en objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
+* `convertDDX` : convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
 
    Ces deux méthodes sont invoquées dans ce démarrage rapide. (Voir [Créer dynamiquement des documents DDX](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).)
 

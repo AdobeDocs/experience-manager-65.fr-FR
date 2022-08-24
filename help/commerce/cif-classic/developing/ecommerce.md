@@ -2,17 +2,18 @@
 title: eCommerce
 seo-title: eCommerce
 description: Le framework d’intégration comporte une couche d’intégration avec une API
-seo-description: Le framework d’intégration comporte une couche d’intégration avec une API
+seo-description: The integration framework includes an integration layer with an API
 uuid: 48e01bbb-8f9e-489c-bbe4-24563e84ff35
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 docset: aem65
-source-git-commit: da538dac17b4c6182b44801b4c79d6cdbf35f640
+exl-id: da63c576-34cd-40ce-81de-d7391a331364
+source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 76%
+source-wordcount: '140'
+ht-degree: 75%
 
 ---
 
@@ -30,7 +31,7 @@ Pour en savoir plus, voir:
 
 >[!NOTE]
 >
->Comme la structure eCommerce peut être utilisée avec n’importe quelle solution eCommerce, voir [Développement (générique)](/help/commerce/cif-classic/developing/generic.md) pour plus d’informations sur le développement de possibilités.
+>Puisque la structure eCommerce peut être utilisée avec n’importe quelle solution eCommerce, reportez-vous à la section [Développement (générique)](/help/commerce/cif-classic/developing/generic.md) pour plus d’informations sur le développement de possibilités.
 
 >[!NOTE]
 >
@@ -45,4 +46,3 @@ L’API eCommerce est fournie par les modules :
 `com.adobe.cq.commerce.*`
 
 Pour plus d’informations, voir la [documentation de l’API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html).
-

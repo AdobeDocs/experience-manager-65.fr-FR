@@ -1,8 +1,8 @@
 ---
 title: SPA et rendu côté serveur
-seo-title: SPA et rendu côté serveur
+seo-title: SPA and Server-Side Rendering
 description: '"SPA et rendu côté serveur"'
-seo-description: 'null'
+seo-description: null
 uuid: 27e26e3f-65d4-4069-b570-58b8b9e2a1ae
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 source-git-commit: eeb4c7f6a80d6bad5cd1b540dfacfc7bc5071664
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 81%
+source-wordcount: '1756'
+ht-degree: 85%
 
 ---
 
-# SPA et rendu côté serveur {#spa-and-server-side-rendering}
+# SPA et rendu côté serveur{#spa-and-server-side-rendering}
 
 >[!NOTE]
 >
@@ -63,9 +63,9 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Cela permet d’obtenir des modèles de cycle de vie de développement de systèmes classiques avec différentes versions d’une seule application déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md) .
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
 >
->Un espace de travail distinct n’est pas nécessaire par instance (auteur, publication), sauf s’il existe des différences dans l’implémentation du runtime par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire pour chaque instance (auteur, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
 ## Configuration du moteur de rendu distant {#remote-renderer-configuration}
 
@@ -88,7 +88,7 @@ Les champs suivants sont disponibles pour la configuration :
 >
 >Que vous choisissiez de mettre en œuvre le [flux de communication piloté par AEM](#aem-driven-communication-flow) ou le [flux de communication piloté par Adobe I/O Runtime](#adobe-i-o-runtime-driven-communication-flow), vous devez définir une configuration de moteur de rendu de contenu distant.
 >
->Cette configuration doit également être définie si vous choisissez [d’utiliser un serveur Node.js personnalisé.](#using-node-js)
+>Cette configuration doit également être définie si vous choisissez de [utilisez un serveur Node.js personnalisé.](#using-node-js)
 
 >[!NOTE]
 >
@@ -172,11 +172,11 @@ Tout comme AEM prend en charge les frameworks SPA Angular et React clé en main,
 * React : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Pour un exemple simpliste, reportez-vous à l’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Il effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, il illustre ce qui est nécessaire à la mise en oeuvre du rendu côté serveur.
+Pour un exemple simpliste, reportez-vous au [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Il effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, il illustre ce qui est nécessaire à la mise en oeuvre du rendu côté serveur.
 
 >[!CAUTION]
 >
->[L’application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) est destinée uniquement à des fins de démonstration et utilise donc Node.js comme exemple simple au lieu de la version Adobe I/O Runtime recommandée. Cet exemple ne doit être utilisé pour aucun travail de projet.
+>Le [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) est à des fins de démonstration uniquement et utilise donc Node.js comme exemple simple au lieu du Adobe I/O Runtime recommandé. Cet exemple ne doit être utilisé pour aucun travail de projet.
 
 >[!NOTE]
 >
@@ -232,11 +232,11 @@ La configuration du gestionnaire par défaut doit être établie comme décrit d
 Pour qu’un servlet récupère et renvoie du contenu pouvant être injecté dans la page :
 
 1. Assurez-vous que votre serveur distant est accessible.
-1. Ajoutez l’un des fragments de code suivants au modèle HTML d’un composant AEM.
+1. Ajoutez l’un des fragments de code suivants au modèle HTL d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
 1. Parcourir le contenu de votre site
 
-En général, le modèle HTML d’un composant de page est le principal destinataire d’une telle fonctionnalité.
+En général, le modèle HTL d’un composant de page est le principal destinataire d’une telle fonctionnalité.
 
 ```
 <sly data-sly-resource="${resource @ resourceType='cq/remote/content/renderer/request/handler'}" />

@@ -4,13 +4,13 @@ description: Configurez Experience Manager Assets à utiliser avec l’extension
 contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
-source-git-commit: e91fa04d87c7ecacf3ad8a148227948eafe15b1e
+exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
+source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
 workflow-type: tm+mt
 source-wordcount: '3149'
 ht-degree: 5%
 
 ---
-
 
 # Configuration de Experience Manager Assets pour Adobe Asset Link {#adobe-asset-link}
 
@@ -32,7 +32,7 @@ Assurez-vous d’installer le Service Pack et le package appropriés si nécessa
 
 | Fonctionnalité Ressources | Version du Experience Manager et configuration requise pour la prise en charge |
 |--- |--- |
-| Asset Link fonctionne par défaut. | Experience Manager 6.5 et 6.5.2 ou version ultérieure. </br> Experience Manager 6.4.4 et 6.4.6 ou version ultérieure. </br> Adobe recommande d’installer la dernière version [Service Pack Experience Manager (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html) avant d’utiliser AAL. |
+| Asset Link fonctionne par défaut. | Experience Manager 6.5 et 6.5.2 ou version ultérieure. </br> Experience Manager 6.4.4 et 6.4.6 ou version ultérieure. </br> Adobe recommande d’installer la dernière version [Service Pack Experience Manager (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) avant d’utiliser AAL. |
 | Asset Link fonctionne après l’installation d’un module | Pour Experience Manager 6.4.0 - 6.4.3, installez . [adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support) module. |
 | Intégration d’Adobe Stock | Experience Manager 6.4.2 ou version ultérieure |
 | Recherche visuelle ou par analogie | Experience Manager 6.5.0 ou version ultérieure |
@@ -126,7 +126,7 @@ Une configuration supplémentaire n’est requise que si vous utilisez différen
 
 
 
-**Prérequis**
+**Conditions préalables**
 
 1. Une instance de Experience Manager en cours d’exécution avec l’authentification du porteur configurée pour AAL.
 1. Installez le package suivant (Service Pack 11) sur votre instance Experience Manager 6.5.
@@ -288,12 +288,7 @@ Si vous rencontrez des problèmes lors de la configuration ou de l’utilisation
 
 >[!MORELIKETHIS]
 >
->* [À propos d’Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
+>* [À propos d’Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html)
 >* [Utilisation de Asset Link dans l’appli de bureau Creative Cloud et gestion des ressources](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [Configuration d’Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html).
-
-
-
-
-
+>* [Configuration d’Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/fr/enterprise/using/configure-aem-assets-for-asset-link.html).
 

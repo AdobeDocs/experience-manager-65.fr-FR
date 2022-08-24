@@ -1,8 +1,8 @@
 ---
 title: Configuration de composants en mode de conception
-seo-title: Configuration de composants en mode de conception
+seo-title: Configuring Components in Design Mode
 description: Configuration de composants en mode de conception
-seo-description: 'null'
+seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '911'
-ht-degree: 83%
+source-wordcount: '905'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 83%
 
 Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans l’explorateur de composants.
 
-En outre, divers autres composants sont également disponibles. Vous pouvez utiliser le mode Conception pour [activer/désactiver ces composants](#enable-disable-components). Une fois activé et situé sur votre page, vous pouvez ensuite utiliser le mode de conception pour [configurer les aspects de la conception de composant](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
+En outre, divers autres composants sont également disponibles. Vous pouvez utiliser le mode Conception pour [activer/désactiver ces composants ;](#enable-disable-components). Lorsque cette option est activée et située sur votre page, vous pouvez ensuite utiliser le mode Conception pour [configuration des aspects de la conception de composant](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ En outre, divers autres composants sont également disponibles. Vous pouvez util
 >
 >Le mode de conception est uniquement disponible pour les configurations de conception stockées en tant que contenu sous ( `/etc`).
 >
->À compter d’AEM 6.4, il est recommandé de stocker les conceptions en tant que données de configuration sous `/apps` pour prendre en charge les scénarios de déploiement continu. Les conceptions stockées sous `/apps` ne sont pas modifiables au moment de l’exécution et le mode de conception ne sera pas disponible pour les utilisateurs non-administrateurs de ces modèles.
+>À compter d’AEM 6.4, il est recommandé de stocker les conceptions en tant que données de configuration sous `/apps` pour prendre en charge les scénarios de déploiement continus. Conceptions stockées sous `/apps` ne sont pas modifiables au moment de l’exécution et le mode de conception ne sera pas disponible pour les utilisateurs non-administrateurs de ces modèles.
 
 Pour ce faire, vous devrez ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
 
@@ -68,7 +68,7 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Cliquez ou appuyez sur l’icône **Parent** .
+1. Cliquez ou appuyez sur **Parent** icône .
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -91,7 +91,7 @@ Pour activer ou désactiver un composant :
 
    **Composants autorisés**
 
-   Dans l’onglet **Composants autorisés**, vous définissez les composants disponibles pour le système de paragraphes (parsys).
+   Sur le **Composants autorisés** , vous définissez les composants disponibles pour le parsys.
 
    * Les composants sont regroupés en groupes de composants, qui peuvent être développés et réduits.
    * Un groupe entier peut être sélectionné en cochant le nom du groupe, et tous peuvent être désélectionnés en décochant la case.
@@ -139,7 +139,7 @@ Pour activer ou désactiver un composant :
 
    L’onglet **Propriétés** vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant Image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
 
-   **Fonctionnalités**
+   **Fonctions**
 
    L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant. Par exemple, pour un composant Image, vous pouvez définir l’orientation de l’image, les options de recadrage disponibles, et si une image peut être téléchargée.
 

@@ -1,8 +1,8 @@
 ---
 title: Modification des propriétés de page
-seo-title: Modification des propriétés de page
+seo-title: Editing Page Properties
 description: Les propriétés d’une page peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, et d’autres pas, et les informations Live Copy seront disponibles suivant le cas.
-seo-description: Les propriétés d’une page peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, et d’autres pas, et les informations Live Copy seront disponibles suivant le cas.
+seo-description: Properties of a page can vary depending on the nature of the page. For example some pages might be connected to a live copy while others are not and the live copy information will be available as appropriate.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '763'
 ht-degree: 94%
 
 ---
@@ -81,7 +81,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et plus explicite.
 
-   Par exemple, si l’URL Vanity est définie sur w `elcome`sur la page identifiée par le chemin / `v1.0/startpage`pour le site web h `ttp://example.com,` alors h `ttp://example.com/welcome`serait l’URL Vanity de h `ttp://example.com/content/v1.0/startpage`
+   Par exemple, si l’URL Vanity est définie sur w `elcome`à la page identifiée par le chemin / `v1.0/startpage`pour le site web h `ttp://example.com,` puis h `ttp://example.com/welcome`serait l’URL Vanity de h `ttp://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
    >
@@ -147,13 +147,13 @@ Les propriétés sont réparties sur plusieurs onglets:
 
       Télécharge une image à utiliser comme miniature.
 
-### Cloud Services {#cloud-services}
+### Services cloud {#cloud-services}
 
-* **Cloud Services**
+* **Cloud Services**
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation {#personalization}
+### Personnalisation  {#personalization}
 
 * **Personnalisation**
 
@@ -177,7 +177,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
-### Structure du site   {#site-structure}
+### Structure du site  {#site-structure}
 
 * Diffusez des liens d’accès aux pages qui fournissent les fonctionnalités à l’échelle du site, comme la **page d’inscription** et la page **en mode hors ligne**, entre autres.
 
@@ -185,7 +185,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
 ### Modification des propriétés d’une page spécifique {#editing-page-properties-for-a-specific-page}
 
-Les Propriétés de page définissent les différentes propriétés de la page, telles que les titres, lorsqu’elles apparaissent sur le site Web et à d’autres emplacements.
+Les Propriétés de page définissent les différentes propriétés de la page, telles que les titres, lorsqu’elles apparaissent sur le site web et à d’autres emplacements.
 
 1. Ouvrez la page à modifier.
 

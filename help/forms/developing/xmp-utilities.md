@@ -12,7 +12,7 @@ discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1405'
 ht-degree: 100%
 
@@ -116,7 +116,7 @@ Le code XML suivant contient des valeurs de métadonnées qui correspondent à l
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -233,7 +233,7 @@ Vous pouvez utiliser les API Java et Web Service XMP Utilities pour récupérer 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service XMP Utilities, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 

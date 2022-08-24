@@ -1,8 +1,8 @@
 ---
 title: Modèles et composants d’application
-seo-title: Modèles et composants d’application
+seo-title: App Templates and Components
 description: Consultez cette page pour en savoir plus sur les modèles d’application et les composants. Il fournit des informations détaillées sur la structure des modèles.
-seo-description: Consultez cette page pour en savoir plus sur les modèles d’application et les composants. Il fournit des informations détaillées sur la structure des modèles.
+seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
 uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
@@ -12,12 +12,12 @@ discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 51%
+source-wordcount: '405'
+ht-degree: 54%
 
 ---
 
-# Modèles d’application et composants{#app-templates-and-components}
+# Modèles et composants d’application{#app-templates-and-components}
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ Chaque modèle présente une sélection de composants disponibles.
 
 Un modèle sert de fondement pour une page.
 
-Pour créer une page, le modèle doit être copié (node-tree **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de l’onglet **Sites web** .
+Pour créer une page, le modèle doit être copié (arborescence de noeuds) **/apps/&lt;myapp>/templates/&lt;mytemplate>**) à la position correspondante dans l’arborescence du site : c’est ce qui se passe si une page est créée à l’aide de la variable **Sites web** .
 
 Cette action de copie confère également à la page son contenu initial (généralement le contenu de niveau supérieur uniquement) et la propriété sling: resourceType, le chemin d’accès au composant de page utilisé pour rendre la page (tout ce qui est présent dans le nœud enfant jcr:content).
 
@@ -54,15 +54,15 @@ Différentes propriétés peuvent être définies, en particulier :
 * **jcr:title**- titre du modèle. Apparaît dans la boîte de dialogue lors de la création d’une page.
 * **jcr:description**- description du modèle. Apparaît dans la boîte de dialogue lors de la création d’une page.
 
-Ce noeud contient *un noeud jcr:content (cq:PageContent)* qui doit être utilisé comme base du noeud de contenu des pages résultantes ; cette référence, à l’aide de *sling:resourceType*, le composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
+Ce noeud contient *un jcr:content (cq:PageContent)* Noeud servant de base au noeud de contenu des pages résultantes ; cette référence, à l’aide de *sling:resourceType*, composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 
 >[!NOTE]
 >
 >Pour en savoir plus sur les principes de base des modèles et des composants dans AEM, consultez les ressources ci-dessous :
 >
 >* [Modèles](/help/sites-developing/templates.md)
-* [Composants](/help/sites-developing/components.md)
-
+>* [Composants](/help/sites-developing/components.md)
+>
 
 
 Une fois que vous avez une compréhension de base des modèles et des composants, consultez les ressources suivantes :

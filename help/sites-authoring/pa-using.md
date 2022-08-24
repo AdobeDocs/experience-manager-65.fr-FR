@@ -1,8 +1,8 @@
 ---
 title: Affichage des données d’analyse de page
-seo-title: Affichage des données d’analyse de page
+seo-title: Seeing Page Analytics Data
 description: Utilisez les données d’analyse de page pour mesurer l’efficacité de leur contenu de page
-seo-description: Utilisez les données d’analyse de page pour mesurer l’efficacité de leur contenu de page
+seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '628'
 ht-degree: 93%
 
 ---
@@ -62,7 +62,7 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 >
 >Lorsqu’une arborescence de pages contient des enfants associés à différentes configurations de cloud d’Adobe Analytics, vous ne pouvez pas configurer les colonnes de données disponibles pour les pages.
 
-1. En mode Liste, utilisez les sélecteurs de vue (à droite de la barre d’outils), sélectionnez **Paramètres d’affichage**, puis **Ajouter des données Analytics personnalisées**.
+1. En mode Liste, utilisez les sélecteurs d’affichage (à droite de la barre d’outils), puis sélectionnez **Paramètres d’affichage** puis **Ajout de données Analytics personnalisées**.
 
    ![aa-15](assets/aa-15.png)
 
@@ -74,14 +74,14 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
+Ouvrir [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité)  {#analytics-visible-from-the-page-editor-activity-map}
+## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >

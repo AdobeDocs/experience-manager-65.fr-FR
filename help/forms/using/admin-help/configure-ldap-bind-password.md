@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 165b3950-b03f-4848-8361-ffb0a26d2658
 exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’est pas configuré dans le fichier de configuration (config.xml) exporté. Avant d’importer ce fichier dans un autre système, veillez à configurer ce mot de passe, qui remplace le mot de passe défini dans la base de données. Un mot de passe null ne remplace pas un mot de passe non null existant.
 
 1. Dans Administration Console, cliquez sur Paramètres > Gestion des utilisateurs > Configuration > Importer et exporter des fichiers de configuration.
-1. Pour exporter la configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration à un autre emplacement.
+1. Pour exporter le paramètre de configuration en cours dans un fichier, cliquez sur Exporter, puis enregistrez le fichier de configuration dans un autre emplacement.
 1. Dans le fichier, recherchez le nœud `Domains` > *[Votre nom de domaine]* > `DirectoryConfigs` > `LDAPGroupConfig`. Par exemple :
 
    ```xml
@@ -53,5 +53,5 @@ Pour éviter les risques de sécurité, le champ du mot de passe de liaison n’
 
    Saisissez une valeur pour `bindpassword` et enregistrez vos modifications.
 
-1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
-1. Cliquez sur Parcourir pour rechercher le fichier, sur Importer, puis sur OK.
+1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
+1. Cliquez sur Parcourir pour trouver le fichier, puis sur Importer et enfin sur OK.

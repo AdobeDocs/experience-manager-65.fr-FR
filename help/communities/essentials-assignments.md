@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur les affectations
-seo-title: Notions fondamentales sur les affectations
+seo-title: Assignments Essentials
 description: Présentation de la fonction Affectations pour les communautés d’activation
-seo-description: Présentation de la fonction Affectations pour les communautés d’activation
+seo-description: Assignments feature overview for enablement communities
 uuid: e49fce26-1091-4f37-93e8-c4ec85371811
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ docset: aem65
 exl-id: 75cef5da-4f93-4721-99c0-ad44c8ab76d4
 source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '214'
 ht-degree: 13%
 
 ---
 
 # Notions fondamentales sur les affectations {#assignments-essentials}
 
-Lisez la suite pour en savoir plus sur les informations essentielles pour utiliser la fonctionnalité d’affectation des sites de la communauté [d’activation](/help/communities/overview.md#enablement-community).
+Lisez la suite pour en savoir plus sur les informations essentielles à l’utilisation de la fonction d’affectation de [communauté d&#39;activation](/help/communities/overview.md#enablement-community) sites.
 
 La fonction Affectations permet d’affecter des ressources d’activation et des parcours d’apprentissage aux membres des communautés d’activation.
 
@@ -38,7 +38,7 @@ La fonction Affectations permet d’affecter des ressources d’activation et de
   </tr>
   <tr>
    <td> <a href="/help/communities/clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learning.path</td>
+   <td>cq.social.enablement.hbs.breadcrumbs<br /> cq.social.enablement.hbs.myassigned<br /> cq.social.enablement.hbs.resource<br /> cq.social.enablement.hbs.learningpath</td>
   </tr>
   <tr>
    <td> <strong>templates</strong></td>
@@ -85,7 +85,7 @@ Les seules combinaisons possibles d’achèvement et d’état de réussite sont
 
 ### Fonction Affectations {#assignments-function}
 
-Une structure de site de communauté qui comprend la fonction [Affectations](/help/communities/functions.md#assignments-function), comprend un composant ` [assignments](/help/communities/assignments.md)` configuré.
+Une structure de site de communauté qui inclut [Fonction Affectations](/help/communities/functions.md#assignments-function), inclut une ` [assignments](/help/communities/assignments.md)` composant.
 
 ### API de référence {#reference-apis}
 

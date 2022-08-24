@@ -179,7 +179,7 @@ Dynamic Media Classic **[!UICONTROL Image]** vous permet d’ajouter des fonctio
 
 **[!UICONTROL Accentuation]** - Sélectionnez le mode d’accentuation de l’image. L’accentuation est expliquée en détails dans les rubriques [Bonnes pratiques relatives aux paramètres d’image prédéfinis](/help/assets/managing-image-presets.md#image-preset-options) et [Bonnes pratiques relatives à l’accentuation](/help/assets/assets/sharpening_images.pdf).
 
-**[!UICONTROL Modificateurs d’URL]** - Vous pouvez modifier les effets d’image en fournissant des commandes d’image Dynamic Media Classic supplémentaires. Ces commandes sont décrites dans la section [Paramètres d’image prédéfinis](/help/assets/managing-image-presets.md) et le [Référence de commande](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+**[!UICONTROL Modificateurs d’URL]** - Vous pouvez modifier les effets d’image en fournissant des commandes d’image Dynamic Media Classic supplémentaires. Ces commandes sont décrites dans la section [Paramètres d’image prédéfinis](/help/assets/managing-image-presets.md) et le [Référence de commande](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr).
 
 **[!UICONTROL Points d’arrêt]** - Si votre site web est réactif, vous souhaitez ajuster les points d’arrêt. Les points d’arrêt doivent être séparés par des virgules ( , ).
 
@@ -285,7 +285,6 @@ Parcourir les ressources Dynamic Media Classic en sélectionnant **[!UICONTROL D
 >
 >* L’explorateur de contenu Dynamic Media Classic charge environ 100 ressources et les trie par nom.
 >* Si vous disposez d’un serveur d’aperçu sécurisé, le navigateur utilise ce serveur pour effectuer le rendu des miniatures et des ressources.
-
 >
 
 
@@ -336,7 +335,6 @@ Par défaut, Experience Manager recherche le dossier sélectionné et tous les s
 >
 >* Lors de la recherche de vidéos, vous recherchez un seul rendu. Les résultats renvoient le rendu d’origine (uniquement &amp;ast;.mp4) et le rendu codé.
 >* Lors de la recherche d’une visionneuse de vidéos adaptative, vous recherchez le dossier et tous les sous-dossiers, mais uniquement si vous avez ajouté un mot-clé à la recherche. Si vous n’avez pas ajouté de mot-clé, Experience Manager ne recherche pas les sous-dossiers.
-
 >
 
 

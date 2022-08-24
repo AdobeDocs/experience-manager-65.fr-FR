@@ -183,7 +183,6 @@ Le mixin `cq:OwnerTaggable`, qui hérite de `cq:Taggable`, sert à indiquer que 
 >* pages ( `cq:Page`) où la variable `jcr:content`Le noeud est de type `cq:PageContent` qui inclut la variable `cq:Taggable` mixin.
 >
 >* ressources ( `cq:Asset`) où la variable `jcr:content/metadata` Le noeud a toujours la propriété `cq:Taggable` mixin.
-
 >
 
 

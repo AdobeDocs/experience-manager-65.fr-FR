@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales relatives aux idées
-seo-title: Notions fondamentales relatives aux idées
+seo-title: Ideation Essentials
 description: Présentation de la fonctionnalité d’orientation
-seo-description: Présentation de la fonctionnalité d’orientation
+seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,12 @@ discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '106'
 ht-degree: 6%
 
 ---
 
-# Notions fondamentales sur les idées {#ideation-essentials}
+# Notions fondamentales relatives aux idées {#ideation-essentials}
 
 Cette page fournit les informations essentielles pour travailler avec la fonction d’idéation, qui est similaire à un forum, mais qui permet d’enregistrer en tant que brouillon et d’avoir un aspect plus collaboratif.
 
@@ -47,7 +47,7 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td>Voir <a href="ideation-feature.md">Fonctionnalité d’idéation</a></td>
+   <td>Voir <a href="ideation-feature.md">Fonctionnalité d’orientation</a></td>
   </tr>
  </tbody>
 </table>
@@ -56,4 +56,4 @@ Cette page fournit les informations essentielles pour travailler avec la fonctio
 
 ### Fonction de conceptualisation {#ideation-function}
 
-Une structure de site de communauté qui comprend la fonction [Idéation](functions.md#ideation-function), comprend un composant `ideation` configuré.
+Une structure de site de communauté qui inclut [Fonction d’information](functions.md#ideation-function), inclut une `ideation` composant.

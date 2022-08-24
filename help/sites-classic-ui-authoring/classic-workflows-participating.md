@@ -1,8 +1,8 @@
 ---
 title: Participation aux workflows
-seo-title: Participation aux workflows
+seo-title: Participating in Workflows
 description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe.
-seo-description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe.
+seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '543'
 ht-degree: 98%
 
 ---
@@ -70,7 +70,7 @@ Lorsque vous avez suivi l’étape qui vous a été attribuée, vous pouvez fina
 
 1. Cliquez sur **OK** pour confirmer l’action.
 
-### Délégation d’une étape de participant    {#delegating-a-participant-step}
+### Délégation d’une étape de participant {#delegating-a-participant-step}
 
 Procédez comme suit pour déléguer un élément de travail.
 

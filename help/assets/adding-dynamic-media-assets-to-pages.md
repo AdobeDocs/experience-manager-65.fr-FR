@@ -1,5 +1,5 @@
 ---
-title: Ajout de ressources Dynamic Media aux pages
+title: Ajout de ressources Dynamic Media à des pages
 description: Comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager.
 uuid: b5e982f5-fa1c-478a-bcb3-a1ef980df201
 contentOwner: Rick Brough
@@ -14,11 +14,11 @@ feature: Components,Publishing
 source-git-commit: d947bd98b3a0f6fd79cde5b5b2fca23487077da3
 workflow-type: tm+mt
 source-wordcount: '3258'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
-# Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
+# Ajout de ressources Dynamic Media à des pages{#adding-dynamic-media-assets-to-pages}
 
 Pour ajouter la fonction Dynamic Media aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Vous ajoutez des composants en activant le mode Mise en page et en activant les composants Dynamic Media. Vous pouvez ensuite ajouter ces composants à la page et ajouter des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
@@ -128,7 +128,6 @@ Le composant Dynamic Media est dynamique ; il propose des options différentes 
 >
 >* Plusieurs instances du composant Média dynamique utilisées sur la même page.
 >* Chaque instance utilise le même type de ressource.
-
 >
 >L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
 >
@@ -284,7 +283,6 @@ Le composant Interactive Media est dynamique ; il propose des options différen
 >
 >* Plusieurs instances du composant Interactive Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
-
 >
 >L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
 >
@@ -325,7 +323,6 @@ Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux au
 >
 >* Plusieurs instances du composant **[!UICONTROL Média panoramique]** utilisées sur la même page.
 >* Chaque instance utilise le même type de ressource.
-
 >
 >L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Panoramic Media]** de cette page n’est pas prise en charge.
 >

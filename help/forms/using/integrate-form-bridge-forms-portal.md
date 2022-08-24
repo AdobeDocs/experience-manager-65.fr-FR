@@ -80,8 +80,8 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
    >
    >
    >La balise &lt;div id=&quot;rightdiv&quot;> à la **ligne 18** contient le snippet HTML du formulaire XFA.
-   >La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
-   >La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
+   La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
+   La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
 
    ![Portail](assets/portal.jpg)
 

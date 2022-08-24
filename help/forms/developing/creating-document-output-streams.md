@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 74882ccf78a62d543f1598f12ee009f9922c18a4
 workflow-type: tm+mt
 source-wordcount: '19016'
 ht-degree: 100%
@@ -1809,7 +1809,7 @@ Une fois que le service Output a effectué une opération, il renvoie des donné
 
 Pour créer plusieurs fichiers PDF à l’aide de l’API Output (Java), procédez comme suit :
 
-1. Incluez les fichiers de projet&quot;
+1. Inclure les fichiers de projet
 
    Incluez les fichiers JAR du client, tels que adobe-output-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 

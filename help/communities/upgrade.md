@@ -1,8 +1,8 @@
 ---
 title: Mise à niveau vers les communautés AEM 6.5
-seo-title: Mise à niveau vers les communautés AEM 6.5
+seo-title: Upgrading to AEM 6.5 Communities
 description: Comment mettre à niveau une version antérieure vers AEM 6.5 Communities
-seo-description: Comment mettre à niveau une version antérieure vers AEM 6.5 Communities
+seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
 uuid: 929c3892-1b3b-46a7-8e70-fa6864125911
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
 source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 5%
+source-wordcount: '663'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 
 Selon la topologie et les fonctionnalités de chaque site, les actions suivantes peuvent être nécessaires lors de la mise à niveau vers AEM Communities 6.5 ou de l’installation du dernier Feature Pack.
 
-Cette section est spécifique aux communautés et complète les informations fournies dans [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md) (plateforme).
+Cette section est spécifique aux communautés et complète les informations fournies dans la section [Mise à niveau vers AEM 6.5](/help/sites-deploying/upgrade.md) (plateforme).
 
 ## Mise à niveau à partir d’AEM 6.1 ou version ultérieure {#upgrading-from-aem-or-later}
 
@@ -31,19 +31,18 @@ Cette section est spécifique aux communautés et complète les informations fou
 Lors de l’installation d’un nouveau Feature Pack Communities sur un déploiement configuré avec MSRP, il sera nécessaire de :
 
 1. Installez le [dernier Feature Pack](/help/communities/deploy-communities.md#latestfeaturepack).
-1. Installez les [derniers fichiers de configuration Solr](/help/communities/msrp.md#upgrading).
-1. Réindexation MSRP
-Voir la section [Outil de réindexation MSRP](/help/communities/msrp.md#msrp-reindex-tool).
+1. Installez le [les derniers fichiers de configuration Solr](/help/communities/msrp.md#upgrading).
+1. Réindexation MSRP - section [Outil de réindexation MSRP](/help/communities/msrp.md#msrp-reindex-tool).
 
 ### Activation 2.0 {#enablement}
 
 Depuis la version 6.3 d’AEM, les fonctionnalités d’activation ne stockent plus les informations de création de rapports dans MySQL. La dépendance MySQL est présente uniquement pour le suivi du contenu SCORM.
 
-Pour obtenir de l’aide sur la migration de contenu à partir d’Activation 1.0, contactez [l’assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html).
+Veuillez contacter [service clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir de l’aide sur la migration de contenu à partir d’Activation 1.0.
 
 ## Mise à niveau à partir d’AEM 6.0 {#upgrading-from-aem}
 
-Si le contenu généré par l’utilisateur préexistant doit être conservé, les moyens à mettre en oeuvre dépendent du stockage du contenu créé par l’utilisateur [on-premise](#on-premise-storage) ou dans le [cloud d’Adobe](#adobe-cloud-storage).
+Si le contenu généré par l’utilisateur préexistant doit être conservé, les moyens de le faire dépendent du stockage ou non du contenu stocké par le déploiement. [on-premise](#on-premise-storage) ou dans la variable [Adobe Cloud](#adobe-cloud-storage).
 
 ### Stockage dans le cloud Adobe {#adobe-cloud-storage}
 
@@ -54,14 +53,14 @@ Il est donc possible d’ordonner à ASRP d’utiliser `AEM 6.0 compatability-mo
 Pour toutes les instances de création et de publication AEM 6.3 :
 
 * Connectez-vous avec les privilèges d’administrateur.
-* Configurez [ASRP](/help/communities/asrp.md).
+* Configurer [ASRP](/help/communities/asrp.md).
 * Pour rendre visible le contenu créé par l’utilisateur existant, procédez comme suit :
 
    * Accédez à la console web :
 
-      * Par exemple, [https://&lt;hôte>:&lt;port>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * Par exemple : [https://&lt;host>:&lt;port>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-      * Recherchez la configuration **AEM Communities Utilities**.
+      * Localiser **Utilitaires AEM Communities** configuration.
       * Sélectionnez cette option pour développer le panneau de configuration :
 
          * *Décocher* `Cloud Storage`
@@ -76,36 +75,36 @@ Pour toutes les instances de création et de publication AEM 6.3 :
 Si le site mis à niveau n’a pas utilisé l’espace de stockage dans le cloud, tout contenu généré par l’utilisateur préexistant doit être converti pour se conformer à la nouvelle structure introduite dans AEM 6.1 Communities pour prendre en charge le magasin commun.
 
 À cette fin, un outil de migration Open Source est disponible sur GitHub :
-[Outil de migration de l’UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+[Outil de migration UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
 ### API Java {#java-apis}
 
 Lors de la mise à niveau d’AEM 6.0 communautés sociales vers AEM 6.3 communautés, sachez que de nombreuses API ont été réorganisées en différents packages. La plupart de ces problèmes doivent être facilement résolus lors de l’utilisation d’un IDE pour la personnalisation des fonctionnalités de Communities.
 
-Pour plus d’informations sur le package obsolète SocialUtils, voir [Refactorisation de SocialUtils](/help/communities/socialutils.md).
+Pour plus d’informations sur le module SocialUtils obsolète, consultez la page [Refactorisation de SocialUtils](/help/communities/socialutils.md).
 
 Voir aussi [Utilisation de Maven pour Communities](/help/communities/maven.md).
 
 ### Aucun modèle de composant JSP {#no-jsp-component-templates}
 
-La [structure de composant social](/help/communities/scf.md) (SCF) utilise le [langage de modèle HandlebarsJS](https://handlebarsjs.com/) (HBS) à la place du langage de modèle Java Server Pages (JSP) utilisé avant AEM 6.0.
+Le [structure des composants sociaux](/help/communities/scf.md) (SCF) utilise la variable [HandlebarsJS](https://handlebarsjs.com/) (HBS) langage de modèle à la place de Java Server Pages (JSP) utilisé avant AEM 6.0.
 
-Dans AEM 6.0, les composants JSP sont restés aux côtés des nouveaux composants de structure HBS au même emplacement, les composants HBS étant généralement situés dans des sous-dossiers appelés &quot;hbs&quot;.
+Dans AEM 6.0, les composants JSP sont restés aux côtés des nouveaux composants de structure HBS au même emplacement, les composants HBS se trouvant généralement dans des sous-dossiers appelés &quot;hbs&quot;.
 
 À compter de la version AEM 6.1, les composants JSP ont été complètement supprimés. Pour Communities, il est recommandé de remplacer toute utilisation de composants JSP par des composants SCF.
 
 ## Outil de migration UGC AEM Communities {#aem-communities-ugc-migration-tool}
 
-[L’outil de migration du contenu créé par l’utilisateur d’AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) est un outil de migration Open Source, disponible sur GitHub, qui peut être personnalisé pour exporter le contenu créé par l’utilisateur à partir de versions antérieures de communautés sociales AEM et l’importer dans AEM Communities 6.1 ou une version ultérieure.
+Le [Outil de migration UGC AEM Communities](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) est un outil de migration Open Source, disponible sur GitHub, qui peut être personnalisé pour exporter du contenu créé par l’utilisateur à partir de versions antérieures d’AEM communautés sociales et l’importer dans AEM Communities 6.1 ou version ultérieure.
 
-En plus de déplacer le contenu généré par l’utilisateur des versions antérieures, il est également possible d’utiliser l’outil pour déplacer le contenu créé par l’utilisateur d’une [SRP](/help/communities/working-with-srp.md) à une autre, par exemple de MSRP vers DSRP.
+En plus de déplacer le contenu créé par l’utilisateur des versions antérieures, il est également possible d’utiliser l’outil pour déplacer le contenu créé par l’utilisateur d’une version à l’autre. [SRP](/help/communities/working-with-srp.md) à un autre, comme de MSRP à DSRP.
 
 ## Mise à niveau à partir d’AEM 5.6.1 ou d’une version antérieure {#upgrading-from-aem-or-earlier}
 
 Conceptuellement, il existe trois générations de composants de communautés :
 
-**Gen 1** : D’environ CQ 5.4 à AEM 5.6.0, il s’agit des composants de  **** collection qui ont stocké le contenu créé par l’utilisateur dans le référentiel local à l’aide de la réplication comme moyen de synchroniser le contenu créé par l’utilisateur sur toutes les plateformes. D’autres différences concernent l’implémentation à l’aide de Java Server Pages (JSP) ainsi que la fonctionnalité de blog consistant à créer uniquement dans l’environnement de création.
+**Gen 1**: Environ CQ 5.4 à AEM 5.6.0, voici la **collab** les composants qui ont stocké le contenu généré par l’utilisateur dans le référentiel local à l’aide de la réplication comme moyen de synchroniser le contenu créé par l’utilisateur sur toutes les plateformes. D’autres différences concernent l’implémentation à l’aide de Java Server Pages (JSP) ainsi que la fonctionnalité de blog consistant à créer uniquement dans l’environnement de création.
 
-**Gen 2** : De AEM 5.6.1 à AEM 6.1, il s’agit d’un mélange de  **** composants  **** sociaux de collaband. AEM 6.0 a introduit le nouveau [framework de composant social](/help/communities/scf.md) (SCF) et AEM 6.2 a introduit un [magasin UGC commun](/help/communities/working-with-srp.md) où le contenu créé par l’utilisateur est accessible à l’aide d’un [fournisseur de ressources de stockage](/help/communities/srp.md) (SRP).
+**Gen 2**: De AEM 5.6.1 à AEM 6.1, ceci est un mélange de **collab** et **social** composants. AEM 6.0 a introduit la nouvelle [structure des composants sociaux](/help/communities/scf.md) (SCF) et AEM 6.2 ont introduit une [magasin UGC commun](/help/communities/working-with-srp.md) où le contenu généré par l’utilisateur est accessible à l’aide d’une [fournisseur de ressources de stockage](/help/communities/srp.md) (SRP).
 
-**Gen 3** : À partir de la version 6.2 d’AEM, il n’y a que les composants  **** sociaux, implémentés dans SCF en tant que composants Handlebars (HBS) nécessitant un choix de SRP pour le contenu généré par l’utilisateur.
+**Gen 3**: À partir de AEM version 6.2, il n’y a que **social** composants, implémentés dans SCF en tant que composants Handlebars (HBS) nécessitant un choix de SRP pour le contenu généré par l’utilisateur.

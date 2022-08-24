@@ -1,19 +1,19 @@
 ---
 title: 'Liste des lots obsolètes désinstallés après la mise à niveau '
-seo-title: 'Liste des lots obsolètes désinstallés après la mise à niveau '
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: 'Liste répertoriant les lots automatiquement désinstallées lors de la mise à niveau vers AEM 6.3. '
-seo-description: 'Liste répertoriant les lots automatiquement désinstallées lors de la mise à niveau vers AEM 6.3. '
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
-feature: Mise à niveau
+feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '167'
 ht-degree: 100%
 
 ---
@@ -42,7 +42,7 @@ Lorsque vous effectuez la mise à niveau vers AEM 6.3, les lots suivants sont au
 * com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
 * com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.2.2, Active
 
-**AEM 6.0:**
+**AEM 6.0 :**
 
 * org.apache.sling.discovery.impl, version 1.1.6, Active
 * com.adobe.granite.installer.patch, version 0.4.0, Active

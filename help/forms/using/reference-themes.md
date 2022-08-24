@@ -10,7 +10,7 @@ discoiquuid: a69d3787-8149-4bca-835d-aeecfb11702b
 docset: aem65
 exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Le thème Exec Light utilise l’espace vierge pour créer une expérience homog
 
 ](assets/exec-light-1.png)-->
 
-## Liberty {#liberty}
+## Liberté {#liberty}
 
 Le thème Liberty utilise une approche minimaliste pour mettre en avant les éléments importants. Par exemple, la couleur de police de l’onglet visité devient verte. Vous pouvez uniquement afficher le contour inférieur de la zone de texte qui simule l’aspect d’un formulaire papier avec des lignes. La zone de texte active dispose d’un contour inférieur noir, tandis que les autres disposent d’un contour inférieur gris clair.
 

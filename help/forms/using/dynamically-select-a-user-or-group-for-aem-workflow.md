@@ -9,7 +9,7 @@ topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
 source-git-commit: 8f0e8b15d2ed8b436594fd2be464b4ace29a8902
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 100%
 
@@ -232,7 +232,7 @@ Vous avez besoin des fichiers jar [AEM Forms Client SDK](https://experienceleagu
 
 1. Chargez le bundle sur un serveur AEM Forms. Vous pouvez utiliser AEM Package Manager pour importer le bundle sur le serveur AEM Forms.
 
-Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
+Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
 
 ### Exemples de code Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 

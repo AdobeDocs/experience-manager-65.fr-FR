@@ -7,7 +7,7 @@ exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 49%
+ht-degree: 52%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 49%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-install.html?lang=en) |
+| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-install.html?lang=fr) |
 
 Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experience Manager]  installe le connecteur amélioré. Avant de procéder à l’installation, vérifiez la prise en charge de la plateforme et d’autres [conditions préalables pour le connecteur](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
@@ -25,7 +25,7 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 >
 >* Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou [!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 >
->* Adobe peut apporter des mises à jour à [!DNL Adobe Workfront] et [!DNL Adobe Experience Manager], lesquelles peuvent rendre ce connecteur inutile. Si cela se produit, les clients peuvent être amenés à abandonner l’utilisation de ce connecteur.
+>* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
 >* Adobe prend en charge les versions 1.7.4 et ultérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au `digital.hoodoo` groupe disponible dans le volet de gauche de [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
 >
@@ -68,7 +68,7 @@ Pour créer une connexion avec Workfront, procédez comme suit :
 
 Experience Manager Assets vous permet de mettre à jour la variable [!DNL Workfront for Experience Manager enhanced connector] d’une version précédente à la dernière version.
 
-Pour mettre à jour la variable [!DNL Workfront for Experience Manager enhanced connector] vers la dernière version :
+Pour mettre à jour [!DNL Workfront for Experience Manager enhanced connector] vers la dernière version :
 
 1. Téléchargez la dernière version du connecteur amélioré à partir de [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 1. Installez le module à l’aide de [!UICONTROL Gestionnaire de modules]. Pour savoir comment installer des packages, voir [Documentation du gestionnaire de modules](/help/sites-administering/package-manager.md).

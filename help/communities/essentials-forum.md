@@ -1,8 +1,8 @@
 ---
 title: Notions fondamentales sur le forum
-seo-title: Notions fondamentales sur le forum
+seo-title: Forum Essentials
 description: Présentation du forum
-seo-description: Présentation du forum
+seo-description: Forum overview
 uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,12 @@ discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '253'
 ht-degree: 2%
 
 ---
 
-# Principes de base du forum {#forum-essentials}
+# Notions fondamentales sur le forum {#forum-essentials}
 
 Cette page fournit les informations essentielles pour utiliser la fonction de forum.
 
@@ -54,7 +54,7 @@ Cette page fournit les informations essentielles pour utiliser la fonction de fo
 
 * [Personnalisations côté client](client-customize.md)
 
-## Principes élémentaires côté serveur {#essentials-for-server-side}
+## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
 * [API du forum](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
@@ -64,20 +64,20 @@ Cette page fournit les informations essentielles pour utiliser la fonction de fo
 
 ### Fonction Forum {#forum-function}
 
-Une structure de site de communauté qui inclut la [fonction Forum](functions.md#forum-function), inclut un composant `forum` configuré, ainsi que des paramètres affectant la modération, le balisage et la traduction.
+Une structure de site de communauté qui inclut [Fonction Forum](functions.md#forum-function), inclut une `forum` , ainsi que les paramètres affectant la modération, le balisage et la traduction.
 
 ### Accès aux publications du forum (UGC) {#accessing-forum-posts-ugc}
 
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-Depuis AEM 6.1 Communities, l’utilisation d’un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
-**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement**.
+**L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 
 Voir :
 
-* [Présentation du fournisseur de ressources de stockage](srp.md)  - Présentation et utilisation du référentiel.
-* [SRP et UGC Essentials](srp-and-ugc.md)  - Méthodes et exemples d’utilitaire SRP.
-* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md)  - Instructions de codage.
-* [Refactorisation de SocialUtils](socialutils.md)  : mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.
+* [Présentation du fournisseur de ressources de stockage](srp.md) - Présentation et présentation de l’utilisation du référentiel.
+* [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md) - Méthodes et exemples de l’utilitaire SRP.
+* [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md) - Instructions de codage.
+* [Refactorisation de SocialUtils](socialutils.md) - Mappage de méthodes d’utilitaire obsolètes aux méthodes d’utilitaire SRP actuelles.

@@ -1,5 +1,5 @@
 ---
-title: Personnalisation
+title: 'Personnalisation '
 seo-title: Personalization
 description: En savoir plus sur la personnalisation dans AEM.
 seo-description: Learn about personalization in AEM.
@@ -17,7 +17,7 @@ ht-degree: 71%
 
 ---
 
-# Personnalisation {#personalization}
+# Personnalisation  {#personalization}
 
 ## Qu’est -ce que la personnalisation ? {#what-is-personalization}
 
@@ -42,7 +42,7 @@ En d’autres termes, le contenu doit, d’une certaine manière, dépendre de l
 
 ### Les règles {#rules}
 
-* Définissez la manière dont la personnalisation se produit, le contenu que l’utilisateur peut voir et le moment où.
+* Définissez la manière dont la personnalisation se produit réellement, le contenu que l’utilisateur peut voir et le moment où.
 
 La personnalisation peut être soit :
 
@@ -117,7 +117,7 @@ Lors de l’utilisation de la personnalisation, tenez compte des points suivants
 * Il n’y a rien de plus frustrant pour un utilisateur que de se voir imposer ou refuser un contenu en raison de la logique inexacte d’une règle.
 * Par conséquent, les règles doivent être bien pensées, avec les exigences de l’utilisateur au premier plan. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
 
-#### Quand utiliser {#when-to-use}
+#### Quand l’utiliser {#when-to-use}
 
 * Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation bénéficiera-t-elle vraiment à l’utilisateur ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation peut courir le risque d’être une fonctionnalité que les utilisateurs configurent une seule fois (pour voir comment elle fonctionne) et une seule fois, car elle ne leur apporte aucun avantage réel.
 * La personnalisation n’a de sens que lorsque le contenu est dynamique, selon l’utilisateur. Si tous les utilisateurs voient le même contenu, la personnalisation est redondante.

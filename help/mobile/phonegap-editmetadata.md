@@ -1,8 +1,8 @@
 ---
 title: Modification de métadonnées d’application
-seo-title: Modification de métadonnées d’application
+seo-title: Editing App Metadata
 description: Les métadonnées d’application sont nécessaires pour publier une application dans la boutique d’un fournisseur. Consultez cette page pour en savoir plus sur la modification des données d’application.
-seo-description: Les métadonnées d’application sont nécessaires pour publier une application dans la boutique d’un fournisseur. Consultez cette page pour en savoir plus sur la modification des données d’application.
+seo-description: App metadata is required details for releasing an application to a vendor's store. Follow this page to learn about editing app data.
 uuid: c140be0f-8403-416e-af0f-29072a2ab942
 contentOwner: User
 content-type: reference
@@ -12,8 +12,8 @@ discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 37%
+source-wordcount: '369'
+ht-degree: 36%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 37%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-La mosaïque **Gérer l’application** et la page &quot;Gérer l’application&quot; permettent d’afficher et de modifier les métadonnées de l’application. Les métadonnées d’application sont nécessaires pour publier une application dans la boutique d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Pour plus d’informations sur les métadonnées courantes et iOS, voir [Gestion de la mosaïque d’application](/help/mobile/phonegap-app-details-tile.md) .
+Le **Gérer l’application** La mosaïque et la page &quot;Gérer l’application&quot; permettent d’afficher et de modifier les métadonnées de l’application. Les métadonnées d’application sont nécessaires pour publier une application dans la boutique d’un fournisseur. Il peut s’agir de métadonnées courantes, de métadonnées iOS et de captures d’écran. Voir [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md) pour plus d’informations sur les métadonnées courantes et iOS.
 
 ## Modification des données de l’application {#editing-the-app-data}
 
@@ -33,7 +33,7 @@ Pour modifier les métadonnées de l’application :
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
-1. Pour afficher ou modifier les détails, cliquez sur &quot;...&quot;. dans le coin inférieur droit de la mosaïque **Gérer l’application**.
+1. Pour afficher ou modifier les détails, cliquez sur &quot;...&quot;. dans le coin inférieur droit du **Gérer l’application** mosaïque.
 
 1. Saisissez ou affichez les détails dans l’un des cinq onglets disponibles, comme illustré dans la figure ci-dessous.
 
@@ -41,9 +41,9 @@ Pour modifier les métadonnées de l’application :
 
 ## Modification de métadonnées courantes et IOS {#editing-common-and-ios-metadata}
 
-Vous pouvez modifier les métadonnées courantes et IOS :
+Vous pouvez modifier les métadonnées IOS communes :
 
-* Sélectionnez l’onglet **Avancé** dans la page de description de l’application.
+* Sélectionnez la **Avancé** de la page de description de l’application.
 * Modifiez ou affichez les métadonnées communes et IOS. Pour plus d’informations, reportez-vous aux figures ci-dessous.
 
 ![chlimage_1-31](assets/chlimage_1-31.png) ![chlimage_1-32](assets/chlimage_1-32.png)
@@ -58,12 +58,12 @@ Vous pouvez inclure des captures d’écran d’application au déploiement de m
 
 Pour ajouter une ressource en tant que capture d’écran :
 
-1. En mode de modification de la page **Gérer l’application**, cliquez sur Ajouter (icône plus).
-1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour l’ajouter.
+1. En mode de modification de la variable **Gérer l’application** , cliquez sur ajouter (icône plus).
+1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour ajouter la ressource.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour l’ajouter.
+1. Sélectionnez la ressource et cliquez sur **Sélectionner** pour ajouter la ressource.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Cliquez sur la suppression de la ressource.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-## Étapes suivantes {#the-next-steps}
+## Les étapes suivantes {#the-next-steps}
 
 Consultez les ressources suivantes pour en savoir plus sur les autres rôles de création :
 

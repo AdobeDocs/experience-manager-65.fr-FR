@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '741'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Le scénario de l’application à une assurance automobile chez We.Finance est 
 
 ### Gloria envoie une notification de renouvellement de police d’assurance à partir de We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria se connecte à l’instance AEM, clique sur **Renouvellement de l’assurance automobile**, puis sur **Ouvrir l’interface utilisateur de l’agent.** Le clic préremplit le document d’assurance avec les détails de la police de Sarah Rose. Clics Gloria **Envoyer** et un message s’affiche à l’écran &quot;Envoi commencé&quot;, puis en quelques secondes &quot;Envoyé avec succès&quot;.
+Gloria se connecte à l’instance AEM, clique sur **Renouvellement de l’assurance automobile**, puis sur **Ouvrir l’interface utilisateur de l’agent.** Le clic préremplit le document d’assurance avec les détails de la police de Sarah Rose. Gloria clique sur **Envoyer** et un message « Envoi en cours » apparaît à l’écran, puis quelques secondes plus tard le message « Envoyé » s’affiche.
 
-Sarah reçoit un courrier électronique contenant le sujet &quot;Votre renouvellement d’assurance automobile&quot;.
+Sarah reçoit un e-mail dont l’objet est « Votre renouvellement d’assurance automobile ».
 
 ![Interface utilisateur de l’agent](assets/agent_ui_email_new.png)
 

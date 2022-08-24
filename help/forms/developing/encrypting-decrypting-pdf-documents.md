@@ -12,7 +12,7 @@ discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '8189'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -186,7 +186,7 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
 1. Créez un objet API client Encryption.
 
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Il n’est pas nécessaire d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `EncryptionServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
@@ -201,7 +201,7 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF chiffré avec un mot de passe.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF à chiffrer et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données du flux en appelant la méthode `Read` de lʼobjet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de l’objet `BLOB`.
 
 1. Définissez les options d’exécution du chiffrement.
@@ -225,8 +225,8 @@ Chiffrez un document PDF avec un mot de passe à l’aide de l’API Encryption 
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF sécurisé.
    * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingPassword`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -257,7 +257,7 @@ Un certificat de clé publique contient la clé publique d’un utilisateur et s
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -338,7 +338,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (J
 
 1. Obtenez un document PDF à chiffrer.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document PDF à chiffrer en utilisant son constructeur et en transmettant une valeur string spécifiant l’emplacement du document PDF.
+   * Créez un objet `java.io.FileInputStream` représentant le document PDF à chiffrer en utilisant son constructeur et en transmettant une valeur de chaîne indiquant l’emplacement du document PDF.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Référencez le certificat.
@@ -357,8 +357,8 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (J
 
 1. Définissez les options d’exécution du chiffrement.
 
-   * Créez un objet `CertificateEncryptionOptionSpec` en utilisant son constructeur.
-   * Spécifiez les ressources de document PDF à chiffrer en appelant la méthode `setOption` de l’objet `CertificateEncryptionOptionSpec` et en transmettant une valeur d’énumération `CertificateEncryptionOption` spécifiant les ressources du document à chiffrer. Par exemple, pour chiffrer l’intégralité du document PDF, y compris ses métadonnées et ses pièces jointes, spécifiez `CertificateEncryptionOption.ALL`.
+   * Créez un objet `CertificateEncryptionOptionSpec` en appelant son constructeur.
+   * Indiquez les ressources du document PDF à chiffrer en appelant la méthode `setOption` de l’objet `CertificateEncryptionOptionSpec` et en transmettant une valeur d’énumération `CertificateEncryptionOption` spécifiant les ressources du document à chiffrer. Par exemple, pour chiffrer l’intégralité du document PDF, y compris ses métadonnées et ses pièces jointes, spécifiez `CertificateEncryptionOption.ALL`.
    * Spécifiez l’option de compatibilité Acrobat en appelant la méthode `setCompat` de l’objet `CertificateEncryptionOptionSpec` et en transmettant une valeur d’énumération `CertificateEncryptionCompatibility` spécifiant le niveau de compatibilité Acrobat. Par exemple, vous pouvez spécifier `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Créez un document PDF chiffré par certificat.
@@ -392,24 +392,24 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Remplacez `localhost` avec l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un objet API client Encryption.
 
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur string qui spécifie le WSDL au service AEM Forms (par exemple `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `EncryptionServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Affectez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Affectez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
-      * Affectez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Affectez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Obtenez un document PDF à chiffrer.
 
@@ -425,7 +425,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
    * Créez un objet `BLOB` en utilisant son constructeur. Cet objet `BLOB` stocke le certificat qui chiffre le document PDF.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du certificat et le mode d’ouverture du fichier.
    * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Renseignez le tableau d’octets avec les données du flux en appelant la méthode `Read` de lʼobjet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de l’objet `BLOB`.
    * Affectez l’objet `BLOB` qui stocke le certificat au membre de données `x509Cert` de l’objet `Recipient`.
    * Créez un objet `CertificateEncryptionIdentity` qui stocke les informations de certificat à l’aide de son constructeur.
@@ -450,7 +450,7 @@ Chiffrez un document PDF avec un certificat à l’aide de l’API Encryption (W
 
 1. Enregistrez le document PDF chiffré en tant que fichier PDF.
 
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur string qui représente l’emplacement du fichier du document PDF sécurisé.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF sécurisé.
    * Créez un tableau d’octets qui stocke le contenu des données de l’objet `BLOB` qui a été renvoyé par la méthode `encryptPDFUsingCertificates`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `binaryData` de l’objet `BLOB`.
    * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
    * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
@@ -469,7 +469,7 @@ Vous pouvez supprimer le chiffrement avec certificat d’un document PDF afin qu
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -481,7 +481,7 @@ Pour supprimer le chiffrement avec certificat d’un document PDF, procédez com
 1. Supprimez le chiffrement.
 1. Enregistrez le document PDF au format PDF.
 
-**Inclure les fichiers de projet**
+**Inclure des fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services Web, veillez à inclure les fichiers proxy.
 
@@ -495,7 +495,7 @@ Les fichiers JAR suivants doivent être ajoutés au chemin d’accès aux class
 
 **Créer un client de service de chiffrement**
 
-Pour effectuer par programmation une opération de service Encryption, vous devez créer un client de service Encryption. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API Web Service Encryption Service, créez un objet `EncryptionServiceService`.
+Pour effectuer par programmation une opération de service Encryption, vous devez créer un client de service Encryption. Si vous utilisez l’API Java Encryption Service, créez un objet `EncrytionServiceClient`. Si vous utilisez l’API de service web Encryption Service, créez un objet `EncryptionServiceService`.
 
 **Obtenir le document PDF chiffré**
 
@@ -540,7 +540,7 @@ Supprimez le chiffrement avec certificat d’un document PDF à l’aide de l’
 
 1. Prenez le document PDF chiffré.
 
-   * Créez un objet `java.io.FileInputStream` qui représente le document PDF chiffré en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF chiffré.
+   * Créez un objet `java.io.FileInputStream` représentant le document PDF chiffré en utilisant son constructeur et en transmettant une valeur de chaîne qui spécifie l’emplacement du document PDF chiffré.
    * Créez un objet `com.adobe.idp.Document` en utilisant son constructeur et en transmettant l’objet `java.io.FileInputStream`. 
 
 1. Supprimez le chiffrement.
@@ -573,22 +573,22 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. Assurez-vous d’utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client de service de chiffrement.
 
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser lʼattribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `EncryptionServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `MessageEncoding` de lʼobjet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur du mot de passe correspondant au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -596,7 +596,7 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 
    * Créez un objet `BLOB` en utilisant son constructeur. Lʼobjet `BLOB` sert à stocker le document PDF chiffré.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui indique l’emplacement du fichier du document PDF chiffré et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de lʼobjet `System.IO.FileStream`.
+   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données du flux en appelant la méthode `Read` de lʼobjet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez lʼobjet `BLOB` en affectant le contenu du tableau dʼoctets au membre de données `MTOM` de lʼobjet `BLOB`.
 
@@ -612,9 +612,9 @@ Supprimez le chiffrement avec certificat à l’aide de l’API Encryption (serv
 1. Enregistrez le formulaire PDF.
 
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF non sécurisé.
-   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `BLOB` renvoyé par la méthode `removePDFPasswordSecurity`. Renseignez le tableau dʼoctets en obtenant la valeur du membre de données `MTOM` de lʼobjet `BLOB`.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Enregistrez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de lʼobjet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `BLOB` renvoyé par la méthode `removePDFPasswordSecurity`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -630,7 +630,7 @@ Supprimez le chiffrement avec mot de passe d’un document PDF et permettez ains
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -731,7 +731,7 @@ Supprimez le chiffrement par mot de passe à l’aide de l’API Encryption (ser
 1. Créez un client de service de chiffrement.
 
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui indique le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). L’utlisation de l’attribut `lc_version` n’est pas nécessaire. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `EncryptionServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
    * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
@@ -745,8 +745,8 @@ Supprimez le chiffrement par mot de passe à l’aide de l’API Encryption (ser
 
    * Créez un objet `BLOB` en utilisant son constructeur. L’objet `BLOB` sert à stocker un document PDF chiffré par mot de passe.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne représentant l’emplacement du document PDF chiffré et le mode d’ouverture du fichier.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données du flux en appelant la méthode `Read` de lʼobjet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de l’objet `BLOB`.
 
 1. Supprimez le mot de passe.
@@ -760,10 +760,10 @@ Supprimez le chiffrement par mot de passe à l’aide de l’API Encryption (ser
 
 1. Enregistrez le formulaire PDF.
 
-   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du document PDF non sécurisé.
-   * Créez un tableau d’octets qui stocke le contenu de l’objet `BLOB` qui a été renvoyé par la méthode `removePDFPasswordSecurity`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
-   * Créez un objet `System.IO.BinaryWriter` en appelant son constructeur et en transmettant l’objet `System.IO.FileStream`.
-   * Ecrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
+   * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF non sécurisé.
+   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `BLOB` renvoyé par la méthode `removePDFPasswordSecurity`. Renseignez le tableau d’octets en obtenant la valeur du membre de données `MTOM` de l’objet `BLOB`.
+   * Créez un objet `System.IO.BinaryWriter` en utilisant son constructeur et en transmettant l’objet `System.IO.FileStream`.
+   * Écrivez le contenu du tableau d’octets dans un fichier PDF en appelant la méthode `Write` de l’objet `System.IO.BinaryWriter` et en transmettant le tableau d’octets.
 
 **Voir également**
 
@@ -777,7 +777,7 @@ Un document PDF chiffré par mot de passe ou par certificat doit être déverrou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Encryption, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -887,22 +887,22 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (servi
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >Remplacer `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
+   >Remplacez `localhost` par l’adresse IP du serveur hébergeant AEM Forms.
 
 1. Créez un client de service de chiffrement.
 
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser lʼattribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `EncryptionServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `MessageEncoding` de lʼobjet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuer le nom d’utilisateur AEM Forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur du mot de passe correspondant au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
@@ -910,17 +910,17 @@ Déverrouillez un document PDF chiffré à l’aide de l’API Encryption (servi
 
    * Créez un objet `BLOB` en utilisant son constructeur.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF chiffré et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau dʼoctets en récupérant la propriété `Length` de lʼobjet `System.IO.FileStream`.
-   * Renseignez le tableau d’octets avec les données de diffusion en appelant la méthode `Read` de l’objet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
+   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
+   * Renseignez le tableau d’octets avec les données du flux en appelant la méthode `Read` de lʼobjet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez l’objet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de l’objet `BLOB`.
 
 1. Déverrouillez le document.
 
-   Déverrouillez un document PDF chiffré en appelant la méthode `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` de l’objet `EncryptionServiceClient`.
+   Déverrouillez un document PDF chiffré en appelant la méthode `unlockPDFUsingPassword` ou `unlockPDFUsingCredential` de lʼobjet `EncryptionServiceClient`.
 
    Pour déverrouiller un document PDF chiffré avec un mot de passe, appelez la méthode `unlockPDFUsingPassword` et transmettez les valeurs suivantes :
 
-   * Un objet `BLOB` contenant le document PDF chiffré par mot de passe.
+   * Un objet `BLOB` contenant le document PDF chiffré avec mot de passe.
    * Une valeur de chaîne qui indique la valeur de mot de passe utilisée pour ouvrir un document PDF chiffré par mot de passe. Cette valeur est spécifiée lors du chiffrement du document PDF avec un mot de passe.
 
    Pour déverrouiller un document PDF chiffré avec un certificat, appelez la méthode `unlockPDFUsingCredential` et transmettez les valeurs suivantes :
@@ -955,7 +955,7 @@ Un document PDF peut être protégé par les types de chiffrement suivants :
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -1043,7 +1043,7 @@ Déterminez le type de chiffrement qui protège un document PDF à l’aide de l
 
 1. Incluez les fichiers de projet.
 
-   Créez un projet Microsoft .NET qui utilise MTOM. veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
+   Créez un projet Microsoft .NET qui utilise MTOM. Veillez à utiliser la définition WSDL suivante : `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -1052,21 +1052,21 @@ Déterminez le type de chiffrement qui protège un document PDF à l’aide de l
 1. Créez un client de service.
 
    * Créez un objet `EncryptionServiceClient` en utilisant son constructeur par défaut.
-   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser lʼattribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
+   * Créez un objet `EncryptionServiceClient.Endpoint.Address` en utilisant le constructeur `System.ServiceModel.EndpointAddress`. Transmettez une valeur de chaîne qui spécifie le WSDL au service AEM Forms (par exemple, `http://localhost:8080/soap/services/EncryptionService?WSDL`). Vous n’avez pas besoin d’utiliser l’attribut `lc_version`. Cet attribut est utilisé lorsque vous créez une référence de service.)
    * Créez un objet `System.ServiceModel.BasicHttpBinding` en obtenant la valeur du champ `EncryptionServiceClient.Endpoint.Binding`. Convertissez la valeur de retour en `BasicHttpBinding`.
-   * Définissez le champ `MessageEncoding` de lʼobjet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
+   * Définissez le champ `MessageEncoding` de l’objet `System.ServiceModel.BasicHttpBinding` sur `WSMessageEncoding.Mtom`. Cette valeur garantit l’utilisation de MTOM.
    * Activez l’authentification HTTP de base en effectuant les tâches suivantes :
 
-      * Attribuez le nom d’utilisateur AEM Forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
-      * Attribuez la valeur du mot de passe correspondant au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
+      * Attribuez le nom d’utilisateur AEM forms au champ `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Attribuez la valeur de mot de passe correspondante au champ `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Attribuez la valeur constante `HttpClientCredentialType.Basic` au champ `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Attribuer la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
+      * Attribuez la valeur constante `BasicHttpSecurityMode.TransportCredentialOnly` au champ `BasicHttpBindingSecurity.Security.Mode`.
 
 1. Prenez le document PDF chiffré.
 
    * Créez un objet `BLOB` en utilisant son constructeur.
    * Créez un objet `System.IO.FileStream` en appelant son constructeur et en transmettant une valeur de chaîne qui représente l’emplacement du fichier du document PDF chiffré et son mode d’ouverture.
-   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de lʼobjet `System.IO.FileStream`.
+   * Créez un tableau d’octets qui stocke le contenu de lʼobjet `System.IO.FileStream`. Vous pouvez déterminer la taille du tableau d’octets en obtenant la propriété `Length` de l’objet `System.IO.FileStream`.
    * Renseignez le tableau d’octets avec les données du flux en appelant la méthode `Read` de lʼobjet `System.IO.FileStream` et en transmettant le tableau d’octets, la position de départ et la longueur du flux à lire.
    * Renseignez lʼobjet `BLOB` en attribuant le contenu du tableau d’octets au membre de données `MTOM` de lʼobjet `BLOB`.
 

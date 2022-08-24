@@ -7,7 +7,7 @@ exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 9b3e30f7523ff86fd1ed1b5fc55ce22b8e9f3429
 workflow-type: tm+mt
 source-wordcount: '2338'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -232,11 +232,11 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >
 >AEM dispose d’une protection récurrente pour :
 >
->* Références du contenu
-   >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>* Les références de contenu
+   >  Cela permet d’empêcher l’utilisateur d’ajouter une référence au fragment actif. Cela pourrait conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->* Références de fragment dans GraphQL
-   >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null à la première occurrence.
+>* Les références de fragment dans GraphQL
+   >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 
 ### Référence de contenu {#content-reference}

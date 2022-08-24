@@ -1,8 +1,8 @@
 ---
 title: Modération dans le contexte
-seo-title: Modération dans le contexte
+seo-title: In-Context Moderation
 description: Comment effectuer des actions de modérateur
-seo-description: Comment effectuer des actions de modérateur
+seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,7 +13,7 @@ role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '789'
 ht-degree: 1%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 1%
 
 Pour AEM Communities, la modération peut être effectuée par les administrateurs et les membres de la communauté de confiance directement sur la page publiée où le contenu de la communauté a été publié.
 
-Lors de l’utilisation d’une [console de modération](moderation.md), les informations affichées pour le contenu incluent un lien vers la page publiée afin de permettre l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
+Lors de l’utilisation d’un [console de modération](moderation.md), les informations affichées pour le contenu incluent un lien vers la page publiée afin de permettre l’accès à d’autres actions de modération disponibles lors de la modération dans le contexte.
 
 ## Actions de modération {#moderation-actions}
 
-Consultez la présentation de la modération pour obtenir une description des [actions de modération](moderate-ugc.md#moderation-actions).
+Visitez la présentation de la modération pour obtenir une description de [actions de modération](moderate-ugc.md#moderation-actions).
 
 ## Interface utilisateur de la modération {#moderation-ui}
 
@@ -40,13 +40,13 @@ L’interface utilisateur présentée au modérateur sur l’instance de publica
 
 ## Exemple {#example}
 
-En utilisant le site [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) créé lorsque [Prise en main d’AEM Communities](getting-started.md), il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication, comme illustré ci-dessous.
+En utilisant la variable [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) site créé lorsque [Prise en main d’AEM Communities](getting-started.md), il est possible de configurer rapidement un thread dans un forum sur lequel expérimenter diverses activités de modération dans l’environnement de publication, comme illustré ci-dessous.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) a été identifié en tant que membre de la communauté de confiance en l’ajoutant au groupe de la communauté-engage-modérateurs lors de la création du site.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) peut être ajouté en tant que membre du groupe community-engage-members à l’aide de la [console Membres](members.md).
+Rebekah Larsen (rebekah.larsen@trashymail.com) peut être ajouté en tant que membre du groupe communautaire-engage-members à l’aide de la variable [Console Membres](members.md).
 
-Pour plus d’informations sur les groupes d’utilisateurs de la communauté, voir [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
+Pour plus d’informations sur les groupes d’utilisateurs de la communauté, consultez [Gestion des utilisateurs et des groupes d’utilisateurs](users.md).
 
 ### Création de publications de forum {#create-the-forum-posts}
 
@@ -68,7 +68,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, v
 * Connectez-vous en tant qu’Aaron McDonald (aaron.mcdonald@mailinator.com)
 
    * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus.
+   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
       Je change la mienne une fois par semaine et je les reçois de mai à octobre.
@@ -79,7 +79,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, v
 * Connectez-vous en tant qu’Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
    * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus.
+   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
       Je vends du nectar et des mangeoires - visitez https://my.viral.url/
@@ -97,9 +97,9 @@ Un visiteur anonyme du site ne peut afficher que le forum, mais ne peut pas publ
 
 ### Nouveau membre (#4) {#new-member}
 
-Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe community-engage-members à l’aide de la [console Membres](members.md), puis déconnectez-vous.
+Sur l’auteur, connectez-vous en tant qu’administrateur et ajoutez Boyd Larsen (boyd.larsen@dodgit.com) en tant que nouveau membre du groupe community-engage-members à l’aide de la variable [Console Membres](members.md), puis déconnectez-vous.
 
-Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour la publication colibri.
+Lors de la publication, connectez-vous en tant que Boyd Larsen et accédez au thread en sélectionnant `Forum`, puis `Read more` pour le billet colibri.
 
 Avis:
 
@@ -124,7 +124,7 @@ Avis:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Sélectionnez l’élément de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement de publication.
+Sélectionnez l’élément de menu Administration pour accéder à [console de modération](moderation.md) dans l’environnement de publication.
 
 Notez que, pour un administrateur, tout le contenu modérable est visible, et pas seulement le contenu du site de la communauté Geometrixx Engage.
 
@@ -147,7 +147,7 @@ Avis:
 
 ![communauté-forum-modérateur](assets/community-forum-moderator.png)
 
-Sélectionnez l’élément de menu Administration pour accéder à la [console de modération](moderation.md) à partir de l’environnement de publication.
+Sélectionnez l’élément de menu Administration pour accéder à [console de modération](moderation.md) dans l’environnement de publication.
 
 Notez que, pour un modérateur de communauté, seul le contenu modérable du site de la communauté Geometrixx Engage est visible.
 

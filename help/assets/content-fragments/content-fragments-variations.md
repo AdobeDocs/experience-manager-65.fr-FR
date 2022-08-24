@@ -3,10 +3,11 @@ title: Variations – création de contenu de fragment
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 feature: Content Fragments
 role: User
-source-git-commit: 251bf0ac672d516dd6b2018fc9cc804822f48e4c
+exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '2256'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -220,10 +221,11 @@ Le résumé de texte est conçu pour aider les utilisateurs à réduire la longu
 >[!CAUTION]
 L’anglais est disponible par défaut.
 D’autres langues sont disponibles en tant que modules de modèle de langues dans Package Share :
-* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+* [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>
 
 
 1. Sélectionnez **Maître** ou la variante requise.
@@ -452,7 +454,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert (ajouté à la variation) ;
+   * le contenu ajouté figure en vert  (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 

@@ -1,8 +1,8 @@
 ---
 title: Raccourcis clavier lors de la modification de pages
-seo-title: Raccourcis clavier lors de la modification de pages
+seo-title: Keyboard Shortcuts when Editing Pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
-seo-description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
+seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,8 +12,8 @@ discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 91%
+source-wordcount: '221'
+ht-degree: 90%
 
 ---
 
@@ -43,7 +43,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->&amp;ast; Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
+>&amp;ast; Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, la variable `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
 Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent les [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

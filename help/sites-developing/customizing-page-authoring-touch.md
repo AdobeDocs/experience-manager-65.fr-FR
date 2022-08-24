@@ -50,7 +50,6 @@ Ils peuvent être utilisés de différentes manières pour étendre la fonctionn
 >* Utilisation et création d’[incrustations](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
-
 >
 >Ce thème est également abordé dans la session [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) – [Personnalisation de l’interface utilisateur pour AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
@@ -62,7 +61,7 @@ Ils peuvent être utilisés de différentes manières pour étendre la fonctionn
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c’est-à-dire tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
 >1. Apportez les modifications désirées dans `/apps`
 
 
@@ -74,7 +73,7 @@ Lorsque vous modifiez une page, plusieurs [modes](/help/sites-authoring/author-e
 
 Une instance AEM standard fournit le calque MSM. Elle accède aux données associées à la [gestion multisite](/help/sites-administering/msm.md) et les met en évidence dans le calque.
 
-Pour l’afficher en action, vous pouvez modifier toute page [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou toute autre page Live Copy) et sélectionner le mode **État de Live Copy** .
+Pour l’afficher en action, vous pouvez modifier n’importe quelle [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou toute autre page Live Copy) et sélectionnez **État de Live Copy** mode .
 
 Vous trouverez la définition du calque MSM (pour référence) à l’emplacement suivant :
 
@@ -222,7 +221,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 #### Configuration de plusieurs éditeurs statiques {#configuring-multiple-in-place-editors}
 
-Il est possible de configurer un composant afin qu’il comporte plusieurs éditeurs statiques. Lorsque plusieurs éditeurs statiques sont configurés, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Pour plus d’informations, consultez la documentation [Configuration de plusieurs éditeurs statiques](/help/sites-developing/multiple-inplace-editors.md) .
+Il est possible de configurer un composant afin qu’il comporte plusieurs éditeurs statiques. Lorsque plusieurs éditeurs statiques sont configurés, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Voir [Configuration de plusieurs éditeurs statiques](/help/sites-developing/multiple-inplace-editors.md) pour plus d’informations.
 
 ## Ajout d’une nouvelle action de page {#add-a-new-page-action}
 
@@ -241,15 +240,15 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 ## Personnalisation du workflow Demander l’activation {#customizing-the-request-for-activation-workflow}
 
-Le workflow d’usine, **Demande d’activation** :
+le workflow d&#39;usine, **Demande d’activation**:
 
-* S’affiche automatiquement dans le menu approprié lorsqu’un auteur de contenu **ne dispose pas** des droits de réplication appropriés, mais que **est membre de DAM-Users et d’auteurs.**
+* Apparaît automatiquement dans le menu approprié lorsqu’un auteur de contenu **n’a pas** les droits de réplication appropriés, mais **has** appartenance de DAM-Users et d’auteurs.
 
 * Sinon, rien ne s’affichera, car les droits de réplication ont été supprimés.
 
-Pour avoir un comportement personnalisé lors de cette activation, vous pouvez superposer le workflow **Demande d’activation** :
+Pour avoir un comportement personnalisé lors de cette activation, vous pouvez superposer la variable **Demande d’activation** workflow :
 
-1. Dans `/apps`, superposez l’assistant **Sites** :
+1. Dans `/apps` recouvrez la propriété **Sites** assistant :
 
    `/libs/wcm/core/content/common/managepublicationwizard`
 
@@ -260,4 +259,4 @@ Pour avoir un comportement personnalisé lors de cette activation, vous pouvez s
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Mettez à jour le [modèle de workflow](/help/sites-developing/workflows-models.md) et les configurations/scripts associés selon les besoins.
-1. Supprimez le droit à l’action [ `replicate`](/help/sites-administering/security.md#actions) de tous les utilisateurs appropriés pour toutes les pages pertinentes ; pour déclencher ce workflow en tant qu’action par défaut lorsque l’un des utilisateurs tente de publier (ou de répliquer) une page.
+1. Retirer le droit au [ `replicate` action](/help/sites-administering/security.md#actions) de tous les utilisateurs appropriés pour toutes les pages pertinentes ; pour déclencher ce workflow en tant qu’action par défaut lorsque l’un des utilisateurs tente de publier (ou de répliquer) une page.

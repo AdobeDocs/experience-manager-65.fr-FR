@@ -199,7 +199,7 @@ Les fragments de contenu peuvent être intégrés à :
 
 * **Des traductions**
 
-   Les fragments de contenu sont entièrement intégrés au [Processus de traduction AEM](/help/sites-administering/tc-manage.md). Au niveau architectural, cela présente les implications suivantes :
+   Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-administering/tc-manage.md). Au niveau architectural, cela présente les implications suivantes :
 
    * Les traductions d’un fragment de contenu sont en fait des fragments distincts, par exemple :
 

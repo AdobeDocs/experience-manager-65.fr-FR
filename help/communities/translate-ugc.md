@@ -1,8 +1,8 @@
 ---
 title: Traduction de contenu généré par l’utilisateur
-seo-title: Traduction de contenu généré par l’utilisateur
+seo-title: Translating User Generated Content
 description: Fonctionnement de la fonction de traduction
-seo-description: Fonctionnement de la fonction de traduction
+seo-description: How the translation feature works
 uuid: 7ee3242c-2aca-4787-a60d-b807161401ad
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -13,14 +13,14 @@ role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1108'
 ht-degree: 2%
 
 ---
 
 # Traduction de contenu généré par l’utilisateur {#translating-user-generated-content}
 
-La fonction de traduction d’AEM Communities étend le concept de [traduction du contenu de la page](../../help/sites-administering/translation.md) au contenu généré par l’utilisateur (UGC) publié sur les sites de la communauté à l’aide des [composants SCF (social component framework)](scf.md).
+La fonction de traduction d’AEM Communities étend le concept de [traduction du contenu de la page](../../help/sites-administering/translation.md) au contenu généré par l’utilisateur (contenu généré par l’utilisateur) publié sur les sites de la communauté à l’aide de [Composants SCF (Social Component Framework)](scf.md).
 
 La traduction du contenu généré par l’utilisateur permet aux visiteurs et aux membres du site de découvrir une communauté globale en supprimant les barrières linguistiques.
 
@@ -34,17 +34,17 @@ Par exemple, supposons que :
 
 ## Présentation {#overview}
 
-Cette section de la documentation explique en particulier comment le service de traduction fonctionne avec le contenu généré par l’utilisateur tout en tenant compte de la manière dont se connecter AEM à un [fournisseur de services de traduction](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) et intégrer ce service à un site web en configurant une [structure d’intégration de traduction](../../help/sites-administering/tc-tic.md).
+Cette section de la documentation explique en particulier comment le service de traduction fonctionne avec le contenu généré par l’utilisateur tout en tenant compte de la manière dont se connecte AEM à une [fournisseur de services de traduction](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) et intégrer ce service dans un site web en configurant une [structure d’intégration de traduction](../../help/sites-administering/tc-tic.md).
 
 Lorsqu’un fournisseur de services de traduction est associé au site, chaque copie de langue du site conserve ses propres threads du contenu généré par l’utilisateur publié via des composants SCF tels que les commentaires.
 
-Lorsqu’une structure d’intégration de traduction est configurée en plus du fournisseur de services de traduction, il est possible pour chaque copie de langue du site de partager un seul fil du contenu généré par l’utilisateur, ce qui permet une communication globale entre les copies de langue. Au lieu d’un thread de discussion séparé par langue, le [magasin partagé global](#global-translation-of-ugc) configuré permet à l’ensemble du thread d’être visible, quelle que soit la copie de langue affichée. En outre, plusieurs configurations d’intégration de traduction peuvent être configurées en spécifiant différents magasins partagés globaux pour un groupe logique de participants globaux, par exemple par régions.
+Lorsqu’une structure d’intégration de traduction est configurée en plus du fournisseur de services de traduction, il est possible pour chaque copie de langue du site de partager un seul fil du contenu généré par l’utilisateur, ce qui permet une communication globale entre les copies de langue. Au lieu d&#39;un fil de discussion séparé par la langue, le [magasin partagé global](#global-translation-of-ugc) permet à l’ensemble du thread d’être visible, quelle que soit la copie de langue affichée. En outre, plusieurs configurations d’intégration de traduction peuvent être configurées en spécifiant différents magasins partagés globaux pour un groupe logique de participants globaux, par exemple par régions.
 
 ## Service de traduction par défaut {#the-default-translation-service}
 
-AEM Communities inclut une [licence d’évaluation](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) pour un [service de traduction par défaut](../../help/sites-administering/tc-msconf.md) activé pour plusieurs langues.
+AEM Communities comprend une [licence d&#39;évaluation](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) pour un [service de traduction par défaut](../../help/sites-administering/tc-msconf.md) activée pour plusieurs langues.
 
-Lors de la [création d’un site communautaire](sites-console.md), le service de traduction par défaut est activé lorsque `Allow Machine Translation` est coché à partir du sous-panneau [TRADUCTION](sites-console.md#translation).
+When [création d’un site communautaire](sites-console.md), le service de traduction par défaut est activé lorsque `Allow Machine Translation` est vérifié à partir de la fonction [TRADUCTION](sites-console.md#translation) sous-panneau.
 
 >[!CAUTION]
 >
@@ -54,7 +54,7 @@ Lors de la [création d’un site communautaire](sites-console.md), le service d
 
 ## Traduction globale du contenu généré par l’utilisateur {#global-translation-of-ugc}
 
-Lorsqu’un site web comporte plusieurs [copies de langue](../../help/sites-administering/tc-prep.md), le service de traduction par défaut ne reconnaît pas que le contenu généré par l’utilisateur sur un site peut être lié au contenu saisi sur un autre, comme lorsque le contenu généré par le même composant (la copie de langue de la page contenant le composant).
+Lorsqu’un site web comporte plusieurs [copies de langue](../../help/sites-administering/tc-prep.md), le service de traduction par défaut ne reconnaît pas que le contenu généré par l’utilisateur sur un site peut être lié au contenu saisi sur un autre, comme lorsque le contenu créé par l’utilisateur est essentiellement généré par le même composant (la copie de langue de la page contenant le composant).
 
 C&#39;est semblable à des groupes de personnes qui débattent d&#39;un sujet qui n&#39;a pas connaissance de commentaires faits dans des groupes autres que le leur, par rapport à chacun d&#39;un grand groupe participant à une conversation.
 
@@ -66,7 +66,7 @@ Par exemple, si un forum a été établi sur le site de base, que des copies de 
 >
 >Tout contenu créé par l’utilisateur qui existait avant la traduction globale n’est plus visible.
 >
->Bien que le contenu généré par l’utilisateur se trouve toujours dans le [magasin commun](working-with-srp.md), il se trouve sous l’emplacement du contenu généré par l’utilisateur spécifique à la langue, tandis que le nouveau contenu, ajouté après la configuration de la traduction globale, est récupéré à partir de l’emplacement de magasin partagé global.
+>Bien que le contenu généré par l’utilisateur figure toujours dans la variable [magasin commun](working-with-srp.md), il se trouve sous l’emplacement du contenu généré par l’utilisateur spécifique à la langue, tandis que le nouveau contenu, ajouté après la configuration de la traduction globale, est récupéré à partir de l’emplacement de stockage partagé global.
 >
 >Il n’existe pas d’outil de migration pour déplacer ou fusionner du contenu spécifique à une langue dans le magasin partagé global.
 
@@ -75,20 +75,20 @@ Par exemple, si un forum a été établi sur le site de base, que des copies de 
 Pour créer une intégration de traduction qui intègre un connecteur de service de traduction au site web sur l’instance d’auteur :
 
 * Connexion en tant qu’administrateur
-* À partir du [menu principal](http://localhost:4502/)
+* Dans la [menu principal](http://localhost:4502/)
 * Sélectionnez **[!UICONTROL Outils]**.
-* Sélectionnez **[!UICONTROL Opérations]**
-* Sélectionnez **[!UICONTROL Cloud]**
-* Sélectionnez **[!UICONTROL Cloud Services]**
-* Faites défiler l’écran jusqu’à **[!UICONTROL Intégration de traduction]**
+* Sélectionner **[!UICONTROL Opérations]**
+* Sélectionner **[!UICONTROL Cloud]**
+* Sélectionner **[!UICONTROL Cloud Services]**
+* Faites défiler jusqu’à **[!UICONTROL Intégration de traduction]**
 
    ![translation-integration](assets/translation-integration.png)
 
-* Sélectionnez **[!UICONTROL Afficher les configurations]**
+* Sélectionner **[!UICONTROL Afficher les configurations]**
 
    ![show-configuration](assets/translation-integration1.png)
 
-* Cliquez sur `[+]` icône en regard de **[!UICONTROL Configurations disponibles]** pour créer une configuration.
+* Sélectionner `[+]` en regard de **[!UICONTROL Configurations disponibles]** pour créer une configuration
 
 #### Boîte de dialogue Créer une configuration {#create-configuration-dialog}
 
@@ -102,7 +102,7 @@ Pour créer une intégration de traduction qui intègre un connecteur de service
 
    (Obligatoire) Saisissez le titre d’affichage de votre choix. Pas de valeur par défaut.
 
-* **[!UICONTROL Name]** (Nom)
+* **[!UICONTROL Nom]**
 
    (Facultatif) Saisissez un nom pour la configuration. La valeur par défaut est un nom de noeud basé sur le titre.
 
@@ -112,23 +112,23 @@ Pour créer une intégration de traduction qui intègre un connecteur de service
 
 ![configuration-dialog](assets/translation-integration3.png)
 
-Pour obtenir des instructions détaillées, voir [Création d’une configuration d’intégration de traduction](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
+Pour obtenir des instructions détaillées, consultez [Création d’une configuration d’intégration de traduction](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
-* **** Onglet Sites : peut laisser comme valeur par défaut.
+* **[!UICONTROL Sites]** tab : peut laisser comme valeur par défaut.
 
-* **** Onglet Communautés :
-   * ****
-Fournisseur de traduction : sélectionnez le fournisseur de traduction dans la liste déroulante. La valeur par défaut est 
+* **[!UICONTROL Communautés]** tab :
+   * **[!UICONTROL Fournisseur de traduction]**
+Sélectionnez le fournisseur de traduction dans la liste déroulante. La valeur par défaut est 
 `microsoft`, service d’évaluation.
 
    * **[!UICONTROL Catégorie de contenu]**
-: sélectionnez une catégorie qui décrit le contenu en cours de traduction. La valeur par défaut est 
+Sélectionnez une catégorie qui décrit le contenu en cours de traduction. La valeur par défaut est 
 `General.`
 
    * **[!UICONTROL Sélectionnez Un Paramètre Régional...]**
-(Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de base [langue](sites-console.md#translation) du site web. Le choix de `No Common Store` désactive la traduction globale. Par défaut, la traduction globale est désactivée.
+(Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de votre choix. [langue de base](sites-console.md#translation) pour le site web. Choix `No Common Store` désactive la traduction globale. Par défaut, la traduction globale est désactivée.
 
-* **** Assetstab : peut laisser comme valeur par défaut.
+* **[!UICONTROL Ressources]** tab : peut laisser comme valeur par défaut.
 * **[!UICONTROL Cliquez sur OK]**
 
 #### Activation {#activation}

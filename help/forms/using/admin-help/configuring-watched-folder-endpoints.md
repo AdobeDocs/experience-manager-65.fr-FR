@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '7163'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -271,7 +271,7 @@ Les mappages des paramètres de sortie peuvent également spécifier des modèle
 * %F = nom du fichier source
 * %E = extension du nom du fichier source
 
-Si le modèle de mappage des paramètres de sortie se termine par &quot;File.separator&quot; (qui est le séparateur de chemin), un dossier est créé et le contenu est copié dans ce dossier. Si le modèle ne se termine pas par &quot;File.separator&quot;, le contenu (fichier ou dossier des résultats) est créé avec ce nom. Pour plus d’informations les mappages des paramètres de sortie, voir [Conseils et astuces concernant les dossiers de contrôle](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
+Si le modèle de mappage des paramètres de sortie se termine par « File.separator » (qui correspond au séparateur de chemin), un dossier est créé dans lequel le contenu est copié. Si le modèle ne se termine pas par « File.separator », le contenu (fichier ou dossier des résultats) est créé et utilise ce nom. Pour plus d’informations les mappages des paramètres de sortie, voir [Conseils et astuces concernant les dossiers de contrôle](configuring-watched-folder-endpoints.md#tips-and-tricks-for-watched-folders).
 
 ## A propos du ralentissement {#about-throttling}
 

@@ -1,8 +1,8 @@
 ---
 title: Utilisation des propriétés de contenu pour exporter du contenu
-seo-title: Utilisation des propriétés de contenu pour exporter du contenu
+seo-title: Using Content Properties to Export Content
 description: La page suivante présente les propriétés et les noeuds de l’application.
-seo-description: La page suivante présente les propriétés et les noeuds de l’application.
+seo-description: The following page shows App Properties and Nodes.
 uuid: 73f1832f-e457-47d0-a0e1-80af90897d31
 contentOwner: User
 content-type: reference
@@ -12,7 +12,7 @@ discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '330'
 ht-degree: 10%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 10%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Les applications sont représentées sous la forme *cq:Pages* dans AEM.
+Les applications sont représentées comme *cq:Pages* dans AEM.
 
-Ils partagent les mêmes propriétés communes que celles trouvées dans n’importe quel *cq:Page* en plus des autres propriétés affichées ci-dessous qui représentent les propriétés de prise en charge de l’intégration.
+Ils partagent les mêmes propriétés communes que dans n’importe quel *cq:Page* en plus des autres qui sont affichés ci-dessous et qui représentent les propriétés de prise en charge de l’intégration.
 
 ## Propriétés d’application {#app-properties}
 
-Le tableau suivant affiche **Propriétés de l’application et noeuds**.
+Le tableau suivant affiche **Propriétés et noeuds de l’application**.
 
 <table>
  <tbody>
@@ -46,7 +46,7 @@ Le tableau suivant affiche **Propriétés de l’application et noeuds**.
   <tr>
    <td>dps-exportTemplate</td>
    <td>String:Path</td>
-   <td><p>Chemin d’accès aux configurations d’exportation de l’application. La configuration d’exportation est un dossier avec 2 modèles de configuration d’exportation ContentSync enfants ;</p> <p><i>dps-article</i> : Configuration de l’exportation ContentSync pour exporter le contenu d’un article</p> <p><i>dps-HTMLResources</i> : Configuration de l’exportation ContentSync pour exporter des ressources partagées d’application/article</p> </td>
+   <td><p>Chemin d’accès aux configurations d’exportation de l’application. La configuration d’exportation est un dossier avec 2 modèles de configuration d’exportation ContentSync enfants ;</p> <p><i>dps-article</i>: Configuration de l’exportation ContentSync pour exporter le contenu d’un article</p> <p><i>dps-HTMLResources</i>: Configuration de l’exportation ContentSync pour exporter des ressources partagées d’application/article</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,8 +80,8 @@ Le tableau suivant affiche **Propriétés de l’application et noeuds**.
   </tr>
   <tr>
    <td>sling:resourceType</td>
-   <td>Chaîne:Chemin</td>
-   <td><p>Chemin d’accès à un composant cq:Component qui est ou étend <i>mobileapps/core/components/instance.</i></p> <p>Cela permet d’assurer la présence et le rendu dans le catalogue d’applications.</p> </td>
+   <td>Chaîne:Chemin d’accès</td>
+   <td><p>Chemin d’accès à cq:Component qui est ou étend <i>mobileapps/core/components/instance.</i></p> <p>Cela permet d’assurer la présence et le rendu dans le catalogue d’applications.</p> </td>
   </tr>
  </tbody>
 </table>

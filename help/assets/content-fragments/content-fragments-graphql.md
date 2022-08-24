@@ -3,7 +3,8 @@ title: Diffusion de contenu découplée à l’aide de fragments de contenu avec
 description: Découvrez comment utiliser des fragments de contenu AEM avec GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments
 role: User
-source-git-commit: 819df6d6123575b378676dda200064725de47b84
+exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
+source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 91%

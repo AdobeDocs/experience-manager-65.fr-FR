@@ -8,7 +8,7 @@ exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '770'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -116,7 +116,7 @@ En fonction de votre cas d’utilisation, vous souhaitez créer vos propres mod�
 
 Les configurations de production peuvent varier sous plusieurs aspects.
 
-* Vous pouvez disposer d’un point d’entrée GraphQL fédéré unique qui combine les données AEM et Adobe Commerce GraphQL au lieu de personnaliser le client Apollo.
+* Vous pouvez disposer d’un point d’entrée GraphQL fédéré unique qui combine des données GraphQL AEM et Adobe Commerce au lieu de personnaliser le client Apollo.
 * Votre application PWA Studio peut utiliser directement l’URL de point d’entrée GraphQL d’AEM, sans proxy avec UPWARD. Le proxy peut également être déplacé vers une autre couche (par exemple, CDN).
 * L’approche qui vous convient le mieux dépend aussi grandement de la manière dont vous diffusez l’application de PWA Studio à l’utilisateur final.
 

@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '6026'
 ht-degree: 100%
 
@@ -379,7 +379,7 @@ Vous trouverez ci-dessous les options qui s’affichent dans la barre latérale 
 
 * État
 * Feuille de propriété
-* Simuler une erreur/la réussite
+* Simuler une erreur/un succès
 
 #### État {#state}
 
@@ -404,7 +404,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
    <td><p>Vous permet de personnaliser les styles de texte dans le composant du thème.</p> <p>Par exemple, vous souhaitez modifier l’aspect du texte saisi dans la zone de texte.</p> <p>Vos options sont les suivantes : famille de polices, épaisseur, couleur, taille, hauteur de ligne, alignement du texte, espacement, interlettrage, retrait du texte, surlignement, italique, transformation de texte, alignement vertical, ligne de base et orientation. </p> </td>
   </tr>
   <tr>
-   <td><p>Arrière-plan </p> </td>
+   <td><p>Contexte </p> </td>
    <td><p>Vous permet de remplir l’arrière-plan du composant par une image ou une couleur. </p> </td>
   </tr>
   <tr>
@@ -497,7 +497,7 @@ Pour configurer Adobe Fonts dans AEM, procédez comme suit :
 
    Vous êtes redirigé sur la page de configuration.
 
-1. Dans la boîte de dialogue Modifier le composant qui s’affiche, indiquez votre ID de kit et cliquez sur **OK**.
+1. Dans la boîte de dialogue Modifier le composant qui s’affiche, indiquez votre ID de kit, puis cliquez sur **OK**.
 
 Pour configurer un thème de sorte qu’il utilise la configuration Adobe Fonts, procédez comme suit :
 

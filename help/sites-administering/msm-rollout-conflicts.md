@@ -1,8 +1,8 @@
 ---
 title: Conflits de déploiement de MSM
-seo-title: Conflits de déploiement de MSM
+seo-title: MSM Rollout Conflicts
 description: Découvrez comment gérer les conflits de déploiement avec le gestionnaire multisite.
-seo-description: Découvrez comment gérer les conflits de déploiement avec le gestionnaire multisite.
+seo-description: Learn how to deal with Multi Site Manager rollout conflicts.
 uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '910'
 ht-degree: 62%
 
 ---
 
-# Conflits de déploiement dans MSM{#msm-rollout-conflicts}
+# Conflits de déploiement de MSM{#msm-rollout-conflicts}
 
 Des conflits peuvent se produire si de nouvelles pages portant le même nom de page sont créées à la fois dans la branche de plan directeur et dans une branche de Live Copy dépendante.
 
@@ -69,7 +69,7 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code> <br /> (créé manuellement dans la branche Live Copy)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page<br /> child-level-1 qui a été créé manuellement dans la branche Live Copy)</td>
+   <td><code> /lc-level-1</code> <br /> (contient le contenu de la page ;<br /> child-level-1 qui a été créé manuellement dans la branche Live Copy)</td>
   </tr>
  </tbody>
 </table>
@@ -80,7 +80,7 @@ Le gestionnaire de déploiement permet d’activer ou de désactiver la gestion 
 
 Ceci est effectué à l’aide de la [configuration OSGi](/help/sites-deploying/configuring-osgi.md) du **gestionnaire de déploiement WCM Day CQ**:
 
-* **Gérez le conflit avec les pages** créées manuellement :
+* **Gestion des conflits avec les pages créées manuellement**:
 
    ( `rolloutmgr.conflicthandling.enabled`)
 
@@ -105,12 +105,12 @@ AEM comporte les éléments suivants :
 
 Le gestionnaire de conflits par défaut :
 
-* S’appelle `ResourceNameRolloutConflictHandler`
+* Est appelé `ResourceNameRolloutConflictHandler`
 
 * Avec ce gestionnaire, la page du plan directeur prévaut.
-* Le classement des services pour ce gestionnaire est défini sur le bas ( &quot;c.-à-d. sous la valeur par défaut de la propriété `service.ranking`, car on suppose que les gestionnaires personnalisés auront besoin d’un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour s’assurer de la flexibilité lorsque cela est nécessaire.
+* Le classement des services pour ce gestionnaire est défini sur le bas ( &quot;c.-à-d. sous la valeur par défaut de la variable `service.ranking` ), car il est supposé que les gestionnaires personnalisés auront besoin d’un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour s’assurer de la flexibilité lorsque cela est nécessaire.
 
-Ce gestionnaire de conflits donne la priorité au plan directeur. La page Live Copy `/b` est déplacée (dans la branche Live Copy) vers `/b_msm_moved`.
+Ce gestionnaire de conflits donne la priorité au plan directeur. La page Live Copy `/b` est déplacé (dans la branche Live Copy) vers `/b_msm_moved`.
 
 * Live Copy : `/b`
 
@@ -120,7 +120,7 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. La page Live C
 
 * plan directeur : `/b`
 
-   est déployé sur la page Live Copy `/b`.
+   est déployé sur la page Live Copy ; `/b`.
 
    * `bp-level-1` est déployé dans la Live Copy.
 
@@ -176,7 +176,7 @@ Si vous [désactivez manuellement la gestion des conflits](#rollout-manager-and-
 >
 >AEM ne fournit pas d’indication lorsque des conflits sont ignorés, car ce comportement doit être configuré explicitement. Il est donc considéré comme le comportement exigé.
 
-Dans ce cas, la Live Copy prévaut effectivement. La page de plan directeur `/b` n’est pas copiée et la page Live Copy `/b` n’est pas touchée.
+Dans ce cas, la Live Copy prévaut effectivement. Page de plan directeur `/b` n’est pas copié et la page Live Copy `/b` n’est pas touchée.
 
 * plan directeur : `/b`
 

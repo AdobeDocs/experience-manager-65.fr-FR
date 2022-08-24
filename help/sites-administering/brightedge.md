@@ -1,8 +1,8 @@
 ---
 title: Intégration à BrightEdge Content Optimizer
-seo-title: Intégration à BrightEdge Content Optimizer
+seo-title: Integrating with BrightEdge Content Optimizer
 description: Découvrez l’intégration d’AEM à BrightEdge Content Optimizer.
-seo-description: Découvrez l’intégration d’AEM à BrightEdge Content Optimizer.
+seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '495'
 ht-degree: 100%
 
 ---
@@ -47,7 +47,7 @@ Modifiez le nom d’utilisateur et le mot de passe d’une configuration BrightE
 1. Cliquez sur le nom de la configuration à modifier.
 1. Cliquez sur Modifier, modifiez les valeurs des propriétés, puis cliquez sur OK.
 
-## Association de pages à une configuration BrightEdge  {#associating-pages-with-a-brightedge-configuration}
+## Association de pages à une configuration BrightEdge {#associating-pages-with-a-brightedge-configuration}
 
 Associez des pages à une configuration BrightEdge pour envoyer des données de page au service BrightEdge pour analyse. Lorsque vous associez une page à une configuration, les pages enfants héritent de l’association. En général, vous associez la page d’accueil du site afin que les données de toutes les pages soient envoyées à BrightEdge.
 

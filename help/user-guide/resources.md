@@ -1,13 +1,13 @@
 ---
 title: AEM 6.5 Ressources supplémentaires
-seo-title: AEM 6.5 Ressources supplémentaires
+seo-title: AEM 6.5 Additional Resources
 description: Notes de mise à jour d’AEM version 6.5, certifications et ressources supplémentaires
-seo-description: Notes de mise à jour d’AEM version 6.5, certifications et ressources supplémentaires
+seo-description: AEM 6.5 release notes, certifications, and additional resources
 exl-id: d254d976-f547-4074-b8ad-fe4814184f30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 25%
+source-wordcount: '91'
+ht-degree: 28%
 
 ---
 
@@ -30,6 +30,6 @@ ht-degree: 25%
 
 [Respectez les normes de confidentialité du RGPD.](/help/managing/data-protection-and-privacy.md)
 
-## Experience League {#experience-leauge}
+## Experience League {#experience-leauge}
 
-[Affichez les ressources d’apprentissage pour AEM dans Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
+[Affichez les ressources d’apprentissage pour AEM dans l’Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)

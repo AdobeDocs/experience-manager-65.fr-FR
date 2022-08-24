@@ -11,7 +11,7 @@ discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1673'
 ht-degree: 100%
 
@@ -139,8 +139,8 @@ Utilisez les options du panneau **Mes filtres** pour **Ajouter** ![lc_pr_add_fil
    * **Identifiant de tâche** : l’identifiant de la tâche. Le champ contient un lien hypertexte. Si vous cliquez sur un identifiant de tâche dans ce champ, vous êtes redirigé vers le panneau **[!UICONTROL Détails de la tâche]**.
    * **Initiateur** : l’utilisateur AEM Forms qui a démarré l’instance de processus
    * **Heure de création** : date et heure de démarrage de l’instance de processus
-   * **Heure de fin** : date et heure auxquelles l’instance de processus s’est terminée
-   * **Durée** : durée du début à la fin de l’instance de processus.
+   * **Heure de terminaison** : date et heure auxquelles l’instance de processus s’est terminée
+   * **Durée** : durée du début jusqu’à la réalisation de l’instance de processus.
    * **Statut** : statut actuel de l’instance de processus.
 
    Par défaut, le résultat est trié par identifiant de tâche. Toutefois, pour trier le résultat en fonction de l’un des champs, cliquez sur son titre. Le résultat est trié selon la colonne indiquée par une flèche sombre à côté de l’en-tête de colonne.

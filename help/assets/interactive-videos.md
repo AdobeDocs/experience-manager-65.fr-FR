@@ -61,13 +61,13 @@ La description du workflow étape par étape qui suit est conçue pour vous aide
 
 Recherchez le titre **Exemple** dans certaines tâches de démarrage rapide. Il contient un court tutoriel reposant sur cette page web de démonstration de démarrage qui n’est *pas encore* interactive:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr)
 
 Les **exemples** permettent d’illustrer les étapes d’intégration de vidéos interactives à votre site web.
 
 Lorsque vous avez terminé le tutoriel dans la dernière section Exemple, la page web de démonstration finale avec la vidéo interactive complètement intégrée ressemble à ce qui suit :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=fr)
 
 Étapes de la vidéo interactive :
 
@@ -104,7 +104,6 @@ Si vous utilisez un gestionnaire de contenu web (WCM) tiers, vous devez intégre
 >
 >* Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant un aperçu rapide.
 >* Votre mise en oeuvre de Experience Manager fonctionne *not* utilisez un framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir de n’importe quelle solution de commerce électronique, telle qu’IBM® WebSphere® Commerce, Elastic Path, Hybris ou Intershop. Voir [Concepts d’eCommerce dans Experience Manager Assets](/help/commerce/cif-classic/administering/concepts.md).
-
 >
 >Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
@@ -187,7 +186,7 @@ Consultez ci-dessous les exemples d’URL d’aperçu rapide et les variables de
 
 Lorsque l’approche ci-dessus est appliquée à l’exemple de site web, la page web comporte différentes vignettes de produit, auxquelles est associé un bouton « AFFICHER PLUS » :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Après avoir activé tous les aperçus rapides de produit disponibles sur la page, vous obtenez la liste suivante des demandes d’aperçu rapide effectuées au serveur principal :
 
@@ -247,7 +246,7 @@ Si vous avez déjà chargé votre vidéo et les ressources miniatures, passez à
 
 >[!NOTE]
 >
->Le format vidéo MXF n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media.
+>Le format vidéo MXF n’est pas encore pris en charge pour l’utilisation de vidéos interactives dans Dynamic Media.
 
 Si vous avez téléchargé des vidéos ou des images incorrectes, ou si vous souhaitez supprimer des vidéos ou des images transférées dont vous n’avez plus besoin, reportez-vous à la section [Suppression de ressources](/help/assets/manage-assets.md#deleting-assets).
 
@@ -540,7 +539,7 @@ Le code incorporé copié est défini pour un environnement réactif afin qu’i
 
 En vous servant du site web de démonstration comme exemple, procédez comme suit :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 Notez que le code incorporé est standard :
 
@@ -571,7 +570,7 @@ Notez que le code incorporé est standard :
 
 L’intégration est aussi simple que la suppression du code intégré de la vidéo et son remplacement par le code intégré de la vidéo interactive à partir d’Experience Manager. Vous pouvez afficher le résultat à l’adresse URL suivante : Bien qu’elle affiche une vidéo interactive présente sur la page, elle n’est pas encore intégrée à l’aperçu rapide existant :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=fr)
 
 ## Intégration d’une vidéo interactive avec un aperçu rapide existant {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -771,7 +770,7 @@ Le code source complet se présente comme suit :
 
 Le dernier site web de démonstration avec la vidéo interactive totalement intégrée se présente comme suit :
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=fr](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 

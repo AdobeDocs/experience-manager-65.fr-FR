@@ -14,7 +14,7 @@ exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
 workflow-type: tm+mt
 source-wordcount: '1493'
-ht-degree: 78%
+ht-degree: 80%
 
 ---
 
@@ -38,9 +38,9 @@ Pour démarrer rapidement, procédez comme suit :
 
    Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/image-sets.md) et [Visionneuses à 360°](/help/assets/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, choisissez les images avec soin. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
-   Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses de médias mixtes.
+   Voir [Dynamic Media - Formats d’image raster pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les ensembles de supports variés.
 
-1. [Créez une visionneuse de médias mixtes](#creating-mixed-media-sets).
+1. [Créez des ensembles de supports variés](#creating-mixed-media-sets).
 
    Pour créer une visionneuse de médias mixtes, dans la page Ressources, sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse de médias mixtes]** puis attribuez un nom à la visionneuse, sélectionnez les ressources et choisissez l’ordre dans lequel doivent apparaître les images.
 
@@ -82,7 +82,7 @@ Commencez par charger les images et les vidéos pour les visionneuses de médias
 
 En outre, si vous souhaitez ajouter des visionneuses à 360° ou d’images à la visionneuse de supports variés, créez également ces visionneuses.
 
-Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses de médias mixtes.
+Voir [Dynamic Media - Formats d’image raster pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les ensembles de supports variés.
 
 ## Création d’une visionneuse de médias mixtes {#creating-mixed-media-sets}
 

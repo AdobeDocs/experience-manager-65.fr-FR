@@ -1,8 +1,8 @@
 ---
 title: Éditeur de boîtes de dialogue
-seo-title: Éditeur de boîtes de dialogue
+seo-title: Dialog Editor
 description: L’éditeur de boîtes de dialogue offre une interface graphique pour créer et modifier facilement des boîtes de dialogue et des modèles automatiques.
-seo-description: L’éditeur de boîtes de dialogue offre une interface graphique pour créer et modifier facilement des boîtes de dialogue et des modèles automatiques.
+seo-description: The dialog editor provides a graphical interface for easily creating and editing dialog boxes and scaffolds
 uuid: 64d3fb12-8638-441b-8595-c590d48f3072
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '491'
 ht-degree: 88%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 88%
 
 L’éditeur de boîtes de dialogue offre une interface graphique pour créer et modifier facilement des boîtes de dialogue et des modèles automatiques.
 
-Pour voir comment cela fonctionne, accédez à CRXDE Lite, ouvrez l’arborescence de l’explorateur sur `/libs/foundation/components/chart` et double-cliquez sur le noeud `dialog` :
+Pour voir comment cela fonctionne, accédez à CRXDE Lite, puis ouvrez l’arborescence de l’explorateur pour `/libs/foundation/components/chart` et double-cliquez sur le noeud `dialog`:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -35,7 +35,7 @@ L’interface de l’éditeur de boîtes de dialogue est composée de quatre pan
 
 * **Palette** (dans le coin supérieur gauche) : ce panneau contient les widgets disponibles pour créer une boîte de dialogue, tels que les panneaux d’onglet, les champs de texte, les listes de sélection et les boutons. Vous pouvez développer les différentes catégories de la palette en cliquant sur la barre du séparateur.
 * **Structure** (dans le coin inférieur gauche) : ce panneau affiche la structure hiérarchique des nœuds qui composent la définition de boîte de dialogue. Vous pouvez voir la même structure en développant le nœud dialog dans CRXDE Lite ou CRX Content Explorer.
-* Le volet **render**, au centre de la fenêtre. ce panneau affiche le rendu en tant que boîte de dialogue de la définition de boîte de dialogue définie dans le panneau Structure.
+* Le **render** au centre de la fenêtre. ce panneau affiche le rendu en tant que boîte de dialogue de la définition de boîte de dialogue définie dans le panneau Structure.
 * **Propriétés** : ce panneau affiche les propriétés du nœud actuellement sélectionné dans le panneau Structure.
 
 ### Utilisation de l’éditeur de boîtes de dialogue {#using-the-dialog-editor}
@@ -48,7 +48,7 @@ Lorsque la structure souhaitée est terminée, vous devez cliquer sur **Enregist
 >
 >Remarque : L’éditeur de boîtes de dialogue est destiné à la création de boîtes de dialogue relativement simples. Il est donc possible que vous ne puissiez pas modifier des définitions de boîtes de dialogue plus complexes. Si l’éditeur de boîtes de dialogue ne permet pas la modification d’une structure de boîte de dialogue, la définition de boîte de dialogue doit être créée et/ou modifiée manuellement en modifiant directement la structure de nœud dans CRXDE Lite ou CRX Content Explorer, par exemple.
 
-### Création d’une boîte de dialogue  {#creating-a-new-dialog}
+### Création d’une boîte de dialogue {#creating-a-new-dialog}
 
 Pour créer une boîte de dialogue, vous devez sélectionner le composant requis, cliquer sur **Créer…** et sur **Créer la boîte de dialogue…**.
 

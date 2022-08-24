@@ -13,7 +13,7 @@ discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2904'
 ht-degree: 100%
 
@@ -291,7 +291,7 @@ Gérez un formulaire envoyé en utilisant l’API des formulaires (service Web)�
    * Créez un objet `RenderOptionsSpec` en utilisant son constructeur. Définissez la valeur du paramètre régional en appelant la méthode `setLocale` de l’objet `RenderOptionsSpec` et en transmettant une valeur de chaîne qui spécifie la valeur du paramètre régional.
    * Appelez la méthode `processFormSubmission` de l’objet `FormsService` et transmettez les valeurs suivantes :
 
-      * L’objet `BLOB` qui contient les données du formulaire.
+      * Objet `BLOB` contenant les données de formulaire.
       * Une valeur de chaîne qui indique les variables d’environnement, y compris tous les en-têtes HTTP pertinents. Spécifiez le type de contenu à gérer. Pour gérer les données XML, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=text/xml`. Pour gérer les données PDF, spécifiez la valeur de chaîne suivante pour ce paramètre : `CONTENT_TYPE=application/pdf`.
       * Une valeur de chaîne qui spécifie la valeur de l’en-tête `HTTP_USER_AGENT`, par exemple, `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * Un objet `RenderOptionsSpec` qui stocke les options d’exécution.

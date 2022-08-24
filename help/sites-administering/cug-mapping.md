@@ -1,8 +1,8 @@
 ---
 title: Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5
-seo-title: Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5
+seo-title: Custom User Group Mapping in AEM 6.5
 description: Découvrez le fonctionnement du mappage d’un groupe d’utilisateurs personnalisé dans AEM.
-seo-description: Découvrez le fonctionnement du mappage d’un groupe d’utilisateurs personnalisé dans AEM.
+seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,11 +11,11 @@ content-type: reference
 discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
-feature: Sécurité
+feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '505'
-ht-degree: 74%
+source-wordcount: '489'
+ht-degree: 73%
 
 ---
 
@@ -89,7 +89,7 @@ Service permettant de configurer la liste d’exclusion des entités qui ne doiv
 
    >[!NOTE]
    > 
-   >Si `CugExcludeImpl` n’est pas configuré, `CugConfiguration` revient à la valeur par défaut.
+   >Si la variable `CugExcludeImpl` n’est pas configuré, la variable `CugConfiguration` revient à la valeur par défaut.
 
    Il est possible de connecter une implémentation CugExclude personnalisée en cas de besoins spéciaux.
 

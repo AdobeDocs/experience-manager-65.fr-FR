@@ -1,5 +1,5 @@
 ---
-title: Fragments d’expérience
+title: Présentation
 seo-title: Experience Fragments
 description: Découvrez comment personnaliser les fragments d’expérience.
 seo-description: Learn about customizing Experience Fragments.
@@ -32,7 +32,7 @@ En l’absence de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`,
 
 * `sling:resourceSuperType` : `wcm/foundation/components/page`
 
-## Rendu HTML brut {#the-plain-html-rendition}
+## Rendu HTML brut {#the-plain-html-rendition}
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 

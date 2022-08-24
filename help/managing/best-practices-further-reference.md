@@ -1,8 +1,8 @@
 ---
 title: La liste de contrôle – Référence supplémentaire
-seo-title: La liste de contrôle – Référence supplémentaire
+seo-title: The Checklist - Further Reference
 description: 'Découvrez d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section Gestion des projets : liste de contrôle des meilleures pratiques.'
-seo-description: 'Découvrez d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section Gestion des projets : liste de contrôle des meilleures pratiques.'
+seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
 uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
@@ -12,7 +12,7 @@ discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3757'
 ht-degree: 88%
 
 ---
@@ -27,18 +27,18 @@ Cette page fournit d’autres détails qui précisent et/ou enrichissent les doc
 >
 >Les listes de cette sous-section ne sont pas complètes, mais établies comme une introduction.
 
-### Fonctions au sein d’AEM  {#features-within-aem}
+### Fonctions au sein d’AEM {#features-within-aem}
 
-Lors de l’implémentation d’AEM (en particulier pour la première fois), vous devrez passer en revue les [fonctionnalités et les workflows d’AEM](https://www.adobe.com/fr/marketing/experience-manager.html) pour vous assurer des zones dont vous avez besoin.
+Lors de la mise en oeuvre d’AEM (en particulier pour la première fois), vous devez examiner la variable [fonctionnalités et workflows d’AEM](https://www.adobe.com/fr/marketing/experience-manager.html) pour être sûr de quelles zones vous voulez/dont vous avez besoin.
 
 Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votre travail de conception, par exemple :
 
-* [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Commerce ](/help/commerce/cif-classic/administering/ecommerce.md)
+* [Screens](https://docs.adobe.com/content/help/fr/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Balises](/help/sites-administering/tags.md)
 * [Gestion de sites multiples·et traduction](/help/sites-administering/msm-and-translation.md)
-* [Formulaires](/help/forms/home.md)
+* [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
@@ -50,7 +50,7 @@ AEM peut être intégré à d’autres produits Adobe et/ou services tiers. Ceux
 
 Voir [Intégration de solutions](/help/sites-administering/integration.md) pour obtenir des informations complètes.
 
-## Migration ou mise à niveau ?  {#migrate-or-upgrade}
+## Migration ou mise à niveau ? {#migrate-or-upgrade}
 
 Il est important de déterminer si vous voulez :
 
@@ -62,13 +62,13 @@ Lors du passage d’une version précédente à la version actuelle, il y a deux
 * Utiliser le [Gestionnaire de modules](/help/sites-administering/package-manager.md) pour exporter tous les contenus et le code d’application de l’ancien système vers le nouveau.
 * [Mettre à niveau](/help/sites-deploying/upgrade.md) l’ancien système en place. Il s’agit de l’option recommandée dans la plupart des cas.
 
-## Règles de base  {#basic-ground-rules}
+## Règles de base {#basic-ground-rules}
 
-Comme dans tout projet, il est essentiel d’établir des règles de base dès que possible. Celles-ci comprennent :
+Comme dans tout projet, il est essentiel d’établir des règles de base dès que possible. Celles-ci comprennent les éléments suivants :
 
 >[!NOTE]
 >
->Ces points sont génériques, la [liste de contrôle des bonnes pratiques](/help/managing/best-practices.md) traite de détails spécifiques par rapport à AEM.
+>Ces points sont génériques, [Liste de contrôle des bonnes pratiques](/help/managing/best-practices.md) traite des spécificités liées aux AEM.
 
 * **Rôles**
 
@@ -132,7 +132,7 @@ Ces informations peuvent être définies dans un manuel de projet ; l’utilisa
 * Les informations doivent être communiquées clairement à toutes les personnes impliquées. Bien qu’il s’agisse d’une pratique standard de gestion de projet, on ne répétera jamais assez qu’une définition claire des rôles et une bonne communication peuvent déterminer la réussite ou l’échec d’un projet.
 * Une seule version de toutes les informations suivies est conservée, par exemple, le suivi des bogues et des problèmes, etc.
 
-## Indicateurs de performances clés et mesures cibles  {#key-performance-indicators-and-target-metrics}
+## Indicateurs de performances clés et mesures cibles {#key-performance-indicators-and-target-metrics}
 
 Les organisations utilisent des indicateurs de performances clés (IPC) pour évaluer leur capacité à atteindre des cibles. Ces indicateurs sont des valeurs mesurables qui peuvent être utilisées pour montrer si les objectifs spécifiés sont satisfaits.
 
@@ -187,7 +187,7 @@ Si elles sont correctement utilisées, ces mesures peuvent fournir un outil util
 >
 >Cette section aborde les principes de base et les problèmes à prendre en compte. Chaque installation est différente, c’est pourquoi les valeurs à mesurer diffèrent.
 
-### Tout repose sur la conception du projet  {#everything-rests-on-your-project-design}
+### Tout repose sur la conception du projet {#everything-rests-on-your-project-design}
 
 Toutes les mesures sont, d’une manière ou d’une autre, affectées par la conception du projet. À l’inverse, le meilleur moyen de résoudre de nombreux problèmes consiste à modifier la conception.
 
@@ -258,7 +258,7 @@ Les temps de réponse que vous ciblerez seront différents sur les environnement
       * le contenu est mis en cache ;
       * l’équilibrage de charge est appliqué.
 
-#### Définition des temps de réponse cibles  {#setting-target-response-times}
+#### Définition des temps de réponse cibles {#setting-target-response-times}
 
 Comment puis-je décider des temps de réponse (moyens) atteignables ? Il s’agit souvent d’une question d’expérience :
 
@@ -339,7 +339,7 @@ Les cibles pour le nombre d’utilisateurs simultanés dépendent du type d’en
    * Il est plus difficile de prévoir, vous devez donc sélectionner une valeur cible. Ici encore, cela doit être basé sur les statistiques d’utilisation de votre site web en cours, ainsi que sur des attentes réalistes concernant votre nouveau site web.
    * Les événements spéciaux (par exemple, lorsque vous publiez du nouveau contenu très populaire) peuvent dépasser les attentes, voire même les capacités (comme lorsque les médias parlent des affolements lors la mise en vente des entrées pour certains événements).
 
-### Capacité et volume  {#capacity-and-volume}
+### Capacité et volume {#capacity-and-volume}
 
 Avant de discuter des mesures relatives, une définition rapide des termes :
 
@@ -376,7 +376,7 @@ Cependant, il est préférable de garder un ensemble réduit de mesures essentie
 
 La sécurité est cruciale et présente un défi toujours plus grand. Elle ***doit*** être considérée et planifiée dès les premières étapes de votre projet.
 
-La [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) décrit les mesures à prendre pour s’assurer que votre installation d’AEM est sécurisée lors de son déploiement. D’autres aspects liés à la sécurité sont abordés dans les sections [Sécurité (lors du développement)](/help/sites-developing/security.md) et [Administration des utilisateurs et sécurité](/help/sites-administering/security.md).
+La [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) décrit les mesures à prendre pour s’assurer que votre installation d’AEM est sécurisée lors de son déploiement. Les autres aspects liés à la sécurité sont abordés dans la section [Sécurité (lors du développement)](/help/sites-developing/security.md) et [Administration et sécurité des utilisateurs](/help/sites-administering/security.md).
 
 ## Tâches en parallèle et itératives {#parallel-and-iterative-tasks}
 
@@ -384,12 +384,10 @@ La [liste de contrôle de sécurité](/help/sites-administering/security-checkli
 >
 >Notez les points suivants :
 >
->* Offre une vue d’ensemble de la mise en oeuvre *first* d’un projet AEM.
+>* Offre une vue d’ensemble des *first* mise en oeuvre d’un projet AEM.
 >* Il s’agit d’une présentation abstraite ; voir la [liste de contrôle de projet](/help/managing/best-practices.md) pour les phases/jalons/tâches spécifiques.
 >* Toute échelle temporelle est théorique.
-
 >
-
 
 
 Pour une nouvelle implémentation d’un projet AEM standard, vous devrez tenir compte des tâches comme les suivantes :
@@ -470,7 +468,7 @@ Voici quelques points à noter pour chaque catégorie :
    * Planifiez la migration en cours de sprint après la refactorisation.
    * Planifiez l’avancement du contenu (plan de site pour le contenu publié).
 
-## Estimation du temps et des efforts  {#estimating-time-and-effort}
+## Estimation du temps et des efforts {#estimating-time-and-effort}
 
 Selon la liste de tâches obtenue, vous pouvez établir des estimations initiales de temps et d’efforts pour les définitions (de haut niveau) des tâches. Celles-ci doivent inclure une indication de qui, du client ou du partenaire, fera quoi et à quel moment.
 
@@ -480,7 +478,7 @@ La liste suivante présente des approximations standard et des corrélations ent
 >
 >Ces valeurs peuvent uniquement être utilisées pour les estimations initiales. Un développeur AEM expérimenté doit effectuer une analyse détaillée.
 
-| Phase | Effort |
+| Phase  | Effort |
 |---|---|
 | Développement | Une estimation approximative de 2 à 4 heures pour chaque noeud de composant couvrira toutes les exigences de développement. |
 | Test de développeur | 15 % du développement |
@@ -529,10 +527,10 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
    <td><p>AEM lui-même fournit toute une gamme de mécanismes pour vous aider à surveiller, tester, étudier et déboguer votre application ; notamment :</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Mode Développeur</a></li>
-     <li><a href="/help/sites-developing/hobbes.md">Console de test</a></li>
+     <li>Le <a href="/help/sites-developing/hobbes.md">Console de test</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">Tableau de bord des opérations</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">Content Insight </a></li>
-     <li><a href="/help/sites-authoring/author-environment-tools.md#content-tree">Arborescence de contenu</a></li>
+     <li>Le <a href="/help/sites-authoring/author-environment-tools.md#content-tree">Arborescence de contenu</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -541,31 +539,31 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/"></a> Seleniumest un outil de test Open Source. Les tests s’exécutent directement dans le navigateur en émulant la façon dont les utilisateurs travaillent.</td>
+   <td><a href="https://docs.seleniumhq.org/">Selenium</a> est un outil de test Open Source. Les tests s’exécutent directement dans le navigateur en émulant la façon dont les utilisateurs travaillent.</td>
   </tr>
   <tr>
-   <td>Microsoft Project</td>
+   <td>Projet Microsoft</td>
    <td>Outil de gestion de projet couramment utilisé.</td>
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira"></a> Jirais est un outil Open Source permettant de suivre et gérer les détails de vos bogues logiciels. Des workflows peuvent être imposés sur les détails des bogues selon vos besoins.</td>
+   <td><a href="https://www.atlassian.com/software/jira">Jira</a> est un outil Open Source permettant de suivre et gérer les détails de vos bogues logiciels. Des workflows peuvent être imposés sur les détails des bogues selon vos besoins.</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/"></a> Gitis est un logiciel de contrôle des révisions.</td>
+   <td><a href="https://git-scm.com/">Git</a> est un logiciel de contrôle des révisions.</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse est un IDE Open Source, composé de divers projets. Ils sont concentrés sur la création d’une plate-forme de développement ouverte, composée de structures extensibles, d’outils et de runtimes pour la conception, le déploiement et la gestion des logiciels tout au long du cycle de vie.</p> <p>Voir <a href="/help/sites-developing/howto-projects-eclipse.md">Comment développer des projets AEM à l’aide d’Eclipse</a> pour plus d’informations.</p> </td>
+   <td><p>Eclipse est un IDE Open Source, composé de divers projets. Ils sont concentrés sur la création d’une plate-forme de développement ouverte, composée de structures extensibles, d’outils et de runtimes pour la conception, le déploiement et la gestion des logiciels tout au long du cycle de vie.</p> <p>Voir <a href="/help/sites-developing/howto-projects-eclipse.md">Développement de projets AEM à l’aide d’Eclipse</a> pour plus d’informations.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Un IDE professionnel (et donc soumis à des coûts de licence) offrant un large éventail de fonctionnalités. </p> <p>Voir <a href="/help/sites-developing/ht-intellij.md">Comment développer des projets AEM à l’aide d’IntelliJ IDEA</a> pour plus d’informations.</p> </td>
+   <td><p>Un IDE professionnel (et donc soumis à des coûts de licence) offrant un large éventail de fonctionnalités. </p> <p>Voir <a href="/help/sites-developing/ht-intellij.md">Développement de projets AEM à l’aide de IntelliJ IDEA</a> pour plus d’informations.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/"></a> Mavenis est un outil de compréhension et de gestion de projet logiciel qui peut gérer le processus de création d'un projet (logiciel et documentation).</td>
+   <td><a href="https://maven.apache.org/">Maven</a> est un outil de compréhension et de gestion de projet logiciel qui peut gérer le processus de création d’un projet (logiciel et documentation).</td>
   </tr>
  </tbody>
 </table>
@@ -583,7 +581,7 @@ En outre, les sections ci-après sont particulièrement intéressantes :
 Adobe propose d’autres meilleures pratiques pour toutes les phases et tous les publics :
 
 * [Déploiement](/help/sites-deploying/best-practices.md)
-* [Création  ](/help/sites-authoring/best-practices.md)
+* [Création](/help/sites-authoring/best-practices.md)
 * [Administration](/help/sites-administering/administer-best-practices.md)
 * [Développement](/help/sites-developing/best-practices.md)
 * [Gestion de projets](/help/managing/best-practices.md)

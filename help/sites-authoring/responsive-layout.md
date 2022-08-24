@@ -1,8 +1,8 @@
 ---
-title: 'Mise en page réactive  '
-seo-title: 'Mise en page réactive  '
+title: Mise en page réactive
+seo-title: Responsive Layout
 description: AEM permet de réaliser une mise en page réactive pour vos pages
-seo-description: AEM permet de réaliser une mise en page réactive pour vos pages
+seo-description: AEM allows you to realize a responsive layout for your pages
 uuid: 4db45d78-9fca-4251-b504-ae3481fd9a8b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1782'
 ht-degree: 93%
 
 ---
 
-# Mise en page réactive  {#responsive-layout}
+# Mise en page réactive{#responsive-layout}
 
 AEM permet de réaliser une mise en page réactive pour vos pages à l’aide du composant **Conteneur de mises en page**.
 
@@ -67,7 +67,7 @@ En fonction de votre projet, le conteneur de mises en page peut être utilisé e
 
 >[!NOTE]
 >
->L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Voir [Configuration de la mise en page réactive](/help/sites-administering/configuring-responsive-layout.md) pour plus d’informations.
+>L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Voir [Configuration d’une mise en page réactive](/help/sites-administering/configuring-responsive-layout.md) pour plus d’informations.
 
 ## Définitions de mise en page, émulation d’appareil et points d’arrêt {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -203,7 +203,7 @@ Le mode **Mise en page** peut être activé de deux façons.
 * À l’aide du [menu de mode de la barre d’outils](/help/sites-authoring/author-environment-tools.md#page-modes), en sélectionnant le mode **Mise en page**.
 
    * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
-   * Le mode **Mise en page** est un mode persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.****
+   * Le mode **Mise en page** est un **mode** persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.
 
 * Lors de la [modification d’un composant individuel.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
@@ -243,7 +243,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Afficher les composants masqués**  : affiche tous les composants ou des composants individuels. Le nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
+   * **Afficher les composants masqués** - Afficher tous les composants ou des composants individuels. Le nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -263,9 +263,9 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
    >
    >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
-   * **Afficher les**
-composants : sélectionnez les composants parents pour afficher la barre d’outils d’action avec le 
-**Afficher les** composants masqués . Dans cet exemple, deux composants sont masqués.
+   * **Afficher les composants**
+Sélectionnez les composants parents pour afficher la barre d’outils comportant 
+l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.

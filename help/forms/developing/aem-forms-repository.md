@@ -12,7 +12,7 @@ discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '9117'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ Les fichiers héritent des listes de contrôle d’accès (ACL) des dossiers et 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -220,7 +220,7 @@ Vous pouvez écrire des ressources par programmation à l’aide de l’API Jav
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -235,7 +235,7 @@ Pour écrire une ressource, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
-**Créer le client de service**
+**Création du client du service**
 
 Avant de pouvoir lire une ressource par programmation, vous devez établir une connexion et fournir des informations d’identification. Pour ce faire, créez un client de service.
 
@@ -329,7 +329,7 @@ Appelez la méthode du service Repository pour écrire la ressource, en spécifi
 
 1. Création du client de service
 
-   À l’aide de l’assemblage client .NET Microsoft, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` à l’aide de l’objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
+   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` à l’aide de l’objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
 
 1. Spécifiez l’URI du dossier cible pour la ressource.
 
@@ -373,7 +373,7 @@ La liste des ressources fonctionne par relation : les ressources sont membres d
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -388,7 +388,7 @@ Pour répertorier les ressources, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
-**Création du client du service**
+**Créer le client de service**
 
 Avant de pouvoir créer par programmation une collection de ressources, vous devez établir une connexion et fournir des informations d’identification. Pour ce faire, créez un client de service.
 
@@ -455,7 +455,7 @@ Inscription de ressources à l’aide de l’API du service Repository (service 
 
 1. Création du client de service
 
-   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` à l’aide d’un objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
+   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` à l’aide d’un objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
 
 1. Définition du chemin du dossier
 
@@ -490,7 +490,7 @@ Vous pouvez lire les ressources par programmation à l’aide de l’API Java du
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, consultez la section [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -501,11 +501,11 @@ Pour lire une ressource, procédez comme suit :
 1. Spécifiez l’URI de la ressource à lire.
 1. Lisez la ressource.
 
-**Inclure les fichiers du projet**.
+**Inclure les fichiers de projet**
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
-**Créer le client de service**
+**Création du client du service**
 
 Avant de pouvoir lire une ressource par programmation, vous devez établir une connexion et fournir des informations d’identification. Pour ce faire, créez un client de service.
 
@@ -570,7 +570,7 @@ Lire une ressource à l’aide de l’API du service Repository (service web) :
 
 1. Création du client de service
 
-   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` en utilisant un objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
+   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` en utilisant un objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
 
 1. Spécifier l’URI de la ressource à lire
 
@@ -600,7 +600,7 @@ Vous pouvez mettre à jour les ressources par programmation à l’aide de l’A
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -729,7 +729,7 @@ Ensuite, vous appelez la méthode `searchProperties` de lʼobjet `ResourceReposi
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -869,7 +869,7 @@ Vous pouvez spécifier par programmation les relations entre les ressources à l
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -884,7 +884,7 @@ Pour définir une relation entre deux ressources, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
-**Créer le client de service**
+**Création du client du service**
 
 Avant de pouvoir lire une ressource par programmation, vous devez établir une connexion et fournir des informations d’identification. Pour ce faire, créez un client de service.
 
@@ -962,7 +962,7 @@ Créez des ressources de relation à l’aide de l’API Repository (Web Service
 
 1. Création du client de service
 
-   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` à l’aide de l’objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
+   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` à l’aide de l’objet `System.Net.NetworkCredential` contenant le nom d’utilisateur et le mot de passe.
 
 1. Spécification des URI des ressources à relier
 
@@ -1008,7 +1008,7 @@ Vous pouvez contrôler l’accès aux ressources par programmation à l’aide d
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1025,7 +1025,7 @@ Pour verrouiller et déverrouiller des ressources, procédez comme suit :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
-**Créer le client de service**
+**Création du client du service**
 
 Avant de pouvoir lire une ressource par programmation, vous devez établir une connexion et fournir des informations d’identification. Pour ce faire, créez un client de service.
 
@@ -1078,7 +1078,7 @@ Verrouiller les ressources à l’aide de l’API du service Repository (Java) 
    Appelez la méthode `lockResource` de l’objet `ResourceRepositoryClient` et transmettez les paramètres suivants :
 
    * L’URI de la ressource.
-   * La portée du verrouillage. Dans cet exemple, comme la ressource sera verrouillée pour une utilisation exclusive, la portée du verrouillage est spécifiée comme `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`.
+   * La portée du verrouillage. Dans cet exemple, comme la ressource sera verrouillée pour une utilisation exclusive, la portée du verrouillage est fixée à `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`.
    * Le niveau de verrouillage. Dans cet exemple, comme le verrouillage ne s’appliquera qu’à la ressource particulière et à aucun de ses membres ou enfants, le niveau de verrouillage est spécifié comme `Lock.DEPTH_ZERO`.
 
    >[!NOTE]
@@ -1160,7 +1160,7 @@ Une opération de suppression n’est pas compatible avec les transactions dans 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+>Pour plus d’informations sur le service Repository, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Résumé des étapes {#summary_of_steps-8}
 
@@ -1175,7 +1175,7 @@ Pour supprimer une ressource, procédez de la manière suivante :
 
 Incluez les fichiers nécessaires dans votre projet de développement. Si vous créez une application cliente à l’aide de Java, incluez les fichiers JAR nécessaires. Si vous utilisez des services web, incluez les fichiers proxy.
 
-**Créer le client de service**
+**Création du client du service**
 
 Avant de pouvoir lire une ressource par programmation, vous devez établir une connexion et fournir des informations d’identification. Pour ce faire, créez un client de service.
 
@@ -1240,11 +1240,11 @@ Pour supprimer une ressource en utilisant l’API Repository (service web), proc
 
 1. Création du client de service
 
-   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` en utilisant un objet `System.Net.NetworkCredential` contenant le nom dʼutilisateur et le mot de passe.
+   À l’aide de l’assemblage client Microsoft .NET, créez un objet `RepositoryServiceService` en appelant son constructeur par défaut. Définissez sa propriété `Credentials` en utilisant un objet `System.Net.NetworkCredential` contenant le nom dʼutilisateur et le mot de passe.
 
 1. Spécification de l’URI de la ressource à supprimer
 
-   Spécifiez l’URI de la ressource à récupérer. Dans ce cas, comme la ressource nommée `testResourceToBeDeleted` se trouve dans le dossier `testFolder`, son URI est `"/testFolder/testResourceToBeDeleted"`. Dans cet exemple, la ressource est d’abord écrite dans le référentiel, puis son URI est récupéré. Pour plus d’informations sur l’écriture d’une ressource, consultez la section [Écriture des ressources](aem-forms-repository.md#writing-resources).
+   Spécifiez l’URI de la ressource à récupérer. Dans ce cas, comme la ressource nommée `testResourceToBeDeleted` se trouve dans le dossier `testFolder`, son URI est `"/testFolder/testResourceToBeDeleted"`. Dans cet exemple, la ressource est d’abord écrite dans le référentiel, puis son URI est récupéré. Pour plus d’informations sur l’écriture d’une ressource, voir [Écriture de ressources](aem-forms-repository.md#writing-resources).
 
 1. Suppression de la ressource
 

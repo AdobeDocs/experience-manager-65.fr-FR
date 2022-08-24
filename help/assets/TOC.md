@@ -9,7 +9,7 @@ user-guide-description: Créez, gérez, traitez et distribuez des ressources num
 source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
 workflow-type: tm+mt
 source-wordcount: '675'
-ht-degree: 58%
+ht-degree: 59%
 
 ---
 
@@ -56,7 +56,7 @@ ht-degree: 58%
    + [Profils vidéo Dynamic Media](video-profiles.md)
    + [Profils d’image Dynamic Media](image-profiles.md)
    + [Imagerie dynamique](imaging-faq.md)
-   + [Imagerie dynamique avec rapport des pixels côté client](client-side-dpr.md)
+   + [Imagerie dynamique avec rapport pixel d’appareil côté client](client-side-dpr.md)
    + [Vidéo ](s7-video.md)
    + [Diffusion de contenu HTTP2](http2.md)
    + [Gestion des ressources Dynamic Media](delivering-dynamic-media-assets.md)

@@ -1,8 +1,8 @@
 ---
 title: Utilisation du traducteur pour gérer les dictionnaires
-seo-title: Utilisation du traducteur pour gérer les dictionnaires
+seo-title: Using Translator to Manage Dictionaries
 description: AEM fournit une console pour gérer les traductions des textes utilisés dans l’interface utilisateur du composant.
-seo-description: AEM fournit une console pour gérer les traductions des textes utilisés dans l’interface utilisateur du composant.
+seo-description: AEM provides a console for managing the various translations of texts used in component UI
 uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2325'
 ht-degree: 82%
 
 ---
@@ -29,7 +29,7 @@ Notez que l’outil Traducteur et les dictionnaires que vous gérez servent à p
 
 >[!CAUTION]
 >
->Modifiez uniquement les dictionnaires créés pour votre projet et qui se trouvent sous `/apps`.
+>Ne modifiez que les dictionnaires créés pour votre projet et qui résident sous `/apps`.
 >
 >Les dictionnaires système AEM sont également disponibles dans cet outil. Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. AEM dictionnaires système se trouvent sous `/libs`.
 
@@ -99,7 +99,7 @@ Utilisez l’outil de traduction pour gérer les chaînes de caractères de vos 
 
 >[!CAUTION]
 >
->Modifiez uniquement les dictionnaires créés pour votre projet et qui se trouvent sous `/apps`.
+>Ne modifiez que les dictionnaires créés pour votre projet et qui résident sous `/apps`.
 >
 >Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. AEM dictionnaires système se trouvent sous `/libs`.
 
@@ -176,8 +176,8 @@ Procédez comme suit pour supprimer une chaîne d’un dictionnaire.
 
 La barre de recherche située au bas de l’outil Traducteur fournit des options de sélection de chaînes :
 
-* **Filtrer par texte :** modèle à associer à la chaîne, au commentaire ou aux traductions en anglais. Seuls les éléments qui correspondent à l’ensemble ou à une partie du schéma s’affichent dans le tableau.
-* **Modifications : Any, Modified, New, Deleted :**  affiche les éléments qui ont été modifiés et non enregistrés.
+* **Filtrer par texte :** Un modèle à associer à la chaîne, au commentaire ou aux traductions en anglais. Seuls les éléments qui correspondent à l’ensemble ou à une partie du schéma s’affichent dans le tableau.
+* **Modifications : Tout, Modifié, Nouveau, Supprimé :** Afficher les éléments qui ont été modifiés et non enregistrés.
 
    * N’importe lequel : affiche les éléments qui ont été modifiés, ajoutés ou supprimés.
    * Modifié : affiche les éléments qui ont été modifiés.
@@ -194,7 +194,7 @@ La barre de recherche située au bas de l’outil Traducteur fournit des options
 1. Pour effectuer un filtrage à l’aide des options, cliquez sur Filtrer.
 1. Pour supprimer les filtres et afficher tous les éléments du dictionnaire, cliquez sur Effacer.
 
-### Modification des chaînes traduites  {#editing-translated-strings}
+### Modification des chaînes traduites {#editing-translated-strings}
 
 Une fois que vous avez ajouté la chaîne anglaise à un dictionnaire, vous pouvez ajouter les traductions de cette chaîne. Vous pouvez également [exporter le dictionnaire](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) pour qu’il soit traduit par un tiers.
 
@@ -204,7 +204,7 @@ Une fois que vous avez ajouté la chaîne anglaise à un dictionnaire, vous pouv
 
    >[!CAUTION]
    >
-   >Modifiez uniquement les dictionnaires créés pour votre projet et qui se trouvent sous `/apps`.
+   >Ne modifiez que les dictionnaires créés pour votre projet et qui résident sous `/apps`.
    >
    >Les dictionnaires système AEM sont également disponibles dans cet outil. Ne modifiez pas les dictionnaires système AEM, car cela risque de poser des problèmes avec l’interface utilisateur AEM. De plus, vous risquez de perdre les modifications au cours d’une mise à niveau. AEM dictionnaires système se trouvent sous `/libs`.
 
@@ -228,7 +228,7 @@ Une fois que vous avez ajouté la chaîne anglaise à un dictionnaire, vous pouv
 
 Pour prendre en charge l’utilisation de services de traduction tiers, l’outil de traduction vous permet d’exporter et d’importer des dictionnaires.
 
-### Exportation d’un dictionnaire  {#exporting-a-dictionary}
+### Exportation d’un dictionnaire {#exporting-a-dictionary}
 
 Exportez un dictionnaire sous la forme d’un fichier XLIFF afin qu’un service tiers puisse traduire les chaînes qu’il contient.
 
@@ -255,7 +255,7 @@ Procédez comme suit pour exporter une partie ou l’ensemble des chaînes angla
 1. Cliquez sur Exporter > Exporter la sélection au format Xliff (chaînes uniquement).
 1. Dans la boîte de dialogue qui s’affiche, copiez le texte et collez-le dans un fichier texte.
 
-### Importation d’un dictionnaire  {#importing-a-dictionary}
+### Importation d’un dictionnaire {#importing-a-dictionary}
 
 Importez un fichier XLIFF dans un dictionnaire pour remplir ce dernier. Si le dictionnaire contient une traduction pour une chaîne anglaise et que le fichier XLIFF contient une traduction différente pour la même chaîne, la traduction du dictionnaire est remplacée.
 
@@ -263,11 +263,11 @@ Importez un fichier XLIFF dans un dictionnaire pour remplir ce dernier. Si le di
 1. Cliquez sur Importer > Traductions XLIFF.
 1. Sélectionnez le fichier à importer, puis cliquez sur OK.
 
-## Gestion des langues prises en charge  {#managing-supported-lanuages}
+## Gestion des langues prises en charge {#managing-supported-lanuages}
 
 Ajoutez ou supprimez des langues prises en charge par l’outil de traduction et fournies aux utilisateurs de vos pages web.
 
-### Modification des langues répertoriées dans le tableau de dictionnaire  {#changing-languages-listed-in-the-dictionary-table}
+### Modification des langues répertoriées dans le tableau de dictionnaire {#changing-languages-listed-in-the-dictionary-table}
 
 L’outil Traducteur comprend les langues suivantes dans le tableau du dictionnaire :
 
@@ -304,13 +304,13 @@ Procédez comme suit pour ajouter ou supprimer des langues.
 
    >[!NOTE]
    >
-   >Le traducteur enregistre uniquement les traductions pour les langues [présentes dans le dictionnaire](#creating-a-dictionary) (c’est-à-dire sous le chemin du dictionnaire tel que `/apps/myProject/i18n`).
+   >Le traducteur enregistre uniquement les traductions pour les langues qui sont réellement [présent dans le dictionnaire](#creating-a-dictionary) (c’est-à-dire sous le chemin du dictionnaire, tel que `/apps/myProject/i18n`).
    >
    >Vérifiez que ces langues correspondent à celles affichées dans la grille.
 
 ### Mise à disposition des langues pour les auteurs {#making-languages-available-to-authors}
 
-Après avoir défini un dictionnaire pour une langue nouvelle de votre instance AEM, vous devez la rendre disponible pour sélection par les auteurs (par exemple, pour l’utilisation dans **Préférences**) :
+Après avoir défini un dictionnaire pour une langue nouvelle de votre instance AEM, vous devez la rendre disponible pour sélection par les auteurs (par exemple, pour l’utiliser dans **Préférences**) :
 
 1. Pour modifier la liste des langues disponibles dans l’option **Preferences** (Préférences) de la console **Security** (Sécurité) :
 
@@ -333,15 +333,15 @@ Après avoir défini un dictionnaire pour une langue nouvelle de votre instance 
 
 1. Enregistrez toutes les modifications et rechargez la console adéquate.
 
-### Modification des noms de langue et des pays par défaut  {#changing-language-names-and-default-countries}
+### Modification des noms de langue et des pays par défaut {#changing-language-names-and-default-countries}
 
-Plusieurs pays peuvent utiliser une même langue. Par exemple, les États-Unis, le Royaume-Uni et l’Australie utilisent l’anglais. Cela est indiqué par un code indiquant la langue et le pays tels que `en_US`, `en_GB` et `en_AU`.
+Plusieurs pays peuvent utiliser une même langue. Par exemple, les États-Unis, le Royaume-Uni et l’Australie utilisent l’anglais. Ceci est indiqué par un code indiquant à la fois la langue et le pays, comme `en_US`, `en_GB` et `en_AU`.
 
 Les pays par défaut sont utilisés lors de l’affichage de drapeaux (dans la boîte de dialogue de copie des langues, par exemple). Ils sont utilisés pour résoudre le pays pour un code de langue.
 
 >[!NOTE]
 >
->Pour les localisations, telles qu’elles sont gérées par le traducteur ci-dessus, seule la langue exacte fonctionne. Si la liste déroulante des préférences linguistiques utilise `en_uk`, un dictionnaire `en_uk` doit se trouver dans le référentiel.
+>Pour les localisations, telles qu’elles sont gérées par le traducteur ci-dessus, seule la langue exacte fonctionne. Si la liste déroulante des préférences linguistiques utilise `en_uk`, il doit y avoir une `en_uk` dictionnaire dans le référentiel.
 
 Pour modifier les définitions par défaut, procédez comme suit :
 
@@ -353,7 +353,7 @@ Pour modifier les définitions par défaut, procédez comme suit :
 
    `/apps/wcm/core/resources/languages`
 
-   Modifiez ou étendez ensuite la liste. La propriété `defaultCountry` sur un noeud de langue (par exemple, `ja`) doit contenir le code complet, tel que `ja_jp`, qui définirait `jp` comme pays par défaut pour la langue `ja`.
+   Modifiez ou étendez ensuite la liste. La propriété `defaultCountry` sur un noeud de langue (par exemple, `ja`) doit contenir le code complet, tel que `ja_jp`, qui définirait `jp` comme pays par défaut de la langue `ja`.
 
 1. Mettez à jour **CQ WCM Language Manager**.
 

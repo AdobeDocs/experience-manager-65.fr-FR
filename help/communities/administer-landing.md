@@ -50,7 +50,7 @@ Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
    * [Modèles de site](sites.md)
    * [Modèles de groupe](tools-groups.md)
    * [Fonctions de la communauté](functions.md)
-   * [Stockage   Configuration](srp-config.md)
+   * [Configuration du stockage](srp-config.md)
    * [Guide du composant](components-guide.md)
    * [Badges](badges.md)
 

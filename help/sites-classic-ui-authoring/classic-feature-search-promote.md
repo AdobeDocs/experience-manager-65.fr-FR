@@ -1,8 +1,8 @@
 ---
-title: Ajout de fonctionnalités Search&Promote à une page
-seo-title: Ajout de fonctionnalités Search&Promote à une page
+title: Ajout de fonctionnalités Search&Promote à une page
+seo-title: Adding Search&Promote Features To Your Page
 description: L’intégration des fonctionnalités Search&Promote dans votre site web permet d’utiliser les composants Search&Promote pour ajouter des fonctionnalités dans vos pages, telles que la recherche par mot-clé, une page de résultats de recherche, l’amélioration de la recherche et des bannières.
-seo-description: L’intégration des fonctionnalités Search&Promote dans votre site web permet d’utiliser les composants Search&Promote pour ajouter des fonctionnalités dans vos pages, telles que la recherche par mot-clé, une page de résultats de recherche, l’amélioration de la recherche et des bannières.
+seo-description: Integrating Search&Promote capabilities in your web site, you can use the Search&Promote components to add features to your pages such as keyword search, search results page search refinement, and banners.
 uuid: 8cd3c143-cb0b-4eb0-931d-9d447ea3c950
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,8 +13,8 @@ docset: aem65
 exl-id: cf5849c7-1c6a-46d8-9cc4-f1f20a507a0c
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
-source-wordcount: '1255'
-ht-degree: 75%
+source-wordcount: '1216'
+ht-degree: 74%
 
 ---
 
@@ -93,9 +93,9 @@ Vous pouvez configurer les propriétés de composant suivantes en mode d’édit
 
 ### Activer le filtrage des résultats par facettes {#enabling-the-filtering-of-results-by-facets}
 
-Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Les composants **[!UICONTROL Liste de cases à cocher Facette]**, **[!UICONTROL Liste déroulante Facette]** et **[!UICONTROL Liste de liens Facette]** permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **Chemin de navigation**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
+Vous pouvez autoriser les utilisateurs à filtrer les résultats d’une recherche au moyen de facettes. Le **[!UICONTROL Liste des cases à cocher - Facette]**, **[!UICONTROL Liste déroulante Facette]**, et **[!UICONTROL Facette Liste des liens]** Les composants permettent aux utilisateurs de sélectionner une ou plusieurs facettes pour le filtrage. Lorsque vous utilisez ces composants, vous devez également inclure le composant **Chemin de navigation**. Les chemins de navigation indiquent les filtres actuels qui sont utilisés.
 
-Les composants **[!UICONTROL Liste de cases à cocher Facette]**, **[!UICONTROL Liste déroulante Facette]** et **[!UICONTROL Liste de liens Facette]** possèdent chacun les propriétés suivantes que vous configurez en mode **Modifier** :
+Le **[!UICONTROL Liste des cases à cocher - Facette]**, **[!UICONTROL Liste déroulante Facette]**, et **[!UICONTROL Facette Liste des liens]** Les composants possèdent chacun les propriétés suivantes que vous configurez dans **Modifier** mode :
 
 * **Nom de la facette** : nom de la facette utilisée pour les filtres.
 
@@ -125,12 +125,12 @@ Le composant **[!UICONTROL Chemin de navigation]** permet aux utilisateurs de vo
 
 En mode d’édition, vous pouvez configurer les propriétés suivantes pour les chemins de navigation afin de personnaliser l’aspect du composant :
 
-* Délimiteur : définissez le caractère ou la chaîne de caractères qui servira de séparateur entre chaque chemin de navigation. Le champ **[!UICONTROL Délimiteur]** accepte n’importe quelle chaîne de caractères comme entrée. Le paramètre par défaut est : « > » (sans guillemets)
-* Délimiteur de piste : définissez le caractère ou la chaîne de caractères à afficher à la fin des chemins de navigation. Le champ **[!UICONTROL Délimiteur de fin]** accepte n’importe quelle chaîne de caractères comme entrée. Le paramètre par défaut de ce champ est *vide* (c’est-à-dire que rien n’est affiché à la fin de la ligne de chemin de navigation).
+* Délimiteur : définissez le caractère ou la chaîne de caractères qui servira de séparateur entre chaque chemin de navigation. Le **[!UICONTROL Délimiteur]** accepte n’importe quelle chaîne de caractères comme entrée. Le paramètre par défaut est : « > » (sans guillemets)
+* Délimiteur de piste : définissez le caractère ou la chaîne de caractères à afficher à la fin des chemins de navigation. Le **[!UICONTROL Délimiteur de fin]** accepte n’importe quelle chaîne de caractères comme entrée. Le paramètre par défaut de ce champ est &#42;blank&#42; (en d’autres termes, rien ne s’affiche à la fin de la ligne de chemin de navigation).
 
 ### Ajouter des zones de recherche {#adding-search-boxes}
 
-Le composant **[!UICONTROL Recherche]** permet aux clients d’effectuer des recherches de mots-clés. Ajoutez des composants **[!UICONTROL Rechercher]** à chaque page sur laquelle vous souhaitez permettre d’accéder à la recherche.
+Le **[!UICONTROL Rechercher]** permet aux clients d’effectuer des recherches par mots-clés. Ajouter **[!UICONTROL Rechercher]** à chaque page sur laquelle vous souhaitez autoriser l’accès à la recherche.
 
 Configurez les propriétés suivantes en mode d’édition afin de pouvoir contrôler le comportement d’exécution :
 
@@ -141,12 +141,12 @@ Configurez les propriétés suivantes en mode d’édition afin de pouvoir contr
 
 ### Ajout de bannières {#adding-banners}
 
-Le composant **[!UICONTROL Bannières]** affiche des bannières publicitaires en fonction des recherches de Search &amp; Promote du client. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
+Le **[!UICONTROL Bannières]** affiche des bannières publicitaires en fonction des recherches de Search &amp; Promote du client. La logique du serveur Search&amp;Replace détermine la bannière publicitaire qu’il faut diffuser. Par exemple, une recherche sur un pantalon denim peut déclencher l’affichage d’une bannière associée à des articles de mode. Le filtrage par rayon Homme peut affiner davantage le choix de la bannière.
 
-Le composant **[!UICONTROL Bannières]** fournit une propriété configurable nommée Zone de bannière. En mode d’édition, choisissez l’une des valeurs de propriété pour indiquer la façon dont la bannière doit s’afficher. Le service Search&amp;Promote détermine la liste des valeurs parmi lesquelles choisir.
+Le **[!UICONTROL Bannières]** Le composant fournit une propriété configurable appelée Zone de bannière. En mode d’édition, choisissez l’une des valeurs de propriété pour indiquer la façon dont la bannière doit s’afficher. Le service Search&amp;Promote détermine la liste des valeurs parmi lesquelles choisir.
 
 ### Exemple de page de recherche Search&amp;Promote {#example-search-promote-search-page}
 
 Le diagramme suivant montre les composants ajoutés à une page pour créer la page de résultats de Search &amp; Promote entièrement fonctionnelle ci-dessous.
 
-![Exemple de ](assets/1328213789109.png) ![ sandppageexample 1328213789109](assets/sandppageexample.png)
+![1328213789109](assets/1328213789109.png) ![sandppageexample](assets/sandppageexample.png)

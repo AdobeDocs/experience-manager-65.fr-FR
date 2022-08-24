@@ -11,7 +11,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '9211'
 ht-degree: 89%
@@ -592,9 +592,9 @@ Si la couleur sert de repère pour fournir l’information, ajoutez un repère v
 
 * [Compréhension du critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Comment remplir le critère de réussite 1.4.1](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Conseils pour obtenir un rapport de contraste de 3:1, avec une liste de couleurs adaptées au web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Conseils pour obtenir un rapport de contraste de 3:1, avec une liste de couleurs adaptées au web](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
-### Contraste (minimum) (1.4.3) {#contrast-minimum}
+### Contraste (minimum) (1.4.3)  {#contrast-minimum}
 
 * Critère de réussite 1.4.3
 * Niveau AA
@@ -837,11 +837,11 @@ Pour que ce critère de réussite soit satisfait, la langue par défaut d’une 
 
 * Si une page est écrite en anglais (Royaume-Uni), l’élément `<html>` doit être :
 
-   `<html lang = "en-gb">`
+   `<html lang = “en-gb”>`
 
 * En revanche, pour une page à restituer en anglais (États-Unis), l’attribut doit être défini comme suit :
 
-   `<html lang = "en-us">`
+   `<html lang = “en-us”>`
 
 Dans AEM, la langue par défaut de la page est définie lors de sa création, mais peut également être modifiée lors de son édition, en sélectionnant : **Sidekick** - onglet **Page** - **Propriétés de la page…** - onglet **Avancé**.
 
@@ -869,7 +869,7 @@ Si une page applique ce critère de réussite, alors :
 
 #### Comment procéder – Langue d’un passage (3.1.2) {#how-to-meet-language-of-parts}
 
-L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 &quot;de&quot;) peut être affichée comme suit :
+L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 &quot;de&quot;) peut s’afficher comme suit :
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -883,7 +883,7 @@ Les attributs blockquote ne sont pas pris en charge dans une instance prête à 
 De même, le navigateur peut restituer correctement un mot ou une expression emprunté peu courant si l’élément `span` est utilisé comme suit :
 
 ```xml
-<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</span>.</p>
+<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</span>.</p>
 ```
 
 >[!NOTE]

@@ -1,8 +1,8 @@
 ---
 title: Indexation du fichier Oak-run.jar – Scénarios d’utilisation
-seo-title: Indexation du fichier Oak-run.jar – Scénarios d’utilisation
+seo-title: Oak-run.jar Indexing Use Cases
 description: Découvrez les différents scénarios d’utilisation pour procéder à l’indexation à l’aide de l’outil Oak-run.
-seo-description: Découvrez les différents scénarios d’utilisation pour procéder à l’indexation à l’aide de l’outil Oak-run.
+seo-description: Learn about the various user cases for performing indexing with the Oak-run tool.
 uuid: 3c50080d-1e0d-4886-8d37-269f06881eb4
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -12,7 +12,7 @@ noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1375'
 ht-degree: 88%
 
 ---
@@ -38,13 +38,13 @@ Il s’agit d’un cas d’utilisation lié à l’altération d’index. Dans c
 1. peuvent être utilisés même si AEM n’est pas accessible ;
 1. sont faciles à utiliser.
 
-La vérification des index corrompus peut être effectuée via l’opération `--index-consistency-check` :
+La vérification des index corrompus peut être effectuée via `--index-consistency-check` operation :
 
 ```shell
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-consistency-check
 ```
 
-Un rapport sera généré dans `indexing-result/index-consistency-check-report.txt`. Vous trouverez, ci-dessous, un exemple de rapport :
+Cela génère un rapport dans `indexing-result/index-consistency-check-report.txt`. Vous trouverez, ci-dessous, un exemple de rapport :
 
 ```
 Valid indexes :
@@ -98,7 +98,7 @@ Vous trouverez, ci-dessous, un exemple d’utilisation pratique des commandes :
 java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstore/ --index-info --index-definitions --index-dump
 ```
 
-Les rapports seraient générés dans `indexing-result/index-info.txt` et `indexing-result/index-definitions.json`
+Les rapports seront générés dans `indexing-result/index-info.txt` et `indexing-result/index-definitions.json`
 
 Les mêmes informations sont, en outre, disponibles via la console web et font partie du fichier zip de vidage de la configuration. Elles sont accessibles à l’emplacement suivant :
 
@@ -110,7 +110,7 @@ Cet outil permet de collecter rapidement toutes les informations requises concer
 
 ## Cas d’utilisation 3 – Réindexation {#usecase3reindexing}
 
-En fonction des [scénarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), une réindexation doit être effectuée dans certains cas. Actuellement, la réindexation est effectuée en définissant l’indicateur `reindex` sur `true` dans le noeud de définition d’index via CRXDE ou via l’interface utilisateur du gestionnaire d’index. Une fois cet indicateur défini, la réindexation s’opère de façon asynchrone.
+En fonction des [scénarios](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing), une réindexation doit être effectuée dans certains cas. Actuellement, la réindexation est effectuée en définissant la variable `reindex` indicateur pour `true` dans le noeud de définition d’index via CRXDE ou via l’interface utilisateur du gestionnaire d’index. Une fois cet indicateur défini, la réindexation s’opère de façon asynchrone.
 
 Quelques observations concernant la réindexation :
 
@@ -143,7 +143,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 Cela présente les avantages suivants :
 
 * Incidence minimale sur les instances AEM en cours d’exécution. La plupart des lectures peuvent être effectuées à partir de serveurs secondaires et les activités de traversée requises pour la réindexation n’ont pas de répercussions négatives sur les caches AEM en cours d’exécution.
-* Les utilisateurs peuvent également fournir un fichier JSON d’un index nouveau ou mis à jour via l’option `--index-definitions-file`.
+* Les utilisateurs peuvent également fournir un fichier JSON d’un nouvel index ou d’un index mis à jour via la variable `--index-definitions-file` .
 
 ### Réindexation – SegmentNodeStore {#reindexsegmentnodestore}
 
@@ -151,7 +151,7 @@ Pour les installations `SegmentNodeStore`, la réindexation peut être effectué
 
 #### Réindexation en ligne – SegmentNodeStore {#onlinereindexsegmentnodestore}
 
-Suivez la méthode établie pour effectuer la réindexation en définissant l’indicateur `reindex` .
+Suivez la méthode établie pour effectuer la réindexation en définissant `reindex` Indicateur.
 
 #### Réindexation en ligne – SegmentNodeStore – L’instance AEM est en cours d’exécution {#onlinereindexsegmentnodestoretheaeminstanceisrunning}
 
@@ -186,8 +186,8 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 Dans ce scénario, vous pouvez effectuer la réindexation sur une configuration clonée afin de réduire l’impact sur l’instance AEM en cours d’exécution :
 
-1. Créez le point de contrôle au moyen d’une opération JMX. Pour ce faire, vous pouvez accéder à la [Console JMX](/help/sites-administering/jmx-console.md) et rechercher `CheckpointManager`. Cliquez ensuite sur l’opération **createCheckpoint(long p1)** en utilisant une valeur d’expiration élevée en secondes (par exemple, **2592000**).
-1. Copiez le dossier `crx-quickstart` sur une nouvelle machine.
+1. Créez le point de contrôle au moyen d’une opération JMX. Pour ce faire, vous pouvez accéder à la [Console JMX](/help/sites-administering/jmx-console.md) et rechercher `CheckpointManager`. Cliquez ensuite sur le bouton **createCheckpoint(long p1)** en utilisant une valeur d’expiration élevée en secondes (par exemple, **2592000**).
+1. Copiez le `crx-quickstart` dossier vers une nouvelle machine
 1. Effectuez la réindexation via la commande d’index oak-run.
 
 1. Copiez les fichiers d’index générés sur le serveur AEM.
@@ -206,7 +206,7 @@ Oak-run permet à présent de fournir des définitions d’index au format JSON 
 
 Le processus dont vous devez tenir compte pour ce scénario d’utilisation est le suivant :
 
-1. Un développeur met à jour les définitions d’index sur une instance locale, puis génère un fichier JSON de définition d’index via l’option `--index-definitions`
+1. Un développeur met à jour les définitions d’index sur une instance locale, puis génère un fichier JSON de définition d’index via l’événement `--index-definitions` option
 
 1. Le fichier JSON mis à jour est ensuite donné à l’administrateur système.
 1. L’administrateur système suit la méthode hors-bande et prépare l’index sur une autre installation.

@@ -10,7 +10,7 @@ exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 source-git-commit: 01de1d5064f5ebf00acd2fe9f138d852f41f7273
 workflow-type: tm+mt
 source-wordcount: '610'
-ht-degree: 66%
+ht-degree: 74%
 
 ---
 
@@ -58,13 +58,13 @@ Consultez [Accessibilité du clavier et navigation](https://experienceleague.ado
 ## Prise en charge de la technologie d’assistance dans [!DNL Dynamic Media] visionneuses {#assistive-technology-support-for-dm-viewers}
 
 Tous [!DNL Dynamic Media] les composants de visionneuse prennent en charge les rôles et attributs ARIA (Accessible Rich Internet Applications) pour améliorer l’intégration aux technologies d’assistance telles que les lecteurs d’écran.
-Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
+Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=fr#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
 
 ## Prise en charge des sous-titres codés dans Dynamic Media {#closed-caption-support}
 
 Dynamic Media prend en charge la diffusion de vidéos et de visionneuses de vidéos adaptatives avec sous-titrage. Les sous-titres doivent s’afficher au-dessus du contenu vidéo.
 
-Voir [Vidéo dans Dynamic Media - Ajout de sous-titres ou de sous-titres à une vidéo](/help/assets/video.md#adding-captions-to-video).
+Consultez la section [Vidéo dans Dynamic Media - Ajout de légendes ou de sous-titres à une vidéo](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >

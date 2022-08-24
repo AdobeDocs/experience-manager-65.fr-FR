@@ -8,10 +8,10 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Vous pouvez utiliser des métadonnées dans un modèle de courrier électronique
 
 ![Modèle d’e-mail par défaut](assets/default_email_template_metadata_new.png)
 
-Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle de courrier électronique et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification électronique est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title} ». Il est remplacé par la valeur &quot;Demande de prêt&quot; au moment de l’exécution.
+Les métadonnées sont stockées dans des paires clé-valeur. Vous pouvez spécifier la clé dans le modèle de courrier électronique et la clé est remplacée par une valeur au moment de l’exécution (lorsqu’une notification électronique est générée). Par exemple, dans l’exemple de code ci-dessous, la clé est « $ {workitem_title} ». Elle est remplacée par la valeur « Demande-Prêt » à l’exécution.
 
 ```html
 subject=Task Assigned - ${workitem_title}

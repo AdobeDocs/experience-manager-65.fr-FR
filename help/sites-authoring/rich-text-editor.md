@@ -1,8 +1,8 @@
 ---
 title: Utilisation de l’éditeur de texte enrichi pour créer du contenu
-seo-title: Utilisation de l’éditeur de texte enrichi pour créer du contenu
+seo-title: Using the Rich Text Editor to Author Content
 description: Utilisation de l’éditeur de texte enrichi pour créer du contenu
-seo-description: Utilisation de l’éditeur de texte enrichi pour créer du contenu
+seo-description: Using the Rich Text Editor to Author Content
 uuid: 70f4d4b2-cbc6-4fef-9262-1696804008d8
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,8 +11,8 @@ docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 70%
+source-wordcount: '260'
+ht-degree: 68%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 70%
 L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants., notamment :
 
 * Texte
-* Texte Image
+* Texte et Image
 * Tableau
 
 ## Édition statique {#in-place-editing}
@@ -46,9 +46,9 @@ Cette barre d’outils propose les options suivantes :
 
 ## Édition en mode Plein écran {#full-screen-editing}
 
-Pour les composants basés sur du texte, si vous appuyez sur le mode Plein écran dans la barre d’outils ![](do-not-localize/screen_shot_2018-03-21at163236.png), l’éditeur de texte enrichi s’ouvre et le reste du contenu de la page est masqué.
+Pour les composants basés sur du texte, appuyez sur le mode Plein écran dans la barre d’outils. ![](do-not-localize/screen_shot_2018-03-21at163236.png) ouvre l’éditeur de texte enrichi et masque le reste du contenu de la page.
 
-Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité des options dépend de la configuration ](/help/sites-administering/rich-text-editor.md).[
+Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité est des options [dépend de la configuration](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

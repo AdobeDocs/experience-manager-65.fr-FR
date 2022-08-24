@@ -1,8 +1,8 @@
 ---
 title: Contrôle des opérations de gestion des utilisateurs dans AEM
-seo-title: Contrôle des opérations de gestion des utilisateurs dans AEM
+seo-title: How to Audit User Management Operations in AEM
 description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
-seo-description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 9d177afb-172c-4858-a678-254c97cfa472
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
-feature: Opérations
+feature: Operations
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '308'
 ht-degree: 95%
 
 ---
 
 # Contrôle des opérations de gestion des utilisateurs dans AEM{#how-to-audit-user-management-operations-in-aem}
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 AEM a introduit la possibilité de journaliser les modifications des autorisations afin qu’elles puissent être contrôlées ultérieurement.
 
@@ -82,7 +82,7 @@ Si la configuration est correcte, la sortie doit se présenter comme suit :
 19.05.2017 15:44:10.405 *INFO* [0:0:0:0:0:0:0:1 [1495197850401] POST /home/users/3/35XVpVtLRx4a5J9gKrVG.rw.userprops.html HTTP/1.1] com.adobe.granite.security.user.internal.audit.AuditAuthorizableAction Password for User 'john' was changed
 ```
 
-## IU classique  {#classic-ui}
+## Interface utilisateur classique {#classic-ui}
 
 Dans l’IU classique, les informations sur les opérations de création, lecture, mise à jour et suppression enregistrées dans le journal d’audit concernant l’ajout et la suppression d’utilisateurs sont limitées à l’ID de l’utilisateur affecté et à la date de modification.
 

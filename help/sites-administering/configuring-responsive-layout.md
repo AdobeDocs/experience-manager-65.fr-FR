@@ -1,8 +1,8 @@
 ---
 title: Configuration du conteneur et du mode de mises en page
-seo-title: Configuration du conteneur et du mode de mises en page
+seo-title: Configuring Layout Container and Layout Mode
 description: Découvrez comment configurer le conteneur de mises en page et le mode Mise en page.
-seo-description: Découvrez comment configurer le conteneur de mises en page et le mode Mise en page.
+seo-description: Learn how to configure Layout Container and Layout Mode.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,14 +13,14 @@ legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/config
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
-source-wordcount: '1324'
-ht-degree: 81%
+source-wordcount: '1309'
+ht-degree: 82%
 
 ---
 
 # Configuration du conteneur et du mode de mises en page{#configuring-layout-container-and-layout-mode}
 
-[Les ](/help/sites-authoring/responsive-layout.md) mises en page réactives sont un mécanisme permettant de réaliser une conception web  [réactive](https://en.wikipedia.org/wiki/Responsive_web_design). Les utilisateurs peuvent ainsi créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés.
+[Mise en page réactive](/help/sites-authoring/responsive-layout.md) est un mécanisme de réalisation [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design). Les utilisateurs peuvent ainsi créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
    Ce composant fournit un système de paragraphes/grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme parsys par défaut pour votre page et/ou mis à la disposition des auteurs dans l’explorateur de composants.
 
-   * Le composant par défaut **Conteneur de mises en page** est défini sous :
+   * La valeur par défaut **Conteneur de mises en page** est défini sous :
 
       /libs/wcm/foundation/components/responsivegrid
 
@@ -44,9 +44,9 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
          Le conteneur de mises en page peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Mode Mise en page : une fois que le conteneur de mises en page est positionné sur votre page, vous pouvez utiliser la variable 
-**** Mode Mise en page pour positionner le contenu dans la grille réactive.
+* **[Mode Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
+Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser la variable 
+**Disposition** pour positionner le contenu dans la grille réactive.
 
 * [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Permet de créer et de modifier des sites web en responsive design qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
@@ -78,13 +78,13 @@ Pour permettre à l’émulateur de prendre en charge vos pages, vous devez enre
 
 Pour spécifier les groupes d’appareils qui s’affichent dans la liste des appareils de l’émulateur, voir [Définition des groupes de périphériques](/help/sites-developing/responsive.md#specifying-the-device-groups).
 
-### Liaison de votre site aux groupes d’appareils spécifiés  {#link-your-site-to-the-specified-device-groups}
+### Liaison de votre site aux groupes d’appareils spécifiés {#link-your-site-to-the-specified-device-groups}
 
 Pour inclure l’émulateur, vous devez lier votre site aux groupes d’appareils. Voir [Ajout de la liste des périphériques](/help/sites-developing/responsive.md#adding-the-devices-list) (pour l’IU classique et l’IU optimisée pour les écrans tactiles).
 
 ## Activation du mode Mise en page pour votre site {#activate-layout-mode-for-your-site}
 
-Ces procédures sont utilisées pour activer le mode **Mise en page** sur votre site.
+Ces procédures sont utilisées pour activer les **Disposition** sur votre site.
 
 ### Configuration des points d’arrêt {#configure-the-breakpoints}
 
@@ -113,24 +113,21 @@ Ils peuvent être définis à l’aide de CRXDE Lite ou de code XML.
 >
 >* vous devez ajouter des points d’arrêt aux modèles.
 >
->
-Si vous migrez un projet existant (avec du contenu existant), vous devez :
+>Si vous migrez un projet existant (avec du contenu existant), vous devez :
 >
 >* ajouter des points d’arrêt aux modèles ;
 >* ajouter les mêmes points d’arrêt aux pages existantes ;
-
 >
->  
-Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
+>  Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
 
 #### Configuration des points d’arrêt à l’aide de CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
 1. À l’aide de CRXDE Lite (ou équivalent), accédez à l’un des éléments suivants :
 
    * Définition de votre modèle
-   * Noeud `jcr:content` de votre page.
+   * Le `jcr:content` du noeud de votre page.
 
-1. Sous `jcr:content` , créez le noeud :
+1. Sous `jcr:content` créez le noeud :
 
    * Nom : `cq:responsive`
    * Type : `nt:unstructured`
@@ -149,7 +146,7 @@ Comme l’héritage est en cours d’opération, vous pouvez le limiter à la pa
 
 #### Configuration des points d’arrêt à l’aide de code XML {#configuring-breakpoints-using-xml}
 
-Les points d’arrêt se trouvent dans la section `<jcr:content>` du dossier `.context.html` sous le dossier de modèle (ou de contenu) approprié.
+Les points d’arrêt se trouvent dans la variable `<jcr:content>` de la section `.context.html` sous le dossier de modèle (ou de contenu) approprié.
 
 Exemple de définition :
 
@@ -162,7 +159,7 @@ Exemple de définition :
 </cq:responsive>
 ```
 
-### Ajout d’un fournisseur d’informations responsive  {#add-a-responsive-information-provider}
+### Ajout d’un fournisseur d’informations responsive {#add-a-responsive-information-provider}
 
 >[!NOTE]
 >
@@ -174,7 +171,7 @@ Copiez le nœud `cq:infoProviders` ci-dessous dans votre composant Page parent 
 
 ## Activation du redimensionnement des composants pour la page {#enable-component-resizing-for-the-page}
 
-Ces procédures sont requises afin que vous puissiez redimensionner les composants en mode **Mise en page** .
+Ces procédures sont requises afin que vous puissiez redimensionner les composants dans **Disposition** mode .
 
 ### Définition du conteneur de mises en page comme système de paragraphes principal {#set-layout-container-as-main-parsys}
 
@@ -263,7 +260,7 @@ Tout redimensionnement d’un composant dans la grille déclenche les programmes
 
 * `afterchildedit`
 
-Pour redimensionner et mettre à jour correctement le contenu d’une image adaptative incluse dans une grille réactive, vous devez ajouter un `afterEdit` défini sur `REFRESH_PAGE` écouteur dans le fichier `EditConfig` de chaque composant contenu.
+Pour redimensionner et mettre à jour correctement le contenu d’une image adaptative incluse dans une grille réactive, vous devez ajouter une `afterEdit` défini sur `REFRESH_PAGE` écouteur dans la `EditConfig` de chaque composant contenu.
 
 Par exemple :
 
@@ -279,7 +276,7 @@ Le mécanisme d’image adaptative est disponible par le biais d’un script qui
 
 Ces tâches permettent aux créateurs de faire glisser des instances du composant **Conteneur de mises en page** dans la page.
 
-### Activation du composant Conteneur de mises en page pour modifier une page  {#enable-the-layout-container-component-for-page-editing}
+### Activation du composant Conteneur de mises en page pour modifier une page {#enable-the-layout-container-component-for-page-editing}
 
 Pour permettre aux créateurs d’ajouter d’autres grilles responsive dans des pages de contenu, vous devez activer le composant Conteneur de mises en page pour la page. Vous pouvez effectuer cette opération à l’aide de l’une des fonctions suivantes :
 
@@ -299,7 +296,7 @@ Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance sp
 
    Vous pouvez configurer le nombre de colonnes disponibles pour chaque instance spécifique du conteneur de mises en page.
 
-   À cet effet, utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md), puis ouvrez la boîte de dialogue de conception pour le conteneur nécessaire. Vous pouvez spécifier le nombre de colonnes disponibles pour le positionnement et le redimensionnement. La valeur par défaut est de 12.
+   À cet effet, utilisez le [mode Conception](/help/sites-authoring/default-components-designmode.md), puis ouvrez la boîte de dialogue de conception pour le conteneur nécessaire. Vous pouvez spécifier le nombre de colonnes disponibles pour le positionnement et le redimensionnement. La valeur par défaut est 12.
 
 1. **XML**
 

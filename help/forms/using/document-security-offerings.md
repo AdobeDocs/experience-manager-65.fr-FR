@@ -1,5 +1,5 @@
 ---
-title: Offres de Document Security
+title: Offres Document Security
 seo-title: Document security offerings
 description: Découvrez les différents outils et fonctionnalités d’AEM Document Security
 seo-description: Learn about various tools and features of AEM Document Security
@@ -13,7 +13,7 @@ docset: aem65
 feature: Document Security
 exl-id: d00ae232-b018-44e5-b04b-376d4cd9c6eb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 100%
 
@@ -65,7 +65,7 @@ Vous pouvez utiliser SDK Document Security, Adobe Acrobat, Document Security Ext
 
    En plus des tâches mentionnées ci-dessus, la bibliothèque portable de protection possède toutes les fonctionnalités du SDK Document Security. Vous pouvez utiliser SDK Document Security pour accéder aux fonctionnalités du serveur Document server, ouvrir des documents protégés par une stratégie et développer des extensions personnalisées, des modules externes ou des applications. Notez également que la bibliothèque de protection portable (PPL) ne peut pas annuler la protection du SDK client Document Security AEM Forms (CSDK) et inversement.
 
-   La bibliothèque portable de protection est disponible pour les langues de Java et C++ dans les versions 32 bits et 64 bits. Elle est également disponible en tant que bundle OSGi pour AEM Forms on OSGi. La PPL C++ peut être compilée avec Microsoft Visual Studio 2013. Si vous possédez un module complémentaire Document Security AEM Forms sous licence, vous pouvez contacter l’équipe d’assistance de [Document Security AEM Forms](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour accéder à la bibliothèque portable de protection. Ultérieurement, vous pouvez utiliser l’aide de la bibliothèque portable de protection (fournie avec la bibliothèque) pour installer et utiliser la bibliothèque portable de protection.
+   La bibliothèque portable de protection est disponible pour les langues de Java et C++ dans les versions 32 bits et 64 bits. Elle est également disponible en tant que bundle OSGi pour AEM Forms on OSGi. La PPL C++ peut être compilée avec Microsoft Visual Studio 2013. Si vous possédez un module complémentaire Document Security AEM Forms sous licence, vous pouvez contacter l’équipe d’assistance de [Document Security AEM Forms](https://helpx.adobe.com/marketing-cloud/contact-support.html) pour accéder à la bibliothèque portable de protection. Ultérieurement, vous pouvez utiliser l’aide de la bibliothèque portable de protection (fournie avec la bibliothèque) pour installer et utiliser la bibliothèque portable de protection.
 
 ### Affichage ou modification des documents protégés {#view-or-edit-protected-documents}
 
