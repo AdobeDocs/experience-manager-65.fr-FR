@@ -5,10 +5,10 @@ uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 6c6ddaba0e42df4b4701670e8abfdabe5205879c
+source-git-commit: 495b9a006f5288ad6579e13aaea82ace6d6f0e91
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 33%
+source-wordcount: '522'
+ht-degree: 34%
 
 ---
 
@@ -55,15 +55,13 @@ Accédez au répertoire approprié, puis, à l’invite de commande, saisissez
 1. **[Pour Windows uniquement]:** Effectuez l’une des étapes suivantes :
    * Désélectionnez l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Exécuter **Configuration Manager** en utilisant la variable **ConfigurationManager.bat** fichier situé dans `[aem-forms root]\configurationManager\bin`.
 
-   * Désélectionnez l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant exécution **Configuration Manager** using **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez à *`<AEMForms_Install_Dir>\configurationManager\bin`* répertoire et remplacer [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) fichiers .
+   * Ou désélectionnez l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Avant exécution **Configuration Manager** using **ConfigurationManager.exe** ou **ConfigurationManager_IPv6.exe**, accédez à *`<AEMForms_Install_Dir>\configurationManager\bin`* répertoire et remplacer [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) et [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) fichiers .
    >[!NOTE]
    >Utilisation **ConfigurationManager.bat** vous permet d’éviter de mettre à jour manuellement le nom des fichiers .lax.
 
-1. **[Pour Unix uniquement]:** Effectuez l’une des étapes suivantes :
+1. **[Pour Unix uniquement]:**
 
-   * Le **Démarrez Configuration Manager** est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager immédiatement.
-
-   * Pour exécuter **Configuration Manager** désélectionnez ensuite l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Vous pouvez commencer **Configuration Manager** par la suite, en utilisant le script approprié dans la variable `[AEM_forms_root]/configurationManager/bin` répertoire .
+   * Le **Démarrez Configuration Manager** est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager instantanément ou pour exécuter **Configuration Manager** désélectionnez ensuite l’option **Démarrez Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Vous pouvez commencer **Configuration Manager** par la suite, en utilisant le script approprié dans la variable `[AEM_forms_root]/configurationManager/bin` répertoire .
 
 1. En fonction de votre serveur d’applications, sélectionnez l’un des documents suivants et suivez les instructions de la section *Configuration et déploiement d’AEM Forms*.
 
