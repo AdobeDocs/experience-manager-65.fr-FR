@@ -12,10 +12,10 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: de774bec7440805273928267ea6c09669720ea24
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 79%
+source-wordcount: '962'
+ht-degree: 77%
 
 ---
 
@@ -114,6 +114,17 @@ Pour utiliser le composant de fragment de contenu prêt à l’emploi comme plan
 La gestion de fragments de contenu utilise un processus de rendu interne pour générer la sortie HTML finale pour une page. Ceci est utilisé en interne par le composant Fragment de contenu, mais également par le processus en arrière-plan qui met à jour les fragments référencés sur les pages de référencement.
 
 En interne, Sling Rewriter est utilisé pour ce rendu. La configuration correspondante se trouve à l’adresse `/libs/dam/config/rewriter/cfm` et peuvent être ajustés si nécessaire. Voir [Apache Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) pour plus d’informations.
+
+>[!CAUTION]
+>
+>Si vous ajustez/superposez la configuration du module de réécriture :
+>
+>* `/libs/dam/config/rewriter/cfm`
+>
+>puis la fonction `serializerType` **must** être mis à jour vers :
+>
+>* `serializerType="html5-serializer"`
+
 
 La configuration prête à l’emploi utilise les transformateurs suivants :
 
