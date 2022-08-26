@@ -11,10 +11,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Adobe Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 51801dfae47e82f31042f48b113332783464bafb
+source-git-commit: e46d77caf831324f077315df43b8f3a0267bef9a
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 100%
+source-wordcount: '1091'
+ht-degree: 92%
 
 ---
 
@@ -59,6 +59,23 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
 
 1. Copiez l’URL dans la fenêtre active du navigateur dans un bloc-notes. Vous en avez besoin pour configurer l’application [!DNL Adobe Sign] avec AEM [!DNL Forms].
 
+1. Dans le **[!UICONTROL Paramètres]** , **[!UICONTROL URL OAuth]** contient l’URL par défaut. Le format de l’URL est:
+
+   `https://<shard>/public/oAuth/v2`
+
+   Par exemple :
+   `https://secure.na1.echosign.com/public/oauth/v2`
+
+   où :
+
+   **na1** fait référence au partitionnement de base de données par défaut. Vous pouvez modifier la valeur du partitionnement de base de données. Assurez-vous que les configurations cloud de [!DNL  Adobe Sign] pointent vers le [fragment correct](https://helpx.adobe.com/fr/sign/using/identify-account-shard.html).
+
+   Si vous créez une autre configuration [!DNL Adobe Sign] pour une fonctionnalité ou un composant Adobe Experience Manager, assurez-vous que toutes les configurations cloud de [!DNL Adobe Sign] pointent vers le même fragment.
+
+   >[!NOTE]
+   Conserver la variable **Création d’une configuration Adobe Sign** s’ouvre. Ne le fermez pas. Vous pouvez récupérer **ID client** et **Secret du client** après la configuration des paramètres OAuth pour la variable [!DNL Adobe Sign] comme décrit dans les étapes à venir.
+
+
 1. Configurez les paramètres OAuth pour l’application [!DNL Adobe Sign] :
 
    1. Ouvrez une fenêtre de navigateur et connectez-vous au compte de développeur [!DNL Adobe Sign].
@@ -92,11 +109,13 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    >[!NOTE]
    Assurez-vous que les configurations des instances d’auteur et de publication pointent vers la même partition. Si vous créez plusieurs configurations Adobe Sign pour une organisation, assurez-vous que toutes utilisent la même partition.
 
-1. Indiquez l’**ID client** (également appelé ID d’application) et le **Secret client** obtenus à l’étape 8. Sélectionnez l’option **[!UICONTROL Activer pour les pièces jointes également]** pour ajouter les fichiers joints à un formulaire adaptatif au document Adobe Sign correspondant envoyé à des fins de signature.[!DNL Adobe Sign]
+1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. Dans le **[!UICONTROL Paramètres]** , spécifiez la variable **ID client** (également appelé ID d’application) et **Secret du client**. Utilisez la variable [ID client et secret client de l’application Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) créé pour AEM Forms.
 
-   Appuyez sur **[!UICONTROL Se connecter à Adobe Sign]**. Lorsque vous êtes invité à fournir vos informations d’identification, indiquez le nom d’utilisateur et le mot de passe du compte utilisé lors de la création de l’application [!DNL Adobe Sign]. 
+1. Sélectionnez l’option **[!UICONTROL Activer pour les pièces jointes également]** pour ajouter les fichiers joints à un formulaire adaptatif au document Adobe Sign correspondant envoyé à des fins de signature.[!DNL Adobe Sign]
 
-   Appuyez sur **[!UICONTROL Créer]** pour créer la configuration [!DNL Adobe Sign].
+1. Appuyez sur **[!UICONTROL Se connecter à Adobe Sign]**. Lorsque vous êtes invité à fournir vos informations d’identification, indiquez le nom d’utilisateur et le mot de passe du compte utilisé lors de la création de l’application [!DNL Adobe Sign]. 
+
+1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration [!DNL Adobe Sign].
 
 1. Ouvrez la console Web AEM. L’URL est `https://'[server]:[port]'/system/console/configMgr`
 1. Ouvrez le **[!UICONTROL service de configuration commun aux formulaires].**
