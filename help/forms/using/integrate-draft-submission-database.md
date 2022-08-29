@@ -163,7 +163,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 >
 > * Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous de vous l’être procuré et spécifiez les informations requises pour configurer le pool de connexions JDBC. 
 > * Pointez vos instances d’auteur et de publication pour utiliser la même base de données. La valeur du champ URI de la connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
-   >
+>
 
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).
