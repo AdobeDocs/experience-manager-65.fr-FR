@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
 workflow-type: tm+mt
-source-wordcount: '5904'
-ht-degree: 67%
+source-wordcount: '5912'
+ht-degree: 66%
 
 ---
 
@@ -128,7 +128,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
 
 ### Remarques concernant la mise à niveau AEM 6.5 {#aem-upgrade-considerations}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td>Questions </td>
@@ -143,7 +143,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
 
 ### Migration vers Oak Segment Tar {#migrating-to-oak-segment-tar}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Questions</strong></td>
@@ -205,7 +205,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
 
 ### Exécution du nettoyage des révisions en ligne {#running-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Questions</strong></td>
@@ -368,7 +368,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
 
 ### Surveillance du nettoyage des révisions en ligne {#monitoring-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Que doit-on surveiller pendant le nettoyage des révisions en ligne ?</strong></td>
@@ -387,7 +387,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Où trouver les statistiques des dernières exécutions de nettoyage des révisions en ligne ?</strong></td>
-   <td><p>L’état, la progression et les statistiques sont présentés via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Pour plus d’informations sur la variable <code>SegmentRevisionGarbageCollection</code> MBean, lisez la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">paragraphe suivant</a>.</p> <p>Les progrès peuvent être suivis à partir du <code>EstimatedRevisionGCCompletion</code> de l’attribut <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>N’oubliez pas que les statistiques sont dospnibles uniquement avec le dernier démarrage de système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> </td>
+   <td><p>L’état, la progression et les statistiques sont présentés via JMX (<code>SegmentRevisionGarbageCollection</code> MBean). Pour plus d’informations sur la variable <code>SegmentRevisionGarbageCollection</code> MBean, lisez la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">paragraphe suivant</a>.</p> <p>Les progrès peuvent être suivis à partir du <code>EstimatedRevisionGCCompletion</code> de l’attribut <code>SegmentRevisionGarbageCollection MBean.</code></p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>N’oubliez pas que les statistiques sont dospnibles uniquement avec le dernier démarrage de système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -400,7 +400,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
       </ul> </li>
      <li>Espace disque gagné par le nettoyage de révision
       <ul>
-       <li>L’espace n’est récupéré que lorsque la phase de nettoyage est terminée. La fin de la phase de nettoyage est marquée par le message du journal "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimension après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).”.</li>
+       <li>L’espace n’est récupéré que lorsque la phase de nettoyage est terminée. La fin de la phase de nettoyage est marquée par le message du journal "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". La dimension après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).".</li>
       </ul> </li>
      <li>Un problème s’est produit pendant le nettoyage de la révision.
       <ul>
@@ -435,7 +435,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><p><strong>Comment surveiller le nettoyage automatique sur une instance Secondaire ?</strong></p> </td>
-   <td><p>L’état, la progression et les statistiques sont présentés via JMX à l’aide de la variable <code>SegmentRevisionGarbageCollection</code> MBean. Voir également ce qui suit : <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Documentation Oak</a>. </p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection”</code>.</p> <p>Notez que les statistiques sont disponibles uniquement à partir du dernier démarrage du système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir aussi <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> <p>Les fichiers de journal peuvent aussi être utilisés pour vérifier l’état, le progrès et les statistiques du nettoyage automatique.</p> </td>
+   <td><p>L’état, la progression et les statistiques sont présentés via JMX à l’aide de la variable <code>SegmentRevisionGarbageCollection</code> MBean. Voir également ce qui suit : <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#monitoring-via-jmx" target="_blank">Documentation Oak</a>. </p> <p>Vous pouvez obtenir une référence du MBean à l’aide de la variable <code>ObjectName org.apache.jackrabbit.oak:name="Segment node store revision garbage collection",type="SegmentRevisionGarbageCollection"</code>.</p> <p>Notez que les statistiques sont disponibles uniquement à partir du dernier démarrage du système. L’outil de surveillance externe peut être utilisé pour conserver les données au-delà de la disponibilité d’AEM. Voir aussi <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios" target="_blank">la documentation AEM pour joindre les contrôles d’intégrité à Nagios comme exemple d’outil de surveillance externe ;</a>.</p> <p>Les fichiers de journal peuvent aussi être utilisés pour vérifier l’état, le progrès et les statistiques du nettoyage automatique.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -453,7 +453,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
 
 ### Dépannage du nettoyage des révisions en ligne {#troubleshooting-online-revision-cleanup}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Quel est le pire qui puisse arriver si vous n’exécutez pas le nettoyage des révisions en ligne ?</strong></td>
@@ -507,15 +507,68 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
 
 Le fichier error.log est détaillé en cas d’incident au cours du processus de nettoyage des révisions en ligne. La matrice suivante vise à expliquer les messages les plus courants et à fournir des solutions possibles :
 
-| **Phase** | **Messages du journal** | **Explication** | **Étapes suivantes** |
+<!---| **Phase** |**Log Messages** |**Explanation** |**Next Steps** |
 |---|---|---|---|
-|  |  |  |  |
-| Estimation | TarMK GC #2 : estimation ignorée car la compression est suspendue | La phase d’estimation est ignorée lorsque la compression est désactivée par configuration sur le système. | Activation du nettoyage des révisions en ligne. |
-|  | TarMK GC #2 : estimation interrompue : ${REASON}. Skipping compaction. | La phase d’estimation s’est terminée prématurément. Quelques exemples d’événements qui peuvent interrompre la phase d’estimation : pas suffisamment de mémoire ou d’espace disque sur le système hôte. | Dépend de la raison donnée. |
-| Compression | TarMK GC #2 : compaction paused | Tant que la phase de compression est mise en pause par le paramétrage, ni la phase d&#39;estimation, ni la phase de compression ne seront exécutées. | Activez le nettoyage des révisions en ligne. |
-|  | TarMK GC #2 : compression annulée : ${REASON}. | La phase de compression s’est arrêtée prématurément. Quelques exemples d’événements qui peuvent interrompre la phase de compression : pas suffisamment de mémoire ou d’espace disque sur le système hôte. De plus, la compression peut être annulée en désactivant le système ou en l’annulant de façon explicite par le biais des interfaces d’administration telles que la fenêtre de maintenance dans le tableau des opérations. | Dépend de la raison donnée. |
-|  | TarMK GC #2 : la compression a échoué en 32,902 min (1974140 ms), après 5 cycles | Ce message ne signifie pas qu’il y a eu une erreur irrécupérable, mais seulement que la compression a été arrêtée après un certain nombre de tentatives. Lisez également le [paragraphe suivant](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). | Lisez ce qui suit : [Documentation Oak](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), et la dernière question de la [Exécution du nettoyage des révisions en ligne](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) . |
-| Nettoyage | TarMK GC #2 : nettoyage interrompu | Le nettoyage a été annulé en arrêtant le référentiel. Aucun impact sur la cohérence n’est attendu. En outre, l’espace disque ne sera probablement pas pleinement récupéré. Il sera récupéré lors du prochain cycle de nettoyage des révisions.  | Découvrir pourquoi le référentiel a été arrêté et essayer d’éviter de le désactiver pendant les fenêtres de maintenance. |
+|   |  |  |  |
+| Estimation |TarMK GC #2: estimation skipped because compaction is paused |The estimation phase is skipped when compaction is disabled on the system by configuration. |Enable Online Revision Cleanup. |
+|   |TarMK GC #2: estimation interrupted: ${REASON}. Skipping compaction. |The estimation phase terminated prematurely. Some examples of events that could interrupt the estimation phase: not enough memory or disk space on the host system. |Depends on the given reason. |
+| Compaction |TarMK GC #2: compaction paused |As long as the compaction phase is paused by configuration, neither the estimation phase nor the compaction phase will be executed. |Enable online revision cleanup. |
+|   |TarMK GC #2: compaction cancelled: ${REASON}. |The compaction phase terminated prematurely. Some examples of events that could interrupt the compaction phase: not enough memory or disk space on the host system. Moreover, compaction can also be cancelled by shutting down the system or by explicitly cancelling it via administrative interfaces such as the Maintenance Window within the Operations Dashobard. |Depends on the given reason. |
+|   |TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles |This message doesn’t mean that there was an unrecoverable error, but only that compaction was terminated after a certain amount of attempts. Also, read the [following paragraph](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes). |Read the following [Oak documentation](https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes), and the last question of the [Running Online Revision Cleanup](/help/sites-deploying/revision-cleanup.md#running-online-revision-cleanup) section. |
+| Cleanup |TarMK GC #2: cleanup interrupted |Cleanup has been cancelled by shutting down the repository. No impact on consistency is expected. Also, disk space is most likely not reclaimed to full extent. It will be reclaimed during next revision cleanup cycle. |Investigate why repository has been shut down and going forward try to avoid shutting down the repository during maintenance windows. |-->
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Phase </th>
+    <th>Messages du journal</th>
+    <th>Explication</th>
+    <th>Étapes suivantes</th>
+  </tr>  
+  <tr>
+    <td>Estimation</td>
+    <td>TarMK GC #2 : estimation ignorée car la compression est suspendue.</td>
+    <td>La phase d’estimation est ignorée lorsque la compression est désactivée par configuration sur le système.</td>
+    <td>Activation du nettoyage des révisions en ligne.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>S/O</td>
+    <td>TarMK GC #2 : estimation interrompue : ${REASON}. Skipping compaction.</td>
+    <td>La phase d’estimation s’est terminée prématurément. Quelques exemples d’événements qui peuvent interrompre la phase d’estimation : pas suffisamment de mémoire ou d’espace disque sur le système hôte.</td>
+    <td>Dépend de la raison donnée.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Compression</td>
+    <td>TarMK GC #2 : compression suspendue.</td>
+    <td>Tant que la phase de compression est mise en pause par le paramétrage, ni la phase d'estimation, ni la phase de compression ne seront exécutées.</td>
+    <td>Activez le nettoyage des révisions en ligne.</td>
+  </td>
+  </tr>
+   <tr>
+    <td>S/O</td>
+    <td>TarMK GC #2 : compression annulée : ${REASON}.</td>
+    <td>La phase de compression s’est arrêtée prématurément. Quelques exemples d’événements qui peuvent interrompre la phase de compression : pas suffisamment de mémoire ou d’espace disque sur le système hôte. De plus, la compression peut également être annulée en arrêtant le système ou en l’annulant explicitement via des interfaces administratives telles que la fenêtre de maintenance dans le tableau de bord des opérations.</td>
+    <td>Dépend de la raison donnée.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>S/O</td>
+    <td>TarMK GC #2 : le compactage a échoué en 32,902 min (1974140 ms), après 5 cycles.</td>
+    <td>Ce message ne signifie pas qu’il y a eu une erreur irrécupérable, mais seulement que la compression a été arrêtée après un certain nombre de tentatives. Lisez également le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">au paragraphe suivant.</a></td>
+    <td>Lisez ce qui suit : <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Documentation Oak</a>, ainsi que la dernière question de la section Exécution du nettoyage des révisions en ligne .</a></td>
+  </td>
+  </tr>
+  <tr>
+    <td>Nettoyage</td>
+    <td>TarMK GC #2 : nettoyage interrompu.</td>
+    <td>Le nettoyage a été annulé en arrêtant le référentiel. Aucun impact sur la cohérence n’est attendu. En outre, l’espace disque ne sera probablement pas entièrement récupéré. Il sera récupéré lors du prochain cycle de nettoyage des révisions. </td>
+    <td>Déterminez pourquoi le référentiel a été arrêté et essayez à l’avenir d’éviter l’arrêt du référentiel pendant les fenêtres de maintenance.</td>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 ## Exécution du nettoyage des révisions hors ligne {#how-to-run-offline-revision-cleanup}
 
@@ -601,7 +654,7 @@ Outre celles présentées ci-dessus, vous pouvez également déclencher le méca
 
 ### FAQ sur le nettoyage des révisions hors ligne {#offline-revision-cleanup-frequently-asked-questions}
 
-<table>
+<table style="table-layout:auto">
  <tbody>
   <tr>
    <td><strong>Quels sont les facteurs qui déterminent la durée du nettoyage des révisions hors ligne ?</strong></td>
