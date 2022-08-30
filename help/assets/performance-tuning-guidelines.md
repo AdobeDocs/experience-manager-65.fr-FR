@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 35639a818f58923ae9ad099752d359e7795be60b
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '2741'
-ht-degree: 53%
+source-wordcount: '2753'
+ht-degree: 52%
 
 ---
 
@@ -222,7 +222,7 @@ XMP l’écriture différée met à jour la ressource d’origine chaque fois qu
 * Une version de la ressource est créée
 * [!UICONTROL Ressource de mise à jour de gestion des actifs numériques est exécuté par rapport à la ressource]
 
-Les résultats répertoriés consomment une grande quantité de ressources. Par conséquent, Adobe recommande la [désactivation de l’écriture différée XMP](https://helpx.adobe.com/fr/experience-manager/kb/disable-xmp-writeback.html), si cela n’est pas obligatoire.
+Les résultats répertoriés consomment une grande quantité de ressources. Par conséquent, Adobe recommande de désactiver l’écriture différée XMP si elle n’est pas requise. Pour plus d’informations, voir [Écriture différée XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html?lang=fr).
 
 L’importation d’une grande quantité de métadonnées peut entraîner une activité d’écriture différée XMP gourmande en ressources si l’indicateur d’exécution de workflow est vérifié. Planifiez une importation de ce type quand le serveur est peu utilisé afin que les performances d’autres utilisateurs ne soient pas affectées.
 
@@ -242,7 +242,7 @@ Lors de la réplication des ressources vers un grand nombre d’instances de pub
 
 ## Recherche des index    {#search-indexes}
 
-Installer [les derniers Service Packs ;](/help/release-notes/release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. Voir [conseils sur l’optimisation des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) pour certaines optimisations d’index.
+Installer [les derniers Service Packs ;](/help/release-notes/release-notes.md) et les correctifs liés aux performances, car ils incluent souvent des mises à jour des index système. Voir [conseils sur l’optimisation des performances](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=en) pour certaines optimisations d’index.
 
 Créez des index personnalisés pour les demandes que vous exécutez régulièrement. Pour plus d’informations, consultez la [méthodologie pour l’analyse des requêtes lentes](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) et la [création d’index personnalisés](/help/sites-deploying/queries-and-indexing.md). Pour des informations complémentaires au sujet des meilleures pratiques de requête et d’index, consultez les [Meilleures pratiques pour les requêtes et l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 

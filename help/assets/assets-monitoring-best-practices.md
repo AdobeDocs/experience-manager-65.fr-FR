@@ -5,9 +5,9 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '1668'
+source-wordcount: '1670'
 ht-degree: 68%
 
 ---
@@ -116,8 +116,8 @@ Voici quelques paramètres de référence que vous pouvez surveiller pour [!DNL 
 
 Agents de réplication
 
-* MBean : `com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>”`
-* URL : `/system/console/jmx/com.adobe.granite.replication:type=agent,id=”<AGENT_NAME>"`
+* MBean : `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
+* URL : `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * Instances : un auteur et toutes les instances de publication (pour les agents de purge)
 * Seuil d’alarme : lorsque `QueueBlocked``true` a la valeur ou lorsque la valeur de `QueueNumEntries` est supérieure de 150 % à la valeur de référence.
 
@@ -193,7 +193,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 Dans le processus de surveillance, si vous rencontrez des problèmes, voici quelques tâches de dépannage que vous pouvez effectuer pour résoudre des problèmes courants avec [!DNL Experience Manager] déploiements :
 
 * Si vous utilisez TarMK, exécutez souvent la compression Tar. Pour plus d’informations, voir [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Vérifier `OutOfMemoryError` journaux. Pour plus d’informations, reportez-vous à la section [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+* Vérifier `OutOfMemoryError` journaux. Pour plus d’informations, voir [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr).
 
 * Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. Pour connaître les bonnes pratiques relatives à l’optimisation des performances des requêtes et de l’indexation, voir [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilisez la console d’administration des workflow pour vérifier que vos workflow se comportent comme prévu. Si possible, regroupez plusieurs workflow en un seul.

@@ -2,10 +2,10 @@
 title: Notes de mise à jour générales de [!DNL Adobe Experience Manager] 6,5
 description: '"[!DNL Adobe Experience Manager] 6.5 Notes décrivant les informations de mise à jour, les nouveautés, la procédure d’installation et les listes de modifications détaillées."'
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
-source-wordcount: '4696'
-ht-degree: 57%
+source-wordcount: '4697'
+ht-degree: 42%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 57%
 | Version | 6.5 |
 | Type | Version majeure |
 | Date de disponibilité générale | 8 avril 2019 |
-| Mises à jour recommandées | Voir [AEM mises à jour récentes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr). |
+| Mises à jour recommandées | Voir [AEM mises à jour récentes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en). |
 
 ### Trivia {#trivia}
 
-Cycle de publication de cette version de [!DNL Adobe Experience Manager] a commencé le 4 avril 2018, a subi 23 itérations d’assurance qualité et de correction de bogues et s’est terminée le 28 mars 2019. Au total, 1 345 problèmes d’utilisateurs (y compris des améliorations et des nouvelles fonctionnalités) ont été corrigés dans cette version.
+Cycle de publication de cette version de [!DNL Adobe Experience Manager] a commencé le 4 avril 2018, a subi 23 itérations d’assurance qualité et de correction de bogues et s’est terminée le 28 mars 2019. Au total, 1 345 problèmes liés aux clients (y compris améliorations et nouvelles fonctionnalités) ont été corrigés dans cette version.
 
 [!DNL Adobe Experience Manager] La version 6.5 est disponible depuis le 8 avril 2019.
 
@@ -30,51 +30,51 @@ Cycle de publication de cette version de [!DNL Adobe Experience Manager] a comme
 
 ## Nouveautés {#what-s-new}
 
-[!DNL Adobe Experience Manager] La version 6.5 est une version de mise à niveau vers la version [!DNL Adobe Experience Manager] Base de code 6.4. Cette version comporte de nouvelles fonctionnalités améliorées, des correctifs clés de bugs signalés par des clients, des améliorations prioritaires demandées par les clients et des correctifs de bugs généraux destinés à améliorer la stabilité du produit. Elle comprend également [!DNL Adobe Experience Manager] 6.4 Versions du Service Pack jusqu’à SP4.
+[!DNL Adobe Experience Manager] La version 6.5 est une version de mise à niveau vers la version [!DNL Adobe Experience Manager] Base de code 6.4. Il fournit des fonctionnalités nouvelles et améliorées, des correctifs client clés, des améliorations client prioritaires et des correctifs de bogues généraux orientés vers la stabilisation du produit. Elle comprend également [!DNL Adobe Experience Manager] 6.4 Versions du Service Pack jusqu’à SP4.
 
 La liste ci-dessous présente un aperçu, tandis que les pages suivantes répertorient tous les détails.
 
 ### [!DNL Experience Manager Foundation] {#experience-manager-foundation}
 
-La plateforme de [!DNL Adobe Experience Manager] Version 6.5 reposant sur les versions mises à jour de la structure OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java : Apache Jackrabbit Oak 1.10.2.
+La plateforme de [!DNL Adobe Experience Manager] 6.5 s’appuie sur les versions mises à jour de la structure OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java™ : Apache Jackrabbit Oak 1.10.2.
 
 Le démarrage rapide (Quickstart) utilise le moteur de servlet Eclipse Jetty 9.4.15.
 
-#### Prise en charge de Java  {#java-support}
+#### Prise en charge de Java™  {#java-support}
 
-* Nouvelle prise en charge de Java 11, ainsi que de Java 8 déjà pris en charge.
+* Nouvelle prise en charge de Java™ 11 et de Java™ 8 déjà pris en charge.
 * Pour des performances optimales, remplacez les valeurs par défaut du CPG par d’autres valeurs. Pour plus d’informations, voir [installation et mise à jour](/help/sites-deploying/custom-standalone-install.md) .
-* Les mises à jour de maintenance Java 11 et Java 8 sont distribuées par Adobe pour que les clients puissent les utiliser dans les projets liés aux AEM, lorsqu’elles ne sont pas disponibles publiquement dans Oracle.
+* Les mises à jour de maintenance Java™ 11 et Java™ 8 sont distribuées par Adobe pour permettre l’utilisation des clients dans les projets liés aux AEM, lorsqu’elles ne sont pas disponibles publiquement dans Oracle.
 
-#### Développement Java {#java-development}
+#### Développement de Java™ {#java-development}
 
-* Il y a maintenant [deux versions d’Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), une version recommandée avec des interfaces publiques qui ne sont pas marquées pour obsolescence, ainsi qu’une version qui inclut des interfaces marquées pour obsolescence.
+* Il y a maintenant [deux versions d’Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies), une version recommandée avec des interfaces publiques qui ne sont pas marquées pour obsolescence et une version qui inclut des interfaces marquées pour obsolescence.
 
 #### Interface utilisateur {#user-interface}
 
 Diverses améliorations ont été apportées à l’interface utilisateur pour la rendre plus productive et conviviale.
 
 * Nouvelle interface utilisateur de gestion des autorisations pour les utilisateurs et les groupes.
-* Les vues de colonnes ne chargent plus maintenant que les entrées visibles à l’écran et en chargent davantage lorsque l’utilisateur commence à faire défiler l’écran. Les vues de liste et de carte le faisaient déjà depuis la version 6.0 (amélioration dans la version 6.4).
+* Les vues de colonne ne chargent désormais que les entrées visibles à l’écran et ne chargent plus que lorsque l’utilisateur commence à faire défiler l’écran. Les vues de liste et de carte le faisaient déjà depuis la version 6.0 (amélioration dans la version 6.4).
 * Les vues de colonne incluent désormais l’état du workflow pour les pages/ressources, le cas échéant.
 * Le [Tout sélectionner](/help/sites-authoring/basic-handling.md#select-all) est un moyen rapide d’exécuter une action avec toutes les pages/ressources du même dossier.
 * L’action [Sélectionner tout](/help/sites-authoring/basic-handling.md#select-all) tente d’exécuter l’action sur toutes les pages/ressources, pas seulement sur ce qui a été chargé. Une boîte de dialogue d’avertissement s’affiche si l’action n’est pas mise à niveau pour gérer les actions en bloc.
 
 >[!CAUTION]
 >
->Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.5 comprend l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. Notez que l’interface utilisateur classique reste complètement prise en charge alors qu’elle est en passe de devenir obsolète. [En savoir plus](/help/sites-deploying/ui-recommendations.md).
+>Adobe ne prévoit pas d’apporter d’autres améliorations à l’interface utilisateur classique. AEM 6.5 comprend l’interface utilisateur classique, et les clients effectuant une mise à niveau à partir de versions antérieures peuvent continuer à l’utiliser en l’état. L’interface utilisateur classique reste entièrement prise en charge tout en étant obsolète. [En savoir plus](/help/sites-deploying/ui-recommendations.md).
 
 #### Recherche et indexation {#indexing-and-search}
 
-* La recherche dans Oak prend désormais en charge les facettes dynamiques. Par exemple, le rail de filtrage dans la recherche de ressources affiche la quantité estimée de résultats.
+* La recherche dans Oak prend désormais en charge les facettes dynamiques. Par exemple, le rail de filtre dans la recherche de ressources affiche le nombre estimé de résultats.
 * QueryBuilder a été étendu pour fournir des résultats avec des facettes dynamiques.
 
 #### Mise à niveau {#upgrade}
 
-* La mise à niveau directe sur place vers AEM 6.5 est prise en charge pour les clients exécutant AEM 6.2, 6.3 et 6.4. Les clients utilisant les versions 5.x ou 6.0/6.1 qui souhaitent utiliser une mise à niveau sur place doivent tout d’abord passer à la version 6.4, puis à la version 6.5, ou à la mise à niveau via le transfert du contenu entre les instances directement vers AEM 6.5.
+* La mise à niveau statique directe vers AEM 6.5 est prise en charge pour les clients exécutant AEM 6.2, 6.3 et 6.4. Les clients utilisant les versions 5.x ou 6.0/6.1 qui souhaitent utiliser la mise à niveau statique doivent d’abord effectuer la mise à niveau vers la version 6.4. Ensuite, effectuez une mise à niveau vers la version 6.5 ou effectuez une mise à niveau par le biais du transfert du contenu entre les instances directement vers AEM 6.5.
 * La procédure de mise à niveau reste en grande partie la même dans la version 6.5.
-* Nous continuons à prendre en charge la compatibilité ascendante, l’évaluation de la complexité des mises à niveau et les fonctions de continuité mises à niveau ajoutées dans la version 6.4. Des mises à jour spécifiques à la version ont été apportées à ces domaines, le cas échéant.
-* L’assemblage du détecteur de modèle a été simplifié et un seul package évaluera les mises à niveau vers la version 6.5 pour les versions sources disponibles.
+* Nous continuons à prendre en charge les fonctionnalités de compatibilité descendante , d’ évaluation de la complexité de la mise à niveau et de mises à niveau possibles introduites dans la version 6.4. Des mises à jour spécifiques aux versions ont été apportées à ces domaines lorsque cela s’avérait nécessaire.
+* L’emballage du détecteur de motifs est désormais simplifié. Il existe un package qui évalue les mises à niveau vers la version 6.5 pour les versions source disponibles.
 * Pour plus d’informations sur la procédure de mise à niveau, voir [documentation de mise à niveau](/help/sites-deploying/upgrade.md).
 
 #### Projets et workflows {#projects-and-workflows}
@@ -83,12 +83,12 @@ Diverses améliorations ont été apportées à l’interface utilisateur pour l
 
 #### Référentiel {#repository}
 
-* La base d’Adobe Experience Manager 6.5 repose sur les versions mises à jour de la structure OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java : Apache Jackrabbit Oak 1.10.2.
+* La base d’Adobe Experience Manager 6.5 repose sur les versions mises à jour de la structure OSGi (Apache Sling et Apache Felix) et du référentiel de contenu Java™ : Apache Jackrabbit Oak 1.10.2.
 * Pour un aperçu des problèmes résolus, voir [Apache Jackrabbit Oak Jira v.1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v.1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) et [Apache Jackrabbit Oak Jira v.1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
->La nouvelle version d’Oak Segment Tar présente depuis AEM 6.3 nécessite une migration de référentiel. Cette étape est obligatoire si vous effectuez une mise à niveau à partir d’une ancienne version de TarMK ou si vous souhaitez remplacer le nouveau Segment Tar par un autre type de persistance. Pour en savoir plus sur les avantages du nouveau Segment Tar, voir [FAQ sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>La nouvelle version de Oak Segment Tar, présente depuis AEM 6.3, nécessite une migration du référentiel. Cette étape est obligatoire si vous effectuez une mise à niveau à partir d’une ancienne version de TarMK ou si vous souhaitez remplacer le nouveau Segment Tar par un autre type de persistance. Pour en savoir plus sur les avantages du nouveau Segment Tar, voir [FAQ sur la migration vers Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 #### OSGI {#osgi}
 
@@ -96,7 +96,7 @@ Diverses améliorations ont été apportées à l’interface utilisateur pour l
 
 #### Sécurité {#security}
 
-* Ajout de l’expiration du mot de passe pour l’utilisateur admin.
+* Ajout de l’expiration du mot de passe pour l’utilisateur administrateur.
 
 #### Serveur web {#web-server}
 
@@ -115,17 +115,17 @@ Fourni d’abord dans le cadre d’AEM 6.4 SP2, la prise en charge de SPA dans
 
 #### Gestion de contenu découplé {#headless-content-management}
 
-AEM a la capacité de servir le contenu dans divers formats et à différents niveaux de la pile. Certains existent depuis 2008 avec les [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) et les [Servlets POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([exportateur de modèles Sling](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)) a été ajouté dans la version 6.3 et est la méthode utilisée par AEM SJ SDK pour hydrater les applications monopages. L’[API HTTP pour Assets](/help/assets/mac-api-assets.md) est une API CRUD, étendue pour AEM 6.5.
+AEM peut diffuser le contenu dans divers formats et à différents niveaux de la pile. Certains existent depuis 2008 avec les [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) et les [Servlets POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([exportateur de modèles Sling](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en)) a été ajouté dans la version 6.3 et est la méthode utilisée par AEM SJ SDK pour hydrater les applications monopages. L’[API HTTP pour Assets](/help/assets/mac-api-assets.md) est une API CRUD, étendue pour AEM 6.5.
 
 Nouvelles fonctionnalités de l’API HTTP :
 
-* Ajout de la [prise en charge des fragments de contenu à l’API HTTP pour Assets](/help/assets/assets-api-content-fragments.md) pour créer, mettre à jour, lire et supprimer des fragments.
-* Exposition des listes de fragments de contenu via Content Services avec le [composant principal de la liste de fragments de contenu](https://opensource.adobe.com/aem-core-wcm-components/library/content-fragment-list.html).
-* [Bibliothèque de composants de principaux](https://opensource.adobe.com/aem-core-wcm-components/library.html) indiquant la sortie JSON par défaut de Content Services pour chaque composant
+* Ajout [Prise en charge des fragments de contenu dans l’API HTTP pour Assets](/help/assets/assets-api-content-fragments.md) pour créer, mettre à jour, lire et supprimer des fragments.
+* Exposition des listes de fragments de contenu via Content Services avec le [composant principal de la liste de fragments de contenu](https://www.aemcomponents.dev).
+* [Bibliothèque de composants de principaux](https://www.aemcomponents.dev) indiquant la sortie JSON par défaut de Content Services pour chaque composant
 
 #### Module complémentaire Screens {#screens-add-on}
 
-Concevez, diffusez et optimisez efficacement les expériences sur tous les écrans digitaux, depuis les kiosques interactifs jusqu’à la signalisation digitales.
+Concevez, diffusez et optimisez efficacement des expériences sur tous les affichages numériques, depuis les kiosques interactifs jusqu’à la signalétique numérique.
 
 * Unifiez les expériences et les contenus digitaux et en magasin avec une meilleure réutilisation des contenus
 * Création simplifiée et workflows d’approbation/publication rationalisés avec prise en charge de Launches
@@ -137,13 +137,13 @@ Concevez, diffusez et optimisez efficacement les expériences sur tous les écra
 * Effectuez des personnalisations par emplacement ou configuration du contenu déclenché par les données en utilisant des espaces réservés dynamiques.
 * Informations unifiées grâce à l’intégration d’Adobe Analytics dans le lecteur AEM Screens
 
-Pour plus d’informations sur les modifications apportées à AEM Screens, voir les Notes de mise à jour dans la section [Guide de l’utilisateur d’AEM Screens](https://docs.adobe.com/content/help/fr/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Pour plus d’informations sur les modifications apportées à AEM Screens, voir les Notes de mise à jour dans la section [Guide de l’utilisateur d’AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr).
 
 #### Développement de composants et de modèles {#component-amp-template-development}
 
-* Maven Project Archetype 18+ pour les nouveaux projets, accédez à [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases).
-* Application monopage Maven Project Archetype 1.0.6+ pour les nouveaux projets, accédez à [Github pour les notes de mise à jour](https://github.com/adobe/aem-spa-project-archetype/releases).
-* HTL version 1.4, accédez à [Github pour les notes de mise à jour](https://github.com/adobe/htl-spec/releases/tag/1.4).
+* Maven Project Archetype 18+ pour les nouveaux projets, voir [GitHub pour les notes de mise à jour](https://github.com/adobe/aem-project-archetype/releases).
+* Archétype de projet Maven 1.0.6 pour application d’une seule page pour les nouveaux projets, voir [GitHub pour les notes de mise à jour](https://github.com/adobe/aem-spa-project-archetype/releases).
+* HTL version 1.4, voir [GitHub pour les notes de mise à jour](https://github.com/adobe/htl-spec/releases/tag/1.4).
 
    * Opérateur &quot;in&quot; pour les chaînes, les tableaux et les objets :
 
@@ -169,15 +169,15 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, voir
 
    * Prise en charge des nombres négatifs
 
-* Core Components 2.3.2+, accédez à [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases).
-* Système de grille pour le conteneur de mises en page, voir [Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
+* Composants principaux 2.3.2+, voir [GitHub pour les notes de mise à jour](https://github.com/adobe/aem-core-wcm-components/releases).
+* Système de grille pour le conteneur de mises en page, voir [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid).
 * Gestionnaire de bibliothèques clientes : Le Compilateur de fermeture Google a été défini par défaut sur la minification des bibliothèques clientes JavaScript (l’ancienne valeur par défaut était Yahoo YUI) et le Compilateur de fermeture Google a été mis à jour vers la version v20190121.
 * Éditeur de modèles et stratégies
 
    * Création et modification de modèles pour les applications monopages qui utilisent le SDK JS (également appelé éditeur de SPA)
 
-* Pour le site de référence We.Retail 4.0, accédez à [Github pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
-* Kit d’outils pour mettre à niveau des sites existants afin d’exploiter les dernières fonctionnalités d’éditeur, voir [Référentiel Github](https://github.com/adobe/aem-modernize-tools)
+* Site de référence We.Retail 4.0, voir [GitHub pour les notes de mise à jour](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases).
+* Kit d’outils pour mettre à niveau des sites existants afin d’utiliser les dernières fonctionnalités d’éditeur, voir [Référentiel GitHub](https://github.com/adobe/aem-modernize-tools)
 
 >[!CAUTION]
 >
@@ -186,40 +186,40 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, voir
 #### Administration de sites {#site-administration}
 
 * Le rail [Référence](/help/sites-authoring/author-environment-tools.md#references) comporte une nouvelle section permettant de répertorier les liens internes pointant vers la page sélectionnée. Cela s’avère utile lorsque vous envisagez de supprimer une page hors ligne ou de la supprimer, pour voir quelles pages doivent être ajustées avant de les mettre hors ligne.
-* La [vue de liste](/help/sites-authoring/basic-handling.md#list-view) comporte une nouvelle colonne de workflow indiquant le statut de la page dans un workflow.
+* Le [mode liste](/help/sites-authoring/basic-handling.md#list-view) comporte une nouvelle colonne de workflow qui affiche l’état de la page dans un workflow.
 * Dans les [propriétés de la page](/help/sites-authoring/editing-page-properties.md), il est désormais possible de parcourir les ressources existantes en affectant une vignette à la page (onglet Vignette).
 
 #### Éditeur de page {#page-editor}
 
-* Autorisez l’édition en contexte et la composition d’expériences d’application monopage avec des composants côté client React et Angular utilisant le SDK JS (également appelé éditeur de SPA)
+* Autorisation de la modification contextuelle et de la composition des expériences d’application d’une seule page créées avec React et des composants côté client Angular qui utilisent le SDK JS (également appelé Éditeur SPA)
 * Le mode Génération de modèles automatique s’affiche uniquement si la page possède une page de modèle automatique configurée.
 
 #### Fragments de contenu et éditeur {#content-fragments-amp-editor}
 
-* Nouveau rail [Annotations](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) dans l’éditeur de fragment de contenu permettant de faire des commentaires généraux et d’afficher des commentaires dans le texte (à afficher également dans le rail de la chronologie)
+* Nouveau [Annotations](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) rail dans l’éditeur de fragments de contenu pour faire des commentaires généraux et voir les commentaires effectués dans le texte (s’afficher également dans le rail de la chronologie) ;
 * Possibilité de définir le type de contenu par défaut d’un élément de texte multiligne dans une [Modèle de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) au texte simple, au texte enrichi ou au balisage
 * Ajoutez des [commentaire/annotations](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) en sélectionnant le texte dans l’éditeur de texte enrichi (vue plein écran)
 * [Comparaison des différentes versions](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) d’un fragment de contenu côte à côte via le rail Référence
 * Le rapport sur le téléchargement des ressources affiche désormais des fragments de contenu en conséquence
 * Ajoutez [la prise en charge des fragments de contenu à l’API HTTP Assets](/help/assets/assets-api-content-fragments.md) par l’intermédiaire de /api.json. Il existe des API pour créer, mettre à jour, lire et supprimer des fragments de contenu.
 
-#### Présentation {#experience-fragments}
+#### Fragments d’expérience {#experience-fragments}
 
-* Amélioration de l’indexation des [fragments d’expérience](/help/sites-authoring/experience-fragments.md) afin que leur contenu soit trouvé dans la recherche des pages où ils sont utilisés.
-* L’option [Exporter vers la cible](/help/sites-administering/experience-fragments-target.md) permet désormais d’envoyer le fragment d’expérience sous forme de fichier JSON (HTML par défaut), ou les deux.
+* Amélioration de l’indexation des [fragments d’expérience](/help/sites-authoring/experience-fragments.md) afin que leur contenu soit trouvé dans la recherche des pages où ils sont utilisés..
+* Le [Exporter vers Target](/help/sites-administering/experience-fragments-target.md) vous permet désormais d’envoyer le fragment d’expérience au format JSON (la valeur par défaut est HTML) ou les deux.
 
 #### Traduction {#translation}
 
-* Simplifiez la création de projets de traduction à l’aide de Project Masters
-* Simplifiez l’exécution des projets de traduction en définissant les tâches de traduction sur l’état approuvé par défaut.
-* Autorisez la mise à jour des pages traduites avec des modifications dans la mémoire de traduction tierce
-* Autorisez l’exportation de travaux de traduction au format JSON
-* Mise à jour de l’intégration de traduction Microsoft pour utiliser l’API V3
+* Simplifiez la création de projets de traduction à l’aide de Project Masters.
+* Simplifiez l’exécution des projets de traduction en définissant par défaut les tâches de traduction sur l’état approuvé.
+* Autorisez la mise à jour des pages traduites avec des modifications dans la mémoire de traduction tierce.
+* Autorisez l’exportation de travaux de traduction au format JSON.
+* Mettez à jour l’intégration de traduction Microsoft® pour utiliser l’API V3.
 
 #### Gestion multisite (MSM, Multi-Site Management) {#multi-site-management-msm}
 
-* Pour les configurations de déploiement qui utilisent PushOnModify, une meilleure gestion de l’opération de déplacement de page pour éviter des incohérences d’état
-* La création d’une nouvelle page dans la structure de livecopy créera désormais par défaut une page autonome.
+* Pour les configurations de déploiement qui utilisent PushOnModify, une meilleure gestion de l’opération de déplacement de page afin d’éviter un état incohérent.
+* La création d’une page dans la structure de Live Copy crée une page autonome par défaut.
 * Utilisation des fonctionnalités MSM dans les applications d’une seule page qui utilisent le SDK JS (également appelé Éditeur SPA)
 
 #### Lancements {#launches}
@@ -242,18 +242,18 @@ Pour plus d’informations sur les modifications apportées à AEM Screens, voir
 >* Les `at.js. 1.x` et `at.js 2.x` sont pris en charge si vous utilisez l’exportation de fragments d’expérience vers Target et que vous exécutez des activités dans la console de Target.
 
 
-* L’intégration Adobe Target peut désormais utiliser l’API Target Standard. Les versions précédentes d’AEM utilisent l’API HTTP Target Classic, désormais obsolète.
-* Adobe Target `mbox.js` La version 63 est incluse. Adobe recommande vivement de passer de la mise en oeuvre à `at.js` v1.x.
-* `at.js` La version 1.5.0 est désormais incluse. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) à configurer `at.js` v1.x sur le site.
+* L’intégration d’Adobe Target utilise désormais l’API Target Standard. Les versions précédentes d’AEM utilisent l’API HTTP Target Classic, désormais obsolète.
+* Adobe Target `mbox.js` La version 63 est incluse. Adobe recommande vivement de passer de l’implémentation à `at.js` v1.x.
+* `at.js` La version 1.5.0 est désormais incluse. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) à configurer `at.js` v1.x sur le site.
 
 #### AEM et Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 est inclus. Adobe recommande de passer de la mise en oeuvre à `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 est inclus. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://www.adobe.com/experience-platform/launch.html) pour provisionner AppMeasurement.js dans le site.
+* `AppMeasurement.js` v1.8.0 est inclus. Adobe recommande d’utiliser [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) pour provisionner AppMeasurement.js dans le site.
 
 #### AEM et commerce {#aem-commerce}
 
-Les améliorations apportées à Commerce Integration Framework suivent un cycle de publication plus rapide depuis AEM 6.4. [En savoir plus ici](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/docs.html).
+Les améliorations apportées à Commerce Integration Framework suivent un cycle de publication plus rapide depuis AEM 6.4. [En savoir plus ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 
 #### Module complémentaire Communities {#communities-add-on}
 
@@ -266,7 +266,7 @@ AEM Communities permet désormais aux utilisateurs enregistrés de baliser (ment
 
 ![Prise en charge des mentions @](/help/release-notes/assets/at-mentions.png)
 
-Les utilisateurs de la communauté n’ont pas besoin de rechercher leur prénom, leur nom ou leur nom d’utilisateur pour voir si quelqu’un les a contactés ou requiert leur attention. De plus, les auteurs de CGU peuvent demander une réponse à des utilisateurs enregistrés spécifiques pouvant résoudre le problème et ajouter des entrées.
+Les utilisateurs de la communauté n’ont pas besoin de rechercher leur prénom, nom ou nom d’utilisateur pour savoir si quelqu’un leur a tendu la main ou a besoin de leur attention. De plus, les auteurs de CGU peuvent demander une réponse à des utilisateurs enregistrés spécifiques pouvant résoudre le problème et ajouter des entrées.
 
 Les administrateurs de la communauté doivent **Activer la mention** sur les composants de communauté pour permettre aux utilisateurs enregistrés d’utiliser la fonctionnalité sur ces composants.
 
@@ -282,7 +282,7 @@ Filtres personnalisés dans la modération en bloc
 
 [Filtres personnalisés](/help/communities/moderation.md#custom-filters) peut désormais être développé et ajouté à l’interface utilisateur de modération en bloc.
 
-Un [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) illustrant le filtrage par balises est disponible dans [Github](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). Ce projet peut être utilisé comme base pour développer des filtres personnalisés analogues.
+A [exemple de projet](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter) qui indique que le filtrage par balises est disponible dans [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/master/aem-communities-moderation-filter). Ce projet peut être utilisé comme base pour développer des filtres personnalisés analogues.
 
 ![Filtres personnalisés](/help/release-notes/assets/custom-tag-filter.png)
 
@@ -416,12 +416,12 @@ Les fragments de contenu et les partages de lien sont désormais inclus dans le 
 
 ### [!DNL Adobe Experience Manager Forms] {#experience-manager-forms}
 
-AEM Forms 6.5 comporte plusieurs nouvelles fonctionnalités et améliorations. En voici un aperçu :
+AEM version 6.5 de Forms comporte plusieurs nouvelles fonctionnalités et améliorations. En voici un aperçu :
 
 * Rapports de transaction pour suivre le nombre de formulaires envoyés, de documents traités et de documents générés
 * Amélioration de la convivialité des communications interactives
 * Signatures numériques dans le cloud dans des formulaires adaptatifs
-* Intégrez des formulaires adaptatifs et des communications interactives dans les applications monopages (SPA) d’AEM Sites.
+* Incorporez des formulaires adaptatifs et des communications interactives dans une application d’une seule page AEM Sites (SPA).
 * Prise en charge des variables dans les workflows AEM
 * Prise en charge du modèle d’affichage des données dans les communications interactives
 * Tri des formulaires adaptatifs et des tables de communication interactive
@@ -433,11 +433,11 @@ Voir [Résumé des nouvelles fonctionnalités et améliorations d’AEM 6.5 Form
 
 Vous pouvez intégrer Livefyre à votre instance AEM 6.5. Voir [Comment intégrer Livefyre à AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/livefyre.html).
 
-### Exploitation du développement axé sur les clients {#leverage-customer-focused-development}
+### Utilisation du développement axé sur le client {#leverage-customer-focused-development}
 
-Adobe applique un modèle de développement axé sur les utilisateurs afin que ces derniers puissent contribuer à toutes les étapes du processus de développement, au cours des phases de spécification, de développement et de tests. Merci à tous les utilisateurs et partenaires qui contribuent à ce processus.
+Adobe utilise un modèle de développement axé sur les clients qui permet aux clients de contribuer à toutes les étapes du processus de développement, pendant la spécification, le développement et les tests. Nos remerciements vont à tous les clients et partenaires contribuant à ce processus.
 
-Adobe a mis en place les procédures et processus nécessaires à la collecte, à la hiérarchisation et au suivi de la résolution des bogues signalés par les utilisateurs et du développement des demandes d’amélioration. Le [Portail d’assistance pour les Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) est intégré au système de suivi des défauts et des améliorations de l’Adobe. Si possible, les questions des clients sont identifiées et résolues par l’équipe du service clientèle. Lorsqu’elles sont transmises au service R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. La priorité est donnée au développement à la prise en charge payante, aux problèmes de garantie et aux améliorations payantes du client.
+Adobe a mis en place les procédures et les processus pour permettre la collecte, la hiérarchisation et le suivi de la résolution des bogues axés sur le client et le développement de demandes d’amélioration. Le [Portail d’assistance pour les Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) est intégré au système de suivi des défauts et des améliorations de l’Adobe. Si possible, les questions des clients sont identifiées et résolues par l’équipe du service clientèle. Lorsqu’elles sont transmises au service R&amp;D, toutes les informations client sont capturées et utilisées à des fins de hiérarchisation et de création de rapports. La priorité est donnée au développement à la prise en charge payante, aux problèmes de garantie et aux améliorations payantes du client.
 
 Ce processus de hiérarchisation a généré plus de 750 modifications axées sur le client, corrigées dans AEM 6.5.
 
@@ -464,14 +464,14 @@ Ce processus de hiérarchisation a généré plus de 750 modifications axées su
 
 * Lecteurs AEM Screens pour différentes plateformes cibles ([téléchargement](https://download.macromedia.com/screens/))
 
-* Modèles linguistiques pour le contenu dynamique. La version anglaise est préinstallée ; d’autres langues peuvent être téléchargées :
+* Modèles linguistiques pour le contenu dynamique. L’anglais est préinstallé ; d’autres langues peuvent être téléchargées.
 
    * [Allemand](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
    * [Espagnol](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
    * [Italien](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
    * [Français](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* AEM Modernize Tools Suite, par exemple. Outil de conversion de dialogue. ([Projet GitHub](https://github.com/adobe/aem-modernize-tools) )
+* AEM Moderniser la suite d’outils, par exemple, l’outil de conversion de boîte de dialogue. ([Projet GitHub](https://github.com/adobe/aem-modernize-tools) )
 
 **Ressources**
 
@@ -512,13 +512,13 @@ Recherchez la matrice complète des plateformes prises en charge, y compris le n
 
 >[!NOTE]
 >
->Oracle est passé à un modèle de prise en charge à long terme (LTS) pour les produits Oracle Java SE. Java 9 et 10 sont des versions non-LTS par Oracle. Voir [Feuille de route du support Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe prend en charge les versions LTS de Java pour exécuter uniquement les AEM en production. Java 11 est la version recommandée avec AEM 6.5.
+>Oracle est passé à un modèle de prise en charge à long terme (LTS) pour les produits Oracle Java™ SE. Java™ 9 et 10 sont des versions non-LTS par Oracle. Voir [Feuille de route du support Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html). Adobe prend en charge les versions LTS de Java™ pour exécuter uniquement les AEM en production. Java™ 11 est la version recommandée avec AEM 6.5.
 
 ## Fonctionnalités obsolètes et supprimées {#deprecated-and-removed-features}
 
-Adobe évalue constamment les fonctionnalités du produit et prévoit au fil du temps de les remplacer par des versions plus puissantes ou de réimplémenter certains composants afin de mieux accommoder les futures attentes ou extensions.
+Adobe évalue constamment les fonctionnalités du produit et prévoit au fil du temps de remplacer les fonctionnalités par des versions plus puissantes, ou décide de réimplémenter certaines parties pour mieux se préparer aux attentes ou extensions futures.
 
-Pour [!DNL Adobe Experience Manager] 6.5, [lire la liste des fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md). Cette page contient également une annonce préalable des modifications qui seront apportées dans un avenir proche et un avis important pour les clients qui mettent à jour des versions antérieures.
+Pour [!DNL Adobe Experience Manager] 6.5, [lire la liste des fonctionnalités obsolètes et supprimées](/help/release-notes/deprecated-removed-features.md). La page contient également une pré-annonce des modifications à venir et un avis important à l’intention des clients qui mettent à jour des versions antérieures.
 
 ## Problèmes connus {#known-issues}
 
@@ -559,25 +559,25 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 ### Assets {#assets}
 
-* **Rechercher :** La recherche ne renvoie aucun résultat si la chaîne de recherche contient des espaces au début ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
+* **Rechercher :** La recherche ne renvoie aucun résultat si la chaîne de recherche contient des espaces ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Schéma de métadonnées des dossiers** : après l’ajout d’un bouton de choix, les champs ID et Valeur ne sont pas restitués comme prévu et la fonctionnalité de suppression ne fonctionne pas. (CQ-4261144)
 * Lors de l’attribution d’un nouveau nom à une ressource, il n’est pas possible d’utiliser un espace dans le nom. (CQ-4266403)
 
 ### Forms {#forms}
 
-* Lorsque AEM Forms est installé sur un système d’exploitation Linux, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721)
-* (AEM Forms sur WebSphere uniquement) L’option **Forms Workflow**> **Recherche de tâche** ne renvoie aucun résultat si vous recherchez un **Administrateur** avec un **Nom d’utilisateur** comme critère de recherche. (CQ-4266457)
+* Lorsque AEM Forms est installé sur un système d’exploitation Linux®, la signature numérique avec le module de sécurité matérielle ne fonctionne pas. (CQ-4266721)
+* (AEM Forms sur WebSphere® uniquement) La variable **Forms Workflow** > **Recherche de tâches** ne renvoie aucun résultat si vous recherchez une **Administrateur** avec **Nom d’utilisateur** comme critère de recherche. (CQ-4266457)
 
 * AEM Forms ne parvient pas à convertir les fichiers TIF et de TIFF avec compression de JPEG en documents PDF. (CQ-4265972)
 * Les options **Analyseur de ressources AEM Forms** et **Migration de la correspondance vers la communication interactive** ne fonctionnent pas sur la page **Migration d’AEM Forms**. (CQ-4266572)
 
-* (JBoss 7 uniquement) Lorsque vous effectuez une mise à niveau d’une version précédente vers AEM 6.5 Forms et que la version précédente comporte des processus (.lca) qui ont créé et utilisé une copie du processus d’envoi ou de rendu par défaut, HTML5 Forms utilisant ces processus (.lca) ne parvient pas à effectuer les actions requises. (CQ-4243928)
+* (JBoss® 7 uniquement) Lorsque vous effectuez une mise à niveau d’une version précédente vers AEM 6.5 Forms et que la version précédente comporte des processus (.lca) qui ont créé et utilisé une copie du processus d’envoi ou de rendu par défaut, HTML5 Forms utilisant ces processus (.lca) ne parvient pas à effectuer les actions requises. (CQ-4243928)
 * Dans une version adaptative, lorsqu’un service de modèle de données de formulaire est appelé à partir de l’éditeur de règle pour mettre à jour de manière dynamique les valeurs du composant de choix d’image, les valeurs du composant de choix d’image ne sont pas mises à jour. (CQ-4254754)
-* Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits de [Package d’exécution redistribuable Visual C++ 2012](https://support.microsoft.com/en-in/help/2977003/the-latest-supported-visual-c-downloads) et [Packages d’exécution redistribuables Visual C++ 2013](https://support.microsoft.com/en-in/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668)
+* Le programme d’installation d’AEM Forms Designer nécessite la version 32 bits de [Package d’exécution redistribuable Visual C++ 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) et [Packages d’exécution redistribuables Visual C++ 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation. (CQ-4265668)
 
-* PDF Generator ne prend pas en charge l’authentification par carte intelligente.  Lorsqu’un administrateur active la stratégie de groupe `Interactive Logon: Require Smart card` sur un serveur Windows, tous les utilisateurs de PDF Generator existants sont invalidés.
+* PDF Generator ne prend pas en charge l’authentification par carte intelligente. Lorsqu’un administrateur active la stratégie de groupe `Interactive Logon: Require Smart card` sur un serveur Windows, tous les utilisateurs de PDF Generator existants sont invalidés.
 
-* Lorsqu’un formulaire adaptatif est configuré pour mettre à jour de manière dynamique les valeurs d’un composant et que l’instance de publication hébergeant le formulaire est accessible via le dispatcher, la fonctionnalité permettant de mettre à jour de manière dynamique les valeurs d’un champ cesse de fonctionner. Pour résoudre le problème, sur l’instance de publication, ouvrez CRXDE, accédez à `/libs/fd/af/runtime/clientlibs/guideChartReducer`et créez la propriété répertoriée ci-dessous.
+* Lorsqu’un formulaire adaptatif est configuré pour mettre à jour dynamiquement les valeurs d’un composant et que l’instance de publication qui héberge le formulaire est accessible via Dispatcher, la fonctionnalité de mise à jour dynamique des valeurs d’un champ cesse de fonctionner. Pour résoudre le problème, sur l’instance de publication, ouvrez CRXDE, accédez à `/libs/fd/af/runtime/clientlibs/guideChartReducer`et créez la propriété répertoriée ci-dessous.
 
    * Nom : allowProxy
    * Type : booléen
@@ -590,7 +590,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    La propriété permet aux bibliothèques clientes du dossier d’exécution d’accéder aux mandataires. (CQ-4268679)
 
 * Au démarrage d’AEM Forms, la variable `SAX Security Manager could not be setup` s’affiche.
-* Lorsque vous ouvrez un PDF protégé par AEM Forms Document Security sur un iOS Apple ou un iPadOS exécutant Adobe Acrobat Reader version 20.10.00.
+* Lorsque vous ouvrez un PDF protégé par AEM Forms Document Security sur Apple iOS ou iPadOS exécutant la version 20.10.00 de Adobe Acrobat Reader
 * Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Apple iOS 15.1 apporte un correctif pour le problème.
 
 ## Assistance technique et téléchargement du produit (sites à accès limité) {#product-download-and-support-restricted-sites}
@@ -601,4 +601,4 @@ Les sites suivants sont disponibles uniquement pour les clients . Si vous êtes 
 
 * Mises à jour de produit, correctifs et packages pour des fonctionnalités supplémentaires sur [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [Service clientèle via Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, voir [Nouvelle expérience du service clientèle Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [Service clientèle via Admin Console](https://adminconsole.adobe.com/). Pour plus d’informations, voir [Nouvelle expérience du service clientèle Adobe](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=fr).
