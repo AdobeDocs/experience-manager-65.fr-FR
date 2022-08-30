@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 6c6f67929b774492d8caa052598b8c33e9a41710
+source-git-commit: 74e3d4204166280e8624298098042b8cb222c034
 workflow-type: tm+mt
 source-wordcount: '6253'
 ht-degree: 49%
@@ -119,9 +119,9 @@ Voir [Installer le Feature Pack 18912 pour la migration de ressources en masse](
 
 1. Lorsque la connexion est établie, définissez les options suivantes. Les en-têtes avec un astérisque (*) sont obligatoires :
 
-   * **[!UICONTROL Société]** : nom du compte Dynamic Media. Vous disposez de plusieurs comptes Dynamic Media. Par exemple, vous pouvez avoir différentes sous-marques, divisions, environnements d’évaluation ou environnements de production.
+   * **[!UICONTROL Société]** : nom du compte Dynamic Media. Vous pouvez avoir un compte Dynamic Media dans Experience Manager. <!-- CQDOC-19579 and CQDOC-19612 -->
 
-   <!-- UNHIDE FEBRUARY 24, 2022 See also [Configure Dynamic Media company alias account](/help/assets/dm-alias-account.md). -->
+      Voir aussi [Configuration du compte d’alias de la société Dynamic Media](/help/assets/dm-alias-account.md).
 
    * **[!UICONTROL Chemin d’accès au dossier racine de l’entreprise]**
 
