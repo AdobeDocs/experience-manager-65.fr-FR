@@ -10,16 +10,16 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 6bc60122d2512a6f58c0204cd240a1b99a37ed93
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 59%
+ht-degree: 58%
 
 ---
 
 # Gestionnaire d’authentification SAML 2.0{#saml-authentication-handler}
 
-AEM est livré avec un gestionnaire d’authentification [SAML](http://saml.xml.org/saml-specifications). Ce gestionnaire fournit la prise en charge du protocole de requête d’authentification [SAML](http://saml.xml.org/saml-specifications) 2.0 (profil web-SSO) à l’aide de la liaison `HTTP POST`.
+AEM est livré avec un gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications). Ce gestionnaire fournit la prise en charge du protocole de requête d’authentification [SAML](https://saml.xml.org/saml-specifications) 2.0 (profil web-SSO) à l’aide de la liaison `HTTP POST`.
 
 Il prend en charge :
 
@@ -38,7 +38,7 @@ Ce gestionnaire stocke le message de réponse SAML chiffré dans le nœud utilis
 
 ## Configuration du gestionnaire d’authentification SAML 2.0 {#configuring-the-saml-authentication-handler}
 
-La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder à la configuration de gestionnaire d’authentification [SAML](http://saml.xml.org/saml-specifications) 2.0 appelée **Gestionnaire d’authentification SAML 2.0 Adobe Granite**. Les propriétés suivantes peuvent être définies.
+La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder à la configuration de gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications) 2.0 appelée **Gestionnaire d’authentification SAML 2.0 Adobe Granite**. Les propriétés suivantes peuvent être définies.
 
 >[!NOTE]
 >

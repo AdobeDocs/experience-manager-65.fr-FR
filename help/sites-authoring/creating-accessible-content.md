@@ -2,7 +2,7 @@
 title: Création de contenu accessible pour Adobe Experience Manager (conformité WCAG 2.1)
 description: Utilisez AEM pour rendre le contenu web accessible aux personnes en situation de handicap et utilisable par celles-ci.
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '13956'
 ht-degree: 99%
@@ -560,7 +560,7 @@ Veillez à ce que le texte soit suffisamment contrasté par rapport à son arri�
 >
 >* [Calculatrice Px vers Em – Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Conversion des tailles de polices : pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com : conversion PX/EM simplifiée](http://pxtoem.com)
+>* [PMtoEM.com : conversion PX/EM simplifiée](https://pxtoem.com)
 
 
 Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de webAIM](https://www.webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.
@@ -941,7 +941,7 @@ Ce critère de réussite a pour but d’aider une personne à identifier l’él
 
 Il doit être possible pour une personne d’identifier, parmi plusieurs, l’élément ayant reçu le focus au clavier. S’il n’apparaît à l’écran qu’un seul contrôle activable au clavier, le critère de réussite est satisfait, car la conception visuelle ne présente qu’un seul élément activable à l’aide du clavier.
 
-L’indication « mode de fonctionnement » du critère de réussite concerne la prise en compte des plates-formes qui n’affichent pas toujours un indicateur de focus. Ce critère de réussite s’applique, car, dans la plupart des cas, il n’existe qu’un seul mode de fonctionnement.
+Lorsque le critère de réussite indique &quot;mode de fonctionnement&quot;, il s’agit de tenir compte des plateformes qui peuvent ne pas toujours afficher un indicateur de focus. Ce critère de réussite s’applique, car, dans la plupart des cas, il n’existe qu’un seul mode de fonctionnement.
 
 #### Comment procéder – Focus visible (2.4.7) {#how-to-meet-focus-visible}
 
@@ -975,10 +975,10 @@ Ce critère de réussite garantit que ce texte et tout autre contenu linguistiqu
 Pour que ce critère de réussite soit satisfait, la langue par défaut d’une page web peut être identifiée à l’aide de l’attribut `lang` dans l’élément `<html>` en haut de la page. Par exemple :
 
 * Si une page est écrite en anglais, l’élément `<html>` doit être :
-   `<html lang = “en”>`
+   `<html lang = "en">`
 
 * En revanche, pour une page à restituer en espagnol, l’attribut doit être défini comme suit :
-   `<html lang = “es”>`
+   `<html lang = "es">`
 
 Dans AEM, la langue par défaut de la page est définie lors de la création de la page. Elle peut aussi être redéfinie en modifiant les [propriétés de la page](/help/sites-authoring/editing-page-properties.md).
 
@@ -1010,7 +1010,7 @@ Si une page applique ce critère de réussite, alors :
 
 #### Comment procéder – Langue d’un passage (3.1.2) {#how-to-meet-language-of-parts}
 
-L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 &quot;de&quot;) peut s’afficher comme suit :
+L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 &quot;de&quot;) peut être affichée comme suit :
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -1025,7 +1025,7 @@ L’attribut `lang` peut être utilisé pour identifier les modifications dans l
 De même, le navigateur peut restituer correctement un mot ou une expression emprunté peu courant si l’élément `span` est utilisé comme suit :
 
 ```xml
-<p>The only French phrase I know is <span lang = “fr”>je ne sais quoi</code>.</p>
+<p>The only French phrase I know is <span lang = "fr">je ne sais quoi</code>.</p>
 ```
 
 >[!NOTE]

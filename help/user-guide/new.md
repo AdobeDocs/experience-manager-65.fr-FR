@@ -4,10 +4,10 @@ seo-title: Resources for New AEM Users
 description: Questions, réponses et ressources destinées aux utilisateurs qui découvrent les AEM
 seo-description: Questions, answers, and resources for users new to AEM
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '360'
-ht-degree: 34%
+ht-degree: 32%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Experience Manager (AEM) est un système client-serveur web qui permet de 
 
 ## Où télécharger AEM logiciel ? {#download}
 
-Les clients qui disposent d’un contrat de maintenance et d’assistance valide doivent avoir reçu une notification par courrier électronique comportant un code et être en mesure de télécharger AEM depuis le [Adobe Licensing Website](http://licensing.adobe.com/).
+Les clients qui disposent d’un contrat de maintenance et d’assistance valide doivent avoir reçu une notification par courrier électronique comportant un code et être en mesure de télécharger AEM depuis le [Adobe Licensing Website](https://licensing.adobe.com/).
 
 [Plus d’informations sur le déploiement du logiciel AEM.](/help/sites-deploying/home.md)
 
@@ -59,4 +59,4 @@ Vous pouvez rechercher toutes les notes de mise à jour d’AEM à l’adresse s
 * [Notes de mise à jour d’AEM 6.5](/help/release-notes/home.md)
 * [Liste des fonctionnalités supprimées et obsolètes dans AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
-Si vous avez des questions, vous pouvez contacter notre [Équipe de la communauté AEM](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) ou contactez-nous sur Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).
+Si vous avez des questions, vous pouvez contacter notre [Équipe de la communauté AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) ou contactez-nous sur Twitter [@AdobeExpCare](https://twitter.com/adobeexpcare).

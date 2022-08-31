@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
-ht-degree: 68%
+ht-degree: 67%
 
 ---
 
@@ -63,7 +63,7 @@ La façon dont le contenu doit être modélisé dans un référentiel de contenu
 
 L’approche REST est profondément ancrée dans tous nos projets. Cela signifie, entre autres, que nous évitons les interactions avec état et appliquons le principe que les URI sont des adresses définitives pour le contenu et les services.
 
-REST (REpresentational State Transfer) fait référence à l’architecture logicielle sur laquelle le World Wide Web est basé. Il décrit les éléments clés qui font fonctionner le web et fournit ainsi un ensemble de principes pour la conception d’un logiciel basé sur le web. Lors de la conception d’une API à utiliser sur le web, il est donc logique d’adhérer à ces « bonnes pratiques ».
+REST (REpresentational State Transfer) fait référence à l’architecture logicielle sur laquelle le World Wide Web est basé. Il décrit les éléments clés qui font fonctionner le web et fournit ainsi un ensemble de principes pour la conception d’un logiciel basé sur le web. Lors de la conception d’une API à utiliser sur le Web, il est donc logique de respecter ces &quot;bonnes pratiques&quot;.
 
 Dans la mesure où REST offre une approche que nous suivons dans nombreux de nos projets, vous devriez vous attacher à maîtriser les principes de la conception RESTful. La dissertation de [Roy Fielding](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) est un excellent point de départ.
 
@@ -143,7 +143,7 @@ En substance, JCR est un système de nœuds et de propriétés, dans lequel les 
 
 JCR possède un certain nombre de types de nœuds prédéfinis et de types de propriétés, mais en général le système de typage est assez flexible et (d’ailleurs) l’une des forces de JCR est qu’il permet de facilement stocker/gérer le contenu structuré et non structuré. C’est-à-dire que JCR peut prendre en charge des données hautement structurées, mais accepte également des structures de données dynamiques arbitraires sans contraintes de schéma.
 
-L’API Java de JavaDoc pour JCR est disponible [ici](http://jackrabbit.apache.org/jcr/jcr-api.html).
+L’API Java de JavaDoc pour JCR est disponible [ici](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 Avant de lire la spécification JavaDoc ou JCR elle-même, vous pouvez consulter [cette explication d’expert](/help/sites-developing/the-basics.md#java-content-repository) sur JCR, telle qu’elle est implémentée par Adobe Experience Services.
 

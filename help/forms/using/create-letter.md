@@ -9,10 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '3982'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Les conditions vous permettent de définir le contenu à inclure lors de la cré
 
 #### Fragment de mise en page {#layout-fragment}
 
-Un fragment de mise en page est une mise en page pouvant être utilisée dans une ou plusieurs lettres. Un fragment de mise en page est utilisé pour créer des schémas reproductibles, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire types tels qu’« Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (XDP) sont créées dans Designer, puis sont [téléchargées sur Forms et Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Un fragment de mise en page est une mise en page pouvant être utilisée dans une ou plusieurs lettres. Un fragment de mise en page est utilisé pour créer des schémas reproductibles, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire standard tels que &quot;Adresse&quot; et &quot;Numéro de référence&quot;. Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (XDP) sont créées dans Designer, puis sont [téléchargées sur Forms et Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Création de lettre {#letter-creation}
 
@@ -230,7 +230,7 @@ Vous devez d’abord avoir les éléments suivants correctement configurés pour
 
 * [Package de compatibilité](compatibility-package.md). Installez le package de compatibilité pour afficher l’option **Lettres** sur la page **Formulaires**.
 * La lettre XDP ([mise en page](/help/forms/using/document-fragments.md)).
-* Autres XDP ([fragment de mise en page](document-fragments.md#document-fragments)) qui constituent des parties de la lettre. Les XDP\mises en page sont créés dans [Designer](http://www.adobe.com/go/learn_aemforms_designer_65_fr).
+* Autres XDP ([fragment de mise en page](document-fragments.md#document-fragments)) qui constituent des parties de la lettre. Les XDP\mises en page sont créés dans [Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).
 * Le [dictionnaire de données](/help/forms/using/data-dictionary.md) approprié (facultatif).
 * Les [modules de données](/help/forms/using/document-fragments.md) à utiliser dans la correspondance.
 * [Les données de test](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) correspondent au fichier XML contenant les données de test. Des données de test sont requises si vous utilisez un dictionnaire de données.

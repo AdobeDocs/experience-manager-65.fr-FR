@@ -4,7 +4,7 @@ seo-title: Learn About AEM 6.5 Capabilities
 description: Description des capacités essentielles d’AEM 6.5
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 33%
@@ -15,7 +15,7 @@ ht-degree: 33%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites est un système de gestion de contenu d’Adobe Experience Manager qui vous permet de créer, de gérer et de diffuser des expériences numériques sur des sites web, des sites mobiles et des écrans sur site. Vous pouvez ainsi les rendre globales et attrayantes, mais aussi d’un point de vue personnel. [En savoir plus](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) ou [découvrez certains de nos nouveaux tutoriels sur les fonctionnalités vidéo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
+AEM Sites est un système de gestion de contenu d’Adobe Experience Manager qui vous permet de créer, de gérer et de diffuser des expériences numériques sur des sites web, des sites mobiles et des écrans sur site. Vous pouvez ainsi les rendre globales et attrayantes, mais aussi d’un point de vue personnel. [En savoir plus](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) ou [découvrez certains de nos nouveaux tutoriels sur les fonctionnalités vidéo.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html)
 
 ## AEM Assets {#aem-assets}
 
@@ -42,11 +42,11 @@ Screens est une fonctionnalité d’Adobe Experience Manager qui vous permet de 
 
 ## AEM Communities {#aem-communities}
 
-Communities est une fonctionnalité d’Adobe Experience Manager qui vous permet de créer des expériences de communauté en ligne, notamment des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales qui sont utiles aux clients, aux employés et à votre marque. [En savoir plus.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+Communities est une fonctionnalité d’Adobe Experience Manager qui vous permet de créer des expériences de communauté en ligne, notamment des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales qui sont utiles aux clients, aux employés et à votre marque. [En savoir plus.](https://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre est une nouvelle fonctionnalité d’Adobe Experience Manager qui vous permet d’exploiter tout ce qui est partagé sur le web pour créer un flux constant de contenu frais et de haute qualité sur vos propres sites. [En savoir plus](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) ou [sautez directement dans nos guides.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre est une nouvelle fonctionnalité d’Adobe Experience Manager qui vous permet d’exploiter tout ce qui est partagé sur le web pour créer un flux constant de contenu frais et de haute qualité sur vos propres sites. [En savoir plus](https://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) ou [sautez directement dans nos guides.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 

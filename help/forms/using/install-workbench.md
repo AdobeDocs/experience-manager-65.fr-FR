@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2244'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -36,11 +36,11 @@ Les ressources indiquées dans le tableau ci-dessous peuvent vous aider à en sa
   </tr>
   <tr>
    <td><p>Informations générales sur AEM Forms et la manière dont il s’intègre avec d’autres produits Adobe</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65_fr">Présentation d’AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Présentation d’AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Toute la documentation disponible relative à AEM Forms</p> </td>
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Documentation dʼAEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Documentation dʼAEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Les mises à jour des correctifs, les explications techniques et les informations complémentaires sur cette version du produit</p> </td>
@@ -99,7 +99,7 @@ Espace disque pour l’installation :
 
 ### Plateformes prises en charge {#supported-platforms}
 
-Pour consulter la liste complète des plateformes prises en charge pour Workbench, reportez-vous à la section [Plateformes prises en charge par AEM Forms](http://adobe.com/go/learn_aemforms_supportedplatforms_65_fr).
+Pour consulter la liste complète des plateformes prises en charge pour Workbench, reportez-vous à la section [Plateformes prises en charge par AEM Forms](https://adobe.com/go/learn_aemforms_supportedplatforms_65_fr).
 
 ## Considérations sur l’installation de Designer {#designer-installation-considerations}
 
@@ -174,7 +174,7 @@ Avant d’installer Workbench, vérifiez que votre environnement inclut les logi
 1. Les éléments suivants sont désormais installés sur votre ordinateur :
    * **Workbench** : pour exécuter Workbench via le menu Démarrer, sélectionnez Tous les programmes > AEM Forms > Workbench, si vous avez choisi d’y stocker le dossier de raccourci. Pour plus d’informations, consultez la documentation sur lʼ<a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Utilisation de Workbench</a>.
    * **Designer** : vous pouvez accéder à Designer depuis Workbench. Pour plus d’informations, consultez la section Prise en main de l’<a href="https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf">aide de Designer</a>.
-   * **SDK AEM Forms** : pour plus d’informations sur l’utilisation du SDK, consultez la section <a href="http://www.adobe.com/go/learn_aemforms_programming_65">Programmer avec AEM Forms</a>.
+   * **SDK AEM Forms** : pour plus d’informations sur l’utilisation du SDK, consultez la section <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programmer avec AEM Forms</a>.
 
 ## Processus de mise à niveau {#upgrading-processes}
 
@@ -190,7 +190,7 @@ Pour utiliser Workbench, vous devez disposer d’une instance AEM Forms en cour
 
 ### Configuration des paramètres de délai d’expiration {#configuring-timeout-settings}
 
-Par défaut, Workbench arrive à expiration après deux heures, peu importe l’activité ou l’inactivité. Pour modifier le paramètre de délai d’expiration, reportez-vous à la section « Configuration de la gestion des utilisateurs > Configurer les attributs système avancés » de l’<a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=fr">aide de la console d’administration</a>.
+Par défaut, Workbench arrive à expiration après deux heures, peu importe l’activité ou l’inactivité. Pour modifier le paramètre de délai d’expiration, voir &quot;Configuration de User Management > Configuration des attributs système avancés&quot; dans le <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=fr">Aide d’Administration Console</a>.
 
 ### Configuration de Workbench pour une connexion via HTTPS {#configuring-workbench-to-connect-over-HTTPS}
 
@@ -233,7 +233,7 @@ Lorsque le générateur ou la sortie des formulaires recherche ou met à jour le
 * **UUID modèle** : Designer insère dans chaque modèle un identifiant unique (UUID) pour le formulaire et sa version. Chaque fois que le formulaire est mis à jour, l’identifiant UUID incorporé est mis à jour. Par exemple, un modèle XDP peut afficher le contenu suivant :
 
    `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
+   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Options de rendu** : Dans le cache de formulaire rendu, les contenus de cache sont stockés séparément pour chaque ensemble d’options de rendu uniques.
 

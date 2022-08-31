@@ -9,10 +9,10 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: de7b1d2d0f3863f9554b346204c18cc57d4bf814
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '7575'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -442,10 +442,10 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
 * **[!UICONTROL Locale]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
-   * **Utiliser le serveur par défaut** : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur AEM Forms. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](http://www.adobe.com/go/learn_aemforms_designer_65_fr).)
+   * **Utiliser le serveur par défaut** : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur AEM Forms. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).)
 
    * **Pour utiliser une valeur personnalisée** : 
-saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir la liste complète des codes de paramètres régionaux pris en charge, voir https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]** : une valeur entière qui spécifie le nombre de copies à générer pour la sortie. La valeur par défaut est 1.
 

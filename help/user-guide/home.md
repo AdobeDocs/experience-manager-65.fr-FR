@@ -4,10 +4,10 @@ seo-title: AEM 6.5 User Guide Hub
 description: Présentation de toutes les ressources essentielles pour comprendre, installer, gérer et utiliser AEM 6.5
 seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 34%
+ht-degree: 19%
 
 ---
 
@@ -48,8 +48,8 @@ Les délégués de l’assistance peuvent obtenir de l’aide via :
 
 Prenez part à la discussion!
 
-* [Forum AEM Sites](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
-* [Forum AEM Communities](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
-* [Forum AEM Forms](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
-* [Forum AEM Assets](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
-* [Forum AEM Mobile](http://forums.adobe.com/community/experiencemanagermobile)
+* [Forum AEM Sites](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+* [Forum AEM Communities](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
+* [Forum AEM Forms](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
+* [Forum AEM Assets](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
+* [Forum AEM Mobile](https://forums.adobe.com/community/experiencemanagermobile)

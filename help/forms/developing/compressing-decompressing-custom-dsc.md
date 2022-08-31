@@ -2,7 +2,7 @@
 title: Comment transmettre des informations d’identification à l’aide des en-têtes WS-security ?
 description: Découvrez comment transmettre des informations d’identification à l’aide des en-têtes WS-security.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 100%
@@ -128,7 +128,7 @@ Le fichier component.xml est affiché ci-dessous :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<component xmlns="http://adobe.com/idp/dsc/component/document">
+<component xmlns="https://adobe.com/idp/dsc/component/document">
 <!-- Unique id identifying this component -->
    <component-id>ZipService</component-id>
 
