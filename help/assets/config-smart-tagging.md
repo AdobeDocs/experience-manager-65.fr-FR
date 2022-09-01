@@ -5,16 +5,23 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 83e9ab570fac686fd53c9c2594cbfb2c05a89a0c
 workflow-type: tm+mt
-source-wordcount: '2170'
-ht-degree: 59%
+source-wordcount: '2262'
+ht-degree: 56%
 
 ---
 
 # Préparer [!DNL Assets] pour le balisage intelligent {#configure-asset-tagging-using-the-smart-content-service}
 
 Avant de commencer à baliser vos ressources à l’aide des services de contenu dynamique, intégrez [!DNL Experience Manager Assets] avec la console Adobe Developer pour tirer parti du service intelligent d’ [!DNL Adobe Sensei]. Une fois configuré, entraînez le service à l’aide de quelques images et d’une balise .
+
+>[!NOTE]
+>
+>* Les services de contenu dynamique ne sont plus disponibles pour les nouvelles [!DNL Experience Manager Assets] Clients On-Premise. Les clients On-Premise existants, pour lesquels cette fonctionnalité est déjà activée, peuvent continuer à utiliser les services de contenu dynamique.
+>* Smart Content Services est disponible pour les [!DNL Experience Manager Assets] Clients Managed Services, pour lesquels cette fonctionnalité est déjà activée.
+>* Nouveau [!DNL Experience Manager Assets] Les clients Managed Services peuvent suivre les instructions mentionnées dans cet article pour configurer les services de contenu dynamique.
+
 
 Avant d’utiliser le service de contenu dynamique, vérifiez les points suivants :
 
@@ -51,7 +58,14 @@ Un certificat public permet d’authentifier votre profil sur Adobe Developer Co
 
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs suivantes :
 
-   **[!UICONTROL URL du service]**: `https://mc.adobe.io/marketingcloud/smartcontent`
+   **[!UICONTROL URL du service]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+
+   Par exemple, `https://smartcontent.adobe.io/apac`. Vous pouvez indiquer `na`, `emea`, ou `apac` comme les régions où votre instance de création de Experience Manager est hébergée.
+
+   >[!NOTE]
+   >
+   >Si le service géré Experience Manager est mis en service avant le 1er septembre 2022, utilisez l’URL de service suivante :
+   >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Serveur d’autorisation]**: `https://ims-na1.adobelogin.com`
 
