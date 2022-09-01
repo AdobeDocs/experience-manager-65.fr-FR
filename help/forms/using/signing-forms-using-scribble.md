@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 100%
+source-wordcount: '638'
+ht-degree: 73%
 
 ---
 
@@ -21,9 +21,28 @@ ht-degree: 100%
 
 Vous pouvez utiliser le composant **Signature tactile** et le composant **Étape de signature** pour tracer la signature (saisie tactile) sur un formulaire adaptatif. Le composant Étape de signature affiche une version PDF du formulaire adaptatif. Vous avez besoin de l’option Document d’enregistrement activée ou de formulaires adaptatifs basés sur un modèle de formulaire pour utiliser le composant Étape de signature.
 
-Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour signer un formulaire. Vous pouvez également cliquer sur l’icône de géolocalisation ![aem_6_3_geolocation](assets/aem_6_3_geolocation.png) pour ajouter la géolocalisation à la signature.
+![Boîte de dialogue de signature tactile](/help/forms/using/assets/scribble-signature.png)
 
-![Boîte de dialogue de signature tactile](assets/scribble-signature.png)
+## Diverses options disponibles dans la fenêtre de signature
+
+* **A :** Cliquez sur le bouton **Pinceau** pour dessiner votre signature sur la zone de travail.
+* **B :** Cliquez sur le bouton **Effacer** pour effacer la signature sur la zone de travail.
+* **C :** Cliquez sur le bouton **Géolocalisation** pour ajouter une géolocalisation avec la signature.
+* **D :** Cliquez sur le bouton **Clavier** pour saisir votre nom sur la zone de travail.
+
+Une fois que vous avez appuyé sur Terminé![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) dans la fenêtre de signature tactile, vous ne pouvez pas modifier la signature. Si vous souhaitez modifier la signature, vous devez ignorer la signature actuelle et la signer à nouveau à l’aide de l’option Paint Brush/Keyboard ci-dessus.
+
+Vous pouvez appuyer sur le bouton **Configurer** ![configure](assets/configure.png) pour définir les proportions du canevas de signature tactile.
+* Lorsque le rapport d’aspect du canevas de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas du canevas de signature tactile.
+
+* Lorsque le rapport d’aspect du canevas de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit du canevas de signature tactile.
+
+![signature tactile en bas](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+
+
+>[!NOTE]
+>
+>Les signatures sont toujours enregistrées au format PNG.
 
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -60,14 +79,14 @@ Les deux composants présentent une fenêtre, comme illustré ci-dessous, pour s
 
 1. Une fois que vous avez renseigné le formulaire adaptatif et que vous avez atteint la page Étape de signature, l’écran de signature s’affiche.
 
-   ![Écran de signature de la page EchoSign](assets/esignscribblesign.jpg)
+   ![Boîte de dialogue de signature tactile](/help/forms/using/assets/esignscribblesign.jpg)
 
 1. Cliquez sur **[!UICONTROL Signer]**. La boîte de dialogue de signature tactile apparaît. Signez le formulaire et cliquez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer la signature.
 
-   ![Boîte de dialogue de signature tactile](assets/scribblewidget.jpg)
+   ![Boîte de dialogue de signature tactile](/help/forms/using/assets/scribblewidget.png)
 
 1. Cliquez sur Terminer pour terminer le processus de signature.
 
-   ![Terminer le processus de signature](assets/scribblecomplete.jpg)
+   ![Terminer le processus de signature](/help/forms/using/assets/scribblecomplete.jpg)
 
 Les signatures sont ajoutées au formulaire, et le contrôle de formulaire passe au panneau suivant.

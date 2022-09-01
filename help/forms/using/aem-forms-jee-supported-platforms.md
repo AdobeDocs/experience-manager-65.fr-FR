@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: f1dade2cb15f98bb7830f6afb27ec493dc182a37
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '3550'
-ht-degree: 96%
+source-wordcount: '3584'
+ht-degree: 93%
 
 ---
 
@@ -91,9 +91,9 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <th><p><strong>Définitions de correctif prises en charge</strong></p> </th>
   </tr>
   <tr>
-   <td><p>Oracle Java™ SE 11 (64 bits)</p> </td>
-   <td><p>Z : Non pris en charge</p> </td>
-   <td><p> </p> </td>
+   <td><p>Oracle Java™ SE 11 (64 bits) <sup> [8] </sup> </p>  </td>
+   <td><p>A : Pris en charge</p> </td>
+   <td><p>Versions et mises à jour mineures </p> </td>
   </tr>
   <tr>
    <td>Azul Zulu OpenJDK 11 64 bits</td>
@@ -361,6 +361,7 @@ Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de c
 1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de bases de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’application WebSphere sur CentOS.
 1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles JBoss.
+1. AEM Forms on JEE prend uniquement en charge le SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss EAP 7.4.
 
 Tenez également compte des points suivants lors de votre choix de logiciels pour le déploiement d’Adobe AEM Forms on JEE :
 
@@ -517,7 +518,7 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 > - PDF Generator ne prend pas en charge Microsoft Office 365.
 > - Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 > - Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
-> - Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms en fonction de votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+> - Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 > - Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
 
@@ -633,7 +634,7 @@ Pour des conditions requises supplémentaires, voir :
 
 >[!NOTE]
 >
-> La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
+> La famille de produits Acrobat DC introduit deux suivis pour Acrobat et Reader, qui sont essentiellement des produits différents : &quot;Classic&quot; et &quot;Continuous&quot;. Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
 
 ### Navigateurs {#browsers}
 
@@ -749,7 +750,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs 
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour l’installation de logiciels de fournisseurs tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Toute la documentation est accessible sur [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour les logiciels tiers pour AEM Forms on JEE est présentée dans la section &quot;Configuration requise&quot; de leurs documents produit respectifs. Toute la documentation est accessible sur [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 Les plateformes de référence de fournisseurs tiers d’AEM Forms on JEE indiquent le niveau de correctif de l’infrastructure de fournisseur tiers en cours au moment du développement et de la publication d’AEM Forms on JEE, et forment le niveau minimum de correctif/Service Pack de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
@@ -794,6 +795,10 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM F
 > Les plateformes marquées comme [obsolète sur avec AEM Forms 6.5.12.0 et 6.5.10.0 restent pris en charge jusqu’à la version 6.5 Service Pack 18 (6.5.18.0) d’AEM Forms](https://helpx.adobe.com/support/programs/eol-matrix.html).
 
 ## Historique des révisions {#revision-history}
+
+- 1er septembre 2022
+
+   - Ajout de la prise en charge du SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss EAP 7.4.
 
 - 3 mars 2022
 

@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
 workflow-type: tm+mt
-source-wordcount: '10683'
-ht-degree: 100%
+source-wordcount: '10769'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez utiliser la page Gestion des services pour configurer les paramètre
 
    >[!NOTE]
    >
-   >certains services répertoriés dans la page Gestion des services ne possèdent pas d’onglet Configuration. L’onglet Configuration des processus créés s’affiche uniquement lorsque vous ajoutez un paramètre de configuration à ces processus dans Workbench (voir Paramètres de configuration dans [l’Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr) .)
+   >certains services répertoriés dans la page Gestion des services ne possèdent pas d’onglet Configuration. L’onglet Configuration des processus créés s’affiche uniquement lorsque vous ajoutez un paramètre de configuration à ces processus dans Workbench (Voir &quot;Paramètres de configuration&quot; dans la section [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr) .)
 
 
 1. Cliquez sur l’onglet Sécurité et définissez les paramètres de protection du service (voir [Modification des paramètres de sécurité d’un service](configure-service-settings.md#modifying-security-settings-for-a-service)).
@@ -123,7 +123,7 @@ Les paramètres ci-dessous sont disponibles pour le service Convert PDF.
 
 **Transaction Time Out (in sec) :** nombre de secondes que le fournisseur de transactions sous-jacent doit attendre avant de restaurer une transaction qui englobe cette opération. Cette valeur sera ignorée si un contexte de transaction existant est propagé. La valeur par défaut est 180.
 
-**Threshold Resolution for Smoothing (in dpi) :** résolution de l’image au-dessous de laquelle le lissage est appliqué au texte, aux dessins au trait et aux images, si vous avez sélectionné l’option « Appliquer le lissage à » pour ces éléments.
+**Résolution du seuil pour le lissage (en ppp) :** La résolution de l’image sous laquelle le lissage (ou anti-crénelage) est appliqué au texte, aux dessins au trait et aux images, si vous avez sélectionné les options &quot;Appliquer le lissage à&quot; pour ces éléments.
 
 **Apply smoothing to text :** contrôle le lissage du texte. Pour désactiver le lissage du texte et rendre le texte plus net et plus facile à lire à l’aide d’un agrandisseur d’écran, désélectionnez cette case.
 
@@ -186,6 +186,16 @@ Les paramètres ci-dessous sont disponibles pour le service Email.
 **Utilisateur SMTP :** nom d’utilisateur du compte utilisateur à employer pour la connexion au serveur SMTP.
 
 **Mot de passe SMTP :** mot de passe associé au compte utilisateur SMTP.
+
+**Authentification 0Auth2.0 :** Le service d’authentification Auth2.0 offre une prise en charge de son service de messagerie intégré pour permettre aux entreprises de se conformer aux exigences en matière de messagerie sécurisée.
+
+**ID client :** Azure Portal génère un ID d’application utilisé pour l’authentification.
+
+**Client Secret :** Azure Portal génère une clé secrète, qui est utilisée pour l’authentification.
+
+**Actualiser le jeton :**  Le client OAuth utilise une chaîne pour obtenir un nouveau jeton d’accès sans interaction de l’utilisateur.
+
+Pour plus d’informations sur la récupération et l’utilisation de l’ID client, du secret client et du jeton d’actualisation, voir [Prise en charge de l’authentification OAuth2.0 pour les services de messagerie](/help/forms/using/oauth2-support-for-mail-service.md).
 
 **Sécurité du transport SMTP :** protocole de sécurité à utiliser pour la connexion au serveur SMTP.
 
