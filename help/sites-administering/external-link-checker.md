@@ -2,9 +2,9 @@
 title: Vérificateur de lien
 description: Le vérificateur de liens permet de valider les liens internes et externes et de réécrire les liens.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0b9de3261d8747f3e7107962b6aea1dbdf9d6773
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '987'
 ht-degree: 2%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 Les auteurs de contenu ne doivent pas se soucier de valider chaque lien qu’ils incluent dans leurs pages de contenu.
 
-Le vérificateur de liens s’exécute automatiquement pour aider les auteurs de contenu avec leurs liens, notamment :
+Le vérificateur de liens s’exécute automatiquement pour aider les auteurs de contenu à créer leurs liens, notamment :
 
 * Validation des liens lorsqu’ils sont ajoutés au contenu
 * Affichage d’une liste de tous les liens externes dans le contenu

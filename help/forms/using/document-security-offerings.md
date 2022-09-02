@@ -12,10 +12,10 @@ discoiquuid: 91e85e86-2361-4d1d-aa73-c3cce46ab1f1
 docset: aem65
 feature: Document Security
 exl-id: d00ae232-b018-44e5-b04b-376d4cd9c6eb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 18c180a491af10b41393ad841f2fa74d02ec9cd9
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 100%
+source-wordcount: '1205'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Vous pouvez utiliser SDK Document Security, Adobe Acrobat, Document Security Ext
 
     Le SDK Document Security est disponible pour Java et C++. Le SDK Java est inclus dans l’offre AEM Forms Document Security et il est installé sur le déploiement d’AEM forms on JEE. Vous pouvez contacter [l’équipe d’assistance AEM](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir le SDK C++. Le SDK C++ peut être compilé avec Microsoft Visual Studio 2013. Vous pouvez consulter le site de [documentation d’API de Document Security](https://help.adobe.com/fr_FR/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) pour apprendre à utiliser les fonctions du SDK.
 
-* **Adobe Acrobat :** Vous pouvez utiliser Adobe Acrobat pour appliquer la stratégie de sécurité à des documents PDF créés à l’aide d’applications de bureau courantes, telles que Microsoft Office, des navigateurs Web ou toute application prenant en charge l’impression au format PDF.
+* **Adobe Acrobat :** Vous pouvez utiliser Adobe Acrobat pour appliquer une stratégie de sécurité aux documents PDF créés à l’aide d’applications de bureau courantes, telles que Microsoft Office, les navigateurs Web ou toute application prenant en charge l’impression au format PDF.
 
    Vous pouvez acheter et télécharger Adobe Acrobat sur le [site Web d’Adobe](https://acrobat.adobe.com/fr/fr/free-trial-download.html). L’article Adobe Acrobat concernant la [configuration des stratégies de sécurité pour les fichiers PDF](https://helpx.adobe.com/fr/acrobat/using/setting-security-policies-pdfs.html) contient des informations détaillées sur la création et l’application de stratégies dans Adobe Acrobat.
 
