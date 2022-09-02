@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 3f7191ecdddf7325f2c1153f1ec733893cc649dc
+source-git-commit: 966a3ea6b8cb9b42e21f8e3eb3fee1c7ca93cf51
 workflow-type: tm+mt
-source-wordcount: '3795'
+source-wordcount: '3791'
 ht-degree: 97%
 
 ---
@@ -332,7 +332,6 @@ ht-degree: 97%
    + [Configuration des analyses et des rapports](using/configure-analytics-forms-documents.md)
    + [Consultation et compréhension des rapports d’analyse d’AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Créer et gérer des tests A/B pour les formulaires adaptatifs](using/ab-testing-adaptive-forms.md)
-   + [Intégration à Adobe Analytics](using/integrate-aem-forms-with-adobe-analytics.md)
 + Publication et traitement d’AEM Forms {#publish-process-aem-forms}
    + [Présentation de la publication de formulaires sur un portail](using/introduction-publishing-forms.md)
    + [Exemple d’intégration d’un composant brouillons &amp; envois à la base de données](using/integrate-draft-submission-database.md)
