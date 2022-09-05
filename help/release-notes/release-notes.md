@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 381ab110ccf5605b17382b9c77693c819e31e3b6
 workflow-type: tm+mt
-source-wordcount: '3237'
+source-wordcount: '3224'
 ht-degree: 5%
 
 ---
@@ -152,7 +152,6 @@ ht-degree: 5%
 * Le composant Texte n’est pas aligné lorsqu’il est ajouté aux conteneurs de mise en page imbriqués. (NPR-38193)
 * Un onglet de style vide s’affichait lorsqu’il n’y avait aucune configuration de système de style pour un composant. L’onglet est maintenant masqué lorsqu’aucune configuration n’est présente. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
 * La propriété `useLegacyResponsiveBehaviour` fonctionne uniquement lors de l’authentification. (NPR-37996)
-* La mise à niveau de jquery-ui vers la dernière version entraînait la rupture de l’éditeur. (SITES-5647)
 
 ### [!DNL Content Fragments] {#sites-contentfragments-6514}
 
