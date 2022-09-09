@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 83%
+source-wordcount: '2308'
+ht-degree: 82%
 
 ---
 
@@ -40,7 +40,7 @@ Un certain nombre de composants d’AEM prêts à l’emploi sont fournis pour u
 * Panier
 * Passage en caisse
 
-Pour rechercher, le crochet d’intégration fourni vous permet d’utiliser la recherche AEM, la recherche du système eCommerce, une recherche tiers (comme Search&amp;Promote) ou une combinaison de ces éléments.
+Pour la recherche, un crochet d’intégration est fourni qui vous permet d’utiliser la recherche AEM, la recherche du système eCommerce, une recherche tierce ou une combinaison de celle-ci.
 
 ## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 

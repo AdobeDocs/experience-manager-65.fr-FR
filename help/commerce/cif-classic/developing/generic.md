@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '1865'
-ht-degree: 83%
+source-wordcount: '1862'
+ht-degree: 82%
 
 ---
 
@@ -33,7 +33,7 @@ Un certain nombre de composants d’AEM prêts à l’emploi sont fournis pour u
 * Passage en caisse
 * Rechercher
 
-Pour la recherche, un hook d’intégration permet d’utiliser la recherche AEM, une recherche tierce (comme Search &amp; Promote) ou une combinaison de ceux-ci.
+Pour la recherche, un crochet d’intégration est fourni qui vous permet d’utiliser la recherche AEM, une recherche tierce ou une combinaison de celle-ci.
 
 ## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 

@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 87%
+source-wordcount: '729'
+ht-degree: 86%
 
 ---
 
@@ -147,7 +147,7 @@ AEM eCommerce fournit ce qui suit :
 
    * Recherche AEM
    * Recherche du système de commerce électronique
-   * Recherche tierce (Search&amp;Promote par exemple)
+   * recherche tierce
    * Ou une combinaison de ces trois fonctions
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)

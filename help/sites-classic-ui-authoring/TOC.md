@@ -7,10 +7,10 @@ user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5 Classi
 user-guide-description: Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique.
 feature: Authoring
 role: User
-source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
+source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 84%
+source-wordcount: '264'
+ht-degree: 83%
 
 ---
 
@@ -49,7 +49,6 @@ ht-degree: 84%
    + [Utilisation des balises](classic-feature-tags.md)
    + [Génération de modèles automatique](classic-feature-scaffolding.md)
    + [Configuration de composants en mode de conception](classic-page-author-design-mode.md)
-   + [Ajout de fonctionnalités Search&amp;Promote à une page](classic-feature-search-promote.md)
    + [Composants](classic-page-author-default-components.md)
 + Workflows {#workflows}
    + [Participation aux workflows](classic-workflows-participating.md)
