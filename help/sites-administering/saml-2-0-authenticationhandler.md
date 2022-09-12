@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: ffabf5a9e3b08f60394cecfe540692b161437362
+source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
 workflow-type: tm+mt
-source-wordcount: '829'
-ht-degree: 58%
+source-wordcount: '831'
+ht-degree: 57%
 
 ---
 
@@ -42,7 +42,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >
 >Le gestionnaire d’authentification SAML 2.0 est désactivé par défaut. Vous devez définir au moins une des propriétés suivantes pour activer le gestionnaire :
 >
->* L’URL de publication du fournisseur d’identité.
+>* URL du POST du fournisseur d’identité ou URL IDP.
 >* L’ID d’entité du fournisseur.
 >
 
@@ -57,7 +57,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 **Alias de certificat IDP** L’alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Voir le chapitre Ajout du certificat IdP au TrustStore AEM ci-dessous sur la façon de le configurer.
 
-**URL du fournisseur d’identité** URL du fournisseur d’identité auquel la demande d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
+**URL IDP** URL du fournisseur d’identité auquel la demande d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
 
 >[!CAUTION]
 >
