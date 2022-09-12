@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: c73d39a1c88c914cd63bc08fe8daf0ff37b4bf7c
+source-git-commit: 5df1579a341f70c93a3c4b43a278bc99794a4652
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 57%
+source-wordcount: '846'
+ht-degree: 58%
 
 ---
 
@@ -31,6 +31,8 @@ Il prend en charge :
 Ce gestionnaire stocke le message de réponse SAML chiffré dans le nœud utilisateur (`usernode/samlResponse`) pour faciliter la communication avec un fournisseur tiers.
 
 >[!NOTE]
+>
+>Voir [une démonstration de l’intégration d’AEM et de SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=fr).
 >
 >Pour lire un article de la communauté de bout en bout, cliquez sur [Intégration de SAML avec Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/using/aem63_saml.html).
 
