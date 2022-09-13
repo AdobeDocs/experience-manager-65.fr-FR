@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 9faad7562a85f368ae47bb0c3a381bebe4c8c612
+source-git-commit: 80702b274c35dae7fd7a3d8137124e1240e57d7c
 workflow-type: tm+mt
-source-wordcount: '3434'
-ht-degree: 84%
+source-wordcount: '3452'
+ht-degree: 83%
 
 ---
 
@@ -492,9 +492,11 @@ Pour Windows x86 :
 > En outre :
 >
 > * PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
-> * PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
+> > * Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
+
+> * PDF Generator ne prend en charge que la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion sur le système d’exploitation Windows.
+> * PDF Generator prend en charge les versions 32 bits et 64 bits d’OpenOffice sous Linux Operating System.
 > * PDF Generator ne prend pas en charge Microsoft Office 365.
-> * Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 > * Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
 > * Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >

@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2d12f1652a3b8ec4e6ca9c737dc844d1f53f7d08
+source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
 workflow-type: tm+mt
-source-wordcount: '5365'
+source-wordcount: '5369'
 ht-degree: 67%
 
 ---
@@ -654,7 +654,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que [Outil System
 
 **Microsoft® Windows**
 
-* Assurez-vous que [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installé et les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
+* Assurez-vous que la variable 32 bits [version prise en charge ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) de Microsoft Office est installé et les boîtes de dialogue d’ouverture sont annulées pour toutes les applications.
 * Assurez-vous qu’un utilisateur de PDF Generator est ajouté à l’interface utilisateur de configuration du PDF.
 * Assurez-vous que l’utilisateur de PDF Generator est membre du groupe administrateurs et que la variable [Remplacer un jeton de niveau processus](#grant-the-replace-a-process-level-token-privilege) est défini pour l’utilisateur.
 * Assurez-vous que l’utilisateur est configuré dans l’interface utilisateur de PDF Generator et effectuez les actions suivantes :
@@ -668,7 +668,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que [Outil System
 
 **Linux®**
 
-* Assurez-vous que [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Une fois Open Office installé, les boîtes de dialogue d’ouverture sont annulées pour toutes les applications et les applications Office sont lancées avec succès.
+* Assurez-vous que la bande 32 bits ou 64 bits [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Une fois Open Office installé, les boîtes de dialogue d’ouverture sont annulées pour toutes les applications et les applications Office sont lancées avec succès.
 * Création d’une variable d’environnement `OpenOffice_PATH` et la définir pour qu’elle pointe vers l’installation OpenOffice est définie dans la variable [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou le profil dt (arborescence de l’appareil).
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que [Bibliothèques 32 bits](#extrarequirements) La configuration requise pour l’installation d’OpenOffice est disponible.
 
