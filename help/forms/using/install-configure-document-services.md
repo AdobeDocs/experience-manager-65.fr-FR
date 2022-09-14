@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 2bad64ebc94cf5b09149a8216648de763a6e30d0
+source-git-commit: 32b97aeff398a19556d46ff6c905dc3019988bc1
 workflow-type: tm+mt
-source-wordcount: '5369'
+source-wordcount: '5389'
 ht-degree: 67%
 
 ---
@@ -650,7 +650,7 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que [Outil System
 
 +++
 
-+++Open Office
++++OpenOffice
 
 **Microsoft® Windows**
 
@@ -668,7 +668,8 @@ Avant d’effectuer les vérifications suivantes, assurez-vous que [Outil System
 
 **Linux®**
 
-* Assurez-vous que la bande 32 bits ou 64 bits [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) Une fois Open Office installé, les boîtes de dialogue d’ouverture sont annulées pour toutes les applications et les applications Office sont lancées avec succès.
+* Installez le [version prise en charge](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) d’OpenOffice. AEM Forms prend en charge les versions 32 bits et 64 bits. Après l’installation, ouvrez toutes les applications OpenOffice, annulez toutes les fenêtres de boîte de dialogue et fermez les applications. rouvrez les applications et assurez-vous qu’aucune boîte de dialogue ne s’affiche lors de l’ouverture d’une application OpenOffice.
+
 * Création d’une variable d’environnement `OpenOffice_PATH` et la définir pour qu’elle pointe vers l’installation OpenOffice est définie dans la variable [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) ou le profil dt (arborescence de l’appareil).
 * En cas de problèmes lors de l’installation d’OpenOffice, assurez-vous que [Bibliothèques 32 bits](#extrarequirements) La configuration requise pour l’installation d’OpenOffice est disponible.
 
