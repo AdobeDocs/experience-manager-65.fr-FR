@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: a0612d10c91cf096403dad1c50b0884feeb10ec2
+source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
 workflow-type: tm+mt
 source-wordcount: '5461'
 ht-degree: 66%
@@ -605,11 +605,12 @@ L’outil System Readiness vérifie si l’ordinateur est correctement configur�
    >
    > * Vous pouvez utiliser le fichier srt_config.yaml pour configurer différents paramètres de . Le format du fichier est le suivant :
 
-       #=================================================================
        # Configuration SRT
-       #=================================================================
-       #Note - suivez le format correct pour éviter les échecs d’analyse
-       #e, par exemple &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
+       # Remarque : suivez le format correct pour éviter les échecs d’analyse.
+       
+       # par ex. &lt;param name=&quot;&quot;>:&lt;space>&lt;param value=&quot;&quot;>
+       
        #locale : (champ obligatoire) Paramètres régionaux à utiliser pour la SRT. Paramètres régionaux pris en charge [en/fr/de/ja].
        locale : en
        
