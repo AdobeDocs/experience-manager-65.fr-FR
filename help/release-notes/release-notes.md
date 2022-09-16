@@ -3,9 +3,9 @@ title: Notes de mise à jour d’ [!DNL Adobe Experience Manager] 6,5
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: 935698e6c8caabccb7bbe0aa9f45012d07163660
+source-git-commit: 48f898a774d2ddd6d2c31f6a4107c71e4032cfc2
 workflow-type: tm+mt
-source-wordcount: '3257'
+source-wordcount: '3281'
 ht-degree: 5%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 5%
 * Lorsque vous sélectionnez un lien de navigation pour le workflow dans HTML Workspace, il n’est pas indiqué que le lien de navigation est sélectionné. (NPR-37138)
 * La fonction Signature tactile n’est pas compatible avec les consignes d’accessibilité. (NPR-37596)
 * AEM Forms utilise log4j 1.x. La prise en charge de log4j 1.x a atteint sa fin de vie. (NPR-38273)
-* Lorsque vous utilisez la base de données MSSQL comme source de données dans un modèle de données de formulaire et que vous récupérez des valeurs, les nombres après la décimale dans les valeurs de récupération sont activés. (CQ-4346190)
+* Lorsque vous utilisez la base de données MSSQL comme source de données dans un modèle de données de formulaire et que vous récupérez des valeurs, les nombres après la décimale dans les valeurs récupérées sont tronqués. (CQ-4346190)
 * Dans Forms 6.5 Designer, lorsque vous ouvrez un formulaire créé avec Forms 6.1 Designer et modifiez une zone de texte, l’espacement des paragraphes dépasse l’espace spécifié. Tous les paramètres précédents de l’espace sont supprimés et un reformatage manuel de la zone de texte est requis. (CQ-4341899)
 * Une valeur incorrecte s’affiche pour le code à barres SSCC-18. Les serveurs Forms omettent la valeur dans la partie droite du code à barres. (CQ-4342400)
 * Pour les PDF forms statiques créés avec Forms 6.5 Designer, l’accessibilité du PDF échoue en cas d’erreur. `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
@@ -317,7 +317,8 @@ Vérifiez si vous utilisez une fonctionnalité ou une fonctionnalité dans un d�
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
  -->
 
-* [AEM du fragment de contenu avec le package d’index GraphQL 1.0.3](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.3.zip)
+* [AEM du fragment de contenu avec le package d’index GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+Ce module est nécessaire pour les clients utilisant GraphQL ; cela leur permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils utilisent réellement.
 
 * As [!DNL Microsoft® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ne prend pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
 
