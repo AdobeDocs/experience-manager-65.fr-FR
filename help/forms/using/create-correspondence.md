@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
 workflow-type: tm+mt
-source-wordcount: '3695'
-ht-degree: 99%
+source-wordcount: '3826'
+ht-degree: 96%
 
 ---
 
@@ -129,7 +129,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    * Symboles de devise tels que €,￥et £
    * Symboles mathématiques tels que ∑, √, ∂ et ^
-   * Symboles de ponctuation tels que ‟ et ”
+   * Symboles de ponctuation tels que ‟ et &quot;
 
    ![specialcharacters](assets/specialcharacters.png)
 
@@ -288,6 +288,22 @@ Ces instances peuvent être enregistrées uniquement lorsque la lettre est en co
 1. Dans AEM, ouvrez la configuration de la console web d’Adobe Experience Manager pour votre serveur via l’URL suivante : https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Localisez les **[!UICONTROL configurations de Correspondence Management]** et cliquez dessus.
 1. Cochez la configuration **[!UICONTROL Gestion des instances de lettre sur Publication]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
+
+### Activation de la fonction Enregistrer le brouillon {#enable-save-draft-feature}
+
+Avant de publier des lettres ou d’enregistrer des brouillons sur l’instance de publication, procédez comme suit pour activer la fonction Enregistrer en tant que brouillon :
+
+1. Ouvrez Configuration de la console web pour votre serveur à l’aide de l’URL suivante : https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+
+1. Recherchez l’icône **Modifier** située en regard du paramètre *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* et cliquez dessus.
+
+1. Dans le *URL d’auteur VersionRestoreManager* , spécifiez l’URL de l’instance d’auteur correspondante.
+
+1. Cliquez sur Enregistrer .
+
+Le *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* par défaut, les propriétés ne sont pas transférées vers l’instance de publication. Pour activer le rechargement du brouillon sur l’instance de publication, ces propriétés sont requises sur l’instance de publication.
+
+Pour reporter *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* propriétés pour l’instance de publication, désactivez le composant en tant que *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* sur l’instance d’auteur à l’aide de l’URL :`http://server:port/system/console/components`
 
 Lorsque l’enregistrement des instances de lettre est activé, vous avez la possibilité de sélectionner l’emplacement où enregistrer les instances de lettre. Il existe deux options pour enregistrer les instances de lettre : enregistrement local ou enregistrement à distance.
 
