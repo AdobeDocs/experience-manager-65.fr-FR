@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 11bad847558d295d1cf38aa9e8f246fc6fc3877b
+source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
 workflow-type: tm+mt
-source-wordcount: '3826'
-ht-degree: 96%
+source-wordcount: '3867'
+ht-degree: 95%
 
 ---
 
@@ -291,19 +291,29 @@ Ces instances peuvent être enregistrées uniquement lorsque la lettre est en co
 
 ### Activation de la fonction Enregistrer le brouillon {#enable-save-draft-feature}
 
-Avant de publier des lettres ou d’enregistrer des brouillons sur l’instance de publication, procédez comme suit pour activer la fonction Enregistrer en tant que brouillon :
+Avant de publier des lettres ou d’enregistrer des brouillons sur l’instance de publication, effectuez les étapes suivantes sur l’instance d’auteur et de publication pour activer la fonction Enregistrer en tant que brouillon :
 
-1. Ouvrez Configuration de la console web pour votre serveur à l’aide de l’URL suivante : https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+Le *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* par défaut, les propriétés ne sont pas transférées vers l’instance de publication. Pour reporter *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* propriétés de l’instance de publication, désactivez la fonction [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] composant. Pour désactiver le composant :
 
-1. Recherchez l’icône **Modifier** située en regard du paramètre *com.adobe.livecycle.content.activate.impl.VersionRestoreManagerImpl.name* et cliquez dessus.
+1. Sur l’instance d’auteur, ouvrez la console Composants de la console web Adobe Experience Manager. L’URL par défaut est `http://author-server:port/system/console/components`
 
-1. Dans le *URL d’auteur VersionRestoreManager* , spécifiez l’URL de l’instance d’auteur correspondante.
+1. Recherchez le **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** composant.
 
-1. Cliquez sur Enregistrer .
+1. Cliquez sur ![Bouton Désactiver](/help/forms/using/assets/enablebutton.png) pour désactiver la fonction [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] composant.
 
-Le *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* par défaut, les propriétés ne sont pas transférées vers l’instance de publication. Pour activer le rechargement du brouillon sur l’instance de publication, ces propriétés sont requises sur l’instance de publication.
+![Instance d’auteur](/help/forms/using/assets/replicationproperties.png)
 
-Pour reporter *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* propriétés pour l’instance de publication, désactivez le composant en tant que *com.day.cq.replication.impl.ReplicationPropertiesFilterFactory* sur l’instance d’auteur à l’aide de l’URL :`http://server:port/system/console/components`
+Pour activer la fonction Enregistrer en tant que brouillon, remplacez l’URL existante à l’adresse [!UICONTROL URL d’auteur VersionRestoreManager] avec l’URL de votre instance d’auteur. Pour remplacer l’URL :
+
+1. Sur l’instance de publication, ouvrez [!UICONTROL Configuration de la console Web d’Adobe Manager]. L’URL par défaut est `https://publish-server:port/system/console/configMgr`
+
+1. Recherchez et ouvrez le **[!UICONTROL Correspondence Management - Configuration de la restauration de version de l’instance d’auteur]** composant.
+
+1. Recherchez la variable **[!UICONTROL URL d’auteur VersionRestoreManager]** et spécifiez l’URL de l’instance d’auteur.
+
+1. Cliquez sur Enregistrer.
+
+![Instance de publication](/help/forms/using/assets/correspondencemanagement.png)
 
 Lorsque l’enregistrement des instances de lettre est activé, vous avez la possibilité de sélectionner l’emplacement où enregistrer les instances de lettre. Il existe deux options pour enregistrer les instances de lettre : enregistrement local ou enregistrement à distance.
 
@@ -323,7 +333,7 @@ Cette option est destinée aux personnes ayant des inquiétudes quant à l’enr
 
 #### Spécifiez les paramètres d’auteur de traitement {#specify-processing-author-settings}
 
-1. Dans AEM, ouvrez Configuration de la console web Adobe Experience Manager pour votre serveur via l’URL suivante : `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Dans AEM, ouvrez Configuration de la console web Adobe Experience Manager pour votre serveur via l’URL suivante : `https://<server>:<port>/system/console/configMgr`
 
    ![Configuration de la console Web d’Adobe Experience Manager](assets/2configmanager.png)
 
