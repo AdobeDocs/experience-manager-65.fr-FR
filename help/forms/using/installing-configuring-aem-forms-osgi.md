@@ -10,10 +10,10 @@ discoiquuid: dfc473eb-6091-4f5d-a5a0-789972c513a9
 docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 126d5309fe3c3b6474e180d21f5c7d1697d9e08a
 workflow-type: tm+mt
-source-wordcount: '1870'
-ht-degree: 99%
+source-wordcount: '1884'
+ht-degree: 97%
 
 ---
 
@@ -105,6 +105,9 @@ Avant de commencer à installer et configurer la fonctionnalité de capture de d
 
    * libicu
 
+* Installer [Redistribuable 32 bits de Microsoft Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+
+
 ## Installation du module complémentaire AEM Forms {#install-aem-forms-add-on-package}
 
 Le package du module complémentaire AEM Forms est une application déployée sur AEM. Le package contient des captures de données AEM Forms et d’autres fonctionnalités. Suivez les étapes ci-après pour installer le package du module complémentaire :
@@ -124,7 +127,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 ### (Windows uniquement) Installation automatique des redistribuables Visual Studio {#automatic-installation-visual-studio-redistributables}
 
-Si vous installez une instance AEM en mode élevé, les redistribuables Visual Studio manquants sont installés automatiquement lors de l’installation du module complémentaire AEM Forms.
+Si vous installez une instance AEM en mode élevé, les redistribuables Visual Studio 32 bits sont installés automatiquement lors de l’installation du module complémentaire AEM Forms.
 
 Pour évaluer si les redistribuables de Visual Studio sont installés automatiquement, ouvrez le fichier `error.log` accessible depuis le répertoire `/crx-repository/logs/`. Les journaux contiennent le message suivant :
 
