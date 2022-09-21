@@ -8,10 +8,10 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 081b0c70ceca0502cb84d7e1b68b0b12dc45a4e7
+source-git-commit: 633a9b6d972cf8b0bb102a7efd5eeb8e0b71a19e
 workflow-type: tm+mt
-source-wordcount: '3797'
-ht-degree: 97%
+source-wordcount: '3814'
+ht-degree: 96%
 
 ---
 
@@ -330,7 +330,8 @@ ht-degree: 97%
 + Intégration d’AEM Forms avec les solutions Experience Cloud {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Création d’expériences ciblées dans AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Mesure et amélioration de l’efficacité et de la conversion des formulaires](using/measure-improve-performance-forms-documents.md)
-   + [Configuration des analyses et des rapports](using/configure-analytics-forms-documents.md)
+   + [Analytics à l’aide de Cloud Service Framework](using/configure-analytics-forms-documents.md)
+   + [Analytics avec Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
    + [Consultation et compréhension des rapports d’analyse d’AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Créer et gérer des tests A/B pour les formulaires adaptatifs](using/ab-testing-adaptive-forms.md)
 + Publication et traitement d’AEM Forms {#publish-process-aem-forms}
@@ -683,6 +684,7 @@ ht-degree: 97%
 + Résolution des problèmes {#troubleshooting}
    + [Impossible d’utiliser certaines fonctionnalités de formulaires avec certaines versions du JDK Oracle](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Étapes supplémentaires pour obtenir un courrier électronique avec pièce jointe pour la version d’Adaptive Forms on JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+   + [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
    + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)

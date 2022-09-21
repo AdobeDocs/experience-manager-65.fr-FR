@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 26fbf8629715c983ccae9dcdee1defb279849107
+source-git-commit: 652f2f9b55857b8962f5bfd4edb85f3700866485
 workflow-type: tm+mt
-source-wordcount: '5461'
-ht-degree: 66%
+source-wordcount: '5535'
+ht-degree: 65%
 
 ---
 
@@ -786,6 +786,15 @@ Problèmes de conversion +++ HTML vers PDF
 * Vous pouvez vous connecter dans les 7 jours suivant le premier lancement de votre produit Adobe pour terminer une activation et une inscription en ligne ou utiliser un appareil compatible avec Internet et le numéro de série de votre produit pour terminer ce processus. Pour obtenir des instructions détaillées, voir [Activation hors ligne](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
 
 +++
+
++++ Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server
+
+Lorsque l’utilisateur tente de convertir des fichiers Word ou Excel en PDF sur Microsoft Windows Server, l’erreur suivante se produit :
+
+*Message d’erreur du convertisseur Principal : Le système ALC-PDG-015-003-The ne peut pas ouvrir le fichier d’entrée. Envoyez à nouveau votre fichier ou contactez votre administrateur système.*
+
+Pour résoudre le problème, voir [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
 
 ## Étapes suivantes {#next-steps}
 
