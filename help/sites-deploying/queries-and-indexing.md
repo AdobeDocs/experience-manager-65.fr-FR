@@ -1,7 +1,7 @@
 ---
 title: Requêtes et indexation Oak
 seo-title: Oak Queries and Indexing
-description: 'Découvrez comment configurer les index AEM. '
+description: Découvrez comment configurer les index AEM.
 seo-description: Learn how to configure indexes in AEM.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
@@ -12,10 +12,10 @@ discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 7cd4b6918a8b0de68f9f5c6a79ab3b49e8ef6fc1
+source-git-commit: b27a7a1cc2295b1640520dcb56be4f3eb4851499
 workflow-type: tm+mt
-source-wordcount: '2868'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 84%
 >
 >Cet article porte sur la configuration des index dans AEM 6. Pour connaître les meilleures pratiques sur l’optimisation des requêtes et l’indexation des performances, voir [Meilleures pratiques pour les requêtes et l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Contrairement à Jackrabbit 2, Oak n’indexe pas le contenu par défaut. Des index personnalisés doivent être créés si nécessaire, comme pour les bases de données relationnelles classiques. S’il n’existe aucun index pour une requête spécifique, plusieurs nœuds seront probablement parcourus. La requête peut toujours fonctionner, mais sera probablement très lente.
 
@@ -150,8 +150,8 @@ select * from [nt:base] where [alias] = '/admin'
 
 Pour définir un de propriété Lucene pour la requête ci-dessus, vous pouvez ajouter la définition suivante en créant un nœud sous **oak:index:index:**
 
-* **Nom:** `LucenePropertyIndex`
-* **Type:** `oak:QueryIndexDefinition`
+* **Nom :** `LucenePropertyIndex`
+* **Type :**`oak:QueryIndexDefinition`
 
 Une fois que le nœud a été créé, ajoutez les propriétés suivantes :
 
@@ -209,24 +209,24 @@ Si vous souhaitez utiliser l’analyseur prêt à l’emploi, vous pouvez le con
 
 1. Ajouter une propriété au nœud par défaut avec les propriétés suivantes :
 
-   * **Nom:** `class`
-   * **Type :** `String`
-   * **Valeur:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+   * **Nom :** `class`
+   * **Type :**`String`
+   * **Valeur :** `org.apache.lucene.analysis.standard.StandardAnalyzer`
 
    La valeur est le nom de la classe d’analyseur que vous souhaitez utiliser. 
 
    Vous pouvez également définir l’analyseur à utiliser avec une version spécifique de Lucene à l’aide de la propriété de chaîne facultative `luceneMatchVersion`. Un syntaxe valide pour l’utiliser avec Lucene 4.7 serait :
 
-   * **Nom:** `luceneMatchVersion`
-   * **Type :** `String`
-   * **Valeur:** `LUCENE_47`
+   * **Nom :** `luceneMatchVersion`
+   * **Type :**`String`
+   * **Valeur :** `LUCENE_47`
 
    Si `luceneMatchVersion` n’est pas spécifié, Oak utilise la version Lucene avec laquelle il est envoyée. 
 
 1. Si vous souhaitez ajouter un fichier stopwords aux configurations de l’analyseur, vous pouvez créer un noeud sous le noeud `default` l’une avec les propriétés suivantes :
 
-   * **Nom:** `stopwords`
-   * **Type :** `nt:file`
+   * **Nom :** `stopwords`
+   * **Type :**`nt:file`
 
 #### Création d’analyseurs via la composition {#creating-analyzers-via-composition}
 
@@ -234,37 +234,37 @@ Les analyseurs peuvent également être composés en fonction de `Tokenizers`, `
 
 Prenez cette structure de nœud comme exemple :
 
-* **Nom:** `analyzers`
+* **Nom :** `analyzers`
 
-   * **Nom:** `default`
+   * **Nom :** `default`
 
-      * **Nom:** `charFilters`
-      * **Type :** `nt:unstructured`
+      * **Nom :** `charFilters`
+      * **Type :**`nt:unstructured`
 
-         * **Nom:** `HTMLStrip`
-         * **Nom:** `Mapping`
-      * **Nom:** `tokenizer`
+         * **Nom :** `HTMLStrip`
+         * **Nom :** `Mapping`
+      * **Nom :** `tokenizer`
 
          * **Nom de la propriété:** `name`
 
-            * **Type :** `String`
-            * **Valeur:** `Standard`
-      * **Nom:** `filters`
-      * **Type :** `nt:unstructured`
+            * **Type :**`String`
+            * **Valeur :** `Standard`
+      * **Nom :** `filters`
+      * **Type :**`nt:unstructured`
 
-         * **Nom:** `LowerCase`
-         * **Nom:** `Stop`
+         * **Nom :** `LowerCase`
+         * **Nom :** `Stop`
 
             * **Nom de la propriété:** `words`
 
-               * **Type :** `String`
-               * **Valeur:** `stop1.txt, stop2.txt`
-            * **Nom:** `stop1.txt`
+               * **Type :**`String`
+               * **Valeur :** `stop1.txt, stop2.txt`
+            * **Nom :** `stop1.txt`
 
-               * **Type :** `nt:file`
-            * **Nom:** `stop2.txt`
+               * **Type :**`nt:file`
+            * **Nom :** `stop2.txt`
 
-               * **Type :** `nt:file`
+               * **Type :**`nt:file`
 
 
 
@@ -288,36 +288,7 @@ L’objectif de l’index Solr est principalement la recherche de texte intégra
 
 L’intégration dans AEM se produit au niveau du référentiel. Ainsi, Solr est l’un des index pouvant être utilisés dans Oak, la nouvelle implémentation de référentiel fournie avec AEM.
 
-Il peut être configuré pour fonctionner comme serveur intégré avec les instances AEM ou en tant que serveur distant.
-
-### Configuration d’AEM avec un serveur Solr intégré {#configuring-aem-with-an-embedded-solr-server}
-
->[!CAUTION]
->
->N’utilisez pas de serveur Solr intégré dans un environnement de production. Il doit uniquement être utilisé dans un environnement de développement.
-
-AEM peut être utilisée avec un serveur Solr intégré qui peut être configuré par le biais de la console web. Dans ce cas, le serveur Solr fonctionnera dans le même JVM que l’instance AEM sur laquelle il est intégré.
-
-Vous pouvez configurer le serveur Solr intégré en procédant comme suit :
-
-1. Accédez à la console web à l’adresse `https://serveraddress:4502/system/console/configMgr`
-1. Recherchez « **Oak Solr server provider** » (fournisseur du serveur Oak Solr). 
-1. Appuyez sur le bouton Modifier, puis, dans la fenêtre suivante, définissez le type de serveur sur **Embedded Solr (Solr intégré)** dans la liste déroulante.
-
-1. Ensuite, modifiez la configuration «**Oak Solr embedded server configuration**» (Configuration de serveur intégré Oak Solr) et créez une configuration. Pour plus d’informations sur les options de configuration, consultez [le site web d’Apache Solr](https://lucene.apache.org/solr/documentation.html).
-
-   >[!NOTE]
-   >
-   >La configuration du répertoire Solr (solr.home.path) recherchera un fichier portant le même nom dans le dossier d’installation d’AEM.
-
-1. Ouvrez CRXDE et connectez-vous en tant qu’administrateur.
-1. Ajoutez un nœud nommé **solrlndex** de type **oak:QueryIndexDefinition** sous **oak:index** avec les propriétés suivantes :
-
-   * **type :** `solr`(de type Chaîne)
-   * **async:** `async`(de type Chaîne)
-   * **reindex :** `true`(de type booléen)
-
-1. Enregistrez les modifications.
+Il peut être configuré pour fonctionner en tant que serveur distant avec l’instance AEM.
 
 ### Configuration d’AEM avec un seul serveur distant Solr {#configuring-aem-with-a-single-remote-solr-server}
 
@@ -439,7 +410,7 @@ La catégorie **com.day.cq.search** s’applique uniquement si vous utilisez l�
 
 Vous pouvez activer la journalisation en suivant cette procédure :
 
-1. Pointez votre navigateur sur `https://serveraddress:port/system/console/slinglog`
+1. Pointez votre navigateur sur `https://serveraddress:port/system/console/slinglog`.
 1. Cliquez sur le bouton **Add new Logger** (Ajouter un enregistreur) dans la partie inférieure de la console.
 1. Dans la ligne que vous venez de créer, ajoutez les catégories mentionnées ci-dessus. Vous pouvez utiliser le signe **+** pour ajouter plus d’une catégorie à un seul journal.
 1. Sélectionnez **DEBUG** dans la liste déroulante **la liste déroulante** Log level (Niveau de journal).

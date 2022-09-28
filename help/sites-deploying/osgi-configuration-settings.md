@@ -12,20 +12,20 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
+source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
 workflow-type: tm+mt
-source-wordcount: '3557'
-ht-degree: 62%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Paramètres de configuration OSGi{#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique de l’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
-OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés*&quot;.
+OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés* ».
 
-Cela permet une gestion conviviale des lots , car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (voir [Spécifications OSGi](https://www.osgi.org/Specifications/HomePage)) se trouve dans l’un des lots. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces lot ; voir [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
+Cela permet une gestion plus conviviale des lots car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces lot ; voir [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
 
 Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont pertinents à la réalisation du projet. Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 
@@ -59,8 +59,6 @@ Les paramètres de configuration OSGi suivants (répertoriés selon le lot) sont
 
 * Le **Mot de passe administrateur** doit être modifié après l’installation afin de garantir que la variable [sécurité](/help/sites-administering/security-checklist.md) de votre instance.
 * D’autres modifications ne doivent pas être nécessaires et faites attention car elles peuvent affecter l’accès au référentiel.
-
-**Service de messagerie Wiki** Configurez les paramètres de courrier électronique pour les courriers électroniques envoyés par un wiki.
 
 **Console de gestion OSGi Apache Felix** Configuration :
 
@@ -439,10 +437,6 @@ Permet de contrôler l’analyseur HTML pour le module de réécriture CQ.
 **Pool de connexions JDBC Day Commons** Configurez l&#39;accès à une base de données externe utilisée comme source de contenu.
 
 Comme c’est une configuration d’usine, plusieurs instances peuvent être configurées.
-
-**Service Sessions DPS Media Adobe CQ** Gérez les sessions DPS à utiliser avec les publications.
-
-Vous pouvez notamment définir `dps.session.service.url.name` : la valeur par défaut est définie sur [https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions](https://dpsapi2.digitalpublishing.acrobat.com/webservices/sessions)
 
 **Réécriture CDN** La communication entre AEM et un réseau de diffusion de contenu doit être assurée de sorte que les ressources/fichiers binaires soient diffusés à l’utilisateur final de manière sécurisée. Cela implique deux opérations :
 
