@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a383f0e620adf6968d912a9a1759e5ee020c908
+source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 99%
+source-wordcount: '3583'
+ht-degree: 90%
 
 ---
 
@@ -204,61 +204,93 @@ Si vous devez effectuer une mise à niveau vers une nouvelle version du connecte
 1. Copiez les fichiers jar dans le dossier d’installation AEM **&lt;aem-install>**/crx-quickstart/install/15.
 1. Démarrez AEM et vérifiez les fonctionnalités du connecteur.
 
-Vous pouvez utiliser le fichier de configuration avec les options suivantes :
+Vous pouvez utiliser le fichier de configuration avec les options présentées ci-dessous.
 
-* accessKey : clé d’accès AWS
-* secretKey : clé d’accès secrète AWS **Remarque :** Lorsque la variable `accessKey` ou `secretKey` n’est pas spécifié, alors la variable [Rôle IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) est utilisée pour l’authentification.
-* s3Bucket : nom du compartiment
-* s3Region : zone géographique du compartiment
-* path : chemin du magasin de données. La valeur par défaut est la suivante : **&lt;dossier d’installation AEM>/référentiel/magasin de données**.
-* minRecordLength : taille minimale d’un objet devant être enregistré dans le magasin de données. La valeur minimum/par défaut est **16 Ko.**
-* maxCachedBinarySize : les binaires dont la taille est inférieure ou égale à cette taille seront stockés dans le cache de la mémoire. La taille est exprimée en octets. La valeur par défaut est de ** 17408 **(17 ko).
+<!--
+* accessKey: The AWS access key.
+* secretKey: The AWS secret access key. **Note:** When the `accessKey` or `secretKey` is not specified then the [IAM role](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) is used for authentication.
+* s3Bucket: The bucket name.
+* s3Region: The bucket region.
+* path: The path of the data store. The default is **&lt;AEM install folder&gt;/repository/datastore**
+* minRecordLength: The minimum size of an object that should be stored in the data store. The minimum/default is **16KB.**
+* maxCachedBinarySize: Binaries with size less than or equal to this size will be stored in memory cache. The size is in bytes. The default is **17408 **(17 KB).
+* cacheSize: The size of the cache. The value is specified in bytes. The default is **64GB**.
+* secret: Only to be used if using binaryless replication for shared datastore setup.
+* stagingSplitPercentage: The percentage of cache size configured to be used for staging asynchronous uploads. The default value is **10**.
+* uploadThreads: The number of uploads threads that are used for asynchronous uploads. The default value is **10**.
+* stagingPurgeInterval: The interval in seconds for purging finished uploads from the staging cache. The default value is **300** seconds (5 minutes).
+* stagingRetryInterval: The retry interval in seconds for failed uploads. The default value is **600** seconds (10 minutes).
+-->
 
-* cacheSize : taille du cache. La valeur est exprimée en octets. La valeur par défaut est de **64 Go**.
-* secret : à utiliser uniquement si la réplication sans binaire est utilisée pour la configuration du magasin de données partagé.
-* stagingSplitPercentage : pourcentage de la taille du cache configuré afin d’être utilisé pour les chargements asynchrones intermédiaires. La valeur par défaut est de **10**.
-* uploadThreads : nombre de threads de chargement utilisés pour les chargements asynchrones. La valeur par défaut est de **10**.
-* stagingPurgeInterval : intervalle en secondes pour purger les chargements terminés à partir du cache intermédiaire. La valeur par défaut est de **300** secondes (5 minutes).
-* stagingRetryInterval : intervalle en secondes entre les nouvelles tentatives pour les chargements ayant échoué. La valeur par défaut est de **600** secondes (10 minutes).
+### Options du fichier de configuration du connecteur S3 {#s3-connector-configuration-file-options}
 
-### Options de zone géographique de compartiment {#bucket-region-options}
+>[!NOTE]
+>
+>Le connecteur S3 prend en charge l’authentification des utilisateurs IAM et l’authentification des rôles IAM. Pour utiliser l’authentification des rôles IAM, omettez la variable `accessKey` et `secretKey` à partir de votre fichier de configuration. Le connecteur S3 est alors défini par défaut sur [Rôle IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) affectée à l’instance.
+
+| Clé | Description | Valeur par défaut | Requis |
+| --- | --- | --- | --- |
+| accessKey | Identifiant de clé d’accès pour l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
+| secretKey | Clé d’accès secrète de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
+| cacheSize | Taille (en octets) du cache local. | 64 Go | Non. |
+| connectionTimeout | Définissez la durée d’attente (en millisecondes) avant l’expiration lors de l’établissement initial d’une connexion. | 10 000 | Non. |
+| maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) seront stockés dans le cache de mémoire. | 17408 (17 Ko) | Non. |
+| maxConnections | Définissez le nombre maximal de connexions HTTP ouvertes autorisées. | 50 | Non. |
+| maxErrorRetry | Définissez le nombre maximal de tentatives de reprise pour les requêtes ayant échoué (récupérables). | 3 | Non. |
+| minRecordLength | Taille minimale d’un objet (en octets) qui doit être stocké dans l’entrepôt de données. | 16384 | Non. |
+| path | Chemin d’accès local de la banque de données AEM. | `crx-quickstart/repository/datastore` | Non. |
+| proxyHost | Définissez l’hôte proxy facultatif par lequel le client se connectera. |  | Non. |
+| proxyPort | Définissez le port proxy facultatif par lequel le client se connectera. |  | Non. |
+| s3Bucket | Nom du compartiment S3. |  | Oui |
+| s3EndPoint | Point d’entrée de l’API REST S3. |  | Non. |
+| s3Region | Région où réside le compartiment. Voir [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus d’informations. | Région dans laquelle l’instance AWS est en cours d’exécution. | Non. |
+| socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion ne expire et ne soit fermée. | 50 000 | Non. |
+| stagingPurgeInterval | Intervalle (en secondes) de purge des chargements terminés du cache intermédiaire. | 300 | Non. |
+| stagingRetryInterval | Intervalle (en secondes) entre deux tentatives de transfert ayant échoué. | 600 | Non. |
+| stagingSplitPercentage | Le pourcentage de `cacheSize` à utiliser pour l’évaluation des téléchargements asynchrones. | 10 | Non. |
+| uploadThreads | Nombre de threads de chargement utilisés pour les chargements asynchrones. | 10 | Non. |
+| writeThreads | Nombre de threads simultanés utilisés pour l’écriture via S3 Transfer Manager. | 10 | Non. |
+
+<!---
+### Bucket region options {#bucket-region-options}
 
 <table>
  <tbody>
   <tr>
-   <td>États-Unis standard</td>
+   <td>US Standard</td>
    <td><code>us-standard</code></td>
   </tr>
   <tr>
-   <td>Ouest des États-Unis</td>
+   <td>US West</td>
    <td><code>us-west-2</code></td>
   </tr>
   <tr>
-   <td>Ouest des États-Unis (Californie du Nord)</td>
+   <td>US West (Northern California)</td>
    <td><code>us-west-1</code></td>
   </tr>
   <tr>
-   <td>UE (Irlande)<br /> </td>
+   <td>EU (Ireland)<br /> </td>
    <td><code>EU</code></td>
   </tr>
   <tr>
-   <td>Asie-Pacifique (Singapour)<br /> </td>
+   <td>Asia Pacific (Singapore)<br /> </td>
    <td><code>ap-southeast-1</code></td>
   </tr>
   <tr>
-   <td>Asie-Pacifique (Sydney)<br /> </td>
+   <td>Asia Pacific (Sydney)<br /> </td>
    <td><code>ap-southeast-2</code></td>
   </tr>
   <tr>
-   <td>Asie-Pacifique (Tokyo)</td>
+   <td>Asia Pacific (Tokyo)</td>
    <td><code>ap-northeast-1</code></td>
   </tr>
   <tr>
-   <td>Amérique du Sud (Sao Paolo)<br /> </td>
+   <td>South America (Sao Paolo)<br /> </td>
    <td><code>sa-east-1</code></td>
   </tr>
  </tbody>
 </table>
+-->
 
 ### Mise en cache du magasin de données {#data-store-caching}
 
