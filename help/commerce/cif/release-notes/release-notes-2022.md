@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2022
 description: Notes de mise à jour d’AEM Content and Commerce 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 6c5c37c1c365e1f03ea9b5c935adf63a33faba5d
+source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 50%
+source-wordcount: '812'
+ht-degree: 48%
 
 ---
 
@@ -20,6 +20,21 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 | Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
+
+## Date de publication : Septembre 2022
+
+| Composant | Version | Détails |
+|:-------|:-----:|---------------------:|
+| Module complémentaire CIF | 2022.09.20.00 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
+| Composants principaux CIF | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| Site de référence CIF Venia | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
+
+### Nouveautés {#what-is-new-september}
+
+* Les auteurs peuvent enrichir dynamiquement des listes de produits avec des fragments d’expérience (par exemple : Placer une bannière entre les listes de produits)
+* Le composant Liste prend en charge les pages de produit/catégorie associées pour afficher dynamiquement les pages associées.
+* Prise en charge des composants Peregrine 12.5
+* Prise en charge du chargement des prix côté client dans le teaser de produit et le carrousel
 
 ## Date de publication : Juillet 2022
 
