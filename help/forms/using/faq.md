@@ -12,10 +12,10 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
+source-git-commit: a90ea57142110ebd11a8a9580c29df1698b8dce1
 workflow-type: tm+mt
-source-wordcount: '1995'
-ht-degree: 91%
+source-wordcount: '2005'
+ht-degree: 84%
 
 ---
 
@@ -103,11 +103,11 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Les attributs d’alignement vertical et horizontal sont-ils pris en charge dans les formulaires HTML ? 
 
-   Oui, ils le sont. L’attribut vAlign n’est pas pris en charge dans Internet Explorer et dans le champ multiligne.
+   Réponse : Oui, les attributs vAlign et hAlign sont pris en charge. L’attribut vAlign n’est pas pris en charge dans Internet Explorer et dans le champ multiligne.
 
 1. Les formulaires HTML5 prennent-ils en charge les caractères de l’hébreu ?
 
-   Les formulaires HTML5 prennent en charge les caractères de l’hébreu tous les navigateurs, à l’exception de Microsoft Internet Explorer.
+   Réponse : Les formulaires HTML5 prennent en charge les caractères hébreux dans tous les navigateurs, à l’exception de Microsoft Internet Explorer.
 
 1. Existe-t-il des limites de caractères dans les champs numériques des formulaires HTML5 ?
 
@@ -115,7 +115,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
 
-   De nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données, les DOM de disposition sont requis pour rendre un XDP sur un formulaire HTML.
+   Réponse : De nombreuses structures et objets de données intermédiaires tels que les DOM de formulaire, les DOM de données et les DOM de mise en page sont nécessaires pour effectuer le rendu d’un XDP sur un formulaire de HTML.
 
    Pour les formulaires PDF, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, et des objets. Acrobat prend également en charge la présentation et les scripts.
 
@@ -142,12 +142,13 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Quel est l’ordre de lecture de l’info-bulle et de la légende pour les lecteurs d’écran ?
 
+   Réponse:
    * Lorsqu’il y a une légende et une info-bulle, seule la légende est lue. Si la légende n’est pas disponible, l’info-bulle est lue. Vous pouvez également spécifier la priorité de lecture dans un fichier XDP en utilisant le concepteur de formulaires
    * Lorsque vous survolez un élément, l’info-bulle s’affiche. Si aucune info-bulle n’est disponible, le texte vocal s’affiche. Si aucun texte vocal n’est disponible, le nom du champ s’affiche.
 
 1. Lorsque vous survolez un champ, une info-bulle s’affiche. Comment désactiver cette fonction ?
 
-   Pour désactiver l’affichage d’info-bulle lorsque vous survolez un champ, choisissez Aucun dans le panneau Accessibilité de Designer.
+   Réponse : Pour désactiver l’info-bulle au survol, sélectionnez none dans le panneau d’accessibilité de Designer.
 
 1. Dans Designer, un utilisateur peut configurer les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Lors du rendu des formulaires, les formulaires HTML5 prennent-ils en compte ces propriétés personnalisées d’aspect ?
 
@@ -155,7 +156,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Lorsqu’un formulaire HTML5 est ouvert dans un navigateur pris en charge, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Lorsque le même formulaire HTML5 est prévisualisé dans Forms Designer, les champs et la mise en page semblent correctement alignés et les sous-formulaires apparaissent dans la bonne position. Comment corriger le problème ?
 
-   Lorsqu’un sous-formulaire peut enchaîner un contenu et qu’il présente un élément de bordure masqué, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Pour résoudre le problème, vous pouvez supprimer ou commenter les éléments &lt;border> masqués du fichier XDP correspondant. Par exemple, l’élément &lt;border> suivant est marqué comme commentaire :
+   Réponse : Lorsqu’un sous-formulaire est configuré pour enchaîner le contenu et que le sous-formulaire comporte un élément de bordure masqué, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires apparaissent recouverts. Pour résoudre le problème, vous pouvez supprimer ou commenter les éléments &lt;border> masqués du fichier XDP correspondant. Par exemple, l’élément &lt;border> suivant est marqué comme commentaire :
 
    ```xml
                <!--<border>
@@ -166,7 +167,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi les lecteurs d’écran ne fonctionnent-ils pas correctement avec l’objet de champ Date/Heure ?
 
-   Les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure du champ pour que le lecteur d’écran puisse les lire. Utilisez une info-bulle ou du texte de lecteur d’écran pour indiquer à l’utilisateur de sélectionner manuellement la date et l’heure du champ.
+   Réponse : Les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure du champ pour que le lecteur d’écran puisse les lire. Utilisez une info-bulle ou du texte de lecteur d’écran pour indiquer à l’utilisateur de sélectionner manuellement la date et l’heure du champ.
 
 1. Les formulaires HTML5 prennent-ils en charge les modèles d’affichage pour les champs flottants ?
 
@@ -192,12 +193,13 @@ Réponse : Le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez un
 
 1. Existe-t-il une convention de dénomination recommandée et des mots-clés réservés à éviter ?
 
+   Réponse:
    * Dans AEM Forms Designer, il est recommandé de ne pas commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un trait de soulignement (_). Pour utiliser un trait de soulignement au début du nom, ajoutez un préfixe après le trait de soulignement,_&lt;prefix>&lt;objectname>.
    * Toutes les API des formulaires HTML5 API sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md).
 
 1. Les formulaires HTML5 prennent-ils en charge les champs flottants ?
 
-   Oui, les formulaires HTML5 prennent en charge les champs flottants. Pour permettre l’utilisation de champs flottants, ajoutez la propriété suivante au profil de rendu :
+   Réponse : Oui, HTML5 Forms prend en charge les champs flottants. Pour permettre l’utilisation de champs flottants, ajoutez la propriété suivante au profil de rendu :
 
    >[!NOTE]
    >
@@ -213,7 +215,7 @@ Réponse : Le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez un
 
 1. Les formulaires HTML5 exécutent-ils le script d’initialisation et forment-ils des événements prêts plusieurs fois ?
 
-   Oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois côté client. Il est suggéré d’écrire des scripts tels que les événements initialize ou form:ready en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit effectuée en fonction de l’état des données et de manière idempotente (si les données sont identiques).
+   Réponse : Oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois du côté client. Il est suggéré d’écrire des scripts tels que les événements initialize ou form:ready en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit effectuée en fonction de l’état des données et de manière idempotente (si les données sont identiques).
 
 ### Conception XDP {#designing-xdp}
 
