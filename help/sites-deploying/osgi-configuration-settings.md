@@ -12,7 +12,7 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 4c3cc888a7590fdbee9b7d7e441602e4ae3f54b0
+source-git-commit: 71c318e59f39b091f52650853be2d472354c2f1c
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -242,11 +242,6 @@ Si une valeur de chemin configurée se termine par une barre oblique, la recherc
 * **Script User (Utilisateur de script)** : cette propriété facultative peut spécifier le compte utilisateur utilisé pour lire les scripts. Si aucun nombre n’est spécifié, l’utilisateur `admin` est utilisé par défaut.
 
 * **Default Extensions (Extensions par défaut)** La liste des extensions pour lesquelles le comportement par défaut est utilisé. Cela signifie que le dernier segment de chemin du type de ressource peut être utilisé comme nom du script.
-
-**Day Commons GFX Font Helper** Lors du rendu des graphiques, vous pouvez utiliser DrawText pour incorporer du texte. Pour cela, vous pouvez également installer vos propres polices :
-
-* Définissez la variable **Chemin de la police** pour rechercher des polices spécifiques au projet.
-Par exemple, `/apps/myapp/fonts`.
 
 **Configuration du proxy des composants HTTP Apache** Configuration du proxy pour tout le code utilisant le client Apache HTTP, utilisée lors de la création d’un HTTP ; par exemple lors de la réplication.
 
