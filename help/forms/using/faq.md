@@ -12,10 +12,10 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 1e301f3991a18a594ac10a6548a0a645327dd4dd
+source-git-commit: f39102c938107b8ce01325499f29f00e287b5bcc
 workflow-type: tm+mt
 source-wordcount: '1995'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -99,7 +99,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi certaines polices affichées dans le formulaire HTML sont-elles différentes de celles utilisées lors de la conception du formulaire ?
 
-   Réponse : les formulaires HTML5 n’intègrent pas de polices (contrairement aux formulaires PDF où les polices sont intégrées au formulaire). Pour la version HTML du formulaire à générer comme prévu, assurez -vous que les polices indiquées dans le XDP sont disponibles sur le serveur et sur l’ordinateur client. Si les polices requises ne sont pas disponibles sur le serveur, les polices de secours sont utilisées. De plus, si vous utilisez des polices dans le modèle de formulaire qui ne sont pas disponibles sur le périphérique client, les polices par défaut du navigateur sont utilisées pour le rendu du texte.
+   Réponse : HTML5 Forms n’autorise pas l’incorporation de polices (contrairement aux PDF forms dans lesquels les polices sont incorporées). Pour que la version par HTML d’un formulaire s’affiche comme prévu, assurez-vous que les polices sont disponibles dans le référentiel CRX (AEM Content Repository) de votre serveur AEM Forms et sur la machine sur laquelle AEM Designer est installé. Lorsque les polices ne sont pas disponibles dans le référentiel CRX de votre serveur AEM Forms ou à l’emplacement d’installation d’AEM Designer, le formulaire est rendu avec des polices de secours.
 
 1. Les attributs d’alignement vertical et horizontal sont-ils pris en charge dans les formulaires HTML ? 
 
