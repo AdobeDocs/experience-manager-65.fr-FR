@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 8b4459c69b73159ce5afd819dfb772df5c51cd16
+source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
 workflow-type: tm+mt
-source-wordcount: '1136'
-ht-degree: 95%
+source-wordcount: '1134'
+ht-degree: 88%
 
 ---
 
@@ -54,8 +54,8 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    * Chemin d’accès à la charge utile : sélectionnez un chemin spécifique
    * Modèle de workflow : sélectionnez un modèle de workflow
    * Cessionnaire : sélectionnez un cessionnaire de workflow
-   * Type : tâche, élément de workflow ou échec de workflow
-   * État de la tâche : Active, Complète ou Terminée
+   * Type : Tâche, élément de workflow ou échec de workflow
+   * État de la tâche : Principal, complet ou arrêté
    * Où j’en suis : Propriétaire ET cessionnaire, Propriétaire uniquement, Cessionnaire uniquement
    * Date de début : date de début avant ou après une date spécifiée
    * Date de fin : date de fin avant ou après une date spécifiée
@@ -98,13 +98,13 @@ Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous perme
 
 * **Détails de l’échec**
 Ouvre une fenêtre pour afficher le 
-**Message d’échec**, l’**Étape** et la **Pile des échecs**.
+**Message d’échec**, **Étape**, et **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
 
-* **Relancer l’étape** Exécute à nouveau l’instance du composant d’étape de test. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur d’origine. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
-* **Arrêter** Arrêtez le workflow si l’erreur a provoqué une situation irréconciliable pour le workflow. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
+* **Relancer l’étape** Exécute à nouveau l’instance du composant d’étape de test. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
+* **Arrêter** Arrêtez le workflow si l’erreur a provoqué une situation irrémédiable pour le workflow. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
 * **Arrêter et réessayer** Similaire à **Arrêter**, à ceci près qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
 
 Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, utilisez les étapes suivantes :
@@ -119,7 +119,7 @@ Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, 
 
 Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel.
 
-Configurez la **configuration de la purge du workflow Adobe Granite** pour purger les instances de workflow en fonction de leur âge et de leur statut. Vous pouvez également purger les instances de workflow de tous les modèles ou d’un modèle spécifique.
+Configurer **Configuration de la purge du workflow Adobe Granite** pour purger les instances de workflow en fonction de leur âge et de leur état. Vous pouvez également purger les instances de workflow de tous les modèles ou d’un modèle spécifique.
 
 Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflow qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow particulier lorsqu’elles s’exécutent beaucoup plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après un certain nombre de jours pour réduire la taille du référentiel.
 
@@ -159,7 +159,7 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
   <tr>
    <td>Modèles à purger</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>ID des modèles de workflows à purger. L’ID est le chemin d’accès au nœud de modèle, par exemple :<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Pour purger les instances de tous les modèles de workflows, ne spécifiez aucune valeur.</p> <p>Pour spécifier plusieurs modèles, cliquez sur le bouton + dans la console web. </p> </td>
+   <td><p>ID des modèles de workflows à purger. L’ID est le chemin d’accès au noeud de modèle, par exemple :<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Pour spécifier plusieurs modèles, cliquez sur le bouton + dans la console web. </p> <p>Ne spécifiez aucune valeur pour purger les instances de tous les modèles de workflow.</p> </td>
   </tr>
   <tr>
    <td>Âge de workflow</td>
@@ -185,7 +185,7 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 
 ## Utilisation de variables de workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
 
-Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur dans votre propre enregistrement géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
+Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur dans votre propre enregistrement géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour le stockage externe.
 
 ### Définition du modèle pour utiliser l’enregistrement externe des métadonnées {#set-model-for-external-storage}
 
@@ -193,7 +193,7 @@ Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le 
 
 La propriété *userMetadataPersistenceEnabled* sera stocké dans le nœud *jcr:content node* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
 
-L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
+L’illustration ci-dessous montre comment définir l’indicateur sur un workflow.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 
