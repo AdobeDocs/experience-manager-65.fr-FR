@@ -10,14 +10,26 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 62%
+source-wordcount: '2371'
+ht-degree: 61%
 
 ---
 
 # Référence des prédicats de Query Builder{#query-builder-predicate-reference}
+
+>[!CAUTION]
+>
+>Les informations contenues dans cette page ne sont pas exhaustives.
+>
+>Pour plus d’informations, voir la liste sous **Prédicats disponibles** dans la console de débogage Query Builder ; par exemple, à l’adresse :
+>* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+>
+>Pour obtenir un exemple, reportez-vous à :
+>
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+
 
 ## Général {#general}
 
@@ -39,7 +51,7 @@ ht-degree: 62%
 * [memberOf](/help/sites-developing/querybuilder-predicate-reference.md#memberof)
 * [nodename](/help/sites-developing/querybuilder-predicate-reference.md#nodename)
 * [notexpired](/help/sites-developing/querybuilder-predicate-reference.md#notexpired)
-* [path](/help/sites-developing/querybuilder-predicate-reference.md#path)
+* [le chemin](/help/sites-developing/querybuilder-predicate-reference.md#path)
 * [property](/help/sites-developing/querybuilder-predicate-reference.md#property)
 * [rangeproperty](/help/sites-developing/querybuilder-predicate-reference.md#rangeproperty)
 * [relativedaterange](/help/sites-developing/querybuilder-predicate-reference.md#relativedaterange)
@@ -318,7 +330,7 @@ Permet de trier les résultats. Si un classement basé sur plusieurs propriété
 
     Si cette valeur est définie sur « `ignore` », le tri n’est pas sensible à la casse, ce qui signifie que « a » vient avant « B » ; si cette valeur est vide ou ignorée, le tri est sensible à la casse, ce qui signifie que « B » vient avant « a ».
 
-### path {#path}
+### le chemin {#path}
 
 Effectue une recherche à un emplacement donné.
 
@@ -326,7 +338,7 @@ Ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-14}
 
-* **path**
+* **le chemin**
 
    modèle de chemin; selon l’exacte, l’une ou l’autre des sous-arborescences correspond (comme l’ajout de `//*` dans xpath, mais notez que cela n’inclut pas le chemin de base (exact=false, par défaut) ou qu’un seul chemin exact correspond, ce qui peut inclure des caractères génériques ( `*`); si self est défini, la recherche porte sur la sous-arborescence entière, y compris le noeud de base.
 
