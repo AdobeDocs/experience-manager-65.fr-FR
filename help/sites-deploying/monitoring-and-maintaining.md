@@ -12,9 +12,9 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: fd9661ee94edf8f88a93ae35ba2563b3021add4d
+source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
 workflow-type: tm+mt
-source-wordcount: '5901'
+source-wordcount: '5905'
 ht-degree: 93%
 
 ---
@@ -128,14 +128,14 @@ Pour purger les versions d’un site web, procédez comme suit :
    ![Configuration de la purge de version](assets/version-purge-configuration.png)
 
    * **Purge des chemins**
-Définissez le chemin d’accès de début du contenu à purger (par exemple, 
-`/content/wknd`).
+Définissez le chemin de début du contenu à purger. par exemple, 
+`/content/wknd`.
 
       >[!CAUTION]
       >
       >Il est vivement recommandé de définir plusieurs chemins pour chaque site web.
       >
-      >La définition d’un chemin avec trop d’enfants rallonge la durée de la purge.
+      >La définition d’un chemin avec trop d’enfants peut considérablement rallonger le temps nécessaire à la purge.
 
    * **Purge récursive des versions**
 
