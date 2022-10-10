@@ -12,10 +12,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: ad0f5f536657a90a8b2476b43576060f3dc85868
+source-git-commit: a6067ebb1b5be67515cd3567f56c72463c5f7123
 workflow-type: tm+mt
-source-wordcount: '5868'
-ht-degree: 94%
+source-wordcount: '5901'
+ht-degree: 93%
 
 ---
 
@@ -131,6 +131,12 @@ Pour purger les versions d’un site web, procédez comme suit :
 Définissez le chemin d’accès de début du contenu à purger (par exemple, 
 `/content/geometrixx-outdoors`).
 
+      >[!CAUTION]
+      >
+      >Il est vivement recommandé de définir plusieurs chemins pour chaque site web.
+      >
+      >La définition d’un chemin avec trop d’enfants rallonge la durée de la purge.
+
    * **Purge récursive des versions**
 
       * Désélectionnez cette option si vous souhaitez purger uniquement le noeud défini par votre chemin d’accès.
@@ -173,7 +179,7 @@ Le processus répertorie tous les noeuds qui ont été traités. Au cours du pro
 Par ailleurs, la console affiche des informations utiles sur les versions :
 
 * `V 1.0` : le numéro de version.
-* `V 1.0.1`&#42; : l’étoile indique que la version est celle qui est active.
+* `V 1.0.1`&#42;: l’étoile indique que la version est la version actuelle (de base) et ne peut pas être purgée.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100` : la date de la version.
 
