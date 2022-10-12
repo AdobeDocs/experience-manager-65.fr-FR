@@ -12,10 +12,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 85987222e8b216f22ae1fec4e080488d01f23063
+source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
 workflow-type: tm+mt
-source-wordcount: '5905'
-ht-degree: 93%
+source-wordcount: '5972'
+ht-degree: 91%
 
 ---
 
@@ -609,12 +609,12 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Images mémoire de threads</td>
    <td>Observez les threads JVM. Identifiez les contentions, les verrouillages et les exécutions longues.</td>
-   <td><p>En fonction du système d’exploitation :<br /> - Unix/Linux : <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (mode console) : Ctrl-Break<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://java.net/projects/tda/">TDA</a>.<br /> </p> </td>
+   <td><p>En fonction du système d’exploitation :<br /> - Unix/Linux : <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows (mode console) : Ctrl-Break<br /> </p> <p>Des outils d’analyse sont disponibles, tels que <a href="https://github.com/irockel/tda">TDA</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td>Vidages de tas</td>
    <td>Problèmes d’insuffisance de mémoire affectant la vitesse de performance.</td>
-   <td><p>Ajoutez l’option :<br /> option <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> vers l’appel Java à AEM.</p> <p>Voir le <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">Guide de dépannage pour Java SE 6 avec HotSpot VM</a>.</p> </td>
+   <td><p>Ajoutez l’option :<br /> option <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> vers l’appel Java à AEM.</p> <p>Voir <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">Page de dépannage des options/indicateurs pour JVM</a>.</p> </td>
   </tr>
   <tr>
    <td>Appels système</td>
@@ -624,7 +624,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Apache Bench</td>
    <td>Identifier les fuites de mémoire, analyser les temps de réponse de manière sélective.</td>
-   <td><p>L’utilisation de base est :</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Consultez <a href="#apache-bench">Apache Bench</a> et la <a href="https://httpd.apache.org/docs/2.2/programs/ab.html">page ab man</a> pour plus de détails.</p> </td>
+   <td><p>L’utilisation de base est :</p> <p><code>ab -k -n &lt;<em>requests</em>&gt; -c &lt;<em>concurrency</em>&gt; &lt;<em>url</em>&gt;</code></p> <p>Consultez <a href="#apache-bench">Apache Bench</a> et la <a href="https://httpd.apache.org/docs/2.4/programs/ab.html">page ab man</a> pour plus de détails.</p> </td>
   </tr>
   <tr>
    <td>Analyse de la recherche</td>
@@ -634,7 +634,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>JMeter</td>
    <td>Tests de chargement et tests fonctionnels.</td>
-   <td><a href="https://jakarta.apache.org/jmeter/">https://jakarta.apache.org/jmeter/</a></td>
+   <td><a href="https://jmeter.apache.org/">https://jmeter.apache.org/</a></td>
   </tr>
   <tr>
    <td>JProfiler</td>
@@ -642,14 +642,19 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
+   <td>Enregistreur de vol Java</td>
+   <td>Java Flight Recorder (JFR) est un outil permettant de collecter des données de diagnostic et de profilage sur une application Java en cours d’exécution.</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE</a></td>
+  </tr>
+  <tr>
    <td>JConsole</td>
    <td>Observer les threads et les métriques JVM.</td>
-   <td><p>Utilisation : jconsole</p> <p>Voir <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html"> jconsole</a> et <a href="#monitoring-performance-using-jconsole">Surveillance de la performance en utilisant JConsole</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.6, JConsole est extensible avec des modules complémentaires ; par exemple, Top ou TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Utilisation : jconsole</p> <p>Voir <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html"> jconsole</a> et <a href="#monitoring-performance-using-jconsole">Surveillance de la performance en utilisant JConsole</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.8, JConsole est extensible avec des modules complémentaires ; par exemple, Top ou TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>Observer les métriques, les threads, la mémoire et le profilage JVM.</td>
-   <td><p>Utilisation : jvisualvm ou visualvm<br /> </p> <p>Voir <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html"> jvisualvm</a>, <a href="https://visualvm.dev.java.net/"> visualvm</a> et <a href="#monitoring-performance-using-j-visualvm">Surveillance de la performance à l’aide de (J)VisualVM</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.6, VisualVM est extensible avec des modules complémentaires.</p> </td>
+   <td><p>Utilisation : visualvm ou visualvm<br /> </p> <p>Voir <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> et <a href="#monitoring-performance-using-j-visualvm">Surveillance des performances à l’aide de (J) VisualVM</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.8, VisualVM est extensible avec des modules complémentaires. VisualVM est arrêté après JDK 9. Utilisez plutôt Java Flight Recorder.</p> </td>
   </tr>
   <tr>
    <td>truss/strace, lsof</td>
@@ -664,7 +669,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Outil de profilage du processeur et de la mémoire<br /> </td>
    <td><a href="#interpreting-the-request-log"> Utilisé pour l’analyse des demandes lentes pendant le développement.</a>.</td>
-   <td>Par exemple, <a href="https://www.yourkit.com/">YourKit</a>.</td>
+   <td>Par exemple, <a href="https://www.yourkit.com/">YourKit</a>. ou le <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Enregistreur de vol Java</a>.</td>
   </tr>
   <tr>
    <td><a href="#information-collection">Collecte des informations</a></td>
@@ -810,7 +815,7 @@ Vous pouvez avoir à concaténer les différents fichiers `request.log` si vous 
 
 ### Apache Bench {#apache-bench}
 
-Pour minimiser l’impact des cas particuliers (tels que le nettoyage, etc.), il est recommandé d’utiliser un outil tel que `apachebench` (voir par exemple [ab](https://httpd.apache.org/docs/2.2/programs/ab.html) pour obtenir plus d’informations) pour vous aider à identifier les fuites de mémoire et à analyser de manière sélective le délai de réponse.
+Pour minimiser l’impact des cas particuliers (tels que le nettoyage, etc.), il est recommandé d’utiliser un outil tel que `apachebench` (voir par exemple [ab](https://httpd.apache.org/docs/2.4/programs/ab.html) pour obtenir plus d’informations) pour vous aider à identifier les fuites de mémoire et à analyser de manière sélective le délai de réponse.
 
 Apache Bench peut être utilisé de la manière suivante :
 
@@ -921,7 +926,7 @@ La commande d’outil `jconsole` est disponible avec JDK.
 
 ### Surveillance de la performance à l’aide de (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
-Depuis le JDK 1.6, la commande d’outil `jvisualvm` est disponible. Une fois que vous avez installé le JDK 1.6. vous pouvez :
+Pour JDK 6-8, la commande d’outil `visualvm` est disponible. Après avoir installé un JDK, vous pouvez :
 
 1. Démarrez votre instance AEM.
 
@@ -932,7 +937,7 @@ Depuis le JDK 1.6, la commande d’outil `jvisualvm` est disponible. Une fois q
 1. Exécutez l’une des deux options suivantes :
 
    * `jvisualvm` : dans le dossier bin JDK 1.6 (version testée)
-   * `visualvm` : peut être téléchargé à partir de [VisualVM](https://visualvm.dev.java.net/) (la version la plus à la pointe)
+   * `visualvm` : peut être téléchargé à partir de [VisualVM](https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/) (la version la plus à la pointe)
 
 1. Depuis l’application `Local`, double-cliquez sur `com.day.crx.quickstart.Main` ; l’aperçu par défaut s’affiche :
 
@@ -1185,7 +1190,7 @@ Ou JConsole :
    ```
 
 * Connectez-vous ensuite à JVM avec la JConsole :
-   ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
+   ` [https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html)`
 
 Cela vous aidera à déterminer la quantité de mémoire utilisée, les algorithmes GC utilisés, leur durée d’exécution et l’impact sur la performance de l’application. Sans cela, le réglage consiste simplement à manipuler des boutons de façon aléatoire.
 
@@ -1193,4 +1198,4 @@ Cela vous aidera à déterminer la quantité de mémoire utilisée, les algorith
 >
 >Pour la machine virtuelle d’Oracle, il existe également des informations à l’adresse suivante : 
 >
->[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
+>[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
