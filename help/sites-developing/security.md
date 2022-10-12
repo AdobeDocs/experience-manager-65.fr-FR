@@ -3,17 +3,11 @@ title: Sécurité
 seo-title: Security
 description: La sécurité des applications débute lors de la phase de développement.
 seo-description: Application Security starts during the development phase
-uuid: efd5f3bc-da07-4fc8-a6ce-f1e6f5084c9e
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -23,7 +17,7 @@ La sécurité des applications débute lors de la phase de développement. Adobe
 
 ## Utilisation de la session de requête {#use-request-session}
 
-En respectant le principe des privilèges les moins élevés, Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l’utilisateur et au contrôle d’accès approprié.
+En suivant le principe de moindre privilège, Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l’utilisateur et au contrôle d’accès approprié.
 
 ## Protection contre les scripts de site à site (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -41,7 +35,7 @@ Il est important que vous adaptiez cette configuration à vos besoins en matièr
 >
 >Il est vivement conseillé de toujours accéder à l’API de protection XSS en utilisant l’interface [XSSAPI fournie par AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-En outre, un pare-feu d’application web, tel que [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle central et fiable sur la sécurité de l’environnement de déploiement et se protéger contre les attaques de script intersite qui n’avaient pas été détectées auparavant.
+En outre, un pare-feu d’application Web, tel que [mod_security pour Apache](https://www.modsecurity.org), peut fournir un contrôle centralisé fiable sur la sécurité de l’environnement de déploiement, ainsi qu’une protection contre les attaques XSS qui n’étaient pas détectées précédemment.
 
 ## Accès aux informations de service cloud {#access-to-cloud-service-information}
 
@@ -63,4 +57,4 @@ Avec les autorisations par défaut :
 
 ## Protection contre les attaques par falsification de requête intersite {#protect-against-cross-site-request-forgery-attacks}
 
-Pour plus d’informations sur les mécanismes de sécurité mis en œuvre par AEM pour limiter l’impact des attaques CSRF, reportez-vous à la section [Sling Referrer Filter](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de la liste de contrôle de sécurité et à la [documentation de l’infrastructure de protection CSRF](/help/sites-developing/csrf-protection.md).
+Pour plus d’informations sur les mécanismes de sécurité utilisés par AEM pour atténuer les attaques CSRF, voir la section [Filtre de référent Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de la liste de contrôle de sécurité et de la section [Documentation du framework de protection CSRF](/help/sites-developing/csrf-protection.md).
