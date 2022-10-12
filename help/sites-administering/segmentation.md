@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: d546462b4b78a743e047dcfea5fc2dc92d131bb5
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 97%
+source-wordcount: '1787'
+ht-degree: 94%
 
 ---
 
@@ -35,9 +35,13 @@ AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs.
 
 La console [Audiences](/help/sites-authoring/managing-audiences.md) permet de gérer les segments pour ContextHub ou ClientContext, ainsi que les audiences de votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub. Pour les [segments ClientContext](/help/sites-administering/campaign-segmentation.md) et Adobe Target, voir la documentation appropriée.
 
-Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**.
+Pour accéder à vos segments, vous devez sélectionner votre configuration. Dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**. Les configurations disponibles s’affichent :
 
-![chlimage_1-310](assets/chlimage_1-310.png)
+![Audiences - Configurations](assets/segmentation-access-confs.png)
+
+Sélectionnez votre configuration pour afficher les segments, par exemple le site WKND :
+
+![Audiences - Segments](assets/segmentation-access-segments.png)
 
 ## Éditeur de segment {#segment-editor}
 
@@ -130,7 +134,7 @@ Les références suivantes sont disponibles clé en main pour établir un lien d
 
 Pour définir votre nouveau segment :
 
-1. Après [accès aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accédez au dossier](#organizing-segments) dans lequel vous souhaitez créer le segment, ou laissez-le dans la racine.
+1. Après [accès aux segments](/help/sites-administering/segmentation.md#accessing-segments), [accéder au dossier ;](#organizing-segments) où vous souhaitez créer le segment.
 
 1. cliquez ou appuyez sur le bouton Créer et sélectionnez **Création d’un segment ContextHub**.
 
