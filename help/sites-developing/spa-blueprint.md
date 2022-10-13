@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 93%
+source-wordcount: '2079'
+ht-degree: 94%
 
 ---
 
@@ -108,7 +108,7 @@ Module npm : [@adobe/aem-response-editable-components](https://www.npmjs.com/pa
 
 #### Angular {#angular}
 
-module npm : bientôt disponible
+Module npm : [@adobe/aem-angular-editable-components](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## Services et composants principaux {#main-services-and-components}
 
@@ -166,8 +166,6 @@ Le composant Grille réactive doit être fourni prémappé à son homologue AEM,
 
 * `gridClassNames:` noms de classes fournis pour la grille réactive
 * `columnClassNames:` noms de classes fournis pour la colonne réactive
-
-Voir aussi la ressource npm [@adobe/aem-response-editable-components#srccomponentsresponsivegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### Espace réservé de la grille réactive {#placeholder-of-the-reponsive-grid}
 
