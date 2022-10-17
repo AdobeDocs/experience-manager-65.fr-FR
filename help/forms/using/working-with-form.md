@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '414'
+ht-degree: 82%
 
 ---
 
@@ -30,6 +30,15 @@ Pour synchroniser votre formulaire dans l’application AEM Forms :
 
 Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et appuyez sur **Synchroniser avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
 
+Si la synchronisation de votre application Android AFA (AEM Form Application) échoue, procédez comme suit pour résoudre le problème de synchronisation :
+
+1. Accédez au **https://&#39;[server]:[port]&#39;system/console/configMgr**.
+1. Recherchez le **[!UICONTROL Gestionnaire d’authentification des jetons Adobe Granite]** et cliquez sur **[!UICONTROL Modifier]**.
+1. Sélectionnez la **[!UICONTROL Aucun]** dans le menu déroulant de la fonction **[!UICONTROL Attribut SameSite pour le cookie login-token]** attribut.
+1. Cliquez sur **[!UICONTROL Enregistrer]**.
+
+![Synchroniser l’image avec l’application Android AFA](/help/forms/using/assets/afaandroid.png)
+
 >[!NOTE]
 >
 >Formulaires pris en charge :
@@ -39,7 +48,8 @@ Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectio
 >
 >Les pièces jointes au niveau du formulaire ne sont pas prises en charge dans les formulaires adaptatifs extraits dans l’application AEM Forms synchronisée avec le serveur AEM Forms OSGi. Les utilisateurs peuvent ajouter des pièces jointes à un champ si l’auteur a activé les pièces jointes au niveau du formulaire au moment de sa création.
 
+
 **Ouverture et mise à jour d’un formulaire**
 
-1. Pour ouvrir un formulaire, appuyez sur celui-ci dans l’écran d’accueil.
+1. Pour ouvrir un formulaire, appuyez sur **[!UICONTROL Formulaire]** dans l’écran d’accueil.
 1. Vous pouvez mettre à jour les champs du formulaire, ajouter des pièces jointes, enregistrer en tant que brouillon et soumettre le formulaire.
