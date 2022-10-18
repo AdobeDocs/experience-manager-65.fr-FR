@@ -11,10 +11,10 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
 workflow-type: tm+mt
-source-wordcount: '3999'
-ht-degree: 100%
+source-wordcount: '4034'
+ht-degree: 99%
 
 ---
 
@@ -281,7 +281,10 @@ Les courriers électroniques peuvent contenir un lien qui ouvre la tâche dans A
 
 >[!NOTE]
 >
->Pour configurer l’espace de travail de façon à utiliser les modèles d’e-mail appropriés, consultez le [Guide de l’administrateur d’AEM Forms JEE](https://help.adobe.com/fr_FR/AEMForms/6.1/AdminHelp/index.html).
+>* Pour configurer l’espace de travail de façon à utiliser les modèles d’e-mail appropriés, consultez le [Guide de l’administrateur d’AEM Forms JEE](https://help.adobe.com/fr_FR/AEMForms/6.1/AdminHelp/index.html).
+>
+>* Si des brouillons sont transférés après l’envoi de la tâche dans l’espace de travail AEM Forms, des notifications par e-mail sont envoyées. Si les brouillons sont transférés à partir du point de départ de l’espace de travail AEM Forms, aucune notification électronique n’est envoyée.
+
 
 Lorsque vous exécutez une tâche par courrier électronique, la tâche est supprimée de votre liste de tâches dans AEM Forms Workspace.
 
