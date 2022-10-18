@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 51e36e874fe84eab8558271b5c84b1c2e2f58ef0
+source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
 workflow-type: tm+mt
-source-wordcount: '4034'
+source-wordcount: '4033'
 ht-degree: 99%
 
 ---
@@ -40,16 +40,16 @@ Vous pouvez effectuer certaines actions sans ouvrir la tâche, en cliquant sur l
 
 Lors de l’ouverture et de l’utilisation d’une tâche, les outils disponibles dépendent de la tâche. Des tâches différentes nécessitent d’effectuer des actions différentes, par conséquent certains outils peuvent être disponibles ou non. Les tâches types que vous pouvez recevoir sont décrites ci-dessous.
 
-**Fournir des informations** : vous recevez une tâche nécessitant de renseigner et d’envoyer un formulaire.
+* **Fournir des informations** : vous recevez une tâche nécessitant de renseigner et d’envoyer un formulaire.
 
-**Réviser des informations** : vous recevez une tâche nécessitant de réviser des informations et de valider le contenu.
+* **Réviser des informations** : vous recevez une tâche nécessitant de réviser des informations et de valider le contenu.
 
-**Révision multi-utilisateurs** : vous recevez une tâche en même temps que d’autres utilisateurs. Vous devez, ainsi que les autres utilisateurs, fournir des informations, réviser le contenu ou les deux. Les outils suivants peuvent être disponibles avec ce type de tâche :
+* **Révision multi-utilisateurs** : vous recevez une tâche en même temps que d’autres utilisateurs. Vous devez, ainsi que les autres utilisateurs, fournir des informations, réviser le contenu ou les deux. Les outils suivants peuvent être disponibles avec ce type de tâche :
 
-* Affichage des instructions pour la tâche
-* Affichage de l’état d’exécution de tous les utilisateurs auxquels la tâche est affectée
-* Affichage des commentaires de tous les utilisateurs auxquels la tâche est affectée
-* Ajout personnel de commentaires à la tâche
+   * Affichage des instructions pour la tâche
+   * Affichage de l’état d’exécution de tous les utilisateurs auxquels la tâche est affectée
+   * Affichage des commentaires de tous les utilisateurs auxquels la tâche est affectée
+   * Ajout personnel de commentaires à la tâche
 
 Voici d’autres outils qui peuvent être disponibles avec les tâches ci-dessus :
 
@@ -106,17 +106,17 @@ Lorsque vous ouvrez et demandez une tâche à partir de la liste d’un groupe o
 
 Après l’ouverture d’une tâche, les onglets qui s’affichent dans le volet principal et les outils disponibles dépendent de la tâche. Les onglets que vous pouvez voir sont décrits ci-dessous.
 
-**Résumé de la tâche** : lorsqu’une tâche s’ouvre, le panneau Résumé de la tâche vous permet d’afficher des informations sur la tâche, le cas échéant, à l’aide d’une URL spécifiée dans le processus à l’étape Assign Task (Affecter une tâche). Le volet Résumé de la tâche permet d’afficher des informations pertinentes supplémentaires, afin d’augmenter l’intérêt d’AEM Forms Workspace pour l’utilisateur final. Cet onglet n’est pas disponible, si l’URL Résumé de la tâche n’existe pas.
+* **Résumé de la tâche** : lorsqu’une tâche s’ouvre, le panneau Résumé de la tâche vous permet d’afficher des informations sur la tâche, le cas échéant, à l’aide d’une URL spécifiée dans le processus à l’étape Assign Task (Affecter une tâche). Le volet Résumé de la tâche permet d’afficher des informations pertinentes supplémentaires, afin d’augmenter l’intérêt d’AEM Forms Workspace pour l’utilisateur final. Cet onglet n’est pas disponible, si l’URL Résumé de la tâche n’existe pas.
 
-**Détails** : offre des informations sur la tâche en cours et le processus auquel elle appartient.
+* **Détails** : offre des informations sur la tâche en cours et le processus auquel elle appartient.
 
-**Formulaire** : affiche le formulaire associé à la tâche. Le formulaire peut correspondre à de nombreux types de fichier, y compris PDF, HTML, Guide et fichier SWF. Le formulaire peut ressembler à un formulaire Web ou à un formulaire classique imprimable, ou peut vous guider à travers une série de panneaux de type assistant nécessaires à la collecte d’informations.
+* **Formulaire** : affiche le formulaire associé à la tâche. Le formulaire peut correspondre à de nombreux types de fichier, y compris PDF, HTML, Guide et fichier SWF. Le formulaire peut ressembler à un formulaire Web ou à un formulaire classique imprimable, ou peut vous guider à travers une série de panneaux de type assistant nécessaires à la collecte d’informations.
 
-**Historique** : répertorie les tâches qui font partie de l’instance de processus et le formulaire, les affectations de tâche et les pièces jointes associés à chaque tâche.
+* **Historique** : répertorie les tâches qui font partie de l’instance de processus et le formulaire, les affectations de tâche et les pièces jointes associés à chaque tâche.
 
-**Pièces jointes** : affiche les pièces jointes existantes associées à la tâche et ajoute des pièces jointes, le cas échéant.
+* **Pièces jointes** : affiche les pièces jointes existantes associées à la tâche et ajoute des pièces jointes, le cas échéant.
 
-**Notes** : affiche les notes existantes associées à la tâche et ajoute des notes, le cas échéant.
+* **Notes** : affiche les notes existantes associées à la tâche et ajoute des notes, le cas échéant.
 
 Lorsque vous travaillez sur une tâche, les outils disponibles et les actions possibles sont décrits ci-dessous.
 
