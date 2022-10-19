@@ -1,6 +1,6 @@
 ---
 title: Gestionnaire de packs
-description: Découvrez les principes de base de la gestion des packages d’AEM avec Package Manager.
+description: Découvrez les principes de base de la gestion des modules AEM avec le gestionnaire de modules.
 feature: Administering
 role: Admin
 uuid: cba76a5f-5d75-4d63-a0f4-44c13fa1baf2
@@ -10,17 +10,17 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: de58ba638c22b7148e1349417d1f514c26c5887e
+source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
 workflow-type: tm+mt
-source-wordcount: '3525'
-ht-degree: 93%
+source-wordcount: '3573'
+ht-degree: 99%
 
 ---
 
 
 # Gestionnaire de packs {#working-with-packages}
 
-Les packs permettent d’importer et d’exporter le contenu du référentiel. Vous pouvez utiliser des packages pour installer un nouveau contenu, installer de nouvelles fonctionnalités, transférer du contenu entre les instances et sauvegarder le contenu du référentiel.
+Les packs permettent d’importer et d’exporter le contenu du référentiel. Vous pouvez utiliser des modules pour installer un nouveau contenu, une nouvelle fonctionnalité, transférer du contenu entre les instances et sauvegarder le contenu du référentiel.
 
 À l’aide du gestionnaire de packs, vous pouvez transférer des packs entre votre instance AEM et votre système de fichiers local à des fins de développement.
 
@@ -134,21 +134,21 @@ La boîte de dialogue **Paramètres du pack** est accessible via le bouton **Mod
 
 #### Miniatures des modules {#thumbnails}
 
-Une miniature fournit une représentation visuelle de référence rapide de ce que contient le module. Elle est ensuite affichée dans la liste des modules et peut aider à identifier facilement le module, ou la classe du module.
+Une miniature fournit une représentation visuelle pour savoir rapidement ce que contient le module. Elle est ensuite affichée dans la liste de modules et peut vous aider à identifier facilement le module ou la classe de module.
 
-Voici des exemples de conventions utilisées pour les packages officiels :
+Voici des exemples de conventions utilisées pour les modules officiels :
 
 Correctif officiel
 
-![Miniature officielle du correctif](assets/official-hotfix.png)
+![Miniature de correctif officiel](assets/official-hotfix.png)
 
-Installation officielle de l’AEM de l’extension
+Extension ou installation officielle AEM
 
-![Miniature officielle de l’installation ou de l’extension AEM](assets/official-installation.png)
+![Module officiel d’installation ou d’extension d’AEM ](assets/official-installation.png)
 
-Service Pack officiel
+Pack de services officiel
 
-![Icône du Service Pack d’AEM officiel](assets/official-service-pack.png)
+![Icône de pack de services officiel d’AEM ](assets/official-service-pack.png)
 
 Utilisez une icône unique pour votre module. Ne réutilisez pas une icône utilisée par Adobe.
 
@@ -323,9 +323,9 @@ Une fois un pack créé, vous pouvez afficher son contenu.
 
 1. AEM télécharge le pack sur votre ordinateur.
 
-### Partage d’un package {#share}
+### Partage d’un module {#share}
 
-Le partage de modules était un service public centralisé pour distribuer des modules de contenu. Le partage de modules a été remplacé par [Distribution logicielle](#software-distribution) et ce bouton ne fonctionne plus.
+Le partage de modules était un service public centralisé pour distribuer des modules de contenu. Le partage de modules a été remplacé par la [Distribution logicielle](#software-distribution) et ce bouton ne fonctionne plus.
 
 ### Chargement des modules à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
@@ -406,7 +406,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles seront gérées (fusion/remplacement) et si les autorisations actuelles seront affectées.
 
-**Comment c’est rapporté ?**
+**Comment est-ce rapporté ?**
 
 Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de modules.
 
@@ -507,6 +507,16 @@ Avant l’installation de votre pack, le Gestionnaire de packs crée automatique
 
 1. Le journal des activités détaille la progression de l’installation.
 
+>[!CAUTION]
+>
+>* Si vous installez des ressources numériques, vous devez effectuer les opérations suivantes :
+   >  Tout d’abord, désactivez WorkflowLauncher.
+   >  Utilisez l’option de menu Composants de la console OSGi pour la désactiver.
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
+>
+>La désactivation de WorkflowLauncher permet de s’assurer que la structure d’importation d’actifs ne manipule pas (involontairement) les actifs lors de l’installation.
+
 Une fois l’installation terminée et réussie, la liste des packs est mise à jour et le mot **Installé** apparaît dans le statut du pack.
 
 ### Réinstaller les packs {#reinstalling-packages}
@@ -549,7 +559,7 @@ La suppression d’un pack supprime uniquement ses détails du gestionnaire de p
 
 1. Ouvrez les détails du pack que vous souhaitez supprimer de la liste des packs en cliquant sur le nom du pack.
 
-1. Le gestionnaire de modules vous demande de confirmer que vous souhaitez supprimer le module. Cliquez sur **OK** pour confirmer la suppression.
+1. Le Gestionnaire de modules vous invite à confirmer que vous souhaitez supprimer le module. Cliquez sur **OK** pour confirmer la suppression.
 
 1. Les informations sur le pack sont supprimées et les détails sont signalés dans le journal d’activité.
 
@@ -567,11 +577,11 @@ Répliquez le contenu d’un pack afin de l’installer dans l’instance de pub
 
 ## Distribution logicielle {#software-distribution}
 
-AEM Les packages peuvent être utilisés pour créer et partager du contenu dans les environnements AEM.
+Les modules AEM peuvent être utilisés pour créer et partager du contenu dans les environnements AEM.
 
-[Distribution logicielle](https://downloads.experiencecloud.adobe.com) est un service centralisé conçu pour simplifier la recherche et le téléchargement des packages d’AEM.
+La [Distribution logicielle](https://downloads.experiencecloud.adobe.com) est un service centralisé conçu pour simplifier la recherche et le téléchargement des modules AEM.
 
-Pour plus d’informations, reportez-vous à la section [Distribution logicielle .](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
+Pour plus d’informations, reportez-vous à la [documentation sur la Distribution logicielle.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=fr)
 
 >[!NOTE]
 >
