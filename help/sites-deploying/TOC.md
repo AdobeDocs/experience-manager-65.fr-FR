@@ -5,7 +5,7 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: Guide de déploiement d’AEM 6.5
 breadcrumb-title: Guide de déploiement
-user-guide-description: En savoir plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.5, y compris sur le déploiement cloud d’Adobe Managed Services.
+user-guide-description: Découvrez-en plus sur l’installation, le déploiement et l’architecture d’Adobe Experience Manager 6.5, y compris sur le déploiement cloud d’Adobe Managed Services.
 feature: Deploying
 role: Architect
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
@@ -16,13 +16,13 @@ ht-degree: 92%
 ---
 
 
-# Guide de l’utilisateur pour le déploiement d’AEM 6.5 {#deploying}
+# Guide de l’utilisateur pour le déploiement d’AEM 6.5 {#deploying}
 
 + [Guide de l’utilisateur du déploiement](home.md)
-+ Présentation de la plateforme AEM {#introduction}
++ Introduction à la plateforme AEM {#introduction}
    + [Introduction à la plateforme AEM](platform.md)
    + [Exigences techniques](technical-requirements.md)
-   + [Éléments de stockage dans AEM 6.5](storage-elements-in-aem-6.md)
+   + [Éléments de stockage dans AEM 6.5](storage-elements-in-aem-6.md)
    + [AEM avec MongoDB](aem-with-mongodb.md)
 + Déploiement d’AEM {#deploying}
    + [Déploiement et maintenance](deploy.md)
@@ -30,7 +30,7 @@ ht-degree: 92%
    + [Installation du serveur d’applications](application-server-install.md)
    + [Installation autonome personnalisée](custom-standalone-install.md)
    + [Début et arrêt d’AEM à partir de la ligne de commande](command-line-start-and-stop.md)
-   + [Configuration des magasins de nœuds et des entrepôts de données dans AEM 6](data-store-config.md)
+   + [Configuration Noeuds et entrepôts de données dans AEM 6](data-store-config.md)
    + [Nettoyage de révision](revision-cleanup.md)
    + [Requêtes et indexation Oak](queries-and-indexing.md)
    + [Exécution d’AEM avec TarMK Cold Standby](tarmk-cold-standby.md)
@@ -46,7 +46,7 @@ ht-degree: 92%
    + [Configuration d’OSGi](configuring-osgi.md)
    + [Paramètres de configuration OSGi](osgi-configuration-settings.md)
    + [Modes d’exécution](configure-runmodes.md)
-   + [Console web](web-console.md)
+   + [Console Web](web-console.md)
    + [Réplication](replication.md)
    + [Réplication à l’aide du SSL mutuel](mssl-replication.md)
    + [Résolution des problèmes liés à la réplication](troubleshoot-rep.md)
@@ -81,14 +81,14 @@ ht-degree: 92%
    + [Procédure de mise à niveau pour les installations de serveur d’applications](app-server-upgrade.md)
    + [Liste des lots obsolètes désinstallés après la mise à niveau ](obsolete-bundles.md)
 + Restructuration des référentiels {#restructuring}
-   + [Restructuration des référentiels dans AEM 6.5](repository-restructuring.md)
+   + [Restructuration des référentiels de dans AEM 6.5](repository-restructuring.md)
    + [Restructuration des référentiels dans AEM 6.5](all-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels dans AEM 6.5](sites-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels d’Assets dans AEM 6.5](assets-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels Dynamic Media dans AEM 6.5](dynamicmedia-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels de Forms dans AEM 6.5](forms-repository-restructuring-in-aem-6-5.md)
    + [Restructuration des référentiels e-Commerce dans AEM 6.5](ecommerce-repository-restructuring-in-aem-6-5.md)
-   + [Restructuration des référentiels pour AEM Communities dans la version 6.5](communities-repository-restructuring-in-aem-6-5.md)
+   + [Restructuration des référentiels pour AEM Communities dans la version 6.5](communities-repository-restructuring-in-aem-6-5.md)
 + Bonnes pratiques {#practices}
    + [Meilleures pratiques de déploiement](best-practices.md)
    + [Arborescence de la performance](performance-tree.md)

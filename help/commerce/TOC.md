@@ -1,19 +1,19 @@
 ---
 sub-product: AEM Content and Commerce
-user-guide-title: AEM Content and Commerce
+user-guide-title: AEM Content and Commerce
 breadcrumb-title: Guide commercial
 user-guide-description: Découvrez comment utiliser et administrer le contenu AEM et Commerce.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
 
-# Commerce  {#commerce}
+# Commerce {#commerce}
 
-+ [Contenu et commerce AEM](/help/commerce/home.md)
++ [AEM Content and Commerce](/help/commerce/home.md)
 + [Modifications notables apportées à AEM contenu et à Commerce](cif/changes.md)
 + [Présentation et aperçu](cif/introduction.md)
 + Intégrations {#integrations}
@@ -45,7 +45,7 @@ ht-degree: 86%
    + [2020](cif/release-notes/release-notes-2020.md)
    + [2019](cif/release-notes/release-notes-2019.md)
 + [FAQ](cif/faq.md)
-+ AEM CIF Classic {#classic}
++ AEM CIF Classic {#classic}
    + [Présentation](/help/commerce/cif-classic/home.md)
    + Déploiement {#deploying}
       + [Aperçu du commerce électronique](/help/commerce/cif-classic/deploying/ecommerce.md)
@@ -58,4 +58,4 @@ ht-degree: 86%
    + Développement {#developing}
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Développement (générique)](/help/commerce/cif-classic/developing/generic.md)
-      + [Développement avec SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+      + [Développement avec Commerce Cloud SAP](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
