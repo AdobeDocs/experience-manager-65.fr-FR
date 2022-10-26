@@ -10,7 +10,7 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: d303a374fd4ab8e398fd909dec4ce6155a2163f5
+source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
 workflow-type: tm+mt
 source-wordcount: '3573'
 ht-degree: 99%
@@ -489,6 +489,16 @@ Le chargement d’un pack ajoute uniquement le contenu du pack au référentiel,
 
 Avant l’installation de votre pack, le Gestionnaire de packs crée automatiquement un pack instantané qui contient le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le pack.
 
+>[!CAUTION]
+>
+>* Si vous installez des ressources numériques, vous devez effectuer les opérations suivantes :
+   >  Tout d’abord, désactivez WorkflowLauncher.
+   >  Utilisez l’option de menu Composants de la console OSGi pour la désactiver.
+   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
+>
+>La désactivation de WorkflowLauncher permet de s’assurer que la structure d’importation d’actifs ne manipule pas (involontairement) les actifs lors de l’installation.
+
 1. [Accédez au Gestionnaire de modules.](#accessing)
 
 1. Ouvrez les détails du pack que vous souhaitez installer à partir de la liste des packs en cliquant sur le nom du pack.
@@ -506,16 +516,6 @@ Avant l’installation de votre pack, le Gestionnaire de packs crée automatique
 1. Cliquez sur **Installer**.
 
 1. Le journal des activités détaille la progression de l’installation.
-
->[!CAUTION]
->
->* Si vous installez des ressources numériques, vous devez effectuer les opérations suivantes :
-   >  Tout d’abord, désactivez WorkflowLauncher.
-   >  Utilisez l’option de menu Composants de la console OSGi pour la désactiver.
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
->* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
->
->La désactivation de WorkflowLauncher permet de s’assurer que la structure d’importation d’actifs ne manipule pas (involontairement) les actifs lors de l’installation.
 
 Une fois l’installation terminée et réussie, la liste des packs est mise à jour et le mot **Installé** apparaît dans le statut du pack.
 
