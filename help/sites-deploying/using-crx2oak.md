@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: 08e7cbe50fbfb301b38c3c36dfa22bfc1024e181
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
 source-wordcount: '1248'
-ht-degree: 60%
+ht-degree: 61%
 
 ---
 
@@ -49,7 +49,7 @@ Le diagramme ci-dessous montre toutes les combinaisons de migration possibles pr
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-## Fonctions {#features}
+## Fonctionnalités {#features}
 
 CRX2Oak est appelé durant les mises à niveau d’AEM d’une façon permettant à l’utilisateur de spécifier un profile de migration prédéfini qui automatise la reconfiguration des modes de persistence. Cela s’appelle le mode quickstart.
 
@@ -214,7 +214,7 @@ Lors de la migration vers un ensemble de réplications MongoDB, assurez-vous de 
 Vous pouvez le faire en ajoutant le paramètre `w=2` à la fin de la chaîne de connexion, comme suit :
 
 ```xml
-java -Xmx4092m -XX:MaxPermSize=1024m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:27017/aem-author?replicaset=replica1&w=2
+java -Xmx4092m -jar crx2oak.jar crx-quickstart/repository/ mongodb://localhost:27017/aem-author?replicaset=replica1&w=2
 ```
 
 >[!NOTE]

@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 1a741ff01fcf17dfdcc8c1cebcd858052d07361c
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 90%
@@ -107,7 +107,7 @@ customBlobStore=B"false"
 
 ## Configurations des entrepôts de données {#data-store-configurations}
 
-Lorsque vous traitez un grand nombre de fichiers binaires, il est recommandé d’utiliser un entrepôt de données externe au lieu de l’entrepôt de nœuds par défaut pour optimiser la performance.
+Lorsque vous traitez un grand nombre de fichiers binaires, il est recommandé d’utiliser un magasin de données externe au lieu de l’entrepôt de nœuds par défaut pour optimiser la performance.
 
 Par exemple, si votre projet requiert un grand nombre de ressources multimédias, vous pouvez les stocker dans l’entrepôt de données de fichier ou S3 afin d’y accéder plus rapidement qu’en les stockant directement dans MongoDB.
 
@@ -228,7 +228,7 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 >
 >Le connecteur S3 prend en charge l’authentification des utilisateurs IAM et l’authentification des rôles IAM. Pour utiliser l’authentification des rôles IAM, omettez la variable `accessKey` et `secretKey` à partir de votre fichier de configuration. Le connecteur S3 est alors défini par défaut sur [Rôle IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) affectée à l’instance.
 
-| Clé | Description | Valeur par défaut | Requis |
+| Clé | Description | Valeur par défaut | Requise |
 | --- | --- | --- | --- |
 | accessKey | Identifiant de clé d’accès pour l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
 | secretKey | Clé d’accès secrète de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
@@ -238,13 +238,13 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 | maxConnections | Définissez le nombre maximal de connexions HTTP ouvertes autorisées. | 50 | Non. |
 | maxErrorRetry | Définissez le nombre maximal de tentatives de reprise pour les requêtes ayant échoué (récupérables). | 3 | Non. |
 | minRecordLength | Taille minimale d’un objet (en octets) qui doit être stocké dans l’entrepôt de données. | 16384 | Non. |
-| path | Chemin d’accès local de la banque de données AEM. | `crx-quickstart/repository/datastore` | Non. |
+| le chemin | Chemin d’accès local de la banque de données AEM. | `crx-quickstart/repository/datastore` | Non. |
 | proxyHost | Définissez l’hôte proxy facultatif par lequel le client se connectera. |  | Non. |
 | proxyPort | Définissez le port proxy facultatif par lequel le client se connectera. |  | Non. |
 | s3Bucket | Nom du compartiment S3. |  | Oui |
 | s3EndPoint | Point d’entrée de l’API REST S3. |  | Non. |
 | s3Region | Région où réside le compartiment. Voir [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus d’informations. | Région dans laquelle l’instance AWS est en cours d’exécution. | Non. |
-| socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion ne expire et ne soit fermée. | 50 000 | Non. |
+| socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion ne expire et ne soit fermée. | 50000 | Non. |
 | stagingPurgeInterval | Intervalle (en secondes) de purge des chargements terminés du cache intermédiaire. | 300 | Non. |
 | stagingRetryInterval | Intervalle (en secondes) entre deux tentatives de transfert ayant échoué. | 600 | Non. |
 | stagingSplitPercentage | Le pourcentage de `cacheSize` à utiliser pour l’évaluation des téléchargements asynchrones. | 10 | Non. |
@@ -353,7 +353,7 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
 1. Vérifiez que MongoDB est installé et qu’une instance de `mongod` est en cours d’exécution.
 1. Démarrez AEM à l’aide de la commande suivante :
 
-   `java -Xmx1024m -XX:MaxPermSize=256M -jar cq-quickstart.jar -r crx3,crx3mongo`
+   `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Répétez les étapes 1 à 4 pour la seconde instance d’AEM.
 1. Démarrez la seconde instance d’AEM.

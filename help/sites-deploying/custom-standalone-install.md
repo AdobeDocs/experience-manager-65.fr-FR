@@ -6,10 +6,10 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 3e18eed63d676e22e12483a1ee68e7e0148d8083
+source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
 workflow-type: tm+mt
-source-wordcount: '1609'
-ht-degree: 79%
+source-wordcount: '1622'
+ht-degree: 97%
 
 ---
 
@@ -19,13 +19,13 @@ Cette section décrit les options disponibles lors de l’installation d’une i
 
 ## Modification du numéro de port en renommant le fichier {#changing-the-port-number-by-renaming-the-file}
 
-Le port par défaut pour AEM est 4502. Si ce port n’est pas disponible ou est déjà utilisé, Quickstart se configure automatiquement pour utiliser le premier numéro de port disponible comme suit : 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<*random*>`.
+Le port par défaut pour AEM est 4502. Si ce port n’est pas disponible ou est en cours d’utilisation, le démarrage rapide se configure automatiquement afin d’utiliser le premier numéro de port disponible comme suit : 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<*random*>`.
 
-Vous pouvez également définir le numéro de port en renommant le fichier jar de démarrage rapide, de sorte que le nom du fichier inclut le numéro de port ; par exemple, `cq5-publish-p4503.jar` ou `cq5-author-p6754.jar`.
+Vous pouvez également définir le numéro de port en renommant le fichier jar de démarrage rapide afin que le nom de fichier inclue le numéro de port ; par exemple, `cq5-publish-p4503.jar` ou `cq5-author-p6754.jar`.
 
 Les différentes règles suivantes s’appliquent lorsque vous renommez le fichier jar de démarrage rapide :
 
-* Lorsque vous renommez le fichier, il doit commencer par `cq;` as in `cq5-publish-p4503.jar`.
+* Lorsque vous renommez le fichier, il doit commencer par `cq;`, par exemple `cq5-publish-p4503.jar`.
 
 * Nous vous recommandons d’ajouter *systématiquement* un préfixe au numéro de port sous la forme suivante : « -p », par exemple cq5-publish-p4503.jar ou cq5-author-p6754.jar.
 
@@ -42,27 +42,27 @@ Les différentes règles suivantes s’appliquent lorsque vous renommez le fichi
 
 >[!NOTE]
 >
->Vous pouvez également modifier le numéro de port à l’aide du `-port` dans la commande start.
+>Vous pouvez également modifier le numéro de port à l’aide de l’option `-port` dans la commande de démarrage.
 
 ### Remarques concernant Java 11 {#java-considerations}
 
 Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM.
 
-* Les éléments suivants : `-add-opens` des commutateurs doivent être ajoutés afin d’empêcher les messages d’avertissement relatifs à l’accès aux réflexions dans la variable `stdout.log`
+* Les commutateurs -`-add-opens` suivants doivent être ajoutés pour éviter les messages d’avertissement relatifs à l’accès à la réflexion dans `stdout.log`.
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* En outre, vous devez utiliser la variable `-XX:+UseParallelGC` changer afin d’éviter tout problème de performances potentiel.
+* Vous devez également utiliser le commutateur `-XX:+UseParallelGC` afin de limiter tous les problèmes de performance potentiels.
 
-Voici à quoi dpot ressembler les paramètres supplémentaires JVM au démarrage d’AEM sur Java 11 :
+Voici à quoi doivent ressembler les paramètres supplémentaires JVM au démarrage d’AEM sur Java 11 :
 
 ```shell
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-Enfin, si vous exécutez une instance mise à jour d’AE  6.3, assurez-vous que la propriété suivante est définie sur **true** sous `sling.properties` :
+Enfin, si vous exécutez une instance mise à jour d’AE  6.3, assurez-vous que la propriété suivante est définie sur **true** sous `sling.properties` :
 
 * `felix.bootdelegation.implicit`
 
@@ -88,7 +88,7 @@ Cette méthode est tout particulièrement intéressante dans plusieurs cas d’e
 
 >[!NOTE]
 >
->Voir aussi [Comment installer automatiquement les packages CRX au démarrage du serveur](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) pour obtenir des exemples.
+>Pour des exemples, consultez également [Comment installer des modules CRX automatiquement au démarrage du serveur](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
 
 ## Installation et démarrage d’Adobe Experience Manager en tant que service Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
@@ -101,16 +101,16 @@ Cette méthode est tout particulièrement intéressante dans plusieurs cas d’e
 Pour installer et démarrer AEM en tant que service Windows :
 
 1. Ouvrez le fichier crx-quickstart\opt\helpers\instsrv.bat dans un éditeur de texte.
-1. Si vous configurez un serveur Windows 64 bits, remplacez toutes les instances de prunsrv par l’une des commandes suivantes, en fonction de votre système d’exploitation :
+1. Si vous configurez un serveur Windows 64 bits, remplacez toutes les instances de prunsrv par l’une des commandes suivantes, en fonction du système d’exploitation :
 
    * prunsrv_amd64 
    * prunsrv_ia64 
 
-   Cette commande appelle le script approprié qui démarre le démon du service Windows en Java 64 bits au lieu de Java 32 bits.
+   Cette commande appelle le script approprié qui lance le service de démon Windows en Java 64 bits au lieu de 32 bits.
 
-1. Pour empêcher le processus de se diviser en plusieurs processus, augmentez la taille maximale du tas ainsi que les paramètres JVM PermGen. Recherchez la variable `set jvm_options` et définissez la valeur comme suit :
+1. Pour empêcher que le processus ne se transforme en plusieurs processus, augmentez le paramètre JVM PermGen . Localisez la commande `set jvm_options` et définissez la valeur comme suit :
 
-   `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
+   `set jvm_options=-Xmx1792m`
 
 1. Ouvrez l’invite de commandes, définissez le répertoire courant sur le dossier crx-quickstart/opt/helpers de l’installation AEM et saisissez la commande suivante afin de créer le service :
 
@@ -138,7 +138,7 @@ Pour installer et démarrer AEM en tant que service Windows :
 
 >[!NOTE]
 >
->Lors de l’installation d’AEM en tant que service, vous devez fournir le chemin d’accès absolu au répertoire des journaux dans `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` à partir de Configuration Manager.
+>Lorsque vous installez AEM en tant que service, vous devez indiquer le chemin absolu pour le répertoire des journaux dans `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` à partir du gestionnaire de la configuration.
 
 Pour désinstaller le service, cliquez sur **Arrêter** dans le panneau de commande **Services** ou dans la ligne de commande, accédez au dossier et saisissez `instsrv.bat -uninstall cq5`. Le service est supprimé de la liste du panneau de commande **Services** ou de la liste de la ligne de commande lorsque vous saisissez `net start`.
 
@@ -146,7 +146,7 @@ Pour désinstaller le service, cliquez sur **Arrêter** dans le panneau de comma
 
 L’emplacement par défaut du dossier temporaire de la machine java est `/tmp`. AEM utilise également ce dossier, par exemple lors de la création de modules.
 
-Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple, si vous avez besoin d’un répertoire avec plus d’espace libre), définissez un * `<new-tmp-path>`* en ajoutant le paramètre JVM :
+Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple si vous avez besoin d’un répertoire avec plus d’espace libre), définissez un chemin * `<new-tmp-path>` * en ajoutant le paramètre JVM :
 
 `-Djava.io.tmpdir="/<*new-tmp-path*>"`
 
@@ -157,98 +157,124 @@ Si vous souhaitez modifier l’emplacement du dossier temporaire (par exemple, s
 
 ## Autres options disponibles à partir du fichier de démarrage rapide {#further-options-available-from-the-quickstart-file}
 
-D’autres options et conventions de changement de nom sont décrites dans le fichier d’aide de Quickstart, disponible via l’option -help. Pour accéder à l’aide, tapez :
+D’autres options et conventions de renommage sont décrites dans le fichier d’aide du démarrage rapide, disponibles par l’intermédiaire de l’option- help. Pour accéder à l’aide, tapez :
 
-* `java -jar cq5-<*version*>.jar -help`
+* `java -jar cq-quickstart-6.5.0.jar -help`
+
+>[!CAUTION]
+>
+>Ces options sont valides à compter de la version d’origine d’AEM 6.5 (6.5.0.0). Des modifications dans les versions ultérieures de SP sont possibles.
 
 ```shell
 Loading quickstart properties: default
 Loading quickstart properties: instance
-Setting properties from filename '/Users/Desktop/AEM/cq-quickstart-5.6.0.jar'
+Setting properties from filename '/Users/Desktop/AEM/cq-quickstart-6.5.0.jar'
 --------------------------------------------------------------------------------
-Adobe Experience Manager Quickstart (build 20130129)
+Adobe Experience Manager Quickstart (build 20190328)                            
 --------------------------------------------------------------------------------
-Usage:
- Use these options on the Quickstart command line.
+Usage:                                                                          
+ Use these options on the Quickstart command line.                              
 --------------------------------------------------------------------------------
 
 -help (--help,-h)
-         Show this help message
+         Show this help message                                                 
 -quickstart.server.port (-p,-port) <port>
-         Set server port number
+         Set server port number                                                 
 -contextpath (-c,-org.apache.felix.http.context_path) <contextpath>
-         Set context path
+         Set context path                                                       
 -debug <port>
-         Enable Java Debugging on port number; forces forking
--gui
-         Show GUI if running on a terminal
+         Enable Java Debugging on port number; forces forking                   
+-gui 
+         Show GUI if running on a terminal                                      
 -nobrowser (-quickstart.nobrowser)
-         Do not open browser at startup
+         Do not open browser at startup                                         
 -unpack
-         Unpack installation files only, do not start the server (implies
-         -verbose)
+         Unpack installation files only, do not start the server (implies       
+         -verbose)                                                              
 -v (-verbose)
-         Do not redirect stdout/stderr to files and do not close stdin
+         Do not redirect stdout/stderr to files and do not close stdin          
 -nofork
-         Do not fork the JVM, even if not running on a console
+         Do not fork the JVM, even if not running on a console                  
 -fork
-         Force forking the JVM if running on a console, using recommended
-         default memory settings for the forked JVM.
+         Force forking the JVM if running on a console, using recommended       
+         default memory settings for the forked JVM.                            
 -forkargs <args> [<args> ...]
-         Additional arguments for the forked JVM, defaults to '-Xmx1024m
-         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,
-         example: '-forkargs -- -server'
+         Additional arguments for the forked JVM, defaults to '-Xmx1024m        
+         -XX:MaxPermSize=256m '.  Use -- to specify values starting with -,     
+         example: '-forkargs -- -server'                                        
 -a (--interface) <interface>
-         Optional IP address (interface) to bind to
+         Optional IP address (interface) to bind to                             
 -pt <string>
-         Process type (main/fork) - do not use directly, used when forking a
-         process
+         Process type (main/fork) - do not use directly, used when forking a    
+         process                                                                
 -r <string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string> [<string>]]]]]]]]]
-         Runmode(s) - Use this to define the run mode(s)
+         Runmode(s) - Use this to define the run mode(s)                        
 -b <string>
-         Base folder - defines the path under which the quickstart work folder
-         is created
+         Base folder - defines the path under which the quickstart work folder  
+         is created                                                             
 -low-mem-action <string>
-         Low memory action - what to do if memory is insufficient at startup
+         Low memory action - what to do if memory is insufficient at startup    
 -use-control-port
-         Start a control port
+         Start a control port                                                   
+-nointeractive
+         Start with no interactivity                                            
 -ll <level>
-         Define launchpad log level (1 = error...4 = debug)
+         Define launchpad log level (1 = error...4 = debug)                     
+-n   
+         Do not install shutdown hook                                           
+-D<property>=<value>
+         Additional framework properties.                                       
+-listener-port <listener-port>
+         Set listener port number                                               
+-x <string>
+         Run a Quickstart extension.                                            
+  Options for executing Quickstart extensions:
+                                                                                
+    -xargs <arg> [<arg> ...]
+         Construct an arguments list for a Quickstart extension (e.g. -xargs -- 
+         -arg1 val1 -arg2 val2).                                                
 --------------------------------------------------------------------------------
-Quickstart filename options
+Quickstart filename options                                                     
 --------------------------------------------------------------------------------
-Usage:
- Rename the jar file, including one of the patterns shown below, to set the
-corresponding option. Command-line options have priority on these filename
-patterns.
+Usage:                                                                          
+ Rename the jar file, including one of the patterns shown below, to set the     
+corresponding option. Command-line options have priority on these filename      
+patterns.                                                                       
 --------------------------------------------------------------------------------
 
 -NNNN
-         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port
-         NNNN, for example: quickstart-8085.jar
+         Include -NNNN.jar or -pNNNN in the renamed jar filename to run on port 
+         NNNN, for example: quickstart-8085.jar                                 
 -nobrowser
-         Include -nobrowser in the renamed jar filename to avoid opening the
-         browser at startup, example: quickstart-nobrowser-8085.jar
+         Include -nobrowser in the renamed jar filename to avoid opening the    
+         browser at startup, example: quickstart-nobrowser-8085.jar             
 -publish
-         Include -publish in the renamed jar filename to run cq5 in "publish"
-         mode, example: cq5-publish-7502.jar
+         Include -publish in the renamed jar filename to run in "publish" mode, 
+         example: cq-publish-7502.jar                                           
+-dynamicmedia
+         Include -dynamicmedia in the renamed jar filename to run in            
+         "dynamicmedia" mode, example: quickstart-dynamicmedia-4502.jar         
+-dynamicmedia_scene7
+         Include -dynamicmedia_scene7 in the renamed jar filename to run in     
+         "dynamicmedia_scene7" mode, example:                                   
+         quickstart-dynamicmedia_scene7-p4502.jar                               
 --------------------------------------------------------------------------------
 The license.properties file
 --------------------------------------------------------------------------------
-  The license.properties file stores licensing information, created from the
-  licensing form displayed on first startup and stored in the folder from where
-  Quickstart is run.
+  The license.properties file stores licensing information, created from the    
+  licensing form displayed on first startup and stored in the folder from where 
+  Quickstart is run.                                                            
 --------------------------------------------------------------------------------
 Log files
 --------------------------------------------------------------------------------
-  Once Quickstart has been unpacked and started, log files can be found under
-  ./crx-quickstart/logs.
+  Once Quickstart has been unpacked and started, log files can be found under   
+  /Users/aheimoz/CQInstallationKits/AEM-65150-L8/crx-quickstart/logs.           
 --------------------------------------------------------------------------------
 ```
 
 ## Installation d’AEM dans l’environnement Amazon EC2 {#installing-aem-in-the-amazon-ec-environment}
 
-Lors de l’installation d’AEM sur une instance Amazon Elastic Compute Cloud (EC2), si vous installez à la fois l’instance de création (author) et l’instance de publication (publish) sur l’instance EC2, l’instance de création est installée correctement en suivant la procédure [Installation des instances d’AEM Manager](#installinginstancesofaemmanager) ; par contre l’instance de publication devient une instance de création.
+Lors de l’installation d’AEM sur une instance Amazon Elastic Compute Cloud (EC2), si vous installez à la fois l’instance de création (auteur) et l’instance de publication (publication) sur l’instance EC2, l’instance de création est installée correctement en suivant la procédure [Installation des instances d’AEM Manager](#installinginstancesofaemmanager) ; par contre l’instance de publication devient une instance de création.
 
 Avant d’installer l’instance de publication sur l’environnement EC2, procédez comme suit :
 
@@ -297,16 +323,16 @@ Avant d’installer l’instance de publication sur l’environnement EC2, proc�
 Vous pouvez utiliser les liens suivants afin de vérifier que l’installation fonctionne (tous les exemples présument que l’instance s’exécute sur le port 8080 de localhost, que CRX est installé sous /crx et Launchpad sous /) :
 
 * `https://localhost:8080/crx/de`
-Console du CRXDE Lite.
+Console du CRXDE Lite.
 
 * `https://localhost:8080/system/console`
-Console web.
+Console Web.
 
 ## Actions après l’installation {#actions-after-installation}
 
 Bien qu’il existe de nombreuses possibilités pour configurer la gestion de contenu web d’AEM, certaines actions doivent être entreprises ou, au moins, vérifiées immédiatement après l’installation :
 
-* Consultez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour les tâches requises afin de garantir la sécurité de votre système.
+* Consultez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour obtenir les tâches requises permettant de garantir que votre système reste sécurisé.
 * Vérifiez la liste des utilisateurs et groupes par défaut qui sont installés avec la gestion de contenu web d’AEM. Vérifiez si vous souhaitez entreprendre des actions sur d’autres comptes - voir [Sécurité et administration des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 
 ## Accès à CRXDE Lite et à la console Web {#accessing-crxde-lite-and-the-web-console}
@@ -318,26 +344,26 @@ Une fois que vous avez démarré la gestion de contenu web d’AEM, vous pouvez 
 
 ### Accès à CRXDE Lite {#accessing-crxde-lite}
 
-Pour ouvrir CRXDE Lite, vous pouvez sélectionner **CRXDE Lite** dans l’écran de bienvenue ou utilisez votre navigateur pour accéder à
+Pour ouvrir CRXDE Lite, vous pouvez sélectionner **CRXDE Lite** dans l’écran de bienvenue ou utiliser le navigateur pour accéder à
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
 ```
 
-Par exemple:
+Par exemple :
 `https://localhost:4502/crx/de/index.jsp`
 
 ![installcq_crxdelite](assets/installcq_crxdelite.png)
 
 #### Accès à la console Web {#accessing-the-web-console}
 
-Pour accéder à la console web Adobe CQ, vous pouvez sélectionner **Console OSGi** dans l’écran de bienvenue ou utilisez votre navigateur pour accéder à
+Pour accéder à la console Web Adobe CQ, vous pouvez sélectionner **Console OSGi** depuis l’écran de bienvenue ou utiliser le navigateur pour accéder à
 
 ```
  https://<host>:<port>/system/console
 ```
 
-Par exemple :
+Par exemple :
 `https://localhost:4502/system/console`
 ou pour la page Lots
 `https://localhost:4502/system/console/bundles`

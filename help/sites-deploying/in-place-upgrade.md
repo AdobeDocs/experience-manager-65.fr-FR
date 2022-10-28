@@ -4,10 +4,10 @@ description: Découvrez comment effectuer une mise à niveau statique.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 6d2b7e341dcdedf3c000b9fb0ecd21722bdf2a27
+source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
 workflow-type: tm+mt
-source-wordcount: '1256'
-ht-degree: 76%
+source-wordcount: '1244'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Avant d’effectuer la mise à niveau, différentes étapes doivent être exécu
 
 ## Prérequis pour la migration {#migration-prerequisites}
 
-* **Version Java minimale requise :** L’outil de migration ne fonctionne qu’avec Java 7 et version ultérieure. Notez que pour AEM 6.3, et versions ultérieures, l’environnement JRE 8 d’Oracle et les environnements JRE 7 et 8 d’IBM sont les seules versions prises en charge.
+* **Version Java minimale requise :** L’outil de migration ne fonctionne qu’avec Java 7 et version ultérieure. Notez que pour AEM 6.3, et versions ultérieures, l’environnement JRE 8 d’Oracle et les environnements JRE 7 et 8 d’IBM sont les seules versions prises en charge.
 
 * **Instance mise à niveau :** si vous effectuez une mise à niveau d’une version **antérieure à la version 5.6**, assurez-vous que vous avez effectué une mise à niveau statique vers AEM 6.0 en suivant la procédure décrite dans la version 6.0 de la documentation de mise à niveau.
 
@@ -45,7 +45,7 @@ Avant d’effectuer la mise à niveau, différentes étapes doivent être exécu
 
 Cette migration n’est pas requise si vous effectuez une mise à niveau à partir d’AEM 6.3. Pour les versions antérieures à 6.3, Adobe fournit un outil qui permet de faire migrer le référentiel vers la nouvelle version du fichier Oak Segment Tar présente dans AEM 6.3. Fourni dans le cadre du module de démarrage rapide, cet outil est obligatoire pour toutes les mises à niveau qui utilisent TarMK. Les mises à niveau pour les environnements qui utilisent MongoMK n’impliquent pas de migrer le référentiel. Pour plus d’informations sur les avantages du nouveau format de fichier TAR Segment, reportez-vous à la section [Questions fréquentes sur la migration vers le fichier TAR d’Oak Segment](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-La migration réelle est effectuée à l’aide du fichier jar de démarrage rapide standard d’AEM, exécuté avec une nouvelle `-x crx2oak` qui exécute l&#39;outil crx2oak afin de simplifier la mise à niveau et la rendre plus robuste.
+La migration réelle est effectuée à l’aide du fichier JAR de démarrage rapide d’AEM, exécuté avec une nouvelle option `-x crx2oak`, qui exécute l’outil crx2oak afin de simplifier la mise à niveau et de la rendre plus robuste.
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Pour déterminer la commande à exécuter, utilisez la commande suivante :
 java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<YOUR_PROFILE>> <<ADDITIONAL_FLAGS>>
 ```
 
-Où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil et les indicateurs répertoriés dans le tableau suivant :
+Où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil et les indicateurs figurant dans le tableau suivant :
 
 <table>
  <tbody>
@@ -106,23 +106,21 @@ Où `<<YOUR_PROFILE>>` et `<<ADDITIONAL_FLAGS>>` sont remplacés par le profil e
 
 **Où :**
 
-* `mongo-host` est l’adresse IP du serveur MongoDB (par exemple, 127.0.0.1).
+* `mongo-host` correspond à l’IP du serveur MongoDB (par exemple, 127.0.0.1) ;
 
-* `mongo-port` est le port du serveur MongoDB (par exemple : 27017)
+* `mongo-port` correspond au port du serveur MongoDB (par exemple, 27017) ;
 
-* `mongo-database-name` représente le nom de la base de données (par exemple : aem-author)
+* `mongo-database-name` représente le nom de la base de données (par exemple : aem-auteur).
 
 **Vous pouvez également avoir besoin de commutateurs supplémentaires pour les scénarios suivants :**
 
-* Si vous effectuez la mise à niveau sur un système Windows où le mappage de mémoire Java n’est pas géré correctement, ajoutez la variable `--disable-mmap` à la commande.
+* Si vous effectuez la mise à niveau sur un système Windows, sur lequel le mappage de la mémoire Java n’est pas géré correctement, ajoutez le paramètre `--disable-mmap` à la commande.
 
-* Si vous utilisez Java 7, ajoutez la variable `-XX:MaxPermSize=2048m` juste après le paramètre `-Xmx` .
-
-Pour plus d’informations sur l’utilisation de l’outil crx2oak, reportez-vous à la section [Utilisation de l’outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR auxiliaire de crx2oak peut être mis à niveau manuellement, si nécessaire, en le remplaçant manuellement par des versions récentes après la décompression du démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant : `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée à partir du référentiel Adobe à l’adresse : [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+Pour plus d’informations sur l’utilisation de l’outil crx2oak, reportez-vous à la section [Utilisation de l’outil de migration CRX2Oak](/help/sites-deploying/using-crx2oak.md). Le fichier JAR auxiliaire de crx2oak peut être mis à niveau manuellement, si nécessaire, en le remplaçant manuellement par des versions récentes après la décompression du démarrage rapide. Son emplacement dans le dossier d’installation AEM est le suivant :   `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. La dernière version de l’outil de migration CRX2Oak peut être téléchargée sur Adobe Repository, à l’adresse : [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 Si la migration a réussi, l’outil quitte avec un code de sortie égal à 0. Cherchez également des messages AVERTISSEMENT et ERREUR dans le fichier `upgrade.log`, disponible sous `crx-quickstart/logs` dans le répertoire d’installation d’AEM, car ils peuvent indiquer des erreurs non fatales qui se sont produites lors de la migration.
 
-Vérifiez les fichiers de configuration sous `crx-quickstart/install` dossier. Si une migration est nécessaire, ils sont mis à jour de manière à refléter le référentiel cible.
+Vérifiez les fichiers de configuration dans le dossier `crx-quickstart/install`. Si une migration est nécessaire, ils sont mis à jour de manière à refléter le référentiel cible.
 
 **Remarque sur magasins de données :**
 
@@ -134,7 +132,7 @@ Veuillez ignorer cette section si vous effectuez une mise à niveau à partir de
 
 **Les points de contrôle ne sont pas copiés, car aucun magasin de données externe n’a été spécifié. De ce fait, le référentiel sera entièrement réindexé au premier démarrage. Utilisez --skip-checkpoints pour forcer la migration ou reportez-vous à https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration pour plus d’informations.**
 
-Pour une raison quelconque, la procédure de migration doit accéder aux fichiers binaires du magasin de données et ne le trouve pas. Pour spécifier votre configuration de banque de données, incluez les indicateurs suivants dans la variable `<<ADDITIONAL_FLAGS>>` partie de la commande de migration :
+Pour une raison quelconque, la procédure de migration doit accéder aux fichiers binaires du magasin de données et ne le trouve pas. Pour spécifier la configuration du magasin de données, incluez les indicateurs ci-dessous dans la partie `<<ADDITIONAL_FLAGS>>` de la commande de migration :
 
 **Pour les magasins de données S3 :**
 
@@ -142,7 +140,7 @@ Pour une raison quelconque, la procédure de migration doit accéder aux fichier
 --src-s3config=/path/to/SharedS3DataStore.config --src-s3datastore=/path/to/datastore
 ```
 
-Où `/path/to/SharedS3DataStore.config` représente le chemin d’accès à votre fichier de configuration de banque de données S3 et `/path/to/datastore` représente le chemin d’accès à votre banque de données S3.
+Où `/path/to/SharedS3DataStore.config` représente le chemin d’accès au fichier de configuration de votre magasin de données S3, et `/path/to/datastore` représente le chemin d’accès à votre magasin de données S3.
 
 **Pour les magasins de données de fichier :**
 
@@ -150,7 +148,7 @@ Où `/path/to/SharedS3DataStore.config` représente le chemin d’accès à votr
 --src-datastore=/path/to/datastore
 ```
 
-Où `/path/to/datastore` représente le chemin d’accès à votre banque de données de fichiers.
+Où `/path/to/datastore` représente le chemin d’accès à votre magasin de données de fichier.
 
 ## Exécution de la mise à niveau {#performing-the-upgrade}
 
@@ -158,17 +156,17 @@ Où `/path/to/datastore` représente le chemin d’accès à votre banque de don
 
 1. Supprimez les fichiers JAR sous `crx-quickstart/install` associés à une version antérieure du connecteur S3.
 
-1. Téléchargez la dernière version du connecteur S3 1.10.x à partir de [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)
+1. Téléchargez la dernière version du connecteur S3 1.10.x sur [https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 
-1. Extrayez le package dans un dossier temporaire et copiez le contenu de `jcr_root/libs/system/install` au `crx-quickstart/install` dossier.
+1. Extrayez le module dans un dossier temporaire et copiez le contenu de `jcr_root/libs/system/install` dans le dossier `crx-quickstart/install`.
 
 ### Détermination de la commande de démarrage de mise à niveau appropriée {#determining-the-correct-upgrade-start-command}
 
-Pour effectuer la mise à niveau, il est important de démarrer AEM à l’aide du fichier JAR pour activer l’instance. Pour passer à la version 6.5, veuillez également consulter d’autres options de migration et de restructuration de contenu dans [Migration différée du contenu](/help/sites-deploying/lazy-content-migration.md) que vous pouvez choisir avec la commande upgrade.
+Pour effectuer la mise à niveau, il est important de démarrer AEM à l’aide du fichier JAR pour activer l’instance. Pour passer à la version 6.5, veuillez également consulter d’autres options de migration et de restructuration de contenu dans la [Migration de contenu différée](/help/sites-deploying/lazy-content-migration.md) que vous pouvez sélectionner avec la commande de mise à niveau.
 
 >[!IMPORTANT]
 >
->Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM. Pour plus d’informations, voir [Considérations sur Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Si vous exécutez Oracle Java 11 (ou en général les versions de Java ultérieures à la version 8), des modifications supplémentaires doivent être ajoutées à votre ligne de commande lors du démarrage d’AEM. Pour plus d’informations, consultez la section [Considérations sur Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
 Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas la mise à niveau. La plupart des clients démarrent AEM à l’aide du script de démarrage et ont personnalisé ce script de démarrage de manière à inclure des commutateurs pour les configurations d’environnement, comme les paramètres de mémoire, les certificats de sécurité, etc. Pour cette raison, il est recommandé de suivre cette procédure pour déterminer la commande de mise à niveau appropriée :
 
@@ -178,13 +176,13 @@ Notez que le démarrage d’AEM à partir du script de démarrage ne lance pas l
    ps -ef | grep java
    ```
 
-1. Recherchez le processus AEM. Il ressemblera à ceci :
+1. Recherchez le processus AEM. Le code se présente comme suit :
 
    ```shell
-   /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
+   /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. Modifiez la commande en remplaçant le chemin d’accès dans le fichier JAR existant (`crx-quickstart/app/aem-quickstart*.jar` dans ce cas) par le nouveau fichier JAR qui est un frère du dossier `crx-quickstart`. En prenant comme exemple notre commande précédente, notre commande serait la suivante :
+1. Modifiez la commande en remplaçant le chemin d’accès dans le fichier JAR existant (`crx-quickstart/app/aem-quickstart*.jar` dans ce cas) par le nouveau fichier JAR qui est un frère du dossier `crx-quickstart`. Avec la commande précédente comme exemple, la commande serait la suivante :
 
    ```shell
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
