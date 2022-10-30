@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
-feature: Adaptive Forms, Adobe Sign
+feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: e46d77caf831324f077315df43b8f3a0267bef9a
+source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 92%
@@ -22,7 +22,7 @@ ht-degree: 92%
 
 [!DNL Adobe Sign] permet des processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 
-Dans un scénario de formulaires typiques [!DNL Adobe Sign] et adaptatifs, un utilisateur remplit un formulaire adaptatif pour **effectuer une demande de service**. Par exemple, un formulaire de demande de carte de paiement et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le prestataire de services passe en revue la demande et utilise [!DNL Adobe Sign] pour marquer la demande comme approuvée. Pour activer les processus de signature électronique similaires, vous pouvez intégrer [!DNL Adobe Sign] à AEM [!DNL Forms].
+Dans un scénario de formulaires typiques [!DNL Adobe Sign] et adaptatifs, un utilisateur remplit un formulaire adaptatif pour **effectuer une demande de service**. Par exemple, un formulaire de demande de carte bancaire et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le prestataire de services passe en revue la demande et utilise [!DNL Adobe Sign] pour marquer la demande comme approuvée. Pour activer les processus de signature électronique similaires, vous pouvez intégrer [!DNL Adobe Sign] à AEM [!DNL Forms].
 
 Pour utiliser [!DNL Adobe Sign] avec AEM[!DNL Forms], configurez [!DNL Adobe Sign] dans AEM Cloud Services :
 
