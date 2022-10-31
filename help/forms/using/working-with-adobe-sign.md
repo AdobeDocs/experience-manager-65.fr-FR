@@ -298,7 +298,7 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
    > * Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’option **[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Cela est nécessaire pour que le formulaire continue de fonctionner.
    >
    > * Utilisez le composant Étape de résumé après le composant Étape de signature pour une expérience optimale. Le composant Étape de résumé effectue un envoi automatique et immédiat du formulaire après la signature de ce dernier dans le composant Étape de signature. Si vous n’utilisez pas l’étape de résumé, l’envoi automatique n’est déclenché qu’à la fin de l’intervalle défini à l’aide du [Service de configuration d’Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-      > Voici quelques bonnes pratiques :
+   > Voici quelques bonnes pratiques :
    > * L’étape de signature d’un formulaire adaptatif se trouve toujours dans le dernier ou avant-dernier panneau de celui-ci. Il ne peut se trouver dans l’avant-dernier panneau que lorsque le dernier panneau contient l’étape de résumé.
    > * Le panneau contenant le composant d’étape de signature ou de résumé ne peut pas contenir d’autre composant.
    > * Les formulaires adaptatifs contenant l’étape de signature ne peuvent pas comporter de bouton d’envoi.
