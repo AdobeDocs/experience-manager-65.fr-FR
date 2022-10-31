@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1467'
 ht-degree: 100%
@@ -161,9 +161,8 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
 
 >[!NOTE]
 >
-> * Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous de vous l’être procuré et spécifiez les informations requises pour configurer le pool de connexions JDBC. 
-> * Pointez vos instances d’auteur et de publication pour utiliser la même base de données. La valeur du champ URI de la connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
->
+>* Le pilote JDBC pour MySQL n’est pas fourni avec l’exemple. Assurez-vous de vous l’être procuré et spécifiez les informations requises pour configurer le pool de connexions JDBC. 
+>* Pointez vos instances d’auteur et de publication pour utiliser la même base de données. La valeur du champ URI de la connexion JDBC doit être identique pour toutes les instances d’auteur et de publication.
 
 
 1. Laissez les autres configurations inchangées et cliquez sur **[!UICONTROL Save]** (Enregistrer).

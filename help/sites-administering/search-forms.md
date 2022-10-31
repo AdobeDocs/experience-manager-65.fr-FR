@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2042'
 ht-degree: 77%
@@ -179,7 +179,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Masqué Filtrer</td>
+   <td>Filtre masqué</td>
    <td>Filtrez selon la propriété et la valeur, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -331,9 +331,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 >* Les prédicats de recherche courants sont définis dans :
    >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
->
 >* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
-   > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Ils sont obsolètes et disponibles uniquement à des fins de compatibilité descendante.
 >
 >Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.

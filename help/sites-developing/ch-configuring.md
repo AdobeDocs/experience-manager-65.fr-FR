@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1842'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 # Configuration de ContextHub {#configuring-contexthub}
 
-ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, voir la [documentation destinée aux développeurs](/help/sites-developing/contexthub.md). ContextHub remplace [ClientContext](/help/sites-administering/client-context.md) dans l’IU tactile.
+ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, voir la [documentation destinée aux développeurs](/help/sites-developing/contexthub.md). ContextHub remplace [ClientContext](/help/sites-administering/client-context.md) dans l’IU tactile.
 
 Configurez la barre d’outils [ContextHub](/help/sites-developing/contexthub.md) pour contrôler si elle apparaît dans le mode d’aperçu, afin de créer des magasins ContextHub et d’ajouter des modules d’IU à l’aide de l’IU optimisée pour les écrans tactiles.
 
@@ -39,18 +39,18 @@ ou
 
 >[!NOTE]
 >
->[En raison de la restructuration du référentiel dans AEM 6.4,](/help/sites-deploying/repository-restructuring.md) L’emplacement des configurations ContextHub a été modifié à partir de `/etc/cloudsettings` à :
+>[En raison de la restructuration du référentiel dans AEM 6.4,](/help/sites-deploying/repository-restructuring.md) l’emplacement des configurations ContextHub a été modifié de `/etc/cloudsettings` vers :
 >
-> * `/libs/settings/cloudsettings`
-> * `/conf/global/settings/cloudsettings`
-> * `/conf/<tenant>/settings/cloudsettings`
+>* `/libs/settings/cloudsettings`
+>* `/conf/global/settings/cloudsettings`
+>* `/conf/<tenant>/settings/cloudsettings`
 
 
 ## Affichage et masquage de l’IU ContextHub {#showing-and-hiding-the-contexthub-ui}
 
 Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l’[IU ContextHub](/help/sites-authoring/ch-previewing.md) sur vos pages. Le PID de ce service est `com.adobe.granite.contexthub.impl.ContextHubImpl.`
 
-Pour configurer le service, vous pouvez utiliser la variable [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou utilisez un [Noeud JCR dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
+Pour configurer le service, vous pouvez utiliser la [Console web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ou un [nœud JCR du référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) :
 
 * **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’IU, désélectionnez la propriété Masquer l’IU.
 * **Nœud JCR :** pour afficher l’IU, définissez la propriété booléenne `com.adobe.granite.contexthub.show_ui` sur `true`. Pour masquer l’IU, définissez la propriété sur `false`.
@@ -102,11 +102,11 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 | [contexthub.base](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) | Type de module d’IU générique | Configuré dans les propriétés du module d’IU |
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Affiche des informations sur le navigateur. | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Affiche la date et l’heure. | datetime |
-| [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Affichage du périphérique client | émulateurs |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Affiche la latitude et la longitude du client, ainsi que l’emplacement sur une carte. Vous permet de modifier l’emplacement. | géolocalisation |
+| [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Affiche le périphérique client | emulators |
+| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Affiche la latitude et la longitude du client, ainsi que l’emplacement sur une carte. Vous permet de modifier l’emplacement. | geolocation |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Affiche l’orientation de l’écran de l’appareil (paysage ou portrait). | émulateurs |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Affiche des statistiques sur les balises de page. | tagcloud |
-| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Affiche les informations de profil de l’utilisateur actuel, notamment les ID autorisables, displayName et familyName. Vous pouvez modifier la valeur du nom d’affichage (displayName) et du nom de famille (familyName). | son profil |
+| [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Affiche les informations de profil de l’utilisateur actuel, y compris les authorizableID, displayName et familyName. Vous pouvez modifier la valeur du nom d’affichage (displayName) et du nom de famille (familyName). | profile |
 
 1. Sur le rail Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
 1. Cliquez ou appuyez sur le conteneur de configurations auquel vous voulez ajouter un module d’IU.
@@ -142,7 +142,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 | Type de magasin | Description |
 |---|---|
 | [aem.segmentation](/help/sites-developing/ch-samplestores.md#aem-segmentation-sample-store-candidate) | Magasin pour les segments ContextHub résolus et non résolus. Récupère automatiquement les segments de SegmentManager ContextHub |
-| [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Stocke les segments actuellement résolus. Écoute le service ContextHub SegmentManager pour mettre à jour automatiquement le magasin |
+| [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Stocke les segments actuellement résolus. Écoute le service ContextHub SegmentManager pour mettre à jour automatiquement le magasin. |
 | [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) | Stocke la latitude et la longitude de l’emplacement du navigateur. |
 | [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Stocke la date, l’heure et la saison actuelles de l’emplacement du navigateur. |
 | [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Définit les propriétés et les fonctionnalités d’un certain nombre d’appareils et détecte l’appareil client actuel. |
@@ -217,7 +217,7 @@ Ajoutez un module d’IU à la barre d’outils ContextHub pour afficher les don
 
 ![chlimage_1-323](assets/chlimage_1-323.png)
 
-Suivez la procédure décrite à la section [Ajout d’un module d’IU](#adding-a-ui-module) pour ajouter le module d’IU à un mode d’IU existant, comme l’exemple de mode d’IU Perona. Pour le module d’IU, utilisez les valeurs de propriétés suivantes :
+Utilisez la procédure décrite dans [Ajout d’un module d’IU](#adding-a-ui-module) pour ajouter le module d’IU à un mode d’IU existant, comme l’exemple de mode d’IU Persona. Pour le module d’IU, utilisez les valeurs de propriétés suivantes :
 
 * **Titre du module d’IU :** MD5.
 * **Type de module :** contexthub.base.
@@ -255,7 +255,7 @@ Utilisez CRXDE Lite pour définir la propriété `debug` sur **true** sous :
 
 >[!NOTE]
 >
->Pour les configurations ContextHub toujours situées sous leurs chemins hérités, l’emplacement où définir la variable `debug property` is `/libs/settings/cloudsettings/legacy/contexthub`.
+>Pour les configurations ContextHub toujours situées sous leurs chemins hérités, l’emplacement où définir la `debug property` est `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Mode silencieux {#silent-mode}
 
@@ -272,19 +272,19 @@ Cela est utile pour votre instance de publication, où vous ne souhaitez pas voi
 
 Lors d’une [mise à niveau vers AEM](/help/sites-deploying/upgrade.md), les configurations de ContextHub sont sauvegardées et stockées dans un emplacement sécurisé. Lors de la mise à niveau, les configurations de ContextHub par défaut sont installées et remplacent les configurations existantes. La sauvegarde est nécessaire pour conserver tous les changements ou ajouts que vous avez effectués.
 
-Les configurations ContextHub sont stockées dans un dossier nommé `contexthub` sous les noeuds suivants :
+Les configurations ContextHub sont stockées dans un dossier nommé `contexthub` sous les nœuds suivants :
 
 * `/conf/global/settings/cloudsettings`
 * `/conf/<tenant>/settings/cloudsettings`
 
-Après une mise à niveau, la sauvegarde est stockée dans un dossier nommé `contexthub` sous un noeud nommé :
+Après une mise à niveau, la sauvegarde est stockée dans un dossier nommé `contexthub` sous un nœud nommé :
 
 `/conf/global/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx` ou
 `/conf/<tenant>/settings/cloudsettings/default-pre-upgrade_yyyymmdd_xxxxxxx`
 
-Le `yyyymmdd` du nom du noeud est la date à laquelle la mise à niveau a été effectuée.
+La partie `yyyymmdd` du nom du nœud correspond à la date à laquelle la mise à niveau a été effectuée.
 
-Pour récupérer vos configurations ContextHub, utilisez CRXDE Lite afin de copier les noeuds qui représentent vos magasins, modes d’IU et modules d’IU depuis sous la balise `default-pre-upgrade_yyyymmdd_xxxxxx` noeud à ci-dessous :
+Pour récupérer vos configurations de ContextHub, utilisez CRXDE Lite afin de copier les nœuds qui représentent vos magasins, modes d’IU et modules d’IU à partir du niveau en dessous du nœud `default-pre-upgrade_yyyymmdd_xxxxxx` sur les chemin ci-dessous :
 
 * `/conf/global/settings/cloudsettings` ou
 * `/conf/<tenant>/settings/cloudsettings`

@@ -6,7 +6,7 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 9a74a92262a1ee8dd651965b3a770c4c843f7980
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3452'
 ht-degree: 83%
@@ -209,7 +209,7 @@ Adobe Experience Manager exécuté sur une machine virtuelle sur des environne
 
 Pour un environnement natif dans le cloud, passez en revue la dernière offre de la gamme de produits AEM : Adobe Experience Manager as a Cloud Service. Voir [Documentation Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) pour plus d’informations.
 
-Adobe propose également Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit aux experts les compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez notre [documentation complémentaire sur Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+Adobe propose également Adobe Managed Services pour déployer AEM sur Azure ou AWS. Adobe Managed Services fournit aux experts les compétences nécessaires pour déployer et utiliser AEM dans ces environnements de cloud computing. Consultez notre [documentation complémentaire sur Adobe Managed Services](https://www.adobe.com/fr/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 Dans tous les autres cas, lorsqu’AEM est déployé sur Azure ou AWS, ou tout autre environnement de cloud computing, la prise en charge d’Adobe sera limitée à l’environnement informatique virtuel, conformément aux caractéristiques techniques répertoriées sur cette page. Tout problème signalé lié à l’exécution d’AEM dans ces environnements cloud devra être reproductible indépendamment de tout service cloud spécifique à l’environnement de cloud computing, à moins que le service cloud ne soit spécifiquement pris en charge dans le cadre des exigences techniques répertoriées sur cette page, par exemple le stockage Azure Blob ou AWS S3.
 
@@ -217,7 +217,7 @@ Pour des recommandations sur le déploiement d’AEM sur Azure ou AWS, en dehors
 
 ### Plateformes Dispatcher (serveurs web) {#dispatcher-platforms-web-servers}
 
-Dispatcher est le composant de mise en cache et d’équilibrage de charge. [Téléchargez la dernière version de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Experience Manager 6.5 nécessite Dispatcher version 4.3.2 ou ultérieure.
+Dispatcher est le composant de mise en cache et d’équilibrage de charge. [Téléchargez la dernière version de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/release-notes.html). Experience Manager 6.5 nécessite Dispatcher version 4.3.2 ou ultérieure.
 
 L’utilisation des serveurs web ci-dessous est prise en charge avec Dispatcher version 4.3.2 :
 
@@ -336,7 +336,8 @@ Tout fonctionne sans problème, dans la mesure où aucune configuration particul
 
 Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le choix entre (suivant les besoins) :
 
-* une adresse IPv6, par exemple `https://[ab12::34c5:6d7:8e90:1234]:4502`
+* une adresse IPv6 ;
+par exemple `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * une adresse IPv4, par exemple ; `https://123.1.1.4:4502`
 
@@ -487,18 +488,18 @@ Pour Windows x86 :
 
 >[!NOTE]
 >
-> PDF Generator prend en charge uniquement les versions en anglais, français, allemand et japonais des applications et des systèmes d’exploitation pris en charge.
+>PDF Generator prend en charge uniquement les versions en anglais, français, allemand et japonais des applications et des systèmes d’exploitation pris en charge.
 >
-> En outre :
+>En outre :
 >
-> * PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
-> * Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
-> * PDF Generator ne prend en charge que la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion sur le système d’exploitation Windows.
-> * PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous Linux.
-> * PDF Generator ne prend pas en charge Microsoft Office 365.
-> * Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
-> * Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))
-> * Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
+>* PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
+>* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
+>* PDF Generator ne prend en charge que la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion sur le système d’exploitation Windows.
+>* PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous Linux.
+>* PDF Generator ne prend pas en charge Microsoft Office 365.
+>* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
 >
 
 

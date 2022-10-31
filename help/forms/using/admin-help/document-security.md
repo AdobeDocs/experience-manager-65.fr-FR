@@ -1,5 +1,5 @@
 ---
-title: 'Qu’est-ce que Document Security ? '
+title: Qu’est-ce que Document Security ?
 seo-title: About document security
 description: Découvrez comment vous pouvez facilement créer, stocker et appliquer des paramètres de confidentialité prédéfinis et répartir vos informations en toute sécurité à l’aide de Document Security.
 seo-description: Learn how you can create, store, and apply predefined confidentiality settings, and distribute your information safely using document security.
@@ -12,7 +12,7 @@ discoiquuid: 1820cb38-ba70-4cce-8895-290524bdd9bf
 docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
-source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3286'
 ht-degree: 100%
@@ -276,4 +276,4 @@ Ajoutez des groupes dʼutilisateurs aux stratégies au lieu dʼutilisateurs indi
 
    >[!NOTE]
    >
-   > Vous pouvez utiliser lʼAPI [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) pour récupérer, au maximum, 1 000 noms de jeux de stratégies. En interne, l’API récupère un maximum de 1 000 stratégies pour lesquelles le demandeur de l’API dispose de l’autorisation d’éditeur de document, puis crée et renvoie une liste de noms de jeux de stratégies uniques associés aux stratégies récupérées. Par exemple, lorsque l’API récupère 1 000 stratégies et que les stratégies récupérées sont associées à 200 jeux de stratégies au total, l’API renvoie uniquement 200 noms de jeux de stratégies.
+   >Vous pouvez utiliser lʼAPI [getAllPolicysetnames()](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) pour récupérer, au maximum, 1 000 noms de jeux de stratégies. En interne, l’API récupère un maximum de 1 000 stratégies pour lesquelles le demandeur de l’API dispose de l’autorisation d’éditeur de document, puis crée et renvoie une liste de noms de jeux de stratégies uniques associés aux stratégies récupérées. Par exemple, lorsque l’API récupère 1 000 stratégies et que les stratégies récupérées sont associées à 200 jeux de stratégies au total, l’API renvoie uniquement 200 noms de jeux de stratégies.

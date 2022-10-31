@@ -11,7 +11,7 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
+source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 100%
@@ -295,15 +295,17 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
 
    >[!NOTE]
    >
-   > * Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’option **[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Cela est nécessaire pour que le formulaire continue de fonctionner.
+   >* Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’option **[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Cela est nécessaire pour que le formulaire continue de fonctionner.
+   >* Utilisez le composant Étape de résumé après le composant Étape de signature pour une expérience optimale. Le composant Étape de résumé effectue un envoi automatique et immédiat du formulaire après la signature de ce dernier dans le composant Étape de signature. Si vous n’utilisez pas l’étape de résumé, l’envoi automatique n’est déclenché qu’à la fin de l’intervalle défini à l’aide du [Service de configuration d’Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
+
    >
-   > * Utilisez le composant Étape de résumé après le composant Étape de signature pour une expérience optimale. Le composant Étape de résumé effectue un envoi automatique et immédiat du formulaire après la signature de ce dernier dans le composant Étape de signature. Si vous n’utilisez pas l’étape de résumé, l’envoi automatique n’est déclenché qu’à la fin de l’intervalle défini à l’aide du [Service de configuration d’Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-   > Voici quelques bonnes pratiques :
-   > * L’étape de signature d’un formulaire adaptatif se trouve toujours dans le dernier ou avant-dernier panneau de celui-ci. Il ne peut se trouver dans l’avant-dernier panneau que lorsque le dernier panneau contient l’étape de résumé.
-   > * Le panneau contenant le composant d’étape de signature ou de résumé ne peut pas contenir d’autre composant.
-   > * Les formulaires adaptatifs contenant l’étape de signature ne peuvent pas comporter de bouton d’envoi.
-   > * L’envoi des formulaires adaptatifs contenant l’étape de signature est géré via un service en arrière-plan ou l’étape de résumé. Si un signataire configuré remplit également le formulaire, l’avantage de gérer l’envoi du formulaire adaptatif à l’aide de l’étape de résumé est que cela évalue immédiatement que le signataire a signé le formulaire et appelle l’action d’envoi. Un service en arrière-plan prend plus de temps pour évaluer si tous les signataires configurés ont signé le formulaire. Cela retarde donc l’envoi du formulaire adaptatif.
-   > * Concevez le formulaire de manière à ce que l’utilisateur ne puisse pas revenir en arrière à partir d’un panneau contenant l’étape de signature ou de résumé.
+   >Voici quelques bonnes pratiques :
+   >
+   >* L’étape de signature d’un formulaire adaptatif se trouve toujours dans le dernier ou avant-dernier panneau de celui-ci. Il ne peut se trouver dans l’avant-dernier panneau que lorsque le dernier panneau contient l’étape de résumé.
+   >* Le panneau contenant le composant d’étape de signature ou de résumé ne peut pas contenir d’autre composant.
+   >* Les formulaires adaptatifs contenant l’étape de signature ne peuvent pas comporter de bouton d’envoi.
+   >* L’envoi des formulaires adaptatifs contenant l’étape de signature est géré via un service en arrière-plan ou l’étape de résumé. Si un signataire configuré remplit également le formulaire, l’avantage de gérer l’envoi du formulaire adaptatif à l’aide de l’étape de résumé est que cela évalue immédiatement que le signataire a signé le formulaire et appelle l’action d’envoi. Un service en arrière-plan prend plus de temps pour évaluer si tous les signataires configurés ont signé le formulaire. Cela retarde donc l’envoi du formulaire adaptatif.
+   >* Concevez le formulaire de manière à ce que l’utilisateur ne puisse pas revenir en arrière à partir d’un panneau contenant l’étape de signature ou de résumé.
 
 
 

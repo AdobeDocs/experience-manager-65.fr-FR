@@ -6,7 +6,7 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3583'
 ht-degree: 90%
@@ -493,11 +493,12 @@ Vous pouvez exécuter le nettoyage de la mémoire du magasin de données en :
 >Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Ces avertissements se produisent, car les ID de blob supprimés durant un nettoyage précédent sont à nouveau référencés de manière incorrecte par d’autres nœuds partagés ou clusters qui n’ont pas d’informations sur les suppressions des ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
 
 >[!NOTE]
-> Si vous utilisez une configuration de magasin de données partagée et que le nettoyage de la mémoire du magasin de données est désactivé, l’exécution de la tâche de nettoyage du binaire Lucene peut soudainement augmenter l’espace disque utilisé. Pour éviter cela, vous devez désactiver BlobTracker sur toutes les instances d’auteur et de publication comme suit :
 >
-> 1. Désactivez l’instance AEM.
-> 2. Ajoutez le paramètre `blobTrackSnapshotIntervalInSecs=L"0"` dans le fichier `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Ce paramètre nécessite Oak 1.12.0, 1.10.2 ou une version ultérieure.
-> 3. Redémarrez l’instance AEM.
+>Si vous utilisez une configuration de magasin de données partagée et que le nettoyage de la mémoire du magasin de données est désactivé, l’exécution de la tâche de nettoyage du binaire Lucene peut soudainement augmenter l’espace disque utilisé. Pour éviter cela, vous devez désactiver BlobTracker sur toutes les instances d’auteur et de publication comme suit :
+>
+>1. Désactivez l’instance AEM.
+>2. Ajoutez le paramètre `blobTrackSnapshotIntervalInSecs=L"0"` dans le fichier `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Ce paramètre nécessite Oak 1.12.0, 1.10.2 ou une version ultérieure.
+>3. Redémarrez l’instance AEM.
 
 
 Avec des versions plus récentes d’AEM, le nettoyage de la mémoire du magasin de données peut également être effectué sur des magasins de données partagés par plusieurs référentiels. Pour pouvoir exécuter le nettoyage de la mémoire du magasin de données sur un magasin de données partagé, procédez comme suit : 

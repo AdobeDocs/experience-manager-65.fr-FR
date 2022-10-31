@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: cb4b0cb60b8709beea3da70495a15edc8c4831b8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 82%
+source-wordcount: '794'
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Pour créer un groupe d’utilisateurs fermé :
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Appuyez sur le bouton **Créer** dans le coin supérieur droit pour créer un groupe.
-1. Nommez votre nouveau groupe. par exemple, `cug_access`.
+1. Nommez votre groupe, par exemple `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -77,20 +77,20 @@ Pour appliquer le groupe d’utilisateurs fermé à une page :
 1. Dans la fenêtre suivante, accédez à l’onglet **Avancé**.
 1. Faites défiler vers le bas et activez la case à cocher dans la section **Exigence d’authentification**.
 
-1. Ajoutez le chemin de configuration ci-dessous, puis appuyez sur Enregistrer.
+1. Ajoutez le chemin de votre configuration ci-dessous, puis appuyez sur Enregistrer.
 1. Ensuite, accédez à l’onglet **Autorisations** et appuyez sur le bouton **Modifier le groupe d’utilisateurs fermé**.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
-   >[REMARQUE!]
+   >[!NOTE]
    >
-   > Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
+   >Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
    >
-   > Pour plus d’informations, consultez [cette page](closed-user-groups.md#aem-livecopy).
+   >Pour plus d’informations, consultez [cette page](closed-user-groups.md#aem-livecopy).
 
 1. Recherchez et ajoutez votre CUG dans la fenêtre suivante - dans ce cas, ajoutez le groupe nommé **cug_access**. Enfin, appuyez sur **Enregistrer**.
 1. Cliquez sur **Activé** pour définir que cette page et les pages enfants appartiennent à un groupe d’utilisateurs fermé.
-1. Spécifiez la variable **Page de connexion** que les membres du groupe utiliseront ; par exemple :
+1. Spécifiez la **Page de connexion** que les membres du groupe utiliseront ; par exemple :
 
    `/content/geometrixx/en/toolbar/login.html`
 
@@ -118,7 +118,7 @@ Si vous utilisez Dispatcher, vous devez définir une ferme de serveurs Dispatche
 
 ### Configuration de la gestion des sessions Dispatcher pour les groupes d’utilisateurs fermés {#configuring-dispatcher-session-management-for-cugs}
 
-Configurer [gestion de session dans le fichier dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) pour le CUG. Le gestionnaire d’authentification utilisé lorsque l’accès est demandé pour les pages de CUG détermine la manière dont vous configurez la gestion des sessions.
+Configurez la [gestion des sessions dans le fichier dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) pour le groupe d’utilisateurs fermé. Le gestionnaire d’authentification utilisé lorsque l’accès est demandé pour les pages des groupes d’utilisateurs fermés détermine comment configurer la gestion des sessions.
 
 ```xml
 /sessionmanagement
@@ -132,7 +132,7 @@ Configurer [gestion de session dans le fichier dispatcher.any](https://helpx.ado
 >Lorsque la gestion des sessions est activée pour une ferme de serveurs de Dispatcher, toutes les pages gérées par la ferme de serveurs ne sont pas mises en cache. Pour mettre en cache les pages qui ne sont pas des groupes d’utilisateurs fermés, créez une seconde ferme de serveurs dans dispatcher.any.
 >qui gère les pages non CUG.
 
-1. Configurer [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) en définissant `/directory`; par exemple :
+1. Configurez [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) en définissant `/directory`, par exemple :
 
    ```xml
    /sessionmanagement

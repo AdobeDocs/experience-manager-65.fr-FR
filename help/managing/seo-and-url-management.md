@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques d’optimisation pour les moteurs de recherche et de gestion des URL
+title: Bonnes pratiques de SEO et de gestion des URL
 seo-title: SEO and URL Management Best Practices
 description: Découvrez les meilleures pratiques relatives à l’optimisation pour les moteurs de recherche, ainsi que des recommandations pour les suivre lors d’une mise en œuvre AEM.
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
@@ -7,14 +7,14 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 8cb016eefc2699ffb3dfa926a289123b96927055
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3802'
 ht-degree: 97%
 
 ---
 
-# Meilleures pratiques d’optimisation pour les moteurs de recherche et de gestion des URL{#seo-and-url-management-best-practices}
+# Bonnes pratiques de SEO et de gestion des URL{#seo-and-url-management-best-practices}
 
 L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation pour les moteurs de recherche doivent être traitées pour de nombreux projets AEM.
 
@@ -30,7 +30,7 @@ Il existe des meilleures pratiques généralement acceptées en ce qui concerne 
 
 Dans votre projet AEM, lors de l’évaluation des URL, posez-vous la question suivante :
 
-« Si un utilisateur voyait cette URL, mais aucun des éléments de contenu de la page, pourrait-il décrire ce qu’est cette page ? »
+&quot;Si un utilisateur voyait cette URL et aucun du contenu de la page, pourrait-il décrire ce qu’était cette page ?&quot;
 
 Si la réponse est oui, il est probable que l’URL fonctionne pour un moteur de recherche.
 
@@ -156,7 +156,7 @@ Les servlets **Sling** permettent d’enregistrer la servlet dans le sens oppos�
 L’annotation SCR pour ce type de servlet doit ressembler à ce qui suit :
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 Dans ce cas, la ressource que l’URL adresse (une instance de la ressource `myPageType`) est accessible dans la servlet automatiquement. Pour y accéder, vous appelez :
@@ -320,7 +320,7 @@ Exemples :
 Les deux appliqueraient la balise suivante à la tête de la page :
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 `href` peut être relatif ou absolu. Le code doit être inclus dans le balisage de la page pour déterminer l’URL canonique de la page et générer cette balise.
@@ -366,9 +366,9 @@ AEM utilise le [module de plan de site Apache Sling](https://github.com/apache/s
 
 >[!NOTE]
 >
-> Cette fonctionnalité est disponible en tant que fonctionnalité de produit depuis Adobe Experience Manager version 6.5.11.0.
+>Cette fonctionnalité est disponible en tant que fonctionnalité de produit depuis Adobe Experience Manager version 6.5.11.0.
 > 
-> Pour les versions plus anciennes, vous pouvez enregistrer vous-même une servlet Sling, pour écouter une `sitemap.xml` appelez et utilisez la ressource fournie via l’API servlet pour rechercher la page active et ses descendants afin de générer un fichier sitemap.xml.
+>Pour les versions plus anciennes, vous pouvez enregistrer vous-même une servlet Sling, pour écouter une `sitemap.xml` appelez et utilisez la ressource fournie via l’API servlet pour rechercher la page active et ses descendants afin de générer un fichier sitemap.xml.
 
 Le module de plan de site Apache Sling fait la distinction entre un plan de site de niveau supérieur et un plan de site imbriqué, tous deux générés pour toute ressource qui possède la variable `sling:sitemapRoot` définie sur `true`. En règle générale, les plans de site sont rendus à l’aide de sélecteurs localisés par le chemin du plan de site de niveau supérieur de l’arborescence, qui correspond à la ressource qui n’a aucun autre ancêtre racine du plan de site. Cette racine de plan de site de niveau supérieur expose également l’index de plan de site, qui est normalement ce que le propriétaire d’un site doit configurer dans le portail de configuration du moteur de recherche ou ajouter au site `robots.txt`.
 
@@ -380,7 +380,7 @@ Prenons l’exemple d’un site qui définit une racine de plan de site de nivea
 
 >[!NOTE]
 >
-> Les sélecteurs `sitemap` et `sitemap-index` peuvent interférer avec les implémentations personnalisées. Si vous ne souhaitez pas utiliser la fonctionnalité de produit, configurez votre propre servlet de manière à ce que ces sélecteurs disposent d’un `service.ranking` supérieur à 0.
+>Les sélecteurs `sitemap` et `sitemap-index` peuvent interférer avec les implémentations personnalisées. Si vous ne souhaitez pas utiliser la fonctionnalité de produit, configurez votre propre servlet de manière à ce que ces sélecteurs disposent d’un `service.ranking` supérieur à 0.
 
 Dans la configuration par défaut, la boîte de dialogue Propriétés de la page permet d’identifier une page en tant que racine du plan du site et, comme décrit ci-dessus, de générer un plan du site lui-même et de ses descendants. Ce comportement est implémenté par les implémentations de l’interface `SitemapGenerator` et peut être étendu en ajoutant d’autres implémentations. Cependant, comme la fréquence de régénération des plans de site XML dépend fortement des workflows et des workloads de création de contenu, le produit n’est livré avec aucune configuration de `SitemapScheduler`. Elle offre à la fonctionnalité un accord préalable effectif.
 

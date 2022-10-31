@@ -9,14 +9,14 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# Commerce  Configuration multi-magasin {#multi-store}
+# Commerce Configuration multi-magasin {#multi-store}
 
 Les composants principaux AEM CIF peuvent être utilisés sur plusieurs structures de site AEM et la mise en œuvre du client GraphQL sous-jacent peut se connecter à différents magasins/vues de magasin Adobe Commerce. Cela permet aux projets de mettre en œuvre des configurations multi-magasin/multi-site complexes.
 
@@ -28,7 +28,7 @@ Les fonctions de gestion multi-site AEM de Live Copy et Language Copy sont utili
 
 La configuration recommandée consiste à utiliser une relation 1:1 entre le site AEM et la vue de magasin Adobe Commerce.
 
-Pour connecter un site AEM et les composants principaux AEM CIF à une vue de magasin dédiée, procédez comme suit :
+Pour connecter un site AEM et les composants principaux AEM CIF à une vue de magasin dédiée, procédez comme suit :
 
 ## Configuration {#configuration}
 
@@ -46,12 +46,12 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 
    >[!TIP]
    >
-   > Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+   >Les catalogues de commerce peuvent être traités à l’aide d’identifiants ou d’UID. Les UID ont été introduits dans Adobe Commerce 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 
 4. Affectez la configuration enfant à un site AEM
 
    * Accédez à la console AEM Sites.
-   * Accédez à la racine de région ou de langue de la structure de votre site, par exemple /content/venia/us _ou_ /content/venia/us/en pour la page d’exemple Venia
+   * Accédez à la racine de région ou de langue de la structure de votre site ; par exemple, /content/venia/us _ou_ /content/venia/us/en pour la page échantillon Venia.
    * Sélectionnez la page et ouvrez ses propriétés.
    * Sélectionnez l’onglet Avancé.
    * Dans la section `Configuration`, sélectionnez la configuration que vous avez créée à l’étape.

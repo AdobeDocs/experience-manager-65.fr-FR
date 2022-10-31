@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 014731aa9c5c4d7d419ff8b037142b47e7b7da01
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '910'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 
 >[!NOTE]
 >
-> L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation pour les moteurs de recherche doivent être traitées pour de nombreux projets AEM. Consultez les [Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) pour plus d’informations.
+>L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation pour les moteurs de recherche doivent être traitées pour de nombreux projets AEM. Consultez les [Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=fr) pour plus d’informations.
 
 Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) offrent des configurations avancées pour personnaliser les URL des pages de produits et de catégories. De nombreuses mises en œuvre personnalisent ces URL à des fins d’optimisation pour les moteurs de recherche (SEO). La vidéo suivante explique comment configurer le `UrlProvider` service et les fonctionnalités du [mappage Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour personnaliser les URL des pages de produits et de catégories.
 
@@ -32,7 +32,7 @@ Pour configurer le service `UrlProvider` en fonction des exigences SEO et des be
 
 >[!NOTE]
 >
-> Depuis la version 2.0.0 des composants principaux CIF d’AEM, la configuration du fournisseur d’URL fournit uniquement des formats d’URL prédéfinis, au lieu des formats configurables en texte libre connus des versions 1.x. De plus, l’utilisation de sélecteurs pour transmettre des données dans des URL a été remplacée par des suffixes.
+>Depuis la version 2.0.0 des composants principaux CIF d’AEM, la configuration du fournisseur d’URL fournit uniquement des formats d’URL prédéfinis, au lieu des formats configurables en texte libre connus des versions 1.x. De plus, l’utilisation de sélecteurs pour transmettre des données dans des URL a été remplacée par des suffixes.
 
 ### Format d’URL de page de produits {#product}
 
@@ -73,15 +73,15 @@ Avec les données d’exemple ci-dessus, une URL de page de catégorie formatée
 
 >[!NOTE]
 > 
-> `url_path` est une concaténation de `url_keys` des ancêtres d’un produit ou d’une catégorie et de `url_key` du produit ou de la catégorie séparés par une barre oblique `/`.
+>`url_path` est une concaténation de `url_keys` des ancêtres d’un produit ou d’une catégorie et de `url_key` du produit ou de la catégorie séparés par une barre oblique `/`.
 
-### Catégorie spécifique/pages de produits {#specific-pages}
+### Pages de catégorie/produit spécifiques {#specific-pages}
 
 Il est possible de créer [plusieurs pages de catégories et de produits](multi-template-usage.md) pour un sous-ensemble spécifique de catégories ou de produits d’un catalogue.
 
-Le `UrlProvider` est préconfiguré pour générer des liens profonds vers ces pages sur les instances de niveau auteur. Cette fonctionnalité est utile aux rédacteurs qui parcourent un site en mode Prévisualisation, se rendent sur une page produit ou de catégorie spécifique, puis repassent en mode Édition pour modifier la page.
+L’`UrlProvider` est préconfiguré pour générer des liens profonds vers ces pages sur les instances dʼauteur. Cette fonctionnalité est utile aux rédacteurs qui parcourent un site en mode Prévisualisation, se rendent sur une page produit ou de catégorie spécifique, puis repassent en mode Édition pour modifier la page.
 
-En revanche, sur les instances de niveau publication, les URL de page du catalogue doivent être conservées stables afin de ne pas perdre, par exemple, les gains sur les classements des moteurs de recherche. Pour cette raison, les instances de publication ne généreront pas de liens profonds vers des pages de catalogue spécifiques par défaut. Pour modifier ce comportement, la variable _Stratégie de page spécifique au fournisseur d’URL CIF_ peut être configuré pour toujours générer des url de page spécifiques.
+Dans les instances de publication, en revanche, les adresses URL des pages de catalogue doivent rester stables pour ne pas perdre les gains de classement dans les moteurs de recherche, par exemple. Pour cette raison, les instances de publication ne généreront pas de liens profonds vers des pages de catalogue spécifiques par défaut. Pour modifier ce comportement, une _Stratégie de page spécifique du fournisseur d’URL CIF_ peut être configurée pour toujours générer des adresses URL de page spécifiques.
 
 ## Formats d’URL personnalisés {#custom-url-format}
 

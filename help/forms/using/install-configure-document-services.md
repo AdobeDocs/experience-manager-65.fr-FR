@@ -8,7 +8,7 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: b80886f1e45e0ed65ce2309ef6ea43bfa373a52b
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5529'
 ht-degree: 65%
@@ -252,7 +252,7 @@ Définissez des variables d’environnement pour Java Development Kit 32 bits e
 >* Sur les plates-formes UNIX, installez OpenOffice en tant que /root. Si OpenOffice n’est pas installé en tant qu’utilisateur root, le service PDF Generator ne parvient pas à convertir les documents OpenOffice en documents PDF. Si vous devez installer et exécuter OpenOffice en tant qu’utilisateur non root, indiquez les droits sudo pour l’utilisateur non-root.
 >* Si vous utilisez OpenOffice sur une plateforme UNIX, exécutez la commande suivante pour définir la variable de chemin :
 >
-> `export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 ### (Uniquement pour IBM® WebSphere®) Configuration du fournisseur de socket SSL IBM® {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
@@ -415,7 +415,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
    >[!NOTE]
    >
    >les droits d’utilisation relatifs aux polices fournies par des sociétés autres qu’Adobe sont régis par les contrats de licence accompagnant ces polices. Ils ne sont pas couverts par la licence d’utilisation du logiciel Adobe qui vous est concédée. Adobe vous recommande de vérifier et de vous assurer que vous êtes conforme à tous les contrats de licence non-Adobe applicables avant d’utiliser des polices non-Adobe avec un logiciel Adobe, en particulier concernant l’utilisation de polices dans un environnement serveur.
-   > Lorsque vous installez de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
+   >Lorsque vous installez de nouvelles polices dans le dossier de polices, redémarrez l’instance AEM Forms.
 
 ### Configuration d’un compte d’utilisateur local pour exécuter le service PDF Generator  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
@@ -596,7 +596,8 @@ Le [Outil System Readiness](#srt-configuration) vérifie si l’ordinateur est c
 
    >[!NOTE]
    >
-   > * Si l’outil System Readiness signale que le fichier pdfgen.api n’est pas disponible dans le dossier des modules externes d’Acrobat, copiez le fichier pdfgen.api à partir du `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` vers le répertoire `[Acrobat_root]\Acrobat\plug_ins` répertoire .
+   >* Si l’outil System Readiness signale que le fichier pdfgen.api n’est pas disponible dans le dossier des modules externes d’Acrobat, copiez le fichier pdfgen.api à partir du `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` vers le répertoire `[Acrobat_root]\Acrobat\plug_ins` répertoire .
+
 
 1. Accédez à `[Path_of_reports_folder]`. Ouvrez le fichier SystemReadinessTool.html. Vérifiez le rapport et résolvez les problèmes mentionnés.
 

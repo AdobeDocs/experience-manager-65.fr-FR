@@ -12,7 +12,7 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: b9a3db4144a571291bdf1c9a9f0e841f284df0c8
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '5972'
 ht-degree: 91%
@@ -448,11 +448,12 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >| `'.'yyyy-MM-dd-HH-mm` | Rotation au début de chaque minute |
    >
    >Remarque : Lorsque vous spécifiez une heure/date :
-   > 1. vous devez placer le texte littéral « escape » dans une paire de guillemets simples (’ ’) ;
-      >
-      >     cela permet d’éviter que certains caractères ne soient interprétés comme des lettres majuscules.
    >
-   >  1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
+   >1. vous devez placer le texte littéral « escape » dans une paire de guillemets simples (’ ’) ;
+      >
+      >    cela permet d’éviter que certains caractères ne soient interprétés comme des lettres majuscules.
+   >
+   >1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
 
 
 1. Lisez votre nouveau fichier journal avec l’outil sélectionné.

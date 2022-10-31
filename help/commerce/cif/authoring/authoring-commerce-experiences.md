@@ -2,7 +2,7 @@
 title: Création d’expériences commerciales
 description: Création d’expériences commerciales
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 100%
@@ -93,7 +93,7 @@ Les composants affichent un indicateur visuel si la date utilisée est en cours 
 
 ## Omnisearch {#omnisearch}
 
-L’utilisation d’Omnisearch est un moyen facile pour les utilisateurs de trouver le contenu AEM et des données de catalogue de produits à l’aide de la recherche en texte intégral. Omisearch exécute une recherche en texte intégral dans AEM et le serveur principal Commerce pour trouver les objets du catalogue de produits dans le serveur principal Commerce et le contenu AEM. Les résultats AEM incluent également le contenu balisé avec des données de produit/catégorie.
+L’utilisation d’Omnisearch est un moyen facile pour les utilisateurs de trouver le contenu AEM et des données de catalogue de produits à l’aide de la recherche en texte intégral. Omnisearch exécute une recherche en texte intégral dans AEM et le serveur principal Commerce pour trouver les objets du catalogue de produits dans le serveur principal Commerce et le contenu AEM. Les résultats AEM incluent également le contenu balisé avec des données de produit/catégorie.
 
 ![Omnisearch](/help/commerce/cif/assets/authoring/omnisearch.png)
 

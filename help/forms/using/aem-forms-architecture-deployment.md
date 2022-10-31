@@ -11,7 +11,7 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2460'
 ht-degree: 100%
@@ -76,7 +76,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 
    >[!NOTE]
    >
-   > Adobe recommande d’utiliser un magasin de données tiers pour enregistrer les données traitées finales au lieu d’utiliser le référentiel AEM.
+   >Adobe recommande d’utiliser un magasin de données tiers pour enregistrer les données traitées finales au lieu d’utiliser le référentiel AEM.
 
 * **Stockage et post-traitement des données de correspondance provenant d’une instance de publication :** les workflows AEM exécutent le post-traitement facultatif des définitions de lettre correspondantes. Ces processus peuvent enregistrer les données finales traitées dans des magasins de données externes appropriés.
 

@@ -7,7 +7,7 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 1%
@@ -127,7 +127,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 >[!NOTE]
 >
-> Le processus de création de définition d’index ci-dessus est pris en charge uniquement à partir de la `oak-run-1.12.0` à partir de la version Le ciblage est effectué à l’aide du lot de référentiel Granite. `com.adobe.granite.repository-x.x.xx.jar`.
+>Le processus de création de définition d’index ci-dessus est pris en charge uniquement à partir de la `oak-run-1.12.0` à partir de la version Le ciblage est effectué à l’aide du lot de référentiel Granite. `com.adobe.granite.repository-x.x.xx.jar`.
 
 Les étapes ci-dessus créent un fichier JSON appelé `merge-index-definitions_target.json` qui est la définition d’index.
 
@@ -141,9 +141,9 @@ Une fois cette opération effectuée, copiez l’identifiant de point de contrô
 
 >[!NOTE]
 >
-> Ce point de contrôle sera supprimé lorsque l’index sera importé ultérieurement.
+>Ce point de contrôle sera supprimé lorsque l’index sera importé ultérieurement.
 
-Pour plus d’informations, voir [création de points de contrôle](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) dans la documentation d’Oak.
+Pour plus d’informations, voir [création de points de contrôle](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) à partir de la documentation d’Oak.
 
 **Exécution de l’indexation hors ligne pour les définitions d’index générées**
 

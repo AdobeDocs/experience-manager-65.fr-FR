@@ -9,10 +9,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
+source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2567'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -22,7 +22,7 @@ Le [projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) est une bas
 
 >[!TIP]
 >
-> Utilisez l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) pour démarrer votre propre implémentation commerciale.
+>Utilisez l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) pour démarrer votre propre implémentation commerciale.
 
 ## Ce que vous allez créer
 
@@ -32,7 +32,7 @@ Dans ce tutoriel, un nouveau style ressemblant à une carte sera mis en œuvre p
 
 ## Prérequis {#prerequisites}
 
-Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes pour [configuration d’un développement local avec AEM](../develop.md).
+Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes de [configuration d’un développement local avec AEM](../develop.md).
 
 ## Clonage du projet Venia {#clone-venia-project}
 
@@ -40,7 +40,7 @@ Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-ven
 
 >[!NOTE]
 >
-> **N’hésitez pas à utiliser un projet existant** (basé sur l’archétype de projet AEM avec CIF inclus) et à ignorer cette section.
+>**N’hésitez pas à utiliser un projet existant** (basé sur l’archétype de projet AEM avec CIF inclus) et à ignorer cette section.
 
 1. Exécutez la commande git suivante pour cloner le projet :
 
@@ -137,7 +137,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
    >[!NOTE]
    >
-   > Les fichiers de ce type sont ignorés du contrôle source, puisqu’ils doivent être générés pendant la création.
+   >Les fichiers de ce type sont ignorés du contrôle source, puisqu’ils doivent être générés pendant la création.
 
 1. Inspectez le fichier `ui.frontend/clientlib.config.js`.
 
@@ -168,7 +168,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
    >[!NOTE]
    >
-   > Les fichiers de ce type sont également ignorés du contrôle source, puisqu’ils doivent être générés pendant la création.
+   >Les fichiers de ce type sont également ignorés du contrôle source, puisqu’ils doivent être générés pendant la création.
 
 1. Examinez ensuite les autres bibliothèques clientes générées par le projet :
 
@@ -190,7 +190,7 @@ Apportez ensuite une légère modification au style du teaser pour voir comment 
 
    >[!NOTE]
    >
-   > Seules les bibliothèques de base sont « codées en dur » dans le cadre des scripts de page. La bibliothèque `venia.site` n’est pas incluse dans ces fichiers ; elle est à la place incluse dans le modèle de page pour une plus grande flexibilité. Cet aspect sera inspecté ultérieurement.
+   >Seules les bibliothèques de base sont « codées en dur » dans le cadre des scripts de page. La bibliothèque `venia.site` n’est pas incluse dans ces fichiers ; elle est à la place incluse dans le modèle de page pour une plus grande flexibilité. Cet aspect sera inspecté ultérieurement.
 
 1. Depuis le terminal, créez et déployez tout le projet sur une instance locale d’AEM :
 
@@ -265,7 +265,7 @@ Il existe plusieurs options pour inclure une bibliothèque côté client. Examin
 
    >[!NOTE]
    >
-   > Pour afficher tous les modèles disponibles à partir de l’écran Accueil AEM, accédez à **Outils** > **Général** > **Modèles**.
+   >Pour afficher tous les modèles disponibles à partir de l’écran Accueil AEM, accédez à **Outils** > **Général** > **Modèles**.
 
 1. Dans le coin supérieur gauche, sélectionnez l’icône **Informations sur la page**, puis cliquez sur **Stratégie de page**.
 
@@ -328,7 +328,7 @@ Le serveur webpack-dev-server crée des proxys des images et d’une partie du c
 
    >[!CAUTION]
    >
-   > Si vous obtenez une erreur liée à Sass, arrêtez le serveur, exécutez la commande `npm rebuild node-sass` et répétez les étapes ci-dessus. Cela peut se produire si vous disposez d’une version différente de `npm` et `node` spécifié ensuite dans le projet `aem-cif-guides-venia/pom.xml`.
+   >Si vous obtenez une erreur liée à Sass, arrêtez le serveur, exécutez la commande `npm rebuild node-sass` et répétez les étapes ci-dessus. Cela peut se produire si vous disposez d’une version différente de `npm` et `node` spécifié ensuite dans le projet `aem-cif-guides-venia/pom.xml`.
 
 1. Accédez au dossier [http://localhost:8080/](http://localhost:8080/) dans un nouvel onglet avec le même navigateur qu’une instance d’AEM connectée. Vous devriez voir la page d’accueil Venia via le serveur webpack-dev-server :
 
