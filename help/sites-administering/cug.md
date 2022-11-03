@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 64d174cc824c8bf200cece4e29f60f946ee5560e
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 66%
 
 ---
 
@@ -22,13 +22,14 @@ ht-degree: 100%
 
 Les groupes d’utilisateurs fermés permettent de restreindre l’accès à des pages spécifiques qui se trouvent sur un site Internet publié. Ces pages impliquent que les membres concernés se connectent et fournissent des informations d’identification de sécurité.
 
-Pour configurer ce type de zone dans votre site web :
+Pour configurer une zone de ce type dans votre site web, procédez comme suit :
 
 * [Créez un groupe d’utilisateurs fermé réel et affectez-y des membres.](#creating-the-user-group-to-be-used)
 
 * [Appliquez ce groupe aux pages concernées](#applying-your-closed-user-group-to-content-pages) et sélectionnez (ou créez) la page de connexion à utiliser par les membres du groupe d’utilisateurs fermé. Cela est spécifié également lors de l’application d’un groupe d’utilisateur fermé à une page de contenu.
 
-* [Créez un lien, quelle qu’en soit la forme, vers au moins une page dans la zone protégée](#linking-to-the-realm). Autrement, elle sera invisible.
+* [Créez un lien, quelle qu’en soit la forme, vers au moins une page dans la zone protégée](#linking-to-the-cug-pages). Autrement, elle sera invisible.
+
 * [Configurez Dispatcher](#configure-dispatcher-for-cugs) s’il est utilisé.
 
 >[!CAUTION]
@@ -67,58 +68,63 @@ Pour créer un groupe d’utilisateurs fermé :
 
 ## Application de votre groupe d’utilisateurs fermé à des pages de contenu {#applying-your-closed-user-group-to-content-pages}
 
-Pour appliquer le groupe d’utilisateurs fermé à une page :
+Pour appliquer le groupe d’utilisateurs fermé à une ou plusieurs pages :
 
 1. Accédez à la page principale de la section restreinte que vous souhaitez affecter à votre groupe d’utilisateurs fermé.
-1. Sélectionnez la page en cliquant sur sa miniature, puis sur **Propriétés** dans le panneau supérieur.
+1. Sélectionnez la page en cliquant sur sa miniature, puis en sélectionnant **Propriétés** dans la barre d’outils supérieure.
 
    ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. Dans la fenêtre suivante, accédez à l’onglet **Avancé**.
-1. Faites défiler vers le bas et activez la case à cocher dans la section **Exigence d’authentification**.
+1. Dans la fenêtre suivante, ouvrez le **Avancé** .
 
-1. Ajoutez le chemin de votre configuration ci-dessous, puis appuyez sur Enregistrer.
-1. Ensuite, accédez à l’onglet **Autorisations** et appuyez sur le bouton **Modifier le groupe d’utilisateurs fermé**.
+1. Faites défiler l’écran vers le bas jusqu’à **Exigence d’authentification** .
+
+   1. Activez la variable **Activer** coche.
+
+   1. Ajoutez le chemin d’accès à votre **Page de connexion**.
+Cette option est facultative. Si rien n’est indiqué, la page de connexion standard est utilisée.
+
+   ![CUG ajouté](assets/cug-authentication-requirement.png)
+
+1. Ensuite, accédez au **Autorisations** et sélectionnez **Modifier le groupe d’utilisateurs fermé**.
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
    >[!NOTE]
    >
-   >Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
+   >Les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés sur des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
    >
    >Pour plus d’informations, consultez [cette page](closed-user-groups.md#aem-livecopy).
 
-1. Recherchez et ajoutez votre CUG dans la fenêtre suivante - dans ce cas, ajoutez le groupe nommé **cug_access**. Enfin, appuyez sur **Enregistrer**.
-1. Cliquez sur **Activé** pour définir que cette page et les pages enfants appartiennent à un groupe d’utilisateurs fermé.
-1. Spécifiez la **Page de connexion** que les membres du groupe utiliseront ; par exemple :
+1. Le **Modifier le groupe d’utilisateurs fermé** s’ouvre. Ici, vous pouvez rechercher et sélectionner votre groupe d’utilisateurs fermé, puis confirmer la sélection avec **Enregistrer**.
 
-   `/content/geometrixx/en/toolbar/login.html`
+   Le groupe sera ajouté à la liste ; par exemple, le groupe **cug_access**.
 
-   Cette option est facultative. Si rien n’est indiqué, la page de connexion standard est utilisée.
+   ![CUG ajouté](assets/cug-added.png)
 
-1. Ajoutez les **groupes admis**. Utilisez « + » pour ajouter des groupes ou « – » pour en supprimer. Seuls les membres de ces groupes ont l’autorisation de se connecter et d’accéder aux pages.
-1. Affectez un **domaine** (nom pour les groupes de pages), si nécessaire. Ne renseignez pas ce champ pour utiliser le titre de la page.
-1. Cliquez sur **OK** pour enregistrer la spécification.
+1. Confirmez les modifications avec **Enregistrer et fermer**.
 
-Pour plus d’informations sur les profils dans l’environnement de publication et pour proposer des formulaires de connexion et de déconnexion, voir [Gestion de l’identification](/help/sites-administering/identity-management.md).
+>[!NOTE]
+>
+>Pour plus d’informations sur les profils dans l’environnement de publication et pour proposer des formulaires de connexion et de déconnexion, voir [Gestion de l’identification](/help/sites-administering/identity-management.md).
 
-## Liaison au domaine {#linking-to-the-realm}
+## Liaison aux pages de CUG {#linking-to-the-cug-pages}
 
-Dans la mesure où la cible des liens vers le domaine Groupe d’utilisateur fermé est invisible pour l’utilisateur anonyme, le vérificateur de lien supprime ces liens.
+La cible des liens vers les pages des CUG n’étant pas visible par l’utilisateur anonyme, le vérificateur de liens supprime ces liens.
 
-Pour éviter cette situation, il est recommandé de créer des pages de redirection non protégées, qui pointent vers des pages dans le domaine Groupe d’utilisateurs fermé. Les entrées de navigation sont alors rendues sans causer de problème au niveau du vérificateur de lien. L’utilisateur n’est redirigé à l’intérieur du domaine Groupe d’utilisateur fermé que lorsqu’il accède effectivement à la page de redirection, après avoir fourni des informations d’identification correctes.
+Pour éviter cela, il est conseillé de créer des pages de redirection non protégées qui pointent vers des pages dans la zone CUG. Les entrées de navigation sont alors rendues sans causer de problème au niveau du vérificateur de lien. Ce n’est qu’en accédant réellement à la page de redirection que l’utilisateur sera redirigé dans la zone CUG, après avoir fourni ses informations de connexion.
 
 ## Configuration de Dispatcher pour le groupe d’utilisateurs fermé {#configure-dispatcher-for-cugs}
 
 Si vous utilisez Dispatcher, vous devez définir une ferme de serveurs Dispatcher avec les propriétés suivantes :
 
-* [virtualhosts](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts) : correspond au chemin d’accès aux pages concernées par le groupe d’utilisateurs fermé.
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts) : correspond au chemin d’accès aux pages concernées par le groupe d’utilisateurs fermé.
 * \sessionmanagement : voir ci-dessous.
-* [cache](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache) : répertoire de cache dédié aux fichiers concernés par le groupe d’utilisateurs fermé.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache) : répertoire de cache dédié aux fichiers concernés par le groupe d’utilisateurs fermé.
 
 ### Configuration de la gestion des sessions Dispatcher pour les groupes d’utilisateurs fermés {#configuring-dispatcher-session-management-for-cugs}
 
-Configurez la [gestion des sessions dans le fichier dispatcher.any](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) pour le groupe d’utilisateurs fermé. Le gestionnaire d’authentification utilisé lorsque l’accès est demandé pour les pages des groupes d’utilisateurs fermés détermine comment configurer la gestion des sessions.
+Configurez la [gestion des sessions dans le fichier dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) pour le groupe d’utilisateurs fermé. Le gestionnaire d’authentification utilisé lorsque l’accès est demandé pour les pages des groupes d’utilisateurs fermés détermine comment configurer la gestion des sessions.
 
 ```xml
 /sessionmanagement
@@ -132,7 +138,7 @@ Configurez la [gestion des sessions dans le fichier dispatcher.any](https://help
 >Lorsque la gestion des sessions est activée pour une ferme de serveurs de Dispatcher, toutes les pages gérées par la ferme de serveurs ne sont pas mises en cache. Pour mettre en cache les pages qui ne sont pas des groupes d’utilisateurs fermés, créez une seconde ferme de serveurs dans dispatcher.any.
 >qui gère les pages non CUG.
 
-1. Configurez [/sessionmanagement](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) en définissant `/directory`, par exemple :
+1. Configurez [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) en définissant `/directory`, par exemple :
 
    ```xml
    /sessionmanagement
@@ -142,4 +148,4 @@ Configurez la [gestion des sessions dans le fichier dispatcher.any](https://help
      }
    ```
 
-1. Définissez [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) sur `0`.
+1. Définissez [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-when-authentication-is-used) sur `0`.
