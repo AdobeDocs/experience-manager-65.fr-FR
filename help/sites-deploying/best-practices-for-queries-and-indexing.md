@@ -10,18 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: c9df4b43083376f0110368afe642ec74290a52f8
+source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
 workflow-type: tm+mt
-source-wordcount: '4679'
-ht-degree: 86%
+source-wordcount: '4664'
+ht-degree: 99%
 
 ---
 
 # Bonnes pratiques relatives aux requêtes et à l’indexation{#best-practices-for-queries-and-indexing}
 
-Avec la transition vers Oak dans AEM 6, certains changements majeurs ont été apportés à la façon dont les requêtes et les index sont gérés. Sous Jackrabbit 2, tout le contenu était indexé par défaut et pouvait être interrogé librement. Dans Oak, les index doivent être créés manuellement sous la propriété `oak:index` noeud . Une requête peut être exécutée sans index, mais pour les jeux de données volumineux, elle l’est très lentement et risque même d’être abandonnée.
+Avec la transition vers Oak dans AEM 6, certains changements majeurs ont été apportés à la façon dont les requêtes et les index sont gérés. Sous Jackrabbit 2, tout le contenu était indexé par défaut et pouvait être interrogé librement. Dans Oak, les index doivent être créés manuellement sous le nœud `oak:index`. Une requête peut être exécutée sans index, mais pour les jeux de données volumineux, elle l’est très lentement et risque même d’être abandonnée.
 
-Cet article contient les informations suivantes : quand créer des index et dans quels cas ils ne sont pas nécessaires ; astuces pour ne pas utiliser de requêtes lorsqu’elles ne sont pas indispensables ; conseils pour optimiser les index et les requêtes.
+Cet article contient les informations suivantes : quand créer des index et dans quels cas ils ne sont pas nécessaires ; des astuces pour ne pas utiliser de requêtes lorsqu’elles ne sont pas indispensables ; des conseils pour optimiser les index et les requêtes.
 
 De plus, assurez-vous de lire la [documentation Oak sur l’écriture de requêtes et d’index](/help/sites-deploying/queries-and-indexing.md). En plus du nouveau concept d’index dans AEM 6, il existe des différences syntaxiques dans les requêtes Oak qui doivent être prises en compte lors de la migration du code à partir d’une installation AEM précédente.
 
@@ -33,7 +33,7 @@ Lors de la conception de la taxonomie d’un référentiel, plusieurs facteurs d
 
 Lors de la conception d’une taxonomie qui tient compte de ces facteurs, il est également important de penser à la « traversabilité » de la conception de l’indexation. Dans ce contexte, la traversabilité est la capacité d’une taxonomie de permettre un accès prévisible au contenu en fonction de son chemin d’accès. Le système est ainsi plus performant et plus facile à gérer qu’un système qui requiert l’exécution d’un grand nombre de requêtes.
 
-De plus, lors de la conception d’une taxonomie, il faut considérer si l’ordre importe. Dans les cas où un ordre explicite n’est pas nécessaire et qu’un grand nombre de nœuds frères est attendu, il est préférable d’utiliser un type de nœud non ordonné tel que `sling:Folder` ou `oak:Unstructured`. Lorsque la commande est requise, `nt:unstructured` et `sling:OrderedFolder` serait plus approprié.
+De plus, lors de la conception d’une taxonomie, il faut considérer si l’ordre importe. Dans les cas où un ordre explicite n’est pas nécessaire et qu’un grand nombre de nœuds frères est attendu, il est préférable d’utiliser un type de nœud non ordonné tel que `sling:Folder` ou `oak:Unstructured`. Dans les cas où un ordre est obligatoire, `nt:unstructured` et `sling:OrderedFolder` serait plus approprié.
 
 ### Requêtes au sein de composants {#queries-in-components}
 
@@ -53,7 +53,7 @@ Par exemple, si le contenu est stocké dans une taxonomie similaire à :
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
 ```
 
-la valeur `/content/myUnstructuredContent/parentCategory/childCategory` peut simplement être récupéré, ses enfants peuvent être analysés et utilisés pour effectuer le rendu du composant.
+Le nœud `/content/myUnstructuredContent/parentCategory/childCategory` peut simplement être récupéré ; ses tâches enfants peuvent être analysées et utilisées pour le rendu du composant.
 
 En outre, lorsque vous traitez un jeu de résultats de petite taille ou homogène, il est parfois plus rapide de parcourir transversalement le référentiel et de rassembler les nœuds nécessaires plutôt que de créer une requête pour renvoyer le même jeu de résultats. En règle générale, les requêtes doivent être évitées dans la mesure du possible.
 
@@ -77,7 +77,7 @@ Lors de l’exécution de requêtes complexes, la ventilation de la requête en 
 
 AEM permet d’écrire des requêtes de l’une des trois façons suivantes :
 
-* Via le [API QueryBuilder](/help/sites-developing/querybuilder-api.md) (recommandé)
+* Via les [API QueryBuilder](/help/sites-developing/querybuilder-api.md) (recommandé)
 * Au moyen de XPath (recommandé)
 * En utilisant SQL2
 
@@ -107,7 +107,7 @@ Pour plus d’informations sur la procédure à suivre, voir la [documentation s
 
 Lucene enregistre un bean JMX qui fournit des détails sur le contenu indexé, y compris la taille et le nombre de documents présents dans chacun des index.
 
-Vous pouvez y accéder en accédant à la console JMX à l’adresse `https://server:port/system/console/jmx`
+Vous pouvez le consulter en accédant à la console JMX à l’adresse `https://server:port/system/console/jmx`.
 
 Une fois que vous êtes connecté à la console JMX, recherchez **Lucene Index Statistics** afin de le trouver. D’autres statistiques sur les index sont disponibles dans le MBean **IndexStats**.
 
@@ -115,19 +115,19 @@ Pour les statistiques sur les requêtes, consultez le MBean nommé **Oak Query�
 
 Si vous souhaitez explorer davantage vos index au moyen d’un outil comme [Luke](https://code.google.com/p/luke/), vous devez utiliser la console Oak pour vider l’index depuis le `NodeStore` dans un répertoire de système de fichiers. Pour savoir comment procéder, veuillez lire la [documentation Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Vous pouvez également extraire les index de votre système au format JSON. Pour ce faire, vous devez accéder à `https://server:port/oak:index.tidy.-1.json`
+Vous pouvez également extraire les index de votre système au format JSON. Pour ce faire, accédez à `https://server:port/oak:index.tidy.-1.json`.
 
 ### Limites de requête {#query-limits}
 
 **Pendant le développement**
 
-Définir des seuils bas pour `oak.queryLimitInMemory` (p. ex. 10000) et oak. `queryLimitReads` (eg. 5000) et optimisez les requêtes coûteuses lorsque vous obtenez une exception UnsupportedOperationException indiquant que la requête lit plus de x nœuds... (The query read more than x nodes...).
+Définir des seuils bas pour `oak.queryLimitInMemory` (p. ex. 10000) et oak. `queryLimitReads` (par ex. 5000) et optimisez la requête coûteuse lorsque vous appuyez sur UnsupportedOperationException en indiquant &quot;La requête a lu plus de x noeuds...&quot;.
 
 Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire non soutenues par un index ou soutenues par un index moins étendu). Par exemple, une requête qui lit 1 million de nœuds entraînerait une augmentation des E/S et aurait un impact négatif sur les performances globales de l’application. Toute requête qui échoue en raison des limites ci-dessus doit être analysée et optimisée.
 
-#### **Post-déploiement** {#post-deployment}
+#### **Après le déploiement** {#post-deployment}
 
-* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de noeuds importante ou une consommation importante de mémoire de tas : &quot;
+* Surveillez les journaux à la recherche de requêtes déclenchant une traversée de nœuds importante ou une consommation élevée de mémoire de tas : ``
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * Optimisez la requête afin de réduire le nombre de nœuds parcourus transversalement.
@@ -137,7 +137,7 @@ Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * Optimisez la requête pour réduire la consommation de mémoire de tas.
 
-Pour les versions 6.0 à 6.2 d’AEM, vous pouvez régler le seuil de traversée de noeuds via les paramètres JVM dans le script de démarrage AEM afin d’éviter que les requêtes volumineuses ne surchargent l’environnement.
+Pour les versions AEM 6.0 à 6.2, vous pouvez ajuster le seuil du parcours transversal des nœuds à l’aide des paramètres JVM du script de démarrage AEM pour éviter que les requêtes volumineuses ne surchargent l’environnement.
 
 Les valeurs recommandées sont les suivantes :
 
@@ -146,7 +146,7 @@ Les valeurs recommandées sont les suivantes :
 
 Dans AEM 6.3, les 2 paramètres ci-dessus sont préconfigurés OOTB et peuvent être conservés dans les paramètres OSGi QueryEngineSettings.
 
-Plus d’informations disponibles sous : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
+Plus d’informations disponibles sous : [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
 ## Conseils pour créer des index efficaces {#tips-for-creating-efficient-indexes}
 
@@ -164,7 +164,7 @@ Les index Lucene ont été introduits dans Oak 1.0.9 et offrent de puissantes o
 
 * Les index Lucene offrent beaucoup plus de fonctionnalités que les index de propriété. Par exemple, un index de propriété ne peut indexer qu’une seule propriété alors qu’un index Lucene peut en inclure plusieurs. Pour plus d’informations sur toutes les fonctionnalités disponibles dans les index Lucene, consultez la [documentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Les index Lucene sont asynchrones. Bien qu’ils améliorent considérablement les performances, ils peuvent également induire un délai entre l’écriture des données dans le référentiel et la mise à jour de l’index. S’il est essentiel que les requêtes renvoient des résultats précis à 100 %, un index de propriété se révèle être nécessaire.
-* Étant asynchrones, les index Lucene ne peuvent pas imposer des contraintes d’unicité. Si cela est un impératif, un index de propriété doit être créé.
+* Étant asynchrones, les index Lucene ne peuvent pas imposer des contraintes d’unicité. Si leur utilisation est un impératif, un index de propriété doit être créé.
 
 En règle générale, il est recommandé d’utiliser les index Lucene, à moins qu’il soit impératif d’utiliser des index de propriété afin de bénéficier de niveaux supérieurs de performances et de flexibilité.
 
@@ -176,7 +176,7 @@ Les index Solr peuvent être configurés de manière à être exécutés sur le 
 
 >[!NOTE]
 >
->En adoptant l’approche de recherche Solr intégrée, il est possible de décharger l’indexation sur un serveur Solr. Si les fonctionnalités plus avancées du serveur Solr sont utilisées selon une approche de robot d’indexation, un travail de configuration supplémentaire est nécessaire. Headwire a créé un [connecteur open source](https://www.aemsolrsearch.com/#/) pour accélérer ces types d’implémentation.
+>En adoptant l’approche de recherche Solr intégrée, il est possible de décharger l’indexation sur un serveur Solr. Si les fonctionnalités plus avancées du serveur Solr sont utilisées selon une approche de robot d’indexation, un travail de configuration supplémentaire est nécessaire.
 
 L’inconvénient de cette approche est que si, par défaut, les requêtes AEM respectent les ACL et masquent ainsi les résultats auxquels un utilisateur n’a pas accès, l’externalisation de la recherche sur un serveur Solr ne prend pas en charge cette fonctionnalité. Si la recherche doit être externalisée de cette manière, il faut veiller à ne pas présenter aux utilisateurs des résultats qu’ils ne doivent pas voir.
 
@@ -190,7 +190,7 @@ La documentation d’Oak sur les index Lucene présente plusieurs points à pre
 * Si la requête utilise le tri, définissez une propriété explicite pour la propriété triée et définissez `ordered` sur `true`. Vous pouvez ainsi ordonner les résultats en tant que tels dans l’index et vous économisez sur les opérations de tri coûteuses au moment de l’exécution de la requête.
 
 * Ne mettez que ce qui est nécessaire dans l’index. L’ajout de fonctionnalités ou de propriétés inutiles entraîne la croissance de l’index et ralentit les performances.
-* Dans un index de propriété, un nom de propriété unique contribue à réduire la taille de l’index, mais dans le cas des index Lucene, l’utilisation de `nodeTypes` et `mixins` est conseillée pour obtenir des index cohérents. Requête sur une `nodeType` ou `mixin` sera plus performant que l’interrogation `nt:base`. Lors de l’utilisation de cette approche, définissez `indexRules` pour le `nodeTypes` en question.
+* Dans un index de propriété, un nom de propriété unique contribue à réduire la taille de l’index, mais dans le cas des index Lucene, l’utilisation de `nodeTypes` et `mixins` est conseillée pour obtenir des index cohérents. L’interrogation d’une propriété `nodeType` ou `mixin` spécifique est plus performante que celle d’une propriété `nt:base`. Si vous suivez cette approche, définissez `indexRules` pour les `nodeTypes` en question.
 
 * Si vos requêtes ne sont exécutées que sous certains chemins, créez ces index sous ces chemins. Les index ne doivent pas obligatoirement résider à la racine du référentiel.
 * Il est recommandé d’utiliser un seul index lorsque toutes les propriétés indexées sont liées pour permettre à Lucene d’évaluer autant de restrictions de propriétés que possible nativement. En outre, une requête n’utilisera qu’un index, même lors d’une jointure.
@@ -211,25 +211,25 @@ Lors de la suppression d’un index sur une instance MongoDB, le coût de la sup
 
 >[!NOTE]
 >
->Pour plus d’informations sur oak-mongo.js, voir la [section Outils de ligne de commande](https://jackrabbit.apache.org/oak/docs/command_line.html) de la documentation Oak.
+>Pour plus d’informations sur oak-mongo.js, consultez [Outils de ligne de commande](https://jackrabbit.apache.org/oak/docs/command_line.html) de la documentation Oak.
 
 ### Aide-mémoire sur les requêtes JCR {#jcrquerycheatsheet}
 
-Pour prendre en charge la création de requêtes JCR et de définitions d’index efficaces, la variable [Aide-mémoire pour les requêtes JCR](assets/JCR_query_cheatsheet-v1.1.pdf) peut être téléchargé et utilisé comme référence pendant le développement. Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la création ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM 6.5 et à AEM as a Cloud Service.
+Pour prendre en charge la création de requêtes JCR et de définitions d’index efficaces, l’[Aide-mémoire sur les requêtes JCR](assets/JCR_query_cheatsheet-v1.1.pdf) peut être téléchargé et utilisé comme référence pendant le développement. Il contient des exemples de requêtes pour QueryBuilder, XPath et SQL-2, couvrant plusieurs scénarios qui se comportent différemment en termes de performances des requêtes. Il fournit également des recommandations sur la création ou la personnalisation d’index Oak. Le contenu de cet aide-mémoire s’applique à AEM 6.5 et à AEM as a Cloud Service.
 
 ## Réindexation {#re-indexing}
 
-Cette section décrit les **only** raisons acceptables de réindexer les index Oak.
+Cette section présente les **seules** raisons valables qui justifient une réindexation des index Oak.
 
-En dehors des raisons décrites ci-dessous, la réinitialisation des index Oak sera **not** modifier le comportement ou résoudre des problèmes et augmenter inutilement la charge sur AEM.
+En dehors des raisons exposées ci-dessous, la réindexation des index Oak ne change **pas** le comportement et ne résout aucun problème, mais augmente indiscutablement la charge sur AEM.
 
-La réindexation des index Oak doit être évitée à moins d’être justifiée par l’une des raisons décrites dans les tableaux ci-dessous.
+La réindexation des index Oak doit être évitée à moins d’être justifiée par l’une des raisons décrites dans les tableaux ci-dessous.
 
 >[!NOTE]
 >
->Avant de consulter les tableaux ci-dessous pour déterminer si la réindexation est utile, **always** verify :
+>Avant de consulter les tableaux ci-dessous pour déterminer si une réindexation est utile, vérifiez **toujours** que :
 >
->* la requête est correcte ;
+>* la requête est correcte ;
 >* la requête résout l’index attendu (au moyen de l’outil [Expliquer la requête](/help/sites-administering/operations-dashboard.md#diagnosis-tools)) ;
 >* le processus d’indexation est terminé.
 >
@@ -260,7 +260,7 @@ Problèmes possibles et solutions :
 * Mode de vérification :
 
    * Déterminez si les nœuds manquants ont été créés/modifiés avant le déploiement de la définition d’index mise à jour.
-   * Vérifiez les `jcr:created` ou `jcr:lastModified` propriétés de tout noeud manquant par rapport à l’heure de modification de l’index.
+   * Vérifiez les propriétés `jcr:created` ou `jcr:lastModified` de tous les nœuds manquants par rapport à l’heure de modification de l’index.
 
 * Mode de résolution :
 
@@ -276,7 +276,7 @@ Problèmes possibles et solutions :
 * S’applique pour/si :
 
    * Toutes les versions d’Oak
-   * Uniquement [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
@@ -286,7 +286,7 @@ Problèmes possibles et solutions :
 
 * Mode de vérification :
 
-   * Vérifiez que la définition d’index a été modifiée à l’aide du Mbean JMX de statistiques d’index Lucene (LuceneIndex), méthode . `diffStoredIndexDefinition`.
+   * Vérifiez que la définition de l’index a été modifiée à l’aide du Mbean JMX de statistiques sur les index Lucene (LuceneIndex), méthode `diffStoredIndexDefinition`.
 
 * Mode de résolution :
 
@@ -297,7 +297,7 @@ Problèmes possibles et solutions :
 
       * Si le contenu existant n’est pas affecté par les modifications, seule une actualisation est nécessaire
 
-         * [Actualiser](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l’index lucene en définissant [oak:queryIndexDefinition]@refresh=true
+         * [Actualisez](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l’index Lucene en définissant [oak:queryIndexDefinitionrefresh=true].
       * Sinon, [réindexez ](#how-to-re-index)l’index Lucene
 
          * Remarque : L’état de l’index depuis la dernière réindexation effective (ou l’indexation initiale) sera utilisé jusqu’à ce qu’une nouvelle réindexation soit déclenchée
@@ -313,14 +313,14 @@ Si un problème sur AEM ne correspond pas aux critères décrits ci-dessous, il 
 Problèmes possibles et solutions :
 
 * [Le binaire de l’index Lucene est manquant](#lucene-index-binary-is-missing)
-* [Binaire de l’index Lucene corrompu](#lucene-index-binary-is-corrupt)
+* [Le binaire de l’index Lucene est corrompu](#lucene-index-binary-is-corrupt)
 
 #### Le binaire de l’index Lucene est manquant {#lucene-index-binary-is-missing}
 
 * S’applique pour/si :
 
    * Toutes les versions d’Oak
-   * Uniquement [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
@@ -332,26 +332,26 @@ Problèmes possibles et solutions :
 
 * Mode de résolution :
 
-   * Effectuez une vérification du référentiel de traversée ; par exemple :
+   * Effectuez une vérification du référentiel de traversée ; par exemple :
 
       [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
-      le parcours du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
+      La traversée du référentiel détermine si d’autres fichiers binaires (à part les fichiers lucene) sont manquants.
 
-   * Si des binaires autres que les index Lucene sont manquants, restaurez à partir de la sauvegarde
-   * Sinon, [re-index](#how-to-re-index) *all* index Lucene
+   * Si des binaires autres que les index Lucene sont manquants, restaurez à partir de la sauvegarde.
+   * Sinon, [réindexez](#how-to-re-index) *tous* les index Lucene.
    * Remarque :
 
-      Cette condition indique qu’une banque de données mal configurée peut entraîner un fichier binaire QUELCONQUE (par ex. des binaires de ressources).
+      cette condition indique qu’un magasin de données est mal configuré, ce qui peut engendrer l’absence de TOUT type de binaire (par ex. des binaires de ressources).
 
       Dans ce cas, restaurez la dernière version fonctionnelle connue du référentiel pour récupérer tous les binaires manquants.
 
-#### Binaire de l’index Lucene corrompu {#lucene-index-binary-is-corrupt}
+#### Le binaire de l’index Lucene est corrompu {#lucene-index-binary-is-corrupt}
 
 * S’applique pour/si :
 
    * Toutes les versions d’Oak
-   * Uniquement [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+   * Seulement les [index Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * Symptômes :
 
@@ -359,7 +359,7 @@ Problèmes possibles et solutions :
 
 * Mode de vérification :
 
-   * Le `AsyncIndexUpdate` (toutes les 5s) échouent avec une exception dans error.log :
+   * La requête `AsyncIndexUpdate` (toutes les 5 s) échoue avec une exception dans le fichier error.log :
 
       `...a Lucene index file is corrupt...`
 
@@ -368,19 +368,19 @@ Problèmes possibles et solutions :
    * Supprimez la copie locale de l’index Lucene
 
       1. Arrêtez AEM
-      1. Supprimez la copie locale de l’index Lucene à l’adresse `crx-quickstart/repository/index`
-      1. Redémarrez AEM
-   * Si le problème n’est pas résolu, et la variable `AsyncIndexUpdate` les exceptions persistent alors :
+      1. Supprimez la copie locale de l’index Lucene dans `crx-quickstart/repository/index`.
+      1. Redémarrez AEM.
+   * Si cela ne résout pas le problème et que les exceptions `AsyncIndexUpdate` persistent, alors :
 
-      1. [Réindexez ](#how-to-re-index)l’index erroné
-      1. Créez également un fichier [Prise en charge des Adobes](https://helpx.adobe.com/fr/support.html) ticket
+      1. [réindexez](#how-to-re-index) l’index erroné ;
+      1. ouvrez également un ticket auprès de l’[assistance d’Adobe](https://helpx.adobe.com/fr/support.html).
 
 
 ### Procédure de réindexation {#how-to-re-index}
 
 >[!NOTE]
 >
->Dans AEM 6.5, [oak-run.jar est la méthode UNIQUEMENT prise en charge](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) pour la réindexation sur les référentiels MongoMK ou RDBMK.
+>Dans AEM 6.5, la méthode [oak-run.jar constitue la SEULE méthode prise en charge](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) pour effectuer une réindexation sur des référentiels MongoMK ou RDBMK.
 
 #### Réindexation des index de propriété {#re-indexing-property-indexes}
 
@@ -389,7 +389,7 @@ Problèmes possibles et solutions :
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
-* Réindexez l’index de propriété de manière asynchrone à l’aide de la console web via le **PropertyIndexAsyncReindex** MBean;
+* Réindexez l’index de propriété de manière asynchrone à l’aide de la console web via le MBean **PropertyIndexAsyncReindex** ;
 
    par exemple,
 
@@ -398,7 +398,7 @@ Problèmes possibles et solutions :
 #### Réindexation des index de propriété Lucene {#re-indexing-lucene-property-indexes}
 
 * Utilisez [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) pour réindexer l’index de la propriété Lucene.
-* Définissez la propriété async-reindex sur true dans l’index de propriété  index de propriété lucene
+* Définissez la propriété async-reindex sur true dans l’index de propriété    lucene
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 
@@ -410,7 +410,7 @@ Problèmes possibles et solutions :
 
 La pré-extraction de texte est un processus permettant d’extraire et de traiter le texte de binaires, directement à partir de l’entrepôt de données au moyen d’un processus isolé, et présente directement le texte extrait aux indexations/réindexations suivantes des index Oak.
 
-* La pré-extraction de texte Oak est recommandée pour indexer/réindexer les index Lucene dans des référentiels contenant d’importants volumes de fichiers (binaires) contenant du texte extractible (par ex. PDF, Word, PPT, TXT, etc.) qui remplissent les critères pour la recherche de texte intégral via les index Oak déployés ; par exemple `/oak:index/damAssetLucene`.
+* La pré-extraction de texte Oak est recommandée pour indexer/réindexer les index Lucene dans des référentiels contenant d’importants volumes de fichiers (binaires) contenant du texte extractible (par ex. PDF, Word, PPT, TXT, etc.) éligible pour une recherche en texte intégral via les index Oak déployés ; par exemple `/oak:index/damAssetLucene`.
 * La pré-extraction de texte ne bénéficiera qu’à l’indexation/réindexation des index Lucene, et NON pas aux index de propriété Oak, puisque ces derniers n’extraient pas de texte des binaires.
 * La pré-extraction de texte a un fort impact positif lors de la réindexation en texte intégral de binaires chargés en texte (PDF, Doc, TXT, etc.), alors que le référentiel d’images ne bénéficie pas de la même efficacité puisque les images ne contiennent pas de texte extractible.
 * La pré-extraction de texte effectue l’extraction de texte lié à une recherche de texte intégral de manière très efficace et la présente au processus d’indexation/réindexation d’Oak d’une manière extrêmement efficace à utiliser.
@@ -419,7 +419,7 @@ La pré-extraction de texte est un processus permettant d’extraire et de trait
 
 Réindexation d’un index Lucene **existant** avec extraction binaire activée
 
-* Traitement de la réindexation **all** contenu candidat dans le référentiel ; lorsque les binaires à partir desquels extraire le texte intégral sont nombreux ou complexes, une charge de calcul accrue pour effectuer l’extraction de texte intégral est placée sur AEM. La pré-extraction de texte déplace les tâches coûteuses en calcul du processus d’extraction de texte vers un processus isolé qui accède directement à l’entrepôt de données d’AEM, évitant ainsi la surcharge et les conflits de ressources dans AEM.
+* Réindexation traitant **tous** les contenus candidats du référentiel. Lorsque les binaires desquels extraire du texte intégral sont nombreux ou complexes, une charge de calcul accrue destinée à effectuer l’extraction de texte intégral est placée sur AEM. La pré-extraction de texte déplace les tâches coûteuses en calcul du processus d’extraction de texte vers un processus isolé qui accède directement à l’entrepôt de données d’AEM, évitant ainsi la surcharge et les conflits de ressources dans AEM.
 
 Prise en charge du déploiement d’un **nouvel** index Lucene sur AEM avec extraction de binaires activée
 
@@ -439,8 +439,8 @@ Dans le cadre du fonctionnement normal d’AEM, par exemple le chargement de res
 * Le contenu (binaires) à partir duquel pré-extraire le texte doit résider dans le référentiel
 * Une fenêtre de maintenance permettant de générer le fichier CSV ET d’effectuer la réindexation finale
 * Version d’Oak : 1.0.18+, 1.2.3+
-* [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)version 1.7.4+
-* Un dossier/partage de système de fichiers pour stocker le texte extrait accessible à partir des instances d’AEM d’indexation
+* [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)version 1.7.4+
+* Un dossier/partage de système de fichiers pour stocker le texte extrait accessible depuis les instances AEM d’indexation
 
    * La config OSGi de pré-extraction de texte requiert un chemin d’accès au système de fichiers vers les fichiers texte extraits. Ils doivent donc être accessibles directement depuis l’instance AEM (lecteur local ou montage de partage de fichiers).
 
@@ -448,7 +448,7 @@ Dans le cadre du fonctionnement normal d’AEM, par exemple le chargement de res
 
 >[!NOTE]
 >
->***Les commandes oak-run.jar décrites ci-dessous sont entièrement énumérées à l’adresse [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
+>***Les commandes oak-run.jar décrites ci-dessous sont entièrement énumérées sur [https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html](https://jackrabbit.apache.org/oak/docs/query/pre-extract-text.html)***
 >
 >Le schéma ci-dessus et les étapes ci-dessous servent à expliquer et à compléter les étapes de pré-extraction de texte technique décrites dans la documentation d’Apache Oak.
 
@@ -462,7 +462,7 @@ Dans le cadre du fonctionnement normal d’AEM, par exemple le chargement de res
 
 1b. La liste des nœuds (1a) est stockée dans le système de fichiers sous la forme d’un fichier CSV.
 
-Notez que l’ensemble du magasin de noeuds est parcouru (comme spécifié par les chemins dans la commande oak-run) à chaque fois. `--generate` est exécuté, et un **new** Le fichier CSV est créé. Le fichier CSV est **not** réutilisée entre les exécutions discrètes du processus de pré-extraction de texte (étapes 1 à 2).
+Notez que l’intégralité du magasin de nœuds est parcouru transversalement (comme spécifié par les chemins dans la commande oak-run) chaque fois que `--generate` est exécuté, et qu’un **nouveau** fichier CSV est créé. Le fichier CSV n’est **pas** réutilisé entre les exécutions discrètes du processus de pré-extraction de texte (étapes 1 et 2).
 
 **Pré-extraction du texte dans le système de fichiers**
 
@@ -470,7 +470,7 @@ Notez que l’ensemble du magasin de noeuds est parcouru (comme spécifié par l
 
 2a. Exécutez `oak-run.jar --tika` pour pré-extraire le texte des nœuds binaires énumérés dans le fichier CSV généré dans (1b).
 
-2b. Le processus lancé à l’étape (2a) accède directement aux nœuds binaires définis dans le fichier CSV de l’entrepôt de données et extrait le texte.
+2b. Le processus lancé à l’étape (2a) accède directement aux nœuds binaires définis dans le fichier CSV du magasin de données et extrait le texte.
 
 2c.  Le texte extrait est stocké sur un système de fichiers dans un format que peut acquérir le processus de réindexation d’Oak (3a).
 
@@ -484,4 +484,4 @@ Le texte pré-extrait peut être ajouté de manière incrémentielle au fil du t
 
 3a. La [réindexation](#how-to-re-index) des index Lucene est invoquée dans AEM.
 
-3b. La configuration OSGi d’Apache Jackrabbit Oak DataStore PreExtractTextProvider (configurée pour pointer vers le texte extrait via un chemin d’accès au système de fichiers) indique à Oak de rechercher du texte intégral à partir des fichiers extraits et évite d’accéder directement aux données stockées dans le référentiel et de les traiter.
+3b. La configuration OSGi d’Apache Jackrabbit Oak DataStore PreExtractedTextProvider (configurée pour pointer sur le texte extrait via un chemin de système de fichiers) indique à Oak d’extraire le texte intégral des fichiers extraits et évite de toucher directement aux données stockées dans le référentiel et de les traiter.
