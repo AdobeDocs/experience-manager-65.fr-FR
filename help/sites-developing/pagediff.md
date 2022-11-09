@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6612f89d-c518-4e5a-8df1-6487cc330a9a
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85895215904b8706830d20f7714de5512b2c3ec2
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 92%
+source-wordcount: '375'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Une tâche de nettoyage s’exécute automatiquement pour nettoyer ce contenu te
 
 ## Autorisations {#permissions}
 
-Auparavant, dans l’interface utilisateur classique, une attention particulière devait être accordée au développement pour faciliter AEM différences (comme l’utilisation de `cq:text` bibliothèque de balises ou intégration personnalisée `DiffService` Service OSGi dans les composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
+Auparavant, dans l’IU classique, il fallait prêter une attention particulière sur le plan du développement pour permettre la comparaison AEM (par exemple pour l’utilisation de la bibliothèque de balises `cq:text` ou pour l’intégration personnalisée du service OSGi `DiffService` dans des composants). Cela n’est plus nécessaire pour la nouvelle fonction de comparaison (diff), puisque cela s’effectue du côté client via la comparaison DOM.
 
 Cependant, il subsiste un certain nombre de restrictions qui doivent être prises en compte par le développeur.
 
@@ -58,3 +58,7 @@ Cependant, il subsiste un certain nombre de restrictions qui doivent être prise
    * Composants qui utilisent AJAX pour intégrer du contenu
    * Applications sur une seule page
    * Composants basés sur JavaScript qui manipulent le DOM lors d’une interaction de l’utilisateur
+
+>[!NOTE]
+>
+>La comparaison des différences de page ne fonctionne que pour les composants qui possèdent des noeuds cq:editConfig valides.
