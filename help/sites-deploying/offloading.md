@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
 workflow-type: tm+mt
-source-wordcount: '2382'
-ht-degree: 76%
+source-wordcount: '2364'
+ht-degree: 100%
 
 ---
 
 # Tâches de déchargement{#offloading-jobs}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
-Le déchargement répartit les tâches de traitement entre les instances de Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances spécifiques d’Experience Manager pour exécuter des types de traitement spécifiques. Le traitement spécialisé permet d’optimiser l’utilisation des ressources disponibles sur le serveur.
+Le déchargement permet de répartir le traitement des tâches entre les instances d’Experience Manager dans une topologie. Avec le déchargement, vous pouvez utiliser des instances spécifiques d’Experience Manager pour exécuter des types de traitement spécifiques. Le traitement spécialisé permet d’optimiser l’utilisation des ressources disponibles sur le serveur.
 
-Le déchargement est basé sur les fonctionnalités [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) et Sling JobManager. Pour utiliser le déchargement, ajoutez des clusters Experience Manager à une topologie, puis identifiez les rubriques de tâche devant être traitées par le cluster. Les clusters sont composés d’une ou de plusieurs instances Experience Manager, de sorte qu’une instance unique soit considérée comme un cluster.
+Le déchargement est basé sur les fonctionnalités [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) et Sling JobManager. Pour utiliser le déchargement, ajoutez des clusters Experience Manager à une topologie, puis identifiez les rubriques de tâche devant être traitées par le cluster. Les clusters sont composés d’une ou de plusieurs instances Experience Manager, de sorte qu’une instance unique soit considérée comme un cluster.
 
 Pour plus d’informations sur l’ajout d’instances à une topologie, voir [Administration des topologies](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -44,7 +44,7 @@ Voir [Configuration de la consommation de rubrique](/help/sites-deploying/offloa
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-Lorsque la structure de déchargement sélectionne une grappe pour exécuter une tâche et que la grappe est composée de plusieurs instances, Sling Distribution détermine l’instance de la grappe qui exécute la tâche.
+Lorsque la structure de déchargement sélectionne un cluster pour effectuer une tâche et que ce cluster est composé de plusieurs instances, Sling Distribution détermine quelle instance du cluster exécute la tâche.
 
 ### Charges utiles de la tâche {#job-payloads}
 
@@ -71,11 +71,11 @@ Chaque cluster de la topologie contient une instance qui est identifiée en tant
 
 Utilisez le navigateur de topologies pour explorer l’état de la topologie à laquelle l’instance d’Experience Manager participe. Le navigateur de topologies présente les clusters et les instances de la topologie.
 
-Pour chaque grappe, une liste des membres de la grappe s’affiche, indiquant l’ordre dans lequel chaque membre a rejoint la grappe et le membre leader. La propriété actuelle indique l’instance que vous êtes en train de gérer.
+Pour chaque cluster, vous voyez une liste des membres du cluster qui indique l’ordre dans lequel chaque membre a rejoint le cluster et quel membre est le leader. La propriété actuelle indique l’instance que vous êtes en train de gérer.
 
 Pour chaque instance de cluster, vous pouvez voir plusieurs propriétés liées à la topologie :
 
-* Liste autorisée de rubriques pour le consommateur de tâche de l’instance.
+* Une liste autorisée de rubriques pour le client des travaux de l’instance.
 * Les points de terminaison exposés pour la connexion à la topologie.
 * Les rubriques de tâche pour lesquelles l’instance est enregistrée pour le déchargement.
 * Les rubriques de tâches que l’instance traite.
@@ -95,9 +95,9 @@ Vous pouvez également utiliser la console web pour afficher les informations de
 
 * Quelle instance est l’instance locale. 
 * Les services Topology Connector que cette instance utilise pour se connecter à la topologie (sortie) et les services qui se connectent à cette instance (entrée).
-* Modifiez l’historique de la topologie et des propriétés de l’instance.
+* L’historique des modifications des propriétés de la topologie et de l’instance.
 
-Utilisez la procédure suivante pour ouvrir la page Topology Management de la console web :
+Utilisez la procédure suivante pour ouvrir la page de gestion des topologies de la console web :
 
 1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Cliquez sur Général > Gestion de la topologie. 
@@ -108,9 +108,9 @@ Utilisez la procédure suivante pour ouvrir la page Topology Management de la co
 
 Le service de recherche basé sur les ressources Apache Sling s’exécute sur chaque instance pour contrôler la façon dont les instances d’Experience Manager interagissent avec une topologie.
 
-Le service de recherche (Discovery Service) envoie des demandes POST périodiques (heartbeats) aux services du connecteur de topologie (Topology Connector) pour établir et gérer les connexions avec une topologie. Le service Topology Connector conserve une liste autorisée d’adresses IP ou de noms d’hôte autorisés à rejoindre la topologie :
+Le service de recherche (Discovery Service) envoie des demandes POST périodiques (heartbeats) aux services du connecteur de topologie (Topology Connector) pour établir et gérer les connexions avec une topologie. Le service Topology Connector maintient une liste d’adresses IP ou de noms d’hôte autorisés à rejoindre la topologie :
 
-* Pour joindre une instance à une topologie, précisez l’URL du service Topology Connector du membre racine.
+* Pour joindre une instance à une topologie, précisez l’URL du service Topology Connector du membre racine.
 * Pour permettre à une instance de rejoindre une topologie, ajoutez-la à la liste autorisée du service Topology Connector du membre racine.
 
 Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propriétés suivantes du service org.apache.sling.discovery.impt.Config :
@@ -138,7 +138,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
   <tr>
    <td>Délai minimal de l’événement (en secondes)</td>
    <td>minEventDelay</td>
-   <td><p>Lorsqu’une modification se produit sur la topologie, le temps nécessaire pour retarder le changement d’état de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente ce délai. </p> <p>Ce délai empêche les écouteurs d’être submergés par les événements. </p> <p>Pour n’utiliser aucun délai, spécifiez 0 ou un chiffre négatif.</p> </td>
+   <td><p>Lorsqu’une modification est apportée à la topologie, délai nécessaire pour retarder le changement de statut de TOPOLOGY_CHANGING à TOPOLOGY_CHANGED. Chaque modification qui se produit lorsque l’état est TOPOLOGY_CHANGING augmente ce délai. </p> <p>Ce délai empêche les écouteurs d’être submergés par les événements. </p> <p>Pour n’utiliser aucun délai, spécifiez 0 ou un chiffre négatif.</p> </td>
    <td>3</td>
   </tr>
   <tr>
@@ -148,7 +148,7 @@ Utilisez la console web ou un nœud sling:OsgiConfig pour configurer les propri�
    <td>http://localhost:4502/libs/sling/topology/connector</td>
   </tr>
   <tr>
-   <td>Liste autorisée Topology Connector</td>
+   <td>Liste autorisée de Topology Connector</td>
    <td>topologyConnectorWhitelist</td>
    <td>Liste d’adresses IP ou de noms d’hôtes autorisés par le service Topology Connector dans la topologie. </td>
    <td><p>localhost</p> <p>127.0.0.1</p> </td>
@@ -174,13 +174,13 @@ Effectuez la procédure suivante sur le membre racine de la topologie. La procé
 1. Ouvrez la console web dans votre navigateur. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Cliquez sur Général > Gestion de la topologie.
 1. Cliquez sur Configurer Discovery Service (le service de recherche). 
-1. Pour chaque membre de la topologie, ajoutez un élément à la propriété de liste autorisée Topology Connector, puis spécifiez le nom d’hôte ou l’adresse IP du membre de la topologie.
+1. Pour chaque membre de la topologie, ajoutez un élément à la propriété de liste autorisée de Topology Connector, puis indiquez le nom d’hôte ou l’adresse IP du membre de la topologie.
 
 ## Configuration de la consommation de rubrique {#configuring-topic-consumption}
 
 Utiliser le navigateur de déchargement pour configurer la consommation de rubrique pour les instances Experience Manager dans la topologie. Pour chaque instance, vous pouvez spécifier les rubriques qu’elle consomme. Par exemple, pour configurer votre topologie de sorte qu’une seule instance consomme les rubriques d’un type spécifique, désactivez la rubrique pour toutes les instances sauf une. 
 
-Les tâches sont réparties entre les instances pour lesquelles la rubrique associée est activée à l’aide d’une logique de répétition générale.
+Les tâches sont réparties entre les instances ayant la rubrique associée activée à l’aide d’une logique circulaire.
 
 1. À l’aide de l’interface tactile, cliquez sur l’onglet Outils. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html))
 1. Dans la zone Opérations Granite, cliquez sur Navigateur de déchargement.
@@ -190,7 +190,7 @@ Les tâches sont réparties entre les instances pour lesquelles la rubrique asso
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-1. Pour désactiver la consommation d’une rubrique pour une instance, sous le nom de la rubrique, cliquez sur Désactiver en regard de l’instance.
+1. Pour désactiver la consommation d’une rubrique pour une instance, au-dessous du nom de la rubrique, cliquez sur Désactiver en regard de l’instance.
 1. Pour configurer toutes les consommations de rubrique pour une instance, cliquez sur l’identificateur de l’instance au-dessous d’une rubrique.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
@@ -209,8 +209,8 @@ Plusieurs implémentations de JobConsumer sont installées avec Experience Mana
 
 | Rubrique de tâche | PID de service | Description |
 |---|---|---|
-| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installé avec Apache Sling. Tâches de traitement générées par l’administrateur d’événements OSGi, à des fins de rétrocompatibilité. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les charges utiles de la tâche. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Installé avec Apache Sling. Tâches de traitement générées par l’administrateur d’événements OSGi, à des fins de rétrocompatibilité. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Un agent de réplication qui réplique les payloads de la tâche. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -224,12 +224,12 @@ Le service Apache Sling Job Consumer Manager fournit les propriétés de liste a
 
 La logique qui crée la liste des rubriques activées autorise d’abord toutes les rubriques qui se trouvent dans la liste autorisée, puis supprime les rubriques qui se trouvent dans la liste bloquée. Par défaut, toutes les rubriques sont activées (la valeur de la liste autorisée est `*`) et aucune rubrique n’est désactivée (la liste bloquée n’a aucune valeur).
 
-Utilisez le console web ou le nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Job Consumer Manager est org.apache.sling.event.impl.jobs.JobConsumerManager.
+Utilisez le console web ou un nœud `sling:OsgiConfig` pour configurer les propriétés suivantes. Pour les nœuds `sling:OsgiConfig`, le paramètre PID du service Gestionnaire de consommation de tâche est org.apache.sling.event.impl.jobs.JobConsumerManager.
 
 | Nom de propriété dans la console web | ID OSGi | Description |
 |---|---|---|
-| Liste autorisée de rubrique | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut de &amp;ast; entraîne l’envoi de toutes les rubriques au service TopicConsumer enregistré. |
-| Liste bloquée de rubrique | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
+| Liste de rubriques autorisées | job.consumermanager.whitelist | Liste de rubriques traitées par le service JobManager local. La valeur par défaut &amp;ast; envoie toutes les rubriques au service TopicConsumer enregistré. |
+| Liste bloquée de rubriques | job.consumermanager.blacklist | Liste de rubriques que le service JobManager local ne traite pas. |
 
 ## Création des agents de réplication pour le déchargement {#creating-replication-agents-for-offloading}
 
@@ -237,9 +237,9 @@ La structure de déchargement utilise la réplication pour transférer des resso
 
 >[!CAUTION]
 >
->Un problème connu avec les agents de réplication générés automatiquement est le fait que vous devez créer manuellement de nouveaux agents de réplication. Suivez la procédure décrite dans [Problèmes concernant l’utilisation des agents de réplication générés automatiquement](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) avant de créer les agents pour le déchargement.
+>Un problème connu avec les agents de réplication générés automatiquement est le fait que vous devez créer manuellement de nouveaux agents de réplication.
 
-Créez des agents de réplication qui transportent les charges utiles des tâches entre les instances pour le déchargement. Les illustrations suivantes présentent les agents nécessaires pour le déchargement de l’auteur vers une instance de travail. L’auteur possède un identifiant Sling de 1 et l’instance de travail un identifiant Sling de 2 :
+Créez des agents de réplication qui transportent les charges utiles des tâches entre les instances pour le déchargement. Les illustrations suivantes présentent les agents nécessaires pour le déchargement de l’auteur vers une instance de travail. L’auteur a un identifiant Sling de 1, alors que l’identifiant Sling de l’instance de travail est 2 :
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -253,21 +253,21 @@ Ce modèle de réplication est similaire à celui utilisé entre les instances d
 
 >[!NOTE]
 >
->La structure de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. La structure crée alors automatiquement des agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent par la suite, la modification est automatiquement propagée sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situation, utilisez des adresses IP fixes pour toutes les instances de la topologie.
+>La structure de déchargement utilise la topologie pour obtenir les adresses IP des instances de déchargement. La structure crée alors automatiquement des agents de réplication en fonction de ces adresses IP. Si les adresses IP des instances de déchargement changent ultérieurement, la modification se propage automatiquement sur la topologie après le redémarrage de l’instance. Toutefois, la structure de déchargement ne met pas automatiquement à jour les agents de réplication pour refléter les nouvelles adresses IP. Pour éviter cette situation, utilisez des adresses IP fixes pour toutes les instances de la topologie.
 
 ### Nommage des agents de réplication pour le déchargement {#naming-the-replication-agents-for-offloading}
 
-Utilisez un format spécifique pour la variable ***Nom*** des agents de réplication, de sorte que la structure de déchargement utilise automatiquement l’agent correct pour des instances de programme de travail spécifiques.
+Utilisez un format spécifique pour la propriété ***Nom*** des agents de réplication, afin que la structure de déchargement puisse utiliser automatiquement l’agent correct pour les instances de travail spécifiques.
 
 **Nommer un agent sortant sur l’instance d’auteur :** 
 
-`offloading_<slingid>`où `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
 
 Exemple : `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Nommer l’agent inverse sur l’instance d’auteur :** 
 
-`offloading_reverse_<slingid>`où `<slingid>` est l’identifiant Sling de l’instance de travail.
+`offloading_reverse_<slingid>`, où `<slingid>` est l’identifiant Sling de l’instance de travail.
 
 Exemple : `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -277,47 +277,47 @@ Exemple : `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Création de l’agent sortant {#creating-the-outgoing-agent}
 
-1. Créez un **agent de réplication** sur l’auteur. (Voir [documentation pour les agents de réplication](/help/sites-deploying/replication.md)). Spécifiez les **Titre**. Le **Nom** doit respecter la convention d’affectation des noms.
+1. Créez un **agent de réplication** sur l’auteur. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md)). Indiquez un **titre**. Le **nom** doit suivre la convention de dénomination.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriété | Valeur |
    |---|---|
-   | Paramètres > Type de sérialisation | Valeur par défaut |
-   | Transport >URI de transport | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Utilisateur de transport | Utilisateur de réplication sur l’instance cible |
-   | Transport > Mot de passe de transport | Mot de passe de l’utilisateur de réplication sur l’instance cible |
-   | Extension > Méthode HTTP | POST |
-   | Triggers > Ignorer la valeur par défaut | True |
+   | Paramètres > Type de sérialisation | Valeur par défaut |
+   | Transfert >URI de transfert | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
+   | Transfert > Utilisateur de transfert | Utilisateur de réplication sur l’instance cible |
+   | Transfert > Mot de passe de transfert | Mot de passe de l’utilisateur de réplication sur l’instance cible |
+   | Extension > Méthode HTTP | POST |
+   | Déclencheurs > Ignorer la valeur par défaut | True |
 
 ### Création de l’agent inverse {#creating-the-reverse-agent}
 
-1. Créez un **Agent de réplication inverse** sur l’auteur. (Voir [documentation pour les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez les **Titre**. Le **Nom** doit respecter la convention d’affectation des noms.
+1. Créez un **agent de réplication inverse** sur l’auteur. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Indiquez un **titre**. Le **nom** doit suivre la convention de dénomination.
 1. Créez un agent en utilisant les propriétés suivantes :
 
    | Propriété | Valeur |
    |---|---|
-   | Paramètres > Type de sérialisation | Valeur par défaut |
-   | Transport >URI de transport | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Utilisateur de transport | Utilisateur de réplication sur l’instance cible |
-   | Transport > Mot de passe de transport | Mot de passe de l’utilisateur de réplication sur l’instance cible |
-   | Extension > Méthode HTTP | GET |
+   | Paramètres > Type de sérialisation | Valeur par défaut |
+   | Transfert >URI de transfert | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
+   | Transfert > Utilisateur de transfert | Utilisateur de réplication sur l’instance cible |
+   | Transfert > Mot de passe de transfert | Mot de passe de l’utilisateur de réplication sur l’instance cible |
+   | Extension > Méthode HTTP | GET |
 
 ### Création de l’agent de dossier d’envoi {#creating-the-outbox-agent}
 
-1. Créez un **Agent de réplication** sur l’instance de travail. (Voir [documentation pour les agents de réplication](/help/sites-deploying/replication.md).) Spécifiez les **Titre**. Le **Nom** must `offloading_outbox`.
+1. Créez un **agent de réplication** sur l’instance de travail. (Voir la [documentation sur les agents de réplication](/help/sites-deploying/replication.md).) Indiquez un **titre**. Le **nom** doit être `offloading_outbox`.
 1. Créez l’agent en utilisant les propriétés suivantes.
 
    | Propriété | Valeur |
    |---|---|
-   | Paramètres > Type de sérialisation | Valeur par défaut |
-   | Transport >URI de transport | repo://var/replication/outbox |
-   | Déclencheur > Ignorer la valeur par défaut | True |
+   | Paramètres > Type de sérialisation | Valeur par défaut |
+   | Transfert >URI de transfert | repo://var/replication/outbox |
+   | Déclencheur > Ignorer la valeur par défaut | True |
 
 ###  Recherche de l’identifiant Sling {#finding-the-sling-id}
 
 Obtenez l’identifiant Sling d’une instance Experience Manager en utilisant l’une des méthodes suivantes :
 
-* Ouvrez la console web et, dans les paramètres Sling, recherchez la valeur de la propriété Sling ID ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
+* Ouvrez la console web et, dans les paramètres Sling, recherchez la valeur de la propriété d’identifiant Sling ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Cette méthode est utile si l’instance ne fait pas encore partie de la topologie.
 * Utilisez le navigateur de topologies si l’instance fait déjà partie de la topologie.
 
 <!--
@@ -356,4 +356,4 @@ The following procedure assumes the following characteristics for the offloading
 
 En plus des informations présentées sur cette page, vous pouvez également lire ce qui suit :
 
-* Pour plus d’informations sur l’utilisation des API Java pour créer des tâches et des consommateurs de tâches, voir [Création et utilisation de tâches pour le déchargement](/help/sites-developing/dev-offloading.md).
+* Pour plus d’informations sur l’utilisation des API Java pour créer des tâches et des consommateurs de tâche, consultez la section [Création et consommation des tâches pour le déchargement](/help/sites-developing/dev-offloading.md).
