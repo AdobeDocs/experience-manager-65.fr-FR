@@ -4,17 +4,17 @@ seo-title: Applying Workflows to Pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
 uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '648'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Lors de la création de pages, vous avez la possibilité d’utiliser des workfl
 
 Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes :
 
-* Workflow à appliquer.
+* Le workflow à appliquer.
 Vous pouvez appliquer n’importe quel workflow (auquel vous avez accès, selon les affectations réalisées par votre administrateur AEM).
 * Éventuellement, un titre permettant d’identifier l’instance de workflow dans la boîte de réception d’un utilisateur.
 * La charge utile du workflow. Cela peut concerner une ou plusieurs pages.
@@ -107,7 +107,7 @@ Vous pouvez spécifier les détails du workflow :
       * Vous pouvez spécifier un titre pour le module, pour faciliter son identification.
    >[!NOTE]
    >
-   >L’option **Conserver le module de workflow** est disponible lorsque le workflow a été configuré pour la prise en charge multi-ressource et que plusieurs ressources ont été sélectionnées.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >L’option **Conserver le module de workflow** est disponible lorsque le workflow a été configuré pour la [prise en charge multi-ressource](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) et que plusieurs ressources ont été sélectionnées.
 
    Une fois que vous avez terminé, cliquez sur **Suivant** pour continuer.
 
@@ -122,9 +122,9 @@ Vous pouvez spécifier les détails du workflow :
       * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
 Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
 
-         * Inclure seulement les enfants immédiats.
-         * Inclure seulement les pages modifiées.
-         * Inclure seulement les pages déjà publiées.
+         * Inclure seulement les enfants immédiats
+         * Inclure seulement les pages modifiées
+         * Inclure seulement les pages déjà publiées
 
          Tous les enfants spécifiés seront ajoutés à la liste de ressources auquel le workflow s’appliquera.
 

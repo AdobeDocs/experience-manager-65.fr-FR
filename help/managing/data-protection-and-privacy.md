@@ -1,24 +1,24 @@
 ---
-title: Règlements sur la protection et la confidentialité des données - Préparation d’Adobe Experience Manager
+title: Règlements sur la protection et la confidentialité des données – Préparation d’Adobe Experience Manager
 seo-title: Adobe Experience Manager Readiness for Data Protection and Data Privacy Regulations; such as GDPR, CCPA, etc
-description: 'Découvrez la prise en charge d’Adobe Experience Manager pour les différents règlements sur la protection et la confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’Union européenne, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM  '
+description: Découvrez la prise en charge d’Adobe Experience Manager des différents règlements de protection et de confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’Union européenne, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM
 seo-description: Learn about Adobe Experience Manager support for the various Data Protection and Data Privacy Regulations; including the EU General Data Protection Regulation (GDPR), the California Consumer Privacy Act and how to comply when implementing a new AEM project.
 uuid: 9b0b8101-929c-4232-8c6e-1f9b8b2e0aa2
-contentOwner: aheimoz
+contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Préparation d’Adobe Experience Manager aux réglementations sur la protection et la confidentialité des données {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Préparation d’Adobe Experience Manager pour les règlements sur la protection et la confidentialité des données {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -34,7 +34,7 @@ Adobe propose de la documentation et des procédures (avec des API si disponible
 
 >[!CAUTION]
 >
->Les détails documentés ici sont limités à Adobe Experience Manager.
+>Les informations documentées ici sont limitées à Adobe Experience Manager.
 >
 >Les données d’un autre service à la demande d’Adobe, ainsi que toute demande associée d’accès à des informations personnelles, nécessiteront des actions relatives à ce service.
 >
@@ -42,7 +42,7 @@ Adobe propose de la documentation et des procédures (avec des API si disponible
 
 ## Présentation {#introduction}
 
-Les instances d’Adobe Experience Manager et les applications qui s’exécutent sur celles-ci appartiennent à nos clients et sont exploitées par eux.
+Les instances d’Adobe Experience Manager, ainsi que les applications qui s’y exécutent, sont détenues et exploitées par nos clients.
 
 Ainsi, les règlements relatifs à la protection des données, telles que le RGPD, le CCPA et d’autres, relèvent, en grande partie, de la responsabilité des clients.
 
@@ -62,7 +62,7 @@ Les principales dispositions de ces règlements sont les suivantes :
 
 4. Droit d’opposition (opt-out) à la vente des données.
 
-Pour Adobe Experience Manager :
+Pour Adobe Experience Manager :
 
 * Les instances et les applications qui s’exécutent sur ces instances sont détenues et exploitées par le client.
 
@@ -80,39 +80,39 @@ Pour Adobe Experience Manager :
 
    * Adobe fournira une documentation et des procédures à l’administrateur de confidentialité du client et/ou à l’administrateur AEM, leur permettant d’exécuter manuellement les demandes liées à la réglementation de la confidentialité.
 
-Adobe fournit des procédures pour le traitement des demandes d’accès à des informations personnelles liées à l’accès, à la suppression et au droit d’opposition pour Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou de scripts pour faciliter l’automatisation.
+Adobe fournit des procédures pour le traitement des demandes d’accès à des informations personnelles liées à l’accès, à la suppression et au droit d’opposition pour Adobe Experience Manager. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou de scripts pour faciliter l’automatisation.
 
 Le diagramme suivant illustre à quoi pourrait ressembler un workflow de demande d’accès à des informations personnelles (illustré à l’aide d’Adobe Experience Manager 6.5) :
 
 ![Protection et confidentialité des données](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager et préparation à la réglementation {#aem-and-regulatory-readiness}
+## Adobe Experience Manager et préparation par rapport aux réglementations {#aem-and-regulatory-readiness}
 
-Consultez les sections ci-dessous pour obtenir de la documentation sur la réglementation des domaines d’AEM des produits.
+Consultez les sections ci-dessous pour en savoir plus sur la réglementation des domaines de produit d’AEM.
 
 ## AEM Foundation {#aem-foundation}
 
-Voir [Gestion des demandes de protection et de confidentialité des données pour AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Consultez [Gestion des demandes de protection et de confidentialité des données pour AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ## Souscription à la collecte de statistiques d’utilisation agrégées dans AEM {#aem-opting-into-aggregate-usage-statistics-collection}
 
 Voir [Collecte de statistiques d’utilisation agrégées](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
 
-## AEM Sites {#aem-sites}
+## AEM Sites {#aem-sites}
 
-Voir [AEM Sites - Préparation à la protection des données et à la confidentialité.](/help/sites-administering/gdpr-compliance-sites.md)
+Consultez [AEM Sites - Préparation à la protection des données et à la confidentialité.](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-Voir [Commerce AEM - Préparation à la protection et à la confidentialité des données](/help/sites-administering/gdpr-compliance-commerce.md).
+Consultez [AEM Commerce - Préparation à la protection des données et à la confidentialité.](/help/sites-administering/gdpr-compliance-commerce.md)
 
-## AEM  Mobile {#aem-mobile}
+## AEM Mobile {#aem-mobile}
 
-Voir [AEM Mobile - Préparation à la protection et à la confidentialité des données](/help/mobile/aem-mobile-gdpr-compliance.md).
+Consultez [AEM Mobile - Préparation à la protection des données et à la confidentialité.](/help/mobile/aem-mobile-gdpr-compliance.md)
 
 ## Intégration d’AEM à Adobe Target et Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Ces intégrations d’Adobe Experience Manager s’effectuent avec des services prêts pour la protection des données et la confidentialité (par exemple, le RGPD ou le CCPA). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM en lien avec les intégrations.
+Ces intégrations d’Adobe Experience Manager s’effectuent avec des services prêts pour la protection des données et la confidentialité (par exemple, le RGPD ou le CCPA). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM en lien avec les intégrations.
 Pour plus d’informations, voir :
 
 * [Adobe Target – Présentation de la confidentialité](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html?lang=fr)
