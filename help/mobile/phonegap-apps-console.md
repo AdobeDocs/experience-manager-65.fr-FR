@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2615'
 ht-degree: 2%
 
 ---
@@ -80,7 +80,7 @@ Vous pouvez également fournir un fichier image à utiliser comme miniature de l
 Il existe des onglets supplémentaires (et facultatifs) pour créer le service cloud et intégrer le module SDK Mobile Services Adobe dans votre application.
 
 * Build : Cliquez sur Gérer les configurations et configurez ici votre service de génération build build.phonegap.com. Ensuite, dans la liste déroulante, vous pourrez sélectionner le nouveau service cloud PhoneGap Build.
-* Analytics : Cliquez sur Gérer les configurations et configurez vos [SDK Adobe Mobile Services](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
+* Analytics : Cliquez sur Gérer les configurations et configurez vos [SDK Adobe Mobile Services](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) service cloud. Ensuite, dans la liste déroulante, vous pourrez sélectionner le service mobile nouvellement créé à intégrer à votre application mobile.
 
 >[!NOTE]
 >
@@ -325,7 +325,7 @@ Spécifiez une liste de pages d’inclusion. Après avoir sélectionné cette va
 
 La propriété Classer par n’a aucune incidence sur l’ordre des listes fixes.
 
-**Rechercher**
+**Recherche**
 
 Renseignez la liste à l’aide des résultats d’une recherche par mot-clé. La recherche est effectuée sur les enfants d’une page que vous spécifiez :
 
@@ -348,7 +348,7 @@ Ajoutez du texte enrichi au contenu de votre application.
 
 Le composant Emplacements de magasin fournit aux utilisateurs des outils pour trouver des points de vente :
 
-* Rechercher
+* Recherche
 * Listes des emplacements proches ou distants des coordonnées GPS de l’appareil.
 
 Le composant nécessite que le référentiel contienne des informations d’emplacement pour chaque magasin. Des exemples d’emplacements sont installés sur le noeud /etc/commerce/locations/adobe . ![chlimage_1-152](assets/chlimage_1-152.png)

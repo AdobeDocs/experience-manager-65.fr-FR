@@ -10,16 +10,16 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 86%
+source-wordcount: '481'
+ht-degree: 100%
 
 ---
 
 # Test des modèles modifiables dans We.Retail{#trying-out-editable-templates-in-we-retail}
 
-Grâce aux modèles modifiables, les tâches de création et de gestion des modèles ne sont plus réservées aux seuls développeurs. Un type d’utilisateur expérimenté, appelé créateur (ou auteur) de modèles, peut également créer des modèles. Les développeurs doivent encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’auteur de modèles peut créer et configurer des modèles sans projet de développement.
+Grâce aux modèles modifiables, les tâches de création et de gestion des modèles ne sont plus réservées aux seuls développeurs. Un type d’utilisateur expérimenté, appelé créateur (ou auteur) de modèles, peut également créer des modèles. L’équipe de développement doit encore configurer l’environnement, créer des bibliothèques clientes et créer les composants à utiliser. Cependant, une fois ces bases en place, l’auteur de modèles peut créer et configurer des modèles sans projet de développement.
 
 Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles.
 
@@ -30,7 +30,7 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. Notez que le sélecteur de mode ne propose plus de mode Conception. Toutes les pages de We.Retail reposent sur des modèles modifiables. Pour modifier la conception de ces modèles, vous devez recourir à l’éditeur de modèles.
-1. Dans la **Informations sur la page** menu **Modifier le modèle**.
+1. Dans le menu **Informations sur la page**, sélectionnez **Éditer le modèle**.
 1. Vous modifiez à présent le modèle « Page de modèle ».
 
    Le mode de structure de la page vous permet de modifier la structure du modèle. Cela comprend, par exemple, les composants qui sont autorisés dans le conteneur de mises en page.
@@ -73,6 +73,6 @@ Toutes les pages We.Retail reposent sur des modèles modifiables, ce qui permet 
 
 ## Informations supplémentaires {#more-information}
 
-Pour plus d’informations, reportez-vous au document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document de développement [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des détails techniques complets sur les modèles modifiables.
+Reportez-vous au document [Création de modèles de page](/help/sites-authoring/templates.md) pour plus d’informations ou à la page de documentation de développement [Modèles – Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir toutes les informations techniques sur les modèles modifiables.
 
-Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). Voir le document de création [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) pour une présentation des fonctionnalités des composants principaux et du document destiné aux développeurs [Développement des composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour une présentation technique.
+Vous pouvez également vous renseigner sur les [composants principaux](/help/sites-developing/we-retail-core-components.md). Consultez le document de création de [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) pour obtenir un aperçu des fonctionnalités des composants principaux ou [Développement de composants principaux](https://helpx.adobe.com/fr/experience-manager/core-components/using/developing.html) pour une présentation technique.

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -104,7 +104,7 @@ Une fois ces étapes effectuées, votre application sera activée pour signaler 
 
 ### Instrument votre code pour le suivi complet des applications {#instrument-your-code-for-full-app-tracking}
 
-Plusieurs API de suivi sont fournies dans la variable [API du module externe AMS Phonegap.](https://docs.adobe.com/content/help/en/mobile-services/ios/phonegap-ios/phonegap-methods.html)
+Plusieurs API de suivi sont fournies dans la variable [API du module externe AMS Phonegap.](https://experienceleague.adobe.com/docs/mobile-services/ios/phonegap-ios/phonegap-methods.html)
 
 Vous pourrez ainsi effectuer le suivi des états et des actions, comme l’emplacement des pages vers lesquelles vos utilisateurs accèdent dans votre application, les contrôles qui sont les plus utilisés. Le moyen le plus simple d’instrumenter votre application pour le suivi consiste à utiliser les API Analytics fournies par le module externe AMS.
 
@@ -119,7 +119,7 @@ En instrumentant votre code source avec ces appels de méthode, vous pouvez coll
 
 *com.adobe.cq.mobile.mobileservices.impl.service.MobileServicesHttpClientImp* l expose les propriétés suivantes pour la connexion à AMS :
 
-| **Libellé** | **Description** | **Valeur par défaut** |
+| **Libellé** | **Description** | **Par défaut** |
 |---|---|---|
 | Point de terminaison API | URL de base des API HTTP Adobe Mobile Services | https://api.omniture.com |
 | Config Endpoint | URL utilisée pour récupérer la configuration mobile ADB de l’identifiant de suite de rapports donné | /ams/1.0/app/config/ |

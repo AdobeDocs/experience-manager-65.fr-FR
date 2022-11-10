@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 81%
+source-wordcount: '535'
+ht-degree: 100%
 
 ---
 
@@ -29,17 +29,17 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 
 1. L’ouverture du rail dans la console Composants vous permet de filtrer un groupe de composants spécifiques. Les composants principaux sont disponibles aux emplacements suivants :
 
-   * `.core-wcm`: Composants principaux standard
-   * `.core-wcm-form`: Composants principaux d’envoi de formulaire
+   * `.core-wcm` : composants principaux standard
+   * `.core-wcm-form` : composants principaux d’envoi de formulaire
 
-   Choose `.core-wcm`.
+   Choisissez `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
 1. Notez que tous les composants principaux sont nommés **v1** pour indiquer qu’il s’agit de la première version. Des versions seront publiées régulièrement. Elles seront compatibles avec la version d’AEM et permettront une mise à niveau aisée, de sorte que vous puissiez tirer parti des fonctionnalités les plus récentes.
 1. Cliquez sur **Texte (v1)**.
 
-   Voir que la variable **Type de ressource** du composant est `/apps/core/wcm/components/text/v1/text`. Les composants principaux se trouvent sous `/apps/core/wcm/components` et sont versionnés par composant.
+   Veillez à ce que le **Type de ressource** du composant soit `/apps/core/wcm/components/text/v1/text`. Les composants principaux sont disponibles sous `/apps/core/wcm/components` et versionnés par composant.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -48,11 +48,11 @@ Les composants principaux sont des composants souples et modernes offrant une gr
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Revenez à la console de composants. Effectuez un filtrage sur le groupe **We.Retail** et sélectionnez ensuite le composant **Texte**.
-1. Voir que la variable **Type de ressource** pointe vers un composant comme prévu sous `/apps/weretail` mais le **Resource Super Type** renvoie au composant principal. `/apps/core/wcm/components/text/v1/text`.
+1. Vérifiez que le **Type de ressource** pointe comme prévu vers un composant sous `/apps/weretail`, mais que le **Type de super-ressource** repointe vers le composant principal `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Cliquez sur le bouton **Utilisation en direct** pour voir sur quelles pages ce composant est actuellement utilisé. Cliquez sur la première **page de remerciement** pour modifier la page.
+1. Cliquez sur l’onglet **Utilisation en direct** pour voir les pages sur lesquelles ce composant est utilisé actuellement. Cliquez sur la première **page de remerciement** pour modifier la page.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -66,7 +66,7 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Une fois que vous avez annulé l’héritage et sélectionné les composants de texte, bien d’autres options sont disponibles. Cliquez sur** Modifier**.
+1. Une fois que vous avez annulé l’héritage et sélectionné les composants de texte, bien d’autres options sont disponibles. Cliquez sur **Modifier**.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -87,6 +87,6 @@ Les composants principaux sont des composants souples et modernes offrant une gr
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html), afin d’obtenir un aperçu des fonctionnalités des composants principaux, et le document de développement [Développement de composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) pour une présentation technique.
+Pour plus d’informations sur les composants principaux, consultez le document de création [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr), afin d’obtenir un aperçu des fonctionnalités des composants principaux, et le document de développement [Développement de composants principaux](https://helpx.adobe.com/fr/experience-manager/core-components/using/developing.html) pour une présentation technique.
 
-Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Reportez-vous au document de création [Création de modèles de page](/help/sites-authoring/templates.md) ou la page du document de développement [Modèles - Modifiables](/help/sites-developing/page-templates-editable.md) pour plus d’informations sur les modèles modifiables.
+Vous pouvez également effectuer des recherches approfondies sur les [modèles modifiables](/help/sites-developing/we-retail-editable-templates.md). Reportez-vous au document [Création de modèles de page](/help/sites-authoring/templates.md) ou à la page de documentation de développement [Modèles – Modifiables](/help/sites-developing/page-templates-editable.md) pour obtenir des informations complètes sur les modèles modifiables.

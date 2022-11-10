@@ -1,7 +1,7 @@
 ---
 title: Gestion des audiences
 seo-title: Managing Audiences
-description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub. ou ClientContext
+description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.   ou le contexte client.
 seo-description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
 uuid: 76408a8c-25db-4e9f-8a69-27e820a2a7cf
 contentOwner: msm-service
@@ -11,21 +11,21 @@ topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 92%
+source-wordcount: '980'
+ht-degree: 100%
 
 ---
 
 # Gestion des audiences{#managing-audiences}
 
-La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub. ou ClientContext :
+La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.   ou le contexte client :
 
 * Ajouter des audiences (audiences d’Adobe Target ou segments ContextHub).
 * Gérer des audiences.
 
-Une audience, appelée *segment* dans ContextHub et ClientContext, est une classe de visiteurs définie selon des critères spécifiques, qui détermine qui voit une activité ciblée. Lorsque vous ciblez une activité, vous pouvez sélectionner des audiences directement dans le processus de ciblage ou en créer de nouvelles dans la console Audiences.
+Une audience, appelée *segment* dans ContextHub et le contexte client, désigne une classe de visiteurs définie selon des critères spécifiques et qui détermine qui peut voir une activité ciblée. Lorsque vous ciblez une activité, vous pouvez sélectionner des audiences directement dans le processus de ciblage ou en créer de nouvelles dans la console Audiences.
 
 Dans la console Audiences, les audiences sont organisées par marque.
 
@@ -66,7 +66,7 @@ Lorsque vous utilisez plusieurs règles, elles sont combinées par l’opérateu
 
 >[!NOTE]
 >
->Si vous ne voyez pas **Créer une audience Target **dans la variable **Créer** , vous ne disposez pas des autorisations nécessaires pour créer une audience. Vous avez besoin d’autorisations d’écriture sous **/etc/segmentation** pour créer des audiences. Le groupe content-authors dispose par défaut d’autorisations d’écriture.
+>Si vous ne voyez pas l’option **Créer le public cible** dans le menu **Créer**, cela signifie que vous ne disposez pas des autorisations nécessaires pour créer une audience. Vous avez besoin de droits d’accès en écriture sous **/etc/segmentation** pour pouvoir créer des audiences. Le groupe content-authors dispose par défaut d’autorisations d’écriture.
 
 Pour créer une audience Adobe Target :
 
@@ -74,7 +74,7 @@ Pour créer une audience Adobe Target :
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Dans la console Audiences, appuyez ou cliquez sur **Créer**, puis sur **Créer le public cible**.
+1. Dans la console Audiences, appuyez ou cliquez sur **Créer**, puis sur **Créer l’audience cible**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -91,13 +91,13 @@ Vous pouvez créer des règles de ciblage pour chacun des attributs suivants :
 
 | **Attribut** | **Description** | **Pour plus d’informations** |
 |---|---|---|
-| **Mobile** | Appareils mobiles Target basés sur des paramètres tels que l’appareil mobile, le type d’appareil, le fabricant de l’appareil, les dimensions de l’écran (en pixels), etc. | Reportez-vous à la [documentation relative au ciblage mobile](https://docs.adobe.com/content/help/fr-FR/target/using/audiences/create-audiences/categories-audiences/mobile.html) dans Adobe Target. |
-| **Personnalisé** | Les paramètres personnalisés sont des paramètres mbox. Si vous transférez des paramètres mbox à des mbox ou utilisez la fonction targetPageParams, ces paramètres apparaissent ici pour utilisation dans les audiences. | Reportez-vous à la [documentation relative aux paramètres personnalisés](https://docs.adobe.com/content/help/fr-FR/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html) dans Adobe Target. |
+| **Mobile** | Appareils mobiles Target basés sur des paramètres tels que l’appareil mobile, le type d’appareil, le fabricant de l’appareil, les dimensions de l’écran (en pixels), etc. | Reportez-vous à la [documentation relative au ciblage mobile](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=fr) dans Adobe Target. |
+| **Personnalisé** | Les paramètres personnalisés sont des paramètres mbox. Si vous transférez des paramètres mbox à des mbox ou utilisez la fonction targetPageParams, ces paramètres apparaissent ici pour utilisation dans les audiences. | Reportez-vous à la [documentation relative aux paramètres personnalisés](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=fr) dans Adobe Target. |
 | **Système d’exploitation** | Vous pouvez cibler les visiteurs qui utilisent un système d’exploitation en particulier. | Utilisateurs de Target sous Linux, Mac ou Windows. |
-| **Pages du site** | Visiteurs ciblés qui se trouvent sur une page spécifique ou qui possèdent un paramètre de mbox spécifique. | Reportez-vous à la [documentation relative aux pages de site](https://docs.adobe.com/content/help/fr-FR/target/using/audiences/create-audiences/categories-audiences/site-pages.html) dans Adobe Target. |
+| **Pages du site** | Visiteurs ciblés qui se trouvent sur une page spécifique ou qui possèdent un paramètre de mbox spécifique. | Reportez-vous à la [documentation relative aux pages de site](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=fr) dans Adobe Target. |
 | **Navigateur** | Vous pouvez cibler les visiteurs qui utilisent un navigateur spécifique ou des options de navigateur spécifiques lors de l’accès à votre page. | Reportez-vous à la [documentation relative aux options de navigateur](https://docs.adobe.com/help/fr-FR/target/using/audiences/create-audiences/categories-audiences/browser.html) dans Adobe Target. |
-| **Profil du visiteur** | Visiteurs Target qui respectent des paramètres de profil spécifiques. | Reportez-vous à la [documentation relative aux profils de visiteur](https://docs.adobe.com/content/help/fr-FR/target/using/audiences/visitor-profiles/visitor-profile.html) dans Adobe Target. |
-| **Sources de trafic** | Visiteurs ciblés selon le moteur de recherche ou la page d’entrée qui les renvoie au site. | Reportez-vous à la [documentation relative aux sources de trafic](https://docs.adobe.com/content/help/fr-FR/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) dans Adobe Target. |
+| **Profil du visiteur** | Visiteurs Target qui respectent des paramètres de profil spécifiques. | Reportez-vous à la [documentation relative aux profils de visiteur](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=fr) dans Adobe Target. |
+| **Sources de trafic** | Visiteurs ciblés selon le moteur de recherche ou la page d’entrée qui les renvoie au site. | Reportez-vous à la [documentation relative aux sources de trafic](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=fr) dans Adobe Target. |
 
 ## Modification d’une audience dans la console Audiences {#modifying-an-audience-in-the-audiences-console}
 
@@ -108,5 +108,5 @@ Vous pouvez créer des règles de ciblage pour chacun des attributs suivants :
 Vous pouvez modifier n’importe quelle audience ContextHub ou ClientContext à partir de la console Audiences. Vous pouvez également modifier des audiences Adobe Target à condition qu’elles aient été créées dans AEM :
 
 1. Dans la console Navigation, cliquez ou appuyez sur **Personnalisation**. Cliquez ou appuyez sur **Audiences**.
-1. Cliquez ou appuyez sur l’icône en regard du segment ContextHub ou ClientContext à modifier, puis cliquez ou appuyez sur **Modifier**.
+1. Cliquez ou appuyez sur l’icône en regard du segment ContextHub ou de contexte client à modifier, puis cliquez ou appuyez sur **Modifier**.
 1. Apportez toutes les modifications dans l’éditeur de segment. Reportez-vous à la documentation relative à [ClientContext](/help/sites-administering/campaign-segmentation.md) ou à [ContextHub](/help/sites-developing/ch-configuring.md).

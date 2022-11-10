@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2234'
-ht-degree: 100%
+source-wordcount: '2228'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Pour générer une communication interactive, vous devez combiner un enregistrem
 
 Pour créer une communication interactive à partir d’enregistrements sauvegardés dans un fichier JSON, procédez comme suit :
 
-1. Créez un [Dossier de contrôle](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html?lang=fr) et configurez-le pour quʼil utilise l’API Batch :
+1. Créez un [Dossier de contrôle](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) et configurez-le pour quʼil utilise l’API Batch :
    1. Connectez-vous à votre instance d’auteur AEM Forms.
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Appuyez sur **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.
@@ -109,7 +109,7 @@ Pour créer une communication interactive à partir d’enregistrements sauvegar
 
 #### Utiliser des données d’entrée enregistrées dans une source de données externe et accessibles via un modèle de données de formulaire pour produire une communication interactive {#use-fdm-as-data-source}
 
-Vous combinez des données (enregistrements) enregistrées dans une source de données externe avec un modèle de communication interactive pour produire une communication interactive. Lorsque vous créez une communication interactive, vous la connectez à une source de données externe via un modèle de données de formulaire (FDM) pour accéder aux données. Vous pouvez configurer le service de traitement par lot des dossiers de contrôle pour qu’il récupère des données à l’aide du même modèle de données de formulaire à partir d’une source de données externe. Pour [créer une communication interactive à partir d’enregistrements sauvegardés dans une source de données externe :](https://docs.adobe.com/content/help/fr/experience-manager-64/forms/form-data-model/work-with-form-data-model.html)
+Vous combinez des données (enregistrements) enregistrées dans une source de données externe avec un modèle de communication interactive pour produire une communication interactive. Lorsque vous créez une communication interactive, vous la connectez à une source de données externe via un modèle de données de formulaire (FDM) pour accéder aux données. Vous pouvez configurer le service de traitement par lot des dossiers de contrôle pour qu’il récupère des données à l’aide du même modèle de données de formulaire à partir d’une source de données externe. Pour [créer une communication interactive à partir d’enregistrements sauvegardés dans une source de données externe :](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html)
 
 1. Configurer le modèle de données de formulaire du modèle
    1. Ouvrez le modèle de données de formulaire associé au modèle de communication interactive.
@@ -141,7 +141,7 @@ Vous combinez des données (enregistrements) enregistrées dans une source de do
 
    1. Enregistrez et fermez le fichier.
 
-1. Créer et configurer un [Dossier de contrôle](https://docs.adobe.com/content/help/en/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) pour quʼil utilise le service API Batch
+1. Créer et configurer un [Dossier de contrôle](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) pour quʼil utilise le service API Batch
    1. Connectez-vous à votre instance d’auteur AEM Forms.
    1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Configurer le dossier de contrôle]**. Appuyez sur **[!UICONTROL Nouveau]**.
    1. Spécifiez le **[!UICONTROL Nom]** et le **[!UICONTROL Chemin dʼaccès]** physique du dossier. Par exemple, `c:\batchprocessing`.

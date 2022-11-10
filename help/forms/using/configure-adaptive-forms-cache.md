@@ -1,7 +1,7 @@
 ---
 title: Configurer le cache de formulaires adaptatifs
 seo-title: Configure adaptive forms cache
-description: 'Le cache de formulaires adaptatifs est spécialement conçu pour les formulaires et documents adaptatifs. Il met en cache des formulaires et documents adaptatifs en vue de réduire le temps nécessaire pour effectuer le rendu d’un formulaire ou d’un document adaptatif sur le client. '
+description: Le cache de formulaires adaptatifs est spécialement conçu pour les formulaires et documents adaptatifs. Il met en cache des formulaires et documents adaptatifs en vue de réduire le temps nécessaire pour effectuer le rendu d’un formulaire ou d’un document adaptatif sur le client.
 seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
@@ -11,10 +11,10 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 
@@ -62,10 +62,10 @@ Vous pouvez également configurer la mise en cache des formulaires adaptatifs su
 
 Suivez les étapes ci-dessous pour activer et configurer la mise en cache des formulaires adaptatifs sur Dispatcher :
 
-1. Ouvrez l’URL suivante pour chaque instance de publication de votre environnement et [activez l’agent de purge pour les instances de publication de votre environnement](https://docs.adobe.com/content/help/fr/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) :
+1. Ouvrez l’URL suivante pour chaque instance de publication de votre environnement et [activez l’agent de purge pour les instances de publication de votre environnement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) :
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Ajoutez les éléments suivants à votre fichier dispatcher.any](https://docs.adobe.com/content/help/fr/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) :
+1. [Ajoutez les éléments suivants à votre fichier dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files) :
 
    ```JSON
       /invalidate
@@ -94,7 +94,7 @@ Suivez les étapes ci-dessous pour activer et configurer la mise en cache des fo
    * Un formulaire adaptatif reste en cache jusqu’à ce qu’une version mise à jour du formulaire ne soit pas publiée.
 
    * Lorsqu’une nouvelle version de la ressource référencée dans un formulaire adaptatif est publiée, le formulaire adaptatif concerné est automatiquement invalidé. Il existe certaines exceptions à l’invalidation automatique des ressources référencées. Pour contourner les exceptions, voir la section [Résolution des problèmes](#troubleshooting).
-1. [Ajoutez le fichier dispatcher.any des règles ci-dessous ou le fichier de règles personnalisées](https://docs.adobe.com/content/help/fr/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Il exclut les URL qui ne prennent pas en charge la mise en cache. Par exemple, Communication interactive.
+1. [Ajoutez le fichier dispatcher.any des règles ci-dessous ou le fichier de règles personnalisées](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Il exclut les URL qui ne prennent pas en charge la mise en cache. Par exemple, Communication interactive.
 
    ```JSON
       /0000 {
@@ -118,7 +118,7 @@ Suivez les étapes ci-dessous pour activer et configurer la mise en cache des fo
       }
    ```
 
-1. [Ajoutez les paramètres suivants à la liste des paramètres d’URL ignorés](https://docs.adobe.com/content/help/fr/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters) :
+1. [Ajoutez les paramètres suivants à la liste des paramètres d’URL ignorés](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters) :
 
    ```JSON
       /ignoreUrlParams {
@@ -128,7 +128,7 @@ Suivez les étapes ci-dessous pour activer et configurer la mise en cache des fo
       }
    ```
 
-Votre environnement AEM est configuré pour mettre en cache les formulaires adaptatifs. Il met en cache tous les types de formulaires adaptatifs. Si vous devez vérifier les autorisations d’accès utilisateur pour une page avant de diffuser la page mise en cache, voir [mise en cache de contenu sécurisé](https://docs.adobe.com/content/help/fr/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+Votre environnement AEM est configuré pour mettre en cache les formulaires adaptatifs. Il met en cache tous les types de formulaires adaptatifs. Si vous devez vérifier les autorisations d’accès utilisateur pour une page avant de diffuser la page mise en cache, voir [mise en cache de contenu sécurisé](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Résolution des problèmes {#troubleshooting}
 

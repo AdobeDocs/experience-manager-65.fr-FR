@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1216'
 ht-degree: 100%
 
 ---
@@ -27,15 +27,15 @@ ht-degree: 100%
 >6.5.3.0 :
 >
 >* Les **domaines de l’externaliseur** peuvent maintenant être sélectionnés.
->  **Remarque :** les domaines de l’externaliseur sont pertinents uniquement pour le contenu du fragment d’expérience envoyé à Target, et non pour les métadonnées telles que Afficher le contenu de l’offre.
+   >  **Remarque :** les domaines de l’externaliseur sont pertinents uniquement pour le contenu du fragment d’expérience envoyé à Target, et non pour les métadonnées telles que Afficher le contenu de l’offre.
 >
 >6.5.2.0 :
 >
 >* Les fragments d’expérience peuvent être exportés vers :
->
->   * l’espace de travail par défaut ;
->   * un espace de travail donné, spécifié dans la configuration cloud.
->   * **Remarque :** l’exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
+   >
+   >   * l’espace de travail par défaut ;
+   >   * un espace de travail donné, spécifié dans la configuration cloud.
+   >   * **Remarque :** l’exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
 >
 >* AEM doit être [intégré à Adobe Target à l’aide d’IMS](/help/sites-administering/integration-target-ims.md).
 >
@@ -68,7 +68,7 @@ Les fragments d’expérience AEM peuvent être exportés vers l’espace de tra
 >Pour plus d’informations, consultez également :
 >
 >* [Développement d’Adobe Target](https://www.adobe.io/apis/experiencecloud/target.html)
->* [Composants principaux - Fragments d’expérience](https://docs.adobe.com/content/help/fr/experience-manager-core-components/using/components/experience-fragment.html)
+>* [Composants principaux - Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=fr)
 >
 
 
@@ -118,7 +118,7 @@ Vous pouvez sélectionner les options obligatoires dans les **propriétés de pa
    >
    >Voir le composant principal :
    >
-   >[Composants principaux - Fragments d’expérience](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+   >[Composants principaux - Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 
    Sous **Adobe Target** sélectionnez :
 

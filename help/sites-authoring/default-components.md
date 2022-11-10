@@ -1,7 +1,7 @@
 ---
 title: Composants
 seo-title: Components
-description: AEM est fourni avec tout un éventail de composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web
+description: AEM est fourni avec tout un éventail de composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites Web.
 seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 92%
+source-wordcount: '427'
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Les composants sont regroupés dans diverses catégories appelées groupes de co
 
 * **We.Retail** : inclut les composants principaux en proxy à utiliser avec l’[implémentation de référence We.Retail](/help/sites-developing/we-retail.md).
 
-* **Commerce We.Retail** : inclut des composants de commerce tels que cartes et grilles de produits
+* **Commerce We.Retail** : inclut des composants de commerce tels que des cartes et grilles de produits.
 
 * **Général** : inclut le conteneur de mise en page et le composant Fragment d’expérience
 
@@ -57,11 +57,11 @@ La [console des composants](/help/sites-authoring/default-components-console.md)
 
 Les pages suivantes fournissent des liens vers des informations supplémentaires sur les composants :
 
-* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) - Les composants principaux offrent une fonctionnalité de création souple et complète, qui fournit des types de contenu essentiels à la création de pages.
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) - Les composants principaux offrent une fonctionnalité de création souple et complète, qui fournit des types de contenu essentiels à la création de pages.
 
-* [Communautés](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lorsqu’un événement [Site de la communauté](/help/communities/overview.md) est créée.
+* [Communities](/help/communities/author-communities.md) - Ces composants fournissent des fonctionnalités interactives pour un site Web, tel que des forums et des commentaires. La plupart de ces composants sont inclus lors de la création d’un [site communautaire](/help/communities/overview.md).
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - La fonctionnalité eCommerce d’AEM comprend également un éventail de composants. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - La fonctionnalité eCommerce d’AEM inclut également un éventail de composants. L’utilisation réelle peut dépendre du moteur de commerce en cours d’utilisation.
 
 ### Configuration des composants {#configuring-components}
 

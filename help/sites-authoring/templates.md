@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '4874'
-ht-degree: 97%
+source-wordcount: '4872'
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Pour obtenir des informations détaillées sur le fonctionnement des modèles mo
 
 >[!CAUTION]
 >
->Pages et modèles créés à l’aide de la fonction **Console de modèles** ne sont pas destinées à être utilisées avec l’interface utilisateur classique et cette utilisation n’est pas prise en charge.
+>Les pages et les modèles créés à l’aide de la **console de modèles** ne sont pas conçus pour être utilisés dans l’IU classique. Cette utilisation n’est pas prise en charge.
 
 ## Avant de commencer {#before-you-start}
 
@@ -63,7 +63,7 @@ Avant de commencer, vous devez tenir compte des points importants suivants :
 
 La création d’un modèle à l’aide de la **console Modèles** et de l’**éditeur de modèles** exige une collaboration entre les rôles suivants :
 
-* **Administrateur** :
+* **Admin**:
 
    * La création d’un dossier pour les modèles nécessite des droits `admin`.
 
@@ -107,16 +107,16 @@ AEM comporte maintenant deux types de modèles standard :
 * Modèles statiques
 
    * Ces modèles sont disponibles dans différentes versions d’AEM.
-   * Ils sont [fournis par les développeurs](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
+   * Ils sont [fournis par l’équipe de développement](/help/sites-developing/page-templates-static.md), et ne peuvent pas être créés ou modifiés par les créateurs.
    * Ils sont copiés pour créer la page. Il n’y a ensuite aucune connexion dynamique (même si le nom du modèle est enregistré pour information).
    * Utilisez le [mode Création](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
-   * La modification des modèles statiques étant la tâche exclusive d’un développeur, consultez le document destiné aux développeurs. [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
+   * Comme la modification des modèles statiques est une tâche réservée aux développeurs, consultez le document destiné aux développeurs [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md) pour en savoir plus.
 
 Par définition, la console de modèles et l’éditeur de modèles permettent uniquement la création et la modification des modèles modifiables. Par conséquent, ce document décrit exclusivement les modèles modifiables.
 
 ### Utilisation d’un modèle pour créer une page {#using-a-template-to-create-a-page}
 
-Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), il n’existe aucune différence visible ni indication permettant de distinguer les modèles statiques des modèles modifiables. Pour le créateur de pages, le processus est transparent.
+Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), il n’existe aucune différence visible ni indication permettant de distinguer les modèles statiques des modèles modifiables. Pour la création de pages, le processus est transparent.
 
 ## Création et gestion des modèles {#creating-and-managing-templates}
 
@@ -147,7 +147,7 @@ Lors de la création d’un modèle modifiable :
 
 >[!CAUTION]
 >
->Ne saisissez jamais d’informations qui doivent[ être internationalisées](/help/sites-developing/i18n.md) dans un modèle. Pour l’internalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
+>Ne saisissez jamais d’informations qui doivent être [internationalisées](/help/sites-developing/i18n.md) dans un modèle. Pour l’internalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
@@ -177,7 +177,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    * **Nom du modèle**
    * **Description**
 
-1. Sélectionnez **Créer**. Un message de confirmation s’affiche. Sélectionnez **Ouvrir**[](#editingatemplate) pour commencer à modifier le modèle ou **Terminé** pour revenir à la console de modèles.
+1. Sélectionnez **Créer**. Un message de confirmation s’affiche. Sélectionnez **Ouvrir** pour commencer à [modifier le modèle](#editingatemplate) ou **Terminé** pour revenir à la console de modèles.
 
    >[!NOTE]
    >
@@ -216,7 +216,7 @@ Pour afficher et/ou modifier les propriétés :
 
 >[!NOTE]
 >
->L’état du modèle (brouillon, activé ou désactivé) est indiqué dans la console.
+>Le statut du modèle (brouillon, activé ou désactivé) est indiqué dans la console.
 
 #### Miniature du modèle {#template-thumbnail-image}
 
@@ -296,7 +296,7 @@ Dans la mesure où il est référencé lors du rendu d’une page, le modèle (t
 
 1. Sélectionnez **Publier** dans la barre d’outils pour terminer l’action.
 
-## Modification des modèles  – Créateurs de modèles {#editing-templates-template-authors}
+## Modification des modèles   – Créateurs de modèles {#editing-templates-template-authors}
 
 Lors de la création ou de la modification d’un modèle, vous pouvez définir différents aspects. La modification de modèles est similaire à la création de pages.
 
@@ -322,7 +322,7 @@ Les aspects suivants d’un modèle peuvent être modifiés :
 
 * [Mise en page](#editingatemplatelayout)
 
-   Vous pouvez prédéfinir la mise en page du modèle pour les formats de dispositif de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode [**Disposition** pour la création de pages](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+   Vous pouvez prédéfinir la mise en page du modèle pour les formats de disposition de votre choix. Le mode **Disposition** pour la création de modèles comporte la même fonctionnalité que le mode [**Disposition** pour la création de pages](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
 * [Stratégies de page](#editingatemplatepagepolicies)
 
@@ -473,11 +473,11 @@ En mode **Structure** de l’éditeur de modèles :
 
    Pour supprimer une configuration, cliquez ou appuyez sur le bouton **Supprimer** situé à droite de la configuration.
 
-   Pour supprimer une configuration, cliquez ou appuyez sur le bouton** Supprimer**.
+   Pour supprimer une configuration, cliquez ou appuyez sur le bouton ** Supprimer**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-   *Fonctions*
+   *Fonctionnalités*
 
    L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
 
@@ -491,7 +491,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    >[!NOTE]
    >
-   >[Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+   >[Les stratégies de contenu pour les composants impliquant la mise en œuvre de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) peuvent uniquement être définies pour les options accessibles par les paramètres de l’interface utilisateur, via ses propres paramètres d’interface utilisateur.  [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Stratégie et propriétés (conteneur de mises en page)**
 
@@ -604,7 +604,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 >
 >Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. C’est pour cette raison que le contenu initial ne peut pas être traduit.
 >
->Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/get-started/localization.html).
+>Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 
 ### Modification d’un modèle - Disposition - Créateur de modèles {#editing-a-template-layout-template-author}
 
@@ -622,7 +622,7 @@ La conception de la page, y compris les bibliothèques côté client requises et
 
 Pour accéder à la boîte de dialogue **Conception de page** :
 
-1. Dans la **Éditeur de modèles**, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
+1. Dans l’**éditeur de modèles**, sélectionnez **Informations sur la page** dans la barre d’outils, puis **Conception de page** pour ouvrir la boîte de dialogue.
 1. La boîte de dialogue **Conception de page** s’ouvre. Elle est divisée en deux sections :
 
    * La moitié gauche définit les [stratégies de page](/help/sites-authoring/templates.md#page-policies).

@@ -1,7 +1,7 @@
 ---
-title: SPA et rendu côté serveur
+title: SPA et rendu côté serveur (SSR)
 seo-title: SPA and Server-Side Rendering
-description: '"SPA et rendu côté serveur"'
+description: « SPA et rendu côté serveur »
 seo-description: null
 uuid: 27e26e3f-65d4-4069-b570-58b8b9e2a1ae
 contentOwner: bohnert
@@ -11,22 +11,22 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: eeb4c7f6a80d6bad5cd1b540dfacfc7bc5071664
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 85%
+source-wordcount: '1754'
+ht-degree: 100%
 
 ---
 
-# SPA et rendu côté serveur{#spa-and-server-side-rendering}
+# SPA et rendu côté serveur (SSR){#spa-and-server-side-rendering}
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 >[!NOTE]
 >
->AEM version 6.5.1.0 ou ultérieure est requise pour utiliser les fonctionnalités de rendu SPA côté serveur comme décrit dans ce document.
+>La version 6.5.1.0 ou une version ultérieure d’AEM est requise pour utiliser les fonctionnalités de rendu de SPA côté serveur telles que décrites dans ce document.
 
 ## Présentation {#overview}
 
@@ -47,7 +47,7 @@ Le rendu côté serveur fournit habituellement une certaine valeur lorsque la r�
 
 Adobe ne recommande la mise en œuvre du rendu côté serveur que si au moins l’une de ces deux questions reçoit une réponse « oui » claire pour votre projet. Les sections suivantes décrivent comment utiliser Adobe I/O Runtime.
 
-## Adobe I/O Runtime {#adobe-i-o-runtime}
+## Adobe I/O Runtime {#adobe-i-o-runtime}
 
 Si vous [êtes certain que votre projet nécessite la mise en œuvre du rendu côté serveur](/help/sites-developing/spa-ssr.md#when-to-use-ssr), la solution recommandée par Adobe est d’utiliser Adobe I/O Runtime.
 
@@ -88,7 +88,7 @@ Les champs suivants sont disponibles pour la configuration :
 >
 >Que vous choisissiez de mettre en œuvre le [flux de communication piloté par AEM](#aem-driven-communication-flow) ou le [flux de communication piloté par Adobe I/O Runtime](#adobe-i-o-runtime-driven-communication-flow), vous devez définir une configuration de moteur de rendu de contenu distant.
 >
->Cette configuration doit également être définie si vous choisissez de [utilisez un serveur Node.js personnalisé.](#using-node-js)
+>Cette configuration doit également être définie si vous choisissez d’[utiliser un serveur Node.js personnalisé.](#using-node-js)
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Avec le rendu côté serveur, le [workflow d’interaction des composants](/help
 
 ![server-side-rendering-cms-drivenaemnode-adobeio](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)
 
-## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
+## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
 La section précédente décrit l’implémentation standard et recommandée du rendu côté serveur dans le cadre des SPA dans AEM, AEM se chargeant du démarrage et du traitement du contenu.
 
@@ -169,22 +169,22 @@ Le rendu côté serveur pour les SPA dans AEM nécessite Adobe I/O Runtime, qui 
 
 Tout comme AEM prend en charge les frameworks SPA Angular et React clé en main, le rendu côté serveur est également pris en charge pour les applications Angular et React. Pour plus d’informations, consultez la documentation NPM relative aux deux frameworks.
 
-* React : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
-* Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
+* React : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
+* Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Pour un exemple simpliste, reportez-vous au [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Il effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, il illustre ce qui est nécessaire à la mise en oeuvre du rendu côté serveur.
+Pour un exemple des plus simples, reportez-vous à l’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Elle effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, elle illustre ce qui est nécessaire à la mise en œuvre du rendu côté serveur.
 
 >[!CAUTION]
 >
->Le [Application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) est à des fins de démonstration uniquement et utilise donc Node.js comme exemple simple au lieu du Adobe I/O Runtime recommandé. Cet exemple ne doit être utilisé pour aucun travail de projet.
+>L’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) ne sert qu’à des fins de démonstration et utilise donc simplement Node.js comme exemple au lieu d’utiliser Adobe I/O Runtime comme recommandé. Node.js ne doit pas être utilisé dans le cadre d’un projet.
 
 >[!NOTE]
 >
->Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/archetype/overview.html), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
+>Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets de SPA à l’aide de React ou d’Angular et tire parti du SDK de SPA.
 
 ## Utilisation de Node.js {#using-node-js}
 
-Adobe I/O Runtime est la solution recommandée pour la mise en oeuvre du rendu côté serveur pour SPA dans AEM.
+Adobe I/O Runtime est la solution recommandée pour la mise en œuvre du rendu côté serveur des SPA dans AEM.
 
 Pour les instances d’AEM sur site, il est également possible d’implémenter le rendu côté serveur à l’aide d’une instance Node.js personnalisée de la même manière que décrit ci-dessus. Bien que cette fonctionnalité soit prise en charge par Adobe, elle n’est pas recommandée.
 

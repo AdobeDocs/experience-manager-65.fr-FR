@@ -1,32 +1,32 @@
 ---
-title: Liste des fonctionnalités des expériences fluides AEM
-description: Liste des fonctionnalités des expériences fluides
+title: Liste des fonctionnalités d’AEM Fluid Experiences
+description: Liste des fonctionnalités de Fluid Experiences
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 17%
+source-wordcount: '342'
+ht-degree: 96%
 
 ---
 
-# Liste des fonctionnalités des expériences fluides AEM{#aem-fluid-experiences-feature-list}
+# Liste des fonctionnalités d’AEM Fluid Experiences{#aem-fluid-experiences-feature-list}
 
-Les expériences fluides Adobe Experience Manager s’inspirent des puissants ensembles de fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste pour la diffusion de contenu sans interface utilisateur.
+Adobe Experience Manager Fluid Experiences s’inspire des puissants ensembles de fonctionnalités d’AEM Sites, d’AEM Dynamic Media et d’AEM Assets pour fournir une solution robuste de diffusion de contenu découplée.
 
-AEM Expériences fluides se différencie de l’AEM classique en ce que seul le cas d’utilisation de diffusion sans interface est traité. La création et la diffusion de contenu performantes et AEM prise en charge efficace des cas d’utilisation hybrides sont disponibles avec la méthode [solutions AEM Sites, Assets et Dynamic Media complètes.](https://docs.adobe.com/content/help/fr-FR/experience-manager-65/user-guide/home.html)
+AEM Fluid Experiences se différencie d’AEM classique en ce qu’il ne traite que les cas d’utilisation de diffusion découplée. La performance de création et de diffusion de contenu et l’efficacité de la prise en charge par AEM des cas d’utilisation hybrides sont assurées par les solutions [complètes AEM Sites, Assets et Dynamic Media.](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=fr)
 
-Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences fluides et renvoient vers la documentation d’assistance appropriée.
+Les tableaux suivants définissent les fonctionnalités d’AEM Fluid Experiences et renvoient vers la documentation d’assistance appropriée.
 
 * [Référentiel](#repository-features)
 * [Accès, API et diffusion](#access-api-and-delivery-features)
 * [Administration et intégrations](#admin-and-integration-features)
-* [Analytics et personnalisation](#analytics-and-personalization)
+* [Analyses et personnalisation](#analytics-and-personalization)
 
 >[!NOTE]
 >
->AEM Expériences fluides est un sous-ensemble de fonctionnalités AEM. Les fonctionnalités liées à dans ces tableaux peuvent inclure des fonctionnalités supplémentaires incluses dans AEM, mais pas dans AEM Expériences fluides.
+>AEM Fluid Experiences est un sous-ensemble de fonctionnalités AEM. Les fonctionnalités citées dans ces tableaux peuvent inclure des fonctionnalités supplémentaires incluses dans AEM, mais pas dans AEM Fluid Experiences.
 
 ## Fonctionnalités du référentiel {#repository-features}
 
@@ -36,8 +36,8 @@ Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences
 | [Types de ressources](/help/assets/assets-formats.md) |
 | [Rendus d’image](/help/assets/image-presets.md) |
 | [Gestion des métadonnées et des balises](/help/assets/metadata.md) |
-| [Rechercher](/help/assets/manage-assets.md) |
-| [](/help/assets/manage-assets.md)Collections et Lightbox[](/help/assets/light-box.md) |
+| [Recherche](/help/assets/manage-assets.md) |
+| [Collections](/help/assets/manage-assets.md) et [lightbox](/help/assets/light-box.md) |
 | [Profils](/help/assets/processing-profiles.md) |
 | [Gestion des versions](/help/assets/manage-assets.md) |
 | [Détection des doublons](/help/assets/duplicate-detection.md) |
@@ -49,11 +49,11 @@ Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences
 |---|
 | [API HTTP](/help/assets/mac-api-assets.md) |
 | [Modèles de contenu structuré](/help/assets/content-fragments/content-fragments.md) |
-| [Content Services](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
+| [Content Services](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) |
 | API HTTP pour le contenu structuré (lecture) |
 | API HTTP pour le contenu structuré (CRUD) |
-| [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html) |
+| [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## Fonctions d’administration et d’intégration {#admin-and-integration-features}
@@ -66,26 +66,26 @@ Les tableaux suivants définissent les fonctionnalités d’AEM d’expériences
 | [Traduction de contenu](/help/sites-administering/translation.md) |
 | [Surveillance](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sauvegarde](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://docs.adobe.com/content/help/fr-FR/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html) |
+| [Gestionnaire de cloud](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
 | [Intégration PIM](/help/sites-authoring/managing-product-information.md) |
 | [Projets et tâches](/help/sites-authoring/projects.md) |
 | [Workflows](/help/sites-administering/workflows-starting.md) |
 | Connectivité (services cloud) |
 
-## Analytics et personnalisation {#analytics-and-personalization}
+## Analyses et personnalisation {#analytics-and-personalization}
 
 |  |
 |---|
-| [Rapports de ressources](/help/assets/asset-reports.md) |
-| Statistiques améliorées optimisées par Adobe Analytics |
-| Statistiques améliorées optimisées par Adobe Target |
+| [Reporting relatif aux ressources](/help/assets/asset-reports.md) |
+| Statistiques améliorées optimisées par Adobe Analytics |
+| Statistiques améliorées optimisées par Adobe Target |
 
 ## En savoir plus {#learn-more}
 
-* [Expériences fluides pour les cas d’utilisation sans interface](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
-* [AEM Content Service : Quoi, pourquoi et comment ?](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
-* [Utilisation de Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Développement d’une application mobile](https://docs.adobe.com/content/help/en/experience-manager-64/mobile/developing/developing-content-services.html)
-* [FAQ sur l’accès tiers](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
-* [Expériences fluides partout](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
+* [Fluid Experiences pour les cas d’utilisation découplée](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
+* [AEM Content Service : quoi, pourquoi et comment ?](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
+* [Utilisation de Content Services](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
+* [Développement d’une application mobile](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
+* [FAQ sur l’accès tiers](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
+* [Fluid Experiences dans tous les cas](https://helpx.adobe.com/fr/experience-manager/using/using-sling-apis.html)
 * [Utilisation des API Sling](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)

@@ -12,10 +12,10 @@ discoiquuid: d305821d-1371-4e4a-8b28-8eee8fafa43b
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 28%
+source-wordcount: '589'
+ht-degree: 33%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 28%
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
 
 AEM Communities expose des API prêtes à l’emploi pour gérer les profils utilisateur et gérer en masse le contenu généré par l’utilisateur. Une fois activée, la variable **UserUgcManagement** Le service permet aux utilisateurs privilégiés (administrateurs de communauté et modérateurs) de désactiver les profils utilisateur et de supprimer ou d’exporter en masse du contenu créé par l’utilisateur pour des utilisateurs spécifiques. Ces API permettent également aux contrôleurs et aux processeurs des données clients de se conformer au Règlement général sur la protection des données (RGPD) de l’Union européenne et à d’autres mandats de confidentialité inspirés du RGPD.
 
@@ -31,7 +31,7 @@ Pour plus d’informations, voir la [page RGPD du centre de traitement des donn
 
 >[!NOTE]
 >
->Si vous avez configuré [Adobe Analytics dans AEM Communities](/help/communities/analytics.md) , les données utilisateur capturées sont envoyées au serveur Adobe Analytics. Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur et de respecter le RGPD. Pour plus d’informations, voir [Soumettre des demandes d’accès et de suppression](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html).
+>Si vous avez configuré [Adobe Analytics dans AEM Communities](/help/communities/analytics.md) , les données utilisateur capturées sont envoyées au serveur Adobe Analytics. Adobe Analytics fournit des API qui vous permettent d’accéder, d’exporter et de supprimer des données utilisateur et de respecter le RGPD. Pour plus d’informations, voir [Soumettre des demandes d’accès et de suppression](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
 Pour utiliser ces API, vous devez activer la variable `/services/social/ugcmanagement` endpoint en activant le service UserUgcManagement. Pour activer ce service, installez le [exemple de servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) disponible sur [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). Ensuite, accédez au point de terminaison sur l’instance de publication de votre site Communities avec les paramètres appropriés à l’aide d’une requête http, semblable à :
 
@@ -59,11 +59,11 @@ Par exemple, pour exporter le contenu généré par un utilisateur nommé Weston
 Par exemple, pour supprimer le contenu généré par un utilisateur disposant d’un ID autorisable weston.mccall@dodgit.com par le biais d’une demande de POST HTTP, utilisez les paramètres suivants :
 
 * l’utilisateur = `weston.mccall@dodgit.com`
-* opération = `deleteUgc`
+* operation = `deleteUgc`
 
 ### Suppression du contenu généré par l’utilisateur d’Adobe Analytics {#delete-ugc-from-adobe-analytics}
 
-Pour supprimer des données utilisateur d’Adobe Analytics, suivez le [Workflow d’analyse du RGPD](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-workflow.html); car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
+Pour supprimer des données utilisateur d’Adobe Analytics, suivez le [Workflow d’analyse du RGPD](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html); car l’API ne supprime pas les données utilisateur d’Adobe Analytics.
 
 Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, reportez-vous à l’image suivante :
 
@@ -82,7 +82,7 @@ Pour les mappages de variables Adobe Analytics utilisés par AEM Communities, re
 Par exemple, pour supprimer le profil d’un utilisateur possédant un ID autorisable `weston.mccall@dodgit.com` via la requête http-POST, utilisez les paramètres suivants :
 
 * l’utilisateur = `weston.mccall@dodgit.com`
-* opération = `deleteUser`
+* operation = `deleteUser`
 
 >[!NOTE]
 >

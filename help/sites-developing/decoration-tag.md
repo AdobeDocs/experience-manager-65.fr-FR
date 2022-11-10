@@ -2,10 +2,10 @@
 title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 93%
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 
 ## Contrôles de script {#script-controls}
 
-Le comportement de l’élément wrapper diffère toutefois selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément .
+Il convient toutefois de noter que le comportement de l’élément wrapper varie selon que [HTL](/help/sites-developing/decoration-tag.md#htl) ou [JSP](/help/sites-developing/decoration-tag.md#jsp) est utilisé pour inclure l’élément.
 
 ### HTL {#htl}
 
@@ -62,7 +62,7 @@ Le comportement de l’élément wrapper peut également faire l’objet d’un 
 
 Il est possible de contrôler entièrement le comportement des balises wrapper à partir de scripts HTL et de la logique qui y est associée.
 
-Pour plus d’informations sur le développement au format HTL, consultez la [documentation HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html).
+Pour plus d’informations sur le développement au format HTL, consultez la [documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 #### Arborescence de décision {#decision-tree}
 
@@ -139,13 +139,13 @@ Résultat obtenu `/content/test.html` :
 
 ## JSP {#jsp}
 
-Lors de l’inclusion d’un composant à l’aide de `cq:includ`e ou `sling:include`, le comportement par défaut dans AEM consiste à utiliser un élément DIV pour encapsuler l’élément. Toutefois, cet encapsulage peut être personnalisé de deux façons :
+Lorsque vous incluez un composant à l’aide de `cq:includ`e ou `sling:include`, le comportement par défaut dans AEM consiste à utiliser un DIV pour encapsuler l’élément. Toutefois, cet encapsulage peut être personnalisé de deux façons :
 
-* Indiquer explicitement à AEM de ne pas encapsuler le composant à l’aide de `cq:noDecoration`.
-* Utilisez une balise de HTML personnalisée pour encapsuler le composant à l’aide de `cq:htmlTag`/ `cq:tagName` ou `decorationTagName`.
+* Indiquer explicitement à AEM de ne pas encapsuler le composant à l’aide de `cq:noDecoration`
+* Utiliser une balise HTML personnalisée pour encapsuler le composant à l’aide de `cq:htmlTag`/`cq:tagName` ou `decorationTagName`
 
 ### Arborescence de décision {#decision-tree-1}
 
-L’arborescence de décision suivante illustre comment `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, et `decorationTagName` affecte le comportement de l’élément wrapper.
+L’arborescence de décision ci-dessous montre de quelle façon `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` et `decorationTagName` affectent le comportement de l’élément wrapper.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)

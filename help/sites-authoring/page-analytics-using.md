@@ -12,10 +12,10 @@ discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 86%
+source-wordcount: '438'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 >
 >Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Ouvrez le **Sites** console; par exemple [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Ouvrez la console **Sites**, par exemple, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
 1. À l’extrême droite de la barre d’outils (dans le coin supérieur droit), appuyez ou cliquez sur l’icône pour sélectionner **Mode Liste** (l’icône affichée dépendra du [mode actuel](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
 1. À nouveau à l’extrême droite de la barre d’outils (dans le coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
@@ -50,7 +50,7 @@ Chaque colonne indique une valeur pour la période de création de rapports actu
 
 Sélectionnez la période de création de rapports pour laquelle les données d’analyse s’affichent sur la console Sites :
 
-* Données  Données
+* Données des 30 derniers jours
 * Données des 90 derniers jours
 * Données de cette année
 
@@ -66,19 +66,19 @@ Les membres du groupe d’utilisateurs administrateurs d’analyse peuvent confi
 >
 >Lorsqu’une arborescence de pages contient des enfants associés à différentes configurations de cloud d’Adobe Analytics, vous ne pouvez pas configurer les colonnes de données disponibles pour les pages.
 
-1. En mode Liste, utilisez les sélecteurs d’affichage (à droite de la barre d’outils), puis sélectionnez **Paramètres d’affichage** puis **Ajout de données Analytics personnalisées**.
+1. En mode Liste, utilisez les sélecteurs de vue (à droite de la barre d’outils), sélectionnez **Afficher les paramètres**, puis **Ajouter des données d’analyse personnalisées**.
 
    ![spad-03](assets/spad-03.png)
 
 1. Sélectionnez les mesures à présenter aux auteurs dans la console Sites, puis cliquez sur **Ajouter**.
 
-   Les colonnes affichées sont obtenues à partir d’Adobe Analytics.
+   Les colonnes affichées sont obtenues à partir d’Adobe Analytics.
 
    ![aa-16](assets/aa-16.png)
 
 ### Ouverture de Content Insights à partir de la console Sites {#opening-content-insights-from-sites}
 
-Ouvrir [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour en savoir plus sur l’efficacité des pages.
+Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour continuer à évaluer en détail l’efficacité des pages.
 
 1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez voir Content Insight.
 1. Sur la barre d’outils, cliquez sur l’icône Analyses et recommandations.
@@ -89,6 +89,6 @@ Ouvrir [Content Insight](/help/sites-authoring/content-insights.md) à partir de
 
 >[!CAUTION]
 >
->En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
+>En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [Module externe ActivityMap fourni par Adobe Analytics](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit maintenant être utilisé.
+>Le [plug-in ActivityMap fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.

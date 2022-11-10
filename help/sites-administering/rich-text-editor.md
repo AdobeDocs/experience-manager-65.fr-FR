@@ -1,12 +1,12 @@
 ---
-title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager.
-description: Découvrez comment configurer l’éditeur de texte enrichi Adobe Experience Manager pour créer du contenu dans Adobe Experience Manager.
+title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adobe Experience Manager.
+description: Découvrez comment configurer l’éditeur de texte enrichi Adobe Experience Manager pour créer du contenu dans Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3022'
-ht-degree: 80%
+source-wordcount: '3020'
+ht-degree: 99%
 
 ---
 
@@ -14,30 +14,30 @@ ht-degree: 80%
 
 L’éditeur de texte enrichi met à la disposition des auteurs de nombreuses fonctionnalités pour modifier leur contenu textuel. Les icônes, les boîtes de dialogue de sélection, la barre d’outils et les menus apportent une expérience WYSIWYG de la modification des textes.
 
-Pour savoir comment utiliser les fonctions de l’éditeur de texte enrichi pour la création, voir [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-authoring/rich-text-editor.md). L’éditeur de texte enrichi peut être configuré pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Le workflow suivant illustre l’ordre recommandé d’exécution des tâches de configuration de l’éditeur de texte enrichi dans Experience Manager.
+Pour savoir comment utiliser les fonctions de l’éditeur de texte enrichi pour la création, consultez la section [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-authoring/rich-text-editor.md). L’éditeur de texte enrichi peut être configuré pour activer, désactiver et étendre les fonctions disponibles dans les composants de création. Le workflow suivant illustre l’ordre dans lequel les tâches de configuration de l’éditeur de texte enrichi doivent être exécutées dans Experience Manager.
 
-![Séquence d’étapes pour savoir comment configurer l’éditeur de texte enrichi](assets/rte_workflow_v1.png)
+![Séquence des étapes pour savoir comment configurer l’éditeur de texte enrichi](assets/rte_workflow_v1.png)
 
-*Figure : Séquence d’étapes pour savoir comment configurer l’éditeur de texte enrichi*
+*Image : séquence des étapes pour savoir comment configurer l’éditeur de texte enrichi*
 
 ## Présentation des IU tactile et classique {#understand-touch-enabled-ui-and-classic-ui}
 
-L’interface utilisateur tactile est l’interface utilisateur standard de Experience Manager. Adobe a introduit l’IU tactile avec [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création. L’interface utilisateur tactile est conçue pour les appareils tactiles et de bureau. L’interface diffère considérablement de l’IU classique d’origine.
+L’interface utilisateur tactile est l’interface utilisateur standard d’Experience Manager. Adobe a introduit l’IU tactile doté d’un [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création. L’interface utilisateur tactile est conçue pour les appareils tactiles et de bureau. L’IU diffère considérablement de l’IU classique original.
 
 ![Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur tactile](assets/chlimage_1-35.png)
 
-*Figure : Barre d’outils de l’éditeur de texte enrichi dans l’IU tactile*
+* : barre d’outils d’éditeur de texte enrichi dans l’IU tactile*
 
 ![Barre d’outils d’éditeur de texte enrichi dans l’IU classique](assets/rtedefault.png)
 
-*Figure : Barre d’outils de l’éditeur de texte enrichi dans l’interface utilisateur classique*
+* : barre d’outils d’éditeur de texte enrichi dans l’IU classique*
 
 >[!MORELIKETHIS]
 >
 >* [Recommandations relatives aux IU](/help/sites-deploying/ui-recommendations.md)
->* À propos de l’obsolescence de l’interface utilisateur classique, voir [Notes de mise à jour de Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md)
->* Pour connaître la différence entre les interfaces utilisateur, voir [IU tactile et IU classique](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Pour comprendre l’interface utilisateur tactile en détail, reportez-vous à la section [Concepts de l’interface utilisateur tactile de Experience Manager](/help/sites-developing/touch-ui-concepts.md)
+>* Concernant l’obsolescence de l’IU classique, consultez les [Notes de mise à jour d’Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md).
+>* Pour connaître les différences entre les IU, consultez la section [IU tactile et classique](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/).
+>* Pour comprendre l’IU tactile dans le détail, consultez la section [Concepts de l’IU tactile d’Experience Manager.](/help/sites-developing/touch-ui-concepts.md)
 
 
 ## Différents modes de modification {#editingmodes}
@@ -46,34 +46,34 @@ Les auteurs peuvent créer et modifier du contenu textuel dans Experience Manage
 
 | Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée | IU tactile | Interface utilisateur classique |
 |--- |--- |--- |--- |--- |
-| En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue | Fonctions minimales d’éditeur de texte enrichi | O | O |
+| En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue. | Fonctions minimales d’éditeur de texte enrichi | O | O |
 | Éditeur de texte enrichi en plein écran | Couvre la page entière | Toutes les fonctions requises d’éditeur de texte enrichi | O | N |
-| Boîte de dialogue | Boîte de dialogue située en haut du contenu de page sans couvrir la page entière | Toutes les fonctions requises d’éditeur de texte enrichi dans l’IU classique ; activez les fonctions judicieusement dans l’IU tactile | O | O |
-| Boîte de dialogue plein écran | Identique au mode plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi | Toutes les fonctions requises d’éditeur de texte enrichi | O | N |
+| Boîte de dialogue | Boîte de dialogue située en haut du contenu de page sans couvrir la page entière | Toutes les fonctions requises d’éditeur de texte enrichi dans l’IU classique ; activez les fonctions judicieusement dans l’IU tactile. | O | O |
+| Boîte de dialogue plein écran | Identique au mode plein écran ; contient des champs de la boîte de dialogue à côté de l’éditeur de texte enrichi. | Toutes les fonctions requises d’éditeur de texte enrichi | O | N |
 
 >[!NOTE]
 >
->La fonction de modification de la source n’est pas disponible en mode de modification en ligne dans l’interface utilisateur tactile. Vous ne pouvez pas faire glisser les images en mode plein écran. Toutes les autres fonctions sont utilisables dans tous les modes.
+>La fonction de modification de source n’est pas disponible dans le mode de modification en ligne dans l’IU tactile. Vous ne pouvez pas faire glisser les images en mode plein écran. Toutes les autres fonctions sont utilisables dans tous les modes.
 
 ### Modification en ligne {#inline-editing}
 
 Une fois ouvert (avec une double pression ou un double clic lent), le contenu peut être modifié dans la page. Une barre d’outils compacte avec des options très basiques est présentée.
 
-![Modification en ligne avec une barre d’outils de base dans l’IU tactile](assets/chlimage_1-36.png)
+![Modification en ligne avec une barre d’outils basiques dans l’IU tactile](assets/chlimage_1-36.png)
 
-*Figure : Modification en ligne avec une barre d’outils de base dans l’interface utilisateur tactile*
+* : modification en ligne avec une barre d’outils basiques dans l’IU tactile*
 
-Dans l’IU classique, un double clic lent sur le composant permet la modification en ligne, et le contenu est encadré en orange. Si l’outil de recherche de contenu est ouvert, une barre d’outils avec les options de mise en forme disponibles de l’éditeur de texte enrichi est affichée en haut de la fenêtre. Si l’outil de recherche n’est pas ouvert, les options de mise en forme n’apparaissent pas, et vous pouvez uniquement effectuer des modifications de base sur le texte.
+Dans l’IU classique, un double clic lent sur le composant permet la modification en ligne, et le contenu est encadré en orange. Si l’outil de recherche de contenu est ouvert, une barre d’outils avec les options de mise en forme disponibles de l’éditeur de texte enrichi est affichée en haut de la fenêtre. Si l’outil de recherche n’est pas ouvert, les options de mise en forme n’apparaissent pas et vous pouvez uniquement effectuer des modifications de base sur le texte.
 
 ### Modification en plein écran {#full-screen-editing}
 
-Les composants du Experience Manager peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Considérez la modification en plein écran comme une version détaillée de la modification en ligne, car elle offre le plus grand nombre d’options de modification. Vous pouvez l’ouvrir en cliquant sur ![rte_fullscreen](assets/rte_fullscreen.png), dans la barre d’outils compacte lorsque vous utilisez le mode de modification en ligne. 
+Les composants d’Experience Manager peuvent être ouverts dans une vue plein écran qui masque le contenu de la page et occupe l’écran disponible. Considérez la modification en plein écran comme une version détaillée de la modification en ligne, car elle offre le plus grand nombre d’options de modification. Vous pouvez l’ouvrir en cliquant sur ![rte_fullscreen](assets/rte_fullscreen.png), dans la barre d’outils compacte lorsque vous utilisez le mode de modification en ligne. 
 
-En mode de boîte de dialogue plein écran, outre une barre d’outils détaillée d’éditeur de texte enrichi, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Il s’applique seulement aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
+En mode de boîte de dialogue plein écran, outre une barre d’outils détaillée d’éditeur de texte enrichi, les options et les composants disponibles dans une boîte de dialogue sont également disponibles. Cela ne s’applique qu’aux boîtes de dialogue qui contiennent l’éditeur de texte enrichi à côté d’autres composants.
 
 ![Barre d’outils détaillée d’éditeur de texte enrichi lors de la modification en plein écran dans l’IU tactile](assets/chlimage_1-37.png)
 
-*Figure : Barre d’outils détaillée de l’éditeur de texte enrichi lors de la modification en mode plein écran dans l’interface utilisateur tactile*
+* : barre d’outils détaillée d’éditeur de texte enrichi lors de la modification en plein écran dans l’IU tactile*
 
 ### Modification dans une boîte de dialogue {#dialog-editing}
 
@@ -81,20 +81,20 @@ Lorsque vous double-cliquez sur un composant, une boîte de dialogue apparaît p
 
 ![Mode de modification dans une boîte de dialogue dans l’IU tactile](assets/dialog_editing_modetouchui.png)
 
-*Figure : Mode de modification des boîtes de dialogue dans l’IU tactile*
+* : mode de modification dans une boîte de dialogue dans l’IU tactile*
 
-![Zone de dialogue dans l’IU classique qui contient la barre d’outils détaillée pour la modification](assets/chlimage_1-38.png)
+![Boîte de dialogue dans l’IU classique qui contient la barre d’outils détaillée pour la modification](assets/chlimage_1-38.png)
 
-*Figure : Boîte de dialogue de l’interface utilisateur classique contenant une barre d’outils détaillée pour la modification*
+* : boîte de dialogue dans l’IU classique qui contient la barre d’outils détaillée pour la modification*
 
 ## À propos des modules externes de l’éditeur de texte enrichi et des fonctions associées {#aboutplugins}
 
 Cette fonctionnalité est mise à disposition par le biais d’une série de modules externes, comportant chacun :
 
-* A `features` property:
+* Propriété `features` :
 
    * utilisée afin d’activer ou désactiver une fonctionnalité de base pour ce module externe ;
-   * configurable selon une procédure normalisée
+   * configurable selon une procédure normalisée.
 
 * Le cas échéant, des propriétés et options supplémentaires nécessitant une configuration spécialisée.
 
@@ -126,7 +126,7 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 
 >[!NOTE]
 >
->Le module externe Plein écran n’est pas pris en charge en mode de boîte de dialogue. Utilisation de la variable `dialogFullScreen` pour configurer la barre d’outils en mode plein écran.
+>Le module externe Plein écran n’est pas pris en charge en mode de boîte de dialogue. Utilisation du paramètre `dialogFullScreen` pour configurer la barre d’outils en mode plein écran.
 
 ## Présentation des chemins et des emplacements de configuration {#understand-the-configuration-paths-and-locations}
 
@@ -164,10 +164,10 @@ Lorsque l’éditeur de texte enrichi est utilisé dans la boîte de dialogue op
 
 ## Personnalisation de l’édition statique {#customizing-in-place-editing}
 
-Vous pouvez définir sur quel sélecteur de HTML l’éditeur de texte commence en configurant les propriétés suivantes :
+Vous pouvez définir sur quel sélecteur HTML l’éditeur de texte se lance en configurant les propriétés suivantes :
 
-* **`editElementQuery`** - Défini sur `cq:InplaceEditingConfig`, cette propriété est utilisée pour spécifier un sélecteur de l’élément de HTML sur lequel la modification en ligne pour le composant de texte sera lancée. Si elle n’est pas spécifiée, la modification en ligne est directement lancée sur le HTML Composant Texte .
-* **`textPropertyName`** - Défini sur `cq:InplaceEditingConfig`, cette propriété est utilisée pour spécifier le nom de la propriété qui sera enregistrée sur le noeud de contenu où la valeur de HTML du composant de texte sera conservée après modification en ligne.
+* **`editElementQuery`** - Définie sur `cq:InplaceEditingConfig`, cette propriété est utilisée pour spécifier un sélecteur de l’élément de HTML sur lequel la modification en ligne pour le composant de texte sera lancée. Si elle n’est pas spécifiée, la modification en ligne est directement lancée en HTML de Composant Texte .
+* **`textPropertyName`** - Définie sur `cq:InplaceEditingConfig`, cette propriété est utilisée pour spécifier le nom de la propriété qui sera enregistrée sur le nœud de contenu où la valeur HTML de composant de texte sera conservée après la modification en ligne.
 
 La propriété correspondante pour le mode de boîte de dialogue est `name`.
 
@@ -177,13 +177,13 @@ Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par 
 
 Pour consulter des configurations détaillées des modules externes de l’éditeur de texte enrichi, voir [Activation et configuration des modules externes de l’éditeur de texte enrichi](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
 
-**Exemple**: Télécharger [cet exemple de configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) qui illustre comment configurer l’éditeur de texte enrichi. Dans ce module, toutes les fonctionnalités sont activées.
+**Exemple** : téléchargez [cet exemple de configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) qui illustre comment configurer l’éditeur de texte enrichi. Dans ce module, toutes les fonctionnalités sont activées.
 
 >[!NOTE]
 >
->Le [composant textuel des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que stratégies de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
+>Le [composant textuel des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que stratégies de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
 >
->Pour plus d’informations, voir la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu](/help/sites-administering/rich-text-editor.md) de ce document ainsi que [Création de modèles de page](/help/sites-authoring/templates.md) et la [documentation du développeur des composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/developing/developing.html).
+>Pour plus d’informations, voir la section [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu](/help/sites-administering/rich-text-editor.md) de ce document ainsi que [Création de modèles de page](/help/sites-authoring/templates.md) et la [documentation du développeur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >[!NOTE]
 >
@@ -241,11 +241,11 @@ Pour configurer la barre d’outils pour `dialogFullScreen`, utilisez l’exempl
 
 Différents paramètres d’IU sont utilisés pour les modes en ligne et plein écran. La propriété toolbar est utilisée pour spécifier les boutons de la barre d’outils.
 
-Par exemple, si le bouton est lui-même une fonction (par exemple : `Bold`), il est spécifié comme suit : `PluginName#FeatureName` (par exemple, `links#modifylink`).
+Par exemple, si le bouton est lui-même une fonctionnalité (par exemple, `Bold`), il est spécifiée comme `PluginName#FeatureName` (par exemple, `links#modifylink`).
 
-Si le bouton est une fenêtre contextuelle (contenant certaines fonctionnalités d’un module externe), il est spécifié comme `#PluginName` (par exemple, `#format`).
+Si le bouton est un élément contextuel (contenant certaines fonctionnalités d’un module externe), il est spécifié sous la forme `#PluginName` (par exemple, `#format`).
 
-Séparateurs (`|`) entre un groupe de boutons peut être spécifié avec `-`.
+Les séparateurs (`|`) dans un groupe de boutons peuvent être spécifiés par le signe `-`.
 
 Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des éléments contextuels utilisés. Chaque nœud enfant sous le nœud « popovers » (éléments contextuels) est nommé en fonction du module externe (format, par exemple). Il possède des « éléments » de propriété contenant la liste des fonctions du module externe (format#bold, par exemple).
 
@@ -294,7 +294,7 @@ Vous trouverez, ci-dessous, un exemple de fragment de code pour associer la comm
 
 ## Passage à l’éditeur de texte enrichi CoralUI 2 {#switch-to-coralui-rich-text-editor}
 
-Sur une page, vous pouvez inclure la bibliothèque client de l’éditeur de texte enrichi CoralUI 2 ou la bibliothèque client de l’éditeur de texte enrichi CoralUI 3. Par défaut, l’éditeur de texte enrichi comprend la bibliothèque client de CoralUI 3. Pour passer à l’éditeur de texte enrichi CoralUI 2, exécutez les étapes suivantes.
+Sur une page, vous pouvez inclure la bibliothèque client (clientlib) d’éditeur de texte enrichi CoralUI 2 ou CoralUI 3. Par défaut, l’éditeur de texte enrichi comprend la bibliothèque client de CoralUI 3. Pour passer à l’éditeur de texte enrichi CoralUI 2, exécutez les étapes suivantes.
 
 >[!NOTE]
 >
@@ -303,19 +303,19 @@ Sur une page, vous pouvez inclure la bibliothèque client de l’éditeur de tex
 >Si vous employez des modules externes personnalisés pour l’éditeur de texte enrichi CoralUI3, utilisez la bibliothèque `rte.coralui3`.
 
 
-1. Recouvrir le noeud `/libs/cq/gui/components/authoring/editors/clientlibs/core` under `/apps`et procédez comme suit :
+1. Recouvrez le nœud `/libs/cq/gui/components/authoring/editors/clientlibs/core` sous `/apps` et procédez comme suit :
 
-   * Remplacer `rte.coralui3` avec `rte.coralui2` pour la propriété dependencies.
-   * Remplacer `cq.authoring.editor.core.inlineediting.rte.coralui3` avec `cq.authoring.editor.core.inlineediting.rte.coralui2` pour la propriété embed.
-   * Remplacer `cq.authoring.rte.coralui3` avec `cq.authoring.rte.coralui2` pour la propriété embed.
+   * Remplacez `rte.coralui3` par `rte.coralui2` pour la propriété dependencies.
+   * Remplacez `cq.authoring.editor.core.inlineediting.rte.coralui3` par `cq.authoring.editor.core.inlineediting.rte.coralui2` pour la propriété embed.
+   * Remplacez `cq.authoring.rte.coralui3` par `cq.authoring.rte.coralui2` pour la propriété embed.
 
-1. Recouvrir les noeuds `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` under `/apps`.
+1. Recouvrez les nœuds `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` sous `/apps`.
 
-   Supprimer une catégorie `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et ajoutez-le à `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
+   Supprimez une catégorie `cq.authoring.dialog` de `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` et ajoutez-la à `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
 
-1. Changez n’importe quelle autre dépendance incluse à la page de `rte.coralui3` à `rte.coralui2`. Par exemple, après avoir recouvert le noeud `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` under `/apps`, modifiez toute dépendance à partir de `rte.coralui3` to `rte.coralui2`.
+1. Changez n’importe quelle autre dépendance incluse à la page de `rte.coralui3` à `rte.coralui2`. Par exemple, après recouvrement du nœud `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` sous `/apps`, remplacez toute dépendance `rte.coralui3` correspondante par `rte.coralui2`.
 
-1. Recouvrir le noeud `cq/ui/widgets` under `/apps`. Remplacement de la dépendance `cq.rte` au niveau du noeud `/apps/cq/ui/widgets` avec `cq.coralui2.rte`.
+1. Recouvrez le nœud `cq/ui/widgets` sous `/apps`. Remplacez la dépendance `cq.rte` au niveau du nœud `/apps/cq/ui/widgets` par `cq.coralui2.rte`.
 
 >[!NOTE]
 >
@@ -328,14 +328,14 @@ Pour plus d’informations sur la configuration de l’éditeur de texte enrichi
 En particulier, pour connaître les modules externes et les options associées disponibles :
 
 * Le composant [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) contient un champ de formulaire permettant de modifier les informations de texte stylisé (texte enrichi) : Pour connaître tous les paramètres disponibles pour le formulaire de texte enrichi, voir les options de configuration.
-* Le composant RichText fournit un large éventail de fonctionnalités en utilisant les modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
+* Le composant RichText fournit un large éventail de fonctionnalités grâce aux modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
 
-   * voir les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
+   * consultez les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
    * voir les options de configuration afin de connaître tous les paramètres disponibles pour la configuration détaillée du module externe approprié.
 
 * Vous trouverez également plus d’informations sur les règles HTML pour les liens.
 
-Ils peuvent être utilisés pour étendre et personnaliser votre propre éditeur de texte enrichi. Par exemple, pour répertorier les ancres disponibles dans la page en créant un lien, vous pouvez fournir votre propre mise en œuvre de `LinkPlugin`.
+Ces informations peuvent être utilisées pour étendre et personnaliser votre propre éditeur de texte enrichi. Par exemple, pour répertorier les ancres disponibles dans la page en créant un lien, vous pouvez fournir votre propre mise en œuvre de `LinkPlugin`.
 
 ## Limites connues {#known-limitations}
 
@@ -347,11 +347,11 @@ La fonctionnalité AEM RTE présente les limites suivantes :
 
 * Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Autrement, les configurations de l’éditeur de texte enrichi prennent effet seulement pour les administrateurs et non pour les utilisateurs du groupe `content-author`.
 
-* RTE ne prend pas en charge les images intégrées ni les iframes pour incorporer un contenu.
+* L’éditeur de texte enrichi ne prend pas en charge les images intégrées ni les iframes pour incorporer un contenu.
 
 ## Bonnes pratiques et astuces {#best-practices-and-tips}
 
-* Activez uniquement les modules externes sans fenêtre contextuelle pour une boîte de dialogue flottante. Les modules externes sans fenêtre contextuelle sont plus petits et sont les mieux adaptés aux boîtes de dialogue flottantes.
+* Activation uniquement des modules externes sans déclenchement d’un pop-up pour une boîte de dialogue flottante. Les modules externes sans fenêtre contextuelle sont plus petits et sont les mieux adaptés aux boîtes de dialogue flottantes.
 * Activez les modules externes avec une fenêtre contextuelle plus grande, comme le module externe `Paste`, uniquement en mode Boîte de dialogue plein écran ou en mode Plein écran. Les modules externes possédant une grande fenêtre contextuelle nécessitent davantage d’espace sur l’écran pour offrir une expérience de création optimale.
 * Si vous employez des modules externes personnalisés pour l’éditeur de texte enrichi CoralUI3, utilisez la bibliothèque `rte.coralui3`.
 
@@ -359,11 +359,11 @@ La fonctionnalité AEM RTE présente les limites suivantes :
 
 **Comment sélectionner plusieurs cellules d’un tableau ?**
 
-Pour sélectionner plusieurs cellules dans un tableau, appuyez sur `Ctrl` ou `Cmd` puis cliquez sur les cellules du tableau une par une.
+Pour sélectionner plusieurs cellules dans un tableau, appuyez sur la touche `Ctrl` ou `Cmd`, puis cliquez sur les cellules du tableau une par une.
 
 Vous pouvez maintenant faire votre manipulation sur la sélection, par exemple définir les propriétés des cellules sélectionnées.
 
-**Les liens hypertexte sont perdus lors de la modification d’un composant à l’aide du bouton Configurer**
+**Les liens hypertexte sont perdus lors de la modification d’un composant à l’aide du bouton Configurer**.
 
 Ajoutez un lien hypertexte dans un composant de texte en le modifiant à l’aide du bouton Configurer. Vous risquez de perdre le lien hypertexte si vous le modifiez à nouveau et que vous le validez une deuxième fois.
 
@@ -371,25 +371,25 @@ Une solution consiste à cliquer dans le composant de texte lorsque la boîte de
 
 Ce problème est résolu dans AEM 6.3 et dans les versions ultérieures.
 
-**Le contenu HTML ajouté en mode de modification de la source est perdu**
+**Le contenu HTML ajouté en mode de modification de la source est perdu.**
 
-N’ajoutez pas de code HTML allant à l’encontre de XSS. AEM, et non pas l’éditeur de texte enrichi, peut supprimer du contenu HTML pour se conformer aux règles AntiSamy XSS.
+N’ajoutez pas de code HTML allant à l’encontre de XSS. AEM, et non pas l’éditeur de texte enrichi, permet de supprimer du contenu HTML pour se conformer aux règles AntiSamy XSS.
 
 Pour vérifier que le code HTML collé est enregistré, vérifiez le contenu enregistré dans CRXDE (dans le nœud de contenu).
 
 S’il n’est pas enregistré, le code HTML a probablement été supprimé par l’éditeur de texte enrichi car il n’est pas conforme à ses règles.
 
-S’il est enregistré dans CRXDE, mais pas rendu sur la page (pour vérifier le rendu, reportez-vous à la section [aperçu](/help/sites-authoring/editing-content.md#preview-mode), il est supprimé par AEM règles XSS.
+S’il est enregistré dans CRXDE mais qu’il n’apparaît pas sur la page (pour le vérifier, utilisez l’[aperçu](/help/sites-authoring/editing-content.md#preview-mode) de la page), c’est qu’il a été supprimé par les règles XSS d’AEM.
 
-**Le composant multichamp ne fonctionne pas comme prévu**
+**Le composant multichamp ne fonctionne pas comme prévu**.
 
 Pour créer un composant multichamp, utilisez uniquement CoralUI 3. N’utilisez pas les boîtes de dialogue de composant CoralUI 2.
 
 Vérifiez également que le code de mise en œuvre multichamp et la structure de nœud sont corrects.
 
-**La configuration disponible pour les administrateurs n’est pas accessible aux auteurs**
+**La configuration disponible pour les administrateurs n’est pas accessible aux auteurs**.
 
-Si les mises à jour de configuration de l’interface apparaissent pour les comptes des administrateurs mais pas pour les auteurs, vérifiez que le nœud de configuration n’est pas nommé `config`. Utilisez la variable [`configPath` property](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Si les mises à jour de configuration de l’interface apparaissent pour les comptes des administrateurs mais pas pour les auteurs, vérifiez que le nœud de configuration n’est pas nommé `config`. Utilisez la [`configPath`propriété](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

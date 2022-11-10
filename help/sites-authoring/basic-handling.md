@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 95%
+source-wordcount: '2967'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 
 >[!NOTE]
 >
->* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console **Sites** comme base.
+>* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il s’appuie sur la console **Sites**.
 >
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et des fonctionnalités supplémentaires peuvent être disponibles dans certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-authoring/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
@@ -80,7 +80,7 @@ Les options disponibles dans ces panneaux sont décrites ci-dessous.
 
 ### Panneau de navigation {#navigation-panel}
 
-Le panneau Navigation permet d’accéder aux consoles AEM :
+Le panneau Navigation permet d’accéder aux consoles AEM :
 
 ![bh-01](assets/bh-01.png)
 
@@ -96,7 +96,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Ressources<br /> </td>
-   <td>Ces consoles permettent d’importer et de <a href="/help/assets/home.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td>
+   <td>Ces consoles permettent d’importer et de <a href="/help/assets/home.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site Web exécuté sur la même instance d’AEM. </td>
   </tr>
   <tr>
    <td>Communities</td>
@@ -107,7 +107,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
    <td>Vous permet de gérer les produits, les catalogues de produits et les commandes liés à vos sites de <a href="/help/commerce/cif-classic/administering/ecommerce.md">commerce</a>.</td>
   </tr>
   <tr>
-   <td>Présentation</td>
+   <td>Fragments d’expérience</td>
    <td>Un <a href="/help/sites-authoring/experience-fragments.md">fragment d’expérience</a> est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et présentant des variations, vous évitant ainsi de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences.</td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
    <td>Cette console permet de créer, de gérer et de traiter vos <a href="/help/forms/home.md">formulaires et documents</a>.</td>
   </tr>
   <tr>
-   <td>Personnalisation </td>
+   <td>Personnalisation</td>
    <td>Cette console propose un <a href="/help/sites-authoring/personalization.md">ensemble d’outils de création de contenu ciblé et de présentation d’expériences personnalisées</a>.</td>
   </tr>
   <tr>
@@ -124,7 +124,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
   </tr>
   <tr>
    <td>Screens</td>
-   <td>La console <a href="https://docs.adobe.com/content/help/fr-FR/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> permet de gérer tous les écrans proposés aux clients, quel que soit leur taille ou leur emplacement.</td>
+   <td>La console <a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=fr">Screens</a> permet de gérer tous les écrans proposés aux clients, quel que soit leur taille ou leur emplacement.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -191,7 +191,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![bh-05](assets/bh-05.png)
 
-   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site web.
+   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console Sites, vous pouvez parcourir les différents niveaux de votre site Web.
 
    Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante répertoriant les niveaux hiérarchiques de l’élément actuellement sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
 
@@ -201,7 +201,7 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Cet élément est disponible en mode Liste uniquement. Voir [mode liste](#list-view) pour plus d’informations.
+   Cet élément est disponible en mode Liste uniquement. Pour plus d’informations, consultez [Mode Liste](#list-view).
 
 * Bouton **Créer**
 
@@ -215,15 +215,15 @@ L’en-tête est toujours affiché en haut de l’écran. La plupart des options
 
    ![bh-07](assets/bh-07.png)
 
-   Vous pouvez basculer entre le mode d’affichage Colonne, Carte et Liste. Dans le mode d&#39;affichage Liste, les paramètres de vue sont également affichés.
+   Vous pouvez basculer entre le mode d’affichage Colonne, Carte et Liste. Dans le mode d’affichage Liste, les paramètres de vue sont également affichés.
 
    ![bh-09](assets/bh-09.png)
 
 * Navigation au clavier
 
-   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Elle utilise la fonctionnalité de navigateur standard de la fonction **ONGLET** clé (ou **OPT+TABULATION**) pour vous déplacer entre les éléments de la page qui sont *focalisable*.
+   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Ce processus s’appuie sur la fonctionnalité de la touche **TAB** (or **OPT+TAB**) pour vous déplacer entre les éléments de la page pouvant recevoir le *focus*.
 
-   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cela devient visible à mesure que vous *tab* via les options d’en-tête et accélère votre navigation en vous permettant d’ignorer les éléments standard dans la barre d’outils (produit) et de vous diriger directement vers le contenu principal.
+   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cette option apparaît lorsque vous *tabulez* d’une option d’en-tête à une autre. Elle permet d’accélérer la navigation en ignorant les éléments standard de la barre d’outils (produit) et en accédant directement au contenu principal.
 
    ![bh-30](assets/bh-30.png)
 
@@ -256,7 +256,7 @@ Plusieurs ressources d’aide sont disponibles :
    Dans la console **Outils**, vous pouvez également accéder aux **ressources** externes :
 
    * **Documentation**
-Affichez la documentation de web Experience Management.
+Affichez la documentation de Web Experience Management.
 
    * **Ressources pour les développeurs**
 Ressources et téléchargements pour les développeurs.
@@ -341,13 +341,13 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
    <td>Mode Carte<br /> </td>
    <td>
     <ul>
-     <li>Bureau :<br /> Pointez dessus, puis utilisez l’action rapide en forme de coche.</li>
+     <li>Ordinateur de bureau :<br /> pointez, puis utilisez l’action rapide</li>
      <li>Appareil mobile :<br /> maintenez la carte enfoncée</li>
     </ul> </td>
    <td>
     <ul>
-     <li>Bureau :<br /> Cliquez sur la carte</li>
-     <li>Appareil mobile :<br /> Appuyez sur la carte.</li>
+     <li>Ordinateur de bureau :<br /> cliquez sur la carte</li>
+     <li>Appareil mobile :<br /> appuyez sur la carte</li>
     </ul> </td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
    * Le titre de la page.
    * Des dates importantes (telles que la date de la dernière modification ou publication).
    * Si la page est verrouillée, masquée ou fait partie d’une Live Copy.
-   * Le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un worfklow.
+   * Le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un workflow.
 
       * Les repères qui indiquent les actions requises peuvent être liés à des entrées de votre [boîte de réception](/help/sites-authoring/inbox.md).
 
@@ -564,7 +564,7 @@ La colonne Chronologie permet d’effectuer les actions suivantes :
 * Certaines consoles possèdent des fonctionnalités supplémentaires. Par exemple, dans la console Sites, vous pouvez :
 
    * [enregistrer une version](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui) ;.
-   * [Démarrer un worfklow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+   * [Démarrer un workflow](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
 Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ **Commentaires**.
 

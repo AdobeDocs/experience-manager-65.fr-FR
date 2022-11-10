@@ -11,10 +11,10 @@ topic-tags: introduction
 discoiquuid: 95346ce1-84b7-4bd1-a1e2-6a803139dc69
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 86%
+source-wordcount: '259'
+ht-degree: 97%
 
 ---
 
@@ -30,20 +30,20 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[Le tutoriel du développeur WKND est disponible ici](https://docs.adobe.com/content/help/fr-FR/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) et vous guide tout au long de la création d’un projet AEM à l’aide des dernières technologies et bonnes pratiques.
+[Le tutoriel du développeur WKND est disponible ici](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr) et vous guide tout au long de la création d’un projet AEM à l’aide des dernières technologies et bonnes pratiques.
 
 ## Concepts de base {#core-concepts}
 
 La mise en œuvre du tutoriel tire parti de nombreuses fonctionnalités puissantes d’AEM. Le site est implémenté à l’aide des éléments suivants :
 
-* [HTL](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Modèles Sling](https://sling.apache.org/documentation/bundles/models.html)
 * [IU tactile](/help/sites-developing/touch-ui-concepts.md)
-* [Composants principaux](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/introduction.html)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Modèles modifiables](/help/sites-developing/page-templates-editable.md)
 
 Veuillez parcourir le tutoriel avant de vous plonger dans les concepts ci-dessus.
 
 ## Étapes suivantes {#next-steps}
 
-Une fois que vous avez terminé la [tutoriel](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), envisagez de réviser le document. [Concepts de base d’AEM](/help/sites-developing/the-basics.md) pour mieux comprendre certaines des technologies sous-jacentes et des paradigmes de développement de l&#39;AEM.
+Une fois que vous avez terminé le [tutoriel](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), pensez à parcourir le document [Concepts de base d’AEM](/help/sites-developing/the-basics.md) pour mieux comprendre certains des paradigmes de développement et autres technologies sous-jacents d’AEM.

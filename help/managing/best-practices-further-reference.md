@@ -1,5 +1,5 @@
 ---
-title: La liste de contrôle – Référence supplémentaire
+title: La Liste de contrôle – Référence supplémentaire
 seo-title: The Checklist - Further Reference
 description: 'Découvrez d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section Gestion des projets : liste de contrôle des meilleures pratiques.'
 seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
@@ -10,14 +10,14 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3757'
-ht-degree: 88%
+source-wordcount: '3755'
+ht-degree: 100%
 
 ---
 
-# La liste de contrôle – Référence supplémentaire{#the-checklist-further-reference}
+# La Liste de contrôle – Référence supplémentaire{#the-checklist-further-reference}
 
 Cette page fournit d’autres détails qui précisent et/ou enrichissent les documents et les principes couverts dans la section [Gestion des projets : liste de contrôle des meilleures pratiques](/help/managing/best-practices.md).
 
@@ -29,12 +29,12 @@ Cette page fournit d’autres détails qui précisent et/ou enrichissent les doc
 
 ### Fonctions au sein d’AEM {#features-within-aem}
 
-Lors de la mise en oeuvre d’AEM (en particulier pour la première fois), vous devez examiner la variable [fonctionnalités et workflows d’AEM](https://www.adobe.com/fr/marketing/experience-manager.html) pour être sûr de quelles zones vous voulez/dont vous avez besoin.
+Lors de la mise en œuvre d’AEM (notamment pour la première fois), vous devez passer en revue les [fonctionnalités et les workflows d’AEM](https://www.adobe.com/fr/marketing/experience-manager.html) afin de connaître avec certitude les domaines souhaités/requis.
 
 Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votre travail de conception, par exemple :
 
-* [Commerce ](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://docs.adobe.com/content/help/fr/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr)
 * [Assets](/help/assets/assets.md)
 * [Balises](/help/sites-administering/tags.md)
 * [Gestion de sites multiples·et traduction](/help/sites-administering/msm-and-translation.md)
@@ -68,7 +68,7 @@ Comme dans tout projet, il est essentiel d’établir des règles de base dès q
 
 >[!NOTE]
 >
->Ces points sont génériques, [Liste de contrôle des bonnes pratiques](/help/managing/best-practices.md) traite des spécificités liées aux AEM.
+>Ces points sont génériques, la [liste de contrôle des bonnes pratiques](/help/managing/best-practices.md) aborde les détails spécifiques à AEM.
 
 * **Rôles**
 
@@ -126,7 +126,7 @@ Comme dans tout projet, il est essentiel d’établir des règles de base dès q
 
    * Définissez toutes les hypothèses formulées.
 
-Ces informations peuvent être définies dans un manuel de projet ; l’utilisation d’un wiki peut également vous assurer que les modifications en cours sont gérées efficacement. Les facteurs clés de cette définition sont les suivants :
+Ces informations peuvent être définies dans un manuel de projet ; l’utilisation d’un wiki peut également vous assurer que les modifications en cours sont gérées efficacement. Lorsqu’elles sont définies, les principaux facteurs sont les suivants :
 
 * Les informations doivent être définies et mises à jour.
 * Les informations doivent être communiquées clairement à toutes les personnes impliquées. Bien qu’il s’agisse d’une pratique standard de gestion de projet, on ne répétera jamais assez qu’une définition claire des rôles et une bonne communication peuvent déterminer la réussite ou l’échec d’un projet.
@@ -143,7 +143,7 @@ Ces indicateurs peuvent être :
    * Utilisés pour mesurer les objectifs métier clés.
    * Il est important de sélectionner des IPC pertinents pour votre activité/scénario avec des définitions claires de leur nature, de la façon dont ils seront mesurés, de leur utilisation et des personnes qui les utiliseront.
 
-* Performances:
+* Performances :
 
    * Définissez comment mesurer la performance du système.
    * Il peut s’agir notamment du temps de chargement des pages, du temps de réponse du serveur, ainsi que de la performance des requêtes de la base de données.
@@ -229,7 +229,7 @@ Il existe plusieurs facteurs de performance pouvant être évalués :
 
 * Temps de réponse pour les requêtes de recherche
 
-Cette section peut être lue conjointement avec [Optimisation des performances](/help/sites-deploying/configuring-performance.md) qui développe les détails techniques de la mesure réelle des performances.
+Cette section peut être lue en parallèle de la section [Optimisation des performances](/help/sites-deploying/configuring-performance.md) qui répertorie les détails techniques relatifs à la mesure des performances.
 
 #### Temps de réponse pour les pages individuelles {#response-times-for-individual-pages}
 
@@ -326,7 +326,7 @@ Elles doivent être planifiées et intégrées dès le tout début du projet. Le
 
 ### Concurrence {#concurrency}
 
-Votre site web sera disponible pour un certain nombre d’utilisateurs/de visiteurs, dans les environnements de création et de publication. Les numéros sont souvent plus élevés que ceux utilisés lors du test, mais ils sont également fluctuants et difficiles à prévoir. Votre site web doit avoir été conçu pour qu’un nombre moyen d’utilisateurs/de visiteurs simultanés ne remarquent pas d’impact négatif sur les performances. Là encore, le fichier `request.log` peut être utilisé pour effectuer des tests d’accès simultané ; voir [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
+Votre site web sera disponible pour un certain nombre d’utilisateurs/de visiteurs, dans les environnements de création et de publication. Les numéros sont souvent plus élevés que ceux utilisés lors du test, mais ils sont également fluctuants et difficiles à prévoir. Votre site web doit avoir été conçu pour qu’un nombre moyen d’utilisateurs/de visiteurs simultanés ne remarquent pas d’impact négatif sur les performances. Là encore, le fichier `request.log` peut être utilisé pour effectuer des tests d’accès simultané ; consultez [Optimisation des performances](/help/sites-deploying/configuring-performance.md) pour plus d’informations.
 
 Les cibles pour le nombre d’utilisateurs simultanés dépendent du type d’environnement :
 
@@ -345,7 +345,7 @@ Avant de discuter des mesures relatives, une définition rapide des termes :
 
 * **Volume**
 
-   * La proportion de sortie qui est traitée et diffusée par le système.
+   * La quantité en sortie qui est traitée et diffusée par le système.
 
 * **Capacité**
 
@@ -354,14 +354,14 @@ Avant de discuter des mesures relatives, une définition rapide des termes :
 
 * **Capacité et volume**
 
-   | Quoi / où | Capacité | Volume |
+   | Quoi / Où | Capacité | Volume |
    |---|---|---|
    | Client | Puissance de calcul de l’ordinateur de l’utilisateur. | Complexité de la mise en page. |
    | Réseau | Bande passante réseau. | Taille de la page (code, images, etc.). |
-   | Cache de Dispatcher | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
-   | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages dans le cache de sortie, nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
+   | Cache du Dispatcher | Mémoire serveur du serveur Web (mémoire principale et disque dur). | Serveur web (mémoire principale et disque dur). Nombre et taille des pages mises en cache. |
+   | Cache de sortie | Mémoire serveur du serveur AEM (mémoire principale et disque dur). | Nombre et taille des pages dans le cache de sortie, et nombre de dépendances par page. Le cache du Dispatcher réduit ce volume. |
    | Serveur web | Puissance de calcul du serveur Web. | Nombre de requêtes. La mise en cache réduit ce volume. |
-   | Modèle | Puissance de calcul du serveur Web. | Complexité des modèles. |
+   | Modèle | Puissance de calcul du serveur web. | Complexité des modèles. |
    | Référentiel | Performances du référentiel. | Nombre de pages chargées à partir du référentiel. |
 
 ### Autres mesures {#other-metrics}
@@ -376,7 +376,7 @@ Cependant, il est préférable de garder un ensemble réduit de mesures essentie
 
 La sécurité est cruciale et présente un défi toujours plus grand. Elle ***doit*** être considérée et planifiée dès les premières étapes de votre projet.
 
-La [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) décrit les mesures à prendre pour s’assurer que votre installation d’AEM est sécurisée lors de son déploiement. Les autres aspects liés à la sécurité sont abordés dans la section [Sécurité (lors du développement)](/help/sites-developing/security.md) et [Administration et sécurité des utilisateurs](/help/sites-administering/security.md).
+La [liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) décrit les mesures à prendre pour s’assurer que votre installation d’AEM est sécurisée lors de son déploiement. D’autres aspects liés à la sécurité sont traités dans les sections [Sécurité (lors du développement)](/help/sites-developing/security.md) et [Administration des utilisateurs et sécurité](/help/sites-administering/security.md).
 
 ## Tâches en parallèle et itératives {#parallel-and-iterative-tasks}
 
@@ -384,7 +384,7 @@ La [liste de contrôle de sécurité](/help/sites-administering/security-checkli
 >
 >Notez les points suivants :
 >
->* Offre une vue d’ensemble des *first* mise en oeuvre d’un projet AEM.
+>* Cette section offre un aperçu de la *première* mise en œuvre d’un projet AEM.
 >* Il s’agit d’une présentation abstraite ; voir la [liste de contrôle de projet](/help/managing/best-practices.md) pour les phases/jalons/tâches spécifiques.
 >* Toute échelle temporelle est théorique.
 >
@@ -478,15 +478,15 @@ La liste suivante présente des approximations standard et des corrélations ent
 >
 >Ces valeurs peuvent uniquement être utilisées pour les estimations initiales. Un développeur AEM expérimenté doit effectuer une analyse détaillée.
 
-| Phase  | Effort |
+| Phase | Effort |
 |---|---|
-| Développement | Une estimation approximative de 2 à 4 heures pour chaque noeud de composant couvrira toutes les exigences de développement. |
-| Test de développeur | 15 % du développement |
-| Suivi | 10 % du développement |
-| Documentation | 15 % du développement |
-| Documentation JavaDoc | 10 % du développement |
-| Correction de bogues | 15 % du développement |
-| Gestion de projets | 20 % des coûts du projet pour la gestion et la gouvernance continues du projet |
+| Développement | On estime qu’approximativement 2 à 4 heures de travail pour chaque nœud de composant couvrira toutes les exigences de développement. |
+| Test du développeur | 15 % du développement |
+| Suivi | 10 % du développement |
+| Documentation | 15 % du développement |
+| Documentation JavaDoc | 10 % du développement |
+| Correction de bogues | 15 % du développement |
+| Gestion de projets | 20 % des coûts du projet alloués à la gestion et à la gouvernance continues du projet |
 
 La planification détaillée peut ensuite associer les ressources disponibles ou requises aux échéances et aux coûts.
 
@@ -500,16 +500,16 @@ Les mesures de site suivantes doivent être définies :
 |---|---|
 | Nombre de sites Internet |  |
 | Nombre de sites intranet |  |
-| Nombre de bases de code (par exemple, si Internet et l’intranet diffèrent) |  |
+| Nombre de bases de code (par exemple, si différents pour Internet et l’intranet) |  |
 | Nombre de pages individuelles |  |
-| Nombre de visites du site/jour |  |
-| Nombre de pages vues/jour |  |
-| Volume (en Go) de transfert de données/jour |  |
+| Nombre de visites du site par jour |  |
+| Nombre de pages vues par jour |  |
+| Volume (en Go) de transfert de données par jour |  |
 | Nombre d’utilisateurs simultanés (groupe d’utilisateurs fermé) |  |
 | Nombre de visiteurs simultanés (publication) |  |
 | Nombre d’auteurs simultanés |  |
 | Nombre d’auteurs enregistrés |  |
-| Nombre d’activations de page / jour de travail |  |
+| Nombre d’activations de page par jour de travail |  |
 | Nombre d’activations de page lors du déploiement |  |
 
 ## Présentation des outils potentiels {#overview-of-potential-tools}
@@ -524,13 +524,13 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM lui-même fournit toute une gamme de mécanismes pour vous aider à surveiller, tester, étudier et déboguer votre application ; notamment :</p>
+   <td><p>AEM fournit lui-même tout un éventail d’outils pour vous aider à surveiller, tester, étudier et déboguer votre application ; notamment :</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Mode Développeur</a></li>
-     <li>Le <a href="/help/sites-developing/hobbes.md">Console de test</a></li>
+     <li>La <a href="/help/sites-developing/hobbes.md">Console de test</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">Tableau de bord des opérations</a></li>
-     <li><a href="/help/sites-authoring/content-insights.md">Content Insight </a></li>
-     <li>Le <a href="/help/sites-authoring/author-environment-tools.md#content-tree">Arborescence de contenu</a></li>
+     <li><a href="/help/sites-authoring/content-insights.md">Content Insight</a></li>
+     <li>L’<a href="/help/sites-authoring/author-environment-tools.md#content-tree">Arborescence de contenu</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -539,15 +539,15 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/">Selenium</a> est un outil de test Open Source. Les tests s’exécutent directement dans le navigateur en émulant la façon dont les utilisateurs travaillent.</td>
+   <td><a href="https://docs.seleniumhq.org/">Selenium</a> est un outil de test en open-source. Les tests s’exécutent directement dans le navigateur en émulant la façon dont les utilisateurs travaillent.</td>
   </tr>
   <tr>
-   <td>Projet Microsoft</td>
+   <td>Microsoft Project</td>
    <td>Outil de gestion de projet couramment utilisé.</td>
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira">Jira</a> est un outil Open Source permettant de suivre et gérer les détails de vos bogues logiciels. Des workflows peuvent être imposés sur les détails des bogues selon vos besoins.</td>
+   <td><a href="https://www.atlassian.com/software/jira">Jira</a> est un outil en open-source destiné au suivi et à la gestion des détails de vos bogues logiciels. Vous pouvez appliquer des workflows aux détails des bogues, selon vos besoins.</td>
   </tr>
   <tr>
    <td>Git</td>
@@ -555,15 +555,15 @@ La liste suivante est fournie pour vous informer des outils qui peuvent être ut
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse est un IDE Open Source, composé de divers projets. Ils sont concentrés sur la création d’une plate-forme de développement ouverte, composée de structures extensibles, d’outils et de runtimes pour la conception, le déploiement et la gestion des logiciels tout au long du cycle de vie.</p> <p>Voir <a href="/help/sites-developing/howto-projects-eclipse.md">Développement de projets AEM à l’aide d’Eclipse</a> pour plus d’informations.</p> </td>
+   <td><p>Eclipse est un environnement de développement intégré en open-source, composé de différents projets. Ils se concentrent sur la création d’une plateforme de développement ouverte, composée de frameworks extensibles, d’outils et de runtimes pour la conception, le déploiement et la gestion des logiciels tout au long du cycle de vie.</p> <p>Consultez <a href="/help/sites-developing/howto-projects-eclipse.md">Développement de projets AEM à l’aide d’Eclipse</a> pour plus d’informations.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>Un IDE professionnel (et donc soumis à des coûts de licence) offrant un large éventail de fonctionnalités. </p> <p>Voir <a href="/help/sites-developing/ht-intellij.md">Développement de projets AEM à l’aide de IntelliJ IDEA</a> pour plus d’informations.</p> </td>
+   <td><p>Un environnement de développement intégré professionnel (et pouvant donc engendrer des coûts de licence) offrant une gamme complète de fonctions. </p> <p>Consultez <a href="/help/sites-developing/ht-intellij.md">Développement de projets AEM à l’aide d’IntelliJ IDEA</a> pour plus d’informations.</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/">Maven</a> est un outil de compréhension et de gestion de projet logiciel qui peut gérer le processus de création d’un projet (logiciel et documentation).</td>
+   <td><a href="https://maven.apache.org/">Maven</a> est un outil pour vous aider à comprendre et à gérer vos projets logiciels et à gérer le processus de conception d’un projet (qu’il s’agisse de la partie logicielle ou de la documentation).</td>
   </tr>
  </tbody>
 </table>

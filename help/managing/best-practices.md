@@ -1,5 +1,5 @@
 ---
-title: 'Gestion des projets : liste de contrôle des meilleures pratiques'
+title: 'Gestion des projets : liste de contrôle des bonnes pratiques'
 seo-title: Managing Projects - Best Practices Checklist
 description: La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel.
 seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '3264'
-ht-degree: 94%
+source-wordcount: '3262'
+ht-degree: 99%
 
 ---
 
-# Gestion des projets : liste de contrôle des meilleures pratiques{#managing-projects-best-practices-checklist}
+# Gestion des projets : liste de contrôle des bonnes pratiques{#managing-projects-best-practices-checklist}
 
 La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension afin de vous assurer de connaître les problèmes et les décisions (associées) que vous devez prendre (avant et pendant la mise en œuvre du projet).
 
@@ -31,11 +31,11 @@ Pour vous aider, les meilleures pratiques se composent des éléments suivants 
 
 * La documentation, fondée directement sur la [liste de contrôle](/help/managing/best-practices-checklist.md), qui décrit :
 
-   * [Pulsation du projet](#projectheartbeat) analyse.
-   * [État par rôle](#status-by-role) aperçu.
+   * l’analyse de [pulsation du projet](#projectheartbeat) ;
+   * l’aperçu du [Statut par rôle](#status-by-role) ;
    * les [phases et jalons](#phases-and-milestones).
    * le [personnage principal](#persona) et sa participation à chaque étape (appropriée).
-   * A [Glossaire](/help/managing/best-practices-glossary.md) de [Documents requis et éléments livrables](#required-documents-and-deliverables).
+   * un [glossaire](/help/managing/best-practices-glossary.md) des [documents et éléments livrables requis](#required-documents-and-deliverables).
 
 * D’[autres documents de référence](/help/managing/best-practices-further-reference.md) pour fournir plus de détails sur des domaines spécifiques.
 
@@ -57,7 +57,7 @@ La feuille de calcul de **pulsation du projet** fournit un aperçu graphique des
 
 ## État par rôle {#status-by-role}
 
-La feuille de calcul **État par rôle** indique le détail de l’[**état**, la **qualité** et la **complétude**](#projectheartbeat) par **[phase](#phases-and-milestones)** et **[personnage](#persona)**.
+La feuille de calcul **Statut par rôle** indique le détail du [**statut**, la **qualité** et la **complétude**](#projectheartbeat) par **[phase](#phases-and-milestones)** et **[persona](#persona)**.
 
 ## Phases et jalons {#phases-and-milestones}
 
@@ -185,7 +185,7 @@ La planification du développement est essentielle pour vous assurer que votre p
    * les sous-systèmes ;
    * les systèmes tiers ;
    * les interfaces : matérielle, logicielle et interaction humaine ;
-   * Serveurs pour chaque environnement ; voir la [Exigences techniques](/help/sites-deploying/technical-requirements.md) et [Instructions de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md)
+   * les serveurs pour chaque environnement, consultez les [Exigences techniques](/help/sites-deploying/technical-requirements.md) et les [Consignes de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md) ;
 
    * les processus pour chaque environnement, par exemple, les exigences de déploiement et de maintenance ;
    * les activités de maintenance (GC de banque de données, optimisation TarPM, etc.) ;
@@ -217,7 +217,7 @@ La planification du développement est essentielle pour vous assurer que votre p
    Pour l’intégration système, vous devez prévoir (et ensuite implémenter) :
 
    * la façon dont tous les sous-systèmes et [intégrations de solutions](/help/sites-administering/integration.md) seront assemblés pour fonctionner comme un système cohérent ;
-   * Comment les systèmes tiers seront-ils intégrés ? ainsi que toutes les considérations spéciales, telles que la gestion hors ligne/en ligne, côté client/côté navigateur ou la gestion du basculement lorsqu’un système tiers est hors service
+   * la façon dont les éventuels systèmes tiers sont intégrés, ainsi que toute considération spéciale, telle que hors ligne ou en ligne, côté client ou côté navigateur, ou encore la gestion des basculements lorsqu’un système tiers est hors service.
 
 * **Concept de test**
 
@@ -255,13 +255,13 @@ De la même façon, les opérations doivent être correctement planifiées de ma
 
    Par exemple :
 
-   * Liste des rôles (c’est-à-dire des groupes) avec `read`/ `write` définitions d’accès pour chaque
+   * la liste des rôles (c’est-à-dire, des groupes) avec les définitions d’accès en `read`/`write` pour chacun d’eux ;
 
-   * Définition de l’utilisation des privilèges qui affectent l’environnement de publication ; par exemple, `replicate`
-   * Pour les utilisateurs qui disposent de privilèges minimaux, les processus doivent être définis
-   * Utilisateurs dans la variable `editor` ne doit pas avoir `admin` ne font pas partie des droits `administrators` group
+   * la définition des privilèges qui affectent l’environnement de publication, par exemple, `replicate`.
+   * Pour les utilisateurs qui disposent des privilèges minimaux, des workflow doivent être définis.
+   * Les utilisateurs du groupe `editor` ne doivent pas disposer de droits `admin` ni faire partie du groupe `administrators`.
 
-   Pour plus d’informations, voir [Administration et sécurité des utilisateurs](/help/sites-administering/security.md).
+   Pour plus d’informations, consultez [Administration et sécurité des utilisateurs](/help/sites-administering/security.md).
 
 * **Surveillance et maintenance**
 
@@ -298,7 +298,7 @@ Le développement est une étape essentielle nécessitant plus qu’un simple co
          * un système de suivi des problèmes, comme Jira ;
          * un environnement de développement intégré (IDE), comme Eclipse ;
          * un outil de gestion des compilations, comme Maven ;
-         * un outil d&#39;intégration continue; tels que Jenkins
+         * un outil pour l’intégration continue, comme Jenkins ;
          * un outil pour le contrôle de version, comme GIT/SVN ;
          * un gestionnaire de référentiel des artefacts de compilation, comme Archiva/Nexus ;
    * les dépendances/l’intégration des logiciels tiers ;
@@ -324,7 +324,7 @@ Le développement est une étape essentielle nécessitant plus qu’un simple co
    * la cadence de déploiement.
    * les dépendances/l’intégration des logiciels tiers ;
    * la configuration de la sécurité ;
-   * Les performances de ligne de base vérifiées en exécutant la fonction [Tough Day tests](/help/sites-developing/tough-day.md) sur la configuration de production
+   * les performances de base vérifiées par l’exécution de [tests ToughDay](/help/sites-developing/tough-day.md) sur la configuration d’exploitation ;
    * les exigences des tests de performance ; voir [Meilleures pratiques pour l’assurance qualité](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance).
 
 * **Intégration**
@@ -346,7 +346,7 @@ Le développement est une étape essentielle nécessitant plus qu’un simple co
 
    Assurez-vous que tous les membres de l’équipe et personnages du projet sont informés suivant les besoins.
 
-* **Documentation**.
+* **Documentation**
 
    Documentez la solution de manière complète, notamment :
 
@@ -429,7 +429,7 @@ Le déploiement de votre nouvelle application nécessite une planification soign
 
    Pour garantir la sécurité de votre solution, exécutez des tests spécifiques de pénétration, ainsi qu’une gamme plus étendue de tests de sécurité.
 
-   Voir la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour plus de détails.
+   Consultez la [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md) pour plus de détails.
 
 ### Activation {#go-live}
 
@@ -578,7 +578,7 @@ Le responsable de la sécurité :
 
 ## Documents requis et éléments livrables {#required-documents-and-deliverables}
 
-Les listes de contrôle couvrent la variable **Documents requis** et **Deliverables** pour chaque jalon.
+Les listes de contrôle couvrent les **documents requis** et les **éléments livrables** pour chaque jalon.
 
 * Il n’existe pas de relation de 1 à 1 entre eux, par exemple, un groupe de documents requis peut correspondre à un seul élément livrable.
 * Un élément livrable d’un personnage peut être un document requis pour un autre personnage lors du même jalon.
@@ -587,7 +587,7 @@ Les listes de contrôle couvrent la variable **Documents requis** et **Deliverab
 
 Les **documents requis** sont nécessaires pour le personnage approprié lors de la production de ses éléments livrables.
 
-Pour chaque **Document requis** le persona doit indiquer :
+Pour chaque **document requis**, le persona doit indiquer :
 
 * **O/N** : s’il a été reçu ;
 * **1-3** : la qualité du document reçu.
@@ -596,29 +596,30 @@ Pour chaque **Document requis** le persona doit indiquer :
 
 Pour chaque jalon, le personnage approprié est chargé de livrer les documents spécifiques et donc d’accomplir ses responsabilités pour un jalon donné.
 
-Pour chaque **Délivrés** le persona doit indiquer :
+Pour chaque **élément livrable**, le persona doit indiquer :
 
 * **O/N** : s’il est terminé.
 
-Les éléments livrables sont souvent utilisés comme **Documents requis** pour le jalon actuel ou un jalon ultérieur.
+Les éléments livrables sont souvent utilisés comme des **documents requis** pour le jalon en cours ou un jalon ultérieur.
 
 ## Meilleures pratiques connexes {#related-best-practices}
 
 Pour connaître les meilleures pratiques de déploiement, d’administration, de développement ou de création, consultez les liens suivants :
 
-* Autres meilleures pratiques et consignes liées à la gestion d’un projet AEM:
+* Autres bonnes pratiques et consignes liées à la gestion d’un projet AEM :
    * [Consignes de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md)
    * [Opérations de développement d’entreprise (DevOps)](/help/managing/enterprise-devops.md)
-   * [Meilleures pratiques d’optimisation pour les moteurs de recherche et de gestion des URL](/help/managing/seo-and-url-management.md)
-   * [AEM et les consignes pour l’accessibilité web](/help/managing/web-accessibility.md)
+   * [Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md)
+   * [Instructions relatives à AEM et à l’accessibilité Web](/help/managing/web-accessibility.md)
    * [Règlement général sur la protection des données](/help/managing/data-protection-and-privacy.md)* [Bonnes pratiques de déploiement et de maintenance](/help/sites-deploying/best-practices.md)
-* [Meilleures pratiques d’administration](/help/sites-administering/administer-best-practices.md)
-* [Meilleures pratiques de développement](/help/sites-developing/best-practices.md)
-* [Meilleures pratiques de création](/help/sites-authoring/best-practices.md)
+* [Bonnes pratiques d’administration](/help/sites-administering/administer-best-practices.md)
+* [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
+* [Bonnes pratiques de création](/help/sites-authoring/best-practices.md)
 
 ## Principale documentation {#key-documentation-areas}
 
-* Documentation AEM Les sections suivantes de la documentation AEM présentent un intérêt particulier (toutefois, cette liste n’est pas exhaustive) :
+* Documentation AEM
+Les sections suivantes de la documentation AEM présentent un intérêt particulier (toutefois, cette liste n’est pas exhaustive) :
 
    * [Sécurité](/help/sites-developing/security.md)
    * [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md)
@@ -626,9 +627,9 @@ Pour connaître les meilleures pratiques de déploiement, d’administration, de
    * [Dimensionnement matériel](/help/managing/hardware-sizing-guidelines.md)
    * Concepts AEM :
 
-      * [Développement – les principes de base](/help/sites-developing/the-basics.md)
-      * [Concepts MSM](/help/sites-administering/msm.md)
-      * [Langage de modèle HTML (HTL)](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
+      * [Développement – Les principes de base](/help/sites-developing/the-basics.md)
+      * [Concepts relatifs au MSM](/help/sites-administering/msm.md)
+      * [Langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * Documentation connexe
 

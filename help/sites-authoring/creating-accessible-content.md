@@ -1,10 +1,10 @@
 ---
-title: Création de contenu accessible pour Adobe Experience Manager (conformité WCAG 2.1)
-description: Utilisez AEM pour rendre le contenu web accessible aux personnes en situation de handicap et utilisable par celles-ci.
+title: Création de contenu accessible pour Adobe Experience Manager (conformité au WCAG 2.1)
+description: Utilisez AEM pour rendre le contenu Web accessible et utilisable par les personnes en situation de handicap
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '13956'
+source-wordcount: '13950'
 ht-degree: 99%
 
 ---
@@ -66,11 +66,11 @@ Autre avantage utile : les équivalents textuels permettent aux moteurs de rech
 
 #### Comment procéder – Contenu non textuel (1.1.1) {#how-to-meet-non-text-content}
 
-Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Vous pouvez, pour ce faire, utiliser le champ **Texte de remplacement** ; voir, par exemple, la section du composant principal **[Image](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/image.html)**.
+Pour les images statiques, la règle de base consiste à fournir un équivalent textuel. Vous pouvez, pour ce faire, utiliser le champ **Texte de remplacement** ; voir, par exemple, la section du composant principal **[Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr)**.
 
 >[!NOTE]
 >
->Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://docs.adobe.com/content/help/fr-FR/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
+>Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=fr)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=fr#accessibility-tab)**) pour l’ensemble du composant.
 >
 >Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -123,7 +123,7 @@ Le W3C émet plusieurs suggestions, comme celles énumérées ci-dessous. Chacun
 
 ### Média temporel (1.2) {#time-based-media}
 
-[Règle 1.2 – Média temporel : proposer des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG/#time-based-media)
+[Règle 1.2 – Média temporel : propose des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG/#time-based-media)
 
 Cette section traite du contenu web *temporel*, notamment le contenu que l’utilisateur peut lire (contenu vidéo, audio et animé, par exemple) et qui peut être pré-enregistré ou en direct.
 

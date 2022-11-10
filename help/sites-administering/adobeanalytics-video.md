@@ -1,5 +1,5 @@
 ---
-title: Configuration du suivi vidéo pour Adobe Analytics
+title: Configuration du suivi vidéo pour Adobe Analytics
 seo-title: Configuring Video Tracking for Adobe Analytics
 description: Familiarisez-vous avec la configuration du suivi vidéo pour SiteCatalyst.
 seo-description: Learn about configuring video tracking for SiteCatalyst.
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1751'
-ht-degree: 42%
+source-wordcount: '1743'
+ht-degree: 98%
 
 ---
 
-# Configuration du suivi vidéo pour Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
+# Configuration du suivi vidéo pour Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
 Il existe différentes méthodes pour assurer le suivi des événements vidéo, dont deux sont des options héritées de versions précédentes d’Adobe Analytics. Ces options existantes sont : Jalons hérités et Secondes héritées.
 
@@ -28,7 +28,7 @@ Il existe différentes méthodes pour assurer le suivi des événements vidéo, 
 >
 >Pour vous assurer que vos vidéos sont lisibles dans la page, consultez **[ce didacticiel](/help/sites-authoring/default-components-foundation.md#video)** pour plus d’informations sur le transcodage de fichiers vidéo dans AEM.
 
-Appliquez la procédure ci-dessous pour configurer une structure pour le suivi des vidéos à l’aide de chaque méthode.
+Appliquez la procédure ci-dessous pour configurer un framework pour le suivi des vidéos à l’aide de chaque méthode.
 
 >[!NOTE]
 >
@@ -36,34 +36,34 @@ Appliquez la procédure ci-dessous pour configurer une structure pour le suivi d
 
 ## Étapes communes {#common-steps}
 
-1. Configurez une page web en faisant glisser un **composant vidéo** à partir du sidekick et en ajoutant une **vidéo comme ressource** lisible pour le composant.
+1. Configurez une page Web en faisant glisser un **composant vidéo** à partir du sidekick et en ajoutant une **vidéo comme ressource** lisible pour le composant.
 
-1. [Création d’une configuration et d’une structure Adobe Analytics](/help/sites-administering/adobeanalytics.md).
+1. [Créez une configuration et un framework Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
-   * Les exemples des sections qui suivent utilisent le nom **my-sc-configuration** pour la configuration et **videofw** pour la structure.
+   * Les exemples dans les sections qui suivent utilisent le nom **my-sc-configuration** pour la configuration et **videofw** pour le framework.
 
-1. Sur la page de structure, sélectionnez un RSID et définissez l’utilisation sur tous. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. Dans la catégorie Général du sidekick, faites glisser le composant vidéo dans la structure.
-1. Sélectionnez une méthode de suivi :
+1. Dans la page du framework, sélectionnez un RSID et définissez l’utilisation sur Tout. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
+1. Dans la catégorie Général du sidekick, faites glisser le composant vidéo dans le framework.
+1. Sélectionnez une méthode de suivi :
 
    * [Jalons](/help/sites-administering/adobeanalytics.md)
    * [Jalons non hérités](/help/sites-administering/adobeanalytics.md)
    * [Jalons hérités](/help/sites-administering/adobeanalytics.md)
    * [Secondes héritées](/help/sites-administering/adobeanalytics.md)
 
-1. Lorsque vous sélectionnez une méthode de suivi, la liste de variables CQ change en conséquence. Pour plus d’informations sur la configuration du composant et le mappage des variables CQ avec les propriétés Adobe Analytics, reportez-vous aux sections suivantes.
+1. Lorsque vous sélectionnez une méthode de suivi, la liste de variables CQ change en conséquence. Consultez les sections ci-après pour obtenir plus d’informations sur la configuration du composant et le mappage des variables CQ aux propriétés Adobe Analytics.
 
 ## Jalons {#milestones}
 
 La méthode Jalons suit la plupart des informations sur la vidéo. Elle est hautement personnalisable et facile à configurer.
 
-Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsqu’une lecture vidéo franchit un jalon, la page appelle Adobe Analytics pour effectuer le suivi de l’événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics. Le format du nom de ces variables CQ est le suivant :
+Pour utiliser la méthode Jalons, spécifiez les décalages de suivi temporels afin de définir les jalons. Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement. Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics. Le format du nom de ces variables CQ est le suivant :
 
 ```shell
 eventdata.events.milestoneXX
 ```
 
-Le suffixe XX correspond au décalage de suivi, qui définit le jalon. Par exemple, la spécification des décalages de suivi de 4, 8, 16, 20 et 28 secondes génère les variables CQ suivantes :
+Le suffixe XX correspond au décalage de suivi, qui définit le jalon. Par exemple, la spécification du décalage de suivi de 4, 8, 16, 20 et 28 secondes génère les variables CQ suivantes :
 
 * `eventdata.events.milestone4`
 * `eventdata.events.milestone8`
@@ -77,58 +77,58 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
  <tbody>
   <tr>
    <th>Variables CQ</th>
-   <th>Propriétés Adobe Analytics</th>
+   <th>Propriétés Adobe Analytics</th>
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>Les variables mappées à cette propriété contiennent la variable <strong>convivial</strong> name (<strong>Titre</strong>) de la vidéo si elle est définie dans la gestion des ressources numériques ; si cette valeur n’est pas définie, la vidéo <strong>nom du fichier</strong> sera envoyée à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.</td>
+   <td>Les variables mappées à cette propriété contiennent le nom <strong>convivial</strong> (<strong>Titre</strong>) de la vidéo s’il est défini dans la gestion des ressources numériques ; si cette valeur n’est pas définie, le <strong>nom du fichier</strong> de la vidéo sera envoyé à sa place. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Les variables mappées à cette propriété contiennent le nom du fichier. Envoyé uniquement avec eventdata.events.a.media.view </td>
+   <td>Les variables mappées à cette propriété contiennent le nom du fichier. Envoyé uniquement avec eventdata.events.a.media.view. </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Les variables mappées à cette propriété contiennent le chemin d’accès au fichier sur le serveur. Envoyé uniquement avec eventdata.events.a.media.view </td>
+   <td>Les variables mappées à cette propriété contiennent le chemin d’accès au fichier sur le serveur. Envoyé uniquement avec eventdata.events.a.media.view. </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
-   <td>Envoyé chaque fois qu’un jalon de segment est franchi </td>
+   <td>Envoyé chaque fois qu’un jalon de segment est franchi. </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Envoyé chaque fois qu’un jalon est déclenché, le nombre de secondes passées par l’utilisateur à regarder le segment donné est également envoyé avec cet événement. par exemple, eventX=21<br /> </td>
+   <td>Envoyé chaque fois qu’un jalon est déclenché, le nombre de secondes passées par l’utilisateur à regarder le segment donné est également envoyé avec cet événement, par exemple, eventX=21.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
-   <td>Envoyé lors de l’initialisation de la vue vidéo</td>
+   <td>Envoyé lors de l’initialisation de la vue vidéo.</td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.complete </td>
-   <td>Envoyé lorsque la lecture de la vidéo est terminée<br /> </td>
+   <td>Envoyé lorsque la lecture de la vidéo est terminée.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.milestoneX </td>
-   <td>Envoyé lorsque le jalon donné est franchi, X correspond à la seconde où le jalon est déclenché.<br /> </td>
+   <td>Envoyé lorsque le jalon donné est franchi, X correspondant à la seconde où le jalon est déclenché.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Envoyé à chaque jalon ; s’affiche en tant que pev3 dans l’appel Adobe Analytics, généralement envoyé en tant que "vidéo".<br /> </td>
+   <td>Envoyé à chaque jalon ; s’affiche en tant que pev3 dans l’appel Adobe Analytics, généralement envoyé en tant que « vidéo ».<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
-   <td>Correspond exactement à eventdata.videoName </td>
+   <td>Correspond exactement à eventdata.videoName. </td>
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Contient des informations sur le segment qui a été consulté, par exemple 2.:O:4-8 </td>
+   <td>Contient des informations sur le segment qui a été consulté, par exemple 2:O:4-8. </td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Vous pouvez définir une **convivial** en ouvrant la vidéo à modifier dans la gestion des ressources numériques et en définissant la variable **Titre** champ de métadonnées pour obtenir le nom souhaité.
+>Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix.
 
 1. Après avoir sélectionné les jalons comme méthode de suivi, dans la boîte de dialogue des décalages de suivi, saisissez une liste de décalages de suivi, exprimés en secondes, séparés par des virgules. Par exemple, la valeur ci-dessous définit des jalons 4, 8, 16, 20 et 28 secondes après le début de la vidéo :
 
@@ -138,20 +138,20 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
 
    Les valeurs de décalage doivent être des entiers supérieurs à 0. La valeur par défaut est `10,25,50,75`.
 
-1. Pour mapper les variables CQ aux propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics de ContentFinder en regard de la variable CQ sur le composant.
+1. Pour mapper les variables CQ à des propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics de ContentFinder en regard de la variable CQ sur le composant.
 
-   Pour plus d’informations sur l’optimisation des mappages, voir la section [Mesure vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   Pour plus d’informations sur l’optimisation des mappages, consultez le guide relatif à la [mesure de la vidéo dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-1. [Ajouter la structure](/help/sites-administering/adobeanalytics.md) sur la page .
-1. Pour tester la configuration dans **Mode Aperçu**, lisez la vidéo pour que les appels Adobe Analytics se déclenchent.
+1. [Ajoutez le framework](/help/sites-administering/adobeanalytics.md) à la page.
+1. Pour tester la configuration en **mode Aperçu**, lisez la vidéo pour obtenir des appels Adobe Analytics à déclencher.
 
-Les exemples de données de suivi Adobe Analytics suivants s’appliquent au suivi Milestone à l’aide des décalages de suivi de 4,8,16,20 et 24, ainsi que les mappages suivants pour les variables CQ :
+Les exemples de données de suivi Adobe Analytics qui suivent s’appliquent au suivi de Jalons à l’aide de décalages de suivi de 4, 8, 16, 20 et 24 secondes et aux mappages ci-dessous pour les variables CQ :
 
 <table>
  <tbody>
   <tr>
    <th>Variable CQ</th>
-   <th>Propriété Adobe Analytics</th>
+   <th>Propriété Adobe Analytics</th>
   </tr>
   <tr>
    <td>eventdata.videoName </td>
@@ -207,7 +207,7 @@ Les exemples de données de suivi Adobe Analytics suivants s’appliquent au sui
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
-   <td>eVar 1, prop1 </td>
+   <td>eVar1, prop1 </td>
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
@@ -216,22 +216,22 @@ Les exemples de données de suivi Adobe Analytics suivants s’appliquent au sui
  </tbody>
 </table>
 
-Dans cet exemple, le composant Vidéo s’affiche comme suit dans la page de la structure :
+Dans cet exemple, le composant Vidéo s’affiche comme suit dans la page du framework :
 
 ![video1](assets/video1.png)
 
 >[!NOTE]
 >
->Pour voir les appels effectués vers Adobe Analytics, utilisez un outil approprié, tel que DigitalPulse Debugger ou Fiddler.
+>Pour afficher les appels à Adobe Analytics, utilisez un outil approprié, comme DigitalPulse Debugger ou Fiddler.
 
-Les appels vers Adobe Analytics à l’aide de l’exemple fourni doivent ressembler à ceci lorsqu’ils sont affichés avec le DigitalPulse Debugger :
+Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se présenter comme suit lorsqu’ils sont affichés avec DigitalPulse Debugger :
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-*Il s’agit de la variable **premier appel**effectuée vers Adobe Analytics contenant les valeurs suivantes :*
+*Le **premier appel**à Adobe Analytics contient les valeurs suivantes :*
 
 * *prop1 et eVar1 pour eventdata.a.media.name,*
-* *props2-4, ainsi que l’eVar 2 et l’eVar 3 contenant contentType (vidéo) et segment (1):O:1-4)*
+* *props2-4, avec eVar2 et eVar3 contenant contentType (vidéo) et segment (1:O:1-4)*
 * *event3 mappé à eventdata.events.a.media.view.*
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
@@ -239,7 +239,7 @@ Les appels vers Adobe Analytics à l’aide de l’exemple fourni doivent ressem
 ***Troisième appel**vers Adobe Analytics :*
 
 * *prop1 et eVar1 contiennent a.media.name ;*
-* *event1 car un segment a été visionné ;* 
+* *event1 car un segment a été visionné ;*
 * *event2 envoyé avec un temps de lecture = 4 ;*
 * *event11 envoyé car eventdata.events.milestone8 a été atteint ;* 
 * *prop2 à 4 ne sont pas envoyés (car eventdata.events.a.media.view n’a pas été déclenché).* 
@@ -248,9 +248,9 @@ Les appels vers Adobe Analytics à l’aide de l’exemple fourni doivent ressem
 
 La méthode Jalons non hérités est similaire à la méthode Jalons, excepté que les jalons sont définis à l’aide de pourcentages de la durée du suivi. Les points communs sont les suivants :
 
-* Lorsqu’une lecture vidéo franchit un jalon, la page appelle Adobe Analytics pour effectuer le suivi de l’événement.
-* Le [ensemble statique de variables CQ](#cqvars) qui sont définis pour le mappage avec les propriétés Adobe Analytics.
-* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
+* Lorsque la lecture d’une vidéo franchit un jalon, la page appelle Adobe Analytics pour suivre l’événement.
+* L’[ensemble statique des variables CQ](#cqvars) définies pour le mappage à des propriétés Adobe Analytics.
+* Pour chaque jalon que vous définissez, le composant crée une variable CQ que vous pouvez mapper à une propriété Adobe Analytics.
 
 Le format du nom de ces variables CQ est le suivant :
 
@@ -273,12 +273,12 @@ eventdata.events.milestoneXX
 
    Les valeurs de décalage doivent être des entiers supérieurs à 0.
 
-1. Pour mapper les variables CQ aux propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics de ContentFinder en regard de la variable CQ sur le composant.
+1. Pour mapper les variables CQ à des propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics de ContentFinder en regard de la variable CQ sur le composant.
 
-   Pour plus d’informations sur l’optimisation des mappages, voir la section [Mesure vidéo dans Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html) guide.
+   Pour plus d’informations sur l’optimisation des mappages, consultez le guide relatif à la [mesure de la vidéo dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
 
-1. [Ajouter la structure](/help/sites-administering/adobeanalytics.md) sur la page .
-1. Pour tester la configuration dans **Mode Aperçu**, lisez la vidéo pour que les appels Adobe Analytics se déclenchent.
+1. [Ajoutez le framework](/help/sites-administering/adobeanalytics.md) à la page.
+1. Pour tester la configuration en **mode Aperçu**, lisez la vidéo pour obtenir des appels Adobe Analytics à déclencher.
 
 ## Jalons hérités {#legacy-milestones}
 
@@ -292,90 +292,90 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
 
    * Par exemple, 10, 50, 75, 100
 
-   En outre, les informations envoyées à Adobe Analytics sont moins personnalisables ; seules 3 variables sont disponibles pour le mappage :
+   De même, les informations envoyées à Adobe Analytics sont moins personnalisables. Seules 3 variables sont disponibles pour le mappage :
 
 <table>
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Les variables mappées à cette propriété contiennent la variable <strong>convivial</strong> name (<strong>Titre</strong>) de la vidéo si elle est définie dans la gestion des ressources numériques ; si le champ Titre n’est pas défini, le paramètre <strong>nom du fichier</strong> sera envoyée à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
+   <td>Les variables mappées à cette propriété contiennent le nom <strong>convivial</strong> (<strong>Titre</strong>) de la vidéo s’il est défini dans la gestion des ressources numériques ; si cette valeur n’est pas définie, le <strong>nom du fichier</strong> de la vidéo sera envoyé à sa place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Les variables mappées à cette propriété contiennent le nom du fichier. Envoyée une seule fois, au début de la lecture d’une vidéo.</td>
+   <td>Les variables mappées à cette propriété contiennent le nom du fichier. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyée une seule fois, au début de la lecture d’une vidéo.</td>
+   <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Vous pouvez définir une **convivial** en ouvrant la vidéo à modifier dans la gestion des ressources numériques et en définissant la variable **Titre** champ de métadonnées pour obtenir le nom souhaité. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
+>Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
 
 1. Mappez ces variables aux variables props 1 à 3.
 
-   Le **reste des informations pertinentes** dans l’appel sera envoyé concaténé dans **one** variable nommée **pev3**.
+   Le **reste des informations pertinentes** dans l’appel sera envoyé sous forme concaténée dans **une** variable nommée **pev3**.
 
-   **Exemples d’appels** Dans Adobe Analytics, l’exemple fourni doit ressembler à celui-ci lorsqu’il est affiché avec le DigitalPulse Debugger :
+   Les **exemples d’appel** vers Adobe Analytics à l’aide de l’exemple fourni doivent se présenter ainsi lorsqu’ils sont affichés avec DigitalPulse Debugger :
 
    ![lmilestones1](assets/lmilestones1.png)
 
    *La variable **pev3**envoyée dans l’appel contient les informations suivantes :*
 
-   * *Nom* - Nom du fichier vidéo (*film.avi*)
+   * *Nom* : nom du fichier vidéo (*film.avi*)
 
-   * *Longueur* - Durée du fichier vidéo, en secondes (*100*)
+   * *Durée* : durée du fichier vidéo, exprimée en secondes (*100*)
 
-   * *Nom du lecteur* - Le lecteur vidéo utilisé pour lire le fichier vidéo (*Vidéo HTML5*)
+   * *Nom du lecteur* : lecteur vidéo utilisé pour lire le fichier vidéo (*vidéo HTML5*)
 
-   * *Durée totale en secondes lues* : nombre total de secondes pendant lesquelles la vidéo a été lue (*25*)
+   * *Nombre total de secondes de lecture* : nombre total de secondes pendant lesquelles la vidéo a été lue (*25*)
 
-   * *Horodatage de début* - Horodatage qui identifie le moment auquel la lecture vidéo a commencé (*1331035567*)
+   * *Horodatage de début* : horodatage identifiant le début de la lecture de la vidéo (*1331035567*)
 
-   * *Lire la session* - Détails de la session de lecture. Ce champ indique comment l’utilisateur a interagi avec la vidéo. Cela peut inclure des données telles que l’endroit où la lecture de la vidéo a commencé, l’utilisation du curseur vidéo pour faire avancer la vidéo et l’endroit où la lecture de la vidéo a cessé (*L10E24S58L58 - La vidéo a été arrêtée à la seconde. 25 de la section L10, puis avance rapide jusqu’à la seconde 48*)
+   * *Session de lecture* : détails de la séance de lecture. Ce champ indique comment l’utilisateur a interagi avec la vidéo. Cela peut inclure des données comme l’emplacement où a commencé la lecture de la vidéo, si l’utilisateur a utilisé le curseur vidéo pour avancer dans la vidéo et l’emplacement où il a arrêté la lecture (*L10E24S58L58 - Vidéo interrompue à la seconde 25 de la section L10, puis avance rapide jusqu’à la seconde 48*)
 
 ## Secondes héritées {#legacy-seconds}
 
-Lors de l’utilisation de la méthode **secondes héritées**, les appels Adobe Analytics sont déclenchés toutes les N secondes, où N est spécifié dans le champ Décalage de suivi.
+Lors de l’utilisation de la méthode ** Secondes héritées **, les appels Adobe Analytics sont déclenchés chaque nième seconde, où « n » est spécifié dans le champ décalage de suivi.
 
-1. Définissez le décalage de suivi sur n’importe quel nombre de secondes,
+1. Définissez le décalage de suivi sur un nombre de secondes déterminé.
 
    * Par exemple, 6.
    >[!NOTE]
    >
    >Le champ Décalage de suivi accepte uniquement des entiers supérieurs à 0.
 
-   Les informations envoyées à Adobe Analytics sont moins personnalisables. Seules 3 variables sont disponibles pour le mappage :
+   Les informations envoyées à Adobe Analytics sont moins personnalisables. Seules 3 variables sont disponibles pour le mappage :
 
 <table>
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>Les variables mappées à cette propriété contiennent la variable <strong>convivial</strong> name (<strong>Titre</strong>) de la vidéo si elle est définie dans la gestion des ressources numériques ; si le champ Titre n’est pas défini, le paramètre <strong>nom du fichier</strong> sera envoyée à la place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
+   <td>Les variables mappées à cette propriété contiennent le nom <strong>convivial</strong> (<strong>Titre</strong>) de la vidéo s’il est défini dans la gestion des ressources numériques ; si cette valeur n’est pas définie, le <strong>nom du fichier</strong> de la vidéo sera envoyé à sa place. Envoyée une seule fois, au début de la lecture d’une vidéo.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>La variable mappée à cette propriété contient le nom du fichier. Envoyée une seule fois, au début de la lecture d’une vidéo.</td>
+   <td>La variable mappée à cette propriété contient le nom du fichier. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyée une seule fois, au début de la lecture d’une vidéo.</td>
+   <td>La variable mappée à cette propriété contient le chemin d’accès au fichier sur le serveur. Envoyé une seule fois, au début de la lecture d’une vidéo.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->Vous pouvez définir une **convivial** en ouvrant la vidéo à modifier dans la gestion des ressources numériques et en définissant la variable **Titre** champ de métadonnées pour obtenir le nom souhaité. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
+>Vous pouvez définir le nom **convivial** d’une vidéo en ouvrant la vidéo pour la modifier dans la gestion des ressources numériques et en définissant le champ de métadonnées **Titre** sur le nom de votre choix. Vous devez également enregistrer les modifications apportées une fois l’opération terminée.
 
 1. Mappez ces variables à prop1, prop2 et prop3.
 
    Le **reste des informations pertinentes** dans l’appel sera envoyé sous forme concaténée dans **une** variable nommée **pev3**.
 
-   Les appels vers Adobe Analytics à l’aide de l’exemple fourni doivent ressembler à ceci lorsqu’ils sont affichés avec le DigitalPulse Debugger :
+   Les appels à Adobe Analytics à l’aide de l’exemple fourni doivent se présenter comme suit lorsqu’ils sont affichés avec DigitalPulse Debugger :
 
    ![lseconds](assets/lseconds.png)
 
@@ -383,4 +383,4 @@ Lors de l’utilisation de la méthode **secondes héritées**, les appels Adobe
 
 **Références utilisées dans ce didacticiel :**
 
-[0] [https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
