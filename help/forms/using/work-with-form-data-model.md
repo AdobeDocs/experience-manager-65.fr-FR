@@ -10,10 +10,10 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '4128'
-ht-degree: 100%
+source-wordcount: '4165'
+ht-degree: 99%
 
 ---
 
@@ -50,6 +50,10 @@ Pour ajouter des objets et services de modèle de données :
    ![selected-objects](assets/selected-objects.png)
 
    Objets et services de modèle de données sélectionnés
+
+   >[!NOTE]
+   >
+   > Si votre modèle de données Forms contient un objet qui est un mot-clé réservé à votre base de données relationnelle, cela peut entraîner des problèmes d’ajout, de mise à jour ou de récupération de données. Ainsi, évitez d’utiliser de tels objets dans votre modèle de données de formulaire.
 
    L’onglet Modèle affiche une représentation graphique de tous les objets de modèle de données et de leurs propriétés ajoutées au modèle de données de formulaire. Chaque objet de modèle de données est représenté par une boîte dans le modèle de données de formulaire.
 
@@ -200,9 +204,9 @@ Utilisez l’attribut de requête pour récupérer les propriétés associées �
    >[!NOTE]
    >
    >* Si vous utilisez un modèle statique, superposez le fichier head.jsp à l’adresse suivante :
-   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    >* Si vous utilisez un modèle modifiable, superposez le fichier aftemplatedpage.jsp à l’adresse suivante :
-   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Définissez [!DNL paramMap] pour l’attribut de requête. Par exemple, incluez le code suivant dans le fichier .jsp du dossier des applications :
