@@ -8,10 +8,10 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
+source-git-commit: 55e9344c088a38bc4c9f916a13c310a029b3b2f4
 workflow-type: tm+mt
-source-wordcount: '3811'
-ht-degree: 97%
+source-wordcount: '3819'
+ht-degree: 95%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 97%
    + [Présentation de la création de formulaires adaptatifs](using/introduction-forms-authoring.md)
    + [Présentation des communications interactives](using/interactive-communications-overview.md)
    + [Présentation de la gestion des formulaires](using/introduction-managing-forms.md)
-   + [Présentation du service de conversion automatisée de formulaires](https://docs.adobe.com/content/help/fr/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+   + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
    + Tutoriel : créer votre premier formulaire adaptatif {#create-first-adaptive-form}
       + [Tutoriel : Création de votre premier formulaire adaptatif](using/create-your-first-adaptive-form.md)
       + [Didacticiel : création d’un formulaire adaptatif](using/create-adaptive-form.md)
@@ -57,12 +57,12 @@ ht-degree: 97%
    + [Topologies d’architecture et de déploiement pour AEM Forms](using/aem-forms-architecture-deployment.md)
    + [Choix d’un type de persistance pour l’installation d’AEM Forms](using/choosing-persistence-type-for-aem-forms.md)
    + Installer AEM Forms sur OSGi {#osgi-installation}
-      + [Plateformes prises en charge pour AEM Forms sur OSGi](https://docs.adobe.com/content/help/fr/experience-manager-65/deploying/introduction/technical-requirements.html)
+      + [Plateformes prises en charge pour AEM Forms sur OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/introduction/technical-requirements.html?lang=fr)
       + [Installer et configurer des services de document](using/install-configure-document-services.md)
       + [Installation et configuration des fonctionnalités de capture de données](using/installing-configuring-aem-forms-osgi.md)
       + [Installer et configurer un workflow basé sur l’utilisation de Forms sur OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installation et configuration des communications interactives](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [Installer et configurer le service de conversion automatique de formulaires](https://docs.adobe.com/content/help/fr/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [Installer et configurer le service de conversion automatique de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
    + Installer AEM Forms sur JEE {#jee-installation}
       + [Plateformes prises en charge pour AEM Forms sur JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installer et déployer AEM Forms sur JEE à l’aide de JBoss clé en main](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_fr)
@@ -578,8 +578,8 @@ ht-degree: 97%
    + [Requêtes ad hoc dans Process Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Dépannage de Process Reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Guides de référence pour les développeurs {#developer-reference}
-   + [Principes de développement de base](https://docs.adobe.com/content/help/fr/experience-manager-65/developing/home.html)
-   + [HTML Template Language](https://docs.adobe.com/content/help/fr-FR/experience-manager-htl/using/overview.html)
+   + [Principes de développement de base](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
+   + [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
    + [Module externe AEM permettant de déboguer les formulaires adaptatifs](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [Référence API Java pour AEM Forms](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/index.html)
    + [Référence d’API Java d’AEM Forms on JEE](https://helpx.adobe.com/fr//experience-manager/6-5/forms/programlc/javadoc/index.html)
@@ -685,6 +685,7 @@ ht-degree: 97%
    + [Impossible d’utiliser certaines fonctionnalités de formulaires avec certaines versions du JDK Oracle](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
    + [Étapes supplémentaires pour obtenir un courrier électronique avec pièce jointe pour la version d’Adaptive Forms on JEE](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
    + [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
+   + [Impossible d’ouvrir les PDF forms basés sur XFA dans Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
    + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)
