@@ -313,7 +313,7 @@ Exemple : `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transfert >URI de transfert | repo://var/replication/outbox |
    | Déclencheur > Ignorer la valeur par défaut | True |
 
-###  Recherche de l’identifiant Sling {#finding-the-sling-id}
+### Recherche de l’identifiant Sling {#finding-the-sling-id}
 
 Obtenez l’identifiant Sling d’une instance Experience Manager en utilisant l’une des méthodes suivantes :
 
