@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
+source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2835'
 ht-degree: 98%
 
 ---
@@ -23,16 +23,16 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 >[!IMPORTANT]
 >
->・ Le recadrage intelligent est disponible uniquement en mode Dynamic Media - Scene7.
+>• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 ・ Les profils d’image ne s’appliquent pas aux fichiers de PDF, de GIF animé ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
 Lorsque vous implémentez le recadrage intelligent sur les images, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite imposée | Modification de la limite le 31 décembre 2022 |
-| --- | --- | --- | --- |
-| Nombre de recadrages intelligents par image | 5 | 100 | 20 |
+| Type de limite | Bonne pratique | Limite imposée |
+| --- | --- | --- |
+| Nombre de recadrages intelligents par image | 5 | 100 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/limitations.md).
 
@@ -160,7 +160,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 ## Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Le recadrage intelligent est disponible uniquement en mode Dynamic Media - Scene7.
+・ Le recadrage intelligent est disponible uniquement en mode Dynamic Media - Scene7.
 
 Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage intelligent d’une image pour affiner davantage son point focal.
 
@@ -188,6 +188,9 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**, puis sélectionnez **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ Le recadrage intelligent est disponible uniquement en mode Dynamic Media - Scene7.
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
