@@ -12,7 +12,7 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ee45113daee495d9b56a0f6e2c463d9cca006540
+source-git-commit: dd8f24ce412a8ca6c44224a7602533dae0898e92
 workflow-type: tm+mt
 source-wordcount: '6230'
 ht-degree: 99%
@@ -520,7 +520,7 @@ Pour y accéder, sélectionnez **Outil - Opérations - Diagnostic** dans l’éc
 
 Il est également accessible directement à cette adresse : `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`.
 
-![screen-shot_2019-06-18at154754](assets/screen-shot_2019-06-18at154754.png)
+![index_manager](assets/index_manager.png)
 
 L’interface utilisateur peut être utilisée pour filtrer les index dans le tableau en entrant les critères de filtre dans la zone de recherche située dans le coin supérieur gauche de l’écran.
 
@@ -582,7 +582,7 @@ La tâche de maintenance a été conçue en vue de réduire les objets inutilis�
 
 Pour accéder à la tâche Nettoyage des binaires Lucene, sélectionnez **AEM > Outils > Opérations > Maintenance > Période de maintenance quotidienne > Nettoyage des binaires Lucene**.
 
-### Nettoyage de la mémoire du magasin de données {#data-store-garbage-collection}
+### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
 Pour plus d’informations sur ce sujet, consultez cette [page de la documentation](/help/sites-administering/data-store-garbage-collection.md).
 
@@ -885,7 +885,7 @@ Vous pouvez également télécharger un fichier `JSON` qui récapitule les infor
     <ul>
      <li>pages</li>
      <li>ressources</li>
-     <li>balises</li>
+     <li>tags</li>
      <li>éléments autorisables</li>
      <li>nombre total de nœuds<br /> </li>
     </ul> <p>Le nombre total de nœuds est dérivé de nodeCounterMBean ; les autres statistiques proviennent d’IndexInfoService.</p> </td>
