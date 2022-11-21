@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : créer un modèle de données de formulaire "'
+title: "Didacticiel\_: créer un modèle de données de formulaire "
 seo-title: Create Form Data Model Tutorial
 description: Création d’un modèle de données de formulaire
 seo-description: Create form data model
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 99%
+source-wordcount: '1518'
+ht-degree: 93%
 
 ---
 
@@ -57,6 +57,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
 1. Installez le pilote JDBC pour la base de données [!DNL MySQL] en tant que bundle OSGi :
 
+   1. Télécharger [[!DNL MySQL] Bundle OSGi du pilote JDBC](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
    1. Connectez-vous à l’instance d’auteur AEM [!DNL Forms] en tant qu’administrateur et accédez aux bundles de la console web d’AEM. L’URL par défaut est [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Cliquez sur **[!UICONTROL Installer/Mettre à jour]**. Une boîte de dialogue [!UICONTROL Télécharger/installer les bundles] s’affiche.
@@ -73,8 +74,18 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
       * **Nom de la propriété de service de source de données** : spécifiez le nom de la propriété de service contenant le nom de la source de données. Il est spécifié lors de l’enregistrement de l’instance de source de données en tant que service OSGi. Par exemple, **datasource.name**.
       * **Classe de pilote JDBC** : spécifiez le nom de la classe Java du pilote JDBC. Pour la base de données [!DNL MySQL], spécifiez **com.mysql.jdbc.Driver**.
       * **URI de connexion JDBC** : spécifiez l’URL de connexion de la base de données. Pour la base de données [!DNL MySQL] s’exécutant sur le port 3306 et le schéma weretail, l’URL est : `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`.
+
+      >[!NOTE]
+      >
+      > Lorsque la variable [!DNL MySQL] La base de données se trouve derrière un pare-feu, puis le nom d’hôte de la base de données n’est pas un DNS public. L’adresse IP de la base de données doit être ajoutée dans la variable */etc/hosts* fichier de l’ordinateur hôte AEM.
+
       * **Nom d’utilisateur :** nom d’utilisateur de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
+
+      >[!NOTE]
+      >
+      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à AEM console web à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez &quot;Apache Sling Connection Pooled Datasource&quot;. Pour &quot;JDBC connection URI&quot;, définissez la valeur de la propriété &quot;integratedSecurity&quot; sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter avec [!DNL MySQL] base de données.
+
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
       * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple : **select &#42; de customerdetails**.
@@ -85,6 +96,8 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
          Une configuration similaire à la suivante est créée.
 
          ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
+
+
 
 ## Étape 2 : Créer un modèle de données de formulaire {#create-fdm}
 
