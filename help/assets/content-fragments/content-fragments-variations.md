@@ -4,10 +4,10 @@ description: Découvrez comment les variations peuvent rendre votre contenu déc
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 99%
+source-wordcount: '2426'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Les [variations](/help/assets/content-fragments/content-fragments.md#constituent
 * [saisir le contenu](#authoring-your-content) de votre fragment ;
 * [créer et gérer les variations](#managing-variations) du contenu **maître** ;
 
-effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
+Exécutez diverses autres actions en fonction du type de données en édition ; par exemple :
 
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -40,24 +40,37 @@ effectuer diverses autres actions selon le type de données que vous modifiez, p
 
 ## Création de contenu {#authoring-your-content}
 
-Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** est ouvert par défaut. Vous pouvez y saisir le contenu, pour le maître ou toutes les variations de votre choix. Le fragment structuré contient différents champs, avec divers types de données, qui ont été définis dans le modèle de contenu.
+Lorsque vous ouvrez votre fragment de contenu pour le modifier, l’onglet **Variations** est ouvert par défaut. Vous pouvez y saisir le contenu, pour le maître ou toutes les variations de votre choix. Le fragment structuré contient divers champs, de différents types de données, qui ont été définis dans le modèle de contenu.
 
 Par exemple :
 
 ![éditeur plein écran](assets/cfm-variations-02.png)
+
 Vous pouvez :
 
-* effectuer des modifications directement dans l’onglet **Variations**.
+* Apportez des modifications à votre contenu directement dans le **Variations** onglet ; chaque type de données fournit différentes options de modification, par exemple :
 
-   * Chaque type de données propose différentes options de modification.
+   * Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
 
-* Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
+      * sélectionner le [format](#formats) ;
+      * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
+      * accéder à un éventail d’[actions](#actions).
+   * Pour les champs **Référence de fragment**, l’option [Modifier le fragment de contenu](#fragment-references-edit-content-fragment) peut être disponible, selon la définition du modèle.
 
-   * sélectionner le [format](#formats) ;
-   * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
-   * accéder à un éventail d’[actions](#actions).
 
-* Pour les champs **Référence de fragment**, l’option **[Modifier le fragment de contenu](#fragment-references-edit-content-fragment)** peut être disponible, selon la définition du modèle.
+* Attribuer **Balises** à la variation actuelle; les balises peuvent être ajoutées, mises à jour et supprimées.
+
+   * Les [balises](/help/sites-authoring/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
+
+      * Les recherches pour une balise renvoient le fragment, la variation balisée étant mise en surbrillance.
+      * Les balises de variation peuvent également être utilisées pour regrouper des variations pour un profil CDN (Content Delivery Network, réseau de diffusion de contenu) spécifique (pour la mise en cache CDN), au lieu d’utiliser le nom de la variation.
+
+      Par exemple, vous pouvez baliser les fragments pertinents en tant que &quot;lancement de Noël&quot; afin de ne les parcourir que sous forme de sous-ensemble ou de les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
+   >[!NOTE]
+   >
+   >**Balises** peut également être ajouté (au **Principal** dans le cadre de la [Métadonnées](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Création et gestion des variations](#managing-variations) de **Principal** contenu.
 
 ### Éditeur plein écran {#full-screen-editor}
 
@@ -223,7 +236,7 @@ L’anglais est disponible par défaut.
 D’autres langues sont disponibles en tant que modules de modèle de langues dans Package Share :
 * [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
@@ -367,7 +380,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/assets/content-
 1. Utilisez **Sélectionner** pour ajouter une référence au fragment de contenu sélectionné à votre fragment de contenu actuel (à l’emplacement actuel).
 
    >[!CAUTION]
-   Si, après avoir ajouté une référence à un autre fragment, vous modifiez le format en :
+   Si, après avoir ajouté une référence à un autre fragment, vous modifiez le format en :
    * **Texte brut** : la référence sera complètement effacée du fragment.
    * **Marquage** : la référence restera intégrée au fragment.
 
@@ -388,6 +401,9 @@ Pour créer une variation, procédez comme suit :
 
    >[!NOTE]
    Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
+
+   >[!NOTE]
+   Lorsque vous créez une variation, toutes les **Balises** actuellement affecté à la fonction **Principal** Les variations sont copiées dans la nouvelle variation.
 
 ### Modification d’une variation {#editing-a-variation}
 
@@ -435,7 +451,7 @@ Lors de la modification d’une variation, vous pouvez accéder à l’action de
 >[!CAUTION]
 La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 Seul l’élément actuel de la variation est synchronisé.
-La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
+La synchronisation ne fonctionne que sur le **Texte multi-lignes** type de données.
 Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -454,10 +470,10 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 
    ![Synchronisation avec le maître](assets/cfm-variations-11c.png)
 
-1. Sélectionnez **Synchroniser**. La variation est alors mise à jour et affichée.
+1. Sélectionner **Synchroniser**, la variation est mise à jour et affichée.

@@ -3,10 +3,10 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requ
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -348,6 +348,58 @@ Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Exemple de requête - Noms de toutes les villes Balisé en tant que sauts de ville {#sample-names-all-cities-tagged-city-breaks}
+
+Si vous :
+
+* créer une variété de balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
+* et les affecter à la variation de Principal de diverses `City` instances
+
+Vous pouvez ensuite utiliser une requête pour renvoyer les détails de la variable `name` et `tags`de toutes les entrées balisées comme des sauts de ville dans la variable `city`schéma.
+
+**Exemple de requête**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Exemples de résultats**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1477,6 +1529,62 @@ Cette requête interroge :
         markdown
         plaintext
         json
+      }
+    }
+  }
+}
+```
+
+### Exemple de requête pour plusieurs fragments de contenu et leurs variantes d’un modèle donné {#sample-wknd-multiple-fragment-variations-given-model}
+
+Cette requête interroge :
+
+* pour les fragments de contenu de type `article` et toutes les variations
+
+**Exemple de requête**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+Cette requête interroge :
+
+* pour les fragments de contenu de type `article` avec une ou plusieurs variations comportant la balise . `WKND : Activity / Hiking`
+
+**Exemple de requête**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
       }
     }
   }

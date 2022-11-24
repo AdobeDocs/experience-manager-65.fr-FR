@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: d31fef1fe7023dfa5129bb8d136550b43ef197d1
+source-git-commit: 3fff3ac4e09058a6c7f7bf4a99f85b3aab0ab1a9
 workflow-type: tm+mt
-source-wordcount: '3302'
-ht-degree: 39%
+source-wordcount: '3176'
+ht-degree: 36%
 
 ---
 
@@ -18,14 +18,14 @@ ht-degree: 39%
 
 | Produit | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Version | 6.5.14.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Version | 6.5.15.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Mise à jour du pack de services |
-| Date | 25 août 2022 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Date | 24 novembre 2022 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| URL de téléchargement | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## Éléments compris dans [!DNL Experience Manager] 6.5.14.0 {#what-is-included-in-aem-6514}
+## Éléments compris dans [!DNL Experience Manager] 6.5.15.0 {#what-is-included-in-aem-6515}
 
-[!DNL Experience Manager] 6.5.14.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients, des correctifs de bogues, ainsi que des améliorations des performances, de la stabilité et de la sécurité, publiées depuis la version initiale de 6.5 en avril 2019. [Installez ce pack de services](#install) dans [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.15.0 comprend de nouvelles fonctionnalités, des améliorations importantes demandées par les clients, des correctifs de bogues, ainsi que des améliorations des performances, de la stabilité et de la sécurité, publiées depuis la version initiale de 6.5 en avril 2019. [Installez ce pack de services](#install) dans [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -35,180 +35,154 @@ ht-degree: 39%
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets] {#assets-6514}
+## [!DNL Assets] {#assets-6515}
 
-* Impossible d’ajouter ou d’afficher des balises pour les fichiers de PDF. (NPR-38452)
-* Lorsque vous configurez les ressources connectées, enregistrez la configuration, rouvrez la page de configuration et testez la configuration déjà enregistrée, le test de la connexion échoue. (NPR-38507)
-* Impossible d’ajouter des utilisateurs avec un ID utilisateur numérique aux collections. (NPR-38538)
-* Experience Manager ne parvient pas à traiter le FFmpeg installé sur l’instance d’auteur. (NPR-38568)
-* Le traitement du PDF échoue avec un `NoClassDefFoundError` message d’erreur. (NPR-38741)
-* Le bouton Ajouter sous Colonnes personnalisées ne s’affiche pas correctement lors de la création d’un rapport de ressources pour `de_DE` locale. (ASSETS-10641)
-* Lorsque vous chargez une ressource en double dans le référentiel de gestion des ressources numériques et que Experience Manager détecte et fournit une option pour supprimer la ressource en double, la ressource d’origine est également supprimée du référentiel. (ASSETS-10826)
-* Experience Manager n’enregistre pas correctement les métadonnées du dossier lorsque vous spécifiez des caractères spéciaux dans plusieurs champs. (ASSETS-10721)
-* Impossible d’enregistrer les propriétés de la ressource tant que vous n’avez pas cliqué sur **[!UICONTROL Enregistrer et fermer]** deux fois. (ASSETS-12040)
-* Le lecteur d’écran n’affiche que la variable `Relate` bouton . Toutefois, la variable `Relate` contient également un sous-menu et peut être développé et réduit. (ASSETS-6938)
-* Attributs ARIA requis (applications Internet enrichies accessibles) `aria-expanded` pour `role="combo box"` est manquante. (ASSETS-6928)
-* En mode Carte, dans la zone de navigation du fichier principal, le contenu du texte **[!UICONTROL Tri par]** ne présente pas au moins un rapport de contraste de 4,5:1 par rapport à leur couleur d’arrière-plan. (ASSETS-6926)
-* Le Experience Manager n’identifie pas **[!UICONTROL Sélectionner un modèle de workflow]** liste déroulante en tant que champ obligatoire lors de la création d’un modèle de workflow. (ASSETS-6871)
+* Si le déplacement d’une ressource dans Experience Manager échoue, la ressource peut toujours être renommée. (NPR-38753)
+* Lors de l’affichage des ressources dans une [!UICONTROL Mode Liste], certains titres sont manquants. (CQ-4345746)
+* Le lecteur d’écran n’annonce pas le sous-menu de [!UICONTROL Relate] sur l’onglet De base de la page Propriétés de la ressource. (ASSETS-6938)
+* Le lecteur d’écran détecte incorrectement les icônes de dossier sur la page de navigation Ressources avec la liste des dossiers. (ASSETS-6936)
+* Lors de la copie d’une collection, une balise vide est manquante dans l’image. `alt` attribute or role=&quot;présentation&quot;. Par conséquent, l’image est exposée aux utilisateurs du lecteur d’écran. (ASSETS-6932)
+* Le texte affiché lors de l’annotation d’une ressource n’a pas de valeur 4:5:Rapport de contraste de 1 par rapport à la couleur d’arrière-plan. (ASSETS-6931)
+* Dans l’onglet IPTC de la page Propriétés de la ressource, lorsque vous ajustez la largeur de page, le contenu de la page ne s’adapte pas correctement et donne lieu à un défilement horizontal. (ASSETS-6929)
+* Lorsque vous filtrez des ressources, le texte de filtre dans la variable [!UICONTROL min] et [!UICONTROL max] disparaît après la saisie d’une valeur. (ASSETS-6925)
+* Dans les collections de Experience Manager, le lecteur d’écran n’annonce pas la valeur [!UICONTROL email] dans l’écran Télécharger . (ASSETS-6923)
+* Il manque un texte de remplacement lors de l’annotation des éléments. (ASSETS-6922)
+* Si le texte est écrit dans les champs Heures et Minutes dans le sélecteur de date, aucun message d’erreur de texte ne s’affiche. L’erreur n’est identifiée qu’à l’aide de la couleur rouge. (ASSETS-6852, ASSETS-6921, ASSETS-6920, ASSETS-6907)
+* Le texte de remplacement dans `[role='img']` dans le filtre Fichiers est manquant. (ASSETS-6919)
+* Annonce incorrecte du lecteur d’écran pour la variable [!UICONTROL Créer] sous-menu. (ASSETS-6916)
+* Dans les collections Experience Manager, bouton de suppression `X` ne comporte aucun texte à annoncer pour les lecteurs d’écran. (ASSETS-6912)
+* Lors de l’utilisation de l’analyseur de contraste des couleurs dans Experience Manager, il n’existe aucune différence de couleur entre la date actuelle et la date choisie dans le sélecteur de date du widget Calendrier. Il manque un rapport de contraste d’au moins 3:1 par rapport à ses couleurs adjacentes. (ASSETS-6911)
+* Dans les fichiers de Experience Manager, lors de la sélection de l’une des options de [!UICONTROL Planification] Bouton radio dans Gérer la publication, le nom et l’état des options du bouton radio sont annoncés par le lecteur d’écran. Toutefois, la variable **Planification** n’est pas annoncé. (ASSETS-6908, ASSETS-6906)
+* Le texte de remplacement est absent de l’icône Tri . (ASSETS-6904)
+* Sur la page Propriétés de l’élément, le nom du champ `Person` dans l’onglet Extension IPTC , les libellés ne sont pas annoncés par les lecteurs d’écran. Le lecteur d’écran annonce uniquement un champ modifiable et actuellement vide, mais pas le nom du libellé. (ASSETS-6903, ASSETS-6848)
+* L’outil d’annotation ne peut pas être affiché à l’aide du clavier. Une souris est utilisée pour dessiner une image afin d’afficher l’outil Annotation. (ASSETS-6899)
+* Dans les collections Experience Manager, un champ vide s’affiche sur la **Avancé** La tabulation affiche un rapport de contraste incorrect entre la bordure et la couleur adjacente. (ASSETS-6895)
+* Valeurs d’attribut ARIA incorrectes pour certains éléments lors de la modification des ressources. (ASSETS-6894)
+* Le lecteur d’écran n’identifie pas correctement l’en-tête lors de la création d’un workflow. (ASSETS-6892)
+* Lors de la copie d’une collection, le bouton de suppression de l’image du SVG `X` avec role=&quot;img&quot; est absent role=&quot;présentation&quot;. Par conséquent, l’image est exposée aux utilisateurs du lecteur d’écran. (ASSETS-6890)
+* Dans le **De base** dans les propriétés de la ressource, le lecteur d’écran n’annonce pas correctement l’état de développement ou de réduction du champ Balises. (ASSETS-6889)
+* Le **De base** sous Propriétés de ressource , l’onglet contient des pages avec un ID en double. (ASSETS-6888)
+* Le libellé du champ de texte pour définir un titre lors de la création d’un workflow disparaît lorsque vous spécifiez une valeur dans la zone de texte. (ASSETS-6887)
+* La liste des destinataires lors du partage d’un lien s’affiche sous la forme d’un tableau de données avec des en-têtes, mais elle n’est pas sémantiquement identifiée en tant que tableau de données pour les utilisateurs de lecteur d’écran. (ASSETS-6886)
+* Aucun message d’erreur ne s’affiche pour représenter un champ vide dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
+* Les textes d’espace réservé, le chemin et le texte de remplacement n’ont pas au moins un rapport de contraste de 4,5:1 par rapport à leur couleur d’arrière-plan. (ASSETS-6884, ASSETS-6865)
+* Valeurs non valides pour certains attributs ARIA lors de l’enregistrement d’une collection dynamique. (ASSETS-6882)
+* Lorsque vous enregistrez une collection dynamique, certaines étiquettes ne sont pas correctement associées au lecteur d’écran. (ASSETS-6881)
+* Dans l’onglet IPTC des propriétés des ressources, le lecteur d’écran n’annonce pas le libellé des champs de formulaire de mot-clé. (ASSETS-6879)
+* Dans les collections Experience Manager, la variable [!UICONTROL Email] n’est pas identifié comme champ obligatoire et aucun message d’erreur ne s’affiche si vous ne spécifiez aucune valeur. (ASSETS-6877)
+* Dans les fichiers Experience Manager, aucun message d’erreur n’apparaît dans **Partage de liens** s’affiche dans `Add Email Address`. L’erreur n’est identifiée que dans en utilisant une couleur. (ASSETS-6876, ASSETS-6875)
+* [!UICONTROL Recadrage et mappage] Les options ne comportent pas de noms de programme lors de la modification d’une ressource. (ASSETS-6874)
+* Le texte du filtre n’a pas de rapport du contrat 4.5:1 par rapport à la couleur d’arrière-plan. (ASSETS-6873)
+* Le texte du nom du dossier sur la page de navigation principale ne présente pas de rapport de contraste de 4,5:1 par rapport à la couleur d’arrière-plan. (ASSETS-6872)
+* Lors de l’exécution de la variable [!UICONTROL Copier] pour les collections, l’opération **[!UICONTROL Ajouter un utilisateur]** la commande de formulaire de zone de liste modifiable n’est pas correctement associée à son libellé visible. (ASSETS-6870)
+* Le lecteur d’écran n’annonce pas le [!UICONTROL Créer] options du sous-menu Bouton. (ASSETS-6869)
+* Les options Portée, Workflows et Fuseau horaire ne présentent pas de rapport de contraste de 4,5:1 par rapport à la couleur d’arrière-plan. (ASSETS-6868)
+* Le lecteur d’écran annonce incorrectement l’état de réduction de la variable **Chronologie** colonne . (ASSETS-6864)
+* Éléments enfants manquants pour certains rôles ARIA lors de l’enregistrement d’une collection dynamique. (ASSETS-6862)
+* Lors du partage d’une ressource, nécessitait des attributs ARIA pour `Search/Add Email Address` ne sont pas spécifiées. (ASSETS-6860)
+* Le **map** ne peut pas être affichée à l’aide du clavier. Pour afficher la boîte de dialogue de mappage, cliquez avec la souris. (ASSETS-6859)
+* Éléments enfants manquants pour certains des rôles ARIA dans l’onglet De base de la page des propriétés des ressources. (ASSETS-6858)
+* Les champs de saisie de texte vide, disponibles dans l’onglet IPTC des propriétés de la ressource, n’ont pas de rapport de contraste de 3:1 par rapport aux couleurs adjacentes. (ASSETS-6854, ASSETS-6847)
+* Les icônes de profil dans le **Chronologie** sont incorrectement détectées par les lecteurs d’écran. (ASSETS-6850)
+* Le lecteur d’écran n’indique pas que la zone combinée État de la révision, disponible dans l’onglet De base des propriétés de la ressource, est un champ en lecture seule. (ASSETS-6849)
+* Le lecteur d’écran n’affiche pas correctement le libellé des cases à cocher Tout sélectionner et Annotation . (ASSETS-6846)
+* La sélection au clavier ignore la variable `About Adobe Experience Manager` , disponible dans la variable **Afficher l’aide** . (ASSETS-6845)
+* Les lecteurs d’écran n’annoncent pas correctement les dossiers sélectionnés lors de la navigation dans la liste de dossiers à l’aide des touches fléchées du clavier en mode Carte. (ASSETS-6844)
+* Lors du chargement d’un PDF vers le Experience Manager, l’utilisation de la mémoire augmente constamment. (ASSETS-16889)
+* Lorsqu’un workflow convertit un fichier .ZIP en nom de dossier dans Assets, il ne conserve pas la casse du nom de fichier .ZIP. (ASSETS-16712)
+* Lors du passage de Brand Portal à Experience Manager 6.5, le filtre de prédicat utilisateur n’affiche pas les résultats appropriés lorsque vous appliquez le filtre pour la première fois. (ASSETS-15932)
+* Impossible d’annoter une vidéo. (ASSETS-15217)
+* **Gérer la publication** disparaît pour un utilisateur sans accès à réplication et `READ` et `WRITE` accès à `ETC` et `VAR`. (ASSETS-15007)
+* Le temps de chargement de la page de propriétés augmente pour une ressource avec plusieurs références. (ASSETS-14182)
+* Lorsqu’une image est dépubliée à partir de Brand Portal, Experience Manager la dépublie également à partir de Dynamic Media. Par conséquent, aucune image n’est affichée sur le site web en ligne. (ASSETS-14118)
+* Problèmes XSS sur les cartes avec recadrage intelligent dans Dynamic Media. (ASSETS-14212, ASSETS-14208, ASSETS-13704)
+* Problème XSS dans les paramètres prédéfinis de la visionneuse dans Dynamic Media. (ASSETS-13822)
+* Validez l’accès utilisateur lors de la prévisualisation de ressources DM sur AEM. (CQ-4314757)
+
+
+## Commerce {#commerce-6515}
+
+* La création d’une page de magasin a échoué, ce qui a interrompu le processus de déploiement global du catalogue. (CQ-4347181)
+
+## [!DNL Forms] {#forms-6515}
 
 >[!NOTE]
 >
->À compter du 1er septembre 2022, les nouveaux clients Experience Manager Assets On-Premise ne pourront plus utiliser les services de contenu dynamique. Aucun impact sur les clients On-Premise et Adobe Managed Services existants qui ont déjà activé cette fonctionnalité.
+>Correctifs de [!DNL Experience Manager] Forms est livré par le biais d’un module complémentaire distinct une semaine après la planification de la [!DNL Experience Manager] Date de publication du Service Pack. Dans ce cas, les modules complémentaires seront publiés le jeudi 1er décembre 2022. Une liste des correctifs et améliorations de Forms sera également ajoutée à cette section.
 
-### [!DNL Dynamic Media] {#dynamic-media-6514}
+## [!DNL Sites] {#sites-6515}
 
-* Ajout de la prise en charge de la réinitialisation du mot de passe pour l’utilisateur Dynamic Media Classic dans Experience Manager. (ASSETS-10298)
-* Les recadrages intelligents générés pour les images avec arrière-plan transparent ont un arrière-plan blanc. (ASSETS-13148)
-* Dynamic Media ne génère pas de miniatures pour les fichiers EPS. (ASSETS-10959)
-* Les ressources ne sont pas transférées vers le compte Dynamic Media en raison d’un paramètre de chargement manquant. (ASSETS-13165)
-* Permet de charger dans Dynamic Media des ressources dont le nom est supérieur à 127 caractères. (ASSETS-9991)
-* Activation de JavaScript ES6 (ECMAScript 6) pour les visionneuses Dynamic Media sur Experience Manager 6.5.14.0. (NPR-38393)
-* Configuration des options dans Dynamic Media **[!UICONTROL Paramètres généraux]** et **[!UICONTROL Configuration de la publication]** ne doivent pas être accessibles aux utilisateurs qui ne sont pas administrateurs. (ASSETS-8628)
-* Dynamic Media **[!UICONTROL Paramètres généraux]** n’affiche pas correctement les paramètres de chargement déjà configurés. (ASSETS-10245)
-* L’interface utilisateur du Experience Manager n’affiche aucun message d’échec en cas d’échec de la création/mise à jour de l’ensemble. (ASSETS-10264)
-* Impossible d’appliquer une stratégie enregistrée à l’un des conteneurs d’un modèle modifiable pour vous permettre d’ajouter des composants Dynamic Media. (ASSETS-11044)
-* Les ressources ne sont pas chargées dans le compte Dynamic Media après l’exécution du workflow Retraiter les ressources de Dynamic Media sur les ressources dont le traitement de tâche est incorrect. (ASSETS-12084, ASSETS-9877)
-* Les utilisateurs de lecteurs d’écran sont affectés par la variable `title` n’est pas fourni pour `<frame>` et `<iframe>` dans le **[!UICONTROL Type à rechercher]** de la boîte de dialogue (ASSETS-5483)
-* Dans les lecteurs d’écran, connexes et significatives `alt=` doit être fournie pour plusieurs images présentes sous **[!UICONTROL Ressources]** dans le volet de gauche. (ASSETS-5644)
-* Lecteur d’écran non lu **[!UICONTROL Mode muet]** et **[!UICONTROL Unmute]** sur la vidéo à l’aide du composant Dynamic Media. (ASSETS-10169)
+* La console Lancements Experience Manager Sites apparaissait vide. (NPR-39188)
+* Les références n’ont pas été ajustées lorsque la page qui contenait la référence devait également être activée lors du déplacement de la page. (NPR-39061)
+* Lorsqu’un conteneur de mises en page est démasqué à l’aide du conteneur parent, les modifications de mises en page ne sont pas appliquées à tous les composants du conteneur imbriqué. (NPR-39041)
+* Le contenu ne chevauche désormais plus d’autres contenus à une largeur de 320 pixels. (SITES-8885)
+* Ajout de la sélection après la fermeture d’une boîte de dialogue. (SITES-8885)
 
-## Commerce {#commerce-6514}
+### Accessibilité {#access-6515}
 
-* Les produits commerciaux ne sont pas triés à l’aide de l’en-tête de colonne et ils utilisent _remote_ le mode tri; à la place, les produits Commerce doivent être triés à l’aide d’en-têtes de colonne avec _local_ mode de tri. (CQ-4343750, NPR-38498)
+<!-- REMOVED FROM TOTAL RELEASE CANDIDATE LIST * The scrollable region of the Page Editor did not have keyboard access. (SITES-2936) -->
+<!-- REMOVED FROM TOTAL RELEASE CANDIDATE LIST * The color input field of the Page Editor is not labeled or visible on the screen. (SITES-2925) -->
+<!-- REMOVED FROM TOTAL RELEASE CANDIDATE LIST * The iframe in the Page Editor is missing a title attribute; it must have an accessible name. (SITES-2894) -->
+* Le **[!UICONTROL Annotation]** n’a pas son nom d’accessibilité. (SITES-2892)
+* État d’un composant d’interface utilisateur PRINCIPAL (**[!UICONTROL Couper]**, **[!UICONTROL Copier]**, **[!UICONTROL Coller]**, **[!UICONTROL Insertion de composants]**, **[!UICONTROL Groupe]**, etc.) n’a pas au moins un rapport de contraste de luminosité de trois à un avec l’arrière-plan adjacent intérieur ou extérieur. (SITES-8889, SITES-8756, SITES-8885)
+* Message d’état non annoncé automatiquement. (SITES-8889, SITES-8756, SITES-8885)
+* Le contenu textuel manque d’un rapport de contraste de 4,5:1. (SITES-8756, SITES-8885)
+* Le texte du lien ou du bouton n’a pas de rapport de contraste de 4,5:1 sur le survol ou la mise au point. (SITES-8756, SITES-8885)
 
+### [!DNL Content Fragments] {#sites-contentfragments-6515}
 
+* GraphQL soulève une exception. Par exemple, vous ne pouvez pas obtenir de balises de variation d’un fragment de contenu. Il n&#39;y a pas de variante avec le nom &quot;électrique&quot;. Ce problème est dû à l’appel de `getVariationTags` pour une variation non existante qui soulève une exception. (SITES-8898)
+* Tri des ordres de titre en mode Liste, croissant ou décroissant, de la manière dont les titres sont triés par ordre A, C, B. (SITES-7585)
+* Ajout de la prise en charge du balisage pour les variations de fragments de contenu. (SITES-8168)
+* Identifié et supprimé du code spécifique à Odin de Experience Manager 6.5 qui était inutile. (SITES-3574)
+* Lors de la publication d’un fragment de copie de langue à partir de l’interface utilisateur de l’éditeur de fragments de contenu, les références associées étaient publiées sous le dossier Anglais. (NPR-39182)
+* Les champs de date sont préremplis avec une date. (NPR-39124)
+* Les balises ont disparu la deuxième fois que vous avez sélectionné l’option de bouton radio. (NPR-39071)
 
-## [!DNL Forms] {#forms-6514}
+### Fluid XP {#sites-fluidxp-6515}
 
-<!--
+* Activation de la prise en charge de la compilation ES6 pour la bibliothèque cliente `/libs/cq/gui/components/siteadmin/admin/restoretree/clientlibs/restoretree.js`. (NPR-39067)
+* Le champ multiple d’un modèle de fragment de contenu ne peut pas être vidé et enregistré, car la validation a lieu même si **[!UICONTROL Obligatoire]** n’est pas sélectionnée. (NPR-39063)
+* Dans **[!UICONTROL Copier]** ou **[!UICONTROL Livecopy]** les tâches, `cq:targetMetadata` Les informations étaient incorrectement dupliquées. Cette fonctionnalité entraînait l’pointage de plusieurs fragments d’expérience en Experience Manager vers la même offre exportée dans la cible. (NPR-38970)
+* Suite à une action Restaurer l’arborescence, le message `Un-publication pending. #0 in the queue` s’affiche dans l’interface utilisateur d’une page qui n’a jamais été publiée. (NPR-38847)
 
->[!NOTE]
->
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
+### Éditeur de page {#sites-pageeditor-6515}
 
->[!NOTE]
->
->* [!DNL Experience Manager Forms] releases the add-on packages one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages will release Thursday, September 1, 2022. In addition, a list of Forms fixes and enhancements will also be added to this section.
+* Annuler n’a pas supprimé la dernière modification apportée au texte qui a été ajoutée au composant. Au lieu de cela, lorsque la page a été actualisée, le composant entier a été supprimé. (SITES-8597)
+* Mise à niveau `jquery-ui` dans la dernière version, l’éditeur de page ne fonctionnait pas correctement. (NPR-38596)
+* Le contenu ne chevauche désormais plus d’autres contenus à une largeur de 320 pixels. (SITES-8756)
+* ajout de focus après la fermeture de la boîte de dialogue (SITES-8756)
 
--->
+## Sling {#sling-6515}
 
-* Lorsqu’un fichier est joint à un formulaire adaptatif à plusieurs panneaux et qu’un brouillon du formulaire adaptatif est enregistré, une erreur se produit. (NPR-38978)
-* Lorsqu’un utilisateur convertit un profil de RGB en profil CMJN à l’aide de l’API Java™ createPDF2 avec les paramètres AdobePDF, l’option ne fonctionne pas avec l’API Java™. Cette option fonctionne correctement avec l’application DistillerClient autonome. (NPR-38858, CQ-4346181)
-* Après l’installation d’AEM Service Pack 12 Forms 6.5 (6.5.12.0), toutes les options, à l’exception de la fermeture de la tâche, ne sont plus disponibles à l’étape Affecter une tâche d’AEM Workflows. (NPR-38743)
-* Dans un document d’enregistrement, certaines valeurs d’un tableau sont tronquées. (NPR-38657)
-* Lors de la prévisualisation d’un jeu de formulaires avec des données XML, lorsque le fichier XDP contient un champ flottant, lors de la prévisualisation d’un jeu de formulaires, aucune donnée n’est affichée, mais les données sont affichées lorsque l’option Preview PDF est utilisée.
-* Dans les Forms adaptatives, les boutons radio et les cases à cocher ne sont pas dans l’ordre de tabulation. (NPR-38645)
-* Lorsque vous utilisez la variable `Summary Step` pour générer un document d’enregistrement (DE) pour un formulaire adaptatif traduit après envoi, n’est pas traduit dans la langue localisée. (NPR-38567)
-* L’option désactiver la reprise dans les étapes AEM workflow ne fonctionne pas comme prévu. Le problème apparaît par intermittence. (NPR-38547)
-* Lorsque le formulaire adaptatif est envoyé avec le champ de texte enrichi, la variable `an Internal Error while Submitting a Form` s’affiche. Lorsque l’utilisateur met l’accent sur le champ de texte enrichi, l’erreur ne se produit pas avant l’envoi du formulaire. (NPR-38542)
-* Une erreur `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` est consignée. (NPR-38541)
-* Lorsqu’un utilisateur charge un PDF dans un formulaire adaptatif, le serveur AEM Forms ne répond plus. (NPR-38398)
-* Sur un serveur AEM Forms on OSGi, lorsque vous utilisez l’API Document Service pour certifier le PDF, il échoue avec une erreur : com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException : AEM-DSS-311. (CQ-4346252)
-* Lors de l’envoi des brouillons de lettres, la variable `Could not upload asset from xml input` s’affiche. Cela n’a aucun impact sur les fonctionnalités. Une fois un brouillon ouvert, la lettre s’affiche correctement. (CQ-4345979, CQ-4344418)
-* Lorsqu’une date est saisie au format allemand et que la variable `Preview with Data` est utilisée pour une lettre, le champ Date n’est pas rendu. (CQ-4345783)
-* Lorsque vous créez un portail web et générez des codes à barres basés sur des données, certains codes à barres ne sont pas décodés correctement. (CQ-4345743)
-* La conversion Postscript vers le PDF ne génère pas de document de sortie avec les couleurs attendues. (CQ-4345074)
-* Le résolveur de ressources entraîne des échecs d’envoi intermittents et entraîne l’affichage multiple d’une même trace de pile pour un seul envoi. (CQ-4344764)
-* Les utilisateurs ne peuvent pas ouvrir les brouillons de lettres modifiés qui utilisent le `cmDataUrl` . Le brouillon s’ouvre au noir pour la première fois. Les problèmes commencent à s’afficher lors des tentatives suivantes. (CQ-4344418)
-* Lorsque l’utilisateur saisit la variable `&` dans une communication interactive (IC), le brouillon de la communication interactive ne parvient pas à se charger complètement. (CQ-4343969)
-* Lorsque vous utilisez des options de style dans AEM Forms Designer pour générer des fichiers PCL, le style spécifié n’est pas appliqué aux fichiers générés. (CQ-4339573)
-* Lorsque le nombre de pages est supérieur à 15, la conversion automatisée des formulaires XDP dynamiques en formulaires adaptatifs échoue. Cela fonctionne correctement lorsque le nombre de pages est inférieur à 15. (NPR-35337)
-* Lorsque l’option Ajouter aux favoris est utilisée, elle n’indique pas l’état du basculement vers le lecteur d’écran. (NPR-37137)
-* Dans le modèle de données de formulaire, les valeurs après la valeur décimale dans le modèle de données de formulaire soutenu par la base de données sont tronquées pour le type de données &quot;argent faible&quot; et &quot;argent faible&quot;. (CQDOC-19509)
-* Lorsque vous sélectionnez un lien de navigation pour le workflow dans HTML Workspace, il n’est pas indiqué que le lien de navigation est sélectionné. (NPR-37138)
-* La fonction Signature tactile n’est pas compatible avec les consignes d’accessibilité. (NPR-37596)
-* AEM Forms utilise log4j 1.x. La prise en charge de log4j 1.x a atteint sa fin de vie. (NPR-38273)
-* Lorsque vous utilisez la base de données MSSQL comme source de données dans un modèle de données de formulaire et que vous récupérez des valeurs, les nombres après la décimale dans les valeurs récupérées sont tronqués. (CQ-4346190)
-* Dans Forms 6.5 Designer, lorsque vous ouvrez un formulaire créé avec Forms 6.1 Designer et modifiez une zone de texte, l’espacement des paragraphes dépasse l’espace spécifié. Tous les paramètres précédents de l’espace sont supprimés et un reformatage manuel de la zone de texte est requis. (CQ-4341899)
-* Une valeur incorrecte s’affiche pour le code-barres SSCC-18. Les serveurs Forms omettent la valeur dans la partie droite du code-barres. (CQ-4342400)
-* Pour les PDF de formulaires statiques créés avec Forms 6.5 Designer, l’accessibilité du PDF échoue en cas d’erreur `Tab order entry in page with annotations not set to "S"`. (CQ-4343117)
-* Possibilité de spécifier du texte de Reader d’écran pour les hyperliens dans Forms Designer. (NPR-36221)
-* Lorsque vous ajoutez un panneau répétable à un formulaire adaptatif non XFA et que le nombre de panneaux répétables dans un formulaire non XFA est supérieur à 15, l’ajout d’une instance peut prendre entre 7 et 8 secondes. (NPR-37346)
+* `Repoinit` ne prenait pas en charge la création ou la gestion de groupes dont le nom principal contenait un espace, car le nom du groupe était traité comme une chaîne et ne prenait pas en charge les citations. (SLING-10952)
+* Les journaux sont remplis par inadvertance par des messages d’erreur et des exceptions. (NPR-39024)
 
-## Intégrations {#integrations-6514}
+## Projets de traduction {#translation-6515}
 
-* Activez la prise en charge de la compilation JavaScript ES6 (mode ECMAScript6 ou version ultérieure) pour la minimisation de la variable `/libs/cq/analytics/widgets.js` bibliothèque . (NPR-38433)
-* Activez la prise en charge de la compilation JavaScript ES6 (mode ESMAScript6 ou version ultérieure) pour la minimisation de la variable `/libs/cq/testandtarget/clientlibs/testandtarget/util.js` bibliothèque . (NPR-38435)
-* Plus il y a de contenu dans `/content/campaigns`, plus l’appel à la fonction `targeteditor.html` (`/libs/cq/personalization/touch-ui/content/targeteditor.html`) prend lorsque vous ouvrez l’éditeur de page. (NPR-38663)
+* La page de destination était ajoutée à la tâche de traduction pour les copies de langue mises à jour via le panneau Projets ; La page source n’a pas été mise à jour. (NPR-39278)
+* Le processus de traduction échouait lors de la génération d’un aperçu pour toutes les pages d’un projet de traduction. (NPR-39059)
+* Si aucun paramètre régional de langue n’existe, il est toujours créé dans un dossier de paramètres régionaux lorsque des règles de référence sont configurées pour un événement. (NPR-39054)
 
-## Plateforme {#platform-6514}
+## Interface utilisateur {#ui-6515}
 
-* Impossible de se connecter au gestionnaire de modules pour déployer les mises à jour. (NPR-38646)
-* Dans l’interface utilisateur du sélecteur de balises de ressources, les balises s’affichent dans l’ordre dans lequel elles ont été créées. Cependant, lorsqu’il y a de nombreuses balises, l’affichage et la gestion des balises sont difficiles, car elles ne peuvent pas être triées. (CQ-4344279)
-* Créez une notification dans l’interface utilisateur lorsqu’un utilisateur est emprunté à l’identité d’un administrateur ou d’une autre personne utilisant la variable **[!UICONTROL Se faire passer pour]** champ . (CQ-4345288)
-* Dans une collection dynamique, toutes les ressources étaient affichées lors du filtrage à l’aide d’une recherche enregistrée. (CQ-4345326)
-* Un nombre de ressources sélectionné incorrect est affiché pour **[!UICONTROL Ajouter à la collection]** when **[!UICONTROL Tout sélectionner]** est sélectionnée. (CQ-4345424)
-* Un message d’exception s’est produit lors de l’utilisation de la variable **[!UICONTROL Se faire passer pour]** avec un groupe ou un utilisateur inexistant. (CQ-4346098)
+* Des erreurs JavaScript se produisent dans le fichier `multifield.js` pour certains champs du modèle de fragment de contenu dans l’éditeur de modèles de fragment de contenu et également dans l’éditeur de fragments de contenu. (NPR-39350)
 
-## [!DNL Sites] {#sites-6514}
+## Workflow {#workflow-6515}
 
-* Des suppressions de chemin inattendues se sont produites lors de la mise à niveau de Experience Manager de 6.5.12.0 vers 6.5.13.0. (NPR-38532)
+* Les workflows qui s’exécutaient correctement sur Experience Manager 6.5.11 ne s’exécutaient pas de manière cohérente sur la version 6.5.13 de Experience Manager. (NPR-39023)
 
-### Accessibilité {#access-6514}
-
-* Dans Experience Manager Sites, lorsque vous développez l’objet **[!UICONTROL Changer le format d’affichage et ajuster le paramètre d’affichage]** , puis sélectionnez **[!UICONTROL Mode Liste]**, la variable **[!UICONTROL Glisser-déposer]** n’a pas de nom accessible. (SITES-2863, NPR-38760)
-* Le lecteur d’écran doit annoncer le nom accessible, tel que `Show description for Archive` ou `Show description for mini shopping cart`. Cependant, le nom accessible actuel est annoncé comme `Info Circle button show description` pour _all_ les boutons d’informations sur l’info-bulle. (SITES-3104)
-* Amélioration de la fonctionnalité d’annulation pour les composants qui n’ont pas de fonctionnalité inlineEditing ou dropTarget dans `cq:editConfig`. (NPR-38361) <!-- version 2 (old) of the description above * When out of the box components that don't have inlineEditing or dropTarget feature in the _cq_editConfig file (navigation, breadcrumb, embed) are deleted > undeleted (by way of Undo), all configurations are lost and empty placeholder reappears. Component must be reconfigured from scratch. (NPR-38361) -->
-* La liste déroulante Système de style peut avoir été positionnée en haut de la page au lieu de dans le contexte du composant, pour les composants qui utilisent `cq:editConfig` &quot;afteredit: REFRESH_PAGE&quot;. (NPR-38384) <!-- version 2 (old) of description above* When selecting a style option on a component, the Styles box shifts to the upper left corner of the screen, rather than staying put below the style icon. Happens for components that have  cq:editConfig "afteredit: REFRESH_PAGE". (NPR-38384) -->
-* Le composant Texte n’est pas aligné lorsqu’il est ajouté aux conteneurs de mise en page imbriqués. (NPR-38193)
-* Un onglet de style vide s’affichait lorsqu’il n’y avait aucune configuration de système de style pour un composant. L’onglet est maintenant masqué lorsqu’aucune configuration n’est présente. (NPR-38218) <!-- version 2 (old) of description above * Style tab is blank on components without styles/policies. (NPR-38218) -->
-* La propriété `useLegacyResponsiveBehaviour` fonctionne uniquement une fois identifié. (NPR-37996)
-
-### [!DNL Content Fragments] {#sites-contentfragments-6514}
-
-* La validation du champ de l’énumération Fragments de contenu est problématique la première fois que le fragment de contenu est chargé. (SITES-7140)
-* Vous devez ajouter des champs de personnalisation Campaign dans l’éditeur de texte enrichi de l’éditeur Fragments de contenu. (NPR-38526)
-* Lors de la création ou de la modification d’un fragment de contenu dans l’éditeur de fragment de contenu, le modèle de fragment de contenu n’est pas enregistré au moyen de Dispatcher. De plus, l’éditeur de fragments de contenu n’est pas fermé et une erreur s’affiche dans le journal du navigateur. (NPR-38691)
-* Erreur de validation de requête persistante. (NPR-38523)
-* Dans la boîte de dialogue Fragment de contenu, sous **[!UICONTROL Propriétés]**, la variable **[!UICONTROL Fragment de contenu]** ne conserve pas le chemin enregistré dans la fenêtre contextuelle de sélection. (NPR-38632)
-* Lorsque vous créez un modèle de fragment de contenu et ajoutez un champ d’énumération du type de liste déroulante, la validation correcte de _`is required`_échoue. (NPR-38237)
-
-### Composants principaux {#sites-corecomponents-6514}
-
-* Le nouveau composant Courrier électronique de page ne doit pas vous forcer à accéder à l’interface utilisateur classique lors de la modification `/etc`. (NPR-38648)
-
-### Éditeur de page {#sites-pageeditor-6514}
-
-* L’utilisateur ne peut pas redimensionner le composant au nombre de colonnes souhaité. (NPR-38688)
-
-### Éditeur de modèles {#sites-templateeditor-6514}
-
-* Absente **[!UICONTROL Supprimer]** et **[!UICONTROL Couper]** des boutons de la barre de menus dans un modèle modifiable après un événement `cq:actions` a été personnalisée. (NPR-38521)
-* Si un composant comprend un autre composant, il n’est pas possible de le supprimer dans la structure du modèle, car la variable **[!UICONTROL Supprimer]** est absent de la barre de menus. (NPR-38585)
-
-## Sling {#sling-6514}
-
-* Une augmentation du nombre de fichiers ouverts en production a été enregistrée en raison d’une fuite de mémoire dans le module . `DiscoveryLiteDescriptor` in `org.apache.sling.discovery.commons`, version 1.0.20. (NPR-38288)
-* En Experience Manager, à partir de **[!UICONTROL Opérations]** > **[!UICONTROL Diagnostic]**, une erreur se produit lorsque vous sélectionnez **[!UICONTROL ZIP du statut de téléchargement]** > **[!UICONTROL Télécharger]**. (NPR-38514)
-
-## Projets de traduction {#translation-6514}
-
-* Le lancement des sous-pages ajoutées comme référence dans une page parente n’était pas converti lorsque la variable `isDeep` a été définie sur `false`. (NPR-38531)
-
-## Interface utilisateur {#ui-6514}
-
-* Lors de l’utilisation de **[!UICONTROL Tout sélectionner]** > **[!UICONTROL Publication rapide]**, Experience Manager ne publiait pas toutes les ressources ou n’affichait pas le nombre de ressources publiées dans **[!UICONTROL Carte]** afficher ou **[!UICONTROL Liste]** vue. (NPR-38546)
-* Le nombre de ressources sélectionnées incorrectes s’affiche pour **[!UICONTROL Ajouter à la collection]** in **[!UICONTROL Tout sélectionner]** cas. (NPR-38633)
-* Les utilisateurs désactivés peuvent toujours être ajoutés aux collections et aux projets. (NPR-38651)
-* La suppression d’un filtre sans enregistrer le formulaire de recherche crée une erreur. (NPR-38698)
-* La session d’un utilisateur ne peut pas obtenir un `ModifiableValueMap` pour les groupes afin d’établir l’appartenance directe au groupe. (NPR-38710)
-
-## Workflow {#workflow-6514}
-
-* Activez la prise en charge de la compilation JavaScript ES6 (mode ESMAScript6 ou version ultérieure) pour la minimisation de la variable `/libs/cq/inbox/gui/components/inbox/clientlibs/commons.js` bibliothèque . (NPR-38304)
-* Une fois le workflow exécuté et les étapes du processus terminées, le même commentaire est répété plusieurs fois. (NPR-38364)
-
-## Installation d’[!DNL Experience Manager] 6.5.14.0 {#install}
+## Installation d’[!DNL Experience Manager] 6.5.15.0 {#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.14.0 nécessite [!DNL Experience Manager] 6.5. Voir [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour obtenir des instructions détaillées. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.15.0 nécessite [!DNL Experience Manager] 6.5. Voir [documentation de mise à niveau](/help/sites-deploying/upgrade.md) pour obtenir des instructions détaillées. <!-- UPDATE FOR EACH NEW RELEASE -->
 * Le téléchargement du pack de services est disponible dans la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) d’Adobe.
-* Lors d’un déploiement avec MongoDB et plusieurs instances, installez [!DNL Experience Manager] 6.5.14.0 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.<!-- UPDATE FOR EACH NEW RELEASE -->
+* Lors d’un déploiement avec MongoDB et plusieurs instances, installez [!DNL Experience Manager] 6.5.15.0 sur l’une des instances d’auteur à l’aide du gestionnaire de modules.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
->Adobe ne recommande pas de supprimer ou de désinstaller le [!DNL Experience Manager] Package 6.5.14.0. Par conséquent, avant d’installer le Service Pack, vous devez créer une sauvegarde de la variable `crx-repository` au cas où vous auriez besoin de la restaurer. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Adobe ne recommande pas de supprimer ou de désinstaller le [!DNL Experience Manager] Package 6.5.15.0. Par conséquent, avant d’installer le module, vous devez créer une sauvegarde de la variable `crx-repository` au cas où vous auriez besoin de la restaurer. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ### Installation du pack de services sur [!DNL Experience Manager] 6.5 {#install-service-pack}
 
@@ -216,7 +190,7 @@ ht-degree: 39%
 
 1. Avant l’installation, prenez un instantané ou exécutez une sauvegarde récente de votre instance [!DNL Experience Manager].
 
-1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.14.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. Téléchargez le pack de services à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Ouvrez Package Manager, puis sélectionnez **[!UICONTROL Télécharger le module]** pour télécharger le module. Pour en savoir plus, consultez la section [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
@@ -230,24 +204,24 @@ ht-degree: 39%
 
 **Installation automatique**
 
-Vous pouvez utiliser deux méthodes différentes pour installer automatiquement [!DNL Experience Manager] 6.5.14.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+Vous pouvez utiliser deux méthodes différentes pour installer automatiquement [!DNL Experience Manager] 6.5.15.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Placez le module dans le dossier `../crx-quickstart/install` lorsque le serveur est disponible en ligne. Le module est automatiquement installé.
 * Utilisez l’[API HTTP à partir du gestionnaire de modules](/help/sites-administering/package-manager.md#package-share). Utilisez `cmd=install&recursive=true` afin que les modules imbriqués soient installés.
 
 >[!NOTE]
 >
->Experience Manager 6.5.14.0 ne prend pas en charge l’installation de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.15.0 ne prend pas en charge l’installation de Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **Validation de l’installation**
 
 Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (6.5.14.0)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (6.5.15.0)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Tous les lots OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
-1. Le lot OSGi `org.apache.jackrabbit.oak-core` est version 1.22.12 ou ultérieure (Utiliser la console web : `/system/console/bundles`). <!-- NPR-38747 -->
+1. Le lot OSGi `org.apache.jackrabbit.oak-core` est version 1.22.13 ou ultérieure (Utiliser la console web : `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
 ### Installez le module complémentaire [!DNL Experience Manager] Forms. {#install-aem-forms-add-on-package}
 
@@ -256,9 +230,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 >Passez cette étape si vous n’utilisez pas [!DNL Experience Manager] Forms.
 
 <!-- 
-
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
-
 -->
 
 1. Vérifiez que vous avez installé le pack de services [!DNL Experience Manager].
@@ -280,11 +252,7 @@ Pour obtenir plus d’informations sur l’installation du programme d’install
 
 ### UberJar {#uber-jar}
 
-UberJar pour [!DNL Experience Manager] 6.5.13.0 est disponible dans la [Référentiel Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.13/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
-
->[!NOTE]
->
->Dans Experience Manager 6.5.14.0, la version d’UberJar (6.5.13.0) reste identique à la version précédente.
+UberJar pour [!DNL Experience Manager] 6.5.15.0 est disponible dans la [Référentiel Maven Central](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Pour utiliser UberJar dans un projet Maven, voir [utilisation d’UberJar](/help/sites-developing/ht-projects-maven.md) et incluez la dépendance suivante dans le POM de votre projet : <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -292,7 +260,7 @@ Pour utiliser UberJar dans un projet Maven, voir [utilisation d’UberJar](/help
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.13</version>
+     <version>6.5.15</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -314,7 +282,7 @@ Vérifiez si vous utilisez une de ces fonctionnalités dans un déploiement. Env
 
 ## Problèmes connus {#known-issues}
 
-<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THE LIST.
+<!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
 * [AEM du fragment de contenu avec le package d’index GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
@@ -352,10 +320,10 @@ Pour garantir le bon fonctionnement, vous devez ajouter les propriétés suivant
 
 ## Lots OSGi et modules de contenu inclus {#osgi-bundles-and-content-packages-included}
 
-Les documents texte suivants répertorient les lots OSGi et les packages de contenu inclus dans [!DNL Experience Manager] 6.5.14.0 : <!-- UPDATE FOR EACH NEW RELEASE -->
+Les documents texte suivants répertorient les lots OSGi et les packages de contenu inclus dans [!DNL Experience Manager] 6.5.15.0 : <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Liste des lots OSGi inclus dans Experience Manager 6.5.14.0](/help/release-notes/assets/65140_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Liste des modules de contenu inclus dans Experience Manager 6.5.14.0](/help/release-notes/assets/65140_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Liste des lots OSGi inclus dans Experience Manager 6.5.15.0](/help/release-notes/assets/65150_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Liste des modules de contenu inclus dans Experience Manager 6.5.15.0](/help/release-notes/assets/65150_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Sites web à accès limité {#restricted-sites}
 

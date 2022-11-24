@@ -1,20 +1,20 @@
 ---
-title: API AEM GraphQL à utiliser avec des fragments de contenu
-description: Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) avec l’API GraphQL AEM pour la diffusion de contenu sans interface utilisateur.
+title: API AEM GraphQL pour l’utilisation des fragments de contenu
+description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '3986'
-ht-degree: 96%
+source-wordcount: '4089'
+ht-degree: 97%
 
 ---
 
-# API AEM GraphQL à utiliser avec des fragments de contenu {#graphql-api-for-use-with-content-fragments}
+# API AEM GraphQL pour l’utilisation des fragments de contenu {#graphql-api-for-use-with-content-fragments}
 
-Découvrez comment utiliser des fragments de contenu dans Adobe Experience Manager (AEM) avec l’API GraphQL AEM pour la diffusion de contenu sans interface utilisateur.
+Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 
-L’API GraphQL d’AEM utilisée avec des fragments de contenu repose principalement sur l’API open source standard GraphQL.
+L’API GraphQL AEM utilisée avec des fragments de contenu repose principalement sur l’API open source standard GraphQL.
 
 L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de fragments de contenu aux clients JavaScript dans les implémentations CMS découplées :
 
@@ -24,7 +24,7 @@ L’utilisation de l’API GraphQL dans AEM permet la diffusion efficace de frag
 
 >[!NOTE]
 >
->GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) :
+>GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) :
 >
 >* [AEM Commerce utilise les données d’une plateforme commerciale par le biais de GraphQL](/help/commerce/cif/integrating/magento.md).
 >* Les fragments de contenu d’AEM fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu structuré à utiliser dans vos applications.
@@ -215,11 +215,11 @@ L’interface utilisateur de GraphiQL peut être installée sur AEM avec un pack
 
 >[!NOTE]
 >
->Le package disponible est entièrement compatible avec AEM 6.5.10.0 et AEM as a Cloud Service.
+>Le module disponible est entièrement compatible avec AEM version 6.5.10.0 et AEM as a Cloud Service.
 
 ## Cas d’utilisation pour les environnements de création et de publication {#use-cases-author-publish-environments}
 
-Les cas d’utilisation peuvent dépendre du type d’environnement AEM :
+Les cas d’utilisation peuvent dépendre du type d’environnement AEM :
 
 * Environnement de publication, utilisé pour :
    * Réaliser des requête de données pour l’application JS (cas d’utilisation standard)
@@ -435,7 +435,7 @@ Voir [Modèle de requête – Toutes les villes avec une variante nommée](/help
 
 >[!NOTE]
 >
->Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur par défaut (de secours).
+>Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -543,6 +543,11 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
    * Voir [Exemple de requête – Toutes les informations sur toutes les villes](#sample-all-information-all-cities)
 
+* Le filtre `includeVariations` est inclus dans la variable `List` type de requête.  Pour récupérer les variations du fragment de contenu dans les résultats de la requête, le `includeVariations` doit être défini sur `true`.
+
+   >[!CAUTION]
+   >Le filtre `includeVariations` ne peut pas être utilisé avec le champ généré par le système `_variation`.
+
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
    * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
@@ -570,9 +575,20 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
          >[!NOTE]
          >
-         >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur par défaut (de secours).
+         >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
+
+         >[!CAUTION]
+         >Le champ généré par le système `_variation` ne peut pas être utilisé avec le filtre `includeVariations`.
 
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+      * `_tags` : pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau de `cq:tags` identifiants.
+
+         * Voir [Exemple de requête : noms de toutes les villes balisées en tant que coupures municipales](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Voir [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+
+         >[!NOTE]
+         >
+         >Vous pouvez également interroger les balises en répertoriant les métadonnées d’un fragment de contenu.
    * Et les opérations :
 
       * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -582,6 +598,8 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
          * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
+
+
 
 
 
