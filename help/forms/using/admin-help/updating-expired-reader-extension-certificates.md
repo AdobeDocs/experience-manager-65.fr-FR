@@ -2,9 +2,9 @@
 title: Expiration des certificats des extensions de Reader et son impact
 description: Expiration des certificats des extensions de Reader et son impact
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bbc8fdf2eb7dd35600e2e2a87550e9de557f0eb0
+source-git-commit: f35a35577f06686558bb1277b0d9bb17f6f0b7bf
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1114'
 ht-degree: 4%
 
 ---
@@ -26,9 +26,8 @@ Tous les documents de PDF, Reader étendu à l’aide des anciens certificats av
 
 A. L’autorité de certification racine de l’Adobe est l’autorité de certification à partir de laquelle un certificat Acrobat Reader Extensions est émis. Le 7 janvier 2023, &quot;Adobe Root CA&quot; et tous les certificats émis à partir de celui-ci expirent.
 
-**Q. Une communication précédente de l’Adobe concernant l’expiration des certificats et l’impact sur l’utilisation/l’ouverture de PDF a-t-elle été envoyée ? Cette communication doit-elle être ignorée ?**
-A. Sur la base d&#39;une réévaluation de la situation, tous les documents PDF étendus à l&#39;aide de certificats de production délivrés par l&#39;ancienne &quot;autorité de certification racine des Adobes&quot; avant le 7 janvier 2023 continuent à fonctionner sans changement après le 7 janvier 2023. Si vous avez déjà mis à jour vos PDF, l’expérience ne changera pas.
-
+**Q. Une communication précédente d’Adobe concernant l’expiration des certificats et l’impact sur l’utilisation/l’ouverture de documents de PDF a été envoyée. Cette communication doit-elle être ignorée ?**
+A. Sur la base de la réévaluation de la situation, tous les documents PDF étendus à l’aide de certificats de production délivrés par l’ancienne &quot;autorité de certification racine des Adobes&quot; avant le 7 janvier 2023 continuent à fonctionner sans changement après le 7 janvier 2023. Si vous avez déjà mis à jour vos PDF, l’expérience ne changera pas.
 
 **Q. Qui dois-je contacter si j’ai d’autres questions ?**
 
@@ -44,11 +43,11 @@ A. La description des nouveaux certificats des extensions Acrobat Reader mention
 
 **Q. Comment obtenir les derniers certificats ?**
 
-A. Tous les clients Forms autorisés (avec principale licence) peuvent télécharger les nouveaux certificats (certificats basés sur &quot;Adobe Root CA G2&quot;) à partir de la [Adobe Licensing Website](https://licensing.adobe.com/). Si vous ne parvenez pas à trouver le certificat sur le site web de licences Adobe, contactez [Prise en charge des Adobes](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) ou soulevez un ticket d’assistance.
+A. Tous les clients Forms autorisés (avec principale licence) peuvent télécharger les nouveaux certificats (certificats basés sur &quot;Adobe Root CA G2&quot;) à partir du [Adobe Licensing Website](https://licensing.adobe.com/). Si vous ne parvenez pas à trouver le certificat sur le site web de licences Adobe, contactez [Prise en charge des Adobes](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) ou soulevez un ticket d’assistance.
 
-**Q. Mes documents PDF étendus à l’aide de certificats émis par l’ancienne autorité de certification racine de l’Adobe (l’ancienne autorité de certification) continuent-ils à fonctionner après le 7 janvier 2023 ?**
+**Q. Mes documents PDF étendus à l’aide de certificats émis par l’&quot;autorité de certification racine de l’Adobe&quot; (l’ancienne autorité de certification) continuent-ils à fonctionner après le 7 janvier 2023 ?**
 
-R. Oui, tous les documents PDF étendus à l’aide de certificats de production délivrés par l’&quot;autorité de certification racine de l’Adobe&quot; (ancienne autorité de certification) avant le 7 janvier 2023 continuent à fonctionner sans modification après le 7 janvier 2023. Les documents PDF étendus avec des certificats d’évaluation ne fonctionnent plus au-delà de la date d’expiration.
+R. Oui, tous les documents PDF étendus à l’aide de certificats de production délivrés par l’&quot;autorité de certification racine de l’Adobe&quot; (l’ancienne autorité de certification) avant le 7 janvier 2023, continuent à fonctionner sans modification après le 7 janvier 2023. Les documents PDF étendus avec des certificats d’évaluation ne fonctionnent plus au-delà de la date d’expiration.
 
 **Q. Quelle version de Adobe Acrobat Reader est requise pour continuer à utiliser les documents de PDF étendus avec les certificats émis à partir de l’&quot;Adobe Root CA&quot; (l’ancienne autorité de certification) ?**
 
