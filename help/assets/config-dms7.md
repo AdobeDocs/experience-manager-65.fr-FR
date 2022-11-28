@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 89bb9223bb5e1e1d8719c5d957ec380872ed3e96
+source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 95%
@@ -203,7 +203,7 @@ Le mot de passe modifié est enregistré lorsque vous sélectionnez **[!UICONTRO
 
 Si vous souhaitez personnaliser davantage l’installation et la configuration de Dynamic Media en mode Scene7, ou en optimiser les performances, vous pouvez effectuer une ou plusieurs des tâches *facultatives* suivantes :
 
-* [(Facultatif) Activez l’autorisation ACL dans Dynamic Media - Mode Scene7 .](#optional-enable-acl)
+* [(Facultatif) Activez les autorisations ACL dans le mode Dynamic Media - Scene7 .](#optional-enable-acl)
 
 * [(Facultatif) Configuration de Dynamic Media en mode Scene7 pour le chargement de ressources d’une taille supérieure à 2 Go](#optional-config-dms7-assets-larger-than-2gb)
 
