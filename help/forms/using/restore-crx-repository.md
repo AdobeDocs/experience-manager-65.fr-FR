@@ -2,9 +2,9 @@
 title: Impossible de restaurer le référentiel CRX corrompu applicable au serveur de grappe JEE
 description: Procédure de restauration du référentiel CRX corrompu
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
+source-git-commit: c4f776b08cb8cc8c6eea78a3757735e063bec20c
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 7%
 
 ---
@@ -24,7 +24,7 @@ Effectuez la sauvegarde de votre référentiel CRX avant d’effectuer les étap
 Exécutez les étapes suivantes afin de résoudre ce problème :
 1. Accédez à  `https://[AEM Forms Server]:[port]/system/console/bundles`.
 
-1. Recherchez la variable `oak-core` et vérifiez qu’il est en cours d’exécution.
+1. Recherchez la variable `oak-core` et vérifiez s’il est en cours d’exécution.
 
 1. Redémarrez le `oak-core` s’il n’est pas en cours d’exécution. If  ![Bouton Pause](/help/forms/using/assets/stop.png) se trouve devant l’icône `oak-core` du lot, puis il indique que le lot est à l’état en cours d’exécution.
 
@@ -35,4 +35,4 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
 
 Cette solution s’applique à :
 
-* Environnement de grappe d’AEM Forms on JEE
+* Grappe AEM Forms on JEE
