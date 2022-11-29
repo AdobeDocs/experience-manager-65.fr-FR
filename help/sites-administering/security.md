@@ -12,9 +12,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: bc3dd7d229a75323b98a96d60dcbb3ae2b8c09ab
+source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
 workflow-type: tm+mt
-source-wordcount: '5469'
+source-wordcount: '5454'
 ht-degree: 99%
 
 ---
@@ -217,14 +217,15 @@ Les listes de contrôle d’accès sont composées d’autorisations spécifique
 >
 >Des listes de contrôle d’accès sont fournies avec les échantillons. Il est recommandé d’examiner et de déterminer ce qui convient à vos applications. Pour passer en revue les listes de contrôle d’accès incluses, aller à **CRXDE** et sélectionnez l’onglet **Contrôle d’accès** pour les nœuds suivants :
 >
->`/etc/cloudservices/facebookconnect/geometrixx-outdoorsfacebookapp` : permet à tout le monde l’accès en lecture.
->`/etc/cloudservices/twitterconnect/geometrixx-outdoors-twitter-app`: permet à tout le monde de lire l’accès.
->`/home/users/geometrixx-outdoors`: permet à tous les utilisateurs d’accéder en lecture à `*/profile*` et
->`*/social/relationships/following/*`.
+>* `/etc/cloudservices`
+>* `/home/users/we-retail`
 >
->Votre application personnalisée peut définir l’accès pour d’autres relations, telles que `*/social/relationships/friend/*` ou `*/social/relationships/pending-following/*`.
+>Votre application personnalisée peut définir l’accès pour d’autres relations, telles que :
 >
->Lorsque vous créez des listes de contrôle d’accès spécifiques aux communautés, les membres rejoignant ces communautés peuvent se voir accorder des autorisations supplémentaires. Par exemple, ceci peut être le cas lorsque les utilisateurs rejoignent les communautés sur `/content/geometrixx-outdoors/en/community/hiking` ou `/content/geometrixx-outdoors/en/community/winter-sports`.
+>* `*/social/relationships/friend/*`
+>* ou `*/social/relationships/pending-following/*`.
+>
+>Lorsque vous créez des listes de contrôle d’accès spécifiques aux communautés, les membres rejoignant ces communautés peuvent se voir accorder des autorisations supplémentaires. Par exemple, cela peut être le cas lorsque les utilisateurs rejoignent les communautés à l’adresse : `/content/we-retail/us/en/community`
 
 ### États d’autorisation {#permission-states}
 
