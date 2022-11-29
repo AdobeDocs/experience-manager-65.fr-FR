@@ -1,10 +1,11 @@
 ---
 title: Impossible de restaurer le référentiel CRX corrompu applicable au serveur de grappe JEE
 description: Procédure de restauration du référentiel CRX corrompu
-source-git-commit: a7d125503b0bd3c52cb3a959e2f0dde1a69cbe2b
+exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
+source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 8%
+source-wordcount: '182'
+ht-degree: 7%
 
 ---
 
@@ -12,27 +13,26 @@ ht-degree: 8%
 
 ## Problème {#issue}
 
-Pour AEM Forms déployé sur JEE avec une persistance RDB, il est nécessaire que les machines hôtes AEM Forms et les machines de base de données soient synchronisées en temps absolu. Cependant, si, pour une raison quelconque, les horloges ne sont pas synchronisées, le référentiel CRX est corrompu et ses URL deviennent inaccessibles. L’erreur en tant que `AuthenticationsupportService missing` survient dans les fichiers journaux.
+Pour AEM Forms on JEE qui utilise une base de données relationnelle, le temps passé sur l’ordinateur hébergeant AEM Forms et la base de données relationnelle doit toujours être synchronisé de manière absolue. Si le temps passé sur ces ordinateurs n’est pas synchronisé, le référentiel CRX du serveur AEM Forms on JEE peut devenir inaccessible. Il peut sembler corrompu et devenir inaccessible via l’URL. Le `AuthenticationsupportService missing` est consignée.
+
+## Prérequis {#prerequisites}
+
+Effectuez la sauvegarde de votre référentiel CRX avant d’effectuer les étapes mentionnées ci-dessous.
 
 ## Solution {#solution}
 
 Exécutez les étapes suivantes afin de résoudre ce problème :
-1. Accédez à  [https://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+1. Accédez à  `https://[AEM Forms Server]:[port]/system/console/bundles`.
 
 1. Recherchez la variable `oak-core` et vérifiez qu’il est en cours d’exécution.
 
-1. Redémarrez le `oak-core` s’il n’est pas en cours d’exécution. Si le bouton de pause se trouve devant la fonction `oak-core` du lot, puis il indique que le lot est à l’état en cours d’exécution.
+1. Redémarrez le `oak-core` s’il n’est pas en cours d’exécution. If  ![Bouton Pause](/help/forms/using/assets/stop.png) se trouve devant l’icône `oak-core` du lot, puis il indique que le lot est à l’état en cours d’exécution.
 
 1. Si le problème n’est toujours pas résolu, restaurez à partir du référentiel CRX à partir de la sauvegarde ou recréez le référentiel CRX si la sauvegarde n’est pas disponible.
 
-   >[!NOTE]
-   >
-   >Effectuez la sauvegarde de votre référentiel CRX avant d’effectuer les étapes ci-dessus.
 
 ## S’applique à {#applies-to}
 
 Cette solution s’applique à :
 
-* Serveur de la grappe AEM Forms on JEE
-
-
+* Environnement de grappe d’AEM Forms on JEE
