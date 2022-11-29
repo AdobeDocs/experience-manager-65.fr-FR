@@ -2,9 +2,9 @@
 title: Expiration des certificats des extensions de Reader et son impact
 description: Expiration des certificats des extensions de Reader et son impact
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bcbfdcd305b7319506a11677909895c38f92a6cf
+source-git-commit: 5f8061ebd2143f11567ac5b78162bdd02106d2e3
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1115'
 ht-degree: 4%
 
 ---
@@ -28,8 +28,7 @@ A. L’autorité de certification racine de l’Adobe est l’autorité de certi
 
 **Q. Une communication précédente d’Adobe concernant l’expiration des certificats et l’impact sur l’utilisation/l’ouverture de documents de PDF a été envoyée. Cette communication doit-elle être ignorée ?**
 
-A. Sur la base de la réévaluation de la situation, tous les documents PDF étendus à l’aide de certificats de production délivrés par l’ancienne &quot;autorité de certification racine des Adobes&quot; avant le 7 janvier 2023 continuent à fonctionner sans changement après le 7 janvier 2023. Si vous avez déjà mis à jour vos PDF, l’expérience ne change pas.
-
+A. Sur la base de la réévaluation de la situation, tous les documents PDF étendus à l’aide de certificats de production délivrés par l’ancienne &quot;autorité de certification racine des Adobes&quot; avant le 7 janvier 2023 continuent à fonctionner sans changement après le 7 janvier 2023. Si vous avez déjà mis à jour vos documents de PDF, l’expérience ne change pas.
 
 **Q. Qui dois-je contacter si j’ai d’autres questions ?**
 
