@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 43a1cff0d7c2fe1d25e41cff3d02d1a55e6792c5
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3824'
+source-wordcount: '3830'
 ht-degree: 95%
 
 ---
@@ -371,6 +371,7 @@ ht-degree: 95%
    + [Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protection d’un document au nom d’un autre utilisateur](using/protect-document-on-behalf-of-another-user.md)
+   + [Prise en charge d’oAuth2.0 pour le service de messagerie Microsoft](/help/forms/using/oauth2-support-for-mail-service.md)
 + Concepteur Forms {#use-forms-designer}
    + [Aide de Forms Designer](using/forms-designer-help.md)
    + [Utilisation de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr)

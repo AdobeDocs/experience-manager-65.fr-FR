@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 937af2df46b93aab6c9010814175d72a9bd583db
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3176'
-ht-degree: 36%
+source-wordcount: '3853'
+ht-degree: 30%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 36%
 * Le **De base** sous Propriétés de ressource , l’onglet contient des pages avec un ID en double. (ASSETS-6888)
 * Le libellé du champ de texte pour définir un titre lors de la création d’un workflow disparaît lorsque vous spécifiez une valeur dans la zone de texte. (ASSETS-6887)
 * La liste des destinataires lors du partage d’un lien s’affiche sous la forme d’un tableau de données avec des en-têtes, mais elle n’est pas sémantiquement identifiée en tant que tableau de données pour les utilisateurs de lecteur d’écran. (ASSETS-6886)
-* Aucun message d’erreur ne s’affiche pour représenter un champ vide dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
+* Aucun message d’erreur pour représenter un champ vide ne s’affiche dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
 * Les textes d’espace réservé, le chemin et le texte de remplacement n’ont pas au moins un rapport de contraste de 4,5:1 par rapport à leur couleur d’arrière-plan. (ASSETS-6884, ASSETS-6865)
 * Valeurs non valides pour certains attributs ARIA lors de l’enregistrement d’une collection dynamique. (ASSETS-6882)
 * Lorsque vous enregistrez une collection dynamique, certaines étiquettes ne sont pas correctement associées au lecteur d’écran. (ASSETS-6881)
@@ -105,9 +105,44 @@ ht-degree: 36%
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->Correctifs de [!DNL Experience Manager] Forms est livré par le biais d’un module complémentaire distinct une semaine après la planification de la [!DNL Experience Manager] Date de publication du Service Pack. Dans ce cas, les modules complémentaires seront publiés le jeudi 1er décembre 2022. Une liste des correctifs et améliorations de Forms sera également ajoutée à cette section.
+### Fonctionnalités clés {#keyfeatures}
+
+* AEM Forms Designer est désormais disponible en espagnol. (LC-3920051)
+* Vous pouvez désormais utiliser OAuth2 pour vous authentifier avec les protocoles de serveur de messagerie Microsoft Office 365 (SMTP et IMAP). (NPR-35177)
+* Vous pouvez définir [Revalider sur le serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) sur true pour identifier les champs masqués à exclure d’un document d’enregistrement côté serveur. (NPR-38149)
+* AEM Forms Designer nécessite une version 32 bits de Visual C++ 2019 Redistributable (x86).  (NPR-36690)
+
+### Correctifs {#fixes}
+
+* Lorsque la propriété data-disabled d’un formulaire adaptatif est activée, l’aspect des boutons radio et des groupes de cases à cocher ne change pas. (NPR-39368)
+* Lorsqu’un formulaire adaptatif est traduit, certaines traductions sont manquantes et ne s’affichent pas correctement. (NPR-39367)
+* Lorsque la propriété d’une page est définie sur masquée, la page n’est pas supprimée du jeu de formulaires. (NPR-39325)
+* Dans un document d’enregistrement, la section de note de bas de page dynamique située à la fin de la page n’est pas présente. (NPR-39322)
+* Lorsqu’un document d’enregistrement est généré pour un formulaire adaptatif, seul l’alignement vertical est autorisé pour les boutons radio et les cases à cocher. L’utilisateur ne peut pas définir l’alignement horizontal des boutons radio et des cases à cocher. (NPR-39321)
+* Après le déploiement de Correspondence Management, si plusieurs utilisateurs tentent d’accéder à un formulaire, org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentielLanguageRoots devient un goulot d’étranglement et la plupart des threads sont frappés. Le chargement de plusieurs requêtes de page de formulaires dure souvent plus d’une minute, même lorsque le serveur est à très faible charge. (NPR-39176, CQ-4347710)
+* Dans un formulaire adaptatif, lorsque vous utilisez un champ de texte enrichi dans un fragment de formulaire adaptatif chargé en différé, certaines des erreurs suivantes se produisent :
+   * Vous ne pouvez pas modifier le contenu ni ajouter quoi que ce soit au champ Texte enrichi.
+   * Le modèle d’affichage appliqué au texte enrichi n’est pas respecté. 
+   * Le message d’erreur correspondant à la longueur minimale du champ ne s’affiche pas lors de l’envoi du formulaire.
+   * Le contenu de ce champ de texte enrichi est inclus plusieurs fois dans le fichier submit-XML produit. (NPR-39168)
+* Lorsque l’option de sélecteur de date est utilisée dans un formulaire adaptatif, elle ne parvient pas à convertir la valeur au format correct. (NPR-39156)
+* Lors de la prévisualisation d’un formulaire adaptatif en tant que formulaire de HTML, il n’est pas rendu correctement, car certains sous-formulaires se chevauchent avec le formulaire parent. (NPR-39046)
+* Si le panneau comporte un tableau masqué et que le formulaire adaptatif est rendu à l’aide de la vue tabulaire, les champs du premier onglet ne s’affichent pas correctement. (NPR-39025)
+* Le `Body` balise manquante pour le modèle prêt à l’emploi. (NPR-39022)
+* Le document d’enregistrement n’est pas généré dans la langue du formulaire adaptatif. Il est toujours généré en anglais. (NPR-39020)
+* Lorsqu’un formulaire adaptatif comporte plusieurs panneaux et que certains d’entre eux utilisent le panneau d’usine **Pièce jointe** , le composant `Error occurred while draft saving` s’affiche. (NPR-38978)
+* When `=` Le signe est utilisé dans les champs de case à cocher, de liste déroulante ou de bouton radio d’un formulaire adaptatif et le document d’enregistrement est généré, puis `=` Le signe n’est pas visible dans le document d’enregistrement généré.(NPR-38859)
+* Le nombre d’erreurs de traitement par lots de l’avis augmente de plusieurs façons après la mise à niveau du Service Pack 6.5.11.0. (NPR-39636)
+* Lorsque vous ne fournissez pas de données de test, le chargement des lettres Correspondence Management échoue dans l’interface utilisateur de l’agent. (CQ-4348702)
+* Lorsque l’utilisateur applique le Service Pack 14 (SP14) d’AEM Forms AEM Forms déployé à l’aide d’IBM® WebSphere®, l’amorçage échoue lors de l’initialisation d’une base de données et de la variable `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` s’affiche.(NPR-39414)
+* Sur un serveur OSGi de formulaire d’AEM, lorsque vous utilisez l’API Document Service pour certifier le PDF, il échoue avec une erreur : com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException : AEM-DSS-311-003. (NPR-38855)
+* Lorsque l’utilisateur tente d’utiliser le service wrapper pour le rendu des lettres avec AEM 6.3 Forms, la variable `java.lang.reflect.UndeclaredThrowableException` s’affiche. (CQ-4347259)
+* Lorsqu’un formulaire XDP est rendu en tant que formulaire HTML5, le contenu du gabarit est rendu en premier, quel que soit le positionnement des objets dans un formulaire adaptatif. (CQ-4345218)
+* La configuration de l’application au niveau du serveur de destination modifie les paramètres définis au niveau du serveur source, même si la variable **Remplacer la configuration lorsque l’importation est terminée** n’est pas cochée au moment de l’importation de l’application. (NPR-39044)
+* Lorsqu’un utilisateur tente de mettre à jour la configuration du connecteur à l’aide de Configuration Manager, cela échoue.(CQ-4347077)
+* Lorsque l’utilisateur tente d’exécuter un correctif d’AEM Forms on JEE après avoir modifié le mot de passe par défaut de l’utilisateur administrateur, une exception s’affiche. `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` survient. (CQ-4348277)
+* Dans AEM Designer, les champs de formulaire sans légende sont placés dans des cellules de tableau, y compris des cases à cocher.(LC-3920410)
+* Lorsque l’utilisateur tente d’ouvrir l’aide dans AEM Forms Designer, elle ne s’affiche pas correctement. (CQ-4341996)
 
 ## [!DNL Sites] {#sites-6515}
 
@@ -284,7 +319,7 @@ Vérifiez si vous utilisez une de ces fonctionnalités dans un déploiement. Env
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
-* [AEM du fragment de contenu avec le package d’index GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+* [AEM de fragment de contenu avec le package d’index GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Ce module est nécessaire pour les clients utilisant GraphQL ; cela leur permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils utilisent réellement.
 
 * [!DNL Microsoft® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ne prend donc pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].

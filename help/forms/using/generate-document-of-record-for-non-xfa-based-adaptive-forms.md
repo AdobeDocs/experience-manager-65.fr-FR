@@ -11,10 +11,10 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3483'
-ht-degree: 100%
+source-wordcount: '3466'
+ht-degree: 98%
 
 ---
 
@@ -296,10 +296,10 @@ Lors de la génération d’un document d’enregistrement, vous pouvez modifier
 Pour localiser les informations d’identité graphique que vous saisissez dans l’onglet Document d’enregistrement, vous devez vous assurer que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, procédez comme suit :
 
 1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis appuyez sur ![configurer](assets/configure.png).
-1. Appuyez sur ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
+1. Appuyez sur ![dortab](/help/forms/using/assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement apparaît sous la liste déroulante Modèle.
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
 
    Si vous choisissez de sélectionner un modèle personnalisé, sélectionnez un fichier XDP sur votre serveur AEM Forms. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur AEM Forms, vous devez au préalable télécharger le fichier XDP sur votre serveur AEM Forms.
 
@@ -394,7 +394,7 @@ Pour plus d’informations sur la manière d’appliquer des sauts de page et d�
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si des champs sont masqués au moment de l’envoi du formulaire, ils seront exclus du document d’enregistrement si la propriété est définie sur True, à condition que la propriété « Exclure du document d’enregistrement » ne soit pas définie.
+* **Exclure les champs du document d’enregistrement s’ils sont masqués :** Définissez la propriété pour exclure les champs masqués de [!UICONTROL Document d’enregistrement] lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs de la variable [!UICONTROL Document d’enregistrement].
 
 ## Appliquer un saut de page dans un document d’enregistrement {#apply-page-breaks-in-dor}
 
@@ -402,13 +402,12 @@ Vous pouvez appliquer des sauts de page dans un document d’enregistrement à l
 
 Pour appliquer un saut de page à un document d’enregistrement :
 
-1. Appuyez sur le panneau et sélectionnez ![Configurer](assets/configure-icon.svg).
-
+1. Appuyez sur le panneau et sélectionnez ![Configurer](/help/forms/using/assets/configure.png)
 1. Développez le **[!UICONTROL Document d’enregistrement]** pour afficher les propriétés.
 
-1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](assets/folder-icon.svg) dans le champ **[!UICONTROL Placer]**.
+1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Placer]**.
 1. Appuyez sur **[!UICONTROL Haut de la page suivante]**, puis sur **[!UICONTROL Sélectionner]**. Vous pouvez également appuyer sur **[!UICONTROL Haut de la page]**, sélectionnez le gabarit de page, puis appuyez sur **[!UICONTROL Sélectionner]** pour appliquer le saut de page.
-1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Appuyez sur ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
 
 Le panneau sélectionné passe à la page suivante.
 
@@ -423,13 +422,13 @@ vous téléchargez un modèle XDP qui comprend quatre gabarits de page dans le s
 
 Pour appliquer les propriétés du deuxième gabarit de page à un panneau et les propriétés du troisième gabarit de page aux panneaux qui suivent, procédez comme suit :
 
-1. Appuyez sur le panneau pour appliquer le deuxième gabarit de page et sélectionnez ![Configurer](assets/configure-icon.svg).
-1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](assets/folder-icon.svg) dans le champ **[!UICONTROL Placer]**.
+1. Appuyez sur le panneau pour appliquer le deuxième gabarit de page et sélectionnez ![Configurer](assets/cmppr.png).
+1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Placer]**.
 1. Appuyez sur **[!UICONTROL Sur la page]**, sélectionnez le deuxième gabarit de page et appuyez sur **[!UICONTROL Sélectionner]**.
 AEM Forms applique le deuxième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
-1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](assets/folder-icon.svg) dans le champ **[!UICONTROL Après]**.
+1. Dans la section **[!UICONTROL Pagination]**, appuyez sur ![Dossier](/help/forms/using/assets/folder-icon.png) dans le champ **[!UICONTROL Après]**.
 1. Appuyez sur **[!UICONTROL Atteindre la page]**, sélectionnez le troisième gabarit de page et appuyez sur **[!UICONTROL Sélectionner]**.
-1. Appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
+1. Appuyez sur ![Enregistrer](/help/forms/using/assets/save_icon.png) pour enregistrer les propriétés.
 AEM Forms applique le troisième gabarit de page au panneau et à tous les panneaux suivants du formulaire adaptatif.
 
 
