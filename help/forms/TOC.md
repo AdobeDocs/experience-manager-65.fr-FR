@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3827'
 ht-degree: 95%
 
 ---
@@ -371,7 +371,6 @@ ht-degree: 95%
    + [Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protection d’un document au nom d’un autre utilisateur](using/protect-document-on-behalf-of-another-user.md)
-   + [Prise en charge d’oAuth2.0 pour le service de messagerie Microsoft](/help/forms/using/oauth2-support-for-mail-service.md)
 + Concepteur Forms {#use-forms-designer}
    + [Aide de Forms Designer](using/forms-designer-help.md)
    + [Utilisation de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr)
@@ -453,6 +452,7 @@ ht-degree: 95%
    + Gestion des points de fin {#manage-endpoints}
       + [Ajout, activation, modification ou suppression de points de fin](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [Configuration des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [Configuration de l’authentification oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Configuration des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuration des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configuration des points de fin TaskManager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)

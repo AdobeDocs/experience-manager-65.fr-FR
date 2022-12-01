@@ -1,18 +1,16 @@
 ---
-title: Prise en charge d’OAuth2 pour les protocoles de serveur de messagerie Microsoft® Office 365
-description: Prise en charge Oauth2 des protocoles de serveur de messagerie Microsoft® Office 365
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+title: Configuration de l’authentification basée sur OAuth2 pour les protocoles de serveur de messagerie Microsoft® Office 365
+description: Configuration de l’authentification basée sur OAuth2 pour les protocoles de serveur de messagerie Microsoft® Office 365
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '938'
 ht-degree: 3%
 
 ---
 
-# Prise en charge d’OAuth 2.0 pour les protocoles de serveur de messagerie Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# Intégration aux protocoles de serveur de messagerie Microsoft® Office 365 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-AEM Forms offre une prise en charge OAuth 2.0 pour l’intégration aux protocoles de serveur de messagerie Microsoft® Office 365, afin de permettre aux entreprises de se conformer aux exigences de messagerie sécurisée. Azure Principale Directory (Azure AD) offre un service d’authentification OAuth 2.0, qui permet à votre application de se connecter à divers protocoles tels que IMAP, POP ou SMTP, et d’accéder aux données d’e-mail pour les utilisateurs d’Office 365.
-
-Vous trouverez ci-dessous des instructions étape par étape pour configurer les protocoles du serveur de messagerie Microsoft® Office 365 pour s’authentifier via le service OAuth 2.0 :
+Pour permettre aux entreprises de se conformer aux exigences en matière de messagerie sécurisée, AEM Forms propose la prise en charge OAuth 2.0 pour l’intégration aux protocoles de serveur de messagerie Microsoft® Office 365. Vous pouvez utiliser le service d’authentification OAuth 2.0 d’Azure Principale Directory (Azure AD) pour vous connecter à différents protocoles tels que IMAP, POP ou SMTP et accéder aux données d’e-mail des utilisateurs d’Office 365. Vous trouverez ci-dessous des instructions étape par étape pour configurer les protocoles du serveur de messagerie Microsoft® Office 365 pour s’authentifier via le service OAuth 2.0 :
 
 1. Connexion [https://portal.azure.com/](https://portal.azure.com/) et recherchez **Azure Principal Directory** dans la barre de recherche et cliquez sur le résultat.
 Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
@@ -22,9 +20,8 @@ Vous pouvez également accéder directement à [https://portal.azure.com/#blade/
 
 1. Renseignez les informations en fonction de vos besoins, puis cliquez sur **Enregistrer**.
    ![Compte pris en charge](/help/forms/using/assets/azure_suuportedaccountype.png)
-
-
-   Dans le cas ci-dessus, **Comptes dans n’importe quel annuaire de l’entreprise (un annuaire Azure AD - multi-client) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
+Dans le cas ci-dessus, 
+**Comptes dans n’importe quel annuaire de l’entreprise (un annuaire Azure AD - multi-client) et comptes Microsoft® personnels (par exemple, Skype, Xbox)** est sélectionnée.
 
    >[!NOTE]
    >
@@ -88,7 +85,9 @@ Ensuite, vous devez générer le code d’autorisation, comme expliqué dans les
 ## Génération du jeton d’actualisation {#generating-the-refresh-token}
 
 Ensuite, vous devez générer le jeton d’actualisation, comme expliqué dans les étapes suivantes :
+
 1. Ouvrez l’invite de commande et utilisez la commande cURL suivante pour obtenir le jeton d’actualisation.
+
 1. Remplacez la variable `clientID`, `client_secret` et `redirect_uri` avec les valeurs de votre application, ainsi que la valeur de `<code>`:
 
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
@@ -163,9 +162,4 @@ Vous devez maintenant configurer le service de messagerie au plus tard sur le se
 * Si le service de messagerie ne fonctionne pas correctement. Essayez de régénérer la variable `Refresh Token` comme décrit ci-dessus. Le déploiement de la nouvelle valeur prend quelques minutes.
 
 * Erreur lors de la configuration des détails du serveur de messagerie dans le point de fin de courrier électronique à l’aide de Workbench. Essayez de configurer le point de fin via l’interface utilisateur d’administration au lieu de Workbench.
-
-
-
-
-
 

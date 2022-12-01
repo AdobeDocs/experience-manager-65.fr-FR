@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3853'
+source-wordcount: '3858'
 ht-degree: 30%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 30%
 * Le **De base** sous Propriétés de ressource , l’onglet contient des pages avec un ID en double. (ASSETS-6888)
 * Le libellé du champ de texte pour définir un titre lors de la création d’un workflow disparaît lorsque vous spécifiez une valeur dans la zone de texte. (ASSETS-6887)
 * La liste des destinataires lors du partage d’un lien s’affiche sous la forme d’un tableau de données avec des en-têtes, mais elle n’est pas sémantiquement identifiée en tant que tableau de données pour les utilisateurs de lecteur d’écran. (ASSETS-6886)
-* Aucun message d’erreur pour représenter un champ vide ne s’affiche dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
+* Aucun message d’erreur ne s’affiche pour représenter un champ vide dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
 * Les textes d’espace réservé, le chemin et le texte de remplacement n’ont pas au moins un rapport de contraste de 4,5:1 par rapport à leur couleur d’arrière-plan. (ASSETS-6884, ASSETS-6865)
 * Valeurs non valides pour certains attributs ARIA lors de l’enregistrement d’une collection dynamique. (ASSETS-6882)
 * Lorsque vous enregistrez une collection dynamique, certaines étiquettes ne sont pas correctement associées au lecteur d’écran. (ASSETS-6881)
@@ -107,9 +107,9 @@ ht-degree: 30%
 
 ### Fonctionnalités clés {#keyfeatures}
 
-* AEM Forms Designer est désormais disponible en espagnol. (LC-3920051)
-* Vous pouvez désormais utiliser OAuth2 pour vous authentifier avec les protocoles de serveur de messagerie Microsoft Office 365 (SMTP et IMAP). (NPR-35177)
-* Vous pouvez définir [Revalider sur le serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) sur true pour identifier les champs masqués à exclure d’un document d’enregistrement côté serveur. (NPR-38149)
+* AEM Forms Designer est désormais disponible dans [Espagnol](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). (LC-3920051)
+* Vous pouvez désormais utiliser [OAuth2 pour l’authentification avec les protocoles de serveur de messagerie Microsoft Office 365 (SMTP et IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* Vous pouvez définir [Revalider sur le serveur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) sur true pour identifier les champs masqués à exclure d’un document d’enregistrement côté serveur. (NPR-38149)
 * AEM Forms Designer nécessite une version 32 bits de Visual C++ 2019 Redistributable (x86).  (NPR-36690)
 
 ### Correctifs {#fixes}
@@ -320,7 +320,7 @@ Vérifiez si vous utilisez une de ces fonctionnalités dans un déploiement. Env
  -->
 
 * [AEM de fragment de contenu avec le package d’index GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-Ce module est nécessaire pour les clients utilisant GraphQL ; cela leur permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils utilisent réellement.
+Ce package est nécessaire pour les clients utilisant GraphQL ; cela leur permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils utilisent réellement.
 
 * [!DNL Microsoft® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ne prend donc pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
 
