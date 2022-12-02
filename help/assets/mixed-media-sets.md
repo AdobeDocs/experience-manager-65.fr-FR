@@ -12,8 +12,8 @@ feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
-workflow-type: tm+mt
-source-wordcount: '1493'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
