@@ -3,8 +3,8 @@ title: Console du produit
 description: Utiliser le cockpit de produits
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
-source-wordcount: '424'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
