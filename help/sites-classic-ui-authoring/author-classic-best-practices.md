@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 source-git-commit: 22cdd6a7b343749b8ce85d8c1b230d094732f44a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '282'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Pour connaître les bonnes pratiques en matière d’administration, de déploie
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## Ressources {#assets}
+## Assets {#assets}
 
 Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic Media et son intégration, sont décrites dans les rubriques suivantes :
 
