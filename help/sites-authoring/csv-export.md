@@ -12,9 +12,9 @@ discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez ouvrir le fichier `export.csv` obtenu dans Excel (ou toute autre app
 
 ![etc-01](assets/etc-01.png)
 
-La création **Rapport CSV** est disponible lors de la navigation dans la **Sites** console (en mode Liste) : il s’agit d’une option de la fonction **Créer** menu déroulant :
+L’option **Créer une exportation CSV** est disponible lorsque vous naviguez sur la console **Sites** (en mode Liste) : il s’agit d’une option du menu déroulant **Créer** :
 
 ![etc-02](assets/etc-02.png)
 
