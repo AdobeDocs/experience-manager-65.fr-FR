@@ -3,8 +3,8 @@ title: Facultatif – Comment créer des applications sur une seule page (SPA) a
 description: Dans cette suite facultative du parcours de développement découplé AEM, vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: tm+mt
-source-wordcount: '1273'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
