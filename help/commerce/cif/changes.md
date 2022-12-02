@@ -3,7 +3,7 @@ title: Modifications notables apportées au module complémentaire CIF (Commerce
 description: Modifications notables du module complémentaire Commerce Integration Framework (CIF) par rapport aux anciennes versions du CIF.
 exl-id: 41dee21a-9ae2-4067-a32a-2d4633323fc4
 source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '321'
 ht-degree: 100%
 
