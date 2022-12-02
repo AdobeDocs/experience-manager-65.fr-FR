@@ -10,7 +10,7 @@ discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1949'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
    <td>Convertit des fichiers Adobe PDF en types de fichiers pris en charge. </td>
    <td>Documents traités<br /> </td>
    <td> </td>
@@ -196,7 +196,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Convertit un ensemble de documents XDP et PDF en un ensemble de formats de fichiers PostScript (PS), PCL (Printer Command Language) et ZPL. </td>
    <td>Documents traités</td>
-   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu de PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
+   <td> L’API generatePDFOutputBatch combine un modèle de formulaire avec un enregistrement et génère un PDF. Lorsque vous traitez un lot d’enregistrements, le service de reporting des transactions comptabilise chaque enregistrement comme un rendu de PDF distinct. <br> Vous pouvez utiliser l’indicateur <a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> pour combiner plusieurs rendus en un seul fichier PDF. Quel que soit l’état de l’indicateur, le service comptabilise chaque enregistrement comme un rendu de PDF distinct. </td>
   </tr>
  </tbody>
 </table>
@@ -243,7 +243,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
+   <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
    <td>Convertit un fichier PDF plat au format PostScript à l’aide des options spécifiées dans la spécification de l’option.</td>
    <td>Documents traités</td>
    <td> </td>
@@ -292,7 +292,7 @@ Les API de facturation ne prennent pas en compte le nombre de pages, la taille d
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/fr/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
-   <td>Exécute le document DDX spécifié et renvoie un objet <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contenant les documents créés. </td>
+   <td>Exécute le document DDX spécifié et renvoie un objet <a href="https://helpx.adobe.com/fr/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a> contenant les documents créés. </td>
    <td>Documents traités</td>
    <td>Tous les formats de fichiers d’entrée pris en charge par PDF Generator, Forms et Output, le service Assembler prend en charge tous ces formats en tant que formats de fichiers de sortie. </td>
   </tr>
