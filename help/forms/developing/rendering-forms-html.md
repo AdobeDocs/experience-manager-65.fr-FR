@@ -13,7 +13,7 @@ discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4150'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Lors du rendu de formulaires HTML qui contiennent à la fois des fonctionnalité
 Les scripts de formulaire situés dans l’événement form:ready ne sont exécutés qu’une seule fois lors du rendu initial du formulaire et ne sont pas exécutés pour les récupérations de page suivantes. En revanche, l’événement form:calculate est exécuté pour chaque navigation de page dans laquelle le formulaire est rendu.
 
 >[!NOTE]
->Dans un formulaire de plusieurs pages, les modifications apportées par JavaScript à une page ne sont pas conservées si vous passez à une autre page.
+Dans un formulaire de plusieurs pages, les modifications apportées par JavaScript à une page ne sont pas conservées si vous passez à une autre page.
 
 Vous pouvez appeler des scripts personnalisés avant d’envoyer un formulaire. Cette fonctionnalité fonctionne sur tous les navigateurs disponibles. Cependant, elle ne peut être utilisée que lorsque les utilisateurs effectuent le rendu du formulaire HTML dont la propriété `Output Type` est définie sur `Form Body`. Cela ne fonctionne pas lorsque la propriété `Output Type` est définie sur `Full HTML`. Pour connaître les étapes de configuration de cette fonctionnalité, consultez la section Configurer des formulaires dans l’aide d’administration.
 
@@ -122,7 +122,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 Lors de la création de conceptions de formulaire pour le rendu HTML, vous devez limiter votre script au sous-ensemble XFA pour les scripts en langage JavaScript.
 
-Les scripts qui s’exécutent sur le client ou à la fois sur le client et le serveur doivent être écrits dans le sous-ensemble XFA. Les scripts qui s’exécutent sur le serveur peuvent utiliser le modèle de script XFA complet ainsi que FormCalc. Pour plus d’informations sur l’utilisation de JavaScript, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Les scripts qui s’exécutent sur le client ou à la fois sur le client et le serveur doivent être écrits dans le sous-ensemble XFA. Les scripts qui s’exécutent sur le serveur peuvent utiliser le modèle de script XFA complet ainsi que FormCalc. Pour plus d’informations sur l’utilisation de JavaScript, voir [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 Lors de l’exécution de scripts sur le client, seul le panneau actuellement affiché peut utiliser le script. Par exemple, vous ne pouvez pas utiliser de script pour les champs situés dans le panneau A lorsque le panneau B est affiché. Lors de l’exécution de scripts sur le serveur, tous les panneaux sont accessibles.
 
@@ -139,11 +139,11 @@ Les formulaires affichés dans un navigateur web (par opposition à Adobe Reader
 * Si le test Null génère une erreur et que vous quittez un champ sans spécifier de valeur, une zone de message s’affiche et vous êtes repositionné dans le champ après avoir cliqué sur OK.
 * Si un test Null génère un avertissement et que vous quittez un champ sans spécifier de valeur, vous êtes invité à cliquer sur OK ou Annuler, ce qui vous donne la possibilité de continuer sans spécifier de valeur ou de revenir au champ pour saisir une valeur.
 
-Pour plus d’informations sur le test Null, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Pour plus d’informations sur le test Null, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 ## Boutons de formulaire {#form-buttons}
 
-Cliquer sur un bouton Envoyer envoie les données de formulaire au service Forms et représente la fin du traitement du formulaire. L’événement `preSubmit` peut être configuré pour s’exécuter sur le client ou le serveur. L’événement `preSubmit` s’exécute avant l’envoi du formulaire s’il est configuré pour s’exécuter sur le client. Dans le cas contraire, l’événement `preSubmit` s’exécute sur le serveur pendant l’envoi du formulaire. Pour plus d’informations sur l’événement `preSubmit`, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Cliquer sur un bouton Envoyer envoie les données de formulaire au service Forms et représente la fin du traitement du formulaire. L’événement `preSubmit` peut être configuré pour s’exécuter sur le client ou le serveur. L’événement `preSubmit` s’exécute avant l’envoi du formulaire s’il est configuré pour s’exécuter sur le client. Dans le cas contraire, l’événement `preSubmit` s’exécute sur le serveur pendant l’envoi du formulaire. Pour plus d’informations sur l’événement `preSubmit`, consultez la section [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 Si aucun script côté client n’est associé à un bouton, les données sont envoyées au serveur, les calculs sont effectués sur le serveur et le formulaire HTML est généré de nouveau. Si un bouton contient un script côté client, les données ne sont pas envoyées au serveur et le script côté client est exécuté dans le navigateur web.
 
@@ -167,7 +167,7 @@ Le script suivant conserve la fonction `fillColor` d’un champ en fonction de l
 ```
 
 >[!NOTE]
->Les objets statiques ne s’affichent pas dans un formulaire HTML généré lorsqu’ils sont imbriqués dans la cellule d’un tableau. Par exemple, un cercle et un rectangle imbriqués dans une cellule de tableau ne s’affichent pas dans un formulaire HTML de rendu. Toutefois, ces mêmes objets statiques s’affichent correctement lorsqu’ils sont situés en dehors du tableau.
+Les objets statiques ne s’affichent pas dans un formulaire HTML généré lorsqu’ils sont imbriqués dans la cellule d’un tableau. Par exemple, un cercle et un rectangle imbriqués dans une cellule de tableau ne s’affichent pas dans un formulaire HTML de rendu. Toutefois, ces mêmes objets statiques s’affichent correctement lorsqu’ils sont situés en dehors du tableau.
 
 ## Signature numérique de formulaires HTML {#digitally-signing-html-forms}
 
@@ -189,7 +189,7 @@ Vous pouvez générer un formulaire HTML complet conforme aux directives d’acc
 Il est recommandé de limiter l’utilisation des règles de validation pour les champs de formulaire lors du rendu du formulaire en tant que formulaire HTML. Certaines règles de validation peuvent ne pas être prises en charge pour les formulaires HTML. Par exemple, lorsqu’un modèle de validation MM-JJ-AAAA est appliqué à un champ `Date/Time` qui se trouve dans une conception de formulaire générée sous la forme HTML, il ne fonctionne pas correctement, même si la date est saisie correctement. Cependant, ce modèle de validation fonctionne correctement pour les formulaires générés en tant que PDF.
 
 >[!NOTE]
->Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
+Pour plus d’informations à propos du service Forms, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ## Résumé des étapes {#summary-of-steps}
 
@@ -224,10 +224,10 @@ Lors du rendu d’un formulaire en tant que HTML, vous pouvez spécifier une val
 Les URL HTTP où les données du formulaire sont envoyées peuvent être spécifiées en définissant l’URL cible à l’aide de l’API client du service Forms ou peuvent être spécifiées dans le bouton Envoyer contenu dans la conception de formulaire XDP. Si l’URL cible est spécifiée dans la conception de formulaire, ne définissez pas de valeur à l’aide de l’API client du service Forms.
 
 >[!NOTE]
->Le rendu d’un formulaire de HTML avec une barre d’outils est facultatif.
+Le rendu d’un formulaire de HTML avec une barre d’outils est facultatif.
 
 >[!NOTE]
->Si vous générez un formulaire AHTML, il est recommandé de ne pas ajouter de barre d’outils au formulaire.
+Si vous générez un formulaire AHTML, il est recommandé de ne pas ajouter de barre d’outils au formulaire.
 
 **Rendre un formulaire au format HTML**
 
@@ -278,7 +278,7 @@ Renvoyez un formulaire au format HTML à l’aide de l’API Forms (Java) :
    * Pour effectuer le rendu du formulaire HTML dans des balises HTML complètes, appelez la méthode `setOutputType` de l’objet `HTMLRenderSpec` et transmettez `OutputType.FullHTMLTags`. (Ce réglage est facultatif.)
 
    >[!NOTE]
-   >Les formulaires ne s’affichent pas correctement au format HTML lorsque l’option `StandAlone` est `true` et le `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant les AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   Les formulaires ne s’affichent pas correctement au format HTML lorsque l’option `StandAlone` est `true` et le `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant les AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Effectuer le rendu d’un formulaire HTML
 
@@ -335,7 +335,7 @@ Générez un formulaire HTML à l’aide de l’API Forms (Web Service) :
    * Pour générer le formulaire HTML avec des balises HTML complètes, appelez la méthode `setOutputType` de l’objet `HTMLRenderSpec` et transmettez `OutputType.FullHTMLTags`.
 
    >[!NOTE]
-   >Les formulaires ne sont générés correctement en HTML lorsque l’option `StandAlone` est `true` et que `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
+   Les formulaires ne sont générés correctement en HTML lorsque l’option `StandAlone` est `true` et que `ApplicationWebRoot` référence un serveur autre que le serveur d’applications J2EE hébergeant AEM Forms (la valeur `ApplicationWebRoot` est spécifiée à l’aide de l’objet `URLSpec` qui est transmis à la méthode `(Deprecated) renderHTMLForm` de l’objet `FormsServiceClient`). Lorsque `ApplicationWebRoot` est un serveur autre que celui qui héberge AEM Forms, la valeur de l’URI racine web dans la console d’administration doit être définie comme valeur de l’URI de l’application web du formulaire. Pour ce faire, connectez-vous à la console d’administration, cliquez sur Services > Forms, puis définissez l’URI racine web sur https://server-name:port/FormServer. Enregistrez ensuite vos paramètres.
 
 1. Effectuer le rendu d’un formulaire HTML
 
