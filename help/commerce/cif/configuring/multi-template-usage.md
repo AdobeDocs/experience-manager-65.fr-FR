@@ -10,9 +10,9 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 09e986c4-16b9-4ef5-a0b3-8d65b17a7f2c
 source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,6 +22,6 @@ Les [composant principaux AEM CIF](https://github.com/adobe/aem-core-cif-compone
 
 >[!VIDEO](https://video.tv.adobe.com/v/28969/?quality=12)
 
-Vous trouverez plus d’informations sur cette rubrique à partir de la ressource suivante :
+Vous trouverez plus d’informations à ce sujet dans les ressources suivantes :
 
-- [Composants principaux AEM CIF – Configuration de pages multi-catalogue](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
+- [Composants principaux AEM CIF – Configuration de pages multi-catalogue](https://github.com/adobe/aem-core-cif-components/wiki/configuration#multi-catalog-page-template-configuration)
