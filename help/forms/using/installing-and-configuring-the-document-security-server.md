@@ -1,7 +1,7 @@
 ---
 title: Installer et configurer le serveur Protection du document
 seo-title: Installing and configuring the document security server
-description: 'La protection du document vous permet de distribuer en toute sécurité toute information enregistrée dans un format pris en charge. Seuls les utilisateurs autorisés peuvent accéder aux documents protégés. '
+description: La protection du document vous permet de distribuer en toute sécurité toute information enregistrée dans un format pris en charge. Seuls les utilisateurs autorisés peuvent accéder aux documents protégés.
 seo-description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents.
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
@@ -9,7 +9,7 @@ discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
 ht-degree: 100%
 
