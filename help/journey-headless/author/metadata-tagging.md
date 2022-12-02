@@ -3,7 +3,7 @@ title: En savoir plus sur la définition de métadonnées et de balisage pour le
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: b4cc1311-1ef7-409a-bd41-0456519b3436
 source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '237'
 ht-degree: 100%
 
