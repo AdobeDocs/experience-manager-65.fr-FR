@@ -1,7 +1,7 @@
 ---
 title: Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire
 seo-title: Adding information from user data to form submission metadata
-description: 'Découvrez comment ajouter des informations aux métadonnées d’un formulaire envoyé avec des données fournies par l’utilisateur. '
+description: Découvrez comment ajouter des informations aux métadonnées d’un formulaire envoyé avec des données fournies par l’utilisateur.
 seo-description: Learn how to add information to metadata of a submitted form with user provided data.
 uuid: c3eea3c0-31f8-4bf8-b5cf-34f907bdbdba
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,8 +11,8 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '685'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
