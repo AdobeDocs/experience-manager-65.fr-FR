@@ -3,8 +3,8 @@ title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
-source-wordcount: '1693'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
