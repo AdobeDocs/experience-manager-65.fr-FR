@@ -1,11 +1,11 @@
 ---
 title: Utilisation du mode Disposition pour redimensionner les composants pour la communication interactive
-description: 'Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
+description: Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '867'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
