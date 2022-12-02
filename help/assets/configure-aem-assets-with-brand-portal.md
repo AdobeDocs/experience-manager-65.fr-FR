@@ -13,8 +13,8 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: tm+mt
-source-wordcount: '2088'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
