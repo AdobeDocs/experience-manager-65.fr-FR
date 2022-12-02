@@ -4,7 +4,7 @@ description: Créez plusieurs éditeurs statiques dans Adobe Experience Manage
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
 ht-degree: 100%
 
