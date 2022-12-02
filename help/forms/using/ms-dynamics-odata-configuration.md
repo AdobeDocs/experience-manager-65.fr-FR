@@ -10,8 +10,8 @@ discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '1206'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
 
 1. Exécutez la commande suivante :
 
-   `Add-AdfsClient -ClientId “<Client-ID>” -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
+   `Add-AdfsClient -ClientId "<Client-ID>" -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
    Où :
 
@@ -104,7 +104,7 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
 
 1. Exécutez la commande ci-dessous pour octroyer l’accès sur l’ordinateur AD FS :
 
-   `Grant-AdfsApplicationPermission -ClientRoleIdentifier “<Client-ID>” -ServerRoleIdentifier <resource> -ScopeNames openid`
+   `Grant-AdfsApplicationPermission -ClientRoleIdentifier "<Client-ID>" -ServerRoleIdentifier <resource> -ScopeNames openid`
 
    Où :
 
