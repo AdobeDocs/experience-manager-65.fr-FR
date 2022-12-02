@@ -6,8 +6,8 @@ role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
-workflow-type: tm+mt
-source-wordcount: '1424'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -140,8 +140,8 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 
 >[!MORELIKETHIS]
 >
->* [Utilisation de l’appli de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Configuration des actions de bureau dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Utilisation de l’appli de bureau Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
+>* [Configuration des actions de bureau dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2)
 >* [Création d’objets dynamiques liés dans Adobe Photoshop](https://helpx.adobe.com/fr/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Placement de graphiques dans Adobe InDesign](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html)
 
