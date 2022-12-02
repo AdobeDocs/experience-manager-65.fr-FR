@@ -1,5 +1,5 @@
 ---
-title: 'Mise à jour du lien vers la documentation '
+title: Mise à jour du lien vers la documentation
 seo-title: Updating the link to the documentation
 description: Comment mettre à jour la destination du lien d’aide de l’espace de travail dans l’espace de travail AEM Forms pour renvoyer à votre lien de documentation personnalisé.
 seo-description: How-to update the destination of Workspace Help link in AEM Forms workspace to point to your custom documentation link.
@@ -11,8 +11,8 @@ topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 exl-id: ca637bea-05c1-4920-9283-e782f07607de
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '141'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
