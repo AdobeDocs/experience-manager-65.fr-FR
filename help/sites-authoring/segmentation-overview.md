@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 exl-id: 61a5875f-ad09-4971-a886-b0d88e0c9967
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
 ht-degree: 100%
 
