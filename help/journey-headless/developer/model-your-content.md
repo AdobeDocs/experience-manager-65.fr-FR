@@ -3,8 +3,8 @@ title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
-source-wordcount: '1826'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
