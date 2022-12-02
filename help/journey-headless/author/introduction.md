@@ -3,8 +3,8 @@ title: Parcours de création de contenu découplé AEM
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment créer du contenu pour votre projet.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
-source-wordcount: '630'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
