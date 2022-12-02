@@ -3,8 +3,8 @@ title: Traduction du contenu
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
-source-wordcount: '2174'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
