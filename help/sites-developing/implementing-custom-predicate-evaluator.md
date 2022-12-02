@@ -12,8 +12,8 @@ discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
-source-wordcount: '774'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -148,7 +148,7 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
 
    src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
-   Le fragment suivant présente les différences au [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
+   Le fragment suivant présente les différences au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
 
 ```
 @@ -19,8 +19,11 @@
