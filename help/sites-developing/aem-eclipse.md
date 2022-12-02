@@ -1,7 +1,7 @@
 ---
 title: AEM Developer Tools for Eclipse
 seo-title: AEM Developer Tools for Eclipse
-description: AEM Outils de développement pour Eclipse
+description: AEM Developer Tools for Eclipse
 seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '808'
 ht-degree: 100%
 
 ---
 
-# AEM Outils de développement pour Eclipse{#aem-developer-tools-for-eclipse}
+# AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
 ![](do-not-localize/chlimage_1-9.png)
 
