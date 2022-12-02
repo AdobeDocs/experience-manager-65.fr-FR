@@ -13,7 +13,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1418'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Les formulaires HTML5 peuvent contenir des champs axés sur des données (tablea
 * Utilisez des scripts XFA pour obtenir une navigation paginée pour afficher les champs axés sur des données (tableaux et sous-formulaires). Dans la navigation paginée, seules des données spécifiques sont affichées sur une page. Il limite l’opération de peinture du navigateur aux champs affichés à un moment donné et facilite la navigation dans un formulaire. De plus, les utilisateurs des périphériques mobiles sont intéressés uniquement par un sous-ensemble de données. Cela permet de fournir une expérience utilisateur de grande qualité et de réduire le délai nécessaire au chargement des données requises. Vous obtenez deux solutions pour le prix d’une.  Notez également que la navigation paginée n’est pas disponible en mode prêt à l’emploi. Vous pouvez utiliser des scripts XFA en vue de développer la navigation paginée.
 
 * Envisagez de fusionner plusieurs colonnes en lecture seule en une seule colonne. Cela réduit la mémoire requise pour afficher le formulaire. En outre, il est préférable de ne pas afficher les colonnes qui n’exigent aucune intervention de la part de l’utilisateur.
-* Envisagez de diviser le formulaire axé sur des données pour obtenir un [ensemble de formulaires](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html) si les suggestions ci-dessus ne produisent pas de nombreuses améliorations. Par exemple, si un tableau contient plus de 1 000 lignes, déplacez alors chaque ensemble de 100 lignes dans un formulaire différent. Cela permet d’améliorer le temps de chargement et les performances des formulaires.  Notez également qu’un jeu de formulaires produit un fichier XML d’envoi consolidé pour tous les formulaires. Pour différencier les données de chaque formulaire, utilisez différentes racines de données. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
+* Envisagez de diviser le formulaire axé sur des données pour obtenir un [ensemble de formulaires](https://helpx.adobe.com/fr/aem-forms/6-3/formset-in-aem-forms.html) si les suggestions ci-dessus ne produisent pas de nombreuses améliorations. Par exemple, si un tableau contient plus de 1 000 lignes, déplacez alors chaque ensemble de 100 lignes dans un formulaire différent. Cela permet d’améliorer le temps de chargement et les performances des formulaires.  Notez également qu’un jeu de formulaires produit un fichier XML d’envoi consolidé pour tous les formulaires. Pour différencier les données de chaque formulaire, utilisez différentes racines de données. Pour plus d’informations, voir [Jeu de formulaires dans AEM Forms](https://helpx.adobe.com/fr/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Puissance deux pour le document d’enregistrement {#power-of-two-for-document-of-record-dor}
 
