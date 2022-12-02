@@ -9,8 +9,8 @@ role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
-workflow-type: tm+mt
-source-wordcount: '760'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Consultez également la section [Utilisation d’une image « ressource » au 
 
 **Pour déployer des ensembles de règles XML, procédez comme suit :**
 
-1. Connectez-vous à l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+1. Connectez-vous à l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#sign-in-dmc-app).
 
    Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
 
