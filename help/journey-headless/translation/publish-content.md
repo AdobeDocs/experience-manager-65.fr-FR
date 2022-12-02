@@ -3,7 +3,7 @@ title: Publication du contenu traduit
 description: Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
 ht-degree: 100%
 
