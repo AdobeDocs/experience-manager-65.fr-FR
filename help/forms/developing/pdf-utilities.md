@@ -12,7 +12,7 @@ discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 role: Developer
 exl-id: e4b204ee-7261-42b8-8db8-a92aa9fd0a28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2579'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour converti
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -130,7 +130,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour convertir
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Guide de référence des services AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -217,7 +217,7 @@ Vous pouvez utiliser les API Java et de service web PDF Utilities pour récupé
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service web PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service web PDF Utilities, consultez la section [Guide de référence des services AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -314,7 +314,7 @@ Vous pouvez utiliser les API Java et du service web du service PDF Utilities pou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service PDF Utilities, consultez [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -451,7 +451,7 @@ Vous pouvez utiliser les API Java PDF Utilities pour convertir par programmation
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service PDF Utilities, consultez la section [Guide de référence des services d’AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
