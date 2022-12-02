@@ -13,7 +13,7 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -31,12 +31,12 @@ Cette section décrit comment créer et gérer des pages avec Adobe Experience�
 
 En tant qu’auteur, vous devez organiser votre site web dans AEM. Cela implique de créer et de nommer vos pages de contenu de façon à ce que :
 
-* les trouver facilement dans l’environnement de création ;
-* les visiteurs sur votre site peuvent facilement les parcourir dans l’environnement de publication.
+* vous puissiez les trouver facilement dans l’environnement de création ;
+* les visiteurs sur votre site puissent facilement les parcourir dans l’environnement de publication.
 
 Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour organiser votre contenu.
 
-La structure d’un site web peut être comparée à celle d’un *arbre* qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
+La structure d’un site Web peut être comparée à celle d’un *arbre* qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
 Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est accessible la page `Triangle` :
 
@@ -48,7 +48,7 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Selon la configuration de votre instance, utilisez `/content` peut être facultatif dans l’environnement de publication.
+   Selon la configuration de votre instance, le segment `/content` peut être facultatif dans l’environnement de publication.
 
 ```xml
   /content
@@ -70,7 +70,7 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
     /...
 ```
 
-Cette structure peut être visualisée à partir de la console Sites Web, que vous pouvez utiliser pour [parcourir la structure de l’arborescence ;](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Cette structure est visible à partir de la console Sites Web, que vous pouvez utiliser pour [parcourir l’arborescence](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -88,9 +88,9 @@ Lors de la création d’une page, il y a deux champs clés :
    * Il est utilisé pour générer l’URI.
    * L’entrée utilisateur pour ce champ est facultative. Si le nom n’est pas spécifié, il est dérivé du titre.
 
-Lors de la création d’une page, AEM [valider le nom de la page en fonction des conventions ;](/help/sites-developing/naming-conventions.md) imposé par AEM et JCR.
+Lors de la création d’une page, AEM [valide le nom de la page en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
-L’implémentation et la liste des caractères autorisés diffèrent légèrement selon l’interface utilisateur (elle est plus étendue pour l’interface utilisateur tactile), mais le minimum autorisé est :
+La mise en œuvre et la liste des caractères autorisés diffère légèrement en fonction de l’IU (ils sont plus étendus pour l’IU activée pour les écrans tactiles), mais les caractères autorisés minimum sont les suivants :
 
 * « a » à « z »
 * « A » à « Z »
@@ -113,10 +113,10 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 
 Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
-Dans l’interface utilisateur classique, vous **impossible de saisir des caractères non valides** dans le **Nom** champ .
+Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** dans le champ **Nom**.
 
 >[!NOTE]
->Dans l’interface utilisateur tactile, vous pouvez **impossible d’envoyer des caractères non valides** dans le **Nom** champ . Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+>Dans l’IU activée pour les écrans tactiles, vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
 
 >[!NOTE]
 >
@@ -143,15 +143,15 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM est fourni avec toute une gamme de composants prêts à l’emploi qui fournissent des fonctionnalités complètes ; il s’agit notamment :
+Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. Des composants prêts à l’emploi sont fournis avec AEM pour procurer une fonctionnalité complète ; il s’agit des composants suivants :
 
 * Texte
 * Image
 * Diaporama
-* Vidéo 
+* Vidéo
 * etc.
 
-Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants ;](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponible à partir du [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibles dans le [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
 ## Gestion des pages {#managing-pages}
 
@@ -197,7 +197,7 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
    >[!NOTE]
    >
-   >Vous pouvez également créer une page lorsque vous modifiez une page existante. Utilisation de **Créer une page enfant **à partir du **Page** du sidekick, crée une page directement sous la page en cours de modification.
+   >Vous pouvez également créer une page lorsque vous modifiez une page existante. Utilisez l’option **Créer une page enfant** de l’onglet **Page** du sidekick pour créer une page directement sous la page en cours de modification.
 
 ### Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
@@ -277,7 +277,7 @@ Pour déplacer ou renommer une page :
 
    * **Déplacer**
 
-      Indiquez la page à déplacer , ce champ est généralement complété par défaut, selon la méthode de déplacement utilisée et l’endroit où vous avez lancé l’opération.
+      Indiquez la page à déplacer, ce champ est généralement complété par défaut, selon la méthode de déplacement utilisée et l’endroit où vous avez lancé l’opération.
 
    * **Renommer en**
 
@@ -294,7 +294,7 @@ Pour déplacer ou renommer une page :
       Publie à nouveau la page de référence ; ici encore, cette option peut être sélectionnée pour chaque page.
    >[!NOTE]
    >
-   >Si la page a déjà été activée, le fait de la déplacer la désactivera automatiquement. Par défaut, elle sera réactivée une fois le déplacement terminé. Vous pouvez toutefois changer ce comportement en désélectionnant l’option **Republier** pour la page dans la fenêtre **Déplacer.**
+   >Si la page a déjà été activée, le fait de la déplacer la désactivera automatiquement. Par défaut, elle sera réactivée une fois le déplacement terminé. Vous pouvez toutefois changer ce comportement en désélectionnant l’option **Republier** pour la page dans la fenêtre **Déplacer**.
 
 1. Cliquez sur **Déplacer**, puis sur **OK** pour confirmer l’opération.
 
@@ -331,7 +331,7 @@ Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-classic-ui-auth
 >Les dossiers doivent eux aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom du dossier.
 
 1. Ouvrez la console **Sites web**, puis accédez à l’emplacement requis.
-1. Dans le menu **Nouveau** (cliquez sur la flèche en regard de l’option **Nouveau**), sélectionnez **Nouveau dossier**.
+1. Dans le menu **Nouveau...** (cliquez sur la flèche en regard de l’option **Nouveau...**), sélectionnez **Nouveau dossier...**.
 1. La boîte de dialogue **Créer un dossier** s’affiche. Vous pouvez saisir un **nom** et un **titre** :
 
    ![chlimage_1-152](assets/chlimage_1-152.png)

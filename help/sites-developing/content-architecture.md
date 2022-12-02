@@ -1,7 +1,7 @@
 ---
 title: Architecture de contenu
 seo-title: Content Architecture
-description: 'Conseils pour la conception de votre contenu (conseil : tout est contenu)'
+description: Quelques conseils pour la conception de votre contenu (un indice - tout est contenu)
 seo-description: Tips for architecting your content in Adobe Experience Manager (AEM). (hint - everything is content)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
@@ -13,7 +13,7 @@ exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,17 +21,17 @@ ht-degree: 86%
 
 ## Suivez le modèle de David {#follow-david-s-model}
 
-Le modèle de David a été élaboré par David Nuescheler il y a quelques années. Cependant, les principes sont toujours valables aujourd’hui. Les principaux principes du modèle de David sont les suivants :
+Le modèle de David a été élaboré par David Nuescheler il y a quelques années. Cependant, ses principes sont toujours valables aujourd’hui. Voici les principes fondamentaux du modèle de David :
 
-* Les données viennent en premier, la structure plus tard. Normalement…
+* D’abord les données, ensuite la structure. OK.
 * Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger.
-* Les espaces de travail sont destinés à `clone()`, `merge()`, et `update()`.
+* Les espaces de travail sont destinés à `clone()`, `merge()` et `update()`.
 * Méfiez-vous des SNS (Same Name Siblings).
 * Les références sont considérées comme dangereuses.
 * Les fichiers sont des fichiers, et rien d’autre.
-* Les identifiants sont mauvais.
+* Les identifiants, c’est le mal.
 
-Le modèle de David est disponible sur le wiki Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Pour consulter le modèle de David, accédez au wiki Jackrabbit à l’adresse [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Tout est contenu {#everything-is-content}
 
@@ -49,9 +49,9 @@ Les servlets doivent être définis en fonction des types de ressource plutôt q
 
 Les types de nœud fonctionnent à un niveau inférieur du calque d’infrastructure. Il est, en outre, possible de répondre à la plupart des exigences en utilisant une propriété sling:resourceType affectée à un type de nœud nt:unstructured, oak:Unstructured, sling:Folder ou cq:Page. Les types de nœud correspondent au schéma dans le référentiel. Changer de type de nœud peut s’avérer très coûteux à terme.
 
-### Respectez les conventions d’affectation de noms dans le JCR {#adhere-to-naming-conventions-in-the-jcr}
+### Respectez les conventions de nommage dans le JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Le respect des conventions d’affectation de noms ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Les conventions suivantes sont utilisées par Adobe dans le développement d’AEM :
+Le respect des conventions de nommage ajoute de l’homogénéité à votre codebase en réduisant le taux d’incidence des défauts et en augmentant la vitesse des développeurs qui travaillent sur le système. Adobe respecte les conventions suivantes dans le cadre du développement d’AEM :
 
 * Noms des nœuds
 

@@ -14,7 +14,7 @@ exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Le console web offre une sélection d’onglets pour le maintien les lots OSGi d
 
 Toutes les modifications apportées sont immédiatement appliquées au système en cours d’exécution. Le redémarrage n’est pas requis.
 
-La console est accessible à partir de `../system/console`; par exemple :
+Cette console est accessible à partir de `../system/console` ; par exemple :
 
 `http://localhost:4502/system/console/components`
 
@@ -50,11 +50,11 @@ L’onglet **Configuration** est utilisé pour configurer les lots OSGi. Il s’
 
 L’onglet **Configuration** est accessible soit via :
 
-* Le menu déroulant :
+* Le menu déroulant :
 
    **OSGi >**
 
-* L’URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -64,12 +64,14 @@ Une liste des configurations s’affiche :
 
 Il existe deux types de configurations disponibles à partir des listes déroulantes de cet écran :
 
-* **Configurations** Vous permet de mettre à jour les configurations existantes. Elles ont une identité permanente (PID) et peuvent être :
+* **Configurations**
+Vous permet de mettre à jour les configurations existantes. Elles ont une identité permanente (PID) et peuvent être :
 
    * standard et intégrales pa rapport à AEM ; elles sont nécessaires, car si on les supprime, leurs valeurs sont renvoyées aux paramètres par défaut.
    * des instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur. Leur suppression entraîne la suppression de l’instance. 
 
-* **Configurations d’usine** Vous permet de créer une instance de l’objet de la fonctionnalité requise. 
+* **Configurations d’usine**
+Vous permet de créer une instance de l’objet de la fonctionnalité requise. 
 
    Elles se verront attribuer une identité permanente, puis seront répertoriées dans les configurations de la liste déroulante.
 
@@ -87,29 +89,29 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Réinitialiser**
 
-   Réinitialisez les paramètres affichés à l’écran pour les derniers enregistrés.
+   Réinitialise les paramètres affichés sur l’écran pour revenir à ceux enregistrés en dernier.
 
 * **Supprimer**
 
-   Supprimez la configuration actuelle. S’il s’agit d’une configuration standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle a été créée à partir d’une configuration d’usine, l’instance spécifiée est supprimée.
+   Supprime la configuration actuelle. S’il s’agit d’une configuration standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle a été créée à partir d’une configuration d’usine, l’instance spécifiée est supprimée.
 
-* **Délier**
+* **Dissocier**
 
-   Déliez la configuration actuelle du lot.
+   Dissocie la configuration actuelle du lot.
 
 * **Annuler**
 
-   Annuler les modifications en cours.
+   Annule toutes les modifications actuelles.
 
 ## Lots {#bundles}
 
-Le **Lots** tab est le mécanisme d’installation des lots OSGi requis pour AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
+L’onglet **Lots** correspond au mécanisme permettant d’installer les lots OSGi requis par AEM. Cet onglet est accessible via l’une des méthodes suivantes : 
 
-* Le menu déroulant :
+* Le menu déroulant :
 
    **OSGi >**
 
-* L’URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/bundles`
 
@@ -117,25 +119,25 @@ Une liste de lots s’affiche :
 
 ![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
-En utilisant cet onglet vous pouvez :
+En utilisant cet onglet vous pouvez réaliser les opérations suivantes :
 
-* **Installation ou mise à jour**
+* **Installer ou mettre à jour**
 
-   Vous pouvez **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **Début** immédiatement et à quel moment **Niveau de départ**.
+   Vous pouvez utiliser l’option **Parcourir** pour trouver le fichier contenant votre lot et spécifier s’il doit **commencer** immédiatement et à quel **niveau de départ**.
 
 * **Recharger**
 
    Actualise la liste affichée.
 
-* **Actualisation des modules**
+* **Actualiser des modules**
 
-   Cela vérifiera les références de tous les packages et les actualisera si nécessaire.
+   Cette option permettra de vérifier les références de tous les modules et de les actualiser si besoin est.
 
    Par exemple, après une mise à jour, l’ancienne et la nouvelle version peuvent toujours être exécutées en raison de références antérieures. Cette option permettra de vérifier et de déplacer toutes les références vers la nouvelle version, ce qui permettra d’arrêter l’ancienne version.
 
 * **Démarrer**
 
-   Commence un lot en fonction du niveau de départ spécifié.
+   Lance un lot en fonction du niveau initial spécifié.
 
 * **Arrêter**
 
@@ -143,11 +145,11 @@ En utilisant cet onglet vous pouvez :
 
 * **Désinstaller**
 
-   Désinstalle le lot du système.
+   Permet de désinstaller le lot du système.
 
-* **voir l’état**
+* **Afficher le statut**
 
-   La liste spécifie l’état actuel du lot ; Cliquez sur le nom d’un lot spécifique avec des informations supplémentaires.
+   La liste indique le statut actuel du lot ; en cliquant sur le nom d’un lot spécifique, vous obtenez des informations supplémentaires.
 
 >[!NOTE]
 >
@@ -155,13 +157,13 @@ En utilisant cet onglet vous pouvez :
 
 ## Composants {#components}
 
-Le **Composants** vous permet d’activer et/ou de désactiver les différents composants. Il est accessible soit par :
+L’onglet **Composants** vous permet d’activer et de désactiver divers composants. Il est accessible par les éléments suivants :
 
-* Le menu déroulant :
+* Le menu déroulant :
 
    **Principal >**
 
-* L’URL ; par exemple :
+* L’URL ; par exemple :
 
    `http://localhost:4502/system/console/components`
 

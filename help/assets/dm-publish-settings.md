@@ -12,7 +12,7 @@ exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
 source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
 workflow-type: tm+mt
 source-wordcount: '3467'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -20,19 +20,19 @@ ht-degree: 98%
 
 La configuration de la publication Dynamic Media n’est disponible que si :
 
-* Vous exécutez Dynamic Media en mode Scene7. Voir [Activation de Dynamic Media en mode Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Vous avez une *existant* **[!UICONTROL Configuration Dynamic Media]** (dans **[!UICONTROL Cloud Services]**) dans Adobe Experience Manager 6.5.11 ou version ultérieure. Voir [Création d’une configuration Dynamic Media dans Services cloud](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Vous exécutez Dynamic Media en mode Scene7. Consultez [Activation de Dynamic Media en mode Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
+* Vous disposez d’une **[!UICONTROL Configuration Dynamic Media]** *existante* (dans **[!UICONTROL Services cloud]**) dans Adobe Experience Manager, version 6.5.11 ou supérieure. Voir [Création d’une configuration Dynamic Media dans Services cloud](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Vous êtes un administrateur système d’Experience Manager disposant de droits d’administrateur.
 
 La configuration de la publication Dynamic Media est destinée aux développeurs et programmeurs chevronnés de sites web. Adobe Dynamic Media recommande que les utilisateurs qui modifient ces paramètres de publication soient familiarisés avec Adobe Dynamic Media, les normes et conventions de protocole HTTP et la technologie d’imagerie de base.
 
 La page Configuration de la publication Dynamic Media établit les paramètres par défaut qui déterminent la manière dont les ressources sont diffusées des serveurs Dynamic Media d’Adobe vers les sites web ou les applications. Si aucun paramètre n’est spécifié, le serveur Dynamic Media Adobe diffuse une ressource selon un paramètre par défaut configuré sur la page Configuration de la publication Dynamic Media.
 
-Voir aussi [Facultatif - Configuration et configuration des paramètres du mode Dynamic Media - Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) pour d’autres tâches de configuration facultatives.
+Consultez également [Facultatif - Installation et configuration de Dynamic Media - Paramètres du mode Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) pour plus de tâches de configuration facultatives.
 
 >[!NOTE]
 >
->Mise à niveau de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? La page [Paramètres généraux](/help/assets/dm-general-settings.md) et la page Configuration de la publication dans Dynamic Media sont pré-renseignées avec les valeurs issues de votre compte Dynamic Media Classic. Les exceptions correspondent à toutes les valeurs répertoriées dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toutes les modifications que vous apportez sous **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, sont reflétées dans Dynamic Media, et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page [Paramètres généraux](/help/assets/dm-general-settings.md) et de la page Configuration de la publication sont conservés entre Dynamic Media Classic et Dynamic Media sur Experience Manager.
+>Prêt à passer de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? La page [Paramètres généraux](/help/assets/dm-general-settings.md) et la page Configuration de la publication dans Dynamic Media sont pré-renseignées avec les valeurs issues de votre compte Dynamic Media Classic. Les exceptions correspondent à toutes les valeurs répertoriées dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toutes les modifications que vous apportez sous **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, sont reflétées dans Dynamic Media, et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page [Paramètres généraux](/help/assets/dm-general-settings.md) et de la page Configuration de la publication sont conservés entre Dynamic Media Classic et Dynamic Media sur Experience Manager.
 
 **Pour configurer le serveur d’images de la configuration de la publication Dynamic Media :**
 
@@ -235,10 +235,10 @@ Contactez Adobe Care si le nom du serveur est manquant ou si l’URL du serveur 
 
 #### Préparation des variantes du site Web
 
-Vous avez besoin de deux variantes d’un site Web qui lie les ressources publiées et non publiées :
+Vous avez besoin de deux variantes d’un site Web qui lie les ressources publiées et non publiées :
 
-* Version publique : liez les ressources à l’aide de la syntaxe traditionnelle de l’URL Adobe Dynamic Media.
-* Version intermédiaire : liez les ressources en utilisant la même syntaxe, mais avec le nom du site de test sécurisé.
+* Version publique : liez les ressources à l’aide de la syntaxe traditionnelle de l’URL Adobe Dynamic Media.
+* Version intermédiaire : liez les ressources en utilisant la même syntaxe, mais avec le nom du site de test sécurisé.
 
 #### Exécution des tests
 

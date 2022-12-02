@@ -97,9 +97,9 @@ HTML Template Language (HTL) est un nouveau système de modèle HTML, introduit 
 |  |  |  |
 |---|---|---|
 | Présentation de HTL | [Présentation et syntaxe HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Ce document définit HTL et décrit la procédure de passage à HTL, un exemple de projet, la syntaxe, les expressions et les instructions HTL |
-| Utilisation de l’API en Java | [Use-API Java HTL](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | L’Use-API Java du langage de modèle HTML (HTL) permet à un fichier de HTL d’accéder aux méthodes d’assistance dans une classe Java. |
+| Utilisation de l’API en Java | [Use-API Java HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/use-api.html) | L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. |
 
 >[!NOTE]
 >
 >Le didacticiel en plusieurs parties peut être intéressant pour la configuration d’un nouveau projet AEM, en détaillant les principaux composants, les modèles modifiables, les bibliothèques clientes et le développement de composants :
->[Prise en main du développement AEM Sites – Tutoriel WKND](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[Prise en main du développement AEM Sites – Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)

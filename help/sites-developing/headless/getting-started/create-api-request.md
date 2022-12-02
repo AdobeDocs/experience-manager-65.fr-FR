@@ -1,11 +1,11 @@
 ---
 title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
-exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
+exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '532'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragment
 
 Les architectes de l’information doivent concevoir des requêtes pour leurs points d’entrée de canaux afin de diffuser du contenu. Ces requêtes ne doivent généralement être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, nous ne devrons en créer qu’une.
 
-1. Connectez-vous à AEM et accédez à l’interface GraphiQL :
+1. Connectez-vous à AEM en et accédez à l’interface GraphiQL :
    * Par exemple : `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
@@ -58,8 +58,8 @@ Les architectes de l’information doivent concevoir des requêtes pour leurs po
 1. Cliquez sur le bouton **Exécuter la requête** ou utilisez le raccourci `Ctrl-Enter` pour faire apparaître les résultats sous la forme JSON dans le volet de droite.
    ![Résultats GraphiQL](../assets/graphiql-results.png)
 
-1. Cliquez sur:
-   * **Documents** dans le coin supérieur droit de la page pour afficher la documentation contextuelle afin de vous aider à créer vos requêtes qui s’adaptent à vos propres modèles.
+1. Cliquez sur :
+   * **Docs** en haut à droite de la page pour afficher la documentation contextuelle afin de vous aider à créer vos requêtes adaptées à vos propres modèles ;
    * **Histoire** dans la barre d’outils supérieure pour afficher les requêtes précédentes.
       ![Documentation GraphiQL](../assets/graphiql-documentation.png)
 

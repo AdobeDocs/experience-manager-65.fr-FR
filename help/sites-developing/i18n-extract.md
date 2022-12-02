@@ -13,7 +13,7 @@ exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Configurez la manière dont l’outil xgettext-maven-plugin extrait des chaînes
 | /filter | Identifie les fichiers qui sont analysés. |
 | /parsers/vaultxml | Configure l’analyse des fichiers Vault. Identifie les nœuds JCR contenant des indices de localisation et des chaînes externalisées. Identifie également les nœuds JCR à ignorer. |
 | /parsers/javascript | Identifie les fonctions JavaScript qui externalisent les chaînes. Il n’est pas nécessaire de modifier cette section. |
-| /parsers/regexp | Configure l’analyse des fichiers de modèle Java, JSP et ExtJS. Il n’est pas nécessaire de modifier cette section. |
+| /parsers/regexp | Configure l’analyse de fichiers de modèle ExtJS, Java et JSP. Il n’est pas nécessaire de modifier cette section. |
 | /potentials | Formule de détection des chaînes à internationaliser. |
 
 ### Identification des fichiers à analyser {#identifying-the-files-to-parse}
@@ -67,10 +67,10 @@ La partie « pattern » d’une règle est utilisée pour faire correspondre l
 | Préfixe | Effet |
 |---|---|
 | / | Indique un chemin JCR. Par conséquent, ce préfixe correspond aux fichiers situés dans le répertoire jcr_root. |
-| &amp;ast; | Indique un fichier normal sur le système de fichiers. |
-| aucune | Aucun préfixe, ou modèle commençant par un nom de fichier ou de dossier, n’indique un fichier normal sur le système de fichiers. |
+| &amp;ast; | Indique un fichier ordinaire sur le système de fichiers. |
+| aucune | L’absence de préfixe, ou un motif commençant par un nom de dossier ou de fichier, indique un fichier ordinaire sur le système de fichiers. |
 
-Lorsqu’il est utilisé dans un modèle, le caractère / indique un sous-répertoire et &amp;ast; correspond à tous les caractères. Le tableau suivant répertorie plusieurs exemples de règles.
+Lorsqu’il est utilisé dans un motif, le caractère / indique un sous-répertoire et le caractère &amp;ast; correspond à tous les éléments. Le tableau suivant répertorie plusieurs exemples de règles.
 
 <table>
  <tbody>
@@ -94,7 +94,7 @@ Lorsqu’il est utilisé dans un modèle, le caractère / indique un sous-réper
    <td><code class="code">{ /exclude "/content/*" }
       { /include "/content/catalogs/geometrixx/templatepages" }
       { /include "/content/catalogs/geometrixx/templatepages/*" }</code></td>
-   <td><p>Excluez tous les fichiers sous le noeud /content .</p> <p>Incluez le noeud /content/catalogs/geometrixx/templatepages .</p> <p>Incluez tous les noeuds enfants de /content/catalogs/geometrixx/templatepages.</p> </td>
+   <td><p>Excluez tous les fichiers sous le nœud /content.</p> <p>Inclure le nœud /content/catalogs/geometrixx/templatepages.</p> <p>Inclure tous les nœuds enfants /content/catalogs/geometrixx/templatepages.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -127,7 +127,7 @@ Avec un POM : ajoutez ceci au POM :
 </build>
 ```
 
-La commande :
+La commande :
 
 ```shell
 mvn xgettext:extract
@@ -135,10 +135,10 @@ mvn xgettext:extract
 
 ### Fichiers de sortie {#output-files}
 
-* `raw.xliff`: chaînes extraites
-* `warn.log`: les avertissements (le cas échéant), si `CQ.I18n.getMessage()` L’API n’est pas utilisée correctement. Une correction est toujours nécessaire, suivie d’une nouvelle exécution.
+* `raw.xliff` : chaînes extraites
+* `warn.log` : avertissements (le cas échéant), si l’API `CQ.I18n.getMessage()` est utilisée de manière incorrecte. Une correction est toujours nécessaire, suivie d’une nouvelle exécution.
 
 * `parserwarn.log` : avertissements de l’analyseur (le cas échéant) ; problèmes de l’analyseur js, par exemple
-* `potentials.xliff` : candidats « potentiels » qui ne sont pas extraits, mais il peut s’agir de chaînes lisibles qui doivent être traduites (peuvent être ignorées ; produisent toujours un grand nombre de faux positifs)
+* `potentials.xliff` : candidats « potentiels » qui ne sont pas extraits, mais il peut s’agir de chaînes lisibles qui doivent être traduites (peuvent être ignorées ; produisent toujours un grand nombre de faux positifs).
 * `strings.xliff` : fichier xliff aplati, à importer dans ALF
-* `backrefs.txt` : permet de rechercher rapidement une chaîne donnée dans des emplacements de code source
+* `backrefs.txt` : permet de rechercher rapidement une chaîne donnée dans des emplacements de code source.

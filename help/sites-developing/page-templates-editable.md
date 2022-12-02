@@ -1,5 +1,5 @@
 ---
-title: Modèles de page - Modifiable
+title: Modèles de page  - Modifiable
 seo-title: Page Templates - Editable
 description: Les modèles modifiables ont été élaborés pour permettre aux non-développeurs de créer et de modifier des modèles, de fournir des modèles qui conservent un lien dynamique avec les pages qu’ils ont servi à créer et pour rendre le composant de page plus générique.
 seo-description: Editable templates have been introduced to, allow non-developers to create and edit templates, provide templates that retain a dynamic connection to any pages created from them, and make the page component more generic
@@ -14,13 +14,13 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
 workflow-type: tm+mt
 source-wordcount: '3249'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Modèles de pages – Modifiables {#page-templates-editable}
 
-Les modèles modifiables ont été élaborés pour :
+Les modèles modifiables ont été élaborés pour :
 
 * Permettre aux auteurs spécialisés de [créer et de modifier des modèles](/help/sites-authoring/templates.md).
 
@@ -40,7 +40,7 @@ Ce document :
 
 * vous donne un aperçu du processus de création des modèles modifiables ;
 
-   * Pour plus d’informations, voir [Création de modèles de page](/help/sites-authoring/templates.md)
+   * Pour plus d’informations, consultez la section [Création de modèles de page](/help/sites-authoring/templates.md).
 
 * décrit les tâches d’administration/de développement requises pour créer des modèles modifiables ;
 * décrit les bases techniques des modèles modifiables ;
@@ -49,8 +49,8 @@ Dans ce document, nous partons du principe que vous êtes déjà rompu à la cr�
 
 >[!NOTE]
 >
->Le tutoriel suivant peut également s’avérer intéressant pour configurer un modèle de page modifiable dans un nouveau projet :
->[Prise en main d’AEM Sites Partie 2 - Création d’une page et d’un modèle de base](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
+>Le tutoriel suivant peut également s’avérer intéressant pour configurer un modèle de page modifiable dans un nouveau projet :
+>[Prise en main d’AEM Sites Partie 2 - Création d’une page et d’un modèle de base](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
 ## Création d’un modèle {#creating-a-new-template}
 
@@ -74,7 +74,7 @@ Lors de la création d’un modèle modifiable :
    * La structure vous permet de définir les composants et le contenu de votre modèle.
    * Les composants définis dans la structure du modèle ne peuvent être ni déplacés ni supprimés dans les pages créées.
 
-      * Si vous créez un modèle dans un dossier personnalisé en dehors de l’exemple de contenu We.Retail, vous pouvez sélectionner des composants Foundation ou utiliser des [composants principaux](https://helpx.adobe.com/experience-manager/core-components/using/developing.html).
+      * Si vous créez un modèle dans un dossier personnalisé en dehors de l’exemple de contenu We.Retail, vous pouvez sélectionner des composants Foundation ou utiliser des [composants principaux](https://helpx.adobe.com/fr/experience-manager/core-components/using/developing.html).
    * Si vous souhaitez que les créateurs de pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
    * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le contenu initial.
 
@@ -131,7 +131,7 @@ Lors de la création d’un modèle modifiable :
 
 >[!TIP]
 >
->Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. À des fins d’internationalisation, la variable [fonction de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr) sont recommandées.
+>Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. Pour l’internalisation, il est recommandé d’utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 >[!NOTE]
 >
@@ -152,7 +152,8 @@ Lors de la création d’un modèle modifiable :
 Pour organiser vos modèles, vous pouvez utiliser les dossiers suivants :
 
 * **Global**
-* Spécifique au site Les dossiers spécifiques au site que vous créez pour organiser vos modèles sont créés avec des privilèges administrateur de gestion de comptes.
+* Spécifique au site
+Les dossiers spécifiques au site que vous créez pour organiser vos modèles sont créés avec des privilèges administrateur de gestion de comptes.
 
 >[!NOTE]
 >
@@ -212,13 +213,13 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
 
    Le groupe `template-authors` est le groupe par défaut qui doit être affecté. Pour plus d’informations, consultez la section suivante [ACL et groupes](/help/sites-developing/page-templates-editable.md#acls-and-groups).
 
-   Voir [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management) pour plus d’informations sur la gestion et l’attribution des droits d’accès.
+   Pour plus d’informations sur la gestion et l’affectation de droits d’accès, consultez la section [Gestion des droits d’accès.](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 
 ### Utilisation de l’explorateur de configurations {#using-the-configuration-browser}
 
 1. Accédez à **Navigation globale** > **Outils** > **Explorateur de configurations**.
 
-   Les dossiers existants sont répertoriés à gauche, y compris le **global** dossier.
+   Les dossiers existants sont répertoriés à gauche, y compris le dossier **Global**.
 
 1. Cliquez sur **Créer**.
 1. Les champs suivants doivent être configurés dans la boîte de dialogue **Créer une configuration** :
@@ -246,7 +247,7 @@ Le groupe `template-authors` est utilisé pour gérer l’accès aux modèles. I
 
 >[!CAUTION]
 >
->Le groupe `template-authors` est destiné uniquement aux utilisateurs qui doivent pouvoir créer des modèles.**
+>Le groupe `template-authors` est destiné *uniquement* aux utilisateurs qui doivent pouvoir créer des modèles.
 >
 >La modification des modèles est une fonctionnalité très puissante qui, si elle n’est pas exécutée correctement, peut entraîner l’échec des modèles existants. Par conséquent, ce rôle doit être ciblé et ne contenir que des utilisateurs qualifiés.
 
@@ -310,7 +311,7 @@ Ce groupe `template-authors` par défaut couvre les configurations de projet dan
 
 #### Modèles hérités sous /conf/global {#legacy-templates-under-conf-global}
 
-Les modèles ne doivent plus être stockés dans `/conf/global`, toutefois, pour certaines installations héritées, il se peut qu’il y ait encore des modèles à cet emplacement. SEULEMENT dans de telles situations héritées, les éléments suivants doivent être utilisés : `/conf/global` les chemins d’accès doivent être explicitement configurés.
+Les modèles ne doivent normalement plus être stockés dans `/conf/global`, cependant, pour certaines installations plus anciennes, il se peut qu’il en reste à cet emplacement. Dans ce cas UNIQUEMENT, les chemins d’accès `/conf/global` ci-dessous doivent être configurés explicitement.
 
 <table>
  <tbody>
@@ -322,9 +323,9 @@ Les modèles ne doivent plus être stockés dans `/conf/global`, toutefois, pour
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Modèle Auteurs</td>
+   <td>Modèle  Auteurs</td>
    <td>lecture, écriture, réplication</td>
-   <td>Créateurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans <code>/conf/global</code></td>
+   <td>Auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans <code>/conf/global</code></td>
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
@@ -334,13 +335,13 @@ Les modèles ne doivent plus être stockés dans `/conf/global`, toutefois, pour
   <tr>
    <td>Auteurs de contenu</td>
    <td>réplication</td>
-   <td>Les auteurs de contenu doivent activer les modèles d’une page lors de l’activation d’une page.</td>
+   <td>Lors de l’activation d’une page, les auteurs de contenu doivent activer les modèles correspondants.</td>
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>lecture, écriture, réplication</td>
-   <td>Créateurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans <code>/conf/global</code></td>
+   <td>Auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans <code>/conf/global</code></td>
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
@@ -356,7 +357,7 @@ Les modèles ne doivent plus être stockés dans `/conf/global`, toutefois, pour
    <td rowspan="2"><code>/conf/global/settings/wcm/template-types</code></td>
    <td>Créateur de modèles</td>
    <td>lecture</td>
-   <td>Le créateur de modèles crée un modèle basé sur l’un des types de modèles prédéfinis</td>
+   <td>L’auteur de modèles crée un modèle basé sur l’un des types de modèles prédéfinis.</td>
   </tr>
   <tr>
    <td>Utilisateur web anonyme</td>
@@ -381,7 +382,7 @@ Lors de la création d’un modèle, vous devez spécifier un type :
    * La stratégie du nœud racine, laquelle définit les composants autorisés dans l’éditeur de modèles.
    * Il est recommandé de définir les points d’arrêt pour la grille réactive et la configuration de l’émulateur mobile au niveau du type d’émulateur. Cette opération est facultative, car la configuration peut également être définie sur le modèle individuel (voir [Types de modèle et groupes de terminaux mobiles](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)).
 
-* AEM fournit une petite sélection de types de modèle prêts à l’emploi tels que Page HTML5 et Page de formulaire adaptatif.
+* AEM fournit une petite sélection de types de modèle prêts à l’emploi tels que la Page HTML5 et la Page de formulaire adaptatif.
 
    * D’autres exemples sont fournis dans le cadre de l’exemple de contenu [We.Retail](/help/sites-developing/we-retail.md).
 
@@ -393,7 +394,7 @@ Les types de modèle prêts à l’emploi sont stockés sous :
 
 >[!CAUTION]
 >
->Vous ne devez rien modifier dans le chemin `/libs`. En effet, le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut l’être lorsque vous appliquez un correctif ou un Feature Pack).
+>Vous ne devez rien modifier dans le chemin `/libs`. Cela est dû au fait que le contenu de `/libs` sera écrasé la prochaine fois que vous mettrez à niveau votre instance (et éventuellement lors de l’application d’un correctif logiciel ou d’un pack de fonctionnalités).
 
 Les types de modèle spécifiques à un site doivent être stockés dans l’emplacement comparable :
 
@@ -411,16 +412,16 @@ Les définitions de vos types de modèle personnalisés doivent être stockées 
 
 ### Types de modèle et groupes de terminaux mobiles {#template-type-and-mobile-device-groups-br}
 
-Les [groupes de périphériques](/help/sites-developing/mobile.md#device-groups) utilisés pour un modèle modifiable (défini en tant que chemin d’accès relatif de la propriété `cq:deviceGroups`) définissent les terminaux mobiles disponibles comme émulateurs dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md) de la création de pages. Vous pouvez définir cette valeur à deux emplacements :
+Les [groupes de terminaux](/help/sites-developing/mobile.md#device-groups) utilisés pour un modèle modifiable (défini en tant que chemin d’accès relatif de la propriété `cq:deviceGroups`) définissent les terminaux mobiles disponibles comme émulateurs dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md) de la création de pages. Vous pouvez définir cette valeur à deux emplacements :
 
 * Sur le type de modèle modifiable
-* Sur le modèle modifiable
+* Sur le de modèle modifiable
 
 Lors de la création d’un modèle modifiable, la valeur est copiée du type de modèle vers le modèle individuel. Si la valeur n’est pas définie sur le type, elle peut être définie sur le modèle. Une fois le modèle créé, il n’hérite d’aucun élément du type.
 
 >[!CAUTION]
 >
->La valeur de `cq:deviceGroups` doit être défini comme un chemin relatif, tel que `mobile/groups/responsive` et non en tant que chemin absolu, tel que `/etc/mobile/groups/responsive`.
+>La valeur de `cq:deviceGroups` doit être définie en tant que chemin d’accès relatif, tel que `mobile/groups/responsive`, et non comme chemin d’accès absolu, comme `/etc/mobile/groups/responsive`.
 
 >[!NOTE]
 >
@@ -432,7 +433,7 @@ Lors de la création d’un modèle modifiable, la valeur est copiée du type de
 
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
-1. Créer un modèle comme vous le feriez pour tout modèle modifiable [comme documenté ici](/help/sites-authoring/templates.md#creating-a-new-template-template-author), qui servira de base à votre type de modèle.
+1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle modifiable, [en suivant ces instructions](/help/sites-authoring/templates.md#creating-a-new-template-template-author).
 1. À l’aide de CRXDE Lite, copiez le nouveau modèle depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` `jcr:content`.
@@ -535,7 +536,7 @@ Définit le contenu initial dont une nouvelle page disposera au moment de sa cr�
 
 ### Mise en page {#layout}
 
-When [modification d’un modèle que vous pouvez définir](/help/sites-authoring/templates.md), ceci utilise [mise en page réactive standard](/help/sites-authoring/responsive-layout.md) qui peut également être [configuré](/help/sites-administering/configuring-responsive-layout.md).
+Lors de la [modification d’un modèle, vous pouvez définir la mise en page](/help/sites-authoring/templates.md) et utiliser une [mise en page réactive standard](/help/sites-authoring/responsive-layout.md) qui peut également être [configurée](/help/sites-administering/configuring-responsive-layout.md).
 
 ### Stratégies de contenu {#content-policies}
 
@@ -558,7 +559,7 @@ Fournit une référence relative à la stratégie de contenu pour le système de
 >
 >L’éditeur de page ne propose pas de mode de conception pour les pages créées à partir de modèles modifiables.
 >
->Le `policies` de l’arborescence d’un modèle modifiable présente la même hiérarchie que la configuration du mode de conception d’un modèle statique sous :
+>L’arborescence `policies` d’un modèle modifiable présente la même hiérarchie que la configuration du mode de conception d’un modèle statique sous :
 >
 >`/etc/designs/<my-site>/jcr:content/<component-name>`
 >
@@ -616,16 +617,17 @@ Fournit une référence au type de modèle.
 
 Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et les composants :
 
-* Contrôleur - `/content/<my-site>/<my-page>`
+* Contrôleur – `/content/<my-site>/<my-page>`
 Page résultante référençant le modèle. Le contenu contrôle l’ensemble du processus. En fonction des définitions, il accède au modèle et aux composants appropriés.
 
-* Configuration - `/conf/<my-folder>/settings/wcm/templates/<my-template>`
-Le [modèle et stratégies de contenu associées](#template-definitions) définissez la configuration de la page.
+* Configuration – `/conf/<my-folder>/settings/wcm/templates/<my-template>`
+Le [modèle et les stratégies de contenu associées](#template-definitions) définissent la configuration de la page.
 
-* Modèle – Lots OSGi Les [lots OSGi](/help/sites-deploying/osgi-configuration-settings.md) mettent en œuvre la fonctionnalité.
+* Modèle – Lots OSGi
+Les [lots OSGi](/help/sites-deploying/osgi-configuration-settings.md) mettent en œuvre la fonctionnalité.
 
-* Affichage - `/apps/<my-site>/components`
-Dans les environnements de création et de publication, le contenu est rendu par [components](/help/sites-developing/components.md).
+* Vue – `/apps/<my-site>/components`
+Dans les environnements de création et de publication, le contenu est rendu par des [composants](/help/sites-developing/components.md).
 
 Lors du rendu d’une page :
 

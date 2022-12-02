@@ -13,20 +13,20 @@ exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
-# Restructuration des référentiels pour AEM Communities dans la version 6.5 {#repository-restructuring-for-aem-communities-in}
+# Restructuration des référentiels pour AEM Communities dans la version 6.5 {#repository-restructuring-for-aem-communities-in}
 
-Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur la solution AEM Communities. Certaines modifications nécessitent des efforts lors du processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.4 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Communities. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers une version future.
 
 **Avec la mise à niveau vers la version 6.5**
 
 * [Modèles de notification par e-mail](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#e-mail-notification-templates)
 * [Configurations des abonnements](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#subscription-configurations)
 
-**Avant la mise à niveau ultérieure**
+**Avant de procéder à la mise à niveau vers une future version**
 
 * [Configurations des badges](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#badging-configurations)
 * [Conceptions des consoles des communautés classiques](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
@@ -54,7 +54,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Une migration manuelle est nécessaire si vous souhaitez passer à un nouveau chemin sous "<code>/apps/settings</code>". Vous pouvez utiliser le Gestionnaire de configuration Granite pour effectuer la migration.</p> <p>Vous pouvez effectuer la migration en définissant la propriété . <code>mergeList</code> to <code>true</code> sur le<code>/libs/settings/community/subscriptions</code>" et ajoutez une <code>nt:unstructured</code> noeud enfant.</p> </td>
+   <td><p>Une migration manuelle est requise pour déplacer les configurations vers le nouvel emplacement sous « <code>/apps/settings</code> ». Vous pouvez utiliser le Gestionnaire de configuration Granite pour effectuer la migration.</p> <p>Vous pouvez effectuer la migration en définissant la propriété <code>mergeList</code> sur <code>true</code> sur le nœud « <code>/libs/settings/community/subscriptions</code> » et en ajoutant un nœud enfant <code>nt:unstructured</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -77,7 +77,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Une migration manuelle est nécessaire si vous souhaitez passer à un nouveau chemin sous "<code>/apps/settings</code>". Vous pouvez utiliser le Gestionnaire de configuration Granite pour effectuer la migration.</p> <p>Vous pouvez effectuer la migration en définissant la propriété . <code>mergeList</code> to <code>true</code> sur le<code>/libs/settings/community/subscriptions</code>" et ajoutez une <code>nt:unstructured</code> noeud enfant.</p> </td>
+   <td><p>Une migration manuelle est requise pour déplacer les configurations vers le nouvel emplacement sous « <code>/apps/settings</code> ». Vous pouvez utiliser le Gestionnaire de configuration Granite pour effectuer la migration.</p> <p>Vous pouvez effectuer la migration en définissant la propriété <code>mergeList</code> sur <code>true</code> sur le nœud « <code>/libs/settings/community/subscriptions</code> » et en ajoutant un nœud enfant <code>nt:unstructured</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -100,7 +100,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td>Une tâche de migration différée est disponible pour nettoyer les configurations de Communities.<br /> <p>La tâche déplace les mots-clés depuis <code>/etc/watchwords</code> to <code>/conf/global/settings/community/watchwords</code>.</p> <p>Si des mots-clés personnalisés sont stockés dans SCM, ils doivent être déployés sur <code>/apps/settings/...</code> et vous devez vous assurer qu’il n’y a pas de recouvrement <code>/conf/global/settings/...</code> qui aurait la priorité.</p> <p>Suppression de la tâche de migration <code>/etc</code> emplacements.</p> </td>
+   <td>Une tâche de migration différée est disponible pour nettoyer les configurations de Communities.<br /> <p>La tâche déplace les mots-clés depuis <code>/etc/watchwords</code> vers <code>/conf/global/settings/community/watchwords</code>.</p> <p>Si des mots-clés personnalisés sont stockés dans SCM, ils doivent être déployés sur <code>/apps/settings/...</code>. Vous devez en outre vérifier qu’aucune configuration de recouvrement <code>/conf/global/settings/...</code> prioritaire n’existe.</p> <p>La tâche de migration supprime les emplacements <code>/etc</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -109,7 +109,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
  </tbody>
 </table>
 
-## Avant la mise à niveau ultérieure {#prior-to-upgrade}
+## Avant de procéder à la mise à niveau vers une future version {#prior-to-upgrade}
 
 ### Configurations des badges {#badging-configurations}
 
@@ -121,7 +121,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
   </tr>
   <tr>
    <td><strong>Nouveaux emplacements</strong></td>
-   <td><p><strong>Règles de badge :</strong></p> <p><code>/libs/settings/community/badging</code></p> <p><strong>Images de badge :</strong></p> <p>Pour les images par défaut : <code>/etc/community/badging/images are moved to /libs/community/badging/images</code></p> <p>Pour les images personnalisées : <code>/content/community/badging/images</code></p> <p> </p> </td>
+   <td><p><strong>Règles de badge :</strong></p> <p><code>/libs/settings/community/badging</code></p> <p><strong>Images de badge :</strong></p> <p>Pour les images par défaut : <code>/etc/community/badging/images are moved to /libs/community/badging/images</code></p> <p>Pour les images personnalisées : <code>/content/community/badging/images</code></p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
@@ -130,13 +130,13 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
      <li>Créez un compartiment contextuel de site à l’aide de l’<strong>explorateur de configuration</strong> sous <strong>Outils</strong></li>
      <li>Accédez à la racine du site</li>
      <li>Définissez <code>cq:confproperty</code> sur le chemin du compartiment où vous souhaitez stocker tous vos paramètres. Le même résultat peut être obtenu par le biais de l’<strong>assistant de modification - Définir l’entrée de configuration du cloud</strong>.</li>
-     <li>Déplacer les règles de badge et de notation appropriées à partir de <code>/etc/community/*</code> dans le compartiment contextuel du site créé à l’étape précédente.</li>
+     <li>Déplacez les règles de badge et de score appropriées depuis <code>/etc/community/*</code> vers le compartiment contextuel de site créé à l’étape précédente.</li>
      <li>Ajustez les propriétés des règles de badge et de score à la racine du site pour avoir des références relatives aux nouveaux emplacements de règles.
       <ol>
-       <li>Par exemple, si la propriété de <code>cq:conf = /conf/we-retail</code>, puis <code>badgingRules [] = community/badging/rules</code> si les règles sont maintenant déplacées vers ce nouveau compartiment.</li>
+       <li>Par exemple, si la propriété est définie pour <code>cq:conf = /conf/we-retail</code>, alors <code>badgingRules [] = community/badging/rules</code> si les règles sont maintenant déplacées vers ce nouveau compartiment.</li>
       </ol> </li>
      <li>De même, ajustez les références aux règles de score dans un nœud de règle de badge pour obtenir un chemin relatif.</li>
-    </ol> <p> </p> <p>Enfin, effectuez un nettoyage en supprimant la ressource. <code>/etc/community/badging</code></p> </td>
+    </ol> <p> </p> <p>Enfin, effectuez un nettoyage en supprimant la ressource <code>/etc/community/badging</code></p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -188,10 +188,10 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
        <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Facebook via l’interface utilisateur de création AEM dans <strong>Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Facebook</strong>.<br /> ou <br /> </li>
-       <li>Copiez les nouvelles configurations de cloud Facebook de l’emplacement précédent vers le nouvel emplacement approprié, sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Copiez toute nouvelle configuration de cloud Facebook depuis l’emplacement précédent dans le nouvel emplacement approprié, sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Mettez à jour toute racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion au réseau social Facebook en définissant la variable <code>[cq:Page]/jcr:content@cq:conf</code> vers le chemin d’accès absolu dans le nouvel emplacement.</li>
-     <li>Dissociez l’ancien service de cloud Facebook Connect Cloud des racines de site AEM Communities mises à jour pour faire référence au nouvel emplacement.</li>
+     <li>Mettez à jour n’importe quelle racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion au réseau social Facebook en définissant la propriété <code>[cq:Page]/jcr:content@cq:conf</code> sur le chemin absolu dans le nouvel emplacement.</li>
+     <li>Dissociez l’ancien service de cloud Facebook Connect des racines de site AEM Communities mises à jour pour faire référence au nouvel emplacement.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -243,11 +243,11 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
-       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Pinterest via l’interface utilisateur de création AEM dans <strong> Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Pinterest</strong>.<br /> ou</li>
-       <li>Copiez les nouvelles configurations de cloud Pinterest de l’emplacement précédent vers le nouvel emplacement approprié sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Pinterest via l’interface utilisateur de création AEM dans <strong>Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Pinterest</strong>.<br /> ou</li>
+       <li>Copiez toute nouvelle configuration de cloud Pinterest depuis l’emplacement précédent vers le nouvel emplacement approprié sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Mettez à jour toute racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion au réseau social Pinterest en définissant la variable <code>[cq:Page]/jcr:content@cq:conf</code> vers le chemin d’accès absolu dans le nouvel emplacement.</li>
-     <li>Dissociez l’ancien service de cloud Pinterest Connect Cloud des racines de site AEM Communities mises à jour pour faire référence au nouvel emplacement.</li>
+     <li>Mettez à jour toute racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion du réseau social Pinterest en définissant la propriété <code>[cq:Page]/jcr:content@cq:conf</code> sur le chemin absolu dans le nouvel emplacement.</li>
+     <li>Dissociez l’ancien service de cloud Pinterest Connect des racines de site AEM Communities mises à jour pour faire référence au nouvel emplacement.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -271,17 +271,17 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Pour s’aligner sur la nouvelle structure de référentiel, les règles de notation peuvent être stockées dans <code>/apps/settings/</code> ou /<code>conf/.../settings</code></p>
+   <td><p>Pour s’aligner sur la nouvelle structure de référentiel, les règles de score peuvent être stockées dans <code>/apps/settings/</code> ou /<code>conf/.../settings</code></p>
     <ol>
-     <li>Pour <code>/apps/settings</code>, cela agit comme des règles globales ou par défaut gérées dans SCM.</li>
-    </ol> <p>Création de configurations contextuelles dans <code>/conf/</code> en utilisant CRXDELite :</p>
+     <li>Pour <code>/apps/settings</code>, cela agit comme règles globales ou par défaut gérées dans SCM.</li>
+    </ol> <p>Créez des configurations selon le contexte dans <code>/conf/</code> à l’aide de CRXDELite :</p>
     <ol>
-     <li>Créez les configurations dans la <code>/conf/.../settings</code> location<br /> </li>
-     <li>Le site des communautés doit avoir la variable <code>cq:conf </code>ensemble de propriétés.
+     <li>Créez des configurations à l’<code>/conf/.../settings</code>emplacement<br /> souhaité. </li>
+     <li>La propriété <code>cq:conf </code> doit être définie pour le site Communities.
       <ol>
-       <li>Si non <code>cq:conf</code> est définie, les règles de notation sont directement lues à partir du chemin d’accès donné pour la propriété "".<code>scoringRules</code>" sur le noeud racine du site, par exemple : <code>/content/we-retail/us/en/community/jcr:content</code></li>
+       <li>Si aucune propriété <code>cq:conf</code> n’est définie, les règles de score sont directement lues à partir du chemin donné pour la propriété ’<code>scoringRules</code>’ au nœud racine du site, par exemple : <code>/content/we-retail/us/en/community/jcr:content</code></li>
       </ol> </li>
-    </ol> <p>Nettoyage : Supprimer la ressource <code>/etc/community/scoring</code></p> </td>
+    </ol> <p>Nettoyage : supprime la ressource. <code>/etc/community/scoring</code></p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -309,11 +309,11 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.4](/h
     <ol>
      <li>Migrez les configurations existantes de l’emplacement précédent vers le nouvel emplacement.
       <ol>
-       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Twitter via l’interface utilisateur de création d’AEM sous <strong> Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Twitter</strong>.<br /> ou <br /> </li>
-       <li>Copiez les nouvelles configurations de cloud Twitter de l’emplacement précédent vers le nouvel emplacement approprié, sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Recréez manuellement les nouvelles configurations des connexions au réseau social Twitter via l’interface utilisateur de création d’AEM sous <strong>Outils &gt; Services cloud &gt; Configuration de la connexion au réseau social Twitter</strong>.<br /> ou <br /> </li>
+       <li>Copiez toute nouvelle configuration de cloud Twitter de l’emplacement précédent dans le nouvel emplacement approprié, sous <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Mettez à jour toute racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion au réseau social Twitter en définissant la variable <code>[cq:Page]/jcr:content@cq:conf</code> vers le chemin d’accès absolu dans le nouvel emplacement.</li>
-     <li>Dissociez l’ancien service de cloud Twitter Connect Cloud des racines du site AEM Communities mises à jour pour faire référence au nouvel emplacement.</li>
+     <li>Mettez à jour toute racine de site AEM Communities pour faire référence à la nouvelle configuration de connexion du réseau social Twitter en définissant la propriété <code>[cq:Page]/jcr:content@cq:conf</code> sur le chemin absolu dans le nouvel emplacement.</li>
+     <li>Dissociez l’ancien service de cloud Twitter Connect des racines du site AEM Communities mises à jour pour faire référence au nouvel emplacement.</li>
     </ol> </td>
   </tr>
   <tr>

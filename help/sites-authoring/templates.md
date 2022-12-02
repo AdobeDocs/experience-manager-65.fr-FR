@@ -473,7 +473,7 @@ En mode **Structure** de l’éditeur de modèles :
 
    Pour supprimer une configuration, cliquez ou appuyez sur le bouton **Supprimer** situé à droite de la configuration.
 
-   Pour supprimer une configuration, cliquez ou appuyez sur le bouton ** Supprimer**.
+   Pour supprimer une configuration, cliquez ou appuyez sur le bouton **Supprimer**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 

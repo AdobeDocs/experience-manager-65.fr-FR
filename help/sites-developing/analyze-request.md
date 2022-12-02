@@ -13,7 +13,7 @@ exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -21,23 +21,23 @@ ht-degree: 39%
 
 ## Télécharger {#download}
 
-Ce script est conçu pour faciliter l’analyse de la variable `access.log` fichiers produisant un rapport lisible en vue d’un traitement ultérieur.
+Ce script facilite l’analyse des fichiers `access.log` et génère un rapport lisible pour vos activités de traitement ultérieures.
 
 [Obtenir le fichier](assets/analyse-access.sh)
 
 ## Description {#description}
 
-Ce script est conçu pour faciliter l’analyse de la variable `access.log` fichiers produisant un rapport lisible en vue d’un traitement ultérieur.
+Ce script facilite l’analyse des fichiers `access.log` et génère un rapport lisible pour vos activités de traitement ultérieures.
 
 Il produit le nombre global de requêtes, GET vs POST, la répartition des requêtes au fil du temps, etc.
 
-La sortie est en syntaxe Markdown. Il sera donc plus facile de la convertir en PDF avec des outils tels que pandoc ou de l’afficher dans un navigateur avec des modules externes tels que la visionneuse Markdown.
+La sortie est présentée en syntaxe Markdown facile à convertir au format PDF avec des outils comme pandoc ou à présenter dans un navigateur avec des modules externes comme l’observateur Markdown.
 
-Il peut analyser un chemin personnalisé fourni dans la ligne de commande.
+Il peut également analyser le chemin personnalisé saisi dans la ligne de commande.
 
-Prise du commentaire dans le fichier qui vous indique comment l’exécuter :
+Se servir du commentaire dans le fichier qui vous indique comment l’exécuter :
 
-Analyse de CQ `access.log` extrapoler diverses informations et produire une sortie Markdown sur `stdout`.
+Analysez le CQ `access.log` en extrapolant diverses informations et en générant une sortie MarkDown sur `stdout`.
 
 ## Utilisation {#usage}
 

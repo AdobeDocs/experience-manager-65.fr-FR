@@ -20,7 +20,7 @@ ht-degree: 100%
 
 # Création de page à partir de fragments de contenu{#page-authoring-with-content-fragments}
 
-Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
+Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
 
 Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
@@ -86,7 +86,7 @@ Grâce aux fragments de contenu :
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur les autres fonctionnalités d’édition, voir aussi :
+   >Pour plus d’informations sur les autres fonctionnalités d’édition, consultez aussi :
    >
    >
    >
@@ -133,7 +133,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
 * **Gérer les en-têtes comme leurs propres paragraphes**
 
-### Connexion rapide à l’éditeur de fragment   {#quick-connection-to-fragment-editor}
+### Connexion rapide à l’éditeur de fragment {#quick-connection-to-fragment-editor}
 
 Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide de l’icône **Modifier** située dans la barre d’outils du composant. Vous pourrez ainsi [modifier et gérer le fragment de contenu](/help/assets/content-fragments/content-fragments.md).
 

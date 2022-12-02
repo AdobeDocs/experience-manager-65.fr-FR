@@ -47,8 +47,8 @@ Après avoir créé un lancement, vous pouvez en modifier le nom et la date. Vou
    * Dans l’onglet **Général**, vous pouvez modifier les éléments suivants :
 
       * **Titre**
-      * **Date de mise en service** : ceci équivaut à la date de lancement 
-      * **Prêt pour la production**
+      * **Date de mise en service** : équivaut à la date de lancement.
+      * **Prêt pour l’exploitation**
 
       Reportez-vous à [Lancements - Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour obtenir des informations sur l’objectif et l’interaction de ces champs.
 
@@ -64,6 +64,6 @@ Lorsque vous modifiez le lancement d’une page, les informations sur le lanceme
 * Nom du lancement
 * Temps écoulé depuis la dernière modification
 * Utilisateur ayant effectué la dernière modification
-* L’état de l’indicateur **Prêt pour la production** (orange=non défini ; vert=défini).
+* Le statut de l’indicateur **Prêt pour l’exploitation** (orange=non défini ; vert=défini).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)

@@ -14,7 +14,7 @@ exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Par défaut, la possibilité de basculer vers de l’éditeur vers l’interface
 
 Pour réactiver l’option **Ouvrir dans l’IU classique** dans le menu **informations sur la page**, procédez comme suit.
 
-1. À l’aide de CRXDE Lite, recherchez le nœud suivant :
+1. À l’aide de CRXDE Lite, recherchez le nœud suivant :
 
    `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
@@ -32,10 +32,10 @@ Pour réactiver l’option **Ouvrir dans l’IU classique** dans le menu **infor
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Créez une superposition à l’aide de la fonction **Noeud de recouvrement** option; par exemple :
+1. Créez un recouvrement à l’aide de l’option **Nœud de recouvrement** ; par exemple :
 
-   * **Chemin**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
-   * **Emplacement du recouvrement**: `/apps/`
+   * **Chemin** : `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
+   * **Emplacement du recouvrement** : `/apps/`
    * **Faire correspondre les types de nœuds** : actif (cochez la case)
 
 1. Ajoutez la propriété de texte à valeurs multiples ci-dessous au nœud de recouvrement :

@@ -13,7 +13,7 @@ exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 92%
 
 Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour Unix et Windows. Le script démarre l’instance installée dans le répertoire *&lt;cq-installation>*.
 
-Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et ajuster l’instance AEM.
+Les deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et configurer l’instance AEM.
 
 <table>
  <tbody>
@@ -84,7 +84,7 @@ CQ_PORT=1234 ./start
 
 >[!NOTE]
 >
->Le script start lance Démarrage rapide d’AEM installé dans le dossier *&lt;cq-installation>/app*.
+>Le script start lance le déploiement Quickstart AEM installé dans le dossier *&lt;cq-installation>/app*.
 
 ## Arrêt d’Adobe Experience Manager {#stopping-adobe-experience-manager}
 
@@ -119,8 +119,8 @@ Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer)
 
 * extraire `repository.xml` à l’emplacement requis ;
 
-* update `repository.xml` selon les besoins
+* mettre à jour `repository.xml` selon les besoins ;
 
-* create `bootstrap.properties` et définir `repository.config`
+* créer `bootstrap.properties` et définir `repository.config`.
 
 Vous devez effectuer ces opérations avant de démarrer l’installation actuelle.

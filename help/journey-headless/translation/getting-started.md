@@ -188,5 +188,5 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 
 * [Manipulation de base d’AEM](/help/sites-authoring/basic-handling.md) : découvrez les principes de base de l’interface utilisateur d’AEM pour pouvoir naviguer facilement et effectuer les tâches essentielles, comme celles vous permettant de trouver votre contenu.
 * [Identification du contenu à traduire](/help/sites-administering/tc-rules.md) : découvrez comment les règles de traduction identifient le contenu à traduire.
-* [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) : découvrez comment configurer la structure d’intégration de traduction pour l’intégrer à des services de traduction tiers.
+* [Configuration du framework d’intégration de la traduction](/help/sites-administering/tc-tic.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-administering/tc-manage.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.

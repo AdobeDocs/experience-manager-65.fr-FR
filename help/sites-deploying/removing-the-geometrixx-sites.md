@@ -38,7 +38,7 @@ Un super module est également disponible :
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Ce super module contient l’ensemble des modules mentionnés ci-dessus. Pour supprimer, en une fois, l’ensemble du contenu relatif à geometrixx, cliquez sur **Désinstaller** sur ce module. Le super module passe alors dans l’état désinstallé et tous les modules qui le composent disparaissent de la vue du gestionnaire de modules.
+Ce super module contient l’ensemble des modules mentionnés ci-dessus. Pour supprimer, en une fois, l’ensemble du contenu relatif à geometrixx, cliquez sur **Désinstaller** sur ce module. Le super module passe alors dans le statut désinstallé et tous les modules qui le composent disparaissent de la vue du gestionnaire de modules.
 
 Vous disposez à présent d’une instance AEM « vide », sans aucun site de démonstration.
 

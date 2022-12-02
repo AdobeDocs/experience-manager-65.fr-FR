@@ -13,7 +13,7 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1760'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 61%
 
 Les balises constituent un moyen simple et rapide de classer le contenu de votre site web. Elles peuvent être considérées comme des mots-clés ou des étiquettes (métadonnées) qui permettent de trouver plus rapidement du contenu dans le résultat d’une recherche.
 
-Dans Adobe Experience Manager (AEM), une balise peut être une propriété de
+Dans Adobe Experience Manager (AEM), une balise peut être une propriété de l’un des éléments suivants :
 
 * Nœud de contenu d’une page (voir [Utilisation des balises](/help/sites-authoring/tags.md))
 
@@ -41,18 +41,18 @@ Voici quelques-unes des fonctionnalités des balises dans AEM :
 * Pour les balises nouvellement créées, la principale restriction réside dans le fait qu’elles doivent être uniques dans un espace de noms spécifié.
 * Le titre d’une balise ne doit pas comporter de caractères de séparation de chemin d’accès aux balises (s’il y en a, ils ne s’afficheront pas).
 
-   * deux-points `:` - délimite la balise d’espace de noms
-   * barre oblique `/` - délimite les sous-balises
+   * Deux-points `:` : délimite la balise de l’espace de noms.
+   * Barre oblique `/` : délimite les balises secondaires.
 
 * Des balises peuvent être appliquées par les créateurs et les visiteurs du site. Indépendamment de leur auteur, toutes les formes de balises peuvent être sélectionnées, tant lors de l’affectation d’une page que lors d’une recherche.
-* Les membres du groupe &quot;administrateurs-balises&quot; et les membres disposant de droits de modification sur peuvent créer des balises et modifier leur taxonomie. `/content/cq:tags`.
+* Les membres du groupe « tags-administrators » et les membres disposant de droits d’accès en modification à `/content/cq:tags` peuvent créer des balises et modifier leur taxonomie.
 
    * Une balise qui contient des balises enfants est appelée « balise conteneur ».
    * Une balise qui n’est pas une balise conteneur est appelée « balise terminale ».
    * Un espace de noms de balises est une balise terminale ou conteneur.
 
-* Les balises sont utilisées par la variable [Composant Recherche](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) pour faciliter la recherche de contenu.
-* Les balises sont utilisées par la variable [Composant Teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), qui surveille le nuage de balises d’un utilisateur pour fournir du contenu ciblé.
+* Les balises sont utilisées par le [composant Rechercher](https://helpx.adobe.com/fr/experience-manager/core-components/using/quick-search.html) pour faciliter la recherche de contenu.
+* Les balises sont également utilisées par le [composant Teaser](https://helpx.adobe.com/fr/experience-manager/core-components/using/teaser.html), qui surveille le nuage de balises d’un utilisateur pour fournir du contenu ciblé.
 * Si les balises constituent un aspect important de votre contenu :
 
    * Veillez à les regrouper avec les pages qui les utilisent.
@@ -66,19 +66,19 @@ Les balises sont gérées en les regroupant dans des espaces de noms, en vérifi
 
 Pour accéder à la console Balisage, procédez comme suit :
 
-* Sur l’instance de création.
+* en mode de création
 * Connectez-vous avec des droits d’administrateur.
 * Dans la navigation générale
 
-   * select **`Tools`**
-   * select **`General`**
-   * select **`Tagging`**
+   * sélectionnez **`Tools`**
+   * sélectionnez **`General`**
+   * sélectionnez **`Tagging`**
 
-![managing_tags_usingthetagasationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
+![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
 ### Création d’un espace de noms {#creating-a-namespace}
 
-Pour créer un espace de noms, sélectionnez le **`Create Namespace`** icône .
+Pour créer un espace de noms, sélectionnez l’icône **`Create Namespace`**.
 
 L’espace de noms est lui-même une balise et ne comporte pas forcément de balise secondaire. Cependant, pour poursuivre la création d’une taxonomie, [créez des balises secondaires](#creating-tags), qui peuvent être des balises terminales ou conteneurs.
 
@@ -86,7 +86,7 @@ L’espace de noms est lui-même une balise et ne comporte pas forcément de bal
 
 * **Titre**
 
-   *(obligatoire)* Titre affiché de l’espace de noms.
+   *(Obligatoire)* Titre affiché pour la l’espace de noms.
 
 * **Nom**
    *(facultatif)* Nom de l’espace de noms. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. Voir [ID de balise](/help/sites-developing/framework.md#tagid).
@@ -115,7 +115,7 @@ La sélection d’un espace de noms ou d’une autre balise rend les opérations
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Lorsque la fenêtre du navigateur n’est pas assez large pour afficher toutes les icônes, les icônes les plus à droite sont regroupées sous un **`... More`** qui affiche une liste déroulante des icônes d’opération masquée lorsqu’elle est sélectionnée.
+Si la fenêtre du navigateur n’est pas suffisamment large pour afficher toutes les icônes, les icônes situées le plus à droite sont regroupées sous une icône **`... More`**, qui propose une liste déroulante de toutes les icônes d’opération masquées lorsque vous la sélectionnez.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -123,7 +123,7 @@ Lorsque la fenêtre du navigateur n’est pas assez large pour afficher toutes l
 
 Lorsqu’un espace de noms est sélectionné pour la première fois, s’il ne contient aucune balise, les propriétés sont affichées à droite. Sinon, ce sont les balises enfants qui s’affichent. Chaque balise sélectionnée affiche les balises qu’elle contient ou ses propriétés si elle ne comporte pas de balises enfants.
 
-Pour sélectionner une ou plusieurs balises pour des opérations, cliquez une seule fois sur l’icône en regard du titre. Cela a pour effet d’afficher les propriétés ou d’ouvrir la balise pour en afficher le contenu.
+Pour sélectionner une ou plusieurs balises pour des opérations, sélectionnez uniquement l’icône en regard du titre. Cela a pour effet d’afficher les propriétés ou d’ouvrir la balise pour en afficher le contenu.
 
 ![chlimage_1-186](assets/chlimage_1-186.png) ![chlimage_1-187](assets/chlimage_1-187.png)
 
@@ -131,7 +131,7 @@ Pour sélectionner une ou plusieurs balises pour des opérations, cliquez une se
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez la variable **`View Properties`** permet d’afficher des informations sur la variable `name`, heure de la dernière modification et nombre de références. En cas de publication, l’heure de dernière publication et l’identifiant de la personne à l’origine de la publication s’affichent. Ces informations s’affichent dans une colonne à gauche des colonnes de balises.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **`View Properties`**, des informations comme le `name`, l’heure de la dernière modification et le nombre de références s’affichent. En cas de publication, l’heure de dernière publication et l’identifiant de la personne à l’origine de la publication s’affichent. Ces informations s’affichent dans une colonne à gauche des colonnes de balises.
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
@@ -139,7 +139,7 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez 
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous cliquez sur l’icône **Références**, le contenu auquel la balise fait référence est identifié.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Références**, le contenu auquel la balise fait référence est identifié.
 
 L’affichage initial correspond au nombre de balises appliquées.
 
@@ -155,18 +155,18 @@ Le chemin d’accès à la référence s’affiche sous la forme d’infobulle l
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné (en cliquant sur l’icône en regard du titre), une balise enfant peut être créée pour la balise active en sélectionnant l’option **`Create Tag`** icône .
+Lorsqu’un espace de noms ou une autre balise est sélectionné (en sélectionnant l’icône en regard du titre), il est possible de créer une balise enfant pour la balise active en sélectionnant l’icône **`Create Tag`**.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
 * **Titre**
-*(obligatoire) *Titre d’affichage de la balise.
+*(obligatoire)* Titre affiché pour la balise.
 
 * **Nom**
-*(facultatif) *Nom de la balise. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. Voir [ID de balise](/help/sites-developing/framework.md#tagid).
+*(facultatif)* Nom de la balise. Si aucun nom n’est spécifié, un nom de nœud valide est créé à partir du titre. Voir [ID de balise](/help/sites-developing/framework.md#tagid).
 
 * **Description**
-*(facultatif) *Description de la balise.
+*(facultatif)* Description de la balise.
 
 Une fois que les informations nécessaires ont été saisies :
 
@@ -176,11 +176,11 @@ Une fois que les informations nécessaires ont été saisies :
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, il est possible de modifier le titre, la description et de fournir des localisations du titre en sélectionnant le **`Edit`**.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, il est possible de modifier le titre et la description et de traduire le titre en sélectionnant l’icône **`Edit`**.
 
 Une fois les modifications apportées, sélectionnez **Enregistrer**.
 
-Pour plus d’informations sur l’ajout de traductions de langue, reportez-vous à la section sur [Gestion des balises dans différentes langues](#managing-tags-in-different-languages).
+Pour plus d’informations sur l’ajout de traductions, consultez la section [Gestion de balises dans différentes langues](#managing-tags-in-different-languages).
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
@@ -188,11 +188,11 @@ Pour plus d’informations sur l’ajout de traductions de langue, reportez-vous
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez la variable **`Move`** Cette icône permet aux administrateurs et aux développeurs de balises de nettoyer la taxonomie en déplaçant la balise vers un nouvel emplacement ou en la renommant. Si la balise sélectionnée est une balise conteneur, le fait de la déplacer déplace également toutes les balises enfants.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, le fait de sélectionner l’icône **`Move`** permet aux équipes d’administration et de développement des balises de nettoyer la taxonomie en déplaçant la balise vers un nouvel emplacement ou en la renommant. Si la balise sélectionnée est une balise conteneur, le fait de la déplacer déplace également toutes les balises enfants.
 
 >[!NOTE]
 >
->Il est recommandé que les auteurs ne soient autorisés qu’à [edit](#editing-tags) de la balise `title`, afin de ne pas déplacer ni renommer les balises.
+>Il est préférable que les auteurs puissent seulement [modifier](#editing-tags) le `title` d’une balise, et non la déplacer ou la renommer.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -200,13 +200,14 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez 
 
    *(lecture seule)* Chemin d’accès actuel à la balise sélectionnée.
 
-* **Déplacer vers** Accédez au nouveau chemin d’accès où déplacer la balise.
+* **Déplacer vers**
+Accédez au nouveau chemin d’accès où déplacer la balise.
 
-* **Renommer en**
-Affiche d’abord la 
-`name`de la balise . Une nouvelle `name`peut être saisie.
+* **Renommer**
+Affiche d’abord le 
+`name` actuel de la balise. Vous pouvez saisir un nouveau `name`.
 
-* Sélectionnez **Enregistrer**.
+* Sélectionnez **Enregistrer**
 
 ### Fusion des balises {#merging-tags}
 
@@ -214,15 +215,16 @@ Affiche d’abord la
 
 Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Si la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B, et la balise A n’est plus disponible pour les auteurs.
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez la variable **Fusion** ouvre un panneau dans lequel le chemin de fusion peut être sélectionné.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Fusionner**, un panneau s’ouvre dans lequel vous pouvez sélectionner le chemin d’accès à fusionner.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Chemin**
 
-   *(lecture seule)* Chemin d’accès de la balise sélectionnée pour la fusion dans une autre balise.
+   *(lecture seule)* Chemin d’accès à la balise sélectionnée à fusionner dans une autre balise.
 
-* **Fusionner dans** Accédez au chemin d’accès de la balise où effectuer la fusion.
+* **Fusionner dans**
+Accédez au chemin d’accès de la balise où effectuer la fusion.
 
 >[!NOTE]
 >
@@ -234,25 +236,25 @@ Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez 
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez la variable **Publier** pour activer la balise dans l’environnement de publication. De même que pour le contenu d’une page, seule la balise sélectionnée est publiée, qu’il s’agisse d’une balise conteneur ou non.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Publier**, la balise est activée dans l’environnement de publication. De même que pour le contenu d’une page, seule la balise sélectionnée est publiée, qu’il s’agisse d’une balise conteneur ou non.
 
-Pour publier une taxonomie (un espace de noms et des balises secondaires), il est recommandé de créer un [module](/help/sites-administering/package-manager.md) de l’espace de noms (voir [Nœud racine de taxonomie](/help/sites-developing/framework.md#taxonomy-root-node)). Veillez à [appliquer des autorisations](#setting-tag-permissions) dans l’espace de noms avant de créer le package.
+Pour publier une taxonomie (un espace de noms et des balises secondaires), il est recommandé de créer un [module](/help/sites-administering/package-manager.md) de l’espace de noms (voir [Nœud racine de taxonomie](/help/sites-developing/framework.md#taxonomy-root-node)). Avant de créer le module, veillez à [appliquer des autorisations](#setting-tag-permissions) à l’espace de noms.
 
 ### Annulation de la publication de balises {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez la variable **Annuler la publication** Cette icône désactive la balise dans l’environnement de création et la supprime de l’environnement de publication. Semblable au `Delete`si la balise sélectionnée est une balise conteneur, toutes ses balises enfants sont désactivées dans l’environnement de création et supprimées de l’environnement de publication.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Annuler la publication**, la balise est désactivée dans l’environnement de création et supprimée de l’environnement de publication. De même qu’avec l’opération `Delete`, si la balise sélectionnée est une balise conteneur, toutes les balises enfants sont désactivées dans l’environnement de création et supprimées dans l’environnement de publication.
 
 ### Suppression des balises {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-Lorsqu’un espace de noms ou une autre balise est sélectionné, sélectionnez la variable **Supprimer** supprime définitivement la balise de l’environnement de création. Si la balise a été publiée, elle est également supprimée de l’environnement de publication. Si la balise sélectionnée est une balise conteneur, toutes ses balises enfants sont elles aussi supprimées.
+Lorsqu’un espace de noms ou une autre balise est sélectionné, si vous sélectionnez l’icône **Supprimer**, la balise est définitivement supprimée dans l’environnement de création. Si la balise a été publiée, elle est également supprimée de l’environnement de publication. Si la balise sélectionnée est une balise conteneur, toutes ses balises enfants sont elles aussi supprimées.
 
 ## Définition des autorisations de balises {#setting-tag-permissions}
 
-Les autorisations de balise sont [&#39;secure (par défaut)&#39;](/help/sites-administering/production-ready.md); une bonne pratique pour l’environnement de publication qui nécessite une autorisation de lecture pour être explicitement autorisée pour les balises. Pour ce faire, il suffit grosso modo de créer un module d’espace de noms de balises une fois que les autorisations ont été définies dans l’instance de création, puis d’installer le module sur toutes les instances de publication.
+Les autorisations de balises sont [« sécurisées (par défaut) »](/help/sites-administering/production-ready.md) ; cette pratique est recommandée pour l’environnement de publication, qui nécessite des autorisations de lecture pour être utilisé explicitement avec des balises. Pour ce faire, il suffit grosso modo de créer un module d’espace de noms de balises une fois que les autorisations ont été définies dans l’instance de création, puis d’installer le module sur toutes les instances de publication.
 
 * Sur l’instance de création
 
@@ -261,11 +263,11 @@ Les autorisations de balise sont [&#39;secure (par défaut)&#39;](/help/sites-ad
 
       * Par exemple, http://localhost:4502/useradmin.
    * Dans le volet de gauche, sélectionnez le groupe (ou l’utilisateur) auquel accorder une [autorisation de lecture](/help/sites-administering/security.md#permissions).
-   * Dans le volet de droite, recherchez **Path **dans l’espace de noms de balise.
+   * Dans le volet de droite, localisez le **chemin d’accès** à l’espace de noms de balises,
 
       * par exemple, `/content/cq:tags/mycommunity`
-   * sélectionnez la variable `checkbox`dans le **Lecture** column
-   * sélectionnez **Enregistrer**
+   * Activez la `checkbox` dans la colonne **Lecture**.
+   * Sélectionnez **Enregistrer**
 
 
 
@@ -275,21 +277,21 @@ Les autorisations de balise sont [&#39;secure (par défaut)&#39;](/help/sites-ad
 
    * Une méthode consiste à [créer un module](/help/sites-administering/package-manager.md#package-manager) de l’espace de noms sur l’instance de création.
 
-      * on `Advanced` onglet, pour `AC Handling` select `Overwrite`
+      * Dans l’onglet `Advanced`, pour `AC Handling` sélectionnez `Overwrite`.
    * Répliquez le module.
 
-      * select `Replicate` à partir du gestionnaire de modules
+      * Sélectionnez `Replicate` dans le gestionnaire de modules.
 
 
 ## Gestion des balises dans différentes langues {#managing-tags-in-different-languages}
 
-Le `title`d’une balise peut être traduite en plusieurs langues. Une fois la traduction effectuée, la balise appropriée `title`peut s’afficher en fonction de la langue de l’utilisateur ou de la langue de la page.
+La propriété `title` d’une balise peut être traduite en plusieurs langues. Une fois traduit, le `title` de la balise approprié peut être affiché selon la langue de l’utilisateur ou la page.
 
 ### Définition de titres de balises dans plusieurs langues {#defining-tag-titles-in-multiple-languages}
 
-La section suivante décrit comment traduire le `title`de la balise **Animals** de l&#39;anglais à l&#39;allemand et au français.
+La procédure ci-dessous explique comment traduire le `title` de la balise **Animals** de l’anglais vers l’allemand et le français.
 
-Sélectionnez tout d’abord la balise sous le **Images de photothèque** et en sélectionnant le **`Edit`Icône ** (voir [Modification des balises](#editing-tags) ).
+Sélectionnez tout d’abord la balise sous l’espace de noms **Images de photothèque**, puis sélectionnez l’icône **`Edit`** (voir la section [Modification de balises](#editing-tags)).
 
 Dans le panneau Modifier la balise, choisissez les langues dans lesquelles localiser le titre de la balise.
 
@@ -299,20 +301,20 @@ Une fois toutes les traductions saisies, sélectionnez **Enregistrer** pour quit
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-En général, la langue sélectionnée pour la balise dépend de la langue de la page, le cas échéant. Si le widget [`tag` est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue du tag dépend du contexte.](/help/sites-developing/building.md#tagging-on-the-client-side)
+En général, la langue sélectionnée pour la balise dépend de la langue de la page, le cas échéant. Si le [widget `tag`](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
 
 Plutôt que d’utiliser le paramètre de langue de la page, la console Balisage utilise le paramètre de langue de l’utilisateur. Dans la console Balisage, pour la balise « Animals », « Animaux » s’affiche pour un utilisateur qui a défini la langue française dans ses propriétés d’utilisateur.
 
-Pour ajouter une nouvelle langue à la boîte de dialogue, voir [Ajout d’une nouvelle langue à la boîte de dialogue Modifier la balise](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog).
+Pour ajouter une nouvelle langue dans la boîte de dialogue, consultez la section [Ajout d’une nouvelle langue à la boîte de dialogue Modifier la balise](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog).
 
 >[!NOTE]
 >
->Le nuage de balises et les méta-mots-clés dans le composant de page standard utilisent la balise localisée . `titles`selon la langue de la page, le cas échéant.
+>Le nuage de balises et les éléments « meta keyword » du composant Page standard utilisent les `titles` des balises localisées en fonction de la langue de la page (si elle est disponible).
 
 ## Ressources {#resources}
 
-* [Balisage pour les développeurs](/help/sites-developing/tags.md)
+* [Balisage pour l’équipe de développement](/help/sites-developing/tags.md)
 
-   Informations sur la structure de balisage, ainsi que sur l’extension et l’inclusion de balises dans les applications personnalisées.
+   Informations sur le framework de balisage et sur l’extension et l’inclusion de balises dans des applications personnalisées.
 
 * [Console Balisage de l’interface utilisateur (IU) classique](/help/sites-administering/classic-console.md)

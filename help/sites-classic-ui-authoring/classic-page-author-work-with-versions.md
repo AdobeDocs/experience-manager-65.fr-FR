@@ -14,7 +14,7 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -36,8 +36,9 @@ Pour créer une version d’une page :
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Entrez un commentaire dans la zone **Commenter** (facultatif).
-1. Pour définir un libellé sur la version (facultatif), cliquez sur le bouton **Plus &quot;** et définissez la variable **Libellé** pour nommer la version. Si le libellé n’est pas défini, la version est un nombre incrémenté automatiquement.
-1. Cliquez sur **Créer une version**. Un message grisé s’affiche sur la page ; par exemple : Version 1.2 créée pour : Chemises.
+1. Pour définir un libellé pour la version (facultatif), cliquez sur le bouton **Plus >>** et définissez le **Libellé** pour attribuer un nom à la version. Si le libellé n’est pas défini, la version se voit attribuer un numéro automatiquement incrémenté.
+1. Cliquez sur **Créer la version**. Un message grisé apparaît sur la page, indiquant par exemple :
+Version 1.2 créée pour : Chemises.
 
 >[!NOTE]
 >
@@ -86,12 +87,12 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 Pour comparer la version actuelle de la page avec une version précédente :
 
 1. Dans votre navigateur, ouvrez la page pour laquelle vous souhaitez effectuer une comparaison avec une version précédente.
-1. Dans le sidekick, sélectionnez la variable **Contrôle de version** , puis le **Restaurer la version** sous-onglet .
+1. Dans le sidekick, sélectionnez l’onglet **Création de versions**, puis le sous-onglet **Restaurer la version**.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. Sélectionnez la version pour laquelle effectuer la comparaison, puis cliquez sur le bouton **Diff**.
-1. Les différences entre la version actuelle et la version sélectionnée sont affichées comme suit :
+1. Les différences entre la version actuelle et la version sélectionnée sont signalées de la façon suivante :
 
    * Le texte qui a été supprimé apparaît en rouge et est barré.
    * Le texte qui été ajouté apparaît en vert et est souligné.
@@ -175,7 +176,7 @@ Dans l’exemple ci-dessous, la ligne rouge indique que la page a été modifié
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
-1. Cliquez sur:
+1. Cliquez sur :
 
    1. **Aller** pour afficher le contenu de la page publiée au moment sélectionné.
    1. **Quitter Timewarp** pour quitter la fonctionnalité et revenir à la page de création en cours.
@@ -194,4 +195,4 @@ Timewarp s’efforce de reproduire au mieux une page à un moment donné. Toutef
 
 >[!CAUTION]
 >
->Timewarp est un outil conçu pour aider les auteurs à comprendre et à créer leur contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.
+>Timewarp est un outil conçu pour aider les auteurs à comprendre et à créer du contenu. Il ne s’agit pas d’un journal d’audit et il n’est pas destiné à des fins juridiques.

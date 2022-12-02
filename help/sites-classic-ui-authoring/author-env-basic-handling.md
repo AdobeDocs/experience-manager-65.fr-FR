@@ -1,7 +1,7 @@
 ---
 title: Manipulation de base
 seo-title: Basic Handling
-description: Aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console Sites comme base.
+description: Aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il s’appuie sur la console Sites.
 seo-description: An overview of basic handling when using the AEM author environment. It uses the Sites console as a basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
@@ -13,7 +13,7 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il utilise la console **Sites** comme base.
+>* Cette page donne un aperçu des opérations de gestion de base dans l’environnement de création d’AEM. Il s’appuie sur la console **Sites**.
 >
 >* Certaines fonctionnalités ne sont pas disponibles sur toutes les consoles et/ou des fonctionnalités supplémentaires sont disponibles sur certaines consoles. Vous trouverez des informations spécifiques plus détaillées sur les consoles individuelles et leurs fonctions sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et de la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
@@ -52,11 +52,11 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Ressources numériques</strong><br /> </td>
-   <td>Ces consoles permettent d’importer et de <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site web exécuté sur la même instance d’AEM. </td>
+   <td>Ces consoles permettent d’importer et de <a href="/help/sites-classic-ui-authoring/classicui-assets.md">gérer des ressources numériques</a> telles que des images, des vidéos, des documents et des fichiers audio. Utilisez ces ressources dans n’importe quel site Web exécuté sur la même instance d’AEM. </td>
   </tr>
   <tr>
    <td><strong>Lancements</strong></td>
-   <td>Cela vous aide à gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a>; cela vous permet de développer le contenu pour une prochaine version d’une ou de plusieurs pages web activées.<br /> <i>Remarque : Dans l’interface utilisateur tactile, une grande partie de la même fonctionnalité est disponible dans la console Sites, avec le rail Références .</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
+   <td>Avec cette console, vous pouvez gérer vos <a href="/help/sites-classic-ui-authoring/classic-launches.md">lancements</a> et élaborer ainsi le contenu pour une prochaine version d’une ou de plusieurs pages Web activées.<br /> <i>Remarque : dans l’IU activée pour les écrans tactiles, la plupart des fonctionnalités sont également disponibles dans la console Sites, avec le rail Références.</i> <i>Si nécessaire, vous pouvez accéder à cette console à partir de la console Outils ; pour ce faire, sélectionnez Opérations, puis Lancements.</i></td>
   </tr>
   <tr>
    <td><strong>Boîte de réception </strong></td>
@@ -68,19 +68,19 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Outils</strong></td>
-   <td>Les <a href="/help/sites-administering/tools-consoles.md">consoles Outils</a> vous donnent accès à un certain nombre d’outils et de consoles spécialisés pour la gestion des sites web, des ressources numériques et d’autres aspects du référentiel de contenu.</td>
+   <td>Les <a href="/help/sites-administering/tools-consoles.md">consoles Outils</a> vous donnent accès à un certain nombre d’outils et de consoles spécialisés pour la gestion des sites Web, des ressources numériques et d’autres aspects du référentiel de contenu.</td>
   </tr>
   <tr>
    <td><strong>Utilisateurs</strong></td>
    <td>Ces consoles vous permettent de gérer les droits d’accès des utilisateurs et des groupes. Pour plus d’informations, reportez-vous à la section <a href="/help/sites-administering/security.md">Administration des utilisateurs et sécurité</a>.<br />  </td>
   </tr>
   <tr>
-   <td><strong>Sites web</strong></td>
-   <td>Les consoles Sites/Sites web permettent <a href="/help/sites-classic-ui-authoring/classic-page-author.md">de créer, d’afficher et de gérer des sites web</a> exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site web, lancer des processus et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier. <br /> </td>
+   <td><strong>Sites Web</strong></td>
+   <td>Les consoles Sites/Sites Web permettent <a href="/help/sites-classic-ui-authoring/classic-page-author.md">de créer, d’afficher et de gérer des sites Web</a> exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, copier, déplacer et supprimer des pages de site Web, lancer des processus et activer (publier) des pages. Vous pouvez également ouvrir une page pour la modifier.<br /> </td>
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
-   <td>Un processus est une série d’étapes définies décrivant la procédure à suivre pour accomplir certaines tâches. Dans la plupart des cas, plusieurs personnes sont impliquées dans une tâche et chacune d’elles doit exécuter les étapes qui lui sont attribuées avant de remettre le projet à la personne suivante. La console Worfklow vous permet d’élaborer des modèles de workflows et de gérer l’exécution des instances de worfklow. Reportez-vous à la section <a href="/help/sites-administering/workflows.md">Utilisation des processus</a>.<br /> </td>
+   <td>Un processus est une série d’étapes définies décrivant la procédure à suivre pour accomplir certaines tâches. Dans la plupart des cas, plusieurs personnes sont impliquées dans une tâche et chacune d’elles doit exécuter les étapes qui lui sont attribuées avant de remettre le projet à la personne suivante. La console Workflow vous permet d’élaborer des modèles de workflows et de gérer l’exécution des instances de workflow. Reportez-vous à la section <a href="/help/sites-administering/workflows.md">Utilisation des processus</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -89,13 +89,13 @@ La console **Sites Web** comporte deux volets grâce auxquels vous pouvez parcou
 
 * Volet de gauche
 
-   Vous voyez ainsi l’arborescence de vos sites web et les pages qu’ils contiennent.
+   Présente l’arborescence de vos sites Web et les pages dans ces sites Web.
 
-   Il affiche également des informations sur d’autres aspects ou AEM, y compris les projets, les plans directeurs et les ressources.
+   Présente également des informations sur d’autres aspects d’AEM, y compris les projets, les plans directeurs et les ressources.
 
 * Volet de droite
 
-   Les pages s’affichent alors (à l’emplacement sélectionné dans le volet de gauche) et peuvent être utilisées pour effectuer des actions.
+   Présente les pages (à l’emplacement sélectionné dans le volet de gauche) et permet d’utiliser des actions.
 
 D’ici, vous pouvez [gérer vos pages](/help/sites-authoring/managing-pages.md) en utilisant la barre d’outils, un menu contextuel ou en ouvrant une page pour accomplir d’autres actions.
 
@@ -105,7 +105,7 @@ D’ici, vous pouvez [gérer vos pages](/help/sites-authoring/managing-pages.md)
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Accès à l’Aide   {#accessing-help}
+## Accès à l’Aide {#accessing-help}
 
 Sur diverses consoles (Sites web, par exemple), un bouton **Aide** permet d’ouvrir le Partage de modules ou le site de documentation.
 
@@ -134,13 +134,13 @@ La console **Sites web** répertorie vos pages de contenu dans une structure arb
 >
 >Définissez la valeur de la propriété :
 >`treeAutoExpandMax`
->à:
+>Sur :
 >`/apps/wcm/core/content/siteadmin`
 >
 >Ou à l’échelle du thème :
 >Définissez la valeur :
 >`TREE_AUTOEXPAND_MAX`
->dans:
+>dans :
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >Pour plus d’informations, voir [SiteAdmin dans l’API CQ Widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin).
@@ -184,7 +184,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
    <td>Indique si la page a été publiée sur Scene7.<br /> </td>
   </tr>
   <tr>
-   <td>État</td>
+   <td>Statut</td>
    <td>Indique l’état actuel de la page, par exemple si la page fait partie d’un processus ou d’une live copy ou si elle est actuellement verrouillée.</td>
   </tr>
   <tr>
@@ -216,7 +216,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
 
 Les couleurs en regard des pages des colonnes **Publié** et **Modifié** indiquent l’état de publication :
 
-| **Colonnes** | **Couleur** | **Description** |
+| **Colonne** | **Couleur** | **Description** |
 |---|---|---|
 | Publié | Vert | Publication réussie. Le contenu est publié. |
 | Publié | Jaune | Publication en attente. La confirmation de publication n’a pas encore été reçue par le système. |

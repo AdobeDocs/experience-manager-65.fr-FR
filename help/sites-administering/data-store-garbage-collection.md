@@ -1,5 +1,5 @@
 ---
-title: Nettoyage de la mémoire d’entrepôt de données
+title: Récupération de l’espace mémoire du magasin de données
 seo-title: Data Store Garbage Collection
 description: Découvrez comment configurer le nettoyage de la mémoire d’entrepôt de données pour libérer de l’espace disque.
 seo-description: Learn how to configure Data Store Garbage Collection to free up disk space.
@@ -14,11 +14,11 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1887'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Nettoyage de la mémoire d’entrepôt de données {#data-store-garbage-collection}
+# Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
 Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement d’entrepôt de données non référencé est alors considéré comme faisant partie des « données à nettoyer » qu’il n’est pas utile de conserver. Dans les instances où plusieurs ressources de nettoyage existent, il est préférable de vous en débarrasser pour préserver l’espace et pour optimiser les performances de sauvegarde et de la maintenance du système de fichiers.
 
@@ -31,13 +31,13 @@ AEM utilise le référentiel pour stocker plusieurs activités internes et de ma
 * Charges utiles de workflow
 * Ressources créées temporairement lors du rendu DAM
 
-Lorsque l’un de ces objets temporaires est assez volumineux pour devoir être stocké dans l’entrepôt de données et lorsque cet objet n’est plus utilisé, l’enregistrement d’entrepôt de données lui-même demeure en tant que « données à nettoyer ». Dans une application de création/publication WCM standard, le processus d’activation de publication constitue généralement la plus grande source de données à nettoyer de ce type. Lorsque les données sont répliquées vers l’élément Publier, elles sont d’abord collectées dans des collections dans un format de données efficace appelé &quot;Durbo&quot; et stockées dans le référentiel sous `/var/replication/data`. Les lots de données dépassent souvent en taille le seuil de taille critique de l’entrepôt de données et finissent donc par être stockés comme des enregistrements d’entrepôts de données. Une fois la réplication terminée, le noeud dans `/var/replication/data` est supprimé, mais l’enregistrement de l’entrepôt de données reste &quot;mémoire&quot;.
+Lorsque l’un de ces objets temporaires est assez volumineux pour devoir être stocké dans l’entrepôt de données et lorsque cet objet n’est plus utilisé, l’enregistrement d’entrepôt de données lui-même demeure en tant que « données à nettoyer ». Dans une application de création/publication WCM standard, le processus d’activation de publication constitue généralement la plus grande source de données à nettoyer de ce type. Lorsque des données sont répliquées en publication, elles sont d’abord regroupées dans des collections ayant un format de données efficace nommé « Durbo » et stockées dans le référentiel, sous `/var/replication/data`. Les lots de données dépassent souvent en taille le seuil de taille critique du magasin de données et finissent donc par être stockés comme des enregistrements de magasins de données. Lorsque la réplication est terminée, le nœud dans `/var/replication/data` est supprimé, mais l’enregistrement du magasin de données demeure en tant que « données à nettoyer ».
 
 Les modules constituent une autre source de données à nettoyer récupérables. Les données de module, comme tout le reste, sont stockées dans le référentiel et, donc, pour les modules dont la taille dépasse 4 Ko, dans l’entrepôt de données. Au cours d’un projet de développement ou au fil du temps dans le cadre de la maintenance d’un système, les modules peuvent être créés et recréés de nombreuses fois, chaque nouvelle version résultant en un nouvel enregistrement d’entrepôt de données, l’enregistrement de la version précédente devenant alors orphelin.
 
 ## Comment fonctionne le nettoyage de la mémoire d’entrepôt de données ? {#how-does-data-store-garbage-collection-work}
 
-Si le référentiel a été configuré avec un entrepôt de données externe, le [nettoyage de la mémoire d’entrepôt de données est exécuté automatiquement](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) dans le cadre de la période de maintenance hebdomadaire. L’administrateur système peut également [exécution manuelle du nettoyage de la mémoire d’entrepôt de données](#running-data-store-garbage-collection) selon les besoins. En général, il est recommandé d’effectuer le nettoyage de la mémoire d’entrepôt de données régulièrement, et de prendre en compte les facteurs suivants dans la planification du nettoyage :
+Si le référentiel a été configuré avec un entrepôt de données externe, le [nettoyage de la mémoire d’entrepôt de données est exécuté automatiquement](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) dans le cadre de la période de maintenance hebdomadaire. L’administrateur système peut également [exécuter le nettoyage de la mémoire du magasin de données manuellement](#running-data-store-garbage-collection) selon les besoins. En général, il est recommandé d’effectuer le nettoyage de la mémoire d’entrepôt de données régulièrement, et de prendre en compte les facteurs suivants dans la planification du nettoyage :
 
 * Le nettoyage de la mémoire d’entrepôt de données prend du temps et peut avoir une incidence sur les performances. Il doit donc être planifié en conséquence.
 * La suppression des enregistrements du nettoyage de la mémoire d’entrepôt de données n’affecte pas les performances normales et ne relève donc pas d’une optimisation des performances.
@@ -56,13 +56,13 @@ Cette approche fonctionne bien pour un nœud unique avec un entrepôt de donnée
 
 >[!NOTE]
 >
->Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Cela se produit car les ID d’objets blob supprimés dans un nettoyage précédent sont à nouveau référencés de manière incorrecte par d’autres noeuds de cluster ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a aucune incidence sur les performances ou les fonctionnalités.
+>Lorsque le nettoyage de la mémoire est effectué dans une configuration d’entrepôt de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut contenir des avertissements sur l’impossibilité de supprimer certains ID de blob. Ces avertissements se produisent, car les ID de blob supprimés durant un nettoyage précédent sont à nouveau référencés de manière incorrecte par d’autres nœuds partagés ou clusters qui n’ont pas d’informations sur les suppressions des ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
 
 ## Exécution du nettoyage de la mémoire d’entrepôt de données {#running-data-store-garbage-collection}
 
 Il existe trois manières d’effectuer le nettoyage de la mémoire d’entrepôt de données, en fonction de la configuration d’entrepôt de données sur laquelle AEM s’exécute :
 
-1. Via [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md) - un mécanisme de nettoyage de la mémoire généralement utilisé pour le nettoyage de l’entrepôt de noeuds.
+1. Via le [nettoyage de révision](/help/sites-deploying/revision-cleanup.md) : un mécanisme de récupération de l’espace mémoire généralement utilisé pour le nettoyage des entrepôts de nœuds.
 
 1. Via le [nettoyage de la mémoire d’entrepôt de données](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) : un mécanisme de nettoyage de la mémoire spécifique pour les entrepôts de données externes, disponible sur le tableau de bord des opérations.
 1. Via la [console JMX](/help/sites-administering/jmx-console.md).
@@ -75,8 +75,8 @@ Le tableau ci-dessous indique le type de nettoyage de la mémoire d’entrepôt 
  <tbody>
   <tr>
    <td><strong>Magasin de nœuds</strong><br /> </td>
-   <td><strong>Entrepôt de données</strong></td>
-   <td><strong>Mécanisme de nettoyage de la mémoire</strong><br /> </td>
+   <td><strong>Magasin de données</strong></td>
+   <td><strong>Mécanisme de récupération de l’espace mémoire</strong><br /> </td>
   </tr>
   <tr>
    <td>TarMK</td>
@@ -86,24 +86,24 @@ Le tableau ci-dessous indique le type de nettoyage de la mémoire d’entrepôt 
   <tr>
    <td>TarMK</td>
    <td>Système de fichiers externe</td>
-   <td><p>Tâche de nettoyage de la mémoire d’entrepôt de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de nettoyage de la mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>MongoDB</td>
-   <td><p>Tâche de nettoyage de la mémoire d’entrepôt de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de nettoyage de la mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
   </tr>
   <tr>
    <td>MongoDB</td>
    <td>Système de fichiers externe</td>
-   <td><p>Tâche de nettoyage de la mémoire d’entrepôt de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
+   <td><p>Tâche de nettoyage de la mémoire du magasin de données via le tableau de bord des opérations</p> <p>Console JMX</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Exécution du nettoyage de la mémoire d’entrepôt de données via le tableau de bord des opérations {#running-data-store-garbage-collection-via-the-operations-dashboard}
+### Exécution du nettoyage de la mémoire du magasin de données via le tableau de bord des opérations {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher le nettoyage de la mémoire d’entrepôt de données à 1 heure du matin le dimanche.
+La période de maintenance hebdomadaire intégrée, disponible via le [tableau de bord des opérations](/help/sites-administering/operations-dashboard.md), contient une tâche intégrée pour déclencher le nettoyage de la mémoire du magasin de données à 1 heure du matin le dimanche.
 
 Si vous devez exécuter le nettoyage de la mémoire d’entrepôt de données en dehors de cet horaire, vous pouvez le déclencher manuellement par le biais du tableau de bord des opérations.
 
@@ -114,17 +114,17 @@ Avant d’exécuter le nettoyage de la mémoire d’entrepôt de données, véri
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Sélectionnez la tâche **Nettoyage de la mémoire d’entrepôt de données**, puis cliquez ou appuyez sur l’icône **Exécuter**.
+1. Sélectionnez la tâche **Nettoyage de la mémoire du magasin de données**, puis cliquez ou appuyez sur l’icône **Exécuter**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Le nettoyage de la mémoire d’entrepôt de données s’exécute et son état s’affiche sur le tableau de bord.
+1. Le nettoyage de la mémoire du magasin de données s’exécute et son statut s’affiche sur le tableau de bord.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
 >[!NOTE]
 >
->La tâche de nettoyage de la mémoire d’entrepôt de données est uniquement visible si vous avez configuré un entrepôt de données basé sur les fichiers. Voir [Configuration des entrepôts de noeuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour plus d’informations sur la configuration d’un entrepôt de données de fichier.
+>La tâche de nettoyage de la mémoire du magasin de données est uniquement visible si vous avez configuré un magasin de données basé sur les fichiers. Consultez [Configuration de magasins de nœuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour obtenir des informations sur la configuration d’un magasin de données basé sur les fichiers.
 
 ### Exécution du nettoyage de la mémoire d’entrepôt de données via la console JMX {#running-data-store-garbage-collection-via-the-jmx-console}
 
@@ -132,28 +132,28 @@ Cette section aborde le nettoyage de la mémoire d’entrepôt de données via l
 
 >[!NOTE]
 >
->Si vous exécutez TarMK avec un entrepôt de données externe, vous devez exécuter le nettoyage de révision d’abord pour que le nettoyage soit efficace.
+>Si vous exécutez TarMK avec un magasin de données externe, vous devez exécuter le nettoyage de révision d’abord pour que le nettoyage soit efficace.
 
-Pour exécuter le nettoyage de la mémoire :
+Pour exécuter la récupération de l’espace mémoire :
 
 1. Dans la console de gestion OSGi Apache Felix, sélectionnez l’onglet **Principal**, puis **JMX** dans le menu suivant.
-1. Recherchez ensuite , puis cliquez sur le bouton **Repository Manager** MBean (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
+1. Ensuite, recherchez puis cliquez sur le bouton **Gestionnaire de référentiel** MBean (ou accédez à `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Cliquez sur **startDataStoreGC(boolean markOnly)**.
-1. enter &quot;`true`&quot; pour le `markOnly` si nécessaire :
+1. Entrez `true` pour le paramètre `markOnly` si nécessaire :
 
    | **Option** | **Description** |
    |---|---|
    | boolean markOnly | Définissez cette variable sur true pour marquer uniquement les références et ne pas effectuer de balayage dans l’opération de marquage et de balayage. Ce mode doit être utilisé lorsque le BlobStore sous-jacent est partagé entre plusieurs référentiels. Pour tous les autres cas, définissez ce paramètre sur faux pour effectuer le nettoyage complet de la mémoire. |
 
-1. Cliquez sur **Appeler**. CRX effectue le nettoyage de la mémoire et indique quand celui-ci est terminé.
+1. Cliquez sur **Invoquer**. CRX effectue la récupération de l’espace mémoire et indique quand celle-ci est terminée.
 
 >[!NOTE]
 >
->Le nettoyage de la mémoire d’entrepôt de données ne collecte pas les fichiers qui ont été supprimés au cours des dernières 24 heures.
+>Le nettoyage de la mémoire du magasin de données ne collecte pas les fichiers qui ont été supprimés au cours des dernières 24 heures.
 
 >[!NOTE]
 >
->La tâche de nettoyage de la mémoire d’entrepôt de données ne démarre que si vous avez configuré un entrepôt de données de fichiers externe. Si aucun entrepôt de données de fichier externe n’a été configuré, la tâche renvoie le message. `Cannot perform operation: no service of type BlobGCMBean found` après appel. Voir [Configuration des entrepôts de noeuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour plus d’informations sur la configuration d’un entrepôt de données de fichier.
+>La tâche de nettoyage de la mémoire du magasin de données ne commence que si vous avez configuré un magasin de données basé sur les fichiers. Si aucun magasin de données de fichier externe n’a été configuré, la tâche renvoie le message `Cannot perform operation: no service of type BlobGCMBean found` après l’appel. Consultez [Configuration de magasins de nœuds et de données dans AEM 6](/help/sites-deploying/data-store-config.md#file-data-store) pour obtenir des informations sur la configuration d’un magasin de données basé sur les fichiers.
 
 ## Automatisation du nettoyage de la mémoire d’entrepôt de données {#automating-data-store-garbage-collection}
 
@@ -163,15 +163,15 @@ La période de maintenance hebdomadaire intégrée, disponible via le [tableau d
 
 >[!NOTE]
 >
->La raison de ne pas l’exécuter simultanément est que les anciens fichiers de l’entrepôt de données (et inutilisés) sont également sauvegardés. Ainsi, s’il est nécessaire de restaurer une ancienne révision, les fichiers binaires sont toujours présents dans la sauvegarde.
+>La raison pour laquelle vous pouvez ne pas l’exécuter simultanément est que les anciens fichiers (et inutilisés) du magasin de données sont également sauvegardés, de sorte que s’il est nécessaire de restaurer une ancienne révision, les fichiers binaires figurent encore dans la sauvegarde.
 
-Si vous ne souhaitez pas exécuter le nettoyage de la mémoire d’entrepôt de données avec la fenêtre de maintenance hebdomadaire dans le tableau de bord des opérations, il peut également être automatisé à l’aide des clients HTTP wget ou curl. Voici un exemple d’automatisation de la sauvegarde à l’aide de curl :
+Si vous ne souhaitez pas exécuter le nettoyage de la mémoire du magasin de données avec la période de maintenance hebdomadaire dans le tableau de bord des opérations, vous pouvez également l’automatiser à l’aide des clients HTTP wget ou curl. Voici un exemple illustrant comment automatiser la sauvegarde à l’aide de la commande curl :
 
 >[!CAUTION]
 >
->Dans les exemples de commande `curl` suivants, il se peut que divers paramètres doivent être configurés pour votre instance. Par exemple, le nom d’hôte (`localhost`), le port (`4502`) le mot de passe administrateur (`xyz`) et divers paramètres pour le nettoyage effectif de la mémoire d’entrepôt de données.
+>Dans les exemples de commande `curl` suivants, il se peut que divers paramètres doivent être configurés pour votre instance. Par exemple, le nom d’hôte (`localhost`), le port (`4502`), le mot de passe administrateur (`xyz`) et divers paramètres pour le nettoyage effectif de la mémoire du magasin de données.
 
-Voici un exemple de commande curl pour appeler le nettoyage de la mémoire d’entrepôt de données via la ligne de commande :
+Voici un exemple de commande curl invoquant le nettoyage de la mémoire du magasin de données via la ligne de commande :
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean
@@ -183,11 +183,11 @@ La commande curl est immédiatement renvoyée.
 
 La vérification de la cohérence de l’entrepôt de données signale les fichiers binaires d’entrepôt de données manquants, mais encore référencés. Pour lancer une vérification de la cohérence, procédez comme suit :
 
-1. Accédez à la console JMX. Pour plus d’informations sur l’utilisation de la console JMX, voir [cet article](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. Recherchez le **BlobGarbageCollection** MBean et cliquez dessus.
-1. Cliquez sur le bouton `checkConsistency()` lien.
+1. Accédez à la console JMX. Pour plus d’informations sur l’utilisation de la console JMX, consultez [cet article](/help/sites-administering/jmx-console.md#using-the-jmx-console).
+1. Recherchez l’entrée MBean **BlobGarbageCollection** et cliquez dessus.
+1. Cliquez sur le lien `checkConsistency()`.
 
-Une fois la vérification de cohérence terminée, un message affiche le nombre de fichiers binaires signalés comme manquants. Si le nombre est supérieur à 0, vérifiez la variable `error.log` pour plus d’informations sur les fichiers binaires manquants.
+Une fois la vérification de cohérence terminée, un message affiche le nombre de fichiers binaires signalés comme manquants. Si le nombre est supérieur à 0, vérifiez le fichier journal `error.log` pour obtenir plus de détails sur les fichiers manquants.
 
 Vous trouverez ci-dessous un exemple de la façon dont les fichiers binaires manquants sont répertoriés dans les journaux :
 

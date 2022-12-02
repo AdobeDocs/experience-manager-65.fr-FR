@@ -1,5 +1,5 @@
 ---
-title: Test - quand et avec qui ?
+title: Les tests - Quand et avec qui ?
 seo-title: Testing - when and with whom?
 description: Divers rôles peuvent participer aux tests et aux différentes étapes du développement du projet
 seo-description: Various roles can be involved in testing and at various stages of project development
@@ -13,11 +13,11 @@ exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
-# Test - quand et avec qui ?{#testing-when-and-with-whom}
+# Les tests - Quand et avec qui ?{#testing-when-and-with-whom}
 
 Divers rôles peuvent participer aux tests et aux différentes étapes du développement du projet.
 
@@ -35,18 +35,18 @@ Divers rôles peuvent participer aux tests et aux différentes étapes du dével
   </tr>
   <tr>
    <td>Équipe d’assurance qualité</td>
-   <td><p>Vous aurez besoin d’une équipe d’assurance qualité (de la taille appropriée) pour les tests fonctionnels et de performance.</p> <p>Ce sont des testeurs neutres et dédiés. Dans le domaine du développement, la règle d’or veut que le développeur ne doit jamais tester son propre travail.</p> <p>Les membres de cette équipe peuvent être issus de l’équipe du projet Jour, l’équipe du partenaire et/ou celle de votre client.</p> </td>
-   <td><p>La première version de la fonction doit être mise à la disposition des testeurs (dès que cela est réalisablement possible). Bien qu’une version intermédiaire puisse générer de nombreux bogues, elle permet néanmoins de faire le point sur des problèmes majeurs.</p> </td>
+   <td><p>Vous aurez besoin d’une équipe d’assurance qualité (de la taille appropriée) pour les tests fonctionnels et de performance.</p> <p>Il s’agit de testeurs neutres et dédiés. Dans le domaine du développement, la règle d’or veut que le développeur ne doit jamais tester son propre travail.</p> <p>Les membres de cette équipe peuvent être issus de l’équipe du projet Jour, l’équipe du partenaire et/ou celle de votre client.</p> </td>
+   <td><p>La première version doit être mise à la disposition des testeurs (dès que possible). Bien qu’une version intermédiaire puisse générer de nombreux bogues, elle permet néanmoins de faire le point sur des problèmes majeurs.</p> </td>
   </tr>
   <tr>
    <td>Équipe de test du client</td>
-   <td><p>Selon le modèle de projet sélectionné, il peut être prévu que des membres de l’équipe client participent aux tests, en particulier les auteurs du site client.</p> <p>Les avantages sont les suivants :</p>
+   <td><p>Selon le modèle de projet sélectionné, il peut être prévu que des membres de l’équipe client participent aux tests, en particulier les auteurs du site client.</p> <p>Les avantages sont les suivants :</p>
     <ul>
-     <li><p>Offre au client une expérience du projet en cours de développement.</p> </li>
-     <li><p>Fournit des commentaires anticipés du client.</p> </li>
-     <li><p>Les utilisateurs expriment souvent leurs besoins en termes d'expérience passée. impliquer les clients dans les tests le plus tôt possible augmente leur expérience du nouveau projet en termes de <i>main-sur-le-champ</i> expérience.</p> </li>
+     <li><p>Offre au client un aperçu du projet en cours de développement.</p> </li>
+     <li><p>Permet de faire rapidement le point avec le client.</p> </li>
+     <li><p>Les utilisateurs expriment souvent leurs exigences par rapport à leurs expériences passées. La participation en amont des clients améliore leur expérience du nouveau projet d’un point de vue <i>pratique</i>.</p> </li>
     </ul> </td>
-   <td><p>Là encore, une participation précoce est une bonne chose, bien que toute version que les clients utilisent doive être stable, avec des fonctionnalités raisonnables.</p> <p>Les premières impressions sont toujours importantes.</p> </td>
+   <td><p>Là aussi, une participation au plus tôt est préférable. Toute version utilisée par les clients doit être stable et offrir un nombre raisonnable de fonctionnalités.</p> <p>Les premières impressions sont toujours importantes.</p> </td>
   </tr>
  </tbody>
 </table>

@@ -286,7 +286,7 @@ Problèmes possibles et solutions :
 
 * Mode de vérification :
 
-   * Vérifiez que la définition de l’index a été modifiée à l’aide du Mbean JMX de statistiques sur les index Lucene (LuceneIndex), méthode `diffStoredIndexDefinition`.
+   * Vérifiez que la définition de l’index a été modifiée à l’aide du MBean JMX de statistiques sur les index Lucene (LuceneIndex), méthode `diffStoredIndexDefinition`.
 
 * Mode de résolution :
 
@@ -297,7 +297,7 @@ Problèmes possibles et solutions :
 
       * Si le contenu existant n’est pas affecté par les modifications, seule une actualisation est nécessaire
 
-         * [Actualisez](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l’index Lucene en définissant [oak:queryIndexDefinitionrefresh=true].
+         * [Actualisez](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) l’index Lucene en définissant [oak:queryIndexDefinition] @refresh=true.
       * Sinon, [réindexez ](#how-to-re-index)l’index Lucene
 
          * Remarque : L’état de l’index depuis la dernière réindexation effective (ou l’indexation initiale) sera utilisé jusqu’à ce qu’une nouvelle réindexation soit déclenchée

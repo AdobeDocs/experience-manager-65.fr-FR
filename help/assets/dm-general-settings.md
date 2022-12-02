@@ -12,16 +12,16 @@ exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
 source-git-commit: 9c548dbc0157607adda5ed76cab8ef970588e1e9
 workflow-type: tm+mt
 source-wordcount: '2498'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Configurer les paramètres généraux de Dynamic Media
 
-La configuration des **[!UICONTROL paramètres généraux de Dynamic Media]** est disponible uniquement si :
+La configuration des **[!UICONTROL paramètres généraux de Dynamic Media]** est disponible uniquement si :
 
-* Vous exécutez Dynamic Media en mode Scene7. Voir [Activation de Dynamic Media en mode Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
-* Vous avez une *existant* **[!UICONTROL Configuration Dynamic Media]** (dans **[!UICONTROL Cloud Services]**) dans Adobe Experience Manager 6.5.11 ou version ultérieure. Voir [Création d’une configuration Dynamic Media dans Services cloud](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+* Vous exécutez Dynamic Media en mode Scene7. Consultez [Activation de Dynamic Media en mode Scene7](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode).
+* Vous disposez d’une **[!UICONTROL Configuration Dynamic Media]** *existante* (dans **[!UICONTROL Services cloud]**) dans Adobe Experience Manager, version 6.5.11 ou supérieure. Voir [Création d’une configuration Dynamic Media dans Services cloud](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
 * Vous êtes un administrateur système d’Experience Manager disposant de droits d’administrateur.
 
 Les paramètres généraux de Dynamic Media sont destinés aux développeurs et programmeurs chevronnés de sites Web. Adobe Dynamic Media recommande aux utilisateurs qui modifient ces paramètres de publication de se familiariser avec Dynamic Media sur Adobe Experience Manager et avec la technologie d’imagerie de base.
@@ -30,13 +30,13 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
 La page Configuration de la publication Dynamic Media établit les paramètres par défaut qui déterminent la manière dont les ressources sont diffusées des serveurs Dynamic Media d’Adobe vers les sites web ou les applications. Si aucun paramètre n’est spécifié, le serveur Dynamic Media Adobe diffuse une ressource selon un paramètre par défaut configuré sur la page Configuration de la publication Dynamic Media.
 
-Voir aussi [Facultatif - Configuration et configuration des paramètres du mode Dynamic Media - Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) pour d’autres tâches de configuration facultatives.
+Consultez également [Facultatif - Installation et configuration de Dynamic Media - Paramètres du mode Scene7](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) pour plus de tâches de configuration facultatives.
 
 >[!NOTE]
 >
->Mise à niveau de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? Les pages Paramètres généraux et [Configuration de la publication](/help/assets/dm-publish-settings.md) dans Dynamic Media sont préremplies avec les valeurs de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs figurant dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toute modification apportée aux **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, est répercutée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page Paramètres généraux et de la page [Configuration de la publication](/help/assets/dm-publish-settings.md) sont conservés entre Dynamic Media Classic et Dynamic Media dans Experience Manager.
+>Prêt à passer de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? Les pages Paramètres généraux et [Configuration de la publication](/help/assets/dm-publish-settings.md) dans Dynamic Media sont préremplies avec les valeurs de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs figurant dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toute modification apportée aux **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, est répercutée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page Paramètres généraux et de la page [Configuration de la publication](/help/assets/dm-publish-settings.md) sont conservés entre Dynamic Media Classic et Dynamic Media dans Experience Manager.
 
-**Pour configurer les paramètres généraux de Dynamic Media :**
+**Pour configurer les paramètres généraux de Dynamic Media :**
 
 1. En mode création d’Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale.
 1. Dans la barre de gauche, sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres généraux de Dynamic Media]**.
@@ -51,7 +51,7 @@ Voir aussi [Facultatif - Configuration et configuration des paramètres du mode 
    * Onglet [Illustrator](#illustrator-tab)
 
    ![Page des paramètres généraux de Dynamic Media](/help/assets/assets-dm/dm-general-settings.png)
-   *Page des paramètres généraux de Dynamic Media, avec l&#39;onglet **[!UICONTROL Modification d’images]**sélectionné.*<br><br>
+   *Page des paramètres généraux de Dynamic Media, avec l’onglet **[!UICONTROL Modification d’images]**sélectionné.*<br><br>
 
 1. Lorsque vous avez terminé, près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -68,7 +68,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
 * **[!UICONTROL Remplacer les images]**
 
-   Adobe Dynamic Media ne permet pas à deux fichiers d’avoir le même nom. L’identifiant Dynamic Media d’Adobe de chaque élément (le nom de l’image sans l’extension de nom de fichier) doit être unique. En raison de cette règle, **[!UICONTROL Charger dans l’application]** a un remplacement. L’effet exact de cette option dépend de l’option Remplacer les images que vous avez sélectionnée. Ces options spécifient la manière dont les images de remplacement sont chargées : elles peuvent remplacer les images originales ou devenir des images en double. Les images en double sont renommées avec une `-1`. Par exemple : `chair.tif` est renommé `chair-1.tif`. Ces options affectent les images chargées dans un dossier différent de celui de l’original ou les images dont l’extension de nom de fichier est différente de celle de l’original (telle que JPG, TIF ou PNG).
+   Adobe Dynamic Media ne permet pas à deux fichiers d’avoir le même nom. L’identifiant Dynamic Media d’Adobe de chaque élément (le nom de l’image sans l’extension de nom de fichier) doit être unique. En raison de cette règle, **[!UICONTROL Charger dans l’application]** a un remplacement. L’effet exact de cette option dépend de l’option Remplacer les images que vous avez sélectionnée. Ces options spécifient la manière dont les images de remplacement sont chargées : elles peuvent remplacer les images originales ou devenir des images en double. Les images en double sont renommées avec une `-1`. Par exemple : `chair.tif` est renommé `chair-1.tif`. Ces options affectent les images chargées dans un dossier différent de celui de l’original ou les images dont l’extension de nom de fichier est différente de celle de l’original (telle que JPG, TIF ou PNG).
 
    >[!NOTE]
    >

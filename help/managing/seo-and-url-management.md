@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques de SEO et de gestion des URL
+title: Bonnes pratiques d’optimisation pour les moteurs de recherche et de gestion des URL
 seo-title: SEO and URL Management Best Practices
 description: Découvrez les meilleures pratiques relatives à l’optimisation pour les moteurs de recherche, ainsi que des recommandations pour les suivre lors d’une mise en œuvre AEM.
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
@@ -10,15 +10,15 @@ exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '3802'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
-# Bonnes pratiques de SEO et de gestion des URL{#seo-and-url-management-best-practices}
+# Bonnes pratiques d’optimisation pour les moteurs de recherche et de gestion des URL{#seo-and-url-management-best-practices}
 
 L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation pour les moteurs de recherche doivent être traitées pour de nombreux projets AEM.
 
-Le présent document commence par décrire certaines [bonnes pratiques relatives à l’optimisation pour les moteurs de recherche](#seo-best-practices) et explique comment les suivre lors d’une mise en œuvre d’AEM Il approfondit ensuite certaines des [étapes de mise en œuvre plus complexes](#aem-configurations) abordées dans la première section.
+Le présent document commence par décrire certaines [bonnes pratiques relatives à l’optimisation pour les moteurs de recherche](#seo-best-practices) et explique comment les suivre lors d’une mise en œuvre d’AEM. Il approfondit ensuite certaines des [étapes de mise en œuvre plus complexes](#aem-configurations) abordées dans la première section.
 
 ## Bonnes pratiques relatives à l’optimisation pour les moteurs de recherche {#seo-best-practices}
 
@@ -366,9 +366,9 @@ AEM utilise le [module de plan de site Apache Sling](https://github.com/apache/s
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible en tant que fonctionnalité de produit depuis Adobe Experience Manager version 6.5.11.0.
+>Cette fonctionnalité est disponible en tant que fonctionnalité de produit depuis Adobe Experience Manager, version 6.5.11.0.
 > 
->Pour les versions plus anciennes, vous pouvez enregistrer vous-même une servlet Sling, pour écouter une `sitemap.xml` appelez et utilisez la ressource fournie via l’API servlet pour rechercher la page active et ses descendants afin de générer un fichier sitemap.xml.
+>Pour les versions plus anciennes, vous pouvez enregistrer vous-même une servlet Sling, pour appeler une `sitemap.xml` et utiliser la ressource fournie via l’API de servlet pour rechercher la page active et ses descendants afin de générer un fichier sitemap.xml.
 
 Le module de plan de site Apache Sling fait la distinction entre un plan de site de niveau supérieur et un plan de site imbriqué, tous deux générés pour toute ressource qui possède la variable `sling:sitemapRoot` définie sur `true`. En règle générale, les plans de site sont rendus à l’aide de sélecteurs localisés par le chemin du plan de site de niveau supérieur de l’arborescence, qui correspond à la ressource qui n’a aucun autre ancêtre racine du plan de site. Cette racine de plan de site de niveau supérieur expose également l’index de plan de site, qui est normalement ce que le propriétaire d’un site doit configurer dans le portail de configuration du moteur de recherche ou ajouter au site `robots.txt`.
 
@@ -388,7 +388,7 @@ Pour activer la tâche en arrière-plan qui génère le plan de site XML, un `Si
 
 ![Plan de site Apache Sling – Planificateur](assets/sling-sitemap-scheduler.png)
 
-La tâche de génération du plan de site peut s’exécuter sur les instances de niveau création et publication. Dans la plupart des cas, il est recommandé d’exécuter la génération sur les instances de niveau publication, car les URL canoniques appropriées ne peuvent être générées qu&#39;à ce niveau (en raison des règles de mappage des ressources Sling généralement présentes uniquement sur les instances de niveau publication). Cependant, il est possible d’intégrer en tant que plug-in une implémentation personnalisée du mécanisme d’externalisation utilisé pour générer les URL canoniques en implémentant l’interface [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html). Si une implémentation personnalisée peut générer les URL canoniques d’un plan de site sur les instances de niveau création, le `SitemapScheduler` peut être configuré pour le mode d’exécution création et la charge de travail de génération du plan de site XML peut être répartie entre les instances du cluster de services création. Dans ce scénario, une attention particulière doit être accordée à la manipulation de contenus qui n’ont pas encore été publiés, qui ont été modifiés ou qui ne sont visibles que par un groupe restreint d’utilisateurs.
+La tâche de génération du plan de site peut s’exécuter sur les instances de niveau création et publication. Dans la plupart des cas, il est recommandé d’exécuter la génération sur les instances de niveau publication, car les URL canoniques appropriées ne peuvent être générées qu’à ce niveau (en raison des règles de mappage des ressources Sling généralement présentes uniquement sur les instances de niveau publication). Cependant, il est possible d’intégrer en tant que plug-in une implémentation personnalisée du mécanisme d’externalisation utilisé pour générer les URL canoniques en implémentant l’interface [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html). Si une implémentation personnalisée peut générer les URL canoniques d’un plan de site sur les instances de niveau création, le `SitemapScheduler` peut être configuré pour le mode d’exécution création et la charge de travail de génération du plan de site XML peut être répartie entre les instances du cluster de services création. Dans ce scénario, une attention particulière doit être accordée à la manipulation de contenus qui n’ont pas encore été publiés, qui ont été modifiés ou qui ne sont visibles que par un groupe restreint d’utilisateurs.
 
 AEM Sites contient une implémentation par défaut d’un `SitemapGenerator` qui parcourt une arborescence de pages pour générer un plan de site. Il est préconfiguré pour ne générer que les URL canoniques d’un site et des alternatives linguistiques, le cas échéant. Il peut également être configuré pour inclure la date de dernière modification d’une page, si nécessaire. Pour ce faire, activez l’option _Ajouter la dernière modification_ de la configuration _Optimisation du moteur de recherche Adobe AEM - Générateur de plan de site de l’arborescence de page_ et sélectionnez une _Dernière modification de source_. Lorsque les plans de site sont générés au niveau de publication, il est recommandé d’utiliser la date `cq:lastModified`.
 
@@ -472,7 +472,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-De plus, la fonctionnalité mise en oeuvre pour les plans de site XML peut également être utilisée pour différents cas d’utilisation, par exemple pour ajouter le lien canonique ou les variantes linguistiques dans l’en-tête d’une page. Reportez-vous à l’interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
+De plus, la fonctionnalité mise en œuvre pour les plans de site XML peut également être utilisée dans différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Reportez-vous à l’interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
 
 ### Création de redirections 301 pour les URL héritées {#creating-redirects-for-legacy-urls}
 
@@ -485,7 +485,7 @@ Veillez à consulter la section Ressources supplémentaires qui suit pour obteni
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d’informations, voir les ressources supplémentaires suivantes :
+Pour plus d’informations, consultez les ressources supplémentaires suivantes :
 
 * [Mappage de ressource](/help/sites-deploying/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)

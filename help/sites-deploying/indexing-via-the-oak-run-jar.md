@@ -12,7 +12,7 @@ exl-id: dcec8c1b-13cc-486c-b1a4-62e6eb3184ad
 source-git-commit: c61bf629e35db848c3f2f88c6c7e1dd3b7074b1c
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 85%
 Oak-run prend en charge tous les scénarios d’indexation sur la ligne de commande, sans qu’il faille opérer à partir du niveau JMX. Les avantages de la méthode oak-run sont les suivants :
 
 1. Il s’agit d’un nouvel ensemble d’outils d’indexation pour AEM 6.4.
-1. Elle réduit le délai de réindexation, ce qui a un impact bénéfique sur les temps de réindexation sur les référentiels plus volumineux.
+1. Il réduit la durée de réindexation, ce qui a un effet bénéfique sur les délais de réindexation des référentiels de grande taille.
 1. Il réduit la consommation des ressources au cours de la réindexation dans AEM, ce qui se traduit par de meilleures performances du système pour d’autres activités AEM.
-1. Oak-run fournit une prise en charge hors-bande : si les conditions de production ne permettent pas d’exécuter une réindexation sur les instances de production, un environnement cloné peut être utilisé à cette fin afin d’éviter un impact critique sur les performances.
+1. Oak-run fournit une prise en charge hors-bande : si les conditions d’exploitation ne permettent pas d’exécuter une réindexation sur les instances d’exploitation, un environnement cloné peut être utilisé à cette fin afin d’éviter un impact critique sur les performances.
 
 Vous trouverez, ci-dessous, la liste des scénarios d’utilisation qui peuvent être appliqués lors de l’exécution d’opérations d’indexation par le biais de l’outil `oak-run`.
 
@@ -33,8 +33,8 @@ Vous trouverez, ci-dessous, la liste des scénarios d’utilisation qui peuvent 
 >
 >Pour plus d’informations sur ce scénario, voir [Cas d’utilisation 1 - Contrôle de cohérence de l’index](/help/sites-deploying/oak-run-indexing-usecases.md#usercase1indexconsistencycheck).
 
-* `oak-run.jar`détermine rapidement si les index Lucene oak sont corrompus.
-* Il est recommandé de lancer l’exécution sur une instance en cours d’utilisation pour les niveaux de contrôle de cohérence 1 et 2.
+* `oak-run.jar` détermine rapidement si les index lucene oak sont corrompus.
+* Il est recommandé de lancer l’exécution sur une instance AEM en cours d’utilisation pour les niveaux de contrôle de cohérence 1 et 2.
 
 ![Contrôles de cohérence d’index](assets/screen_shot_2017-12-14at135758.png)
 
@@ -79,7 +79,7 @@ En fonction de la méthode d’indexation du fichier `oak-run.jar`, diverses ét
 >
 >Pour obtenir des informations détaillées sur ce scénario, voir [Réindexation – DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
 
-Il s’agit de la méthode recommandée pour réindexer les installations MongoMK (et RDBMK) AEM. Aucune autre méthode ne doit être utilisée.
+Il s’agit de la méthode recommandée pour réindexer les installations AEM MongoMK (et RDBMK). Aucune autre méthode ne doit être utilisée.
 
 Ce processus ne doit être exécuté que sur une seule instance AEM du cluster.
 
@@ -105,7 +105,7 @@ Ce processus ne doit être exécuté que sur une seule instance AEM du cluster.
 >
 >Pour obtenir des informations détaillées sur ce scénario, voir [Réindexation en ligne – SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore).
 
-Il s’agit de la méthode utilisée avant l’introduction des nouvelles fonctionnalités d’indexation de oak-run.jar. Elle peut être exécutée en définissant la propriété `reindex=true` sur l’index Oak.
+Il s’agit de la méthode utilisée avant l’introduction des nouvelles fonctionnalités d’indexation du fichier oak-run.jar. Elle peut être exécutée en définissant la propriété `reindex=true` sur l’index Oak.
 
 Cette méthode peut être utilisée si le client juge acceptables les effets sur l’index, du point de vue de la durée et des performances. C’est généralement le cas pour les installations AEM de petite taille et de taille moyenne.
 
@@ -115,13 +115,13 @@ Cette méthode peut être utilisée si le client juge acceptables les effets sur
 
 >[!NOTE]
 >
->Pour obtenir des informations détaillées sur ce scénario, voir [Réindexation en ligne – SegmentNodeStore – L’instance AEM est en cours d’exécution](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
+>Pour obtenir des informations détaillées sur ce scénario, consultez la section [Réindexation en ligne – SegmentNodeStore – L’instance AEM est en cours d’exécution](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
-La réindexation en ligne de TarMK à l’aide du fichier oak-run.jar est plus rapide que la valeur [Réindexation en ligne pour TarMK](#onlinere-indexingfortarmk) décrits ci-dessus. Toutefois, il nécessite également une exécution pendant une période de maintenance ; avec la mention indiquant que la fenêtre sera plus courte et que d’autres étapes sont nécessaires pour effectuer la réindexation.
+La réindexation en ligne de TarMK à l’aide du fichier oak-run.jar est plus rapide que la [Réindexation en ligne pour TarMK](#onlinere-indexingfortarmk) décrite ci-dessus. Cependant, elle exige également d’être exécutée au cours d’une fenêtre de maintenance, en sachant que cette fenêtre sera plus étroite. Son exécution s’accompagne, en outre, d’étapes supplémentaires.
 
 >[!NOTE]
 >
->La couleur orange indique les opérations au cours desquelles AEM doit être exécuté dans une fenêtre de maintenance.
+>La couleur orange indique les opérations au cours desquelles AEM doit être exécuté au cours d’une session de maintenance.
 
 ![Réindexation en ligne de TarMK à l’aide du fichier oak-run.jar](assets/7.png)
 
@@ -131,7 +131,7 @@ La réindexation en ligne de TarMK à l’aide du fichier oak-run.jar est plus r
 >
 >Pour obtenir des informations détaillées sur ce scénario, voir [Réindexation en ligne – SegmentNodeStore – L’instance AEM est arrêtée](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-La réindexation hors ligne de TarMK est la méthode de réindexation la plus simple basée sur le fichier `oak-run.jar`, en ce sens qu’elle ne nécessite qu’un seul commentaire `oak-run.jar` . Cependant, elle exige que l’instance AEM soit arrêtée.
+La réindexation hors ligne de TarMK est la méthode de réindexation la plus simple basée sur le fichier `oak-run.jar`, en ce sens qu’elle ne nécessite qu’un seul commentaire `oak-run.jar`. Cependant, elle exige que l’instance AEM soit arrêtée.
 
 >[!NOTE]
 >
@@ -143,7 +143,7 @@ La réindexation hors ligne de TarMK est la méthode de réindexation la plus si
 
 >[!NOTE]
 >
->Pour obtenir des informations détaillées sur ce scénario, voir [ Réindexation hors-bande – SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
+>Pour obtenir des informations détaillées sur ce scénario, voir [Réindexation hors-bande – SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
 La réindexation hors-bande réduit l’incidence de la réindexation sur les instances AEM en cours d’utilisation.
 
@@ -157,7 +157,7 @@ La réindexation hors-bande réduit l’incidence de la réindexation sur les in
 
 >[!NOTE]
 >
->Pour obtenir des informations détaillées sur ce scénario, voir [Cas d’utilisation 4 – Mise à jour des définitions d’indexation](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
+>Pour obtenir des informations détaillées sur ce scénario, consultez le [Cas d’utilisation 4 – Mise à jour des définitions d’indexation](/help/sites-deploying/oak-run-indexing-usecases.md#usecase4updatingindexdefinitions).
 
 ### Création et mise à jour des définitions d’index sur TarMK à l’aide d’ACS Ensure Index {#creatingandupdatingindexdefinitionsontarmkusingacsensureindex}
 
@@ -165,7 +165,7 @@ La réindexation hors-bande réduit l’incidence de la réindexation sur les in
 >
 >ACS Ensure Index est un projet soutenu par la communauté, mais pas par Adobe Support.
 
-Cela permet d’envoyer la définition d’index via un module de contenu, ce qui entraîne une réindexation en définissant l’indicateur de réindexation sur `true`. Cela fonctionne pour les configurations plus petites où la réindexation ne prend pas beaucoup de temps.
+Cela vous permet d’envoyer une définition d’index via un module de contenu, ce qui se traduit, par la suite, par la possibilité d’effectuer une réindexation en définissant l’indicateur de réindexation sur `true`. Cela fonctionne avec les plus petites configurations pour lesquelles la réindexation est de courte durée.
 
 Pour plus d’informations, consultez la [documentation d’ACS Ensure Index](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html).
 

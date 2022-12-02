@@ -13,7 +13,7 @@ exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ We.Retail a été conçu avec une structure de site globalisée qui offre des ga
 ## Test {#trying-it-out}
 
 1. Ouvrez la console Sites à partir de **Navigation globale -> Sites**.
-1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l&#39;exemple de structure par pays avec la Suisse, les Etats-Unis, la France, etc., à côté du Principal Langue.
+1. Basculez en mode Colonnes (le cas échéant) et sélectionnez We.Retail. Notez l’exemple de structure pour la Suisse, les États-Unis, la France, etc. avec les gabarits de langue.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
@@ -72,4 +72,4 @@ We.Retail a été conçu avec une structure de site globalisée qui offre des ga
 
 ## Informations supplémentaires {#further-information}
 
-Voir à ce sujet le document de création. [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md) pour obtenir des informations techniques complètes.
+Pour obtenir tous les détails techniques, reportez-vous au document de création [Traduction de contenu pour des sites multilingues](/help/sites-administering/translation.md).

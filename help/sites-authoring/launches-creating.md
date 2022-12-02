@@ -14,7 +14,7 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '986'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -84,11 +84,11 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
    * **Titre du lancement** : nom du lancement. Ce nom doit être explicite pour les auteurs.
    * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
-   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option permet d’y parvenir en effectuant un lancement [Live Copy](/help/sites-administering/msm.md).
+   * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en [Live Copy](/help/sites-administering/msm.md).
 
       Par défaut, cette option est sélectionnée.
 
-   * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour l’exploitation**. Voir [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -96,8 +96,8 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    Si vous revenez à la console (en cliquant sur **Terminé**) vous pouvez afficher (et accéder à) votre lancement à partir de :
 
-   * la console [**Lancements**](/help/sites-authoring/launches.md#the-launches-console)
-   * les [**références** de la console **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * la console [**Lancements**](/help/sites-authoring/launches.md#the-launches-console) ;
+   * la section [**Références** de la console **Sites**](/help/sites-authoring/launches.md#launches-in-references-sites-console).
 
 ### Création d’un lancement avec un nouveau modèle {#create-launch-with-new-template}
 
@@ -113,7 +113,7 @@ Lors de la [création d’un lancement](/help/sites-authoring/launches-creating.
 
 La sélection de cette option va :
 
-* mettre à jour les autres options disponibles,
+* mettre à jour les autres options disponibles et
 * inclure une nouvelle étape dans laquelle vous pouvez sélectionner le modèle requis.
 
 ![chlimage_1-229](assets/chlimage_1-229.png)

@@ -1,6 +1,6 @@
 ---
-title: Utilisation de Media Library pour la gestion de base des ressources numériques
-description: '"[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."'
+title: Utilisation de Media Library pour la gestion de base des ressources numériques
+description: "[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."
 contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
@@ -8,16 +8,16 @@ exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
 source-wordcount: '586'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation de Media Library pour la gestion de base des ressources {#manage-assets-using-media-library}
+# Utilisation de Media Library pour la gestion de base des ressources {#manage-assets-using-media-library}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=fr) |
 | AEM 6.5 | Cet article |
 | AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=fr) |
 
@@ -41,9 +41,9 @@ Si vous souhaitez empêcher l’utilisation involontaire des fonctionnalités [!
 
 ## Utilisation de Media Library {#use-media-library}
 
-Media Library fournit des fonctions de gestion des actifs numériques de base pour les cas d’utilisation suivants :
+Media Library fournit des fonctions de gestion des ressources numériques de base pour les cas d’utilisation suivants :
 
-* Pages web créées à l’aide de [!DNL Adobe Experience Manager Sites].
+* Pages web créées à l’aide d’[!DNL Adobe Experience Manager Sites].
 * Formulaires adaptatifs et communications créés à l’aide d’[!DNL Adobe Experience Manager Forms].
 * Expériences d’écran numérique créées à l’aide d’[!DNL Adobe Experience Manager Screens].
 * API HTTP REST [!DNL Assets] pour les opérations en mode découplé.
@@ -85,7 +85,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 
 >[!IMPORTANT]
 >
->De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez le service clientèle d’Adobe.
+>De nombreux cas d’utilisation avancés de la gestion des actifs numériques sont remplis par [!DNL Experience Manager Assets]. La licence Media Library vous permet de ne répondre qu’aux cas d’utilisation répertoriés à l’aide de Media Library. Si un cas pratique n’est pas répertorié, ne l’utilisez pas avec la licence Media Library. Si vous avez des questions, contactez l’Assistance clientèle d’Adobe.
 
 Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL Asset], de sélecteur [!DNL Asset], de balisage en masse, des workflows de modification des ressources ou l’interface utilisateur standard [!DNL Adobe Experience Manager] pour accéder à Media Library sans licence [!DNL Assets].
 
@@ -93,7 +93,7 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 
 >[!MORELIKETHIS]
 >
->* [Fonctionnalités de gestion des actifs numériques dans [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=fr)
->* [[!DNL Experience Manager] 6.5 Description du produit Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 Description du produit on-premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=fr)
+>* Description du produit [[!DNL Experience Manager]  6.5 Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* Description du produit [[!DNL Experience Manager]  6.5 on-premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html)
 

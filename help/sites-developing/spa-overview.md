@@ -14,7 +14,7 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -26,11 +26,11 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Présentation {#introduction}
 
-Les sites créés à l’aide de structures SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas la structure HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
+Les sites créés à l’aide de frameworks SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas le framework HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
 
 Pour activer la modification d’applications sur une seule page dans AEM, il faut qu’il y ait une correspondance entre la sortie JSON de l’application et le modèle de contenu dans le répertoire AEM afin d’enregistrer les modifications apportées au contenu.
 
@@ -108,7 +108,7 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 
 Cette section donne un aperçu plus détaillé de l’interaction client-serveur lors de l’édition d’une SPA.
 
-![page_editor_spa_authingmediator-2](assets/page_editor_spa_authoringmediator-2.png)
+![page_editor_spa_authoringmediator-2](assets/page_editor_spa_authoringmediator-2.png)
 
 1. La SPA s’initialise et demande le modèle auprès de l’exportateur de modèle Sling.
 1. À son tour, l’exportateur demande au référentiel les ressources qui composent la page.
@@ -142,7 +142,7 @@ Cette section donne un aperçu plus détaillé de l’interaction client-serveur
 
 Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création.
 
-![spa_content_authingmodel](assets/spa_content_authoringmodel.png)
+![spa_content_authoringmodel](assets/spa_content_authoringmodel.png)
 
 1. La SPA récupère le modèle de page.
 1. **2a** Le modèle de page fournit à l’éditeur les données requises pour la création.
@@ -160,7 +160,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et restrictions {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application sur une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Veuillez consulter la [Prise en main de SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) document pour obtenir le minimum de connaissances nécessaires pour que le vôtre soit en cours d’exécution.
+Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) afin de disposer des informations minimales nécessaires pour faire fonctionner la vôtre.
 
 ### Frameworks pris en charge {#supported-frameworks}
 
@@ -177,22 +177,22 @@ Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 
-Il est possible de définir et personnaliser d’autres sélecteurs dans le cadre d’une SPA développée pour le SDK de l’éditeur de SPA d’AEM. Toutefois, cette prise en charge nécessite que le sélecteur `model` soit le premier et que l’extension soit `.json`[, conformément aux exigences de l’exportateur JSON.](json-exporter-components.md#multiple-selectors)
+Il est possible de définir et personnaliser d’autres sélecteurs dans le cadre d’une SPA développée pour le SDK de l’éditeur de SPA d’AEM. Toutefois, cette prise en charge nécessite que le sélecteur `model` soit le premier et que l’extension soit `.json` conformément [aux exigences de l’exportateur JSON.](json-exporter-components.md#multiple-selectors)
 
 ### Exigences relatives à l’éditeur de texte {#text-editor-requirements}
 
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
-1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas de l’exemple de contenu du journal WKND, il s’agit d’un `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
+1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du contenu d’exemple Journal WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
 1. Définissez la propriété `editElementQuery` sur la configuration `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
-Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la section [Exemple de contenu du journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la section [Exemple de contenu Journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
-Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md)
+Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, consultez la section [Configuration de l’éditeur de texte enrichi.](/help/sites-administering/rich-text-editor.md)
 
 ### Restrictions {#limitations}
 
-Le SDK de l’éditeur SPA d’AEM a été introduit avec le Service Pack 2 d’Adobe 6.4. Elle est entièrement soutenue par l’Adobe et continue d’être améliorée et développée. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
+Le SDK de l’éditeur de SPA d’AEM a été introduit avec le pack de services 2 d’AEM 6.4. Elle est entièrement soutenue par l’Adobe et continue d’être améliorée et développée. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
 
 * Mode cible
 * ContextHub

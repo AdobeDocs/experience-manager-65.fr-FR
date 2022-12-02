@@ -87,7 +87,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [plug-in ActivityMap fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.
+>Le [plug-in Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.
 
 ## Configuration pour Activity Map {#configuring-for-the-activity-map}
 
@@ -95,7 +95,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [plug-in ActivityMap fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit désormais être utilisé.
+>Le [plug-in Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit désormais être utilisé.
 
 ## Création d’un framework Adobe Analytics {#creating-a-adobe-analytics-framework}
 
@@ -175,7 +175,7 @@ Les descendants de la page héritent de l’association avec la structure. Par e
 
 1. Dans la console **Sites**, sélectionnez la page dont vous souhaitez configurer le suivi.
 1. Ouvrez les **[Propriétés de la page](/help/sites-authoring/editing-page-properties.md)**, directement à partir de la console ou via l’éditeur de page.
-1. Ouvrez l’onglet**Services cloud**.
+1. Ouvrez l’onglet **Services cloud**.
 
 1. Utilisez le menu déroulant **Ajouter une configuration** pour sélectionner **Adobe Analytics** parmi les options disponibles. Si l’héritage est en place, vous devez le désactiver pour que le sélecteur devienne disponible.
 

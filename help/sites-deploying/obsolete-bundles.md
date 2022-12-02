@@ -1,7 +1,7 @@
 ---
-title: 'Liste des lots obsolètes désinstallés après la mise à niveau '
+title: Liste des lots obsolètes désinstallés après la mise à niveau
 seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
-description: 'Liste répertoriant les lots automatiquement désinstallées lors de la mise à niveau vers AEM 6.3. '
+description: Liste répertoriant les lots automatiquement désinstallées lors de la mise à niveau vers AEM 6.3.
 seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
@@ -24,9 +24,9 @@ ht-degree: 100%
 >
 >Si votre code repose sur ces lots, contactez l’assistance technique d’Adobe et demandez un module de compatibilité pour la zone concernée.
 
-Lorsque vous effectuez la mise à niveau vers AEM 6.3, les lots suivants sont automatiquement désinstallées, en fonction de la version d’AEM à partir de laquelle la mise à niveau a été effectuée :
+Lorsque vous effectuez la mise à niveau vers AEM 6.3, les lots suivants sont automatiquement désinstallées, en fonction de la version d’AEM à partir de laquelle la mise à niveau a été effectuée :
 
-**AEM 6.1:**
+**AEM 6.1 :**
 
 * org.eclipse.equinox.region, version 1.1.0.v20120522-1841, Active
 * org.apache.sling.installer.factory.subsystems, version 1.0.0, Active
@@ -40,18 +40,18 @@ Lorsque vous effectuez la mise à niveau vers AEM 6.3, les lots suivants sont au
 * com.adobe.cq.cq-creativecloud-storage, version 0.0.8, Installé
 * biz.aQute.bndlib, version 1.43.0, Active
 * com.day.cq.dam.commons.nekohtml, version 0.9.5, Active
-* com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.2.2, Active
+* com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.2.2. Active
 
 **AEM 6.0 :**
 
-* org.apache.sling.discovery.impl, version 1.1.6, Active
+* org.apache.sling.discovery.impl, version 1.1.6. Active
 * com.adobe.granite.installer.patch, version 0.4.0, Active
 * biz.Quate.bndlib, version 1.43.0, Principal
 * com.day.cq.cq-jobs-core, version 5.4.0, Active
 * com.day.cq.cq-opensocial, version 5.7.2, Active
 * com.day.cq.cq-pinauthhandler, version 1.1.2, Active
 * com.day.cq.dam.commons.nekohtml, version 0.9.5, Principal
-* com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.1.6, Active
+* com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.1.6. Active
 * com.day.cq.wcm.cq-wcm-mobile-phonegap-build-integration, version 5.7.18, Active
 
 **CQ 5.6.1 :**
@@ -60,7 +60,7 @@ Lorsque vous effectuez la mise à niveau vers AEM 6.3, les lots suivants sont au
 * com.day.cq.cq-pinauthhandler, version 1.0.0, Active
 * com.day.cq.dam.commons.nekohtml, version 0.9.5, Principal
 * com.day.crx.crxde-support, version 2.3.14, Installé
-* com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.0.2, Active
+* com.day.cq.mcm.cq-mcm-silverpop-integration, version 1.0.2. Active
 
 **CQ 5.6.0 :**
 

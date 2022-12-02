@@ -13,7 +13,7 @@ feature: Selectors
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '724'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -25,11 +25,11 @@ Cette rubrique décrit comment utiliser les sélecteurs de produits, de sites et
 
 Vous accédez aux sélecteurs lorsque vous créez des ensembles de carrousels, vous ajoutez des zones réactives et des zones cliquables et vous créez des vidéos et des images interactives.
 
-Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de produits si vous liez une zone réactive ou une zone cliquable à une page d’aperçu rapide. Utilisez le sélecteur de sites si vous liez une zone réactive ou une zone cliquable à un lien hypertexte ; utilisez le sélecteur de ressources lorsque vous créez une diapositive.
+Par exemple, dans cette bannière de carrousel, vous utilisez le sélecteur de produits si vous liez une zone réactive ou une zone cliquable à une page d’aperçu rapide. Utilisez le sélecteur de sites si vous liez une zone réactive ou une zone cliquable à un lien hypertexte ; utilisez le sélecteur de ressources lorsque vous créez une diapositive.
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes client Experience Manager Sites. Le sélecteur de produits nécessite également Experience Manager Commerce.
+Lorsque vous sélectionnez (au lieu de saisir manuellement) l’emplacement des zones réactives ou des zones cliquables, vous utilisez le sélecteur. Le sélecteur de sites ne fonctionne que si vous êtes client d’Experience Manager Sites. Le sélecteur de produits nécessite également Experience Manager Commerce.
 
 ## Utilisation du sélecteur de produits {#selecting-products}
 
@@ -45,15 +45,15 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-522](assets/chlimage_1-522.png)
 
-   Filtrage par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et saisir des mots-clés ou sélectionner des balises, ou les deux.
+   Filtrez par mot-clé ou balise en appuyant sur **[!UICONTROL Filtrer]** et en entrant des mots-clés ou en sélectionnant des balises, ou les deux à la fois.
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   Modifier l’emplacement où Experience Manager recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et accéder à un autre dossier.
+   Vous pouvez modifier l’emplacement dans lequel Experience Manager recherche les données de produit en appuyant sur **[!UICONTROL Parcourir]** et en accédant à un autre dossier.
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   Sélectionner **[!UICONTROL Tri]** par pour indiquer si le Experience Manager trie du plus récent au plus ancien ou du plus ancien au plus récent.
+   Sélectionnez **[!UICONTROL Trier par]** pour indiquer si Experience Manager trie du plus récent au plus ancien ou du plus ancien au plus récent.
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -65,13 +65,13 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-527](assets/chlimage_1-527.png)
 
-1. Dans **[!UICONTROL Aperçu]** , vous pouvez sélectionner la zone réactive ou la zone cliquable et voir à quoi ressemble l’aperçu rapide.
+1. En mode **[!UICONTROL Aperçu]**, vous pouvez sélectionner la zone réactive ou la zone cliquable et voir à quoi ressemble l’aperçu rapide.
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## Utilisation du sélecteur de site {#selecting-sites}
+## Utilisation du sélecteur de sites {#selecting-sites}
 
-Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée dans Experience Manager Sites.
+Utilisez le sélecteur de sites pour choisir une page web lorsque vous souhaitez qu’une zone réactive ou une zone cliquable pointe vers une page web gérée dans Experience Manager Sites.
 
 1. Accédez à l’ensemble de carrousels, à l’image interactive ou à la vidéo interactive, puis sélectionnez l’onglet **[!UICONTROL Actions]** (disponible uniquement si vous avez défini une zone réactive ou une zone cliquable).
 
@@ -79,7 +79,7 @@ Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez 
 
    ![chlimage_1-529](assets/chlimage_1-529.png)
 
-1. Sélectionnez la **[!UICONTROL Sélecteur de site]** (dossier avec loupe) et accédez à une page de votre Experience Manager Sites à laquelle vous souhaitez lier la zone réactive ou la zone cliquable.
+1. Sélectionnez l’icône **[!UICONTROL Sélecteur de sites]** (dossier avec loupe) et accédez dans Experience Manager Sites à une page à laquelle vous voulez relier la zone réactive ou la zone cliquable.
 
    ![chlimage_1-530](assets/chlimage_1-530.png)
 
@@ -87,7 +87,7 @@ Utilisez le sélecteur de site pour choisir une page web lorsque vous souhaitez 
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. Dans **[!UICONTROL Aperçu]** si vous sélectionnez la zone réactive ou la zone cliquable, vous accédez à la page du site du Experience Manager que vous avez spécifiée.
+1. En mode **[!UICONTROL Aperçu]**, si vous sélectionnez la zone réactive ou la zone cliquable, vous accédez à la page du site Experience Manager que vous avez spécifiée.
 
 ## Utilisation du sélecteur de ressources {#selecting-assets}
 
@@ -95,7 +95,7 @@ Utilisez ce sélecteur pour sélectionner les images à utiliser dans une banni�
 
 Reportez-vous également à la section [Sélecteur de ressources](search-assets.md#assetpicker) pour plus d’informations.
 
-1. Accédez à l’ensemble de carrousels et créez une diapositive. Vous pouvez également accéder à la vidéo interactive en accédant à la **[!UICONTROL Contenu]** et sélectionnez des ressources. Vous pouvez également créer des visionneuses de contenu multimédia varié, d’images ou à 360°.
+1. Accédez à l’ensemble de carrousels et créez une diapositive. Ou accédez à la vidéo interactive, accédez à l’onglet **[!UICONTROL Contenu]** et sélectionnez des ressources. Vous pouvez également créer des visionneuses de contenu multimédia varié, d’images ou à 360°.
 1. Sélectionnez l’icône **[!UICONTROL Sélecteur de ressources]** (dossier avec loupe) et accédez à une ressource.
 
    ![chlimage_1-532](assets/chlimage_1-532.png)
@@ -104,7 +104,7 @@ Reportez-vous également à la section [Sélecteur de ressources](search-assets.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   Permet de modifier l’emplacement où Experience Manager recherche les ressources en accédant à un autre dossier dans le **[!UICONTROL Chemin]** champ .
+   Vous pouvez modifier l’emplacement où Experience Manager recherche les ressources en accédant à un autre dossier dans le champ **[!UICONTROL Chemin]**.
 
    Sélectionnez **[!UICONTROL Collection]** pour rechercher uniquement des ressources dans les collections.
 
@@ -114,6 +114,6 @@ Reportez-vous également à la section [Sélecteur de ressources](search-assets.
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 
-1. Sélectionnez la ressource en appuyant sur la coche. La ressource s’affiche.
+1. Sélectionnez la ressource en activant la case à cocher. La ressource s’affiche.
 
    ![chlimage_1-536](assets/chlimage_1-536.png)

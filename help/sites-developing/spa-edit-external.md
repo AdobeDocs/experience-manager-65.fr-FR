@@ -5,13 +5,13 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
 workflow-type: tm+mt
 source-wordcount: '2392'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Modification d’une SPA externe dans AEM {#editing-external-spa-within-aem}
 
-Lorsque vous décidez du niveau d’intégration que vous souhaitez appliquer entre votre SPA externe et votre AEM, vous devez souvent modifier et afficher la SPA dans AEM.
+Lorsque vous décidez du niveau d’intégration que vous souhaitez entre votre SPA externe et AEM, vous devez souvent modifier et afficher la SPA dans AEM.
 
 ## Présentation {#overview}
 
@@ -41,7 +41,7 @@ Vous devez tout d’abord charger la SPA externe vers votre projet AEM.
 
 Maintenant que la SPA externe fait partie de votre projet AEM, vous devez la configurer dans AEM.
 
-### Inclusion des modules du SDK SPA Adobe {#include-spa-sdk-packages}
+### Inclusion des modules du SDK de SPA Adobe {#include-spa-sdk-packages}
 
 Pour tirer parti des fonctionnalités de SPA AEM, vous pouvez utiliser les dépendances des trois modules suivants.
 
@@ -260,11 +260,11 @@ Il existe un certain nombre d’exigences à satisfaire pour ajouter des composa
 
 ### Conteneurs virtuels {#virtual-containers}
 
-La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à ceux des [composants feuilles virtuels.](#virtual-leaf-components)
+La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à celles des [composants feuilles virtuels.](#virtual-leaf-components)
 
-Le développeur front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les nœuds requis dans la structure JCR.
+L’équipe de développement front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les nœuds requis dans la structure JCR.
 
-Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et si le développeur souhaite ajouter un nouveau conteneur enfant :
+Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et que l’équipe de développement souhaite ajouter un nouveau conteneur enfant :
 
 ![Emplacement du conteneur](assets/container-location.png)
 
@@ -274,15 +274,15 @@ Lors de la modification de la page contenant ce composant dans AEM, un espace r�
 
 ![Espace réservé du conteneur](assets/container-placeholder.png)
 
-![Emplacement du conteneur dans le JCR](assets/container-jcr-structure.png)
+![Emplacement du conteneur dans JCR](assets/container-jcr-structure.png)
 
 Une fois que l’auteur ajoute un composant enfant au conteneur, le nouveau nœud de conteneur est créé avec le nom correspondant dans la structure JCR.
 
 ![Conteneur avec contenu](assets/container-with-content.png)
 
-![Conteneur avec contenu dans le JCR](assets/container-with-content-jcr.png)
+![Conteneur avec contenu dans JCR](assets/container-with-content-jcr.png)
 
-Vous pouvez désormais ajouter plus de composants et de contenu au conteneur en fonction des besoins de l’auteur, et les modifications seront conservées.
+Vous pouvez désormais ajouter plus de composants et de contenu au conteneur, selon les besoins de l’auteur, et les modifications seront conservées.
 
 #### Exigences et restrictions {#container-limitations}
 
@@ -334,7 +334,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Identifiez le niveau racine pour AEM.
 
-   * Pour notre échantillon, nous considérons `wknd-spa-react/us/en` comme racine du SPA. Cela signifie que tout ce qui précède ce chemin ne concerne que des pages ou du contenu AEM.
+   * Pour notre échantillon, nous considérons `wknd-spa-react/us/en` comme la racine de la SPA. Cela signifie que tout ce qui précède ce chemin ne concerne que des pages ou du contenu AEM.
 
 1. Créez une page au niveau requis.
 

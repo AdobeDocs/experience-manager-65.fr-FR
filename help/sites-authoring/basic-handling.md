@@ -371,7 +371,7 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
 Vous pouvez sélectionner tous les éléments d’une vue en cliquant sur l’option **Sélectionner tout** dans l’angle supérieur droit de la console.
 
 * En **mode Carte**, toutes les cartes sont sélectionnées.
-* Dans le **mode d&#39;affichage Liste**, tous les éléments de la liste sont sélectionnés.
+* Dans le **mode d’affichage Liste**, tous les éléments de la liste sont sélectionnés.
 * En **mode Colonnes**, tous les éléments de la colonne la plus à gauche sont sélectionnés.
 
 ![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
@@ -506,7 +506,7 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 
 * Vous pouvez consulter les données Analytics en affichant les colonnes appropriées à l’aide de la boîte de dialogue **Afficher les paramètres**.
 
-   Vous pouvez filtrer les données d&#39;analyse pour les 30, 90 ou 365 derniers jours à l’aide des options de filtrage situées à droite de l’en-tête.
+   Vous pouvez filtrer les données d’analyse pour les 30, 90 ou 365 derniers jours à l’aide des options de filtrage situées à droite de l’en-tête.
 
    ![bh-24](assets/bh-24.png)
 

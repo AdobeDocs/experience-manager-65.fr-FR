@@ -191,7 +191,7 @@ Le script JSP de ce composant génère des appels vers l’API JavaScript Targe
 
 >[!NOTE]
 >
->Si vous n’utilisez pas DTM ni un autre autre système marketing cible, vous pouvez utiliser des fichiers de bibliothèque cible personnalisés.
+>Si vous n’utilisez pas DTM ni un autre système marketing cible, vous pouvez utiliser des fichiers de bibliothèque cible personnalisés.
 
 >[!NOTE]
 >

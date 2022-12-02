@@ -58,7 +58,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >Voir [Préalables à l’intégration à Adobe Target](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node) pour plus d’informations.
 
-Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/help/sites-authoring/content-targeting-touch.md) qui envoie les données de visiteur à Adobe Target. Notez que les composants de page requièrent un code spécifique pour activer le ciblage du contenu. (consultez [Développement pour le contenu ciblé](/help/sites-developing/target.md)).)
+Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](/help/sites-authoring/content-targeting-touch.md) qui envoie les données de visiteur à Adobe Target. Notez que les composants de page requièrent un code spécifique pour activer le ciblage du contenu. (consultez [Développement pour le contenu ciblé](/help/sites-developing/target.md)). 
 
 >[!NOTE]
 >

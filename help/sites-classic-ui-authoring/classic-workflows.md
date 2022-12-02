@@ -1,7 +1,7 @@
 ---
 title: Utilisation des workflows
 seo-title: Working with Workflows
-description: AEM Workflows vous permet d’automatiser une série d’étapes effectuées sur une page ou une ressource. Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un worfklow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche.
+description: AEM Workflows vous permet d’automatiser une série d’étapes effectuées sur une page ou une ressource. Par exemple, lors de la publication, un éditeur doit réviser le contenu, avant qu’un administrateur du site active la page. Un workflow qui automatise cet exemple avertit chaque participant lorsqu’il est temps qu’il effectue sa tâche.
 seo-description: AEM Workflows allows you to automate a series of steps that are performed on a page or asset. For example, when publishing, an editor has to review the content - before a site administrator activates the page. A workflow that automates this example notifies each participant when it is time to perform their required work.
 uuid: 3eb6e790-6589-414a-8e51-33c358f47a73
 contentOwner: Chris Bohnert

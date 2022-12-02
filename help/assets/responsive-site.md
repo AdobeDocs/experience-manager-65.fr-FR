@@ -13,7 +13,7 @@ exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ Utilisez la fonctionnalité de code réactif lorsque vous souhaitez partager le 
 
 Cette fonction a un sens si votre site web se trouve sur un composant WCM tiers. Cependant, si votre site web se trouve plutôt sur Adobe Experience Manager, un serveur d’images hors site effectue le rendu de l’image et le communique à la page web.
 
-Voir aussi [Intégration de la visionneuse de vidéos à une page web](embed-code.md).
+Consultez également la section [Intégration de la visionneuse de vidéos à une page web](embed-code.md).
 
-Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
+Consultez également la section [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
 
 **Pour diffuser des images optimisées pour un site réactif, procédez comme suit :**
 
@@ -41,16 +41,16 @@ Voir aussi [Liaison d’URL à une application web](linking-urls-to-yourwebappli
    >
    >La ressource sélectionnée *et* le paramètre d’image prédéfini ou le paramètre de visionneuse prédéfini sélectionné doivent être publiés pour que le bouton **[!UICONTROL URL]** ou **[!UICONTROL RESS]** soit disponible.
    >
-   >Dynamic Media - Le mode hybride requiert la publication de paramètres d’image prédéfinis ; Dynamic Media : le mode Scene7 publie automatiquement les paramètres d’image prédéfinis.
+   >Le mode hybride de Dynamic Media nécessite de publier des paramètres prédéfinis d’image ; le mode Scene7 de Dynamic Media publie automatiquement les paramètres prédéfinis d’image.
 
 1. Sélectionnez **[!UICONTROL RESS]**.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. Dans la boîte de dialogue **[!UICONTROL Intégrer une image réactive]**, sélectionnez et copiez le texte du code réactif et collez-le dans votre site web pour accéder au fichier réactif.
-1. Modifiez les points d’arrêt par défaut dans le code incorporé pour qu’ils correspondent aux points d’arrêt du site web réactif, directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
+1. Modifiez les points d’arrêt par défaut dans le code incorporé pour qu’ils correspondent aux points d’arrêt du site web réactif directement dans le code. Testez en outre les différentes résolutions d’image diffusées à différents points d’arrêt d’une page.
 
-## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
+## Utilisation du protocole HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. La diffusion de ressources Dynamic Media est prise en charge via HTTP/2 pour améliorer les temps de réponse et de chargement.
 

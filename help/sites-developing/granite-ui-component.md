@@ -13,7 +13,7 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ L’IU Granite fournit toute une gamme de composants conçus pour être utilisé
 
 >[!NOTE]
 >
->Pour plus d’informations sur les champs, consultez la [documentation de l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Pour plus d’informations sur les champs, consultez la [documentation de l’IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 Utilisez la structure de base de l’IU Granite pour développer et/ou étendre les composants Granite. Elle comprend deux éléments :
 
@@ -46,18 +46,18 @@ Utilisez la structure de base de l’IU Granite pour développer et/ou étendre 
 
    * Une collection de clientlibs fournissant un certain vocabulaire (c’est-à-dire une extension du langage HTML) pour obtenir des motifs génériques d’interaction via une IU pilotée par hypermédia.
 
-Composant d’IU Granite générique `field` est composé de deux fichiers ciblés :
+Le composant d’IU Granite générique `field` se compose de deux fichiers d’intérêt :
 
 * `init.jsp` : gère le traitement générique ; le balisage et la description, et fournit la valeur de formulaire dont vous aurez besoin lors du rendu du champ.
-* `render.jsp` : il s’agit de l’emplacement où le rendu du champ est effectué et doit être remplacé pour votre champ personnalisé ; il est inclus par `init.jsp`.
+* `render.jsp` : il s’agit de l’emplacement où le rendu du champ est effectué, il doit être remplacé pour votre champ personnalisé ; il est inclus par `init.jsp`.
 
-Reportez-vous à la [documentation de l’IU Granite – champ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) si vous souhaitez plus de détails.
+Reportez-vous à la [documentation de l’IU Granite – champ](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) si vous souhaitez plus de détails.
 
 Pour consulter des exemples, voir :
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * Fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 
@@ -65,7 +65,7 @@ Pour consulter des exemples, voir :
 >
 >Ce mécanisme utilisant JSP, i18n et XSS ne sont pas fournis prêts à l’emploi. Cela signifie que vous devez internationaliser et placer les chaînes dans des séquences d’échappement. Le répertoire suivant contient les champs génériques d’une instance standard. Vous pouvez les utiliser comme référence :
 >
->`/libs/granite/ui/components/foundation/form`,
+>Référentiel `/libs/granite/ui/components/foundation/form`
 
 ## Création du script côté serveur pour le composant {#creating-the-server-side-script-for-the-component}
 
@@ -89,7 +89,7 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
    vm.get("value, String.class");
    ```
 
-   Pour plus d’informations, reportez-vous à la mise en oeuvre des champs d’interface utilisateur Granite prêts à l’emploi ; par exemple, `/libs/granite/ui/components/foundation/form/textfield`.
+   Pour plus d’informations, consultez la mise en œuvre des champs prêts à l’emploi de l’IU Granite, par exemple, `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
@@ -100,9 +100,9 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
 Pour ajouter un comportement côté client spécifique à votre composant :
 
 1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog`.
-1. Création d’une bibliothèque cliente de catégorie `cq.authoring.dialog` et définissez vos `JS`/ `CSS` à l&#39;intérieur.
+1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog` et définissez votre `CSS`/`JS` à l’intérieur de celle-ci.
 
-   Définissez vos `JS`/ `CSS` dans la bibliothèque cliente.
+   Définissez votre `CSS`/`JS` à l’intérieur de la bibliothèque cliente.
 
    >[!NOTE]
    >

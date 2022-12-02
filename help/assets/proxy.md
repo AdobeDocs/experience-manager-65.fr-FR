@@ -1,33 +1,33 @@
 ---
-title: '"[!DNL Assets] développement de proxy"'
-description: Un proxy est un [!DNL Experience Manager] instance qui utilise des programmes de travail proxy pour traiter les tâches. Découvrez comment configurer une [!DNL Experience Manager] proxy, opérations prises en charge, composants proxy et comment développer un worker de proxy personnalisé.
+title: « Développement de proxy [!DNL Assets] »
+description: Un proxy est une instance  [!DNL Experience Manager]  qui utilise des programmes de travail par proxy pour le traitement des tâches. Découvrez comment configurer un proxy  [!DNL Experience Manager] , les opérations prises en charge et les composants de proxy, ainsi que comment développer un programme de travail par proxy personnalisé.
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
-# [!DNL Assets] développement de proxy {#assets-proxy-development}
+# Développement de proxy [!DNL Assets] {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets] utilise un proxy pour distribuer le traitement de certaines tâches.
 
-Un proxy est une instance de Experience Manager spécifique (et parfois distincte) qui utilise des programmes de traitement du proxy comme processeurs chargés de gérer une tâche et de créer un résultat. Un worker de proxy peut être utilisé pour de nombreuses tâches. Dans le cas d’un [!DNL Assets] proxy qui peut être utilisé pour charger des ressources à des fins de rendu dans Assets. Par exemple, le [worker de proxy IDS](indesign.md) utilise un serveur pour traiter les fichiers à utiliser dans  Assets.[!DNL Adobe InDesign]
+Un proxy est une instance Experience Manager spécifique (et parfois distincte) qui utilise des programmes de travail par de proxy comme des processeurs chargés de gérer une tâche et de produire un résultat. Un programme de travail par proxy peut être utilisé pour de nombreuses tâches. Dans le cas d’un proxy [!DNL Assets], il peut être utilisé pour le chargement de ressources pour afficher leurs rendus dans Assets. Par exemple, le [programme de travail par proxy IDS](indesign.md) utilise un serveur [!DNL Adobe InDesign] pour traiter les fichiers à utiliser dans Assets.
 
-Lorsque le proxy est une propriété distincte [!DNL Experience Manager] Cela permet de réduire la charge sur la [!DNL Experience Manager] instance(s) de création. Par défaut, [!DNL Assets] exécute les tâches de traitement des ressources dans la même JVM (externalisée via proxy) afin de réduire la charge sur le [!DNL Experience Manager] instance de création.
+Lorsque le proxy est une instance distincte d’[!DNL Experience Manager], il contribue à réduire la charge sur la ou les instances de création [!DNL Experience Manager]. Par défaut, [!DNL Assets] exécute les tâches de traitement des ressources dans la même JVM (externalisée via proxy) pour réduire la charge sur l’instance de création [!DNL Experience Manager].
 
 ## Proxy (Accès HTTP) {#proxy-http-access}
 
-Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les tâches de traitement dans le répertoire suivant : `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
+Un proxy est disponible via le servlet HTTP lorsqu’il est configuré de sorte à accepter les tâches de traitement dans le répertoire suivant :  `/libs/dam/cloud/proxy`. Ce servlet crée une tâche sling à partir des paramètres publiés. Elle est ensuite ajoutée à la file d’attente des tâches du proxy et connectée au worker de proxy approprié.
 
 ### Opérations prises en charge {#supported-operations}
 
 * `job`
 
-   **Exigences** : le paramètre `jobevent` doit être défini en tant que correspondance de valeur en série. Elle sert à créer une `Event` pour un traitement de tâche.
+   **Exigences** : le paramètre `jobevent` doit être défini en tant que correspondance de valeur en série. Il est utilisé pour créer un `Event` pour un processeur de tâches.
 
    **Résultat** : ajoute une nouvelle tâche. Si l’opération réussit, un identifiant de tâche unique est renvoyé.
 
@@ -38,7 +38,7 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Conditions**: le paramètre `jobid` doit être définie.
+   **Exigences** : le paramètre `jobid` doit être défini.
 
    **Résultat** : renvoie une représentation JSON du nœud de résultats tel que créé par le processeur de tâches.
 
@@ -69,9 +69,9 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
     http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-### Worker de proxy {#proxy-worker}
+### Programme de travail par proxy {#proxy-worker}
 
-Un worker de proxy est un processeur chargé de gérer une tâche et de produire un résultat. Les workers résident sur l’instance de proxy et doivent mettre en œuvre [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) pour être reconnus en tant que workers de proxy.
+Un programme de travail par proxy est un processeur chargé de gérer une tâche et de produire un résultat. Ils résident sur l’instance de proxy et doivent mettre en œuvre le [JobProcessor sling](https://sling.apache.org/site/eventing-and-jobs.html) pour être reconnus en tant que programmes de travail de proxy.
 
 >[!NOTE]
 >
@@ -103,7 +103,7 @@ Voici un exemple d’utilisation d’API :
  proxyJobService.removeJob(jobId);
 ```
 
-### Configurations Cloud Service {#cloud-service-configurations}
+### Configuration du service cloud {#cloud-service-configurations}
 
 <!-- TBD: Cannot find com.day.cq.dam.api.proxy at https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html which were generated in May 2020. Hiding this broken link for now.
 >[!NOTE]
@@ -111,11 +111,11 @@ Voici un exemple d’utilisation d’API :
 >Reference documentation for the proxy API is available under [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 -->
 
-Les configurations de worker de proxy et de proxy sont disponibles via les configurations de services cloud comme accessibles depuis [!DNL Assets] **Outils** ou sous `/etc/cloudservices/proxy`. Chaque worker de proxy doit ajouter un noeud sous `/etc/cloudservices/proxy` pour les détails de configuration spécifiques au programme de travail (par exemple, `/etc/cloudservices/proxy/workername`).
+Les configurations de proxy et de programme de travail de proxy sont disponibles via des configurations de services cloud et accessibles à partir de la console **Outils** d’[!DNL Assets], ou sous `/etc/cloudservices/proxy`. Chaque programme de travail de proxy doit ajouter un nœud sous `/etc/cloudservices/proxy` pour les détails de configuration spécifiques au programme de travail (par exemple, `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Voir [Configuration du traitement du proxy d’InDesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) et [Configuration des Cloud Services](../sites-developing/extending-cloud-config.md) pour plus d’informations.
+>Pour en savoir plus, consultez les sections [Configuration de programme de travail de proxy d’InDesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) et [Configuration du service cloud](../sites-developing/extending-cloud-config.md).
 
 Voici un exemple d’utilisation d’API :
 
@@ -132,13 +132,13 @@ Voici un exemple d’utilisation d’API :
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### Développement d’un worker de proxy personnalisé {#developing-a-customized-proxy-worker}
+### Développement d’un programme de travail de proxy personnalisé {#developing-a-customized-proxy-worker}
 
-Le [worker de proxy IDS](indesign.md) est un exemple de [!DNL Assets] worker de proxy déjà fourni prêt à l’emploi pour externaliser le traitement des ressources d’InDesign.
+Le [programme de travail de proxy IDS](indesign.md) est un exemple de programme de travail de proxy [!DNL Assets] déjà prêt à l’emploi pour externaliser le traitement de ressources InDesign.
 
-Vous pouvez également développer et configurer vos propres [!DNL Assets] worker de proxy pour créer un programme de travail spécialisé afin de distribuer et de sous-traiter votre [!DNL Assets] tâches de traitement.
+Vous pouvez également développer et configurer votre propre programme de travail de proxy [!DNL Assets] pour créer un programme spécialisé afin de distribuer et d’externaliser vos tâches de traitement [!DNL Assets].
 
-Pour configurer votre propre worker de proxy personnalisé, vous devez effectuer les opérations suivantes :
+Pour configurer votre propre programme de travail de proxy personnalisé, vous devez effectuer les opérations suivantes :
 
 * Configurer et mettre en œuvre (à l’aide des événements Sling) :
 
@@ -158,32 +158,32 @@ Le schéma et les étapes ci-dessous détaillent la procédure à suivre :
 
 >[!NOTE]
 >
->Dans les étapes suivantes, les équivalents InDesigns sont indiqués comme exemples de référence.
+>Dans les étapes suivantes, des équivalents InDesign sont indiqués en tant qu’exemples de référence.
 
 1. Une [tâche Sling](https://sling.apache.org/site/eventing-and-jobs.html) est utilisée, ce qui signifie que vous devez définir une rubrique de tâche pour votre cas d’emploi.
 
-   Par exemple, consultez `IDSJob.IDS_EXTENDSCRIPT_JOB` pour le worker de proxy IDS.
+   Par exemple, consultez `IDSJob.IDS_EXTENDSCRIPT_JOB` pour le programme de travail de proxy IDS.
 
 1. L’étape externe est utilisée pour déclencher l’événement et attendre qu’il soit terminé en interrogeant l’identifiant. Vous devez développer votre propre étape pour mettre en œuvre de nouvelles fonctionnalités.
 
    Mettez en œuvre une API `WorkflowExternalProcess`, puis utilisez l’API JobService et votre rubrique de tâche pour préparer un événement de tâche et le distribuer à l’API JobService (un service OSGi).
 
-   Par exemple, consultez `INDDMediaExtractProcess`.java pour le worker de proxy IDS.
+   Par exemple, consultez `INDDMediaExtractProcess`.java pour le programme de travail de proxy IDS.
 
-1. Mettez en œuvre un gestionnaire de tâches pour votre rubrique. Ce gestionnaire nécessite un développement afin d’effectuer votre action spécifique et est considéré comme la mise en œuvre du worker.
+1. Mettez en œuvre un gestionnaire de tâches pour votre rubrique. Ce gestionnaire nécessite un développement afin d’effectuer votre action spécifique et est considéré comme la mise en œuvre du programme de travail.
 
-   Par exemple, consultez `IDSJobProcessor.java` pour le worker de proxy IDS.
+   Par exemple, consultez `IDSJobProcessor.java` pour le programme de travail de proxy IDS.
 
-1. Utilisez `ProxyUtil.java` dans dam-commons. Cela vous permet de distribuer des tâches à des workers à l’aide du proxy de gestion des actifs numériques.
+1. Utilisez `ProxyUtil.java` dans dam-commons. Cela vous permet de distribuer des tâches à des programmes de travail à l’aide du proxy de gestion des ressources numériques.
 
 >[!NOTE]
 >
->Ce que le [!DNL Assets] La structure proxy ne fournit pas le mécanisme de pool prêt à l’emploi.
+>Le mécanisme de pool n’est pas fourni prêt à l’emploi par le framework de proxy [!DNL Assets].
 >
->Le [!DNL InDesign] l’intégration permet d’accéder à un pool de [!DNL InDesign] Serveurs (IDSPool). Ce pool est spécifique aux [!DNL InDesign] intégration et ne fait pas partie de la [!DNL Assets] structure de proxy.
+>L’intégration d’[!DNL InDesign] autorise l’accès à un pool de serveurs [!DNL InDesign] (IDSPool). Cette mise en pool est spécifique à l’intégration d’[!DNL InDesign] et ne fait pas partie du framework de proxy d’[!DNL Assets].
 
 >[!NOTE]
 >
 >Synchronisation des résultats :
 >
->Avec n instances utilisant le même proxy, le résultat de traitement reste avec le proxy. Il incombe au client (auteur Experience Manager) de demander le résultat en utilisant le même identifiant de tâche unique que celui donné au client lors de la création de la tâche. Le proxy fait son travail et conserve le résultat disponible sur demande.
+>Avec n instances utilisant le même proxy, le résultat de traitement reste avec le proxy. Il revient au client (auteur Experience Manager) de demander le résultat à l’aide du même identifiant de tâche unique qui lui a été donné lors de la création de la tâche. Le proxy fait son travail et conserve le résultat disponible sur demande.

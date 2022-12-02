@@ -107,7 +107,7 @@ Pour créer le mappage qui préfixe toute demande de https://localhost:4503/ ave
    * **Nom** `localhost_any`
 
 1. Cliquez sur **Enregistrer tout**.
-1. **Ajoutez** les propriétés suivantes à ce nœud :
+1. **Ajoutez les propriétés suivantes à ce nœud :**
 
    * **Nom** `sling:match`
 

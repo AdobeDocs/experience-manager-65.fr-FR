@@ -1,6 +1,6 @@
 ---
 title: Migration des ressources en bloc
-description: Décrit comment importer des ressources dans [!DNL Adobe Experience Manager], appliquez des métadonnées, générez des rendus et activez-les pour publier des instances.
+description: Décrit comment importer des ressources dans  [!DNL Adobe Experience Manager], comment appliquer des métadonnées, générer des rendus et les activer en tant qu’instances de publication.
 contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
@@ -8,21 +8,21 @@ exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '1799'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Comment migrer des ressources en bloc {#assets-migration-guide}
 
-Lors de la migration de ressources vers [!DNL Adobe Experience Manager], plusieurs étapes doivent être prises en compte. L’extraction de ressources et de métadonnées en dehors de la page d’accueil actuelle ne fait pas partie du cadre de ce document, car il varie considérablement d’une mise en oeuvre à l’autre, mais ce document décrit comment importer ces ressources dans [!DNL Experience Manager], appliquez leurs métadonnées, générez des rendus et activez-les pour publier des instances.
+Lors de la migration des ressources dans [!DNL Adobe Experience Manager], il existe plusieurs étapes à prendre en compte. L’extraction des ressources et des métadonnées hors de la page en cours n’est pas traitée dans ce document, car elle varie considérablement selon la mise en œuvre. Ce document explique toutefois comment récupérer ces ressources dans [!DNL Experience Manager], comment appliquer leurs métadonnées, générer des rendus et les activer pour publier des instances.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
-Avant d’effectuer l’une des étapes de cette méthodologie, passez en revue et appliquez les instructions de la section [Conseils sur l’optimisation des performances des ressources](performance-tuning-guidelines.md). La plupart des étapes, telles que la configuration des tâches simultanées maximales, améliorent considérablement la stabilité et les performances du serveur en charge. D’autres étapes, telles que la configuration d’un entrepôt de données basé sur les fichiers, sont beaucoup plus difficiles à effectuer une fois le système chargé avec des ressources.
+Avant de suivre toute étape de cette méthode, consultez et mettez en œuvre les instructions du document [Conseils relatifs à l’optimisation des performances des ressources](performance-tuning-guidelines.md). La plupart des étapes, telles que la configuration des tâches simultanées maximales, améliorent considérablement la stabilité et les performances du serveur en charge. D’autres étapes, telles que la configuration d’un entrepôt de données basé sur les fichiers, sont beaucoup plus difficiles à effectuer une fois le système chargé avec des ressources.
 
 >[!NOTE]
 >
->Les outils de migration de ressources suivants ne font pas partie de [!DNL Experience Manager] et ne sont pas pris en charge par Adobe :
+>Les outils de migration des ressources suivants ne font pas partie d’[!DNL Experience Manager] et ne sont pas pris en charge par Adobe :
 >
 >* Tools Tag Maker d’ACS AEM
 >* Tools CSV Asset Importer d’ACS AEM
@@ -34,7 +34,7 @@ Avant d’effectuer l’une des étapes de cette méthodologie, passez en revue 
 
 ## Migrer vers [!DNL Experience Manager] {#migrating-to-aem}
 
-Migration des ressources vers [!DNL Experience Manager] nécessite plusieurs étapes et doit être considéré comme un processus par étapes. Les phases de la migration sont les suivantes :
+La migration des ressources vers [!DNL Experience Manager] se déroule en plusieurs étapes et doit être considérée comme un processus échelonné. Les phases de la migration sont les suivantes :
 
 1. Désactivation des workflows.
 1. Chargement des balises.
@@ -47,11 +47,11 @@ Migration des ressources vers [!DNL Experience Manager] nécessite plusieurs ét
 
 ### Désactivation des workflows {#disabling-workflows}
 
-Avant de commencer la migration, désactivez vos lanceurs pour la variable [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow. Il est préférable d’intégrer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en ligne pendant la migration, vous pouvez planifier ces activités en dehors des heures de bureau.
+Avant de commencer la migration, désactivez les lanceurs du workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]. Il est préférable d’intégrer toutes les ressources dans le système, puis d’exécuter les workflows par lots. Si vous êtes déjà en ligne pendant la migration, vous pouvez planifier ces activités en dehors des heures de bureau.
 
 ### Chargement des balises {#loading-tags}
 
-Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Tandis que des outils tels que l’importateur de ressources CSV et [!DNL Experience Manager] La prise en charge des profils de métadonnées peut automatiser le processus d’application des balises aux ressources. Les balises doivent être chargées dans le système. La fonctionnalité [Tools Tag Maker d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
+Vous avez peut-être déjà mis en place une taxonomie de balises que vous appliquez à vos images. Bien que la prise en charge des profils de métadonnées par des outils tels que CSV Asset Importer et l’assistance [!DNL Experience Manager] puisse automatiser le processus d’application des balises aux ressources, les balises doivent être chargées dans le système. La fonctionnalité [Tag Maker des outils d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) permet de renseigner les balises à l’aide d’une feuille de calcul Microsoft Excel chargée dans le système.
 
 ### Assimilation des ressources {#ingesting-assets}
 
@@ -61,7 +61,7 @@ Il existe deux approches pour charger les ressources dans le système : une app
 
 #### Envoyer via HTTP {#pushing-through-http}
 
-L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre sur un [!DNL Experience Manager] déploiement. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
+L’équipe Managed Services d’Adobe utilise un outil appelé Glutton pour charger les données dans les environnements clients. Glutton est une petite application Java qui charge toutes les ressources d’un répertoire dans un autre répertoire d’un déploiement [!DNL Experience Manager]. À la place de Glutton, vous pouvez également utiliser des outils tels que les scripts Perl pour publier les ressources dans le référentiel.
 
 L’utilisation de l’approche Push à l’aide du protocole HTTPS présente deux inconvénients :
 
@@ -72,26 +72,26 @@ L’autre approche de l’intégration des ressources consiste à extraire les r
 
 #### Récupération à partir du système de fichiers local {#pulling-from-the-local-filesystem}
 
-L’utilitaire [Tools CSV Asset Importer d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrait les ressources du système de fichiers et des métadonnées des ressources à partir d’un fichier CSV pour l’importation des ressources. L’API Asset Manager du Experience Manager est utilisée pour importer les ressources dans le système et appliquer les propriétés de métadonnées configurées. Idéalement, les ressources sont montées sur le serveur via un montage de fichiers réseau ou via un lecteur externe.
+L’utilitaire [Tools CSV Asset Importer d’ACS AEM](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) extrait les ressources du système de fichiers et des métadonnées des ressources à partir d’un fichier CSV pour l’importation des ressources. L’API Experience Manager Asset Manager est utilisée pour importer les ressources dans le système et appliquer les propriétés des métadonnées configurées. Idéalement, les ressources sont montées sur le serveur via un montage de fichiers réseau ou via un lecteur externe.
 
 Comme il n’est pas nécessaire que les ressources soient transmises sur un réseau, les performances globales s’améliorent considérablement et cette méthode est généralement considérée comme le moyen le plus efficace de charger des ressources dans le référentiel. En outre, comme l’outil prend en charge l’assimilation des métadonnées, vous pouvez importer toutes les ressources et métadonnées en une seule étape plutôt que de créer une deuxième étape pour appliquer les métadonnées via un outil distinct.
 
 ### Traitement des rendus {#processing-renditions}
 
-Après avoir chargé les ressources dans le système, vous devez les traiter via le [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] pour extraire des métadonnées et générer des rendus. Avant d’effectuer cette étape, vous devez dupliquer et modifier la variable [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] pour répondre à vos besoins. Le workflow d’usine contient de nombreuses étapes qui peuvent ne pas être nécessaires pour vous, telles que la génération de PTIFF Dynamic Media ou [!DNL InDesign Server] intégration.
+Après avoir chargé les ressources dans le système, vous devez les traiter via le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques], afin d’extraire les métadonnées et de générer les rendus. Avant d’effectuer cette étape, vous devez dupliquer et modifier le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] pour l’adapter à vos besoins. Le workflow prêt à l’emploi contient de nombreuses étapes qui peuvent ne pas vous être nécessaires, telles que la génération de PTIFF Dynamic Media ou l’intégration du [!DNL InDesign Server].
 
 Après avoir configuré le workflow en fonction de vos besoins, vous disposez de deux options pour l’exécuter :
 
 1. L’approche la plus simple consiste à utiliser l’outil [Bulk Workflow Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Cet outil permet d’exécuter une requête et de traiter les résultats de la requête via un workflow. Il existe également des options permettant de définir la taille des lots.
-1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge de la variable [!DNL Experience Manager] moteur de workflow tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
+1. Vous pouvez utiliser l’outil [Fast Action Manager d’ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) en association avec [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Bien que cette approche soit beaucoup plus impliquée, elle vous permet de supprimer la surcharge du moteur de processus [!DNL Experience Manager], tout en optimisant l’utilisation des ressources du serveur. De plus, Fast Action Manager améliore les performances en surveillant de manière dynamique les ressources du serveur et en réduisant la charge placée sur le système. Des exemples de scripts ont été fournis sur la page de fonctionnalités d’ACS Commons.
 
 ### Activation des ressources {#activating-assets}
 
-Pour les déploiements disposant d’un niveau de publication, vous devez activer les ressources dans la ferme de serveurs de publication. Bien qu’Adobe recommande d’exécuter plusieurs instances de publication, il est plus efficace de répliquer toutes les ressources sur une seule instance de publication, puis de cloner cette instance. Lorsque vous activez un grand nombre de ressources, après le déclenchement d’une activation d’arborescence, vous devrez peut-être intervenir. Voici pourquoi : Lors du déclenchement des activations, des éléments sont ajoutés à la file d’attente des tâches/événements Sling. Une fois que la taille de cette file d’attente commence à dépasser environ 40 000 éléments, le traitement ralentit considérablement. Lorsque la taille de cette file d’attente dépasse 100 000 éléments, la stabilité du système commence à souffrir.
+Pour les déploiements disposant d’un niveau de publication, vous devez activer les ressources dans la ferme de serveurs de publication. Bien qu’Adobe recommande d’exécuter plusieurs instances de publication, il est plus efficace de répliquer toutes les ressources sur une seule instance de publication, puis de cloner cette instance. Lorsque vous activez un grand nombre de ressources, après le déclenchement d’une activation d’arborescence, vous devrez peut-être intervenir. En effet, lors du déclenchement des activations, les éléments sont ajoutés à la file d’attente des tâches et des événements Sling. Une fois que la taille de cette file d’attente commence à dépasser environ 40 000 éléments, le traitement ralentit considérablement. Lorsque la taille de cette file d’attente dépasse 100 000 éléments, la stabilité du système commence à souffrir.
 
 Pour contourner ce problème, vous pouvez utiliser l’outil [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) pour gérer la réplication des ressources. Il fonctionne sans utiliser les files d’attente Sling, réduisant les surcharges, tout en régulant la charge de travail pour éviter que le serveur ne soit surchargé. Un exemple d’utilisation de cet outil pour gérer la réplication est présenté sur la page de documentation de FAM.
 
-D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Une autre option consiste à utiliser un outil Open Source pour votre [!DNL Experience Manager] infrastructure appelée [Grabbit](https://github.com/TWCable/grabbit), qui prétend présenter des performances plus rapides que vlt.
+D’autres options permettant de transférer des ressources vers la batterie de serveurs de publication incluent l’utilisation de [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) ou [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), qui sont fournis en tant qu’outils dans le cadre de Jackrabbit. Une autre option consiste à utiliser un outil open-source pour votre infrastructure [!DNL Experience Manager], à savoir [Grabbit](https://github.com/TWCable/grabbit), qui se targue d’être plus rapide que vlt.
 
 Pour toutes ces approches, notez que les ressources de l’instance de création ne s’affichent pas comme ayant été activées. Pour marquer ces ressources avec l’état d’activation correct, vous devez également exécuter un script les marquant comme activées.
 
@@ -113,25 +113,25 @@ Une fois les ressources activées, vous pouvez cloner votre instance de publicat
 
 ### Activation des workflows {#enabling-workflows}
 
-Une fois la migration terminée, les lanceurs de la variable [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] les workflows doivent être réactivés pour prendre en charge la génération de rendu et l’extraction de métadonnées pour une utilisation quotidienne continue du système.
+Une fois la migration terminée, les lanceurs des workflows [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] doivent être réactivés pour prendre en charge la génération des rendus et l’extraction des métadonnées pour une utilisation quotidienne continue du système.
 
-## Migrer [!DNL Experience Manager] déploiements {#migrating-between-aem-instances}
+## Migration entre les déploiements [!DNL Experience Manager] {#migrating-between-aem-instances}
 
-Bien que ce ne soit pas aussi courant, il est parfois nécessaire de migrer de grandes quantités de données à partir d’une seule [!DNL Experience Manager] le déploiement à un autre; par exemple, lorsque vous effectuez une [!DNL Experience Manager] effectuez une mise à niveau, mettez à niveau votre matériel ou migrez vers un nouveau centre de données, par exemple avec une migration AMS.
+Bien que ce ne soit pas aussi courant, vous devez parfois migrer de grandes quantités de données d’une instance [!DNL Experience Manager] à une autre, par exemple, lorsque vous effectuez une mise à niveau de [!DNL Experience Manager], que vous mettez à niveau votre matériel ou que vous migrez vers un nouveau centre de données, comme avec une migration AMS.
 
-Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. Lors de la migration entre [!DNL Experience Manager] pour le déploiement, procédez comme suit :
+Dans ce cas, les ressources sont déjà renseignées avec les métadonnées et les rendus déjà générés. Il ne vous reste plus qu’à vous concentrer sur le déplacement des ressources d’une instance à une autre. Lors de la migration entre les déploiements d’[!DNL Experience Manager], procédez comme suit :
 
-1. Désactiver les workflows : Puisque vous migrez des rendus avec nos ressources, vous souhaitez désactiver les lanceurs de workflow pour [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow.
+1. Désactivation des workflows : comme vous migrez des rendus avec les ressources, vous souhaitez désactiver les lanceurs pour le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques].
 
-1. Migration des balises : Parce que des balises sont déjà chargées dans la source. [!DNL Experience Manager] déploiement, vous pouvez les créer dans un module de contenu et installer le module sur l’instance cible.
+1. Migration des balises : comme des balises sont déjà chargées dans le déploiement source d’[!DNL Experience Manager], vous pouvez les créer dans un module de contenu et installer le module sur l’instance cible.
 
-1. Migration des ressources : Il existe deux outils recommandés pour déplacer des ressources d’une [!DNL Experience Manager] déploiement vers un autre :
+1. Migration des ressources : nous recommandons deux outils pour déplacer des ressources d’un déploiement d’[!DNL Experience Manager] à un autre :
 
-   * **Vault Remote Copy** ou vlt rcp, vous permet d’utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** est un outil de synchronisation de contenu open source développé par Time Warner Cable pour ses [!DNL Experience Manager] implémentation. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
+   * **Vault Remote Copy** ou vlt rcp, qui permet d’utiliser vlt sur un réseau. Vous pouvez indiquer des répertoires source et de destination pour que vlt télécharge toutes les données du référentiel d’une instance et les charge dans l’autre. Vlt rcp est documenté à l’adresse [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
+   * **Grabbit** est un outil de synchronisation de contenu open-source développé par Time Warner Cable dans le cadre de la mise en œuvre d’[!DNL Experience Manager]. Comme il utilise des flux de données continus, en comparaison avec vlt rcp, sa latence est inférieure et il annonce une vitesse de deux à dix fois plus rapide que vlt rcp. Grabbit prend également en charge la synchronisation du contenu delta uniquement, ce qui lui permet de synchroniser les modifications après l’achèvement d’une passe de migration initiale.
 
-1. Activation des ressources : Suivez les instructions de la rubrique [activation des ressources](#activating-assets) documenté pour la migration initiale vers [!DNL Experience Manager].
+1. Activation des ressources : suivez les instructions d’[activation des ressources](#activating-assets) documentées pour la migration initiale vers [!DNL Experience Manager].
 
-1. Cloner la publication : Comme pour une nouvelle migration, le chargement d’une instance de publication unique et son clonage sont plus efficaces que l’activation du contenu sur les deux noeuds. Voir [Clonage de la publication](#cloning-publish).
+1. Clonage de la publication : comme pour une nouvelle migration, il est plus efficace de charger une seule instance de publication et de la cloner que d’activer le contenu sur les deux nœuds. Consultez [Clonage de la publication](#cloning-publish).
 
-1. Activer les workflows : Une fois la migration terminée, réactivez les lanceurs pour la variable [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow pour prendre en charge la génération de rendus et l’extraction de métadonnées pour une utilisation quotidienne continue du système.
+1. Activation des processus : une fois la migration terminée, réactivez les lanceurs de workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques] afin de prendre en charge la génération des rendus et l’extraction des métadonnées pour une utilisation quotidienne continue du système.

@@ -42,7 +42,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 * **Solutions** :
 
    * Plusieurs solutions sont possibles :
-   * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
+   * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
    * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
 

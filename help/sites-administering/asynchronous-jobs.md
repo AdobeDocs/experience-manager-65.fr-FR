@@ -5,7 +5,7 @@ exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '891'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Vous pouvez afficher l’état des tâches asynchrones à partir du tableau de b
 >
 >Pour plus d’informations, voir [Configurations de files d’attente](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Surveillance de l’état des opérations asynchrones {#monitor-the-status-of-asynchronous-operations}
+## Surveillance du statut des opérations asynchrones {#monitor-the-status-of-asynchronous-operations}
 
 Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-authoring/inbox.md) et par email (si activé).
 
@@ -130,7 +130,7 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
 1. Enregistrez les modifications.
 
-### Configuration des opérations MSM asynchrones {#configuring-asynchronous-msm-operations}
+### Configuration des opérations de MSM asynchrones {#configuring-asynchronous-msm-operations}
 
 1. Dans la navigation globale, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement de page asynchrones.]**
@@ -144,8 +144,8 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 >
 >* [Création et organisation des pages](/help/sites-authoring/managing-pages.md)
 >* [Création et synchronisation de Live Copies](/help/sites-administering/msm-livecopy.md)
->* [Configuration du courrier électronique dans Experience Manager](/help/sites-administering/notification.md).
->* [Importation de métadonnées de ressource](/help/assets/metadata.md#import-metadata).
->* [Exportation des métadonnées de ressources](/help/assets/metadata.md#export-metadata).
->* [Utilisez les ressources connectées pour partager des ressources DAM issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
+>* [Configuration des e-mails dans Experience Manager](/help/sites-administering/notification.md).
+>* [Importation de métadonnées de ressources](/help/assets/metadata.md#import-metadata).
+>* [Exportation de métadonnées de ressources](/help/assets/metadata.md#export-metadata).
+>* [Utilisez les ressources connectées pour partager des ressources de gestion des ressources numériques issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
 

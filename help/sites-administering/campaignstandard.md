@@ -12,8 +12,8 @@ discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
 source-git-commit: a0062ffbdd6477eca494fea4142d271f3015599a
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1807'
+ht-degree: 19%
 
 ---
 
@@ -39,7 +39,7 @@ La configuration de l’intégration entre AEM et Adobe Campaign Standard néces
 
 Ce document vous guide tout au long de chacune de ces étapes.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 * Accès des administrateurs à Adobe Campaign Standard
    * Si vous avez besoin de détails supplémentaires sur la configuration d’Adobe Campaign Standard, reportez-vous à la section [Documentation Adobe Campaign Standard.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)

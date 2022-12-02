@@ -5,7 +5,7 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2523'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Vous pouvez également vous aider de [dossiers](#creating-a-new-folder) pour org
 
 La structure d’un site web peut être comparée à celle d’un arbre qui soutient vos pages de contenu. Les noms de ces pages de contenu sont utilisés pour former des URL qui indiquent les titres lorsque le contenu des pages est affiché.
 
-Vous trouverez ci-dessous un exemple tiré du site We.Retail, où une page de shorts de randonnée ( `desert-sky-shorts`) est accessible :
+Vous trouverez ci-dessous un exemple provenant du site We.Retail, qui permet d’accéder à une page de shorts de randonnée (`desert-sky-shorts`) :
 
 * Environnement de création
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
@@ -42,7 +42,7 @@ Vous trouverez ci-dessous un exemple tiré du site We.Retail, où une page de sh
 * Environnement de publication
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Selon la configuration de votre instance, utilisez `/content` peut être facultatif dans l’environnement de publication.
+Selon la configuration de votre instance, le segment `/content` peut être facultatif dans l’environnement de publication.
 
 ```xml
  /content
@@ -127,7 +127,7 @@ Si vous n’indiquez qu’un **titre** de page lors de la création d’une page
 | Titre | Nom dérivé |
 |---|---|
 | Schön | schoen.html |
-| SC%&#42;ç+ | sc---c-.html |
+| SC%&amp;&#42;ç+ | sc---c-.html |
 
 #### Nom {#name}
 
@@ -137,7 +137,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 >[!NOTE]
 >
->Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
+>Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
 >
 >Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-administering/tc-prep.md).
 
@@ -164,12 +164,12 @@ Liste des modèles utilisables lors de la génération de la nouvelle page.
 
 ### Composants {#components}
 
-Les composants sont les éléments fournis par AEM afin que vous puissiez ajouter des types de contenu spécifiques. AEM s’accompagne d’un éventail de [Composants prêts à l’emploi](/help/sites-authoring/default-components-console.md) qui offrent des fonctionnalités complètes. Il s’agit notamment :
+Les composants sont des éléments fournis par AEM pour vous permettre d’ajouter des types spécifiques de contenu. Des [composants « prêts à l’emploi »](/help/sites-authoring/default-components-console.md) sont fournis avec AEM pour procurer une fonctionnalité complète. Il s’agit des composants suivants :
 
 * Texte
 * Image
 * Diaporama
-* Vidéo 
+* Vidéo
 * Etc.
 
 Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants](/help/sites-authoring/editing-content.md#insertinganewparagraph), qui sont disponibles dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#componentbrowser).
@@ -291,7 +291,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
    >
    >Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` deviendra `winter1`.
 
-### Déplacement ou changement de nom d’une page {#moving-or-renaming-a-page}
+### Déplacement ou modification du nom d’une page {#moving-or-renaming-a-page}
 
 >[!NOTE]
 >
@@ -303,8 +303,8 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
 La procédure pour déplacer ou renommer une page est plus ou moins la même et est gérée par le même assistant. Cet assistant permet d’effectuer les opérations suivantes :
 
-* Renommer une page sans la déplacer.
-* Déplacer la page sans la renommer.
+* Renommer une page sans la déplacer
+* Déplacer la page sans la renommer
 * Déplacer et renommer une page simultanément.
 
 AEM vous offre la possibilité de mettre à jour des liens internes vers la page dont le déplacement ou le changement de nom est en cours. Vous pouvez procéder page par page afin de bénéficier d’un confort d’utilisation optimal.
@@ -392,11 +392,11 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 
 >[!NOTE]
 >
->Pour plus d’informations sur le traitement asynchrone des tâches et sur la configuration de la limite pour les actions de déplacement/changement de nom de page, consultez la section [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) dans le guide d’utilisation Administration.
+>Pour plus d’informations sur le traitement asynchrone des tâches et sur la manière de configurer la limite pour les actions de déplacement/modification du nom de page, consultez le document [Tâches asynchrones](/help/sites-administering/asynchronous-jobs.md) dans le guide de l’utilisateur relatif à l’administration.
 
 >[!NOTE]
 >
->Le traitement asynchrone des déplacements de page requiert AEM version 6.5.3.0 ou ultérieure.
+>Pour le traitement asynchrone des déplacements de page, vous avez besoin d’AEM version 6.5.3.0 ou ultérieure.
 
 ### Suppression d’une page {#deleting-a-page}
 

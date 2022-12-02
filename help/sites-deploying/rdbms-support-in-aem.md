@@ -1,7 +1,7 @@
 ---
-title: Prise en charge RDBMS dans AEM 6.4
+title: Prise en charge RDBMS dans AEM 6.4
 seo-title: RDBMS Support in AEM 6.4
-description: 'Obtenez des informations sur la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles. '
+description: Obtenez des informations sur la prise en charge de la persistance de la base de données relationnelle dans AEM 6.4 et les options de configuration disponibles.
 seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
@@ -15,11 +15,11 @@ exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '621'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
-# Prise en charge RDBMS dans AEM 6.4{#rdbms-support-in-aem}
+# Prise en charge RDBMS dans AEM 6.4{#rdbms-support-in-aem}
 
 ## Présentation {#overview}
 
@@ -27,7 +27,7 @@ La prise en charge de la persistance de la base de données relationnelle dans A
 
 Il se compose d’une API Java basée sur l’API Mongo Java. La mise en œuvre d’une API BlobStore est aussi fournie. Les blobs sont stockés dans la base de données par défaut.
 
-Pour plus de détails sur la mise en œuvre, voir la documentation [ RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) et [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
+Pour plus de détails sur la mise en œuvre, voir la documentation [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) et [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
 
 >[!NOTE]
 >
@@ -43,14 +43,14 @@ Le référentiel est créé lors de la configuration du service OSGi `DocumentNo
 
 Pour qu’il fonctionne, une source de données doit être configurée avec AEM. Cela s’effectue via le fichier `org.apache.sling.datasource.DataSourceFactory.config`. Les pilotes JDBC pour les bases de données respectives doivent être fournis séparément en tant que lots OSGi dans la configuration locale.
 
-Pour obtenir des instructions sur la création des lots OSGi pour les pilotes JDBC, consultez cette [ documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sur le site web Apache Sling.
+Pour obtenir des instructions sur la création des lots OSGi pour les pilotes JDBC, consultez cette [documentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) sur le site web Apache Sling.
 
 Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de configurer AEM avec la persistance RDB :
 
 1. Assurez-vous que la base de données daemon est lancée et que votre base de données est active et prête à être utilisée avec AEM.
 1. Copiez le jar AEM 6.3 dans le répertoire de l’installation.
-1. Créez un dossier appelé `crx-quickstart\install` dans le répertoire d’installation.
-1. Configurez l’entrepôt de nœud de document en créant un fichier de configuration avec le nom suivante dans le répertoire `crx-quickstart\install`:
+1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire de l’installation.
+1. Configurez l’entrepôt de nœud de document en créant un fichier de configuration avec le nom suivante dans le répertoire `crx-quickstart\install` :
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
@@ -59,15 +59,15 @@ Une fois que les lots sont en place, suivez les étapes ci-dessous en vue de con
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
    >
-   >Pour plus d’informations sur la configuration de chaque base de données prise en charge, voir [Options de configuration de la source de données](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
+   >Pour plus d’informations sur la configuration de chaque base de données prise en charge, consultez les [Options de configuration de la source de données](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
 1. Ensuite, préparez les lots OSGi JDBC à utiliser avec AEM :
 
-   1. Dans le `crx-quickstart/install` créer un dossier, créer un dossier nommé `9`.
+   1. Dans le fichier `crx-quickstart/install`, créez un dossier nommé `9`.
 
    1. Placez le jar JDBC dans le nouveau dossier. 
 
-1. Enfin, commencez AEM par le `crx3` et `crx3rdb` Modes d’exécution :
+1. Enfin, lancez AEM avec les modes d’exécution `crx3` et `crx3rdb` :
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -79,19 +79,19 @@ La configuration OSGi de `org.apache.sling.datasource.DataSourceFactory-oak.conf
 
 Les options de configuration suivantes sont disponibles :
 
-* `datasource.name:` Nom de la source de données. La valeur par défaut est de `oak`.
+* `datasource.name:` Le nom de la source de données. La valeur par défaut est `oak`.
 
-* `url:` Chaîne d’URL de la base de données qui doit être utilisée avec JDBC. Chaque type de base de données est doté de son propre format de chaîne d’URL. Pour plus d’informations, reportez-vous à la section [Formats de chaîne d’URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) ci-dessous.
+* `url:` La chaîne URL de la base de données qui doit être utilisée avec JDBC. Chaque type de base de données est doté de son propre format de chaîne d’URL. Pour plus d’informations, reportez-vous à la section [Formats de chaîne d’URL](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) ci-dessous.
 
-* `driverClassName:` Nom de la classe du pilote JDBC. Cela varie en fonction de la base de données que vous souhaitez utiliser et du pilote nécessaire pour s’y connecter. Vous trouverez ci-dessous les noms de classe pour toutes les bases de données prises en charge par AEM :
+* `driverClassName:` Le nom de classe du pilote JDBC. Cela varie en fonction de la base de données que vous souhaitez utiliser et du pilote nécessaire pour s’y connecter. Vous trouverez ci-dessous les noms de classe pour toutes les bases de données prises en charge par AEM :
 
-   * `org.postgresql.Driver` pour PostgreSQL ;
-   * `com.ibm.db2.jcc.DB2Driver` pour DB2 ;
-   * `oracle.jdbc.OracleDriver` pour l&#39;Oracle;
-   *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (expérimentaux) ;
-   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (expérimental).
+   * `org.postgresql.Driver` pour PostgreSQL
+   * `com.ibm.db2.jcc.DB2Driver` pour DB2
+   * `oracle.jdbc.OracleDriver` pour Oracle
+   *  `com.mysql.jdbc.Driver` pour MySQL et MariaDB (stade expérimental)
+   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` pour Microsoft SQL Server (stade expérimental)
 
-* `username:` Nom d’utilisateur sous lequel s’exécute la base de données.
+* `username:` Le nom d’utilisateur avec lequel la base de données est exécutée.
 
 * `password:` Mot de passe de la base de données.
 
@@ -99,11 +99,11 @@ Les options de configuration suivantes sont disponibles :
 
 Un format de chaîne d’URL différent est utilisé dans la configuration de la source de données, en fonction du type de base de données qui doit être utilisé. Vous trouverez ci-dessous la liste des formats pour les bases de données actuellement prises en charge par AEM :
 
-* `jdbc:postgresql:databasename` pour PostgreSQL ;
-* `jdbc:db2://localhost:port/databasename` pour DB2 ;
-* `jdbc:oracle:thin:localhost:port:SID` pour l&#39;Oracle;
-*  `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (expérimentaux) ;
-* `jdbc:sqlserver://localhost:1453;databaseName=name` pour Microsoft SQL Server (expérimental).
+* `jdbc:postgresql:databasename` pour PostgreSQL
+* `jdbc:db2://localhost:port/databasename` pour DB2
+* `jdbc:oracle:thin:localhost:port:SID` pour Oracle
+*  `jdbc:mysql://localhost:3306/databasename` pour MySQL et MariaDB (stade expérimental)
+* `jdbc:sqlserver://localhost:1453;databaseName=name` pour Microsoft SQL Server (stade expérimental)
 
 ## Limites connues {#known-limitations}
 

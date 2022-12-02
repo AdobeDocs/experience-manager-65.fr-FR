@@ -20,7 +20,7 @@ ht-degree: 98%
 
 # Configuration du suivi vidéo pour Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Il existe différentes méthodes pour assurer le suivi des événements vidéo, dont deux sont des options héritées de versions précédentes d’Adobe Analytics. Ces options existantes sont : Jalons hérités et Secondes héritées.
+Il existe différentes méthodes pour assurer le suivi des événements vidéo, dont deux sont des options héritées de versions précédentes d’Adobe Analytics. Ces options existantes sont : Jalons hérités et Secondes héritées.
 
 >[!NOTE]
 >
@@ -339,7 +339,7 @@ Cette méthode est similaire à la méthode Jalons, excepté que les jalons spé
 
 ## Secondes héritées {#legacy-seconds}
 
-Lors de l’utilisation de la méthode ** Secondes héritées **, les appels Adobe Analytics sont déclenchés chaque nième seconde, où « n » est spécifié dans le champ décalage de suivi.
+Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe Analytics sont déclenchés chaque nième seconde, où « n » est spécifié dans le champ décalage de suivi.
 
 1. Définissez le décalage de suivi sur un nombre de secondes déterminé.
 

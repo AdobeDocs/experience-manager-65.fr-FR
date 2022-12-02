@@ -13,17 +13,17 @@ exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Administration de sites web{#website-administration}
 
-Les outils d’administration suivants sont disponibles pour gérer les sites et les pages web :
+Les outils d’administration suivants sont disponibles pour gérer les sites et les pages web :
 
-* Multi Site Manager (MSM) vous permet d’utiliser le même contenu de site à plusieurs emplacements, tout en autorisant des variations :
+* Multi Site Manager (MSM) vous permet d’utiliser le même contenu de site à plusieurs endroits différents, tout en autorisant des variations :
 
-   * [Réutilisation de contenu : Multi Site Manager et Live Copy](/help/sites-administering/msm.md)
+   * [Réutilisation de contenu : Multi-Site Manager et Live Copy](/help/sites-administering/msm.md)
 
 * La traduction vous permet d’automatiser la traduction du contenu des pages, des ressources et du contenu créé par l’utilisateur pour créer et tenir à jour des sites web multilingues :
 
@@ -60,7 +60,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
->* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md); en particulier :
+>* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md) ; en particulier :
    >
    >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
    >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)

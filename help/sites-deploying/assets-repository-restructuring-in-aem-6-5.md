@@ -13,19 +13,19 @@ exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 52%
+ht-degree: 98%
 
 ---
 
 # Restructuration des référentiels d’Assets dans AEM 6.5 {#assets-repository-restructuring-in-aem}
 
-Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur la solution AEM Assets. Certaines modifications nécessitent des efforts lors du processus de mise à niveau d’AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme indiqué dans la page parent [Restructuration des référentiels dans AEM 6.5](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers AEM 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la solution AEM Assets. Certaines modifications demandent du travail lors du processus de mise à niveau vers AEM 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers une version future.
 
 **Avec la mise à niveau vers la version 6.5**
 
 * [Divers](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc)
 
-**Avant la mise à niveau ultérieure**
+**Avant de procéder à la mise à niveau vers une future version**
 
 * [Modèle de notification par e-mail d’événement de ressource/collection](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#asset-collection-event-e-mail-notification-template)
 * [Conceptions classiques de partage de ressources](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#classic-asset-share-designs)
@@ -61,7 +61,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
  </tbody>
 </table>
 
-## Avant la mise à niveau ultérieure {#prior-to-upgrade}
+## Avant de procéder à la mise à niveau vers une future version {#prior-to-upgrade}
 
 ### Modèle de notification par e-mail d’événement de ressource/collection {#asset-collection-event-e-mail-notification-template}
 
@@ -79,13 +79,13 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Si les modèles d’e-mail ont été modifiés par le client, effectuez les actions suivantes afin de vous aligner sur la nouvelle structure de référentiel :</p>
     <ol>
-     <li>Le <code>/libs/settings/dam/notification</code> Le modèle de courrier électronique doit être copié à partir de <strong><code>/etc/notification/email/default</code></strong> to <strong><code>/apps/settings/notification/email/default</code></strong>
+     <li>Le modèle d’e-mail <code>/libs/settings/dam/notification</code> doit être copié à partir de <strong><code>/etc/notification/email/default</code></strong> vers <strong><code>/apps/settings/notification/email/default</code></strong>.
       <ol>
-       <li>Parce que la destination se trouve dans<strong> <code>/apps</code></strong> cette modification doit être conservée dans SCM.</li>
+       <li>Étant donné que la destination se trouve dans <strong> <code>/apps</code></strong>, cette modification doit être conservée dans SCM.</li>
       </ol> </li>
-     <li>Supprimez le dossier : <strong><code>/etc/dam/notification/email/default</code></strong> une fois les modèles d’email qu’il contient déplacés.<br />
+     <li>Supprimez le dossier <strong><code>/etc/dam/notification/email/default</code></strong> après le déplacement des modèles d’e-mail qu’il contient.<br />
       <ol>
-       <li>Si aucune mise à jour n’a été apportée au modèle d’e-mail sous<strong> <code>/etc/notification/email/default</code></strong>, le dossier peut être supprimé, car le modèle de courrier électronique d’origine existe sous <strong><code>/libs/settings/notification/email/default</code></strong> dans le cadre de l’installation d’AEM 4.</li>
+       <li>Si aucune mise à jour n’a été apportée au modèle d’e-mail sous <strong>/<code>/etc/notification/email/default</code></strong>, le dossier peut être supprimé car le modèle d’e-mail d’origine existe sous <strong><code>/libs/settings/notification/email/default</code></strong> dans le cadre de l’installation d’AEM 4.</li>
       </ol> </li>
     </ol> </td>
   </tr>
@@ -113,11 +113,11 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
    <td><p>Pour les conceptions gérées dans SCM et qui ne sont pas écrites au moment de l’exécution via les boîtes de dialogue de conception, effectuez les actions suivantes pour vous aligner sur le dernier modèle :</p>
     <ol>
      <li>Copiez les conceptions de l’emplacement précédent vers le nouvel emplacement sous <code>/apps</code>.</li>
-     <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en une <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li>
-     <li>Mettez à jour les références à l’emplacement précédent dans la propriété <code>cq:designPath</code> via <strong>AEM &gt; Administrateur DAM &gt; Page de partage des actifs &gt; Propriétés de la page &gt; Onglet avancé &gt; Champ de conception</strong>.</li>
-     <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie de bibliothèque cliente. Cela nécessite la mise à jour du code d’implémentation de la page.</li>
-     <li>Mettez à jour les règles de Dispatcher pour autoriser le service des bibliothèques clientes via le <code>/etc.clientlibs/</code> servlet proxy.</li>
-    </ol> <p>Pour les conceptions qui ne sont pas gérées dans SCM et modifiées au moment de l’exécution via les boîtes de dialogue de conception, ne déplacez pas les conceptions activées par l’auteur en-dehors de <code>/etc</code>.</p> </td>
+     <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li>
+     <li>Mettez à jour les références à l’emplacement précédent dans la propriété <code>cq:designPath</code> via <strong>AEM &gt; Administrateur de gestion des ressources numériques &gt; Page de partage des ressources &gt; Propriétés de la page &gt; Onglet avancé &gt; Champ de conception</strong>.</li>
+     <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie Bibliothèque cliente. Cela nécessite la mise à jour du code de mise en oeuvre de la page.</li>
+     <li>Mettez à jour les règles de Dispatcher pour autoriser le service de bibliothèques clientes via la servlet proxy <code>/etc.clientlibs/</code>.</li>
+    </ol> <p>Pour les conceptions qui ne sont pas gérées dans SCM et modifiées au moment de l’exécution via les boîtes de dialogue de conception, ne déplacez pas les conceptions activées par l’auteur en dehors de <code>/etc</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -140,21 +140,21 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Si les modèles d’e-mail (<strong>downloadasset</strong><strong> ou transientworkflowcompleted</strong>) ont été modifiés, suivez la procédure ci-dessous pour vous aligner sur la nouvelle structure :</p>
+   <td><p>Si les modèles d’e-mail (<strong>downloadasset</strong> ou <strong>transientworkflowcompleted</strong>) ont été modifiés, suivez la procédure ci-dessous pour vous aligner sur la nouvelle structure :</p>
     <ol>
-     <li>Le modèle de courrier électronique mis à jour doit être copié à partir de <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> to <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
+     <li>Le modèle d’e-mail mis à jour doit être copié depuis <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> dans <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>.
       <ol>
-       <li>Parce que la destination se trouve dans<strong> <code>/apps</code></strong> cette modification doit être conservée dans SCM.</li>
+       <li>Étant donné que la destination se trouve dans <strong> <code>/apps</code></strong>, cette modification doit être conservée dans SCM.</li>
       </ol> </li>
-     <li>Supprimez le dossier : <code>/etc/dam/workflow/notification/email/downloadasset </code>une fois les modèles d’email qu’il contient déplacés.<br />
+     <li>Supprimez le dossier <code>/etc/dam/workflow/notification/email/downloadasset </code> après le déplacement des modèles d’e-mail qu’il contient.<br />
       <ol>
-       <li>Si aucune mise à jour n’a été apportée au modèle d’e-mail sous<strong> <code>/etc</code></strong>, le dossier peut être supprimé, car le modèle de courrier électronique d’origine existe sous <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> dans le cadre de l’installation d’AEM 6.4.</li>
+       <li>Si aucune mise à jour n’a été apportée au modèle d’e-mail sous <strong>/<code>/etc</code></strong>, le dossier peut être supprimé car le modèle d’e-mail d’origine existe sous <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> dans le cadre de l’installation d’AEM 6.4.</li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>while <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> est techniquement pris en charge pour la recherche (est prioritaire avant /apps via la recherche habituelle Sling CAConfig, mais après <code>/etc</code>) le modèle peut être placé dans <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Cependant, cela n’est pas recommandé car il n’y a pas d’IU d’exécution pour faciliter la modification du modèle d’e-mail.</td>
+   <td>Bien que <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> soit pris en charge techniquement (avec la priorité sur /apps via la recherche habituelle Sling CAConfig<code>/etc</code>), le modèle peut être placé dans <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Cependant, cela n’est pas recommandé car il n’y a pas d’IU d’exécution pour faciliter la modification du modèle d’e-mail.</td>
   </tr>
  </tbody>
 </table>
@@ -164,7 +164,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
 | **Emplacement précédent** | `/etc/dam/drm/licenses/` |
 |---|---|
 | **Nouveaux emplacements** | `/libs/settings/dam/drm` |
-| **Conseil de restructuration** | S/O |
+| **Conseils de restructuration** | S/O |
 | **Remarques** | S/O |
 
 ### Modèle de notification par e-mail de lien de partage {#link-share-e-mail-notification-template}
@@ -183,19 +183,19 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Si le modèle d’e-mail a été modifié par le client, alignez-le sur la nouvelle structure de référentiel :</p>
     <ol>
-     <li>Le modèle de courrier électronique mis à jour doit être copié à partir de <strong><code>/etc/dam/adhocassetshare</code></strong> to <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
+     <li>Le modèle d’e-mail mis à jour doit être copié depuis <strong><code>/etc/dam/adhocassetshare</code></strong> dans <strong><code>/apps/settings/dam/adhocassetshare</code></strong>.
       <ol>
-       <li>Parce que la destination se trouve dans<strong> <code>/apps</code></strong> cette modification doit être conservée dans SCM.</li>
+       <li>Étant donné que la destination se trouve dans <strong> <code>/apps</code></strong>, cette modification doit être conservée dans SCM.</li>
       </ol> </li>
-     <li>Supprimez le dossier : <strong><code>/etc/dam/adhocassetshare</code></strong> une fois les modèles d’email qu’il contient déplacés.<br />
+     <li>Supprimez le dossier <strong><code>/etc/dam/adhocassetshare</code></strong> après le déplacement des modèles d’e-mail qu’il contient.<br />
       <ol>
-       <li>Si aucune mise à jour n’a été apportée au modèle d’e-mail sous<strong> <code>/etc</code></strong>, le dossier peut être supprimé, car le modèle de courrier électronique d’origine existe sous <strong><code>/libs/settings/dam/adhocassetshare</code></strong> dans le cadre de l’installation d’AEM 6.4.</li>
+       <li>Si aucune mise à jour n’a été apportée au modèle d’e-mail sous <strong>/<code>/etc</code></strong>, le dossier peut être supprimé car le modèle d’e-mail d’origine existe sous <strong><code>/libs/settings/dam/adhocassetshare</code></strong> dans le cadre de l’installation d’AEM 6.4.</li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>while <code>/conf/global/settings/dam/adhocassetshare</code> est techniquement pris en charge pour la recherche (elle est prioritaire avant <code>/apps</code> via la recherche habituelle Sling CAConfig, mais après <code>/etc</code>), le modèle peut être placé dans <code>/conf/global/settings/dam/adhocassetshare</code>. Toutefois, cela n’est pas recommandé, car il n’existe pas d’interface utilisateur d’exécution pour faciliter la modification du modèle d’e-mail.</td>
+   <td>Bien que <code>/conf/global/settings/dam/adhocassetshare</code> soit techniquement pris en charge pour la recherche (il est prioritaire par rapport à <code>/apps</code> dans la recherche habituelle Sling CAConfig, mais passe après <code>/etc</code>), le modèle peut être placé dans <code>/conf/global/settings/dam/adhocassetshare</code>. Cependant, cela n’est pas recommandé car il n’y a pas d’IU d’exécution pour faciliter la modification du modèle d’e-mail.</td>
   </tr>
  </tbody>
 </table>
@@ -216,20 +216,20 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Pour s’aligner sur la nouvelle structure de référentiel :</p>
     <ol>
-     <li>Copie de tous les scripts personnalisés ou modifiés depuis <strong><code>/etc/dam/indesign/scripts</code></strong> to <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
+     <li>Copiez tous les scripts personnalisés ou modifiés depuis <strong><code>/etc/dam/indesign/scripts</code></strong> vers <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />.
       <ol>
-       <li>Seuls les scripts nouveaux ou modifiés copiés comme scripts non modifiés fournis par AEM seront disponibles via <strong><code>/libs/settings</code></strong> dans AEM 6.5</li>
+       <li>Copiez uniquement les scripts nouveaux ou modifiés, car les scripts non modifiés fournis par AEM seront disponibles via <strong><code>/libs/settings</code></strong> dans AEM 6.5.</li>
       </ol> </li>
      <li>Recherchez tous les modèles de workflow qui utilisent l’étape de workflow Processus d’extraction de médias et
       <ol>
-       <li>Pour chaque instance de l’étape de processus, mettez à jour les chemins dans la configuration afin qu’ils pointent explicitement vers les scripts appropriés sous<strong> <code>/apps/settings/dam/indesign/scripts</code></strong> ou <strong><code>/libs/settings/dam/indesign/scripts</code></strong> selon les besoins.</li>
+       <li>pour chaque instance de l’étape du workflow, mettez à jour les chemins de config pour qu’ils pointent explicitement vers les scripts appropriés sous <strong>/<code>/apps/settings/dam/indesign/scripts</code></strong> ou <strong><code>/libs/settings/dam/indesign/scripts</code></strong>, selon vos besoins.</li>
       </ol> </li>
-     <li>Supprimer<strong> <code>/etc/dam/indesign/scripts</code></strong> entièrement.</li>
+     <li>Supprimez <strong> <code>/etc/dam/indesign/scripts</code></strong> entièrement.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
-   <td>Il est recommandé de stocker les scripts personnalisés sous <code>/apps</code>, puisqu’il s’agit de l’emplacement où le code doit être stocké.</td>
+   <td>Il est recommandé de stocker les scripts personnalisés sous <code>/apps</code>, car il s’agit de l’emplacement où le code doit être stocké.</td>
   </tr>
  </tbody>
 </table>
@@ -248,10 +248,10 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Les personnalisations au niveau du projet doivent être coupées et collées sous l’équivalent <code>/apps</code> ou <code>/conf</code> chemins d’accès, le cas échéant.</p> <p>Pour vous aligner sur la structure de référentiel AEM 6.4 :</p>
+   <td><p>Les personnalisations au niveau du projet doivent être coupées et collées dans des chemins <code>/apps</code> ou <code>/conf</code> équivalents.</p> <p>Pour vous aligner sur la structure de référentiel AEM 6.4 :</p>
     <ol>
-     <li>Copiez toutes les configurations vidéo modifiées depuis <code>/etc/dam/video</code> to <code>/apps/settings/dam/video</code></li>
-     <li>Remove <code>/etc/dam/video</code></li>
+     <li>Copiez toutes les configurations vidéo modifiées depuis <code>/etc/dam/video</code> vers <code>/apps/settings/dam/video</code></li>
+     <li>Supprimez <code>/etc/dam/video</code></li>
     </ol> </td>
   </tr>
   <tr>
@@ -277,9 +277,9 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
    <td><strong>Conseil de restructuration</strong></td>
    <td><p>Les paramètres prédéfinis prêts à l’emploi de la visionneuse ne seront disponibles que dans le nouvel emplacement.</p> <p>Pour les paramètres prédéfinis personnalisés de la visionneuse :</p>
     <ul>
-     <li>vous devez exécuter un script de migration pour déplacer le noeud à partir de <code>/etc</code> to <code>/conf</code>. Le script se trouve à l’adresse <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
+     <li>vous devez exécuter un script de migration pour déplacer le nœud de <code>/etc</code> vers <code>/conf</code>. Le script se trouve à l’adresse <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>ou vous pouvez modifier la configuration pour qu’ils soient enregistrés automatiquement au nouvel emplacement.</li>
-    </ul> <p>Notez que vous n’avez pas à ajuster leur code copyURL/embed pour qu’il pointe vers <code>/conf</code>. La requête existante vers <code>/etc</code> sera redirigé vers le contenu correct à partir de <code>/conf</code>.</p> </td>
+    </ul> <p>Notez qu’il n’est pas nécessaire d’ajuster leur code copyURL/embed pour pointer vers <code>/conf</code>. La requête existante vers <code>/etc</code> sera réacheminée vers le contenu correct à partir de <code>/conf</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -302,7 +302,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans AEM 6.5](/h
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Ajustez les références pour qu’elles pointent vers les nouvelles ressources sous <code>/libs</code> en utilisant la variable <code>/etc.clientlibs/</code> préfixe proxy allow.</p> <p>Enfin, effectuez un nettoyage en supprimant les dossiers des bibliothèques clientes migrées depuis <code>/etc/clientlibs/foundation/</code></p> </td>
+   <td><p>Ajustez les références pour pointer vers les nouvelles ressources sous <code>/libs</code> à l’aide de <code>/etc.clientlibs/</code>.</p> <p>Enfin, procédez à un nettoyage en supprimant les dossiers des clientlibs migrés depuis <code>/etc/clientlibs/foundation/</code></p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>

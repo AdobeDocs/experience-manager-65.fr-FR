@@ -13,7 +13,7 @@ exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Les scripts fournis par le système existent (sous `/libs/sling/servlet/errorhandler`) pour répondre aux codes d’erreur, les éléments suivants sont disponibles par défaut avec une instance CQ standard :
+Les scripts fournis par le système existent (sous `/libs/sling/servlet/errorhandler`) pour répondre aux codes d’erreur. Par défaut, les fichiers suivants sont disponibles avec une instance CQ standard :
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM est basé sur Apache Sling. Voir [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) pour plus d’informations sur la gestion des erreurs Sling.
+>AEM est basé sur Apache Sling. Vous êtes donc invité à vous rendre sur la page [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) pour plus d’informations sur le traitement des erreurs Sling.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Les scripts fournis par le système existent (sous `/libs/sling/servlet/errorhan
 
 ## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
-Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées seront créées sous `/apps` et superposez les pages par défaut (qui se trouvent sous `/libs`).
+Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vos pages personnalisées sont créées sous `/apps` et se superposent aux pages par défaut (qui se trouvent sous `/libs`).
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Vous pouvez développer vos propres scripts afin de personnaliser les pages affi
 
 1. Accédez à `/apps/sling/servlet/errorhandler`. Ici, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Modifier le script existant approprié pour fournir les informations requises 
+   * Modifier le script existant approprié pour fournir les informations requises
    * Créer un script, et le modifier, pour le code requis
 
 1. Enregistrez les modifications et effectuez un test.
@@ -70,14 +70,15 @@ Vous pouvez développer vos propres scripts afin de personnaliser les pages affi
 
 Les erreurs HTTP 500 sont dues à des exceptions côté serveur.
 
-* **[500 : erreur de serveur interne](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) Le serveur a rencontré une condition inattendue qui l’a empêché de satisfaire la demande.**
+* **[500 : Erreur de serveur interne](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+Le serveur a rencontré une condition inattendue qui l’a empêché de satisfaire la demande.
 
-Lorsque le traitement des requêtes génère une exception, la structure Apache Sling (sur laquelle l’AEM est créée) :
+Lorsque le traitement des demandes provoque une exception, le framework Apache Sling (sur laquelle CQ est basé) :
 
 * consigne l’exception ;
 * renvoie :
 
-   * le code de réponse HTTP 500 ;
+   * le code de réponse HTTP 500
    * la trace de la pile d’exception
 
    dans le corps de la réponse.
@@ -86,12 +87,12 @@ La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-
 
 Dans le cas contraire, le code de réponse est défini sur 500, mais le script `500.jsp` n’est pas exécuté.
 
-Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script. `/apps/sling/servlet/errorhandler/Throwable.js`p ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script `/apps/sling/servlet/errorhandler/Throwable.js` ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
 
 >[!CAUTION]
 >
 >Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/sites-deploying/osgi-configuration-settings.md) est activé par défaut. Cela donne toujours comme résultat le code de réponse 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de pile complète sur la réponse.
 >
->Des réponses avec le code 500 sont nécessaires pour un gestionnaire d’erreurs personnalisé. Par conséquent, le [filtre de débogage de la gestion du contenu web CQ doit être désactivé](/help/sites-deploying/osgi-configuration-settings.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
+>Des réponses avec le code 500 sont nécessaires pour un gestionnaire d’erreurs personnalisé. Par conséquent, le [filtre de débogage de la gestion du contenu Web CQ doit être désactivé](/help/sites-deploying/osgi-configuration-settings.md). Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
 >
->Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est *toujours* désactivé (même s’il est configuré comme étant activé).
+>Sur une instance de publication, le filtre de débogage de la gestion du contenu Web CQ est *toujours* désactivé (même s’il est configuré comme étant activé).

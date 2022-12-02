@@ -14,13 +14,13 @@ exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 source-git-commit: c0a60ec39e35fa8113ce9e1795561709b9c7e289
 workflow-type: tm+mt
 source-wordcount: '1109'
-ht-degree: 64%
+ht-degree: 83%
 
 ---
 
 # Vidéo 360/VR {#vr-video}
 
-Les vidéos 360 enregistrent une vue dans chaque direction au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle de vue ; Les lectures sur les appareils mobiles utilisent généralement leurs commandes gyroscopiques intégrées.
+Les vidéos 360 enregistrent une vue dans chaque direction au même moment. Elles sont tournées à l’aide d’une caméra omnidirectionnelle ou d’un ensemble de caméras. Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle de vue ; la lecture sur les appareils mobiles utilise généralement les commandes gyroscopiques intégrées.
 
 Le mode Scene7 de Dynamic Media inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.
 
@@ -45,7 +45,7 @@ Voir [Modification de la vidéo 360/VR](https://helpx.adobe.com/fr/premiere-pro
 
 ## Chargement de ressources pour une utilisation avec la visionneuse de vidéos 360 {#uploading-assets-for-use-with-the-video-viewer}
 
-Les ressources vidéo 360 qui sont chargées dans Adobe Experience Manager sont étiquetées comme **Multimédia** sur une page Ressource, similaire à une ressource vidéo normale.
+Les ressources vidéo 360 chargées dans Adobe Experience Manager sont considérées comme des fichiers **multimédias** sur une page de ressource, tout comme une ressource vidéo normale.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
 *Ressource vidéo 360 chargée affichée en mode Carte. La ressource est considérée comme multimédia.*
@@ -63,7 +63,7 @@ Les ressources vidéo 360 qui sont chargées dans Adobe Experience Manager sont 
 
       * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
       * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
-   * [Créez un profil de vidéo adaptative personnalisé](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) avec des rendus de qualité supérieure. Par exemple, créez un profil de vidéo adaptative qui contient les trois paramètres suivants :
+   * [Créez un profil de vidéo adaptative personnalisé](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) avec des rendus de qualité supérieure. Par exemple, créez un profil de vidéo adaptative qui contient les trois paramètres suivants :
 
       * Largeur=auto ; hauteur=720 ; bitrate=2500 Kbit/s
       * Largeur=auto ; hauteur=1080 ; bitrate=5000 Kbit/s
@@ -74,16 +74,16 @@ Les ressources vidéo 360 qui sont chargées dans Adobe Experience Manager sont 
 
 1. [Chargez votre vidéo dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-## Remplacement des proportions par défaut des vidéos 360  {#overriding-the-default-aspect-ratio-of-videos}
+## Remplacement du rapport d’aspect par défaut des vidéos 360  {#overriding-the-default-aspect-ratio-of-videos}
 
 Pour qu’une ressource téléchargée soit qualifiée de vidéo 360 à utiliser avec la visionneuse de vidéos 360, la ressource doit avoir un rapport d’aspect de 2.
 
-Par défaut, Experience Manager détecte la vidéo comme &quot;360&quot; si son format (largeur/hauteur) est de 2,0. Si vous êtes administrateur, vous pouvez remplacer le paramètre de format par défaut de 2 en définissant l’option facultative. `s7video360AR` dans CRXDE Lite à l’adresse suivante :
+Par défaut, Experience Manager détecte la vidéo comme étant « 360 » si son rapport d’aspect (largeur/hauteur) est de 2.0. Si vous êtes un administrateur, vous pouvez remplacer le paramètre de rapport d’aspect par défaut de 2 en définissant la propriété facultative `s7video360AR` dans CRXDE Lite de la manière suivante :
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
    * **Type de propriété** - Double
-   * **Valeur** - rapport d’aspect à virgule flottante, 2.0 par défaut.
+   * **Valeur** - rapport d’aspect, 2.0 par défaut.
 
 Une fois cette propriété définie, elle prend effet immédiatement sur les vidéos existantes et les vidéos récemment téléchargées.
 
@@ -95,17 +95,17 @@ Commencez par télécharger les vidéos 360.
 
 Vous pouvez utiliser l’option de prévisualisation pour déterminer comment les clients voient votre vidéo 360 et vous assurer qu’elle se comporte comme prévu.
 
-Voir aussi [Modification des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
+Consultez également [Modification des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md#editing-viewer-presets).
 
 Lorsque vous êtes satisfait de la vidéo 360, vous pouvez la publier.
 
-Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Consultez [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Consultez [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
-**Pour prévisualiser une vidéo 360 :**
+**Pour prévisualiser une vidéo 360 :**
 
-1. Dans **[!UICONTROL Assets]**, accédez à une vidéo 360 que vous avez créée. Sélectionnez la ressource vidéo 360 afin de pouvoir l’ouvrir en mode d’aperçu.
+1. Dans **[!UICONTROL Assets]**, accédez à une vidéo 360 que vous avez créée. Sélectionnez la ressource vidéo 360 afin de pouvoir l’ouvrir en mode aperçu.
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
@@ -117,8 +117,8 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-m
 
    Dans la liste des visionneuses, sélectionnez **[!UICONTROL Video360_social]**, puis effectuez l’une des opérations suivantes :
 
-   * Faites glisser le pointeur de la souris sur la vidéo si vous souhaitez modifier l’angle de vue de la scène statique.
-   * Sélectionnez la **[!UICONTROL Play]** si vous souhaitez commencer la lecture. Pendant la lecture de la vidéo, faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de vue.
+   * Faites glisser le pointeur de la souris sur la vidéo pour modifier si vous le souhaitez l’angle de vue de la scène statique.
+   * Sélectionnez le bouton **[!UICONTROL Lecture]** de la vidéo si vous souhaitez commencer la lecture. Pendant la lecture de la vidéo, faites glisser le pointeur de la souris sur la vidéo pour modifier l’angle de visionnage.
 
    ![Capture d&#39;écran de la station spatiale internationale flottant dans l&#39;espace avec la terre et le soleil en arrière-plan ](assets/6_5_360video-preview-video360-social.png)*Capture d&#39;écran de 360 vidéos.*
 
@@ -132,9 +132,9 @@ Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-m
 
 ## Publication d’une vidéo 360 {#publishing-video}
 
-Publiez la vidéo 360 pour pouvoir l’utiliser. La publication d’une vidéo 360 active l’URL et le code intégré. Elle publie également la vidéo 360 sur le cloud Dynamic Media intégré au CDN pour un débit évolutif et performant.
+Publiez la vidéo 360 pour pouvoir l’utiliser. La publication d’une vidéo 360 active l’URL et le code intégré. Elle publie également la vidéo 360 sur le cloud Dynamic Media intégré au CDN pour un débit évolutif et performant.
 
-Voir [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication d’une vidéo 360.
-Voir aussi [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
-Voir aussi [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
-Voir aussi [Ajout de ressources Dynamic Media à des pages](/help/assets/adding-dynamic-media-assets-to-pages.md).
+Consultez [Publication de ressources Dynamic Media](/help/assets/publishing-dynamicmedia-assets.md) pour savoir comment publier des vidéos 360.
+Consultez aussi [Intégration de la visionneuse de vidéos ou d’images dans une page web](/help/assets/embed-code.md).
+Consultez également [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Consultez également [Ajout de ressources Dynamic Media à des pages](/help/assets/adding-dynamic-media-assets-to-pages.md).

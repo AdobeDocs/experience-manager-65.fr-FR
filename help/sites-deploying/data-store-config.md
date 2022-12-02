@@ -1,5 +1,5 @@
 ---
-title: Configuration des magasins de nœuds et des entrepôts de données dans AEM 6
+title: Configuration des magasins de nœuds et des entrepôts de données dans AEM 6
 description: Découvrez comment configurer les magasins de nœuds et les entrepôts de données. Apprenez également à exécuter le nettoyage de la mémoire d’entrepôt de données.
 content-type: reference
 topic-tags: deploying
@@ -13,7 +13,7 @@ ht-degree: 90%
 
 ---
 
-# Configuration des magasins de nœuds et des entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configuration des magasins de nœuds et des entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Présentation {#introduction}
 
@@ -82,7 +82,7 @@ customBlobStore=B"true"
 
 Le magasin de nœuds de document est la base de l’implémentation d’AEM MongoMK. Le * * PID `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService` est utilisé. Les options de configuration suivantes sont disponibles :
 
-* `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est `mongodb://localhost:27017`.
+* `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est de `mongodb://localhost:27017`.
 
 * `db` : nom de la base de données Mongo. La valeur par défaut est **Oak**. ``. However, new AEM 6 installations use **aem-author** `` comme nom de la base de données par défaut.
 
@@ -121,7 +121,7 @@ Reportez-vous aux sections ci-dessous pour plus d’informations sur les différ
 
 ### Fichier Magasin de données {#file-data-store}
 
-Il s’agit de l’implémentation de [FileDataStore ](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2, qui offre une méthode pour stocker les données binaires comme tout autre fichier sur le système de fichiers. Le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` est utilisé.
+Il s’agit de l’implémentation de [FileDataStore](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2, qui offre une méthode pour stocker les données binaires comme tout autre fichier sur le système de fichiers. Le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` est utilisé.
 
 Voici les options de configuration disponibles :
 
@@ -232,24 +232,24 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 | --- | --- | --- | --- |
 | accessKey | Identifiant de clé d’accès pour l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
 | secretKey | Clé d’accès secrète de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
-| cacheSize | Taille (en octets) du cache local. | 64 Go | Non. |
-| connectionTimeout | Définissez la durée d’attente (en millisecondes) avant l’expiration lors de l’établissement initial d’une connexion. | 10 000 | Non. |
-| maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) seront stockés dans le cache de mémoire. | 17408 (17 Ko) | Non. |
-| maxConnections | Définissez le nombre maximal de connexions HTTP ouvertes autorisées. | 50 | Non. |
-| maxErrorRetry | Définissez le nombre maximal de tentatives de reprise pour les requêtes ayant échoué (récupérables). | 3 | Non. |
-| minRecordLength | Taille minimale d’un objet (en octets) qui doit être stocké dans l’entrepôt de données. | 16384 | Non. |
-| le chemin | Chemin d’accès local de la banque de données AEM. | `crx-quickstart/repository/datastore` | Non. |
-| proxyHost | Définissez l’hôte proxy facultatif par lequel le client se connectera. |  | Non. |
-| proxyPort | Définissez le port proxy facultatif par lequel le client se connectera. |  | Non. |
+| cacheSize | Taille (en octets) du cache local. | 64 Go | Nombre  |
+| connectionTimeout | Définissez la durée d’attente (en millisecondes) avant l’expiration lors de l’établissement initial d’une connexion. | 10 000 | Nombre  |
+| maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) seront stockés dans le cache de mémoire. | 17408 (17 Ko) | Nombre  |
+| maxConnections | Définissez le nombre maximal de connexions HTTP ouvertes autorisées. | 50 | Nombre  |
+| maxErrorRetry | Définissez le nombre maximal de tentatives de reprise pour les requêtes ayant échoué (récupérables). | 3 | Nombre  |
+| minRecordLength | Taille minimale d’un objet (en octets) qui doit être stocké dans l’entrepôt de données. | 16384 | Nombre  |
+| path | Chemin d’accès local de la banque de données AEM. | `crx-quickstart/repository/datastore` | Nombre  |
+| proxyHost | Définissez l’hôte proxy facultatif par lequel le client se connectera. |  | Nombre  |
+| proxyPort | Définissez le port proxy facultatif par lequel le client se connectera. |  | Nombre  |
 | s3Bucket | Nom du compartiment S3. |  | Oui |
-| s3EndPoint | Point d’entrée de l’API REST S3. |  | Non. |
-| s3Region | Région où réside le compartiment. Voir [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus d’informations. | Région dans laquelle l’instance AWS est en cours d’exécution. | Non. |
-| socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion ne expire et ne soit fermée. | 50000 | Non. |
-| stagingPurgeInterval | Intervalle (en secondes) de purge des chargements terminés du cache intermédiaire. | 300 | Non. |
-| stagingRetryInterval | Intervalle (en secondes) entre deux tentatives de transfert ayant échoué. | 600 | Non. |
-| stagingSplitPercentage | Le pourcentage de `cacheSize` à utiliser pour l’évaluation des téléchargements asynchrones. | 10 | Non. |
-| uploadThreads | Nombre de threads de chargement utilisés pour les chargements asynchrones. | 10 | Non. |
-| writeThreads | Nombre de threads simultanés utilisés pour l’écriture via S3 Transfer Manager. | 10 | Non. |
+| s3EndPoint | Point d’entrée de l’API REST S3. |  | Nombre  |
+| s3Region | Région où réside le compartiment. Voir [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus d’informations. | Région dans laquelle l’instance AWS est en cours d’exécution. | Nombre  |
+| socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion ne expire et ne soit fermée. | 50000 | Nombre  |
+| stagingPurgeInterval | Intervalle (en secondes) de purge des chargements terminés du cache intermédiaire. | 300 | Nombre  |
+| stagingRetryInterval | Intervalle (en secondes) entre deux tentatives de transfert ayant échoué. | 600 | Nombre  |
+| stagingSplitPercentage | Le pourcentage de `cacheSize` à utiliser pour l’évaluation des téléchargements asynchrones. | 10 | Nombre  |
+| uploadThreads | Nombre de threads de chargement utilisés pour les chargements asynchrones. | 10 | Nombre  |
+| writeThreads | Nombre de threads simultanés utilisés pour l’écriture via S3 Transfer Manager. | 10 | Nombre  |
 
 <!---
 ### Bucket region options {#bucket-region-options}
@@ -310,7 +310,7 @@ Le cache local sera vérifié pour l’enregistrement du fichier/blob demandé a
 
 #### Téléchargement asynchrone {#async-upload}
 
-Le cache prend en charge les téléchargements asynchrones vers le DataStore. Les fichiers sont placés localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à les télécharger. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. En outre, le pourcentage de cache disponible pour les téléchargements est calculé comme suit : **(100 - &#42;`stagingSplitPercentage`)`cacheSize`**.
+Le cache prend en charge les téléchargements asynchrones vers le DataStore. Les fichiers sont placés localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à les télécharger. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. En outre, le pourcentage de cache disponible pour les téléchargements est calculé comme suit : **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 Les chargements asynchrones sont multithread et le nombre de thread est configuré à l’aide du paramètre `uploadThreads`.
 
@@ -364,7 +364,7 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
 
    * Si vous utilisez `FileDataStore`, créez un fichier nommé `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`, puis placez-le dans le dossier `<aem-install>/crx-quickstart/install`.
 
-   * Si vous utilisez S3 comme magasin de données, créez un fichier nommé `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config`org.apache.jackrabbit.oak.plugins.blob.datastore.S3 dans le dossier `<aem-install>/crx-quickstart/install`, comme ci-dessus.
+   * Si vous utilisez S3 comme magasin de données, créez un fichier nommé `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` dans le dossier `<aem-install>/crx-quickstart/install`, comme ci-dessus.
 
 1. Modifiez les fichiers de donfiguration d’entrepôt de données sur chaque instance pour qu’ils pointent vers le même entrepôt de données. Pour en savoir plus, voir [cet article](/help/sites-deploying/data-store-config.md#data-store-configurations).
 1. Si l’instance a été clonée à partir d’un serveur existant, vous devez supprimer le `clusterId` de la nouvelle instance à l’aide du dernier outil oak-run lorsque le référentiel est hors ligne. La commande que vous devez exécuter est la suivante :
@@ -443,7 +443,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 * accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft Azure, reportez-vous à la [documentation officielle](https://azure.microsoft.com/fr-fr/documentation/articles/storage-create-storage-account). 
 
 * secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
-* container=&quot;&quot; : nom du conteneur de stockage blob Microsoft Azure. Le conteneur est le regroupement d’un ensemble de blobs. Pour plus de détails, consultez[ la documentation officielle](https://msdn.microsoft.com/fr-fr/library/dd135715.aspx ). 
+* container=&quot;&quot; : nom du conteneur de stockage blob Microsoft Azure. Le conteneur est le regroupement d’un ensemble de blobs. Pour plus de détails, consultez[ la documentation officielle](https://msdn.microsoft.com/en-us/library/dd135715.aspx). 
 * maxConnections=&quot;&quot; : nombre de demandes simultanées par opération. La valeur par défaut est 1.
 * maxErrorRetry=&quot;&quot; : nombre de nouvelles tentatives par demande. La valeur par défaut est 3.
 * socketTimeout=&quot;&quot; : intervalle d’expiration, en millisecondes, utilisé pour la demande. la valeur par défaut est de 5 minutes.
@@ -510,7 +510,7 @@ Avec des versions plus récentes d’AEM, le nettoyage de la mémoire du magasin
 
 1. Après avoir effectué la procédure ci-dessus sur toutes les instances, exécutez à nouveau le nettoyage de l’entrepôt de données à partir d’**une** des instances :
 
-   1. Accédez à la console JMX, puis sélectionnez le gestionnaire de référentiel Mbean.
+   1. Accédez à la console JMX, puis sélectionnez le gestionnaire de référentiel MBean.
    1. Cliquez sur le lien **Click startDataStoreGC(boolean markOnly)**.
    1. Dans la boîte de dialogue suivante, saisissez à nouveau `false` pour le paramètre `markOnly`.
    Cela permettra d’assembler tous les fichiers trouvés à l’aide de la phase de repérage utilisée précédemment et de supprimer ensuite le reste inutilisé du magasin de données.

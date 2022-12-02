@@ -1,7 +1,7 @@
 ---
 title: Utilisation des ressources
 seo-title: Working with Assets
-description: La section Environnement et outils de l’auteur fournit des informations sur l’utilisation de l’outil de recherche de contenu permettant de rechercher et d’utiliser des ressources lors de la modification des pages. AEM Assets offre d’autres méthodes pour utiliser les ressources.
+description: La section Environnement et outils de l’auteur fournit des informations sur l’utilisation de l’outil de recherche de contenu permettant de rechercher et utiliser des ressources lors de la modification des pages. AEM Assets offre d’autres méthodes pour utiliser les ressources.
 seo-description: The Author Environment and Tools section provides information about using Content Finder to find and use assets when editing pages. AEM Assets provides other methods for working with assets.
 uuid: 65d1e593-9957-45b7-8831-45055aa41a1d
 contentOwner: Chris Bohnert
@@ -13,14 +13,14 @@ exl-id: daf5c934-8a98-4891-94a1-029056d87931
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Utilisation des ressources{#working-with-assets}
 
-La section [Environnement et outils de l’auteur](/help/sites-authoring/author-environment-tools.md) fournit des informations sur l’utilisation de l’outil de recherche de contenu permettant de rechercher et utiliser des ressources lors de la modification des pages.  AEM Assets offre d’autres méthodes pour utiliser les ressources :
+La section [Environnement et outils de l’auteur](/help/sites-authoring/author-environment-tools.md) fournit des informations sur l’utilisation de l’[!UICONTROL outil de recherche de contenu] permettant de rechercher et utiliser des ressources lors de la modification des pages. AEM Assets offre d’autres méthodes pour utiliser les ressources :
 
-* [Ajout de fonctionnalités Dynamic Media Classic à votre page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
-* [Utilisation de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
-* [Conventions de dénomination des ressources](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
+* [L’ajout de fonctionnalités Dynamic Media Classic à votre page](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
+* [L’utilisation de Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+* [Les conventions de dénomination des ressources](/help/sites-classic-ui-authoring/asset-naming-conventions.md)

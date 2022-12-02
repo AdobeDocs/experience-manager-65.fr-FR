@@ -62,7 +62,7 @@ Voici à quoi doivent ressembler les paramètres supplémentaires JVM au démarr
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-Enfin, si vous exécutez une instance mise à jour d’AE  6.3, assurez-vous que la propriété suivante est définie sur **true** sous `sling.properties` :
+Enfin, si vous exécutez une instance mise à jour d’AEM 6.3, assurez-vous que la propriété suivante est définie sur **true** sous `sling.properties` :
 
 * `felix.bootdelegation.implicit`
 
@@ -88,7 +88,7 @@ Cette méthode est tout particulièrement intéressante dans plusieurs cas d’e
 
 >[!NOTE]
 >
->Pour des exemples, consultez également [Comment installer des modules CRX automatiquement au démarrage du serveur](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
+>Pour des exemples, consultez également [Comment installer des modules CRX automatiquement au démarrage du serveur](https://helpx.adobe.com/fr/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html).
 
 ## Installation et démarrage d’Adobe Experience Manager en tant que service Windows {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 

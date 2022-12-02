@@ -23,6 +23,6 @@ ht-degree: 100%
 
 Ce document technique aborde les façons dont l’évolutivité a été intégrée à AEM avec des indicateurs de performance pertinents et d’excellentes fonctions de reprise sur sinistre.
 
-Une plate-forme flexible et évolutive favorisant l’agilité technique, une haute performance et de bonnes fonctions de reprise sur sinistre.
+Une plateforme flexible et évolutive favorisant l’agilité technique, une haute performance et de bonnes fonctions de reprise sur sinistre.
 
 [Obtenir le fichier](assets/aem_scalability_whitepaperfinal-06122015je.pdf)

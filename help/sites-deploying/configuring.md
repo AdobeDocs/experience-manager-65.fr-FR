@@ -14,7 +14,7 @@ exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,25 +30,25 @@ De nombreux aspects d’AEM peuvent être configurés :
 
 Selon la configuration spécifique, ces modifications peuvent être effectuées en utilisant au choix :
 
-* **Console web Adobe CQ**
+* **Console Web Adobe CQ**
 
    Il s’agit d’un emplacement standard pour la configuration des lots et services OSGi.
 
-   Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
+   Consultez [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
 
 * **Référentiel**
 
    Un sous-ensemble de configurations OSGi est disponible dans le référentiel. Cela assure que la copie ou la réplication du contenu du référentiel recrée des configurations identiques. Vous pouvez également ajouter vos propres configurations au référentiel, en fonction du mode d’exécution.
 
-   Voir [Configuration d’OSGi dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) et en particulier [Ajout d’une configuration au référentiel](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) pour plus de détails.
+   Consultez [Configuration d’OSGi dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) et en particulier [Ajout d’une configuration au référentiel](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository) pour plus de détails.
 
 * **Système de fichiers**
 
-   Quelques fichiers de configuration résident dans le système de fichiers.
+   Certains fichiers de configuration résident dans le système de fichiers.
 
 * **Gestion de contenu Web AEM**
 
-   Différents aspects peuvent être configurés directement dans AEM WCM (gestion de contenu web), à l’aide de la console [Outils](/help/sites-administering/tools-consoles.md) ; par exemple, les agents de réplication.
+   Différents aspects peuvent être configurés directement dans la gestion de contenu Web AEM, à l’aide de la console [Outils](/help/sites-administering/tools-consoles.md) ; par exemple, les agents de réplication.
 
 >[!NOTE]
 >
@@ -76,14 +76,14 @@ Plusieurs problèmes de configuration importants sont répertoriés dans la [Lis
 
 Deux interfaces utilisateur sont disponibles dans AEM :
 
-* l’interface utilisateur optimisée pour les écrans tactiles ;
-* Interface utilisateur classique
+* L’interface utilisateur optimisée pour les écrans tactiles
+* L’interface utilisateur classique
 
 Vous pouvez configurer l’interface utilisateur dont vous avez besoin à l’aide du [Mappage racine](/help/sites-deploying/osgi-configuration-settings.md).
 
 >[!NOTE]
 >
->Pour plus d’informations sur la sélection de l’interface utilisateur, voir [Sélection de votre interface utilisateur](/help/sites-authoring/select-ui.md).
+>Pour plus d’informations sur la sélection de l’interface utilisateur, consultez [Sélection de votre interface utilisateur](/help/sites-authoring/select-ui.md).
 
 ### IPv4 et IPv6 {#ipv-and-ipv}
 
@@ -91,21 +91,21 @@ Tous les éléments d’AEM (par exemple, le référentiel, Dispatcher, etc.) pe
 
 Tout fonctionne sans problème et aucune configuration particulière n’est requise. Si nécessaire, vous pouvez simplement indiquer une adresse IP suivant le format approprié au type de réseau.
 
-Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le choix entre (suivant les besoins) :
+Cela signifie que lorsqu’une adresse IP doit être indiquée, vous avez le choix entre les éléments suivants (suivant les besoins) :
 
-* une adresse IPv6
+* une adresse IPv6 ;
 
    par exemple `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* une adresse IPv4 ;
+* une adresse IPv4 ;
 
    par exemple `https://123.1.1.4:4502`
 
-* un nom de serveur ;
+* un nom de serveur ;
 
    par exemple, `https://www.yourserver.com:4502`
 
-* la casse par défaut de `localhost` sera interprété pour les installations réseau IPv4 et IPv6.
+* Le scénario par défaut de `localhost` sera interprété à la fois pour les installations réseau IPv4 et IPv6.
 
    par exemple, `http://localhost:4502`
 
@@ -115,7 +115,7 @@ Dans une installation standard, AEM crée une version d’une page ou d’un nœ
 
 Ces versions n’étant jamais purgées, la taille du référentiel va continuer d’augmenter et devra être gérée.
 
-Voir [Purge de version](/help/sites-deploying/version-purging.md) pour des détails complets, en particulier [Gestionnaire de versions](/help/sites-deploying/version-purging.md#version-manager) pour plus de détails sur la configuration d’AEM pour purger les anciennes versions si une version est créée.
+Consultez [Purge de version](/help/sites-deploying/version-purging.md) pour des informations complètes, en particulier [Gestionnaire de versions](/help/sites-deploying/version-purging.md#version-manager) pour plus de détails sur la configuration d’AEM pour purger les anciennes versions si une version est créée.
 
 ### Journalisation {#logging}
 
@@ -123,9 +123,9 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et le format des messages du journal
+* les paramètres spécifiques des services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
 
-Voir [Journalisation](/help/sites-deploying/configure-logging.md) pour des détails complets.
+Consultez [Journalisation](/help/sites-deploying/configure-logging.md) pour des détails complets.
 
 ### Modes d’exécution {#run-modes}
 
@@ -162,33 +162,33 @@ Les agents de réplication sont essentiels à AEM comme mécanismes utilisés po
 * vider explicitement le contenu de la mémoire cache de Dispatcher ;
 * déplacer l’entrée de l’utilisateur (par exemple, entrée de formulaire) de l’environnement de publication à l’environnement de création (sous le contrôle de l’environnement de création).
 
-Pour plus de détails, voir [Réplication](/help/sites-deploying/replication.md).
+Pour plus de détails, consultez [Réplication](/help/sites-deploying/replication.md).
 
 ### Paramètres de configuration OSGi {#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique de l’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+L’[OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’AEM. Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
 Voir [Paramètres de configuration d’OSGi](/help/sites-deploying/osgi-configuration-settings.md) afin d’obtenir la liste des différents lots pertinents pour la mise en œuvre d’un projet (répertoriés par lot). Les paramètres répertoriés ne doivent pas tous être ajustés, certains sont mentionnés pour vous aider à comprendre comment fonctionne AEM.
 
-Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour avoir plus de détails et connaître les pratiques recommandées.
+Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
 ### Configuration de LDAP {#configuring-ldap}
 
 L’authentification LDAP est requise pour authentifier les utilisateurs stockés dans un répertoire LDAP (central), tels qu’Active Directory. Cela permet de réduire l’effort nécessaire pour gérer les comptes utilisateur.
 
-L’authentification LDAP se produit au niveau du référentiel ; elle est donc traitée directement par le référentiel. Pour plus d’informations, voir [Configuration de LDAP avec AEM](/help/sites-administering/ldap-config.md).
+L’authentification LDAP se produit au niveau du référentiel ; elle est donc traitée directement par le référentiel. Pour plus de détails, consultez [Configuration de LDAP avec AEM](/help/sites-administering/ldap-config.md).
 
 Pour la gestion des utilisateurs au sein d’AEM (y compris l’affectation des droits d’accès), voir [Administration des utilisateurs et sécurité](/help/sites-administering/security.md).
 
-### Configuration de Dispatcher {#configuring-the-dispatcher}
+### Configuration du Dispatcher {#configuring-the-dispatcher}
 
-Dispatcher est l’outil de mise en cache et/ou d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur web de niveau élevé.
+Le Dispatcher est l’outil de mise en cache et d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur Web de niveau élevé.
 
-Voir [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html) pour plus de détails, notamment [Configuration de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour plus informations sur la configuration.
+Consultez [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html) pour plus de détails, notamment la [Configuration de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour plus informations sur la configuration.
 
 ### Configuration d’AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une stratégie. Veuillez lire [Connecteur LiveCycle AEM](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) pour plus d’informations.
+Grâce à AEM Doc Services et AEM Doc Security, nous pouvons désormais appeler les services de document de LiveCycle pour effectuer le rendu d’un formulaire XFA, convertir un document au format PDF et protéger un document à l’aide d’une stratégie. Lisez la section [AEM LiveCycle Connector](https://helpx.adobe.com/fr/livecycle/help/aem/aem-livecycle-connector.html) pour plus de détails.
 
 ### Déchargement des tâches et administration de la topologie {#job-offloading-and-topology-administration}
 
@@ -214,9 +214,9 @@ Voir [Configuration de la performance](/help/sites-deploying/configuring-perform
 
 Scaling a CQ installation correctly depends greatly on the details of your particular use case. A detailed discussion of solution patterns for various situations can be found in [Scaling CQ](/help/sites-deploying/scaling.md).-->
 
-### Entrepôt de données partagé {#shared-data-store}
+### Magasin de données partagé {#shared-data-store}
 
-L’entrepôt de données du référentiel est utilisé pour décharger le stockage des fichiers binaires volumineux du référentiel vers une zone distincte, de sorte que plusieurs instances du même fichier binaire (une image, par exemple) dans l’arborescence du référentiel ne soient stockées qu’une seule fois.
+Le magasin de données de référentiel est utilisé pour décharger le stockage des binaires de grande taille du référentiel vers une zone distincte, de sorte que les instances multiples du même binaire (une image, par exemple) de l’arborescence du référentiel soient stockées une seule fois.
 
 Cette fonction de stockage unique et référencement multiple peut être étendue pour servir non seulement une arborescence de référentiel, mais des référentiels entiers, en configurant l’entrepôt de données de chacun d’entre eux de façon à ce qu’il fasse référence au même emplacement de système de fichiers partagé.
 
@@ -236,7 +236,7 @@ Voir [Activation de HTTP via SSL](/help/sites-administering/ssl-by-default.md) p
 
 Un portail est une application Web qui fournit la personnalisation, la connexion unique et l’intégration du contenu provenant de sources différentes, et qui héberge la couche de présentation des systèmes d’information. Le composant portlet permet également d’incorporer un portlet sur la page. Pour accéder au contenu fourni par CQ5 WCM, le serveur du portail peut être équipé d’un portlet CQ5 Portal Director. Pour ce faire, vous devez installer, configurer et ajouter le portlet sur la page de portail.
 
-Voir [Portail et portlets](/help/sites-administering/aem-as-portal.md) pour plus de détails.
+Consultez [Portail et portlets](/help/sites-administering/aem-as-portal.md) pour plus de détails.
 
 ### Expiration des objets statiques {#expiration-of-static-objects}
 
@@ -248,13 +248,13 @@ Voir [Expiration des objets statiques](/help/sites-deploying/expiration-static-o
 
 Chaque processus Java peut accéder à des fichiers, ce qui nécessite des ressources système. Pour cette raison, une limite supérieure est définie en ce qui concerne le nombre de fichiers auxquels chaque processus est autorisé à accéder simultanément. Si elle est dépassée, une erreur d’exception peut se produire.
 
-Si le processus AEM dépasse ce maximum, alors le message &quot; `too many open files`&quot; apparaît dans `error.log`.
+Si le processus AEM dépasse ce seuil, le message « `too many open files` » est affiché dans `error.log`.
 
 Pour éviter ce type d’exception, vous devez procéder comme suit :
 
 1. Vérifiez le nombre de fichiers ouverts par votre processus AEM.
 
-   La marche à suivre pour effectuer cette vérification dépend de la plateforme sur laquelle votre instance s’exécute. Les utilitaires tels que lsof (Unix) ou l’Explorateur de processus (Windows) peuvent être utilisés.
+   La marche à suivre pour effectuer cette vérification dépend de la plateforme sur laquelle votre instance s’exécute. Les utilitaires tels qu’lsof (Unix) ou Process Explorer (Windows) peuvent être utilisés.
 
     Cette valeur doit être contrôlée au cours du développement et du test de façon à :
 
@@ -265,7 +265,7 @@ Pour éviter ce type d’exception, vous devez procéder comme suit :
 
    La nouvelle valeur doit recouvrir les exigences en cours et tous les pics futurs, c’est pourquoi il est recommandé de doubler vos besoins actuels.
 
-   Par défaut, `serverctl` configure `CQ_MAX_OPEN_FILES` to `8192`; cela doit être suffisant pour la plupart des scénarios.
+   Par défaut, `serverctl` configure `CQ_MAX_OPEN_FILES` sur `8192` ; cela devrait être suffisant pour la plupart des scénarios.
 
 ### Configuration de l’éditeur de texte enrichi {#configuring-the-rich-text-editor}
 
@@ -293,9 +293,9 @@ Voir [Principes de base de la personnalisation des rapports](/help/sites-adminis
 
 CQ envoie des notifications par e-mail aux utilisateurs qui :
 
-* Ont souscrit aux événements de pages, par exemple la modification ou la réplication.
+* ont souscrit aux événements de pages, par exemple la modification ou la réplication ;
 * ont souscrit aux événements de forums ;
-* doivent effectuer une opération dans un workflow.
+* Doivent effectuer une opération dans un workflow.
 
 Voir [Configuration des notifications par e-mail](/help/sites-administering/notification.md) pour plus de détails.
 
@@ -305,12 +305,12 @@ Les impressions de page sont affichées dans la colonne **Impressions** de la co
 
 * Sur l’instance de publication :
 
-   * [Statistiques de page WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Statistiques de page de gestionnaire de contenu Web Day CQ](/help/sites-deploying/osgi-configuration-settings.md)
 
 * Sur l’instance de création :
 
-   * [Suivi des impressions de page d’Adobe](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->La configuration d’Adobe Page Impressions Tracker sur l’environnement de création permettra l’envoi de requêtes anonymes vers le service de suivi.
+>La configuration d’Adobe Page Impressions Tracker sur l’environnement de création permettra l’envoi de requêtes anonymes vers le service de suivi.

@@ -13,7 +13,7 @@ exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Lors de la [modification d’une page](/help/sites-authoring/editing-content.md)
 
 Les pages ne peuvent pas être nommées `structure`. Les pages nommées `structure` ne seront pas modifiables dans l’éditeur de page.
 
-## Limitations CSS {#css-limitations}
+## Limitations de CSS {#css-limitations}
 
 Un développeur peut être confronté aux limites suivantes concernant les interactions de l’éditeur avec CSS.
 
@@ -59,7 +59,7 @@ Il est possible que les images d’arrière-plan fixes ne puissent pas être aff
 
 La hauteur de 100 % n’est pas prise en charge sur l’élément de corps d’une page.
 
-* Une solution de contournement est possible pour mettre en oeuvre un corps plein écran en &quot;étirant&quot; l’élément de corps comme suit :
+* Il est possible d’appliquer une solution afin d’implémenter un corps plein écran en « étirant » l’élément de corps comme suit :
 
 ```xml
 body {

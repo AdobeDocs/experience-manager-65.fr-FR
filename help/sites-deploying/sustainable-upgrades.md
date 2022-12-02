@@ -15,7 +15,7 @@ exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '851'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -31,43 +31,43 @@ L’infrastructure de personnalisation comprend deux composants : **Surface d�
 
 #### Surface d’API {#api-surface}
 
-Dans les versions précédentes d’AEM, de nombreuses API étaient exposées par l’intermédiaire du jar Uber. Bien que certaines de ces API n’étaient pas destinées à être utilisées par les clients, elles étaient exposées afin de prendre en charge la fonctionnalité AEM entre les différents modules. Dorénavant, les API Java seront marquées comme étant publiques ou privées pour indiquer aux utilisateurs lesquelles peuvent être utilisées en toute sécurité dans le cadre des mises à niveau. Voici d’autres observations :
+Dans les versions précédentes d’AEM, de nombreuses API étaient exposées par l’intermédiaire du jar Uber. Bien que certaines de ces API n’étaient pas destinées à être utilisées par les clients, elles étaient exposées afin de prendre en charge la fonctionnalité AEM entre les différents modules. Dorénavant, les API Java seront marquées comme étant publiques ou privées pour indiquer aux utilisateurs lesquelles peuvent être utilisées en toute sécurité dans le cadre des mises à niveau. Voici d’autres observations :
 
-* Les API Java accompagnées de la mention `Public` peuvent être utilisées·et référencées par des modules d’implémentation personnalisés.
+* Les API Java accompagnées de la mention `Public` peuvent être utilisées et référencées par des modules d’implémentation personnalisés.
 
 * Les API publiques seront rétrocompatibles avec l’installation d’un module de compatibilité.
 * Le module de compatibilité contiendra un jar Uber de compatibilité pour garantir la compatibilité descendante.
-* API Java marquées comme `Private` sont destinés uniquement à être utilisés par AEM bundles internes et ne doivent pas l’être par des bundles personnalisés.
+* Les API Java accompagnées de la mention `Private` sont destinées aux seuls modules internes AEM. Elles ne peuvent pas être utilisées par des modules personnalisés.
 
 >[!NOTE]
 >
->Le concept de `Private` et `Public` dans ce contexte ne doit pas être confondu avec les notions Java de classes publiques et privées.
+>Il ne faut pas confondre les concepts `Private` et `Public` employés dans ce contexte avec les notions de classes privées et publiques dans Java.
 
 ![image2018-2-12_23-52-48](assets/image2018-2-12_23-52-48.png)
 
 #### Classifications de contenu {#content-classifications}
 
-AEM utilise depuis longtemps le principe des incrustations et Sling Resource Merger pour permettre aux utilisateurs d’étendre et de personnaliser les fonctionnalités d’AEM. Les fonctionnalités prédéfinies qui alimentent les consoles AEM et l’interface utilisateur sont stockées sous **/libs**. Les utilisateurs ne doivent jamais rien modifier sous **/libs**, mais ils peuvent ajouter du contenu sous **/apps** afin d’étendre la fonctionnalité définie sous **/libs** (pour en savoir plus, voir Développement avec des incrustations). Cela occasionnait toutefois de nombreux problèmes lors de la mise à niveau d’AEM, dans la mesure où le contenu de **/libs** pouvait changer, provoquant ainsi des interruptions inattendues de la fonctionnalité d’incrustation. Les utilisateurs peuvent également étendre les composants AEM par le biais de l’héritage via `sling:resourceSuperType` ou simplement faire référence à un composant dans **/libs** via sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec les scénarios d’utilisation Référence et Remplacement.
+AEM utilise depuis longtemps le principe des incrustations et Sling Resource Merger pour permettre aux utilisateurs d’étendre et de personnaliser les fonctionnalités d’AEM. Les fonctionnalités prédéfinies qui alimentent les consoles AEM et l’interface utilisateur sont stockées sous **/libs**. Les utilisateurs ne doivent jamais rien modifier sous **/libs**, mais ils peuvent ajouter du contenu sous **/apps** afin d’étendre la fonctionnalité définie sous **/libs** (pour en savoir plus, voir Développement avec des incrustations). Cela occasionnait toutefois de nombreux problèmes lors de la mise à niveau d’AEM, dans la mesure où le contenu de **/libs** pouvait changer, provoquant ainsi des interruptions inattendues de la fonctionnalité d’incrustation. Les utilisateurs peuvent également étendre les composants AEM par le biais de l’héritage via `sling:resourceSuperType` ou simplement faire référence à un composant dans **/libs** directement par sling:resourceType. Des problèmes de mise à niveau similaires peuvent se produire avec les scénarios d’utilisation Référence et Remplacement.
 
 Pour permettre aux utilisateurs de mieux comprendre les zones de **/libs** qui peuvent être utilisées et superposées en toute sécurité, le contenu de **/libs** a été classé avec les mixins suivants :
 
-* **Public (granite:PublicArea)** : définit un nœud comme étant public afin qu’il puisse être superposé, hérité (`sling:resourceSuperType`) ou utilisé directement ( `sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un module de compatibilité. En règle générale, les utilisateurs doivent uniquement exploiter les nœuds publics.
+* **Public (granite:PublicArea)** : définit un nœud comme étant public afin qu’il puisse être recouvert, hérité (`sling:resourceSuperType`) ou utilisé directement (`sling:resourceType`). Les nœuds situés sous /libs marqués comme étant publics peuvent être mis à niveau en toute sécurité avec l’ajout d’un module de compatibilité. En règle générale, les utilisateurs doivent uniquement exploiter les nœuds publics.
 
-* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les noeuds peuvent être superposés ou hérités ( `sling:resourceSupertype`), mais ne doit pas être utilisé directement ( `sling:resourceType`).
+* **Résumé (granite:AbstractArea)** : définit un nœud en tant que résumé. Les nœuds peuvent être recouverts ou hérités (`sling:resourceSupertype`), mais ils ne doivent pas être utilisés directement (`sling:resourceType`).
 
-* **Final (granite:FinalArea)** : définit un nœud comme étant final. Les noeuds classés comme finaux idéalement ne doivent pas être superposés ni hérités. Les noeuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
+* **Final (granite:FinalArea)** : définit un nœud comme étant final. Les nœuds classés en tant que finaux ne doivent idéalement pas être recouverts ni hérités. Les nœuds finaux peuvent être utilisés directement via `sling:resourceType`. Par défaut, les nœuds secondaires placés sous le nœud final sont considérés comme internes.
 
-* ***Interne (granite:InternalArea)*** *- *Définit un noeud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement aux fonctionnalités internes d’AEM.
+* ***Interne (granite:InternalArea)*** *- * Définit un nœud comme interne. Les nœuds classés dans la catégorie Interne ne peuvent pas être superposés, hérités, ni utilisés directement. Ces nœuds sont destinés uniquement aux fonctionnalités internes d’AEM.
 
 * **Aucune annotation** : les nœuds héritent de la classification en fonction de la hiérarchie d’arborescence. Par défaut, /root est Public. **Les nœuds dont un parent est classé dans la catégorie Interne ou Final doivent également être traités comme étant internes.**
 
 >[!NOTE]
 >
->Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. Autres domaines **/libs** comme une bibliothèque côté client peut être marquée comme `Internal`, mais peut toujours être utilisé avec l’inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
+>Ces stratégies ne sont appliquées que par rapport à des mécanismes basés sur un chemin de recherche Sling. D’autres zones de **/libs**, comme une bibliothèque côté client, peuvent se voir affecter la classification `Internal`. Cependant, elles peuvent toujours être utilisées avec l’inclusion clientlib standard. Dans ce cas, il est essentiel que le client continue de respecter la classification Interne.
 
 #### Indicateurs de type de contenu CRXDE Lite {#crxde-lite-content-type-indicators}
 
-Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arborescences marqués comme `INTERNAL` comme grisé. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
+Les mixins appliqués dans CRXDE Lite affichent en grisé les nœuds de contenu et les arborescences ayant la classification `INTERNAL`. Pour la classification `FINAL`, seule l’icône est grisée. Les enfants de ces nœuds apparaissent également en grisé. Dans les deux cas, la fonctionnalité Nœud de recouvrement est désactivée.
 
 **Public**
 
@@ -85,13 +85,13 @@ Les mixins appliqués dans CRXDE Lite affichent les noeuds de contenu et les arb
 
 >[!NOTE]
 >
->Depuis la version 6.5 d’AEM, Adobe recommande d’utiliser le détecteur de motifs pour détecter les violations d’accès au contenu. Les rapports du détecteur de motifs sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
+>Depuis la version 6.5 d’AEM, Adobe recommande d’utiliser l’Outil de détection des motifs pour détecter les violations d’accès au contenu. Les rapports de l’Outil de détection des motifs sont plus détaillés, détectent plus de problèmes et réduisent la probabilité de faux positifs.
 >
->Pour plus d’informations, voir [Évaluation de la complexité de la mise à niveau à l’aide du détecteur de motifs](/help/sites-deploying/pattern-detector.md).
+>Pour plus d’informations, consultez la section [Évaluation de la complexité de la mise à niveau à l’aide de l’Outil de détection des motifs](/help/sites-deploying/pattern-detector.md).
 
-AEM 6.5 sera distribué avec un contrôle d’intégrité pour informer les clients si du contenu référencé ou superposé est utilisé d’une manière non conforme à la classification du contenu.
+AEM 6.5 sera distribué avec un contrôle d’intégrité pour informer les clients si du contenu référencé ou recouvert est utilisé d’une manière non conforme à la classification du contenu.
 
-Le** contrôle d’accès au contenu Sling/Granite** est un nouveau contrôle d’intégrité qui surveille le référentiel pour voir si le code client accède incorrectement aux noeuds protégés dans AEM.
+La **Vérification de l’accès au contenu Sling/Granite** est un nouveau contrôle d’intégrité qui surveille le référentiel afin de détecter si du code client accède, de manière non autorisée, à des nœuds protégés dans AEM.
 
 Ce contrôle analyse **/apps** et son exécution demande généralement quelques secondes.
 
@@ -104,10 +104,10 @@ Pour pouvoir accéder à ce nouveau contrôle d’intégrité, vous devez procé
 
 Une fois l’analyse terminée, une liste d’avertissements s’affiche pour informer l’utilisateur final du nœud protégé qui est référencé de manière incorrecte :
 
-![capture d’écran-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
+![screenshot-2018-2-5healthreports](assets/screenshot-2018-2-5healthreports.png)
 
-Une fois que les problèmes ont été corrigés, l’état vert est rétabli :
+Une fois que les problèmes ont été corrigés, le statut vert est rétabli :
 
-![capture d’écran-2018-2-5healthreports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
+![screenshot-2018-2-5healthreports-violations](assets/screenshot-2018-2-5healthreports-violations.png)
 
 Le contrôle d’intégrité affiche des informations collectées par un service en arrière-plan qui vérifie, de manière asynchrone, si un type de ressource ou d’incrustation est utilisé dans tous les chemins de recherche Sling. Si des mixins de contenu sont utilisés de manière incorrecte, une infraction est signalée.

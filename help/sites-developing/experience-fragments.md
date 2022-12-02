@@ -131,7 +131,7 @@ De tels groupes sont notamment utilisés pour incorporer du contenu dans des poi
 
 La fonction [Exporter vers Target](/help/sites-administering/experience-fragments-target.md) vous permet :
 
-* de créer un fragment d’expérience ,
+* de créer un fragment d’expérience,
 * d’y ajouter des composants ;
 * de l’exporter ensuite en tant qu’offre Adobe Target, au format HTML ou JSON.
 

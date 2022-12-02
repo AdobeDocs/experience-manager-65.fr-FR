@@ -15,7 +15,7 @@ exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 source-git-commit: d6c875e85d553b8ef557b811c9fa43f46824f297
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Experience Manager (AEM) fournit plusieurs API pour développer des appl
 * [Référence de l’API JavaScript de structure des tests de l’interface utilisateur](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
 * [Référence de l’API JavaScript principale de l’éditeur](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
-Références de l’API JavaScript de structure du SDK de l’éditeur d’application monopage AEM :
+Références de l’API JavaScript de framework du SDK de l’éditeur d’application monopage AEM :
 
 * [Mappage de composant](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gestionnaire de modèle de page](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
@@ -41,7 +41,7 @@ API de diffusion et de gestion de contenu AEM :
 
 * Composants principaux (JSON)
 
-   * [Exportateur JSON ](/help/sites-developing/json-exporter.md)
+   * [Exportateur JSON](/help/sites-developing/json-exporter.md)
    * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
    * Pour plus d’informations, consultez la [section Composants du Guide de l’utilisateur pour le développement](/help/sites-developing/home.md).
 

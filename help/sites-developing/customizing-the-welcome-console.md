@@ -13,7 +13,7 @@ exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '464'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -44,25 +44,25 @@ Liste des consoles principales d’AEM.
 
 Les autorisations au niveau du nœud déterminent si les liens sont visibles ou non. Les nœuds en question sont les suivants :
 
-* **Sites web:** `/libs/wcm/core/content/siteadmin`
+* **Sites Web :** `/libs/wcm/core/content/siteadmin`
 
-* **Ressources numériques:** `/libs/wcm/core/content/damadmin`
+* **Ressources numériques :** `/libs/wcm/core/content/damadmin`
 
-* **Communauté :** `/libs/collab/core/content/admin`
+* **Communauté :** `/libs/collab/core/content/admin`
 
-* **Campagnes:** `/libs/mcm/content/admin`
+* **Campagnes :** `/libs/mcm/content/admin`
 
-* **Boîte de réception:** `/libs/cq/workflow/content/inbox`
+* **Boîte de réception :** `/libs/cq/workflow/content/inbox`
 
-* Les **utilisateurs:** `/libs/cq/security/content/admin`
+* **Utilisateurs :** `/libs/cq/security/content/admin`
 
-* **Outils:** `/libs/wcm/core/content/misc`
+* **Outils :** `/libs/wcm/core/content/misc`
 
-* **Balisage:** `/libs/cq/tagging/content/tagadmin`
+* **Balisage :** `/libs/cq/tagging/content/tagadmin`
 
 Par exemple :
 
-* Pour restreindre l’accès à **Outils**, supprimez l’accès en lecture de
+* Pour limiter l’accès à **Outils**, supprimez l’accès en lecture à partir de
 
    `/libs/wcm/core/content/misc`
 
@@ -129,7 +129,7 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td> </td>
   </tr>
   <tr>
-   <td> CRXDE Lite</td>
+   <td> CRXDE Lite</td>
    <td><code>/libs/cq/core/content/welcome/features/crxde</code></td>
   </tr>
   <tr>
@@ -149,11 +149,11 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
    <td><code>/libs/cq/core/content/welcome/features/backup</code></td>
   </tr>
   <tr>
-   <td> Console web<br /> </td>
+   <td> Console Web<br /> </td>
    <td><code>/libs/cq/core/content/welcome/features/config</code></td>
   </tr>
   <tr>
-   <td> Image mémoire de l’état de la console Web<br /> </td>
+   <td> Image mémoire du statut de la console Web<br /> </td>
    <td><code>/libs/cq/core/content/welcome/features/statusdump</code></td>
   </tr>
  </tbody>
@@ -163,25 +163,25 @@ Trois sections sont proposées par défaut (elles sont légèrement espacées) 
 
 Il est possible de masquer un lien pour des utilisateurs ou des groupes spécifiques en supprimant l’accès aux nœuds qui le représentent.
 
-* Ressources : supprimez l’accès à :
+* Ressources : supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* Documents - supprimez l’accès à :
+* Documents : supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* Fonctionnalités : supprimez l’accès à :
+* Fonctionnalités : supprimez l’accès à :
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
 Par exemple :
 
-* Pour supprimer le lien vers **Rapports**, supprimez l’accès en lecture de
+* Pour supprimer le lien vers **Rapports**, supprimez l’accès en lecture à partir de
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Pour supprimer le lien vers **Packages**, supprimez l’accès en lecture de
+* Pour supprimer le lien vers **Modules**, supprimez l’accès en lecture à partir de
 
    `/libs/cq/core/content/welcome/features/packages`
 
@@ -189,9 +189,9 @@ Pour plus d’informations sur la définition des autorisations souhaitées, con
 
 ### Mécanisme de sélection de liens {#link-selection-mechanism}
 
-Dans `/libs/cq/core/components/welcome/welcome.jsp` use est fait de [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), qui exécute une requête sur les noeuds possédant la propriété :
+L’outil `/libs/cq/core/components/welcome/welcome.jsp`ConsoleUtil[ est utilisé dans ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html). Il exécute une requête sur les nœuds qui possèdent la propriété :
 
-* `jcr:mixinTypes` avec la valeur : `cq:Console`
+* `jcr:mixinTypes` avec la valeur : `cq:Console`
 
 >[!NOTE]
 >
@@ -207,6 +207,6 @@ Si un utilisateur ou un groupe ne possède pas l’autorisation de lecture sur u
 
 Vous pouvez utiliser le [mécanisme de sélection de liens](#link-selection-mechanism) pour ajouter votre propre élément personnalisé à la liste des liens.
 
-Ajoutez votre élément personnalisé à la liste en ajoutant le `cq:Console` mixin dans votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
+Ajoutez votre élément personnalisé à la liste en ajoutant le mixin `cq:Console` à votre widget ou ressource. Pour ce faire, vous devez définir la propriété suivante :
 
-* `jcr:mixinTypes` avec la valeur : `cq:Console`
+* `jcr:mixinTypes` avec la valeur : `cq:Console`

@@ -39,7 +39,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 >
 >Les fragments de contenu sont stockés en tant que **Ressources**, et ils sont donc principalement gérés par l’intermédiaire de la console **Ressources**.
 
-## Création de fragments de contenu {#creating-content-fragments}
+## Créer des fragments de contenu {#creating-content-fragments}
 
 ### Création d’un modèle de contenu {#creating-a-content-model}
 
@@ -189,7 +189,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
    * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
 
-* Voir le statut du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication.
+* Consultez le statut du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication.
 
 * **Enregistrer** permet d’accéder à l’option **Enregistrer et fermer**.
 
@@ -299,13 +299,14 @@ Outre les options standard, la [Chronologie](/help/assets/manage-assets.md#timel
    * **Supprimer**
 
 >[!NOTE]
->Les commentaires :
->* Une fonctionnalité standard pour toutes les ressources
->* Réalisés dans la chronologie
->* Liés à la ressource de fragment
->Les annotations (pour les fragments de contenu) sont :
->* Entrées dans l’éditeur de fragments
->* Spécifiques à un segment de texte sélectionné au sein du fragment
+Les commentaires :
+* Une fonctionnalité standard pour toutes les ressources
+* Réalisés dans la chronologie
+* Liés à la ressource de fragment
+>
+Les annotations (pour les fragments de contenu) sont :
+* Entrées dans l’éditeur de fragments
+* Spécifiques à un segment de texte sélectionné au sein du fragment
 >
 
 
@@ -336,7 +337,7 @@ Elles sont affichées dans des versions côte à côte dans lesquelles :
 * **Terminé** vous ramène à la console
 
 >[!NOTE]
->Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fragments.
+Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fragments.
 
 ![comparaison](assets/cfm-managing-06.png)
 
@@ -353,8 +354,8 @@ Vous pouvez restaurer vers une version spécifique de votre fragment :
 ## Publication et référencement d’un fragment {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
->Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
->Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Ils peuvent être publiés :
 
@@ -363,7 +364,7 @@ Les fragments de contenu doivent être publiés pour être utilisés dans l’en
 * Lorsque vous [publiez une page qui utilise le fragment](/help/sites-authoring/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
->Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
+Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
@@ -373,10 +374,10 @@ Pour supprimer un fragment :
 2. Sélectionnez le fragment.
 
    >[!NOTE]
-   >L’action **Supprimer** n’est pas proposée comme action rapide.
+   L’action **Supprimer** n’est pas proposée comme action rapide.
 
 3. Sélectionnez **Supprimer** dans la barre d’outils.
 4. Confirmez l’action **Supprimer**.
 
    >[!CAUTION]
-   >Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.
+   Si le fragment est déjà référencé dans une page, un message d’avertissement vous demande de confirmer que vous souhaitez poursuivre et **forcer la suppression**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.

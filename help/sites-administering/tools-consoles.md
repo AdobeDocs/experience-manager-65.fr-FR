@@ -1,5 +1,5 @@
 ---
-title: 'Consoles Outils '
+title: Consoles Outils
 seo-title: Tools Consoles
 description: Découvrez les différentes consoles Outils disponibles dans AEM.
 seo-description: Learn about the different tools consoles throughout AEM.
@@ -14,7 +14,7 @@ exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE Lite</td>
+   <td>CRXDE LITE</td>
   </tr>
   <tr>
    <td> </td>
@@ -195,7 +195,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Configuration de la gestion des actifs numériques (DAM) distante</td>
+   <td>Configuration de la gestion des ressources numériques (DAM) distante</td>
   </tr>
   <tr>
    <td>Ressources</td>
@@ -255,7 +255,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Clients OAuth</td>
+   <td>Clients OAuth</td>
   </tr>
   <tr>
    <td> </td>
@@ -274,16 +274,16 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Configurations d’Adobe IMS</td>
   </tr>
   <tr>
-   <td>Cloud Services<br /> </td>
+   <td>Services cloud<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Cloud Services hérités</td>
+   <td>Services cloud hérités</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Cloud Services de traduction</td>
+   <td>Services cloud de traduction</td>
   </tr>
   <tr>
    <td> </td>
@@ -291,7 +291,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Configuration de Dynamic Media<br /> </td>
+   <td>Configuration de Dynamic Media<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -327,7 +327,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Configuration du stockage</td>
+   <td>Stockage  Configuration</td>
   </tr>
   <tr>
    <td> </td>
@@ -350,7 +350,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Badges de communauté</td>
   </tr>
   <tr>
-   <td>Commerce </td>
+   <td>Commerce</td>
    <td> </td>
   </tr>
   <tr>
@@ -381,7 +381,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique. Les configurations de cloud par défaut et marketing sont définies ici.<br /> </td>
   </tr>
   <tr>
-   <td>Configuration de Cloud Services<br /> </td>
+   <td>Configuration des services cloud<br /> </td>
    <td>Contient les configurations liées à l’intégration à Adobe Marketing Cloud.</td>
   </tr>
   <tr>
@@ -389,7 +389,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Paramètres du gestionnaire de configuration.</td>
   </tr>
   <tr>
-   <td>Commerce </td>
+   <td>Commerce</td>
    <td>Permet d’accéder aux importateurs et aux différentes données de produit.</td>
   </tr>
   <tr>
@@ -441,12 +441,12 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>En mode Génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.</td>
   </tr>
   <tr>
-   <td>Sécurité - Configuration en libre-service </td>
+   <td>Sécurité – Configuration en libre-service </td>
    <td>Permet de configurer les messages électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td>
   </tr>
   <tr>
    <td>Segmentation</td>
-   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en caractérisant les détails d’un visiteur.<br /> </td>
+   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur :<br /> </td>
   </tr>
   <tr>
    <td>clients</td>

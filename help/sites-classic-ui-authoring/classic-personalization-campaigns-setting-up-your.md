@@ -14,7 +14,7 @@ exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
 source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
 workflow-type: tm+mt
 source-wordcount: '2257'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Ensuite, en fonction du type d’expérience en cours de création, vous devrez 
    1. [Créez une page d’entrée attrayante pour la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage).
    1. [Envoyez la newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) aux abonnés ou aux prospects.
 
-* Pour la création d’une offre Adobe Target (anciennement Test &amp; Target) :
+* Pour la création d’une offre Adobe Target (anciennement Test&amp;Target) :
 
    1. [Créez une expérience d’offre Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
    1. [Intégrez-la à Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
@@ -72,7 +72,7 @@ Pour créer une marque, procédez comme suit :
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Cliquez sur **OK** pour enregistrer. 
+1. Cliquez sur **OK** pour enregistrer.
 
 ### Création d’une campagne {#creating-a-new-campaign}
 
@@ -95,17 +95,17 @@ Configurez les propriétés de campagne qui contrôlent le comportement :
 * **Priorité :** priorité de la campagne par rapport aux autres campagnes. Si plusieurs campagnes sont en cours au même moment, la campagne présentant la priorité la plus élevée contrôle l’expérience des visiteurs.
 * **Heure d’activation/de désactivation :** ces propriétés contrôlent le temps pendant lequel la campagne contrôle l’expérience des visiteurs. La propriété Heure d’activation contrôle le moment auquel la campagne commence à contrôler l’expérience, tandis que la propriété Heure de désactivation contrôle le moment où la campagne cesse de contrôler l’expérience.
 * **Image :** image représentant la campagne dans AEM.
-* **Services Cloud :** les configurations des services cloud auxquels la campagne est intégrée (voir [Intégration à Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)).
+* **Services Cloud :** les configurations des services cloud auxquels la campagne est intégrée (voir [Intégration à Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md)).
 
 * **Adobe Target :** propriétés qui permettent de configurer les campagnes qui sont intégrées à Adobe Target (voir [Intégration à Adobe Target](/help/sites-administering/target.md)).
 
-1. Sous **Campagnes**, sélectionnez votre marque. Dans le volet de droite, sélectionnez votre campagne, puis cliquez sur **Propriétés**.
+1. Sous **Campagnes**, sélectionnez votre marque. Dans le volet de droite, sélectionnez votre campagne et cliquez sur **Propriétés**.
 
-   Vous pouvez définir différentes propriétés, telles qu’un **Titre**, une **Description** et les **Services Cloud** de votre choix.
+   Vous pouvez définir différentes propriétés, telles qu’un **Titre**, une **Description** et les **Services cloud** de votre choix.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Cliquez sur **OK** pour enregistrer. 
+1. Cliquez sur **OK** pour enregistrer.
 
 ### Création d’une expérience {#creating-a-new-experience}
 
@@ -125,7 +125,7 @@ La procédure à suivre dépend du type d’expérience à créer :
 
 Après avoir créé le « squelette » de votre expérience, vous devez effectuer les actions suivantes, en fonction de son type :
 
-* [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers):
+* [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) :
 
    * [Connectez la page de teaser aux segments de visiteurs.](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#applyingasegmenttoyourteaser)
    * [Créez un point de contact pour votre teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatouchpointforyourteaser) (ajoutez votre teaser à une page de contenu).
@@ -153,12 +153,12 @@ S’il existe déjà des expériences, vous pouvez ajouter directement un point 
 
 1. Cliquez sur **OK** pour enregistrer.
 
-## Utilisation de pistes {#working-with-leads}
+## Utilisation des prospects {#working-with-leads}
 
 >[!NOTE]
 >
->Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des pistes).
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md). 
+>Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des prospects).
+> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 Dans AEM MCM, vous pouvez organiser et ajouter des pistes en les saisissant manuellement ou en important une liste de valeurs séparées par des virgules ; une liste de distribution, par exemple. Pour générer des pistes, il existe d’autres méthodes comme les abonnements aux newsletters ou les inscriptions aux communautés (s’ils sont configurés de la sorte, ils peuvent déclencher un workflow pour renseigner les pistes).
 
@@ -174,9 +174,9 @@ Dans le tableau de bord, vous avez accès à toutes les pistes en cliquant sur *
 
 ### Création de pistes {#creating-new-leads}
 
-Une fois les nouvelles pistes créées, assurez-vous de [les activer](#activating-or-deactivating-leads) pour pouvoir suivre leur activité sur l’instance de publication et personnaliser leur expérience.
+Une fois les nouveaux prospects créés, assurez-vous de [les activer](#activating-or-deactivating-leads) pour pouvoir suivre leur activité sur l’instance de publication et personnaliser leur expérience.
 
-Création manuelle d’une piste :
+Création manuelle d’un prospect :
 
 1. Dans AEM, accédez à MCM. Dans le tableau de bord, cliquez sur **Pistes**.
 1. Cliquez sur **Nouveau**. La fenêtre **Créer** s’ouvre.
@@ -187,7 +187,7 @@ Création manuelle d’une piste :
 
    ![screen_shot_2012-02-21at115045am](assets/screen_shot_2012-02-21at115045am.png)
 
-1. Saisissez les informations de l’adresse, si nécessaire. Cliquez sur **Enregistrer** pour enregistrer la piste. Si vous avez besoin d’ajouter des pistes supplémentaires, cliquez sur **Enregistrer et nouveau**.
+1. Saisissez les informations de l’adresse, si nécessaire. Cliquez sur **Enregistrer** pour enregistrer la piste. Si vous avez besoin d’ajouter des prospects supplémentaires, cliquez sur **Enregistrer et Nouveau**.
 
    La nouvelle piste s’affiche dans le volet Pistes. Lorsque vous cliquez sur l’entrée, toutes les informations saisies s’affichent dans le volet de droite. Une fois une piste créée, vous pouvez l’ajouter à une liste.
 
@@ -199,13 +199,13 @@ Le fait d’activer les pistes permet de mieux suivre leur activité sur l’ins
 
 Activation et désactivation de pistes :
 
-1. Dans AEM, accédez à MCM et cliquez sur **Pistes**.
+1. Dans AEM, accédez à MCM et cliquez sur **Leads**.
 
-1. Sélectionnez les pistes à activer ou désactiver et cliquez sur **Activer** ou **Désactiver**.
+1. Sélectionnez les prospects à activer ou désactiver et cliquez sur **Activer** ou **Désactiver**.
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   À l’instar des pages AEM, l’état de publication est indiqué dans la colonne **Publié**.
+   À l’instar des pages AEM, le statut de publication est indiqué dans la colonne **Publié**.
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -215,7 +215,7 @@ Lorsque vous importez de nouvelles pistes, vous pouvez les ajouter automatiqueme
 
 Importation de pistes à partir d’une liste de valeurs séparées par des virgules :
 
-1. Dans AEM, accédez à MCM et cliquez sur **Pistes**.
+1. Dans AEM, accédez à MCM et cliquez sur **Leads**.
 
    >[!NOTE]
    >
@@ -234,11 +234,11 @@ Importation de pistes à partir d’une liste de valeurs séparées par des virg
    >La première ligne de la liste CSV contient des étiquettes dont la formulation doit être parfaitement identique à l’exemple ci-dessous :
    >
    >
-   >`email,givenName,familyName` : s’il est écrit comme `givenname`Par exemple, le système ne le reconnaîtra pas.
+   >`email,givenName,familyName` - En cas d’utilisation du format `givenname`, par exemple, le système ne le reconnaîtra pas.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. Cliquez sur **Suivant**. Ici, vous affichez un aperçu des pistes pour vérifier qu’elles sont exactes.
+1. Cliquez sur **Suivant**. Ici, vous affichez un aperçu des prospects pour vérifier qu’ils sont exacts.
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
@@ -258,7 +258,7 @@ Ajout de pistes à des listes préexistantes :
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Dans le menu **Outils**, sélectionnez **Ajouter à la liste.** La fenêtre **Ajouter à la liste** s’ouvre.
+1. Dans le menu **Outils**, sélectionnez **Ajouter à la liste...** La fenêtre **Ajouter à la liste** s’ouvre.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -305,7 +305,7 @@ Pour supprimer une piste existante dans la console MCM, cochez la case en regard
 >[!NOTE]
 >
 >Adobe ne prévoit pas d’optimiser cette fonctionnalité (gestion des listes).
-> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md). 
+> Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
 Les listes vous permettent d’organiser vos pistes en groupes. Elles vous offrent la possibilité de cibler vos campagnes marketing sur un groupe de personnes de votre choix ; vous pouvez, par exemple, adresser une newsletter ciblée à une liste. Les listes sont visibles dans le MCM, dans le tableau de bord ou en cliquant sur **Listes**. Les deux techniques vous fournissent le nom de la liste et le nombre de membres.
 
@@ -401,4 +401,4 @@ Affichage des pistes qui appartiennent à une liste :
 
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
-1. Cliquez sur **Fermer** pour revenir au MCM.
+1. Cliquez sur **Fermer** pour revenir au MCM.

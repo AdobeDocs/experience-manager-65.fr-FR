@@ -13,7 +13,7 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ En fonction de votre projet, le conteneur de mises en page peut être utilisé e
 
 >[!NOTE]
 >
->L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Voir [Configuration d’une mise en page réactive](/help/sites-administering/configuring-responsive-layout.md) pour plus d’informations.
+>L’utilisation des mécanismes ci-dessus est activée par une configuration du modèle. Pour plus d’informations, consultez la section [Configuration d’une mise en page réactive](/help/sites-administering/configuring-responsive-layout.md).
 
 ## Définitions de mise en page, émulation d’appareil et points d’arrêt {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -115,7 +115,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
-   * **Sélectionner un périphérique** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
+   * **Sélectionner un appareil** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
 
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
@@ -228,7 +228,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    * **Flotter sur une nouvelle ligne**
 
-      Le composant est déplacé vers une nouvelle ligne, selon l’espace disponible dans la grille.
+      Le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
 
    * **Masquer le composant**
 
@@ -243,7 +243,7 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Afficher les composants masqués** - Afficher tous les composants ou des composants individuels. Le nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
+   * **Afficher les composants masqués** - Affiche tous les composants, ou individuellement certains composants. Ce nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 

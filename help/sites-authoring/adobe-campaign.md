@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’Adobe Campaign
+title: Utilisation d’Adobe Campaign
 seo-title: Working with Adobe Campaign
 description: Adobe Campaign est un ensemble de solutions qui permet de personnaliser les campagnes et de les diffuser via tous vos canaux en ligne et hors ligne
 seo-description: Adobe Campaign is a set of solutions that lets you personalize and deliver campaigns across all of your online and offline channels
@@ -13,25 +13,25 @@ exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '126'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Utilisation d’Adobe Campaign{#working-with-adobe-campaign}
+# Utilisation d’Adobe Campaign{#working-with-adobe-campaign}
 
 Adobe Campaign est un ensemble de solutions qui permet de personnaliser les campagnes et de les diffuser via tous vos canaux en ligne et hors ligne.
 
 Cette documentation décrit comment utiliser Adobe Campaign :
 
-* Adobe Campaign Classic
-* Adobe Campaign Standard, qui est la solution par abonnement.
+* d’Adobe Campaign Classic
+* Adobe Campaign Standard, qui est la solution par abonnement.
 
 Reportez-vous aux informations suivantes :
 
-* [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](/help/sites-authoring/campaign.md)
-* [Composants d’Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md)
-* [Création de formulaires Adobe Campaign dans AEM](/help/sites-authoring/adobe-campaign-forms.md)
-* [Ciblage d’un élément de campagne Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
+* [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](/help/sites-authoring/campaign.md)
+* [Composants d’Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md)
+* [Création de formulaires Adobe Campaign dans AEM](/help/sites-authoring/adobe-campaign-forms.md)
+* [Ciblage d’un élément de campagne Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
 
 Vous devez avoir précédemment [intégré AEM à Adobe Campaign](/help/sites-administering/campaign.md).
 

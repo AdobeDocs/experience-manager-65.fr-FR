@@ -13,7 +13,7 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| Général | `Ctrl+Click` | Sélection multiple sur un ordinateur de bureau |
+| Général | `Ctrl+Click` | Sélection multiple   sur un appareil de bureau |
 | Console : vue Colonnes et Contenu | `Right Arrow` | Naviguer vers le bas de la structure du site web/développer le nœud d’arborescence |
 |  | `Left Arrow` | Naviguer vers le haut de la structure de l’arborescence/réduire le nœud d’arborescence |
 |  | `Down Arrow` | Se déplacer vers le bas d’une liste de pages au même niveau |

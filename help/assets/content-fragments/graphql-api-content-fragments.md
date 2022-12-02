@@ -115,7 +115,7 @@ Le point d’entrée est le chemin utilisé pour accéder à GraphQL pour AEM. A
 * envoyer vos requêtes GraphQL ;
 * recevoir les réponses (à vos requêtes GraphQL).
 
-Dans AEM , il existe deux types de points d’entrée :
+Dans AEM, il existe deux types de points d’entrée :
 
 * Global
    * Disponible pour tous les sites.

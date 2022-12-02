@@ -6,7 +6,7 @@ user-guide-description: Découvrez comment utiliser et administrer le contenu AE
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 89%
 # Commerce {#commerce}
 
 + [AEM Content and Commerce](/help/commerce/home.md)
-+ [Modifications notables apportées à AEM contenu et à Commerce](cif/changes.md)
++ [Modifications notables apportées à AEM Content and Commerce](cif/changes.md)
 + [Présentation et aperçu](cif/introduction.md)
 + Intégrations {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
@@ -48,14 +48,14 @@ ht-degree: 89%
 + AEM CIF Classic {#classic}
    + [Présentation](/help/commerce/cif-classic/home.md)
    + Déploiement {#deploying}
-      + [Aperçu du commerce électronique](/help/commerce/cif-classic/deploying/ecommerce.md)
+      + [Aperçu de eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + Administration {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [Concepts](/help/commerce/cif-classic/administering/concepts.md)
-      + [Administration d’eCommerce générique](/help/commerce/cif-classic/administering/generic.md)
+      + [Administration de la solution eCommerce générique](/help/commerce/cif-classic/administering/generic.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Développement {#developing}
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Développement (générique)](/help/commerce/cif-classic/developing/generic.md)
-      + [Développement avec Commerce Cloud SAP](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+      + [Développement avec SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)

@@ -14,7 +14,7 @@ exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1200'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -26,29 +26,29 @@ Les campagnes se servent souvent des teasers comme d’un mécanisme pour incite
 >
 >Le composant Teaser est obsolète dans AEM 6.2. Utilisez le [composant Cible](/help/sites-authoring/content-targeting-touch.md) à la place.
 
-* **Pages de marque** sont stockées dans la section Campagnes du site web. Une marque contient les différentes campagnes.
-* **Pages de campagne** sont stockées dans la section Campagnes du site web. Chaque campagne possède une page individuelle, où sont conservées les définitions de teaser. La page de conteneur ou d’aperçu présente également certaines informations et statistiques concernant les pages de teaser individuelles.
+* Les **pages de marque** sont stockées dans la section Campagnes du site Web. Une marque contient les différentes campagnes.
+* Les **pages de campagne** sont stockées dans la section Campagnes du site Web. Chaque campagne possède une page individuelle, où sont conservées les définitions de teaser. La page de conteneur ou d’aperçu présente également certaines informations et statistiques concernant les pages de teaser individuelles.
 
 Dans AEM, les teasers sont constitués de plusieurs parties :
 
-* **Pages de teaser** sont stockées sous la page de campagne appropriée et contiennent les définitions des paragraphes de teaser disponibles pour chaque campagne spécifique. Ces définitions sont utilisées lors de l’affichage des paragraphes de teaser ; y compris les variations de contenu, le segment à utiliser pour la sélection d’une variation et du facteur d’amplification.
-* Le **composant de teaser** est disponible prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Vous pouvez faire glisser le composant de teaser depuis le sidekick, puis spécifier votre définition de teaser pour créer votre propre paragraphe de teaser. **Remarque :** Le composant Teaser a été abandonné dans AEM 6.2. Utilisez la variable [Composant cible](/help/sites-authoring/content-targeting-touch.md) au lieu de .
+* Les **pages de teaser** sont stockées dans une page de campagne appropriée et présentent les définitions des paragraphes de teaser disponibles pour chaque campagne spécifique. Ces définitions sont utilisées lors de l’affichage des paragraphes de teaser ; y compris les variations de contenu, le segment à utiliser pour la sélection d’une variation et du facteur d’amplification.
+* Le **composant de teaser** est disponible prêt à l’emploi et vous permet de créer une instance de votre paragraphe de teaser spécifique dans une page de contenu. Vous pouvez faire glisser le composant de teaser depuis le sidekick, puis spécifier votre définition de teaser pour créer votre propre paragraphe de teaser. **Remarque :** le composant Teaser est obsolète dans AEM 6.2. Utilisez le [composant Cible](/help/sites-authoring/content-targeting-touch.md) à la place.
 * Les **paragraphes de teaser** sont de véritables instances de votre teaser au sein d’une page de contenu. Ceux-ci incitent un segment de visiteurs à consulter du contenu centré sur leurs intérêts.
 * Les pages qui présentent le contenu de la campagne centré sur un segment de visiteurs spécifique. Généralement, les paragraphes de teaser dirigent le visiteur jusqu’à des pages de ce type.
 
 ## Stratégies {#strategies}
 
-Lors de l’ajout d’un paragraphe de teaser à une page, vous devez définir la variable **Stratégie**.
+Lors de l’ajout d’un paragraphe de teaser à une page, vous devez définir la **stratégie**.
 
 C’est pour le cas où plusieurs teasers sont disponibles pour être sélectionnés alors que leurs segments affectés sont tous résolus avec succès. La **stratégie** indique alors un critère supplémentaire utilisé pour sélectionner le teaser affiché :
 
 * **Score Clickstream** est basé sur les balises et les accès aux balises associés conservés dans le ClientContext du visiteur (indique la fréquence à laquelle un visiteur clique sur les pages contenant la balise respective). Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.
-* **Random**, pour une sélection &quot;aléatoire&quot;; utilise le facteur aléatoire généré pour une page, visible avec la variable [contexte client](/help/sites-administering/client-context.md).
-* **First** dans la liste des segments résolus. L’ordre est celui des teasers dans la page conteneur de campagne.
+* **Aléatoire**, pour la sélection « aléatoire » ; emploie le facteur aléatoire généré pour une page. Celui-ci est visible dans le [contexte client](/help/sites-administering/client-context.md).
+* **Première** dans la liste des segments résolus. L’ordre est celui des teasers dans la page conteneur de campagne.
 
-Le [Facteur d’amplification](/help/sites-administering/campaign-segmentation.md#boost-factor) du segment a également un impact sur la sélection. Il s’agit d’un facteur de pondération ajouté à une définition de segment pour augmenter ou réduire la possibilité relative qu’elle soit sélectionnée.
+Le [facteur d’amplification](/help/sites-administering/campaign-segmentation.md#boost-factor) du segment se répercute également sur la sélection. Il s’agit d’un facteur de pondération ajouté à une définition de segment pour augmenter ou réduire la possibilité relative qu’elle soit sélectionnée.
 
-Le worfklow et les interrelations des divers critères de sélection sont mieux illustrés par un exemple (une méthode qui peut également être utilisée pour assurer que vos teasers atteignent le public requis).
+Le workflow et les interrelations des divers critères de sélection sont mieux illustrés par un exemple (une méthode qui peut également être utilisée pour assurer que vos teasers atteignent le public requis).
 
 Si les segments suivants sont déjà créés et que leur facteur d’amplification respectif leur a déjà été affecté :
 
@@ -112,7 +112,7 @@ Et nous utilisons les définitions de teaser suivantes :
 
 Ensuite, si nous appliquons ceci à un visiteur quand :
 
-* **S1**, **S2** et **S6** resolve
+* **S1**, **S2** et **S6** sont résolus avec succès
 
 * la balise **marketing** est accédée 3 fois
 * la balise **commerce** est accédée 6 fois
@@ -134,7 +134,7 @@ qui sont calculés avant d’appliquer la stratégie appropriée :
    <td>Balises </td>
    <td>Correspondance réussie ?</td>
    <td>Facteur d’amplification résultant</td>
-   <td>Clickstream Score résultant </td>
+   <td>Score de flux de clics résultant </td>
   </tr>
   <tr>
    <td>C1</td>
@@ -248,7 +248,8 @@ Après avoir créé votre marque et votre campagne, vous pouvez créer et config
    * **Chemin d’accès à la campagne**
 Le chemin d’accès à la page de campagne qui comprend la page de teaser individuelle ; les segments déterminent exactement le teaser affiché.
 
-   * **[Stratégie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)** Méthode utilisée pour la sélection lorsque plusieurs segments sont résolus avec succès.
+   * **[Stratégie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
+Méthode utilisée pour la sélection lorsque plusieurs segments sont résolus avec succès.
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Cliquez sur **OK** pour enregistrer. Le contenu approprié s’affiche en fonction des segments que vous avez définis sur le teaser et du profil de l’utilisateur avec lequel vous vous êtes connecté :

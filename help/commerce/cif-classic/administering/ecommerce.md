@@ -1,6 +1,6 @@
 ---
 title: eCommerce
-description: AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux.
+description: AEM eCommerce aide les spécialistes du marketing à offrir des expériences d’achat personnalisées sur le web, les appareils mobiles et les médias sociaux.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
@@ -8,7 +8,7 @@ exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 * [Concepts](/help/commerce/cif-classic/administering/concepts.md)
 * [Administration (générique)](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe propose deux versions de la structure d’intégration de Commerce :
+Adobe propose deux versions de framework d’intégration de Commerce :
 
 <table>
  <tbody>
@@ -41,7 +41,7 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
     </ul> </td>
    <td>
     <ul>
-     <li>Adobe Commerce</li>
+     <li>Adobe Commerce</li>
      <li>Java et Javascript</li>
      <li>Aucune donnée de commerce stockée dans le référentiel JCR</li>
     </ul> </td>
@@ -55,7 +55,7 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
    <td><p>Catalogue de produits</p> </td>
    <td>
     <ul>
-     <li>Importateur de produits, éditeur, mise en cache dans AEM</li>
+     <li>Importateur de produit, éditeur, mise en cache dans AEM</li>
      <li>Catalogues réguliers avec AEM ou pages proxy</li>
     </ul> </td>
    <td>
@@ -81,12 +81,12 @@ Adobe propose deux versions de la structure d’intégration de Commerce :
   <tr>
    <td>Modèle de données normalisé</td>
    <td>Non</td>
-   <td>Oui, schéma Adobe Commerce GraphQL</td>
+   <td>Oui, schéma Adobe Commerce GraphQL</td>
   </tr>
   <tr>
    <td>Disponibilité</td>
-   <td><p>Oui. SAP Commerce Cloud (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4</p> <p>Salesforce Commerce Cloud (connecteur en open source pour prendre en charge AEM 6.4)</p> </td>
-   <td>Oui via open source via GitHub. Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et est compatible avec la version 2.3.1).</td>
+   <td><p>Oui. Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4)</p> <p>Salesforce Commerce Cloud (connecteur en open source pour prendre en charge AEM 6.4)</p> </td>
+   <td>Oui via open source via GitHub. Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et compatible avec la version 2.3.1)</td>
   </tr>
   <tr>
    <td>Quand l’utiliser</td>
@@ -116,19 +116,19 @@ La mise en œuvre d’eCommerce permet d’accéder en temps réel à des inform
 * Intégrité des informations sur le produit
 * Tarifs
 * Inventaire de gestion des stocks
-* Variantes de l’état d’un panier
+* Variations du statut d’un panier
 
 >[!NOTE]
 >
->Pour utiliser la structure d’intégration avec les fournisseurs prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, voir [Déploiement d’eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Pour utiliser le framework d’intégration avec les prestataires eCommerce externes, vous devez tout d’abord installer les modules nécessaires. Pour plus d’informations, reportez-vous à [Déploiement d’e-commerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Pour plus d’informations sur l’extension des fonctionnalités d’eCommerce, voir [Développement du commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md).
+>Pour plus d’informations sur les possibilités d’extension d’eCommerce, consultez [Développement du e-commerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Principales fonctionnalités {#main-features}
 
 AEM eCommerce fournit ce qui suit :
 
-* Un certain nombre de **Composants AEM d’usine** pour illustrer ce qui peut être réalisé pour votre projet :
+* Différents **composants AEM prêts à l’emploi** illustrent ce qu’il est possible d’obtenir pour votre projet :
 
    * Affichage des produits
    * Panier
@@ -152,11 +152,11 @@ AEM eCommerce fournit ce qui suit :
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Utilise l’AEM de la fonction **présenter votre contenu sur plusieurs canaux ;**, que ce soit la fenêtre complète du navigateur ou l’appareil mobile. Ainsi, vous proposez votre contenu au format nécessaire pour vos visiteurs.
+* Utilise les capacités d’AEM de **présenter du contenu sur plusieurs canaux**, qu’il s’agisse d’une fenêtre de navigateur ou d’un appareil mobile. Ainsi, vous proposez votre contenu au format adapté pour vos visiteurs.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
-* La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction de la [structure d’AEM eCommerce](#the-framework)**.
+* La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction du [framework d’AEM eCommerce](#the-framework)**.
 
    Les deux mises en œuvre actuellement disponibles reposent sur la même base et complètent l’API générale (la structure). La mise en œuvre d’une nouvelle intégration implique seulement de mettre en œuvre les fonctionnalités dont votre intégration a besoin. Les composants frontaux peuvent être utilisés par les nouvelles mises en œuvre puisqu’ils utilisent des interfaces (et sont donc indépendants de la mise en œuvre).
 
@@ -187,11 +187,11 @@ La section [Concepts](/help/commerce/cif-classic/administering/concepts.md) couv
 
 * La structure d’intégration fournit l’API, une série de composants illustrant les fonctionnalités et différentes extensions pour fournir des exemples de méthodes de connexion.
 * La structure fournit la structure de base nécessaire à la mise en œuvre d’un projet.
-* La structure est extensible.
-* La structure ne fournit pas de site prêt à l’emploi. Un certain travail de développement reste nécessaire pour adapter la structure à vos spécifications.
+* Le framework est extensible.
+* Le framework ne fournit pas de site prêt à l’emploi. Un certain travail de développement reste nécessaire pour adapter le framework à vos spécifications.
 
 ### Pourquoi ? {#why}
 
-* Fournit les mécanismes de base nécessaires pour réaliser rapidement un site de commerce électronique personnalisé.
+* Pour fournir les mécanismes de base nécessaires à la création rapide d’un site de commerce électronique personnalisé.
 * Offrir la flexibilité nécessaire pour développer un site de commerce électronique réel.
 * Illustrer les pratiques recommandées.

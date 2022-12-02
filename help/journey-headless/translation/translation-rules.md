@@ -5,7 +5,7 @@ exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -96,6 +96,6 @@ Tirez parti de ces connaissances et continuez à progresser sur votre parcours d
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction sans interface utilisateur graphique en consultant le document [Traduire le contenu](translate-content.md), voici quelques autres ressources facultatives qui approfondissent certains concepts mentionnés dans ce document, mais qui ne sont pas nécessaires pour continuer sur le parcours sans interface.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en consultant le document [Traduire du contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, même s’ils ne sont pas nécessaires pour poursuivre le parcours en mode découplé.
 
 * [Identification du contenu à traduire](/help/sites-administering/tc-rules.md) – Découvrez comment les règles de traduction identifient le contenu à traduire.

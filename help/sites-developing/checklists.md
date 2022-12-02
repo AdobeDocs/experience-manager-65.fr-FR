@@ -13,7 +13,7 @@ exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
@@ -23,17 +23,17 @@ La liste de contrôle suivante présente certains des problèmes de test majeurs
 
 | Vérification | Réponse | Action | Propriétaire | Échéance |
 |---|---|---|---|---|
-| Un mécanisme de reporting clair et régulier a-t-il été mis en place ? |  |  |  |  |
-| Les joueurs clés (de l’équipe de test) sont-ils impliqués dans les réunions de statut ? |  |  |  |  |
-| Les responsabilités de test sont-elles clairement définies (en particulier pour le client) ? |  |  |  |  |
-| Le client dispose-t-il de l’expérience nécessaire pour remplir ses engagements de test ? |  |  |  |  |
-| Tous les outils (test et suivi) ont-ils été sélectionnés ? |  |  |  |  |
-| Les outils ci-dessus ont-ils été installés et les utilisateurs (principalement l’équipe de projet) formés selon les besoins ? |  |  |  |  |
-| Un plan de test clair et complet a-t-il été élaboré ? |  |  |  |  |
-| Le plan de test a-t-il été examiné par les parties concernées ? |  |  |  |  |
-| Les tests d&#39;acceptation ont-ils été clairement définis ? |  |  |  |  |
-| Les tests d&#39;acceptation ont-ils été officiellement acceptés par toutes les parties ? |  |  |  |  |
+| Un mécanisme de reporting clair et régulier a-t-il été mis en place ? |  |  |  |  |
+| Les acteurs clés (de l’équipe de test) sont-ils impliqués dans les réunions de bilan ? |  |  |  |  |
+| Les responsabilités de test sont-elles clairement définies (en particulier pour le client) ? |  |  |  |  |
+| Le client dispose-t-il de l’expérience nécessaire pour remplir ses engagements de test ? |  |  |  |  |
+| Tous les outils (test et suivi) ont-ils été sélectionnés ? |  |  |  |  |
+| Les outils ci-dessus ont-ils été installés et les utilisateurs (principalement l’équipe de projet) formés selon les besoins ? |  |  |  |  |
+| Un plan de test clair et complet a-t-il été élaboré ? |  |  |  |  |
+| Le plan de test a-t-il été examiné par les parties concernées ? |  |  |  |  |
+| Les tests d’acceptation ont-ils été clairement définis ? |  |  |  |  |
+| Les tests d’acceptation ont-ils été officiellement acceptés par toutes les parties ? |  |  |  |  |
 
 >[!NOTE]
 >
->Vous pouvez également vous reporter à [Gestion des projets - Liste de vérification des bonnes pratiques](/help/managing/best-practices.md) pour prendre connaissance d’autres listes de contrôle relatives à l’ensemble du projet.
+>Vous pouvez également vous reporter à la section [Gestion des projets - Liste de vérification des bonnes pratiques](/help/managing/best-practices.md) pour prendre connaissance d’autres listes de contrôle relatives à l’ensemble du projet.

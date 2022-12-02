@@ -1,5 +1,5 @@
 ---
-title: Identity Management
+title: Identity Management
 seo-title: Identity Management
 description: Découvrez la gestion de l’identité dans AEM.
 seo-description: Learn about identity management in AEM.
@@ -14,30 +14,30 @@ exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1222'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Identity Management{#identity-management}
+# Identity Management{#identity-management}
 
-Les visiteurs individuels de votre site web ne peuvent être identifiés que lorsque vous leur donnez la possibilité de se connecter. Vous pouvez leur permettre de se connecter pour différentes raisons :
+Les visiteurs individuels de votre site web ne peuvent être identifiés que lorsque vous leur donnez la possibilité de se connecter. Vous pouvez leur permettre de se connecter pour différentes raisons :
 
-* [AEM Communities](/help/communities/overview.md) Les visiteurs du site doivent se connecter pour publier du contenu à l’intention de la communauté.
+* Les visiteurs du site [AEM Communities](/help/communities/overview.md) doivent se connecter pour publier du contenu à l’intention de la communauté.
 * [Groupes d’utilisateurs fermés](/help/sites-administering/cug.md)
 
-   Vous devrez peut-être limiter l’accès à votre site web (ou à certaines de ses sections) à des visiteurs spécifiques.
+   Vous devrez peut-être limiter l’accès à votre site web (ou à des sections de votre site web) à des visiteurs spécifiques.
 
-* [Personnalisation](/help/sites-administering/personalization.md) Permet aux visiteurs de configurer certains aspects de leur accès à votre site web.
+* [Personnalisation](/help/sites-administering/personalization.md) Permet aux visiteurs de configurer certains aspects de la façon dont ils accèdent à votre site web.
 
 La fonctionnalité de connexion (et de déconnexion) est mise à disposition par un [compte avec un **profil**](#profiles-and-user-accounts) contenant des informations supplémentaires sur le visiteur (utilisateur) enregistré. Les processus réels pour l’enregistrement et l’autorisation peuvent différer :
 
-* Auto-inscription sur le site web
+* Auto-enregistrement sur le site web
 
-   A [Site de la communauté](/help/communities/sites-console.md) peut être configuré pour permettre aux visiteurs de s’inscrire ou de se connecter avec leurs comptes Facebook ou Twitter.
+   Un [site communautaire](/help/communities/sites-console.md) peut être configuré de manière à permettre aux visiteurs de s’auto-enregistrer ou de se connecter avec leur compte Facebook ou Twitter.
 
 * Demande d’enregistrement sur le site web
 
-   Dans le cas d’un groupe d’utilisateurs fermé, vous pouvez autoriser les visiteurs à demander l’enregistrement, mais appliquer l’autorisation au moyen d’un workflow.
+   Pour un groupe d’utilisateurs fermé, vous pouvez permettre aux visiteurs de demander à être enregistrés, mais imposer une autorisation au moyen d’un workflow.
 
 * Enregistrement de chaque compte dans l’environnement de création
 
@@ -58,7 +58,7 @@ La fonctionnalité supplémentaire peut être configurée ou développée :
 
 Un [formulaire](/help/sites-authoring/default-components.md#form-component) peut être utilisé pour collecter des informations d’enregistrement, puis générer le nouveau compte et le nouveau profil.
 
-Par exemple, les utilisateurs peuvent demander un nouveau profil à l’aide de la page Geometrixx.
+Par exemple, les utilisateurs peuvent demander un nouveau profil à l’aide de la page Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![registerform](assets/registerform.png)
@@ -69,7 +69,7 @@ Lors de l’envoi de la demande, la page de profil s’affiche lorsque l’utili
 
 Le nouveau compte est également visible dans la [console Utilisateurs](/help/sites-administering/security.md).
 
-## La connexion {#login}
+## Connexion {#login}
 
 Le composant Connexion peut être utilisé pour collecter les informations de connexion, puis activer le processus de connexion.
 
@@ -79,7 +79,7 @@ Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’ai
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![Connexion](assets/login.png)
+![connexion](assets/login.png)
 
 ## Déconnexion {#logging-out}
 
@@ -87,18 +87,18 @@ Tout comme il y a un mécanisme de connexion, un mécanisme de déconnexion est 
 
 ## Affichage et mise à jour d’un profil {#viewing-and-updating-a-profile}
 
-En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré des informations sur son profil. Il doit pouvoir les afficher et/ou les mettre à jour ultérieurement. Cela peut se faire sous une forme similaire; par exemple, en Geometrixx :
+En fonction du formulaire d’enregistrement, le visiteur peut avoir enregistré des informations sur son profil. Il doit pouvoir les afficher et/ou les mettre à jour ultérieurement. Cette opération peut être effectuée avec un formulaire similaire. Par exemple, dans Geometrixx :
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec la fonction `admin` compte :
+Pour afficher les détails de votre profil, cliquez sur **Mon profil** dans le coin supérieur droit d’une page ; par exemple, avec le compte `admin` :
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/sites-administering/client-context.md) (dans l’environnement de création et avec des autorisations suffisantes) :
 
-1. Ouvrez une page ; par exemple, la page Geometrixx :
+1. Ouvrez une page. Par exemple, la page Geometrixx :
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -120,15 +120,15 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 
 Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pour ajouter un champ Couleur préférée au profil Geometrixx :
 
-1. Dans la console Sites web, sélectionnez Geometrixx Outdoors Site > Anglais > Utilisateur > Mon profil.
+1. Dans la console Sites web, accédez à Site Geometrixx Outdoors > Français > Utilisateur > Mon profil.
 1. Double-cliquez sur la page **Mon profil** pour l’ouvrir afin de la modifier.
 1. Sur l’onglet **Composants** de Sidekick, développez la section **Formulaire**.
 1. Faites glisser un composant **Liste déroulante** du Sidekick vers le formulaire, juste en dessous du champ **À propos de moi**.
-1. Double-cliquez sur le composant **Liste déroulante** pour afficher la boîte de dialogue pour la configuration et saisissez :
+1. Double-cliquez sur le composant **Liste déroulante** pour afficher la boîte de dialogue pour la configuration et saisissez les éléments suivants :
 
    * **Nom de l’élément** - `favoriteColor`
    * **Titre** - `Favorite Color`
-   * **Éléments** : ajoutez plusieurs couleurs sous forme d’éléments
+   * **Éléments** - Ajoutez plusieurs couleurs sous forme d’éléments.
 
    Cliquez sur **OK** pour enregistrer.
 
@@ -136,7 +136,7 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
    La prochaine fois que vous affichez un profil, vous pouvez choisir une couleur préférée :
 
-   ![aparkerfavcolor](assets/aparkerfavcolour.png)
+   ![aparkerfavcolour](assets/aparkerfavcolour.png)
 
    Le champ est enregistré dans la section **profil** du compte utilisateur approprié :
 
@@ -144,7 +144,7 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
 ## États du profil {#profile-states}
 
-Il existe plusieurs cas d’utilisation qui nécessitent de savoir si un utilisateur (ou plutôt son profil) se trouve dans une *état spécifique* ou pas.
+Différents cas d’utilisation nécessitent de savoir si un utilisateur (ou plutôt son profil) est dans un *état spécifique* ou non.
 
 Cela implique de définir, dans le profil utilisateur, une propriété appropriée qui :
 
@@ -156,7 +156,7 @@ Cette opération s’effectue avec :
 
 * [Fournisseurs d’état](#state-providers)
 
-   Pour gérer les deux états d’une propriété spécifique et les transitions entre les deux.
+   Permet de gérer les deux états d’une propriété spécifique et les transitions entre les deux états.
 
 * [Workflows](#workflows)
 
@@ -164,12 +164,12 @@ Cette opération s’effectue avec :
 
 Différents états peuvent être définis. Dans Geometrixx, par exemple, il s’agit des états suivants :
 
-* abonnement (ou désabonnement) aux notifications des newsletters ou aux fils de commentaires
-* ajout et suppression d’une connexion à un ami
+* Abonnement (ou désabonnement) aux notifications des newsletters ou aux fils de commentaires
+* Ajout et suppression d’une connexion à un ami
 
 ### Fournisseurs d’état {#state-providers}
 
-Un fournisseur d’état gère l’état actuel de la propriété en question, ainsi que les transitions entre les deux états possibles.
+Un fournisseur d’état gère le statut actuel de la propriété en question, ainsi que les transitions entre les deux états possibles.
 
 Les fournisseurs d’état sont mis en œuvre sous forme de composants et peuvent donc être personnalisés pour votre projet. Dans Geometrixx, ces états sont les suivants :
 
@@ -184,9 +184,9 @@ Un workflow est nécessaire à la mise en œuvre des actions associées aux éta
 
 ## Profils et comptes utilisateur {#profiles-and-user-accounts}
 
-Les profils sont stockés dans le référentiel de contenu dans le cadre du[compte utilisateur](/help/sites-administering/user-group-ac-admin.md).
+Les profils sont stockés dans le référentiel de contenu, au sein du [compte utilisateur](/help/sites-administering/user-group-ac-admin.md).
 
-Le profil se trouve sous `/home/users/geometrixx`:
+Le profil se trouve sous `/home/users/geometrixx` :
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
@@ -194,7 +194,7 @@ Dans une configuration standard (création ou publication), chacun possède un a
 
 Ces droits d’accès sont définis par la liste de contrôle d’accès générique suivante :
 
-/home everyone autoriser jcr:read rep:glob = &#42;/profile&#42;
+/home everyone allow jcr:read rep:glob = &#42;/profile&#42;
 
 Elle autorise :
 
@@ -203,7 +203,7 @@ Elle autorise :
 
 Si cet accès n’est pas approprié pour votre installation, vous pouvez modifier ces paramètres par défaut.
 
-Pour ce faire, utilisez la méthode **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab :
+À cet effet, utilisez l’onglet **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** :
 
 ![aclmanager](assets/aclmanager.png)
 
@@ -234,7 +234,7 @@ Ce composant permet à l’utilisateur de saisir un nom détaillé.
 
 ![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
 
-### Sexe du profil {#profile-gender}
+### Genre du profil {#profile-gender}
 
 Ce composant permet à l’utilisateur d’indiquer son sexe.
 

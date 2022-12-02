@@ -14,7 +14,7 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1755'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -43,26 +43,26 @@ Plusieurs onglets et icônes sont disponibles, notamment :
 * Workflow
 * Modes
 * Génération de modèles automatique
-* Contexte client
-* Sites web
+* ClientContext
+* Sites Web
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
 Donne accès à diverses fonctionnalités, par exemple :
 
-* [la sélection de composants](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
-* [l’affichage de références](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
-* [l’accès au journal d’audit](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
-* [le changement de mode](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
-* la [création](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), la [restauration](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) et la [comparaison](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) des versions
+* [la sélection de composants ;](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
+* [l’affichage des références ;](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
+* [l’accès au journal d’audit ;](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
+* [le changement de mode ;](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
+* la [création](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), la [restauration](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) et la [comparaison](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) des versions ;
 
-* la [publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page) et l’[annulation de la publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) d’une page
+* la [publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page) et l’[annulation de la publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) d’une page ;
 
-* [la modification des propriétés de page](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
+* [la modification des propriétés de page ;](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [scaffolding](/help/sites-authoring/scaffolding.md)
+* [la génération de modèles automatique ;](/help/sites-authoring/scaffolding.md)
 
-* [le contexte client](/help/sites-administering/client-context.md)
+* [le contexte client.](/help/sites-administering/client-context.md)
 
 ## Insertion d’un composant {#inserting-a-component}
 
@@ -91,14 +91,14 @@ Pour insérer un nouveau composant :
 
 Vous pouvez également ajouter un nouveau composant sur la page en faisant glisser un élément à partir de l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
 
-Ceci est valide pour les types de ressources suivants (certains dépendent du système de pages/paragraphes) :
+Cette procédure est valide pour les types de ressources suivants (certains dépendent du système de pages/paragraphes) :
 
 | Type de ressource | Type de composant résultant |
 |---|---|
 | Image | Image |
 | Document | Télécharger |
 | Produit | Produit |
-| Vidéo  | Modèle  |
+| Vidéo | Modèle  |
 
 >[!NOTE]
 >
@@ -130,14 +130,14 @@ Pour déplacer un paragraphe :
 
 >[!NOTE]
 >
->Vous pouvez également utiliser la technique du [couper/coller](#cut-copy-paste-a-component) pour déplacer un composant.
+>Vous pouvez également utiliser un [couper/coller](#cut-copy-paste-a-component) pour déplacer un composant.
 
 1. Sélectionnez le paragraphe à déplacer :
 
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
 1. Faites glisser le paragraphe vers son nouvel emplacement. AEM affiche une coche verte pour indiquer les destinations possibles. Déposez le paragraphe à l’emplacement souhaité.
-1. Votre paragraphe est déplacé:
+1. Votre paragraphe est déplacé :
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
@@ -160,7 +160,7 @@ Pour supprimer un paragraphe :
 
 ## Couper/Copier/Coller un composant {#cut-copy-paste-a-component}
 
-Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez copier, couper et/ou coller un composant à l’aide du menu contextuel.
+Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez copier, couper et coller un composant à l’aide du menu contextuel.
 
 >[!NOTE]
 >
@@ -174,12 +174,12 @@ Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez
 
 ## Composants hérités {#inherited-components}
 
-Les composants hérités peuvent être le produit de divers scénarios, notamment :
+Les composants hérités peuvent être le produit de divers scénarios :
 
 * [Gestion de plusieurs sites](/help/sites-administering/msm.md) ; également associé au mode [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une live copy)
-* Des composants spécifiques ; par exemple le système de paragraphes hérité dans Geometrixx.
+* Des composants spécifiques, par exemple le système de paragraphes hérité dans Geometrixx
 
 Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, cette option est disponible depuis :
 
@@ -227,7 +227,7 @@ Deux icônes disponibles dans la bordure inférieure du sidekick sont importante
 
 Pour les modifications à plus grande échelle d’une même expression, utilisez l’option **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** pour rechercher et remplacer plusieurs instances d’une chaîne dans une section du site web.
 
-## Verrouillage d’une page    {#locking-a-page}
+## Verrouillage d’une page {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Ceci s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
@@ -243,7 +243,7 @@ Pour verrouiller une page :
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Un message indique aux autres utilisateurs que la page est verrouillée. De plus, dans le volet de droite de la console **Sites web**, la Gestion de contenu web AEM indique que la page est verrouillée et quel utilisateur l’a verrouillée.
+   Un message indique aux autres utilisateurs que la page est verrouillée. De plus, dans le volet de droite de la console **Sites web**, la gestion de contenu Web AEM indique que la page est verrouillée et quel utilisateur l’a verrouillée.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -266,7 +266,7 @@ Lorsque vous annulez ou rétablissez une opération de suppression, d’ajout ou
 
 >[!NOTE]
 >
->Voir [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
+>Consultez [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
 
 ## Annulation et rétablissement des modifications de page : la théorie {#undoing-and-redoing-page-edits-the-theory}
 
@@ -295,7 +295,7 @@ Vous pouvez utiliser les commandes d’annulation et de rétablissement pour les
 * Ajout, modification, suppression et déplacement de paragraphes
 * Modification statique du contenu de paragraphe
 * Copie, découpe et collage d’éléments sur une page
-* Copie, découpe et collage d’éléments sur plusieurs pages
+* Copie, découpe et collage d’éléments entre plusieurs pages
 * Ajout, suppression et modification de fichiers et d’images
 * Ajout, suppression et modification d’annotations et d’esquisses
 * Modifications d’un modèle issu de la génération de modèles automatique

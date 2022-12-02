@@ -13,7 +13,7 @@ exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Si, en tant qu’administrateur, vous devez gérer, créer, trier et supprimer d
 Voir également [Publication de paramètres de visionneuse prédéfinis](managing-viewer-presets.md#publishing-viewer-presets).
 
 Il n’est pas nécessaire de publier les paramètres prédéfinis de la visionneuse en fonction du mode de publication que vous utilisez.
-Pour tout problème lié aux paramètres prédéfinis de visionneuse, voir [Résolution des problèmes liés à Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+Pour tout problème lié aux paramètres prédéfinis de visionneuse, consultez la section [Dépannage de Dynamic Media en mode Scene7](troubleshoot-dms7.md#viewers).
 
 ## Application d’un paramètre prédéfini de visionneuse Dynamic Media à une ressource {#applying-a-viewer-preset-to-an-asset}
 
@@ -41,4 +41,4 @@ Pour tout problème lié aux paramètres prédéfinis de visionneuse, voir [Rés
 
 ## Obtention des URL de paramètre prédéfini de visionneuse {#obtaining-viewer-preset-urls}
 
-Pour obtenir les URL des paramètres de visionneuse prédéfinis, reportez-vous à la section [Liaison d’URL à une application web](linking-urls-to-yourwebapplication.md).
+Pour obtenir les URL des paramètres prédéfinis de visionneuse, consultez [Lier des URL à votre application web](linking-urls-to-yourwebapplication.md).

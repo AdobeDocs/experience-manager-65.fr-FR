@@ -1,5 +1,5 @@
 ---
-title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
+title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 seo-title: Implementing a Custom Predicate Evaluator for the Query Builder
 description: Query Builder offre un moyen simple pour effectuer des requêtes sur le référentiel de contenu.
 seo-description: The Query Builder offers an easy way of querying the content repository
@@ -14,11 +14,11 @@ exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '774'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 Cette section décrit comment étendre [Query Builder](/help/sites-developing/querybuilder-api.md) en mettant en œuvre un évaluateur de prédicat personnalisé.
 
@@ -116,7 +116,7 @@ Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet
 
 pom.xml
 
-L’extrait de code suivant montre les différences, dans [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format)
+Le fragment suivant présente les différences au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
 
 ```
 @@ -120,6 +120,12 @@
@@ -141,14 +141,14 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
 
 >[!NOTE]
 >
->La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à mettre en œuvre la méthode `includes` qui sélectionne les données sur la base de la ligne. Pour plus d’informations, voir la [documentation Java](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+>La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à mettre en œuvre la méthode `includes` qui sélectionne les données sur la base de la ligne. Pour plus d’informations, voir la [documentation Java](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
 
 1. Créez une classe Java qui étend `com.day.cq.search.eval.AbstractPredicateEvaluator`.
-1. Annotez votre classe avec un `@Component` comme le suivant :
+1. Annotez votre classe avec un `@Component` tel que suit :
 
    src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
-   L’extrait de code suivant montre les différences, dans [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format)
+   Le fragment suivant présente les différences au [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
 
 ```
 @@ -19,8 +19,11 @@

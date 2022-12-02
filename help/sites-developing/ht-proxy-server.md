@@ -13,7 +13,7 @@ exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Dans votre installation AEM, le serveur proxy figure à cet emplacement :
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
-Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions client-serveur, quel que soit le protocole de communication sous-jacent. Vous pouvez, par exemple, surveiller les protocoles suivants :
+Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions client/serveur, quel que soit le protocole de communication sous-jacent. Vous pouvez, par exemple, surveiller les protocoles suivants :
 
 * HTTP pour les pages web
 * HTTPS pour les pages web sécurisées
@@ -60,7 +60,7 @@ Il s’agit du port de votre ordinateur local auquel vous souhaitez vous connect
 
 N’écrit pas la sortie dans la fenêtre de la console. Utilisez cette option si vous ne souhaitez pas ralentir la connexion ou si vous voulez consigner la sortie dans un journal (voir l’option -logfile).
 
-`-b`(mode binaire)
+`-b` (mode binaire)
 
 Si vous recherchez des combinaisons de bits spécifiques dans le trafic, activez le mode binaire. La sortie contient alors la sortie sous forme hexadécimale et de caractères.
 
@@ -68,17 +68,17 @@ Si vous recherchez des combinaisons de bits spécifiques dans le trafic, activez
 
 Ajoute un horodatage à chaque sortie du journal. L’horodatage est en secondes. Il n’est donc peut-être pas adapté à la recherche de demandes uniques. Utilisez cette option pour rechercher des événements qui se sont produits à une heure spécifique si vous utilisez le serveur proxy pendant une longue période.
 
-`-logfile <filename>`(écrire dans le fichier journal)
+`-logfile <filename>` (pour écrire dans le fichier journal)
 
 Écrit la communication client-serveur dans un fichier journal. Ce paramètre fonctionne également en mode silencieux.
 
-**`-i <numIndentions>`**(ajouter une mise en retrait)
+**`-i <numIndentions>`** (pour ajouter une mise en retrait)
 
-Chaque connexion active est mise en retrait pour une plus grande lisibilité. La valeur par défaut est de 16 niveaux. Cette fonctionnalité a été introduite avec `proxy.jar version 1.16`.
+Chaque connexion active est mise en retrait pour une plus grande lisibilité. La valeur par défaut est de 16 niveaux. Cette fonctionnalité a été ajoutée à `proxy.jar version 1.16`.
 
 ### Format du journal {#log-format}
 
-Les entrées de journal générées par proxy-2.1.jar ont toutes le format suivant :
+Toutes les entrées du journal générées par proxy-2.1.jar ont le format suivant :
 
 `[timestamp (optional)] [Client|Server]-[ConnectionNumber]-[BytePosition] ->[Character Stream]`
 
@@ -98,7 +98,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Elles indiquent le nombre de bits passés entre le client (`C`) et le serveur (`S`) au cours de la 6e connexion et à la vitesse moyenne.
+Elles indiquent le nombre de bits passés entre le client (`C`) et le serveur (`S`) au cours de la 6e connexion et à la vitesse moyenne.
 
 **Exemple de sortie de journal**
 
@@ -114,7 +114,7 @@ avec un fichier image situé dans
 
 `/content/test.jpg`
 
-Le contenu de `test.html` est :
+Le contenu de `test.html` est le suivant :
 
 ```xml
 <html>
@@ -128,11 +128,11 @@ Le contenu de `test.html` est :
 </html>
 ```
 
-En supposant que l’instance AEM est en cours d’exécution `localhost:4502` nous démarrons le proxy comme suit :
+En supposant que l’instance AEM s’exécute sur `localhost:4502`, le proxy est démarré de la manière suivante :
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-L’instance CQ/CRX est maintenant accessible via le proxy à l’adresse `localhost:4444` et toute communication via ce port est connectée à `test.log`.
+L’instance CQ/CRX est maintenant accessible via le proxy à `localhost:4444`. Toutes les communications via ce port sont consignées dans `test.log`.
 
 La sortie du proxy montre l’interaction entre le navigateur et l’instance AEM.
 
@@ -147,7 +147,7 @@ Nous ouvrons ensuite un navigateur et nous accédons à la page de test :
 
 `http://localhost:4444/content/test.html`
 
-et nous voyons le navigateur créer une `GET` requête pour la page :
+Nous pouvons voir que le navigateur effectue une demande `GET` pour la page :
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]

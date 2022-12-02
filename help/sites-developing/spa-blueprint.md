@@ -13,17 +13,17 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
 workflow-type: tm+mt
 source-wordcount: '2079'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Plan directeur d’applications sur une seule page (SPA){#spa-blueprint}
 
-Pour permettre à l’auteur d’utiliser l’éditeur SPA d’AEM afin de modifier le contenu d’un , des exigences doivent être respectées, qui sont décrites dans ce document.
+Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modifier le contenu d’une application d’une seule page (SPA), cette dernière doit satisfaire certaines exigences, qui sont décrites dans ce document.
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -47,7 +47,7 @@ La bibliothèque `PageModelManager` est fournie sous la forme d’un package NPM
 
 Au nom de l’application sur une seule page, il extrait la récupération et la gestion de la structure JSON qui représente la structure de contenu proprement dite. Il assure également la synchronisation avec l’application sur une seule page, en lui faisant savoir à quel moment un nouveau rendu de ses composants doit être effectué.
 
-Voir le package NPM [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+Voir le module NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Lors de l’initialisation de `PageModelManager`, la bibliothèque commence par charger le modèle racine fourni de l’application (par l’intermédiaire d’un paramètre, d’une méta-propriété ou de l’URL active). Si la bibliothèque identifie que le modèle de la page active ne fait pas partie du modèle racine, elle le récupère et l’inclut comme modèle d’une page enfant.
 
@@ -154,7 +154,7 @@ Le conteneur obtient dynamiquement les composants enfants à partir du magasin d
 
 ### Page {#page}
 
-Le composant `Page` étend le composant `Container`. Un conteneur est un composant conçu pour contenir des composants enfants et effectuer le rendu des composants enfants, y compris les pages enfants. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items` et `:children` de son modèle. Le `Page` obtient dynamiquement les composants enfants à partir du magasin de la propriété [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) bibliothèque . `Page` assure l’instanciation des composants enfants.
+Le composant `Page` étend le composant `Container`. Un conteneur est un composant conçu pour contenir des composants enfants et effectuer le rendu des composants enfants, y compris les pages enfants. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items` et `:children` de son modèle. Le composant `Page` récupère dynamiquement les composants enfants à partir du magasin de la bibliothèque [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping). `Page` assure l’instanciation des composants enfants.
 
 ### Grille réactive {#responsive-grid}
 
@@ -252,7 +252,7 @@ Le fragment suivant illustre la représentation HTML type d’une structure de c
 * L’élément de grille réactive contient les noms de classe, précédés de `aem-Grid--`
 * L’élément de colonne réactive contient les noms de classe, précédés de `aem-GridColumn--`
 * Une grille réactive, qui est également la colonne d’une grille parent, est enveloppée de telle sorte que les deux préfixes précédents n’apparaissent pas sur le même élément
-* Les éléments correspondant à des ressources modifiables possèdent une propriété `data-cq-data-path`. Voir [Contrat avec l’éditeur de page](#contract-wtih-the-page-editor) de ce document.
+* Les éléments correspondant à des ressources modifiables possèdent une propriété `data-cq-data-path`. Consultez la section [Contrat avec l’éditeur de page](#contract-wtih-the-page-editor) de ce document.
 
 ```
 <div data-cq-data-path="/content/page">
@@ -274,7 +274,7 @@ L’application assure le routage. Le développeur front-end doit commencer par 
 
 La bibliothèque [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) sous-jacente et son module ` [ModelRouter](/help/sites-developing/spa-routing.md)` (activé par défaut) assurent la prérécupération et l’accès au modèle associé à un chemin de ressource donné.
 
-Les deux entités se rapportent à la notion de routage, mais au ` [ModelRouter](/help/sites-developing/spa-routing.md)` n’est responsable que d’avoir la variable ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` chargé avec un modèle de données structuré en synchronisation avec l’état actuel de l’application.
+Ces deux entités se rapportent à la notion de routage, mais ` [ModelRouter](/help/sites-developing/spa-routing.md)` assure uniquement le chargement de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` avec un modèle de données structuré en synchronisation avec le statut actuel de l’application.
 
 Consultez l’article [Routage de modèle de SPA](/help/sites-developing/spa-routing.md) pour plus d’informations.
 
@@ -284,7 +284,7 @@ Découvrez le fonctionnement d’une application sur une seule page simple et ex
 
 ## Informations complémentaires {#further-reading}
 
-Pour plus d’informations sur les applications sur une seule page dans AEM, consultez les documents suivants :
+Pour plus d’informations sur les applications d’une seule page dans AEM, consultez les documents suivants :
 
-* [Présentation de la création d’applications sur une seule page](/help/sites-developing/spa-overview.md) pour un aperçu de ces applications dans AEM et le modèle de communication
-* [Prise en main des applications sur une seule page dans AEM](/help/sites-developing/spa-getting-started-react.md) pour obtenir une description d’une application SPA simple et de son fonctionnement
+* [Présentation de la création d’applications d’une seule page](/help/sites-developing/spa-overview.md) pour un aperçu de ces applications dans AEM et le modèle de communication
+* [Prise en main des applications d’une seule page dans AEM](/help/sites-developing/spa-getting-started-react.md) pour obtenir une description d’une application SPA simple et de son fonctionnement

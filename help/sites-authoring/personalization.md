@@ -13,7 +13,7 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '519'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM propose un ensemble d’outils permettant de créer du contenu ciblé et de 
 
 Les activités définissent et organisent vos efforts de marketing. Les activités englobent les audiences ciblées et la période pendant laquelle le ciblage est appliqué.
 
-Par exemple, le catalogue de produits We.Retail comprend des teasers qui mettent l’accent sur les produits saisonniers. L’activité de sports d’été définit les segments de marketing que les teasers ciblent pendant les mois d’été.
+Par exemple, le catalogue de produits We.Retail inclut des teasers qui attirent l’attention sur les produits saisonniers. L’activité de sports d’été définit les segments de marketing que les teasers ciblent pendant les mois d’été.
 
 Les activités identifient également le [moteur de ciblage](/help/sites-authoring/personalization.md#targeting-engine) que vos pages utilisent.
 
@@ -51,7 +51,7 @@ Vous définissez des expériences pour une activité. Vous pouvez utiliser la [c
 
 Une offre constitue du contenu qui s’affiche à un endroit d’une page pour créer une expérience. Utilisez différentes offres pour différentes expériences afin d’optimiser l’efficacité du contenu destiné à vos audiences.
 
-Par exemple, la page Femmes de l’exemple de site web We.Retail peut utiliser les offres comme image de teaser qui apparaît en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
+Par exemple, la page pour les femmes de l’exemple We.Retail peut utiliser des offres en tant qu’image de teaser apparaissant en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
 
 Utilisez la [console Offres](/help/sites-authoring/offerlib.md) pour créer des offres que vous pouvez utiliser dans plusieurs expériences. Créez des offres à utiliser une seule fois ou ajoutez des offres issues d’une bibliothèque d’offres lors de la [création de contenu ciblé](/help/sites-authoring/content-targeting-touch.md).
 
@@ -70,4 +70,4 @@ Avec le moteur de ciblage Adobe Target, les informations recueillies suite aux 
 * Avec ce moteur de ciblage, vous utilisez les segments que vous importez à partir d’Adobe Target pour définir les audiences de vos expériences.
 * Les activités qui utilisent le moteur Adobe Target sont [synchronisées sur Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-Vous pouvez utiliser ce moteur lorsque vous avez [intégré à Adobe Target](/help/sites-administering/opt-in.md).
+Vous pouvez utiliser ce moteur lorsque vous avez [intégré Adobe Target](/help/sites-administering/opt-in.md).

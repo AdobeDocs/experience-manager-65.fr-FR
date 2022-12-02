@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '7036'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
 # Glossaire{#glossary}
 
-Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables figurant dans la section [Liste de contrôle du projet](/help/managing/best-practices-checklist.md).
+Ce glossaire répertorie (par ordre alphabétique) les détails de tous les documents livrables de la [liste de contrôle de projet](/help/managing/best-practices-checklist.md).
 
 ## Acceptation des parties prenantes {#acceptance-from-business-stakeholders}
 
@@ -32,7 +32,7 @@ Les tests d’acceptation sont réalisés lorsqu’une application est prête po
 
 Des tests d’acceptation sont utilisés pour confirmer que :
 
-* le projet remplit les exigences du client ;
+* le projet répond aux exigences du client ;
 * la solution est adaptée à son objectif ;
 * les utilisateurs acceptent la solution et peuvent envisager de l’utiliser ;
 * le client accepte le projet.
@@ -73,7 +73,7 @@ Assurez-vous que les personnages appropriés ont réussi les [examens de certifi
 
 ### Formation technique AEM {#aem-technical-training}
 
-offrir une formation technique à la personne appropriée ; par exemple, les développeurs, les architectes, les ingénieurs et les professionnels.
+Offrez une formation technique pour les persona appropriés, par exemple : les développeurs, les architectes, les ingénieurs et les utilisateurs en entreprise.
 
 ### Accord sur les indicateurs de performances clés, définis comme les objectifs du projet {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -93,7 +93,7 @@ La feuille de route du client se compose de jalons de haut niveau et d’objecti
 
 ### Définition de l’architecture des applications {#application-architecture-definition}
 
-Le [architecture de l’application](/help/managing/best-practices.md#development-preparation) doit définir clairement le comportement des applications proposées.
+L’[architecture des applications](/help/managing/best-practices.md#development-preparation) doit définir clairement le comportement des applications proposées.
 
 Notamment :
 
@@ -108,9 +108,10 @@ Outre les tâches de maintenance standard d’Adobe Experience Manager (AEM), 
 
 Assurez-vous que votre équipe se compose d’un personnel ayant reçu une formation appropriée. Pour les équipes de projet, nous recommandons chacun des éléments suivants :
 
-* au moins un développeur de piste certifié AEM
-* au moins un architecte certifié AEM
-* au moins 75 % de vos développeurs certifiés AEM ; cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors, ainsi que de garantir le partage et la transparence des connaissances.
+* au moins un développeur en chef certifié AEM ;
+* au moins un architecte certifié AEM ;
+* au moins 75 % de vos développeurs certifiés AEM ;
+Cela permet aux développeurs certifiés de jouer le rôle de mentors auprès des développeurs juniors, ainsi que de garantir la transparence et le partage des connaissances.
 
 ### Schéma d’architecture {#architecture-diagram}
 
@@ -128,7 +129,7 @@ Il fournit une vue de haut niveau du système et de l’architecture de la solut
 
 Le conseil d’examen de l’architecture est un corps trans-organisationnel qui :
 
-* supervise la mise en oeuvre d’une stratégie cohérente
+* supervise l’implémentation d’une stratégie cohérente ;
 * garantit la conformité des systèmes.
 
 Le conseil d’examen doit représenter toutes les parties prenantes principales impliquées dans l’architecture. Elles comprennent généralement un groupe de dirigeants chargés de la révision et de la maintenance de l’architecture globale.
@@ -177,7 +178,7 @@ Toute l’équipe de projet et l’ensemble des parties prenantes doivent confir
 
 ### Concept de sauvegarde et de restauration {#backup-and-restore-concept}
 
-Le concept de sauvegarde et de restauration décrit les fonctionnalités techniques qui seront mises en œuvre dans la solution. Elle est requise par la stratégie de sauvegarde et de restauration de l’entreprise.
+Le concept de sauvegarde et de restauration décrit les fonctionnalités techniques qui seront mises en œuvre dans la solution. Il est nécessaire pour la stratégie de sauvegarde et de restauration de l’entreprise.
 
 ### Sauvegarde et restauration testées {#backup-and-restore-tested}
 
@@ -354,7 +355,7 @@ Rapports du client pour le responsable de la qualité au cours de la période de
 
 Tous les correctifs et/ou personnalisations appliqués doivent être documentés, car ils peuvent affecter les futures mises à niveau :
 
-* AEM peut être hautement personnalisé selon vos besoins. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toute modification majeure apportée à l’interface utilisateur d’AEM.
+* AEM peut être hautement personnalisé selon vos besoins. Toutes les personnalisations qui peuvent affecter la mise à niveau doivent être entièrement documentées. Par exemple, toutes les modifications majeures de l’interface utilisateur (IU) AEM.
 * Toutes les mises à jour requises pour la solution actuelle doivent être entièrement documentées. Celles-ci peuvent inclure :
 
    * des Cumulative Fix Packs (CFP) ;
@@ -462,13 +463,13 @@ Un schéma (ou un ensemble de schémas) des systèmes et des dépendances exista
 
 ### Définitions et critères de réussite attendus {#expected-success-definitions-and-criteria}
 
-Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de l’ensemble des attentes disponibles au début d’un projet, car celles-ci devraient influencer toutes les décisions prises tout au long de la mise en oeuvre.
+Le sponsor du projet collecte les attentes de l’entreprise associées à la réussite du projet. Il est important de disposer de l’ensemble complet des attentes au début d’un projet, car elles doivent influer sur toutes les décisions prises tout au long de la mise en œuvre.
 
 Les exceptions peuvent inclure :
 
 * les IPC spécifiques, tels que l’augmentation du pourcentage de pages proposées ;
 * un temps de publication du contenu réduit ;
-* objectifs de niveau supérieur, tels qu’une interface conviviale
+* des objectifs de niveau supérieur, tels qu’une interface conviviale.
 
 ### Exigences de conception de l’expérience {#experience-designs-requirements}
 
@@ -532,7 +533,7 @@ Estimations initiales des éléments suivants :
 
 ### Le matériel sera mis à disposition pour remplir les exigences {#hardware-will-be-available-to-fulfill-requirements}
 
-Confirmation que tous les environnements auront le matériel minimum requis en place.
+Confirmation que tous les environnements bénéficieront du matériel minimum requis.
 
 ### Exigences de haut niveau {#high-level-requirements}
 
@@ -804,7 +805,7 @@ Assurez-vous que les ingénieurs système et le personnel de production connaiss
 
 Définissez :
 
-* lorsque les rapports de surveillance doivent être générés ;
+* quand les rapports de surveillance doivent être générés ;
 * à qui ils doivent être livrés.
 
 ### Documentation des tâches opérationnelles {#operational-tasks-documentation}
@@ -848,7 +849,7 @@ Document conceptuel sur la manière de s’assurer que votre mise en œuvre sati
 
 ### Évaluation des performances {#performance-benchmark}
 
-L’évaluation des performances permet de définir les tests de performances et de durabilité, ainsi que la surveillance. Pour ce faire, il évalue les caractéristiques de performance de la solution et du matériel système.
+L’évaluation des performances permet de définir les tests de performances et de durabilité, ainsi que la surveillance. Pour ce faire, elle évalue les caractéristiques de performance de la solution et du matériel du système.
 
 ### IPC de performances {#performance-kpis}
 
@@ -967,7 +968,7 @@ Elles sont utilisées avec le runbook pour effectuer des étapes et des vérific
 
 >[!NOTE]
 >
->Pour consulter un exemple, reportez-vous à la section [Notes de mise à jour AEM](/help/release-notes/release-notes.md).
+>Pour obtenir un exemple, consultez les [Notes de mise à jour d’AEM](/help/release-notes/release-notes.md).
 
 ### Exécution de la version dans l’environnement de production {#release-running-on-production-environment}
 
@@ -1009,7 +1010,7 @@ Elle évalue les risques techniques et métier du projet. L’évaluation est re
 
 Le plan d’atténuation des risques comprend l’évaluation des risques. Ensemble, ils abordent :
 
-* risques identifiés
+* les risques identifiés ;
 * les solutions possibles à ces risques s’ils surviennent dans la mise en œuvre.
 
 ### Attentes en termes de retour sur investissement {#roi-expectations}
@@ -1023,8 +1024,8 @@ Elles ont pour but d’indiquer l’efficacité de la solution en termes économ
 Spécification détaillée des concepts associés aux rôles et aux droits d’accès requis pour la nouvelle application, y compris une description de haut niveau des :
 
 * rôles ;
-* groupes ;
-* utilisateurs ;
+* groups
+* d’utilisateurs ;
 * autorisations ;
 * ainsi que la gestion et l’approvisionnement des utilisateurs.
 
@@ -1064,7 +1065,7 @@ Définissez et documentez les détails de la configuration de sécurité requis 
 Une description de haut niveau de la configuration de sécurité de :
 
 * l’application ;
-* Architecture
+* l’architecture ;
 * l’infrastructure.
 
 ### Problèmes de sécurité répertoriés et évalués {#security-issues-listed-and-assessed}
@@ -1109,7 +1110,7 @@ Instructions d’installation de la solution, ainsi que les tâches opérationne
 
 ### Approbation de la solution et processus d’acceptation {#solution-sign-off-and-acceptance-process}
 
-Le processus d’approbation et d’acceptation décrit les critères qui doivent être remplis avant que la solution ne puisse être publiée dans un environnement de production.
+Le processus d’approbation et d’acceptation décrit les critères qui doivent être remplis avant que la solution ne puisse être publiée dans un environnement d’exploitation.
 
 Il peut également servir de jalon contractuel.
 
@@ -1141,7 +1142,7 @@ Personnel interne qui doit être formé pour créer dans la solution.
 
 Les parties prenantes sont les personnes et/ou les rôles clés qui ont un impact significatif sur le projet. Certaines contribueront au budget du projet.
 
-Les parties prenantes peuvent être internes et/ou externes.
+Les parties prenantes peuvent être internes et externes.
 
 ### Les parties prenantes ont connaissance des définitions et des critères de réussite {#stakeholders-are-aware-of-success-definitions-and-criteria}
 
@@ -1202,7 +1203,7 @@ Description de haut niveau de la façon de rendre l’architecture du système c
 
 Tous les facteurs de risque identifiés dans l’évaluation des risques (ou d’autres révisions) sont identifiés et évalués :
 
-* le niveau de risque impliqué dans chacune d&#39;elles
+* le niveau de risque implicite de chacun ;
 * ainsi que les efforts estimés pour les éventuelles modifications de la mise en œuvre requises pour les résoudre.
 
 ### L’équipe a connaissance des définitions et des critères de réussite {#team-is-aware-of-success-definitions-and-criteria}
@@ -1230,7 +1231,7 @@ Identifiez et vérifiez les risques techniques potentiels. Les risques technique
 * l’infrastructure ;
 * l’âge des technologies ;
 * le nombre d’intégrations ;
-* et dépendances
+* et les dépendances.
 
 ### Spécifications techniques {#technical-specification}
 
@@ -1253,7 +1254,7 @@ Les cas de test spécifient les étapes détaillées nécessaires pour exécuter
 
 ### Contenu du test {#test-content}
 
-Le contenu du test doit être le plus proche possible du contenu de production. Il doit s’agir d’une sélection suffisamment large pour permettre le test de tous les scénarios.
+Le contenu du test doit être le plus proche possible du contenu d’exploitation. Il doit comprendre une sélection suffisamment large afin de permettre de tester tous les scénarios.
 
 ### Environnement de test prêt {#test-environment-ready}
 
@@ -1320,7 +1321,7 @@ Droits d’accès requis octroyés aux rôles correspondants utilisés conjointe
 
 Définit :
 
-* cas d’utilisation pour tester les intégrations
+* les cas d’utilisation pour tester les intégrations ;
 * les fonctionnalités associées à toute application tierce.
 
 ### Définition du seuil {#threshold-definition}

@@ -13,7 +13,7 @@ exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Pour obtenir des informations sur la page, envoyez une requête au servlet PageInfo afin d’obtenir les métadonnées de page au format JSON.
 
-Le servlet PageInfo renvoie des informations sur les ressources du référentiel. Le servlet est lié à l’URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` et utilise la variable `path` pour identifier la ressource. L’exemple d’URL suivant renvoie des informations sur la variable `/content/we-retail/us/en` node:
+Le servlet PageInfo renvoie des informations sur les ressources dans le référentiel. Le servlet est lié à l’URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` et utilise le paramètre `path` pour identifier la ressource. L’exemple d’URL suivant renvoie des informations sur le nœud `/content/we-retail/us/en` :
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -35,7 +35,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >* des applications mobiles natives ;
 >* D’autres canaux et points de contact externes à AEM.
 >
->Consultez le document [Exportateur JSON pour les services de contenu](/help/sites-developing/json-exporter.md).
+>Consultez le document [Exportateur JSON pour Content Services](/help/sites-developing/json-exporter.md).
 
 ## Fournisseurs d’informations sur la page {#page-information-providers}
 
@@ -54,17 +54,17 @@ Les composants de page peuvent être associés à un ou plusieurs services `com.
 
 ## Fournisseurs d’informations de page par défaut {#default-page-information-providers}
 
-Le `/libs/foundation/components/page` est associé aux services PageInfoProvider suivants :
+Le composant `/libs/foundation/components/page` est associé aux services PageInfoProvider suivants :
 
 * **Fournisseur d’état de page par défaut** : informations sur l’état de la page, par exemple si elle est verrouillée, s’il s’agit de la charge utile d’un processus actif ou encore quels sont les processus disponibles pour la page.
 * **Fournisseur d’informations sur la relation en direct** : informations concernant la gestion multisite (MSM, Multi-Site Management) ; par exemple, la page fait-elle partie d’un plan directeur ou s’agit-il d’une Live Copy ?
 * **Servlet de langue du contenu** : langue de la page en cours et informations sur chacune des langues dans lesquelles la page est disponible.
-* **Fournisseur d’état du processus** : informations d’état sur le processus en cours dont la page est une charge utile.
-* **Fournisseur d’informations sur le module de processus** : fournit des informations sur chaque module de processus stocké dans le référentiel et indique si chaque module contient la ressource actuelle.
+* **Fournisseur de statut du workflow** : informations de statut sur le workflow en cours dont la page fait partie du payload.
+* **Fournisseur d’informations sur le module de workflow** : fournit des informations sur chaque module de workflow stocké dans le référentiel et indique si chaque module contient la ressource actuelle.
 * **Fournisseur d’informations sur l’émulateur** : informations sur les émulateurs de terminaux mobiles disponibles pour cette ressource. Si le composant de page n’effectue pas le rendu des terminaux mobiles, aucun émulateur n’est disponible.
 * **Fournisseur d’informations sur les annotations** : informations sur les annotations figurant sur la page.
 
-Par exemple, le servlet PageInfo renvoie la réponse JSON suivante pour la variable `/content/we-retail/us/en` node:
+Par exemple, le servlet PageInfo renvoie la réponse JSON suivante pour le nœud `/content/we-retail/us/en` :
 
 ```
 {
@@ -469,9 +469,9 @@ Par exemple, le servlet PageInfo renvoie la réponse JSON suivante pour la varia
 }
 ```
 
-## Filtrage des informations sur le module de processus {#filtering-workflow-package-information}
+## Filtrage des informations sur le module de workflow {#filtering-workflow-package-information}
 
-Configurez le service Day CQ WCM Workflow Package Info Provider afin qu’il renvoie des informations uniquement sur les modules de processus qui vous intéressent. Par défaut, le service Fournisseur d’informations sur les modules de processus renvoie des informations sur chaque module de processus dans le référentiel. Itérer sur un sous-ensemble de modules de processus utilise moins de ressources du serveur.
+Configurez le service Fournisseur d’informations sur le module de workflow de la gestion de contenu web Day CQ pour qu’il renvoie des informations sur les modules de workflow qui vous intéressent. Par défaut, le service Fournisseur d’informations sur le module de workflow renvoie des informations sur chaque module de workflow du référentiel. L’itération sur un sous-ensemble de modules de workflow utilise moins de ressources du serveur.
 
 >[!NOTE]
 >
@@ -494,7 +494,7 @@ Le service applique le résultat cumulé de tous les filtres. Par exemple, les v
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour des détails complets.
+>Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus d’informations.
 
 Par exemple, pour configurer le service à l’aide de CRXDE Lite :
 
@@ -516,7 +516,7 @@ Pour configurer le service dans la source de votre projet, procédez comme suit�
 
 1. Recherchez ou créez le dossier de configuration de votre application AEM dans la source du projet.
 
-   Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Par exemple, si vous avez utilisé l’archétype multimodule du module externe Content Package Maven pour créer votre projet, le chemin du dossier est `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Dans le dossier de configuration, créez un fichier texte nommé com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Copiez le texte suivant dans le fichier :
 
@@ -528,7 +528,7 @@ Pour configurer le service dans la source de votre projet, procédez comme suit�
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Dans les crochets (`[]`) qui entourent le `workflowpackageinfoprovider.filter` , saisissez une liste de valeurs de filtre séparées par des virgules similaire à l’exemple suivant :
+1. À l’intérieur des crochets (`[]`) qui entourent la propriété `workflowpackageinfoprovider.filter`, entrez une liste de valeurs de filtre séparées par des virgules, semblable à l’exemple suivant :
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -540,9 +540,9 @@ Créez un service Fournisseur d’informations sur la page personnalisée pour a
 
 1. Mettez en œuvre l’interface `com.day.cq.wcm.api.PageInfoProvider`.
 1. Regroupez et déployez la classe sous la forme d’un service OSGi.
-1. Créez un composant de page dans votre application. Utilisation `foundation/components/page` comme valeur de la variable `sling:resourceSuperType` .
+1. Créez un composant de page dans votre application. Utilisez `foundation/components/page` comme valeur de la propriété `sling:resourceSuperType`.
 
-1. Ajoutez un noeud sous le noeud de composant nommé `cq:infoProviders`.
+1. Ajoutez un nœud sous le nœud de composant nommé `cq:infoProviders`.
 1. Sous le nœud `cq:infoProviders`, ajoutez un nœud pour votre service PageInfoProvider. Vous pouvez attribuer au nœud le nom de votre choix.
 1. Ajoutez la propriété suivante à votre nœud PageInfoProvider :
 
@@ -605,7 +605,7 @@ L’exemple suivant, dans CRXDE Lite, affiche le composant de page qui est conf
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
-Le service PageUrlInfoProvider renvoie les données suivantes pour la variable `/content/we-retail/us/en` node:
+Le service PageUrlInfoProvider renvoie les données suivantes pour le nœud `/content/we-retail/us/en` :
 
 ```xml
 "URLs": {

@@ -13,7 +13,7 @@ exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -54,13 +54,13 @@ Les modules d’IU peuvent afficher des données d’une ou de plusieurs boutiqu
 
 ![screen_shot_2018-03-23at093936](assets/screen_shot_2018-03-23at093936.png)
 
-### Contenu contextuel {#popup-content}
+### Contenu de la fenêtre contextuelle {#popup-content}
 
 Certains modules d’IU affichent une fenêtre contextuelle lorsque l’utilisateur clique ou appuie dessus. En règle générale, cette fenêtre contextuelle contient des informations supplémentaires complétant les informations affichées sur la barre d’outils.
 
 ![screen_shot_2018-03-23at094003](assets/screen_shot_2018-03-23at094003.png)
 
-### Formulaires contextuels {#popup-forms}
+### Formulaires dans une fenêtre contextuelle {#popup-forms}
 
 La fenêtre contextuelle d’un module peut contenir des éléments de formulaire qui vous permettent de changer les données contenues dans la boutique ContextHub. Si le contenu de la page est déterminé par les données de la boutique, vous pouvez utiliser le formulaire et observer les modifications apportées au contenu de la page.
 

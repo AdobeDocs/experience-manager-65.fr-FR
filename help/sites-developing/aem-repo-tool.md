@@ -1,7 +1,7 @@
 ---
-title: Outil AEM Repo
+title: Outil AEM Repo
 seo-title: AEM Repo Tool
-description: L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil AEM Repo est similaire à l’outil Jackrabbit FileVault, à la différence qu’il est plus rapide, a des dépendances minimales et est un simple script Bash.
+description: L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil AEM Repo est similaire à l’outil Jackrabbit FileVault, à la différence qu’il est plus rapide, a des dépendances minimales et est un simple script Bash.
 seo-description: The AEM Repo Tool is a simple solution to transfer JCR content between your local filesystem and the AEM server via the command line comparable to FTP. The AEM Repo Tool is similar to the Jackrabbit FileVault tool, but is faster, has minimal dependencies, and is a simple bash script.
 uuid: 6c4a3504-e8e8-46c0-83cb-c18d9791f93e
 contentOwner: User
@@ -13,19 +13,19 @@ exl-id: c46c9f0c-b0d2-4f2f-b95c-90fd3ced32a9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '284'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# Outil AEM Repo{#aem-repo-tool}
+# Outil AEM Repo{#aem-repo-tool}
 
-L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil AEM Repo est similaire au [Outil Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), mais est plus rapide, a des dépendances minimales et est un simple script bash.
+L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP. L’outil AEM Repo est similaire à l’[outil Jackrabbit FileVault](/help/sites-developing/ht-vlttool.md), à la différence qu’il est plus rapide, a des dépendances minimales et est un simple script Bash.
 
 Cet outil simplifie les transferts de fichiers qu’effectuent le développeur et peut également être intégré à IntelliJ et Eclipse pour optimiser l’activité de développement.
 
-## Présentation {#overview}
+##  du commerce électronique {#overview}
 
-Pour un chemin donné à l’intérieur d’un `jcr_root` structure filevault sur le système de fichiers, AEM Repo Tool crée un package avec un seul filtre pour la sous-arborescence entière et le transmet au serveur (similaire au FTP). `put`), la récupère sur le serveur ( `get`) ou compare les différences ( `status` et `diff`).
+Pour un chemin donné dans une structure FileVault `jcr_root` dans le système de fichiers, l’outil AEM Repo crée un module avec un seul filtre pour l’ensemble de la sous-arborescence et le transmet en push au serveur (de façon similaire à la méthode `put` du FTP), l’extrait du serveur (`get`) ou compare les différences (`status` et `diff`).
 
 Cet outil ne prend pas en charge les chemins de filtre multiples ou `filter.xml` de FileVault.
 

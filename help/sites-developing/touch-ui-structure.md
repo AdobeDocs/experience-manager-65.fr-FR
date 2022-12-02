@@ -13,7 +13,7 @@ exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '861'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -160,7 +160,7 @@ Le sélecteur de calques se présente sous la forme d’un menu déroulant dans 
 
 Lorsque vous cliquez sur une instance d’un composant (simple clic ou double-clic lent), sa barre d’outils est affichée. Cette barre d’outils contient les actions (par exemple, copier, coller, ouvrir l’éditeur) qui sont disponibles pour l’instance du composant (Modifiable) sur la page.
 
-En fonction de l’espace disponible, les barres d’outils de composant sont placées dans le coin supérieur, ou inférieur, droit du composant approprié.
+En fonction de l’espace disponible, les barres d’outils de composant sont placées dans le coin supérieur ou inférieur droit du composant approprié.
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -168,4 +168,4 @@ En fonction de l’espace disponible, les barres d’outils de composant sont pl
 
 Pour plus d’informations sur les concepts relatifs à l’IU tactile, reportez-vous à l’article [Concepts de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Pour plus d’informations techniques, voir [Jeu de documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) pour l’éditeur de page tactile.
+Pour plus d’informations techniques, consultez la [documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) relative à l’éditeur de page tactile.

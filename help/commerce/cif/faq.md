@@ -1,11 +1,11 @@
 ---
 title: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 description: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
-exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '963'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 ## 1. Le GraphQL CIF est-il utilisé uniquement pour Commerce ou sera-t-il disponible pour interroger du contenu créé dans AEM JCR ?
 
-Adobe a adopté les API GraphQL Adobe Commerce en tant qu’API commerciale officielle pour toutes les données liées au commerce. Par conséquent, AEM utilise GraphQL pour échanger des données commerciales avec Adobe Commerce et tout moteur de commerce via I/O Runtime. Cette API GraphQL est indépendante de l’API GraphQL AEM pour accéder aux fragments de contenu.
+Adobe a adopté les API GraphQL d’Adobe Commerce en tant qu’API commerciales officielles pour toutes les données liées au commerce. Par conséquent, AEM utilise GraphQL pour échanger des données commerciales avec Adobe Commerce et tout moteur de commerce via I/O Runtime. Cette API GraphQL est indépendante de l’API GraphQL AEM pour accéder aux fragments de contenu.
 
 ## 2. Les ressources de produit (images) peuvent-elles être stockées et référencées à partir d’AEM à l’aide de l’administrateur Adobe Commerce ? Comment les ressources issues de Dynamic Media peuvent-elles être utilisées ?
 
@@ -31,7 +31,7 @@ Les pages de catalogues et de produits sont créées et mises en cache dynamique
 
 ## 5. La mise à jour des données de produit dans votre solution de commerce correspond-elle à un transfert Push en temps réel vers AEM ? Ou s’agit-il d’un traitement par lots ?
 
-Le module complémentaire CIF utilisé avec le AEM permet aux données de transiter de la solution de commerce à AEM, et ce, à la demande. Par conséquent, il ne s’agit pas d’un transfert Push en temps réel ni d’un traitement par lots dans le cas d’une mise à jour dans votre solution de commerce.
+Le module complémentaire CIF utilisé avec AEM permet aux données de transiter de la solution de commerce à AEM, et ce, à la demande. Par conséquent, il ne s’agit pas d’un transfert Push en temps réel ni d’un traitement par lots dans le cas d’une mise à jour dans votre solution de commerce.
 
 ## 6. Quelle taille de catalogue AEM peut-il prendre en charge à l’aide de CIF ?
 
@@ -67,7 +67,7 @@ Nous vous recommandons de gérer les données et le contenu liés au marketing d
 
 ## 14. Comment pouvons-nous garantir la conformité PCI lors de l’utilisation d’AEM pour toute la couche de présentation ?
 
-Nous vous recommandons d’utiliser des méthodes de paiement abstraites. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employés interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI Adobe Commerce, reportez-vous à la section [Conformité PCI](https://business.adobe.com/fr/products/magento/pci-compliance.html)
+Nous vous recommandons d’utiliser des méthodes de paiement abstraites. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employés interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI d’Adobe Commerce, reportez-vous à la section [Exigences de conformité PCI](https://business.adobe.com/fr/products/magento/pci-compliance.html).
 
 ## 15. Si j’utilise des versions cloud d’AEM et d’Adobe Commerce, cette solution conjointe est-elle conforme PCI ?
 

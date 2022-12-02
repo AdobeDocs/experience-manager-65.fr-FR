@@ -14,7 +14,7 @@ exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -45,21 +45,21 @@ La procédure suivante utilise l’interface utilisateur optimisée pour les éc
 
 ## Exemples de configurations du service cloud Microsoft Translator {#sample-microsoft-translator-cloud-service-configurations}
 
-Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configuration utilisent un compte de traduction Microsoft d’évaluation qui permet de traduire gratuitement un maximum de 2 000 000 caractères par mois.
+Les configurations suivantes du service cloud Microsoft Translator sont installées avec les exemples de Geometrixx. Certains exemples de configurations utilisent un compte d’évaluation de Microsoft Traduction qui permet de traduire gratuitement un maximum de 2 000 000 caractères par mois.
 
 ### Licence d’évaluation de Microsoft Translator {#microsoft-translator-trial-license}
 
-La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration est installé avec le module d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator avec un abonnement gratuit qui permet de traduire 2 000 000 caractères par mois.
+La configuration Licence d’évaluation de Microsoft Translator est un exemple de configuration installé avec le module d’exemple Geometrixx Outdoors. Cette configuration utilise un compte Microsoft Translator titulaire d’un abonnement gratuit qui permet de traduire 2 000 000 de caractères par mois.
 
 ### Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors {#microsoft-translator-trial-license-geometrixx-outdoors}
 
-La configuration Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors est un exemple de configuration qui est installé avec Geometrixx Outdoors. Cette configuration utilise le même compte Microsoft Translator gratuit que la configuration Licence d’évaluation de Microsoft Translator. Le compte a un abonnement gratuit qui permet de traduire 2 000 000 caractères par mois.
+La configuration Licence d’évaluation de Microsoft Translator – Geometrixx-outdoors est un exemple de configuration qui est installé avec Geometrixx Outdoors. Cette configuration utilise le même compte Microsoft Translator gratuit que la configuration Licence d’évaluation de Microsoft Translator. Le compte dispose d’un abonnement gratuit qui permet de traduire 2 000 000 de caractères par mois.
 
 Cette configuration de Microsoft Translator est optimisée pour l’utilisation avec le type de contenu de l’exemple de site Geometrixx Outdoors.
 
 ### Mise à niveau de la configuration de licence d’évaluation de Microsoft Translator {#upgrading-the-microsoft-translator-trial-license-configuration}
 
-Les pages de configuration Microsoft Translator fournissent un lien pratique vers le site web Microsoft pour obtenir un abonnement de compte qui est adapté aux systèmes de production.
+Les pages de configuration Microsoft Translator fournissent un lien pratique vers le site web Microsoft pour obtenir un abonnement de compte qui est adapté aux systèmes d’exploitation.
 
 1. Sur le rail, cliquez ou appuyez sur Outils > Opérations > Cloud > Services cloud.
 1. Dans la zone Microsoft Translator, cliquez ou appuyez sur Afficher les configurations, puis cliquez ou appuyez sur Licence d’évaluation de Microsoft Translator (configuration Microsoft Traduction).
@@ -80,7 +80,7 @@ Les pages de configuration de Microsoft Translator fournissent un lien pratique
 
 ## Activation des configurations du service de traducteur {#activating-the-translator-service-configurations}
 
-Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Utilisez la méthode de [activation d’une section complète (arborescence)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) pour activer les noeuds du référentiel qui stockent les configurations du service cloud de Microsoft Translator ou tiers. Les nœuds se trouvent sous les nœuds parents suivants :
+Vous devez activer les configurations de service cloud pour prendre en charge le contenu traduit qui est répliqué vers l’instance de publication. Utilisez la méthode d’[activation d’une section complète (arborescence)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) pour activer les nœuds de référentiel qui stockent les configurations du service cloud Microsoft Translator ou tiers. Les nœuds se trouvent sous les nœuds parents suivants :
 
-* Service de traduction Microsoft : /libs/settings/cloudconfigs/translation/msft-translation
-* Traduction tierce : /etc/cloudservices/machine-translation
+* Service de traduction Microsoft : /libs/settings/cloudconfigs/translation/msft-translation
+* Service de traduction tiers : /etc/cloudservices/machine-translation

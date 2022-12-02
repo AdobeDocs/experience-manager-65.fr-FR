@@ -1,7 +1,7 @@
 ---
 title: Conversion de lancements
 seo-title: Promoting Launches
-description: 'Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. '
+description: Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier.
 seo-description: You need to promote launch pages to move the content back into the source (production) before publishing.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
@@ -15,7 +15,7 @@ exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -107,21 +107,24 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 
 ## Promotion d’un lancement imbriqué {#promoting-a-nested-launch}
 
-Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (production).
+Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (en exploitation).
 
 ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Comme avec la [création d’un lancement imbriqué](#creatinganestedlaunchlaunchwithinalaunch), recherchez et sélectionnez le lancement en question dans la console de **lancements** ou le rail de **références**.
+1. Comme pour la [création d’un lancement imbriqué](#creatinganestedlaunchlaunchwithinalaunch), recherchez et sélectionnez le lancement en question dans la console de **lancements** ou le rail de **références**.
 1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
 
 1. Saisissez les informations demandées :
 
    * **Cible**
 
-      * **Convertir la cible** Vous pouvez convertir un lancement vers n’importe quelle source.
+      * **Convertir la cible**
+Vous pouvez convertir un lancement vers n’importe quelle source.
 
-      * **Supprimer le lancement après la conversion** Après la conversion, le lancement sélectionné et les lancements imbriqués seront automatiquement supprimés.
-   * **Domaine** Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
+      * **Supprimer le lancement après la conversion**
+Après la conversion, le lancement sélectionné et les lancements imbriqués seront automatiquement supprimés.
+   * **Portée**
+Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
 
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**

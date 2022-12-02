@@ -13,7 +13,7 @@ exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1140'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -45,9 +45,9 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >Pour plus d’informations sur les types d’éléments, voir aussi :
 >
 >* [Projets](/help/sites-authoring/touch-ui-managing-projects.md)
->* [Projets – Utilisation des tâches](/help/sites-authoring/task-content.md)
+>* [Projets – Utilisation des Tâches](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Formulaires](/help/forms/home.md)
 >
 
 
@@ -59,7 +59,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 
 >[!NOTE]
 >
->Certaines opérations sont également répertoriées en [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
+>Certaines opérations sont également répertoriées dans le [mode Carte de la ressource appropriée](/help/sites-authoring/basic-handling.md#card-view).
 
 ## Tâches administratives prêtes à l’emploi  {#out-of-the-box-administrative-tasks}
 
@@ -68,7 +68,7 @@ AEM est fourni avec quatre tâches prêtes à l’emploi attribuées au groupe d
 * [Configurer Analytics et Targeting](/help/sites-administering/opt-in.md)
 * [Appliquer la liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
 * Autoriser la collecte de statistiques d’utilisation agrégées
-* [Configurer HTTPS](/help/sites-administering/ssl-by-default.md)
+* [Configurer le HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Ouverture de la boîte de réception {#opening-the-inbox}
 
@@ -135,7 +135,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
 
 ### Boîte de réception - Contrôle d’administration {#inbox-admin-control}
 
-L’option Contrôle d’administration permet aux administrateurs de :
+L’option Contrôle d’administration permet les actions suivantes aux responsables de l’administration :
 
 * Personnalisation des colonnes de la boîte de réception AEM
 
@@ -143,25 +143,25 @@ L’option Contrôle d’administration permet aux administrateurs de :
 
 * Contrôle de l’affichage des liens de navigation disponibles dans l’en-tête
 
-L’option Contrôle d’administration n’est visible que par les membres de la variable `administrators` ou `workflow-administrators` groupe.
+L’option Contrôle d’administration n’est visible que pour les membres du groupe `administrators` ou `workflow-administrators`.
 
-* **Personnalisation des colonnes**: Personnalisez une boîte de réception d’AEM pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow.
-   * **Ajouter une colonne**: Sélectionnez une colonne à ajouter dans AEM boîte de réception.
-   * **Modifier la colonne**: Passez la souris sur le titre de la colonne et appuyez sur ![edit](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
-   * **Supprimer la colonne**: Appuyez sur le bouton ![delete](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception d’AEM.
-   * **Déplacer la colonne**: Faites glisser le ![move](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception d’AEM.
+* **Personnalisation des colonnes** : personnalisez une boîte de réception AEM pour modifier le titre par défaut d’une colonne, réorganiser la position d’une colonne et afficher des colonnes supplémentaires en fonction des données d’un workflow.
+   * **Ajouter une colonne** : sélectionnez une colonne à ajouter dans la boîte de réception AEM.
+   * **Modifier la colonne** : passez la souris sur le titre de la colonne et appuyez sur l’icône ![modifier](assets/edit.svg) pour saisir le nom d’affichage d’une colonne.
+   * **Supprimer la colonne** : appuyez sur le l’icône ![supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception d’AEM.
+   * **Déplacer la colonne** : faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception d’AEM.
 
    ![admin-control](assets/admin-control-column-customize.png)
 
-* **Personnalisation de l’identité graphique**
+* **Personnalisation de l’image de marque**
 
-   * **Personnaliser le texte de l’en-tête :** Spécifiez le texte à afficher dans l’en-tête pour remplacer le texte par défaut. **Adobe Experience Manager** texte.
+   * **Personnaliser le texte de l’en-tête :** spécifiez le texte à afficher dans l’en-tête pour remplacer le texte **Adobe Experience Manager** par défaut.
 
-   * **Personnaliser le logo :** Spécifiez l’image à afficher dans l’en-tête sous forme de logo. Chargez une image dans la gestion des ressources numériques (DAM) et faites-y référence dans le champ .
+   * **Personnaliser le logo :** spécifiez l’image à afficher dans l’en-tête en tant que logo. Chargez une image dans la gestion des ressources numériques (DAM) et faites-y référence dans le champ.
 
 * **Navigation de l’utilisateur**
-   * **Masquer les options de navigation :** Sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation incluent des liens vers d’autres solutions, un lien d’aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
-* **Enregistrer :** Appuyez/cliquez sur cette option pour enregistrer les paramètres.
+   * **Masquer les options de navigation :** sélectionnez cette option pour masquer les options de navigation disponibles dans l’en-tête. Les options de navigation incluent des liens vers d’autres solutions, un lien Aide et les options de création disponibles lorsque vous appuyez sur le logo ou le texte Adobe Experience Manager.
+* **Enregistrer :** appuyez/cliquez sur cette option pour enregistrer les paramètres.
 
 ## Action sur un élément {#taking-action-on-an-item}
 
@@ -176,7 +176,7 @@ L’option Contrôle d’administration n’est visible que par les membres de l
 
    Les actions disponibles varient selon l’élément et incluent les opérations suivantes :
 
-   * **Terminer** l’action; par exemple, une tâche ou un élément de workflow.
+   * **Terminer** l’action ; par exemple une tâche ou un élément de workflow.
    * **Réaffecter**/**Déléguer** un élément.
    * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 
@@ -184,7 +184,7 @@ L’option Contrôle d’administration n’est visible que par les membres de l
       * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions.
       * Ouvrir la documentation associée.
    * **Revenir** à une étape précédente.
-   * Afficher la charge utile pour un workflow.
+   * Afficher le payload pour un workflow.
    * Créer un projet à partir de l’élément.
 
    >[!NOTE]
@@ -227,7 +227,7 @@ Vous pouvez créer des tâches directement à partir de la boîte de réception�
       * **Description**
       * **Priorité de la tâche**
       * **Date de début**
-      * **Échéance**
+      * **Date d’échéance**
 
    ![wf-86](assets/wf-86.png)
 
@@ -260,7 +260,7 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
       * **Titre**
       * **Description**
       * **Date de début**
-      * **Échéance**
+      * **Date d’échéance**
       * **Utilisateur** et rôle
    * **Avancé**
 
@@ -281,7 +281,7 @@ Vous pouvez filtrer les éléments répertoriés :
 
    ![wf-88](assets/wf-88.png)
 
-1. Vous pouvez filtrer les éléments répertoriés en fonction d’une série de critères, pouvant pour la plupart être affinés, par exemple :
+1. Vous pouvez filtrer les éléments répertoriés en fonction d’une série de critères qui peuvent pour la plupart être affinés, par exemple :
 
    ![wf-89](assets/wf-89.png)
 

@@ -15,7 +15,7 @@ Dans cette partie du [Parcours de développement découplé AEM,](overview.md) v
 
 ## Un peu d’histoire...  {#story-so-far}
 
-Dans le document précédent traitant du parcours AEM découplé, intitulé [Prise en main d’AEM découplé](getting-started.md), vous avez appris la théorie sur ce qu’est un CMS découplé, et vous devriez maintenant :
+Dans le document précédent traitant du parcours découplé AEM, intitulé [Prise en main d’AEM découplé](getting-started.md), vous avez appris la théorie sur ce qu’est un CMS découplé, et vous devriez maintenant :
 
 * comprendre les principes de base des fonctionnalités d’AEM découplé ;
 * connaître les conditions préalables requises pour utiliser les fonctionnalités AEM découplées ;
@@ -56,19 +56,19 @@ Une fois que vous disposez du modèle de contenu et d’une vue claire sur les d
 
 ## Présentation de vos environnements {#understanding-environments}
 
-Dans AEM, il existe trois types d’environnements : développement, évaluation et production.
+Dans AEM, il existe trois types d’environnements : développement, évaluation et exploitation.
 
 Les environnements de développement (vous pouvez en avoir plusieurs) sont un endroit sûr pour expérimenter et essayer de nouvelles idées. Pendant la phase initiale du projet, Adobe recommande d’utiliser les environnements de développement pour tester les variantes des modèles de contenu et voir lesquels fournissent le résultat prévu pour les surfaces.
 
-L’environnement d’évaluation pour les projets découplés est utilisé pour valider les nouvelles versions de produits AEM avant leur déploiement en production. Conservez la liste actualisée des modèles de contenu de production et un sous-ensemble du contenu afin de générer des fichiers JSON à des fins de comparaison ; ces derniers fournissent toujours le même résultat lorsque vous effectuez des modifications ou lorsque la mise à jour AEM introduit des modifications.
+L’environnement d’évaluation pour les projets découplés est utilisé pour valider les nouvelles versions de produits AEM avant leur déploiement en exploitation. Conservez la liste actualisée des modèles de contenu d’exploitation et un sous-ensemble du contenu afin de générer des fichiers JSON à des fins de comparaison ; ces derniers fournissent toujours le même résultat lorsque vous effectuez des modifications ou lorsque la mise à jour AEM introduit des modifications.
 
-L’environnement de production est l’endroit où les auteurs de contenu créent et gèrent leur contenu réel. Les changements de modèle dans la production doivent être effectués avec soin et en gardant à l’esprit une compatibilité descendante.
+L’environnement d’exploitation est l’endroit où les auteurs de contenu créent et gèrent leur contenu réel. Les changements de modèle dans l’exploitation doivent être effectués avec soin et en gardant à l’esprit une compatibilité descendante.
 
-Au cours de l’étape de développement, il est recommandé de travailler avec un environnement de développement et d’évaluation. Au fur et à mesure que vous passez aux tests de performance, il est recommandé de passer à l’environnement de production.
+Au cours de l’étape de développement, il est recommandé de travailler avec un environnement de développement et d’évaluation. Au fur et à mesure que vous passez aux tests de performance, il est recommandé de passer à l’environnement d’exploitation.
 
-### Coopération des développeurs et des auteurs de contenu {#cooperation}
+### Coopération entre équipe de développement et auteurs de contenu {#cooperation}
 
-Les développeurs ont besoin d’un environnement de développement AEM configuré avec les modèles de contenu renseignés. Le développeur développe le client qui consommera du contenu découplé AEM, car les auteurs du contenu continuent à créer du contenu. C’est pourquoi les définitions d’API sont très importantes. En utilisant le SDK AEM, le développeur peut créer un hook de test afin de pouvoir créer des tests client et unitaires pour s’assurer que le client est en mesure d’effectuer correctement le rendu du contenu.
+L’équipe de développement a besoin d’un environnement de développement AEM configuré avec les modèles de contenu renseignés. Le développeur développe le client qui consommera du contenu découplé AEM, car les auteurs du contenu continuent à créer du contenu. C’est pourquoi les définitions d’API sont très importantes. En utilisant le SDK AEM, le développeur peut créer un hook de test afin de pouvoir créer des tests client et unitaires pour s’assurer que le client est en mesure d’effectuer correctement le rendu du contenu.
 
 Les auteurs de contenu créent du contenu en fonction des modèles de contenu définis dans l’environnement d’évaluation. À l’aide de l’outil de création de fragments de contenu, l’auteur crée un fragment de contenu ou en modifie un déjà existant. Avant de le publier, l’auteur peut prévisualiser l’aspect qu’il aura dans le client en travaillant avec le développeur pour pousser le modèle de contenu en développement ou configurer un environnement de développement uniquement pour que les auteurs puissent prévisualiser l’aspect que le fragment de contenu aura dans le client.
 
@@ -94,7 +94,7 @@ Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première
 
 ## Bonnes pratiques {#best-practices}
 
-Un projet découplé doit son succès non seulement à la technologie mise en œuvre, mais aussi à sa bonne planification et à sa bonne gouvernance. Vous trouverez ci-dessous un certain nombre de bonnes pratiques que les auteurs et les développeurs de contenu doivent garder à l’esprit au fur et à mesure que vous planifiez votre projet.
+Un projet découplé doit son succès non seulement à la technologie mise en œuvre, mais aussi à sa bonne planification et à sa bonne gouvernance. Vous trouverez ci-dessous un certain nombre de bonnes pratiques que les auteurs de contenu et l’équipe de développement doivent garder à l’esprit au fur et à mesure que vous planifiez votre projet.
 
 ### Organisation de votre contenu {#organizing-content}
 
@@ -111,7 +111,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 ### Création de contenu {#authoring}
 
 * Pour les versions spécifiques à un canal de votre contenu, pensez à utiliser des variations de fragment de contenu. Les variations sont synchronisées avec le gabarit de contenu afin de rationaliser la gestion des changements de contenu.
-* Invitez d’autres producteurs de contenu à passer en revue le contenu et à faire part de leur point de vue à l’aide d’annotations et de commentaires, disponibles dans l’éditeur de fragments de contenu et globalement dans les fragments d’Admin Console des fragments de contenu.
+* Invitez d’autres producteurs de contenu à passer en revue le contenu et à faire part de leur point de vue à l’aide d’annotations et de commentaires, disponibles dans l’éditeur de fragments de contenu et globalement dans les fragments d’Admin Console des fragments de contenu.
 * Créez un système efficace qui nécessite le moins d’éléments obligatoires possible. Des éléments obligatoires peuvent bloquer le workflow.
 
 ### Création de contenu global {#localization}
@@ -120,7 +120,7 @@ Un projet découplé doit son succès non seulement à la technologie mise en œ
 * Tirez parti de toutes les fonctionnalités de votre système de technologie de traduction que vous pouvez intégrer à AEM, parmi lesquelles la mémoire de traduction.
 * Déterminez si le contenu multimédia, tel que les images et les vidéos, doit être localisé.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 
@@ -135,7 +135,7 @@ Nous voulons que vous puissiez tirer parti de ces connaissances fondamentales po
 
 Quel que soit votre style d’apprentissage, Adobe veut que vous réussissiez dans le lancement de votre projet découplé AEM.
 
-* Si vous préférez continuer à **découvrir les concepts découplés et les technologies AEM découplées**, vous devez continuer votre parcours découplé AEM en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans AEM.
+* Si vous préférez continuer à **découvrir les concepts du découplage et les technologies AEM découplées**, vous devez continuer votre parcours découplé AEM en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu](model-your-content.md) où vous apprendrez à modéliser votre structure de contenu dans AEM.
 * Si vous préférez **apprendre en pratiquant**, vous pouvez passer au [tutoriel Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) où vous allez directement vous lancez dans le développement d’AEM découplé en mettant en œuvre un projet simple pour exposer un contenu AEM découplé.
 
 ## Ressources supplémentaires {#additional-resources}
@@ -143,8 +143,8 @@ Quel que soit votre style d’apprentissage, Adobe veut que vous réussissiez da
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement découplé en consultant le document [Comment modéliser votre contenu en tant que modèles de contenu AEM,](model-your-content.md) les documents facultatifs suivants approfondissent certains concepts mentionnés dans ce document mais ils ne concernent pas forcément le parcours découplé.
 
 * [Parcours de traduction découplée AEM](/help/journey-headless/translation/overview.md) : ce parcours d’information vous aide à comprendre les principes de la technologie découplée, la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
-* [Développement découplé pour AEM Sites ](/help/sites-developing/headless/introduction.md) : une présentation rapide pour orienter le développeur AEM découplé vers les fonctionnalités qui lui seront utiles.
-* [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points de terminaison en mode découplé et choisir ce qui vous convient.
+* [Développement découplé pour AEM Sites](/help/sites-developing/headless/introduction.md) : une présentation rapide pour orienter le développeur AEM découplé vers les fonctionnalités qui lui seront utiles.
+* [Tutoriels sur AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Ces tutoriels pratiques vous permettront de découvrir comment utiliser, avec AEM, les différentes options de diffusion de contenu vers des points d’entrée en mode découplé et choisir ce qui vous convient.
 * [Gestion de contenu en mode découplé à l’aide des API GraphQL](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) : suivez ce cours pour bénéficier d’un aperçu de l’API GraphQL implémentée dans AEM. L’authentification à l’aide de l’Adobe ID est requise.
 * [AEM Guides WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – Ce projet GitHub comprend des exemples d’applications qui mettent en évidence les API GraphQL d’AEM.
 * [Guide de prise en main du découplage](/help/sites-developing/headless/introduction.md#getting-started) : présentation rapide des fonctionnalités découplées AEM pour les utilisateurs qui connaissent déjà AEM.

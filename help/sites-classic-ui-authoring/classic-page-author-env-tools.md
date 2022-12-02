@@ -14,7 +14,7 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ L’IU classique comporte un éditeur de page distinct, qui utilise l’outil de
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Accès à l’Aide   {#accessing-help}
+## Accès à l’Aide {#accessing-help}
 
 Plusieurs ressources d’**Aide** sont accessibles directement depuis AEM :
 
@@ -61,12 +61,12 @@ Utilisez l’outil de recherche de contenu pour localiser une plage de ressource
 * [Images](#finding-images)
 * [Documents](#finding-documents)
 * [Films](#finding-movies)
-* [Explorateur Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [Navigateur de Dynamic Media](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [Pages](#finding-pages)
 
 * [Paragraphes](#referencing-paragraphs-from-other-pages)
 * [Produits](#products)
-* Ou pour [parcourir le site web par structure de référentiel](#the-content-finder)
+* Ou pour [parcourir le site Web par structure de référentiel](#the-content-finder)
 
 Vous pouvez [rechercher des éléments spécifiques](#the-content-finder) avec toutes les options.
 
@@ -102,7 +102,7 @@ Cet onglet répertorie tous les produits. Après avoir créé un paragraphe appr
 
 ### Trouver des pages {#finding-pages}
 
-Cet onglet affiche toutes les pages. Double-cliquez sur une page pour l’ouvrir en vue de la modifier.
+Cet onglet présente toutes les pages. Double-cliquez sur une page pour l’ouvrir à des fins d’édition.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -127,16 +127,16 @@ Vous pouvez rechercher des éléments spécifiques pour toutes les options. Tout
 Vous pouvez également utiliser des caractères génériques pour la recherche. Les caractères génériques suivants sont pris en charge :
 
 * `*`
-correspond à une suite de zéro ou plusieurs caractères.
+Correspond à une suite de zéro ou de plusieurs caractères.
 
 * `?`
-correspond à un seul caractère.
+Correspond à un seul caractère.
 
 >[!NOTE]
 >
 >Un « nom » de propriété pseudo doit être utilisé pour effectuer une recherche de caractères génériques.
 
-Par exemple, si une image portant le nom est disponible :
+Par exemple, si l’image disponible se nomme :
 
 `ad-nmvtis.jpg`
 
@@ -144,14 +144,14 @@ les schémas de recherche suivants la trouvent (ainsi que toute autre image corr
 
 * `name:*nmv*`
 * `name:AD*`
-la correspondance de caractères n’est *pas* sensible à la casse.
+La correspondance de caractères n’est *pas* sensible à la casse.
 
 * `name:ad?nm??is.*`
 Vous pouvez utiliser un nombre indéfini de caractères génériques dans une requête.
 
 >[!NOTE]
 >
->Vous pouvez également utiliser [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) rechercher.
+>Vous pouvez également utiliser la recherche [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
 ## Affichage de références {#showing-references}
 
@@ -163,7 +163,7 @@ Pour afficher les références de page directes :
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Sélectionner **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins d’accès.
+1. Sélectionnez **Afficher les références...** AEM ouvre la fenêtre Références et affiche les pages qui font référence à la page sélectionnée, y compris leurs chemins d’accès.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -172,7 +172,7 @@ Dans certains cas, le sidekick permet d’exécuter d’autres actions, notammen
 * [Lancements](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copies](/help/sites-administering/msm.md)
 
-* [Blueprint](/help/sites-administering/msm-best-practices.md)
+* [Plan directeur](/help/sites-administering/msm-best-practices.md)
 
 D’autres [relations entre pages sont visibles dans la console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
@@ -184,7 +184,7 @@ Le **journal d’audit** est accessible depuis l’onglet **Informations** du si
 
 ## Informations sur la page {#page-information}
 
-La console Sites Web [fournit des informations sur l’état actuel de la page.](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) telles que publication, modification, verrouillé, live copy, etc.
+La console Sites Web [fournit également des informations sur le statut actuel de la page](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) ; par exemple, publication, modification, verrouillage, Live Copy, etc.
 
 ## Modes de page {#page-modes}
 
@@ -198,7 +198,7 @@ La rangée d’icônes située au bas du sidekick permet de changer de mode pour
 Il s’agit du mode par défaut qui vous permet de modifier la page, d’ajouter ou de supprimer des composants et d’apporter d’autres modifications.
 
 * [Aperçu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-Ce mode permet d’afficher un aperçu de la page comme si elle apparaissait sur votre site web sous sa forme définitive.
+Ce mode permet d’afficher un aperçu de la page comme si elle apparaissait sur votre site Web sous sa forme définitive.
 
 * [Conception](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 Dans ce mode, vous avez la possibilité de modifier la conception de la page en configurant les composants accessibles.
@@ -208,7 +208,7 @@ Dans ce mode, vous avez la possibilité de modifier la conception de la page en 
 >D’autres options sont également disponibles :
 >
 >* [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
->* [Contexte client](/help/sites-administering/client-context.md)
+>* [ClientContext](/help/sites-administering/client-context.md)
 >* Sites web - Ouvre la console Sites web.
 >* Recharger - Actualise la page.
 

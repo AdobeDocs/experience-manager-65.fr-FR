@@ -1,6 +1,6 @@
 ---
 title: Lightbox comme galerie d’images personnelle
-description: Découvrez Lightbox comme votre galerie d’images personnelle dans Adobe Experience Manager Assets.
+description: Découvrez comment utiliser Lightbox comme votre galerie d’images personnelle dans Adobe Experience Manager Assets.
 contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Renditions
@@ -8,20 +8,20 @@ exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 # Lightbox {#lightbox}
 
-Lightbox est un type spécial de collection fournissant un accès aisé aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
+Lightbox est un type spécial de collection fournissant un accès facile aux ressources. Vous pouvez accéder rapidement à Lightbox pour ajouter ou supprimer des ressources. Il sert de galerie d’images personnelle.
 
-Si vous êtes un [!DNL Adobe Experience Manager Assets] , Lightbox est automatiquement créé lorsque vous vous connectez pour la première fois à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
+Si vous êtes utilisateur d’[!DNL Adobe Experience Manager Assets], Lightbox est créé automatiquement la première fois que vous vous connectez à l’application. Il est exclusif à votre connexion. Les autres utilisateurs ne peuvent pas accéder à votre Lightbox.
 
 ## Ajout de ressources à Lightbox {#adding-assets-to-lightbox}
 
-1. Dans la [!DNL Assets] , sélectionnez les ressources à ajouter à Lightbox.
-1. Faites glisser les ressources jusqu’à la zone **[!UICONTROL Déposer dans Lightbox]**. Relâchez lorsque la zone de dépôt devient principale et que son libellé devient **[!UICONTROL Déposer pour ajouter]**.
+1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez les ressources que vous souhaitez ajouter à Lightbox.
+1. Faites glisser les ressources jusqu’à la zone **[!UICONTROL Déposer dans Lightbox]**. Relâchez lorsque la zone de dépôt devient active et que le libellé se transforme en **[!UICONTROL Déposer pour ajouter]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
@@ -35,7 +35,7 @@ Si vous êtes un [!DNL Adobe Experience Manager Assets] , Lightbox est automatiq
 
 ## Suppression de ressources de Lightbox {#removing-assets-from-lightbox}
 
-1. Accédez à la console Collections, puis cliquez sur Lightbox pour afficher ses ressources.
+1. Accédez à la console Collections, puis cliquez sur Lightbox pour en afficher les ressources.
 1. Sélectionnez les ressources à supprimer.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Supprimer]**.
-1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Supprimer]** pour confirmer l’action de suppression. Les ressources sont supprimées de Lightbox.
+1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Supprimer]** pour confirmer la suppression. Les ressources sont supprimées de Lightbox.

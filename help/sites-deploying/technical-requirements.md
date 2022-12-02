@@ -303,7 +303,7 @@ L’interface utilisateur d’AEM est optimisée en vue d’une utilisation sur 
  </tbody>
 </table>
 
-1. Version ESR (Extended Support Release) de Firefox. [Plus d’informations à ce sujet sur mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
+1. Version ESR (Extended Support Release) de Firefox. [Plus d’informations à ce sujet sur mozilla.org](https://www.mozilla.org/fr-FR/firefox/organizations/faq/)
 1. Prise en charge pour Apple iPad
 
 ### Navigateurs pris en charge pour les sites web {#supported-browsers-for-websites}
@@ -371,7 +371,7 @@ La configuration matérielle minimale requise s’applique à la fois à Linux e
 
 Si vous utilisez Dynamic Media sous Linux, les conditions préalables ci-dessous doivent être remplies :
 
-* RedHat Enterprise 7 ou CentOS 7 et versions ultérieures avec les derniers correctifs
+* Red Hat Enterprise 7 ou CentOS 7 et versions ultérieures avec les derniers correctifs
 * Système d’exploitation 64 bits
 * Échange désactivé (recommandé)
 * SELinux désactivé (voir la remarque ci-dessous)
@@ -508,7 +508,7 @@ Pour Windows x86 :
 
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
-* Microsoft® Windows® 2016 Server , Microsoft® Windows® 2019 Server ou Microsoft Windows 10
+* Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server ou Microsoft Windows 10
 * Processeur de 1 GHz ou plus avec prise en charge de PAE, NX et SSE2.
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
@@ -525,7 +525,7 @@ L’écriture différée XMP est prise en charge et activée pour les plateforme
 
 * **Systèmes d’exploitation :**
 
-   * Linux (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits). Pour les étapes d’installation des bibliothèques clientes 32 bits, consultez la section [Activation de l’écriture différée et de l’extraction XMP sous RedHat Linux 64 bits](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
+   * Linux (32 bits, prise en charge des applications 32 bits sur les systèmes 64 bits). Pour les étapes d’installation des bibliothèques clientes 32 bits, consultez la section [Activation de l’écriture différée et de l’extraction XMP sous RedHat Linux 64 bits](https://helpx.adobe.com/fr/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html).
 
    * Windows Server
    * Mac OS X (64 bits)

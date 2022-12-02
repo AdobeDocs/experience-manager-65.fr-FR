@@ -1,7 +1,7 @@
 ---
 title: Connexion unique
 seo-title: Single Sign On
-description: 'Découvrez comment configurer la connexion unique (SSO) pour une instance AEM. '
+description: Découvrez comment configurer la connexion unique (SSO) pour une instance AEM.
 seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
 uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 82%
 
 La connexion unique permet à l’utilisateur d’accéder à plusieurs systèmes après avoir fourni une seule fois ses informations d’identification (telles qu’un nom d’utilisateur et un mot de passe). Un système distinct (appelé l’authentificateur de confiance) effectue une authentification et fournit à Experience Manager les informations d’identification de l’utilisateur. Experience Manager vérifie les autorisations d’accès de l’utilisateur et les applique (c’est-à-dire qu’il détermine les ressources auxquelles l’utilisateur a accès).
 
-Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résulats de l’authentification que l’authentificateur de confiance fournit. Le gestionnaire d’authentification SSO recherche un ssid (identifiant SSO) comme valeur d’un attribut spécial aux emplacements suivants dans cet ordre :
+Le service de gestion de l’authentification SSO (`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) traite les résultats de l’authentification fournis par l’authentificateur de confiance. Le gestionnaire d’authentification SSO recherche un ssid (identifiant SSO) comme valeur d’un attribut spécial dans les emplacements suivants, dans cet ordre :
 
 1. En-têtes de la demande
 1. Cookies
@@ -35,26 +35,26 @@ Configurez les deux services suivants pour identifier le nom de l’attribut qui
 * Le module de connexion.
 * Le service d’authentification SSO.
 
-Vous devez spécifier le même nom d’attribut pour les deux services. L’attribut est inclus dans la variable `SimpleCredentials` qui est fourni à `Repository.login`. La valeur de l’attribut est inutile et ignorée. Sa simple présence est importante et vérifiée.
+Vous devez spécifier le même nom d’attribut pour les deux services. L’attribut est inclus dans les `SimpleCredentials` fournies dans `Repository.login`. La valeur de l’attribut est inutile et ignorée. Sa simple présence est importante et vérifiée.
 
 ## CONFIGURATION SSO {#configuring-sso}
 
 Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionnaire d’authentification SSO](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler) :
 
-1. Lorsque vous utilisez AEM, plusieurs méthodes de gestion des paramètres de configuration sont disponibles pour ces services ; voir [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et les pratiques recommandées.
+1. Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration pour ces services. Consultez la section [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails et connaître les pratiques recommandées.
 
    Par exemple, pour l’ensemble NTLM :
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
-   * **Noms des en-têtes**: `LOGON_USER`
-   * **Format d’ID**: `^<DOMAIN>\\(.+)$`
+   * **Noms d’en -tête** : `LOGON_USER`
+   * **Format d’ID** : `^<DOMAIN>\\(.+)$`
 
-      Où `<*DOMAIN*>` est remplacé par votre propre nom de domaine.
+      où `<*DOMAIN*>` est remplacé par votre nom de domaine.
    Pour CoSign :
 
    * **Chemin d’accès :** en fonction des besoins, par exemple, `/`
    * **Noms des en-têtes** : remote_user
-   * **Format d’ID :** AsIs
+   * **Format d’ID :** AsIs
 
    Pour SiteMinder :
 
@@ -87,15 +87,15 @@ Pour configurer le SSO pour une instance AEM, vous devez configurer le [gestionn
 >* `disp_iis.ini`
 >* IIS
 >
->Dans `disp_iis.ini` set :
->(voir [installation de Dispatcher avec Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) pour plus de détails)
+>Dans `disp_iis.ini`, définissez les éléments suivants :
+>(Voir [Installation du Dispatcher avec Microsoft Internet Information Server](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) pour en savoir plus)
 >
 >* `servervariables=1` (transmet des variables de serveur IIS comme en-têtes de requête à une instance distante)
->* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « Basic » par son « Basic » équivalent)
+>* `replaceauthorization=1` (remplace n’importe quel en-tête appelé « Authorization » autre que l’en-tête « De base » par son « De base » équivalent)
 >
 >Dans IIS :
 >
->* désactiver **l’accès anonyme**
+>* Désactivez **l’accès anonyme**.
 >
 >* autoriser **l’authentification intégrée de Windows**
 >
@@ -105,13 +105,13 @@ Vous pouvez voir quel gestionnaire d’authentification est appliqué à n’imp
 
 `http://localhost:4502/system/console/slingauth`
 
-Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez le gestionnaire-A pour le chemin d’accès `/` et gestionnaire-B pour le chemin `/content`, puis une requête à `/content/mypage.html` interrogera d’abord le gestionnaire-B.
+Le gestionnaire qui correspond le mieux au chemin est le premier à être appelé. Par exemple, si vous configurez le gestionnaire A pour le chemin `/`/ et le gestionnaire B pour le chemin `/content`, alors une demande à `/content/mypage.html` appellera le gestionnaire B en premier.
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### Exemple {#example}
 
-Pour une demande de cookie (à l’aide de l’URL `http://localhost:4502/libs/wcm/content/siteadmin.html`) :
+Pour une demande de cookie (à l’aide de l’URL `http://localhost:4502/libs/wcm/content/siteadmin.html`) :
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -121,17 +121,17 @@ Cookie: TestCookie=admin
 
 Utilisation de la configuration suivante :
 
-* **Chemin**: `/`
+* **Chemin** : `/`
 
-* **Noms des en-têtes**: `TestHeader`
+* **Noms d’en-têtes** : `TestHeader`
 
-* **Noms des cookies**: `TestCookie`
+* **Noms de cookies** : `TestCookie`
 
-* **Noms des paramètres**: `TestParameter`
+* **Noms des paramètres** : `TestParameter`
 
-* **Format d’ID**: `AsIs`
+* **Format d’ID** : `AsIs`
 
-La réponse est :
+La réponse serait :
 
 ```xml
 HTTP/1.1 200 OK
@@ -149,10 +149,10 @@ Transfer-Encoding: chunked
 ....
 ```
 
-Cela fonctionne également si vous demandez :
+Cela fonctionne également si vous demandez :
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-Vous pouvez également utiliser la commande curl suivante pour envoyer la variable `TestHeader` en-tête à `admin:`
+Vous pouvez également utiliser la commande curl suivante pour envoyer l’en-tête `TestHeader` à `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
@@ -165,14 +165,14 @@ Lorsque vous utilisez le SSO, la connexion et la déconnexion sont traités en e
 
 Le lien de déconnexion sur l’écran de bienvenue peut être supprimé en suivant les étapes suivantes.
 
-1. Incrustation `/libs/cq/core/components/welcome/welcome.jsp` to `/apps/cq/core/components/welcome/welcome.jsp`
-1. Supprimez la partie suivante de JSP.
+1. Recouvrez `/libs/cq/core/components/welcome/welcome.jsp` sur `/apps/cq/core/components/welcome/welcome.jsp`.
+1. Supprimez la partie suivante du JSP.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 Pour supprimer le lien de déconnexion disponible dans le menu personnel de l’utilisateur dans le coin supérieur droit, procédez comme suit :
 
-1. Incrustation `/libs/cq/ui/widgets/source/widgets/UserInfo.js` to `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. Recouvrez `/libs/cq/ui/widgets/source/widgets/UserInfo.js` sur `/apps/cq/ui/widgets/source/widgets/UserInfo.js`.
 
 1. Supprimez la partie suivante du fichier :
 

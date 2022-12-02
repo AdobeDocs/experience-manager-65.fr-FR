@@ -13,7 +13,7 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '808'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ Il offre plusieurs fonctionnalités qui facilitent le développement d’AEM :
 
 Avant d’utiliser AEM Developer Tools, vous devez :
 
-* Télécharger et installer [Eclipse IDE pour les développeurs Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). AEM outils de développement prennent actuellement en charge Eclipse Kepler ou version plus récente.
+* Télécharger et installer [Eclipse IDE pour les développeurs Java EE](https://eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/lunar). Les outils de développement AEM prennent actuellement en charge Eclipse Kepler ou une version plus récente.
 
-* Peut être utilisé avec AEM version 5.6.1 ou ultérieure
+* Peut être utilisé avec AEM version 5.6.1 ou supérieure
 * configurer votre installation Eclipse pour vous assurer de disposer d’au moins 1 Go de mémoire de segment en modifiant votre fichier de configuration `eclipse.ini` de la manière décrite dans la [FAQ Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
@@ -50,7 +50,7 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous pouvez installer le plug-in comme suit :
 
-1. Parcourez le [**site web AEM** Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
+1. Parcourez le [**site Web AEM** Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Copiez le **Lien d’installation**.
 
@@ -72,7 +72,7 @@ Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous po
 
 >[!NOTE]
 >
->Voir [Comment utiliser un lot dans Eclipse lorsqu’il a été téléchargé à partir d’AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
+>Consultez [Comment utiliser un bundle dans Eclipse quand il a été téléchargé depuis AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407).
 
 ## La perspective AEM {#the-aem-perspective}
 
@@ -98,7 +98,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
-1. Choisissez **com.adobe.granite.archetypes:sample-project-archetype : (numéro le plus élevé)** dans le menu, puis cliquez sur **Suivant**.
+1. Choisissez **com.adobe.granite.archetypes : sample-project-archetype : (numéro le plus élevé)** dans le menu, puis cliquez sur **Suivant**.
 
    ![chlimage_1-71](assets/chlimage_1-71a.png)
 
@@ -149,9 +149,9 @@ Pour contourner ce problème, assurez-vous que l’artefact org.apache.sling.scr
 
 Assurez-vous d’ajouter la version appropriée pour votre déploiement d’AEM.
 
-## Informations complémentaires {#more-information}
+## Informations supplémentaires {#more-information}
 
-Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
+Le site Web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
 
 * Le [**guide de l’utilisateur** Apache Sling IDE tooling for Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) : cette documentation vous guide à travers les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par AEM Development Tools.
 * La section [Dépannage](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).

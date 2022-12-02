@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Immersion dans les SPA{#spa-deep-dives}
 
-Le SDK de l’éditeur de SPA AEM a été présenté dans une série de sessions AEM Gems. [Gems sur Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-index.html) est une série de séances approfondies réalisées par des experts Adobe. Présentée par des ingénieurs d’Adobe, cette série peut servir de guide efficace pour mieux comprendre le SDK de l’éditeur de SPA AEM dans les détails.
+Le SDK de l’éditeur de SPA AEM a été présenté dans une série de sessions AEM Gems. [Gems sur Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-index.html) est une série de séances approfondies réalisées par des experts Adobe. Présentée par des ingénieurs d’Adobe, cette série peut servir de guide efficace pour mieux comprendre le SDK de l’éditeur de SPA AEM dans les détails.
 
 ## Sessions Gem {#gem-sessions}
 

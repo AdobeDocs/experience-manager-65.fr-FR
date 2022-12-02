@@ -1,6 +1,6 @@
 ---
-title: Fonctionnalités et interfaces accessibles de [!DNL Experience Manager Assets]
-description: Découvrez les fonctionnalités d’accessibilité dans [!DNL Adobe Experience Manager] 6,5 [!DNL Assets] aide les utilisateurs présentant un handicap.
+title: Accessibilité des fonctionnalités et des interfaces  [!DNL Experience Manager Assets]
+description: Découvrez comment les fonctionnalités d’accessibilité d’ [!DNL Adobe Experience Manager]  6.5 [!DNL Assets]  aident les utilisateurs en situation de handicap.
 contentOwner: AG
 feature: Asset Management
 role: User, Architect, Leader
@@ -8,7 +8,7 @@ exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 source-git-commit: 399ae241593b5cc14ef1c2efd090f0d1fae7c2df
 workflow-type: tm+mt
 source-wordcount: '1924'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Possible topics to cover in this article are below.
   * Link to a11y-specific online methods to report issues, seek support, or request enhancements, if any. Asked the a11y team on Slack.
 -->
 
-# Fonctionnalités d’accessibilité dans [!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
+# Fonctionnalités d’accessibilité d’[!DNL Adobe Experience Manager Assets] {#accessibility-in-aem-assets}
 
 [!DNL Adobe Experience Manager] permet aux créateurs et aux éditeurs de contenu de proposer des expériences étonnantes sur le web. Adobe s’efforce d’inclure les créateurs en situation de handicap en améliorant l’accessibilité d’[!DNL Experience Manager]. Le logiciel est continuellement amélioré pour répondre aux besoins de tous les types d’utilisateurs et appliquer les normes internationales afin d’inclure les personnes atteintes d’une déficience visuelle, auditive, de mobilité ou autre.
 
@@ -43,7 +43,7 @@ Possible topics to cover in this article are below.
 
 Pour lire un rapport contenant des détails sur le niveau de conformité, voir la page [Rapport de conformité pour l’accessibilité](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
-Pour savoir comment [!DNL Dynamic Media] est accessible, voir [accessibilité dans [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+Pour en savoir plus sur l’accessibilité de [!DNL Dynamic Media], consultez [accessibilité dans  [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
 
 ## Technologies d’assistance {#at-support}
 
@@ -59,14 +59,14 @@ Les utilisateurs en situation de handicap font fréquemment appel au matériel e
 
 Dans [!DNL Experience Manager], les fonctionnalités d’accessibilité répondent à deux exigences clés des utilisateurs de [!DNL Experience Manager] et de leurs clients.
 
-* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Les personnes présentant un handicap utilisent le contenu à l’aide des technologies d’assistance. Pour plus d’informations, reportez-vous aux [Directives d’accessibilité web](/help/managing/web-accessibility.md).
+* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Les personnes en situation un handicap peuvent utiliser le contenu à l’aide des technologies d’assistance. Pour plus d’informations, reportez-vous aux [Directives d’accessibilité Web](/help/managing/web-accessibility.md).
 * [!DNL Experience Manager] permet de plus à ses utilisateurs et à ses administrateurs en situation de handicap d’accéder à l’interface utilisateur et aux contrôles pour créer et gérer du contenu. La personne présentant un handicap peut faire appel aux technologies d’assistance pour naviguer, utiliser et gérer les fonctionnalités d’[!DNL Assets].
 
 Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’auparavant et sont régulièrement mises à jour afin d’améliorer la conformité aux normes mondiales. Les opérations CRUD d’[!DNL Assets] intègrent un certain degré d’accessibilité Les workflows DAM tels que l’ajout, la gestion, la recherche et la distribution de ressources sont accessibles à l’aide de raccourcis clavier, d’un texte de lecteur d’écran, d’un contraste de couleur, etc.
 
 ## Prise en charge de l’utilisation du clavier {#keyboard-use}
 
-De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels l’utilisateur peut cliquer peuvent également fonctionner avec un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher via le clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche de l’interface utilisateur en accédant à la commande de l’interface utilisateur à l’aide du clavier et en sélectionnant `Return`et en sélectionnant `Alt + 2` raccourci clavier.
+De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels l’utilisateur peut cliquer peuvent également fonctionner avec un clavier. À l’aide du clavier, les utilisateurs peuvent se concentrer sur les éléments de l’interface et prendre les mesures appropriées. Les utilisateurs peuvent directement utiliser des raccourcis clavier pour déclencher une commande ou une action sans avoir à se concentrer sur les éléments de l’interface utilisateur et la déclencher via le clavier. Par exemple, les utilisateurs peuvent ouvrir la chronologie d’une ressource dans la partie gauche de l’interface utilisateur en accédant à la commande de l’interface utilisateur via un clavier et en sélectionnant `Return`, puis en sélectionnant le raccourci clavier `Alt + 2`.
 
 <!-- TBD items:
 
@@ -82,15 +82,15 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 
 | Interface utilisateur ou scénario | Raccourci clavier | Action |
 |---|---|---|
-| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées Haut et Bas | Accéder aux fichiers et aux dossiers dans la même hiérarchie. |
-| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées gauche et droite | Accéder aux fichiers et aux dossiers situés au-dessus ou au-dessous du dossier en cours. |
+| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées Haut et Bas | Accédez aux fichiers et aux dossiers dans la même hiérarchie. |
+| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées gauche et droite | Accédez aux fichiers et aux dossiers situés au-dessus ou au-dessous du dossier en cours. |
 | Navigation dans les dossiers d’[!DNL Assets] | `/` | Lancer la recherche en ouvrant la zone Omni-recherche. |
 | Console [!DNL Assets] | &grave; | Activer/désactiver les rails |
 | Console [!DNL Assets] | `Alt + 1` | Ouvrir l’arborescence de contenu. |
 | Console [!DNL Assets] | `Alt + 2` | Ouvrez le rail de gauche [!UICONTROL Navigation]. |
 | Console [!DNL Assets] | `Alt + 3` | Afficher la [!UICONTROL Chronologie] d’une ressource sélectionnée. |
 | Console [!DNL Assets] | `Alt + 4` | Ouvrir les références Live Copy de la ressource sélectionnée. |
-| Console [!DNL Assets] | `Alt + 5` | Lancez la recherche et la recherche dans le dossier sélectionné. |
+| Console [!DNL Assets] | `Alt + 5` | Lance la recherche et effectue une recherche dans le dossier sélectionné. |
 | Ressource ou dossier sélectionné | Retour arrière | Supprimer la ressource ou le dossier sélectionné. |
 | Ressource ou dossier sélectionné | `p` | Ouvrir la page Propriétés de la ressource sélectionnée. |
 | Ressource ou dossier sélectionné | `e` | Modifier la ressource sélectionnée. |
@@ -105,11 +105,11 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 
 ## Connexion à l’interface utilisateur d’[!DNL Assets] et navigation {#login}
 
-Les utilisateurs peuvent se servir du clavier pour accéder au champ de connexion et le renseigner afin de se connecter. Les messages d’erreur dus à des combinaisons de nom d’utilisateur et de mot de passe incorrectes sur la page de connexion sont annoncés par les lecteurs d’écran chaque fois que l’erreur se produit.
+Les utilisateurs peuvent se servir du clavier pour accéder au champ de connexion et le renseigner afin de se connecter. Les messages d’erreur dus à des combinaisons de nom d’utilisateur et de mot de passe incorrectes sur la page de connexion sont annoncés par des lecteurs d’écran chaque fois que l’erreur se produit.
 
-Une fois connectés, les utilisateurs de DAM peuvent accéder à l’interface utilisateur d’[!DNL Assets] à l’aide du clavier. Le clavier permet d’accéder aux éléments de l’interface utilisateur, tels que le rail de gauche, les menus, le profil utilisateur, la barre de recherche, les fichiers et les dossiers, ainsi que les paramètres d’administration et de configuration. L’ordre de navigation via le clavier est de gauche à droite et de haut en bas. Lorsque vous naviguez à l’aide du clavier, une option exploitable sélectionnée est mise en évidence par un contraste accentué des couleurs et est annoncée par un lecteur d’écran. Le cas échéant, un lecteur d’écran annonce l’état (étendu, réduit et mixte, par exemple) des options de menu sélectionnées. En outre, le lecteur d’écran annonce l’objectif de l’option exploitable, au lieu de, par exemple, l’aspect ou l’emplacement de l’interface.
+Une fois connectés, les utilisateurs de DAM peuvent accéder à l’interface utilisateur d’[!DNL Assets] à l’aide du clavier. Le clavier permet d’accéder aux éléments de l’interface utilisateur, tels que le rail de gauche, les menus, le profil utilisateur, la barre de recherche, les fichiers et les dossiers, ainsi que les paramètres d’administration et de configuration. L’ordre de navigation via le clavier est de gauche à droite et de haut en bas. Lorsque vous naviguez à l’aide du clavier, une option exploitable sélectionnée est mise en évidence par un contraste accentué des couleurs et est annoncée par un lecteur d’écran. Le cas échéant, un lecteur d’écran annonce l’état (étendu, réduit et mixte, par exemple) des options de menu sélectionnées. En outre, le lecteur d’écran présente le but de l’option utilisable, plutôt que son aspect ou son emplacement sur l’interface.
 
-Si un utilisateur développe l’option d’aide ou de profil utilisateur à partir du menu, le lecteur d’écran annonce l’option ou l’état approprié. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un utilisateur peut emprunter l’identité d’un autre utilisateur. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
+Si un utilisateur développe l’option d’aide ou de profil utilisateur à partir du menu, le lecteur d’écran annonce l’option ou le statut concerné. Si un utilisateur développe l’option de profil utilisateur, les options disponibles peuvent être sélectionnées à l’aide du clavier. Par exemple, un utilisateur peut emprunter l’identité d’un autre utilisateur. Si un utilisateur recherche une chaîne à partir de l’option [!UICONTROL Aide], un narrateur annonce « Recherche de l’aide » pour indiquer qu’une recherche est en cours.
 
 <!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
@@ -161,7 +161,7 @@ Lors de la navigation dans le référentiel de ressources, les fonctionnalités 
 
 ## Gestion des ressources numériques {#manage-assets}
 
-De nombreuses tâches de gestion des ressources, telles que les opérations CRUD, le téléchargement d’une ressource et l’ajout de métadonnées, sont accessibles à divers degrés. [!DNL Assets] vous permet d’accomplir les tâches à l’aide de diverses technologies d’assistance, telles qu’un lecteur d’écran et un clavier.
+De nombreuses tâches de gestion des ressources, telles que les opérations CRUD, le téléchargement d’une ressource et l’ajout de métadonnées, sont accessibles à divers degrés. [!DNL Assets] vous permet d’accomplir les tâches à l’aide de diverses technologies d’assistance, notamment un lecteur d’écran et un clavier.
 
 Regardez une démonstration vidéo indiquant comment utiliser un clavier pour [parcourir le référentiel et télécharger une ressource](https://youtu.be/K3dgqMRQJys).
 
@@ -202,7 +202,7 @@ Lors du partage de ressources, les fonctionnalités suivantes améliorent l’ac
 
 * Dans la boîte de dialogue de partage de liens, lorsque vous naviguez en mode de navigation, le lecteur d’écran :
 
-   * Ne narrez pas les informations du tableau lorsque la boîte de dialogue est chargée.
+   * N’indique pas les informations du tableau dès que la boîte de dialogue est chargée.
    * Peut accéder à toutes les suggestions répertoriées.
    * Indique les suggestions affichées pour les champs Ajouter l’adresse électronique et Rechercher.
 
@@ -224,8 +224,8 @@ Pour rédiger des commentaires, poser des questions et demander des amélioratio
 
 >[!MORELIKETHIS]
 >
->* [Fonctionnalités d’accessibilité dans [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
->* [Notes de mise à jour des améliorations apportées à chaque version du Service Pack](/help/release-notes/release-notes.md).
+>* [Fonctionnalités d’accessibilité d’ [!DNL Dynamic Media]](/help/assets/accessibility-dm.md).
+>* [Notes de mise à jour des améliorations apportées à chaque version de service pack](/help/release-notes/release-notes.md).
 >* Conseils en matière d’accessibilité d’[[!DNL Adobe Experience Manager] ](/help/managing/web-accessibility.md)
 >* [Rapports de conformité (ACR) et liste VPAT (Modèle volontaire d’accessibilité des produits) pour les solutions d’Adobe](https://www.adobe.com/accessibility/compliance.html).
 

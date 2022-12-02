@@ -1,8 +1,8 @@
 ---
 title: Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM
 description: Dans cette suite facultative du parcours de développement découplé AEM, vous découvrirez comment AEM peut combiner une diffusion découplée avec des fonctionnalités CMS full stack traditionnelles et comment créer des SPA modifiables à l’aide du cadre de l’éditeur de SPA d’AEM.
-exl-id: d74848f2-683e-49e1-9374-32596ca5d7d7
-source-git-commit: 7b97bc0ffb0df6641ae71fa36c459f1368052e12
+exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 100%
@@ -45,7 +45,7 @@ Avant de commencer à travailler avec des SPA dans AEM, plusieurs conditions son
 
 ### Connaissances {#knowledge}
 
-* Expérience de développement de création de SPA avec des structures React ou Angular
+* Expérience de développement de création de SPA avec des frameworks React ou Angular
 * Compétences de base de création de fragments de contenu et de l’utilisation de l’éditeur dans AEM
 * Veillez à consulter le document [Couplage et découplage dans AEM](/help/sites-developing/headful-headless.md) afin de comprendre les différents niveaux d’intégration de SPA possibles.
 
@@ -83,7 +83,7 @@ Pour une description complète de la façon dont AEM gère les SPA, consultez la
 
 ## Éditeur de SPA AEM {#aem-spa-editor}
 
-Les sites créés à l’aide de structures SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas la structure HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
+Les sites créés à l’aide de frameworks SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas le framework HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
 
 Pour activer la modification d’applications sur une seule page dans AEM, il faut qu’il y ait une correspondance entre la sortie JSON de l’application et le modèle de contenu dans le répertoire AEM afin d’enregistrer les modifications apportées au contenu.
 

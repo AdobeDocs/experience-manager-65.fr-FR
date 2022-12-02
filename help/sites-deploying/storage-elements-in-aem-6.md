@@ -1,5 +1,5 @@
 ---
-title: Éléments de stockage dans AEM 6.5
+title: Éléments de stockage dans AEM 6,5
 seo-title: Storage Elements in AEM 6.5
 description: Obtenez des informations sur les mises en œuvre du stockage de nœud disponibles dans AEM 6.5 et sur la maintenance du référentiel.
 seo-description: Learn about the node storage implementations available in AEM 6.5 and how to maintain the repository.
@@ -14,13 +14,13 @@ exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# Éléments de stockage dans AEM 6.5{#storage-elements-in-aem}
+# Éléments de stockage dans AEM 6,5{#storage-elements-in-aem}
 
-Dans cet article, nous allons aborder les éléments suivants :
+Dans cet article, nous allons aborder les éléments suivants :
 
 * [Présentation du stockage dans AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)
@@ -37,7 +37,7 @@ Actuellement, il existe deux implémentations de stockage de nœud disponibles d
 
 >[!CAUTION]
 >
->Le PID de la boutique de noeuds de segment a été remplacé par org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 à org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Veillez à effectuer les ajustements de configuration nécessaires pour refléter cette modification.
+>Le PID du magasin de nœuds de segment a été changé, en remplaçant org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService dans les versions précédentes d’AEM 6 par org.apache.jackrabbit.oak.segment.SegmentNodeStoreService dans AEM 6.3. Veillez à effectuer les réglages de configuration nécessaires pour prendre en compte cette modification.
 
 Par défaut, AEM 6 utilise le stockage tar pour stocker les nœuds et les fichiers binaires à l’aide des options de configuration par défaut. Pour configuer manuellement les paramètres de stockage, suivez la procédure ci-dessous :
 
@@ -70,19 +70,19 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
 
 1. Assurez-vous que MongoDB est installé et qu’une instance de `mongod` est en cours d’exécution. Pour plus d’informations, reportez-vous à la section [Configuration de MongoDB](https://docs.mongodb.org/manual/installation/). 
 1. Créez un dossier nommé `crx-quickstart\install` dans le répertoire d’installation.
-1. Configurez le stock de nœud en créant un fichier de configuration avec le nom de la configuration que vous souhaitez utiliser dans le répertoire `crx-quickstart\install`.
+1. Configurez le magasin de nœud en créant un fichier de configuration avec le nom de la configuration que vous souhaitez utiliser dans le répertoire `crx-quickstart\install`.
 
-   Le magasin de noeuds de document (qui est la base de l’implémentation du stockage d’AEM MongoDB) utilise un fichier appelé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`
+   Le magasin de nœuds de document (qui sert de base à l’implémentation du stockage MongoDB d’AEM) utilise un fichier nommé `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`.
 
 1. Modifiez le fichier, puis définissez les options de configuration. Les options suivantes sont disponibles :
 
-   * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base donnée Mongo. La valeur par défaut est de `mongodb://localhost:27017`
-   * `db` : nom de la base de donnée Mongo. Par défaut, les nouvelles installations d’AEM 6 utilisent **aem-author** comme nom de la base de données.
+   * `mongouri` : [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) requis pour se connecter à la base de données Mongo. La valeur par défaut est de `mongodb://localhost:27017`.
+   * `db` : nom de la base de données Mongo. Par défaut, les nouvelles installations d’AEM 6 utilisent **aem-author** comme nom de la base de données.
    * `cache` : taille du cache en Mo. Elle est distribuée entre différents caches utilisés dans DocumentNodeStore. La valeur par défaut est 256.
    * `changesSize` : taille en Mo de la collection limitée utilisée dans Mongo pour la mise en cache de la sortie diff. La valeur par défaut est 256.
    * `customBlobStore` : valeur booléenne indiquant qu’un entrepôt de données personnalisé sera utilisé. La valeur par défaut est false.
 
-1. Créez un fichier de configuration avec le PID de l’entrepôt de données que vous souhaitez utiliser et modifiez le fichier afin de définir les options de configuration. Pour plus d’informations, voir [Configuration des stocks de nœuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
+1. Créez un fichier de configuration avec le PID de l’entrepôt de données que vous souhaitez utiliser et modifiez le fichier afin de définir les options de configuration. Pour plus d’informations, consultez la section [Configuration des magasins de nœuds et des entrepôts de données](/help/sites-deploying/data-store-config.md).
 
 1. Démarrez le jar AEM 6 avec une sauvegarde du stockage MongoDB en exécutant :
 
@@ -90,14 +90,14 @@ AEM 6 peut être configuré pour s’exécuter avec le stockage MongoDB en suiv
    java -jar cq-quickstart-6.jar -r crx3,crx3mongo
    ```
 
-   Où **`-r`** est le mode d’exécution principal. Dans cet exemple, il commence par la prise en charge MongoDB. 
+   Où **`-r`** est le mode d’exécution principal. Dans cet exemple, cela commence par la prise en charge de MongoDB. 
 
 #### Désactiver les pages THP {#disabling-transparent-huge-pages}
 
 Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transparent Huge Pages (THP). Tandis qu’AEM effectue des lectures et des écritures affinées, THP est optimisé pour des opérations plus volumineuses. Pour cette raison, il est recommandé de désactiver THP sur le stockage Tar et Mongo. Pour désactiver l’algorithme, procédez comme suit :
 
-1. Ouvrez le `/etc/grub.conf` dans l’éditeur de texte de votre choix.
-1. Ajoutez la ligne suivante au **grub.conf** fichier :
+1. Ouvrez le fichier `/etc/grub.conf` dans l’éditeur de texte de votre choix.
+1. Ajoutez la ligne suivante au fichier **grub.conf** :
 
    ```
    transparent_hugepage=never
@@ -119,11 +119,11 @@ Red Hat Linux utilise un algorithme de gestion de la mémoire appelé Transpar
 >
 >De plus, vous pouvez également consulter les ressources suivantes :
 >
->* Pour plus d’informations sur Transparent Huge Pages sous Red Hat Linux, voir ceci [article](https://access.redhat.com/solutions/46111).
->* Pour obtenir des conseils sur l’optimisation pour Linux, voir cette section [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+>* Pour plus d’informations sur Transparent Huge Pages sur Red Hat Linux, reportez-vous à cet [article](https://access.redhat.com/solutions/46111).
+>* Pour obtenir des conseils sur l’optimisation sous Linux, reportez-vous à cet [article](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 >
 
 
 ## Maintenance du référentiel {#maintaining-the-repository}
 
-Chaque mise à jour du référentiel crée une nouvelle révision de contenu. Par conséquent, à chaque mise à jour, la taille du référentiel augmente. Pour éviter une croissance incontrôlée au référentiel, il faut nettoyer les anciennes révisions pour libérer de l’espace sur le disque. Cette fonctionnalité de maintenance est appelée le nettoyage des révisions. Le mécanisme de nettoyage des révisions permet de récupérer de l’espace disque en supprimant les données obsolètes du référentiel. Pour de plus amples informations sur le nettoyage des révisions, consultez la page [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md). 
+Chaque mise à jour du référentiel crée une nouvelle révision de contenu. Par conséquent, avec chaque mise à jour, la taille du référentiel augmente. Pour éviter une croissance incontrôlée au référentiel, il faut nettoyer les anciennes révisions pour libérer de l’espace sur le disque. Cette fonctionnalité de maintenance est appelée le nettoyage des révisions. Le mécanisme de nettoyage des révisions permet de récupérer de l’espace disque en supprimant les données obsolètes du référentiel. Pour de plus amples informations sur le nettoyage des révisions, consultez la page [Nettoyage des révisions](/help/sites-deploying/revision-cleanup.md). 

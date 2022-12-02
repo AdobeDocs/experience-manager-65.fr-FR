@@ -25,7 +25,7 @@ Ce guide couvre toutes les tâches de déploiement d’AEM, telles que l’insta
 
 | Guide de l’utilisateur | Description |
 |--- |---|
-| [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.. |
+| [Notes de mise à jour](/help/release-notes/home.md) | Elles comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment créer, gérer, diffuser et optimiser des ressources numériques. |
 | [Guide de l’utilisateur de Forms](/help/forms/home.md) | Ce guide explique comment créer, gérer, publier et mettre à jour des formulaires numériques. |
 | [Guide de l’utilisateur de Communities](/help/communities/home.md) | Créez des expériences en ligne telles que des forums, des groupes d’utilisateurs, des ressources d’apprentissage et d’autres fonctionnalités sociales. |
@@ -55,4 +55,4 @@ Ce guide couvre toutes les tâches de déploiement d’AEM, telles que l’insta
 
 Pour plus d’informations, consultez [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
-Avis de licences de tiers : [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/).
+Avis de licences de tiers : [https://www.adobe.com/fr/products/eula/third_party.html](https://www.adobe.com/fr/products/eula/third_party.html).

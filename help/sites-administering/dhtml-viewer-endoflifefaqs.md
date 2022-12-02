@@ -10,7 +10,7 @@ exl-id: 06b74770-1f96-4f6b-98c0-afef7000e42b
 source-git-commit: 62544559020b0c0afd7bb31fb832b82ba3d47919
 workflow-type: tm+mt
 source-wordcount: '42'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 85%
 
 Depuis le 31 janvier 2014, la plateforme de la visionneuse DHTML n’est officiellement plus prise en charge.
 
-Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html) pour connaître les dernières visionneuses prises en charge.
+Consultez le [Guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=fr) pour connaître les dernières visionneuses prises en charge.
 
 <!-- OBSOLETE CONTENT **What is the change?**
 

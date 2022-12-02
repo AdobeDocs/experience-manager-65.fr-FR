@@ -1,6 +1,6 @@
 ---
 title: Recommandations de produits
-description: Adobe Commerce comprend un moteur de recommandation optimisé par Adobe Sensei. Découvrez comment insérer de manière dynamique ces recommandations de produits dans un storefront Adobe Experience Manager (AEM).
+description: Adobe Commerce comprend un moteur de recommandation optimisé par Adobe Sensei. Découvrez comment insérer de manière dynamique ces recommandations de produits dans un storefront Adobe Experience Manager (AEM).
 sub-product: Commerce
 version: 6.5
 doc-type: feature-video
@@ -19,6 +19,6 @@ ht-degree: 100%
 
 # Recommandations de produits
 
-Adobe Commerce comprend un moteur de recommandation optimisé par Adobe Sensei. Découvrez comment insérer de manière dynamique ces recommandations de produits dans un storefront Adobe Experience Manager (AEM).
+Adobe Commerce comprend un moteur de recommandation optimisé par Adobe Sensei. Découvrez comment insérer de manière dynamique ces recommandations de produits dans un storefront Adobe Experience Manager (AEM).
 
 >[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)

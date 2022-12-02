@@ -1,5 +1,5 @@
 ---
-title: La liste de contrôle
+title: La Liste de contrôle
 seo-title: The Checklist
 description: Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel.
 seo-description: The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
@@ -13,11 +13,11 @@ exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# La liste de contrôle{#the-checklist}
+# La Liste de contrôle{#the-checklist}
 
 Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel.
 
@@ -39,7 +39,7 @@ Les feuilles de calcul suivantes sont fournies :
 * **[État par rôle](/help/managing/best-practices.md#status-by-role)**
 * Série de listes de contrôle, selon le [personnage](/help/managing/best-practices.md#persona), la [phase et le jalon](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossaire**
-   * Le glossaire répertorie les détails de tous les documents livrables de la liste de contrôle du projet.
+   * Ce glossaire répertorie les détails de tous les documents livrables de la liste de contrôle de projet.
    * Le [glossaire](/help/managing/best-practices-glossary.md) est également disponible dans le cadre de la documentation.
 * **[Définition des personnages](/help/managing/best-practices.md#persona)**
 
@@ -47,8 +47,8 @@ Les feuilles de calcul suivantes sont fournies :
 
 Pour livrer un projet de grande qualité, vous devez suivre tous les éléments affichés dans les listes de contrôle, de préférence dans l’ordre :
 
-1. Les listes de contrôle sont définies en fonction de la variable **[Persona](/help/managing/best-practices.md#persona)** (rôle) impliqué. Chaque personne doit utiliser la liste de contrôle appropriée à son rôle dans le projet.
-1. Les listes de contrôle couvrent la variable **[Documents requis](/help/managing/best-practices.md#required-documents)** et **[Deliverables](/help/managing/best-practices.md#deliverables)** pour chaque jalon : le personnage concerné doit définir les champs d’état et de qualité appropriés.
+1. Les listes de contrôle sont définies en fonction des **[personas](/help/managing/best-practices.md#persona)** (rôles) impliqués. Chaque personne doit utiliser la liste de contrôle appropriée en fonction de son rôle dans le projet.
+1. Les listes de contrôle répertorient les **[documents requis](/help/managing/best-practices.md#required-documents)** et les **[éléments livrables](/help/managing/best-practices.md#deliverables)** pour chaque jalon ; le persona concerné doit définir les champs de statut et de qualité appropriés.
 
    >[!NOTE]
    >

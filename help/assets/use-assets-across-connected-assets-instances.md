@@ -9,15 +9,15 @@ exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 source-git-commit: 0df4bce6651517c6049578d0a1434726ab04e240
 workflow-type: tm+mt
 source-wordcount: '3837'
-ht-degree: 89%
+ht-degree: 96%
 
 ---
 
-# Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Utilisation des ressources connectées pour partager des ressources de gestion des ressources numériques dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 
@@ -31,16 +31,16 @@ La fonctionnalité Ressources connectées prend en charge le cas d’utilisation
 
 ## Présentation de la fonction Ressources connectées {#overview-of-connected-assets}
 
-Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets]. Les auteurs de site peuvent également utiliser des images Dynamic Media dans les pages web de leur site par le biais de ressources connectées et utiliser les fonctionnalités de Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
+Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets]. Vous pouvez également utiliser des images Dynamic Media dans les pages web de votre site par le biais de ressources connectées et utiliser les fonctionnalités de Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
 
-Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet une recherche transparente et un accès aux ressources distantes dans l’éditeur de site. Pour tout autre cas d’utilisation qui peut nécessiter la disponibilité de l’ensemble des ressources sur Sites, envisagez de migrer les ressources en masse au lieu d’utiliser les ressources connectées. Voir [Guide de migration Experience Manager Assets](/help/assets/assets-migration-guide.md).
+Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet une recherche transparente et un accès aux ressources distantes dans l’éditeur de site. Pour tout autre cas d’utilisation qui peut nécessiter la disponibilité de l’ensemble des ressources sur Sites, envisagez de migrer les ressources en masse au lieu d’utiliser les ressources connectées. Consultez la section [Guide de migration Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
 ### Conditions préalables et déploiements pris en charge {#prerequisites}
 
 Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points suivants :
 
 * Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
-* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6,5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] as a Cloud Service. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager] as a [!DNL Cloud Service], voir [Ressources connectées dans Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
+* Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] 6.5 [!DNL Assets] fonctionne avec [!DNL Experience Manager] as a Cloud Service. Pour plus d’informations sur le fonctionnement de cette fonctionnalité dans [!DNL Experience Manager] as a [!DNL Cloud Service], consultez la section [Ressources connectées dans Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
    |---|---|---|---|
@@ -139,7 +139,8 @@ Pour configurer les ressources connectées et la connectivité des [!DNL Sites] 
 Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et le déploiement [!DNL Assets] configurés.
 
 ![Test de connexion des ressources connectées configurées [!DNL Sites]](assets/connected-assets-multiple-config.png)
-*Figure : Test de connexion des ressources connectées configurées [!DNL Sites].*
+
+*Image : test de connexion des ressources connectées configurées [!DNL Sites].*
 
 ## Utilisation des ressources Dynamic Media {#dynamic-media-assets}
 
@@ -160,10 +161,10 @@ Pour utiliser [!DNL Dynamic Media] avec les ressources connectées :
 
 Pour configurer les déploiements [!DNL Dynamic Media] sur [!DNL Assets] et [!DNL Sites] :
 
-1. Activation et configuration [!DNL Dynamic Media] comme configuration globale sur distant [!DNL Assets] déploiement de l’auteur. Pour configurer Dynamic Media, voir [Configuration de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+1. Activez et configurez [!DNL Dynamic Media] en tant que configuration globale pour le déploiement de l’auteur [!DNL Assets] à distance. Pour configurer Dynamic Media, consultez la section [Configuration de Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 Sur le déploiement [!DNL Assets] distant, dans le [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
 
-1. Créez une configuration de ressources connectées comme décrit dans [Configurer la connexion entre les sites et les déploiements de ressources](#configure-a-connection-between-sites-and-assets-deployments). Sélectionnez également **[!UICONTROL Récupérer le rendu d’origine pour les ressources connectées Dynamic Media]** .
+1. Créez une configuration de ressources connectées comme décrit dans la section [Configuration de la connexion entre les sites et des déploiements de ressources](#configure-a-connection-between-sites-and-assets-deployments). Sélectionnez également l’option **[!UICONTROL Récupérer le rendu d’origine pour les ressources connectées Dynamic Media]**.
 
 1. Configurez [!DNL Dynamic Media] sur les déploiements [!DNL Sites] locaux et [!DNL Assets] distants. Procédez selon les instructions de la section [configuration [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 
@@ -238,19 +239,19 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 
 ### Gestion des mises à jour des ressources dans DAM à distance {#manage-updates-in-remote-dam}
 
-Après avoir [configuré une connexion](#configure-a-connection-between-sites-and-assets-deployments) entre le DAM à distance et les déploiements , les ressources du DAM à distance sont mises à disposition sur le déploiement . [!DNL Sites][!DNL Sites] Vous pouvez ensuite effectuer les opérations de mise à jour, de suppression, de renommage et de déplacement sur les ressources ou dossiers DAM à distance. Les mises à jour, avec un certain délai, sont automatiquement disponibles sur la page [!DNL Sites] déploiement. En outre, si une ressource sur DAM distant est utilisée sur une instance locale [!DNL Experience Manager Sites] , les mises à jour de la ressource sur la gestion des ressources numériques distantes s’affichent sur la page [!DNL Sites] page.
+Après avoir [configuré une connexion](#configure-a-connection-between-sites-and-assets-deployments) entre la gestion des ressources numériques à distance et les déploiements de [!DNL Sites], les ressources de gestion des ressources numériques à distance sont mises à disposition dans le déploiement de [!DNL Sites]. Vous pouvez ensuite effectuer les opérations de mise à jour, de suppression, de renommage et de déplacement sur les ressources ou dossiers de gestion des ressources numériques à distance. Les mises à jour sont disponibles avec un certain retard automatiquement dans le déploiement de [!DNL Sites] En outre, si une ressource de gestion des ressources numériques à distance est utilisée sur une page [!DNL Experience Manager Sites] locale, les mises à jour de la ressource de gestion des ressources numériques à distance sont affichées sur la page [!DNL Sites].
 
-Lors du déplacement d’une ressource d’un emplacement à un autre, assurez-vous d’[ajuster les références](/help/assets/manage-assets.md) afin que la ressource s’affiche sur la page [!DNL Sites] Si vous déplacez une ressource vers un emplacement qui n’est pas accessible à partir de l’emplacement local [!DNL Sites] déploiement, la ressource ne s’affiche pas sur le déploiement Sites.
+Lors du déplacement d’une ressource d’un emplacement à un autre, assurez-vous d’[ajuster les références](/help/assets/manage-assets.md) afin que la ressource s’affiche sur la page [!DNL Sites] Si vous déplacez une ressource vers un emplacement non accessible à partir du déploiement local, la ressource ne s’affiche pas dans le déploiement de [!DNL Sites].
 
-Vous pouvez également mettre à jour les propriétés de métadonnées d’une ressource sur DAM distant et les modifications sont disponibles sur le fichier local. [!DNL Sites] déploiement.
+Vous pouvez également mettre à jour les propriétés de métadonnées d’une ressource de gestion des ressources numériques à distance et les modifications sont disponibles dans le déploiement local de [!DNL Sites].
 
-[!DNL Sites]Les auteurs peuvent prévisualiser les mises à jour disponibles sur le déploiement , puis republier les modifications pour les rendre disponibles sur l’instance de publication .[!DNL Sites][!DNL Experience Manager]
+Les auteurs [!DNL Sites] peuvent prévisualiser les mises à jour disponibles dans le déploiement de [!DNL Sites], puis republier les modifications pour les rendre disponibles sur l’instance de publication d’[!DNL Experience Manager].
 
-[!DNL Experience Manager] affiche un indicateur visuel d’état expiré sur les ressources dans `Remote Assets Content Finder` pour empêcher les auteurs de site d’utiliser la ressource sur un [!DNL Sites] page. Si vous utilisez une ressource dont l’état est expiré sur un [!DNL Sites] , la ressource ne s’affiche pas sur la page [!DNL Experience Manager] instance de publication.
+[!DNL Experience Manager] affiche un indicateur visuel de statut expiré sur les ressources dans `Remote Assets Content Finder` pour empêcher les auteurs de site d’utiliser la ressource sur une page [!DNL Sites]. Si vous utilisez une ressource avec un statut expiré sur une page [!DNL Sites], la ressource ne s’affiche pas sur l’instance de publication d’[!DNL Experience Manager].
 
 >[!NOTE]
 >
->Les mises à jour apportées aux ressources dans la gestion des actifs numériques distants sont mises à la disposition de la fonction [!DNL Sites] déploiement uniquement si DAM distant et [!DNL Sites] les déploiements sont activés [!DNL Experience Manager].
+>Les mises à jour apportées aux ressources de gestion des ressources numériques à distance ne sont disponibles pour le déploiement de [!DNL Sites] que si les déploiements de gestion des ressources numériques à distance et de [!DNL Sites] sont sur [!DNL Experience Manager].
 
 ## Questions fréquemment posées {#frequently-asked-questions}
 
@@ -326,7 +327,7 @@ Vous pouvez ajouter des ressources au déploiement [!DNL Sites]. Toutefois, ces 
 * [!DNL Experience Manager] ne récupère pas les schémas de métadonnées. Il n’est donc pas possible d’afficher toutes les métadonnées extraites. Si le schéma est mis à jour séparément sur le déploiement [!DNL Sites], toutes les propriétés de métadonnées sont affichées.
 * Tous les auteurs [!DNL Sites] disposent de droits d’accès en lecture sur les copies récupérées, même s’ils n’en ont pas sur le déploiement DAM distant.
 * Il n’existe aucune prise en charge API pour personnaliser l’intégration.
-* Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une fois, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
+* Cette fonctionnalité permet de rechercher et d’utiliser aisément des ressources distantes. Pour rendre de nombreuses ressources distantes disponibles sur le déploiement local en une opération, envisagez de migrer les ressources. Voir le [guide de migration des ressources](assets-migration-guide.md).
 * Il n’est pas possible d’utiliser une ressource distante comme miniature de page dans l’interface utilisateur [!UICONTROL Propriétés de la page]. Vous pouvez définir une miniature d’une page web dans l’interface utilisateur [!UICONTROL Propriétés de la page] à partir de la [!UICONTROL miniature] en cliquant sur [!UICONTROL Sélectionner l’image].
 
 ### Configuration et licences {#setup-licensing}

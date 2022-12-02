@@ -30,12 +30,12 @@ Ce document vous aide à comprendre comment configurer un connecteur AEM pour le
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-## Structure d’intégration de la traduction {#tif}
+## Framework d’intégration de la traduction {#tif}
 
-La structure d’intégration de la traduction dans AEM s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM. Elle implique trois étapes de base.
+Le framework d’intégration de la traduction dans AEM s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM. Elle implique trois étapes de base.
 
 1. Connectez-vous à un fournisseur de services de traduction.
-1. Créez une configuration de structure d’intégration de traduction.
+1. Créez une configuration de framework d’intégration de traduction.
 1. Associez la configuration à votre contenu.
 
 Les sections suivantes décrivent ces étapes de manière plus détaillée.
@@ -136,5 +136,5 @@ Tirez parti de ces connaissances et continuez à progresser sur votre parcours d
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Configuration des règles de traduction](translation-rules.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, même s’ils ne sont pas nécessaires pour poursuivre le parcours en mode découplé.
 
-* [Configuration de la structure d’intégration de traduction](/help/sites-administering/tc-tic.md) : consultez la liste des connecteurs de traduction sélectionnés et apprenez à configurer la structure d’intégration de traduction pour l’intégration à des services de traduction tiers.
+* [Configuration de le framework d’intégration de traduction](/help/sites-administering/tc-tic.md) : consultez la liste des connecteurs de traduction sélectionnés et apprenez à configurer le framework d’intégration de traduction pour l’intégration à des services de traduction tiers.
 * [Connexion à Microsoft Translator](/help/sites-administering/tc-msconf.md) : AEM fournit un compte d’évaluation de traduction Microsoft à des fins de test.

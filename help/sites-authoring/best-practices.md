@@ -13,7 +13,7 @@ exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -27,39 +27,39 @@ Une documentation sur les meilleures pratiques est disponible pour les aspects s
 * [Sites](#sites)
 * [Forms](#forms)
 
-Pour connaître les meilleures pratiques en matière d’administration, de déploiement, de maintenance ou de développement, reportez-vous à l’une des ressources suivantes :
+Pour connaître les bonnes pratiques en matière d’administration, de déploiement, de maintenance ou de développement, reportez-vous à l’une des ressources suivantes :
 
-* [Meilleures pratiques d’administration](/help/sites-administering/administer-best-practices.md)
-* [Meilleures pratiques de développement](/help/sites-developing/best-practices.md)
-* [Déploiement de meilleures pratiques](/help/sites-deploying/best-practices.md)
+* [Bonnes pratiques d’administration](/help/sites-administering/administer-best-practices.md)
+* [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
+* [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, notamment la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>
   <tr>
    <td>Formats de fichier</td>
-   <td><a href="/help/assets/assets-file-format-best-practices.md">Meilleures pratiques concernant les formats de fichier de ressource </a></td>
-   <td>Décrit les meilleures pratiques dans la prise en charge des fichiers dans AEM Assets. </td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Bonnes pratiques concernant les formats de fichier de ressource</a></td>
+   <td>Décrit les bonnes pratiques de prise en charge des fichiers dans AEM Assets. </td>
   </tr>
   <tr>
    <td>Codage vidéo</td>
-   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Meilleures pratiques en matière de codage </a></td>
+   <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Bonnes pratiques en matière de codage</a></td>
    <td>Décrit les meilleures pratiques concernant le codage de fichiers vidéo source.</td>
   </tr>
   <tr>
    <td>Imagerie dynamique</td>
-   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Meilleures pratiques en matière d’imagerie dynamique </a></td>
-   <td><p>Décrit comment accentuer une image pour obtenir de meilleurs résultats et la meilleure manière d’optimiser la qualité de vos images si vous utilisez la fonctionnalité Dynamic Media ou effectuez une intégration avec Dynamic Media Classic. </p> </td>
+   <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Bonnes pratiques relatives à Dynamic Imaging</a></td>
+   <td><p>Décrit comment affiner une image pour obtenir les meilleurs résultats et la meilleure manière d’optimiser la qualité de vos images si vous utilisez la fonctionnalité de Dynamic Media ou si vous intégrez Dynamic Media Classic. </p> </td>
   </tr>
   <tr>
    <td>Ressources multilingues</td>
-   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Meilleures pratiques en matière de traduction</a></td>
-   <td>Décrit les meilleures pratiques concernant la traduction efficace des ressources AEM.</td>
+   <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">Bonnes pratiques en matière de traduction</a></td>
+   <td>Décrit les bonnes pratiques de traduction efficace des AEM Assets.</td>
   </tr>
  </tbody>
 </table>
@@ -71,11 +71,11 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
 |  |  |  |
 |---|---|---|
 | Outils de création | [Environnement et outils de création](/help/sites-authoring/author-environment-tools.md)  | Fournit un aperçu des outils utilisés pour créer des pages. |
-| Organisation des pages | [Création et organisation des pages](/help/sites-authoring/managing-pages.md) | Fournit une vue d’ensemble de la meilleure organisation de vos pages, y compris les conventions de dénomination. |
+| Organisation des pages | [Création et organisation des pages](/help/sites-authoring/managing-pages.md) | Fournit un aperçu de la meilleure manière d’organiser vos pages, y compris pour les conventions de nommage. |
 
 ## Forms {#forms}
 
 |  |  |  |
 |---|---|---|
-| Formulaires adaptatifs | [Meilleures pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) | Décrit les meilleures pratiques pour configurer, créer et personnaliser les formulaires adaptatifs. |
+| Formulaires adaptatifs | [Bonnes pratiques pour travailler avec les formulaires adaptatifs](/help/forms/using/adaptive-forms-best-practices.md) | Décrit les meilleures pratiques pour configurer, créer et personnaliser les formulaires adaptatifs. |
 | Formulaires HTML5 | [Meilleures pratiques pour concevoir des formulaires HTML5](/help/forms/using/best-practices-for-html5-forms.md) | Décrit les meilleures pratiques pour travailler sur la mise en page et la conception des formulaires HTML5. |

@@ -1,6 +1,6 @@
 ---
-title: Programme d’installation des correctifs d’AEM Forms JEE
-description: Programme d’installation des correctifs d’AEM Forms JEE
+title: Programme d’installation du correctif JEE AEM Forms
+description: Programme d’installation du correctif JEE AEM Forms
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
@@ -8,25 +8,25 @@ exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 34%
+ht-degree: 69%
 
 ---
 
-# Programme d’installation des correctifs d’AEM Forms JEE {#aem-forms-jee-patch-installer}
+# Programme d’installation du correctif JEE AEM Forms {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html) pour plus d’informations ou pour obtenir le correctif.
+>[Contactez l’assistance technique](https://www.adobe.com/account/sign-in.supportportal.html) pour plus d’informations ou pour obtenir le correctif.
 
-## A propos du programme d&#39;installation de correctif {#about-the-patch-installer}
+## À propos du programme d’installation du correctif {#about-the-patch-installer}
 
-Le programme d’installation du correctif Forms JEE d’AEM 6.5 comprend tous les problèmes résolus pour tous les composants d’AEM 6.5 Forms JEE disponibles jusqu’à la publication de ce correctif. Consultez la dernière version  [Notes de mise à jour du Service Pack](release-notes.md) pour obtenir une liste complète des problèmes résolus.
+Le programme d’installation du correctif JEE AEM 6.5 Forms comprend tous les problèmes résolus pour tous les composants JEE d’AEM 6.5 Forms disponibles jusqu’à la publication de ce correctif. Consultez les dernières [Notes de mise à jour du pack de services](release-notes.md) pour obtenir une liste complète des problèmes résolus.
 
 ## Prérequis pour installer le correctif {#prerequisites-to-installing-the-patch}
 
-* AEM 6.5 Forms
+* AEM 6.5 Forms
 
-## Installer et configurer le correctif {#installing-and-configuring-the-patch}
+## Installation et configuration du correctif {#installing-and-configuring-the-patch}
 
 1. Effectuez une sauvegarde du dossier de déploiement &lt;*AEM_forms_root*>/. Il est nécessaire si vous décidez de désinstaller le Quick Fix.
 1. Arrêtez le serveur d’applications.
@@ -34,12 +34,14 @@ Le programme d’installation du correctif Forms JEE d’AEM 6.5 comprend tous l
 1. Dans le répertoire, dont le nom dépend du système d’exploitation que vous utilisez :
 
    * **Windows**
-Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel vous avez copié le programme d’installation, puis double-cliquez sur le fichier aemforms65_cfp_install.exe .
+
+
+Accédez au répertoire approprié sur le support d’installation ou dans le dossier de votre disque dur dans lequel le programme d’installation a été copié, puis cliquez deux fois sur le fichier aemforms65_cfp_install.exe.
 
       * (Windows 32 bits) `Windows\Disk1\InstData\VM`
       * (Windows 64 bits) `Windows_64Bit`\ `Disk1\InstData\VM`
    * **Linux**
-Accédez au répertoire approprié, puis, à l’invite de commande, saisissez 
+Accédez au répertoire approprié puis, dans l’invite de commande, saisissez 
 `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
@@ -74,17 +76,17 @@ Accédez au répertoire approprié, puis, à l’invite de commande, saisissez
 
 ### Configurations SAML {#saml-configurations}
 
-Si l’authentification SAML est configurée et que vous rencontrez des problèmes avec les métadonnées IDP volumineuses, procédez comme suit après l’installation du correctif :
+Si l’authentification SAML est configurée et que vous rencontrez des problèmes avec des métadonnées IDP volumineuses, procédez comme suit après l’installation du correctif :
 
-1. Définissez la propriété système suivante dans votre serveur d’applications :\
+1. Définissez la propriété système suivante dans votre serveur d’applications :\
    `um.saml.enable.large.xml=true`
 1. Redémarrez le serveur.
 1. Supprimez les fournisseurs d’authentification SAML existants et ajoutez-les à nouveau pour les domaines existants, comme décrit dans les paramètres SAML.
 
 ## Modules touchés {#impacted-modules}
 
-* Services de document
-* Document Security
-* Foundation JEE
+* Document Services
+* Document Security
+* Foundation JEE
 
 [Contacter le support technique](https://www.adobe.com/account/sign-in.supportportal.html)

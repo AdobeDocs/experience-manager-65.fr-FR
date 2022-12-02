@@ -25,7 +25,7 @@ Si vous devez gérer du contenu ciblé, tel que des activités, des expériences
 >
 >L’utilisation de contenu ciblé sur plusieurs sites est une fonctionnalité avancée. Pour utiliser cette fonctionnalité, vous devez connaître [Multi Site Manager](/help/sites-administering/msm.md) ainsi que l’[intégration d’Adobe Target](/help/sites-administering/target.md) à AEM.
 
-Ce document fournit les éléments suivants :
+Ce document répond aux questions suivantes :
 
 * Une présentation succincte de la prise en charge de sites multiples sur AEM pour le contenu ciblé
 * Plusieurs scénarios sur la façon dont vous pouvez lier des sites (sous une même marque)
@@ -88,7 +88,7 @@ Vous pouvez également avoir **plusieurs** marques utilisées sur un même site,
 
 >[!NOTE]
 >
->Pour une approche plus technique de cette fonction, voir [Structure de la gestion de sites multiples pour le contenu ciblé](/help/sites-authoring/technical-multisite-targeted.md).
+>Pour une approche plus technique de cette fonction, consultez la section [Structure de la gestion multisite pour le contenu ciblé](/help/sites-authoring/technical-multisite-targeted.md).
 
 ## Exemple : ciblage de contenu basé sur la géographie {#example-targeting-content-based-on-geography}
 
@@ -186,7 +186,7 @@ Pour créer une zone comme Live Copy :
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Sélectionnez la zone dont vous souhaitez créer une Live Copy et cliquez sur **Suivant**.
+1. Sélectionnez la zone dont vous souhaitez créer une Live Copy et cliquez sur **Suivant**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 

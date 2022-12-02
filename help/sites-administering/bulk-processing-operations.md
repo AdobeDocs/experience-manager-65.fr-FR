@@ -1,7 +1,7 @@
 ---
 title: Opérations de traitement en bloc
 seo-title: Bulk Processing Operations
-description: 'null'
+description: null
 seo-description: null
 page-status-flag: never-activated
 uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
@@ -11,18 +11,18 @@ docset: aem65
 source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
 workflow-type: tm+mt
 source-wordcount: '377'
-ht-degree: 2%
+ht-degree: 100%
 
 ---
 
 
 # Opérations de traitement en bloc {#bulk-processing-operations}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
-Avec la version la plus récente d’AEM, le bouton Tout sélectionner a été étendu à toutes les vues : Mode Liste, Colonnes et Carte. Le bouton Tout sélectionner sélectionne désormais tout le contenu d’un dossier ou d’une collection donnée, et pas seulement les ressources et les pages chargées et visibles dans le navigateur client.
+Avec la version la plus récente d’AEM, le bouton Tout sélectionner a été étendu à tous les modes : Liste, Colonnes et Carte. Le bouton Tout sélectionner sélectionne désormais tout le contenu d’un dossier ou d’une collection donnée, et pas seulement les ressources et les pages chargées et visibles dans le navigateur client.
 
-Les actions clés ont été activées pour l’opération en bloc : **Déplacer**, **Supprimer** et **Copier**. Une nouvelle boîte de dialogue informera les clients des actions pour lesquelles le traitement en masse n’est pas disponible.
+Les actions principales ont été activées pour l’opération en bloc : **Déplacer**, **Supprimer** et **Copier**. Une nouvelle boîte de dialogue informera les clients des actions pour lesquelles le traitement en bloc n’est pas disponible.
 
 ## Utilisation {#how-to-use}
 
@@ -30,16 +30,16 @@ Un nouveau bouton appelé **Tout sélectionner** a été ajouté aux modes Carte
 
 Dans les versions précédentes d’AEM, la sélection était limitée à ce qui était chargé dans le navigateur client. Ces nouvelles modifications ont été introduites pour éviter toute confusion concernant le nombre d’éléments sur lesquels une opération en bloc est effectuée.
 
-Pour l’instant, trois opérations ont été ajoutées au traitement en masse :
+Pour l’instant, trois opérations ont été ajoutées au traitement en bloc :
 
 * Déplacer
 * Copier
 * Supprimer
 
 La prise en charge d’autres opérations sera ajoutée à l’avenir.
-Pour utiliser cette fonction, vous devez accéder au dossier ou à la collection dans lequel vous souhaitez effectuer des opérations en bloc sur les pages ou sur les ressources.
+Pour utiliser cette fonction, vous devez accéder au dossier ou à la collection où vous souhaitez effectuer des opérations en bloc sur les pages ou sur les ressources.
 
-Sélectionnez ensuite l’une des vues, comme illustré ci-dessous :
+Sélectionnez ensuite l’un des modes ci-dessous :
 
 ### Mode Carte {#card-view}
 
@@ -47,19 +47,19 @@ Sélectionnez ensuite l’une des vues, comme illustré ci-dessous :
 
 ### Sélection en bloc en mode Carte {#bulk-selection-in-card-view}
 
-Les ressources ou les pages peuvent être sélectionnées en bloc à l’aide du **Tout sélectionner** en haut à droite :
+Les ressources ou les pages peuvent être sélectionnées en bloc à l’aide du bouton **Tout sélectionner** en haut à droite :
 
 ![](assets/doi.png) ![](assets/trei.png)
 
 ### Mode Liste {#list-view}
 
-Il en va de même pour le mode Liste :
+Il en va de même pour le mode Liste :
 
 ![](assets/patru_modified.png)
 
-### Sélection en bloc en mode Liste {#bulk-selection-in-list-view}
+### Sélection en bloc en mode liste {#bulk-selection-in-list-view}
 
-En mode Liste, utilisez l’option **Tout sélectionner** ou utilisez la case à cocher située à gauche pour la sélection en bloc.
+En mode Liste, utilisez le bouton **Tout sélectionner** ou utilisez la case à cocher située à gauche pour utiliser la sélection en bloc.
 
 ![](assets/cinci.png) ![](assets/sase.png)
 
@@ -73,12 +73,12 @@ En mode Liste, utilisez l’option **Tout sélectionner** ou utilisez la case à
 
 ## Opérations activées en bloc {#bulk-enabled-operations}
 
-Une fois la sélection effectuée, l’une des trois actions activées en bloc peut être effectuée : **Déplacer**, **Copier** ou **Supprimer**.
+Une fois la sélection effectuée, l’une de ces trois actions activées en bloc peut être effectuée : **Déplacer**, **Copier** ou **Supprimer**.
 
-Ici, **Déplacer** est effectuée sur les ressources sélectionnées ci-dessus. Dans n’importe quel affichage, toutes les ressources sont alors déplacées vers l’emplacement choisi et pas seulement vers celles qui sont chargées à l’écran.
+Ici, l’opération **Déplacer** est effectuée sur les ressources sélectionnées ci-dessus. Dans n’importe quel de ces modes, toutes les ressources sont alors déplacées vers l’emplacement choisi et pas seulement vers celles qui sont chargées à l’écran.
 
 ![](assets/noua.png)
 
-Pour les autres opérations qui ne sont pas activées en bloc, comme **Télécharger,** un avertissement s’affiche indiquant que seuls les éléments chargés dans le navigateur seront inclus dans l’opération.
+Pour les autres opérations qui ne sont pas activées en bloc, comme **Télécharger**, un avertissement s’affiche indiquant que seuls les éléments chargés dans le navigateur seront inclus dans l’opération.
 
 ![](assets/zece.png)

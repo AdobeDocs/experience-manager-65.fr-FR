@@ -41,7 +41,7 @@ Il est possible de déplacer des composants (texte, image, etc.) et des ressourc
 Une fois un élément positionné sur la page, vous pouvez ouvrir une boîte de dialogue spécifique pour entrer du contenu et/ou configurer des caractéristiques de ce composant (taille de l’image, par exemple).
 
 * **Édition statique**
-Vous pouvez modifier les composants Texte et Image directement sur la page web sans ouvrir de boîte de dialogue ni procéder à un enregistrement explicite.
+Vous pouvez modifier les composants Texte et Image directement sur la page web sans avoir à ouvrir de boîte de dialogue ni procéder à un enregistrement explicite.
 
 * **[Explorateur de composants](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
 Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des composants sur la page, puis les modifier.

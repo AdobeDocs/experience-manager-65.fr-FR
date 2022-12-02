@@ -1,7 +1,7 @@
 ---
-title: Configuration du conteneur et du mode de mises en page
+title: Configuration du conteneur et du mode de disposition
 seo-title: Configuring Layout Container and Layout Mode
-description: Découvrez comment configurer le conteneur de mises en page et le mode Mise en page.
+description: Découvrez comment configurer le conteneur et le mode de disposition.
 seo-description: Learn how to configure Layout Container and Layout Mode.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
@@ -14,25 +14,25 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1309'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# Configuration du conteneur et du mode de mises en page{#configuring-layout-container-and-layout-mode}
+# Configuration du conteneur et du mode de disposition{#configuring-layout-container-and-layout-mode}
 
-[Mise en page réactive](/help/sites-authoring/responsive-layout.md) est un mécanisme de réalisation [responsive web design](https://en.wikipedia.org/wiki/Responsive_web_design). Les utilisateurs peuvent ainsi créer des pages web dont la mise en page et les dimensions dépendent des appareils utilisés.
+La [disposition réactive](/help/sites-authoring/responsive-layout.md) est un mécanisme qui permet de réaliser un [design web réactif](https://fr.wikipedia.org/wiki/Responsive_Web_design). Les utilisateurs peuvent ainsi créer des pages Web dont la disposition et les dimensions dépendent des appareils utilisés.
 
 >[!NOTE]
 >
->Ce mécanisme est comparable aux mécanismes de [web mobile](/help/sites-developing/mobile-web.md), qui utilisent la conception web adaptive (principalement pour l’interface utilisateur classique).
+>Ce mécanisme est comparable aux mécanismes de [Web mobile](/help/sites-developing/mobile-web.md), qui utilisent le design web adaptatif (principalement pour l’interface utilisateur classique).
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
 * Composant [**Conteneur de mises en page**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Ce composant fournit un système de paragraphes/grille qui vous permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme parsys par défaut pour votre page et/ou mis à la disposition des auteurs dans l’explorateur de composants.
+   Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut être utilisé comme système de paragraphes (parsys) par défaut pour votre page et mis à la disposition des créateurs dans l’explorateur de composants.
 
-   * La valeur par défaut **Conteneur de mises en page** est défini sous :
+   * Le composant **Conteneur de dispositions** par défaut est défini sous :
 
       /libs/wcm/foundation/components/responsivegrid
 
@@ -40,16 +40,16 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
       * en tant que composant que l’utilisateur peut ajouter à une page ;
       * comme système de paragraphes par défaut pour la page ;
-      * Les deux.
+      * les deux.
 
-         Le conteneur de mises en page peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
+         Le conteneur de dispositions peut être utilisé de manière standard pour la page, tout en permettant à l’utilisateur d’y ajouter d’autres conteneurs de mises en page, par exemple, pour contrôler les colonnes.
 
-* **[Mode Mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser la variable 
+* **[Mode Disposition](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
+Une fois que le conteneur de disposition est positionné sur la page, vous pouvez utiliser la 
 **Disposition** pour positionner le contenu dans la grille réactive.
 
 * [**Émulateur**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Permet de créer et de modifier des sites web en responsive design qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
+Permet de créer et de modifier des sites réactifs qui réorganisent la disposition en fonction de l’appareil ou de la taille de la fenêtre, en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
 >[!CAUTION]
 >
@@ -60,11 +60,11 @@ Grâce à ces mécanismes de grille responsive, vous pouvez effectuer les opéra
 * Utilisez les points d’arrêt (qui indiquent le groupement des appareils) pour définir le comportement du contenu différent en fonction de la disposition de l’appareil.
 * Masquez des composants en fonction du groupe d’appareils (définissez le point d’arrêt où un composant est masqué).
 * Utilisez l’alignement horizontal sur la grille (placer les composants dans la grille, les redimensionner selon les besoins, définir quand ils doivent être réduits ou développés pour être côte à côte ou l’un au-dessus de l’autre) ;
-* contrôler les colonnes.
+* Contrôlez les colonnes.
 
 >[!NOTE]
 >
->Dans une installation prête à l’emploi, une mise en page responsive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). Vous devez encore [activer le composant Conteneur de mises en page](#enable-the-layout-container-component-for-page) pour d’autres pages.
+>Dans une installation prête à l’emploi, une mise en page responsive a été configurée pour le [site de référence We.Retail](/help/sites-developing/we-retail.md). Vous devez encore [activer le composant Conteneur de dispositions](#enable-the-layout-container-component-for-page) pour d’autres pages.
 
 ## Configuration de l’émulateur en responsive design {#configuring-the-responsive-emulator}
 
@@ -80,11 +80,11 @@ Pour spécifier les groupes d’appareils qui s’affichent dans la liste des ap
 
 ### Liaison de votre site aux groupes d’appareils spécifiés {#link-your-site-to-the-specified-device-groups}
 
-Pour inclure l’émulateur, vous devez lier votre site aux groupes d’appareils. Voir [Ajout de la liste des périphériques](/help/sites-developing/responsive.md#adding-the-devices-list) (pour l’IU classique et l’IU optimisée pour les écrans tactiles).
+Pour inclure l’émulateur, vous devez lier votre site aux groupes d’appareils. Consultez [Ajout de la liste des périphériques](/help/sites-developing/responsive.md#adding-the-devices-list) (pour l’interface utilisateur classique et l’interface utilisateur optimisée pour les écrans tactiles).
 
-## Activation du mode Mise en page pour votre site {#activate-layout-mode-for-your-site}
+## Activation du mode Disposition pour votre site {#activate-layout-mode-for-your-site}
 
-Ces procédures sont utilisées pour activer les **Disposition** sur votre site.
+Ces procédures sont utilisées pour activer le mode **Disposition** sur votre site.
 
 ### Configuration des points d’arrêt {#configure-the-breakpoints}
 
@@ -116,7 +116,7 @@ Ils peuvent être définis à l’aide de CRXDE Lite ou de code XML.
 >Si vous migrez un projet existant (avec du contenu existant), vous devez :
 >
 >* ajouter des points d’arrêt aux modèles ;
->* ajouter les mêmes points d’arrêt aux pages existantes ;
+>* ajouter les mêmes points d’arrêt aux pages existantes.
 >
 >  Comme l’héritage est en cours d’opération, vous pouvez le limiter à la page racine de votre contenu.
 
@@ -125,9 +125,9 @@ Ils peuvent être définis à l’aide de CRXDE Lite ou de code XML.
 1. À l’aide de CRXDE Lite (ou équivalent), accédez à l’un des éléments suivants :
 
    * Définition de votre modèle
-   * Le `jcr:content` du noeud de votre page.
+   * Nœud `jcr:content` de votre page
 
-1. Sous `jcr:content` créez le noeud :
+1. Sous `jcr:content`, créez le nœud :
 
    * Nom : `cq:responsive`
    * Type : `nt:unstructured`
@@ -141,12 +141,12 @@ Ils peuvent être définis à l’aide de CRXDE Lite ou de code XML.
 
    * Nom : `<descriptive name>`
    * Type : `nt:unstructured`
-   * Titre: `String` * `<descriptive title seen in Emulator>`*
-   * Largeur: `Decimal` * `<value of breakpoint>`*
+   * Titre : `String` * `<descriptive title seen in Emulator>`*
+   * Largeur : `Decimal` * `<value of breakpoint>`*
 
 #### Configuration des points d’arrêt à l’aide de code XML {#configuring-breakpoints-using-xml}
 
-Les points d’arrêt se trouvent dans la variable `<jcr:content>` de la section `.context.html` sous le dossier de modèle (ou de contenu) approprié.
+Les points d’arrêt se trouvent à l’intérieur de la section `<jcr:content>` du fichier `.context.html` sous le dossier de modèles (ou de contenu) approprié.
 
 Exemple de définition :
 
@@ -171,7 +171,7 @@ Copiez le nœud `cq:infoProviders` ci-dessous dans votre composant Page parent 
 
 ## Activation du redimensionnement des composants pour la page {#enable-component-resizing-for-the-page}
 
-Ces procédures sont requises afin que vous puissiez redimensionner les composants dans **Disposition** mode .
+Ces procédures sont nécessaires afin de redimensionner des composants en mode **Disposition**.
 
 ### Définition du conteneur de mises en page comme système de paragraphes principal {#set-layout-container-as-main-parsys}
 
@@ -186,13 +186,13 @@ Dans :
 
 Les deux exemples ci-dessous illustrent la définition :
 
-* **HTL:**
+* **HTL :**
 
    ```xml
    <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
    ```
 
-* **JSP:**
+* **JSP :**
 
    ```
    <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
@@ -242,11 +242,11 @@ Les composants contenus dans un conteneur responsive sont redimensionnés (ainsi
 
 Par exemple :
 
-* Avant:
+* Avant :
 
    * `width=100px`
 
-* Après:
+* Après :
 
    * `max-width=100px`
 
@@ -260,7 +260,7 @@ Tout redimensionnement d’un composant dans la grille déclenche les programmes
 
 * `afterchildedit`
 
-Pour redimensionner et mettre à jour correctement le contenu d’une image adaptative incluse dans une grille réactive, vous devez ajouter une `afterEdit` défini sur `REFRESH_PAGE` écouteur dans la `EditConfig` de chaque composant contenu.
+Pour redimensionner et mettre à jour correctement le contenu d’une image adaptative incluse dans une grille responsive, vous devez ajouter un ensemble `afterEdit` au programme d’écoute `REFRESH_PAGE` dans le fichier `EditConfig` de chaque composant contenu.
 
 Par exemple :
 
@@ -270,7 +270,7 @@ Le mécanisme d’image adaptative est disponible par le biais d’un script qui
 
 >[!CAUTION]
 >
->Les clientlibs de feuille de style personnalisées doivent être chargées dans l’en-tête pour qu’elles fonctionnent correctement sur l’auteur et la publication.
+>Pour que les bibliothèques clientes de feuilles de style personnalisées fonctionnent correctement tant dans un environnement de création que dans un environnement de publication, elles doivent être chargées dans l’en-tête.
 
 ## Activation du composant Conteneur de mises en page pour une page {#enable-the-layout-container-component-for-page}
 

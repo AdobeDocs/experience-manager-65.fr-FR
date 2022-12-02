@@ -1,6 +1,6 @@
 ---
-title: Utilisation du module de démonstration pour les statistiques sur les ressources
-description: Utilisez le module de démonstration pour permettre à Adobe Assets Insights de capturer des données à partir de et de générer des informations pour une page web.
+title: Utilisation du module de démonstration pour Assets Insights
+description: Utilisez le module de démonstration afin de permettre à Adobe Assets Insights de capturer les données d’une page web et de générer des informations pour cette page.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
@@ -8,18 +8,18 @@ exl-id: 13947513-da76-43e1-ae01-abd24a59752a
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '160'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
-# Utilisation du module de démonstration pour les statistiques sur les ressources {#using-demo-package-for-asset-insights}
+# Utilisation du module de démonstration pour Assets Insights {#using-demo-package-for-asset-insights}
 
-À l’aide du module de démonstration, vous pouvez activer Adobe Assets Insights pour capturer des données à partir de et générer des informations pour un exemple de page web.
+À l’aide du module de démonstration, vous pouvez permettre à Adobe Asset Insights de capturer les données d’un exemple de page web et de générer des informations pour cette page.
 
-## [!DNL Use Experience Manager Assets] Informations avec un exemple de page web  {#using-aem-assets-insights-with-sample-web-page}
+## [!DNL Use Experience Manager Assets] Insights avec un exemple de page web  {#using-aem-assets-insights-with-sample-web-page}
 
-1. Configurez les statistiques sur les ressources en suivant les instructions de la rubrique [Configuration des statistiques sur les ressources](configure-asset-insights.md).
-1. Téléchargez le module d’exemple  Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
+1. Configurez Assets Insights en suivant les instructions de la section [Configuration d’Assets Insights](configure-asset-insights.md).
+1. Téléchargez le module d’exemple Assets ci-dessous et installez-le à partir du gestionnaire de modules CRXDE.
 
 [Obtenir le fichier](assets/insightsdemo.zip)
 
@@ -35,4 +35,4 @@ ht-degree: 51%
 
    >[!NOTE]
    >
-   >La page Web externe peut se trouver dans [!DNL Experience Manager] elle-même.
+   >La page web externe peut se trouver dans [!DNL Experience Manager] lui-même.

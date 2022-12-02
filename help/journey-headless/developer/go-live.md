@@ -1,17 +1,17 @@
 ---
 title: Comment mettre en ligne votre application découplée
-description: Dans cette partie du Parcours de développement AEM sans interface utilisateur, apprenez à déployer une application sans interface utilisateur.
+description: Dans cette partie du Parcours de développement AEM découplé, apprenez à déployer une application découplée.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Comment mettre en ligne votre application découplée {#go-live}
 
-Dans cette partie du [AEM Parcours développeur sans tête](overview.md), découvrez comment déployer une application sans interface utilisateur graphique en direct.
+Dans cette partie du [Parcours de développement AEM découplé](overview.md), découvrez comment déployer une application découplée en direct.
 
 ## Un peu d’histoire...  {#story-so-far}
 
@@ -56,7 +56,7 @@ Vous utiliserez Git pour gérer le contrôle de code source et pour archiver les
 
 AEM utilise Apache Maven pour créer des projets générés à partir de l’archétype de projet AEM Maven. Tous les environnements de développement intégré majeurs prennent en charge l’intégration de Maven.
 
-Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est de facto le gestionnaire de modules Node.js, utilisé pour gérer les dépendances JavaScript.
+Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est le gestionnaire de modules Node.js utilisé de facto pour gérer les dépendances JavaScript.
 
 ## Composants d’un système AEM en un coup d’œil {#components-of-an-aem-system-at-a-glance}
 
@@ -102,9 +102,9 @@ Pour plus d’informations sur la configuration d’un environnement de dévelop
 
 Il est maintenant temps de préparer votre application découplée AEM pour son lancement, en observant les bonnes pratiques décrites ci-dessous.
 
-### Sécurisation de l’application sans affichage avant le lancement {#secure-and-scale-before-launch}
+### Sécurisation de votre application découplée avant son lancement {#secure-and-scale-before-launch}
 
-1. Préparer [Authentification](/help/assets/content-fragments/graphql-authentication-content-fragments.md) pour vos requêtes GraphQL
+1. Préparez votre [Authentification](/help/assets/content-fragments/graphql-authentication-content-fragments.md) pour vos requêtes GraphQL.
 
 ### Structure du modèle par rapport à l’output GraphQL {#structure-vs-output}
 
@@ -123,7 +123,7 @@ Il est maintenant temps de préparer votre application découplée AEM pour son 
 
 >[!NOTE]
 >
->Voir [Ressources supplémentaires](#additional-resources) pour plus d’informations sur le réseau de diffusion de contenu et la mise en cache.
+>Consultez les [Ressources supplémentaires](#additional-resources) pour plus d’informations sur le réseau de diffusion de contenu et la mise en cache.
 
 ### Amélioration du temps de téléchargement du contenu découplé {#improve-download-time}
 
@@ -137,15 +137,15 @@ Il est maintenant temps de préparer votre application découplée AEM pour son 
 
 ## Déploiement en environnement de production {#deploy-to-production}
 
-Le déploiement en production peut dépendre de l’existence ou non d’un *traditionnel* AEM instance qui se déploie à l’aide de Maven ou qui se trouvent sur Adobe Managed Services (AMS) et qui, par conséquent, utilisent Cloud Manager.
+Le déploiement en exploitation peut dépendre de l’existence ou non d’une instance AEM *traditionnelle* déployée à l’aide de Maven ou qui se trouve sur Adobe Managed Services (AMS) et qui, par conséquent, utilise Cloud Manager.
 
-## Déploiement en production à l’aide de Maven {#deploy-to-production-maven}
+## Déploiement en exploitation à l’aide de Maven {#deploy-to-production-maven}
 
-Pour un *traditionnel* déploiement (non AMS) à l’aide de Maven, vous pouvez voir la variable [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) pour une vue d’ensemble.
+Concernant les déploiements *traditionnels* (non AMS) à l’aide de Maven, vous pouvez consulter le [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr#build) pour obtenir une vue d’ensemble.
 
-## Déploiement en production à l’aide de Cloud Manager {#deploy-to-production-cloud-manager}
+## Déploiement en exploitation à l’aide de Cloud Manager {#deploy-to-production-cloud-manager}
 
-Si vous êtes un client AMS utilisant Cloud Manager, une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à transmettre vos mises à jour de code à un [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr).
+Si vous êtes un client AMS utilisant Cloud Manager, une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à transmettre vos mises à jour de code au [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr).
 
 Une fois les mises à jour transférées vers Cloud Manager, elles peuvent être déployées vers AEM à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
@@ -214,14 +214,14 @@ Si ce type de flexibilité est nécessaire pour votre projet, passez à la secti
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Guide de développement d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [Guide de développement d’AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=fr)
 
 * [Tutoriel WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
 
-* [Cloud Manager pour AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
+* [Cloud Manager pour AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
 
 * Cache CDN
 
-   * [Contrôle d’un cache CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+   * [Contrôle d’un cache CDN ](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#controlling-a-cdn-cache)
 
-   * Configuration de la variable [Réécriture CDN](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*recherche de CDN Rewriter*)
+   * Configuration du [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=fr) (*recherchez « CDN Rewriter »*)

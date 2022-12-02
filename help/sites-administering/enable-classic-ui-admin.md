@@ -14,7 +14,7 @@ exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 68%
 
 Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lors du survol du curseur sur certaines icônes de la console, et qui permettaient d’accéder à l’IU classique, ne sont plus affichées.
 
-Chaque console disposant d’une version d’interface utilisateur classique dans `/libs/cq/core/content/nav` peut être réactivé individuellement de sorte que la variable **IU classique** s’affiche une fois de plus sur l’icône de la console lorsqu’elle est pointée.
+Chaque console qui possède une version d’IU classique dans `/libs/cq/core/content/nav` peut être réactivée individuellement afin que l’option **IU classique** s’affiche à nouveau lors du survol du curseur sur l’icône de la console.
 
 Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
-1. À l’aide de CRXDE Lite, recherchez le noeud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’interface utilisateur classique. Il se trouve sous :
+1. À l’aide de CRXDE Lite, recherchez le nœud correspondant à la console d’administration pour laquelle vous souhaitez réactiver l’IU classique. Il se trouve sous :
 
    `/libs/cq/core/content/nav`
 
@@ -38,10 +38,10 @@ Dans cet exemple, nous réactivons l’IU classique pour la console Sites.
 
    `/libs/cq/core/content/nav/sites`
 
-1. Créez une superposition à l’aide de la fonction **Noeud de recouvrement** option; par exemple :
+1. Créez un recouvrement à l’aide de l’option **Nœud de recouvrement** ; par exemple :
 
-   * **Chemin**: `/apps/cq/core/content/nav/sites`
-   * **Emplacement du recouvrement**: `/apps/`
+   * **Chemin** : `/apps/cq/core/content/nav/sites`
+   * **Emplacement du recouvrement** : `/apps/`
    * **Faire correspondre les types de nœuds** : actif (cochez la case)
 
 1. Ajoutez la propriété booléenne suivante au nœud recouvert :

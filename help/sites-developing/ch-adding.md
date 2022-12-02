@@ -2,10 +2,10 @@
 title: Ajout de ContextHub à des pages et accès à des magasins
 description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '927'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -107,13 +107,13 @@ Notez que les magasins candidats personnalisés peuvent définir des fonctions s
 
 >[!NOTE]
 >
->Par défaut, ContextHub ne connaît pas les utilisateurs actuellement connectés sur les serveurs de publication. Il considère ces utilisateurs comme étant anonymes.
+>ContextHub ne connaît pas par défaut l’ID actuellement connecté utilisé sur les serveurs de publication et ces utilisateurs sont considérés par ContextHub comme &quot;anonymes&quot;.
 >
 >Vous pouvez sensibiliser ContextHub aux utilisateurs connectés en chargeant le magasin de profils. Consultez l’[exemple de code sur GitHub ici](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
 ### Génération d’événements ContextHub {#contexthub-eventing}
 
-ContextHub comprend une structure d’événements qui vous permet de répondre automatiquement aux événements du magasin. Chaque objet du magasin contient un objet [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) disponible sous la forme d’une propriété [`eventing`](contexthub-api.md#eventing) du magasin. Utilisez la fonction [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) ou [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) pour lier une fonction JavaScript à un événement de magasin.
+ContextHub comprend un framework d’événements qui vous permet de répondre automatiquement aux événements du magasin. Chaque objet du magasin contient un objet [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) disponible sous la forme d’une propriété [`eventing`](contexthub-api.md#eventing) du magasin. Utilisez la fonction [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) ou [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) pour lier une fonction JavaScript à un événement de magasin.
 
 ## Utilisation de ContextHub pour manipuler des cookies {#using-context-hub-to-manipulate-cookies}
 
@@ -147,4 +147,4 @@ Il existe un certain nombre d’options pour déboguer ContextHub, y compris la 
 
 ## Affichage d’un aperçu de la structure ContextHub {#see-an-overview-of-the-contexthub-framework}
 
-ContextHub fournit une [page de diagnostics](ch-diagnostics.md) qui affiche un aperçu de sa structure.
+ContextHub fournit une [page de diagnostics](ch-diagnostics.md) qui affiche un aperçu de son framework.

@@ -111,7 +111,7 @@ ht-degree: 100%
          + [Comment assembler l’ensemble](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/put-it-all-together.html?lang=fr)
          + [Comment mettre en ligne votre application découplée](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/go-live.html?lang=fr)
          + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/developer/create-spa.html?lang=fr)
-      + Parcours d’architecture de contenu découplé{#architect}
+      + Parcours d’architecture de contenu découplé {#architect}
          + [Présentation du parcours d’architecture de contenu découplé AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/overview.html?lang=fr)
          + [Modélisation de contenu pour le découplage avec AEM – Introduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/introduction.html?lang=fr)
          + [En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html?lang=fr)

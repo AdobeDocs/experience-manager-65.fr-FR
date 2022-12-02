@@ -13,19 +13,19 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Documents de référence SPA {#spa-reference-materials}
 
-## Références de l’API JavaScript SPA{#spa-javascript-api-references}
+## Références de l’API JavaScript de SPA{#spa-javascript-api-references}
 
-Vous trouverez ci-dessous les références d’API JavaScript disponibles des modules NPM pour le framework SDK de l’éditeur de SPA AEM.
+Vous trouverez ci-dessous les références de l’API JavaScript disponibles des modules NPM pour le framework de SDK de l’éditeur de SPA d’AEM.
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
 * [Mappage de composant](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Gestionnaire de modèle de page](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

@@ -38,7 +38,7 @@ La Communauté AEM crée régulièrement des exemples de workflows et de code, e
 
 ## Guides de prise en main des différentes fonctionnalités d’AEM {#getting-started}
 
-AEM peut être utilisé de plusieurs façons dans les organisations de service et offre des fonctionnalités à l’échelle de l’entreprise. Si vous vous demandez par où commencer, consultez nos guides de prise en main :
+AEM peut être utilisé de plusieurs façons dans les organisations de service et offre des fonctionnalités à l’échelle de l’entreprise. Si vous vous demandez par où commencer, consultez nos guides de prise en main :
 
 * [Prise en main d’AEM Platform et Sites](/help/sites-deploying/deploy.md#getting-started)
 * [Prise en main d’AEM Forms](/help/forms/using/introduction-aem-forms.md)

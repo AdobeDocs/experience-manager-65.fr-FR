@@ -13,7 +13,7 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1818'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Les informations suivantes sont des suggestions et des commentaires formulés pa
 
 David Nuescheler est l’un des fondateurs de Day Software AG, principal fournisseur de logiciels d’infrastructure de contenu et de gestion de contenu global, racheté par Adobe en 2010. Il occupait également le poste de directeur de la technologie au sein de cette société. Il est aujourd’hui vice-président de la technologie d’entreprise chez Adobe et dirige le développement de l’interface JSR-170, l’API JCR (Java Content Repository), qui est la technologie standard pour la gestion du contenu.
 
-D’autres mises à jour sont également disponibles sur [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Vous trouverez d’autres informations à l’adresse suivante : [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Introduction de David Nuescheler {#introduction-from-david}
 
@@ -37,11 +37,11 @@ J’aimerais combler cette lacune en exprimant mon opinion personnelle sur la fa
 
 >[!NOTE]
 >
->Clause de non-responsabilité : Ces lignes directrices sont l’expression de mes opinions personnelles, qui sont parfois sujettes à controverse. Je suis impatient d’en discuter et de les affiner.
+>Clause de non-responsabilité : ces lignes directrices sont l’expression de mes opinions personnelles, qui sont parfois sujettes à controverse. Je suis impatient d’en discuter et de les affiner.
 
 ## Sept règles simples {#seven-simple-rules}
 
-### Règle #1 : Les données d’abord, la structure ensuite. Normalement… {#rule-data-first-structure-later-maybe}
+### Règle n°1 : l es données d’abord, la structure ensuite. Normalement… {#rule-data-first-structure-later-maybe}
 
 #### Explication {#explanation-1}
 
@@ -59,13 +59,13 @@ Des contraintes de données supplémentaires, comme des contraintes de type ou d
 
 #### Exemple {#example-1}
 
-L’exemple d’utilisation de la propriété de date `lastModified` sur un nœud « article de blog » ne signifie pas vraiment qu’il faut utiliser un type de nœud particulier. Je vais certainement utiliser `nt:unstructured` pour mes nœuds d’article de blog, du moins au début. Puisque, dans mon application de création de blog, je vais simplement afficher la date de la dernière modification (éventuellement en exécutant la fonction « classer par »), je me soucie peu s’il s’agit d’une date. Étant donné que je fais implicitement confiance à mon application de création de blog pour placer une « date » à cet endroit, il n’est aucunement nécessaire de déclarer la présence d’une date `lastModified` sous la forme d’un type de nœud.
+L’exemple d’utilisation de la propriété de date `lastModified` sur un nœud « article de blog » ne signifie pas vraiment qu’il faut utiliser un type de nœud particulier. Je vais à coup sûr utiliser `nt:unstructured` pour mes nœuds d’article de blog, du moins au début. Puisque, dans mon application de création de blog, je vais simplement afficher la date de la dernière modification (éventuellement en exécutant la fonction « classer par »), je me soucie peu s’il s’agit d’une date. Étant donné que je fais implicitement confiance à mon application de création de blog pour placer une « date » à cet endroit, il n’est aucunement nécessaire de déclarer la présence d’une date `lastModified` sous la forme d’un type de nœud.
 
-### Règle n° 2 : Prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
+### Règle n°2 : prenez le contrôle de la hiérarchie de contenu, ne la laissez pas vous diriger. {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
 #### Explication {#explanation-2}
 
-La hiérarchie de contenu est une ressource très précieuse. Ne laissez pas simplement les choses se faire, prenez en main la conception ! Si vous n’avez pas de &quot;bon&quot; nom lisible par l’homme pour un noeud, c’est probablement quelque chose que vous devriez reconsidérer. Un nombre arbitraire constitue rarement un « nom acceptable ».
+La hiérarchie de contenu est une ressource très précieuse. Ne laissez pas simplement les choses se faire, prenez en main la conception ! Si vous ne disposez pas d’un nom facilement lisible pour un nœud, vous devriez y réfléchir un peu plus. Un nombre arbitraire constitue rarement un « nom acceptable ».
 
 S’il peut s’avérer extrêmement simple de placer rapidement un modèle relationnel existant dans un modèle hiérarchique, ce processus doit faire l’objet d’une certaine réflexion.
 
@@ -77,7 +77,7 @@ Personnellement, je préfère, dans la majorité des cas, utiliser les conventio
 >
 >La structure d’un référentiel de contenu peut également se répercuter sur les performances. Pour de meilleures performances, le nombre de nœuds enfants associés à des nœuds individuels dans un référentiel de contenu doit généralement être inférieur à 1 000.
 >
->Voir [Quelle quantité de données CRX peut-il gérer ?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) pour plus d’informations.
+>Pour plus d’informations, reportez-vous à la section [Quelle quantité de données CRX peut-il traiter ?](https://helpx.adobe.com/fr/experience-manager/kb/CrxLimitation.html) pour plus d’informations.
 
 #### Exemple {#example-2}
 
@@ -93,7 +93,7 @@ Je vais modéliser un simple système de blogage comme suit. Vous constaterez qu
 /content/myblog/comments/iphone_shipping/i_like_it_too/i_hate_it
 ```
 
-Je pense que l&#39;une des choses qui devient visible est que nous comprenons tous la structure du contenu basé sur l&#39;exemple sans aucune explication supplémentaire.
+Il est évident que nous comprenons tous la structure du contenu sur la base de l’exemple, sans qu’aucune autre explication ne soit nécessaire.
 
 Au début, le fait que je ne stocke pas les « commentaires » avec l’article peut sembler étonnant. Cela est dû au contrôle d’accès que je souhaite appliquer d’une manière hiérarchique raisonnable.
 
@@ -103,7 +103,7 @@ Grâce au modèle de contenu ci-dessus, je peux facilement autoriser l’utilisa
 
 #### Explication {#explanation-3}
 
-Si vous n’utilisez pas `clone()`, `merge()` ou `update()` dans votre application, un seul espace de travail est probablement la solution.
+Si vous n’utilisez pas de méthode `clone()`, `merge()` ou `update()` dans votre application, l’espace de travail unique est probablement la voie à suivre.
 
 La « correspondance des nœuds » est un concept défini dans la spécification JCR. Il s’agit, en fait, de nœuds qui représentent le même contenu dans ce que l’on désigne comme des espaces de travail différents.
 
@@ -172,17 +172,17 @@ Par conséquent, je vais soit modéliser ces références sous la forme de « r
 
 Je pense qu’il est des situations dans lesquelles il est impossible qu’un système fonctionne si une référence est « pendouillante ». Cependant, il ne me vient, en ce moment, aucun exemple simple qui pourrait illustrer ce type de situation.
 
-### Règle #6 : Les fichiers sont des fichiers. {#rule-files-are-files}
+### Règle n°6 : des fichiers sont des fichiers. {#rule-files-are-files}
 
 #### Explication {#explanation-6}
 
-Si un modèle de contenu expose quelque chose qui existe à distance *smells* comme un fichier ou un dossier que j’essaie d’utiliser (ou à partir duquel je tente d’étendre). `nt:file`, `nt:folder` et `nt:resource`.
+Si un modèle de contenu expose quelque chose qui, même de loin, *ressemble* à un fichier ou un dossier, j’essaie d’utiliser (ou de développer à partir de) `nt:file`, `nt:folder` et `nt:resource`.
 
 Avec l’expérience, j’ai constaté que de nombreuses applications génériques autorisaient implicitement une interaction avec nt:folder et nt:files, et savaient comment traiter et afficher ces événements s’ils étaient enrichis de méta-informations supplémentaires. Par exemple, une interaction directe avec des implémentations de serveurs de fichiers, comme CIFS ou WebDAV au-dessus de JCR, deviennent implicites.
 
-Je pense qu&#39;en règle générale, on pourrait utiliser ce qui suit : Si vous devez stocker le nom de fichier et le type MIME, `nt:file`/ `nt:resource` est une très bonne correspondance. Si plusieurs « fichiers » sont possibles, nt:folder constitue l’emplacement de stockage idéal.
+Je pense qu’il est judicieux d’appliquer la méthode suivante : si vous devez stocker le nom de fichier et le type MIME, `nt:resource`/`nt:file` convient parfaitement. Si vous pouvez avoir plusieurs « fichiers », nt:folder constitue l’emplacement de stockage idéal.
 
-Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur », par exemple), étendez `nt:resource` et non `nt:file`. J’étend rarement nt:file et m’étend fréquemment. `nt:resource`.
+Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur », par exemple), étendez `nt:resource` et non `nt:file`. J’étends rarement un nt:file, mais souvent un `nt:resource`.
 
 #### Exemple {#example-6}
 
@@ -214,13 +214,13 @@ Il est vrai que certains nœuds ont besoin d’une identification stable tout au
 
 Gardez également à l’esprit que les éléments peuvent être identifiés par un chemin d’accès et, autant il est judicieux d’utiliser des « liens symboliques » plutôt que des liens matériels dans un système de fichiers UNIX, autant l’utilisation d’un chemin d’accès semble logique dans la plupart des applications pour faire référence à un nœud cible.
 
-Plus important encore, il s’agit de **mix**:référenceable, ce qui signifie qu’il peut être appliqué à un noeud au moment où vous devez le référencer.
+Plus important encore : **mix**:referenceable signifie qu’il peut être appliqué à un nœud au moment où il est vraiment nécessaire de le référencer.
 
 Dès lors, ce n’est pas parce que vous aimeriez être en mesure de référencer un nœud de type « Document » que votre type de nœud « Document » doit s’étendre de manière statique depuis mix:referenceable, car il peut être ajouté de façon dynamique à n’importe quelle instance du « Document ».
 
 #### Exemple {#example-7}
 
-Utilisez:
+Utilisez :
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

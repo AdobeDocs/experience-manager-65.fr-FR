@@ -3,21 +3,21 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: Guide de l’utilisateur pour la création dans AEM 6.5 Classic UI
-user-guide-description: Ce guide couvre les concepts de création dans AEM dans l’interface utilisateur classique.
+user-guide-title: Guide de l’utilisateur pour l’IU classique de création dans AEM 6.5
+user-guide-description: Ce guide recouvre les concepts de création dans AEM dans l’interface utilisateur classique.
 feature: Authoring
 role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 
-# Guide de l’utilisateur pour la création dans AEM 6.5 Classic UI {#classic-ui}
+# Guide de l’utilisateur pour l’IU classique de création dans AEM 6.5 {#classic-ui}
 
-+ [Guide de création de l’interface utilisateur classique - Aperçu](home.md)
++ [Aperçu du guide de création dans l’interface utilisateur classique](home.md)
 + Présentation de la création dans l’interface utilisateur classique {#introduction}
    + [Premières étapes pour les auteurs](classic-page-author-first-steps.md)
    + [Création dans l’IU classique](classicui.md)
@@ -62,27 +62,27 @@ ht-degree: 83%
 + Personnalisation  {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
-   + [Pages d’entrée](classic-personalization-campaigns-landingpage.md)
+   + [Pages de destinations](classic-personalization-campaigns-landingpage.md)
    + [Offres Target](classic-personalization-campaigns-target-offers.md)
-   + [Marketing par messagerie électronique](classic-personalization-campaigns-email.md)
-   + [Suivi des messages rejetés](classic-personalization-campaigns-email-tracking-bounces.md)
+   + [Marketing par e-mail](classic-personalization-campaigns-email.md)
+   + [Suivi des e-mails rejetés](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Teasers et stratégies](classic-personalization-campaigns-teasers-strategy.md)
    + [Configuration d’une campagne](classic-personalization-campaigns-setting-up-your.md)
-   + [Publication d’un message électronique sur des services de messagerie](classic-personalization-campaigns-email-newsletters.md)
-   + [Utilisation de Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
+   + [Publication d’un e-mail sur des services de messagerie](classic-personalization-campaigns-email-newsletters.md)
+   + [Utilisation de Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
    + [Création d’une page d’entrée efficace pour une newsletter](classic-personalization-campaigns-email-landingpage.md)
    + [Gestion des abonnements](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
-   + [Utilisation d’Adobe Campaign 6.1 et d’Adobe Campaign Standard](classic-personalization-ac-campaign.md)
-   + [Utilisation d’Adobe Campaign](classic-personalization-ac.md)
-   + [Composants d’Adobe Campaign](classic-personalization-ac-components.md)
-   + [Ciblage d’un élément de campagne Adobe Campaign](classic-personalization-ac-target.md)
-   + [Création de formulaires Adobe Campaign dans AEM](classic-personalization-ac-forms.md)
+   + [Utilisation d’Adobe Campaign 6.1 et d’Adobe Campaign Standard](classic-personalization-ac-campaign.md)
+   + [Utilisation d’Adobe Campaign](classic-personalization-ac.md)
+   + [Composants d’Adobe Campaign](classic-personalization-ac-components.md)
+   + [Ciblage d’un élément Adobe Campaign](classic-personalization-ac-target.md)
+   + [Création de formulaires Adobe Campaign dans AEM](classic-personalization-ac-forms.md)
 + Création de ressources dans l’interface utilisateur classique {#assets}
    + [Utilisation des ressources](classicui-assets.md)
    + [Diffusion de ressources Dynamic Media](dynamic-media-assets-delivering.md)
    + [Ajout de ressources Dynamic Media aux pages](dynamic-media-assets-adding-to-page.md)
    + [Ajout de fonctionnalités Scene7 à votre page](manage-assets-classic-s7.md)
-   + [Vidéo ](manage-assets-classic-s7-video.md)
-   + [Utilisation de Dynamic Media](dynamic-media-assets.md)
-   + [Conventions de dénomination pour le test des ressources](asset-naming-conventions.md)
+   + [Vidéo](manage-assets-classic-s7-video.md)
+   + [Utilisation de Dynamic Media](dynamic-media-assets.md)
+   + [Conventions de nommage pour le test des ressources](asset-naming-conventions.md)

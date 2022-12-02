@@ -13,7 +13,7 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 82%
 
 Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans l’explorateur de composants.
 
-En outre, divers autres composants sont également disponibles. Vous pouvez utiliser le mode Conception pour [activer/désactiver ces composants ;](#enable-disable-components). Lorsque cette option est activée et située sur votre page, vous pouvez ensuite utiliser le mode Conception pour [configuration des aspects de la conception de composant](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
+D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [activer/désactiver ces composants](#enable-disable-components). Une fois ces composants activés et situés sur votre page, utilisez le mode de conception pour [configurer différents aspects de la conception](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
 
 >[!NOTE]
 >
->Il convient de faire attention lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges et de l’expérience appropriés, généralement un administrateur ou un développeur. Pour plus d’informations, voir [Développement de composants](/help/sites-developing/components.md).
+>Il convient de faire attention lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges et de l’expérience appropriés, généralement un administrateur ou un développeur. Pour plus d’informations, consultez [Développement de composants](/help/sites-developing/components.md).
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ En outre, divers autres composants sont également disponibles. Vous pouvez util
 
 >[!NOTE]
 >
->Le mode de conception est uniquement disponible pour les configurations de conception stockées en tant que contenu sous ( `/etc`).
+>Le mode de conception est uniquement disponible pour les configurations de conception stockées en tant que contenu sous (`/etc`).
 >
->À compter d’AEM 6.4, il est recommandé de stocker les conceptions en tant que données de configuration sous `/apps` pour prendre en charge les scénarios de déploiement continus. Conceptions stockées sous `/apps` ne sont pas modifiables au moment de l’exécution et le mode de conception ne sera pas disponible pour les utilisateurs non-administrateurs de ces modèles.
+>À partir d’AEM 6.4, il est recommandé de stocker les conceptions en tant que données de configuration sous `/apps` pour prendre en charge les scénarios de déploiement continus. Les conceptions stockées sous `/apps` ne sont pas modifiables à l’exécution, et les utilisateurs non administrateurs n’auront pas accès au mode de conception pour les modèles en question.
 
 Pour ce faire, vous devrez ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
 
@@ -54,7 +54,7 @@ Par exemple, le contenu d’une page des produits peut contenir un système de p
 >
 >La modification de la conception en mode Création, telle que décrite dans cet article, est la méthode recommandée pour définir des conceptions de modèles statiques.
 >
->La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu. Pour plus d’informations, consultez le document [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied), à l’attention du développeur.
+>La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu. Pour plus d’informations, consultez le document [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied), à l’attention du développeur.
 
 ## Activation/désactivation des composants {#enable-disable-components}
 
@@ -68,7 +68,7 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Cliquez ou appuyez sur **Parent** icône .
+1. Cliquez ou appuyez sur l’icône **Parent**.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -91,7 +91,7 @@ Pour activer ou désactiver un composant :
 
    **Composants autorisés**
 
-   Sur le **Composants autorisés** , vous définissez les composants disponibles pour le parsys.
+   Dans l’onglet **Composants autorisés**, vous définissez les composants disponibles pour le système de paragraphes (parsys).
 
    * Les composants sont regroupés en groupes de composants, qui peuvent être développés et réduits.
    * Un groupe entier peut être sélectionné en cochant le nom du groupe, et tous peuvent être désélectionnés en décochant la case.
@@ -153,7 +153,7 @@ Pour activer ou désactiver un composant :
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilisez l’icône ** Supprimer ** pour supprimer une entrée d’une liste de dialogue à entrées multiples.
+   Utilisez l’icône **Supprimer** pour supprimer une entrée de la liste de dialogue à entrées multiples.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 

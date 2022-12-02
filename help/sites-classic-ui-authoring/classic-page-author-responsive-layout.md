@@ -1,5 +1,5 @@
 ---
-title: Mise en page réactive
+title: Disposition réactive
 seo-title: Responsive Layout
 description: Bien que le composant Conteneur de mises en page soit disponible dans l’IU classique, il n’est entièrement fonctionnel et pris en charge que dans l’interface utilisateur optimisée pour les écrans tactiles.
 seo-description: Although the Layout container component is available in the classic UI, its full functionality is only available and supported in the touch-enabled UI.
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ---
 
-# Mise en page réactive{#responsive-layout}
+# Disposition réactive{#responsive-layout}
 
 >[!CAUTION]
 >

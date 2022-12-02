@@ -13,7 +13,7 @@ exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ http://localhost:4502
 
 Cette adresse URL, lors d’une connexion au niveau du système d’exploitation, permet à WebDAV d’accéder à l’espace de travail par défaut (`crx.default`). Si cette approche est plus simple pour l’utilisateur, elle n’offre toutefois pas la flexibilité supplémentaire de spécifier des noms d’espace de travail, ce qui peut être effectué à l’aide d’[adresses URL WebDAV](/help/sites-administering/webdav-access.md#webdav-urls) supplémentaires.
 
-AEM affiche le contenu du référentiel comme suit :
+AEM affiche le contenu du référentiel comme suit :
 
 * Un nœud du type `nt:folder` s’affiche sous la forme d’un dossier. Les nœuds situés sous le nœud `nt:folder` s’affichent comme contenu du dossier.
 
@@ -83,14 +83,14 @@ L’adresse URL du serveur WebDAV possède la structure suivante :
   <tr>
    <td><strong>Description</strong></td>
    <td>Hôte et port sur lequel AEM s’exécute</td>
-   <td>Chemin d’accès de l’application web du référentiel AEM</td>
+   <td>Chemin d’accès vers l’application web du référentiel AEM</td>
    <td>Chemin vers lequel le servlet WebDAV est mappé</td>
    <td>Nom de l’espace de travail</td>
   </tr>
  </tbody>
 </table>
 
-Si vous modifiez l’élément &lt;workspace> dans le chemin d’accès, vous pouvez mapper des espaces de travail autres que l’espace de travail par défaut (`crx.default`). Par exemple, pour mapper un espace de travail appelé `staging`, utilisez l’adresse URL suivante :
+Si vous modifiez l’élément d’espace de travail dans le chemin d’accès, vous pouvez mapper des espaces de travail autres que l’espace de travail par défaut (`crx.default`). Par exemple, pour mapper un espace de travail appelé `staging`, utilisez l’adresse URL suivante :
 
 ```xml
 http://localhost:4502/crx/repository/staging
@@ -98,12 +98,12 @@ http://localhost:4502/crx/repository/staging
 
 ## Connexion par le biais de WebDAV {#connecting-via-webdav}
 
-[Comme mentionné ci-dessus](/help/sites-administering/webdav-access.md#general), pour vous connecter au référentiel à l’aide du protocole WebDAV, vous pointez votre client WebDAV vers l’emplacement de votre référentiel. Cependant, en fonction du système d’exploitation, la procédure de connexion au client diffère et il peut être nécessaire de configurer le système d’exploitation.
+[Comme mentionné ci-dessus](/help/sites-administering/webdav-access.md#general), pour se connecter au référentiel à l’aide du protocole WebDAV, vous pointez le client WebDAV vers l’emplacement de votre référentiel. Cependant, en fonction du système d’exploitation, la procédure de connexion au client diffère et il peut être nécessaire de configurer le système d’exploitation.
 
 Vous trouverez ci-après des instructions de connexion aux systèmes d’exploitation suivants :
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
-* [Mac OS](/help/sites-administering/webdav-access.md#macos)
+* [macOS](/help/sites-administering/webdav-access.md#macos)
 * [Linux](/help/sites-administering/webdav-access.md#linux)
 
 ### Windows {#windows}
@@ -122,15 +122,15 @@ Pour mettre à jour le registre afin d’activer l’authentification de base pa
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
    ```
 
-1. Définissez la variable `BasicAuthLevel` sous-clé d’entrée de registre à une valeur de `2` ou supérieur.
+1. Définissez la sous-clé d’entrée de registre `BasicAuthLevel` sur une valeur égale ou supérieure à `2`.
 
    Si la sous-clé est absente, ajoutez-la.
 
 1. Vous devez redémarrer le système pour que la modification du registre soit appliquée.
 
-Voir [Microsoft Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215) pour plus d’informations sur cette modification du registre.
+Pour plus d’informations sur la modification du registre, consultez l’[article 841215 de la Base de connaissances d’assistance de Microsoft](https://support.microsoft.com/default.aspx/kb/841215).
 
-Voir [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) pour plus d’informations sur l’amélioration de la réactivité du client WebDav sous Windows.
+Pour plus d’informations sur l’amélioration de la réactivité du client WebDAV sous Windows, consultez l’[article 2445570 de la Base de connaissances d’assistance de Microsoft](https://support.microsoft.com/kb/2445570).
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Voir [Microsoft Support KB 2445570](https://support.microsoft.com/kb/2445570) po
 
 Sous Windows 8, vous devez également modifier l’entrée de registre [comme indiqué pour Windows 7 et version ultérieure](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Cependant, auparavant, vous devez activer la fonctionnalité Desktop Experience afin d’afficher l’entrée de registre.
 
-Pour activer l’expérience de bureau, ouvrez **Gestionnaire de serveur**, puis **Fonctionnalités**, puis **Ajout de fonctionnalités**, puis **Expérience de bureau**.
+Pour ce faire, ouvrez **Server Manager**, puis **Fonctionnalités**, **Ajouter des fonctionnalités** et enfin, **Desktop Experience**.
 
 Après le redémarrage, l’entrée de registre décrite pour Windows 7 et version ultérieure est disponible. Modifiez-la comme indiqué pour Windows 7 et version ultérieure.
 
@@ -148,7 +148,7 @@ Après le redémarrage, l’entrée de registre décrite pour Windows 7 et vers
 
 Pour vous connecter à AEM par le biais de WebDAV dans un environnement Windows, procédez comme suit :
 
-1. Ouvrir **Explorateur Windows** ou **Explorateur de fichiers** et cliquez sur **Ordinateur** ou **Ce PC**.
+1. Ouvrez l’**Explorateur Windows** ou l’**Explorateur de fichiers**, puis cliquez sur **Ordinateur** ou **Ce PC**.
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
@@ -156,18 +156,18 @@ Pour vous connecter à AEM par le biais de WebDAV dans un environnement Windows,
 1. Saisissez les informations de mappage :
 
    * **Lecteur** : sélectionnez une lettre disponible
-   * **Dossier**: `http://localhost:4502`
+   * **Dossier** : `http://localhost:4502`
    * Activez l’option **Se connecter à l’aide d’informations d’identification différentes**.
 
-   Cliquez sur Terminer.
+   Cliquez sur Terminer
 
    ![chlimage_1-113](assets/chlimage_1-113a.png)
 
    >[!NOTE]
    >
-   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
+   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
 
-1. Saisissez le nom d’utilisateur `admin` et mot de passe `admin`. Adobe recommande d’utiliser le compte administrateur préconfiguré pour le test.
+1. Entrez le nom d’utilisateur `admin` et le mot de passe `admin`. Adobe recommande d’utiliser le compte administrateur préconfiguré pour le test.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 
@@ -177,7 +177,7 @@ Pour vous connecter à AEM par le biais de WebDAV dans un environnement Windows,
 
 Windows a maintenant mappé AEM comme lecteur par le biais de WebDAV et vous pouvez l’utiliser comme n’importe quel autre lecteur.
 
-### Mac OS {#macos}
+### macOS {#macos}
 
 Aucune étape de configuration n’est nécessaire pour se connecter par le biais de WebDAV sous Mac OS. Il suffit de vous connecter au serveur WebDAV.
 
@@ -187,7 +187,7 @@ Aucune étape de configuration n’est nécessaire pour se connecter par le biai
    * `http://localhost:4502`
    >[!NOTE]
    >
-   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
+   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
 
 1. Lorsque vous êtes invité à vous authentifier, saisissez le nom d’utilisateur `admin` et le mot de passe `admin`. Adobe recommande d’utiliser le compte administrateur préconfiguré pour le test.
 
@@ -202,21 +202,21 @@ La connexion par le biais de WebDAV sous Linux ne nécessite aucune configuratio
 Pour vous connecter à AEM par le biais de WebDAV avec GNOME, procédez comme suit :
 
 1. Dans Nautilus (explorateur de fichiers), sélectionnez **Emplacements**, puis **Connecter à un serveur**.
-1. Dans la fenêtre **Connecter à un serveur**, sélectionnez le type de service WebDAV (HTTP).
+1. Dans la fenêtre **Se connecter à un serveur**, sélectionnez le type de service WebDAV (HTTP).
 
-1. Dans **Serveur**, saisissez `http://localhost:4502/crx/repository/crx.default`
+1. Dans **Serveur**, saisissez `http://localhost:4502/crx/repository/crx.default`.
 
    >[!NOTE]
    >
-   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
+   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
 
-1. Dans **Dossier**, saisissez `/dav`
+1. Sous **Dossier**, saisissez `/dav`.
 1. Saisissez le nom d’utilisateur `admin`. Adobe recommande d’utiliser le compte administrateur préconfiguré pour le test.
 1. Ne renseignez pas le port et saisissez un nom pour la connexion.
 1. Cliquez sur **Connecter**. AEM vous invite à saisir votre mot de passe.
 1. Saisissez le mot de passe `admin` et cliquez sur **Connecter**.
 
-GNOME a maintenant monté AEM en volume et vous pouvez l&#39;utiliser comme n&#39;importe quel autre volume.
+GNOME a maintenant monté AEM sous la forme d’un volume, que vous pouvez utiliser comme n’importe quel autre volume.
 
 #### KDE {#kde}
 
@@ -224,15 +224,15 @@ GNOME a maintenant monté AEM en volume et vous pouvez l&#39;utiliser comme n&#3
 1. Sélectionnez **WebFolder** (webdav), puis cliquez sur Suivant.
 1. Sous **Nom**, saisissez un nom de connexion.
 1. Dans **Utilisateur**, saisissez `admin.` Adobe vous recommande d’utiliser le compte administrateur préconfiguré.
-1. Dans **Serveur**, saisissez `http://localhost:4502/crx/repository/crx.default`
+1. Dans **Serveur**, saisissez `http://localhost:4502/crx/repository/crx.default`.
 
    >[!NOTE]
    >
-   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
+   >Si AEM se trouve sur un autre port, utilisez ce numéro de port au lieu du port 4502. De même, si vous n’exécutez pas le référentiel de contenu sur votre ordinateur local, remplacez `localhost` par le nom ou l’adresse IP du serveur correspondant.
 
-1. Dans **Dossier**, saisissez `dav`
+1. Sous **Dossier**, saisissez `dav`.
 
 1. Cliquez sur **Enregistrer et connecter**.
 1. Lorsque vous êtes invité à saisir votre mot de passe, saisissez `admin` et cliquez sur **Connecter**.
 
-KDE a maintenant monté AEM en volume et vous pouvez l’utiliser comme n’importe quel autre volume.
+KDE a maintenant monté AEM sous la forme d’un volume, que vous pouvez utiliser comme n’importe quel autre volume.

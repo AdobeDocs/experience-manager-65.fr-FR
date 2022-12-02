@@ -27,15 +27,15 @@ ht-degree: 100%
 >6.5.3.0 :
 >
 >* Les **domaines de l’externaliseur** peuvent maintenant être sélectionnés.
->  **Remarque :** les domaines de l’externaliseur sont pertinents uniquement pour le contenu du fragment d’expérience envoyé à Target, et non pour les métadonnées telles que Afficher le contenu de l’offre.
+   >  **Remarque :** les domaines de l’externaliseur sont pertinents uniquement pour le contenu du fragment d’expérience envoyé à Target, et non pour les métadonnées telles que Afficher le contenu de l’offre.
 >
 >6.5.2.0 :
 >
 >* Les fragments d’expérience peuvent être exportés vers :
->
->   * l’espace de travail par défaut ;
->   * un espace de travail donné, spécifié dans la configuration cloud.
->   * **Remarque :** l’exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
+   >
+   >   * l’espace de travail par défaut ;
+   >   * un espace de travail donné, spécifié dans la configuration cloud.
+   >   * **Remarque :** l’exportation vers des espaces de travail spécifiques nécessite Adobe Target Premium.
 >
 >* AEM doit être [intégré à Adobe Target à l’aide d’IMS](/help/sites-administering/integration-target-ims.md).
 >

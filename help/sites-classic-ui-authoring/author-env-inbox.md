@@ -14,7 +14,7 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des n
 Ces notifications arrivent dans deux boîtes de réception, en fonction de leur type :
 
 * Une boîte de réception dans laquelle parviennent les notifications liées à des abonnements, décrite à la section suivante.
-* Une boîte de réception spécialisée pour les éléments de workflow est décrite dans la section [Participation aux workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) document.
+* Une boîte de réception spécialisée pour les éléments de workflow, décrite dans le document [Participer à des workflow](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
 ## Affichage des notifications {#viewing-your-notifications}
 
@@ -92,7 +92,7 @@ Lorsqu’une page est supprimée ou déplacée, une action de suppression est au
 1. Définissez les chemins d’accès des pages pour lesquelles vous recevrez une notification :
 
    * Cliquez sur **Ajouter** pour ajouter une nouvelle ligne au tableau.
-   * Cliquez sur le bouton **Chemin** et saisissez le chemin, par exemple `/content/docs`.
+   * Cliquez sur la cellule de tableau **Chemin** et entrez le chemin d’accès, à savoir `/content/docs`.
 
    * Si vous souhaitez être averti pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** sur **Non**.
 Si vous souhaitez n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.

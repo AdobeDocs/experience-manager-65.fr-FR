@@ -1,5 +1,5 @@
 ---
-title: Souscription à Adobe Analytics et Adobe Target
+title: Souscription à Adobe Analytics et Adobe Target
 seo-title: Opting Into Adobe Analytics and Adobe Target
 description: Découvrez comment souscrire à Adobe Analytics et Target.
 seo-description: Learn how to opt into Adobe Analytics and Adobe Target.
@@ -13,11 +13,11 @@ exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1310'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Souscription à Adobe Analytics et Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
+# Souscription à Adobe Analytics et Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM dispose d’une procédure de souscription pour vous aider à l’intégrer à Adobe Analytics et Target. Elle est prête à l’emploi sous la forme d’une tâche préchargée attribuée au groupe d’utilisateurs administrateurs.
 
@@ -27,11 +27,11 @@ Vous disposez des options suivantes pour configurer l’intégration :
 
 * Configuration de l’intégration via la tâche
 
-    Cela peut être effectué immédiatement ou ultérieurement ; la tâche reste dans la boîte de réception jusqu’à ce qu’une action soit effectuée. Dans les deux cas, la configuration peut être effectuée directement dans l’interface utilisateur ou à l’aide d’une `.properties` fichier .
+    Cela peut être effectué immédiatement ou ultérieurement ; la tâche reste dans la boîte de réception jusqu’à ce qu’une action soit effectuée. Dans les deux cas, la configuration peut être réalisée directement dans l’IU ou à l’aide d’un fichier `.properties` prédéfini.
 
 * Exclusion de l’intégration
 
-   Sélectionnez cette option si vous préférez [configurer manuellement l’intégration](/help/sites-administering/marketing-cloud.md). Voir aussi la rubrique [Intégration d’AEM à Adobe Target et Adobe Analytics à l’aide de DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
+   Sélectionnez cette option si vous préférez [configurer manuellement l’intégration](/help/sites-administering/marketing-cloud.md). Consultez également la section [Intégration d’AEM à Adobe Target et Adobe Analytics à l’aide de DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Définissez la configuration et la mise en service à l’aide d’un script.
 
@@ -62,7 +62,7 @@ Lorsque vous souscrivez à l’intégration, AEM effectue les tâches suivantes�
 
 Pour souscrire à partir de la tâche prête à l’emploi préchargée :
 
-1. Dans votre [boîte de réception, sélectionnez et **ouvrez** la tâche Configurer Analytics et Targeting](/help/sites-authoring/inbox.md#taking-action-on-an-item).
+1. Dans votre [boîte de réception, sélectionnez et **ouvrez** la tâche Configurer les analyses et le ciblage](/help/sites-authoring/inbox.md#taking-action-on-an-item).
 
    ![optin-01](assets/optin-01.png)
 
@@ -70,21 +70,21 @@ Pour souscrire à partir de la tâche prête à l’emploi préchargée :
 
    1. Saisissez les informations du compte utilisateur pour Analytics, puis cliquez sur le bouton **Ajouter** correspondant.
    1. Les informations d’identification appropriées sont authentifiées.
-   1. Lorsque le compte Analytics est authentifié, sélectionnez suite de rapports Analytics à utiliser. AEM récupère ces suites de rapports Analytics. L’état devient **Ajouté**.
+   1. Lorsque le compte Analytics est authentifié, sélectionnez suite de rapports Analytics à utiliser. AEM récupère ces suites de rapports Analytics. Le statut devient **Ajouté**.
 
 1. Pour Target :
 
    1. Saisissez les informations du compte utilisateur pour Target, puis cliquez sur le bouton **Ajouter** correspondant.
-   1. Les informations d’identification appropriées sont authentifiées. L’état devient **Ajouté**.
+   1. Les informations d’identification appropriées sont authentifiées. Le statut devient **Ajouté**.
 
 1. Sélectionnez **Suivant**.
 1. Sélectionnez les sites pour lesquels Analytics et/ou Target doivent être utilisés.
 
-1. Sélectionnez **Terminé** pour terminer.
+1. Sélectionnez **Terminé**.
 
    >[!CAUTION]
    >
-   >Une fois que vous avez souscrit à la configuration, vous devez publier le site/les pages concernés afin de répliquer ces modifications sur votre instance de publication.
+   >Une fois que vous avez souscrit à la configuration, vous devez publier les sites ou les pages concernés afin de répliquer ces modifications sur votre instance de publication.
 
 ## Exclusion de l’intégration {#opting-out-of-the-integration}
 
@@ -97,7 +97,7 @@ Excluez-vous de l’intégration à Analytics et Target dans les cas suivants :
 
 Pour vous exclure, vous devez terminer la tâche préchargée :
 
-* Dans votre [boîte de réception, sélectionnez et **terminez** la tâche Configurer Analytics et Targeting](/help/sites-authoring/inbox.md#taking-action-on-an-item).
+* Dans votre [boîte de réception, sélectionnez et **terminez** la tâche Configurer les analyses et le ciblage](/help/sites-authoring/inbox.md#taking-action-on-an-item).
 
 ## Fournir des informations de compte dans un fichier de propriétés {#providing-account-information-using-a-properties-file}
 
@@ -114,9 +114,9 @@ Le fichier de propriétés est un fichier texte appelé marketingcloud.propertie
 * target.email : adresse électronique que vous utilisez pour authentifier votre compte Target.
 * target.password : mot de passe associé à votre adresse électronique.
 
-Les propriétés et les valeurs sont séparées par des signes égal (=). Les propriétés sont dotées du préfixe `analytics`analytics, et les propriétés du préfixe `target`target. Pour configurer un service, fournissez les valeurs de toutes ses propriétés. Si vous ne souhaitez pas configurer un service, n’indiquez aucune valeur pour ce service.
+Les propriétés et les valeurs sont séparées par des signes égal (=). Les propriétés d’Analytics sont dotées du préfixe `analytics`, et les propriétés de Target du préfixe `target`. Pour configurer un service, fournissez les valeurs de toutes ses propriétés. Si vous ne souhaitez pas configurer un service, n’indiquez aucune valeur pour ce service.
 
-L’exemple suivant `.properties` comprend les valeurs de propriété pour la création d’une configuration cloud pour Analytics :
+Le fichier `.properties` de l’exemple suivant inclut les valeurs de propriétés afin de créer une configuration cloud pour Analytics :
 
 ```xml
 analytics.server=https://test.omniture.com/login/
@@ -143,9 +143,9 @@ La procédure suivante explique comment s’exclure de l’intégration à l’a
 
 1. Ajoutez les valeurs de propriétés conformément à vos comptes Analytics et/ou Target.
 1. Démarrez ou redémarrez le serveur, puis connectez-vous à l’aide d’un compte administrateur.
-1. Ouvrez la tâche Configurer Analytics et Targeting comme indiqué dans [Configuration de l’intégration](/help/sites-administering/opt-in.md#configuring-the-integration). Au lieu de demander les informations de votre compte, l’assistant utilise les valeurs de la variable `.properties` fichier .
+1. Ouvrez la tâche Configurer Analytics et Targeting comme indiqué dans [Configuration de l’intégration](/help/sites-administering/opt-in.md#configuring-the-integration). Plutôt que de demander les informations relatives à votre compte, l’assistant utilise les valeurs figurant dans le fichier `.properties`.
 
-   Sélectionner **Ajouter** pour le service approprié, continuez avec l’assistant.
+   Sélectionnez **Ajouter** pour le service approprié, puis poursuivez avec l’assistant.
 
    ![optin-02](assets/optin-02.png)
 
@@ -153,7 +153,7 @@ La procédure suivante explique comment s’exclure de l’intégration à l’a
 
 Lorsque vous configurez l’intégration à Analytics et Target, AEM crée automatiquement les configurations et les structures cloud requises. Par exemple, la configuration cloud s’appelle Compte Analytics mis en service.
 
-Vous n’avez pas besoin de modifier les configurations cloud. Toutefois, vous pouvez configurer les structures selon vos besoins. (Voir [Mappage des données de composant avec les propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md) et [Ajout d’une structure Target](/help/sites-administering/target.md).)
+Vous n’avez pas besoin de modifier les configurations cloud. Toutefois, vous pouvez configurer les structures selon vos besoins. (Voir [Mappage des données de composant aux propriétés Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md) et [Ajout d’une structure Target](/help/sites-administering/target.md).)
 
 >[!NOTE]
 >
@@ -181,8 +181,8 @@ Les paramètres que vous envoyez dépendent de ce qui suit :
 
 * Si vous souhaitez utiliser le fichier **marketingcloud.properties** contenant toutes les informations d’identification requises, vous devez envoyer les paramètres suivants :
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
+   * `automaticProvisioning` = `true`
+   * `servicename` = `analytics|target`
    * `path`=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées
 
    Par exemple, une requête curl qui crée à la fois des configurations Analytics et Target, et les joint à la page we.retail prendrait la forme suivante :
@@ -191,11 +191,11 @@ Les paramètres que vous envoyez dépendent de ce qui suit :
    curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
    ```
 
-* Si vous ne souhaitez pas utiliser la variable **marketingcloud.properties** vous devrez envoyer les informations d’identification ainsi que les paramètres ; par exemple :
+* Si vous ne souhaitez pas utiliser le fichier **marketingcloud.properties**, vous devrez envoyer les informations d’identification ainsi que les paramètres ; par exemple :
 
-   * automatiquesProvisioning= `true`
-   * servicename= `analytics|target`
-   * path=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées ; plusieurs chemins peuvent être définis
+   * automaticProvisioning= `true`
+   * serviceName= `analytics|target`
+   * path=chemin d’une page AEM à laquelle joindre les configurations de services cloud créées ; plusieurs chemins peuvent être définis.
    * analytics.server= `https://servername`
    * analytics.company= `Name of company`
    * analytics.username= `me`
@@ -205,7 +205,7 @@ Les paramètres que vous envoyez dépendent de ce qui suit :
    * target.email= `me@adobe.com`
    * target.password= `password`
 
-   Dans ce cas, la requête curl qui crée à la fois des configurations Analytics et Target, et les joint à la page we-retail prendrait la forme suivante :
+   Dans ce cas, la requête curl qui crée à la fois des configurations Analytics et Target, et qui les joint à la page we-retail, prendrait la forme suivante :
 
    ```shell
    curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json

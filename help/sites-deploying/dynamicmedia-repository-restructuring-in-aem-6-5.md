@@ -1,6 +1,6 @@
 ---
-title: Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5
-description: Découvrez comment apporter les modifications nécessaires afin de migrer vers la nouvelle structure de référentiel dans Experience Manager 6.5 pour Dynamic Media.
+title: Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5
+description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans Experience Manager 6.5 pour Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,25 +11,25 @@ exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
-# Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
+# Restructuration du référentiel Dynamic Media dans Adobe Experience Manager 6.5 {#dynamic-media-repository-restructuring-in-aem}
 
-Comme décrit sur le parent [Restructuration des référentiels dans Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md) , les clients effectuant une mise à niveau vers Experience Manager 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications de référentiel ayant un impact sur Dynamic Media. Certaines modifications nécessitent des efforts lors de la mise à niveau vers Experience Manager 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau ultérieure.
+Comme indiqué dans la page parent [Restructuration des référentiels dans Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md), les clients effectuant une mise à niveau vers Experience Manager 6.5 doivent utiliser cette page pour évaluer le travail associé aux modifications des référentiels ayant un impact sur la Dynamic Media. Certaines modifications demandent du travail lors du processus de mise à niveau vers Experience Manager 6.5, tandis que d’autres peuvent être différées jusqu’à une mise à niveau vers la version future.
 
 **Avant la mise à niveau ultérieure**
 
 * [Configurations personnalisées du codage vidéo adaptatif](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#custom-adaptive-video-encoding-configurations)
-* [Configuration du cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
-* [Configuration du service cloud Dynamic Media (version hybride DM)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
-* [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
+* [Configuration du cloud Dynamic Media (DMS7)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#dynamic-media-dms-cloud-configuration)
+* [Configuration du service cloud Dynamic Media (version hybride de DM)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#cloudserviceconfiguration)
+* [Dynamic Media - Configuration du service cloud YouTube](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#youtubecloudserviceconfiguration)
 * [Divers](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Avant la mise à niveau ultérieure {#prior-to-upgrade}
 
-### Configurations personnalisées du codage de vidéo adaptative  {#custom-adaptive-video-encoding-configurations}
+### Configurations personnalisées du codage vidéo adaptatif  {#custom-adaptive-video-encoding-configurations}
 
 <table>
  <tbody>
@@ -43,7 +43,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans Adobe Exper
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Vous pouvez exécuter le script de migration suivant pour migrer vers le nouvel emplacement :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur de Experience Manager, et les modifications sont enregistrées au nouvel emplacement.</p> </td>
+   <td><p>Vous pouvez exécuter le script de migration suivant pour migrer vers le nouvel emplacement :</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’Experience Manager. Les modifications seront enregistrées au nouvel emplacement.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -52,7 +52,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans Adobe Exper
  </tbody>
 </table>
 
-### Configuration du cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
+### Configuration du cloud Dynamic Media (DMS7) {#dynamic-media-dms-cloud-configuration}
 
 <table>
  <tbody>
@@ -69,7 +69,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans Adobe Exper
    <td><p>Le client peut exécuter un script de migration à cet emplacement :<br /> </p>
     <ul>
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
-     <li>Redémarrez le lot OSGi Dynamic Media.</li>
+     <li>Redémarrez le lot OSGi Dynamic Media.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -79,7 +79,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans Adobe Exper
  </tbody>
 </table>
 
-### Configuration du Cloud Service Dynamic Media (hybride DM) {#cloudserviceconfiguration}
+### Configuration du service cloud Dynamic Media (version hybride de DM) {#cloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -102,7 +102,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans Adobe Exper
  </tbody>
 </table>
 
-### Dynamic Media - Configuration du Cloud Service YouTube  {#youtubecloudserviceconfiguration}
+### Dynamic Media - Configuration du service cloud YouTube  {#youtubecloudserviceconfiguration}
 
 <table>
  <tbody>
@@ -116,7 +116,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans Adobe Exper
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>1. Annulez la publication de toutes les vidéos de YouTube<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle interface utilisateur tactile (à partir de <code>/conf</code>), y compris la copie de tous les canaux de l’ancien emplacement ;<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration de YouTube TouchUI, plusieurs URL YouTube sont répertoriées sous Propriétés, car les canaux recréés sont republiés, le cas échéant. Cette fonctionnalité signifie que vous disposez d’URL inutiles répertoriées sous Propriétés.</p> </td>
+   <td><p>1. Annulez la publication de toutes les vidéos de YouTube.<br /> 2. Créez la configuration YouTube à l’aide de la nouvelle TouchUI (à partir de <code>/conf</code>), y compris en copiant toutes les chaînes de l’ancien emplacement.<br /> 3. Publiez toutes les vidéos sur YouTube.</p> <p>Ce workflow génère de nouvelles URL YouTube. Si vous n’annulez pas la publication avant de créer une configuration YouTube TouchUI, plusieurs URL YouTube seront répertoriées sous Propriétés car les chaînes recréées seront publiées si l’occasion se présente. Cela signifie que des URL inutiles seront répertoriées sous Propriétés.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>
@@ -139,7 +139,7 @@ Comme décrit sur le parent [Restructuration des référentiels dans Adobe Exper
   </tr>
   <tr>
    <td><strong>Conseil de restructuration</strong></td>
-   <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur de Experience Manager, et les modifications sont enregistrées au nouvel emplacement.</p> </td>
+   <td><p>Le client peut exécuter le script de migration ci-dessous.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>Vous pouvez également modifier la configuration dans l’interface utilisateur d’Experience Manager. Les modifications seront enregistrées au nouvel emplacement.</p> </td>
   </tr>
   <tr>
    <td><strong>Remarques</strong></td>

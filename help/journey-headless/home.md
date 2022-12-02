@@ -1,11 +1,11 @@
 ---
 title: Parcours découplés AEM
-description: Ensemble de parcours de documentation décrivant comment utiliser Adobe Experience Manager en tant que CMS sans affichage.
+description: Une suite de parcours de documentation décrivant comment utiliser Adobe Experience Manager en tant que CMS découplé.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 

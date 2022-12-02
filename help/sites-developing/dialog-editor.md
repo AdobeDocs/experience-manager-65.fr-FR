@@ -13,7 +13,7 @@ exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '491'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 88%
 
 L’éditeur de boîtes de dialogue offre une interface graphique pour créer et modifier facilement des boîtes de dialogue et des modèles automatiques.
 
-Pour voir comment cela fonctionne, accédez à CRXDE Lite, puis ouvrez l’arborescence de l’explorateur pour `/libs/foundation/components/chart` et double-cliquez sur le noeud `dialog`:
+Pour découvrir comment cet éditeur fonctionne, accédez à CRXDE Lite, développez l’arborescence de l’explorateur pour atteindre `/libs/foundation/components/chart`, puis double-cliquez sur le nœud `dialog` :
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
-Le nœud dialog ouvre l’**éditeur de boîtes de dialogue** :
+Le nœud de boîtes de dialogue ouvre l’**éditeur de boîtes de dialogue** :
 
 ![screen_shot_2012-02-01at25033pm](assets/screen_shot_2012-02-01at25033pm.png)
 
@@ -35,7 +35,7 @@ L’interface de l’éditeur de boîtes de dialogue est composée de quatre pan
 
 * **Palette** (dans le coin supérieur gauche) : ce panneau contient les widgets disponibles pour créer une boîte de dialogue, tels que les panneaux d’onglet, les champs de texte, les listes de sélection et les boutons. Vous pouvez développer les différentes catégories de la palette en cliquant sur la barre du séparateur.
 * **Structure** (dans le coin inférieur gauche) : ce panneau affiche la structure hiérarchique des nœuds qui composent la définition de boîte de dialogue. Vous pouvez voir la même structure en développant le nœud dialog dans CRXDE Lite ou CRX Content Explorer.
-* Le **render** au centre de la fenêtre. ce panneau affiche le rendu en tant que boîte de dialogue de la définition de boîte de dialogue définie dans le panneau Structure.
+* Le volet **Rendu**, au milieu de la fenêtre. ce panneau affiche le rendu en tant que boîte de dialogue de la définition de boîte de dialogue définie dans le panneau Structure.
 * **Propriétés** : ce panneau affiche les propriétés du nœud actuellement sélectionné dans le panneau Structure.
 
 ### Utilisation de l’éditeur de boîtes de dialogue {#using-the-dialog-editor}
@@ -58,6 +58,6 @@ Saisissez les informations requises, puis cliquez sur **Enregistrer tout**. Vous
 
 Un modèle automatique est une page spéciale qui contient un formulaire qui peut être rempli et envoyé en une seule étape. Vous pouvez ainsi créer rapidement une page à l’aide du contenu saisi.
 
-Le formulaire qui constitue un modèle automatique est défini par une définition de boîte de dialogue, comme une boîte de dialogue normale, bien qu’il apparaisse dans la page de génération de modèles automatiques sous une autre forme. Dans la mesure où des définitions de boîtes de dialogue sont utilisées pour définir des modèles automatiques, ces derniers peuvent être conçus à l’aide de l’éditeur de boîtes de dialogue. Notez que lorsque vous utilisez l’éditeur de boîte de dialogue de cette manière, le volet de rendu affiche toujours la définition de boîte de dialogue sous la forme d’une boîte de dialogue et non d’un modèle automatique.
+Le formulaire qui constitue un modèle automatique est défini par une définition de boîte de dialogue, comme une boîte de dialogue normale, bien qu’il apparaisse dans la page de génération de modèles automatiques sous une autre forme. Dans la mesure où des définitions de boîtes de dialogue sont utilisées pour définir des modèles automatiques, ces derniers peuvent être conçus à l’aide de l’éditeur de boîtes de dialogue. Notez que lorsque vous utilisez l’éditeur de boîtes de dialogue de cette manière, le volet Rendu affiche toujours la définition de boîte de dialogue sous la forme d’une boîte de dialogue et non d’un modèle automatique.
 
-Pour plus d’informations sur l’utilisation de l’éditeur de boîtes de dialogue pour créer des modèles automatiques, voir [Génération de modèles automatiques](/help/sites-authoring/scaffolding.md).
+Pour plus d’informations sur l’utilisation de l’éditeur de boîtes de dialogue pour créer des modèles automatiques, consultez [Génération de modèles automatiques](/help/sites-authoring/scaffolding.md).

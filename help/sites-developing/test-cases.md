@@ -14,7 +14,7 @@ exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -51,18 +51,20 @@ Cependant, l’automatisation des cas de test est un lourd investissement. Il fa
 
 ## Test d’aspects spécifiques {#testing-specific-aspects}
 
-Lors du test AEM certains détails spécifiques présentent un intérêt particulier :
+Lors du test d’AEM, certains détails sont particulièrement intéressants :
 
 **Environnements de création et de publication**
 
-Bien que couvert par [Environnements](/help/sites-developing/the-basics.md#environments) il convient de souligner un facteur décisif d&#39;AEM en ce qui concerne les tests.
+Bien que le sujet soit traité dans [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur déterminant dans AEM pour ce qui concerne les choix de types de tests.
 
-Vous devez considérer AEM comme deux applications :
+Vous devez traiter AEM comme s’il s’agissait de deux applications séparées :
 
-* la valeur *Auteur* environnement Cette instance permet aux auteurs de saisir et de publier du contenu.
+* L’environnement *Auteur*
+Cette instance permet aux auteurs de saisir et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 
 * l’environnement de *publication*
+
 Cette instance affiche le site web sous sa forme publiée pour que les visiteurs puissent y accéder.
 Elle comporte généralement un plus grand nombre d’utilisateurs pour lequel le volume de trafic n’est pas toujours prévisible à 100 %. La performance est toujours cruciale lors de la réponse aux demandes. La mise en cache et l’équilibrage de charge doivent également être pris en compte.
 
@@ -82,30 +84,30 @@ Lors du test de personnalisation, chaque cas d’utilisation doit être répét�
 
 La mise en cache doit également être vérifiée pour déterminer si son comportement est normal.
 
-**Le dispatcher**
+**Le Dispatcher**
 
 La plupart des projets installent le dispatcher pour la mise en cache et l’équilibrage de charge.
 
 Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
 * **Précision**
-s’assurer que les mises à jour du contenu sont visibles par le visiteur du site web.
+Assurez-vous que les mises à jour du contenu sont visibles pour les visiteurs sur le site.
 
 * **Continuité**
-vérifiez que le site web est toujours disponible lorsqu’un serveur est arrêté.
+Assurez-vous que le site web est toujours disponible lorsqu’un serveur est arrêté.
 
 * **Clusters**
-Les clusters sont utilisés pour fournir :
+Les clusters sont utilisés pour garantir :
 
    * **Basculement**
-Si un serveur échoue, les autres serveurs de la grappe prennent le relais.
+Si un serveur tombe en panne, les autres serveurs du cluster prennent le relais.
 
    * **Performances**
-L’équilibrage de charge avec basculement complet améliore les performances d’une grappe.
+L’équilibrage de charge avec basculement intégral améliore les performances d’un cluster.
 Lorsqu’il est utilisé pour un projet client, le cluster doit être testé pour confirmer le bon fonctionnement de la configuration.
 
 ## Test de logiciels tiers {#testing-third-party-software}
 
-Les logiciels tiers interfaces avec AEM seront référencés dans les spécifications détaillées des exigences.
+Tout logiciel tiers associé à l’interface d’AEM est référencé dans le cahier des charges détaillé.
 
 Il faut analyser tous les tests nécessaires (en fonction de la portée définie) et obtenir des résultats satisfaisants.

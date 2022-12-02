@@ -13,15 +13,15 @@ exl-id: 3c3db1c8-5b22-45dd-aeaf-5cf830a9486b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Prise en charge du chiffrement des propriétés de configuration{#encryption-support-for-configuration-properties}
 
-## Présentation {#overview}
+##  du commerce électronique {#overview}
 
-Cette fonction permet à toutes les propriétés de configuration OSGi d’être stockées sous une forme chiffrée et protégée, préférable au texte en clair. Le formulaire de l’interface utilisateur de la console web est utilisé pour créer du texte chiffré à partir de texte en clair à l’aide de la clé principale de chiffrement à l’échelle du système.
+Cette fonction permet à toutes les propriétés de configuration OSGi d’être stockées sous une forme chiffrée et protégée, préférable au texte en clair. Le formulaire dans l’IU de la console Web permet de créer du texte chiffré à partir de texte en clair à l’aide de la clé principale de chiffrement du système.
 
 La prise en charge du module de configuration OSGi a été ajoutée afin de déchiffrer la propriété avant qu’elle ne soit utilisée par un service.
 
@@ -33,12 +33,12 @@ La prise en charge du module de configuration OSGi a été ajoutée afin de déc
 
 Ces étapes indiquent comment chiffrer le mot de passe SMTP pour le service de messagerie. Vous pouvez effectuer ces étapes pour une propriété OSGI que vous souhaitez chiffrer.
 
-1. Accédez à la console web AEM à l’adresse *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
-1. Dans le coin supérieur gauche, accédez à **Prise en charge du chiffrement principal**
+1. Rendez-vous dans la console Web AEM sur *https://&lt;serveraddress>:&lt;serverport>/system/console/configMgr*
+1. Dans le coin supérieur gauche, accédez à **Prise en charge du chiffrement principal**.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. La page **Prise en charge du chiffrement de la console web d’Adobe Experience Manager** s’affiche.
+1. La page **Prise en charge du chiffrement de la console Web d’Adobe Experience Manager** s’affiche.
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 

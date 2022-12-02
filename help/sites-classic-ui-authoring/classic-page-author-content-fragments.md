@@ -20,12 +20,12 @@ ht-degree: 100%
 
 # Création de page à partir de fragments de contenu{#page-authoring-with-content-fragments}
 
-Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
+Les fragments de contenu Adobe Experience Manager (AEM) sont [créés et gérés en tant que ressources indépendantes de la page](/help/assets/content-fragments/content-fragments.md).
 
 Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations (éventuellement spécifiques aux canaux). Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
 >[!CAUTION]
 >
->Les fonctionnalités de gestion des fragments de contenu ne sont pas toutes disponibles dans l’IU classique. Voir [Création de page à partir de fragments de contenu](/help/sites-authoring/content-fragments.md) dans la documentation de création standard.
+>Les fonctionnalités de gestion des fragments de contenu ne sont pas toutes disponibles dans l’IU classique. Consultez [Création de page à partir de fragments de contenu](/help/sites-authoring/content-fragments.md) dans la documentation de création standard.
 >
 >Le composant Fragment de contenu apparaît dans le sidekick de l’IU classique, mais les fonctions associées ne sont pas disponibles.

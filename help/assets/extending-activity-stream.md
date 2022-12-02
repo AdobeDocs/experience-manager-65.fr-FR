@@ -1,6 +1,6 @@
 ---
-title: Intégrer [!DNL Assets] avec flux d’activité
-description: Décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment le configurer pour enregistrer des événements spécifiques.
+title: Intégration d’ [!DNL Assets]  au flux d’activité
+description: Décrit les fonctionnalités d’enregistrement d’ [!DNL Experience Manager]  ainsi que la procédure de configuration d’AEM pour enregistrer des événements spécifiques.
 contentOwner: AG
 role: Developer
 feature: Asset Management
@@ -8,19 +8,19 @@ exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
-# Intégrer [!DNL Assets] avec flux d’activité {#integrating-assets-with-activity-stream}
+# Intégration d’[!DNL Assets] avec flux d’activité {#integrating-assets-with-activity-stream}
 
-[!DNL Adobe Experience Manager Assets] Les utilisateurs effectuent de nombreuses opérations, telles que la création, le chargement et la suppression d’actifs. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement de [!DNL Experience Manager] et comment configurer [!DNL Experience Manager] afin d’enregistrer des événements spécifiques.
+Les utilisateurs [!DNL Adobe Experience Manager Assets] effectuent de nombreuses opérations, telles que la création, le chargement et la suppression d’Assets. Ces actions peuvent être enregistrées de manière à fournir un historique de toutes les actions réalisées par un utilisateur. Cette section décrit les fonctionnalités d’enregistrement d’[!DNL Experience Manager] ainsi que la procédure de configuration d’[!DNL Experience Manager] pour enregistrer des événements spécifiques.
 
-## Performances et comportement par défaut {#performance-considerations-and-default-behavior}
+## Considérations concernant les performances et comportement par défaut {#performance-considerations-and-default-behavior}
 
-Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, la variable [!DNL Assets] l’intégration au flux d’activités est désactivée par défaut.
+Cette intégration peut solliciter une puissance de processeur et un espace disque conséquents, par exemple lors d’opérations d’importation en bloc. Pour ces raisons, l’intégration d’[!DNL Assets] au flux d’activités est désactivée par défaut.
 
-## Événements d’action pris en charge {#supported-action-events}
+## Événements d’actions pris en charge {#supported-action-events}
 
 Il est possible de configurer l’enregistrement des événements suivants : 
 
@@ -40,15 +40,15 @@ Il est possible de configurer l’enregistrement des événements suivants :
 * Sous-ressource mise à jour (SUBASSET_UPDATED)
 * Sous-ressource supprimée (SUBASSET_REMOVED)
 
-## Configurer [!DNL Assets] enregistrement {#configuring-aem-assets-events-recording}
+## Configuration d’un enregistrement d’événements [!DNL Assets] {#configuring-aem-assets-events-recording}
 
-Le [Console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder au réglage de l’enregistreur d’événements de ressources. Pour configurer l’enregistreur d’événements de ressources, procédez comme suit :
+La [console Web](/help/sites-deploying/configuring-osgi.md) permet d’accéder aux réglages de l’enregistreur d’événements d’Assets. Pour configurer l’enregistreur d’événements d’Assets, procédez comme suit :
 
-1. Accédez au **[!UICONTROL Console web]**
+1. Accédez à la **[!UICONTROL console Web]**.
 
 1. Cliquez sur **[!UICONTROL Configuration]**.
 
-1. Double-cliquez sur **[!UICONTROL Enregistreur d’événements de la gestion des actifs numériques Day CQ]**. 
+1. Double-cliquez sur **[!UICONTROL Enregistreur d’événements de la gestion des ressources numériques Day CQ]**. 
 
 1. Cochez **[!UICONTROL Activer ce service]**.
 
@@ -58,4 +58,4 @@ Le [Console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 ## Lecture d’événements enregistrés {#reading-recorded-events}
 
-Les événements enregistrés sont stockés en tant qu’activités. Vous pouvez les lire par programmation à l’aide du [API ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+Les événements enregistrés sont stockés en tant qu’activités. Vous pouvez les consulter par programmation en utilisant [l’API ActivityManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

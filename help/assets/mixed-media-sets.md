@@ -14,7 +14,7 @@ exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 source-git-commit: 7b29fc96768dc2238ebf9596b136ec10fa71aca9
 workflow-type: tm+mt
 source-wordcount: '1493'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Les visionneuses de médias mixtes sont désignées par une bannière contenant 
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources](/help/assets/manage-assets.md).
+>Pour plus d’informations sur l’interface utilisateur d’Assets, consultez la [Gestion des ressources](/help/assets/manage-assets.md).
 
 ## Démarrage rapide : Visionneuses de médias mixtes {#quick-start-mixed-media-sets}
 
@@ -42,7 +42,7 @@ Pour démarrer rapidement, procédez comme suit :
 
 1. [Créez des ensembles de supports variés](#creating-mixed-media-sets).
 
-   Pour créer une visionneuse de médias mixtes, dans la page Ressources, sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse de médias mixtes]** puis attribuez un nom à la visionneuse, sélectionnez les ressources et choisissez l’ordre dans lequel doivent apparaître les images.
+   Pour créer une visionneuse de médias mixtes, dans la page Ressources, sélectionnez **[!UICONTROL Créer]** > **[!UICONTROL Visionneuse de médias mixtes]**. Attribuez ensuite un nom à la visionneuse, sélectionnez des ressources et choisissez l’ordre dans lequel doivent apparaître les images.
 
    Voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
@@ -50,13 +50,13 @@ Pour démarrer rapidement, procédez comme suit :
 
    Les administrateurs peuvent créer ou modifier les paramètres prédéfinis de visionneuse de médias mixtes. Pour afficher votre visionneuse de médias mixtes avec un paramètre prédéfini, sélectionnez la visionneuse puis, dans le menu contextuel du rail gauche, sélectionnez **[!UICONTROL Visionneuses]**.
 
-   Pour créer ou modifier des paramètres prédéfinis de visionneuse, voir **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètre prédéfini de visionneuse]**.
+   Pour créer ou modifier des paramètres prédéfinis de visionneuse, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètre prédéfini de visionneuse]**.
 
-   Voir [Ajout et modification de paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
+   Consultez la section [Ajout et modification des paramètres prédéfinis de visionneuse](/help/assets/managing-viewer-presets.md).
 
 1. [Prévisualisez une visionneuse de médias mixtes](#previewing-mixed-media-sets).
 
-   Sélectionnez la visionneuse de médias mixtes pour pouvoir la prévisualiser. Sélectionnez les icônes des miniatures afin d’examiner votre visionneuse de médias mixtes dans la visionneuse sélectionnée. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
+   Sélectionnez la visionneuse de médias mixtes pour pouvoir la prévisualiser. Cliquez sur les icônes des miniatures afin d’examiner votre visionneuse de médias mixtes dans la visionneuse sélectionnée. Vous pouvez choisir différentes visionneuses dans le menu **[!UICONTROL Visionneuses]** disponible dans le menu déroulant du rail gauche.
 
 1. [Publiez une visionneuse de médias mixtes](#publishing-mixed-media-sets).
 
@@ -74,15 +74,15 @@ Si nécessaire, vous pouvez modifier les [Visionneuses de médias mixtes](#editi
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes lors de la création des visionneuses, reportez-vous à la section [Dépannage de Dynamic Media - mode Scene7](/help/assets/troubleshoot-dms7.md).
+>Si vous rencontrez des problèmes lors de la création des visionneuses, consultez la section [Dépannage de Dynamic Media en mode Scene7](/help/assets/troubleshoot-dms7.md).
 
-## Télécharger les éléments {#uploading-assets}
+## Chargement des ressources {#uploading-assets}
 
 Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, choisissez les images avec soin. Assurez-vous que les images font au moins 2 000 pixels dans leur dimension la plus grande.
 
-En outre, si vous souhaitez ajouter des visionneuses à 360° ou d’images à la visionneuse de supports variés, créez également ces visionneuses.
+Si vous souhaitez ajouter des visionneuses à 360° ou des visionneuses d’images à la visionneuse de médias mixtes, créez-les aussi.
 
-Voir [Dynamic Media - Formats d’image raster pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les ensembles de supports variés.
+Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuse de médias mixtes.
 
 ## Création d’une visionneuse de médias mixtes {#creating-mixed-media-sets}
 
@@ -90,7 +90,7 @@ Vous pouvez ajouter des images, des visionneuses d’images, des visionneuses à
 
 Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatiquement ajoutées dans l’ordre alphanumérique. Vous pouvez réorganiser ou trier manuellement les ressources après les avoir ajoutées.
 
-**Création d’une visionneuse de médias mixtes:**
+**Création d’une visionneuse de médias mixtes :**
 
 1. Dans Ressources, accédez à l’emplacement où vous souhaitez créer un jeu de médias mixtes, cliquez sur **[!UICONTROL Créer]**, puis sélectionnez **[!UICONTROL Jeu de médias mixtes]**. Vous pouvez également la créer depuis un dossier qui contient les ressources. L’éditeur de visionneuse de médias mixtes s’affiche.
 
@@ -102,13 +102,13 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
    >[!NOTE]
    >
-   >Lors de la création de la visionneuse de médias mixtes, vous pouvez modifier la miniature de la visionneuse ou permettre à Experience Manager de sélectionner la miniature automatiquement en fonction des ressources de la visionneuse de médias mixtes. Pour sélectionner une miniature, sélectionnez **[!UICONTROL Modifier la miniature]** et sélectionnez une image (vous pouvez également accéder à d’autres dossiers pour trouver des images). Si vous avez sélectionné une miniature, puis décidez que vous souhaitez que Experience Manager en génère une à partir de la visionneuse de médias mixtes, sélectionnez **[!UICONTROL Passer à la miniature automatique]**.
+   >Lors de la création de la visionneuse de médias mixtes, vous pouvez modifier la miniature de la visionneuse ou permettre à Experience Manager de sélectionner la miniature automatiquement en fonction des ressources de la visionneuse de médias mixtes. Pour sélectionner une miniature, sélectionnez **[!UICONTROL Modifier la miniature]** et sélectionnez une image (vous pouvez également accéder à d’autres dossiers pour trouver des images). Si vous avez sélectionné une miniature, puis décidé que vous souhaitez qu’Experience Manager en génère une depuis la visionneuse de médias mixtes, sélectionnez **[!UICONTROL Basculer vers les miniatures automatiques]**.
 
-1. Sélectionnez le sélecteur de ressources pour sélectionner les ressources à inclure dans votre visionneuse de médias mixtes. Sélectionnez-les, puis sélectionnez **[!UICONTROL Sélectionner]**.
+1. Sélectionnez le sélecteur de ressources pour pouvoir sélectionner les ressources à inclure dans votre visionneuse de médias mixtes. Sélectionnez-les, puis sélectionnez **[!UICONTROL Sélectionner]**.
 
    Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en appuyant sur **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en sélectionnant l’icône **[!UICONTROL Afficher]** et en choisissant ensuite le mode **[!UICONTROL Liste]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Carte]**.
 
-   Voir [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
+   Consultez la section [Utilisation de sélecteurs](/help/assets/working-with-selectors.md).
 
    ![chlimage_1-140](assets/chlimage_1-383.png)
 
@@ -156,27 +156,27 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 
       >[!NOTE]
       >
-      >* Pour supprimer une visionneuse de médias mixtes dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de médias mixtes. Pointez sur la ressource et sélectionnez l’icône en forme de coche pour la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sélectionnez **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis sélectionnez **[!UICONTROL Supprimer]**.
+      >* Pour supprimer une visionneuse de médias mixtes dans son ensemble, depuis n’importe quel mode d’affichage (**[!UICONTROL Carte]** ou **[!UICONTROL Colonnes]**, par exemple), accédez à la visionneuse de médias mixtes. Placez le pointeur de la souris sur la ressource et sélectionnez l’icône de coche pour la sélectionner. Appuyez sur la touche **[!UICONTROL Retour arrière]** du clavier ou sélectionnez **[!UICONTROL Plus]** (points de suspension) dans la barre d’outils, puis sélectionnez **[!UICONTROL Supprimer]**.
       >
-      >* Vous pouvez modifier des ressources dans une visionneuse de médias mixtes en y accédant, puis en cliquant sur **[!UICONTROL Définir des membres]** dans le rail de gauche. Sélectionnez la **[!UICONTROL Crayon]** sur une ressource individuelle afin de l’ouvrir dans la fenêtre d’édition.
+      >* Vous pouvez modifier des ressources dans une visionneuse de médias mixtes en y accédant, puis en cliquant sur **[!UICONTROL Définir des membres]** dans le rail de gauche. Sélectionnez l’icône **[!UICONTROL Crayon]** sur une ressource individuelle afin de l’ouvrir dans la fenêtre d’édition.
 
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** lorsque vous avez terminé la modification.
 
    >[!NOTE]
    >
-   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Appuyez sur (ne sélectionnez pas) la visionneuse pour l’ouvrir dans la page Aperçu de la visionneuse de Experience Manager. Dans le rail de gauche, sélectionnez l’icône lambda vers le bas pour ouvrir la liste déroulante, puis sélectionnez **[!UICONTROL Définir les membres]**. Dans la page Définir des membres, passez la souris sur une ressource, puis sélectionnez **[!UICONTROL Modifier]** (icône représentant un crayon) pour ouvrir la page de modification.
+   >* Pour modifier les ressources dans une visionneuse de médias mixtes – Accédez à la visionneuse de médias mixtes. Appuyez sur (ne sélectionnez pas) la visionneuse pour pouvoir l’ouvrir dans la page Aperçu de la visionneuse Experience Manager. Dans le rail de gauche, sélectionnez l’icône lambda vers le bas pour ouvrir la liste déroulante, puis sélectionnez **[!UICONTROL Définir les membres]**. Dans la page Définir des membres, passez la souris sur une ressource, puis sélectionnez **[!UICONTROL Modifier]** (icône représentant un crayon) pour ouvrir la page de modification.
    >
    >* Pour supprimer une visionneuse de médias mixtes dans son ensemble – À partir de n’importe quel mode d’affichage (Mode Carte ou Colonne, par exemple), accédez à la visionneuse de médias mixtes. Pointez sur la visionneuse, puis sélectionnez **Sélectionner** (icône de coche). Appuyez sur la touche **[!UICONTROL Retour arrière]** de votre clavier ou sélectionnez **[!UICONTROL Plus]** (trois points de suspension), puis **[!UICONTROL Supprimer]**.
 
 
-## Aperçu d’une visionneuse de médias mixtes {#previewing-mixed-media-sets}
+## Aperçu de la visionneuse de médias mixtes {#previewing-mixed-media-sets}
 
-Voir [Aperçu des ressources](/help/assets/previewing-assets.md) pour plus d’informations sur l’aperçu d’une visionneuse de médias mixtes.
+Pour obtenir des informations sur la prévisualisation d’une visionneuse de médias mixtes, consultez la section [Aperçu des ressources](/help/assets/previewing-assets.md).
 
 ## Publication d’une visionneuse de médias mixtes {#publishing-mixed-media-sets}
 
-Voir [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md) pour plus d’informations sur la publication d’une visionneuse de médias mixtes.
+Pour obtenir des informations sur la publication d’une visionneuse de médias mixtes, consultez la section [Publication de ressources](/help/assets/publishing-dynamicmedia-assets.md).
 
 >[!NOTE]
 >

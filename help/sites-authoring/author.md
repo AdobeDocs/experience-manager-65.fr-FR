@@ -14,7 +14,7 @@ exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '538'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,8 +31,8 @@ Ces environnements interagissent afin que vous puissiez rendre le contenu dispon
 
 L’environnement de création fournit les mécanismes de création, de mise à jour et de révision de ce contenu avant de le publier :
 
-* Un auteur crée et révise le contenu (qui peut être de plusieurs types, par ex. pages, ressources, publications, etc.)
-* qui, à un moment donné, sera publié sur votre site web.
+* Un auteur crée et révise le contenu (qui peut être de plusieurs types, par exemple des pages, des ressources, des publications, etc.)
+* qui, à un moment donné, sera publié sur votre site Web.
 
 ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -50,16 +50,16 @@ En fonction de la configuration de votre instance et de vos droits d’accès pe
 
 * générer un nouveau contenu ou modifier le contenu existant sur une page
 * utiliser les modèles prédéfinis pour créer des pages de contenu ;
-* créer, modifier et gérer vos ressources et collections
+* créer, modifier et gérer vos ressources et collections ;
 * créer, modifier et gérer vos publications ;
-* développer vos campagnes et les ressources associées
-* développer et gérer des sites communautaires
+* développer vos campagnes et les ressources associées ;
+* développer et gérer des sites communautaires ;
 * déplacer, copier ou supprimer des pages de contenu, des ressources, etc. ;
 * publier des pages, des ressources, etc. (ou annuler leur publication).
 
 Certaines tâches administratives peuvent aussi vous aider à gérer votre contenu :
 
-* worfklow qui déterminent le mode de gestion des modifications ; par exemple, appliquer une révision avant une publication.
+* workflow qui déterminent le mode de gestion des modifications ; par exemple, appliquer une révision avant une publication.
 * projets qui coordonnent des tâches individuelles.
 
 >[!NOTE]
@@ -68,11 +68,11 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 
 #### Environnement de publication {#publish-environment}
 
-Une fois prêt, le contenu du site d’AEM est publié sur la page **environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
+Une fois prêt, le contenu du site AEM est publié dans l’**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
 Dans le cas d’un site web ordinaire, l’environnement de publication est situé à l’intérieur de la zone DMZ ; en d’autres termes, il est disponible sur Internet, mais il ne bénéficie plus de la protection absolue de votre réseau interne.
 
-Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), ou inclut des [composants de Communities](/help/communities/author-communities.md), des utilisateurs (membres) connectés peuvent interagir avec les fonctions de Communities. Par exemple, ils peuvent publier sur un forum, publier un commentaire ou suivre d’autres membres. Les membres peuvent être autorisés à effectuer des activités normalement réservées à l’environnement de création, telles que la création de nouvelles pages (groupes de communautés), d’articles de blog et la modération des publications d’autres membres.
+Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), ou inclut des [composants de Communities](/help/communities/author-communities.md), des utilisateurs (membres) connectés peuvent interagir avec les fonctions de Communities. Par exemple, ils peuvent interagir sur un forum, publier un commentaire ou suivre d’autres membres. Les membres peuvent être autorisés à effectuer des activités normalement réservées à l’environnement de création, telles que la création de nouvelles pages (groupes de communautés), d’articles de blog et la modération des publications d’autres membres.
 
 >[!NOTE]
 >
@@ -85,10 +85,10 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
    >  Ces termes sont synonymes de publication/annulation de la publication.
 >
 >* **Répliquer/Réplication**
-   >  Il s’agit des termes techniques utilisés pour indiquer le mouvement des données (contenu de page, fichiers, code, commentaires utilisateur, etc.) d’un environnement à un autre. c’est-à-dire lors de la publication ou de la réplication inverse des commentaires utilisateur.
+   >  Ces termes techniques décrivent le déplacement des données (par exemple de contenu de la page, de fichiers, de code, de commentaires de l’utilisateur) d’un environnement à un autre ; par ex., lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
 >
 
 
 #### Dispatcher {#dispatcher}
 
-Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.**
+Afin que les visiteurs de votre site Web bénéficient de performances optimales, le **[Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html)** met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.

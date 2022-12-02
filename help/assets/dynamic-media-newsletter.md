@@ -1,7 +1,7 @@
 ---
-title: Archive de la newsletter Dynamic Media
-description: 'La newsletter Dynamic Media archivée par Experience League était une newsletter mensuelle. Il a été conçu pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin que vous puissiez en tirer immédiatement parti. Les newsletters archivées contiennent de précieuses ressources d’acquisition de connaissances qui étaient disponibles dans cette newsletter ponctuelle qui est maintenant abandonnée. Les newsletters archivées comprennent des vidéos pratiques et des présentations de solutions. Il existe également des présentations des principales fonctionnalités telles que les paramètres prédéfinis d’image, les paramètres prédéfinis de visionneuse et les profils vidéo. '
-keywords: Dynamic Media;newsletter;mises à jour de produit;conseils et astuces;événements;succès client;blog;blogs;images;vidéos;fonctionnalités;fonctionnalités
+title: Archive de la newsletter Dynamic Media
+description: La newsletter archivée Dynamic Media d’Experience League était un bulletin d’information mensuel. Elle était conçue pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin d’en tirer parti immédiatement. Les newsletters archivées contiennent de précieuses ressources d’acquisition de connaissances qui étaient disponibles dans cette newsletter ponctuelle qui est maintenant abandonnée. Elles comprennent des vidéos pratiques et des présentations de solutions. Elles comprennent également des présentations des principales fonctionnalités telles que les paramètres prédéfinis d’image, les paramètres prédéfinis de visionneuse et les profils vidéo.
+keywords: Dynamic Media;newsletter;mises à jour de produit;conseils et astuces;événements;succès client;blog;blogs;images;vidéos;fonctionnalités;capacités
 contentOwner: Rick Brough
 solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
@@ -10,7 +10,7 @@ feature: Collaboration,Dynamic Media Classic
 source-git-commit: cdf6a22e8a0fd2e73cd4d25074e0c7162c047d92
 workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 

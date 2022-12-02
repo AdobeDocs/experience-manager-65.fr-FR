@@ -13,7 +13,7 @@ exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ L’éditeur d’image est un élément essentiel d’AEM qui peut être exploit
 
 >[!CAUTION]
 >
->Pour utiliser les fonctionnalités de l’éditeur d’image décrites dans cet article, [Feature Pack 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267) doit être installé.
+>Pour pouvoir utiliser les fonctionnalités de l’éditeur d’image décrites dans cet article, vous devez installer le [pack de fonctionnalités 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267).
 
 ## Unités relatives pour la zone cliquable {#relative-units-for-image-map}
 

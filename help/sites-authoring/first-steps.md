@@ -14,7 +14,7 @@ exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,10 +25,10 @@ Cette section vous donne un aperçu des tâches principales que vous exécuterez
 Elle traite des sujets suivants :
 
 * [Prise en main](#getting-started)\
-   Détail de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
+   Explication de la séquence de base des événements dont vous avez besoin pour créer et publier votre première page.
 
 * [Autres opérations](#further-actions)\
-   Suivez les nombreuses autres actions que vous pouvez utiliser lors de la création.
+   Suivie des nombreuses autres actions utilisables pour la création.
 
 ## Prise en main {#getting-started}
 
@@ -57,7 +57,7 @@ Si votre instance comprend déjà des pages ou si vous venez d’en créer une, 
 
 * [Annulation et rétablissement des modifications de page](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits)
 * [Utilisation du mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode) (pour avoir un aperçu du contenu avant publication)
-* [Verrouillage d’une page   ](/help/sites-authoring/editing-content.md#locking-a-page)
+* [Verrouillage d’une page](/help/sites-authoring/editing-content.md#locking-a-page)
 
 ### Publication d’une page {#publishing-a-page}
 

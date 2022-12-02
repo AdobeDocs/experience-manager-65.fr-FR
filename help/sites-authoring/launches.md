@@ -14,7 +14,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 source-git-commit: 47870c05d231bacc424cfbf308f78bc1eaeb907b
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -106,7 +106,7 @@ La fonction Lancements vous permet de :
 >
 >La réorganisation des composants sur une page Launch n’est pas prise en charge.
 >
->Lorsque la page est promue, les modifications de contenu sont répercutées, mais les positions du composant ne changent pas.
+>Lorsque la page est promue, les modifications de contenu sont répercutées mais les positions du composant ne changent pas.
 
 
 ### Console Lancements {#the-launches-console}
@@ -117,7 +117,7 @@ La console Lancements fournit un aperçu de vos lancements et permet d’appliqu
 
 * Ou directement avec [.https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
-## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
+## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 
 1. Dans la console **Sites**, accédez à la source des lancements.
 1. Ouvrez le rail **Références** et sélectionnez la page source.

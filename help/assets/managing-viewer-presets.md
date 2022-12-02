@@ -1,6 +1,6 @@
 ---
-title: Gestion des paramètres de visionneuse prédéfinis
-description: Comment créer, modifier et gérer des paramètres prédéfinis de visionneuse dans Dynamic Media.
+title: Gestion des paramètres prédéfinis de visionneuse
+description: Découvrez comment créer, modifier et gérer des paramètres prédéfinis de visionneuse dans Dynamic Media.
 uuid: 64fcf16a-7c4a-435b-bf1a-f27b8b39a715
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,23 +12,23 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '4332'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
-# Gestion des paramètres de visionneuse prédéfinis{#managing-viewer-presets}
+# Gestion des paramètres prédéfinis de visionneuse{#managing-viewer-presets}
 
 Un paramètre prédéfini de visionneuse est un ensemble de paramètres qui détermine comment les utilisateurs voient les ressources multimédias enrichies sur leur écran d’ordinateur et leurs appareils mobiles. En tant qu’administrateur, vous pouvez créer des paramètres prédéfinis de visionneuse. Les paramètres sont disponibles pour un ensemble d’options de configuration de la visionneuse. Vous pouvez, par exemple, modifier la taille d’affichage et le comportement du zoom de la visionneuse.
 
-Pour plus d’informations sur la création et la personnalisation de vos propres paramètres prédéfinis de visionneuse HTML5, voir Adobe Dynamic Media *Documentation de l’API du SDK de la visionneuse HTML5*. Le kit SDK est disponible sur le serveur de publication IS intégré au kit SDK lui-même. Chaque version de la bibliothèque possède sa propre documentation SDK incluse.
+Pour obtenir des instructions sur la création et la personnalisation de vos propres paramètres prédéfinis de visionneuse HTML5, consultez la *Documentation sur l’API du SDK de la visionneuse HTML5*. Le kit SDK est disponible sur le serveur de publication IS intégré au kit SDK lui-même. Chaque version de la bibliothèque possède sa propre documentation SDK incluse.
 
-Chemin: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-Par exemple, SDK 3.10 : [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
+Chemin : `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
+Par exemple, le SDK 3.10 : [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-Voir aussi [Guide de référence des visionneuses Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr).
+Consultez également le [Guide de référence des visionneuses Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr).
 
 Cette section décrit comment créer, modifier et gérer les paramètres prédéfinis de visionneuse. Vous pouvez appliquer des paramètres prédéfinis de visionneuse à une image lorsque vous la prévisualisez. Reportez-vous à la section [Application de paramètres de visionneuse prédéfinis](#applying-a-viewer-preset-to-an-asset).
 
@@ -42,7 +42,7 @@ Toutes les visionneuses prêtes à l’emploi prennent en charge l’accessibili
 
 Voir aussi [Accessibilité clavier et navigation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=fr).
 
-## Gestion des paramètres de visionneuse prédéfinis {#managing-viewer-presets-1}
+## Gestion des paramètres prédéfinis de visionneuse {#managing-viewer-presets-1}
 
 Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et prévisualiser des paramètres prédéfinis de visionneuse dans Adobe Experience Manager en appuyant sur **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres visionneuse]**.
 
@@ -54,14 +54,14 @@ Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et pr�
 
 ### Prise en charge de la visionneuse pour les pages web en responsive design {#viewer-support-for-responsive-designed-web-pages}
 
-Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Autrement, elle peut être « réactive » et affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et réactives.
+Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez peut-être besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura peut-être une mise en page statique. Autrement, elle peut être « réactive » et affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies HTML5 fournies avec Dynamic Media sont compatibles à la fois avec les pages web statiques et réactives.
 
-Voir [Bibliothèque d’images réactive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr) pour plus d’informations sur l’intégration de visionneuses réactives à vos pages web.
+Consultez la section [Bibliothèque d’images réactive](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr) pour plus d’informations sur l’intégration de visionneuses réactives à vos pages web.
 
 >[!NOTE]
 >
 >Notez que vous devez publier toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.
->Voir [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
+>Consultez la section [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
 
 ### Compatibilité du système de paramètres prédéfinis de visionneuse  {#viewer-preset-system-compatibility}
 
@@ -72,7 +72,7 @@ Tous les paramètres de visionneuse prédéfinis fournis avec Dynamic Media sont
 * iPad Apple
 * Smartphone Android™
 * Tablette Android™
-* Pour la vidéo, une prise en charge supplémentaire de la lecture MP4 est fournie pour [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://docs.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
+* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® ](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://docs.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Types de médias riches pour les paramètres prédéfinis de visionneuse {#rich-media-types-for-viewer-presets}
 
@@ -82,7 +82,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
  <tbody>
   <tr>
    <td><strong>Ensemble de carrousel</strong><br /> </td>
-   <td><p>Les zones sensibles ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Un client peut faire défiler les images vers la gauche ou la droite, puis sélectionner une zone réactive sur une image pour obtenir des détails supplémentaires ou réaliser directement un achat sur les pages de catégorie, d’accueil ou de destination d’un site web.</p> </td>
+   <td><p>Les zones sensibles ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Vous pouvez faire défiler les images vers la gauche ou la droite, puis cliquer sur une zone réactive ou sur une image pour obtenir des informations supplémentaires ou réaliser un achat directement depuis une page de catégorie, d’accueil ou d’entrée d’un site web.</p> </td>
   </tr>
   <tr>
    <td><strong>Dimensionnel</strong><br /> </td>
@@ -102,11 +102,11 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Image interactive</strong></td>
-   <td>Des zones réactives sont ajoutées aux parties d’une image qu’un client peut ensuite sélectionner pour des détails supplémentaires ou pour un achat direct à partir des pages de catégorie, d’accueil ou de destination d’un site web.</td>
+   <td>Des zones réactives sont ajoutées aux parties d’une image. Vous pouvez alors les sélectionnez pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
   </tr>
   <tr>
    <td><strong>Vidéo interactive</strong></td>
-   <td>Des miniatures sont ajoutées aux segments de la chronologie dans une vidéo qu’un client peut ensuite sélectionner pour des détails supplémentaires ou pour un achat directement depuis les pages de catégorie, d’accueil ou de destination d’un site web.</td>
+   <td>Des miniatures sont ajoutées aux segments de montage d’une vidéo. Le client peut alors la sélectionner pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
   </tr>
   <tr>
    <td><strong>Supports variés</strong></td>
@@ -130,7 +130,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Vidéo 360</strong></td>
-   <td><p>Utilisez la visionneuse de vidéos 360/VR afin d’effectuer le rendu de la vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage ou d’une procédure médicale.</p> <p>Lors de la lecture sur un écran plat, l’utilisateur contrôle l’angle de vue ; la lecture sur les appareils mobiles applique généralement leurs commandes gyroscopiques intégrées.</p> <p>La visionneuse inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.</p> <p><strong>Important</strong> : Cette visionneuse est uniquement disponible dans le mode Scene7 de Dynamic Media.</p> </td>
+   <td><p>Utilisez la visionneuse de vidéos 360/VR afin d’effectuer le rendu de la vidéo équirectangulaire pour une expérience de visionnage immersive d’une pièce, d’une propriété, d’un emplacement, d’un paysage ou d’une procédure médicale.</p> <p>Lors de la lecture sur un écran plat, vous pouvez contrôle l’angle de vue ; la lecture sur les appareils mobiles applique généralement les commandes gyroscopiques intégrées.</p> <p>La visionneuse inclut une prise en charge native de la diffusion de ressources vidéo 360. Par défaut, aucune configuration supplémentaire n’est nécessaire pour l’affichage ou la lecture. Vous diffusez une vidéo 360 avec des extensions vidéo standard telles que .mp4, .mkv et .mov. Le codec le plus courant est H.264.</p> <p><strong>Important</strong> : Cette visionneuse est uniquement disponible dans le mode Scene7 de Dynamic Media.</p> </td>
   </tr>
   <tr>
    <td><strong>Vidéo</strong></td>
@@ -140,7 +140,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
    <td><strong>Zoom vertical</strong></td>
    <td><p>La visionneuse Zoom vertical permet d’optimiser l’expérience de visionnage d’une imagerie de produit afin d’offrir aux utilisateurs la meilleure représentation d’un produit. L’emplacement vertical des échantillons présente les avantages suivants :</p>
     <ul>
-     <li>Il garantit que les échantillons se trouvent en tête de page.<br/> Avec des échantillons horizontaux, en fonction de la taille de l’écran de l’utilisateur, ils ne sont pas visibles tant que l’utilisateur n’a pas fait défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
+     <li>Vérifie que les échantillons sont "au-dessus du pli".<br/> Lorsqu’ils sont horizontaux, en fonction de la taille de l’écran du poste de travail, les échantillons ne sont pas visibles tant que vous ne faisiez pas défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
      <li>Il optimise la taille de l’image principale.<br />Avec les échantillons horizontaux, il est nécessaire de réserver de la place sur la page afin de vous assurer qu’ils sont visibles. Ce positionnement a réduit la taille de l’image principale. Toutefois, avec une disposition verticale des échantillons, vous n’avez pas besoin d’allouer cet espace. Ainsi, vous pouvez agrandir la taille de l’image principale.</li>
     </ul> </td>
   </tr>
@@ -163,7 +163,7 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
 
 >[!NOTE]
 >
->Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés, mais vous devez les publier.
+>Tous les paramètres prédéfinis de visionneuse prêts à l’emploi de Dynamic Media sont déjà activés mais vous devez les publier.
 >Voir [Publication de paramètres de visionneuse prédéfinis](#publishing-viewer-presets).
 >
 >Tous les nouveaux paramètres prédéfinis de visionneuse que vous créez et ajoutez doivent être activés *et* publiés.
@@ -202,7 +202,7 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
    <td><code>html5_dimensionalviewer.css</code></td>
   </tr>
   <tr>
-   <td>Flyout</td>
+   <td>Fenêtre déroulante</td>
    <td>Zoom_fenêtre déroulante</td>
    <td><code>html5_flyoutviewer.css</code></td>
   </tr>
@@ -386,14 +386,14 @@ Le tableau suivant répertorie les gestes pris en charge dans les visionneuses m
  </tbody>
 </table>
 
-## Augmentation du nombre de paramètres de visionneuse prédéfinis affichés {#increasing-the-number-of-viewer-presets-that-display}
+## Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent {#increasing-the-number-of-viewer-presets-that-display}
 
-Experience Manager affiche un large éventail de paramètres prédéfinis de visionneuse lors de l’affichage d’une ressource à partir de **[!UICONTROL Affichage des détails]** > **[!UICONTROL Visionneuses]**. Vous pouvez augmenter ou diminuer le nombre de visionneuses qui s’affichent.
+Experience Manager affiche une grande variété de paramètres prédéfinis de visionneuse lors de l’affichage de ressources à partir de l’**[!UICONTROL Affichage des détails]** > **[!UICONTROL Visionneuses]**. Vous pouvez augmenter ou diminuer le nombre de visionneuses qui s’affichent.
 
-**Augmentez le nombre de paramètres de visionneuse prédéfinis affichés :**
+**Pour augmenter le nombre de paramètres prédéfinis de visionneuse qui s’affichent, procédez comme suit :**
 
 1. Accédez à CRXDE Lite ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
-1. Accédez au noeud de liste des paramètres prédéfinis de visionneuse à l’emplacement suivant :
+1. Accédez au nœud de liste des paramètres prédéfinis de visionneuse à l’emplacement suivant :
 
    `/libs/dam/gui/coral/content/commons/sidepanels/viewerpresets/viewerpresetslist`
 
@@ -407,21 +407,21 @@ Experience Manager affiche un large éventail de paramètres prédéfinis de vis
 1. Dans la propriété limit, saisissez la valeur de votre choix ; par exemple, `{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. Sélectionnez **[!UICONTROL Enregistrer tout]**.
 
-## Création d’un paramètre prédéfini de visionneuse {#creating-a-new-viewer-preset}
+## Création d’un paramètre prédéfini de la visionneuse {#creating-a-new-viewer-preset}
 
 La création de paramètres prédéfinis de visionneuse vous permet d’appliquer divers paramètres afin d’afficher et d’interagir avec les ressources. Toutefois, vous n’avez pas besoin de créer de paramètres prédéfinis de visionneuse. Si vous préférez, vous pouvez utiliser les paramètres prédéfinis de visionneuse par défaut fournis avec AEM Assets.
 
 Si vous choisissez de créer un paramètre prédéfini de visionneuse, après l’avoir enregistré, le statut de la visionneuse est automatiquement activé (défini sur **[!UICONTROL Activé]**) dans la page Paramètres prédéfinis de la visionneuse. Ce statut indique qu’elle est visible dans les composants Dynamic Media et Interactive Media, ou dès que vous prévisualisez une image ou une vidéo.
 
-Certains paramètres prédéfinis de visionneuse bénéficient de paramètres exclusifs qui peuvent affecter l’utilisation et le comportement global de la visionneuse. Selon le paramètre prédéfini de visionneuse que vous créez, vous pouvez tenir compte de ces considérations spéciales.
+Certains paramètres prédéfinis de visionneuse bénéficient de paramètres exclusifs qui peuvent affecter l’utilisation et le comportement global de la visionneuse. Selon le paramètre prédéfini de visionneuse que vous créez, il est souhaitable d’être conscient de ces particularités.
 
 Voir [Remarques spéciales sur la création d’un paramètre de visionneuse interactive prédéfini](#special-considerations-for-creating-an-interactive-viewer-preset).
 
 Voir [Remarques spéciales sur la création d’un paramètre prédéfini de visionneuse pour une bannière de carrousel](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
-**Pour créer un paramètre prédéfini de visionneuse :**
+**Pour créer un paramètre prédéfini de visionneuse, procédez comme suit :**
 
-1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres prédéfinis de la visionneuse]**.
+1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 
    ![6_5_viewerpresets](assets/6_5_viewerpresets.png)
 
@@ -443,7 +443,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
       Les propriétés de style CSS de chaque type de paramètre prédéfini de visionneuse sont décrites dans la rubrique d’aide Personnalisation de la visionneuse *`<viewer name>`* dans le [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Par exemple, si vous créez un paramètre prédéfini de visionneuse de type `Mixed_Media`, consultez [Personnalisation des visionneuses de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=fr) pour une liste et une description de chaque propriété.
 
-   * Si vous avez défini des paramètres de style dans un fichier CSS distinct, vous pouvez charger le fichier CSS dans AEM Assets. Sélectionner **[!UICONTROL Importation CSS]** below the **[!UICONTROL Type sélectionné]** menu déroulant (si nécessaire, faites défiler l’éditeur visuel vers le haut pour le voir) afin que vous puissiez trouver le fichier CSS chargé et l’associer au paramètre prédéfini de la visionneuse.
+   * Si vous avez défini des paramètres de style dans un fichier CSS distinct, vous pouvez charger le fichier CSS dans AEM Assets. Sélectionnez **[!UICONTROL Importer CSS]** en dessous du menu déroulant **[!UICONTROL Type sélectionné]** (si nécessaire, faites défiler la page vers le haut pour le voir) afin de trouver le fichier CSS chargé et de l’associer aux paramètres prédéfinis de visionneuse.
 
       Lorsque vous importez un fichier CSS, l’éditeur visuel vérifie que le CSS utilise des marqueurs de visionneuse adaptés. Si vous créez par exemple une visionneuse de zoom, toutes les règles CSS que vous importez doivent être définies à l’aide de son nom de classe de visionneuse `.s7mixedmediaviewer` défini sur un élément de visionneuse parent.
 
@@ -451,7 +451,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
    >[!NOTE]
    >
    >Si vous préférez modifier le CSS directement dans sa forme brute, sélectionnez **[!UICONTROL Afficher/masquer CSS]** sous le menu déroulant Type sélectionné (si nécessaire, faites défiler l’éditeur visuel pour le voir).
-   >Comme l’éditeur visuel, lorsque vous modifiez une propriété directement dans le CSS, vous pouvez immédiatement voir l’effet qu’elle a sur l’échantillon de visionneuse. En outre, cette même propriété est automatiquement et simultanément mise à jour dans l’éditeur visuel. Ainsi, vous pouvez utiliser l’éditeur CSS brut, l’éditeur visuel, ou les deux, de façon interchangeable.
+   >Comme pour l’éditeur visuel, lorsque vous modifiez une propriété directement dans le CSS, vous pouvez voir immédiatement l’effet du changement sur l’échantillon de visionneuse. En outre, cette même propriété est automatiquement et simultanément mise à jour dans l’éditeur visuel. Ainsi, vous pouvez utiliser l’éditeur CSS brut, l’éditeur visuel, ou les deux, de façon interchangeable.
 
    >[!NOTE]
    >
@@ -481,7 +481,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
 **À propos des modes d’affichage des miniatures dans le panneau**
 
-Lorsque vous créez ou modifiez un paramètre prédéfini de visionneuse de vidéos interactives, vous avez le choix entre le paramètre Mode d’affichage à utiliser lorsque vous sélectionnez `InteractiveSwatches` de la **[!UICONTROL Composant sélectionné]** sous le menu **[!UICONTROL Comportement]** . Le mode d’affichage que vous choisissez affecte la façon dont les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez choisir l’une des options suivantes : `segment`le mode d’affichage (par défaut) ou un `continuous` mode d’affichage.
+Lorsque vous créez ou modifiez un paramètre de visionneuse prédéfini pour vidéo interactive, vous pouvez choisir le paramètre de mode d’affichage à utiliser lorsque vous sélectionnez `InteractiveSwatches` dans le menu déroulant **[!UICONTROL Composant sélectionné]** sous l’onglet **[!UICONTROL Comportement]**. Le mode d’affichage que vous choisissez affecte la façon dont les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez sélectionner le mode d’affichage `segment` (par défaut) ou le mode d’affichage `continuous`.
 
 <table>
  <tbody>
@@ -491,11 +491,11 @@ Lorsque vous créez ou modifiez un paramètre prédéfini de visionneuse de vid�
   </tr>
   <tr>
    <td>Segment</td>
-   <td><p><code>Segment </code>est le mode d’affichage par défaut des paramètres prédéfinis de la visionneuse de vidéos interactives prêts à l’emploi <code>Shoppable_Video_light</code> et <code>Shoppable_Video_dark</code>, ainsi que tout paramètre prédéfini de la visionneuse de vidéos interactives que vous créez vous-même.</p> <p>Dans ce mode, lorsqu’un segment de vidéo comporte moins de miniatures que le nombre d’emplacements visibles dans le panneau d’affichage. En outre, les miniatures des sous-segments suivants ou précédents sont <i>not </i>extrait pour remplir les zones vides du panneau. En d’autres termes, cela préserve l’affichage des échantillons affectés à ce segment vidéo spécifique.</p> </td>
+   <td><p><code>Segment </code>est le mode d’affichage par défaut des paramètres prédéfinis de la visionneuse de vidéos interactives prêts à l’emploi <code>Shoppable_Video_light</code> et <code>Shoppable_Video_dark</code>, ainsi que tout paramètre prédéfini de la visionneuse de vidéos interactives que vous créez vous-même.</p> <p>Dans ce mode, supposons qu’un segment de vidéo comporte moins de miniatures que le nombre de points visibles dans le panneau d’affichage. De plus, les miniatures des sous-segments suivants ou précédents ne sont <i>pas</i> extraites pour remplir les zones vides du panneau. En d’autres termes, cela préserve l’affichage des échantillons affectés à ce segment vidéo spécifique.</p> </td>
   </tr>
   <tr>
    <td>Continu</td>
-   <td><p>Dans <code>continuous </code>mode d’affichage, si le nombre de miniatures d’un segment est inférieur au nombre visible dans le panneau, la visionneuse inclut automatiquement l’affichage de miniatures du segment suivant. Ou, la visionneuse inclut automatiquement l’affichage des miniatures du segment précédent, dans les cas où la dernière miniature est affichée.</p> <p>La <a href="/help/assets/interactive-videos.md">vidéo de cette rubrique</a> est un exemple du mode d’affichage <code>continuous </code>.</p> </td>
+   <td><p>En mode d’affichage <code>continuous </code>, si le nombre de miniatures d’un segment est inférieur au nombre visible dans le panneau, la visionneuse inclut automatiquement l’affichage de miniatures du segment suivant. Autrement, la visionneuse inclut automatiquement l’affichage des miniatures du segment précédent, dans les cas où la dernière miniature est affichée.</p> <p>La <a href="/help/assets/interactive-videos.md">vidéo de cette rubrique</a> est un exemple du mode d’affichage <code>continuous </code>.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -543,7 +543,7 @@ Lors de la création de paramètres prédéfinis de visionneuse de bannière de 
 
 Les paramètres de visionneuse prédéfinis qui sont disponibles dans l’interface utilisateur dépendent des paramètres activés dans le mode création. Par défaut, un paramètre de visionneuse prédéfini est réglé sur « Activé » après sa création. Si vous désactivez le paramètre prédéfini, vous ne pourrez pas le voir en mode création. Si le paramètre prédéfini est publié, il l’est toujours, qu’il soit activé ou désactivé. Vous souhaiterez peut-être désactiver certains paramètres prédéfinis si la liste devient difficile à gérer ou si vous souhaitez empêcher l’utilisation d’un paramètre de visionneuse prédéfini.
 
-**Pour activer ou désactiver les paramètres de visionneuse prédéfinis :**
+**Pour activer ou désactiver les paramètres prédéfinis de visionneuse, procédez comme suit :**
 
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 1. Dans la page Paramètre prédéfini de la visionneuse, sous l’en-tête de colonne **[!UICONTROL État]**, sélectionnez le curseur pour activer ou désactiver un paramètre de visionneuse prédéfini.
@@ -554,13 +554,13 @@ Les paramètres de visionneuse prédéfinis qui sont disponibles dans l’interf
 
 Lorsqu’un paramètre prédéfini de visionneuse est activé, cela signifie qu’il est visible dans les composants Dynamic Media et Interactive Media, et ce, dès que vous affichez une ressource.
 
-Cependant, pour *diffuser* une ressource avec un paramètre de visionneuse prédéfini, ce dernier doit également être publié. Tous les paramètres de visionneuse prédéfinis doivent être activés *et* publiés pour obtenir une URL ou un code intégré pour une ressource. Veillez à activer et publier tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis avec Dynamic Media. Les paramètres prédéfinis personnalisés de la visionneuse que vous créez et ajoutez sont activés automatiquement, mais ils doivent également être publiés.
+Cependant, pour *diffuser* une ressource avec un paramètre de visionneuse prédéfini, ce dernier doit également être publié. Tous les paramètres de visionneuse prédéfinis doivent être activés *et* publiés pour obtenir une URL ou un code intégré pour une ressource. Vous devez activer et publier tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis avec Dynamic Media. Les paramètres prédéfinis personnalisés de la visionneuse que vous créez et ajoutez sont activés automatiquement, mais ils doivent également être publiés.
 
 Voir [Activation ou désactivation des paramètres de visionneuse prédéfinis](#activating-or-deactivating-viewer-presets).
 
 Voir aussi [Prévisualisation de ressources](/help/assets/previewing-assets.md).
 
-**Pour publier des paramètres prédéfinis de visionneuse :**
+**Pour publier les paramètres prédéfinis de visionneuse :**
 
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 1. Sélectionnez un ou plusieurs paramètres de visionneuse prédéfinis que vous souhaitez publier.
@@ -571,7 +571,7 @@ Voir aussi [Prévisualisation de ressources](/help/assets/previewing-assets.md).
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 1. Sélectionnez **[!UICONTROL Titre prédéfini]**, **[!UICONTROL Type]**, **[!UICONTROL Publié]** ou **[!UICONTROL État]** afin de trier en fonction de cette colonne. Sélectionnez par exemple **[!UICONTROL Type]** pour trier les types de paramètres prédéfinis de visionneuse dans l’ordre alphabétique standard ou inversé.
 
-## Modification des paramètres prédéfinis de visionneuse {#editing-viewer-presets}
+## Modification de paramètres prédéfinis de visionneuse {#editing-viewer-presets}
 
 La modification des *paramètres prédéfinis de visionneuse prêts à l’emploi* n’est pas un scénario pris en charge. Si vous modifiez un paramètre de visionneuse prédéfini prêt à l’emploi, vous serez invité à l’enregistrer en utilisant un nouveau nom.
 
@@ -589,19 +589,19 @@ La modification des *paramètres prédéfinis de visionneuse prêts à l’emplo
    * Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer vos modifications et revenir à la page du paramètre prédéfini de visionneuse.
    * Sélectionnez **[!UICONTROL Annuler]** pour annuler les modifications effectuées et revenir à la page du paramètre prédéfini de visionneuse.
 
-## Suppression de paramètres prédéfinis de visionneuse personnalisés {#deleting-custom-viewer-presets}
+## Suppression de paramètres de visionneuse prédéfinis personnalisés {#deleting-custom-viewer-presets}
 
 Vous pouvez supprimer les paramètres prédéfinis de visionneuse que vous avez créés et ajoutés dans Dynamic Media.
 
-**Pour supprimer des paramètres prédéfinis de visionneuse personnalisés :**
+**Pour supprimer des paramètres de visionneuse prédéfinis personnalisés, procédez comme suit :**
 
-1. Dans le coin supérieur gauche de Experience Manager, sélectionnez le logo du Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône en forme de marteau) **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
+1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 1. Sur la page Paramètres prédéfinis de la visionneuse, cochez un titre de paramètre prédéfini, puis sélectionnez l’icône de la **[!UICONTROL corbeille]**.
 1. Sélectionnez **[!UICONTROL Supprimer]**.
 
-## Application d’un paramètre prédéfini de visionneuse à une ressource {#applying-a-viewer-preset-to-an-asset}
+## Application d’un paramètre de visionneuse prédéfini à une ressource {#applying-a-viewer-preset-to-an-asset}
 
-Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’**[!UICONTROL URL]** et les boutons d’**[!UICONTROL intégration]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
+Si vous avez déjà publié la ressource et la visionneuse sélectionnée, les boutons **[!UICONTROL URL]** et **[!UICONTROL Incorporer]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
 
 **Pour appliquer un paramètre prédéfini de visionneuse à une ressource, procédez comme suit :**
 
@@ -611,12 +611,12 @@ Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’*
    >
    >Si vous avez déjà publié la ressource et la visionneuse sélectionnée, l’**[!UICONTROL URL]** et les boutons d’**[!UICONTROL intégration]** s’affichent une fois que vous avez sélectionné un paramètre prédéfini de visionneuse.
 
-1. Sélectionnez un paramètre prédéfini de visionneuse dans le volet de gauche afin de pouvoir l’appliquer à la ressource.
+1. Sélectionnez un paramètre prédéfini de visionneuse dans le volet de gauche pour l’appliquer à la ressource.
 
-   Vous pouvez [copier l’URL à partager](/help/assets/linking-urls-to-yourwebapplication.md) avec d’autres utilisateurs.
+   Vous pouvez [copier l’URL pour la partager](/help/assets/linking-urls-to-yourwebapplication.md) avec d’autres personnes.
 
 ## Diffusion de ressources avec des paramètres prédéfinis de visionneuse {#delivering-assets-with-viewer-presets}
 
-Pour obtenir l’URL d’un paramètre prédéfini de visionneuse, voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). Voir aussi [Incorporation de la visionneuse de vidéos dans une page web](/help/assets/embed-code.md).
+Pour obtenir l’URL d’un paramètre prédéfini de visionneuse, voir [Liaison d’URL à une application web](/help/assets/linking-urls-to-yourwebapplication.md). Consultez également la section [Incorporation de la visionneuse de vidéos dans une page web](/help/assets/embed-code.md).
 
 Si vous utilisez Experience Manager pour la gestion de contenu web, vous pouvez ajouter des ressources en utilisant des paramètres de visionneuse prédéfinis directement sur la page. Reportez-vous à [Ajout de ressources Dynamic Media aux pages](/help/assets/adding-dynamic-media-assets-to-pages.md).

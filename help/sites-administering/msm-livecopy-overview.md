@@ -66,7 +66,7 @@ L’**aperçu de la Live Copy** peut être ouvert lorsque lors de l’affichage 
 
    >[!NOTE]
    >
-   >Pour plus de détails, consultez également l’article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) (Message d’état de la Live Copy - À jour/Vert/Synchronisé) de la base de connaissances.
+   >Pour plus de détails, consultez également l’article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/fr/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) (Message d’état de la Live Copy - À jour/Vert/Synchronisé) de la base de connaissances.
 
 1. Utilisez **Fermer** pour fermer l’aperçu et retourner à la console **Sites**.
 

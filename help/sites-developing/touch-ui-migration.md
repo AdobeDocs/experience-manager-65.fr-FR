@@ -122,7 +122,7 @@ Les boîtes de dialogue constituent un élément majeur de la migration de vos c
 
    * Il existe une couche de compatibilité dans l’interface utilisateur tactile pour ouvrir une boîte de dialogue d’interface utilisateur classique dans un « wrapper d’interface utilisateur tactile », mais cette fonctionnalité est limitée et n’est pas recommandée à long terme.
 
-* [Personnalisation des champs de boîte de dialogue dans l’interface utilisateur tactile](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [Personnalisation des champs de boîte de dialogue dans l’interface utilisateur tactile](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [Création d’un composant de champ d’IU Granite](/help/sites-developing/granite-ui-component.md)
 * [Personnalisation de la création de pages](/help/sites-developing/customizing-page-authoring-touch.md) (avec l’interface utilisateur tactile)
 

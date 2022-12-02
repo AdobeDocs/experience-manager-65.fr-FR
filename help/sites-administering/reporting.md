@@ -14,13 +14,13 @@ exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
 workflow-type: tm+mt
 source-wordcount: '2806'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Création de rapports {#reporting}
 
-Pour vous aider à analyser et surveiller l’état de votre instance, AEM propose une sélection de rapports par défaut, qui peuvent être configurés en fonction de vos besoins :
+Pour vous aider à analyser et surveiller l’état de votre instance, AEM propose une sélection de rapports par défaut, qui peuvent être configurés en fonction de vos besoins :
 
 * [Rapport de composants](#component-report)
 * [Utilisation du disque](#disk-usage)
@@ -33,9 +33,9 @@ Pour vous aider à analyser et surveiller l’état de votre instance, AEM propo
 
 >[!NOTE]
 >
->Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance du système et la création de rapports dans l’interface utilisateur moderne, voir [Tableau de bord des opérations.](/help/sites-administering/operations-dashboard.md)
+>Ces rapports ne sont disponibles que dans l’interface utilisateur classique. Pour la surveillance du système et la création de rapports dans l’interface utilisateur moderne, consultez la section [Tableau de bord des opérations.](/help/sites-administering/operations-dashboard.md)
 
-Tous ces rapports sont accessibles à partir de la console **Tools**. Sélectionnez **Rapports** dans le panneau de gauche, puis double-cliquez sur le rapport dans le panneau de droite pour l’ouvrir afin de l’afficher et/ou de le configurer.
+Tous ces rapports sont accessibles à partir de la console **Outils**. Sélectionnez **Rapports** dans le volet de gauche, puis double-cliquez sur le rapport dans le volet de droite pour l’ouvrir afin de l’afficher et de le configurer.
 
 De nouvelles instances d’un rapport peuvent également être créées à partir de la console **Outils**. Sélectionnez **Rapports** dans le panneau de gauche, puis **Nouveau** dans la barre d’outils. Définissez un **Titre** et un **Nom**, sélectionnez le type de rapport dont vous avez besoin, puis cliquez sur **Créez**. Votre nouvelle instance de rapport apparaît dans la liste. Double-cliquez pour l’ouvrir, puis faites glisser un composant du sidekick pour créer la première colonne et commencer la définition du rapport.
 
@@ -94,7 +94,7 @@ Les options disponibles dans le menu dépendent de la configuration de la colonn
 
 Les données peuvent être triées selon une colonne en procédant comme suit, au choix :
 
-* Cliquez sur l’en-tête de colonne voulu. Le tri bascule entre l’ordre croissant et décroissant, indiqué par une flèche immédiatement en regard du texte de titre.
+* Cliquez sur l’en-tête de colonne voulu. Le tri bascule entre ordre croissant et décroissant, indiqué par une flèche immédiatement à côté du texte de titre.
 * Utilisez le [menu déroulant de la colonne](#column-drop-down-menu) pour sélectionner spécifiquement **Trier par ordre croissant** ou **Trier par ordre décroissant**. De même, cette option est indiquée par une flèche immédiatement en regard du texte du titre.
 
 ### Groupes et graphique des données actuelles {#groups-and-the-current-data-chart}
@@ -160,22 +160,22 @@ Le rapport peut être généré :
 
 Le graphique qui en résulte est affiché en bas à droite :
 
-![reporttendances](assets/reporttrends.png)
+![reporttrends](assets/reporttrends.png)
 
 Une fois la collecte de données commencée, vous pouvez sélectionner les options suivantes :
 
 * **Période**
 
-   Vous pouvez sélectionner les dates de début et de fin pour les données du rapport à afficher.
+   Vous pouvez sélectionner les dates de début et de fin pour les données de rapport à afficher.
 
 * **Intervalle**
 
-   Mois, Semaine, Jour, Heure peuvent être sélectionnés pour l’échelle et l’agrégation du rapport.
+   Vous pouvez sélectionner Mois, Semaine, Jour et Heure pour l’échelle et l’agrégation du rapport.
 
     Par exemple, si des instantanés quotidiens sont disponibles pour le mois de février 2011 :
 
-   * Si l’intervalle est défini sur `Day`, chaque instantané est présenté comme une valeur unique dans le graphique.
-   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont agrégés dans une seule valeur (affichée sous la forme d’un &quot;point&quot; unique dans le graphique).
+   * Si l’intervalle est défini sur `Day`, chaque instantané s’affiche comme une valeur unique dans le graphique.
+   * Si l’intervalle est défini sur `Month`, tous les instantanés de février sont regroupés en une seule valeur (affichée sous la forme d’un « point » unique dans le graphique).
 
 Faites vos choix selon vos besoins, puis cliquez sur **Aller** pour les appliquer au rapport. Pour mettre à jour l’affichage après la création d’autres instantanés, cliquez de nouveau sur **OK**.
 
@@ -185,22 +185,22 @@ Lorsque des instantanés sont en cours de collecte, vous pouvez :
 
 * Utiliser de nouveau l’option **Terminer** pour réinitialiser la collecte.
 
-   **L’optionTerminer** « gèle » la structure du rapport (à savoir, les colonnes affectées au rapport et groupées, triées, filtrées, etc.) et lance la création des instantanés.
+   **Terminer** « gèle » la structure du rapport (à savoir, les colonnes affectées au rapport et groupées, triées, filtrées, etc.) et lance la création des instantanés.
 
 * Ouvrez la boîte de dialogue **Modifier** pour sélectionner **Aucun instantané de données** afin de terminer la collecte à la date requise.
 
-   **Modifier** active ou désactive uniquement la création des instantanés. Si la création d’instantanés est réactivée, elle utilise l’état du rapport lorsque celui-ci a été la terminé la dernière fois pour créer d’autres instantanés.
+   **Modifier** active ou désactive uniquement la création des instantanés. Si la création d’instantanés est réactivée, elle utilise le statut du rapport lorsque celui-ci a été la terminé la dernière fois pour créer d’autres instantanés.
 
 >[!NOTE]
 >
->Les instantanés sont stockés sous `/var/reports/...` où le reste du chemin reflète le chemin du rapport et de l’identifiant respectifs créés lorsque le rapport a été terminé.
+>Les instantanés sont stockés dans `/var/reports/...`, le reste du chemin d’accès reflétant le chemin d’accès du rapport et de l’ID créés lorsque le rapport a été terminé.
 >
 >
 >Les anciens instantanés peuvent être manuellement purgés, si vous êtes absolument certain de ne plus en avoir besoin.
 
 >[!NOTE]
 >
->Les rapports préconfigurés n’exigent pas de performances élevées, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement de production. Si possible, exécutez ces instantanés quotidiens à un moment de la journée où votre site web ne présente pas beaucoup d’activité ; peut être défini à l’aide de la fonction `Daily snapshots (repconf.hourofday)` paramètre pour **Configuration des rapports Day CQ**; see [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration.
+>Les rapports préconfigurés ne sont pas exigeants en termes de performances, mais il est toujours recommandé d’utiliser des instantanés quotidiens sur un environnement d’exploitation. Si possible, exécutez ces instantanés quotidiens à un moment de la journée où peu d’activités se produisent sur votre site web. Ceci peut être défini avec le paramètre `Daily snapshots (repconf.hourofday)` de la **Configuration du reporting Day CQ**. Consultez la [Configuration d’OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur cette configuration.
 
 #### Limites d’affichage {#display-limits}
 
@@ -212,9 +212,9 @@ Chaque ligne horizontale est une série (et correspond à une entrée dans la l�
 
 Pour que le graphique reste propre sur des périodes plus longues, vous pouvez définir des limites. Pour les rapports standard, ces limites sont les suivantes :
 
-* série horizontale - la valeur maximale par défaut et système est `9`
+* série horizontale - La valeur maximale par défaut comme la valeur système sont `9`.
 
-* instantanés agrégés verticaux - la valeur par défaut est `35` (par série horizontale)
+* instantanés agrégés verticaux - La valeur par défaut est `35` (par série horizontale).
 
 Ainsi, lorsque les limites (appropriées) sont dépassées :
 
@@ -235,7 +235,7 @@ Le bouton **Modifier** ouvre la boîte de dialogue **Modifier le rapport**.
 
 Il s’agit d’un emplacement où la période de collecte des instantanés pour les [Données historiques](#historic-data) est définie, mais d’autres paramètres peuvent également être définis :
 
-![rereport](assets/reportedit.png)
+![reportedit](assets/reportedit.png)
 
 * **Titre**
 
@@ -245,7 +245,7 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
    Vous pouvez définir votre propre description.
 
-* **Chemin racine** (*principal uniquement pour certains rapports*)
+* **Chemin racine** (*actif uniquement pour certains rapports*)
 
    Utilisez cette option pour limiter le rapport à une sous-section du référentiel.
 
@@ -253,21 +253,22 @@ Il s’agit d’un emplacement où la période de collecte des instantanés pour
 
    * **données automatiquement actualisées**
 
-      Les données du rapport sont actualisées chaque fois que vous mettez à jour la définition du rapport.
+      Les données du rapport sont actualisées chaque fois que vous mettez la définition du rapport à jour.
 
    * **données actualisées manuellement**
 
-      Cette option peut être utilisée pour éviter les retards causés par les opérations d’actualisation automatique en cas de volume de données important.
+      Cette option peut être utilisée pour éviter les retards causés par des opérations d’actualisation automatique en cas de volume de données élevé.
 
        Cette option indique que les données du rapport doivent être actualisées manuellement lorsqu’un aspect de la configuration du rapport a changé. Cela signifie également que dès que vous changez un aspect de la configuration du rapport, le tableau est effacé.
 
        Lorsque cette option est sélectionnée, le bouton **[Charger les données](#load-data)** s’affiche (en regard de **Modifier** sur le rapport). Le bouton **Charger les données** charge les données et actualise les données du rapport affichées.
 
-* **Instantanés** Vous pouvez définir la fréquence selon laquelle créer des instantanés : quotidienne, horaire ou pas du tout.
+* **Instantanés**
+Vous pouvez définir la fréquence pour créer des instantanés : quotidienne, horaire ou pas du tout.
 
 ### Charger les données {#load-data}
 
-Le bouton **Charger les données** est uniquement visible lorsque l’option **données actualisées manuellement** a été sélectionnée via **[Modifier](#edit-report)**.
+Le bouton **Charger les données** est uniquement visible lorsque l’option **données actualisées manuellement** a été sélectionnée dans **[Modifier](#edit-report)**.
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -275,7 +276,7 @@ Un clic sur le bouton **Charger les données** a pour effet de recharger les don
 
 Choisir d’actualiser manuellement les données signifie que :
 
-1. Dès que vous modifiez la configuration du rapport, le tableau des données du rapport est masqué.
+1. dès que vous changez la configuration du rapport, la table des données du rapport est effacée.
 
    Par exemple, si vous modifiez le mécanisme de tri d’une colonne, les données ne sont pas affichées.
 
@@ -291,7 +292,7 @@ Lorsque vous avez **terminé** le rapport :
 
 Avec cette boîte de dialogue, vous pouvez définir ou mettre à jour votre propre titre et votre propre description du rapport.
 
-![reportterminer](assets/reportfinish.png)
+![reportfinish](assets/reportfinish.png)
 
 ## Types de rapports {#report-types}
 
@@ -299,7 +300,7 @@ Avec cette boîte de dialogue, vous pouvez définir ou mettre à jour votre prop
 
 Le rapport de composants fournit des informations sur la façon dont votre site web utilise les composants.
 
-[Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
+Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur les éléments suivants :
 
 * Création
 * Chemin de composant
@@ -315,7 +316,7 @@ Signifient que vous pouvez voir, par exemple :
 
 * La manière dont les instances d’un composant sont distribuées.
 
-   Ceci peut être intéressant si certaines pages (c’est-à-dire, des « pages lourdes ») rencontrent des problèmes de performances.
+   Ceci peut être intéressant si certaines pages (des « pages lourdes ») rencontrent des problèmes de performances.
 
 * Identifiez les parties du site faisant l’objet de modifications fréquentes ou moins fréquentes.
 * Découvrez comment le contenu de page se développe au fil du temps.
@@ -334,30 +335,30 @@ Le rapport commence à la racine (/) du référentiel. En cliquant sur une branc
 
 ### Contrôle de l’intégrité {#health-check}
 
-Ce rapport analyse le journal des requêtes en cours :
+Ce rapport analyse le journal des requêtes en cours :
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`
 pour vous aider à identifier la ou les demandes les plus coûteuses au cours d’une période donnée.
 
-Pour générer le rapport, vous pouvez spécifier :
+Pour générer le rapport, vous pouvez spécifier les éléments suivants :
 
 * **Période (heures)**
 
-   Nombre d’heures (passées) à analyser.
+   Nombre d’heures (passées) pour l’analyse.
 
-   Valeur par défaut: `24`
+   Valeur par défaut : `24`
 
-* **max. Résultats**
+* **Résultats maximum**
 
    Nombre maximal de lignes de sortie.
 
-   Valeur par défaut: `50`
+   Valeur par défaut : `50`
 
-* **max. Demandes**
+* **Requêtes maximum**
 
-   Nombre maximum de demandes à analyser.
+   Nombre maximal de demandes à analyser.
 
-   Valeur par défaut : `-1` (tous)
+   Valeur par défaut : `-1` (tout)
 
 * **Adresse électronique**
 
@@ -365,24 +366,24 @@ Pour générer le rapport, vous pouvez spécifier :
 
    Facultatif ; valeur par défaut : non renseigné
 
-* **Exécuter quotidiennement à (hh:mm)**
+* **Exécuter quotidiennement à (hh:mm) :**
 
    Spécifiez l’heure à laquelle le rapport doit être exécuté automatiquement tous les jours.
 
    Facultatif ; valeur par défaut : non renseigné
 
-![rapport](assets/reporthealth.png)
+![reporthealth](assets/reporthealth.png)
 
 ### Rapport d’activité de la page {#page-activity-report}
 
 Le rapport d’activité de la page répertorie les pages et les actions effectuées sur celles-ci.
 
-[Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
+Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur les éléments suivants :
 
 * Page
-* estimé
+* Temps
 * Type
-* User
+* Utilisateur
 
 Signifie que vous pouvez surveiller :
 
@@ -392,7 +393,7 @@ Signifie que vous pouvez surveiller :
 * Les pages les plus/moins fréquemment modifiées
 * Les utilisateurs les plus/moins actifs
 
-Le rapport d’activité de la page récupère toutes ses informations dans le journal d’audit. Par défaut, le chemin d’accès racine est configuré sur le journal d’audit à l’adresse `/var/audit/com.day.cq.wcm.core.page`.
+Le rapport d’activité de la page récupère toutes ses informations dans le journal d’audit. Par défaut, le chemin d’accès racine est configuré sur le journal d’audit dans `/var/audit/com.day.cq.wcm.core.page`.
 
 ![reportpageactivity](assets/reportpageactivity.png)
 
@@ -400,26 +401,26 @@ Le rapport d’activité de la page récupère toutes ses informations dans le j
 
 Ce rapport fournit des informations sur le contenu généré par l’utilisateur, qu’il s’agisse de commentaires, d’évaluations ou de forums.
 
-[Colonnes d’informations ](#selecting-and-positioning-the-data-columns) sur :
+[Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
 
 * Date
 * Adresse IP
 * Page
 * Référent
 * Type
-* Identifiant de l’utilisateur
+* Utilisateur formulaire
 
 Vous permettent :
 
 * De voir quelles pages reçoivent le plus de commentaires
-* De disposer d’un aperçu de l’ensemble des commentaires que des visiteurs du site laissent, avec éventuellement les erreurs associées
-* D’évaluer si le nouveau contenu suscite des commentaires en surveillant les commentaires laissés sur une page.
+* Obtenez un aperçu de l’ensemble des commentaires que des visiteurs du site laissent, avec éventuellement les problèmes associés.
+* Évaluez si le nouveau contenu suscite des commentaires en surveillant les commentaires laissés sur une page.
 
 ![reportusercontent](assets/reportusercontent.png)
 
 ### Rapport de l’utilisateur {#user-report}
 
-Ce rapport fournit des informations sur tous les utilisateurs qui ont enregistré un compte et/ou un profil. Ceci peut comprendre les auteurs de votre organisation et les visiteurs externes.
+Ce rapport fournit des informations sur tous les utilisateurs qui ont enregistré un compte ou un profil. Ceci peut comprendre les auteurs de votre organisation et les visiteurs externes.
 
 [Colonnes d’informations](#selecting-and-positioning-the-data-columns) (le cas échéant) sur :
 
@@ -463,39 +464,39 @@ Dans l’onglet **Définitions**, vous pouvez définir :
 
 * **Propriété**
 
-   Nom de la propriété tel qu’il est stocké dans le référentiel, généralement dans le profil de l’utilisateur.
+   Le nom de propriété tel que stocké dans le référentiel, généralement dans le profil de l’utilisateur.
 
 * **Chemin**
 
-   En règle générale, la propriété est extraite de la propriété `profile`.
+   Cette propriété est généralement extraite du `profile`.
 
 * **Type**
 
-   Sélectionnez le type de champ à partir de `String`, `Number`, `Integer`, `Date`.
+   Sélectionnez le type de champ entre `String`, `Number`, `Integer`, `Date`.
 
 * **Agrégat par défaut**
 
-   Cette opération définit l&#39;agrégat utilisé par défaut si la colonne est dissociée dans un rapport avec au moins une colonne regroupée. Sélectionnez l’agrégat requis à partir de `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+   Ce champ définit l’agrégat utilisé par défaut si la colonne est dissociée dans un rapport ayant au moins une colonne groupée. Sélectionnez l’agrégat requis entre `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Par exemple : *Count* pour un `String` field signifie que le nombre de `String` s’affiche pour la colonne dans l’état agrégé.
+   Par exemple, *Nombre* pour un champ `String` signifie que le nombre de valeurs `String`distinctes est affiché pour la colonne en statut agrégé.
 
 Dans l’onglet **Étendu**, vous pouvez également définir les agrégats et les filtres disponibles :
 
-![reportusrgenericcolmextalized](assets/reportusrgenericcolmextented.png)
+![reportusrgenericcolmextented](assets/reportusrgenericcolmextented.png)
 
 ### Rapport d’instance de workflow {#workflow-instance-report}
 
 Ce rapport offre un aperçu précis et fournit des informations sur chaque instance de workflow, à la fois en cours d’exécution et terminé.
 
-[Colonnes d’informations](#selecting-and-positioning-the-data-columns) sur :
+Les [colonnes d’informations](#selecting-and-positioning-the-data-columns) sur les éléments suivants :
 
 * Terminé
 * Durée
 * Initiateur
 * Modèle
-* Charge utile
+* Payload
 * Démarré
-* État
+* Statut
 
 Signifie que vous pouvez :
 
@@ -511,7 +512,7 @@ Ce rapport fournit des statistiques clés sur les workflows s’exécutant sur v
 
 ## Utilisation de rapports dans un environnement de publication {#using-reports-in-a-publish-environment}
 
-Une fois que vous avez configuré les rapports selon vos besoins, vous pouvez les activer pour transférer la configuration vers l’environnement de publication.
+Une fois que vous avez configuré les rapports selon vos besoins, vous pouvez les activer pour charger la configuration vers l’environnement de publication.
 
 >[!CAUTION]
 >
@@ -527,13 +528,13 @@ Par exemple, le rapport de contenu généré par l’utilisateur figure sous :
 
 Il rend à présent compte des données collectées dans l’environnement de publication.
 
-Puisqu’aucune configuration de rapport n’est autorisée dans l’environnement de publication, les boutons **Modifier** et **Terminer** ne sont pas disponibles. Toutefois, vous pouvez sélectionner la **Période** et l’**Intervalle** des rapports **Données historiques** si des instantanés sont collectés.
+Puisqu’aucune configuration de rapport n’est autorisée dans l’environnement de publication, les boutons **Modifier** et **Terminer** ne sont pas disponibles. Toutefois, vous pouvez sélectionner la **Période** et l’**Intervalle** des rapports de **Données historiques** si des instantanés sont collectés.
 
 ![reportsucgpublish](assets/reportsucgpublish.png)
 
 >[!CAUTION]
 >
->L’accès à ces rapports peut poser un problème de sécurité ; nous vous recommandons donc de configurer Dispatcher de sorte que `/etc/reports` n’est pas disponible pour les visiteurs externes. Voir la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
+>L’accès à ces rapports pouvant poser un problème de sécurité, nous vous recommandons de configurer le Dispatcher afin que `/etc/reports` ne soit pas accessible aux visiteurs externes. Consultez la [Liste de contrôle de sécurité](security-checklist.md) pour plus de détails.
 
 ## Autorisations requises pour exécuter des rapports {#permissions-needed-for-running-reports}
 
@@ -546,7 +547,7 @@ Dans une installation AEM standard, les autorisations suivantes sont prédéfini
 
 * **Rapport de l’utilisateur**
 
-   `user administrators` - lecture et écriture
+   `user administrators` - Lecture et écriture
 
 * **Rapport d’activité de la page**
 
@@ -554,14 +555,14 @@ Dans une installation AEM standard, les autorisations suivantes sont prédéfini
 
 * **Rapport de composants**
 
-   `contributors` - lecture et écriture
+   `contributors` - Lecture et écriture
 
 * **Rapport de contenu généré par l’utilisateur**
 
-   `contributors` - lecture et écriture
+   `contributors` - Lecture et écriture
 
-* **Rapport d’instance de processus**
+* **Rapport d’instance de workflow**
 
-   `workflow-users` - lecture et écriture
+   `workflow-users` - Lecture et écriture
 
-Tous les membres de `administrators` ont les droits nécessaires pour créer de nouveaux rapports.
+Tous les membres du groupe `administrators` disposent des droits nécessaires pour créer de nouveaux rapports.

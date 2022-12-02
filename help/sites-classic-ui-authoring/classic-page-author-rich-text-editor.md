@@ -10,7 +10,7 @@ exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Pour l’heure, le mode Modifier statique est activé pour les éléments de pag
 
 ## Fonctions de l’Editeur de texte enrichi {#features-of-the-rich-text-editor}
 
-L’éditeur de texte enrichi offre plusieurs fonctions, telles que [dépendent de la configuration](/help/sites-administering/rich-text-editor.md) du composant individuel. Les fonctionnalités sont disponibles dans les interfaces utilisateur classique et optimisée pour les écrans tactiles.
+L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuration](/help/sites-administering/rich-text-editor.md) du composant. Ces fonctions sont disponibles dans les deux interfaces utilisateur (classique et optimisée pour les écrans tactiles).
 
 ### Formats de caractères de base {#basic-character-formats}
 
@@ -84,7 +84,7 @@ Un style peut être appliqué à une chaîne spécifique (un style est mis en co
 
 ![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
-Tandis qu’une mise en forme est appliquée à l’intégralité d’un paragraphe texte (une mise en forme est basée sur le langage HTML) :
+Tandis qu’une disposition est appliquée à l’intégralité d’un paragraphe texte (une mise en forme est basée sur le langage HTML) :
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
@@ -104,11 +104,12 @@ Les fonctions **[!UICONTROL Couper]** et **[!UICONTROL Copier]** standard sont d
 
 * Couper (Ctrl-X)
 * Copier (Ctrl-C)
-* Coller Il s’agit du mécanisme de collage par défaut (Ctrl+V) du composant. lorsqu’il est installé prêt à l’emploi, il est configuré pour être [!UICONTROL Coller à partir de Word].
+* Coller
+Mécanisme de collage par défaut (Ctrl-V) pour le composant ; dans le cas d’une installation standard, il est configuré sur [!UICONTROL Coller à partir de Word].
 
-* Coller en tant que texte : Supprime tous les styles et la mise en forme pour coller uniquement le texte brut.
+* Coller en tant que texte : supprime tous les styles et options de mise en forme afin de ne coller que le texte brut.
 
-* Coller à partir de Word : Le contenu est collé en tant que HTML (avec le reformatage nécessaire).
+* Coller à partir de Word : cette option colle le contenu au format HTML (avec la remise en forme nécessaire).
 
 ### Annuler, Rétablir {#undo-redo}
 
@@ -130,7 +131,7 @@ AEM conserve un historique des 50 dernières actions effectuées dans le compos
 
 Le texte peut être aligné à gauche, au centre ou à droite.
 
-![cq55_rte_align_use](assets/cq55_rte_alignment_use.png)
+![cq55_rte_alignment_use](assets/cq55_rte_alignment_use.png)
 
 ### Indentation {#indentation}
 
@@ -156,7 +157,7 @@ Vous pouvez modifier le style d’une liste en positionnant simplement le curseu
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Un lien vers une URL (que ce soit dans votre site web ou un emplacement externe) est généré en mettant en surbrillance le texte requis, puis en cliquant sur l’icône de lien hypertexte :
+Pour générer un lien vers une URL (que ce soit à l’intérieur de votre site Web ou un emplacement externe) mettez en surbrillance le texte requis, puis cliquez sur l’icône Lien hypertexte :
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -166,15 +167,15 @@ Une boîte de dialogue vous permet de spécifier l’URL cible, ainsi que de dé
 
 Vous pouvez :
 
-* Saisissez directement une URI.
-* Utilisation de la carte du site pour sélectionner une page de votre site web
-* Saisissez l’URI, puis ajoutez l’ancre cible. Par exemple : `www.TargetUri.org#AnchorName`
-* Entrez une ancre uniquement (pour faire référence à &quot;la page en cours&quot;) ; Par exemple : `#anchor`
-* Recherchez une page dans l’outil de recherche de contenu, puis faites glisser et déposez l’icône de page dans la boîte de dialogue Lien hypertexte .
+* saisir directement une URI ;
+* utiliser un plan de site (sitemap) pour sélectionner une page de votre site Web ;
+* saisir l’URI, puis ajouter l’ancre cible ; par exemple, `www.TargetUri.org#AnchorName` ;
+* saisir une ancre seule (pour faire référence à la « page en cours »), `#anchor`#, par exemple ;
+* rechercher une page dans l’outil de recherche de contenu, puis faire glisser son icône dans la boîte de dialogue Lien hypertexte.
 
 >[!NOTE]
 >
->Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces éléments sont : `https://`, `ftp://`, et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
+>Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces protocoles sont `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
 
 Pour rompre le lien, placez le curseur dans le texte du lien et cliquez ensuite sur l’icône [!UICONTROL Rompre le lien] : 
 
@@ -218,7 +219,7 @@ Vous pouvez faire glisser des images à partir de l’Outil de recherche de cont
 
 >[!NOTE]
 >
->AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; Par exemple, la fonction **Image** et **Image texte** sont disponibles.
+>AEM propose également des composants spécialisés permettant une configuration d’image plus détaillée ; **Image** et **Texte et image**, par exemple.
 
 ### Vérificateur orthographique {#spelling-checker}
 
@@ -232,7 +233,7 @@ Toute faute d’orthographe est mise en surbrillance :
 
 >[!NOTE]
 >
->Le correcteur orthographique fonctionne dans la langue du site web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  d’autres termes, la vérification sera effectuée en anglais pour la branche `en`en, en allemand pour la branche `de`, etc.
+>Le correcteur orthographique fonctionne dans la langue du site Web soit en prenant la propriété de langue de la sous-arborescence, soit en extrayant la langue de l’URL ;  Par exemple, la vérification sera effectuée en anglais pour la branche `en`, en allemand pour la branche `de`, etc.
 
 ### Tableaux {#tables}
 
@@ -248,7 +249,7 @@ Des tableaux sont disponibles :
 
    >[!NOTE]
    >
-   >Bien que les tableaux soient disponibles dans l’éditeur de texte enrichi, il est recommandé d’utiliser la variable **Tableau** lors de la création de tableaux.
+   >Bien que les tableaux soient disponibles dans l’éditeur de texte enrichi, il est conseillé d’utiliser le composant **Tableau** lors de leur création.
 
 Dans les composants **Texte** et **Tableau**, la fonctionnalité de tableau est accessible par le biais du menu contextuel (qui s’ouvre généralement à l’aide du bouton droit de la souris) ; par exemple :
 
@@ -278,15 +279,15 @@ Les propriétés de base du tableau peuvent être configurées avant de cliquer 
 
 ![cq55_rte_tableproperties_dialog](assets/cq55_rte_tableproperties_dialog.png)
 
-* **Largeur**: Largeur totale du tableau.
+* **Largeur** : largeur totale du tableau.
 
-* **Hauteur**: Hauteur totale du tableau.
+* **Hauteur** : hauteur totale du tableau.
 
-* **Bordure**: Taille de la bordure du tableau.
+* **Bordure** : taille de la bordure du tableau.
 
-* **Marge intérieure des cellules**: Définit l’espace blanc entre le contenu de la cellule et ses bordures.
+* **Marge intérieure des cellules** : définit l’espace blanc entre le contenu de la cellule et ses bordures.
 
-* **Espacement des cellules**: Cette option définit la distance entre les cellules.
+* **Espacement des cellules** : définit la distance entre les cellules.
 
 >[!NOTE]
 >
@@ -294,7 +295,7 @@ Les propriétés de base du tableau peuvent être configurées avant de cliquer 
 
 >[!CAUTION]
 >
->Adobe vous recommande de définir une largeur pour votre tableau.
+>Adobe vous recommande de définir une Largeur pour votre tableau.
 
 #### Propriétés de la cellule {#cell-properties}
 
@@ -308,8 +309,8 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 * **Hauteur**
 * **Alignement horizontal** - Gauche, Centre ou Droite
 * **Alignement vertical** - Haut, Milieu, Bas ou Ligne de base
-* **Type de cellule**- Données ou en-tête
-* **Appliquer à :** Une seule cellule, rangée entière, colonne entière
+* **Type de cellule** - Données ou En-tête
+* **Appliquer à :** une seule cellule, rangée entière, colonne entière
 
 #### Ajouter ou Supprimer des lignes {#add-or-delete-rows}
 
@@ -360,14 +361,14 @@ La création d’un tableau imbriqué génère un nouveau tableau autonome dans 
 >Certaines opérations supplémentaires dépendent du navigateur :
 >
 >* Windows IE : utilisez la combinaison Ctrl + bouton principal de la souris (il s’agit généralement du bouton gauche) pour sélectionner plusieurs cellules.
->* Firefox : Faites glisser le pointeur pour sélectionner une plage de cellules.
+>* Firefox : faites glisser le pointeur pour sélectionner une plage de cellules.
 
 
 #### Supprimer le tableau {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
 
-Utilisez l’option pour supprimer le tableau de la section **[!UICONTROL Texte]** composant.
+Utilisez cette option pour supprimer le tableau du composant **[!UICONTROL Texte]**.
 
 ### Caractères spéciaux {#special-characters}
 

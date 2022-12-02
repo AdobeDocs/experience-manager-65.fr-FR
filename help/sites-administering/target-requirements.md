@@ -32,7 +32,7 @@ Le code client identifie le compte client Adobe Target en appelant le serveur A
 >
 >Votre compte doit également être activé par l’équipe Target pour pouvoir utiliser l’intégration.
 >
->Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe ](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
+>Si ce n’est pas encore le cas, contactez l’[Assistance clientèle Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 
 ## Activation de l’agent de réplication Target {#enabling-the-target-replication-agent}
 

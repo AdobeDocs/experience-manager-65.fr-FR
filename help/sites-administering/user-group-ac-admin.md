@@ -14,22 +14,22 @@ feature: Security
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
 source-wordcount: '3120'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Administration des utilisateurs, des groupes et des droits d’accès{#user-group-and-access-rights-administration}
 
-L’activation de l’accès à un référentiel CRX comprend plusieurs rubriques :
+L’activation de l’accès à un référentiel CRX comprend plusieurs rubriques :
 
-* [Droits d’accès](#how-access-rights-are-evaluated) : concepts se rapportant à leur définition et à leur évaluation
+* [Droits d’accès](#how-access-rights-are-evaluated) : concepts se rapportant à leur définition et à leur évaluation
 * [Administration des utilisateurs](#user-administration) : gestion des comptes individuels utilisés pour l’accès
 * [Administration des groupes](#group-administration) : simplifiez la gestion des utilisateurs en formant des groupes
 * [Gestion des droits d’accès](#access-right-management) : définition des stratégies qui contrôlent comment ces utilisateurs et ces groupes peuvent accéder à des ressources
 
 Les éléments de base sont les suivants :
 
-**Comptes d’utilisateur** CRX authentifie l’accès en identifiant et en vérifiant un utilisateur (par cette personne ou une autre application) en fonction des détails contenus dans le compte utilisateur.
+**Comptes d’utilisateur** CRX authentifie l’accès en identifiant et en vérifiant un utilisateur (par l’intermédiaire de cette personne ou d’une autre application) en fonction des détails contenus dans le compte utilisateur.
 
 Dans CRX, chaque compte utilisateur est un nœud dans l’espace de travail. Un compte d’utilisateur CRX possède les propriétés suivantes :
 
@@ -42,7 +42,7 @@ Dans CRX, chaque compte utilisateur est un nœud dans l’espace de travail. Un 
 
     En revanche, pour simplifier la gestion, il est recommandé (dans la plupart des cas) d’affecter des droits d’accès aux comptes de groupe. L’affectation de droits d’accès à chaque utilisateur devient très rapidement difficile à gérer (à l’exception de certains utilisateurs système lorsqu’il n’y a qu’une ou deux instances).
 
-**Comptes de groupe** Les comptes de groupe sont des collections d’utilisateurs et/ou d’autres groupes. Ils sont utilisés pour simplifier la gestion, car toute modification des droits d’accès affectés à un groupe est appliquée automatiquement à tous les utilisateurs de ce groupe. Un même utilisateur n’est pas tenu de faire partie d’un groupe, mais il appartient souvent à plusieurs.
+**Comptes de groupe** Les comptes de groupe sont des ensembles d’utilisateurs et/ou d’autres groupes. Ils sont utilisés pour simplifier la gestion, car toute modification des droits d’accès affectés à un groupe est appliquée automatiquement à tous les utilisateurs de ce groupe. Un même utilisateur n’est pas tenu de faire partie d’un groupe, mais il appartient souvent à plusieurs.
 
 Dans CRX, un groupe possède les propriétés suivantes :
 
@@ -52,9 +52,9 @@ Dans CRX, un groupe possède les propriétés suivantes :
 * Il est possible de hiérarchiser les groupes grâce aux relations des membres. Vous ne pouvez pas placer de groupes directement sous un autre groupe dans le référentiel.
 * Vous pouvez définir les droits d’accès pour tous les membres d’un groupe.
 
-**Droits d’accès** CRX utilise les droits d’accès pour contrôler l’accès à des zones spécifiques du référentiel.
+**Droits d’accès** CRX utilise des droits d’accès pour contrôler l’accès à des zones spécifiques du référentiel.
 
-Cette opération est effectuée en affectant des autorisations pour autoriser ou refuser l’accès à une ressource (nœud ou chemin d’accès) dans le référentiel. Lorsque différentes autorisations peuvent être affectées, ils doivent être évalués afin de déterminer la combinaison qui s’applique à la demande actuelle.
+Cette opération est effectuée en affectant des autorisations pour autoriser ou refuser l’accès à une ressource (nœud ou chemin d’accès) dans le référentiel. Lorsque différentes autorisations peuvent être affectées, les droits d’accès doivent être évalués afin de déterminer la combinaison qui s’applique à la demande actuelle.
 
 CRX permet de configurer les droits d’accès pour des comptes utilisateur et des comptes de groupe. Les mêmes principes de base de l’évaluation sont ensuite appliqués aux deux.
 
@@ -72,22 +72,22 @@ CRX utilise deux concepts clés lors de l’évaluation des droits d’accès :
 
 * Une **entité de sécurité** est une entité qui transfère des droits d’accès. Les entités comportent les éléments suivants :
 
-   * Un compte utilisateur
+   * Un compte d’utilisateur
    * Un compte de groupe
 
       Si un compte utilisateur appartient à un ou à plusieurs groupes, il est également associé à chacune de ces entités de groupe.
 
 * Un **sujet** est utilisé pour représenter la source de la demande.
 
-    Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ils proviennent de :
+    Il est utilisé pour centraliser les droits d’accès applicables pour cette demande. Ceux-ci proviennent de :
 
-   * Entité de sécurité de l’utilisateur
+   * l’entité de sécurité de l’utilisateur ;
 
-      Les droits que vous attribuez directement au compte utilisateur.
+      Les droits affectés directement au compte utilisateur
 
-   * Toutes les entités de groupe associées à cet utilisateur
+   * toutes les entités de sécurité des groupes associés à cet utilisateur.
 
-      Tous les droits affectés à l’un des groupes auxquels l’utilisateur appartient.
+      Tous les droits affectés aux groupes auxquels appartient l’utilisateur
    Le résultat est ensuite utilisé pour autoriser ou refuser l’accès à la ressource demandée.
 
 #### Compilation de la liste de droit d’accès pour un sujet {#compiling-the-list-of-access-rights-for-a-subject}
@@ -99,8 +99,8 @@ Dans CRX, le sujet dépend des éléments suivants :
 
 La liste des droits d’accès applicables au sujet est créée à partir :
 
-* des droits affectés directement au compte utilisateur
-* et de tous les droits affectés aux groupes auxquels appartient l’utilisateur
+* des droits affectés directement au compte utilisateur ;
+* et de tous les droits affectés aux groupes auxquels appartient l’utilisateur.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -116,7 +116,7 @@ La liste des droits d’accès applicables au sujet est créée à partir :
 
 Lorsque CRX traite la demande, il compare la demande d’accès du sujet à la liste de contrôle d’accès sur le nœud du référentiel :
 
-Si Linda demande la mise à jour de la variable `/features` dans la structure de référentiel suivante :
+Ainsi, si Linda demande de mettre à jour le nœud `/features` dans la structure de référentiel suivante :
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -126,7 +126,7 @@ Dans CRX, les droits d’accès sont évalués comme suit :
 
 * Les entités de l’utilisateur prévalent toujours sur les entités de groupe indépendamment de :
 
-   * leur ordre dans la liste de contrôle d’accès
+   * leur ordre dans la liste de contrôle d’accès ;
    * leur position dans la hiérarchie de nœuds
 
 * Pour une entité de sécurité donnée, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
@@ -135,7 +135,7 @@ Dans CRX, les droits d’accès sont évalués comme suit :
 >
 >Ce processus d’évaluation est adapté au contrôle d’accès dépendant des ressources d’une installation CRX standard.
 
-En prenant deux exemples où l’utilisateur `aUser` est membre du groupe `aGroup`:
+En prenant deux exemples dans lesquels l’utilisateur `aUser` est membre du `aGroup` :
 
 ```xml
    + parentNode
@@ -149,7 +149,7 @@ En prenant deux exemples où l’utilisateur `aUser` est membre du groupe `aGrou
 
 Dans le cas ci-dessus :
 
-* `aUser` n’a pas d’autorisation d’écriture sur `grandChildNode`.
+* `aUser` ne dispose pas d’une autorisation en écriture sur `grandChildNode`.
 
 ```xml
    + parentNode
@@ -164,14 +164,14 @@ Dans le cas ci-dessus :
 
 Dans ce cas :
 
-* `aUser` n’a pas d’autorisation d’écriture sur `grandChildNode`.
-* Le second ACE pour `aUser` est redondant.
+* `aUser` ne dispose pas d’une autorisation en écriture sur `grandChildNode`.
+* La deuxième entrée de contrôle d’accès pour `aUser` est redondante.
 
 Les droits d’accès de plusieurs entités de groupe sont évalués en fonction de leur ordre dans la hiérarchie et dans une liste de contrôle d’accès unique.
 
 ### Bonnes pratiques {#best-practices}
 
-Le tableau ci-dessous contient des recommandations et les meilleures pratiques :
+Le tableau ci-dessous contient des recommandations et bonnes pratiques :
 
 <table>
  <tbody>
@@ -180,25 +180,25 @@ Le tableau ci-dessous contient des recommandations et les meilleures pratiques 
    <td>Raison...</td>
   </tr>
   <tr>
-   <td><i>Utilisation de groupes</i></td>
-   <td><p>Évitez d’affecter des droits d’accès utilisateur par utilisateur. Il existe plusieurs raisons à cela :</p>
+   <td><i>Utilisez des groupes</i></td>
+   <td><p>Évitez d’affecter des droits d’accès utilisateur par utilisateur. Il existe plusieurs raisons à cela :</p>
     <ul>
      <li>Comme il y a beaucoup plus d’utilisateurs que de groupes, les groupes simplifient la structure.</li>
-     <li>Les groupes fournissent une vue d’ensemble de tous les comptes.</li>
+     <li>Les groupes offrent une vue d’ensemble de tous les comptes.</li>
      <li>L’héritage est plus simple avec les groupes.</li>
      <li>Les utilisateurs vont et viennent. Les groupes sont créés à long terme.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><i>Soyez positif</i></td>
-   <td><p>Utilisez toujours les instructions Autoriser pour spécifier les droits d’accès de l’entité de groupe (dans la mesure du possible). Évitez d’utiliser une instruction Deny.</p> <p>Les entités de groupe sont évaluées dans l’ordre dans la hiérarchie et dans la liste de contrôle d’accès unique.</p> </td>
+   <td><p>Utilisez toujours des instructions Autoriser pour spécifier les droits d’accès de l’entité de groupe (dans la mesure du possible). Évitez d’utiliser une instruction Refuser.</p> <p>Les entités de groupe sont évaluées dans l’ordre, dans la hiérarchie et dans la liste de contrôle d’accès unique.</p> </td>
   </tr>
   <tr>
    <td><i>Restez simple</i></td>
-   <td><p>Le fait d’investir du temps et de réfléchir lors de la configuration d’une nouvelle installation sera payant.</p> <p>L’application d’une structure claire simplifie la maintenance et l’administration au jour le jour, ce qui garantit que vos collègues actuels et/ou leurs successeurs peuvent comprendre facilement ce qui est mis en œuvre.</p> </td>
+   <td><p>Il s’avèrera payant d’investir du temps et de réfléchir lors de la configuration d’une nouvelle installation.</p> <p>L’application d’une structure claire simplifie la maintenance et l’administration au jour le jour, ce qui garantit que vos collègues actuels et leurs successeurs peuvent comprendre facilement ce qui est mis en œuvre.</p> </td>
   </tr>
   <tr>
-   <td><i>Test</i></td>
+   <td><i>Testez</i></td>
    <td>Utilisez une installation de test pour vous exercer et vous assurer que vous comprenez les relations entre les différents utilisateurs et groupes.</td>
   </tr>
   <tr>
@@ -223,13 +223,13 @@ Vous devez être connecté à l’espace de travail approprié, puis accéder à
 
 * **UserID**
 
-   Nom court du compte, utilisé lors de l’accès à CRX.
+   Nom abrégé du compte, utilisé lors de l’accès à CRX.
 
 * **Principal Name**
 
-   Nom textuel complet du compte.
+   Nom entier du compte.
 
-* **Mot de passe**
+* **Password**
 
    Nécessaire lors de l’accès à CRX avec ce compte.
 
@@ -243,11 +243,11 @@ Vous devez être connecté à l’espace de travail approprié, puis accéder à
 
 Tous les groupes auxquels appartient le compte s’affichent. La colonne Hérité indique l’appartenance héritée en raison de l’appartenance à un autre groupe.
 
-Si vous cliquez sur un ID de groupe (le cas échéant), [Administration des groupes](#group-administration) s’affiche pour ce groupe.
+Si vous cliquez sur un ID de groupe (le cas échéant), l’[Administration des groupes](#group-administration) s’affiche pour ce groupe.
 
 **Emprunteurs d’identité**
 
-La fonctionnalité Emprunter l’identité permet à un utilisateur de travailler au nom d’un autre.
+La fonction Emprunter l’identité permet à un utilisateur de travailler sous le nom d’un autre.
 
 Cela signifie qu’un compte utilisateur peut spécifier d’autres comptes (utilisateur ou groupe) compatibles avec son compte. En d’autres termes, si l’utilisateur B est autorisé à emprunter l’identité de l’utilisateur A, l’utilisateur B peut agir à l’aide des détails du compte utilisateur (dont l’ID, le nom et les droits d’accès) de l’utilisateur A.
 
@@ -261,10 +261,10 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 1. Cliquez sur **Créer un utilisateur**.
 1. Vous pouvez alors saisir les propriétés :
 
-   * **ID utilisateur** utilisé comme nom de compte.
-   * **Mot de passe** nécessaire lors de la connexion.
-   * **Nom de l’entité de sécurité** pour fournir un nom textuel entier.
-   * **Chemin d’accès intermédiaire**, qui peut être utilisé pour former une arborescence.
+   * **UserID** utilisé comme nom de compte
+   * **Password** nécessaire lors de la connexion
+   * **Principal Name** pour fournir un nom textuel entier
+   * **Intermediate Path** qui peut être utilisé pour former une arborescence
 
 1. Cliquez sur le bouton Enregistrer (symbole de coche verte).
 1. La boîte de dialogue est développée afin que vous puissiez :
@@ -277,7 +277,7 @@ Si un compte emprunte l’identité d’un autre compte, il est très difficile 
 >
 >Une perte de performances peut parfois être observée lors de l’enregistrement de nouveaux utilisateurs dans des installations comportant un nombre élevé :
 >
->* utilisateurs ;
+>* d’utilisateurs ;
 >* de groupes avec de nombreux membres
 >
 
@@ -329,7 +329,7 @@ Vous pouvez définir des emprunteurs d’identité pour de nouveaux comptes ou d
 1. Ouvrez la boîte de dialogue **Administration des utilisateurs** pour le compte approprié.
 1. Spécifiez le compte qui doit avoir l’autorisation d’emprunter l’identité de ce compte.
 
-   Vous pouvez utiliser Parcourir pour sélectionner un compte existant.
+   Vous pouvez utiliser Parcourir... pour sélectionner un compte existant.
 
 1. Cliquez sur Enregistrer (symbole de coche verte) pour la nouvelle propriété.
 
@@ -348,23 +348,23 @@ Vous devez être connecté à l’espace de travail approprié, puis accéder à
 
 * **GroupID**
 
-   Nom court du compte de groupe.
+   Nom abrégé du compte de groupe.
 
 * **Principal Name**
 
-   Nom textuel complet du compte de groupe.
+   Nom textuel entier pour le compte de groupe.
 
 * Vous pouvez ajouter de nouvelles propriétés en définissant un nom, un type et une valeur. Cliquez sur Enregistrer (symbole de coche verte) pour chaque nouvelle propriété.
 
-* **Membres**
+* **Members**
 
-   Vous pouvez ajouter des utilisateurs ou d’autres groupes en tant que membres de ce groupe.
+   Vous pouvez ajouter des utilisateurs, ou d’autres groupes, en tant que membres de ce groupe.
 
 **Appartenance à un groupe**
 
 Tous les groupes auxquels appartient le compte s’affichent. La colonne Hérité indique l’appartenance héritée en raison de l’appartenance à un autre groupe.
 
-Cliquez sur un ID de groupe pour ouvrir la boîte de dialogue correspondante.
+Si vous cliquez sur un ID de groupe, la boîte de dialogue pour ce groupe s’affiche.
 
 **Membres**
 
@@ -374,7 +374,7 @@ La colonne **Hérité** indique l’appartenance héritée en raison de l’appa
 
 >[!NOTE]
 >
->Lorsque le rôle Propriétaire, Éditeur ou Observateur est attribué à un utilisateur sur n’importe quel dossier de ressources, un nouveau groupe est créé. Le nom du groupe est au format suivant : `mac-default-<foldername>` pour chaque dossier sur lequel les rôles sont définis.
+>Lorsque le rôle Propriétaire, Éditeur ou Observateur est attribué à un utilisateur sur n’importe quel dossier de ressources, un nouveau groupe est créé. Le nom du groupe utilise le format `mac-default-<foldername>` pour chaque dossier sur lequel les rôles sont définis.
 
 ### Création d’un compte de groupe {#creating-a-group-account}
 
@@ -382,8 +382,8 @@ La colonne **Hérité** indique l’appartenance héritée en raison de l’appa
 1. Cliquez sur **Créer un groupe**.
 1. Vous pouvez alors saisir les propriétés :
 
-   * **Nom de l’entité de sécurité** pour fournir un nom textuel entier.
-   * **Chemin d’accès intermédiaire**, qui peut être utilisé pour former une arborescence.
+   * **Principal Name** pour fournir un nom textuel entier
+   * **Intermediate Path** qui peut être utilisé pour former une arborescence
 
 1. Cliquez sur le bouton Enregistrer (symbole de coche verte).
 1. La boîte de dialogue est développée afin que vous puissiez :
@@ -440,11 +440,11 @@ Ou supprimez un membre existant en cliquant sur le symbole de corbeille.
 
 ## Gestion des droits d’accès {#access-right-management}
 
-Avec le **Contrôle d’accès** de CRXDE Lite, vous pouvez définir les stratégies de contrôle d’accès et attribuer les privilèges associés.
+Grâce à l’onglet **Contrôle d’accès** de CRXDE Lite, vous pouvez définir des stratégies de contrôle d’accès et affecter les autorisations associées.
 
 Par exemple, pour **Chemin d’accès actuel**, sélectionnez la ressource nécessaire dans le volet de gauche, l’onglet Contrôle d’accès dans le volet inférieur droit :
 
-![crx_acccontrol_tab](assets/crx_accesscontrol_tab.png)
+![crx_accesscontrol_tab](assets/crx_accesscontrol_tab.png)
 
 Les stratégies sont classées en fonction des éléments suivants :
 
@@ -460,31 +460,31 @@ Les stratégies sont classées en fonction des éléments suivants :
 
    La stratégie locale remplace toutes les stratégies héritées du parent.
 
-* **Stratégies de contrôle d’accès efficaces**
+* **Stratégies de contrôle d’accès actuelles**
 
-   Il s’agit des stratégies de contrôle d’accès qui sont désormais en vigueur pour toutes les demandes d’accès. Elles affichent les stratégies agrégées dérivées des stratégies locales et des stratégies héritées du parent.
+   Ce sont les stratégies de contrôle d’accès désormais en vigueur pour toutes les demandes d’accès. Elles affichent les stratégies agrégées dérivées des stratégies locales et des stratégies héritées du parent.
 
 ### Sélection d’une stratégie {#policy-selection}
 
 Les stratégies peuvent être sélectionnées pour les éléments suivants :
 
-* **Chemin actuel**
+* **Chemin d’accès actuel**
 
    Comme dans l’exemple ci-dessus, sélectionnez une ressource dans le référentiel. Les stratégies de ce « chemin d’accès actuel » s’affichent.
 
 * **Référentiel**
 
-   Sélectionne le contrôle d’accès au niveau du référentiel. Par exemple, lors de la définition de l’autorisation `jcr:namespaceManagement`, qui n’est appropriée que pour le référentiel, non pour le nœud.
+   Sélectionne le contrôle d’accès au niveau du référentiel. Par exemple, lors de la définition de l’autorisation `jcr:namespaceManagement`, qui n’est appropriée que pour le référentiel, et non pour le nœud.
 
-* **Principal**
+* **Entité de sécurité**
 
-   Entité principale enregistrée dans le référentiel.
+   Entité de sécurité enregistrée dans le référentiel.
 
    Vous pouvez saisir le nom de l’**entité de sécurité** ou cliquer sur l’icône à droite du champ pour afficher la boîte de dialogue **Sélectionner une entité de sécurité**.
 
     Cela permet de **rechercher** un **utilisateur** ou un **groupe**. Sélectionnez l’entité de sécurité nécessaire dans la liste qui s’affiche, puis cliquez sur **OK** pour reprendre la valeur dans la zone de dialogue précédente.
 
-![crx_acccontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
+![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
@@ -499,20 +499,20 @@ Les autorisations ci-dessous peuvent être sélectionnées lors de l’ajout d�
 <table>
  <tbody>
   <tr>
-   <th><strong>Nom du privilège</strong></th>
-   <th><strong>Qui contrôle le privilège de...</strong></th>
+   <th><strong>Nom de l’autorisation</strong></th>
+   <th><strong>Qui contrôle l’autorisation pour...</strong></th>
   </tr>
   <tr>
    <td><code>jcr:read</code></td>
-   <td>Récupérez un noeud et lisez ses propriétés et leurs valeurs.</td>
+   <td>Récupérer un nœud et lire ses propriétés et leurs valeurs</td>
   </tr>
   <tr>
    <td><code>rep:write</code></td>
-   <td>Il s’agit d’un privilège agrégé spécifique à jackrabbit de jcr:write et jcr:nodeTypeManagement.<br /> </td>
+   <td>Il s’agit d’une autorisation agrégée spécifique à jackrabbit de jcr:write et jcr:nodeTypeManagement.<br /> </td>
   </tr>
   <tr>
    <td><code>jcr:all</code></td>
-   <td>Il s’agit d’un privilège agrégé qui contient tous les autres privilèges prédéfinis.</td>
+   <td>Il s’agit d’une autorisation agrégée qui contient tous les autres privilèges prédéfinis.</td>
   </tr>
   <tr>
    <td><strong>Avancé</strong></td>
@@ -520,71 +520,71 @@ Les autorisations ci-dessous peuvent être sélectionnées lors de l’ajout d�
   </tr>
   <tr>
    <td><code>crx:replicate</code></td>
-   <td>Effectuez la réplication d’un noeud.</td>
+   <td>Effectuer la réplication d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:addChildNodes</code></td>
-   <td>Créez les noeuds enfants d’un noeud.</td>
+   <td>Créer les nœuds enfants d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:lifecycleManagement</code></td>
-   <td>Effectuez des opérations de cycle de vie sur un noeud.</td>
+   <td>Effectuer des opérations de cycle de vie sur un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:lockManagement</code></td>
-   <td>Verrouiller et déverrouiller un noeud ; actualiser un verrou.</td>
+   <td>Verrouiller et déverrouiller un nœud ; actualiser un verrou</td>
   </tr>
   <tr>
    <td><code>jcr:modifyAccessControl</code></td>
-   <td>Modifiez les stratégies de contrôle d’accès d’un noeud.</td>
+   <td>Modifier les stratégies de contrôle d’accès d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:modifyProperties</code></td>
-   <td>Créez, modifiez et supprimez les propriétés d’un noeud.</td>
+   <td>Créer, modifier et supprimer les propriétés d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:namespaceManagement</code></td>
-   <td>Enregistrez, annulez l’enregistrement et modifiez les définitions d’espace de noms.</td>
+   <td>Enregistrer, annuler l’enregistrement et modifier les définitions d’espace de noms</td>
   </tr>
   <tr>
    <td><code>jcr:nodeTypeDefinitionManagement</code></td>
-   <td>Importez des définitions de type de noeud dans le référentiel.</td>
+   <td>Importer des définitions de type de nœud dans le référentiel</td>
   </tr>
   <tr>
    <td><code>jcr:nodeTypeManagement</code></td>
-   <td>Ajoutez et supprimez des types de noeuds mixin et modifiez le type de noeud Principal d’un noeud. Cela inclut également les appels de Node.addNode et les méthodes d’importation XML, dans lesquels le type mixin ou principal du nouveau nœud est spécifié explicitement.</td>
+   <td>Ajouter et supprimer des types de nœuds mixin et modifier le type de nœud principal d’un nœud Cela inclut également les appels de Node.addNode et les méthodes d’importation XML, dans lesquels le type mixin ou principal du nouveau nœud est spécifié explicitement.</td>
   </tr>
   <tr>
    <td><code>jcr:readAccessControl</code></td>
-   <td>Lisez la stratégie de contrôle d’accès d’un noeud.</td>
+   <td>Lire la stratégie de contrôle d’accès d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:removeChildNodes</code></td>
-   <td>Supprimez les noeuds enfants d’un noeud.</td>
+   <td>Supprimer les nœuds enfants d’un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:removeNode</code></td>
-   <td>Supprimez un noeud.</td>
+   <td>Supprimer un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:retentionManagement</code></td>
-   <td>Effectuez des opérations de gestion de la rétention sur un noeud.</td>
+   <td>Effectuer des opérations de gestion de la rétention sur un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:versionManagement</code></td>
-   <td>Exécutez des opérations de contrôle de version sur un noeud.</td>
+   <td>Exécuter des opérations de contrôle de version sur un nœud</td>
   </tr>
   <tr>
    <td><code>jcr:workspaceManagement</code></td>
-   <td>Création et suppression d’espaces de travail via l’API JCR.</td>
+   <td>Créer et supprimer des espaces de travail via l’API JCR</td>
   </tr>
   <tr>
    <td><code>jcr:write</code></td>
-   <td>Il s’agit d’un privilège agrégé qui contient :<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td>
+   <td>Il s’agit d’une autorisation agrégée qui contient :<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td>
   </tr>
   <tr>
    <td><code>rep:privilegeManagement</code></td>
-   <td>Enregistrez le nouveau privilège.</td>
+   <td>Enregistrer la nouvelle autorisation</td>
   </tr>
  </tbody>
 </table>
@@ -595,11 +595,11 @@ Vous pouvez également enregistrer de nouvelles autorisations :
 
 1. Dans la barre d’outils, sélectionnez **Outils**, puis **Autorisations** pour afficher les autorisations actuellement enregistrées.
 
-   ![ac_privilèges](assets/ac_privileges.png)
+   ![ac_privileges](assets/ac_privileges.png)
 
 1. Utilisez l’icône **Enregistrer l’autorisation** (**+**) pour afficher la boîte de dialogue et définir une nouvelle autorisation.
 
-   ![ac_Privileregister](assets/ac_privilegeregister.png)
+   ![ac_privilegeregister](assets/ac_privilegeregister.png)
 
 1. Cliquez sur **OK** pour enregistrer. L’autorisation peut maintenant être sélectionnée.
 
@@ -609,15 +609,15 @@ Vous pouvez également enregistrer de nouvelles autorisations :
 
 1. Pour ajouter une **stratégie de contrôle d’accès locale**, cliquez sur l’icône **+** à droite de la liste **Stratégie de contrôle d’accès applicable** :
 
-   ![crx_acccontrol_applicable](assets/crx_accesscontrol_applicable.png)
+   ![crx_accesscontrol_applicable](assets/crx_accesscontrol_applicable.png)
 
 1. Une nouvelle entrée s’affiche sous **Stratégies de contrôle d’accès locales :**
 
-   ![crx_acccontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
+   ![crx_accesscontrol_newlocal](assets/crx_accesscontrol_newlocal.png)
 
 1. Cliquez sur l’icône **+** pour ajouter une nouvelle entrée :
 
-   ![crx_acccontrol_addentry](assets/crx_accesscontrol_addentry.png)
+   ![crx_accesscontrol_addentry](assets/crx_accesscontrol_addentry.png)
 
    >[!NOTE]
    >
@@ -627,7 +627,7 @@ Vous pouvez également enregistrer de nouvelles autorisations :
 
 1. Définissez votre stratégie de contrôle d’accès et cliquez sur **OK** pour l’enregistrer. La nouvelle stratégie :
 
-   * Est répertoriée sous **Stratégies de contrôle d’accès locales** ;
+   * est répertoriée sous **Stratégies de contrôle d’accès locales** ;
    * comporte des modifications qui se reflètent dans les **stratégies de contrôle d’accès actuelles**.
 
 CRX valide votre sélection pour une entité de sécurité donnée, il existe (au plus) 1 entrée de refus et 1 entrée d’autorisation sur un nœud donné. La mise en œuvre efface toujours les entrées redondantes et s’assure que les mêmes autorisations ne figurent pas à la fois dans les entrées d’autorisation et de refus.
@@ -638,7 +638,7 @@ L’ordre dans la liste indique l’ordre dans lequel les stratégies sont appli
 
 1. Dans le tableau **Stratégies de contrôle d’accès locales**, sélectionnez l’entrée souhaitée et faites-la glisser vers la nouvelle position dans le tableau.
 
-   ![crx_acccontrol_reorder](assets/crx_accesscontrol_reorder.png)
+   ![crx_accesscontrol_reorder](assets/crx_accesscontrol_reorder.png)
 
 1. Les modifications sont affichées dans les tableaux pour les **stratégies de contrôle d’accès locales** et **actuelles**.
 
@@ -653,4 +653,4 @@ L’ordre dans la liste indique l’ordre dans lequel les stratégies sont appli
 1. Une nouvelle boîte de dialogue s’affiche dans le volet supérieur droit. Sélectionnez le **chemin d’accès** et/ou l’**entité de sécurité** à tester.
 1. Cliquez sur **Test** pour afficher les résultats de votre sélection :
 
-   ![crx_acccontrol_test](assets/crx_accesscontrol_test.png)
+   ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)

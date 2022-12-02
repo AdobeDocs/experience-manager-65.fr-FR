@@ -1,5 +1,5 @@
 ---
-title: Meilleures pratiques en matière de développement
+title: Bonnes pratiques en matière de développement
 seo-title: Development Practices
 description: Meilleures pratiques de développement dans AEM
 seo-description: Best practices for developing on AEM
@@ -10,18 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '629'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Meilleures pratiques en matière de développement{#development-practices}
+# Bonnes pratiques en matière de développement{#development-practices}
 
 ## Travailler selon une « définition de fini » (DoD) {#work-according-to-a-definition-of-done}
 
-Chaque équipe possède une définition différente du concept de « fini » ; c’est ce que l’on désigne en anglais sous le nom de « Definition of Done » (DoD). Cependant, il est essentiel d’en établir une et de s’assurer qu’une story répond aux critères définis avant d’être acceptée.
+Chaque équipe a une définition différente de ce que signifie &quot;fait&quot;, mais il est important d’en avoir une et de s’assurer qu’une histoire répond aux critères définis avant d’être acceptée.
 
 Voici un aperçu des critères généralement définis par les équipes :
 
@@ -44,7 +44,7 @@ Le temps nécessaire pour tester une implémentation de projet augmente à mesur
 
 Les développeurs doivent recourir au développement piloté par les tests (TDD), en écrivant les tests unitaires défaillants avant le code de production qui répondra à leurs besoins. Le contrôle qualité doit créer un ensemble automatisé de tests d’acceptation pour s’assurer que le système fonctionne comme prévu à un niveau élevé.
 
-Il existe des structures personnalisées, comme Jackalope et Prosper, pour faciliter la simulation d’API JCR afin de garantir la productivité des développeurs lors de la création de tests unitaires.
+Il existe des frameworks personnalisées, comme Jackalope et Prosper, pour faciliter la simulation d’API JCR afin de garantir la productivité des développeurs lors de la création de tests unitaires.
 
 ### Un système toujours prêt pour la démo {#stay-demo-ready}
 
@@ -56,16 +56,16 @@ La mise en œuvre d’un environnement d’intégration continue vous permet d�
 
 ### Assurer un cycle de développement rapide tout en conservant des temps de génération courts {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
-Si l’exécution de tests unitaires demande trop de temps, les développeurs éviteront de les exécuter et ils perdront leur intérêt. Si la création et le déploiement de code demandent beaucoup de temps, ses opérations seront exécutées moins souvent. Veiller à ce que la génération ne demande pas trop temps doit être une priorité, de sorte que le temps consacré à la couverture de test et à l’infrastructure CI constitue toujours un facteur de productivité accrue pour l’équipe.
+Si l’exécution de tests unitaires demande trop de temps, les développeurs éviteront de les exécuter et ils perdront leur intérêt. Si la création et le déploiement de code demandent beaucoup de temps, ses opérations seront exécutées moins souvent. Veiller à ce que la génération ne demande pas trop de temps doit être une priorité, de sorte que le temps consacré à la couverture de test et à l’infrastructure CI constitue toujours un facteur de productivité accrue pour l’équipe.
 
-### Optimiser Sonar et d’autres outils d’analyse de code statique, et agir sur leurs rapports {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Optimiser Sonar et d’autres outils d’analyse de code statique, et agir en fonction de leurs rapports {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
 Les outils d’analyse de code peuvent se révéler très utiles, mais à la seule condition que leurs rapports débouchent sur une action de la part de l’équipe de développement. Si l’analyse fournie par ces outils n’est pas optimisée, les recommandations formulées ne seront pas pertinentes et leur intérêt sera moindre.
 
 ### Appliquer la règle du boy-scout {#follow-the-boy-scout-rule}
 
-Les boy-scouts ont une règle : « Laissons (ce monde) dans un meilleur état que nous l’avons trouvé ». Tant que tous les membres de l’équipe de développement respecteront cette règle et remettront de l’ordre là où règne le désordre, le code ne cessera de s’améliorer.
+Les Scouts ont une règle : &quot;Laisse-le mieux que tu ne l&#39;as trouvé.&quot; Tant que tous les membres de l’équipe de développement respecteront cette règle et remettront de l’ordre là où règne le désordre, le code ne cessera de s’améliorer.
 
 ### Éviter la mise en œuvre de fonctionnalités YAGNI {#avoid-implementing-yagni-features}
 
-Les fonctionnalités YAGNI (qui est acronyme anglais de « You Aren’t Gonna Need It », qui peut se traduire par « Vous n’en aurez pas besoin ») sont des éléments qui sont implémentés en prévision de leur utilité future, bien qu’ils ne soient pas nécessaires actuellement. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela permet de se concentrer sur ce qui importe vraiment, et d’éviter la surcharge de code et de fonctionnalités.
+Les fonctionnalités YAGNI (« You Aren’t Gonna Need It », soit « Vous n’en aurez pas besoin ») sont des éléments qui sont implémentés en prévision de leur utilité future, bien qu’ils ne soient pas nécessaires actuellement. Idéalement, il convient d’implémenter l’élément le plus simple qui fonctionnera aujourd’hui et procéder à un réusinage de code (refactoring) continu pour s’assurer que l’architecture du système évolue avec les exigences au fil du temps. Cela permet de se concentrer sur ce qui importe vraiment, et d’éviter la surcharge de code et de fonctionnalités.

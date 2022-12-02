@@ -315,7 +315,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Si elle est définie, cette propriété sert d’ID de cellule. Pour plus d’informations, reportez-vous à <a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">l’article de la base de connaissances sur la création d’ID de cellule de conception</a>.<br /> </td>
+   <td>Si elle est définie, cette propriété sert d’ID de cellule. Pour plus d’informations, reportez-vous à <a href="https://helpx.adobe.com/fr/experience-manager/kb/DesigneCellId.html">l’article de la base de connaissances sur la création d’ID de cellule de conception</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -482,9 +482,9 @@ La boîte de dialogue de conception pour le système de paragraphe (par exemple 
 
 ### Ajout d’un composant au système de paragraphe {#adding-your-component-to-the-paragraph-system}
 
-Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour rendre un composant sélectionnable dans un système de paragraphes, vous pouvez :
+Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour rendre un composant sélectionnable dans un système de paragraphes, vous pouvez :
 
-1. ouvrir le [mode Conception ](/help/sites-authoring/default-components-designmode.md) pour une page et activer le composant requis ;
+1. ouvrir le [mode Conception](/help/sites-authoring/default-components-designmode.md) pour une page et activer le composant requis ;
 1. ajouter le(s) composant(s) requis à la propriété `components` de votre définition de modèle sous :
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
@@ -602,7 +602,7 @@ Il existe de nombreuses configurations dans le référentiel. Vous pouvez facile
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Pour rechercher un nœud enfant de `cq:editConfig`, par exemple, vous pouvez rechercher `cq:dropTargets`, qui est de type `cq:DropTargetConfig`, vous pouvez utiliser l’outil de requête dans ** CRXDE Lite** et faire une recherche avec la chaîne de requête XPath suivante :
+* Pour rechercher un nœud enfant de `cq:editConfig`, par exemple, vous pouvez rechercher `cq:dropTargets`, qui est de type `cq:DropTargetConfig`, vous pouvez utiliser l’outil de requête dans **CRXDE Lite** et faire une recherche avec la chaîne de requête XPath suivante :
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -1043,7 +1043,7 @@ L’exemple suivant est équivalent à la configuration `REFRESH_INSERTED` :
 
 >[!NOTE]
 >
->En ce qui concerne l’IU classique, pour voir quels paramètres peuvent être utilisés dans les gestionnaires, reportez-vous aux sections des événements `before<action>` > et `after<action>` > de la documentation sur les widgets [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) et [`CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover).
+>En ce qui concerne l’IU classique, pour voir quels paramètres peuvent être utilisés dans les gestionnaires, reportez-vous aux sections des événements `before<action>` > et `after<action>` > de la documentation sur les widgets [`CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) et [`CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover).
 
 Avec la configuration suivante, la page est actualisée après la suppression, la modification, l’insertion ou le déplacement du composant :
 

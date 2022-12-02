@@ -5,7 +5,7 @@ exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Enfin... Vous disposez de tout ce contenu, soigneusement structuré (dans les fr
 
 Vous avez besoin d’un moyen de cibler un contenu spécifique, de sélectionner ce dont vous avez besoin et de le renvoyer à votre application pour un traitement ultérieur.
 
-Avec Adobe Experience Manager (AEM), vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API GraphQL AEM, pour renvoyer uniquement le contenu dont vous avez besoin. Cela signifie que vous pouvez réaliser une diffusion découplée d’un contenu structuré pour l’utiliser dans vos applications.
+Avec Adobe Experience Manager (AEM), vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API AEM GraphQL, pour renvoyer uniquement le contenu dont vous avez besoin. Cela signifie que vous pouvez réaliser une diffusion découplée d’un contenu structuré pour l’utiliser dans vos applications.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Pour vraiment accéder à GraphQL pour AEM (et à son contenu), un point d’ent
 
 Le contenu renvoyé, à l’aide de l’API AEM GraphQL, peut ensuite être utilisé par vos applications.
 
-Pour vous aider à saisir et à tester directement des requêtes, une implémentation de l’interface GraphiQL standard est également disponible avec GraphQL AEM (qui peut être installée avec AEM). Elle vous offre des fonctionnalités telles que la mise en surbrillance de la syntaxe, la saisie semi-automatique et la suggestion automatique, ainsi qu’un historique et une documentation en ligne.
+Pour vous aider à saisir et à tester directement des requêtes, une implémentation de l’interface GraphQL standard est également disponible avec GraphQL AEM (qui peut être installée avec AEM). Elle vous offre des fonctionnalités telles que la mise en surbrillance de la syntaxe, la saisie semi-automatique et la suggestion automatique, ainsi qu’un historique et une documentation en ligne.
 
 >[!NOTE]
 >

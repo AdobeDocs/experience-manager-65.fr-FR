@@ -1,5 +1,5 @@
 ---
-title: 'Les schémas de métadonnées définissent la disposition de la page des propriétés de métadonnées. '
+title: Les schémas de métadonnées définissent la disposition de la page des propriétés de métadonnées.
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
 mini-toc-levels: 1
@@ -9,7 +9,7 @@ exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '3630'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 85%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata-schemas.html?lang=en) |
+| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata-schemas.html?lang=fr) |
 
 Les entreprises disposent d’un modèle de métadonnées qui améliore la découverte, l’utilisation, l’interopérabilité des ressources, etc. L’application correcte des métadonnées est sacro-sainte pour gérer les workflows et les processus pilotés par les métadonnées. Pour respecter la stratégie et les normes de métadonnées à l’échelle de l’entreprise, vous pouvez utiliser des schémas de métadonnées qui aident les utilisateurs de la gestion des actifs numériques à s’aligner sur celles-ci. [!DNL Adobe Experience Manager] Met à disposition des méthodes simples et flexibles pour créer, gérer et appliquer des schémas de métadonnées.
 
@@ -54,8 +54,8 @@ Pour afficher la liste des formulaires ou des modèles, dans l’interface [!DNL
 |  | <ul><li>[!UICONTROL l’application ;]</li></ul> | Formulaire de schéma pour les ressources dotées du type MIME, par exemple `application/pdf` et `application/zip` <br>[!UICONTROL pdf] : formulaire de schéma pour les ressources avec le sous-type PDF. |
 |  | <ul><li>[!UICONTROL vidéo]</li></ul> | Formulaire de schéma pour les ressources vidéo dotées d’un type MIME telles que `video/avi` et `video/mp4` |
 | [!UICONTROL collection] |  | Formulaire de schéma pour les collections |
-| [!UICONTROL contentfragment] |  | [Formulaire de schéma pour les fragments de contenu](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL forms] |  | Ce formulaire de schéma se rapporte à [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL contentfragment] |  | [Formulaire de schéma pour les fragments de contenu](/help/sites-developing/customizing-content-fragments.md) |
+| [!UICONTROL formulaires] |  | Ce formulaire de schéma est associé aux [Adobe Experience Manager Forms](/help/forms/home.md). |
 | [!UICONTROL ugc_contentfragment] |  | Formulaire de schéma pour les éléments de contenu et les ressources générés par l’utilisateur intégrés dans Experience Manager à partir des médias sociaux. |
 
 >[!NOTE]
@@ -139,7 +139,7 @@ Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez reche
 
 ![Option sélectionnée dans le prédicat Validation des métadonnées du panneau Filtres](assets/invalid-metadata-predicate.png)
 
-Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous forme de liste sur la page Propriétés des ressources auxquelles ce  schéma particulier est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
+Si vous ajoutez le composant Métadonnées contextuelles à un onglet d’un formulaire de schéma, le composant apparaît sous forme de liste sur la page Propriétés des ressources auxquelles ce      schéma particulier est appliqué. La liste inclut tous les autres onglets, à l’exception de celui auquel vous avez appliqué le composant Métadonnées contextuelles. Actuellement, cette fonctionnalité fournit des fonctions de base pour contrôler l’affichage des métadonnées en fonction du contexte.
 
 ![Composant de métadonnées contextuelles répertoriant les onglets des propriétés des ressources](assets/metadata-contextual-component-list.png)
 
@@ -147,7 +147,7 @@ Pour afficher un onglet sur la page Propriétés en plus de l’onglet auquel le
 
 ![L’onglet sélectionné dans la liste des métadonnées contextuelles s’affiche sur la page des propriétés de la ressource.](assets/contextual-metadata-asset-properties.png)
 
-*Figure : Métadonnées contextuelles dans la page des propriétés de la ressource.*
+*Image : métadonnées contextuelles dans la page des propriétés de la ressource.*
 
 ### Spécification des propriétés dans le fichier JSON {#specify-properties-in-json-file}
 
@@ -189,14 +189,14 @@ Supposons que vous souhaitiez afficher les métadonnées en cascade en fonction 
 
 Sans tenir compte du type de ressource choisi, affichez les informations de copyright comme étant un champ requis.
 
-1. Dans [!DNL Experience Manager] , accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
-1. Dans le **[!UICONTROL Forms du schéma]** page, sélectionnez un formulaire de schéma, puis cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils pour éditer le schéma.
+1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
+1. Dans la page **[!UICONTROL Formulaires de schéma]**, sélectionnez un formulaire de schéma, puis cliquez sur **[!UICONTROL Modifier]** dans la barre d’outils pour modifier le schéma.
 
    ![select_form](assets/select_form.png)
 
 1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ pour l’application de conditions. Spécifiez un nom et un chemin de propriété sous l’onglet **[!UICONTROL Paramètres.]**
 
-   Pour créer un onglet, cliquez sur `+` pour ajouter un onglet, puis ajouter un champ de métadonnées.
+   Pour créer un onglet, cliquez sur `+` afin d’ajouter un onglet, puis ajoutez un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 
@@ -206,7 +206,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. Les paires de clé/valeur sont les options fournies à un utilisateur de formulaire. Vous pouvez fournir des paires clé/valeur manuellement ou à partir d’un fichier JSON.
 
-   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, puis cliquez sur **[!UICONTROL Ajouter un choix]** et indiquez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources vidéo, PDF, Word et image.
+   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, cliquez sur **[!UICONTROL Ajouter un choix]**, puis spécifiez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources vidéo, PDF, Word et image.
 
    * Pour récupérer les valeurs d’un fichier JSON de façon dynamique, sélectionnez **[!UICONTROL Ajouter par chemin JSON]** et indiquez le chemin d’accès au fichier JSON. [!DNL Experience Manager] récupère les paires clé/valeur en temps réel lorsque le formulaire est présenté à l’utilisateur.
 
@@ -220,7 +220,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!NOTE]
    >
-   >Lors de l’ajout de choix, si vous cliquez sur le champ déroulant, l’interface est déformée et l’option de suppression des choix cesse de fonctionner. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
+   >Lorsque vous ajoutez des choix, si vous cliquez sur le champ de liste déroulante, l’interface se déforme et l’option de suppression des choix cesse de fonctionner. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma et rouvrez-le pour poursuivre l’édition.
 
 1. (Facultatif) Ajoutez les autres champs requis ; par exemple, le format, le codec et la durée de la ressource de type vidéo.
 
@@ -233,7 +233,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Sous **[!UICONTROL Condition requise]**, sélectionnez l’option **[!UICONTROL Requis, d’après la nouvelle règle]**.
-1. Cliquez sur **[!UICONTROL Ajouter une règle]** et sélectionnez la variable **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur du champ sur lequel vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer les modifications.
+1. Cliquez sur **[!UICONTROL Ajouter une règle]**, puis sélectionnez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur du champ sur lequel vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer les modifications.
 
    ![define_rule](assets/define_rule.png)
 
@@ -243,13 +243,13 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
 1. Sous **[!UICONTROL Visibilité]**, sélectionnez l’option **[!UICONTROL Visible, d’après la nouvelle règle]**.
 
-1. Cliquez sur **[!UICONTROL Ajouter une règle]** et sélectionnez la variable **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur du champ sur lequel vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer les modifications.
+1. Cliquez sur **[!UICONTROL Ajouter une règle]**, puis sélectionnez le champ **[!UICONTROL Type de ressource]** pour créer une dépendance. Sélectionnez également la valeur du champ sur lequel vous souhaitez créer la dépendance. Dans ce cas, sélectionnez **[!UICONTROL Vidéo]**. Cliquez sur **[!UICONTROL Terminé]** pour enregistrer les modifications.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
    >[!NOTE]
    >
-   >Cliquer sur un espace (ou tout autre endroit que les valeurs) réinitialise les valeurs. Si cela se produit, sélectionnez à nouveau les valeurs.
+   >Cliquer sur un espace (ou à tout autre endroit que sur les valeurs) réinitialise les valeurs. Si cela se produit, sélectionnez à nouveau les valeurs.
 
    >[!NOTE]
    >
@@ -263,17 +263,17 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    ![Métadonnées en cascade pour une ressource vidéo](assets/video_asset.png)
 
-   *Figure : Métadonnées en cascade pour une vidéo.*
+   *Image : métadonnées en cascade pour une vidéo.*
 
    ![Métadonnées en cascade pour une ressource de document](assets/doc_type_fields.png)
 
-   *Figure : Métadonnées en cascade pour un document.*
+   *Image : métadonnées en cascade pour un document.*
 
 ## Suppression de formulaires de schéma de métadonnées {#delete-metadata-schema-forms}
 
 [!DNL Experience Manager] vous permet uniquement de supprimer des formulaires de schéma personnalisés. Il ne vous permet pas de supprimer les formulaires/modèles de schéma par défaut. Cependant, vous pouvez supprimer toutes les modifications personnalisées dans ces formulaires.
 
-Pour supprimer un formulaire, sélectionnez-le, puis cliquez sur Supprimer.
+Pour supprimer un formulaire, sélectionnez-le puis cliquez sur Supprimer.
 
 >[!NOTE]
 >
@@ -339,10 +339,10 @@ L’héritage des métadonnées par les ressources est basé sur le schéma appl
 
    ![Champ de texte ajouté à l’éditeur de formulaire de schéma de métadonnées](assets/text-field-metadata-schema-editor.png)
 
-   *Figure : Champ de texte ajouté à l’éditeur de formulaire de schéma de métadonnées.*
+   *Image : champ de texte ajouté à l’éditeur de formulaire de schéma de métadonnées.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**.
-1. Cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]** de la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
+1. Cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 
 1. Sélectionnez le dossier auquel appliquer le schéma modifié, puis cliquez sur **[!UICONTROL Appliquer]**.
 
@@ -354,11 +354,11 @@ L’héritage des métadonnées par les ressources est basé sur le schéma appl
 
 ## Définition des métadonnées obligatoires {#define-mandatory-metadata}
 
-Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous chargez des ressources avec des métadonnées manquantes pour les champs obligatoires définis précédemment, une indication visuelle pour les métadonnées manquantes s’affiche sur les ressources en mode Carte.
+Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous chargez des ressources présentant des métadonnées manquantes dans des champs obligatoires précédemment définis, une indication visuelle de métadonnées manquantes apparaît sur les ressources en mode Carte.
 
 >[!NOTE]
 >
->Un champ de métadonnées peut être défini comme obligatoire en fonction de la valeur d’un autre champ. En mode Carte, [!DNL Experience Manager] n’affiche pas le message d’avertissement concernant les métadonnées manquantes pour ces champs de métadonnées obligatoires.
+>Un champ de métadonnées peut être défini comme obligatoire en fonction de la valeur d’un autre champ. Dans le mode Carte, [!DNL Experience Manager] n’affiche pas le message d’avertissement concernant les métadonnées manquantes pour ces champs de métadonnées obligatoires.
 
 1. Dans l’interface [!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
 1. Enregistrez le formulaire de métadonnées par défaut en tant que formulaire personnalisé. Par exemple, enregistrez-le sous le nom `my_default`.
@@ -367,11 +367,11 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
    ![Ajoutez un champ obligatoire au formulaire de métadonnées en sélectionnant Obligatoire dans l’onglet Règles de l’éditeur de formulaire de schéma de métadonnées.](assets/mandatory-field-metadata-schema-editor.png)
 
-   *Figure : Champ obligatoire dans l’éditeur de formulaire de schéma de métadonnées.*
+   *Image : champ obligatoire dans l’éditeur de formulaire de schéma de métadonnées.*
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**. Sélectionnez le formulaire, puis cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]** de la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**. Sélectionnez le formulaire et cliquez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 
-1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message concernant les métadonnées manquantes pour le champ obligatoire s’affiche en mode Carte de la ressource.
+1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message concernant les métadonnées manquantes pour le champ obligatoire apparaît dans l’affichage Carte de la ressource.
 
    ![Message indiquant l’absence de métadonnées obligatoires en mode Carte des ressources lors du chargement de ressources dans un dossier](assets/metadata-missing-info-card-view.png)
 
@@ -379,7 +379,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
    >[!CAUTION]
    >
-   >Les contrôles de validation des métadonnées nécessitent beaucoup de ressources et peuvent avoir une incidence sur les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur n’est pas en mesure de faire face à la charge, essayez de désactiver cette tâche.
+   >Les contrôles de validation des métadonnées sont des tâches qui nécessitent de nombreuses ressources et qui peuvent donc altérer les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur n’est pas en mesure de faire face à la charge, essayez de désactiver cette tâche.
 
 <!-- TBD: Add this method to find invalid metadata in the metadata.md article later when it is published as a top-level metadata article.
 -->

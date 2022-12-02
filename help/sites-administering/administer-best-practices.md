@@ -13,7 +13,7 @@ exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -26,24 +26,24 @@ Une documentation sur les meilleures pratiques est disponible pour les aspects s
 * [Assets](#assets)
 * [Sites](#sites)
 
-Pour connaître les meilleures pratiques concernant la création, le déploiement et la maintenance ou le développement, voir l’une des rubriques suivantes :
+Pour connaître les bonnes pratiques concernant la création, le déploiement et la maintenance ou le développement, consultez l’une des rubriques suivantes :
 
-* [Meilleures pratiques de création](/help/sites-authoring/best-practices.md)
-* [Meilleures pratiques de développement](/help/sites-developing/best-practices.md)
-* [Déploiement de meilleures pratiques](/help/sites-deploying/best-practices.md)
+* [Bonnes pratiques de création](/help/sites-authoring/best-practices.md)
+* [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
+* [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
 ## Ressources {#assets}
 
-Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
+Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic Media et son intégration, sont décrites dans les rubriques suivantes :
 
 <table>
  <tbody>
   <tr>
-   <td>Bonnes pratiques dans différents domaines d’Assets pour améliorer la stabilité du système et les performances en cas de charge</td>
-   <td><a href="/help/assets/best-practices-for-assets.md">Bonnes pratiques pour les ressources</a></td>
-   <td>Inclut des liens vers des guides des bonnes pratiques dans différentes zones d’Assets. Après avoir consulté ce contenu, vous disposerez des connaissances et des outils vous permettant de créer et gérer un système de gestion de ressources d’entreprise.</td>
+   <td>Bonnes pratiques dans différents domaines liés à Assets pour améliorer la stabilité du système et les performances en cas de forte charge</td>
+   <td><a href="/help/assets/best-practices-for-assets.md">Bonnes pratiques pour Assets</a></td>
+   <td>Inclut des liens vers des guides de bonnes pratiques dans différents domaines d’Assets. Après avoir consulté ce contenu, vous disposerez des connaissances et des outils vous permettant de créer et gérer un système de gestion de ressources d’entreprise.</td>
   </tr>
   <tr>
    <td>Comment organiser votre contenu (hiérarchie des dossiers)</td>
@@ -52,18 +52,18 @@ Les bonnes pratiques relatives aux ressources, y compris la fonctionnalité Dyna
   </tr>
   <tr>
    <td>Intégration de Scene7 avec AEM</td>
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Meilleures pratiques pour intégrer Scene7 avec AEM</a></td>
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Bonnes pratiques pour intégrer Scene7 avec AEM</a></td>
    <td><p>Indique quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct dans les ressources.</p> </td>
   </tr>
   <tr>
-   <td>Options des paramètres d’image prédéfinis</td>
-   <td>Comprendre les <a href="/help/assets/managing-image-presets.md#understanding-image-presets">paramètres d’image prédéfinis</a> et <a href="/help/assets/managing-image-presets.md#image-preset-options">les meilleures pratiques en matière de paramètres d’image prédéfinis</a></td>
+   <td>Options des paramètres prédéfinis d’image</td>
+   <td>Comprendre les <a href="/help/assets/managing-image-presets.md#understanding-image-presets">paramètres prédéfinis d’image</a> et <a href="/help/assets/managing-image-presets.md#image-preset-options">les bonnes pratiques en matière de paramètres prédéfinis d’image</a></td>
    <td>Dans le cadre de la documentation sur <a href="/help/assets/managing-image-presets.md">la gestion des paramètres d’image prédéfinis</a>, ces rubriques décrivent ce que sont les paramètres d’image prédéfinis et les meilleures pratiques concernant les options des paramètres d’image prédéfinis.</td>
   </tr>
   <tr>
    <td>Dynamic Media par rapport à l’intégration directe avec Scene7</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Intégration de Scene7/AEM par rapport à Dynamic Media</a></td>
-   <td>Indique lorsqu’il est préférable d’utiliser la solution de Dynamic Media, lorsqu’il est préférable d’utiliser l’intégration S7 avec AEM ou lorsqu’il est préférable d’utiliser les deux.</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Intégration de Scene7/AEM par rapport à Dynamic Media</a></td>
+   <td>Indique quand est préférable d’utiliser la solution Dynamic Media, d’utiliser l’intégration S7 avec AEM ou d’utiliser les deux.</td>
   </tr>
  </tbody>
 </table>
@@ -76,7 +76,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
  <tbody>
   <tr>
    <td>Conformité au RGPD</td>
-   <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites – Conformité au RGPD</a></td>
+   <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites – Conformité au RGPD</a></td>
    <td>Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018. AEM Sites est conforme au RGPD. Cette page guide les clients à travers les procédures de gestion des demandes RGPD dans AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.</td>
   </tr>
   <tr>
@@ -86,23 +86,23 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
   </tr>
   <tr>
    <td>Gestion multisite</td>
-   <td><a href="/help/sites-administering/msm-best-practices.md">Bonnes pratiques MSM</a></td>
-   <td>Meilleures pratiques concernant l’utilisation du MSM pour automatiser le déploiement du contenu. </td>
+   <td><a href="/help/sites-administering/msm-best-practices.md">Bonnes pratiques relatives au MSM</a></td>
+   <td>Bonnes pratiques concernant l’utilisation du MSM pour automatiser le déploiement du contenu. </td>
   </tr>
   <tr>
    <td>Traduction du contenu</td>
-   <td><a href="/help/sites-administering/tc-bp.md">Bonnes pratiques de traduction</a></td>
+   <td><a href="/help/sites-administering/tc-bp.md">Bonnes pratiques en matière de traduction</a></td>
    <td>Meilleures pratiques concernant la planification et la mise en œuvre de votre site multilingue.</td>
   </tr>
   <tr>
    <td>Administration des utilisateurs</td>
-   <td><a href="/help/sites-administering/security.md#best-practices">Meilleures pratiques concernant les autorisations et droits d’accès</a></td>
-   <td>Décrit les meilleures pratiques lorsque vous travaillez avec des autorisations et droits d’accès </td>
+   <td><a href="/help/sites-administering/security.md#best-practices">Bonnes pratiques concernant les autorisations et droits d’accès</a></td>
+   <td>Décrit les bonnes pratiques lorsque vous travaillez avec des autorisations et droits d’accès </td>
   </tr>
   <tr>
    <td>Workflows</td>
-   <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Meilleures pratiques de workflows : Configuration</a></td>
-   <td>Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement qui se produit dans un environnement AEM. Il est donc hautement recommandé de planifier et de configurer avec soin les implémentations de workflows.</td>
+   <td><a href="/help/sites-developing/workflows-best-practices.md#configuration">Bonnes pratiques de workflows : configuration</a></td>
+   <td>Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement qui se produit dans un environnement AEM. Il est donc hautement recommandé de planifier et de configurer avec soin les implémentations de workflows.</td>
   </tr>
  </tbody>
 </table>

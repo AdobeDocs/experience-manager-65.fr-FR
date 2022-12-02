@@ -1,5 +1,5 @@
 ---
-title: Gérer [!DNL Adobe Stock] ressources
+title: Gestion des ressources  [!DNL Adobe Stock]
 description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
 contentOwner: Vishabh Gupta
 feature: Search, Adobe Stock
@@ -8,7 +8,7 @@ exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '2493'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 95%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/aem-assets-adobe-stock.html?lang=en) |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/aem-assets-adobe-stock.html?lang=fr) |
 
 <!-- old content
 
@@ -63,7 +63,7 @@ Une formule d’abonnement à [!DNL Adobe Stock] pour entreprise,
 * Active l’authentification du compte de service (JWT) dans [!DNL Adobe Developer Console] pour vos droits de stock.
 * Permet de gérer les crédits et les licences à l’échelle mondiale à partir d’[!DNL Adobe Admin Console].
 
-Dans les droits, un profil de produit par défaut pour [!DNL Adobe Stock] existe dans [!DNL Admin Console]. Plusieurs profils peuvent être créés et ils déterminent qui peut acquérir des ressources Stock sous licence. Un utilisateur ayant accès directement au profil de produit peut accéder à [https://stock.adobe.com/](https://stock.adobe.com/fr) et acquérir sous licence des ressources Stock. En revanche, il existe une autre méthode d’utilisation de l’accès développeur pour créer l’intégration (API) afin d’authentifier la communication entre les [!DNL Experience Manager] et [!DNL Adobe Stock].
+Dans les droits, un profil de produit par défaut pour [!DNL Adobe Stock] existe dans [!DNL Admin Console]. Plusieurs profils peuvent être créés et ils déterminent qui peut acquérir des ressources Stock sous licence. Un utilisateur disposant d’un accès direct au profil de produits peut accéder à [https://stock.adobe.com/fr](https://stock.adobe.com/fr) et acquérir des ressources Stock sous licence. En revanche, il existe une autre méthode d’utilisation de l’accès développeur pour créer l’intégration (API) afin d’authentifier la communication entre [!DNL Experience Manager] et [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ La configuration IMS comprend deux étapes :
 
 La clé publique (certificat) authentifie votre profil sur la console Adobe Developer.
 
-1. Connectez-vous à [!DNL Experience Manager Assets] instance d’auteur. L’URL par défaut est `http://localhost:4502/aem/start.html`.
+1. Connectez-vous à votre instance d’auteur [!DNL Experience Manager Assets]. L’URL par défaut est `http://localhost:4502/aem/start.html`.
 
 1. Dans le panneau **[!UICONTROL Outils]**, accédez à **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
 
@@ -272,7 +272,7 @@ Vous pouvez créer un groupe d’utilisateurs ou attribuer des autorisations à 
 
 **Pour fournir l’accès à un utilisateur à partir de la [!DNL User Admin Console] :**
 
-1. Ouvrez la console d’administration des utilisateurs d’[!DNL Experience Manager]. L’URL par défaut est `http://localhost:4502/userdamin`.
+1. Ouvrez l’Admin Console des utilisateurs d’[!DNL Experience Manager]. L’URL par défaut est `http://localhost:4502/userdamin`.
 
 1. Dans le volet de gauche, recherchez l’utilisateur en saisissant le `user_id` ou le `name`. Double-cliquez pour ouvrir les propriétés de l’utilisateur.
 
@@ -373,7 +373,7 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 ## Limites connues {#known-limitations}
 
-* **Problèmes d’intégration avec [!DNL Experience Manager] Service Pack 6.5.7.0 et versions ultérieures**: Un problème inattendu est identifié lors de l’intégration à [!DNL Experience Manager] 6.5.7.0 et versions ultérieures. Le problème est en cours de test et devrait être disponible dans [!DNL Experience Manager] 6.5.11.0. Contact [!DNL Customer Support] pour un correctif immédiat.
+* **Problèmes d’intégration avec le pack de services [!DNL Experience Manager] 6.5.7.0 et versions ultérieures** : un problème inattendu est identifié lors de l’intégration à [!DNL Experience Manager] 6.5.7.0 et les versions ultérieures. Le problème est en cours de test et devrait être disponible dans [!DNL Experience Manager] 6.5.11.0. Contactez le [!DNL Customer Support] pour un correctif immédiat.
 
 * **La fonctionnalité de restriction des utilisateurs pour l’obtention de la licence ne fonctionne pas correctement** : tous les utilisateurs qui disposent des autorisations `read` pour la configuration de Stock sont autorisés à rechercher les ressources d’[!DNL Adobe Stock] et à obtenir une licence.
 
@@ -387,8 +387,8 @@ Les utilisateurs peuvent afficher les propriétés de toutes les ressources, ave
 
 >[!MORELIKETHIS]
 >
->* [Tutoriel vidéo sur l’utilisation de [!DNL Adobe Stock] ressources avec [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
->* [[!DNL Adobe Stock] aide pour les plans d’entreprise](https://helpx.adobe.com/fr/enterprise/using/adobe-stock-enterprise.html)
+>* [Tutoriel vidéo sur l’utilisation de ressources  [!DNL Adobe Stock]  avec  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=fr)
+>* Aide sur la formule Entreprise d’[[!DNL Adobe Stock] ](https://helpx.adobe.com/fr/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] FAQ](https://helpx.adobe.com/fr/stock/faq.html)
 
 

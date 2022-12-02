@@ -110,7 +110,7 @@ Adobe recommande de définir des pages de gestionnaire d’erreur personnalisé,
 
 ### Liste de contrôle de sécurité de Dispatcher {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=fr#getting-started).
+AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe recommande vivement de compléter la [liste de contrôle de sécurité de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/security-checklist.html).
 
 >[!CAUTION]
 >
@@ -217,7 +217,7 @@ Certains paramètres OSGI sont définis par défaut de manière à faciliter le 
 
 Pour chacun des services ci-dessous, les paramètres spécifiés doivent être modifiés :
 
-* [Gestionnaire de bibliothèque HTML Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
+* [Gestionnaire de bibliothèque HTML Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager) :
 
    * Activez l’option **Réduire** (pour supprimer retours chariot et les espaces).
    * Activez l’option **Gzip** (pour permettre de compresser les fichiers et d’y accéder dans une demande).
@@ -232,7 +232,7 @@ Pour chacun des services ci-dessous, les paramètres spécifiés doivent être m
 
    * Lors de la publication uniquement, définissez le **Mode de gestion de contenu web** sur Désactivé.
 
-* [Gestionnaire de script Java Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
+* [Gestionnaire de scripts Sling Java Apache](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler) :
 
    * Désactivez l’option **Générer les informations de débogage**.
 
@@ -319,7 +319,7 @@ Pour vous aider à prévenir toute utilisation abusive en raison d’une attaque
 >
 >Cette réduction ne doit être effectuée que sur les environnements AEM qui n’utilisent pas Forms.
 
-Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la chaîne ***.form.*** dans les requêtes.
+Comme AEM ne fournit pas d’index prêts à l’emploi pour `FormChooserServlet`, l’utilisation de sélecteurs de formulaire dans les requêtes déclenche une traversée coûteuse du référentiel, ce qui entraîne généralement l’arrêt de l’instance AEM. Les sélecteurs de formulaire peuvent être détectés par la présence de la chaîne **&amp;ast;.form.&amp;ast;** dans les requêtes.
 
 Pour atténuer ce problème, procédez comme suit :
 

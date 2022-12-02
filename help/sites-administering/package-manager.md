@@ -40,7 +40,7 @@ Le Gestionnaire de packs gère les packs de votre installation AEM. Après avoir
 
 ### Autorisations requises {#required-permissions}
 
-Pour créer, modifier, charger et installer des packs, les utilisateurs doivent disposer des autorisations appropriées sur les nœuds suivants :
+Pour créer, modifier, charger et installer des packs, les utilisateurs doivent disposer des autorisations appropriées sur les nœuds suivants :
 
 * Droits complets à l’exception de la suppression sur `/etc/packages`
 * Le nœud contenant le contenu du pack
@@ -53,7 +53,7 @@ Pour créer, modifier, charger et installer des packs, les utilisateurs doivent 
 
 ### Accéder au gestionnaire de packs {#accessing}
 
-Vous pouvez accéder au gestionnaire de packs de trois façons :
+Vous pouvez accéder au gestionnaire de packs de trois façons :
 
 1. À partir du menu principal d’AEM -> **Outils** -> **Déploiement** -> **Packs**
 1. Depuis [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en utilisant la barre de sélection supérieure
@@ -61,11 +61,11 @@ Vous pouvez accéder au gestionnaire de packs de trois façons :
 
 ### Interface utilisateur du gestionnaire de packs {#ui}
 
-Le gestionnaire de packs est divisé en quatre zones fonctionnelles principales :
+Le gestionnaire de packs est divisé en quatre zones fonctionnelles principales :
 
 * **Panneau de navigation de gauche** - Ce panneau vous permet de filtrer et de trier la liste des packs.
 * **Liste de packs** - Il s’agit de la liste des packs de votre instance, filtrée et triée selon les sélections effectuées dans le panneau de navigation de gauche.
-* **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packs, comme lorsqu’un pack est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
+* **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packs, comme lorsqu’un pack est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
    * **Effacer le journal**
    * **Afficher/Masquer**
 * **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste des packs, ainsi que des boutons pour rechercher, créer et charger des packs.
@@ -100,7 +100,7 @@ D’autres actions sont disponibles sous le bouton **Plus**.
 
 ### Statut du pack {#package-status}
 
-Chaque entrée de la liste des packs comporte un indicateur de statut qui vous permet de connaître d&#39;un coup d’œil le statut du pack. Si vous passez la souris sur le statut, vous verrez apparaître une info-bulle contenant le détail du statut.
+Chaque entrée de la liste des packs comporte un indicateur de statut qui vous permet de connaître d’un coup d’œil le statut du pack. Si vous passez la souris sur le statut, vous verrez apparaître une info-bulle contenant le détail du statut.
 
 ![Statut du pack](assets/package-status.png)
 
@@ -352,7 +352,7 @@ Les modules pouvant modifier le contenu existant, il est souvent utile de valide
 
 #### Options de validation {#validation-options}
 
-Le gestionnaire de modules peut effectuer les validations suivantes :
+Le gestionnaire de modules peut effectuer les validations suivantes :
 
 * [Importations de modules OSGi](#osgi-package-imports)
 * [Recouvrements](#overlays)
@@ -509,8 +509,8 @@ Avant l’installation de votre pack, le Gestionnaire de packs crée automatique
 
    * **Extraire uniquement** - Extraire le pack uniquement afin qu’aucun instantané ne soit créé et que la désinstallation ne soit pas possible
    * **Enregistrer le seuil** - Nombre de nœuds transitoires jusqu’au déclenchement de la sauvegarde automatique (augmentez si vous rencontrez des exceptions de modifications simultanées).
-   * **Extraire les sous-packs** - Activer l&#39;extraction automatique des sous-packs
-   * **Gestion du contrôle d’accès** - Spécifie comment les informations de contrôle d’accès définies dans le pak sont traitées lors de l’installation du pack (les options sont les mêmes que les[paramètres avancés des packs](#advanced-settings))
+   * **Extraire les sous-packs** - Activer l’extraction automatique des sous-packs
+   * **Gestion du contrôle d’accès** - Spécifie comment les informations de contrôle d’accès définies dans le pak sont traitées lors de l’installation du pack (les options sont les mêmes que les [paramètres avancés des packs](#advanced-settings))
    * **Gestion des dépendances** - Spécifier comment les dépendances sont gérées lors de l’installation
 
 1. Cliquez sur **Installer**.
@@ -539,7 +539,7 @@ Si l’instance n’est pas en cours d’exécution, les packs placés dans le d
 
 ### Désinstaller les packs {#uninstalling-packages}
 
-La désinstallation d’un pack ramène le contenu du référentiel à l&#39;instantané réalisé automatiquement par le gestionnaire de packs avant l’installation.
+La désinstallation d’un pack ramène le contenu du référentiel à l’instantané réalisé automatiquement par le gestionnaire de packs avant l’installation.
 
 1. [Accédez au Gestionnaire de modules.](#accessing)
 

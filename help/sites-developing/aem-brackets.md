@@ -155,7 +155,7 @@ Dans une expression `${}`, les noms communs des variables sont remplis automatiq
 L’extension AEM Brackets est un projet open source, hébergé sur GitHub par l’entreprise [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud), sous licence Apache, version 2.0 :
 
 * Référentiel de code : [https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension ](https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension)
-* Licence Apache, version 2.0 : [ https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
+* Licence Apache, version 2.0 : [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 L’éditeur de code Brackets est également un projet open source, hébergé sur GitHub par l’entreprise [Adobe Systems Incorporated](https://github.com/adobe) :
 

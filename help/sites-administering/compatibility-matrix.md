@@ -32,11 +32,11 @@ La section suivante répertorie les lecteurs Adobe Experience Manager (AEM) Scre
    <td><strong>Lecteur iOS</strong></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
+   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
    <td><p><strong>3.2.72</strong> - Disponible sur l’Apple Store</p> <p> </p> </td> 
   </tr>
   <tr>
-   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
+   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
    <td><p><strong>3.3.0</strong> </p> <p> </p> </td> 
   </tr>
   <tr>
@@ -63,11 +63,11 @@ aem-screens-player-ios-3.3.0.ipa.zip
    <td><strong>Lecteur Windows 10</strong></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
+   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
    <td><strong>1.0.12</strong><br /> </td> 
   </tr>
   <tr>
-   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
+   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
    <td><strong>1.0.48 </strong></td> 
   </tr>
   <tr>
@@ -111,14 +111,14 @@ aem-screens-player-android-3.3.0.apk.zip
    <td><strong>Lecteur Android</strong></td> 
   </tr>
   <tr>
-   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
+   <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
    <td><p><strong>3.2.72 - </strong>Disponible sur l’Apple Store</p> <p><strong>3.3.0</strong> - Ne fonctionne pas</p> <p> </p> </td> 
    <td><strong>1.0.12</strong> - (Disponible sur Macromedia)</td> 
    <td><p><strong>1.0.30 -</strong> Disponible sur Chrome Store</p> <p>Non pris en charge avec Feature Pack1</p> </td> 
    <td><strong>3.2.68 -</strong> (Disponible sur le site Web Macromedia) et Google Play Store</td> 
   </tr>
   <tr>
-   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
+   <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
    <td><p><strong>3.3.0</strong> - <a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></p> <p>À publier sur l’Apple Store</p> <p> </p> </td> 
    <td><strong>1.0.48 -</strong> <a href="https://download.macromedia.com/screens/">https://download.macromedia.com/screens/</a></td> 
    <td><p><strong>1.0.42 - </strong></p> <p>À publier sur Chrome Store</p> </td> 

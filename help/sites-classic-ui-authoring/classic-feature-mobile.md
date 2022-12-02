@@ -13,7 +13,7 @@ exl-id: d5372474-d8aa-4e64-919d-0bd29ba99d99
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ Les périphériques sont regroupés en fonction des catégories : fonction, int
 
 >[!NOTE]
 >
->Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. (Voir [Création d’une Live Copy pour différents canaux](/help/sites-administering/msm-livecopy.md).)
+>Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. (Reportez-vous à [Création d’une live copy pour différents canaux](/help/sites-administering/msm-livecopy.md).)
 >
->Les développeurs d’AEM peuvent créer de nouveaux groupes d’appareils. (Voir [Création de filtres de groupe d’appareils.](/help/sites-developing/groupfilters.md))
+>Les développeurs AEM peuvent créer de nouveaux groupes d’appareils. (Consultez [Création de filtres de groupe de périphériques.](/help/sites-developing/groupfilters.md))
 
 Utilisez la procédure suivante pour créer une page mobile :
 
 1. Dans votre navigateur, accédez à la console **Site Admin**.
-1. Ouvrez la page **Products** située sous **Sites Web** >> **Geometrixx Mobile Demo Site** >> **English**.
+1. Ouvrez la page **Produits** située sous **Sites Web** >> **Site de démonstration mobile Geometrixx** >> **English**.
 
 1. Basculez vers un autre émulateur. Pour ce faire, vous pouvez :
 
@@ -40,7 +40,7 @@ Utilisez la procédure suivante pour créer une page mobile :
    * cliquer sur le bouton **Modifier** du **sidekick**, puis sélectionner le périphérique dans le menu déroulant.
 
 1. Faites glisser et déposez le composant **Texte et image** de l’onglet Mobile du sidekick vers la page.
-1. Modifiez le composant et ajoutez du texte. Pour enregistrer les modifications, cliquez sur **OK.**
+1. Modifiez le composant et ajoutez du texte. Pour enregistrer les modifications, cliquez sur **OK**.
 
 La page ressemble à celle-ci :
 
@@ -48,4 +48,4 @@ La page ressemble à celle-ci :
 
 >[!NOTE]
 >
->Les émulateurs sont désactivés lorsqu’une page de l’instance de création est demandée à partir d’un appareil mobile. Vous pouvez ensuite créer à l’aide de l’interface utilisateur tactile.
+>Les émulateurs sont désactivés lorsqu’une page de l’instance de création est demandée à partir d’un appareil mobile. La création peut être effectuée à l’aide d’une interface utilisateur activée pour les écrans tactiles.

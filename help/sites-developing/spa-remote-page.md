@@ -5,7 +5,7 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
 workflow-type: tm+mt
 source-wordcount: '354'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -28,14 +28,14 @@ Consultez l’article [Modification d’un SPA externe dans AEM](spa-edit-extern
 * Activer CORS en développement
 * Configurer l’URL distante dans les propriétés de page
 * Effectuer le rendu de la SPA dans AEM
-* L’application web doit utiliser un manifeste de ressource de bundler comme l’un des suivants et exposer un fichier asset-manifest.json à la racine du domaine qui répertorie dans une propriété entrypoints tous les fichiers CSS et JS à charger :
+* L’application web doit utiliser un des manifestes de ressource de lot suivants et exposer un fichier asset-manifest.json à la racine du domaine qui répertorie dans une propriété de points d’entrée tous les fichiers CSS et JS à charger :
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-   ![Entrypoints](assets/asset-manifest-entrypoints.png)
+   ![Points d’entrée](assets/asset-manifest-entrypoints.png)
 
-* L’application doit pouvoir être initialisée dans une `<div id="root"></div>` sous l’élément de corps. Si une balise différente est attendue pour l’application, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy avec `sling:resourceSuperType="spa-project-core/components/remotepage`.
+* L’application doit pouvoir être initialisée dans un `<div id="root"></div>` sous l’élément de corps. Si une balise différente est attendue pour l’application, elle doit être ajustée en conséquence dans les scripts HTL du composant proxy avec `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Restrictions {#limitations}
 

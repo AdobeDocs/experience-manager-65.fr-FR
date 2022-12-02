@@ -13,7 +13,7 @@ exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Pour ce faire, définissez la [Configuration du composant de fragment de contenu
 
 >[!CAUTION]
 >
->Lorsque vous étendez ou utilisez les composants prêts à l’emploi, il n’est pas recommandé de modifier la configuration 
+>Lorsque vous étendez ou utilisez les composants prêts à l’emploi, il n’est pas recommandé de modifier la configuration.
 
 >[!CAUTION]
 >
 >Vous pouvez créer de A à Z un composant n’utilisant que l’API de fragments de contenu, sans services avancés. Cependant, dans ce cas, vous devrez développer votre composant de sorte qu’il traite le traitement approprié.
 >
->Par conséquent, il est recommandé d’utiliser les composants principaux.
+>Il est donc recommandé d’utiliser les composants principaux.
 
 ## Définition des services avancés nécessitant une configuration {#definition-of-advanced-services-that-need-configuration}
 
@@ -48,7 +48,7 @@ Les services qui nécessitent l’enregistrement d’un composant sont les suiva
 * Purge par le Dispatcher des fragments référencés (si une page contenant un fragment est republiée).
 * Utilisation du rendu basé sur les paragraphes.
 
-Si vous avez besoin d’une ou plusieurs de ces fonctionnalités, il est alors (généralement) plus facile d’utiliser la fonctionnalité prête à l’emploi, au lieu de la développer entièrement.
+Si vous avez besoin d’une ou de plusieurs de ces fonctionnalités, il est alors (généralement) plus facile d’utiliser cette fonctionnalité prête à l’emploi, au lieu de la développer en partant de zéro.
 
 ## Service OSGi – Configuration du composant de fragment de contenu {#osgi-service-content-fragment-component-configuration}
 
@@ -58,7 +58,7 @@ La configuration doit être liée à la **Configuration du composant de fragment
 
 >[!NOTE]
 >
->Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus de détails.
+>Consultez [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour des détails complets.
 
 Par exemple :
 
@@ -96,7 +96,7 @@ La configuration OSGi est la suivante :
  </tbody>
 </table>
 
-Pour certaines fonctionnalités (par exemple, pour effectuer le rendu d’une seule plage de paragraphes), vous devez respecter certaines conventions :
+Pour certaines fonctionnalités (par exemple, pour effectuer le rendu d’une seule plage de paragraphes), vous devez respecter certaines conventions :
 
 <table>
  <tbody>
@@ -122,14 +122,14 @@ Pour certaines fonctionnalités (par exemple, pour effectuer le rendu d’une se
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>Propriété booléenne qui définit si les en-têtes (par exemple, <code>h1</code>, <code>h2</code>, <code>h3</code>) sont comptés comme des paragraphes (<code>true</code>) ou non (<code>false</code>)</td>
+   <td>Propriété booléenne qui définit si les en-têtes (par exemple, <code>h1</code>, <code>h2</code>, <code>h3</code>) sont comptés comme des paragraphes (<code>true</code>) ou non (<code>false</code>).</td>
   </tr>
  </tbody>
 </table>
 
 >[!CAUTION]
 >
->Cela peut changer dans les jalons 6.5 suivants.
+>Cela peut changer pour les jalons 6.5 suivants.
 
 ## Exemple {#example}
 

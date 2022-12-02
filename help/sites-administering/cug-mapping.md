@@ -15,7 +15,7 @@ feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 73%
   </tr>
   <tr>
    <td><p>Propriété : cq:cugEnabled</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
-   <td><p>Autorisation :</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification:</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
-   <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Pour imposer l’exigence d’authentification sur un noeud, il suffit d’ajouter le type de mixin granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
+   <td><p>L’autorisation:</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification :</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
+   <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Pour exiger une authentification sur un nœud, il suffit d’ajouter le granite du type de mixin : granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
   </tr>
   <tr>
    <td><p>Propriété : cq:cugPrincipals</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
@@ -43,11 +43,11 @@ ht-degree: 73%
   <tr>
    <td><p>Propriété : cq:cugLoginPage</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
    <td><p>Propriété : granite:loginPath (facultative)</p> <p>Type de nœud indiqué : granite:AuthenticationRequired</p> </td>
-   <td><p>Un noeud JCR dont le type de mixin granite:AuthenticationRequired est défini peut éventuellement définir un autre chemin de connexion.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
+   <td><p>Il est possible de définir un chemin de connexion alternatif pour un nœud JCR dont le type de mixin est granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
   </tr>
   <tr>
    <td><p>Propriété : cq:cugRealm</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
-   <td>s.o.</td>
+   <td>S/O</td>
    <td>Plus pris en charge depuis la nouvelle implémentation.</td>
   </tr>
  </tbody>
@@ -85,18 +85,18 @@ Nom : com.day.cq.auth.impl.CugSupportImpl
 **Commentaires**
 
 * Configuration de l’autorisation de CUG et activation/désactivation de l’évaluation.
-Service permettant de configurer la liste d’exclusion des entités qui ne doivent pas être affectées par l’autorisation de CUG.
+Service permettant de configurer la liste d’exclusion des principaux qui ne doivent pas être affectés par l’autorisation de CUG.
 
    >[!NOTE]
    > 
-   >Si la variable `CugExcludeImpl` n’est pas configuré, la variable `CugConfiguration` revient à la valeur par défaut.
+   >Si la variable `CugExcludeImpl` n’est pas configurée, la `CugConfiguration` revient à la valeur par défaut.
 
    Il est possible de connecter une implémentation CugExclude personnalisée en cas de besoins spéciaux.
 
 * Composant OSGI implémentant LoginPathProvider, qui expose un chemin de connexion correspondant à LoginSelectorHandler. Il comporte une référence obligatoire à RequirementHandler, utilisé pour enregistrer l’observateur qui surveille les exigences d’authentification modifiées stockées dans le contenu via le type de mixin granite:AuthenticationRequired.
-* Composant OSGi implémentant RequirementHandler qui informe SlingAuthenticator des modifications apportées aux exigences d’authentification.
+* Composant OSGI implémentant RequirementHandler qui informe SlingAuthenticator des modifications apportées à authrequirements.
 
-   Comme la stratégie de configuration de ce composant est REQUISE, elle ne sera activée que si un ensemble de chemins pris en charge est spécifié.
+   Comme la politique de configuration pour ce composant est OBLIGATOIRE, elle sera activée uniquement si un ensemble de chemins pris en charge est spécifié.
 
    L’activation du service lance RequirementService.
 

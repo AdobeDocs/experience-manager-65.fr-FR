@@ -14,7 +14,7 @@ exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,14 +27,14 @@ Pour plus d’informations sur les concepts sous-jacents, reportez-vous aux rubr
 * [Composants AEM – Notions de base](/help/sites-developing/components-basics.md)
 * [Développement de composants AEM](/help/sites-developing/developing-components.md)
 
-Pour plus d’informations sur l’interface utilisateur classique, voir [Composants AEM pour l’interface utilisateur graphique](/help/sites-developing/developing-components-classic.md).
+Pour plus d’informations sur l’interface utilisateur classique, consultez [Composants AEM pour l’interface utilisateur graphique](/help/sites-developing/developing-components-classic.md).
 
 >[!NOTE]
 >
 >Pour vous aider à analyser, tester et déboguer vos composants, AEM propose :
 >
 >* [Mode Développeur](/help/sites-developing/developer-mode.md)
->* une [structure permettant d’automatiser les tests sur la base de la bibliothèque Hobbes.js](/help/sites-developing/hobbes.md).
+>* un [framework permettant d’automatiser les tests sur la base de la bibliothèque Hobbes.js](/help/sites-developing/hobbes.md).
 >
 
 
@@ -44,8 +44,8 @@ CODE SUR GITHUB
 
 Vous pouvez trouver le code de cette page sur GitHub.
 
-* [Ouvrez le projet aem-authoring-dialog-fields-customization project sur GitHub .](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip).
+* [Ouvrez le projet aem-authoring-dialog-fields-customization project sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* Téléchargez le projet sous la forme de [fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip).
 
 >[!NOTE]
 >
@@ -63,4 +63,4 @@ Vous trouverez, dans la section [Ajout d’une nouvelle action à une barre d’
 
 Vous pouvez étendre le composant Fragment de contenu standard afin d’ajouter des fonctionnalités.
 
-Pour plus d’informations, voir [Personnalisation et extensions de fragments de contenu](/help/sites-developing/customizing-content-fragments.md).
+Pour plus d’informations, consultez [Personnalisation et extensions de fragments de contenu](/help/sites-developing/customizing-content-fragments.md).

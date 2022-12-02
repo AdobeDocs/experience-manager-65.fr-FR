@@ -13,13 +13,13 @@ exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Opérations de développement d’entreprise (DevOps){#enterprise-devops}
 
-Les opérations de développement couvrent les processus, les méthodes et les communications requis pour :
+Les opérations de développement couvrent les processus, les méthodes et les communications requis pour :
 
 * simplifier le déploiement de votre logiciel sur les différents environnements ;
 * simplifier la collaboration entre les équipes de développement, de test et de déploiement.
@@ -62,7 +62,7 @@ Selon l’échelle de votre système, l’environnement de développement peut c
 
 ### Assurance qualité {#quality-assurance}
 
-Cet environnement est utilisé par l’équipe de l’assurance qualité pour [test](/help/sites-developing/test-plan.md) votre nouveau système; conception et fonction. Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
+Cet environnement est utilisé par l’équipe d’assurance qualité afin de [tester](/help/sites-developing/test-plan.md) entièrement votre nouveau système, autant sur sa conception que ses fonctions. Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
 
 ### Évaluation  {#staging}
 

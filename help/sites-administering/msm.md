@@ -1,5 +1,5 @@
 ---
-title: '« Réutilisation de contenu »: Multi-Site Manager et Live Copy"'
+title: '« Réutilisation de contenu : Multi-Site Manager et Live Copy »'
 seo-title: "Reusing Content: Multi Site Manager and Live Copy"
 description: Découvrez la réutilisation de contenu avec les Live Copies et Multi Site Manager.
 seo-description: Learn about reusing content with Live Copies and the Multi Site Manager.

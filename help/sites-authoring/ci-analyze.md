@@ -14,7 +14,7 @@ exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -82,11 +82,11 @@ Utilisez le rapport Recommandations d’optimisation pour les moteurs de recherc
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-L’état de la recommandations d’optimisation pour les moteurs de recherche indique quand la tâche est créée mais pas encore terminée.
+Le statut de la recommandation d’optimisation pour les moteurs de recherche indique quand la tâche est créée mais pas encore terminée.
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, voir [Utilisation de tâches](/help/sites-authoring/task-content.md).
+Une fois créée, la tâche apparaît dans la liste Tâches de l’utilisateur. Pour plus d’informations sur les tâches, consultez [Utilisation de tâches](/help/sites-authoring/task-content.md).
 
 Utilisez la procédure suivante afin de créer une tâche pour une recommandation d’optimisation pour les moteurs de recherche.
 
@@ -107,6 +107,6 @@ Utilisez la procédure suivante afin de créer une tâche pour une recommandatio
    * Priorité de la tâche : La priorité de la tâche.
    * Échéance : La date à laquelle la tâche doit être terminée.
 
-   **Remarque :** La tâche créée inclut également le chemin d’accès à la page à laquelle la recommandation d’optimisation pour les moteurs de recherche s’applique.
+   **Remarque :** la tâche créée inclut également le chemin d’accès à la page à laquelle la recommandation d’optimisation pour les moteurs de recherche s’applique.
 
 1. Cliquez ou appuyez sur Terminé pour fermer le message Tâche créée.

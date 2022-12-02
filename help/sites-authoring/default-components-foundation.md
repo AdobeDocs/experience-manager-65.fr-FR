@@ -319,8 +319,8 @@ Indiquez l’URL de l’application Web à intégrer, par exemple :
    * **Transmettre les paramètres**
 Cochez les cases correspondant aux paramètres à transmettre à l’application, lorsque cela s’avère nécessaire.
 
-   * **Largeur et Hauteur
-**Définissez la taille de l’iframe.
+   * **Largeur et Hauteur**
+Définissez la taille de l’iframe.
 
 L’application externe est intégrée au système de paragraphes de la page AEM, par exemple, lorsque vous utilisez une application cible de `https://en.wikipedia.org/wiki/Main_Page` :
 
@@ -1508,7 +1508,7 @@ Avec les paramètres par défaut, le composant ressemble à celui-ci :
 >
 >Ce composant de base est obsolète. Adobe recommande plutôt l’utilisation du [composant principal Options de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html).
 
-Un groupe de cases d&#39;option fournit une liste composée d&#39;une ou de plusieurs cases d&#39;option (une seule case peut être sélectionnée à un moment donné).
+Un groupe de cases d’option fournit une liste composée d’une ou de plusieurs cases d’option (une seule case peut être sélectionnée à un moment donné).
 
 Spécifiez le nom de l’élément avec un titre et une description. À l’aide des boutons + et -, ajoutez ou supprimez des éléments, placez-les à l’aide des touches Haut et Bas et spécifiez une valeur par défaut, le cas échéant :
 

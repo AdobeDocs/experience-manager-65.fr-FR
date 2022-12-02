@@ -11,24 +11,24 @@ role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Guide de l’utilisateur pour la création dans AEM 6.5 {#authoring}
 
-+ [Guide de l’utilisateur de création - Aperçu](home.md)
-+ Tâches, outils et concepts essentiels pour la création AEM {#essentials}
++ [Aperçu du guide de l’utilisateur sur la création](home.md)
++ Tâches, outils et concepts essentiels pour la création dans AEM {#essentials}
    + [Premières étapes pour les auteurs](first-steps.md)
    + [Création de pages](page-authoring.md)
    + [Guide rapide pour la création de pages](qg-page-authoring.md)
-   + [Concept de création](author.md)
+   + [Concept de la création](author.md)
    + [Manipulation de base](basic-handling.md)
    + [Rechercher](search.md)
    + [Configuration de l’environnement du compte](user-properties.md)
    + [Votre boîte de réception](inbox.md)
-   + [Raccourcis clavier pour les consoles](keyboard-shortcuts.md)
+   + [Raccourcis clavier  pour les consoles](keyboard-shortcuts.md)
    + [Choix de l’interface utilisateur](select-ui.md)
 + Création {#authoring}
    + [Environnement et outils de création](author-environment-tools.md)
@@ -54,8 +54,8 @@ ht-degree: 87%
    + [Outil de comparaison des pages](page-diff.md)
    + [Console des composants](default-components-console.md)
    + [Mise en page réactive](responsive-layout.md)
-   + [Content Insight](content-insights.md)
-   + [Création de contenu accessible (conformité WCAG 2.1)](creating-accessible-content.md)
+   + [Content Insight](content-insights.md)
+   + [Création d’un contenu accessible (conformité WCAG 2.1)](creating-accessible-content.md)
    + [Configuration de composants en mode de conception](default-components-designmode.md)
    + [Composants de base](default-components-foundation.md)
    + [Génération de modèles automatique](scaffolding.md)
@@ -75,13 +75,13 @@ ht-degree: 87%
    + [Utilisation des workflows](workflows.md)
    + [Application de workflows aux pages](workflows-applying.md)
    + [Participation aux workflows](workflows-participating.md)
-   + [Utilisation des workflows de projet](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
+   + [Utilisation des workflows de projet](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html?lang=fr)
 + Performances de la page {#page-performance}
-   + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
+   + [Content Insight](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html?lang=fr)
    + [Analyse des performances de page](ci-analyze.md)
    + [Affichage des données d’analyse de page](pa-using.md)
-+ Personnalisation  {#personalization}
-   + [Personnalisation ](personalization.md)
++ Personnalisation {#personalization}
+   + [Personnalisation](personalization.md)
    + [Aperçu des pages à l’aide des données ContextHub](ch-previewing.md)
    + [Création de contenu ciblé en mode Ciblage](content-targeting-touch.md)
    + [Utilisation de contenu ciblé sur plusieurs sites](multisite-support-targeted-content.md)
@@ -90,9 +90,9 @@ ht-degree: 87%
    + [Gestion des audiences](managing-audiences.md)
    + [Création et gestion d’offres](offerlib.md)
    + [Compréhension de la segmentation](segmentation-overview.md)
-+ AEM et Adobe Campaign {#aem-adobe-campaign}
-   + [Utilisation d’Adobe Campaign](adobe-campaign.md)
++ AEM et Adobe Campaign {#aem-adobe-campaign}
+   + [Utilisation d’Adobe Campaign](adobe-campaign.md)
    + [Utilisation d’Adobe Campaign Classic et d’Adobe Campaign Standard](campaign.md)
-   + [Ciblage d’un élément de campagne Adobe Campaign](target-adobe-campaign.md)
+   + [Ciblage d’un élément Adobe Campaign](target-adobe-campaign.md)
    + [Création de formulaires Adobe Campaign dans AEM](adobe-campaign-forms.md)
    + [Composants d’Adobe Campaign](adobe-campaign-components.md)

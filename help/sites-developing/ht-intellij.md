@@ -1,5 +1,5 @@
 ---
-title: Développement de projets AEM à l’aide d’IntelliJ IDEA
+title: Développement de projets AEM à l’aide de IntelliJ IDEA
 seo-title: How to Develop AEM Projects using IntelliJ IDEA
 description: Utilisation d’IntelliJ IDEA pour développer des projets AEM
 seo-description: Using IntelliJ IDEA to develop AEM projects
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 ---
 
-# Développement de projets AEM à l’aide d’IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+# Développement de projets AEM à l’aide de IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Présentation {#overview}
 

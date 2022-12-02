@@ -31,4 +31,4 @@ Voir les pages suivantes :
 
 * [Configuration de la segmentation](/help/sites-administering/campaign-segmentation.md)
 * [Extension et configuration de l’importateur de conception pour les pages d’entrée](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
-* [Intégration des pages d’entrée à Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+* [Intégration des pages de destination à Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

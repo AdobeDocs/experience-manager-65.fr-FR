@@ -8,7 +8,7 @@ exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -22,8 +22,8 @@ Vous pouvez appliquer le service cloud de traduction directement à votre dossie
 
 L’application de services cloud directement à votre dossier de ressources élimine le besoin de configurer des services de traduction lorsque vous créez ou mettez à jour les workflows de traduction.
 
-1. Dans la [!DNL Assets] , sélectionnez le dossier auquel vous souhaitez appliquer des services de traduction.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour afficher la variable **[!UICONTROL Propriétés du dossier]** page.
+1. Depuis l’interface utilisateur d’[!DNL Assets], sélectionnez le dossier auquel vous souhaitez appliquer des services de traduction.
+1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]** pour afficher la page **[!UICONTROL Propriétés du dossier]**.
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -36,23 +36,23 @@ L’application de services cloud directement à votre dossier de ressources él
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Enregistrer]**, puis cliquez sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Le service de traduction est appliqué au dossier.
+1. Depuis la barre d’outils, cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL OK]** pour fermer la boîte de dialogue. Le service de traduction est appliqué au dossier.
 
 ## Application d’un connecteur de traduction personnalisé  {#applying-custom-translation-connector}
 
 Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows de traduction. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir de Package Manager. Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](transition-cloud-services.md#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
 1. Installez le connecteur depuis le Gestionnaire de modules.
-1. Cliquez sur le bouton [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud Services]**.
+1. Cliquez sur le logo [!DNL Experience Manager] et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
 1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Services Cloud]**.
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Cliquez sur le bouton **[!UICONTROL Configurer maintenant]** pour ouvrir le lien **[!UICONTROL Créer une configuration]** boîte de dialogue.
+1. Cliquez sur le lien **[!UICONTROL Configurer maintenant]** pour ouvrir la boîte de dialogue **[!UICONTROL Créer une configuration]**.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
-1. Indiquez un titre et un nom pour le connecteur, puis cliquez sur **[!UICONTROL Créer]**. Le connecteur personnalisé est alors disponible dans la liste des connecteurs de l’onglet **[!UICONTROL Services Cloud]** décrit à l’étape 5 de la section [Application des services de traduction](#applying-the-translation-services).
+1. Spécifiez un titre et un nom pour le connecteur, puis cliquez sur **[!UICONTROL Créer]**. Le connecteur personnalisé est alors disponible dans la liste des connecteurs de l’onglet **[!UICONTROL Services cloud]** décrite à l’étape 5 de la section [Application des services de traduction](#applying-the-translation-services).
 1. Exécutez tout processus de traduction décrit dans [Création de projets](translation-projects.md) de traduction après avoir appliqué le connecteur personnalisé. Vérifiez les informations détaillées du connecteur dans la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction dans la console **[!UICONTROL Projets]**.
 
    ![chlimage_1-220](assets/chlimage_1-220.png)

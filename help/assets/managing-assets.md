@@ -13,19 +13,19 @@ exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # À propos de la gestion des ressources Dynamic Media {#managing-assets}
 
-La gestion des ressources Dynamic Media (images, vidéos et ressources interactives) après leur chargement implique de nombreuses tâches, notamment la prévisualisation, le téléchargement ou la publication.
+La gestion des ressources Dynamic Media (images, vidéos et ressources interactives) après leur chargement implique de nombreuses tâches, dont la prévisualisation, le téléchargement ou la publication.
 
 Lors de l’aperçu, vous pouvez également appliquer des paramètres d’image prédéfinis (pour les images uniquement) ou des paramètres prédéfinis de visionneuse (pour la vidéo et les images). Vous ne pouvez pas appliquer les deux à une ressource. Voir [Application de paramètres prédéfinis de visionneuse](/help/assets/viewer-presets.md) et [Application de paramètres d’image prédéfinis](/help/assets/image-sets.md).
 
 Vous trouverez des informations générales sur la gestion des ressources dans la section [Gestion des ressources](/help/assets/manage-assets.md).
 
-Les rubriques suivantes décrivent la gestion des ressources Dynamic Media :
+Les rubriques suivantes décrivent la gestion des ressources Dynamic Media :
 
 * [Bonnes pratiques relatives à l’optimisation de la qualité des images](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [Aperçu de ressources Dynamic Media](/help/assets/previewing-assets.md)

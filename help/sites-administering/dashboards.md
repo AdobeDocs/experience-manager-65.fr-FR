@@ -13,7 +13,7 @@ exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '835'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin d
 
 ## Composants du tableau de bord {#dashboard-components}
 
-### Présentation {#overview}
+###  du commerce électronique {#overview}
 
 Les composants de tableau de bord ne sont rien de plus que des [composants AEM](/help/sites-developing/developing-components-samples.md) standard. Cette section décrit les composants de génération de rapports fournis avec AEM.
 
@@ -88,11 +88,11 @@ Les composants de génération de rapports sont initialisés avec une configurat
 
 L’onglet **De base** vous donne accès aux entrées de configuration suivantes :
 
-**Titre** Titre affiché dans le tableau de bord.
+**Titre** - Titre affiché sur le tableau de bord.
 
-**Type de requête** Méthode de demande des données.
+**Type de requête** - Méthode de demande des données.
 
-**Configuration du SiteCatalyst (facultatif)** Configuration que vous souhaitez utiliser pour vous connecter à SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
+**Options de configuration** - Configuration à utiliser pour se connecter à SiteCatalyst. En l’absence de configuration, on suppose qu’elle est configurée sur la page Tableau de bord (via les propriétés de page).
 
 **Identifiant de suite de rapports (facultatif)** Suite de rapports de SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
 
@@ -104,9 +104,9 @@ Pour pouvoir afficher des statistiques web, vous devez définir la plage de date
 >
 >La définition d’une plage de dates étendue a pour effet de diminuer la réactivité du tableau de bord.
 
-**Date de début** Date absolue ou relative à partir de laquelle les données sont récupérées.
+**Date à partir de** - Date absolue ou relative à partir de laquelle les données sont récupérées.
 
-**Date jusqu’à** Date absolue ou relative à laquelle les données sont récupérées.
+**Date jusque** - Date absolue ou relative jusqu’à laquelle les données sont récupérées.
 
 Chaque composant définit également des paramètres spécifiques.
 
@@ -114,29 +114,29 @@ Chaque composant définit également des paramètres spécifiques.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularité des dates** Unité de temps de l’axe X (par ex. jour, heure).
+**Granularité de la date** - Unité de temps de l’axe des x (jour ou heure, par exemple).
 
-**Mesures** Liste des événements que vous souhaitez afficher.
+**Mesures** - Liste des événements à afficher.
 
-**Éléments** Liste des éléments qui ventilent les données de mesure dans le graphique.
+**Éléments** - Liste d’éléments qui répartit les données de mesure dans le graphique.
 
 #### Rapport de liste avec classement {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**Éléments** Elément qui ventile les données de mesures dans le graphique.
+**Éléments** - L’élément qui répartit les données de mesure dans le graphique.
 
 **Mesures** L’événement que vous souhaitez afficher.
 
-**Non. des principaux éléments** Nombre d’éléments affichés par le rapport.
+**Nombre des principaux éléments** Nombre d’éléments affichés par le rapport.
 
-#### Rapport avec classement {#ranked-report}
+#### Rapport de classement {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
 **Mesures** L’événement que vous souhaitez afficher.
 
-**Éléments** Elément qui ventile les données de mesures dans le graphique.
+**Éléments** L’élément qui répartit les données de mesure dans le graphique.
 
 #### Rapport de section du site supérieur {#top-site-section-report}
 
@@ -144,31 +144,31 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-**Non. des principaux éléments** Nombre de sections affichées par dans le rapport.
+**Nombre des principaux éléments** Nombre de sections affichées par le rapport.
 
 #### Rapport de tendances {#trended-report}
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularité des dates** Unité de temps de l’axe X (par ex. jour, heure).
+**Granularité de la date** Unité de temps de l’axe des x (jour ou heure, par exemple).
 
 **Mesures** L’événement que vous souhaitez afficher.
 
-**Éléments** Elément qui ventile les données de mesures dans le graphique.
+**Éléments** L’élément qui répartit les données de mesure dans le graphique.
 
 ## Extension du tableau de bord {#extending-dashboard}
 
-### Présentation {#overview-1}
+###  du commerce électronique {#overview-1}
 
 Les tableaux de bord sont des pages normales (`cq:Page`). N’importe quel composant peut donc être utilisé pour les assembler.
 
-Il existe un groupe de composants par défaut. `Dashboard` contenant les composants de reporting analytics qui sont activés par défaut sur le modèle.
+Un groupe de composants par défaut, `Dashboard`, contient les composants de génération de rapports d’analyse activés par défaut sur le modèle.
 
 ### Création d’un modèle de tableau de bord {#creating-a-dashboard-template}
 
 Un modèle définit le contenu par défaut d’un nouveau tableau de bord. Vous pouvez utiliser plusieurs modèles pour créer différents types de tableaux de bord.
 
-Les modèles de tableau de bord sont créés comme les autres modèles de page, sauf qu’ils sont stockés sous `/libs/cq/dashboards/templates/`. Voir la section [Création d’un modèle Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template).
+Ces modèles sont créés de la même manière que les autres modèles de page, si ce n’est qu’ils sont stockés sous `/libs/cq/dashboards/templates/`. Consultez [Création d’un modèle Contentpage](/help/sites-developing/website.md#creating-the-contentpage-template).
 
 >[!NOTE]
 >
@@ -180,7 +180,7 @@ Le développement d’un composant Tableau de bord consiste à créer un composa
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-Les principaux composants de création sont stockés dans le référentiel à l’adresse `/apps/geometrixx-outdoors/components/reporting` et est composé de :
+Le composant « Auteurs principaux » est stocké dans le référentiel, sous `/apps/geometrixx-outdoors/components/reporting`. Il comprend les éléments suivants :
 
 1. Un fichier `jsp` qui lit les données jcr et définit le pseudo-élément `html`.
 
@@ -237,7 +237,7 @@ $.ajax({
 });
 ```
 
-Le `JSP` inclut les deux `global.jsp` et `clientlib`.
+Le `JSP` inclut le `global.jsp` comme la `clientlib`.
 
 #### top_authors.jsp {#top-authors-jsp}
 

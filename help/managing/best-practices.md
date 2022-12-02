@@ -1,5 +1,5 @@
 ---
-title: 'Gestion des projets : liste de contrôle des bonnes pratiques'
+title: 'Gestion des projets : liste de contrôle des meilleures pratiques'
 seo-title: Managing Projects - Best Practices Checklist
 description: La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension. Les listes de contrôle de projet sont conçues comme un ensemble de meilleures pratiques pour la mise en route d’un projet. Elles vous guident tout au long du cycle de vie du projet et assurent une surveillance de niveau supérieur de votre état actuel.
 seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
@@ -18,7 +18,7 @@ ht-degree: 99%
 
 ---
 
-# Gestion des projets : liste de contrôle des bonnes pratiques{#managing-projects-best-practices-checklist}
+# Gestion des projets : liste de contrôle des meilleures pratiques{#managing-projects-best-practices-checklist}
 
 La gestion d’un projet de mise en œuvre d’Adobe Experience Manager (AEM) nécessite planification et compréhension afin de vous assurer de connaître les problèmes et les décisions (associées) que vous devez prendre (avant et pendant la mise en œuvre du projet).
 
@@ -189,7 +189,7 @@ La planification du développement est essentielle pour vous assurer que votre p
 
    * les processus pour chaque environnement, par exemple, les exigences de déploiement et de maintenance ;
    * les activités de maintenance (GC de banque de données, optimisation TarPM, etc.) ;
-   * [](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)Mise en cache du Dispatcher
+   * Mise en cache du [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html)
    * [Mise en grappe de la publication/création partagée](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
    * la performance côté client (JS minify, concat, sprits CSS, nombre total de requêtes HTTP et autres).
 

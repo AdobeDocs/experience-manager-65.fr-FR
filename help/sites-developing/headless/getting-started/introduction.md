@@ -1,17 +1,17 @@
 ---
 title: Guide de prise en main du mode découplé
-description: Grâce à ce guide de démarrage rapide, découvrez les fonctionnalités essentielles des puissantes fonctionnalités sans interface d’AEM 6.5 telles que les modèles de contenu, les fragments de contenu et l’API GraphQL.
-exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 2f400d209148278f0695f7b9523b58bba6845cfb
+description: Grâce à ce guide de démarrage rapide, découvrez les fondamentaux des puissantes fonctionnalités d’AEM 6.5 en mode découplé comme les modèles de contenu, les fragments de contenu et l’API GraphQL.
+exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '301'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Guide de prise en main du mode découplé {#introduction}
 
-Les Guides de prise en main sans tête présentent un chemin simple pour créer, gérer et diffuser des expériences à l’aide d’AEM 6.5 en cinq étapes pour les utilisateurs qui connaissent déjà AEM et la technologie sans tête. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
+Les Guides de prise en main du mode découplé présentent une méthode simple pour créer, gérer et diffuser des expériences à l’aide d’AEM 6.5 en cinq étapes pour les utilisateurs qui connaissent déjà AEM et la technologie découplée. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
 
 1. [Création d’une configuration](create-configuration.md)
 1. [Création d’un modèle de fragment de contenu](create-content-model.md)

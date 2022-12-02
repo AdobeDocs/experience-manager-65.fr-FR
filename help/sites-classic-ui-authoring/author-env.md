@@ -13,7 +13,7 @@ exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '250'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->La documentation suivante porte sur l’IU classique. Pour plus d’informations sur la création dans l’IU tactile moderne, voir [documentation de création standard](/help/assets/assets.md).
+>La documentation suivante porte sur l’IU classique. Pour plus d’informations sur la création dans l’interface moderne destinée aux écrans tactiles, consultez la [documentation de création standard](/help/assets/assets.md).
 
 L’environnement de création vous permet d’effectuer les opérations suivantes :
 
-* [Création](/help/sites-authoring/author.md) (y compris [création de pages](/help/sites-authoring/qg-page-authoring.md) et [gestion des ressources](/help/assets/assets.md))
+* [Création](/help/sites-authoring/author.md) (y compris la [création de pages](/help/sites-authoring/qg-page-authoring.md) et la [gestion de ressources](/help/assets/assets.md))
 
-* [Administration](/help/sites-administering/administer-best-practices.md) des tâches nécessaires pour générer et gérer le contenu sur votre site web
+* [Administration](/help/sites-administering/administer-best-practices.md) des tâches nécessaires pour générer et gérer le contenu sur votre site Web
 
 Deux interfaces utilisateur graphiques sont à votre disposition, accessibles dans n’importe quel navigateur moderne :
 
@@ -44,8 +44,8 @@ Deux interfaces utilisateur graphiques sont à votre disposition, accessibles da
 
    * Plus récente, il s’agit de l’interface utilisateur standard d’AEM.
    * Particulièrement épurée, elle est principalement grise.
-   * Elle est conçue à la fois pour les appareils à écran tactile et les ordinateurs de bureau (elle est optimisée pour les écrans tactiles). L’apparence est identique sur tous les appareils, bien que[ l’affichage et la sélection des ressources](/help/sites-authoring/basic-handling.md) diffère légèrement (appuyer ou cliquer).  
-   * Voir [documentation de création standard](/help/sites-authoring/author.md) pour plus d’informations sur la création à l’aide de l’interface utilisateur tactile. La documentation suivante porte sur l’IU classique.
+   * Elle est conçue à la fois pour les appareils à écran tactile et les ordinateurs de bureau (elle est optimisée pour les écrans tactiles). L’apparence est identique sur tous les appareils, bien que[ l’affichage et la sélection des ressources](/help/sites-authoring/basic-handling.md) diffère légèrement (appuyer ou cliquer).
+   * Pour plus d’informations sur la création à l’aide de l’IU pour écrans tactiles, consultez la [documentation de création standard](/help/sites-authoring/author.md). La documentation suivante porte sur l’IU classique.
 
    * Bureau :
    ![chlimage_1-150](assets/chlimage_1-150.png)

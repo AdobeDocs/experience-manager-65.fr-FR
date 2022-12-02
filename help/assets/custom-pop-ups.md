@@ -1,7 +1,7 @@
 ---
 title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
 seo-title: Use Quickview to create custom pop-ups
-description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles.
+description: L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé pour l’afficher dans les fenêtres contextuelles.
 seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
 uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
@@ -15,19 +15,19 @@ exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
-L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner une zone réactive, une miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
+L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. Selon la visionneuse, cette fonctionnalité permet aux utilisateurs de sélectionner sur une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu connexe.
 
-L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
+L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynamic Media :
 
-* Image interactive (zones réactives cliquables)
+* Images interactives (zones réactives cliquables)
 * Vidéo interactive (miniatures cliquables pendant la lecture vidéo)
-* Bannière de carrousel (zones réactives cliquables ou zones cliquables)
+* Bannières carrousel (zones réactives cliquables ou zones cliquables)
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
@@ -64,7 +64,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
     <tbody>
     <tr>
     <td><strong>Visionneuse utilisée</strong><br /> </td>
-    <td><strong>Procédez comme suit si vous souhaitez intégrer la visionneuse à votre site web</strong></td>
+    <td><strong>Procédure à suivre si vous souhaitez intégrer la visionneuse à votre site Web</strong></td>
     </tr>
     <tr>
     <td>Image interactive</td>
@@ -81,12 +81,12 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
     </tbody>
    </table>
 
-1. La visionneuse que vous utilisez maintenant doit savoir comment utiliser l’aperçu rapide.
+1. La visionneuse que vous utilisez actuellement doit savoir comment prendre en charge l’aperçu rapide.
 
    Le lecteur utilise un gestionnaire appelé `QuickViewActive`.
 
    **Exemple**
-Supposons que vous utilisiez l’exemple de code intégré suivant sur votre page web pour une image interactive :
+Supposons que vous utilisiez le code d’intégration suivant dans votre page Web pour une image interactive :
 
    ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -94,7 +94,7 @@ Supposons que vous utilisiez l’exemple de code intégré suivant sur votre pag
 
    `*viewerInstance*.setHandlers({ *handler 1*, *handler 2*}, ...`
 
-   **En utilisant l’exemple de code intégré ci-dessus, vous trouverez le code suivant :**
+   **En utilisant l’exemple de code d’intégration ci-dessus, vous obtenez le code suivant :**
 
    ```xml
    s7interactiveimageviewer.setHandlers({
@@ -109,12 +109,12 @@ Supposons que vous utilisiez l’exemple de code intégré suivant sur votre pag
 
    Pour en savoir plus sur la méthode `setHandlers()`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
-   * Visionneuse vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse d’images interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html?lang=fr)
+   * Visionneuse vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html?lang=fr)
 
-1. Vous devez maintenant configurer la variable `quickViewActivate` gestionnaire.
+1. Vous devez maintenant configurer le gestionnaire `quickViewActivate`.
 
-   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code incorporé fournit un mappage pour la variable SKU définie dans l’aperçu rapide et un exemple. `loadQuickView` appel de fonction.
+   Le gestionnaire `quickViewActivate` contrôle les aperçus rapides dans la visionneuse. Le gestionnaire contient les appels de la liste de variables et de fonctions utilisables avec l’aperçu rapide. Le code d’intégration fournit une correspondance pour l’ensemble de variables de SKU dans l’aperçu rapide, ainsi qu’un exemple d’appel de fonction `loadQuickView`.
 
    **Correspondance de variables** Mappez les variables utilisables dans votre page web avec la valeur de SKU et les variables génériques dans l’aperçu rapide :
 
@@ -139,9 +139,9 @@ Supposons que vous utilisiez l’exemple de code intégré suivant sur votre pag
 
    Pour en savoir plus sur la méthode `quickViewActivate`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=fr)
-   * Visionneuse vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=fr)
-   * Prise en charge des données interactives dans la visionneuse de vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=fr)
+   * Visionneuse d’images interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=fr](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-event-callbacks.html?lang=fr)
+   * Visionneuse vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=fr](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html?lang=fr)
+   * Prise en charge des données interactives dans la visionneuse de vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=fr](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html?lang=fr)
 
 1. Procédez comme suit :
 
@@ -191,7 +191,7 @@ Supposons que vous utilisiez l’exemple de code intégré suivant sur votre pag
    </div>
    ```
 
-1. Ajoutez une fonction afin de pouvoir mettre à jour la valeur de SKU dans la fenêtre contextuelle ; rendez la fenêtre contextuelle visible en remplaçant la fonction simple créée à l’étape 5. par ce qui suit :
+1. Ajoutez une fonction pour pouvoir mettre à jour la valeur SKU dans la fenêtre contextuelle ; activez la visibilité de cette dernière en remplaçant la fonction simple créée à l’étape 5 par ce qui suit :
 
    ```xml
    <script type="text/javascript">
@@ -202,12 +202,12 @@ Supposons que vous utilisiez l’exemple de code intégré suivant sur votre pag
    </script>
    ```
 
-1. Téléchargez une page HTML de test sur votre serveur web et ouvrez-la. La visionneuse affiche le séparateur `DIV` de la fenêtre contextuelle lorsqu’un utilisateur appelle un aperçu rapide.
+1. Téléchargez une page HTML de test sur votre serveur Web et ouvrez-la. La visionneuse affiche le séparateur `DIV` de la fenêtre contextuelle lorsqu’un utilisateur appelle un aperçu rapide.
 1. **Affichage de la fenêtre contextuelle personnalisée en mode plein écran**
 
    Certaines visionneuses, comme la visionneuse de vidéos interactives, prennent en charge l’affichage en mode plein écran. Toutefois, l’utilisation de la fenêtre contextuelle comme décrit dans les étapes précédentes provoque l’affichage de celle-ci derrière la visionneuse en mode plein écran.
 
-   Pour que la fenêtre contextuelle puisse s’afficher dans les modes standard et plein écran, vous devez la joindre au conteneur de la visionneuse. Utiliser une deuxième méthode de gestionnaire, `initComplete`.
+   Pour que la fenêtre contextuelle puisse s’afficher dans les modes standard et plein écran, vous devez la joindre au conteneur de la visionneuse. Utilisez une deuxième méthode de gestionnaire, `initComplete`.
 
    Le gestionnaire `initComplete` est appelé après l’initialisation de la visionneuse.
 
@@ -217,10 +217,10 @@ Supposons que vous utilisiez l’exemple de code intégré suivant sur votre pag
 
    Pour en savoir plus sur la méthode `init()`, rendez-vous sur la page suivante :
 
-   * Visionneuse d’images interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=fr)
-   * Visionneuse vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=fr)
+   * Visionneuse d’images interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=fr?lang=fr](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-init.html?lang=fr)
+   * Visionneuse vidéo interactive : [https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=fr](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-init.html?lang=fr)
 
-1. Pour associer la fenêtre contextuelle décrite dans les étapes précédentes à la visionneuse, utilisez le code suivant :
+1. Pour associer la fenêtre contextuelle (décrite dans les étapes précédentes) à la visionneuse, utilisez le code suivant :
 
    ```xml
    "initComplete":function() {
@@ -232,14 +232,14 @@ Supposons que vous utilisiez l’exemple de code intégré suivant sur votre pag
    }
    ```
 
-   Dans le code ci-dessus, les opérations suivantes ont été effectuées :
+   Dans le code ci-dessus, les opérations suivantes ont été effectuées :
 
-   * Identification de la fenêtre contextuelle personnalisée.
+   * Identification de la fenêtre contextuelle personnalisée
    * Suppression de celle-ci du DOM.
    * Identification du conteneur de la visionneuse.
    * Association de la fenêtre contextuelle au conteneur de la visionneuse.
 
-1. L’intégralité du code setHandlers ressemble à ce qui suit (la visionneuse de vidéo interactive a été utilisée) :
+1. Votre code complet de setHandlers ressemble à ceci (la visionneuse de vidéo interactive a été utilisée) :
 
    ```xml
    s7interactivevideoviewer.setHandlers({

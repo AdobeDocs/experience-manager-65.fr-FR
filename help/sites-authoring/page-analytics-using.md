@@ -85,10 +85,10 @@ Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir d
 
    ![](do-not-localize/chlimage_1-14.png)
 
-## Les données d’analyse sont visibles dans l’éditeur de page (carte d’activité) {#analytics-visible-from-the-page-editor-activity-map}
+## Les données d’analyse sont visibles dans l’éditeur de page (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [plug-in ActivityMap fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.
+>Le [plug-in Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.

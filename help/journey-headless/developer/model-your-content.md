@@ -5,7 +5,7 @@ exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Dans cette partie du [Parcours de développement découplé AEM](overview.md), v
 
 ## Un peu d’histoire...  {#story-so-far}
 
-Pour commencer, la section [En savoir plus sur le développement CMS découplé](learn-about.md) a décrit la diffusion de contenu en mode découplé et les raisons justifiant son utilisation. Alors [Prise en main d’AEM sans affichage](getting-started.md) décrit AEM sans affichage dans le contexte de votre propre projet.
+Pour commencer, la section [En savoir plus sur le développement CMS découplé](learn-about.md) a décrit la diffusion de contenu en mode découplé et les raisons justifiant son utilisation. Continuez avec la section [Prise en main d’AEM découplé](getting-started.md) qui décrit le découplage AEM dans le contexte de votre propre projet.
 
 Dans le document précédent du parcours découplé AEM, [Premiers pas vers votre première expérience d’utilisation du découplage AEM](path-to-first-experience.md), vous avez découvert les étapes nécessaires à la mise en œuvre de votre premier projet. Après l’avoir lu, vous devriez :
 

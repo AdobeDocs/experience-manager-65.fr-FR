@@ -1,17 +1,17 @@
 ---
 title: Parcours de création de contenu découplé AEM
-description: Cette section présente les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager et explique comment créer du contenu pour votre projet.
+description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment créer du contenu pour votre projet.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Création en découplage avec AEM - Introduction {#author-headless-introduction}
 
-Dans cette partie du [Parcours de création de contenu découplé AEM](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la création de contenu pour une diffusion de contenu découplé avec Adobe Experience Manager (AEM).
+Dans cette partie du [Parcours de création de contenu découplé AEM](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la création de contenu pour une diffusion de contenu découplé avec Adobe Experience Manager (AEM).
 
 ## Objectif {#objective}
 

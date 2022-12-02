@@ -10,7 +10,7 @@ exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 72%
 
 >[!IMPORTANT]
 >
->Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité ; comme le RGPD, le CCPA, etc.
+>Le RGPD est utilisé comme exemple dans les sections ci-dessous, mais les détails couverts sont applicables à toutes les réglementations de protection des données et de confidentialité, comme le RGPD, le CCPA, etc.
 
-## Prise en charge du RGPD par AEM Foundation {#aem-foundation-gdpr-support}
+## Prise en charge du RGPD par AEM Foundation {#aem-foundation-gdpr-support}
 
-Au niveau de AEM Foundation, les données personnelles stockées sont le profil utilisateur. Par conséquent, les informations fournies dans cet article expliquent principalement comment accéder à ces profils utilisateur et les supprimer pour répondre respectivement aux demandes d’accès et de suppression dans le cadre du RGPD.
+En ce qui concerne AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Par conséquent, les informations fournies dans cet article expliquent principalement comment accéder à ces profils utilisateur et les supprimer pour répondre respectivement aux demandes d’accès et de suppression dans le cadre du RGPD.
 
 ## Accès à un profil utilisateur {#accessing-a-user-profile}
 
 ### Étapes manuelles {#manual-steps}
 
-1. Ouvrez la console Administration utilisateur en accédant à **[!UICONTROL Paramètres - Sécurité - Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Ouvrez la console d’administration des utilisateurs en accédant à **[!UICONTROL Paramètres – Sécurité – Utilisateurs]** ou en accédant directement à `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`.
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -61,7 +61,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 *Récupération des données utilisateur*
 
-Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande ci-dessus :
+Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -86,30 +86,30 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   L’interface utilisateur indique alors que l’utilisateur a été désactivé en grisant et en ajoutant un verrou à la carte de profil :
+   L’interface utilisateur indique alors que l’utilisateur a été désactivé en grisant la carte de profil et en y ajoutant un cadenas :
 
    ![disableduser](assets/disableduser.png)
 
 ### Suppression des informations d’un profil utilisateur {#delete-user-profile-information}
 
-1. Connectez-vous à CRXDE Lite, puis recherchez le `[!UICONTROL userId]`:
+1. Connectez-vous à CRXDE Lite, puis recherchez l’`[!UICONTROL userId]` :
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Ouvrez le noeud utilisateur situé sous `[!UICONTROL /home/users]` par défaut :
+1. Ouvrez le nœud de l’utilisateur qui se trouve sous `[!UICONTROL /home/users]` par défaut :
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. Supprimez les nœuds de profil et tous leurs enfants. Il existe deux formats de nœuds de profil, selon la version d’AEM :
 
    1. Le profil privé par défaut sous `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, pour les nouveaux profils créés à l’aide d’AEM 6.5.
+   1. `[!UICONTROL /profiles]`, pour les nouveaux profils créés à l’aide d’AEM 6.5
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### API HTTP  {#http-api-1}
 
-Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’utilisateur **[!UICONTROL cavery]** `userId` et supprimer ses profils disponibles à l’emplacement par défaut.
+Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’`userId` **[!UICONTROL cavery]** et supprimer ses profils disponibles à l’emplacement par défaut.
 
 * *Découverte du répertoire de base (home) de l’utilisateur*
 

@@ -71,7 +71,7 @@ Dans AEM, le chemin d’accès de base est `/content/  cq   :tags` et le nœud r
 
 ### Espace de noms des balises {#tag-namespace}
 
-Les espaces de noms permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site( Web) (par exemple, public, interne ou sur portail) ou par grande application (par exemple la gestion de contenu Web, ou Assets, Communities), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
+Les espaces de noms permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site (Web) (par exemple, public, interne ou sur portail) ou par grande application (par exemple la gestion de contenu Web, ou Assets, Communities), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
 
 L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie](#taxonomy-root-node). Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
 
@@ -103,7 +103,7 @@ Le tableau ci-dessous présente quelques exemples d’ID de balise, les élémen
    <td><strong>ID local</strong></td>
    <td><strong>Balise(s) conteneur(s)</strong></td>
    <td><strong>Balise feuille</strong></td>
-   <td><strong>Chemin d’accès absolu<br />aux balises du référentiel</strong></td>
+   <td><strong>Chemin d’accès absolu<br /> aux balises du référentiel</strong></td>
   </tr>
   <tr>
    <td>dam:fruit/apple/braeburn</td>

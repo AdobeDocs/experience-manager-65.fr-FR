@@ -1,7 +1,7 @@
 ---
 title: Configuration d’OSGi
 seo-title: Configuring OSGi
-description: Le framework OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration. Cet article détaille le mode de gestion des paramètres de configuration de ces lots.
+description: Le framework OSGi est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration. Cet article détaille le mode de gestion des paramètres de configuration de ces lots.
 seo-description: OSGi is a fundamental element in the technology stack of Adobe Experience Manager (AEM). It is used to control the composite bundles of AEM and their configuration. This article details how you can manage the configuration settings for such bundles.
 uuid: b39059a5-dd61-486a-869a-0d7a732c3a47
 contentOwner: User
@@ -14,33 +14,33 @@ exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1971'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
 # Configuration d’OSGi{#configuring-osgi}
 
-Le framework [OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
+Le framework [OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leur configuration.
 
-OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés*&quot;.
+OSGi « *fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants, réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés* ».
 
-Cela permet une gestion conviviale des lots , car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (voir la [spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots.
+Cela permet une gestion conviviale des lots car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots.
 
 Vous pouvez gérer les paramètres de configuration de ces lots en :
 
 * utilisant la [console web Adobe CQ](#osgi-configuration-with-the-web-console) ;
 * utilisant les [fichiers de configuration](#osgi-configuration-with-configuration-files) ;
-* configuration [content-nodes ( `sling:OsgiConfig`) dans le référentiel](#osgi-configuration-in-the-repository)
+* configurant les [content-nodes (`sling:OsgiConfig`) dans le référentiel](#osgi-configuration-in-the-repository).
 
 L’une ou l’autre des méthodes peut être utilisée bien qu’il existe des différences subtiles, principalement en relation avec les [modes d’exécution](/help/sites-deploying/configure-runmodes.md) :
 
-* [Console web Adobe CQ](#osgi-configuration-with-the-web-console)
+* [Console Web Adobe CQ](#osgi-configuration-with-the-web-console)
 
    * La console web est l’interface standard pour la configuration OSGi. Elle fournit une interface utilisateur, permettant de modifier les différentes propriétés, dans laquelle vous pouvez sélectionner des valeurs à partir de listes prédéfinies.
 
       De ce fait, il s’agit de la méthode la plus simple à utiliser.
 
-   * Toutes les configurations effectuées avec la console web sont appliquées immédiatement et s’appliquent à l’instance en cours, quel que soit le mode d’exécution en cours ou toute modification ultérieure du mode d’exécution.
+   * Toutes les configurations effectuées avec la console Web sont appliquées immédiatement et s’appliquent à l’instance en cours, quel que soit le mode d’exécution en cours ou toute modification ultérieure du mode d’exécution.
 
 * [fichiers de configuration](#osgi-configuration-with-configuration-files)
 
@@ -50,7 +50,7 @@ L’une ou l’autre des méthodes peut être utilisée bien qu’il existe des 
 * [content-nodes (sling:osgiConfig) du référentiel](#osgi-configuration-in-the-repository)
 
    * Nécessite une configuration manuelle à l’aide de CRXDE Lite.
-   * En raison des conventions de dénomination des nœuds `sling:OsgiConfig`, vous pouvez lier la configuration à un [mode d’exécution](/help/sites-deploying/configure-runmodes.md) spécifique. Vous pouvez même enregistrer des configurations pour plusieurs modes d’exécution dans le même référentiel.
+   * En raison des conventions de nommage des nœuds `sling:OsgiConfig`, vous pouvez lier la configuration à un [mode d’exécution](/help/sites-deploying/configure-runmodes.md) spécifique. Vous pouvez même enregistrer des configurations pour plusieurs modes d’exécution dans le même référentiel.
    * Toutes les configurations appropriées sont appliquées immédiatement (en fonction du mode d’exécution).
 
 Quelle que soit la méthode utilisée, toutes ces méthodes de configuration :
@@ -72,7 +72,7 @@ Toute modification apportée est immédiatement appliquée à la configuration 
 
 >[!NOTE]
 >
->Les modifications apportées dans la console web sont enregistrées dans le référentiel en tant que [fichiers de configuration](#osgi-configuration-with-configuration-files). Ceux-ci peuvent être inclus dans les modules de contenu pour être réutilisés dans d’autres installations.
+>Les modifications apportées dans la console Web sont enregistrées dans le référentiel sous la forme de [fichiers de configuration](#osgi-configuration-with-configuration-files). Ceux-ci peuvent être inclus dans les modules de contenu pour être réutilisés dans d’autres installations.
 
 >[!NOTE]
 >
@@ -84,11 +84,11 @@ Pour mettre à jour une configuration avec la console web :
 
 1. Accédez à l’onglet **Configuration** de la console web en :
 
-   * Ouvrant la console web à partir du lien du menu **Outil -> Opérations**. Une fois connecté à la console, vous pouvez utiliser le menu déroulant de :
+   * Ouvrant la console web à partir du lien du menu **Outil -> Opérations**. Après vous être connecté à la console, vous pouvez utiliser le menu déroulant :
 
       **OSGi >**
 
-   * L’URL directe ; par exemple :
+   * L’URL directe ; par exemple :
 
       `http://localhost:4502/system/console/configMgr`
    Une liste s’affiche.
@@ -104,7 +104,7 @@ Pour mettre à jour une configuration avec la console web :
 
    >[!NOTE]
    >
-   >Les mises à jour sont enregistrées dans le référentiel sous la forme de [fichiers de configuration](#osgi-configuration-with-configuration-files). Pour les localiser ultérieurement (par exemple, pour inclure dans un module de contenu à utiliser sur une autre instance), vous devez prendre note de l’identité persistante ( `PID`).
+   >Les mises à jour sont enregistrées dans le référentiel sous la forme de [fichiers de configuration](#osgi-configuration-with-configuration-files). Pour les localiser par la suite (par exemple, pour les inclure dans un module de contenu pour une utilisation dans une autre instance), vous devez prendre note de l’identité persistante (`PID`).
 
 1. Cliquez sur **Enregistrer**.
 
@@ -112,11 +112,11 @@ Pour mettre à jour une configuration avec la console web :
 
    >[!NOTE]
    >
-   >Vous pouvez désormais localiser le [fichier(s) de configuration](#osgi-configuration-with-configuration-files); par exemple, pour inclure dans un module de contenu en vue de l’utiliser sur une autre instance.
+   >Vous pouvez maintenant localiser le(s) [fichier(s) de configuration](#osgi-configuration-with-configuration-files) associé(s) ; à inclure par exemple dans un module de contenu pour une utilisation dans une autre instance.
 
 ## Configuration OSGi avec les fichiers de configuration {#osgi-configuration-with-configuration-files}
 
-Les modifications de configuration effectuées à l’aide de la console web sont conservées dans le référentiel sous forme de fichiers de configuration ( `.config`) sous :
+Les modifications de configuration effectuées à l’aide de la console Web sont conservées dans le référentiel en tant que fichiers de configuration (`.config`) sous :
 
 `/apps`
 
@@ -124,7 +124,7 @@ Ces fichiers peuvent être inclus dans des modules de contenu et réutilisés da
 
 >[!NOTE]
 >
->Le format des fichiers de configuration est très spécifique. Pour plus d’informations, voir la [ documentation de Sling Apache.](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format)
+>Le format des fichiers de configuration est très spécifique. Pour plus d’informations, consultez la [documentation de Sling Apache.](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format)
 >
 >Pour cette raison, il est recommandé de créer et de mettre à jour le fichier de configuration en effectuant des modifications réelles dans la console web.
 
@@ -163,11 +163,11 @@ Outre l’utilisation de la console web, vous pouvez également définir des dé
 
 Vous réalisez ces configurations en créant des nœuds `sling:OsgiConfig` dans le référentiel à titre de références dans le système. Ces nœuds reflètent les configurations OSGi et forment une interface utilisateur permettant d’y accéder. Pour mettre à jour les données de configuration, mettez à jour les propriétés du nœud.
 
-Si vous modifiez les données de configuration dans le référentiel, les modifications sont immédiatement appliquées à la configuration OSGi appropriée, comme si les modifications avaient été effectuées à l’aide de la console web, avec les vérifications de validation et de cohérence adéquates. Cela s’applique également à l’action de copie d’une configuration à partir de `/libs/` to `/apps/`.
+Si vous modifiez les données de configuration dans le référentiel, les modifications sont immédiatement appliquées à la configuration OSGi appropriée, comme si les modifications avaient été effectuées à l’aide de la console web, avec les vérifications de validation et de cohérence adéquates. Cela s’applique également à l’action de copie d’une configuration à partir de `/libs/` vers `/apps/`.
 
 Comme le même paramètre de configuration peut être situé à plusieurs endroits, le système :
 
-* recherche tous les noeuds de type `sling:OsgiConfig`
+* recherche tous les nœuds de type `sling:OsgiConfig` ;
 * filtre selon le nom du service ;
 * filtre selon le mode d’exécution.
 
@@ -181,32 +181,32 @@ Comme le même paramètre de configuration peut être situé à plusieurs endroi
 
 Pour ajouter une nouvelle configuration au référentiel, vous devez connaître ou savoir ce qui suit :
 
-1. Le **Identité persistante** (PID) du service.
+1. L’**identité persistante** (PID) du service.
 
-   Référencez la variable **Configurations** dans la console Web. Le nom est indiqué entre parenthèses après le nom du lot (ou dans la variable **Informations de configuration** en bas de la page).
+   Référencez le champ **Configurations** dans la console Web. Le nom est indiqué entre parenthèses après le nom du lot (ou dans les **Informations de configuration** vers le bas de la page).
 
-   Par exemple, créez un noeud `com.day.cq.wcm.core.impl.VersionManagerImpl.` pour configurer **AEM WCM Version Manager**.
+   Par exemple, créez un nœud `com.day.cq.wcm.core.impl.VersionManagerImpl.` pour configurer le **Gestionnaire de versions de gestion de contenu Web d’AEM**.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. Si une variable [mode d’exécution](/help/sites-deploying/configure-runmodes.md) est obligatoire. Créez le dossier:
+1. Si un [mode d’exécution](/help/sites-deploying/configure-runmodes.md) spécifique est requis. Créez le dossier :
 
-   * `config` - pour tous les modes d’exécution
-   * `config.author` - pour l’environnement de création
-   * `config.publish` - pour l’environnement de publication
-   * `config.<run-mode>` - selon le cas
+   * `config` : pour tous les modes d’exécution.
+   * `config.author` : pour l’environnement de création
+   * `config.publish` : pour l’environnement de publication
+   * `config.<run-mode>` - En fonction des besoins
 
-1. Si **Configuration** ou **Configuration d’usine** est nécessaire.
-1. Les paramètres individuels à configurer y compris les définitions de paramètres existantes qui devront être recréées.
+1. Si une **Configuration** ou une **Configuration d’usine** est requise.
+1. Les paramètres à configurer individuellement, y compris les définitions de paramètres existantes qui devront être recréées.
 
-   Référencez le champ des paramètres individuels dans la console web. Le nom s’affiche entre parenthèses pour chaque paramètre.
+   Référencez le champ des paramètres individuels dans la console Web. Le nom s’affiche entre parenthèses pour chaque paramètre.
 
-   Par exemple, créez une propriété .
+   Par exemple, créez une propriété 
    `versionmanager.createVersionOnActivation` pour configurer **Créer une version lors de l’activation**.
 
    ![chlimage_1-142](assets/chlimage_1-142.png)
 
-1. Une configuration existe-t-elle déjà dans `/libs`? Pour répertorier toutes les configurations de votre instance, utilisez la méthode **Requête** dans CRXDE Lite pour envoyer la requête SQL suivante :
+1. Une configuration existe-t-elle déjà dans `/libs` ? Pour répertorier toutes les configurations de votre instance, utilisez l’outil **Requête** de CRXDE Lite pour envoyer la requête SQL suivante :
 
    `select * from sling:OsgiConfig`
 
@@ -220,31 +220,31 @@ Pour ajouter la nouvelle configuration au référentiel :
 
    ` /apps/<yourProject>`
 
-1. Si ce n’est pas déjà fait, créez la variable `config` folder ( `sling:Folder`) :
+1. S’il n’existe pas déjà, créez le dossier `config` (`sling:Folder`) :
 
    * `config` : applicable à tous les modes d’exécution
-   * `config.<run-mode>` - spécifique à un mode d’exécution spécifique
+   * `config.<run-mode>` : spécifique à un mode d’exécution
 
 1. Sous ce dossier; créez un nœud :
 
    * Type : `sling:OsgiConfig`
-   * Nom : l’identité persistante (PID) ;
+   * Nom : l’identité persistante (PID) ;
 
-      Par exemple, pour AEM WCM Version Manager, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      par exemple, pour le Gestionnaire de versions de gestion de contenu Web d’AEM, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`.
    >[!NOTE]
    >
-   >Lors de l’ajout d’une configuration d’usine `-<identifier>` au nom.
+   >Lors de la configuration d’usine, ajoutez `-<identifier>` au nom.
    >
-   >Comme dans : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   >Comme dans : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >Où `<identifier>` est remplacé par du texte libre que vous devez entrer pour identifier l’instance (vous ne pouvez pas omettre cette information) ; par exemple :
+   >Où `<identifier>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information) ; par exemple :
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. Pour chaque paramètre que vous souhaitez configurer, créez une propriété sur ce nœud :
 
-   * Nom : nom du paramètre tel qu’il apparaît dans la console web. Il est indiqué entre parenthèses à la fin de la description du champ. Par exemple, pour `Create Version on Activation` use `versionmanager.createVersionOnActivation`
-   * Type : selon le cas.
+   * Nom : nom du paramètre tel qu’il apparaît dans la console web. Il est indiqué entre parenthèses à la fin de la description du champ. Par exemple, pour `Create Version on Activation`, utilisez `versionmanager.createVersionOnActivation`.
+   * Type : selon les cas.
    * Valeur : selon les besoins.
 
    Il vous suffit de créer des propriétés pour les paramètres que vous voulez configurer. Les autres prendront toujours les valeurs par défaut définies par AEM.
@@ -267,13 +267,13 @@ Pour ajouter la nouvelle configuration au référentiel :
 
 L’ordre de priorité suivant est utilisé :
 
-1. Noeuds de référentiel sous `/apps/*/config...`.ou de type `sling:OsgiConfig` ou des fichiers de propriétés.
+1. Nœuds de référentiel sous `/apps/*/config...`, que ce soit avec le type `sling:OsgiConfig` ou les fichiers de propriété.
 
-1. Noeuds de référentiel de type `sling:OsgiConfig` under `/libs/*/config...`. (définitions prêtes à l’emploi).
+1. Nœuds de référentiel avec le type `sling:OsgiConfig` sous `/libs/*/config...`. (définitions prêtes à l’emploi).
 
-1. Quelconque `.config` fichiers provenant de `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. sur le système de fichiers local.
+1. Tout fichier `.config` provenant de `<*cq-installation-dir*>/crx-quickstart/launchpad/config/...`. sur le système de fichiers local.
 
-Cela signifie qu’une configuration générique dans `/libs` peut être masqué par une configuration spécifique à un projet dans `/apps`.
+Cela signifie qu’une configuration générique dans `/libs` peut être masquée par la configuration spécifique à un projet dans `/apps`.
 
 ### Séquence de résolution lors de l’exécution {#resolution-order-at-runtime}
 
@@ -282,8 +282,8 @@ Les modifications de la configuration apportées pendant l’exécution du syst�
 Puis, l’ordre de priorité suivant s’applique :
 
 1. La modification d’une configuration dans la console web prend effet immédiatement car elle a priorité lors de l’exécution.
-1. Modification d’une configuration dans `/apps` entrera en vigueur immédiatement.
-1. Modification d’une configuration dans `/libs` prend effet immédiatement, sauf si une configuration dans `/apps`.
+1. La modification d’une configuration dans `/apps` prend effet immédiatement.
+1. La modification d’une configuration dans `/libs` prend effet immédiatement, à moins qu’elle ne soit masquée par une configuration dans `/apps`.
 
 ### Résolution de plusieurs modes d’exécution {#resolution-of-multiple-run-modes}
 
@@ -293,36 +293,35 @@ Pour les configurations spécifiques au mode d’exécution, plusieurs modes d�
 
 Les configurations de ces dossiers sont appliquées si tous les modes d’exécution correspondent à un mode d’exécution défini au démarrage.
 
-Par exemple, si une instance a été lancée avec les modes d’exécution `author,dev,emea`, noeuds de configuration dans `/apps/*/config.emea`, `/apps/*/config.author.dev/` et `/apps/*/config.author.emea.dev/` s’applique, tandis que les noeuds de configuration dans `/apps/*/config.author.asean/` et `/config/author.dev.emea.noldap/` ne sera pas appliquée.
+Par exemple, si une instance a été démarrée avec les modes d’exécution `author,dev,emea`, les nœuds de configuration dans `/apps/*/config.emea`, `/apps/*/config.author.dev/` et `/apps/*/config.author.emea.dev/` seront appliqués, tandis que les nœuds d’application dans `/apps/*/config.author.asean/` et `/config/author.dev.emea.noldap/` ne sont pas appliqués.
 
 Si plusieurs configurations correspondant au même PID sont applicables, la configuration comportant le nombre le plus élevé de modes d’exécution correspondants est appliquée.
 
-Par exemple, si une instance a été lancée avec les modes d’exécution `author,dev,emea`, et les deux `/apps/*/config.author/` et `/apps/*/config.emea.author/` définir une configuration pour
-`com.day.cq.wcm.core.impl.VersionManagerImpl`, la configuration dans `/apps/*/config.emea.author/` sera appliquée.
+Par exemple, si une instance a été démarrée avec les modes d’exécution `author,dev,emea`, et que `/apps/*/config.author/` et `/apps/*/config.emea.author/` définissent une configuration pour `com.day.cq.wcm.core.impl.VersionManagerImpl`, la configuration de `/apps/*/config.emea.author/` est appliquée.
 
 La granularité de cette règle se trouve au niveau du PID.
-Vous ne pouvez pas définir certaines propriétés pour le même PID dans `/apps/*/config.author/` et plus spécifiques dans `/apps/*/config.emea.author/` pour le même PID.
+Vous ne pouvez pas définir certaines propriétés pour le même PID dans `/apps/*/config.author/` et des propriétés plus spécifiques dans `/apps/*/config.emea.author/` pour le même PID.
 La configuration comportant le nombre le plus élevé de modes d’exécution correspondants est effective pour tout le PID.
 
 ### Configurations standard {#standard-configurations}
 
 La liste suivante présente une petite sélection de configurations disponibles dans le référentiel (pour une installation standard) :
 
-* Auteur - AEM filtre WCM :
+* Auteur - Filtre de gestion de contenu Web d’AEM :
 
    `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publier - AEM Filtre WCM :
+* Publication - Filtre de gestion de contenu Web d’AEM :
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publier - Statistiques de page WCM AEM :
+* Publication - Statistiques de page de gestion de contenu Web d’AEM :
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
 >[!NOTE]
 >
->Comme ces configurations résident dans `/libs` ils ne doivent pas être modifiés directement, mais copiés dans votre zone d’application ( `/apps`) avant la personnalisation.
+>Comme ces configurations se trouvent dans `/libs`, elles ne doivent pas être modifiées directement, mais copiées dans votre zone d’application (`/apps`) avant d’être personnalisées.
 
 Pour répertorier tous les nœuds de configuration de votre instance, utilisez la fonctionnalité **Requête** de CRXDE Lite pour envoyer la requête SQL suivante :
 
@@ -330,23 +329,23 @@ Pour répertorier tous les nœuds de configuration de votre instance, utilisez l
 
 ### Persistance de la configuration {#configuration-persistence}
 
-* Si vous modifiez une configuration via la console web, elle est (généralement) écrite dans le référentiel à l’adresse :
+* Si vous modifiez une configuration par l’intermédiaire de la console Web, elle est (généralement) enregistrée dans le référentiel :
 
    `/apps/{somewhere}`
 
-   * Par défaut `{somewhere}` is `system/config` la configuration est donc écrite sur
+   * Par défaut, `{somewhere}` est `system/config`, la configuration est donc enregistrée sur
 
       `/apps/system/config`
 
-   * Cependant, si vous modifiez une configuration qui provient initialement d’un autre emplacement du référentiel : par exemple :
+   * Cependant, si vous modifiez une configuration qui provient initialement d’un autre emplacement du référentiel : par exemple :
 
       /libs/foo/config/someconfig
 
-      La configuration mise à jour est ensuite écrite sous l’emplacement d’origine ; par exemple :
+      La configuration mise à jour est ensuite enregistrée à l’emplacement d’origine ; par exemple :
 
       `/apps/foo/config/someconfig`
 
-* Paramètres modifiés par `admin` sont enregistrés dans `*.config` Fichiers sous :
+* Les paramètres modifiés par `admin` sont enregistrés dans les fichiers `*.config` sous :
 
    ```
       /crx-quickstart/launchpad/config
@@ -356,11 +355,11 @@ Pour répertorier tous les nœuds de configuration de votre instance, utilisez l
    * Il s’agit d’un détail d’implémentation et vous ne devez jamais modifier ce répertoire directement.
    * Cependant, il est utile de connaître l’emplacement de ces fichiers de configuration afin que vous puissiez en effectuer des copies à des fins de sauvegarde et/ou d’installation multiple :
 
-      * Console de gestion OSGi Apache Felix
+      * Console de gestion OSGi Apache Felix
 
          `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * Référentiel client CRX Sling
+      * Référentiel client CRX Sling
 
          `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 

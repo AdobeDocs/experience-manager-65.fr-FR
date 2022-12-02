@@ -14,7 +14,7 @@ exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -24,8 +24,8 @@ AEM vous dote des outils nécessaires pour configurer votre compte ainsi que cer
 
 Les [paramètres du compte](#account-settings) et les [préférences utilisateur](#user-preferences) permettent de définir les options et préférences suivantes :
 
-* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous donne la possibilité de 
-**Copier**, **Couper**, **Coller**, **Supprimer** des boutons utilisables avec les composants de paragraphe sur cette page :
+* **Barre d’outils d’édition** Indiquez si vous souhaitez que la barre d’outils d’édition globale soit visible. Cette barre d’outils, qui s’affiche en haut de la fenêtre du navigateur, vous met à disposition les 
+boutons **Copier**, **Couper**, **Coller**, **Supprimer** utilisables avec les composants de paragraphe sur cette page :
 
    * Afficher lorsque cela s’avère nécessaire (paramètre par défaut)
    * Toujours afficher
@@ -34,7 +34,8 @@ Les [paramètres du compte](#account-settings) et les [préférences utilisateur
 * **Se faire passer pour**
 La fonction [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur de travailler au nom d’un autre.
 
-* **Langue** Langue à utiliser dans l’interface utilisateur de l’environnement de création. Sélectionnez la langue requise dans la liste.
+* **Langue**
+Langue à utiliser dans l’interface utilisateur de l’environnement de création. Sélectionnez la langue requise dans la liste.
 
 * **Gestion des fenêtres**
 Sélectionnez :

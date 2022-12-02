@@ -4,10 +4,10 @@ description: Découvrez comment l’éditeur de fragment de contenu utilise la s
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -99,7 +99,7 @@ Les images de style de référence présentent la syntaxe suivante :
 
     `![Alt text][id]`
 
-Où « id » est le nom d’une référence d’image définie. Les références d’image sont définies à l’aide d’une syntaxe identique à celle des références de lien :
+Où &quot;id&quot; est le nom d’une référence d’image définie. Les références d’image sont définies à l’aide d’une syntaxe identique à celle des références de lien :
 
     `[id]: url/to/image "Optional title attribute"`
 
@@ -129,7 +129,7 @@ Vous pouvez utiliser des blocs de citations imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, insérez le symbole &amp;ast; avant les éléments de la liste. Par exemple :
+Pour créer une liste non ordonnée, insérez le symbole * avant les éléments de la liste. Par exemple :
 
     `* item in list`
 

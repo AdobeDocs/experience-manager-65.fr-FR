@@ -14,7 +14,7 @@ exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ D’autres composants sont également disponibles. Vous pouvez utiliser le mode 
 >
 >Soyez prudent lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges (et de l’expérience) appropriés, généralement un administrateur ou un développeur. Pour plus d’informations, reportez-vous à la section [Développement de composants](/help/sites-developing/components.md).
 
-Cela implique en fait d’ajouter ou de supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
+Pour ce faire, vous devrez en réalité ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Il permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphes. Chaque type de paragraphe est représenté en tant que composant.
 
 Par exemple, le contenu d’une page des produits peut contenir un système de paragraphes avec les éléments suivants :
 
@@ -49,7 +49,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
    ![](do-not-localize/chlimage_1.png)
 
-1. Cliquez sur **Modifier** sur le système Paragraphe (**Conception de paragraphe**).
+1. Cliquez sur **Modifier** dans le système de paragraphes (**Conception de paragraphe**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
@@ -73,7 +73,7 @@ En mode de conception, vous pouvez également configurer des attributs pour les 
 
 1. Vous pouvez configurer la conception des composants.
 
-   Par exemple, si vous cliquez sur **Modifier** sur le composant Image (**Conception d’une image**) vous pouvez configurer les paramètres spécifiques au composant :
+   Par exemple, si vous cliquez sur **Modifier** sur le composant Image (**Conception d’image**), vous pouvez configurer les paramètres spécifiques au composant :
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 

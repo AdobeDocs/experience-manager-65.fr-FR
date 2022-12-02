@@ -5,7 +5,7 @@ exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Alors pourquoi une autre API est-elle nécessaire ?
 
 L’API HTTP Assets vous permet de **Lire** votre contenu, mais elle vous permet également de **Créer**, **Mettre à jour** et **Supprimer** le contenu – des actions qui sont impossibles avec l’API GraphQL.
 
-L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager 
+L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager.
 
 ## API HTTP Assets {#assets-http-api}
 
@@ -54,7 +54,7 @@ L’API HTTP Assets englobe :
 
 L’implémentation actuelle de l’API HTTP Assets repose sur le style architectural **REST** et permet d’accéder au contenu (stocké dans AEM) via les opérations **CRUD** (Create, Read, Update, Delete) pour créer, lire, mettre à jour, supprimer.
 
-Grâce à ces opérations, l’API vous permet d’utiliser Adobe Experience Manager en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications sur une seule page (SPA), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Grâce à ces opérations, l’API permet d’utiliser Adobe Experience Manager en tant que système de gestion de contenu (CMS) découplé en fournissant Content Services à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON. Par exemple, les applications sur une seule page (SPA), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 <!--
 >[!NOTE]
@@ -251,7 +251,7 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 
 >[!CAUTION]
 >
->La configuration du dispatcher sur les instances AEM peut bloquer l’accès à `/api`.
+>La configuration du Dispatcher sur les instances AEM peut bloquer l’accès à `/api`.
 
 >[!NOTE]
 >

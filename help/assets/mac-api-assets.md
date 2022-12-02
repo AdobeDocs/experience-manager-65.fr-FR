@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Assets] API HTTP."'
-description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Adobe Experience Manager Assets].
+title: « API HTTP [!DNL Assets]. »
+description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
@@ -8,7 +8,7 @@ exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1758'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 83%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=en) |
+| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=fr) |
 
 ## Présentation {#overview}
 
@@ -35,7 +35,7 @@ Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne 
 
 >[!CAUTION]
 >
->[L’API HTTP met à jour les propriétés des métadonnées](#update-asset-metadata) dans le `jcr` espace de noms. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans la variable `dc` espace de noms.
+>[L’API HTTP met à jour les propriétés des métadonnées](#update-asset-metadata) dans l’espace de noms `jcr`. Toutefois, l’interface utilisateur d’Experience Manager met à jour les propriétés de métadonnées dans l’espace de noms `dc`.
 
 ## Fragments de contenu {#content-fragments}
 
@@ -72,10 +72,10 @@ Les dossiers **Liens** présentent trois liens :
 
 ### Assets {#assets}
 
-En Experience Manager, une ressource contient les éléments suivants :
+Dans Experience Manager, une ressource contient les éléments suivants :
 
 * Propriétés et métadonnées de la ressource.
-* Plusieurs rendus tels que le rendu d’origine (qui est la ressource chargée initialement), une miniature et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de PDF ou [!DNL Adobe InDesign] fichiers .
+* Plusieurs rendus tels que le rendu d’origine (qui est la ressource chargée initialement), une miniature et divers autres rendus. Les rendus supplémentaires peuvent être des images de tailles différentes, différents codages vidéo ou des pages extraites de fichiers PDF ou [!DNL Adobe InDesign].
 * Commentaires facultatifs.
 
 Pour plus d’informations sur les éléments des fragments de contenu, voir [Prise en charge de fragments de contenu dans l’API HTTP Experience Manager Assets](/help/assets/assets-api-content-fragments.md#content-fragments).
@@ -90,8 +90,8 @@ L’API HTTP d’[!DNL Assets] offre les fonctionnalités suivantes :
 
 * [Récupérer une liste de dossiers](#retrieve-a-folder-listing)
 * [Créer un dossier](#create-a-folder)
-* [Créer une ressource](#create-an-asset).
-* [Mettre à jour le fichier binaire d’une ressource](#update-asset-binary).
+* [Créer une ressource](#create-an-asset)
+* [Mettre à jour le fichier binaire d’une ressource](#update-asset-binary)
 * [Mettre à jour les métadonnées d’une ressource](#update-asset-metadata)
 * [Créer un rendu de ressource](#create-an-asset-rendition)
 * [Mettre à jour un rendu de ressource](#update-an-asset-rendition)
@@ -107,8 +107,8 @@ L’API HTTP d’[!DNL Assets] offre les fonctionnalités suivantes :
 **Conditions préalables**
 
 * Accédez à l’adresse `https://[aem_server]:[port]/system/console/configMgr`.
-* Accédez à **[!UICONTROL Adobe du filtre CSRF Granite]**.
-* Assurez-vous que la propriété **[!UICONTROL Méthodes de filtre]** inclut : `POST`, `PUT`, `DELETE`.
+* Accédez au **[!UICONTROL Filtre CSRF Adobe Granite]**.
+* Assurez-vous que la propriété **[!UICONTROL Méthodes de filtrage]** inclut : `POST`, `PUT`, `DELETE`.
 
 ## Récupérer une liste de dossiers {#retrieve-a-folder-listing}
 
@@ -146,9 +146,9 @@ Un appel d’API échoue avec un code de réponse `500` si le nœud parent du ch
 
 ## Créer une ressource  {#create-an-asset}
 
-Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel DAM. Si une `*` est fourni à la place d’un nom de noeud, le servlet utilise le nom du paramètre ou le nom du fichier comme nom de noeud.
+Placez le fichier fourni à l’emplacement indiqué pour créer une ressource dans le référentiel de gestion des ressources numériques. Si un astérisque `*` est indiqué au lieu d’un nom de nœud, le servlet utilise le nom du paramètre ou du fichier comme nom de nœud.
 
-**Paramètres**: Les paramètres sont les suivants : `name` pour le nom de la ressource et `file` pour la référence au fichier.
+**Paramètres** : les paramètres sont `name` pour le nom de la ressource et `file` pour la référence au fichier.
 
 **Requête**
 
@@ -157,14 +157,14 @@ Placez le fichier fourni à l’emplacement indiqué pour créer une ressource d
 
 **Codes de réponse** : les codes de réponse sont les suivants :
 
-* 201 - CRÉÉ - si la ressource a été créée avec succès.
-* 409 - CONFLIT - si Asset existe déjà.
+* 201 – CRÉÉ – Si la ressource a été créée avec succès.
+* 409 – CONFLIT – Si une ressource existe déjà.
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
 ## Mettre à jour un fichier binaire de ressource {#update-asset-binary}
 
-Met à jour le binaire d’une ressource (rendu portant le nom original). Une mise à jour déclenche l’exécution du workflow de traitement des ressources par défaut, s’il est configuré.
+Met à jour un fichier binaire de ressource (rendu avec le nom d’origine). La mise à jour déclenche l’exécution du workflow de traitement des ressources par défaut, s’il est configuré.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -177,7 +177,7 @@ Met à jour le binaire d’une ressource (rendu portant le nom original). Une mi
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
-Met à jour les propriétés de métadonnées de la ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux namespaces.
+Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux namespaces.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
@@ -188,9 +188,9 @@ Met à jour les propriétés de métadonnées de la ressource. Si vous mettez à
 * 412 – ÉCHEC DE LA PRÉCONDITION – si la collection racine est introuvable ou inaccessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-### Mise à jour des métadonnées de synchronisation entre `dc` et `jcr` namespace {#sync-metadata-between-namespaces}
+### Mise à jour des métadonnées de synchronisation entre l’espace de noms `dc` et `jcr` {#sync-metadata-between-namespaces}
 
-La méthode API met à jour les propriétés de métadonnées dans la variable `jcr` espace de noms. Les mises à jour effectuées à l’aide de l’interface utilisateur modifient les propriétés de métadonnées dans la variable `dc` espace de noms. Pour synchroniser les valeurs des métadonnées entre `dc` et `jcr` , vous pouvez créer un workflow et configurer Experience Manager pour exécuter le workflow lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
+La méthode API met à jour les propriétés de métadonnées dans l’espace de noms `jcr`. Les mises à jour effectuées à l’aide de l’interface utilisateur modifient les propriétés de métadonnées dans l’espace de noms `dc`. Pour synchroniser les valeurs des métadonnées entre l’espace de noms `dc` et `jcr`, vous pouvez créer un workflow et configurer Experience Manager pour exécuter le workflow lors de la modification des ressources. Utilisez un script ECMA pour synchroniser les propriétés de métadonnées requises. L’exemple de script suivant synchronise la chaîne de titre entre `dc:title` et `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -286,7 +286,7 @@ Déplace un dossier ou une ressource de l’emplacement indiqué vers une nouvel
 
 **Requête** : `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-Ne pas utiliser `/content/dam` dans l’URL. Voici un exemple de commande permettant de déplacer des ressources et de remplacer des ressources existantes :
+N’utilisez pas `/content/dam` dans l’URL. Voici un exemple de commande permettant de déplacer des ressources et de remplacer des ressources existantes :
 
 ```shell
 curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: https://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
@@ -317,6 +317,6 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 ## Conseils et restrictions {#tips-best-practices-limitations}
 
-* [L’API HTTP met à jour les propriétés des métadonnées](#update-asset-metadata) dans le `jcr` espace de noms. Toutefois, l’interface utilisateur du Experience Manager met à jour les propriétés de métadonnées dans la variable `dc` espace de noms.
+* [L’API HTTP met à jour les propriétés des métadonnées](#update-asset-metadata) dans l’espace de noms `jcr`. Toutefois, l’interface utilisateur d’Experience Manager met à jour les propriétés de métadonnées dans l’espace de noms `dc`.
 
 * L’API HTTP Assets ne renvoie pas les métadonnées complètes. Les espaces de noms sont codés en dur et seuls ces espaces de noms sont renvoyés. Pour obtenir des métadonnées complètes, consultez le chemin d’accès à la ressource `/jcr_content/metadata.json`.

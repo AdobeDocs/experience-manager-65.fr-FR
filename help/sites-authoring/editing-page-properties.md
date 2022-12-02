@@ -195,7 +195,7 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 * **Partage sur les réseaux sociaux**
 
-   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://helpx.adobe.com/experience-manager/core-components/using/sharing.html).
+   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://helpx.adobe.com/fr/experience-manager/core-components/using/sharing.html).
 
    * **Activer le partage utilisateur pour Facebook**
    * **Activer le partage utilisateur pour Pinterest**
@@ -271,7 +271,7 @@ Vous pouvez définir des propriétés de page :
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
 
-* À partir de l’éditeur de page:
+* À partir de l’éditeur de page :
 
    * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 

@@ -16,7 +16,7 @@ exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2192'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -31,31 +31,31 @@ En planifiant une mise à niveau, les parties suivantes de l’implémentation d
 
 ## Présentation {#overview}
 
-1. **Outil de détection des motifs** - Exécutez le détecteur de motifs comme décrit dans la planification de la mise à niveau et décrit en détail [cette page](/help/sites-deploying/pattern-detector.md) pour obtenir un rapport de détecteur de motifs qui contient plus de détails sur les zones qui doivent être traitées en plus des API/bundles indisponibles dans la version cible d’AEM. Le rapport Détection des motifs doit vous donner une indication des incompatibilités de votre code. S’il n’en existe aucune, votre déploiement est déjà compatible avec la version 6.5, vous pouvez tout de même choisir d’effectuer un nouveau développement pour utiliser la fonctionnalité 6.5, mais vous n’en avez pas besoin uniquement pour des raisons de compatibilité. Si des incompatibilités sont signalées, vous pouvez choisir : a) S’exécuter en mode de compatibilité et différer votre développement pour de nouvelles fonctionnalités ou compatibilité, b) Décider de procéder au développement après la mise à niveau, puis passer à l’étape 2. Veuillez consulter [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) pour plus d’informations.
+1. **Outil de détection des motifs** : exécutez l’outil de détection des motifs comme indiqué dans la planification de la mise à niveau et dans la description détaillée sur [cette page](/help/sites-deploying/pattern-detector.md) pour générer un rapport de détection des motifs contenant des informations plus détaillées sur les points à examiner, en plus des API/lots indisponibles dans la version cible d’AEM. Le rapport de détection des motifs doit vous donner une indication quant aux éventuelles incompatibilités de votre code. En l’absence d’incompatibilités, votre déploiement est déjà compatible avec la version 6.5. Vous pouvez toujours choisir de procéder à un nouveau déploiement pour utiliser les fonctionnalités de la version 6.5, mais vous n’en avez pas besoin simplement pour des questions de compatibilité. S’il est fait état d’incompatibilités, vous pouvez soit a) Lancer l’exécution en mode de compatibilité et différer l’intégration des nouvelles fonctionnalités de la version 6.5 ou de sa compatibilité, soit b) Décider de procéder au développement après la mise à niveau, et passer à l’étape 2. Pour plus d’informations, consultez la section [Compatibilité descendante dans AEM 6.5.](/help/sites-deploying/backward-compatibility.md)
 
-1. **Développement de la base de code pour la version 6.5 **- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
-1. **Compilation avec 6.5 Uber jar **- Mettez à jour les POM de la base de code pour pointer vers 6.5 Uber jar et compilez le code à cet effet.
-1. **Mise à jour AEM personnalisations*** - *Toutes les personnalisations ou extensions à AEM doivent être mises à jour/validées pour fonctionner dans la version 6.5 et ajoutées à la base de code 6.5. Comprend des formulaires de recherche d’interface utilisateur, des personnalisations de ressources, tout élément utilisant /mnt/overlay
+1. **Développement de la base de code pour la version 6.5**- Créez une branche ou un référentiel dédié à la base de code pour la version cible. Utilisez les informations de la compatibilité avant la mise à niveau pour prévoir les zones de code à mettre à jour.
+1. **Compilation avec 6.5 Uber jar** - Mettez à jour les POM de la base de code pour pointer vers 6.5 Uber jar et compilez le code par rapport à cette opération.
+1. **Mise à jour de la personnalisation d’AEM***- *Toutes les personnalisations ou les extensions dans AEM doivent être mises à jour/validées pour fonctionner dans la version 6.5 et être ajoutées à la base de code 6.5. Comprend des formulaires de recherche d’interface utilisateur, des personnalisations de ressources, tout élément utilisant /mnt/overlay.
 
-1. **Déploiement dans l’environnement 6.5** - Une instance propre d’AEM 6.5 (auteur + publication) doit être créée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de la production actuelle) doivent être déployés.
-1. **Validation de l’assurance qualité et correction de bogues** - Le contrôle qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.5. Tous les bogues détectés doivent être corrigés et validés dans la base de code 6.5. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
+1. **Déploiement vers l’environnement 6.5** - Une instance AEM 6.5 nette (auteur + publication) doit être conservée dans un environnement Dev/QA. La base de code à jour et un échantillon représentatif de contenu (de l’exploitation actuelle) doivent être déployés.
+1. **Validation du contrôle qualité et correction des bogues** - Le contrôle qualité doit valider l’application sur les instances d’auteur et de publication de la version 6.5. Tous les problèmes détectés doivent être corrigés et intégrés dans la base de code 6.5. Répétez le cycle de développement autant de fois que nécessaire jusqu’à ce que tous les problèmes soient corrigés.
 
 Avant d’effectuer une mise à niveau, vous devez disposer d’une base stable de code d’application qui a été complètement testée par rapport à la version cible d’AEM. En fonction des observations effectuées durant le test, il existe des façons d’optimiser le code personnalisé. Cela peut inclure la restructuration du code pour éviter de parcourir le référentiel, l’indexation personnalisée pour optimiser la recherche ou l’utilisation des nœuds non classés dans le JCR, entre autres.
 
 Outre la possibilité de mettre à niveau votre base du code et vos personnalisations afin qu’elles fonctionnent avec la nouvelle version d’AEM, la version 6.5 permet de gérer plus efficacement vos personnalisations à l’aide de la fonctionnalité de compatibilité descendante (ou de rétrocompatibilité) décrite sur [cette page](/help/sites-deploying/backward-compatibility.md).
 
-Comme indiqué ci-dessus et dans le diagramme ci-dessous, le fait d’exécuter l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) au cours de la première étape vous aide à évaluer la complexité globale de la mise à niveau et à déterminer si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations afin d’utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Veuillez consulter la [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md) pour plus d’informations.
-[ ![opt_crpped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+Comme indiqué ci-dessus et dans le diagramme ci-dessous, le fait d’exécuter l’[outil de détection des motifs](/help/sites-deploying/pattern-detector.md) au cours de la première étape vous aide à évaluer la complexité globale de la mise à niveau et à déterminer si vous souhaitez exécuter le mode de compatibilité ou mettre à jour vos personnalisations afin d’utiliser toutes les nouvelles fonctionnalités d’AEM 6.5. Pour en savoir plus, consultez la page [Compatibilité descendante dans AEM 6.5.](/help/sites-deploying/backward-compatibility.md)
+[ ![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## Mise à niveau de la base de code {#upgrade-code-base}
 
-### Création d’une branche spécifique pour la version 6.5 du code dans le contrôle de version {#create-a-dedicated-branch-for-6.5-code-in-version-control}
+### Création d’une branche spécifique pour la version 6.5 du code dans le contrôle de version  {#create-a-dedicated-branch-for-6.5-code-in-version-control}
 
 Tous les codes et configurations nécessaires à votre implémentation d’AEM doivent être gérés à l’aide d’une forme de contrôle de version. Une branche spécifique dans le contrôle de version doit être créée pour gérer tous les changements requis pour la base de code de la version cible d’AEM. Les tests itératifs de la base de code par rapport à la version cible d’AEM et les corrections de bogues consécutives sont gérés dans cette branche.
 
-### Mise à jour de la version AEM Uber Jar {#update-the-aem-uber-jar-version}
+### Mise à jour de la version AEM Uber Jar {#update-the-aem-uber-jar-version}
 
-AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans le fichier `pom.xml` de votre projet Maven. Il est toujours conseillé d’inclure le jar Uber comme dépendance unique au lieu d’incorporer les dépendances individuelles des API d’AEM. En améliorant la base de code, la version du jar Uber doit être modifiée pour indiquer la version cible d’AEM. Si votre projet a été développé sur une version AEM avant l’existence du jar Uber, toutes les dépendances individuelles des API d’AEM doivent être supprimées ou remplacées par une inclusion unique du jar Uber pour la version cible d’AEM. La base de code doit ensuite être recompilés par rapport à la nouvelle version du jar Uber. Toutes les méthodes obsolète d’API doivent être mis à jour pour être compatibles avec la version cible d’AEM.
+AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans le fichier `pom.xml` de votre projet Maven. Il est toujours conseillé d’inclure le jar Uber comme dépendance unique au lieu d’incorporer les dépendances individuelles des API d’AEM. En améliorant la base de code, la version du jar Uber doit être modifiée pour indiquer la version cible d’AEM. Si votre projet a été développé sur une version AEM avant l’existence du jar Uber, toutes les dépendances individuelles des API d’AEM doivent être supprimées ou remplacées par une inclusion unique du jar Uber pour la version cible d’AEM. La base de code doit ensuite être recompilés par rapport à la nouvelle version du jar Uber. Toutes les méthodes obsolète d’API doivent être mis à jour pour être compatibles avec la version cible d’AEM.
 
 ```
 <dependency>
@@ -69,7 +69,7 @@ AEM Uber jar inclut toutes les API d’AEM en tant que dépendance unique dans l
 
 ### Élimination graduelle de l’utilisation de l’Administrative Resource Resolver  {#phase-out-use-of-administrative-resource-resolver}
 
-Utilisation d’une session d’administration via `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` était assez répandu dans les bases de code avant AEM 6.0. Ces méthodes ont été abandonnées pour des raisons de sécurité car elles offrent un niveau d’accès trop large. [Dans les prochaines versions de Sling, ces méthodes seront supprimées](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Il est vivement recommandé de restructurer les codes afin d’utiliser les utilisateurs de service à la place. Plus d’informations sur les utilisateurs de service et [la manière d’éliminer les sessions administrative progressivement sont présentées ici](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
+L’utilisation d’une session d’administration via `SlingRepository.loginAdministrative()` et `ResourceResolverFactory.getAdministrativeResourceResolver()` était très courante dans les bases de code avant AEM 6.0. Ces méthodes ont été déconseillées pour des raisons de sécurité, car elles offrent un niveau d’accès trop large. [Dans les prochaines versions de Sling, ces méthodes seront supprimées](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication). Il est vivement recommandé de restructurer les codes afin d’utiliser les utilisateurs de service à la place. Plus d’informations sur les utilisateurs de service et [la manière d’éliminer les sessions administrative progressivement sont présentées ici](/help/sites-administering/security-service-users.md#how-to-phase-out=admin-sessions).
 
 ### Requêtes et index Oak {#queries-and-oak-indexes}
 
@@ -77,7 +77,7 @@ Toute utilisation des requêtes dans la base de code doit être complètement te
 
 Plusieurs outils pour l’analyse et l’inspection de la performance des requête sont disponibles :
 
-* [Outils d’index AEM ](/help/sites-deploying/queries-and-indexing.md)
+* [Outils d’index AEM](/help/sites-deploying/queries-and-indexing.md)
 
 * [Outils de diagnostic des opérations - Performance des requêtes](/help/sites-administering/operations-dashboard.md#diagnosis-tools)
 
@@ -85,17 +85,17 @@ Plusieurs outils pour l’analyse et l’inspection de la performance des requê
 
 ### IU classique - Création {#classic-ui-authoring}
 
-La création de l’IU classique est toujours disponible dans AEM 6.5, mais elle sera bientôt obsolète. Vous trouverez plus d’informations[ ici](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Si votre application s’exécute dans l’environnement de création de l’interface utilisateur classique, il est recommandé de la mettre à niveau vers AEM 6.5 et de continuer à utiliser l’interface utilisateur classique. La migration vers l’interface utilisateur optimisée pour les écrans tactiles peut ensuite être prévue en tant que projet distinct à effectuer sur plusieurs cycles de développement. Pour utiliser l’interface utilisateur classique dans la version 6.5, plusieurs configurations OSGi sont nécessaires pour être intégrées dans la base de code. Vous trouverez plus d’informations sur la configuration de cette [here](/help/sites-administering/enable-classic-ui.md).
+La création de l’IU classique est toujours disponible dans AEM 6.5, mais elle sera bientôt obsolète. Vous trouverez plus d’informations[ ici](/help/release-notes/deprecated-removed-features.md#pre-announcement-for-next-release). Si votre application s’exécute dans l’environnement de création de l’interface utilisateur classique, il est recommandé de la mettre à niveau vers AEM 6.5 et de continuer à utiliser l’interface utilisateur classique. La migration vers l’interface utilisateur optimisée pour les écrans tactiles peut ensuite être prévue en tant que projet distinct à effectuer sur plusieurs cycles de développement. Pour utiliser l’interface utilisateur classique dans la version 6.5, plusieurs configurations OSGi sont nécessaires pour être intégrées dans la base de code. Pour plus d’informations sur la façon de configurer cette fonction, cliquez [ici](/help/sites-administering/enable-classic-ui.md).
 
 ## Alignement avec la structure de référentiel de la version 6.5 {#align-repository-structure}
 
 Pour faciliter les mises à niveau et s’assurer que les configurations ne soient pas remplacées au cours de celles-ci, le référentiel est restructuré dans la version 6.4 afin de séparer le contenu de la configuration.
 
-Par conséquent, plusieurs paramètres doivent être déplacés pour ne plus résider sous . `/etc` comme par le passé. Pour consulter l’ensemble des préoccupations relatives à la restructuration du référentiel qui doivent être examinées et prises en compte dans la mise à jour vers AEM 6.4, voir [Restructuration des référentiels dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+Plusieurs paramètres doivent donc être déplacés afin de ne plus résider sous `/etc`, comme c’était le cas auparavant. Pour consulter l’ensemble des problèmes de restructuration de référentiel qui doivent être étudiés et résolus dans la mise à jour d’AEM 6.4, consultez la section [Restructuration de référentiel dans AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 ## Personnalisations d’AEM  {#aem-customizations}
 
-Toutes les personnalisations apportées à l’environnement de création d’AEM dans la version source d’AEM doivent être identifiées. Une fois identifiées, il est recommandé que chacune des personnalisations soit stockée dans le contrôle de version ou au moins prise en charge dans le cadre d’un module de contenu. Toutes les personnalisations doivent être déployées et validées dans le cadre d’un contrôle qualité ou un environnement d’évaluation exécutant la version cible d’AEM avant une mise à niveau de production.
+Toutes les personnalisations apportées à l’environnement de création d’AEM dans la version source d’AEM doivent être identifiées. Une fois identifiées, il est recommandé que chacune des personnalisations soit stockée dans le contrôle de version ou au moins prise en charge dans le cadre d’un module de contenu. Toutes les personnalisations doivent être déployées et validées dans le cadre d’un contrôle qualité ou un environnement d’évaluation exécutant la version cible d’AEM avant une mise à niveau d’exploitation.
 
 ### Généralités sur les recouvrements {#overlays-in-general}
 
@@ -103,7 +103,7 @@ Il est courant d’étendre la fonctionnalité prête à l’emploi d’AEM en s
 
 ### Mise à niveau des formulaires de recherche personnalisée {#upgrading-custom-search-forms}
 
-Les facettes de la recherche personnalisée requièrent certains réglages manuels après la mise à niveau pour fonctionner correctement. Pour en savoir plus, voir [Mise à niveau des formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md).
+Les facettes de la recherche personnalisée requièrent certains réglages manuels après la mise à niveau pour fonctionner correctement. Pour en savoir plus, consultez la section [Mise à niveau des formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md).
 
 ### Personnalisations de l’interface utilisateur d’Assets {#assets-ui-customizations}
 
@@ -113,9 +113,9 @@ Les facettes de la recherche personnalisée requièrent certains réglages manue
 
 Les instances disposant de déploiements de ressources personnalisés doivent être préparées pour la mise à niveau. Cela permet de s’assurer que le contenu personnalisé est compatible avec la nouvelle structure de nœuds de la version 6.4. 
 
-Vous pouvez préparer les personnalisations à l’interface utilisateur d’Assets en procédant comme suit :
+Vous pouvez préparer les personnalisations de l’interface utilisateur d’Assets en procédant comme suit :
 
-1. Sur l’instance qui doit être mise à niveau, ouvrez le CRXDE Lite en accédant à *https://server:port/crx/de/index.jsp*
+1. Sur une instance qui doit être mise à niveau, ouvrez CRXDE Lite en accédant à *https://server:port/crx/de/index.jsp*.
 
 1. Accédez au nœud suivant :
 
@@ -123,37 +123,37 @@ Vous pouvez préparer les personnalisations à l’interface utilisateur d’Ass
 
 1. Renommez le nœud content en **content_backup**. Vous pouvez le faire en cliquant avec le bouton droit sur le volet d’exploration sur le côté gauche de la fenêtre, puis en sélectionnant **Renommer**.
 
-1. Une fois le noeud renommé, créez un noeud nommé content sous `/apps/dam` named **content** et définissez son type de noeud sur **sling:Folder**.
+1. Une fois que le nœud a été renommé, créez un nœud de contenu sous `/apps/dam` nommé **content** et définissez son type de nœud sur **Sling.Folder**.
 
 1. Déplacez tous les nœuds enfants de **content_backup** vers le nœud content que vous venez de créer. Vous pouvez le faire en cliquant avec le bouton droit sur chaque nœud enfant dans le volet d’exploration, puis en sélectionnant **Déplacer**. 
 
 1. Supprimez le nœud **content_backup**.
 
-1. Les noeuds mis à jour sous `/apps/dam` avec le type de noeud correct de `sling:Folder` doit idéalement être enregistré dans le contrôle de version et déployé avec la base de code ou au minimum sauvegardé en tant que module de contenu.
+1. Les nœuds mis à jour sous `/apps/dam` avec le type de nœud correct `sling:Folder` doivent idéalement être enregistrés dans le contrôle de version et déployés avec la base de code ou au moins être sauvegardés en tant que modules de contenu.
 
 ### Génération d’identifiants pour les ressources existantes {#generating-asset-ids-for-existing-assets}
 
-Pour générer des identifiants pour les ressources existantes, mettez à jour les ressources en même temps que l’instance AEM pour exécuter la version 6.5. Cela nécessite d’activer la [fonctionnalité Assets Insights](/help/assets/asset-insights.md). Pour plus d’informations, voir [Ajout de code incorporé](/help/assets/use-page-tracker.md#add-embed-code).
+Pour générer des identifiants pour les ressources existantes, mettez à jour les ressources en même temps que l’instance AEM pour exécuter la version 6.5. Cela nécessite d’activer la [fonctionnalité Assets Insights](/help/assets/asset-insights.md). Pour plus de détails, consultez la section [Ajout d’un code intégré](/help/assets/use-page-tracker.md#add-embed-code).
 
-Pour mettre à niveau les ressources, configurez le module d’identifiants de ressources associé dans la console JMX. En fonction du nombre de ressources dans le référentiel, `migrateAllAssets`   peut prendre beaucoup de temps. Selon nos tests internes, cela peut prendre environ une heure pour 125 000 ressources sur TarMK.
+Pour mettre à niveau les ressources, configurez le module d’identifiants de ressources associé dans la console JMX. En fonction du nombre de ressources dans le référentiel, `migrateAllAssets` peut prendre beaucoup de temps. Selon nos tests internes, cela peut prendre environ une heure pour 125 000 ressources sur TarMK.
 
 ![1487758945977](assets/1487758945977.png)
 
 Si vous avez besoin de plusieurs identifiants de ressources pour un sous-ensemble de vos ressources totales, utilisez l’API `migrateAssetsAtPath`.
 
-Pour tout autre usage, utilisez la variable `migrateAllAssets()` API.
+Pour tout autre objectif, utilisez l’API `migrateAllAssets()`
 
 ### Personnalisations de script InDesign {#indesign-script-customizations}
 
-Adobe recommande de placer des scripts personnalisés à l’adresse `/apps/settings/dam/indesign/scripts` emplacement. Pour en savoir plus sur les personnalisations de script InDesign, rendez-vous[ ici](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+Adobe recommande de placer les scripts personnalisés à l’emplacement `/apps/settings/dam/indesign/scripts`. Pour en savoir plus sur les personnalisations de script InDesign, rendez-vous[ ici](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
 ### Récupération des configurations ContextHub {#recovering-contexthub-configurations}
 
-Les configurations ContextHub sont affectées par une mise à niveau. Vous trouverez des instructions sur la manière de récupérer les configurations ContextHub existantes. [here](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
+Les configurations ContextHub sont affectées par la mise à niveau. Des instructions sur la façon de récupérer les configurations ContextHub existantes sont disponibles [ici](/help/sites-developing/ch-configuring.md#recovering-contexthub-configurations-after-upgrading).
 
 ### Personnalisations des workflows {#workflow-customizations}
 
-Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. Un workflow courant personnalisé est le suivant : [!UICONTROL Ressources de mise à jour de gestion des actifs numériques] workflow. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
+Il est courant de modifier les workflows prêts à l’emploi pour ajouter ou supprimer des fonctionnalités. Un workflow qui est souvent personnalisé est le workflow [!UICONTROL Ressource de mise à jour de la gestion des ressources numériques]. Tous les workflows nécessitant une implémentation personnalisée doivent être enregistrés et stockés dans le contrôle de version, car ils risquent d’être remplacés lors de la mise à niveau.
 
 ### Modèles modifiables {#editable-templates}
 

@@ -13,7 +13,7 @@ exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent 
 
 ## Propriétés de page {#page-properties}
 
-Les propriétés sont réparties sur plusieurs onglets:
+Les propriétés sont réparties sur plusieurs onglets :
 
 ### De base {#basic}
 
@@ -35,12 +35,12 @@ Les propriétés sont réparties sur plusieurs onglets:
 
 * **Balises**
 
-   Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection:
+   Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection :
 
    * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
    * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
 
-      La nouvelle balise est en fait créée lorsque vous appuyez sur Entrée. Elle s’affiche alors dans un cadre et est marquée à droite d’une petite étoile indiquant qu’il s’agit d’une nouvelle balise.
+      La nouvelle balise est en réalité créée lorsque vous appuyez sur Entrée. Elle s’affiche alors dans un cadre et est marquée à droite d’une petite étoile indiquant qu’il s’agit d’une nouvelle balise.
 
    * Vous pouvez faire votre choix parmi les balises existantes dans la liste déroulante.
    * Un « x » apparaît lorsque vous passez le pointeur de la souris sur une entrée de balise dans la zone de sélection ; vous pouvez vous en servir pour supprimer cette balise de la page.
@@ -81,11 +81,11 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et plus explicite.
 
-   Par exemple, si l’URL Vanity est définie sur w `elcome`à la page identifiée par le chemin / `v1.0/startpage`pour le site web h `ttp://example.com,` puis h `ttp://example.com/welcome`serait l’URL Vanity de h `ttp://example.com/content/v1.0/startpage`
+   Par exemple, si l’URL de redirection est définie sur w`elcome` sur la page identifiée par le chemin / `v1.0/startpage` pour le site Web h`ttp://example.com,`, `ttp://example.com/welcome` devient alors l’URL de redirection de `ttp://example.com/content/v1.0/startpage`.
 
    >[!CAUTION]
    >
-   >L’URL Vanity :
+   >URL de redirection :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
    >* Ne prend pas en charge les modèles d’expression régulière.
@@ -143,17 +143,17 @@ Les propriétés sont réparties sur plusieurs onglets:
 
       Génère un aperçu de la page à utiliser comme miniature.
 
-   * **Télécharger l’image**
+   * **Charger l’image**
 
       Télécharge une image à utiliser comme miniature.
 
 ### Services cloud {#cloud-services}
 
-* **Cloud Services**
+* **Services cloud**
 
    Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
 
-### Personnalisation  {#personalization}
+### Personnalisation {#personalization}
 
 * **Personnalisation**
 
@@ -165,7 +165,7 @@ Les propriétés sont réparties sur plusieurs onglets:
 
    Permet d’afficher les [autorisations en vigueur et d’en ajouter de nouvelles](/help/sites-administering/user-group-ac-admin.md).
 
-### Blueprint {#blueprint}
+### Plan directeur {#blueprint}
 
 * **Plan directeur**
 

@@ -1,5 +1,5 @@
 ---
-title: Utilisation de Sling Resource Merger dans AEM
+title: Utilisation de Sling Resource Merger dans AEM
 seo-title: Using the Sling Resource Merger in AEM
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 seo-description: The Sling Resource Merger provides services to access and merge resources
@@ -13,7 +13,7 @@ exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
 source-git-commit: c07fa148054b69b0da7bb402ef96a50d0895abfa
 workflow-type: tm+mt
 source-wordcount: '1254'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/re
 
 >[!CAUTION]
 >
->Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’il s’applique uniquement à l’IU tactile standard ; en particulier, les remplacements définis de cette manière ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
+>Sling Resource Merger et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html). Cela signifie également qu’ils ne sont adaptés qu’à l’interface utilisateur tactile standard ; les remplacements définis de cette manière, notamment, ne s’appliquent qu’à la boîte de dialogue tactile d’un composant.
 >
 >S’agissant des incrustations/remplacements relatifs à d’autres sections (y compris d’autres aspects d’un composant tactile ou de l’interface utilisateur classique), le nœud et la structure appropriés doivent être copiés à l’endroit où la personnalisation sera définie à partir de l’original.
 
@@ -62,9 +62,9 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (c.-à-d. tel qu’il existe dans `/libs`) sous `/apps`
+>1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
->1. Apportez les modifications désirées dans `/apps`
+>1. Apportez les modifications désirées dans `/apps`.
 
 >
 
@@ -201,8 +201,8 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant sous /apps.
    1. Créez une propriété `sling:hideResource`
 
-      * type: `Boolean`
-      * value: `true`
+      * type : `Boolean`
+      * value : `true`
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
@@ -211,7 +211,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
 
-      * type : `String[]`
+      * type : `String[]`
       * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
       Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
@@ -228,8 +228,8 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
          Cela spécifie le nœud (comme dans `/libs`) devant lequel le nœud actif doit être positionné :
 
-         * type : `String`
-         * value: `<before-SiblingName>`
+         * type : `String`
+         * value : `<before-SiblingName>`
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}
 

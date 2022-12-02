@@ -154,7 +154,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 1. Sur le rail Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
 1. Cliquez ou appuyez sur le conteneur de configurations par défaut.
 1. Cliquez ou appuyez sur Configuration ContextHub.
-1. Pour ajouter un magasin, cliquez ou appuyez sur l’icône Créer, puis sur Configuration de magasin ContexHub.
+1. Pour ajouter un magasin, cliquez ou appuyez sur l’icône Créer, puis sur Configuration de magasin ContextHub.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 

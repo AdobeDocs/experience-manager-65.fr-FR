@@ -1,6 +1,6 @@
 ---
 title: Rapports sur l’utilisation et le partage des ressources
-description: Des rapports sur vos ressources dans [!DNL Adobe Experience Manager Assets] vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
@@ -8,7 +8,7 @@ exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 87%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/asset-reports.html?lang=fr) |
 
 Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.
 
@@ -32,12 +32,12 @@ Si un rapport est généré, vous êtes averti par un courrier électronique (fa
 
 ## Prérequis {#prerequisite-for-reporting}
 
-Pour générer des rapports, procédez comme suit :
+Pour générer des rapports, procédez comme suit :
 
-* Activer [!UICONTROL Enregistreur d’événements DAM Day CQ] service à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
+* Activez le service [!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] à partir de **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console Web]**.
 * Sélectionnez les activités ou les événements sur lesquels vous souhaitez créer des rapports. Par exemple, pour générer un rapport sur les ressources téléchargées, sélectionnez [!UICONTROL Ressource téléchargée (TÉLÉCHARGÉE)].
 
-![Activation de la création de rapports de ressources dans la console web](assets/reports-config-day-cq-dam-event-recorder.png)
+![Activation de la création de rapports de ressources dans la console Web](assets/reports-config-day-cq-dam-event-recorder.png)
 
 ## Génération de rapports {#generate-reports}
 
@@ -106,11 +106,11 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 1. Sur la page **[!UICONTROL Configurer les colonnes]**, certaines colonnes sont sélectionnées pour apparaître dans le rapport par défaut. Vous pouvez sélectionner plus de colonnes. Annulez la sélection d’une colonne pour l’exclure dans le rapport.
 
-   ![Sélectionner ou annuler la sélection des colonnes du rapport](assets/configure_columns.png)
+   ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/configure_columns.png)
 
    Pour afficher un chemin de propriété ou un nom de colonne personnalisé, configurez les propriétés du binaire de ressource sous le nœud `jcr:content` dans CRX. Vous pouvez également l’ajouter dans le sélecteur de chemin de propriété.
 
-   ![Sélectionner ou annuler la sélection des colonnes du rapport](assets/custom_columns.png)
+   ![Sélectionner ou annuler la sélection des colonnes d’un rapport](assets/custom_columns.png)
 
 1. Cliquez sur **[!UICONTROL Créer]** dans la barre d’outils. Un message indique que la génération du rapport a été lancée.
 1. Sur la page [!UICONTROL Rapports de ressources], l’état de la génération des rapports repose sur l’état actuel de la tâche de rapport ; par exemple [!UICONTROL Réussite], [!UICONTROL Échec], [!UICONTROL En file d’attente] ou [!UICONTROL Planifié]. Le même état s’affiche dans la boîte de réception des notifications. Pour afficher la page du rapport, cliquez sur le lien du rapport. Vous pouvez également sélectionner le rapport et cliquer sur **[!UICONTROL Afficher]** dans la barre d’outils.
@@ -162,8 +162,8 @@ Pour supprimer les rapports dont vous n’avez plus besoin, configurez le servic
 
 ## Informations, conseils et limites de dépannage {#best-practices-and-limitations}
 
-* Si certains rapports ou nombres ne sont pas disponibles ou comme prévu, assurez-vous que la variable [!UICONTROL Enregistreur d’événements DAM Day CQ] est activé.
+* Si certains rapports ou nombres ne sont pas disponibles, ou pas comme prévu, assurez-vous que le service [!UICONTROL Enregistreur d’événement de gestion des ressources numériques Day CQ] est activé.
 
-* Supprimez les rapports qui ne sont plus requis. Utilisez les options de configuration du service Purge des rapports de la gestion des actifs numériques pour configurer les critères de purge des rapports.
+* Supprimez les rapports qui ne sont plus nécessaires. Utilisez les options de configuration du service Purge des rapports de la gestion des ressources numériques pour configurer les critères de purge des rapports.
 
 * Si le rapport d’utilisation des disques n’est pas généré et si vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.

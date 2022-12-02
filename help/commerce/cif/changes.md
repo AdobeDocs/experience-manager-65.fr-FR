@@ -1,30 +1,30 @@
 ---
 title: Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework)
-description: Modifications notables du module complémentaire CIF (Commerce Integration Framework) par rapport aux anciennes versions de CIF.
-exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+description: Modifications notables du module complémentaire Commerce Integration Framework (CIF) par rapport aux anciennes versions du CIF.
+exl-id: 41dee21a-9ae2-4067-a32a-2d4633323fc4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework){#notable-changes}
+# Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework){#notable-changes}
 
 Ce document met en évidence les différences importantes entre le module complémentaire CIF (Commerce Integration Framework) et les anciennes versions de CIF, connues principalement sous le nom de CIF Classic (Quickstart) et CIF Open Source.
 
 ## Installation et mises à jour
 
-Le module complémentaire AEM CIF est installé et mis à jour avec AEM Package Manager.
+Le module complémentaire AEM CIF peut être installé et mis à jour grâce au gestionnaire de modules AEM.
 
 **Versions CIF précédentes**
 
 * CIF Classic : aucune installation n’était nécessaire, CIF faisait partie de la version Quickstart. Les mises à jour CIF faisaient partie des mises à jour régulières d’AEM ou de service pack.
-* CIF Open Source : Installation via GitHub. Les mises à jour faisaient partie des opérations de mise à jour manuelle/de maintenance.
+* CIF open-source : installation via GitHub. Les mises à jour faisaient partie des opérations de mise à jour manuelle/de maintenance.
 
 ## Configuration du point d’entrée
 
-Le point de terminaison est configuré via la console OSGi.
+Le point d’entrée est configuré via la console OSGi.
 
 **Versions CIF précédentes**
 
@@ -33,7 +33,7 @@ Le point de terminaison est configuré via la console OSGi.
 
 ## Déploiement du projet CIF Venia
 
-Projet disponible sur [Guides d’AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via AEM Package Manager.
+Le projet disponible dans les [Guides AEM GitHub - Projet CIF Venia](https://github.com/adobe/aem-cif-guides-venia) et déploiement effectué via le gestionnaire de modules AEM.
 
 **Versions CIF précédentes**
 
@@ -57,4 +57,4 @@ AEM effectue le rendu à la volée des expériences de catalogue de produits à 
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’utilisation de CIF avec AEM Managed Service ou AEM On-Premise, reportez-vous à la section [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Pour obtenir de la documentation supplémentaire sur l’utilisation du CIF avec les Managed Services ou On-Premise AEM, consultez [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html).

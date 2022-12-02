@@ -1,18 +1,18 @@
 ---
 title: Configurez l’éditeur de texte enrichi pour plusieurs éditeurs statiques.
-description: Créez plusieurs éditeurs statiques dans Adobe Experience Manager en configurant l’éditeur de texte enrichi.
+description: Créez plusieurs éditeurs statiques dans Adobe Experience Manager en configurant l’éditeur de texte enrichi.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 # Configuration de plusieurs éditeurs statiques {#configure-multiple-in-place-editors}
 
-Vous pouvez configurer l’éditeur de texte enrichi dans Adobe Experience Manager afin qu’il dispose de plusieurs éditeurs statiques. Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat.
+Vous pouvez configurer l’éditeur de texte enrichi dans Adobe Experience Manager afin qu’il dispose de plusieurs éditeurs statiques. Une fois le composant configuré, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat.
 
 ![Un éditeur statique spécifique](assets/rte-inplace-editor.png)
 
@@ -53,39 +53,39 @@ Par exemple :
       - title (string)
 ```
 
-Pour configurer plusieurs éditeurs, procédez comme suit :
+Pour configurer plusieurs éditeurs, procédez comme suit :
 
-1. Sur le noeud `cq:inplaceEditing` (de type `cq:InplaceEditingConfig`) définissent les propriétés suivantes :
+1. Sur le nœud `cq:inplaceEditing` (de type `cq:InplaceEditingConfig`), définissez les propriétés suivantes :
 
-   * Nom:`editorType`
+   * Nom : `editorType`
    * Type : `String`
    * Valeur : `hybrid`
 
-1. Sous ce noeud, créez un noeud :
+1. Créez un nœud sous celui-ci :
 
    * Nom : `cq:ChildEditors`
    * Type : `nt:unstructured`
 
-1. Sous `cq:childEditors` , créez un noeud pour chaque éditeur statique :
+1. Sous le nœud `cq:childEditors`, créez un nœud pour chaque éditeur statique :
 
-   * Nom : Le nom de chaque noeud est le nom de la propriété qu’il représente, comme c’est le cas avec les cibles de dépôt. Par exemple, `image` et `text`.
+   * Nom : le nom de chaque nœud est celui de la propriété qu’il représente, comme avec les cibles de dépôt. Par exemple, `image` et `text`.
    * Type : `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Il existe une corrélation entre les cibles de dépôt définies et les éditeurs enfants. Nom de la variable `cq:ChildEditorConfig` est considéré comme l’identifiant de la cible de dépôt à utiliser comme paramètre pour l’éditeur enfant sélectionné. Si la sous-zone modifiable ne comporte pas de cible de dépôt, par exemple, dans un composant de texte, le nom de l’éditeur enfant est toujours considéré comme un identifiant pour identifier la zone modifiable correspondante.
+   >Il existe une corrélation entre les cibles de dépôt définies et les éditeurs enfants. Le nom du nœud `cq:ChildEditorConfig` est considéré comme l’ID de la cible de dépôt à utiliser en tant que paramètre pour l’éditeur enfant sélectionné. Si la sous-zone modifiable ne comporte pas de cible de dépôt, par exemple comme avec un composant texte, le nom de l’éditeur enfant est toujours considéré comme un moyen d’identifier la zone modifiable correspondante.
 
-1. Sur chacun de ces noeuds (`cq:ChildEditorConfig`) définissent les propriétés :
+1. Définissez les propriétés suivantes sur chacun de ces nœuds (`cq:ChildEditorConfig`) :
 
-   * Nom: `type`.
-   * Valeur : le nom de l’éditeur statique enregistré ; par exemple, `image` et `text`.
+   * Nom : `type`
+   * Valeur : nom de l’éditeur statique enregistré ; par exemple, `image` et `text`.
 
-   * Nom: `title`.
-   * Valeur : Titre affiché dans la liste de sélection des composants des éditeurs disponibles. Par exemple, `Image` et `Text`.
+   * Nom : `title`
+   * Valeur : titre affiché dans la liste de sélection des composants des éditeurs disponibles. Par exemple, `Image` et `Text`.
 
-### Configuration supplémentaire pour les éditeurs de texte enrichi {#additional-configuration-for-rich-text-editors}
+### Configuration supplémentaire pour les éditeurs de texte enrichi (RTE) {#additional-configuration-for-rich-text-editors}
 
-La configuration des éditeurs de texte enrichi est légèrement différente, dans la mesure où vous pouvez configurer chaque instance RTE séparément. Pour plus d’informations, voir [configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md). Pour que plusieurs éditeurs de texte enrichi créent une configuration pour chaque éditeur de texte enrichi statique. Adobe recommande de créer le noeud de configuration sous `cq:InplaceEditingConfig` car chaque éditeur de texte enrichi peut avoir une configuration différente. Sous le nouveau noeud, créez chaque configuration d’éditeur de texte enrichi.
+La configuration des éditeurs de texte enrichi est légèrement différente, dans la mesure où vous pouvez configurer chaque instance RTE séparément. Pour plus d’informations, consultez la section [configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md). Pour disposer de plusieurs éditeurs de texte enrichi, vous devez configurer chaque éditeur statique. Adobe recommande de créer le nœud de configuration sous `cq:InplaceEditingConfig` car chaque éditeur de texte enrichi peut avoir une configuration différente. Sous le nouveau nœud, définissez chaque configuration RTE.
 
 ```xml
     texttext
@@ -102,21 +102,21 @@ La configuration des éditeurs de texte enrichi est légèrement différente, da
 
 >[!NOTE]
 >
->Cependant, dans le cas de l’éditeur de texte enrichi, la propriété `configPath` est prise en charge lorsque le composant ne contient qu’une seule instance de l’éditeur (sous-zone modifiable). Cette utilisation de `configPath` est fourni pour prendre en charge la compatibilité descendante avec les anciennes boîtes de dialogue de l’interface utilisateur du composant.
+>Cependant, dans le cas de l’éditeur de texte enrichi, la propriété `configPath` est prise en charge lorsque le composant ne contient qu’une seule instance de l’éditeur (sous-zone modifiable). Cette utilisation de `configPath` permet de garantir la rétrocompatibilité avec les boîtes de dialogue du composant conçues pour l’ancienne interface utilisateur.
 
 >[!CAUTION]
 >
->Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Dans le cas contraire, les configurations de l’éditeur de texte enrichi sont disponibles uniquement pour les administrateurs et non pour les utilisateurs du groupe. `content-author`.
+>Ne donnez pas le nom `config` au nœud de configuration de l’éditeur de texte enrichi (RTE). Autrement, les configurations de l’éditeur de texte enrichi ne sont disponibles que pour les administrateurs, et non pour les utilisateurs du groupe `content-author`.
 
 ## Exemples de code {#code-samples}
 
-Vous trouverez le code de cette page sur [projet aem-authoring-hybrideditors sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Vous pouvez télécharger l’intégralité du projet sous la forme [une archive ZIP ;](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+Vous trouverez le code de cette page dans le [projet aem-authoring-hybrideditors sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Vous pouvez télécharger l’intégralité du projet sous la forme d’[une archive ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
 
 ## Ajout d’un éditeur statique {#add-an-in-place-editor}
 
-Pour plus d’informations sur l’ajout d’un éditeur statique, voir le document [personnalisation de la création de pages](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Pour obtenir des informations d’ordre général sur l’ajout d’un éditeur statique, consultez le document [Personnalisation de la création de pages](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
 >[!MORELIKETHIS]
 >
->* [Configuration de l’éditeur de texte enrichi dans Experience Manager](/help/sites-administering/rich-text-editor.md).
+>* [Configuration de l’éditeur de texte enrichi dans Experience Manager](/help/sites-administering/rich-text-editor.md)
 

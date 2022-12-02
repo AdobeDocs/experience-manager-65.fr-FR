@@ -9,7 +9,7 @@ exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 94%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
 Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
@@ -59,8 +59,8 @@ De plus, les capacités de l’ordinateur client, par exemple un poste de travai
 **Pour prévisualiser des ressources 3D dans Experience Manager :**
 
 1. Assurez-vous d’avoir chargé des ressources 3D dans Experience Manager.
-Voir [Formats pris en charge pour l’aperçu 3D](#supported-3d-previewing-assets) et [Chargement de ressources](/help/assets/manage-assets.md#uploading-assets).
-1. À partir du Experience Manager, sur **[!UICONTROL Navigation]** page, sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
+Consultez les sections [Formats pris en charge pour la prévisualisation 3D](#supported-3d-previewing-assets) et [Charger des ressources](/help/assets/manage-assets.md#uploading-assets).
+1. Dans Experience Manager, sur la page **[!UICONTROL Navigation]**, sélectionnez **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**.
 
    ![Page de navigation](/help/assets/assets-dm/navigation-assets.png)
 

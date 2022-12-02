@@ -6,13 +6,13 @@ exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
 source-git-commit: 9278ba4fe85edca4ab5741f89c0fc0ef2cf2764d
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
 # Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-Un cas d’utilisation Principal pour la variable [API GraphQL Adobe Experience Manager (AEM) pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) accepte des requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
+Un des principaux cas d’utilisation de l’[API Adobe Experience Manager (AEM) GraphQL pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) consiste à accepter les requêtes distantes provenant d’applications ou de services tiers. Ces requêtes à distance peuvent nécessiter un accès authentifié à l’API afin de sécuriser la diffusion de contenu découplé.
 
 >[!NOTE]
 >

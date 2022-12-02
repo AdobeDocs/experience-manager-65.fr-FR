@@ -1,17 +1,17 @@
 ---
 title: Couplage et découplage dans AEM
-description: Les projets AEM peuvent être implémentés dans un modèle headful et headless, mais le choix n’est pas binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
+description: Il est possible de mettre en œuvre des projets AEM sur des modèles couplés et découplés, mais ce choix n’a pas besoin d’être si binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Couplage et découplage dans AEM {#headful-headless}
 
-Les projets Adobe Experience Manager peuvent être implémentés dans des modèles à la fois headful et headless, mais le choix n’est pas binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet. Ce document présente les différents modèles et décrit les niveaux d’intégration SPA.
+Il est possible de mettre en œuvre des projets Adobe Experience Manager sur des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet. Ce document donne un aperçu des différents modèles et décrit les niveaux d’intégration des applications sur une seule page (SPA).
 
 ## Présentation {#overview}
 

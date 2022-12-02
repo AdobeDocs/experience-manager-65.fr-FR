@@ -52,7 +52,7 @@ Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœ
 
 >[!NOTE]
 >
->Une [action de formulaire](#developing-your-own-form-actions) peut également définir la ressource à partir de laquelle les valeurs initiales doivent être chargées . Pour ce faire, `FormsHelper#setFormLoadResource` est utilisé dans `init.jsp`.
+>Une [action de formulaire](#developing-your-own-form-actions) peut également définir la ressource à partir de laquelle les valeurs initiales doivent être chargées. Pour ce faire, `FormsHelper#setFormLoadResource` est utilisé dans `init.jsp`.
 >
 >Le formulaire est rempli à partir du chemin d’accès défini dans le composant de début de formulaire par l’auteur, et ce, uniquement si cette action n’est pas définie.
 
@@ -131,7 +131,7 @@ Vous pouvez ajouter votre propre action sous `/apps` en procédant comme suit :
 
    1. Créer un script de publication.
 Le nom du script est `post.POST.<extension>`, par exemple `post.POST.jsp`
-Le script de publication est appelé lorsqu’un formulaire est envoyé pour le traitement. Il contient le code qui gère les données en provenance du formulaire . 
+Le script de publication est appelé lorsqu’un formulaire est envoyé pour le traitement. Il contient le code qui gère les données en provenance du formulaire. 
 `POST`.
 
    1. Ajouter un script de transfert qui est appelé lors de l’envoi du formulaire.

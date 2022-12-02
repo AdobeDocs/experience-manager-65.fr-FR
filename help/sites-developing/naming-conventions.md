@@ -34,7 +34,7 @@ Ces conventions sont mises en place à différents niveaux :
 
 ### Utilitaires JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères contrôlés et les validations suivantes se révèlent particulièrement intéressants dans le cadre de la validation des noms :
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères contrôlés et les validations suivantes se révèlent particulièrement intéressants dans le cadre de la validation des noms :
 
 * `isValidName`
 
@@ -48,7 +48,7 @@ Ces conventions sont mises en place à différents niveaux :
 
 ### Gestionnaire de pages {#page-manager}
 
-[PageManager](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fournit des méthodes pour les opérations au niveau de la page, sur la base de [JCRUtil](#jcr-utilities).
+[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) fournit des méthodes pour les opérations au niveau de la page, sur la base de [JCRUtil](#jcr-utilities).
 
 ### Interface utilisateur standard {#standard-ui}
 
@@ -68,7 +68,7 @@ L’IU classique applique des restrictions plus strictes :
    * Un titre de page est fourni pour la conversion dans le nom de nœud.
    * Un nom de nœud explicite est fourni.
 
-* Caractères valides (seuls ces caractères sont effectivement valides lorsqu’une page est créée dans l’IU classique), même si `PageManagerImpl` autorise des caractères supplémentaires) :
+* Caractères valides (seuls ces caractères sont effectivement valides lorsqu’une page est créée dans l’IU classique, même si `PageManagerImpl` autorise des caractères supplémentaires) :
 
    * « a » à « z »
    * « A » à « Z »

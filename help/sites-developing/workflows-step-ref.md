@@ -14,7 +14,7 @@ exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3284'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -41,22 +41,24 @@ Chaque composant d’étape dispose d’une boîte de dialogue **Propriétés de
 
 Une combinaison des propriétés suivantes est disponible pour la plupart des composants d’étape de workflow, sous l’onglet **Commun** de la boîte de dialogue Propriétés :
 
-* **Titre** Titre de l’étape.
+* **Titre**
+Titre de l’étape.
 
-* **Description** Description de l’étape.
+* **Description**
+Description de l’étape.
 
-* **Étape du processus**
+* **Étape du workflow**
 
-   Un sélecteur de liste déroulante auquel appliquer une [Évaluation](/help/sites-developing/workflows.md#workflow-stages) à l’étape .
+   Sélecteur déroulant pour appliquer une [phase](/help/sites-developing/workflows.md#workflow-stages) à l’étape.
 
 * **Délai dépassé**
 
-   La période au bout de laquelle l’étape sera &quot;expirée&quot;.
-Vous pouvez choisir entre : **Off**, **Immédiat**, **1h**, **6h**, **12h**, **24h**.
+   Délai au bout duquel l’étape expire.
+Vous avez le choix entre : **Désactivé**, **Immédiat**, **1 h**, **6 h**, **12 h** et **24 h**.
 
 * **Gestionnaire de dépassement de délai**
 
-   Le gestionnaire qui contrôlera le workflow lorsque l’étape expire ; par exemple :
+   Gestionnaire qui contrôle le workflow lorsque l’étape expire, par exemple :
    `Auto Advancer`
 
 * **Avance du gestionnaire**
@@ -74,14 +76,14 @@ Les propriétés suivantes sont disponibles pour de nombreux composants d’éta
 
 * **Utilisateur/Groupe**
 
-   * Une boîte de sélection déroulante vous permet de localiser et de sélectionner un utilisateur ou un groupe.
-   * Si vous attribuez l’étape à un utilisateur spécifique, seul cet utilisateur peut agir sur l’étape.
-   * Si vous attribuez l’étape à un groupe entier, lorsque le workflow atteint cette étape, tous les utilisateurs de ce groupe auront l’action dans leur **Boîte de réception des workflows**.
+   * Une boîte de sélection déroulante vous permet de localiser et de sélectionner une personne ou un groupe.
+   * Si vous attribuez l’étape à une personne spécifique, seule cette personne peut agir sur l’étape.
+   * Si vous attribuez l’étape à un groupe entier, alors lorsque le workflow atteint cette étape tous les utilisateurs de ce groupe disposeront de l’action dans leur **boîte de réception des workflows**.
    * Voir [Participation à des workflows](/help/sites-authoring/workflows-participating.md) pour plus d’informations.
 
 ## Division ET {#and-split}
 
-Le **Division ET** crée une division dans le workflow, après laquelle les deux branches seront principales. Vous ajoutez des étapes de processus à chaque branche selon vos besoins. Cette étape vous permet d’ajouter plusieurs chemins de traitement dans le workflow. Par exemple, vous pouvez autoriser l’exécution de certaines étapes de révision en parallèle, ce qui représente un réel gain de temps.
+La **division ET** crée une division dans le workflow, après quoi les deux branches sont actives. Vous ajoutez des étapes de workflow à chaque branche selon vos besoins. Cette étape vous permet d’ajouter plusieurs chemins de traitement dans le workflow. Par exemple, vous pouvez autoriser l’exécution de certaines étapes de révision en parallèle, ce qui représente un réel gain de temps.
 
 ![wf-26](assets/wf-26.png)
 
@@ -110,33 +112,33 @@ Ce conteneur peut vous permettre de réutiliser des modèles de workflow pour me
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * **Conteneur**
 
    * **Processus secondaire** : sélectionnez le workflow à démarrer.
 
 ## Atteindre l’étape {#goto-step}
 
-Le **Atteindre l’étape** vous permet de spécifier l’étape suivante à exécuter dans le modèle de workflow. Vous pouvez spécifier une définition de règle, un script externe ou un script ECMA comme expression de routage pour évaluer l’étape suivante du modèle de workflow.
+L’**Étape Goto** vous permet de spécifier l’étape suivante à exécuter dans le modèle de workflow. Vous pouvez spécifier une définition de règle, un script externe ou un script ECMA comme expression de routage pour évaluer l’étape suivante du modèle de workflow.
 
-* Si la condition que vous spécifiez est vraie, la variable **Atteindre l’étape** se termine et le moteur de workflow exécute l’étape spécifiée.
-* Si la condition que vous spécifiez ne contient pas la valeur true, la variable **Atteindre l’étape** se termine et la logique de routage normale détermine l’étape suivante à exécuter.
+* Si la condition que vous spécifiez est vraie, l’**Étape Goto** se termine et le moteur de workflow exécute l’étape spécifiée.
+* Si la condition que vous spécifiez ne contient pas la valeur true, l’**Étape Goto** se termine et la logique de routage normale détermine l’étape suivante à exécuter.
 
-**Atteindre l’étape** vous permet de mettre en œuvre des structures de routage avancées dans vos modèles de workflow. Par exemple, pour mettre en oeuvre une boucle, l’événement **Atteindre l’étape** peut être défini pour exécuter une étape précédente du workflow, avec l’expression de routage évaluant une condition de boucle.
+L’**Étape Goto** vous permet de mettre en œuvre des structures de routage avancées dans vos modèles de workflow. Par exemple, pour mettre en œuvre une boucle, l’**Étape Goto** peut être définie pour exécuter une étape antérieure dans le workflow, avec le script évaluant une condition de boucle.
 
 ### Atteindre l’étape – configuration {#goto-step-configuration}
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * **Processus**
 
-   * **Étape Target**: Sélectionnez l’étape à exécuter après l’évaluation de la condition de l’expression de routage.
-   * **Expression de routage**: Sélectionnez la définition de règle, un script externe ou un script ECMA qui détermine s’il faut exécuter **Étape cible**.
+   * **Étape Cible** : sélectionnez l’étape à exécuter après l’évaluation de la condition de l’expression de routage.
+   * **Expression de routage** : sélectionnez la définition de règle, un script externe ou un script ECMA qui détermine s’il faut exécuter l’**Étape Cible**.
 
-      * **Définition de règle :** Utilisez la variable [éditeur d&#39;expression](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) pour définir la règle.
-      * **Script externe :** Chemin d’accès du script externe.
-      * **Script ECMA**: Le script qui détermine s’il faut exécuter la variable **Atteindre l’étape**.
+      * **Définition de règle :** utilisez l’[éditeur d’expression](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor) pour définir la règle.
+      * **Script externe :** chemin d’accès du script externe.
+      * **Script ECMA** : script qui détermine si l’**Étape Goto** doit être exécutée.
 
 #### Simulation d’une boucle for {#simulating-a-for-loop}
 
@@ -145,7 +147,7 @@ La simulation d’une boucle for requiert que vous comptiez le nombre d’itéra
 * Le compte représente généralement un index des éléments qui ont été suivis d’actions dans le workflow.
 * Le nombre est évalué comme critère de sortie de la boucle.
 
-Par exemple, pour mettre en œuvre un workflow qui effectue une action sur plusieurs nœuds JCR, vous pouvez utiliser un compteur de boucles en tant qu’index pour les nœuds. Pour conserver le décompte, stockez une `integer` dans la carte de données de l’instance de workflow. Utilisez le script de l’étape définie dans **Atteindre l’étape** pour incrémenter le nombre, ainsi que pour comparer le nombre au critère de sortie.
+Par exemple, pour mettre en œuvre un workflow qui effectue une action sur plusieurs nœuds JCR, vous pouvez utiliser un compteur de boucles en tant qu’index pour les nœuds. Pour rendre le compte persistant, stockez une valeur `integer` dans le mappage de données de l’instance de workflow. Utilisez le script de l’**Étape Goto** pour incrémenter le nombre, ainsi que pour comparer le nombre au critère de sortie.
 
 ```
 function check(){
@@ -171,17 +173,17 @@ function check(){
 }
 ```
 
-### Simulation d’une boucle for à l’aide de la définition de règle {#simulateforloop}
+### Simulation d’une boucle for à l’aide la définition de règle {#simulateforloop}
 
-Vous pouvez également simuler une boucle for à l’aide de la définition de règle comme expression de routage. [Créez un **count** variable](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) de type de données Long. Utilisation **Expression** en tant que mode de mappage dans le **[Définir la variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** pour définir la valeur de la variable **count** vers **count + 1** à chaque exécution du **Définir la variable** étape .
+Vous pouvez également simuler une boucle for à l’aide de la définition de règle comme expression de routage. [Créez une variable **count** ](/help/forms/using/variable-in-aem-workflows.md#create-a-variable) de type de données Long. Utilisez **Expression** comme mode de mappage dans l’étape **[Définir la variable](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)** pour définir la valeur de la variable **count** sur **count + 1** à chaque exécution de l’étape **Définir la variable**.
 
 ![Simulation d’une boucle for](assets/variable_use_case_count_new.png)
 
-Dans le **Atteindre l’étape**, utilisez **Définir la variable** comme la propriété **Étape cible** et **count &lt; 5** comme expression de routage.
+Dans l’**Étape Goto**, utilisez **Définir la variable** comme **Étape cible** et **count &lt; 5** comme expression de routage.
 
 ![Condition de simulation d’une boucle for](assets/variable_use_case_count1_new.png)
 
-Le **Définir la variable** s’exécute à plusieurs reprises pour incrémenter la valeur de **count** de 1 pour chaque exécution jusqu’à ce que la valeur atteigne 5.
+L’étape **Définir la variable** s’exécute à plusieurs reprises pour incrémenter la valeur de **count** de 1 pour chaque exécution, jusqu’à ce que la valeur atteigne 5.
 
 ## Division OU {#or-split}
 
@@ -189,7 +191,7 @@ La **division OU** crée une division dans le workflow, après quoi seule une b
 
 >[!NOTE]
 >
->Pour plus d’informations sur la création d’une division OU, voir : [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html)
+>Pour plus d’informations sur la création d’une Division OU, consultez : [https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html](https://helpx.adobe.com/experience-manager/using/aem64_workflow_servlet.html).
 
 ![Branchement à l’aide de la division OU](assets/variables_orsplit_new.png)
 
@@ -199,24 +201,24 @@ Pour configurer la division :
 
 * Modifiez les **propriétés de la division OU** :
 
-   * **Courant**
+   * **Commun**
 
-      * Indiquez le nom de la division.
+      * Spécifiez le nom de la division.
    * **Branches (*x)***
 
-      * **Ajouter une branche :** Ajoutez d’autres branches à l’étape.
-      * **Sélectionner l’expression de routage**: Sélectionnez l’expression de routage pour évaluer la branche principale. Les valeurs possibles sont les suivantes : Définition de règle, script externe et script ECMA.
-      * **Cliquer pour ajouter une expression**: Ajoutez une expression pour évaluer la branche principale si vous sélectionnez **Définition de règle** comme expression de routage.
-      * **Chemin du script**: Chemin d’accès à un fichier contenant le script pour évaluer la branche principale si vous sélectionnez **Script externe** comme expression de routage.
-      * **Script**: Ajoutez le script dans la zone pour évaluer la branche principale si vous sélectionnez **Script ECMA** comme expression de routage.
-      * **Itinéraire par défaut**: La branche par défaut est suivie dans le cas de plusieurs branches. Vous pouvez spécifier uniquement une branche par défaut.
+      * **Ajouter une branche :** ajoutez d’autres branches à l’étape.
+      * **Sélectionner l’expression de routage** : sélectionnez l’expression de routage pour évaluer la branche active. Les valeurs possibles sont les suivantes : Définition de règle, Script externe et Script ECMA.
+      * **Cliquer pour ajouter une expression** : ajoutez une expression pour évaluer la branche active si vous sélectionnez **Définition de règle** comme expression de routage.
+      * **Chemin du script** : chemin d’accès à un fichier contenant le script pour évaluer la branche active si vous sélectionnez **Script externe** comme expression de routage.
+      * **Script** : ajoutez le script dans la zone pour évaluer la branche active si vous sélectionnez **Script ECMA** comme expression de routage.
+      * **Itinéraire par défaut** : la branche par défaut est suivie, en cas de branches multiples. Vous ne pouvez spécifier qu’une seule branche par défaut.
 
    >[!NOTE]
    >
-   >    * Une branche est évaluée à la fois en fonction de l’expression de routage.
+   >    * Les branches sont évaluées une par une en fonction de l’expression de routage.
    >    * Les branches sont évaluées de haut en bas.
-   >    * Le premier script qui renvoie true est exécuté.
-   >    * Si aucune branche n’a la valeur true, le workflow ne progresse pas.
+   >    * Le premier script qui renvoie la valeur true est exécuté.
+   >    * Si aucune branche ne renvoie la valeur true, le workflow ne progresse pas.
 
 
    >[!NOTE]
@@ -229,7 +231,7 @@ Pour configurer la division :
 
 ### Étape du participant {#participant-step}
 
-Une **étape du participant** vous permet d’attribuer la possession d’une action particulière. Le workflow s’exécute uniquement lorsque l’utilisateur a manuellement reconnu l’étape. Cela est utile lorsque vous souhaitez que quelqu’un d’autre agisse sur le workflow, par exemple, lors d’une étape de révision.
+Une **étape du participant** vous permet d’attribuer la possession d’une action particulière. Le workflow s’exécute uniquement lorsque l’utilisateur a manuellement reconnu l’étape. Cette fonction est utile lorsque vous souhaitez que quelqu’un d’autre agisse sur le workflow, par exemple, lors d’une étape de révision.
 
 Bien que ceci ne soit pas directement associé, l’autorisation de l’utilisateur doit être prise en compte lors de l’attribution d’une action ; l’utilisateur doit avoir accès à la page qui est la charge utile du workflow.
 
@@ -237,7 +239,7 @@ Bien que ceci ne soit pas directement associé, l’autorisation de l’utilisat
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * [Utilisateur/Groupe](#step-properties-user-group-tab)
 
 >[!NOTE]
@@ -251,7 +253,7 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
 >[!NOTE]
 >
->Certaines propriétés doivent être configurées pour activer les notifications électroniques. Vous pouvez également personnaliser le modèle de courrier électronique ou en ajouter un pour une nouvelle langue. Voir [Configuration des notifications par e-mail](/help/sites-administering/notification.md#configuringemailnotification) pour configurer les notifications électroniques dans AEM.
+>Certaines propriétés doivent être configurées pour activer les notifications électroniques. Vous pouvez également personnaliser le modèle de courrier électronique ou en ajouter un pour une nouvelle langue. Pour configurer des notifications par e-mail dans AEM, consultez la section [Configuration des notifications par e-mail](/help/sites-administering/notification.md#configuringemailnotification).
 
 ### Étape de participant de la boîte de dialogue {#dialog-participant-step}
 
@@ -265,37 +267,37 @@ Pour configurer l’étape, vous spécifiez le groupe ou l’utilisateur auquel 
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * [Utilisateur/Groupe](#step-properties-user-group-tab)
 * **Boîte de dialogue**
 
-   * **Chemin de la boîte de dialogue**: Chemin d’accès au noeud de boîte de dialogue de la propriété [boîte de dialogue que vous créez](#dialog-participant-step-creating-a-dialog).
+   * **Chemin de la boîte de dialogue** : chemin du nœud de la [boîte de dialogue que vous créez](#dialog-participant-step-creating-a-dialog).
 
 #### Étape de participant de boîte de dialogue – création d’une boîte de dialogue {#dialog-participant-step-creating-a-dialog}
 
 Pour créer une boîte de dialogue, vous devez :
 
 * choisir l’endroit où les données résultantes seront [stockées dans la charge utile](#dialog-participant-step-storing-data-in-the-payload) ;
-* [définir la boîte de dialogue ; notamment les champs utilisés pour collecter (et enregistrer) les données](#dialog-participant-step-dialog-definition).
+* [Définir la boîte de dialogue ; notamment les champs utilisés pour collecter (et enregistrer) les données](#dialog-participant-step-dialog-definition).
 
 #### Étape de participant de boîte de dialogue – stockage des données dans la charge utile {#dialog-participant-step-storing-data-in-the-payload}
 
 Vous pouvez stocker des données de widget dans la charge utile de workflow ou dans les métadonnées d’élément de travail. Le format de la propriété `name` du nœud de widget détermine l’endroit où les données sont stockées.
 
-* **Stockage des données avec la charge utile**
+* **Stockage des données avec le payload**
 
-   * Pour stocker les données de widget en tant que propriété de la charge utile du workflow, utilisez le format suivant pour la valeur de la propriété name du noeud de widget :
+   * Pour stocker des données de widget en tant que propriété du payload de workflow, utilisez le format suivant pour la propriété de nom du nœud de widget :
       `./jcr:content/nodename`
 
-   * Les données sont stockées dans la propriété `nodename` du nœud de charge utile. Si le nœud ne contient pas cette propriété, elle est créée.
+   * Les données sont stockées dans la propriété `nodename` du nœud de payload. Si le nœud ne contient pas cette propriété, elle est créée.
    * Une fois les données stockées avec la charge utile, les utilisations suivantes de la boîte de dialogue avec la même charge utile remplacent la valeur de la propriété.
 
 * **Stockage des données avec l’élément de travail**
 
-   * Pour stocker des données de widget en tant que propriété des métadonnées de l’élément de travail, utilisez le format suivant pour la valeur de la propriété name :
+   * Pour stocker des données de widget en tant que propriété de métadonnées d’élément de travail, utilisez le format suivant pour la valeur de la propriété de nom :
       `nodename`
 
-   * Les données sont stockées dans la variable `nodename` de l’élément de travail ; `metadata`. Les données sont conservées si la boîte de dialogue utilisée ultérieurement présente la même charge utile.
+   * Les données sont stockées dans la propriété `nodename` des `metadata` de l’élément de travail. Les données sont conservées si la boîte de dialogue utilisée ultérieurement présente la même charge utile.
 
 #### Étape de participant de la boîte de dialogue – définition de boîte de dialogue {#dialog-participant-step-dialog-definition}
 
@@ -326,7 +328,7 @@ Vous pouvez stocker des données de widget dans la charge utile de workflow ou d
 
 1. **Propriété Chemin de la boîte de dialogue**
 
-   Le **Étape de participant de la boîte de dialogue** contient la variable **Chemin de la boîte de dialogue** (ainsi que les propriétés d’une propriété [Étape du participant](#participant-step)). La valeur de la propriété **Chemin de la boîte de dialogue** est le chemin du nœud `dialog` de la boîte de dialogue.
+   L’**étape de participant de la boîte de dialogue** possède la propriété **Chemin de la boîte de dialogue** (ainsi que les propriétés d’une [étape de participant](#participant-step)). La valeur de la propriété **Chemin de la boîte de dialogue** est le chemin du nœud `dialog` de la boîte de dialogue.
 
    Par exemple, la boîte de dialogue se trouve dans un composant nommé `EmailWatch` qui est stocké dans le nœud :
 
@@ -340,7 +342,7 @@ Vous pouvez stocker des données de widget dans la charge utile de workflow ou d
 
 1. **Exemple de définition de boîte de dialogue**
 
-   Le fragment de code XML suivant représente une boîte de dialogue qui stocke une `String` dans la variable `watchEmail` noeud du contenu de la payload. Le nœud de titre représente le composant [textfield](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) :
+   Le fragment de code XML ci-après représente une boîte de dialogue qui stocke une valeur de `String`chaîne dans le nœud `watchEmail` du contenu du payload. Le nœud de titre représente le composant [textfield](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html) :
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -382,7 +384,7 @@ Pour configurer l’étape, vous sélectionnez un **programme de sélection des 
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * **Programme de sélection des participants**
 
    * **Programme de sélection des participants** : nom du [programme de sélection des participants que vous créez](#developingtheparticipantchooser).
@@ -401,7 +403,7 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
 
 * **ECMAscript**
 
-   Les scripts doivent inclure une fonction nommée getParticipant qui renvoie un ID utilisateur en tant que `String` . Stockez vos scripts personnalisés dans, par exemple, le `/apps/myapp/workflow/scripts` ou un sous-dossier.
+   Les scripts doivent intégrer une fonction nommée getParticipant qui renvoie un ID utilisateur comme valeur de `String`. Stockez vos scripts personnalisés, par exemple, dans le dossier `/apps/myapp/workflow/scripts` ou dans un sous-dossier.
 
    Un exemple de script est inclus dans une instance AEM standard :
 
@@ -412,7 +414,7 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
    >Vous ne devez ***rien*** modifier dans le chemin `/libs`.
    >
    >
-   >En effet, le contenu de `/libs` est remplacé la prochaine fois que vous mettez à niveau votre instance (et peut l’être lorsque vous appliquez un correctif ou un Feature Pack).
+   >Cela est dû au fait que le contenu de `/libs` sera écrasé la prochaine fois que vous mettrez à niveau votre instance (et éventuellement lors de l’application d’un correctif logiciel ou d’un pack de fonctionnalités).
 
    Ce script choisit l’initiateur de workflow en tant que participant :
 
@@ -424,33 +426,33 @@ Créez un service OSGi ou un ECMAScript qui sélectionne un utilisateur auquel a
 
    >[!NOTE]
    >
-   >Le **Programme de sélection des participants de l’initiateur de workflow** étend le composant **Étape choix dynamique de participant** et utilise ce script comme implémentation de l’étape.
+   >Le composant **Programme de sélection des participants de l’initiateur de workflow** étend l’**étape de participant dynamique** et utilise ce script comme mise en œuvre de l’étape.
 
 * **Service OSGi**
 
-   Les services doivent mettre en oeuvre la variable [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) . L’interface définit les membres suivants :
+   Les services doivent mettre en œuvre l’interface [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html). L’interface définit les membres suivants :
 
-   * `SERVICE_PROPERTY_LABEL` field : Utilisez ce champ pour spécifier le nom du programme de sélection des participants. Le nom s’affiche dans la liste des programmes de sélection des participants disponibles dans les propriétés **Étape choix dynamique de participant**.
+   * Le champ `SERVICE_PROPERTY_LABEL` : utilisez-le pour spécifier le nom du programme de sélection des participants. Le nom s’affiche dans la liste des programmes de sélection des participants disponibles dans les propriétés d’**Étape de participant dynamique**.
 
-   * `getParticipant` method : Renvoie l’identifiant principal résolu dynamiquement en tant que `String` .
+   * La méthode `getParticipant` : renvoie l’ID d’entité de sécurité résolue dynamiquement en tant que valeur de `String`.
    >[!CAUTION]
    >
-   >Le `getParticipant` renvoie l’identifiant principal résolu dynamiquement. Il peut s’agir d’un ID de groupe ou d’utilisateur.
+   >La méthode `getParticipant` renvoie l’ID d’entité de sécurité résolue dynamiquement. Il peut s’agir d’un ID de groupe ou d’utilisateur.
    >
    >
-   >Toutefois, un ID de groupe ne peut être utilisé pour une **étape de participant**, lorsqu’une liste de participants est renvoyée. Pour un **Étape choix dynamique de participant** une liste vide est renvoyée et ne peut pas être utilisée pour la délégation.
+   >Toutefois, un ID de groupe ne peut être utilisé pour une **étape de participant**, lorsqu’une liste de participants est renvoyée. Pour une **étape de participant dynamique**, une liste vide est renvoyée et elle ne peut pas être utilisée pour la délégation.
 
-   Pour rendre votre mise en œuvre disponible aux composants **Étape choix dynamique de participant**, ajoutez votre classe Java à un lot OSGi qui exporte le service et déployez le lot vers le serveur AEM.
+   Pour rendre votre mise en œuvre disponible pour les composants d’**Étape de participant dynamique**, ajoutez votre classe Java à un lot OSGi qui exporte le service et déployez le lot vers le serveur AEM.
 
    >[!NOTE]
    >
-   >Le **programme de sélection aléatoire des participants** est un exemple de service qui sélectionne un utilisateur aléatoire ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). L’exemple de composant d’étape **Programme de sélection aléatoire des participants** étend l’**étape choix dynamique de participant** et utilise ce service comme mise en œuvre de l’étape.
+   >Le **programme de sélection aléatoire des participants** est un exemple de service qui sélectionne un utilisateur aléatoire (`com.day.cq.workflow.impl.process.RandomParticipantChooser`). L’exemple de composant d’étape **Programme de sélection aléatoire des participants** étend l’**étape choix dynamique de participant** et utilise ce service comme mise en œuvre de l’étape.
 
 #### Étape choix dynamique de participant – exemple de service Programme de sélection des participants {#dynamic-participant-step-example-participant-chooser-service}
 
 La classe Java suivante met en œuvre l’interface `ParticipantStepChooser`. La classe renvoie le nom du participant qui a initié le workflow. Le code utilise la même logique que l’exemple de script (`initiator-participant-chooser.ecma`).
 
-Le `@Property` annotation définit la valeur de la propriété `SERVICE_PROPERTY_LABEL` champ à `Workflow Initiator Participant Chooser`.
+L’annotation `@Property` définit la valeur du champ `SERVICE_PROPERTY_LABEL` sur `Workflow Initiator Participant Chooser`.
 
 ```java
 package com.adobe.example;
@@ -489,9 +491,9 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 }
 ```
 
-Dans le **Étape choix dynamique de participant** propriétés, boîte de dialogue **Programme de sélection des participants** La liste inclut l’élément `Workflow Initiator Participant Chooser (script)`, qui représente ce service.
+Dans la boîte de dialogue des propriétés d’**Étape de participant dynamique**, la liste **Programme de sélection des participants** inclut l’élément `Workflow Initiator Participant Chooser (script)`, qui représente ce service.
 
-Lorsque le modèle de workflow est démarré, le journal indique l’ID de l’utilisateur qui a initié le workflow et qui se voit attribuer l’élément de travail. Dans cet exemple, l’utilisateur `admin` a commencé le workflow.
+Lorsque le modèle de workflow est démarré, le journal indique l’ID de l’utilisateur qui a initié le workflow et qui se voit attribuer l’élément de travail. Dans cet exemple, l’utilisateur `admin` a lancé le workflow.
 
 `13.09.2015 15:48:53.037 *INFO* [10.176.129.223 [1347565733037] POST /etc/workflow/instances HTTP/1.1] com.adobe.example.InitiatorParticipantChooser Assigning Dynamic Participant Step work item to admin`
 
@@ -509,33 +511,33 @@ Pour configurer l’étape, vous spécifiez le groupe ou l’utilisateur auquel 
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * [Utilisateur/Groupe](#step-properties-user-group-tab)
 * **Formulaire**
 
-   * **Chemin du formulaire**: Le chemin d’accès à [formulaire que vous créez](#form-participant-step-creating-the-form).
+   * **Chemin du formulaire** : chemin du [formulaire que vous créez](#form-participant-step-creating-the-form).
 
 #### Étape de participant du formulaire – création de formulaire {#form-participant-step-creating-the-form}
 
 Créez un formulaire à utiliser avec une **étape de participant du formulaire** de façon normale. Toutefois, les formulaires d’une étape de participant du formulaire doivent avoir les configurations suivantes :
 
-* Le **Début du formulaire** doit avoir la propriété **Type d’action** définie sur `Edit Workflow Controlled Resource(s)`.
-* Le **Début du formulaire** doit avoir une valeur pour la variable `Form Identifier` .
-* Les composants de formulaire doivent présenter la propriété **Nom de l’élément** définie sur le chemin du nœud dans lequel les données de champs sont stockées. Le chemin d’accès doit localiser un noeud dans le contenu de la charge utile de workflow. La valeur utilise le format suivant :
+* Le composant **Début de formulaire** doit avoir la propriété **Type d’action** définie sur `Edit Workflow Controlled Resource(s)`.
+* Le composant **Début de formulaire** doit présenter une valeur pour la propriété `Form Identifier`.
+* Les composants de formulaire doivent présenter la propriété **Nom de l’élément** définie sur le chemin du nœud dans lequel les données de champs sont stockées. Le chemin doit pouvoir localiser un nœud dans le contenu de la charge utile du workflow. La valeur utilise le format suivant :
 
    `./jcr:content/path_to_node`
 
-* Le formulaire doit inclure un **Bouton(s) d’envoi de workflow** composant. Vous ne configurez pas de propriétés du composant.
+* Le formulaire doit inclure un composant **Bouton(s) d’envoi du workflow**. Vous ne configurez pas de propriétés du composant.
 
-Les exigences de votre workflow indiquent où vous devez stocker les données de champs. Par exemple, les données de champs peuvent être utilisées pour configurer les propriétés du contenu de la page. La valeur suivante d’une **Nom de l’élément** stocke les données de champ comme valeur de la propriété `redirectTarget` de la propriété `jcr:content` node:
+Les exigences de votre workflow indiquent où vous devez stocker les données de champs. Par exemple, les données de champs peuvent être utilisées pour configurer les propriétés du contenu de la page. La valeur suivante d’une propriété **Nom de l’élément** stocke les données de champs comme valeur de la propriété `redirectTarget` du nœud `jcr:content` :
 
 `./jcr:content/redirectTarget`
 
-Dans l&#39;exemple suivant, les données de champ sont utilisées comme contenu d&#39;une **Texte** sur la page de payload :
+Dans l’exemple suivant, les données de champs sont utilisées en tant que contenu d’un composant **Texte** sur la page du payload :
 
 `./jcr:content/par/text_3/text`
 
-Le premier exemple peut être utilisé pour toute page dont le rendu est effectué par le composant `cq:Page`. Le second exemple peut uniquement être utilisé lorsque la page de la charge utile inclut un composant **Texte** possédant l’ID `text_3`.
+Le premier exemple peut être utilisé pour toute page dont le rendu est effectué par le composant `cq:Page`. Le second exemple peut uniquement être utilisé lorsque la page du payload inclut un composant **Texte** possédant l’ID `text_3`.
 
 Le formulaire peut se trouver n’importe où dans le référentiel, toutefois les utilisateurs du workflow doivent être autorisés à lire le formulaire.
 
@@ -549,7 +551,7 @@ L’étape **Programme de sélection aléatoire des participants** est un progra
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * **Arguments**
 
    * **Participants** : spécifie la liste des utilisateurs disponibles pour la sélection. Pour ajouter un utilisateur à la liste, cliquez sur **Ajouter un élément**, puis saisissez le chemin du répertoire de base du nœud de l’utilisateur ou l’ID de l’utilisateur. L’ordre des utilisateurs n’affecte pas la probabilité de se voir attribuer un élément de travail.
@@ -562,11 +564,11 @@ L’étape **Programme de sélection des participants de l’initiateur de workf
 
 Pour configurer l’étape, modifiez-la à l’aide des onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 
 ## Étape du processus {#process-step}
 
-A **Étape du processus** exécute un ECMAScript ou appelle un service OSGi pour effectuer un traitement automatique.
+Une **étape du processus** exécute un ECMAScript ou appelle un service OSGi pour effectuer un traitement automatique.
 
 ![wf-32](assets/wf-32.png)
 
@@ -574,10 +576,10 @@ A **Étape du processus** exécute un ECMAScript ou appelle un service OSGi pour
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](#step-properties-common-tab)
+* [Commun](#step-properties-common-tab)
 * **Processus**
 
-   * **Processus** : mise en œuvre de processus à exécuter. Utilisez le menu déroulant pour sélectionner le service ECMAScript ou OSGi. Pour obtenir des informations sur :
+   * **Processus** : mise en œuvre de processus à exécuter. Utilisez le menu déroulant pour sélectionner ECMAScript ou Service OSGi. Pour obtenir des informations sur :
 
       * les ECMAScripts et les services OSGi standard, voir [Processus intégrés pour les étapes du processus](/help/sites-developing/workflows-process-ref.md) ;
       * la création d’ECMAScripts pour une étape du processus, voir [Mise en œuvre d’une étape du processus avec un ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript) ;
@@ -586,21 +588,21 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
    * **Arguments** : arguments à transmettre au processus.
 
 
-## Définir la variable {#set-variable}
+## Définition d’une variable {#set-variable}
 
-L’étape Définir la variable permet de définir la valeur d’une variable et de définir l’ordre dans lequel les valeurs sont définies. La variable est définie dans l’ordre dans lequel les mappages de variables sont répertoriés à l’étape Définir la variable .
+Vous pouvez utiliser l’étape Définir une variable pour définir la valeur d’une variable et l’ordre de définition des valeurs. La variable est définie dans l’ordre dans lequel les mappages de variables sont répertoriés à l’étape Définir une variable.
 
 ![Ajout d’un mappage pour définir une variable](assets/set_variable_addmappingnew.png)
 
-### Set Variable - Configuration {#setvariable}
+### Définition d’une variable - Configuration {#setvariable}
 
 Pour configurer l’étape, modifiez et utilisez les onglets suivants :
 
-* [Courant](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
-* **Correspondance**
+* [Commun](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
+* **Mappage**
 
-   * **Sélectionner la variable :** Utilisez cette option pour sélectionner une variable afin de définir sa valeur.
-   * **Sélectionnez Mode de mappage :** Sélectionnez un mode de mappage pour définir la valeur de la variable. En fonction du type de données de la variable, vous pouvez définir la valeur d’une variable à l’aide de l’une des options suivantes :
+   * **Sélectionner la variable :** utilisez cette option pour sélectionner une variable afin de définir sa valeur.
+   * **Sélectionnez le mode de mappage :** sélectionnez un mode de mappage pour définir la valeur de la variable. En fonction du type de données de la variable, vous pouvez définir la valeur d’une variable à l’aide de l’une des options suivantes :
 
       * **Littéral** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier.
       * **Expression** : utilisez l’option lorsque la valeur à utiliser est calculée en fonction d’une expression. L’expression est créée dans l’éditeur d’expressions fourni.
@@ -608,5 +610,5 @@ Pour configurer l’étape, modifiez et utilisez les onglets suivants :
       * **XPATH** : l’option permet d’extraire une valeur d’une variable de type XML.
       * **Relatif à la charge** : utilisez l’option lorsque la valeur à enregistrer dans la variable est disponible à un chemin d’accès relatif à la charge utile.
       * **Chemin d’accès absolu** : utilisez l’option lorsque la valeur à enregistrer dans la variable est disponible à un chemin d’accès absolu.
-   * **Spécifier la valeur :** Spécifiez une valeur à mapper à la variable. La valeur que vous indiquez dans ce champ dépend du mode de mappage.
-   * **Ajouter un mappage :** Utilisez cette option pour ajouter d’autres mappages afin de définir une valeur pour la variable.
+   * **Spécifier la valeur :** spécifiez une valeur à mapper à la variable. La valeur que vous indiquez dans ce champ dépend du mode de mappage.
+   * **Ajouter un mappage :** utilisez cette option pour ajouter d’autres mappages afin de définir une valeur pour la variable.

@@ -13,7 +13,7 @@ exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1648'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ L’utilisation de tels comptes est transparente pour vos utilisateurs, lesquels
 
 Dans AEM 6, la prise en charge de LDAP est fournie avec une nouvelle implémentation qui requiert un type de configuration différent de celui des versions précédentes.
 
-Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. Ils peuvent être configurés via la console de gestion Web à l’adresse :
+Toutes les configurations LDAP sont désormais disponibles en tant que configurations OSGi. Elles peuvent être configurées via la console de gestion web à l’adresse suivante :
 `https://serveraddress:4502/system/console/configMgr`
 
 Pour que LDAP fonctionne avec AEM, vous devez créer trois configurations OSGi :
@@ -42,15 +42,15 @@ Pour que LDAP fonctionne avec AEM, vous devez créer trois configurations OSGi 
 
 >[!NOTE]
 >
->Regardez [Module de connexion externe Oak - Authentification avec LDAP et au-delà](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) pour découvrir en détail les modules de connexion externes.
+>Regardez la vidéo [Module de connexion externe Oak - Authentification avec LDAP, et au-delà](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) pour découvrir en détail les modules de connexion externes.
 >
->Pour lire un exemple de configuration d’Experience Manager avec Apache DS, voir [Configuration d’Adobe Experience Manager 6.5 pour l’utilisation d’Apache Directory Service](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html) (en anglais).
+>Pour lire un exemple de configuration d’Experience Manager avec Apache DS, consultez la section [Configuration d’Adobe Experience Manager 6.5 pour l’utilisation d’Apache Directory Service](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html) (en anglais).
 
 ## Configuration du fournisseur d’identités LDAP {#configuring-the-ldap-identity-provider}
 
 Le fournisseur d’identités LDAP est utilisé pour définir la manière dont les utilisateurs sont extraits du serveur LDAP.
 
-Il figure dans la console de gestion sous le nom **Fournisseur d’identités LDAP Oak Apache Jackrabbit**.
+Il figure dans la console de gestion sous le nom **Fournisseur d’identités LDAP Oak Apache Jackrabbit**.
 
 Les options de configuration suivantes sont disponibles pour le fournisseur d’identités LDAP :
 
@@ -58,7 +58,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
  <tbody>
   <tr>
    <td><strong>Nom du fournisseur LDAP</strong></td>
-   <td>Nom de cette configuration du fournisseur LDAP.</td>
+   <td>Nom de la configuration de ce fournisseur LDAP.</td>
   </tr>
   <tr>
    <td><strong>Nom d’hôte du serveur LDAP</strong><br /> </td>
@@ -93,15 +93,15 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
    <td>Durée jusqu’à ce que la recherche expire</td>
   </tr>
   <tr>
-   <td><strong>Principal max du pool d'administrateurs</strong></td>
-   <td>Taille principale maximale du pool de connexions d’administrateur.</td>
+   <td><strong>max actif sur le pool d’administration</strong></td>
+   <td>Nombre maximale d’actifs sur le pool de connexions d’administration.</td>
   </tr>
   <tr>
-   <td><strong>Principale maximale du pool d’utilisateurs</strong></td>
-   <td>Taille principale maximale du pool de connexions utilisateur.</td>
+   <td><strong>Max actif sur le pool d’utilisateurs</strong></td>
+   <td>Nombre maximal d’actifs sur le pool de connexions utilisateur.</td>
   </tr>
   <tr>
-   <td><strong>ND de base de l’utilisateur</strong></td>
+   <td><strong>DN de base de l’utilisateur</strong></td>
    <td>DN des recherches d’utilisateurs</td>
   </tr>
   <tr>
@@ -114,7 +114,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
   </tr>
   <tr>
    <td><strong>Filtre supplémentaire utilisateur</strong></td>
-   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
+   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche d’utilisateurs. Le filtre final est formaté comme suit : '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>Chemins de noms utilisateur</strong></td>
@@ -134,7 +134,7 @@ Les options de configuration suivantes sont disponibles pour le fournisseur d’
   </tr>
   <tr>
    <td><strong>Filtre supplémentaire de groupe</strong></td>
-   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche de groupes. Le filtre final est formaté comme suit : '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
+   <td>Filtre LDAP supplémentaire à utiliser lors de la recherche de groupes. Le filtre final est formaté comme suit : '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>Chemins d’accès DN du groupe</strong></td>
@@ -174,15 +174,15 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
    <td>Définition du mappage de liste des propriétés locales à partir de propriétés externes.</td>
   </tr>
   <tr>
-   <td><strong>Préfixe de chemin d’accès utilisateur</strong></td>
+   <td><strong>Préfixe du chemin d’accès de l’utilisateur</strong></td>
    <td>Préfixe de chemin d’accès utilisé lors de la création de nouveaux utilisateurs.</td>
   </tr>
   <tr>
-   <td><strong>Expiration de l’appartenance des utilisateurs</strong></td>
+   <td><strong>Expiration de l’appartenance de l’utilisateur</strong></td>
    <td>Heure à partir de laquelle l’appartenance expire.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Profondeur d'imbrication de l'appartenance utilisateur</strong></td>
+   <td><strong>Niveau d’imbrication de l’appartenance de l’utilisateur</strong></td>
    <td>Renvoie la profondeur maximale de l’imbrication de groupes lorsque les relations d’appartenance sont synchronisées. Une valeur égale à 0 désactive la recherche de l’appartenance à un groupe. Une valeur égale à 1 ajoute uniquement les groupes directs d’un utilisateur. Cette valeur est sans effet lorsque des groupes individuels uniquement sont synchronisés dans le cadre de la synchronisation d’un ancêtre d’appartenance d’utilisateur.</td>
   </tr>
   <tr>
@@ -198,7 +198,7 @@ Les options de configuration suivantes sont disponibles pour le gestionnaire de 
    <td>Définition du mappage de liste des propriétés locales à partir de propriétés externes.</td>
   </tr>
   <tr>
-   <td><strong>Préfixe de chemin de groupe</strong></td>
+   <td><strong>Préfixe du chemin d’accès du groupe</strong></td>
    <td>Préfixe de chemin d’accès utilisé lors de la création de groupes.</td>
   </tr>
  </tbody>
@@ -210,7 +210,7 @@ Le module de connexion externe est placé sous **Module de connexion externe Apa
 
 >[!NOTE]
 >
->Le module de connexion externe Apache Jackrabbit Oak met en œuvre les spécifications JAAS (Java Authentication and Authorization Service). Voir le [Guide de référence de la sécurité Oracle Java officiel](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) pour plus d’informations.
+>Le module de connexion externe Apache Jackrabbit Oak met en œuvre les spécifications JAAS (Java Authentication and Authorization Service). Consultez le [Guide de référence de la sécurité Oracle Java officiel](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) pour plus d’informations.
 
 Son objectif est de définir quel fournisseur d’identités et quel gestionnaire de synchronisation utiliser, reliant ainsi les deux modules.
 
@@ -218,8 +218,8 @@ Les options de configuration suivantes sont disponibles :
 
 | **Classement JAAS** | Spécification du classement (c’est-à-dire de l’ordre de tri) de cette entrée de module de connexion. Les entrées sont triées dans l’ordre décroissant (les configurations ayant une valeur de rang supérieure apparaissent en premier). |
 |---|---|
-| **Indicateur de contrôle JAAS** | Propriété spécifiant si un module de connexion est OBLIGATOIRE, OBLIGATOIRE, SUFFISANT ou FACULTATIF. Reportez-vous à la documentation de configuration JAAS pour plus d’informations sur la signification de ces indicateurs. |
-| **Domaine JAAS** | Nom du domaine (ou nom de l’application) sur lequel le module de connexion est enregistré. Si aucun nom de domaine n’est indiqué, le module de connexion est enregistré avec un domaine par défaut tel que configuré dans la configuration Felix JAAS. |
+| **Indicateur de contrôle JAAS** | Propriété spécifiant si un module de connexion est OBLIGATOIRE, REQUIS, SUFFISANT ou FACULTATIF. Reportez-vous à la documentation de configuration JAAS pour plus d’informations sur la signification de ces indicateurs. |
+| **Domaine JAAS** | Nom du domaine (ou nom de l’application) sur lequel LoginModule est enregistré. Si aucun nom de domaine n’est indiqué, LoginModule est enregistré avec un domaine par défaut tel que configuré dans la configuration Felix JAAS. |
 | **Nom du fournisseur d’identité** | Nom du fournisseur d’identité. |
 | **Nom du gestionnaire de synchronisation** | Nom du gestionnaire de synchronisation. |
 
@@ -243,9 +243,9 @@ Vous pouvez configurer AEM 6 pour vous authentifier auprès de LDAP via SSL en 
 
 Les certificats auto-signés peuvent être utilisés lors de la configuration d’AEM pour s’authentifier auprès d’AEM via SSL. Voici un exemple de méthode de travail utilisée pour générer des certificats à utiliser avec AEM.
 
-1. Assurez-vous qu’une bibliothèque SSL est installée et fonctionne. Cette procédure utilise OpenSSL comme exemple.
+1. Assurez-vous qu’une bibliothèque SSL est installée et fonctionne. Cette procédure prend OpenSSL comme exemple.
 
-1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Pour ce faire, copiez le fichier de configuration par défaut **openssl.cnf ** et personnalisez-le. Sur les systèmes UNIX, il se trouve généralement à l’adresse `/usr/lib/ssl/openssl.cnf`
+1. Créez un fichier de configuration OpenSSL personnalisée (cnf). Vous pouvez l’effectuer en copiant le fichier de configuration **openssl.cnf** par défaut et en le personnalisant. Sur les systèmes UNIX, ce fichier se trouve généralement dans `/usr/lib/ssl/openssl.cnf`.
 
 1. Créez la clé racine CA en exécutant la commande ci-dessous sur un terminal :
 
@@ -281,12 +281,12 @@ Pour activer la journalisation du débogage, procédez comme suit :
 
 * Niveau de consignation : Débogage
 * Fichier journal logs/ldap.log
-* Modèle de message : {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Motif de message : {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Niveau de consignation : Débogage
 * Fichier journal : logs/external.log
-* Modèle de message : {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Motif de message : {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Journal : org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## À propos de l’affiliation de groupe {#a-word-on-group-affiliation}

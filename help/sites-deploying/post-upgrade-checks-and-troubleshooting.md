@@ -1,5 +1,5 @@
 ---
-title: 'Vérifications et dépannage après une mise à niveau '
+title: Vérifications et dépannage après une mise à niveau
 seo-title: Post Upgrade Checks and Troubleshooting
 description: Découvrez comment résoudre les problèmes qui peuvent apparaître à la suite d’une mise à niveau.
 seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
@@ -15,26 +15,26 @@ exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1813'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Vérifications et dépannage après une mise à niveau {#post-upgrade-checks-and-troubleshooting}
+# Vérifications et dépannage après une mise à niveau{#post-upgrade-checks-and-troubleshooting}
 
 ## Vérifications après une mise à niveau  {#post-upgrade-checks}
 
 Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), les activités suivantes doivent être exécutées pour finaliser la mise à niveau. Nous partons du principe qu’AEM a été démarré avec le jar 6.5 et que la base de code mis à niveau a été déployée.
 
-* [Vérifiez les journaux pour la réussite de la mise à niveau](#main-pars-header-290365562)
+* [Vérification des journaux pour la réussite de la mise à niveau](#main-pars-header-290365562)
 
 * [Vérification des lots OSGi](#main-pars-header-1637350649)
 
 * [Vérification de la version Oak](#main-pars-header-1293049773)
 
-* [Inspection du dossier PreUpgradeBackup](#main-pars-header-988995987)
+* [Inspection de dossier PreUpgradeBackup](#main-pars-header-988995987)
 
 * [Validation initiale des pages](#main-pars-header-20827371)
-* [Application des modules de service AEM](#main-pars-header-215142387)
+* [Application de packs de service AEM](#main-pars-header-215142387)
 
 * [Migration des fonctionnalités AEM](#main-pars-header-1434457709)
 
@@ -75,25 +75,25 @@ Le fichier error.log doit être soigneusement passé en revue pendant et après 
 
 ### Vérification des lots OSGi {#verify-osgi-bundles}
 
-Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots ne sont pas démarrés. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
+Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n’ont pas démarré. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
 
 ### Vérification de la version Oak {#verify-oak-version}
 
-Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers la version **1.10.2**. Pour vérifier la version Oak, accédez à la console OSGi et inspectez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
+Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers la version **1.10.2**. Pour vérifier la version Oak, accédez à la console OSGi et inspectez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Inspection du dossier PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
-Pendant la mise à niveau, AEM tentera de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous avez peut-être besoin d’[activer temporairement CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+Pendant la mise à niveau, AEM essaiera de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous avez peut-être besoin d’[activer temporairement CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED` (TERMINÉ). Le dossier **to-process** doit être vide et le nœud **overwritten** (remplacé) indique les nœuds qui ont été remplacés lors de la mise à niveau. Le contenu sous le nœud **leftovers** indique le contenu qui ne peut pas être fusionné en toute sécurité lors de la mise à niveau. Si votre implémentation dépend de nœuds enfants (pas déjà installés par votre module de code mis à niveau), ils doivent être fusionnés manuellement.
+Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED`. Le dossier **to-process** doit être vide et le nœud **overwritten** (remplacé) indique les nœuds qui ont été remplacés lors de la mise à niveau. Le contenu sous le nœud **leftovers** indique le contenu qui ne peut pas être fusionné en toute sécurité lors de la mise à niveau. Si votre implémentation dépend de nœuds enfants (pas déjà installés par votre module de code mis à niveau), ils doivent être fusionnés manuellement.
 
 Désactivez CRXDE Lite après cet exercice si vous êtes dans un environnement intermédiaire ou de production.
 
 ### Validation initiale des pages {#initial-validation-of-pages}
 
-Effectuez une première validation de plusieurs pages dans AEM. Si vous mettez à niveau un environnement de création, ouvrez la page de démarrage et la page d’accueil ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Dans les environnements de création et de publication, ouvrez quelques pages d’application et testez-les pour vous assurer qu’elles fonctionnent correctement. En cas de problème, veuillez consulter le fichier `error.log` pour un dépannage.
+Effectuez une première validation de plusieurs pages dans AEM. En cas de mise à niveau d’un environnement de création, ouvrez la page de démarrage et la page d’accueil ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Dans les environnements de création et de publication, ouvrez quelques pages d’application et testez-les pour vous assurer qu’elles fonctionnent correctement. En cas de problème, veuillez consulter le fichier `error.log` pour un dépannage.
 
-### Application des modules de service AEM {#apply-aem-service-packs}
+### Application de packs de service AEM {#apply-aem-service-packs}
 
 Appliquez tout Service Pack AEM 6.5 qui a été publié, le cas échéant.
 
@@ -121,7 +121,7 @@ Exécutez le plan de test détaillé tel que défini dans [Mise à niveau du cod
 
 ### Activation des agents de réplication {#enable-replication-agents}
 
-Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents peuvent se connecter aux instances de publication respectives. Voir [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus de détails sur l’ordre des événements. 
+Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents peuvent se connecter aux instances de publication respectives. Consultez la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus de détails sur l’ordre des événements. 
 
 ### Activation des tâches planifiées personnalisées {#enable-custom-scheduled-jobs}
 
@@ -175,13 +175,13 @@ Enfin, recherchez une configuration incorrecte que Javascript n’arrive pas à 
 
 Dans la plupart des cas, les causes premières de ces problèmes sont les mêmes que pour les lots qui ne sont pas démarrés ou les modules non installés avec pour seule différence que les problèmes commencent à se produire lors de la première utilisation des composants.
 
-La manière de gérer le code personnalisé erroné consiste à réaliser en premier lieu un test de détection de fumée afin d’identifier la cause. Une fois que vous l’avez trouvée, consultez les recommandations de la section [link] de l’article pour savoir comment les corriger.
+La manière de gérer le code personnalisé erroné consiste à réaliser en premier lieu un test de détection de fumée afin d’identifier la cause. Une fois que vous l’avez trouvée, consultez les recommandations de cette section de la [rubrique] pour obtenir des moyens de corriger le problème.
 
 ### Personnalisations manquantes sous /etc {#missing-customizations-under-etc}
 
-`/apps` et `/libs` sont bien gérés par la mise à niveau, mais les modifications sous `/etc` peut nécessiter une restauration manuelle à partir de `/var/upgrade/PreUpgradeBackup` après la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
+Les `/apps` et `/libs` sont correctement gérés par la mise à niveau mais les modifications sous `/etc` peuvent nécessiter une restauration manuelle à partir de `/var/upgrade/PreUpgradeBackup` après la mise à niveau. Veillez à inspecter cet emplacement pour identifier tout contenu devant être fusionné manuellement.
 
-### Analyse des journaux error.log et upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### Analyse des journaux error.log et upgrade.log  {#analyzing-the-error.log-and-upgrade.log}
 
 Dans la plupart des cas, les journaux doivent être consultés à la recherche d’erreurs afin de trouver la cause d’un problème. Néanmoins, dans le cas d’une mise à niveau, il est également requis de surveiller les problèmes de dépendance car des lots anciens n’ont peut-être pas été mis à niveau correctement.
 
@@ -193,11 +193,11 @@ grep -v UnrelatedErrorString
 
 Certains messages d’erreur peuvent ne pas être immédiatement explicatifs. Dans ce cas, l’étude du contexte dans lequel ils se sont produits peut également aider à comprendre où l’erreur a été créée. Vous pouvez séparer l’erreur à l’aide de :
 
-* `grep -B` pour ajouter des lignes avant l’erreur ;
+* `grep -B` pour l’ajout de lignes avant l’erreur
 
 ou
 
-* `grep -A` pour ajouter des lignes après.
+* `grep -A` pour l’ajout de lignes après l’erreur.
 
 Dans quelques rares cas, vous rencontrez des messages WARN accompagnant l’erreur. En effet, l’erreur peut provenir d’un problème réel et l’application n’est pas toujours en mesure de déterminer s’il s’agit d’une véritable erreur. Assurez-vous de consulter également ces messages.
 

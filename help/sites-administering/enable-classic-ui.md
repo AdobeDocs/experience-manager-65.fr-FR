@@ -26,4 +26,4 @@ Avec la fonctionnalité tactile désormais au même niveau, voire dépassant l�
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’état de parité des fonctionnalités avec l’IU classique, voir le document [Parité des fonctionnalités de l’IU tactile](/help/release-notes/touch-ui-features-status.md).
+>Pour plus d’informations sur le statut de parité des fonctionnalités avec l’IU classique, consultez le document [Parité des fonctionnalités de l’IU tactile](/help/release-notes/touch-ui-features-status.md).

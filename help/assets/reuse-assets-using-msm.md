@@ -9,7 +9,7 @@ exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
 workflow-type: tm+mt
 source-wordcount: '3401'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,19 +17,19 @@ ht-degree: 96%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=en) |
+| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=fr) |
 
-Fonctionnalité de Multi Site Manager (MSM) dans [!DNL Adobe Experience Manager] permet aux utilisateurs de réutiliser du contenu créé une seule fois et réutilisé sur plusieurs emplacements web. Il en est de même pour les ressources numériques que MSM pour [!DNL Assets] . À l’aide de MSM pour [!DNL Assets], vous pouvez :
+La fonctionnalité Multi Site Manager (MSM) dans [!DNL Adobe Experience Manager] permet aux utilisateurs de réutiliser du contenu créé une fois et de le réutiliser à plusieurs emplacements sur le web. Il en est de même pour les ressources numériques que pour la fonctionnalité MSM pour [!DNL Assets]. À l’aide de MSM pour [!DNL Assets], vous pouvez :
 
 * créer des ressources une fois, puis en effectuer des copies pour les réutiliser dans d’autres zones du site ;
 * conserver plusieurs copies en synchronisation et mettre à jour la copie originale primaire une fois pour transmettre les modifications aux copies enfants ;
 * effectuer des modifications locales en suspendant temporairement ou définitivement la liaison entre les ressources parents et enfants.
 
-## Conditions préalables {#prereq}
+## Prérequis {#prereq}
 
-Pour utiliser MSM pour [!DNL Assets], installez au moins [!DNL Experience Manager] 6.5 Service Pack 1. Pour plus d’informations, voir [les notes de mise à jour du dernier Service Pack ;](/help/release-notes/release-notes.md).
+Pour utiliser MSM pour [!DNL Assets], installez au moins le pack de services 1 d’[!DNL Experience Manager] 6.5. Pour plus d’informations, consultez [les notes de mise à jour du dernier pack de service](/help/release-notes/release-notes.md).
 
 ## Présentation des avantages et des concepts {#concepts}
 
@@ -288,20 +288,20 @@ Si un dossier de Live Copy comporte plusieurs ressources, il peut être fastidie
 
    *Figure : Mettez facilement à jour de nombreuses ressources dans les dossiers de Live Copy depuis la console [!UICONTROL Aperçu de la Live Copy].*
 
-## Étendre MSM pour [!DNL Assets] {#extend-api}
+## Extension de MSM pour [!DNL Assets] {#extend-api}
 
-[!DNL Experience Manager] permet d’étendre la fonctionnalité à l’aide des API Java MSM. Pour [!DNL Assets], l’extension fonctionne de la même manière qu’avec MSM pour [!DNL Sites]. Pour plus d’informations, voir [Extension de MSM](/help/sites-developing/extending-msm.md) et les sections suivantes pour en savoir plus sur des tâches spécifiques :
+[!DNL Experience Manager] permet d’étendre la fonctionnalité à l’aide des API Java MSM. Pour [!DNL Assets], l’extension fonctionne exactement de la même manière qu’avec MSM pour [!DNL Sites]. Pour plus d’informations, consultez [Extension de MSM](/help/sites-developing/extending-msm.md) et les sections suivantes pour en savoir plus sur des tâches spécifiques :
 
 * [Présentation des API](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Création d’une action de synchronisation](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Création d’une configuration de déploiement](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
+* [Création d’une configuration de déploiement personnalisée](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
 * [Création et utilisation d’une classe LiveActionFactory simple](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
 >[!NOTE]
 >
->* Le plan directeur dans MSM pour [!DNL Sites] est appelé Source Live Copy dans MSM pour [!DNL Assets].
+>* Le plan directeur dans MSM pour [!DNL Sites] est appelé Source Live Copy dans MSM pour [!DNL Assets].
 >* La suppression de l’étape des chapitres dans l’assistant de création de site n’est pas prise en charge dans MSM pour [!DNL Assets].
->* La configuration des verrous MSM n’est pas prise en charge dans MSM pour les propriétés de page (IU tactile). [!DNL Assets].
+>* La configuration des verrous MSM sur les propriétés de la page (IU tactile) n’est pas prise en charge dans MSM pour [!DNL Assets].
 
 
 ## Impact des tâches de gestion des ressources sur les Live Copies {#manage-assets}
@@ -337,6 +337,6 @@ Voici quelques bonnes pratiques relatives à MSM :
 
 Voici une limite de MSM pour [!DNL Assets].
 
-* Les fragments de contenu ne sont pas pris en charge dans le cas d’utilisation. Lorsque vous tentez de créer leurs Live Copies, les fragments de contenu sont copiés tels quels sans aucune relation. Les CF copiés sont un instantané dans le temps et ne sont pas mis à jour lorsque les CF d’origine sont mis à jour.
+* Les fragments de contenu ne sont pas pris en charge dans le cas d’utilisation. Lorsque vous tentez de créer leurs Live Copies, les fragments de contenu sont copiés tels quels sans aucune relation. Les fragments de contenu copiés sont un instantané temporel et ne sont pas mis à jour lorsque les fragments de contenu d’origine sont mis à jour.
 
 * MSM ne fonctionne pas lorsque l’écriture différée des métadonnées est activée. Lors de l’écriture différée, l’héritage est interrompu.

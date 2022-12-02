@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,12 +34,12 @@ Le fichier s’applique à tous les projets de traduction.
 
 >[!NOTE]
 >
->Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. Voir [Restructuration des référentiels courants dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) pour plus d’informations.
+>Après une mise à niveau vers la version 6.4, il est recommandé de déplacer le fichier depuis /etc. Pour plus d’informations, consultez la section [Restructuration du référentiel commun dans AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
 
 Les règles comprennent les informations suivantes :
 
 * Le chemin d’accès au nœud auquel la règle s’applique. La règle s’applique également aux descendants du nœud.
-* Les noms des propriétés de nœud contenant le contenu à traduire. Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
+* Les noms des propriétés de nœud contenant le contenu à traduire : Cette propriété peut être spécifique à un type de ressource en particulier ou à tous les types de ressource.
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants Texte de base d’AEM sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `foundation/components/text`.
 
@@ -77,7 +77,7 @@ Chacun de ces éléments `node` présente les caractéristiques suivantes :
    * L’attribut `resourceType` contient le chemin d’accès qui correspond au composant implémentant le type de ressource.
    * Les éléments `property` enfants identifient la propriété node à traduire. Utilisez ce nœud de la même manière que les éléments `property` enfants pour les règles de nœud.
 
-La règle d’exemple suivante entraîne la traduction du contenu de toutes les propriétés `text` pour toutes les pages figurant sous le nœud `/content`. La règle est effective pour tout composant qui stocke le contenu dans une propriété `text` (par exemple, le composant Text de base et le composant Image de base).
+La règle d’exemple suivante entraîne la traduction du contenu de toutes les propriétés `text` pour toutes les pages figurant sous le nœud `/content`. La règle est effective pour tout composant qui stocke le contenu dans une propriété `text` (par exemple, le composant Texte de base et le composant Image de base).
 
 ```xml
 <node path="/content">
@@ -108,8 +108,8 @@ Utilisez la syntaxe de règle suivante pour inclure les ressources qui sont inco
 
 Chaque élément `assetNode` présente les caractéristiques suivantes :
 
-* Un attribut `resourceType` qui est égal au chemin d’accès correspondant au composant.
-* Un attribut `assetReferenceAttribute` qui est égal au nom de la propriété stockant le fichier binaire de ressource (pour les ressources incorporées) ou le chemin d’accès à la ressource référencée.
+* Un attribut `resourceType` qui est égal au chemin d’accès correspondant au composant 
+* Un attribut `assetReferenceAttribute` qui est égal au nom de la propriété stockant le fichier binaire de ressource (pour les ressources incorporées) ou le chemin d’accès à la ressource référencée
 
 L’exemple suivant extrait les images à partir du composant Image de base :
 
@@ -123,11 +123,11 @@ Le fichier translation_rules.xml est constitué d’un élément `nodelist` ayan
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -140,7 +140,7 @@ Par exemple, les règles suivantes entraînent la traduction de tout le contenu 
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -153,7 +153,7 @@ Par exemple, les règles suivantes entraînent la traduction de tout le contenu 
 
 Une console est également disponible pour configurer les règles de traduction.
 
-Pour y accéder :
+Pour y accéder, procédez comme suit :
 
 1. Accédez à **Outils** puis **Général**.
 
@@ -163,7 +163,7 @@ Pour y accéder :
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-À partir de là, vous pouvez **Ajouter un contexte**. Ceci vous permet d’ajouter un chemin d’accès.
+De là, vous pouvez **Ajouter du contexte**. Ceci vous permet d’ajouter un chemin d’accès.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -171,17 +171,17 @@ Vous devez ensuite sélectionner votre contexte et cliquer sur **Modifier**. Cet
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-Il existe quatre attributs que vous pouvez modifier via l’interface utilisateur : `isDeep`, `inherit`, `translate` et `updateDestinationLanguage`.
+Vous pouvez modifier 4 attributs via l’interface utilisateur : `isDeep`, `inherit`, `translate` et `updateDestinationLanguage`.
 
-**isDeep** Cet attribut s’applique aux filtres de noeud et est défini sur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
+**isDeep** Cet attribut s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
 
-Par exemple, les noeuds enfants sont ajoutés à une tâche de traduction même lorsque le noeud parent possède une propriété . `draftOnly` définissez cette variable sur true pour marquer le contenu du brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
+Par exemple, les nœuds enfants sont ajoutés dans une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
-Dans l’éditeur, vous pouvez vérifier/décocher **Is Deep** dans le **Filtres** .
+Dans l’éditeur, vous pouvez sélectionner ou désélectionner **Est profond** dans l’onglet **Filtres**.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
-Voici un exemple du fichier xml obtenu lorsque l’option **isDeep** n’est pas cochée dans l’interface utilisateur :
+Voici un exemple du fichier xml obtenu lorsque l’option **Est profond** n’est pas cochée dans l’interface utilisateur :
 
 ```xml
  <filter>
@@ -189,19 +189,19 @@ Voici un exemple du fichier xml obtenu lorsque l’option **isDeep** n’est pas
 </filter>
 ```
 
-**inherit** Cela s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement sur ce nœud spécifique.
+**inherit** Ceci s’applique aux propriétés. Par défaut, chaque propriété est héritée, mais si vous souhaitez qu’une propriété ne soit pas héritée sur l’enfant, vous pouvez marquer cette propriété comme étant égale à « false » pour qu’elle soit appliquée uniquement sur ce nœud spécifique.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Hériter** dans l’onglet **Propriétés**.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**translate** L’attribut translate est simplement utilisé pour spécifier si une propriété doit être traduite ou non.
+**translate** L’attribut translate sert simplement à indiquer si une propriété doit être traduite ou non.
 
-Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
+Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**.
 
-**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais des codes de langue, par exemple jcr:language. L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
+**updateDestinationLanguage** Cet attribut est utilisé pour les propriétés qui n’ont pas de texte mais qui comportent des codes de langue (par exemple, jcr:language). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
 
-Dans l’interface utilisateur, vous pouvez vérifier/décocher **Traduire** dans le **Propriétés** , mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
+Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés**, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 
 Pour aider à clarifier la différence entre `updateDestinationLanguage` et `translate`, voici l’exemple simple d’un contexte ne comportant que deux règles :
 

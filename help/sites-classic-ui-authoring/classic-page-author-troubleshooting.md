@@ -13,7 +13,7 @@ exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
 source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 * **Solutions** :
 
    * Plusieurs solutions sont possibles :
-   * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
+   * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
    * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
 
@@ -68,13 +68,13 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 ## Rechercher et remplacer - Toutes les instances ne sont pas remplacées {#find-replace-not-all-instances-are-replaced}
 
-* **Problème:**
+* **Problème :**
 
-   * Lors de l’utilisation de la variable **Chercher et Remplacer** l’option il peut arriver que toutes les instances de la variable `find` sont remplacés sur une page.
+   * Si vous utilisez l’option **Rechercher et remplacer**, il se peut que certaines instances du terme `find` ne soient pas remplacées sur une page.
 
 * **Raison** :
 
-   * La capacité de **Chercher et Remplacer** dépend de la manière dont le contenu est enregistré et s’il peut faire l’objet de recherches. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
+   * Le fonctionnement de l’option **Rechercher et remplacer** dépend de la façon dont le contenu est enregistré et s’il peut faire l’objet de recherches. Par exemple, un texte de blog est stocké dans la propriété `jcr:text`, qui n’est pas configurée pour faire l’objet de recherches. L’étendue par défaut du servlet de recherche et de remplacement couvre les propriétés suivantes :
 
       * `jcr:title`
       * `jcr:description`
@@ -83,6 +83,6 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Solution** :
 
-   * Ces définitions peuvent être modifiées dans la configuration du **servlet Day CQ WCM Find Replace** à l’aide de la **console Web**, par exemple à l’adresse
+   * Ces définitions peuvent être modifiées dans la configuration du **servlet Rechercher et remplacer de la gestion de contenu Web Day CQ** à l’aide de la **console Web**, par exemple à l’adresse
 
       `http://localhost:4502/system/console/configMgr`

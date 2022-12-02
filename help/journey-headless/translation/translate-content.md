@@ -5,7 +5,7 @@ exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '2174'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Pour les gestionnaires de projets de traduction, il est souvent nécessaire de s
 1. Accédez à **Navigation** -> **Projets**.
 1. Appuyez ou cliquez sur **Créer** -> **Dossier** pour créer un dossier pour vos projets.
    * Cette étape est facultative, mais elle est utile pour organiser vos efforts de traduction.
-1. Dans le **Créer un dossier** , ajoutez une **Titre** pour le dossier, puis appuyez ou cliquez sur **Créer**.
+1. Dans la fenêtre **Créer un dossier**, ajoutez un **Titre** pour le dossier, puis appuyez ou cliquez sur **Créer**.
 
    ![Créer un dossier de projet](assets/create-project-folder.png)
 

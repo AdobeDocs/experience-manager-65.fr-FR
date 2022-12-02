@@ -1,5 +1,5 @@
 ---
-title: Configuration d’Applications AEM
+title: Configuration des applications AEM
 seo-title: Configuring for AEM Apps
 description: Apprenez à configurer Applications AEM.
 seo-description: Learn how to configure AEM Apps.
@@ -13,25 +13,25 @@ exl-id: f7aa5ac0-3d03-4c04-b9c2-1bda427b0588
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
-# Configuration d’Applications AEM{#configuring-for-aem-apps}
+# Configuration des applications AEM{#configuring-for-aem-apps}
 
-Adobe Experience Manager Apps offre la possibilité de mettre à jour le contenu de votre application par les airs (OTA, Over The Air). Le contenu mis à jour est stocké sur l’instance de publication. Pour permettre à l’application sur votre appareil de se connecter à l’instance de publication et de rechercher les mises à jour, l’instance de publication doit être configurée pour autoriser un en-tête de référent vide.
+Adobe Experience Manager Apps offre la possibilité de mettre à jour le contenu de votre application par les airs (OTA, Over The Air). Le contenu mis à jour est stocké sur l’instance de publication. Pour permettre à l’application sur votre appareil de se connecter à l’instance de publication et de rechercher les mises à jour, l’instance de publication doit être configurée pour autoriser un en-tête de référent vide.
 
 ## Configuration d’un en-tête de référent vide {#configuring-empty-referrer-header}
 
-Pour configurer le service de filtrage de référent :
+Pour configurer le service de filtrage de référent, procédez comme suit :
 
-* Ouvrez la console Apache Felix (**Configurations**) à :
+* Ouvrez la console Apache Felix (**Configurations**) dans :
 * https://&lt;server>:&lt;port_number>/system/console/configMgr
 * Connectez-vous en tant qu’administrateur.
-* Dans le **Configurations** , sélectionnez : *Filtre de référent Apache Sling*
-* Cochez le champ Autoriser vide pour autoriser les en-têtes de référent vides/manquants.
+* Dans le menu **Configurations**, sélectionnez : *Apache Sling Referrer Filter*
+* Cochez le champ Autoriser vide pour autoriser les en-têtes vides/manquants.
 * Cliquez sur **Enregistrer** pour enregistrer vos modifications.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-Voir [Paramètres de configuration OSGI](/help/sites-deploying/osgi-configuration-settings.md) et [Liste de contrôle de sécurité - Problèmes de falsification de requête intersites](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) pour plus de détails.
+Pour plus de détails, consultez les sections [Paramètres de configuration OSGI](/help/sites-deploying/osgi-configuration-settings.md) et [Liste de contrôle de sécurité - Problèmes de Cross-Site Request Forgery](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery).

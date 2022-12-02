@@ -46,4 +46,4 @@ Veuillez parcourir le tutoriel avant de vous plonger dans les concepts ci-dessus
 
 ## Étapes suivantes {#next-steps}
 
-Une fois que vous avez terminé le [tutoriel](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html), pensez à parcourir le document [Concepts de base d’AEM](/help/sites-developing/the-basics.md) pour mieux comprendre certains des paradigmes de développement et autres technologies sous-jacents d’AEM.
+Une fois que vous avez terminé le [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr), pensez à parcourir le document [Concepts de base d’AEM](/help/sites-developing/the-basics.md) pour mieux comprendre certains des paradigmes de développement et autres technologies sous-jacents d’AEM.

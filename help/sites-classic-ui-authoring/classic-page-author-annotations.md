@@ -14,7 +14,7 @@ exl-id: d60e9601-d15b-4378-a33e-e90961f63195
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->Selon vos besoins, vous pouvez également développer un workflow pour envoyer des notifications lorsque des annotations sont ajoutées, mises à jour ou supprimées.
+>Selon vos besoins, vous pouvez également développer un workflow pour envoyer des notifications lorsque celles-ci sont ajoutées, mises à jour ou supprimées.
 
 ## Annotations {#annotations}
 
@@ -52,7 +52,7 @@ Vous pouvez déplacer l’annotation dans une nouvelle position sur la page. Cli
 
 Les annotations (y compris les schémas qui leur sont associés) sont également comprises dans toute action de copie, de découpe ou de suppression affectant le paragraphe auquel elles sont jointes ; pour les actions de copie et de découpe, la position de l’annotation (et des schémas qui lui sont associés) est conservée par rapport au paragraphe d’origine.
 
-La taille de l’annotation peut également être augmentée ou réduite en faisant glisser le coin inférieur droit.
+La taille de l’annotation peut également être augmentée ou réduite, en faisant glisser le coin droit inférieur.
 
 À des fins de suivi, la ligne de pied de page indique l’utilisateur qui a créé l’annotation et la date. Les auteurs consécutifs peuvent modifier la même annotation (le pied de page est alors mis à jour), ou créer une nouvelle annotation pour le même paragraphe.
 

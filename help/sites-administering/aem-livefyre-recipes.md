@@ -31,7 +31,7 @@ Le module AEM Livefyre fournit une implémentation prête à l’emploi, tandis 
 
 Le package Adobe Experience Manager Livefyre est disponible pour AEM 6.1, 6.2 SP1, 6.3, 6.4 et 6.4 SP1. AEM 5.x et 6.0 ne sont pas pris en charge. Pour obtenir des instructions détaillées, consultez [Intégration à Livefyre](https://helpx.adobe.com/fr/experience-manager/6-4/sites/administering/using/livefyre.html).
 
-Pour connaître les applications Livefyre prises en charge, reportez-vous à la [Matrice de prise en charge d’AEM pour les applications Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+Pour connaître les applications Livefyre prises en charge, reportez-vous à la [Matrice de prise en charge d’AEM pour les applications Livefyre](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
 ### Implémentation classique (pour les composants AEM personnalisés) {#traditional-implementation-for-customized-aem-components}
 
@@ -40,9 +40,9 @@ Il existe trois manières d’implémenter Livefyre dans un composant AEM person
 **Méthode 1 : implémentation de l’application Designer**
 
 * **Description :** méthode la plus simple et la plus rapide d’intégrer une application Livefyre. Vous pouvez concevoir, configurer et générer un code intégré JavaScript personnalisé pour intégrer une application Mur multimédia à une page en quelques minutes.
-* **Comment :**[ créer, prévisualiser, publier et incorporer une application Mur multimédia](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
+* **Comment :** [créer, prévisualiser, publier et incorporer une application Mur multimédia](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
-* **Exemple :**[https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
+* **Exemple :** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
 **Méthode 2 : implémentation du SDK**
 
@@ -75,10 +75,10 @@ En tant qu’utilisateur AEM, je souhaite traiter le contenu créé par l’util
 
 1. [Prise en main](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/livefyre.html)
 1. [Configuration d’AEM pour utiliser Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [Effectuez un glisser-déposer du composant Mur multimédia d’AEM sur votre page](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
+1. [Effectuez un glisser-déposer du composant Mur multimédia d’AEM sur votre page](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
 1. [Configurez des flux et ajoutez des règles pour traiter le contenu créé par l’utilisateur et l’afficher sur le composant Mur multimédia](https://experienceleague.adobe.com/docs/livefyre/using/streams/c-streams.html).
 
-Pour visionner des vidéos de formation à la diffusion en continu de contenu créé par l’utilisateur, consultez [Création de flux automatiques de contenu et recherche de contenu social dans Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html).
+Pour visionner des vidéos de formation à la diffusion en continu de contenu créé par l’utilisateur, consultez [Création de flux automatiques de contenu et recherche de contenu social dans Adobe Experience Manager Livefyre](https://helpx.adobe.com/fr/experience-manager/tutorials.html).
 
 ### Exemples de clients {#customer-examples}
 
@@ -105,9 +105,9 @@ Il existe trois façons d’implémenter l’application Livefyre Comments dans 
 **Méthode 1 : implémentation de l’application Designer**
 
 * **Description :** méthode la plus simple et la plus rapide d’intégrer une application Livefyre. Vous pouvez concevoir, configurer et générer un code intégré JavaScript personnalisé pour intégrer une application Mur multimédia à une page en quelques minutes.
-* **Comment :**[ créer, prévisualiser, publier et incorporer une application Comments](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
+* **Comment :** [ créer, prévisualiser, publier et incorporer une application Comments](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
-* **Exemple :**[https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
+* **Exemple :** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 **Méthode 2 : implémentation du SDK**
 
@@ -118,7 +118,7 @@ Il existe trois façons d’implémenter l’application Livefyre Comments dans 
    * Créez une collection ou une application à l’aide du [jeton CollectionMeta](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
    * Intégrez l’application [Comments](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) aux sites à l’aide de la structure du code d’intégration Livefyre.js.
 
-* **Exemple :**[https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
+* **Exemple :** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 Pour des personnalisations avancées à l’aide du SDK, consultez la page [SDK streamhub](https://github.com/Livefyre/streamhub-sdk).
 
@@ -151,9 +151,9 @@ Pour des personnalisations avancées à l’aide du SDK, consultez la page [SDK 
 
 **Configuration d’AEM (pour l’importation du contenu créé par l’utilisateur vers AEM Assets) :**
 
-1. [Prise en main](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
-1. [Configuration d’AEM pour utiliser Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [Importation du contenu créé par l’utilisateur traité par Livefyre vers AEM Assets](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+1. [Prise en main](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
+1. [Configuration d’AEM pour utiliser Livefyre](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
+1. [Importation du contenu créé par l’utilisateur traité par Livefyre vers AEM Assets](https://helpx.adobe.com/fr/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
 
 * [Office du tourisme d’Australie](https://www.australia.com/fr-fr)
 
@@ -178,7 +178,7 @@ Il existe deux façons d’implémenter l’application Livefyre Reviews dans un
    * Créez le [jeton CollectionMeta](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) pour spécifier les métadonnées à stocker dans la collection Reviews.
    * Intégrez l’[application Reviews](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) à Sites à l’aide de la structure du code d’intégration *Livefyre.js*.
 
-* **Exemple :**[https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
+* **Exemple :** [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
 Pour des personnalisations avancées à l’aide du SDK, consultez la page [SDK streamhub](https://github.com/Livefyre/streamhub-sdk).
 

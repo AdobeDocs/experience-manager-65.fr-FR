@@ -13,7 +13,7 @@ exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Lors de l’exécution de l’instance à partir de la ligne de commande, vous a
 
 ## À l’aide de l’indicateur -nointeractive {#using-the-nointeractive-flag}
 
-Vous pouvez également choisir de spécifier le mot de passe dans un fichier de propriétés. Pour ce faire, utilisez la méthode `-nointeractive` Indicateur associé au`-Dadmin.password.file` propriété système.
+Vous pouvez également choisir de spécifier le mot de passe dans un fichier de propriétés. Pour ce faire, utilisez l’indicateur `-nointeractive` associé à la propriété système `-Dadmin.password.file`.
 
 Voici un exemple :
 
@@ -67,4 +67,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Si vous utilisez simplement la variable `-nointeractive` sans le paramètre `-Dadmin.password.file` système, AEM utilisera le mot de passe administrateur par défaut sans vous demander de le modifier, répliquant essentiellement le comportement des versions antérieures. Ce mode non interactif peut être utilisé pour les installations automatisées via l’option de ligne de commande dans un script d’installation.
+>Si vous utilisez simplement le paramètre `-nointeractive` sans la propriété système `-Dadmin.password.file`, AEM utilise le mot de passe administrateur par défaut sans vous demander de le modifier, répliquant essentiellement le comportement des versions antérieures. Ce mode non interactif peut être utilisé pour les installations automatisées via l’option de ligne de commande dans un script d’installation.

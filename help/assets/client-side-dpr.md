@@ -1,6 +1,6 @@
 ---
-title: Utilisation de l’imagerie dynamique avec le rapport pixel d’appareil côté client
-description: Découvrez comment utiliser le rapport pixel d’appareil côté client avec l’imagerie dynamique dans Adobe Experience Manager as a Cloud Service avec Dynamic Media.
+title: Utilisation de l’imagerie dynamique avec rapport des pixels côté client
+description: Découvrez comment utiliser le rapport de pixels d’appareil côté client avec l’imagerie dynamique dans Adobe Experience Manager as a Cloud Service avec Dynamic Media.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
@@ -10,27 +10,27 @@ ht-degree: 100%
 
 ---
 
-# À propos de l’imagerie dynamique avec le rapport pixel d’appareil côté client (DPR) {#client-side-dpr}
+# À propos de l’imagerie dynamique avec rapport des pixels de périphérique côté client (RPD) {#client-side-dpr}
 
 La solution d’imagerie dynamique actuelle utilise des chaînes d’agent utilisateur pour déterminer le type d’appareil utilisé (ordinateur de bureau, tablette, mobile, etc.).
 
-Les fonctionnalités de détection d’appareil (DPR basé sur des chaînes d’agent utilisateur) sont souvent inexactes, en particulier pour les périphériques Apple. En outre, chaque fois qu’un nouvel appareil est lancé, il doit être validé.
+Les fonctionnalités de détection de périphérique (RGPD basées sur des chaînes d’agent utilisateur) sont souvent inexactes, en particulier pour les périphériques Apple. En outre, chaque fois qu’un nouvel appareil est lancé, il doit être validé.
 
-Le DPR côté client vous donne des valeurs parfaitement précises et fonctionne pour n’importe quel appareil, qu’il s’agisse d’un appareil Apple ou de tout autre nouvel appareil existant.
+Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts pour n’importe quel appareil, qu’il s’agisse d’Apple ou de tout autre nouvel appareil qui a été lancé.
 
 ## Utilisation du code DPR côté client
 
 **Applications rendues côté serveur**
 
-1. Chargez l’initialisation du service worker (`srvinit.js`) en incluant le script suivant dans la section d’en-tête de votre page HTML :
+1. Chargement de l’init du service worker (`srvinit.js`) en incluant le script suivant dans la section d’en-tête de votre page de HTML :
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe recommande de charger ce script _avant_ tout autre script de sorte que le service worker commence immédiatement l’initialisation.
+   Adobe recommande de charger ce script _avant_ tout autre script, de sorte que le service worker commence immédiatement l’initialisation.
 
-1. Insérez le code de balise d’image DPR suivant en haut de la section du corps de votre page de HTML :
+1. Insérez le code de balise d’image DPR suivant en haut de la section corps de votre page de HTML :
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -41,25 +41,25 @@ Le DPR côté client vous donne des valeurs parfaitement précises et fonctionne
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Il est obligatoire d’inclure ce code de balise d’image DPR _avant_ toutes les images statiques dans votre page de HTML.
+   Il est obligatoire d’inclure ce code de balise d’image RGPD _avant_ toutes les images statiques dans votre page de HTML.
 
 **Applications rendues côté client**
 
-1. Insérez les scripts DPR suivants dans la section d’en-tête de votre page HTML :
+1. Insérez les scripts DPR suivants dans la section d’en-tête de votre page de HTML :
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    <script type="text/javascript" src="dprImageInjection.js"></script>
    ```
 
-   Vous pouvez combiner les deux scripts DPR dans un seul script afin d’éviter plusieurs requêtes réseau.
+   Vous pouvez combiner les deux scripts DPR en un seul afin d’éviter plusieurs requêtes réseau.
 
-   Adobe recommande de charger ces scripts _avant_ tout autre script dans la page HTML.
-Adobe recommande également de passer votre application par Bootstrap avec la balise de diff HTML plutôt qu’en tant qu’élément de corps. En effet, `dprImageInjection.js` injecte dynamiquement la balise d’image en haut de la section du corps de la page HTML.
+   Adobe recommande de charger ces scripts _avant_ tout autre script dans la page de HTML.
+Adobe recommande également le Bootstrap de votre application sous la balise de HTML diff plutôt qu’un élément de corps. La raison en est la suivante : `dprImageInjection.js` injecte dynamiquement la balise d’image dans la partie supérieure de la section corps de la page HTML.
 
 ## Téléchargement des fichiers JavaScript {#client-side-dpr-script}
 
-Les fichiers JavaScript suivants à télécharger sont fournis uniquement à titre d’exemple. Si vous envisagez d’utiliser ces fichiers dans des pages HTML, assurez-vous de modifier le code de chaque fichier en fonction de vos besoins.
+Les fichiers JavaScript suivants sont fournis à titre de référence uniquement dans le cadre du téléchargement. Si vous envisagez d’utiliser ces fichiers dans des pages de HTML, veillez à modifier le code de chaque fichier en fonction de vos besoins.
 
 * `dprImageInjection.js`
 * `srvinit.js`

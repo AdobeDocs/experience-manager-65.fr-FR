@@ -14,7 +14,7 @@ exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,13 +27,13 @@ Cela se répercute de la manière suivante :
 * Décharge les demandes de l’infrastructure du serveur.
 * Augmente les performances de chargement des pages dans la mesure où le navigateur met en cache les objets dans le cache du navigateur.
 
-Les expirations sont spécifiées par la norme HTTP concernant « l’expiration » des fichiers (voir, par exemple, Chapitre 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) « Hypertext Transfer Protocol - HTTP 1.1 »). Cette norme utilise l’en-tête pour permettre aux clients de mettre en cache des objets jusqu’à ce qu’ils soient considérés comme périmés ; ces objets sont mis en cache pendant la durée spécifiée sans qu’aucun contrôle d’état ne soit effectué sur le serveur d’origine.
+Les expirations sont spécifiées par la norme HTTP concernant « l’expiration » des fichiers (voir, par exemple, Chapitre 14.21 de [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) « Hypertext Transfer Protocol - HTTP 1.1 »). Cette norme utilise l’en-tête pour permettre aux clients de mettre en cache des objets jusqu’à ce qu’ils soient considérés comme périmés ; ces objets sont mis en cache pendant la durée spécifiée sans qu’aucun contrôle de statut ne soit effectué sur le serveur d’origine.
 
 >[!NOTE]
 >
->Cette configuration est complètement distincte du dispatcher (et ne fonctionnera pas pour lui).
+>Cette configuration est complètement distincte du Dispatcher (et ne fonctionnera pas pour lui).
 >
->Le dispatcher a pour objectif de mettre les données en mémoire cache en amont d’AEM.
+>Le Dispatcher a pour objectif de mettre les données en mémoire cache en amont d’AEM.
 
 Tous les fichiers, qui ne sont pas dynamiques et qui ne changent pas au fil du temps, peuvent et doivent être mis en cache. La configuration du serveur HTTPD Apache peut ressembler à l’une des suivantes, selon l’environnement :
 
@@ -75,7 +75,7 @@ Tous les fichiers, qui ne sont pas dynamiques et qui ne changent pas au fil du t
    </Location>
    ```
 
-   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Bien que cet exemple illustre les paramètres globaux pour tout ce qui suit `/content` et `/etc/designs`, vous devriez le rendre plus granulaire.
+   Cela permet au cache intermédiaire (par exemple le cache du navigateur) de stocker des fichiers CSS, Javascript, PNG et GIF pendant un jour au maximum dans les caches clients. Bien que cet exemple illustre les paramètres globaux pour tout ce qui se situe sous `/content` et `/etc/designs`, vous devriez les rendre plus granulaires.
 
    Selon la fréquence de mise à jour de votre site, vous pouvez également envisager de mettre en cache les pages HTML. Un intervalle de temps raisonnable serait d’une heure :
 

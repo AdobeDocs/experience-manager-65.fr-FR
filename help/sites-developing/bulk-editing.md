@@ -40,7 +40,7 @@ En raison de la possibilité de valeurs différentes, les propriétés de page n
 
 >[!NOTE]
 >
->La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs.](/help/assets/metadata.md) Vous pouvez personnaliser les champs dans l’éditeur de métadonnées en bloc dans Assets à l’aide de l’[éditeur de schéma](/help/assets/metadata-schemas.md).
+>La modification en masse est également disponible pour les actifs. Elle est très similaire, mais diffère en quelques points. Pour plus d’informations, voir [Modification des propriétés de plusieurs actifs. ](/help/assets/metadata.md) Vous pouvez personnaliser les champs dans l’éditeur de métadonnées en bloc dans Assets à l’aide de l’[éditeur de schéma](/help/assets/metadata-schemas.md).
 
 ## Activation d’un champ {#enabling-a-field}
 

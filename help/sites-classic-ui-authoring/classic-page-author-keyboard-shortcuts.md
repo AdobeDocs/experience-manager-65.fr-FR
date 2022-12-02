@@ -13,7 +13,7 @@ exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->Dans les tableaux ci-dessous, pour les combinaisons de touches de la fonction **Raccourci** les touches Ctrl et Commande fonctionnent toutes deux sur macOS.
+>Dans les tableaux suivants, pour les combinaisons de touches de la colonne **Raccourci**, les touches Ctrl et Commande fonctionnent toutes deux sous Mac Os.
 
 >[!NOTE]
 >
@@ -46,58 +46,57 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td>Mode d’édition</td>
    <td><code>Ctrl-z</code></td>
-   <td>Annuler la dernière modification.</td>
+   <td>Annulez la dernière modification.</td>
   </tr>
   <tr>
    <td> </td>
    <td><code>Ctrl-y</code></td>
-   <td>Rétablir la dernière modification.</td>
+   <td>Rétablissez la dernière modification.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Shift-Click</code></strong></td>
-   <td>Sélectionner plusieurs paragraphes.</td>
+   <td>Sélectionnez plusieurs paragraphes.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Click</code></strong></td>
-   <td>Sélectionner plusieurs paragraphes.</td>
+   <td>Sélectionnez plusieurs paragraphes.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Copier le(s) paragraphe(s) sélectionné(s).</td>
+   <td>Copiez le(s) paragraphe(s) sélectionné(s).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Couper le(s) paragraphe(s) sélectionné(s). <strong><br />Remarque</strong> : le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement.</td>
+   <td>Coupez le(s) paragraphe(s) sélectionné(s). <strong><br />Remarque</strong> : le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Coller un paragraphe à partir du Presse-papiers.</td>
+   <td>Collez un paragraphe à partir du Presse-papiers.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Alt-Ctrl-V</code></strong></td>
-   <td>Coller comme référence.</td>
+   <td>Collez comme référence.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Supprimer le(s) paragraphe(s) sélectionné(s).</td>
+   <td>Supprimez le(s) paragraphe(s) sélectionné(s).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Supprimer le(s) paragraphe(s) sélectionné(s).</td>
+   <td>Supprimez le(s) paragraphe(s) sélectionné(s).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>Forcer le menu contextuel par défaut (navigateur).<br />
-<strong>Remarque :</strong> Les menus contextuels d’AEM s’affichent uniquement dans l’IU classique.</td>
+   <td>Forcez le menu contextuel par défaut (navigateur).<br /> <strong>Remarque :</strong> les menus contextuels d’AEM s’affichent uniquement dans l’IU classique.</td>
   </tr>
   <tr>
    <td> </td>
@@ -167,7 +166,7 @@ Des raccourcis clavier supplémentaires sont disponibles pour les développeurs 
   </tr>
   <tr>
    <td>Mode d’édition</td>
-   <td>Définissez le suffixe suivant dans l’URL :<br /> <code>?debugClientLibs=true</code><br /> Ensuite, utilisez :<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>Définissez le suffixe suivant dans l’URL :<br /> <code>?debugClientLibs=true</code><br /> Utilisez ensuite :<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>Afficher les statistiques de synchronisation pour le chargement de page.</td>
   </tr>
  </tbody>

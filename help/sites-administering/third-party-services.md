@@ -13,7 +13,7 @@ exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -28,12 +28,12 @@ Avec AEM, vous pouvez intégrer clé en main les produits non Adobe suivants :
 * Extrait de code Analytics générique
 * Microsoft Translator ou autres fournisseurs de traduction par machine
 * Pushwoosh Connection - Notifications push pour applications
-* Salesforce - Logiciel de gestion de la relation client (CRM)
+* Salesforce - Logiciel de CRM et de ventes
 * Silverpop Engage - Automatisation du marketing, courrier électronique, appareils mobiles et réseaux sociaux
 * Twitter - Réseaux sociaux
 * YouTube - Partage de vidéos
 
-En outre, vous pouvez intégrer AEM à la [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+En outre, vous pouvez intégrer AEM à [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 ## Intégration à Salesforce {#integrating-with-salesforce}
 
@@ -59,9 +59,9 @@ Pour plus d’informations sur l’intégration de votre site AEM et d’ExactTa
 
 ## Intégration à Facebook et Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook et Twitter sont des services de réseau social populaires. L’intégration d’AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion à Facebook ou Twitter sur les propriétés numériques détenues, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
+Facebook et Twitter sont des services de réseaux sociaux populaires. L’intégration d’AEM à Facebook et Twitter permet aux entreprises de fournir une option de connexion à Facebook ou à Twitter au niveau de leurs propriétés numériques, puis de personnaliser l’expérience utilisateur en fonction des informations de profil. Les spécialistes du marketing peuvent également combiner des données de profil avec des données provenant de sources supplémentaires (par exemple, un système de gestion de la relation client ou un profil de site web) pour créer une vue unifiée du client.
 
-Voir [Connexion au réseau social](/help/communities/social-login.md) pour plus d’informations.
+Consultez la section [Connexion sociale](/help/communities/social-login.md) pour plus d’informations.
 
 ## Intégration à d’autres fournisseurs {#integrating-with-other-providers}
 

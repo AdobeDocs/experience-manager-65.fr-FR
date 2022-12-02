@@ -14,17 +14,17 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2176'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Concepts de l’interface utilisateur (IU) tactile d’AEM{#concepts-of-the-aem-touch-enabled-ui}
 
-AEM dispose d’une interface utilisateur tactile avec [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçu pour fonctionner sur les périphériques tactiles et de bureau.
+AEM dispose d’une interface utilisateur tactile avec [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçu pour fonctionner sur les appareils tactiles et de bureau.
 
 >[!NOTE]
 >
->L’IU tactile est l’IU standard pour AEM. L’IU classique a été abandonnée avec AEM 6.4.
+>L’IU tactile est l’IU standard d’AEM. L’IU classique est devenue obsolète avec AEM 6.4.
 
 L’interface utilisateur tactile se compose des éléments suivants :
 
@@ -37,7 +37,7 @@ L’interface utilisateur tactile se compose des éléments suivants :
    * Références
    * Filtres
 * L’en-tête de navigation, qui dépend du contexte et peut afficher les éléments suivants :
-   * Console en cours d’utilisation et/ou position au sein de cette console
+   * La console en cours d’utilisation et/ou la position au sein de cette console
    * Sélection pour le rail de gauche
    * Chemin de navigation
    * Accès aux actions **Créer** appropriées
@@ -113,7 +113,7 @@ Ces objectifs sont conformes aux exigences suivantes :
 GraniteUI.pdf
 
 [Obtenir le fichier](assets/graniteui.pdf)
-L’IU Granite :
+L’IU Granite :
 
 * utilise l’architecture RESTful de Sling,
 * implémente des bibliothèques de composants destinées à la création d’applications web axées sur le contenu,
@@ -125,7 +125,8 @@ L’IU Granite :
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Composants de base de l’IU Granite](#granite-ui-foundation-components) Cette bibliothèque de composants de base (Foundation) peut être utilisée ou étendue par d’autres bibliothèques.
+* [Composants de base de l’IU Granite](#granite-ui-foundation-components)
+Cette bibliothèque de composants de base peut être utilisée ou étendue par d’autres bibliothèques.
 * [Composants d’administration de l’IU Granite](#granite-ui-administration-components)
 
 ### Côté client / côté serveur {#client-side-vs-server-side}
@@ -176,20 +177,20 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
    <td><strong>IU Granite</strong></td>
   </tr>
   <tr>
-   <td>Appel de procédure distante<br /> </td>
-   <td>Transmissions d’état</td>
+   <td>Appel de procédure à distance<br /> </td>
+   <td>Transmissions de statuts</td>
   </tr>
   <tr>
    <td>Objets de transfert de données</td>
    <td>Hypermédia</td>
   </tr>
   <tr>
-   <td>Le client connaît les paramètres internes du serveur</td>
-   <td>Le client ne connaît pas les informations internes</td>
+   <td>Le client connaît les paramètres internes du serveur.</td>
+   <td>Le client ne connaît pas les informations internes.</td>
   </tr>
   <tr>
-   <td>"Client gros"</td>
-   <td>"Client léger"</td>
+   <td>« Client lourd »</td>
+   <td>« Client léger »</td>
   </tr>
   <tr>
    <td>Bibliothèques clientes spécialisées</td>
@@ -212,19 +213,19 @@ Les composants de base se trouvent à l’emplacement suivant :
 
 Cette bibliothèque contient un composant IU Granite pour chaque élément Coral. Un composant est axé sur le contenu et sa configuration réside dans le référentiel. Cela permet de composer une application IU Granite sans écrire manuellement de balises HTML.
 
-Objectif:
+Objectif :
 
 * Modèle de composant des éléments HTML
 * Composition du composant
 * Test automatique des unités et des fonctionnalités
 
-Mise en œuvre:
+Mise en œuvre :
 
 * Composition et configuration basées sur un répertoire
 * Utilisation des fonctionnalités de test fournies par la plate-forme Granite
 * Création de modèles JSP
 
-Cette bibliothèque de composants de base (Foundation) peut être utilisée ou étendue par d’autres bibliothèques.
+Cette bibliothèque de composants de base peut être utilisée ou étendue par d’autres bibliothèques.
 
 ### ExtJS et composants IU Granite correspondants {#extjs-and-corresponding-granite-ui-components}
 
@@ -249,7 +250,7 @@ Lors de la mise à niveau du code ExtJS afin d’utiliser l’IU Granite, la li
 | `textarea` | `granite/ui/components/foundation/form/textarea` |
 | `textfield` | `granite/ui/components/foundation/form/textfield` |
 
-| **Type de noeud** | **Type de ressource de l’IU Granite** |
+| **Type de nœud** | **Type de ressource de l’IU Granite** |
 |---|---|
 | `cq:WidgetCollection` | `granite/ui/components/foundation/container` |
 | `cq:TabPanel` | `granite/ui/components/foundation/container``granite/ui/components/foundation/layouts/tabs` |
@@ -263,12 +264,12 @@ Les [composants d’administration de l’IU Granite](https://helpx.adobe.com/e
 * Rail (squelette)
 * Panneau de recherche
 
-Objectif:
+Objectif :
 
 * Apparence unifiée pour les applications d’administration
 * Développement accéléré (RAD) pour les applications d’administration
 
-Mise en œuvre:
+Mise en œuvre :
 
 * Composants prédéfinis à l’aide des composants de base.
 * Les composants peuvent être personnalisés.
@@ -278,7 +279,7 @@ Mise en œuvre:
 CoralUI.pdf
 
 [Obtenir le fichier](assets/coralui.pdf)
-L’IU Coral (CUI) est une implémentation du style visuel de l’Adobe pour l’IU tactile, conçue pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
+L’interface utilisateur (IU) Coral est une implémentation du style visuel d’Adobe pour l’interface utilisateur tactile. Elle a été conçue par Adobe pour garantir une expérience utilisateur homogène entre plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
 
 >[!CAUTION]
 >
@@ -317,12 +318,12 @@ Au niveau le plus bas, un élément HTML est une balise HTML avec un nom de clas
 
 Le code CSS est utilisé pour définir l’apparence réelle. Pour qu’il soit possible de personnaliser facilement l’apparence (dans le cas d’une valorisation de marque, par exemple), les valeurs de style proprement dites sont déclarées en tant que variables qui sont étendues par le préprocesseur [LESS](https://lesscss.org/) lors de la phase d’exécution.
 
-Objectif:
+Objectif :
 
 * Uniformiser l’apparence au niveau des éléments d’interface de base
 * Fournir le système de grille par défaut
 
-Mise en œuvre:
+Mise en œuvre :
 
 * Balises HTML dont les styles sont inspirés par [bootstrap](https://twitter.github.com/bootstrap/).
 * Les classes sont définies dans des fichiers LESS.
@@ -335,7 +336,7 @@ Par exemple, le balisage suivant :
 <button class="btn btn-large" type="button">Large button</button>
 ```
 
-S’affiche sous la forme :
+s’affiche sous la forme :
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -365,38 +366,38 @@ Plusieurs des éléments HTML devront se comporter de façon dynamique ; en ouv
 
 Un module externe est soit :
 
-* Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe de boîte de dialogue s’attend à trouver `DIV class=dialog`
+* Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe de boîte de dialogue s’attend à trouver `DIV class=dialog`.
 * Générique par nature. Par exemple, un gestionnaire de mises en page fournit la disposition pour toute liste d’éléments `DIV` ou `LI`.
 
 Le comportement du module externe peut être personnalisé en utilisant l’une des méthodes suivantes :
 
 * Transmission des paramètres via un appel JavaScript
-* Utilisation dédiée `data-*` attributs liés au balisage de HTML
+* Utilisation d’attributs `data-*` dédiés liés au balisage HTML
 
-Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser :
+Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser les éléments suivants :
 
-* `data-*` attributs pour les options liées à la mise en page des HTMLS. pour indiquer le nombre de colonnes, par exemple.
+* Des attributs `data-*` pour les options relatives à la mise en page HTML ; pour indiquer le nombre de colonnes, par exemple.
 * Des options/classes API pour les fonctionnalités liées aux données ; pour créer la liste des éléments à afficher, par exemple.
 
-Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément que vous souhaitez valider, vous devez spécifier le formulaire d’entrée requis en tant que formulaire personnalisé. `data-*` attribut. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
+Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément qui doit être validé, vous devez spécifier le formulaire de saisie requis sous la forme d’un attribut `data-*` personnalisé. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
 
 >[!NOTE]
 >
 >La validation de formulaire native au format HTML5 doit être utilisée lorsque cela s’avère possible et/ou s’il y a une volonté de l’enrichir.
 
-Objectif:
+Objectif :
 
 * Indiquer le comportement dynamique pour les éléments HTML
 * Fournir des dispositions personnalisées impossibles à obtenir avec du code PSS pur
 * Effectuer la validation de formulaire
 * Effectuer une manipulation DOM avancée
 
-Mise en œuvre:
+Mise en œuvre :
 
 * Module externe jQuery, lié à un ou plusieurs éléments DOM spécifiques.
-* Utilisation `data-*` attributs pour personnaliser le comportement
+* Utilisation d’attributs `data-*` pour personnaliser le comportement
 
-Extrait d’exemples de balisage (notez les options spécifiées sous la forme data-&#42; Attributs) :
+Extrait de l’exemple de balisage (notez les options spécifiées sous la forme d’attributs data-&#42;) :
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -438,12 +439,12 @@ Un widget combine un ou plusieurs éléments de base avec un module externe Java
 
 Un widget peut se déclencher et écouter des événements personnalisés pour coopérer avec d’autres widgets sur la page. Certains widgets sont, en fait, des widgets jQuery natifs qui utilisent les éléments HTML Coral.
 
-Objectif:
+Objectif :
 
 * Implémenter des éléments d’IU de niveau supérieur présentant un comportement complexe
 * Déclencher et gérer des événements
 
-Mise en œuvre:
+Mise en œuvre :
 
 * Module externe jQuery + balises HTML
 * Peut utiliser des modèles côté client/serveur
@@ -492,13 +493,13 @@ Il s’agit notamment de la gestion XSS et du bus d’événements.
 
 Bien que les widgets et les modules externes d’éléments HTML puissent dépendre des fonctionnalités fournies par la bibliothèque Utility, cette dernière ne peut pas présenter de dépendance dure envers les éléments, ni envers les widgets proprement dits.
 
-Objectif:
+Objectif :
 
 * Fourniture de fonctionnalités communes
 * Implémentation du bus d’événements
 * Modèles côté client
 * XSS
 
-Mise en œuvre:
+Mise en œuvre :
 
 * Modules externes jQuery ou modules JavaScript compatibles AMD

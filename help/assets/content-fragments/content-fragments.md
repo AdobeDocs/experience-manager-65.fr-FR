@@ -1,19 +1,19 @@
 ---
 title: Utilisation de fragments de contenu
-description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour une diffusion sans interface utilisateur.
+description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour une diffusion découplée.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Utilisation de fragments de contenu {#working-with-content-fragments}
 
-Avec Adobe Experience Manager (AEM), les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md) Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface.
+Avec Adobe Experience Manager (AEM), les fragments de contenu vous permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-authoring/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements ou sur plusieurs canaux, idéal pour une diffusion découplée.
 
 Les fragments de contenu contiennent du contenu structuré :
 
@@ -38,7 +38,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 
 * [Activation de la fonctionnalité de fragments de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : activation, création et définition de vos modèles.
-* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)  : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
+* [Gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) - créer vos fragments de contenu ; puis modifier, publier et référencer
 * [Variations – création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md) : créez le contenu du fragment et créez des variantes du maître.
 * [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md) : utilisation de la syntaxe Markdown pour votre fragment.
 * [Utilisation du contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) : ajout de contenu associé.
@@ -86,9 +86,9 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 
 >[!NOTE]
 >
->Avant la version 6.3 d’AEM, les fragments de contenu étaient créés à l’aide de modèles au lieu de modèles. Les modèles ne sont plus disponibles pour la création de fragments, mais tous les fragments créés avec un tel modèle sont toujours pris en charge.
+>Avant la version 6.3 d’AEM, les fragments de contenu étaient créés à l’aide de modèles différents. Les modèles antérieurs à la version 6.3 d’AEM ne sont plus disponibles pour la création de fragments, mais tous les fragments créés avec ces modèles sont toujours pris en charge.
 
-## Fragments de contenu et Content Services {#content-fragments-and-content-services}
+## Fragments de contenu et services de contenu {#content-fragments-and-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 

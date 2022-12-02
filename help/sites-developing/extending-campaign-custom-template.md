@@ -1,5 +1,5 @@
 ---
-title: Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign
+title: Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign
 seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
 description: Créez un modèle de page personnalisé qui utilise des composants de formulaire Adobe Campaign.
 seo-description: Build a custom page template that uses Adobe Campaign Form components
@@ -13,17 +13,17 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '238'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
-# Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
+# Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-Cette page explique comment créer un modèle de page personnalisé qui utilise [Formulaire Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) composants en examinant la manière dont le modèle de Geometrixx-plein ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) est implémenté et vous indique les informations importantes dont vous avez besoin lors de la création de votre propre modèle personnalisé.
+Cette page vous explique comment créer un modèle de page personnalisé qui utilise des composants [Formulaire Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) en examinant le mode d’implémentation du modèle Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`). Elle vous donne également des informations importantes dont vous pourriez avoir besoin lors de la création de votre propre modèle.
 
 >[!NOTE]
 >
->[Les exemples de courrier électronique et de formulaire sont disponibles uniquement dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu Geometrixx à partir de Package Share.
+>[Les exemples d’e-mail et de formulaire sont disponibles uniquement dans Geometrixx](/help/sites-developing/we-retail.md). Téléchargez un exemple de contenu Geometrixx à partir du partage de modules.
 
 Pour créer un modèle de page AEM personnalisé à l’aide de composants de formulaire Adobe Campaign, vérifiez que vous disposez des éléments suivants :
 
@@ -40,9 +40,9 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **Paramètres de ClientContext**
 
-   Lorsque vous examinez les paramètres de ClientContext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) les paramètres suivants s’affichent :
+   Lorsque vous observez les paramètres de ClientContext (`/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), vous voyez ceci :
 
-   * Points de ClientContext vers `/etc/clientcontext/campaign`
+   * ClientContext pointe vers `/etc/clientcontext/campaign`.
    * Il existe également un nœud *config* supplémentaire.
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
@@ -59,7 +59,7 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
 1. **body.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/body.jsp)**
 
-   Dans **body.jsp**, les services cloud sont chargés au bas de la page :
+   Dans le fichier **body.jsp**, les Cloud Services sont chargés au bas de la page :
 
    ```
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
@@ -73,12 +73,12 @@ Pour créer un modèle de page AEM personnalisé à l’aide de composants de fo
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. **Paramètres de modèle**.
+1. **Paramètres de modèle**
 
-   Dans le modèle ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) les valeurs par défaut suivantes s’affichent :
+   Les valeurs par défaut suivantes sont affichées dans le modèle (`/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) :
 
-   | **acMapping** | mapRecipient (pour Adobe Campaign 6.1), profile (pour Adobe Campaign Standard) |
+   | **acMapping** | mapRecipient (pour Adobe Campaign 6.1), profile (pour Adobe Campaign Standard) |
    |---|---|
-   | **acTemplateId** | mail |
+   | **acTemplateId** | courrier |
 
    ![chlimage_1-204](assets/chlimage_1-204.png)

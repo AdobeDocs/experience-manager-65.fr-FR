@@ -36,7 +36,7 @@ Avant de commencer cette procédure :
 * L’équipe d’administration système de votre entreprise doit utiliser l’Admin Console pour ajouter les membres responsables du développement de votre entreprise et leur attribuer les profils de produit appropriés.
 
    * Chaque membre de l’équipe de développement dispose ainsi des autorisations nécessaires pour activer les intégrations dans la Developer Console d’Adobe.
-   * Pour plus d’informations, consultez la section [Gestion de l’équipe de développement](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Pour plus d’informations, consultez la section [Gestion de l’équipe de développement](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
 ## Configuration d’une configuration IMS - Génération d’une clé publique {#configuring-an-ims-configuration-generating-a-public-key}
@@ -230,7 +230,7 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
       >
       >Vous pouvez alors utiliser `yourtenantid`.
 
-   * **Code client** : consultez la section [ID de client et code client](#tenant-client) .
+   * **Code client** : consultez la section [ID de client et code client](#tenant-client).
 
    * **Configuration IMS** : sélectionnez le nom de la configuration IMS.
 
@@ -263,7 +263,7 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
 
 À partir d’[Adobe Experience Manager 6.5.8.0](/help/release-notes/release-notes.md), le champ Code client a été ajouté à la fenêtre de configuration de Target.
 
-Lors de la configuration des champs d’ID client et de code client , prenez en compte des points suivants :
+Lors de la configuration des champs d’ID client et de code client, prenez en compte des points suivants :
 
 1. Pour la plupart des clients, l’ID de client et le code client sont identiques. Cela signifie que les deux champs contiennent les mêmes informations et sont identiques. Veillez à saisir l’identifiant du client dans les deux champs.
 2. Pour des raisons d’héritage, vous pouvez également entrer différentes valeurs dans les champs d’ID client et de Code client.

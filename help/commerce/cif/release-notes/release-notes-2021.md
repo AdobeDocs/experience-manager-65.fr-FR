@@ -1,15 +1,15 @@
 ---
-title: Notes de mise à jour d’AEM Content and Commerce 2021
-description: Notes de mise à jour d’AEM Content and Commerce 2021
+title: Notes de mise à jour d’AEM Content and Commerce 2021
+description: Notes de mise à jour d’AEM Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
-# Présentation de la version GitHub de Commerce Integration Framework
+# Présentation de la version GitHub de Commerce Integration Framework
 
 ## Présentation de la configuration système requise
 
@@ -17,17 +17,17 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 | Composant | Configuration requise |
 |:-------|:-----:|
-| Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Adobe Commerce 2.3.5 |
+| Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Adobe Commerce 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Date de publication : Novembre 2021
+## Date de publication : novembre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.11.18.00 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
 | Composants principaux CIF | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
-| Site de référence CIF Venia | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+| Site de référence CIF Venia | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
 ### Nouveautés {#what-is-new-november}
 
@@ -39,13 +39,13 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Prise en charge des cartes-cadeaux dans la vitrine AEM
 
-## Date de publication : Octobre 2021
+## Date de publication : octobre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.10.20.02 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
 | Composants principaux CIF | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
-| Site de référence CIF Venia | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
+| Site de référence CIF Venia | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
 ### Nouveautés {#what-is-new-october}
 
@@ -59,13 +59,13 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Le storefront Venia d’AEM renvoie une erreur HTTP 404 si la catégorie ou page produit est introuvable.
 
-## Date de publication : Septembre 2021
+## Date de publication : septembre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.09.27 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
 | Composants principaux CIF | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
-| Site de référence CIF Venia | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+| Site de référence CIF Venia | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
 ### Nouveautés {#what-is-new-september}
 
@@ -87,13 +87,13 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Impossible de créer une configuration cloud CIF dans les dossiers comportant un nœud sling:configs
 
-## Date de publication : Août 2021
+## Date de publication : août 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.09.02 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | Composants principaux CIF | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
-| Site de référence CIF Venia | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
+| Site de référence CIF Venia | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
 ### Nouveautés {#what-is-new-august}
 
@@ -107,19 +107,19 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Impossible de fermer l’accordéon Filtre de catégorie une fois ouvert
 
-* Propriété &quot;Texte de l’appel à l’action&quot; rompue dans le teaser de produit.
+* Propriété « Texte de l’appel à l’action » rompue dans le Teaser de produit
 
-* Erreurs JS CIF lors de l’étape de déploiement AEM CS
+* Erreurs JS CIF lors de l’étape de déploiement CS AEM
 
 * Correction de l’accès aux produits bruts pour les éléments de liste de produits mappés
 
-## Date de publication : Juillet 2021
+## Date de publication : juillet 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.07.21 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
 | Composants principaux CIF | 2.0.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
-| Site de référence CIF Venia | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+| Site de référence CIF Venia | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
 ### Nouveautés {#what-is-new-july}
 
@@ -130,13 +130,13 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Prise en charge de la [recommandation de produit Adobe Commerce Sensei, optimisée par Adobe Sensei](https://business.adobe.com/fr/products/magento/product-recommendations.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 
-## Date de publication : Juin 2021
+## Date de publication : juin 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.06.18 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
 | Composants principaux CIF | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
-| Site de référence CIF Venia | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+| Site de référence CIF Venia | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
 
 ### Nouveautés {#what-is-new-june}
 
@@ -147,13 +147,13 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 * Amélioration des URL compatibles avec les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
 
-## Date de publication : Mai 2021
+## Date de publication : mai 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.05.26 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
 | Composants principaux CIF | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
-| Site de référence CIF Venia | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+| Site de référence CIF Venia | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
 ### Nouveautés {#what-is-new-may}
 
@@ -165,17 +165,17 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Le chemin de navigation réinitialise les données d’aperçu dans la console de produit
 
-## Date de publication : Avril 2021
+## Date de publication : avril 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
 | Module complémentaire CIF | 2021.04.22 | [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | Composants principaux CIF | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
-| Site de référence CIF Venia | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Site de référence CIF Venia | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Nouveautés {#what-is-new-april}
 
-* Prise en charge de l’UID de catégorie : libère les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
+* Prise en charge de l’UID de catégorie – Cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
 
 * Extension AEM pour PWA Studio, avec un exemple d’intégration
 
@@ -185,60 +185,60 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
-## Date de publication : Mars 2021 {#what-is-new-march}
+## Date de publication : mars 2021 {#what-is-new-march}
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
 | Connecteur CIF | 1.9.0 | [Notes de mise à jour](https://github.com/adobe/commerce-cif-connector/releases) |
 | Composants principaux CIF | 1.9.0 | [Notes de mise à jour](https://github.com/adobe/aem-core-cif-components/releases) |
-| Site de référence CIF Venia | 2021.03.25 | [Notes de mise à jour](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Site de référence CIF Venia | 2021.03.25 | [Notes de mise à jour](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Nouveautés
 
-* Prise en charge d’Adobe Commerce 2.4.2
+* Prise en charge d’Adobe Commerce 2.4.2
 
-### Nouveautés
+### Améliorations
 
 * Amélioration de la réutilisation du composant Détails du produit pour les pages pilotées par le contenu
 
 * Amélioration de la mise en cache et diminution des appels d’arrière-plan pour les PDP
 
-* Plusieurs correctifs.
+* Plusieurs correctifs de bogues.
 
-## Date de publication : Février 2021
+## Date de publication : février 2021
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
 | Connecteur CIF | 1.8.0 | [Notes de mise à jour](https://github.com/adobe/commerce-cif-connector/releases) |
 | Composants principaux CIF | 1.8.0 | [Notes de mise à jour](https://github.com/adobe/aem-core-cif-components/releases) |
-| Site de référence CIF Venia | 2021.02.24 | [Notes de mise à jour](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Site de référence CIF Venia | 2021.02.24 | [Notes de mise à jour](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Nouveautés {#what-is-new-february}
 
 * Gestion de l’expérience des produits : enrichissez les pages du catalogue de produits individuellement grâce aux fragments d’expérience.
 
-* Étendez les propriétés de la console de produit pour afficher les ressources liées et les fragments d’expérience, y compris l’action permettant d’accéder rapidement au contenu associé.
+* Propriétés étendues de la console de produits pour afficher les ressources liées et les fragments d’expérience, y compris les actions permettant d’accéder rapidement au contenu associé.
 
-### Nouveautés  {#what-is-improved-february}
+### Améliorations  {#what-is-improved-february}
 
 * Amélioration de la couche de données côté client avec l’URL de l’image du produit et les informations sur les catégories.
 
-* Plusieurs correctifs.
+* Plusieurs correctifs de bogues.
 
-## Date de publication : Janvier 2021
+## Date de publication : janvier 2021
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
 | Connecteur CIF | 1.7.0 | [Notes de mise à jour](https://github.com/adobe/commerce-cif-connector/releases) |
 | Composants principaux CIF | 1.7.0 | [Notes de mise à jour](https://github.com/adobe/aem-core-cif-components/releases) |
-| Site de référence CIF Venia | 2021.02.02 | [Notes de mise à jour](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| Site de référence CIF Venia | 2021.02.02 | [Notes de mise à jour](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### Nouveautés {#what-is-new-january}
 
-* Gestion de l’expérience du produit : Nouvel onglet de propriété &quot;Commerce&quot; pour les ressources et les fragments d’expérience. Cet onglet vous permet de lier les ressources et les fragments d’expérience aux produits et catégories. L’onglet affiche également des données en temps réel pour les objets de commerce liés et un lien pour afficher les détails dans la console du produit.
+* Gestion de l’expérience des produits : nouvel onglet de propriétés Commerce pour les ressources et les fragments d’expérience. Cet onglet vous permet de lier les ressources et les fragments d’expérience aux produits et catégories. L’onglet affiche également des données en temps réel pour les objets Commerce liés ainsi qu’un lien permettant d’afficher des détails dans la console du produit.
 
-### Nouveautés  {#what-is-improved-january}
+### Améliorations  {#what-is-improved-january}
 
-* Envoyez les données utilisateur après l’authentification pour Adobe de la couche de données client.
+* Envoyez les données utilisateur après l’authentification à la couche de données client Adobe.
 
-* Plusieurs correctifs.
+* Plusieurs correctifs de bogues.

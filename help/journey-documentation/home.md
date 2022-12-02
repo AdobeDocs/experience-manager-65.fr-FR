@@ -5,7 +5,7 @@ exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1234'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parc
 |---|---|
 | [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | Commencez ici pour découvrir la manière dont AEM prend en charge les modèles de développement découplé et comment lancer votre projet, de sa planification à sa mise en œuvre, en passant par sa mise en service. |
 | [Parcours de création découplée](/help/journey-headless/author/overview.md) | Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. |
-| [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) | Commencez ici pour découvrir les fonctionnalités puissantes, flexibles et sans interface d’Adobe Experience Manager et comment modéliser le contenu de votre projet. |
+| [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) | Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager, et découvrez comment modéliser le contenu de votre projet. |
 | [Parcours de traduction découplée](/help/journey-headless/translation/overview.md) | Commencez ici pour découvrir comment configurer et gérer vos projets de traduction découplée dans AEM. |
 
 <!--

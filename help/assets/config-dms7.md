@@ -48,7 +48,7 @@ Avec la nouvelle architecture, Experience Manager est responsable des ressource
 
 ## Activation de Dynamic Media en mode Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-Par défaut, [Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) est désactivé. Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
+Par défaut, [Dynamic Media](https://business.adobe.com/fr/products/experience-manager/assets/dynamic-media.html) est désactivé. Pour tirer parti des fonctionnalités de Dynamic Media, vous devez l’activer.
 
 >[!WARNING]
 >
@@ -139,7 +139,7 @@ Consultez [Installer le Pack de fonctionnalités 18912 pour la migration de res
    * **[!UICONTROL Serveur d’aperçu sécurisé]** : permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. Ainsi, une fois les rendus générés, Experience Manager peut accéder en toute sécurité aux rendus Dynamic Media distants et les prévisualiser (aucune donnée binaire n’est renvoyée à l’instance Experience Manager).
 À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre entreprise ou un serveur spécial, Adobe vous conseille de conserver ce paramètre tel que spécifié.
 
-   * **[!UICONTROL Synchroniser tout le contenu<!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->]** : sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
+   * **[!UICONTROL Synchroniser tout le contenu]** : <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->sélectionné par défaut. Désélectionnez cette option si vous souhaitez inclure ou exclure des ressources de la synchronisation avec Dynamic Media. La désélection de cette option vous permet de choisir l’un des deux modes de synchronisation Dynamic Media :
 
    * **[!UICONTROL Mode de synchronisation Dynamic Media]**
       * **[!UICONTROL Activé par défaut]** : la configuration s’applique par défaut à tous les dossiers, sauf si vous marquez un dossier spécifique à exclure. <!-- you can then deselect the folders that you do not want the configuration applied to.-->
@@ -247,7 +247,7 @@ Dans Dynamic Media en mode Scene7, la taille de fichier de chargement de ressou
 Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditions préalables et des points suivants :
 
 * Vous devez exécuter Experience Manager 6.5 avec le Pack de services 6.5.4.0 ou une version ultérieure dans Dynamic Media en mode Scene7.
-* Cette fonctionnalité de chargement volumineuse n’est prise en charge que pour les clients [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html).
+* Cette fonctionnalité de chargement volumineuse n’est prise en charge que pour les clients [*Managed Services*](https://business.adobe.com/fr/products/experience-manager/managed-services.html).
 * Assurez-vous que votre instance d’Experience Manager est configurée avec le stockage Azure Blob Amazon S3 ou Microsoft®.
 
    >[!NOTE]
@@ -276,7 +276,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 
    ![Option Nœud de recouvrement](/help/assets/assets-dm/uploadassets15gb_a.png)
 
-1. Dans la boîte de dialogue Nœud de recouvrement , sélectionnez l’option **[!UICONTROL Faire correspondre les types de nœud]** pour activer l’option, puis sélectionnez **[!UICONTROL OK]**.
+1. Dans la boîte de dialogue Nœud de recouvrement, sélectionnez l’option **[!UICONTROL Faire correspondre les types de nœud]** pour activer l’option, puis sélectionnez **[!UICONTROL OK]**.
 
    ![Nœud de recouvrement, boîte de dialogue](/help/assets/assets-dm/uploadassets15gb_b.png)
 
@@ -290,7 +290,7 @@ Si vous avez l’intention d’utiliser cette fonction, tenez compte des conditi
 
 1. Dans l’onglet **[!UICONTROL Propriétés]** dans la colonne **[!UICONTROL Nom]**, localisez `sizeLimit`.
 1. À droite du nom `sizeLimit`, dans la colonne **[!UICONTROL Valeur]**, double-cliquez sur le champ de valeur.
-1. Saisissez la valeur appropriée en octets afin d’augmenter la taille limite pour atteindre la taille maximale souhaitée pour le chargement. Par exemple, pour augmenter la taille de la ressource de chargement à 10 Go, saisissez `10737418240` dans le champ valeur .
+1. Saisissez la valeur appropriée en octets afin d’augmenter la taille limite pour atteindre la taille maximale souhaitée pour le chargement. Par exemple, pour augmenter la taille de la ressource de chargement à 10 Go, saisissez `10737418240` dans le champ valeur.
 Vous pouvez saisir une valeur allant jusqu’à 15 Go (`2013265920` octets). Dans ce cas, les ressources chargées de plus de 15 Go ne sont pas chargées.
 
    ![Valeur limite de taille](/help/assets/assets-dm/uploadassets15gb_c.png)
@@ -717,7 +717,7 @@ Si vous utilisez Dynamic Media pour les images ou les vidéos, ou les deux, vou
 |  | Filtrer | Type MIME | Rendus |
 | --- | --- | --- | --- |
 | Diffusion d’image Dynamic Media | filter-image<br>filter-sets | Commence par **image/**<br> Contient **applications/** et se termine par **set**. | Les filtres prêts à l’emploi « filter-images » (s’applique aux ressources d’images uniques, y compris les images interactives) et « filter-sets » (s’applique aux visionneuses à 360°, visionneuses d’images, visionneuses de supports variés et ensembles de carrousels) permettent :<br>• d’exclure de la réplication les rendus des images originales et des images statiques. |
-| Diffusion vidéo Dynamic Media | filter-video | Commence par **video/** | La « vidéo de filtrage«  prête à l’emploi :<br>• Exclure de la réplication la vidéo d’origine et les rendus de miniatures statiques. |
+| Diffusion vidéo Dynamic Media | filter-video | Commence par **video/** | La « vidéo de filtrage » prête à l’emploi :<br>• Exclure de la réplication la vidéo d’origine et les rendus de miniatures statiques. |
 
 >[!NOTE]
 Les filtres s’appliquent aux types MIME et ne peuvent pas être spécifiques à un chemin.

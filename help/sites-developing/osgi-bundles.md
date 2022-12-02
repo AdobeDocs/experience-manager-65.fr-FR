@@ -13,7 +13,7 @@ exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '351'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 89%
 
 ## Utilisez le contrôle de version sémantique. {#use-semantic-versioning}
 
-Vous trouverez les bonnes pratiques pour la numérotation de version sémantique sur la page [https://semver.org/](https://semver.org/).
+Les bonnes pratiques de numérotation de version sémantique sont disponibles à l’adresse [https://semver.org/](https://semver.org/).
 
 ## N’incorporez pas d’autres classes et fichiers JAR que ceux strictement nécessaires dans les lots OSGi. {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
@@ -29,18 +29,18 @@ Les bibliothèques courantes doivent être factorisées dans des lots distincts.
 
 ## Dépendez des plus anciennes versions de lots nécessaires. {#depend-on-the-lowest-needed-bundle-versions}
 
-Pour les dépendances au moment de la compilation dans les fichiers POM, utilisez toujours la plus ancienne version nécessaire qui expose l’API requise. Cela permet davantage de compatibilité ascendante et facilite les correctifs de rétroportage des versions plus anciennes.
+Pour les dépendances au moment de la compilation dans les fichiers POM, utilisez toujours la plus ancienne version possible exposant l’API requise. Cela permet davantage de compatibilité ascendante et facilite les correctifs de rétroportage des versions plus anciennes.
 
 ## Exportez un ensemble restreint de modules à partir des lots OSGi. {#export-a-minimal-set-of-packages-from-osgi-bundles}
 
-Dès qu’un module a été exporté, nous avons créé une API dont les autres peuvent dépendre. Veillez à exporter le moins possible et à vérifier que ce qui est exporté est une API. Il est beaucoup plus facile de rendre publique une méthode/classe privée que de rendre privé un élément précédemment exporté.
+Dès qu’un module est exporté, nous créons une API dont les autres peuvent dépendre. Veillez à exporter le moins possible et à vérifier que ce qui est exporté est une API. Il est beaucoup plus facile de rendre publique une méthode/classe privée que de rendre privé un élément précédemment exporté.
 
 Les mises en œuvre doivent toujours être placées dans un module *impl* distinct. Par défaut, *maven-bundle-plugin* exporte tout ce qui se trouve dans le projet et dont le nom ne contient pas *impl*.
 
 ## Définissez toujours explicitement une version sémantique pour chaque module exporté. {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
-Cela permet aux consommateurs de votre API d’évoluer avec vous. Lorsque vous procédez de la sorte, respectez toujours les meilleures pratiques de contrôle de version sémantique. Cela permet aux consommateurs de votre API de déterminer les types de modifications à attendre dans une nouvelle version.
+Cela permet aux consommateurs de votre API d’évoluer avec vous. Lorsque vous procédez de la sorte, respectez toujours les bonnes pratiques de contrôle de version sémantique. Cela permet aux consommateurs de votre API de déterminer les types de modifications à attendre dans une nouvelle version.
 
 ## Incluez les informations de métatype lorsqu’elles sont exposées. {#include-metatype-information-where-exposed}
 
-En spécifiant des informations de métatype pertinentes, vos services et composants sont plus faciles à comprendre dans la console Felix. Vous trouverez une liste des annotations et attributs SCR à l’adresse : [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
+En spécifiant des informations de métatype pertinentes, vos services et composants sont plus faciles à comprendre dans la console Felix. La liste des attributs et annotations SCR peut être trouvée à l’adresse : [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

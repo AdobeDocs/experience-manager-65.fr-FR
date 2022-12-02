@@ -5,7 +5,7 @@ exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1378'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -110,7 +110,7 @@ Le contenu est ajouté au projet de traduction existant. Pour afficher le projet
 1. Appuyez ou cliquez sur le projet que vous venez de mettre à jour.
 1. Appuyez ou cliquez sur la langue ou l’une des langues que vous avez mises à jour.
 
-Vous voyez que de nouvelles cartes de tâches sont ajoutées au projet selon les besoins.
+Vous pouvez voir que de nouvelles cartes de tâches s’ajoutent au projet en fonction des besoins.
 
 <!--
 You see that a new job card was added to the project. In this example, another Spanish translation was added.

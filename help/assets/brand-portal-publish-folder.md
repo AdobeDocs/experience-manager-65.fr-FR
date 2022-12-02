@@ -16,21 +16,21 @@ exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '566'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Publication de dossiers sur Brand Portal{#publish-folders-to-brand-portal}
 
-En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. Pour plus de détails, voir [Configuration d’AEM Assets avec Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
+En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord intégrer AEM Assets à Brand Portal. Pour plus de détails, consultez [Configuration d’AEM Assets avec Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 
-Une fois que vous avez publié une ressource ou un dossier, il est disponible pour les utilisateurs dans Brand Portal.
+Une fois que vous avez publié une ressource ou un dossier, il est disponible dans Brand Portal.
 
-Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans AEM Assets, les modifications ne sont pas répercutées dans Brand Portal tant que vous n’avez pas republié la ressource ou le dossier. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
+Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans AEM Assets, les changements ne sont reflétés dans Brand Portal que lorsque vous republiez la ressource ou le dossier. Cette fonction assure que les modifications en cours ne sont pas disponibles dans Brand Portal. Seules les modifications approuvées publiées par un administrateur sont disponibles dans Brand Portal.
 
 ## Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Dans l’interface d’AEM Assets, passez la souris sur le dossier souhaité, puis sélectionnez **Publier** dans les actions rapides.
+1. Dans l’interface d’AEM Assets, placez le curseur au-dessus du dossier désiré et sélectionnez l’option **Publier** parmi les actions rapides.
 
    Vous pouvez aussi sélectionner le dossier souhaité et suivre les étapes supplémentaires.
 
@@ -40,20 +40,20 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
    Pour publier les dossiers sélectionnés sur Brand Portal, effectuez l’une des opérations suivantes :
 
-   * Dans la barre d’outils, sélectionnez **Publication rapide**. Ensuite, dans le menu, sélectionnez **Publication sur Brand Portal**.
+   * Dans la barre d’outils, sélectionnez **Publication rapide**. Ensuite, sélectionnez **Publier sur Brand Portal** dans le menu.
 
    * Dans la barre d’outils, sélectionnez **Gérer la publication**.
-   1. De **Action** select **Publication sur Brand Portal**, depuis **Planification** select **Maintenant**, puis cliquez sur **Suivant.**
+   1. Dans **Action**, sélectionnez **Publication sur Brand Portal**, depuis **Planification** sélectionnez **Maintenant**, puis cliquez sur **Suivant.**
    1. Confirmez votre sélection dans **Portée** et cliquez sur **Publier sur Brand Portal**.
 
    Un message indique que le dossier a été placé en file d’attente pour publication sur Brand Portal. Connectez-vous à l’interface Brand Portal pour voir le dossier publié.
 
    **Publication ultérieure de dossiers**
 
-   Pour planifier le workflow de publication sur Brand Portal des dossiers de ressources à une date ou une heure ultérieure :
+   Pour planifier le workflow de publication sur Brand Portal de dossiers de ressources à une date ou à une heure ultérieure :
 
    1. Une fois que vous avez sélectionné les ressources/dossiers à publier, sélectionnez **Gérer la publication** dans la barre d’outils supérieure.
-   1. De **Action** select **Publication sur Brand Portal**, depuis **Planification** select **Plus tard**.
+   1. Dans **Action**, sélectionnez **Publier sur Brand Portal** et dans **Planification**, sélectionnez **Plus tard**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -67,7 +67,7 @@ Si vous apportez des modifications ultérieures à la ressource ou au dossier d�
 
 ## Annulation de la publication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
 
-Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en en annulant la publication à partir de l’instance d’auteur AEM. Une fois que vous avez annulé la publication du dossier original, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
+Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en annulant la publication à partir de l’instance d’auteur AEM. Une fois que vous avez annulé la publication du dossier original, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
 Vous avez la possibilité d’annuler rapidement la publication de dossiers sur Brand Portal ou de planifier l’annulation à une date et une heure ultérieures. Pour annuler la publication de dossiers de ressources sur Brand Portal :
 
@@ -82,17 +82,17 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
    Pour annuler rapidement la publication du dossier désiré sur Brand Portal :
 
    1. Dans la barre d’outils, sélectionnez **Gérer la publication**.
-   1. De **Action** select **Annuler la publication à partir de Brand Portal**, depuis **Planification** select **Maintenant**, puis cliquez sur **Suivant.**
+   1. Dans **Action**, sélectionnez **Annuler la publication sur Brand Portal**, depuis **Planification** sélectionnez **Maintenant**, puis cliquez sur **Suivant.**
    1. Confirmez votre sélection dans **Portée** et cliquez sur **Annuler la publication sur Brand Portal**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
-   **Annulation ultérieure de la publication à partir de Brand Portal**
+   **Annulation ultérieure de la publication sur Brand Portal**
 
    Pour planifier l’annulation de la publication d’un dossier sur Brand Portal à une date et à une heure ultérieures :
 
    1. Dans la barre d’outils, sélectionnez **Gérer la publication**.
-   1. De **Action** select **Annuler la publication à partir de Brand Portal** et de **Planification** select **Plus tard**.
+   1. Dans **Action**, sélectionnez **Annuler la publication sur Brand Portal** et sélectionnez **Plus tard** dans **Planification**.
    1. Sélectionnez une **Date d’activation** et spécifiez l’heure. Cliquez sur **Suivant**.
    1. Confirmez votre sélection dans **Portée** et cliquez sur **Suivant**.
    1. Spécifiez un **Titre de workflow** sous **Processus**. Cliquez sur **Annuler la publication ultérieurement.**
@@ -102,4 +102,4 @@ Vous avez la possibilité d’annuler rapidement la publication de dossiers sur 
 
 >[!NOTE]
 >
->La procédure de publication/annulation de la publication d’une ressource vers/depuis Brand Portal est similaire à la procédure correspondante pour un dossier.
+>La procédure de publication/d’annulation de publication vers/depuis Brand Portal est identique à la procédure correspondante pour les dossiers.

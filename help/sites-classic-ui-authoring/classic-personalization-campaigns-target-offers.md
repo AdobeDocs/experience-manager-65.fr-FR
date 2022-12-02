@@ -13,7 +13,7 @@ exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '91'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 70%
    ![](do-not-localize/chlimage_1-11.png)
 
 1. Cliquez sur **Nouveau ...**
-1. Vous pouvez spécifier la variable **Titre**, **Nom** et le type d&#39;expérience à créer ; dans ce cas, offre Test&amp;Target.
+1. Vous pouvez indiquer le **Titre**, le **Nom** et le type d’expérience à créer ; dans ce cas, Offre Test&amp;Target.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -39,4 +39,4 @@ ht-degree: 70%
 
 ## Intégration à Adobe Target {#integrating-with-adobe-target}
 
-Voir [Intégration à Adobe](/help/sites-administering/target.md) [Cible](/help/sites-administering/target.md) pour plus d’informations.
+Consultez [Intégration à Adobe](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) pour obtenir des informations complètes.

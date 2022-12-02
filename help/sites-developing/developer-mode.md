@@ -14,7 +14,7 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '687'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-authori
 Ils aident les développeurs à :
 
 * découvrir ce qui compose les pages ;
-* déboguer en vérifiant la nature des événements, ainsi que leur emplacement et le moment où ils surviennent, afin de résoudre des problèmes.
+* déboguer en vérifiant la nature des événements, ainsi que leur emplacement et le moment où ils surviennent, afin de résoudre des problèmes ;
 * tester si l’application se comporte comme prévu.
 
 >[!CAUTION]
@@ -49,7 +49,7 @@ Ils aident les développeurs à :
 >
 >Si nécessaire, il peut être configuré pour être utilisé :
 >
->* sur une instance d’auteur à l’aide du mode d’exécution nosamplecontent
+>* sur une instance de création à l’aide du mode d’exécution nosamplecontent ;
 >* sur une instance de publication.
 >
 >Il doit être désactivé à nouveau après utilisation.
@@ -59,7 +59,7 @@ Ils aident les développeurs à :
 >Voir :
 >
 >* L’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour d’autres conseils et outils.
->* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+>* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://docs.adobe.com/content/ddc/fr/gems/aem-6-0-developer-mode.html).
 >
 
 
@@ -120,7 +120,7 @@ Chaque entrée de composant peut afficher (par exemple) :
 
 >[!CAUTION]
 >
->Certains liens pointent sur des scripts sous `/libs`. Cependant, elles sont proposées à des fins de référence uniquement, vous **must not** modifier tout élément sous `/libs`, car toutes les modifications que vous apportez peuvent être perdues. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif/Feature Pack. Toutes les modifications dont vous avez besoin doivent être effectuées sous `/apps`, voir [Recouvrements et remplacements](/help/sites-developing/overlays.md).
+>Certains liens pointent sur des scripts sous `/libs`. Toutefois, ils servent uniquement de référence, vous **ne devez rien** modifier sous `/libs`, car toutes les modifications que vous apportez risquent d’être perdues. Cela est dû au fait que cette branche est exposée aux modifications à chaque mise à niveau ou application d’un correctif ou pack de fonctionnalités. Toutes les modifications désirées doivent être apportées sous `/apps`, consultez [Recouvrements et remplacements](/help/sites-developing/overlays.md).
 
 ### Erreurs {#errors}
 
@@ -143,4 +143,4 @@ L’entrée du composant dans l’arborescence de l’onglet Composants sera ég
 >
 >Dans AEM 6.2, les fonctions de test du mode Développeur ont fait l’objet d’une remise en œuvre en tant qu’application Outils autonome.
 >
->Pour plus d’informations, voir [Test de votre interface utilisateur](/help/sites-developing/hobbes.md).
+>Pour en savoir plus, consultez le [Test de l’IU](/help/sites-developing/hobbes.md).

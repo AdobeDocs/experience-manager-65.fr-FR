@@ -12,13 +12,13 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Utilisation de l’éditeur de texte enrichi pour créer du contenu {#use-rich-text-editor-to-author-content}
 
-L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants., notamment :
+L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants., notamment :
 
 * Texte
 * Texte et Image
@@ -26,7 +26,7 @@ L’éditeur de texte enrichi est une composante essentielle à la saisie de con
 
 ## Édition statique {#in-place-editing}
 
-Si vous sélectionnez un composant textuel en cliquant/appuyant une seule fois dessus, il s’affiche dans la [barre d’outils de composant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), comme pour n’importe quel composant.
+Si vous sélectionnez un composant textuel en cliquant ou appuyant une seule fois dessus, il s’affiche dans la [barre d’outils de composant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste), comme pour n’importe quel composant.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -46,9 +46,9 @@ Cette barre d’outils propose les options suivantes :
 
 ## Édition en mode Plein écran {#full-screen-editing}
 
-Pour les composants basés sur du texte, appuyez sur le mode Plein écran dans la barre d’outils. ![](do-not-localize/screen_shot_2018-03-21at163236.png) ouvre l’éditeur de texte enrichi et masque le reste du contenu de la page.
+Dans le cas des composants texte, si vous sélectionnez le mode Plein écran dans la barre d’outils ![](do-not-localize/screen_shot_2018-03-21at163236.png), l’éditeur de texte enrichi s’ouvre et le reste du contenu de la page est masqué.
 
-Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité est des options [dépend de la configuration](/help/sites-administering/rich-text-editor.md).
+Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité des options [dépend de la configuration](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
@@ -65,4 +65,4 @@ Pour fermer le mode Plein écran, cliquez sur l’icône Réduire.
 
 >[!NOTE]
 >
->La copie de listes imbriquées de Microsoft Word dans l’éditeur de texte enrichi peut donner des résultats incohérents et peut nécessiter un ajustement manuel après avoir collé le texte dans l’éditeur de texte enrichi.
+>La copie de listes imbriquées depuis Microsoft Word dans l’éditeur de texte enrichi peut donner des résultats incohérents et peut nécessiter un ajustement manuel après avoir collé le texte dans l’éditeur de texte enrichi.

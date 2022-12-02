@@ -51,7 +51,7 @@ Votre entreprise a probablement établi un protocole de sauvegarde que vous deve
 * Le volume de données ; la capacité peut parfois poser problème, de même que la durée nécessaire pour effectuer la sauvegarde.
 * Si votre sauvegarde peut être effectuée au moment où les utilisateurs sont en ligne ; et si possible, quel en est l’impact sur la performance.
 * La position géographique des utilisateurs ; quel est le meilleur moment pour effectuer la sauvegarde (pour minimiser l’impact) ?
-* Votre stratégie de reprise après sinistre; y a-t-il des directives sur l’emplacement du stockage de données de sauvegarde (par exemple, hors site et médias spécifiques etc.).
+* Votre stratégie de reprise après sinistre ; y a-t-il des directives sur l’emplacement du stockage de données de sauvegarde (par exemple, hors site et médias spécifiques etc.).
 
 Une sauvegarde complète est souvent effectuée à intervalles réguliers (par exemple de manière quotidienne, hebdomadaire ou mensuelle), avec des sauvegardes incrémentielles (par exemple par heure, jour ou semaine).
 
@@ -171,7 +171,7 @@ Le processus répertorie tous les noeuds qui ont été traités. Au cours du pro
 
 * `ignore (not versionnable)` : le nœud ne prend pas en charge les versions et est ignoré lors du processus.
 
-* `ignore (no version)`: le nœud n’a pas de version et est ignoré lors du processus.
+* `ignore (no version)` : le nœud n’a pas de version et est ignoré lors du processus.
 
 * `retained` : le nœud n’est pas purgé.
 * `purged` : le nœud est purgé.
@@ -650,7 +650,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>JConsole</td>
    <td>Observer les threads et les métriques JVM.</td>
-   <td><p>Utilisation : jconsole</p> <p>Voir <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html"> jconsole</a> et <a href="#monitoring-performance-using-jconsole">Surveillance de la performance en utilisant JConsole</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.8, JConsole est extensible avec des modules complémentaires ; par exemple, Top ou TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Utilisation : jconsole</p> <p>Voir <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> et <a href="#monitoring-performance-using-jconsole">Surveillance de la performance en utilisant JConsole</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.8, JConsole est extensible avec des modules complémentaires ; par exemple, Top ou TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
@@ -885,7 +885,7 @@ Les chiffres ci-dessus sont extraits d’un ordinateur portable standard MacBook
 
 ### Compteurs de demandes {#request-counters}
 
-Les informations sur le trafic de demandes (nombre de demandes au cours d’une période déterminée) vous donnent une indication du chargement de votre instance. Ces informations peuvent être extraites de [ request.log](#interpreting-the-request-log) à l’aide des compteurs, automatisant ainsi la collecte de données pour vous permettre de constater :
+Les informations sur le trafic de demandes (nombre de demandes au cours d’une période déterminée) vous donnent une indication du chargement de votre instance. Ces informations peuvent être extraites de [request.log](#interpreting-the-request-log) à l’aide des compteurs, automatisant ainsi la collecte de données pour vous permettre de constater :
 
 * les différences considérables d’activité (c’est-à-dire la différence entre « nombreuses demandes » et « faible activité »
 * lorsqu’une instance n’est pas en cours d’utilisation
@@ -1101,9 +1101,9 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 >Consultez les articles suivants pour plus d’informations :
 >
 >* [Images de mémoire de threads](https://helpx.adobe.com/experience-manager/kb/TakeThreadDump.html)
->* [Analyse des problèmes de mémoire](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeMemoryProblems.html)
+>* [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 >* [Analyse à l’aide du profileur intégré](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
->* [Analyse des processus lents et bloqués](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 
@@ -1147,7 +1147,7 @@ Si votre système ne dispose pas de suffisamment d’espace de disque ou que le 
 * La base de connaissances :
 
    * [Trop de fichiers ouverts](https://helpx.adobe.com/experience-manager/kb/TooManyOpenFiles.html)
-   *  [Le journal consomme trop d’espace disque](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   *  [Le journal consomme trop d’espace disque](https://helpx.adobe.com/fr/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Détérioriation régulière des performances {#regular-performance-degradation}
 
@@ -1156,7 +1156,7 @@ Si vous voyez la performance de votre instance se détériorer après chaque ré
 * [Mémoire insuffisante](#outofmemory)
 * La base de connaissances :
 
-   * [Sessions non fermées](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [Sessions non fermées](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeUnclosedSessions.html)
 
 ### Réglage de JVM {#jvm-tuning}
 

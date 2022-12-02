@@ -14,7 +14,7 @@ exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 93%
 
 AEM fournit les éléments suivants :
 
-* [Une structure pour tester l’interface utilisateur des composants](/help/sites-developing/hobbes.md).
+* [Un framework pour tester l’interface utilisateur des composants](/help/sites-developing/hobbes.md).
 * [Un mécanisme pour tester et déboguer les composants](/help/sites-developing/developer-mode.md).
 
 Les deux outils suivants sont des outils de test Open Source :
@@ -33,13 +33,13 @@ Les deux outils suivants sont des outils de test Open Source :
 
 Selenium est utilisé pour le test de fonctions dans un navigateur avec un seul utilisateur par activité. Il enregistre les étapes de test (clics) sous la forme de tableaux HTML ou de classes Java.
 
-Pour plus d’informations, voir [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Pour plus d’informations, consultez [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **JMeter**
 
 JMeter est utilisé pour effectuer le suivi des demandes. Il peut être utilisé dans le cadre de tests fonctionnels, de tests des performances et de tests de contrainte.
 
-Pour plus d’informations, voir [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
+Pour plus d’informations, consultez [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
 
 Il existe également une foule d’outils propriétaires conçus pour automatiser les tests et gérer les plans de test.
 

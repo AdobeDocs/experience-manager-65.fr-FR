@@ -13,7 +13,7 @@ exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '392'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -27,8 +27,8 @@ Pour plus d’informations sur la création de topologies de déchargement et la
 
 La structure de déchargement définit deux propriétés de tâche que vous utilisez pour identifier la charge utile de la tâche. Les agents de réplication de déchargement utilisent ces propriétés pour identifier les ressources à répliquer sur les instances de la topologie :
 
-* `offloading.job.input.payload`: Liste de chemins d’accès au contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
-* `offloading.job.output.payload`: Liste de chemins d’accès au contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, la charge utile est répliquée sur ces chemins d’accès sur l’instance qui a créé la tâche.
+* `offloading.job.input.payload` : liste de chemins d’accès au contenu séparés par des virgules. Le contenu est répliqué sur l’instance qui exécute la tâche.
+* `offloading.job.output.payload` : liste de chemins d’accès au contenu séparés par des virgules. Une fois l’exécution de la tâche terminée, le payload est répliqué sur ces chemins d’accès sur l’instance qui a créé la tâche.
 
 Utilisez l’énumération `OffloadingJobProperties` pour faire référence aux noms de propriété :
 
@@ -42,8 +42,8 @@ Une charge utile n’est pas obligatoire pour les tâches. Elle est toutefois n�
 Créez un client qui appelle la méthode JobManager.addJob afin de créer une tâche exécutée par un service JobConsumer sélectionné automatiquement. Indiquez les informations suivantes pour créer la tâche :
 
 * Rubrique : rubrique de tâche.
-* Nom : (Facultatif).
-* Carte des propriétés : A `Map<String, Object>` qui contient un nombre indéfini de propriétés, telles que les chemins de charge utile d’entrée et les chemins de charge utile de sortie. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
+* Nom : (Facultatif)
+* Carte des propriétés : objet `Map<String, Object>` contenant un nombre indéfini de propriétés, telles que les chemins de payload en entrée et en sortie. Cet objet Map est disponible pour l’objet JobConsumer qui exécute la tâche.
 
 L’exemple de service suivant crée une tâche pour un chemin de charge utile en entrée et de rubrique donné.
 
@@ -93,7 +93,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est appelé pour la fonction `com/adobe/example/offloading` et la rubrique `/content/geometrixx/de/services` payload :
+Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est appelé pour la rubrique `com/adobe/example/offloading` et le payload `/content/geometrixx/de/services` :
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -103,7 +103,7 @@ Le journal contient le message suivant lorsque JobGeneratorImpl.createJob est ap
 
 Pour exécuter des tâches, développez un service OSGi qui met en œuvre l’interface `org.apache.sling.event.jobs.consumer.JobConsumer`. Effectuez l’identification avec la rubrique à consommer à l’aide de la propriété `JobConsumer.PROPERTY_TOPICS`.
 
-L’exemple suivant d’implémentation de JobConsumer est enregistré avec la variable `com/adobe/example/offloading` rubrique. Le consommateur définit simplement la propriété Consumed du nœud de contenu de charge utile sur True.
+L’exemple d’implémentation JobConsumer suivant s’enregistre auprès de la rubrique `com/adobe/example/offloading`. Le consommateur définit simplement la propriété Consumed du nœud de contenu de payload sur True.
 
 ```java
 package com.adobe.example.offloading;

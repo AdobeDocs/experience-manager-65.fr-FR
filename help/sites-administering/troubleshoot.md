@@ -14,7 +14,7 @@ exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ La section ci-dessous traite de certains problèmes susceptibles d’être renco
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/release-notes.md) relatifs à votre instance (packs de version et service packs).
+>Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/release-notes.md) relatifs à votre instance (packs de version et pack de services).
 
 ## Scénarios de résolution des incidents pour les administrateurs {#troubleshooting-scenarios-for-administrators}
 
@@ -50,7 +50,7 @@ Le tableau ci-dessous contient une présentation des incidents que les administr
   </tr>
   <tr>
    <td><p>Administrateur système</p> </td>
-   <td><p>L’écran de bienvenue AEM ne s’affiche pas dans le navigateur après avoir double-cliqué sur AEM démarrage rapide de CM</p> </td>
+   <td><p>Après avoir double-cliqué sur Quickstart CM AEM, l’écran d’accueil d’AEM ne s’affiche pas dans le navigateur</p> </td>
   </tr>
   <tr>
    <td><p>Administrateur système</p> <p>utilisateur administrateur</p> </td>
@@ -69,7 +69,7 @@ Pour plus d’informations sur les scénarios de résolution des incidents ci-de
 
 * Un double clic sur le fichier .jar Quickstart n’a aucun effet, ou le fichier JAR est utilisé avec un autre programme (tel que le gestionnaire d’archive).
 * Les applications qui s’exécutent sur CRX génèrent des erreurs de mémoire insuffisante.
-* Après avoir double-cliqué sur Quickstart AEM, l’écran de bienvenue d’AEM ne s’affiche pas dans le navigateur.
+* Après avoir double-cliqué sur Quickstart AEM, l’écran d’accueil d’AEM ne s’affiche pas dans le navigateur.
 
 ## Méthodes d’analyse de la résolution des incidents {#methods-for-troubleshooting-analysis}
 
@@ -79,8 +79,8 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 
 ### Utilisation du programme d’image mémoire des threads Sling {#using-sling-thread-dumper}
 
-1. Ouvrez le **Console web d’AEM**; par exemple à `https://localhost:4502/system/console/`.
-1. Sélectionnez la **Threads** under **État** .
+1. Ouvrez la **console web AEM**, par exemple, à l’adresse `https://localhost:4502/system/console/`.
+1. Sélectionnez les **threads** dans l’onglet **Statut**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -88,9 +88,9 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 
 1. Recherchez le PID (ID de processus) de l’instance Java AEM.
 
-   Par exemple, vous pouvez utiliser `ps -ef` ou `jps`.
+   Vous pouvez, par exemple, utiliser `ps -ef` ou `jps`.
 
-1. Exécuter:
+1. Exécutez :
 
    `jstack <pid>`
 
@@ -98,18 +98,18 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 
 >[!NOTE]
 >
->Vous pouvez ajouter les images mémoire de threads à un fichier journal à l’aide du `>>` redirection de sortie :
+>Vous pouvez ajouter les images mémoire des threads à un fichier journal en utilisant la redirection de sortie `>>` :
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Pour plus d’informations, voir [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://helpx.adobe.com/cq/kb/TakeThreadDump.html).
+Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://helpx.adobe.com/cq/kb/TakeThreadDump.html).
 
 ### Contrôle des sessions JCR non fermées {#checking-for-unclosed-jcr-sessions}
 
 Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ouvrir des sessions JCR (cela s’apparente à l’ouverture d’une connexion de base de données). Si les sessions ouvertes ne sont jamais fermées, votre système peut rencontrer les symptômes suivants :
 
 * Le système est ralenti.
-* Vous pouvez voir beaucoup de CacheManager : resizeAll entrées dans le fichier journal ; le nombre suivant (size=&lt;x>) affiche le nombre de caches. Chaque session ouvre plusieurs caches.
+* Vous constatez qu’il y a de nombreuses entrées CacheManager: resizeAll dans le fichier journal. Le nombre (size=&lt;x>) ci-dessous affiche le nombre de caches. Chaque session ouvre plusieurs caches.
 * Parfois, la mémoire du système est saturée (après quelques heures, jours ou semaines, selon la gravité).
 
 Pour analyser les sessions non fermées et découvrir le code qui ne ferme pas une session, consulter l’article [Analyse des sessions non fermées](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html) de la base de connaissances.
@@ -118,9 +118,9 @@ Pour analyser les sessions non fermées et découvrir le code qui ne ferme pas u
 
 Le statut des lots OSGi peut également fournir une indication précoce de problèmes éventuels.
 
-1. Ouvrez le **Console web d’AEM**; par exemple à `https://localhost:4502/system/console/`.
-1. Sélectionner **Lots** under **OSGI** .
-1. Vérifiez :
+1. Ouvrez la **console web AEM**, par exemple, à l’adresse `https://localhost:4502/system/console/`.
+1. Sélectionnez **Lots** dans l’onglet **OSGI**.
+1. Vérification:
 
    * le statut des lots. Si le statut est Inactif ou Insatisfait, essayez d’arrêter et de redémarrer le lot. Si le problème persiste, un examen plus approfondi peut être nécessaire à l’aide d’autres méthodes.
    * Si l’un des lots possède des dépendances manquantes. Ces informations peuvent être affichées en cliquant sur le nom de chaque lot, qui est un lien (l’exemple ci-dessous ne comporte aucun problème) :

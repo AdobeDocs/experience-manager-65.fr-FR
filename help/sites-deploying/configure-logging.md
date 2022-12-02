@@ -14,7 +14,7 @@ exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,13 +24,13 @@ AEM vous offre la possibilité de configurer :
 
 * les paramètres généraux du service de journalisation central ;
 * la journalisation des données de requête (une configuration de journalisation spécialisée pour les informations de requête) :
-* les paramètres spécifiques des services individuels; par exemple, un fichier journal individuel et le format des messages du journal
+* les paramètres spécifiques des services individuels ; par exemple, un fichier journal individuel et le format des messages du journal.
 
 Il s’agit toutes de [configurations OSGi](/help/sites-deploying/configuring-osgi.md).
 
 >[!NOTE]
 >
->La journalisation dans AEM est basée sur les principes de Sling. Pour plus d’informations, voir [Journalisation Sling](https://sling.apache.org/site/logging.html).
+>La journalisation dans AEM est basée sur les principes de Sling. Pour plus d’informations, consultez [Journalisation Sling](https://sling.apache.org/site/logging.html).
 
 ## Journalisation globale {#global-logging}
 
@@ -44,7 +44,7 @@ La [configuration de la journalisation d’Apache Sling](/help/sites-deploying/
 
 >[!NOTE]
 >
->Cet [article de la base de connaissances ](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html)explique comment appliquer une rotation aux fichiers request.log et access.log.
+>Cet [article de la base de connaissances](https://helpx.adobe.com/fr/experience-manager/kb/HowToRotateRequestAndAccessLog.html) explique comment appliquer une rotation aux fichiers request.log et access.log.
 
 ## Enregistreurs et rédacteurs pour les services individuels {#loggers-and-writers-for-individual-services}
 
@@ -87,7 +87,7 @@ Ces éléments sont liés par les paramètres suivants pour les éléments appro
 
 Certains enregistreurs et rédacteurs sont inclus dans l’installation AEM standard.
 
-Le premier est un cas particulier car il contrôle à la fois les fichiers `request.log`et `access.log` :
+Le premier est un cas particulier car il contrôle à la fois les fichiers `request.log` et `access.log` :
 
 * L’enregistreur :
 

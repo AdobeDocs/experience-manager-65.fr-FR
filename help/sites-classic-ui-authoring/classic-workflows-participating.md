@@ -13,7 +13,7 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
    ![workflowstatus-1](assets/workflowstatus-1.png)
 
-* Lorsque vous ou un groupe auquel vous appartenez vous voyez attribuer un élément de travail dans le cadre d’un workflow, l’élément de travail apparaît dans votre boîte de réception Worfklow AEM.
+* Lorsque vous ou un groupe auquel vous appartenez vous voyez attribuer un élément de travail dans le cadre d’un workflow, l’élément de travail apparaît dans votre boîte de réception Workflow AEM.
 
    ![workflowinbox](assets/workflowinbox.png)
 

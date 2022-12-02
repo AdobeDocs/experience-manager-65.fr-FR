@@ -13,7 +13,7 @@ exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '867'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -29,27 +29,27 @@ Le code est écrit une seule fois, mais lu plusieurs fois. Mieux vaut déployer 
 
 ### Choisir des noms représentatifs de l’intention {#choose-intention-revealing-names}
 
-Idéalement, un autre programmeur ne devrait pas avoir à ouvrir un module pour en comprendre la fonction. De même, la fonction d’une méthode doit être comprise sans devoir être lue. Plus nous adhérons à ces principes, plus le code écrit est simple à lire et facile à modifier.
+Idéalement, un autre programmeur ne devrait pas avoir à ouvrir un module pour en comprendre la fonction. De même, la fonction d’une méthode doit être comprise sans avoir à lire ce module. Plus nous adhérons à ces principes, plus le code écrit est simple à lire et facile à modifier.
 
 Dans la base de code AEM, les conventions suivantes sont utilisées :
 
 
-* Une implémentation unique d’une interface est nommée `<Interface>Impl`, c’est-à-dire `ReaderImpl`.
-* Plusieurs implémentations d’une interface sont nommées `<Variant><Interface>`, c’est-à-dire `JcrReader` et `FileSystemReader`.
+* Une implémentation unique d’une interface est nommée `<Interface>Impl`, par exemple `ReaderImpl`.
+* Les implémentations multiples d’une interface sont nommées `<Variant><Interface>`, par exemple `JcrReader` et `FileSystemReader`.
 * Les classes de base abstraites sont nommées `Abstract<Interface>` ou `Abstract<Variant><Interface>`.
-* Les packages sont nommés `com.adobe.product.module`.  Chaque artefact Maven ou bundle OSGi doit avoir son propre module.
+* Les modules sont nommés `com.adobe.product.module`.  Chaque artefact Maven ou bundle OSGi doit avoir son propre module.
 * Les implémentations Java sont placées dans un module impl sous leur API.
 
 
 Notez que ces conventions ne doivent pas nécessairement s’appliquer aux implémentations des clients, mais il est important qu’elles soient définies et respectées pour que le code soit maintenable.
 
-Idéalement, les noms doivent décrire clairement leur intention. Un test de code courant pour les noms qui ne sont pas aussi clairs qu’ils le devraient est la présence de commentaires expliquant à quoi sert la variable ou la méthode :
+Idéalement, les noms doivent décrire clairement leur intention. Un test de code courant permettant de savoir si des noms ne sont pas assez descriptifs est la présence de commentaires expliquant la fonction de la variable ou de la méthode en question :
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Manque de clarté</strong></p> </td>
-   <td><p><strong>Effacer</strong></p> </td>
+   <td><p><strong>Obscur</strong></p> </td>
+   <td><p><strong>Clair</strong></p> </td>
   </tr>
   <tr>
    <td><p>int d; //elapsed time in days</p> </td>
@@ -68,7 +68,7 @@ DRY indique que le même ensemble de code ne doit jamais être dupliqué. Cela s
 
 ### Éviter les règles CSS nues {#avoid-naked-css-rules}
 
-Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *.myapp-centertext* serait une règle plus spécifique, car elle spécifie centré *text* dans le contexte de votre application.
+Les règles CSS doivent être spécifiques à votre élément cible dans le contexte de votre application. Par exemple, une règle CSS appliquée à *.content .center* serait trop générale et pourrait finir par se répercuter sur de nombreux contenus dans votre système, obligeant les autres à contourner ce style. *myapp-centertext* serait une règle plus spécifique car elle spécifie du *texte* centré dans le contexte de votre application.
 
 ### Ne pas utiliser d’API obsolètes {#eliminate-usage-of-deprecated-apis}
 
@@ -84,7 +84,7 @@ Bien que les chemins du JCR ne doivent pas contenir d’espaces, leur présence 
 
 ### Utiliser l’API XSS et/ou HTL pour se protéger contre les attaques de script entre sites {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 
-AEM propose une API XSS pour nettoyer facilement les paramètres et garantir la sécurité contre des attaques de script entre sites. En outre, HTL propose des protections intégrées directement dans le langage de modèle. Un aide-mémoire API est disponible en téléchargement sur [Développement - Recommandations et meilleures pratiques](/help/sites-developing/dev-guidelines-bestpractices.md).
+AEM propose une API XSS pour nettoyer facilement les paramètres et garantir la sécurité contre des attaques de script entre sites. En outre, HTL propose des protections intégrées directement dans le langage de modèle. Un aide-mémoire d’API est disponible en téléchargement sur [Développement - Recommandations et bonnes pratiques](/help/sites-developing/dev-guidelines-bestpractices.md).
 
 ### Implémenter une journalisation appropriée {#implement-appropriate-logging}
 
@@ -92,7 +92,7 @@ Pour le code Java, AEM prend en charge slf4j comme API standard pour la journali
 
 * ERROR : si des éléments de code ne fonctionnent pas correctement et que le traitement ne peut pas continuer. L’erreur se produit notamment à la suite d’une exception inattendue. Il est généralement utile d’inclure des traces de pile dans ces scénarios.
 * WARN : si des éléments de code ne fonctionnent pas correctement, mais que le traitement peut continuer. C’est souvent le résultat d’une exception attendue, par exemple, *PathNotFoundException*.
-* INFO : informations utiles lors de la surveillance d’un système. Gardez à l’esprit qu’il s’agit de la valeur par défaut et que la plupart des clients la laisseront en place dans leur environnement. Par conséquent, ne les utilisez pas excessivement.
+* INFO : informations utiles lors de la surveillance d’un système. Gardez à l’esprit qu’il s’agit de niveaux par défaut et que la plupart des clients les laisseront tels quels dans leur environnement. Par conséquent, ne les utilisez pas excessivement.
 * DEBUG : informations de niveau inférieur sur le traitement. Utile lors du débogage d’un problème lié au support.
 * TRACE : informations de niveau le plus bas, par exemple, entrée/sortie de méthodes. Niveau généralement utilisé par les développeurs uniquement.
 

@@ -1,18 +1,18 @@
 ---
-title: Présentation des concepts de métadonnées
-description: Découvrez le besoin et les types de métadonnées qui permettent une catégorisation et une organisation plus simples des ressources.
+title: Présentation des concepts des métadonnées
+description: Découvrez l’utilité des métadonnées et leurs types, pour simplifier la catégorisation et l’organisation des ressources.
 contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '2720'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
-# Présentation des concepts de métadonnées {#why-we-need-metadata}
+# Présentation des concepts des métadonnées {#why-we-need-metadata}
 
 Les métadonnées sont des données de description des données. À cet égard, elles font référence à vos ressources numériques (ou actifs), par exemple une image. Les métadonnées sont essentielles pour gérer efficacement des ressources.
 
@@ -28,7 +28,7 @@ Les propriétés de métadonnées de base décrites ci-dessus sont utilisées pa
 
 Vous pouvez ajouter d’autres données de niveau supérieur à des ressources numériques, par exemple :
 
-* Type de ressource (une image, une vidéo, un clip audio ou un document).
+* Type de ressource (image, vidéo, clip audio ou document).
 * Propriétaire.
 * Intitulé.
 * Description.
@@ -90,7 +90,7 @@ Le format de fichier d’image échangeable (Exif) est le plus utilisé dans la 
 
 Le fait que ce format ne soit pas pris en charge par quelques formats de fichiers image très appréciés comme BMP, GIF ou PNG constitue une limite majeure.
 
-Les champs de métadonnées définis par Exif sont généralement de nature technique et d’une utilité limitée pour la gestion descriptive des métadonnées. D’où l’intérêt de [!DNL Experience Manager Assets] pour mapper les propriétés Exif dans des [schémas de métadonnées courants](metadata-schemas.md)[ et dans XMP](xmp-writeback.md).
+Les champs de métadonnées définis par Exif sont généralement de nature technique et d’une utilité limitée pour la gestion descriptive des métadonnées. Ainsi, [!DNL Experience Manager Assets] permet de mapper les propriétés Exif dans des [schémas de métadonnées courants](metadata-schemas.md) et dans [XMP](xmp-writeback.md).
 
 ### Autres métadonnées {#other-metadata}
 
@@ -121,7 +121,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * Album – [!DNL Adobe Photoshop Album].
 * CQ – Utilisées par [!DNL Experience Manager Assets].
 * DAM – Utilisées par [!DNL Experience Manager Assets].
-* DEX - [!DNL Optima SC Description explorer] est un ensemble d’outils de gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
+* DEX – [!DNL Optima SC Description explorer] est une collection d’outils pour la gestion des métadonnées et des fichiers pour les systèmes d’exploitation Windows.
 * CRS – [Adobe Photoshop Camera Raw](https://helpx.adobe.com/fr/camera-raw/using/introduction-camera-raw.html).
 * LR – [!DNL Adobe Lightroom].
 * MediaPro – [iView MediaPro](https://fr.wikipedia.org/wiki/Phase_One_Media_Pro).
@@ -129,7 +129,7 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 * PDF et PDF/X.
 * Photoshop et psAux – [!DNL Adobe Photoshop].
 
-### Métadonnées de Digital Rights Management (DRM) {#digital-rights-management-metadata}
+### Métadonnées de Digital Rights Management {#digital-rights-management-metadata}
 
 * CC – [!DNL Creative Commons].
 * [!DNL XMPRights].
@@ -162,13 +162,13 @@ Les métadonnées spécifiques à l’application englobent des métadonnées te
 
 La référence ci-après contient des informations sur un schéma de métadonnées spécifique (dans l’ordre alphabétique) ainsi qu’une liste de propriétés et de leur définition.
 
-### Dublin Core {#dublin-core}
+### Dublin Core {#dublin-core}
 
-La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans [!DNL Assets], Dublin Core décrit les ressources numériques, notamment les vidéos, le son, les images et les documents.
+La métadonnée Dublin Core fournit un ensemble de conventions normalisé pour décrire les ressources afin de faciliter leur recherche. Dans [!DNL Assets], Dublin Core décrit les ressources numériques, y compris les vidéos, le son, les images et les documents.
 
-Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
+Le DCMES (Dublin Core Metadata Element Set) contient 15 éléments de métadonnées qui sont répertoriés dans le tableau ci-après. Chaque élément Dublin Core est facultatif et peut être utilisé plusieurs fois. Vous pouvez ajouter ou supprimer des informations de métadonnées Dublin Core comme vous le feriez pour les métadonnées spécifiques au type de média.
 
-Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Voir [Dublin Core initiative](https://dublincore.org/) pour plus d’informations.
+Outre le DCMES, il existe d’autres éléments de métadonnées créés par le Dublin Core Initiative. Pour plus d’informations, consultez [Dublin Core Initiative](https://dublincore.org/).
 
 | Propriété | Description |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------ |
@@ -179,7 +179,7 @@ Outre le DCMES, il existe d’autres éléments de métadonnées créés par le 
 | description | Informations supplémentaires sur la ressource. |
 | format | Format de fichier, support physique ou dimensions de la ressource. [!DNL Experience Manager] utilise `dc:format` pour représenter le type MIME de la ressource. |
 | identifier | Référence unique à la ressource. |
-| language | La langue de la ressource (par exemple, `en` pour l’anglais). |
+| language | Langue de la ressource (`en` pour l’anglais, par exemple). |
 | publisher | Personne ou entreprise chargée de rendre la ressource disponible. |
 | relation | Ressource connexe. |
 | rights | Informations sur la personne qui dispose des droits sur cette ressource. |
@@ -212,17 +212,17 @@ La [spécification XMP](https://www.adobe.com/devnet/xmp.html) est disponible au
 
 ### Présentation de la norme XMP {#what-is-xmp}
 
-Adobe a introduit pour la première fois la norme XMP dans le cadre du logiciel Adobe Acrobat. Depuis, la norme XMP a été largement adoptée. [!DNL Assets] prend en charge de manière native le XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
+Adobe a introduit pour la première fois la norme XMP dans le cadre du logiciel Adobe Acrobat. Depuis, la norme XMP a été largement adoptée. [!DNL Assets] prend en charge de manière native XMP : la plateforme de métadonnées extensible pilotée par Adobe. XMP est une norme destinée au traitement et au stockage de métadonnées normalisées et propriétaires dans les ressources numériques. La norme XMP est conçue pour être la norme commune permettant à plusieurs applications de fonctionner efficacement avec les métadonnées.
 
-Les professionnels de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations sur plusieurs formats de fichiers. [!DNL Assets] Le référentiel extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
+Les professionnels de la production, par exemple, utilisent la prise en charge XMP intégrée dans les applications d’Adobe pour transmettre des informations sur plusieurs formats de fichiers. Le référentiel d’[!DNL Assets] extrait les métadonnées XMP et les utilise pour gérer le cycle de vie du contenu et offre la possibilité de créer des workflows d’automatisation.
 
 XMP normalise la façon dont les métadonnées sont définies, créées et traitées en fournissant un modèle de données, un modèle de stockage et des schémas. Tous ces concepts sont abordés dans cette section.
 
 Toutes les métadonnées héritées d’EXIF, d’ID3 ou de Microsoft Office sont automatiquement converties au format XMP, qui peut être étendu pour prendre en charge le schéma de métadonnées spécifiques au client comme les catalogues de produits.
 
-Dans la norme XMP, les métadonnées sont constituées d’un ensemble de propriétés. Ces propriétés sont toujours associées à une entité particulière appelée ressource ; en d’autres termes, les propriétés portent sur la ressource. Dans le cas de XMP, il s’agit toujours de la ressource (ou actif).
+Dans la norme XMP, les métadonnées sont constituées d’un ensemble de propriétés. Ces propriétés sont toujours associées à une entité particulière appelée ressource ; en d’autres termes, les propriétés portent sur la ressource. Dans le cas de XMP, il s’agit toujours de la ressource.
 
-### XMP écosystème {#xmp-ecosystem}
+### Écosystème XMP {#xmp-ecosystem}
 
 XMP définit un modèle de [métadonnées](https://fr.wikipedia.org/wiki/Métadonnée) exploitable avec n’importe quel ensemble défini d’éléments de métadonnées. XMP définit également des [schémas](https://en.wikipedia.org/wiki/XML_schema) spécifiques pour des propriétés de base utiles pour consigner l’historique d’une ressource lorsqu’elle passe par diverses étapes de traitement, de la photographie, en passant par la [numérisation](https://fr.wikipedia.org/wiki/Scanner_(informatique)) ou la création en tant que texte, à travers des étapes de retouche photo (comme le [recadrage](https://fr.wikipedia.org/wiki/Recadrage_(image)) ou l’ajustement de couleur), pour former une image finale. XMP permet à chaque programme ou appareil d’ajouter ses propres informations à une ressource numérique. Ces informations peuvent être ensuite conservées dans le fichier numérique final.
 
@@ -243,49 +243,48 @@ La norme XMP a été conçue pour être extensible, ce qui vous permet d’ajout
 >
 >En règle générale, XMP ne permet pas l’incorporation des types de données binaires. Pour gérer des données binaires dans XMP, comme des images miniatures, celles-ci doivent être codées dans un format XML tel que `Base64`.
 
-### XMP concepts {#xmp-core-concepts}
+### Concepts de XMP {#xmp-core-concepts}
 
 Les sections ci-après décrivent les notions fondamentales relatives à XMP, notamment les espaces de noms et les schémas, les propriétés et les valeurs, ainsi que les variantes linguistiques.
 
 #### Espaces de noms et schémas {#namespaces-and-schemata}
 
-Un schéma XMP est un ensemble de noms de propriétés défini dans un espace de noms XML commun qui comprend
-le type des données et des informations descriptives. Un schéma XMP est identifié par l’URI de l’espace de noms XML. L’utilisation des espaces de noms permet d’empêcher tout conflit entre les propriétés dans différents schémas qui portent le même nom, mais ont un sens différent.
+Un schéma XMP est un ensemble de noms de propriétés défini dans un espace de noms XML commun qui comprend le type des données et des informations descriptives. Un schéma XMP est identifié par l’URI de l’espace de noms XML. L’utilisation des espaces de noms permet d’empêcher tout conflit entre les propriétés dans différents schémas qui portent le même nom, mais ont un sens différent.
 
-Par exemple, la variable `Creator` dans deux schémas conçus indépendamment, peut signifier la personne qui a créé la ressource ou l’application qui l’a créée (Adobe Photoshop, par exemple).
+Par exemple, la propriété `Creator` dans deux schémas conçus indépendamment peut correspondre à la personne ou à l’application (Adobe Photoshop, par exemple) ayant créé la ressource.
 
 #### Propriétés et valeurs {#properties-and-values}
 
 XMP peut inclure des propriétés de l’un ou de plusieurs des schémas. Par exemple, un sous-ensemble classique utilisé par de nombreuses applications Adobe peut comprendre les éléments suivants :
 
 * Schéma Dublin Core : `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
-* Schéma de base XMP : `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`.
-* Schéma de gestion des droits XMP : `xmpRights:WebStatement`, `xmpRights:Marked`.
-* Schéma de gestion des médias XMP : `xmpMM:DocumentID`.
+* Schéma de base XMP : `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`
+* Schéma de gestion des droits XMP : `xmpRights:WebStatement`, `xmpRights:Marked`
+* Schéma de gestion des médias XMP : `xmpMM:DocumentID`
 
 #### Variantes linguistiques {#language-alternatives}
 
-XMP permet d’ajouter une `xml:lang` pour spécifier la langue du texte.
+XMP vous offre la possibilité d’ajouter une propriété `xml:lang` aux propriétés de texte pour spécifier la langue du texte.
 
-## Utilisation des métadonnées IPTC {#support-for-iptc-metadata}
+## Utilisation de métadonnées IPTC {#support-for-iptc-metadata}
 
-Découvrez comment [!DNL Adobe Experience Manager Assets] prend en charge les métadonnées IPTC, les évaluations de création et les mots-clés ajoutés aux ressources par le biais de [!DNL Adobe Bridge] et autres [!DNL Adobe Creative Cloud] applications.
+Découvrez comment [!DNL Adobe Experience Manager Assets] prend en charge les métadonnées IPTC, les évaluations des créations et les mots-clés ajoutés aux ressources par [!DNL Adobe Bridge] et par d’autres applications [!DNL Adobe Creative Cloud].
 
-[!DNL Adobe Experience Manager Assets] prend en charge la norme de métadonnées IPTC largement utilisée pour décrire les ressources. Ainsi, [!DNL Assets] accroît l’acceptation de ses images par les différentes parties, y compris les photographes, les agences de création, les bibliothèques, les musées, etc.
+[!DNL Adobe Experience Manager Assets] prend en charge la norme de métadonnées IPTC qui est couramment utilisée pour décrire des ressources. Cela permet à [!DNL Assets] de bénéficier d’une plus large acceptation de ses images auprès des différents intervenants, y compris les photographes, les agences de création, les bibliothèques, les musées, etc.
 
 Le schéma de métadonnées utilisé pour les ressources intègre désormais IPTC Core et IPTC Extension, deux schémas permettant de définir des propriétés de métadonnées complètes, grâce auxquels les utilisateurs peuvent ajouter des données fiables et précises sur les personnes, les lieux et les produits illustrés dans une image. Il prend également en charge les dates, noms et identifiants relatifs à la création de l’image, ainsi qu’une méthode permettant d’exprimer les informations sur les droits avec une certaine souplesse.
 
 La page des propriétés des ressources comprend maintenant des onglets distincts pour afficher les métadonnées IPTC Core et IPTC Extension dans des champs modifiables.
 
-1. Dans la [!DNL Assets] interface utilisateur, sélectionnez une image.
+1. Sélectionnez une image dans l’interface utilisateur d’[!DNL Assets].
 1. Cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
-1. Cliquez sur le bouton **[!UICONTROL IPTC]** pour afficher les métadonnées IPTC de la ressource.
-1. Modifiez les propriétés des métadonnées IPTC, selon les besoins.
+1. Cliquez sur l’onglet **[!UICONTROL IPTC]** pour afficher les métadonnées IPTC de la ressource.
+1. Modifiez les propriétés de métadonnées IPTC, si vous le souhaitez.
 
    ![iptc_tab](assets/keywords-in-iptc-tab.png)
 
-1. Cliquez sur le bouton **[!UICONTROL Extension IPTC]** pour afficher les métadonnées d’extension IPTC de la ressource.
-1. Modifiez les propriétés de métadonnées d’extension IPTC, selon les besoins.
+1. Cliquez ou appuyez sur l’onglet **[!UICONTROL Extension IPTC]** pour afficher les métadonnées d’extension IPTC de la ressource.
+1. Modifiez les propriétés de métadonnées d’extension IPTC, selon vos besoins.
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les modifications.
 
 ### Prise en charge de l’évaluation de la création {#creative-rating-support}
@@ -300,6 +299,6 @@ Notez toutefois que cette propriété n’est pas indexée pour l’instant et c
 
 ### Prise en charge des mots-clés {#keyword-support}
 
-Le **[!UICONTROL IPTC]** de l’onglet [!UICONTROL Propriétés] affiche également les mots-clés ajoutés aux ressources par le biais d’Adobe Bridge et d’autres applications Adobe Creative Cloud. Vous pouvez aussi modifier ces mots-clés et en ajouter d’autres à partir de l’onglet **[!UICONTROL IPTC]**.
+L’onglet **[!UICONTROL IPTC]** de la page [!UICONTROL Propriétés] affiche également les mots-clés ajoutés aux ressources au moyen d’Adobe Bridge et d’autres applications Adobe Creative Cloud. Vous pouvez aussi modifier ces mots-clés et en ajouter d’autres à partir de l’onglet **[!UICONTROL IPTC]**.
 
 ![mots-clés](assets/keywords-in-iptc-tab.png)

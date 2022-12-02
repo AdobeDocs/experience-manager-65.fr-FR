@@ -147,7 +147,7 @@ Pour plus d’informations, consultez la section [Création de points de contrô
 
 **Exécution de l’indexation hors ligne pour les définitions d’index générées**
 
-La réindexation Lucene peut être effectuée hors ligne à l’aide d’oak-run. Ce processus crée des données d’index dans le disque sous `indexing-result/indexes`. Il n’écrit **pas** dans le référentiel et ne nécessite donc pas d’arrêter l’instance AEM en cours d’exécution. Le magasin de texte créé est intégré à ce processus :
+La réindexation Lucene peut être effectuée hors ligne à l’aide d’oak-run. Ce processus crée des données d’index dans le disque sous `indexing-result/indexes`. Il n’écrit **pas** dans le référentiel et ne nécessite donc pas d’arrêter l’instance AEM en cours d’exécution. Le magasin de texte créé est intégré à ce processus :
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store

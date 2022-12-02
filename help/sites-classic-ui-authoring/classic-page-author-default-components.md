@@ -14,7 +14,7 @@ exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -30,15 +30,15 @@ Adobe Experience Manager (AEM) est fourni avec divers composants prêts à l�
 
 ## Composants – Principaux domaines {#components-major-areas}
 
-Vous trouverez, aux pages suivantes, des liens rapides vers certains des principaux domaines de gestion du contenu (des liens vers d’autres domaines sont disponibles sur la page d’aperçu ci-dessus) :
+Vous trouverez dans les pages suivantes des liens rapides vers certains des principaux domaines de gestion du contenu (des liens vers d’autres domaines sont disponibles sur la page d’aperçu ci-dessus) :
 
-* [Composants pour la création de page](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+* [Composants pour la création de pages](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Les composants utilisés pour créer un contenu de page standard sont principalement contenus dans les groupes . **Général**, **Colonnes** et **Forms**.
+   Les composants utilisés pour créer du contenu de page standard se trouvent principalement dans les groupes **Général**, **Colonnes** et **Formulaires**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-   La fonctionnalité eCommerce d’AEM comprend également un éventail de composants, contenus dans la variable **Commerce** groupe. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
+   La fonctionnalité eCommerce d’AEM comprend également un éventail de composants, contenus dans le groupe **Commerce**. L’utilisation réelle peut dépendre du moteur de commerce utilisé.
 
 ## Utilisation du mode de conception pour configurer des composants {#using-design-mode-to-configure-components}
 

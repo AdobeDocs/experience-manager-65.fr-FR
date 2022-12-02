@@ -137,7 +137,7 @@ Alors que les instances d’exploitation sont généralement exécutées sur des
 
 Pour se familiariser avec AEM et développer sur AEM, il est courant d’utiliser une instance installée sur un ordinateur local exécutant Apple OS X ou les versions de bureau de Microsoft Windows ou Linux.
 
-Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft Edge**, **Internet Explorer** 11, ** Chrome **51+**, Firefox ** 47+, **Safari** 8+) sous les systèmes d’exploitation de tablette et de poste de travail. Pour plus d’informations, consultez [Plateformes client prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Côté client, AEM fonctionne avec tous les navigateurs modernes (**Microsoft Edge**, **Internet Explorer 11**, **Chrome 51+**, **Firefox 47+**, **Safari 8+**) sous les systèmes d’exploitation de tablette et de poste de travail. Pour plus d’informations, consultez [Plateformes client prises en charge](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Obtention du logiciel {#getting-the-software}
 
@@ -256,7 +256,7 @@ Si l’instance a été installée à partir de l’interface utilisateur, une f
 
 >[!NOTE]
 >
->Si vous utilisez des liens symboliques, consultez la section sur les [problèmes liés aux liens symboliques](https://helpx.adobe.com/experience-manager/kb/changing-symlink.html).
+>Si vous utilisez des liens symboliques, consultez la section sur les [problèmes liés aux liens symboliques](https://helpx.adobe.com/fr/experience-manager/kb/changing-symlink.html).
 
 ### Démarrage et arrêt {#starting-and-stopping}
 

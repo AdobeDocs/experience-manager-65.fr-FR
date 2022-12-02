@@ -13,13 +13,13 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Prise en charge des jetons encapsulés{#encapsulated-token-support}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Par défaut, AEM utilise le gestionnaire d’authentification des jetons pour authentifier chaque demande. Cependant, pour traiter des demandes d’authentification, le gestionnaire d’authentification des jetons doit avoir accès au référentiel pour chaque demande. Ceci est dû au fait que des cookies sont utilisés pour maintenir l’état d’authentification. Logiquement, l’état doit perdurer dans le référentiel afin de valider les demandes ultérieures. En effet, cela signifie que le mécanisme d’authentification tient compte de tous les détails de l’état de l’activité à laquelle il participe.
 
@@ -37,9 +37,9 @@ Si une instance de publication devient inaccessible, tous les utilisateurs authe
 
 ## Authentification sans état avec le jeton encapsulé {#stateless-authentication-with-the-encapsulated-token}
 
-Pour permettre une évolutivité horizontale, la solution consiste à recourir à une authentification sans état grâce à la nouvelle prise en charge des jetons encapsulés dans AEM.
+Pour permettre une évolutivité horizontale, la solution consiste à recourir à une authentification sans état, grâce à la nouvelle prise en charge des jetons encapsulés dans AEM.
 
-Le jeton encapsulé est un élément de cryptographie qui permet à AEM de créer et valider en toute sécurité des informations d’authentification hors ligne, sans accéder au référentiel. Ainsi, une demande d’authentification peut être effectuée sur toutes les instances de publication, sans nécessiter de connexions persistantes. Elle offre également l’avantage d’optimiser les performances d’authentification, car il n’est pas nécessaire d’accéder au référentiel pour chaque demande d’authentification.
+Le jeton encapsulé est un élément de chiffrement qui permet à AEM de créer et de valider de façon sécurisée des informations d’authentification hors ligne, sans accéder au référentiel. Ainsi, une demande d’authentification peut être effectuée sur toutes les instances de publication, sans nécessiter de connexions persistantes. Elle offre également l’avantage d’optimiser les performances d’authentification, car il n’est pas nécessaire d’accéder au référentiel pour chaque demande d’authentification.
 
 Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué géographiquement avec les instances de création MongoMK et de publication TarMK ci-dessous :
 
@@ -54,11 +54,11 @@ Vous pouvez découvrir comment cela fonctionne dans un déploiement distribué g
 ## Configuration du jeton encapsulé {#configuring-the-encapsulated-token}
 
 >[!NOTE]
->Tous les gestionnaires d’authentification qui synchronisent les utilisateurs et reposent sur l’authentification par jeton (comme SAML et OAuth) ne fonctionnent qu’avec des jetons encapsulés si :
+>Tous les gestionnaires d’authentification qui synchronisent les utilisateurs et reposent sur l’authentification par jeton (comme SAML et OAuth) ne fonctionnent qu’avec des jetons encapsulés si :
 >
->* Les sessions persistantes sont activées, ou
+>* les sessions persistantes sont activées, ou
 >
->* Les utilisateurs sont déjà créés dans AEM au démarrage de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **create** durant le processus de synchronisation.
+>* les utilisateurs sont déjà créés dans AEM au démarrage de la synchronisation. Cela signifie que les jetons encapsulés ne seront pas pris en charge dans les cas où les gestionnaires **créent** des utilisateurs au cours du processus de synchronisation.
 
 
 Lors de la configuration du jeton encapsulé, différents éléments doivent être pris en compte :
@@ -68,14 +68,14 @@ Lors de la configuration du jeton encapsulé, différents éléments doivent êt
 
 ### Réplication de la clé HMAC {#replicating-the-hmac-key}
 
-La clé HMAC est présente sous la forme d’une propriété binaire de `/etc/key` dans le référentiel. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en regard :
+La clé HMAC est présente sous forme de propriété binaire `/etc/key` dans le référentiel. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en face de lui :
 
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 
 1. Accédez à l’instance AEM, généralement une instance de création, et qui contient le matériel des clés à copier.
-1. Cherchez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
+1. Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
 
    * &lt;rép-install-aem-création>/crx-quickstart/launchpad/felix/bundle21
 
@@ -97,8 +97,8 @@ Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 
 #### Activation du jeton encapsulé {#enabling-the-encapsulated-token}
 
-Une fois la clé HMAC répliquée, vous pouvez activer le jeton encapsulé à l’aide de la console web :
+Une fois la clé HMAC répliquée, vous pouvez activer le jeton encapsulé à l’aide de la console Web :
 
-1. Pointez votre navigateur sur `https://serveraddress:port/system/console/configMgr`
-1. Recherchez une entrée appelée **Gestionnaire d’authentification des jetons Adobe Granite** et cliquez dessus.
+1. Pointez votre navigateur sur `https://serveraddress:port/system/console/configMgr`.
+1. Recherchez une entrée nommée **Gestionnaire d’authentification des jetons Adobe Granite** et cliquez dessus.
 1. Dans la fenêtre suivante, cochez la case **Activer la prise en charge des jetons encapsulés** et cliquez sur **Enregistrer**.

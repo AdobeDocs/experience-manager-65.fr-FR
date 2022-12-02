@@ -1,17 +1,17 @@
 ---
 title: Guide de prise en main pour la création découplée d’une configuration
-description: Créez une configuration comme première étape pour commencer à utiliser sans interface dans AEM 6.5.
-exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+description: Créez une configuration comme première étape de prise en main d’AEM 6.5 en mode découplé.
+exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Guide de prise en main pour la création découplée d’une configuration {#creating-configuration}
 
-Pour commencer à utiliser headless dans AEM 6.5, vous devez créer une configuration.
+Pour commencer à utiliser le découplage dans AEM 6,5, vous devez créer une configuration.
 
 ## Qu’est-ce qu’une configuration ?  {#what-is-a-configuration}
 
@@ -27,9 +27,9 @@ Dans le contexte d’une gestion de contenu découplée dans AEM, considérez un
 
 Un administrateur n’a besoin de créer une configuration qu’une seule fois, ou très rarement lorsqu’un nouvel espace de travail est nécessaire pour organiser vos modèles de contenu. Pour les besoins de ce guide de prise en main, il suffit de créer une configuration.
 
-1. Connectez-vous à AEM et, dans le menu principal, sélectionnez **Outils -> Général -> Explorateur de configuration**.
-1. Fournissez une **Titre** pour votre configuration.
-   * Un nom sera automatiquement généré en fonction du titre et adapté en fonction des [AEM les conventions d’affectation des noms.](/help/sites-developing/naming-conventions.md). Il deviendra le nom du noeud dans le référentiel.
+1. Connectez-vous à AEM et dans le menu principal, sélectionnez **Outils -> Général -> Explorateur de configurations**.
+1. Indiquez un **Titre** pour votre configuration.
+   * Un nom sera généré automatiquement en fonction du titre et adapté selon les [conventions de nommage AEM.](/help/sites-developing/naming-conventions.md). Celui-ci devient le nom du nœud dans le référentiel.
 1. Vérifiez les options suivantes :
    * **Modèles de fragment de contenu**
    * **Requêtes persistantes GraphQL**

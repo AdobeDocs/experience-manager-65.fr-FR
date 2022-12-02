@@ -11,13 +11,13 @@ exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '2910'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Administration de la solution eCommerce générique {#administering-generic-ecommerce}
 
-La solution AEM générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel (plutôt que d’utiliser un moteur d’e-commerce externe). Cela inclut :
+La solution AEM générique fournit des méthodes pour gérer les informations commerciales conservées dans le référentiel (plutôt que d’utiliser un moteur d’e-commerce externe). Cela inclut les éléments suivants :
 
 * [Produits](/help/commerce/cif-classic/administering/concepts.md#products)
 * [Variantes de produit](/help/commerce/cif-classic/administering/concepts.md#product-variants)
@@ -43,7 +43,7 @@ Avant de créer des produits, vous devez définir un [modèle](/help/sites-autho
 
 Un modèle est nécessaire pour chaque type de produit distinct. Le modèle approprié est associé aux produits par :
 
-* path
+* le chemin
 * ou le produit peut référencer le modèle.
 
 >[!NOTE]
@@ -72,7 +72,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * **Importateur**
 
-      L’importateur pour le [fournisseur](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), par défaut `Geometrixx`.
+      L’importateur pour le [fournisseur de commerce](/help/commerce/cif-classic/administering/concepts.md#commerce-providers) spécifique, par défaut `Geometrixx`.
 
    * **Source**
 
@@ -80,7 +80,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * **Importation incrémentielle**
 
-      Indiquez s’il s’agit d’un import incrémentiel (par opposition à complet).
+      Indiquez s’il s’agit d’une importation incrémentielle (par opposition à une importation complète).
    >[!NOTE]
    >
    >L’importation incrémentielle (par l’importateur geometrixx-outdoor d’exemple) fonctionne au niveau des produits.
@@ -110,21 +110,21 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
    * **Nom de la boutique**
 
-      Les produits seront importés dans :
+      Les produits seront importés dans :
 
       `/etc/commerce/products/<*store name*>/`
 
    * **Fournisseur de commerce**
 
-      L’importateur pour votre [fournisseur](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); par défaut.
+      L’importateur de votre [fournisseur de commerce](/help/commerce/cif-classic/administering/concepts.md#commerce-providers), par défaut Geometrixx.
 
    * **Fichier source**
 
-      L’emplacement dans le référentiel du fichier que vous souhaitez importer.
+      L’emplacement dans le référentiel du fichier que vous voulez importer.
 
    * **Importation incrémentielle**
 
-      Indiquez s’il s’agit d’un import incrémentiel (par opposition à complet).
+      Indiquez s’il s’agit d’une importation incrémentielle (par opposition à une importation complète).
 
 1. Cliquez sur **Importer les produits**.
 
@@ -132,7 +132,7 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 
 >[!NOTE]
 >
->La gestion des produits standard est basique, car le jeu de produits Geometrixx-Outdoors a également été défini de manière basique. La complexité dépend du produit. [scaffolding](/help/sites-authoring/scaffolding.md), donc avec votre propre modèle automatique de produit, il est possible d’effectuer des modifications plus sophistiquées.
+>La gestion des produits standard est basique, car le jeu de produits Geometrixx-Outdoors a également été défini de manière basique. La complexité dépend du [modèle](/help/sites-authoring/scaffolding.md) ou de la génération de modèles automatique pour les produits. Par conséquent, il est possible d’effectuer des modifications plus sophistiquées avec votre propre modèle de produits.
 
 #### Création d’informations sur les produits – IU optimisée pour les écrans tactiles {#creating-product-information-touch-optimized-ui}
 
@@ -173,8 +173,8 @@ Un modèle est nécessaire pour chaque type de produit distinct. Le modèle appr
 1. À l’aide de la console **Produits** (via **Commerce**), accédez à vos informations sur les produits.
 1. Utilisez :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [les actions rapides ;](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [le mode de sélection.](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Sélectionnez l’icône **Afficher les données du produit** :
 
@@ -224,9 +224,9 @@ Vous pouvez modifier une facette existante ou en ajouter de nouvelles à l’aid
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
-1. Vous pouvez par exemple modifier les tailles qui apparaissent sur la page de recherche de produits. Cliquez sur le bouton `sizegroup` noeud .
-1. Cliquez sur `items` , puis cliquez sur `propertypredicate` noeud .
-1. Vous pouvez modifier la variable `propertyValues`. Par exemple, vous pouvez ajouter XS ou XXL, ou supprimer une taille.
+1. Vous pouvez par exemple modifier les tailles qui apparaissent sur la page de recherche de produits. Cliquez sur le nœud `sizegroup`.
+1. Cliquez sur le nœud `items`, puis sur le nœud `propertypredicate`.
+1. Vous pouvez modifier les `propertyValues`. Par exemple, vous pouvez ajouter XS ou XXL, ou supprimer une taille.
 1. Cliquez sur **Enregistrer tout** et accédez à la page de recherche de produits. Vos modifications doivent s’afficher.
 
 ### Plusieurs ressources {#multiple-assets}
@@ -240,20 +240,20 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
 #### Ajout de plusieurs ressources {#adding-multiple-assets}
 
 1. Accédez à la console **Produits** via **Commerce**.
-1. En utilisant la variable **Produits** , accédez au produit requis.
+1. À l’aide de la console **Produits**, accédez au produit souhaité.
 
    >[!NOTE]
    >
    >Vous devez être au niveau du produit, et non d’une variante.
 
-1. Appuyez/cliquez sur l’icône **Afficher les données du produit** avec le mode de sélection ou les actions rapides.
+1. Appuyez ou cliquez sur l’icône **Afficher les données du produit** avec le mode de sélection ou les actions rapides.
 1. Appuyez/cliquez sur l’icône Modifier.
 1. Faites défiler la page jusqu’à atteindre **Ajouter**.
 
    ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Appuyez/cliquez sur **Ajouter**. Un nouvel espace réservé de ressource s’affiche.
-1. Appuyez/cliquez sur **Modifier **pour ouvrir une boîte de dialogue qui vous permet de choisir une ressource.
+1. Cliquez ou appuyez sur **Modifier** pour ouvrir une boîte de dialogue qui vous permet de sélectionner une ressource.
 1. Sélectionnez la ressource que vous souhaitez ajouter.
 
    >[!NOTE]
@@ -264,8 +264,8 @@ Vous pouvez ajouter plusieurs ressources dans le composant de produit, puis spé
 
 Deux ressources sont désormais stockées dans votre composant de produit. Vous pouvez configurer celle qui apparaît sur la page du produit. Cela fonctionne avec un système de catégorie. Vous devez d’abord ajouter une catégorie aux ressources individuelles :
 
-1. Appuyez/cliquez sur **Afficher les données du produit**.
-1. Saisissez un **Catégorie de ressources** sous les ressources, par exemple `cat1` et `cat2`.
+1. Appuyez ou cliquez sur **Afficher les données du produit**.
+1. Saisissez une **catégorie de ressources** sous les ressources, par exemple `cat1` et `cat2`.
 
    >[!NOTE]
    >
@@ -298,23 +298,23 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 1. Accédez à la page produit.
 1. **Modifiez** le composant de produit.
 1. Saisissez la **catégorie d’image** choisie (`cat1`, par exemple).
-1. Appuyez/cliquez sur **Terminé.** La page s’actualise et la ressource appropriée doit s’afficher.
+1. Appuyez/cliquez sur **Terminé**. La page s’actualise et la ressource appropriée doit s’afficher.
 
 #### Catalogue  {#catalog}
 
 1. Accédez à votre catalogue.
 1. Appuyez/cliquez sur **Afficher les propriétés**.
-1. Appuyez/cliquez sur **Modifier**.
-1. Appuyez/cliquez sur le bouton **Ressources** .
+1. Appuyez ou cliquez sur **Modifier**.
+1. Appuyez ou cliquez sur l’onglet **Ressources**.
 1. Saisissez la **catégorie de ressources de produit** requise.
 1. Appuyez/cliquez sur **Terminé.**
 1. [Déployez](#rolling-out-a-catalog) vos modifications.
 
 #### Console Produits {#products-console}
 
-1. En utilisant la variable **Produits** , accédez au produit requis.
-1. Appuyez/cliquez sur **Afficher les données du produit**.
-1. Appuyez/cliquez sur **Modifier**.
+1. À l’aide de la console **Produits**, accédez au produit souhaité.
+1. Appuyez ou cliquez sur **Afficher les données du produit**.
+1. Appuyez ou cliquez sur **Modifier**.
 1. Saisissez une **catégorie de ressources par défaut**.
 1. Appuyez/cliquez sur **Terminé.**
 1. [Déployez](#rolling-out-a-catalog) vos modifications.
@@ -332,8 +332,8 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 1. À l’aide de la console **Produits** (via **Commerce**), accédez à vos informations sur les produits.
 1. Utilisez :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [les actions rapides ;](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [le mode de sélection.](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Sélectionnez l’icône **Modifier** ou **Annuler la publication** selon vos besoins :
 
@@ -363,15 +363,15 @@ Il existe un gestionnaire d’événements qui consigne un événement lorsqu’
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_MODIFIED`
 * `com/adobe/cq/commerce/pim/PRODUCT_PAGE_DELETED`
 
-Pour le `PRODUCT_*` , le chemin pointe vers le produit de base dans `/etc/commerce/products`. Pour le `PRODUCT_PAGE_*` , le chemin pointe vers la variable `cq:Page` noeud .
+Pour les événements `PRODUCT_*`, le chemin pointe sur le produit de base dans `/etc/commerce/products`. Pour les événements `PRODUCT_PAGE_*`, le chemin pointe sur le nœud `cq:Page`.
 
-Vous pouvez les consulter dans la console web dans les événements OSGI ( `/system/console/events`), par exemple :
+Vous pouvez les afficher au sein de la console Web dans les événements OSGi (`/system/console/events`), par exemple :
 
 ![](/help/sites-administering/do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
->Lire aussi [Gestion des événements dans AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
+>Lisez également la section [Gestion des événements dans AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/).
 
 ### Image avec les liens Ajouter au panier {#image-with-add-to-cart-links}
 
@@ -384,7 +384,7 @@ Cliquez sur la zone réactive pour ouvrir une boîte de dialogue qui vous permet
 1. Effectuez un glisser-déposer d’une image dans le composant à partir du [navigateur des ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
 1. Vous pouvez effectuer l’une des actions suivantes :
 
-   * cliquez sur le composant, puis sur l’icône Modifier
+   * cliquer sur le composant, puis cliquer sur l’icône Modifier ;
    * effectuer un double-clic lent.
 
 1. Cliquez sur l’icône de plein écran.
@@ -415,7 +415,7 @@ Cliquez sur la zone réactive pour ouvrir une boîte de dialogue qui vous permet
    ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. Basculez en mode [Aperçu](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui).
-1. Cliquez sur la zone sensible +. Une boîte de dialogue s’ouvre, dans laquelle vous pouvez choisir la taille et la quantité du produit que vous avez saisi dans **Chemin**.
+1. Cliquez sur la zone sensible +. La boîte de dialogue qui s’ouvre vous permet de choisir la taille et la quantité du produit que vous avez saisi dans **Chemin**.
 
    ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
 
@@ -459,7 +459,7 @@ Pour générer un catalogue :
 
    ![create-icon](/help/sites-administering/do-not-localize/chlimage_1-23.png)
 
-1. Dans la liste, sélectionnez **Créer un catalogue**, l’assistant Créer un catalogue s’ouvre.
+1. Dans la liste, sélectionnez **Créer un catalogue** pour ouvrir l’assistant de création de catalogue.
 
    ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
 
@@ -469,14 +469,14 @@ Pour générer un catalogue :
 
    ![chlimage_1-100](/help/sites-administering/assets/chlimage_1-100.png)
 
-1. Saisissez un **Titre** et un **Nom**.
+1. Saisissez un **titre** et un **nom**.
 1. Appuyez/cliquez sur le bouton **Créer**. Le catalogue est créé, et une boîte de dialogue s’ouvre.
 
    ![chlimage_1-101](/help/sites-administering/assets/chlimage_1-101.png)
 
 1. Appuyez/cliquez sur le bouton **Terminé** pour revenir à la console Sites où vous pouvez voir votre catalogue.
 
-   Appuyer/cliquer **Ouvrir le catalogue** pour ouvrir votre catalogue (par exemple, `http://localhost:4502/editor.html/content/test-catalog.html`).
+   Appuyez/cliquez sur le bouton **Ouvrir le catalogue** pour ouvrir votre catalogue (par exemple, `http://localhost:4502/editor.html/content/test-catalog.html`).
 
 #### Génération d’un catalogue – IU classique {#generating-a-catalog-classic-ui}
 
@@ -490,21 +490,21 @@ Pour générer un catalogue :
 
    `http://localhost:4502/siteadmin#/content/catalogs/geometrixx-outdoors/base-catalog`
 
-1. Créez une page à l’aide du modèle **Blueprint de section**.
+1. Créez une page à l’aide du modèle **Plan directeur de section**.
 
    Par exemple, `Swimwear`.
 
-1. Ouvrez le nouveau `Swimwear` page, puis cliquez sur **Modifier le plan directeur** pour ouvrir le **Propriétés** , dans laquelle vous pouvez configurer la variable **Produits** sélection.
+1. Ouvrez la nouvelle page `Swimwear`, puis cliquez sur **Modifier le plan directeur** pour ouvrir la boîte de dialogue **Propriétés** dans laquelle vous pouvez configurer la sélection des **Produits**.
 
    Par exemple, ouvrez le champ **Balises / Mots-clés** pour sélectionner Activité, puis Swimming dans la section Geometrixx-Outdoors.
 
 1. Cliquez sur **OK** pour enregistrer les propriétés ; les exemples de produits sont affichés sous **Critères de sélection des produits** sur la page de plan directeur.
-1. Cliquez sur **Déployer les modifications**, sélectionnez **Déployer la page et toutes les sous-pages**, puis cliquez sur **Suivant** et **Déployer**. Une fois le déploiement terminé, la variable **État** s’affiche en vert.
+1. Cliquez sur **Déployer les modifications**, sélectionnez **Déployer la page et toutes les sous-pages**, puis cliquez sur **Suivant** et **Déployer**. Une fois le déploiement terminé, l’indicateur **Statut** devient vert.
 1. Vous pouvez maintenant cliquer sur **Fermer** et vérifier la nouvelle section de catalogue, par exemple, à cette adresse et sous celle-ci :
 
    `http://localhost:4502/cf#/content/geometrixx-outdoors/en/swimwear.html`
 
-1. À nouveau à partir de la page des plans directeurs, cliquez sur **Modifier Blueprint** et, dans la boîte de dialogue **Propriétés**, ouvrez l’onglet **Page générée**. Dans le champ de liste Bannière, sélectionnez l’image que vous souhaitez afficher, par exemple, `summer.jpg`.
+1. À nouveau à partir de la page des plans directeurs, cliquez sur **Modifier le plan directeur** et, dans la boîte de dialogue **Propriétés**, ouvrez l’onglet **Page générée**. Dans le champ de liste Bannière, sélectionnez l’image que vous souhaitez afficher, par exemple, `summer.jpg`.
 1. Cliquez sur **OK** pour enregistrer les propriétés ; les informations de bannière sont affichées sous **Critères de sélection des produits** sur la page de plan directeur.
 1. Déployez ces nouvelles modifications.
 
@@ -514,12 +514,12 @@ Pour générer un catalogue :
 
 Pour déployer un catalogue :
 
-1. Accédez au **Catalogues** console, via **Commerce**.
+1. Accédez à la console **Catalogues**, via **Commerce**.
 1. Accédez au catalogue à déployer.
 1. Utilisez :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [les actions rapides ;](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [le mode de sélection.](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Sélectionnez l’icône **Déployer les modifications** :
 
@@ -532,7 +532,7 @@ Pour déployer un catalogue :
 
 Pour déployer un catalogue :
 
-1. Accédez au catalogue que vous souhaitez déployer. Par exemple :
+1. Accédez au catalogue à déployer. Par exemple :
 
    `http://localhost:4502/cf#/content/catalogs/geometrixx-outdoors/base-catalog.html`
 
@@ -544,7 +544,7 @@ Pour déployer un catalogue :
 
 #### Importateur de plans directeurs – IU optimisée pour les écrans tactiles {#blueprint-importer-touch-optimized-ui}
 
-1. Accédez au **Catalogues** console, via **Commerce**.
+1. Accédez à la console **Catalogues**, via **Commerce**.
 1. Accédez à l’emplacement où vous souhaitez importer le plan directeur de catalogue.
 1. Appuyez/cliquez sur l’icône **Importer les plans directeurs**.
 
@@ -558,7 +558,7 @@ Pour déployer un catalogue :
 
 #### Importateur de plans directeurs – IU classique {#blueprint-importer-classic-ui}
 
-1. En utilisant la variable **Outils** console, accédez à **Commerce**.
+1. À l’aide de la console **Outils**, accédez à **Commerce**.
 
    Par exemple :
 
@@ -609,7 +609,7 @@ Pour déployer un catalogue :
 1. Cliquez sur **Nouveau**, sélectionnez le modèle **Bon**, puis spécifiez un **titre** (et **nom** si nécessaire) pour votre nouveau bon.
 1. Cliquez sur **Créer**. La nouvelle page de bon s’affiche dans le volet droit.
 
-1. Ouvrez votre nouvelle page de bon avec un double-clic, puis cliquez sur **Modifier** pour configurer les informations suivant les besoins.
+1. Ouvrez votre nouvelle page de bon avec un double-clic, puis cliquez sur **Modifier** pour configurer les informations suivant vos besoins.
 1. Cliquez sur **OK** pour enregistrer.
 
 1. Vous pouvez désormais activer le bon, afin que les clients puissent l’utiliser dans leur panier sur l’instance de publication.
@@ -641,9 +641,9 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 
 >[!NOTE]
 >
->N’oubliez pas que l’AEM d’usine ne comporte pas d’actions requises pour les fonctionnalités standard liées aux commandes, telles que le renvoi de marchandises, la mise à jour de l’état de la commande, l’exécution et la génération de bons de livraison. Il s’agit principalement d’un aperçu technologique.
+>Souvenez-vous que, par défaut, AEM ne dispose pas des actions requises pour les fonctionnalités standard associées aux commandes, telles que le retour de marchandises, la mise à jour de le statut des commandes, la réalisation et la génération de bons de livraison. Il s’agit principalement d’un aperçu technologique.
 >
->La gestion générique des commandes dans AEM a été conservée de base. les champs disponibles dans l’assistant dépendent du modèle automatique :
+>La gestion générique des commandes dans AEM est basique ; les champs disponibles dans l’assistant dépendent du modèle ;
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >Si vous créez un modèle personnalisé, vous pouvez stocker davantage d’informations sur les commandes.
@@ -652,7 +652,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 >
 >La console Commandes expose les informations sur les commandes des fournisseurs, qui ne sont jamais publiées.
 >
->  Les informations sur les commandes des clients sont conservées dans les répertoires home et sont exposées par l’historique de commandes pour leur compte. Ces informations sont publiées avec le reste de leur répertoire home.
+>Les informations sur les commandes des clients sont conservées dans les répertoires home et sont exposées par l’historique de commandes pour leur compte. Ces informations sont publiées avec le reste de leur répertoire home.
 
 ### Création d’informations sur une commande {#creating-order-information}
 
@@ -663,7 +663,7 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 
    ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. Un assistant s’ouvre. Utilisez la variable **De base**, **Contenu**, **Paiement** et **Exécution** onglets pour renseigner la variable [informations sur la nouvelle commande](/help/commerce/cif-classic/administering/concepts.md#order-information).
+1. Un assistant s’ouvre. Utilisez les onglets **De base**, **Contenu**, **Paiement** et **Réalisation** pour saisir les [informations concernant la nouvelle commande](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
 1. Sélectionnez **Créer** pour enregistrer les informations.
 
@@ -674,8 +674,8 @@ Sur le site de démonstration (Geometrixx outdoors - anglais), vous pouvez aff
 1. À l’aide de la console **Commandes**, accédez à la commande.
 1. Utilisez :
 
-   * [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions)
-   * [mode de sélection](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
+   * [les actions rapides ;](/help/sites-authoring/basic-handling.md#quick-actions)
+   * [le mode de sélection.](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
    Sélectionnez l’icône **Afficher les données de commande** :
 

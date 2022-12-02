@@ -15,7 +15,7 @@ exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Cela peut servir à évaluer l’ampleur des tâches de développement nécessai
 
 ## Méthode de configuration {#how-to-set-up}
 
-L’outil de détection des motifs est publié séparément sous forme de [module](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l&#39;aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md).
+L’outil de détection des motifs est publié séparément sous forme de [module](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) qui fonctionne sous toutes les versions AEM sources, depuis la version 6.1 jusqu’à la version 6.5, et cible la mise à niveau AEM 6.5. Il peut être installé à l’aide du [Gestionnaire de modules](/help/sites-administering/package-manager.md).
 
 ## Utilisation {#how-to-use}
 
@@ -43,19 +43,19 @@ L’outil de détection des motifs est publié séparément sous forme de [modul
 >* augmenter le taux de détection
 >* éviter les ralentissements sur les instances critiques de l’entreprise
 >
->en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements de production sur le plan des applications utilisateur, du contenu et des configurations.
+>en même temps, il est recommandé de l’exécuter **dans des environnements d’évaluation** qui sont aussi proches que possible des environnements d’exploitation sur le plan des applications utilisateur, du contenu et des configurations.
 
 Vous pouvez appliquer plusieurs méthodes pour vérifier le résultat de l’outil de détection des motifs :
 
 * **Via la console Felix Inventory :**
 
-1. Accédez à la console Web AEM en accédant à *https://serveraddress:serverport/system/console/configMgr*
-1. Sélectionnez **État – Outil de détection des motifs**, comme illustré ci-dessous :
+1. Accédez à la console web AEM en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
+1. Sélectionnez **Statut – Outil de détection des motifs**, comme illustré ci-dessous :
 
-   ![capture d’écran-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
+   ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
-* **Via une interface JSON standard ou une interface en mode texte réactive**
-* **Via une interface de lignes JSON réactive, **qui génère un document JSON distinct dans chaque ligne.
+* **Via une interface JSON standard ou une interface réactive en mode texte**
+* **Via une interface réactive en lignes JSON** qui génère un document JSON distinct dans chaque ligne.
 
 Vous trouverez, ci-dessous, une description détaillée de ces deux méthodes :
 
@@ -210,7 +210,7 @@ Avec le résultat suivant :
 
 >[!NOTE]
 >
->La méthode recommandée consiste à enregistrer toute la sortie à partir de curl dans le fichier, puis de la traiter via `jq` ou `grep` pour effectuer un filtrage sur le type d’informations.
+>La méthode recommandée consiste à enregistrer toute la sortie à partir du curl dans le fichier, puis de la traiter via `jq` ou `grep` pour effectuer un filtrage sur le type d’informations.
 
 ## Domaine de détection {#scope}
 
@@ -218,7 +218,7 @@ Actuellement, l’outil de détection des motifs permet de vérifier :
 
 * l’incompatibilité des exportations et importations de lots OSGi ;
 * la surutilisation des ressources de type Sling et des super types (avec superpositions de contenu de chemin de recherche) ;
-* définitions des index Oak (compatibilité)
+* les définitions des index Oak (compatibilité) ;
 * les modules VLT (surutilisation) ;
 * la compatibilité des nœuds rep:User (dans le contexte de la configuration OAuth).
 

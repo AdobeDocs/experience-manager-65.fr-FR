@@ -14,7 +14,7 @@ exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ En mode Génération de modèles automatique, vous pouvez créer un formulaire (
 
 >[!NOTE]
 >
->La génération de modèles automatique (IU classique) respecte [l’héritage MSM](#scaffolding-with-msm-inheritance). 
+>La génération de modèles automatique (IU classique) respecte [l’héritage du MSM](#scaffolding-with-msm-inheritance). 
 
 ## Fonctionnement de la génération de modèles automatique {#how-scaffolding-works}
 
@@ -38,7 +38,7 @@ Les modèles automatiques sont stockés dans la console **Outils** de l’admini
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
-Le modèle automatique est constitué d’un formulaire avec un champ pour chaque élément de contenu qui compose la page à créer et de quatre paramètres importants accessibles par l’intermédiaire de la fonction **Propriétés de la page** de la page scaffold.
+Le modèle automatique est constitué d’un formulaire avec un champ pour chaque élément de contenu qui compose la page à créer et de quatre paramètres importants accessibles par le biais des **propriétés de page** de la page du modèle automatique.
 
 ![pageprops](assets/pageprops.png)
 
@@ -47,26 +47,26 @@ Les propriétés de la page de génération de modèles automatique sont les sui
 * **Texte du titre** : il s’agit du nom de la page de génération de modèles automatique proprement dite. Dans cet exemple, elle se nomme « Actualités ».
 * **Description** : cette description s’affiche sous le titre de la page de génération de modèles automatique.
 * **Modèle cible** : modèle que ce modèle automatique utilisera lors de la création d’une page. Dans cet exemple, il s’agit d’un modèle *Page de contenu Geometrixx*.
-* **Tracé de destination** : il s’agit du chemin de la page parente sous lequel ce modèle automatique créera des pages. Dans cet exemple, le chemin est */content/geometrixx/fr/news*.
+* **Tracé de destination** : il s’agit du chemin de la page parente sous lequel ce modèle automatique créera des pages. Dans cet exemple, le chemin d’accès est */content/geometrixx/en/news*.
 
-Le contenu du modèle automatique est le formulaire. Lorsqu’un utilisateur souhaite crée une page à l’aide du modèle automatique, il remplit le formulaire et clique sur *Créer*, au bas du formulaire. Dans le **News** L’exemple ci-dessus comporte les champs suivants :
+Le contenu du modèle automatique est le formulaire. Lorsqu’un utilisateur souhaite crée une page à l’aide du modèle automatique, il remplit le formulaire et clique sur *Créer*, au bas du formulaire. Dans l’exemple **Actualités** ci-dessus, le formulaire se compose des champs suivants :
 
 * **Titre** : il s’agit du nom de la page à créer. Ce champ est présent sur chaque modèle automatique.
 * **Texte** : ce champ correspond à un composant Texte sur la page qui en résulte.
-* **Image**: Ce champ correspond à un composant Image sur la page résultant du processus.
+* **Image** : ce champ correspond à un composant Image sur la page qui en résulte.
 * **Image / Avancé** : **Titre** : titre de l’image.
 * **Image / Avancé** : **Texte de remplacement** : texte de remplacement pour l’image.
-* **Image/Avancé**: **Description**: Description de l’image.
+* **Image / Avancé** : **Description** : description de l’image.
 * **Image / Avancé** : **Taille** : taille de l’image.
 * **Tags / Mots-clés** : métadonnées à affecter à cette page. Ce champ est présent sur chaque modèle automatique.
 
 ### Création d’un modèle automatique {#creating-a-scaffold}
 
-Pour créer un modèle automatique, accédez à la page **Outils** console, puis **Génération de modèles automatique de page par défaut** et créez une page. Un seul type de modèle de page est disponible : *Modèle de génération de modèles automatique.*
+Pour créer un modèle automatique, accédez à la console **Outils**, puis cliquez sur **Génération de modèles automatique de page par défaut** et créez une page. Un seul type de modèle de page est disponible : *Modèle de génération de modèles automatique.*
 
-Accédez au **Propriétés de la page** de la nouvelle page et définissez la variable *Texte du titre*, *Description*, *Modèle cible* et *Chemin cible*, comme décrit ci-dessus.
+Accédez aux **Propriétés de la page** de la nouvelle page et définissez le *texte du titre*, la *description*, le *modèle cible* et le *chemin cible*, comme décrit ci-dessus.
 
-Vous devez ensuite définir la structure de la page qui sera créée par ce scaffold. Pour ce faire, accédez à **[mode de conception](/help/sites-authoring/page-authoring.md#sidekick)** sur la page scaffold. Un lien s’affiche alors pour vous permettre de modifier le scaffold dans l’**éditeur de boîte de dialogue**.
+Vous devez ensuite définir la structure de la page qui sera créée par ce modèle automatique. Pour ce faire, accédez au **[mode Conception](/help/sites-authoring/page-authoring.md#sidekick)** dans la page de modèle automatique. Un lien s’affiche alors pour vous permettre de modifier le modèle automatique dans l’**éditeur de boîte de dialogue**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -80,11 +80,11 @@ La définition de la boîte de dialogue d’un modèle automatique fonctionne de
 
 Pour bien comprendre ce procédé, observez la boîte de dialogue **Actualités** dans l’éditeur de boîte de dialogue. Basculez vers le mode de conception sur la page de modèle automatique et cliquez sur le lien de l’éditeur de boîte de dialogue.
 
-Cliquez maintenant sur le champ de boîte de dialogue. **Boîte de dialogue > Panneau à onglets > Texte > Texte**, comme ceci :
+Cliquez à présent sur le champ de dialogue **Dialogue > Volet Onglets > Texte > Texte**, comme illustré ci-dessous :
 
 ![textedit](assets/textedit.png)
 
-La liste des propriétés de ce champ s’affiche sur le côté droit de l’éditeur de boîte de dialogue, comme suit :
+La liste des propriétés de ce champ s’affiche sur le côté droit de l’éditeur de boîte de dialogue, comme ceci :
 
 ![list_of_properties](assets/list_of_properties.png)
 
@@ -101,7 +101,7 @@ Cela définit l’emplacement du stockage de contenu pour le texte qui sera sais
 
 Notez que, dans une boîte de dialogue de composant normale, vous ne devez pas spécifier ces informations, car elles sont implicites ; en ce sens, que la boîte de dialogue est déjà liée à un composant spécifique.
 
-Pour spécifier ces deux informations, vous devez utiliser des champs masqués. Cliquez sur le premier champ masqué **Boîte de dialogue > Panneau à onglets > Texte > Masqué**, comme ceci :
+Pour spécifier ces deux informations, vous devez utiliser des champs masqués. Cliquez sur le premier champ masqué **Dialogue > Volet Onglets > Texte > Masqué**, comme illustré ci-dessous :
 
 ![hidden](assets/hidden.png)
 
@@ -119,7 +119,7 @@ Puisque nous savons que le texte doit être interprété comme texte enrichi, no
 
 >[!CAUTION]
 >
->L’éditeur de boîte de dialogue permet à l’utilisateur de modifier les valeurs de *existant* propriétés dans la définition de la boîte de dialogue. Pour ajouter une nouvelle propriété, l’utilisateur doit utiliser [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Par exemple, lorsqu’un nouveau champ masqué est ajouté à une définition de boîte de dialogue à l’aide de l’éditeur, il est dépourvu de la propriété *value* (c’est-à-dire, une propriété dont le nom est « value »). Si le champ masqué en question nécessite la définition d’une propriété *value* par défaut, cette dernière doit être ajoutée manuellement à l’aide de l’un des outils CRX. La valeur ne peut pas être ajoutée avec l’éditeur de boîte de dialogue proprement dit. Cependant, une fois la propriété présente, sa valeur peut être modifiée à l’aide de l’éditeur.
+>L’éditeur de boîte de dialogue permet à l’utilisateur de modifier les valeurs des propriétés *existantes* dans la définition de la boîte de dialogue. Pour ajouter une nouvelle propriété, l’utilisateur doit utiliser [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Par exemple, lorsqu’un nouveau champ masqué est ajouté à une définition de boîte de dialogue à l’aide de l’éditeur, il est dépourvu de la propriété *value* (c’est-à-dire, une propriété dont le nom est « value »). Si le champ masqué en question nécessite la définition d’une propriété *value* par défaut, cette dernière doit être ajoutée manuellement à l’aide de l’un des outils CRX. La valeur ne peut pas être ajoutée avec l’éditeur de boîte de dialogue proprement dit. Cependant, une fois la propriété présente, sa valeur peut être modifiée à l’aide de l’éditeur.
 
 Vous pouvez afficher le second champ masqué en cliquant sur celui-ci comme ceci :
 
@@ -137,18 +137,18 @@ et la valeur fixe spécifiée pour cette propriété est
 
 `foundation/components/textimage`
 
-Cela indique que le composant à utiliser pour effectuer le rendu du contenu texte de ce paragraphe est le composant *Texte et Image*. Utilisation de avec `isRichText` valeur booléenne spécifiée dans l’autre champ masqué, le composant peut effectuer le rendu de la chaîne de texte réelle stockée à l’adresse `./jcr:content/par/text/text` de la manière souhaitée.
+Cela indique que le composant à utiliser pour effectuer le rendu du contenu texte de ce paragraphe est le composant *Texte et Image*. La valeur booléenne `isRichText` spécifiée dans l’autre champ masqué permet au composant d’effectuer le rendu de la chaîne de texte réelle stockée dans `./jcr:content/par/text/text` de la manière choisie.
 
-### Génération de modèles automatique avec héritage MSM {#scaffolding-with-msm-inheritance}
+### Génération de modèles automatique avec l’héritage du MSM {#scaffolding-with-msm-inheritance}
 
-Dans l’IU classique, la génération de modèles automatique est entièrement intégrée à l’héritage MSM (le cas échéant). 
+Dans l’IU classique, la génération de modèles automatique est entièrement intégrée à l’héritage du MSM (le cas échéant). 
 
 Lorsque vous ouvrez une page en mode **Génération de modèles automatique** (à l’aide de l’icône située dans la partie inférieure du sidekick), tous les composants soumis à l’héritage sont indiqués par :
 
-* un cadenas (pour la plupart des composants, par exemple Texte et Titre) 
-* un masque avec le texte **Cliquez pour annuler l’héritage** (pour les composants Image)
+* un cadenas (pour la plupart des composants, par exemple Texte et Titre) ;
+* un masque avec le texte **Cliquez pour annuler l’héritage** (pour les composants Image).
 
-Ces deux indications montrent que le composant ne peut pas être publié, tant que l’héritage n’a pas été annulé. 
+Ces deux indications montrent que le composant ne peut pas être publié, tant que l’héritage n’a pas été annulé. 
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -167,4 +167,4 @@ Après le déverrouillage, vous pouvez restaurer l’héritage en cliquant sur l
 
 >[!NOTE]
 >
->Si l’héritage est annulé au niveau de la page (à partir de l’onglet Live Copy des Propriétés de la page), tous les composants seront modifiables dans **Génération de modèles automatique** mode (ils s’affichent à l’état déverrouillé).
+>Si l’héritage est annulé au niveau de la page (dans l’onglet Livecopy des propriétés de la page), tous les composants sont modifiables en mode **Génération de modèles automatique** (ils s’affichent à l’état déverrouillé).

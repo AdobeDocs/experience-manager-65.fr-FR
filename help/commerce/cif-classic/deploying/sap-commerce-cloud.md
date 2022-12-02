@@ -1,5 +1,5 @@
 ---
-title: SAP Commerce Cloud
+title: SAP Commerce Cloud
 seo-title: SAP Commerce Cloud
 description: Découvrez comment déployer l’eCommerce avec SAP Commerce Cloud.
 seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
@@ -10,17 +10,17 @@ exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
 source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Commerce Cloud SAP{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
 >Cette page contient des liens vers le site web d’Hybris. Pour certaines pages, vous devrez disposer d’un compte pour vous connecter.
 
-## Déploiement d’eCommerce avec le Commerce Cloud SAP {#deploying-ecommerce-with-sap-commerce-cloud}
+## Déploiement d’eCommerce avec SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -30,9 +30,9 @@ ht-degree: 85%
 
 Le déploiement des [modules eCommerce nécessaires](#packages-needed-for-ecommerce-with-hybris) met à disposition la fonctionnalité complète de la structure eCommerce avec une implémentation de référence de la fonctionnalité eCommerce fournie avec une implémentation Hybris (dont un catalogue de démonstration).
 
-Cette option est disponible sous la branche Anglais (US) ( `/content/geometrixx-outdoors/en_US`) du site Geometrixx Outdoors :
+Cette option est disponible dans la partie en anglais (US) (`/content/geometrixx-outdoors/en_US`) du site de Geometrixx Outdoors :
 
-* [Informations sur le produit](#productinformationwithcolorvariants) (avec des variantes de couleur, le cas échéant)
+* [Informations sur le produit](#productinformationwithcolorvariants) (avec les variantes de couleur, le cas échéant)
 
 * [Présentations du contenu du panier](#shoppingcartcontentoverview)
 * [Inscription du client](#customersignup) et [Connexion du client](#customersignin)
@@ -41,7 +41,7 @@ Cette option est disponible sous la branche Anglais (US) ( `/content/geometrixx-
 
 ### Exigences techniques – Serveur Hybris {#technical-requirements-hybris-server}
 
-L’extension hybris de la structure d’intégration eCommerce a été mise à jour pour prendre en charge Hybris 5 (par défaut), tout en maintenant une compatibilité ascendante avec [Hybris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
+L’extension Hybris d’eCommerce Integration Framework a été mise à jour afin de prendre en charge Hybris 5 (par défaut), tout en conservant une rétrocompatibilité avec [Hybris 4](/help/commerce/cif-classic/developing/sap-commerce-cloud.md#developing-for-hybris).
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ L’extension hybris de la structure d’intégration eCommerce a été mise à 
 Pour installer la fonctionnalité eCommerce, vous devez disposer des éléments suivants :
 
 * Votre serveur Hybris
-* Structure d’AEM eCommerce :
+* Le framework d’AEM eCommerce :
 
    * fait partie d’une installation AEM standard
 
@@ -69,7 +69,7 @@ Pour installer la fonctionnalité eCommerce, vous devez disposer des éléments 
    * `cq-hybris-content-6.3.2`
    * Implémentation de l’API spécifique à Hybris
    * `cq-geometrixx-hybris-content-6.3.2`
-   * une implémentation de référence pour illustrer l’utilisation d’hybris ( `geometrixx-outdoors/en_US`)
+   * Implémentation de référence permettant d’illustrer l’utilisation d’Hybris (`geometrixx-outdoors/en_US`)
 
 ### Installation d’eCommerce avec Hybris {#installation-of-ecommerce-with-hybris}
 
@@ -98,7 +98,7 @@ Pour installer une configuration réelle (à l’aide du catalogue de démonstra
 
 >[!NOTE]
 >
->Pour les développeurs, la [documentation de l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) est également disponible pour téléchargement.
+>Pour l’équipe de développement, la [documentation de l’API](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) est également disponible pour téléchargement.
 
 ### Téléchargement et création du serveur Hybris {#download-and-build-your-hybris-server}
 
@@ -134,9 +134,9 @@ Les étapes de cette procédure consistent à télécharger et à créer le serv
    >
    >`ant clean all`
    >
-   >Press `Return` si nécessaire.
+   >Appuyez sur `Return` si nécessaire.
 
-1. Téléchargez les fichiers suivants dans le dossier racine de votre distribution Hybris extraite,
+1. Téléchargez les fichiers ci-dessous dans le dossier racine de la distribution Hybris extraite,
 
    ```
        <hybris-root-directory>
@@ -174,9 +174,9 @@ Les étapes de cette procédure consistent à télécharger et à créer le serv
 
    [http://localhost:9002](http://localhost:9002)
 
-1. Cliquez sur **Initialiser** (Initialize), puis confirmez l’action d’initialisation (car elle va supprimer les données existantes).
+1. Cliquez sur **Initialiser**, puis confirmez l’action d’initialisation (car elle va supprimer les données existantes).
 
-   La progression s’affiche dans la console, et le message `FINISHED`TERMINÉ () indique la fin de l’opération.
+   La progression s’affiche dans la console, et le message `FINISHED`indique la fin de l’opération.
 
    >[!NOTE]
    >
@@ -184,7 +184,7 @@ Les étapes de cette procédure consistent à télécharger et à créer le serv
 
 ### Configuration du magasin Geometrixx Outdoors {#setup-the-geometrixx-outdoors-store}
 
-Cette procédure permet de transférer et de configurer le magasin de démonstration : Geometrixx Online.
+Cette procédure permet de charger et de configurer le magasin de démonstration : Geometrixx Online.
 
 1. Démarrez l’instance Hybris. Dans la ligne de commande, exécutez la commande suivante :
 
@@ -197,11 +197,11 @@ Cette procédure permet de transférer et de configurer le magasin de démonstra
 
    [https://localhost:9002/backoffice](https://localhost:9002/backoffice)
 
-   Utilisez les informations d’identification suivantes :
-   * username : admin
-   * password : nimda
+   Utilisez les informations d’identification suivantes :
+   * Nom d’utilisateur : admin
+   * Mot de passe : nimda
 
-1. Dans la barre de navigation latérale, développez **Système** et **Outils**. Ensuite, sélectionnez **Importer** (Import) pour ouvrir la fenêtre **Assistant : Importation d’un fichier CSV** (Wizard: CSV Import).
+1. À partir de la navigation de la barre latérale, développez **Système** et **Outils**. Ensuite, sélectionnez **Importer** (Import) pour ouvrir la fenêtre **Assistant : Importation d’un fichier CSV** (Wizard: CSV Import).
 1. Dans l’onglet **Configuration**, **transférez** le **fichier d’importation** suivant :
 
 [Obtenir le fichier](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)

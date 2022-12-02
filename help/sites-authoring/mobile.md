@@ -13,7 +13,7 @@ exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -25,16 +25,16 @@ Les périphériques sont regroupés en fonction des catégories : fonction, int
 
 >[!NOTE]
 >
->Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. (Voir [Création d’une Live Copy pour différents canaux](/help/sites-administering/msm-livecopy.md).)
+>Pour créer un site mobile en fonction d’un site standard existant, créez une Live Copy du site standard. (Reportez-vous à [Création d’une live copy pour différents canaux](/help/sites-administering/msm-livecopy.md).)
 >
->Les développeurs d’AEM peuvent créer de nouveaux groupes d’appareils. (Voir [Création de filtres de groupe d’appareils](/help/sites-developing/groupfilters.md).)
+>L’équipe de développement d’AEM peut créer de nouveaux groupes d’appareils. (Voir [Création de filtres de groupe d’appareils](/help/sites-developing/groupfilters.md).)
 
 Utilisez la procédure suivante pour créer une page mobile :
 
 1. À partir de la navigation globale, ouvrez la console **Sites**.
-1. Ouvrir la page **We.Retail** -> **États-Unis** -> **Anglais**.
+1. Ouvrez la page **We.Retail** -> **États-Unis**-> **Anglais**.
 
-1. Basculer vers **Aperçu** mode .
+1. Basculez en mode **Aperçu**.
 1. Basculez vers l’émulateur de votre choix en cliquant sur l’icône de périphérique située en haut de la page.
 1. Faites glisser les composants à partir du navigateur de composants et déposez-les sur la page.
 

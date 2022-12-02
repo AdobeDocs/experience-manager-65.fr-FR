@@ -9,18 +9,18 @@ exl-id: 40f41bb0-b3cb-4c16-b5db-ac8ea1a86aa3
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '109'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Diffusion de ressources Dynamic Media {#delivering-dynamic-media-assets}
 
-La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site web.
+La diffusion des ressources Dynamic Media (vidéos et images) dépend de la mise en œuvre de votre site Web.
 
 Avec Dynamic Media, vous disposez de plusieurs options :
 
 * Si votre site web est hébergé sur Adobe Experience Manager, vous souhaiterez ajouter les ressources Dynamic Media directement à votre page.
-* Si votre site web n’est pas en Experience Manager, reportez-vous à la section [Diffusion de ressources Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) dans l’interface utilisateur tactile.
+* Si votre site Web ne figure pas dans Experience Manager, consultez [Diffusion de ressources Dynamic Media](/help/assets/delivering-dynamic-media-assets.md) dans l’interface utilisateur tactile.
 
 Pour plus d’informations, reportez-vous aux rubriques suivantes :
 

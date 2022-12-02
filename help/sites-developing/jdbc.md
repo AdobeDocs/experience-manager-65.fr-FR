@@ -13,13 +13,13 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 # Connexion à des bases de données SQL{#connecting-to-sql-databases}
 
-Accédez à une base de données SQL externe, de sorte que vos applications CQ puissent interagir avec les données :
+Accédez à une base de données SQL externe, de sorte que vos applications CQ puissent interagir avec les données :
 
 1. [Créez ou procurez-vous un lot OSGi qui exporte le package de pilotes JDBC](#bundling-the-jdbc-database-driver).
 1. [Configurez un fournisseur de pool de sources de données JDBC](#configuring-the-jdbc-connection-pool-service).
@@ -27,7 +27,7 @@ Accédez à une base de données SQL externe, de sorte que vos applications CQ p
 
 ## Regroupement du pilote de base de données JDBC {#bundling-the-jdbc-database-driver}
 
-Certains fournisseurs de base de données proposent des pilotes JDBC dans un lot OSGi ; [MySQL](https://www.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un lot OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un lot OSGi. Le lot doit exporter les packages nécessaires pour interagir avec le serveur de base de données. Le lot doit également importer les packages auxquels il fait référence.
+Certains fournisseurs de base de données proposent des pilotes JDBC dans un lot OSGi ; [MySQL](https://www.mysql.com/downloads/connector/j/), par exemple. Si le pilote JDBC correspondant à votre base de données n’est pas disponible sous la forme d’un lot OSGi, procurez-vous le fichier JAR du pilote et enveloppez-le dans un lot OSGi. Le lot doit exporter les modules nécessaires pour interagir avec le serveur de base de données. Il doit également importer les modules auxquels il fait référence.
 
 L’exemple suivant utilise le [module externe Bundle pour Maven](https://felix.apache.org/site/apache-felix-maven-bundle-plugin-bnd.html) pour envelopper le pilote HSQLDB dans un lot OSGi. Le POM indique au module externe d’incorporer le fichier hsqldb.jar qui est identifié en tant que dépendance. Tous les packages org.hsqldb sont exportés.
 
@@ -86,7 +86,7 @@ Une connaissance du code source vous permet de déterminer la solution à utilis
 
 Les liens suivants ouvrent les pages de téléchargement pour certaines solutions de base de données courantes :
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Serveur SQL Microsoft](https://www.microsoft.com/fr-fr/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2 ](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
@@ -94,21 +94,21 @@ Les liens suivants ouvrent les pages de téléchargement pour certaines solution
 
 Ajoutez une configuration pour le service Pool de connexions JDBC qui utilise le pilote JDBC pour créer des objets de source de données. Votre code d’application utilise ce service pour obtenir l’objet et se connecter à la base de données.
 
-Pool de connexions JDBC (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) est un service de fabrique. Si vous avez besoin de connexions qui utilisent d’autres propriétés (un accès en lecture seule ou en lecture/écriture, par exemple), créez plusieurs configurations.
+Le Pool de connexions JDBC (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) est un service d’usine. Si vous avez besoin de connexions qui utilisent d’autres propriétés (un accès en lecture seule ou en lecture/écriture, par exemple), créez plusieurs configurations.
 
 Lorsque vous utilisez CQ, plusieurs méthodes de gestion des paramètres de configuration sont disponibles pour ces services ; pour en savoir plus, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 
-Les propriétés suivantes sont disponibles pour configurer un service de connexion mis en pool. Les noms de propriété sont répertoriés à mesure qu’ils sont affichés dans la console web. Le nom correspondant à un nœud`sling:OsgiConfig` apparaît entre parenthèses. Des exemples de valeurs sont affichés pour un serveur HSQLDB et une base de données dont le pseudonyme est`mydb` :
+Les propriétés suivantes sont disponibles pour configurer un service de connexion mis en pool. Les noms de propriété sont répertoriés à mesure qu’ils sont affichés dans la console web. Le nom correspondant à un nœud `sling:OsgiConfig` apparaît entre parenthèses. Des exemples de valeurs sont affichés pour un serveur HSQLDB et une base de données dont le pseudonyme est `mydb` :
 
 * Classe de pilotes JDBC (`jdbc.driver.class`) : classe Java à utiliser pour implémenter l’interface java.sql.Driver ; `org.hsqldb.jdbc.JDBCDriver`, par exemple. Le type de données est `String`.
 
-* URI de connexion JDBC ( `jdbc.connection.uri`) : URL de la base de données à utiliser pour créer la connexion, par exemple `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Le format de l’URL doit être valide pour être utilisé avec la méthode getConnection de la classe java.sql.DriverManager. Le type de données est `String`.
+* URI de connexion JDBC (`jdbc.connection.uri`) : URL de la base de données à utiliser pour créer la connexion ; `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`, par exemple. Le format de l’URL doit être valide pour être utilisé avec la méthode getConnection de la classe java.sql.DriverManager. Le type de données est `String`.
 
 * Nom d’utilisateur (`jdbc.username`) : nom d’utilisateur à employer pour s’authentifier auprès du serveur de base de données. Le type de données est `String`.
 
 * Mot de passe (`jdbc.password`) : mot de passe à utiliser pour l’authentification de l’utilisateur. Le type de données est `String`.
 
-* Requête de validation ( `jdbc.validation.query`) : L’instruction SQL à utiliser pour vérifier que la connexion est réussie, par exemple `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Le type de données est `String`.
+* Requête de validation (`jdbc.validation.query`) : instruction SQL à utiliser pour s’assurer que la connexion a bien été établie ; `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`, par exemple. Le type de données est `String`.
 
 * Lecture seule par défaut (default.readonly) : sélectionnez cette option si vous voulez que la connexion fournisse un accès en lecture seule. Le type de données est `Boolean`.
 * Validation automatique par défaut (`default.autocommit`) : sélectionnez cette option pour créer des transactions distinctes pour chaque commande SQL envoyée à la base de données ; chaque transaction est alors automatiquement validée. Ne sélectionnez pas cette option lorsque vous validez explicitement des transactions dans votre code. Le type de données est `Boolean`.
@@ -121,7 +121,7 @@ Les propriétés suivantes sont disponibles pour configurer un service de connex
 
 * Propriétés de service supplémentaires (`datasource.svc.properties`) : ensemble de paires nom/valeur que vous souhaitez ajouter à l’URL de connexion. Le type de données est `String[]`.
 
-Pool de connexions JDBC est un service de fabrique. Par conséquent, si vous utilisez une `sling:OsgiConfig` pour configurer le service de connexion, le nom du noeud doit inclure le PID du service d’usine, suivi de *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. Un exemple de nom de noeud est `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+Le Pool de connexions JDBC est un service d’usine. Par conséquent, si vous utilisez un nœud `sling:OsgiConfig` pour configurer le service de connexion, le nom du nœud doit inclure le PID du service d’usine, suivi de *`-alias`*. Le pseudonyme que vous utilisez doit être unique pour tous les nœuds de configuration de ce PID. `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool` est un exemple de nom de nœud.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
@@ -173,4 +173,4 @@ L’exemple de code JSP suivant obtient une instance de la source de données hs
 
 >[!NOTE]
 >
->Pour savoir comment injecter un service DataSourcePool dans un lot OSGi, voir [Injection d’un service DataSourcePool dans un lot OSGi Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+>Pour savoir comment injecter un service DataSourcePool dans un lot OSGi, voir [Injection d’un service DataSourcePool dans un lot OSGi Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk).

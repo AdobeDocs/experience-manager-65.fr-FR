@@ -1,5 +1,5 @@
 ---
-title: Introduction à la plateforme AEM
+title: Présentation de la plateforme AEM
 seo-title: Introduction to the AEM Platform
 description: Cet article donne une vue d’ensemble de la plateforme AEM et de ses composants les plus importants.
 seo-description: This article provides a general overview of the AEM platform and its most important components.
@@ -14,26 +14,26 @@ exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '769'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# Introduction à la plateforme AEM{#introduction-to-the-aem-platform}
+# Présentation de la plateforme AEM{#introduction-to-the-aem-platform}
 
 La plateforme AEM dans AEM 6 est basée sur Apache Jackrabbit Oak.
 
-Apache Jackrabbit Oak vise à implémenter un référentiel de contenu hiérarchique évolutif et performant pour l’utiliser comme fondation des sites web modernes de classe mondiale et d’autres applications de contenu exigentes.
+Apache Jackrabbit Oak vise à implémenter un référentiel de contenu hiérarchique évolutif et performant pour l’utiliser comme fondation des sites web modernes de classe mondiale et d’autres applications de contenu exigeantes.
 
-Il succède à Jackrabbit 2 et est utilisé par AEM 6 comme serveur principal par défaut pour son référentiel de contenu, CRX.
+Il succède à Jackrabbit 2 et il est utilisé par AEM 6 comme structure par défaut pour son référentiel de contenu, CRX.
 
-## Principes de conception et objectifs {#design-principles-and-goals}
+## Principes et objectifs de conception {#design-principles-and-goals}
 
 Oak met en œuvre les spécifications [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0). Ses principaux objectifs de création sont les suivants :
 
 * Meilleure prise en charge de référentiels volumineux
 * Plusieurs noeuds de cluster répartis pour une grande disponibilité
 * Performances optimisées
-* Prise en charge de nombreux noeuds enfants et de niveaux de contrôle d’accès
+* Prise en charge de nombreux nœuds enfants et de niveaux de contrôle d’accès
 
 ## Concept de l’architecture {#architecture-concept}
 
@@ -44,7 +44,7 @@ Oak met en œuvre les spécifications [JSR-283](https://www.day.com/day/en/produ
 L’objectif du calque de stockage est le suivant :
 
 * Mettre en œuvre un modèle d’arborescence
-* Rendre possible l’alimentation du·stockage
+* Rendre possible l’alimentation du stockage
 * Fournir un mécanisme de mise en cluster
 
 ### Cœur Oak {#oak-core}
@@ -57,18 +57,18 @@ Le cœur Oak ajoute plusieurs niveaux au niveau de stockage :
 
 ### Oak JCR {#oak-jcr}
 
-Le principal objectif de Oak JCR est de transformer la sémantique de JCR en opérations d’arborescence. Il est aussi chargé de :
+Le principal objectif de Oak JCR est de transformer la sémantique de JCR en opérations d’arborescence. Il est aussi chargé des éléments suivants :
 
 * Mettre en œuvre l’API JCR
 * Contenir les commit hooks qui mettent en œuvre les contraintes JCR
 
-En outre, les implémentations non Java sont désormais possibles et font partie du concept Oak JCR. 
+En outre, les implémentations non Java sont désormais possibles et font partie du concept Oak JCR. 
 
 ## Présentation du stockage {#storage-overview}
 
 Le niveau de stockage Oak fournit un niveau d’abstraction pour le stockage de contenu.
 
-Actuellement, il existe deux implémentations de stockage disponibles dans AEM6 : **Stockage tar** et **Stockage MongoDB**.
+Actuellement, il existe deux implémentations du stockage disponibles dans AEM 6 : le **stockage tar** et le **stockage MongoDB**.
 
 ### Stockage Tar {#tar-storage}
 
@@ -124,7 +124,7 @@ Une configuration en cluster AEM typique avec un stockage MongoDB :
 
 Étant donné qu’Oak est conçu pour être rétrocompatible avec le standard de JCR 1.0, il n’y a quasiment aucune modification au niveau de l’utilisateur. Toutefois, il existe des différences perceptibles à prendre en compte lors de la configuration d’un Oak basé sur l’installation AEM :
 
-* Oak ne crée pas d’index automatiquement. Pour cette raison, les index personnalisés doivent être créés si nécessaire.
+* Oak ne crée pas automatiquement d’index. Pour cette raison, les index personnalisés doivent être créés si nécessaire.
 * Contrairement à Jackrabbit 2 où les sessions reflètent toujours le dernier état du référentiel, une session Oak reflète un point de vue stable du référentiel de l’heure à laquelle la session a été détectée. Cela est dû au modèle MVCC sur lequel Oak est basé.
 * Les frères de même nom (SNS) ne sont pas pris en charge dans Oak. 
 
@@ -132,7 +132,7 @@ Une configuration en cluster AEM typique avec un stockage MongoDB :
 
 Pour plus d’informations sur la plateforme AEM, vérifiez également les articles ci-dessous :
 
-* [Configuration des stocks de nœuds et des entrepôts de données dans AEM 6](/help/sites-deploying/data-store-config.md)
+* [Configuration des entrepôts de nœuds et des magasins de données dans AEM 6](/help/sites-deploying/data-store-config.md)
 * [Requêtes et indexation Oak](/help/sites-deploying/queries-and-indexing.md)
 * [Éléments de stockage dans AEM 6](/help/sites-deploying/storage-elements-in-aem-6.md)
 * [AEM avec MongoDB](/help/sites-deploying/aem-with-mongodb.md)

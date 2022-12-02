@@ -1,7 +1,7 @@
 ---
-title: Présentation
+title: Fragments d’expérience
 seo-title: Experience Fragments
-description: Présentation
+description: Fragments d’expérience
 seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -14,13 +14,13 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Présentation{#experience-fragments}
+# Fragments d’expérience{#experience-fragments}
 
-Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. Il peut contenir n’importe quel composant.
+Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. Ils peuvent contenir n’importe quel composant.
 
 Un fragment d’expérience :
 
@@ -38,7 +38,7 @@ Un fragment d’expérience :
 Vous pouvez utiliser des fragments d’expérience :
 
 * Si un auteur souhaite réutiliser des parties (un fragment d’une expérience) d’une page, il doit copier et coller ce fragment. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur. Les fragments d’expérience rendent inutiles les opérations de copier/coller.
-* Pour gérer le scénario d’utilisation CMS sans interface. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur final.
+* Pour prendre en charge le scénario d’utilisation de CMS découplé. Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur final.
 
 >[!NOTE]
 >
@@ -157,11 +157,11 @@ Veuillez utiliser cette boîte de dialogue uniquement à titre d’information.
 
 Pour créer un fragment d’expérience :
 
-1. Sélectionnez Fragments d’expérience dans la navigation globale.
+1. sélectionnez Fragments d’expérience dans la navigation globale ;
 
    ![xf-01](assets/xf-01.png)
 
-1. Accédez au dossier requis et sélectionnez **Créer**.
+1. accédez au dossier requis et sélectionnez ensuite **Créer** ;
 
    ![xf-02](assets/xf-02.png)
 
@@ -183,7 +183,7 @@ Pour créer un fragment d’expérience :
 
 1. Cliquez sur **Créer**.
 
-   Un message s’affiche. Sélectionnez :
+   Un message s’affiche. Sélectionner:
 
    * **Terminé** pour revenir à la console
 
@@ -241,7 +241,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 1. Ouvrez une page à modifier.
 
-   Par exemple : [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Par exemple : [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Créez une instance du composant Fragment d’expérience. Pour ce faire, faites glisser le composant sur le système de paragraphes de la page depuis l’explorateur de composants :
 
@@ -249,7 +249,7 @@ Vous pouvez désormais utiliser le fragment d’expérience lors de la création
 
 1. Ajoutez le fragment d’expérience proprement dit à l’instance de composant. Pour ce faire, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Faites glisser le fragment requis sur le composant depuis l’Explorateur de ressources
+   * Faites glisser le fragment requis depuis l’Explorateur de ressources sur le composant.
    * Sélectionnez **Configurer** dans la barre d’outils du composant et indiquez le fragment à utiliser. Confirmez en cliquant sur **Terminé** (icône représentant une coche).
 
    ![xf-09](assets/xf-09.png)
@@ -324,7 +324,7 @@ Les détails de votre fragment sont visibles :
       * **Nombre total de variations** – informations uniquement
 
       * **Nombre de variations web** – informations uniquement
-      * **Nombre de variantes non-Web** - inf **ormations uniquement**
+      * **Nombre de variantes non-Web** - **informations uniquement**
 
       * **Nombre de pages utilisant ce fragment** – informations uniquement
    * **Cloud Services**
@@ -354,4 +354,4 @@ Même s’il est directement disponible à partir du navigateur, [le principal o
 
 Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuvent être utilisés à la fois par AEM et les canaux tiers.
 
-Pour l’exportation vers Adobe Target, JSON peut également être utilisé. Pour obtenir des informations complètes, voir [Intégration de Target aux ](/help/sites-administering/experience-fragments-target.md)Fragments d’expérience.
+Pour l’exportation vers Adobe Target, JSON peut également être utilisé. Pour obtenir des informations complètes, consultez [Intégration de Target aux fragments d’expérience](/help/sites-administering/experience-fragments-target.md).

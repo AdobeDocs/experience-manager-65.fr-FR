@@ -13,7 +13,7 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '2709'
-ht-degree: 67%
+ht-degree: 99%
 
 ---
 
@@ -45,7 +45,7 @@ Au plus haut niveau, vous devez maîtriser les concepts suivants :
 * les cookies de navigateur
 * et d’autres concepts modernes de développement web
 
-La pile technologique d’Adobe Experience Manager est basée sur la variable [Apache Felix](https://felix.apache.org/) Conteneur OSGI avec [Apache Sling](https://sling.apache.org/site/index.html) structure web et incorpore un référentiel de contenu Java ([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)) en fonction de [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html). Vous devez vous familiariser avec ces projets individuels, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
+La pile technologique d’Adobe Experience Manager est basée sur le conteneur OSGI [Apache Felix](https://felix.apache.org/) avec le framework Web [Apache Sling](https://sling.apache.org/site/index.html). Elle intègre un référentiel de contenu Java ([JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)) basé sur [Apache Jackrabbit](https://jackrabbit.apache.org/jcr-api.html). Vous devez vous familiariser avec ces projets individuels, ainsi qu’avec tous les autres composants open source (par exemple, Apache Lucene) utilisés dans le domaine où vous avez l’intention d’apporter une contribution.
 
 ## Connaissances exclusives {#tribal-knowledge}
 
@@ -53,9 +53,9 @@ Certains concepts et principes directeurs sont profondément enracinés dans l�
 
 ### Tout est contenu {#everything-is-content}
 
-Le contenu n’inclut pas seulement les données que l’application web conserve. Le code du programme, les bibliothèques, les scripts, les modèles, le HTML, CSS, les images et les artefacts de tous types, tout et n’importe quoi est conservé dans le référentiel de contenu et importé/exporté sous la forme de modules via le gestionnaire de modules et le partage de modules.
+Le contenu n’inclut pas seulement les données que l’application web conserve. Le code, les bibliothèques, scripts, modèles, HTML, CSS, images et artefacts de toutes sortes, absolument tout est conservé dans le référentiel de contenu et importé/exporté sous la forme de modules via le gestionnaire de modules et le partage de modules.
 
-### David’s Model {#david-s-model}
+### Modèle de David {#david-s-model}
 
 La façon dont le contenu doit être modélisé dans un référentiel de contenu Java nécessite une approche totalement différente de ce qui est courant dans le secteur du développement logiciel pour la modélisation de données dans le monde relationnel. Le guide [David’s Model: A guide for content modeling](https://wiki.apache.org/jackrabbit/DavidsModel) est une lecture incontournable pour tout débutant dans la gestion de contenu selon l’approche JCR.
 
@@ -77,7 +77,7 @@ En matière de résolution de requête Apache Sling, il faut comprendre comment 
 
 Pas de troisième étape : pour installer et exécuter, il suffit de télécharger et de double-cliquer sur le fichier JAR Quickstart. Il n’y a pas de troisième étape. Toute fonctionnalité facultative supplémentaire ne devrait rien nécessiter hormis l’installation du module approprié à partir du partage de modules.
 
-Petite taille du fichier Quickstart : conservez la taille minimale du fichier JAR Quickstart. Utilisez les bibliothèques de manière intelligente et optimisée, en déplaçant les fonctionnalités facultatives vers le partage de modules.
+Petite taille du fichier Quickstart : conservez la taille minimale du fichier JAR Quickstart. Faites une utilisation intelligente et optimisée des bibliothèques, en déplaçant les fonctionnalités facultatives vers le partage de modules.
 
 Temps de démarrage plus rapide : lorsque vous effectuez une modification susceptible de se répercuter sur le temps de démarrage, assurez-vous de l’écourter et non pas le contraire.
 
@@ -91,7 +91,7 @@ Couplage lâche : nous privilégions les interactions à couplage faible à des
 
 ### Ne pas casser les démos {#don-t-break-the-demo}
 
-Familiarisez-vous avec les scripts de démonstration et les fonctionnalités de produit qui s’affichent le plus souvent dans les démonstrations. Sachez que rien de ce que vous codez ne doit endommager une fonctionnalité de « script de démonstration ». Le produit de base doit toujours être prêt pour démo, même en phase de développement.
+Familiarisez-vous avec les scripts de démonstration et les fonctionnalités des produits qui sont le plus souvent présentés dans les démos. Sachez que rien de ce que vous codez ne doit endommager une fonctionnalité de « script de démonstration ». Le produit de base doit toujours être prêt pour démo, même en phase de développement.
 
 ### Une conception qui privilégie la fiabilité {#design-for-reliability}
 
@@ -105,11 +105,11 @@ Ne dépendez pas des shutdown hooks, nettoyez au démarrage. Un arrêt anormal e
 
 ### Se tenir prêt pour un clustering élastique {#be-ready-for-elastic-clustering}
 
-Soyez toujours prêt pour la mise en grappe élastique, supposez toujours qu’il y a de la mise en grappe. En règle générale, le respect de tout ce qui réside dans le référentiel de contenu signifie une prise en charge de clustering intégré.
+Soyez toujours prêt pour un clustering élastique, supposez toujours qu’il y a un clustering. En règle générale, le respect de tout ce qui réside dans le référentiel de contenu signifie une prise en charge de clustering intégré.
 
 ### Une conception avec une compatibilité ascendante {#design-for-backward-compatibility}
 
-Rien de ce que vous codez ne doit endommager l’ancien code d’un client. Considérer uniquement `/libs` pour contenir le code de produit qui peut être mis à jour lors d’une mise à niveau. Le `/apps` du référentiel est le code du projet et la variable `/etc` contient des configurations personnalisées qui doivent être conservées. En règle générale, ne remplacez rien dans `/apps`, `/content` et `/home`. Après une mise à niveau, l’ancien code de projet, les configurations et le contenu doivent continuer à fonctionner comme avant la mise à niveau.
+Rien de ce que vous codez ne doit endommager l’ancien code d’un client. N’utilisez que la `/libs` pour stocker le code du produit qui peut être mis à jour pendant une mise à niveau. La section `/apps` du référentiel est le code du projet et `/etc` contient des configurations personnalisées qui doivent être conservées. En règle générale, ne remplacez rien dans `/content`, `/apps` et `/home`. Après une mise à niveau, l’ancien code de projet, les configurations et le contenu doivent continuer à fonctionner comme avant la mise à niveau.
 
 Une conception prenant en charge la rétrocompatibilité garantit également que l’expérience de mise à niveau correspond à la simplicité de l’installation initiale. Il suffit en principe d’arrêter AEM, de remplacer le fichier JAR Quickstart et de redémarrer AEM. Avec une base d’installation en pleine expansion, une efficace optimale est un avantage de plus en plus recherché.
 
@@ -119,25 +119,25 @@ La rétrocompatibilité doit également être envisagée pour la cohérence gén
 
 ## Concepts de base {#core-concepts}
 
-**Instance de création** - En règle générale, pour des raisons de sécurité, de gouvernance et autres, un site de production divise les instances d’AEM en instances d’auteur et de publication. Pour plus d’informations sur l’architecture de déploiement (y compris les instances d’auteur/de publication), consultez la documentation sur les instances d’AEM.
+**Instance d’auteur** - Généralement, pour des raisons de sécurité, de gouvernance et autres, un site de exploitation divise les instances d’AEM en instances de création et de publication. Pour plus d’informations sur l’architecture de déploiement (y compris les instances de création et de publication), consultez la documentation relative aux instances AEM.
 
-**Mise en cache, friture et cuisson** - Traditionnellement, les concepts de cuisson et de friture sont une distinction importante entre les différents systèmes de gestion de contenu web. Dans le jargon CMS, le « baking » fait référence au concept de validation de données dans des fichiers statiques au moment de la publication, tandis que le « frying » fait référence au concept de traitement des données pour la présentation finale au moment de la requête (juste à temps).
+**Caching, frying et baking** - Traditionnellement, les concepts de baking et de frying sont une distinction importante entre différents systèmes de gestion de contenu Web. Dans le jargon CMS, le « baking » fait référence au concept de validation de données dans des fichiers statiques au moment de la publication, tandis que le « frying » fait référence au concept de traitement des données pour la présentation finale au moment de la requête (juste à temps).
 
-**Mise en grappe et équilibrage de charge** - Pour accroître la disponibilité et améliorer les performances d’un environnement de production, il est courant de combiner plusieurs instances d’auteur et/ou de publication (en grappes), soit en les mettant à la disposition de différents groupes d’utilisateurs, soit en les équilibrant par la charge derrière une configuration de Dispatcher.
+**Clustering et équilibrage de charge** - Pour augmenter la disponibilité et améliorer les performances d’un environnement d’exploitation, il est courant de combiner plusieurs instances de création et/ou de publication (en clusters), soit en les mettant à la disposition de différents groupes d’utilisateurs, soit en équilibrant leur charge derrière une configuration du dispatcher.
 
-Il est également possible de combiner plusieurs instances du référentiel de contenu pour créer une *haute disponibilité* Solution JCR, qui peut ensuite être intégrée à votre solution AEM afin de maximiser la protection contre les défaillances matérielles et logicielles. Consultez [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter) pour plus d’informations.
+Il est également possible de combiner plusieurs instances du référentiel de contenu pour créer une solution JCR *haute disponibilité*, laquelle peut ensuite être intégrée à votre solution AEM pour optimiser la protection contre les défaillances matérielles et logicielles. Consultez [Déploiements recommandés](/help/sites-deploying/recommended-deploys.md#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter) pour plus d’informations.
 
-**Composant** - Dans AEM, un composant est un type d’objet, dont les instances peuvent généralement être créées en les faisant glisser à partir du sidekick, par exemple. Ainsi, par exemple, les composants prêts à l’emploi fournis avec AEM incluent les composants Texte, Titre, Nuage de balises, Carrousel, Image et Liste, tous disponibles depuis le Sidekick au moment de l’exécution.
+**Composant** - Dans AEM, un composant est un type d’objet dont les instances peuvent généralement être créées en les faisant glisser depuis le sidekick, par exemple. Ainsi, par exemple, les composants prêts à l’emploi fournis avec AEM incluent les composants Texte, Titre, Nuage de balises, Carrousel, Image et Liste, tous disponibles depuis le sidekick au moment de l’exécution.
 
-**Outil de recherche de contenu** - En mode de création, l’outil de recherche de contenu est un panneau spécial (cadre) situé à gauche de la page qui, selon l’onglet que vous sélectionnez en haut, affiche des listes d’images, de documents, de ressources de Flash, de pages, de paragraphes ou de ressources de référentiel que vous pouvez faire glisser de l’outil de recherche de contenu vers la page sur laquelle vous travaillez (à droite).
+**Outil de recherche de contenu** - En mode création, l’outil de recherche de contenu est un panneau spécial (frame) sur le côté gauche de la page qui, selon l’onglet que vous sélectionnez en haut, affiche des listes d’images, de documents, des éléments Flash, des pages, des paragraphes ou des ressources de référentiel que vous pouvez faire glisser de l’outil de recherche de contenu vers la page dans laquelle vous travaillez (sur la droite).
 
-**Ressources numériques** - Dans AEM, les ressources numériques sont (généralement) des images et des fichiers multimédias enrichis. Pour plus d’informations, voir Utilisation des actifs numériques dans DAM.
+**Eléments numériques** Dans AEM, les ressources numériques sont (généralement) des images et des fichiers multimédias. Pour plus d’informations, consultez Utilisation des ressources numériques dans la gestion des ressources numériques.
 
-**Dispatcher** - Dispatcher est à la fois un outil de mise en cache et d’équilibrage de charge, et fournit certaines protections de sécurité.
+**Dispatcher** - Le Dispatcher est un outil de mise en cache et d’équilibrage de charge qui fournit certaines mesures de sécurité.
 
 **Widgets ExtJS** - La plupart des éléments d’interface utilisateur d’AEM utilisent ExtJS, qui est une bibliothèque de widgets tiers écrite en JavaScript. ExtJS offre des widgets d’IU personnalisables et haute performance ainsi qu’un modèle de composant bien conçu et extensible.
 
-**JCR, référentiel de contenu Java** - La spécification Java Content Repository (JSR-283) fournit à la fois un modèle de données abstrait et une interface de programmation d’application pour réaliser un référentiel de données NoSQL massivement évolutif qui combine les fonctionnalités d’un système de fichiers et d’une base de données d’objets. Bien que vous n’ayez pas besoin de comprendre JSR-283 en détail, prenez le temps de vous familiariser avec les fonctionnalités de base de la spécification JCR et le modèle de données qui la sous-tend, car JCR est ce qui rend possible l’approche « tout est contenu ».
+**JCR, Java Content Repository** - La spécification de référentiel de contenu Java (JSR-283) fournit à la fois un modèle de données abstrait et une interface de programmation d’application pour élaborer un référentiel de données NoSQL massivement évolutif qui combine les fonctionnalités d’un système de fichiers et d’une base de données objet. Bien que vous n’ayez pas besoin de comprendre JSR-283 en détail, prenez le temps de vous familiariser avec les fonctionnalités de base de la spécification JCR et le modèle de données qui la sous-tend, car JCR est ce qui rend possible l’approche « tout est contenu ».
 
 En substance, JCR est un système de nœuds et de propriétés, dans lequel les nœuds peuvent hériter des autres nœuds et tout le contenu est stocké en tant que *valeurs* de propriété. Notez qu’en plus de l’héritage ordinaire, JCR est associé à un concept de nœuds « mixin », ce qui permet la modélisation de l’héritage multiple.
 
@@ -145,19 +145,19 @@ JCR possède un certain nombre de types de nœuds prédéfinis et de types de pr
 
 L’API Java de JavaDoc pour JCR est disponible [ici](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
-Avant de lire la spécification JavaDoc ou JCR elle-même, vous pouvez consulter [cette explication d’expert](/help/sites-developing/the-basics.md#java-content-repository) sur JCR, telle qu’elle est implémentée par Adobe Experience Services.
+Avant de lire la spécification JavaDoc ou JCR elle-même, vous pouvez consulter [cette explication d’expert](/help/sites-developing/the-basics.md#java-content-repository) sur JCR, telle qu’elle est implémentée par Adobe Experience Services.
 
-**Multi-site Manager (MSM)** - La fonctionnalité MSM d’AEM aide les clients à gérer le contenu multilingue et multinational, ce qui leur permet d’équilibrer la valorisation de marque centralisée avec le contenu localisé.
+**Multi-Site Manager (MSM)** - La fonctionnalité MSM d’AEM aide les clients à gérer le contenu multilingue et multinational pour uniformiser leur branding centralisé avec du contenu localisé.
 
-**OSGi** - OSGi est la technologie d’exécution basée sur les services qui constitue la base du développement Java modulaire dans AEM. C’est un framework qui fournit non seulement un environnement de chargement de classes hautement dynamique (et sécurisé) pour les ressources de code (appelébundles), mais aussi un contrôle complet de la visibilité et du cycle de vie des différents services exposés par des bundles. Un registre de services fournit un modèle de coopération pour les bundles qui tient compte de la dynamique du cycle de vie (et des exigences de version). OSGi résout de nombreux problèmes que les serveurs d’applications étaient censés résoudre, mais de manière légère et hautement dynamique. Cela permet, par exemple, de déployer à chaud des services (et de rendre le nouveau code immédiatement disponible sans redémarrer le serveur).
+**OSGi** - OSGi est la technologie d’exécution orientée services qui constitue la base du développement Java modulaire dans AEM. C’est un framework qui fournit non seulement un environnement de chargement de classes hautement dynamique (et sécurisé) pour les ressources de code (appelés bundles), mais aussi un contrôle complet de la visibilité et du cycle de vie des différents services exposés par des bundles. Un registre de services fournit un modèle de coopération pour les bundles qui tient compte de la dynamique du cycle de vie (et des exigences de version). OSGi résout de nombreux problèmes que les serveurs d’applications étaient censés résoudre, mais de manière légère et hautement dynamique. Cela permet, par exemple, de déployer à chaud des services (et de rendre le nouveau code immédiatement disponible sans redémarrer le serveur).
 
-**Parsys, système de paragraphes** - Le système de paragraphes (parsys) est un composant composé qui permet aux auteurs d’ajouter des composants de différents types à une page et qui contient d’autres composants de paragraphe. Chaque type de paragraphe est représenté en tant que composant. Le système de paragraphe lui-même est également un composant, qui contient les autres composants de paragraphe.
+**Parsys, système de paragraphes** - Le système de paragraphe (parsys) est un composant composé qui permet aux auteurs d’ajouter des composants de différents types à une page et qui contient tous les autres composants de paragraphe. Chaque type de paragraphe est représenté en tant que composant. Le système de paragraphe lui-même est également un composant, qui contient les autres composants de paragraphe.
 
-**Microkernel** - Chaque espace de travail du référentiel peut être configuré séparément pour stocker ses données par le biais d’un micro-noyau spécifique (une classe qui gère la lecture et l’écriture des données). De même, le magasin de versions à l’échelle du référentiel peut également être configuré indépendamment pour utiliser un micro-noyau particulier. Plusieurs micro-noyaux différents sont disponibles et capables de stocker des données dans une variété de formats de fichiers ou de bases de données relationnelles. (Par exemple, il existe des gestionnaires de persistance pour MongoDB, DB2 ou Oracle). Le micro-noyau par défaut pour AEM est TarMK (voir plus loin).
+**Microkernel** - Chaque espace de travail du référentiel peut être configuré séparément pour stocker ses données via un micro-noyau spécifique (classe qui gère la lecture et l’écriture des données). De même, le magasin de versions à l’échelle du référentiel peut également être configuré indépendamment pour utiliser un micro-noyau particulier. Plusieurs micro-noyaux différents sont disponibles et capables de stocker des données dans une variété de formats de fichiers ou de bases de données relationnelles. (Par exemple, il existe des gestionnaires de persistance pour MongoDB, DB2 ou Oracle). Le micro-noyau par défaut pour AEM est TarMK (voir plus loin).
 
-**Instance de publication** - Pour des raisons de sécurité, de gouvernance et autres, un site de production divise généralement les instances d’AEM en instances d’auteur et de publication. Pour plus d’informations sur l’architecture de déploiement (y compris les instances d’auteur/de publication), consultez la documentation sur les instances d’AEM.
+**Instance de publication** - Généralement, pour des raisons de sécurité, de gouvernance et autres, un site d’exploitation divise les instances d’AEM en instances de création et de publication. Pour plus d’informations sur l’architecture de déploiement (y compris les instances de création et de publication), consultez la documentation relative aux instances AEM.
 
-**Quickstart** - Contrairement à de nombreux autres programmes, vous installez AEM en utilisant un seul fichier JAR à extraction automatique &quot;Quickstart&quot;. Lorsque vous double-cliquez sur le fichier JAR pour la première fois, tout ce dont vous avez besoin est automatiquement installé. Le fichier JAR Quickstart comprend tous les fichiers requis pour le référentiel CRX (y compris les fonctions administratives), les services de référentiel virtuel, les services d’indexation et de recherche, les services de workflow, la sécurité et un serveur web, ainsi que le CQ Servlet Engine (CQSE) et les services AEM. Il n’y a pas d’autres fichiers à installer : Quickstart est autonome.
+**Démarrage rapide** - Contrairement à beaucoup d’autres programmes, AEM s’installe à l’aide d’un seul fichier JAR auto-extractable Quickstart. Lorsque vous double-cliquez sur le fichier JAR pour la première fois, tout ce dont vous avez besoin est automatiquement installé. Le fichier JAR Quickstart comprend tous les fichiers requis pour le référentiel CRX (y compris les fonctions administratives), les services de référentiel virtuel, les services d’indexation et de recherche, les services de workflow, la sécurité et un serveur web, ainsi que le CQ Servlet Engine (CQSE) et les services AEM. Il n’y a pas d’autres fichiers à installer : Quickstart est autonome.
 
 La première fois que vous lancez Quickstart, il crée en arrière-plan un référentiel complet compatible JCR, ce qui peut prendre plusieurs minutes. Après ce premier démarrage, les démarrages ultérieurs sont beaucoup plus rapides car l’infrastructure du référentiel a déjà été définie.
 
@@ -167,18 +167,18 @@ De nombreuses options de démarrage (telles que le numéro de port actif et le f
 java -jar <quickstartfilename>.jar -help
 ```
 
-**Agents de réplication** - Les agents de réplication sont essentiels pour AEM en tant que mécanisme utilisé pour publier (activer) le contenu d’un auteur vers un environnement de publication ; vider le contenu du cache de Dispatcher ; renvoyer le contenu généré par l’utilisateur (par exemple, les entrées de formulaire) de l’environnement de publication vers l’environnement de création.
+**Agents de réplication** - Les agents de réplication sont au cœur d’AEM et forment le mécanisme utilisé pour Publier (activer) le contenu d’un auteur dans un environnement de publication, vider le contenu du cache du Dispatcher, renvoyer le contenu généré par l’utilisateur (par exemple, la saisie de formulaire) depuis l’environnement de publication vers l’environnement de création.
 
-**Génération de modèles automatique** - Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.
+**Génération de modèles automatique** : grâce à la génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
 
-**Segmentation** - Les visiteurs du site ont des intérêts et des objectifs différents lorsqu’ils se rendent sur un site. Le fait de comprendre ces objectifs et de satisfaire à leurs attentes est un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur :
+**Segments** - Les visiteurs de site se rendent sur un site en fonction d’intérêts et d’objectifs divers. Le fait de comprendre ces objectifs et de satisfaire à leurs attentes est un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur :
 
-**Sidekick** - Le sidekick est une fenêtre flottante de type palette qui s’affiche sur la page modifiable, à partir de laquelle vous pouvez faire glisser de nouveaux composants et exécuter les actions qui s’appliquent à la page.
+**Sidekick** - Le Sidekick est une fenêtre flottante de type palette visible dans la page modifiable à partir de laquelle les nouveaux composants peuvent être déplacés et les actions qui s’appliquent à la page peuvent être exécutées.
 
-**SiteCatalyst** - SiteCatalyst offre aux marketeurs un emplacement unique où mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Vous pouvez utiliser Adobe SiteCatalyst pour analyser les données des sites web AEM.
+**SiteCatalyst** - SiteCatalyst offre aux spécialistes du marketing un seul endroit pour mesurer, analyser et optimiser les données intégrées de toutes les initiatives en ligne sur plusieurs canaux marketing. Vous pouvez utiliser Adobe SiteCatalyst pour analyser les données des sites Web AEM.
 
 **Stockage Tar (TarMK)** - TarMK est le système de persistance par défaut dans AEM. Bien qu’AEM puisse être configuré pour utiliser un autre système de persistance (tel que MongoDB), TarMK présente certains avantages en ce sens qu’il est optimisé pour les utilisations classiques de JCR (donc très rapide), utilise un format de données standard et peut être sauvegardé rapidement et facilement.
 
-**Modèle** - Dans AEM, un modèle spécifie un type de page particulier. Il définit la structure d’une page (tout en spécifiant généralement une image miniature et diverses propriétés). Vous pouvez, par exemple, disposer de modèles distincts pour des pages de produit, des plans de site et des coordonnées de contact.
+**Modèle** - Dans AEM, un modèle spécifie un type de page spécialisé. Il définit la structure d’une page (tout en spécifiant généralement une image miniature et diverses propriétés). Vous pouvez, par exemple, disposer de modèles distincts pour des pages de produit, des plans de site et des coordonnées de contact.
 
-**Workflow** - Le système de workflow AEM permet la création de processus automatisés impliquant des pages ou des ressources.
+**Workflow** - Le système de Workflow AEM permet la création de processus automatisés associés à des pages ou des ressources.

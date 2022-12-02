@@ -14,7 +14,7 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -62,11 +62,11 @@ La fenêtre ci-dessous apparaît alors. L’étape suivante consiste à choisir 
 
 ![](assets/cinci-1.png)
 
-Sur cet exemple, nous sélectionnons un chemin pour lequel configurer une autorisation pour les **utilisateurs DAM** :
+Sur cet exemple, nous sélectionnons un chemin pour lequel configurer une autorisation pour les **dam-users** :
 
 ![](assets/sase-1.png)
 
-Une fois le chemin sélectionné, le workflow revient sur cet écran, où l’utilisateur peut sélectionner un ou plusieurs des privilèges des espaces de noms disponibles (comme `jcr`, `rep` ou `crx`), comme illustré ci-dessous.
+Une fois le chemin sélectionné, le workflow revient sur l’écran depuis lequel un ou plusieurs privilèges peuvent être sélectionnés parmi les espaces de noms disponibles (comme `jcr`, `rep` ou `crx`), comme indiqué ci-dessous.
 
 Vous pouvez ajouter des privilèges en les recherchant à l’aide du champ de texte, puis en les sélectionnant dans la liste.
 
@@ -88,13 +88,13 @@ Outre la liste des privilèges et le type d’autorisation pour un chemin d’ac
 
 >[!NOTE]
 >
->Pour plus d’informations sur la signification de chaque restriction, consultez [Documentation Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Pour plus d’informations sur la signification de chaque restriction, consultez la [Documentation Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 Vous pouvez ajouter des restrictions en sélectionnant le type de restriction, en entrant la valeur et en appuyant sur l’icône **+**, comme on peut voir ci-dessous.
 
 ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est un privilège agrégé qui inclut `jcr:removeNode` qui a été ajouté ci-dessus, mais qui n’est pas affiché ci-dessous comme couvert sous `jcr:write`.
+La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est une autorisation agrégée qui inclut `jcr:removeNode`, qui a été ajouté précédemment, mais qui n’apparaît pas ci-dessous, car il se trouve sous `jcr:write`.
 
 ### Modification des entrées de contrôle d’accès {#editing-aces}
 
@@ -108,11 +108,11 @@ Les entrées de contrôle d’accès configurées présélectionnées apparaisse
 
 ![Modifier l’entrée](assets/noua-1.png)
 
-Ici, nous ajoutons l’autorisation `addChildNodes` pour les **utilisateurs DAM** sur le chemin donné.
+Ici, nous ajoutons l’autorisation `addChildNodes` pour les **dam-users** sur le chemin donné.
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Les modifications seront répercutées dans les nouvelles autorisations de **dam-users**, comme illustré ci-dessous :
+Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Les modifications se répercuteront sur les nouvelles autorisations pour les **dam-users**, comme illustré ci-dessous :
 
 ![](assets/zece-1.png)
 
@@ -135,11 +135,11 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
    <th>Privilèges accordés par l’interface utilisateur d’autorisations</th>
   </tr>
   <tr>
-   <td>Lire</td>
+   <td>Lecture</td>
    <td><code>jcr:read</code></td>
   </tr>
   <tr>
-   <td>Modifier</td>
+   <td>Modification</td>
    <td><p><code>jcr:modifyProperties</code></p> <p><code>jcr:lockManagement</code></p> <p><code>jcr:versionManagement</code></p> </td>
   </tr>
   <tr>
@@ -151,15 +151,15 @@ Ceci entraînait une certaine confusion quant à la configuration exacte. Le tab
    <td><p><code>jcr:removeNode</code></p> <p><code>jcr:removeChildNodes</code></p> </td>
   </tr>
   <tr>
-   <td>Lire l’ACL</td>
+   <td>Lecture de l’ACL</td>
    <td><code>jcr:readAccessControl</code></td>
   </tr>
   <tr>
-   <td>Modifier l’ACL</td>
+   <td>Modification de l’ACL</td>
    <td><code>jcr:modifyAccessControl</code></td>
   </tr>
   <tr>
-   <td>Répliquer</td>
+   <td>Réplication</td>
    <td><code>crx:replicate</code></td>
   </tr>
  </tbody>

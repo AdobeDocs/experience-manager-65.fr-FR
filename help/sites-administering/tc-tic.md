@@ -14,13 +14,13 @@ exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 source-git-commit: 6dea3a23c70fdb5f07bdf724547e799776002c61
 workflow-type: tm+mt
 source-wordcount: '1553'
-ht-degree: 77%
+ht-degree: 99%
 
 ---
 
 # Configuration de la structure d’intégration de traduction{#configuring-the-translation-integration-framework}
 
-La structure d’intégration de traduction s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM.
+Le framework d’intégration de traduction s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM.
 
 * Connectez-vous à un fournisseur de services de traduction.
 * Créez une configuration de structure d’intégration de traduction.
@@ -31,7 +31,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 
 Créez une configuration de cloud qui connecte AEM à votre fournisseur de services de traduction. AEM permet d’établir par défaut une connexion à Microsoft Translator.
- Les fournisseurs de services de traduction ci-dessous fournissent une mise en œuvre de la nouvelle API pour les projets de traduction. Liens pour en savoir plus sur l’intégration :
+ Les fournisseurs de services de traduction ci-dessous fournissent une mise en œuvre de la nouvelle API pour les projets de traduction. Liens pour en savoir plus sur l’intégration :
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (partenaire Adobe Exchange Premier)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
@@ -66,9 +66,9 @@ Une fois que vous avez configuré une connexion, vous pouvez créer la configura
 
 Créez une configuration de structure d’intégration de traduction pour spécifier comment traduire le contenu. La configuration contient les informations suivantes :
 
-* Le fournisseur de service de traduction à utiliser.
-* Si une traduction humaine ou automatique doit être réalisée.
-* S’il est nécessaire de traduire un autre contenu associé à une page ou à une ressource, comme des balises.
+* Le fournisseur de service de traduction à utiliser
+* Si une traduction humaine ou automatique doit être réalisée
+* S’il est nécessaire de traduire un autre contenu associé à une page ou à une ressource, comme des balises
 
 Après avoir créé une configuration de structure, vous associez la configuration de cloud aux pages à traduire en fonction de la configuration. Une fois que la procédure de traduction a commencé, le processus de traduction se poursuit en fonction de la configuration de structure associée.
 
@@ -76,9 +76,9 @@ Si différentes parties de votre site web impliquent différentes exigences en m
 
 Une fois que vous avez configuré une structure d’intégration de traduction, vous pouvez l’[associer aux pages](/help/sites-administering/tc-prep.md) qui l’utilisent.
 
-**Remarque :** Pour un aperçu des fonctionnalités de traduction de contenu dans AEM, voir [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
+**Remarque :** pour consulter une présentation des fonctionnalités de traduction de contenu dans AEM, consultez la section [Traduction de contenu pour les sites multilingues](/help/sites-administering/translation.md).
 
-Une configuration unique de la structure contrôle la façon de traduire le contenu d’une page, le contenu d’une communauté et les ressources.
+Une configuration unique du framework contrôle la façon de traduire le contenu d’une page, le contenu d’une communauté et les ressources.
 ![chlimage_1-386](assets/translation-config-65.jpg)
 
 ### Propriétés de configuration des sites {#sites-configuration-properties}
@@ -93,9 +93,9 @@ Les propriétés des sites contrôlent la façon dont le contenu des pages est t
   </tr>
   <tr>
    <td>Workflow de traduction</td>
-   <td><p>Sélectionnez la méthode de traduction que la structure effectue pour le contenu du site :</p>
+   <td><p>Sélectionnez la méthode de traduction que le framework exécute pour le contenu du site :</p>
     <ul>
-     <li>Traduction automatique : Le fournisseur de traduction effectue la traduction à l’aide de la traduction automatique en temps réel.</li>
+     <li>Traduction automatique : le fournisseur de traduction effectue la traduction à l’aide de la traduction automatique en temps réel.</li>
      <li>Traduction humaine : le contenu est envoyé au fournisseur de services de traduction pour être traduit par des traducteurs. </li>
      <li>Ne pas traduire : le contenu n’est pas envoyé pour être traduit. Cela permet d’ignorer certaines parties du contenu qui n’ont pas besoin d’être traduites, mais dont le contenu pourrait devoir être mis à jour.</li>
     </ul> </td>
@@ -106,7 +106,7 @@ Les propriétés des sites contrôlent la façon dont le contenu des pages est t
   </tr>
   <tr>
    <td>Catégorie de contenu</td>
-   <td>(Traduction automatique uniquement) Catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
+   <td>(Traduction automatique uniquement) Une catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
   </tr>
   <tr>
    <td>Traduire les balises</td>
@@ -114,16 +114,16 @@ Les propriétés des sites contrôlent la façon dont le contenu des pages est t
   </tr>
   <tr>
    <td>Traduire les ressources de page</td>
-   <td><p>Sélectionnez le mode de traduction des ressources ajoutées aux composants à partir du système de fichiers ou référencées à partir d’Assets :</p>
+   <td><p>Sélectionnez le mode de traduction des ressources ajoutées aux composants à partir du système de fichiers ou référencées à partir d’Assets :</p>
     <ul>
-     <li>Ne pas traduire : Les ressources de page ne sont pas traduites.</li>
-     <li>Utilisation du processus de traduction de Sites : les ressources sont gérées en fonction des propriétés de configuration sur l’onglet Sites.</li>
-     <li>Utilisation du processus de traduction d’Assets : les ressources sont gérées en fonction des propriétés de configuration sur l’onglet Assets.</li>
+     <li>Ne pas traduire : les ressources de page ne sont pas traduites.</li>
+     <li>Utilisation du workflow de traduction de Sites : les ressources sont gérées en fonction des propriétés de configuration sur l’onglet Sites.</li>
+     <li>Utilisation du workflow de traduction d’Assets : les ressources sont gérées en fonction des propriétés de configuration sur l’onglet Assets.</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>Exécuter automatiquement la traduction</td>
-   <td>Sélectionnez cette option pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier et de définir la portée de la tâche de traduction.</td>
+   <td>Exécution automatique de la traduction</td>
+   <td>Sélectionnez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier et de définir la portée de la tâche de traduction.</td>
   </tr>
  </tbody>
 </table>
@@ -136,7 +136,7 @@ Les propriétés des communautés contrôlent la façon dont le contenu créé p
 |---|---|
 | Fournisseur de traduction | Sélectionnez le fournisseur de traduction pour effectuer la traduction. Le fournisseur pour lequel des configurations de cloud sont créées est répertorié dans la liste. |
 | Catégorie de contenu | Une catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions. |
-| Choisissez Un Paramètre Régional À Utiliser Comme Magasin De Partage Global | (Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue de votre choix. [langue de base](/help/communities/sites-console.md#translation) pour le site web. Si vous sélectionnez No Common Store (Pas de magasin commun), la traduction globale sera désactivée. Par défaut, la traduction globale est désactivée. |
+| Choix d’un paramètre régional à utiliser comme magasin de partage global | (Facultatif) Si vous sélectionnez un paramètre régional pour le stockage du contenu créé par l’utilisateur, les publications de toutes les copies de langue s’affichent dans une conversation globale. Par convention, choisissez la langue locale comme [langue de base](/help/communities/sites-console.md#translation) pour le site web. Si vous sélectionnez Pas de magasin commun, la traduction globale sera désactivée. Par défaut, la traduction internationale est désactivée. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
 
@@ -150,11 +150,11 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
   </tr>
   <tr>
    <td>Workflow de traduction</td>
-   <td><p>Sélectionnez le type de traduction que la structure effectue pour les ressources :</p>
+   <td><p>Sélectionnez le type de traduction que le framework exécute pour les ressources :</p>
     <ul>
-     <li>Traduction automatique : Le fournisseur de traduction effectue immédiatement la traduction à l’aide de la traduction automatique.</li>
+     <li>Traduction automatique : le fournisseur de traduction effectue immédiatement la traduction à l’aide de la traduction automatique.</li>
      <li>Traduction humaine : le contenu est envoyé automatiquement au fournisseur de services de traduction pour être traduit manuellement. </li>
-     <li>Ne pas traduire : Les ressources ne sont pas envoyées pour traduction.</li>
+     <li>Ne pas traduire : les ressources ne sont pas envoyées pour être traduites.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -163,7 +163,7 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
   </tr>
   <tr>
    <td>Catégorie de contenu</td>
-   <td>(Traduction automatique uniquement) Catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
+   <td>(Traduction automatique uniquement) Une catégorie qui décrit le contenu que vous traduisez. Lors de la traduction du contenu, la catégorie peut affecter le choix de la terminologie et des expressions.</td>
   </tr>
   <tr>
    <td>Traduire les ressources</td>
@@ -175,11 +175,11 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
   </tr>
   <tr>
    <td>Traduire les balises</td>
-   <td>Sélectionnez cette option pour traduire les balises associées à la ressource.</td>
+   <td>Activez cette propriété pour traduire les balises associées à la ressource.</td>
   </tr>
   <tr>
-   <td>Exécuter automatiquement la traduction</td>
-   <td>Sélectionnez cette option pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction.</td>
+   <td>Exécution automatique de la traduction</td>
+   <td>Sélectionnez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction.</td>
   </tr>
  </tbody>
 </table>
@@ -202,11 +202,11 @@ Pour configurer la traduction des pages sources dans d’autres langues, associe
 
 Notez que la configuration de cloud de la structure d’intégration de traduction identifie la configuration de cloud à utiliser pour la connexion au fournisseur de services. Lorsque vous associez une page source à une configuration de cloud de la structure, la page doit être associée à la configuration de cloud du fournisseur de services utilisé par la configuration de cloud de la structure.
 
-Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous associez la page /content/geometrixx/en/products à une structure d’intégration de traduction, la page Produits et toutes les pages situées dessous sont traduites en fonction de la structure.
+Lorsque vous associez une page à une configuration de cloud, les descendants de la page héritent de l’association. Par exemple, si vous associez la page /content/geometrixx/en/products à un framework d’intégration de traduction, la page Produits et toutes les pages en dessous sont converties en fonction du framework.
 
 Lorsque cela est nécessaire, vous pouvez remplacer l’association dans une page descendante. Par exemple, le contenu d’un site web concerne principalement l’habillement. Cependant, une branche des pages décrit l’entreprise. La page principale du site est associée à une structure d’intégration de traduction qui spécifie la traduction automatique à l’aide de la catégorie Habillement. La branche qui décrit l’entreprise utilise une structure qui effectue une traduction automatique à l’aide la catégorie Général.
 
-En outre, pour toutes les communautés [Composants SCF](/help/communities/scf.md) sur les pages, le contenu généré par l’utilisateur inclut la possibilité pour les utilisateurs de traduire le contenu. Pour plus d’informations, voir [Traduction de contenu généré par l’utilisateur](/help/communities/translate-ugc.md).
+En outre, pour les [Composants SCF](/help/communities/scf.md) des communautés dans les pages, le contenu créé par l’utilisateur inclut la possibilité pour les utilisateurs de traduire le contenu. Pour plus d’informations, consultez la section [Traduction de contenu créé par l’utilisateur](/help/communities/translate-ugc.md).
 
 ### Association d’une page à un fournisseur de traduction {#associating-a-page-with-a-translation-provider}
 
@@ -219,7 +219,7 @@ Associez une page au fournisseur de traduction que vous utilisez pour traduire l
 
 ### Association des pages à une structure d’intégration de traduction {#associating-pages-with-a-translation-integration-framework}
 
-Associez une page à la structure d’intégration de traduction qui définit la façon dont vous souhaitez effectuer la traduction de la page et des pages descendantes.
+Associez une page au framework d’intégration de traduction qui définit la façon dont vous souhaitez effectuer la traduction de la page et des pages descendantes.
 
 1. Dans la console Sites, sélectionnez la page à configurer et cliquez ou appuyez sur Afficher les propriétés.
 1. Cliquez ou appuyez sur Modifier, puis cliquez ou appuyez sur l’onglet Services cloud.

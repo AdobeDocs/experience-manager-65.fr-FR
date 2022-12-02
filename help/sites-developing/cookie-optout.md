@@ -13,7 +13,7 @@ exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,9 +34,9 @@ Pour configurer le service, vous pouvez utiliser la [console Web](/help/sites-de
 
 | Nom de propriété (console Web) | Nom de propriété OSGi | Description |
 |---|---|---|
-| Cookies d’exclusion | optout.cookies | Les noms des cookies qui indiquent, lorsqu’ils sont présents sur l’appareil de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
-| En-têtes HTTP d’exclusion | optout.headers | Les noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à l’utilisation de cookies. |
-| Cookies de liste blanche | optout.whitelist.cookies | Liste des cookies qui sont essentiels au fonctionnement du site web et qui peuvent être utilisés sans le consentement de l’utilisateur. |
+| Cookies de droit d’opposition | optout.cookies | Les noms des cookies qui indiquent, lorsqu’ils sont présents sur l’appareil de l’utilisateur, que celui-ci n’a pas consenti à utiliser les cookies. |
+| En-têtes HTTP de droit d’opposition | optout.headers | Les noms des en-têtes HTTP qui indiquent, lorsqu’ils sont présents, que l’utilisateur n’a pas consenti à l’utilisation de cookies. |
+| Cookies de liste autorisée | optout.whitelist.cookies | Liste des cookies qui sont essentiels au fonctionnement du site Web et qui peuvent être utilisés sans le consentement de l’utilisateur. |
 
 ## Validation de l’utilisation de cookies {#validating-cookie-usage}
 
@@ -74,7 +74,7 @@ Renvoie les noms des cookies qui indiquent, lorsqu’ils sont présents, que l�
 
 **Paramètres**
 
-Aucune.
+Aucun.
 
 **Renvoie**
 
@@ -86,7 +86,7 @@ Renvoie les noms des cookies qui peuvent être utilisés indépendamment de l’
 
 **Paramètres**
 
-Aucune.
+Aucun.
 
 **Renvoie**
 
@@ -98,7 +98,7 @@ Détermine si le navigateur de l’utilisateur contient des cookies qui indiquen
 
 **Paramètres**
 
-Aucune.
+Aucun.
 
 **Renvoie**
 
@@ -114,4 +114,4 @@ Détermine si un cookie spécifique peut être utilisé dans le navigateur de l�
 
 **Renvoie**
 
-Une valeur booléenne de `true` if `cookieName` peut être utilisé ou une valeur de `false` if `cookieName` ne peut pas être utilisé.
+Valeur booléenne `true` si `cookieName` peut être utilisé et valeur `false` si `cookieName` ne peut pas l’être.

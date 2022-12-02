@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
 exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -29,8 +29,8 @@ Pour récupérer des données, il est toujours plus simple de naviguer dans le r
 
 ## Limiter la portée de l’observation JCR {#restrict-the-scope-of-jcr-observation}
 
-Lors de l’écoute des événements dans le référentiel, il est important de réduire la portée autant que possible. Par exemple, il est préférable d’écouter un événement à l’adresse `/etc/mycompany` que d&#39;écouter à `/etc`. N’écoutez jamais les événements à la racine du référentiel. En outre, assurez-vous que les méthodes de rappel s’exécutent aussi rapidement que possible quand il n’y a pas de requêtes.
+Lors de l’écoute des événements dans le référentiel, il est important de réduire la portée autant que possible. Par exemple, il est préférable d’écouter un événement au niveau `/etc/mycompany` plutôt que `/etc`. N’écoutez jamais les événements à la racine du référentiel. En outre, assurez-vous que les méthodes de rappel s’exécutent aussi rapidement que possible quand il n’y a pas de requêtes.
 
-## Éliminer l’utilisation de l’accès administrateur JCR {#eliminate-use-of-jcr-admin-access}
+## Élimination de l’utilisation de l’accès administrateur JCR {#eliminate-use-of-jcr-admin-access}
 
-Depuis la version AEM 6, la connexion à l’administration a été abandonnée, de même que l’obtention d’une session administrative à partir de ResourceResolverFactory. Au contraire, les comptes de service doivent être créés pour les opérations de back-office qui nécessiteraient ce type d’accès, et ResourceResolverFactory peut être utilisé pour obtenir un ResourceResolver pour ce compte.
+Depuis la version AEM 6. la connexion à l’administration a été abandonnée, de même que l’obtention d’une session administrative à partir de ResourceResolverFactory. Au contraire, les comptes de service doivent être créés pour les opérations de back-office qui nécessiteraient ce type d’accès, et ResourceResolverFactory peut être utilisé pour obtenir un ResourceResolver pour ce compte.

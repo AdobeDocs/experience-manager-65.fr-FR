@@ -23,6 +23,6 @@ La communauté AEM a écrit une série d’articles sur les intégrations de Mar
 
 Voici la liste des éléments disponibles :
 
-* [Utilisation des règles d’activation sur les pages Web Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/using/dtm.html)
-* [Intégration d’AEM à Adobe Analytics et Target avec DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html)
-* [Intégration d’Adobe Experience Manager et d’Adobe Campaign Standard pour créer des bulletins d’information](https://helpx.adobe.com/fr/experience-manager/using/aem_campaign.html)
+* [Utilisation des règles d’activation sur les pages web Adobe Experience Manager](https://helpx.adobe.com/fr/experience-manager/using/dtm.html)
+* [Intégration d’AEM à Adobe Analytics et Target avec DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html)
+* [Intégration d’Adobe Experience Manager et d’Adobe Campaign Standard pour créer des newsletters](https://helpx.adobe.com/fr/experience-manager/using/aem_campaign.html)

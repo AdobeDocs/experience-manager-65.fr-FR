@@ -1,7 +1,7 @@
 ---
-title: Meilleures pratiques en matière de workflow
+title: Bonnes pratiques en matière de workflow
 seo-title: Workflow Best Practices
-description: Meilleures pratiques en matière de workflow
+description: Bonnes pratiques en matière de workflow
 seo-description: null
 uuid: 79be4055-c2ef-428e-9054-103c6cfde1d2
 contentOwner: User
@@ -13,13 +13,13 @@ exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1920'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Meilleures pratiques en matière de workflow{#workflow-best-practices}
+# Bonnes pratiques en matière de workflow{#workflow-best-practices}
 
-Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM).
+Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM). 
 
 Ils représentent généralement une bonne partie du traitement effectué dans un environnement AEM. Par conséquent, lorsque des étapes de workflow personnalisées ne sont pas écrites conformément aux meilleures pratiques ou lorsque des workflows standard (prêts à l’emploi) ne sont pas configurés pour s’exécuter le plus efficacement possible, cela peut avoir une incidence sur le système.
 
@@ -58,17 +58,17 @@ Si les workflows en cours d’exécution consomment de nombreuses ressources sys
 
 Pour remédier à ce problème, Adobe recommande de configurer le **nombre maximal de tâches en parallèle** sur une valeur comprise entre 50 % et 75 % du nombre de cœurs de processeur du système. Cela devrait laisser suffisamment de capacité de réaction au système lors du traitement de ces workflows.
 
-Pour configurer **Tâches parallèles maximales**, vous pouvez effectuer l’une des opérations suivantes :
+Pour configurer la valeur **Nombre maximal de tâches en parallèle**, vous pouvez effectuer l’une des opérations suivantes :
 
-* Configurez la variable **[Configuration OSGi](/help/sites-deploying/configuring-osgi.md)** à partir de la console Web AEM ; pour **File d’attente : File d’attente des workflows Granite** (un **Configuration de la file d’attente des tâches Apache Sling**).
+* Définissez la **[Configuration OSGi](/help/sites-deploying/configuring-osgi.md)** à partir de la console web AEM ; pour **File d’attente : file d’attente du workflow Granite** (une **Configuration de la file d’attente des tâches Apache Sling**).
 
-* Configurez la file d’attente à partir du **Tâches Sling** de la console Web AEM ; pour **Configuration de la file d’attente des tâches : File d’attente des workflows Granite**, à `http://localhost:4502/system/console/slingevent`.
+* Configurez la file d’attente à partir de l’option **Tâches Sling** de la console web AEM ; pour la **Configuration de la file d’attente des tâches : file d’attente du workflow Granite**, à l’adresse `http://localhost:4502/system/console/slingevent`.
 
-En outre, il existe une configuration distincte pour la variable **File d’attente des tâches du processus externe de workflow Granite**. Elle est utilisée pour les processus de workflow qui lancent des fichiers binaires externes, tels que **InDesign Server** ou **Image Magick**.
+Il existe, en outre, une configuration distincte pour la **File d’attente des tâches de processus externes du workflow Granite**. Elle est utilisée pour les processus de workflow qui lancent des fichiers binaires externes, tels que **InDesign Server** ou **Image Magick**.
 
 ### Configuration de différentes files d’attente de tâches {#configure-individual-job-queues}
 
-Dans certains cas, il peut être utile de configurer différentes files d’attente pour contrôler des threads simultanés, ou d’autres options de file d’attente, sur la base d’une tâche individuelle. Vous pouvez ajouter et configurer une file d’attente distincte à partir de la console web via la fabrique **Configuration de la file d’attente de tâches Apache Sling**. Pour trouver la rubrique appropriée à répertorier, exécutez le modèle de votre workflow et recherchez-la dans le **Tâches Sling** console; par exemple, à l’adresse `http://localhost:4502/system/console/slingevent`.
+Dans certains cas, il peut être utile de configurer différentes files d’attente pour contrôler des threads simultanés, ou d’autres options de file d’attente, sur la base d’une tâche individuelle. Vous pouvez ajouter et configurer une file d’attente distincte à partir de la console web via la fabrique **Configuration de la file d’attente de tâches Apache Sling**. Pour localiser la rubrique appropriée à répertorier, exécutez le modèle du workflow et recherchez-le dans la console **Tâches Sling** ; par exemple, à l’adresse `http://localhost:4502/system/console/slingevent`.
 
 Des files d’attente individuelles peuvent également être ajoutées pour les workflows transitoires.
 
@@ -92,7 +92,7 @@ Les définitions de modèles de workflow, lanceurs, scripts et notifications son
 
 >[!NOTE]
 >
->Voir aussi [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Consultez également la section [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 #### Emplacements – Modèles de workflow {#locations-workflow-models}
 
@@ -107,7 +107,7 @@ Les modèles de workflow sont stockés dans le référentiel en fonction de leur
    >Veuillez ne pas :
    >
    >* placer vos modèles de workflow personnalisés dans ce dossier,
-   >* modifier tout élément dans `/libs`
+   >* modifier des éléments dans `/libs`,
 
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
@@ -143,7 +143,7 @@ Les définitions du lanceur de workflow sont également stockées dans le réfé
    >Veuillez ne pas :
    >
    >* placer vos lanceurs de workflow personnalisés dans ce dossier,
-   >* modifier tout élément dans `/libs`
+   >* modifier des éléments dans `/libs`,
 
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
@@ -175,7 +175,7 @@ Les scripts de workflow sont également stockés dans le référentiel en foncti
    >Veuillez ne pas :
    >
    >* placer vos scripts de workflow personnalisés dans ce dossier,
-   >* modifier tout élément dans `/libs`
+   >* modifier des éléments dans `/libs`,
 
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
@@ -203,7 +203,7 @@ Les notifications de workflow sont également stockées dans le référentiel en
    >Veuillez ne pas :
    >
    >* placer vos définitions de notification de workflow personnalisées dans ce dossier,
-   >* modifier tout élément dans `/libs`
+   >* modifier des éléments dans `/libs`,
 
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
@@ -249,8 +249,8 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Enregistrement d’une session :
 
-* Dans un processus de workflow, si la variable `WorkflowSession` est utilisé pour modifier le référentiel, puis ne pas enregistrer explicitement la session ; le workflow enregistre la session une fois qu’elle est terminée.
-* `Session.Save` ne doit pas être appelé depuis une étape de workflow :
+* Dans un processus de workflow, si `WorkflowSession` est utilisé pour modifier le référentiel, n’enregistrez pas explicitement la session ; le workflow s’en chargera une fois l’opération terminée.
+* `Session.Save` ne doit pas être appelé depuis l’intérieur d’une étape de workflow :
 
    * Il est recommandé d’adapter la session JCR du workflow ; une opération `save` n’est donc pas nécessaire, car le moteur de workflow enregistre automatiquement la session une fois l’exécution du workflow terminée.
    * Il est déconseillé qu’une étape du processus crée sa propre session JCR.
@@ -276,7 +276,7 @@ Compte tenu de l’incidence de ces lanceurs sur le comportement des workflows, 
 
 ### Améliorations de la configuration pour les lanceurs {#configuration-enhancements-for-launchers}
 
-La variable [configuration du lanceur](/help/sites-administering/workflows-starting.md#workflows-launchers) a été amélioré afin de prendre en charge les éléments suivants :
+La [configuration de lanceur](/help/sites-administering/workflows-starting.md#workflows-launchers) personnalisée a été améliorée afin de prendre en charge les éléments suivants :
 
 * Plusieurs conditions liées par l’opérateur « AND ».
 * Conditions « OR » au sein d’une seule condition.
@@ -301,7 +301,7 @@ Il est recommandé d’utiliser l’avance du gestionnaire, car elle offre les m
 
 Vous pouvez définir des [phases de processus](/help/sites-developing/workflows.md#workflow-stages), puis affecter des tâches/étapes à une phase spécifique.
 
-Ces informations sont utilisées pour afficher la progression d’un workflow lorsque vous cliquez sur l’onglet [**Informations du processus** d’un élément de travail dans la **Boîte de réception**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Les modèles de workflow existants peuvent être modifiés pour ajouter des phases.
+Ces informations sont utilisées pour afficher la progression d’un workflow lorsque vous cliquez sur l’onglet [**Informations sur le workflow** d’un élément de travail dans la **Boîte de réception**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). Les modèles de workflow existants peuvent être modifiés pour ajouter des phases.
 
 ### Étape Activer le processus de page {#activate-page-process-step}
 
@@ -320,11 +320,11 @@ Lors de la mise à niveau de votre instance :
 
 >[!NOTE]
 >
->Voir aussi [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md).
+>Consultez également la section [Restructuration du référentiel dans AEM 6.5](/help/sites-deploying/repository-restructuring.md).
 
 ## Outils système {#system-tools}
 
-De nombreux outils système disponibles pour faciliter la surveillance, la gestion et le dépannage des workflows. Tous les exemples d’URL ci-dessous utilisent `localhost:4502`, mais doit être disponible sur n’importe quelle instance d’auteur ( `<hostname>:<port>`).
+De nombreux outils système disponibles pour faciliter la surveillance, la gestion et le dépannage des workflows. Tous les exemples d’URL ci-dessous utilisent `localhost:4502`. Cependant, ces URL doivent être disponibles sur toute instance de création (`<hostname>:<port>`).
 
 ### Console de gestion des tâches Sling {#sling-job-handling-console}
 
@@ -347,7 +347,7 @@ Le MBean de maintenance des workflows expose plusieurs routines de maintenance b
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations, voir :
+Pour plus d’informations, consultez :
 
 * [Utilisation des workflows](/help/sites-authoring/workflows.md)
 * [Administration des workflows](/help/sites-administering/workflows.md)

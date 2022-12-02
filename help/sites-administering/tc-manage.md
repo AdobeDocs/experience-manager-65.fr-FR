@@ -14,7 +14,7 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3442'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Après avoir préparé le contenu à traduire, vous devez compléter la structur
 
 Les projets de traduction permettent de gérer la traduction du contenu d’AEM. Un projet de traduction est un type de [projet](/help/sites-authoring/projects.md) AEM, qui contient des ressources à traduire dans d’autres langues. Ces ressources sont les pages et les actifs des [copies de langue](/help/sites-administering/tc-prep.md) créées à partir du gabarit de langue.
 
-Lorsque des ressources sont ajoutées à un projet de traduction, une tâche de traduction est créée pour ces ressources. Les tâches comportent les commandes et les informations sur le statut utilisées pour gérer les processus de traduction humaine et automatique exécutés sur les ressources.
+Lorsque des ressources sont ajoutées à un projet de traduction, une tâche de traduction est créée pour ces ressources. Les tâches comportent les commandes et les informations sur le statut utilisées pour gérer les workflows de traduction humaine et automatique exécutés sur les ressources.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Lorsque des ressources sont ajoutées à un projet de traduction, une tâche de 
 
 Les projets de traduction sont des éléments dont l’exécution est longue, définis par langue et par méthode/fournisseur de traduction afin d’être en phase avec la gouvernance organisationnelle en matière d’internationalisation. Ils doivent être lancés en une seule fois, lors de la traduction initiale ou manuellement, et restent actifs pendant toute la durée des activités de mise à jour du contenu et de la traduction.
 
-Les projets et les tâches de traduction sont créés avec des processus de préparation de la traduction. Ces processus possèdent trois options pour la traduction initiale (Créer et traduire) et les mises à jour (Mettre à jour une traduction) :
+Les projets et les tâches de traduction sont créés avec des processus de préparation de la traduction. Ces workflows possèdent trois options pour la traduction initiale (Créer et traduire) comme pour les mises à jour (Mettre à jour une traduction) :
 
 1. [Créer un projet](#creating-translation-projects-using-the-references-panel)
 1. [Ajouter à un projet existant](#adding-pages-to-a-translation-project)
@@ -54,8 +54,8 @@ AEM détecte si un projet de traduction est créé pour la traduction initiale d
 
 Par exemple, la racine de la langue /content/geometrixx/fr est créée pour la traduction française de la langue principale /content/geometrixx/en. Il n’y a pas d’autres pages dans la copie de langue française.
 
-* Un projet de traduction est créé pour la page /content/geometrixx/en/products et toutes les pages enfants, ciblant la copie de langue française. Comme la copie de langue n’inclut pas la page /content/geometrixx/fr/products, AEM copie immédiatement la page /content/geometrixx/en/products et toutes les pages enfants dans la copie de langue française. Les copies sont également incluses dans le projet de traduction.
-* Un projet de traduction est créé pour la page /content/geometrixx/en et toutes les pages enfants, ciblant la copie en français. Comme la copie de langue inclut la page qui correspond à la page /content/geometrixx/en (la racine de langue), AEM copie la page /content/geometrixx/en et toutes les pages enfants et les ajoute à un lancement. Les copies sont également incluses dans le projet de traduction.
+* Un projet de traduction est créé pour la page /content/geometrixx/en/products et toutes les pages enfants, ciblant la copie de langue française. Comme la copie de langue ne comprend pas la page /content/geometrixx/fr/products, AEM copie immédiatement la page /content/geometrixx/en/products et toutes les pages enfants dans la copie de langue en français. Les copies sont également incluses dans le projet de traduction.
+* Un projet de traduction est créé pour la page /content/geometrixx/en et toutes les pages enfants, ciblant la copie de langue en français. Comme la copie de langue comprend la page correspondant à la page /content/geometrixx/en (racine de langue), AEM copie la page /content/geometrixx/en et toutes les pages enfants et les ajoute à un lancement. Les copies sont également incluses dans le projet de traduction.
 
 ## Création de projets de traduction à l’aide du panneau Références {#creating-translation-projects-using-the-references-panel}
 
@@ -97,7 +97,7 @@ Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promot
 1. Cliquez ou appuyez sur Créer et traduire, puis configurez la tâche de traduction :
 
    * Utilisez la liste déroulante Langues pour sélectionner une copie de langue à traduire. Sélectionnez d’autres langues, au besoin. Les langues qui figurent dans la liste correspondent aux [racines de langue que vous avez créées](/help/sites-administering/tc-prep.md#creating-a-language-root).
-   * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez Sélectionner toutes les pages secondaires. Pour ne traduire que la page sélectionnée, désélectionnez cette option.
+   * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
    * Pour le projet, sélectionnez Créer un projet de traduction.
    * Saisissez le nom du projet.
 
@@ -118,7 +118,7 @@ Après la traduction, vous pouvez [réviser la traduction](#reviewing-and-promot
 1. Sélectionnez Copies de langue, puis sélectionnez les copies de langue pour lesquelles vous traduisez les pages source.
 1. Cliquez ou appuyez sur Mettre à jour des copies de langue, puis configurez la tâche de traduction :
 
-   * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez Sélectionner toutes les pages secondaires. Pour ne traduire que la page sélectionnée, désélectionnez cette option.
+   * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
    * Pour le projet, sélectionnez Créer un projet de traduction.
    * Saisissez le nom du projet.
 
@@ -148,7 +148,7 @@ Comme lors de la création d’un projet, lorsque vous ajoutez des pages, des co
 
 1. Cliquez ou appuyez sur Mettre à jour les copies de langue, puis configurez les propriétés :
 
-   * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez Sélectionner toutes les pages secondaires. Pour ne traduire que la page sélectionnée, désélectionnez cette option.
+   * Pour traduire la page sélectionnée et toutes les pages enfant, sélectionnez « Sélectionner toutes les pages secondaires ». Pour ne traduire que la page sélectionnée, désélectionnez cette option.
    * Pour le projet, sélectionnez Ajouter à un projet de traduction existant.
    * Sélectionnez le projet.
 
@@ -162,7 +162,7 @@ Comme lors de la création d’un projet, lorsque vous ajoutez des pages, des co
 
 ## Ajout de pages/ressources à une tâche de traduction {#adding-pages-assets-to-a-translation-job}
 
-Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires d’internationalisation (i18n) à la tâche de traduction de votre projet de traduction. Pour ajouter des pages ou des ressources :
+Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires d’internationalisation (i18n) à la tâche de traduction de votre projet de traduction. Pour ajouter des pages ou des ressources, procédez comme suit :
 
 1. Dans la partie inférieure de la mosaïque Tâche de traduction du projet de traduction, cliquez ou appuyez sur le bouton de sélection.
 
@@ -190,7 +190,7 @@ Vous pouvez ajouter des pages, des ressources, des balises ou des dictionnaires 
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Cliquez ou appuyez Ajouter un dictionnaire d’internationalisation.
+1. Cliquez ou appuyez sur Ajouter un dictionnaire I18N.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
@@ -204,7 +204,7 @@ Le dictionnaire se trouve maintenant dans la tâche de traduction.
 
 >[!NOTE]
 >
->Pour plus d’informations sur les dictionnaires i18n, reportez-vous à la section [Utilisation du traducteur pour gérer les dictionnaires](/help/sites-developing/i18n-translator.md).
+>Pour plus d’informations sur les dictionnaires i18N, consultez [Utilisation du traducteur pour gérer des dictionnaires](/help/sites-developing/i18n-translator.md).
 
 ## Ajout de balises à une tâche de traduction {#adding-tags-to-a-translation-job}
 
@@ -252,8 +252,8 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 | État | Description |
 |---|---|
 | Brouillon | La tâche de traduction n’a pas été démarrée. Lors de leur création, les tâches de traduction présentent le statut BROUILLON. |
-| Envoyé | Les fichiers de la tâche de traduction ont ce statut lorsqu’ils ont été correctement envoyés au service de traduction. Cet état peut se produire après l’exécution de la commande Portée de la requête ou Démarrer . |
-| Demander la portée | Pour le processus de traduction humaine, les fichiers de la tâche ont été envoyés au fournisseur de traduction pour la définition de la portée. Ce statut est défini après l’exécution de la commande Demander la portée. |
+| Envoyé | Les fichiers de la tâche de traduction ont ce statut lorsqu’ils ont été correctement envoyés au service de traduction. Ce statut est défini après l’exécution de la commande Demander la portée ou Commencer. |
+| Demander la portée | Pour le workflow de traduction humaine, les fichiers de la tâche ont été soumis au fournisseur de traduction pour la définition de la portée. Ce statut est défini après l’exécution de la commande Demander la portée. |
 | Portée terminée | Le fournisseur a défini la portée de la tâche de traduction. |
 | Engagé pour traduction | Le propriétaire du projet a accepté la portée. Ce statut indique que le fournisseur de traduction doit commencer à traduire les fichiers de la tâche. |
 | Traduction en cours | Pour une tâche, la traduction d’un ou plusieurs fichiers de la tâche n’est pas encore terminée. Pour un élément de la tâche, l’élément est en cours de traduction. |
@@ -262,7 +262,7 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 | Terminé | Le propriétaire du projet a indiqué que le contrat de traduction était terminé. |
 | Annuler | Indique que le fournisseur de traduction doit arrêter de travailler sur une tâche de traduction. |
 | Erreur de mise à jour | Une erreur s’est produite lors du transfert de fichiers entre AEM et le service de traduction. |
-| État indéterminé | Une erreur inconnue est survenue. |
+| Statut indéterminé | Une erreur inconnue est survenue. |
 
 Pour afficher le statut des différents fichiers de la tâche, cliquez ou appuyez sur le bouton de sélection de la mosaïque.
 
@@ -307,7 +307,7 @@ Pour plus d’informations sur les résultats de la définition de la portée, c
 >
 >La définition de la portée est facultative. Vous pouvez commencer une tâche de traduction sans définir la portée.
 
-Lorsque vous définissez l’étendue d’une tâche de traduction, l’état de la tâche est `Scope Requested`. Lorsque le fournisseur de traduction renvoie la portée, l’état est remplacé par `Scope Completed`. Lorsque la définition de la portée est terminée, vous pouvez utiliser la commande Afficher la portée pour consulter les résultats de la définition de la portée.
+Lorsque vous définissez la portée d’une tâche de traduction, le statut de la tâche est `Scope Requested`. Lorsque le fournisseur de traduction renvoie la définition de la portée, le statut devient `Scope Completed`. Lorsque la définition de la portée est terminée, vous pouvez utiliser la commande Afficher la portée pour consulter les résultats de la définition de la portée.
 
 La définition de la portée ne fonctionne correctement que lorsque le fournisseur de traduction auquel vous faites appel prend en charge cette fonctionnalité.
 
@@ -335,7 +335,7 @@ Une fois que vous avez commencé la tâche de traduction, la mosaïque Tâche de
 
 ## Annulation d’une tâche de traduction {#canceling-a-translation-job}
 
-Annulez une tâche de traduction pour suspendre le processus de traduction et empêcher le fournisseur de traduction d’effectuer d’autres traductions. Vous pouvez annuler une tâche lorsque la tâche a la propriété `Committed For Translation` ou `Translation In Progress` statut.
+Annulez une tâche de traduction pour suspendre le processus de traduction et empêcher le fournisseur de traduction d’effectuer d’autres traductions. Vous pouvez annuler une tâche lorsque la tâche dispose du statut `Committed For Translation` ou `Translation In Progress`.
 
 1. Dans la console Projets, ouvrez le projet de traduction.
 1. Sur la mosaïque Tâche de traduction, cliquez ou appuyez sur le menu Commandes, puis cliquez ou appuyez sur Annuler.
@@ -379,7 +379,7 @@ Pour comparer des copies de langue au gabarit de langue :
 1. Dans la console **Sites**, accédez à la copie de langue à comparer.
 1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)**.
 1. Sous le titre **Copies**, sélectionnez **Copies de langue**.
-1. Sélectionnez votre copie de langue spécifique, puis cliquez sur **Comparer au Principal **ou **Comparer au précédent **, le cas échéant.
+1. Sélectionnez votre copie de langue. Ensuite, vous pouvez cliquer sur **Comparer au gabarit** ou **Comparer au précédent**, le cas échéant.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -389,7 +389,7 @@ Pour comparer des copies de langue au gabarit de langue :
 
 ## Fin et archivage des tâches de traduction {#completing-and-archiving-translation-jobs}
 
-Effectuez une tâche de traduction après avoir révisé les fichiers traduits du fournisseur. Pour les processus de traduction humaine, la réalisation d’une traduction indique au fournisseur que le contrat de traduction est terminé et qu’il doit enregistrer la traduction dans sa mémoire de traduction.
+Terminez une tâche de traduction après avoir révisé les fichiers traduits du fournisseur. Pour les processus de traduction humaine, la réalisation d’une traduction indique au fournisseur que le contrat de traduction est terminé et qu’il doit enregistrer la traduction dans sa mémoire de traduction.
 
 Une fois que vous avez terminé la tâche, elle possède le statut Terminé.
 
