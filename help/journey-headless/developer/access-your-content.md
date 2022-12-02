@@ -3,8 +3,8 @@ title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
-source-wordcount: '1342'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
