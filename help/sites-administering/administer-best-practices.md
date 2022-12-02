@@ -11,8 +11,8 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '524'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -34,7 +34,7 @@ Pour connaître les bonnes pratiques concernant la création, le déploiement et
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## Ressources {#assets}
+## Assets {#assets}
 
 Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic Media et son intégration, sont décrites dans les rubriques suivantes :
 
