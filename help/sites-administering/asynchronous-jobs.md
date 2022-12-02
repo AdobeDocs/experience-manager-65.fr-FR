@@ -3,7 +3,7 @@ title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '891'
 ht-degree: 100%
 
