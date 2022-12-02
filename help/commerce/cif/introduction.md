@@ -4,7 +4,7 @@ description: Présentation et aperçu de Content and Commerce. Experience Manage
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '870'
 ht-degree: 100%
 
