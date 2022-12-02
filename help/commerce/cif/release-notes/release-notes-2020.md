@@ -3,7 +3,7 @@ title: Notes de mise à jour d’AEM Content and Commerce 2021
 description: Notes de mise à jour d’AEM Content and Commerce 2021
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1328'
 ht-degree: 100%
 
@@ -208,8 +208,8 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
 | Connecteur CIF | 0.9.0 | [Notes de mise à jour](https://github.com/adobe/commerce-cif-connector/releases) |
-| Composants principaux CIF | 0,9.0 | [Notes de mise à jour](https://github.com/adobe/aem-core-cif-components/releases) |
-| Archétype CIF | 0,9.0 | [Notes de mise à jour](https://github.com/adobe/aem-cif-project-archetype/releases) |
+| Composants principaux CIF | 0.9.0 | [Notes de mise à jour](https://github.com/adobe/aem-core-cif-components/releases) |
+| Archétype CIF | 0.9.0 | [Notes de mise à jour](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Nouveautés {#what-is-new-february}
 
@@ -234,7 +234,7 @@ Il s’agit de la première version des composants principaux CIF qui soit prise
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
 | Connecteur CIF | 0.8.0 | [Notes de mise à jour](https://github.com/adobe/commerce-cif-connector/releases) |
-| Composants principaux CIF | 0,8.0 | [Notes de mise à jour](https://github.com/adobe/aem-core-cif-components/releases) |
+| Composants principaux CIF | 0.8.0 | [Notes de mise à jour](https://github.com/adobe/aem-core-cif-components/releases) |
 | Archétype CIF | 0.7.0 | [Notes de mise à jour](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### Nouveautés {#what-is-new-january}
