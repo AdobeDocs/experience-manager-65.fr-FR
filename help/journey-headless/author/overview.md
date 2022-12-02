@@ -3,7 +3,7 @@ title: Parcours de création de contenu découplé AEM
 description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, ses capacités et comment créer du contenu dans votre projet.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '849'
 ht-degree: 100%
 
