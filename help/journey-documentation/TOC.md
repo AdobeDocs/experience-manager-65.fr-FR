@@ -6,7 +6,7 @@ user-guide-description: Les parcours de documentation fournissent une structure 
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
 ht-degree: 100%
 
@@ -55,10 +55,10 @@ Please note that all links to other guides need to be absolute references with l
       + [En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html?lang=fr)
       + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html?lang=fr)
    + Parcours de traduction découplée {#translation}
-      + [Comprendre la traduction découplée dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html)
-      + [Prise en main de la traduction découplée dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html)
-      + [En savoir sur le contenu découplé et comment le traduire dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/learn-about.html)
-      + [Configuration du connecteur de traduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/configure-connector.html)
-      + [Configuration des règles de traduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translation-rules.html)
-      + [Traduction du contenu](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translate-content.html)
-      + [Publication du contenu traduit](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/publish-content.html)
+      + [Comprendre la traduction découplée dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html?lang=fr)
+      + [Prise en main de la traduction découplée dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html?lang=fr)
+      + [En savoir sur le contenu découplé et comment le traduire dans AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/learn-about.html?lang=fr)
+      + [Configuration du connecteur de traduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/configure-connector.html?lang=fr)
+      + [Configuration des règles de traduction](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translation-rules.html?lang=fr)
+      + [Traduction du contenu](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translate-content.html?lang=fr)
+      + [Publication du contenu traduit](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/publish-content.html?lang=fr)
