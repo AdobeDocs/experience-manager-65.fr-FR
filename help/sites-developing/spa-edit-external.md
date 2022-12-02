@@ -3,8 +3,8 @@ title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
 source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
-workflow-type: tm+mt
-source-wordcount: '2392'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
