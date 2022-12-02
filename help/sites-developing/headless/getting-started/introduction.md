@@ -3,7 +3,7 @@ title: Guide de prise en main du mode découplé
 description: Grâce à ce guide de démarrage rapide, découvrez les fondamentaux des puissantes fonctionnalités d’AEM 6.5 en mode découplé comme les modèles de contenu, les fragments de contenu et l’API GraphQL.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
 source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '301'
 ht-degree: 100%
 
