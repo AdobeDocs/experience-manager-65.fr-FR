@@ -6,8 +6,8 @@ role: Admin, Developer
 feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: tm+mt
-source-wordcount: '2429'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
