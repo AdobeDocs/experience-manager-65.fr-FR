@@ -3,7 +3,7 @@ title: Intégration d’AEM et de Commerce à l’aide de Commerce Integration F
 description: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
 source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
 ht-degree: 100%
 
