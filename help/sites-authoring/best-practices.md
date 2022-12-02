@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Pour connaître les bonnes pratiques en matière d’administration, de déploie
 
 Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
 
-## Ressources {#assets}
+## Assets {#assets}
 
 Les bonnes pratiques concernant les ressources, y compris les fonctionnalités Dynamic Media et l’intégration de Dynamic Media Classic, sont décrites dans les rubriques suivantes :
 
