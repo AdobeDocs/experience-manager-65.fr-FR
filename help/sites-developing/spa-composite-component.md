@@ -3,7 +3,7 @@ title: Composants composites dans les applications d’une seule page (SPA)
 description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’applications d’une seule page (SPA) d’AEM.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '783'
 ht-degree: 100%
 
