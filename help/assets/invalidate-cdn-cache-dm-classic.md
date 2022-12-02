@@ -9,7 +9,7 @@ feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
 source-git-commit: b61157b0e9afa49ef72150ae0c1703a959d154be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '715'
 ht-degree: 100%
 
