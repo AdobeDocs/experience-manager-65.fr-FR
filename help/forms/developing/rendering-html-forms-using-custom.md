@@ -13,7 +13,7 @@ discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1688'
 ht-degree: 100%
 
