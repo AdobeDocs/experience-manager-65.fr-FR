@@ -3,8 +3,8 @@ title: Configuration des règles de traduction
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
-source-wordcount: '872'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
