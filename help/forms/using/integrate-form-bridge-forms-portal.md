@@ -12,7 +12,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
 ht-degree: 100%
 
@@ -80,8 +80,8 @@ Une application HTML existante peut tirer profit de l’API FormBridge pour inte
    >
    >
    >La balise &lt;div id=&quot;rightdiv&quot;> à la **ligne 18** contient le snippet HTML du formulaire XFA.
-   >La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
-   >La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
+   La page comprend deux conteneurs : **gauche** et **droit**. Le conteneur de droite contient le formulaire. Le conteneur de gauche possède deux champs de saisie et une partie de la page HTML externe.
+   La capture d’écran suivante montre comment le formulaire s’affiche dans un navigateur.
 
    ![Portail](assets/portal.jpg)
 
