@@ -12,7 +12,7 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1375'
 ht-degree: 100%
 
