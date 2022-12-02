@@ -3,8 +3,8 @@ title: Comment transmettre des informations d’identification à l’aide des e
 description: Découvrez comment transmettre des informations d’identification à l’aide des en-têtes WS-security.
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
-workflow-type: tm+mt
-source-wordcount: '219'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
