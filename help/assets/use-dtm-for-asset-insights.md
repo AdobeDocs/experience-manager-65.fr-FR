@@ -1,71 +1,71 @@
 ---
-title: Activation des statistiques sur les ressources via DTM
-description: Découvrez comment utiliser Adobe Dynamic Tag Management (DTM) pour activer Assets Insights.
+title: Activation d’Assets Insights via la gestion dynamique des balises
+description: Découvrez comment utiliser la gestion dynamique des balises d’Adobe pour activer Assets Insights.
 contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '647'
-ht-degree: 31%
+ht-degree: 100%
 
 ---
 
-# Activation des statistiques sur les ressources via DTM {#enable-asset-insights-through-dtm}
+# Activation d’Assets Insights via la gestion dynamique des balises {#enable-asset-insights-through-dtm}
 
-La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou utiliser la gestion dynamique des balises pour insérer des balises Assets Insights. Les statistiques sont uniquement prises en charge et fournies pour les images.
+La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou la gestion dynamique des balises pour insérer des balises Assets Insights. Insights n’est pris en charge et fourni que pour les images.
 
 >[!CAUTION]
 >
->Adobe DTM est obsolète au profit de [!DNL Adobe Experience Platform] et atteindra bientôt [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande de [use [!DNL Adobe Experience Platform] pour les informations sur les ressources](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>La gestion dynamique des balises d’Adobe est obsolète et remplacée par [!DNL Adobe Experience Platform]. Elle atteindra bientôt sa [fin de vie](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe vous recommande d’[utiliser  [!DNL Adobe Experience Platform]  pour Assets Insights](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=fr).
 
-Effectuez les étapes suivantes pour activer Assets Insights via DTM.
+Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamique des balises.
 
-1. Cliquez sur le logo du Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration des statistiques]**.
-1. [Configuration du déploiement Experience Manager avec le Cloud Service DTM](/help/sites-administering/dtm.md)
+1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Configuration d’Insights]**.
+1. [Configuration du déploiement d’Experience Manager avec la gestion dynamique des balises en service cloud](/help/sites-administering/dtm.md)
 
-   Le jeton API doit être disponible une fois que vous vous connectez à [https://dtm.adobe.com](https://dtm.adobe.com/) et visite **[!UICONTROL Paramètres du compte]** dans le profil utilisateur. Cette étape n’est pas requise du point de vue d’Assets Insights, car l’intégration de Experience Manager Sites à Assets Insights est toujours en cours d’exécution.
+   Le jeton API devrait être disponible quand vous vous connectez à [https://dtm.adobe.com](https://dtm.adobe.com/) et que vous consultez les **[!UICONTROL Paramètres du compte]** via le profil utilisateur. Par rapport à Assets Insights, cette étape n’est pas nécessaire car l’intégration d’Experience Manager Sites à Assets Insights est encore en cours.
 
-1. Connectez-vous à [https://dtm.adobe.com](https://dtm.adobe.com/), puis sélectionnez une société, le cas échéant.
-1. Création ou ouverture d’une propriété web existante
+1. Connectez-vous à [https://dtm.adobe.com](https://dtm.adobe.com/) et sélectionnez une entreprise, comme approprié.
+1. Créez ou ouvrez une propriété web existante.
 
-   * Sélectionnez la **[!UICONTROL Propriétés web]** puis cliquez sur **[!UICONTROL Ajouter une propriété]**.
+   * Sélectionnez l’onglet **[!UICONTROL Propriétés web]**, puis cliquez sur **[!UICONTROL Ajouter une propriété]**.
 
-   * Mettez les champs à jour selon les besoins, puis cliquez sur **[!UICONTROL Créer une propriété]**. Voir [documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr).
+   * Mettez les champs à jour selon vos besoins et cliquez sur **[!UICONTROL Créer une propriété]**. Consultez la [documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr).
 
    ![Créer une propriété web de modification](assets/Create-edit-web-property.png)
 
-1. Dans le **[!UICONTROL Règles]** onglet, sélectionnez **[!UICONTROL Règles de chargement de page]** dans le volet de navigation, puis cliquez sur **[!UICONTROL Créer une règle]**.
+1. Sous l’onglet **[!UICONTROL Règles]**, sélectionnez **[!UICONTROL Règles de chargement de page]** dans le volet de navigation et cliquez sur **[!UICONTROL Créer une nouvelle règle]**.
 
    ![chlimage_1-58](assets/chlimage_1-194.png)
 
-1. Développer **[!UICONTROL Balises JavaScript / tierces]**. Cliquez ensuite sur **[!UICONTROL Ajouter un nouveau script]** dans le **[!UICONTROL HTML séquentiel]** pour ouvrir la boîte de dialogue Script.
+1. Développez **[!UICONTROL Balises JavaScript/tierces]**. Cliquez ensuite sur **[!UICONTROL Ajouter un nouveau script]** sous l’onglet **[!UICONTROL HTML séquentiel]** pour ouvrir la boîte de dialogue Script.
 
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
-1. Cliquez sur le logo du Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
-1. Cliquez sur **[!UICONTROL Suivi de page Insights]**, copiez le code de suivi, puis collez-le dans la boîte de dialogue Script que vous avez ouverte à l’étape 6. Enregistrez les modifications.
+1. Cliquez sur le logo d’Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
+1. Cliquez sur **[!UICONTROL Dispositif de suivi de la page Insights]**, copiez le code de suivi, puis collez-le dans la boîte de dialogue Script que vous avez ouverte à l’étape 6. Enregistrez les modifications.
 
    >[!NOTE]
    >
    >* `AppMeasurement.js` est supprimé. Il devrait être disponible via l’outil de gestion dynamique des balises Adobe Analytics.
-   >* L’appel à `assetAnalytics.dispatcher.init()` est supprimé. Le système s’attend à ce que la fonction soit appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
-   >* Selon l’emplacement d’hébergement du dispositif de suivi de la page de statistiques sur les ressources (par exemple, Experience Manager, CDN, etc.), l’origine de la source du script peut nécessiter des modifications.
-   >* Pour le dispositif de suivi de page hébergé par le Experience Manager, la source doit pointer vers une instance de publication à l’aide du nom d’hôte de l’instance de Dispatcher.
+   >* L’appel à `assetAnalytics.dispatcher.init()` est supprimé. La fonction devrait être appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
+   >* Selon l’endroit où est hébergé le dispositif de suivi de la page Assets Insights (par exemple, Experience Manager, CDN, etc.), il se peut que vous deviez apporter des modifications à l’origine de la source du script.
+   >* Pour le dispositif de suivi de la page hébergé sur Experience Manager, la source doit indiquer une instance de publication utilisant le nom d’hôte de l’instance du Dispatcher.
 
 
-1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]** ou ouvrez un outil Adobe Analytics existant. Lors de la création de l’outil, vous pouvez définir **[!UICONTROL Méthode de configuration]** to **[!UICONTROL Automatique]**.
+1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]**, ou ouvrez un outil Adobe Analytics existant. Pendant la création de l’outil, vous pouvez définir la **[!UICONTROL méthode de configuration]** sur **[!UICONTROL Automatique]**.
 
-   ![Ajout de l’outil Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
+   ![Ajoutez l’outil Adobe Analytics](assets/Add-Adobe-Analytics-Tool.png)
 
-   Sélectionnez des suites de rapports de production/intermédiaires, selon les besoins.
+   Sélectionnez des suites de rapports d’exploitation ou intermédiaires, selon vos besoins.
 
-1. Développer **[!UICONTROL Gestion des bibliothèques]**, et assurez-vous que **[!UICONTROL Charger la bibliothèque à l’emplacement]** est défini sur **[!UICONTROL Haut de page]**.
+1. Développez **[!UICONTROL Gestion de la bibliothèque]** et assurez-vous que l’option **[!UICONTROL Charger la bibliothèque sur]** est définie sur **[!UICONTROL Haut de la page]**.
 
    ![chlimage_1-61](assets/chlimage_1-197.png)
 
-1. Développer **[!UICONTROL Personnalisation du code de page]**, puis cliquez sur **[!UICONTROL Ouvrir l’éditeur]**.
+1. Développez **[!UICONTROL Personnaliser le code de page]** et cliquez sur **[!UICONTROL Ouvrir l’Éditeur]**.
 
    ![chlimage_1-62](assets/chlimage_1-198.png)
 
@@ -107,11 +107,11 @@ Effectuez les étapes suivantes pour activer Assets Insights via DTM.
    })();
    ```
 
-   * La règle de chargement de page dans la gestion dynamique des balises comprend uniquement la variable `pagetracker.js` code. Tous les champs `assetAnalytics` sont considérés comme des remplacements des valeurs par défaut. Ils ne sont pas requis par défaut.
-   * Les appels de code `assetAnalytics.dispatcher.init()` après avoir vérifié que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
-   * Comme indiqué dans les commentaires dans le code de suivi de la page de statistiques (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page de statistiques]**), lorsque le dispositif de suivi de page ne crée pas une `AppMeasurement` , les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.\
-      Les arguments restants correspondent à ce qui est configuré sur la page Configuration des statistiques (**[!UICONTROL Outils > Ressources > Configuration des statistiques]**).
+   * La règle de chargement de page dans la gestion dynamique des balises inclut uniquement le code `pagetracker.js`. Tous les champs `assetAnalytics` sont considérés comme des remplacements des valeurs par défaut. Ils ne sont pas requis par défaut.
+   * Le code appelle `assetAnalytics.dispatcher.init()` après s’être assuré que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et que `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
+   * Comme indiqué dans les commentaires dans le code du dispositif de suivi de la page Insights (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page Insights]**), lorsque le dispositif de suivi de la page ne crée pas d’objet `AppMeasurement`, les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.\
+      Les arguments restants correspondent à ce qui est configuré sur la page Configuration des statistiques (**[!UICONTROL Outils > Ressources > Configuration d’Insights]**).
    * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont triées en fonction des outils SiteCatalyst disponibles dans l’interface de gestion dynamique des balises.
 
-1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration de l’outil.
-1. Dans le **[!UICONTROL Approbations]** , validez les deux validations en attente. La balise DTM est prête à être insérée sur votre page web.
+1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration Outil.
+1. Dans l’onglet **[!UICONTROL Approbations]**, validez les deux approbations en attente. La balise DTM est prête à être insérée sur votre page web.
