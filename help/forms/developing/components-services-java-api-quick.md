@@ -1,7 +1,7 @@
 ---
-title: 'Démarrage rapide API Java (SOAP) pour les composants et services '
+title: Démarrage rapide API Java (SOAP) pour les composants et services
 seo-title: Components and Services Java APIQuick Start(SOAP)
-description: 'Démarrage rapide API Java (SOAP) pour les composants et services '
+description: Démarrage rapide API Java (SOAP) pour les composants et services
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -11,7 +11,7 @@ discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
 ht-degree: 100%
 
