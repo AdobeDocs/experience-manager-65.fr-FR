@@ -14,7 +14,7 @@ feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '390'
 ht-degree: 100%
 
