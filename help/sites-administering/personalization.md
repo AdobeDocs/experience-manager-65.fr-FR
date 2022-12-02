@@ -1,5 +1,5 @@
 ---
-title: 'Personnalisation '
+title: Personnalisation
 seo-title: Personalization
 description: En savoir plus sur la personnalisation dans AEM.
 seo-description: Learn about personalization in AEM.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 source-git-commit: d6b595b6b5477b5cad662e219f1abd483491897f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1686'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Personnalisation  {#personalization}
+# Personnalisation {#personalization}
 
 ## Qu’est -ce que la personnalisation ? {#what-is-personalization}
 
@@ -29,20 +29,20 @@ Trois éléments principaux sont impliqués dans la personnalisation :
 
 ### Utilisateurs {#users}
 
-* possèdent des profils, individuels et collectifs ; Ces profils présentent des caractéristiques (par exemple, description de poste, lieu, intérêts) qui peuvent être utilisées pour personnaliser le contenu que les utilisateurs peuvent afficher.
-* Agissez. Ces actions peuvent être analysées et associées à des règles de comportement dans le but de personnaliser le contenu affiché.
+* Ils disposent de profils, qu’ils soient individuels ou de groupe. Ces profils présentent des caractéristiques (par exemple, description de poste, lieu, intérêts) qui peuvent être utilisées pour personnaliser le contenu que les utilisateurs peuvent afficher.
+* Ils effectuent des actions. Ces actions peuvent être analysées et associées à des règles de comportement dans le but de personnaliser le contenu affiché.
 
 ### Contenu {#content}
 
-* Est ce que l’utilisateur souhaite voir. Contenu de préférence intéressant, et utilisation à leur intention pour remplir leurs tâches.
-* Peuvent être catégorisées et donc mises à la disposition des utilisateurs selon des règles prédéfinies.
-* Être dynamique.
+* Constitue ce que l’utilisateur souhaite voir. Il s’agit de préférence d’un contenu ciblé et permettant à l’utilisateur d’effectuer ses tâches.
+* Elles peuvent être catégorisées et donc mises à la disposition des utilisateurs selon des règles prédéfinies.
+* Elles doivent être dynamiques.
 
 En d’autres termes, le contenu doit, d’une certaine manière, dépendre de l’utilisateur. Si chaque utilisateur voit le même contenu, la personnalisation est redondante.
 
-### Les règles {#rules}
+### Règles {#rules}
 
-* Définissez la manière dont la personnalisation se produit réellement, le contenu que l’utilisateur peut voir et le moment où.
+* Elles indiquent comment s’effectue la personnalisation (quel contenu l’utilisateur peut voir et quand).
 
 La personnalisation peut être soit :
 
@@ -54,35 +54,35 @@ La personnalisation peut être soit :
 
 * Elle repose sur des règles : les responsables de l’entreprise définissent des règles spécifiques pour chaque action en fonction de profils et/ou comportements spécifiques.
 * Filtrage simple : les sélections sont effectuées sur la base de profils prédéfinis au niveau de l’utilisateur et/ou du groupe.
-* Filtrage collaboratif/sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées sur l’écran de l’utilisateur, en particulier sous forme de recommandations.
+* Filtrage collaboratif ou sur recommandation : le comportement de l’utilisateur est enregistré selon des règles prédéfinies. Ces règles sont basées sur le comportement observé chez des personnes ayant des centres d’intérêt similaires. Les informations collectées sont utilisées pour personnaliser les informations affichées sur l’écran de l’utilisateur, en particulier sous forme de recommandations.
 
-## Comment et quand la personnalisation peut-elle être utilisée ? {#how-and-when-can-personalization-be-used}
+## Comment et quand la personnalisation peut-elle être utilisée ? {#how-and-when-can-personalization-be-used}
 
-La personnalisation peut être utilisée dans de nombreuses situations, par exemple :
+La personnalisation peut être utilisée dans de nombreuses situations :
 
-### Pages intranet {#intranet-pages}
+### Dans des pages intranet {#intranet-pages}
 
-* Le contenu peut être proposé en fonction de l’emplacement, du service et/ou du rôle d’un utilisateur, déjà défini dans un réseau interne.
+* Le contenu peut être affiché en fonction du lieu, du service et du rôle de l’utilisateur, ces éléments étant déjà définis sur le réseau interne.
 * Selon le choix disponible, l’utilisateur peut effectuer d’autres sélections.
 
-### Groupes d’utilisateurs spécifiques, limités, Target - Extranets {#extranets}
+### Des groupes d’utilisateurs spécifiques, restreints et ciblés - En extranet {#extranets}
 
 * Les utilisateurs ont besoin d’une connexion en vue de l’autorisation. Cette connexion est associée à un profil fournissant les informations nécessaires à la personnalisation et, le cas échéant, des détails tels que l’emplacement de l’utilisateur, son utilisation du produit, l’historique de son utilisation, les responsabilités budgétaires, etc.
 * Ces instances peuvent être réparties sur plusieurs sites :
 * Les entreprises qui fournissent des sites web à un segment hautement spécialisé de leur marché (par exemple, une entreprise pharmaceutique fournissant un site web professionnel destiné aux médecins).
 * Les entreprises qui fournissent des sites web permettant au client de visualiser son compte et ses informations de facturation actuels (par exemple, les opérateurs de téléphonie).
 
-### Site Web de vente et de distribution {#sales-site}
+### Sur des sites web de vente et de distribution {#sales-site}
 
 * Les sites web de vente et de distribution (par exemple, Amazon) peuvent combiner un profil utilisateur et l’historique des ventes et de la navigation de l’utilisateur pour lui suggérer d’autres choix susceptibles de l’intéresser.
 
-### Sites web de recherche {#search-site}
+### Sur des sites web de recherche {#search-site}
 
-* La plupart des grands moteurs de recherche sont des outils analytiques très puissants qui enregistrent le comportement des utilisateurs, les termes qu’ils saisissent et les sites web qu’ils visitent. Il est ensuite utilisé pour personnaliser le contenu fourni, notamment en ce qui concerne l’affichage des publicités.
+* La plupart des grands moteurs de recherche sont des outils analytiques très puissants qui enregistrent le comportement des utilisateurs, les termes qu’ils saisissent et les sites web qu’ils visitent. Ces données sont ensuite utilisées pour personnaliser le contenu fourni, notamment par rapport à l’affichage des publicités.
 
 ### Avantages liés à la personnalisation et aspects à prendre en considération {#strengths-of-personalization-and-points-to-consider}
 
-Voici les raisons pour lesquelles la personnalisation doit être utilisée :
+Voici quelques raisons de recourir à la personnalisation :
 
 * L’utilisateur bénéficie d’un site web convivial et adapté à ses besoins.
 * La personnalisation peut être utilisée pour propager automatiquement l’accès à la dernière version du contenu.
@@ -92,37 +92,37 @@ Voici les raisons pour lesquelles la personnalisation doit être utilisée :
 * Le fournisseur de contenu peut orienter le contenu de sorte qu’il soit vu par certaines catégories d’utilisateurs.
 * Des règles peuvent être définies pour fournir le contenu en fonction de combinaisons associant à la fois les caractéristiques et le comportement de l’utilisateur. Ceci constitue un mécanisme élaboré permettant de personnaliser l’expérience web de l’utilisateur.
 
-Lors de l’utilisation de la personnalisation, tenez compte des points suivants :
+Lorsque vous utilisez la personnalisation, tenez compte des aspects suivants :
 
-#### Performances {#performance}
+#### Les performances {#performance}
 
 * Naturellement, toute analyse et toute évaluation supplémentaires peuvent avoir un impact sur les performances. Toutefois, les méthodes utilisées sont très sophistiquées et peuvent être optimisées pour minimiser cet impact.
 
-#### Autorisation {#authorization}
+#### L’autorisation {#authorization}
 
-* La personnalisation requiert un mécanisme de connexion, car le site web doit pouvoir identifier l’utilisateur.
+* La personnalisation requiert un mécanisme de connexion car le site web doit pouvoir identifier l’utilisateur.
 
-#### Mise en cache {#caching}
+#### La mise en cache {#caching}
 
-* La mise en cache est un aspect que l’utilisateur voit en termes de performances et de précision : à quelle vitesse le site web diffuse-t-il du contenu personnalisé et est-il toujours à jour ?
+* La mise en cache est un aspect que l’utilisateur perçoit en termes de performances et de précision (à quelle vitesse le site web affiche le contenu personnalisé et si ce contenu est toujours à jour).
 * La mise en cache est une considération clé dans la configuration de la personnalisation, et du temps doit être consacré pour garantir que l’implémentation utilisée est adaptée.
 
 >[!TIP]
 >
->L’effet de la personnalisation sur les performances et les rubriques de mise en cache associées sont abordés plus en détail dans le document . [Optimisation des performances.](/help/sites-deploying/configuring-performance.md)
+>L’effet de la personnalisation sur les performances et des rubriques concernant la mise en cache associées sont abordés plus en détail dans le document [Optimisation des performances.](/help/sites-deploying/configuring-performance.md)
 
-#### Précision des règles {#accuracy}
+#### La précision des règles {#accuracy}
 
 * La personnalisation qui se base sur la surveillance du comportement de l’utilisateur ou la définition de règles basées sur le profil de l’utilisateur doit être précise et logique.
 * Il n’y a rien de plus frustrant pour un utilisateur que de se voir imposer ou refuser un contenu en raison de la logique inexacte d’une règle.
-* Par conséquent, les règles doivent être bien pensées, avec les exigences de l’utilisateur au premier plan. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
+* Par conséquent, les règles doivent être pensées avec soin, en ayant d’abord à l’esprit les besoins de l’utilisateur. Cette étape peut nécessiter beaucoup d’efforts et ne doit pas être sous-estimée. En effet, la création des règles est souvent plus exigeante que l’effort technique nécessaire à la mise en œuvre de la personnalisation.
 
-#### Quand l’utiliser {#when-to-use}
+#### Le moment où l’utiliser {#when-to-use}
 
-* Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation bénéficiera-t-elle vraiment à l’utilisateur ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation peut courir le risque d’être une fonctionnalité que les utilisateurs configurent une seule fois (pour voir comment elle fonctionne) et une seule fois, car elle ne leur apporte aucun avantage réel.
-* La personnalisation n’a de sens que lorsque le contenu est dynamique, selon l’utilisateur. Si tous les utilisateurs voient le même contenu, la personnalisation est redondante.
+* Comme un grand nombre de fonctionnalités sur le web, la personnalisation doit être utilisée avec prudence. Son utilisation bénéficiera-t-elle vraiment à l’utilisateur ? Cette question doit toujours être la première question posée. Mais on peut aussi se demander si l’objectif recherché peut être atteint à moindre effort par une autre méthode. La personnalisation peut courir le risque d’être une fonctionnalité que les utilisateurs ne configurent qu’une seule fois (pour voir comment elle fonctionne), dans la mesure où elle ne leur offre aucun avantage réel.
+* La personnalisation n’a de sens que si le contenu affiché est dynamique et dépend d’une certaine manière de l’utilisateur. Si tous les utilisateurs voient le même contenu, la personnalisation est redondante.
 
-#### Confidentialité {#confidentiality}
+#### La confidentialité {#confidentiality}
 
 * De nombreux utilisateurs sont soucieux de la protection et de la sécurité des données, en particulier en ce qui concerne les données collectées en surveillant leur comportement sur le web.
 
@@ -141,43 +141,43 @@ Divers composants sont fournis avec AEM en vue de la personnalisation. Certains 
 | Titre dans le sidekick | Objectif |
 |---|---|
 | Champ du mot de passe coché | Demande le mot de passe et la confirmation de celui-ci. |
-| Connexion combinée | Permet à l’utilisateur de se connecter à un compte existant ou de s’inscrire à un nouveau compte. |
-| Champ d’adresse Forms | Un champ complexe permettant la saisie d’une adresse internationale. |
-| Démarrage de Forms | Commence une définition de formulaire |
-| Captcha Forms | Un champ consistant en un mot alphanumérique actualisé automatiquement. Le composant Captcha protège les sites Web contre les virus. |
-| Groupe de cases à cocher Forms | Plusieurs éléments organisés en une liste et précédés par des cases à cocher. Les utilisateurs peuvent sélectionner plusieurs cases à cocher. |
-| Liste déroulante Forms | Plusieurs éléments organisés en une liste déroulante. Le commutateur Plusieurs sélections possibles spécifie si plusieurs éléments peuvent être sélectionnés depuis la liste. |
-| Fin de Forms | Termine la définition du formulaire. |
-| Téléchargement du fichier Forms | Un élément de téléchargement qui permet à l’utilisateur de télécharger un fichier sur le serveur. |
-| Champ masqué Forms | Ce champ ne s’affiche pas pour l’utilisateur. Il peut être utilisé pour le transport d’une valeur au client et de retour au serveur. Ce champ ne devrait avoir aucune contrainte. |
-| Bouton Image Forms | Un bouton d’envoi supplémentaire pour le formulaire qui est rendu en une image. |
-| Champ de mot de passe Forms | Similaire au champ de texte mais seule une ligne est autorisée et la saisie de texte par l’utilisateur n’est pas visible dans le champ. |
-| Groupe de cases d’option Forms | Plusieurs éléments organisés en une liste et précédés par des cases d’option. Les utilisateurs ne doivent sélectionner qu’une seule case d’option. |
-| Bouton Envoyer Forms | Un bouton d’envoi supplémentaire pour le formulaire avec le titre affiché comme texte sur le bouton. |
-| Champ de texte Forms | Champ de texte qui permet aux utilisateurs de saisir des informations. |
-| My Gadgets | Permet d&#39;inclure l&#39;une des sélections de gadgets disponibles. |
-| Photo de l’avatar du profil | Permet la saisie d’une photo Avatar. |
-| Nom détaillé du profil | Entrée des détails du nom, y compris les éléments tels que le titre, le deuxième prénom et le suffixe le cas échéant. |
-| Nom d&#39;affichage du profil | Nom à afficher. |
-| Courrier électronique du profil | Saisie d’une adresse de courrier électronique. |
-| Sexe du profil | Permet la saisie du sexe. |
-| Numéro de téléphone de la Principal de profil | Permet la saisie d’un numéro de téléphone. |
+| Connexion combinée | Permet à l’utilisateur de se connecter à un compte existant ou d’enregistrer un nouveau compte. |
+| Champ d’adresse de formulaire | Un champ complexe permettant la saisie d’une adresse internationale. |
+| Début de formulaire | Commence une définition de formulaire. |
+| Captcha de formulaire | Un champ consistant en un mot alphanumérique actualisé automatiquement. Le composant Captcha protège les sites Web contre les virus. |
+| Groupe de cases à cocher de formulaire | Plusieurs éléments organisés en une liste et précédés par des cases à cocher. Les utilisateurs peuvent sélectionner plusieurs cases à cocher. |
+| Liste déroulante de formulaire | Plusieurs éléments organisés dans une liste déroulante. Le commutateur Plusieurs sélections possibles spécifie si plusieurs éléments peuvent être sélectionnés depuis la liste. |
+| Fin de formulaire | Termine la définition du formulaire. |
+| Chargement du fichier de formulaire | Un élément de chargement qui permet à l’utilisateur de charger un fichier sur le serveur. |
+| Champ masqué de formulaire | Ce champ ne s’affiche pas pour l’utilisateur. Il peut être utilisé pour le transport d’une valeur au client et de retour au serveur. Ce champ ne devrait avoir aucune contrainte. |
+| Bouton Image de formulaire | Un bouton d’envoi supplémentaire pour le formulaire qui est rendu en une image. |
+| Champ de mot de passe de formulaire | Similaire au champ de texte mais seule une ligne est autorisée et la saisie de texte par l’utilisateur n’est pas visible dans le champ. |
+| Groupe de cases d’option de formulaire | Plusieurs éléments organisés en une liste et précédés par des cases d’option. Les utilisateurs ne doivent sélectionner qu’une seule case d’option. |
+| Bouton Envoyer de formulaire | Un bouton d’envoi supplémentaire pour le formulaire avec le titre affiché comme texte sur le bouton. |
+| Champ de texte de formulaire | Champ de texte qui permet aux utilisateurs de saisir des informations. |
+| Mes gadgets | Permet d’inclure l’une des sélections de gadgets disponibles. |
+| Photo de l’avatar du profil | Permet le chargement d’une photo d’avatar. |
+| Nom détaillé du profil | Saisie des détails du nom, y compris les éléments tels que le titre, le deuxième prénom et le suffixe le cas échéant. |
+| Nom d’affichage du profil | Nom à afficher. |
+| E-mail du profil | Saisie d’une adresse électronique. |
+| Genre du profil | Permet la saisie du genre. |
+| Numéro de téléphone principal du profil | Permet la saisie d’un numéro de téléphone. |
 | Principale URL du profil | Permet la saisie d’une URL. |
-| Propriété Texte général du profil | Propriétés du profil. |
+| Propriété du texte général du profil | Propriétés du profil. |
 | Connexion | Permet d’envoyer un nom d’utilisateur et un mot de passe lors de la connexion. |
-| Se déconnecter | Indique l’utilisateur actuellement connecté et fournit un lien pour se déconnecter. |
-| Nuage de tags | Nuage de balises pour afficher une sélection de balises présentée graphiquement sur votre site web |
-| Teaser | Un élément de contenu (généralement une image) affiché sur une page principale pour &quot;inciter&quot; les utilisateurs à accéder au contenu sous-jacent. |
+| Déconnexion | Indique l’utilisateur est actuellement connecté et fournit un lien pour se déconnecter. |
+| Nuage de balises | Un nuage de balises pour représenter graphiquement une sélection de balises dans votre site web. |
+| Teaser | Un élément de contenu (habituellement une image) affiché sur une page principale pour « inciter » les utilisateurs à accéder au contenu sous-jacent. |
 
 ## Personnalisation et contenu de la communauté {#personalization-and-community-content}
 
-Les fonctions de communauté telles que les blogs, les forums et les calendriers entraînent la création de contenu de communauté, généralement appelé contenu créé par l’utilisateur. Lorsque du contenu créé par l’utilisateur est entré dans un environnement de publication consistant en plusieurs instances AEM ([ferme de publication](/help/communities/topologies.md)), un problème majeur est de trouver un moyen de synchroniser ce contenu sur toutes les instances.
+Les fonctions de communauté telles que les blogs, les forums et les calendriers entraînent la création de contenu de communauté, généralement appelé contenu créé par l’utilisateur. Lorsque du contenu créé par l’utilisateur est entré dans un environnement de publication consistant en plusieurs instances AEM ([ferme de publication](/help/communities/topologies.md)), il était difficile de trouver un moyen de synchroniser ce contenu sur toutes les instances.
 
-Avec [AEM Communities 6.1](/help/communities/overview.md) , ce problème est résolu à l’aide d’une [magasin commun pour le contenu généré par l’utilisateur](/help/communities/working-with-srp.md). En ce qui concerne la personnalisation, les communautés incluent [Connexion au réseau social](/help/communities/social-login.md) - la possibilité pour les visiteurs du site de se connecter à Facebook et Twitter.
+Avec l’extension [AEM Communities 6.1](/help/communities/overview.md), ce problème est résolu avec un [magasin commun pour tout le contenu créé par l’utilisateur](/help/communities/working-with-srp.md). Concernant la personnalisation, Communities comprend la [connexion sociale](/help/communities/social-login.md), à savoir la possibilité pour les visiteurs du site de se connecter via Facebook et Twitter.
 
 Sans l’extension Communities, les différentes méthodes à examiner pour résoudre le problème lié à l’homogénéité du contenu créé par l’utilisateur sont les suivantes :
 
-* Synchroniser les différentes instances de publication si nécessaire
-* Envoyez le contenu généré par l’utilisateur de l’instance de publication à l’environnement de création, d’où il peut être publié de manière similaire au contenu de la page de publication.
+* Synchroniser de multiples instances de publication si nécessaire
+* Envoyer le contenu créé par l’utilisateur de l’instance de publication à l’environnement de création, à partir duquel il peut être publié de façon similaire à la publication du contenu des pages
 
 La méthode utilisée pour obtenir l’homogénéité du contenu créé par l’utilisateur dans tout l’environnement de publication consistant en plusieurs instances de publication doit être soigneusement conçue et testée en termes de performances et d’homogénéité.
