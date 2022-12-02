@@ -12,9 +12,9 @@ discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses com
 
 >[!NOTE]
 >
->L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
+>L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Le composant de page d’une application sur une seule page (SPA) ne fournit pas les composants HTML de ses composants enfants via un fichier HTL ou JSP et des objets de ressource. Cette opération est déléguée à la structure SPA. La représentation des composants enfants est récupérée en tant que structure de données JSON (à savoir le modèle). Les composants SPA sont ensuite ajoutés à la page conformément au modèle JSON fourni. En tant que telle, la composition initiale du corps du composant de page diffère de celle du code HTML prérendu.
 
 ## Gestion du modèle de page {#page-model-management}
 
-La résolution et la gestion du modèle de page sont déléguées à un module [ fourni. `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) La SPA doit interagir avec le module `PageModelManager` lorsqu’il s’initialise pour récupérer le modèle de page initial et s’enregistrer pour les mises à jour du modèle – générées principalement lorsque l’auteur modifie la page via l’éditeur de page. Le module `PageModelManager` est accessible par projet SPA sous la forme d’un package npm. En tant qu’interprète entre AEM et la SPA, `PageModelManager` est destiné à accompagner la SPA.
+La résolution et la gestion du modèle de page sont déléguées à un module [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) fourni. La SPA doit interagir avec le module `PageModelManager` lorsqu’il s’initialise pour récupérer le modèle de page initial et s’enregistrer pour les mises à jour du modèle – générées principalement lorsque l’auteur modifie la page via l’éditeur de page. Le module `PageModelManager` est accessible par projet SPA sous la forme d’un package npm. En tant qu’interprète entre AEM et la SPA, `PageModelManager` est destiné à accompagner la SPA.
 
 Pour autoriser la création de la page, une bibliothèque client nommée `cq.authoring.pagemodel.messaging` doit être ajoutée pour fournir un canal de communication entre la SPA et l’éditeur de page. Si le composant de page SPA hérite du composant wcm/core de page, les options suivantes sont fournies pour rendre la catégorie de bibliothèque client `cq.authoring.pagemodel.messaging` disponible :
 
@@ -91,9 +91,9 @@ Propriétés des ressources de métadonnées qui décrivent le contenu SPA :
 
 >[!CAUTION]
 >
->Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
+>Ce document utilise l’application We.Retail Journal à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
 >
->Tout projet AEM doit tirer parti de la variable [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et qui tire parti du SDK SPA. Tous les projets SPA sur doivent être basés sur Maven Archetype for Starter Kit.
+>Tous les projets AEM devraient tirer parti de l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets de SPA à l’aide de React ou d’Angular et qui tire parti du SDK de SPA. Tous les projets de SPA sur AEM devraient s’appuyer sur le Kit pour les débutants de l’Archétype Maven.
 
 ## Synchronisation des recouvrements de l’éditeur de page {#page-editor-overlay-synchronization}
 
@@ -106,4 +106,4 @@ Lorsque les fonctionnalités de routage sont activées, on part du principe que 
 * `structureDepth` : nombre correspondant à la profondeur de l’arborescence exportée
 * `structurePatterns` : regex ou tableau de regex correspondant à la page à exporter
 
-Cela peut être affiché dans l’exemple de contenu SPA dans `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
+Elle peut être affichée dans l’exemple de contenu de SPA dans `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
