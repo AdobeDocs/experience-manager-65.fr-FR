@@ -4,8 +4,8 @@ description: Découvrez la prise en charge des fragments de contenu dans l’API
 feature: Content Fragments,Assets HTTP API
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: tm+mt
-source-wordcount: '1957'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -59,7 +59,7 @@ L’API REST Assets est disponible sur chaque installation prête à l’emploi 
 
 ## Concepts clés {#key-concepts}
 
-L’API REST Assets offre un accès de type [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) aux ressources stockées dans une instance AEM.
+L’API REST Assets offre un accès de type [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer) aux ressources stockées dans une instance AEM.
 
 Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès de la ressource pour y accéder (sans `/content/dam` qui précède).
 
