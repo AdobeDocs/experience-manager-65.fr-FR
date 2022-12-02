@@ -8,8 +8,8 @@ role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Collaboration,Dynamic Media Classic
 source-git-commit: cdf6a22e8a0fd2e73cd4d25074e0c7162c047d92
-workflow-type: tm+mt
-source-wordcount: '1076'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
