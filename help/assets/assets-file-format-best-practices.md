@@ -6,7 +6,7 @@ role: Admin
 feature: Asset Management,Developer Tools
 exl-id: da080f12-4cf7-4c26-901b-cd40d9c00bcb
 source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '465'
 ht-degree: 100%
 
