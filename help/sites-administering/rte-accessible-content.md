@@ -4,7 +4,7 @@ description: Configurez l’éditeur de texte enrichi pour créer des pages web 
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '933'
 ht-degree: 100%
 
