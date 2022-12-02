@@ -1,11 +1,11 @@
 ---
 title: Guide de démarrage rapide sur la création d’un dossier de ressources découplées
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
-exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 40922b222e15aa3ef12b54d65addff32b679d36e
-workflow-type: tm+mt
+exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+workflow-type: ht
 source-wordcount: '379'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Les dossiers de ressources servent à [organiser les ressources de contenu tradi
 
 Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pour organiser le contenu au fur et à mesure de sa création. Pour les besoins de ce guide de prise en main, il suffit de créer un dossier.
 
-1. Connectez-vous à AEM et, dans le menu principal, sélectionnez **Navigation -> Ressources -> Fichiers**.
+1. Connectez-vous à AEM. Sélectionnez ensuite, dans le menu principal, **Navigation -> Ressources -> Fichiers**.
 1. Appuyez ou cliquez sur **Créer -> Dossier**.
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
@@ -54,4 +54,4 @@ Maintenant que vous avez créé un dossier pour vos fragments de contenu, vous p
 
 >[!TIP]
 >
->Pour plus d’informations sur la gestion des fragments de contenu, voir la [documentation sur les fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+>Pour plus d’informations sur la gestion des fragments de contenu, consultez la [documentation sur les fragments de contenu](/help/assets/content-fragments/content-fragments.md).
