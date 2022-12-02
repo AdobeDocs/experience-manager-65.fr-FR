@@ -6,8 +6,8 @@ role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: tm+mt
-source-wordcount: '586'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
