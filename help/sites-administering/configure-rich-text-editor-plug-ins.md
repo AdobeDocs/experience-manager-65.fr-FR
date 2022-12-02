@@ -4,8 +4,8 @@ description: Apprenez à configurer les modules externes d’éditeur de texte e
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 source-git-commit: 11cda989e6a28428f03a269c407a7672e6eab747
-workflow-type: tm+mt
-source-wordcount: '4406'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
