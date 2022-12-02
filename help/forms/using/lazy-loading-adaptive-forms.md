@@ -1,5 +1,5 @@
 ---
-title: 'Amélioration des performances des formulaires volumineux avec le chargement différé '
+title: Amélioration des performances des formulaires volumineux avec le chargement différé
 seo-title: Improve performance of large forms with lazy loading
 description: Le chargement différé améliore considérablement les performances des formulaires adaptatifs volumineux et complexes en différant l’initialisation et le chargement des fragments des formulaires jusqu’à ce qu’ils soient visibles.
 seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1011'
 ht-degree: 100%
 
