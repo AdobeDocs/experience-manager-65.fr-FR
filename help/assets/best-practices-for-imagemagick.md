@@ -6,7 +6,7 @@ role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '693'
 ht-degree: 100%
 
