@@ -1,11 +1,11 @@
 ---
 title: Utilisation du mode Disposition pour redimensionner les composants des formulaires adaptatifs
-description: 'Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page '
+description: Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
-source-wordcount: '1045'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
