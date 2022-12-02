@@ -3,7 +3,7 @@ title: Premiers pas vers votre première expérience d’utilisation d’AEM dé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1982'
 ht-degree: 100%
 
