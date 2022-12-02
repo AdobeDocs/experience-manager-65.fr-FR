@@ -3,8 +3,8 @@ title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: tm+mt
-source-wordcount: '849'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
@@ -63,4 +63,4 @@ Avec la mise en cache TTL, un développeur définit généralement une ou plusie
 
 - [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuration de la mise en cache GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
