@@ -6,8 +6,8 @@ role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: tm+mt
-source-wordcount: '1799'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
