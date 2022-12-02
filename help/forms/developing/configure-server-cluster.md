@@ -3,7 +3,7 @@ title: Comment configurer et résoudre les problèmes liés à un cluster de ser
 description: Découvrez comment configurer et résoudre les problèmes liés à un cluster de serveurs AEM Forms on JEE.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4033'
 ht-degree: 100%
 
