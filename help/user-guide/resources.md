@@ -5,7 +5,7 @@ description: Notes de mise à jour, certifications et ressources supplémentaire
 seo-description: AEM 6.5 release notes, certifications, and additional resources
 exl-id: d254d976-f547-4074-b8ad-fe4814184f30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '91'
 ht-degree: 100%
 
