@@ -3,7 +3,7 @@ title: En savoir plus sur la création de modèles de fragment de contenu dans A
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Les auteurs de contenu ne voient pas les types de données et les propriétés q
 
 >[!NOTE]
 >
->Voir Ressources supplémentaires – Modèles de fragment de contenu.
+>Consultez les Ressources supplémentaires – Modèles de fragment de contenu.
 
 ## Gestion des modèles de fragment de contenu {#managing-content-fragment-models}
 
