@@ -13,7 +13,7 @@ docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
 ht-degree: 100%
 
