@@ -4,8 +4,8 @@ description: Prise en charge des cookies Same Site pour AEM 6.5
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
 source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
-workflow-type: tm+mt
-source-wordcount: '219'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
