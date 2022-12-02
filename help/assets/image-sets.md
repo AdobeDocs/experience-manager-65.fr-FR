@@ -12,8 +12,8 @@ feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 source-git-commit: d83a647d8ac5466ba09230c584d5d501aab55274
-workflow-type: tm+mt
-source-wordcount: '2184'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
