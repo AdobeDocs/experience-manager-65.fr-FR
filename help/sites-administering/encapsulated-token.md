@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
+source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '801'
 ht-degree: 100%
 
 ---
@@ -68,16 +68,12 @@ Lors de la configuration du jeton encapsulé, différents éléments doivent êt
 
 ### Réplication de la clé HMAC {#replicating-the-hmac-key}
 
-La clé HMAC est présente sous forme de propriété binaire `/etc/key` dans le référentiel. Vous pouvez la télécharger séparément en cliquant sur le lien **afficher** en face de lui :
-
-![chlimage_1-35](assets/chlimage_1-35a.png)
-
 Pour répliquer la clé sur plusieurs instances, procédez comme suit :
 
 1. Accédez à l’instance AEM, généralement une instance de création, et qui contient le matériel des clés à copier.
 1. Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local. Par exemple, sous ce chemin d’accès :
 
-   * &lt;rép-install-aem-création>/crx-quickstart/launchpad/felix/bundle21
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    Le fichier `bundle.info` à l’intérieur de chaque dossier identifie le nom du lot.
 
