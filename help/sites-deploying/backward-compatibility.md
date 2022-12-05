@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # Compatibilité descendante dans AEM 6.5{#backward-compatibility-in-aem}
 
-##  du commerce électronique {#overview}
+## du commerce électronique {#overview}
 
 >[!NOTE]
 >

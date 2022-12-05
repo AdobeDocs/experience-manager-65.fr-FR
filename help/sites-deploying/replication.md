@@ -434,6 +434,7 @@ Pour configurer la réplication du contenu pour un autre instance de publication
    * Dans l’onglet **Transfert** :
 
       * Saisissez l’URI requise pour la nouvelle instance de publication, par exemple,
+
          `https://localhost:4504/bin/receive`.
 
       * Saisissez le compte utilisateur spécifique au site utilisé pour la réplication.
@@ -455,7 +456,6 @@ Si vous rencontrez des problèmes, vous pouvez vérifier les journaux sur l’in
 >1. Configurez un agent de réplication pour répliquer sur cet environnement de publication.
 >1. Configurez un compte d’utilisateur ; avec les droits d’accès requis pour lire le contenu qui sera répliqué sur cet environnement de publication spécifique.
 >1. Attribuez le compte d’utilisateur comme **ID d’utilisateur de l’agent** pour l’agent de réplication.
-
 >
 
 
@@ -479,6 +479,7 @@ Les agents par défaut sont inclus dans l’installation. Toutefois, une certain
    * Dans l’onglet **Transfert** :
 
       * Saisissez l’URI requise pour la nouvelle instance de publication, par exemple,
+
          `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Saisissez le compte utilisateur spécifique au site utilisé pour la réplication.

@@ -335,8 +335,7 @@ Les composants Adobe Campaign possèdent des paramètres communs à tous les com
 
 Dans la plupart des composants, vous pouvez configurer les éléments suivants :
 
-#### Titre et texte
- {#title-and-text}
+#### Titre et texte {#title-and-text}
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

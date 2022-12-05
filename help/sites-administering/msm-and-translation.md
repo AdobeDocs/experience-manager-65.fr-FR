@@ -61,9 +61,9 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
 >* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md) ; en particulier :
-   >
-   >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md)
 

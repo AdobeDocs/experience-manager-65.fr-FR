@@ -67,7 +67,7 @@ Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin d
 
 ## Composants du tableau de bord {#dashboard-components}
 
-###  du commerce électronique {#overview}
+### du commerce électronique {#overview}
 
 Les composants de tableau de bord ne sont rien de plus que des [composants AEM](/help/sites-developing/developing-components-samples.md) standard. Cette section décrit les composants de génération de rapports fournis avec AEM.
 
@@ -158,7 +158,7 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 ## Extension du tableau de bord {#extending-dashboard}
 
-###  du commerce électronique {#overview-1}
+### du commerce électronique {#overview-1}
 
 Les tableaux de bord sont des pages normales (`cq:Page`). N’importe quel composant peut donc être utilisé pour les assembler.
 
@@ -188,7 +188,7 @@ Le composant « Auteurs principaux » est stocké dans le référentiel, sous 
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-Le fichier JavaScript suivant est défini dans la bibliothèque cliente`geout.reporting.topauthors` [](/help/sites-developing/clientlibs.md) en tant qu’enfant du composant lui-même.
+Le fichier JavaScript suivant est défini dans la bibliothèque cliente`geout.reporting.topauthors` [&#128279;](/help/sites-developing/clientlibs.md) en tant qu’enfant du composant lui-même.
 
 Le composant [QueryBuilder](/help/sites-developing/querybuilder-api.md) est utilisé pour interroger le référentiel afin de lire les nœuds `cq:AuditEvent`. Le résultat de la requête est un objet JSON duquel sont extraites les contributions de l’auteur.
 

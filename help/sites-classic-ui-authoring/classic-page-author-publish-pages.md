@@ -31,13 +31,13 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 >Certains termes relatifs à la publication peuvent prêter à confusion :
 >
 >* **Publier/Annuler la publication**
-   >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
-   >  Ces termes sont synonymes de publication/annulation de la publication.
+>  Ces termes sont synonymes de publication/annulation de la publication.
 >
 >* **Répliquer/Réplication**
-   >  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
+>  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
 >
 
 

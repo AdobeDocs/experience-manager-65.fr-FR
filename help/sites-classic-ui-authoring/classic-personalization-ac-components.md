@@ -282,8 +282,7 @@ Les composants Adobe Campaign possèdent des paramètres communs à tous les com
 
 Dans la plupart des composants, vous pouvez configurer les éléments suivants :
 
-#### Titre et texte
- {#title-and-text}
+#### Titre et texte {#title-and-text}
 
 * **Titre**
 Si vous souhaitez utiliser un autre nom que le nom de l’élément, saisissez-le ici.

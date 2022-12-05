@@ -120,13 +120,11 @@ Vous pouvez modifier un dérivé immédiatement après sa création. Vous pouvez
    >
    >* Les images ne sont pas incorporées au modèle [!DNL InDesign] sous-jacent.
    >* Les images ne sont pas liées depuis le système de fichiers local.
-
    >
    >Pour permettre à [!DNL Experience Manager] de résoudre les images, procédez de la façon suivante :
    >
    >* Incorporez les images lorsque vous créez les modèles [!DNL InDesign] (reportez-vous à la section [À propos des liens et des objets graphiques incorporés](https://helpx.adobe.com/fr/indesign/using/graphics-links.html)).
    >* Montez [!DNL Experience Manager] sur votre système de fichiers local, puis mappez les icônes manquantes avec les ressources existantes dans [!DNL Experience Manager].
-
    >
    >Pour plus d’informations sur l’utilisation des documents [!DNL InDesign], reportez-vous à la section [Bonnes pratiques relatives à l’utilisation des documents InDesign dans Experience Manager](https://helpx.adobe.com/fr/experience-manager/kb/best-practices-idd-docs-aem.html).
 

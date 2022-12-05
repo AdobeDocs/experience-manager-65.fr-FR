@@ -165,7 +165,7 @@ Points d’entrée SOAP à utiliser pour communiquer avec [!DNL InDesign Server]
 
 1. Cliquez sur OK pour enregistrer.
 
-###  Configuration de l’externaliseur de lien Day CQ {#configuring-day-cq-link-externalizer}
+### Configuration de l’externaliseur de lien Day CQ {#configuring-day-cq-link-externalizer}
 
 Si [!DNL InDesign Server] et [!DNL Experience Manager] sont exécutés sur des hôtes différents ou si ces deux applications ne fonctionnent pas sur les ports par défaut, configurez [!UICONTROL l’externaliseur de liens Day CQ] afin de définir le nom d’hôte, le port et le chemin d’accès au contenu pour [!DNL InDesign Server].
 

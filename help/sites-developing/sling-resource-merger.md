@@ -65,7 +65,6 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 >1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
 >1. Apportez les modifications désirées dans `/apps`.
-
 >
 
 

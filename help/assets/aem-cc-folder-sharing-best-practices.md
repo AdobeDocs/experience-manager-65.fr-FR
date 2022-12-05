@@ -29,7 +29,7 @@ Ce type d’intégration peut être utilisé dans les deux cas d’utilisation, 
 >
 >Avant de lire ce document, vous pouvez consulter les [bonnes pratiques générales d’intégration d’Experience Manager et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) pour obtenir un aperçu général du sujet.
 
-##  du commerce électronique {#overview}
+## du commerce électronique {#overview}
 
 Le partage de dossiers [!DNL Experience Manager] vers [!DNL Creative Cloud] repose sur le partage côté serveur de dossiers et de fichiers entre les comptes [!DNL Assets] et [!DNL Creative Cloud]. Les créatifs qui utilisent l’application de bureau [!DNL Creative Cloud] sur leurs ordinateurs de bureau peuvent également rendre les dossiers partagés disponibles directement sur leurs disques à l’aide de la technologie [!DNL Adobe CreativeSync].
 
