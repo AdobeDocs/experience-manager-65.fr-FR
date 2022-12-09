@@ -10,10 +10,10 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 84ae92f889661a639e931b2a7ba9a999d5258841
+source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
 workflow-type: tm+mt
-source-wordcount: '6794'
-ht-degree: 100%
+source-wordcount: '6888'
+ht-degree: 99%
 
 ---
 
@@ -582,6 +582,9 @@ Affiche les paramètres utilisés par la fonction. Une fonction peut comporter p
    1. chaîne
    1. nombre
    1. booléen
+   1. portée
+
+   Portée est utilisée pour les champs référents d’un formulaire adaptatif. Lorsqu’un formulaire utilise le chargement différé, vous pouvez utiliser `scope` pour accéder à ses champs. Vous pouvez accéder aux champs lorsque les champs sont chargés ou si les champs sont marqués comme généraux.
 
    Tous les autres types de paramètre sont classés en dessous de l’un des précédents. Aucun n’est pas pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types ne sont pas sensibles à la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
@@ -597,6 +600,29 @@ Ajoute des informations sur la fonction, comme son objectif.
    1. booléen
 
    Tous les autres types de retour sont classés en dessous de l’un des précédents. Aucun n’est pas pris en charge. Assurez-vous que vous sélectionnez l’un des types ci-dessus. Les types de retour ne sont pas sensibles à la casse.
+
+* Syntaxe de 
+**This** : 
+`@this currentComponent`
+
+   Utilisez @this pour faire référence au composant Formulaire adaptatif à partir duquel la règle a été créée.
+
+   L’exemple ci-dessous repose sur la valeur du champ. Dans l’exemple ci-dessous, la règle masque un champ dans le formulaire. La partie `this` de `this.value` fait référence au composant Formulaire adaptatif sous-jacent, à partir duquel la règle a été créée.
+
+   ```
+      /**
+      * @function myTestFunction
+      * @this currentComponent
+      * @param {scope} scope in which code inside function will be executed.
+      */
+      myTestFunction = function (scope) {
+         if(this.value == "O"){
+               scope.age.visible = true;
+         } else {
+            scope.age.visible = false;
+         }
+      }
+   ```
 
 >[!NOTE]
 >
