@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->ClientContext a été remplacé par ContextHub. Pour plus de détails, consultez la documentation associée concernant la [configuration] et la [documentation développeur](/help/sites-developing/contexthub.md).
+>ClientContext a été remplacé par ContextHub. Pour plus de détails, voir la documentation associée concernant la [configuration](/help/sites-developing/ch-configuring.md) et la [documentation développeur](/help/sites-developing/contexthub.md).
 
 Le contexte client. est un mécanisme qui fournit certaines informations sur la page et le visiteur actifs. Il peut être ouvert via **Ctrl-Alt-C** (Windows) ou **Ctrl-Option-C** (Mac) :
 
@@ -117,7 +117,7 @@ Par exemple, si la souris se trouve sur la partie gauche ou droite de la fenêtr
 **Nuage de balises** Affiche les balises définies sur la page actuelle et celles qui ont été collectées lors de la navigation sur le site. Déplacer le curseur sur une balise affiche le nombre de fois que l’utilisateur actuel a accédé aux pages contenant cette balise.
 
 >[!NOTE]
->Les balises définies sur des ressources de gestion des ressources numériques qui s’affichent sur les pages visitées ne sont pas prises en compte.
+Les balises définies sur des ressources de gestion des ressources numériques qui s’affichent sur les pages visitées ne sont pas prises en compte.
 
 **Boutique Technographics** Ce composant dépend de votre installation.
 
@@ -128,7 +128,7 @@ Cette boutique de session ne comporte pas de composant de contexte client par d�
 Pour plus d’informations, consultez [Contexte client en détail](/help/sites-developing/client-context.md).
 
 >[!NOTE]
->« Données de page » ne figure plus dans le contexte client sous la forme d’un composant par défaut. Au besoin, vous pouvez l’ajouter en modifiant le contexte client, en ajoutant le composant **Propriétés de la boutique générique**, puis en le configurant de manière à définir **Boutique** en tant que `pagedata`.
+« Données de page » ne figure plus dans le contexte client sous la forme d’un composant par défaut. Au besoin, vous pouvez l’ajouter en modifiant le contexte client, en ajoutant le composant **Propriétés de la boutique générique**, puis en le configurant de manière à définir **Boutique** en tant que `pagedata`.
 
 ## Modification du profil ClientContext {#changing-the-client-context-profile}
 
