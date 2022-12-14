@@ -1,8 +1,8 @@
 ---
 title: Nettoyage de révision
 seo-title: Revision Cleanup
-description: Découvrez comment utiliser la fonction de nettoyage des révisions dans AEM 6.3.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: Découvrez comment utiliser la fonction de nettoyage des révisions dans AEM 6.5.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
+source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
-source-wordcount: '5912'
-ht-degree: 97%
+source-wordcount: '5918'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 Chaque mise à jour du référentiel crée une nouvelle révision de contenu. Par conséquent, avec chaque mise à jour, la taille du référentiel augmente. Pour éviter une croissance incontrôlée au référentiel, il faut nettoyer les anciennes révisions pour libérer de l’espace sur le disque. Cette fonctionnalité de maintenance est appelée le nettoyage des révisions. Elle est disponible sous forme de programme hors ligne depuis AEM 6.0.
 
-Une version en ligne de cette fonctionnalité, baptisée Nettoyage des révisions en ligne, a été introduite dans AEM 6.3. Comparé au nettoyage des révisions hors ligne où l’instance AEM doit être arrêtée, le nettoyage des révisions en ligne peut être exécuté en maintenant l’instance AEM en ligne. Le nettoyage des révisions en ligne est activé par défaut, car il s’agit de la méthode recommandée pour effectuer un nettoyage des révisions.
+Avec AEM version 6.3 et ultérieure, une version en ligne de cette fonctionnalité appelée Nettoyage des révisions en ligne a été introduite. Comparé au nettoyage des révisions hors ligne où l’instance AEM doit être arrêtée, le nettoyage des révisions en ligne peut être exécuté en maintenant l’instance AEM en ligne. Le nettoyage des révisions en ligne est activé par défaut, car il s’agit de la méthode recommandée pour effectuer un nettoyage des révisions.
 
 **Remarque** : [Regardez la vidéo](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) pour découvrir comment utiliser le nettoyage des révisions en ligne.
 
@@ -162,7 +162,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Le format Tar précédent est-il toujours pris en charge ?</strong></td>
-   <td>Seul le nouveau format Oak Segment Tar est pris en charge dans AEM 6.3.</td>
+   <td>Seul le nouvel Oak Segment Tar est pris en charge avec AEM version 6.3 ou ultérieure.</td>
    <td> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Puis-je effectuer la mise à niveau vers la version 6.3 et effectuer la migration ultérieurement (par exemple, en utilisant une autre fenêtre de maintenance) ?</strong></td>
+   <td><strong>Puis-je effectuer une mise à niveau vers la version 6.3 ou ultérieure et effectuer la migration ultérieurement (par exemple, en utilisant une autre fenêtre de maintenance) ?</strong></td>
    <td>Non, comme nous l’avons expliqué ci-dessus, la migration du contenu est obligatoire.</td>
    <td> </td>
   </tr>
@@ -249,7 +249,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Existe-t-il des conditions préalables pour exécuter le nettoyage des révisions en ligne ?</strong></td>
-   <td><p>Le nettoyage des révisions en ligne est disponible uniquement avec AEM 6.3 et les versions ultérieures. Aussi, si vous utilisez une ancienne version d’AEM, vous devrez effectuer une migration vers le nouvel <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
+   <td><p>Le nettoyage des révisions en ligne est disponible uniquement avec AEM version 6.3 et ultérieure. Aussi, si vous utilisez une ancienne version d’AEM, vous devrez effectuer une migration vers le nouvel <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak Segment Tar</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
