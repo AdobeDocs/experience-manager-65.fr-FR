@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3584'
 ht-degree: 90%
 
 ---
@@ -121,7 +121,7 @@ Reportez-vous aux sections ci-dessous pour plus d’informations sur les différ
 
 ### Fichier Magasin de données {#file-data-store}
 
-Il s’agit de l’implémentation de [FileDataStore](https://jackrabbit.apache.org/api/2.8/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2, qui offre une méthode pour stocker les données binaires comme tout autre fichier sur le système de fichiers. Le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` est utilisé.
+Il s’agit de l’implémentation de [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) présent dans Jackrabbit 2, qui offre une méthode pour stocker les données binaires comme tout autre fichier sur le système de fichiers. Le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` est utilisé.
 
 Voici les options de configuration disponibles :
 
