@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
+source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 82%
@@ -32,7 +32,7 @@ Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectio
 
 Si la synchronisation de votre application Android AFA (AEM Form Application) échoue, procédez comme suit pour résoudre le problème de synchronisation :
 
-1. Accédez au **https://&#39;[server]:[port]&#39;system/console/configMgr**.
+1. Accédez au **https://[server]:[port]/system/console/configMgr**.
 1. Recherchez le **[!UICONTROL Gestionnaire d’authentification des jetons Adobe Granite]** et cliquez sur **[!UICONTROL Modifier]**.
 1. Sélectionnez la **[!UICONTROL Aucun]** dans le menu déroulant de la fonction **[!UICONTROL Attribut SameSite pour le cookie login-token]** attribut.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
