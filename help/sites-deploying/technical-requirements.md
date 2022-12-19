@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 41de0aab537ae227fc6da20941502d155b45f65d
+source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
 workflow-type: tm+mt
-source-wordcount: '3453'
+source-wordcount: '3452'
 ht-degree: 97%
 
 ---
@@ -197,8 +197,8 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 | IBM AIX 7.2 | Z : non pris en charge |
 
 1. Linux Kernel 2.6, 3.x, 4.x et 5.x comprend les dérivés de la distribution Red Hat, notamment Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat Enterprise Linux 7 et Red Hat Enterprise Linux 8.
-1. AEM Forms est pris en charge uniquement sur Ubuntu 16.04 LTS
-1. Distribution Linux prise en charge par Adobe Managed Services
+1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
+1. Distribution Linux prise en charge par Adobe Managed Services.
 1. Les déploiements en exploitation Microsoft Windows sont pris en charge pour les clients effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
 1. AEM Forms est pris en charge sous Microsoft Windows Server sans les restrictions du niveau d’assistance R.
 
@@ -435,11 +435,11 @@ Pour Windows x86 :
    <th><p><strong>Formats pris en charge pour la conversion en PDF</strong></p> </th>
   </tr>
   <tr>
-   <td>Dernière version <a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2020</a></td>
+   <td>Dernière version <a href="https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2020</a></td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
-   <td>Dernière version (obsolète) <a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2017</a></td>
+   <td>Dernière version (obsolète) <a href="https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html">Suivi classique Acrobat 2017</a></td>
    <td>XPS, formats d’image (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF et DWF</td>
   </tr>
   <tr>
