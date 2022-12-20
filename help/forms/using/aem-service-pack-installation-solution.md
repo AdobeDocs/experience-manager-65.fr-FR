@@ -1,7 +1,7 @@
 ---
 title: CRX/bundle et service de page de démarrage indisponibles une fois le dernier Service Pack 6.5.15.0 installé
 description: CRX/bundle et service de page de démarrage indisponibles une fois le dernier Service Pack 6.5.15.0 installé
-source-git-commit: 4e4dca8ae8ed49c5b81934f22572c84938f4f676
+source-git-commit: be7a9cfc226537ab4b360064220fa03bf2045310
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 16%
@@ -31,9 +31,9 @@ Après installation [Service Pack d’AEM 6.5.15.0](https://experience.adobe.com
 1. Recherchez la variable `bundle.info` fichier .
 1. Ouvrez le `bundle.info` dans l’éditeur de texte de fourmis et recherchez le nom du lot sous la forme `org.apache.felix.http.bridge`.
 
->[!NOTE]
->
->Au cas où la variable `bundle.info` under `bundle52` ne contient pas le paramètre `org.apache.felix.http.bridge` du lot, vérifiez le numéro du lot entre crochets en regard de l’objet `org.apache.felix.http.bridge`. Accédez ensuite à [racine aem-forms]\crx-repository\launchpad\felix\bundle[x] et effectuez les étapes suivantes à cet emplacement.
+   >[!NOTE]
+   >
+   >Au cas où la variable `bundle.info` under `bundle52` ne contient pas le paramètre `org.apache.felix.http.bridge` du lot, vérifiez le numéro du lot entre crochets en regard de l’objet `org.apache.felix.http.bridge`. Accédez ensuite à [racine aem-forms]\crx-repository\launchpad\felix\bundle[x] et effectuez les étapes suivantes à cet emplacement.
 
 1. Accéder à l’URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Rechercher `bundle.jar` et renommez `bundle.jar` to `bundle.jar.bak`.
