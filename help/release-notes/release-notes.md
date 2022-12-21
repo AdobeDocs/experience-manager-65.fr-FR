@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: e73a65569963a5f60f7a4670998ada29deeb26b8
+source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
 workflow-type: tm+mt
 source-wordcount: '4036'
 ht-degree: 28%
@@ -288,6 +288,7 @@ Effectuez les étapes suivantes pour tous les environnements d’AEM Forms on JE
    >[!NOTE]
    >
    >Si vous installez la dernière version [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), avant d’installer le [Fragment pour AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) dans votre environnement Forms on JEE d’AEM 6.5, le lot CRX/et la page de début peuvent cesser de fonctionner et vous rencontrez l’erreur de service non disponible. Pour résoudre le problème, effectuez les actions [répertorié ici](/help/forms/using/aem-service-pack-installation-solution.md).
+
 1. Installez le [dernier module complémentaire Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr), supprimez le module complémentaire Forms du `crx-repository\install` et redémarrez le serveur.
 
 ### UberJar {#uber-jar}
@@ -326,7 +327,7 @@ Vérifiez si vous utilisez une de ces fonctionnalités dans un déploiement. Env
  -->
 
 * [AEM de fragment de contenu avec le package d’index GraphQL 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
-Ce module est nécessaire pour les clients utilisant GraphQL ; cela leur permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils utilisent réellement.
+Ce package est nécessaire pour les clients utilisant GraphQL ; cela leur permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils utilisent réellement.
 
 * [!DNL Microsoft® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ne prend donc pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
 
