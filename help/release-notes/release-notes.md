@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 9b7321d7fbac46966876540b4ad9355ce33ab54e
+source-git-commit: 5d04a479001c5ea6423599969b39a4697a2da590
 workflow-type: tm+mt
 source-wordcount: '3974'
 ht-degree: 29%
@@ -64,7 +64,7 @@ ht-degree: 29%
 * Le **De base** sous Propriétés de ressource , l’onglet contient des pages avec un ID en double. (ASSETS-6888)
 * Le libellé du champ de texte pour définir un titre lors de la création d’un workflow disparaît lorsque vous spécifiez une valeur dans la zone de texte. (ASSETS-6887)
 * La liste des destinataires lors du partage d’un lien s’affiche sous la forme d’un tableau de données avec des en-têtes, mais elle n’est pas sémantiquement identifiée en tant que tableau de données pour les utilisateurs de lecteur d’écran. (ASSETS-6886)
-* Aucun message d’erreur ne s’affiche pour représenter un champ vide dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
+* Aucun message d’erreur pour représenter un champ vide ne s’affiche dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
 * Les textes d’espace réservé, le chemin et le texte de remplacement n’ont pas au moins un rapport de contraste de 4,5:1 par rapport à leur couleur d’arrière-plan. (ASSETS-6884, ASSETS-6865)
 * Valeurs non valides pour certains attributs ARIA lors de l’enregistrement d’une collection dynamique. (ASSETS-6882)
 * Lorsque vous enregistrez une collection dynamique, certaines étiquettes ne sont pas correctement associées au lecteur d’écran. (ASSETS-6881)
@@ -287,7 +287,7 @@ Effectuez les étapes suivantes pour tous les environnements d’AEM Forms on JE
 
 1. Installation du programme d’installation cumulatif pour [!DNL Experience Manager] Configuration de Forms on JEE et post-déploiement, voir la section [notes de mise à jour](jee-patch-installer-65.md).
 
-1. Installez le [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) fragment de servlet et attendez que le serveur d’applications se stabilise. —>
+1. Installez le [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) fragment de servlet et attendez que le serveur d’applications se stabilise.
 1. Installer [Service Pack d’AEM 6.5.15.0](#install-service-pack).
 1. Installez le [dernier module complémentaire Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr), supprimez le module complémentaire Forms du `crx-repository\install` et redémarrez le serveur.
 
