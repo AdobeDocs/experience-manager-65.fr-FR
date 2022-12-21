@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 214c5e27567a515837c0ab52601f3491a9144120
+source-git-commit: 9b7321d7fbac46966876540b4ad9355ce33ab54e
 workflow-type: tm+mt
-source-wordcount: '3946'
+source-wordcount: '3974'
 ht-degree: 29%
 
 ---
@@ -260,8 +260,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 >[!NOTE]
 >
->Si vous installez la dernière version [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), le lot CRX et le service d’affichage de la page de début affichent les erreurs non disponibles, [cliquez ici](/help/forms/using/aem-service-pack-installation-solution.md) pour connaître les étapes de dépannage.
-
+>Si vous installez la dernière version [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), avant le servlet de fragment `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` pour l’environnement d’AEM Forms on JEE, le lot CRX et la page de début affichent les erreurs non disponibles du service, [cliquez ici](/help/forms/using/aem-service-pack-installation-solution.md) pour connaître les étapes de dépannage.
 
 ### Installez le module complémentaire [!DNL Experience Manager] Forms. {#install-aem-forms-add-on-package}
 
@@ -273,7 +272,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
 -->
 
-1. Vérifiez que vous avez installé le pack de services [!DNL Experience Manager].
+1. Assurez-vous que vous avez installé le [!DNL Experience Manager] Service pack.
 1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [Mises à jour d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr#forms-updates) pour votre système d’exploitation.
 1. Installez le module complémentaire Forms comme décrit dans la section [Installation des modules complémentaires AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
 1. Si vous utilisez des lettres dans Experience Manager 6.5 Forms, installez le [dernier module de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr#forms-updates).
@@ -288,7 +287,7 @@ Effectuez les étapes suivantes pour tous les environnements d’AEM Forms on JE
 
 1. Installation du programme d’installation cumulatif pour [!DNL Experience Manager] Configuration de Forms on JEE et post-déploiement, voir la section [notes de mise à jour](jee-patch-installer-65.md).
 
-1. Installez le [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) fragment de servlet et attendez que le serveur d’applications se stabilise.
+1. Installez le [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) fragment de servlet et attendez que le serveur d’applications se stabilise. —>
 1. Installer [Service Pack d’AEM 6.5.15.0](#install-service-pack).
 1. Installez le [dernier module complémentaire Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr), supprimez le module complémentaire Forms du `crx-repository\install` et redémarrez le serveur.
 
