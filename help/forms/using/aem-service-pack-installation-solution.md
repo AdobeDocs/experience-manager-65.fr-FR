@@ -1,9 +1,9 @@
 ---
 title: CRX/bundle et service de page de démarrage indisponibles une fois le dernier Service Pack 6.5.15.0 installé
 description: CRX/bundle et service de page de démarrage indisponibles une fois le dernier Service Pack 6.5.15.0 installé
-source-git-commit: cae425c7dbf315d0fb51ebc745b047d894328d5b
+source-git-commit: 974796a6b9e921f8c2f40d72a4764eb9f4d8b92b
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '348'
 ht-degree: 16%
 
 ---
@@ -42,7 +42,7 @@ Après installation [Service Pack d’AEM 6.5.15.0](https://experience.adobe.com
 
 1. Accéder à l’URL: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Rechercher `bundle.jar` et renommez `bundle.jar` to `bundle.jar.bak`.
-1. Copier `Bundle for AEM 6.5 Forms on JEE Service Pack 15` à cet emplacement à partir du [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
+1. Copiez le `Bundle for AEM 6.5 Forms on JEE Service Pack 15` à cet emplacement à partir du [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Démarrez le serveur d’applications, attendez que les journaux se stabilisent et vérifiez l’état du lot.
 1. Une fois que tous les lots sont à l’état principal, installez la variable [Fragment pour AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) de la `system/console/bundles` et attendez que le serveur d’applications se stabilise.
 1. Arrêtez le serveur d’applications.
