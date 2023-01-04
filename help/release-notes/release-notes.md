@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
+source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
 workflow-type: tm+mt
-source-wordcount: '4036'
+source-wordcount: '4046'
 ht-degree: 28%
 
 ---
@@ -144,6 +144,7 @@ ht-degree: 28%
 * Lorsque l’utilisateur tente d’exécuter un correctif d’AEM de Form on JEE après avoir modifié le mot de passe par défaut de l’utilisateur administrateur, une exception s’affiche. `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` survient. (CQ-4348277)
 * Dans AEM Designer, les champs de formulaire sans légende sont placés dans des cellules de tableau, y compris des cases à cocher.(LC-3920410)
 * Lorsque l’utilisateur tente d’ouvrir l’aide dans AEM Forms Designer, elle ne s’affiche pas correctement. (CQ-4341996)
+* Les Forms adaptatives avec plusieurs paramètres régionaux sont lentes à charger. (NPR-39176)
 
 ## [!DNL Sites] {#sites-6515}
 
