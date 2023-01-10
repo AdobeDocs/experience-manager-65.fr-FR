@@ -60,7 +60,7 @@ ht-degree: 31%
    + [Modèles de site](sites.md)
    + [Modèles de groupe](tools-groups.md)
    + [Fonctions de la communauté](functions.md)
-   + [Configuration du stockage](srp-config.md)
+   + [Stockage  Configuration](srp-config.md)
    + [Console Badges](badges.md)
    + [Console Ressources d’activation ](resources.md)
    + [Console Rapports ](reports.md)
@@ -139,7 +139,7 @@ ht-degree: 31%
    + [Création d’un exemple de page](create-sample-page.md)
    + [Accès au contenu généré par l’utilisateur avec SRP](accessing-ugc-with-srp.md)
    + [Utilisation de Maven pour Communities](maven.md)
-   + [Conventions de dénomination](naming-conventions.md)
+   + [Conventions de nommage](naming-conventions.md)
    + [Refactorisation de SocialUtils](socialutils.md)
 + Création {#authoring}
    + [Composants d’AEM Communities](author-communities.md)
