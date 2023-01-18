@@ -1,6 +1,6 @@
 ---
 title: '« Tutoriel : Création de votre premier formulaire adaptatif »'
-seo-title: 'Tutorial: Create your first adaptive form'
+seo-title: "Tutorial: Create your first adaptive form"
 description: Apprenez à créer des formulaires professionnels, interactifs et réactifs.
 seo-description: Learn to create business class, interactive, and responsive forms.
 uuid: ee351a3f-ea6a-4b4c-8045-4948ad51b7c1
@@ -9,9 +9,9 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '965'
 ht-degree: 98%
 
 ---
@@ -41,7 +41,7 @@ Le site Web fonctionne sous Adobe Experience Manager (AEM) et utilise AEM [!DNL 
 
 ### Prérequis {#prerequisite}
 
-* Configurez une instance d’auteur AEM.
+* Configuration d’une [AEM instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
 * Installez le [module complémentaire AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md) sur une instance de création.
 * Obtenez le pilote de base de données JDBC (fichier JAR) auprès du fournisseur de base de données. Les exemples du tutoriel sont basés sur la base de données [!DNL MySQL] et utilisent le [pilote de base de données MySQL JDBC](https://dev.mysql.com/downloads/connector/j/5.1.html) d’[!DNL Oracle's].
 
