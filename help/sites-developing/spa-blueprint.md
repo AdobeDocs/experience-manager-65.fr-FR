@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
-workflow-type: ht
-source-wordcount: '2079'
-ht-degree: 100%
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -150,7 +150,7 @@ Chaque composant doit être étendu avec une fonctionnalité pour décorer l’�
 
 Un conteneur est un composant conçu pour contenir des composants enfants et en effectuer le rendu. Pour ce faire, le conteneur effectue une itération sur les propriétés `:itemsOrder`, `:items` et `:children` de son modèle.
 
-Le conteneur obtient dynamiquement les composants enfants à partir du magasin de la bibliothèque ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)`. Le conteneur étend ensuite le composant enfant avec les fonctionnalités du fournisseur de modèles, puis l’instancie.
+Le conteneur obtient dynamiquement les composants enfants à partir du magasin de la bibliothèque [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping). Le conteneur étend ensuite le composant enfant avec les fonctionnalités du fournisseur de modèles, puis l’instancie.
 
 ### Page {#page}
 

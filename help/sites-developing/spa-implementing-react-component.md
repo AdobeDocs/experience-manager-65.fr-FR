@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Mise en œuvre d’un composant React pour SPA{#implementing-a-react-component-for-spa}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant React simple et existant pour le faire fonctionner avec l’éditeur de SPA d’AEM.
 
@@ -37,7 +37,7 @@ Cet article illustre l’exemple du composant Météo de la SPA d’exemple We.R
 Vous devez connaître la [structure d’une application SPA pour AEM](/help/sites-developing/spa-getting-started-react.md) avant de lire cet article.
 
 >[!CAUTION]
->Ce document n’utilise l’[exemple d’application Journal We.Retail](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) qu’à des fins de démonstration. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
+>Ce document n’utilise l’[exemple d’application Journal We.Retail](https://github.com/adobe/aem-sample-we-retail-journal) qu’à des fins de démonstration. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
 >
 >Tout projet AEM doit exploiter l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utilise le SDK SPA.
 

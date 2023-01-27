@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '488'
-ht-degree: 100%
+source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +43,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 >[!NOTE]
 >
->Actuellement, l’exemple de projet React de We.Retail Journal illustre l’approche automatisée, tandis que le projet Angular illustre l’approche manuelle. Une approche semi-automatisée serait également un cas d’utilisation valide.
+>Le [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) l’exemple de projet React illustre l’approche automatisée, tandis que le projet Angular illustre l’approche manuelle. Une approche semi-automatisée serait également un cas d’utilisation valide.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ L’implémentation actuelle repose sur l’hypothèse que le projet de SPA util
 Par défaut, ce comportement est automatiquement activé. Pour le désactiver, l’application sur une seule page doit effectuer le rendu de la propriété meta suivante :
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Notez que chaque route de la SPA doit correspondre à une ressource accessible dans AEM (par exemple, `/content/mysite/mypage"`), étant donné que `PageModelManager` essaie automatiquement de charger le modèle de page correspondant une fois la route sélectionnée. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
