@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 72ed4ceee560839c6573461cb5d4d6cbccfd696f
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3525'
-ht-degree: 94%
+source-wordcount: '3529'
+ht-degree: 93%
 
 ---
 
@@ -196,7 +196,7 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 | Oracle Solaris 11 | Z : non pris en charge |
 | IBM AIX 7.2 | Z : non pris en charge |
 
-1. Linux Kernel 2.6, 3.x, 4.x et 5.x comprend les dérivés de la distribution Red Hat, notamment Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctions de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat Enterprise Linux 7 et Red Hat Enterprise Linux 8.
+1. Noyau Linux 2.6, 3. x, 4. x et 5. x comprend les dérivés de la distribution Red Hat, notamment Red Hat Enterprise Linux, CentOS, Oracle Linux et Amazon Linux. Les fonctionnalités de module complémentaire AEM Forms sont uniquement prises en charge sur CentOS 7, Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8 et Red Hat Enterprise Linux 9.
 1. AEM Forms est pris en charge sur Ubuntu 20.04 LTS.
 1. Distribution Linux prise en charge par Adobe Managed Services.
 1. Les déploiements en exploitation Microsoft Windows sont pris en charge pour les clients effectuant une mise à niveau vers la version 6.5 et pour une utilisation en dehors de l’environnement d’exploitation. Les nouveaux déploiements sont à la demande pour AEM Sites et Assets.
@@ -215,7 +215,7 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 
 ### Environnements virtuels et de cloud computing {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager exécuté sur une machine virtuelle sur des environnements de cloud computing, tels que Microsoft Azure et Amazon Web Services (AWS), est pris en charge conformément aux exigences techniques répertoriées sur cette page, et d’après les conditions de prise en charge standard d’Adobe.
+Adobe Experience Manager est pris en charge lorsqu’il s’exécute sur une machine virtuelle dans des environnements de cloud computing, tels que Microsoft Azure et Amazon Web Services (AWS), conformément aux exigences techniques répertoriées sur cette page et aux conditions de prise en charge standard de l’Adobe.
 
 Pour un environnement natif dans le cloud, passez en revue la dernière offre de la gamme de produits AEM : Adobe Experience Manager as a Cloud Service. Consultez la [Documentation d’Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) pour plus d’informations.
 
