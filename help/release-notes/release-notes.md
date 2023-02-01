@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: ec9094f25cfbcd1497a6bbc87cce9754e247a770
+source-git-commit: f0746c6b7ada548c47d13089160ecccec5f2bd2b
 workflow-type: tm+mt
 source-wordcount: '3759'
 ht-degree: 27%
@@ -64,7 +64,7 @@ ht-degree: 27%
 * Le **De base** sous Propriétés de ressource , l’onglet contient des pages avec un ID en double. (ASSETS-6888)
 * Le libellé du champ de texte pour définir un titre lors de la création d’un workflow disparaît lorsque vous spécifiez une valeur dans la zone de texte. (ASSETS-6887)
 * La liste des destinataires lors du partage d’un lien s’affiche sous la forme d’un tableau de données avec des en-têtes, mais elle n’est pas sémantiquement identifiée en tant que tableau de données pour les utilisateurs de lecteur d’écran. (ASSETS-6886)
-* Aucun message d’erreur pour représenter un champ vide ne s’affiche dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
+* Aucun message d’erreur ne s’affiche pour représenter un champ vide dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
 * Les textes d’espace réservé, le chemin et le texte de remplacement n’ont pas au moins un rapport de contraste de 4,5:1 par rapport à leur couleur d’arrière-plan. (ASSETS-6884, ASSETS-6865)
 * Valeurs non valides pour certains attributs ARIA lors de l’enregistrement d’une collection dynamique. (ASSETS-6882)
 * Lorsque vous enregistrez une collection dynamique, certaines étiquettes ne sont pas correctement associées au lecteur d’écran. (ASSETS-6881)
@@ -259,7 +259,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 1. Tous les lots OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
-1. Le lot OSGi `org.apache.jackrabbit.oak-core` est version 1.22.13 ou ultérieure (Utiliser la console web : `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
+1. La version du lot OSGi `org.apache.jackrabbit.oak-core` est 1.22.13 ou une version ultérieure (utilisez la console web : `/system/console/bundles`).
 
 ### Installer le Service Pack sur [!DNL Experience Manager] Forms {#install-service-pack-on-aemforms}
 
