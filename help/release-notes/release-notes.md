@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Recherchez des informations de mise à jour, les nouveautés, les procédures d’installation et une liste détaillée de modifications pour [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: d3b830730ef06fb9968a46d6f26a275417cf36f0
+source-git-commit: ec9094f25cfbcd1497a6bbc87cce9754e247a770
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 28%
+source-wordcount: '3759'
+ht-degree: 27%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 28%
 * Le **De base** sous Propriétés de ressource , l’onglet contient des pages avec un ID en double. (ASSETS-6888)
 * Le libellé du champ de texte pour définir un titre lors de la création d’un workflow disparaît lorsque vous spécifiez une valeur dans la zone de texte. (ASSETS-6887)
 * La liste des destinataires lors du partage d’un lien s’affiche sous la forme d’un tableau de données avec des en-têtes, mais elle n’est pas sémantiquement identifiée en tant que tableau de données pour les utilisateurs de lecteur d’écran. (ASSETS-6886)
-* Aucun message d’erreur ne s’affiche pour représenter un champ vide dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
+* Aucun message d’erreur pour représenter un champ vide ne s’affiche dans `Add Email Address` champ . L’erreur n’est représentée que par une couleur. (ASSETS-6885, ASSETS-6843)
 * Les textes d’espace réservé, le chemin et le texte de remplacement n’ont pas au moins un rapport de contraste de 4,5:1 par rapport à leur couleur d’arrière-plan. (ASSETS-6884, ASSETS-6865)
 * Valeurs non valides pour certains attributs ARIA lors de l’enregistrement d’une collection dynamique. (ASSETS-6882)
 * Lorsque vous enregistrez une collection dynamique, certaines étiquettes ne sont pas correctement associées au lecteur d’écran. (ASSETS-6881)
@@ -218,7 +218,9 @@ ht-degree: 28%
 
 >[!IMPORTANT]
 >
->Adobe ne recommande pas de supprimer ou de désinstaller le [!DNL Experience Manager] Package 6.5.15.0. Par conséquent, avant d’installer le module, vous devez créer une sauvegarde de la variable `crx-repository` au cas où vous auriez besoin de la restaurer. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Adobe ne recommande pas de supprimer ou de désinstaller le [!DNL Experience Manager] Package 6.5.15.0. Par conséquent, avant d’installer le module, vous devez créer une sauvegarde de la variable `crx-repository` au cas où vous auriez besoin de la restaurer. <!-- UPDATE FOR EACH NEW RELEASE -->
+> * Pour obtenir des instructions sur l’installation du Service Pack pour AEM Forms, voir [Instructions d’installation du Service Pack AEM Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+
 
 ### Installation du pack de services sur [!DNL Experience Manager] 6.5 {#install-service-pack}
 
@@ -259,38 +261,9 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 1. Le lot OSGi `org.apache.jackrabbit.oak-core` est version 1.22.13 ou ultérieure (Utiliser la console web : `/system/console/bundles`). <!-- NPR-39436 for 6.5.15.0 --> <!-- OAK VERSION -MAY- NEED TO BE UPDATED FOR EACH NEW RELEASE -->
 
-### Installez le module complémentaire [!DNL Experience Manager] Forms. {#install-aem-forms-add-on-package}
+### Installer le Service Pack sur [!DNL Experience Manager] Forms {#install-service-pack-on-aemforms}
 
->[!NOTE]
->
->Passez cette étape si vous n’utilisez pas [!DNL Experience Manager] Forms.
-
-<!-- 
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package a week after the scheduled [!DNL Experience Manager] Service Pack release.
--->
-
-1. Assurez-vous que vous avez installé le [!DNL Experience Manager] Service pack.
-1. Téléchargez le module complémentaire Forms correspondant répertorié dans les [Mises à jour d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr#forms-updates) pour votre système d’exploitation.
-1. Installez le module complémentaire Forms comme décrit dans la section [Installation des modules complémentaires AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md#install-aem-forms-add-on-package).
-1. Si vous utilisez des lettres dans Experience Manager 6.5 Forms, installez le [dernier module de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr#forms-updates).
-
-### Installation d’[!DNL Experience Manager] Forms sous JEE {#install-aem-forms-jee-installer}
-
->[!NOTE]
->
->Passez cette étape si vous n’utilisez pas AEM Forms sous JEE. Les correctifs d’[!DNL Experience Manager] Forms sous JEE sont fournis dans un programme d’installation distinct.
-
-Effectuez les étapes suivantes pour tous les environnements d’AEM Forms on JEE utilisant des serveurs d’applications autres que JBoss EAP 7.4.0.
-1. Installer [Correctif d’AEM Forms JEE](jee-patch-installer-65.md). Le comprend tous les problèmes résolus pour tous les composants d’AEM 6.5 Forms on JEE.
-1. Installez le [Fragment pour AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar). Le fragment ajoute les dépendances requises pour installer AEM Service Pack 15 (6.5.15.0).
-1. Une fois le fragment installé, attendez que le serveur d’applications se stabilise.
-1. [Installation du Service Pack sur Experience Manager 6.5](#install-service-pack).
-
-   >[!NOTE]
-   >
-   >Si vous installez la dernière version [Service Pack AEM (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), avant d’installer le [Fragment pour AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) dans votre environnement Forms on JEE d’AEM 6.5, le lot CRX/et la page de début peuvent cesser de fonctionner et vous rencontrez l’erreur de service non disponible. Pour résoudre le problème, effectuez les actions [répertorié ici](/help/forms/using/aem-service-pack-installation-solution.md).
-
-1. Installez le [dernier module complémentaire Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr), supprimez le module complémentaire Forms du `crx-repository\install` et redémarrez le serveur.
+Pour obtenir des instructions sur l’installation du Service Pack sur AEM Forms, voir [Instructions d’installation du Service Pack AEM Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
@@ -317,7 +290,7 @@ Vous trouverez ci-dessous une liste des fonctionnalités signalées comme obsol�
 
 Vérifiez si vous utilisez une de ces fonctionnalités dans un déploiement. Envisagez également de changer de mise en œuvre et d’utiliser une autre option.
 
-| Zone | Fonctionnalité | Remplacement |
+| Domaine | Fonctionnalité | Remplacement |
 |---|---|---|
 | Intégrations | L’**[!UICONTROL Accord préalable des services cloud AEM]** est obsolète car l’intégration d’[!DNL Experience Manager] et d’[!DNL Adobe Target] est mise à jour dans [!DNL Experience Manager] 6.5. L’intégration prend en charge l’API Adobe Target Standard. L’API utilise l’authentification au moyen d’Adobe IMS et d’[!DNL Adobe I/O Runtime]. Elle prend en charge le rôle croissant d’Adobe Launch pour utiliser les pages [!DNL Experience Manager] à des fins d’analyse et de personnalisation, l’assistant d’accord préalable n’a donc aucune utilité sur le plan fonctionnel. | Configurez des connexions système, l’authentification Adobe IMS et les intégrations d’[!DNL Adobe I/O Runtime] à l’aide des services cloud [!DNL Experience Manager] correspondants. |
 | Connecteurs | Adobe JCR Connector for Microsoft® SharePoint 2010 et Microsoft® SharePoint 2013 est obsolète dans [!DNL Experience Manager] 6.5. | S/O |
