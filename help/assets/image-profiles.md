@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
+source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
 workflow-type: tm+mt
-source-wordcount: '3005'
-ht-degree: 93%
+source-wordcount: '3000'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 >[!IMPORTANT]
 >
 >• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
-・ Les profils d’image ne s’appliquent pas aux fichiers de PDF, de GIF animé ou INDD (Adobe InDesign).
+• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
@@ -55,7 +55,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
 
 >[!IMPORTANT]
 • Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
-・ Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 | Option | Quand l’utiliser | Description |
 | --- | --- | --- |
@@ -78,7 +78,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
 | Rayon | Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.  La plage est 0 à 250. |
 | Seuil | Détermine la plage de contraste à ignorer lorsque le filtre de masquage flou est appliqué. En d’autres termes, cette option définit l’écart recherché entre les pixels et la zone environnante avant qu’ils ne soient considérés comme des pixels de contour et ne soient accentués. Pour éviter d’introduire du bruit, essayez des valeurs comprises entre 0 et 255. |
 
-L’accentuation est décrite dans la section [Accentuation des images](/help/assets/assets/sharpening_images.pdf).
+L’accentuation est décrite dans [Accentuation des images](/help/assets/assets/sharpening_images.pdf).
 
 ## Création de profils d’image Dynamic Media {#creating-image-profiles}
 
