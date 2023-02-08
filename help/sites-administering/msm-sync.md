@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
 workflow-type: tm+mt
-source-wordcount: '2697'
-ht-degree: 100%
+source-wordcount: '2696'
+ht-degree: 99%
 
 ---
 
@@ -172,7 +172,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Dans la Live Copy, cette action de synchronisation met à jour les références, comme les liens « J’aime ».<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
+   <td><p>Sur la Live Copy, cette action de synchronisation met à jour les références telles que les liens.<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -279,7 +279,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation pour lesquelles
 | contentDelete | Action de suppression de contenu MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentDeleteActionFactory |
 | contentUpdate | Action de mise à jour de contenu MSM CQ | com.day.cq.wcm.msm.impl.actions.ContentUpdateActionFactory |
 | PageMoveAction | Action de déplacement de page MSM CQ | com.day.cq.wcm.msm.impl.actions.PageMoveActionFactory |
-| referenceUpdate | Action de mise à jour de références MSM CQ | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
+| referencesUpdate | Action de mise à jour de références MSM CQ | com.day.cq.wcm.msm.impl.actions.ReferencesUpdateActionFactory |
 
 Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
 
