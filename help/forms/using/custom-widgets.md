@@ -1,7 +1,7 @@
 ---
 title: Créer des apparences personnalisées dans les formulaires HTML5
 seo-title: Create custom appearances in HTML5 forms
-description: 'Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés. '
+description: Vous pouvez ajouter des widgets personnalisés aux formulaires pour périphériques mobiles. Vous pouvez étendre les widgets jQuery existants ou développer vos propres widgets personnalisés.
 seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: a9013c3d-20c7-45c9-be24-8e9d4525eff8
 contentOwner: robhagat
@@ -12,8 +12,8 @@ discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -95,13 +95,13 @@ La configuration du widget est fournie sous la forme d’un objet JSON (ensemble
 ```
 *{*
 
-*“identifier1” : “customwidgetname”,
-“identifier2” : “customwidgetname2”,
+*"identifier1" : "customwidgetname",
+"identifier2" : "customwidgetname2",
 ..
 }*
 ```
 
-où « identifiant » est un sélecteur CSS jQuery qui représente un champ spécifique, un ensemble de champs d’un type particulier ou tous les champs. La liste suivante regroupe les valeurs de l’identifiant dans différents cas :
+où l’« identifiant » est un sélecteur CSS jQuery qui représente un champ particulier, un ensemble de champs d’un type particulier ou tous les champs. La liste suivante regroupe les valeurs de l’identifiant dans différents cas :
 
 | Type d’identificateur | formulaire | Description |
 |---|---|---|
