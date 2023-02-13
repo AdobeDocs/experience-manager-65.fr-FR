@@ -12,7 +12,7 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '609'
 ht-degree: 100%
 
@@ -446,7 +446,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Segmentation</td>
-   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur :<br /> </td>
+   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur ou la visiteuse.<br /> </td>
   </tr>
   <tr>
    <td>clients</td>
