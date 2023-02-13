@@ -1,5 +1,5 @@
 ---
-title: Choix de l’interface utilisateur
+title: Choisir votre interface utilisateur
 seo-title: Selecting your UI
 description: Configurez l’interface que vous utiliserez pour travailler dans AEM.
 seo-description: Configure which interface you will use to work in AEM
@@ -12,13 +12,13 @@ discoiquuid: e418d330-f234-411d-8cad-3fd9906dcbee
 docset: aem65
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '743'
 ht-degree: 100%
 
 ---
 
-# Choix de l’interface utilisateur{#selecting-your-ui}
+# Choisir votre interface utilisateur{#selecting-your-ui}
 
 Bien que l’IU tactile soit désormais l’IU standard et que la parité des fonctions soit presque atteinte pour ce qui est de l’administration et de la modification des sites, il peut arriver que l’utilisateur souhaite passer à l’[IU classique](/help/sites-classic-ui-authoring/classicui.md). Pour ce faire, plusieurs possibilités s’offrent à lui.
 
