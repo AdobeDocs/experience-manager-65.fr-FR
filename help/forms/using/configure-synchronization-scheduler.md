@@ -1,5 +1,5 @@
 ---
-title: Configuration du planificateur de synchronisation
+title: Configurer le planificateur de synchronisation
 seo-title: Configuring the synchronization scheduler
 description: Apprenez à migrer et à synchroniser des ressources, à configurer le planificateur de synchronisation et à organiser les ressources dans des dossiers.
 seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
@@ -12,13 +12,13 @@ docset: aem65
 role: Admin
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
 ht-degree: 100%
 
 ---
 
-# Configuration du planificateur de synchronisation {#configuring-the-synchronization-scheduler}
+# Configurer le planificateur de synchronisation {#configuring-the-synchronization-scheduler}
 
 Par défaut, le planificateur de synchronisation s’exécute toutes les 3 minutes pour synchroniser toutes les ressources modifiées et mises à jour dans le référentiel via LiveCycle Workbench 11. Les applications contenant des formulaires ou des ressources sont visibles dans l’interface utilisateur d’AEM Forms une fois le processus de synchronisation terminé.
 
