@@ -3,9 +3,9 @@ title: Comment générer et utiliser des hachages dans les PDF forms dynamiques�
 description: Génération et utilisation de hachages dans les PDF forms dynamiques
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Suivez les étapes ci-dessous pour essayer le deuxième exemple :
    1. Le mot de passe pour Man est `bob`.
    1. Le mot de passe pour Woman est `alice`.
 1. Lorsque vous déplacez la sélection hors des champs de mot de passe ou appuyez sur la touche Entrée, le hachage du mot de passe que vous avez saisi est généré automatiquement et comparé au hachage stocké du mot de passe correct en arrière-plan. Les mots de passe corrects et hachés sont stockés dans les champs de texte invisibles intitulés `passwd_man_hashed` et `passwd_woman_hashed`. Si vous saisissez le mot de passe correct pour l’homme, les champs de texte intitulés `Man 1` et `Man 2` sont rendus accessibles afin que vous puissiez y saisir du texte. Le même comportement s’applique aux champs pour Woman.
-1. Vous pouvez éventuellement cliquer sur le bouton &quot;supprimer les mots de passe&quot;, ce qui désactive les champs de texte et modifie leur bordure.
+1. Vous pouvez éventuellement cliquer sur le bouton « supprimer les mots de passe », ce qui désactive les champs de texte et modifie leur bordure.
 
 Le code permettant de comparer les deux valeurs hachées et d’activer les champs de texte est simple :
 
@@ -118,7 +118,7 @@ Je vous encourage à continuer à explorer les deux exemples de fichiers PDF.  V
 
 * [Ronald Rivest](https://fr.wikipedia.org/wiki/Ronald_Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
-* [Collision de hachage](https://en.wikipedia.org/wiki/Hash_collision)
-* [Tableau arc-en-ciel](https://en.wikipedia.org/wiki/Rainbow_table)
+* [Collision de hachage](https://fr.wikipedia.org/wiki/Collision_(informatique))
+* [Tableau arc-en-ciel](https://fr.wikipedia.org/wiki/Rainbow_table)
 * [Page d’accueil du projet JavaScript MD5](https://pajhome.org.uk/crypt/md5/)
 * [Page d’accueil du projet jsSHA2](https://anmar.eu.org/projects/jssha2/)
