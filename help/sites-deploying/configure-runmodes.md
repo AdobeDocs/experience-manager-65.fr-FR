@@ -12,9 +12,9 @@ discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -43,11 +43,11 @@ Les modes d’exécution d’installation sont fournis prêts à l’emploi :
 * `samplecontent`
 * `nosamplecontent`
 
-Ce sont deux paires de modes d’exécution mutuellement exclusifs. Par exemple, vous pouvez :
+Voici deux paires de modes d’exécution qui sont mutuellement exclusifs. Par exemple, vous pouvez :
 
-* définir `author` ou `publish`, pas les deux en même temps
+* définir le mode `author` ou `publish`, mais pas les deux en même temps ;
 
-* combiner `author` avec `samplecontent` ou `nosamplecontent` (mais pas les deux)
+* combiner le mode `author` au mode `samplecontent` ou `nosamplecontent` (mais pas aux deux).
 
 >[!CAUTION]
 >
@@ -93,7 +93,7 @@ Le mode d’exécution est indiqué par un suffixe ajouté au nom du dossier. Ce
 
 * `config.author`
 
-   Utilisé pour le mode d’exécution Auteur
+   Utilisé pour le mode d’exécution auteur
 
 * `config.publish`
 
@@ -101,7 +101,7 @@ Le mode d’exécution est indiqué par un suffixe ajouté au nom du dossier. Ce
 
 * `config.<run-mode>`
 
-   Utilisé pour le mode d’exécution applicable, par exemple, config
+   Utilisé pour le mode d’exécution applicable, par exemple « config »
 
 Pour plus d’informations sur la définition des différents nœuds de configuration dans ces dossiers et sur la création de configurations pour des combinaisons de plusieurs modes d’exécution, voir [Configuration OSGi dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 
@@ -124,7 +124,7 @@ Si vous avez défini des configurations pour plusieurs modes d’exécution, vou
 
 1. [ ](#using-the-sling-properties-file)
 1. [ ](#using-the-r-option)
-1. [propriétés système (](#using-a-system-property-in-the-start-script)
+1. [Propriétés système (](#using-a-system-property-in-the-start-script)
 
 1. [Détection du nom de fichier](#filename-detection-renaming-the-jar-file)
 
@@ -134,17 +134,17 @@ Lorsque vous utilisez un serveur d’application, vous pouvez également [défin
 
 Vous pouvez utiliser le fichier `sling.properties` pour définir le mode d’exécution requis :
 
-1. Modifiez le fichier de configuration :
+1. Modifiez le fichier de configuration :
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Ajoutez les propriétés suivantes : l’exemple suivant est destiné à l’auteur :
+1. Ajoutez les propriétés suivantes. L’exemple suivant concerne le mode d’exécution auteur :
 
    `sling.run.modes=author`
 
 ### Utilisation de l’option -r {#using-the-r-option}
 
-Un mode d’exécution personnalisé peut être activé à l’aide de la fonction `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
+Un mode d’exécution personnalisé peut être activé à l’aide de l’option `-r` lors du lancement du démarrage rapide. Par exemple, utilisez la commande ci-dessous pour lancer une instance AEM avec le mode d’exécution défini sur dev. ``
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -154,16 +154,16 @@ java -jar cq-56-p4545.jar -r dev
 
 Une propriété système dans le script de démarrage peut être utilisée pour spécifier le mode d’exécution.
 
-* Par exemple, utilisez ce qui suit pour lancer une instance en tant qu’instance de publication de production située aux États-Unis :
+* Par exemple, utilisez le code ci-dessous pour lancer une instance de publication d’exploitation localisée aux États-Unis :
 
    `-Dsling.run.modes=publish,prod,us`
 
 ### Détection de nom de fichier : attribution d’un nouveau nom au fichier JAR {#filename-detection-renaming-the-jar-file}
 
-Les deux modes d&#39;exécution d&#39;installation suivants peuvent être activés en renommant le fichier jar d&#39;installation avant l&#39;installation :
+Les deux modes d’exécution d’installation ci-dessous peuvent être activés en renommant le fichier JAR d’installation avant l’installation :
 
-* publish
-* auteur 
+* publication
+* auteur
 
 Le fichier JAR doit suivre la convention de dénomination :
 
@@ -183,6 +183,6 @@ dans le fichier :
 
 `WEB-INF/web.xml`
 
-Il se trouve dans le fichier `war` d’AEM et doit être mis à jour avant le déploiement.
+Il se trouve dans le fichier `war` d’AEM et doit être mis à jour avant le déploiement.
 
-Pour plus d’informations, voir [Installation d’AEM avec un serveur d’application](/help/sites-deploying/application-server-install.md).
+Pour plus d’informations, consultez [Installation d’AEM avec un serveur d’application](/help/sites-deploying/application-server-install.md).
