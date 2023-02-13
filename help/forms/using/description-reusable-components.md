@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1231'
 ht-degree: 100%
 
@@ -248,10 +248,10 @@ L’espace de travail AEM Forms est constitué de composants [réutilisables](/
     <ul>
      <li><p>Extends : filter view</p> </li>
      <li><p>Field: queue: {name, qid, isDefault, type }</p> </li>
-     <li><p>Champ : query : string</p> </li>
-     <li><p>Champ : parentView : vue filterlist</p> </li>
-     <li><p>Champ : parentModel : modèle tasklist</p> </li>
-     <li><p>Champ : utility</p> </li>
+     <li><p>Field : query : string</p> </li>
+     <li><p>Field : parentView : filterlist view</p> </li>
+     <li><p>Field : parentModel : tasklist model</p> </li>
+     <li><p>Field : utility</p> </li>
     </ul> </td>
   </tr>
   <tr>
