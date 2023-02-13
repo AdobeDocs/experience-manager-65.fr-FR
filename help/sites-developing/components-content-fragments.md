@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '962'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -117,11 +117,11 @@ En interne, Sling Rewriter est utilisé pour ce rendu. La configuration respecti
 
 >[!CAUTION]
 >
->Si vous ajustez/superposez la configuration du module de réécriture :
+>Si vous ajustez/superposez la configuration du module de réécriture :
 >
 >* `/libs/dam/config/rewriter/cfm`
 >
->puis la fonction `serializerType` **must** être mis à jour vers :
+>alors le `serializerType` **doit** être mis à jour vers :
 >
 >* `serializerType="html5-serializer"`
 
