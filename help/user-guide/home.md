@@ -5,9 +5,9 @@ description: Présentation de toutes les ressources essentielles pour comprendre
 seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
