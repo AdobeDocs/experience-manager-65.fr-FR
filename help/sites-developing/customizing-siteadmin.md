@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de la console Sites web (IU classique)
+title: Personnaliser la console Sites web (IU classique)
 seo-title: Customizing the Websites Console (Classic UI)
 description: La console Administration de sites web peut être étendue pour afficher des colonnes personnalisées.
 seo-description: The Websites Administration console can be extended to display custom columns
@@ -12,13 +12,13 @@ discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
 ht-degree: 100%
 
 ---
 
-# Personnalisation de la console Sites web (IU classique){#customizing-the-websites-console-classic-ui}
+# Personnaliser la console Sites web (IU classique){#customizing-the-websites-console-classic-ui}
 
 ## Ajout d’une colonne personnalisée à la console Sites web (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
