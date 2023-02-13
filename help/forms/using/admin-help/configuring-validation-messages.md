@@ -1,5 +1,5 @@
 ---
-title: Configuration des messages de validation
+title: Configurer les messages de validation
 seo-title: Configuring validation messages
 description: Découvrez comment spécifier l’affichage des messages de validation et leur emplacement par rapport au formulaire renvoyé dans le navigateur Web.
 seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 14314383-5228-4904-98c1-586f48a1142c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
 ht-degree: 100%
 
 ---
 
-# Configuration des messages de validation {#configuring-validation-messages}
+# Configurer les messages de validation {#configuring-validation-messages}
 
 Pour les formulaires rendus au format HTML, les erreurs de validation de formulaire qui surviennent s’affichent pour consultation par l’utilisateur. Vous pouvez personnaliser le type d’affichage des messages de validation. Selon l’endroit où les messages de validation sont affichés, vous pouvez également contrôler l’emplacement du message dans le formulaire et la taille du cadre.
 
