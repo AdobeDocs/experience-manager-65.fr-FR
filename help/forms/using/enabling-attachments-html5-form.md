@@ -1,5 +1,5 @@
 ---
-title: Activation des pièces jointes à un formulaire HTML5
+title: Activer les pièces jointes pour un formulaire HTML5
 seo-title: Enabling attachments for an HTML5 form
 description: Par défaut, la prise en charge de pièces jointes des formulaires HTML5 est désactivée.
 seo-description: By default, the attachment support for HTML5 forms is disabled.
@@ -11,13 +11,13 @@ discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 feature: Mobile Forms
 exl-id: 68912260-179a-4d1b-b944-0a1777c021ac
 source-git-commit: 6e2a0f053a1f6989524e9ae2b1dcb001b0397ac6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
 ht-degree: 100%
 
 ---
 
-# Activation des pièces jointes à un formulaire HTML5 {#enabling-attachments-for-an-html-form}
+# Activer les pièces jointes pour un formulaire HTML5 {#enabling-attachments-for-an-html-form}
 
 Vous pouvez télécharger, prévisualiser, et envoyer des pièces jointes avec des formulaires HTML5. Par défaut, la prise en charge des pièces jointes est désactivée. Pour activer la prise en charge des pièces jointes :
 
