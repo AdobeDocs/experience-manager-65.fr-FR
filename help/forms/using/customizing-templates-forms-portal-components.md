@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de modèles pour les composants Forms Portal
+title: Personnaliser des modèles pour les composants Forms Portal
 seo-title: Customizing templates for forms portal components
 description: Affichage de métadonnées personnalisées dans les listes de formulaires
 seo-description: Display custom metadata in form listing
@@ -11,14 +11,14 @@ discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '1225'
 ht-degree: 100%
 
 ---
 
-# Personnalisation de modèles pour les composants Forms Portal{#customizing-templates-for-forms-portal-components}
+# Personnaliser des modèles pour les composants Forms Portal{#customizing-templates-for-forms-portal-components}
 
 ## Prérequis {#prerequisites}
 
@@ -130,7 +130,7 @@ Par exemple, pour l’en-tête &quot;Title&quot; dans la vue Grille, la valeur d
 
 * **Title :** titre du formulaire
 * **formUrl** : URL permettant d’effectuer le rendu du formulaire au format HTML.
-* **target** : attribut cible du lien. Les valeurs valides sont les suivantes : &quot;_blank&quot; et &quot;_self&quot;.
+* **target** : attribut cible du lien. Les valeurs valides sont les suivantes : « _blank » et « _self ».
 * **linkText** : légende du lien.
 
 ### Composant Brouillons et envois {#drafts-amp-submissions-component}
