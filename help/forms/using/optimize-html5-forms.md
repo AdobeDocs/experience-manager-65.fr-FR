@@ -1,5 +1,5 @@
 ---
-title: Optimisation des formulaires HTML5
+title: Optimiser les formulaires HTML5
 seo-title: Optimizing HTML5 forms
 description: Vous pouvez optimiser la taille de sortie des formulaires HTML5.
 seo-description: You can optimize the output size of the HTML5 forms.
@@ -11,13 +11,13 @@ discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
 ht-degree: 100%
 
 ---
 
-# Optimisation des formulaires HTML5 {#optimizing-html-forms}
+# Optimiser les formulaires HTML5 {#optimizing-html-forms}
 
 Les formulaires HTML5 génèrent des formulaires au format HTML5. Le résultat peut être volumineux en fonction de facteurs comme la taille du formulaire et les images qu’il contient. Pour optimiser le transfert de données, l’approche recommandée consiste à compresser la réponse HTML à l’aide du serveur Web à partir duquel la requête est traitée. Cette approche permet de réduire la taille de la réponse, le trafic réseau et le temps nécessaire pour transmettre les données entre le serveur et le client.
 
