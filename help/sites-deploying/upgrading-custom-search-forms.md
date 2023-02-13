@@ -1,5 +1,5 @@
 ---
-title: Mise à niveau des formulaires de recherche personnalisée
+title: Mettre à niveau les formulaires de recherche personnalisés
 seo-title: Upgrading Custom Search Forms
 description: Cet article décrit les réglages nécessaires après une mise à niveau pour les formulaires de recherche personnalisés.
 seo-description: This article details the adjustments that are required after an upgrade in order for the custom search forms to function.
@@ -12,13 +12,13 @@ discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1685'
 ht-degree: 100%
 
 ---
 
-# Mise à niveau des formulaires de recherche personnalisée{#upgrading-custom-search-forms}
+# Mettre à niveau les formulaires de recherche personnalisés{#upgrading-custom-search-forms}
 
 Dans AEM 6.2, l’emplacement du référentiel où les formulaires de recherche personnalisée sont stockées a changé. Lors de la mise à niveau, ils sont déplacés de leur position de la version 6.1 :
 
@@ -42,7 +42,7 @@ Vous pouvez modifier la propriété en procédant comme suit :
 
 1. Ouvrez CRXDE Lite en accédant à `https://server:port/crx/de/index.jsp`.
 1. Accédez à l’emplacement du nœud qui doit être ajusté, tel que spécifié dans la liste des [formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) ci-dessous.
-1. Cliquez sur le nœud . Dans le volet droit des propriétés, cliquez sur la propriété **sling:resourceType**, puis modifiez-la.
+1. Cliquez sur le nœud. Dans le volet droit des propriétés, cliquez sur la propriété **sling:resourceType**, puis modifiez-la.
 1. Enfin, enregistrez les modifications en appuyant sur le bouton **Tout enregistrer**.
 
 ## Liste de formulaires de recherche personnalisée {#list-of-custom-search-forms}
@@ -120,7 +120,7 @@ Dans AEM 6.1, le prédicat de texte intégral standard fait partie du formulair
  <tbody>
   <tr>
    <td>Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1<br /> <br /> </td>
-   <td>tags</td>
+   <td>balises</td>
   </tr>
   <tr>
    <td><p>Type de ressource dans la version 6.1</p> </td>
@@ -488,7 +488,7 @@ Action : ajustez la propriété resourceType (ajoutez « /coral » comme dans
 | Nœud(s) dans le formulaire de recherche par défaut dans la version 6.1 | style |
 |---|---|
 | Type de ressource dans la version 6.1 | dam/gui/components/admin/customsearch/searchpredicates/tagsfilterpredicate |
-| Type de ressource dans la version 6.2 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicates |
+| Type de ressource dans la version 6.2 | cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate |
 
 **Actions :**
 
