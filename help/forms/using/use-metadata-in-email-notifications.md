@@ -1,5 +1,5 @@
 ---
-title: 'Utilisation de métadonnées dans une notification électronique '
+title: Utilisation de métadonnées dans une notification électronique
 seo-title: Use metadata in an email notification
 description: Utilisation des métadonnées pour renseigner les informations dans une notification électronique de processus de formulaires
 seo-description: Use metadata to populate information in a forms workflow email notification
@@ -8,8 +8,8 @@ topic-tags: publish
 discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9cf4a68a2b3312fe53282e2fd4ec81988f2fd453
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '897'
 ht-degree: 100%
 
