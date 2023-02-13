@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '970'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Incorporation d’un formulaire adaptatif dans une page web externe{#embed-adaptive-form-in-external-web-page}
 
-Vous pouvez [incorporer des formulaires adaptatifs dans une page d’AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou une page Web hébergée en dehors d’AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel et les utilisateurs peuvent le remplir et le soumettre sans quitter la page. Il permet à l’utilisateur de rester dans le contexte des autres éléments de la page Web et d’interagir simultanément avec le formulaire..
+Vous pouvez [incorporer des formulaires adaptatifs dans une page d’AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites.md) ou une page Web hébergée en dehors d’AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel et les utilisateurs et utilisatrices peuvent le remplir et l’envoyer sans quitter la page. Il permet à l’utilisateur ou à l’utilisatrice de rester dans le contexte des autres éléments de la page Web et d’interagir simultanément avec le formulaire.
 
 ## Prérequis {#prerequisites}
 
