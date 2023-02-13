@@ -1,5 +1,5 @@
 ---
-title: Mise en forme des éléments pour les formulaires adaptatifs
+title: Mettre en forme des éléments pour les formulaires adaptatifs
 seo-title: Styling constructs for adaptive forms
 description: La structure LESS permet de personnaliser l’aspect des formulaires adaptatifs.
 seo-description: Use LESS framework to customize appearance of adaptive forms.
@@ -11,13 +11,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2308'
 ht-degree: 100%
 
 ---
 
-# Mise en forme des éléments pour les formulaires adaptatifs{#styling-constructs-for-adaptive-forms}
+# Mettre en forme des éléments pour les formulaires adaptatifs{#styling-constructs-for-adaptive-forms}
 
 ## Prérequis {#prerequisites}
 
