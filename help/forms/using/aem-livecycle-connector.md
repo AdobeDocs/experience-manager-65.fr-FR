@@ -1,5 +1,5 @@
 ---
-title: Connexion d’AEM Forms à Adobe LiveCycle
+title: Connecter AEM Forms à Adobe LiveCycle
 seo-title: Connecting AEM Forms with Adobe LiveCycle
 description: AEM LiveCycle Connector vous permet de démarrer LiveCycle ES4 Document Services à partir des applications et des processus AEM.
 seo-description: AEM LiveCycle connector allows you to start LiveCycle ES4 Document Services from within AEM apps and workflows.
@@ -11,13 +11,13 @@ discoiquuid: 7e404b45-1302-4dd1-b3c9-3f47fedb5f94
 role: Admin
 exl-id: 562f8a22-cbab-4915-bc0d-da9bea7d18fa
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1006'
 ht-degree: 100%
 
 ---
 
-# Connexion d’AEM Forms à Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
+# Connecter AEM Forms à Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
 Adobe Experience Manager (AEM) LiveCycle Connector permet d’appeler aisément Adobe LiveCycle ES4 Document Services à partir de processus et d’applications Web. LiveCycle fournit un SDK client enrichi, qui permet aux applications clientes de démarrer les services LiveCycle à l’aide d’API Java. AEM LiveCycle Connector simplifie l’utilisation de ces API dans l’environnement OSGi.
 
@@ -280,7 +280,7 @@ Les services suivants sont disponibles :
 
 ### Groupe du client Adobe LiveCycle Workflow {#adobe-livecycle-workflow-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.idp.workflow.client.WorkflowServiceClient
 
@@ -296,7 +296,7 @@ Le service suivant est disponible :
 
 ### Groupe du client Adobe LiveCycle PDF Generator {#adobe-livecycle-pdf-generator-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.livecycle.generatepdf.client.GeneratePdfServiceClient
 
@@ -330,7 +330,7 @@ Les services suivants sont disponibles :
 
 ### Groupe du client Adobe LiveCycle Assembler {#adobe-livecycle-assembler-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.livecycle.assembler.client.AssemblerServiceClient
 
@@ -346,7 +346,7 @@ Le service suivant est disponible :
 
 ### Groupe du client Adobe LiveCycle Form Data Integration {#adobe-livecycle-form-data-integration-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.livecycle.formdataintegration.client.FormDataIntegrationClient
 
@@ -362,7 +362,7 @@ Le service suivant est disponible :
 
 ### Groupe du client Adobe LiveCycle Forms {#adobe-livecycle-forms-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.livecycle.formsservice.client.FormsServiceClient
 
@@ -394,7 +394,7 @@ Le service suivant est disponible :
 
 ### Groupe du client Adobe LiveCycle Reader Extensions {#adobe-livecycle-reader-extensions-client-bundle}
 
-Le service suivant est disponible : 
+Le service suivant est disponible :
 
 * com.adobe.livecycle.readerextensions.client.ReaderExtensionsServiceClient
 
