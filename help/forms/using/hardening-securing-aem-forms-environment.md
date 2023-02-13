@@ -1,5 +1,5 @@
 ---
-title: Renforcement et sécurisation d’AEM Forms dans un environnement OSGi
+title: Renforcer et sécuriser AEM Forms dans un environnement OSGi
 seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Découvrez des conseils et des pratiques recommandées pour sécuriser AEM Forms sur un serveur OSGi.
 seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
@@ -9,13 +9,13 @@ discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
 ht-degree: 100%
 
 ---
 
-# Renforcement et sécurisation d’AEM Forms dans un environnement OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
+# Renforcer et sécuriser AEM Forms dans un environnement OSGi {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 Découvrez des conseils et des pratiques recommandées pour sécuriser AEM Forms sur un serveur OSGi.
 
