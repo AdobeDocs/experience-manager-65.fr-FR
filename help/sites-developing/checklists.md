@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
 ht-degree: 100%
 
