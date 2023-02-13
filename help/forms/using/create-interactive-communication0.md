@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : Créer une communication interactive "'
+title: "Didacticiel\_: Créer une communication interactive "
 seo-title: Create an Interactive Communication for Print and Web
 description: Créer une communication interactive en utilisant tous les blocs de construction
 seo-description: Create an Interactive Communication using all building blocks
@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2004'
 ht-degree: 100%
 
@@ -95,7 +95,7 @@ Voici la liste des ressources qui ont déjà été créées dans ce didacticiel 
 1. Appuyez sur le composant Image et sélectionnez ![configure_icon](assets/configure_icon.png) (Configurer). Les propriétés de l’image s’affichent dans le volet gauche :
 
    1. Spécifiez **PayNow** comme nom de l’image dans le champ **Nom**.
-   1. Appuyez sur **Télécharger**, sélectionnez l’image   enregistrée sur le système de fichiers local puis appuyez sur **Ouvrir**.
+   1. Appuyez sur **Télécharger**, sélectionnez l’image enregistrée sur le système de fichiers local puis appuyez sur **Ouvrir**.
    1. Appuyez sur ![done_icon](assets/done_icon.png) pour enregistrer les propriétés de l’image.
 
 1. Répétez les étapes 13 et 14 pour ajouter l’image **ValueAddedServices** à la zone cible **ValueAddedServices**.
