@@ -1,5 +1,5 @@
 ---
-title: Implémentation de l’appellation des pages côté serveur pour Analytics
+title: Implémentation de la dénomination des pages côté serveur pour Analytics
 seo-title: Implementing Server-Side Page Naming for Analytics
 description: Adobe Analytics utilise la propriété s.pageName pour identifier les pages de façon unique et pour associer les données qui sont collectées pour les pages.
 seo-description: Adobe Analytics uses the s.pageName property to uniquely identify pages and to associate the data that is collected for the pages
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '858'
 ht-degree: 100%
 
 ---
 
-# Implémentation de l’appellation des pages côté serveur pour Analytics{#implementing-server-side-page-naming-for-analytics}
+# Implémentation de la nomination des pages côté serveur pour Analytics{#implementing-server-side-page-naming-for-analytics}
 
 Adobe Analytics utilise la propriété `s.pageName` pour identifier les pages de façon unique et pour associer les données qui sont collectées pour les pages. En règle générale, vous effectuez les tâches suivantes dans AEM afin d’attribuer à cette propriété une valeur qu’AEM envoie à Analytics :
 
