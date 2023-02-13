@@ -10,7 +10,7 @@ discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3511'
 ht-degree: 100%
 
@@ -207,7 +207,7 @@ L’élément comporte des outils de zoom dans sa partie inférieure. Sélection
 
 ![](do-not-localize/chlimage_1-3.png)
 
-### Fenêtre déroulante {#flyout}
+### Flyout {#flyout}
 
 Dans le composant Fenêtre déroulante HTML5, l’élément s’affiche sous la forme d’un écran partagé : à gauche se trouve l’élément à la taille spécifiée, à droite la partie sur laquelle le zoom a été effectué. Sélectionnez **[!UICONTROL Modifier]** pour pouvoir configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic (Scene7)](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
@@ -331,9 +331,9 @@ Si vous disposez de plusieurs configurations, Experience Manager affiche la [co
 >* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les ressources publiées dans Dynamic Media Classic (Scene7), tout comme les ressources non publiées, apparaissent dans le navigateur de contenu de Dynamic Media Classic (Scene7).
 >* Si **[!UICONTROL Dynamic Media Classic (Scene7)]** ou l’icône **[!UICONTROL S7]** n’apparaît pas comme option dans le navigateur de contenu, vous devez [configurer Dynamic Media Classic (Scene7) pour qu’il fonctionne avec Experience Manager](/help/sites-administering/scene7.md).
 >* Pour la vidéo, le navigateur de contenu Dynamic Media Classic (Scene7) prend en charge :
->   * Les visionneuses de vidéos adaptatives : il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
->   * Vidéo MP4 unique
->   * Vidéo F4V unique
+   >   * Les visionneuses de vidéos adaptatives : il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
+   >   * Vidéo MP4 unique
+   >   * Vidéo F4V unique
 
 
 ### Parcourir le contenu {#browsing-content-in-the-classic-ui}
