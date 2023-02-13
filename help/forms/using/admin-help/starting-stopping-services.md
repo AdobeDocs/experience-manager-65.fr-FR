@@ -1,5 +1,5 @@
 ---
-title: Démarrage et arrêt des services
+title: Démarrer et arrêter des services
 seo-title: Starting and stopping services
 description: Découvrez comment démarrer et arrêter des services associés aux modules AEM Forms et au serveur d’applications et à la base de données.
 seo-description: Learn how to start and stop services associated with AEM Forms modules and the application server and database.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '265'
 ht-degree: 100%
 
 ---
 
-# Démarrage et arrêt des services {#starting-and-stopping-services}
+# Démarrer et arrêter des services {#starting-and-stopping-services}
 
 Il existe deux types de services faisant partie d’AEM Forms :
 
