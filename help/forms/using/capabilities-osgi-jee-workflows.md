@@ -4,7 +4,7 @@ description: Actions et fonctionnalités des processus AEM sur OSGi et des proce
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '928'
 ht-degree: 100%
 
@@ -119,8 +119,8 @@ Les processus AEM de formulaire sur OSGi et les processus AEM Forms JEE (gestion
   </tr>
   <tr>
    <td>Signature tactile</td>
-   <td>Pris en charge</td>
-   <td>Pris en charge<br /> </td>
+   <td>Prise en charge</td>
+   <td>Prise en charge<br /> </td>
   </tr>
   <tr>
    <td>Modèles de courrier électronique personnalisés</td>
