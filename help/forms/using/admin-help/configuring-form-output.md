@@ -1,5 +1,5 @@
 ---
-title: Configuration de la sortie de formulaire
+title: Configurer la sortie de formulaire
 seo-title: Configuring form output
 description: Découvrez comment configurer la sortie de formulaire.
 seo-description: Learn how to configure form output.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
 ht-degree: 100%
 
 ---
 
-# Configuration de la sortie de formulaire{#configuring-form-output}
+# Configurer la sortie de formulaire{#configuring-form-output}
 
 ## Définition du type de sortie HTML renvoyée au navigateur Web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
