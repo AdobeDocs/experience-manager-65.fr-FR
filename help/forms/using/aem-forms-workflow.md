@@ -10,9 +10,9 @@ discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3681'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Avec les processus de révision et d’approbation pour les publics internes et 
 
 Vous pouvez utiliser des processus AEM pour créer rapidement des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, le démarrage de Documents Services, l’intégration du processus de signature Adobe Sign et des opérations similaires : par exemple, le traitement de l’application de cartes de crédit, les processus d’approbation de congés des employés et l’enregistrement d’un formulaire en tant que document PDF. De plus, ces processus peuvent être utilisés dans une entreprise ou sur le pare-feu réseau.
 
-Avec le processus basé sur l’utilisation de Forms sur OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des processus utilisent les fonctionnalités de boîte de messagerie AEM et AEM Workflow habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
+Avec le processus basé sur l’utilisation de Forms on OSGi, vous pouvez rapidement créer et déployer des processus pour différentes tâches sur la pile OSGi, sans avoir à installer la fonctionnalité Process Management complète sur la pile JEE. Le développement et la gestion des processus utilisent les fonctionnalités de boîte de messagerie AEM et AEM Workflow habituelles. Les processus forment la base de l’automatisation des processus réels d’entreprise, qui s’étendent sur plusieurs systèmes logiciels, réseaux, services et même organisations.
 
 Une fois configurés, ces processus peuvent être déclenchés manuellement pour terminer une exécution ou un processus défini par programmation lorsque les utilisateurs envoient un formulaire ou une lettre [Correspondence Management](/help/forms/using/cm-overview.md). Avec des fonctionnalités AEM Workflow améliorées, AEM Forms offre deux fonctionnalités distinctes mais similaires. Dans le cadre de votre stratégie de déploiement, vous devez décider laquelle vous convient le mieux. Référez-vous à la [comparaison](capabilities-osgi-jee-workflows.md) des workflows centrés sur les formulaires AEM sur OSGi et de la gestion des processus sur JEE. De plus, pour la topologie de déploiement, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
@@ -169,7 +169,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
    <td>Sélectionnez un <a href="../../forms/using/prepopulate-adaptive-form-fields.md#aem-forms-custom-prefill-service" target="_blank">service de préremplissage</a> pour le formulaire adaptatif.<br /> </td>
   </tr>
   <tr>
-   <td>Modèle de processus</td>
+   <td>Modèle de workflow</td>
    <td>Sélectionnez un <a href="../../forms/using/aem-forms-workflow.md#create-a-workflow-model">modèle de processus</a> pour la demande. Un modèle de processus se compose de la logique et du flux de processus d’entreprise. </td>
   </tr>
   <tr>
@@ -273,31 +273,31 @@ Vous pouvez utiliser les étapes Affecter une tâche et Envoyer un courrier éle
 
 ### Purge des instances de processus {#purge-workflow-instances}
 
-Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular) purge des instances de processus..
+Réduire le nombre d’instances de processus améliore les performances du moteur de processus. Vous pouvez donc purger régulièrement les instances de processus terminées ou en cours d’exécution du référentiel. Pour plus d’informations, consultez [Purge régulière des instances de processus](/help/sites-administering/workflows-administering.md#regular) purge des instances de processus. 
 
-## Paramétrer les données sensibles aux variables de workflow et les stocker dans des entrepôts de données externes {#externalize-wf-variables}
+## Paramétrer les données sensibles aux variables de workflow et les stocker dans des magasins de données externes {#externalize-wf-variables}
 
-Toutes les données envoyées des formulaires adaptatifs à [!DNL Experience Manager] les workflows peuvent avoir des PII (informations d’identification personnelles) ou SPD (données personnelles sensibles) des utilisateurs finaux de votre entreprise. Toutefois, il n’est pas obligatoire de stocker vos données dans [!DNL Adobe Experience Manager] [Référentiel JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). Vous pouvez externaliser le stockage des données de l’utilisateur final dans votre stockage de données géré (par exemple, le stockage Azure Blob) en paramétrant les informations dans [variables de workflow](/help/forms/using/variable-in-aem-workflows.md).
+Toutes les données envoyées à partir de formulaires adaptatifs vers des workflows [!DNL Experience Manager] peuvent avoir des PII (informations d’identification personnelles) ou SPD (données personnelles sensibles) des utilisateurs et utilisatrices finaux de votre entreprise. Toutefois, il n’est pas obligatoire de stocker vos données dans le [Référentiel JCR](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=fr) d’[!DNL Adobe Experience Manager]. Vous pouvez externaliser le stockage des données des utilisateurs et utilisatrices finaux dans votre stockage de données géré (par exemple, le stockage Azure Blob) en paramétrant les informations dans [variables de workflow](/help/forms/using/variable-in-aem-workflows.md).
 
-Dans un [!DNL Adobe Experience Manager] Workflow Forms, les données sont traitées et transmises par une série d’étapes de workflow au moyen de variables de workflow. Ces variables sont des propriétés nommées ou des paires clé-valeur stockées dans le noeud de métadonnées des instances de workflow ; par exemple `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Ces variables de workflow peuvent être externalisées dans un référentiel distinct autre que JCR, puis traitées par [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] fournit une API `[!UICONTROL UserMetaDataPersistenceProvider]` pour stocker les variables de workflow dans votre stockage externe géré. Pour en savoir plus sur l’utilisation de variables de workflow pour les banques de données détenues par le client dans [!DNL Adobe Experience Manager], voir [Administration des variables de workflow pour les banques de données externes](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe] fournit ce qui suit : [sample](https://github.com/adobe/workflow-variable-externalizer) pour stocker des variables d’un mappage de métadonnées de workflow au stockage Azure Blob, à l’aide de l’API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Sur les lignes similaires, vous pouvez utiliser l’exemple comme guide d’utilisation [UserMetaDataPersistenceProvider] API permettant d’externaliser les variables de workflow dans tout autre stockage de données externe à [!DNL Adobe Experience Manager] et gérez les mêmes.
+Dans un workflow [!DNL Adobe Experience Manager] Forms, les données sont traitées et transmises par une série d’étapes de workflow au moyen de variables de workflow. Ces variables sont des propriétés nommées ou des paires clé-valeur stockées dans le nœud de métadonnées des instances de workflow ; par exemple, `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Ces variables de workflow peuvent être externalisées dans un référentiel autre que JCR, puis traitées par des workflows [!DNL Adobe Experience Manager]. [!DNL Adobe Experience Manager] fournit une API `[!UICONTROL UserMetaDataPersistenceProvider]` pour stocker les variables de workflow dans votre stockage externe géré. Pour en savoir plus sur l’utilisation de variables de workflow pour les magasins de données détenus par les client(e)s dans [!DNL Adobe Experience Manager], reportez-vous à [Administration des variables de workflow pour les magasins de données externes](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe] fournit l’[exemple](https://github.com/adobe/workflow-variable-externalizer) suivant pour stocker des variables d’un mappage de métadonnées de workflow vers le stockage Azure Blob, à l’aide de l’API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Sur les lignes similaires, vous pouvez utiliser l’exemple comme guide d’utilisation de l’API [UserMetaDataPersistenceProvider] afin d’externaliser les variables de workflow de tout autre stockage de données externe vers [!DNL Adobe Experience Manager] et les gérer.
 
 >[!NOTE]
 >
->Lorsque vous stockez vos variables de workflow dans un stockage de données externe, reportez-vous aux pointeurs de la section [consignes relatives au stockage de données externe des workflows](#guidelines-workflows-external-data-storage).
+>Lorsque vous stockez vos variables de workflow dans un stockage de données externe, reportez-vous aux conseils de la section [consignes relatives au stockage de données externe des workflows](#guidelines-workflows-external-data-storage).
 
-### Installation de l’exemple d’implémentation de l’API de workflow
+### Installer l’exemple d’implémentation de l’API de workflow
 
-Pour stocker des variables de workflow dans votre stockage Azure Blob géré :
-1. Installez le [sample](https://github.com/adobe/workflow-variable-externalizer) API de workflow [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) comme suit :
+Pour stocker des variables de workflow dans votre stockage Azure Blob géré :
+1. Installez l’[exemple](https://github.com/adobe/workflow-variable-externalizer) d’API de workflow [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) comme suit :
 
-   1. Exécutez dans le répertoire racine du projet le `mvn clean install` avec Maven 3.
+   1. Dans le répertoire racine du projet, exécutez la commande `mvn clean install` avec Maven 3.
 
    1. Pour déployer le lot et le module de contenu à créer, exécutez `mvn clean install -PautoInstallPackage`.
 
    1. Pour déployer uniquement le lot vers l’auteur, exécutez `mvn clean install -PautoInstallBundle`.
 
-1. Initialisez les propriétés suivantes dans le fichier de configuration OSGi de l’externaliseur dans le `ui.config` module de contenu :
+1. Initialisez les propriétés suivantes dans le fichier de configuration OSGi de l’externaliseur dans le module de contenu `ui.config` :
 
    ```JQL
       accountKey=""
@@ -307,7 +307,7 @@ Pour stocker des variables de workflow dans votre stockage Azure Blob géré :
       protocol=""
    ```
 
-Voici les objectifs (et exemples) de ces propriétés :
+Voici les objectifs (et exemples) de ces propriétés :
 
 * **accountKey** est la clé secrète pour autoriser l’accès.
 
@@ -319,30 +319,30 @@ Voici les objectifs (et exemples) de ces propriétés :
 
 * **protocol**, par exemple `https` ou `http`.
 
-1. Configurez le modèle de workflow dans [!DNL Adobe Experience Manager]. Pour savoir comment configurer le modèle de workflow pour un stockage externe, voir [Configuration du modèle de workflow](#configure-aem-wf-model).
+1. Configurez le modèle de workflow dans [!DNL Adobe Experience Manager]. Pour savoir comment configurer le modèle de workflow pour un stockage externe, reportez-vous à [Configurer le modèle de workflow](#configure-aem-wf-model).
 
-### Configuration du modèle de processus dans [!DNL Adobe Experience Manager] pour le stockage de données externe {#configure-aem-wf-model}
+### Configurer le modèle de workflow dans [!DNL Adobe Experience Manager] pour le stockage de données externe {#configure-aem-wf-model}
 
-Pour configurer un modèle de workflow AEM pour un stockage de données externe :
+Pour configurer un modèle de workflow AEM pour le stockage de données externe :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflows]** > **[!UICONTROL Modèles]**.
 
-1. Sélectionnez un nom de modèle, puis **[!UICONTROL Modifier]**.
+1. Sélectionnez un nom de modèle et sélectionnez **[!UICONTROL Modifier]**.
 
-1. Cliquez sur l’icône Informations sur la page et sélectionnez **[!UICONTROL Ouvrir les propriétés]**.
+1. Sélectionnez l’icône Informations sur la page, puis **[!UICONTROL Ouvrir les propriétés]**.
 
 1. Sélectionnez **[!UICONTROL Externaliser le stockage des données de workflow]**.
 
-1. Sélectionner **[!UICONTROL Enregistrer et fermer]** pour enregistrer les propriétés.
+1. Sélectionnez **[!UICONTROL Enregistrer et fermer]** pour enregistrer les propriétés.
 
 ### Recommandations pour les workflows d’AEM pour le stockage de données externes {#guidelines-workflows-external-data-storage}
 
-Voici les instructions à suivre lorsque vous utilisez [!DNL Adobe Experience Manager] workflows et stockage des données dans des entrepôts de données externes (par exemple, serveur de stockage Microsoft Azure) :
+Voici nos recommandations concernant l’utilisation des workflows [!DNL Adobe Experience Manager] et le stockage de données externe tels que le serveur de stockage Microsoft Azure :
 
-* Utilisez des variables pour stocker des données lors de la définition de fichiers de données d’entrée et de sortie et de pièces jointes dans les étapes du modèle de workflow. Ne sélectionnez pas les options **[!UICONTROL Relatif à la charge]** et **[!UICONTROL Disponible sur un chemin absolu]**. Le **[!UICONTROL Relatif à la charge utile]** et **[!UICONTROL Disponible à un chemin absolu]** ne s’affiche pas automatiquement une fois que vous [configurer une [!DNL Adobe Experience Manager] modèle de workflow pour le stockage de données externe](#configure-aem-wf-model).
+* Utilisez des variables pour stocker des données lors de la définition de fichiers de données d’entrée et de sortie et de pièces jointes dans les étapes du modèle de workflow. Ne sélectionnez pas les options **[!UICONTROL Relatif à la charge]** et **[!UICONTROL Disponible sur un chemin absolu]**. Les options **[!UICONTROL Relatif à la payload]** et **[!UICONTROL Disponible sur un chemin absolu]** ne s’affichent pas automatiquement lorsque vous [configurez un modèle de workflow  [!DNL Adobe Experience Manager]  pour le stockage de données externe](#configure-aem-wf-model).
 
-* Utilisez des variables pour stocker le fichier de données et les pièces jointes lors de l’envoi d’un formulaire adaptatif à un workflow AEM. Ne pas sélectionner **[!UICONTROL Relatif à la charge utile]** lors de l’envoi d’un formulaire adaptatif à un [!DNL Adobe Experience Manager] workflow. Le **[!UICONTROL Relatif à la charge utile]** ne s’affiche pas automatiquement lorsque vous [configurer une [!DNL Adobe Experience Manager] modèle de workflow pour le stockage de données externe](#configure-aem-wf-model).
+* Utilisez des variables pour stocker le fichier de données et les pièces jointes lors de l’envoi d’un formulaire adaptatif à un workflow AEM. Ne sélectionnez pas l’option **[!UICONTROL Relatif à la payload]** lors de l’envoi d’un formulaire adaptatif à un workflow [!DNL Adobe Experience Manager]. L’option **[!UICONTROL Relatif à la payload]** ne s’affiche pas automatiquement une fois que vous avez [configuré un modèle de workflow  [!DNL Adobe Experience Manager]  pour le stockage des données externe](#configure-aem-wf-model).
 
-* N’utilisez pas de [!DNL Adobe Experience Manager] étape de workflow dans un modèle de workflow pour stocker des données dans [!UICONTROL CRX DE] référentiel.
+* N’utilisez pas d’étape de workflow [!DNL Adobe Experience Manager] personnalisé dans un modèle de workflow pour stocker des données dans le référentiel [!UICONTROL CRX DE].
 
-* Lorsque vous [configurer une [!DNL Adobe Experience Manager] modèle de workflow pour le stockage de données externe](#configure-aem-wf-model), ne créez pas de colonnes personnalisées pour [!DNL Adobe Experience Manager] [!UICONTROL Boîte de réception] puisque les valeurs des colonnes personnalisées ne sont pas récupérées si l’élément de travail dans la variable [!DNL Adobe Experience Manager] [!UICONTROL Boîte de réception] appartient à un workflow marqué pour le stockage externe.
+* Lorsque vous [configurez un modèle de workflow  [!DNL Adobe Experience Manager]  pour le stockage externe des données](#configure-aem-wf-model), ne créez pas de colonnes personnalisées pour la [!UICONTROL boîte de réception] [!DNL Adobe Experience Manager], car les valeurs des colonnes personnalisées ne sont pas récupérées si l’élément de travail de la [!UICONTROL boîte de réception] [!DNL Adobe Experience Manager] appartient à un workflow marqué pour le stockage externe.
