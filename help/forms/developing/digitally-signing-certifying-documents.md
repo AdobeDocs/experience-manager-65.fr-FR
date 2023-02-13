@@ -11,8 +11,8 @@ topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: ht
 source-wordcount: '17046'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’AP
 
 >[!NOTE]
 >
->certains types de documents PDF ne vous permettent pas d’ajouter un champ de signature par programme. Pour plus d’informations sur le service Signature et l’ajout de champs de signature, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>certains types de documents PDF ne vous permettent pas d’ajouter un champ de signature par programme. Pour plus d’informations sur le service Signature et l’ajout de champs de signature, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -219,7 +219,7 @@ Vous pouvez récupérer les noms de tous les champs de signature d’un document
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -359,7 +359,7 @@ Cette section explique comment modifier un champ de signature en modifiant les v
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la modification des champs de signature, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature et la modification des champs de signature, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -579,7 +579,7 @@ Pour plus d’informations sur la gestion des informations d’identification de
 
 >[!NOTE]
 >
->Tous les documents PDF ne prennent pas en charge la signature. Pour plus d’informations sur le service Signature et la signature numérique de documents, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Tous les documents PDF ne prennent pas en charge la signature. Pour plus d’informations sur le service Signature et la signature numérique de documents, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 >[!NOTE]
 >
@@ -1064,7 +1064,7 @@ Signez numériquement un formulaire interactif à l’aide de l’API Forms et S
 Vous pouvez définir un document PDF en le certifiant avec un type de signature particulier appelé signature certifiée. Une signature certifiée se différencie d’une signature numérique de plusieurs manières :
 
 * Elle doit être la première signature appliquée au document PDF ; cela veut dire que lorsque la signature certifiée est appliquée, tous les autres champs de signature du document doivent être non signés. Une seule signature certifiée est autorisée dans un document PDF. Si vous souhaitez signer ou certifier un document PDF, vous devez le certifier avant de le signer. Après avoir certifié un document PDF, vous pouvez signer numériquement les champs de signature supplémentaires.
-* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique n’est pas autorisée, Acrobat limite la modification du document aux utilisateurs. Si ces modifications sont effectuées, à l’aide d’une autre application par exemple, la signature certifiée est alors non valide et Acrobat affiche un avertissement à l’ouverture du document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
+* L’auteur ou l’expéditeur du document peut indiquer que le document peut être modifié de certaines manières sans invalider la signature certifiée. Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur ou l’autrice spécifie qu’une modification en particulier n’est pas autorisée, Acrobat empêche les utilisateurs et utilisatrices d’effectuer cette modification sur le document. Si ces modifications sont effectuées, à l’aide d’une autre application par exemple, la signature certifiée est alors non valide et Acrobat affiche un avertissement à l’ouverture du document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
 * Au moment de la signature, les différents types de contenus du document susceptibles de rendre le document ambigu ou trompeur sont analysés. Par exemple, une annotation peut assombrir du texte sur une page qui est essentiel pour comprendre ce qui est certifié. Une explication (attestation légale) peut être fournie pour un type de contenu.
 
 Vous pouvez certifier des documents PDF par programmation en utilisant l’API Java du service Signature ou l’API du service web de Signature. Lorsque vous certifiez un document PDF, vous devez faire référence à des informations d’identification de sécurité qui existent dans le service d’informations d’identification. Pour plus d’informations sur les informations d’identification de sécurité, consultez le guide *Installation et déploiement d’AEM Forms* pour votre serveur d’applications.
@@ -1087,7 +1087,7 @@ Après avoir ajouté cette valeur de configuration au fichier cknfastrc, les nou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la certification d’un document, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature et la certification d’un document, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -1191,7 +1191,7 @@ Certifiez un document PDF à l’aide de l’API Signature (Java) :
    * Objet `java.lang.Boolean` spécifiant si le champ de signature en cours de certification est verrouillé. Si le champ est verrouillé, le champ de signature est marqué comme étant en lecture seule, ses propriétés ne peuvent pas être modifiées et il ne peut pas être effacé par un utilisateur ne disposant pas d’autorisations requises. La valeur par défaut est de `false`.
    * Un objet `OCSPPreferences` qui stocke les préférences pour la prise en charge du protocole OCSP (Online Certificate Status Protocol). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`. Pour plus d’informations sur cet objet, voir [Référence de l’API AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
    * Un objet `CRLPreferences` qui stocke les préférences de liste de révocation des certificats (CRL). Si la vérification de révocation n’est pas effectuée, ce paramètre n’est pas utilisé et vous pouvez spécifier `null`.
-   * Un objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Par exemple, après avoir créé un objet `TSPPreferences`, vous pouvez définir l’URL du serveur TSP en appelant la méthode `setTspServerURL` de l’objet `TSPPreferences`. Ce paramètre est facultatif et peut être `null`. Pour plus d’informations, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+   * Un objet `TSPPreferences` qui stocke les préférences pour la prise en charge du fournisseur d’horodatage (TSP). Par exemple, après avoir créé un objet `TSPPreferences`, vous pouvez définir l’URL du serveur TSP en appelant la méthode `setTspServerURL` de l’objet `TSPPreferences`. Ce paramètre est facultatif et peut être `null`. Pour plus d’informations, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
    La méthode `certify` renvoie un objet `com.adobe.idp.Document` représentant le document PDF certifié.
 
@@ -1295,7 +1295,7 @@ De même, lorsque vous vérifiez par programmation une signature numérique, vou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1520,7 +1520,7 @@ AEM Forms permet de vérifier toutes les signatures numériques qui se trouvent 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature et la vérification des signatures numériques, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1730,7 +1730,7 @@ Les signatures numériques doivent être supprimées d’un champ de signature p
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Signature, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Signature, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-8}
 
