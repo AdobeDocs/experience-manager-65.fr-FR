@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’opérations et de branches bloquées
+title: Travailler avec des opérations et des branches bloquées
 seo-title: Working with stalled operations and branches
 description: La page Opérations bloquées et la page Branches bloquées répertorient les processus bloqués.
 seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '707'
 ht-degree: 100%
 
 ---
 
-# Utilisation d’opérations et de branches bloquées {#working-with-stalled-operations-and-branches}
+# Travailler avec des opérations et des branches bloquées {#working-with-stalled-operations-and-branches}
 
 La page Opérations bloquées et la page Branches bloquées répertorient les processus bloqués. Un processus peut bloquer lorsqu’une erreur survient pendant ou après l’exécution d’une opération ou en raison d’une opération de blocage délibérée dans le processus :
 
