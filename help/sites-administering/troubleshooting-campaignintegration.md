@@ -1,5 +1,5 @@
 ---
-title: Résolution des incidents liés à votre intégration Adobe Campaign
+title: Résoudre les incidents liés à votre intégration Adobe Campaign
 seo-title: Troubleshooting your Adobe Campaign Integration
 description: Découvrez comment résoudre les incidents liés à l’intégration d’Adobe Campaign.
 seo-description: Learn how to troubleshoot issues with the Adobe Campaign Integration.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Résolution des incidents liés à votre intégration Adobe Campaign{#troubleshooting-your-adobe-campaign-integration}
+# Résoudre les incidents liés à votre intégration Adobe Campaign{#troubleshooting-your-adobe-campaign-integration}
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ Si vous voyez le message d’erreur suivant dans le fichier journal AEM :
 Utilisez la solution de contournement suivante :
 
 1. Ouvrez le fichier **$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js**.
-1. Modifiez la ligne 467 de la méthode &quot;amcGetSeedMetaData&quot;
+1. Modifiez la ligne 467 de la méthode « amcGetSeedMetaData ».
 1. Remplacez `label : [inclView.@label](mailto:inclView.@label)` par `label : String([inclView.@label](mailto:inclView.@label))`.
 
 1. Enregistrez.
