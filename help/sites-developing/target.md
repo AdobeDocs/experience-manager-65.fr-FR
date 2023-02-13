@@ -1,5 +1,5 @@
 ---
-title: Développement de composants pour du contenu ciblé
+title: Développer des composants pour du contenu ciblé
 seo-title: Developing for Targeted Content
 description: Rubriques traitant du développement de composants à utiliser avec le ciblage de contenu
 seo-description: Topics about developing components for use with content targeting
@@ -12,13 +12,13 @@ discoiquuid: bff078cd-c390-4870-ad1d-192807c67ca4
 docset: aem65
 exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1266'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Développement de composants pour du contenu ciblé{#developing-for-targeted-content}
+# Développer des composants pour du contenu ciblé{#developing-for-targeted-content}
 
 Cette section traite du développement de composants à utiliser avec le ciblage de contenu.
 
@@ -199,7 +199,7 @@ Le script JSP de ce composant génère des appels vers l’API JavaScript Targe
 
 Le fichier mbox.js par défaut qui est utilisé pour la création de mbox se trouve à l’emplacement suivant : /etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js. Pour utiliser un fichier mbox.js client, ajoutez-le à la configuration cloud de Target. Pour être ajouté, le fichier mbox.js doit être disponible sur le système de fichiers.
 
-Par exemple, si vous souhaitez utiliser le [service Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html), vous devez télécharger le fichier mbox.js afin qu’il contienne la valeur appropriée pour la variable `imsOrgID` qui est basée sur votre client. Cette variable est requise pour l’intégration au service Marketing Cloud ID. Pour plus d’informations, consultez les sections [Adobe Analytics comme source de création de rapports pour Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) et [Avant l’implémentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html).
+Par exemple, si vous souhaitez utiliser le [service Marketing Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr), vous devez télécharger le fichier mbox.js afin qu’il contienne la valeur appropriée pour la variable `imsOrgID` qui est basée sur votre client. Cette variable est requise pour l’intégration au service Marketing Cloud ID. Pour plus d’informations, consultez les sections [Adobe Analytics comme source de création de rapports pour Adobe Target](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=fr) et [Avant l’implémentation](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=fr).
 
 >[!NOTE]
 >
@@ -235,7 +235,7 @@ Par exemple, pour désactiver le ciblage pour les composants de titre des pages 
 >
 >Si vous n’utilisez pas DTM, vous envoyez la confirmation de commande à Adobe Target.
 
-Pour effectuer le suivi des performances de votre site web, envoyez les informations d’achat à Adobe Target depuis votre page de confirmation de commande (voir [Création d’une mbox orderConfirmPage](https://experienceleague.adobe.com/docs/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) dans la documentation d’Adobe Target). Adobe Target identifie les données de mbox comme des données de confirmation de commande lorsque le nom de votre mbox est `orderConfirmPage` et utilise les noms de paramètres spécifiques suivants :
+Pour effectuer le suivi des performances de votre site web, envoyez les informations d’achat à Adobe Target depuis votre page de confirmation de commande (voir [Création d’une mbox orderConfirmPage](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) dans la documentation d’Adobe Target). Adobe Target identifie les données de mbox comme des données de confirmation de commande lorsque le nom de votre mbox est `orderConfirmPage` et utilise les noms de paramètres spécifiques suivants :
 
 * productPurchasedId : liste des ID qui identifient les produits achetés.
 * orderId : ID de la commande.
