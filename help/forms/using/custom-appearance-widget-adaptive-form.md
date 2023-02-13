@@ -11,7 +11,7 @@ discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1713'
 ht-degree: 100%
 
@@ -168,7 +168,7 @@ Une fois le modèle de projet créé, effectuez les modifications suivantes, sel
 
    * Le fichier de modèle fournit des exemples d’implémentation pour différentes méthodes. Supprimez les méthodes qui ne doivent pas être étendues.
 
-### Créez une bibliothèque cliente {#create-a-client-library}
+### Créez une bibliothèque cliente. {#create-a-client-library}
 
 L’exemple de projet généré par l’archétype d’expert crée automatiquement les bibliothèques clientes requises et les inclut dans une bibliothèque cliente avec une catégorie `af.customwidgets`. Les fichiers Javascript et CSS disponibles dans `af.customwidgets` sont automatiquement inclus au moment de l’exécution.
 
