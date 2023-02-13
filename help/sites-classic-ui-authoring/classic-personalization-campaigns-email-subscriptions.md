@@ -1,7 +1,7 @@
 ---
-title: Gestion des abonnements
+title: Gérer les abonnements
 seo-title: Managing Subscriptions
-description: Les utilisateurs peuvent être invités à s’abonner à des listes de publipostage de fournisseurs de services de messagerie à l’aide du composant Formulaire utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné potentiel.
+description: Les utilisateurs et utilisatrices peuvent être invités à s’abonner à des listes de diffusion de fournisseurs de services de messagerie à l’aide du composant Formulaire utilisé sur une page Web AEM. Pour préparer une page AEM avec un formulaire d’abonnement à des listes de diffusion d’un service de messagerie, appliquez la configuration de service correspondante à la page AEM que consultera l’abonné(e) potentiel(le).
 seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
 uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
 ht-degree: 100%
 
 ---
 
-# Gestion des abonnements{#managing-subscriptions}
+# Gérer les abonnements{#managing-subscriptions}
 
 >[!NOTE]
 >
