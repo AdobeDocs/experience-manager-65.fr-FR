@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des vues des propriétés de la page
+title: Personnaliser les vues des propriétés de la page
 seo-title: Customizing Views of Page Properties
 description: Chaque page s’accompagne d’un jeu de propriétés que vous pouvez modifier suivant vos besoins.
 seo-description: Every page has a set of properties that you can edit as required
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Personnalisation des vues des propriétés de la page{#customizing-views-of-page-properties}
+# Personnaliser les vues des propriétés de la page{#customizing-views-of-page-properties}
 
 Chaque page s’accompagne d’un jeu de [propriétés](/help/sites-authoring/editing-page-properties.md) que les utilisateurs peuvent afficher et modifier ; certaines sont obligatoires lors de la création de la page (create view), tandis que d’autres peuvent être affichées et modifiées ultérieurement (edit view). Ces propriétés de page sont définies et mises à la disposition des utilisateurs dans la boîte de dialogue (`cq:dialog`) du composant de page approprié.
 
@@ -51,9 +51,9 @@ Reportez-vous, par exemple, aux paramètres des champs regroupés sous l’ongle
 
 >[!TIP]
 >
->Consultez le [Tutoriel sur l’extension des propriétés de page](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) pour obtenir un guide sur la personnalisation des propriétés de page.
+>Consultez le [Tutoriel sur l’extension des propriétés de page](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=fr) pour obtenir un guide sur la personnalisation des propriétés de page.
 
-## Configuration de vos propriétés de page {#configuring-your-page-properties}
+## Configurer vos propriétés de page {#configuring-your-page-properties}
 
 Vous pouvez également configurer les champs disponibles en configurant la boîte de dialogue de votre composant de page et en appliquant les propriétés de nœud appropriées.
 
