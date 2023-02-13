@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de la page Détails de la tâche
+title: Personnaliser les détails de la tâche
 seo-title: Customizing the task details page
 description: Comment personnaliser les détails de la tâche dans l’espace de travail AEM Forms pour modifier les informations par défaut affichées relatives à une tâche.
 seo-description: How-to customize the task details page in AEM Forms workspace to modify the default information displayed about a task.
@@ -10,13 +10,13 @@ topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 exl-id: 48c24442-22d2-4d1a-9462-0aba78340281
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '263'
 ht-degree: 100%
 
 ---
 
-# Personnalisation de la page Détails de la tâche {#customizing-the-task-details-page}
+# Personnaliser les détails de la tâche {#customizing-the-task-details-page}
 
 La page Détails de la tâche contient des informations relatives à une tâche et à ses processus. Toutefois, vous pouvez personnaliser la page Détails de la tâche pour ajouter ou supprimer des informations.
 
