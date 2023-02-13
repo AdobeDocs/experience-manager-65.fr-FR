@@ -1,5 +1,5 @@
 ---
-title: Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms
+title: Démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms
 seo-title: Initiating a new process with existing process data in AEM Forms workspace
 description: Découvrez comment vous pouvez démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms.
 seo-description: See how you can initiate a new process with existing process data in AEM Forms workspace.
@@ -11,13 +11,13 @@ discoiquuid: cbc5af90-5d51-4fdb-ac72-eea91137975d
 docset: aem65
 exl-id: 6fa97c06-9238-4444-b67f-983ef3b6fdc8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '236'
 ht-degree: 100%
 
 ---
 
-# Lancement d’un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms{#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
+# Démarrer un nouveau processus avec les données de processus existantes dans l’espace de travail AEM Forms{#initiating-a-new-process-with-existing-process-data-in-aem-forms-workspace}
 
 Vous pouvez lancer un nouveau processus à l’aide des données de processus existantes. La nécessité de lancer un nouveau processus à partir des données de processus existantes survient lorsqu’un même formulaire doit être utilisé fréquemment et que son contenu inclut peu de modifications, comme les formulaires pour congés payés. Cette fonction permet de gagner du temps et de faciliter l’expérience des utilisateurs, en particulier lorsque le processus implique le remplissage de longs formulaires.
 
