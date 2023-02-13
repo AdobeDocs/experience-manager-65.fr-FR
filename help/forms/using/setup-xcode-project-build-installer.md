@@ -1,5 +1,5 @@
 ---
-title: Configuration du projet Xcode et génération de l’application iOS
+title: Configurer le projet Xcode et générer l’application iOS
 seo-title: Set up the Xcode project and build the iOS app
 description: Explique comment générer une application AEM Forms standard pour iOS.
 seo-description: Explains how to build standard AEM Forms app for iOS.
@@ -11,13 +11,13 @@ discoiquuid: 88555db2-712f-4ef9-bf47-76c7ba83d964
 docset: aem65
 exl-id: 78ce6107-8821-47d6-86ab-7ab968945e7c
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
 ht-degree: 100%
 
 ---
 
-# Configuration du projet Xcode et génération de l’application iOS{#set-up-the-xcode-project-and-build-the-ios-app}
+# Configurer le projet Xcode et générer l’application iOS{#set-up-the-xcode-project-and-build-the-ios-app}
 
 AEM Forms fournit le code source complet de l’application AEM Forms. La source contient tous les composants nécessaires pour créer l’application personnalisée AEM Forms. L’archive du code source `adobe-lc-mobileworkspace-src-<version>.zip` fait partie du package `adobe-aemfd-forms-app-src-pkg-<version>.zip` dans la Distribution de logiciels.
 
