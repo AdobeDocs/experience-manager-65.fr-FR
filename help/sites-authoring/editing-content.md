@@ -12,7 +12,7 @@ discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3045'
 ht-degree: 100%
 
@@ -140,7 +140,7 @@ Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de comp
 1. Ouvrez l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
 1. Faites glisser le composant jusqu’à la [position requise](#component-placeholder).
 
-1. [Modifiez le composant.](#editmovecopypastedelete)
+1. [Modifiez](#editmovecopypastedelete) le composant.
 
 >[!NOTE]
 >
@@ -191,7 +191,7 @@ Cette procédure est valide pour les types de ressources suivants (certains dép
   </tr>
   <tr>
    <td>Vidéo</td>
-   <td>Modèle </td>
+   <td>Flash</td>
   </tr>
   <tr>
    <td>Fragment de contenu</td>
@@ -304,7 +304,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
    ![](do-not-localize/screen_shot_2018-03-22at113033.png)
 
-## Modifier (du contenu) {#edit-content}
+## Modifier le contenu {#edit-content}
 
 Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les composants :
 
@@ -351,7 +351,7 @@ Pour certains types de composants, vous pouvez faire glisser et déposer des él
 | Image | Image |
 | Document | Télécharger |
 | Produit | Produit |
-| Vidéo | Modèle  |
+| Vidéo | Flash |
 | Fragment de contenu | Fragment de contenu |
 
 ## Modifier (contenu) – Mode Plein écran {#edit-content-full-screen-mode}
@@ -534,7 +534,7 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 >
 >Le verrouillage d’une page peut être réalisé lorsque vous [empruntez l’identité d’un utilisateur](/help/sites-administering/security.md#impersonating-another-user). Toutefois, une page verrouillée de cette manière peut uniquement être déverrouillée par l’utilisateur dont l’identité a été empruntée ou par un administrateur.
 >
->Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
+>Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 
 ## Déverrouillage d’une page {#unlocking-a-page}
 
@@ -548,7 +548,7 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 >
 >Le verrouillage d’une page peut être réalisé lorsque vous [empruntez l’identité d’un utilisateur](/help/sites-administering/security.md#impersonating-another-user). Toutefois, une page verrouillée de cette manière peut uniquement être déverrouillée par l’utilisateur dont l’identité a été empruntée ou par un administrateur.
 >
->Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
+>Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 
 ## Annulation et rétablissement des modifications de page {#undoing-and-redoing-page-edits}
 
