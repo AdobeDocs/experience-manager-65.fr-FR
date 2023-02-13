@@ -1,5 +1,5 @@
 ---
-title: Configuration de la segmentation
+title: Configurer la segmentation
 seo-title: Configuring Segmentation
 description: Découvrez comment configurer la segmentation pour AEM Campaign.
 seo-description: Learn how to configure segmentation for AEM Campaign.
@@ -12,13 +12,13 @@ discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1070'
 ht-degree: 100%
 
 ---
 
-# Configuration de la segmentation {#configuring-segmentation}
+# Configurer la segmentation {#configuring-segmentation}
 
 >[!NOTE]
 >
