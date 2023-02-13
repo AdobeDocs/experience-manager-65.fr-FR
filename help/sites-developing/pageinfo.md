@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '943'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -494,7 +494,7 @@ Le service applique le résultat cumulé de tous les filtres. Par exemple, les v
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. Voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus d’informations.
+>Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, consultez la section [Configurer OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Par exemple, pour configurer le service à l’aide de CRXDE Lite :
 
