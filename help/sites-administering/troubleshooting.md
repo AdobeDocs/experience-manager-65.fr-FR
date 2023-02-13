@@ -1,5 +1,5 @@
 ---
-title: Utilisation des journaux
+title: Utiliser les journaux
 seo-title: Working with Logs
 description: Découvrez comment résoudre les problèmes d’AEM à l’aide des journaux.
 seo-description: Learn how to troubleshoot AEM by working with logs.
@@ -12,13 +12,13 @@ discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '234'
 ht-degree: 100%
 
 ---
 
-# Utilisation des journaux{#working-with-logs}
+# Utiliser les journaux{#working-with-logs}
 
 Cette section contient des informations détaillées sur les journaux disponibles pour vous aider à résoudre les problèmes.
 
