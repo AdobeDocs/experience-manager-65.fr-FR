@@ -4,9 +4,9 @@ description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du conte
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1530'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -356,14 +356,14 @@ Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin
 }
 ```
 
-### Exemple de requête - Noms de toutes les villes Balisé en tant que sauts de ville {#sample-names-all-cities-tagged-city-breaks}
+### Exemple de requête - Noms de toutes les villes Balisés en tant qu’Escapades en ville {#sample-names-all-cities-tagged-city-breaks}
 
-Si vous :
+Si vous :
 
-* créer une variété de balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
-* et les affecter à la variation de Principal de diverses `City` instances
+* créez une variété de balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
+* et que vous les affectez à la variation principale de diverses instances `City`,
 
-Vous pouvez ensuite utiliser une requête pour renvoyer les détails de la variable `name` et `tags`de toutes les entrées balisées comme des sauts de ville dans la variable `city`schéma.
+vous pouvez alors utiliser une requête pour renvoyer les détails de `name` et de `tags` de toutes les entrées balisées comme des Escapades en ville dans le schéma `city`.
 
 **Exemple de requête**
 
@@ -1535,11 +1535,11 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour plusieurs fragments de contenu et leurs variantes d’un modèle donné {#sample-wknd-multiple-fragment-variations-given-model}
+### Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné. {#sample-wknd-multiple-fragment-variations-given-model}
 
 Cette requête interroge :
 
-* pour les fragments de contenu de type `article` et toutes les variations
+* les fragments de contenu de type `article` et toutes les variations.
 
 **Exemple de requête**
 
@@ -1562,11 +1562,11 @@ query {
 }
 ```
 
-### Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique{#sample-wknd-fragment-variations-given-model-specific-tag}
+### Exemple de requête pour les variations de fragments de contenu dans un modèle donné auxquelles est associée une balise spécifique.{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 Cette requête interroge :
 
-* pour les fragments de contenu de type `article` avec une ou plusieurs variations comportant la balise . `WKND : Activity / Hiking`
+* les fragments de contenu de type `article` avec une ou plusieurs variations comportant la balise `WKND : Activity / Hiking`.
 
 **Exemple de requête**
 
@@ -1717,4 +1717,4 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
 | San Jose |  États-Unis |  102635 |  city:na |
 | Stuttgart |  Allemagne |  634830 |  city:emea |
-|  Zurich |  Suisse |  415367 |  ville:capital<br>city:emea |
+|  Zurich |  Suisse |  415367 |  city:capital<br>city:emea |
