@@ -1,5 +1,5 @@
 ---
-title: Création de thèmes de formulaires adaptatifs personnalisés
+title: Créer des thèmes de formulaires adaptatifs personnalisés
 seo-title: Creating custom adaptive form themes
 description: Un thème de formulaire adaptatif est une bibliothèque client AEM utilisée pour définir les styles, c’est-à-dire l’apparence d’un formulaire adaptatif. Découvrez comment vous pouvez créer des thèmes de formulaire adaptatif personnalisés.
 seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '788'
 ht-degree: 100%
 
