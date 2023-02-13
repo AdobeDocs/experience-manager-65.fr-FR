@@ -1,5 +1,5 @@
 ---
-title: Configuration d’une campagne
+title: Configurer votre campagne
 seo-title: Setting up your campaign
 description: La configuration d’une nouvelle campagne nécessite la création d’une marque pour héberger vos campagnes, la création d’une campagne pour héberger vos expériences, et enfin la définition des propriétés de votre nouvelle campagne.
 seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
@@ -12,13 +12,13 @@ discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
 source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2257'
 ht-degree: 100%
 
 ---
 
-# Configuration d’une campagne{#setting-up-your-campaign}
+# Configurer votre campagne{#setting-up-your-campaign}
 
 La configuration d’une nouvelle campagne comprend les étapes (génériques) suivantes :
 
