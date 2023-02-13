@@ -1,5 +1,5 @@
 ---
-title: Extension et configuration de l’importateur de conception pour les pages d’entrée
+title: Étendre et configurer l’importateur de conception pour les pages d’entrée
 seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Découvrez comment configurer l’importateur de conception pour les pages d’entrée.
 seo-description: Learn how to configure the Design Importer for landing pages.
@@ -12,13 +12,13 @@ discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3503'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Extension et configuration de l’importateur de conception pour les pages d’entrée{#extending-and-configuring-the-design-importer-for-landing-pages}
+# Étendre et configurer l’importateur de conception pour les pages d’entrée{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 Cette section décrit la configuration et, si vous le souhaitez, l’extension de l’importateur de conception pour les pages d’entrée. L’utilisation de pages d’entrée après l’importation est décrite dans la section [Pages d’entrée](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
@@ -28,13 +28,13 @@ Voici les étapes logiques à suivre pour faire en sorte que l’importateur rec
 
 1. Création d’un gestionnaire de balises
 
-   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le &quot;type&quot; des balises de HTML que votre TagHandler peut gérer est défini via la propriété OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise &lt;div> contenant une balise &lt;p> imbriquée, la balise &lt;p> est également envoyée vers le gestionnaire de balises. Il vous appartiendra alors d’en déterminer le mode de traitement.
+   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le « type » des balises HTML que votre TagHandler peut traiter est défini au moyen de la propriété OSGi « tagpattern.name » de TagHandlerFactory. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise &lt;div> contenant une balise &lt;p> imbriquée, la balise &lt;p> est également envoyée vers le gestionnaire de balises. Il vous appartiendra alors d’en déterminer le mode de traitement.
    * L’interface du gestionnaire de balises est semblable à une interface de gestion de contenu SAX. Elle reçoit des événements SAX pour chaque balise HTML. En votre qualité de fournisseur de gestionnaire de balises, vous devez mettre en œuvre certaines méthodes de cycle de vie qui sont appelées automatiquement par le cadre de l’importateur de conception.
 
 1. Créez le composant TagHandlerFactory correspondant.
 
    * TagHandlerFactory est un composant OSGi (singleton) responsable du déclenchement d’instances sur votre gestionnaire de balises.
-   * votre fabrique de gestionnaires de balises doit exposer une propriété OSGi appelée &quot;tagpattern.name&quot; dont la valeur est comparée à la balise html d’entrée.
+   * Votre TagHandlerFactory doit exposer une propriété OSGi appelée « tagpattern.name » dont la valeur est comparée à la balise HTML d’entrée.
    * Si plusieurs gestionnaires de balises correspondent à la balise HTML en entrée, celui dont le classement est le plus élevé est celui choisi. Le classement proprement dit est exposé sous forme de propriété OSGi **service.ranking**.
    * TagHandlerFactory est un composant OSGi. Toute référence que vous souhaitez attribuer à votre TagHandler doit l’être par ce biais.
 
@@ -316,8 +316,7 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 >
 >par un `css .hasbackground { background-image: pathtoimage }` lié
 
-### Formulaire de piste
- {#lead-form}
+### Formulaire de piste {#lead-form}
 
 Le formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/prospect. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Il s’agit généralement du titre, du nom, de l’adresse électronique, de la date de naissance, de l’adresse, du centre d’intérêt, etc. Il fait partie du groupe « Formulaire de prospect CTA ».
 
@@ -327,8 +326,8 @@ Le formulaire de piste est utilisé pour collecter des informations sur le profi
 * Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
 * Mettez en correspondance les champs de formulaire de prospect à l’aide de noms prédéfinis spécifiques du formulaire de prospect CTA ; par exemple, firstName pour first-name dans le formulaire de prospect, etc.
 * Les champs qui ne sont pas mis en correspondance avec un formulaire de piste le sont avec des composants cq:form : texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe.
-* L’utilisateur peut fournir le titre à l’aide de la balise &quot;label&quot; et fournir le style à l’aide de l’attribut de style &quot;class&quot; (disponible uniquement pour les composants de formulaire de piste CTA).
-* La page de remerciement et la liste d’abonnement peuvent être fournies comme un paramètre masqué du formulaire (présent dans le fichier index.htm) ou peuvent être ajoutées/modifiées à partir de la barre d’édition de &quot;Début du formulaire de piste&quot;.
+* L’utilisateur ou l’utilisatrice peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de prospect CTA).
+* La page de remerciements et la liste d’abonnements peuvent être fournies sous forme de paramètre masqué du formulaire (présent dans le fichier index.htm) ou être ajoutées ou modifiées dans la barre de modification de « Début du formulaire de prospect ».
 
    &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
@@ -471,7 +470,7 @@ L’utilisation de sélecteurs CSS semblables à ceux présentés ci-dessous est
 Cela est dû au fait que d’autres éléments HTML, comme la balise &lt;div>, sont ajoutés au fichier HTML généré après l’importation.
 
 * L’utilisation de scripts organisés selon une structure semblable à celle décrite ci-dessus est déconseillée avec des éléments marqués en vue d’une conversion en composants AEM.
-* Utilisation de styles sur les balises de balisage pour la conversion de composants comme &lt;div data-cq-component=&quot;&amp;ast;&quot;> n’est pas recommandé.
+* Il est déconseillé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
 * La disposition de conception doit suivre les bonnes pratiques relatives au modèle HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Configuration de modules OSGI {#configuring-osgi-modules}
