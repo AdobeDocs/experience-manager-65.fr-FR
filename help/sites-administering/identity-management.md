@@ -12,7 +12,7 @@ discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1222'
 ht-degree: 100%
 
@@ -211,7 +211,7 @@ Si cet accès n’est pas approprié pour votre installation, vous pouvez modifi
 
 Une plage de composants Profil est également disponible pour définir les exigences de profil de votre site.
 
-### Champ du mot de passe coché {#checked-password-field}
+### Champ du mot de passe vérifié {#checked-password-field}
 
 Ce composant fournit deux champs pour :
 
@@ -234,7 +234,7 @@ Ce composant permet à l’utilisateur de saisir un nom détaillé.
 
 ![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
 
-### Genre du profil {#profile-gender}
+### Sexe du profil {#profile-gender}
 
 Ce composant permet à l’utilisateur d’indiquer son sexe.
 
