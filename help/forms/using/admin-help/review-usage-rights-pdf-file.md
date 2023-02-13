@@ -1,5 +1,5 @@
 ---
-title: Vérification des droits d’utilisation d’un fichier PDF
+title: Consulter les droits d’utilisation d’un fichier PDF
 seo-title: Review the usage rights of a PDF file
 description: Découvrez comment consulter les droits d’utilisation d’un fichier PDF.
 seo-description: Learn how to review the usage rights of a PDF file.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2777706c-d42b-4921-a8f4-720b7c0fa45e
 exl-id: 603edbd2-c012-4d25-99bf-c4f3dc147308
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
 ht-degree: 100%
 
 ---
 
-# Vérification des droits d’utilisation d’un fichier PDF {#review-the-usage-rights-of-a-pdf-file}
+# Consulter les droits d’utilisation d’un fichier PDF {#review-the-usage-rights-of-a-pdf-file}
 
 Vous pouvez télécharger un fichier PDF dans l’application Web des extensions d’Acrobat Reader DC pour voir s’il contient des extensions Reader, si des droits d’utilisation lui ont été appliqués et quelles sont leurs dates d’expiration.
 
