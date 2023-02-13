@@ -12,7 +12,7 @@ discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2460'
 ht-degree: 100%
 
@@ -58,7 +58,7 @@ L’image suivante affiche diverses configurations de serveur AEM Forms et leurs
 
 ![aem_forms_-_recommendationstopology](assets/aem_forms_-_recommendedtopology.png)
 
-**Auteur :** une instance d’auteur est un serveur AEM Forms exécuté en mode d’exécution de création standard. Il peut s’agir d’un environnement AEM Forms on JEE ou AEM Forms on OSGi. Il est destiné aux utilisateurs internes, aux concepteurs de formulaires et de communication interactive, ainsi qu’aux développeurs. L’élément Publier active les fonctionnalités suivantes :
+**Auteur :** une instance d’auteur est un serveur AEM Forms exécuté en mode d’exécution de création standard. Il peut s’agir d’un environnement AEM Forms on JEE ou AEM Forms on OSGi. Il est destiné aux utilisateurs internes, aux concepteurs de formulaires et de communication interactive, ainsi qu’aux développeurs. Il active les fonctionnalités suivantes :
 
 * **Création et gestion de formulaires et de communications interactives :** les concepteurs et développeurs peuvent créer et modifier des formulaires adaptatifs et des communications interactives, télécharger d’autres types de formulaires créés en externe, par exemple des formulaires créés dans Adobe Forms Designer, et gérer ces ressources à l’aide de la console de Gestionnaire de formulaires.
 * **Publication de formulaires et de communications interactives :** les éléments hébergés sur une instance d’auteur peuvent être publiés sur une instance de publication pour exécuter des opérations d’exécution. La publication d’actifs utilise les fonctionnalités de réplication d’AEM. Adobe recommande qu’un agent de réplication soit configuré sur toutes les instances d’auteur pour transférer manuellement les formulaires publiés vers les instances de traitement, et qu’un autre agent de réplication soit configuré sur les instances de traitement avec le déclencheur *A réception* activé pour répliquer automatiquement les formulaires reçus afin de publier les instances.
