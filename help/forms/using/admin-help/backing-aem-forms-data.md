@@ -1,5 +1,5 @@
 ---
-title: Sauvegarde des données AEM Forms
+title: Sauvegarder les données AEM Forms
 seo-title: Backing up the AEM forms data
 description: Ce document décrit les étapes nécessaires à la réalisation d’une sauvegarde complète, à chaud ou en ligne, de la base de données AEM Forms, de même que du répertoire de stockage global de documents et du répertoire racine de stockage de contenu.
 seo-description: This document describes the steps that are required to complete a hot, or online, backup of the AEM forms database, the GDS, and Content Storage Root directories.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
 ht-degree: 100%
 
 ---
 
-# Sauvegarde des données AEM Forms {#backing-up-the-aem-forms-data}
+# Sauvegarder les données AEM Forms {#backing-up-the-aem-forms-data}
 
 Cette section décrit les étapes nécessaires à la réalisation d’une sauvegarde complète, à chaud ou en ligne, de la base de données AEM Forms, de même que du répertoire de stockage global de documents et du répertoire racine de stockage de contenu.
 
