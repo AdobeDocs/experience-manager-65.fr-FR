@@ -3,9 +3,9 @@ title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
 source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '876'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Le comportement de l’élément wrapper peut également faire l’objet d’un 
 
 Il est possible de contrôler entièrement le comportement des balises wrapper à partir de scripts HTL et de la logique qui y est associée.
 
-Pour plus d’informations sur le développement au format HTL, consultez la [documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
+Pour plus d’informations sur le développement au format HTL, consultez la [documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr).
 
 #### Arborescence de décision {#decision-tree}
 
