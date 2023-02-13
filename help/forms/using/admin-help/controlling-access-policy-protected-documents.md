@@ -1,5 +1,5 @@
 ---
-title: Contrôle de l’accès à un document protégé par une stratégie
+title: Contrôler l’accès à un document protégé par une stratégie
 seo-title: Controlling access to policy-protected documents
 description: Découvrez comment vous pouvez afficher, gérer et contrôler l’accès à vos documents protégés par une stratégie.
 seo-description: See how you can view, manage and control the access to your policy-protected documents.
@@ -12,13 +12,13 @@ discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2169'
 ht-degree: 100%
 
 ---
 
-# Contrôle de l’accès à un document protégé par une stratégie {#controlling-access-to-policy-protected-documents}
+# Contrôler l’accès à un document protégé par une stratégie {#controlling-access-to-policy-protected-documents}
 
 Vous pouvez contrôler la manière dont les destinataires utilisent vos documents protégés par une stratégie, quel que soit leur mode de distribution.
 
