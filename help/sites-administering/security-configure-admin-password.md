@@ -1,5 +1,5 @@
 ---
-title: Configuration du mot de passe d’administrateur sur l’installation
+title: Configurer le mot de passe d’administrateur sur l’installation
 seo-title: Configure the Admin Password on Installation
 description: Découvrez comment modifier le mot de passe d’administrateur sur l’installation AEM.
 seo-description: Learn how to change the Admin Password on AEM Installation.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
 exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '305'
 ht-degree: 100%
 
 ---
 
-# Configuration du mot de passe d’administrateur sur l’installation{#configure-the-admin-password-on-installation}
+# Configurer le mot de passe d’administrateur sur l’installation{#configure-the-admin-password-on-installation}
 
 ## Présentation {#overview}
 
