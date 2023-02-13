@@ -1,5 +1,5 @@
 ---
-title: Création d’un profil personnalisé pour HTML5 forms
+title: Créer un profil personnalisé pour HTML5 forms
 seo-title: Creating a custom profile for HTML5 forms
 description: Un profil HTML5 forms est un nœud de ressources dans Apache Sling. Il représente une version personnalisée du service de rendu HTML5 forms.
 seo-description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
@@ -11,13 +11,13 @@ discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '660'
 ht-degree: 100%
 
 ---
 
-# Création d’un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
+# Créer un profil personnalisé pour HTML5 forms {#creating-a-custom-profile-for-html-forms}
 
 Un profil est un nœud de ressources dans [Apache Sling](https://sling.apache.org/). Il représente une version personnalisée du service de rendu HTML5 forms. Vous pouvez utiliser le service de rendu HTML5 Forms pour personnaliser l’apparence, le comportement et les interactions de HTML5 Forms. Un nœud de profil existe dans le dossier `/content` du référentiel JCR. Vous pouvez mettre le nœud directement sous le dossier `/content` ou tout autre sous-dossier du dossier `/content`.
 
