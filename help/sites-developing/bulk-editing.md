@@ -1,5 +1,5 @@
 ---
-title: Configuration d’une page pour la modification en bloc des propriétés de page
+title: Configurer votre page pour la modification en bloc des propriétés de page
 seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: La modification des propriétés de page vous permet de modifier les propriétés de plusieurs pages à la fois
 seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
 ht-degree: 100%
 
 ---
 
-# Configuration d’une page pour la modification en bloc des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Configurer votre page pour la modification en bloc des propriétés de page {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 La [modification des propriétés de page](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) vous permet de modifier les propriétés de plusieurs pages à la fois.
 
