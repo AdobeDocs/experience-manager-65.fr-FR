@@ -1,5 +1,5 @@
 ---
-title: Configuration des notifications par e-mail
+title: Configurer les notifications par e-mail
 seo-title: Configuring Email Notification
 description: Découvrez comment configurer les notifications électroniques dans AEM.
 seo-description: Learn how to configure Email Notification in AEM.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2116'
 ht-degree: 100%
 
 ---
 
-# Configuration des notifications par e-mail{#configuring-email-notification}
+# Configurer les notifications par e-mail{#configuring-email-notification}
 
 AEM envoie des notifications aux utilisateurs qui :
 
