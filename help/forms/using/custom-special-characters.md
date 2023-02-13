@@ -11,8 +11,8 @@ discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '639'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Vous pouvez insérer des caractères spéciaux sous forme de lettres :
 
 ![caractères_spéciaux_dans_un_module_en_ligne](assets/specialcharactersinlinemodule.png)
 
-L’administrateur peut ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation. Cet article fournit les instructions vous permettant d’ajouter la prise en charge de caractères spéciaux personnalisés supplémentaires.
+L’administrateur peut ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation. Cet article fournit les instructions vous permettant d’ajouter la prise en charge de caractères spéciaux personnalisés supplémentaires.
 
 ## Ajouter ou modifier la prise en charge des caractères spéciaux personnalisés dans Correspondence Management {#creatingfolderstructure}
 
@@ -117,7 +117,7 @@ Procédez comme suit pour ajouter la prise en charge des caractères spéciaux p
    <td>Masquer un caractère spécial</td>
    <td>
     <ol>
-     <li>Superposez le nœud à masquer sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters ».</li>
+     <li>Recouvrez le nœud à masquer sous « /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters ».</li>
      <li>Ajoutez la propriété sling:hideResource (booléenne) au nœud à masquer (sous applications). </li>
      <li>Cliquez sur Enregistrer tout. </li>
      <li>Actualisez la page de l’interface utilisateur Éditeur de texte\Création de correspondance pour afficher les modifications.<br /> </li>
