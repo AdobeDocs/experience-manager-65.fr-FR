@@ -1,5 +1,5 @@
 ---
-title: Obtention de documents XDP et PDF dans AEM Forms
+title: Obtenir des documents XDP et PDF dans AEM Forms
 seo-title: Getting XDP and PDF documents in AEM Forms
 description: AEM Forms vous permet de transférer des formulaires et des ressources prises en charge en vue de les utiliser avec des formulaires adaptatifs. Vous pouvez également transférer en bloc les formulaires et les ressources connexes sous la forme d’un fichier ZIP.
 seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
@@ -12,13 +12,13 @@ docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
 ht-degree: 100%
 
 ---
 
-# Obtention de documents XDP et PDF dans AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
+# Obtenir des documents XDP et PDF dans AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Présentation {#overview}
 
