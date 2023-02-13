@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1760'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Les balises sont gérées en les regroupant dans des espaces de noms, en vérifi
 
 Pour accéder à la console Balisage, procédez comme suit :
 
-* en mode de création
+* En mode de création
 * Connectez-vous avec des droits d’administrateur.
 * Dans la navigation générale
 
@@ -207,7 +207,7 @@ Accédez au nouveau chemin d’accès où déplacer la balise.
 Affiche d’abord le 
 `name` actuel de la balise. Vous pouvez saisir un nouveau `name`.
 
-* Sélectionnez **Enregistrer**
+* Sélectionnez **Enregistrer**.
 
 ### Fusion des balises {#merging-tags}
 
