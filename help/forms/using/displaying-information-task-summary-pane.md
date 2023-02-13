@@ -1,5 +1,5 @@
 ---
-title: Affichage d’informations dans le volet Résumé de la tâche
+title: Afficher des informations dans le volet Résumé de la tâche
 seo-title: Displaying information in the Task Summary pane
 description: Dans l’espace de travail AEM Forms, un panneau de résumé de la tâche peut être configuré afin d’afficher le récapitulatif de la tâche ou d’afficher toute autre page Web.
 seo-description: In AEM Forms workspace, a Task Summary pane can be configured to summarize the task or display any other web page.
@@ -11,13 +11,13 @@ topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
 ht-degree: 100%
 
 ---
 
-# Affichage d’informations dans le volet Résumé de la tâche {#displaying-information-in-the-task-summary-pane}
+# Afficher des informations dans le volet Résumé de la tâche {#displaying-information-in-the-task-summary-pane}
 
 Lorsque vous ouvrez une tâche dans l’espace de travail AEM Forms, le volet Résumé de la tâche peut afficher un résumé de la tâche. Ces informations supplémentaires et pertinentes à propos d’une tâche ajoutent de la valeur pour l’utilisateur final de l’espace de travail AEM Forms.
 
