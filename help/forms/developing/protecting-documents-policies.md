@@ -11,8 +11,8 @@ topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: ht
 source-wordcount: '15514'
 ht-degree: 100%
 
@@ -135,7 +135,7 @@ Lors de la création d’une stratégie à l’aide de l’API de service web, r
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -263,7 +263,7 @@ Créez une stratégie à l’aide de l’API Document Security (Java) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux sections suivantes :
 
-* « Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java. »
+* « Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java »
 
 ### Créer une stratégie à l’aide de l’API Web Service {#create-a-policy-using-the-web-service-api}
 
@@ -321,8 +321,8 @@ Créez une stratégie à l’aide de l’API Document Security (Web Service) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (MTOM) : créer une stratégie à l’aide de l’API Web Service. »
-* « Démarrage rapide (SwaRef) : créer une stratégie à l’aide de l’API Web Service. »
+* « Démarrage rapide (MTOM) : créer une stratégie à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : créer une stratégie à l’aide de l’API de service web »
 
 ## Modifier les stratégies {#modifying-policies}
 
@@ -334,7 +334,7 @@ Pour modifier les attributs de stratégie à l’aide d’un service web (par ex
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -450,8 +450,8 @@ Modifiez une stratégie existante à l’aide de l’API Document Security (Web 
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (MTOM) : Modifier une stratégie à l’aide de l’API de service Web »
-* « Démarrage rapide (SwaRef) : Modifier une stratégie à l’aide de l’API de service Web »
+* « Démarrage rapide (MTOM) : modifier une stratégie à l’aide de l’API de service Web »
+* « Démarrage rapide (SwaRef) : modifier une stratégie à l’aide de l’API de service web »
 
 ## Supprimer des stratégies {#deleting-policies}
 
@@ -459,7 +459,7 @@ Vous pouvez supprimer une stratégie existante à l’aide de l’API Java Docum
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -506,7 +506,7 @@ Supprimez une stratégie à l’aide de l’API Document Security (Java) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (mode SOAP) : supprimer une stratégie à l’aide de l’API Java »
+* « Démarrage rapide (mode SOAP) : créer une stratégie à l’aide de l’API Java »
 
 ### Supprimer des stratégies à l’aide de l’API de service web {#delete-policies-using-the-web-service-api}
 
@@ -558,7 +558,7 @@ Vous pouvez contrôler l’utilisation d’un document protégé par une straté
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -722,7 +722,7 @@ Vous pouvez supprimer une stratégie d’un document protégé par une stratégi
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -794,7 +794,7 @@ Pour supprimer une stratégie d’un document PDF protégé par une stratégie �
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document PDF à l’aide de l’API Java »
+* « Démarrage rapide (mode SOAP) : appliquer une stratégie à un document PDF à l’aide de l’API Java »
 
 ### Supprimer une stratégie à l’aide de l’API de service web {#remove-a-policy-using-the-web-service-api}
 
@@ -861,7 +861,7 @@ La possibilité de révoquer l’accès à un document offre une sécurité supp
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -937,7 +937,7 @@ Révoquez l’accès à un document PDF protégé par une stratégie à l’aide
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java. »
+* « Démarrage rapide (mode SOAP) : révoquer un document à l’aide de l’API Java »
 
 ### Révoquer l’accès aux documents à l’aide de l’API Web Service {#revoke-access-to-documents-using-the-web-service-api}
 
@@ -986,8 +986,8 @@ Révoquez l’accès à un document PDF protégé par une stratégie à l’aide
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (MTOM) : révoquer un document à l’aide de l’API Web Service. »
-* « Démarrage rapide (SwaRef) : révoquer un document à l’aide de l’API Web Service. »
+* « Démarrage rapide (MTOM) : révoquer un document à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : révoquer un document à l’aide de l’API de service web »
 
 **Voir également**
 
@@ -1003,7 +1003,7 @@ Vous pouvez rétablir l’accès à un document PDF révoqué, ce qui rend toute
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1069,7 +1069,7 @@ Rétablissez l’accès à un document révoqué à l’aide de l’API Document
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (mode SOAP) : rétablir l’accès à un document révoqué à l’aide de l’API Web Service. »
+* « Démarrage rapide (mode SOAP) : rétablir l’accès à un document révoqué à l’aide de l’API de service web »
 
 ### Rétablir l’accès aux documents révoqués à l’aide de l’API Web Service {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1131,7 +1131,7 @@ Vous ne pouvez pas effectuer cette tâche si vous posséder LiveCycle version 8
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1203,7 +1203,7 @@ Pour inspecter un document PDF protégé par une stratégie à l’aide de l’A
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (mode SOAP) : inspecter des documents de PDF protégés par une stratégie à l’aide de l’API Java »
+* « Démarrage rapide (mode SOAP) : inspecter des documents PDF protégés par une stratégie à l’aide de l’API Java »
 
 ### Inspecter des documents PDF protégés par une stratégie à l’aide de l’API de service web {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1270,7 +1270,7 @@ Les filigranes permettent d’assurer la sécurité d’un document en lʼidenti
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-8}
 
@@ -1470,8 +1470,8 @@ Créez un filigrane à l’aide de l’API Document Security (service Web) :
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (MTOM) : Créer un filigrane à l’aide de l’API de service Web »
-* « Démarrage rapide (SwaRef) : Créer un filigrane à l’aide de l’API de service Web »
+* « Démarrage rapide (MTOM) : créer un filigrane à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : créer un filigrane à l’aide de l’API de service web »
 
 **Voir également**
 
@@ -1491,7 +1491,7 @@ Lorsque vous modifiez un filigrane, la modification a une incidence sur les docu
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-9}
 
@@ -1618,7 +1618,7 @@ Modifiez un filigrane à l’aide de l’API de Document Security (Web Service)�
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* « Démarrage rapide (MTOM) : modifier un filigrane à l’aide de l’API Web Service. »
+* « Démarrage rapide (MTOM) : modifier un filigrane à l’aide de l’API de service web »
 
 ## Rechercher des événements {#searching-for-events}
 
@@ -1635,7 +1635,7 @@ Vous pouvez rechercher des événements spécifiques à l’aide de l’API Java
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Rights Management, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Rights Management, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-10}
 
@@ -1698,7 +1698,7 @@ Pour rechercher des événements à l’aide de l’API Rights Management (Java
 
 Pour obtenir des exemples de code à l’aide du service Rights Management, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (SOAP) : rechercher des événements à l’aide de l’API Java. »
+* « Démarrage rapide ( SOAP) : rechercher des événements à l’aide de l’API Java »
 
 ### Rechercher des événements à l’aide de l’API de service web {#search-for-events-using-the-web-service-api}
 
@@ -1942,8 +1942,8 @@ Pour rechercher des événements à l’aide de l’API Rights Management (servi
 
 Pour obtenir des exemples de code à l’aide du service Rights Management, reportez-vous aux tutoriels de démarrage rapide suivants :
 
-* « Démarrage rapide (MTOM) : rechercher des événements à l’aide de l’API Web Service. »
-* « Démarrage rapide (SwaRef) : rechercher des événements à l’aide de l’API Web Service. »
+* « Démarrage rapide (MTOM) : rechercher des événements à l’aide de l’API de service web »
+* « Démarrage rapide (SwaRef) : rechercher des événements à l’aide de l’API de service web »
 
 **Voir également**
 
@@ -1959,7 +1959,7 @@ Vous pouvez surveiller l’utilisation d’un document Word protégé par une st
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-11}
 
@@ -2043,7 +2043,7 @@ Appliquez une stratégie à un document Word à l’aide de l’API Document Sec
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* « Démarrage rapide (mode SOAP) : appliquer une stratégie à un document Word à l’aide de l’API Java. »
+* « Démarrage rapide (mode SOAP) : appliquer une stratégie à un document Word à l’aide de l’API Java »
 
 ### Appliquer une stratégie à un document Word à l’aide de l’API Web Service {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2107,7 +2107,7 @@ Appliquez une stratégie à un document Word à l’aide de l’API Document Sec
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* « Démarrage rapide (MTOM) : appliquer une stratégie à un document Word à l’aide de l’API Web Service. »
+* « Démarrage rapide (MTOM) : appliquer une stratégie à un document Word à l’aide de l’API de service web »
 
 ## Supprimer des stratégies de documents Word {#removing-policies-from-word-documents}
 
@@ -2115,7 +2115,7 @@ Vous pouvez supprimer une stratégie d’un document Word protégé par une stra
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Document Security, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-12}
 
@@ -2187,7 +2187,7 @@ Pour supprimer une stratégie d’un document Word protégé par une stratégie 
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* « Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java ».
+* « Démarrage rapide (mode SOAP) : supprimer une stratégie d’un document Word à l’aide de l’API Java »
 
 ### Supprimer une stratégie d’un document Word à l’aide de l’API de service web {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
@@ -2237,7 +2237,7 @@ Pour supprimer une stratégie d’un document Word protégé par une stratégie 
 
 Pour obtenir des exemples de code à l’aide du service Document Security, reportez-vous au tutoriel de démarrage rapide suivant :
 
-* « Démarrage rapide (MTOM) : supprimer une stratégie d’un document Word à l’aide de l’API Web Service. »
+* « Démarrage rapide (MTOM) : supprimer une stratégie d’un document Word à l’aide de l’API de service web »
 
 **Voir également**
 
