@@ -1,5 +1,5 @@
 ---
-title: Ciblage d’un élément Adobe Campaign
+title: Cibler votre campagne Adobe Campaign
 seo-title: Targeting your Adobe Campaign
 description: Vous pouvez créer des expériences ciblées pour Adobe Campaign après la configuration de la segmentation
 seo-description: You can create targeted experiences for Adobe Campaign after setting up segmentation
@@ -11,13 +11,13 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
 ht-degree: 100%
 
 ---
 
-# Ciblage d’un élément Adobe Campaign{#targeting-your-adobe-campaign}
+# Cibler votre campagne Adobe Campaign{#targeting-your-adobe-campaign}
 
 Pour cibler votre newsletter Adobe Campaign, vous devez d’abord configurer la segmentation, ce qui n’est possible que dans l’IU classique (pour ClientContext). Ensuite, vous pouvez créer des expériences ciblées pour Adobe Campaign. Les deux procédures sont décrites dans cette section.
 
