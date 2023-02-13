@@ -1,5 +1,5 @@
 ---
-title: Ciblage d’un élément Adobe Campaign
+title: Cibler votre campagne Adobe Campaign
 seo-title: Targeting your Adobe Campaign
 description: La configuration de la segmentation comprend la création de segments, d’une marque, d’une campagne et d’expériences.
 seo-description: Setting up segmentation includes creating segments, a brand, campaign, and experiences.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '816'
 ht-degree: 100%
 
 ---
 
-# Ciblage d’un élément Adobe Campaign{#targeting-your-adobe-campaign}
+# Cibler votre campagne Adobe Campaign{#targeting-your-adobe-campaign}
 
 Pour cibler votre newsletter Adobe Campaign, vous devez d’abord configurer la segmentation, ce qui n’est possible que dans l’IU classique. Ensuite, vous pouvez créer des expériences ciblées pour Adobe Campaign.
 
