@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’Adobe Campaign
+title: Utiliser Adobe Campaign
 seo-title: Working with Adobe Campaign
 description: Adobe Campaign est un ensemble de solutions qui permet de personnaliser les campagnes et de les diffuser via tous vos canaux en ligne et hors ligne
 seo-description: Adobe Campaign is a set of solutions that lets you personalize and deliver campaigns across all of your online and offline channels
@@ -11,13 +11,13 @@ topic-tags: personalization
 discoiquuid: 28582d42-ef24-4ca1-98e6-e02248fc9dea
 exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
 ht-degree: 100%
 
 ---
 
-# Utilisation d’Adobe Campaign{#working-with-adobe-campaign}
+# Utiliser Adobe Campaign{#working-with-adobe-campaign}
 
 Adobe Campaign est un ensemble de solutions qui permet de personnaliser les campagnes et de les diffuser via tous vos canaux en ligne et hors ligne.
 
