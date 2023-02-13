@@ -3,7 +3,7 @@ title: Exportateur de page
 description: Découvrez comment utiliser l’exportateur de page d’AEM.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1065'
 ht-degree: 100%
 
