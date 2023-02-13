@@ -12,9 +12,9 @@ discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4948'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -67,13 +67,13 @@ Pour cette raison, nous allons aborder dans cette page les notions de base des d
 
 Il est recommandé de garder le code responsable du balisage et du rendu distinct de celui qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
-Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Cette logique (facultative) est appelée à partir de HTL avec une commande spécifique. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
+Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Cette logique (facultative) est appelée à partir de HTL avec une commande spécifique. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
 
 ### HTL vs JSP {#htl-vs-jsp}
 
 HTL est un langage de modèle HTML introduit avec AEM 6.0.
 
-Le choix entre l’utilisation de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) ou de JSP (Java Server Pages) lors du développement de vos propres composants devrait être simple à faire dans la mesure où HTL est aujourd’hui le langage de script recommandé pour AEM.
+Le choix entre l’utilisation de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) ou de JSP (Java Server Pages) lors du développement de vos propres composants devrait être simple à faire dans la mesure où HTL est aujourd’hui le langage de script recommandé pour AEM.
 
 HTL et JSP peuvent être utilisés pour développer des composants de l’IU classique et de l’IU tactile. Bien que la tendance laisse à supposer que HTL est réservé à l’IU tactile et JSP à l’IU classique, c’est une idée reçue que l’on attribue à une synchronisation fortuite. L’IU tactile et HTL ont été intégrés à AEM à peu près en même temps. Puisque HTL est aujourd’hui le langage recommandé, il est utilisé pour les nouveaux composants, qui sont plus souvent développés pour l’IU tactile.
 
