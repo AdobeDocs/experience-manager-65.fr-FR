@@ -1,20 +1,22 @@
 ---
-title: Désactivation de l’UAC pour la configuration PDFG applicable à la fois à JEE et OSGI
+title: Désactiver l’UAC pour la configuration PDFG applicable à la fois à JEE et OSGI
 description: Procédure de désactivation de l’UAC pour la configuration PDFG
-source-git-commit: f6dcb488c64dad2d65facc0e8e1d6685b7375a08
-workflow-type: tm+mt
+exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
+source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
-# Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server {#unable-to-convert-word-excel-files-PDF}
+# Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server. {#unable-to-convert-word-excel-files-PDF}
 
 ## Problème {#issue}
 
-Lorsque l’utilisateur tente de convertir des fichiers Word ou Excel en PDF sur Microsoft Windows Server, l’erreur suivante se produit :
+Lorsque l’utilisateur ou l’utilisatrice tente de convertir des fichiers Word ou Excel en PDF sur Microsoft Windows Server, l’erreur suivante se produit :
 
-*Message d’erreur du convertisseur Principal : Le système ALC-PDG-015-003-The ne peut pas ouvrir le fichier d’entrée. Envoyez à nouveau votre fichier ou contactez votre administrateur système.*
+*Message d’erreur du convertisseur principal :
+ALC-PDG-015-003-Le système ne peut pas ouvrir le fichier d’entrée. Envoyez à nouveau le fichier ou contactez votre administrateur système.*
 
 
 ## Solution {#solution}
@@ -26,14 +28,14 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
 1. Vérifiez que le paramètre de registre pour l’UAC est défini sur 0 (zéro). Pour vérifier, procédez comme suit :
 
    1. Microsoft® recommande de sauvegarder le registre avant de le modifier. Pour obtenir la procédure détaillée, voir [Comment sauvegarder et restaurer le registre dans Windows](https://support.microsoft.com/fr-fr/help/322756).
-   1. Ouvrez Microsoft® Éditeur du registre Windows. Pour ouvrir l’éditeur de registre, accédez à Démarrer > Exécuter, saisissez regedit, puis cliquez sur OK.
+   1. Ouvrez l’éditeur de registre Microsoft® Windows. Pour ouvrir l’éditeur de registre, accédez à Démarrer > Exécuter, saisissez regedit, puis cliquez sur OK.
    1. Accédez à `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Assurez-vous que la valeur de EnableLUA est définie sur 0 (zéro).
    1. Assurez-vous que la valeur de **EnableLUA** est définie sur 0 (zéro). Si la valeur n’est pas 0, remplacez-la par 0. Fermez l’éditeur du registre.
 
 1. Redémarrez l’ordinateur.
 
-## S’applique à {#appliesto}
+## Application {#appliesto}
 
-Cette solution s’applique aux éléments suivants :
-* Serveur AEM Forms on JEE
-* AEM Forms sur le serveur OSGi
+Cette solution s’applique aux éléments suivants :
+* AEM Forms sur le serveur JEE
+* AEM Forms sur le serveur OSGi
