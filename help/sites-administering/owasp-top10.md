@@ -1,5 +1,5 @@
 ---
-title: 10 plus grands risques OWASP
+title: Les 10 plus grands risques d’OWASP
 seo-title: OWASP Top 10
 description: Découvrez comment AEM gère les 10 plus grands risques de sécurité OWASP.
 seo-description: Learn how AEM deals with the top 10 OWASP security risks.
@@ -12,13 +12,13 @@ discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# 10 plus grands risques OWASP{#owasp-top}
+# Les 10 plus grands risques d’OWASP{#owasp-top}
 
 Le projet [Open Web Application Security Project](https://www.owasp.org) (OWASP) tient à jour une liste de ce qu’il considère comme les [10 plus grands risques de sécurité liés aux applications web](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
 
@@ -26,19 +26,19 @@ Ces risques sont répertoriés ci-dessous, avec une explication sur la manière 
 
 ## 1. Injection {#injection}
 
-* SQL -Empêché par défaut : La configuration de référentiel par défaut ne comprend ni ne requiert de base de données traditionnelle et toutes les données sont stockées dans le référentiel de contenu. Tous les accès sont limités aux utilisateurs authentifiés et ne peuvent avoir lieu que via l’API JCR. SQL est pris en charge pour les requêtes de recherche uniquement (SELECT). SQL offre en outre une prise en charge de la valeur de liaison.
+* SQL -Empêché par défaut : La configuration de référentiel par défaut ne comprend ni ne requiert de base de données traditionnelle et toutes les données sont stockées dans le référentiel de contenu. Tous les accès sont limités aux utilisateurs authentifiés et ne peuvent avoir lieu que via l’API JCR. SQL est pris en charge pour les requêtes de recherche uniquement (SELECT). SQL offre en outre une prise en charge de la liaison des valeurs.
 * LDAP : L’injection LDAP est impossible, car le module d’authentification filtre l’entrée et exécute l’importation des utilisateurs à l’aide de la méthode de liaison.
 * OS : Aucune exécution shell n’est effectuée dans l’application.
 
 ## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
 
-La solution générale consiste à coder toutes les sorties du contenu créé par l’utilisateur avec une bibliothèque de protection XSS côté serveur basée sur [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) et [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
+La solution générale consiste à coder toutes les sorties du contenu créé par l’utilisateur avec une bibliothèque de protection XSS côté serveur basée sur [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) et [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project).
 
-XSS est une priorité majeure pendant le test et le développement et les problèmes détectés sont (généralement) résolus immédiatement.
+Le XSS est une priorité majeure pendant le test et le développement et les problèmes détectés sont (généralement) résolus immédiatement.
 
 ## 3. Authentification interrompue et gestion des sessions {#broken-authentication-and-session-management}
 
-AEM utilise des techniques d’authentification performantes et éprouvées, qui font appel à [Apache Jackrabbit](https://jackrabbit.apache.org/) et [Apache Sling](https://sling.apache.org/). Les sessions Browser/HTTP ne sont pas utilisées dans AEM.
+AEM utilise des techniques d’authentification performantes et éprouvées, qui font appel à [Apache Jackrabbit](https://jackrabbit.apache.org/) et [Apache Sling](https://sling.apache.org/). Les sessions de navigateur ou HTTP ne sont pas utilisées dans AEM.
 
 ## 4. Références d’objets directes non sécurisées {#insecure-direct-object-references}
 
@@ -46,9 +46,9 @@ Tous les accès aux objets de données sont arbitrés par le référentiel et do
 
 ## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
-La falsification de requête intersite (CSRF) est atténuée en injectant automatiquement un jeton cryptographique dans tous les formulaires et requêtes d’AJAX et en vérifiant ce jeton sur le serveur pour chaque POST.
+Une attaque Cross-Site Request Forgery (CSRF) est arbitrée en injectant automatiquement un jeton cryptographique dans l’ensemble des formulaires et des requêtes AJAX et en vérifiant ce jeton sur le serveur pour chaque requête POST.
 
-En outre, AEM est fourni avec un filtre basé sur l’en-tête référent, qui peut être configuré comme *only* autorisez les demandes de POST provenant d’hôtes spécifiques (définis dans une liste).
+En outre, AEM est fourni avec un filtre référent-en-tête, qui peut être configuré pour autoriser *uniquement* les requêtes POST d’hôtes spécifiques (inscrits dans une liste autorisée).
 
 ## 6. Configuration incorrecte de la sécurité {#security-misconfiguration}
 
@@ -66,10 +66,10 @@ Les données sensibles telles que les identifiants tiers sont stockées dans un 
 
 Le référentiel permet de définir des [autorisations précises (comme spécifié par JCR)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) pour n’importe quel utilisateur ou groupe dans n’importe quel chemin d’accès, via des entrées de contrôle d’accès. Les restrictions d’accès sont appliquées par le référentiel.
 
-## 9. Protection insuffisante de la couche de transport {#insufficient-transport-layer-protection}
+## 9. Protection insuffisante de la couche de transfert {#insufficient-transport-layer-protection}
 
 Atténué par la configuration du serveur (par exemple, utilisez HTTPS uniquement).
 
 ## 10. Redirections et transferts non validés {#unvalidated-redirects-and-forwards}
 
-Atténué en restreignant toutes les redirections à des destinations fournies par l’utilisateur vers des emplacements internes.
+Risque atténué en restreignant toutes les redirections à des destinations fournies par l’utilisateur vers des emplacements internes.
