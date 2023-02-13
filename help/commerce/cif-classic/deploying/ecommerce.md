@@ -1,5 +1,5 @@
 ---
-title: Aperçu de eCommerce
+title: Présentation du commerce électronique
 seo-title: eCommerce Overview
 description: Le commerce électronique générique AEM est disponible dans le cadre de l’installation standard et vous offre toutes les fonctionnalités de la structure de commerce électronique.
 seo-description: AEM generic eCommerce is available as part of the standard installation and provides you with the full functionality of the eCommerce framework.
@@ -10,13 +10,13 @@ docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
 ht-degree: 100%
 
 ---
 
-# Aperçu de eCommerce{#ecommerce-overview}
+# Présentation du commerce électronique{#ecommerce-overview}
 
 Le commerce électronique générique AEM est disponible dans le cadre de l’installation standard et vous offre toutes les fonctionnalités de la structure de commerce électronique.
 
