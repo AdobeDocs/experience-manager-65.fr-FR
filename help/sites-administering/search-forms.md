@@ -7,7 +7,7 @@ topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2042'
 ht-degree: 100%
 
@@ -329,11 +329,11 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
 >[!NOTE]
 >
 >* Les prédicats de recherche courants sont définis dans :
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Les prédicats de recherche liés uniquement à siteadmin (IU classique) se trouvent sous :
->  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
->   * Ils sont obsolètes et disponibles uniquement à des fins de rétrocompatibilité.
+   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+   >   * Ils sont obsolètes et disponibles uniquement à des fins de rétrocompatibilité.
 >
 >Ces informations sont proposées à des fins de référence seulement. Vous ne devez pas apporter de modifications au répertoire `/libs`.
 
