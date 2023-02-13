@@ -11,8 +11,8 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: ht
 source-wordcount: '1920'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Vous pouvez utiliser l’API du service Barcoded Forms pour décoder les donnée
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Barcoded Forms, consultez la section [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Barcoded Forms, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
