@@ -1,5 +1,5 @@
 ---
-title: Consultation et compréhension des rapports d’analyse d’AEM Forms
+title: Consulter et comprendre les rapports d’analyse d’AEM Forms
 seo-title: View and understand AEM Forms analytics reports
 description: AEM Forms s’intègre à Adobe Analytics et fournit des analyses résumées et détaillées des formulaires adaptatifs que vous avez publiés.
 seo-description: AEM Forms integrates with Adobe Analytics and provides you summary and detailed analytics about your published adaptive forms.
@@ -11,13 +11,13 @@ discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1050'
 ht-degree: 100%
 
 ---
 
-# Consultation et compréhension des rapports d’analyse d’AEM Forms {#view-and-understand-aem-forms-analytics-reports}
+# Consulter et comprendre les rapports d’analyse d’AEM Forms {#view-and-understand-aem-forms-analytics-reports}
 
 Adobe Experience Manager Forms s’intègre à Adobe Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
