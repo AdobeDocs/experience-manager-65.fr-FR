@@ -1,5 +1,5 @@
 ---
-title: Contrôle des événements
+title: Contrôler les événements
 seo-title: Monitoring events
 description: Lorsque la fonctionnalité de contrôle est activée, Document Security vous permet de contrôler certains types d’événements. Vous pouvez aisément effectuer des recherches dans la liste des événements et trier celle-ci à l’aide de la sécurité des documents.
 seo-description: When the auditing capability is enabled, document security enables you to monitor certain types of events. You can easily search and sort the events list using the document security.
@@ -12,13 +12,13 @@ discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '958'
 ht-degree: 100%
 
 ---
 
-# Contrôle des événements {#monitoring-events}
+# Contrôler les événements {#monitoring-events}
 
 Lorsque la fonctionnalité de contrôle est activée, Document Security vous permet de contrôler certains types d’événements. Les événements visibles dépendent de votre rôle :
 
