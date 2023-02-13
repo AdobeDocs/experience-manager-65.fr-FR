@@ -1,5 +1,5 @@
 ---
-title: Extraction de chaînes pour la traduction
+title: Extraire des chaînes pour la traduction
 seo-title: Extracting Strings for Translating
 description: Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes qui doivent être traduites.
 seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
@@ -11,13 +11,13 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '476'
 ht-degree: 100%
 
 ---
 
-# Extraction de chaînes pour la traduction{#extracting-strings-for-translating}
+# Extraire des chaînes pour la traduction{#extracting-strings-for-translating}
 
 Utilisez xgettext-maven-plugin pour extraire de votre code source les chaînes qui doivent être traduites. Le module externe Maven extrait les chaînes dans un fichier XLIFF que vous envoyez en traduction. Les chaînes sont extraites aux emplacements suivants :
 
