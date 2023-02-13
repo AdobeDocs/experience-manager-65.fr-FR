@@ -1,5 +1,5 @@
 ---
-title: Définition des polices à incorporer
+title: Spécifier les polices à incorporer
 seo-title: Specifying fonts to embed
 description: Découvrez comment spécifier les polices à incorporer.
 seo-description: Learn how to specify fonts to embed.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4c83694c-b00f-40be-9ac4-f5785cd60741
 exl-id: b2cbf5f3-ee13-47bf-bf7f-f6a1884cee66
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
 
-# Définition des polices à incorporer {#specifying-fonts-to-embed}
+# Spécifier les polices à incorporer {#specifying-fonts-to-embed}
 
 Vous pouvez spécifier les polices qui sont toujours ou jamais incorporées dans les formulaires générés par le service Forms. L’incorporation de polices augmente la taille de fichier des formulaires. Incorporer des polices inhabituelles que les utilisateurs ont rarement de leurs systèmes. N’incorporez pas les polices courantes qui sont généralement installées.
 
