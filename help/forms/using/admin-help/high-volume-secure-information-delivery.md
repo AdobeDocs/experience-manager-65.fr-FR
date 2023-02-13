@@ -12,7 +12,7 @@ discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
 ht-degree: 100%
 
