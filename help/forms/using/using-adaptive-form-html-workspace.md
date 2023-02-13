@@ -1,7 +1,7 @@
 ---
-title: Utilisation d’un formulaire adaptatif dans Workspace HTML
+title: Utiliser un formulaire adaptatif dans l’espace de travail HTML
 seo-title: Using an adaptive form in HTML Workspace
-description: Utilisation d’un formulaire adaptatif dans Workspace HTML
+description: Utiliser un formulaire adaptatif dans l’espace de travail HTML
 seo-description: Using an adaptive form in HTML Workspace
 uuid: 473d5daf-a3ed-449f-9136-585755b59922
 content-type: reference
@@ -11,13 +11,13 @@ discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
 ht-degree: 100%
 
 ---
 
-# Utilisation d’un formulaire adaptatif dans Workspace HTML{#using-an-adaptive-form-in-html-workspace}
+# Utiliser un formulaire adaptatif dans l’espace de travail HTML{#using-an-adaptive-form-in-html-workspace}
 
 AEM Forms sur JEE offre la possibilité d’utiliser un formulaire adaptatif dans l’espace de travail HTML.
 
