@@ -5,13 +5,13 @@ description: Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettr
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '367'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# Guide de Forms Adobe Experience Manager 6.5
+# Guide d’Adobe Experience Manager Forms 6.5
 
 Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettre à jour des formulaires numériques. Trouvez de l’aide sur l’installation, la mise à niveau et la configuration, et découvrez comment créer des formulaires adaptatifs.
 
@@ -45,9 +45,9 @@ Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettre à jour des
 
 * [Tutoriels d’AEM](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-5-videos.html)
 * [Guide de l’utilisateur de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
-* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
 * [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
