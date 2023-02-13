@@ -1,5 +1,5 @@
 ---
-title: Configuration du suivi des liens Adobe Analytics
+title: Configurer le suivi des liens Adobe Analytics
 seo-title: Configuring Link Tracking for Adobe Analytics
 description: Découvrez la configuration du suivi des liens pour SiteCatalyst.
 seo-description: Learn about configuring link tracking for SiteCatalyst.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Configuration du suivi des liens Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+# Configurer le suivi des liens Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
 Lorsque des utilisateurs cliquent sur des liens figurant sur les pages de votre site web, vous pouvez enregistrer diverses informations dans Adobe Analytics. Par exemple, utilisez le suivi des liens pour savoir comment les utilisateurs interagissent avec votre site et surveiller le téléchargement de fichiers et les liens de sortie.
 
@@ -141,7 +141,7 @@ s.linkTrackVars= 'prop4';
 
 ## Exemple de configuration du suivi des liens {#example-link-tracking-configuration}
 
-Suivez les procédures ci-dessous pour découvrir le comportement du suivi des liens de l’intégration Adobe Analytics. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+Suivez les procédures ci-dessous pour découvrir le comportement du suivi des liens de l’intégration Adobe Analytics. Les procédures affichent les résultats de [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=fr).
 
 ### Configuration générale {#general-configuration}
 
