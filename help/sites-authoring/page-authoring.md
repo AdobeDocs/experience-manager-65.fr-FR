@@ -1,5 +1,5 @@
 ---
-title: Création de pages
+title: Créer des pages
 seo-title: Authoring Pages
 description: Tâches impliquées dans la création d’une page de contenu
 seo-description: The tasks involved when authoring a content page
@@ -12,13 +12,13 @@ discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
 ht-degree: 100%
 
 ---
 
-# Création de pages{#authoring-pages}
+# Créer des pages{#authoring-pages}
 
 Les pages suivantes fournissent deux types d’aperçu concernant la création avec AEM :
 
