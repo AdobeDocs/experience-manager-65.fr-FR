@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1608'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Ce mode de mise en cache garantit l’utilisation des ressources les plus récen
 
 **Définition de la mise en cache sans condition**
 
-1. Dans la console d’administration, cliquez sur Services > Forms.
+1. Dans Administration Console, cliquez sur Services > Forms.
 1. Sous Paramètres de contrôle du cache de sortie, sélectionnez Sans condition et cliquez sur Enregistrer.
 
 ### Utilisation du point de contrôle du cache {#use-the-cache-check-point}
@@ -69,14 +69,14 @@ Utilisez ce mode de cache dans des environnements de production hautes performan
 
 **Réinitialisation du point de contrôle du cache**
 
-1. Dans la console d’administration, cliquez sur Services > Forms.
+1. Dans Administration Console, cliquez sur Services > Forms.
 1. Sous Paramètres de contrôle du cache de sortie, cliquez sur Point de contrôle du cache.
 
 **Réinitialisation du contenu du cache**
 
 Vous pouvez vider le contenu du cache à tout moment. Après la réinitialisation du cache, la première demande est plus lente pour chaque formulaire, car le service Forms effectue un rendu complet et crée un nouveau contenu de cache.
 
-1. Dans la console d’administration, cliquez sur Services > Forms.
+1. Dans Administration Console, cliquez sur Services > Forms.
 1. Sous Paramètres de contrôle du cache des formulaires, sélectionnez Réinitialiser le cache.
 
 ## Configuration des paramètres du cache {#configuring-cache-settings}
@@ -99,7 +99,7 @@ Les paramètres de la zone **Paramètres du cache global** affectent tous les ty
 
 ### Mise en cache des conceptions de formulaire {#caching-form-designs}
 
-Lorsque le service Forms reçoit une demande de rendu, il récupère la conception de formulaire dans le référentiel et la met en cache. Cette mise en cache améliore les performances, car le service Forms récupère la conception de formulaire à partir du cache et non plus à partir du référentiel lors des demandes de rendu ultérieures.
+Lorsque le service Forms reçoit une demande de rendu, il récupère la conception de formulaire dans le référentiel et la met en cache. Cette mise en cache améliore les performances, car le service Forms récupère la conception de formulaire à partir du cache et non plus à partir du référentiel lors des requêtes de rendu ultérieures.
 
 Le service Forms met toujours les conceptions de formulaire en cache sur le disque. Si les conceptions de formulaire sont stockées sur le serveur, ces fichiers sont considérés comme le cache disque. Le service Forms met également les conceptions de formulaire en cache dans la mémoire, en fonction du paramètre défini dans la zone **Mise en mémoire cache des modèles**. Si vous modifiez l’un de ces paramètres, redémarrez le service pour que ce changement soit appliqué. Pour redémarrer ce service, utilisez Workbench ou consultez la section [Démarrage ou arrêt des services associés aux modules AEM Forms](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) pour obtenir des instructions.
 
