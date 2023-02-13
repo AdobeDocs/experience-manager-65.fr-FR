@@ -11,7 +11,7 @@ discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1366'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Vous pouvez associer les mosaïques suivantes à votre projet.
 * [Liens](#links)
 * [Informations sur le projet](#project-info)
 * [Équipe](#team)
-* [Pages de destinations](#landing-pages)
+* [Pages d’entrée](#landing-pages)
 * [E-mails](#emails)
 * [Workflows](#workflows)
 * [Lancements](#launches)
@@ -161,9 +161,9 @@ Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet.
 
 Vous pouvez ajouter et supprimer des membres de l’équipe. De plus, vous pouvez modifier le [rôle utilisateur](#userroles) attribué à chaque membre de l’équipe.
 
-### Pages de destinations {#landing-pages}
+### Pages d’entrée {#landing-pages}
 
-La mosaïque **Pages de destination** vous permet de demander une nouvelle page de destination.
+La mosaïque **pages d’entrée** vous permet de demander une nouvelle page de destination.
 
 ![Mosaïque Pages de destination](assets/project-tile-landing.png)
 
