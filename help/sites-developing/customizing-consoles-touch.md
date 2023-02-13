@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des consoles
+title: Personnaliser les consoles
 seo-title: Customizing the Consoles
 description: AEM comporte plusieurs mécanismes pour vous permettre de personnaliser les consoles de votre instance de création.
 seo-description: AEM provides various mechanisms to enable you to customize the consoles of your authoring instance
@@ -12,13 +12,13 @@ discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '670'
 ht-degree: 100%
 
 ---
 
-# Personnalisation des consoles {#customizing-the-consoles}
+# Personnaliser les consoles {#customizing-the-consoles}
 
 >[!CAUTION]
 >
@@ -56,6 +56,7 @@ Ils peuvent être utilisés de différentes manières pour étendre les consoles
 >1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
 >1. Apportez les modifications désirées dans `/apps`.
+
 >
 
 
@@ -148,13 +149,11 @@ Pour personnaliser les colonnes en mode Liste :
       ```
 
    * Ajoutez des colonnes ou supprimez des colonnes existantes.
-
    Consultez [Utilisation des recouvrements (et fusion de ressources Sling) pour plus d’informations.](/help/sites-developing/overlays.md)
 
 1. Facultatif :
 
    * Si vous souhaitez connecter des données supplémentaires, vous devez écrire un [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) avec une
-
       `pageInfoProviderType`.
 
    Par exemple, voir la classe/le lot (tiré de GitHub) ci-dessous.
