@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1920'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Bonnes pratiques en matière de workflow{#workflow-best-practices}
 
-Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM). 
+Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM).
 
 Ils représentent généralement une bonne partie du traitement effectué dans un environnement AEM. Par conséquent, lorsque des étapes de workflow personnalisées ne sont pas écrites conformément aux meilleures pratiques ou lorsque des workflows standard (prêts à l’emploi) ne sont pas configurés pour s’exécuter le plus efficacement possible, cela peut avoir une incidence sur le système.
 
@@ -108,6 +108,7 @@ Les modèles de workflow sont stockés dans le référentiel en fonction de leur
    >
    >* placer vos modèles de workflow personnalisés dans ce dossier,
    >* modifier des éléments dans `/libs`,
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -143,6 +144,7 @@ Les définitions du lanceur de workflow sont également stockées dans le réfé
    >
    >* placer vos lanceurs de workflow personnalisés dans ce dossier,
    >* modifier des éléments dans `/libs`,
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -174,6 +176,7 @@ Les scripts de workflow sont également stockés dans le référentiel en foncti
    >
    >* placer vos scripts de workflow personnalisés dans ce dossier,
    >* modifier des éléments dans `/libs`,
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -201,6 +204,7 @@ Les notifications de workflow sont également stockées dans le référentiel en
    >
    >* placer vos définitions de notification de workflow personnalisées dans ce dossier,
    >* modifier des éléments dans `/libs`,
+
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
