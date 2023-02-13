@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : Planifier la communication interactive"'
+title: "Didacticiel\_: Planifier la communication interactive"
 seo-title: Plan your Interactive Communication
 description: Planifier la structure de votre communication interactive
 seo-description: Plan the anatomy for your Interactive Communication
@@ -10,13 +10,13 @@ discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
 ht-degree: 100%
 
 ---
 
-# Didacticiel : Planifier la communication interactive {#tutorial-plan-the-interactive-communication}
+# Didacticiel : planifier la communication interactive {#tutorial-plan-the-interactive-communication}
 
 Planifier la structure de votre communication interactive
 
@@ -75,7 +75,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Date de facturation</li>
      <li>Période de facturation</li>
     </ul> <p> </p> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Informations sur le client</td>
@@ -94,7 +94,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Code du pays</li>
      <li>Nombre de connexions</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Récapitulatif de facturation</td>
@@ -108,7 +108,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>Montant dû</li>
      <li>Échéance</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Récapitulatif des frais</td>
@@ -126,7 +126,7 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
      <li>MONTANT TOTAL PAYABLE (champ calculé à partir des frais d’utilisation)</li>
     </ul> <p>Tableau - factures</p> </td>
    <td>Aucun champ</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Appels détaillés - Sortants</td>
@@ -140,20 +140,20 @@ Le tableau suivant illustre la source de données de chaque champ de la structur
     </ul> </td>
    <td><p>Toutes les valeurs</p> <p>Tableau - appels</p> </td>
    <td>Aucun champ</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Payez maintenant</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Services à valeur ajoutée</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>
