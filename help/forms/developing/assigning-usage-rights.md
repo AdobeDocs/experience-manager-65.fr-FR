@@ -12,7 +12,7 @@ discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3926'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Vous pouvez appliquer des droits d’utilisation aux documents PDF à l’aide d
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -225,7 +225,7 @@ Vous pouvez supprimer des droits d’utilisation d’un document défini avec de
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -364,7 +364,7 @@ Vous pouvez récupérer des informations sur les informations d’identification
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Extensions Acrobat Reader DC, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
