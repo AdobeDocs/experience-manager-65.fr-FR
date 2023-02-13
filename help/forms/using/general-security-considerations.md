@@ -11,8 +11,8 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '1062'
 ht-degree: 100%
 
@@ -180,7 +180,7 @@ Ce tableau décrit les ports par défaut devant être ouverts pendant le process
    <td><p>7001</p> </td>
   </tr>
   <tr>
-   <td>&gt;<p>méthode d’objet</p> </td>
+   <td>&gt;<p>SOAP</p> </td>
    <td><p>8880</p> </td>
   </tr>
   <tr>
