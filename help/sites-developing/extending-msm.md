@@ -1,5 +1,5 @@
 ---
-title: Extension du Multi-Site Manager
+title: Étendre Multi Site Manager
 seo-title: Extending the Multi Site Manager
 description: Cette page vous explique comment étendre les fonctionnalités de Multi Site Manager
 seo-description: This page helps you extend the functionalities of the Multi Site Manager
@@ -12,13 +12,13 @@ discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2582'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Extension du Multi-Site Manager{#extending-the-multi-site-manager}
+# Étendre Multi Site Manager{#extending-the-multi-site-manager}
 
 Cette page vous explique comment étendre les fonctionnalités de Multi Site Manager :
 
@@ -33,8 +33,8 @@ Cette page vous explique comment étendre les fonctionnalités de Multi Site Man
 >Lire cette page en lien avec [Réutilisation du contenu : Multi Site Manager](/help/sites-administering/msm.md).
 >
 >Les sections suivantes de la section Restructuration des référentiels de sites dans AEM 6.4 peuvent également vous intéresser :
->* [Configurations de plans directeurs de Multi-site Manager](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html?lang=en#multi-site-manager-blueprint-configurations)
->* [Configurations du déploiement de Multi-site Manager](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html#multi-site-manager-rollout-configurations)
+>* [Configurations de plans directeurs de Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/all-repository-restructuring-in-aem-6-4.html?lang=fr#multi-site-manager-blueprint-configurations)
+>* [Configurations du déploiement de Multi Site Manager](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html?lang=fr#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
@@ -99,7 +99,7 @@ Les principaux objets de l’API MSM interagissent comme suit (voir aussi [Terme
 
    `RolloutConfig` contient une liste de `LiveActions` à utiliser lors du déclenchement. La `LiveCopy` hérite de `RolloutConfig` et le résultat est présent dans `LiveRelationship`.
 
-   * La première configuration d&#39;une Live Copy utilise également un RolloutConfig (qui déclenche les LiveActions).
+   * La première configuration d’une Live Copy utilise également un RolloutConfig (qui déclenche les LiveActions).
 
 ## Création d’une action de synchronisation {#creating-a-new-synchronization-action}
 
@@ -147,7 +147,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Les objets suivants sont fournis en tant que paramètres de la méthode `execute` de l’objet `LiveAction` :
 
-* Un objet [`Resource`](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) représentant la source de la Live Copy
+* Un objet [`Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) représentant la source de la Live Copy
 * Un objet `Resource` représentant la cible de la Live Copy
 * L’objet [`LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy
 * La valeur `autoSave` indique si votre `LiveAction` doit enregistrer les modifications apportées au référentiel.
@@ -558,13 +558,13 @@ Créez la configuration de déploiement du MSM qui utilise la `LiveActionFactory
 
    * **Titre** : Exemple de configuration de déploiement
    * **Nom** : examplerolloutconfig
-   * **cq:trigger**: `publish`
+   * **cq:trigger** : `publish`
 
 ### Ajout de la LiveAction à l’exemple de configuration de déploiement {#add-the-live-action-to-the-example-rollout-configuration}
 
 Paramétrez la configuration de déploiement que vous avez créée dans la procédure précédente afin qu’elle utilise la classe `ExampleLiveActionFactory`.
 
-1. Ouvrez CRXDE Lite, par exemple[ https://localhost:4502/crx/de ](https://localhost:4502/crx/de).
+1. Ouvrez CRXDE Lite, par exemple[https://localhost:4502/crx/de](https://localhost:4502/crx/de).
 1. Créez le nœud correspondant sous `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content` :
 
    * **Nom** : `exampleLiveAction`
@@ -628,7 +628,7 @@ MSM utilise une liste stockée de codes de langue et de pays pour déterminer le
 
 * Titres des langues
 * Noms des pays
-* Pays par défaut pour les langues (pour les codes tels que `de``en`, entre autres)
+* Pays par défaut pour les langues (pour les codes tels que `en`,`de` entre autres)
 
 La liste des langues est stockée sous le nœud `/libs/wcm/core/resources/languages`. Chaque nœud enfant représente une langue ou un code langue-pays :
 
