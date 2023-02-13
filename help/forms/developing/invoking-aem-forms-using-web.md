@@ -11,8 +11,8 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: ht
 source-wordcount: '9905'
 ht-degree: 100%
 
@@ -724,7 +724,7 @@ La discussion ici porte sur l’utilisation de MTOM pour appeler le processus de
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
@@ -838,7 +838,7 @@ La discussion ici porte sur l’appel du processus de courte durée Forms suivan
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
@@ -870,7 +870,7 @@ Pour appeler le processus `MyApplication/EncryptDocument` en utilisant des fichi
 1. Regroupez les classes proxy Java créées à l’aide de JAX-WS dans un fichier JAR.
 1. Incluez le fichier JAR du proxy Java et les fichiers JAR situés dans le chemin d’accès suivant :
 
-   &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
+   &lt;Install Directory>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    dans le chemin de classe de votre projet client Java.
 
@@ -923,7 +923,7 @@ Vous pouvez appeler des services AEM Forms à l’aide de services web et en tra
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
@@ -993,7 +993,7 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 1. Regroupez les classes proxy Java créées à l’aide de JAX-WS dans un fichier JAR.
 1. Incluez le fichier JAR du proxy Java et les fichiers JAR situés dans le chemin d’accès suivant :
 
-   &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
+   &lt;Install Directory>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
    dans le chemin de classe de votre projet client Java.
 
@@ -1037,7 +1037,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
-Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre des exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre des exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 >[!NOTE]
 >
@@ -1335,7 +1335,7 @@ Vous pouvez appeler un service Forms à l’aide d’un assemblage client .NET e
 
 >[!NOTE]
 >
->La section DIME utilise WSE 2.0. Pour utiliser l’authentification SAML, suivez les instructions similaires décrites dans la section DIME. Veillez cependant à remplacer WSE 2.0 par WSE 3.0 et à lʼinstaller sur votre ordinateur de développement, puis à lʼintégrer à Microsoft Visual Studio .NET. Téléchargez Web Services Enhancements 3.0 depuis le [Centre de téléchargement Microsoft](https://www.microsoft.com/downloads/search.aspx).
+>La section DIME utilise WSE 2.0. Pour utiliser l’authentification SAML, suivez les instructions similaires décrites dans la section DIME. Veillez cependant à remplacer WSE 2.0 par WSE 3.0 et à lʼinstaller sur votre ordinateur de développement, puis à lʼintégrer à Microsoft Visual Studio .NET. Téléchargez Web Services Enhancements 3.0 depuis le [Centre de téléchargement Microsoft](https://www.microsoft.com/fr-fr/download/default.aspx).
 
 L’architecture WSE utilise les types de données Policies, Assertions et SecurityToken. En résumé, pour un appel de service web, spécifiez une stratégie. Cette dernière peut avoir plusieurs assertions. Chaque assertion peut contenir des filtres. Un filtre est appelé à certaines étapes d’un appel de service web et, à ce moment-là, il peut modifier la requête SOAP. Pour plus d’informations, consultez la documentation de WSE 3.0.
 
