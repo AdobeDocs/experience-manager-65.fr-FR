@@ -9,7 +9,7 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2910'
 ht-degree: 100%
 
@@ -293,7 +293,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 >
 >Pour les niveaux de catalogue et de console Produits, vous devez déployer vos modifications afin d’appliquer les modifications et de voir la différence sur la page produit.
 
-#### Page des produits {#product-page}
+#### Page produit {#product-page}
 
 1. Accédez à la page produit.
 1. **Modifiez** le composant de produit.
@@ -307,7 +307,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 1. Appuyez ou cliquez sur **Modifier**.
 1. Appuyez ou cliquez sur l’onglet **Ressources**.
 1. Saisissez la **catégorie de ressources de produit** requise.
-1. Appuyez/cliquez sur **Terminé.**
+1. Appuyez/cliquez sur **Terminé**.
 1. [Déployez](#rolling-out-a-catalog) vos modifications.
 
 #### Console Produits {#products-console}
@@ -316,7 +316,7 @@ Le mécanisme pour sélectionner l’image à afficher se présente comme suit 
 1. Appuyez ou cliquez sur **Afficher les données du produit**.
 1. Appuyez ou cliquez sur **Modifier**.
 1. Saisissez une **catégorie de ressources par défaut**.
-1. Appuyez/cliquez sur **Terminé.**
+1. Appuyez/cliquez sur **Terminé**.
 1. [Déployez](#rolling-out-a-catalog) vos modifications.
 
 ### Publication/annulation de la publication des informations sur les produits {#publishing-unpublishing-product-information}
