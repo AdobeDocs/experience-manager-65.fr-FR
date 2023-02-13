@@ -1,5 +1,5 @@
 ---
-title: Mise à jour des paramètres généraux
+title: Mettre à jour les paramètres généraux
 seo-title: Updating general settings
 description: Mettez à jour les paramètres de l’application AEM Forms tels que l’écran d’accueil et recherchez les points et les options de pièces jointes.
 seo-description: Update AEM Forms app settings such as the Home screen and fetch Startpoints and attachments options
@@ -11,13 +11,13 @@ discoiquuid: 7fdb9fab-6bae-49b8-86b6-66138a2a6cd3
 docset: aem65
 exl-id: 3e74cda2-ba3e-4ee9-b7d0-76a804232199
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
 ht-degree: 100%
 
 ---
 
-# Mise à jour des paramètres généraux{#updating-general-settings}
+# Mettre à jour les paramètres généraux{#updating-general-settings}
 
 Les paramètres généraux de l’application AEM Forms vous permettent de définir des paramètres tels que la récupération des pièces jointes, le mode hors connexion, l’écran d’accueil, la catégorie par défaut et la fréquence d’enregistrement automatique.
 
