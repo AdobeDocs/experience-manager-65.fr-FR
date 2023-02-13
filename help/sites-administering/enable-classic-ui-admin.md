@@ -1,5 +1,5 @@
 ---
-title: Consoles d’administration
+title: Admin Consoles
 seo-title: Admin Consoles
 description: Comment utiliser les consoles d’administration disponibles dans AEM.
 seo-description: Lear how to use the Admin Consoles available in AEM.
@@ -12,13 +12,13 @@ discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
 ht-degree: 100%
 
 ---
 
-# Consoles d’administration{#admin-consoles}
+# Admin Consoles{#admin-consoles}
 
 Par défaut, la possibilité de basculer vers l’IU classique via les consoles d’administration a été désactivée. Par conséquent, les icônes contextuelles qui s’affichaient lors du survol du curseur sur certaines icônes de la console, et qui permettaient d’accéder à l’IU classique, ne sont plus affichées.
 
