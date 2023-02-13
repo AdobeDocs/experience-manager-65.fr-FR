@@ -1,5 +1,5 @@
 ---
-title: Création d’un composant de champ d’IU Granite
+title: Créer un composant de champ d’IU Granite
 seo-title: Creating a New Granite UI Field Component
 description: L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires, appelés champs.
 seo-description: Granite UI provides a range of components designed to be used in forms, called fields
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '539'
 ht-degree: 100%
 
 ---
 
-# Création d’un composant de champ d’IU Granite{#creating-a-new-granite-ui-field-component}
+# Créer un composant de champ d’IU Granite{#creating-a-new-granite-ui-field-component}
 
 L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires. Ils sont appelés *champs* selon la terminologie de l’IU Granite. Les composants de formulaire Granite standard sont disponibles sous :
 
