@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Ex
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4089'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -543,10 +543,10 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
    * Voir [Exemple de requête – Toutes les informations sur toutes les villes](#sample-all-information-all-cities)
 
-* Le filtre `includeVariations` est inclus dans la variable `List` type de requête.  Pour récupérer les variations du fragment de contenu dans les résultats de la requête, le `includeVariations` doit être défini sur `true`.
+* Le filtre `includeVariations` est inclus dans le type de requête `List`.  Pour récupérer les variations du fragment de contenu dans les résultats de la requête, vous devez définir le filtre `includeVariations` sur `true`.
 
    >[!CAUTION]
-   >Le filtre `includeVariations` ne peut pas être utilisé avec le champ généré par le système `_variation`.
+   >Vous ne pouvez pas utiliser le filtre `includeVariations` avec le champ généré par le système `_variation`.
 
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
@@ -578,13 +578,13 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
 
          >[!CAUTION]
-         >Le champ généré par le système `_variation` ne peut pas être utilisé avec le filtre `includeVariations`.
+         >Vous ne pouvez pas utiliser le champ généré par le système `_variation` avec le filtre `includeVariations`.
 
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
-      * `_tags` : pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau de `cq:tags` identifiants.
+      * `_tags` : pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau d’identifiants `cq:tags`.
 
-         * Voir [Exemple de requête : noms de toutes les villes balisées en tant que coupures municipales](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-         * Voir [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+         * Reportez-vous à [Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks).
+         * Reportez-vous à [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag).
 
          >[!NOTE]
          >
