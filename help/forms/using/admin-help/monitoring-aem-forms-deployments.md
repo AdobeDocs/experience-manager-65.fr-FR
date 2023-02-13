@@ -1,5 +1,5 @@
 ---
-title: Surveillance des déploiements d’AEM forms
+title: Surveiller les déploiements d’AEM Forms
 seo-title: Monitoring AEM forms deployments
 description: Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Ce document vous permet d’en savoir plus sur la surveillance des déploiements d’AEM Forms.
 seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '605'
 ht-degree: 100%
 
 ---
 
-# Surveillance des déploiements d’AEM forms {#monitoring-aem-forms-deployments}
+# Surveiller les déploiements d’AEM Forms {#monitoring-aem-forms-deployments}
 
 Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Utilisez pour cela des outils de gestion spécialisés tels que HP OpenView, IBM Tivoli et CA UniCenter, ainsi qu’un moniteur JMX tiers appelé *JConsole* et tout particulièrement dédié au contrôle de l’activité Java. L’implémentation d’une stratégie de surveillance améliore la disponibilité, la fiabilité et les performances des déploiements d’AEM Forms.
 
