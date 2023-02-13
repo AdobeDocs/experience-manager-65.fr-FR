@@ -1,5 +1,5 @@
 ---
-title: Réglage précis des performances de Health Monitor
+title: Optimiser les performances de Health Monitor
 seo-title: Fine-tuning Health Monitor performance
 description: Découvrez comment optimiser les performances de Health Monitor
 seo-description: Learn how to fine-tune Health Monitor performance
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
 ht-degree: 100%
 
 ---
 
-# Réglage précis des performances de Health Monitor{#fine-tuning-health-monitor-performance}
+# Optimiser les performances de Health Monitor{#fine-tuning-health-monitor-performance}
 
 La collecte des statistiques système qui remplissent Health Monitor a une incidence sur les performances de votre environnement AEM forms. Vous pouvez contrôler cette incidence en définissant les options Java répertoriées ci-dessous dans votre serveur d’applications.
 
