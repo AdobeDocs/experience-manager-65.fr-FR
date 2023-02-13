@@ -1,5 +1,5 @@
 ---
-title: Installation et configuration des fonctionnalités de capture de données
+title: Installer et configurer les fonctionnalités de capture de données
 seo-title: Install and configure data capture capabilities
 description: Installez et configurez des formulaires adaptatifs, des formulaires PDF et des formulaires HTML5. Configurez Adobe Analytics et Adobe Target pour les formulaires adaptatifs afin d’analyser l’utilisation des formulaires et cibler les utilisateurs en fonction de leur profil.
 seo-description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
@@ -11,9 +11,9 @@ docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1882'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -105,7 +105,7 @@ Avant de commencer à installer et configurer la fonctionnalité de capture de d
 
    * libicu
 
-* Installer [Redistribuable 32 bits de Microsoft Visual Studio 2019](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+* Installez le [Package redistribuable Microsoft Visual Studio 2019 32 bits](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 
 ## Installation du module complémentaire AEM Forms {#install-aem-forms-add-on-package}
@@ -127,7 +127,7 @@ Le package du module complémentaire AEM Forms est une application déployée s
 
 ### (Windows uniquement) Installation automatique des redistribuables Visual Studio {#automatic-installation-visual-studio-redistributables}
 
-Si vous installez une instance AEM en mode élevé, les redistribuables Visual Studio 32 bits sont installés automatiquement lors de l’installation du module complémentaire AEM Forms.
+Si vous installez une instance AEM en mode élevé, les packages redistribuables Visual Studio 32 bits sont installés automatiquement lors de l’installation du module complémentaire AEM Forms.
 
 Pour évaluer si les redistribuables de Visual Studio sont installés automatiquement, ouvrez le fichier `error.log` accessible depuis le répertoire `/crx-repository/logs/`. Les journaux contiennent le message suivant :
 
@@ -188,7 +188,7 @@ Dispatcher est l’outil de mise en cache et/ou d’équilibrage de charge d’A
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Enregistrez et fermez le fichier. Pour des informations détaillées sur les filtres, voir la [documentation du répartiteur](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Configurez le service de filtrage des référents :
 
@@ -198,7 +198,7 @@ Dispatcher est l’outil de mise en cache et/ou d’équilibrage de charge d’A
 
 La mise en cache est un mécanisme qui permet de raccourcir les temps d’accès aux données, réduire le temps de réponse et améliorer les vitesses d’entrée/sortie (E/S). Le cache de formulaires adaptatifs stocke uniquement le contenu HTML et la structure JSON d’un formulaire adaptatif sans enregistrer les données pré-renseignées. Cela permet de réduire le temps nécessaire pour effectuer le rendu d’un formulaire adaptatif.
 
-* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
+* Lorsque vous utilisez le cache de formulaires adaptatifs, utilisez le [répartiteur AEM](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html) pour mettre en cache les bibliothèques client (CSS et Javascript) d’un formulaire adaptatif. 
 * Lors du développement des composants personnalisés, sur le serveur utilisé pour le développement, gardez le cache de formulaires adaptatifs désactivé.
 
 Pour configurer la mise en cache des formulaires adaptatifs, procédez comme suit :
@@ -241,5 +241,5 @@ AEM Forms s’intègre à Adobe Target, une solution Adobe Marketing Cloud, 
 Vous avez configuré un environnement pour utiliser les fonctionnalités de capture de données AEM Forms. Maintenant, les prochaines étapes pour utiliser cette fonctionnalité sont les suivantes :
 
 * [Création de votre premier formulaire adaptatif](/help/forms/using/create-your-first-adaptive-form.md)
-* [Création de votre premier formulaire PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Création de votre premier formulaire PDF](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_fr)
 * [Présentation des formulaires HTML5](/help/forms/using/introduction.md)
