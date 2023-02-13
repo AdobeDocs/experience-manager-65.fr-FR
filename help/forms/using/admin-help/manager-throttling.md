@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
 ht-degree: 100%
 
