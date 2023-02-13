@@ -1,5 +1,5 @@
 ---
-title: Création et gestion des stratégies
+title: Créer et gérer des stratégies
 seo-title: Creating and managing policies
 description: Une stratégie est un jeu de paramètres de confidentialité et d’utilisateurs habilités à accéder au document auquel la stratégie est appliquée. Vous pouvez créer et gérer différents types de stratégies à l’aide des formulaires AEM.
 seo-description: A policy is a set of confidentiality settings and users who can access a document to which the policy is applied. You can create and manage various types of policies using AEM forms.
@@ -12,13 +12,13 @@ discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4718'
 ht-degree: 100%
 
 ---
 
-# Création et gestion des stratégies {#creating-and-managing-policies}
+# Créer et gérer des stratégies {#creating-and-managing-policies}
 
 Une *stratégie* définit un jeu de paramètres de confidentialité et d’utilisateurs habilités à accéder au document auquel la stratégie est appliquée. Un *jeu de stratégies* regroupe plusieurs stratégies ayant une finalité commune. Ces jeux de stratégies sont ensuite rendus accessibles à un sous-groupe d’utilisateurs du système. Pour plus d’informations sur les stratégies, voir [Stratégies et documents protégés par une stratégie](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
@@ -226,7 +226,7 @@ La zone Paramètres généraux contient les paramètres suivants :
 
 **Suivi des utilisations étendues :** activez ou désactivez le suivi des utilisations étendues. Document Security prend en charge le suivi des événements d’utilisateur associés aux diverses opérations réalisées sur un fichier PDF. L’objet Document Security peut être accessible à l’aide d’un script Java. Le fait de cliquer sur un bouton, un fichier multimédia en cours de lecture ou l’enregistrement d’un fichier sont quelques exemples d’événements pouvant être envoyés par un fichier PDF protégé par une stratégie. A l’aide de l’objet Document Security, vous pouvez également récupérer des informations sur l’utilisateur. Le suivi des événements peut être activé dans le serveur Document Security au niveau global ou au niveau stratégique.
 
-**Période d’ouverture hors ligne :** nombre maximum de jours pendant lesquels le destinataire peut utiliser le document protégé par une stratégie hors ligne (c’est-à-dire sans être connecté à Internet ou à un réseau). A l’issue de cette période d’ouverture, le destinataire doit resynchroniser le document pour continuer à l’utiliser.
+**Période d’ouverture hors ligne :** nombre maximum de jours pendant lesquels le destinataire peut utiliser le document protégé par une stratégie hors ligne (c’est-à-dire sans être connecté à Internet ou à un réseau). À l’issue de cette période d’ouverture, le ou la destinataire doit resynchroniser le document pour continuer à l’utiliser.
 
 ### Fournisseurs d’autorisations externes {#external-authorization-providers}
 
