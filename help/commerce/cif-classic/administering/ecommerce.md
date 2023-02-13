@@ -6,9 +6,9 @@ content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
   </tr>
   <tr>
    <td>Disponibilité</td>
-   <td><p>Oui. Commerce Cloud SAP (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4)</p> <p>Salesforce Commerce Cloud (connecteur en open source pour prendre en charge AEM 6.4)</p> </td>
+   <td><p>Oui. SAP Commerce Cloud (extension mise à jour pour prendre en charge AEM 6.4 et Hybris 5 (par défaut) et maintenir la compatibilité avec Hybris 4).</p> <p>Salesforce Commerce Cloud (connecteur en open source pour prendre en charge AEM 6.4)</p> </td>
    <td>Oui via open source via GitHub. Adobe Commerce (prend en charge la version 2.3.2 (par défaut) et compatible avec la version 2.3.1)</td>
   </tr>
   <tr>
@@ -147,7 +147,7 @@ AEM eCommerce fournit ce qui suit :
 
    * Recherche AEM
    * Recherche du système de commerce électronique
-   * recherche tierce
+   * Une recherche tierce
    * Ou une combinaison de ces trois fonctions
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
