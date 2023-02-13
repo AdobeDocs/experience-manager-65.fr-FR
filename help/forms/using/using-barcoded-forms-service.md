@@ -1,7 +1,7 @@
 ---
 title: Service Barcoded Forms
 seo-title: Using AEM Forms Barcoded Forms Service
-description: 'Utilisez le service AEM Forms Barcoded Forms pour extraire des données depuis des images électroniques de codes à barres. '
+description: Utilisez le service AEM Forms Barcoded Forms pour extraire des données depuis des images électroniques de codes à barres.
 seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
 uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
@@ -11,7 +11,7 @@ discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 exl-id: edaf12be-473f-4175-b4e0-549b41159a55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1022'
 ht-degree: 100%
 
@@ -128,7 +128,7 @@ En outre, considérez les restrictions suivantes lorsque vous utilisez le servic
 * Le service prend entièrement en charge AcroForms et les formulaires statiques contenant des codes à barres 2D qui sont enregistrés avec Adobe Reader ou Acrobat. Toutefois, pour les codes à barres 1D, aplatissez le formulaire ou fournissez-le sous forme de document PDF ou TIFF numérisé.
 * Les formulaires XFA dynamiques ne sont pas entièrement pris en charge. Pour décoder correctement les codes à barres 1D et 2D dans un formulaire dynamique, aplatissez le formulaire ou fournissez-le sous forme de document PDF ou TIFF numérisé.
 
-En outre, le service peut décoder tout code à barres qui utilise une symbologie prise en charge si les restrictions indiquées ci-dessus sont respectées. Pour plus d’informations sur la manière de créer des formulaires à code-barres interactifs, voir [l’Aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+En outre, le service peut décoder tout code à barres qui utilise une symbologie prise en charge si les restrictions indiquées ci-dessus sont respectées. Pour plus d’informations sur la manière de créer des formulaires à code-barres interactifs, voir [l’Aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_63_fr).
 
 ## Configurer les propriétés du service   {#configureproperties}
 
@@ -140,7 +140,7 @@ Le service Barcoded Forms fournit les deux API suivantes :
 
 * **[decode](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)** : Décode tous les codes à barres disponibles dans un document PDF ou une image tiff d’entrée. Elle renvoie un autre document XML contenant des données extraites à partir de tous les codes à barres disponibles dans le document ou l’image d’entrée.
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)** : convertissez des données décodées en données XML à l’aide de l’API de décodage. Ces données XML peuvent être fusionnées avec un formulaire XFA. Elle renvoie une liste des documents XML, un pour chaque code à barres.
+* **[extractToXML](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)** : convertissez des données décodées en données XML à l’aide de l’API de décodage. Ces données XML peuvent être fusionnées avec un formulaire XFA. Elle renvoie une liste des documents XML, un pour chaque code à barres.
 
 ### Utilisation du service BCF avec un JSP ou des servlets {#using-bcf-service-with-a-jsp-or-servlets}
 
@@ -233,9 +233,9 @@ L’exemple de code suivant décode un code à barres dans document et enregist
 
 ### Utilisation du service BCF avec des processus AEM {#using-the-bcf-service-with-aem-workflows}
 
-L’exécution du service Barcoded Forms à partir d’un processus est semblable à l’exécution du service à partir de JSP/Servlet. La seule différence réside dans le fait qu’avec une exécution du service à partir de JSP/Servlet, l’objet de document récupère automatiquement une instance d’objet ResourceResolver à partir de l’objet ResourceResolverHelper. Ce mécanisme automatique ne fonctionne pas lorsque le code est appelé à partir d’un processus.
+L’exécution du service Barcoded Forms à partir d’un processus est semblable à l’exécution du service à partir de JSP/Servlet. La seule différence réside dans le fait qu’avec une exécution du service à partir de JSP/Servlet, l’objet de document récupère automatiquement une instance d’objet ResourceResolver à partir de l’objet ResourceResolverHelper. Ce mécanisme automatique ne fonctionne pas lorsque le code est appelé à partir d’un workflow.
 
-Pour un flux de travail, transmettez explicitement une occurrence de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l’objet de document utilise l’objet ResourceResolver fourni pour lire le contenu à partir du référentiel.
+Pour un workflow, transmettez explicitement une instance de l’objet ResourceResolver au constructeur de classe du document. Ensuite, l’objet de document utilise l’objet ResourceResolver fourni pour lire le contenu à partir du référentiel.
 
 L’exemple de processus suivant décode un code à barres dans un document et enregistre le résultat sur le disque. Le code est écrit dans ECMAScript et le document est transmis en tant que charge utile de flux de travail :
 
