@@ -12,9 +12,9 @@ discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2861'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -224,7 +224,7 @@ Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques q
 
 #### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
-Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/apps`. Il est également recommandé d’empêcher les internautes d’accéder au dossier `/apps`. Pour répondre à ces deux exigences, créez un dossier de bibliothèques clientes sous `/apps`et le rendre accessible par le biais du servlet proxy, comme décrit sous [Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
+Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/apps`. Il est également recommandé d’empêcher les internautes d’accéder au dossier `/apps`. Pour répondre à ces deux exigences, créez un dossier de bibliothèques clientes sous `/apps` et rendez-le accessible par le biais du servlet proxy, comme décrit sous [Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet).
 
 Utilisez la propriété categories pour identifier le dossier de bibliothèque cliente à incorporer. Pour incorporer la bibliothèque, ajoutez une propriété au nœud `cq:ClientLibraryFolder` d’intégration à l’aide des attributs de propriété suivants :
 
