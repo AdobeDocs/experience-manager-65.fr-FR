@@ -1,5 +1,5 @@
 ---
-title: 'Ajout et configuration d’utilisateurs '
+title: Ajout et configuration d’utilisateurs
 seo-title: Adding and configuring users
 description: Les paramètres User Management dans la console d’administration vous permettent de créer ou supprimer des utilisateurs et de configurer d’autres paramètres utilisateur.
 seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
@@ -9,13 +9,13 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
 ht-degree: 100%
 
 ---
 
-# Ajout et configuration d’utilisateurs {#adding-and-configuring-users}
+# Ajouter et configurer des utilisateurs {#adding-and-configuring-users}
 
 Les informations relatives aux utilisateurs et aux groupes sont gérées dans un système de stockage tiers, tel qu’un annuaire LDAP. User Management n’a pas la possibilité d’écrire dans le système de stockage tiers, mais assure la synchronisation de ces informations avec sa propre base de données
 
