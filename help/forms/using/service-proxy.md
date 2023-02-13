@@ -12,7 +12,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '697'
 ht-degree: 100%
 
@@ -128,7 +128,7 @@ En cliquant sur le bouton Envoyer, les formulaires HTML5 envoient des données a
 
 #### Fonctionnement du proxy d’envoi. {#how-nbsp-the-nbsp-submit-proxy-works}
 
-Si submiturl ne figure pas dans le paramètre de requête, le proxy de service d’envoi agit en tant que passerelle. Il agit en tant que passerelle. Il envoie la requête à l’extrémité //bin/xfaforms/submitaction et la réponse à l’exécution XFA.
+Si submiturl ne figure pas dans le paramètre de requête, le proxy de service d’envoi agit en tant que passerelle. Il agit en tant que passerelle. Il envoie la requête au point d’entrée //bin/xfaforms/submitaction et la réponse à l’exécution XFA.
 
 Si submiturl figure dans le paramètre de requête, le proxy de service d’envoi sélectionne une topologie.
 
