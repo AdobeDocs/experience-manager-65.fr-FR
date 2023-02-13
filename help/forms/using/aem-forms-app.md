@@ -11,7 +11,7 @@ topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2450'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ L’application AEM Forms nécessite un serveur AEM Forms. Les utilisateurs peuv
 
 ### Application AEM Forms avec des serveurs utilisant AEM Forms Workflow {#aem-forms-app-with-servers-using-aem-forms-workflow}
 
-Si vous avez un serveur AEM Forms Workflow, vous pouvez générer des formulaires en tant que tâches au sein de l’application AEM Forms. Par exemple, vous dirigez un établissement bancaire et un client remplit une demande d’utilisation de vos services. La demande est un formulaire adaptatif qui accepte les informations de vos clients, puis les stocke en tant qu’envoi pour révision. L’administrateur examine la demande et transfère une demande de vérification à l’agent de terrain. La demande transférée active un formulaire de vérification dans l’application de l’agent de terrain en tant que tâche. Votre agent de terrain apporte le périphérique mobile auprès de votre client et vérifie les détails.
+Si vous avez un serveur AEM Forms Workflow, vous pouvez générer des formulaires en tant que tâches au sein de l’application AEM Forms. Par exemple, vous dirigez un établissement bancaire et un client remplit une demande d’utilisation de vos services. La demande est un formulaire adaptatif qui accepte les informations de vos clients, puis les stocke en tant qu’envoi pour révision. L’administrateur examine la demande et transfère une demande de vérification à l’agent de terrain. La demande transférée active un formulaire de vérification dans l’application de l’agent de terrain en tant que tâche. Votre agent de terrain apporte le périphérique mobile auprès de votre client(e) et vérifie les détails.
 
 ### Application AEM Forms avec des serveurs utilisant des processus basés sur l’utilisation de Forms on OSGi {#aem-forms-app-with-servers-using-forms-centric-workflow-on-osgi}
 
