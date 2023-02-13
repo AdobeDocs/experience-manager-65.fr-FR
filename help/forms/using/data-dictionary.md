@@ -10,8 +10,8 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '3838'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Utilisez l’Éditeur du dictionnaire de données pour créer un dictionnaire de
 1. Cliquez sur **Créer un dictionnaire de données**.
 1. Dans l’écran de propriétés, ajoutez ce qui suit :
 
-   * **Titre :** (facultatif) Saisissez le titre pour le dictionnaire de données. Le titre ne doit pas être unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
+   * **Titre :** (facultatif) Saisissez le titre pour le dictionnaire de données. Le titre n’est pas forcément unique et peut contenir des caractères spéciaux et des caractères dans une autre langue que l’anglais. Des lettres et d’autres parties du document sont envoyées avec leur titre (le cas échéant), comme dans les vignettes et les propriétés de la ressource. Les dictionnaires de données sont référencés avec leurs noms et non pas avec leurs titres.
    * **Nom** : le nom unique du dictionnaire de données. Dans le champ Nom, vous pouvez entrer uniquement les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre et les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
 
    * **Description** : (facultatif) Description du dictionnaire de données.
@@ -488,8 +488,8 @@ Validations appliquées au niveau de l’Elément du dictionnaire de données.
 * Tous les DDE doivent comporter un type d’élément « not null/non null ».
 * Aucun nom de référence de DDE ne doit être nul.
 * Tous les noms de référence de DDE doivent être uniques.
-* Tous les noms de référence de DDE ne doivent contenir que des caractères alphanumériques et le signe « _ ».
-* Tous les noms d’affichage de DDE ne doivent contenir que des caractères alphanumériques et le signe « _ ».
+* Tous les noms de référence de DDE doivent uniquement contenir des caractères alphanumériques et le signe « _ ».
+* Tous les noms d’affichage de DDE doivent uniquement contenir des caractères alphanumériques et le signe « _ ».
 * Les éléments Composite et Collection ne sont pas autorisés au niveau de la feuille. Seuls les éléments de type primitif (chaîne, date, nombre, booléen) sont autorisés au niveau feuille. Cette validation permet de s’assurer qu’il n’existe aucun élément Composite et Collection sans DDE enfant.
 * Un DDE composite parent ne doit pas avoir deux éléments enfants portant le même nom.
 * Le sous-type ENUM est utilisé uniquement pour les éléments Chaîne et Nombre.
@@ -527,7 +527,7 @@ L’exemple suivant montre un schéma simple.
 </xs:schema>
 ```
 
-| **Elément du dictionnaire de données** | **Liaison XML par défaut** |
+| **Élément du dictionnaire de données** | **Liaison XML par défaut** |
 |---|---|
 | age | /age |
 | prix | /prix |
@@ -647,7 +647,7 @@ Le fichier Token.xsd associé à cet exemple serait :
 </xs:complexType>
 ```
 
-| **Elément du dictionnaire de données** | **Liaison XML par défaut** |
+| **Élément du dictionnaire de données** | **Liaison XML par défaut** |
 |---|---|
 | Racine | vide (nulle) |
 | Jetons | /Racine/Jetons |
