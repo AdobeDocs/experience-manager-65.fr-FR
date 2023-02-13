@@ -1,5 +1,5 @@
 ---
-title: Souscription à Adobe Analytics et Adobe Target
+title: Souscrire à Adobe Analytics et Adobe Target
 seo-title: Opting Into Adobe Analytics and Adobe Target
 description: Découvrez comment souscrire à Adobe Analytics et Target.
 seo-description: Learn how to opt into Adobe Analytics and Adobe Target.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1310'
 ht-degree: 100%
 
 ---
 
-# Souscription à Adobe Analytics et Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
+# Souscrire à Adobe Analytics et Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM dispose d’une procédure de souscription pour vous aider à l’intégrer à Adobe Analytics et Target. Elle est prête à l’emploi sous la forme d’une tâche préchargée attribuée au groupe d’utilisateurs administrateurs.
 
