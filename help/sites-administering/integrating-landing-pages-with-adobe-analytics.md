@@ -1,5 +1,5 @@
 ---
-title: Intégration des pages d’entrée à Adobe Analytics
+title: Intégrer des pages d’entrée à Adobe Analytics
 seo-title: Integrating Landing Pages with Adobe Analytics
 description: Découvrez comment intégrer des pages d’entrée à Adobe Analytics.
 seo-description: Learn how to integrate landing pages with Adobe Analytics.
@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '376'
 ht-degree: 100%
 
 ---
 
-# Intégration des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
+# Intégrer des pages d’entrée à Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM a intégré la solution des pages de destination à [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
+AEM a intégré la solution des pages d’entrée à [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) en utilisant les composants CTA (call-to-action) suivants :
 
 1. Composant Lien des clics publicitaires
 1. Composant Lien graphique
