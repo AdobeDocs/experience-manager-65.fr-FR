@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4443'
 ht-degree: 100%
 
@@ -339,7 +339,7 @@ Grâce à la procédure suivante, vous pouvez ajouter un onglet avec un champ à
 
 1. Dans le dossier d’éléments que vous venez de créer, ajoutez un nœud dans l’onglet personnalisé dans la ressource (ici : mytab, ce nom n’apparaît pas dans l’interface utilisateur) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un nœud**.
+   1. Cliquez avec le bouton droit sur le dossier d’éléments et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
       **Nom :** mytab (ou le nom que vous souhaitez donner à cette propriété)
@@ -427,7 +427,7 @@ Procédez comme suit pour ajouter une propriété à un type de ressource :
 
 1. Dans le dossier d’éléments que vous avez créé, ajoutez un nœud à l’onglet personnalisé dans la ressource (exemple : customtab) en procédant comme suit :
 
-   1. Cliquez avec le bouton droit sur le dossier éléments et sélectionnez **Créer** > **Créer un nœud**.
+   1. Cliquez avec le bouton droit sur le dossier d’éléments et sélectionnez **Créer** > **Créer un nœud**.
    1. Assurez-vous que la boîte de dialogue de création du nœud possède les valeurs suivantes et cliquez sur **OK** :
 
       **Nom :** customtab (ou le nom que vous souhaitez donner à cette propriété)
@@ -923,7 +923,7 @@ Pour ce faire, effectuez les étapes suivantes :
    <tr>
       <td>sling:orderBefore<br /> </td>
       <td>Chaîne</td>
-      <td>carte</td>
+      <td>card</td>
    </tr>
    </tbody>
    </table>
