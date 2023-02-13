@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3138'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Les schémas XML et JSON représentent la structure dans laquelle les données s
 
 Pour en savoir plus sur la création d’un formulaire adaptatif, consultez [Création d’un formulaire adaptatif](../../forms/using/creating-adaptive-form.md).
 
-## Interface de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
+## Interface utilisateur de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
 
 L’interface utilisateur optimisée pour les écrans tactiles permet de créer des formulaires adaptatifs de manière intuitive et offre les avantages suivants :
 
