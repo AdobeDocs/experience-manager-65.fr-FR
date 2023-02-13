@@ -12,9 +12,9 @@ discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1528'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Utilisez la [console Web pour configurer le](/help/sites-deploying/configuring-o
 >
 >En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM.
 >
->Le [plug-in Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) doit désormais être utilisé.
+>Le [plug-in Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr) doit désormais être utilisé.
 
 ## Création d’un framework Adobe Analytics {#creating-a-adobe-analytics-framework}
 
@@ -184,7 +184,7 @@ Les descendants de la page héritent de l’association avec la structure. Par e
 1. Sélectionnez **Enregistrer et fermer**.
 1. **[Publiez](/help/sites-authoring/publishing-pages.md)** la page pour activer la page et tous les fichiers/configurations connecté(e)s.
 1. La dernière étape consiste à visiter la page sur l’instance de publication et à rechercher un mot-clé (par exemple, aubergine) à l’aide du composant **Rechercher**.
-1. Vous pouvez ensuite vérifier les appels effectués à Adobe Analytics à l’aide d’un outil approprié, par exemple [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+1. Vous pouvez ensuite vérifier les appels effectués à Adobe Analytics à l’aide d’un outil approprié, par exemple [Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=fr).
 1. Dans l’exemple fourni, l’appel doit contenir la valeur entrée (c’est-à-dire, aubergine) dans eVar7 et la liste des événements doit contenir event3.
 
 ### Pages vues {#page-views}
