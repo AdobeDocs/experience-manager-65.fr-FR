@@ -10,9 +10,9 @@ discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 source-git-commit: f05ddd2fb72258b7de5d361eb87f5e68e7ddd7ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4529'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -98,16 +98,16 @@ Pour plus d’informations, voir [Création d’un formulaire adaptatif](/help/f
 
 ### Création de modèles de formulaire
 
-Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaire activés dans **Explorateur de configuration**. Pour activer les modèles de formulaire, reportez-vous à la section [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
+Vous pouvez créer un formulaire adaptatif à l’aide des modèles de formulaire activés dans **Explorateur de configurations**. Pour activer les modèles de formulaire, reportez-vous à [Création d’un modèle de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=fr).
 
-Les modèles de formulaire peuvent également être chargés à partir des modules de formulaire adaptatif créés sur un autre ordinateur de création. Les modèles de formulaire sont disponibles lors de l’installation [packages aemforms-reference-*](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Voici quelques-unes des bonnes pratiques recommandées :
-* Le **nosamplecontent** runmode est recommandé uniquement pour les noeuds author et non pour les noeuds publish.
-* La création de ressources telles que les formulaires adaptatifs, les thèmes, les modèles ou les configurations cloud s’effectue uniquement sur les noeuds d’auteur, qui peuvent être publiés sur les noeuds de publication configurés.
-Pour plus d’informations, voir [Publication et annulation de la publication de formulaires et documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
-* Le module complémentaire Forms est nécessaire pour la création ainsi que pour la publication afin de prendre en charge les opérations de service de document ; par conséquent, il peut être considéré comme une dépendance.
-Si vous souhaitez uniquement des exemples de modules de modèle, de thèmes et de document d’enregistrement liés à Forms, vous pouvez les télécharger à partir de [packages aemforms-reference-*](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
+Vous pouvez également charger les modèles de formulaire à partir des packages de formulaires adaptatifs créés sur l’ordinateur d’un autre auteur. Les modèles de formulaire sont disponibles en installant [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr). Nous recommandons de suivre les bonnes pratiques suivantes :
+* Nous recommandons le mode d’exécution **nosamplecontent** uniquement pour les nœuds d’auteur et non pour les nœuds de publication.
+* La création de ressources telles que les formulaires adaptatifs, les thèmes, les modèles ou les configurations cloud s’effectue uniquement sur les nœuds d’auteur, qui peuvent être publiés sur les nœuds de publication configurés.
+Pour plus d’informations, reportez-vous à [Publication et annulation de la publication de formulaires et de documents](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=fr).
+* Le package du module complémentaire Forms est nécessaire pour la création et la publication, afin de prendre en charge les opérations de service de document. Il peut donc être considéré comme une dépendance.
+Si vous souhaitez uniquement des packages d’exemples de modèle, de thèmes et de documents d’enregistrement liés à Forms, vous pouvez les télécharger à partir de [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=fr).
 
-Pour plus d’informations, voir les bonnes pratiques de la section [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
+Pour plus d’informations, reportez-vous aux bonnes pratiques dans [Présentation de la création de formulaires adaptatifs](/help/forms/using/introduction-forms-authoring.md).
 
 ## Création de formulaires adaptatifs {#author-adaptive-forms}
 
@@ -185,7 +185,7 @@ Afin de résoudre ces problèmes de performances dans les formulaires volumineux
    * Les composants des pièces jointes et des conditions générales ne sont pas pris en charge dans les fragments chargés en différé.
    * Marquez une valeur dans un panneau chargé en différé comme Utiliser la valeur globalement si cette valeur est utilisée dans une autre partie du formulaire afin qu’elle soit disponible lorsque le panneau de contenu est déchargé.
    * Pensez à créer des règles de visibilité pour les fragments qui doivent s’afficher ou être masqués en fonction d’une condition.
-* Définissez la valeur de la variable **Nombre d’appels par requête** dans le **Servlet principal Apache Sling** à un nombre assez élevé. Il permet au serveur Forms d’autoriser des appels supplémentaires. La configuration affiche une valeur par défaut de 1 500. La valeur, 1 500 appels, correspond à d’autres composants de Experience Manager tels que Sites et Assets. Le jeu de valeurs par défaut des formulaires adaptatifs est 20 000. Si vous rencontrez la variable `too many calls` dans les journaux ou si le rendu du formulaire échoue, essayez d’augmenter la valeur à un grand nombre pour résoudre le problème. Si le nombre d’appels est supérieur à 20 000, cela signifie que le formulaire est complexe et qu’il peut prendre un certain temps pour générer le formulaire dans le navigateur. Cela ne se produit que lors du premier chargement du formulaire, une fois le formulaire mis en cache et une fois le formulaire mis en cache, cela n’a aucun impact significatif sur les performances.
+* Définissez la valeur de **Nombre d’appels par requête** dans le **Servlet principal Apache Sling** sur un nombre assez élevé. Cela permet au serveur Forms d’autoriser des appels supplémentaires. La configuration indique une valeur par défaut de 1 500. La valeur, 1 500 appels, correspond à d’autres composants d’Experience Manager tels que Sites et Assets. La valeur définie par défaut des formulaires adaptatifs est 20 000. Si vous rencontrez l’erreur `too many calls` dans les journaux ou si le rendu du formulaire échoue, essayez de définir la valeur sur un nombre plus élevé pour résoudre le problème. Si le nombre d’appels est supérieur à 20 000, cela signifie que le formulaire est complexe et qu’il peut prendre un certain temps pour générer le rendu du formulaire dans le navigateur. Cela ne se produit que lors du premier chargement du formulaire. Une fois le formulaire mis en cache, cela n’a aucun impact significatif sur les performances.
 
 ### Préremplissage des formulaires adaptatifs {#prefilling-adaptive-forms}
 
@@ -283,7 +283,7 @@ Il est souvent nécessaire de déplacer vos projets AEM d’un environnement à 
 * Utilisez la fonctionnalité [Importation/exportation](/help/forms/using/import-export-forms-templates.md) pour déplacer des actifs vers le nouvel environnement. Vous pouvez également configurer l’agent de réplication et publier les actifs.
 * Lorsque vous effectuez une mise à niveau, remplacez toutes les API et fonctionnalités obsolètes par de nouvelles API et fonctionnalités.
 
-### Configuration d’AEM {#configuring-aem}
+### Configurer AEM {#configuring-aem}
 
 Certaines des meilleures pratiques de configuration d’AEM pour l’amélioration des performances générales sont les suivantes :
 
