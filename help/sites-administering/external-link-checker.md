@@ -3,9 +3,9 @@ title: Vérificateur de lien externe
 description: Le vérificateur de liens permet de valider les liens internes et externes et de réécrire les liens.
 exl-id: 8ec4c399-b192-46fd-be77-3f49b83ce711
 source-git-commit: 0b9de3261d8747f3e7107962b6aea1dbdf9d6773
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 98%
 
 Les auteurs de contenu ne doivent pas avoir besoin de valider chaque lien qu’ils incluent dans leurs pages de contenu.
 
-Le vérificateur de liens s’exécute automatiquement pour aider les auteurs de contenu à créer leurs liens, notamment :
+Le vérificateur de liens s’exécute automatiquement pour aider les créateurs et créatrices de contenu à gérer leurs liens, en prenant notamment en charge les tâches suivantes :
 
 * La validation des liens lorsqu’ils sont ajoutés au contenu
 * L’affichage d’une liste de tous les liens externes dans le contenu
@@ -46,7 +46,7 @@ Les liens internes sont validés dès que l’auteur du contenu ajoute un lien i
 Les liens externes sont des liens vers du contenu placé en dehors de votre référentiel AEM. Vous pouvez ajouter des liens externes à l’aide de l’éditeur de texte enrichi ou d’un composant personnalisé. Par exemple :
 
 * Votre page `/content/wknd/us/en/adventures/ski-touring.html`
-* contient un lien vers `https://bunwarmerthermalunderwear.com` dans un [Composant Texte.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* contient un lien vers `https://bunwarmerthermalunderwear.com` dans un [Composant Texte.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr)
 
 Les liens externes sont validés en termes de syntaxe et de disponibilité. Cette vérification est effectuée de manière asynchrone sur un système interne configurable. Si le vérificateur de liens trouve un lien externe non valide :
 
