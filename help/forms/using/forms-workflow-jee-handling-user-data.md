@@ -9,7 +9,7 @@ discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1365'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Les workflows AEM Forms JEE fournissent des outils pour concevoir, créer et gé
 
 * Démarrage d’un processus de l’espace de travail AEM Forms
 * Utilisation du service SOAP ou RESTful
-* Envoi d’un formulaire adaptatif
+* Envoyer un formulaire adaptatif
 * Utilisant le dossier de contrôle
 * Utilisation du courrier électronique
 
