@@ -1,5 +1,5 @@
 ---
-title: Installation du serveur d’applications
+title: Installer un serveur d’applications
 seo-title: Application Server Install
 description: Découvrez comment installer AEM avec un serveur d’applications.
 seo-description: Learn how to install AEM with an application server.
@@ -11,13 +11,13 @@ topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1163'
 ht-degree: 100%
 
 ---
 
-# Installation du serveur d’applications{#application-server-install}
+# Installer un serveur d’applications{#application-server-install}
 
 >[!NOTE]
 >
