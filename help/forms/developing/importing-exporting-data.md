@@ -11,8 +11,8 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: ht
 source-wordcount: '2778'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Pour importer des valeurs de données dans ce formulaire, vous devez disposer d�
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service d’intégration des données de formulaire, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service d’intégration des données de formulaire, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -182,7 +182,7 @@ Pour importer des données de formulaire à l’aide de l’API Form Data Inte
 1. Enregistrez le formulaire au format PDF.
 
    * Créez un objet `java.io.File` et assurez-vous que l’extension du fichier est « .PDF ».
-   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (veillez à utiliser l’objet `Document` qui a été renvoyé par la méthode `importData`).
+   * Appelez la méthode `copyToFile` de l’objet `Document` pour copier le contenu de l’objet `Document` dans le fichier (assurez-vous d’utiliser l’objet `Document` qui a été renvoyé par la méthode `importData`).
 
 **Voir également**
 
@@ -263,7 +263,7 @@ Vous pouvez exporter des données de formulaire à partir d’un formulaire PDF 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service d’intégration des données de formulaire, consultez la section [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service d’intégration des données de formulaire, consultez la section [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
