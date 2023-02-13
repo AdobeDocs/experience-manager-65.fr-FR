@@ -3,9 +3,9 @@ title: Notes de mise à jour d’AEM Content and Commerce 2022
 description: Notes de mise à jour d’AEM Content and Commerce 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,9 +31,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-september}
 
-* Les auteurs peuvent enrichir dynamiquement des listes de produits avec des fragments d’expérience (par exemple : Placer une bannière entre les listes de produits)
+* Les auteurs et autrices peuvent enrichir dynamiquement des listes de produits avec des fragments d’expérience (par exemple : placer une bannière entre les listes de produits).
 * Le composant Liste prend en charge les pages de produit/catégorie associées pour afficher dynamiquement les pages associées.
-* Prise en charge des composants Peregrine 12.5
+* Prise en charge des composants Peregrine 12.5
 * Prise en charge du chargement des prix côté client dans le teaser de produit et le carrousel
 
 ## Date de publication : juillet 2022
@@ -44,8 +44,8 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-july}
 
-* Association des pages d’AEM aux produits et aux catégories via AEM propriétés de page plus aperçu dans le cockpit du produit
-   ![association de page du cockpit du produit](/help/assets/CIF/product_cockpit_page_association.png)
+* Association des pages AEM aux produits et aux catégories à l’aide des propriétés de page AEM et aperçu dans le cockpit de produits
+   ![Association de page du cockpit de produits](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Date de publication : juin 2022
 
@@ -57,15 +57,15 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-june}
 
-* L’enrichissement du catalogue de produits prend désormais en charge AEM pages. Cela permet aux auteurs de gérer l’association page - produit.
+* L’enrichissement du catalogue de produits prend désormais en charge les pages AEM. Cela permet aux auteurs et autrices de gérer l’association page-produit.
 
-* Diverses améliorations du composant principal CIF
+* Diverses améliorations du composant principal CIF
 
 ### Correctifs {#bug-fixes-june}
 
-* Ajout d’un jeton de connexion à la récupération de prix côté client
+* Ajouter un jeton de connexion à la récupération des prix côté client
 
-* Composant de page incorrect dans le lecteur de données
+* Composant de page incorrect dans la couche de données
 
 ## Date de publication : mai 2022
 
