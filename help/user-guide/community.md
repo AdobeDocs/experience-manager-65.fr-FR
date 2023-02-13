@@ -5,9 +5,9 @@ description: Communauté AEM
 seo-description: The AEM Community
 exl-id: 2e73572c-78de-4c20-ada8-d95f7fd16dc9
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '324'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
