@@ -11,13 +11,13 @@ discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1531'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Analytics à l’aide de Cloud Service Framework {#analyticsusingcloudframework}
+# Analytics avec le framework de service cloud {#analyticsusingcloudframework}
 
 AEM Forms s’intègre à Analytics, ce qui permet la capture et le suivi des mesures de performances des formulaires et des documents que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser.
 
@@ -27,7 +27,7 @@ AEM Forms s’intègre à Analytics, ce qui permet la capture et le suivi des me
 >
 >Outre le module complémentaire, vous devez disposer d’un compte Adobe Analytics et de droits d’administrateur sur l’instance AEM. Pour en savoir plus sur la solution, voir [Adobe Analytics](https://www.adobe.com/fr/solutions/digital-analytics.html).
 
-Vous pouvez également effectuer des analyses à l’aide d’Adobe Launch. Pour plus d’informations sur l’intégration d’AEM Forms à Adobe Launch, voir [Analytics avec Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
+Vous pouvez également effectuer des analyses à l’aide d’Adobe Launch. Pour plus d’informations sur l’intégration d’AEM Forms à Adobe Launch, reportez-vous à [Analytics avec Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Présentation {#overview}
 
@@ -79,9 +79,9 @@ Procédez comme suit pour créer une suite de rapports.
 1. Dans la suite de rapports, configurez et activez les variables de trafic suivantes.
 
    * **formName** : identifiant d’un formulaire adaptatif.
-   * **formInstance** : identifiant d’une instance de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
+   * **formInstance** : identifiant d’une instance de formulaire adaptatif. Activez les rapports Chemin d’accès pour cette variable.
    * **fieldName** : identifiant d’un champ de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
-   * **panelName** : identifiant d’un panneau de formulaire adaptatif. Activez les rapports Chemin pour cette variable.
+   * **panelName** : identifiant d’un panneau de formulaire adaptatif. Activez les rapports Chemin d’accès pour cette variable.
    * **formTitle** : titre du formulaire.
    * **fieldTitle** : titre du champ de formulaire.
    * **panelTitle** : titre du panneau de formulaire.
@@ -188,4 +188,4 @@ Désormais, vous pouvez activer les analyses pour les formulaires et générer u
 
    **A.** Bouton Activer Analytics **B.** Formulaire sélectionné
 
-   Pour obtenir des informations détaillées sur l’affichage des rapports Forms Analytics, voir [Affichage et compréhension des rapports d’analyse d’AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md)..
+   Pour obtenir des informations détaillées sur l’affichage des rapports Forms Analytics, voir [Affichage et compréhension des rapports d’analyse d’AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md). 
