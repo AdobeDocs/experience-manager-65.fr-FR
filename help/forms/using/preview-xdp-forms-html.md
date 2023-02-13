@@ -1,5 +1,5 @@
 ---
-title: Génération de l’aperçu HTML5 d’un formulaire XDP
+title: Générer l’aperçu HTML5 d’un formulaire XDP
 seo-title: Generate HTML5 preview of an XDP form
 description: L’onglet Aperçu HTML dans LiveCycle Designer peut être utilisé pour prévisualiser les formulaires dans un navigateur.
 seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
@@ -11,13 +11,13 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
 ---
 
-# Génération de l’aperçu HTML5 d’un formulaire XDP{#generate-html-preview-of-an-xdp-form}
+# Générer l’aperçu HTML5 d’un formulaire XDP{#generate-html-preview-of-an-xdp-form}
 
 Lors de la conception d’un formulaire dans AEM Forms Designer, en plus de la prévisualisation du rendu PDF du formulaire, vous pouvez également prévisualiser un rendu HTML5. Vous pouvez utiliser l’onglet **Aperçu HTML** afin de prévisualiser le formulaire tel qu’il apparaîtra dans un navigateur.
 
@@ -41,7 +41,7 @@ Pour permettre à Designer de générer l’aperçu HTML des formulaires XDP, ef
 
       * -/content/xfaforms
       * -/etc/clientlibs
-   * AEM Forms on OSGi
+   * AEM Forms sur OSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
@@ -65,7 +65,7 @@ Le [mode Protégé](../../forms/using/get-xdp-pdf-documents-aem.md) est activé 
 1. Ouvrez les **[!UICONTROL configurations de Mobile Forms]** à des fins d’édition.
 1. Désélectionnez l’option **[!UICONTROL Mode Protégé]** et cliquez sur **[!UICONTROL Enregistrer]**.
 
-### Spécification des détails sur le serveur AEM Forms {#provide-details-of-aem-forms-server}
+### Fournir des détails sur le serveur AEM Forms {#provide-details-of-aem-forms-server}
 
 1. Dans Designer, cliquez sur **Tools** > **Options**.
 1. Dans la fenêtre Options, sélectionnez la page **Options du serveur**, fournissez les détails suivants, puis cliquez sur **OK**.
