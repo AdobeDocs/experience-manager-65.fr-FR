@@ -11,7 +11,7 @@ discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Cet article répertorie les raccourcis clavier qui peuvent être utilisés avec 
 | Coller un ou plusieurs composants | Ctrl+V | Ctrl+V |
 | Supprimer un ou plusieurs composants sélectionnés | Ctr + Suppr | Ctrl+Suppr&amp;ast; |
 | Supprimer un ou plusieurs composants sélectionnés | Ctrl+Retour arrière | Ctrl+Retour arrière&amp;ast; |
-| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+B | Ctrl+B&amp;ast; |
+| Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+B | Ctrl+B&amp;ast; |
 | Mettre le texte en italique lors de l’utilisation du composant Éditeur de texte enrichi en mode Aperçu | Ctrl+I | Ctrl+I&amp;ast; |
 | Mettre le texte en gras lors de l’utilisation du composant Éditeur de texte enrichi en mode aperçu | Ctrl+U | Ctrl+U&amp;ast; |
 
