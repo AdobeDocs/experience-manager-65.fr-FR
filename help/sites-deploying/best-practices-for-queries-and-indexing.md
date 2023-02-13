@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4664'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Vous pouvez également extraire les index de votre système au format JSON. Pou
 
 **Pendant le développement**
 
-Définir des seuils bas pour `oak.queryLimitInMemory` (p. ex. 10000) et oak. `queryLimitReads` (par ex. 5000) et optimisez la requête coûteuse lorsque vous appuyez sur UnsupportedOperationException en indiquant &quot;La requête a lu plus de x noeuds...&quot;.
+Définir des seuils bas pour `oak.queryLimitInMemory` (p. ex. 10000) et oak. `queryLimitReads` (par ex. 5000) et optimisez les requêtes coûteuses lorsque vous obtenez une exception UnsupportedOperationException indiquant : « la requête lit plus de x nœuds... » (&quot;The query read more than x nodes...&quot;).
 
 Cela permet d’éviter les requêtes gourmandes en ressources (c’est-à-dire non soutenues par un index ou soutenues par un index moins étendu). Par exemple, une requête qui lit 1 million de nœuds entraînerait une augmentation des E/S et aurait un impact négatif sur les performances globales de l’application. Toute requête qui échoue en raison des limites ci-dessus doit être analysée et optimisée.
 
@@ -176,7 +176,7 @@ Les index Solr peuvent être configurés de manière à être exécutés sur le 
 
 >[!NOTE]
 >
->En adoptant l’approche de recherche Solr intégrée, il est possible de décharger l’indexation sur un serveur Solr. Si les fonctionnalités plus avancées du serveur Solr sont utilisées selon une approche de robot d’indexation, un travail de configuration supplémentaire est nécessaire.
+>En adoptant l’approche de recherche Solr intégrée, il est possible de décharger l’indexation sur un serveur Solr. Si les fonctionnalités plus avancées du serveur Solr sont utilisées selon une approche de robot d’exploration, un travail de configuration supplémentaire est nécessaire.
 
 L’inconvénient de cette approche est que si, par défaut, les requêtes AEM respectent les ACL et masquent ainsi les résultats auxquels un utilisateur n’a pas accès, l’externalisation de la recherche sur un serveur Solr ne prend pas en charge cette fonctionnalité. Si la recherche doit être externalisée de cette manière, il faut veiller à ne pas présenter aux utilisateurs des résultats qu’ils ne doivent pas voir.
 
@@ -292,7 +292,7 @@ Problèmes possibles et solutions :
 
    * Versions Oak antérieures à 1.6 :
 
-      * [Réindexez](#how-to-re-index) l’index Lucene
+      * [Réindexez](#how-to-re-index) l’index Lucene.
    * Versions Oak ultérieures à 1.6 :
 
       * Si le contenu existant n’est pas affecté par les modifications, seule une actualisation est nécessaire
