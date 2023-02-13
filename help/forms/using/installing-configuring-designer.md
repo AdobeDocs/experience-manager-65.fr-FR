@@ -1,5 +1,5 @@
 ---
-title: Installation et configuration de Designer
+title: Installer et configurer Designer
 seo-title: Installing and configuring Designer
 description: Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Découvrez comment installer la version autonome de Designer.
 seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
@@ -13,9 +13,9 @@ docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '290'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,19 +23,19 @@ ht-degree: 73%
 
 ## Prérequis {#pre-requisites}
 
-* Installation de la version 32 bits de  [Redistribuable Visual C++ 2019 (x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
-* Un utilisateur disposant de droits d’administrateur pour installer ou désinstaller Designer.
+* Installation de la version 32 bits de [Redistribuable Visual C++ 2019 (x86)](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
+* Un utilisateur ou une utilisatrice disposant des droits d’administration pour installer ou désinstaller Designer.
 
 ## Installation de Designer {#install-designer}
 
 Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Si vous utilisez un programme d’installation autonome pour Designer, procédez comme suit :
 
 1. Désinstallez la version précédente d’AEM Forms Designer, si elle est déjà installée.
-1. Télécharger Designer depuis [Adobe Licensing Website](https://licensing.adobe.com/).
+1. Téléchargez Designer depuis [Adobe Licensing Website](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
-   > * À compter de la version 6.5 du Service Pack 15 (6.5.15.0), Forms Designer inclut également la version du Service Pack. Par exemple, pour le Service Pack 15, le numéro de version est 6.5.15.20221112.1.0. Dans cet exemple, 6.5.15 est la version du Service Pack.
+   > * À compter de la version d’Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0), la version Forms Designer inclut également la version du Service Pack. Par exemple, pour le Service Pack 15, le numéro de version est 6.5.15.20221112.1.0. Dans cet exemple, 6.5.15 est la version du Service Pack.
 
 
 1. Lancez le programme d’installation de Designer en cliquant deux fois sur setup.exe.
