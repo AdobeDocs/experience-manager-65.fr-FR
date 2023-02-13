@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des tableaux de suivi
+title: Personnaliser les tableaux de tracking
 seo-title: Customize tracking tables
 description: Comment personnaliser l’affichage des détails des processus utilisateur dans le tableau de la tâche affiché dans l’onglet de suivi de l’espace de travail AEM Forms.
 seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
@@ -10,13 +10,13 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
 ht-degree: 100%
 
 ---
 
-# Personnalisation des tableaux de suivi{#customize-tracking-tables}
+# Personnaliser les tableaux de tracking{#customize-tracking-tables}
 
 L’onglet de suivi dans l’espace de travail AEM Forms est utilisé pour afficher les détails des instances de processus dans lesquelles l’utilisateur connecté est impliqué. Afin de visualiser les tableaux de suivi, vous devez d’abord sélectionner le nom d’un processus dans le volet gauche pour afficher la liste de ses instances dans le volet central. Sélectionnez une instance de processus pour afficher un tableau des tâches générées par cette instance dans le volet droit. Par défaut, les colonnes du tableau affichent les attributs de tâche suivants (l’attribut correspondant dans le modèle de tâche est indiqué entre parenthèses) :
 
