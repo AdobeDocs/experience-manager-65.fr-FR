@@ -1,5 +1,5 @@
 ---
-title: Mappage des données de composant aux propriétés Adobe Analytics
+title: Mapper des données de composant à des propriétés Adobe Analytics
 seo-title: Mapping Component Data with Adobe Analytics Properties
 description: Découvrez comment mapper des données de composant à des propriétés SiteCatalyst.
 seo-description: Learn how to map component data with SiteCatalyst properties.
@@ -12,13 +12,13 @@ discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1445'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Mappage des données de composant aux propriétés Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
+# Mapper des données de composant à des propriétés Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
 
 Ajoutez à la structure des composants qui rassemblent les données à envoyer à Adobe Analytics. Les composants conçus pour collecter des données d’analyse stockent les données dans la **variable CQ** appropriée. Lorsque vous ajoutez ce type de composant à un framework, celle-ci affiche la liste des variables CQ afin que vous puissiez associer chacune d’elles à la **variable Analytics** appropriée.
 
@@ -43,7 +43,7 @@ Appliquez la procédure ci-dessous pour mapper des variables de composants CQ �
 
    ![aa-13](assets/aa-13.png)
 
-   Il existe plusieurs groupes de composants par défaut : **Général**, **Commerce**, **Communautés**, et **Autre**. Votre instance AEM peut être configurée de manière à afficher différents groupes et composants.
+   Il existe différents groupes de composants par défaut : **Général**, **Commerce**, **Communities**, et **Autre**. Votre instance AEM peut être configurée de manière à afficher différents groupes et composants.
 
 1. Pour mapper des variables Adobe Analytics à des variables définies dans le composant, faites glisser une **variable Analytics** de l’outil de recherche de contenu vers un champ du composant de suivi. Par exemple, faites glisser `Page Name (pageName)` vers `pagedata.title`.
 
