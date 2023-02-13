@@ -1,6 +1,6 @@
 ---
-title: '"Base de données SQL Server : réglage précis de la configuration"'
-seo-title: 'Microsoft SQL Server database: Fine-tuning the configuration'
+title: "Base de données SQL Server\_: réglage précis de la configuration"
+seo-title: "Microsoft SQL Server database: Fine-tuning the configuration"
 description: Découvrez comment vous pouvez affiner la configuration de votre base de données Microsoft SQL Server.
 seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 exl-id: 9c570827-86e2-47d5-b8ae-66c0767bff2e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
 ht-degree: 100%
 
