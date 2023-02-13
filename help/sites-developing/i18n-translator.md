@@ -1,5 +1,5 @@
 ---
-title: Utilisation du traducteur pour gérer les dictionnaires
+title: Utiliser le traducteur pour gérer les dictionnaires
 seo-title: Using Translator to Manage Dictionaries
 description: AEM fournit une console pour gérer les traductions des textes utilisés dans l’interface utilisateur du composant.
 seo-description: AEM provides a console for managing the various translations of texts used in component UI
@@ -11,13 +11,13 @@ topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2325'
 ht-degree: 100%
 
 ---
 
-# Utilisation du traducteur pour gérer les dictionnaires{#using-translator-to-manage-dictionaries}
+# Utiliser le traducteur pour gérer les dictionnaires{#using-translator-to-manage-dictionaries}
 
 AEM fournit une console pour gérer les traductions des textes utilisés dans l’interface utilisateur du composant. Cette console est disponible à l’adresse
 
