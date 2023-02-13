@@ -1,5 +1,5 @@
 ---
-title: Affichage d’une liste des formulaires sur une page Web à l’aide d’API
+title: Afficher une liste des formulaires sur une page Web à l’aide d’API
 seo-title: Listing forms on a web page using APIs
 description: Interroger Forms Manager par programmation pour récupérer une liste de formulaires filtrée et l’afficher sur vos propres pages Web.
 seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 exl-id: cfca6656-d2db-476d-a734-7a1d1e44894e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '693'
 ht-degree: 100%
 
 ---
 
-# Affichage d’une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
+# Afficher une liste des formulaires sur une page Web à l’aide d’API {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms fournit une API de recherche basée sur REST que les développeurs Web peuvent utiliser pour interroger et récupérer un jeu de formulaires qui répond à leurs critères de recherche. Vous pouvez utiliser des API pour effectuer des recherches dans des formulaires en fonction de divers filtres. L’objet de réponse contient des attributs et propriétés de formulaire, ainsi que des points de fin de rendu.
 
@@ -141,7 +141,7 @@ statements: [{"name":"name","value":"*Claim.xdp","operator":"CONTAINS"},
                 {"name":"status","value":"false","operator":"EQ"},
                 {"name":"lastModifiedDate","value":"01/09/2013","operator":"GTEQ"},
                 {"name":"lastModifiedDate","value":"01/18/2013","operator":"LTEQ"}]
-orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
+orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 ```
 
 ## Exemple de réponse {#sample-response}
