@@ -12,7 +12,7 @@ docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1641'
 ht-degree: 100%
 
@@ -164,7 +164,7 @@ La zone de recherche vous permet d’ajouter les composants Date Predicate (attr
 
 ![Zone de recherche avec les attributs Date, Texte complet, Propriétés et Balises](assets/search-with-predicates.png)
 
-Zone de recherche avec les attributs Date, Texte complet, Propriétés et Balises
+Panneau de recherche avec les attributs Date, Texte complet, Propriétés et Balises
 
 #### Prédicat de la date {#date-predicate}
 
