@@ -1,5 +1,5 @@
 ---
-title: API Form Bridge pour les formulaires HTML5
+title: API FormBridge pour les formulaires HTML5
 seo-title: Form Bridge APIs for HTML5 forms
 description: Les applications externes utilisent l’API FormBridge pour se connecter au formulaire pour périphériques mobiles XFA. L’API distribue un événement FormBridgeInitialized sur la fenêtre parent.
 seo-description: External applications use the FormBridge API to connect to the XFA Mobile Form. The API dispatches a FormBridgeInitialized event on the parent window.
@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '940'
 ht-degree: 100%
 
 ---
 
-# API Form Bridge pour les formulaires HTML5 {#form-bridge-apis-for-html-forms}
+# API FormBridge pour les formulaires HTML5 {#form-bridge-apis-for-html-forms}
 
 Vous pouvez utiliser l’API Form Bridge pour ouvrir un canal de communication entre les formulaires HTML5 XFA et vos applications. L’API Form Bridge fournit une API de **connexion** pour créer la connexion.
 
@@ -164,7 +164,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 
    * **Options :** objet JavaScript contenant les propriétés suivantes :
 
-      * **Erreur**: Fonction de gestionnaire d’erreurs
+      * **Error**: Error Handler Function
       * **success** : fonction du gestionnaire de réussite
       * **context** : objet pour lequel le contexte (valeur « this ») de la fonction *success* est défini.
       * **formState** : état JSON du formulaire. Le formulaire est restauré à l’état JSON.
@@ -198,7 +198,7 @@ Renvoie le numéro de version de la bibliothèque de script.
 ### Exemple d’API getFieldValue() {#example-of-nbsp-getfieldvalue-api}
 
 ```JavaScript
-var a =  formBridge.getFieldValue(“xfa.form.form1.Subform1.TextField”);
+var a =  formBridge.getFieldValue("xfa.form.form1.Subform1.TextField");
 if(a.errors) {
     var err;
      while((err = a.getNextMessage()) != null)
