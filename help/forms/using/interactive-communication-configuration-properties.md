@@ -13,7 +13,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Cliquez sur **configuration de fragments de document** sur la page **Configurati
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Indentation</td> 
@@ -80,7 +80,7 @@ Cliquez sur **configuration de fragments de document** sur la page **Configurati
  </tbody> 
 </table>
 
-## Configuration de la création de correspondance {#create-correspondence-configuration}
+## Configurer la création de correspondance {#create-correspondence-configuration}
 
 Cliquez sur **Configuration de la création de correspondance** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration de l’interface utilisateur de l’agent.
 
@@ -113,7 +113,7 @@ Cliquez sur **Configuration de la création de correspondance** sur la page **Co
  </tbody> 
 </table>
 
-## Configuration de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Configurer le canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
 Appuyez sur **Configuration du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration du canal web du formulaire adaptatif et des communications interactives. Le tableau suivant décrit les propriétés liées aux communications interactives :
 
@@ -123,7 +123,7 @@ Appuyez sur **Configuration du canal web du formulaire adaptatif et de la commun
 | Nombre maximal d’entrées de cache | Définissez le nombre maximal de formulaires adaptatifs et de communications interactives pouvant être récupérés à l’aide de la mémoire cache. | 100 | Nombre |
 | Rendre le nom de fichier unique | Cochez la case pour attribuer des noms uniques aux fichiers en tant que pièces jointes dans les formulaires adaptatifs et les communications interactives. | Non sélectionné | Non applicable |
 
-## Configuration des thèmes de canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Configurer les thèmes du canal web du formulaire adaptatif et de la communication interactive {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
 Appuyez sur **Configuration des thèmes du canal web du formulaire adaptatif et de la communication interactive** sur la page **Configuration de la console web d’Adobe Experience Manager** pour afficher les propriétés de configuration des thèmes du canal web du formulaire adaptatif et des communications interactives.
 
