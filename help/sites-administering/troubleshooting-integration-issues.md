@@ -1,5 +1,5 @@
 ---
-title: Résolution des problèmes d’intégration
+title: Résoudre les problèmes d’intégration
 seo-title: Troubleshooting Integration Issues
 description: Découvrez comment résoudre les problèmes d’intégration.
 seo-description: Learn how to troubleshoot integration issues.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1096'
 ht-degree: 100%
 
 ---
 
-# Résolution des problèmes d’intégration{#troubleshooting-integration-issues}
+# Résoudre les problèmes d’intégration{#troubleshooting-integration-issues}
 
 ## Conseils pratiques de dépannage {#general-troubleshooting-tips}
 
