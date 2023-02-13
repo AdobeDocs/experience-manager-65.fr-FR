@@ -1,7 +1,7 @@
 ---
-title: Interaction avec les workflows par programmation
+title: Interagir avec les workflows par programmation
 seo-title: Interacting with Workflows Programmatically
-description: Interaction avec les workflows par programmation
+description: Interagir avec les workflows par programmation
 seo-description: null
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2004'
 ht-degree: 100%
 
 ---
 
-# Interaction avec les workflows par programmation{#interacting-with-workflows-programmatically}
+# Interagir avec les workflows par programmation{#interacting-with-workflows-programmatically}
 
 Lors de la [personnalisation et de l’extension de vos workflows](/help/sites-developing/workflows-customizing-extending.md), vous pouvez accéder aux objets de workflow en procédant comme suit :
 
