@@ -1,5 +1,5 @@
 ---
-title: Ajout d’une action ou d’un bouton personnalisé à l’interface utilisateur de création de correspondance
+title: Ajouter un bouton d’action personnalisé dans l’interface utilisateur de création de correspondance
 seo-title: Add custom action/button in Create Correspondence UI
 description: Découvrez comment ajouter une action/un bouton personnalisé(e) à l’interface utilisateur Création de correspondance.
 seo-description: Learn how to add custom action/button in Create Correspondence UI
@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
 source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1881'
 ht-degree: 100%
 
