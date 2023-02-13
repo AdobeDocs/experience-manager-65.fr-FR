@@ -11,8 +11,8 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: ht
 source-wordcount: '3505'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Un élément XML doit exister pour chaque champ de formulaire que vous souhaitez
 
 Lorsque vous préremplissez un formulaire qui contient déjà des données, vous devez spécifier les données déjà affichées dans la source de données XML. Supposons qu’un formulaire contenant 10 champs comporte des données dans quatre champs. Supposons ensuite que vous souhaitiez préremplir les six champs restants. Dans ce cas, vous devez spécifier 10 éléments XML dans la source de données XML utilisée pour préremplir le formulaire. Si vous ne spécifiez que six éléments, les quatre champs de départ resteront vides.
 
-Vous pouvez, par exemple, préremplir un formulaire tel qu’un exemple de formulaire de confirmation. (Voir « Formulaire de confirmation » dans [Rendu de formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+Vous pouvez, par exemple, préremplir un formulaire tel qu’un exemple de formulaire de confirmation. (voir « Formulaire de confirmation » dans [Générer des formulaires PDF interactifs](/help/forms/developing/rendering-interactive-pdf-forms.md)).
 
 Pour préremplir l’exemple de formulaire de confirmation, vous devez créer une source de données XML qui contient trois éléments XML correspondant aux trois champs du formulaire. Ce formulaire contient les trois champs suivants : `FirstName`, `LastName`, et `Amount`. La première étape consiste à créer une source de données XML contenant des éléments XML correspondant aux champs situés dans la conception de formulaire. L’étape suivante consiste à attribuer des valeurs de données aux éléments XML, comme illustré dans le code XML suivant.
 
