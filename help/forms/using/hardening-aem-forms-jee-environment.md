@@ -11,9 +11,9 @@ discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7665'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Le tableau suivant décrit plusieurs approches utilisables pour réduire au mini
  </tbody> 
 </table>
 
-Pour plus d’informations sur la sécurité de votre système d’exploitation, voir [&quot;Informations sur la sécurité du système d’exploitation&quot;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+Pour plus d’informations de sécurité pour votre système d’exploitation, consultez [« Informations sur la sécurité des systèmes d’exploitation »](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 ## Installation {#installation}
 
@@ -172,7 +172,7 @@ Pour exécuter le serveur d’applications sur lequel est déployé AEM Forms su
 1. Dans Microsoft Management Console (MMC), créez un utilisateur local pour que le service de serveur de formulaires se connecte en tant que cet utilisateur local :
 
    * Sélectionnez **L’utilisateur ne peut pas changer de mot de passe**.
-   * Vérifiez que le groupe Utilisateurs figure dans l’onglet **Membre de**.****
+   * Vérifiez que le groupe **Utilisateurs** figure dans l’onglet **Membre de**.
 
    >[!NOTE]
    >
@@ -411,7 +411,7 @@ Pour une sécurité accrue, prévoyez d’utiliser des outils spécifiques au re
 * clé de chiffrement de PIN HSM Trust Store ;
 * hachages des mots de passe des utilisateurs locaux.
 
-Pour plus d’informations sur les outils spécifiques aux fournisseurs, voir [&quot;Informations sur la sécurité des bases de données&quot;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+Pour plus d’informations des outils spécifiques à des revendeurs, voir [« Informations sur la sécurité des bases de données »](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
 ### Sécurité LDAP {#ldap-security}
 
@@ -832,7 +832,7 @@ Lorsque vous configurez une architecture réseau sécurisée comme décrit dans 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>méthode d’objet</p> </td> 
+   <td><p>SOAP</p> </td> 
    <td> 
     <ul> 
      <li><p>Applications clientes de services Web telles que les applications .NET</p> </li> 
@@ -957,7 +957,7 @@ Pour plus d’informations sur les ports WebSphere requis par AEM Forms sur JEE,
 
 En vous référant à l’architecture physique décrite dans la section [Architecture physique d’AEM Forms sur JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture), configurez SSL pour toutes les connexions que vous prévoyez d’utiliser. Spécifiquement, toutes les connexions SOAP doivent être établies via SSL pour empêcher que les informations d’identification des utilisateurs soient exposées sur un réseau.
 
-Pour obtenir des instructions sur la configuration de SSL sur JBoss, WebLogic et WebSphere, voir Configuration de SSL dans la section [Aide à l’administration](https://www.adobe.com/go/learn_aemforms_admin_64_fr).
+Pour obtenir des instructions sur la manière de configurer SSL sur JBoss, WebLogic et WebSphere, consultez « Configuration de SSL » dans l’[aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_64_fr).
 
 Pour plus d’informations sur l’importation de certificats dans JVM (Java Virtual Machine) configuré pour un serveur AEM Forms, consultez la section Authentification mutuelle dans l’[Aide d’AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65_fr).
 
