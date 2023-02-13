@@ -1,7 +1,7 @@
 ---
 title: Enregistrement automatique d’un formulaire adaptatif
 seo-title: Auto-save an adaptive form
-description: Vous pouvez configurer un formulaire adaptatif pour démarrer automatiquement l’enregistrement du contenu en fonction d’un événement ou d’un intervalle de temps prédéfini
+description: Vous pouvez configurer un formulaire adaptatif pour démarrer automatiquement l’enregistrement du contenu en fonction d’un événement ou d’un intervalle de temps prédéfini.
 seo-description: You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval
 uuid: 0fe9a389-269b-438a-9489-d9d1d09558a1
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,7 +10,7 @@ discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
 ht-degree: 100%
 
