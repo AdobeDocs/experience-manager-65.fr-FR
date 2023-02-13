@@ -1,5 +1,5 @@
 ---
-title: Contrôle des opérations de gestion des utilisateurs dans AEM
+title: Comment contrôler les opérations de gestion des utilisateurs dans AEM
 seo-title: How to Audit User Management Operations in AEM
 description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
 seo-description: Learn how to audit User Management Operations in AEM.
@@ -13,13 +13,13 @@ docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
 ht-degree: 100%
 
 ---
 
-# Contrôle des opérations de gestion des utilisateurs dans AEM{#how-to-audit-user-management-operations-in-aem}
+# Comment contrôler les opérations de gestion des utilisateurs dans AEM{#how-to-audit-user-management-operations-in-aem}
 
 ## Présentation {#introduction}
 
