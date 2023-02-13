@@ -1,5 +1,5 @@
 ---
-title: Projet de création et intégration à PIM
+title: Projet créatif et intégration à PIM
 seo-title: Creative Project and PIM Integration
 description: La fonction Projet de création simplifie l’ensemble du worfklow de séance photo, notamment la génération d’une demande de séance photo, le transfert d’une séance photo, la collaboration sur une séance photo et le regroupement des ressources approuvées
 seo-description: Creative Project streamlines the entire photo shoot workflow that including generating a photo shoot request, uploading a photo shoot, collaborating on a photo shoot, and packaging approved assets
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
 exl-id: c4eff50e-0d55-4a61-98fd-cc42138656cb
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2989'
 ht-degree: 100%
 
 ---
 
 
-# Projet de création et intégration à PIM {#creative-project-and-pim-integration}
+# Projet créatif et intégration à PIM {#creative-project-and-pim-integration}
 
 Si vous êtes spécialiste du marketing ou professionnel de la création, vous pouvez utiliser les outils Projet de création d’Adobe Experience Manager (AEM) pour gérer la photographie de produits liés à l’e-commerce et les processus de création associés au sein de votre organisation.
 
