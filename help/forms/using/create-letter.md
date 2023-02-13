@@ -1,7 +1,7 @@
 ---
 title: Créer une lettre
 seo-title: Create Letter
-description: 'Cette rubrique détaille comment créer une lettre, y ajouter des modules de données et des pièces jointes, puis la prévisualiser dans Correspondence Management. '
+description: Cette rubrique détaille comment créer une lettre, y ajouter des modules de données et des pièces jointes, puis la prévisualiser dans Correspondence Management.
 seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,9 +10,9 @@ discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3982'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -69,7 +69,7 @@ Les conditions vous permettent de définir le contenu à inclure lors de la cré
 
 #### Fragment de mise en page {#layout-fragment}
 
-Un fragment de mise en page est une mise en page pouvant être utilisée dans une ou plusieurs lettres. Un fragment de mise en page est utilisé pour créer des schémas reproductibles, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire standard tels que &quot;Adresse&quot; et &quot;Numéro de référence&quot;. Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (XDP) sont créées dans Designer, puis sont [téléchargées sur Forms et Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Un fragment de mise en page est une mise en page pouvant être utilisée dans une ou plusieurs lettres. Un fragment de mise en page est utilisé pour créer des schémas reproductibles, en particulier des tableaux dynamiques. La disposition peut comporter des champs de formulaire types comme « Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (XDP) sont créées dans Designer, puis sont [téléchargées sur Forms et Documents](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Création de lettre {#letter-creation}
 
