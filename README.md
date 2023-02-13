@@ -1,13 +1,13 @@
 ---
 source-git-commit: 41011e538104405c954761d9adc270e774e8a9a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '84'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 # Documentation d’Adobe Experience Manager 6.5
 
-Il s’agit du référentiel pour la documentation Adobe Experience Manager 6.5. Cette documentation porte sur l’installation, l’administration, la création d’utilisation et la personnalisation d’AEM.
+Il s’agit du référentiel relatif à la documentation d’Adobe Experience Manager 6.5. Cette documentation porte sur l’installation, l’administration, la création d’utilisation et la personnalisation d’AEM.
 
 Vos contributions à la documentation sont les bienvenues. Veuillez consulter les ressources suivantes :
 
