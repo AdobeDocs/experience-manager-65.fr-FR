@@ -10,9 +10,9 @@ discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1518'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
 1. Installez le pilote JDBC pour la base de données [!DNL MySQL] en tant que bundle OSGi :
 
-   1. Télécharger [[!DNL MySQL] Bundle OSGi du pilote JDBC](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
+   1. Téléchargez le [[!DNL MySQL] lot OSGi du pilote JDBC](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
    1. Connectez-vous à l’instance d’auteur AEM [!DNL Forms] en tant qu’administrateur et accédez aux bundles de la console web d’AEM. L’URL par défaut est [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Cliquez sur **[!UICONTROL Installer/Mettre à jour]**. Une boîte de dialogue [!UICONTROL Télécharger/installer les bundles] s’affiche.
@@ -77,18 +77,18 @@ Pour configurer votre base de données [!DNL MySQL], procédez comme suit :
 
       >[!NOTE]
       >
-      > Lorsque la variable [!DNL MySQL] La base de données se trouve derrière un pare-feu, puis le nom d’hôte de la base de données n’est pas un DNS public. L’adresse IP de la base de données doit être ajoutée dans la variable */etc/hosts* fichier de l’ordinateur hôte AEM.
+      > Lorsque la base de données [!DNL MySQL] se trouve derrière un pare-feu, alors le nom d’hôte de la base de données n’est pas un DNS public. L’adresse IP de la base de données doit être ajoutée au fichier */etc/hosts* de l’ordinateur hôte AEM.
 
       * **Nom d’utilisateur :** nom d’utilisateur de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
       * **Mot de passe :** mot de passe de la base de données. Il est nécessaire d’activer le pilote JDBC pour établir une connexion avec la base de données.
 
       >[!NOTE]
       >
-      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à AEM console web à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez &quot;Apache Sling Connection Pooled Datasource&quot;. Pour &quot;JDBC connection URI&quot;, définissez la valeur de la propriété &quot;integratedSecurity&quot; sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter avec [!DNL MySQL] base de données.
+      >AEM Forms ne prend pas en charge l’authentification NT pour [!DNL MySQL]. Accédez à la console web AEM à l’adresse [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) et recherchez « Apache Sling Connection Pooled Datasource ». Pour « JDBC connection URI », définissez la valeur de la propriété « integratedSecurity » sur False et utilisez le nom d’utilisateur et le mot de passe créés pour vous connecter à la base de données [!DNL MySQL].
 
       * **Test lors de l’emprunt :** activez l’option **[!UICONTROL Test lors de l’emprunt.]**
       * **Test lors du renvoi :** activez l’option **[!UICONTROL Test lors du renvoi.]**
-      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple : **select &#42; de customerdetails**.
+      * **Requête de validation :** spécifiez une requête SQL SELECT pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. Par exemple, **sélectionnez &#42; depuis customerdetails**.
       * **Isolation de transaction** : définissez la valeur sur **READ_COMMITTED**.
 
          Laissez les [valeurs](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) par défaut des autres propriétés et cliquez sur **[!UICONTROL Enregistrer]**.
