@@ -1,5 +1,5 @@
 ---
-title: Importation et exportation des actifs dans AEM Forms
+title: Importer et exporter des ressources dans AEM Forms
 seo-title: Importing and exporting assets to AEM Forms
 description: Vous pouvez importer et exporter les formulaires et modèles adaptatifs et dans des instances AEM. Cela permet de migrer ou de déplacer facilement les formulaires vers d’autres systèmes.
 seo-description: You can import and export adaptive forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
@@ -12,13 +12,13 @@ docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2516'
 ht-degree: 100%
 
 ---
 
-# Importation et exportation des actifs dans AEM Forms{#importing-and-exporting-assets-to-aem-forms}
+# Importer et exporter des ressources dans AEM Forms{#importing-and-exporting-assets-to-aem-forms}
 
 Vous pouvez déplacer des formulaires ainsi que les ressources, thèmes, dictionnaires de données, fragments de document et lettres associés entre différentes instances AEM Forms. Ce déplacement est nécessaire lors de la migration des systèmes ou du déplacement des formulaires d’un serveur d’étape à un serveur de production. En ce qui concerne les ressources pour lesquelles le téléchargement et l’importation via l’interface utilisateur AEM Forms sont pris en charge, l’utilisation de l’interface utilisateur de Forms est recommandée pour l’exportation ou l’importation. L’utilisation du gestionnaire de modules d’AEM pour l’exportation ou l’importation de ces ressources n’est pas recommandée.
 
