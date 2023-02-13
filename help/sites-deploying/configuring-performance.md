@@ -1,5 +1,5 @@
 ---
-title: Optimisation des performances
+title: Optimiser les performances
 seo-title: Performance Optimization
 description: Découvrez comment configurer certains aspects d’AEM afin d’optimiser les performances.
 seo-description: Learn how to configure certain aspects of AEM to optimize performance.
@@ -12,13 +12,13 @@ discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 source-git-commit: 4fc42469e4b97f2f2c5d7489837012d31c63f86d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6645'
 ht-degree: 100%
 
 ---
 
-# Optimisation des performances {#performance-optimization}
+# Optimiser les performances {#performance-optimization}
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Cet environnement intègre le contenu que vous mettez à la disposition de vos u
 >[!NOTE]
 >
 >* Une fois l’optimisation des performances configurée, suivez les procédures dans [Tough Day](/help/sites-developing/tough-day.md) pour tester l’environnement en le soumettant à une charge importante.
->* Consultez également la section [Conseils pour le réglage des performances.](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+>* Consultez également la section [Conseils pour le réglage des performances.](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html)
 
 
 ## Méthodologie d’optimisation des performances {#performance-optimization-methodology}
@@ -78,7 +78,7 @@ Si vous avez mis en ligne un site Web et que vous identifiez, après le lancemen
 
 La simulation de la réalité est difficile et les efforts que vous êtes prêt à raisonnablement concéder pour vous approcher de la réalité dépendent de la nature de votre projet. Cette réalité signifie non seulement un « code réel » et un « trafic réel », mais aussi du « contenu réel », en particulier en ce qui concerne la taille et la structure. Gardez à l’esprit que vos modèles peuvent se comporter différemment selon la taille et la structure du référentiel.
 
-### Établissement d’objectifs solides {#establish-solid-goals}
+### Établir des objectifs solides {#establish-solid-goals}
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
@@ -86,7 +86,7 @@ L’importance d’établir correctement les objectifs de performances ne doit p
 
 L’établissement d’objectifs de performances réalisables et viables est vraiment l’un des aspects les plus délicats. Il est souvent préférable de se fier à des journaux et des repères réels d’un site web comparable (par exemple, le prédécesseur du nouveau site web).
 
-### Maintien de la pertinence {#stay-relevant}
+### Maintenir la pertinence {#stay-relevant}
 
 ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
@@ -200,13 +200,13 @@ Il faut garder à l’esprit certaines règles lors de l’optimisation des perf
 >
 >Gardez à l’esprit que, souvent, le mécanisme que vous utilisez pour mesurer les performances affecte justement ce que vous essayez de mesurer. Essayez toujours de tenir compte de ces écarts, et d’éliminer leurs effets dans toute la mesure du possible. Notamment, les plug-ins de navigateur doivent être désactivés autant que possible.
 
-## Configuration des performances {#configuring-for-performance}
+## Configurer pour optimiser la performance {#configuring-for-performance}
 
 Certains aspects d’AEM (et/ou du référentiel sous-jacent) peuvent être configurés pour optimiser la performance. Vous trouverez ci-dessous des possibilités et des suggestions. Vous devez vous assurer d’utiliser la fonctionnalité en question avant d’apporter des modifications.
 
 >[!NOTE]
 >
->Pour plus d’informations, veuillez lire [l’article de la base de connaissances](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+>Pour plus d’informations, veuillez lire [l’article de la base de connaissances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
 
 ### Indexation de recherche {#search-indexing}
 
@@ -246,7 +246,7 @@ Pour configurer ces services [à l’aide de la console Web](/help/sites-deployi
 
 Vous devez configurer la propriété nommée Nombre maximal de tâches en parallèle.
 
-### Configuration de la file d’attente pour un workflow spécifique {#configure-the-queue-for-a-specific-workflow}
+### Configurer la file d’attente pour un workflow spécifique {#configure-the-queue-for-a-specific-workflow}
 
 Créez une file d’attente de tâches pour un modèle de workflow spécifique afin de pouvoir configurer la gestion des tâches pour ce modèle de workflow. De cette manière, vos configurations se répercutent sur le traitement d’un workflow spécifique, tandis que la configuration de la file d’attente de workflow Granite par défaut contrôle le traitement des autres workflows.
 
@@ -537,7 +537,7 @@ Avec la version 4.1.11 du dispatcher, vous pouvez mettre en cache les en-têtes
 
 #### Contournement des paramètres d’URL {#avoid-url-parameters}
 
-Si possible, évitez les paramètres d’URL pour les pages que vous souhaitez mettre en cache. Par exemple, si vous disposez d’une galerie d’images, l’URL suivante n’est jamais mise en cache (sauf si le dispatcher [est configuré en conséquence](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)) :
+Si possible, évitez les paramètres d’URL pour les pages que vous souhaitez mettre en cache. Par exemple, si vous disposez d’une galerie d’images, l’URL suivante n’est jamais mise en cache (sauf si le dispatcher [est configuré en conséquence](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)) :
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
