@@ -1,5 +1,5 @@
 ---
-title: Élaboration d’un plan de tests
+title: Élaborer un plan de tests
 seo-title: Compiling your Test Plan
 description: Les cas de test individuels sont fusionnés dans votre plan de test
 seo-description: The individual test cases are amalgamated into your Test Plan
@@ -12,13 +12,13 @@ discoiquuid: 82b8a5f4-583b-47ba-9579-b47364b56aa2
 docset: aem65
 exl-id: ee5df2c8-ab31-4be9-8ede-3c96f26fc626
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '193'
 ht-degree: 100%
 
 ---
 
-# Élaboration d’un plan de tests{#compiling-your-test-plan}
+# Élaborer un plan de tests{#compiling-your-test-plan}
 
 Les cas de test individuels sont ensuite fusionnés dans votre plan de test, qui définit également :
 
