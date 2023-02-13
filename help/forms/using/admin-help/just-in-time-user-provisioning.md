@@ -1,5 +1,5 @@
 ---
-title: Approvisionnement juste à temps
+title: Approvisionnement juste à temps d’utilisateurs
 seo-title: Just-in-time user provisioning
 description: Utilisez l’approvisionnement juste à temps pour ajouter des utilisateurs à User Management après l’authentification réussie et pour affecter de manière dynamique les rôles et les groupes appropriés au nouvel utilisateur.
 seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
@@ -10,8 +10,8 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '573'
 ht-degree: 100%
 
@@ -86,9 +86,9 @@ public Boolean assign(User user);
 * Lors de la création d’un `IdentityCreator` personnalisé pour un domaine hybride, assurez-vous qu’un mot de passe factice est spécifié pour l’utilisateur local. Ne laissez pas ce champ de mot de passe vide.
 * Recommandation : utilisez `DomainSpecificAuthentication` pour valider les informations d’identification de l’utilisateur pour un domaine spécifique.
 
-### Création d’un domaine d’approvisionnement juste à temps {#create-a-just-in-time-enabled-domain}
+### Créer un domaine d’approvisionnement juste à temps {#create-a-just-in-time-enabled-domain}
 
-1. Ecrivez un DSC de la section « API pour l’approvisionnement juste à temps », qui met les API en œuvre.
+1. Écrivez un DSC qui met les API en œuvre dans la section « API pour l’approvisionnement juste à temps ».
 1. Déployez le DSC sur le serveur Forms.
 1. Créez un domaine de provisionnement juste à temps :
 
