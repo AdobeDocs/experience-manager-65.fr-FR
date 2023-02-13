@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1194'
 ht-degree: 100%
 
@@ -80,7 +80,7 @@ Les principales consoles sont les suivantes :
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
-   <td>Un processus est une série d’étapes définies décrivant la procédure à suivre pour accomplir certaines tâches. Dans la plupart des cas, plusieurs personnes sont impliquées dans une tâche et chacune d’elles doit exécuter les étapes qui lui sont attribuées avant de remettre le projet à la personne suivante. La console Workflow vous permet d’élaborer des modèles de workflows et de gérer l’exécution des instances de workflow. Reportez-vous à la section <a href="/help/sites-administering/workflows.md">Utilisation des processus</a>.<br /> </td>
+   <td>Un processus est une série d’étapes définies décrivant la procédure à suivre pour accomplir certaines tâches. Dans la plupart des cas, plusieurs personnes sont impliquées dans une tâche et chacune d’elles doit exécuter les étapes qui lui sont attribuées avant de remettre le projet à la personne suivante. La console Workflow vous permet d’élaborer des modèles de workflows et de gérer l’exécution des instances de workflow. Reportez-vous à la section <a href="/help/sites-administering/workflows.md">Utilisation des workflows</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
