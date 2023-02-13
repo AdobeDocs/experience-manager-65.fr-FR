@@ -1,5 +1,5 @@
 ---
-title: Modification de l’ordre d’évaluation pour l’authentification
+title: Modifier l’ordre d’évaluation pour l’authentification
 seo-title: Change the order of evaluation for authentication
 description: Vous pouvez modifier l’ordre dans lequel AEM Forms évalue plusieurs fournisseurs d’authentification.
 seo-description: You can change the order in which AEM forms evaluates multiple authentication providers.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 exl-id: 7e29c9d4-fb82-4308-aac7-0f5cb1f4aef2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '147'
 ht-degree: 100%
 
 ---
 
-# Modification de l’ordre d’évaluation pour l’authentification {#change-the-order-of-evaluation-for-authentication}
+# Modifier l’ordre d’évaluation pour l’authentification {#change-the-order-of-evaluation-for-authentication}
 
 Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez modifier l’ordre dans lequel AEM forms les évalue pour authentification. L’ordre des fournisseurs d’authentification répertoriés dans le fichier config.xml détermine l’ordre d’évaluation de l’authentification.
 
@@ -45,5 +45,5 @@ Si vous avez configuré plusieurs fournisseurs d’authentification, vous pouvez
 
    Dans `<entry key="order" value="3" />`, modifiez la valeur de chaque nœud pour définir l’ordre de l’évaluation de l’authentification.
 
-1. Pour importer le fichier mis à jour, dans User Management, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
+1. Pour importer le fichier mis à jour, dans Gestion des utilisateurs, cliquez sur Configuration > Importer et exporter des fichiers de configuration.
 1. Cliquez sur Parcourir pour trouver le fichier, puis sur Importer et enfin sur OK.
