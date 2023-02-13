@@ -1,5 +1,5 @@
 ---
-title: Configuration de Connector for IBM Content Manager
+title: Configurer Connector for IBM Content Manager
 seo-title: Configuring Connector for IBM Content Manager
 description: Configurez le connecteur pour IBM Content Manager pour permettre la communication entre AEM Forms et IBM Content Manager.
 seo-description: Configure the Connector for IBM Content Manager to enable communication between AEM forms and IBM Content Manager.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 exl-id: 50f0c963-8007-4e2a-aa73-d99b97d9a1aa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
 ht-degree: 100%
 
 ---
 
-# Configuration de Connector for IBM Content Manager{#configuring-connector-for-ibm-content-manager}
+# Configurer Connector for IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
 Le connecteur pour IBM Content Manager permet la communication entre AEM forms et IBM Content Manager. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
