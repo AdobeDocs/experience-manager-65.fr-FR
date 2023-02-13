@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1618'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ La procédure suivante montre comment utiliser la zone JavaScript pour personnal
 
 1. Ajoutez votre code javascript dans la fonction **s_doPlugins**.
 
-L’exemple suivant concatène les données capturées sur une page dans un ordre hiérarchique, à l’aide d’un séparateur commun de &quot;|&quot;.
+L’exemple suivant concatène les données capturées sur une page dans l’ordre hiérarchique, en utilisant un séparateur commun « | ».
 
 Un framework Adobe Analytics possède les configurations suivantes :
 
