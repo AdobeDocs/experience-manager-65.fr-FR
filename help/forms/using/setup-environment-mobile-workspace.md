@@ -1,5 +1,5 @@
 ---
-title: Configuration de l’environnement de l’application AEM Forms
+title: Configurer l’environnement de l’application AEM Forms
 seo-title: Set up environment for AEM Forms app
 description: Matériel, logiciels et licences permettant de générer et déployer l’application AEM Forms.
 seo-description: Hardware, software, and licenses to build and deploy the AEM Forms app.
@@ -12,13 +12,13 @@ discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
 ---
 
-# Configuration de l’environnement de l’application AEM Forms{#set-up-environment-for-aem-forms-app}
+# Configurer l’environnement de l’application AEM Forms{#set-up-environment-for-aem-forms-app}
 
 Vous avez besoin du matériel, des logiciels et licences ci-dessous pour générer et déployer l’application AEM Forms :
 
