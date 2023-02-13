@@ -11,9 +11,9 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
 >
 >Les informations contenues dans cette page ne sont pas exhaustives.
 >
->Pour plus d’informations, voir la liste sous **Prédicats disponibles** dans la console de débogage Query Builder ; par exemple, à l’adresse :
+>Pour plus d’informations, reportez-vous à la liste figurant dans **Prédicats disponibles** dans la console de débogage Query Builder, par exemple, à l’adresse :
 >* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
 >Pour obtenir un exemple, reportez-vous à :
@@ -505,7 +505,7 @@ Ne prend pas en charge l’extraction de facettes pour les prédicats de la requ
 
    Chemin d’accès à la requête enregistrée (propriété String ou nœud `nt:file`)
 
-### similaire {#similar}
+### similar {#similar}
 
 Recherche par analogie à l’aide du `rep:similar()` du Xpath JCR.
 
