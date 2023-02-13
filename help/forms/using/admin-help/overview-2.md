@@ -1,5 +1,5 @@
 ---
-title: Principes de base de la gestion des certificats et des informations d’identification
+title: Bases de la gestion des certificats et des informations d’identification
 seo-title: Basics of managing certificates and credentials
 description: Découvrez les bases de la gestion des certificats et des informations d’identification.
 seo-description: Learn about the basics of managing certificates and credentials.
@@ -11,17 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 74bf0e77-f47b-475a-b2a7-52cfb3baaa22
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '339'
 ht-degree: 100%
 
 ---
 
-# Principes de base de la gestion des certificats et des informations d’identification {#basics-of-managing-certificates-and-credentials}
+# Bases de la gestion des certificats et des informations d’identification {#basics-of-managing-certificates-and-credentials}
 
 Les *informations d’identification* contiennent les informations de clé privée dont vous avez besoin pour signer ou identifier des documents. Un *certificat* correspond aux informations de clé publique que vous configurez pour l’approbation. AEM forms utilise des certificats et des informations d’identification à plusieurs fins :
 
-* Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF (voir [Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)).
+* Les extensions d’Acrobat Reader DC utilisent des informations d’identification pour activer les droits Adobe Reader des documents PDF. (voir [Configuration des informations d’identification à utiliser avec les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)).
 * Vous pouvez configurer Rights Management pour afficher les informations d’identification à utiliser dans Acrobat émanant uniquement des émetteurs autorisés (voir [Configuration des paramètres d’affichage de Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)). Le nom commun ou CN (pour Common Name) doit figurer dans le certificat.
 * Le service Signature a accès aux certificats et aux informations d’identification. Pour plus d’informations sur le service Signature, voir le [Guide de référence des services](https://www.adobe.com/go/learn_aemforms_services_65_fr).
 
