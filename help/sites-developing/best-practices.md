@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
  </tbody>
 </table>
 
-## Communautés {#communities}
+## Communities {#communities}
 
 [AEM Communities](/help/communities/overview.md) simplifie la création et la gestion des communautés sur site.
 
@@ -96,7 +96,7 @@ HTML Template Language (HTL) est un nouveau système de modèle HTML, introduit 
 
 |  |  |  |
 |---|---|---|
-| Présentation de HTL | [Présentation et syntaxe HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Ce document définit HTL et décrit la procédure de passage à HTL, un exemple de projet, la syntaxe, les expressions et les instructions HTL |
+| Présentation de HTL | [Présentation et syntaxe HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Ce document définit HTL et décrit la procédure de passage à HTL, un exemple de projet, la syntaxe, les expressions et les instructions HTL |
 | Utilisation de l’API en Java | [Use-API Java HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/use-api.html) | L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. |
 
 >[!NOTE]
