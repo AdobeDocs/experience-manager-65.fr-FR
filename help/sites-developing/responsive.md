@@ -12,9 +12,9 @@ discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5351'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Divers exemples sont basés sur l’exemple de contenu de Geometrixx, qui n’est plus fourni avec AEM, ayant été remplacé par We.Retail. Pour savoir comment télécharger et installer Geometrixx, consultez le document [Implémentation de référence We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx).
+>Plusieurs exemples sont basés sur l’exemple de contenu Geometrixx. Celui-ci n’est plus fourni avec AEM, car il a été remplacé par We.Retail. Pour savoir comment télécharger et installer Geometrixx, consultez le document [Implémentation de référence We.Retail](/help/sites-developing/we-retail.md#we-retail-geometrixx).
 
 Concevez vos pages web afin qu’elles s’adaptent à la fenêtre dans laquelle elles sont affichées. Le Responsive Design permet d’afficher les mêmes pages sur plusieurs appareils dans les deux orientations. L’image suivante présente différentes méthodes par lesquelles une page peut s’adapter aux changements de taille de la fenêtre d’affichage :
 
@@ -592,7 +592,7 @@ Les valeurs de qualité d’image ci-dessous sont prises en charge :
 * moyenne
 * élevée
 
-Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md). 
+Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Indication de la ressource d’image {#specifying-the-image-resource}
 
