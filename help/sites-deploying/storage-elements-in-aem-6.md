@@ -1,5 +1,5 @@
 ---
-title: Éléments de stockage dans AEM 6,5
+title: Éléments de stockage dans AEM 6.5
 seo-title: Storage Elements in AEM 6.5
 description: Obtenez des informations sur les mises en œuvre du stockage de nœud disponibles dans AEM 6.5 et sur la maintenance du référentiel.
 seo-description: Learn about the node storage implementations available in AEM 6.5 and how to maintain the repository.
@@ -12,13 +12,13 @@ discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '714'
 ht-degree: 100%
 
 ---
 
-# Éléments de stockage dans AEM 6,5{#storage-elements-in-aem}
+# Éléments de stockage dans AEM 6.5{#storage-elements-in-aem}
 
 Dans cet article, nous allons aborder les éléments suivants :
 
