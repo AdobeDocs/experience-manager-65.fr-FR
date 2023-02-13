@@ -1,7 +1,7 @@
 ---
 title: Modèles de lettres de référence
 seo-title: Reference letter templates
-description: 'AEM Forms fournit des modèles de mise en page de lettres Correspondence Management que vous pouvez utiliser pour créer rapidement des lettres. '
+description: AEM Forms fournit des modèles de mise en page de lettres Correspondence Management que vous pouvez utiliser pour créer rapidement des lettres.
 seo-description: AEM Forms provides Correspondence Management letter layout templates that you can use to create letters quickly.
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -10,7 +10,7 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 exl-id: 40d127b5-1ce6-41fb-ac4c-2bf7ae79da82
 source-git-commit: 1def8ff7bc90e2ab82ce8b50277a97da9709c78c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '461'
 ht-degree: 100%
 
