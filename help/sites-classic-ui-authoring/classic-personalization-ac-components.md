@@ -12,7 +12,7 @@ discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2534'
 ht-degree: 100%
 
@@ -205,7 +205,7 @@ L’exemple ci-dessous présente le composant Texte et image (Campaign) affiché
 
 Le composant Texte et personnalisation (Campaign) permet de saisir un bloc de texte en utilisant un éditeur WYSIWYG, avec les fonctionnalités de l’[éditeur de texte enrichi](/help/sites-authoring/rich-text-editor.md). De plus, ce composant permet d’utiliser des champs de contexte et des blocs de personnalisation, disponibles dans Adobe Campaign. Reportez-vous également à la section [Insertion d’une personnalisation](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
-Une série d’icônes permet de mettre en forme le texte (attributs de police, alignement, liens, listes et retrait). 
+Une série d’icônes permet de mettre en forme le texte (attributs de police, alignement, liens, listes et mise en retrait).
 
 Ajoutez du texte comme vous le feriez normalement dans l’éditeur de texte enrichi. Ajoutez la personnalisation en la sélectionnant dans la liste déroulante Adobe Campaign et en sélectionnant les champs en fonction de vos besoins.
 
@@ -296,7 +296,7 @@ Ajoutez une description dans ce champ pour donner des informations supplémentai
 * **N’afficher que la valeur**
 Affiche uniquement la valeur, le cas échéant.
 
-#### Adobe Campaign  {#adobe-campaign}
+#### Adobe Campaign {#adobe-campaign}
 
 Vous pouvez configurer les éléments suivants :
 
