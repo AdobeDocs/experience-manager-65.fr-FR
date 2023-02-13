@@ -1,5 +1,5 @@
 ---
-title: Activation de l’accès à l’IU classique
+title: Activer l’accès à l’IU classique
 seo-title: Enabling Access to Classic UI
 description: Découvrez comment activer l’accès à l’IU classique.
 seo-description: Lear how to enable access to Classic UI.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
 exl-id: e25f0b7f-5f12-4363-b302-e51c81035c7d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
 ---
 
-# Activation de l’accès à l’IU classique{#enabling-access-to-classic-ui}
+# Activer l’accès à l’IU classique{#enabling-access-to-classic-ui}
 
 Avec la fonctionnalité tactile désormais au même niveau, voire dépassant l’IU classique dans de nombreux aspects d’AEM, l’accès à l’IU classique via l’interface tactile est désormais désactivé par défaut. Les pages suivantes expliquent comment réactiver cet accès si nécessaire.
 
