@@ -1,5 +1,5 @@
 ---
-title: Présentation du site de référence de recrutement des employés
+title: Présentation du site de référence de recrutement des employé(e)s
 seo-title: Employee recruitment
 description: Le site de référence AEM Forms présente la manière dont les organisations peuvent utiliser les fonctionnalités AEM Forms pour mettre en œuvre le processus de recrutement des employés.
 seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
@@ -9,13 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1416'
 ht-degree: 100%
 
 ---
 
-# Présentation du site de référence de recrutement des employés {#employee-recruitment-reference-site-walkthrough}
+# Présentation du site de référence de recrutement des employé(e)s {#employee-recruitment-reference-site-walkthrough}
 
 ## Présentation {#overview}
 
@@ -108,7 +108,7 @@ L’action d’envoi dans le formulaire de candidature déclenche un processus q
 
 ### Démonstration {#see-it-yourself-1}
 
-Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`et connectez-vous en utilisant jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs. Ouvrez la tâche de consultation du profil du candidat et sélectionnez le candidat.
+Accédez à `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`et connectez-vous en utilisant jjacobs/password comme nom d’utilisateur/mot de passe pour John Jacobs. Ouvrez la tâche de consultation du profil de candidat(e) et sélectionnez le ou la candidat(e).
 
 ## Gloria consulte la demande et approuve la candidate pour un entretien {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
@@ -232,7 +232,7 @@ Sarah Rose reçoit la lettre de recrutement pour signature. Sarah clique sur Cli
 
 ![sarahrosejoiningletteremail](assets/sarahrosejoiningletteremail.png)
 
-Sarah Rose reçoit la lettre de recrutement pour signature
+Sarah Rose reçoit la lettre de recrutement pour signature.
 
 Sarah peut choisir entre la saisie, la fonction d’écriture à la main, l’insertion d’une image de signature ou l’utilisation de l’écran tactile de son appareil mobile pour dessiner sa signature. Sarah saisit son nom, clique sur Cliquer pour signer et télécharge la copie signée de la lettre de recrutement.
 
