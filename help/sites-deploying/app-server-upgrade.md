@@ -4,7 +4,7 @@ description: Découvrez comment mettre à niveau des instances AEM qui sont dé
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
 ht-degree: 100%
 
@@ -59,7 +59,7 @@ Tous les exemples de cette procédure utilisent Tomcat comme serveur d’applica
 
 1. Supprimez les fichiers et dossiers qui ne sont plus nécessaires. Vous devez précisément supprimer les éléments suivants :
 
-   * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal :`rm -rf crx-quickstart/launchpad/startup`
+   * Le **dossier launchpad/startup**. Vous pouvez le supprimer en exécutant la commande suivante dans le terminal : `rm -rf crx-quickstart/launchpad/startup`
 
    * Le fichier **base.jar** : `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
