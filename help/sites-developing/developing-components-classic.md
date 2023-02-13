@@ -1,5 +1,5 @@
 ---
-title: Développement de composants AEM (IU classique)
+title: Développer des composants AEM (IU classique)
 seo-title: Developing AEM Components (Classic UI)
 description: L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparence aux composants. HTL n’est pas le langage de script recommandé pour AEM.
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
@@ -12,13 +12,13 @@ discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2392'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Développement de composants AEM (IU classique){#developing-aem-components-classic-ui}
+# Développer des composants AEM (IU classique){#developing-aem-components-classic-ui}
 
 L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparence aux composants. Compte tenu de la nature de ces widgets, il existe des différences entre la façon dont les composants interagissent avec l’interface utilisateur classique et l’[interface utilisateur classique tactile](/help/sites-developing/developing-components.md).
 
@@ -30,7 +30,7 @@ L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparenc
 >
 >Les langages HTL (HTML Template Language) et JSP peuvent tous deux être utilisés pour développer des composants pour l’IU classique. Cependant, cette page illustre le développement avec JSP. Cela est simplement dû au fait que JSP est traditionnellement utilisé dans l’IU classique.
 >
->HTL est désormais le langage de script recommandé pour AEM. Pour comparer les deux méthodes, reportez-vous aux sections [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) et [Développement de composants AEM](/help/sites-developing/developing-components.md).
+>HTL est désormais le langage de script recommandé pour AEM. Pour comparer les deux méthodes, reportez-vous aux sections [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) et [Développement de composants AEM](/help/sites-developing/developing-components.md).
 
 ## Structure {#structure}
 
