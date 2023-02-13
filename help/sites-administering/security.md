@@ -13,9 +13,9 @@ docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5454'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -87,7 +87,7 @@ Les tableaux suivants répertorient chaque élément avec :
    <td>administrators</td>
    <td>Groupe</td>
    <td><p>Groupe donnant des droits d’administrateur à tous ses membres. Seul l’administrateur est autorisé à modifier ce groupe.</p> <p>Dispose des droits d’accès complets.</p> </td>
-   <td>Même si vous définissez un "deny-everyone" sur un noeud, les administrateurs peuvent toujours accéder au noeud</td>
+   <td>Même si vous définissez un paramètre « deny-everyone » sur un nœud, les administrateurs peuvent toujours y accéder.</td>
   </tr>
   <tr>
    <td>content-authors</td>
@@ -215,17 +215,17 @@ Les listes de contrôle d’accès sont composées d’autorisations spécifique
 
 >[!NOTE]
 >
->Des listes de contrôle d’accès sont fournies avec les échantillons. Il est recommandé d’examiner et de déterminer ce qui convient à vos applications. Pour passer en revue les listes de contrôle d’accès incluses, aller à **CRXDE** et sélectionnez l’onglet **Contrôle d’accès** pour les nœuds suivants :
+>Des listes de contrôle d’accès sont fournies avec les échantillons. Il est recommandé d’examiner et de déterminer ce qui convient à vos applications. Pour passer en revue les listes de contrôle d’accès incluses, accédez à **CRXDE** et sélectionnez l’onglet **Contrôle d’accès** pour les nœuds suivants :
 >
 >* `/etc/cloudservices`
 >* `/home/users/we-retail`
 >
->Votre application personnalisée peut définir l’accès pour d’autres relations, telles que :
+>Votre application personnalisée peut définir l’accès pour d’autres relations, telles que :
 >
 >* `*/social/relationships/friend/*`
 >* ou `*/social/relationships/pending-following/*`.
 >
->Lorsque vous créez des listes de contrôle d’accès spécifiques aux communautés, les membres rejoignant ces communautés peuvent se voir accorder des autorisations supplémentaires. Par exemple, cela peut être le cas lorsque les utilisateurs rejoignent les communautés à l’adresse : `/content/we-retail/us/en/community`
+>Lorsque vous créez des listes de contrôle d’accès spécifiques aux communautés, les membres rejoignant ces communautés peuvent se voir accorder des autorisations supplémentaires. Par exemple, ceci peut être le cas lorsque les utilisateurs rejoignent les communautés sur : `/content/we-retail/us/en/community`.
 
 ### États d’autorisation {#permission-states}
 
