@@ -1,5 +1,5 @@
 ---
-title: Recommandations d’interfaces utilisateur aux clients
+title: Recommandations relatives aux interfaces utilisateur pour les client(e)s
 seo-title: User Interface Recommendations for Customers
 description: Liste de recommandations relatives aux interfaces utilisateur classiques et aux interfaces utilisateur optimisées pour les écrans tactiles.
 seo-description: A list of recommendations related to the classic and touch-optimized user interfaces.
@@ -12,13 +12,13 @@ discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '784'
 ht-degree: 100%
 
 ---
 
-# Recommandations d’interfaces utilisateur aux clients{#user-interface-recommendations-for-customers}
+# Recommandations relatives aux interfaces utilisateur pour les client(e)s{#user-interface-recommendations-for-customers}
 
 Adobe Experience Manager est fourni avec deux interfaces utilisateur : l’interface utilisateur unifiée Experience Cloud (également appelée interface utilisateur tactile) et l’interface utilisateur classique.
 
@@ -115,7 +115,7 @@ Pour découvrir une présentation complète, consultez la page [Statut des fonct
 
 Pour plus d’informations sur la gestion de base :
 
-* [Création de pages](/help/sites-authoring/page-authoring.md).
+* [Créer des pages](/help/sites-authoring/page-authoring.md).
 
 Pour des informations détaillées de développement :
 
