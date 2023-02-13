@@ -5,9 +5,9 @@ description: Questions, réponses et ressources destinées aux utilisateurs qui 
 seo-description: Questions, answers, and resources for users new to AEM
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -44,11 +44,11 @@ Nous disposons également de la documentation pour les anciennes versions d’Ad
 * [AEM 6.1](https://docs.adobe.com/docs/fr/aem/6-1.html)**
 * [AEM 6.0](https://docs.adobe.com/docs/fr/aem/6-0.html)**
 * [AEM 5.6.1](https://helpx.adobe.com/fr/experience-manager/aem-previous-versions.html)**
-* [AEM 5.6](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CQ 5.5](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CQ 5.4](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CQ 5.3](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
-* [CRX 2.3](https://helpx.adobe.com/experience-manager/aem-previous-versions.html)**
+* [AEM 5.6](https://helpx.adobe.com/fr/experience-manager/aem-previous-versions.html)**
+* [CQ 5.5](https://helpx.adobe.com/fr/experience-manager/aem-previous-versions.html)**
+* [CQ 5.4](https://helpx.adobe.com/fr/experience-manager/aem-previous-versions.html)**
+* [CQ 5.3](https://helpx.adobe.com/fr/experience-manager/aem-previous-versions.html)**
+* [CRX 2.3](https://helpx.adobe.com/fr/experience-manager/aem-previous-versions.html)**
 
 ** Indique les versions qui ne sont plus officiellement prises en charge par Adobe.
 
