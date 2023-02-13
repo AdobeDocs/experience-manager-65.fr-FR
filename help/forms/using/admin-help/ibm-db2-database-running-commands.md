@@ -1,6 +1,6 @@
 ---
-title: '"Base de données IBM DB2 : exécution des commandes pour des opérations de maintenance standard"'
-seo-title: 'IBM DB2 database: Running commands for regular maintenance'
+title: "Base de données IBM DB2\_: exécution des commandes pour des opérations de maintenance standard"
+seo-title: "IBM DB2 database: Running commands for regular maintenance"
 description: Ce document répertorie les commandes IBM DB2 recommandées dans le cadre des opérations de maintenance standard de votre base de données AEM Forms.
 seo-description: This document lists IBM DB2 commands that are recommended for regular maintenance of your AEM forms database.
 uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '388'
 ht-degree: 100%
 
