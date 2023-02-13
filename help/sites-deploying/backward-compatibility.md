@@ -1,5 +1,5 @@
 ---
-title: Compatibilité descendante dans AEM 6.5
+title: Compatibilité ascendante dans AEM 6.5
 seo-title: Backward Compatibility in AEM 6.5
 description: Découvrez comment faire en sorte que vos applications et configurations restent compatibles avec AEM 6.5
 seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
@@ -13,15 +13,15 @@ docset: aem65
 feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
 source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
 ht-degree: 100%
 
 ---
 
-# Compatibilité descendante dans AEM 6.5{#backward-compatibility-in-aem}
+# Compatibilité ascendante dans AEM 6.5{#backward-compatibility-in-aem}
 
-## du commerce électronique {#overview}
+##  du commerce électronique {#overview}
 
 >[!NOTE]
 >
