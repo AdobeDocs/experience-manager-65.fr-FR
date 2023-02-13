@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’espace de travail AEM Forms
+title: Utiliser l’espace de travail AEM Forms
 seo-title: Working with AEM Forms workspace
 description: Commencez avec l’espace de travail AEM Forms à l’aide de cette présentation rapide des flux de processus.
 seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
@@ -11,13 +11,13 @@ discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1043'
 ht-degree: 100%
 
 ---
 
-# Utilisation de l’espace de travail AEM Forms{#working-with-aem-forms-workspace}
+# Utiliser l’espace de travail AEM Forms{#working-with-aem-forms-workspace}
 
 ## Présentation {#introduction}
 
