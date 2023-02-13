@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1863'
 ht-degree: 100%
 
@@ -45,21 +45,21 @@ Lorsque l’administrateur du serveur d’applications détermine les paramètre
    * Capacity Increment
    * Statement Cache Size
 
-1. Cliquez sur Save, puis sur Activate Changes.
+1. Cliquez sur Enregistrer, puis sur Activer les modifications.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configuration des paramètres du pool de connexions sur WebLogic pour SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
 
-1. Sous Change Center, cliquez sur Lock &amp; Edit.
+1. Sous Centre des modifications, cliquez sur Verrouiller et modifier.
 1. Sous Domain Structure, cliquez sur Services > JDBC > Data sources, puis dans le volet de droite, cliquez sur EDC_DS.
 1. Dans l’écran suivant, cliquez sur Configuration > Connection Pool (onglet), puis saisissez une valeur dans les champs suivants :
 
    * Initial Capacity
    * Maximum Capacity
-   * Augmentation de capacité
+   * Capacity Increment
    * Statement Cache Size
 
-1. Cliquez sur Save, puis sur Activate Changes.
+1. Cliquez sur Enregistrer, puis sur Activer les modifications.
 1. Redémarrez le serveur géré WebLogic.
 
 ### Configuration des paramètres du pool de connexions sur WebLogic pour DB2 {#configure-connection-pool-settings-for-websphere-for-db2}
