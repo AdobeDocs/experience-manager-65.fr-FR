@@ -13,7 +13,7 @@ docset: aem65
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3286'
 ht-degree: 100%
 
@@ -260,7 +260,7 @@ Ajoutez des groupes dʼutilisateurs aux stratégies au lieu dʼutilisateurs indi
    * Contrôlez l’accès aux documents protégés par une stratégie en déterminant de manière dynamique si un utilisateur peut accéder à un document protégé par une stratégie. Par exemple, décidez de manière dynamique si un utilisateur peut imprimer un document protégé par une stratégie.
 
    * Utilisez un mécanisme de contrôle d’accès que votre système de gestion de contenu utilise, en plus du processus standard d’évaluation des stratégies. Par exemple, lorsque le service détermine si un utilisateur peut imprimer un document protégé par une stratégie, il peut utiliser le processus d’évaluation de stratégie standard et le mécanisme de contrôle d’accès que votre système de gestion de contenu utilise.
-   Bien qu’il soit possible de remplacer complètement le processus d’évaluation des stratégies Document Security par un gestionnaire d’autorisation externe, il est recommandé d’utiliser le processus d’évaluation des stratégies en plus dʼun gestionnaire d’autorisation externe. De cette façon, l’accès aux documents peut être contrôlé par le même mécanisme de contrôle que celui utilisé par votre système de gestion de contenu. Par exemple, lorsque le service Document Security détermine si un utilisateur peut imprimer un document protégé par une stratégie, il utilise le processus d’évaluation de stratégie standard ainsi que le mécanisme de contrôle d’accès utilisé par votre système de gestion de contenu. Pour plus d’informations, consultez la section [Créer des gestionnaires d’autorisation externes](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
+   Bien qu’il soit possible de remplacer complètement le processus d’évaluation des stratégies Document Security par un gestionnaire d’autorisation externe, il est recommandé d’utiliser le processus d’évaluation des stratégies en plus dʼun gestionnaire d’autorisation externe. De cette façon, l’accès aux documents peut être contrôlé par le même mécanisme de contrôle que celui utilisé par votre système de gestion de contenu. Par exemple, lorsque le service Document Security détermine si un utilisateur peut imprimer un document protégé par une stratégie, il utilise le processus d’évaluation de stratégie standard ainsi que le mécanisme de contrôle d’accès utilisé par votre système de gestion de contenu. Pour plus d’informations, consultez la section [Créer des gestionnaires d’autorisation externes](https://help.adobe.com/fr_FR/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html).
 
 * **Réduire les jeux de stratégies à un nombre limité :** lʼaugmentation constante des stratégies et des jeux de stratégies est imputable à de nombreux facteurs. Les plus courants sont les suivants :
 
