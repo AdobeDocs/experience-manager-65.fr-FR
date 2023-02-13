@@ -12,7 +12,7 @@ discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '8189'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -257,7 +257,7 @@ Un certificat de clé publique contient la clé publique d’un utilisateur et s
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -469,7 +469,7 @@ Vous pouvez supprimer le chiffrement avec certificat d’un document PDF afin qu
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -630,7 +630,7 @@ Supprimez le chiffrement avec mot de passe d’un document PDF et permettez ains
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -777,7 +777,7 @@ Un document PDF chiffré par mot de passe ou par certificat doit être déverrou
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -955,7 +955,7 @@ Un document PDF peut être protégé par les types de chiffrement suivants :
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Encryption, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
