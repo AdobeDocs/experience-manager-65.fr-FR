@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’enregistrement automatique dans l’application AEM Forms
+title: Utiliser l’enregistrement automatique dans l’application AEM Forms
 seo-title: Using autosave in AEM Forms app
 description: Apprenez à utiliser enregistrement automatique dans l’application AEM Forms afin d’éviter la perte de données.
 seo-description: Learn how to use autosave feature in AEM Forms app that lets you avoid data loss.
@@ -12,13 +12,13 @@ discoiquuid: 2c71cc28-b7c8-4785-9fc2-b47fa80cbd70
 docset: aem65
 exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
 ht-degree: 100%
 
 ---
 
-# Utilisation de l’enregistrement automatique dans l’application AEM Forms{#using-autosave-in-aem-forms-app}
+# Utiliser l’enregistrement automatique dans l’application AEM Forms{#using-autosave-in-aem-forms-app}
 
 Lorsqu’un utilisateur saisit des données dans l’application Adobe Experience Manager Forms, la fonction d’enregistrement automatique les enregistre à intervalles réguliers. La fonction d’enregistrement automatique de l’application AEM Forms vous permet d’éviter la perte de données si l’application se ferme accidentellement.
 
