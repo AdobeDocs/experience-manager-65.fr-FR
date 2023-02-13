@@ -1,5 +1,5 @@
 ---
-title: Intégration à Silverpop Engage
+title: Intégrer à Silverpop Engage
 seo-title: Integrating with Silverpop Engage
 description: Découvrez comment intégrer AEM à Silverpop Engage.
 seo-description: Learn how to integrate AEM with Silverpop Engage
@@ -12,13 +12,13 @@ discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
 docset: aem65
 exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '682'
 ht-degree: 100%
 
 ---
 
-# Intégration à Silverpop Engage{#integrating-with-silverpop-engage}
+# Intégrer à Silverpop Engage{#integrating-with-silverpop-engage}
 
 >[!NOTE]
 >
