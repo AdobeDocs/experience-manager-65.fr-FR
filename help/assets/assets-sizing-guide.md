@@ -6,7 +6,7 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1615'
 ht-degree: 100%
 
