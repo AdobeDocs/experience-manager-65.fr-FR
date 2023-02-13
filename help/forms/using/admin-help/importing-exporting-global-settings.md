@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1245'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Vous pouvez importer et exporter des définitions de modèles de recherche et de
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>L’espace de travail Flex est obsolète pour la version d’AEM Forms.
 
 Il vous est possible, par exemple, de passer d’un environnement de développement à un environnement de production en exportant les définitions de modèles de recherche et les paramètres globaux d’un environnement et en les important dans l’autre.
 
@@ -67,7 +67,7 @@ Vous pouvez modifier le fichier de paramètres globaux ; toutefois, les seuls p
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>L’espace de travail Flex est obsolète pour la version d’AEM Forms.
 
 Le fichier de paramètres globaux de Workspace inclut les paramètres suivants :
 
