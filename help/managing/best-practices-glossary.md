@@ -12,9 +12,9 @@ discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7036'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -208,7 +208,8 @@ Les indicateurs de performances clés métier définissent des valeurs mesurable
 
 Le document des exigences de l’entreprise décrit la solution d’entreprise pour un projet, en spécifiant clairement les besoins et attentes métier du client. Le document des exigences de l’entreprise distingue également la solution métier et la solution technique.
 
-Lors de l’examen de la solution commerciale, l’outil BRD doit répondre à la question suivante : &quot;Que veut faire l&#39;entreprise ?&quot;
+Lors de l’examen de la solution d’entreprise, le document des exigences de l’entreprise doit répondre à la question suivante :
+« Que souhaite faire l’entreprise ? »
 
 ### Validation par l’entreprise de tous les réglages nécessaires de la solution ou de l’architecture identifiée et alignée par rapport aux attentes de retour sur investissement et d’IPC {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -1024,7 +1025,7 @@ Elles ont pour but d’indiquer l’efficacité de la solution en termes économ
 Spécification détaillée des concepts associés aux rôles et aux droits d’accès requis pour la nouvelle application, y compris une description de haut niveau des :
 
 * rôles ;
-* groups
+* groupes
 * d’utilisateurs ;
 * autorisations ;
 * ainsi que la gestion et l’approvisionnement des utilisateurs.
