@@ -1,5 +1,5 @@
 ---
-title: Vérifications transversales et contrôles de cohérence
+title: Effectuer des vérifications transversales et des contrôles de cohérence
 seo-title: Consistency and Traversal Checks
 description: Découvrez comment effectuer des vérifications transversales et des contrôles de cohérence.
 seo-description: Learn how to perform consistency and traversal checks.
@@ -11,13 +11,13 @@ discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configuring
 exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# Vérifications transversales et contrôles de cohérence{#consistency-and-traversal-checks}
+# Effectuer des vérifications transversales et des contrôles de cohérence{#consistency-and-traversal-checks}
 
 Lors de la mise à niveau, vous pouvez rencontrer des problèmes dus à des incohérences de l’espace de travail. Vous pouvez exécuter une mise à niveau de test pour voir si ce type d’incohérence pose problème ou exécuter des vérifications de cohérence comme action préventive.
 
