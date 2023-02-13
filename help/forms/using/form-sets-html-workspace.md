@@ -1,5 +1,5 @@
 ---
-title: Utilisation des jeux de formulaires dans l’espace de travail AEM Forms
+title: Utiliser des jeux de formulaires dans l’espace de travail AEM Forms
 seo-title: Working with Formsets in AEM Forms workspace
 description: Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Découvrez comment utiliser des jeux de formulaires dans l’espace de travail AEM Forms.
 seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
@@ -12,13 +12,13 @@ discoiquuid: f550b747-2def-4317-9ef7-dc6c1e7bb404
 docset: aem65
 exl-id: 76a8f93f-eb8a-4e68-8626-efa6dc67668f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
 
-# Utilisation des jeux de formulaires dans l’espace de travail AEM Forms{#working-with-formsets-in-aem-forms-workspace}
+# Utiliser des jeux de formulaires dans l’espace de travail AEM Forms{#working-with-formsets-in-aem-forms-workspace}
 
 Un jeu de formulaires est un assortiment de formulaires HTML5 regroupés et présentés comme un ensemble unique de formulaires aux utilisateurs finaux. Lorsque les utilisateurs finaux commencent à compléter un jeu de formulaires, ils passent facilement d’un formulaire à l’autre. Le jeu de formulaires peut ensuite être envoyé en un simple clic. Pour plus d’informations sur les jeux de formulaires et la manière de les configurer, consultez [Jeux de formulaires dans AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
