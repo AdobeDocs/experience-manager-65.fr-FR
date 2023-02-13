@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
 ht-degree: 100%
 
@@ -185,7 +185,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
    <td>Réglage du référentiel</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Conseils de réglage de la performance</a></li>
+     <li><a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">Conseils de réglage de la performance</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Configuration des performances</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Réglage de la performance du référentiel</a></li>
     </ul> </td>
@@ -213,7 +213,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Service de synchronisation d’Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Instances multiples de gestion des ressources numériques</a></li>
-     <li>Articles contenant des conseils pratiques d’amélioration de la performance <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">ici</a> et <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">ici</a>.<br /> </li>
+     <li>Articles contenant des conseils pratiques d’amélioration de la performance <a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">ici</a> et <a href="https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html">ici</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -293,7 +293,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étape 49</strong></td>
    <td>Réduction de la taille de la charge utile</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html"> réduisez la taille de l’image</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et<a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html"> réduisez la taille de l’image</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étapes 42 et 43</strong></td>
@@ -325,7 +325,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer les entit�
   <tr>
    <td><strong>Étapes 50 et 51</strong></td>
    <td>Blocage du code JS</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
+   <td><a href="https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html">https://docs.adobe.com/ddc/fr/gems/aem-web-performance.html </a></td>
   </tr>
  </tbody>
 </table>
