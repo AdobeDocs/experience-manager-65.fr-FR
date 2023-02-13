@@ -1,5 +1,5 @@
 ---
-title: Restructuration des référentiels pour AEM Communities dans la version 6.4
+title: Restructurer les référentiels pour AEM Communities dans la version 6.4
 seo-title: Repository Restructuring for AEM Communities in 6.4
 description: Découvrez comment apporter les modifications nécessaires pour migrer vers la nouvelle structure de référentiel dans AEM 6.4 pour Communities.
 seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
@@ -11,7 +11,7 @@ discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1011'
 ht-degree: 100%
 
@@ -145,7 +145,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
  </tbody>
 </table>
 
-### Conceptions des consoles des communautés classiques {#classic-communities-console-designs}
+### Conceptions des consoles classiques de Communities {#classic-communities-console-designs}
 
 <table>
  <tbody>
