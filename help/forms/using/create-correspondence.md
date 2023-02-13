@@ -1,5 +1,5 @@
 ---
-title: Création de correspondance
+title: Créer une correspondance
 seo-title: Create Correspondence
 description: Après la création d’un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
 seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
@@ -11,13 +11,13 @@ docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3867'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Création de correspondance{#create-correspondence}
+# Créer une correspondance{#create-correspondence}
 
 ## Créez une correspondance dans l’interface utilisateur Création de correspondance {#create-correspondence-in-the-create-correspondence-user-interface}
 
@@ -65,7 +65,7 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
 Sous l’onglet Données, renseignez les champs de mise en page et les espaces réservés disponibles.
 
-1. Entrez les données et les variables de contenu dans les champs requis. Renseignez tous les champs obligatoires marqués d’un astérisque (&#42;) pour activer la variable **Envoyer** bouton .
+1. Entrez les données et les variables de contenu dans les champs requis. Remplissez tous les champs obligatoires identifiés par un astérisque (&#42;) pour activer le bouton **Envoyer**.
 
    Appuyez sur une valeur de champ de données dans l’aperçu de lettre HTML pour mettre en surbrillance le champ de données correspondant dans l’onglet Données.
 
@@ -129,7 +129,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    * Symboles de devise tels que €,￥et £
    * Symboles mathématiques tels que ∑, √, ∂ et ^
-   * Symboles de ponctuation tels que ‟ et &quot;
+   * Symboles de ponctuation tels que « et »
 
    ![specialcharacters](assets/specialcharacters.png)
 
@@ -289,27 +289,27 @@ Ces instances peuvent être enregistrées uniquement lorsque la lettre est en co
 1. Localisez les **[!UICONTROL configurations de Correspondence Management]** et cliquez dessus.
 1. Cochez la configuration **[!UICONTROL Gestion des instances de lettre sur Publication]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-### Activation de la fonction Enregistrer le brouillon {#enable-save-draft-feature}
+### Activer la fonction Enregistrer le brouillon {#enable-save-draft-feature}
 
-Avant de publier des lettres ou d’enregistrer des brouillons sur l’instance de publication, effectuez les étapes suivantes sur l’instance d’auteur et de publication pour activer la fonction Enregistrer en tant que brouillon :
+Avant la publication de lettres ou l’enregistrement de brouillons sur l’instance de publication, effectuez les étapes suivantes sur l’instance d’auteur et de publication pour activer la fonction Enregistrer en tant que brouillon :
 
-Le *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* par défaut, les propriétés ne sont pas transférées vers l’instance de publication. Pour reporter *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* propriétés de l’instance de publication, désactivez la fonction [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] composant. Pour désactiver le composant :
+Les propriétés *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* ne sont pas transférées vers l’instance de publication par défaut. Pour transférer les propriétés *cq:lastReplicationAction*, *cq:lastreplicated* et *cq:lastReplicatedBy* vers l’instance de publication, désactivez le composant [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. Pour désactiver le composant :
 
-1. Sur l’instance d’auteur, ouvrez la console Composants de la console web Adobe Experience Manager. L’URL par défaut est `http://author-server:port/system/console/components`
+1. Sur l’instance d’auteur, ouvrez la console Composants de la console Web Adobe Experience Manager. L’URL par défaut est `http://author-server:port/system/console/components`.
 
-1. Recherchez le **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** composant.
+1. Recherchez le composant **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]**.
 
-1. Cliquez sur ![Bouton Désactiver](/help/forms/using/assets/enablebutton.png) pour désactiver la fonction [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] composant.
+1. Cliquez sur l’icône ![bouton Désactiver](/help/forms/using/assets/enablebutton.png) pour désactiver le composant [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory].
 
 ![Instance d’auteur](/help/forms/using/assets/replicationproperties.png)
 
-Pour activer la fonction Enregistrer en tant que brouillon, remplacez l’URL existante à l’adresse [!UICONTROL URL d’auteur VersionRestoreManager] avec l’URL de votre instance d’auteur. Pour remplacer l’URL :
+Pour activer la fonction Enregistrer en tant que brouillon, remplacez l’URL existante à l’adresse [!UICONTROL URL d’auteur VersionRestoreManager] avec l’URL de votre instance d’auteur. Pour remplacer l’URL :
 
-1. Sur l’instance de publication, ouvrez [!UICONTROL Configuration de la console Web d’Adobe Manager]. L’URL par défaut est `https://publish-server:port/system/console/configMgr`
+1. Sur l’instance de publication, ouvrez [!UICONTROL Configuration de la console Web d’Adobe Manager]. L’URL par défaut est `https://publish-server:port/system/console/configMgr`.
 
-1. Recherchez et ouvrez le **[!UICONTROL Correspondence Management - Configuration de la restauration de version de l’instance d’auteur]** composant.
+1. Recherchez et ouvrez le composant **[!UICONTROL configurations Correspondence Management - Restauration de la version de l’instance d’auteur]**.
 
-1. Recherchez la variable **[!UICONTROL URL d’auteur VersionRestoreManager]** et spécifiez l’URL de l’instance d’auteur.
+1. Localisez le champ **[!UICONTROL URL d’auteur VersionRestoreManager]** et spécifiez l’URL de l’instance d’auteur correspondante.
 
 1. Cliquez sur Enregistrer.
 
@@ -379,7 +379,7 @@ Pour plus d’informations sur la prise en charge des scripts dans des formulair
 
 Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de prévisualisation d’une lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
 
-Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
 Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 
