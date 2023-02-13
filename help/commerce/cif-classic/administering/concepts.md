@@ -7,7 +7,7 @@ content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4514'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Pour optimiser le fonctionnement, AEM et le moteur eCommerce se concentrent chac
       * la gestion des commandes ;
       * la planification des ressources de l’entreprise (ERP) ;
       * la recherche dans les informations sur les produits.
-   * Processus:
+   * Processus :
 
       * le panier ;
       * le passage en caisse ;
@@ -355,7 +355,7 @@ Si un nœud JCR comporte de nombreux nœuds enfants directs (1 000 et plus, pa
 
 Ces compartiments prennent la forme de dossiers fantômes introduits dans la structure du catalogue, mais peuvent être configurés afin d’être invisibles dans les adresses URL publiques.
 
-#### Déchargement du post-traitement des ressources sur une instance dédiée {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Décharger le post-traitement des ressources sur une instance dédiée {#offload-asset-post-processing-to-a-dedicated-instance}
 
 Ce scénario consiste à configurer deux instances de création :
 
@@ -369,7 +369,7 @@ Ce scénario consiste à configurer deux instances de création :
 
 ![Diagramme d’architecture](/help/sites-administering/assets/chlimage_1-8.png)
 
-#### Importation exclusive des données des produits {#only-import-product-data}
+#### Importer uniquement des données des produits {#only-import-product-data}
 
 En l’absence de ressources (images) à importer pour des produits, vous pouvez importer les données des produits sans être affecté par le post-traitement des ressources.
 
