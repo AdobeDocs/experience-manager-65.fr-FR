@@ -1,7 +1,7 @@
 ---
-title: Choix de l’interface utilisateur
+title: Choisir votre interface utilisateur
 seo-title: Selecting your UI
-description: Pour offrir davantage de confort à ces utilisateurs, l’IU destinée aux écrans tactiles permet de basculer vers l’IU classique lorsque cela s’avère nécessaire.
+description: Pour offrir davantage de confort aux auteurs et autrices, l’IU destinée aux écrans tactiles permet de basculer vers l’IU classique lorsque cela s’avère nécessaire.
 seo-description: For convenience to authoring users, the touch-enabled UI does allow for switching to the classic UI when necessary.
 uuid: 755e513e-990c-4dba-8316-623f17bf5c33
 contentOwner: Chris Bohnert
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 exl-id: 57d45b06-e76e-420c-8cd0-389bd9f811af
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
 ht-degree: 100%
 
 ---
 
-# Choix de l’interface utilisateur{#selecting-your-ui}
+# Choisir votre interface utilisateur{#selecting-your-ui}
 
 L’interface utilisateur activée pour les écrans tactiles remplace l’IU classique, il appartient donc à l’utilisateur ou à l’administrateur de l’instance AEM de choisir explicitement s’il faut continuer à utiliser cette dernière. Étant donné que l’IU classique n’est plus gérée, il n’est plus possible pour l’auteur de basculer simplement de l’IU classique vers son équivalent dans l’IU activée pour les écrans tactiles.
 
