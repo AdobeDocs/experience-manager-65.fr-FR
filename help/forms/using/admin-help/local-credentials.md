@@ -1,5 +1,5 @@
 ---
-title: Gestion des informations d’identification locales
+title: Gérer les informations d’identification locales
 seo-title: Managing local credentials
 description: Découvrez comment gérer vos informations d’identification locales.
 seo-description: Learn how to manage local credentials.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
 ht-degree: 100%
 
 ---
 
-# Gestion des informations d’identification locales {#managing-local-credentials}
+# Gérer les informations d’identification locales {#managing-local-credentials}
 
 Les informations d’identification locales sont des informations d’identification de clé privée hébergées dans Trust Store Management. Les *informations d’identification locales* identifient l’emplacement des informations d’identification DES d’un utilisateur. Trust Store Management vous permet d’importer, de modifier et de supprimer vos informations d’identification locales en utilisant, par exemple, des fichiers PFX existants.
 
