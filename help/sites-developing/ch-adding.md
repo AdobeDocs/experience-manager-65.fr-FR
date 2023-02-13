@@ -3,9 +3,9 @@ title: Ajout de ContextHub à des pages et accès à des magasins
 description: Ajoutez ContextHub à vos pages pour activer les fonctionnalités ContextHub et créer un lien vers les bibliothèques JavaScript ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ Notez que les magasins candidats personnalisés peuvent définir des fonctions s
 
 >[!NOTE]
 >
->ContextHub ne connaît pas par défaut l’ID actuellement connecté utilisé sur les serveurs de publication et ces utilisateurs sont considérés par ContextHub comme &quot;anonymes&quot;.
+>Par défaut, ContextHub ne connaît pas les utilisateurs et utilisatrices actuellement connectés sur les serveurs de publication. Il considère ces utilisateurs et utilisatrices comme étant « anonymes ».
 >
 >Vous pouvez sensibiliser ContextHub aux utilisateurs connectés en chargeant le magasin de profils. Consultez l’[exemple de code sur GitHub ici](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
