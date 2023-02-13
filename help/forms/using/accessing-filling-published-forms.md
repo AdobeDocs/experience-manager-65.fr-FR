@@ -11,7 +11,7 @@ discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '935'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Le composant Search and Lister de Forms Portal affiche les formulaires disponi
 
 ![Exemple de page de Forms Portal ](assets/forms-portal-page.png)
 
-Exemple de page de Forms Portal
+Exemple de page de Forms Portal.
 
 ### Search and Lister {#search-and-lister}
 
@@ -45,7 +45,7 @@ Le composant Search and Lister vous permet d’ajouter les fonctionnalités su
 * Spécification du mode de rendu des formulaires (HTML5, PDF ou les deux).
 * Indication du mode de rendu des formulaires PDF et XGA : HTML5, PDF ou les deux. Formulaires non-XFA au format HTML5.
 * Activation de la recherche de formulaires selon différents critères, tels que les propriétés, les métadonnées et les balises de formulaire.
-* Envoi de données de formulaire vers une servlet.
+* Envoi de données de formulaire vers un servlet.
 * Utilisation de feuilles de style (CSS) personnalisées pour la personnalisation de l’aspect et du style du portail.
 * Création de liens vers des formulaires.
 
@@ -58,7 +58,7 @@ La recherche de texte intégral permet de rechercher et de répertorier les form
 
 ![Boîte de dialogue de recherche avancée](assets/search-panel.png)
 
-Boîte de dialogue de recherche avancée
+Boîte de dialogue de recherche avancée.
 
 La recherche avancée vous permet de rechercher des formulaires en fonction de propriétés de formulaire spécifiques. Elle fournit des résultats plus précis que la recherche de texte intégral. La recherche avancée comprend une recherche basée sur des balises, des propriétés (telles que l’auteur, la description et le titre), la date de modification et le texte intégral.
 
@@ -68,7 +68,7 @@ Le composant Lister affiche des formulaires en fonction de paramètres de recher
 
 ![Exemple de formulaire adaptatif](assets/filling_a_form.png)
 
-Exemple de formulaire adaptatif
+Exemple de formulaire adaptatif.
 
 L’accès aux formulaires peut s’effectuer par le biais du lien fourni avec celui-ci dans le composant Search and Lister de la page.
 
@@ -88,7 +88,7 @@ Une fois le formulaire complété, l’utilisateur l’envoie en cliquant sur le
 
 ![Composant Brouillons et envois](assets/draft-submission.png)
 
-Composant Brouillons et envois
+Composant Brouillons et envois.
 
 ## Démarrage d’un nouveau formulaire avec des données de formulaire envoyé {#start-a-new-form-using-submitted-form-data}
 
