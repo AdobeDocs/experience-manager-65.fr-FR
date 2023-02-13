@@ -12,9 +12,9 @@ discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '667'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -138,7 +138,7 @@ Bien que cela ne soit pas directement lié à une migration vers l’interface u
 
 * [Modèles](/help/sites-developing/templates.md) - [Modèles modifiables](/help/sites-developing/page-templates-editable.md)
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ Pour plus d’informations sur le développement d’AEM, consultez la collectio
 
 * [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md)
 * [Documentation relative à l’interface utilisateur Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [Tutoriels et vidéos d’AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [Tutoriels et vidéos d’AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=fr)
 * [Prise en main du développement d’AEM Sites – Tutoriel WKND](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-index.html)
 * [Outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)
