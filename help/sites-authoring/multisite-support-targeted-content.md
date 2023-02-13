@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2872'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Si vous devez gérer du contenu ciblé, tel que des activités, des expériences
 >
 >L’utilisation de contenu ciblé sur plusieurs sites est une fonctionnalité avancée. Pour utiliser cette fonctionnalité, vous devez connaître [Multi Site Manager](/help/sites-administering/msm.md) ainsi que l’[intégration d’Adobe Target](/help/sites-administering/target.md) à AEM.
 
-Ce document répond aux questions suivantes :
+Ce document contient les informations suivantes :
 
 * Une présentation succincte de la prise en charge de sites multiples sur AEM pour le contenu ciblé
 * Plusieurs scénarios sur la façon dont vous pouvez lier des sites (sous une même marque)
