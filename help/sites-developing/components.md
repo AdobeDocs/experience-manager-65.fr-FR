@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Cette page donne un aperçu des composants AEM (Adobe Experience Manager), tels
 * possèdent une interface utilisateur standardisée ;
 * sont associés à un comportement de modification qui peut être configuré ;
 * utilisent des boîtes de dialogue créées à l’aide de sous-éléments basés sur les composants de l’interface utilisateur Granite ;
-* peuvent être développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (recommandé) ou de JSP.
+* peuvent être développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) (recommandé) ou de JSP.
 * peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
 Compte tenu de la nature modulaire des composants, vous pouvez effectuer les opérations suivantes :
@@ -73,7 +73,7 @@ Les **composants de base** sont fournis avec AEM depuis de nombreuses versions e
 
 >[!NOTE]
 >
->Les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) représentent les méthodes recommandées en matière de conception et de développement de composants. Ils font également office d’implémentations de référence.
+>Les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) représentent les méthodes recommandées en matière de conception et de développement de composants. Ils font également office d’implémentations de référence.
 >
 >Les [outils de modernisation d’AEM](modernization-tools.md) peuvent vous aider à migrer vers les composants principaux.
 
@@ -106,7 +106,7 @@ Les pages suivantes fournissent des informations plus détaillées sur le dével
 * [Composants pour les fragments de contenu](/help/sites-developing/components-content-fragments.md)
 * [Obtention d’informations sur la page au format JSON](/help/sites-developing/pageinfo.md)
 * [Internationalisation de composants](/help/sites-developing/i18n.md)
-* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 * [Utilisation de conditions de masquage](/help/sites-developing/hide-conditions.md)
 * Interface utilisateur classique
 
