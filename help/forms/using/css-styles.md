@@ -1,5 +1,5 @@
 ---
-title: Création de styles CSS pour des formulaires HTML5
+title: Créer des styles CSS pour des formulaires HTML5
 seo-title: Creating CSS styles for HTML5 forms
 description: Découvrez comment modifier l’aspect des formulaires HTML5 en modifiant la classe CSS associée à l’élément de formulaire HTML.
 seo-description: Learn how to change the appearance of HTML5 forms by modifying the CSS class associated with the HTML form element.
@@ -12,13 +12,13 @@ discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
 ht-degree: 100%
 
 ---
 
-# Création de styles CSS pour des formulaires HTML5 {#creating-css-styles-for-html-forms}
+# Créer des styles CSS pour des formulaires HTML5 {#creating-css-styles-for-html-forms}
 
 Le rendu HTML5 d’un modèle de formulaire XFA comporte plusieurs éléments HTML. Ces éléments sont organisés dans un ordre. Chaque élément comporte des classes CSS bien définies. Vous pouvez utiliser cette classe CSS pour sélectionner et modifier l’apparence d’un élément.
 
@@ -101,7 +101,7 @@ Outre les classes type et name, le composant de champ contient également une au
    <td>Nom défini par l’utilisateur</td>
   </tr>
   <tr>
-   <td>Dessin</td>
+   <td>Draw</td>
    <td>draw</td>
    <td>Nom défini par l’utilisateur</td>
   </tr>
