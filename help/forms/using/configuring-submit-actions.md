@@ -10,13 +10,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1870'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Configuration de l’action d’envoi{#configuring-the-submit-action}
+# Configurer l’action d’envoi{#configuring-the-submit-action}
 
 ## Présentation des actions d’envoi {#introduction-to-submit-actions}
 
@@ -33,7 +33,7 @@ Les actions d’envoi par défaut disponibles avec les formulaires adaptatifs so
 * Envoyer vers le point d’entrée REST
 * Envoyer un e-mail
 * Envoyer un fichier PDF par courrier électronique
-* Appeler un processus de formulaires
+* Appeler un workflow de formulaires
 * Envoyer à l’aide du modèle de données de formulaire
 * Action d’envoi du Forms Portal
 * Appeler un workflow AEM
@@ -121,7 +121,7 @@ En outre, vous pouvez envoyer une pièce jointe de formulaire à l’aide d’un
 
 Pour plus d’informations sur le modèle de données du formulaire, voir [Intégration de données AEM Forms](../../forms/using/data-integration.md).
 
-## Action d’envoi du Forms Portal {#forms-portal-submit-action}
+## Action d’envoi du portail Forms {#forms-portal-submit-action}
 
 L’option **Action d’envoi du portail Forms** rend les données de formulaire disponibles à travers un portail AEM Forms.
 
@@ -129,16 +129,16 @@ Pour plus d’informations sur le portail de formulaires et l’action d’envoi
 
 ## Appeler un processus AEM {#invoke-an-aem-workflow}
 
-L’action d’envoi **[!UICONTROL Appeler un processus AEM]** associe un formulaire adaptatif à un [processus AEM](/help/sites-developing/workflows-models.md). Lorsqu’un formulaire est envoyé, le processus associé commence automatiquement sur l’instance de création. Vous pouvez enregistrer le fichier de données, les pièces jointes et le document d’enregistrement dans le dossier relatif ou sous la charge utile du workflow ou dans une variable. Si le workflow est marqué pour le stockage des données externes, l’option de variable est disponible et non l’option de payload. Vous pouvez choisir dans la liste des variables disponibles pour le modèle de workflow. Si le processus est marqué pour le stockage des données externes à une étape ultérieure et non au moment de la création du processus, assurez-vous que les configurations de variable requises sont en place.
+L’action d’envoi **[!UICONTROL Appeler un processus AEM]** associe un formulaire adaptatif à un [processus AEM](/help/sites-developing/workflows-models.md). Lorsqu’un formulaire est envoyé, le processus associé commence automatiquement sur l’instance de création. Vous pouvez enregistrer le fichier de données, les pièces jointes et le document d’enregistrement dans le dossier correspondant, dans la payload du workflow ou dans une variable. Si le workflow est configuré pour le stockage de données externes, l’option Variable est disponible et non l’option Payload. Vous pouvez choisir dans la liste des variables disponibles pour le modèle de workflow. Si le processus est marqué pour le stockage des données externes à une étape ultérieure et non au moment de la création du processus, assurez-vous que les configurations de variable requises sont en place.
 
 Avant d’utiliser l’action d’envoi **Appeler un workflow AEM**, [configurer les paramètres AEM DS](../../forms/using/configuring-the-processing-server-url-.md). Pour plus d’informations sur la création d’un processus AEM, voir [Processus basés sur l’utilisation de Forms sur OSGi](../../forms/using/aem-forms-workflow.md).
 
-L’action Envoyer place les éléments suivants à l’emplacement de la charge utile du workflow. Notez toutefois que seule l’option Variable s’affiche si le modèle de workflow est marqué pour le stockage des données externes et non pour l’option de payload.
+L’action Envoyer place les éléments suivants à l’emplacement de la payload du workflow. Notez toutefois que seule l’option Variable s’affiche si le modèle de workflow est configuré pour le stockage de données externes et non l’option Payload.
 
-* **Fichier de données** : Il contient les données envoyées au formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès au fichier de données]** pour spécifier le nom du fichier et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/data.xml` crée un dossier nommé `addresschange` et le place par rapport à la charge utile. Vous pouvez également spécifier uniquement `data.xml` pour envoyer uniquement les données envoyées sans créer de hiérarchie de dossiers. Utilisez l’option de variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
+* **Fichier de données** : Il contient les données envoyées au formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès au fichier de données]** pour spécifier le nom du fichier et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/data.xml` crée un dossier nommé `addresschange` et le place par rapport à la charge utile. Vous pouvez également spécifier uniquement `data.xml` pour envoyer uniquement les données envoyées sans créer de hiérarchie de dossiers. Utilisez l’option Variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
 >[!NOTE]
-Des variables peuvent être utilisées que le modèle de workflow soit marqué pour le stockage des données externes ou non.
+Vous pouvez utiliser des variables que le modèle de workflow soit configuré pour le stockage de données externes ou non.
 
 * **Pièces jointes** : vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès aux pièces jointes]** pour spécifier le nom de dossier dans lequel stocker les pièces jointes chargées dans le formulaire adaptatif. Le dossier est créé par rapport à la payload. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
