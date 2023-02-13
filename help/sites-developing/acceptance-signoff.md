@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Comme indiqué précédemment, les [tests d’acceptation](/help/sites-developing/planning.md) forment une catégorie de tests conçus spécialement pour vérifier les points suivants :
 
-* le projet remplit les exigences du client ;
+* le projet répond aux exigences du client ;
 * Le client accepte le projet.
 
 Ils doivent être définis par le client et par le chef de projet. Ils revêtent une importance particulière, en ce sens qu’ils sont souvent liés à la facturation finale.
