@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 44f866e1435bd98f7dbe3f4ba8500830075db001
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '7149'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Un administrateur peut configurer un dossier réseau, appelé dossier de contrô
 
 Vous pouvez utiliser l’une des méthodes suivantes pour créer un dossier de contrôle sur le système de fichiers :
 
-* Lors de la configuration des propriétés d’un noeud de configuration du dossier de contrôle, saisissez le chemin d’accès complet du répertoire parent dans la propriété folderPath et ajoutez le nom du dossier de contrôle à créer, comme illustré dans l’exemple suivant : `C:/MyPDFs/MyWatchedFolder`
+* Lors de la configuration des propriétés d’un nœud de configuration du dossier de contrôle, saisissez le chemin d’accès complet du répertoire parent dans la propriété folderPath et ajoutez le nom du dossier de contrôle à créer, comme illustré dans l’exemple suivant : `C:/MyPDFs/MyWatchedFolder`.
 Le 
-`MyWatchedFolder`n’existe pas, AEM Forms tente de créer le dossier au chemin spécifié.
+`MyWatchedFolder` dossier n’existe pas, AEM Forms tente de créer le dossier au chemin spécifié.
 
 * Créez un dossier dans le système de fichiers avant de configurer un point de fin Watched Folder, puis indiquez son chemin d’accès complet dans la propriété folderPath (chemin de fichier). Pour plus d’informations sur la propriété folderPath, voir [Propriétés de dossier de contrôle](#watchedfolderproperties).
 
@@ -76,9 +76,9 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 
    * auteur 
 
-   * publish
+   * publication
 
-   * author, publication
+   * auteur, publication
 
    * publication, auteur
 
@@ -100,8 +100,8 @@ Vous pouvez configurer les propriétés suivantes d’un dossier de contrôle.
 * **excludeFilePattern (chaîne)** : une liste dont les éléments sont séparés par des points-virgules (;) qu’un dossier de contrôle utilise pour déterminer les fichiers et les dossiers à analyser et à sélectionner. Les fichiers ou les dossiers pourvus de ce modèle ne sont pas analysés en vue d’être traités. Ce paramètre est utile lorsque l’entrée est un dossier contenant plusieurs fichiers. Vous pouvez copier le contenu du dossier dans un dossier dont le nom sera choisi par le dossier de contrôle. Ceci empêche le dossier de contrôle de sélectionner un dossier en vue de le traiter avant qu’il ne soit complètement copié dans le dossier d’entrée. La valeur par défaut est « null ».
 Vous pouvez utiliser des [modèles de fichiers](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) pour exclure les types de fichiers suivants :
 
-   * Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Fichiers portant des noms spécifiques ; par exemple, données&#42; exclut les fichiers et les dossiers nommés data1, data2, etc.
+   * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+   * Fichiers portant des noms spécifiques ; par exemple, data&#42; exclurait les fichiers et les dossiers nommés data1, data2, etc.
    * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
       * Données[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
@@ -110,9 +110,9 @@ Vous pouvez utiliser des [modèles de fichiers](../../forms/using/watched-folder
 
 Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (chaîne)** : liste dont les éléments sont séparés par des points-virgules (;) utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Par exemple, si IncludeFilePattern est une entrée&#42;, tous les fichiers et dossiers correspondant à l’entrée&#42; sont ramassées. Cela concerne les fichiers et les dossiers nommés input1, input2, etc. La valeur par défaut est &#42; et indique tous les fichiers et dossiers. Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers suivants :
+* **includeFilePattern (chaîne)** : liste dont les éléments sont séparés par des points-virgules (;) utilisés par le dossier de contrôle pour déterminer les dossiers et les fichiers à analyser et à sélectionner. Ainsi, si l’attribut IncludeFilePattern a la valeur input&#42;, tous les fichiers et les dossiers correspondant à input&#42; sont sélectionnés. Cela concerne les fichiers et les dossiers nommés input1, input2, etc. La valeur par défaut est &#42; et elle désigne tous les fichiers et dossiers. Vous pouvez utiliser des modèles de fichiers pour inclure les types de fichiers suivants :
 
-   * Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+   * Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
    * Fichiers portant des noms spécifiques, par exemple data.&#42; à savoir les fichiers et les dossiers nommés data1, data2, etc.
 
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
@@ -122,9 +122,9 @@ Pour plus d’informations sur les modèles de fichiers, voir [A propos des mod�
       * &#42;.[dD][Aa]&#39;port&#39;
       * &#42;.[Xx][Mm][Ll]
 
-Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime (Long)** : le temps d’attente (en millisecondes) avant de pouvoir analyser un fichier ou un dossier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. La valeur par défaut est 0. Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous avez un fichier volumineux à traiter et que le téléchargement du fichier prend dix minutes, définissez le délai d’attente sur 10.&#42;60 &#42;1 000 millisecondes. Cela évite que le dossier de contrôle analyse le fichier s’il a été créé il y a moins de dix minutes.
+* **waitTime (Long)** : le temps d’attente (en millisecondes) avant de pouvoir analyser un fichier ou un dossier après sa création. Par exemple, si la durée d’attente est de 3 600 000 millisecondes (une heure) et que le fichier a été créé il y a une minute, ce dernier sera sélectionné à l’issue d’un laps de temps de 59 minutes ou plus. La valeur par défaut est 0. Ce paramètre assure la copie intégrale d’un fichier ou d’un dossier dans le dossier d’entrée. Par exemple, si vous devez traiter un fichier volumineux dont le téléchargement dure dix minutes, définissez une durée d’attente de 10&#42;60 &#42;1 000 millisecondes. Cela évite que le dossier de contrôle analyse le fichier s’il a été créé il y a moins de dix minutes.
 * **purgeDuration (Long)** : les fichiers et les sous-dossiers du dossier Résultats sont vidés lorsqu’ils sont plus anciens que cette valeur. Cette valeur est mesurée en jours. Grâce à ce paramètre, le dossier obtenu n’est jamais plein. La valeur -1 jour indique de ne jamais supprimer le dossier result. La valeur par défaut est -1.
 * **resultFolderName (chaîne)** : le dossier dans lequel les résultats enregistrés sont stockés. Si les résultats ne s’affichent pas dans ce dossier, vérifiez le dossier des échecs. Les fichiers en lecture seule ne sont pas traités ; ils sont enregistrés dans le dossier des échecs. Il peut s’agir d’un chemin d’accès vide, relatif ou absolu répondant aux modèles de fichiers suivants :
 
@@ -175,7 +175,7 @@ Pour plus d’informations sur les modèles de fichiers, voir [A propos des mod�
 * **enabled (booléen)** : désactive et active la numérisation d’un dossier de contrôle. Définissez enabled sur True pour commencer à analyser le dossier de contrôle. La valeur par défaut est true.
 * **payloadMapperFilter :** lorsqu’un dossier est configuré comme dossier de contrôle, une structure de dossiers est créée dans le dossier de contrôle. La structure comporte des dossiers pour fournir des entrées, recevoir des sorties (résultats), sauvegarder les données en cas de défaillance, préserver les données pour les processus de longue durée et sauvegarder les données des différentes étapes. La structure de dossiers d’un dossier de contrôle peut servir de charge utile des processus basés sur l’utilisation de Forms. Un mappeur de charge utile vous permet de définir la structure d’une charge utile qui utilise un dossier de contrôle pour l’entrée, la sortie et le traitement. Par exemple, si vous utilisez le mappeur par défaut, celui-ci mappe le contenu du dossier de contrôle avec le dossier [payload]\input and [payload]\output. Deux implémentations de mappeur de charge prêtes à l’emploi sont disponibles. Si vous ne disposez pas d’[une implémentation personnalisée](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter), utilisez l’une des implémentations prêtes à l’emploi :
 
-   * **Mappeur par défaut :** utilisez le mappeur de charge par défaut pour conserver les contenus d’entrée et de sortie des dossiers de contrôle dans des dossiers d’entrée et de sortie distincts dans la charge utile. De plus, dans le chemin d’accès de la payload d’un workflow, utilisez les chemins d’accès [payload]/input/ et [payload]/output pour récupérer et sauvegarder le contenu.
+   * **Mappeur par défaut :** utilisez le mappeur de payload par défaut pour conserver les contenus d’entrée et de sortie des dossiers de contrôle dans des dossiers d’entrée et de sortie distincts dans la payload. De plus, dans le chemin d’accès de la payload d’un workflow, utilisez les chemins d’accès [payload]/input/ et [payload]/output pour récupérer et sauvegarder le contenu.
 
    * **Mappeur de payload basé sur des fichiers simples :** utilisez le mappeur de payload basé sur des fichiers simples pour conserver les contenus d’entrée et de sortie directement dans le dossier de la payload. Tout comme pour le mappeur par défaut, aucune hiérarchie supplémentaire n’est créée.
 
@@ -194,7 +194,7 @@ Ces propriétés sont transmises sous forme de carte inaltérable de type Map&lt
 
 ![Un nœud de configuration du dossier de contrôle possédant des propriétés obligatoires, certaines propriétés facultatives, certains paramètres de configuration](assets/custom-configuration-parameters.png)
 
-Un nœud de configuration du dossier de contrôle possédant des propriétés obligatoires, certaines propriétés facultatives, certains paramètres de configuration.
+Un nœud de configuration du dossier de contrôle possédant des propriétés obligatoires, quelques propriétés facultatives, quelques paramètres de configuration.
 
 #### Variables mutables pour les flux de travaux {#mutable-variables-for-workflows}
 
@@ -273,8 +273,7 @@ Les scripts constituent le code personnalisé conforme ECMAScript écrit dans le
 * **getWatchFolderId** : renvoie l’ID du dossier de contrôle.
 * **getInputMap** : renvoie un mappage de type Map. Les clés de la carte constituent le nom du fichier d’entrée et un objet de document avec le contenu du fichier. Utilisez l’API getinputMap pour lire les fichiers d’entrée.
 * **getConfigParameters** : renvoie un mappage inaltérable de type Map. La carte contient les paramètres de configuration d’un dossier de contrôle.
-* **setResult** : l’implémentation de ContentProcessor
-utilise l’API pour passer le document de sortie au dossier de résultats. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
+* **setResult** : l’implémentation de ContentProcessor utilise l’API pour transmettre le document de sortie au dossier de résultats. Vous pouvez indiquer un nom de fichier de sortie sur l’API setResult. L’API peut choisir d’utiliser ou d’ignorer le fichier fourni en fonction du dossier de sortie ou du modèle de fichier spécifié. Si un modèle de dossier est spécifié, les fichiers de sortie portent des noms comme décrit dans les flux de travaux. Si un modèle de fichier est spécifié, les fichiers de sortie portent des noms comme décrit dans le modèle de fichier.
 
 Le code suivant est un exemple ECMAScript. Il accepte les fichiers d’entrée, copie les fichiers vers un emplacement temporaire et renvoie un objet de document avec le contenu du fichier. Le contenu de l’objet document est enregistré dans le dossier de résultats. Le chemin d’accès physique du dossier result est défini dans le [nœud de configuration du dossier de contrôle](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
 
@@ -567,7 +566,7 @@ La sortie de la première conversion serait placée dans le dossier \path\result
 
 Les administrateurs peuvent indiquer le type du fichier servant à appeler un service. Il est possible d’établir plusieurs modèles de fichier pour chaque dossier de contrôle. Un modèle de fichier peut être du type suivant :
 
-* Fichiers dotés d’extensions de nom de fichier spécifiques ; par exemple, &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+* Fichiers possédant des extensions de nom de fichier particulières, par exemple &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
 * Fichiers portant des noms spécifiques, par exemple data.&#42;
 * Fichiers contenant des expressions composites dans leur nom et leur extension, comme dans les exemples suivants :
 
@@ -594,7 +593,7 @@ Les mappages des paramètres de sortie peuvent également spécifier des modèle
 * %F = nom du fichier source
 * %E = extension du nom du fichier source
 
-Si le modèle de mappage des paramètres de sortie se termine par « File.separator » (qui correspond au séparateur de chemin), un dossier est créé dans lequel le contenu est copié. Si le modèle ne se termine pas par « File.separator », le contenu (fichier ou dossier des résultats) est créé et utilise ce nom.
+Si le modèle de mappage des paramètres de sortie se termine par « File.separator » (qui correspond au séparateur de chemin), un dossier est créé dans lequel le contenu est copié. Si le motif ne se termine pas par « File.separator », le contenu (fichier ou dossier résultant) est créé avec ce nom.
 
 ## Utilisation de PDF Generator avec un dossier de contrôle {#using-pdf-generator-with-a-watched-folder}
 
@@ -643,7 +642,7 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 
 ### Créer un flux de travaux {#create-a-workflow}
 
-1. Ouvrez le flux de travaux AEM UI dans une fenêtre du navigateur.
+1. Ouvrez le workflow AEM UI dans une fenêtre du navigateur.
    <https://[servername>]:&#39;port&#39;/workflow
 
 1. Dans la vue Modèles, cliquez sur **Nouveau**. Dans la boîte de dialogue Nouveau flux de travaux, indiquez le **Titre**, puis cliquez sur **OK**.
@@ -662,7 +661,7 @@ L’ECMAScript utilise normalement l’API createPDF de PDF Generator pour conv
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
-### Configuration du dossier de contrôle {#configure-the-watched-folder}
+### Configurer le dossier de contrôle {#configure-the-watched-folder}
 
 1. Ouvrez CRXDX Lite dans une fenêtre de navigateur. https://&#39;[server]:[port]&#39;/crx/de/
 
@@ -682,4 +681,4 @@ inputProcessorType (chaîne) : le type du processus à démarrer. Dans ce didac
 
 ## Problèmes connus {#watched-folder-known-issues}
 
-Au démarrage d’AEM 6.5 Forms on JEE, les fichiers commencent à être traités avant que JBoss ne démarre complètement et que les fichiers ne soient pas traités. Pour l’éviter, avant de démarrer JBoss, effacez tous les dossiers de contrôle.
+Au démarrage d’AEM 6.5 Forms on JEE, les fichiers commencent à être traités avant que JBoss ne démarre complètement et que les fichiers ne soient pas traités. Pour éviter cela, effacez tous les dossiers de contrôle avant de démarrer JBoss.
