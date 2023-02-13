@@ -1,5 +1,5 @@
 ---
-title: Importation et exportation des fichiers de configuration de PDF Generator
+title: Importer et exporter des fichiers de configuration de PDF Generator
 seo-title: Importing and exporting PDF Generator configuration files
 description: Découvrez comment importer et exporter des fichiers de configuration PDF Generator.
 seo-description: Learn how to import and export PDF Generator configuration files.
@@ -11,20 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '378'
 ht-degree: 100%
 
 ---
 
-# Importation et exportation des fichiers de configuration de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
+# Importer et exporter des fichiers de configuration de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
 
 Le fichier de configuration contient les informations de conversion de PDF Generator, y compris les paramètres de PDF, de type de fichier et de sécurité.
 
 >[!NOTE]
 >
->vous ne pouvez pas modifier le paramètre de délai d’expiration de PDF Generator en important un fichier native2pdfconfig.xml personnalisé. Le paramètre de délai d’expiration dans ce fichier est donné à titre purement indicatif et affiche le paramètre actuel dans PDF Generator. Pour le modifier, consultez la section Définition des paramètres de performance de PDF Generator dans [Installation et déploiement d’AEM forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63_fr).
+>vous ne pouvez pas modifier le paramètre de délai d’expiration de PDF Generator en important un fichier native2pdfconfig.xml personnalisé. Le paramètre de délai d’expiration dans ce fichier est donné à titre purement indicatif et affiche le paramètre actuel dans PDF Generator. Pour le réglage du délai d’expiration, reportez-vous à « Réglage des paramètres de performance de PDF Generator » dans [Installation et déploiement d’AEM Forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63_fr).
 
 ## Exportation du fichier de configuration {#export-your-current-configuration-file}
 
