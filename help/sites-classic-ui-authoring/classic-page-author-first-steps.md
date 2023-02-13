@@ -1,5 +1,5 @@
 ---
-title: Premières étapes pour les auteurs
+title: Premières étapes pour les auteurs et autrices
 seo-title: First Steps for Authors
 description: Cette section vous donne un aperçu des tâches principales que vous exécuterez lorsque vous commencerez à créer du contenu avec Adobe Experience Manager (AEM).
 seo-description: This section gives you an overview of the main tasks that you will be using when starting to author content with Adobe Experience Manager (AEM).
@@ -11,13 +11,13 @@ topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '416'
 ht-degree: 100%
 
 ---
 
-# Premières étapes pour les auteurs{#first-steps-for-authors}
+# Premières étapes pour les auteurs et autrices{#first-steps-for-authors}
 
 Cette section vous donne un aperçu des tâches principales que vous exécuterez lorsque vous [commencerez à créer du contenu](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) avec Adobe Experience Manager (AEM).
 
