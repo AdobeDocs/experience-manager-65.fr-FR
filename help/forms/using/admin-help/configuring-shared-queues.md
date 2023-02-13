@@ -1,5 +1,5 @@
 ---
-title: Configuration des files d’attente partagées
+title: Configurer les files d’attente partagées
 seo-title: Configuring Shared Queues
 description: Les files d’attente partagées vous permettent de configurer et de gérer efficacement les files d’attente d’utilisateur. Découvrez comment configurer les files d’attente partagées.
 seo-description: Shared Queues allow you to configure and manage user queues effectively. Learn how to configure shared queues.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
 ht-degree: 100%
 
 ---
 
-# Configuration des files d’attente partagées{#configuring-shared-queues}
+# Configurer les files d’attente partagées{#configuring-shared-queues}
 
 Les files d’attente partagées vous permettent de configurer et de gérer efficacement les files d’attente d’utilisateur. Une file d’attente d’utilisateur correspond à l’ensemble des tâches affectées à un utilisateur. Voir [Listes Tâches](https://help.adobe.com/fr_FR/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) pour plus d’informations. Vous avez la possibilité d’affecter, de désaffecter et de réaffecter les files d’attente d’utilisateur en fonction des besoins de votre société. Les files d’attente partagées peuvent être gérées de deux manières différentes :
 
@@ -37,7 +37,7 @@ Lorsqu’elles sont partagées, ces tâches peuvent être exécutées par l’ut
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>L’espace de travail Flex est obsolète pour la version d’AEM Forms.
 
 ### Configuration de l’accès à une file d’attente d’utilisateur sélectionnée {#configuring-access-to-a-selected-user-queue}
 
@@ -65,7 +65,7 @@ Une fois affectées, ces tâches peuvent être exécutées par l’utilisateur �
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>L’espace de travail Flex est obsolète pour la version d’AEM Forms.
 
 ### Accorder l’accès à une file d’attente d’utilisateur sélectionnée {#granting-access-to-a-selected-user-queue}
 
