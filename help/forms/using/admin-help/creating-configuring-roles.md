@@ -1,5 +1,5 @@
 ---
-title: Création et configuration des rôles
+title: Créer et configurer des rôles
 seo-title: Creating and configuring roles
 description: Découvrez comment associer des utilisateurs et des groupes à des rôles faisant partie de la base de données User Management. Vous pouvez également créer, modifier et supprimer des rôles.
 seo-description: Learn how to associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2526'
 ht-degree: 100%
 
 ---
 
-# Création et configuration des rôles{#creating-and-configuring-roles}
+# Créer et configurer des rôles{#creating-and-configuring-roles}
 
 Les pages Web de User Management vous permettent d’associer des utilisateurs et des groupes à des rôles faisant partie de la base de données User Management. Vous pouvez également créer, modifier et supprimer des rôles.
 
@@ -97,7 +97,7 @@ Les rôles par défaut supplémentaires suivants peuvent également être inclus
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>L’espace de travail Flex est obsolète pour la version d’AEM Forms.
 
 ## Création d’un rôle {#create-a-role}
 
