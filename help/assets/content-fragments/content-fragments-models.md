@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 source-git-commit: 6b9eb1a6df7cc4a8afab1c83d93d8a53bd94f6f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2332'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -19,8 +19,8 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 1. [Activez la fonctionnalité Modèle de fragment de contenu pour votre instance.](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
-1. [Activation des modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu
-1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources](#allowing-content-fragment-models-assets-folder) en configurant des **stratégies**.
+1. [Activez vos modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
+1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **stratégies**.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
