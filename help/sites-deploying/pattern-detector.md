@@ -1,5 +1,5 @@
 ---
-title: Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
+title: Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
 seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Découvrez comment utiliser l’outil de détection des motifs pour évaluer la complexité de votre mise à niveau.
 seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
@@ -13,13 +13,13 @@ docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
 ht-degree: 100%
 
 ---
 
-# Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
+# Évaluer la complexité de la mise à niveau à l’aide de l’outil de détection des motifs
 
 ## Présentation {#overview}
 
