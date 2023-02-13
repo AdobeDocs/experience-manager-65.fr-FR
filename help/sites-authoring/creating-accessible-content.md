@@ -3,9 +3,9 @@ title: Création de contenu accessible pour Adobe Experience Manager (conformi
 description: Utilisez AEM pour rendre le contenu Web accessible et utilisable par les personnes en situation de handicap
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '13950'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -941,7 +941,7 @@ Ce critère de réussite a pour but d’aider une personne à identifier l’él
 
 Il doit être possible pour une personne d’identifier, parmi plusieurs, l’élément ayant reçu le focus au clavier. S’il n’apparaît à l’écran qu’un seul contrôle activable au clavier, le critère de réussite est satisfait, car la conception visuelle ne présente qu’un seul élément activable à l’aide du clavier.
 
-Lorsque le critère de réussite indique &quot;mode de fonctionnement&quot;, il s’agit de tenir compte des plateformes qui peuvent ne pas toujours afficher un indicateur de focus. Ce critère de réussite s’applique, car, dans la plupart des cas, il n’existe qu’un seul mode de fonctionnement.
+L’indication « mode de fonctionnement » du critère de réussite concerne la prise en compte des plateformes qui n’affichent pas toujours un indicateur de focus. Ce critère de réussite s’applique, car, dans la plupart des cas, il n’existe qu’un seul mode de fonctionnement.
 
 #### Comment procéder – Focus visible (2.4.7) {#how-to-meet-focus-visible}
 
@@ -1010,7 +1010,7 @@ Si une page applique ce critère de réussite, alors :
 
 #### Comment procéder – Langue d’un passage (3.1.2) {#how-to-meet-language-of-parts}
 
-L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 &quot;de&quot;) peut être affichée comme suit :
+L’attribut `lang` peut être utilisé pour identifier les modifications dans la langue du contenu. Par exemple, une citation en allemand (code ISO 639-1 « de ») peut s’afficher comme suit :
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
