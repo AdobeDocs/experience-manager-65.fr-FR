@@ -6,7 +6,7 @@ role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1874'
 ht-degree: 100%
 
@@ -79,7 +79,7 @@ Si vous utilisez cette option, les ressources à traduire sont copiées dans la 
 
 1. Pour accéder au dossier, sélectionnez la copie de langue, puis cliquez sur **[!UICONTROL Afficher dans Assets]**.
 
-   ![affichage-in-assets](assets/reveal-in-assets.png)
+   ![reveal-in-assets](assets/reveal-in-assets.png)
 
 1. Accédez à la console Projets. Le dossier de traduction est copié dans la console Projets.
 
