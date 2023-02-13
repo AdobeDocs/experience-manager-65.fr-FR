@@ -1,5 +1,5 @@
 ---
-title: Mise à niveau du code et des personnalisations
+title: Mettre à jour le code et les personnalisations
 seo-title: Upgrading Code and Customizations
 description: En savoir plus sur la mise à jour de code personnalisé dans AEM.
 seo-description: Learn more about upgrading custom code in AEM.
@@ -14,13 +14,13 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2192'
 ht-degree: 100%
 
 ---
 
-# Mise à niveau du code et des personnalisations{#upgrading-code-and-customizations}
+# Mettre à jour le code et les personnalisations{#upgrading-code-and-customizations}
 
 En planifiant une mise à niveau, les parties suivantes de l’implémentation doivent être étudiées et résolues.
 
@@ -101,7 +101,7 @@ Toutes les personnalisations apportées à l’environnement de création d’AE
 
 Il est courant d’étendre la fonctionnalité prête à l’emploi d’AEM en superposant des nœuds et/ou des fichiers sous /libs avec d’autres nœuds sous /apps. Ces recouvrementsdoivent être suivis dans le contrôle de version et être testés avec la version cible d’AEM. Si un fichier (que ce soit, JS, JSP ou HTL) est superposé, il est recommandé de laisser un commentaire sur la fonctionnalité qui a été améliorée pour simplifier le test de régression de la version cible d’AEM. Vous trouverez plus d’informations sur les recouvrements en général[ ici](/help/sites-developing/overlays.md). Des instructions sur les recouvremets spécifiques d’AEM figurent ci-dessous.
 
-### Mise à niveau des formulaires de recherche personnalisée {#upgrading-custom-search-forms}
+### Mettre à niveau les formulaires de recherche personnalisés {#upgrading-custom-search-forms}
 
 Les facettes de la recherche personnalisée requièrent certains réglages manuels après la mise à niveau pour fonctionner correctement. Pour en savoir plus, consultez la section [Mise à niveau des formulaires de recherche personnalisée](/help/sites-deploying/upgrading-custom-search-forms.md).
 
