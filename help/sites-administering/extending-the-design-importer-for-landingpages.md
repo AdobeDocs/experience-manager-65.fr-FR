@@ -533,7 +533,7 @@ Vous trouverez dans le tableau ci-dessous une brève description des propriété
 >`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Et vous devez remplacer >`CQ_DESIGN_PATH` par `VIPURL` dans le motif de recherche, celui-ci doit se présenter comme suit :
-`/\* *VIPURL *\*/ *(['"])`
+>`/\* *VIPURL *\*/ *(['"])`
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -598,4 +598,4 @@ avec une feuille de style CSS appliquée à la classe `box`, comme suit :
 ```
 
 >[!NOTE]
-Les concepteurs doivent également tenir compte du fait que l’importateur ne reconnaît que le code placé à l’intérieur de la balise **id=cqcanvas**, autrement la conception n’est pas conservée.
+>Les concepteurs doivent également tenir compte du fait que l’importateur ne reconnaît que le code placé à l’intérieur de la balise **id=cqcanvas**, autrement la conception n’est pas conservée.

@@ -59,7 +59,6 @@ L’ordre de priorité est (dans l’ordre décroissant) `/conf`, `/apps`, `/lib
 >1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
 >
 >1. Apportez les modifications désirées dans `/apps`.
-
 >
 
 

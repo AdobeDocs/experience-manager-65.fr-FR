@@ -49,7 +49,7 @@ La nouvelle mise en œuvre a été conçue pour distinguer les éléments d’au
 
 Aussi, une arborescence donnée peut être marquée par une exigence d’authentification sans modifier la configuration de permission effective. Les combinaisons et les résultats sont répertoriés dans la section [Combinaison des stratégies de combinaison de CUG et de l’exigence d’authentification](/help/sites-administering/closed-user-groups.md#combining-cug-policies-and-the-authentication-requirement).
 
-##  du commerce électronique {#overview}
+## du commerce électronique {#overview}
 
 ### Autorisation : restriction de l’accès en lecture {#authorization-restricting-read-access}
 

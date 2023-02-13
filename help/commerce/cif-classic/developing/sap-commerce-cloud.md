@@ -226,7 +226,6 @@ N’importe quelle ressource de produit peut être représentée par une `Produc
 >1. `size`
 >
 >1. plus un.
-
 >
 >Cette autre variante est sélectionnée par l’intermédiaire de la propriété `variationAxis` de la référence du produit (généralement `color` pour Geometrixx Outdoors).
 
@@ -414,7 +413,7 @@ public class AxisFilter implements VariantFilter {
 * Le panier est détenu par `CommerceSession:` :
 
    * `CommerceSession` effectue les ajouts/suppressions/etc.
-   * `CommerceSession` effectue également les différents calculs sur le panier. ``
+   * `CommerceSession` effectue également les différents calculs sur le panier. &grave;&grave;
 
 * Bien que n’étant pas directement associé au panier, `CommerceSession` doit également fournir des informations de prix de catalogue (puisqu’il gère les prix).
 

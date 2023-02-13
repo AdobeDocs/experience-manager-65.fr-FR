@@ -176,7 +176,6 @@ Pour insérer une personnalisation :
    >
    >* Les champs de contexte disponibles correspondent à la dimension cible de **Profils** dans Adobe Campaign.
    >* Reportez-vous à la section [Liaison d’une page AEM à un e-mail Adobe Campaign](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
-
    >
    >**Pour Adobe Campaign Classic :**
    >
@@ -235,7 +234,7 @@ Dans Adobe Campaign Classic :
 ![chlimage_1-34](assets/chlimage_1-34a.png)
 
 >[!NOTE]
-Le contenu non approuvé peut être synchronisé avec une diffusion dans Adobe Campaign, mais la diffusion ne peut pas être exécutée. Seul le contenu approuvé peut être envoyé via les diffusions Adobe Campaign.
+>Le contenu non approuvé peut être synchronisé avec une diffusion dans Adobe Campaign, mais la diffusion ne peut pas être exécutée. Seul le contenu approuvé peut être envoyé via les diffusions Adobe Campaign.
 
 ## Liaison d’AEM à Adobe Campaign Standard et à Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
@@ -258,7 +257,7 @@ Cela vous permet de diffuser le contenu. Grâce au code affiché sur la page, vo
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
-Si une newsletter est liée à plusieurs diffusions, le nombre de diffusions liées s’affiche.
+>Si une newsletter est liée à plusieurs diffusions, le nombre de diffusions liées s’affiche.
 
 Pour lier une page créée dans AEM à un e-mail Adobe Campaign, suivez les étapes suivantes :
 
@@ -273,7 +272,7 @@ Pour lier une page créée dans AEM à un e-mail Adobe Campaign, suivez les ét
 1. Pour accéder à la liste de contenu disponible dans AEM, sélectionnez **Lier avec un contenu Adobe Experience Manager** dans la barre d’outils.
 
    >[!NOTE]
-   Si l’option **Lier avec un contenu Adobe Experience Manager** ne s’affiche pas dans la barre d’actions, vérifiez que le **mode de modification du contenu** est configuré correctement sur **Adobe Experience Manager** dans les propriétés d’e-mail.
+   >Si l’option **Lier avec un contenu Adobe Experience Manager** ne s’affiche pas dans la barre d’actions, vérifiez que le **mode de modification du contenu** est configuré correctement sur **Adobe Experience Manager** dans les propriétés d’e-mail.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -287,7 +286,7 @@ Pour lier une page créée dans AEM à un e-mail Adobe Campaign, suivez les ét
    * Tout contenu déjà associé à une diffusion.
 
    >[!NOTE]
-   Par défaut, le contenu déjà synchronisé avec la diffusion est masqué. Cependant, vous pouvez l’afficher et l’utiliser. Par exemple, si vous souhaitez utiliser le contenu comme modèle pour plusieurs diffusions.
+   >Par défaut, le contenu déjà synchronisé avec la diffusion est masqué. Cependant, vous pouvez l’afficher et l’utiliser. Par exemple, si vous souhaitez utiliser le contenu comme modèle pour plusieurs diffusions.
 
    Lorsque le courrier électronique est lié à du contenu d’AEM, le contenu ne peut pas être modifié dans Adobe Campaign.
 
@@ -295,9 +294,9 @@ Pour lier une page créée dans AEM à un e-mail Adobe Campaign, suivez les ét
 1. Exécutez la diffusion du courrier électronique. Lors de l’analyse de la diffusion, la version la plus récente du contenu AEM est extraite.
 
    >[!NOTE]
-   Si le contenu est mis à jour dans AEM alors qu’il est lié à un courrier électronique, il est mis à jour automatiquement dans Adobe Campaign lors de l’analyse. La synchronisation peut également être exécutée manuellement en utilisant l’option **Actualiser le contenu Adobe Experience Manager** dans la barre d’actions de contenu.
-   Vous pouvez annuler la liaison entre un courrier électronique et du contenu AEM à l’aide de **Supprimer la liaison avec le contenu Adobe Experience Manager** dans la barre d’actions de contenu. Ce bouton n’est disponible que si du contenu est déjà lié à la diffusion. Pour lier un autre contenu à une diffusion, vous devez supprimer la liaison de contenu actuel avant de pouvoir établir une nouvelle liaison.
-   Lorsque la liaison est supprimée, le contenu local est conservé et est modifiable dans Adobe Campaign. Si vous liez à nouveau le contenu après l’avoir modifié, toutes les modifications seront perdues.
+   >Si le contenu est mis à jour dans AEM alors qu’il est lié à un courrier électronique, il est mis à jour automatiquement dans Adobe Campaign lors de l’analyse. La synchronisation peut également être exécutée manuellement en utilisant l’option **Actualiser le contenu Adobe Experience Manager** dans la barre d’actions de contenu.
+   >Vous pouvez annuler la liaison entre un courrier électronique et du contenu AEM à l’aide de **Supprimer la liaison avec le contenu Adobe Experience Manager** dans la barre d’actions de contenu. Ce bouton n’est disponible que si du contenu est déjà lié à la diffusion. Pour lier un autre contenu à une diffusion, vous devez supprimer la liaison de contenu actuel avant de pouvoir établir une nouvelle liaison.
+   >Lorsque la liaison est supprimée, le contenu local est conservé et est modifiable dans Adobe Campaign. Si vous liez à nouveau le contenu après l’avoir modifié, toutes les modifications seront perdues.
 
 ### Synchronisation du contenu créé dans AEM avec une diffusion Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
@@ -315,9 +314,9 @@ Dans AEM, si une newsletter est associée à une diffusion unique, le code de di
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
-Si la newsletter est liée à différentes diffusions, le nombre de diffusions liées (mais pas chaque ID) s’affiche.
-[!NOTE]
-L’étape du workflow **Publication dans Adobe Campaign** est obsolète dans AEM 6.1. Cette étape faisait partie de l’intégration d’AEM 6.0 à Adobe Campaign et n’est plus nécessaire.
+>Si la newsletter est liée à différentes diffusions, le nombre de diffusions liées (mais pas chaque ID) s’affiche.
+>[!NOTE]
+>L’étape du workflow **Publication dans Adobe Campaign** est obsolète dans AEM 6.1. Cette étape faisait partie de l’intégration d’AEM 6.0 à Adobe Campaign et n’est plus nécessaire.
 
 Pour synchroniser le contenu créé dans AEM avec une diffusion à partir d’Adobe Campaign :
 
@@ -328,7 +327,7 @@ Pour synchroniser le contenu créé dans AEM avec une diffusion à partir d’Ad
 1. Pour accéder à la liste des contenus disponibles dans AEM, sélectionnez **Synchroniser** dans la barre d’outils.
 
    >[!NOTE]
-   Si l’option **Synchroniser** ne s’affiche pas dans la barre d’outils de diffusion, vérifiez que le champ **Mode de modification du contenu** est configuré correctement dans **AEM** en sélectionnant **Propriétés** > **Avancé**.
+   >Si l’option **Synchroniser** ne s’affiche pas dans la barre d’outils de diffusion, vérifiez que le champ **Mode de modification du contenu** est configuré correctement dans **AEM** en sélectionnant **Propriétés** > **Avancé**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -342,7 +341,7 @@ Pour synchroniser le contenu créé dans AEM avec une diffusion à partir d’Ad
    * Tout contenu déjà associé à une diffusion.
 
    >[!NOTE]
-   Par défaut, le contenu déjà synchronisé avec la diffusion est masqué. Cependant, vous pouvez l’afficher et l’utiliser. Par exemple, si vous souhaitez utiliser le contenu comme modèle pour plusieurs diffusions.
+   >Par défaut, le contenu déjà synchronisé avec la diffusion est masqué. Cependant, vous pouvez l’afficher et l’utiliser. Par exemple, si vous souhaitez utiliser le contenu comme modèle pour plusieurs diffusions.
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
@@ -351,9 +350,9 @@ Pour synchroniser le contenu créé dans AEM avec une diffusion à partir d’Ad
 1. Exécutez la diffusion. Lors de l’analyse de la diffusion, la version la plus récente du contenu AEM est extraite.
 
    >[!NOTE]
-   * Une fois la diffusion et le contenu synchronisés, le contenu de la diffusion dans Adobe Campaign est en lecture seule. L’objet du courrier électronique et le contenu ne peuvent plus être modifiés.
-   * Si le contenu est mis à jour dans AEM lorsqu’il est lié à une diffusion dans Adobe Campaign, il est mis à jour automatiquement dans la diffusion lors de l’analyse de la diffusion. La synchronisation peut également être exécutée manuellement à l’aide du bouton **Actualiser le contenu maintenant**.
-   * Vous pouvez annuler la synchronisation entre une diffusion et le contenu d’AEM à l’aide du bouton **Désynchroniser**. Cette opération n’est disponible que si un contenu est déjà synchronisé avec la diffusion. Pour synchroniser un autre contenu avec une diffusion, vous devez annuler la synchronisation de contenu actuelle avant de pouvoir établir une nouvelle liaison.
-   * Si le contenu local est désynchronisé, il est conservé et est modifiable dans Adobe Campaign. Si vous resynchronisez le contenu après l’avoir modifié, vous perdrez toutes les modifications.
-   * Pour les diffusions récurrentes et continues, la synchronisation avec le contenu AEM est désactivée chaque fois que la diffusion est exécutée.
+   >* Une fois la diffusion et le contenu synchronisés, le contenu de la diffusion dans Adobe Campaign est en lecture seule. L’objet du courrier électronique et le contenu ne peuvent plus être modifiés.
+   >* Si le contenu est mis à jour dans AEM lorsqu’il est lié à une diffusion dans Adobe Campaign, il est mis à jour automatiquement dans la diffusion lors de l’analyse de la diffusion. La synchronisation peut également être exécutée manuellement à l’aide du bouton **Actualiser le contenu maintenant**.
+   >* Vous pouvez annuler la synchronisation entre une diffusion et le contenu d’AEM à l’aide du bouton **Désynchroniser**. Cette opération n’est disponible que si un contenu est déjà synchronisé avec la diffusion. Pour synchroniser un autre contenu avec une diffusion, vous devez annuler la synchronisation de contenu actuelle avant de pouvoir établir une nouvelle liaison.
+   >* Si le contenu local est désynchronisé, il est conservé et est modifiable dans Adobe Campaign. Si vous resynchronisez le contenu après l’avoir modifié, vous perdrez toutes les modifications.
+   >* Pour les diffusions récurrentes et continues, la synchronisation avec le contenu AEM est désactivée chaque fois que la diffusion est exécutée.
 

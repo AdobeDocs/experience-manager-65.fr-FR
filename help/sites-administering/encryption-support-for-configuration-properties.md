@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Prise en charge du chiffrement des propriétés de configuration{#encryption-support-for-configuration-properties}
 
-##  du commerce électronique {#overview}
+## du commerce électronique {#overview}
 
 Cette fonction permet à toutes les propriétés de configuration OSGi d’être stockées sous une forme chiffrée et protégée, préférable au texte en clair. Le formulaire dans l’IU de la console Web permet de créer du texte chiffré à partir de texte en clair à l’aide de la clé principale de chiffrement du système.
 

@@ -302,14 +302,14 @@ Pour créer un modèle d’après un modèle existant :
    >[!NOTE]
    >
    >Les modifications apportées au nœud **/apps/&lt;site Web>/templates/&lt;nom-modèle>** sont répercutées sur l’instance du modèle (comme dans la liste de sélection).
-   Les modifications apportées au nœud **/apps/&lt;site Web>/components/&lt;nom-composant>** sont répercutées sur la page de contenu créée lorsque le modèle est utilisé.
+   >Les modifications apportées au nœud **/apps/&lt;site Web>/components/&lt;nom-composant>** sont répercutées sur la page de contenu créée lorsque le modèle est utilisé.
 
    Vous pouvez à présent créer une page sur votre site Web en vous servant du nouveau modèle.
 
 >[!NOTE]
-La bibliothèque cliente de l’éditeur suppose que l’espace de noms `cq.shared` existe dans les pages de contenu. Si cet élément est absent, l’erreur JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` est renvoyée.
-`cq.shared` est inclus dans tous les exemples de pages de contenu. Par conséquent, tout contenu basé sur ces pages inclut automatiquement `cq.shared`. Toutefois, si vous décidez de créer vos propres pages de contenu à partir de zéro, sans vous servir de l’exemple de contenu, vous devez veiller à inclure l’espace de noms `cq.shared`.
-Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
+>La bibliothèque cliente de l’éditeur suppose que l’espace de noms `cq.shared` existe dans les pages de contenu. Si cet élément est absent, l’erreur JavaScript `Uncaught TypeError: Cannot read property 'shared' of undefined` est renvoyée.
+>`cq.shared` est inclus dans tous les exemples de pages de contenu. Par conséquent, tout contenu basé sur ces pages inclut automatiquement `cq.shared`. Toutefois, si vous décidez de créer vos propres pages de contenu à partir de zéro, sans vous servir de l’exemple de contenu, vous devez veiller à inclure l’espace de noms `cq.shared`.
+>Pour plus d’informations, voir [Utilisation des bibliothèques côté client](/help/sites-developing/clientlibs.md).
 
 ## Mise à disposition d’un modèle existant {#making-an-existing-template-available}
 

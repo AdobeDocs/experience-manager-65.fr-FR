@@ -52,7 +52,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    >Vous pouvez exécuter les étapes 1 à 4 pour créer un nouveau conteneur de configuration et créer une configuration [!DNL Adobe Sign] dans le conteneur ou utiliser le dossier `global` dans **Outils** ![marteau](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. Si vous créez la configuration dans le nouveau conteneur de configuration, veillez à spécifier le nom du conteneur dans le champ **[!UICONTROL Conteneur de configuration]** lorsque vous créez un formulaire adaptatif.
 
    >[!NOTE]
-   Vérifiez que l’URL de la page de configuration des services cloud commence par **HTTPS**. Si ce n’est pas le cas, [activez SSL](/help/sites-administering/ssl-by-default.md) pour le serveur AEM [!DNL Forms]
+   >Vérifiez que l’URL de la page de configuration des services cloud commence par **HTTPS**. Si ce n’est pas le cas, [activez SSL](/help/sites-administering/ssl-by-default.md) pour le serveur AEM [!DNL Forms]
 
 1. Sur la page de configuration, appuyez sur **[!UICONTROL Créer]** pour créer [!DNL Adobe Sign] une configuration dans AEM [!DNL Forms].
 1. Dans l’onglet **[!UICONTROL Généralités]** de la page **[!UICONTROL Créer une configuration Adobe Sign]**, spécifiez un **[!UICONTROL Nom]** de configuration et appuyez sur **[!UICONTROL Suivant]**. Vous avez la possibilité d’indiquer un titre et de rechercher et de sélectionner une vignette pour la configuration.
@@ -73,7 +73,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    Si vous créez une autre configuration [!DNL Adobe Sign] pour une fonctionnalité ou un composant Adobe Experience Manager, assurez-vous que toutes les configurations cloud de [!DNL Adobe Sign] pointent vers le même fragment.
 
    >[!NOTE]
-   Gardez la page **Créer une configuration Adobe Sign** ouverte. Ne la fermez pas. Vous pouvez récupérer l’**ID client** et le **secret client** après la configuration des paramètres OAuth pour l’application [!DNL Adobe Sign] comme décrit dans les étapes à venir.
+   >Gardez la page **Créer une configuration Adobe Sign** ouverte. Ne la fermez pas. Vous pouvez récupérer l’**ID client** et le **secret client** après la configuration des paramètres OAuth pour l’application [!DNL Adobe Sign] comme décrit dans les étapes à venir.
 
 
 1. Configurez les paramètres OAuth pour l’application [!DNL Adobe Sign] :
@@ -107,7 +107,7 @@ Une fois les conditions préalables en place, procédez comme suit pour configur
    Vous pouvez modifier la valeur du partitionnement de base de données. Redémarrez le serveur pour pouvoir utiliser la nouvelle valeur pour le partitionnement de base de données.
 
    >[!NOTE]
-   Assurez-vous que les configurations des instances d’auteur et de publication pointent vers la même partition. Si vous créez plusieurs configurations Adobe Sign pour une organisation, assurez-vous que toutes utilisent la même partition.
+   >Assurez-vous que les configurations des instances d’auteur et de publication pointent vers la même partition. Si vous créez plusieurs configurations Adobe Sign pour une organisation, assurez-vous que toutes utilisent la même partition.
 
 1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. Dans l’onglet **[!UICONTROL Paramètres]**, spécifiez l’**ID client** (également appelé ID de l’application) et le **secret client**. Utilisez l’[ID client et le secret client de l’application Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) créés pour AEM Forms.
 

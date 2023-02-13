@@ -267,10 +267,10 @@ Si vous disposez de plusieurs configurations, Experience Manager affiche la [co
 >* Lorsque l’[aperçu sécurisé est activé](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), les ressources publiées et non publiées sur Dynamic Media Classic apparaissent dans le navigateur de contenu de Dynamic Media Classic.
 >* Si vous ne voyez pas **[!UICONTROL Dynamic Media Classic]** ou l’icône **[!UICONTROL S7]** dans les options du navigateur de contenu, vous devez [configurer Dynamic Media Classic pour qu’il fonctionne avec Experience Manager](/help/sites-administering/scene7.md).
 >* Pour la vidéo, le navigateur de contenu Dynamic Media Classic prend en charge les éléments suivants :
-   >
-   >   * Les visionneuses de vidéos adaptatives : il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
-   >   * Vidéo MP4 unique
-   >   * Vidéo F4V unique
+>
+>   * Les visionneuses de vidéos adaptatives : il s’agit de conteneurs de tous les rendus vidéo requis pour lire la vidéo sans difficultés sur plusieurs écrans.
+>   * Vidéo MP4 unique
+>   * Vidéo F4V unique
 
 
 ### Parcours du contenu dans l’interface utilisateur optimisée pour les écrans tactiles {#browsing-content-in-the-touch-optimized-ui}

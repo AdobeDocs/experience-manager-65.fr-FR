@@ -74,6 +74,7 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
    * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
+
          [Prévisualisation de vidéos](managing-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](previewing-assets.md)
          [Affichage des rendus vidéo](video-renditions.md)
          [Gestion des rendus vidéo](manage-assets.md#managing-renditions)
@@ -83,9 +84,11 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
    * Utilisation des métadonnées vidéo
 
       * Affichez les propriétés d’un rendu vidéo codé telles que la fréquence d’image, le débit vidéo et audio et le codec :
+
          [Affichage des propriétés de rendu vidéo](video-renditions.md)
 
       * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
+
          [Modification des propriétés vidéo](manage-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](metadata.md)
@@ -111,9 +114,11 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos dans vos pages web.
 
       * Intégrez une vidéo à l’aide d’une URL :
+
          [Liaison d’URL à votre application web](linking-urls-to-yourwebapplication.md).
 
       * Intégrez une vidéo à l’aide du code intégré dans la page web :
+
          [Incorporation de la visionneuse de vidéos dans une page web](embed-code.md).
    * [Publication de vidéos sur YouTube](#publishing-videos-to-youtube).
    * [Génération de rapports vidéo](#viewing-video-reports).
@@ -875,7 +880,6 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >    * Configuration de la file d’attente des tâches Apache Sling
    >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
    >    * File d’attente des délais d’attente des processus Granite
-
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -910,7 +914,6 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >    * Configuration de la file d’attente des tâches Apache Sling
    >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
    >    * File d’attente des délais d’attente des processus Granite
-
    >
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
@@ -1071,6 +1074,7 @@ Utilisez le [guide de référence des visionneuses Dynamic Media](https://exper
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+
    L’objet appMeasurementBridge dispose d’une fonction de suivi intégrée. Vous pouvez toutefois fournir votre propre fonction pour prendre en charge plusieurs systèmes de suivi ou d’autres fonctionnalités.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->

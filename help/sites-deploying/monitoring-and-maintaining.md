@@ -300,6 +300,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
       Par exemple, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Type : `sling:OsgiConfig`
+
    >[!NOTE]
    >
    >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<identifier>` unique.
@@ -394,6 +395,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
       Où `<identifier>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information). Par exemple, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Type : `sling:OsgiConfig`
+
    >[!NOTE]
    >
    >Bien que cela ne constitue pas une exigence technique, il est recommandé de rendre `<identifier>` unique.
@@ -427,13 +429,11 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >
    >* de taille maximale de fichier
    >* ou de planification heure/date
-
    >
    >pour indiquer quand un nouveau fichier sera créé (et le fichier existant renommé selon le modèle de nom). 
    >
    >* Une taille maximale peut être spécifiée par un nombre. Si aucune unité de taille n’est donnée, il s’agit du nombre d’octets, ou vous pouvez ajouter l’une des unités de taille : `KB`, `MB` ou `GB` (la casse est ignorée).
    >* Une planification heure/date peut être spécifiée sous la forme d’un motif `java.util.SimpleDateFormat`. Cela définit le délai au bout duquel le fichier subit une rotation ; de même que le suffixe ajouté au fichier pivoté (pour identification). 
-
    >
    >La valeur par défaut est de yyyy-MM-dd (pour la rotation quotidienne du journal).
    >
@@ -450,8 +450,8 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
    >Remarque : Lorsque vous spécifiez une heure/date :
    >
    >1. vous devez placer le texte littéral « escape » dans une paire de guillemets simples (’ ’) ;
-      >
-      >    cela permet d’éviter que certains caractères ne soient interprétés comme des lettres majuscules.
+   >
+   >    cela permet d’éviter que certains caractères ne soient interprétés comme des lettres majuscules.
    >
    >1. Utilisez uniquement les caractères autorisés pour un nom de fichier valide n’importe où dans l’option.
 

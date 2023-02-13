@@ -656,7 +656,7 @@ Pour plus de détails sur la comparaison entre TarMK et MongoMK, voir [Déploiem
 >
 >Les chiffres présentés ci-dessous ont été normalisés en prenant 1 comme ligne de base et ne représentent pas les chiffres de débit réels.
 
-###  Caractéristiques techniques du scénario 1 {#scenario-technical-specifications}
+### Caractéristiques techniques du scénario 1 {#scenario-technical-specifications}
 
 <table>
  <tbody>

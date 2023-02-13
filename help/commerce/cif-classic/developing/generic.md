@@ -129,7 +129,6 @@ N’importe quelle ressource de produit peut être représentée par une `Produc
 >
 >1. `size`
 >1. plus un.
-
 >
 >   Cette autre variante est sélectionnée par l’intermédiaire de la propriété `variationAxis` de la référence du produit (généralement `color` pour Geometrixx Outdoors).
 

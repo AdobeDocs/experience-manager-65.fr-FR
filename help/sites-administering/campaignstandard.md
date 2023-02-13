@@ -198,7 +198,7 @@ Vous avez configuré la réplication sur l’instance de publication AEM afin q
 Vous avez configuré l’externaliseur et Adobe Campaign peut désormais accéder à votre contenu.
 
 >[!NOTE]
-L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou sur un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’afficheront pas dans la console Adobe Campaign.
+>L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou sur un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’afficheront pas dans la console Adobe Campaign.
 
 ## Configurer l’utilisateur distant de Campaign dans AEM {#campaign-remote-user}
 

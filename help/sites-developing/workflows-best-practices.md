@@ -108,7 +108,6 @@ Les modèles de workflow sont stockés dans le référentiel en fonction de leur
    >
    >* placer vos modèles de workflow personnalisés dans ce dossier,
    >* modifier des éléments dans `/libs`,
-
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -144,7 +143,6 @@ Les définitions du lanceur de workflow sont également stockées dans le réfé
    >
    >* placer vos lanceurs de workflow personnalisés dans ce dossier,
    >* modifier des éléments dans `/libs`,
-
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -176,7 +174,6 @@ Les scripts de workflow sont également stockés dans le référentiel en foncti
    >
    >* placer vos scripts de workflow personnalisés dans ce dossier,
    >* modifier des éléments dans `/libs`,
-
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 
@@ -204,7 +201,6 @@ Les notifications de workflow sont également stockées dans le référentiel en
    >
    >* placer vos définitions de notification de workflow personnalisées dans ce dossier,
    >* modifier des éléments dans `/libs`,
-
    >
    >car les modifications peuvent être écrasées lors de la mise à niveau ou lors de l’installation de correctifs logiciels, de Service Packs ou de packs de correctifs cumulatifs.
 

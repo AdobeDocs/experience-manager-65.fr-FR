@@ -137,6 +137,7 @@ La liste peut être manipulée comme suit :
    * Vous pouvez faire glisser et déposer les variables sur une variable Adobe Analytics appartenant à l’une des 3 sections de variables (**Trafic**, **Conversion** et **Événements**).
 
    * Lorsque vous faites glisser un nouveau composant de suivi sur le framework dans la vue CQ, les variables CQ appartenant au composant sont ajoutées automatiquement à l’outil de recherche de contenu (cf#) dans la vue Adobe Analytics.
+
    >[!NOTE]
    >
    >Une seule variable CQ peut être mappée à la fois à une variable Adobe Analytics.
@@ -202,7 +203,7 @@ En prenant comme exemple l’image ci-dessus, la **vue AEM** possède les propri
 >
 >Par exemple, à côté de `prop3`, vous pouvez ajouter :
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
+>pour envoyer la variable *title* d’une page concaténé avec sa variable *sitesection* à l’aide d’un *:* (deux-points) et précédé du préfixe *Adobe* en tant que `prop3`.
 
 >[!CAUTION]
-Une seule variable CQ peut être mappée à la fois à une variable Adobe Analytics.
+>Une seule variable CQ peut être mappée à la fois à une variable Adobe Analytics.

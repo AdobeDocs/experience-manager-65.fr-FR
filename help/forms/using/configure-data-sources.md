@@ -51,7 +51,6 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >
    > 1. Accédez à https://&#39;[server]:[port]&#39;/system/console/crypto.
    > 1. Dans le champ **[!UICONTROL Texte brut]**, indiquez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
-
    >
    >Le texte chiffré apparaît dans le champ Texte protégé que vous pouvez spécifier dans la configuration.
 
@@ -131,6 +130,7 @@ Procédez comme suit pour configurer les services RESTful :
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source Swagger.
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
       * Chemin d’accès de base : le préfixe d’URL de tous les chemins d’API. Ce champ est facultatif.\
+
          Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
    * Sélectionnez le type d’authentification (Aucun, OAuth2.0, Authentification de base, Clé API, Authentification personnalisée ou Authentification mutuelle) pour accéder au service RESTful et fournissez en conséquence les détails de l’authentification.
 

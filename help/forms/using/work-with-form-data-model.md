@@ -204,9 +204,9 @@ Utilisez l’attribut de requête pour récupérer les propriétés associées �
    >[!NOTE]
    >
    >* Si vous utilisez un modèle statique, superposez le fichier head.jsp à l’adresse suivante :
-      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    >* Si vous utilisez un modèle modifiable, superposez le fichier aftemplatedpage.jsp à l’adresse suivante :
-      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Définissez [!DNL paramMap] pour l’attribut de requête. Par exemple, incluez le code suivant dans le fichier .jsp du dossier des applications :

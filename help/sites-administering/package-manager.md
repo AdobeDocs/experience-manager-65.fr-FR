@@ -492,9 +492,9 @@ Avant l’installation de votre pack, le Gestionnaire de packs crée automatique
 >[!CAUTION]
 >
 >* Si vous installez des ressources numériques, vous devez effectuer les opérations suivantes :
-   >  Tout d’abord, désactivez WorkflowLauncher.
-   >  Utilisez l’option du menu Composants de la console OSGi pour le désactiver.
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  Tout d’abord, désactivez WorkflowLauncher.
+>  Utilisez l’option du menu Composants de la console OSGi pour le désactiver.
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
 >
 >La désactivation de WorkflowLauncher permet de s’assurer que la structure d’importation d’actifs ne manipule pas (involontairement) les actifs lors de l’installation.

@@ -86,7 +86,7 @@ Où :
 </h1>
 ```
 
-##  Accès aux valeurs dans ContextHub {#accessing-values-in-the-contexthub}
+## Accès aux valeurs dans ContextHub {#accessing-values-in-the-contexthub}
 
 L’API JavaScript ContextHub comporte une fonction `getStore(name)` qui renvoie le magasin spécifié, s’il est disponible. Le magasin dispose d’une fonction `getItem(key)` qui renvoie la valeur de la clé spécifiée, si elle est disponible. En utilisant la fonction `getKeys()`, il est possible de récupérer un tableau de clés définies pour le magasin spécifique.
 

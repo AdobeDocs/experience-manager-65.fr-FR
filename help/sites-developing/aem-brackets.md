@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Extension AEM Brackets{#aem-brackets-extension}
 
-##  du commerce électronique {#overview}
+## du commerce électronique {#overview}
 
 L’extension AEM Brackets offre un workflow fluide pour modifier les composants AEM et les bibliothèques clientes. Elle tire parti de la puissance de l’éditeur de code [Brackets](https://brackets.io/) qui donne accès aux fichiers et calques Photoshop depuis l’éditeur de code. La synchronisation simplifiée (aucun Maven ou File Vault requis) grâce à l’extension améliore le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances AEM limitées de participer à des projets. Cette extension prend également en charge le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) qui élimine la complexité des JSP pour faciliter et sécuriser le développement de composants.
 

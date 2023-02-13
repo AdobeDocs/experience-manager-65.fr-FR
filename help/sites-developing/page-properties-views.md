@@ -71,11 +71,11 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
    >Pour référence :
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
-   Cependant, vous ne devez ***rien*** modifier dans le chemin `/libs`.
-   En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
-   La méthode recommandée pour la configuration et d’autres modifications est la suivante :
-   1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
-   1. Apportez les modifications désirées dans `/apps`.
+   >Cependant, vous ne devez ***rien*** modifier dans le chemin `/libs`.
+   >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
+   >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
+   >1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
+   >1. Apportez les modifications désirées dans `/apps`.
 
 
 1. Définissez la propriété `path` sur `basic` pour pointer vers le remplacement de l’onglet de base (voir également l’étape suivante). Par exemple :
@@ -99,7 +99,7 @@ Par exemple, l’assistant [**Créer une page**](/help/sites-authoring/managing-
    La section **Autres titres et description** ne sera plus affichée dans l’assistant **Créer une page**.
 
 >[!NOTE]
-Lors de la configuration des propriétés de page à utiliser avec des Live Copies, reportez-vous à la section [Configuration de verrouillages MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
+>Lors de la configuration des propriétés de page à utiliser avec des Live Copies, reportez-vous à la section [Configuration de verrouillages MSM sur les propriétés de page](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) pour plus d’informations.
 
 ## Exemple de configuration des propriétés de page {#sample-configuration-of-page-properties}
 

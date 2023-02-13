@@ -830,8 +830,7 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
    >
    >Par exemple, comme dans la demande d’exécution d’une requête persistante :
    >
-   >
-   ```xml
+   >```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 

@@ -23,7 +23,7 @@ L’outil AEM Repo est une solution simple pour transférer du contenu JCR entr
 
 Cet outil simplifie les transferts de fichiers qu’effectuent le développeur et peut également être intégré à IntelliJ et Eclipse pour optimiser l’activité de développement.
 
-##  du commerce électronique {#overview}
+## du commerce électronique {#overview}
 
 Pour un chemin donné dans une structure FileVault `jcr_root` dans le système de fichiers, l’outil AEM Repo crée un module avec un seul filtre pour l’ensemble de la sous-arborescence et le transmet en push au serveur (de façon similaire à la méthode `put` du FTP), l’extrait du serveur (`get`) ou compare les différences (`status` et `diff`).
 

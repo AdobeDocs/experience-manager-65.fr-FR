@@ -79,6 +79,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
          >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
          >
          >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+
       Par exemple :
 
       ![propriétés de champ](assets/cfm-models-05.png)
@@ -233,10 +234,10 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >AEM dispose d’une protection récurrente pour :
 >
 >* Références du contenu
-   >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
 >* Références de fragment dans GraphQL
-   >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 
 ### Référence de contenu {#content-reference}
