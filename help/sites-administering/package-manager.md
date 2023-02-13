@@ -11,9 +11,9 @@ discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3573'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -493,7 +493,7 @@ Avant l’installation de votre pack, le Gestionnaire de packs crée automatique
 >
 >* Si vous installez des ressources numériques, vous devez effectuer les opérations suivantes :
    >  Tout d’abord, désactivez WorkflowLauncher.
-   >  Utilisez l’option de menu Composants de la console OSGi pour la désactiver.
+   >  Utilisez l’option du menu Composants de la console OSGi pour le désactiver.
    >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* Ensuite, une fois l’installation terminée, réactivez WorkflowLauncher.
 >
