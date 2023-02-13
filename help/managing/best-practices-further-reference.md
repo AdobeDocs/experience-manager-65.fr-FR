@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3755'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Tenez compte des fonctions d’AEM que vous utiliserez et de l’impact sur votr
 * [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr)
 * [Assets](/help/assets/assets.md)
 * [Balises](/help/sites-administering/tags.md)
-* [Gestion de sites multiples·et traduction](/help/sites-administering/msm-and-translation.md)
+* [Gestion de sites multiples et traduction](/help/sites-administering/msm-and-translation.md)
 * [Forms](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
 * [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
@@ -233,7 +233,7 @@ Cette section peut être lue en parallèle de la section [Optimisation des perfo
 
 #### Temps de réponse pour les pages individuelles {#response-times-for-individual-pages}
 
-Le temps que met votre site web pour répondre aux requêtes des visiteurs constitue l’un des problèmes majeurs.
+L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs et des visiteuses.
 
 Bien que cette valeur varie pour chaque demande, une valeur cible moyenne peut être définie. Une fois que cette valeur se révèle à la fois réalisable et gérable, elle peut être utilisée pour surveiller les performances du site web et indiquer le développement d’éventuels problèmes.
 
@@ -250,7 +250,7 @@ Les temps de réponse que vous ciblerez seront différents sur les environnement
 
 * **Environnement de publication**
 
-   Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs :
+   Cet environnement intègre le contenu que vous mettez à la disposition de vos utilisateurs et utilisatrices :
 
    * La vitesse reste essentielle, mais il est souvent plus lent qu’un environnement de création.
    * Des mécanismes supplémentaires d’amélioration des performances sont souvent appliqués :
