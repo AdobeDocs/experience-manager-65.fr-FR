@@ -1,5 +1,5 @@
 ---
-title: Analyse des performances de page
+title: Analyser les performances de page
 seo-title: Analyzing Page Performance
 description: Utilisez la page Content Insight pour analyser les performances de la page que vous créez.
 seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
@@ -12,13 +12,13 @@ discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '662'
 ht-degree: 100%
 
 ---
 
-# Analyse des performances de page{#analyzing-page-performance}
+# Analyser les performances de page{#analyzing-page-performance}
 
 Ouvrez la page [Content Insight](/help/sites-authoring/content-insights.md) pour analyser les performances de la page que vous créez. Configurez la période de création de rapports afin de cibler votre analyse.
 
