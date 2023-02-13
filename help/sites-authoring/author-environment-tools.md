@@ -12,9 +12,9 @@ discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2220'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -139,8 +139,8 @@ Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouv
 
 * Nom
 * Chemin
-* Type de ressource (images, manuscrits, documents, vidéos, pages, paragraphes ou produits)
-* Caractéristiques des ressources telles que l’orientation (portrait, paysage, carré) et le style (couleur, monochrome, niveaux de gris)
+* type de ressource (images, manuscrits, documents, vidéos, pages, paragraphes ou produits) ;
+* caractéristiques de ressources, telles que l’orientation (Portrait, Paysage, Carré) et le style (Couleur, Monochrome, Niveaux de gris).
 
    * Disponible uniquement pour certains types de ressources
 
@@ -248,7 +248,7 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 * Le [plan directeur](/help/sites-administering/msm-best-practices.md) fournit des détails et la possibilité de diverses actions.
 * [Copies de langue](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), fournit des détails et diverses actions
 
-Par exemple, vous pouvez corriger une référence rompue dans un composant Référence :
+Par exemple, vous pouvez corriger une référence rompue dans un composant Référence :
 
 ![ateat-14](assets/ateat-14.png)
 
@@ -285,7 +285,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 Le cas échéant, le menu **Informations sur la page** propose également les options suivantes :
 
 * [Convertir le lancement](/help/sites-authoring/launches-promoting.md) si la page correspond à un lancement.
-* [Ouvrir dans l’interface utilisateur classique](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si cette option a été [activé par un administrateur](/help/sites-administering/enable-classic-ui-editor.md)
+* [Ouvrez dans l’IU classique](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) si cette option a été [activée par un administrateur](/help/sites-administering/enable-classic-ui-editor.md).
 
 Le menu **Informations sur la page** peut en outre donner accès à des analyses et recommandations, le cas échéant.
 
@@ -302,7 +302,7 @@ Lors de la modification d’une page, plusieurs modes permettent d’effectuer d
 * [Conception](/help/sites-authoring/default-components-designmode.md) : permet d’activer/désactiver les composants à utiliser sur une page et de configurer la conception du composant (si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Ciblage](/help/sites-authoring/content-targeting-touch.md) : optimise la pertinence du contenu grâce au ciblage et aux mesures à l’échelle de tous les canaux.
-* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) : affiche les données d’analyse de la page.
+* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) : affiche les données d’analyse de la page.
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-authoring/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
@@ -341,7 +341,7 @@ Vous pouvez également effectuer une saisie dans le champ de chemin d’accès. 
 
 ![ateat-19](assets/ateat-19.png)
 
-### Chemin  Navigateur {#path-browser}
+### Chemin Navigateur {#path-browser}
 
 L’explorateur de chemins d’accès est organisé de la même façon que le [mode Colonnes](/help/sites-authoring/basic-handling.md#column-view) de la console Sites afin de permettre une sélection plus détaillée des ressources.
 
