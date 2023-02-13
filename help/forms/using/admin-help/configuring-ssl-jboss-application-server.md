@@ -1,5 +1,5 @@
 ---
-title: Configuration de SSL pour JBoss Application Server
+title: Configurer SSL pour JBoss Application Server
 seo-title: Configuring SSL for JBoss Application Server
 description: Découvrez comment configurer SSL pour JBoss Application Server.
 seo-description: Learn how to configure SSL for JBoss Application Server.
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '908'
 ht-degree: 100%
 
 ---
 
-# Configuration de SSL pour JBoss Application Server {#configuring-ssl-for-jboss-application-server}
+# Configurer SSL pour JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
 Pour configurer SSL sur JBoss Application Server, vous avez besoin d’informations d’identification SSL pour l’authentification. Vous pouvez utiliser l’outil Java keytool pour créer des informations d’identification ou demander des informations d’identification à une autorité de certification (CA) et les importer. Vous devez ensuite activer SSL sur JBoss.
 
@@ -77,7 +77,7 @@ Dans cette procédure :
 
 1. Importez le certificat en saisissant la commande suivante :
 
-   `keytool -import -alias “AEMForms Cert” -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
+   `keytool -import -alias "AEMForms Cert" -file`*AEMForms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. Saisissez `changeit` comme mot de passe. Il s’agit du mot de passe par défaut d’une installation Java, mais l’administrateur système peut l’avoir modifié.
 1. À l’invite `Trust this certificate? [no]` :, sasissez `yes`. La confirmation « Certificate was added to keystore » s’affiche.
@@ -90,7 +90,7 @@ Dans cette procédure :
 
    * Grappe de serveurs : `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **Pour un serveur unique,** ajoutez l’élément suivant dans le fichier lc_&lt;dbaname/tunkey>.xml après la section &lt;security-realms> :
 
    ```xml
@@ -136,7 +136,7 @@ Dans cette procédure :
    ```
 
 1. Remplacez la valeur des attributs `keystoreFile` et `keystorePass` par le mot de passe du fichier de stockage des clés que vous avez spécifié lors de la création dudit fichier.
-1. Redémarrez le serveur d’applications:
+1. Redémarrez le serveur d’applications :
 
    * Pour les installations clé en main :
 
