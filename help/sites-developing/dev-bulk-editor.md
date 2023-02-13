@@ -1,5 +1,5 @@
 ---
-title: Développement de l’éditeur en bloc
+title: Développer l’éditeur en bloc
 seo-title: Developing the Bulk Editor
 description: Le balisage permet de catégoriser et d’organiser le contenu.
 seo-description: Tagging allows content to be categorized and organized
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1837'
 ht-degree: 100%
 
 ---
 
-# Développement de l’éditeur en bloc{#developing-the-bulk-editor}
+# Développer l’éditeur en bloc{#developing-the-bulk-editor}
 
 Cette section explique comment développer l’outil d’éditeur en masse et comment étendre le composant Liste de produits, lui-même basé sur l’éditeur en masse.
 
