@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2204'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Les valeurs de propriétés suivantes sont utilisées dans la configuration de c
 
 >[!NOTE]
 >
->Dans AEM 6.3, vous pouvez sélectionner le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), qui est une nouvelle bibliothèque de mise en œuvre pour Adobe Target conçue à la fois pour les mises en œuvre web standard et les applications d’une seule page.
+>Dans AEM 6.3, vous pouvez sélectionner le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr), qui est une nouvelle bibliothèque de mise en œuvre pour Adobe Target conçue à la fois pour les mises en œuvre web standard et les applications d’une seule page.
 >
 >AT.js propose plusieurs améliorations par rapport à la bibliothèque mbox.js :
 >
@@ -108,7 +108,7 @@ Cliquez sur **OK**. Lorsque vous ciblez le contenu avec Adobe Target, vous pouv
 Intégrez manuellement à Adobe Target au lieu d’utiliser l’assistant de souscription.
 
 >[!NOTE]
-Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page. Adobe recommande d’utiliser AT.js, au lieu de mbox.js, comme bibliothèque cliente.
+Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=fr), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page. Adobe recommande d’utiliser AT.js, au lieu de mbox.js, comme bibliothèque cliente.
 AT.js propose plusieurs améliorations par rapport à la bibliothèque mbox.js :
 * Temps de chargement des pages améliorés pour les mises en œuvre web
 * Sécurité renforcée
@@ -127,9 +127,9 @@ Vous pouvez configurer la configuration de cloud pour synchroniser les segments 
 
 Utilisez la procédure suivante pour créer une configuration de cloud Target dans AEM :
 
-1. Accédez à **Cloud Services** via le **Logo AEM** > **Outils** > **Cloud Services** > **Cloud Services hérités**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Accédez aux **Services cloud** via le **logo AEM** > **Outils** >**Services cloud** > **Services cloud hérités**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 
-   Le **Cloud Services** la page d’aperçu s’ouvre.
+   La page d’aperçu **Services cloud** s’ouvre.
 
 1. Dans la section **Adobe Target**, cliquez sur **Configurer maintenant**.
 1. Dans la boîte de dialogue **Créer une configuration** :
@@ -163,7 +163,7 @@ Utilisez la procédure suivante pour créer une configuration de cloud Target da
    * **Bibliothèque cliente** : indiquez si vous voulez la bibliothèque cliente mbox.js ou AT.js.
    * **Utiliser la gestion dynamique des balises pour diffuser la bibliothèque cliente** : sélectionnez cette option pour utiliser le mbox.js ou l’AT.js de la gestion dynamique des balises ou tout autre système de gestion des balises. Vous devez [configurer l’intégration de la gestion dynamique des balises](/help/sites-administering/dtm.md) pour utiliser cette option. Adobe vous recommande d’utiliser la gestion dynamique des balises plutôt qu’AEM pour livrer la bibliothèque.
    * **Fichier mbox.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier mbox.js par défaut. Vous pouvez également télécharger votre fichier mbox.js personnalisé. S’affiche uniquement si vous avez sélectionné mbox.js.
-   * **AT.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier AT.js par défaut. Vous pouvez également télécharger votre fichier AT.js personnalisé.  S’affiche uniquement si vous avez sélectionné AT.js.
+   * **AT.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier AT.js par défaut. Vous pouvez également télécharger votre fichier AT.js personnalisé. S’affiche uniquement si vous avez sélectionné AT.js.
 
    >[!NOTE]
    Par défaut, lorsque vous souscrivez à l’assistant de configuration Adobe Target, le ciblage précis est activé.
@@ -210,7 +210,7 @@ La structure est créée. Pour répliquer la structure sur l’instance de publi
 
 ### Association des activités à la configuration de cloud Target  {#associating-activities-with-the-target-cloud-configuration}
 
-Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
+Associez vos [activités AEM](/help/sites-authoring/activitylib.md) à la configuration de cloud Target afin de refléter les activités dans [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?=lang=fr).
 
 >[!NOTE]
 Les types d’activités disponibles sont déterminés par ce qui suit :
