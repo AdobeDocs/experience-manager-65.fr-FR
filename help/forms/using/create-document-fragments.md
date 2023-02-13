@@ -1,5 +1,5 @@
 ---
-title: '"Didacticiel : Créer des fragments de document"'
+title: "Didacticiel\_: Créer des fragments de document"
 seo-title: Create document fragments for Interactive Communication
 description: Créer des fragments de document pour la communication interactive
 seo-description: Create document fragments for Interactive Communication
@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
 ht-degree: 100%
 
