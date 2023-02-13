@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’API sendToPrinter
+title: Utiliser l’API sendToPrinter
 seo-title: Using the sendToPrinter API
 description: Utilisation du service sendToPrinter pour envoyer un document vers l’imprimante.
 seo-description: Using the sendToPrinter service to send a document to printer.
@@ -10,13 +10,13 @@ topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 5fb38afd-7517-494e-b084-1fdd4aef3ca4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
 ---
 
-# Utilisation de l’API sendToPrinter {#using-the-sendtoprinter-api}
+# Utiliser l’API sendToPrinter {#using-the-sendtoprinter-api}
 
 ## Présentation {#overview}
 
