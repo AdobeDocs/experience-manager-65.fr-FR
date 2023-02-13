@@ -1,5 +1,5 @@
 ---
-title: Exécution d’AEM avec TarMK Cold Standby
+title: Exécuter AEM avec TarMK Cold Standby
 seo-title: How to Run AEM with TarMK Cold Standby
 description: Apprenez à créer, configurer et gérer une configuration TarMK Cold Standby
 seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
@@ -13,13 +13,13 @@ docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2730'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Exécution d’AEM avec TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
+# Exécuter AEM avec TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## Présentation {#introduction}
 
@@ -151,7 +151,7 @@ Consultez ci-dessous la procédure devant être suivie afin de créer une instal
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
-1. Créez un enregistreur de journalisation Apache Sling pour module **org.apache.jackrabbit.oak.segment.**. Définissez le niveau de journal sur &quot;Débogage&quot; et pointez sa sortie de journal vers un fichier journal distinct, comme */logs/tarmk-coldstandby.log*. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
+1. Créez un enregistreur de journalisation Apache Sling pour module **org.apache.jackrabbit.oak.segment.**. Définissez le niveau du journal sur « Déboguer », puis orientez la sortie du journal vers un fichier journal distinct, tel que */logs/tarmk-coldstandby.log*. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
 1. Accédez à l’emplacement de l’instance **de secours** et démarrez-la en exécutant le fichier jar.
 1. Créez la même configuration de journalisation que pour l’instance principale. Ensuite, arrêtez l’instance.
 1. Préparez l’instance de secours. Vous pouvez le faire en suivant le même processus que pour l’instance principale :
@@ -402,7 +402,7 @@ Il se peut que la synchronisation de l’instance de secours avec l’instance p
 
 Comme alternative, le référentiel principal peut être copié manuellement sur l’instance de secours après l’exécution de la compression sur l’instance principale. L’instance de secours est ainsi reconstituée à chaque compression.
 
-### Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
+### Récupérer de l’espace mémoire du magasin de données {#data-store-garbage-collection}
 
 Il est important d’exécuter de temps en temps le nettoyage de la mémoire sur les instances du magasin de données des fichiers. Autrement, les fichiers binaires supprimés resteront sur le système de fichiers, ce qui contribue à surcharger le lecteur. Pour lancer la récupération de l’espace mémoire, suivez la procédure ci-dessous :
 
