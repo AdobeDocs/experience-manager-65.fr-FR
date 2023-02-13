@@ -11,8 +11,8 @@ topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 74882ccf78a62d543f1598f12ee009f9922c18a4
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '19016'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ Pour créer un formulaire PDF interactif qui permet à l’utilisateur de saisir
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Output, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Output, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -640,7 +640,7 @@ Vous pouvez récupérer Loan.xdp par programmation à partir de Content Services
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
@@ -840,7 +840,7 @@ Vous pouvez créer un PDF à partir d’un fichier XDP situé dans le référent
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Forms, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-3}
 
@@ -953,7 +953,7 @@ Avant de lire *Créer des documents PDF à l’aide de fragments*, il est recomm
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-4}
 
@@ -1161,7 +1161,7 @@ Le service Output vous permet de fusionner des données XML avec une conception 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-5}
 
@@ -1366,7 +1366,7 @@ Vous pouvez utiliser le service Output pour envoyer des flux d’impression tels
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Output, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Output, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-6}
 
@@ -1706,7 +1706,7 @@ Notez que l’élément XML qui démarre et termine chaque enregistrement de don
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-7}
 
@@ -1809,7 +1809,7 @@ Une fois que le service Output a effectué une opération, il renvoie des donné
 
 Pour créer plusieurs fichiers PDF à l’aide de l’API Output (Java), procédez comme suit :
 
-1. Inclure les fichiers de projet
+1. Incluez les fichiers de projet.
 
    Incluez les fichiers JAR du client, tels que adobe-output-client.jar, dans le chemin d’accès aux classes de votre projet Java.
 
@@ -1948,7 +1948,7 @@ En outre, le service Output peut générer des packages de documents, où plusie
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Output, voir [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-8}
 
@@ -2210,7 +2210,7 @@ Toute tentative d’aplatissement d’un document PDF non interactif entraîne 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Output, voir [Guide de référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Output, voir [Guide de référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-9}
 
