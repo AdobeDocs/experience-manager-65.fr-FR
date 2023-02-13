@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '6167'
 ht-degree: 100%
 
@@ -26,8 +26,8 @@ Dans la page Paramètres de type de fichier, vous pouvez effectuer les tâches s
 * [Création ou modification d’un paramètre de type de fichier](#create-or-edit-file-type-settings)
 * Spécifiez les paramètres de type de fichier à utiliser par défaut (voir [Importation et exportation de fichiers de configuration PDF Generator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr))
 * [Modification des paramètres par défaut](/help/forms/using/admin-help/configuring-file-type-settings2.md#change-the-default-settings)
-* [Activation de la prise en charge de PDF/A](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
-* [Suppression d’un paramètre de type de fichier](https://helpx.adobe.com/aem-forms/6-2/admin-help/enable-pdf-a-support.html)
+* [Activer la prise en charge de PDF/A](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+* [Supprimer un paramètre de type de fichier](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Vous créez ou modifiez un paramètre de type de fichier pour définir la maniè
 
 1. Fournissez les informations requises dans ces zones :
 
-   [Importation et exportation des fichiers de configuration de PDF Generator](https://helpx.adobe.com/aem-forms/6-2/admin-help/importing-exporting-pdf-generator-configuration.html)
+   [Importer et exporter les fichiers de configuration de PDF Generator](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
 
 [Paramètres d’exportation Adobe PDF (Windows uniquement)](#adobe-pdf-export-settings-windows-only)
 
@@ -86,7 +86,7 @@ Vous créez ou modifiez un paramètre de type de fichier pour définir la maniè
 
 Il est possible de personnaliser la prise en charge de divers types de fichier (voir « [Ajout de formats de fichier natifs pris en charge](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_lc_programming_11_fr)).
 
-## Modification des paramètres par défaut {#change-the-default-settings}
+## Modifier les paramètres par défaut {#change-the-default-settings}
 
 Vous pouvez modifier la valeur par défaut des paramètres Adobe PDF, des paramètres de sécurité et des paramètres de type de fichier qui s’appliquent aux sources nouvellement créées. La modification des valeurs par défaut n’a aucune incidence sur les paramètres des sources existantes.
 
@@ -102,7 +102,7 @@ Vous pouvez modifier la valeur par défaut des paramètres Adobe PDF, des param�
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Suppression d’un paramètre de type de fichier {#delete-a-file-type-setting}
+## Supprimer un paramètre de type de fichier {#delete-a-file-type-setting}
 
 Vous pouvez supprimer un paramètre de type de fichier qui n’est plus utilisé.
 
@@ -257,7 +257,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Création ou m
 
    >[!NOTE]
    >
-   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police (par exemple : +Helvetica).*
+   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police. Par exemple : « +Helvetica ».*
 
 1. Pour incorporer uniquement les jeux partiels utilisés des polices incorporées, sélectionnez **Créer des jeux partiels de toutes les polices incorporées**.
 
@@ -442,7 +442,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 **[!UICONTROL Essayer OpenOffice comme convertisseur de secours]** : lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft PowerPoint échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la méthode avec OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
@@ -519,7 +519,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Word sont 
 
 styleName1=level1[,styleName2=level2...]
 
-Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (\). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
+Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (« \ »). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
 
 ## Paramètres de Microsoft Visio (Windows uniquement) {#visio}
 
