@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
 exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ Dans la page Instance du processus, vous pouvez exécuter les tâches suivantes�
 * Suspendre ou arrêter des instances de processus, ou encore en annuler la suspension.
 * Rechercher une instance de processus. Pour lancer une recherche, cliquez sur Rechercher.
 
-### A propos des états d’instances de processus {#about-process-instance-statuses}
+### À propos des états d’instances de processus {#about-process-instance-statuses}
 
 Une instance de processus, y compris ses processus secondaires, peut présenter les états suivants :
 
