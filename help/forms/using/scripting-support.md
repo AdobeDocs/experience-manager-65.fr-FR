@@ -12,9 +12,9 @@ discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3892'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -425,7 +425,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>bordure</td>
+   <td>border</td>
    <td>L’objet border décrit la bordure entourant un objet.</td>
    <td>Aucune</td>
   </tr>
@@ -455,7 +455,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>valider</td>
+   <td>validate</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>
@@ -773,7 +773,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td><strong>Exception</strong></td>
   </tr>
   <tr>
-   <td>bordure</td>
+   <td>border</td>
    <td>L’objet border décrit la bordure entourant un objet checkButton. </td>
    <td>Les modifications sont répercutées dans le Modèle et sont disponibles pour les scripts mais ne sont pas de synchronisées avec les éléments HTML. Par conséquent, les modifications ne sont pas répercutées dans l’IU.<br /> </td>
   </tr>
@@ -790,7 +790,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td><strong>Exception</strong></td>
   </tr>
   <tr>
-   <td>bordure</td>
+   <td>border</td>
    <td>L’objet border décrit la bordure entourant un objet choiceList.</td>
    <td> </td>
   </tr>
@@ -801,7 +801,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 | **Propriété** | **Description** | **Exception** |
 |---|---|---|
-| bordure | L’objet border décrit la bordure entourant un objet dateTimeedit. |  |
+| border | L’objet border décrit la bordure entourant un objet dateTimeedit. |  |
 
 ## Image {#image}
 
@@ -829,13 +829,13 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
 
 | **Propriété** | **Description** | **Exception** |
 |---|---|---|
-| bordure | L’objet border décrit la bordure entourant un objet imageEdit. |  |
+| border | L’objet border décrit la bordure entourant un objet imageEdit. |  |
 
 ## numericEdit {#numericedit}
 
 | **Propriété** | **Description** | **Exception** |
 |---|---|---|
-| bordure | L’objet border décrit la bordure entourant un objet. | aucune |
+| border | L’objet border décrit la bordure entourant un objet. | aucune |
 
 ## objet {#object}
 
@@ -881,7 +881,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td><strong>Exception</strong></td>
   </tr>
   <tr>
-   <td>bordure</td>
+   <td>border</td>
    <td>L’objet border décrit la bordure entourant un objet.<br /> </td>
    <td>Aucune</td>
   </tr>
@@ -898,12 +898,12 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td><strong>Exception</strong></td>
   </tr>
   <tr>
-   <td>layout</td>
+   <td>disposition</td>
    <td>Indique la stratégie de disposition utilisée par cet objet.</td>
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>bordure</td>
+   <td>border</td>
    <td>Indique la bordure entourant ce champ.</td>
    <td>Aucune</td>
   </tr>
@@ -953,7 +953,7 @@ Les propriétés JavaScript, de FormCalc, et les méthodes prises en charge dans
    <td>Aucune</td>
   </tr>
   <tr>
-   <td>valider</td>
+   <td>validate</td>
    <td>L’objet valider contrôle la validation de données fournies par l’utilisateur sur un formulaire. L’objet valider peut être activé plusieurs fois pendant la durée de vie d’un formulaire.</td>
    <td>Aucune</td>
   </tr>
@@ -1353,4 +1353,4 @@ Les événements XFA côté client suivants sont pris en charge :
 
 >[!NOTE]
 >
->Les formulaires HTML5 sont rendus côté client (navigateur). Il est recommandé d’utiliser côté client **valider** et **calculate** au lieu des scripts côté serveur.
+>Les formulaires HTML5 sont rendus côté client (navigateur). Il est recommandé d’utiliser des scripts **validate** et **calculate** côté client au lieu des scripts côté serveur.
