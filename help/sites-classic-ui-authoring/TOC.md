@@ -8,7 +8,7 @@ user-guide-description: Ce guide recouvre les concepts de création dans AEM dan
 feature: Authoring
 role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 + Personnalisation  {#personalization}
    + [Compréhension de la segmentation](classic-personalization-campaigns-segmentation.md)
    + [Gestion de campagnes](classic-personalization-campaigns.md)
-   + [Pages de destinations](classic-personalization-campaigns-landingpage.md)
+   + [Pages d’entrée](classic-personalization-campaigns-landingpage.md)
    + [Offres Target](classic-personalization-campaigns-target-offers.md)
    + [Marketing par e-mail](classic-personalization-campaigns-email.md)
    + [Suivi des e-mails rejetés](classic-personalization-campaigns-email-tracking-bounces.md)
