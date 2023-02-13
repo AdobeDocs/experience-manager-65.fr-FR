@@ -1,5 +1,5 @@
 ---
-title: Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable
+title: Documents PDF protégés par une politique Reader Extension à l’aide de la bibliothèque de protection portable
 seo-title: Reader extending policy-protected PDF documents using Portable Protection Library
 description: Les extensions Reader permettent d’activer des fonctions interactives dans les documents Adobe PDF via Acrobat Reader. Vous pouvez utiliser la bibliothèque portable de protection (PPL) et étendre Reader aux document PDF protégés DRM.
 seo-description: Reader extensions enable interactive features in Adobe PDF documents through Acrobat Reader. You can use the Portable Protection Library (PPL) to reader extend the DRM protected PDF documents.
@@ -11,8 +11,8 @@ topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '796'
 ht-degree: 100%
 
@@ -75,7 +75,7 @@ Vous pouvez utiliser l’API Java `applyUsageRights` pour appliquer des droits d
  </tbody>
 </table>
 
-### Rechercher les droits d’utilisation appliqués à un document PDF protégé par une stratégie.   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
+### Rechercher les droits d’utilisation appliqués à un document PDF protégé par une politique.   {#retrieve-usage-rights-applied-to-a-policy-protected-pdf-document-nbsp}
 
 Vous pouvez utiliser l’API Java `getDocumentUsageRights` pour récupérer les droits d’utilisation de l’extension Reader appliqués à un document PDF protégé par une stratégie. En récupérant des informations sur les droits d’utilisation, vous pourrez en savoir davantage sur les fonctionnalités Reader Extension activées pour le document PDF protégé par une stratégie.
 
@@ -125,7 +125,7 @@ while ((read = output.read(bytes)) != -1) {
     outputStream.write(bytes, 0, read);
 }
 
-System.out.println("UsageRights applied successfully to the document. ”);
+System.out.println("UsageRights applied successfully to the document. ");
  outputStream.close();
 inputFileStream.close();
 
@@ -184,7 +184,7 @@ while ((read = fileStream.read(bytes)) != -1) {
 
     outputStream.write(bytes, 0, read);
 }
-System.out.println("RE rights removed successfully from the document.”);
+System.out.println("RE rights removed successfully from the document.");
 outputStream.close();
 inputFileStream.close();
 ```
