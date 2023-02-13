@@ -10,8 +10,8 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '6158'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Vous créez ou modifiez un paramètre de type de fichier pour définir la maniè
 
 Il est possible de personnaliser la prise en charge de divers types de fichier (voir « [Ajout de formats de fichier natifs pris en charge](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_lc_programming_11_fr)).
 
-## Modification des paramètres par défaut {#change-the-default-settings}
+## Modifier les paramètres par défaut {#change-the-default-settings}
 
 Vous pouvez modifier la valeur par défaut des paramètres Adobe PDF, des paramètres de sécurité et des paramètres de type de fichier qui s’appliquent aux sources nouvellement créées. La modification des valeurs par défaut n’a aucune incidence sur les paramètres des sources existantes.
 
@@ -102,7 +102,7 @@ Vous pouvez modifier la valeur par défaut des paramètres Adobe PDF, des param�
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
-## Suppression d’un paramètre de type de fichier {#delete-a-file-type-setting}
+## Supprimer un paramètre de type de fichier {#delete-a-file-type-setting}
 
 Vous pouvez supprimer un paramètre de type de fichier qui n’est plus utilisé.
 
@@ -257,7 +257,7 @@ Pour plus d’informations sur l’accès à ce paramètre, voir [Création ou m
 
    >[!NOTE]
    >
-   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police (par exemple : +Helvetica).*
+   >*Pour désincorporer des polices dont les jeux partiels sont incorporés dans le document, ajoutez un signe + avant le nom de la police. Par exemple : « +Helvetica ».*
 
 1. Pour incorporer uniquement les jeux partiels utilisés des polices incorporées, sélectionnez **Créer des jeux partiels de toutes les polices incorporées**.
 
@@ -442,7 +442,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft PowerPoint
 
 **[!UICONTROL Essayer OpenOffice comme convertisseur de secours]** : lorsque cette option est sélectionnée et qu’une conversion utilisant Microsoft PowerPoint échoue ou atteint le délai d’expiration spécifié, PDF Generator tente d’effectuer la conversion en utilisant OpenOffice. Si la méthode avec OpenOffice échoue ou atteint le délai d’expiration spécifié, une exception est consignée dans le fichier journal.
 
-**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point dans les extensions ou d’espace entre celles-ci.
+**[!UICONTROL Extensions de nom de fichier]** : permet de définir les extensions de nom de fichier acceptées pour cette application en les séparant par des virgules. La valeur par défaut est ppt,pptx. N’insérez pas de point devant les extensions ou d’espace entre celles-ci.
 
 **[!UICONTROL Convertir les informations sur le document]** : permet d’ajouter des informations sur le document depuis la boîte de dialogue Propriétés du fichier source, y compris le titre, le sujet, l’auteur, les mots-clés, le responsable, la société, la catégorie et les commentaires. Cette option est sélectionnée par défaut.
 
@@ -521,7 +521,7 @@ Ces options permettent de déterminer comment les fichiers Microsoft Word sont 
 
 **styleName1=level1[,styleName2=level2...]**
 
-Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (\). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
+Si un nom de style Microsoft Word comporte des virgules (,) ou des signes égal (=), ces caractères doivent être précédés par un caractère d’échappement (« \ »). Par exemple, spécifiez un style nommé « Titre, 1 » comme suit : Titre\, 1.
 
 **Codage Acrobat PDFMaker :** spécifie le type de codage des fichiers d’entrée de texte brut dans Acrobat PDFMaker. Par exemple, si vous utilisez un fichier codé au format UTF-8, sélectionnez UTF-8 pour obtenir de meilleurs résultats.
 
@@ -625,6 +625,6 @@ Vous ne pouvez pas modifier les paramètres d’autres applications dans Adminis
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Il est possible de personnaliser la prise en charge de ces types de fichier. Pour plus d’informations, consultez la section « Ajout de formats de fichier natifs pris en charge » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_62).
+Il est possible de personnaliser la prise en charge de ces types de fichier. Pour plus d’informations, voir « Ajouter la prise en charge de formats de fichier natifs supplémentaires » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_62).
 
 Pour obtenir de l’aide sur la configuration d’une imprimante réseau PDFG, voir [Configuration d’une imprimante réseau PDFG (Windows uniquement)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).
