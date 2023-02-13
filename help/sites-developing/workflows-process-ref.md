@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 source-git-commit: cf3b739fd774bc860d9906b9884d22fd532fd5dd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1075'
 ht-degree: 100%
 
@@ -96,7 +96,7 @@ Les processus suivants n’exécutent aucune action sur le contenu. Ils servent 
 Le processus `AbsoluteTimeAutoAdvancer` (Avance automatique temps absolu écoulé) se comporte de la même manière que l’**AutoAdvancer**, si ce n’est qu’il arrive à expiration à une date et une heure données, plutôt qu’après une durée définie.
 
 * **Classe Java** : `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
-* **Payload** : aucun.
+* **Payload** : aucune.
 * **Arguments** : aucun.
 * **Délai d’expiration** : le processus arrive à expiration lorsque la date et l’heure définies sont atteintes.
 
@@ -106,7 +106,7 @@ Le processus `AutoAdvancer` fait passer automatiquement le workflow à l’étap
 
 * **Classe Java** : `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
-* **Payload** : aucun.
+* **Payload** : aucune.
 * **Arguments** : aucun.
 * **Délai d’expiration** : le processus arrive à expiration après une durée définie.
 
