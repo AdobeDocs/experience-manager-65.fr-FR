@@ -1,5 +1,5 @@
 ---
-title: Configuration de la commande Annuler pour la modification des pages
+title: Configurer la commande Annuler pour la modification des pages
 seo-title: Configuring Undo for Page Editing
 description: Découvrez comment configurer la commande Annuler pour la modification des pages dans AEM.
 seo-description: Learn how to configure Undo support for page editing in AEM.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '702'
 ht-degree: 100%
 
 ---
 
-# Configuration de la commande Annuler pour la modification des pages{#configuring-undo-for-page-editing}
+# Configurer la commande Annuler pour la modification des pages{#configuring-undo-for-page-editing}
 
 Le [service OSGI](/help/sites-deploying/configuring-osgi.md) de **configuration de l’annulation de la gestion de contenu Web Day CQ** (`com.day.cq.wcm.undo.UndoConfigService`) expose plusieurs propriétés qui contrôlent le comportement des commandes d’annulation et de restauration pour la modification des pages.
 
