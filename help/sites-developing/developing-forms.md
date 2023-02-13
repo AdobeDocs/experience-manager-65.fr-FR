@@ -1,5 +1,5 @@
 ---
-title: Développement de formulaires (IU classique)
+title: Développer des formulaires (IU classique)
 seo-title: Developing Forms (Classic UI)
 description: Découvrez comment développer des formulaires.
 seo-description: Learn how to develop forms
@@ -12,13 +12,13 @@ discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1940'
 ht-degree: 100%
 
 ---
 
-# Développement de formulaires (IU classique){#developing-forms-classic-ui}
+# Développer des formulaires (IU classique){#developing-forms-classic-ui}
 
 La structure de base d’un formulaire est la suivante :
 
