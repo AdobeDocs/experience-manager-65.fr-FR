@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '1170'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ Pour interagir avec la structure de formulaires, un widget déclenche certains �
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>Cet événement est déclenché chaque fois que le champ est ciblé. Il autorise l’exécution du script « enter » sur le champ. La syntaxe de déclenchement de l’événement est<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>Cet événement est déclenché chaque fois que le champ est ciblé. Il autorise l’exécution du script « enter » dans le champ. La syntaxe de déclenchement de l’événement est<br /> (widget)._trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
@@ -137,7 +137,7 @@ La structure de l’apparence appelle certaines fonctions du widget qui sont imp
    <td>Se concentre sur le champ et appelle XFA_CLICK_EVENT.</td>
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage: chaîne </em>représente l’erreur<br /> <em>errorType : chaîne (« avertissement »/« erreur »)</em> </p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td>
+   <td><p>markError:function(errorMessage, errorType)<br /> <br /> <em>errorMessage : chaîne </em>représente l’erreur<br /> <em>errorType : chaîne ("avertissement"/"erreur")</em></p> <p><strong>Remarque</strong> : applicable uniquement aux formulaires HTML5.</p> </td>
    <td>Envoie le message d’erreur et le type d’erreur au widget. Le widget affiche l’erreur.</td>
   </tr>
   <tr>
