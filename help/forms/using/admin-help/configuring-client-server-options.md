@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '10242'
 ht-degree: 100%
 
@@ -258,7 +258,7 @@ Si vous utilisez une application compatible Document Security qui gère le contr
 Vous pouvez exporter des événements de contrôle vers un fichier dans un but d’archivage.
 
 1. Dans Administration Console, cliquez sur Services > Document Security > Configuration > Gestion des événements.
-1. Modifiez les paramètres de la section Exporter les événements de contrôle selon les besoins. Vous pouvez préciser:
+1. Modifiez les paramètres de la section Exporter les événements de contrôle selon les besoins. Vous pouvez préciser :
 
    * L’âge minimum des événements de contrôle à exporter.
    * Le nombre maximum d’événements de contrôle à inclure dans un seul fichier. Le serveur génère un ou plusieurs fichiers en fonction de cette valeur.
@@ -406,7 +406,7 @@ Pour afficher les événements suivis vous pouvez utiliser le filtre des événe
 
 Ces paramètres contrôlent le texte affiché dans l’invite d’ouverture de session qui apparaît lorsqu’un utilisateur se connecte à Document Security par le biais d’une application cliente.
 
-**Texte de bienvenue :** texte du message de bienvenue, par exemple « Veuillez vous connecter à l’aide de votre nom d’utilisateur et de votre mot de passe. » Le message de bienvenue doit contenir des informations sur la marche à suivre pour ouvrir une session Document Security et pour contacter un administrateur ou une autre personne chargée du support dans votre entreprise. Par exemple, des utilisateurs externes peuvent être amenés à contacter un administrateur s’ils ont oublié leur mot de passe ou qu’ils ont besoin d’aide pour ouvrir une session ou pour s’enregistrer. Le texte de bienvenue peut contenir un maximum de 512 caractères.
+**Texte de bienvenue :** texte du message de bienvenue, par exemple « Veuillez vous connecter à l’aide de votre nom d’utilisateur et de votre mot de passe. ». Le message de bienvenue doit contenir des informations sur la marche à suivre pour ouvrir une session Document Security et pour contacter un administrateur ou une autre personne chargée du support dans votre entreprise. Par exemple, des utilisateurs externes peuvent être amenés à contacter un administrateur s’ils ont oublié leur mot de passe ou qu’ils ont besoin d’aide pour ouvrir une session ou pour s’enregistrer. Le texte de bienvenue peut contenir un maximum de 512 caractères.
 
 **Texte du nom d’utilisateur :** libellé de texte de la zone de nom d’utilisateur.
 
@@ -445,7 +445,7 @@ Vous pouvez créer un filigrane dynamique avec plusieurs éléments de filigrane
 
 Si vous choisissez un filigrane au format texte, vous pouvez définir plusieurs éléments dans le filigrane, comportant plusieurs entrées de texte, et vous pouvez également définir l’emplacement de chaque élément. Donnez des noms significatifs à ces éléments, tels en-tête, pied de page, etc.
 
-Par exemple, si vous souhaitez définir un texte différent pour les en-têtes, les pieds de page et autres marges, dans l’ensemble du document en tant que filigrane, créez plusieurs éléments de filigrane et précisez leur emplacement. Si vous souhaitez que l’ID utilisateur et la date actuelle d’accès au document apparaissent dans l’en-tête, que le nom de la police soit indiqué dans la marge de droite et qu’un texte personnalisé indiquant « CONFIDENTIEL » apparaissent en diagonale sur le document, définissez des éléments de filigrane différents de type texte et précisez leur formatage et leur emplacement. Lorsque le filigrane est appliqué à un document, tous les éléments du filigrane sont appliqués en même temps à ce document, dans l’ordre dans lequel ils ont été ajoutés au filigrane.
+Par exemple, si vous souhaitez définir un texte différent pour les en-têtes, les pieds de page et autres marges, dans l’ensemble du document en tant que filigrane, créez plusieurs éléments de filigrane et précisez leur emplacement. Si vous souhaitez que l’identifiant utilisateur et la date actuelle d’accès au document s’affichent dans l’en-tête, que le nom de la stratégie soit indiqué dans la marge de droite et qu’un texte personnalisé indiquant « CONFIDENTIEL » apparaissent en diagonale sur le document, définissez des éléments de filigrane différents de type texte et précisez leur formatage et leur emplacement. Lorsque le filigrane est appliqué à un document, tous les éléments du filigrane sont appliqués en même temps à ce document, dans l’ordre dans lequel ils ont été ajoutés au filigrane.
 
 En règle générale, les filigranes au format PDF sont utilisés pour ajouter du contenu graphique, tel que des logos, ou des symboles spéciaux, tels que le symbole de droits d’auteur ou celui de marque déposée.
 
@@ -558,7 +558,7 @@ Document Security génère automatiquement un courrier électronique d’invitat
 
 Le courrier électronique d’enregistrement contient un lien permettant d’accéder à une page d’enregistrement et décrit la marche à suivre pour s’enregistrer. Une fois l’utilisateur invité enregistré, Document Security envoie un courrier électronique contenant un lien vers une page d’activation. Un compte reste activé tant que vous ne le désactivez pas ou que vous ne le supprimez pas.
 
-L’activation de l’enregistrement intégré vous permet de ne spécifier votre serveur SMTP, les détails du courrier électronique d’enregistrement, les droits d’accès et le courrier électronique de réinitialisation du mot de passe qu’une seule et unique fois. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans Gestion des utilisateurs et que le rôle Invitation d’un utilisateur de Document Security a été affecté aux utilisateurs et groupes appropriés de votre entreprise (voir [Ajout d’un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement d’utilisateurs créé à l’aide du SDK d’AEM forms. Consultez l’aide de la section « Développement d’interfaces SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est conseillé de configurer un message dans le courrier électronique d’activation, ainsi que dans l’écran d’ouverture de session du client, pour expliquer aux utilisateurs comment contacter l’administrateur et lui demander un nouveau mot de passe ou d’autres informations.
+L’activation de l’enregistrement intégré vous permet de ne spécifier votre serveur SMTP, les détails du courrier électronique d’enregistrement, les droits d’accès et le courrier électronique de réinitialisation du mot de passe qu’une seule et unique fois. Avant d’activer l’enregistrement intégré, vérifiez que vous avez créé un domaine local dans User Management et que le rôle « Utilisateur invité de Document Security » a été attribué aux utilisateurs, utilisatrices et groupes appropriés de votre organisation. (voir [Ajout d’un domaine local](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) et [Création et configuration de rôles](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)). Si vous n’utilisez pas l’enregistrement intégré, vous devez disposer de votre propre système d’enregistrement d’utilisateurs créé à l’aide du SDK d’AEM forms. Consultez l’aide de la section « Développement de SPI pour AEM Forms » dans [Programmation avec AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Si vous n’utilisez pas l’option d’enregistrement intégré, il est conseillé de configurer un message dans le courrier électronique d’activation, ainsi que dans l’écran d’ouverture de session du client, pour expliquer aux utilisateurs comment contacter l’administrateur et lui demander un nouveau mot de passe ou d’autres informations.
 
 **Activation et configuration de l’enregistrement d’un utilisateur invité**
 
@@ -577,7 +577,7 @@ Par défaut, le processus d’enregistrement des utilisateurs invités est désa
 1. (Facultatif) Pour activer l’Enregistrement intégré, sélectionnez Oui. Si vous n’activez pas l’enregistrement intégré, vous devez configurer votre propre système d’enregistrement des utilisateurs.
 1. Cliquez sur OK.
 
-### Exclusion ou inclusion d’un utilisateur ou d’un groupe externe {#exclude-or-include-an-external-user-or-group}
+### Exclure ou inclure un utilisateur ou un groupe externe {#exclude-or-include-an-external-user-or-group}
 
 Vous pouvez limiter la possibilité d’enregistrement dans Document Security à certains utilisateurs ou groupes d’utilisateurs externes. Cette option se révèle notamment utile si vous souhaitez autoriser l’accès à un groupe d’utilisateurs, mais exclure certains membres de ce groupe.
 
@@ -631,7 +631,7 @@ Si votre hôte SMTP vous y invite, saisissez les informations requises dans les
 >
 >si vous modifiez l’option Enregistrement d’utilisateur invité, le fichier config.xml est remplacé et le protocole TLS est désactivé. Si vous écrasez les modifications, vous devez exécuter l’étape précédente pour activer à nouveau la prise en charge du protocole TLS de l’option Enregistrement d’utilisateur invité.
 
-### Paramètres des courriers électroniques d’invitation à effectuer un enregistrement {#registration-invitation-email-settings}
+### Paramètres des courriers électroniques d’invitation à l’enregistrement {#registration-invitation-email-settings}
 
 Document Security envoie automatiquement un courrier électronique d’invitation à l’enregistrement lorsque vous créez un compte d’utilisateur invité ou lorsqu’un utilisateur existant ajoute à une stratégie un destinataire externe qui n’est pas encore enregistré ou qui a été invité à s’enregistrer. Ce courrier électronique contient un lien permettant au destinataire d’accéder à la page d’enregistrement et de saisir les références de son compte, telles que son nom d’utilisateur et son mot de passe. Le mot de passe doit contenir huit caractères, quels qu’ils soient.
 
@@ -667,7 +667,7 @@ Les paramètres suivants se trouvent dans la zone Configuration du message élec
 
 **Message :** texte qui apparaît dans le corps du message pour indiquer que le compte d’utilisateur du destinataire doit être activé. Vous pouvez également inclure d’autres informations, comme la marche à suivre pour contacter un administrateur afin d’obtenir un nouveau mot de passe.
 
-### Configuration d’un courrier électronique de réinitialisation de mot de passe {#configure-a-password-reset-email}
+### Configurer un courrier électronique de réinitialisation de mot de passe {#configure-a-password-reset-email}
 
 Si vous devez réinitialiser le mot de passe d’un utilisateur invité, un courrier électronique invitant l’utilisateur à choisir un nouveau mot de passe est généré. Il n’existe aucun moyen de récupérer le mot de passe d’un utilisateur. Si l’utilisateur l’oublie, vous devez le réinitialiser.
 
@@ -771,7 +771,7 @@ Dans le fichier de configuration de Document Security, vous pouvez définir la f
 
 1. Importez le fichier de configuration (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 
-### Refus d’accès aux services Document Security pour des applications spécifiques {#denying-document-security-services-for-specific-applications}
+### Refuser l’accès aux services Document Security pour des applications spécifiques {#denying-document-security-services-for-specific-applications}
 
 Vous pouvez configurer Document Security pour que l’accès aux services soit refusé à des applications répondant à des critères précis. Les critères peuvent préciser un attribut unique, comme le nom d’une plateforme, ou plusieurs jeux d’attributs. Cette fonction peut vous aider à contrôler les demandes traitées par Document Security. Voici quelques exemples d’application de cette fonction :
 
@@ -905,7 +905,7 @@ Dans cet exemple, l’accès est refusé pour My Application version 3.0 et My O
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>
@@ -930,7 +930,7 @@ Dans cet exemple, toutes les requêtes émanant d’une installation Microsoft P
 ```xml
  <node name="ClientVersionRules">
      <map>
-         <entry key="infoURL" value=”https://get.a.new/version.html”/>
+         <entry key="infoURL" value="https://get.a.new/version.html"/>
      </map>
      <node name="Denials">
          <map/>
@@ -946,7 +946,7 @@ Dans cet exemple, toutes les requêtes émanant d’une installation Microsoft P
  </node
 ```
 
-### Modification des paramètres de configuration des filigranes {#change-the-watermark-configuration-parameters}
+### Modifier les paramètres de configuration des filigranes {#change-the-watermark-configuration-parameters}
 
 Par défaut, vous pouvez définir un maximum de cinq éléments dans un filigrane. Par ailleurs, la taille maximale des documents PDF que vous voulez utiliser en filigrane est de 100 Ko. Vous pouvez modifier ces paramètres dans le fichier config.xml.
 
@@ -967,7 +967,7 @@ Par défaut, vous pouvez définir un maximum de cinq éléments dans un filigran
 
 1. Importez le fichier de configuration (voir [Modification manuelle du fichier de configuration de Document Security](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)).
 
-### Désactivation des liens externes {#disabling-external-links}
+### Désactiver les liens externes {#disabling-external-links}
 
 De nombreux utilisateurs de Document Security n’ont pas accès aux liens externes, tels que **www.adobe.com**, lorsqu’ils utilisent les interfaces utilisateur de Rights Management :
 
