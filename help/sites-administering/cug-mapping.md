@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
 ht-degree: 100%
 
@@ -32,7 +32,7 @@ ht-degree: 100%
   </tr>
   <tr>
    <td><p>Propriété : cq:cugEnabled</p> <p>Type de nœud indiqué : N/A, propriété résiduelle</p> </td>
-   <td><p>L’autorisation:</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification :</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
+   <td><p>Autorisation :</p> <p>Nœud : rep:cugPolicy, type de nœud : rep:CugPolicy</p> <p>Type de nœud indiqué : rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentification :</p> <p>Type de mixin : granite:AuthenticationRequired</p> </td>
    <td><p>Pour restreindre l’accès en lecture, une stratégie de CUG dédiée est appliquée au nœud cible.</p> <p>REMARQUE : les stratégies s’appliquent uniquement aux chemins d’accès pris en charge.</p> <p>Les nœuds rep:cugPolicy de type rep:CugPolicy sont protégés et ne peuvent pas être écrits à l’aide des appels standard de l’API JCR. Vous devrez utiliser la fonctionnalité de gestion du contrôle d’accès JCR.</p> <p>Pour plus d’informations, consultez <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">cette page</a>.</p> <p>Pour exiger une authentification sur un nœud, il suffit d’ajouter le granite du type de mixin : granite:AuthenticationRequired.</p> <p>REMARQUE : valable uniquement sous les chemins d’accès pris en charge qui sont configurés.</p> </td>
   </tr>
   <tr>
