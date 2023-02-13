@@ -5,9 +5,9 @@ description: Découvrez comment gérer un projet AEM avec succès, avec la prise
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -45,9 +45,9 @@ Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de
 
 * [Tutoriels d’AEM](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guide de l’utilisateur de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
-* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
 * [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
