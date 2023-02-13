@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
 source-git-commit: 82b9b852fa3134f140f8de0bad229282979c8a30
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1512'
 ht-degree: 100%
 
@@ -108,7 +108,7 @@ Les actions suivantes sont possibles sur une instance de workflow :
 
 * Arrêter
 * Suspendre
-* Reprise
+* Reprendre
 * Redémarrer
 
 Les instances terminées et arrêtées sont archivées.
