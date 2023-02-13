@@ -12,7 +12,7 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1755'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ Cette procédure est valide pour les types de ressources suivants (certains dép
 | Image | Image |
 | Document | Télécharger |
 | Produit | Produit |
-| Vidéo | Modèle  |
+| Vidéo | Flash |
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Pour déplacer un paragraphe :
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
-## Suppression d’un composant {#deleting-a-component}
+## Supprimer un composant {#deleting-a-component}
 
 Pour supprimer un paragraphe :
 
