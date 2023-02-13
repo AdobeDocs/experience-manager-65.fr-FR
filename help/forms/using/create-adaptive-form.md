@@ -1,5 +1,5 @@
 ---
-title: '''Didacticiel : création d’un formulaire adaptatif'''
+title: '« Didacticiel : créer un formulaire adaptatif »'
 seo-title: Create an adaptive form
 description: Apprenez à créer, mettre en page et prévisualiser un formulaire adaptatif. Apprenez également à configurer les actions d’envoi.
 seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
@@ -9,7 +9,7 @@ discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1376'
 ht-degree: 100%
 
@@ -183,7 +183,7 @@ Les étapes suivantes vous permettent de configurer les actions d’envoi dʼe-m
 
 Vous pouvez utiliser l’option **[!UICONTROL Aperçu]** pour évaluer l’apparence et le comportement d’un formulaire. Vous pouvez envoyer un formulaire en mode aperçu et vérifier les validations appliquées à un formulaire. Si une erreur s’affiche lorsqu’un champ obligatoire est laissé vide, par exemple.
 
-Les formulaires adaptatifs permettent également d’émuler l’expérience d’un formulaire pour différents appareils. Par exemple, iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **[!UICONTROL Prévisualisation]** et **[!UICONTROL Gestionnaire de]** ![l’émulateur](assets/ruler.png) conjointement pour prévisualiser un formulaire pour les appareils dotés de tailles d’écran différentes.
+Les formulaires adaptatifs permettent également d’émuler l’expérience d’un formulaire pour différents appareils. Par exemple, pour iPhone, iPad et appareils de bureau. Vous pouvez utiliser les options **[!UICONTROL Prévisualisation]** et **[!UICONTROL Gestionnaire de]** ![l’émulateur](assets/ruler.png) conjointement pour prévisualiser un formulaire pour les appareils dotés de tailles d’écran différentes.
 
 1. Appuyez sur l’option **[!UICONTROL Aperçu]** sur le côté droit de l’éditeur de formulaires. Le formulaire s’ouvre en mode aperçu. Si vous avez utilisé le nom mentionné dans le didacticiel, l’URL de l’aperçu du formulaire est [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Utilisez ![gestionnaire](assets/ruler.png) pour visualiser l’apparence du formulaire sur différents appareils.
