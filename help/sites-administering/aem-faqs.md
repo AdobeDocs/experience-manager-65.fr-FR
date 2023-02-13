@@ -9,7 +9,7 @@ discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
 docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1096'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ Pour activer SSL par défaut, voir [SSL par défaut](/help/sites-administering/s
 
 Les services de contenu reposent sur les modèles Sling. Les développeurs AEM doivent fournir un pojo de modèle Sling pour chaque composant qui est exporté.
 
-Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/content-services-tutorial-use.html).
+Pour comprendre comment consommer des services de contenu d’AEM depuis une application React, consultez le tutoriel [Prise en main des services de contenu AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr).
 
 De plus, si les développeurs souhaitent exporter un arbre de composants, ils peuvent aussi implémenter les interfaces `ComponentExporter` et `ContainerExporter`, et utiliser `ModelFactory` pour itérer sur les composants enfants et renvoyer leur représentation de modèle. Consultez les ressources ci-dessous :
 
