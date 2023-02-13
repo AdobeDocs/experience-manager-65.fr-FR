@@ -12,9 +12,9 @@ discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 Au fur et à mesure que Granite intègre l’implémentation du référentiel CRX de la spécification API JCR, il applique sa propre administration des utilisateurs et des groupes.
 
-Ces comptes constituent la base sous-jacente de la [Comptes AEM](/help/sites-administering/security.md) et toutes les modifications apportées au compte avec l’administration Granite sont répercutées si/quand les comptes sont accessibles depuis la variable [AEM console Utilisateurs](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
+Ces comptes sont la base des [comptes AEM](/help/sites-administering/security.md) et les modifications de compte apportées avec l’administration Granite sont reflétées si/lorsque l’accès aux comptes s’effectue à partir de la [console AEM Users](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
 
 Les consoles d’administration des utilisateurs et des groupes Granite sont disponibles via la console **[Outils](/help/sites-administering/tools-consoles.md)** de l’interface utilisateur optimisée pour les écrans tactiles :
 
@@ -71,11 +71,11 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **Adresse électronique**
    * **Mot de passe**
 
-      Un mot de passe est obligatoire.
+      Le mot de passe est obligatoire.
 
    * **Confirmer le mot de passe**
 
-      Cette opération est obligatoire car nécessaire pour confirmer le mot de passe.
+      Ce champ est obligatoire car nécessaire à la confirmation du mot de passe.
 
    * **Prénom**
    * **Nom**
@@ -92,24 +92,24 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **À propos**
    * **Paramètres du compte**
 
-      * **État**
+      * **Statut**
 Vous pouvez marquer le compte comme 
-**principal** ou **inactive**.
+**actif** ou **inactif**.
    * **Photo**
 
-      Vous pouvez ici télécharger une photo à utiliser comme avatar.
+      Vous pouvez ici charger une photo à utiliser comme avatar.
 
-      Types de fichiers acceptés : `.jpg .png .tif .gif`
+      Types de fichiers acceptés : `.jpg .png .tif .gif`
 
-      Taille préférée : `240x240px`
+      Taille préférée : `240x240px`
 
    * **Ajouter un utilisateur aux groupes**
 
-      Utilisez la liste déroulante de sélection pour sélectionner les groupes dont l’utilisateur doit être membre. Une fois les groupes sélectionnés, utilisez le **X** à côté du nom pour la désélectionner avant l’enregistrement.
+      Utilisez le menu déroulant de sélection pour sélectionner les groupes dont l’utilisateur doit être membre. Pour les groupes déjà sélectionnés, utilisez le **X** à côté du nom pour les désélectionner avant d’enregistrer.
 
    * **Groupes**
 
-      Liste du ou des groupes dont l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      Liste des groupes dont l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
 
 
 1. Lorsque vous avez défini le compte d’utilisateur, utilisez :
@@ -156,17 +156,17 @@ Vous pouvez marquer le compte comme
 
 1. Lorsque vous avez affecté les groupes ou avez annulé leur affectation selon les besoins, utilisez :
 
-   * **Annuler** pour abandonner les modifications
-   * **Enregistrer** pour confirmer les modifications
+   * **Annuler** pour abandonner les modifications ;
+   * **Enregistrer** pour confirmer les modifications.
 
 ### Suppression de détails d’utilisateur existants {#deleting-existing-user-details}
 
 1. Utilisez la case à cocher pour marquer un ou plusieurs utilisateurs.
-1. Utilisez icône **Supprimer** pour supprimer les détails de l’utilisateur :
+1. Utilisez l’icône **Supprimer** pour supprimer les détails de l’utilisateur :
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Vous êtes invité à confirmer la suppression, puis un message confirme que la suppression a eu lieu.
+1. Vous êtes invité(e) à confirmer la suppression, puis un message confirme que la suppression a eu lieu.
 
 ## Administration des groupes {#group-administration}
 
@@ -184,11 +184,11 @@ Vous pouvez marquer le compte comme
 
    * **ID**
 
-       Il s’agit d’un identifiant unique pour le groupe. Il est obligatoire et ne peut pas contenir d’espaces.
+      Il s’agit d’un identifiant unique pour le groupe. Il est obligatoire et ne peut pas contenir d’espaces.
 
    * **Nom**
 
-      Nom du groupe. elle s’affiche dans la console Groupes .
+      Nom du groupe. Il est affiché dans la console Groupes.
 
    * **Description**
 
@@ -196,11 +196,11 @@ Vous pouvez marquer le compte comme
 
    * **Ajouter des membres au groupe**
 
-      Utilisez la liste déroulante de sélection pour sélectionner le ou les utilisateurs à ajouter au groupe. Une fois les groupes sélectionnés, utilisez le **X** à côté du nom pour la désélectionner avant l’enregistrement.
+      Utilisez le menu déroulant de sélection pour sélectionner un ou des utilisateurs à ajouter au groupe. Pour les groupes déjà sélectionnés, utilisez le **X** à côté du nom pour les désélectionner avant d’enregistrer.
 
    * **Membres du groupe**
 
-      Liste des utilisateurs du groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+      Liste des utilisateurs figurant dans le groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
 
 1. Lorsque vous avez défini le groupe, utilisez :
 
@@ -222,7 +222,7 @@ Vous pouvez marquer le compte comme
 
 1. Le formulaire **Modifier les paramètres de groupe** s’ouvre.
 
-   L’identifiant de groupe est identique à l’identifiant d’origine, mais précédé du préfixe `Copy of`. Vous devez le modifier, car l’identifiant ne peut pas contenir d’espaces. Tous les autres détails sont identiques aux détails d’origine.
+   L’identifiant de groupe est identique à l’identifiant d’origine, mais comporte le préfixe `Copy of`. Vous devez le modifier, car l’identifiant ne peut pas contenir d’espaces. Tous les autres détails sont identiques aux détails d’origine.
 
    Vous pouvez à présent modifier les détails comme indiqué dans la rubrique [Ajout d’un nouveau groupe](#adding-a-new-group).
 
