@@ -1,5 +1,5 @@
 ---
-title: Installation autonome personnalisée
+title: Installer une instance autonome personnalisée
 seo-title: Custom Standalone Install
 description: Découvrez les options disponibles lors de l’installation d’une instance AEM autonome.
 seo-description: Learn about the options available when installing a standalone AEM instance.
@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1622'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Installation autonome personnalisée{#custom-standalone-install}
+# Installer une instance autonome personnalisée{#custom-standalone-install}
 
 Cette section décrit les options disponibles lors de l’installation d’une instance AEM autonome. Vous pouvez également consulter [Éléments de stockage](/help/sites-deploying/storage-elements-in-aem-6.md) pour plus d’informations sur le choix du type de stockage principal après avoir installé AEM 6.
 
@@ -108,7 +108,7 @@ Pour installer et démarrer AEM en tant que service Windows :
 
    Cette commande appelle le script approprié qui lance le service de démon Windows en Java 64 bits au lieu de 32 bits.
 
-1. Pour empêcher que le processus ne se transforme en plusieurs processus, augmentez le paramètre JVM PermGen . Localisez la commande `set jvm_options` et définissez la valeur comme suit :
+1. Pour empêcher que le processus ne se transforme en plusieurs processus, augmentez le paramètre JVM PermGen. Localisez la commande `set jvm_options` et définissez la valeur comme suit :
 
    `set jvm_options=-Xmx1792m`
 
@@ -163,7 +163,7 @@ D’autres options et conventions de renommage sont décrites dans le fichier d�
 
 >[!CAUTION]
 >
->Ces options sont valides à compter de la version d’origine d’AEM 6.5 (6.5.0.0). Des modifications dans les versions ultérieures de SP sont possibles.
+>Ces options sont valides à compter de la version d’origine d’AEM 6.5 (6.5.0.0). Des modifications sont susceptibles d’être apportées dans les versions ultérieures de SP.
 
 ```shell
 Loading quickstart properties: default
