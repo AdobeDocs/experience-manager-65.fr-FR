@@ -1,32 +1,32 @@
 ---
-title: Impossible d’utiliser Experience Manager Forms avec certaines versions du JDK Oracle
+title: Impossible d’utiliser Experience Manager Forms avec certaines versions du JDK Oracle.
 seo-title: Unable to use Experience Manager Forms with certain versions of Oracle JDK
-description: Impossible d’utiliser Experience Manager Forms avec certaines versions du JDK Oracle
+description: Impossible d’utiliser Experience Manager Forms avec certaines versions du JDK Oracle.
 seo-description: Unable to use Experience Manager Forms with certain versions of Oracle JDK
 exl-id: 6a8a7cb7-77d6-4bfc-82f3-82d0fddfc10a
 source-git-commit: 0142b46d087d34707b09a1f172910c8b287b839d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '177'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Impossible d’utiliser Experience Manager Forms avec certaines versions du JDK Oracle {#unable-to-use-forms-with-certain-versions-of-oracle-jdk}
+# Impossible d’utiliser Experience Manager Forms avec certaines versions du JDK Oracle. {#unable-to-use-forms-with-certain-versions-of-oracle-jdk}
 
-Le problème s’applique aux versions suivantes :
+Le problème s’applique aux versions suivantes :
 
-* Experience Manager 6.3 Forms
-* Experience Manager 6.4 Forms
-* Experience Manager 6.5 Forms
+* Experience Manager Forms 6.3
+* Experience Manager Forms 6.4
+* Formulaires avec Experience Manager 6.5
 
 ## Problème {#issue}
 
-L’utilisateur rencontre l’exception suivante :
+L’utilisateur ou l’utilisatrice rencontre l’exception suivante :
 `Caused by: javax.xml.xpath.XPathExpressionException: javax.xml.transform.TransformerException: JAXP0801002: the compiler encountered an XPath expression containing '101' operators that exceeds the '100' limit set by 'FEATURE_SECURE_PROCESSING'.`
 
 ## Raison {#reason}
 
-L’exception se produit lorsque vous exécutez Experience Manager Forms avec la version Oracle JDK (Java Development Kit) supérieure ou égale aux versions suivantes :
+L’exception se produit lorsque vous exécutez Experience Manager Forms avec une version du JDK (Java Development Kit) Oracle supérieure ou égale aux versions suivantes :
 
 * [JDK7u341](https://www.oracle.com/java/technologies/javase/7u341-relnotes.html)
 * [JDK8u331](https://www.oracle.com/java/technologies/javase/8u331-relnotes.html)
@@ -37,7 +37,7 @@ La version ci-dessus et les versions ultérieures de Java incluent de nouvelles 
 ## Solution {#workaround}
 
 1. Arrêtez votre serveur Experience Manager Forms.
-1. Configurez l’argument JVM suivant pour votre serveur d’applications :
+1. Configurez l’argument JVM suivant pour votre serveur d’applications :
 
    `-Djdk.xml.xpathExprOpLimit=2000`
 
