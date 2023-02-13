@@ -1,5 +1,5 @@
 ---
-title: Création d’un modèle de formulaire adaptatif personnalisé
+title: Créer un modèle de formulaire adaptatif personnalisé
 seo-title: Creating a custom adaptive form template
 description: Cet article décrit comment créer des modèles de formulaire adaptatif personnalisés.
 seo-description: This article describes how to create custom adaptive form templates.
@@ -11,13 +11,13 @@ discoiquuid: affba49e-9712-4d29-858b-2f8ec4f2b1f1
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1270'
 ht-degree: 100%
 
 ---
 
-# Création d’un modèle de formulaire adaptatif personnalisé{#creating-a-custom-adaptive-form-template}
+# Créer un modèle de formulaire adaptatif personnalisé{#creating-a-custom-adaptive-form-template}
 
 >[!NOTE]
 >
