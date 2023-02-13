@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de la liste des instances de processus
+title: Personnaliser la liste des instances de processus
 seo-title: Customizing the listing of process instances
 description: Comment personnaliser les propriétés affichées dans une instance de processus de l’espace de travail AEM Forms.
 seo-description: How-to customize the properties displayed in process instance in AEM Forms workspace.
@@ -10,13 +10,13 @@ topic-tags: forms-workspace
 discoiquuid: 40d7d43f-ee0a-4e34-ae93-20c9c940f76b
 exl-id: b27ffe92-8491-43a0-bf42-613eb39a606e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '284'
 ht-degree: 100%
 
 ---
 
-# Personnalisation de la liste des instances de processus {#customizing-the-listing-of-process-instances}
+# Personnaliser la liste des instances de processus {#customizing-the-listing-of-process-instances}
 
 La liste des instances de processus est affichée dans l’onglet Suivi de l’espace de travail AEM Forms.
 
