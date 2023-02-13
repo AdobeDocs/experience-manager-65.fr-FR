@@ -1,5 +1,5 @@
 ---
-title: Fonctions de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms
+title: Fonctionnalités de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms
 seo-title: Features of Flex workspace not available in AEM Forms workspace
 description: L’espace de travail AEM Forms va plus loin que le Workspace basé sur Flex. Lisez les informations sur les différences de caractéristiques et de fonctionnalités.
 seo-description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about the differences in features and capabilities.
@@ -11,13 +11,13 @@ topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 exl-id: a9d2fd77-e8cf-45bf-8492-f1bb8d580548
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
 ---
 
-# Fonctions de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
+# Fonctionnalités de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
 L’espace de travail AEM Forms est tout nouveau. Les caractéristiques suivantes de l’espace de travail basé sur Flex ne sont pas disponibles dans l’espace de travail AEM Forms.
 
