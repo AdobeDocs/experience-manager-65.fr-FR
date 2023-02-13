@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Deploying User Guide
 description: Découvrez l’installation et le déploiement d’Adobe Experience Manager 6.5 et son architecture, y compris notre déploiement cloud d’Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Ce guide couvre toutes les tâches de déploiement d’AEM, telles que l’insta
 
 * [Tutoriels d’AEM](https://helpx.adobe.com/fr/experience-manager/kt/index/aem-6-4-videos.html)
 * [Guide de l’utilisateur de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
-* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
 * [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
