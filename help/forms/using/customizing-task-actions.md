@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des actions de tâche
+title: Personnaliser les actions de tâche
 seo-title: Customizing Task Actions
 description: Vous pouvez personnaliser l’aspect des actions de tâche, utiliser uniquement des images pour les actions, et personnaliser les images utilisées dans des actions d’acheminement.
 seo-description: You can customize appearance of the task actions, use only images for actions, and customize the images used in route actions.
@@ -10,13 +10,13 @@ topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: d17863fb-7950-493d-b378-16861c4af176
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '287'
 ht-degree: 100%
 
 ---
 
-# Personnalisation des actions de tâche {#customizing-task-actions}
+# Personnaliser les actions de tâche {#customizing-task-actions}
 
 L’espace de travail AEM Forms permet aux utilisateurs de personnaliser les actions de tâche. Avant de personnaliser les actions de tâche, vous devez suivre les étapes indiquées dans [Procédure générique de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md).
 
