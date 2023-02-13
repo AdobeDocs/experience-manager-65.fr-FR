@@ -11,8 +11,8 @@ discoiquuid: 683809ac-089b-49bf-a72c-67d32439081f
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '2170'
 ht-degree: 100%
 
@@ -31,7 +31,7 @@ Les XDP sont conçus dans Adobe Forms Designer. Cet article fournit des détail
 
 ## Création d’une mise en page pour des lettres ou pour le canal d’impression des communications interactives {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Une mise en page définit l’apparence graphique d’une lettre/ ou d’un canal d’impression d’une communication interactive. La mise en page peut contenir des champs de formulaire types comme « Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Le concepteur de formulaires crée la mise en page et, une fois celle-ci terminée, le spécialiste des applications l’envoie au serveur AEM. À partir de là, la mise en page peut être sélectionnée lors de la création d’un modèle de correspondance ou du canal d’impression d’une communication interactive.
+Une mise en page définit l’apparence graphique d’une lettre ou d’un canal d’impression d’une communication interactive. La disposition peut comporter des champs de formulaire types comme « Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Le concepteur de formulaires crée la mise en page et, une fois celle-ci terminée, le spécialiste des applications l’envoie au serveur AEM. À partir de là, la mise en page peut être sélectionnée lors de la création d’un modèle de correspondance ou du canal d’impression d’une communication interactive.
 
 ![Concepteur : crée une mise en page](assets/claimsubrogationlayout.png)
 
