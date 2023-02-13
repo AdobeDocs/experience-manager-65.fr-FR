@@ -1,5 +1,5 @@
 ---
-title: Contrôle et maintien de votre instance AEM
+title: Surveiller et maintenir votre instance AEM
 seo-title: Monitoring and Maintaining Your AEM instance
 description: Découvrez comment surveiller AEM.
 seo-description: Learn how to monitor AEM.
@@ -13,13 +13,13 @@ docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5972'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Contrôle et maintien de votre instance AEM{#monitoring-and-maintaining-your-aem-instance}
+# Surveiller et maintenir votre instance AEM{#monitoring-and-maintaining-your-aem-instance}
 
 Une fois les instances AEM déployées, certaines tâches sont nécessaires pour surveiller et conserver leur fonctionnalité, leur performance et leur intégrité.
 
@@ -100,62 +100,62 @@ Cette section traite des opérations de maintenance liées à la fonctionnalité
 
 ### Présentation {#overview}
 
-Le **Purge des versions** est disponible sous la forme d’une tâche de maintenance hebdomadaire. Avant d’utiliser pour la première fois, il doit être ajouté, puis configuré. Ensuite, il peut être exécuté sur demande ou sur une base hebdomadaire.
+L’outil **Purge de version** est disponible sous la forme d’une tâche de maintenance hebdomadaire. Avant de commencer à l’utiliser, il faut l’ajouter et le configurer. Ensuite, vous pouvez l’exécuter sur demande ou de manière hebdomadaire.
 
 ### Purge des versions d’un site web {#purging-versions-of-a-web-site}
 
 Pour purger les versions d’un site web, procédez comme suit :
 
-1. Accédez au **[Outils](/help/sites-administering/tools-consoles.md)** **console**, sélectionnez **Opération**, **Maintenance**, puis **Période de maintenance hebdomadaire**.
+1. Accédez à la **console** **[Outils](/help/sites-administering/tools-consoles.md)**, sélectionnez **Opération**, **Maintenance**, puis la **Fenêtre de maintenance hebdomadaire**.
 
-1. Sélectionner **+ Ajouter** dans la barre d’outils supérieure.
+1. Sélectionnez **+ Ajouter** dans la barre d’outils supérieure.
 
-   ![Ajouter la purge de version](assets/version-purge-add.png)
+   ![Ajouter la Purge de version](assets/version-purge-add.png)
 
-1. Sélectionner **Purge de version** dans la liste déroulante du **Ajouter une nouvelle tâche** boîte de dialogue. Alors **Enregistrer**.
+1. Sélectionnez **Purge de version** dans la liste déroulante de la boîte de dialogue **Ajouter une nouvelle tâche**. Cliquez ensuite sur **Enregistrer**.
 
-   ![Ajouter la purge de version](assets/version-purge-add-new-task.png)
+   ![Ajouter la Purge de version](assets/version-purge-add-new-task.png)
 
-1. Le **Purge de version** La tâche sera ajoutée. Utilisez les actions de la carte pour :
-   * Sélectionner : affiche des actions supplémentaires dans la barre d’outils supérieure.
-   * Exécuter : pour exécuter immédiatement la purge configurée
-   * Configuration : pour configurer la tâche de purge hebdomadaire
+1. La tâche **Purge de version** est ajoutée. Utilisez les actions de la carte pour :
+   * Sélectionner : sert à afficher des actions supplémentaires dans la barre d’outils supérieure.
+   * Exécuter : sert à exécuter immédiatement la purge configurée.
+   * Configurer : sert à configurer la tâche de purge hebdomadaire.
 
    ![Actions de purge de version](assets/version-purge-actions.png)
 
-1. Sélectionnez la **Configurer** action d’ouverture de la console web pour **Tâche de purge de version de la gestion du contenu web Day CQ**, où vous pouvez configurer :
+1. Sélectionnez l’action **Configurer** pour ouvrir la console web de la **Tâche de purge de version de la gestion du contenu web Day CQ**, où vous pouvez configurer :
 
-   ![Configuration de la purge de version](assets/version-purge-configuration.png)
+   ![la configuration de la purge de version](assets/version-purge-configuration.png),
 
-   * **Purge des chemins**
-Définissez le chemin de début du contenu à purger. par exemple, 
+   * **la purge des chemins d’accès**.
+Définissez le chemin d’accès de début du contenu à purger. Par exemple, 
 `/content/wknd`.
 
       >[!CAUTION]
       >
-      >Il est vivement recommandé de définir plusieurs chemins pour chaque site web.
+      >Il est vivement recommandé de définir plusieurs chemins d’accès pour chaque site web.
       >
-      >La définition d’un chemin avec trop d’enfants peut considérablement rallonger le temps nécessaire à la purge.
+      >La définition d’un chemin d’accès avec trop de tâches enfants peut considérablement rallonger le temps nécessaire à la purge.
 
    * **Purge récursive des versions**
 
-      * Désélectionnez cette option si vous souhaitez purger uniquement le noeud défini par votre chemin d’accès.
-      * Sélectionnez cette option si vous souhaitez purger le noeud défini par votre chemin d’accès et ses descendants.
-   * **Nombre maximum de versions**
-Définissez le nombre maximal de versions (pour chaque noeud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
+      * À désélectionner si vous souhaitez purger uniquement le nœud défini par le chemin d’accès.
+      * À sélectionner si vous souhaitez purger le nœud défini par le chemin d’accès et ses descendants.
+   * **Nombre maximal de versions**
+Définissez le nombre maximal de versions (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
-   * **Nombre minimum de versions**
-Définissez le nombre minimum de versions (pour chaque noeud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
+   * **Nombre minimal de versions**
+Définissez le nombre minimal de versions (pour chaque noeud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
 
-   * **Âge de version maximal**
-Définissez l’âge de version maximal en jours (pour chaque noeud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
-   Alors **Enregistrer**.
+   * **Âge maximal de la version**
+Définissez l’âge maximal de la version en jours (pour chaque nœud) que vous souhaitez conserver. Laissez le paramètre vide si vous ne souhaitez pas l’utiliser.
+   Cliquez ensuite sur **Enregistrer**.
 
-1. Accédez à la **Période de maintenance hebdomadaire** et sélectionnez **Exécuter** pour lancer le processus immédiatement.
+1. Accédez à la **Fenêtre de maintenance hebdomadaire** et sélectionnez **Exécuter** pour lancer le processus immédiatement.
 
 >[!CAUTION]
 >
->Vous pouvez utiliser la boîte de dialogue de l’interface utilisateur classique pour effectuer une [Exécution d’essai](#analyzing-the-console) de votre configuration :
+>Vous pouvez utiliser la boîte de dialogue de l’interface utilisateur classique pour effectuer une [Exécution d’essai](#analyzing-the-console) de votre configuration :
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
@@ -163,11 +163,11 @@ Définissez l’âge de version maximal en jours (pour chaque noeud) que vous so
 
 #### Exécution d’essai - Analyse de la console {#analyzing-the-console}
 
-L’IU classique fournit une **Exécution d’essai** à partir de :
+L’interface utilisateur classique fournit une option d’**Exécution d’essai** à partir de :
 
 * http://localhost:4502/etc/versioning/purge.html
 
-Le processus répertorie tous les noeuds qui ont été traités. Au cours du processus, un nœud peut avoir l’un des statuts suivants :
+Le processus répertorie tous les nœuds qui ont été traités. Au cours du processus, un nœud peut avoir l’un des statuts suivants :
 
 * `ignore (not versionnable)` : le nœud ne prend pas en charge les versions et est ignoré lors du processus.
 
@@ -179,7 +179,7 @@ Le processus répertorie tous les noeuds qui ont été traités. Au cours du pro
 Par ailleurs, la console affiche des informations utiles sur les versions :
 
 * `V 1.0` : le numéro de version.
-* `V 1.0.1`&#42;: l’étoile indique que la version est la version actuelle (de base) et ne peut pas être purgée.
+* `V 1.0.1`&#42; : l’étoile indique que la version est la version actuelle (de base) et ne peut pas être purgée.
 
 * `Thu Mar 15 2012 08:37:32 GMT+0100` : la date de la version.
 
@@ -194,7 +194,7 @@ Dans l’exemple suivant :
 
 Les enregistrements et les fichiers journaux d’audit associés à Adobe Experience Manager (AEM) sont disponibles dans différents emplacements. Ce qui suit vise à vous donner un aperçu de ce que vous pouvez trouver, à quels emplacements.
 
-### Utilisation des journaux {#working-with-logs}
+### Utiliser des journaux {#working-with-logs}
 
 La gestion du contenu web d’AEM permet d’enregistrer de manière détaillée les journaux. Après avec décompressé et démarré Quickstart, vous pouvez trouver les journaux à l’adresse suivante :
 
@@ -643,8 +643,8 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
    <td><a href="https://www.ej-technologies.com/">https://www.ej-technologies.com/</a></td>
   </tr>
   <tr>
-   <td>Enregistreur de vol Java</td>
-   <td>Java Flight Recorder (JFR) est un outil permettant de collecter des données de diagnostic et de profilage sur une application Java en cours d’exécution.</td>
+   <td>Java Flight Recorder</td>
+   <td>Java Flight Recorder (JFR) est un outil permettant de collecter des données de création de profils utilisateur et de diagnostic à propos d’une application Java en cours d’exécution.</td>
    <td><a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE</a></td>
   </tr>
   <tr>
@@ -655,7 +655,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Java VisualVM</td>
    <td>Observer les métriques, les threads, la mémoire et le profilage JVM.</td>
-   <td><p>Utilisation : visualvm ou visualvm<br /> </p> <p>Voir <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> et <a href="#monitoring-performance-using-j-visualvm">Surveillance des performances à l’aide de (J) VisualVM</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.8, VisualVM est extensible avec des modules complémentaires. VisualVM est arrêté après JDK 9. Utilisez plutôt Java Flight Recorder.</p> </td>
+   <td><p>Utilisation : visualvm ou visualvm<br />. </p> <p>Voir <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> et <a href="#monitoring-performance-using-j-visualvm">Surveillance de la performance en utilisant (J)VisualVM</a>.</p> <p><strong>Remarque :</strong> avec JDK 1.8, VisualVM est extensible avec des modules complémentaires. VisualVM est arrêté après JDK 9. Utilisez plutôt Java Flight Recorder.</p> </td>
   </tr>
   <tr>
    <td>truss/strace, lsof</td>
@@ -670,7 +670,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
   <tr>
    <td>Outil de profilage du processeur et de la mémoire<br /> </td>
    <td><a href="#interpreting-the-request-log"> Utilisé pour l’analyse des demandes lentes pendant le développement.</a>.</td>
-   <td>Par exemple, <a href="https://www.yourkit.com/">YourKit</a>. ou le <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Enregistreur de vol Java</a>.</td>
+   <td>Par exemple, <a href="https://www.yourkit.com/">YourKit</a>. Ou <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Java Flight Recorder</a>.</td>
   </tr>
   <tr>
    <td><a href="#information-collection">Collecte des informations</a></td>
@@ -682,7 +682,7 @@ Certains d’entre eux varient en fonction de votre système d’exploitation.
 
 ### Interprétation de request.log {#interpreting-the-request-log}
 
-Ce fichier permet d’enregistrer des données de base sur chaque demande envoyée à AEM. De là, de précieuses conclusions peuvent être extraites.
+Ce fichier permet d’enregistrer des données de base sur chaque demande envoyée à AEM. Vous pouvez en tirer des conclusions précieuses.
 
 `request.log` fournit une méthode intégrée pour identifier la durée des demandes. Pour le développement, il est utile d’utiliser `tail -f` sur `request.log` et d’observer les temps de réponse lents. Pour analyser un fichier `request.log` de plus grande envergure, nous vous recommandons [l’utilisation de `rlog.jar`, qui permet de trier et de filtrer les délais de réponse](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -697,7 +697,7 @@ Le journal des demandes permet d’enregistrer chaque demande effectuée, ainsi 
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-En totalisant toutes les entrées de GET au cours de périodes spécifiques (par exemple, sur différentes périodes de 24 heures), vous pouvez effectuer des instructions sur le trafic moyen de votre site web.
+En totalisant toutes les entrées GET de périodes spécifiques (par exemple, plusieurs périodes de plus de 24 heures), vous pouvez tirer des conclusions sur le trafic moyen sur votre site Web.
 
 #### Surveillance des délais de réponse avec request.log {#monitoring-response-times-with-the-request-log}
 
@@ -727,7 +727,7 @@ Ce journal dispose d’une ligne par requête ou réponse :
 
 * Pour les réponses, la ligne contient :
 
-   * le code d’état (200 signifie &quot;succès&quot;, 404 signifie &quot;page introuvable&quot;
+   * le code d’état (200 signifie « réussite », 404 signifie « page non trouvée »
    * le type MIME
    * le temps de réponse
 
@@ -927,7 +927,7 @@ La commande d’outil `jconsole` est disponible avec JDK.
 
 ### Surveillance de la performance à l’aide de (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
-Pour JDK 6-8, la commande d’outil `visualvm` est disponible. Après avoir installé un JDK, vous pouvez :
+Pour le JDK 6-8, la commande d’outil `visualvm` est disponible. Une fois que vous avez installé le JDK, vous pouvez :
 
 1. Démarrez votre instance AEM.
 
@@ -968,7 +968,7 @@ Les informations suivantes peuvent s’avérer utiles :
 * [Combien de demandes par heure recevez-vous sur le système de création lorsque le niveau d’activité est élevé ?](#how-many-requests-per-hour-do-you-have-on-the-author-system-at-peak-time)
 * [Combien de demandes par heure recevez-vous sur le système de publication lorsque le niveau d’activité est élevé ?](#how-many-requests-per-hour-do-you-have-on-the-publish-system-at-peak-time)
 
-#### Combien d’auteurs travaillent avec le système ? {#how-many-authors-are-working-with-the-system}
+#### Combien d’auteur(e)s travaillent avec le système ? {#how-many-authors-are-working-with-the-system}
 
 Pour afficher le nombre d’auteurs qui ont utilisé le système depuis l’installation, utilisez la ligne de commande :
 
@@ -995,7 +995,7 @@ Pour voir nombre total d’activation de page depuis l’installation du serveur
 
 Calculez ensuite le nombre de jours écoulés depuis l’installation pour calculer la moyenne.
 
-#### Combien de pages maintenez-vous actuellement sur ce système ?  {#how-many-pages-do-you-currently-maintain-on-this-system}
+#### Combien de pages maintenez-vous actuellement sur ce système ? {#how-many-pages-do-you-currently-maintain-on-this-system}
 
 Pour voir nombre de pages actuellement sur le serveur, utilisez une requête de référentiel ; via CRXDE- outils- requête : 
 
@@ -1005,7 +1005,7 @@ Pour voir nombre de pages actuellement sur le serveur, utilisez une requête de 
 
 * **Requête** `//element(*, cq:Page)`
 
-#### Si vous utilisez MSM, quel est le nombre moyen de rollouts par mois ?  {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
+#### Si vous utilisez MSM, quel est le nombre moyen de déploiements par mois ? {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
 Pour déterminer le nombre total de déploiements depuis l’installation, utilisez une requête de référentiel ; via CRXDE - Outils - Requête :
 
@@ -1017,7 +1017,7 @@ Pour déterminer le nombre total de déploiements depuis l’installation, utili
 
 Calculez le nombre de mois écoulés depuis l’installation pour calculer la moyenne.
 
-#### Quel est le nombre moyen de Live Copies par mois ?  {#what-is-the-average-number-of-live-copies-per-month}
+#### Quel est le nombre moyen de Live Copies par mois ? {#what-is-the-average-number-of-live-copies-per-month}
 
 Pour déterminer le nombre total des Live Copies effectuées depuis l’installation utilisent une requête de référentiel ; via CRXDE- outils- requête : 
 
@@ -1113,7 +1113,7 @@ Si le processeur de votre système fonctionne en permanence à 100 %, voir :
 
 * La base de connaissances :
 
-   * [Analyse des processus lents et bloqués](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
+   * [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html) 
 
 ### Mémoire insuffisante {#out-of-memory}
 
