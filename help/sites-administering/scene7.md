@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5484'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -577,7 +577,7 @@ Plus précisément, vous configurez le format de fichier accepté par le type MI
    >
    >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   >Assurez-vous que votre fichier de PSD comporte des &quot;calques&quot;. S’il s’agit strictement d’une image ou d’une image avec un masque, elle est traitée en tant qu’image uniquement, car il n’y a aucun calque à traiter.
+   >Assurez-vous que votre fichier PSD contient des calques. S’il s’agit strictement d’une image ou d’une image avec un masque, elle est traitée en tant qu’image uniquement, car il n’y a aucun calque à traiter.
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, sélectionnez **[!UICONTROL Tout enregistrer]**.
 
