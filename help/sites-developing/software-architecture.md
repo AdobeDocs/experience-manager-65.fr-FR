@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Outre une maintenance plus simple du code, cela permettra au site de conserver u
 
 ### Créez des conceptions de modèles {#design-template-designs}
 
-Définir les composants qui peuvent être inclus dans chaque système de paragraphes sur la page permet de conserver l’homogénéité d’aspect et d’utilisation du site. En limitant l’accès à la conception sur les pages, les &quot;super-auteurs&quot; peuvent être autorisés à modifier les composants autorisés par page sans intervention du développeur, tout en s’assurant que les autres auteurs respectent les normes de l’entreprise.
+Définir les composants qui peuvent être inclus dans chaque système de paragraphes sur la page permet de conserver l’homogénéité d’aspect et d’utilisation du site. En limitant l’accès à la conception des pages, des « super auteurs » ou « super autrices » peuvent être autorisé(e)s à modifier les composants autorisés par page sans l’intervention du développeur ou de la développeuse, tout en s’assurant que les autres auteurs et autrices respectent les normes de l’entreprise.
 
 ### Développement d’une architecture SOLID {#develop-a-solid-architecture}
 
