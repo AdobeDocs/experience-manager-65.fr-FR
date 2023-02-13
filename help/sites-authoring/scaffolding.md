@@ -1,5 +1,5 @@
 ---
-title: Génération de modèles automatique
+title: Mode Scaffolding
 seo-title: Scaffolding
 description: Avec le mode Scaffolding, vous pouvez créer un formulaire dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
 seo-description: With scaffolding you can create a scaffold with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure
@@ -11,13 +11,13 @@ topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
 ht-degree: 100%
 
 ---
 
-# Génération de modèles automatique{#scaffolding}
+# Mode Scaffolding{#scaffolding}
 
 Dans certains cas, il arrive que vous deviez créer un jeu volumineux dont les pages partagent la même structure, mais présentent un contenu différent. Si vous utilisez l’interface AEM standard, vous devez créer chaque page, y faire glisser les composants appropriés, puis compléter chacune d’elles séparément.
 
