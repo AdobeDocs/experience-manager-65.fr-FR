@@ -11,9 +11,9 @@ docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2042'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 L’intégration de données AEM Forms permet de configurer des sources de données disparates et de s’y connecter. La prise en charge est assurée par défaut pour les types suivants. Toutefois, avec peu de personnalisation, vous pouvez intégrer d’autres sources de données.
 
-* Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS et Sybase
+* Bases de données relationnelles : MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS et Sybase.
 * Profil utilisateur AEM
 * Services web RESTful
 * Services web SOAP
@@ -65,7 +65,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
 
    >[!NOTE]
    >
-   > Si votre modèle de données Forms contient un objet qui est un mot-clé réservé à votre base de données relationnelle, cela peut entraîner des problèmes d’ajout, de mise à jour ou de récupération de données. Ainsi, évitez d’utiliser de tels objets dans votre modèle de données de formulaire.
+   > Si votre modèle de données de formulaire contient un objet qui est un mot-clé réservé à votre base de données relationnelle, cela peut entraîner des problèmes d’ajout, de mise à jour ou de récupération de données. Ainsi, évitez d’utiliser de tels objets dans votre modèle de données de formulaire.
 
 ## Configurer le profil utilisateur AEM {#configure-aem-user-profile}
 
@@ -73,7 +73,7 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
 1. Accédez à la console web AEM à l’adresse https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Recherchez **[!UICONTROL Intégrations de données AEM Forms - Configuration du connecteur de profil utilisateur]** et appuyez pour ouvrir la configuration en mode édition.
-1. Dans la boîte de dialogue Configuration du connecteur de profil utilisateur, vous pouvez ajouter, supprimer ou mettre à jour les propriétés du profil utilisateur. Les propriétés spécifiées peuvent être utilisées dans le modèle de données de formulaire. Utilisez le format suivant pour spécifier les propriétés du profil utilisateur :
+1. Dans la boîte de dialogue Configuration du connecteur de profil utilisateur, vous pouvez ajouter, supprimer ou mettre à jour les propriétés du profil utilisateur. Les propriétés spécifiées pourront être utilisées dans le modèle de données de formulaire. Utilisez le format suivant pour spécifier les propriétés du profil utilisateur :
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -84,7 +84,7 @@ Vous pouvez configurer le profil utilisateur AEM à l’aide de la configuration
 
    >[!NOTE]
    >
-   >Le **&#42;** dans l’exemple ci-dessus, indique tous les noeuds sous la balise `profile/empLocation/` noeud dans AEM profil utilisateur dans la structure CRXDE. Cela signifie que le modèle de données du formulaire peut accéder à la propriété `city` de type `string` présente dans n’importe quel nœud sous le nœud `profile/empLocation/`. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
+   >Le caractère **&#42;** dans l’exemple ci-dessus indique tous les nœuds sous le nœud `profile/empLocation/` du profil utilisateur AEM dans la structure CRXDE. Cela signifie que le modèle de données du formulaire peut accéder à la propriété `city` de type `string` présente dans n’importe quel nœud sous le nœud `profile/empLocation/`. Toutefois, les nœuds qui contiennent la propriété spécifiée doivent suivre une structure cohérente.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour sauvegarder la configuration.
 
@@ -223,4 +223,4 @@ Lorsque vous activez l’authentification mutuelle pour le modèle de données d
 
 ## Étapes suivantes {#next-steps}
 
-Vous avez configuré la source de données. Vous pouvez ensuite créer un modèle de données de formulaire ou, si vous avez déjà créé un modèle de données de formulaire sans source de données, vous pouvez l’associer aux sources de données que vous avez configurées. Voir [Création d’un modèle de données de formulaire](/help/forms/using/create-form-data-models.md) pour plus de détails.
+Vous avez configuré la source de données. Vous pouvez ensuite créer un modèle de données de formulaire ou, si vous avez déjà créé un modèle de données de formulaire sans source de données, vous pouvez l’associer aux sources de données que vous venez de configurer. Voir [Création d’un modèle de données de formulaire](/help/forms/using/create-form-data-models.md) pour plus de détails.
