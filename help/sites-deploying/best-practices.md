@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques de déploiement
+title: Meilleures pratiques de déploiement
 seo-title: Deploying Best Practices
 description: Meilleures pratiques de déploiement et de maintenance.
 seo-description: Deploying and maintaining best practices.
@@ -11,13 +11,13 @@ topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
 ht-degree: 100%
 
 ---
 
-# Bonnes pratiques de déploiement{#deploying-best-practices}
+# Meilleures pratiques de déploiement{#deploying-best-practices}
 
 Les meilleures pratiques de déploiement expliquent comment déployer ou maintenir AEM de la façon la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
 
@@ -70,7 +70,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
  </tbody>
 </table>
 
-## Communautés {#communities}
+## Communities {#communities}
 
 AEM Communities simplifie la création et la gestion des communautés sur site. Les bonnes pratiques pour AEM Communities sont présentées ici :
 
@@ -95,7 +95,7 @@ Les meilleures pratiques relatives à la performance sont répertoriées ici :
   <tr>
    <td>Bonnes pratiques pour l’assurance qualité</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Bonnes pratiques pour l’assurance qualité</a></td>
-   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Elle s’adresse principalement aux ingénieurs en assurance qualité, aux chefs de projet et aux administrateurs système.</td>
+   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Cela s’adresse principalement aux ingénieur(e)s en assurance qualité, aux chefs de projet et aux administrateurs et administratrices système.</td>
   </tr>
   <tr>
    <td>Utilisation de Dispatcher avec un CDN</td>
@@ -105,7 +105,7 @@ Les meilleures pratiques relatives à la performance sont répertoriées ici :
   <tr>
    <td>Optimisation des performances</td>
    <td><a href="/help/sites-deploying/configuring-performance.md">Optimisation des performances</a></td>
-   <td>L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs.</td>
+   <td>L’un des problèmes majeurs est le temps que met votre site web pour répondre aux requêtes des visiteurs et visiteuses.</td>
   </tr>
   <tr>
    <td>Test de performance</td>
