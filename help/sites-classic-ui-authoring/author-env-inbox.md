@@ -12,7 +12,7 @@ discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '581'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Pour afficher vos notifications, procédez comme suit :
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-## Abonnement aux notifications {#subscribing-to-notifications}
+## Souscrire à des notifications {#subscribing-to-notifications}
 
 Pour souscrire à des notifications :
 
