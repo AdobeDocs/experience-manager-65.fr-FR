@@ -1,5 +1,5 @@
 ---
-title: Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office
+title: Activer AEM pour rechercher des documents PDF et Microsoft Office protégés par la sécurité des documents
 seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
 description: Découvrez comment permettre à la recherche AEM native d’effectuer une recherche de texte intégral sur des documents PDF protégés par DRM.
 seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
@@ -12,7 +12,7 @@ noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
 ht-degree: 100%
 
