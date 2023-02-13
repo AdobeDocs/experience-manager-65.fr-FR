@@ -1,5 +1,5 @@
 ---
-title: Utilisation des Services de document AEM par programmation
+title: Utiliser Document Services d’AEM par programmation
 seo-title: Using AEM Document Services Programmatically
 description: Apprenez à utiliser les API Document Services pour signer numériquement, chiffrer, et générer des documents PDF.
 seo-description: Learn how to use Document Services APIs to Digitally sign, encrypt, and generate PDF documents.
@@ -10,13 +10,13 @@ topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6430'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Utilisation des Services de document AEM par programmation  {#using-aem-document-services-programmatically}
+# Utiliser Document Services d’AEM par programmation  {#using-aem-document-services-programmatically}
 
 Les extraits et exemples de ce document vous aident à comprendre et à utiliser AEM Document Services dans un environnement AEM Forms sur OSGi. Pour obtenir des extraits et des exemples pour l’environnement d’AEM Forms sur JEE, voir
 
@@ -30,7 +30,7 @@ Les extraits et exemples de ce document vous aident à comprendre et à utiliser
 
 * Avant d’utiliser les API du service DocAssurance, [configurez le service DocAssurance](/help/forms/using/install-configure-document-services.md).
 
-* Téléchargez et configurez [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec votre projet Maven AEM. Les classes de client requises pour générer des projets Maven utilisant AEM Document Services sont disponibles dans [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+* Téléchargez et configurez [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec votre projet Maven AEM. Les classes de client requises pour générer des projets Maven utilisant AEM Document Services sont disponibles dans [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
 * En savoir plus sur [Comment créer votre projet AEM à l’aide de Maven](/help/sites-developing/ht-projects-maven.md)
 
@@ -76,7 +76,7 @@ Vous pouvez effectuer les opérations suivantes à l’aide du service DocAssura
 
 ### Ajout d’un champ de signature invisible {#adding-an-invisible-signature-field}
 
-Les signatures numériques apparaissent dans les champs de signature qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature existante ou l’ajout d’un champ de signature peut être programmé. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF. Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’API Java du service Signature ou de l’API du service Web de signature. Vous pouvez ajouter plusieurs champs de signature à un document de PDF. Cependant, chaque nom de champ de signature doit être unique.
+Les signatures numériques apparaissent dans les champs de signature qui sont des champs de formulaire contenant une représentation graphique de la signature. Les champs de signature peuvent être visibles ou invisibles. Les signataires peuvent utiliser un champ de signature existante ou l’ajout d’un champ de signature peut être programmé. Dans les deux cas, le champ de signature doit exister avant la signature du document PDF. Vous pouvez programmer l’ajout d’un champ de signature à l’aide de l’API Java du service Signature ou de l’API du service Web de signature. Vous pouvez ajouter plusieurs champs de signature à un document PDF. Cependant, chaque nom de champ de signature doit être unique.
 
 **Syntaxe** : `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -238,7 +238,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-Vous pouvez également utiliser la spécification [CAdES](https://fr.wikipedia.org/wiki/CAdES) pour signer des documents. Utilisez l’exemple de code suivant pour définir le format de signature sur [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
+Vous pouvez également utiliser la spécification [CAdES](https://fr.wikipedia.org/wiki/CAdES) pour signer des documents. Utilisez l’exemple de code suivant pour définir le format de signature sur [CAdES.](https://fr.wikipedia.org/wiki/CAdES)
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -426,9 +426,9 @@ public class AddSignatureField {
 }
 ```
 
-### Application de l’horodatage au document {#apply-document-timestamp}
+### Appliquer l’horodatage au document {#apply-document-timestamp}
 
-Vous pouvez horodater par programme un document conformément aux spécifications [PAdES 4](https://fr.wikipedia.org/wiki/PAdES). Vous pouvez également utiliser la spécification [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) pour les documents liés aux transactions.
+Vous pouvez horodater par programme un document conformément aux spécifications [PAdES 4](https://fr.wikipedia.org/wiki/PAdES). Vous pouvez également utiliser la spécification [CAdES](https://fr.wikipedia.org/wiki/CAdES) pour les documents liés aux transactions.
 
 **Syntaxe** : `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -463,7 +463,7 @@ Vous pouvez horodater par programme un document conformément aux spécification
  </tbody>
 </table>
 
-Les exemples de code suivants ajoutent un horodatage à un document conformément à [PAdES 4](https://en.wikipedia.org/wiki/PAdES).
+Les exemples de code suivants ajoutent un horodatage à un document conformément à [PAdES 4](https://fr.wikipedia.org/wiki/PAdES).
 
 ```java
 package com.adobe.signatures.test;
@@ -1350,7 +1350,7 @@ secureDocument vous permet de chiffrer, signer/certifier, doter un document PDF 
 
 **Chiffrement de documents PDF avec mot de passe**
 
-Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs devront indiquer ce même mot de passe pour pouvoir ouvrir le document PDF dans Adobe Reader ou Acrobat. En outre, avant qu’une autre opération de Document Services pour AEM Forms utilise le document, un document PDF chiffré par mot de passe doit être déverrouillé.
+Si vous chiffrez un document PDF avec un mot de passe, les utilisateurs et utilisatrices devront indiquer ce même mot de passe pour pouvoir ouvrir le document PDF dans Adobe Reader ou Acrobat. En outre, avant qu’une autre opération de Document Services pour AEM Forms utilise le document, un document PDF chiffré par mot de passe doit être déverrouillé.
 
 **Chiffrement des documents PDF avec certificat**
 
@@ -1362,7 +1362,7 @@ Un algorithme est utilisé pour générer deux grands nombres, également appel�
 
 * Une clé est utilisée pour chiffrer un ensemble de données. Par la suite, seule l’autre clé peut être utilisée pour déchiffrer les données.
 * Il est impossible de distinguer une clé d’une autre.
-* Une des clés fait office de clé privée d’un utilisateur. Il est important que seul l’utilisateur ait accès à cette clé.
+* Une des clés fait office de clé privée d’un utilisateur. Il est important que seul l’utilisateur ou l’utilisatrice ait accès à cette clé.
 * L’autre clé est la clé publique de l’utilisateur, qui peut être partagée avec d’autres utilisateurs.
 
 Un certificat de clé publique contient la clé publique d’un utilisateur et ses données d’identification. Le format X.509 est utilisé pour le stockage de certificats. Les certificats sont généralement émis et signés numériquement par une autorité de certification, qui est une entité reconnue qui garantit la validité du certificat. Les certificats comportent une date d’expiration ; au-delà de cette date, ils ne sont plus valides.
@@ -1395,9 +1395,9 @@ La clé publique est stockée dans le certificat de l’utilisateur, celle-ci do
 
 >[!NOTE]
 >
->AEM Forms prend également en charge la spécification *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)* pour la signature numérique de documents PDF.
+>AEM Forms prend également en charge la spécification *[CAdES](https://fr.wikipedia.org/wiki/CAdES)* pour la signature numérique de documents PDF.
 
-**Certification de documents PDF**
+**Certifier des documents PDF**
 
 Vous pouvez définir un document PDF en le certifiant avec un type de signature particulier appelé signature certifiée. Une signature certifiée se différencie d’une signature numérique de plusieurs manières :
 
@@ -1411,7 +1411,7 @@ L’auteur ou l’expéditeur du document peut indiquer que le document peut êt
 
 Par exemple, le document peut autoriser le remplissage de formulaires ou de commentaires. Si l’auteur spécifie qu’une modification spécifique est autorisée,
 
-Acrobat limite ainsi les utilisateurs dans la modification du document. Si ces modifications sont effectuées, à l’aide d’une autre application par exemple, la signature certifiée est alors non valide et Acrobat affiche un avertissement à l’ouverture du document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
+Acrobat empêche ainsi les utilisateurs et utilisatrices de modifier le document. Si ces modifications sont effectuées, à l’aide d’une autre application par exemple, la signature certifiée est alors non valide et Acrobat affiche un avertissement à l’ouverture du document. (Avec des signatures non certifiées, les modifications ne sont pas empêchées et les opérations normales de modification n’invalident pas la signature d’origine.)
 
 Au moment de la signature, les différents types de contenus du document susceptibles de rendre le document ambigu ou trompeur sont analysés.
 
@@ -3754,7 +3754,7 @@ L’exemple de code Java suivant génère un document PDF en fusionnant une conc
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-L’API generatePDFOutput génère un document PDF en fusionnant une conception de formulaire avec des données. Vous pouvez également créer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF. Utilisez l’API generatePrintedOutput pour les conceptions de formulaire ou les données stockées dans une application. Si la conception de formulaire et les données XML sont stockées sur un emplacement réseau, localement ou sur un emplacement HTTP comme des valeurs littérales, utilisez l’API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
+L’API generatePDFOutput génère un document PDF en fusionnant une conception de formulaire avec des données. Vous pouvez également générer un fichier de métadonnées pour chaque enregistrement ou enregistrer la sortie pour un fichier PDF. Utilisez l’API generatePrintedOutput pour les conceptions de formulaire ou les données stockées dans une application. Si la conception de formulaire et les données XML sont stockées sur un emplacement réseau, localement ou sur un emplacement HTTP comme des valeurs littérales, utilisez l’API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p).
 
 **Syntaxe** : `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -4925,7 +4925,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-Le service Distiller convertit les fichiers PostScript, Encapsulated PostScript (EPS) et PRN en fichiers PDF. Ce service est généralement utilisé pour convertir en documents électroniques d’importants volumes de documents papier, tels que des factures et des déclarations. La conversion de documents en PDF permet également aux entreprises d’envoyer à leurs clients un document à la fois dans sa version papier et dans sa version électronique. Les formats de fichiers pris en charge sont .ps, .eps et .prn. Le service prend en charge les API suivantes :
+Le service Distiller convertit les fichiers PostScript, Encapsulated PostScript (EPS) et PRN en fichiers PDF. Ce service est généralement utilisé pour convertir en documents électroniques d’importants volumes de documents papier, tels que des factures et des déclarations. La conversion de documents en PDF permet également aux entreprises d’envoyer à leurs client(e)s un document à la fois dans sa version papier et dans sa version électronique. Les formats de fichiers pris en charge sont .ps, .eps et .prn. Le service prend en charge les API suivantes :
 
 Le service createPDF renvoie un objet java.util.Map avec des résultats. Les clés de la carte sont :
 
@@ -4970,7 +4970,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
     <ul>
      <li>High_Quality_Print<br /> </li>
      <li>PDFA1b_2005_RGB<br /> </li>
-     <li>PDFA1b_2005_CMJN<br /> </li>
+     <li>PDFA1b_2005_CMYK<br /> </li>
      <li>PDFX1a_2001<br /> </li>
      <li>PDFX3_2002<br /> </li>
      <li>Press_Quality<br /> </li>
