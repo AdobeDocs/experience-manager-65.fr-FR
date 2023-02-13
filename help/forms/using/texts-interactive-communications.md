@@ -1,7 +1,7 @@
 ---
 title: Textes dans les communications interactives
 seo-title: Text in Interactive Communications
-description: 'Création et modification de fragments de document texte à utiliser dans les communications interactives - Texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de condition, de liste et de mise en page.  '
+description: Création et modification de fragments de document texte à utiliser dans les communications interactives - Texte est l’un des quatre types de fragments de document utilisés pour créer des communications interactives. Les trois autres sont des fragments de condition, de liste et de mise en page.
 seo-description: Creating and editing text document fragments to be used in Interactive Communications
 uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
 topic-tags: interactive-communications
@@ -10,8 +10,8 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '2477'
 ht-degree: 100%
 
@@ -250,7 +250,7 @@ Si nécessaire, insérez des caractères spéciaux dans le fragment de document.
 
 * Symboles de devise tels que €,￥et £
 * Symboles mathématiques tels que ∑, √, ∂ et ^
-* Symboles de ponctuation tels que ‟ et ”
+* Symboles de ponctuation tels que « et »
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
