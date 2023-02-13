@@ -1,5 +1,5 @@
 ---
-title: Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs
+title: Prise en charge de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Les paramètres régionaux pris en charge par défaut sont l’anglais, le français, l’allemand et le japonais.
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. The supported locales by default are English, French, German, and Japanese.
@@ -13,13 +13,13 @@ feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
 ht-degree: 100%
 
 ---
 
-# Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs{#supporting-new-locales-for-adaptive-forms-localization}
+# Prise en charge de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## À propos des dictionnaires de paramètres régionaux {#about-locale-dictionaries}
 
