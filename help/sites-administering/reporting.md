@@ -12,7 +12,7 @@ discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2806'
 ht-degree: 100%
 
@@ -408,7 +408,7 @@ Ce rapport fournit des informations sur le contenu généré par l’utilisateur
 * Page
 * Référent
 * Type
-* Utilisateur formulaire
+* Utilisateur Identifiant
 
 Vous permettent :
 
