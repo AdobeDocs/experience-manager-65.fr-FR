@@ -1,7 +1,7 @@
 ---
 title: Présentation détaillée de ClientContext
 seo-title: Client Context in Detail
-description: ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique
+description: ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique.
 seo-description: The Client Context represents a dynamically assembled collection of user data
 uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
 contentOwner: msm-service
@@ -13,7 +13,7 @@ docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3008'
 ht-degree: 100%
 
