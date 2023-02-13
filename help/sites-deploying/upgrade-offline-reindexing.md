@@ -8,9 +8,9 @@ content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ Il est recommandé de cloner le système d’exploitation et de créer l’index
 
 ### Préparation d’un runbook et exécution de tests {#prepare-a-runbook-and-trial-run}
 
-Il est recommandé de préparer un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) et d’effectuer quelques tests avant d’exécuter la mise à niveau en exploitation.
+Il est recommandé de préparer un [runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=fr#building-the-upgrade-and-rollback-runbook) et d’effectuer quelques tests avant d’exécuter la mise à niveau en exploitation.
 
 ### Mode Traversée de documents avec l’indexation hors ligne {#doc-traversal-mode-with-offline-indexing}
 
