@@ -1,5 +1,5 @@
 ---
-title: Gestion des métadonnées de formulaire
+title: Gérer les métadonnées de formulaire
 seo-title: Manage form metadata
 description: Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
@@ -12,13 +12,13 @@ docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1972'
 ht-degree: 100%
 
 ---
 
-# Gestion des métadonnées de formulaire{#manage-form-metadata}
+# Gérer les métadonnées de formulaire{#manage-form-metadata}
 
 ## Présentation  {#overview-nbsp}
 
