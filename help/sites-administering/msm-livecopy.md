@@ -4,7 +4,7 @@ description: Découvrez comment créer et synchroniser des Live Copies.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4171'
 ht-degree: 100%
 
@@ -194,7 +194,7 @@ Pour afficher les propriétés :
 
    >[!NOTE]
    >
-   >Pour plus de détails, consultez également l’article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/fr/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) (Message d’état de la Live Copy - À jour/Vert/Synchronisé) de la base de connaissances.
+   >Pour plus de détails, consultez également l’article [Livecopy status message - Up-to-date/Green/In Sync](https://helpx.adobe.com/fr/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html) (Message de statut de la Live Copy - À jour/Vert/Synchronisé) de la base de connaissances.
 
 ### Affichage des Live Copies d’une page de plan directeur {#seeing-the-live-copies-of-a-blueprint-page}
 
