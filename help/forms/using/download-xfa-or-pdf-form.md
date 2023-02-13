@@ -1,5 +1,5 @@
 ---
-title: Téléchargement d’un modèle de formulaire XFA ou PDF
+title: Télécharger un modèle de formulaire XFA ou PDF
 seo-title: Download an XFA or a PDF form template
 description: Vous pouvez exporter des formulaires du référentiel vers le système local et faire migrer les formulaires téléchargés vers le nouveau référentiel.
 seo-description: You can export forms from the repository to the local system and migrate the downloaded forms to new repository.
@@ -11,13 +11,13 @@ discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 role: Admin
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
 ht-degree: 100%
 
 ---
 
-# Téléchargement d’un modèle de formulaire XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
+# Télécharger un modèle de formulaire XFA ou PDF {#download-an-xfa-or-a-pdf-form-template}
 
 L’opération de téléchargement, comme son nom l’indique, permet d’exporter des formulaires du référentiel vers le système local. Associée à l’opération de transfert, elle vous permet de faire migrer des formulaires d’un référentiel vers un autre.
 
