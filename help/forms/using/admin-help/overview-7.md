@@ -1,5 +1,5 @@
 ---
-title: Principes de base des formulaires de configuration
+title: Principes de base de la configuration des formulaires
 seo-title: Basics of configuring forms
 description: Découvrez les différents services de formulaires qui vous aideront à créer des applications interactives de capture de données.
 seo-description: Learn about the various forms services that help you create interactive data capture applications.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
 exl-id: 169f3d94-ac00-41c7-853e-ecf0dbee559f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
 ht-degree: 100%
 
 ---
 
-# Principes de base des formulaires de configuration {#basics-of-configuring-forms}
+# Principes de base de la configuration des formulaires {#basics-of-configuring-forms}
 
 Le service Forms vous permet de créer des applications clientes interactives de capture de données assurant la validation, le traitement, la transformation et la transmission de formulaires généralement créés dans Designer. Les auteurs de formulaires développent une conception de formulaire simple que le service Forms rend sous diverses formes :
 
