@@ -13,7 +13,7 @@ exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
 workflow-type: tm+mt
 source-wordcount: '3000'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 >[!IMPORTANT]
 >
 >• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
-• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
+• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animés ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
@@ -173,7 +173,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 ## Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-・ Le recadrage intelligent est disponible uniquement en mode Dynamic Media - Scene7.
+• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage intelligent d’une image pour affiner davantage son point focal.
 
@@ -203,7 +203,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-・ Le recadrage intelligent est disponible uniquement en mode Dynamic Media - Scene7.
+• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 

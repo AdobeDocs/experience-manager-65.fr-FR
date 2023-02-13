@@ -13,7 +13,7 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
 workflow-type: tm+mt
 source-wordcount: '850'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Ce gestionnaire stocke le message de réponse SAML chiffré dans le nœud utilis
 >
 >Consultez [une démonstration de l’intégration d’AEM et de SAML](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=fr).
 
-## Configuration du gestionnaire d’authentification SAML 2.0 {#configuring-the-saml-authentication-handler}
+## Configurer le gestionnaire d’authentification SAML 2.0 {#configuring-the-saml-authentication-handler}
 
 La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder à la configuration de gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications) 2.0 appelée **Gestionnaire d’authentification SAML 2.0 Adobe Granite**. Les propriétés suivantes peuvent être définies.
 
@@ -42,7 +42,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 >
 >Le gestionnaire d’authentification SAML 2.0 est désactivé par défaut. Vous devez définir au moins une des propriétés suivantes pour activer le gestionnaire :
 >
->* URL du POST du fournisseur d’identité ou URL IDP.
+>* URL POST du fournisseur d’identité ou URL du fournisseur d’identité.
 >* L’ID d’entité du fournisseur.
 >
 
@@ -57,7 +57,7 @@ La [console web](/help/sites-deploying/configuring-osgi.md) permet d’accéder 
 
 **Alias de certificat IDP** L’alias du certificat IdP dans le TrustStore global. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé. Voir le chapitre Ajout du certificat IdP au TrustStore AEM ci-dessous sur la façon de le configurer.
 
-**URL IDP** URL du fournisseur d’identité auquel la demande d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
+**URL du fournisseur d’identité** : URL du fournisseur d’identité où la requête d’authentification SAML doit être envoyée. Si cette propriété n’est pas renseignée, le gestionnaire d’authentification est désactivé.
 
 >[!CAUTION]
 >

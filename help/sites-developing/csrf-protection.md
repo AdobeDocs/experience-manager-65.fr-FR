@@ -1,5 +1,5 @@
 ---
-title: Le Framework de protection CSRF
+title: Le framework de protection CSRF
 seo-title: The CSRF Protection Framework
 description: Le framework utilise des jetons pour garantir que la demande du client est légitime
 seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
@@ -17,7 +17,7 @@ ht-degree: 88%
 
 ---
 
-# Le Framework de protection CSRF{#the-csrf-protection-framework}
+# Le framework de protection CSRF{#the-csrf-protection-framework}
 
 En plus du filtre Apache Sling Referrer, Adobe fournit également un nouveau framework de protection CSRF pour se protéger contre ce type d’attaque.
 

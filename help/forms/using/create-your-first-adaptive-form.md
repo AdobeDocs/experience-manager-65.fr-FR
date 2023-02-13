@@ -57,8 +57,8 @@ Les formulaires adaptatifs sont de nouvelle génération, attrayants, réactifs,
 
 Objectifs:
 
-* Créer un formulaire adaptatif permettant à un client d’ajouter une adresse de livraison
-* Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un client
+* Créer un formulaire adaptatif permettant à un(e) client(e) d’ajouter une adresse de livraison
+* Mettre en forme les champs d’un formulaire adaptatif pour afficher et accepter les informations d’un(e) client(e)
 * Créer une action d’envoi pour envoyer un courrier électronique contenant du contenu de formulaire
 * Prévisualiser et envoyer un formulaire adaptatif
 
@@ -107,7 +107,7 @@ Objectifs:
 
 [![Voir le Guide](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Étape 5: publication de votre formulaire adaptatif {#step-publish-your-adaptive-form}
+## Étape 5 : publier votre formulaire adaptatif {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

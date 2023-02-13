@@ -11,7 +11,7 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ ht-degree: 99%
    + [Filtre de disposition du contenu](content-disposition-filter.md)
    + [Mappage d’un groupe d’utilisateurs personnalisé dans AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Prise en charge des cookies Same Site](same-site-cookie-support.md)
-+ Personnalisation  {#personalization}
++ Personnalisation {#personalization}
    + [Personnalisation](personalization.md)
    + [Configuration de ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html?lang=fr)
    + [ClientContext](client-context.md)
@@ -112,7 +112,7 @@ ht-degree: 99%
    + [Intégration à des services tiers](third-party-services.md)
    + [Intégration à Salesforce](salesforce.md)
    + [Intégration à Adobe Target](target.md)
-   + [Intégration à Adobe Learning Manager](adobe-learningmanager.md)
+   + [Intégrer à Adobe Learning Manager](adobe-learningmanager.md)
    + [Intégration à Adobe Analytics](adobeanalytics.md)
    + [Connexion à Adobe Analytics et création de frameworks](adobeanalytics-connect.md)
    + [Configuration du suivi des liens Adobe Analytics](adobeanalytics-link.md)

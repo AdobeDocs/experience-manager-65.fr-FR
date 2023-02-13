@@ -17,7 +17,7 @@ ht-degree: 100%
 # Guide d’Assets {#assets}
 
 + [Guide de l’utilisateur d’[!DNL Assets]](home.md)
-+ [Notes de mise à jour d’[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
++ Notes de mise à jour d’[[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
 + [À propos de la gestion des ressources numériques](assets.md)
 + [Bonnes pratiques pour les ressources](best-practices-for-assets.md)
 + [Accessibilité dans  [!DNL Assets]](accessibility.md)
@@ -73,7 +73,7 @@ ht-degree: 100%
    + [Vidéos interactives](interactive-videos.md)
    + [Vidéo 360 VR](/help/assets/360-video.md)
    + [Intégration des visionneuses Dynamic Media aux balises Adobe Analytics et Adobe Experience Platform](/help/assets/tags.md)
-   + [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](custom-pop-ups.md)
+   + [Création de pop-ups personnalisés à l’aide de l’aperçu rapide](custom-pop-ups.md)
    + [Diffusion d’images optimisées pour un site réactif](responsive-site.md)
    + [Aperçu de ressources Dynamic Media](previewing-assets.md)
    + [Ajout de ressources Dynamic Media à des pages](adding-dynamic-media-assets-to-pages.md)

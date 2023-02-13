@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’un formulaire
+title: Utiliser un formulaire
 seo-title: Working with a Form
 description: Affichage et mise à jour d’un formulaire associé à une tâche ou à un point de départ dans l’application AEM Forms
 seo-description: View and update the form associated with a task or Startpoint in the AEM Forms app
@@ -12,11 +12,11 @@ exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 82%
+ht-degree: 97%
 
 ---
 
-# Utilisation d’un formulaire {#working-with-a-form}
+# Utiliser un formulaire {#working-with-a-form}
 
 Les formulaires activés pour la synchronisation dans l’application sont téléchargés et peuvent être utilisés directement.
 
@@ -30,11 +30,11 @@ Pour synchroniser votre formulaire dans l’application AEM Forms :
 
 Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectionnez plusieurs formulaires dans le gestionnaire de formulaires et appuyez sur **Synchroniser avec l’application AEM Forms**. Lorsque le formulaire est publié, l’application AEM Forms peut se connecter au serveur de publication et récupérer les formulaires.
 
-Si la synchronisation de votre application Android AFA (AEM Form Application) échoue, procédez comme suit pour résoudre le problème de synchronisation :
+Si la synchronisation de votre application AFA (application AEM Forms) échoue, procédez comme suit pour résoudre le problème de synchronisation :
 
 1. Accédez au **https://[server]:[port]/system/console/configMgr**.
-1. Recherchez le **[!UICONTROL Gestionnaire d’authentification des jetons Adobe Granite]** et cliquez sur **[!UICONTROL Modifier]**.
-1. Sélectionnez la **[!UICONTROL Aucun]** dans le menu déroulant de la fonction **[!UICONTROL Attribut SameSite pour le cookie login-token]** attribut.
+1. Recherchez le **[!UICONTROL Gestionnaire d’authentification des jetons Adobe Granite]** et cliquez sur **[!UICONTROL Modifier]**.
+1. Sélectionnez l’option **[!UICONTROL Aucun]** dans le menu déroulant de l’attribut **[!UICONTROL Attribut SameSite pour le cookie du jeton de connexion]**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
 ![Synchroniser l’image avec l’application Android AFA](/help/forms/using/assets/afaandroid.png)
@@ -51,5 +51,5 @@ Si la synchronisation de votre application Android AFA (AEM Form Application) é
 
 **Ouverture et mise à jour d’un formulaire**
 
-1. Pour ouvrir un formulaire, appuyez sur **[!UICONTROL Formulaire]** dans l’écran d’accueil.
-1. Vous pouvez mettre à jour les champs du formulaire, ajouter des pièces jointes, enregistrer en tant que brouillon et soumettre le formulaire.
+1. Pour ouvrir un formulaire, appuyez sur le **[!UICONTROL formulaire]** sur l’écran d’accueil.
+1. Vous pouvez mettre à jour les champs du formulaire, ajouter des pièces jointes, enregistrer en tant que brouillon et l’envoyer.

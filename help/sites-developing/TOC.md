@@ -143,7 +143,7 @@ ht-degree: 100%
       + [Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html?lang=fr)
 + Développement hybride et SPA AEM{#spas}
    + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [Introduction et présentation des applications sur une seule page (SPA)](spa-walkthrough.md)
+   + [Introduction et présentation des applications monopage (SPA)](spa-walkthrough.md)
    + [Tutoriel sur SPA WKND](spa-wknd.md)
    + [Prise en main avec React](spa-getting-started-react.md)
    + [Mise en œuvre d’un composant React pour SPA](spa-implementing-react-component.md)

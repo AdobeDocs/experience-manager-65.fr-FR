@@ -5,7 +5,7 @@ exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -43,15 +43,15 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 
 * [Tutoriels d’AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html?lang=fr)
 * [Guide de l’utilisateur de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
-* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Guide de l’utilisateur HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Guide de l’utilisateur des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
 * [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
 
 ## Droits d’auteur, licences et clauses de non-responsabilité {#copyright-licenses-and-disclaimers}
 
-Pour plus d’informations, voir [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html)
+Pour plus d’informations, consultez [https://www.adobe.com/fr/legal/terms/enterprise-licensing.html](https://www.adobe.com/fr/legal/terms/enterprise-licensing.html).
 
-Avis de licences tierces : [https://www.adobe.com/products/eula/third_party](https://www.adobe.com/products/eula/third_party.html)
+Avis de licences tierces : [https://www.adobe.com/fr/products/eula/third_party.html](https://www.adobe.com/fr/products/eula/third_party.html).

@@ -323,7 +323,7 @@ Les modèles ne doivent normalement plus être stockés dans `/conf/global`, cep
   </tr>
   <tr>
    <td rowspan="3"><code>/conf/global/settings/wcm/templates</code></td>
-   <td>Modèle  Auteurs</td>
+   <td>Créateurs de modèles</td>
    <td>lecture, écriture, réplication</td>
    <td>Auteurs de modèles qui créent, lisent, mettent à jour, suppriment et répliquent des modèles dans <code>/conf/global</code></td>
   </tr>

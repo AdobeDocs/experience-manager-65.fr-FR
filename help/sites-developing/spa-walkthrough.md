@@ -1,5 +1,5 @@
 ---
-title: Introduction et présentation des applications sur une seule page (SPA)
+title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 topic-tags: spa
 content-type: reference
@@ -12,9 +12,9 @@ ht-degree: 90%
 ---
 
 
-# Introduction et présentation des applications sur une seule page (SPA) {#spa-introduction-and-walkthrough}
+# Introduction et présentation des applications monopage (SPA) {#spa-introduction-and-walkthrough}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Le souhait de l’équipe de développement est de pouvoir créer des sites avec des cadres SPA. L’équipe de création, pour sa part, souhaite modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels cadres.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
@@ -74,14 +74,14 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 
 **Équipe de développement**
 
-* Les développeurs veulent une séparation nette entre les aspects liés au contenu et à la présentation.
+* L’équipe de développement veut une séparation nette entre les aspects liés au contenu et à la présentation.
 * Une séparation nette rend le système plus extensible tout en autorisant un développement front-end indépendant.
 
 ### Comment fonctionne une SPA ?  {#how-does-a-spa-work}
 
 L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits afin de minimiser les retards liés aux appels du serveur, de sorte que la SPA s’approche de la réactivité d’une application native.
 
-Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque le visiteur passe à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
+Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
@@ -97,7 +97,7 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 
 ## Expérience de modification de contenu avec une SPA {#content-editing-experience-with-spa}
 
-Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA d’AEM, le créateur de contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
+Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA d’AEM, l’équipe de création de contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
 
 1. Modifiez l’application de projet SPA WKND dans AEM.
 
@@ -105,7 +105,7 @@ Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA d’AEM, le cré
 
    ![Étape 1](assets/spa-walkthrough-step-1.png)
 
-1. Sélectionnez un composant d’En-tête et notez qu’une barre d’outils s’affiche comme pour tout autre composant. Sélectionnez **Modifier**.
+1. Sélectionnez un composant d’en-tête et notez qu’une barre d’outils s’affiche comme pour tout autre composant. Sélectionnez **Modifier**.
 
    ![Étape 2](assets/spa-walkthrough-step-2.png)
 
@@ -125,11 +125,11 @@ Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA d’AEM, le cré
 
    ![Étape 5](assets/spa-walkthrough-step-5.png)
 
-D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la mise en page, sont pris en charge comme dans toute application non SPA.
+D’autres outils de création, tels que le glisser-déposer de composants supplémentaires sur la page, la réorganisation des composants et la modification de la disposition, sont pris en charge comme dans toute application autre que SPA.
 
 >[!NOTE]
 >
->L’éditeur de SPA ne modifie pas le modèle objet de document (DOM) de l’application. La SPA elle-même est responsable du DOM.
+>L’éditeur de SPA ne modifie pas le modèle DOM de l’application. La SPA elle-même est responsable du DOM.
 >
 >Pour découvrir le fonctionnement de cet aspect, passez à la section suivante de cet article, [Applications SPA et éditeur de SPA AEM](#spa-apps-and-the-aem-spa-editor).
 
@@ -244,7 +244,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
    >Ce comportement diffère de celui des pages générées côté serveur dans AEM, où un élément `cq` est inséré pour chaque composant modifiable.
    >
    >
-   >Cette approche dans le SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour le développeur frontal.
+   >Cette approche dans la SPA élimine la nécessité d’injecter des éléments personnalisés, en n’utilisant qu’un attribut de données supplémentaire, ce qui rend le balisage plus simple pour l’équipe de développement front-end.
 
 ## Étapes suivantes {#next-steps}
 

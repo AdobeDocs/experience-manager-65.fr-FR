@@ -14,7 +14,7 @@ exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
 source-wordcount: '3700'
-ht-degree: 86%
+ht-degree: 94%
 
 ---
 
@@ -25,9 +25,9 @@ ht-degree: 86%
 
 <div class="preview">
 
-Adobe a publié une [programme complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec AEM 6.5 Forms Service Pack 12 (6.5.12.0) sur JEE, ainsi que les programmes d’installation de correctifs. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation de correctif ne comprend que des correctifs.
+Adobe a publié un [programme d’installation complet](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) avec AEM 6.5 Forms Service Pack 12 (6.5.12.0) on JEE, ainsi que les programmes d’installation de correctifs. Le programme d’installation complet prend en charge les nouvelles plateformes, tandis que le programme d’installation de correctif ne comprend que des correctifs.
 
-Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement Forms on JEE AEM 6.5, Adobe recommande d’utiliser [Programme d’installation complet d’AEM 6.5.12.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sortie le 3 mars 2022 au lieu du programme d’installation d’AEM 6.5 Forms, le 8 avril 2019.
+Si vous effectuez une nouvelle installation ou envisagez d’utiliser les derniers logiciels pour votre environnement AEM Forms 6.5 on JEE, Adobe recommande d’utiliser le [programme d’installation complet d’AEM 6.5.12.0 Forms on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) sorti le 3 mars 2022 au lieu du programme d’installation d’AEM 6.5 Forms, sorti le 8 avril 2019.
 
 </div>
 
@@ -81,8 +81,8 @@ Adobe recommande ces configurations et fournit une prise en charge totale ou res
 >
 >Avec la version 6.5, les composants d’infrastructure les moins utilisés par nos clients ne sont plus pris en charge :
 >
->- Base de données IBM DB2
->- Systèmes d’exploitation IBM AIX et Sun Solaris
+>- Base de données IBM DB2
+>- Systèmes d’exploitation IBM AIX et Sun Solaris
 >
 >Pour les nouvelles installations, il est recommandé, dans la mesure du possible, de déployer AEM Forms sur la pile OSGi moderne afin de tirer profit des dernières innovations en matière de formulaires adaptatifs réactifs pour les communications mobiles et interactives multicanaux, ainsi que des intégrations de données principales utilisant le modèle de données de formulaire.
 >
@@ -120,7 +120,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Versions et mises à jour mineures</td>
   </tr>
   <tr>
-   <td>IBM® J9 Machine virtuelle (build 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
+   <td>IBM® J9 Virtual Machine (version 2.9, JRE 1.8.0) IBM® JDK SR6-FP26<br /> </td>
    <td>A : Pris en charge</td>
    <td>Versions et mises à jour mineures</td>
   </tr>
@@ -158,12 +158,12 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>MongoDB Enterprise 4.2  </p> </td>
+   <td><p>MongoDB Enterprise 4.2 </p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
   <tr>
-   <td><p>Oracle Database 12c Release 2 (12.2.0.1.0) (Obsolète)</p> </td>
+   <td><p>Oracle Database 12c version 2 (12.2.0.1.0) (obsolète)</p> </td>
    <td><p>Référentiel Microkernel</p> </td>
    <td><p>Pris en charge</p> </td>
   </tr>
@@ -185,10 +185,10 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   <tr>
    <td>IBM DB2 11.1 (Obsolète)</td>
    <td>Référentiel Microkernel</td>
-   <td>R : prise en charge limitée </td>
+   <td>R : Prise en charge limitée</td>
   </tr>
   <tr>
-   <td>MySQL 5.7.35 (obsolète) </td>
+   <td>MySQL 5.7.35 (Obsolète) </td>
    <td>-</td>
    <td>R : Prise en charge limitée </td>
   </tr>
@@ -223,11 +223,11 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
   <tr>
    <td>MySQL</td>
    <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar (version 5.1.44)</p> </td>
-   <td><p>Fourni avec l’installation d’AEM Forms on JEE</p> </td>
+   <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
   </tr>
   <tr>
    <td>Microsoft SQL Server<br /> </td>
-   <td><p>Pilote JDBC Microsoft® SQL Server 6.2.1.0 (obsolète) <br /> </p> <p>sqljdbc6.jar</p> </td>
+   <td><p>Pilote Microsoft® SQL Server JDBC 6.2.1.0 (Obsolète) <br /> </p> <p>sqljdbc6.jar</p> </td>
    <td><p>Fourni avec l’installation d’AEM Forms on JEE.</p> </td>
   </tr>
     <tr>
@@ -268,7 +268,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td>Service Packs et mises à jour critiques</td>
   </tr>
   <tr>
-   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (Obsolète) </p> </td>
+   <td><p>JBoss® Enterprise Application Platform (EAP) 7.1.4 <sup>[2] [3] [7]</sup> (Obsolète) </p> </td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Correctifs et correctifs cumulés pour la version prise en charge de EAP</p> </td>
   </tr>
@@ -316,7 +316,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
   <tr>
-   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits) (obsolète)</td>
+   <td><p>Red Hat Enterprise Linux 7 (Kernel 3.x) (64 bits) (Obsolète)</td>
    <td><p>A : Pris en charge</p> </td>
    <td><p>Révisions mineures, mises à jour cumulatives et mises à jour critiques</p> </td>
   </tr>
@@ -326,7 +326,7 @@ Adobe Experience Manager Forms nécessite l’exécution d’une machine virtuel
    <td><p>Service Packs, correctifs cumulatifs et mises à jour de sécurité critiques</p> </td>
   </tr>
   <tr>
-   <td>Oracle Linux® 7 Update 3 (64 bits)</td>
+   <td>Oracle Linux® 7 Mise à jour 3 (64 bits)</td>
    <td>A : Pris en charge</td>
    <td>Service Packs, correctifs cumulatifs et mises à jour de sécurité critiques</td>
   </tr>
@@ -363,14 +363,14 @@ Vous pouvez exécuter AEM Forms on JEE sur un ordinateur physique ou un environn
 
 Tenez compte des exceptions suivantes lorsque vous choisissez la plateforme de configuration d’AEM Forms on JEE.
 
-1. AEM Forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
-1. AEM Forms on JEE ne prend pas en charge et JBoss sous SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
+1. AEM Forms on JEE ne prend pas en charge IBM® WebSphere® avec MySQL.
+1. AEM Forms on JEE ne prend pas en charge JBoss sur SUSE Linux Enterprise Server 12. Seul IBM WebSphere est pris en charge sur SUSE Linux Enterprise Server 12.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec JBoss® qu’Oracle Java™ SE.
 1. AEM Forms on JEE ne prend en charge aucun autre JDK avec IBM® WebSphere® qu’IBM® JDK.
 1. Le référentiel CRX prend en charge la persistance de type TarMK, MongoDB et les bases de données relationnelles (RDBMK). Vous ne pouvez pas avoir deux systèmes de bases de données différents entre le serveur d’applications et le référentiel CRX. Cependant, dans un environnement AEM Forms on JEE, vous pouvez utiliser MongoMK avec le référentiel CRX et une base de données relationnelle prise en charge avec le serveur d’applications.
 1. AEM Forms on JEE ne prend pas en charge le serveur d’application WebSphere sur CentOS.
-1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles JBoss.
-1. AEM Forms on JEE prend uniquement en charge le SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss EAP 7.4.
+1. AEM Forms on JEE ne prend pas en charge le contrôle d’accès basé sur les rôles (RBAC) JBoss.
+1. AEM Forms on JEE prend uniquement en charge le SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss EAP 7.4.
 
 Tenez également compte des points suivants lors de votre choix de logiciels pour le déploiement d’Adobe AEM Forms on JEE :
 
@@ -516,7 +516,7 @@ En outre :
 - PDF Generator ne prend pas en charge Microsoft Office 365.
 - Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
 - Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
-- Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+- Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms en fonction de votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 - Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
 - PDF Generator ne parvient pas à convertir les fichiers dans Microsoft Visio 2019. Vous pouvez continuer à utiliser Microsoft Visio 2016 pour convertir des fichiers .VSD et .VSDX.
 - PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft Project 2019. Vous pouvez continuer à utiliser Microsoft Project 2016 pour convertir des fichiers .MPP.
@@ -594,8 +594,8 @@ Pour des conditions requises supplémentaires, voir :
 - Espace disque pour l’installation : 1,7 Go pour Workbench uniquement, 2,7 Go sur un seul lecteur pour une installation complète de Workbench, Designer et des exemples d’assemblage, 400 Mo pour installer les répertoires temporaires (200 Mo dans le répertoire utilisateur temporaire et 200 Mo dans le répertoire temporaire Windows) : si l’ensemble de ces emplacements se trouve sur un seul disque, vous devez allouer un total de 1,5 Go lors de l’installation. Les fichiers copiés dans les répertoires temporaires sont supprimés à la fin de l’installation.
 
 - Mémoire pour l’exécution de Workbench : 2 Go de mémoire vive.
-- Configuration matérielle requise : Processeur Intel® Pentium® 4 ou AMD équivalent, processeur cadencé à 1 GHz
-- Résolution d’affichage de 1024 X 768 pixels au minimum, écran couleur de 16 bits minimum
+- Configuration matérielle requise : processeur Intel® Pentium® 4 ou AMD équivalent, processeur cadencé à 1 GHz.
+- Résolution d’affichage de 1024 X 768 pixels au minimum, écran couleur de 16 bits minimum.
 - La connexion réseau via le protocole TCP/IPv4 ou TCP/IPv6 au serveur AEM Forms on JEE
 - vous devez disposer des droits d’administrateur pour pouvoir installer Workbench sous Windows. Si vous effectuez une installation à partir d’un compte non administrateur, le programme d’installation vous demandera les informations d’identification d’un compte administrateur.
 
@@ -633,7 +633,7 @@ Pour des conditions requises supplémentaires, voir :
 </table>
 
 >[!NOTE]
-La famille de produits Acrobat DC introduit deux suivis pour Acrobat et Reader, qui sont essentiellement des produits différents : &quot;Classic&quot; et &quot;Continuous&quot;. Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
+La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
 
 ### Navigateurs {#browsers}
 
@@ -736,7 +736,7 @@ AEM Forms on JEE prend en charge les mises à jour, les correctifs et les packs 
 
 ## Règles de prise en charge des correctifs de fournisseurs tiers {#third-party-patch-support-policy}
 
-La configuration requise pour les logiciels tiers pour AEM Forms on JEE est présentée dans la section &quot;Configuration requise&quot; de leurs documents produit respectifs. Toute la documentation est accessible sur [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
+La configuration requise pour l’installation de logiciels tiers pour AEM Forms on JEE est disponible dans la section « Configuration requise » de la documentation des produits concernés. Toute la documentation est accessible sur [https://adobe.com/go/learn_aemforms_documentation_65_fr](https://adobe.com/go/learn_aemforms_documentation_65_fr).
 
 Les plateformes de référence tierces d’AEM Forms on JEE indiquent le niveau de correctif spécifique de l’infrastructure tierce en cours au cours du développement et de la publication d’AEM Forms on JEE, ainsi que le niveau minimum de correctif/Service Pack de l’infrastructure prise en charge par cette version d’AEM Forms on JEE.
 
@@ -752,20 +752,20 @@ Vous trouverez plus d’informations sur les correctifs de fournisseurs tiers en
 
 ## Mises à jour de Platform {#platform-updates}
 
-Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.13.0 du 2 juin 2022 :
+Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.13.0 du 2 juin 2022 :
 
-- Microsoft SharePoint 2016
+- Microsoft SharePoint 2016
 
-Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.12.0 du 3 mars 2022 :
+Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.12.0 du 3 mars 2022 :
 
 - MongoDB Enterprise 4.0
 - IBM DB2 11.1
-- Oracle Database 12c Release 2
+- Oracle Database 12c Version 2
 - MySQL 5.7.35
 - Pilote Microsoft® SQL Server JDBC 6.2.1.0
 - JBoss® Enterprise Application Platform (EAP) 7.1.4
-- IBM Content Manager Server 8.5 Fix Pack 2
-- IBM Content Manager Client 8.5
+- IBM Content Manager Server 8.5 pack correctif 2
+- IBM Content Manager Client 8.5
 - Microsoft SQL Server 2016
 
 Les plateformes suivantes sont marquées comme obsolètes dans la version AEM Forms 6.5.10.0 du 7 septembre 2021 :
@@ -777,23 +777,23 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM F
 - OpenOffice 4.1.2
 
 >[!NOTE]
-Les plateformes marquées comme [obsolète sur avec AEM Forms 6.5.12.0 et 6.5.10.0 restent pris en charge jusqu’à la version 6.5 Service Pack 18 (6.5.18.0) d’AEM Forms](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+Les plateformes marquées comme [obsolètes sur AEM Forms 6.5.12.0 et 6.5.10.0 restent prises en charge jusqu’à la version AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
 
 ## Historique des révisions {#revision-history}
 
-- 1er septembre 2022
+- 1 septembre 2022
 
    - Ajout de la prise en charge du SDK Oracle Java™ SE 11 (64 bits) pour le serveur d’applications JBoss EAP 7.4.
 
-- 3 mars 2022
+- 3 mars 2022
 
-   - Suppression de la prise en charge des éléments suivants :
-      - IBM® J9 Virtual Machine (build 2.8, JRE 1.8.0)
-      - Oracle Database 12c Release 1
+   - Suppression de la prise en charge des éléments suivants :
+      - IBM® J9 Virtual Machine (version 2.8, JRE 1.8.0)
+      - Oracle Database 12c Version 1
       - Oracle Database 18c
       - Oracle Unified Directory (OUD) 11g Version 2
       - IBM Lotus Domino 9.0
-      - IBM Filenet 5.2
+      - IBM FileNet 5.2
       - Adobe Flash Player
 
 - 10 octobre 2021
@@ -810,7 +810,7 @@ Les plateformes marquées comme [obsolète sur avec AEM Forms 6.5.12.0 et 6.5.10
       - [!DNL RHEL8]
 
 - 3 décembre 2020
-   - Ajout de la prise en charge d’AEM Forms 6.5.7.0 ou version ultérieure pour la plateforme suivante :
+   - Ajout de la prise en charge d’AEM Forms 6.5.7.0 ou version ultérieure pour la plateforme suivante :
       - [!DNL Microsoft SQL Server 2019]
 
 - 9 septembre 2020

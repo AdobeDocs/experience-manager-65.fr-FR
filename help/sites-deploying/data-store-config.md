@@ -1,5 +1,5 @@
 ---
-title: Configuration des magasins de nœuds et des entrepôts de données dans AEM 6
+title: Configurer les magasins de nœuds et les entrepôts de données dans AEM 6
 description: Découvrez comment configurer les magasins de nœuds et les entrepôts de données. Apprenez également à exécuter le nettoyage de la mémoire d’entrepôt de données.
 content-type: reference
 topic-tags: deploying
@@ -9,11 +9,11 @@ exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
 workflow-type: tm+mt
 source-wordcount: '3584'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
-# Configuration des magasins de nœuds et des entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configurer les magasins de nœuds et les entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
 
 ## Présentation {#introduction}
 
@@ -107,7 +107,7 @@ customBlobStore=B"false"
 
 ## Configurations des entrepôts de données {#data-store-configurations}
 
-Lorsque vous traitez un grand nombre de fichiers binaires, il est recommandé d’utiliser un magasin de données externe au lieu de l’entrepôt de nœuds par défaut pour optimiser la performance.
+Lorsque vous traitez un grand nombre de fichiers binaires, il est recommandé d’utiliser un entrepôt de données externe au lieu du magasin de nœuds par défaut pour optimiser la performance.
 
 Par exemple, si votre projet requiert un grand nombre de ressources multimédias, vous pouvez les stocker dans l’entrepôt de données de fichier ou S3 afin d’y accéder plus rapidement qu’en les stockant directement dans MongoDB.
 
@@ -151,7 +151,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 À la fin du téléchargement, vous pouvez installer et configurer le connecteur S3 comme suit :
 
-1. Extrayez le contenu du fichier zip du pack de fonctionnalités dans un dossier temporaire.
+1. Extrayez le contenu du fichier ZIP du pack de fonctionnalités dans un dossier temporaire.
 
 1. Accédez au dossier temporaire et naviguez jusqu’à l’emplacement suivant :
 
@@ -226,30 +226,30 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 
 >[!NOTE]
 >
->Le connecteur S3 prend en charge l’authentification des utilisateurs IAM et l’authentification des rôles IAM. Pour utiliser l’authentification des rôles IAM, omettez la variable `accessKey` et `secretKey` à partir de votre fichier de configuration. Le connecteur S3 est alors défini par défaut sur [Rôle IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) affectée à l’instance.
+>Le connecteur S3 prend en charge l’authentification des utilisateurs IAM et celle des rôles IAM. Pour utiliser l’authentification des rôles IAM, omettez les valeurs `accessKey` et `secretKey` de votre fichier de configuration. Le connecteur S3 est alors défini par défaut sur le [rôle IAM](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) affecté à l’instance.
 
 | Clé | Description | Valeur par défaut | Requise |
 | --- | --- | --- | --- |
-| accessKey | Identifiant de clé d’accès pour l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
+| accessKey | Identifiant de clé d’accès de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
 | secretKey | Clé d’accès secrète de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
-| cacheSize | Taille (en octets) du cache local. | 64 Go | Nombre  |
-| connectionTimeout | Définissez la durée d’attente (en millisecondes) avant l’expiration lors de l’établissement initial d’une connexion. | 10 000 | Nombre  |
-| maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) seront stockés dans le cache de mémoire. | 17408 (17 Ko) | Nombre  |
-| maxConnections | Définissez le nombre maximal de connexions HTTP ouvertes autorisées. | 50 | Nombre  |
-| maxErrorRetry | Définissez le nombre maximal de tentatives de reprise pour les requêtes ayant échoué (récupérables). | 3 | Nombre  |
-| minRecordLength | Taille minimale d’un objet (en octets) qui doit être stocké dans l’entrepôt de données. | 16384 | Nombre  |
-| path | Chemin d’accès local de la banque de données AEM. | `crx-quickstart/repository/datastore` | Nombre  |
-| proxyHost | Définissez l’hôte proxy facultatif par lequel le client se connectera. |  | Nombre  |
-| proxyPort | Définissez le port proxy facultatif par lequel le client se connectera. |  | Nombre  |
+| cacheSize | Taille (en octets) du cache local. | 64 Go | Nombre |
+| connectionTimeout | Définissez la durée d’attente (en millisecondes) avant l’expiration lors de l’établissement initial d’une connexion. | 10 000 | Nombre |
+| maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) seront stockés dans le cache de mémoire. | 17 408 (17 Ko) | Nombre |
+| maxConnections | Définissez le nombre maximal de connexions HTTP ouvertes autorisées. | 50 | Nombre |
+| maxErrorRetry | Définissez le nombre maximal de nouvelles tentatives pour les requêtes (pouvant être retentées) ayant échoué. | 3 | Nombre |
+| minRecordLength | Taille minimale d’un objet (en octets) devant être enregistré dans l’entrepôt de données. | 16384 | Nombre |
+| path | Chemin d’accès local de l’entrepôt de données AEM. | `crx-quickstart/repository/datastore` | Nombre |
+| proxyHost | Définissez l’hôte proxy facultatif par lequel le client se connectera. |  | Nombre |
+| proxyPort | Définissez le port proxy facultatif par lequel le client se connectera. |  | Nombre |
 | s3Bucket | Nom du compartiment S3. |  | Oui |
-| s3EndPoint | Point d’entrée de l’API REST S3. |  | Nombre  |
-| s3Region | Région où réside le compartiment. Voir [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus d’informations. | Région dans laquelle l’instance AWS est en cours d’exécution. | Nombre  |
-| socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion ne expire et ne soit fermée. | 50000 | Nombre  |
-| stagingPurgeInterval | Intervalle (en secondes) de purge des chargements terminés du cache intermédiaire. | 300 | Nombre  |
-| stagingRetryInterval | Intervalle (en secondes) entre deux tentatives de transfert ayant échoué. | 600 | Nombre  |
-| stagingSplitPercentage | Le pourcentage de `cacheSize` à utiliser pour l’évaluation des téléchargements asynchrones. | 10 | Nombre  |
-| uploadThreads | Nombre de threads de chargement utilisés pour les chargements asynchrones. | 10 | Nombre  |
-| writeThreads | Nombre de threads simultanés utilisés pour l’écriture via S3 Transfer Manager. | 10 | Nombre  |
+| s3EndPoint | Point d’entrée de l’API REST S3. |  | Nombre |
+| s3Region | Région où réside le compartiment. Consultez cette [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus de détails. | Région dans laquelle l’instance AWS est en cours d’exécution. | Nombre |
+| socketTimeout | Définissez la durée d’attente (en millisecondes) pour que les données soient transférées au cours d’une connexion ouverte établie avant que la connexion n’expire et ne soit coupée. | 50 000 | Nombre |
+| stagingPurgeInterval | Intervalle (en secondes) pour purger les téléchargements terminés à partir du cache intermédiaire. | 300 | Nombre |
+| stagingRetryInterval | Intervalle (en secondes) entre deux tentatives de téléchargement ayant échoué. | 600 | Nombre |
+| stagingSplitPercentage | Pourcentage de `cacheSize` à utiliser pour l’évaluation des téléchargements asynchrones. | 10 | Nombre |
+| uploadThreads | Nombre de threads de téléchargement utilisés pour les téléchargements asynchrones. | 10 | Nombre |
+| writeThreads | Nombre de threads simultanés utilisés pour l’écriture via S3 Transfer Manager. | 10 | Nombre |
 
 <!---
 ### Bucket region options {#bucket-region-options}
@@ -306,7 +306,7 @@ Le cache est soumis à une limite de taille qui peut être configurée à l’ai
 
 #### Téléchargements {#downloads}
 
-Le cache local sera vérifié pour l’enregistrement du fichier/blob demandé avant de pouvoir y accéder à partir du DataStore. Lorsque la taille du cache dépasse la limite configurée (voir le paramètre `cacheSize`) lors de l’ajout d’un fichier, certains des fichiers seront évincés pour récupérer de l’espace.
+Le cache local sera vérifié pour l’enregistrement du fichier/blob demandé avant de pouvoir y accéder à partir du magasin de données. Lorsque la taille du cache dépasse la limite configurée (voir le paramètre `cacheSize`) lors de l’ajout d’un fichier, certains des fichiers seront évincés pour récupérer de l’espace.
 
 #### Téléchargement asynchrone {#async-upload}
 
@@ -390,7 +390,7 @@ Pour configurer une réplication sans binaire avec S3, les étapes suivantes son
    >
    >
    >    * Pour les versions **1.2.x** d’Oak, utilisez Oak-run **1.2.12 ou une version ultérieure**.
-   >    * Pour des versions d’Oak **plus récentes que celle ci-dessus**, utilisez la version d’Oak-run qui correspond au système Oak de votre installation AEM. 
+   >    * Pour des versions d’Oak **plus récentes que celle ci-dessus**, utilisez la version d’Oak-run qui correspond au système Oak de votre installation AEM.
 
 
 1. Enfin, validez la configuration. Pour cela, vous devez rechercher un fichier unique ajouté à l’entrepôt de données par chaque référentiel le partageant. Le format des fichiers est `repository-[UUID]`, où l’UUID est l’identifiant unique de chaque référentiel.

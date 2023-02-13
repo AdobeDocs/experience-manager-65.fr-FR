@@ -49,7 +49,7 @@ Adobe ne recommande la mise en œuvre du rendu côté serveur que si au moins l�
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-Si vous [êtes certain que votre projet nécessite la mise en œuvre du rendu côté serveur](/help/sites-developing/spa-ssr.md#when-to-use-ssr), la solution recommandée par Adobe est d’utiliser Adobe I/O Runtime.
+Si vous [êtes certain(e) que votre projet nécessite la mise en œuvre du rendu côté serveur](/help/sites-developing/spa-ssr.md#when-to-use-ssr), la solution recommandée par Adobe est d’utiliser Adobe I/O Runtime.
 
 Pour plus d’informations sur Adobe I/O Runtime, voir
 
@@ -65,7 +65,7 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 >
 >Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications Project Firefly](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
 >
->Un espace de travail distinct n’est pas nécessaire pour chaque instance (auteur, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire pour chaque instance (création, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
 ## Configuration du moteur de rendu distant {#remote-renderer-configuration}
 

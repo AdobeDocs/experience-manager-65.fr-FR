@@ -9,7 +9,7 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
 source-wordcount: '3529'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -91,14 +91,14 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 
 | **Plateforme** | **Niveau de prise en charge** | **Lien** |
 |---|---|---|
-| Oracle Java SE 11 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java SE 11 JDK – 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z : non pris en charge `[1]` |
 | Oracle Java SE 9 JDK | Z : Non pris en charge `[1]` |
-| Oracle Java SE 8 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| Oracle Java SE 8 JDK – 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | Machine virtuelle IBM J9 – Version 2.9, JRE 1.8.0 | A : pris en charge `[2]` |
 | Machine virtuelle IBM J9 – Version 2.8, JRE 1.8.0 | A : pris en charge `[2]` |
-| Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge `[3]` |  |
-| Azul Zulu OpenJDK 8 - 64 bits | A : pris en charge `[3]` |  |
+| Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` |  |
+| Azul Zulu OpenJDK 8 - 64 bits | A : pris en charge `[3]` |  |
 
 1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10 et Java 12 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement d’exploitation, Adobe assure uniquement la prise en charge des versions LTS de Java. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Consultez la section [Stratégie de prise en charge Java pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) pour plus d’informations.
 
@@ -118,7 +118,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 | **Système de fichiers avec le magasin de données** `[1]` | Binaires | A : pris en charge |
 | Stockage de binaires dans des fichiers TAR sur le système de fichiers `[1]` | Binaires | Z : Non pris en charge pour la production |
 | Amazon S3 | Binaires | A : pris en charge |
-| Stockage Microsoft Azure Blob | Binaires | A : pris en charge |
+| Microsoft Azure Blob Storage | Binaires | A : pris en charge |
 | MongoDB Enterprise 4.2  | Référentiel | A : pris en charge `[2, 3, 4]` |
 | MongoDB Enterprise 4.0 | Référentiel | Z : non pris en charge |
 | MongoDB Enterprise 3.6 | Référentiel | Z : non pris en charge |
@@ -189,7 +189,7 @@ Pour les environnements de production, Adobe Experience Manager fonctionne ave
 |---|---|
 | **Linux, en fonction de la distribution Red Hat**  | A : pris en charge `[1]` `[3]` |
 | Linux, en fonction de la distribution Debian, y compris Ubuntu  | A : pris en charge `[1]` `[2]` |
-| Linux, en fonction de la distribution SUSE | A : pris en charge `[1]` |
+| Linux, en fonction de la distribution SUSE | A : prise en charge de `[1]` |
 | Microsoft Windows Server 2019 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft Windows Server 2016 `[4]` | R : prise en charge restreinte des nouveaux contrats `[5]` |
 | Microsoft Windows Server 2012 R2 | Z : non pris en charge |
@@ -499,11 +499,11 @@ Pour Windows x86 :
 >
 >* PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
 >* Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
->* PDF Generator ne prend en charge que la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion sur le système d’exploitation Windows.
->* PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous Linux.
+>* PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion sur un système d’exploitation Windows.
+>* PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous Linux.
 >* PDF Generator ne prend pas en charge Microsoft Office 365.
 >* Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
->* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, reportez-vous à la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms en fonction de votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
 >* Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
 >* PDF Generator ne parvient pas à convertir les fichiers dans Microsoft Visio 2019. Vous pouvez continuer à utiliser Microsoft Visio 2016 pour convertir des fichiers .VSD et .VSDX.
 >* PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft Project 2019. Vous pouvez continuer à utiliser Microsoft Project 2016 pour convertir les fichiers .VSD et .VSDX.

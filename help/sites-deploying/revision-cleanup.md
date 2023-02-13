@@ -14,7 +14,7 @@ exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
 source-wordcount: '5918'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -42,7 +42,7 @@ Vous pouvez aussi consulter la [documentation Oak officielle.](https://jackrabbi
 
 **Il est recommandé de procéder au nettoyage des révisions en ligne.** L’utilisation du nettoyage des révisions hors ligne doit être limitée à des cas exceptionnels, par exemple, avant d’effectuer une migration vers un nouveau format de stockage ou si le service clientèle d’Adobe vous demande de le faire.
 
-## Comment exécuter le nettoyage des révisions en ligne ? {#how-to-run-online-revision-cleanup}
+## Comment exécuter le nettoyage des révisions en ligne {#how-to-run-online-revision-cleanup}
 
 Le nettoyage des révisions en ligne est programmé par défaut pour s’exécuter automatiquement une fois par jour sur les instances de publication et d’auteur d’AEM. Vous devez simplement définir la fenêtre de maintenance pendant une période où le niveau d’activité de l’utilisateur est aussi bas que possible. La nettoyage des révisions en ligne peut être configuré comme suit :
 
@@ -396,15 +396,15 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
     <ul>
      <li>Le nettoyage des révisions en ligne a démarré/s’est arrêté
       <ul>
-       <li>Le nettoyage des révisions en ligne se compose de trois phases : estimation, compression et nettoyage. La phase d’estimation peut forcer l’omission des phases de compression et de nettoyage si le référentiel ne contient pas suffisamment de résidus. Dans la dernière version d’AEM, le message "<code>TarMK GC #{}: estimation started</code>" marque le début de l’estimation, "<code>TarMK GC #{}: compaction started, strategy={}</code>" marque le début de la compression et "T"<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" marque le début du nettoyage.</li>
+       <li>Le nettoyage des révisions en ligne se compose de trois phases : estimation, compression et nettoyage. La phase d’estimation peut forcer l’omission des phases de compression et de nettoyage si le référentiel ne contient pas suffisamment de résidus. Dans la dernière version d’AEM, le message « <code>TarMK GC #{}: estimation started</code> » marque le début de l’estimation, « <code>TarMK GC #{}: compaction started, strategy={}</code> » marque le début de la compression et « T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code> » marque le début du nettoyage.</li>
       </ul> </li>
      <li>Espace disque gagné par le nettoyage de révision
       <ul>
-       <li>L’espace n’est récupéré que lorsque la phase de nettoyage est terminée. La fin de la phase de nettoyage est marquée par le message du journal « T<code>arMK GC #{}: cleanup completed in {} ({} ms</code> ». La dimension après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).".</li>
+       <li>L’espace n’est récupéré que lorsque la phase de nettoyage est terminée. La fin de la phase de nettoyage est marquée par le message du journal « T<code>arMK GC #{}: cleanup completed in {} ({} ms</code> ». La taille après nettoyage est {} ({} octets) et l’espace récupéré{} ({} octets). Le poids/la profondeur de la carte de compression est {}/{} ({} octets/{}).</li>
       </ul> </li>
-     <li>Un problème s’est produit pendant le nettoyage de la révision.
+     <li>Un problème s’est produit pendant le nettoyage des révisions.
       <ul>
-       <li>Il existe de nombreuses conditions d’échec, toutes sont marquées par les messages WARN ou ERROR du journal commençant par "TarMK GC".</li>
+       <li>Il existe de nombreuses conditions d’échec. Elles comportent toutes des messages AVERTISSEMENT ou ERREUR du journal commençant par « TarMK GC ».</li>
       </ul> </li>
     </ul> <p>Consultez également la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Dépannage basé sur les messages d’erreur</a> ci-dessous.</p> </td>
    <td> </td>
@@ -425,7 +425,7 @@ Dans certains cas, basculer entre les deux modes de compression a pour effet de 
   </tr>
   <tr>
    <td><strong>Comment détecter si le nettoyage des révisions en ligne a échoué et quelles sont les étapes de récupération ?</strong></td>
-   <td>Les conditions d’échec sont marquées par les messages WARN ou ERROR log commençant par "TarMK GC". Consultez également la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Dépannage basé sur les messages d’erreur</a> ci-dessous.</td>
+   <td>Les conditions d’échec comportent des messages de journal AVERTISSEMENT ou ERREUR commençant par « TarMK GC ». Consultez également la section <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Dépannage basé sur les messages d’erreur</a> ci-dessous.</td>
    <td> </td>
   </tr>
   <tr>
@@ -527,7 +527,7 @@ Le fichier error.log sera détaillé si des incidents surviennent pendant le pro
   </tr>  
   <tr>
     <td>Estimation</td>
-    <td>TarMK GC #2 : estimation ignorée car la compression est suspendue </td>
+    <td>TarMK GC #2 : estimation ignorée car la compression est suspendue.</td>
     <td>La phase d’estimation est ignorée lorsque la compression est désactivée par configuration sur le système.</td>
     <td>Activation du nettoyage des révisions en ligne.</td>
   </td>
@@ -541,7 +541,7 @@ Le fichier error.log sera détaillé si des incidents surviennent pendant le pro
   </tr>
   <tr>
     <td>Compression</td>
-    <td>TarMK GC #2 : compression en pause </td>
+    <td>TarMK GC #2 : compression en pause.</td>
     <td>Tant que la phase de compression est mise en pause par la configuration, ni la phase d’estimation, ni la phase de compression ne seront exécutées.</td>
     <td>Activation du nettoyage des révisions en ligne.</td>
   </td>
@@ -549,28 +549,28 @@ Le fichier error.log sera détaillé si des incidents surviennent pendant le pro
    <tr>
     <td>S/O</td>
     <td>TarMK GC #2 : compression annulée : ${REASON}.</td>
-    <td>La phase de compression s’est interrompue prématurément. Quelques exemples d’événements qui peuvent interrompre la phase de compression : pas suffisamment de mémoire ou d’espace disque sur le système hôte. De plus, la compression peut également être annulée en arrêtant le système ou en l’annulant explicitement via des interfaces administratives telles que la fenêtre de maintenance dans le tableau de bord des opérations.</td>
+    <td>La phase de compression s’est interrompue prématurément. Quelques exemples d’événements qui peuvent interrompre la phase de compression : pas suffisamment de mémoire ou d’espace disque sur le système hôte. De plus, vous pouvez annuler la compression en éteignant le système ou en l’annulant de façon explicite par le biais des interfaces d’administration telles que la fenêtre de maintenance du tableau de bord des opérations.</td>
     <td>Dépend de la raison donnée.</td>
   </td>
   </tr>
   <tr>
     <td>S/O</td>
-    <td>TarMK GC #2 : le compactage a échoué en 32,902 min (1974140 ms), après 5 cycles.</td>
+    <td>TarMK GC #2 : la compression a échoué à la minute 32,902 (1 974 140 ms), après 5 cycles.</td>
     <td>Ce message ne signifie pas qu’il existe une erreur irrécupérable, mais seulement que la compression s’est terminée après un certain nombre de tentatives. Lisez également le <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">paragraphe suivant.</a></td>
     <td>Lisez la <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Documentation Oak</a> suivante et la dernière question sur l’Exécution du nettoyage des révisions en ligne.</a></td>
   </td>
   </tr>
   <tr>
     <td>Nettoyage</td>
-    <td>TarMK GC #2 : nettoyage interrompu </td>
-    <td>Le nettoyage a été annulé du fait de l’arrêt du référentiel. Aucun impact sur la cohérence n’est attendu. En outre, l’espace disque ne sera probablement pas entièrement récupéré. Il sera récupéré lors du prochain cycle de nettoyage des révisions. </td>
-    <td>Déterminez pourquoi le référentiel a été arrêté et essayez à l’avenir d’éviter l’arrêt du référentiel pendant les fenêtres de maintenance.</td>
+    <td>TarMK GC #2 : nettoyage interrompu.</td>
+    <td>Le nettoyage a été annulé du fait de l’arrêt du référentiel. Aucun impact sur la cohérence n’est attendu. En outre, l’espace disque ne sera probablement pas récupéré dans sa totalité. Il sera récupéré lors du prochain cycle de nettoyage des révisions.</td>
+    <td>Découvrez pourquoi le référentiel s’est arrêté et essayez d’éviter de l’éteindre pendant les périodes de maintenance.</td>
   </td>
   </tr>
   </tbody>
 </table>
 
-## Exécution du nettoyage des révisions hors ligne {#how-to-run-offline-revision-cleanup}
+## Comment exécuter le nettoyage des révisions hors ligne {#how-to-run-offline-revision-cleanup}
 
 >[!CAUTION]
 >

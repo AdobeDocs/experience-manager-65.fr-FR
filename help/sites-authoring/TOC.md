@@ -28,7 +28,7 @@ ht-degree: 100%
    + [Rechercher](search.md)
    + [Configuration de l’environnement du compte](user-properties.md)
    + [Votre boîte de réception](inbox.md)
-   + [Raccourcis clavier  pour les consoles](keyboard-shortcuts.md)
+   + [Raccourcis clavier pour les consoles](keyboard-shortcuts.md)
    + [Choix de l’interface utilisateur](select-ui.md)
 + Création {#authoring}
    + [Environnement et outils de création](author-environment-tools.md)
