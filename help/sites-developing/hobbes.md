@@ -12,7 +12,7 @@ discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ Les suites de tests s’exécutent séquentiellement dans l’ordre dans lequel 
 
 La procédure suivante vous guide tout au long de la création et de l’exécution d’une suite de tests sur le [contenu We.Retail](/help/sites-developing/we-retail.md). Toutefois, vous pouvez facilement modifier le test pour utiliser une autre page web.
 
-Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+Pour plus d’informations sur la création de vos propres suites de tests, reportez-vous à la documentation de l’API [Hobbes.js](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Ouvrez CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Cliquez avec le bouton droit de la souris sur le dossier `/etc/clientlibs`, puis cliquez sur **Créer > Créer un dossier**. Entrez `myTests` comme nom et cliquez sur **OK**.
