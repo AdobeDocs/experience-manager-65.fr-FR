@@ -1,5 +1,5 @@
 ---
-title: Utilisation de la signature tactile dans les formulaires HTML5
+title: Utiliser la signature tactile dans les formulaires HTML5
 seo-title: Using Scribble Signature in HTML5 forms
 description: Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tactiles, qui prennent tous en charge les signatures. La signature des documents sur les périphériques mobiles devient une méthode acceptée de signature des formulaires.
 seo-description: HTML5 forms are increasingly used on touch devices, and one common requirement is to support signatures. Signing documents on mobile devices is becoming an accepted way of signing forms on mobile devices.
@@ -13,13 +13,13 @@ docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '658'
 ht-degree: 100%
 
 ---
 
-# Utilisation de la signature tactile dans les formulaires HTML5{#using-scribble-signature-in-html-forms}
+# Utiliser la signature tactile dans les formulaires HTML5{#using-scribble-signature-in-html-forms}
 
 Les formulaires HTML5 sont de plus en plus utilisés sur les périphériques tactiles, qui prennent tous en charge les signatures. La saisie tactile, consistant à écrire avec un stylet ou un doigt, devient un moyen accepté de signer des formulaires sur les périphériques mobiles. Les formulaires HTML5 et Forms Designer offrent désormais la possibilité d’afficher un champ de signature tactile dans le formulaire. Lorsque le formulaire est rendu dans le navigateur, vous pouvez signer dans ces champs avec un stylet, la souris ou le doigt.
 
@@ -73,7 +73,7 @@ Une fois qu’un champ de signature tactile a été ajouté au formulaire et gé
 Si vous cliquez sur l’icône de géolocalisation lors de la création de la zone de saisie tactile, l’emplacement géographique et les informations temporelles sont ajoutés au champ.
 
 >[!NOTE]
->Sur l’iPad, l’intégration des informations de géolocalisation est obligatoire par défaut.
+Sur l’iPad, l’intégration des informations de géolocalisation est obligatoire par défaut.
 
 Sur l’iPad, l’icône de géolocalisation n’est pas affichée par défaut et les informations de géolocalisation sont automatiquement intégrées lorsque vous cliquez sur **OK**.
 
