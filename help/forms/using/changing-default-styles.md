@@ -1,5 +1,5 @@
 ---
-title: Modification des styles par défaut des formulaires HTML5
+title: Modifiier les styles par défaut des formulaires HTML5
 seo-title: Changing default styles of HTML5 forms
 description: Le style de formulaires HTML5 est basé sur le code CSS. Vous pouvez modifier les styles par défaut du formulaire.
 seo-description: HTML5 forms styling is based on CSS. You can change the default styles of the form.
@@ -12,13 +12,13 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
 ht-degree: 100%
 
 ---
 
-# Modification des styles par défaut des formulaires HTML5{#changing-default-styles-of-html-forms}
+# Modifiier les styles par défaut des formulaires HTML5{#changing-default-styles-of-html-forms}
 
 Les formulaires HTML5 sont rendu utilisant des fonctionnalités HTML5 et le style du formulaire rendu est fait utilisant CSS. L’apparence par défaut des formulaires HTML5 est similaire à son rendu PDF. Les développeurs peuvent utiliser des CSS personnalisés pour modifier l’apparence par défaut des formulaires HTML5.
 
