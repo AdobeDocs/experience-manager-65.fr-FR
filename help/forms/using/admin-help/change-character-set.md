@@ -1,5 +1,5 @@
 ---
-title: Modification du jeu de caractères
+title: Modifier le jeu de caractères
 seo-title: Change the character set
 description: Vous pouvez indiquer le jeu de caractères utilisé pour encoder le flux de sortie. Découvrez comment modifier le jeu de caractères.
 seo-description: You can specify the character set used to encode the output stream. Learn how you can change the character set.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 811b31f8-5465-4fb2-b1f9-513936041771
 exl-id: 9ff75d98-54ad-425d-912f-d5a7501bf564
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
-# Modification du jeu de caractères {#change-the-character-set}
+# Modifier le jeu de caractères {#change-the-character-set}
 
 Vous pouvez indiquer le jeu de caractères utilisé pour encoder le flux de sortie.
 
