@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des services de données Drafts & Submission
+title: Personnaliser les services de données Drafts & Submission
 seo-title: Customizing Draft and Submission data services
 description: Par défaut, AEM Forms stocke des formulaires adaptatifs préliminaires (brouillons) et envoyés dans un nœud par défaut de l’instance de publication. Vous pouvez toutefois configurer les services Drafts & Submission d’AEM Forms afin de personnaliser le stockage des formulaires adaptatifs préliminaires et envoyés.
 seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
@@ -10,13 +10,13 @@ topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
 ht-degree: 100%
 
 ---
 
-# Personnalisation des services de données Drafts &amp; Submission {#customizing-draft-and-submission-data-services}
+# Personnaliser les services de données Drafts &amp; Submission {#customizing-draft-and-submission-data-services}
 
 ## Présentation {#overview}
 
@@ -24,7 +24,7 @@ AEM Forms permettent aux utilisateurs d’enregistrer un formulaire adaptatif en
 
 Par défaut, AEM Forms stocke les données utilisateur associées au service version préliminaire et soumission sur l’instance de publication dans le nœud `/content/forms/fp`.
 
-Cependant, les composants du portail AEM Forms fournissent des services de données qui vous permettent de personnaliser la mise en œuvre du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez, par exemple, stocker les données dans un entrepôt de données implémenté au sein de votre entreprise.
+Cependant, les composants du portail AEM Forms fournissent des services de données qui vous permettent de personnaliser la mise en œuvre du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez, par exemple, stocker les données dans un entrepôt de données implémenté au sein de votre organisation.
 
 Pour personnaliser le stockage des données utilisateur, vous devez implémenter les services de données [drafts](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) &amp; [submission](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
 
@@ -39,7 +39,7 @@ Pour personnaliser le stockage des données utilisateur, vous devez implémenter
 
 Pour personnaliser le stockage des données de brouillon, vous devez fournir une implémentation pour toutes les méthodes de l’interface `DraftAFDataService`.
 
-Vous trouverez une description des méthodes et de leurs arguments dans l’échantillon de code suivant de l’interface : 
+Vous trouverez une description des méthodes et de leurs arguments dans l’échantillon de code suivant de l’interface :
 
 ```java
 public interface DraftAFDataService {
@@ -82,7 +82,7 @@ public interface DraftAFDataService {
 }
 ```
 
-## Service Submission Data  {#submission-data-service}
+## Service Submission Data {#submission-data-service}
 
 Pour personnaliser le stockage des données d’envoi des utilisateurs, vous devez fournir une implémentation pour toutes les méthodes de l’interface `SubmittedAFDataService`.
 
