@@ -1,5 +1,5 @@
 ---
-title: Personnalisation du thème
+title: Personnaliser le thème
 seo-title: Theme Customization
 description: Comment personnaliser le thème de votre application AEM Forms.
 seo-description: How to customize the theme of your AEM Forms app.
@@ -11,13 +11,13 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
 source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
 ht-degree: 100%
 
 ---
 
-# Personnalisation du thème {#theme-customization}
+# Personnaliser le thème {#theme-customization}
 
 Vous pouvez personnaliser le code HTML et le fichier CSS pour personnaliser l’organisation et l’aspect de l’application AEM Forms. Vous pouvez, par exemple, modifier la couleur du fond d’écran ainsi que la hauteur des tâches ou des points de départ. L’exemple suivant donne des instructions pour modifier les paramètres suivants :
 
