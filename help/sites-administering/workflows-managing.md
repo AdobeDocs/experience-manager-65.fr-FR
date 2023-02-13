@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Les modèles de workflows héritent d’une liste de contrôle d’accès par d�
 >
 >Pour plus d’informations sur l’utilisation de CRXDE Lite pour configurer des listes de contrôle d’accès, voir [Gestion des droits d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-### Appliquez une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models. {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
+### Appliquer une liste de contrôle d’accès pour le modèle spécifique de workflow sous /var/workflow/models {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
 Si le modèle de workflow est stocké dans le dossier `/var/workflow/models`, vous pouvez affecter une liste de contrôle d’accès spécifique et ne se rapportant qu’à ce workflow, dans le dossier :
 
