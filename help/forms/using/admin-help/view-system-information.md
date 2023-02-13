@@ -1,5 +1,5 @@
 ---
-title: Affichage des informations du système
+title: Afficher les informations du système
 seo-title: View system information
 description: Découvrez comment vous pouvez afficher les graphiques de contrôle des ressources et les informations sur le serveur exécutant AEM Forms.
 seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
 ht-degree: 100%
 
 ---
 
-# Affichage des informations du système {#view-system-information}
+# Afficher les informations du système {#view-system-information}
 
 L’onglet Système affiche des graphiques de contrôle des ressources ainsi que des informations sur le serveur exécutant AEM Forms. Pour accéder à ces informations, cliquez sur Health Monitor dans l’angle supérieur droit de la page. Si vous exécutez AEM Forms dans un environnement en grappe, les informations affichées concernent le nœud sélectionné dans la liste des serveurs.
 
