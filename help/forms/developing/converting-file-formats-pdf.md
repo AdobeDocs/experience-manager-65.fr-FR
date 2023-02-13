@@ -12,7 +12,7 @@ discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7850'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Le service Generate PDF peut convertir les formats standards suivants en PDF.
 Le service Generate PDF peut convertir des PDF aux formats de fichiers suivants (Windows uniquement) :
 
 * Encapsulated Postscript (EPS)
-* HTML3.2
+* HTML 3.2
 * HTML 4.01 avec CSS 1.0
 * DOC (format Microsoft Word)
 * RTF
@@ -98,7 +98,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par p
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary-of-steps}
 
@@ -265,7 +265,7 @@ Cette section décrit comment utiliser l’API Generate PDF pour convertir par 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Generate PDF, consultez la section [Références des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-1}
 
@@ -415,7 +415,7 @@ Cette section décrit comment utiliser l’API Java Generate PDF et l’API Web 
 
 >[!NOTE]
 >
->Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Pour plus d’informations sur le service Generate PDF, voir [Référence des services pour AEM Forms](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
 ### Résumé des étapes {#summary_of_steps-2}
 
