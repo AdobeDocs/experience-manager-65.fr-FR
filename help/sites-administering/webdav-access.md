@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
 ht-degree: 100%
 
@@ -159,7 +159,7 @@ Pour vous connecter à AEM par le biais de WebDAV dans un environnement Windows,
    * **Dossier** : `http://localhost:4502`
    * Activez l’option **Se connecter à l’aide d’informations d’identification différentes**.
 
-   Cliquez sur Terminer
+   Cliquez sur Terminer.
 
    ![chlimage_1-113](assets/chlimage_1-113a.png)
 
