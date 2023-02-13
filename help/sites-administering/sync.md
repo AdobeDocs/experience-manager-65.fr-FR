@@ -13,9 +13,9 @@ docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
 source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2445'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -47,13 +47,13 @@ Les avantages de la synchronisation des utilisateurs à l’aide de la distribut
 
 >[!NOTE]
 >
->Si des sessions sont requises, il est recommandé d’utiliser une solution SSO ou une session persistante et de demander aux clients de se connecter s’ils passent à une autre instance de publication.
+>Si des sessions sont requises, il est conseillé d’utiliser une solution SSO ou une session persistante et de demander aux client(e)s de se connecter s’ils basculent vers une autre instance de publication.
 
 >[!CAUTION]
 >
 >La synchronisation du groupe d’**administration** n’est pas prise en charge, même si la synchronisation des utilisateurs est activée. À la place, un échec de l’importation de la comparaison est consigné dans le journal des erreurs.
 >
->Par conséquent, lorsqu’un déploiement est une ferme de publication, si un utilisateur est ajouté ou supprimé de la variable **administrateurs** , la modification doit être effectuée manuellement sur chaque instance de publication.
+>Par conséquent, lorsque le déploiement est une batterie de publication, si un utilisateur ou une utilisatrice est ajouté(e) ou supprimé(e) dans le groupe d’**administration**, la modification doit être effectuée manuellement sur chaque instance de publication.
 
 ## Activation de la synchronisation des utilisateurs {#enable-user-sync}
 
@@ -71,9 +71,9 @@ Vous trouverez ci-dessous les étapes nécessaires pour activer la synchronisati
 
 ### Prérequis {#prerequisites}
 
-1. Si des utilisateurs et des groupes d’utilisateurs ont déjà été créés sur une instance de publication, il est recommandé de [synchronisation manuelle](#manually-syncing-users-and-user-groups) les données utilisateur sur toutes les instances de publication avant de configurer et d’activer la synchronisation des utilisateurs.
+1. Si les utilisateurs et utilisatrices et les groupes d’utilisateurs ont déjà été créés sur une instance de publication, il est recommandé de [synchroniser manuellement](#manually-syncing-users-and-user-groups) les données utilisateur sur toutes les instances de publication avant de configurer et d’activer la synchronisation des utilisateurs.
 
-Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et groupes nouvellement créés sont synchronisés.
+Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et utilisatrices et les groupes nouvellement créés sont synchronisés.
 
 1. Assurez-vous que la dernière version du code a été installée :
 
@@ -160,7 +160,7 @@ Voir également
 
 **Configurer les autorisations**
 
-Une fois qu’un utilisateur autorisé, un membre de la variable **`administrators`** groupe d’utilisateurs, a été créé sur toutes les instances de publication, cet utilisateur autorisé doit être identifié sur author comme étant autorisé à synchroniser les données utilisateur de l’auteur à la publication.
+Une fois qu’un utilisateur autorisé, membre du groupe d’utilisateurs **`administrators`**, a été créé sur toutes les instances de publication, cet utilisateur autorisé doit être identifié en mode de création comme étant autorisé à synchroniser les données utilisateur de la création à la publication.
 
 * **en mode de création**
 
@@ -196,7 +196,7 @@ Vérifiez `Name` : `socialpubsync-reverse`
 
       * sélectionnez la case à cocher `Enabled`
       * sélectionnez `Save`
-   * **répétez** l’opération pour chaque instance de publication
+   * **répétez** l’opération pour chaque instance de publication.
 
 
 
@@ -270,14 +270,14 @@ Vérifiez `Name` : `socialpubsync`
 
 ![](assets/chlimage_1-25.png)
 
-* **Points de fin de l’exportateur**
-Il doit y avoir un point de terminaison d’exportateur pour chaque instance de publication. Par exemple, s’il existe 2 instances de publication, localhost:4503 et 4504, il doit y avoir 2 entrées :
+* **Points d’entrée de l’exportateur**
+Il doit exister un point d’entrée de l’exportateur pour chaque instance de publication. Par exemple, s’il existe 2 instances de publication, localhost:4503 et 4504, il doit y avoir 2 entrées :
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
-* **Points de terminaison de l’importateur**
-Il doit y avoir un point de terminaison d’importateur pour chaque instance de publication. Par exemple, s’il existe 2 instances de publication, localhost:4503 et 4504, il doit y avoir 2 entrées :
+* **Points d’entrée de l’importateur**
+Il doit exister un point d’entrée de l’importateur pour chaque instance de publication. Par exemple, s’il existe 2 instances de publication, localhost:4503 et 4504, il doit y avoir 2 entrées :
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -368,7 +368,7 @@ Si l’identifiant Sling d’une instance de publication correspond à l’ident
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
 
-## Fabrique de générateur de modules vault {#vault-package-builder-factory}
+## Fabrique de générateur de module vault {#vault-package-builder-factory}
 
 Pour que les mises à jour soient correctement synchronisées, il est nécessaire de modifier le générateur de module vault en vue de la synchronisation des utilisateurs :
 
@@ -405,7 +405,7 @@ Pour que les mises à jour soient correctement synchronisées, il est nécessair
 
 Par défaut, les utilisateurs et les profils créés dans l’environnement de publication (inscription automatique) n’apparaissent pas dans l’environnement de création.
 
-Lorsque la topologie est une [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm) et la synchronisation des utilisateurs a été correctement configurée, la variable *user* et *profil utilisateur* est synchronisé dans la ferme de publication à l’aide de la distribution Sling.
+Lorsque la topologie consiste en une [batterie de publication](/help/sites-deploying/recommended-deploys.md#tarmk-farm) et que la synchronisation des utilisateurs a été correctement configurée, l’*utilisateur* et le *profil utilisateur* sont synchronisés dans la batterie de publication à l’aide de la distribution Sling.
 
 ### Les utilisateurs ou les groupes d’utilisateurs sont créés à l’aide de la console Sécurité. {#users-or-user-groups-are-created-using-security-console}
 
@@ -417,7 +417,7 @@ Lorsque la console [Administration et sécurité des utilisateurs](/help/sites-a
 
 ### Comment mettre la synchronisation des utilisateurs hors ligne {#how-to-take-user-sync-offline}
 
-Pour mettre la synchronisation des utilisateurs hors ligne, afin de [suppression d’une instance de publication](#how-to-remove-a-publish-instance) ou [synchronisation manuelle des données](#manually-syncing-users-and-user-groups), la file d’attente de distribution doit être vide et silencieuse.
+Pour que la synchronisation des utilisateurs puisse être mise hors ligne, afin de [supprimer une instance de publication](#how-to-remove-a-publish-instance) ou de [synchroniser manuellement les données](#manually-syncing-users-and-user-groups), la file d’attente de distribution doit être vide et inactive.
 
 Pour vérifier le statut de la file d’attente de distribution :
 
@@ -460,7 +460,7 @@ Voici ce qui s’affiche lorsque la synchronisation des utilisateurs n’a pas �
 
 ![](assets/chlimage_1-28.png)
 
-#### Exécution des diagnostics pour les instances de publication {#how-to-run-diagnostics-for-publish-instances}
+#### Comment exécuter des diagnostics pour les instances de publication {#how-to-run-diagnostics-for-publish-instances}
 
 Lorsque le diagnostic est exécuté à partir de l’environnement de création, les résultats de réussite/échec incluent une section [INFO] la liste des instances de publication pour confirmation.
 
@@ -536,7 +536,7 @@ Voir la section [9. Identifiant Sling unique](#unique-sling-id).
 
 ### Synchronisation manuelle d’utilisateurs et de groupes d’utilisateurs {#manually-syncing-users-and-user-groups}
 
-* sur les instances de publication sur lesquelles des utilisateurs et des groupes d’utilisateurs existent :
+* sur les instances de publication sur lesquelles les utilisateurs et les groupes d’utilisateurs existent :
 
    * [si elle est activée, désactivez la synchronisation des utilisateurs](#how-to-take-user-sync-offline)
    * [créez un module](/help/sites-administering/package-manager.md#creating-a-new-package) de `/home`
@@ -554,13 +554,13 @@ Voir la section [9. Identifiant Sling unique](#unique-sling-id).
 
 Pour configurer ou activer la synchronisation des groupes, allez à l’étape 1 : [Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory).
 
-### Lorsqu’une instance de publication n’est plus disponible {#when-a-publish-instance-becomes-unavailable}
+### Lorsqu’une instance de publication n’est plus disponible. {#when-a-publish-instance-becomes-unavailable}
 
-Lorsqu’une instance de publication n’est plus disponible, elle ne doit pas être supprimée si elle doit être de nouveau en ligne à l’avenir. Les modifications sont mises en file d’attente pour l’instance de publication. Une fois qu’elles sont de nouveau en ligne, les modifications sont traitées.
+Lorsqu’une instance de publication n’est plus disponible, elle ne doit pas être supprimée si elle doit être de nouveau en ligne à l’avenir. Les modifications sont mises en file d’attente pour l’instance de publication et, une fois l’instance de nouveau en ligne, elles sont traitées.
 
 Si l’instance de publication ne doit pas être remise en ligne, si elle est définitivement hors ligne, elle doit être supprimée, car l’accumulation dans la file d’attente entraînera une utilisation notable de l’espace disque dans l’environnement de création.
 
-Lorsqu’une instance de publication est en panne, le journal de l’auteur comporte des exceptions similaires à :
+Lorsqu’une instance de publication est hors service, le journal de création comporte des exceptions similaires à :
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -570,14 +570,14 @@ Lorsqu’une instance de publication est en panne, le journal de l’auteur comp
  org.apache.sling.distribution.packaging.DistributionPackageImportException: failed in importing package ...
 ```
 
-### Suppression d’une instance de publication {#how-to-remove-a-publish-instance}
+### Comment supprimer une instance de publication {#how-to-remove-a-publish-instance}
 
-Pour supprimer une instance de publication du [Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory), la file d’attente de distribution doit être vide et silencieuse.
+Pour supprimer une instance de publication de l’[Agent de distribution Apache Sling - Fabrique d’agents de synchronisation](#apache-sling-distribution-agent-sync-agents-factory), la file d’attente de distribution doit être vide et inactive.
 
 * en mode de création :
 
    * [Application de la synchronisation des utilisateurs hors ligne](#how-to-take-user-sync-offline)
-   * Follow [étape 7](#apache-sling-distribution-agent-sync-agents-factory) pour supprimer l’instance de publication des deux listes de serveurs :
+   * suivez l’[étape 7](#apache-sling-distribution-agent-sync-agents-factory) pour supprimer l’instance de publication des deux listes de serveur :
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
