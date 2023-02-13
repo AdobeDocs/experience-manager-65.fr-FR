@@ -11,8 +11,8 @@ topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+workflow-type: ht
 source-wordcount: '2506'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Lorsque vous utilisez des requêtes REST, il est recommandé de ne pas appeler d
 
 Lorsque vous appelez un service à l’aide de REST, vous êtes invité à saisir un nom d’utilisateur et un mot de passe AEM Forms. Toutefois, si vous ne souhaitez pas spécifier un nom d’utilisateur et un mot de passe, vous pouvez désactiver la sécurité du service.
 
-Pour appeler un service Forms (un processus devient un service lorsque le processus est activé) à l’aide de REST, configurez un point de terminaison REST. (Consultez la section « Gérer les points de terminaison » dans lʼ[Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr)).
+Pour appeler un service Forms (un processus devient un service lorsque le processus est activé) à l’aide de REST, configurez un point de terminaison REST. (Consultez la section « Gérer les points dʼentrée » dans lʼ[Aide dʼadministration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
 
 Une fois la configuration dʼun point de terminaison REST terminée, vous pouvez appeler un service Forms à l’aide d’une méthode HTTP GET ou POST.
 
@@ -291,7 +291,7 @@ Vous pouvez appeler un processus de courte durée AEM Forms nommé *MyApplicatio
 
 >[!NOTE]
 >
->Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus appelé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre l’exemple de code, créez un processus appelé `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
