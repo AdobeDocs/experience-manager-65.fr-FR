@@ -12,7 +12,7 @@ discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4872'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Avant de commencer, vous devez tenir compte des points importants suivants :
 
 La création d’un modèle à l’aide de la **console Modèles** et de l’**éditeur de modèles** exige une collaboration entre les rôles suivants :
 
-* **Admin**:
+* **Administrateur** :
 
    * La création d’un dossier pour les modèles nécessite des droits `admin`.
 
@@ -604,7 +604,7 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 >
 >Le contenu initial est destiné à préparer les composants et la mise en page, point de départ de la création du contenu. Il n’est pas destiné à constituer un contenu réel laissé tel quel. C’est pour cette raison que le contenu initial ne peut pas être traduit.
 >
->Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+>Si vous devez inclure du texte traduisible dans votre modèle, par exemple dans les en-têtes ou les pieds de page, vous pouvez utiliser les [fonctions de localisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr).
 
 ### Modification d’un modèle - Disposition - Créateur de modèles {#editing-a-template-layout-template-author}
 
