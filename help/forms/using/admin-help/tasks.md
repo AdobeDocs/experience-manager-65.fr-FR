@@ -1,5 +1,5 @@
 ---
-title: Utilisation de tâches
+title: Utiliser les tâches
 seo-title: Working with tasks
 description: Utilisez la page Recherche de tâche pour rechercher les tâches par nom d’utilisateur ou par identificateur de tâche. Découvrez l’utilisation des tâches.
 seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
 ht-degree: 100%
 
 ---
 
-# Utilisation de tâches {#working-with-tasks}
+# Utiliser les tâches {#working-with-tasks}
 
 Utilisez la page Recherche de tâche pour rechercher les tâches par nom d’utilisateur ou par identificateur de tâche. Les résultats de la recherche s’affichent dans la page Liste de tâches où vous pouvez accéder à l’historique d’une tâche. Vous pouvez également réaffecter une tâche si trop de tâches ont été affectées à un même utilisateur, ou si une tâche lui a été affectée par erreur.
 
