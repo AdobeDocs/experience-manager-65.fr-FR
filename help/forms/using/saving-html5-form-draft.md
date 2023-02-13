@@ -1,5 +1,5 @@
 ---
-title: Enregistrement d’un formulaire HTML5 en tant que brouillon
+title: Enregistrer un formulaire HTML5 en tant que brouillon
 seo-title: Saving an HTML5 form as a draft
 description: Enregistrez un formulaire HTML5 comme brouillon et reprenez le remplissage du formulaire ultérieurement.
 seo-description: Save an HTML5 form as a draft and resume filling the form at a later stage.
@@ -11,13 +11,13 @@ discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
 ht-degree: 100%
 
 ---
 
-# Enregistrement d’un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
+# Enregistrer un formulaire HTML5 en tant que brouillon {#saving-an-html-form-as-a-draft}
 
 Vous pouvez enregistrer un formulaire HTML5 comme brouillon et reprendre le remplissage du formulaire ultérieurement. Le portail des formulaires permet à tout utilisateur d’enregistrer et de restaurer un formulaire HTML5. Pour activer la fonctionnalité d’enregistrement en tant que brouillon, ajoutez les configurations suivantes au nœud de profil :
 
