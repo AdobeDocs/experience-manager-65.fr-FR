@@ -1,5 +1,5 @@
 ---
-title: Maintenance du journal d’audit dans AEM 6
+title: Maintenance du journal d’audit dans AEM 6
 seo-title: Audit Log Maintenance in AEM 6
 description: Découvrez comment tenir à jour le journal d’audit dans AEM.
 seo-description: Lear about Audit Log Maintenance in AEM.
@@ -12,13 +12,13 @@ discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '603'
 ht-degree: 100%
 
 ---
 
-# Maintenance du journal d’audit dans AEM 6{#audit-log-maintenance-in-aem}
+# Maintenance du journal d’audit dans AEM 6{#audit-log-maintenance-in-aem}
 
 Les événements AEM pouvant être inclus dans la journalisation d’audit génèrent une grande quantité de données archivées. Ces données peuvent rapidement s’agrandir au fil du temps en raison des réplications, des téléchargements de ressources et autres activités du système.
 
