@@ -1,5 +1,5 @@
 ---
-title: Récupération de l’espace mémoire du magasin de données
+title: Récupération de l’espace mémoire de l’entrepôt de données
 seo-title: Data Store Garbage Collection
 description: Découvrez comment configurer le nettoyage de la mémoire d’entrepôt de données pour libérer de l’espace disque.
 seo-description: Learn how to configure Data Store Garbage Collection to free up disk space.
@@ -12,13 +12,13 @@ discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1887'
 ht-degree: 100%
 
 ---
 
-# Récupération de l’espace mémoire du magasin de données {#data-store-garbage-collection}
+# Récupération de l’espace mémoire de l’entrepôt de données {#data-store-garbage-collection}
 
 Lorsqu’une ressource WCM conventionnelle est supprimée, la référence à l’enregistrement d’entrepôt de données sous-jacent peut être supprimée de la hiérarchie de nœud, mais l’enregistrement d’entrepôt de données lui-même est conservé. Cet enregistrement d’entrepôt de données non référencé est alors considéré comme faisant partie des « données à nettoyer » qu’il n’est pas utile de conserver. Dans les instances où plusieurs ressources de nettoyage existent, il est préférable de vous en débarrasser pour préserver l’espace et pour optimiser les performances de sauvegarde et de la maintenance du système de fichiers.
 
