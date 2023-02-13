@@ -1,5 +1,5 @@
 ---
-title: Exemple d’intégration d’un composant brouillons & envois à la base de données
+title: Exemple d’intégration d’un composant brouillons et envois à une base de données
 seo-title: Sample for integrating drafts & submissions component with database
 description: Référencez l’implémentation des services de données et de métadonnées personnalisés pour intégrer les composants brouillons et envois à une base de données.
 seo-description: Reference implementation of customized data and metadata services to integrate drafts and submissions component with a database.
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1467'
 ht-degree: 100%
 
@@ -122,7 +122,7 @@ Effectuez les étapes suivantes, sur toutes les instances d’auteur et de publi
   </tr>
   <tr>
    <td>Nombre maximum de connexions actives</td>
-   <td>1000</td>
+   <td>1 000</td>
   </tr>
   <tr>
    <td>Nombre maximum de connexions inactives</td>
