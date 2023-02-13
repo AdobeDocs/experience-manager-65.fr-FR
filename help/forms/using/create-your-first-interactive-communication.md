@@ -11,13 +11,13 @@ discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
 source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '981'
 ht-degree: 100%
 
 ---
 
-# Didacticiel : Créer votre première communication interactive {#tutorial-create-your-first-interactive-communication}
+# Didacticiel : créer votre première communication interactive {#tutorial-create-your-first-interactive-communication}
 
 Découvrez comment créer votre première communication interactive.
 
@@ -142,7 +142,7 @@ Les communications interactives peuvent être fournies par deux canaux : impres
 
 [ ](/help/forms/using/create-interactive-communication0.md)
 
-## Étape 6 : Publier votre communication interactive {#step-publish-your-interactive-communication}
+## Étape 6 : publier votre communication interactive. {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
