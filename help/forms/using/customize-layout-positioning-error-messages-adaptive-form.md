@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de la disposition et de la position des messages d’erreur d’un formulaire adaptatif
 seo-title: Customize layout and positioning of error messages of an adaptive form
-description: 'Vous pouvez personnaliser la disposition et la position des messages d’erreur d’un formulaire adaptatif. '
+description: Vous pouvez personnaliser la disposition et la position des messages d’erreur d’un formulaire adaptatif.
 seo-description: You can customize layout and positioning of the error messages of an adaptive for.
 uuid: 6d3490f6-c867-44c9-a527-55f6d7221f99
 content-type: reference
@@ -11,7 +11,7 @@ discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
 ht-degree: 100%
 
