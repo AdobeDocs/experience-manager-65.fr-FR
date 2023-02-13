@@ -13,9 +13,9 @@ docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 source-git-commit: dd8f24ce412a8ca6c44224a7602533dae0898e92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6230'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -326,9 +326,9 @@ Un contrôle de l’intégrité composite vise à agréger différents contrôle
 
 ### Configuration du contrôle de l’intégrité {#health-check-configuration}
 
-Par défaut, pour une instance AEM d’usine, les contrôles d’intégrité s’exécutent toutes les 60 secondes.
+Par défaut, pour une instance AEM prête à l’emploi, les contrôles d’intégrité s’exécutent toutes les 60 secondes.
 
-Vous pouvez configurer la variable **Période** avec le [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) **Configuration du contrôle de l’intégrité des requêtes** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
+Vous pouvez configurer la **Période** avec la **Configuration du contrôle de l’intégrité des requêtes** de la [Configuration OSGi](/help/sites-deploying/configuring-osgi.md) (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
 
 ## Surveillance à l’aide de Nagios {#monitoring-with-nagios}
 
@@ -471,7 +471,7 @@ La page affiche les informations suivantes :
 
 Par défaut, les 20 demandes de page les plus lentes sont enregistrées, mais la limite peut être modifiée dans le gestionnaire de configuration.
 
-### Performances des requêtes {#query-performance}
+### Performance des requêtes {#query-performance}
 
 La page Performance des requêtes permet d’analyser les requêtes les plus lentes exécutées par le système. Ces informations sont fournies par le référentiel dans un MBean JMX. Ces informations sont fournies par le MBean JMX `com.adobe.granite.QueryStat` dans Jackrabbit et par `org.apache.jackrabbit.oak.QueryStats.` dans le référentiel Oak.
 
@@ -616,7 +616,7 @@ Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer a
 
 **Dans AEM 6.4**, vous pouvez arrêter la tâche de maintenance Purge de version comme suit :
 
-* Automatiquement : si la période de maintenance planifiée se termine avant que la tâche ne puisse se terminer, celle-ci s’arrête automatiquement. Elle reprend lorsque commence la période de maintenance suivante.
+* Automatiquement : si la période de maintenance planifiée se termine avant que la tâche ne puisse se terminer, celle-ci s’arrête automatiquement. Elle reprend lorsque la fenêtre de maintenance suivante s’ouvre.
 * Manuellement : pour arrêter manuellement la tâche, sur la carte de maintenance Purge de version, cliquez sur l’icône **Arrêter**. La tâche reprend en toute sécurité lors de la prochaine exécution.
 
 >[!NOTE]
@@ -885,7 +885,7 @@ Vous pouvez également télécharger un fichier `JSON` qui récapitule les infor
     <ul>
      <li>pages</li>
      <li>ressources</li>
-     <li>tags</li>
+     <li>balises</li>
      <li>éléments autorisables</li>
      <li>nombre total de nœuds<br /> </li>
     </ul> <p>Le nombre total de nœuds est dérivé de nodeCounterMBean ; les autres statistiques proviennent d’IndexInfoService.</p> </td>
