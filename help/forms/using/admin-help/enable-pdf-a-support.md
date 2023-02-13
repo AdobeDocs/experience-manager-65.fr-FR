@@ -1,5 +1,5 @@
 ---
-title: Activation de la prise en charge de PDF/A
+title: Activer la prise en charge du format PDF/A
 seo-title: Enable PDF/A support
 description: Découvrez comment activer la prise en charge du format PDF/A. Des fichiers compatibles PDF/A peuvent être créés à partir de fichiers Microsoft Excel, Microsoft PowerPoint et Microsoft Word.
 seo-description: Learn how to enable PDF/A support. PDF/A-compliant files can be created from Microsoft Excel, Microsoft PowerPoint, and Microsoft Word files.
@@ -12,13 +12,13 @@ discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
 feature: PDF Generator
 exl-id: 0e83a208-aa8f-4ff1-b981-244d22a157f2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
 ht-degree: 100%
 
 ---
 
-# Activation de la prise en charge de PDF/A {#enable-pdf-a-support}
+# Activer la prise en charge du format PDF/A {#enable-pdf-a-support}
 
 PDF Generator prend en charge la création de fichiers compatibles PDF/A issus de fichiers Microsoft Excel, Microsoft PowerPoint et Microsoft Word.
 
