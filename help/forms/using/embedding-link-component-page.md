@@ -1,5 +1,5 @@
 ---
-title: Intégration du composant Link dans une page
+title: Intégrer le composant Link dans une page
 seo-title: Embedding link component in a page
 description: Vous pouvez utiliser le composant Link pour lier un document adaptatif ou un formulaire adaptatif depuis la page que vous souhaitez.
 seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.
@@ -11,13 +11,13 @@ discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
 ht-degree: 100%
 
 ---
 
-# Intégration du composant Link dans une page{#embedding-link-component-in-a-page}
+# Intégrer le composant Link dans une page{#embedding-link-component-in-a-page}
 
 ## Prérequis {#prerequisites}
 
