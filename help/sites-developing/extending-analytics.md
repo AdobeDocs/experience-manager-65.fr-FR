@@ -1,7 +1,7 @@
 ---
 title: Extension du suivi des événements
 seo-title: Extending Event Tracking
-description: AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web
+description: AEM Analytics vous permet d’effectuer le suivi des interactions utilisateur sur votre site web.
 seo-description: AEM Analytics allows you to track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Où :
 </h1>
 ```
 
-## Accès aux valeurs dans ContextHub {#accessing-values-in-the-contexthub}
+##  Accès aux valeurs dans ContextHub {#accessing-values-in-the-contexthub}
 
 L’API JavaScript ContextHub comporte une fonction `getStore(name)` qui renvoie le magasin spécifié, s’il est disponible. Le magasin dispose d’une fonction `getItem(key)` qui renvoie la valeur de la clé spécifiée, si elle est disponible. En utilisant la fonction `getKeys()`, il est possible de récupérer un tableau de clés définies pour le magasin spécifique.
 
