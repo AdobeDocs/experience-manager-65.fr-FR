@@ -1,5 +1,5 @@
 ---
-title: Contrôle des ressources de serveur à l’aide de la console JMX
+title: Surveiller les ressources de serveur à l’aide de la console JMX
 seo-title: Monitoring Server Resources Using the JMX Console
 description: Découvrez comment surveiller les ressources du serveur par le biais de la console JMX.
 seo-description: Learn how to monitor server resources using the JMX console.
@@ -12,13 +12,13 @@ discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4957'
 ht-degree: 100%
 
 ---
 
-# Contrôle des ressources de serveur à l’aide de la console JMX{#monitoring-server-resources-using-the-jmx-console}
+# Surveiller les ressources de serveur à l’aide de la console JMX{#monitoring-server-resources-using-the-jmx-console}
 
 La console JMX permet de surveiller et de gérer des services sur le serveur CRX. Les sections suivantes récapitulent les attributs et les opérations exposés par le biais de la structure JMX.
 
