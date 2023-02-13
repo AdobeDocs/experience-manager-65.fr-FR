@@ -1,5 +1,5 @@
 ---
-title: Suivi des résultats et formulation de commentaires
+title: Tracking des résultats et formulation de commentaires
 seo-title: Tracking results and providing feedback
 description: C’est à vous qu’il appartient de définir la manière et l’endroit où vous définissez les scénarios de test, ainsi que le plan de test qui en résulte.
 seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 exl-id: 270e66d1-a3f2-457a-90d1-28b9f3c8c218
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '159'
 ht-degree: 100%
 
 ---
 
-# Suivi des résultats et formulation de commentaires{#tracking-results-and-providing-feedback}
+# Tracking des résultats et formulation de commentaires{#tracking-results-and-providing-feedback}
 
 C’est à vous qu’il appartient de définir la manière et l’endroit où vous définissez les scénarios de test, ainsi que le plan de test qui en résulte. De nombreux outils sont disponibles à cet effet.
 
