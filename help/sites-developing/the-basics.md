@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3334'
 ht-degree: 100%
 
@@ -447,7 +447,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 Avec AEM, un environnement de production se compose souvent de deux types d’instances différents : [une instance de création et une instance de publication](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
-## Le Dispatcher {#the-dispatcher}
+## Le dispatcher {#the-dispatcher}
 
 Le dispatcher est un outil Adobe qui sert à la mise en cache et/ou l’équilibrage de charge. Plus d’informations sont disponibles sous [le dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html).
 
