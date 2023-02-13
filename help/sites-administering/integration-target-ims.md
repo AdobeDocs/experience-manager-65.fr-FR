@@ -3,7 +3,7 @@ title: Intégration à Adobe Target à l’aide d’IMS
 description: Découvrez-en plus sur l’intégration d’AEM à Adobe Target.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1500'
 ht-degree: 100%
 
@@ -246,7 +246,7 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
 
    * **Utilisation du système de gestion des balises pour diffuser la bibliothèque cliente** : utilisez le gestion dynamique des balises (obsolète), Adobe Launch ou tout autre système de gestion des balises.
 
-   * **AT.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier AT.js par défaut. Vous pouvez également télécharger votre fichier AT.js personnalisé.  S’affiche uniquement si vous avez sélectionné AT.js.
+   * **AT.js personnalisé** : laissez ce champ vierge si vous avez coché la case Gestion dynamique des balises ou pour utiliser le fichier AT.js par défaut. Vous pouvez également télécharger votre fichier AT.js personnalisé. S’affiche uniquement si vous avez sélectionné AT.js.
    >[!NOTE]
    >
    >La [Configuration d’un service cloud pour utiliser l’API Target Classic](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) est obsolète (utilise désormais l’onglet Paramètres d’Adobe Recommendations).
