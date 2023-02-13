@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2308'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ Un certain nombre de composants AEM prêts à l’emploi sont proposés pour uti
 * Panier
 * Passage en caisse
 
-Pour la recherche, un crochet d’intégration est fourni qui vous permet d’utiliser la recherche AEM, la recherche du système eCommerce, une recherche tierce ou une combinaison de celle-ci.
+Pour la recherche, un crochet d’intégration est fourni pour vous permettre d’utiliser la recherche AEM, la recherche du système d’e-commerce, une recherche tierce ou une combinaison de celles-ci.
 
-## Sélection du moteur eCommerce {#ecommerce-engine-selection}
+## Sélectionner le moteur eCommerce {#ecommerce-engine-selection}
 
 Le framework de eCommerce peut être utilisé avec n’importe quelle solution d’eCommerce. Le moteur utilisé doit être identifiable par AEM :
 
