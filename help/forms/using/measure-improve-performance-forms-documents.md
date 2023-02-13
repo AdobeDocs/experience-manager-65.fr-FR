@@ -1,5 +1,5 @@
 ---
-title: Mesure et amélioration de l’efficacité et de la conversion des formulaires
+title: Mesurer et améliorer l’efficacité et de la conversion des formulaires
 seo-title: Measure and improve effectiveness and conversion of forms
 description: AEM Forms s’intègre aux solutions Adobe Target et Adobe Analytics, ce qui vous permet de mesurer et d’améliorer les performances et le taux de conversion de vos formulaires.
 seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
@@ -11,7 +11,7 @@ discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1278'
 ht-degree: 100%
 
@@ -91,7 +91,7 @@ Regardons de plus près les points de données des formulaires qu’Analytics co
 
 Le rapport d’analyse pour les formulaires adaptatifs capture les indicateurs de performances clés (IPC) suivants au niveau du formulaire :
 
-* **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire
+* **Durée moyenne de remplissage** : temps moyen passé au remplissage du formulaire.
 * **Impressions** : nombre de fois que le formulaire s’est affiché dans des résultats de recherche. 
 
 * **Rendus** : nombre de fois que le formulaire a été affiché ou ouvert.
