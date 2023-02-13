@@ -1,5 +1,5 @@
 ---
-title: Modélisation de données – Modèle de David Nuescheler
+title: Modélisation des données – Modèle de David Nuescheler
 seo-title: Data Modeling - David Nuescheler's Model
 description: Recommandations de David Nuescheler sur le plan de la modélisation de contenu
 seo-description: David Nuescheler's content modelling recommendations
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1818'
 ht-degree: 100%
 
 ---
 
-# Modélisation de données – Modèle de David Nuescheler{#data-modeling-david-nuescheler-s-model}
+# Modélisation des données – Modèle de David Nuescheler{#data-modeling-david-nuescheler-s-model}
 
 ## Source {#source}
 
