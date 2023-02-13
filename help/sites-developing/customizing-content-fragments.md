@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2778'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Selon le type de fragment, des modèles sont également utilisés :
    >
    >Toutes les modifications apportées à un modèle de fragment de contenu existant peuvent impacter les fragments dépendants, ce qui peut engendrer des propriétés orphelines dans ces fragments.
 
-* Modèles de fragment de contenu:
+* Modèles de fragment de contenu :
 
    * utilisés pour définir des fragments de contenu simples.
    * Les modèles définissent la structure (de base, texte seul) d’un fragment de contenu lors de sa création.
@@ -132,7 +132,7 @@ Pour plus d’informations, voir [Fragments de contenu – considérations sur
 >
 >Le [composant de base Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) est désormais recommandé. Voir [Développement de composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=fr) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant principal [**Fragment de contenu**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html), [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal **Fragment de contenu**.
+Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant principal [**Fragment de contenu**](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr), [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant principal **Fragment de contenu**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
@@ -539,5 +539,5 @@ Voir [Modèles de fragment de contenu](/help/sites-developing/content-fragment-t
 
 Pour plus d’informations, voir :
 
-* [Composants de base – composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recommandé)
+* [Composants de base – composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) (recommandé)
 * [Composants de fragment de contenu – Composants pour la création de pages](/help/sites-developing/components-content-fragments.md#components-for-page-authoring)
