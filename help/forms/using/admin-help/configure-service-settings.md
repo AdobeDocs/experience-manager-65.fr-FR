@@ -1,5 +1,5 @@
 ---
-title: Configuration des paramètres du service
+title: Configurer les paramètres du service
 seo-title: Configure service settings
 description: Découvrez comment configurer les paramètres du service.
 seo-description: Learn how to configure service settings.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10683'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Configuration des paramètres du service {#configure-service-settings}
+# Configurer les paramètres du service {#configure-service-settings}
 
 Vous pouvez utiliser la page Gestion des services pour configurer les paramètres de chacun des services qui font partie d’AEM forms. Les paramètres disponibles varient selon le service configuré.
 
@@ -28,7 +28,7 @@ Vous pouvez utiliser la page Gestion des services pour configurer les paramètre
 
    >[!NOTE]
    >
-   >certains services répertoriés dans la page Gestion des services ne possèdent pas d’onglet Configuration. L’onglet Configuration des processus créés s’affiche uniquement lorsque vous ajoutez un paramètre de configuration à ces processus dans Workbench (Voir &quot;Paramètres de configuration&quot; dans la section [Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr) .)
+   >certains services répertoriés dans la page Gestion des services ne possèdent pas d’onglet Configuration. L’onglet Configuration des processus créés s’affiche uniquement lorsque vous ajoutez un paramètre de configuration à ces processus dans Workbench (voir « Paramètres de configuration » dans l’[Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr)).
 
 
 1. Cliquez sur l’onglet Sécurité et définissez les paramètres de protection du service (voir [Modification des paramètres de sécurité d’un service](configure-service-settings.md#modifying-security-settings-for-a-service)).
@@ -39,7 +39,7 @@ Vous pouvez utiliser la page Gestion des services pour configurer les paramètre
 
 ## Paramètres du service Audit Workflow {#audit-workflow-service-settings}
 
-Workbench permet d’enregistrer des instances de processus au moment de l’exécution, puis de les relire pour observer le comportement du processus (Voir [l’Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)). Pour préserver l’espace disponible sur le système de fichiers du serveur Forms, vous pouvez limiter la quantité de données d’enregistrement de processus conservées. Vous pouvez configurer les propriétés suivantes du service Audit Workflow Service (`AuditWorkflowService`) :
+Workbench permet d’enregistrer des instances de processus au moment de l’exécution, puis de les relire pour observer le comportement du processus (Voir [l’Aide de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr)). Pour préserver l’espace disponible sur le système de fichiers du serveur Forms, vous pouvez limiter la quantité de données d’enregistrement de processus conservées. Vous pouvez configurer les propriétés suivantes du service Audit Workflow Service (`AuditWorkflowService`) :
 
 **maxNumberOfRecordingInstances :** nombre maximal d’enregistrements conservés. Lorsque le nombre maximum est atteint, l’enregistrement le plus ancien est supprimé du système de fichiers lors de la création d’un nouvel enregistrement. Cette propriété est utile si vous avez tendance à créer un grand nombre d’enregistrements et souhaitez supprimer les anciens de manière automatique. La valeur par défaut est 50.
 
@@ -123,7 +123,7 @@ Les paramètres ci-dessous sont disponibles pour le service Convert PDF.
 
 **Transaction Time Out (in sec) :** nombre de secondes que le fournisseur de transactions sous-jacent doit attendre avant de restaurer une transaction qui englobe cette opération. Cette valeur sera ignorée si un contexte de transaction existant est propagé. La valeur par défaut est 180.
 
-**Résolution du seuil pour le lissage (en ppp) :** La résolution de l’image sous laquelle le lissage (ou anti-crénelage) est appliqué au texte, aux dessins au trait et aux images, si vous avez sélectionné les options &quot;Appliquer le lissage à&quot; pour ces éléments.
+**Threshold Resolution for Smoothing (in dpi) :** résolution de l’image au-dessous de laquelle le lissage est appliqué au texte, aux dessins au trait et aux images, si vous avez sélectionné l’option « Appliquer le lissage à » pour ces éléments.
 
 **Apply smoothing to text :** contrôle le lissage du texte. Pour désactiver le lissage du texte et rendre le texte plus net et plus facile à lire à l’aide d’un agrandisseur d’écran, désélectionnez cette case.
 
@@ -735,7 +735,7 @@ Dans une configuration en grappe, la taille du lot d’un dossier de contrôle n
 
 Par exemple, s’il est 20 heures le 17 juillet 2009 et que vous spécifiez `C:/Test/WF0/failure/%Y/%M/%D/%H/`, le dossier de résultat est `C:/Test/WF0/failure/2009/07/17/20`.
 
-Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >
