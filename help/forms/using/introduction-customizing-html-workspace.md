@@ -12,7 +12,7 @@ discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1763'
 ht-degree: 100%
 
@@ -255,7 +255,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
 * css - contient style.css, ie.css et jquery-ui.css.
 * images : contient toutes les images.
-* js :
+* js:
 
    * libs:
 
@@ -269,7 +269,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
 
 
-* libs :
+* libs:
 
    * ws - contient pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
@@ -300,9 +300,9 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
 * css - contient style.css, ie.css et jquery-ui.css.
 * images : contient toutes les images.
-* js :
+* js:
 
-   * libs :
+   * libs:
 
       * require : contient require.js.
       * jqueryui : contient jquery.ui.datepicker.ja.js.
@@ -314,7 +314,7 @@ Ce paquet peut être créé à l’aide des trois profils décrits ci-dessous.
 
 
 
-* libs :
+* libs:
 
    * ws - contient pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
@@ -344,7 +344,7 @@ mvn clean -P Dev install sur client-pkg
 
 * css - contient style.css, ie.css et jquery-ui.css.
 * images : contient toutes les images.
-* js :
+* js:
 
    * libs - contient toutes les bibliothèques utilisées dans l’espace de travail AEM Forms.
    * require : contient require.js.
@@ -363,7 +363,7 @@ mvn clean -P Dev install sur client-pkg
    * router.js
 
 
-* libs :
+* libs:
 
    * ws - contient pluginPing.pdf, pdf.html et WSNextAdapter.swf.
 
