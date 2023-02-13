@@ -1,5 +1,5 @@
 ---
-title: Gestion des catégories affichées dans Workspace
+title: Gérer les catégories affichées dans Workspace
 seo-title: Managing the categories displayed in Workspace
 description: Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans les catégories du volet de navigation gauche. Découvrez comment gérer ces catégories affichées dans l’espace de travail.
 seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
 ht-degree: 100%
 
 ---
 
-# Gestion des catégories affichées dans Workspace {#managing-the-categories-displayed-in-workspace}
+# Gérer les catégories affichées dans Workspace {#managing-the-categories-displayed-in-workspace}
 
 Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans les catégories du volet de navigation gauche. Vous pouvez configurer les catégories dans Administration Console, ou alors les concepteurs de processus peuvent les configurer dans Workbench. Lorsque les concepteurs de processus créent des processus, ils les affectent à des catégories.
 
