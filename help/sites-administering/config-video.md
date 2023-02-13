@@ -1,5 +1,5 @@
 ---
-title: Configuration du composant vidéo
+title: Configurer le composant vidéo
 seo-title: Configure the Video component
 description: Découvrez comment configurer le composant vidéo.
 seo-description: Learn how to configure the Video Component.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
 source-git-commit: b1e0ea01688095b29d8fb18baf6fa0bda660dad5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
 ht-degree: 100%
 
 ---
 
-# Configuration du composant vidéo {#configure-the-video-component}
+# Configurer le composant vidéo {#configure-the-video-component}
 
 Le [composant vidéo](/help/sites-authoring/default-components-foundation.md#video) vous permet de placer sur votre page une ressource vidéo prédéfinie et prête à l’emploi.
 
