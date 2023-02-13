@@ -11,7 +11,7 @@ discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1710'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Effectuez les étapes suivantes pour modifier le calendrier de publication :
 1. Redémarrez l’instance du serveur AEM Forms.
 1. Arrêtez l’instance du serveur AEM Forms.
 1. Connectez-vous à la console d’administration WebLogic. L’adresse par défaut de la console d’administration WebLogic `https://[hostname]:[port]/console`.
-1. Sous Change Center, cliquez sur **Lock &amp; Edit**.
+1. Sous Centre des modifications, cliquez sur **Verrouiller et modifier**.
 1. Sous Domain Structure, cliquez sur **Environment** > **Servers** et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets **Configuration** > **Server Start**.
 1. Dans la zone Arguments, ajoutez l’argument JVM `-Dreporting.publisher.cron = <expression>`.
