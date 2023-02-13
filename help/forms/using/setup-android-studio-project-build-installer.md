@@ -1,5 +1,5 @@
 ---
-title: Configuration du projet Android Studio et génération de l’application Android
+title: Installer le projet Android Studio et générer l’application Android
 seo-title: Set up the Android studio project and build the Android app
 description: Procédure d’installation du projet Android Studio et de génération du programme d’installation pour l’application AEM Forms
 seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
 ht-degree: 100%
 
