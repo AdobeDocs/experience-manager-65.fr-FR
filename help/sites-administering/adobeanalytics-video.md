@@ -12,9 +12,9 @@ discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1743'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -140,7 +140,7 @@ Le tableau ci-dessous décrit les variables CQ par défaut fournies pour la mé
 
 1. Pour mapper les variables CQ à des propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics de ContentFinder en regard de la variable CQ sur le composant.
 
-   Pour plus d’informations sur l’optimisation des mappages, consultez le guide relatif à la [mesure de la vidéo dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Pour plus d’informations sur l’optimisation des mappages, consultez le guide relatif à la [mesure de la vidéo dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr).
 
 1. [Ajoutez le framework](/help/sites-administering/adobeanalytics.md) à la page.
 1. Pour tester la configuration en **mode Aperçu**, lisez la vidéo pour obtenir des appels Adobe Analytics à déclencher.
@@ -275,7 +275,7 @@ eventdata.events.milestoneXX
 
 1. Pour mapper les variables CQ à des propriétés Adobe Analytics, faites glisser les propriétés Adobe Analytics de ContentFinder en regard de la variable CQ sur le composant.
 
-   Pour plus d’informations sur l’optimisation des mappages, consultez le guide relatif à la [mesure de la vidéo dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html).
+   Pour plus d’informations sur l’optimisation des mappages, consultez le guide relatif à la [mesure de la vidéo dans Adobe Analytics](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr).
 
 1. [Ajoutez le framework](/help/sites-administering/adobeanalytics.md) à la page.
 1. Pour tester la configuration en **mode Aperçu**, lisez la vidéo pour obtenir des appels Adobe Analytics à déclencher.
@@ -383,4 +383,4 @@ Lors de l’utilisation de la méthode **Secondes héritées**, les appels Adobe
 
 **Références utilisées dans ce didacticiel :**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
