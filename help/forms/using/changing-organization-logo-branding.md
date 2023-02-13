@@ -1,5 +1,5 @@
 ---
-title: Modification du logo de l’organisation pour l’identité graphique
+title: Modifier le logo de l’organisation pour l’identité graphique
 seo-title: Changing the organization logo for branding
 description: Pour attribuer une identité graphique à l’espace de travail d’AEM Forms, fournissez le logo de votre entreprise en personnalisant le logo par défaut.
 seo-description: To brand AEM Forms workspace provide the logo of your organization by customizing the default logo.
@@ -11,13 +11,13 @@ topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 exl-id: 49572f2a-f3ec-4ee6-98b8-2563de1cf96c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '134'
 ht-degree: 100%
 
 ---
 
-# Modification du logo de l’organisation pour l’identité graphique {#changing-the-organization-logo-for-branding}
+# Modifier le logo de l’organisation pour l’identité graphique {#changing-the-organization-logo-for-branding}
 
 Le logo de l’entreprise est affiché dans l’angle supérieur gauche de l’espace de travail d’AEM Forms. Pour mettre le logo à jour, suivez les instructions de la section [Étapes génériques de la configuration de l’espace de travail d’AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization), puis les étapes suivantes.
 
