@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 source-git-commit: 415744ca5c46a1495fe90369c162158c7fc2f1d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
 ht-degree: 100%
 
@@ -83,7 +83,7 @@ La communication interactive est l’approche par défaut et recommandée pour c
   <tr>
    <td>Sortie</td>
    <td>Impression et web</td>
-   <td>Imprimer</td>
+   <td>Impression</td>
   </tr>
   <tr>
    <td>Schéma</td>
