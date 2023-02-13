@@ -1,5 +1,5 @@
 ---
-title: Gestion des comptes d’utilisateurs invités et locaux
+title: Gérer les comptes d’utilisateurs et d’utilisatrices invités et locaux
 seo-title: Managing invited and local user accounts
 description: La sécurité des documents permet de rechercher, afficher, modifier, verrouiller, déverrouiller et supprimer des comptes d’utilisateurs invités et locaux.
 seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
@@ -12,13 +12,13 @@ discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1196'
 ht-degree: 100%
 
 ---
 
-# Gestion des comptes d’utilisateurs invités et locaux {#managing-invited-and-local-user-accounts}
+# Gérer les comptes d’utilisateurs et d’utilisatrices invités et locaux {#managing-invited-and-local-user-accounts}
 
 Utilisez la page Utilisateurs invités et locaux pour gérer vos utilisateurs invités et locaux. Cette page n’apparaît que si les exigences suivantes sont respectées :
 
