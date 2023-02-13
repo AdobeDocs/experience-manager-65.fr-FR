@@ -12,9 +12,9 @@ discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
 source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4033'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Lorsque vous ouvrez et demandez une tâche à partir de la liste d’un groupe o
    * Pour demander une tâche, sans l’ouvrir, à partir de la liste de tâches d’un groupe ou partagée, cliquez sur **Demander** en plaçant le pointeur de la souris sur la tâche. Lorsque la tâche est ouverte, le bouton Demander est disponible également dans la barre d’actions située sous le volet des tâches. Lors de la demande, une tâche est déplacée de la liste de tâches du groupe ou partagée vers votre liste.
    * Pour demander et ouvrir une tâche à partir de la liste de tâches d’un groupe ou partagée, cliquez sur **Demander et ouvrir**.
 
-## Utilisation de tâches {#working-with-tasks}
+## Utiliser les tâches {#working-with-tasks}
 
 Après l’ouverture d’une tâche, les onglets qui s’affichent dans le volet principal et les outils disponibles dépendent de la tâche. Les onglets que vous pouvez voir sont décrits ci-dessous.
 
@@ -283,7 +283,7 @@ Les courriers électroniques peuvent contenir un lien qui ouvre la tâche dans A
 >
 >* Pour configurer l’espace de travail de façon à utiliser les modèles d’e-mail appropriés, consultez le [Guide de l’administrateur d’AEM Forms JEE](https://help.adobe.com/fr_FR/AEMForms/6.1/AdminHelp/index.html).
 >
->* Si des brouillons sont transférés après l’envoi de la tâche dans l’espace de travail AEM Forms, des notifications par e-mail sont envoyées. Si les brouillons sont transférés à partir du point de départ de l’espace de travail AEM Forms, aucune notification électronique n’est envoyée.
+>* Si vous transférez des brouillons après l’envoi de la tâche dans l’espace de travail AEM Forms, des notifications par e-mail sont envoyées. Si vous transférez des brouillons à partir du point de départ de l’espace de travail AEM Forms, aucune notification par e-mail n’est envoyée.
 
 
 Lorsque vous exécutez une tâche par courrier électronique, la tâche est supprimée de votre liste de tâches dans AEM Forms Workspace.
