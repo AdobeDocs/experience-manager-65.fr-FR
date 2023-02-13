@@ -11,7 +11,7 @@ discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Effectuez les étapes suivantes pour ajouter et configurer le composant Drafts &
   </tr>
   <tr>
    <td> </td>
-   <td>Modèle de mise en page</td>
+   <td>Modèle de disposition</td>
    <td>Spécifie la mise en page à utiliser pour la liste Brouillons de formulaires.</td>
   </tr>
   <tr>
