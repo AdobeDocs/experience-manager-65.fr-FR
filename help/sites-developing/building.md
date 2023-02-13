@@ -1,5 +1,5 @@
 ---
-title: Création du balisage dans une application AEM
+title: Créer le balisage dans une application AEM
 seo-title: Building Tagging into an AEM Application
 description: Utilisation ou extension de balises par programmation dans une application AEM personnalisée
 seo-description: Programmatically work with tags or extending tags within a custom AEM application
@@ -12,13 +12,13 @@ discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '875'
 ht-degree: 100%
 
 ---
 
-# Création du balisage dans une application AEM{#building-tagging-into-an-aem-application}
+# Créer le balisage dans une application AEM{#building-tagging-into-an-aem-application}
 
 Dans un contexte de programmation par balises ou d’extension de balises dans une application AEM personnalisée, cette page décrit l’utilisation de
 
