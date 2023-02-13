@@ -12,7 +12,7 @@ discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2124'
 ht-degree: 100%
 
@@ -180,7 +180,7 @@ L’authentification LDAP se produit au niveau du référentiel ; elle est donc
 
 Pour la gestion des utilisateurs au sein d’AEM (y compris l’affectation des droits d’accès), voir [Administration des utilisateurs et sécurité](/help/sites-administering/security.md).
 
-### Configuration du Dispatcher {#configuring-the-dispatcher}
+### Configurer le Dispatcher {#configuring-the-dispatcher}
 
 Le Dispatcher est l’outil de mise en cache et d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur Web de niveau élevé.
 
@@ -204,7 +204,7 @@ La console de bienvenue de l’interface utilisateur classique propose une liste
 
 Il est possible de configurer les liens qui sont visibles, voir [Configuration de la console de bienvenue](/help/sites-developing/customizing-the-welcome-console.md) pour plus de détails.
 
-### Configuration des performances {#configuring-for-performance}
+### Configurer pour optimiser la performance {#configuring-for-performance}
 
 La [performance](/help/sites-deploying/configuring-performance.md) est essentielle pour votre projet. Certains aspects d’AEM (et/ou du référentiel sous-jacent) peuvent être configurés pour optimiser la performance.
 
@@ -273,7 +273,7 @@ Pour éviter ce type d’exception, vous devez procéder comme suit :
 
 Voir [Configuration de l’éditeur de texte enrichi](/help/sites-administering/rich-text-editor.md) pour plus de détails.
 
-### Configuration de la commande Annuler pour la modification des pages {#configuring-undo-for-page-editing}
+### Configurer la commande Annuler pour modifier des pages {#configuring-undo-for-page-editing}
 
 Il existe plusieurs propriétés qui contrôlent le comportement des commandes Annuler et Rétablir pour modifier des pages. Celles-ci peuvent être configurées, voir [Configuration de la commande Annuler pour la modification des pages](/help/sites-administering/config-undo.md) pour plus de détails.
 
@@ -289,13 +289,13 @@ Pour vous aider à analyser et surveiller l’état de votre instance, CQ propos
 
 Voir [Principes de base de la personnalisation des rapports](/help/sites-administering/reporting.md#the-basics-of-report-customization) pour plus de détails.
 
-### Configuration des notifications par e-mail {#configuring-email-notification}
+### Configurer les notifications par e-mail {#configuring-email-notification}
 
 CQ envoie des notifications par e-mail aux utilisateurs qui :
 
 * ont souscrit aux événements de pages, par exemple la modification ou la réplication ;
 * ont souscrit aux événements de forums ;
-* Doivent effectuer une opération dans un workflow.
+* doivent effectuer une opération dans un workflow.
 
 Voir [Configuration des notifications par e-mail](/help/sites-administering/notification.md) pour plus de détails.
 
