@@ -1,5 +1,5 @@
 ---
-title: Suppression des formulaires et des ressources associées
+title: Supprimer des formulaires et des ressources associées
 seo-title: Deleting forms and related resources
 description: Découvrez comment supprimer un formulaire ou une ressource dans AEM Forms et quel est l’impact de cette suppression sur les ressources et les formulaires XFA référencés et de référence.
 seo-description: How to delete a form or an asset in AEM Forms and the impact on referenced and referring assets and XFA forms.
@@ -11,13 +11,13 @@ discoiquuid: c8519eec-f841-4867-baa9-a9e03042755e
 role: Admin
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
 ht-degree: 100%
 
 ---
 
-# Suppression des formulaires et des ressources associées {#deleting-forms-and-related-resources}
+# Supprimer des formulaires et des ressources associées {#deleting-forms-and-related-resources}
 
 Vous pouvez supprimer des formulaires et des ressources pour supprimer ces dernières du référentiel. L’opération de suppression fonctionne pour tous les types de ressources et les dossiers.
 
