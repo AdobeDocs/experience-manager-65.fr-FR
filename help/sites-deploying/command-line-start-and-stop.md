@@ -1,5 +1,5 @@
 ---
-title: Début et arrêt d’AEM à partir de la ligne de commande
+title: Démarrer et arrêter AEM à partir de la ligne de commande
 seo-title: Command Line Start and Stop
 description: Découvrez comment démarrer et arrêter AEM à partir de la ligne de commande.
 seo-description: Learn how to start and stop AEM from the command line.
@@ -11,13 +11,13 @@ topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
 ht-degree: 100%
 
 ---
 
-# Début et arrêt d’AEM à partir de la ligne de commande{#command-line-start-and-stop}
+# Démarrer et arrêter AEM à partir de la ligne de commande{#command-line-start-and-stop}
 
 ## Démarrage d’Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
 
