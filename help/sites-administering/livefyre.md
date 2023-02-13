@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ Vous pouvez importer du contenu créé par les utilisateurs Twitter et Instagram
 
 >[!NOTE]
 >
->Avant d’utiliser Assets pour importer du contenu créé par l’utilisateur, vous devez configurer des comptes de réseaux sociaux et de demande de droits dans Livefyre Studio. Consultez la section [Paramètre : demandes de droits](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) pour plus d’informations.
+>Avant d’utiliser Assets pour importer du contenu créé par l’utilisateur, vous devez configurer des comptes de réseaux sociaux et de demande de droits dans Livefyre Studio. Consultez la section [Paramètre : demandes de droits](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=fr) pour plus d’informations.
 
 Pour importer du contenu créé par l’utilisateur dans AEM Assets :
 
