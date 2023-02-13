@@ -1,5 +1,5 @@
 ---
-title: Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi
+title: Référence sur les étapes du workflow basé sur l’utilisation de Forms on OSGi
 seo-title: Forms-centric workflow on OSGi - Step Reference
 description: Les étapes du processus basé sur l’utilisation de Forms on OSGi vous permettent de créer rapidement des formulaires adaptatifs basés sur des processus.
 seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
@@ -10,9 +10,9 @@ discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7575'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Vous utilisez des modèles de processus pour convertir une logique métier en pr
 
 Les étapes de processus Forms effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement des formulaires adaptatifs à partir de processus basés sur l’utilisation de Forms on OSGi. Ces workflows peuvent être utilisés pour développer des processus de révision et d’approbation de base, des workflows métier internes et sur le pare-feu. Vous pouvez également utiliser les étapes de processus Forms pour lancer les services de document, les intégrer au processus de signature Adobe Sign et effectuer d’autres opérations AEM Forms. Un [module complémentaire AEM Forms](https://www.adobe.com/go/learn_aemforms_documentation_63_fr) est nécessaire pour utiliser ces étapes dans un processus.
 
-Les étapes de processus orientés formulaire effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement des formulaires adaptatifs à partir de processus orientés Forms on OSGi. Ces processus peuvent être utilisés pour développer des processus de révision et d’approbation de base, des processus métier internes et sur le pare-feu.
+Les étapes de processus orientés formulaire effectuent des opérations spécifiques à AEM Forms dans un processus AEM. Ces étapes vous permettent de créer rapidement des formulaires adaptatifs à partir de processus orientés Forms on OSGi. Ces workflows peuvent être utilisés pour développer des workflows de révision et d’approbation de base, des processus métier internes et sur le pare-feu.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
    * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
 
-   * **Sélectionner les pièces jointes d’entrée en utilisant :** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la charge utile ou récupérer les pièces jointes stockées dans une variable du type ArrayList du document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif..
+   * **Sélectionner les pièces jointes d’entrée en utilisant :** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer les pièces jointes stockées dans une variable du type ArrayList du document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif..
 
       * **Choisir JSON en entrée :** sélectionnez un fichier JSON en entrée en utilisant un chemin d’accès relatif à la payload ou stocké dans une variable de type de données Document, JSON ou modèle de données de formulaire. Cette option est disponible si vous sélectionnez Interface utilisateur de l’agent de communication interactive ou Document du canal Web de communication interactive dans la liste déroulante Type.
       * **Sélectionner un service de préremplissage personnalisé :** sélectionnez le service de préremplissage pour récupérer les données et préremplir le document du canal web de communication interactive ou l’interface utilisateur de l’agent.
@@ -130,9 +130,9 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 >[!NOTE]
 >
->Les options permettant d’enregistrer l’étape Affecter une tâche en tant que brouillon et de récupérer l’historique de l’étape Affecter une tâche sont désactivées lorsque vous configurez une [!DNL Adobe Experience Manager] modèle de workflow pour le stockage de données externe. En outre, dans la boîte de réception, l’option d’enregistrement est désactivée.
+>Les options permettant d’enregistrer l’étape Affecter une tâche en tant que brouillon et de récupérer l’historique de l’étape Affecter une tâche sont désactivées lorsque vous configurez un modèle de workflow pour le stockage de données externe [!DNL Adobe Experience Manager]. En outre, dans la boîte de réception, l’option d’enregistrement est désactivée.
 
-## Étape Envoyer un courrier électronique {#send-email-step}
+## Étape Envoyer un e-mail {#send-email-step}
 
 Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’une communication interactive ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
 
@@ -156,7 +156,7 @@ L’étape Envoyer un courrier électronique utilise le service de messagerie Da
 
 * **Métadonnées de processus :** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Après avoir sélectionné cette option, saisissez le nom de la propriété des métadonnées dans la zone de texte vide en dessous de l’option Métadonnées de processus. Par exemple, emailAddress.
 * **URL de la ressource :** utilisez cette option pour inclure un lien web d’une communication interactive à l’e-mail. Après avoir sélectionné cette option, recherchez et sélectionnez la communication interactive à inclure. Un actif peut résider sur le serveur de création ou de publication.
-* **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est disponible uniquement pour les balises d’image (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibles dans le modèle de courrier électronique.&#42;
+* **Image :** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
 
 **E-mail du destinataire/expéditeur :** sélectionnez l’option **Littéral** pour spécifier manuellement un e-mail ou sélectionnez l’option **Récupérer à partir des métadonnées de workflow** pour récupérer l’e-mail d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **Récupérez à partir des métadonnées de processus**. Sélectionnez l’option **Variable** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
 
@@ -285,10 +285,10 @@ L’étape Signer le document vous permet d’utiliser Adobe Sign pour signer de
 * **Sélectionner le document à signer en utilisant :** vous pouvez choisir un document à partir d’un emplacement relatif à la payload, utiliser la payload comme document, spécifier un chemin d’accès absolu au document ou récupérer le document stocké dans une variable de type de données Document.
 
 
-* **Sélectionnez Input Attachment Path à l’aide de :** Chemin des pièces jointes. Ces pièces jointes sont incluses dans le document de signature. Vous pouvez conserver les pièces jointes à un emplacement relatif à la charge utile, spécifier un chemin absolu pour les pièces jointes ou récupérer les pièces jointes stockées dans une variable de tableau de type de données Document.
+* **Sélectionnez le chemin de pièce jointe d’entrée en utilisant :** chemin des pièces jointes. Ces pièces jointes sont incluses dans le document de signature. Vous pouvez conserver les pièces jointes à un emplacement relatif à la payload, spécifier un chemin absolu pour les pièces jointes ou récupérer les pièces jointes stockées dans une variable de tableau de type de données Document.
 
 
-   Si vous spécifiez le chemin d’accès d’un dossier, par exemple des pièces jointes, tous les fichiers directement disponibles dans le dossier sont joints au document de signature. Si des fichiers sont disponibles dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans Signing Document en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
+   Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par exemple), tous les fichiers directement disponibles dans le dossier sont joints au document de signature. Si des fichiers sont présents dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans le document de signature en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles sont ignorés.
 
 * **Jours avant l’échéance :** un document est marqué comme dû (délai expiré) lorsqu’il n’y a plus aucune activité sur la tâche pour le nombre de jours spécifié dans le champ **Jours avant l’échéance.** Le nombre de jours est calculé à partir du jour de l’affectation du document à un utilisateur pour signature.
 * **Fréquence des messages de rappel :** vous pouvez envoyer un message de rappel à intervalle quotidien ou hebdomadaire. La semaine est calculée à compter du jour de l’affectation du document à un utilisateur pour signature.
@@ -445,7 +445,7 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
    * **Utiliser le serveur par défaut** : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur AEM Forms. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://www.adobe.com/go/learn_aemforms_designer_65_fr).)
 
    * **Pour utiliser une valeur personnalisée** : 
-saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir la liste complète des codes de paramètres régionaux pris en charge, voir https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir https://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]** : une valeur entière qui spécifie le nombre de copies à générer pour la sortie. La valeur par défaut est 1.
 
