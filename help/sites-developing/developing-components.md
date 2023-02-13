@@ -1,5 +1,5 @@
 ---
-title: Développement de composants AEM
+title: Développer des composants AEM
 seo-title: Developing AEM Components
 description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages Web.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
@@ -13,13 +13,13 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3477'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Développement de composants AEM{#developing-aem-components}
+# Développer des composants AEM{#developing-aem-components}
 
 Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages Web.
 
@@ -81,7 +81,7 @@ Votre composant est rendu dans le langage [HTML](https://www.w3schools.com/htmL/
 
 ### Utilisation du langage de modèle HTML {#using-the-html-template-language}
 
-Le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs web qui souhaitent créer des sites web d’entreprise performants, HTL contribue à améliorer l’efficacité au niveau de la sécurité et du développement.
+Le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) a été introduit avec AEM 6.0 et remplace JSP (JavaServer Pages) en tant que système de modèle côté serveur privilégié et recommandé pour HTML. Pour les développeurs web qui souhaitent créer des sites web d’entreprise performants, HTL contribue à améliorer l’efficacité au niveau de la sécurité et du développement.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Pour plus d’informations, voir :
 
    * Fournit une interface utilisateur uniforme dans toutes les solutions cloud.
    * [Concepts de l’IU tactile AEM - IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guide de l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guide de l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * IU Granite
 
@@ -237,7 +237,7 @@ Pour consulter un exemple, reportez-vous à la section :
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * fournie par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Extension (héritée de) d’un champ {#extending-inheriting-from-a-field}
 
@@ -269,13 +269,13 @@ Pour injecter une logique dans votre champ, vous devez :
 1. Faire marquer votre champ avec une classe CSS donnée (le *hook*).
 1. Définir, dans votre bibliothèque cliente, un écouteur JS associé à ce nom de classe CSS (pour garantir que la logique personnalisée est limitée à ce champ et n’affecte pas les autres champs du même type).
 
-Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Ceci est très similaire au processus que vous avez dû suivre avec ExtJS dans le passé : identifier la page de documentation d’un widget donné, puis vérifier les détails de son API d’événement.
+Pour ce faire, vous devez connaître la bibliothèque de widgets sous-jacente avec laquelle vous souhaitez interagir. Consultez la [documentation relative à l’IU Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) pour identifier l’événement auquel vous voulez réagir. Ceci est très similaire au processus que vous avez dû suivre avec ExtJS dans le passé : identifier la page de documentation d’un widget donné, puis vérifier les détails de son API d’événement.
 
 Pour consulter un exemple, reportez-vous à la section :
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * fourni par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * fournie par l’[exemple de code](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Écouteurs dans la structure de contenu {#listeners-in-the-content-structure}
 
@@ -442,7 +442,7 @@ L’[extension AEM Brackets](/help/sites-developing/aem-brackets.md) fournit un
 L’extension :
 
 * Facilite la synchronisation (aucun Maven ou File Vault requis) pour améliorer le rendement des développeurs et permet également aux développeurs de front-end ayant des connaissances limitées en matière d’AEM de participer à des projets.
-* Fournit une prise en charge d’[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), le langage de modèle conçu pour simplifier le développement des composants et renforcer la sécurité.
+* Fournit une prise en charge d’[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr), le langage de modèle conçu pour simplifier le développement des composants et renforcer la sécurité.
 
 >[!NOTE]
 >
@@ -454,7 +454,7 @@ Lors de la migration d’un composant de l’IU classique vers un composant pouv
 
 * HTL
 
-   * L’utilisation d’[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * L’utilisation d’[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) n’est pas obligatoire, mais si le composant doit être mis à jour, c’est l’occasion idéale pour envisager une [migration de JSP vers HTL](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Les composants :
 
