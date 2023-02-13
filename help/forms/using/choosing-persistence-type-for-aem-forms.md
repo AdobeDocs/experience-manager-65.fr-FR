@@ -1,5 +1,5 @@
 ---
-title: Choix d’un type de persistance pour l’installation d’AEM Forms
+title: Choisir un type de persistance pour l’installation d’AEM Forms
 seo-title: Choosing a persistence type for an AEM Forms installation
 description: Choisissez un type de persistance avec soin. Il vous aide à créer un environnement AEM Forms efficace et évolutif.
 seo-description: Choose a persistence type wisely. It helps you build an efficient and scale able AEM Forms environment.
@@ -12,13 +12,13 @@ discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '372'
 ht-degree: 100%
 
 ---
 
-# Choix d’un type de persistance pour l’installation d’AEM Forms {#choosing-a-persistence-type-for-an-aem-forms-installation}
+# Choisir un type de persistance pour l’installation d’AEM Forms {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 Choisissez un type de persistance avec soin. Il vous aide à créer un environnement AEM Forms efficace et évolutif.
 
