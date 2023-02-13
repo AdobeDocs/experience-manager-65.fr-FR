@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '299'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Procédez comme suit pour configurer l’espace de travail AEM Forms.
 1. Connectez-vous à CRXDE Lite en tant qu’administrateur en accédant à `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. Copiez et collez le nœud ws dans /content. Attribuez au nœud le nom ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. Dans les propriétés de ce nœud, attribuez à `sling:resourceType` la valeur ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. 
 
-1. Copiez le dossier ws dans /libs et collez-le dans /apps. Attribuez au dossier le nom ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**. 
+1. Copiez le dossier ws dans /libs et collez-le dans /apps. Attribuez au dossier le nom ws2. Cliquez sur **[!UICONTROL Enregistrer tout]**.
 1. Dans `GET.jsp`, sur `/apps/ws2`, effectuez les modifications de code suivantes. Remplacez le code :
 
    ```html
