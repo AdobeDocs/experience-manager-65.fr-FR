@@ -1,5 +1,5 @@
 ---
-title: Publication d’un e-mail sur des services de messagerie
+title: Publier un e-mail sur des services de messagerie
 seo-title: Publishing an Email to Email Service Providers
 description: Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’ExactTarget et Silverpop Engage.
 seo-description: You can publish newsletters to e-mail services such as ExactTarget and Silverpop Engage.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1108'
 ht-degree: 100%
 
 ---
 
-# Publication d’un e-mail sur des services de messagerie{#publishing-an-email-to-email-service-providers}
+# Publier un e-mail sur des services de messagerie{#publishing-an-email-to-email-service-providers}
 
 Vous pouvez diffuser des newsletters sur des services de messagerie, tels qu’ExactTarget et Silverpop Engage. Ce document explique comment configurer AEM en vue de diffuser une newsletter sur ces services de messagerie.
 
