@@ -1,5 +1,5 @@
 ---
-title: Création d’un service cloud personnalisé
+title: Créer un service cloud personnalisé
 seo-title: Creating a Custom Cloud Service
 description: L’ensemble de services cloud par défaut peut être étendu à l’aide de types de service cloud personnalisés.
 seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
 ht-degree: 100%
 
 ---
 
-# Création d’un service cloud personnalisé{#creating-a-custom-cloud-service}
+# Créer un service cloud personnalisé{#creating-a-custom-cloud-service}
 
 L’ensemble de services cloud par défaut peut être étendu à l’aide de types de service cloud personnalisés. Cela vous permet d’injecter un balisage personnalisé dans la page de manière structurée. Cela s’avérera particulièrement utile pour les fournisseurs de données analytiques tiers, tels que Google Analytics, Chartbeat, etc. Les pages enfants héritent des Services cloud des pages parents, avec la possibilité d’annuler l’héritage à n’importe quel niveau.
 
