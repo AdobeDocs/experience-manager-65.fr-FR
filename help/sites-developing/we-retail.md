@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,13 +33,13 @@ En tant qu’implémentation de référence standard d’AEM, We.Retail présent
 
 | **Fonctionnalité** | **Description** | **Intéressé ?** |
 |---|---|---|
-| [Structure de site globalisée](/help/sites-administering/tc-bp.md) | We.Retail comprend des gabarits de langue qui sont copiés de manière dynamique dans des sites localisés. | [Faites un essai!](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [Mise en page réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive pour s’adapter de manière dynamique à la taille de l’écran et du terminal. | [Faites un essai!](/help/sites-developing/we-retail-responsive-layout.md) |
-| [Modèles modifiables](/help/sites-developing/page-templates-editable.md) | Toutes les pages reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles. | [Faites un essai!](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | Tous les composants sont basés sur HTL. |  |
+| [Structure de site globalisée](/help/sites-administering/tc-bp.md) | We.Retail comprend des gabarits de langue qui sont copiés de manière dynamique dans des sites localisés. | [Faites un essai !](/help/sites-developing/we-retail-globalized-site-structure.md) |
+| [Mise en page réactive](/help/sites-authoring/responsive-layout.md) | Toutes les pages disposent d’une mise en page réactive pour s’adapter de manière dynamique à la taille de l’écran et du terminal. | [Faites un essai !](/help/sites-developing/we-retail-responsive-layout.md) |
+| [Modèles modifiables](/help/sites-developing/page-templates-editable.md) | Toutes les pages reposent sur des modèles modifiables, ce qui permet aux non-développeurs d’adapter et de personnaliser les modèles. | [Faites un essai !](/help/sites-developing/we-retail-editable-templates.md) |
+| [HTML Template Language](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Tous les composants sont basés sur HTL. |  |
 | [Fonctionnalités de commerce électronique](/help/commerce/cif-classic/developing/ecommerce.md) | Catalogue de produits intégré. |  |
 | [Sites Communities](/help/communities/overview.md) | Les visiteurs sont autorisés à participer à des discussions communautaires, à lire des blogs et bien plus encore. |  |
-| [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) | Tous les composants sont basés sur les nouveaux composants principaux. Ils s’avèrent également plus faciles à utiliser et à configurer en standard. | [Faites un essai!](/help/sites-developing/we-retail-core-components.md) |
+| [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) | Tous les composants sont basés sur les nouveaux composants principaux. Ils s’avèrent également plus faciles à utiliser et à configurer en standard. | [Faites un essai !](/help/sites-developing/we-retail-core-components.md) |
 | [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) | La section Expériences We.Retail permet de réutiliser du contenu au moyen de fragments de contenu. | [Faites un essai !](/help/sites-developing/we-retail-content-fragments.md) |
 | [Fragments d’expérience](/help/sites-authoring/experience-fragments.md) | Un fragment d’expérience est un groupe d’un ou plusieurs composants comprenant un contenu et une disposition pouvant être référencés dans les pages. | [Faites un essai !](/help/sites-developing/we-retail-experience-fragments.md) |
 
