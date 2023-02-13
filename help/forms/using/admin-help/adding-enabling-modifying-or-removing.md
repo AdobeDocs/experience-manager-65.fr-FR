@@ -1,5 +1,5 @@
 ---
-title: Ajout, activation, modification ou suppression de points de fin
+title: Ajouter, activer, modifier ou supprimer des points de fin
 seo-title: Adding, enabling, modifying, or removing endpoints
 description: Découvrez comment ajouter, activer, modifier et supprimer des points de fin.
 seo-description: Learn how to add, enable, modify and remove endpoints.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
 ht-degree: 100%
 
 ---
 
-# Ajout, activation, modification ou suppression de points de fin {#adding-enabling-modifying-or-removing-endpoints}
+# Ajouter, activer, modifier ou supprimer des points de fin {#adding-enabling-modifying-or-removing-endpoints}
 
 ## Ajout d’un point de fin à un service {#add-an-endpoint-to-a-service}
 
