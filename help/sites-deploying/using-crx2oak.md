@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’outil de migration CRX2Oak
+title: Utiliser l’outil de migration CRX2Oak
 seo-title: Using the CRX2Oak Migration Tool
 description: Découvrez comment utiliser l’outil de migration CRX2Oak.
 seo-description: Learn how to use the CRX2Oak migration tool.
@@ -12,13 +12,13 @@ discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1246'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Utilisation de l’outil de migration CRX2Oak{#using-the-crx-oak-migration-tool}
+# Utiliser l’outil de migration CRX2Oak{#using-the-crx-oak-migration-tool}
 
 ## Présentation {#introduction}
 
@@ -29,7 +29,7 @@ Il peut être utilisé pour migrer des données à partir d’anciennes versions
 Vous pouvez télécharger la version la plus récente de crx2oak à partir du référentiel public Adobe via :
 [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
-La liste de modifications et correctifs pour la dernière version est disponible via les [notes de mise à jour pour CRX2Oak](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/crx2oak.html).
+La liste de modifications et correctifs pour la dernière version est disponible via les [notes de mise à jour pour CRX2Oak](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/crx2oak.html?lang=fr).
 
 >[!NOTE]
 >
