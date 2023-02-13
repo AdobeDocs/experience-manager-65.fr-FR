@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ L’image suivante affiche la structure du dossier `adobe-lc-mobileworkspace-src
 
 ![structure_dossier_zip_android](assets/zip_android_folder_structure.png)
 
-## Définition des variables d’environnement {#set-environment-variable-android}
+## Définir les variables d’environnement {#set-environment-variable-android}
 
 Définissez les variables d’environnement suivantes avant de démarrer le processus de génération pour l’application AEM Forms :
 
@@ -60,7 +60,7 @@ Une fois que vous avez enregistré le fichier adobe-lc-mobileworkspace-src-&lt;
 * [Génération de l’application AEM Forms à l’aide d’Android Studio](#using-android-studio)
 * [Génération du fichier .apk à l’aide d’Android Studio](#generate-apk-android-studio)
 
-### Génération de l’application AEM Forms à l’aide d’Android Studio {#using-android-studio}
+### Générer l’application AEM Forms à l’aide d’Android Studio {#using-android-studio}
 
 Procédez comme suit pour générer l’application AEM Forms à l’aide d’Android Studio :
 
@@ -83,7 +83,7 @@ Procédez comme suit pour générer l’application AEM Forms à l’aide d’An
 
    Après avoir appliqué les personnalisations appropriées à votre application, vous pouvez générer le fichier .apk pour le distribuer.
 
-### Génération du fichier .apk à l’aide d’Android Studio {#generate-apk-android-studio}
+### Générez le fichier .apk à l’aide d’Android Studio {#generate-apk-android-studio}
 
 Exécutez les étapes suivantes pour générer le fichier .apk à l’aide d’Android Studio :
 
