@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1862'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Un certain nombre de composants AEM prêts à l’emploi sont proposés pour uti
 * Passage en caisse
 * Rechercher
 
-Pour la recherche, un crochet d’intégration est fourni qui vous permet d’utiliser la recherche AEM, une recherche tierce ou une combinaison de celle-ci.
+Pour la recherche, un crochet d’intégration est fourni pour vous permettre d’utiliser la recherche AEM, une recherche tierce ou une combinaison de celles-ci.
 
 ## Sélection du moteur eCommerce {#ecommerce-engine-selection}
 
@@ -428,7 +428,7 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
 
 ### Développement de promotions et de bons {#developing-promotions-and-vouchers}
 
-* Bons:
+* Bons :
 
    * Un bon est un composant basé sur une page qui est créé ou modifié avec la console de Sites Web et stocké sous :
 
@@ -452,7 +452,7 @@ Le point d’entrée de l’API de recherche est la méthode `CommerceService#se
 
 
 
-* Promotions:
+* Promotions :
 
    * Une promotion est un composant basé sur une page qui est créé ou modifié avec la console de Sites Web et stocké sous :
 
