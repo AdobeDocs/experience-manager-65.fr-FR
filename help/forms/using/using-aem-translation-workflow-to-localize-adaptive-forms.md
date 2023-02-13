@@ -11,7 +11,7 @@ noindex: true
 feature: Adaptive Forms
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
 ht-degree: 100%
 
@@ -70,7 +70,7 @@ Effectuez les étapes suivantes pour localiser un formulaire et son document d�
 
 1. [Préparez le contenu à traduire](/help/sites-administering/tc-prep.md) en créant le gabarit de langue et les pages racine des copies de langue.
 
-1. [Créer des projets de traduction](/help/sites-administering/tc-manage.md) pour collecter le contenu à traduire et préparer le processus de traduction.
+1. [Créez des projets de traduction](/help/sites-administering/tc-manage.md) pour collecter le contenu à traduire et préparer le processus de traduction.
 
 1. Utiliser les projets de translation pour [gérer le processus de traduction du contenu](/help/sites-administering/tc-manage.md).
 
