@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de l’identité graphique
+title: Personnaliser l’identité graphique
 seo-title: Branding Customization
 description: Vous pouvez personnaliser l’icône et le nom de l’application, les images de lancement et la page de connexion pour donner à l’application AEM Forms un aspect différent et spécifique de l’entreprise.
 seo-description: Customize the application icon, application name, launch images, and login page to provide a distinct organization-specific look and feel to AEM Forms app.
@@ -11,13 +11,13 @@ topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
 ht-degree: 100%
 
 ---
 
-# Personnalisation de l’identité graphique {#branding-customization}
+# Personnaliser l’identité graphique {#branding-customization}
 
 Vous pouvez personnaliser l’icône et le nom de l’application, les images de lancement et la page de connexion pour donner à l’application AEM Forms une apparence différente et spécifique de l’entreprise. Vous avez, par exemple, la possibilité de remplacer les images par des logos de votre société. L’application AEM Forms prend en charge les personnalisations suivantes :
 
