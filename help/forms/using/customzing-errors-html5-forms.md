@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des messages d’erreur pour les formulaires HTML5
+title: Personnaliser les messages d’erreur pour les formulaires HTML5
 seo-title: Customizing error messages for HTML5 forms
 description: Découvrez comment personnaliser l’affichage des messages d’erreur pour les formulaires HTML5 et notamment comment modifier leur position et leur aspect.
 seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
@@ -10,13 +10,13 @@ discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
 ht-degree: 100%
 
 ---
 
-# Personnalisation des messages d’erreur pour les formulaires HTML5 {#customizing-error-messages-for-html-forms}
+# Personnaliser les messages d’erreur pour les formulaires HTML5 {#customizing-error-messages-for-html-forms}
 
 Dans les formulaires HTML5, hors de la zone, les messages d’erreur et les avertissements ont une position et un aspect fixes (police et couleur), l’erreur est affichée uniquement pour un champ sélectionné, et une seule erreur s’affiche.
 
