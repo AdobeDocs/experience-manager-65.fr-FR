@@ -12,7 +12,7 @@ discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
 source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '547'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ La section ci-dessous traite de certains problèmes susceptibles d’être renco
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes, il est également intéressant de consulter les [problèmes connus](/help/release-notes/release-notes.md) relatifs à votre instance (packs de version et pack de services).
+>Si vous rencontrez des problèmes, il est également intéressant de consulter la liste des [problèmes connus](/help/release-notes/release-notes.md) relatifs à votre instance (packs de version et de services).
 
 ## Scénarios de résolution des incidents pour les administrateurs {#troubleshooting-scenarios-for-administrators}
 
@@ -73,7 +73,7 @@ Pour plus d’informations sur les scénarios de résolution des incidents ci-de
 
 ## Méthodes d’analyse de la résolution des incidents {#methods-for-troubleshooting-analysis}
 
-### Création d’une image mémoire des threads {#making-a-thread-dump}
+### Créer une image mémoire des threads {#making-a-thread-dump}
 
 L’image mémoire des threads est une liste de toutes les unités d’exécution Java actuellement actives. Si AEM ne répond pas correctement, l’image mémoire des threads peut vous aider à identifier des verrouillages ou d’autres problèmes.
 
@@ -120,7 +120,7 @@ Le statut des lots OSGi peut également fournir une indication précoce de probl
 
 1. Ouvrez la **console web AEM**, par exemple, à l’adresse `https://localhost:4502/system/console/`.
 1. Sélectionnez **Lots** dans l’onglet **OSGI**.
-1. Vérification:
+1. Vérifier :
 
    * le statut des lots. Si le statut est Inactif ou Insatisfait, essayez d’arrêter et de redémarrer le lot. Si le problème persiste, un examen plus approfondi peut être nécessaire à l’aide d’autres méthodes.
    * Si l’un des lots possède des dépendances manquantes. Ces informations peuvent être affichées en cliquant sur le nom de chaque lot, qui est un lien (l’exemple ci-dessous ne comporte aucun problème) :
