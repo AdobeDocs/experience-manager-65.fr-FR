@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de la création de pages
+title: Personnaliser la création de pages
 seo-title: Customizing Page Authoring
 description: AEM s’accompagne de divers mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages.
 seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1354'
 ht-degree: 100%
 
 ---
 
-# Personnalisation de la création de pages{#customizing-page-authoring}
+# Personnaliser la création de pages{#customizing-page-authoring}
 
 >[!CAUTION]
 >
@@ -220,7 +220,7 @@ Vous pouvez trouver le code de cette page sur GitHub.
 * [Ouvrez le projet aem-authoring-extension-inplace-editor sur GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor).
 * Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip).
 
-#### Configuration de plusieurs éditeurs statiques {#configuring-multiple-in-place-editors}
+#### Configurer plusieurs éditeurs statiques {#configuring-multiple-in-place-editors}
 
 Il est possible de configurer un composant afin qu’il comporte plusieurs éditeurs statiques. Lorsque plusieurs éditeurs statiques sont configurés, vous pouvez sélectionner le contenu approprié et ouvrir l’éditeur adéquat. Pour plus d’informations, consultez [Configuration de plusieurs éditeurs statiques](/help/sites-developing/multiple-inplace-editors.md).
 
