@@ -1,5 +1,5 @@
 ---
-title: Création d’un écran de connexion
+title: Créer un écran de connexion
 seo-title: Creating a new login screen
 description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail AEM Forms ou de Forms Manager.
 seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
@@ -11,13 +11,13 @@ discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
 ht-degree: 100%
 
 ---
 
-# Création d’un écran de connexion{#creating-a-new-login-screen}
+# Créer un écran de connexion{#creating-a-new-login-screen}
 
 Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent à la fois l’écran de connexion de Forms Manager et de l’espace de travail AEM Forms.
 
@@ -153,7 +153,7 @@ String browserLocale = "en";
     }
 ```
 
-À
+To
 
 ```jsp
 String browserLocale = "en";
@@ -225,7 +225,7 @@ String browserLocale = "en";
                        <% if (loginFailed) {%>
    ```
 
-   À
+   To
 
    ```jsp
    div class="loginContent">
@@ -276,7 +276,7 @@ css.newLoginContentArea {
    <div class="loginContentArea">
    ```
 
-   À
+   To
 
    ```jsp
    <div class="newLoginContentArea">
@@ -319,7 +319,7 @@ Par exemple :
 <div class="loginContainerBkg">
 ```
 
-À
+To
 
 ```jsp
 <div class="newLginContainerBkg">
