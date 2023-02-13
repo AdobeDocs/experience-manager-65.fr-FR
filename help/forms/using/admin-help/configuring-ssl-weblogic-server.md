@@ -9,8 +9,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 80b8571bf745b9e7d22d7d858cff9c62e9f8ed1e
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '1049'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ La commande keytool se situe généralement dans le répertoire Java jre/bin et 
     </ul></td>
   </tr>
   <tr>
-   <td><p>-approuvé</p></td>
+   <td><p>-file</p></td>
    <td><p>Emplacement et nom du fichier de certificat.</p></td>
    <td><code> ads-ca.cer</code></td>
   </tr>
@@ -121,7 +121,7 @@ Pour plus d’informations sur l’utilisation de la commande keytool, consultez
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   Le fichier de stockage de clés d’identité personnalisée nommé ads-credentials.jks est créé dans le répertoire [domaine du serveur d’applications]/adobe/[server name].
+   Le fichier de stockage de clés d’identité personnalisée nommé « ads-credentials.jks » est créé dans le répertoire [domaine du serveur d’applications]/adobe/[server name].
 
 1. Extrayez le certificat du fichier de stockage des clés ads-credentials en tapant la commande suivante :
 
@@ -141,7 +141,7 @@ Pour plus d’informations sur l’utilisation de la commande keytool, consultez
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   Le fichier de certificats nommé ads-ca.cer est créé dans le répertoire [domaine du serveur d’applications]/adobe/[*server name*].
+   Le fichier de certificat nommé «a ds-ca.cer » est créé dans le répertoire [domaine du serveur d’applications]/adobe/[*server name*].
 
 1. Copiez le fichier ads-ca.cer sur tous les ordinateurs hôtes devant établir des communications sécurisées avec le serveur d’applications.
 1. Insérez le certificat dans un nouveau fichier de stockage des clés (celui des clés d’approbation personnalisée) à l’aide de la commande suivante :
