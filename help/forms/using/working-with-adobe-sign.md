@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’Adobe Sign dans un formulaire adaptatif
+title: Utiliser Adobe Sign dans un formulaire adaptatif
 seo-title: Using Adobe Sign in an adaptive form
 description: Activez les processus de signature électronique (Adobe Sign) pour un formulaire adaptatif afin d’automatiser les processus de signature, de simplifier les processus à signature unique et à signatures multiples et de signer électroniquement des formulaires à partir d’appareils mobiles.
 seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3826'
 ht-degree: 100%
 
@@ -195,7 +195,6 @@ Vous ne pouvez avoir qu’un seul signataire ou plusieurs signataires pour un fo
    * **[!UICONTROL Adresse électronique du signataire] :** précisez l’adresse électronique du signataire. Le signataire reçoit les documents/formulaires à signer à l’adresse électronique indiquée. Vous pouvez choisir d’utiliser une adresse électronique fournie dans un champ de formulaire, dans le profil utilisateur AEM de l’utilisateur connecté ou d’entrer manuellement une adresse électronique. Il s’agit d’une étape obligatoire. Assurez-vous que l’adresse électronique du premier signataire ou du seul signataire (s’il s’agit d’un signataire unique) n’est pas identique au compte [!DNL Adobe Sign] utilisé pour configurer les services cloud AEM.
 
    * **[!UICONTROL Méthode d’authentification du signataire] :** spécifiez la méthode pour authentifier un utilisateur avant d’ouvrir un formulaire à des fins de signature. Vous pouvez choisir entre le téléphone, la base de connaissances et l’authentification basée sur l’identité de réseau social.
-
    >[!NOTE]
    >
    >    * Par défaut, l’authentification par identité sociale offre une option d’authentification via Facebook, Google et LinkedIn. Vous pouvez contacter le service d’assistance [!DNL Adobe Sign] pour activer d’autres fournisseurs d’authentification sociale.
@@ -249,7 +248,7 @@ Une fois la [modification des propriétés de formulaire adaptatif pour Adobe S
 
    Appliquez des signatures numériques au formulaire adaptatif à l’aide des éléments suivants :
 
-   * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hébergé par un prestataire de confiance.
+   * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/fr/sign/kb/digital-certificate-providers.html) hébergé par un prestataire de confiance.
    * Adobe Acrobat ou Reader : téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, un jeton USB ou un ID numérique basé sur des fichiers.
 
    Une fois le champ de signature cloud ajouté au formulaire adaptatif, effectuez les étapes suivantes pour terminer le processus de configuration :
@@ -298,6 +297,7 @@ Effectuez les étapes suivantes pour configurer le composant Étape de signature
    >
    >* Lorsque vous faites glisser le composant **[!UICONTROL Étape de signature]** dans le formulaire, l’option **[!UICONTROL Le signataire et la personne remplissant le formulaire ne sont-ils qu’une seule et même personne ?]** est automatiquement définie sur **Oui**. Cela est nécessaire pour que le formulaire continue de fonctionner.
    >* Utilisez le composant Étape de résumé après le composant Étape de signature pour une expérience optimale. Le composant Étape de résumé effectue un envoi automatique et immédiat du formulaire après la signature de ce dernier dans le composant Étape de signature. Si vous n’utilisez pas l’étape de résumé, l’envoi automatique n’est déclenché qu’à la fin de l’intervalle défini à l’aide du [Service de configuration d’Adobe Sign](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
+
    >
    >Voici quelques bonnes pratiques :
    >
