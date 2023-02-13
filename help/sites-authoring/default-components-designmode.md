@@ -1,7 +1,7 @@
 ---
-title: Configuration de composants en mode de conception
+title: Configurer des composants en mode de conception
 seo-title: Configuring Components in Design Mode
-description: Configuration de composants en mode de conception
+description: Configurer des composants en mode de conception
 seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
 ht-degree: 100%
 
 ---
 
-# Configuration de composants en mode de conception{#configuring-components-in-design-mode}
+# Configurer des composants en mode de conception{#configuring-components-in-design-mode}
 
 Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans l’explorateur de composants.
 
