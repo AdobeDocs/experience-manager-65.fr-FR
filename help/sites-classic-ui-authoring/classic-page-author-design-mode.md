@@ -1,5 +1,5 @@
 ---
-title: Configuration de composants en mode de conception
+title: Configurer des composants en mode de conception
 seo-title: Configuring Components in Design Mode
 description: Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans le sidekick. D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour activer/désactiver ces composants.
 seo-description: When AEM instance is installed out-of-the-box, a selection of components are immediately available in the sidekick. In addition to these, various other components are also available. You can use Design mode to Enable/disable such components.
@@ -12,13 +12,13 @@ discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
 ht-degree: 100%
 
 ---
 
-# Configuration de composants en mode de conception{#configuring-components-in-design-mode}
+# Configurer des composants en mode de conception{#configuring-components-in-design-mode}
 
 Lors de l’installation standard d’une instance AEM, plusieurs composants sont immédiatement disponibles dans le sidekick.
 
