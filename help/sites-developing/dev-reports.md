@@ -1,5 +1,5 @@
 ---
-title: Élaboration de rapports
+title: Élaborer des rapports
 seo-title: Developing Reports
 description: AEM propose une sélection de rapports standard basés sur une structure de création de rapports.
 seo-description: AEM provides a selection of standard reports based on a reporting framework
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5238'
 ht-degree: 100%
 
 ---
 
 
-# Élaboration de rapports {#developing-reports}
+# Élaborer des rapports {#developing-reports}
 
 CQ propose une sélection de [rapports standard](/help/sites-administering/reporting.md), basés majoritairement sur un framework de création de rapports.
 
@@ -50,9 +50,9 @@ Pour les rapports standard fournis avec AEM :
 >La notation suivante est utilisée dans les exemples et définitions ci-dessous :
 >
 >* Chaque ligne définit un nœud ou une propriété où :
->  `N:<name> [<nodeType>]` : décrit un nœud portant le nom `<*name*>` et le type de nœud `<*nodeType*>`*.*
->  `P:<name> [<propertyType]` : décrit une propriété avec le nom `<*name*>` et un type de propriété `<*propertyType*>`.
->  `P:<name> = <value>` : décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
+   >  `N:<name> [<nodeType>]` : décrit un nœud portant le nom `<*name*>` et le type de nœud `<*nodeType*>`*.*
+   >  `P:<name> [<propertyType]` : décrit une propriété avec le nom `<*name*>` et un type de propriété `<*propertyType*>`.
+   >  `P:<name> = <value>` : décrit une propriété `<name>` qui doit être définie sur la valeur de `<value>`.
 >
 >* La mise en retrait indique les dépendances hiérarchiques entre les nœuds.
 >* Le caractère | entre des éléments indique une liste d’éléments possibles ; des types ou des noms, par exemple ; Par exemple, `String|String[]` signifie que la propriété peut être String ou String[].
@@ -455,7 +455,7 @@ Plusieurs composants préconfigurés sont fournis ; ils peuvent être référen
 >
 >Les composants référencés doivent être inclus à l’aide du suffixe `.infinity.json` (voir l’exemple ci-dessus).
 
-### Chemin racine {#root-path}
+### Chemin d’accès racine {#root-path}
 
 Un chemin d’accès racine peut également être défini pour le rapport :
 
@@ -756,7 +756,7 @@ Lorsqu’il est trouvé, le motif spécifié (qui est défini sous la forme d’
 
 * [formateurs de type de données](#preprocessing-data-type-formatters)
 
-   Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur &grave;&grave; représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
+   Convertissent une valeur numérique en chaîne relative ; par exemple, la valeur `` représentant un décalage horaire de 1 heure sera résolue dans une chaîne telle que `1:24PM (1 hour ago)`.
 
 Par exemple :
 
@@ -1305,7 +1305,8 @@ Pour illustrer ces étapes, l’exemple suivant définit un rapport qui réperto
    >
    >Il s’agit de la même chose que les définitions :
    >
-   >```
+   >
+   ```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
@@ -1376,7 +1377,8 @@ Il est désormais possible de créer une instance de votre nouveau rapport :
    >
    >Puisque cet exemple ne contient pas de colonnes pouvant être groupées, les graphiques ne sont pas disponibles. Pour afficher les graphiques, définissez `groupable` sur `true` :
    >
-   >```
+   >
+   ```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
