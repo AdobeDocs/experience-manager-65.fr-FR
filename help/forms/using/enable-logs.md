@@ -1,5 +1,5 @@
 ---
-title: Activation de la journalisation des formulaires au format HTML5
+title: Activer la journalisation des formulaires au format HTML5
 seo-title: Enable logging for HTML5 forms
 description: L’utilitaire de journalisation permet la création d’un journal pour un formulaire et vous permet de déboguer les problèmes liés au formulaire.
 seo-description: The logger utility enables logging for a form and helps you debug form-related issues.
@@ -13,13 +13,13 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
 ht-degree: 100%
 
 ---
 
-# Activation de la journalisation des formulaires au format HTML5{#enable-logging-for-html-forms}
+# Activer la journalisation des formulaires au format HTML5{#enable-logging-for-html-forms}
 
 Vous pouvez configurer l’utilitaire de journalisation pour créer des journaux pour les formulaires au format HTML5. L’utilitaire de journalisation possède plusieurs niveaux, vous pouvez définir le niveau selon vos besoins. Les formulaires HTML5 ont des composants de serveur et de client. Vous pouvez configurer des journaux pour chaque composant.
 
@@ -195,7 +195,7 @@ Par défaut, toutes les informations sont ajoutées dans le fichier error.log du
 
 Pour modifier l’emplacement et le nom du fichier journal :
 
-1. Connectez-vous à  Configuration Manager en tant qu’administrateur. L’URL de Configuration Manager définie par défaut est `https://'[server]:[port]'/system/console/configMgr`.
+1. Connectez-vous à Configuration Manager en tant qu’administrateur. L’URL de Configuration Manager définie par défaut est `https://'[server]:[port]'/system/console/configMgr`.
 1. Cliquez sur **Configuration des journaux de journalisation Sling d’Apache**. Une boîte de dialogue s’affiche.
 
    ![logconfig-1](assets/logconfig-1.png)
