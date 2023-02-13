@@ -1,5 +1,5 @@
 ---
-title: Configuration des paramètres de verrouillage des comptes
+title: Configurer les paramètres de verrouillage des comptes
 seo-title: Configure account-locking settings
 description: Utilisez l’option Activer le verrouillage de compte pour verrouiller des comptes utilisateur après un nombre spécifié d’échecs d’authentification consécutifs.
 seo-description: Use the Enable Account Locking option to lock user accounts after a specified number of consecutive authentication failures.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
 exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
-# Configuration des paramètres de verrouillage des comptes {#configure-account-locking-settings}
+# Configurer les paramètres de verrouillage des comptes {#configure-account-locking-settings}
 
 Lorsque vous ajoutez un domaine, spécifiez s’il convient d’activer le verrouillage des comptes. Si l’option Activer le verrouillage de compte est activée, les comptes d’utilisateurs sont verrouillés après un certain nombre d’échecs d’authentification consécutifs. Après une durée définie, l’utilisateur peut à nouveau tenter de s’authentifier, ce qui évite que les utilisateurs ne tentent plusieurs combinaisons d’informations d’identification pour accéder au système.
 
