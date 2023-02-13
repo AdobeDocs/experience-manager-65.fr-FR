@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’Adobe Campaign 6.1 et d’Adobe Campaign Standard
+title: Utiliser Adobe Campaign 6.1 et Adobe Campaign Standard
 seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Vous pouvez créer le contenu d’un e-mail dans AEM et le traiter dans les e-mails Adobe Campaign.
 seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1170'
 ht-degree: 100%
 
 ---
 
-# Utilisation d’Adobe Campaign 6.1 et d’Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
+# Utiliser Adobe Campaign 6.1 et Adobe Campaign Standard{#working-with-adobe-campaign-and-adobe-campaign-standard}
 
 Vous pouvez créer le contenu d’un courrier électronique dans AEM et le traiter dans les courriers électroniques Adobe Campaign. À cet effet, vous devez suivrez cette procédure :
 
@@ -45,7 +45,7 @@ Deux cas de figure peuvent se présenter :
 
 Ce document contient des instructions détaillées.
 
-### Création de contenu d’e-mail {#creating-new-email-content}
+### Créer du nouveau contenu d’e-mail {#creating-new-email-content}
 
 >[!NOTE]
 >
