@@ -1,17 +1,17 @@
 ---
-title: Exécution d’une mise à niveau statique
+title: Effectuer une mise à niveau statique
 description: Découvrez comment effectuer une mise à niveau statique.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1244'
 ht-degree: 100%
 
 ---
 
-# Exécution d’une mise à niveau statique{#performing-an-in-place-upgrade}
+# Effectuer une mise à niveau statique{#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
