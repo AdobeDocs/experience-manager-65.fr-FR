@@ -1,5 +1,5 @@
 ---
-title: Utilisation de Marketing Campaign Manager
+title: Utiliser Marketing Campaign Manager
 seo-title: Working with the Marketing Campaign Manager
 description: La console Marketing Campaign Manager (MCM) vous aide à gérer des campagnes multicanaux. Ce logiciel d’automatisation des activités marketing permet de gérer l’ensemble des marques, campagnes et expériences avec les segments, listes, pistes et rapports qui y sont associés.
 seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
@@ -12,13 +12,13 @@ discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1175'
 ht-degree: 100%
 
 ---
 
-# Utilisation de Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
+# Utiliser Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
 Marketing Campaign Manager (MCM) est une console disponible dans AEM qui vous aide à gérer vos campagnes multicanal. Ce logiciel d’automatisation des activités marketing permet de gérer l’ensemble des marques, campagnes et expériences avec les segments, listes, pistes et rapports qui y sont associés.
 
