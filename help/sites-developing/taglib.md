@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2483'
 ht-degree: 100%
 
@@ -121,7 +121,7 @@ Il présente les attributs facultatifs ci-dessous :
 
 **tagName** - Nom de l’élément qui entoure une sortie non vide. Cet attribut est défini, par défaut, sur DIV.
 
-**placeholder** - Valeur par défaut à utiliser pour le texte nul ou vide en mode d’édition, c’est-à-dire l’espace réservé. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie. Cet attribut est défini, par défaut, sur:
+**placeholder** - Valeur par défaut à utiliser pour le texte nul ou vide en mode d’édition, c’est-à-dire l’espace réservé. Notez que la vérification par défaut est effectuée après l’échappement et la mise en forme facultatifs ; en d’autres termes, elle est écrite telle quelle dans la sortie. Cet attribut est défini, par défaut, sur :
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -518,7 +518,7 @@ La balise `<sling:include>` inclut une ressource dans la page en cours.
 
 Elle présente les attributs suivants :
 
-**purge**
+**flush**
 
 * Valeur booléenne qui indique si la sortie doit être vidée ou non avant d’inclure la cible.
 
