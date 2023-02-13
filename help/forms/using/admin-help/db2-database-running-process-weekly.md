@@ -1,6 +1,6 @@
 ---
-title: '"Base de données DB2 : exécution d’un processus hebdomadaire"'
-seo-title: 'DB2 database: Running a process weekly'
+title: "Base de données DB2\_: exécution d’un processus hebdomadaire"
+seo-title: "DB2 database: Running a process weekly"
 description: Découvrez comment vous pouvez améliorer la performance de votre base de données AEM Forms DB2.
 seo-description: See how you can improve the performance of your AEM forms DB2 database.
 uuid: 36070087-c250-41df-a841-aa922e777697
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc0e8183-5d50-4fc0-997a-5f3168ba0d70
 exl-id: ca2cfe35-b602-4ef8-b4e3-af846105d4de
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
 ht-degree: 100%
 
