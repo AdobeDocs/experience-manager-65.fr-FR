@@ -1,5 +1,5 @@
 ---
-title: Utilisation d’expressions SOM dans des formulaires adaptatifs
+title: Utiliser des expressions SOM dans des formulaires adaptatifs
 seo-title: Using SOM expressions in adaptive forms
 description: Découvrez comment extraire les expressions SOM d’un panneau de formulaire adaptatif.
 seo-description: Learn how to extract SOM expressions of a panel of an adaptive form.
@@ -11,13 +11,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '348'
 ht-degree: 100%
 
 ---
 
-# Utilisation d’expressions SOM dans des formulaires adaptatifs{#using-som-expressions-in-adaptive-forms}
+# Utiliser des expressions SOM dans des formulaires adaptatifs{#using-som-expressions-in-adaptive-forms}
 
 Les formulaires adaptatif sont modélisés comme des pages AEM, représentées par des structures de contenu JCR dans le référentiel AEM. L’élément clé de la structure de contenu est le nœud du guideContainer. Sous le guideContainer, il existe un rootPanel pouvant contenir un panneau et des champs imbriqués.
 
