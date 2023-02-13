@@ -12,33 +12,33 @@ discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '375'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Mettre à niveau vers AEM 6.5 Forms on JEE {#upgrade-to-aem-forms-jee}
 
-AEM 6.5.12.0 Forms on JEE fournit deux types d’installation : Programme d’installation complet et programme d’installation de correctif.
+AEM 6.5.12.0 Forms on JEE fournit deux types de programme d’installation : le programme d’installation complet et le programme d’installation de correctifs.
 
-**Programme d’installation complet**: Vous pouvez utiliser la variable [Programme d’installation complet d’AEM 6.5.12.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour configurer de nouvelles instances AEM Forms ou effectuer des mises à niveau à partir d’AEM 6.3 Forms on JEE, AEM 6.4 on JEE et une mise à niveau dynamique d’Forms on JEE vers 6.5.x.x vers Forms on JEE.
+**Programme d’installation complet** : vous pouvez utiliser le [programme d’installation complet d’AEM 6.5.12.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) pour configurer de nouvelles instances AEM Forms ou effectuer des mises à niveau à partir d’AEM 6.3 Forms on JEE, AEM 6.4 on JEE et une mise à niveau dynamique d’AEM Forms on JEE vers 6.5.x.x vers 6.5.12.0 Forms on JEE.
 
-**Programme d’installation des correctifs**: [Programme d’installation du correctif d’AEM 6.5.12.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) est destiné aux clients qui utilisent déjà AEM versions 6.5.x.x. Vous pouvez utiliser le programme d’installation de correctif pour effectuer la mise à niveau vers la dernière version d’AEM Forms.
+**Programme d’installation de correctifs** : le [programme d’installation de correctifs d’AEM 6.5.12.0 on JEE](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) s’adresse aux client(e)s qui utilisent déjà les versions AEM 6.5.x.x. Vous pouvez utiliser le programme d’installation des correctifs pour effectuer la mise à niveau vers la dernière version d’AEM Forms.
 
-Le tableau suivant illustre les scénarios d’utilisation du programme d’installation complet et des correctifs.
+Le tableau suivant illustre les scénarios d’utilisation du programme d’installation complet et de correctifs.
 
 ![](assets/full-and-patch-installer.png)
 
-Procédez comme suit pour utiliser le programme d’installation complet afin de mettre à niveau AEM version 6.3 Forms on JEE ou AEM 6.4 Forms on JEE vers la version 6.5.12.0 Forms on JEE :
+Effectuez la procédure suivante pour utiliser le programme d’installation complet pour mettre à niveau AEM 6.3 Forms on JEE ou AEM 6.4 Forms on JEE vers AEM 6.5.12.0 Forms on JEE :
 
-1. Téléchargez le programme d’installation d’AEM 6.5 Forms on JEE à partir du [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Vous avez besoin d’un contrat de maintenance et d’assistance valide pour utiliser le programme d’installation.
+1. Téléchargez le programme d’installation d’AEM 6.5 Forms on JEE à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Pour télécharger le programme d’installation, vous devez disposer d’un contrat de Maintenance &amp; Support.
 1. Voir [Aide-mémoire et planification de la mise à niveau](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_fr) pour découvrir les vérifications à effectuer pour une mise à niveau réussie.
 1. Voir [Préparation de la mise à niveau vers AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_fr) pour découvrir et exécuter les tâches permettant d’effectuer correctement la mise à niveau pour un temps d’arrêt du serveur minimal.
 1. En fonction de votre environnement et de votre serveur d’application, sélectionnez l’un des documents suivants et suivez les instructions.
 
-   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss clé en main](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
+   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_fr)
+   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_fr)
+   * [Mise à niveau d’AEM 6.3 Forms ou d’AEM 6.4 Forms vers AEM 6.5 Forms pour JBoss clé en main](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_fr)
 
-La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms et AEM 6.2 Forms vers AEM 6.5 Forms n’est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer la mise à niveau vers AEM 6.5 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](upgrade.md).
+La mise à niveau directe de LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms et AEM 6.2 Forms vers AEM 6.5 Forms n’est pas disponible. Vous pouvez effectuer une mise à niveau intermédiaire vers une ou plusieurs versions de LiveCycle ou AEM Forms, puis effectuer une mise à niveau vers AEM 6.5 Forms. Pour la liste des versions intermédiaires et les instructions de mise à niveau correspondantes, voir [Sélectionner un chemin de mise à niveau](upgrade.md).
