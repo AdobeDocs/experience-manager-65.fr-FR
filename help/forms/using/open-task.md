@@ -1,5 +1,5 @@
 ---
-title: Ouverture d’une tâche
+title: Ouvrir une tâche
 seo-title: Opening a task
 description: Étapes d’ouverture d’une tâche dans l’application AEM Forms.
 seo-description: Steps to open a task on your AEM Forms app.
@@ -10,13 +10,13 @@ topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
 ht-degree: 100%
 
 ---
 
-# Ouverture d’une tâche {#opening-a-task}
+# Ouvrir une tâche {#opening-a-task}
 
 Si l’application AEM Forms se synchronise avec un serveur AEM Forms, vous pouvez travailler avec des tâches qui vous sont assignées. Les tâches sont des étapes du flux de travail défini dans le Workbench ou dans l’éditeur de flux de travail AEM.
 
