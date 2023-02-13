@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2718'
 ht-degree: 100%
 
@@ -658,7 +658,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 
 ### Supprimer {#delete}
 
-Supprime les fichiers et les répertoires de la gestion des versions.
+Supprime les fichiers et les répertoires du contrôle de version.
 
 #### Syntaxe {#syntax-14}
 
@@ -858,7 +858,7 @@ Une fois le service actif, il peut être configuré avec les paramètres suivant
 >
 >Le service peut être configuré avec la console web ou un nœud `sling:OsgiConfig` (portant le nom `com.day.jcr.sync.impl.VaultSyncServiceImpl`) dans le référentiel.
 >
->Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md). 
+>Dans AEM, il existe plusieurs méthodes pour gérer les paramètres de configuration pour ces services. Pour plus d’informations, voir [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md).
 
 #### Configuration du dossier de synchronisation {#sync-folder-configuration}
 
