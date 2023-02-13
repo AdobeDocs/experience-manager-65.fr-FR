@@ -8,7 +8,7 @@ discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1801'
 ht-degree: 100%
 
@@ -320,7 +320,7 @@ Vous pouvez ajouter des lignes au-dessus ou sous la ligne en cours.
 
 La ligne en cours peut également être supprimée.
 
-#### Ajouter ou Supprimer des colonnes {#add-or-delete-columns}
+#### Ajouter ou supprimer des colonnes {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
