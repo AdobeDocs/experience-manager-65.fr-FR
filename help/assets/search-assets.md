@@ -7,7 +7,7 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5605'
 ht-degree: 100%
 
@@ -476,6 +476,6 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 >[!MORELIKETHIS]
 >
 >* Guide de mise en œuvre des recherches[[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=fr)
->* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [Configuration avancée pour améliorer les résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=fr)
 >* [Configuration de la recherche de traduction intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html?lang=fr)
 
