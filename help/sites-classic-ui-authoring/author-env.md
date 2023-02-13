@@ -1,5 +1,5 @@
 ---
-title: Utilisation de l’environnement de création
+title: Utiliser l’environnement de création
 seo-title: Working with the Author Environment
 description: L’environnement de création vous permet d’effectuer des tâches liées à la création (y compris la création de pages et la gestion de ressources) et d’administrer les tâches nécessaires pour générer et gérer le contenu sur votre site web.
 seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 4486c503-21e6-493a-8994-b0f8cd34c85a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
 
-# Utilisation de l’environnement de création{#working-with-the-author-environment}
+# Utiliser l’environnement de création{#working-with-the-author-environment}
 
 >[!NOTE]
 >
