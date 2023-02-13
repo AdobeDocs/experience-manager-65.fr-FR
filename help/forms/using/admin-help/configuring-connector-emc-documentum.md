@@ -1,5 +1,5 @@
 ---
-title: Configuration de Connector for EMC Documentum
+title: Configurer le connecteur pour EMC Documentum
 seo-title: Configuring Connector for EMC Documentum
 description: Découvrez comment configurer le connecteur pour EMC Documentum pour permettre la communication entre AEM Forms et EMC Documentum.
 seo-description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1024'
 ht-degree: 100%
 
 ---
 
-# Configuration de Connector for EMC Documentum {#configuring-connector-for-emc-documentum}
+# Configurer le connecteur pour EMC Documentum {#configuring-connector-for-emc-documentum}
 
 Le connecteur pour EMC Documentum permet la communication entre AEM forms et EMC Documentum. Pour plus d’informations, voir Connectors for ECM, dans le [Guide de référence des services](https://help.adobe.com/fr_FR/livecycle/11.0/Services/index.html).
 
