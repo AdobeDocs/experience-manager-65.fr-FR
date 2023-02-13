@@ -1,5 +1,5 @@
 ---
-title: Stratégie de sauvegarde pour les utilisateurs de Connector for EMC Documentum
+title: Stratégie de sauvegarde pour les utilisateurs et utilisatrices de Connector for EMC Documentum
 seo-title: Backup strategy for Connector for EMC Documentum users
 description: Vérifiez comment créer une stratégie de sauvegarde pour les utilisateurs de Connector for EMC Documentum.
 seo-description: Check how to create a backup strategy for Connector for EMC Documentum users.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
 exl-id: b759b936-5907-4311-a5cc-60f321476368
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# Stratégie de sauvegarde pour les utilisateurs de Connector for EMC Documentum {#backup-strategy-for-connector-for-emc-documentum-users}
+# Stratégie de sauvegarde pour les utilisateurs et utilisatrices de Connector for EMC Documentum {#backup-strategy-for-connector-for-emc-documentum-users}
 
 Si Connector for EMC Documentum est installé, votre stratégie de sauvegarde et de récupération doit suivre les instructions de ce chapitre, mais doit également proposer la sauvegarde (ou la récupération) de l’ordinateur sur lequel le système ECM est installé (reportez-vous à la documentation d’ECM Documentum).
 
