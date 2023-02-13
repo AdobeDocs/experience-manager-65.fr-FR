@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '680'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ L’application AEM Forms pour iOS configurée pour se synchroniser avec AEM For
 
 1. Cliquez sur **Enregistrer**.
 
-## Les brouillons de formulaires HTML5 envoyés par les utilisateurs de l’espace de travail ne sont pas visibles sur le portail {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## Les brouillons de formulaires HTML5 envoyés par les utilisateurs et utilisatrices de l’espace de travail ne sont pas visibles sur le portail. {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
 Pour les formulaires HTML5 activés dans l’application AEM Forms, avec le profil de rendu HTML **Enregistrer sous version préliminaire**, les versions préliminaires enregistrées ne sont pas visibles pour les utilisateurs de l’espace de travail. Pour afficher les versions préliminaires enregistrées des formulaires HTML5 envoyés par les utilisateurs de l’espace de travail sur le portail, procédez comme suit :
 
@@ -59,7 +59,7 @@ Pour les formulaires HTML5 activés dans l’application AEM Forms, avec le prof
 
 1. Cliquez sur **OK**.
 
-## Les formulaires HTML5 (non mis en cache) ne parviennent pas à se charger dans l’application AEM Forms {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
+## Les formulaires HTML5 (non mis en cache) ne parviennent pas à se charger dans l’application AEM Forms. {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
 Lorsque l’application AEM Forms est connectée à une ancienne version du serveur AEM Forms, le chargement des formulaires HTML5 non mis en cache échoue dans l’application AEM Forms.
 
@@ -74,13 +74,13 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
 1. Dans le champ **Ajouter une nouvelle ressource**, entrez : /etc.clientlibs/fd/xfaforms/I18N/en_US.js et cliquez sur **Ajouter**.
 1. Cliquez sur **Enregistrer**.
 
-## AEM Forms ne se synchronise pas sous Windows {#aem-forms-do-not-sync-on-windows}
+## AEM Forms ne se synchronise pas sous Windows. {#aem-forms-do-not-sync-on-windows}
 
 Dans l’application AEM Forms sous Windows, un formulaire n’est pas synchronisé au serveur connecté si le chemin d’accès du formulaire ou de l’une de ses ressources comporte au moins 256 caractères.
 
 Modifiez le chemin d’accès du formulaire et de ses ressources pour réduire le nombre de caractères à moins de 256.
 
-## Version de Gradle non prise en charge {#unsupported-version-of-gradle}
+## Version de Gradle non prise en charge. {#unsupported-version-of-gradle}
 
 **Message d’erreur :** le projet utilise une version de Gradle non prise en charge.
 
