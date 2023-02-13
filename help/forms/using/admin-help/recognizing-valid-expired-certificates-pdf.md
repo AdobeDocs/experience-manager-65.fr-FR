@@ -1,5 +1,5 @@
 ---
-title: Identification des certificats valables et des certificats expirés dans les documents PDF
+title: Identifier les certificats valables et les certificats expirés dans les documents PDF
 seo-title: Recognizing valid and expired certificates in PDF documents
 description: Découvrez comment identifier les certificats valides et les certificats arrivés à expiration dans les documents PDF.
 seo-description: Learn how to recognize valid and expired certificates in PDF documents.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4559218a-65ba-4577-ad26-7721e28971bc
 exl-id: dfe2823a-3a0d-4e45-8765-f618529e22dd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
 ht-degree: 100%
 
 ---
 
-# Identification des certificats valables et des certificats expirés dans les documents PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# Identifier les certificats valables et les certificats expirés dans les documents PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
 Lorsqu’un document PDF dont les droits d’utilisation sont appliqués par Reader Extensions est ouvert dans Adobe Reader, une barre d’état décrivant les droits d’utilisation spécifiquement activés dans ce document PDF s’affiche.
 
