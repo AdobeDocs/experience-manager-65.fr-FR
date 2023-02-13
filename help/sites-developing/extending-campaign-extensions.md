@@ -1,5 +1,5 @@
 ---
-title: Création d’extensions personnalisées
+title: Créer des extensions personnalisées
 seo-title: Creating Custom Extensions
 description: Vous pouvez appeler du code personnalisé dans Adobe Campaign à partir d’AEM ou depuis AEM vers Adobe Campaign
 seo-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
 
-# Création d’extensions personnalisées{#creating-custom-extensions}
+# Créer des extensions personnalisées{#creating-custom-extensions}
 
 Généralement, lorsque vous implémentez un projet, vous disposez d’un code personnalisé dans AEM et Adobe Campaign. Grâce à l’API existante, vous pouvez appeler le code personnalisé dans Adobe Campaign à partir d’AEM ou depuis AEM vers Adobe Campaign. Ce document explique comment procéder.
 
