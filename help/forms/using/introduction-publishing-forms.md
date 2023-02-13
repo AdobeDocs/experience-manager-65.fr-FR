@@ -11,7 +11,7 @@ discoiquuid: 9f1beb89-8eb1-4e37-a5e8-19752b21374a
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1041'
 ht-degree: 100%
 
@@ -48,7 +48,7 @@ AEM Forms fournit les composants de portail suivants prêts à l’emploi, regro
 
 ### Search &amp; Lister {#search-amp-lister}
 
-Le composant Search &amp; Lister (Recherche et énumérateur) permet de répertorier les formulaires du référentiel de formulaires sur la page de portail et propose des options de configuration pour répertorier les formulaires selon des critères spécifiés. Il permet également de spécifier des critères de recherche pour permettre aux utilisateurs du portail d’effectuer des recherches dans la liste des formulaires.
+Le composant Search &amp; Lister (Recherche et énumérateur) permet de répertorier les formulaires du référentiel de formulaires sur la page de portail et propose des options de configuration pour répertorier les formulaires selon des critères spécifiés. Il permet également de spécifier des critères de recherche pour permettre aux utilisateurs et utilisatrices du portail d’effectuer des recherches dans la liste des formulaires.
 
 ### Brouillons et soumissions {#drafts-amp-submissions}
 
