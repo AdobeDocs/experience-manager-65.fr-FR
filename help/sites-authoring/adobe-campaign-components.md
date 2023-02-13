@@ -12,7 +12,7 @@ discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2826'
 ht-degree: 100%
 
@@ -351,7 +351,7 @@ Ajoutez une description dans ce champ pour donner des informations supplémentai
 * **N’afficher que la valeur**
 Affiche uniquement la valeur, le cas échéant.
 
-#### Adobe Campaign  {#adobe-campaign}
+#### Adobe Campaign {#adobe-campaign}
 
 Vous pouvez configurer les éléments suivants :
 
