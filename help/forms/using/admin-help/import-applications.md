@@ -1,5 +1,5 @@
 ---
-title: Importation et gestion des applications
+title: Importer et gérer des applications
 seo-title: Import and manage applications
 description: Découvrez comment importer et gérer des applications.
 seo-description: Learn how to import and manage applications.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '820'
 ht-degree: 100%
 
 ---
 
-# Importation et gestion des applications{#import-and-manage-applications}
+# Importer et gérer des applications{#import-and-manage-applications}
 
 Dans AEM forms, une *application* est un conteneur destiné à stocker des actifs nécessaires à la mise en œuvre d’une solution AEM forms. Ces actifs peuvent être des conceptions de formulaires, des fragments de formulaires, des images, des processus, des fichiers DDX, des guides de formulaires, des pages HTML et des fichiers SWF. Durant la phase de développement d’un projet, les utilisateurs de Workbench peuvent déployer des applications directement à partir de l’affichage Applications dans Workbench. Une fois déployées, ces applications s’affichent dans Administration Console, dans l’onglet Applications de la page Gestion des applications.
 
