@@ -12,9 +12,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3466'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -394,7 +394,7 @@ Pour plus d’informations sur la manière d’appliquer des sauts de page et d�
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement :** la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure les champs du document d’enregistrement s’ils sont masqués :** Définissez la propriété pour exclure les champs masqués de [!UICONTROL Document d’enregistrement] lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs de la variable [!UICONTROL Document d’enregistrement].
+* **Exclure les champs du document d’enregistrement s’ils sont masqués :** activez cette propriété pour exclure les champs masqués du [!UICONTROL document d’enregistrement] lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant de les exclure du [!UICONTROL document d’enregistrement].
 
 ## Appliquer un saut de page dans un document d’enregistrement {#apply-page-breaks-in-dor}
 
