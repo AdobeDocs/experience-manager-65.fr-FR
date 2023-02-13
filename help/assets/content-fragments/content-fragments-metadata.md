@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
    * **Description**
    * **Balises**
       * Les [balises](/help/sites-authoring/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
-Par exemple, vous pouvez baliser les fragments pertinents en tant que &quot;lancement de Noël&quot; afin de ne les parcourir que sous forme de sous-ensemble ou de les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
+Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
       >[!NOTE]
       >
-      >**Balises** peut également être ajouté lorsque [création de contenu de variation](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) et quand [création de variations](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+      >Vous pouvez également ajouter des **balises** lors de la [création de contenu de variation](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) et de la [création de variations](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
 
-   * **Créé** (affichage uniquement)
+   * **Créé** (affichage uniquement).
    Par exemple :
    ![métadonnées](assets/cfm-metadata-02.png)
