@@ -1,5 +1,5 @@
 ---
-title: Création de formulaires adaptatifs accessibles
+title: Créer des formulaires adaptatifs accessibles
 seo-title: Creating accessible adaptive forms
 description: AEM Forms propose les outils nécessaires pour créer des formulaires adaptatifs accessibles et répondre aux normes d’accessibilité.
 seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
@@ -10,14 +10,14 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '2055'
 ht-degree: 100%
 
 ---
 
-# Création de formulaires adaptatifs accessibles{#creating-accessible-adaptive-forms}
+# Créer des formulaires adaptatifs accessibles{#creating-accessible-adaptive-forms}
 
 ## Présentation {#introduction}
 
