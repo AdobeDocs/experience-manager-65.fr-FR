@@ -12,9 +12,9 @@ discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1409'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,12 +42,12 @@ Vous devez déterminer quel compte d’utilisateur exécute la réplication. Lor
 Vous avez besoin d’une clé privée et d’un certificat public pour les instances d’auteur et de publication :
 
 * Les clés privées doivent être au format pkcs#12 ou JKS. 
-* Les certificats doivent être contenus au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
+* Les certificats doivent être au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
 * Les certificats peuvent être auto-signés ou signés par une autorité de certification reconnue.
 
 ### Format JKS {#jks-format}
 
-Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java`keytool` ](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
+Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
 
 Effectuez les étapes suivantes en utilisant l’utilitaire Java `keytool` pour créer la clé privée et les informations d’identification :
 
@@ -80,8 +80,8 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
 
    | Option | Création | Publication |
    |---|---|---|
-   | -alias | auteur  | publier |
-   | -approuvé | author.cer | publish.cer |
+   | -alias | auteur  | publish |
+   | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
 ### Format pkcs#12 {#pkcs-format}
@@ -120,7 +120,7 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    | Option | Création | Publication |
    |---|---|---|
    | -signkey | author.key | publish.key |
-   | -dans | author_request.csr | publish_request.csr |
+   | -in | author_request.csr | publish_request.csr |
    | -out | author.cer | publish.cer |
 
 1. Pour ajouter la clé privée et le certificat signé à un fichier pkcs#12, saisissez la commande suivante à l’aide des valeurs d’option du tableau ci-dessous :
@@ -133,8 +133,8 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
-   | -dans | author.cer | publish.cer |
-   | -name | auteur  | publier |
+   | -in | author.cer | publish.cer |
+   | -name | auteur  | publish |
 
 ## Installation de la clé privée et du TrustStore sur l’auteur {#install-the-private-key-and-truststore-on-author}
 
@@ -194,7 +194,7 @@ Pour exécuter la procédure suivante, vous devez être connecté en tant qu’a
 1. Pour ouvrir les propriétés de votre compte utilisateur, appuyez ou cliquez sur votre nom d’utilisateur. 
 1. Si le lien Créer le TrustStore apparaît dans la zone Paramètres de compte, cliquez dessus. Configurez un mot de passe, puis cliquez sur OK. 
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
-1. Cliquez sur Ajouter la clé privée à partir du fichier de magasin de clés.
+1. Cliquez sur Ajouter la clé privée à partir du fichier du magasin de clés.
 1. Cliquez sur Sélectionner le fichier du magasin de clés, puis recherchez et sélectionnez le fichier publish.keystore ou publish.pfx si vous utilisez pkcs#12, puis cliquez sur Ouvrir.
 1. Saisissez le nom de l’alias et le mot de passe du magasin de clés. Saisissez le nom de l’alias et le mot de passe de la clé privée, puis cliquez sur Envoyer.
 1. Fermez la boîte de dialogue Gestion du Keystore. 
@@ -215,12 +215,12 @@ Configurez les propriétés du service HTTP basé sur Apache Felix Jetty sur l�
 
 Le tableau suivant répertorie les propriétés OSGi que vous devez configurer si vous utilisez la console web. 
 
-| Nom de la propriété sur la console web | Nom de propriété OSGi | Valeur |
+| Nom de propriété dans la console web | Nom de propriété OSGi | Valeur |
 |---|---|---|
-| Activer HTTPS | org.apache.felix.https.enable | true |
-| Activer HTTPS pour utiliser le KeyStore Granite | org.apache.felix.https.use.granite.keystore | true |
+| Activer le HTTPS | org.apache.felix.https.enable | true |
+| Activer le HTTPS pour utiliser le KeyStore Granite | org.apache.felix.https.use.granite.keystore | true |
 | Port HTTPS | org.osgi.service.http.port.secure | 8443 (ou tout autre port souhaité) |
-| Certificat client | org.apache.felix.https.clientcertificate | &quot;Certificat client recherché&quot; |
+| Certificat client | org.apache.felix.https.clientcertificate | « Certificat client recherché » |
 
 ## Configuration de l’agent de réplication sur l’auteur {#configure-the-replication-agent-on-author}
 
@@ -243,7 +243,7 @@ Pour activer MSSL, configurez les propriétés sur l’onglet Transport en fonct
    <td>Aucune valeur</td>
   </tr>
   <tr>
-   <td>mot de passe ;</td>
+   <td>Mot de passe</td>
    <td>Aucune valeur</td>
   </tr>
   <tr>
