@@ -1,7 +1,7 @@
 ---
-title: Pages de destinations
+title: Pages d’entrée
 seo-title: Landing Pages
-description: Les pages d’entrée vous permettent d’importer, en un tournemain, une conception et du contenu dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement.
+description: Les pages d’entrée vous permettent d’importer, en un tournemain, une conception et du contenu dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur ou une développeuse web pourront être importés, en intégralité ou partiellement.
 seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
 uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
@@ -12,13 +12,13 @@ discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3335'
 ht-degree: 100%
 
 ---
 
-# Pages de destinations{#landing-pages}
+# Pages d’entrée{#landing-pages}
 
 Les pages d’entrée vous permettent d’importer, en un tournemain, une conception et du contenu dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement. Cette fonctionnalité se révèle particulièrement utile pour créer des pages d’entrée de marketing qui sont actives pendant une période limitée et qui doivent être créées rapidement.
 
