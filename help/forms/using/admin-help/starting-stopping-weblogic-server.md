@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '601'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Plusieurs procédures nécessitent de démarrer ou d’arrêter l’instance de 
 
 1. Démarrez la console dʼadministration de WebLogic Server en saisissant `https://[host name]:7001/console` dans la ligne d’adresse d’un navigateur web.
 1. Connectez-vous en saisissant le nom d’utilisateur et le mot de passe utilisés lors de la création de cette configuration WebLogic, puis cliquez sur Log In.
-1. Sous Change Center, cliquez sur Lock &amp; Edit.
+1. Sous Centre des modifications, cliquez sur Verrouiller et modifier.
 1. Sous Domain Structure, cliquez sur Environment > Servers.
 1. Cliquez sur AdminServer puis, dans le volet Setting for AdminServer, cliquez sur l’onglet Control.
 1. Vérifiez que AdminServer est sélectionné dans le tableau Server Status, puis cliquez sur Shutdown.
