@@ -3,7 +3,7 @@ title: Création d’expériences commerciales
 description: Création d’expériences commerciales
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ Les pages de catalogue de produits CIF sont des pages virtuelles rendues à la 
 
     >[!REMARQUE]
     >
-    > Si la catégorie et le produit sont sélectionnés, le produit est pris.
+    >Si la catégorie et le produit sont sélectionnés, le produit est pris.
 
 Cela crée un espace réservé pour un lien qui est remplacé par un lien réel lors du rendu de la page.
 
@@ -99,6 +99,6 @@ L’utilisation d’Omnisearch est un moyen facile pour les utilisateurs de trou
 
 Le résultat est regroupé par type.
 
-    >[!NOTE]
+    >[!REMARQUE]
     >
-    > La recherche en texte intégral dans Omnisearch ne prend pas en charge les fragments de contenu associés. Utilisez le SKU ou l’UID pour rechercher les fragments de contenu associés.
+    >La recherche en texte intégral dans Omnisearch ne prend pas en charge les fragments de contenu associés. Utilisez le SKU ou l’UID pour rechercher les fragments de contenu associés.
