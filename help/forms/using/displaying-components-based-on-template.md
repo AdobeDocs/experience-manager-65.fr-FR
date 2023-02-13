@@ -1,5 +1,5 @@
 ---
-title: Affichage des composants en fonction du modèle utilisé
+title: Afficher les composants en fonction du modèle utilisé
 seo-title: Displaying components based on the template used
 description: Lorsque vous créez un formulaire, découvrez comment vous pouvez activer les composants dans la barre latérale en fonction du modèle sélectionné.
 seo-description: When you create a form, learn how you can enable components in the sidebar based on the template selected.
@@ -12,7 +12,7 @@ discoiquuid: f658da57-0134-4458-9ef9-a99787b66742
 docset: aem65
 exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '352'
 ht-degree: 100%
 
