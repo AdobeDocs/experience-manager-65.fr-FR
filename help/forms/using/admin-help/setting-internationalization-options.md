@@ -1,5 +1,5 @@
 ---
-title: Options de définition de l’internationalisation
+title: Paramétrer les options d’internationalisation
 seo-title: Setting internationalization options
 description: Découvrez comment spécifier le paramètre régional utilisé pour le rendu des formulaires et spécifier le jeu de caractères utilisé pour encoder le flux de sortie.
 seo-description: Learn how to specify the locale used to render forms and how to specify the character set used to encode the output stream.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
 exl-id: 6cf82c2b-29f0-49d5-a138-99d7801d5a28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
 ht-degree: 100%
 
 ---
 
-# Options de définition de l’internationalisation{#setting-internationalization-options}
+# Paramétrer les options d’internationalisation{#setting-internationalization-options}
 
 ## Indication des paramètres régionaux utilisés pour effectuer le rendu du formulaire {#specify-the-locale-used-to-render-forms}
 
