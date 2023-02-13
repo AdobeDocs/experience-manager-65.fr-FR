@@ -1,5 +1,5 @@
 ---
-title: Création de dossiers pour classer les formulaires
+title: Créer des dossiers pour classer les formulaires
 seo-title: Create new folders to categorize forms
 description: Utilisez des dossiers pour organiser vos modèles de formulaire, vos fichiers PDF, vos ressources et vos formulaires adaptatifs.
 seo-description: Use folders to organize your form templates, PDFs, resources, and adaptive forms.
@@ -11,13 +11,13 @@ discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
 role: Admin
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '393'
 ht-degree: 100%
 
 ---
 
-# Création de dossiers pour classer les formulaires {#create-new-folders-to-categorize-forms}
+# Créer des dossiers pour classer les formulaires {#create-new-folders-to-categorize-forms}
 
 Vous pouvez mieux organiser vos ressources à l’aide de dossiers. Dans la mesure où AEM Forms prend en charge plusieurs types de ressources (modèles de formulaire, fichiers PDF, documents, ressources et formulaires adaptatifs) avec différentes métadonnées, vous pouvez utiliser des dossiers pour classer vos formulaires selon les critères de votre choix.
 
