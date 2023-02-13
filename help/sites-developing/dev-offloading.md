@@ -1,5 +1,5 @@
 ---
-title: Création et utilisation de tâches pour le déchargement
+title: Créer et utiliser des tâches pour le déchargement
 seo-title: Creating and Consuming Jobs for Offloading
 description: La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
 seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: 4e6f452d-0251-46f3-ba29-1bd85cda73a6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '392'
 ht-degree: 100%
 
 ---
 
-# Création et utilisation de tâches pour le déchargement{#creating-and-consuming-jobs-for-offloading}
+# Créer et utiliser des tâches pour le déchargement{#creating-and-consuming-jobs-for-offloading}
 
 La fonctionnalité Apache Sling Discovery fournit une API Java qui vous permet de créer des tâches JobManager et des services JobConsumer qui utilisent ces dernières.
 
