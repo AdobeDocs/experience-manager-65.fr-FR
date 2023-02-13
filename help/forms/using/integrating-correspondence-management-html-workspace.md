@@ -10,13 +10,13 @@ discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '632'
 ht-degree: 100%
 
 ---
 
-# Intégration d’applications tierces à l’espace de travail AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
+# Intégrer des applications tierces à l’espace de travail AEM Forms{#integrating-third-party-applications-in-aem-forms-workspace}
 
 L’espace de travail AEM Forms prend en charge la gestion d’affectation de tâches et d’activités d’exécution pour les formulaires et les documents. Ces formulaires et documents peuvent être des formulaires XDP, Flex®, ou des guides (déconseillé) qui ont été rendus aux formats XDP, PDF, HTML ou Flex.
 
