@@ -5,9 +5,9 @@ description: La sécurité des applications débute lors de la phase de dévelop
 seo-description: Application Security starts during the development phase
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
 source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '426'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ La sécurité des applications débute lors de la phase de développement. Adobe
 
 ## Utilisation de la session de requête {#use-request-session}
 
-En suivant le principe de moindre privilège, Adobe recommande que chaque accès au référentiel soit effectué en utilisant la session liée à la demande de l’utilisateur et au contrôle d’accès approprié.
+Selon le principe de moindre privilège, Adobe recommande d’effectuer chaque accès au référentiel en utilisant la session liée à la requête de l’utilisateur et au contrôle d’accès approprié.
 
 ## Protection contre les scripts de site à site (XSS) {#protect-against-cross-site-scripting-xss}
 
@@ -57,4 +57,4 @@ Avec les autorisations par défaut :
 
 ## Protection contre les attaques CRSF {#protect-against-cross-site-request-forgery-attacks}
 
-Pour plus d’informations sur les mécanismes de sécurité utilisés par AEM pour atténuer les attaques CSRF, voir la section [Filtre de référent Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de la liste de contrôle de sécurité et de la section [Documentation du framework de protection CSRF](/help/sites-developing/csrf-protection.md).
+Pour plus d’informations sur les mécanismes de sécurité mis en œuvre par AEM pour limiter les attaques CSRF, reportez-vous à la section [Filtre du référent Sling](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) de la liste de contrôle de sécurité et à la [documentation du framework de protection CSRF](/help/sites-developing/csrf-protection.md).
