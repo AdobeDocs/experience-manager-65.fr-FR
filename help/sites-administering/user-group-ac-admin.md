@@ -12,7 +12,7 @@ docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3120'
 ht-degree: 100%
 
@@ -247,7 +247,7 @@ Si vous cliquez sur un ID de groupe (le cas échéant), l’[Administration des 
 
 **Emprunteurs d’identité**
 
-La fonction Emprunter l’identité permet à un utilisateur de travailler sous le nom d’un autre.
+La fonction Emprunter l’identité permet à un utilisateur ou une utilisatrice de travailler sous le nom d’un(e) autre.
 
 Cela signifie qu’un compte utilisateur peut spécifier d’autres comptes (utilisateur ou groupe) compatibles avec son compte. En d’autres termes, si l’utilisateur B est autorisé à emprunter l’identité de l’utilisateur A, l’utilisateur B peut agir à l’aide des détails du compte utilisateur (dont l’ID, le nom et les droits d’accès) de l’utilisateur A.
 
