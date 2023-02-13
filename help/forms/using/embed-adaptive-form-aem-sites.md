@@ -1,5 +1,5 @@
 ---
-title: Incorporation d’un formulaire adaptatif ou d’une communication interactive dans une page des sites AEM
+title: Incorporer un formulaire adaptatif ou une communication interactive dans une page de sites AEM
 seo-title: Embed an adaptive form or interactive communication in AEM sites page
 description: Vous pouvez incorporer des formulaires adaptatifs dans des pages de sites AEM. Les utilisateurs peuvent remplir et envoyer des formulaires sans quitter les pages du site.
 seo-description: You can embed adaptive forms in AEM sites pages. Users can fill and submit forms without leaving the site pages.
@@ -11,7 +11,7 @@ discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
 ht-degree: 100%
 
