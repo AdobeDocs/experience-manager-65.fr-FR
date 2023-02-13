@@ -1,5 +1,5 @@
 ---
-title: Intégration de services à la console JMX
+title: Intégrer des services à la console JMX
 seo-title: Integrating Services with the JMX Console
 description: Exposez les attributs et les opérations de service pour permettre l’exécution de tâches d’administration en créant et en déployant des MBeans servant à gérer les services à l’aide de la console JMX
 seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
@@ -7,13 +7,13 @@ topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
 source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1659'
 ht-degree: 100%
 
 ---
 
-# Intégration de services à la console JMX{#integrating-services-with-the-jmx-console}
+# Intégrer des services à la console JMX{#integrating-services-with-the-jmx-console}
 
 Créez et déployez des MBeans pour gérer les services à l’aide de la console JMX. Exposez les attributs et les opérations de service pour permettre l’exécution de tâches d’administration.
 
