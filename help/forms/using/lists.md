@@ -10,8 +10,8 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '6906'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Dans une correspondance, les fragments de document sont des parties ou composant
 * **Texte** : Un actif de texte est un élément de contenu comprenant un ou plusieurs paragraphes de texte. Un paragraphe peut être statique ou dynamique.
 * **Liste** : La liste est un groupe de fragments du document, y compris le texte, les listes, les conditions et les images. L’ordre des éléments de la liste peut être fixe ou modifiable. Lors de la création d’une lettre, vous pouvez utiliser certains ou la totalité des éléments de liste pour reproduire un modèle d’éléments réutilisable.
 * **Condition** : les conditions vous permettent de définir le contenu à inclure lors de la création d’une correspondance, en fonction des données fournies. La condition est décrite en termes de variables de contrôle. Une variable de contrôle peut être soit un élément de dictionnaire de données, soit un espace réservé.
-* **Fragment de disposition** : Un fragment de présentation est une disposition pouvant être utilisée dans une ou plusieurs lettres. Un fragment de disposition est utilisé pour créer des motifs répétables, en particulier des tableaux dynamiques. La mise en page peut contenir des champs de formulaire types tels qu’« Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (fichiers XDP) sont créées dans Designer puis sont téléchargées vers AEM Forms.
+* **Fragment de disposition** : Un fragment de présentation est une disposition pouvant être utilisée dans une ou plusieurs lettres. Un fragment de disposition est utilisé pour créer des motifs répétables, en particulier des tableaux dynamiques. La disposition peut comporter des champs de formulaire types comme « Adresse » et « Numéro de référence ». Elle contient également des sous-formulaires vides indiquant les zones cible. Les dispositions (fichiers XDP) sont créées dans Designer puis sont téléchargées vers AEM Forms.
 
 ## Texte {#text}
 
@@ -51,7 +51,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
    * **Nom :** Saisissez un nom unique pour l’actif de texte. Aucun actif (texte, condition ou liste), quel que soit son état, ne peut porter le même nom qu’un autre actif. Dans le champ nom, vous ne pouvez entrer que les caractères, les chiffres et les tirets d’anglais. Le champ Nom est automatiquement renseigné en fonction du champ Titre. Les caractères spéciaux, les espaces, les chiffres et les caractères non anglais saisis dans le champ Titre sont remplacés par des tirets dans le champ Nom. Bien que la valeur du champ Titre soit automatiquement copiée dans Nom, vous pouvez la modifier.
    * **Description** : Entrez une description de l’actif.
    * **Dictionnaire de données** : Si vous le souhaitez, sélectionnez le dictionnaire de données auquel mapper l’actif. Cet attribut vous permet d’ajouter dans l’actif de texte des références à des éléments du dictionnaire de données.
-   * **Balises** : Eventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
+   * **Balises** : éventuellement, pour créer une balise personnalisée, entrez la valeur dans le champ de texte et appuyez sur Entrée. Vous pouvez afficher la balise sous le champ de texte des balises. Lorsque vous enregistrez ce texte, les balises nouvellement ajoutées sont également créées.
 
 1. Appuyez sur **Suivant**. Correspondence Management affiche la page Éditeur, où vous pouvez ajouter les paragraphes et les éléments de données de texte au texte.
 
@@ -102,7 +102,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
    * Symboles de devise tels que €,￥et £
    * Symboles mathématiques tels que ∑, √, ∂ et ^
-   * Symboles de ponctuation tels que ‟ et ”
+   * Symboles de ponctuation tels que « et »
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
@@ -120,7 +120,7 @@ La solution Correspondence Management prend en charge deux types d’éléments 
 
 1. Dans le volet de données, faites glisser des éléments du dictionnaire de données et des éléments d’espace réservé dans le texte.
 
-   To:
+   Pour :
 
    * Ajoutez au texte un élément du dictionnaire de données, sélectionnez un élément de données dans la liste, puis cliquez sur Insérer (![insertion](assets/insert.png)). Si vous sélectionnez Protégé, l’élément de dictionnaire de données est en lecture seule et il apparaît dans l’éditeur de lettre, mais pas dans l’interface utilisateur de création de correspondance ni dans le créateur de correspondance.
    * Ajoutez un élément d’espace réservé dans le texte, dans le panneau Éléments de données, appuyez sur Nouveau, saisissez les détails du nouvel élément de données, puis appuyez sur Créer pour ajouter le nouvel élément à la liste. Le nouvel espace réservé peut être inséré dans le texte de la même façon qu’un élément du dictionnaire de données. Pour modifier un espace réservé, sélectionnez l’espace réservé et appuyez sur Modifier.
@@ -259,7 +259,7 @@ Pour modifier l’ordre des actifs dans la liste, cliquez et maintenez sur les i
 1. Vous pouvez sélectionner les options suivantes pour indiquer comment la liste se comporte dans l’interface utilisateur CCR :
 
    * **Accès à la bibliothèque** : pour activer l’accès à la bibliothèque pour ajouter des éléments, appuyez sur Accès à la bibliothèque. Lorsque l’accès à la bibliothèque est activé, l’expert en assurance peut ajouter plus de contenu à la liste. Sinon, l’expert en assurance est limité au contenu que vous avez défini pour la liste.
-   * **Ordre de verrouillage** : pour verrouiller l’ordre des actifs dans la liste et empêcher l’utilisateur de modifier cet ordre, appuyez sur Verrouiller l’ordre. Si vous ne sélectionnez pas cette option, l’utilisateur pourra modifier l’ordre des éléments de la liste.
+   * **Ordre de verrouillage** : pour verrouiller l’ordre des actifs dans la liste et empêcher l’utilisateur de modifier cet ordre, appuyez sur Verrouiller l’ordre. Si vous ne sélectionnez pas cette option, l’utilisateur ou l’utilisatrice pourra modifier l’ordre des éléments de la liste.
 
    * **Ajouter des puces** : Utilisez cette option pour appliquer une puce ou un style de numérotation au module. Vous pouvez utiliser un style de liste prédéfini ou personnalisé. Vous pouvez également indiquer le texte à afficher avant et après chaque élément de liste.
    * **Saut de page** : sélectionnez cette option (![saut](assets/break.png)) pour insérer un saut de page entre les contenus de liste. Lorsque cette option n’est pas sélectionnée (![pas de saut](assets/nobreak.png)), si le contenu de la liste déborde sur la page suivante, la liste entière est décalée vers la page suivante au lieu de faire un saut dans la page entre la liste.
@@ -290,7 +290,7 @@ Pour modifier l’ordre des actifs dans la liste, cliquez et maintenez sur les i
 
 ## Conditions {#conditions}
 
-Les conditions vous permettent de définir le contenu à inclure lors de la création d’une correspondance/lettre, en fonction des données fournies. La condition est décrite en termes de variables de contrôle. Lorsque vous ajoutez une condition, vous pouvez choisir d’inclure un actif en fonction de la valeur de la variable de contrôle.
+Les conditions vous permettent de définir le contenu à inclure lors de la création d’une correspondance/lettre, en fonction des données fournies. La condition est décrite en termes de variables de contrôle. Lorsque vous ajoutez une condition, vous pouvez choisir d’inclure une ressource en fonction de la valeur de la variable de contrôle.
 
 Selon les options sélectionnées, soit uniquement la première expression vérifiée comme vraie, en fonction de la variable de condition actuelle est évaluée ou toute la condition. Lors du remplissage de la lettre dans Create Correspondence (CCR), les conditions se comportent comme des « boîtes blanches ». Si une condition entraîne une liste, tous les éléments obligatoires et présélectionnés de la liste se trouvent dans la sortie. Si l’un de ces éléments est lui-même une condition ou une liste, le contenu qui en résulte est également sorti, de haut en bas ou dans le sens de la profondeur sous forme de liste plate de contenus d’image et de texte. Les résultats de la condition peuvent être de n’importe quel type (texte, liste, condition ou image).
 
@@ -298,7 +298,9 @@ Selon les options sélectionnées, soit uniquement la première expression véri
 
 L’éditeur de conditions est fourni avec une interface utilisateur [Générateur d’expression](/help/forms/using/expression-builder.md), qui prend en charge la création d’expressions à l’aide à la fois de plusieurs espaces réservés et d’éléments du dictionnaire de données. Vous pouvez utiliser sur ces expressions des opérandes communs et des fonctions locales/globales. Chaque expression peut être associée à un certain contenu et il peut éventuellement y avoir une section par défaut si aucune des expressions n’est évaluée comme vraie. Toutes les expressions sont évaluées dans l’ordre dans lequel elles sont définies et la première expression renvoyant la valeur true est sélectionnée et son contenu associé est renvoyé par ce module conditionnel.
 
-Par exemple, si le texte des termes et conditions d’une lettre diffère selon l’Etat où réside le client, et si le dictionnaire de données contient un élément appelé « Etat », vous pourrez ajouter la condition de la manière suivante : • Etat = NY, select T&amp;C_NY text paragraph • Etat = NC, select T&amp;C_NC text paragraph
+Par exemple, si le texte des conditions générales d’une lettre diffère selon l’État où réside le client ou la cliente, et si le dictionnaire de données contient un élément appelé « state », vous pouvez ajouter la condition de la manière suivante : 
+• state = NY, select T&amp;C_NY text paragraph
+• state = NC, select T&amp;C_NC text paragraph
 
 L’Editeur de condition vous permet de spécifier une condition par défaut. Si la valeur des variables de contrôle ne correspond à aucune condition, alors le contenu associé à la condition par défaut est utilisé. Suivant l’exemple précédent, vous pourriez ajouter cette ligne de condition :
 • Par défaut, sélectionnez T&amp;C_Rest
@@ -320,7 +322,7 @@ L’Editeur de condition vous permet de spécifier une condition par défaut. Si
 1. Pour ajouter une ressource à la condition, sélectionnez celle de votre choix dans la page Sélection des ressources et cliquez sur **Terminé**. Les actifs sont ajoutés au volet Expression.
 1. Vous pouvez sélectionner les options suivantes pour spécifier le comportement de la condition au moment de l’exécution :
 
-   * **Désactiver l’évaluation de résultats multiples\Activer l’évaluation de résultats multiples** : Lorsque cette option est activée (s’affiche comme « Activer l’évaluation… »), toutes les conditions sont évaluées et le résultat est la somme de toutes les conditions réelles. Si cette option est désactivée (« Désactiver l’évaluation… »), alors seule la première condition qui s’avère vraie est évaluée et devient la sortie de la condition.
+   * **Désactiver l’évaluation de résultats multiples\Activer l’évaluation de résultats multiples** : lorsque cette option est activée (qu’elle apparaît comme « Activer l’évaluation… »), toutes les conditions sont évaluées et le résultat est la somme de toutes les conditions vraies (true). Si cette option est désactivée (« Désactiver l’évaluation… »), alors seule la première condition vérifiée est évaluée et devient la sortie de la condition.
    * **Saut de page** : sélectionnez cette option (![saut de page](assets/break.png)) pour insérer un saut de page entre les modules des conditions. Lorsque cette option nʼest pas sélectionnée (![pas de saut de page](assets/nobreak.png)) et quʼune condition déborde sur la page suivante, la condition entière est décalée vers la page suivante, au lieu de marquer un saut de page entre les modules.
 
 1. Pour modifier l’ordre des ressources dans la condition, cliquez sur les icônes de flèches (![glisser-déposer](assets/dragndrop.png)) sans relâcher le bouton de la souris, puis effectuez un glisser-déposer. Lorsque l’utilisateur ouvre un modèle de courrier dans l’interface utilisateur de création de correspondance, le contenu est assemblé dans l’ordre que vous avez défini ici.
@@ -451,7 +453,7 @@ Si la version définitive de la lettre créée dans l’interface utilisateur de
 
 #### Formats des dates dans Designer et Asset Configuration Manager {#date-formats-in-designer-and-asset-configuration-manager}
 
-Lors de la création d’une mise en page dans Designer, assurez-vous que les formats des champs de dates sont conformes aux formats de dates définis dans Data Display Formats dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md). Pour plus d’informations, voir Formater des valeurs de champ et utiliser des modèles dans l’Aide de Designer.
+Lors de la création d’une mise en page dans Designer, assurez-vous que les formats des champs de dates sont conformes aux formats de dates définis dans Data Display Formats dans [Propriétés de configuration de Correspondence Management](/help/forms/using/cm-configuration-properties.md). Pour plus d’informations, reportez-vous à « Formater des valeurs de champ et utiliser des modèles » dans l’aide de Designer.
 
 #### Capture des périodes {#capturing-date-ranges}
 
