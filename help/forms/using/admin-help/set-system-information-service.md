@@ -1,5 +1,5 @@
 ---
-title: Configuration du service d’informations système
+title: Configurer le service d’informations système
 seo-title: Set up the System information service
 description: Découvrez comment configurer le service d’informations système.
 seo-description: Learn how to set up the System information service.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 14de0652-717d-4c84-b7b4-b7b78f325baa
 exl-id: 734ed463-2441-49fc-bacb-deb40851af42
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
 ht-degree: 100%
 
 ---
 
-# Configuration du service d’informations système {#set-up-the-system-information-service}
+# Configurer le service d’informations système {#set-up-the-system-information-service}
 
 Le service d’informations système fournit des API REST pour récupérer les informations. Pour utiliser le service d’informations système, activez le point de fin REST à partir d’Administration Console. Pour activer le point de fin REST, effectuez les étapes suivantes :
 
