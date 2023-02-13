@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
 ht-degree: 100%
 
@@ -61,9 +61,9 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >Dans tous les cas, il est recommandé de lire les bonnes pratiques suivantes :
 >
 >* [Bonnes pratiques liées à MSM](/help/sites-administering/msm-best-practices.md) ; en particulier :
->
->   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
->   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+   >
+   >   * [Créer un site](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM et sites web multilingues](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Bonnes pratiques de traduction](/help/sites-administering/tc-bp.md)
 
