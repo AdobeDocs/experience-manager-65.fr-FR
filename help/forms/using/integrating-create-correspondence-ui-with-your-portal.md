@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '413'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ L’ordre des paramètres du tableau indique la préférence de paramètres util
   </tr>
   <tr>
    <td>Aléatoire</td> 
-   <td>Horodatage</td> 
+   <td>Date et heure</td> 
    <td>Pour résoudre les problèmes de mise en cache du navigateur.</td> 
   </tr>
  </tbody>
