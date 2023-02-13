@@ -1,5 +1,5 @@
 ---
-title: Configuration de LDAP avec AEM 6
+title: Configurer LDAP avec AEM 6
 seo-title: Configuring LDAP with AEM 6
 description: Découvrez comment configurer LDAP avec AEM.
 seo-description: Learn how to configure LDAP with AEM.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
 ht-degree: 100%
 
 ---
 
-# Configuration de LDAP avec AEM 6 {#configuring-ldap-with-aem}
+# Configurer LDAP avec AEM 6 {#configuring-ldap-with-aem}
 
 LDAP (**L** ightweight **D** irectory **A** ccess **P** rotocol) est un protocole utilisé pour accéder aux services d’annuaire centralisé. Cela permet de réduire l’effort de gestion des comptes utilisateur, car plusieurs applications peuvent accéder à ces comptes. L’un de ces serveurs LDAP est Active Directory. LDAP est souvent utilisé pour appliquer l’authentification unique, qui permet à un utilisateur d’accéder à plusieurs applications après s’être connecté une seule fois.
 
