@@ -13,9 +13,9 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2005'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -100,15 +100,15 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi certaines polices affichées dans le formulaire HTML sont-elles différentes de celles utilisées lors de la conception du formulaire ?
 
-   Réponse : HTML5 Forms n’autorise pas l’incorporation de polices (contrairement aux PDF forms dans lesquels les polices sont incorporées). Pour que la version par HTML d’un formulaire s’affiche comme prévu, assurez-vous que les polices sont disponibles dans le référentiel CRX (AEM Content Repository) de votre serveur AEM Forms et sur la machine sur laquelle AEM Designer est installé. Lorsque les polices ne sont pas disponibles dans le référentiel CRX de votre serveur AEM Forms ou à l’emplacement d’installation d’AEM Designer, le formulaire est rendu avec des polices de secours.
+   Réponse : les formulaires HTML5 n’intègrent pas de polices (contrairement aux formulaires PDF où les polices sont intégrées au formulaire). Pour que la version HTML d’un formulaire s’affiche comme prévu, assurez-vous que les polices sont disponibles dans le référentiel CRX (référentiel de contenu AEM) de votre serveur AEM Forms et sur la machine sur laquelle AEM Designer est installé. Lorsque les polices ne sont pas disponibles dans le référentiel CRX de votre serveur AEM Forms ou à l’emplacement d’installation d’AEM Designer, le formulaire s’affiche avec des polices de secours.
 
-1. Les attributs d’alignement vertical et horizontal sont-ils pris en charge dans les formulaires HTML ? 
+1. Les attributs d’alignement vertical et horizontal sont-ils pris en charge dans les formulaires HTML ?
 
-   Réponse : Oui, les attributs vAlign et hAlign sont pris en charge. L’attribut vAlign n’est pas pris en charge dans Internet Explorer et dans le champ multiligne.
+   Réponse : oui, les attributs vAlign et hAlign sont pris en charge. L’attribut vAlign n’est pas pris en charge dans Internet Explorer et dans le champ multiligne.
 
 1. Les formulaires HTML5 prennent-ils en charge les caractères de l’hébreu ?
 
-   Réponse : Les formulaires HTML5 prennent en charge les caractères hébreux dans tous les navigateurs, à l’exception de Microsoft Internet Explorer.
+   Réponse : les formulaires HTML5 prennent en charge les caractères hébreux dans tous les navigateurs, à l’exception de Microsoft Internet Explorer.
 
 1. Existe-t-il des limites de caractères dans les champs numériques des formulaires HTML5 ?
 
@@ -116,7 +116,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi les formulaires HTML sont-ils plus volumineux que les formulaires PDF ?
 
-   Réponse : De nombreuses structures et objets de données intermédiaires tels que les DOM de formulaire, les DOM de données et les DOM de mise en page sont nécessaires pour effectuer le rendu d’un XDP sur un formulaire de HTML.
+   Réponse : de nombreuses structures et objets de données intermédiaires tels que les DOM du formulaire, les DOM de données et les DOM de disposition sont requis pour effectuer le rendu d’un XDP sur un formulaire HTML.
 
    Pour les formulaires PDF, Adobe Acrobat dispose d’un moteur XTG intégré pour créer des structures de données intermédiaires, et des objets. Acrobat prend également en charge la présentation et les scripts.
 
@@ -143,13 +143,13 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Quel est l’ordre de lecture de l’info-bulle et de la légende pour les lecteurs d’écran ?
 
-   Réponse:
+   Réponse :
    * Lorsqu’il y a une légende et une info-bulle, seule la légende est lue. Si la légende n’est pas disponible, l’info-bulle est lue. Vous pouvez également spécifier la priorité de lecture dans un fichier XDP en utilisant le concepteur de formulaires
    * Lorsque vous survolez un élément, l’info-bulle s’affiche. Si aucune info-bulle n’est disponible, le texte vocal s’affiche. Si aucun texte vocal n’est disponible, le nom du champ s’affiche.
 
 1. Lorsque vous survolez un champ, une info-bulle s’affiche. Comment désactiver cette fonction ?
 
-   Réponse : Pour désactiver l’info-bulle au survol, sélectionnez none dans le panneau d’accessibilité de Designer.
+   Réponse : pour désactiver l’affichage d’info-bulles lorsque vous survolez un champ, sélectionnez Aucun dans le panneau de Designer.
 
 1. Dans Designer, un utilisateur peut configurer les propriétés personnalisées d’aspect des boutons radio et des cases à cocher. Lors du rendu des formulaires, les formulaires HTML5 prennent-ils en compte ces propriétés personnalisées d’aspect ?
 
@@ -157,7 +157,7 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Lorsqu’un formulaire HTML5 est ouvert dans un navigateur pris en charge, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Lorsque le même formulaire HTML5 est prévisualisé dans Forms Designer, les champs et la mise en page semblent correctement alignés et les sous-formulaires apparaissent dans la bonne position. Comment corriger le problème ?
 
-   Réponse : Lorsqu’un sous-formulaire est configuré pour enchaîner le contenu et que le sous-formulaire comporte un élément de bordure masqué, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires apparaissent recouverts. Pour résoudre le problème, vous pouvez supprimer ou commenter les éléments &lt;border> masqués du fichier XDP correspondant. Par exemple, l’élément &lt;border> suivant est marqué comme commentaire :
+   Réponse : lorsqu’un sous-formulaire peut enchaîner un contenu et qu’il présente un élément de bordure masqué, la bordure des champs placés de manière adjacente n’est pas alignée correctement ou les sous-formulaires se chevauchent. Pour résoudre le problème, vous pouvez supprimer ou commenter les éléments &lt;border> masqués du fichier XDP correspondant. Par exemple, l’élément &lt;border> suivant est marqué comme commentaire :
 
    ```xml
                <!--<border>
@@ -168,15 +168,15 @@ Questions fréquentes (FAQ) sur la mise en page, la prise en charge des scripts,
 
 1. Pourquoi les lecteurs d’écran ne fonctionnent-ils pas correctement avec l’objet de champ Date/Heure ?
 
-   Réponse : Les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure du champ pour que le lecteur d’écran puisse les lire. Utilisez une info-bulle ou du texte de lecteur d’écran pour indiquer à l’utilisateur de sélectionner manuellement la date et l’heure du champ.
+   Réponse : les lecteurs d’écran ne prennent pas en charge les champs Date/Heure. Cependant, vous pouvez saisir manuellement la date et l’heure du champ pour que le lecteur d’écran puisse les lire. Utilisez une info-bulle ou du texte de lecteur d’écran pour indiquer à l’utilisateur de sélectionner manuellement la date et l’heure du champ.
 
 1. Les formulaires HTML5 prennent-ils en charge les modèles d’affichage pour les champs flottants ?
 
    Réponse : les formulaires HTML5 ne prennent pas en charge les modèles d’affichage pour les champs flottants.
 
-1. Quel est le format du champ Date dans HTML5 Forms ?
+1. Quel est le format du champ Date dans les formulaires HTML5 ?
 
-Réponse : Le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ Date n’accepte pas la mise en forme tant que l’utilisateur n’a pas quitté le champ à l’aide de la touche de tabulation.
+Réponse : le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez une date dans un autre format, le champ Date n’accepte pas la mise en forme tant que l’utilisateur ou l’utilisatrice n’a pas quitté le champ à l’aide de la touche de tabulation.
 
 ### Script {#scripting}
 
@@ -194,13 +194,13 @@ Réponse : Le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez un
 
 1. Existe-t-il une convention de dénomination recommandée et des mots-clés réservés à éviter ?
 
-   Réponse:
-   * Dans AEM Forms Designer, il est recommandé de ne pas commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un trait de soulignement (_). Pour utiliser un trait de soulignement au début du nom, ajoutez un préfixe après le trait de soulignement,_&lt;prefix>&lt;objectname>.
+   Réponse :
+   * Dans AEM Forms Designer, nous recommandons de ne pas faire commencer le nom d’un objet (tel qu’un sous-formulaire ou un champ de texte) par un tiret bas (_). Pour utiliser le tiret bas au début du nom, ajoutez un préfixe juste après : _&lt;prefix>&lt;objectname>.
    * Toutes les API des formulaires HTML5 API sont des mots-clés réservés. Pour les API/fonctions personnalisées, utilisez un nom différent de celui des [API de formulaires HTML5](/help/forms/using/scripting-support.md).
 
 1. Les formulaires HTML5 prennent-ils en charge les champs flottants ?
 
-   Réponse : Oui, HTML5 Forms prend en charge les champs flottants. Pour permettre l’utilisation de champs flottants, ajoutez la propriété suivante au profil de rendu :
+   Réponse : oui, les formulaires HTML5 prennent en charge les champs flottants. Pour permettre l’utilisation de champs flottants, ajoutez la propriété suivante au profil de rendu :
 
    >[!NOTE]
    >
@@ -216,7 +216,7 @@ Réponse : Le champ Date accepte le format ISO AAAA-MM-JJ. Si vous spécifiez un
 
 1. Les formulaires HTML5 exécutent-ils le script d’initialisation et forment-ils des événements prêts plusieurs fois ?
 
-   Réponse : Oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois du côté client. Il est suggéré d’écrire des scripts tels que les événements initialize ou form:ready en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit effectuée en fonction de l’état des données et de manière idempotente (si les données sont identiques).
+   Réponse : oui, les scripts d’initialisation et les événements prêts pour le formulaire sont exécutés plusieurs fois, au moins une fois sur le serveur et une fois côté client. Il est suggéré d’écrire des scripts tels que les événements initialize ou form:ready en fonction d’une logique métier (données de formulaire ou de champ) afin que l’action soit effectuée en fonction de l’état des données et de manière idempotente (si les données sont identiques).
 
 ### Conception XDP {#designing-xdp}
 
