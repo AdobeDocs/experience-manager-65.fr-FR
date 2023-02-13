@@ -1,47 +1,47 @@
 ---
-title: Bonnes pratiques de surveillance [!DNL Assets] déploiement
-description: Bonnes pratiques pour surveiller l’environnement et les performances de votre [!DNL Adobe Experience Manager] une fois déployé.
+title: Bonnes pratiques de surveillance du déploiement d’ [!DNL Assets]
+description: Bonnes pratiques de surveillance de l’environnement et de la performance de votre déploiement d’ [!DNL Adobe Experience Manager]  après son déploiement.
 contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
-# Bonnes pratiques de surveillance [!DNL Adobe Experience Manager Assets] déploiement {#assets-monitoring-best-practices}
+# Bonnes pratiques de surveillance de déploiement d’[!DNL Adobe Experience Manager Assets] {#assets-monitoring-best-practices}
 
-Dans la [!DNL Experience Manager Assets] du point de vue de la surveillance, la surveillance doit inclure l’observation et la création de rapports sur les processus et technologies suivants :
+La surveillance dans [!DNL Experience Manager Assets] implique l’observation et le suivi des technologies et processus suivants :
 
 * Processeur du système
 * Utilisation de la mémoire système
 * E/S du disque système et temps d’attente
 * E/S du réseau
-* MBeans JMX pour l’utilisation du tas et les processus asynchrones, tels que les workflows
+* JMX MBeans pour l’utilisation du tas et des processus asynchrones, tels que les workflows
 * Contrôles de l’intégrité de la console OSGi
 
-En règle générale, [!DNL Experience Manager Assets] peuvent être surveillés de deux manières : par surveillance en direct et par surveillance à long terme.
+Typiquement, la surveillance d’[!DNL Experience Manager Assets] peut être effectuée de deux façons : en temps réel ou sur le long terme.
 
-## Surveillance en direct {#live-monitoring}
+## Surveillance en temps réel {#live-monitoring}
 
 La surveillance en temps réel est conseillée lors de la phase de test des performances de votre développement ou en cas de charges élevées afin de comprendre les caractéristiques de performance de votre environnement. Typiquement, différents outils peuvent être utilisés pour la surveillance en temps réel. Voici quelques recommandations :
 
-* [Visual VM](https://visualvm.github.io/): Visual VM vous permet d’afficher des informations détaillées sur la machine virtuelle Java, y compris l’utilisation du processeur et de la mémoire Java. En outre, il vous permet d’échantillonner et d’évaluer le code qui s’exécute sur un déploiement.
+* [Visual VM](https://visualvm.github.io/) : Visual VM vous permet d’afficher des informations détaillées sur la machine virtuelle Java, et notamment l’utilisation du processeur et de la mémoire Java. En outre, il vous permet de tester et d’évaluer le code exécuté sur un déploiement.
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html) : Top est une commande Linux ouvrant un tableau de bord qui affiche des statistiques d’utilisation, notamment sur le processeur, la mémoire et les E/S. Vous obtenez ainsi une vue d’ensemble de ce qui se produit sur une instance.
-* [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop peut être installé sur la plupart des systèmes Linux à l’aide de `yum install htop` ou `apt-get install htop`.
+* [Htop](https://hisham.hm/htop/) : Htop est un utilitaire qui permet de visualiser les processus de manière interactive. Il permet de disposer d’informations détaillées sur l’utilisation du processeur et de la mémoire en plus des informations fournies par Top. Htop peut être installé sur la plupart des systèmes Linux en utilisant `yum install htop` ou `apt-get install htop`.
 
-* Iotop : Iotop fournit un tableau de bord détaillé sur l’utilisation des disques en lecture/écriture. Il fournit des informations détaillées sur les processus qui utilisent les E/S sur les disques ainsi que le volume utilisé. Iotop peut être installé sur la plupart des systèmes Linux utilisant `yum install iotop` ou `apt-get install iotop`.
+* Iotop : Iotop fournit un tableau de bord détaillé sur l’utilisation des disques en lecture/écriture. Il fournit des informations détaillées sur les processus qui utilisent les E/S sur les disques ainsi que le volume utilisé. Iotop peut être installé sur la plupart des systèmes Linux en utilisant `yum install iotop` ou `apt-get install iotop`.
 
-* [Iftop](https://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation des ports ethernet et réseau. Iftop affiche des statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop peut être installé sur la plupart des systèmes Linux à l’aide de `yum install iftop` ou `apt-get install iftop`.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/) : Iftop affiche des informations détaillées sur l’utilisation des ports ethernet et réseau. Iftop affiche des statistiques par canal de communication sur les entités utilisant Ethernet et la quantité de bande passante utilisée. Iftop peut être installé sur la plupart des systèmes Linux en utilisant `yum install iftop` ou `apt-get install iftop`.
 
-* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à la production. Pour plus d’informations, voir [Comment utiliser l’enregistreur de vol Java pour diagnostiquer les problèmes d’exécution CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* [!DNL Experience Manager] `error.log` fichier : Vous pouvez examiner la variable [!DNL Experience Manager] `error.log` pour plus d’informations sur les erreurs enregistrées dans le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs à enquêter.
+* Java Flight Recorder (JFR) : JFR est un outil Oracle pouvant être utilisé gratuitement dans les environnements qui ne sont pas destinés à l’exploitation. Pour des informations détaillées, reportez-vous à la section relative à [l’utilisation de Java Flight Recorder pour diagnostiquer les problèmes d’exécution de CQ](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
+* Fichier `error.log` [!DNL Experience Manager] : vous pouvez consulter le fichier `error.log` [!DNL Experience Manager] pour obtenir plus de détails sur les erreurs enregistrées par le système. Utilisez la commande `tail -F quickstart/logs/error.log` pour identifier les erreurs à étudier.
 * [Console d’administration des workflow](/help/sites-administering/workflows.md) : utilisez la console d’administration des workflow pour suivre les workflow en retard ou bloqués.
 
-En règle générale, vous utilisez ces outils ensemble pour obtenir une idée complète des performances de votre [!DNL Experience Manager] déploiement.
+Ces outils vous permettent d’obtenir une vue globale des performances de votre déploiement [!DNL Experience Manager].
 
 >[!NOTE]
 >
@@ -49,17 +49,17 @@ En règle générale, vous utilisez ces outils ensemble pour obtenir une idée c
 
 ![chlimage_1-33](assets/chlimage_1-143.png)
 
-*Figure : Surveillance en direct à l’aide de l’outil Visual VM.*
+*Image : surveillance en direct à l’aide de l’outil Visual VM.*
 
 ![chlimage_1-32](assets/chlimage_1-142.png)
 
 ## Surveillance à long terme {#long-term-monitoring}
 
-Surveillance à long terme d’une [!DNL Experience Manager] le déploiement implique de surveiller pendant une plus longue durée les mêmes parties que celles qui sont surveillées en direct. Cela implique également de définir des alertes spécifiques à votre environnement.
+La surveillance à long terme d’une instance consiste à surveiller pendant une longue période les mêmes portions de l’instance [!DNL Experience Manager] que vous avez surveillées en temps réel. Cela implique également de définir des alertes spécifiques à votre environnement.
 
 ### Agrégation des journaux et création de rapports {#log-aggregation-and-reporting}
 
-Plusieurs outils sont disponibles pour agréger les journaux, par exemple Splunk(TM) et Elastic Search, Logstash et Kabana (ELK). Pour évaluer la disponibilité de votre [!DNL Experience Manager] , il est important pour vous de comprendre les événements de journal spécifiques à votre système et de créer des alertes en fonction de ces événements. Une bonne connaissance de vos pratiques de développement et d’exploitation peut vous aider à mieux comprendre comment optimiser votre processus d’agrégation des journaux pour générer des alertes critiques.
+Plusieurs outils sont disponibles pour l’agrégation des journaux, par exemple, Splunk(TM) et Elastic Search, Logstash et Kabana (ELK). Pour évaluer la disponibilité de votre déploiement [!DNL Experience Manager], il est important de comprendre les événements de journal spécifiques à votre système et de créer des alertes basées sur ces événements. Une bonne connaissance de votre développement et des pratiques opérationnelles peut vous aider à mieux comprendre comment adapter le processus d’agrégation des journaux pour générer des alertes critiques.
 
 ### Surveillance de l’environnement {#environment-monitoring}
 
@@ -76,17 +76,17 @@ Des outils externes sont nécessaires, par exemple NewRelic(TM) et AppDynamics(T
 
 #### Surveillance des applications internes {#internal-application-monitoring}
 
-La surveillance des applications internes comprend la surveillance des composants de l’application qui constituent la variable [!DNL Experience Manager] la pile, y compris la JVM, le référentiel de contenu et la surveillance par le biais du code d’application personnalisé créé sur la plateforme. En général, elle se fait via les Mbeans JMX qui peuvent être contrôlés directement par de nombreuses et solutions de contrôle populaires telles que SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) et bien d’autres encore. Pour les systèmes ne prenant pas en charge une connexion directe avec JMX, vous pouvez écrire des scripts shell pour extraire les données JMX et les présenter à ces systèmes dans un format intelligible pour eux.
+La surveillance des applications internes consiste à surveiller les composants d’application qui constituent la pile [!DNL Experience Manager], notamment JVM et le référentiel de contenu. Elle inclut également la surveillance via le code d’application personnalisé intégré à la plateforme. En général, elle se fait via les MBeans JMX qui peuvent être contrôlés directement par de nombreuses et solutions de contrôle populaires telles que SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) et bien d’autres encore. Pour les systèmes ne prenant pas en charge une connexion directe avec JMX, vous pouvez écrire des scripts shell pour extraire les données JMX et les présenter à ces systèmes dans un format intelligible pour eux.
 
-Par défaut, l’accès à distance aux Mbeans JMX n’est pas activé. Pour plus d’informations sur la surveillance via JMX, reportez-vous à la section [Surveillance et gestion à l’aide de la technologie JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
+Par défaut, l’accès à distance aux JMX MBeans n’est pas activé. Pour plus d’informations sur la surveillance via JMX, reportez-vous à la section [Surveillance et gestion à l’aide de la technologie JMX](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
 
 Souvent, il faut une valeur de référence pour que la surveillance des statistiques soit efficace. Pour créer une valeur de référence, observez le système dans des conditions de fonctionnement normales pendant une période de temps prédéfinie, puis identifiez la mesure normale.
 
 **Surveillance JVM**
 
-Comme pour toute pile d’applications Java, [!DNL Experience Manager] dépend des ressources qui lui sont fournies par le biais de la machine virtuelle Java sous-jacente. Vous pouvez suivre l’état de ces ressources via les MXBeans de plateforme présentés par JVM. Pour plus d’informations sur les MXBeans, reportez-vous à la section [Utilisation du serveur MBean de plateforme et des MXBeans de plateforme](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Comme toutes les piles d’application basées sur Java, [!DNL Experience Manager] dépend des ressources qui lui sont fournies via la machine virtuelle Java sous-jacente. Vous pouvez suivre l’état de ces ressources via les MXBeans de plateforme présentés par JVM. Pour plus d’informations sur les MXBeans, reportez-vous à la section [Utilisation du serveur MBean de plateforme et des MXBeans de plateforme](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
-Voici quelques paramètres de base que vous pouvez surveiller pour JVM :
+Voici quelques paramètres de référence que vous pouvez surveiller pour JVM :
 
 Mémoire
 
@@ -102,7 +102,7 @@ Mémoire
 
 Threads
 
-* MBean : `java.lang:type=Threading`
+* MBean : `java.lang:type=Threading`
 * URL : `/system/console/jmx/java.lang:type=Threading`
 * Instances : tous les serveurs
 * Seuil d’alarme : lorsque le nombre de threads est supérieur de 150 % à la valeur de référence.
@@ -110,26 +110,26 @@ Threads
 
 **Surveiller[!DNL Experience Manager]**
 
-[!DNL Experience Manager] présente également un ensemble de statistiques et d’opérations via JMX. Elles peuvent vous aider à évaluer l’état de santé du système et à identifier les éventuels problèmes avant qu’ils n’affectent les utilisateurs. Pour plus d’informations, voir [documentation](/help/sites-administering/jmx-console.md) on [!DNL Experience Manager] MBeans JMX.
+[!DNL Experience Manager] présente également un ensemble de statistiques et d’opérations via JMX. Elles peuvent vous aider à évaluer l’état de santé du système et à identifier les éventuels problèmes avant qu’ils n’affectent les utilisateurs. Pour plus d’informations, reportez-vous à la [documentation](/help/sites-administering/jmx-console.md) sur les JMX MBeans d’[!DNL Experience Manager].
 
-Voici quelques paramètres de référence que vous pouvez surveiller pour [!DNL Experience Manager]:
+Voici quelques paramètres de référence que vous pouvez surveiller pour [!DNL Experience Manager] :
 
 Agents de réplication
 
-* MBean : `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
+* MBean : `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * URL : `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * Instances : un auteur et toutes les instances de publication (pour les agents de purge)
-* Seuil d’alarme : lorsque `QueueBlocked``true` a la valeur ou lorsque la valeur de `QueueNumEntries` est supérieure de 150 % à la valeur de référence.
+* Seuil d’alarme : lorsque `QueueBlocked` a la valeur `true` ou lorsque la valeur de `QueueNumEntries` est supérieure de 150 % à la valeur de référence.
 
 * Définition de l’alarme : une file d’attente est bloquée dans le système, indiquant que la cible de réplication n’est pas active ou qu’elle est hors d’atteinte. Très souvent, les problèmes d’infrastructure ou de réseau provoquent la mise en attente d’un nombre excessif d’entrées, ce qui peut affecter les performances du système.
 
 >[!NOTE]
 >
->Pour les paramètres MBean et URL, remplacez `<AGENT_NAME>` avec le nom de l’agent de réplication que vous souhaitez surveiller.
+>Pour les paramètres d’URL et MBean, remplacez `<AGENT_NAME>` par le nom de l’agent de réplication que vous voulez surveiller.
 
 Décompte du nombre de sessions
 
-* MBean : `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
+* MBean : `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
 * URL : */system/console/jmx/org.apache.jackrabbit.oak:id=7,name=&quot;OakRepository Statistics&quot;,type*=&quot;RepositoryStats&quot;
 * Instances : tous les serveurs
 * Seuil d’alarme : lorsque la valeur des sessions ouvertes dépasse de 50 % la valeur de référence.
@@ -142,7 +142,7 @@ Les contrôles de l’intégrité disponibles dans le [tableau de bord des opér
 Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront vous être utiles :
 
 * Contrôles système
-   * MBean : `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+   * MBean : `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -150,7 +150,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * File d’attente de réplication
 
-   * MBean : `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+   * MBean : `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -158,7 +158,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Performances des réponses
 
-   * MBean : `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+   * MBean : `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * Instances : tous les serveurs
    * Durée de l’alarme : lorsque l’état n’est pas OK.
@@ -166,7 +166,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Performances des requêtes
 
-   * MBean : `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+   * MBean : `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL : `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
    * Instances : un auteur, tous les serveurs de publication
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -174,7 +174,7 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Lots actifs
 
-   * MBean : `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+   * MBean : `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
    * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
    * Instances : tous les serveurs
    * Seuil d’alarme : lorsque l’état n’est pas OK.
@@ -182,22 +182,22 @@ Voici plusieurs contrôles de l’intégrité prêts à l’emploi qui pourront 
 
 * Erreurs de journal
 
-   * MBean : `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+   * MBean : `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL : `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * Instances : tous les serveurs
    * Seuil d’alarme : lorsque l’état n’est pas OK.
    * Définition de l’alarme : les fichiers journaux comportent des erreurs. Vérifiez l’attribut de journal pour en savoir plus sur l’origine du problème.
 
-## Problèmes courants et résolutions  {#common-issues-and-resolutions}
+## Problèmes courants et solutions  {#common-issues-and-resolutions}
 
-Dans le processus de surveillance, si vous rencontrez des problèmes, voici quelques tâches de dépannage que vous pouvez effectuer pour résoudre des problèmes courants avec [!DNL Experience Manager] déploiements :
+Si vous rencontrez des problèmes lors du processus de surveillance, voici quelques solutions permettant de résoudre les problèmes courants des déploiement [!DNL Experience Manager] :
 
-* Si vous utilisez TarMK, exécutez souvent la compression Tar. Pour plus d’informations, voir [Maintenance du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Vérifier `OutOfMemoryError` journaux. Pour plus d’informations, voir [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr).
+* Si vous utilisez TarMK, exécutez souvent la compression Tar. Pour plus d’informations, consultez [Maintien du référentiel](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+* Vérifiez les journaux `OutOfMemoryError`. Pour plus d’informations, reportez-vous à [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr).
 
-* Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. Pour connaître les bonnes pratiques relatives à l’optimisation des performances des requêtes et de l’indexation, voir [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+* Consultez les journaux pour vérifier les références aux requêtes non indexées, ou aux parcours d’arborescence ou d’index. Ils signalent les requêtes non indexées ou indexées de façon inappropriée. Pour connaître les bonnes pratiques en matière d’optimisation des performances des requêtes et de l’indexation, reportez-vous à la section [Bonnes pratiques relatives aux requêtes et à l’indexation](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Utilisez la console d’administration des workflow pour vérifier que vos workflow se comportent comme prévu. Si possible, regroupez plusieurs workflow en un seul.
 * Revoyez la surveillance en temps réel et recherchez toute congestion supplémentaire ou recherchez les processus fortement consommateurs de certaines ressources spécifiques.
-* Examinez les points de sortie depuis le réseau client et les points d’entrée vers le [!DNL Experience Manager] réseau de déploiement, y compris le dispatcher. Ce sont souvent des zones de congestion. Pour plus d’informations, reportez-vous à la section [Considérations relatives aux ressources réseau](/help/assets/assets-network-considerations.md).
-* Augmentez la taille de votre [!DNL Experience Manager] serveur. Votre [!DNL Experience Manager] déploiement. Le service clientèle d’Adobe peut vous aider à déterminer si votre serveur est sous-dimensionné.
+* Vérifiez les points de sortie du réseau client et les points d’entrée au réseau de déploiement d’[!DNL Experience Manager], Dispatcher compris. Ce sont souvent des zones de congestion. Pour plus d’informations, reportez-vous à la section [Considérations relatives aux ressources réseau](/help/assets/assets-network-considerations.md).
+* Augmentez la taille de votre serveur [!DNL Experience Manager]. Il est possible que la capacité de votre déploiement d’[!DNL Experience Manager] ne soit pas adaptée. L’assistance clientèle d’Adobe peut vous aider à déterminer si votre serveur est sous-dimensionné.
 * Consultez les fichiers `access.log` et `error.log` pour trouver les entrées situées autour du moment où le problème est survenu. Recherchez des indices susceptibles d’indiquer la présence d’anomalies au niveau du code personnalisé. Ajoutez-les à la liste d’événements à surveiller.
