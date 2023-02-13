@@ -1,7 +1,7 @@
 ---
 title: Création de modèles de workflow
 seo-title: Creating Workflow Models
-description: Vous créez un modèle de workflow pour définir les étapes exécutées lorsqu’un utilisateur lance le workflow.
+description: Vous créez un modèle de workflow pour définir les étapes exécutées lorsqu’un utilisateur ou une utilisatrice lance le workflow.
 seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
 uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
 contentOwner: User
@@ -12,7 +12,7 @@ discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2464'
 ht-degree: 100%
 
