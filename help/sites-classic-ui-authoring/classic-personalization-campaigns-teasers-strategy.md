@@ -12,7 +12,7 @@ discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1200'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Lors de l’ajout d’un paragraphe de teaser à une page, vous devez définir l
 
 C’est pour le cas où plusieurs teasers sont disponibles pour être sélectionnés alors que leurs segments affectés sont tous résolus avec succès. La **stratégie** indique alors un critère supplémentaire utilisé pour sélectionner le teaser affiché :
 
-* **Score Clickstream** est basé sur les balises et les accès aux balises associés conservés dans le ClientContext du visiteur (indique la fréquence à laquelle un visiteur clique sur les pages contenant la balise respective). Les taux de fréquence d’accès aux balises définis sur la page de teaser sont comparés.
+* **Score Clickstream** est basé sur les balises et les accès aux balises associés conservés dans le ClientContext du visiteur (indique la fréquence à laquelle un visiteur clique sur les pages contenant la balise respective). Les taux de fréquence d’accès aux balises définis sur la page du teaser sont comparés.
 * **Aléatoire**, pour la sélection « aléatoire » ; emploie le facteur aléatoire généré pour une page. Celui-ci est visible dans le [contexte client](/help/sites-administering/client-context.md).
 * **Première** dans la liste des segments résolus. L’ordre est celui des teasers dans la page conteneur de campagne.
 
