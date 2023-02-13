@@ -1,5 +1,5 @@
 ---
-title: Création ou configuration d’un dossier de contrôle
+title: Créer ou configurer un dossier de contrôle
 seo-title: Create or Configure a watched folder
 description: Découvrez comment créer ou supprimer un dossier de contrôle, ou modifier les propriétés d’un dossier de contrôle existant.
 seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1820'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Avant de configurer un dossier de contrôle, vérifiez les éléments suivants 
 Effectuez les étapes suivantes pour créer un dossier de contrôle :
 
 1. Appuyez sur **Adobe Experience Manager** dans le coin supérieur gauche de l’écran.
-1. Appuyez sur **Outils** > **Formulaires** > **Configurer le dossier de contrôle.** Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. Appuyez sur **Outils** > **Formulaires** > **Configurer le dossier de contrôle.** Une liste de dossiers de contrôle déjà configurés s’affiche.
 1. Appuyez sur **Nouveau**. La liste des champs nécessaires à la création du dossier de contrôle s’affiche :
 
    * **Nom** : identifie le dossier de contrôle. Utilisez uniquement des caractères alphanumériques pour le nom.
@@ -98,7 +98,7 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
       * %R = nombre aléatoire (entre 0 et 9)
       * %P = ID de processus ou de travail
       * Par exemple, s’il est 20 h, que nous sommes le 17 juillet 2009 et que vous définissez C:/Test/WF0/failure/%Y/%M/%D/%H/, le dossier de résultat est alors C:/Test/WF0/failure/2009/07/17/20.
-      * Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. La valeur par défaut est result/%Y/%M/%D/, qui correspond au dossier result dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [A propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+      * Si le chemin d’accès n’est pas absolu, mais relatif, le dossier est créé dans le dossier de contrôle. La valeur par défaut est result/%Y/%M/%D/, qui correspond au dossier result dans le dossier de contrôle. Pour plus d’informations sur les modèles de fichiers, voir [À propos des modèles de fichier](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
    * **Nom du dossier Échecs :** spécifiez le dossier dans lequel les fichiers en situation d’échec sont enregistrés. Cet emplacement dépend toujours du dossier de contrôle. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result.
    * **Conserver le nom de dossier :** indiquez le dossier dans lequel les fichiers sont stockés après avoir été analysés et sélectionnés. Le chemin d’accès peut être absolu, relatif ou vide. Vous pouvez utiliser des modèles de fichiers, comme indiqué pour le dossier result. La valeur par défaut est preserve/%Y/%M/%D/.
    * **Taille du lot :** indiquez le nombre de fichiers ou de dossiers à sélectionner par analyse. Ce paramètre permet d’éviter une surcharge du système, car l’analyse simultanée d’un trop grand nombre de fichiers peut provoquer une panne. La valeur par défaut est 2.
@@ -119,6 +119,6 @@ Effectuez les étapes suivantes pour créer un dossier de contrôle :
 En plus de changer le nom du dossier de contrôle, vous pouvez modifier toutes les propriétés d’un dossier de contrôle existant. Effectuez les étapes suivantes pour modifier les propriétés d’un dossier de contrôle existant :
 
 1. Appuyez sur l’icône **Adobe Experience Manager** dans le coin supérieur gauche de l’écran.
-1. Appuyez sur **Outils** > **Formulaires** > **Configurer le dossier de contrôle.** Une liste de dossiers de contrôle déjà configurés s’affiche.
+1. Appuyez sur **Outils** > **Formulaires** > **Configurer le dossier de contrôle.** Une liste de dossiers de contrôle déjà configurés s’affiche.
 1. Sur le côté gauche de l’écran du dossier de contrôle, sélectionnez le dossier de contrôle et appuyez sur **Modifier.** La liste des champs nécessaire à la création du dossier de contrôle s’affiche. Les champs répertoriés dans l’onglet **Réglages de base** sont obligatoires. L’onglet Avancé contient davantage de champs. La plupart de ces champs contiennent une valeur par défaut. Vous pouvez modifier ces propriétés en fonction de vos besoins.
 1. Après avoir modifié les propriétés, appuyez sur **Mettre à jour**. Les propriétés modifiées sont enregistrées.
