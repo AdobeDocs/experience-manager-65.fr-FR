@@ -11,9 +11,9 @@ discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1035'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -115,7 +115,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
      <li>Copiez les conceptions de l’emplacement précédent vers le nouvel emplacement sous <code>/apps</code>.</li>
      <li>Convertissez les ressources statiques, CSS et JavaScript dans la conception en <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">bibliothèque cliente</a> avec <code>allowProxy = true</code>.</li>
      <li>Mettez à jour les références à l’emplacement précédent dans la propriété <code>cq:designPath</code> via <strong>AEM &gt; Administrateur de gestion des ressources numériques &gt; Page de partage des ressources &gt; Propriétés de la page &gt; Onglet avancé &gt; Champ de conception</strong>.</li>
-     <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie Bibliothèque cliente. Cela nécessite la mise à jour du code de mise en oeuvre de la page.</li>
+     <li>Mettez à jour les pages faisant référence à l’emplacement précédent pour utiliser la nouvelle catégorie de bibliothèque cliente. Cela nécessite la mise à jour du code d’implémentation de la page.</li>
      <li>Mettez à jour les règles de Dispatcher pour autoriser le service de bibliothèques clientes via la servlet proxy <code>/etc.clientlibs/</code>.</li>
     </ol> <p>Pour les conceptions qui ne sont pas gérées dans SCM et modifiées au moment de l’exécution via les boîtes de dialogue de conception, ne déplacez pas les conceptions activées par l’auteur en dehors de <code>/etc</code>.</p> </td>
   </tr>
@@ -167,7 +167,7 @@ Comme indiqué dans la page parent [Restructuration des référentiels dans AEM�
 | **Conseils de restructuration** | S/O |
 | **Remarques** | S/O |
 
-### Modèle de notification par e-mail de lien de partage {#link-share-e-mail-notification-template}
+### Modèle de notification par e-mail de partage de lien {#link-share-e-mail-notification-template}
 
 <table>
  <tbody>
