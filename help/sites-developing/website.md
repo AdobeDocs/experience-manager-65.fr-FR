@@ -12,7 +12,7 @@ discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4935'
 ht-degree: 100%
 
@@ -401,7 +401,7 @@ Dans cette section, vous allez créer plusieurs scripts qui génèrent, chacun, 
    ```
 
 1. Enregistrez les modifications.
-1. Dans votre navigateur, rechargez la page Products. Elle se présente comme suit :
+1. Dans votre navigateur, rechargez la page Produits. Elle se présente comme suit :
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -644,7 +644,7 @@ Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/m
    ```
 
 1. Enregistrez les modifications.
-1. Dans votre navigateur, rechargez la page Products. La navigation supérieure se présente désormais comme suit :
+1. Dans votre navigateur, rechargez la page Produits. La navigation supérieure se présente désormais comme suit :
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
@@ -1023,7 +1023,7 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. Enregistrez les modifications.
-1. Dans votre navigateur, rechargez la page Products. Le logo se présente comme suit, même si, pour le moment, il n’affiche que le lien sous-jacent :
+1. Dans votre navigateur, rechargez la page Produits. Le logo se présente comme suit, même si, pour le moment, il n’affiche que le lien sous-jacent :
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -1086,7 +1086,7 @@ Cette section vous explique comment inclure le composant Titre, qui est l’un d
    ```
 
 1. Enregistrez les modifications.
-1. Dans votre navigateur, rechargez la page Products. Le composant Titre se présente comme suit :
+1. Dans votre navigateur, rechargez la page Produits. Le composant Titre se présente comme suit :
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -1258,7 +1258,7 @@ Vous disposez de plusieurs options, aussi bien en mode d’édition qu’en mode
    * Connexion
    * Recherche
 
-1. Dans votre navigateur, rechargez la page Products. Elle se présente comme suit :
+1. Dans votre navigateur, rechargez la page Produits. Elle se présente comme suit :
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -1491,7 +1491,7 @@ Pour inclure une zone de saisie des termes de recherche dans la partie gauche du
    </div>
    ```
 
-1. Dans votre navigateur, rechargez la page Products. Le composant Recherche se présente comme suit :
+1. Dans votre navigateur, rechargez la page Produits. Le composant Recherche se présente comme suit :
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
