@@ -1,5 +1,5 @@
 ---
-title: Gestion des tâches dans une hiérarchie organisationnelle à l’aide de la vue du gestionnaire
+title: Gestion des tâches dans une hiérarchie organisationnelle à l’aide de la vue de gestionnaire
 seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: Accès et gestion par les managers et dirigeants des tâches relatives à leurs rapports directs et indirects dans l’onglet Tâches de l’espace de travail AEM Forms.
 seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
@@ -12,13 +12,13 @@ discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
 ht-degree: 100%
 
 ---
 
-# Gestion des tâches dans une hiérarchie organisationnelle à l’aide de la vue du gestionnaire{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+# Gestion des tâches dans une hiérarchie organisationnelle à l’aide de la vue de gestionnaire{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
 Dans l’espace de travail AEM Forms, les gestionnaires peuvent désormais accéder à toutes les tâches assignées aux personnes au sein de leur hiérarchie (rapports directs ou indirects) et y effectuer diverses opérations. Les tâches sont accessibles par l’intermédiaire de l’onglet Tâches de l’espace de travail AEM Forms. Les actions prises en charge pour les tâches de rapports directs sont :
 
