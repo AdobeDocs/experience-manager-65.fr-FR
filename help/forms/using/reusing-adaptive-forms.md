@@ -1,5 +1,5 @@
 ---
-title: Réutilisation de formulaires adaptatifs
+title: Réutiliser des formulaires adaptatifs
 seo-title: Reusing adaptive forms
 description: Vous pouvez réutiliser un formulaire adaptatif existant afin d’en créer de nouveaux.
 seo-description: You can reuse an existing adaptive form to create new adaptive forms.
@@ -10,13 +10,13 @@ discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptive Forms
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '538'
 ht-degree: 100%
 
 ---
 
-# Réutilisation de formulaires adaptatifs {#reusing-adaptive-forms}
+# Réutiliser des formulaires adaptatifs {#reusing-adaptive-forms}
 
 ## Présentation {#introduction}
 
