@@ -13,7 +13,7 @@ docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '728'
 ht-degree: 100%
 
