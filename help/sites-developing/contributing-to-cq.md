@@ -1,7 +1,7 @@
 ---
 title: Contribution à AEM
 seo-title: Contributing to AEM
-description: AEM est développé selon des méthodologies éprouvées couramment pratiquées dans d’importants projets open source
+description: AEM est développé selon des méthodologies éprouvées couramment pratiquées dans d’importants projets open source.
 seo-description: AEM is developed following proven methodologies commonly practiced in large open source projects
 uuid: ffef60ae-8a9a-4c4b-8cbd-3cd72792a42e
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2709'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ La façon dont le contenu doit être modélisé dans un référentiel de contenu
 
 L’approche REST est profondément ancrée dans tous nos projets. Cela signifie, entre autres, que nous évitons les interactions avec état et appliquons le principe que les URI sont des adresses définitives pour le contenu et les services.
 
-REST (REpresentational State Transfer) fait référence à l’architecture logicielle sur laquelle le World Wide Web est basé. Il décrit les éléments clés qui font fonctionner le web et fournit ainsi un ensemble de principes pour la conception d’un logiciel basé sur le web. Lors de la conception d’une API à utiliser sur le Web, il est donc logique de respecter ces &quot;bonnes pratiques&quot;.
+REST (REpresentational State Transfer) fait référence à l’architecture logicielle sur laquelle le World Wide Web est basé. Il décrit les éléments clés qui font fonctionner le web et fournit ainsi un ensemble de principes pour la conception d’un logiciel basé sur le web. Lors de la conception d’une API à utiliser sur le Web, il est donc logique de suivre ces « bonnes pratiques ».
 
 Dans la mesure où REST offre une approche que nous suivons dans nombreux de nos projets, vous devriez vous attacher à maîtriser les principes de la conception RESTful. La dissertation de [Roy Fielding](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm) est un excellent point de départ.
 
