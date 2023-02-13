@@ -1,5 +1,5 @@
 ---
-title: Minimisation des fichiers JavaScript
+title: Minimiser les fichiers JavaScript
 seo-title: Minification of the JavaScript files
 description: Instructions permettant de générer du code minimisé après des personnalisations de l’espace de travail AEM Forms pour optimiser les fichiers JS pour le Web.
 seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
@@ -11,13 +11,13 @@ topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 exl-id: d88c6831-8ae9-426d-acb5-2a7e066ad158
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '185'
 ht-degree: 100%
 
 ---
 
-# Minimisation des fichiers JavaScript {#minification-of-the-javascript-files}
+# Minimiser les fichiers JavaScript {#minification-of-the-javascript-files}
 
 La minimisation supprime du code source les caractères redondants, comme les espaces blancs, les nouvelles lignes et les commentaires. Cela améliore les performances en réduisant la taille du code. La minimisation n’a aucun impact sur la fonctionnalité et réduit la lisibilité du code.
 
@@ -54,7 +54,7 @@ Pour générer un code minimisé pour les modifications sémantiques, effectuez 
                service="service"/>
    ```
 
-   À
+   To
 
    ```xml
    <sharequeue
