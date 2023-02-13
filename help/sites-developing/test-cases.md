@@ -1,5 +1,5 @@
 ---
-title: Définition de cas de test
+title: Définir vos cas de test
 seo-title: Defining your Test Cases
 description: Vos cas de test doivent être basés sur des cas d’utilisation et le cahier des charges détaillé
 seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
@@ -12,13 +12,13 @@ discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
 ht-degree: 100%
 
 ---
 
-# Définition de cas de test{#defining-your-test-cases}
+# Définir vos cas de test{#defining-your-test-cases}
 
 Les cas de test doivent être basés sur les éléments suivants :
 
@@ -61,7 +61,7 @@ Vous devez traiter AEM comme s’il s’agissait de deux applications séparées
 
 * L’environnement *Auteur*
 Cette instance permet aux auteurs de saisir et de publier du contenu.
-Elle comporte un plus petit nombre prévisible d’utilisateurs, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
+Elle comporte un plus petit nombre prévisible d’utilisateurs et d’utilisatrices, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 
 * l’environnement de *publication*
 
