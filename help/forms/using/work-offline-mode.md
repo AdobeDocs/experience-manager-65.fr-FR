@@ -1,5 +1,5 @@
 ---
-title: Utilisation en mode hors ligne
+title: Utiliser en mode hors ligne
 seo-title: Working in the offline mode
 description: Utilisez l’application AEM Forms sur votre périphérique mobile en dehors de vos réseaux AEM Forms ou en mode hors ligne complet
 seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
@@ -10,13 +10,13 @@ topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
 ht-degree: 100%
 
 ---
 
-# Utilisation en mode hors ligne {#working-in-the-offline-mode}
+# Utiliser en mode hors ligne {#working-in-the-offline-mode}
 
 Le mode hors ligne de l’application d’AEM Forms permet de travailler en toute facilité, même lorsque l’application se déconnecte. Vous pouvez ouvrir, mettre à jour et même envoyer un formulaire sans avoir besoin d’une connexion réseau.
 
