@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques d’optimisation pour les moteurs de recherche et de gestion des URL
+title: Meilleures pratiques relatives à l’optimisation pour les moteurs de recherche et à la gestion des URL
 seo-title: SEO and URL Management Best Practices
 description: Découvrez les meilleures pratiques relatives à l’optimisation pour les moteurs de recherche, ainsi que des recommandations pour les suivre lors d’une mise en œuvre AEM.
 seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
@@ -8,13 +8,13 @@ content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3802'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Bonnes pratiques d’optimisation pour les moteurs de recherche et de gestion des URL{#seo-and-url-management-best-practices}
+# Meilleures pratiques relatives à l’optimisation pour les moteurs de recherche et à la gestion des URL{#seo-and-url-management-best-practices}
 
 L’optimisation pour les moteurs de recherche est devenue une préoccupation essentielle pour de nombreux spécialistes du marketing. En conséquence, les questions d’optimisation pour les moteurs de recherche doivent être traitées pour de nombreux projets AEM.
 
@@ -30,7 +30,7 @@ Il existe des meilleures pratiques généralement acceptées en ce qui concerne 
 
 Dans votre projet AEM, lors de l’évaluation des URL, posez-vous la question suivante :
 
-&quot;Si un utilisateur voyait cette URL et aucun du contenu de la page, pourrait-il décrire ce qu’était cette page ?&quot;
+« Si un utilisateur ou une utilisatrice voit cette URL, mais aucun des éléments de contenu de la page, peut-il ou elle décrire ce qu’est cette page ? »
 
 Si la réponse est oui, il est probable que l’URL fonctionne pour un moteur de recherche.
 
