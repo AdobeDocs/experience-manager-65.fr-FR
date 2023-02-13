@@ -8,7 +8,7 @@ discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '368'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ AEM Forms Document Security Java SDK fournit des API permettant à un compte d�
 
 Procédez comme suit pour protéger un document au nom d’un autre utilisateur et sans obtenir les autorisations nécessaires pour modifier le document :
 
-1. Création d’un jeu de stratégies. Par exemple, JeuStratégies1.
+1. Créez un jeu de stratégies Par exemple, JeuStratégies1.
 1. Créez une stratégie dans le jeu de stratégies nouvellement créé. Par exemple, Stratégie1 dans JeuStratégies1.
 1. Créez un utilisateur avec le rôle Utilisateur final de Rights Management. Par exemple, Utilisateur1. Fournissez les autorisations pour afficher les documents protégés à l’aide de Stratégie1 pour l’utilisateur nouvellement créé.
 1. Créez un rôle. Par exemple, Rôle1. Fournissez l’autorisation Service Invoke au nouveau rôle créé. Créez un utilisateur avec le rôle nouvellement créé. Par exemple, Utilisateur2.Vous pouvez utiliser Utilisateur2 ou un administrateur pour créer une connexion SDK et appeler le service protectDocument.
