@@ -1,5 +1,5 @@
 ---
-title: Purge d’enregistrements de la base de données de Job Manager.
+title: Purger les enregistrements de la base de données de Job Manager
 seo-title: Purge records from the Job Manager database
 description: Les données de processus de grande taille peuvent entraîner une baisse des performances d’AEM forms. Il est recommandé de purger ces données de processus lorsque des enregistrements ne sont plus nécessaires.
 seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
 ht-degree: 100%
 
 ---
 
-# Purge d’enregistrements de la base de données de Job Manager. {#purge-records-from-the-job-manager-database}
+# Purger les enregistrements de la base de données de Job Manager {#purge-records-from-the-job-manager-database}
 
 Les données générées lors de l’appel d’un processus de longue durée peuvent occuper un espace considérable, réduisant les performances d’AEM forms et monopolisant un espace disque superflu. Il est recommandé de purger ces données de processus lorsque des enregistrements ne sont plus nécessaires.
 
