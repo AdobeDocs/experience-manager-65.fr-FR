@@ -1,5 +1,5 @@
 ---
-title: Configuration des polices de remplacement
+title: Configuration des polices de réserve
 seo-title: Configuring fallback fonts
 description: Découvrez comment configurer des polices de remplacement.
 seo-description: Learn how to configure fallback fonts.
@@ -12,13 +12,13 @@ discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
 ht-degree: 100%
 
 ---
 
-# Configuration des polices de remplacement {#configuring-fallback-fonts}
+# Configuration des polices de réserve {#configuring-fallback-fonts}
 
 Cette section explique comment configurer manuellement le fichier FontManagerResources.properties pour associer les polices par défaut d’AEM forms à des polices de remplacement (ou de substitution), qui seront utilisées si les polices par défaut ne sont pas disponibles sur le serveur. Ce fichier de propriétés se trouve dans le fichier adobe-fontmanager.jar.
 
