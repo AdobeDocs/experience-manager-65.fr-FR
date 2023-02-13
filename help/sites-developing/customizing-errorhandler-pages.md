@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des pages affichées par le gestionnaire d’erreurs
+title: Personnaliser les pages affichées par le gestionnaire d’erreurs
 seo-title: Customizing Pages shown by the Error Handler
 description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP.
 seo-description: AEM comes with a standard error handler for handling HTTP errors
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
 ht-degree: 100%
 
 ---
 
-# Personnalisation des pages affichées par le gestionnaire d’erreurs{#customizing-pages-shown-by-the-error-handler}
+# Personnaliser les pages affichées par le gestionnaire d’erreurs{#customizing-pages-shown-by-the-error-handler}
 
 AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP, en affichant, par exemple :
 
