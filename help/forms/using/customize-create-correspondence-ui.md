@@ -12,9 +12,9 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1088'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -109,7 +109,7 @@ Suivez les étapes ci-dessous pour créer la structure de dossiers requise dans 
 
 Téléchargez votre fichier de logo personnalisé dans CRX. Les règles HTML standard régissent le rendu du logo. Les formats de fichiers image pris en charge le sont selon le navigateur utilisé pour accéder à AEM Forms. Tous les navigateurs prennent en charge les fichiers JPEG, GIF et PNG. Pour en savoir plus, reportez-vous à la documentation du navigateur sur les formats d’image pris en charge.
 
-* Les dimensions par défaut de l’image de logo sont de 48 px. &#42; 48 px. Assurez-vous que votre image est de cette taille ou d’une taille supérieure à 48 pixels. &#42; 48 px.
+* Les dimensions par défaut de l’image de logo sont 48 px &#42; 48 px. Assurez-vous que l’image est de cette taille ou d’une taille supérieure à 48 px &#42; 48 px.
 * Si la hauteur de l’image de logo est de plus de 50 px, l’interface utilisateur de création de correspondance réduit l’image à une hauteur maximale de 50 px car il s’agit de la hauteur de l’en-tête. Lors de la réduction de l’image, l’interface utilisateur de création de correspondance conserve les proportions de votre image.
 * L’interface utilisateur de création de correspondance n’agrandit pas votre image si elle est petite. Vous devez donc vous assurer que vous utilisez une image de logo d’au moins 48 px de haut et d’une largeur suffisante pour la clarté.
 
