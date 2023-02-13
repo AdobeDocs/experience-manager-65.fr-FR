@@ -1,5 +1,5 @@
 ---
-title: Utilisation du Service Assembler
+title: Utiliser le Service Assembler
 seo-title: Using Assembler Service
 description: Le service Assembler vous permet de combiner, d’organiser et d’étendre vos documents aux formats PDF et XDP. Grâce à lui, vous pouvez également obtenir des informations sur les documents PDF.
 seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
@@ -11,19 +11,19 @@ discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2121'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Utilisation du Service Assembler{#using-assembler-service}
+# Utiliser le Service Assembler{#using-assembler-service}
 
 Le service Assembler vous permet de combiner, d’organiser et d’étendre vos documents aux formats PDF et XDP. Grâce à lui, vous pouvez également obtenir des informations sur les documents PDF. Chacun des travaux envoyés au service Assembler inclut un document DDX (Document Description XML), ainsi qu’un ensemble de documents source et de ressources externes (chaînes et graphiques). Pour plus d’informations sur le service Assembler, voir [Présentation du Service Assembler](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 Vous pouvez utiliser le service d’assemblage pour les opérations suivantes :
 
-## Assemblage de documents PDF {#assemble-pdf-documents}
+## Assembler des documents PDF {#assemble-pdf-documents}
 
 Vous pouvez utiliser le service Assembler pour assembler deux documents PDF ou plus en un seul document PDF ou portfolio PDF. Vous pouvez également appliquer différentes fonctions au document PDF, afin de faciliter la navigation ou d’optimiser la sécurité. Vous pouvez assembler des documents PDF de différentes manières, dont voici quelques exemples :
 
@@ -33,7 +33,7 @@ L’illustration suivante présente la fusion de trois documents source en un se
 
 ![Assemblage d’un document PDF unique à de documents PDF multiples](assets/as_document_assembly.png)
 
-Assemblage d’un document PDF unique à de documents PDF multiples
+Assembler un document PDF unique à partir de documents PDF multiples
 
 L’exemple suivant représente un document DDX utilisé pour assembler ce document. Il spécifie les noms des documents source à utiliser pour produire le document cible, ainsi que le nom de ce document cible :
 
@@ -53,7 +53,7 @@ les caractéristiques suivants :
 * D’autres caractéristiques adoptées à partir du document de base (Doc1), telles que les métadonnées, les étiquettes de page et la taille des pages ;
 * Le document produit peut inclure une table des matières générée à partir des signets présents dans les documents source (facultatif).
 
-### Création d’un portfolio PDF {#create-a-pdf-portfolio}
+### Créer un portfolio PDF {#create-a-pdf-portfolio}
 
 Le service Assembler peut créer des portfolios PDF qui contiennent une collection des documents et une interface d’utilisateur indépendante. Cette interface est appelée Interface de portfolio PDF ou Navigateur de portfolio PDF (navigateur). Les portfolios PDF élargissent les capacités des packages PDF en ajoutant un navigateur, des dossiers et des pages d’accueil. L’interface améliore l’expérience de l’utilisateur, qui peut profiter des chaînes de texte localisées, des schémas de couleurs et des ressources graphiques personnalisées. Le portfolio PDF peut également contenir des dossiers pour organiser les fichiers du portfolio.
 
@@ -74,7 +74,7 @@ Lorsque le service Assembler interprète le document DDX suivant, il regroupe un
 </DDX>
 ```
 
-### Assemblage de documents chiffrés {#assemble-encrypted-documents}
+### Assembler des documents chiffrés {#assemble-encrypted-documents}
 
 Lors de l’assemblage d’un document, vous pouvez également chiffrer le document PDF avec un mot de passe. Après le chiffrement d’un document PDF avec un mot de passe, l’utilisateur doit spécifier un mot de passe pour l’afficher dans Adobe Reader ou Acrobat. Pour chiffrer un document PDF avec un mot de passe, le document DDX doit contenir les valeurs d’élément de chiffrement requises.
 
@@ -82,7 +82,7 @@ Il n’est pas nécessaire que le service Encryption fasse partie de votre insta
 
 Si un ou plusieurs des documents d’entrée sont chiffrés, vous devez fournir un mot de passe pour ouvrir ce ou ces documents dans le DDX.
 
-### Assemblage de documents à l’aide de la numérotation Bates {#assemble-documents-using-bates-numbering}
+### Assembler des documents à l’aide de la numérotation Bates {#assemble-documents-using-bates-numbering}
 
 Lors de l’assemblage d’un document, vous pouvez utiliser la numérotation Bates pour affecter un identifiant de page unique à chaque page. Avec la numérotation Bates, à chaque page du document (ou de l’ensemble de documents) correspond un numéro qui identifie la page de manière unique. Par exemple, des documents d’entreprise contenant une nomenclature et liés à la production d’un assemblage peuvent contenir un identifiant. Un numéro Bates contient une valeur numérique incrémentée séquentiellement et optionnellement un préfixe et un suffixe. L’ensemble préfixe + valeur numérique + suffixe est appelé modèle Bates.
 
@@ -90,9 +90,9 @@ L’illustration suivante présente un document PDF contenant un identifiant uni
 
 ![Un document PDF qui contient un identifiant unique qui se trouve dans l’en-tête du document](do-not-localize/as_batesnumber.png)
 
-Un document PDF qui contient un identifiant unique qui se trouve dans l’en-tête du document
+Un document PDF qui contient un identifiant unique qui se trouve dans l’en-tête du document.
 
-### Aplatissement et assemblage de documents {#flatten-and-assemble-documents}
+### Aplatir et assembler des documents {#flatten-and-assemble-documents}
 
 Vous pouvez utiliser le service Assembler pour transformer un document PDF interactif (par exemple, un formulaire) en document PDF non interactif. Un document PDF interactif permet aux utilisateurs de saisir ou de modifier des données contenues dans les champs de ce document. Le processus de transformation d’un document PDF interactif à un document PDF non interactif est appelé aplatissement. Lors de l’aplatissement, les champs des formulaires gardent leur apparence graphique mais ne sont plus interactifs. S’assurer que les données ne peuvent être modifiées est l’une des raisons de l’aplatissement d’un document PDF. De plus, les scripts associés aux champs ne fonctionnent plus.
 
@@ -114,7 +114,7 @@ L’illustration suivante présente la fusion de trois documents XDP source en u
 
 ![Assemblage d’un document XDP unique de plusieurs documents XDP](assets/as_assembler_xdpassembly.png)
 
-Assemblage d’un document XDP unique de plusieurs documents XDP
+Assembler un document XDP unique à partir de plusieurs documents XDP
 
 Voici le document DDX qui produit le résultat illustré ci-dessus.
 
@@ -260,7 +260,7 @@ Vous pouvez utiliser le service Assembler pour convertir un document XDP en docu
 </DDX>
 ```
 
-## Désassemblage de documents PDF {#disassemble-pdf-documents}
+## Désassembler des documents PDF {#disassemble-pdf-documents}
 
 Vous pouvez utiliser le service Assembler pour désassembler un document PDF. Ce service peut extraire des pages du document source ou diviser un document source en fonction de signets. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble d’articles.
 
@@ -280,9 +280,9 @@ L’exemple qui suit représente un document DDX utilisé pour désassembler ce 
 </PDF>
 ```
 
-### Division d’un document source en fonction de signets {#divide-a-source-document-based-on-bookmarks}
+### Diviser un document source en fonction de signets {#divide-a-source-document-based-on-bookmarks}
 
-Dans l’illustration suivante, DocA est divisé en plusieurs documents cible. Le signet de premier niveau d’une page identifie le début d’un nouveau document généré.
+Sur l’illustration suivante, DocA est divisé en plusieurs documents générés. Le premier signet de niveau 1 d’une page identifie le début d’un nouveau document généré.
 
 ![La division d’un document source en fonction de signets en plusieurs documents](assets/as_intro_pdfsfrombookmarks.png)
 
