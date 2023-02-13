@@ -1,5 +1,5 @@
 ---
-title: Modification des paramètres de conversion de l’exportation au format PDF
+title: Modifier les paramètres de conversion de l’exportation au format PDF
 seo-title: Modifying the PDF Export conversion settings
 description: Découvrez comment modifier les paramètres de conversion de l’exportation au format PDF.
 seo-description: Learn how to modify the PDF Export conversion settings.
@@ -12,13 +12,13 @@ discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 feature: PDF Generator
 exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
 ht-degree: 100%
 
 ---
 
-# Modification des paramètres de conversion de l’exportation au format PDF {#modifying-the-pdf-export-conversion-settings}
+# Modifier les paramètres de conversion de l’exportation au format PDF {#modifying-the-pdf-export-conversion-settings}
 
 Utilisez la procédure décrite ci-dessous pour modifier les paramètres de conversion en cas d’exportation d’un fichier PDF, EPS, DOC, TXT, RTF, XML ou HTML. Par défaut, le fichier PDF utilise les paramètres Enregistrer sous configurés dans Adobe Acrobat Professional ou Acrobat Standard. Par exemple, avec les paramètres Enregistrer sous configurés par défaut dans Acrobat pour la conversion d’un fichier PDF au format EPS, une seule page du fichier PDF est convertie au format EPS.
 
