@@ -1,5 +1,5 @@
 ---
-title: Utilisation des xtypes (IU classique)
+title: Utiliser les xtypes (IU classique)
 seo-title: Using xtypes (Classic UI)
 description: Découvrez tous les xtypes disponibles avec AEM.
 seo-description: Learn about all the xtypes that are available with AEM
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6400'
 ht-degree: 100%
 
 ---
 
-# Utilisation des xtypes (IU classique){#using-xtypes-classic-ui}
+# Utiliser les xtypes (IU classique){#using-xtypes-classic-ui}
 
 Cette page décrit tous les xtypes disponibles avec Adobe Experience Manager (AEM).
 
