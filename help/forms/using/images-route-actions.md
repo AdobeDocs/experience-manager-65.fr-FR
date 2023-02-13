@@ -1,5 +1,5 @@
 ---
-title: Personnalisation des images utilisées dans les actions d’itinéraire
+title: Personnaliser les images utilisées dans les actions d’itinéraire
 seo-title: Customize images used in route actions
 description: Comment personnaliser les images utilisées dans les actions d’itinéraire dans l’espace de travail LiveCycle AEM Forms.
 seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
@@ -10,13 +10,13 @@ topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
 ht-degree: 100%
 
 ---
 
-# Personnalisation des images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
+# Personnaliser les images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
 
 Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez les étapes décrites dans [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), puis la procédure décrite dans cet article.
 
