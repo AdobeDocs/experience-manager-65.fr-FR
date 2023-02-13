@@ -1,5 +1,5 @@
 ---
-title: Création de mappages de formulaires personnalisés
+title: Créer des mappages de formulaires personnalisés
 seo-title: Creating Custom Form Mappings
 description: Lorsque vous créez un tableau personnalisé dans Adobe Campaign, vous pouvez créer un formulaire dans AEM qui renvoie vers ce tableau.
 seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
@@ -11,28 +11,28 @@ content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '530'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Création de mappages de formulaires personnalisés{#creating-custom-form-mappings}
+# Créer des mappages de formulaires personnalisés{#creating-custom-form-mappings}
 
 Lorsque vous créez un tableau personnalisé dans Adobe Campaign, vous pouvez créer un formulaire dans AEM qui renvoie vers ce tableau.
 
 Ce document vous explique comment créer des mappages de formulaire personnalisés. Dès que vous aurez accompli les étapes de ce document, vous proposerez à vos utilisateurs une page sur laquelle ils pourront s’inscrire pour un événement à venir. Vous suivrez ensuite ces utilisateurs via Adobe Campaign.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Les éléments suivants doivent être installés :
 
 * Adobe Experience Manager
-* Adobe Campaign Classic
+* Adobe Campaign Classic
 
-Voir [Intégration d’AEM à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md) pour plus d’informations.
+Pour plus d’informations, consultez [Intégration d’AEM à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
-## Création de mappages de formulaires personnalisés {#creating-custom-form-mappings-2}
+## Créer des mappages de formulaires personnalisés {#creating-custom-form-mappings-2}
 
 Pour créer des mappages de formulaire personnalisés, vous devez suivre ces étapes générales, qui sont décrites en détail dans les sections suivantes :
 
@@ -45,7 +45,7 @@ Pour créer des mappages de formulaire personnalisés, vous devez suivre ces ét
 
 ### Création du tableau personnalisé dans Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous utilisons la définition suivante pour créer un tableau d’événements :
+Commencez par créer un tableau personnalisé dans Adobe Campaign. Dans cet exemple, nous allons utiliser la définition suivante pour créer un tableau d’événements :
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -64,7 +64,7 @@ Dans Adobe Campaign, appuyez/cliquez sur **Ajouter** pour créer une extension 
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Maintenant, utilisez les champs de la **event** pour étendre le tableau **seed** table :
+Utilisez à présent les champs du tableau d’**événement** pour étendre le tableau **source** :
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -111,7 +111,7 @@ Dans CRXDE Lite, accédez au nœud **jcr:content** (de la page) et définissez 
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-Dans la configuration du formulaire, veillez à cocher la case Create if not existing (Créer s’il n’existe pas).
+Dans la configuration du formulaire, veillez à cocher la case « Créer s’il n’existe pas ».
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
