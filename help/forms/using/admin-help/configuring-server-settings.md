@@ -1,5 +1,5 @@
 ---
-title: Configuration des paramètres du serveur
+title: Configurer les paramètres du serveur
 seo-title: Configuring Server Settings
 description: La page Paramètres du serveur fournit l’accès aux paramètres de messagerie électronique, de notification de tâche et de notification de l’administrateur.
 seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2625'
 ht-degree: 100%
 
 ---
 
-# Configuration des paramètres du serveur {#configuring-server-settings}
+# Configurer les paramètres du serveur {#configuring-server-settings}
 
 La page Paramètres du serveur donne accès aux différents paramètres du processus des formulaires :
 
@@ -83,7 +83,7 @@ Pour générer des notifications électroniques pour un groupe, spécifiez une a
 
 >[!NOTE]
 >
->Flex Workspace est obsolète pour la version d’AEM Forms.
+>L’espace de travail Flex est obsolète pour la version d’AEM Forms.
 
 ### Configuration des rappels pour les utilisateurs ou les groupes {#configure-reminders-for-users-or-groups}
 
