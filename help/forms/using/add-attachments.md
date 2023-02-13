@@ -1,5 +1,5 @@
 ---
-title: Ajout de pièces jointes
+title: Ajouter des pièces jointes
 seo-title: Adding attachments
 description: Ajouter des photos et saisir des notes à main levée dans votre tâche dans l’application AEM Forms
 seo-description: Add photographs and scribble notes as annotations to your task in the AEM Forms app
@@ -11,13 +11,13 @@ discoiquuid: d5976ed2-4482-495c-bf77-6d192379cfef
 docset: aem65
 exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '562'
 ht-degree: 100%
 
 ---
 
-# Ajout de pièces jointes{#adding-attachments}
+# Ajouter des pièces jointes{#adding-attachments}
 
 ## Ajouter des pièces jointes dans les formulaires synchronisés avec le serveur AEM Forms Workflow (AEM Forms sur JEE) {#adding-annotations}
 
