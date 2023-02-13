@@ -11,8 +11,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '7265'
 ht-degree: 100%
 
@@ -214,7 +214,7 @@ Les options de Format de page par défaut permettent de définir le format de pa
 
 **Unités :** unités de mesure à utiliser pour les paramètres de largeur et de hauteur
 
-## Options relatives aux images {#images-options}
+## Options Images {#images-options}
 
 Les options Images permettent de définir la compression et le rééchantillonnage des images. Vous pouvez utiliser ces options pour rechercher un juste équilibre entre le format de page et la qualité de l’image. Pour plus d’informations sur l’accès aux paramètres Images, voir [Ajout ou modification de paramètres PDF](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
@@ -317,7 +317,7 @@ Ces options permettent de définir les polices à incorporer dans un fichier PDF
 
 >[!NOTE]
 >
->Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client, assurez-vous de redémarrer le système sur lequel AEM forms est installé.
+>Les polices sont sélectionnées à partir du cache des polices du système Windows et un redémarrage du système est requis pour mettre à jour le cache. Après avoir spécifié le répertoire des polices du client ou de la cliente, assurez-vous de redémarrer le système sur lequel AEM forms est installé.
 
 ## Options relatives aux couleurs {#color-options}
 
@@ -440,7 +440,7 @@ Les options avancées permettent de mieux comprendre le langage PostScript et la
 
 ## Options de rapport et de conformité aux normes {#standards-reporting-and-compliance-options}
 
-PDF Generator peut vérifier le contenu des documents d’un fichier PostScript et s’assurer ainsi qu’il réponde aux critères de la norme PDF/X-1a, PDF/X-3 ou PDF/A avant la création du fichier PDF. Pour les fichiers conformes à la norme PDF/X, vous pouvez demander que le fichier PostScript réponde à d’autres critères en sélectionnant d’autres options sous Rapport et conformité aux normes. La disponibilité des options dépend de la norme choisie.
+PDF Generator peut vérifier le contenu des documents d’un fichier PostScript et s’assurer ainsi qu’il réponde aux critères de la norme PDF/X-1a, PDF/X-3 ou PDF/A avant la création du fichier PDF. Pour les fichiers conformes à la norme PDF/X, vous pouvez demander que le fichier PostScript réponde à des critères supplémentaires en sélectionnant d’autres options dans « Rapports et conformité aux normes ». La disponibilité des options dépend de la norme choisie.
 
 Les fichiers conformes à la norme PDF/X sont principalement utilisés en tant que format d’échange normalisé de fichiers PDF dédiés à une impression haute résolution. A moins de créer un document PDF destiné à être imprimé, vous pouvez ignorer les normes de conformité PDF/X.
 
@@ -502,7 +502,7 @@ Ces options sont activées si le paramètre Compatibilité (dans la page des par
 
 **Annuler la tâche :** permet de créer un fichier PDF uniquement si le fichier PostScript est conforme aux exigences PDF/A et s’il est par ailleurs correct.
 
-**Nom du profil du mode de sortie :** indique les conditions d’impression particulières pour lesquelles le document a été préparé et qui sont requises pour la conformité aux exigences PDF/A. Si votre flux de travail nécessite de connaître le mode de sortie, sélectionnez Aucun. Le document ne pourra pas vérifier la conformité si cette information n’est pas fournie.
+**Nom du profil du mode de sortie :** indique les conditions d’impression particulières pour lesquelles le document a été préparé et qui sont requises pour la conformité aux exigences PDF/A. Si votre workflow nécessite que le document spécifie des informations sur le mode de sortie, sélectionnez « Aucun ». La conformité du document ne pourra être vérifiée si cette information n’est pas fournie.
 
 **Condition de sortie :** permet de décrire la condition d’impression voulue. Cette entrée, non obligatoire, peut être utilisée pour fournir des informations utiles au destinataire du document PDF.
 
