@@ -1,7 +1,7 @@
 ---
-title: Création de sites adaptés aux appareils mobiles
+title: Créer des sites adaptés aux appareils mobiles
 seo-title: Creating Sites for Mobile Devices
-description: La création d’un site mobile est similaire à celle d’un site classique en ce sens qu’il faut également créer des modèles et des composants
+description: La création d’un site mobile est similaire à celle d’un site classique en ce sens qu’il faut également créer des modèles et des composants.
 seo-description: Creating a mobile site is similar to creating a standard site as it also involves creating templates and components
 uuid: 6b19042c-03f1-4e33-970e-475f9fb8c5fb
 contentOwner: Guillaume Carlino
@@ -13,13 +13,13 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3840'
 ht-degree: 100%
 
 ---
 
-# Création de sites adaptés aux appareils mobiles{#creating-sites-for-mobile-devices}
+# Créer des sites adaptés aux appareils mobiles{#creating-sites-for-mobile-devices}
 
 >[!NOTE]
 >
