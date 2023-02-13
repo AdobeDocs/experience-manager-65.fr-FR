@@ -1,5 +1,5 @@
 ---
-title: Personnalisation de la console de bienvenue (IU classique)
+title: Personnaliser la console de bienvenue (IU classique)
 seo-title: Customizing the Welcome Console (Classic UI)
 description: La console de bienvenue propose une liste de liens vers les différentes consoles et fonctionnalités au sein d’AEM.
 seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
 ht-degree: 100%
 
 ---
 
-# Personnalisation de la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
+# Personnaliser la console de bienvenue (IU classique){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
 >
