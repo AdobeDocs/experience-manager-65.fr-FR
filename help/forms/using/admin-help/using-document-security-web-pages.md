@@ -1,5 +1,5 @@
 ---
-title: Utilisation des pages Web de Document Security
+title: Utilisation des pages Web de la sécurité des documents
 seo-title: Using the document security webpages
 description: Découvrez comment vous connecter, naviguer et utiliser les pages Web de sécurité des documents.
 seo-description: Learn how you can login, navigate and use the document security web pages.
@@ -12,13 +12,13 @@ discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
 ht-degree: 100%
 
 ---
 
-# Utilisation des pages Web de Document Security {#using-the-document-security-webpages}
+# Utilisation des pages Web de la sécurité des documents {#using-the-document-security-webpages}
 
 Les utilisateurs et les administrateurs utilisent les pages Web de Document Security pour créer et gérer des stratégies, gérer des documents protégés par une stratégie et contrôler les événements associés aux documents protégés par une stratégie. Les administrateurs utilisent également les pages Web pour créer des jeux de stratégies, désigner des coordinateurs de jeux de stratégies, configurer les paramètres par défaut de Document Security, gérer l’enregistrement et les comptes des utilisateurs invités, et contrôler et gérer les événements concernant les serveurs, les stratégies, les utilisateurs et les documents.
 
