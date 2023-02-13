@@ -1,5 +1,5 @@
 ---
-title: Affichage des statistiques relatives à Work Manager
+title: Afficher les statistiques relatives à Work Manager
 seo-title: View statistics related to Work Manager
 description: L’onglet Work Manager affiche les statistiques liées aux éléments de Work Manager. Découvrez comment vous pouvez afficher et filtrer les tâches.
 seo-description: The Work Manager tab displays statistics that relate to Work Manager items. Learn how you can view and filter the work items.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1213'
 ht-degree: 100%
 
 ---
 
-# Affichage des statistiques relatives à Work Manager {#view-statistics-related-to-work-manager}
+# Afficher les statistiques relatives à Work Manager {#view-statistics-related-to-work-manager}
 
 L’onglet Work Manager affiche les statistiques liées aux éléments de Work Manager. Ces tâches se trouvent dans des états différents selon leur position dans le processus (voir [Etat (pour les catégories Par défaut, Workflow ou Evénements uniquement)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only)). Vous pouvez filtrer les informations de façon à n’afficher qu’un sous-ensemble des éléments en utilisant les différentes options disponibles (par exemple, Etat ou Catégorie). Vous pouvez trier les travaux ou tâches produits (dans l’ordre croissant ou décroissant) en cliquant sur l’un des en-têtes de colonne suivants. Vous pouvez également gérer les tâches en utilisant les outils d’opération qui s’affichent au-dessus de la liste des tâches.
 
