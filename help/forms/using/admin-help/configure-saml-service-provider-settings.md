@@ -1,5 +1,5 @@
 ---
-title: Configuration des paramètres du fournisseur de services SAML
+title: Configurer les paramètres du fournisseur de services SAML
 seo-title: Configure SAML service provider settings
 description: Vous pouvez configurer les paramètres du fournisseur de services SAML pour permettre aux utilisateurs de se connecter et de s’authentifier auprès d’AEM forms via un fournisseur d’identité tiers (IDP) spécifié.
 seo-description: You can configure SAML service provider settings to allow users to login and authenticate to AEM forms via a specified third-party identity provider (IDP).
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '599'
 ht-degree: 100%
 
 ---
 
-# Configuration des paramètres du fournisseur de services SAML{#configure-saml-service-provider-settings}
+# Configurer les paramètres du fournisseur de services SAML{#configure-saml-service-provider-settings}
 
 Security Assertion Markup Language (SAML) est l’une des options que vous pouvez sélectionner lors de la configuration des autorisations relatives aux domaines d’entreprise ou domaines hybrides. Le langage SAML est principalement utilisé pour la prise en charge de l’authentification unique sur plusieurs domaines. Lorsque ce langage est configuré comme fournisseur d’authentification, les utilisateurs se connectent et s’authentifient à AEM forms via un fournisseur d’identité tiers (IDP) spécifié.
 
