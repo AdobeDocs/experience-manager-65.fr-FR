@@ -12,7 +12,7 @@ discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
@@ -426,7 +426,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      limitations under the License.
 ```
 
-## Contextuel {#concurrent}
+## Concurrent {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -567,7 +567,7 @@ Le tableau ci-dessous répertorie les bibliothèques tierces utilisées dans Com
      implementations, and test suites thereof.
 ```
 
-## Groupe Hypersonic SQL {#hypersonic-sql-group}
+## Hypersonic SQL Group {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
