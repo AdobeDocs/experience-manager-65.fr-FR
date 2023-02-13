@@ -1,5 +1,5 @@
 ---
-title: Gestion de certificats
+title: Gérer des certificats
 seo-title: Managing certificates
 description: Découvrez comment importer et exporter un certificat et modifier ses paramètres d’approbation.
 seo-description: Learn how to import and export a certificate and edit its trust settings.
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+workflow-type: ht
 source-wordcount: '641'
 ht-degree: 100%
 
 ---
 
-# Gestion de certificats {#managing-certificates}
+# Gérer des certificats {#managing-certificates}
 
 Trust Store Management vous permet d’importer, de modifier et de supprimer des certificats de confiance sur le serveur pour valider des signatures numériques et l’authentification de certificats. Vous pouvez en importer et en exporter autant que vous le souhaitez. Une fois qu’un certificat a été importé, vous pouvez modifier les paramètres d’approbation et le type de Trust Store. Pensez aux options suivantes lorsque vous combinez des types de Trust Store :
 
@@ -30,9 +30,9 @@ Seuls les certificats X509v3 sont pris en charge. Ce type de certificat peut êt
 
 Les certificats requis pour vérifier des signatures doivent résider au même emplacement de stockage (module HSM ou base de données).
 
-Vous pouvez également importer et supprimer des certificats à l’aide de l’API Trust Manager. Pour plus d’informations, reportez-vous aux sections « Importation des certificats à l’aide de l’API Trust Manager » et « Suppression des certificats à l’aide de l’API Trust Manager » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
+Vous pouvez également importer et supprimer des certificats à l’aide de l’API Trust Manager. Pour plus d’informations, reportez-vous aux sections « Importation des certificats à l’aide de l’API Trust Manager » et « Suppression des certificats à l’aide de l’API Trust Manager » dans [Programmation avec AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_fr).
 
-## Importation d’un certificat {#import-a-certificate}
+## Importer un certificat {#import-a-certificate}
 
 1. Dans la console d’administration, cliquez sur **[!UICONTROL Paramètres > Gestion de Trust Store > Certificats]**.
 1. Cliquez sur Importer, puis, sous Type de Trust Store, sélectionnez l’une des options suivantes :
