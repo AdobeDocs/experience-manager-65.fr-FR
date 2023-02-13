@@ -12,7 +12,7 @@ discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5398'
 ht-degree: 100%
 
@@ -223,7 +223,7 @@ Le tableau suivant répertorie les fichiers JAR qui dépendent du mode de connex
 <table>
  <thead>
   <tr>
-   <th><p>Fichier</p> </th>
+   <th><p>File</p> </th>
    <th><p>Description</p> </th>
    <th><p>Emplacement</p> </th>
   </tr>
@@ -333,7 +333,7 @@ Le tableau suivant spécifie les scénarios d’appel et répertorie les fichier
   </tr>
   <tr>
    <td><p>Service Forms</p> </td>
-   <td><p>méthode d’objet</p> </td>
+   <td><p>SOAP</p> </td>
    <td><p>WebLo gic</p> </td>
    <td>
     <ul>
@@ -362,7 +362,7 @@ Le tableau suivant spécifie les scénarios d’appel et répertorie les fichier
   </tr>
   <tr>
    <td><p>Service Forms</p> <p>Service d’extensions Acrobat Reader DC</p> <p>Service Signature</p> </td>
-   <td><p>méthode d’objet</p> </td>
+   <td><p>SOAP</p> </td>
    <td><p>WebLo gic</p> </td>
    <td>
     <ul>
@@ -414,7 +414,7 @@ Supposant que vous procédez à la mise à niveau vers AEM Forms. Pour utiliser
 
 [Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Réglage des propriétés de la connexion {#setting-connection-properties}
+## Définir les propriétés de connexion {#setting-connection-properties}
 
 Vous définissez les propriétés de connexion pour appeler AEM Forms lors de l’utilisation de l’API Java. Lors de la définition des propriétés de connexion, indiquez si vous souhaitez appeler des services à distance ou localement, ainsi que le mode de connexion et les valeurs d’authentification. Les valeurs d’authentification sont requises si la sécurité des services est activée. Toutefois, si la sécurité du service est désactivée, il n’est pas nécessaire de spécifier des valeurs d’authentification.
 
@@ -685,7 +685,7 @@ L’exemple suivant montre le contenu d’un fichier jndi.properties utilisé po
 
 [Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Transmission de données vers les services AEM Forms à l’aide de l’API Java {#passing-data-to-aem-forms-services-using-the-java-api}
+## Transmettre des données vers les services AEM Forms à l’aide de l’API Java {#passing-data-to-aem-forms-services-using-the-java-api}
 
 Les opérations de service AEM Forms consomment ou produisent généralement des documents PDF. Lorsque vous invoquez un service, il est parfois nécessaire de lui transmettre un document PDF (ou d’autres types de documents tels que des données XML). De même, il est parfois nécessaire de gérer un document PDF renvoyé par le service. La classe Java qui vous permet de transmettre des données depuis et vers les services AEM Forms est `com.adobe.idp.Document`.
 
@@ -956,7 +956,7 @@ Lorsque vous n’avez plus besoin d’un objet `Document`, il est recommandé de
 
 [Appel d’un service à l’aide d’une bibliothèque client Java](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Appel d’un service à l’aide d’une bibliothèque client Java {#invoking-a-service-using-a-java-client-library}
+## Appeler un service à l’aide d’une bibliothèque client Java {#invoking-a-service-using-a-java-client-library}
 
 Les opérations du service AEM Forms peuvent être appelées à l’aide de l’API fortement typée du service, appelée bibliothèque client Java. Une *bibliothèque client Java* est un ensemble de classes concrètes permettant d’accéder aux services déployés dans le conteneur de service. Vous instanciez un objet Java qui représente le service à appeler au lieu de créer l’objet `InvocationRequest` en utilisant l’API d’appel. L’API d’appel est utilisée pour appeler des processus, tels que des processus de longue durée, créés dans Workbench. (Voir [Appel de processus pour des intervenants humains de longue durée](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
@@ -1006,7 +1006,7 @@ Vous pouvez appeler le service Repository en utilisant une bibliothèque client 
 
 [Inclusion des fichiers de bibliothèque Java d’AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-## Appel d’un processus de courte durée en utilisant l’API d’appel {#invoking-a-short-lived-process-using-the-invocation-api}
+## Appeler un processus de courte durée en utilisant l’API d’appel {#invoking-a-short-lived-process-using-the-invocation-api}
 
 Vous pouvez appeler un processus de courte durée en utilisant l’API d’appel de Java. Lorsque vous appelez un processus de courte durée à l’aide de l’API d’appel, vous transmettez les valeurs de paramètre requises à l’aide d’un objet `java.util.HashMap`. Pour chaque paramètre à transmettre à un service, appelez la méthode `java.util.HashMap` de l’objet `put` et spécifiez la paire nom-valeur requise par le service pour effectuer l’opération spécifiée. Indiquez le nom exact des paramètres appartenant au processus de courte durée.
 
