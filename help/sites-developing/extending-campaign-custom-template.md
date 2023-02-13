@@ -1,5 +1,5 @@
 ---
-title: Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign
+title: Créer le modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign
 seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
 description: Créez un modèle de page personnalisé qui utilise des composants de formulaire Adobe Campaign.
 seo-description: Build a custom page template that uses Adobe Campaign Form components
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
 ht-degree: 100%
 
 ---
 
-# Création du modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
+# Créer le modèle de page AEM personnalisé avec des composants de formulaire Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
 Cette page vous explique comment créer un modèle de page personnalisé qui utilise des composants [Formulaire Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) en examinant le mode d’implémentation du modèle Geometrixx-outdoors (`/apps/geometrixx-outdoors/components/page_campaign_profile`). Elle vous donne également des informations importantes dont vous pourriez avoir besoin lors de la création de votre propre modèle.
 
