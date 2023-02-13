@@ -1,5 +1,5 @@
 ---
-title: Sauvegarde et récupération du référentiel EMC Documentum
+title: Sauvegarder et récupérer le référentiel EMC Documentum
 seo-title: Backing up and recovering the EMC Documentum repository
 description: Ce document décrit les tâches nécessaires à la sauvegarde et à la récupération du référentiel EMC Documentum configuré pour votre environnement AEM Forms.
 seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '803'
 ht-degree: 100%
 
 ---
 
-# Sauvegarde et récupération du référentiel EMC Documentum {#backing-up-and-recovering-the-emc-documentum-repository}
+# Sauvegarder et récupérer le référentiel EMC Documentum {#backing-up-and-recovering-the-emc-documentum-repository}
 
 Cette section décrit les tâches nécessaires à la sauvegarde et à la récupération du référentiel EMC Documentum configuré pour votre environnement AEM forms.
 
