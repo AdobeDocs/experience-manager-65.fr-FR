@@ -13,9 +13,9 @@ pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
 source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2313'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -33,15 +33,15 @@ L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP
 
 >[!NOTE]
 >
->L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager en utilisant l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Adobe Experience Manager à l’aide de l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=en).
+>L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager en utilisant l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Adobe Experience Manager à l’aide de l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=fr).
 
 ## Session Gem {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) est une série de sessions techniques approfondies sur Adobe Experience Manager, dispensées par des experts Adobe. Cette session consacrée à Query Builder s’avère très utile pour se familiariser avec l’outil.
+[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=fr) est une série de sessions techniques approfondies sur Adobe Experience Manager, dispensées par des experts Adobe. Cette session consacrée à Query Builder s’avère très utile pour se familiariser avec l’outil.
 
 >[!NOTE]
 >
->Pour une présentation détaillée de Query Builder, reportez-vous à la session AEM Gem intitulée [Rechercher plus facilement des formulaires à l’aide du QueryBuilder AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html).
+>Pour une présentation détaillée de Query Builder, reportez-vous à la session AEM Gem intitulée [Rechercher plus facilement des formulaires à l’aide du QueryBuilder AEM](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=fr).
 
 ## Exemples de requêtes {#sample-queries}
 
