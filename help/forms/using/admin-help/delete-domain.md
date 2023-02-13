@@ -1,5 +1,5 @@
 ---
-title: Suppression d’un domaine
+title: Supprimer un domaine
 seo-title: Delete a domain
 description: Découvrez comment utiliser la page Gestion des domaines pour supprimer un domaine ou pour désigner un domaine comme obsolète.
 seo-description: Learn how to use the Domain Management page to delete a domain or to mark an existing domain as obsolete.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 exl-id: 01a4faf0-ec6e-475b-9909-c35298e2fcaf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
 ht-degree: 100%
 
 ---
 
-# Suppression d’un domaine {#delete-a-domain}
+# Supprimer un domaine {#delete-a-domain}
 
 Utilisez la page Gestion des domaines pour désigner un domaine comme obsolète.
 
