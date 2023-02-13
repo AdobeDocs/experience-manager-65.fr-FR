@@ -1,5 +1,5 @@
 ---
-title: Configuration des paramètres d’absence du bureau
+title: Configurer les paramètres d’absence du bureau
 seo-title: Configuring Out of Office Settings
 description: La fonction d’absence du bureau vous permet de spécifier les périodes pendant lesquelles un utilisateur est absent du bureau et n’est pas en mesure d’exécuter les tâches qui lui ont été affectées par AEM forms.
 seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '659'
 ht-degree: 100%
 
 ---
 
-# Configuration des paramètres d’absence du bureau {#configuring-out-of-office-settings}
+# Configurer les paramètres d’absence du bureau {#configuring-out-of-office-settings}
 
 La fonction d’absence du bureau permet aux utilisateurs ou aux administrateurs de spécifier les périodes pendant lesquelles un utilisateur est absent du bureau et n’est pas en mesure d’exécuter les tâches qui lui ont été affectées par AEM forms. Lorsqu’un utilisateur est absent du bureau, ses tâches sont attribuées à un ou plusieurs autres utilisateurs désignés. Les utilisateurs peuvent modifier leurs paramètres d’absence du bureau dans l’espace de travail ou les administrateurs peuvent également modifier les paramètres à la place d’un utilisateur dans Forms Workflow.
 
