@@ -1,5 +1,5 @@
 ---
-title: Importation et gestion des archives
+title: Importer et gérer des archives
 seo-title: Import and manage archives
 description: Découvrez comment importer et gérer des archives.
 seo-description: Learn how to import and manage archives.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
 ht-degree: 100%
 
 ---
 
-# Importation et gestion des archives {#import-and-manage-archives}
+# Importer et gérer des archives {#import-and-manage-archives}
 
 Importez et gérez les fichiers LCA créés avec Workbench via l’onglet Archives.
 
