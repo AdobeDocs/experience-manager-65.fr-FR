@@ -12,9 +12,9 @@ discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3262'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -629,7 +629,7 @@ Les sections suivantes de la documentation AEM présentent un intérêt particul
 
       * [Développement – Les principes de base](/help/sites-developing/the-basics.md)
       * [Concepts relatifs au MSM](/help/sites-administering/msm.md)
-      * [Langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [Langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 
 * Documentation connexe
 
