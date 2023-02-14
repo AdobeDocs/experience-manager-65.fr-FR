@@ -1,20 +1,11 @@
 ---
 title: Gestion de projets de traduction
-seo-title: Managing Translation Projects
 description: Découvrez comment gérer des projets de traduction dans AEM.
-seo-description: Learn how to manage translation projects in AEM.
-uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Language Copy
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
+workflow-type: tm+mt
+source-wordcount: '3536'
+ht-degree: 97%
 
 ---
 
@@ -418,6 +409,16 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Cliquez ou appuyez sur Commencer.
+
+## Déplacement ou changement de nom d’une page source {#move-source}
+
+Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie de langue en fonction du nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent sera toujours là.
+
+Dans ce scénario, la bonne pratique consiste à procéder comme suit :
+1. Annulez la publication des copies de langue associées à la page source que vous souhaitez déplacer.
+1. Supprimez-les.
+1. Créez de nouvelles copies de langue à partir de la page source nouvellement déplacée.
+1. Publiez les copies de langue nouvellement créées.
 
 ## Création d’un projet de traduction à l’aide de la console Projets {#creating-a-translation-project-using-the-projects-console}
 
