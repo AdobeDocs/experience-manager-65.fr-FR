@@ -2,10 +2,10 @@
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
 description: Instructions d’installation du Service Pack AEM Forms pour l’environnement OSGi et JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
+source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
 workflow-type: tm+mt
-source-wordcount: '1817'
-ht-degree: 55%
+source-wordcount: '1797'
+ht-degree: 56%
 
 ---
 
@@ -91,7 +91,8 @@ Accédez au répertoire approprié, puis à partir d’un shell et saisissez
 
       >[!NOTE]
       >
-      > En utilisant la variable **ConfigurationManager.bat** vous permet d’éviter de mettre à jour manuellement le nom des fichiers .lax.
+      >* Mise à jour ou remplacement du **ConfigurationManager.bat** vous permet d’éviter de mettre à jour manuellement le nom des fichiers .lax.
+
 
 1. **[Pour Unix uniquement]:** Le **Démarrez Configuration Manager** est sélectionnée par défaut. Cliquez sur **[!UICONTROL Terminé]** pour exécuter Configuration Manager instantanément ou pour exécuter **Configuration Manager** plus tard, désélectionnez l’option **Démarrer Configuration Manager** avant de cliquer sur **[!UICONTROL Terminé]**. Vous pourrez démarrer **Configuration Manager** ultérieurement à l’aide du script approprié dans le répertoire `[AEM_forms_root]/configurationManager/bin`.
 
@@ -104,7 +105,6 @@ Accédez au répertoire approprié, puis à partir d’un shell et saisissez
    * [Installation et déploiement d’AEM forms pour la grappe WebSphere®](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [Installation et déploiement d’AEM Forms pour la grappe WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
-Il s’agit de
 
 >[!NOTE]
 >
@@ -245,8 +245,6 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 +++
 
 ## Résolution des problèmes
-
-* Réinstallez les Service Packs AEM Forms si une erreur se produit lors de son installation. Si le problème persiste, contactez le support Adobe.
 
 * If **Boîte de dialogue sur l’interface utilisateur du gestionnaire de modules** quitte le service pack pendant l’installation, attendez que les journaux d’erreurs se stabilisent avant d’accéder au déploiement. Attendez les logs spécifiques liés à la désinstallation du lot de mise à jour avant de vous assurer que les installations sont réussies. En règle générale, ce problème se produit dans le navigateur Safari, mais peut se produire par intermittence dans n’importe quel navigateur.
 
