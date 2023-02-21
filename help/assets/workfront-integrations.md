@@ -4,10 +4,10 @@ description: Présentation de l’intégration entre  [!DNL Assets]  et  [!DNL W
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
-source-git-commit: f669c18278b468e6002864e76c676153060819ea
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: d83242c8fa6a8cd627a6db24f3c45fcaeae45b2b
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 97%
 
 ---
 
@@ -39,7 +39,7 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
->* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
+>* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [Gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
 >
 >* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -48,27 +48,38 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 
 Vous trouverez ci-dessous les détails des fonctionnalités disponibles à travers différents types d’intégrations entre [!DNL Assets] et [!DNL Workfront].
 
-| Fonctionnalité | Description | [!DNL Workfront] et [!DNL Assets Essentials] | [!DNL Workfront for Experience Manager enhanced connector] |
-|----|----|----|-----|
-| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service, Adobe Managed Services, On-Premise |
-| Envoyer des fichiers numériques depuis [!DNL Workfront] vers [!DNL Assets] | La dernière version d’un document WF peut être chargée vers AEM Assets, et sera liée en tant que nouvelle version du document. | ✓ | ✓ |
-| Lier manuellement des dossiers AEM à des objets Workfront | Les dossiers AEM existants peuvent être liés en tant que dossier Workfront. Ses ressources enfants sont liées en tant que nouveaux documents Workfront. | ✓ | ✓ |
-| Lier [!DNL Assets] aux objets Workfront | Les ressources existantes dans AEM peuvent être liées à un nouveau document Workfront ou à une nouvelle version d’un document existant. | ✓ | ✓ |
-| Envoyer automatiquement à AEM les ressources ajoutées aux dossiers liés | Si le document est ajouté à un dossier lié, la ressource associée est automatiquement chargée dans AEM Assets en tant que nouvelle ressource. | ✓ | ✓ |
-| Télécharger des ressources AEM Assets liées à partir de Workfront | Lorsqu’une ressource est liée dans Workfront, l’utilisateur peut télécharger les octets de la ressource. | ✓ | ✓ |
-| Rechercher des ressources AEM Assets à partir de Workfront | Le sélecteur AEM Assets de Workfront permet de rechercher des ressources en texte intégral. | ✓ | ✓ |
-| Afficher et parcourir la hiérarchie des dossiers AEM à partir de Workfront | Le sélecteur AEM Assets de Workfront permet de parcourir la hiérarchie d’AEM Assets limitée par les contrôles d’accès et les autorisations associés à l’utilisateur ou l’utilisatrice définis dans AEM. | ✓ | ✓ |
-| Dissocier des ressources d’AEM Assets dans Workfront | Une ressource liée existante provenant d’AEM peut être dissociée du document Workfront associé. Cela ne supprime pas la ressource d’origine dans AEM. | ✓ | ✓ |
-| Ajouter une ressource nouvellement versionnée à AEM Assets à partir de Workfront | Lorsqu’une nouvelle version est ajoutée à un document dans Workfront, un utilisateur peut envoyer la nouvelle version à AEM pour remplacer la version existante. | ✓ | ✓ |
-| Rediriger les utilisateurs vers AEM en cas de clic sur les ressources liées dans Workfront | Les utilisateurs sont redirigés vers AEM pour prévisualiser une ressource liée dans Workfront. | ✓ | Personnalisé |
-| Créer automatiquement des dossiers AEM liés dans Workfront | Créez automatiquement des dossiers AEM liés dans Workfront à l’aide des statuts d’objet. Organisez automatiquement les dossiers AEM en fonction des portfolios, programmes et projets Workfront. | Non | ✓ |
-| Synchronisation des commentaires | Synchroniser automatiquement les commentaires des ressources de [!DNL Workfront] vers [!DNL Assets] | Non | ✓ |
-| Mapper les métadonnées des ressources Workfront à AEM Assets | Les propriétés des formulaires personnalisés et des objets Workfront peuvent être mappées aux propriétés des métadonnées des ressources AEM. Les valeurs sont transmises lors du chargement ou de la liaison initial(e). | ✓ | ✓ |
-| Créer automatiquement des formulaires personnalisés pour les documents dans Workfront | Joignez des formulaires personnalisés aux documents, tâches et problèmes Workfront à l’aide des workflows AEM. | Non | ✓ |
-| Mise à jour automatique bidirectionnelle des métadonnées entre AEM Assets et Workfront | Mettez automatiquement à jour les métadonnées entre AEM Assets et Workfront. | Non | ✓ |
-| Mapper les métadonnées de Workfront aux dossiers AEM Assets | Synchronisez les métadonnées des projets Workfront avec les dossiers AEM liés. | Non | ✓ |
-| Mettre à jour les métadonnées AEM avec de nouvelles versions | Une configuration peut être effectuée dans AEM pour déterminer si une ressource nouvellement versionnée dans Workfront transmet également les modifications apportées à ses métadonnées. | Non | ✓ |
-| Mettre automatiquement à jour les métadonnées AEM lors des modifications apportées aux formulaires personnalisés dans Workfront | Workfront est configuré de telle sorte que les propriétés de métadonnées de ressources AEM spécifiées sont mappées à un formulaire personnalisé de document. Lorsquʼune ressource est initialement liée ou mise à jour, les valeurs de ces propriétés de métadonnées sont copiées dans le champ de formulaire personnalisé du document Workfront correspondant. Il convient de sʼassurer que la modification provenant dʼAEM ne soit pas renvoyée à AEM comme sʼil sʼagissait dʼune modification provenant de Workfront. | Non | ✓ |
-| Créer une version BAT sur les ressources liées | Lors de la liaison d’une ressource dans Workfront, un BAT peut être automatiquement généré. | Non | Personnalisé |
-| Définir le statut des objets Workfront | Définissez les statuts des objets Workfront en fonction de conditions configurables à l’aide de workflows AEM. | Non | ✓ |
-| Publier des ressources dans lʼenvironnement de publication AEM ou dans Brand Portal | Cette fonctionnalité permet aux utilisateurs de Workfront de publier automatiquement les ressources liées dans un environnement de publication AEM ou dans Brand Portal. | Non | ✓ |
+| Fonctionnalité | Description | [!DNL Workfront] et [!DNL Assets Essentials] *Aucun connecteur (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Nécessite un connecteur* | Workfront et [!DNL Experience Manager as a Cloud Service] *Aucun connecteur (OOTB)* |
+|----|----|----|-----|-----|
+| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
+| **Général** |
+| Envoyer des fichiers numériques depuis [!DNL Workfront] vers [!DNL Assets] | La dernière version d’un document WF peut être chargée vers AEM Assets, et sera liée en tant que nouvelle version du document. | ✓ | ✓ | ✓ |
+| Lier manuellement des dossiers AEM à des objets Workfront | Les dossiers AEM existants peuvent être liés en tant que dossier Workfront. Ses ressources enfants sont liées en tant que nouveaux documents Workfront. | ✓ | ✓ | ✓ |
+| Lier [!DNL Assets] aux objets Workfront | Les ressources existantes dans AEM peuvent être liées à un nouveau document Workfront ou à une nouvelle version d’un document existant. | ✓ | ✓ | ✓ |
+| Envoyer automatiquement à AEM les ressources ajoutées aux dossiers liés | Si le document est ajouté à un dossier lié, la ressource associée est automatiquement chargée dans AEM Assets en tant que nouvelle ressource. | ✓ | ✓ | ✓ |
+| Télécharger des ressources AEM Assets liées à partir de Workfront | Lorsqu’une ressource est liée dans Workfront, l’utilisateur peut télécharger les octets de la ressource. | ✓ | ✓ | ✓ |
+| Rechercher des ressources AEM Assets à partir de Workfront | Le sélecteur AEM Assets de Workfront permet de rechercher des ressources en texte intégral. | ✓ | ✓ | ✓ |
+| Rechercher des dossiers AEM à partir de Workfront | Le sélecteur AEM Assets de Workfront permet de rechercher des dossiers en texte intégral. | ✓ | ✓ | ✓ |
+| Afficher et parcourir la hiérarchie des dossiers AEM à partir de Workfront | Le sélecteur AEM Assets de Workfront permet de parcourir la hiérarchie d’AEM Assets limitée par les contrôles d’accès et les autorisations associés à l’utilisateur ou l’utilisatrice définis dans AEM. | ✓ | ✓ | ✓ |
+| Suivre les versions des ressources dans les chronologies AEM | Conserve l’historique des versions des documents entre Workfront et AEM. | ✓ | ✓ | ✓ |
+| Dissocier des ressources d’AEM Assets dans Workfront | Une ressource liée existante provenant d’AEM peut être dissociée du document Workfront associé. Cela ne supprime pas la ressource d’origine dans AEM. | ✓ | ✓ | ✓ |
+| Ajouter une ressource nouvellement versionnée à AEM Assets à partir de Workfront | Lorsqu’une nouvelle version est ajoutée à un document dans Workfront, un utilisateur peut envoyer la nouvelle version à AEM pour remplacer la version existante. | ✓ | ✓ | ✓ |
+| Rediriger les utilisateurs vers AEM en cas de clic sur les ressources liées dans Workfront | Les utilisateurs sont redirigés vers AEM pour prévisualiser une ressource liée dans Workfront. | ✓ | ✓ | À venir |
+| Créer automatiquement des dossiers AEM liés dans Workfront | Créez automatiquement des dossiers AEM liés dans Workfront à l’aide des statuts de projet. Configurez automatiquement les dossiers AEM en fonction des portfolios, programmes et projets Workfront. | Non | ✓ | Non |
+| Naviguer directement vers les référentiels AEM à partir de Workfront | Permet aux utilisateurs et utilisatrices de naviguer vers les référentiels AEM disponibles configurés dans Workfront. | ✓ | Non | ✓ |
+| Création de dossiers d’AEM liés dans Workfront | Créez manuellement des dossiers d’AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents . | ✓ | Non | ✓ |
+| Synchronisation des commentaires | Synchroniser automatiquement les commentaires des ressources de [!DNL Workfront] vers [!DNL Assets] | Non | ✓ | Non |
+| Prendre en charge plusieurs environnements Workfront se connectant à un seul environnement AEM | Les utilisateurs et utilisatrices de plusieurs environnements Workfront peuvent se connecter à un seul environnement AEM. | ✓ | Non | ✓ |
+| Prendre en charge plusieurs environnements AEM se connectant à un seul environnement Workfront | Les utilisateurs et utilisatrices d’un seul environnement Workfront peuvent envoyer ou lier des ressources entre plusieurs environnements AEM. | ✓ | ✓ | ✓ |
+| **Métadonnées** |
+| Mapper les métadonnées des ressources Workfront à AEM Assets | Les propriétés des formulaires personnalisés et des objets Workfront peuvent être mappées aux propriétés des métadonnées des ressources AEM. Les valeurs sont transmises lors du chargement ou de la liaison initial(e). | ✓ | ✓ | ✓ |
+| Créer automatiquement des formulaires personnalisés pour les documents dans Workfront | Joignez des formulaires personnalisés aux documents, tâches et problèmes Workfront à l’aide des workflows AEM. | Non | ✓ | Non |
+| Mise à jour automatique bidirectionnelle des métadonnées entre AEM Assets et Workfront | Mettez automatiquement à jour les métadonnées entre AEM Assets et Workfront. La ressource doit d’abord être transmise de Workfront à AEM et les métadonnées de la ressource Workfront doivent être mappées à AEM Assets pour que les mises à jour bidirectionnelles des métadonnées fonctionnent correctement. | Non | ✓ | Non |
+| Affichage en temps réel dans Workfront des métadonnées mappées à AEM | Affichez les métadonnées mappées et mises à jour sur AEM dans les panneaux Détails du document et Résumé du document de Workfront. | ✓ | Non | ✓ |
+| Transmission en temps réel des métadonnées Workfront mises à jour vers AEM | Mettez automatiquement à jour les métadonnées Workfront mappées à AEM sans transmettre à nouveau une ressource ou une nouvelle version d’une ressource. | ✓ | Non | ✓ |
+| Mapper les métadonnées de Workfront aux dossiers AEM Assets | Synchronisez les métadonnées des projets Workfront avec les dossiers AEM liés. | Non | ✓ | ✓ |
+| Mettre à jour les métadonnées AEM avec de nouvelles versions | Une configuration peut être effectuée dans AEM pour déterminer si une ressource nouvellement versionnée dans Workfront transmet également les modifications apportées à ses métadonnées. | Non | ✓ | Non |
+| Mettre automatiquement à jour les métadonnées AEM lors des modifications apportées aux formulaires personnalisés dans Workfront | AEM vous permet de vous abonner aux mises à jour des formulaires de documents dans Workfront. Par conséquent, toute mise à jour apportée aux métadonnées du formulaire personnalisé du document Workfront modifie les valeurs des champs de métadonnées AEM mappés. | Non | ✓ | Non |
+| **Workflows (prêts à l’emploi)** |
+| Créer une version BAT sur les ressources liées | Lors de la liaison d’une ressource dans Workfront, un BAT peut être automatiquement généré. | Non | Personnalisé | Non |
+| Définir le statut des objets Workfront | Définissez les statuts des objets Workfront en fonction de conditions configurables à l’aide de workflows AEM. | Non | ✓ | À venir |
+| Publier des ressources dans lʼenvironnement de publication AEM ou dans Brand Portal | Cette fonctionnalité permet aux utilisateurs de Workfront de publier automatiquement les ressources liées dans un environnement de publication AEM ou dans Brand Portal. | Non | ✓ | À venir |
