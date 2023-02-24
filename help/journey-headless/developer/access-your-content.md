@@ -2,10 +2,10 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+workflow-type: tm+mt
+source-wordcount: '1335'
+ht-degree: 98%
 
 ---
 
@@ -243,11 +243,10 @@ Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes
 
 * Activez votre point d’entrée ;
    * Utilisez Outils -> Ressources -> GraphQL.
-   * [Activation de votre point d’entrée GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [Activer votre point d’entrée GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
-* Installez GraphiQL (si nécessaire).
-   * Installé en tant que package dédié
-   * [Installation de l’interface AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
+* Accéder à GraphiQL (si nécessaire)
+   * [Interface d’AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Exemple de structure {#sample-structure}
 
@@ -270,9 +269,9 @@ Les modèles de fragment seront utilisés :
 
 ### Où tester vos requêtes {#where-to-test-your-queries}
 
-Les requêtes peuvent être entrées dans l’interface GraphiQL, par exemple à l’adresse :
+Les requêtes peuvent être saisies dans la variable [Interface GraphiQL](/help/assets/content-fragments/graphiql-ide.md), par exemple à l’adresse :
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")
 

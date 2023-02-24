@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '681'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 # Guide d’Assets {#assets}
 
 + [Guide de l’utilisateur d’[!DNL Assets]](home.md)
-+ [Notes de mise à jour d’[!DNL Experience Manager] 6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
++ Notes de mise à jour d’[[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
 + [À propos de la gestion des ressources numériques](assets.md)
 + [Bonnes pratiques pour les ressources](best-practices-for-assets.md)
 + [Accessibilité dans  [!DNL Assets]](accessibility.md)
@@ -97,6 +97,8 @@ ht-degree: 100%
    + [API HTTP [!DNL Assets]](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](assets-api-content-fragments.md)
    + [API GraphQL pour les fragments de contenu](content-fragments/graphql-api-content-fragments.md)
+   + [Utilisation de l’IDE GraphiQL](content-fragments/graphiql-ide.md)
+   + [Requêtes persistantes](content-fragments/persisted-queries.md)
    + [Authentification pour les requêtes GraphQL distantes sur les fragments de contenu](content-fragments/graphql-authentication-content-fragments.md)
    + [API GraphQL avec fragments de contenu – Exemple de contenu et requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [Développement de proxy [!DNL Assets]](proxy.md)
@@ -123,7 +125,7 @@ ht-degree: 100%
    + [Intégration d’[!DNL Experience Manager], et de  [!DNL Creative Cloud] ](aem-cc-integration-best-practices.md)
    + [Intégration à  [!DNL InDesign Server]](indesign.md)
    + [Digital Rights Management dans Assets](drm.md)
-   + [Utilisation du module de démonstration pour Assets Insights](use-demo-package-for-asset-insights.md)
+   + [Utilisation du package de démonstration pour Assets Insights](use-demo-package-for-asset-insights.md)
    + [Configuration d’Adobe Asset Link](configure-asset-link.md)
    + [Génération de rendus FPO pour Adobe InDesign](configure-fpo-renditions.md)
    + [Bonnes pratiques relatives au format de fichier des ressources](assets-file-format-best-practices.md)
