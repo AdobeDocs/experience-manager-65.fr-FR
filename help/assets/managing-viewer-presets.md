@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
+source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
 workflow-type: tm+mt
-source-wordcount: '4507'
+source-wordcount: '4520'
 ht-degree: 95%
 
 ---
@@ -461,7 +461,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le sélectionner pour le configurer.
 Par exemple, pour la variable *VideoPlayer* type, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu adaptative :
 
-   * **[!UICONTROL dash]** - Flux vidéo en tant que tiret uniquement.
+   * **[!UICONTROL dash]** - Flux vidéo en tant que tiret uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner **[!UICONTROL hls]** comme type.
    * **[!UICONTROL hls]** - Diffusion vidéo en continu sous la forme de fichiers hls uniquement.
    * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu sous la forme de tirets, hls ou progressifs, comme dans l’exemple suivant :
       * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée, tout d’abord.
