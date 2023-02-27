@@ -12,10 +12,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 86394ab7e7de89615218d6ddd6843ec9276275cd
+source-git-commit: fb287b3082a9376c01fd609edd0f4782278e6b37
 workflow-type: tm+mt
-source-wordcount: '12734'
-ht-degree: 86%
+source-wordcount: '12760'
+ht-degree: 85%
 
 ---
 
@@ -173,11 +173,11 @@ Consultez également la section [Visionneuses pour Experience Manager Assets e
 
 ## Bonne pratique : utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
-Les visionneuses de paramètres prédéfinis de vidéos HTML5 Dynamic Media sont des lecteurs vidéo fiables. Utilisez-les pour éviter la plupart des problèmes courants liés à la lecture de vidéos HTML5, ainsi que les problèmes liés aux appareils mobiles, notamment l’absence de diffusion en continu adaptative et la portée limitée du navigateur.
+Les paramètres prédéfinis de la visionneuse de vidéos Dynamic Media HTML5 sont des lecteurs vidéo fiables. Vous pouvez les utiliser pour éviter de nombreux problèmes courants liés à la lecture vidéo HTML5. De plus, des problèmes liés aux appareils mobiles, tels que l’absence de diffusion en continu à débit adaptatif et une portée limitée du navigateur de bureau.
 
 Du côté de la conception du lecteur, vous pouvez concevoir la fonctionnalité du lecteur vidéo à l’aide d’outils de développement web standard. Vous pouvez, par exemple, concevoir les boutons, les commandes et les affiches personnalisées en arrière-plan au moyen du code HTML5 et CSS afin de mieux cibler les utilisateurs avec un aspect personnalisé.
 
-Du côté lecture de la visionneuse, elle détecte automatiquement les fonctionnalités vidéo du navigateur. Il diffuse ensuite la vidéo à l’aide de HLS ou DASH, également appelé diffusion en continu de vidéo adaptative. Si ces méthodes de distribution n’existent pas, la diffusion progressive HTML5 est utilisée à la place.
+Du côté lecture de la visionneuse, elle détecte automatiquement les fonctionnalités vidéo du navigateur. Il diffuse ensuite la vidéo à l’aide de HLS (HTTP Live Streaming) ou DASH (Dynamic Adaptive Streaming over HTTP) , également appelé diffusion en continu à débit adaptatif. Si ces méthodes de distribution n’existent pas, la diffusion progressive HTML5 est utilisée à la place.
 
 En combinant dans un seul lecteur, vous avez accès aux les éléments suivants :
 
@@ -193,14 +193,14 @@ Consultez également la section [A propos des visionneuses HTML5](https://experi
 
 Pour la diffusion en flux continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos adaptative.
 
-La lecture vidéo se produit à l’aide du téléchargement vidéo HLS, DASH ou progressif. Dans les versions antérieures d’Experience Manager, telles que 6.0, 6.1 et 6.2, les vidéos étaient diffusées via HTTP.
+La lecture vidéo se produit à l’aide de DASH ou HLS, ou du téléchargement vidéo progressif. Dans les versions antérieures d’Experience Manager, telles que 6.0, 6.1 et 6.2, les vidéos étaient diffusées via HTTP.
 
-Toutefois, dans Experience Manager 6.3 et versions ultérieures, les vidéos sont désormais diffusées en continu via HTTPS (c’est-à-dire, HLS ou DASH), car l’URL du service de passerelle DM utilise toujours HTTPS également. Il n’y a aucun impact pour le client dans ce comportement par défaut. Autrement dit, la diffusion en continu de vidéo s’effectuera tout de même via HTTPS, à moins qu’elle ne soit pas prise en charge par le navigateur (voir le tableau ci-dessous). Par conséquent,
+Dans Experience Manager 6.3 et versions ultérieures, les vidéos sont désormais diffusées en continu via HTTPS (c’est-à-dire, DASH ou HLS), car l’URL du service de passerelle DM utilise toujours HTTPS également. Il n’y a aucun impact pour le client dans ce comportement par défaut. En d’autres termes, la diffusion vidéo en continu s’effectue toujours par HTTPS, sauf si elle n’est pas prise en charge par le navigateur. (voir le tableau ci-dessous). Par conséquent,
 
 * Si vous avez un site web HTTPS avec une diffusion vidéo en continu via HTTPS, la diffusion en continu est de qualité.
 * Si vous avez un site web HTTP avec une diffusion vidéo en flux continu via HTTPS, la diffusion en continu est de qualité et il n’y a aucun problème de contenu mixte du navigateur web.
 
-HLS est une norme d’Apple pour la diffusion de vidéo adaptative en continu qui ajuste automatiquement la lecture en fonction de la capacité de bande passante du réseau. Elle permet aussi au client ou à la cliente de « rechercher » n’importe quel point de la vidéo sans avoir à attendre que le reste de la vidéo soit téléchargé.
+DASH est la norme internationale et HLS est une norme Apple. Les deux sont utilisés pour la diffusion en continu de vidéo adaptative. De plus, les deux technologies ajustent automatiquement la lecture en fonction de la capacité de bande passante du réseau. Elle permet aussi au client ou à la cliente de « rechercher » n’importe quel point de la vidéo sans avoir à attendre que le reste de la vidéo soit téléchargé.
 
 La vidéo progressive est diffusée en téléchargeant et en stockant la vidéo localement sur le système de bureau ou l’appareil mobile d’un utilisateur.
 
@@ -231,17 +231,17 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   <tr>
    <td>Poste de travail</td>
    <td>Firefox 45 ou version ultérieure</td>
-   <td>Diffusion en continu adaptative DASH* ou HLS.</td>
+   <td>Diffusion en continu à débit adaptatif DASH* ou HLS.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
    <td>Chrome</td>
-   <td>Diffusion en continu adaptative DASH* ou HLS.</td>
+   <td>Diffusion en continu à débit adaptatif DASH* ou HLS.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
    <td>Safari (Mac)</td>
-   <td>HLS diffusion en continu adaptative.</td>
+   <td>HLS diffusion en continu à débit adaptatif.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -251,7 +251,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   <tr>
    <td>Mobile</td>
    <td>Chrome (Android™ 7 ou version ultérieure)</td>
-   <td>Diffusion en continu adaptative DASH* ou HLS.</td>
+   <td>Diffusion en continu à débit adaptatif DASH* ou HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -261,17 +261,17 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS diffusion en continu adaptative.</td>
+   <td>HLS diffusion en continu à débit adaptatif.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS diffusion en continu adaptative.</td>
+   <td>HLS diffusion en continu à débit adaptatif.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>BlackBerry®</td>
-   <td>Diffusion en continu adaptative DASH* ou HLS./td&gt;
+   <td>Diffusion en continu à débit adaptatif DASH* ou HLS./td&gt;
   </tr>
  </tbody>
 </table>
@@ -436,7 +436,7 @@ DASH (Digital Adaptive Streaming over HTTP) est la norme internationale pour la 
 
 Voici quelques avantages clés de l’activation du DASH sur votre compte :
 
-* Regroupez la vidéo de flux DASH pour la diffusion en continu adaptative. Cette méthode permet d&#39;accroître l&#39;efficacité de la diffusion. La diffusion en continu adaptative garantit la meilleure expérience d’affichage à vos clients.
+* Regroupez la vidéo de flux DASH pour la diffusion en continu à débit adaptatif. Cette méthode permet d&#39;accroître l&#39;efficacité de la diffusion. La diffusion en continu adaptative garantit la meilleure expérience d’affichage à vos clients.
 * La diffusion en continu optimisée par le navigateur avec les lecteurs Dynamic Media bascule entre la diffusion en continu HLS et DASH pour garantir la meilleure qualité de service. Le lecteur vidéo passe automatiquement à HLS lorsqu’un navigateur Safari est utilisé.
 * Vous pouvez configurer votre méthode de diffusion en continu préférée (HLS ou DASH) en modifiant le paramètre prédéfini de la visionneuse de vidéos.
 * Le codage vidéo optimisé garantit qu’aucun stockage supplémentaire n’est utilisé lors de l’activation de la fonctionnalité DASH. Un seul ensemble de codes vidéo est créé pour HLS et DASH afin d’optimiser les coûts de stockage vidéo.

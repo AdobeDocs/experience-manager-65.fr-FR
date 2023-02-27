@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4522'
 ht-degree: 95%
 
 ---
@@ -459,7 +459,7 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
 1. (Facultatif) Près de la partie supérieure de la page Modification des paramètres de visionneuse prédéfinis, sélectionnez **[!UICONTROL Ordinateur de bureau]**, **[!UICONTROL Tablette]** ou **[!UICONTROL Téléphone]** pour définir de manière unique les styles visuels pour différents types d’appareils et d’écrans.
 1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le sélectionner pour le configurer.
-Par exemple, pour la variable *VideoPlayer* type, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu adaptative :
+Par exemple, pour la variable *VideoPlayer* type, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu à débit adaptatif :
 
    * **[!UICONTROL dash]** - Flux vidéo en tant que tiret uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner **[!UICONTROL hls]** comme type.
    * **[!UICONTROL hls]** - Diffusion vidéo en continu sous la forme de fichiers hls uniquement.
@@ -492,7 +492,7 @@ Par exemple, pour la variable *VideoPlayer* type, sous **[!UICONTROL Modificateu
 
    >[!IMPORTANT]
    >
-   >Pour les anciennes vidéos qui utilisent un profil de diffusion en continu adaptatif, l’URL continue de fonctionner normalement (avec la diffusion HLS en continu) jusqu’à ce que vous [Retraiter les ressources vidéo](/help/assets/processing-profiles.md#reprocessing-assets). Après le retraitement, la même URL continuera à fonctionner, mais désormais avec *both* Diffusion en continu DASH et HLS activée.
+   >Pour les anciennes vidéos qui utilisent un profil de diffusion en continu à débit adaptatif, l’URL continue de fonctionner normalement (avec diffusion HLS en continu) jusqu’à ce que vous [Retraiter les ressources vidéo](/help/assets/processing-profiles.md#reprocessing-assets). Après le retraitement, la même URL continuera à fonctionner, mais désormais avec *both* Diffusion en continu DASH et HLS activée.
 
 ### Remarques spéciales sur la création d’un paramètre de visionneuse interactive prédéfini {#special-considerations-for-creating-an-interactive-viewer-preset}
 
