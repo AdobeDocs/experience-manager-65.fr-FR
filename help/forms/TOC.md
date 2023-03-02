@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 29b283970f2c37782700b69302715e8404ce83ae
+source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
 workflow-type: tm+mt
-source-wordcount: '3835'
+source-wordcount: '3846'
 ht-degree: 99%
 
 ---
@@ -342,7 +342,7 @@ ht-degree: 99%
    + [Dossier de contrôle dans AEM Forms](using/watched-folder-in-aem-forms.md)
    + [Composant Drafts &amp; Submissions](using/draft-submission-component.md)
    + [Intégration du composant Link dans une page](using/embedding-link-component-page.md)
-   + [Publication et annulation de publication de formulaires et documents](using/publishing-unpublishing-forms.md)
+   + [Publication et dépublication de formulaires et documents](using/publishing-unpublishing-forms.md)
    + [Affichage d’une liste des formulaires sur une page Web à l’aide d’API](using/listing-forms-webpage-using-apis.md)
    + [Accès et remplissage des formulaires publiés](using/accessing-filling-published-forms.md)
    + [Envoi d’un accusé de réception d’envoi de formulaire par e-mail](using/form-submission-receipt-via-email.md)
@@ -689,6 +689,7 @@ ht-degree: 99%
    + [Impossible d’ouvrir les formulaires PDF XFA dans Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [Impossible de restaurer le référentiel CRX.](/help/forms/using/restore-crx-repository.md)
    + [Erreurs du service indisponibles après l’installation AEM Service Pack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
+   + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement Linux de JBoss](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
    + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)

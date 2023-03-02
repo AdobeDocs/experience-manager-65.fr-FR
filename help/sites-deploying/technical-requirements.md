@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 93de94bb17ea898f0fe15e62fb031cab239a3682
+source-git-commit: 74535a6ad78abf795f55f1ba4e1123b58802aefe
 workflow-type: tm+mt
-source-wordcount: '3534'
-ht-degree: 95%
+source-wordcount: '3536'
+ht-degree: 94%
 
 ---
 
@@ -131,7 +131,7 @@ Plusieurs options sont disponibles pour déployer le référentiel d’Adobe Ex
 | Apache Solr | Service de recherche | A : pris en charge |
 
 1. Le système de fichiers comprend le stockage de bloc compatible avec POSIX. Cela inclut la technologie de stockage réseau. Notez que les performances du système de fichiers sont variables et ont une incidence sur les performances globales. Il est conseillé d’effectuer un test de charge d’AEM avec le système de fichiers distant/réseau.
-1. MongoDB Enterprise 4.2 nécessite AEM 6.5 SP9 au minimum.
+1. MongoDB Enterprise versions 4.2 et 4.4 nécessitent AEM 6.5 SP9 au minimum.
 1. La fragmentation MongoDB n’est pas prise en charge dans AEM. 
 1. Seule le moteur de stockage MongoDB WiredTiger est prise en charge. 
 1. Pris en charge pour les clients de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.

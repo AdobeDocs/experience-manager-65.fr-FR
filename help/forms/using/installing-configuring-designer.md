@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
-workflow-type: ht
-source-wordcount: '290'
-ht-degree: 100%
+source-git-commit: 1b2d743f8f2172c4e4663917d598734cb1ea1ea4
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 55%
 
 ---
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 ## Prérequis {#pre-requisites}
 
 * Installation de la version 32 bits de [Redistribuable Visual C++ 2019 (x86)](https://learn.microsoft.com/fr-fr/cpp/windows/latest-supported-vc-redist?view=msvc-170). Assurez-vous que les packages d’exécution redistribuables susmentionnés sont installés avant de démarrer l’installation.
-* Un utilisateur ou une utilisatrice disposant des droits d’administration pour installer ou désinstaller Designer.
+* Utilisateur disposant des droits d’administrateur pour installer ou désinstaller AEM Forms Designer.
 
-## Installation de Designer {#install-designer}
+## Installation d’AEM Forms Designer {#install-designer}
 
-Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Si vous utilisez un programme d’installation autonome pour Designer, procédez comme suit :
+Designer est disponible sous la forme d’un programme autonome et est également fourni avec Workbench. Si vous utilisez un programme d’installation autonome pour AEM Forms Designer, procédez comme suit :
 
 1. Désinstallez la version précédente d’AEM Forms Designer, si elle est déjà installée.
 1. Téléchargez Designer depuis [Adobe Licensing Website](https://licensing.adobe.com/).
@@ -38,14 +38,14 @@ Designer est disponible sous la forme d’un programme autonome et est égalemen
    > * À compter de la version d’Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0), la version Forms Designer inclut également la version du Service Pack. Par exemple, pour le Service Pack 15, le numéro de version est 6.5.15.20221112.1.0. Dans cet exemple, 6.5.15 est la version du Service Pack.
 
 
-1. Lancez le programme d’installation de Designer en cliquant deux fois sur setup.exe.
+1. Lancez le programme d’installation d’AEM Forms Designer en double-cliquant sur setup.exe .
 1. Continuez et fournissez vos détails ainsi que le numéro de série dans la boîte de dialogue Personnalisation.
 1. Si vous acceptez les termes du contrat de licence, appuyez sur Suivant pour continuer.
 1. (Facultatif) Modifiez le chemin d’installation par défaut, si vous voulez installer Designer à l’emplacement de votre choix. Cliquez sur Suivant.
 1. Cliquez sur Précédent pour modifier les préférences. Pour installer Designer, cliquez sur Installer.
 1. Cliquez sur Terminer à la fin de l’installation.
 
-Vous pouvez également installer Designer via la ligne de commande en mode passif ou silencieux.
+Vous pouvez également installer AEM Forms Designer via la ligne de commande en mode passif ou silencieux.
 
 * Installation en ligne de commande passive : le programme d’installation affiche une barre de progression qui indique que l’installation est en cours mais aucun message d’erreur ou d’invite ne s’affiche. Une fois l’installation lancée, vous ne pouvez pas l’annuler.
 
@@ -58,3 +58,28 @@ msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-*
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
 ```
+
+## Mettre à jour AEM Forms Designer {#update-forms-designer}
+
+Il existe deux cas lors de la mise à jour de la dernière version d’AEM Forms Designer 6.5.16.0 :
+
+* **Cas 1**: Lorsque l’utilisateur dispose d’une version d’AEM Forms Designer antérieure à la version 6.5.15.0.
+* **Cas 2**: Lorsque l’utilisateur dispose de la version 6.5.15.0 d’AEM Forms Designer.
+
++++**Lorsque l’utilisateur dispose d’une version d’AEM Forms Designer antérieure à la version 6.5.15.0.**
+
+Si vous utilisez un programme d’installation autonome pour AEM Forms Designer, procédez comme suit :
+
+1. Avant l’installation **AEM Forms Designer 6.5.16.0**, les utilisateurs doivent désinstaller toutes les versions précédentes.
+1. Télécharger et installer [AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) à partir de la page Versions de formulaire d’AEM.
+1. Après une installation réussie de **AEM Forms Designer 6.5.15.0**, télécharger et installer [AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) en double-cliquant sur le fichier d’installation téléchargé .
+
++++
+
++++**Si l’utilisateur dispose de la version 6.5.15.0 d’AEM Forms Designer**
+
+Si vous utilisez un programme d’installation autonome pour AEM Forms Designer, procédez comme suit :
+1. Téléchargez la dernière version d’AEM Forms Designer à partir du [Portail de distribution de logiciels](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
+1. Installez la dernière version d’AEM Forms Designer en double-cliquant sur le fichier d’installation téléchargé.
+
++++

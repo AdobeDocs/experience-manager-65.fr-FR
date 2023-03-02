@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 676472125cf472d42b792fae87dffe263e499014
 workflow-type: tm+mt
-source-wordcount: '2196'
-ht-degree: 52%
+source-wordcount: '2605'
+ht-degree: 44%
 
 ---
 
@@ -78,13 +78,30 @@ Voir [Activation de DASH sur votre compte](/help/assets/video.md#enable-dash).
 
 ## [!DNL Forms] {#forms-6516}
 
->[!NOTE]
->
->Correctifs de [!DNL Experience Manager] Forms est livré par le biais d’un module complémentaire distinct une semaine après la planification de la [!DNL Experience Manager] Date de publication du Service Pack. Dans ce cas, les modules complémentaires sont publiés le jeudi 2 mars 2023. En outre, une liste des correctifs et améliorations de Forms est ajoutée à cette section.
+### [!DNL Forms] Fonctions clés {#forms-features-6516}
 
-<!--
-### [!DNL Forms] Fixes {#forms-fixes-6516}
--->
+* [Forms adaptatif sans affichage](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) permettent aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique.
+
+* [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sont un ensemble de 24 composants Open Source compatibles avec BEM qui sont construits sur la base des composants principaux de la gestion de contenu web Adobe Experience Manager. Ces composants sont Open Source et permettent aux développeurs de personnaliser et d’étendre facilement ces composants en fonction des besoins spécifiques de leur entreprise. Toute personne disposant de compétences pour personnaliser [Composants principaux WCM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) peuvent facilement personnaliser et mettre en forme ces composants.
+
+* Le service Reader Extension sur OSGi fournit désormais des options distinctes permettant d’importer et d’exporter des droits d’utilisation sur un PDF afin d’importer ou d’exporter des données dans Adobe Acrobat Reader. (NPR-39909)
+
+### [!DNL Forms] Correctifs {#forms-fixes-6516}
+
+* Lorsque vous utilisez une étape Affecter une tâche** pour envoyer une notification pour une tâche affectée, deux emails sont envoyés au lieu d’un à la personne affectée. (NPR-40078)
+* Lorsqu’un utilisateur masque les en-têtes de tableau, la largeur de colonne précédemment définie est désactivée et toutes les colonnes conservent la même largeur. (NPR-40063)
+* Si vous modifiez le mot de passe par défaut de l’utilisateur administrateur à partir de `admin`, lors de l’exécution de la fonction `Prepare Adobe Experience Manager Server For DSC deployment` vérifiez le service pack AEM Forms JEE qui échoue. (NPR-40062), (NPR-39387)
+* Les API OutputService et AssemblerService ne parviennent pas à convertir le formulaire du PDF en PDF/A. (NPR-39990)
+* AssemblerService ne peut pas convertir le PDF en PDF/A. Lorsqu’un utilisateur convertit un PDF en PDF/A, l’erreur suivante se produit : `PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Summary" ignoreUnusedResources="true" allowCertificationSignatures="true"> <Violation count="6" key="PDFA_CS_001_NOT_DEVICE_INDEPENDENT" description="ColorSpace is not device independent`. (NPR-39956)
+* Lorsque la validation côté serveur échoue pour un appel de l’API GuideSubmitServlet, les erreurs ne sont pas renvoyées dans la réponse envoyée au client. (NPR-39925)
+* Après la mise à niveau vers AEM 6.5.15.0 Service Pack sur le serveur Windows, l’utilisateur rencontre plusieurs messages d’erreur et le service de messagerie ne fonctionne pas.(NPR-39919)
+* Lorsque vous effectuez une mise à niveau vers AEM 6.5.14.0 et que vous utilisez le service importData pour fusionner des PDF avec XML, l’erreur suivante se produit : `Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
+* Lorsque l’utilisateur installe **Document Security Office** , les problèmes suivants se produisent :
+   * Microsoft® Excel se bloque fréquemment.
+   * Lors de l’ouverture d’un document sécurisé, la variable **Bureau de sécurité des documents** n’est pas détecté comme installé sur une machine. Indique à l’utilisateur de télécharger et d’installer l’extension de sécurité. (NPR-39768)
+* Une fois qu’un utilisateur a effectué la mise à niveau vers AEM Service Pack 6.5.15.0, la conversion PostScript vers Pdf ne fonctionne pas. (NPR-39765), (NPR-39764)
+* Lorsque l’utilisateur tente d’ouvrir l’écran de la visite après l’ouverture d’un formulaire adaptatif, il échoue avec une exception NullPointer :`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* Sous Windows, lorsque l’utilisateur active des paramètres noirs à fort contraste, le contenu Forms HTML5 devient flou lors du rendu en tant qu’aperçu de HTML dans le navigateur. (NPR-39018)
 
 ## Intégrations {#integrations-6516}
 
@@ -205,16 +222,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 ### Installer le Service Pack pour [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
 
->[!NOTE]
->
->Passez cette étape si vous n’utilisez pas [!DNL Experience Manager] Forms.
-
-Les correctifs d’[!DNL Experience Manager] Forms sont publiés par le biais d’un package complémentaire distinct une semaine après la publication prévue du pack de services [!DNL Experience Manager].
-
-<!-- 
-
-For instructions to install the service pack on AEM Forms, see [AEM Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
--->
+Pour obtenir des instructions sur l’installation du Service Pack sur AEM Forms, voir [Instructions d’installation du Service Pack AEM Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
@@ -264,7 +272,7 @@ Ce module est nécessaire pour les client(e)s utilisant GraphQL. Il leur permet 
 
 * Mettez à jour vos requêtes GraphQL qui peuvent avoir utilisé un nom d’API personnalisé pour votre modèle de contenu afin d’utiliser plutôt le nom par défaut du modèle de contenu.
 
-* [!DNL Microsoft® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ne prend donc pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
+* [!DNL Microsoft®® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] ne prend donc pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
 
 * Si vous mettez à niveau votre [!DNL Experience Manager] de 6.5.0 à 6.5.4, jusqu’au dernier Service Pack sur Java™ 11, vous pouvez voir `RRD4JReporter` exceptions dans la variable `error.log` fichier . Pour arrêter les exceptions, redémarrez votre instance de [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
@@ -289,6 +297,9 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
      ]
    "refresh": true
    ```
+
+* Dans AEM Forms, le protocole POP3 ne fonctionne pas avec les points de fin de courrier électronique pour Microsoft® Office 365.
+* Sur la plateforme JBoss® 7.1.4, lorsque l’utilisateur installe AEM Service Pack 6.5.16.0, `adobe-livecycle-jboss.ear` échec du déploiement.
 
 ## Lots OSGi et modules de contenu inclus {#osgi-bundles-and-content-packages-included}
 
