@@ -8,10 +8,10 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: c5bc743f845281bdbad522053c0e57791921ffd2
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1317'
+ht-degree: 98%
 
 ---
 
@@ -139,8 +139,10 @@ ht-degree: 100%
       + [API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=fr)
       + [API REST de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=fr)
       + [API GraphQL de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-api-content-fragments.html?lang=fr)
+      + [Utilisation de l’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphiql-ide.html)
+      + [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/persisted-queries.html)
+      + [Authentification pour les requêtes GraphQL AEM distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html?lang=fr)
       + [API AEM GraphQL avec fragments de contenu – Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/content-fragments-graphql-samples.html?lang=fr)
-      + [Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/graphql-authentication-content-fragments.html?lang=fr)
 + Développement hybride et SPA AEM{#spas}
    + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [Introduction et présentation des applications monopage (SPA)](spa-walkthrough.md)
@@ -168,7 +170,7 @@ ht-degree: 100%
    + [Éditeur de boîtes de dialogue](dialog-editor.md)
    + [Outil de conversion de boîte de dialogue](dialog-conversion.md)
    + [Développement dans CRXDE Lite](developing-with-crxde-lite.md)
-   + [Gestion des modules à l’aide de Maven](vlt-mavenplugin.md)
+   + [Gestion des packages à l’aide de Maven](vlt-mavenplugin.md)
    + [Développement de projets AEM à l’aide d’Eclipse](howto-projects-eclipse.md)
    + [Création de projets AEM à l’aide d’Apache Maven](ht-projects-maven.md)
    + [Développement de projets AEM à l’aide de IntelliJ IDEA](ht-intellij.md)
