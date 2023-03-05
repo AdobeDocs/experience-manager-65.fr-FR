@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 2a350548674ff3f8dc49defa47ac2b028da76f4b
+source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -117,7 +117,7 @@ AEM Managed Services est une solution complète pour la gestion de l’expérien
 
 Avec AEM Managed Services, les clients peuvent bénéficier des avantages suivants :
 
-**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences digitales réussies. Adobe gère l’architecture cloud sans autre investissement en capital, matériel ou logiciel, et les ingénieurs Adobe offrent une aide pour l’architecture AEM, la configuration, la personnalisation pour la connexion aux applications principales et les meilleures pratiques de mise en production.
+**Un délai de mise sur le marché plus rapide :** avec l’infrastructure cloud flexible d’Adobe Managed Services, les entreprises peuvent rapidement planifier, lancer et optimiser des expériences digitales réussies. Adobe gère l’architecture cloud sans avoir besoin de capital, de matériel ou de logiciels supplémentaires. Les ingénieurs des solutions clients d’Adobe vous aident à AEM l’architecture, la mise en service et la personnalisation de la connexion aux applications principales et des bonnes pratiques de mise en service.
 
 **De meilleures performances :** fournit des expériences numériques fiables pour votre entreprise avec quatre options de disponibilité du service : 99,5 %, 99,9 %, 99,95 % et 99,99 %. De plus, il permet des modèles de sauvegarde automatique et de reprise sur sinistre multimodes pour assurer la gestion de la fiabilité et des imprévus.
 

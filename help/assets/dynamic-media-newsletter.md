@@ -7,10 +7,10 @@ solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Collaboration,Dynamic Media Classic
-source-git-commit: cdf6a22e8a0fd2e73cd4d25074e0c7162c047d92
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: a7f1f41d54663b753bc22c6e5d54b4cb621609fd
+workflow-type: tm+mt
+source-wordcount: '1077'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
     * Summit customer spotlight: Under Armour.
     * Never miss an Experience Insider webinar.
     * Public sector spotlight: The urgent need for digital enrollment.
-    * Look what’s new in Experience Manager Innovation.
+    * Look what's new in Experience Manager Innovation.
     * Build your Experience Manager skills *live* with the Adobe pros.
     * Connect with the Adobe Experience Manager Community.
     * Fast-track your Adobe expertise with Adobe Experience League. -->
@@ -54,7 +54,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez les webinaires Skill Builder à la demande pour Dynamic Media Classic.
    * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
    * En savoir plus sur les audits gratuits Dynamic Media Classic d’Adobe.
-   * Faites la connaissance de `John Monroe`, responsable de programme senior pour les services de la réussite client.
+   * Respecter `Jon Monroe`, responsable de programme senior pour les solutions clients d’Adobe.
 
 * **[Février 2020, numéro 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=fr)**
 
@@ -65,7 +65,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Explorez les puissantes fonctions de recadrage de Dynamic Media.
    * Profitez d’un audit gratuit d’Adobe pour vous aider à exploiter tout le potentiel de Dynamic Media Classic.
    * Découvrez la nouvelle interface utilisateur Dynamic Media Classic.
-   * Faites la connaissance de `Georgia Myers`, responsable de la réussite client pour Adobe Experience Cloud.
+   * Respecter `Georgia Myers` de l’équipe du compte d’Adobe pour Adobe Experience Cloud.
 
 * **[Janvier 2020, numéro 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=fr)**
 
