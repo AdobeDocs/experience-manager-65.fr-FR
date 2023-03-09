@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
+source-git-commit: 28046104e75a833736f53b0e9d1edf4c8fbe6249
 workflow-type: tm+mt
-source-wordcount: '5918'
-ht-degree: 99%
+source-wordcount: '5898'
+ht-degree: 98%
 
 ---
 
@@ -574,15 +574,9 @@ Le fichier error.log sera détaillé si des incidents surviennent pendant le pro
 
 >[!CAUTION]
 >
->Les différentes versions de l’outil exécuté par Oak doivent être utilisées en fonction de la version d’Oak que vous utilisez avec votre installation AEM. Vérifiez les exigences de version énumérés ci-dessous avant d’utiliser l’outil :
->
->* Pour les versions Oak **1.0.0 à 1.0.11** ou **1.1.0 à 1.1.6**, utilisez la version **1.0.11** exécutée par Oak.
->
->* Pour des versions d’Oak **plus récentes que celle ci-dessus**, utilisez la version d’Oak-run qui correspond au système Oak de votre installation AEM. 
->
+>Utilisez une version de l’outil exécuté par Oak dont le numéro de version (majeur et mineur) correspond à la version principale Oak de votre installation AEM. Par exemple, si votre instance AEM possède la version de base 1.22.x d’Oak, vous devez utiliser l’outil exécuté par Oak version 1.22.x.
 
-
-Adobe propose un outil appelé **Oak-run** pour effectuer le nettoyage des révisions. Il peut être téléchargé à l’emplacement suivant :
+Adobe fournit un outil appelé **Oak-run** pour effectuer un nettoyage des révisions. Il peut être téléchargé à l’emplacement suivant :
 
 [https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 
