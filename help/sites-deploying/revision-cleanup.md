@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 28046104e75a833736f53b0e9d1edf4c8fbe6249
+source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
 workflow-type: tm+mt
-source-wordcount: '5898'
+source-wordcount: '5901'
 ht-degree: 98%
 
 ---
@@ -574,7 +574,7 @@ Le fichier error.log sera détaillé si des incidents surviennent pendant le pro
 
 >[!CAUTION]
 >
->Utilisez une version de l’outil exécuté par Oak dont le numéro de version (majeur et mineur) correspond à la version principale Oak de votre installation AEM. Par exemple, si votre instance AEM possède la version de base 1.22.x d’Oak, vous devez utiliser l’outil exécuté par Oak version 1.22.x.
+>Utilisez une version de l’outil exécuté par Oak dont le numéro de version (majeur et mineur) correspond à la version principale Oak de votre installation AEM. Par exemple, si votre instance AEM possède la version de base 1.22.x d’Oak, vous devez utiliser la dernière version de l’outil exécuté par Oak 1.22.x.
 
 Adobe fournit un outil appelé **Oak-run** pour effectuer un nettoyage des révisions. Il peut être téléchargé à l’emplacement suivant :
 
