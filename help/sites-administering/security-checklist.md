@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 66e9e8e1d9f43faa3d0e4fe61e8206bdab1348f6
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 7efe4a011d831c34f6aafd877654e8b41fec96e0
+workflow-type: tm+mt
+source-wordcount: '2889'
+ht-degree: 97%
 
 ---
 
@@ -86,19 +86,25 @@ Pour plus d’informations sur la modification du mot de passe de la console web
 
 #### Modification du mot de passe administrateur de la console web OSGi {#changing-the-osgi-web-console-admin-password}
 
-Vous devez également modifier le mot de passe utilisé pour accéder à la console web. À cet effet, configurez les propriétés de la [console de gestion OSGi Apache Felix](/help/sites-deploying/osgi-configuration-settings.md) suivantes :
+Vous devez également modifier le mot de passe utilisé pour accéder à la console web. Cette opération s’effectue avec une [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour mettre à jour les propriétés suivantes de la variable **Console de gestion OSGi Apache Felix**:
 
-**Nom d’utilisateur** et **Mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.
-Le mot de passe doit être modifié après l’installation initiale pour garantir la sécurité de votre instance. 
+* **Nom d’utilisateur** et **Mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.
+Le mot de passe doit être modifié. *after* l’installation initiale pour garantir la sécurité de votre instance.
 
 Pour ce faire :
 
-1. Accédez à la console web sur `<server>:<port>/system/console/configMgr`.
-1. Accédez à la **console de gestion OSGi Apache Felix** et remplacez le **nom d’utilisateur** et le **mot de passe**.
+>[!NOTE]
+>
+>Voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration des paramètres OSGi.
+
+1. En utilisant la variable **Outils**, **Opérations** , ouvrez le menu **Console web** et accédez au **Configuration** .
+Par exemple, à l’adresse `<server>:<port>/system/console/configMgr`.
+1. Accédez à l’entrée et ouvrez-la pour **Console de gestion OSGi Apache Felix**.
+1. Modifiez la variable **nom d’utilisateur** et **password**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-1. Cliquez sur **Enregistrer**.
+1. Sélectionnez **Enregistrer**.
 
 ### Mise en œuvre d’un gestionnaire d’erreur personnalisé {#implement-custom-error-handler}
 
@@ -142,7 +148,7 @@ Tous les exemples de contenu et d’utilisateurs (par exemple, le projet Geometr
 
 >[!NOTE]
 >
->Les exemples d’applications We.Retail sont supprimés si cette instance est en cours d’exécution en [mode Prêt pour la production](/help/sites-administering/production-ready.md). Si, pour quelque raison que ce soit, ce n’est pas le cas, vous pouvez désinstaller l’exemple de contenu en sélectionnant le Gestionnaire de modules, puis en recherchant et en désinstallant tous les modules We.Retail. Pour plus d’informations, consultez la page [Utilisation des modules](package-manager.md).
+>Les exemples d’applications We.Retail sont supprimés si cette instance est en cours d’exécution en [mode Prêt pour la production](/help/sites-administering/production-ready.md). Si, pour quelque raison que ce soit, ce n’est pas le cas, vous pouvez désinstaller l’exemple de contenu en sélectionnant le Gestionnaire de packages, puis en recherchant et en désinstallant tous les packages We.Retail. Pour plus d’informations, consultez la page [Utilisation des packages](package-manager.md).
 
 ### Contrôle de la présence des lots de développement CRX {#check-if-the-crx-development-bundles-are-present}
 
