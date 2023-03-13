@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
+source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
 workflow-type: tm+mt
-source-wordcount: '5901'
-ht-degree: 98%
+source-wordcount: '5903'
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 ## Présentation {#introduction}
 
-Chaque mise à jour du référentiel crée une nouvelle révision de contenu. Par conséquent, avec chaque mise à jour, la taille du référentiel augmente. Pour éviter une croissance incontrôlée au référentiel, il faut nettoyer les anciennes révisions pour libérer de l’espace sur le disque. Cette fonctionnalité de maintenance est appelée le nettoyage des révisions. Elle est disponible sous forme de programme hors ligne depuis AEM 6.0.
+Chaque mise à jour du référentiel crée une nouvelle révision de contenu. Par conséquent, à chaque mise à jour, la taille du référentiel augmente. Les anciennes révisions doivent être nettoyées pour libérer des ressources de disque. Ceci est important pour éviter une croissance incontrôlée du référentiel. Cette fonctionnalité de maintenance est appelée le nettoyage des révisions. Elle est disponible sous forme de programme hors ligne depuis AEM 6.0.
 
 Avec AEM version 6.3 et ultérieure, une version en ligne de cette fonctionnalité appelée Nettoyage des révisions en ligne a été introduite. Comparé au nettoyage des révisions hors ligne où l’instance AEM doit être arrêtée, le nettoyage des révisions en ligne peut être exécuté en maintenant l’instance AEM en ligne. Le nettoyage des révisions en ligne est activé par défaut, car il s’agit de la méthode recommandée pour effectuer un nettoyage des révisions.
 
