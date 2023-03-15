@@ -6,7 +6,7 @@ user-guide-description: Les parcours de documentation fournissent une structure 
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 100%
 
