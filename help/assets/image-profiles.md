@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: f93e57c861ceda20ee82019da38b3b16791dbd0d
+source-git-commit: 32ff13dbf8fbf17258a3df21b86575fa65c4ceeb
 workflow-type: tm+mt
-source-wordcount: '3011'
+source-wordcount: '3008'
 ht-degree: 90%
 
 ---
@@ -45,14 +45,14 @@ Chaque génération de recadrage intelligent créée nécessite un traitement su
 **Instructions pour définir le recadrage intelligent dans un profil d’image**
 Pour contrôler l’utilisation du recadrage intelligent et optimiser le temps de traitement et le stockage des recadrages, Adobe recommande les instructions et conseils suivants :
 
-* Les ressources d’image pour lesquelles un recadrage intelligent leur sera appliqué doivent faire au moins 50 x 50 pixels ou plus. &lt;!-- CQDOC-20087>
-* Un profil d’image contenant des dimensions de recadrage intelligent en double n’est pas autorisé. &lt;!-- CQDOC-20087>
-* Les profils d’image dont les options de recadrage intelligent sont définies en double ne sont pas autorisés. &lt;!-- CQDOC-20087>
+* Les ressources d’image pour lesquelles un recadrage intelligent leur sera appliqué doivent faire au moins 50 x 50 pixels ou plus. <!-- CQDOC-20087 -->
+* Un profil d’image contenant des dimensions de recadrage intelligent en double n’est pas autorisé. <!-- CQDOC-20087 -->
+* Les profils d’image dont les options de recadrage intelligent sont définies en double ne sont pas autorisés. <!-- CQDOC-20087 -->
 * Créez des profils d’image au niveau de la page ou du type de ressource pour des dossiers et sous-dossiers spécifiques au lieu d’un profil de recadrage intelligent commun appliqué à tous les dossiers ou à toutes les ressources.
 * Un profil d’image que vous appliquez aux sous-dossiers remplace un profil d’image appliqué au dossier.
 * Idéalement, effectuez 10 à 15 recadrages intelligents par image afin d’optimiser les proportions et le temps de traitement.
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
 Vous avez le choix entre deux options de recadrage d’image. Vous pouvez également choisir d’automatiser la création de nuanciers de couleurs et d’images ou de conserver le contenu de recadrage dans toutes les résolutions cibles.
 
