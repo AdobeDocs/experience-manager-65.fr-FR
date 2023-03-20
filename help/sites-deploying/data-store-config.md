@@ -7,13 +7,13 @@ docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3584'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Configurer les magasins de nœuds et les entrepôts de données dans AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Configurer les magasins de nœuds et les entrepôts de données dans AEM 6 {#configuring-node-stores-and-data-stores-in-aem}
 
 ## Présentation {#introduction}
 
@@ -443,7 +443,7 @@ Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 * accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft Azure, reportez-vous à la [documentation officielle](https://azure.microsoft.com/fr-fr/documentation/articles/storage-create-storage-account). 
 
 * secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
-* container=&quot;&quot; : nom du conteneur de stockage blob Microsoft Azure. Le conteneur est le regroupement d’un ensemble de blobs. Pour plus de détails, consultez[ la documentation officielle](https://msdn.microsoft.com/en-us/library/dd135715.aspx). 
+* container=&quot;&quot; : nom du conteneur de stockage blob Microsoft Azure. Le conteneur est le regroupement d’un ensemble de blobs. Pour plus de détails, consultez[ la documentation officielle](https://msdn.microsoft.com/fr-FR/library/dd135715.aspx). 
 * maxConnections=&quot;&quot; : nombre de demandes simultanées par opération. La valeur par défaut est 1.
 * maxErrorRetry=&quot;&quot; : nombre de nouvelles tentatives par demande. La valeur par défaut est 3.
 * socketTimeout=&quot;&quot; : intervalle d’expiration, en millisecondes, utilisé pour la demande. la valeur par défaut est de 5 minutes.
