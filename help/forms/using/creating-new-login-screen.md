@@ -1,7 +1,7 @@
 ---
 title: Créer un écran de connexion
 seo-title: Creating a new login screen
-description: Comment modifier la page de connexion des modules de LiveCycle, par exemple de l’espace de travail AEM Forms ou de Forms Manager.
+description: Comment modifier la page de connexion des modules de LiveCycle, par exemple AEM Forms Workspace ou Forms Manager.
 seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
@@ -10,16 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '463'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 85%
 
 ---
 
 # Créer un écran de connexion{#creating-a-new-login-screen}
 
-Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent à la fois l’écran de connexion de Forms Manager et de l’espace de travail AEM Forms.
+Vous pouvez modifier l’écran de connexion de tous les modules AEM Forms qui utilisent l’écran de connexion AEM Forms. Par exemple, les modifications affectent l’écran de connexion de Forms Manager et de l’espace de travail AEM Forms.
 
 ## Prérequis {#prerequisite}
 
@@ -195,7 +195,7 @@ String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
 ```
 
-### Ajout de nouveau texte ou modification du texte existant {#adding-new-text-or-modifying-existing-text}
+### Ajouter un nouveau texte ou modifier du texte existant {#adding-new-text-or-modifying-existing-text}
 
 1. Copiez le dossier `i18n`
 
@@ -245,8 +245,8 @@ String browserLocale = "en";
    * vers `/apps/livecycle/core/content`
 
 1. Supprimez les fichiers `login.js` et `jquery-1.8.0.min.js` du noeud `/apps/livecycle/core/content/login.`
-1. Modifiez les styles définis dans le fichier CSS.
-1. Pour ajouter de nouveaux styles :
+1. Modifiez les styles du fichier CSS.
+1. Pour ajouter de nouveaux styles :
 
    1. Ajoutez de nouveaux styles à `/apps/livecycle/core/content/login/login.css`
    1. Copier `login.jsp`
@@ -289,10 +289,10 @@ css.newLoginContentArea {
 ### Ajoutez de nouvelles images {#add-new-images}
 
 1. Suivez les étapes des sections Ajout d’un nouveau style ou Modification d’un style existant (présentées ci-dessus).
-1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
+1. Ajoutez de nouvelles images dans `/apps/livecycle/core/content/login`. Pour ajouter une image :
 
    1. Installez le client WebDAV.
-   1. Naviguez jusqu’au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, consultez le site [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/fr/crx/current/how_to/webdav_access.html).
+   1. Naviguez jusqu’au dossier `/apps/livecycle/core/content/login` à l’aide du client webDAV. Pour plus d’informations, consultez le site [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
    1. Ajoutez de nouvelles images.
 

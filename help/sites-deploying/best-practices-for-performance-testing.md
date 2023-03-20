@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
-workflow-type: ht
-source-wordcount: '1897'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '1898'
+ht-degree: 33%
 
 ---
 
@@ -21,49 +21,49 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-Les tests de performance constituent une partie importante de tout déploiement d’AEM. Selon les exigences du client, les tests de performance peuvent être effectués sur les instances de publication, les instances d’auteur, ou les deux.
+Les tests de performance constituent une partie importante de tout déploiement d’AEM. Selon les besoins du client, les tests de performance peuvent être effectués sur les instances de publication, d’auteur ou les deux.
 
-Cette documentation présente les stratégies et méthodologies globales d’exécution des tests de performance ainsi que certains des outils mis à disposition par Adobe pour faciliter le processus. Enfin, nous analyserons certains des outils disponibles dans AEM 6 pour faciliter le réglage des performances, à la fois du point de vue de l’analyse du code et de la configuration du système.
+Cette documentation présente les stratégies et méthodologies globales d’exécution des tests de performance ainsi que certains des outils mis à disposition par Adobe pour faciliter le processus. Enfin, nous analyserons certains des outils disponibles dans AEM 6 pour faciliter l’optimisation des performances, tant du point de vue de l’analyse du code que de la configuration du système.
 
 ### Simulation de la réalité {#simulating-reality}
 
-Le plus important lorsque vous effectuez des tests de performance, c’est de vous assurer que vous simulez un environnement de production le plus fidèlement possible. Même si c’est souvent difficile de le faire, il est impératif de garantir la précision de ces tests. Lorsque vous concevez des tests de performance, il est important de prendre en compte les points suivants :
+Le plus important lors des tests de performance est de s’assurer que vous imitez un environnement de production aussi fidèlement que possible. Bien que cela puisse souvent être difficile, il est impératif d’assurer l’exactitude de ces tests. Lorsque vous concevez des tests de performance, il est important de prendre en compte les points suivants :
 
-* Contenu semblable à la production
+* Contenu de type production
 
-Dans AEM, de nombreuses mesures de performance, par exemple le temps de réponse d’une requête, peuvent être affectées par la taille du contenu du système. Il est important de s’assurer que l’environnement de test est le plus fidèle possible aux données de production.
+De nombreuses mesures de performances dans AEM, telles que le temps de réponse des requêtes, peuvent être affectées par la taille du contenu sur le système. Il est important de s’assurer que l’environnement de test dispose d’une copie aussi proche que possible des données de production.
 
 * Code de production
 
-La version d’AEM et les correctifs déployés en production doivent être les mêmes dans l’environnement de test. Il est également important de tester la version du code qui est déployé en production.
+La version AEM et les correctifs déployés en production doivent être identiques dans l’environnement de test. Il est également important de tester la version du code déployé en production.
 
-* Matériel et configuration réseau semblables à la production
+* Configuration matérielle et réseau de type production
 
 Les tests n’auront aucun sens sans un environnement qui ressemble le plus possible à celui de la production. Idéalement, les spécifications matérielles, les interfaces réseau, les équilibreurs de charge et le réseau de diffusion de contenu doivent être identiques à la production dans l’environnement de test.
 
 * Charge de production
 
-De nombreux problèmes de performances ne sont pas visibles tant que le système n’est pas soumis à une charge importante. De bons tests de performance devraient simuler la charge à laquelle les systèmes de production seront soumis à leur maximum.
+De nombreux problèmes de performances ne sont pas visibles tant que le système n’est pas soumis à une charge importante. De bons tests de performance doivent simuler la charge que les systèmes de production devront supporter à leur maximum.
 
-### Établissement des objectifs {#setting-goals}
+### Définition des objectifs {#setting-goals}
 
-Avant de commencer les tests de performance, il est nécessaire de définir des exigences non fonctionnelles afin de spécifier la charge et les temps de réponse. Si vous migrez à partir d’un système existant, assurez-vous que le temps de réponse est similaire à vos valeurs de production actuelles. Pour la charge, il est préférable d’utiliser la charge de pointe actuelle et de la doubler. Cela permet au site web de continuer à être performant à mesure qu’il se développe.
+Avant de commencer les tests de performance, il est nécessaire de définir des exigences non fonctionnelles pour spécifier les temps de chargement et de réponse. Si vous migrez à partir d’un système existant, assurez-vous que le temps de réponse est similaire à vos valeurs de production actuelles. Pour la charge, il est préférable d’utiliser la charge de pointe actuelle et de la doubler. Cela permettra au site web de continuer à être performant au fur et à mesure de son développement.
 
 ### Outils {#tools}
 
-De nombreux outils de test de performance sont proposés sur le marché. Lors de l’exécution d’un outil de génération de charge, il est important de s’assurer que les ordinateurs qui effectuent les tests disposent d’une bande passante réseau suffisante. À défaut, une fois que la machine de test atteint les limites de sa connexion, aucune charge supplémentaire n’est générée sur l’environnement testé.
+De nombreux outils de test de performance sont proposés sur le marché. Lors de l’exécution d’un outil de génération de charge, il est important de s’assurer que les ordinateurs qui effectuent les tests disposent d’une bande passante réseau suffisante. Dans le cas contraire, une fois que la machine test aura atteint les limites de sa connexion, aucune charge supplémentaire ne sera générée sur l’environnement en cours de test.
 
 #### Outils de test {#testing-tools}
 
-* L’outil **Tough Day** d’Adobe peut être utilisé pour générer une charge sur des instances AEM et collecter des données de performance. L’équipe d’ingénierie AEM d’Adobe utilise actuellement l’outil pour effectuer des tests de charge sur le produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir la [documentation Tough Day](/help/sites-developing/tough-day.md).
+* Adobe **Tough Day** peut être utilisé pour générer la charge sur les instances AEM et collecter des données de performances. L’équipe AEM d’ingénierie d’Adobe utilise en fait l’outil pour effectuer des tests de charge du produit AEM lui-même. Les scripts exécutés dans Tough Day sont configurés via des fichiers de propriétés et des fichiers XML JMX. Pour plus d’informations, voir [Documentation de Tough Day](/help/sites-developing/tough-day.md).
 
-* AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir la section [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation Tableau de bord des opérations.
-* Apache propose un produit appelé **JMeter** pouvant être utilisé pour les tests de performance et de charge ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais dont le jeu de fonctionnalités est plus restreint que les produits destinées aux entreprises et dont la courbe d’apprentissage est plus rapide. JMeter est disponible sur le site Web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* AEM fournit des outils prêts à l’emploi pour identifier rapidement les requêtes, demandes et messages d’erreur problématiques. Pour plus d’informations, voir [Outils de diagnostic](/help/sites-administering/operations-dashboard.md#diagnosis-tools) de la documentation du tableau de bord des opérations.
+* Apache fournit un produit appelé **JMeter** qui peut être utilisé pour les tests de performance et de charge, ainsi que pour le comportement fonctionnel. Il s’agit d’un logiciel open source et gratuit, mais il dispose d’un plus petit ensemble de fonctionnalités que les produits d’entreprise et d’une courbe d’apprentissage plus rapide. JMeter est disponible sur le site web d’Apache à l’adresse [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
 * **Load Runner** est un produit de test de charge de qualité professionnelle. Une version d’évaluation gratuite est disponible. Vous trouverez plus d’informations à l’adresse [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview).
 
-* Des outils de test de charge dans le cloud comme [Neustar](https://www.neustar.biz/services/Web-performance/load-testing) peuvent également être utilisés.
-* Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante réseau et en simulant des connexions mobiles plus lentes telles que 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
+* Les outils de test de chargement basés sur le cloud tels que [Neustar](https://www.neustar.biz/services/Web-performance/load-testing) peut également être utilisé.
+* Pour tester des sites web mobiles ou réactifs, un jeu d’outils distinct doit être utilisé. Ils fonctionnent en limitant la bande passante du réseau, en simulant des connexions mobiles plus lentes comme 3G ou EDGE. Les outils les plus utilisés sont les suivants : 
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** : fournit une interface utilisateur facile à utiliser et fonctionne à un niveau relativement bas sur la pile de mise en réseau. Prend en charge OS X et iOS.
    * [**Charles**](https://www.charlesproxy.com/) : application proxy de débogage Web qui, outre plusieurs autres utilisations, offre une fonction de limitation du réseau. Prend en charge Windows, OS X et Linux.
@@ -72,23 +72,23 @@ De nombreux outils de test de performance sont proposés sur le marché. Lors de
 
 **Surveillance**
 
-La documentation [Surveillance des performances](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) est une excellente ressource sur les outils et les méthodes à employer pour diagnostiquer les problèmes et identifier les zones à optimiser.
+Le [Surveillance des performances](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) la documentation est une bonne ressource pour les outils et les méthodes qui peuvent être utilisés pour diagnostiquer les problèmes et identifier les zones à optimiser.
 
 **Mode Développeur de l’IU tactile**
 
-L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. Tout comme les auteurs peuvent basculer entre les modes de modification et de prévisualisation, les développeurs peuvent passer en mode Développeur dans l’interface utilisateur de création pour voir le temps de rendu de chacun des composants sur la page et identifier les traces de pile de toutes les erreurs. Pour plus d’informations sur le mode Développeur, voir cette [présentation de CQ Gems](https://docs.adobe.com/content/ddc/fr/gems/aem-6-0-developer-mode.html).
+L’une des nouvelles fonctionnalités de l’interface utilisateur tactile d’AEM 6 est le mode Développeur. De la même manière que les auteurs peuvent basculer entre les modes de modification et d’aperçu, les développeurs peuvent passer en mode développeur dans l’interface utilisateur de création pour afficher le temps de rendu de chacun des composants de la page et pour afficher les traces de pile de toutes les erreurs. Pour plus d’informations sur le mode Développeur, voir cette section [Présentation de CQ Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 
-**Utilisation de rlog.jar pour lire les journaux de demandes**
+**Utilisation de rlog.jar pour lire les journaux de requêtes**
 
-Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. Ce fichier jar est inclus avec une installation AEM dans le dossier `/crx-quickstart/opt/helpers`. Pour plus d’informations sur l’outil rlog et le journal des demandes en général, voir la documentation [Surveillance et gestion](/help/sites-deploying/monitoring-and-maintaining.md).
+Pour une analyse plus complète des journaux de demandes d’un système AEM, vous pouvez utiliser `rlog.jar` pour rechercher et trier les fichiers `request.log` générés par AEM. Ce fichier jar est inclus avec une installation AEM dans le dossier `/crx-quickstart/opt/helpers`. Pour plus d’informations sur l’outil de journalisation et le journal des requêtes en général, reportez-vous à la section [Surveillance et maintenance](/help/sites-deploying/monitoring-and-maintaining.md) documentation.
 
-**Outil Explain Query**
+**Outil Expliquer la requête**
 
-L’[outil Explain Query](/help/sites-administering/operations-dashboard.md#explain-query) des outils ACS AEM peut servir à afficher les index utilisés lors de l’exécution d’une requête. Cela peut être très utile lors de l’optimisation de requêtes à exécution lente.
+Le [Explication de l’outil de requête](/help/sites-administering/operations-dashboard.md#explain-query) dans ACS AEM les outils peuvent être utilisés pour afficher les index utilisés lors de l’exécution d’une requête. Cela peut s’avérer très utile lors de l’optimisation de requêtes à exécution lente.
 
 **Outils PageSpeed** 
 
-Les outils PageSpeed de Google proposent une analyse de site pour garantir le respect des bonnes pratiques en matière de performances de page, ainsi qu’un plug-in pouvant être installé avec le Dispatcher sur une instance Apache pour des optimisations supplémentaires. Pour plus d’informations, consultez [site Web des outils PageSpeed](https://developers.google.com/speed/pagespeed/).
+Les outils PageSpeed de Google offrent une analyse du site pour respecter les bonnes pratiques en matière de performances de page, ainsi qu’un module externe qui peut être installé avec le dispatcher sur une instance Apache pour des optimisations supplémentaires. Pour plus d’informations, consultez [site Web des outils PageSpeed](https://developers.google.com/speed/pagespeed/).
 
 ## Environnement de création {#author-environment}
 
@@ -96,25 +96,25 @@ Les outils PageSpeed de Google proposent une analyse de site pour garantir le re
 
 Pour réaliser des tests de performance dans l’environnement de création, il est nécessaire de simuler l’expérience des auteurs d’exploitation. Cela signifie que les installations d’auteur doivent contenir tous les composants, les lots OSGi, la personnalisation de l’interface utilisateur, les index personnalisés et tous les autres ajouts que vous avez mis en place pour les instances d’auteur d’exploitation.
 
-De nombreuses structures d’automatisation disponibles sont conçues pour les tests de performance et de charge. Des scripts personnalisés peuvent être enregistrés dans ces outils, puis exécutés pour simuler un nombre maximal d’auteurs effectuant simultanément des activités similaires de création et d’activation de contenu. Il est recommandé d’utiliser l’outil Tough Day pour simuler des activités telles que le téléchargement de milliers de ressources ou l’activation d’un grand nombre de pages.
+De nombreuses structures d’automatisation disponibles sont conçues pour les tests de performance et de charge. Des scripts personnalisés peuvent être enregistrés dans ces outils, puis exécutés pour simuler un nombre maximal d’auteurs effectuant simultanément des activités similaires de création et d’activation de contenu. Il est recommandé d’utiliser l’outil Tough Day pour simuler des activités telles que le chargement de milliers de ressources ou l’activation d’un grand nombre de pages.
 
-Pour les types d’environnements dont les exigences de chargement de ressources ou de création de pages sont élevées, il est impératif d’utiliser des outils tels que Tough Day afin de garantir le fonctionnement efficace de l’environnement à une charge maximale. [WebDAV](/help/sites-administering/webdav-access.md) est un outil qui ne nécessite aucun script et qui peut également servir à charger de grandes quantités de ressources.
+Pour les types d’environnements qui nécessitent un chargement de ressources important ou la création de pages, il est impératif d’utiliser des outils tels que Tough Day afin de s’assurer que l’environnement fonctionne efficacement sous une charge maximale. [WebDAV](/help/sites-administering/webdav-access.md) est un outil qui ne nécessite aucun script et qui peut également servir à charger de grandes quantités de ressources.
 
 #### Étapes spécifiques à MongoDB {#mongodb-specific-steps}
 
-Sur les systèmes dotés de serveurs principaux MongoDB, AEM fournit plusieurs MBeans [JMX](/help/sites-administering/jmx-console.md) qu’il faut surveiller lors des tests de charge ou de performance :
+Sur les systèmes avec des serveurs principaux MongoDB, AEM fournit plusieurs [JMX](/help/sites-administering/jmx-console.md) MBeans qui doivent être surveillés lors des tests de charge ou de performance :
 
-* MBean **Consolidated Cache Statistics**. Il est accessible directement depuis :
+* Le **Statistiques de cache consolidées** MBean. Il est accessible directement depuis :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. L’assistance pour les produits Adobe peut vous recommander des paramètres optimaux pour votre environnement.
+Pour le cache nommé **Document-Diff**, le taux d’accès doit être supérieur à `.90`. Si le taux d’accès chute en dessous de 90 %, il est probable que vous deviez modifier la configuration `DocumentNodeStoreService`. La prise en charge du produit Adobe peut recommander des paramètres optimaux pour votre environnement.
 
 * MBean **Oak Repository Statistics**. Il est accessible directement depuis :
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-La section **ObservationQueueMaxLength** affiche le nombre d’événements de la file d’attente d’observation d’Oak au cours des dernières heures, minutes, secondes et semaines. Identifiez le plus grand nombre d’événements dans la section « per hour ». Ce nombre doit être comparé au paramètre `oak.observation.queue-length` . Si le nombre le plus élevé affiché pour la file d’attente d’observation dépasse la valeur du paramètre `queue-length` :
+Le **ObservationQueueMaxLength** indique le nombre d’événements dans la file d’attente d’observation d’Oak au cours des dernières heures, minutes, secondes et semaines. Recherchez le plus grand nombre d’événements dans la section &quot;Par heure&quot;. Ce nombre doit être comparé au paramètre `oak.observation.queue-length` . Si le nombre le plus élevé affiché pour la file d’attente d’observation dépasse la valeur du paramètre `queue-length` :
 
 1. Créez un fichier nommé `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` contenant le paramètre `oak.observation.queue‐length=50000`.
 1. Placez-le sous le dossier /crx-­‐quickstart/install.
@@ -128,31 +128,31 @@ Le paramètre par défaut est 10 000, mais la plupart des déploiements doivent
 
 ### Exécution de tests {#performing-tests-1}
 
-La partie la plus importante d’un déploiement qui doit être soumise à des tests de charge est l’environnement de publication ou de dispatcher de l’utilisateur final.
+La partie la plus importante d’un déploiement qui doit être soumise à des tests de chargement est l’environnement de publication ou de dispatcher de l’utilisateur final.
 
-Il est possible d’utiliser des outils tiers de test automatisés pour tester les performances du site web. Ces outils vous permettent d’enregistrer le parcours de navigation que les utilisateurs suivent sur le site et d’exécuter plusieurs de ces sessions en même temps pour simuler la charge type d’un site Web d’exploitation.
+Des outils de test automatisés tiers peuvent être utilisés pour tester les performances du site web. Ces outils vous permettent d’enregistrer le parcours de navigation que les utilisateurs suivent sur le site et d’exécuter plusieurs de ces sessions en même temps pour simuler la charge type d’un site Web d’exploitation.
 
-La plupart des sites web de production intègrent des optimisations telles que la mise en cache des dispatchers et la mise en place d’un réseau de diffusion de contenu. Lors du test, vous devez vous assurer que ces optimisations sont également disponibles pour l’environnement de test. Outre la surveillance des temps de réponse pour les utilisateurs finaux, vous devez également surveiller les mesures du système sur les serveurs de publication et les dispatchers pour vous assurer que le système n’est pas limité par des ressources matérielles.
+La plupart des sites web de production disposent d’optimisations telles que la mise en cache du dispatcher et la mise en place d’un réseau de diffusion de contenu. Lors du test, vous devez vous assurer que ces optimisations sont également disponibles pour l’environnement de test. Outre la surveillance des temps de réponse pour les utilisateurs finaux, vous devez également surveiller les mesures système sur les serveurs de publication et les dispatchers pour vous assurer que le système n’est pas limité par les ressources matérielles.
 
-Sur un système qui ne nécessite pas un niveau élevé de personnalisation, le dispatcher doit mettre en cache la plupart des demandes. Par conséquent, la charge sur l’instance de publication doit rester relativement stable. Si un niveau élevé de personnalisation est requis, il est recommandé d’utiliser des technologies telles que les iFrames ou les demandes AJAX pour le contenu personnalisé afin de permettre une mise en cache maximale par le dispatcher.
+Sur un système qui ne nécessite pas un niveau élevé de personnalisation, Dispatcher doit mettre en cache la plupart des requêtes. Par conséquent, la charge sur l’instance de publication doit rester relativement nulle. Si un niveau élevé de personnalisation est requis, il est recommandé d’utiliser des technologies telles que les iFrames ou d’AJAX de requêtes pour le contenu personnalisé afin de permettre une mise en cache maximale du Dispatcher.
 
-Dans le cas de tests simples, Apache Bench peut servir à mesurer les temps de réponse du serveur web et à créer une charge pour mesurer des événements comme des fuites de mémoire. Pour plus d’informations, voir l’exemple de la [documentation Surveillance](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
+Pour les tests de base, Apache Bench peut être utilisé pour mesurer les temps de réponse du serveur web et aider à créer la charge pour mesurer des éléments comme les fuites de mémoire. Pour plus d’informations, reportez-vous à l’exemple de la section [Documentation de supervision](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
-## Résolution des problèmes liés aux performances {#troubleshooting-performance-issues}
+## Résolution des problèmes de performances {#troubleshooting-performance-issues}
 
-Après avoir exécuté des tests de performance sur l’instance de création, tous les problèmes doivent être analysés, diagnostiqués et résolus. Vous pouvez avoir recours à plusieurs outils et techniques pour effectuer des analyses et résoudre des problèmes :
+Après l’exécution des tests de performance sur l’instance d’auteur, tous les problèmes doivent être étudiés, diagnostiqués et résolus. Vous pouvez utiliser plusieurs outils et techniques pour effectuer des analyses et résoudre des problèmes :
 
-* Vous pouvez consulter le [journal Performances des demandes](/help/sites-administering/operations-dashboard.md#request-performance) dans le tableau de bord des opérations. Vous pouvez utiliser cet outil pour identifier les demandes de page lentes.
+* Vous pouvez examiner la variable [Journal des performances des requêtes](/help/sites-administering/operations-dashboard.md#request-performance) dans le tableau de bord des opérations. Cet outil peut être utilisé pour identifier les demandes de page lente.
 * Analysez les requêtes à exécution lente avec l’outil [Performances des requêtes](/help/sites-administering/operations-dashboard.md#query-performance).
 
-* Recherchez, dans le journal des erreurs, les erreurs ou les avertissements. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
-* Surveillez les ressources matérielles du système telles que l’utilisation de la mémoire et du processeur, les E/S de disque ou les E/S réseau. Ces ressources sont souvent la cause de la détérioration des performances.
-* Optimisez l’architecture des pages et la façon dont elles sont adressées afin de minimiser l’utilisation des paramètres d’URL pour permettre un niveau maximal de mise en cache.
-* Lisez la documentation [Optimisation des performances](/help/sites-deploying/configuring-performance.md) et [Conseils pour le réglage des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html).
+* Recherchez les erreurs ou les avertissements dans le journal d’erreurs. Pour plus d’informations, consultez la section [Journalisation](/help/sites-deploying/configure-logging.md).
+* Surveillez les ressources matérielles du système telles que l’utilisation de la mémoire et du processeur, les E/S de disque ou les E/S réseau. Ces ressources sont souvent à l’origine de goulets d’étranglement en termes de performances.
+* Optimisez l’architecture des pages et leur gestion afin de minimiser l’utilisation des paramètres d’URL pour permettre une mise en cache maximale possible.
+* Suivez la [Optimisation des performances](/help/sites-deploying/configuring-performance.md) et [Conseils sur l’optimisation des performances](https://helpx.adobe.com/fr/experience-manager/kb/performance-tuning-tips.html) documentation
 
-* Si des problèmes surviennent lors de la modification de certaines pages ou composants sur des instances de création, utilisez le mode Développeur de l’UI tactile pour inspecter la page en question. Cela permet de décomposer chaque zone de contenu sur la page ainsi que son temps de chargement.
-* Réduisez tous les JS et CSS sur le site. Pour plus d’informations sur la procédure à suivre, voir cet [article de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
-* Supprimez les CSS et JS incorporés des composants. Ils doivent être inclus et minimisés avec les bibliothèques côté client afin de minimiser le nombre de demandes requises pour le rendu de la page.
-* Utilisez les outils du navigateur comme l’onglet Réseau de Chrome pour inspecter les demandes du serveur et déterminer les plus lentes.
+* Si des problèmes surviennent lors de la modification de certaines pages ou composants sur les instances de création, utilisez le mode Développeur de l’interface utilisateur tactile pour inspecter la page en question. Vous obtiendrez ainsi une ventilation de chaque zone de contenu de la page ainsi que de son temps de chargement.
+* Minimiser tous les JS et CSS sur le site. Pour plus d’informations sur la procédure à suivre, voir [article de blog](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Éliminez les éléments CSS et JS incorporés des composants. Ils doivent être inclus et minimisés avec les bibliothèques côté client afin de minimiser le nombre de demandes requises pour le rendu de la page.
+* Utilisez des outils de navigateur tels que l’onglet Réseau de Chrome pour examiner les requêtes de serveur et voir lesquelles prennent le plus de temps.
 
 Une fois les zones problématiques identifiées, le code de l’application peut être inspecté pour optimiser les performances. Toutes les fonctionnalités AEM prêtes à l’emploi qui ne fonctionnent pas correctement peuvent être traitées par l’assistance d’Adobe.

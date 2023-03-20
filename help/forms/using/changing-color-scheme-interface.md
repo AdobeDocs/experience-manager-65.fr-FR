@@ -1,7 +1,7 @@
 ---
 title: Modification des couleurs de l’interface
 seo-title: Changing the color scheme of the interface
-description: Comment modifier les couleurs de sections spécifiques de l’interface utilisateur de l’espace de travail AEM Forms.
+description: Comment modifier sélectivement le modèle de couleurs des parties de l’interface utilisateur de l’espace de travail AEM Forms.
 seo-description: How to modify the color scheme of AEM Forms workspace user interface portions selectively.
 uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '228'
+ht-degree: 53%
 
 ---
 
@@ -27,14 +27,14 @@ Vous pouvez modifier les couleurs des différentes parties de l’interface util
 
 Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM Forms :
 
-1. Créez une image d’arrière-plan pour mettre à jour la couleur. Appelez le fichier newBackground.jpg.
-1. Téléchargez le fichier de l’image d’arrière-plan dans le dossier /apps/ws/images à l’aide d’un client WebDAV.
+1. Créez une image d’arrière-plan pour mettre à jour la couleur. Nommez le fichier newBackground.jpg.
+1. Téléchargez le fichier image d’arrière-plan dans le dossier /apps/ws/images à l’aide d’un client WebDAV.
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur l’accès à WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/fr/crx/current/how_to/webdav_access.html).
+   >Pour plus d’informations sur l’accès à WebDAV, voir [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
-1. Référence à la nouvelle image d’arrière-plan dans /apps/ws/css/newStyle.css en ajoutant le style suivant.
+1. Référencez la nouvelle image d’arrière-plan dans /apps/ws/css/newStyle.css en ajoutant le style suivant.
 
    ```css
    #header {
@@ -42,9 +42,9 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
    }
    ```
 
-### Utilisation de la propriété color dans la feuille de style CSS {#using-color-property-in-css}
+### Utilisation de la propriété de couleur dans CSS {#using-color-property-in-css}
 
-1. Ajoutez le style suivant dans newStyle.css sous /apps/ws/css.
+1. Ajoutez le style suivant dans newStyle.css sous /apps/ws/css
 
    ```css
    #header {
@@ -53,9 +53,9 @@ Pour mettre à jour la barre de navigation en haut de l’espace de travail AEM 
    }
    ```
 
-## Composant de catégories {#category-component}
+## Composant de catégorie {#category-component}
 
-Le composant de catégories affiche les différentes catégories de tâches dans le volet de gauche. Pour modifier sa couleur, définissez la couleur d’arrière-plan dans l’élément `.category` du fichier CSS.
+Le composant Catégorie affiche les différentes catégories de vos tâches dans le panneau de gauche. Pour modifier sa couleur, définissez la couleur d’arrière-plan dans l’élément `.category` du fichier CSS.
 
 ## Composant de tâches {#task-component}
 

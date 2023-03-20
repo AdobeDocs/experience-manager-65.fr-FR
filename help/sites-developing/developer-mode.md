@@ -1,7 +1,7 @@
 ---
 title: Mode Développeur
 seo-title: Developer Mode
-description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
+description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui fournissent aux développeurs des informations sur la page active.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
 uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
 contentOwner: Guillaume Carlino
@@ -11,35 +11,35 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 49%
 
 ---
 
 # Mode Développeur{#developer-mode}
 
-Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) sont disponibles, notamment le mode Développeur. Celui-ci ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours. Les trois onglets sont :
+Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) sont disponibles, y compris le mode Développeur. Cela ouvre un panneau latéral avec plusieurs onglets qui fournissent aux développeurs des informations sur la page active. Les trois onglets sont les suivants :
 
-* **[Composants](#components)** pour visualiser les informations de structure et de performances.
+* **[Composants](#components)** pour consulter des informations sur la structure et les performances.
 * **[Tests](#tests)** pour exécuter des tests et analyser les résultats.
-* **[Erreurs](#errors)** pour afficher les problèmes rencontrés.
+* **[Erreurs](#errors)** pour voir les problèmes qui se produisent.
 
 Ils aident les développeurs à :
 
-* découvrir ce qui compose les pages ;
+* Discover : de quelles pages sont composées.
 * déboguer en vérifiant la nature des événements, ainsi que leur emplacement et le moment où ils surviennent, afin de résoudre des problèmes ;
-* tester si l’application se comporte comme prévu.
+* Test : L’application se comporte-t-elle comme prévu ?
 
 >[!CAUTION]
 >
 >Le mode Développeur :
 >
->* est uniquement disponible dans l’IU compatible avec les écrans tactiles (lors de la modification des pages) ;
+>* N’est disponible que dans l’interface utilisateur tactile (lors de la modification de pages).
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
->
->   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
+   >
+   >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
 >* n’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
 
 
@@ -47,7 +47,7 @@ Ils aident les développeurs à :
 >
 >Le mode Développeur n’est disponible que sur une instance de création standard qui n’utilise pas le mode d’exécution nosamplecontent.
 >
->Si nécessaire, il peut être configuré pour être utilisé :
+>Si nécessaire, il peut être configuré pour une utilisation :
 >
 >* sur une instance de création à l’aide du mode d’exécution nosamplecontent ;
 >* sur une instance de publication.
@@ -56,16 +56,16 @@ Ils aident les développeurs à :
 
 >[!NOTE]
 >
->Voir :
+>Voir :
 >
->* L’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour d’autres conseils et outils.
->* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://docs.adobe.com/content/ddc/fr/gems/aem-6-0-developer-mode.html).
+>* Article de la base de connaissances, [Résolution des problèmes AEM TouchUI](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), pour d’autres conseils et outils.
+>* Session AEM Gems à propos de [Mode développeur d’AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 >
 
 
 ## Ouverture du mode Développeur {#opening-developer-mode}
 
-Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
+Le mode Développeur est mis en oeuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -82,38 +82,38 @@ Le panneau est divisé en deux onglets :
 Il présente une arborescence de composants qui :
 
 * décrit la chaîne de composants et de modèles rendus sur la page (SLY, JSP, etc.) ; L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
-* indique le temps de calcul côté serveur nécessaire pour effectuer le rendu du composant ;
-* permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, tels que :
+* Affiche le temps de calcul côté serveur nécessaire au rendu du composant.
+* Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant. par exemple :
 
-   * Le chemin du référentiel
-   * Les liens vers les scripts (accessibles dans CRXDE Lite)
+   * Chemin du référentiel
+   * Liens vers les scripts (accessibles en CRXDE Lite)
 
-* Les composants sélectionnés (dans le flux de contenu, indiqué par une bordure bleue) sont mis en surbrillance dans l’arborescence de contenu (et inversement).
+* Les composants sélectionnés (dans le flux de contenu, indiqués par une bordure bleue) sont mis en surbrillance dans l’arborescence de contenu (et vice versa).
 
-Cela peut aider à :
+Cela peut vous aider à :
 
 * déterminer et comparer le temps de rendu par composant ;
 * visualiser et comprendre la hiérarchie ;
 * comprendre, puis améliorer, le temps de chargement de la page en recherchant les composants lents.
 
-Chaque entrée de composant peut afficher (par exemple) :
+Chaque entrée de composant peut afficher (par exemple :
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-* **Afficher les détails** : lien vers une liste qui affiche :
+* **Afficher les détails**: un lien vers une liste qui affiche :
 
-   * tous les scripts de composants utilisés pour le rendu du composant ;
-   * le chemin du contenu de référentiel pour cet élément spécifique.
+   * tous les scripts de composant utilisés pour effectuer le rendu du composant.
+   * chemin d’accès au contenu du référentiel pour ce composant spécifique.
 
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
-* **Modifier le script** : lien qui :
+* **Modifier le script**: un lien qui :
 
-   * ouvre le script de composant dans CRXDE Lite.
+   * ouvre le script de composant dans CRXDE Lite.
 
-* Le développement d’une entrée de composant (tête de flèche) peut également afficher :
+* Le développement d’une entrée de composant (en-tête de flèche) peut également afficher :
 
-   * la hiérarchie au sein du composant sélectionné ;
+   * La hiérarchie au sein du composant sélectionné.
    * les temps de rendu pour le composant sélectionné de manière isolée, tous les composants individuels imbriqués qu’il contient, ainsi que le total combiné.
 
    ![chlimage_1-15](assets/chlimage_1-15.png)
@@ -131,16 +131,16 @@ L’onglet **Erreurs** devrait toujours rester vide (comme ci-dessus), mais lors
 * Un avertissement s’affiche si le composant écrit une entrée dans le journal d’erreurs, avec les détails de l’erreur et des liens directs vers le code correspondant dans CRXDE Lite.
 * Un avertissement s’affiche si le composant ouvre une session d’administrateur.
 
-Par exemple, dans l’éventualité où une méthode non définie est appelée, l’erreur obtenue s’affiche sous l’onglet **Erreurs** :
+Par exemple, dans une situation où une méthode non définie est appelée, l’erreur résultante s’affiche dans la variable **Erreurs** tab :
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
-L’entrée du composant dans l’arborescence de l’onglet Composants sera également marquée à l’aide d’un indicateur lorsqu’une erreur se produit.
+L’entrée du composant dans l’arborescence de l’onglet Composants est également marquée avec un indicateur lorsqu’une erreur se produit.
 
 ### Tests {#tests}
 
 >[!CAUTION]
 >
->Dans AEM 6.2, les fonctions de test du mode Développeur ont fait l’objet d’une remise en œuvre en tant qu’application Outils autonome.
+>Dans AEM 6.2, les fonctionnalités de test du mode Développeur ont été réimplémentées en tant qu’application Outils autonome.
 >
 >Pour en savoir plus, consultez le [Test de l’IU](/help/sites-developing/hobbes.md).
