@@ -12,9 +12,9 @@ discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3252'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -436,7 +436,7 @@ Si vous avez créé un modèle qui peut servir de base pour d’autres modèles,
 1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle modifiable, [en suivant ces instructions](/help/sites-authoring/templates.md#creating-a-new-template-template-author).
 1. À l’aide de CRXDE Lite, copiez le nouveau modèle depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](/help/sites-developing/page-templates-editable.md#template-folders).
-1. Dans la copie du modèle qui se trouve sous le `template-types` noeud, supprimer tout `cq:template` et `cq:templateType` de toutes les propriétés `jcr:content` noeuds.
+1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.
 
 Vous pouvez également développer votre propre type de modèle en utilisant un exemple de modèle modifiable comme base (disponible sur GitHub).
 
@@ -540,7 +540,7 @@ Lors de la [modification d’un modèle, vous pouvez définir la mise en page](/
 
 ### Stratégies de contenu {#content-policies}
 
-Les stratégies de contenu (ou de conception) définissent les propriétés de conception d’un composant, telles que la disponibilité du composant ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les stratégies de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
+Les politiques de contenu (ou de conception) définissent les propriétés de conception d’un composant, telles que les dimensions minimales/maximales ou les disponibilité du composant. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les stratégies de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 
 * La propriété `cq:policy`, sur le nœud `root`
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
