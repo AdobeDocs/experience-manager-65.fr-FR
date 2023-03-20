@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Gestionnaire d’authentification SAML 2.0{#saml-authentication-handler}
+# Gestionnaire d’authentification SAML 2.0 {#saml-authentication-handler}
 
 AEM est livré avec un gestionnaire d’authentification [SAML](https://saml.xml.org/saml-specifications). Ce gestionnaire fournit la prise en charge du protocole de requête d’authentification [SAML](https://saml.xml.org/saml-specifications) 2.0 (profil Web-SSO) à l’aide de la liaison `HTTP POST`.
 
@@ -117,7 +117,7 @@ Les assertions SAML sont signées et peuvent éventuellement être chiffrées. P
 >
 >Les étapes suivantes ne sont nécessaires que si le gestionnaire doit pouvoir signer ou déchiffrer des messages.
 
-1. Créez le certificat/la paire de clés pour AEM. La commande pour la générer via openssl doit ressembler à l’exemple ci-dessous :
+1. Créez le certificat/la paire de clés pour AEM. La commande pour les générer via openssl doit ressembler à l’exemple ci-dessous :
 
    `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
 
