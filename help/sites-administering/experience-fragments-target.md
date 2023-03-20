@@ -12,13 +12,13 @@ discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 source-git-commit: 88763b318e25efb16f61bc16530082877392c588
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1553'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Exportation de fragments d’expérience vers Adobe Target{#exporting-experience-fragments-to-adobe-target}
+# Exportation de fragments d’expérience vers Adobe Target {#exporting-experience-fragments-to-adobe-target}
 
 >[!CAUTION]
 >
@@ -139,7 +139,7 @@ Vous pouvez sélectionner les options obligatoires dans les **propriétés de pa
 
    ![Dossier - Cloud Services](assets/xf-target-integration-01.png "Dossier - Cloud Services")
 
-1. **Enregistrez et fermez**.
+1. **Enregistrer et fermer**.
 
 ## Exportation d’un fragment d’expérience vers Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
 
@@ -215,11 +215,11 @@ Pour éviter de tels problèmes :
 
 ## Suppression de bibliothèques clientes des fragments d’expérience exportés vers Target {#removing-clientlibs-from-fragments-exported-target}
 
-Les fragments d’expérience contiennent des balises HTML complètes et toutes les bibliothèques clientes (CSS/JS) nécessaires pour effectuer le rendu du fragment tel qu’il a été créé par l’auteur de contenu du fragment d’expérience. C&#39;est de la conception artificielle.
+Les fragments d’expérience contiennent des balises HTML complètes et toutes les bibliothèques clientes (CSS/JS) nécessaires pour effectuer le rendu du fragment tel qu’il a été créé par l’auteur ou l’autrice du contenu du fragment d’expérience. Cela est intentionnel.
 
-Lors de l’utilisation d’une offre de fragment d’expérience avec Adobe Target sur une page diffusée par AEM, la page ciblée contient déjà toutes les bibliothèques clientes nécessaires. En outre, le code HTML superflu dans l’offre de fragment d’expérience n’est pas nécessaire non plus (voir [Considérations](#considerations)).
+Lors de l’utilisation d’une offre de fragment d’expérience avec Adobe Target sur une page diffusée par AEM, la page ciblée contient déjà toutes les bibliothèques clientes nécessaires. En outre, le code HTML superflu dans l’offre de fragment d’expérience n’est pas nécessaire non plus (voir les [Considérations](#considerations)).
 
-Voici un pseudo-exemple du code HTML d’une offre de fragment d’expérience :
+Voici un pseudo-exemple du code HTML d’une offre de fragment d’expérience :
 
 ```html
 <!DOCTYPE>
@@ -235,39 +235,39 @@ Voici un pseudo-exemple du code HTML d’une offre de fragment d’expérience :
 </html>
 ```
 
-À un niveau élevé, lorsqu’AEM exporte un fragment d’expérience vers Adobe Target, il le fait à l’aide de plusieurs sélecteurs Sling supplémentaires. Par exemple, l’URL du fragment d’expérience exporté peut se présenter comme suit (remarque `nocloudconfigs.atoffer`) :
+À un niveau élevé, lorsqu’AEM exporte un fragment d’expérience vers Adobe Target, il le fait à l’aide de plusieurs sélecteurs Sling supplémentaires. Par exemple, l’URL du fragment d’expérience exporté peut se présenter comme suit (remarque `nocloudconfigs.atoffer`) :
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-Le `nocloudconfigs` Le sélecteur est défini à l’aide de HTL et peut être recouvert en le copiant à partir de :
+Le sélecteur `nocloudconfigs` est défini à l’aide de HTL et peut être recouvert en le copiant à partir de :
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-Le `atoffer` Le sélecteur est en fait appliqué après traitement à l’aide de [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Vous pouvez utiliser les deux pour supprimer les bibliothèques clientes.
+Le sélecteur `atoffer` est en réalité appliqué après traitement à l’aide de la [réécriture Sling](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Vous pouvez utiliser les deux pour supprimer les bibliothèques clientes.
 
 ### Exemple {#example}
 
-Dans ce cas, nous allons illustrer comment utiliser `nocloudconfigs`.
+Dans notre cas, nous allons vous montrer comment faire avec `nocloudconfigs`.
 
 >[!NOTE]
 >
->Veuillez consulter [Modèles modifiables](/help/sites-developing/templates.md#editable-templates) pour plus de détails.
+>Consultez [Modèles modifiables](/help/sites-developing/templates.md#editable-templates) pour en savoir plus.
 
 #### Recouvrements {#overlays}
 
-Dans cet exemple particulier, la variable [superpositions](/help/sites-developing/overlays.md) être inclus supprime les bibliothèques clientes *et* le code html superflu. Nous partons du principe que vous avez déjà créé le type de modèle de fragment d’expérience. Les fichiers nécessaires à la copie à partir de `/libs/cq/experience-fragments/components/xfpage/` inclure :
+Dans cet exemple particulier, les [recouvrements](/help/sites-developing/overlays.md) inclus suppriment les bibliothèques clientes *et* le code html superflu. Nous partons du principe que vous avez déjà créé le type de modèle de fragment d’expérience. Les fichiers nécessaires qui devront être copiés à partir de `/libs/cq/experience-fragments/components/xfpage/` incluent :
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
 * `body.nocloudconfigs.html`
 
-#### Superpositions de type modèle {#template-type-overlays}
+#### Recouvrements de type modèle {#template-type-overlays}
 
-Dans le cadre de cet exemple, nous utiliserons la structure suivante :
+Dans le cadre de cet exemple, nous utiliserons la structure suivante :
 
-![Superpositions de type modèle](assets/xf-target-integration-02.png "Superpositions de type modèle")
+![Recouvrements de type modèle](assets/xf-target-integration-02.png "Recouvrement de type modèle")
 
-Le contenu de ces fichiers est le suivant :
+Le contenu de ces fichiers est le suivant :
 
 * `body.nocloudconfigs.html`
 
@@ -283,12 +283,12 @@ Le contenu de ces fichiers est le suivant :
 
 >[!NOTE]
 >
->Pour utiliser `data-sly-unwrap` pour supprimer la balise body dont vous avez besoin `nocloudconfigs.html`.
+>Pour utiliser `data-sly-unwrap` afin de supprimer la balise body, vous avez besoin de `nocloudconfigs.html`.
 
 ### Considérations {#considerations}
 
-Si vous devez prendre en charge les sites AEM et non AEM à l’aide d’offres de fragments d’expérience dans Adobe Target, vous devez créer deux fragments d’expérience (deux types de modèles différents) :
+Si vous devez prendre en charge les sites AEM et non AEM à l’aide d’offres de fragments d’expérience dans Adobe Target, vous devez créer deux fragments d’expérience (deux types de modèles différents) :
 
-* Une avec la superposition pour supprimer clientlibs/extra html
+* Un avec le recouvrement pour supprimer les bibliothèques clientes ou le code html en trop
 
-* Celui qui ne dispose pas de la superposition et qui inclut donc les clientlibs requises
+* Un qui ne dispose pas du recouvrement et qui inclut donc les bibliothèques clientes requises
