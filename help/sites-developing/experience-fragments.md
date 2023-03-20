@@ -12,13 +12,13 @@ discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1784'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Fragments d’expérience{#experience-fragments}
+# Fragments d’expérience {#experience-fragments}
 
 ## Principes élémentaires {#the-basics}
 
@@ -58,18 +58,18 @@ Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts su
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### Configuration de la génération de rendu par HTML {#configuring-html-rendition-generation}
+### Configuration de la génération du rendu HTML {#configuring-html-rendition-generation}
 
-Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini à l’adresse `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur de HTML prend en charge les options suivantes :
+Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini au niveau du chemin `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur HTML prend en charge les options suivantes :
 
 * `allowedCssClasses`
    * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
-   * Cela s’avère utile si le client souhaite supprimer certaines classes CSS spécifiques.
+   * Cela s’avère utile si le client ou la cliente souhaite supprimer certaines classes CSS spécifiques.
 * `allowedTags`
-   * Liste des balises de HTML à autoriser dans le rendu final.
-   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h6, br, noscript, div, link et script
+   * Une liste des balises HTML autorisées dans le rendu final.
+   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script.
 
-Il est recommandé de configurer le module de réécriture à l’aide d’une superposition. Voir [Recouvrements dans AEM as a Cloud Service](/help/sites-developing/overlays.md)
+Il est recommandé de configurer la réécriture à l’aide d’un recouvrement. Consultez la section [Recouvrements dans AEM as a Cloud Service](/help/sites-developing/overlays.md).
 
 ## Variations sociales {#social-variations}
 
@@ -285,7 +285,7 @@ Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants 
 * Pour un fragment d’expérience spécifique :
    `/content/experience-fragment/master`
 
-Les autres fragments d’expérience transitant par le système Exporter vers la cible sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
+Les autres fragments d’expérience transitant par le système Exporter vers Target sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
 
 #### rewriteLink {#rewritelink}
 
