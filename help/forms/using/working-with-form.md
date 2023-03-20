@@ -10,9 +10,9 @@ topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
 source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Pour synchroniser plusieurs formulaires, dans l’instance d’auteur, sélectio
 
 Si la synchronisation de votre application AFA (application AEM Forms) échoue, procédez comme suit pour résoudre le problème de synchronisation :
 
-1. Accédez au **https://[server]:[port]/system/console/configMgr**.
+1. Accédez à **https://[server]:[port]/system/console/configMgr**.
 1. Recherchez le **[!UICONTROL Gestionnaire d’authentification des jetons Adobe Granite]** et cliquez sur **[!UICONTROL Modifier]**.
 1. Sélectionnez l’option **[!UICONTROL Aucun]** dans le menu déroulant de l’attribut **[!UICONTROL Attribut SameSite pour le cookie du jeton de connexion]**.
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
