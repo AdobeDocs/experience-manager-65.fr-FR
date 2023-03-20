@@ -5,9 +5,9 @@ topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1966'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -34,19 +34,19 @@ L’objectif de cette introduction et de cette présentation est de montrer aux 
 
 La présentation repose sur les fonctionnalités AEM standard et l’exemple d’application de projet SPA WKND. Pour suivre cette présentation, vous devez disposer des éléments suivants.
 
-* [AEM version 6.5.4 ou ultérieure](/help/release-notes/release-notes.md)
-   * Vous devez disposer des droits d’administrateur sur le système.
+* [Version 6.5.4 ou ultérieure d’AEM](/help/release-notes/release-notes.md)
+   * Vous devez disposer des droits d’administration sur le système.
 * [Exemple d’application de projet WKND SPA disponible sur GitHub](https://github.com/adobe/aem-guides-wknd-spa)
    * Téléchargez la [dernière version de l’application React.](https://github.com/adobe/aem-guides-wknd-spa/releases) Son nom sera similaire à `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * Téléchargez la [exemples d’images les plus récents](https://github.com/adobe/aem-guides-wknd-spa/releases) pour l’application. Son nom sera similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Utilisation du gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer les packages comme vous le feriez pour tout autre package dans AEM.
-   * L’application n’a pas besoin d’être installée à l’aide de Maven aux fins de cette procédure pas à pas.
+   * Téléchargez les [exemples d’images les plus récents](https://github.com/adobe/aem-guides-wknd-spa/releases) pour l’application. Son nom sera similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Utilisez le gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer les packages comme vous le feriez pour tout autre package dans AEM.
+   * L’application n’a pas besoin d’être installée à l’aide de Maven pour cette présentation.
 
 >[!CAUTION]
 >
->Ce document utilise la méthode [Application de projet de spa WKND](https://github.com/adobe/aem-guides-wknd-spa) à des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
+>Ce document utilise l’[exemple d’application de projet WKND SPA](https://github.com/adobe/aem-guides-wknd-spa) des fins de démonstration uniquement. Ce dernier ne doit pas être utilisé dans le cadre d’un projet.
 >
->Tout projet AEM doit tirer parti de la variable [AEM Archétype de projet,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) qui prend en charge SPA projets à l’aide de React ou d’Angular et tire parti du SDK SPA.
+>Un projet AEM doit utiliser l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utiliser le SDK SPA.
 
 ### Qu’est-ce qu’une SPA ?  {#what-is-a-spa}
 
@@ -161,11 +161,11 @@ Expérimenter le comportement d’une SPA pour l’utilisateur final puis inspec
 
 Aussi, si la page n’est pas rechargée lors de la navigation sur les pages enfants, comment est-elle chargée ?
 
-la section suivante, [Chargement d&#39;une application SPA,](#loading-an-spa-application) creuse plus en détail la procédure de chargement du SPA et la manière dont le contenu peut être chargé de manière synchrone et asynchrone.
+La section suivante, [Chargement d’une application SPA](#loading-an-spa-application), examine de plus près la procédure de chargement de la SPA et indique comment le contenu peut être chargé de façon synchrone et asynchrone.
 
 ### Chargement d’une SPA {#loading-an-spa-application}
 
-1. Si ce n’est pas déjà fait, chargez l’application du projet du SPA WKND sur le serveur de publication ou à l’aide de l’option **Afficher comme publié(e)** du menu **Informations sur la page** de l’éditeur de page.
+1. Si ce n’est pas déjà fait, chargez l’application du projet de la SPA WKND sur le serveur de publication ou à l’aide de l’option **Afficher comme publié(e)** du menu **Informations sur la page** de l’éditeur de page.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -181,7 +181,7 @@ la section suivante, [Chargement d&#39;une application SPA,](#loading-an-spa-app
 
    ![Étape 4](assets/spa-walkthrough-step-1-4.png)
 
-1. Basculez vers le **Réseau** de l’onglet des outils de développement et rechargez la page.
+1. Basculez vers l’onglet **Réseau** des outils de développement et chargez à nouveau la page.
 
    Sans tenir compte des requêtes d’image, notez que les principales ressources chargées pour la page sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances, ainsi que les données JSON de la page.
 
@@ -207,7 +207,7 @@ la section suivante, [Chargement d&#39;une application SPA,](#loading-an-spa-app
 
    ![Étape 7](assets/spa-walkthrough-step-1-7.png)
 
-1. Pour afficher cette différence de comportement, rechargez la page et effacez l’activité réseau des outils de développement. Accédez à la `page-1` dans le menu de page et vérifiez que la seule activité de réseau est une requête d’image de la `page-1`. La `page-1` elle-même n’a pas besoin de se charger.
+1. Pour voir cette différence de comportement, chargez à nouveau la page et effacez l’activité de réseau des outils de développement. Accédez à la `page-1` dans le menu de page et vérifiez que la seule activité de réseau est une requête d’image de la `page-1`. La `page-1` elle-même n’a pas besoin de se charger.
 
    ![Étape 8](assets/spa-walkthrough-step-1-8.png)
 
