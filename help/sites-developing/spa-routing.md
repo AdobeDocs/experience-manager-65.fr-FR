@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
 source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '491'
+ht-degree: 100%
 
 ---
 
-# Routage du modèle de SPA{#spa-model-routing}
+# Routage du modèle de SPA {#spa-model-routing}
 
 Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 
@@ -43,7 +43,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 >[!NOTE]
 >
->Le [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) l’exemple de projet React illustre l’approche automatisée, tandis que le projet Angular illustre l’approche manuelle. Une approche semi-automatisée serait également un cas d’utilisation valide.
+>L’exemple de projet React de [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) illustre l’approche automatisée, tandis que le projet Angular illustre l’approche manuelle. Une approche semi-automatisée serait également un cas d’utilisation valide.
 
 >[!CAUTION]
 >
