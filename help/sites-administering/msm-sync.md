@@ -13,13 +13,13 @@ docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
 source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2696'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Configuration de la synchronisation des Live Copies{#configuring-live-copy-synchronization}
+# Configuration de la synchronisation des Live Copies {#configuring-live-copy-synchronization}
 
 Procédez comme suit pour contrôler la façon dont les Live Copies sont synchronisées avec leur contenu source.
 
@@ -172,7 +172,7 @@ Le tableau ci-dessous répertorie les actions de synchronisation installées ave
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Sur la Live Copy, cette action de synchronisation met à jour les références telles que les liens.<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
+   <td><p>Dans la Live Copy, cette action de synchronisation met à jour les références, comme les liens.<br /> Elle recherche des chemins d’accès dans les pages Live Copy, qui pointent vers une ressource dans le plan directeur. Ensuite, elle met à jour le chemin d’accès pour qu’il pointe vers la ressource associée dans la Live Copy (au lieu du plan directeur). Les références qui comportent des cibles en dehors du plan directeur ne sont pas modifiées.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Configurez le service d’action de mise à jour des références MSM CQ</a> pour spécifier les types de nœuds, les éléments de paragraphe et les propriétés de page à exclure. </p> </td>
    <td> </td>
   </tr>
   <tr>
