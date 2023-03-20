@@ -12,13 +12,13 @@ discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
 ht-degree: 100%
 
 ---
 
-# Mise en œuvre d’un composant React pour SPA{#implementing-a-react-component-for-spa}
+# Mise en œuvre d’un composant React pour SPA {#implementing-a-react-component-for-spa}
 
 Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
 
