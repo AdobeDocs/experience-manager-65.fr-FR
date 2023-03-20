@@ -3,13 +3,13 @@ title: Gestion de projets de traduction
 description: Découvrez comment gérer des projets de traduction dans AEM.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3536'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Gestion de projets de traduction{#managing-translation-projects}
+# Gestion de projets de traduction {#managing-translation-projects}
 
 Après avoir préparé le contenu à traduire, vous devez compléter la structure de langue en créant des copies de langue manquantes et créer des projets de traduction.
 
@@ -410,15 +410,15 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
 
 1. Cliquez ou appuyez sur Commencer.
 
-## Déplacement ou changement de nom d’une page source {#move-source}
+## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie de langue en fonction du nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent sera toujours là.
+Si une page source déjà traduite doit être [renommée ou déplacée](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie dans la langue en fonction du nouveau nom ou emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent sera toujours là.
 
-Dans ce scénario, la bonne pratique consiste à procéder comme suit :
-1. Annulez la publication des copies de langue associées à la page source que vous souhaitez déplacer.
+Dans ce scénario, la bonne pratique consiste à procéder comme suit :
+1. Annulez la publication des copies dans la langue associées à la page source que vous souhaitez déplacer.
 1. Supprimez-les.
-1. Créez de nouvelles copies de langue à partir de la page source nouvellement déplacée.
-1. Publiez les copies de langue nouvellement créées.
+1. Créez de nouvelles copies dans la langue à partir de la page source nouvellement déplacée.
+1. Publiez les copies dans la langue nouvellement créées.
 
 ## Création d’un projet de traduction à l’aide de la console Projets {#creating-a-translation-project-using-the-projects-console}
 
