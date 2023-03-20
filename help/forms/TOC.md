@@ -11,7 +11,7 @@ role: User
 source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
 workflow-type: tm+mt
 source-wordcount: '3846'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -210,8 +210,8 @@ ht-degree: 99%
    + [Fonctions de l’espace de travail Flex non disponibles dans l’espace de travail AEM Forms](using/features-flex-workspace-available-html.md)
    + [Interaction de Backbone](using/backbone-interaction.md)
    + [Description des composants réutilisables](using/description-reusable-components.md)
-   + [Détails de document pour le rendu](using/document-details-renderer.md)
-   + [Intégration des composants de l’espace de travail AEM Forms dans des applications Web](using/integrating-html-ws-components-web.md)
+   + [Détails du document pour le moteur de rendu](using/document-details-renderer.md)
+   + [Intégration des composants de l’espace de travail AEM Forms dans les applications web](using/integrating-html-ws-components-web.md)
    + [Nouveau service de rendu et d’envoi](using/new-render-submit-service.md)
    + [Présentation de la structure de dossiers](using/folder-structure.md)
    + [Intégration d’applications tierces à l’espace de travail AEM Forms](using/integrating-correspondence-management-html-workspace.md)
@@ -248,7 +248,7 @@ ht-degree: 99%
    + [Utilisation d’un formulaire adaptatif dans Workspace HTML](using/using-adaptive-form-html-workspace.md)
    + [Intégration d’AEM Forms Workspace à Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
    + [Utilisation de listes de tâches](using/todo-lists.md)
-   + [Dépannage des conseils de l’espace de travail AEM Forms.](using/troubleshooting-guidelines-html-workspace.md)
+   + [Conseils de dépannage pour l’espace de travail AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
 + Application AEM Forms {#aem-forms-app}
    + [Présentation de l’application AEM Forms](using/aem-forms-app.md)
    + [Configuration de l’environnement de l’application AEM Forms](using/setup-environment-mobile-workspace.md)
@@ -352,7 +352,7 @@ ht-degree: 99%
 + Portail Formulaires {#use-forms-portal}
    + [Personnalisation de modèles pour les composants Forms Portal](using/customizing-templates-forms-portal-components.md)
    + [Activation des composants de Forms Portal](using/enabling-forms-portal-components.md)
-   + [Création d’une page de portail de formulaires](using/creating-form-portal-page.md)
+   + [Création d’une page Forms Portal](using/creating-form-portal-page.md)
    + [API pour travailler avec des formulaires envoyés sur le portail de formulaires](using/report-submitted-data-forms.md)
    + [Stockage personnalisé pour le composant Brouillons et envois](using/adding-custom-storage-provider-forms.md)
 + Services de document {#use-document-services}
@@ -471,7 +471,7 @@ ht-degree: 99%
       + [Introduction à l’utilisation de PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Activation des conversions de fichiers multithreads](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
       + [Configuration des paramètres Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
-      + [Configuration des paramètres de protection](/help/forms/using/admin-help/configuring-security-settings.md)
+      + [Configuration des paramètres de sécurité](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Configuration des paramètres de type de fichier](/help/forms/using/admin-help/configuring-file-type-settings.md)
       + [Importer et exporter les fichiers de configuration de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [Activation de la prise en charge de PDF/A](/help/forms/using/admin-help/enable-pdf-a-support.md)
@@ -514,7 +514,7 @@ ht-degree: 99%
       + [Définition des polices à incorporer](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Définition des paramètres de protection](/help/forms/using/admin-help/specify-security-settings.md)
       + [Modification du jeu de caractères](/help/forms/using/admin-help/change-character-set.md)
-   + Configuration du processus des formulaires{#configure-forms-workflow}
+   + Configuration du processus des formulaires {#configure-forms-workflow}
       + [A propos de la terminologie concernant l’administration et les processus](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Gestion de processus](/help/forms/using/admin-help/processes.md)
       + [Configuration des calendriers professionnels](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -688,7 +688,7 @@ ht-degree: 99%
    + [Impossible de convertir un fichier Word ou Excel en PDF sous Windows Server.](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [Impossible d’ouvrir les formulaires PDF XFA dans Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [Impossible de restaurer le référentiel CRX.](/help/forms/using/restore-crx-repository.md)
-   + [Erreurs du service indisponibles après l’installation AEM Service Pack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
+   + [Erreurs de service indisponible après l’installation du pack de services AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement Linux de JBoss](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)

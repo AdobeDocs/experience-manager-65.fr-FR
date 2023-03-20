@@ -14,11 +14,11 @@ exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 source-git-commit: f923a3b7d6821f63d059f310de783b11bf3e8ec3
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
-# SPA et rendu côté serveur (SSR){#spa-and-server-side-rendering}
+# SPA et rendu côté serveur (SSR) {#spa-and-server-side-rendering}
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Le rendu côté serveur pour les SPA dans AEM nécessite Adobe I/O Runtime, qui 
 Tout comme AEM prend en charge les frameworks SPA Angular et React clé en main, le rendu côté serveur est également pris en charge pour les applications Angular et React. Pour plus d’informations, consultez la documentation NPM relative aux deux frameworks.
 
 * React : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
-* Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
+* Angular : [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
 Pour un exemple des plus simples, reportez-vous à l’[application We.Retail Journal](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Elle effectue le rendu de l’ensemble du serveur d’applications. Bien qu’il ne s’agisse pas d’un exemple concret, elle illustre ce qui est nécessaire à la mise en œuvre du rendu côté serveur.
 

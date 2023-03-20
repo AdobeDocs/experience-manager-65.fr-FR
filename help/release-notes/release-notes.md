@@ -5,7 +5,7 @@ mini-toc-levels: 3
 source-git-commit: 676472125cf472d42b792fae87dffe263e499014
 workflow-type: tm+mt
 source-wordcount: '2605'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -222,7 +222,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 ### Installer le Service Pack pour [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
 
-Pour obtenir des instructions sur l’installation du Service Pack sur AEM Forms, voir [Instructions d’installation du Service Pack AEM Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Pour obtenir des instructions sur l’installation du pack de services sur AEM Forms, voir les [instructions d’installation du pack de services AEM Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
