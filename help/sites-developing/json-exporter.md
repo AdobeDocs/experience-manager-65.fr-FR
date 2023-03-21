@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '441'
-ht-degree: 100%
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 63%
 
 ---
 
@@ -21,51 +21,51 @@ ht-degree: 100%
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
-Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
+Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
 * [des applications sur une seule page ;](spa-walkthrough.md)
 * des applications mobiles natives ;
 * d’autres canaux et points de contact externes à AEM.
 
-Comme les fragments de contenu utilisent du contenu structuré, vous pouvez fournir des services de contenu à l’aide de l’exportateur JSON pour diffuser le contenu de toute page AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
+Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez fournir des services de contenu à l’aide de l’exportateur JSON pour diffuser le contenu de n’importe quelle page AEM au format de modèle de données JSON. Cette méthode peut ensuite être utilisée par vos propres applications.
 
 >[!NOTE]
 >
->La fonctionnalité décrite ici est disponible pour tous les composants principaux à compter de la [version 1.1.0 des composants principaux](https://docs.adobe.com/content/docs/fr/core-components/v1.html).
+>La fonctionnalité décrite ici est disponible pour tous les composants principaux à compter de la [version 1.1.0 des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 ## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
 
-Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
+À l’aide de l’exportateur JSON AEM, vous pouvez diffuser le contenu de n’importe quelle page AEM au format du modèle de données JSON. Cette méthode peut ensuite être utilisée par vos propres applications.
 
-Avec AEM, la diffusion s’effectue à l’aide du sélecteur `model` et de l’extension `.json`.
+Dans AEM, la diffusion est réalisée à l’aide du sélecteur . `model` et `.json` extension .
 
 `.model.json`
 
-1. Par exemple, une adresse URL comme :
+1. Par exemple, une URL telle que :
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. diffusera du contenu comme :
+1. Diffuse du contenu tel que :
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 Vous pouvez également diffuser le contenu d’un fragment de contenus structuré en le ciblant spécifiquement.
 
-Pour ce faire, utilisez le chemin du fragment dans son intégralité (via `jcr:content`), par exemple avec un suffixe comme :
+Utilisez le chemin d’accès complet au fragment (au moyen de la fonction `jcr:content`); par exemple, avec un suffixe tel que .
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
 Votre page peut contenir un fragment de contenu unique ou plusieurs composants de différents types. Vous pouvez également utiliser des mécanismes tels que des composants de liste pour rechercher automatiquement du contenu pertinent.
 
-* Par exemple, une adresse URL comme :
+* Par exemple, une URL telle que :
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
    ```
 
-* diffusera du contenu comme :
+* Diffuse du contenu tel que :
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -89,18 +89,18 @@ Voir également :
 
    * [Modèles Sling – Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
-* AEM avec JSON :
+* AEM avec JSON :
 
    * [Obtention d’informations sur la page au format JSON](/help/sites-developing/pageinfo.md)
 
 ## Documentation connexe {#related-documentation}
 
-Pour plus d’informations, voir :
+Pour plus d’informations, consultez les ressources suivantes :
 
-* la [rubrique Fragments de contenu du guide de l’utilisateur Assets](https://helpx.adobe.com/fr/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js).
+* la [rubrique Fragments de contenu du guide de l’utilisateur Assets](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=en&amp;topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js).
 
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
 * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
 
-* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://helpx.adobe.com/fr/experience-manager/core-components/using/content-fragment-component.html)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

@@ -1,7 +1,7 @@
 ---
 title: Concepts de base d’AEM
 seo-title: The Basics
-description: Présentation des concepts de base de la structure d’AEM et des méthodes de développement sur AEM, notamment fonctionnement de JCR, de Sling, d’OSGi, du dispatcher, des workflows et de MSM
+description: Présentation des concepts de base de la structure de l’AEM et du développement sur celle-ci, notamment la compréhension de JCR, Sling, OSGi, du Dispatcher, des workflows et de MSM
 seo-description: An overview of the core concepts of how AEM is structured and how to develop on top of it including understanding the JCR, Sling, OSGi, the dispatcher, workflows, and MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: ht
-source-wordcount: '3334'
-ht-degree: 100%
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+workflow-type: tm+mt
+source-wordcount: '3324'
+ht-degree: 53%
 
 ---
 
@@ -23,45 +23,45 @@ ht-degree: 100%
 >
 >Avant d’étudier les concepts de base d’AEM, Adobe vous recommande de suivre le tutoriel WKND dans le document [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md) pour obtenir un aperçu du processus de développement AEM et une introduction aux concepts clés.
 
-## Pré-requis pour développer sur AEM {#prerequisites-for-developing-on-aem}
+## Conditions préalables pour le développement sur AEM {#prerequisites-for-developing-on-aem}
 
-Vous aurez besoin des compétences suivantes pour développer sur AEM :
+Vous avez besoin des compétences suivantes pour développer en plus de l’AEM :
 
-* Une connaissance élémentaire des techniques d’application web, y compris :
+* Connaissances de base des techniques des applications web, notamment :
 
-   * le cycle de requête-réponse (XMLHttpRequest/XMLHttpResponse)
+   * le cycle request -response (XMLHttpRequest / XMLHttpResponse)
    * HTML
    * CSS
    * JavaScript
 
-* Une connaissance pratique d’Experience Server (CRX), y compris Content Explorer
-* Pour développer dans l’IU classique, connaissances rudimentaires de JSP (JavaServer Pages), notamment comprendre et savoir modifier des exemples JSP simples.
+* connaissances opérationnelles d’Experience Server (CRX), y compris l’explorateur de contenu ;
+* Pour développer dans l’IU classique, des connaissances de base de JSP (JavaServer Pages), notamment la possibilité de comprendre et de modifier des exemples JSP simples, sont également requises.
 
 Il est également recommandé de lire et de suivre les [Recommandations et bonnes pratiques](/help/sites-developing/dev-guidelines-bestpractices.md).
 
-## Référentiel de contenu Java {#java-content-repository}
+## Référentiel de contenu Java™ {#java-content-repository}
 
-La norme Java Content Repository (JCR), [JSR 283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle.
+La norme Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie une méthode indépendante du fournisseur et de l’implémentation pour accéder au contenu de manière bidirectionnelle à un niveau granulaire au sein d’un référentiel de contenu.
 
-Les spécifications sont gérées par Adobe Research (Suisse) AG.
+Les spécifications sont dirigées par Adobe Research (Suisse) SA.
 
-Le module [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
+Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), javax.jcr.&amp;ast; est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
 ## Experience Server (CRX) et Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-Experience Server fournit des services Experience sur lesquels AEM est basé et qui peuvent servir à créer des applications personnalisées. Il intègre le référentiel de contenu basé sur Jackrabbit.
+Experience Server fournit les services d’expérience sur lesquels AEM est basé et qui peuvent être utilisés pour créer des applications personnalisées. Il incorpore également le référentiel de contenu basé sur Jackrabbit.
 
-[Apache Jackrabbit](https://jackrabbit.apache.org/) est une implémentation open source entièrement conforme de l’API JCR 2.0.
+[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) est une mise en oeuvre open source, entièrement conforme, de l’API JCR 2.0.
 
 ## Traitement des requêtes Sling {#sling-request-processing}
 
 ### Introduction à Sling {#introduction-to-sling}
 
-AEM repose sur [Sling](https://sling.apache.org/site/index.html), un framework d’application web basé sur des principes REST. Il facilite le développement d’applications orientées contenu. Sling utilise un référentiel JCR, tel que Apache Jackrabbit, ou dans le cas d’AEM, le référentiel de contenu CRX, comme magasin de données. The Apache Software Foundation a contribué au développement de Sling. Plus d’informations sont disponibles sur Apache.
+AEM repose sur [Sling](https://sling.apache.org/index.html), un framework d’application web basé sur des principes REST. Il facilite le développement d’applications orientées contenu. Sling utilise un référentiel JCR, tel qu’Apache Jackrabbit ou, dans le cas d’AEM, le référentiel de contenu CRX, comme entrepôt de données. The Apache Software Foundation a contribué au développement de Sling. Plus d’informations sont disponibles sur Apache.
 
-Avec Sling, le type de contenu à diffuser n’est pas la première considération en matière de traitement. Il s’agit plutôt de savoir si l’URL se résout en un objet de contenu pour lequel un script peut ensuite être identifié afin d’effectuer le rendu. Les auteurs de contenu web bénéficient ainsi d’un excellent support pour créer des pages facilement personnalisables selon leurs besoins.
+Avec Sling, le type de contenu à diffuser n’est pas la première considération en matière de traitement. Il s’agit plutôt de savoir si l’URL se résout en un objet de contenu pour lequel un script peut ensuite être identifié afin d’effectuer le rendu. Cela offre une excellente prise en charge aux auteurs de contenu web pour créer des pages facilement personnalisées selon leurs besoins.
 
-Les avantages liés à cette flexibilité sont évidents dans les applications comportant un vaste éventail d’éléments de contenu différents ou dans les cas où des pages facilement personnalisables sont nécessaires. En particulier, lors de la mise en œuvre d’un système de gestion de contenu web comme celui de la solution AEM.
+Les avantages liés à cette flexibilité sont évidents dans les applications comportant un vaste éventail d’éléments de contenu différents ou dans les cas où des pages facilement personnalisables sont nécessaires. En particulier, lors de la mise en oeuvre d’un système de gestion de contenu web tel que WCM dans la solution AEM.
 
 Voir [Découvrir Sling en 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) pour connaître les premières étapes de développement avec Sling.
 
@@ -75,34 +75,34 @@ Le schéma suivant décrit tous les paramètres de requête invisibles, mais pui
 
 ### Sling est centré sur le contenu {#sling-is-content-centric}
 
-Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur le contenu au moment où chaque requête (HTTP) est mappée avec le contenu sous la forme d’une ressource JCR (un nœud de référentiel) :
+Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur le contenu, car chaque requête (HTTP) est mappée sur le contenu sous la forme d’une ressource JCR (un noeud de référentiel) :
 
-* la première cible est la ressource (nœud JCR) contenant le contenu
-* ensuite, la représentation, ou script, est localisée à partir des propriétés de ressource en combinaison avec certaines parties de la requête (par exemple des sélecteurs et/ou l’extension)
+* la première cible est la ressource (noeud JCR) contenant le contenu.
+* deuxièmement, la représentation, ou le script, se trouve à partir des propriétés de ressource combinées à certaines parties de la requête (par exemple, les sélecteurs et/ou l’extension).
 
 ### Sling RESTful {#restful-sling}
 
 En raison de son approche centrée sur le contenu, Sling implémente un serveur orienté REST et propose ainsi un nouveau concept dans les frameworks d’applications web. Les avantages sont les suivants :
 
-* très bon niveau RESTful, pas seulement en surface ; les ressources et les représentations sont correctement modélisées dans le serveur
+* très RESTful, pas seulement à la surface; les ressources et les représentations sont correctement modélisées dans le serveur.
 * supprime un ou plusieurs modèles de données
 
-   * auparavant, les éléments suivants étaient nécessaires : structure d’URL, objets métier, schéma de base de données ;
-   * ils sont désormais réduits à : URL = ressource = structure JCR
+   * Auparavant, les éléments suivants étaient nécessaires : Structure d’URL, objets métier, schéma de base de données ;
+   * cela est désormais réduit à : URL = ressource = structure JCR
 
 ### Décomposition d’URL {#url-decomposition}
 
 Dans Sling, le traitement est piloté par l’URL de la requête de l’utilisateur. C’est l’URL qui définit le contenu à afficher par les scripts appropriés. Pour ce faire, les informations sont extraites de l’URL.
 
-Si nous analysons l’URL suivante :
+Si nous analysons l’URL suivante :
 
 ```xml
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-Nous pouvons la décomposer comme suit :
+Nous pouvons le diviser en plusieurs parties composites :
 
-| protocol | host | content path | selector(s) | extension |  | suffix |  | param(s) |
+| protocol | host | content path | selector(s) | extension |  | suffixe |  | param(s) |
 |---|---|---|---|---|---|---|---|---|
 | https:// | myhost | tools/spy | .printable.a4. | html | / | a/b | ? | x=12 |
 
@@ -122,30 +122,30 @@ Nous pouvons la décomposer comme suit :
 
 #### De l’URL au contenu et aux scripts {#from-url-to-content-and-scripts}
 
-Selon ces principes :
+En suivant ces principes :
 
-* le mappage utilise le chemin d’accès au contenu extrait de la requête pour localiser la ressource
-* lorsque la ressource appropriée est localisée, le type de ressource sling est extrait et utilisé pour localiser le script à appliquer pour le rendu du contenu
+* le mappage utilise le chemin d’accès au contenu extrait de la requête pour localiser la ressource.
+* lorsque la ressource appropriée est localisée, le type de ressource sling est extrait et utilisé pour localiser le script à utiliser pour le rendu du contenu.
 
-La figure ci-dessous illustre le mécanisme (décrit plus en détail dans les sections suivantes).
+La figure ci-dessous illustre le mécanisme utilisé, qui sera abordé plus en détail dans les sections suivantes.
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
 Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité donnée (en définissant la propriété `sling:resourceType` dans le nœud JCR). Ce mécanisme offre plus de liberté que celui selon lequel le script accède aux entités de données (comme le ferait une instruction SQL dans un script PHP) puisqu’une ressource peut avoir plusieurs rendus.
 
-#### Mappage des requêtes avec les ressources {#mapping-requests-to-resources}
+#### Mappage des requêtes aux ressources {#mapping-requests-to-resources}
 
-La requête est décomposée et les informations nécessaires sont extraites. Une recherche de la ressource demandée (nœud de contenu) est effectuée dans le référentiel :
+La requête est décomposée et les informations nécessaires sont extraites. Le référentiel est recherché pour la ressource demandée (noeud de contenu) :
 
 * D’abord, Sling vérifie si un nœud existe à l’emplacement spécifié dans la requête. Par exemple, `../content/corporate/jobs/developer.html`. 
 * Si aucun nœud n’est identifié, l’extension est supprimée et la recherche recommence ; par exemple, `../content/corporate/jobs/developer`. 
-* si aucun nœud n’est trouvé, Sling retourne le code http 404 (Not Found).
+* si aucun noeud n’est trouvé, Sling renvoie le code http 404 (Not Found).
 
 Sling permet également à des éléments autres que des nœuds JCR d’être des ressources, mais il s’agit là d’une fonctionnalité avancée.
 
 ### Localisation du script {#locating-the-script}
 
-Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de ressource sling** est extrait. C’est un chemin qui localise le script à utiliser pour le rendu du contenu.
+Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de ressource sling** est extrait. Il s’agit d’un chemin d’accès qui localise le script à utiliser pour le rendu du contenu.
 
 Le chemin spécifié par le `sling:resourceType` peut être :
 
@@ -158,30 +158,30 @@ Tous les scripts Sling sont stockés dans des sous-dossiers `/apps` ou `/libs` q
 
 Un certain nombre d’autres points sont à noter :
 
-* si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par ex. jobs.POST.esp (voir ci-dessous)
-* divers moteurs de script sont pris en charge :
+* lorsque la méthode (GET, POST) est requise, elle est spécifiée en majuscules, conformément à la spécification HTTP, par exemple jobs.POST.esp (voir ci-dessous).
+* différents moteurs de script sont pris en charge :
 
-   * HTL (HTML Template Language - Il s’agit du système de modèle côté serveur préféré et recommandé d’Adobe Experience Manager pour le langage HTML) : `.html`
+   * HTL (Langage de modèle de HTML - Adobe Experience Manager système de modèle côté serveur préféré et recommandé pour le HTML) : `.html`
    * Pages ECMAScript (JavaScript) (exécution côté serveur) : `.esp, .ecma`
-   * Pages de serveur Java (exécution côté serveur) : `.jsp`
-   * Compileur de servlet Java (exécution côté serveur) : `.java`
+   * Java™ Server Pages (exécution côté serveur) : `.jsp`
+   * Compilateur de servlet Java™ (exécution côté serveur) : `.java`
    * Modèles JavaScript (exécution côté client) : `.jst`
 
 La liste des moteurs de script pris en charge par l’instance donnée d’AEM figure dans la Felix Management Console (`http://<host>:<port>/system/console/slingscripting`).
 
-En outre, Apache Sling prend en charge l’intégration avec d’autres moteurs de script répandus (par exemple, Groovy, JRuby, Freemarker) et offre un moyen d’intégrer de nouveaux moteurs de script.
+Apache Sling prend également en charge l’intégration à d’autres moteurs de script populaires (par exemple, Groovy, JRuby, Freemarker) et permet d’intégrer de nouveaux moteurs de script.
 
 En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors pour :
 
 * Les requêtes GET/HEAD et les URL se terminant par .htmp (types de requête par défaut, format par défaut)
 
-   Le script sera /apps/hr/jobs/jobs.esp ; la dernière section de sling:resourceType forme le nom de fichier.
+   Le script est /apps/hr/jobs/jobs.esp; la dernière section de sling:resourceType forme le nom de fichier.
 
 * Requêtes POST (tous les types de requête, à l’exclusion des GET/HEAD, le nom de la méthode doit être en majuscules)
 
-   POST sera utilisé dans le nom du script.
+   POST est utilisé dans le nom du script.
 
-   Le script sera `/apps/hr/jobs/jobs.POST.esp`.
+   Le script est `/apps/hr/jobs/jobs.POST.esp`.
 
 * URL dans d’autres formats, qui ne se terminent pas par .html
 
@@ -197,23 +197,23 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
    Le script sera `/apps/hr/jobs/jobs.print.esp` ; le sélecteur est ajouté au nom du script.
 
-* Si aucun sling:resourceType a été défini alors :
+* Si aucun sling:resourceType n’a été défini, alors :
 
-   * le chemin d’accès au contenu est utilisé pour rechercher un script correspondant (si ResourceTypeProvider basé sur un chemin est actif).
+   * le chemin d’accès au contenu sera utilisé pour rechercher un script approprié (si le ResourceTypeProvider basé sur le chemin est principal).
 
       par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/` ;
 
-   * le type de nœud principal est utilisé.
+   * le type de noeud Principal sera utilisé.
 
 * Si aucun script n’est trouvé, le script par défaut est utilisé.
 
-   Le rendu par défaut est actuellement pris en charge sous la forme de texte brut (.txt), HTML (.html) et JSON (.json) qui répertorie toutes les propriétés du nœud (correctement mises en forme). Le rendu par défaut pour l’extension .res, ou les requêtes sans extension de requête, consiste à spouler la ressource (si possible).
+   Le rendu par défaut est actuellement pris en charge sous la forme de texte brut (.txt), HTML (.html) et JSON (.json) qui répertorie toutes les propriétés du nœud (correctement mises en forme). Le rendu par défaut pour l’extension .res, ou les requêtes sans extension de requête, consiste à spouiller la ressource (si possible).
 * Pour la gestion des erreurs http (codes 403 ou 404), Sling recherche un script dans :
 
-   * l’emplacement /apps/sling/servlet/errorhandler pour [scripts personnalisés](/help/sites-developing/customizing-errorhandler-pages.md)
-   * ou l’emplacement des scripts standard /libs/sling/servlet/errorhandler/403.esp ou 404.esp respectivement.
+   * l’emplacement /apps/sling/servlet/errorhandler pour [script personnalisé](/help/sites-developing/customizing-errorhandler-pages.md)
+   * ou l’emplacement des scripts standard /libs/sling/servlet/errorhandler/403.esp, ou 404.esp, respectivement.
 
-Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est spécifique, mieux c’est. En d’autres termes, plus le sélecteur correspond meilleur est le résultat, quelle que soit l’extension de requête ou la correspondance de nom de méthode.
+Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est précise, mieux elle est; en d’autres termes, plus le sélecteur correspond mieux, quelle que soit l’extension de requête ou la correspondance de nom de méthode.
 
 Par exemple, envisagez une demande d’accès à la ressource
 
@@ -272,22 +272,22 @@ La hiérarchie de type de :
 
 Ceci est dû au fait que `/y` possède la propriété `sling:resourceSuperType` contrairement à `/x`, et donc son super-type est issu de son type de ressource.
 
-#### Les scrips Sling ne peuvent pas être appelés directement {#sling-scripts-cannot-be-called-directly}
+#### Les scripts Sling ne peuvent pas être appelés directement {#sling-scripts-cannot-be-called-directly}
 
-Dans Sling, les scripts ne peuvent pas être appelés directement car cela est contraire au strict concept d’un serveur REST. Sinon, vous mélangeriez les ressources et les représentations.
+Dans Sling, les scripts ne peuvent pas être appelés directement, car cela violerait le concept strict d’un serveur REST ; vous mélangeriez des ressources et des représentations.
 
-Si vous appelez la représentation (le script) directement, vous masquez la ressource dans le script, donc le framework (Sling) ne peut plus la détecter. Ainsi, vous perdez certaines fonctionnalités :
+Si vous appelez la représentation (le script) directement, vous masquez la ressource dans le script, donc le framework (Sling) ne peut plus la détecter. Vous perdez ainsi certaines fonctionnalités :
 
-* le traitement automatique des méthodes http autres que GET, y compris :
+* la gestion automatique des méthodes http autres que GET, notamment :
 
    * les méthodes POST, PUT, DELETE qui sont gérées avec une implémentation par défaut de Sling ;
    * le script `POST.jsp` dans votre emplacement sling:resourceType.
 
-* l’architecture du code perd de son intégrité et de sa structure qui sont primordiales dans les développements à grande échelle
+* l’architecture de votre code n’est plus aussi propre ni aussi clairement structurée qu’elle devrait l’être ; d’une importance primordiale pour le développement à grande échelle
 
 ### API Sling {#sling-api}
 
-Elle utilise le module API Sling org.apache.sling.&amp;ast; et les bibliothèques de balises.
+Il utilise le package d’API Sling org.apache.sling.&amp;ast; et les bibliothèques de balises.
 
 ### Référencement d’éléments existants avec sling:include {#referencing-existing-elements-using-sling-include}
 
@@ -295,7 +295,7 @@ En dernier lieu, il faut considérer la nécessité de référencer les élémen
 
 Des scripts plus complexes (agrégation de scripts) peuvent demander un accès à plusieurs ressources (par exemple, navigation, barre latérale, pied de page, éléments d’une liste) en ajoutant *resource*.
 
-Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>/&lt;ressource>&quot;). Cela inclut effectivement la définition de la ressource référencée, comme dans l’instruction suivante qui fait référence à une définition existante pour le rendu des images :
+Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>/&lt;ressource>&quot;). Cela inclut effectivement la définition de la ressource référencée, comme dans l’instruction suivante qui fait référence à une définition existante pour le rendu des images :
 
 ```xml
 %><sling:include resourceType="geometrixx/components/image/img"/><%
@@ -305,12 +305,12 @@ Pour ce faire, vous pouvez utiliser la commande sling:include(&quot;/&lt;chemin>
 
 OSGi désigne une architecture permettant de développer et de déployer des applications et des bibliothèques modulaires (également connu sous le nom de Dynamic Module System for Java). Les conteneurs OSGi vous permettent de décomposer votre application en modules distincts (des fichiers jar contenant des méta-informations supplémentaires appelés « bundles » dans le jargon OSGi) et de gérer les interdépendances qui existent entre eux avec :
 
-* des services mis en œuvre dans le conteneur
+* services implémentés dans le conteneur
 * un contrat entre le conteneur et votre application
 
-Ces services et contrats forment une architecture permettant à des éléments distincts de se détecter dynamiquement pour la collaboration.
+Ces services et contrats fournissent une architecture qui permet à des éléments individuels de se découvrir dynamiquement les uns les autres à des fins de collaboration.
 
-Le framework OSGi offre ensuite le chargement/déchargement dynamique, la configuration et le contrôle de ces bundles, sans nécessiter de redémarrage.
+Une structure OSGi vous offre ensuite un chargement/déchargement dynamique, une configuration et un contrôle de ces lots, sans nécessiter de redémarrage.
 
 >[!NOTE]
 >
@@ -318,104 +318,104 @@ Le framework OSGi offre ensuite le chargement/déchargement dynamique, la config
 >
 >En particulier, la page Basic Education (formation de base) contient un ensemble de présentations et de tutoriels.
 
-Cette architecture vous permet d’étendre Sling en lui ajoutant des modules spécifiques aux applications. Sling, et donc CQ5, utilise l’implémentation [Apache Felix](https://felix.apache.org/) d’OSGI (Open Services Gateway Initiative) et est basé sur les spécifications OSGi Service Platform Release 4, Version 4.2. Ce sont deux ensembles de bundles OSGi exécutés dans un framework OSGi.
+Cette architecture vous permet d’étendre Sling en lui ajoutant des modules spécifiques aux applications. Sling, et donc CQ5, utilise l’implémentation [Apache Felix](https://felix.apache.org/documentation/index.html) d’OSGI (Open Services Gateway Initiative) et est basé sur les spécifications OSGi Service Platform Release 4, Version 4.2. Il s’agit de deux groupes OSGi s’exécutant dans une structure OSGi.
 
-Cette extension permet d’appliquer les actions suivantes à l’un des modules dans votre installation :
+Vous pouvez ainsi effectuer les actions suivantes sur l’un des packages de votre installation :
 
 * installation
-* démarrage
-* arrêt
+* start
+* stop
 * mise à jour
 * désinstallation
 * voir l’état actuel
-* accéder à des informations plus détaillées (par exemple, nom symbolique, version, emplacement, etc.) pour des bundles en particulier
+* accéder à des informations plus détaillées (nom symbolique, version, emplacement, etc.) sur les lots spécifiques ;
 
 Pour plus d’informations, reportez-vous aux sections [Console web](/help/sites-deploying/web-console.md), [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) et [Paramètres de configuration OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 
 ## Objets de développement dans l’environnement AEM {#development-objects-in-the-aem-environment}
 
-Les éléments suivants présentent un intérêt pour le développement :
+Les éléments suivants présentent un intérêt pour le développement :
 
 **Élément** Un élément est un nœud ou une propriété.
 
-Pour plus d’informations sur la manipulation des objets Élément, reportez-vous aux [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
+Pour plus d’informations sur la manipulation des objets Élément, reportez-vous aux [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) de l’interface javax.jcr.Item.
 
 **Nœud (et leurs propriétés)** Les nœuds et leurs propriétés sont définis dans la spécification JCR API 2.0 (JSR 283). Ils stockent le contenu, les définitions d’objets, les scripts de rendu et d’autres données.
 
-Les nœuds définissent la structure du contenu et leurs propriétés stockent le contenu réel et les métadonnées.
+Les noeuds définissent la structure du contenu et leurs propriétés stockent le contenu réel et les métadonnées.
 
-Les nœuds de contenu pilotent le rendu. Sling récupère le nœud de contenu de la requête entrante. La propriété sling:resourceType de ce nœud pointe vers le composant de rendu Sling à utiliser.
+Les nœuds de contenu pilotent le rendu. Sling récupère le nœud de contenu de la requête entrante. La propriété sling:resourceType de ce noeud pointe vers le composant de rendu Sling à utiliser.
 
-Un nœud, qui est un nom JCR, est également appelé « ressource » dans l’environnement Sling.
+Un noeud, qui est un nom JCR, est également appelé une ressource dans l’environnement Sling.
 
-Par exemple, pour obtenir les propriétés du nœud actif, vous pouvez utiliser le code suivant dans votre script :
+Par exemple, pour obtenir les propriétés du noeud actif, vous pouvez utiliser le code suivant dans votre script :
 
 `PropertyIterator properties = currentNode.getProperties();`
 
 currentNode étant l’objet du nœud actif.
 
-Pour plus d’informations sur la manipulation des objets Node, reportez-vous aux [Javadocs](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Pour plus d’informations sur la manipulation des objets Node, reportez-vous aux [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**Widget** Dans AEM, toutes les entrées utilisateur sont gérées par des widgets. Ceux-ci sont souvent utilisés pour contrôler la modification d’un contenu.
+**Widget** Dans AEM, toutes les entrées utilisateur sont gérées par des widgets. Ils sont souvent utilisés pour contrôler la modification d’un élément de contenu.
 
-Les boîtes de dialogue sont construites en combinant des Widgets.
+Les boîtes de dialogue sont créées en combinant des widgets.
 
-AEM a été développé à partir de la bibliothèque de widgets ExtJS.
+AEM a été développé à l’aide de la bibliothèque de widgets ExtJS.
 
 **Boîte de dialogue** Une boîte de dialogue est un type spécial de widget.
 
-Pour modifier le contenu, AEM utilise des boîtes de dialogue définies par le développeur de l’application. Celles-ci combinent une série de widgets pour présenter à l’utilisateur tous les champs et toutes les actions nécessaires pour modifier le contenu associé.
+Pour modifier le contenu, AEM utilise des boîtes de dialogue définies par le développeur de l’application. Ils combinent une série de widgets pour présenter à l’utilisateur tous les champs et actions nécessaires pour modifier le contenu associé.
 
-Les boîtes de dialogue servent également à modifier les métadonnées et sont utilisées par divers outils d’administration.
+Les boîtes de dialogue sont également utilisées pour modifier les métadonnées et par divers outils d’administration.
 
 **Composant** Un composant logiciel est un élément système offrant un service ou un événement prédéfini et capable de communiquer avec d’autres composants.
 
-Dans AEM, un composant est souvent utilisé pour effectuer le rendu du contenu d’une ressource. Lorsque la ressource est une page, le composant chargé de son rendu est appelé « composant de niveau supérieur » ou « composant de page ». Cependant, un composant n’effectue pas nécessairement le rendu de contenu, ni n’est lié à une ressource spécifique. Par exemple, un composant de navigation affiche des informations sur plusieurs ressources.
+Dans AEM, un composant est souvent utilisé pour effectuer le rendu du contenu d’une ressource. Lorsque la ressource est une page, le composant chargé de son rendu est appelé « composant de niveau supérieur » ou « composant de page ». Cependant, un composant n’a pas à effectuer le rendu du contenu ni à être lié à une ressource spécifique ; par exemple, un composant de navigation affiche des informations sur plusieurs ressources.
 
-La définition d’un composant comprend :
+La définition d’un composant comprend :
 
-* le code utilisé pour le rendu du contenu
-* une boîte de dialogue pour la saisie utilisateur et la configuration du contenu résultant.
+* le code utilisé pour effectuer le rendu du contenu ;
+* une boîte de dialogue pour l’entrée utilisateur et la configuration du contenu résultant.
 
-**Modèle** Un modèle est la base d’un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est ensuite créée en copiant ce modèle.
+**Modèle** Un modèle est la base d’un type de page spécifique. Lors de la création d’une page dans l’onglet Sites web, l’utilisateur doit sélectionner un modèle. La nouvelle page est alors créée en copiant ce modèle.
 
-Un modèle est une hiérarchie de nœuds qui a la même structure que la page à créer, mais sans contenu réel.
+Un modèle est une hiérarchie de noeuds ayant la même structure que la page à créer, mais sans contenu réel.
 
-Il définit le composant de page utilisé pour afficher la page et le contenu par défaut (contenu principal de premier niveau). Le contenu définit la façon dont il est rendu car AEM est centré sur le contenu.
+Il définit le composant de page utilisé pour afficher la page et le contenu par défaut (contenu principal de premier niveau). Le contenu définit la manière dont il est rendu, AEM étant centré sur le contenu.
 
 **Composant de page (composant de niveau supérieur)** Composant à utiliser pour effectuer le rendu de la page.
 
 **Page** Une page est une « instance » d’un modèle.
 
-Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling:resourceType du nœud de contenu pointe vers le composant de page utilisé pour le rendu de la page.
+Une page comporte un nœud de hiérarchie de type cq:Page et un nœud de contenu de type cq:PageContent. La propriété sling:resourceType du noeud de contenu pointe vers le composant Page utilisé pour le rendu de la page.
 
-Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code suivant dans votre script :
+Par exemple, pour obtenir le nom de la page active, vous pouvez utiliser le code suivant dans votre script :
 
 S`tring pageName = currentPage.getName();`
 
-currentPage étant l’objet de la page active. Pour plus d’informations sur la manipulation des objets Page, reportez-vous aux [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html).
+currentPage étant l’objet de la page active. Pour plus d’informations sur la manipulation des objets Page, reportez-vous aux [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Gestionnaire de pages** Le gestionnaire de page est une interface qui fournit des méthodes pour les opérations au niveau de la page.
 
-Par exemple, pour obtenir la page de contenu d’une ressource, vous pouvez utiliser le code suivant dans votre script :
+Par exemple, pour obtenir la page conteneur d’une ressource, vous pouvez utiliser le code suivant dans votre script :
 
-Page myPage = pageManager.getContainingPage(myResource);
+Page myPage = pageManager.getContainerPage(myResource);
 
-pageManager étant l’objet de gestionnaire de page et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, reportez-vous aux [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html).
+pageManager étant l’objet de gestionnaire de page et myResource un objet de ressource. Pour plus d’informations sur les méthodes fournies par le gestionnaire de page, reportez-vous aux [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structure dans le référentiel {#structure-within-the-repository}
 
-La liste suivante donne un aperçu de la structure que vous verrez dans le référentiel.
+La liste suivante donne un aperçu de la structure que vous voyez dans le référentiel.
 
 >[!CAUTION]
 >
 >Les modifications apportées à cette structure, ou aux fichiers qu’elle contient, doivent être entreprises avec prudence.
 >
->Des changements sont nécessaires lors du développement, mais il faut toutefois bien comprendre les conséquences de tout changement apporté.
+>Des modifications sont nécessaires lorsque vous développez, mais vous devez veiller à bien comprendre les implications de toute modification que vous apportez.
 
 >[!CAUTION]
 >
->Vous ne devez rien modifier dans le chemin `/libs`. Pour la configuration et d’autres modifications, copiez l’élément de `/libs` dans `/apps` et apportez des modifications dans `/apps`.
+>Ne modifiez rien dans la variable `/libs` chemin d’accès. Pour la configuration et d’autres modifications, copiez l’élément de `/libs` dans `/apps` et apportez des modifications dans `/apps`.
 
 * `/apps`
 
@@ -433,7 +433,7 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 * `/libs`
 
-    Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers de `/libs` représentent les fonctionnalités AEM prêtes à l’emploi, par exemple la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement d’AEM. Les fonctionnalités spécifiques à votre site web doivent être développées sous `/apps` (voir [Personnalisation de composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+    Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers dans `/libs` représentent les fonctionnalités d’AEM d’usine telles que la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement d’AEM. Les fonctionnalités spécifiques à votre site web doivent être développées sous `/apps` (voir [Personnalisation de composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -445,36 +445,36 @@ La liste suivante donne un aperçu de la structure que vous verrez dans le réf�
 
 ## Environnements {#environments}
 
-Avec AEM, un environnement de production se compose souvent de deux types d’instances différents : [une instance de création et une instance de publication](/help/sites-deploying/deploy.md#author-and-publish-installs).
+Avec AEM, un environnement de production se compose souvent de deux types d’instances différents : an [Création et instances de publication](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
 ## Le dispatcher {#the-dispatcher}
 
-Le dispatcher est un outil Adobe qui sert à la mise en cache et/ou l’équilibrage de charge. Plus d’informations sont disponibles sous [le dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/user-guide.html).
+Le dispatcher est un outil Adobe qui sert à la mise en cache et/ou l’équilibrage de charge. Vous trouverez plus d’informations sous [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
-## FileVault (système de révision de code source) {#filevault-source-revision-system}
+## FileVault (système de révision source) {#filevault-source-revision-system}
 
-FileVault fournit à votre référentiel JCR des fonctions de mappage du système de fichiers et de gestion des versions. Il permet de gérer des projets de développement AEM avec une prise en charge complète du stockage et de la gestion du code de projet, du contenu, des configurations, etc. dans des systèmes de gestion de versions standard (par exemple, Subversion).
+FileVault fournit à votre référentiel JCR des fonctions de mappage du système de fichiers et de gestion des versions. Il peut être utilisé pour gérer AEM projets de développement avec une prise en charge complète du stockage et de la gestion des versions du code de projet, du contenu, des configurations, etc., dans les systèmes de contrôle de version standard (par exemple, Subversion).
 
-Consultez la documentation [FileVault](/help/sites-developing/ht-vlttool.md) pour plus d’informations.
+Voir [Outil FileVault](/help/sites-developing/ht-vlttool.md) documentation pour plus d’informations.
 
 ## Workflows {#workflows}
 
-Votre contenu est souvent soumis à des processus organisationnels, y compris des étapes telles que l’approbation et la validation par différents participants. Ces processus peuvent être représentés comme des workflows [définis et développés dans AEM](/help/sites-developing/workflows-models.md), puis appliqués aux pages de contenu [appropriées](/help/sites-administering/workflows.md) ou [actifs numériques](/help/assets/assets-workflow.md), selon les besoins.
+Votre contenu est souvent soumis à des processus organisationnels, y compris des étapes telles que l’approbation et la validation par différents participants. Ces processus peuvent être représentés sous forme de workflows, [définis et développés dans AEM](/help/sites-developing/workflows-models.md), puis appliqué à la variable [pages de contenu appropriées](/help/sites-administering/workflows.md) ou [ressources numériques](/help/assets/assets-workflow.md) selon les besoins.
 
-Le moteur de workflow sert à gérer l’implémentation de vos workflows et leur application ultérieure sur votre contenu.
+Le moteur de workflow permet de gérer l’implémentation de vos workflows et leur application ultérieure dans votre contenu.
 
 ## Gestion multisite {#multi-site-management}
 
-Multi Site Manager (MSM) permet de gérer facilement plusieurs sites web partageant du contenu commun. MSM vous permet de définir des relations entre les sites afin que les modifications de contenu d’un site soient automatiquement répliquées sur d’autres sites.
+Multi Site Manager (MSM) permet de gérer facilement plusieurs sites web partageant du contenu commun. MSM vous permet de définir des relations entre les sites, de sorte que les modifications de contenu d’un site soient automatiquement répliquées sur d’autres sites.
 
-Par exemple, les sites web sont souvent proposés dans plusieurs langues à l’intention d’un public international. Lorsque le nombre de sites dans la même langue est faible (trois à cinq), un processus manuel de synchronisation du contenu entre les sites est possible. Cependant, dès que le nombre de sites augmente ou si plusieurs langues sont concernées, il est plus efficace d’automatiser le processus.
+Par exemple, les sites web sont souvent proposés dans plusieurs langues à l’intention d’un public international. Lorsque le nombre de sites dans la même langue est faible (de trois à cinq), un processus manuel de synchronisation du contenu entre les sites est possible. Cependant, lorsque le nombre de sites augmente ou que plusieurs langues sont impliquées, il devient plus efficace d’automatiser le processus.
 
-* Gérer efficacement différentes versions de langue d’un site web.
-* Mettre à jour automatiquement un ou plusieurs sites d’après un seul site source :
+* Gérez efficacement différentes versions linguistiques d’un site web.
+* Mettre automatiquement à jour un ou plusieurs sites en fonction d’un site source :
 
-   * Appliquer une structure de base commune et utiliser du contenu commun sur plusieurs sites.
-   * Maximiser l’utilisation des ressources disponibles.
-   * Uniformiser l’aspect de plusieurs sites.
-   * Concentrer les efforts sur la gestion de contenu qui diffère entre les sites.
+   * Application d’une structure de base commune et utilisation de contenu commun sur plusieurs sites.
+   * Optimiser l’utilisation des ressources disponibles.
+   * Maintenir un aspect commun.
+   * Concentrez-vous sur la gestion du contenu qui diffère entre les sites.
 
 Pour plus d’informations, voir [Multi Site Manager](/help/sites-administering/msm.md).

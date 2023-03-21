@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 1%
+source-wordcount: '934'
+ht-degree: 2%
 
 ---
 
 # Notions fondamentales sur la notation et les badges {#scoring-and-badges-essentials}
 
-La fonction Scores et badges d’AEM Communities permet d’identifier et de récompenser les membres de la communauté.
+La fonction Scores et badges d’AEM Communities identifie et récompense les membres de la communauté.
 
 Les détails de la configuration de la fonctionnalité sont décrits à la section
 
@@ -70,7 +70,7 @@ Par exemple, recherchez `this.isAssigned` in `/libs/social/forum/components/hbs/
 
 Si la valeur est true, isAssigned indique que le badge a été attribué pour un rôle et que le badge doit s’afficher sous forme de texte.
 
-Si la valeur est false, l’attribut est attribué pour un score gagné et le badge doit s’afficher sous forme d’image.
+Si la valeur est false, isAssigned indique que le badge a été attribué pour un score gagné et que le badge doit s’afficher sous forme d’image.
 
 Toute modification de ce comportement doit être effectuée dans un script personnalisé (remplacement ou recouvrement). Voir [Personnalisation côté client](/help/communities/client-customize.md).
 
@@ -127,7 +127,7 @@ Les descriptions d’accès aux données de notation et de badge utilisent JSRP,
 
 **JSRP sur l’auteur**: l’expérimentation dans l’environnement de création génère un contenu créé par l’utilisateur qui n’est visible que depuis l’environnement de création.
 
-**JSRP sur publication**: de même, si vous effectuez un test sur l’environnement de publication, il sera nécessaire d’accéder à CRXDE Lite avec des privilèges d’administrateur sur une instance de publication. Si l’instance de publication est en cours d’exécution dans [mode de production](/help/sites-administering/production-ready.md) (mode d’exécution nosamplecontent), il est nécessaire de [activer le CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP sur publication**: de même, si vous effectuez un test sur l’environnement de publication, il est nécessaire d’accéder à CRXDE Lite avec des privilèges d’administrateur sur une instance de publication. Si l’instance de publication est en cours d’exécution dans [mode de production](/help/sites-administering/production-ready.md) (mode d’exécution nosamplecontent), il est nécessaire de [activer le CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
 L’emplacement de base du contenu généré par l’utilisateur sur JSRP est `/content/usergenerated/asi/jcr/`.
 
@@ -135,8 +135,8 @@ L’emplacement de base du contenu généré par l’utilisateur sur JSRP est `/
 
 Les API suivantes sont disponibles :
 
-* [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
-* [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
+* [com.adobe.cq.social.scoring.api dans la version 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
+* [com.adobe.cq.social.badging.api dans la version 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
 
 Les derniers JavaDocs pour le Feature Pack installé sont disponibles pour les développeurs à partir du référentiel Adobe. Voir [Utilisation de Maven pour Communities : Javadocs](/help/communities/maven.md#javadocs).
 
@@ -170,7 +170,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Ajouter une propriété pour afficher les badges
+   * Pour afficher les badges, ajoutez une propriété
 
       `allowBadges = true`
 
@@ -201,7 +201,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Ajouter une propriété pour afficher les badges
+   * Pour afficher les badges, ajoutez une propriété
 
       `allowBadges = true`
 
@@ -214,7 +214,7 @@ Les captures d’écran des données du référentiel proviennent de la configur
    curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
-   Un utilisateur ayant obtenu deux badges en bronze et se voyant attribuer un badge de modérateur, voici comment il apparaît avec son entrée de forum.
+   Comme un utilisateur a obtenu deux badges en bronze et s’est vu attribuer un badge de modérateur, l’utilisateur apparaît avec son entrée de forum comme suit :
 
    ![modérateur](assets/moderator.png)
 
@@ -250,7 +250,7 @@ Pour le site du guide des composants de la communauté, l’utilisateur et son s
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-Le score est stocké dans la propriété . `scoreValue_tl` qui ne peut contenir directement qu’une valeur ou faire indirectement référence à un atomicCounter.
+Le score est stocké dans la propriété . `scoreValue_tl` qui ne peut contenir qu’une valeur ou faire indirectement référence à un atomicCounter.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 
