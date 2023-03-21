@@ -509,17 +509,17 @@ L’application AEM Forms prend désormais en charge Apache Cordova. Voici les v
 </table>
 
 >[!NOTE]
-PDF Generator prend en charge uniquement les versions en anglais, français, allemand et japonais des applications et des systèmes d’exploitation pris en charge.
-En outre :
-- PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
-- PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
-- PDF Generator ne prend pas en charge Microsoft Office 365.
-- Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
-- Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
-- Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms en fonction de votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
-- Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
-- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft Visio 2019. Vous pouvez continuer à utiliser Microsoft Visio 2016 pour convertir des fichiers .VSD et .VSDX.
-- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft Project 2019. Vous pouvez continuer à utiliser Microsoft Project 2016 pour convertir des fichiers .MPP.
+>PDF Generator prend en charge uniquement les versions en anglais, français, allemand et japonais des applications et des systèmes d’exploitation pris en charge.
+>En outre :
+>- PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
+>- PDF Generator prend uniquement en charge la version commerciale 32 bits de Microsoft Office Professional Plus et d’autres logiciels requis pour la conversion.
+>- PDF Generator ne prend pas en charge Microsoft Office 365.
+>- Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux.
+>- Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont prises en charge uniquement sous Windows.
+>- Une version d’Acrobat est fournie avec AEM Forms pour permettre la fonctionnalité PDF Generator. La version groupée ne doit être accessible que par programmation et uniquement avec AEM Forms, pendant le terme de la licence AEM Forms pour l’utilisation avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms en fonction de votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>- Le service PDF Generator ne prend pas en charge Microsoft Windows 10.
+>- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft Visio 2019. Vous pouvez continuer à utiliser Microsoft Visio 2016 pour convertir des fichiers .VSD et .VSDX.
+>- PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft Project 2019. Vous pouvez continuer à utiliser Microsoft Project 2016 pour convertir des fichiers .MPP.
 >
 
 
@@ -633,7 +633,7 @@ Pour des conditions requises supplémentaires, voir :
 </table>
 
 >[!NOTE]
-La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
+>La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader qui sont essentiellement des produits différents : « Classique » et « Continu ». Pour obtenir des détails et une comparaison de ces deux suivis, voir [https://www.adobe.com/go/acrobatdctracks_fr](https://www.adobe.com/go/acrobatdctracks_fr).
 
 ### Navigateurs {#browsers}
 
@@ -675,12 +675,12 @@ La famille de produits Acrobat DC présente deux suivis pour Acrobat et Reader 
 </table>
 
 >[!NOTE]
-Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
-- Safari est pris en charge uniquement sous Macintosh OS X.
-- Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. Pour plus d’informations sur la compatibilité de Safari 5.1 avec Adobe Reader, Acrobat, voir [https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html).
-- Administration Console n’est pas prise en charge sur Safari.
-- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
-- Forms Portal prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
+>Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
+>- Safari est pris en charge uniquement sous Macintosh OS X.
+>- Workspace prend en charge Safari 5.1 sous Macintosh OS X 10.6 et 10.7 avec Acrobat DC ou versions ultérieures. Pour plus d’informations sur la compatibilité de Safari 5.1 avec Adobe Reader, Acrobat, voir [https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/fr/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Administration Console n’est pas prise en charge sur Safari.
+>- Correspondence Management ne prend pas en charge Windows® Internet Explorer 9.0 pour les formulaires AEM 6.1.
+>- Forms Portal prend en charge le logiciel de lecteur d’écran JAWS 14.0 sur Internet Explorer 11 pour une meilleure accessibilité.
 
 
 #### Clients mobiles {#mobile-clients}
@@ -711,7 +711,7 @@ Voici quelques exceptions liées au navigateur pour les ordinateurs de bureau :
 </table>
 
 >[!NOTE]
-- Le Portail Formulaires est pris en charge sur Safari sur iPad uniquement.
+>- Le Portail Formulaires est pris en charge sur Safari sur iPad uniquement.
 
 
 ### Application AEM Forms {#aem-forms-workspace-app}
@@ -777,7 +777,7 @@ Les plateformes suivantes sont marquées comme obsolètes dans la version AEM F
 - OpenOffice 4.1.2
 
 >[!NOTE]
-Les plateformes marquées comme [obsolètes sur AEM Forms 6.5.12.0 et 6.5.10.0 restent prises en charge jusqu’à la version AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
+>Les plateformes marquées comme [obsolètes sur AEM Forms 6.5.12.0 et 6.5.10.0 restent prises en charge jusqu’à la version AEM Forms 6.5 Service Pack 18 (6.5.18.0)](https://helpx.adobe.com/fr/support/programs/eol-matrix.html).
 
 ## Historique des révisions {#revision-history}
 
