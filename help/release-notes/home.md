@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager 6.5
 description: Les notes de mise à jour d’AEM comportent des informations importantes sur la dernière version d’AEM, y compris les nouveautés, les plateformes prises en charge, les fonctionnalités obsolètes et celles qui ont été supprimées, et les problèmes connus.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '355'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,6 @@ Les notes de mise à jour d’AEM comportent des informations importantes sur la
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
 | [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez Commerce Integration Framework dans AEM. |
 | [Guide de l’utilisateur Mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=fr) | Ce guide explique comment partager du contenu généré par l’utilisateur avec Livefyre. |
 
 ## Ressources AEM clés
 

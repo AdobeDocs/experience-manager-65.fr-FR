@@ -2,9 +2,9 @@
 title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 description: Découvrez comment administrer AEM 6.5. Ces guides portent sur les fonctionnalités du site, les opérations de déploiement, les fonctionnalités de sécurité, la personnalisation, l’intégration, etc.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '347'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '328'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,6 @@ Découvrez comment administrer AEM 6.5. Ces guides portent sur les fonctionnali
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
 | [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez Commerce Integration Framework dans AEM. |
 | [Guide de l’utilisateur Mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=fr) | Ce guide explique comment partager du contenu généré par l’utilisateur avec Livefyre. |
 
 ## Ressources AEM clés
 

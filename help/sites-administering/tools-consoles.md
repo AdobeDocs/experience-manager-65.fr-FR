@@ -1,7 +1,7 @@
 ---
 title: Consoles Outils
 seo-title: Tools Consoles
-description: Découvrez les différentes consoles Outils disponibles dans AEM.
+description: Découvrez les différentes consoles d’outils dans AEM.
 seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '609'
-ht-degree: 100%
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 43%
 
 ---
 
 # Consoles Outils {#tools-consoles}
 
-Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Pour le moment, il existe deux versions de la console **Outils** selon l’interface utilisateur que vous utilisez :
+Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Il existe actuellement deux versions du **Outils** console en fonction de l’interface utilisateur que vous utilisez :
 
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
 * [Outils – IU classique](#tools-classic-ui)
@@ -33,7 +33,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 
 >[!NOTE]
 >
->Comme les cartes de l’interface utilisateur fournissent des détails sur la fonction de chaque option, ce tableau fournit simplement une référence rapide quant à l’emplacement des fonctionnalités dans l’arborescence.
+>Comme les cartes de l’interface utilisateur fournissent des détails sur l’objectif de chaque option, ce tableau fournit simplement une référence rapide quant à l’emplacement des fonctionnalités dans l’arborescence.
 
 <table>
  <tbody>
@@ -223,11 +223,11 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Modules</td>
+   <td>Packages</td>
   </tr>
   <tr>
    <td> </td>
-   <td>Partage de modules</td>
+   <td>Partage de packages</td>
   </tr>
   <tr>
    <td> </td>
@@ -236,10 +236,6 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   <tr>
    <td> </td>
    <td>Déchargement</td>
-  </tr>
-  <tr>
-   <td> </td>
-   <td>Configuration Livefyre</td>
   </tr>
   <tr>
    <td>Sécurité</td>
@@ -359,7 +355,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Modes d’expédition</td>
+   <td>Modes d'expédition</td>
   </tr>
  </tbody>
 </table>
@@ -373,24 +369,24 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <th>Objectif</th>
   </tr>
   <tr>
-   <td>MSM Control Center</td>
-   <td>Point centralisé pour gérer plusieurs sites.</td>
+   <td>Centre de contrôle MSM</td>
+   <td>Point centralisé pour la gestion de vos multiples sites.</td>
   </tr>
   <tr>
-   <td>Configurations de ClientContext<br /> </td>
-   <td>ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique. Les configurations de cloud par défaut et marketing sont définies ici.<br /> </td>
+   <td>Configurations du contexte client<br /> </td>
+   <td>ClientContext représente un ensemble de données utilisateur assemblées de manière dynamique. Les configurations cloud par défaut et marketing sont conservées ici.<br /> </td>
   </tr>
   <tr>
    <td>Configuration des services cloud<br /> </td>
-   <td>Contient les configurations liées à l’intégration à Adobe Marketing Cloud.</td>
+   <td>Contient des configurations liées à l’intégration à Adobe Marketing Cloud.</td>
   </tr>
   <tr>
    <td>Paramètres du cloud<br /> </td>
-   <td>Paramètres du gestionnaire de configuration.</td>
+   <td>Paramètres de Configuration Manager.</td>
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Permet d’accéder aux importateurs et aux différentes données de produit.</td>
+   <td>Permet d’accéder aux importateurs et à diverses données de produit.</td>
   </tr>
   <tr>
    <td>Gestion des ressources numériques (DAM) </td>
@@ -398,19 +394,19 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Tableaux de bord</td>
-   <td>Vous donne la possibilité de créer des tableaux de bord de rapports, ce qui permet de définir des pages qui affichent des données consolidées de façon personnalisée.</td>
+   <td>Permet de créer des tableaux de bord de rapports ; ils offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td>
   </tr>
   <tr>
    <td>Documentation personnalisée</td>
-   <td>Utilisée lors de l’extension de la documentation et de l’aide en ligne.</td>
+   <td>Utilisé lors de l’extension de la documentation et de l’aide en ligne.</td>
   </tr>
   <tr>
    <td>fd</td>
-   <td>Aucune fonctionnalité active n’est liée à cette entrée.</td>
+   <td>Aucune principale fonctionnalité liée à cette entrée.</td>
   </tr>
   <tr>
-   <td>Envoi de formulaires</td>
-   <td>Contient la liste des envois de formulaires reçus.</td>
+   <td>Envois de formulaire</td>
+   <td>Contient la liste des envois de formulaire reçus.</td>
   </tr>
   <tr>
    <td>Importateurs </td>
@@ -425,44 +421,44 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <td>Permet de créer des sites web conçus pour les appareils mobiles.</td>
   </tr>
   <tr>
-   <td>Modules</td>
-   <td>Autre lien vers le gestionnaire de modules, qui affiche les modules chargés pour la gestion de contenu web AEM. Similaire aux informations affichées dans le gestionnaire de modules de CRX.</td>
+   <td>Packages</td>
+   <td>Autre lien vers le gestionnaire de packages, qui affiche les packages chargés pour la gestion de contenu web AEM. Similaire aux informations affichées dans le gestionnaire de modules de CRX.</td>
   </tr>
   <tr>
-   <td>Réplication – Agents de réplication</td>
-   <td>Servent à répliquer des données de l’environnement de création vers l’environnement de publication lorsque vous publiez des pages ou, en cas de réplication inverse, à transmettre les commentaires des utilisateurs de l’environnement de publication vers l’environnement de création.</td>
+   <td>Réplication - Agents de réplication</td>
+   <td>Utilisé pour répliquer les données de l’auteur à publier lors de la publication de pages ou avec la réplication inverse pour renvoyer les commentaires des utilisateurs de l’environnement de publication à l’auteur.</td>
   </tr>
   <tr>
    <td>Rapports</td>
-   <td>AEM fournit divers rapports personnalisés et permet de créer des rapports personnalisés et/ou d’élaborer le vôtre.</td>
+   <td>AEM fournit toute une gamme de rapports personnalisés, vous permet de créer des rapports personnalisés et/ou de développer vos propres rapports.</td>
   </tr>
   <tr>
    <td>Génération de modèles automatique de page par défaut</td>
-   <td>En mode Génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.</td>
+   <td>Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.</td>
   </tr>
   <tr>
    <td>Sécurité – Configuration en libre-service </td>
-   <td>Permet de configurer les messages électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et pour confirmer qu’un mot de passe a été réinitialisé.</td>
+   <td>Permet de configurer les courriers électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et de confirmer qu’un mot de passe a été réinitialisé.</td>
   </tr>
   <tr>
    <td>Segmentation</td>
-   <td>Les intérêts et objectifs des visiteurs qui se rendent sur un site sont variés. La compréhension de ces objectifs et la satisfaction de ces attentes constituent un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur ou la visiteuse.<br /> </td>
+   <td>Les visiteurs du site ont des intérêts et des objectifs différents lorsqu’ils se rendent sur un site. Comprendre ces objectifs et répondre aux attentes est un facteur de réussite important pour le marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur ou la visiteuse.<br /> </td>
   </tr>
   <tr>
    <td>clients</td>
-   <td>Aucune fonctionnalité active n’est liée à cette entrée.</td>
+   <td>Aucune principale fonctionnalité liée à cette entrée.</td>
   </tr>
   <tr>
    <td>truststore</td>
-   <td>Aucune fonctionnalité active n’est liée à cette entrée.</td>
+   <td>Aucune principale fonctionnalité liée à cette entrée.</td>
   </tr>
   <tr>
-   <td>Contrôle de version – Purger les versions</td>
-   <td>Permet de purger les versions de page, au besoin.</td>
+   <td>Contrôle de version - Purger les versions</td>
+   <td>Permet de purger les versions de page selon les besoins.</td>
   </tr>
   <tr>
    <td>Workflow</td>
-   <td>Les workflows contrôlent une série d’actions dans des pages ou des ressources numériques prenant en charge tout processus éditorial.</td>
+   <td>Les workflows contrôlent une série d’actions sur des pages ou des ressources numériques qui prennent en charge tout processus éditorial.</td>
   </tr>
  </tbody>
 </table>

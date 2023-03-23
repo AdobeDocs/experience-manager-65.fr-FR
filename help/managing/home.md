@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Managing User Guide
 description: Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de ressources clés et une collection complète de guides d’utilisation d’AEM 6.5.
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '356'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '337'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,6 @@ Découvrez comment gérer un projet AEM avec succès, avec la prise en charge de
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
 | [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez Commerce Integration Framework dans AEM. |
 | [Guide de l’utilisateur Mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=fr) | Ce guide explique comment partager du contenu généré par l’utilisateur avec Livefyre. |
 
 ## Ressources AEM clés
 

@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Authoring User Guide
 description: Découvrez les concepts clés de la création et de la création de contenu dans AEM 6.5. Vous trouverez également des informations sur l’utilisation des balises, des modèles et d’autres fonctionnalités de page.
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '362'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '343'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,6 @@ Découvrez les concepts clés de la création et de la création de contenu dans
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |
 | [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez Commerce Integration Framework dans AEM. |
 | [Guide de l’utilisateur Mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=fr) | Ce guide explique comment partager du contenu généré par l’utilisateur avec Livefyre. |
 
 ## Ressources AEM clés
 

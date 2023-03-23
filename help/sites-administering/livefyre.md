@@ -10,224 +10,225 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '1648'
-ht-degree: 100%
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '50'
+ht-degree: 68%
 
 ---
 
 # Intégration à Livefyre{#integrating-with-livefyre}
 
-Découvrez comment intégrer les fonctionnalités de traitement de Livefyre, les meilleures du secteur, à votre instance AEM 6.5, pour pouvoir ainsi publier en quelques minutes sur votre site le contenu créé par l’utilisateur sur les réseaux sociaux.
+>[!IMPORTANT]
+>
+>[Adobe Livefyre est officiellement en fin de service depuis le 30 novembre 2021](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
 
-## Prise en main {#getting-started}
+<!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 
-### Installez le module de Livefyre pour AEM {#install-livefyre-package-for-aem}
+## Getting Started {#getting-started}
 
-AEM 6.5 est livré avec le module de fonctionnalités 1.2.6 de Livefyre pré-installé. Ce module inclut uniquement l’intégration Livefyre limitée à AEM Sites et doit être désinstallé avant l’installation d’un module mis à jour. Avec le dernier module, vous pouvez expérimenter l’intégration totale de Livefyre à AEM, y compris Sites, Assets et Commerce.
+### Install Livefyre Package for AEM {#install-livefyre-package-for-aem}
+
+AEM 6.5 comes with Livefyre feature package 1.2.6 pre-installed. This package only includes limited Livefyre integration with AEM Sites and must be uninstalled before installing an updated package. With the latest package, you can experience the full integration of Livefyre with AEM, including Sites, Assets, and Commerce.
 
 >[!NOTE]
 >
->Certaines fonctionnalités du module AEM-LF dépendent du Social Component Framework (SCF). Si vous utilisez le module de fonctionnalités Livefyre dans le cadre d’un site non communautaire, vous devez déclarer *cq.social.scf* comme dépendance dans les bibliothèques clientes du site web. Si vous utilisez le module de fonctionnalités Livefyre dans le cadre d’un site web communautaire, cette dépendance doit déjà être déclarée.
+>Some features of the AEM-LF package depend on Social Component Framework (SCF). If you are using the Livefyre feature pack as part of a non-communities site, you must declare *cq.social.scf* as a dependency in the author clientlibs of the website. If you are using the LF feature pack as part of a communities website, this dependency should already be declared.
 
-1. Sur la page d’accueil d’AEM, cliquez sur l’icône **Outils** située sur le rail gauche.
-1. Accédez à **Déploiement > Modules**.
-1. Dans le gestionnaire de modules, faites défiler l’affichage jusqu’à apparition du module Livefyre, puis cliquez sur le titre du module **cq-social-livefyre-pkg-1.2.6.zip** pour en développer les options.
-1. Cliquez sur **Plus > Désinstaller**.
+1. From the AEM homepage, click the **Tools** icon on the left rail.
+1. Navigate to **Deployment &gt; Packages**.
+1. In the Package Manager, scroll until you see the pre-installed Livefyre feature package, then click the package title **cq-social-livefyre-pkg-1.2.6.zip** to expand the options.
+1. Click **More &gt; Uninstall**.
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Téléchargez le module Livefyre à partir de la [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+1. Download Livefyre package from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-1. Installez le module téléchargé à partir du gestionnaire de modules. Consultez la section [Comment utiliser les modules](/help/sites-administering/package-manager.md) pour plus d’informations sur l’utilisation de la Distribution logicielle et des modules dans AEM.
+1. From the Package Manager, install the downloaded package. See [How to Work with Packages](/help/sites-administering/package-manager.md) for more information on using Software Distribution and packages in AEM
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
-   Le module Livefyre-AEM est maintenant installé. Pour pouvoir commencer à utiliser les fonctionnalités d’intégration, vous devez configurer AEM pour utiliser Livefyre.
+   Your Livefyre-AEM package is now installed. Before you can begin using the integration features, you must Configure AEM to use Livefyre.
 
-   Pour plus d’informations et des notes de mise à jour sur les packs de fonctionnalités, consultez la section [Packs de fonctionnalités](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html?lang=fr).
+   For more information and release notes on feature packs, see [Feature Packs](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/home.html).
 
-### Configuration d’AEM pour utiliser Livefyre : création d’un dossier de configuration {#configure-aem-to-use-livefyre-create-a-configuration-folder}
+### Configure AEM to use Livefyre: Create a Configuration Folder {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
-1. Sur la page d’accueil d’AEM, cliquez sur l’icône **Outils** sur le rail de gauche, puis accédez à **Général > Explorateur de configuration**.
-   * Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
-1. Cliquez sur **Créer** pour ouvrir la boîte de dialogue Créer une configuration.
-1. Nommez votre configuration et cochez la case **Configurations cloud**.
+1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **General &gt; Configuration Browser**.
+   * See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
+1. Click **Create** to open the Create Configuration dialog.
+1. Name your configuration and check the **Cloud Configurations** checkbox.
 
-   Cela créera un dossier sous **Outils > Déploiement > Configuration Livefyre**, portant le nom saisi.
+   This will create a folder under **Tools &gt; Deployment &gt; Livefyre Configuration** with the name provided.
 
    ![livefyre-aem-create-config-folder](assets/livefyre-aem-create-config-folder.png)
 
-### Configuration d’AEM pour utiliser Livefyre : création d’une configuration Livefyre {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
+### Configure AEM to use Livefyre: Create a Livefyre Configuration {#configure-aem-to-use-livefyre-create-a-livefyre-configuration}
 
-Configurez AEM pour utiliser les informations d’identification de licence Livefyre de votre organisation et ainsi autoriser la communication entre Livefyre et AEM.
+Configure AEM to use your organization's Livefyre license credentials, allowing communication between Livefyre and AEM.
 
-1. Sur la page d’accueil d’AEM, cliquez sur l’icône **Outils** sur le rail de gauche, puis accédez à **Déploiement > Configuration Livefyre**.
-1. Sélectionnez le dossier de configuration dans lequel vous souhaitez créer une nouvelle configuration Livefyre, puis cliquez sur **Créer**.
+1. From the AEM homepage, click the **Tools** icon in the left rail, then navigate to **Deployment &gt; Livefyre Configuration**.
+1. Select the configuration folder in which you want to create a new Livefyre configuration, then click **Create**.
 
    ![create-livefyre-configuration1](assets/create-livefyre-configuration1.png)
 
    >[!NOTE]
    >
-   >Les fichiers doivent avoir des configurations cloud activées dans leurs propriétés pour que vous puissiez leur ajouter des configurations Livefyre. Les dossiers de configuration sont créés et gérés dans l’[explorateur de configurations.](/help/sites-administering/configurations.md)
+   >Folders must have Cloud Configurations enabled in their properties before Livefyre configurations can be added to them. Configuration folders are created and managed in the [Configuration Browser.](/help/sites-administering/configurations.md)
    >
-   >Vous ne pouvez pas créer de nom pour une configuration, celle-ci étant référencée par le chemin d’accès au dossier dans laquelle elle se trouve. Vous ne pouvez disposer que d’une configuration par dossier.
+   >You cannot create a name for a configuration—it is referenced by the path of the folder it is in. You can only have one configuration per folder.
 
-1. Sélectionnez la carte de configuration Livefyre nouvellement créée, puis cliquez sur **Propriétés**.
+1. Select the newly created Livefyre configuration card, then click **Properties**.
 
    ![create-livefyre-configuration2](assets/create-livefyre-configuration2.png)
 
-1. Entrez les informations d’identification Livefyre de votre organisation, puis cliquez sur **OK**.
+1. Enter your organization's Livefyre credentials, then click **OK**.
 
    ![configure-aem2](assets/configure-aem2.png)
 
-   Pour accéder à ces informations, ouvrez Livefyre Studio et accédez à **Paramètres > Paramètres d’intégration > Informations d’identification**.
+   To access this information, open Livefyre studio and navigate to **Settings &gt; Integration Settings &gt; Credentials**.
 
-   Votre instance AEM est maintenant configurée pour utiliser Livefyre et vous pouvez utiliser les fonctionnalités d’intégration.
+   Your AEM instance is now configured to use Livefyre and you can use the integration features.
 
-### Personnalisation de l’intégration SSO {#customize-single-sign-on-integration}
+### Customize Single Sign-on Integration {#customize-single-sign-on-integration}
 
-Le module Livefyre pour AEM comprend une intégration clé en main entre les profils AEM Communities et le service SSO de Livefyre.
+The Livefyre for AEM package includes an out-of-the-box integration between AEM Communities profiles and Livefyre's SSO service.
 
-Lorsque les utilisateurs se connectent à votre site AEM, ils sont également connectés aux composants sociaux de Livefyre. Lorsqu’un utilisateur déconnecté tente d’utiliser une fonctionnalité de composant Livefyre nécessitant une authentification (par exemple, télécharger une photo), le composant Livefyre lance l’authentification de l’utilisateur.
+When users log into your AEM site, they are also logged into Livefyre social components. When a logged-out user attempts to use a Livefyre component feature that requires authentication (like uploading a photo), the Livefyre component initiates user authentication.
 
-L’intégration d’authentification par défaut peut ne pas être parfaite pour chaque site. Pour respecter au mieux le flux d’authentification dans les modèles de votre site, vous pouvez remplacer le délégué d’authentification de Livefyre par défaut selon vos besoins. Suivez ces étapes :
+The default authentication integration may not be perfect for every site. To best match the authentication flow in your site templates, you can override the default Livefyre Authentication Delegate to meet your needs. Use these steps:
 
-1. Avec CRXDE Lite, copiez */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* dans */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
-1. Modifiez et enregistrez */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* pour implémenter un délégué d’authentification Livefyre répondant à vos besoins.
+1. Using CRXDE Lite, copy */libs/social/integrations/livefyre/components/authorizablecomponent/authclientlib* to */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib*.
+1. Edit and save */apps/social/integrations/livefyre/components/authorizablecomponent/authclientlib/auth.js* to implement a Livefyre Auth Delegate that meets your needs.
 
-   Pour plus d’informations sur la personnalisation d’un délégué d’authentification, consultez la section [Intégration d’identités](https://answers.livefyre.com/developers/identity-integration/).
+   For more information on AEM Clientlibs, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html).
 
-   Pour plus d’informations sur AEM Clientlibs, consultez la section [Utilisation des bibliothèques côté client](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=fr).
+## Use Livefyre with AEM Sites {#use-livefyre-with-aem-sites}
 
-## Utilisation de Livefyre avec AEM Sites {#use-livefyre-with-aem-sites}
+### Add Livefyre Components to a Page {#add-livefyre-components-to-a-page}
 
-### Ajout de composants Livefyre à une page {#add-livefyre-components-to-a-page}
+Before adding Livefyre components to a page within Sites, you must enable Livefyre for the page by either inheriting a Livefyre cloud configuration from a parent page or by adding the configuration directly to the page. Refer to your implementation for how to include cloud services on your site.
 
-Avant d’ajouter des composants à une page Livefyre dans Sites, vous devez activer Livefyre pour la page, soit en héritant la configuration cloud Livefyre d’une page parent, soit en ajoutant la configuration directement à la page. Consultez votre implémentation pour savoir comment inclure les services cloud sur votre site.
-
-Une fois Livefyre activé pour la page, les conteneurs doivent être configurés pour activer les composants Livefyre. Consultez la section [Configuration de composants en mode création](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html?lang=fr) pour obtenir des instructions sur l’activation des différents composants.
+Once Livefyre is enabled for the page, containers must be configured to allow Livefyre components. See [Configuring Components in Design Mode](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-designmode.html) for instructions on how to enable different components.
 
 >[!NOTE]
 >
->Les applications nécessitant une authentification pour la publication ne fonctionnent que si l’authentification est configurée dans Personnaliser l’intégration SSO.
+>Apps requiring authentication to post do not function until authentication is configured in Customize Single Sign-on Integration.
 
-1. Dans le panneau latéral **Composants** en mode création, sélectionnez **Livefyre** dans le menu pour restreindre la liste des composants Livefyre disponibles.
+1. From the **Components** side panel in design mode, select **Livefyre** from the menu to limit the list to available Livefyre components.
 
    ![livefyre-add](assets/livefyre-add.png)
 
-1. Sélectionnez un composant Livefyre et faites-le glisser vers la position voulue sur la page.
-1. Choisissez entre créer une nouvelle application Livefyre ou incorporer une application existante.
+1. Select a Livefyre component, and drag it into position on your page.
+1. Select whether to create a new Livefyre app or to embed an existing one.
 
-   Si vous incorporez une application existante, AEM vous demande de choisir l’application. Si vous créez une nouvelle application, l’application doit être renseignée avant l’apparition de contenu. L’application sera créée sur le site et le réseau Livefyre sélectionnés lors de l’activation de la configuration cloud Livefyre pour la page.
+   If embedding an existing app, AEM asks you to select the App. If creating a new App, the App will need to be populated before any content appears. The App will be created in the Livefyre site and network selected when Livefyre cloud configuration was enabled for the page.
 
-   Pour plus d’informations sur l’insertion de composants, consultez la rubrique [Modification du contenu de la page](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html?lang=fr).
+   For more information on inserting components, see [Editing Page Content](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/authoring/editing-content.html).
 
-### Modification d’un composant Livefyre pour une page AEM {#edit-a-livefyre-component-for-an-aem-page}
+### Edit a Livefyre Component for an AEM Page. {#edit-a-livefyre-component-for-an-aem-page}
 
-Vous pouvez uniquement configurer et modifier un composant Livefyre dans Livefyre Studio. Dans AEM :
+You can only configure and edit a Livefyre component in Livefyre Studio. From AEM:
 
-1. Cliquez sur le composant Livefyre à configurer.
-1. Cliquez sur l’icône **Configurer** (clé) pour ouvrir la boîte de dialogue de configuration.
-1. Cliquez sur **Pour modifier ce composant, accédez à Livefyre Studio**.
-1. Modifiez l’application Livefyre Studio.
+1. Click the Livefyre component to configure.
+1. Click the **Configure** icon (wrench) to open the configuration dialog.
+1. Click **To edit this component, go to Livefyre Studio**.
+1. Edit the App in Livefyre Studio.
 
-## Utilisation de Livefyre avec AEM Assets {#use-livefyre-with-aem-assets}
+## Use Livefyre with AEM Assets {#use-livefyre-with-aem-assets}
 
-### Demande de droits et importation de contenu généré par l’utilisateur dans AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
+### Request Rights and Import UGC into AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
 
-Vous pouvez importer du contenu créé par les utilisateurs Twitter et Instagram de Livefyre Studio vers AEM Assets à l’aide de l’importateur de contenu UGC. Après avoir sélectionné le contenu à importer, vous devez demander des droits sur le contenu pour pouvoir procéder à l’importation.
+You can import Twitter and Instagram user-generated content (UGC) from Livefyre Studio to AEM Assets using the UGC Importer. After selecting the content to import, you must then request rights to the content before the import can be completed.
 
 >[!NOTE]
 >
->Avant d’utiliser Assets pour importer du contenu créé par l’utilisateur, vous devez configurer des comptes de réseaux sociaux et de demande de droits dans Livefyre Studio. Consultez la section [Paramètre : demandes de droits](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=fr) pour plus d’informations.
+>Before using Assets to import UGC, you must set up Social Accounts and Rights Requests accounts in Livefyre Studio. See [Setting: Rights Requests](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html) for more information.
 
-Pour importer du contenu créé par l’utilisateur dans AEM Assets :
+To import UGC into AEM Assets:
 
-1. Sur la page d’accueil d’AEM, accédez à **Ressources > Fichiers**.
-1. Cliquez sur **Créer**, puis sur **Importer du contenu créé par l’utilisateur.**
+1. From the AEM homepage, navigate to **Assets &gt; Files**.
+1. Click **Create**, then click **Import UGC.**
 
    ![livefyre-aem-import-ugc](assets/livefyre-aem-import-ugc.png)
 
-1. Recherchez le contenu :
+1. Find content:
 
-   * De Livefyre, en cliquant sur l’onglet Bibliothèque UGC. Utilisez les filtres et la recherche pour rechercher du contenu dans la bibliothèque de contenu créé par l’utilisateur.
-   * De Twitter et Instagram, en cliquant sur l’onglet Twitter ou Instagram. Utilisez la recherche ou les filtres pour rechercher du contenu.
+    * From Livefyre by clicking the UGC Library tab. Use the filters and search to find content from the UGC Library.
+    * From Twitter and Instagram by clicking the Twitter or Instagram tab. Use the search or filters to find content.
 
-1. Sélectionnez les ressources à importer. Les ressources que vous sélectionnez sont automatiquement comptabilisées et enregistrées dans l’onglet **Sélectionné**.
-1. **Facultatif** : cliquez sur l’onglet **Sélectionné** et vérifiez le contenu créé par l’utilisateur sélectionné à importer.
-1. Cliquez sur **Suivant**.
+1. Select the assets you want to import. The assets you select are automatically counted and saved under the **Selected** tab.
+1. **Optional**: Click the **Selected** tab and review your selected UGC content to import.
+1. Click **Next**.
 
    ![livefyre-aem-import-ugc2](assets/livefyre-aem-import-ugc2.png)
 
-1. Pour les demandes de droits, choisissez l’une des options suivantes pour chaque ressource :
+1. For rights requests, choose one of the following options for each asset:
 
-   Pour Instagram :
+   For Instagram:
 
-   * **Demandez manuellement des droits** pour obtenir un message qui peut être copié-collé et envoyé manuellement aux propriétaires du contenu via Instagram.
-   * **Attribuez manuellement des droits sur le contenu** pour outrepasser les droits des fichiers individuels.
+    * **Manually Request Rights** to get a message that can be copied and pasted and manually sent to the content owners via Instagram.
+    * **Manually Attribute Content Rights** to override the rights for individual assets.
 
    >[!NOTE]
    >
-   >En raison des mises à jour affectant l’agrégation du contenu des comptes d’utilisateurs non professionnels, nous ne pouvons plus publier de commentaires en votre nom ni vérifier automatiquement les réponses de l’auteur. [Cliquez ici pour en savoir plus](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
+   >Due to updates affecting the aggregation of content from non-business user accounts, we can no longer post comments on your behalf or automatically check for replies from the author. [Click here to find out more](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
    ![livefyre-aem-import-ugc3-6-4](assets/livefyre-aem-import-ugc3-6-4.png)
 
-   Pour Twitter :
+   For Twitter:
 
-   * **Envoyez un message à l’auteur** pour envoyer un message au propriétaire du contenu demandant des droits sur la ressource.
-   * **Attribuez manuellement des droits sur le contenu** pour outrepasser les droits des fichiers individuels.
+    * **Message Author** to send a message to the content owner requesting rights to the asset.
+    * **Manually Attribute Content Rights** to override the rights for individual assets.
 
+1. Click **Import**.
 
-1. Cliquez sur **Importer**.
-
-   Si vous avez envoyé une demande de droits pour Twitter, le propriétaire du contenu peut voir le message de demande de droits sur son compte :
+   If you sent a Twitter rights request, the content owner will see the rights request message on their account:
 
    ![livefyre-aem-rights-request-twitter](assets/livefyre-aem-rights-request-twitter.png)
 
    >[!NOTE]
    >
-   >Twitter impose des restrictions sur les demandes identiques provenant du même compte. Lorsque vous importez plusieurs ressources, modifiez les messages individuellement pour qu’ils ne soient pas marqués.
+   >Twitter has limits on identical requests coming from the same account. When importing more than a couple assets, modify the messages individually to avoid being flagged.
 
-1. Cliquez sur **Terminé** dans le coin supérieur droit pour terminer le workflow de demande de droits.
+1. Click **Done** in the top-right corner to finish the Rights Request workflow.
 
-     Vous pouvez afficher le statut d’une demande de droits en attente pour une ressource dans Livefyre Studio. Si le contenu est en attente d’une demande de droits, la ressource ne s’affiche dans AEM Assets qu’une fois les droits accordés. La ressource s’affiche automatiquement dans AEM Assets lorsque la demande de droits est satisfaite.
+   You can see the status of a pending Rights Request for an asset in Livefyre Studio. If content is pending a rights request, the asset will not display in AEM Assets until rights are granted. The asset automatically appears in AEM Assets when a Rights Request is granted.
 
-   Pour Instagram, vous devez suivre la réponse du propriétaire du contenu et accorder manuellement des droits si des droits sont attribués au contenu.
+   For Instagram, you must track the content owner's response and manually grant rights if given rights to the content.
 
-## Utilisation de Livefyre avec AEM Commerce {#use-livefyre-with-aem-commerce}
+## Use Livefyre with AEM Commerce {#use-livefyre-with-aem-commerce}
 
-### Importation de catalogues de produits dans Livefyre avec AEM Commerce {#import-product-catalogs-into-livefyre-with-aem-commerce}
+### Import Product Catalogs into Livefyre with AEM Commerce {#import-product-catalogs-into-livefyre-with-aem-commerce}
 
-Les utilisateurs d’AEM Commerce peuvent facilement intégrer leur catalogue de produits existant à Livefyre pour favoriser l’engagement des utilisateurs dans les applications de visualisation de Livefyre.
+AEM Commerce users can seamlessly integrate their existing product catalog into Livefyre to drive user engagement in Livefyre's visualization Apps.
 
-Après avoir importé le catalogue de produits, les produits apparaissent en temps réel dans votre instance Livefyre. Si vous modifiez ou supprimez des éléments dans votre catalogue de produits AEM Commerce, les modifications sont automatiquement appliquées dans Livefrye.
+After you import the product catalog, the products show up in real time in your Livefyre instance. If you edit or delete items in your AEM Commerce Product Catalog, the changes automatically update in Livefrye.
 
-1. Vérifiez que le dernier module Livefyre pour AEM est installé sur votre instance AEM.
-1. Sur la page d’accueil, accédez à **AEM Commerce**.
-1. Créez une nouvelle collection ou utilisez une collection existante.
-1. Survolez la collection avec la souris et cliquez sur **Propriétés de la collection** (icône de crayon).
-1. Cochez l’option **Synchroniser avec Livefyre**.
-1. Renseignez le champ **Préfixe de page Livefyre** pour lier cette collection à une page spécifique dans AEM.
+1. Ensure you have the latest Livefyre for AEM package installed on your AEM instance.
+1. From the AEM homepage, navigate to **AEM Commerce**.
+1. Create a new collection or use an existing collection.
+1. Hover over the collection and click **Collection Properties** (pencil icon).
+1. Check **Sync to Livefyre**.
+1. Fill in **Livefyre Page Prefix** to link this collection to a specific page in AEM.
 
-   Le préfixe de page définit le chemin d’accès racine dans votre environnement, là où commence la recherche des pages de produit. Livefyre sélectionne la première page contenant un produit correspondant qui lui est associé. Pour obtenir différentes pages pour différents produits, plusieurs collections sont nécessaires.
+   The page prefix defines the root path in your environment where searching for product pages begins. Livefyre chooses the first page that has a corresponding product associated to it. To get different pages for different products, multiple collections are needed.
 
-## Matrice de prise en charge d’AEM pour les applications Livefyre {#aem-support-matrix-for-livefyre-apps}
+## AEM Support Matrix for Livefyre Apps {#aem-support-matrix-for-livefyre-apps}
 
-| Applications Livefyre | AEM 6.1 | AEM 6.2 | AEM 6.3 | AEM 6.4 |
+| Livefyre Apps |AEM 6.1 |AEM 6.2 |AEM 6.3 |AEM 6.4 |
 |---|---|---|---|---|
-| Carrousel | X | X | X | X |
-| Chat | X | X | X | X |
-| Commentaires | X | X | X | X |
-| Filmstrip |  | X | X | X |
-| LiveBlog | X | X | X | X |
-| Map | X | X | X | X |
-| Mur multimédia | X | X | X | X |
-| Mosaïque | X | X | X | X |
-| Sondage |  | X | X | X |
-| Révisions |  | X | X | X |
-| Carte unique | X | X | X | X |
-| Storify 2 |  | X | X | X |
-| Tendance |  | X | X | X |
-| Bouton Charger |  | X | X | X |
+| Carousel |X |X |X |X |
+| Chat |X |X |X |X |
+| Comments |X |X |X |X |
+| Filmstrip |  |X |X |X |
+| LiveBlog |X |X |X |X |
+| Map |X |X |X |X |
+| Media Wall |X |X |X |X |
+| Mosaic |X |X |X |X |
+| Poll |  |X |X |X |
+| Reviews |  |X |X |X |
+| Single Card |X |X |X |X |
+| Storify 2 |  |X |X |X |
+| Trending |  |X |X |X |
+| Upload Button |  |X |X |X | -->

@@ -5,9 +5,9 @@ user-guide-title: Guide d’Assets
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
-workflow-type: ht
-source-wordcount: '344'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '325'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Créez, gérez, traitez et distribuez des ressources numériques dans Experience
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet Experience Manager avec succès. |
 | [Guide de l’utilisateur de Commerce](/help/commerce/home.md) | Découvrez Commerce Integration Framework dans Experience Manager. |
 | [Guide de l’utilisateur Mobile](/help/mobile/home.md) | Ce guide explique comment créer et gérer du contenu pour les applications mobiles. |
-| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=fr) | Ce guide explique comment partager du contenu généré par l’utilisateur avec [!DNL Livefyre]. |
+
 
 ## Ressources essentielles pour [!DNL Experience Manager]
 
