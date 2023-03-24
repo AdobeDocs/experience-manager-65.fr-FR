@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
+source-git-commit: 7bed185be14938f1165d56f9b758961ae0f5c479
 workflow-type: tm+mt
-source-wordcount: '2593'
-ht-degree: 75%
+source-wordcount: '2579'
+ht-degree: 71%
 
 ---
 
@@ -45,8 +45,8 @@ Cette page vous aide à étendre les fonctionnalités du Multi Site Manager :
 
 La gestion multisite se compose des packages suivants :
 
-* [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 Les principaux objets API MSM interagissent comme suit (voir également [Termes utilisés](/help/sites-administering/msm.md#terms-used)) :
 
@@ -105,8 +105,8 @@ Les principaux objets API MSM interagissent comme suit (voir également [Termes 
 
 Créez des actions de synchronisation personnalisées à utiliser avec vos configurations de déploiement. Créez une action de synchronisation lorsque les actions [installées](/help/sites-administering/msm-sync.md#installed-synchronization-actions) ne répondent pas aux exigences spécifiques de votre application. Pour ce faire, créez deux classes :
 
-* Une implémentation de l’interface ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) `com.day.cq.wcm.msm.api.LiveAction`[ qui effectue l’action.
-* Un composant OSGI qui implémente l’interface [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) et crée des instances de votre classe `LiveAction`.
+* Une implémentation de l’interface ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) `com.day.cq.wcm.msm.api.LiveAction`[ qui effectue l’action.
+* Un composant OSGI qui implémente l’interface [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) et crée des instances de votre classe `LiveAction`.
 
 La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une configuration donnée :
 
@@ -125,11 +125,11 @@ La `LiveActionFactory` crée des instances de la classe `LiveAction` pour une co
 
 ### Accès au nœud de configuration LiveAction {#accessing-the-liveaction-configuration-node}
 
-Utilisez le nœud de configuration `LiveAction` dans le référentiel pour stocker les informations qui affectent le comportement d’exécution de l’instance `LiveAction`. Le nœud du référentiel qui stocke la configuration `LiveAction` est disponible pour l’objet `LiveActionFactory` lors de l’exécution. Par conséquent, vous pouvez ajouter des propriétés au nœud de configuration et les utiliser dans votre implémentation `LiveActionFactory` si nécessaire.
+Utilisez la variable `LiveAction` noeud de configuration dans le référentiel pour stocker les informations qui affectent le comportement d’exécution de la variable `LiveAction` instance. Le nœud du référentiel qui stocke la configuration `LiveAction` est disponible pour l’objet `LiveActionFactory` lors de l’exécution. Par conséquent, vous pouvez ajouter des propriétés au nœud de configuration et les utiliser dans votre implémentation `LiveActionFactory` si nécessaire.
 
 Par exemple, une `LiveAction` doit stocker le nom de l’auteur du plan directeur. Une propriété du nœud de configuration inclut le nom de la propriété de la page plan directeur qui stocke les informations. Lorsqu’elle est exécutée, la `LiveAction` récupère le nom de la propriété à partir de la configuration, puis obtient la valeur de la propriété.
 
-Le paramètre de la méthode ` [LiveActionFactory](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html).createAction` est un objet `Resource`. Cet objet `Resource` représente le nœud `cq:LiveSyncAction` pour cette LiveAction dans la configuration du déploiement. Consultez [Création d’une configuration de déploiement](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Comme d’habitude, lorsque vous utilisez un nœud de configuration, vous devez l’adapter à un objet `ValueMap` :
+Le paramètre de la méthode [`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) est un objet `Resource`. Cet objet `Resource` représente le nœud `cq:LiveSyncAction` pour cette LiveAction dans la configuration du déploiement. Consultez [Création d’une configuration de déploiement](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration). Comme d’habitude, lorsque vous utilisez un nœud de configuration, vous devez l’adapter à un objet `ValueMap` :
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -147,9 +147,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 Les objets suivants sont fournis en tant que paramètres de la méthode `execute` de l’objet `LiveAction` :
 
-* Un objet [`Resource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) représentant la source de la Live Copy
+* Un objet [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) représentant la source de la Live Copy
 * Un objet `Resource` représentant la cible de la Live Copy
-* L’objet [`LiveRelationship`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy
+* L’objet [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) pour la Live Copy
 * La valeur `autoSave` indique si votre `LiveAction` doit enregistrer les modifications apportées au référentiel.
 
 * La valeur reset indique le mode de réinitialisation du déploiement.
@@ -166,7 +166,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->Les arguments `Resource` peuvent être des objets `null` ou `Resources` qui ne s’adaptent pas aux objets `Node`, tels que les objets [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
+>Les arguments `Resource` peuvent être des objets `null` ou `Resources` qui ne s’adaptent pas aux objets `Node`, tels que les objets [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html).
 
 ## Création d’une configuration de déploiement {#creating-a-new-rollout-configuration}
 
@@ -198,12 +198,12 @@ Pour créer une configuration de déploiement :
 
    >[!NOTE]
    >
-   >Vous ne devez rien modifier dans le chemin /libs.
-   >En effet, le contenu de /libs est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un pack de fonctionnalités).
+   >Vous ne devez rien modifier dans le chemin `/libs`. 
+   >En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
    >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
    >
-   >* Recréez l’élément requis (c’est-à-dire tel qu’il existe dans /libs) sous /apps.
-   >* Le cas échéant, effectuez des modifications dans /apps.
+   >* Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
+   >* Apportez les modifications désirées dans `/apps`.
 
 
 1. Dessous, **Créez** un nœud avec les propriétés suivantes :
