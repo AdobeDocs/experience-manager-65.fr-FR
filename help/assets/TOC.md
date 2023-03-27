@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '683'
 ht-degree: 99%
 
 ---
@@ -158,6 +158,7 @@ ht-degree: 99%
 + Gestion des ressources {#managing}
    + [Gestion des ressources numériques](manage-assets.md)
    + [Gestion des collections](manage-collections.md)
+   + [Sélecteur de ressources](asset-selector.md)
    + [Activation de la détection de doublons](duplicate-detection.md)
    + [Organisation des ressources numériques](organize-assets.md)
    + [Gestion des ressources vidéo](managing-video-assets.md)
