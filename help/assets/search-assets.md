@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '5605'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -56,7 +56,7 @@ Familiarisez-vous avec l’interface de recherche et les actions disponibles.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
-Vous pouvez découvrir plus rapidement les ressources de votre choix à partir de la page des résultats de recherche en utilisant le nombre de résultats de recherche attendus mis à jour dynamiquement dans les facettes de recherche. Le nombre prévu de ressources est mis à jour avant même d’appliquer le filtre de recherche. L’affichage du nombre prévu par rapport au filtre vous aide à parcourir rapidement et efficacement les résultats de la recherche.
+Vous pouvez découvrir plus rapidement les ressources souhaitées à partir de la page de résultats de recherche à l’aide du nombre de résultats de recherche attendus mis à jour dynamiquement dans les facettes de recherche. Le nombre de ressources attendu est mis à jour avant l’application du filtre de recherche. L’affichage du nombre prévu par rapport au filtre vous aide à parcourir rapidement et efficacement les résultats de la recherche.
 
 ![Affichage du nombre approximatif de ressources sans filtrer les résultats de la recherche dans les facettes de recherche.](assets/asset_search_results_in_facets_filters.png)
 
@@ -111,13 +111,13 @@ Pour recevoir des suggestions pour plusieurs mots-clés de recherche, continuez 
 
 ### Classement et amplification des recherches {#searchrank}
 
-Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche des balises dynamiques. Dans l’exemple ci-dessus, l’ordre approximatif de l’affichage des résultats de recherche est le suivant :
+Les résultats de recherche qui correspondent à tous les termes de recherche des champs de métadonnées sont affichés en premier, suivis des résultats de recherche qui correspondent à l’un des termes de recherche des balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
 
 1. Correspondances de `woman running` dans les différents champs de métadonnées.
 1. Correspondances de `woman running` dans les balises intelligentes.
 1. Correspondances de `woman` ou de `running` dans les balises intelligentes.
 
-Vous pouvez améliorer la pertinence des mots-clés pour des ressources données afin d’améliorer les résultats de recherches basées sur ces mots-clés. En d’autres termes, les images pour lesquelles vous faites la promotion de mots-clés spécifiques apparaissent en haut des résultats lorsque vous lancez une recherche basée sur ces mots-clés.
+Vous pouvez améliorer la pertinence des mots-clés pour des ressources particulières afin d’améliorer les recherches basées sur les mots-clés. En d’autres termes, les images pour lesquelles vous convertissez des mots-clés spécifiques apparaissent en haut des résultats de la recherche lorsque vous effectuez une recherche en fonction de ces mots-clés.
 
 1. Dans l’interface utilisateur [!DNL Assets], ouvrez la page des propriétés de la ressource. Cliquez sur **[!UICONTROL Avancé]** et cliquez sur **[!UICONTROL Ajouter]** sous **[!UICONTROL Élever pour les mots-clés de recherche]**.
 1. Dans la boîte de dialogue **[!UICONTROL Rechercher une promotion]**, indiquez un mot-clé pour lequel vous souhaitez améliorer la recherche d’image, puis cliquez sur **[!UICONTROL Ajouter]**. Vous pouvez indiquer plusieurs mots-clés de la même manière.
@@ -170,19 +170,19 @@ Vous pouvez rechercher des ressources en fonction des valeurs exactes de champs 
 | Outil créateur | creatortool:&quot;Adobe Photoshop&quot; |
 | Détenteur de copyright | copyrightowner:&quot;Adobe Systems&quot; |
 | Contributeur | contributor:John |
-| Conditions d’utilisation | usageterms:&quot;CopyRights Reserved&quot; |
+| Conditions d’utilisation | usagewords:&quot;CopyRights reserve&quot; |
 | Créé | created:AAAA-MM-JJTHH |
 | Date d’expiration | expires:AAAA-MM-JJTHH |
 | Heure d’activation | ontime:AAAA-MM-JJTHH |
 | Heure de désactivation | offtime:AAAA-MM-JJTHH |
-| Intervalle de temps (expires dateontime, offtime) | facet field : lowerboundupperbound |
+| Plage de temps (date d’expiration, heure d’arrêt) | champ de facette : lowerbound..upperbound |
 | Chemin | /content/dam/&lt;nom_dossier> |
 | Titre du PDF | pdftitle:&quot;Adobe Document&quot; |
 | Objet | subject:&quot;Training&quot; |
-| Balises | tags:&quot;Location And Travel&quot; |
+| Balises | tags : &quot;Location And Travel&quot; |
 | Type | type:&quot;image\png&quot; |
-| Largeur de l’image | width:lowerboundupperbound |
-| Hauteur de l’image | height:lowerboundupperbound |
+| Largeur de l’image | width:lowerbound.upperbound |
+| Hauteur de l’image | height:lowerbound.upperbound |
 | Personne | person:John |
 
 Les propriétés `path`, `limit`, `size` et `orderby` ne peuvent pas être combinées à l’aide de l’opérateur `OR` avec une autre propriété.
@@ -251,7 +251,7 @@ Transmettez les paramètres de requête suivants dans une URL pour démarrer le 
 | suffixe de la ressource (B) | Chemin d’accès au dossier indiqué comme suffixe de la ressource dans l’URL :  [https://localhost:4502/aem/assetpicker.html/&lt;chemin_dossier>](https://localhost:4502/aem/assetpicker.html) | Pour démarrer le sélecteur de ressources avec un dossier particulier, par exemple avec le dossier `/content/dam/we-retail/en/activities` sélectionné, l’URL doit avoir la forme suivante : `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Si vous avez besoin de sélectionner un dossier en particulier au démarrage du sélecteur de ressources, vous pouvez l’indiquer comme suffixe de ressource. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
-| `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Ici, le sélecteur de ressources ne vous permet de sélectionner qu’une seule ressource enfant (directe/indirecte) sous le dossier racine. |
+| `root` | &lt;chemin_dossier> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |
 | `viewmode` | de recherches |  | Pour lancer le sélecteur de ressources en mode recherche, avec les paramètres `assettype` et `mimetype`. |
 | `assettype` | Images, documents, multimédia, archives. | <ul><li>`https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia` </li><li> `https://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives` </li></ul> | Utilisez l’option pour filtrer les types de ressources en fonction de la valeur indiquée. |
 | `mimetype` | Type MIME (`/jcr:content/metadata/dc:format`) d’une ressource (le caractère générique est également pris en charge). | <ul><li>`https://localhost:4502/aem/assetpicker.html?mimetype=image/png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*png`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation`</li><li>`https://localhost:4502/aem/assetpicker.html?mimetype=*presentation&mimetype=*png`</li></ul> | Utilisez-le pour filtrer les ressources basées sur le() type(s) MIME |
@@ -397,13 +397,13 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Champ de recherche | Valeurs de propriété de recherche |
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Types MIME | Images, Documents, Multimédia, Archives ou Autre. |
-| Dernière modification | Heure, Jour, Semaine, Mois ou Année. |
-| Taille de fichier | Petit, Moyen ou Grand. |
-| Statut de publication | Publiée ou Publication annulée. |
-| État d’approbation | Accepté ou Rejeté. |
-| Orientation | Horizontal, Vertical ou Carré. |
-| Style | Couleur ou Noir et blanc |
-| Hauteur de la vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
+| Date de dernière modification | Heure, Jour, Semaine, Mois ou Année. |
+| Taille de fichier | Petit, moyen ou grand. |
+| Statut de publication | Publié ou Publication annulée. |
+| État approuvé | Approuvé ou refusé. |
+| Orientation | Horizontal, vertical ou carré. |
+| Style | Couleur ou Noir et blanc. |
+| Hauteur de vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Largeur de la vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Format vidéo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. La valeur est stockée uniquement dans les métadonnées de la source vidéo et de tout rendu. |
 | Codec vidéo | x264. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
