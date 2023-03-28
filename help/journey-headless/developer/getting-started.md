@@ -2,8 +2,8 @@
 title: Prise en main d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
+source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
+workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Avant de pouvoir définir votre projet découplé dans AEM, il est important de 
 
 Dans sa forme la plus simple, AEM se compose d’une instance d’auteur et d’une [instance de publication](#publish) qui fonctionnent conjointement pour créer, gérer et publier votre contenu.
 
-Le contenu commence sur l’instance de création où les auteurs le créent. L’environnement de création propose différents outils pour que les auteurs puissent créer, organiser et réutiliser leur contenu.
+Le contenu commence sur l’instance d’auteur où les auteurs le créent. L’environnement de création propose différents outils pour que les auteurs puissent créer, organiser et réutiliser leur contenu.
 
 ### Instance de publication {#publish}
 
@@ -52,7 +52,7 @@ La réplication consiste à transférer le contenu entre l’instance de créati
 
 ### Résumé des notions de base concernant AEM {#aem-basics-summary}
 
-À son niveau le plus simple, la création d’expériences numériques dans AEM nécessite les étapes suivantes :
+À son niveau le plus simple, la création d’expériences digitales dans AEM nécessite les étapes suivantes :
 
 1. Vos auteurs de contenu créent le contenu en mode découplé dans l’instance de création.
 1. Lorsque ce contenu est prêt, il est répliqué sur l’instance de publication.
@@ -91,7 +91,7 @@ Pour vous assurer de bien comprendre le concept de découplage, ce parcours de d
 
 Toutefois, vous devez tenir compte des possibilités hybrides supplémentaires qui s’offrent à vous une fois que vous avez compris les fonctionnalités d’AEM découplé. Ces cas sont présentés ci-dessous pour que vous puissiez en prendre connaissance. À la fin du parcours, vous découvrirez plus en détail ces concepts si cette flexibilité est nécessaire pour votre projet.
 
-### Vous utilisez déjà de manière externe des contenus découplés, par exemple avec les applications sur une seule page (SPA). {#already-have-a-spa}
+### Vous utilisez déjà de manière externe des contenus découplés, par exemple avec les applications monopage (SPA). {#already-have-a-spa}
 
 Supposons que votre besoin de base soit au minimum de diffuser du contenu depuis AEM vers un service externe existant.
 
@@ -289,5 +289,5 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Documentation technique GraphQL](https://graphql.org) – La définition de GraphQL (lien externe)
 * [API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) – Documentation technique expliquant comment créer des demandes d’accès et de diffusion de fragments de contenu.
 * [API REST Assets](/help/assets/assets-api-content-fragments.md) – Documentation technique expliquant comment créer et modifier des fragments de contenu (et d’autres ressources).
-* [Requêtes persistantes](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching) – Documentation technique sur les requêtes persistantes dans AEM
+* [Requêtes persistantes](/help/assets/content-fragments/persisted-queries.md) – Documentation technique sur les requêtes persistantes dans AEM
 * [Modes Pile complète et Découplé dans AEM](/help/sites-developing/headful-headless.md) – Discussion complète sur les niveaux d’intégration en mode découplé disponibles dans AEM.

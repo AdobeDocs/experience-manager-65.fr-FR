@@ -1,16 +1,16 @@
 ---
 title: Requêtes GraphQL persistantes
-description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
-source-git-commit: 9369f7cb9c507bbd7d7761440ceef907552aeb7d
-workflow-type: ht
-source-wordcount: '1088'
-ht-degree: 100%
+description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
+source-git-commit: a717382fa4aaf637c5b1bf3ce4aca3f90a059458
+workflow-type: tm+mt
+source-wordcount: '1428'
+ht-degree: 73%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
-Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM) as a Cloud Service. Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une requête GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande. Elles sont en cela différentes des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM) as a Cloud Service. Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une demande de GET peut être mise en cache aux couches Dispatcher et Content Delivery Network (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elles sont en cela différentes des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
 
 <!--
 >[!NOTE]
@@ -18,7 +18,7 @@ Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stock
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 -->
 
-L’[IDE GraphiQL](/help/assets/content-fragments/graphiql-ide.md) est disponible dans AEM pour que vous puissiez le développer, le tester et conserver vos requêtes GraphQL, avant de [le transférer vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, pour la [personnalisation du cache](/help/assets/content-fragments/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; consultez l’exemple de curl fourni dans [Conservation d’une requête GraphQL](#how-to-persist-query).
+L’[IDE GraphiQL](/help/assets/content-fragments/graphiql-ide.md) est disponible dans AEM pour que vous puissiez le développer, le tester et conserver vos requêtes GraphQL, avant de [le transférer vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, lorsque [personnalisation du cache](/help/assets/content-fragments/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; voir l’exemple cURL fourni dans [Comment conserver une requête GraphQL](#how-to-persist-query).
 
 ## Requêtes et points d’entrée persistants {#persisted-queries-and-endpoints}
 
@@ -56,10 +56,10 @@ Il est recommandé d’appliquer des requêtes persistantes dans un environnemen
 Il existe différentes méthodes pour créer des requêtes persistantes, notamment :
 
 * IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/assets/content-fragments/graphiql-ide.md#saving-persisted-queries) (méthode préférée)
-* curl - Consultez l’exemple suivant
+* cURL - voir l’exemple suivant
 * Autres outils, notamment [Postman](https://www.postman.com/)
 
-L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes. Pour conserver une requête donnée à l’aide de l’outil de ligne de commande **curl** :
+L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes. Pour conserver une requête donnée à l’aide de la fonction **cURL** outil de ligne de commande :
 
 1. Préparez la requête avec une commande PUT sur l’URL du nouveau point d’entrée `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -211,7 +211,7 @@ Où `PERSISTENT_PATH` est un chemin raccourci vers l’emplacement d’enregistr
 
    Par exemple :
 
-   ```xml
+   ```bash
    $ curl -X GET \
        "https://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
@@ -259,46 +259,99 @@ Cette requête peut être conservée sous un chemin `wknd/adventures-by-activity
 
 Notez que `%3B` est l’encodage UTF-8 pour `;` et `%3D` est l’encodage pour `=`. Les variables de requête et les caractères spéciaux doivent être [correctement encodés](#encoding-query-url) pour que la requête persistante s’exécute.
 
+## Mettre en cache vos requêtes persistantes {#caching-persisted-queries}
+
+Les requêtes persistantes sont recommandées, car elles peuvent être mises en cache au niveau de la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) et réseau de diffusion de contenu (CDN), améliorant ainsi les performances de l’application cliente requérant.
+
+Par défaut, AEM invalide le cache en fonction d’une définition de durée de vie (TTL). Ces TTL peuvent être définis par les paramètres suivants. Ces paramètres sont accessibles de plusieurs manières, avec des variantes dans les noms en fonction du mécanisme utilisé :
+
+| Type de cache | [En-tête HTTP](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuration OSGi  |
+|--- |--- |--- |--- |--- |
+| Navigateur | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
+| Réseau de diffusion de contenu | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
+| Réseau de diffusion de contenu | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |
+| Réseau de diffusion de contenu | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` |
+
+### Instances de création {#author-instances}
+
+Pour les instances d’auteur, les valeurs par défaut sont les suivantes :
+
+* `max-age`  : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
+
+Celles-ci :
+
+* ne peut pas être remplacé par une configuration OSGi
+* peut être remplacé par une requête qui définit les paramètres d’en-tête HTTP à l’aide de cURL ; Elle doit inclure des paramètres appropriés pour `cache-control` et/ou `surrogate-control`; pour consulter des exemples, voir [Gestion du cache au niveau de la requête persistante](#cache-persisted-query-level)
+
+<!-- CQDOC-20186 -->
+<!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
 <!--
-## Caching your persisted queries {#caching-persisted-queries}
+* can be overwritten if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
+-->
 
-Persisted queries are recommended as they can be cached at the dispatcher and CDN layers, ultimately improving the performance of the requesting client application.
+### Publication d’instances {#publish-instances}
 
-By default AEM will invalidate the Content Delivery Network (CDN) cache based on a default Time To Live (TTL). 
+Pour les instances de publication, les valeurs par défaut sont les suivantes :
 
-This value is set to:
+* `max-age`  : 60
+* `s-maxage` : 7200
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
-* 7200 seconds is the default TTL for the Dispatcher and CDN; also known as *shared caches*
-  * default: s-maxage=7200
-* 60 is the default TTL for the client (for example, a browser)
-  * default: maxage=60
+Ils peuvent être remplacés :
 
-If you want to change the TTL for your GraphLQ query, then the query must be either:
+<!-- CQDOC-20186 -->
+<!-- following entry is only when the GraphiQL IDE is ready -->
+<!--
+* [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
+-->
 
-* persisted after managing the [HTTP Cache headers - from the GraphQL IDE](#http-cache-headers)
-* persisted using the [API method](#cache-api). 
+* [au niveau de requête persistante](#cache-persisted-query-level); cela implique de publier la requête sur AEM à l’aide de cURL dans votre interface de ligne de commande et de publier la requête persistante.
 
-### Managing HTTP Cache Headers in GraphQL  {#http-cache-headers-graphql}
+* [avec une configuration OSGi](#cache-osgi-configration)
+
+<!-- CQDOC-20186 -->
+<!-- keep for future use; check link -->
+<!--
+### Managing HTTP Cache Headers in the GraphiQL IDE {#http-cache-headers-graphiql-ide}
 
 The GraphiQL IDE - see [Saving Persisted Queries](/help/assets/content-fragments/graphiql-ide.md#managing-cache)
+-->
 
-### Managing Cache from the API {#cache-api}
+### Gestion du cache au niveau de la requête persistante {#cache-persisted-query-level}
 
-This involves posting the query to AEM using CURL in your command line interface. 
+Cela implique de publier la requête sur AEM à l’aide de cURL dans votre interface de ligne de commande.
 
-For an example:
+Pour un exemple de la méthode PUT (create) :
 
-```xml
-curl -X PUT \
-    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-    -H "Content-Type: application/json" \
-    "https://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
-    -d \
-'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```bash
+curl -u admin:admin -X PUT \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-The `cache-control` can be set at the creation time (PUT) or later on (for example, via a POST request for instance). The cache-control is optional when creating the persisted query, as AEM can provide the default value. See [How to persist a GraphQL query](#how-to-persist-query), for an example of persisting a query using curl.
--->
+Pour un exemple de la méthode POST (update) :
+
+```bash
+curl -u admin:admin -X POST \
+--url "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+--header "Content-Type: application/json" \
+--data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
+```
+
+Le `cache-control` peut être défini au moment de la création (PUT) ou ultérieurement (par exemple, via une demande de POST). Le contrôle du cache est facultatif lors de la création de la requête persistante car AEM peut fournir la valeur par défaut. Voir [Comment conserver une requête GraphQL](#how-to-persist-query), par exemple pour conserver une requête à l’aide de cURL.
+
+### Gestion du cache avec une configuration OSGi {#cache-osgi-configration}
+
+Pour gérer le cache globalement, vous pouvez : [configuration des paramètres OSGi](/help/sites-deploying/configuring-osgi.md) pour le **Configuration de Query Service persistante**. Sinon, cette configuration OSGi utilise la variable [valeurs par défaut pour les instances de publication](#publish-instances).
+
+>[!NOTE]
+>
+>La configuration OSGi n’est appropriée que pour les instances de publication. La configuration existe sur les instances de création, mais elle est ignorée.
 
 ## Encoder l’URL de requête devant être utilisé par une application {#encoding-query-url}
 
@@ -306,7 +359,7 @@ Pour une utilisation par une application, tout caractère spécial utilisé lors
 
 Par exemple :
 
-```xml
+```bash
 curl -X GET \ "https://localhost:4502/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
 ```
 
