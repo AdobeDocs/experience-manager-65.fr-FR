@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1424'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Solr pour AEM Platform {#solr-for-aem-platform}
 
-Un [Apache Solr](https://lucene.apache.org/solr/) l’installation peut être partagée entre les [magasin de noeuds](../../help/sites-deploying/data-store-config.md) (Oak) et [magasin commun](working-with-srp.md) (SRP) en utilisant différentes collections.
+Un [Apache Solr](https://solr.apache.org/) l’installation peut être partagée entre les [magasin de noeuds](../../help/sites-deploying/data-store-config.md) (Oak) et [magasin commun](working-with-srp.md) (SRP) en utilisant différentes collections.
 
 Si les collections Oak et SRP sont utilisées de manière intensive, un second Solr peut être installé pour des raisons de performances.
 
@@ -34,7 +34,7 @@ Téléchargez et installez Apache Solr :
 
 * [Version 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
-* Solr nécessite Java 1.7 ou version ultérieure
+* Solr requiert Java™ 1.7 ou version ultérieure
 * Aucun service requis
 * Choix des modes d’exécution :
 
@@ -65,12 +65,12 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 
 ### Commandes de configuration de SolrCloud {#solrcloud-setup-commands}
 
-Lors de l’exécution en mode SolrCloud, avant l’installation de MLS, utilisez et connaissez les commandes de configuration SolrCloud suivantes.
+Lors de l’exécution en mode SolrCloud, avant l’installation, l’utilisation et la connaissance des commandes de configuration de SolrCloud suivantes sont nécessaires.
 
 #### 1. Télécharger une configuration sur ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Référence :
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilisation : sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
@@ -82,7 +82,7 @@ Utilisation : sh ./scripts/cloud-scripts/zkcli.sh \
 #### 2. Créer une collection {#create-a-collection}
 
 Référence :
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
 Utilisation:
 ./bin/solr create \
@@ -98,7 +98,7 @@ Utilisation:
 Liez une collection à une configuration déjà téléchargée sur ZooKeeper.
 
 Référence :
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Utilisation : sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
@@ -110,7 +110,7 @@ Utilisation : sh ./scripts/cloud-scripts/zkcli.sh \
 
 La recherche multilingue (MLS) pour AEM Communities est conçue pour la plateforme Solr afin de fournir une recherche améliorée dans toutes les langues prises en charge, y compris l’anglais.
 
-MLS pour les communautés d’AEM est disponible en tant que MLS standard ou MLS avancé. Le MLS standard inclut uniquement les paramètres de configuration Solr et exclut tous les modules externes ou fichiers de ressources. Le MLS avancé est une solution plus complète qui inclut des paramètres de configuration Solr, ainsi que des modules externes et des ressources connexes.
+MLS pour AEM Communities est disponible en tant que MLS standard ou MLS avancé. Le MLS standard inclut uniquement les paramètres de configuration Solr et exclut tous les modules externes ou fichiers de ressources. Le MLS avancé est une solution plus complète qui inclut des paramètres de configuration Solr, ainsi que des modules externes et des ressources connexes.
 
 Le MLS standard comprend des améliorations pour la recherche de contenu dans les langues suivantes :
 
@@ -137,7 +137,7 @@ Au total, les 33 langues suivantes sont prises en charge dans Advanced MLS.
 | Néerlandais | Italien | Slovène |
 | Anglais | Japonais | Espagnol |
 | Estonien | Coréen | Suédois |
-| Finnois | Letton | Thaï |
+| Finnois | Lette | Thaïlandais |
 | Français | Lituanien | Turc |
 
 #### Comparaison d’AEM 6.1 Solr search, Standard MLS et Advanced MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
@@ -171,7 +171,7 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 1. Téléchargez-le sur le serveur local sur lequel Solr est déployé.
 
    * Recherchez la variable `jcr:content` du noeud `jcr:data` .
-   * Sélectionner `view` pour lancer le téléchargement.
+   * Pour lancer le téléchargement, sélectionnez `view`.
    * Assurez-vous que les fichiers sont enregistrés avec les noms et le codage appropriés (UTF8).
 
 1. Suivez les instructions d’installation pour le mode autonome ou SolrCloud .
@@ -194,7 +194,7 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 1. [Création d’une collection](#create-a-collection) la spécification des paramètres nécessaires, tels que le nombre de shards, le nombre de répliques et le nom de configuration.
 1. Si le nom de la configuration n’a pas été *fourni lors de la création de la collection, [lier cette collection nouvellement créée](#link-a-collection-to-a-configuration-set) avec la configuration téléchargée sur ZooKeeper.
 
-1. Pour MSRP, exécutez [Outil de réindexation MSRP](msrp.md#msrp-reindex-tool), sauf s’il s’agit d’une nouvelle installation.
+1. Pour MSRP, exécutez [Outil de réindexation MSRP](msrp.md#msrp-reindex-tool), sauf si cette installation est nouvelle.
 
 #### Mode autonome - MLS standard {#standalone-mode-standard-mls}
 
@@ -212,7 +212,7 @@ Les fichiers MLS standard sont stockés dans le référentiel AEM.
 1. Copiez le téléchargé **schema.xml** et **solrconfig.xml** dans ce même répertoire.
 
 1. Redémarrez Solr.
-1. Pour MSRP, exécutez [Outil de réindexation MSRP](#msrpreindextool), sauf s’il s’agit d’une nouvelle installation.
+1. Pour MSRP, exécutez [Outil de réindexation MSRP](#msrpreindextool), sauf si cette installation est nouvelle.
 
 ### Installation de MLS avancés {#installing-advanced-mls}
 
@@ -277,13 +277,13 @@ Instructions d’installation - Notez les quelques différences pour Solr4 et So
 1. [Création d’une collection](#create-a-collection) la spécification des paramètres nécessaires, tels que le nombre de shards, le nombre de répliques et le nom de configuration.
 1. Si le nom de la configuration était *not* fourni lors de la création de la collection, [lier cette collection nouvellement créée](#link-a-collection-to-a-configuration-set) avec la configuration téléchargée sur ZooKeeper.
 
-1. Pour MSRP, exécutez [Outil de réindexation MSRP](#msrpreindextool), sauf s’il s’agit d’une nouvelle installation.
+1. Pour MSRP, exécutez [Outil de réindexation MSRP](#msrpreindextool), sauf si cette installation est nouvelle.
 
 #### Mode autonome - MLS avancé {#standalone-mode-advanced-mls}
 
 Un script d’installation est inclus dans le package MLS avancé.
 
-Une fois que le contenu du package a été extrait sur le serveur hébergeant le serveur Solr autonome, exécutez simplement le script d&#39;installation afin d&#39;installer les ressources et les fichiers de configuration nécessaires.
+Une fois le contenu du package extrait sur le serveur hébergeant le serveur Solr autonome, exécutez le script d&#39;installation pour installer les ressources et les fichiers de configuration nécessaires.
 
 * Installez Solr en mode autonome.
 * Si vous exécutez Solr5, créez une collection1 (semblable à Solr4) :

@@ -1,51 +1,51 @@
 ---
 title: Installer et configurer le site de référence We.Gov et We.Finance
 seo-title: Set up and configure We.Gov reference site
-description: Installez, configurez et personnalisez un module de démonstration AEM Forms.
+description: Installez, configurez et personnalisez un package de démonstration AEM Forms.
 seo-description: Install, configure, and customize an AEM Forms demo package.
 uuid: 0a6ad8f9-0d38-40c3-ad8d-e705edef55f8
 contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '4689'
-ht-degree: 100%
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+workflow-type: tm+mt
+source-wordcount: '4677'
+ht-degree: 97%
 
 ---
 
 # Installer et configurer le site de référence We.Gov et We.Finance {#set-up-and-configure-we-gov-reference-site}
 
-## Détails du module de démonstration {#demo-package-details}
+## Détails du package de démonstration {#demo-package-details}
 
 ### Conditions préalables à l’installation {#installation-prerequisites}
 
-Ce module a été créé pour l’**auteur OSGi AEM Forms 6.4**. Il a été testé et est donc pris en charge sur les versions de plateforme suivantes :
+Ce package a été créé pour l’**auteur OSGi AEM Forms 6.4**. Il a été testé et est donc pris en charge sur les versions de plateforme suivantes :
 
-| VERSION D’AEM | VERSION DU MODULE AEM FORMS | ÉTAT |
+| VERSION D’AEM | VERSION DU PACKAGE AEM FORMS | ÉTAT |
 |---|---|---|
 | 6.4 | 5.0.86 | **Pris en charge** |
 | 6.5 | 6.0.80 | **Pris en charge** |
 | 6.5.3 | 6.0.122 | **Pris en charge** |
 
-Ce module contient la configuration cloud qui prend en charge les versions de plateforme suivantes :
+Ce package contient la configuration cloud qui prend en charge les versions de plateforme suivantes :
 
 | FOURNISSEUR DE CLOUD | VERSION DU SERVICE | ÉTAT |
 |---|---|---|
 | Adobe Sign | API v5 | **Pris en charge** |
 | Microsoft Dynamics 365 | 1710 (9.1.0.3020) | **Pris en charge** |
 | Adobe Analytics | API REST v1.4 | **Pris en charge** |
-**Considérations relatives à l’installation du module :**
+**Considérations relatives à l’installation du package :**
 
-* Le module doit être installé sur un serveur nettoyé, sans autres modules de démonstration ou anciennes versions de modules de démonstration.
-* Le module doit être installé sur un serveur OSGi s’exécutant en mode création.
+* Le package doit être installé sur un serveur nettoyé, sans autres packages de démonstration ou anciennes versions de packages de démonstration.
+* Le package doit être installé sur un serveur OSGi s’exécutant en mode création.
 
-### Que comprend ce module ? {#what-does-this-package-include}
+### Que comprend ce package ? {#what-does-this-package-include}
 
-Le [module de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip) (**we-gov-forms.pkg.all-&lt;version>.zip**) est fourni sous la forme d’un module qui comprend plusieurs autres sous-modules et services. Le module inclut les modules suivants :
+Le [package de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/we-gov-forms.pkg.all-2.0.2.zip) (**we-gov-forms.pkg.all-&lt;version>.zip**) est fourni sous la forme d’un package qui comprend plusieurs autres sous-packages et services. Le package inclut les packages suivants :
 
-* **we-gov-forms.pkg.all-&lt;version>.zip** : *module de démonstration complet*.
+* **we-gov-forms.pkg.all-&lt;version>.zip** : *package de démonstration complet*.
 
    * **we-gov-forms.ui.apps-&lt;version>.zip** : *contient tous les composants, bibliothèques clientes, exemples d’utilisateurs, modèles de workflow, etc.*
 
@@ -55,7 +55,7 @@ Le [module de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/do
 
       * **core.wcm.components.all-2.0.4.zip** : *collection d’exemples de composants WCM.*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** : *module de disposition Grille AEM Sites pour le contrôle des colonnes des pages Sites.*
+      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** : *package de disposition Grille AEM Sites pour le contrôle des colonnes des pages Sites.*
    * **we-gov-forms.ui.content-&lt;version>.zip** : *contient l’ensemble du contenu, des pages, des images, des formulaires, des ressources de communication interactive, etc.*
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** : *contient toutes les données d’analyse de formulaires We.Gov à stocker dans le référentiel.*
@@ -63,7 +63,7 @@ Le [module de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/do
    * **we-gov-forms.config.public-&lt;version>.zip** : *contient tous les nœuds de configuration par défaut, y compris les configurations cloud d’espace réservé, pour éviter les problèmes de modèle de données de formulaire et de liaison de service.*
 
 
-Les ressources incluses dans ce module sont les suivantes :
+Les ressources incluses dans ce package sont les suivantes :
 
 * Pages de site AEM avec modèles modifiables
 * Formulaires adaptatifs AEM Forms
@@ -76,22 +76,22 @@ Les ressources incluses dans ce module sont les suivantes :
 * Exemple de base de données Apache Derby (en mémoire)
 * Source de données Apache Derby (à utiliser avec le modèle de données de formulaire)
 
-## Installation du module de démonstration {#demo-package-installation}
+## Installation du package de démonstration {#demo-package-installation}
 
-Cette section contient des informations sur l’installation du module de démonstration.
+Cette section contient des informations sur l’installation du package de démonstration.
 
 ### À partir de la distribution logicielle {#from-software-distribution}
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
-1. Dans la section **[!UICONTROL Filtres]** :
-   1. Sélectionnez **[!UICONTROL Formulaires]** dans la liste déroulante **[!UICONTROL Solution]**.
+1. Dans le **[!UICONTROL Filtres]** section :
+   1. Sélectionner **[!UICONTROL Forms]** de la **[!UICONTROL Solution]** liste déroulante.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
-1. Appuyez sur le nom du module **we-gov-forms.pkg.all-&lt;version>.zip**, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
+1. Appuyez sur le nom du package **we-gov-forms.pkg.all-&lt;version>.zip**, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
-1. Sélectionnez le module et cliquez sur **[!UICONTROL Installer]**.
+1. Sélectionnez le package et cliquez sur **[!UICONTROL Installer]**.
 
-   ![module de formulaires we gov](assets/wegov_forms_package.jpg)
+   ![package de formulaires we gov](assets/wegov_forms_package.jpg)
 
 1. Attendez la fin du processus d’installation.
 1. Accédez à *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html?wcmmode=disabled* pour vérifier que l’installation a réussi.
@@ -102,7 +102,7 @@ Cette section contient des informations sur l’installation du module de démon
 1. Accédez à *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*.
 1. Sélectionnez l’option « Télécharger le package ».
 
-   ![Option de chargement de module](assets/upload_package.jpg)
+   ![Option de chargement de package](assets/upload_package.jpg)
 
 1. Utilisez l’explorateur de fichiers pour accéder au fichier ZIP téléchargé et sélectionnez-le.
 1. Cliquez sur « Ouvrir » pour lancer le téléchargement.
@@ -281,7 +281,7 @@ Les étapes détaillées dans cette section vous permettent de localiser l’ID 
 1. Pour localiser l’URL de ressource/l’URL racine du service, accédez au tableau de bord de l’instance MS Dynamics.
 1. Dans la barre de navigation supérieure, cliquez sur « Ventes » ou sur votre propre type d’instance, puis sur « Sélectionner les paramètres ».
 1. Cliquez sur « Personnalisations » et « Ressources pour les développeurs » en bas à droite.
-1. Vous y trouverez l’URL racine du service : e.g
+1. Vous y trouverez l’URL racine du service : e.g
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -311,10 +311,10 @@ Une fois la configuration du cloud terminée, vous pouvez tester le modèle de d
 1. Testez les services pour vérifier qu’ils se connectent à la source de données configurée.
 
    >[!NOTE]
-   >Une fois les services testés, cliquez sur **Annuler** pour vous assurer que les modifications involontaires ne sont pas propagées au modèle de données de formulaire.
+   Une fois les services testés, cliquez sur **Annuler** pour vous assurer que les modifications involontaires ne sont pas propagées au modèle de données de formulaire.
 
    >[!NOTE]
-   >Un redémarrage du serveur AEM est nécessaire pour que la source de données soit correctement liée à FDM.
+   Un redémarrage du serveur AEM est nécessaire pour que la source de données soit correctement liée à FDM.
 
 #### Tester le modèle de données de formulaire (Derby) {#test-fdm-derby}
 
@@ -418,7 +418,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 #### Afficher les rapports sur les sites Adobe Analytics {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
->Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration d’Adobe Analytics Cloud si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud principale.
+Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration d’Adobe Analytics Cloud si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud principale.
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Sélectionnez le « Site We.Gov d’AEM Forms » pour afficher les pages du site.
@@ -446,7 +446,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 #### Afficher les rapports de formulaires Adobe Analytics {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
->Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
+Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
 
 1. Accédez à
 
@@ -492,7 +492,7 @@ Manager en haut à gauche > Outils > Sécurité > Configuration Adobe IMS.
 1. Ne procédez pas à la suite de la configuration. Consultez la section [Créer une intégration dans Adobe I/O](#create-integration-adobeio).
 
 >[!NOTE]
->Le certificat créé dans cette section va être servir à créer le service d’intégration dans Adobe I/O. Une fois ceci fait, les utilisateurs peuvent utiliser ces informations depuis Adobe I/O pour terminer la configuration.
+Le certificat créé dans cette section va être servir à créer le service d’intégration dans Adobe I/O. Une fois ceci fait, les utilisateurs peuvent utiliser ces informations depuis Adobe I/O pour terminer la configuration.
 
 #### Créer une intégration dans Adobe I/O {#create-integration-adobeio}
 
@@ -670,7 +670,7 @@ Les modèles modifiables inclus dans ce package sont également préconfigurés 
 
 [https://getbootstrap.com/docs/4.1/getting-started/introduction/](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
-Les modèles inclus dans ce module prennent également en charge le système de style :
+Les modèles inclus dans ce package prennent également en charge le système de style :
 
 [Système de style](../../sites-authoring/style-system.md)
 
@@ -692,11 +692,11 @@ Voir Modifier le contenu d’un formulaire pour plus d’informations :
 
 Toutes les pages du site sont disponibles à l’adresse : *https://&lt;aemserver>:&lt;port>/sites.html/content/we-gov*.
 
-Ces pages de site utilisent également le module AEM Grid pour contrôler la mise en page de quelques composants.
+Ces pages de site utilisent également le package AEM Grid pour contrôler la mise en page de quelques composants.
 
 #### Système de style {#style-system}
 
-Les pages incluses dans ce module prennent également en charge le système de style :
+Les pages incluses dans ce package prennent également en charge le système de style :
 
 [Système de style](../../sites-authoring/style-system.md)
 
@@ -749,12 +749,12 @@ Cette section contient des informations sur les fonctionnalités de démonstrati
 
 ### Activer le module complémentaire Chrome Test d’accessibilité {#enable-chrome-add-on}
 
-Pour effectuer des tests d’accessibilité, vous devez d’abord installer le plug-in Chrome que vous pouvez trouver [ici](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=fr).
+Pour effectuer les tests d’accessibilité, installez le module externe Chrome trouvé. [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=fr). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Une fois installé, chargez la page que vous souhaitez tester dans le navigateur Chrome. (Remarque : étant donné que l’ouverture de plusieurs onglets peut avoir une incidence sur votre score, il est préférable de n’ouvrir qu’un seul onglet.) Une fois la page chargée
-**faites un clic droit** sur la page et sélectionnez l’onglet **Contrôles**. Les développeurs peuvent sélectionner le type de contrôle à effectuer par le plug-in Accessibilité. Une fois toutes les options sélectionnées, l’utilisateur peut cliquer sur le bouton Générer le rapport. Cela génère un document PDF qui indique la note globale d’accessibilité ainsi que ce qui peut être fait pour augmenter la note globale d’accessibilité.
+Une fois installé, chargez la page que vous souhaitez tester dans le navigateur Chrome (Remarque : L’ouverture de plusieurs onglets peut avoir une incidence sur votre score. Il est préférable de n’ouvrir qu’un seul onglet.) Une fois la page chargée
+**faites un clic droit** sur la page et sélectionnez l’onglet **Contrôles**. Les développeurs peuvent sélectionner le type de contrôle à effectuer par le plug-in Accessibilité. Une fois toutes les options sélectionnées, l’utilisateur peut cliquer sur le bouton Générer le rapport . Cela génère un document PDF qui indique la note globale d’accessibilité ainsi que ce qui peut être fait pour augmenter la note globale d’accessibilité.
 
-Une fois le rapport exécuté, les utilisateurs peuvent s’attendre à voir les éléments suivants :
+Une fois le rapport exécuté, les utilisateurs peuvent s’attendre à voir les éléments suivants :
 
 ![Rapport d’accessibilité](assets/aftia-accessibility.jpg)
 
@@ -769,7 +769,7 @@ Si les utilisateurs souhaitent l’exporter, ils peuvent cliquer sur les trois b
 Le thème Ultramarine, accessible au public et géré par Adobe, est intégré au
 `we-gov-forms.pkg.all-<version>.zip` fichier ZIP installable. Une fois ce package installé à l’aide de CRX.
 
-Gestionnaire de modules, les utilisateurs peuvent accéder au thème Ultramarine dans AEM Forms en accédant à **Forms** > **Thèmes** > **Thèmes de référence** > **accessible à Ultramarine**.
+Gestionnaire de packages, les utilisateurs peuvent accéder au thème Ultramarine dans AEM Forms en accédant à **Forms** > **Thèmes** > **Thèmes de référence** > **Accessible à Ultramarine**.
 
 ![Thème Ultramarine](assets/aftia-ultramarine-theme.jpg)
 
@@ -791,7 +791,7 @@ Pour les configurer afin qu’ils soient activés dans le workflow, les utilisat
 1. Ouvrez la définition de service et activez les services sélectionnés à appeler dans le workflow.
 
    >[!NOTE]
-   >Un utilisateur active le service dans la page Configuration Manager. Par conséquent, les utilisateurs doivent toujours configurer un service pour communiquer avec les services externes demandés.
+   Un utilisateur active le service dans la page Configuration Manager. Par conséquent, les utilisateurs doivent toujours configurer un service pour communiquer avec les services externes demandés.
 
    ![Package WeGov Forms](assets/aftia-configuration-options.jpg)
 
