@@ -2,8 +2,8 @@
 title: Couplage et découplage dans AEM
 description: Il est possible de mettre en œuvre des projets AEM sur des modèles couplés et découplés, mais ce choix n’a pas besoin d’être si binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+workflow-type: tm+mt
 source-wordcount: '1011'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Il est également possible d’utiliser AEM simplement pour gérer le contenu, c
 
 Pour autant, il ne s’agit pas nécessairement d’un choix binaire. AEM offre une flexibilité sans précédent, ce qui vous permet d’exploiter les avantages des deux modèles pour votre projet.
 
-![Modèles d’implémentation AEM](headless/assets/aem-implementation-models.png)
+![Modèles d’implémentation AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 Dans un modèle couplé ou full stack, le contenu est géré dans le référentiel AEM et les composants AEM basés sur Java, HTL, etc. sont utilisés pour effectuer le rendu du contenu pour l’expérience utilisateur. Dans ce modèle, la création du contenu, sa mise en forme, sa présentation et sa diffusion sont traitées dans AEM.
 
@@ -54,18 +54,18 @@ L’intégration d’une SPA comporte une étendue de quatre niveaux dans AEM.
    * Le contenu est créé, géré et distribué indépendamment sur deux systèmes distincts.
 * **Niveau 1 : Intégration de fragments de contenu**
    * Dans AEM, les [fragments de contenu](/help/assets/content-fragments/content-fragments.md) servent à créer et gérer du contenu limité pour la SPA.
-   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Certains contenus sont gérés dans AEM et d’autres dans un système externe.
    * Le contenu ne peut être affiché que dans la SPA.
 * **Niveau 2 : Incorporation de la SPA dans AEM**
    * Dans AEM, les [fragments de contenu](/help/assets/content-fragments/content-fragments.md) servent à créer et gérer le contenu pour la SPA.
-   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Certains contenus sont gérés dans AEM et d’autres dans un système externe.
    * AEM permet de visualiser le contenu replacé dans son contexte.
    * Le contenu limité peut être modifié dans AEM.
 * **Niveau 3 : Incorporation et activation complète des SPA dans AEM**
    * Dans AEM, les [fragments de contenu](/help/assets/content-fragments/content-fragments.md) servent à créer et gérer le contenu pour la SPA.
-   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/assets/content-fragments/graphql-api-content-fragments.md)
+   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * AEM permet de visualiser le contenu replacé dans son contexte.
    * L’essentiel du contenu peut être modifié dans AEM.
 

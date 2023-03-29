@@ -4,8 +4,8 @@ description: Découvrez comment activer certaines fonctionnalités de fragments 
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
-workflow-type: ht
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorate
 >Si vous n’activez pas les **modèles de fragment de contenu** :
 >
 >* L’option **Créer** ne sera pas disponible pour la création de modèles.
->* Vous ne pourrez pas [sélectionner la configuration Sites pour créer le point d’entrée](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint) associé.
+>* Vous ne pourrez pas [sélectionner la configuration Sites pour créer le point d’entrée](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint) associé.
 
 
 Pour activer la fonctionnalité de fragments de contenu, vous devez :

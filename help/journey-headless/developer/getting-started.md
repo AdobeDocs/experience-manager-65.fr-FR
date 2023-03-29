@@ -2,7 +2,7 @@
 title: Prise en main d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
@@ -287,7 +287,7 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) – Documentation technique sur les fragments de contenu.
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) – Documentation technique sur les modèles de fragment de contenu.
 * [Documentation technique GraphQL](https://graphql.org) – La définition de GraphQL (lien externe)
-* [API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) – Documentation technique expliquant comment créer des demandes d’accès et de diffusion de fragments de contenu.
+* [API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) – Documentation technique expliquant comment créer des demandes d’accès et de diffusion de fragments de contenu.
 * [API REST Assets](/help/assets/assets-api-content-fragments.md) – Documentation technique expliquant comment créer et modifier des fragments de contenu (et d’autres ressources).
-* [Requêtes persistantes](/help/assets/content-fragments/persisted-queries.md) – Documentation technique sur les requêtes persistantes dans AEM
+* [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md) – Documentation technique sur les requêtes persistantes dans AEM
 * [Modes Pile complète et Découplé dans AEM](/help/sites-developing/headful-headless.md) – Discussion complète sur les niveaux d’intégration en mode découplé disponibles dans AEM.

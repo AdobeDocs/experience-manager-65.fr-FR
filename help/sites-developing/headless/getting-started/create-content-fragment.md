@@ -2,8 +2,8 @@
 title: Guide de démarrage rapide sur la création de fragments de contenu découplés
 description: Découvrez comment utiliser les fragments de contenu AEM pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion découplée.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
 
@@ -32,16 +32,16 @@ Les auteurs de contenu créeront tout nombre de fragments de contenu pour repré
    * Les modèles disponibles dépendent de la [**configuration du cloud** que vous avez définie pour le dossier de ressources](create-assets-folder.md) dans lequel vous créez le fragment de contenu.
    * Si vous recevez le message `We could not find any models`, vérifiez la configuration de votre dossier de ressources.
 
-   ![Sélectionner un modèle de fragment de contenu](../assets/content-fragment-model-select.png)
+   ![Sélectionner un modèle de fragment de contenu](assets/content-fragment-model-select.png)
 1. Définissez un **titre**, une **description** et des **balises** si nécessaire, puis appuyez ou cliquez sur **Créer**.
 
-   ![Créer un fragment de contenu](../assets/content-fragment-create.png)
+   ![Créer un fragment de contenu](assets/content-fragment-create.png)
 1. Appuyez ou cliquez sur **Ouvrir** dans la fenêtre de confirmation.
 
-   ![Confirmation de création du fragment de contenu](../assets/content-fragment-confirmation.png)
+   ![Confirmation de création du fragment de contenu](assets/content-fragment-confirmation.png)
 1. Fournissez les détails du fragment de contenu dans l’éditeur de fragment de contenu.
 
-   ![Éditeur de fragment de contenu](../assets/content-fragment-edit.png)
+   ![Éditeur de fragment de contenu](assets/content-fragment-edit.png)
 1. Appuyez ou cliquez sur **Enregistrer** ou **Enregistrer et fermer**.
 
 Les fragments de contenu peuvent faire référence à d’autres fragments de contenu, ce qui permet d’obtenir une structure de contenu imbriquée si nécessaire.

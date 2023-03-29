@@ -2,7 +2,7 @@
 title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: f17674f535fe4ecfdf846132bfc7787384095892
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 87%
@@ -17,8 +17,8 @@ Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragment
 
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
-* [L’API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
-   * Pour l’utiliser, les [points de fin doivent être définis et activés dans AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint), et si nécessaire, l’[interface GraphiQL installée](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
+* [L’API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+   * Pour l’utiliser, les [points de fin doivent être définis et activés dans AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint), et si nécessaire, l’[interface GraphiQL installée](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [L’API REST Assets](/help/assets/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
@@ -27,14 +27,14 @@ Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragment
 
 Les architectes de l’information doivent concevoir des requêtes pour leurs points d’entrée de canaux afin de diffuser du contenu. Ces requêtes ne doivent généralement être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, nous ne devrons en créer qu’une.
 
-1. Connectez-vous à AEM et accédez au [Interface GraphiQL](/help/assets/content-fragments/graphiql-ide.md):
+1. Connectez-vous à AEM et accédez au [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Par exemple : `http://<host>:<port>/aem/graphiql.html`.
 
 1. GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
    * Le volet de gauche permet de construire votre requête.
    * Le volet de droite affiche les résultats.
    * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
-      ![Éditeur GraphiQL](../assets/graphiql.png)
+      ![Éditeur GraphiQL](assets/graphiql.png)
 
 1. En supposant que le modèle que nous avons créé s’appelle `person`, avec les champs `firstName`, `lastName` et `position`, nous pouvons créer une requête simple pour récupérer le contenu de notre fragment de contenu.
 
@@ -55,17 +55,17 @@ Les architectes de l’information doivent concevoir des requêtes pour leurs po
 1. Entrez la requête dans le volet de gauche.
 
 <!--
-   ![GraphiQL query](../assets/graphiql-query.png)
+   ![GraphiQL query](assets/graphiql-query.png)
 -->
 
 1. Cliquez sur le bouton **Exécuter la requête** (flèche vers la droite) ou utilisez l’icône `Ctrl-Enter` la touche de raccourci et les résultats s’affichent au format JSON dans le panneau de droite.
-   ![Résultats GraphiQL](../assets/graphiql-results.png)
+   ![Résultats GraphiQL](assets/graphiql-results.png)
 
 1. Cliquez sur :
    * **Docs** en haut à droite de la page pour afficher la documentation contextuelle afin de vous aider à créer vos requêtes adaptées à vos propres modèles ;
    * **Histoire** dans la barre d’outils supérieure pour afficher les requêtes précédentes.
    * **Enregistrer sous** et **Enregistrer** pour enregistrer vos requêtes, après quoi vous pouvez les répertorier et les récupérer à partir de l’ **Requêtes persistantes** et **Publier**.
-      ![Documentation GraphiQL](../assets/graphiql-documentation.png)
+      ![Documentation GraphiQL](assets/graphiql-documentation.png)
 
 GraphQL permet d’utiliser des requêtes structurées qui peuvent cibler non seulement des ensembles de données spécifiques ou des objets de données individuels, mais peuvent également fournir des éléments spécifiques des objets, des résultats imbriqués, prend en charge les variables de requête, et bien plus encore.
 
@@ -77,7 +77,7 @@ C’est terminé ! Vous possédez maintenant une compréhension de base de la g
 
 * **[Explorateur de configurations](create-configuration.md)** – Pour plus d’informations sur l’Explorateur de configurations AEM
 * **[Fragments de contenu](/help/assets/content-fragments/content-fragments.md)** – Pour plus d’informations sur la création et la gestion de fragments de contenu
-* **[IDE GraphiQL](/help/assets/content-fragments/graphiql-ide.md)** pour plus d’informations sur l’utilisation de l’IDE GraphiQL
-* **[Requêtes persistantes](/help/assets/content-fragments/persisted-queries.md)** pour plus d’informations sur les requêtes persistantes
+* **[IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** pour plus d’informations sur l’utilisation de l’IDE GraphiQL
+* **[Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)** pour plus d’informations sur les requêtes persistantes
 * **[Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/assets-api-content-fragments.md)** – Pour plus d’informations sur l’accès direct au contenu AEM via l’API HTTP, via des opérations CRUD (création, lecture, mise à jour, suppression)
-* **[API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md)** – Pour plus d’informations sur la diffusion découplée de fragments de contenu
+* **[API GraphQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)** – Pour plus d’informations sur la diffusion découplée de fragments de contenu

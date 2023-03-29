@@ -2,7 +2,7 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1335'
 ht-degree: 98%
@@ -243,10 +243,10 @@ Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes
 
 * Activez votre point d’entrée ;
    * Utilisez Outils -> Ressources -> GraphQL.
-   * [Activer votre point d’entrée GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [Activer votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * Accéder à GraphiQL (si nécessaire)
-   * [Interface d’AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)
+   * [Interface d’AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Exemple de structure {#sample-structure}
 
@@ -269,7 +269,7 @@ Les modèles de fragment seront utilisés :
 
 ### Où tester vos requêtes {#where-to-test-your-queries}
 
-Les requêtes peuvent être saisies dans la variable [Interface GraphiQL](/help/assets/content-fragments/graphiql-ide.md), par exemple à l’adresse :
+Les requêtes peuvent être saisies dans la variable [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), par exemple à l’adresse :
 
 * `http://localhost:4502/aem/graphiql.html`
 
@@ -362,14 +362,14 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
    * [Variables](https://graphql.org/learn/queries/#variables)
    * [Bibliothèques Java GraphQL](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [Apprendre à utiliser GraphQL avec AEM ;](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [Activation de votre point d’entrée GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-   * [Installation de l’interface AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [l’exemple de structure de fragment de contenu ;](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-   * [Exemple de requête – Un fragment de ville unique et spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Exemple de requête – Toutes les villes avec une variante nommée](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [Apprendre à utiliser GraphQL avec AEM ;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
+   * [Activation de votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
+   * [Installation de l’interface AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
+* [l’exemple de structure de fragment de contenu ;](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
+   * [Exemple de requête – Un fragment de ville unique et spécifique](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
+   * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
+   * [Exemple de requête – Toutes les villes avec une variante nommée](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
 * [Activation de la fonctionnalité de fragments de contenu dans l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)

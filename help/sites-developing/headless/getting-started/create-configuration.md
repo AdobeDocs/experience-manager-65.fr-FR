@@ -2,8 +2,8 @@
 title: Guide de prise en main pour la création découplée d’une configuration
 description: Créez une configuration comme première étape de prise en main d’AEM 6.5 en mode découplé.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Un administrateur n’a besoin de créer une configuration qu’une seule fois, 
    * **Modèles de fragment de contenu**
    * **Requêtes persistantes GraphQL**
 
-   ![Création d’une configuration](../assets/create-configuration.png)
+   ![Création d’une configuration](assets/create-configuration.png)
 
 1. Appuyez ou cliquez sur **Créer**
 

@@ -2,9 +2,9 @@
 title: Développement découplé pour AEM 6.5 Sites
 description: Découvrez comment les puissantes fonctionnalités d’AEM 6.5, telles que les modèles de contenu, les fragments de contenu et l’API GraphQL, fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+workflow-type: tm+mt
+source-wordcount: '493'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,7 @@ L’implémentation découplée devient de plus en plus importante pour offrir d
 
 L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions hybrides et complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences Web.
 
-![Modèles d’implémentation AEM](assets/aem-implementation-models.png)
+![Modèles d’implémentation AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 ## Comparaison entre couplage et découplage {#headful-headless}
 

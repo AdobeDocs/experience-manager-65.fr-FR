@@ -2,9 +2,9 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+workflow-type: tm+mt
+source-wordcount: '1826'
 ht-degree: 100%
 
 ---
@@ -275,6 +275,6 @@ Maintenant que vous avez appris à modéliser votre structure et à créer du co
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : création et modification de modèles de fragment de contenu
    * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) : conception et création de fragments de contenu ; cette page vous mènera à d’autres sections détaillées
 * [Schéma AEM GraphQL](access-your-content.md) : méthode de GraphQL pour réaliser les modèles
-* [Exemple de structure de fragment de contenu](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Exemple de structure de fragment de contenu](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) – Une courte série de tutoriels vidéo qui donne un aperçu de l’utilisation des fonctionnalités d’AEM découplé, notamment la modélisation de contenu et GraphQL
    * [Concepts de base de la modélisation GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=fr) : découvrez comment définir et utiliser des fragments de contenu dans Adobe Experience Manager (AEM) pour une utilisation avec GraphQL.

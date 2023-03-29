@@ -2,9 +2,9 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement AEM découplé, apprenez à déployer une application découplée.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+workflow-type: tm+mt
+source-wordcount: '1903'
 ht-degree: 100%
 
 ---
@@ -56,7 +56,7 @@ Vous utiliserez Git pour gérer le contrôle de code source et pour archiver les
 
 AEM utilise Apache Maven pour créer des projets générés à partir de l’archétype de projet AEM Maven. Tous les environnements de développement intégré majeurs prennent en charge l’intégration de Maven.
 
-Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est le gestionnaire de modules Node.js utilisé de facto pour gérer les dépendances JavaScript.
+Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est le gestionnaire de packages Node.js utilisé de facto pour gérer les dépendances JavaScript.
 
 ## Composants d’un système AEM en un coup d’œil {#components-of-an-aem-system-at-a-glance}
 
@@ -104,7 +104,7 @@ Il est maintenant temps de préparer votre application découplée AEM pour son 
 
 ### Sécurisation de votre application découplée avant son lancement {#secure-and-scale-before-launch}
 
-1. Préparez votre [Authentification](/help/assets/content-fragments/graphql-authentication-content-fragments.md) pour vos requêtes GraphQL.
+1. Préparez votre [Authentification](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) pour vos requêtes GraphQL.
 
 ### Structure du modèle par rapport à l’output GraphQL {#structure-vs-output}
 
