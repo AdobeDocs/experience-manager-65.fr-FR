@@ -1,7 +1,7 @@
 ---
 title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: d87b226d846c6d144e8dfe0b06ec4c296edcad05
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 73%
@@ -266,7 +266,7 @@ Les requêtes persistantes sont recommandées, car elles peuvent être mises en 
 Par défaut, AEM invalide le cache en fonction d’une définition de durée de vie (TTL). Ces TTL peuvent être définis par les paramètres suivants. Ces paramètres sont accessibles de plusieurs manières, avec des variantes dans les noms en fonction du mécanisme utilisé :
 
 | Type de cache | [En-tête HTTP](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuration OSGi  |
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 | Navigateur | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | Réseau de diffusion de contenu | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
 | Réseau de diffusion de contenu | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |
