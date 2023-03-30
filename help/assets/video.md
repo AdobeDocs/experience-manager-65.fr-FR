@@ -12,10 +12,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: fb287b3082a9376c01fd609edd0f4782278e6b37
+source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
 workflow-type: tm+mt
-source-wordcount: '12760'
-ht-degree: 85%
+source-wordcount: '8091'
+ht-degree: 62%
 
 ---
 
@@ -58,12 +58,12 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/assets-formats.md#supported-multimedia-formats).
-   * Contrôle la façon dont l’[encodage vidéo progresse](#monitoring-video-encoding-and-youtube-publishing-progress) du point de vue de la ressource ou du processus.
+   * Surveiller comment [codage vidéo en cours](#monitoring-video-encoding-and-youtube-publishing-progress) depuis la vue de la ressource ou du workflow.
 
 
 
 
-1. **Gérez les vidéos Dynamic Media** en effectuant les opérations suivantes :
+1. **Gestion des vidéos Dynamic Media** en effectuant l’une des opérations suivantes :
 
    * Organisez, parcourez et recherchez des ressources vidéo
 
@@ -126,29 +126,29 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
 La vidéo dans Dynamic Media est une solution complète qui facilite la publication de vidéos adaptatives haute qualité pour la diffusion sur plusieurs écrans, notamment les postes de travail et les appareils mobiles iOS, Android™, BlackBerry® et Windows. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
 
-Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 3G, 4G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur les postes de travail, les appareils mobiles ou les tablettes.
+Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 3G, 4G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur les ordinateurs de bureau, les appareils mobiles ou les tablettes.
 
-En outre, la qualité de la vidéo est automatiquement adaptée en temps réel selon les conditions réseau sur le poste de travail ou l’appareil mobile. En outre, si un client passe en mode Plein écran sur un bureau, la visionneuse de vidéos adaptative répond en utilisant une meilleure résolution, améliorant ainsi l’expérience de visionnage du client. L’utilisation des visionneuses de vidéos adaptatives offre une lecture optimale aux clients qui lisent des vidéos Dynamic Media sur plusieurs écrans et appareils.
+En outre, la qualité vidéo est automatiquement activée dynamiquement si les conditions réseau changent sur le bureau ou sur l’appareil mobile. En outre, si un client passe en mode Plein écran sur un bureau, la visionneuse de vidéos adaptative répond en utilisant une meilleure résolution, améliorant ainsi l’expérience de visionnage du client. L’utilisation de visionneuses de vidéos adaptatives vous permet de lire le mieux possible la vidéo Dynamic Media sur plusieurs écrans et appareils.
 
-La logique appliquée par un lecteur vidéo pour déterminer quelles sont les vidéos encodées à lire ou à sélectionner au cours de la lecture repose sur l’algorithme suivant :
+La logique utilisée par un lecteur vidéo pour déterminer la vidéo codée à lire ou à sélectionner au cours de la lecture repose sur l’algorithme suivant :
 
-1. Le lecteur vidéo charge le fragment vidéo initial basé sur le débit le plus proche de la valeur définie pour le « débit initial » dans le lecteur lui-même.
-1. Le lecteur vidéo est adapté en fonction des modifications de la vitesse de bande passante d’après les critères suivants :
+1. Le lecteur vidéo charge le fragment vidéo initial en fonction du débit le plus proche de la valeur définie pour le &quot;débit initial&quot; dans le lecteur lui-même.
+1. Le lecteur vidéo bascule sur les modifications apportées à la vitesse de bande passante à l’aide des critères suivants :
 
-   1. Le lecteur sélectionne le flux de bande passante le plus élevé qui est inférieur ou égal à la bande passante estimée.
+   1. Le lecteur sélectionne la bande passante la plus élevée en dessous ou égale à la bande passante estimée.
    1. Le lecteur prend uniquement en compte 80 % de la bande passante disponible. Cependant, s’il change, il est préférable que ce taux soit seulement de 70 % pour éviter toute surestimation et que le lecteur ne repasse au taux précédent.
 
 Pour obtenir des informations techniques détaillées sur l’algorithme, consultez la page [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Pour la gestion des visionneuses de vidéos adaptative et unique, les fonctions suivantes sont prises en charge :
+Pour gérer des visionneuses de vidéos adaptatives et une seule vidéo, les éléments suivants sont pris en charge :
 
-* Chargement de vidéos dans de nombreux formats vidéo et audio pris en charge et codage vidéo au format MP4 H.264 pour lecture sur plusieurs écrans. Vous pouvez utiliser les paramètres prédéfinis de vidéo adaptative ou de codage unique ou personnaliser le codage pour contrôler la qualité et la taille de la vidéo.
+* Chargement de vidéos dans de nombreux formats vidéo et audio pris en charge et codage vidéo au format MP4 H.264 pour lecture sur plusieurs écrans. Vous pouvez utiliser des paramètres prédéfinis de vidéo adaptative, des paramètres prédéfinis de codage vidéo unique ou personnaliser votre propre codage pour contrôler la qualité et la taille de la vidéo.
 
    * Lorsqu’une visionneuse de vidéos adaptative est générée, elle comprend des vidéos MP4.
-   * **Remarque** : Les vidéos originales/sources ne sont pas ajoutées à la visionneuse de vidéos adaptative.
+   * **Remarque**: Les vidéos Principal/source ne sont pas ajoutées à la visionneuse de vidéos adaptative.
 
-* Sous-titrage des vidéos dans toutes les visionneuses de vidéo HTML5.
-* Organiser, parcourir et effectuer des recherches dans la vidéo avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
+* Sous-titrage vidéo dans toutes les visionneuses de vidéos HTML5.
+* Organisez, parcourez et recherchez des vidéos avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android™, BlackBerry® et Windows Phone notamment).
 
 La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=fr#vidéo).
@@ -161,11 +161,11 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
 
 * Lecture de la vidéo à l’aide des paramètres prédéfinis de la visionneuse Dynamic Media Video, tels que :
 
-   * des visionneuses de vidéos uniques ;
+   * Visionneuses de vidéos uniques.
    * des visionneuses de médias mixtes combinant du contenu vidéo et des images.
 
-* Configurer des lecteurs vidéo pour répondre à vos besoins de stratégie de marque.
-* Intégrer la vidéo à votre site web, site mobile ou application mobile grâce à une simple URL ou à du code intégré.
+* Configurez les lecteurs vidéo pour répondre à vos besoins en matière de branding.
+* Intégrez la vidéo à votre site web, site mobile ou application mobile à l’aide d’une simple URL ou d’un code intégré.
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
@@ -175,7 +175,7 @@ Consultez également la section [Visionneuses pour Experience Manager Assets e
 
 Les paramètres prédéfinis de la visionneuse de vidéos Dynamic Media HTML5 sont des lecteurs vidéo fiables. Vous pouvez les utiliser pour éviter de nombreux problèmes courants liés à la lecture vidéo HTML5. De plus, des problèmes liés aux appareils mobiles, tels que l’absence de diffusion en continu à débit adaptatif et une portée limitée du navigateur de bureau.
 
-Du côté de la conception du lecteur, vous pouvez concevoir la fonctionnalité du lecteur vidéo à l’aide d’outils de développement web standard. Vous pouvez, par exemple, concevoir les boutons, les commandes et les affiches personnalisées en arrière-plan au moyen du code HTML5 et CSS afin de mieux cibler les utilisateurs avec un aspect personnalisé.
+Du côté de la conception du lecteur, vous pouvez concevoir la fonctionnalité du lecteur vidéo à l’aide d’outils de développement web standard. Par exemple, vous pouvez concevoir les boutons, les commandes et l’arrière-plan personnalisé de l’image d’affiche à l’aide de HTML5 et CSS pour vous aider à atteindre vos clients avec une apparence personnalisée.
 
 Du côté lecture de la visionneuse, elle détecte automatiquement les fonctionnalités vidéo du navigateur. Il diffuse ensuite la vidéo à l’aide de HLS (HTTP Live Streaming) ou DASH (Dynamic Adaptive Streaming over HTTP) , également appelé diffusion en continu à débit adaptatif. Si ces méthodes de distribution n’existent pas, la diffusion progressive HTML5 est utilisée à la place.
 
@@ -197,8 +197,8 @@ La lecture vidéo se produit à l’aide de DASH ou HLS, ou du téléchargement 
 
 Dans Experience Manager 6.3 et versions ultérieures, les vidéos sont désormais diffusées en continu via HTTPS (c’est-à-dire, DASH ou HLS), car l’URL du service de passerelle DM utilise toujours HTTPS également. Il n’y a aucun impact pour le client dans ce comportement par défaut. En d’autres termes, la diffusion vidéo en continu s’effectue toujours par HTTPS, sauf si elle n’est pas prise en charge par le navigateur. (voir le tableau ci-dessous). Par conséquent,
 
-* Si vous avez un site web HTTPS avec une diffusion vidéo en continu via HTTPS, la diffusion en continu est de qualité.
-* Si vous avez un site web HTTP avec une diffusion vidéo en flux continu via HTTPS, la diffusion en continu est de qualité et il n’y a aucun problème de contenu mixte du navigateur web.
+* Si vous disposez d’un site web HTTPS avec diffusion vidéo en continu HTTPS, la diffusion en continu est correcte.
+* Si vous disposez d’un site web HTTP avec diffusion vidéo en continu HTTPS, la diffusion en continu est correcte et il n’y a aucun problème de contenu mixte à partir du navigateur web.
 
 DASH est la norme internationale et HLS est une norme Apple. Les deux sont utilisés pour la diffusion en continu de vidéo adaptative. De plus, les deux technologies ajustent automatiquement la lecture en fonction de la capacité de bande passante du réseau. Elle permet aussi au client ou à la cliente de « rechercher » n’importe quel point de la vidéo sans avoir à attendre que le reste de la vidéo soit téléchargé.
 
@@ -215,22 +215,22 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   </tr>
   <tr>
    <td>Poste de travail</td>
-   <td>Internet Explorer 9 et 10</td>
+   <td>Internet Explorer 9 et 10</td>
    <td>Téléchargement progressif.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
    <td>Internet Explorer 11+</td>
-   <td>Sous Windows 8 et Windows 10 - Forcer l’utilisation de HTTPS chaque fois que DASH* ou HLS est demandé. Limites connues : HTTP sur DASH* ou HLS ne fonctionne pas dans cette combinaison navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Utilise la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
+   <td>Sous Windows 8 et Windows 10 - Forcer l’utilisation de HTTPS chaque fois que DASH* ou HLS est demandé. Limites connues : HTTP sur DASH* ou HLS ne fonctionne pas dans cette combinaison navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Représente la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
-   <td>Firefox 23 à 44</td>
+   <td>Firefox 23-44</td>
    <td>Téléchargement progressif.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
-   <td>Firefox 45 ou version ultérieure</td>
+   <td>Firefox 45 ou version ultérieure</td>
    <td>Diffusion en continu à débit adaptatif DASH* ou HLS.</td>
   </tr>
   <tr>
@@ -241,7 +241,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   <tr>
    <td>Poste de travail</td>
    <td>Safari (Mac)</td>
-   <td>HLS diffusion en continu à débit adaptatif.</td>
+   <td>Diffusion en continu à débit adaptatif HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -261,12 +261,12 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   <tr>
    <td>Mobile</td>
    <td>Safari (iOS)</td>
-   <td>HLS diffusion en continu à débit adaptatif.</td>
+   <td>Diffusion en continu à débit adaptatif HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
    <td>Chrome (iOS)</td>
-   <td>HLS diffusion en continu à débit adaptatif.</td>
+   <td>Diffusion en continu à débit adaptatif HLS.</td>
   </tr>
   <tr>
    <td>Mobile</td>
@@ -302,7 +302,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 ### Fichiers vidéo source {#source-video-files}
 
-Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
+Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source de la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
 
 * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
 * Vous pouvez charger des fichiers vidéo de source principale d’une taille de 15 Go chacun au maximum.
@@ -311,9 +311,9 @@ Le tableau ci-dessous décrit la taille recommandée, le format et le débit min
 
 | Taille | Format | Débit minimal |
 |--- |--- |--- |
-| 1024 x 768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
-| 1280 x 720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
-| 1 920 x 1 080 | 16:9 | 6 000 à 8 000 kbit/s en fonction de la quantité de mouvement sur la vidéo. |
+| 1024 X 768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
+| 1280 X 720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 920 x 1 080 | 16:9 | 6 000 à 8 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
 
 ### Obtention des métadonnées d’un fichier {#obtaining-a-file-s-metadata}
 
@@ -331,13 +331,13 @@ Pour déterminer les proportions d’un fichier vidéo, obtenez les métadonnée
 
 largeur/hauteur = format
 
-Ce tableau décrit la façon dont les résultats de la formule se traduisent en choix de formats :
+Le tableau suivant décrit comment les résultats de la formule se traduisent par des choix de format courants :
 
 | Résultat de la formule | Format |
 |--- |--- |
 | 1.33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
+| 0.75 | 3:4 |
+| 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
 Par exemple, une vidéo qui a une largeur de 1440 pour une hauteur de 1080 a un format de 1440/1080, soit 1,33. Dans ce cas, vous choisissez un paramètre prédéfini de codage vidéo avec un format de 4:3 pour le codage du fichier vidéo.
@@ -348,9 +348,9 @@ Le débit correspond à la quantité de données encodées pour produire une seu
 
 >[!NOTE]
 >
->Du fait que tous les codecs utilisent la compression avec perte, le débit de données est le facteur le plus important de la qualité vidéo. Quand vous utilisez la compression avec perte, plus vous compressez la vidéo, plus la qualité de l’image se dégrade. Toutes les autres caractéristiques étant égales (résolution, taux de rafraîchissement et codec), plus le débit de données est faible, moins la qualité du fichier compressé est bonne.
+>Du fait que tous les codecs utilisent la compression avec perte, le débit de données est le facteur le plus important de la qualité vidéo. Quand vous utilisez la compression avec perte, plus vous compressez la vidéo, plus la qualité de l’image se dégrade. Pour cette raison, toutes les autres caractéristiques étant égales (résolution, débit d’image et codec), plus le débit est faible, plus la qualité du fichier compressé est faible.
 
-Lorsque vous sélectionnez l’encodage du débit, vous avez le choix entre deux types :
+Lorsque vous sélectionnez un codage de débit binaire, vous pouvez choisir deux types :
 
 * **[!UICONTROL Encodage à débit constant]** (CBR) : pendant l’encodage CBR, le débit ou le nombre de bits par seconde est conservé pendant tout le processus d’encodage. L’encodage CBR maintient le débit défini selon votre configuration sur l’intégralité de la vidéo. En outre, le codage CBR n’optimise pas la qualité des fichiers multimédias, mais économise de l’espace de stockage.
 Utilisez le codage CBR si votre vidéo présente globalement un niveau de mouvement similaire. Le codage CBR est le plus souvent utilisé pour diffuser le contenu vidéo en continu. Voir également [Utilisation de paramètres de codage vidéo personnalisés](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
@@ -370,65 +370,65 @@ Ce tableau décrit le débit de données associé à des vitesses de connexion c
 | 256 | Connexion d’accès à distance. |
 | 800 | Connexion mobile standard. Pour cette connexion, visez un débit de données de 400 à 800 kbit/s pour les expériences 3G. |
 | 2000 | Connexion haut débit standard de bureau. Pour cette connexion, visez un débit de données de 800 à 2 000 kbit/s, bien qu’un débit de 1 200 à 1 500 kbit/s convienne à la plupart des cibles. |
-| 5000 | Connexion haut débit standard. Il est déconseillé de coder dans cette plage supérieure, car la diffusion de la vidéo à cette vitesse n’est pas possible pour la plupart des consommateurs. |
+| 5000 | Connexion haut débit standard. Il n’est pas recommandé de coder dans cette plage supérieure, car la diffusion vidéo à cette vitesse n’est pas disponible pour la plupart des consommateurs. |
 
 ### Résolution {#resolution}
 
 **Résolution** décrit la hauteur et la largeur d’un fichier vidéo, en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). Pour la diffusion en continu, la vidéo source est compressée à une résolution inférieure (640 x 480 ou moins).
 
-La résolution et le débit de données sont deux facteurs étroitement liés qui déterminent la qualité de la vidéo. Pour maintenir la même qualité vidéo, plus le nombre de pixels (c’est-à-dire la résolution) est élevé dans un fichier vidéo, plus le débit de données doit l’être également. Par exemple, considérez le nombre de pixels par image dans un fichier vidéo d’une résolution de 320 x 240 pixels et dans un fichier vidéo d’une résolution de 640 x 480 pixels :
+La résolution et le débit de données sont deux facteurs étroitement liés qui déterminent la qualité vidéo. Pour maintenir la même qualité vidéo, plus le nombre de pixels dans un fichier vidéo est élevé (plus la résolution est élevée), plus le débit de données doit être élevé. Prenons l’exemple du nombre de pixels par image dans un fichier vidéo de résolution 320 x 240 et de résolution 640 x 480 :
 
 | Résolution | Pixels par image |
 |--- |--- |
-| 320 x 240 | 76 800 |
-| 640 x 480 | 307 200 |
+| 320 x 240 | 76,800 |
+| 640 x 480 | 307,200 |
 
-Le fichier de 640 x 480 possède quatre fois plus de pixels par image. Pour atteindre le même débit de données avec ces deux résolutions, vous appliquez une compression de 4 au fichier d’une résolution de 640 x 480 pixels, ce qui peut réduire la qualité de la vidéo. Par conséquent, un débit de données vidéo de 250 kbit/s produit un affichage de haute qualité à une résolution de 320 x 240 pixels, mais pas à une résolution de 640 x 480 pixels.
+Le fichier 640 x 480 a quatre fois plus de pixels par image. Pour obtenir le même débit de données pour ces deux exemples de résolution, vous appliquez quatre fois la compression au fichier 640 x 480, ce qui peut réduire la qualité de la vidéo. Par conséquent, un débit de données vidéo de 250 kbit/s produit un affichage de haute qualité à une résolution de 320 x 240 pixels, mais pas à une résolution de 640 x 480 pixels.
 
 En général, plus le débit de données que vous utilisez est élevé, plus la qualité de votre vidéo est bonne, et plus vous utilisez une résolution élevée, plus de débit de données dont vous avez besoin est élevé pour conserver la qualité de visionnage (en comparaison avec des résolutions plus basses).
 
 Du fait que la résolution et le débit de données sont liés, vous avez le choix entre deux options lors du codage vidéo :
 
-* Choisir un débit de données puis, en fonction de ce paramètre, coder à la résolution la plus haute pour obtenir une vidéo de bonne qualité.
+* Choisissez un débit de données, puis codez-le à la résolution la plus élevée qui convient au débit de données choisi.
 * Choisir une résolution, puis coder au débit de données nécessaire pour que la qualité vidéo soit optimale à la résolution choisie.
 
 Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo pour votre fichier vidéo source original, utilisez ce tableau pour choisir la résolution cible appropriée :
 
 | Résolution | Hauteur (pixels) | Taille d’écran |
 |--- |--- |--- |
-| 240p | 240 | Écran de très petite taille |
-| 300p | 300 | Petit écran équipant généralement les appareils mobiles |
+| 240p | 240 | Minuscule écran |
+| 300p | 300 | Petit écran généralement pour les appareils mobiles |
 | 360p | 360 | Petit écran |
-| 480p | 480 | Écran de taille moyenne |
+| 480p | 480 | Écran moyen |
 | 720p | 720 | Grand écran |
 | 1 080p | 1080 | Grand écran haute définition |
 
 ### Images par seconde  {#fps-frames-per-second}
 
-Aux États-Unis et au Japon, la plupart des vidéos sont tournées à 29,97 ips (images par seconde) ; en Europe, la plupart des vidéos le sont à 25 ips. Un film est tourné à 24 ips.
+Aux États-Unis et au Japon, la plupart des vidéos sont tournées à 29,97 images par seconde (i/s) ; en Europe, la plupart des vidéos sont tournées à 25 ips. Le film est tourné à 24 ips.
 
 Choisissez un paramètre prédéfini de codage vidéo correspondant au nombre d’images par seconde de votre vidéo issue de sources originales. Par exemple, si le débit est de 25 ips pour la vidéo issue de sources originales, choisissez un paramètre prédéfini de 25 ips pour le codage. Par défaut, tous les codages personnalisés utilisent le nombre d’images par seconde du fichier vidéo source Principal. C’est pourquoi il est inutile d’indiquer le nombre d’images par seconde lorsque vous créez un paramètre prédéfini de codage vidéo.
 
 ### Dimensions du codage vidéo {#video-encoding-dimensions}
 
-Pour obtenir des résultats optimaux, sélectionnez les dimensions de codage de façon à ce que la vidéo source corresponde à un multiple entier de toutes vos vidéos codées.
+Pour des résultats optimaux, sélectionnez des dimensions de codage de sorte que la vidéo source soit un multiple entier de toutes vos vidéos codées.
 
-Pour ce faire, il suffit de diviser la largeur de la source par la largeur codée pour obtenir le rapport de largeur, puis de diviser la hauteur de la source par la hauteur codée pour obtenir le rapport de hauteur.
+Pour ce faire, il suffit de diviser la largeur de la source par la largeur codée pour obtenir le rapport de largeur, Ensuite, vous divisez la hauteur de la source par la hauteur codée pour obtenir le rapport de hauteur.
 
-Si le résultat est un nombre entier, cela signifie que la mise à l’échelle de la vidéo est parfaite. Si le résultat n’est pas un nombre entier, la qualité vidéo s’en ressentira en raison de la présence d’artefacts vidéo (pixels résiduels). Cet effet est plus visible lorsque la vidéo contient du texte.
+Si le résultat est un nombre entier, cela signifie que la mise à l’échelle de la vidéo est optimale. Si le résultat n’est pas un nombre entier, la qualité vidéo s’en ressentira en raison de la présence d’artefacts vidéo (pixels résiduels). Cet effet est plus visible lorsque la vidéo comporte du texte.
 
-Supposons, par exemple, que la résolution de votre vidéo source soit équivalente à 1920 x 1080 pixels. Dans le tableau ci-après, les trois vidéos codées indiquent les paramètres de codage optimaux à appliquer.
+Par exemple, supposons que la vidéo source soit 1 920 x 1 080. Dans le tableau suivant, les trois vidéos codées fournissent les paramètres de codage optimaux à utiliser.
 
-| Type de vidéo | Largeur x hauteur | Rapport de largeur | Rapport de hauteur |
+| Type de vidéo | Largeur x Hauteur | Rapport largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
 | Source | 1 920 x 1 080 | 1 | 1 |
-| Codée | 960 x 540 | 2 | 2 |
-| Codée | 640 x 360 | 3 | 3 |
-| Codée | 480 x 270 | 4 | 4 |
+| Codé | 960 x 540 | 2 | 2 |
+| Codé | 640 x 360 | 3 | 3 |
+| Codé | 480 x 270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
 
-Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, la vidéo est de haute qualité mais dans un fichier au volume compressé.
+Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, il fournit une vidéo de haute qualité, mais avec une taille de fichier compressée.
 
 ### Activation de DASH sur votre compte {#enable-dash}
 
@@ -470,549 +470,6 @@ L’activation du DASH sur votre compte nécessite deux étapes :
 1. Une fois la procédure achevée, vous en serez informé par l’équipe du service clientèle.
 1. Créez votre [paramètre prédéfini de visionneuse vidéo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) comme d&#39;habitude.
 
-## Publication de vidéos sur YouTube {#publishing-videos-to-youtube}
-
-Vous pouvez publier des ressources vidéo Experience Manager on-premise directement sur une chaîne YouTube que vous avez précédemment créée.
-
-Pour publier des ressources vidéo sur YouTube, configurez Experience Manager Assets avec des balises. Vous associez ces balises à une chaîne YouTube. Si la balise d’une ressource vidéo correspond à la balise d’une chaîne YouTube, la vidéo est publiée sur YouTube. La publication sur YouTube se produit avec une publication normale de la vidéo à condition qu’une balise associée soit utilisée.
-
-YouTube procède à son propre codage. Ainsi, le fichier vidéo d’origine qui a été chargé dans Experience Manager est publié sur YouTube au lieu de tout rendu vidéo créé par le codage Dynamic Media. Même s’il n’est pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est supposé qu’elles le sont si un paramètre prédéfini de visionneuse est nécessaire pour la lecture.
-
-Lorsque vous ignorez le profil de traitement vidéo et que vous effectuez directement la publication sur YouTube, votre ressource vidéo ne dispose pas de miniature visible dans Experience Manager Assets. Cela signifie également que si vous utilisez le mode d’exécution `dynamicmedia` ou `dynamicmedia_scene7`, les vidéos non codées ne fonctionnent avec aucun des types de ressources Dynamic Media.
-
-Pour garantir une authentification serveur à serveur sécurisée avec YouTube, la publication des vidéos sur les serveurs YouTube implique les tâches suivantes :
-
-1. [Configuration des paramètres de Google Cloud](#configuring-google-cloud-settings)
-1. [Création d’une chaîne YouTube](#creating-a-youtube-channel)
-1. [Ajout de balises pour la publication](#adding-tags-for-publishing)
-1. [Activation de l’agent de réplication de publication YouTube](#enabling-the-youtube-publish-replication-agent)
-1. [Configuration de YouTube dans Experience Manager](#setting-up-youtube-in-aem)
-1. [(Facultatif) Automatisation de la définition des propriétés YouTube par défaut pour vos vidéos chargées](#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos)
-1. [Publication de vidéos sur votre chaîne YouTube](#publishing-videos-to-your-youtube-channel)
-1. [(Facultatif) Vérification de la vidéo publiée sur YouTube](/help/assets/video.md#optional-verifying-the-published-video-on-youtube)
-1. [Liaison d’URL YouTube à votre application web](#linking-youtube-urls-to-your-web-application)
-
-Vous pouvez également [dépublier des vidéos pour les supprimer de YouTube](#unpublishing-videos-to-remove-them-from-youtube).
-
-### Configuration des paramètres de Google Cloud {#configuring-google-cloud-settings}
-
-Pour effectuer une publication sur YouTube, vous avez besoin d’un compte Google. Si vous disposez d’un compte GMAIL, alors vous disposez déjà d’un compte Google ; si vous ne disposez pas d’un compte Google, vous pouvez facilement en créer un. Un compte est nécessaire, car vous avez besoin des informations d’identification pour publier des ressources vidéo sur YouTube. Si vous avez déjà créé un compte, ignorez cette tâche et passez directement à [Création d’une chaîne YouTube](#creating-a-youtube-channel).
-
-Il n’est pas nécessaire que le compte utilisé avec Google Cloud et le compte Google utilisé pour YouTube soient les mêmes.
-
-Google modifie régulièrement son interface utilisateur. De ce fait, les étapes de publication des vidéos sur YouTube peuvent varier légèrement des étapes présentées ci-dessous. Cet avertissement s’applique également à YouTube lorsque vous tentez de vérifier si des vidéos y sont téléchargées.
-
->[!NOTE]
->
->Les étapes suivantes étaient exactes au moment de leur rédaction. Toutefois, Google met à jour régulièrement ses sites web sans préavis. Par conséquent, ces étapes peuvent être légèrement différentes.
-
-Pour configurer les paramètres de Google Cloud, procédez comme suit :
-
-1. Créez un compte Google.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   Si vous disposez déjà d’un compte Google, passez à l’étape suivante.
-
-1. Accédez à [https://cloud.google.com/](https://cloud.google.com/).
-1. Dans la page Google Cloud, près du coin supérieur droit, cliquez sur **[!UICONTROL Console]**.
-
-   Vous devrez peut-être vous **[!UICONTROL connecter]** à l’aide des informations d’identification de votre compte Google pour voir l’option **[!UICONTROL Console]**.
-
-1. Sur la page Tableau de bord, à droite de **[!UICONTROL Google Cloud Platform]**, cliquez sur la liste déroulante Projet pour ouvrir la boîte de dialogue Sélectionner un projet.
-1. Dans la boîte de dialogue Sélectionner un projet, appuyez sur **[!UICONTROL Nouveau projet]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
-1. Dans la boîte de dialogue Nouveau projet, saisissez le nom de votre nouveau projet dans le champ Nom du projet.
-
-   Votre ID de projet est basé sur le nom du projet. Par conséquent, choisissez soigneusement le nom du projet ; il ne peut pas être modifié une fois créé. Vous devez également le saisir lors de la configuration ultérieure de YouTube dans Experience Manager ; vous pouvez le noter pour vous en rappeler.
-
-1. Cliquez sur **[!UICONTROL Créer]**.
-
-1. Effectuez l’une des opérations suivantes :
-
-   * Dans le tableau de bord de votre projet, dans la carte Prise en main , appuyez sur **[!UICONTROL Exploration et activation des API]**.
-   * Dans le tableau de bord de votre projet, dans la carte API, appuyez sur **[!UICONTROL Accéder à l’aperçu des API]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
-
-1. En haut de la page API &amp; services, appuyez sur **[!UICONTROL Activer les API et les services]**.
-1. Sur la page Bibliothèque d’API, dans la partie gauche, sous **[!UICONTROL Catégorie]**, appuyez sur **[!UICONTROL YouTube]**. Sur le côté droit de la page, appuyez sur **[!UICONTROL YouTube Data API]**.
-1. Sur la page YouTube Data API v3, appuyez sur **[!UICONTROL Activer]**.
-
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
-
-1. Pour utiliser l’API, vous avez besoin d’identifiants. Si besoin, cliquez sur **[!UICONTROL Créer des identifiants]**.
-
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
-
-1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 1, procédez comme suit :
-
-   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL YouTube Data API v3]**.
-
-   * Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**.
-
-   * Dans la liste déroulante **[!UICONTROL À quelles données accédez-vous ?]**, appuyez sur **[!UICONTROL Données utilisateur]**.
-
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
-
-1. Appuyez sur **[!UICONTROL De quels identifiants ai-je besoin ?]**
-1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 2, sous l’en-tête **[!UICONTROL Créer un ID client OAuth 2.0]**, dans le champ Nom, saisissez un nom unique si vous le souhaitez. Vous pouvez également utiliser le nom par défaut spécifié par Google.
-1. Dans le champ de texte sous l’en-tête **[!UICONTROL Origines JavaScript autorisées]**, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
-
-   `https://<servername.domain>:<port_number>`
-
-   Par exemple, `https://1a2b3c.mycompany.com:4321`
-
-   **Remarque :** l’exemple de chemin ci-dessus est fourni uniquement à titre illustratif.
-
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
-
-1. Dans le champ de texte sous l’en-tête **[!UICONTROL URI de redirection autorisés]**, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
-
-   `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
-
-   Par exemple, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
-
-   **Remarque :** l’exemple de chemin ci-dessus est fourni uniquement à titre illustratif.
-
-1. Cliquez sur **[!UICONTROL Créer un ID client OAuth]**.
-1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 3, sous l’en-tête **[!UICONTROL Configuration de l’écran d’autorisation OAuth 2.0]**, sélectionnez l’adresse e-mail Gmail que vous utilisez actuellement.
-
-   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
-
-1. Sous l’en-tête **[!UICONTROL Nom du produit affiché à l’intention des utilisateurs]**, dans le champ de texte, entrez ce qui doit s’afficher sur l’écran d’autorisation.
-
-   L’écran du consentement s’affiche pour l’administrateur Experience Manager lorsque celui-ci s’identifie sur YouTube ; Experience Manager contacte YouTube pour lui demander l’autorisation.
-
-1. Cliquez sur **[!UICONTROL Continuer]**.
-1. Sur la page Ajouter des identifiants au projet, à l’étape 4, sous l’en-tête **[!UICONTROL Télécharger les identifiants]**, appuyez sur **[!UICONTROL Télécharger]**.
-
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
-
-1. Enregistrez le fichier `client_id.json`.
-
-   Vous en avez besoin lors de la configuration ultérieure de YouTube dans Adobe Experience Manager.
-
-1. Cliquez sur **[!UICONTROL Terminé]**.
-
-   Déconnectez-vous de votre compte Google. Créez maintenant une chaîne YouTube.
-
-### Création d’une chaîne YouTube {#creating-a-youtube-channel}
-
-Pour publier des vidéos sur YouTube, vous devez disposer d’une ou de plusieurs chaînes. Si vous avez déjà créé une chaîne YouTube, vous pouvez ignorer cette étape et passer à la tâche [Ajout de balises pour la publication](/help/assets/video.md#adding-tags-for-publishing).
-
->[!WARNING]
->
->Vous devez avoir configuré une ou plusieurs chaînes dans YouTube *avant* d’ajouter des chaînes sous Paramètres YouTube dans Experience Manager (voir la section [Configuration de YouTube dans Experience Manager](#setting-up-youtube-in-aem) ci-dessous). Si vous ne parvenez pas à configurer un ou plusieurs canaux, vous n’êtes pas averti de l’absence de canaux. L’authentification Google a lieu lorsque vous ajoutez une chaîne, mais il n’existe pas d’option permettant de choisir la chaîne vers laquelle la vidéo est envoyée.
-
-**Pour créer une chaîne YouTube :**
-
-1. Accédez à [https://www.youtube.com](https://www.youtube.com/), puis connectez-vous à l’aide des informations d’identification de votre compte Google.
-1. Dans l’angle supérieur droit de la page YouTube, cliquez sur l’image de votre profil (peut également s’afficher sous la forme d’une lettre dans un cercle coloré uni), puis cliquez sur **[!UICONTROL Paramètres YouTube]** (icône sous forme d’engrenage rond).
-1. Sur la page Présentation, sous l’en-tête Fonctionnalités supplémentaires, cliquez sur **[!UICONTROL Voir toutes mes chaînes ou créer une chaîne]**.
-1. Depuis la page Chaînes, cliquez sur **[!UICONTROL Créer une chaîne]**.
-1. Sur la page Compte de marque, dans le champ nom du compte de marque, saisissez un nom d’entité professionnelle ou tout autre nom de chaîne de votre choix sous lequel vous souhaitez publier vos ressources vidéo, puis cliquez sur **[!UICONTROL Créer]**.
-
-   Mémorisez le nom que vous entrez ici ; vous devrez le saisir à nouveau lorsque vous devrez configurer YouTube dans Experience Manager.
-
-1. (Facultatif) Si nécessaire, ajoutez d’autres chaînes.
-
-   Ajoutez à présent des balises pour la publication.
-
-### Ajout de balises pour la publication {#adding-tags-for-publishing}
-
-Pour publier vos vidéos sur YouTube, Experience Manager associe des balises à une ou plusieurs chaînes YouTube. Pour ajouter des balises pour publication, consultez la section [Administration des balises](/help/sites-administering/tags.md).
-
-Ou, si vous prévoyez d’utiliser les balises par défaut dans Experience Manager, vous pouvez ignorer cette tâche et accéder à l’[Activation de l’agent de réplication de publication YouTube](#enabling-the-youtube-publish-replication-agent).
-
-### Activation de l’agent de réplication de publication YouTube {#enabling-the-youtube-publish-replication-agent}
-
-Après avoir activé l’agent de réplication de publication YouTube, si vous souhaitez tester la connexion au compte Google Cloud, appuyez sur **[!UICONTROL Tester la connexion]**. Un onglet de navigateur affiche les résultats de la connexion. Si vous avez ajouté des chaînes YouTube, une liste de ces chaînes s’affiche dans le cadre du test.
-
-1. Dans le coin supérieur gauche d’Experience Manager, cliquez sur le logo d’Experience Manager, puis dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** > **[!UICONTROL Agents sur l’auteur]**.
-1. Sur la page Agents sur l’auteur, cliquez sur **[!UICONTROL Publication YouTube]**.
-1. Dans la barre d’outils, à droite de Paramètres, cliquez sur **[!UICONTROL Modifier]**.
-1. Cochez la case **[!UICONTROL Activé]** pour activer l’agent de réplication.
-1. Cliquez sur **[!UICONTROL OK]**.
-
-   Configurez maintenant YouTube dans Experience Manager.
-
-### Configuration de YouTube dans Experience Manager {#setting-up-youtube-in-aem}
-
-À partir d’Experience Manager 6.4, une nouvelle méthode d’interface utilisateur tactile a été ajoutée pour configurer la publication YouTube dans Experience Manager. Selon l’instance d’Experience Manager que vous utilisez, effectuez l’une des opérations suivantes :
-
-* Pour configurer YouTube dans une version d’Experience Manager antérieure à la version 6.4, consultez [Configuration de YouTube dans une version d’Experience Manager antérieure à la version 6.4](/help/assets/video.md#setting-up-youtube-in-aem-before).
-* Pour configurer YouTube dans Experience Manager 6.4 ou dans des versions ultérieures, reportez-vous à [Configuration de YouTube dans Experience Manager 6.4 et dans ses versions ultérieures](#setting-up-youtube-in-aem-and-later).
-
-#### Configuration de YouTube dans Experience Manager 6.4 et dans ses versions ultérieures {#setting-up-youtube-in-aem-and-later}
-
-1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
-1. Dans le coin supérieur gauche, appuyez sur le logo Experience Manager, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la publication sur YouTube]**.
-1. Appuyez sur **[!UICONTROL global]** (sans sélectionner cette option).
-
-1. Dans le coin supérieur droit de la page Global, appuyez sur **[!UICONTROL Créer]**.
-1. Sur la page Créer une configuration YouTube, sous Paramètres de plateforme Google Cloud, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
-
-   Vous avez spécifié l’ID de projet lorsque vous avez précédemment configuré les paramètres de Google Cloud.
-Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir dans un instant.
-
-   ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
-
-1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche [Configuration des paramètres de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
-1. Sélectionnez l’intégralité du texte JSON et copiez-le.
-1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Enregistrer]**.
-
-   Configurez maintenant les canaux YouTube dans Experience Manager.
-
-1. Appuyez sur **[!UICONTROL Ajouter un canal]**.
-1. Dans la boîte de dialogue Paramètres de chaîne, saisissez le nom de la chaîne que vous avez créée lors de la tâche **[!UICONTROL Ajout d’une ou plusieurs chaînes YouTube]** précédemment.
-
-   Vous pouvez éventuellement ajouter une description.
-
-1. Appuyez sur **[!UICONTROL Ajouter]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté à un compte Google Cloud, ignorez cette étape.
-
-   * Saisissez le nom d’utilisateur Google et le mot de passe associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Selon le nombre de chaînes associées à votre compte, deux éléments au moins sont affichés. Sélectionnez une chaîne. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’une chaîne.
-   * Dans la page suivante, appuyez sur **[!UICONTROL Accepter]** pour autoriser l’accès à cette chaîne.
-
-1. Appuyez sur **[!UICONTROL Autoriser]**.
-
-   Configurez maintenant des balises pour la publication.
-
-1. **[!UICONTROL Configuration de balises pour la publication]** : dans la page Services cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
-1. Appuyez sur l’icône de liste déroulante (flèche pointant vers le bas) pour afficher la liste des balises disponibles dans Experience Manager.
-1. Appuyez sur une ou plusieurs balises pour les ajouter.
-
-   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la, puis appuyez sur **[!UICONTROL X]**.
-
-1. Lorsque vous avez terminé d’ajouter les balises souhaitées, appuyez sur **[!UICONTROL Enregistrer]**.
-
-   Vous allez à présent publier des vidéos sur votre chaîne YouTube.
-
-#### Configuration de YouTube dans une version d’Experience Manager antérieure à la version 6.4 {#setting-up-youtube-in-aem-before}
-
-1. Veillez à vous connecter à votre instance Dynamic Media en tant qu’administrateur.
-
-1. Dans le coin supérieur gauche, appuyez sur le logo Experience Manager, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Déploiement]** > **[!UICONTROL Services cloud]**.
-1. Sous le titre Services tiers, appuyez sur **[!UICONTROL Configurer maintenant]** sous YouTube.
-1. Dans la boîte de dialogue Créer une configuration, saisissez un titre (obligatoire) et un nom (facultatif) dans les champs correspondants.
-1. Appuyez sur **[!UICONTROL Créer]**.
-1. Dans la boîte de dialogue Paramètres du compte YouTube, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
-
-   Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
-Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y retournerez dans quelques instants.
-
-1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche Configuration des paramètres de Google Cloud.
-1. Sélectionnez l’intégralité du texte JSON et copiez-le.
-1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
-1. Appuyez sur **[!UICONTROL OK]**.
-
-   Configurez maintenant les canaux YouTube dans Experience Manager.
-
-1. À droite des **[!UICONTROL Canaux disponibles]**, appuyez sur **+** (icône représentant un signe plus).
-1. Dans la boîte de dialogue Paramètres de chaîne YouTube, dans le champ Titre, saisissez le nom de la chaîne que vous avez créée lors de la tâche **[!UICONTROL Ajout d’une ou plusieurs chaînes YouTube]** précédemment.
-
-   Vous pouvez éventuellement ajouter une description.
-
-1. Appuyez sur **[!UICONTROL OK]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté à un compte Google Cloud, ignorez cette étape.
-
-   * Saisissez le nom d’utilisateur Google et le mot de passe associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Selon le nombre de chaînes associées à votre compte, deux éléments au moins sont affichés. Sélectionnez une chaîne. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’une chaîne.
-   * Dans la page suivante, appuyez sur **[!UICONTROL Accepter]** pour autoriser l’accès à cette chaîne.
-
-1. Appuyez sur **[!UICONTROL Autoriser]**.
-
-   Configurez maintenant des balises pour la publication.
-
-1. **[!UICONTROL Configuration de balises pour la publication]** : dans la page Services cloud > YouTube, appuyez sur l’icône en forme de crayon pour modifier la liste des balises que vous souhaitez utiliser.
-1. Appuyez sur l’icône de liste déroulante (flèche pointant vers le bas) pour afficher la liste des balises disponibles dans Experience Manager.
-1. Appuyez sur une ou plusieurs balises pour les ajouter.
-
-   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la, puis appuyez sur **X**.
-
-1. Lorsque vous avez terminé d’ajouter les balises souhaitées, appuyez sur **[!UICONTROL OK]**.
-
-   Vous allez à présent publier des vidéos sur votre chaîne YouTube.
-
-### (Facultatif) Automatisation de la définition des propriétés YouTube par défaut pour vos vidéos chargées {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
-
-Vous pouvez éventuellement automatiser la définition des propriétés YouTube lors du chargement de vos vidéos en créant un profil de traitement des métadonnées dans Experience Manager.
-
-Pour créer le profil de traitement des métadonnées, vous allez d’abord copier les valeurs des champs **[!UICONTROL Étiquette de champ]**, **[!UICONTROL Associer à la propriété]** et **[!UICONTROL Choix]**, tous situés dans les schémas de métadonnées pour la vidéo. Ensuite, vous allez créer votre propre profil de traitement des métadonnées vidéo YouTube en y ajoutant ces valeurs.
-
-Pour automatiser la définition des propriétés YouTube par défaut pour vos vidéos chargées, procédez comme suit :
-
-1. Dans le coin supérieur gauche d’Experience Manager, appuyez sur le logo d’Experience Manager, puis, dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
-1. Cliquez sur l’option **[!UICONTROL Par défaut]**. (Ne cochez pas la case de sélection à gauche de l’option « Par défaut ».)
-1. Sur la page **[!UICONTROL par défaut]**, cochez la case à gauche de **[!UICONTROL vidéo]**, puis appuyez sur **[!UICONTROL Modifier]**.
-1. Sur la page Éditeur de schéma de métadonnées, appuyez sur l’onglet **[!UICONTROL Avancé]**.
-1. Sous l’en-tête Publication YouTube, cliquez sur **[!UICONTROL Catégorie YouTube]**.
-1. Dans la partie droite de la page, sous l’onglet **[!UICONTROL Paramètres]**, procédez comme suit :
-
-   * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous aurez besoin de cette valeur lorsque vous créez le profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
-
-   * Sous **[!UICONTROL Choix]**, sélectionnez la valeur par défaut à utiliser (comme « Personnes et blogs » ou « Science et technologie ») et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous aurez besoin de cette valeur lorsque vous créez le profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
-
-1. Sous l’en-tête de Publication YouTube, appuyez sur **[!UICONTROL Confidentialité YouTube]**.
-1. Dans la partie droite de la page, sous l’onglet **[!UICONTROL Paramètres]**, procédez comme suit :
-
-   * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous aurez besoin de cette valeur lorsque vous créez le profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
-
-   * Sous **[!UICONTROL Choix]**, sélectionnez la valeur par défaut à utiliser et copiez-la. Notez que les choix sont regroupés par paires. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Par la suite, vous aurez besoin de cette valeur lorsque vous créez le profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
-
-1. Près du coin supérieur droit de la page Éditeur de schéma de métadonnées, cliquez sur **[!UICONTROL Annuler]**.
-1. Dans le coin supérieur gauche d’Experience Manager, appuyez sur le logo Experience Manager, puis, dans le rail de gauche, cliquez sur **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
-
-1. Sur la page Profils de métadonnées, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Créer]**.
-1. Dans la boîte de dialogue Ajouter un profil de métadonnées, dans le champ de texte **[!UICONTROL Titre du profil]**, saisissez le nom `YouTube Video`, puis cliquez sur **[!UICONTROL Créer]**.
-1. Sur la page Éditeur de profil de métadonnées, cliquez sur l’onglet **[!UICONTROL Avancé]**.
-1. Ajoutez les valeurs de publication YouTube copiées au profil en procédant comme suit :
-
-   * Dans la partie droite de la page, cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**.
-   * (Facultatif) Faites glisser le composant appelé **[!UICONTROL En-tête de section]** vers la gauche et déposez-le dans la zone de formulaire.
-   * (Facultatif) Cliquez sur **[!UICONTROL Libellé du champ]** pour sélectionner le composant.
-   * (Facultatif) Dans la partie droite de la page, sous l’onglet Paramètres, dans le champ de texte Libellé du champ, saisissez `YouTube Publishing`.
-   * Cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**, puis faites glisser le composant appelé **[!UICONTROL Texte à plusieurs valeurs]** et déposez-le sous l’en-tête **[!UICONTROL Publication YouTube]** que vous avez créé.
-
-   * Cliquez sur **[!UICONTROL Libellé du champ]** afin de sélectionner le composant.
-   * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
-
-1. Ajoutez les valeurs de confidentialité YouTube copiées au profil en procédant comme suit :
-
-   * Dans la partie droite de la page, cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**.
-   * (Facultatif) Faites glisser le composant appelé **[!UICONTROL En-tête de section]** vers la gauche et déposez-le dans la zone de formulaire.
-   * (Facultatif) Cliquez sur **[!UICONTROL Libellé du champ]** pour sélectionner le composant.
-   * (Facultatif) Dans la partie droite de la page, sous l’onglet Paramètres, dans le champ de texte Libellé du champ, saisissez `YouTube Privacy`.
-   * Cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**, puis faites glisser le composant appelé **[!UICONTROL Texte à plusieurs valeurs]** et déposez-le sous l’en-tête **[!UICONTROL Confidentialité YouTube]** que vous avez créé.
-
-   * Cliquez sur **[!UICONTROL Libellé du champ]** afin de sélectionner le composant.
-   * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
-
-1. Près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Enregistrer]**.
-1. Appliquez le profil des métadonnées de publication YouTube aux dossiers dans lesquels vous allez transférer des vidéos. Vous devez avoir configuré le profil des métadonnées et le profil vidéo.
-
-   Voir [Profils de métadonnées](/help/assets/metadata-config.md#metadata-profiles) et [Profils vidéo](/help/assets/video-profiles.md).
-
-### Publication de vidéos sur votre chaîne YouTube {#publishing-videos-to-your-youtube-channel}
-
-Vous devez maintenant associer les balises que vous avez précédemment ajoutées aux ressources vidéo. Ce processus permet à Experience Manager de déterminer les ressources à publier sur votre chaîne YouTube.
-
->[!NOTE]
->
->Lors de l’exécution de Dynamic Media en mode Scene7, notez que le mode de publication Immédiatement ne publie pas automatiquement sur YouTube. Lorsque le mode Scene7 de Dynamic Media est configuré, il existe deux options de publication parmi lesquelles choisir : **[!UICONTROL Immédiatement]** ou **[!UICONTROL Lors de l’activation]**.
->
->Dans le mode de publication **[!UICONTROL Immédiatement]**, la ressource téléchargée (une fois synchronisée avec IPS) est automatiquement publiée sur le système de diffusion. Cela vaut pour Dynamic Media, mais pas pour YouTube. Pour publier sur YouTube, vous devez publier par le biais d’Experience Manager Author.
-
->[!NOTE]
->
->Pour publier du contenu depuis YouTube, Experience Manager utilise le workflow **[!UICONTROL Publier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
->
->Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
->
->Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
-
-**Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :**
-
-1. Dans Experience Manager, accédez à la ressource vidéo que vous souhaitez publier sur votre chaîne YouTube.
-1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
-1. Dans l’onglet De base, sous l’en-tête Métadonnées, cliquez sur **[!UICONTROL Boîte de dialogue Ouvrir la sélection]** à droite du champ Balises.
-1. Sur la page Sélectionner des balises, accédez aux balises que vous souhaitez utiliser, puis sélectionnez-en une ou plusieurs.
-
-   N’oubliez pas que les balises doivent être associées à la chaîne YouTube.
-
-1. Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Sélectionner]**.
-1. Dans le coin supérieur droit de la page des propriétés de la vidéo, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Publication rapide]**.
-
-   Consultez également [Utilisation de la gestion de la publication avec Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=fr).
-
-   Vous avez la possibilité de vérifier la vidéo publiée sur votre chaîne YouTube.
-
-### (Facultatif) Vérification de la vidéo publiée sur YouTube {#optional-verifying-the-published-video-on-youtube}
-
-Vous pouvez si vous le souhaitez surveiller la progression de votre publication YouTube (ou sa dépublication).
-
-Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
-
-Le délai de publication peut varier considérablement en fonction de nombreux facteurs, comme le format de la vidéo source originale, la taille du fichier et le trafic de chargement. La publication peut prendre de quelques minutes à plusieurs heures. En outre, les formats de haute résolution sont rendus beaucoup plus lentement. Par exemple, les vidéos en 720p et en 1 080p prennent plus de temps à s’afficher que les vidéos en 480p.
-
-Au bout de huit heures, si un message de statut indiquant **[!UICONTROL Téléchargé (en cours de traitement, veuillez patienter)]** s’affiche toujours, essayez de supprimer la vidéo de votre site Adobe et chargez-la à nouveau.
-
-### Liaison d’URL YouTube à votre application web {#linking-youtube-urls-to-your-web-application}
-
-Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Lorsque vous copiez l’URL YouTube, elle est envoyée au Presse-Papiers dont vous pouvez coller le contenu, le cas échéant, sur les pages de votre site web ou de votre application.
-
->[!NOTE]
->
->L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
-
-**Pour lier des URL YouTube à votre application web, procédez comme suit :**
-
-1. Accédez au *YouTube publié* ressource vidéo dont vous souhaitez copier l’URL, puis sélectionnez-la.
-
-   N’oubliez pas que les URL YouTube peuvent être copiées uniquement *après* la *publication* des ressources vidéo sur YouTube.
-
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
-1. Cliquez sur l’onglet **[!UICONTROL Avancé]**.
-1. Sous l’en-tête Publication YouTube, dans la liste des URL YouTube, sélectionnez le texte de l’URL et copiez-le dans votre navigateur web pour prévisualiser la ressource ou l’ajouter à votre page de contenu web.
-
-### Dépublication de vidéos afin de les supprimer de YouTube {#unpublishing-videos-to-remove-them-from-youtube}
-
-Lorsque vous dépubliez une ressource vidéo dans Experience Manager, la vidéo est supprimée de YouTube.
-
->[!CAUTION]
->
->Si vous supprimez une vidéo directement sur YouTube, Experience Manager l’ignore et continue de se comporter comme si la vidéo était toujours publiée sur YouTube. Veillez toujours à dépublier une ressource vidéo sur YouTube via Experience Manager.
-
->[!NOTE]
->
->Pour supprimer du contenu depuis YouTube, Experience Manager utilise le processus **[!UICONTROL Dépublier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
->
->Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
-
-**Pour dépublier des vidéos afin de les supprimer de YouTube, procédez comme suit :**
-
-1. Accédez à la ressource vidéo que vous souhaitez publier sur votre chaîne YouTube.
-1. Dans un mode de sélection de ressource, sélectionnez une ou plusieurs ressources vidéo publiées.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Gérer la publication]**. Appuyez sur l’icône de points de suspension (. . .) dans la barre d’outils pour ouvrir **[!UICONTROL Gérer la publication]**.
-1. Sur la page Gérer la publication, appuyez sur **[!UICONTROL Annuler la publication]**.
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Suivant]**.
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Annuler la publication]**.
-
-## Surveillance du codage vidéo et de la progression de la publication sur YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
-
-Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage vidéo a été appliqué ou que vous publiez votre vidéo sur YouTube, vous pouvez contrôler la manière dont votre codage vidéo/publication YouTube progresse. La progression réelle de la publication YouTube n’est disponible que dans les journaux. Cependant, son échec ou son succès sont répertoriés de différentes manières décrites dans la procédure suivante. En outre, vous recevez des notifications par e-mail lorsqu’un workflow de publication YouTube ou un codage vidéo est terminé ou interrompu.
-
-### Surveillance de la progression {#monitoring-progress}
-
-1. Consultez la progression du codage vidéo dans votre dossier de ressources :
-
-   * En mode Carte, la progression du codage vidéo s’affiche sur la ressource en pourcentage. Si une erreur se produit, ces informations s’affichent également sur cette ressource.
-
-   ![chlimage_1-429](assets/chlimage_1-429.png)
-
-   * En mode Liste, la progression du codage vidéo s’affiche dans la colonne **[!UICONTROL État du traitement]**. Si une erreur se produit, le message suivant s’affiche dans la même colonne.
-
-   ![chlimage_1-430](assets/chlimage_1-430.png)
-
-   Cette colonne ne s’affiche pas par défaut. Pour activer la colonne, sélectionnez l’option **[!UICONTROL Paramètres d’affichage]** dans le menu contextuel des affichages et ajoutez la colonne **[!UICONTROL État du traitement]** et appuyez ou cliquez sur **[!UICONTROL Mettre à jour]**.
-
-   ![chlimage_1-431](assets/chlimage_1-431.png)
-
-1. Consultez la progression dans les détails de la ressource. Lorsque vous appuyez ou cliquez sur une ressource, ouvrez le menu contextuel et sélectionnez **[!UICONTROL Chronologie]**. Pour le réduire à des activités de processus comme le codage ou la publication YouTube, sélectionnez **[!UICONTROL Processus]**.
-
-   ![chlimage_1-432](assets/chlimage_1-432.png)
-
-   Toutes les informations sur le workflow, telles que le codage, s’affichent dans le journal. Pour la publication YouTube, la chronologie du workflow comprend également le nom de la chaîne YouTube et l’URL de la vidéo YouTube. En outre, une fois la publication terminée, les notifications d’échec s’affichent dans la chronologie du workflow.
-
-   >[!NOTE]
-   >
-   >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
-   >
-   >    * Configuration de la file d’attente des tâches Apache Sling
-   >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
-   >    * File d’attente des délais d’attente des processus Granite
-
-   >
-   >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
-
-1. Pour les workflows en cours, consultez les instances de workflow disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Instances]**.
-
-   >[!NOTE]
-   >
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
-
-   ![chlimage_1-433](assets/chlimage_1-433.png)
-
-   Sélectionnez l’instance et appuyez sur **[!UICONTROL Ouvrir l’historique]**.
-
-   ![chlimage_1-434](assets/chlimage_1-434.png)
-
-   Depuis la section instances de workflow, vous pouvez également suspendre, arrêter ou renommer les workflows. Voir [Administration des workflows](/help/sites-administering/workflows-administering.md) pour plus d’informations.
-
-1. Pour les tâches qui ont échoué, consultez la section Échecs des processus disponible sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Échecs]**. L’**[!UICONTROL échec du processus]** répertorie toutes les activités du processus ayant échoué.
-
-   >[!NOTE]
-   >
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
-
-   ![chlimage_1-435](assets/chlimage_1-435.png)
-
-   >[!NOTE]
-   >
-   >L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
-   >
-   >
-   >
-   >    * Configuration de la file d’attente des tâches Apache Sling
-   >    * Gestionnaire des tâches du processus externe de processus Adobe Granite
-   >    * File d’attente des délais d’attente des processus Granite
-
-   >
-   >
-   >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
-
-1. Pour les workflows terminés, consultez l’archive de workflow sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Archive]**. La liste **[!UICONTROL Archive de workflow]** répertorie toutes les activités de workflow qui ont réussi.
-
-   >[!NOTE]
-   >
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
-
-   ![chlimage_1-436](assets/chlimage_1-436.png)
-
-1. Vous recevez des notifications par courrier électronique sur les tâches de processus annulées ou qui ont échoué. Ces notifications peuvent être configurées par un administrateur. Voir [Configuration des notifications par e-mail](#configuring-e-mail-notifications).
-
-#### Configuration des notifications par e-mail {#configuring-e-mail-notifications}
-
->[!NOTE]
->
->Vous aurez peut-être besoin de droits d’administration pour accéder au menu **[!UICONTROL Outils]**.
-
-La façon dont vous configurez les notifications varie si vous souhaitez recevoir des notifications pour les tâches de codage ou pour les tâches de publication YouTube :
-
-* Pour les tâches de codage, vous pouvez accéder à la page Configuration pour toutes les notifications par e-mail des processus Experience Manager sous **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**, puis en recherchant **[!UICONTROL Service de notification par e-mail des workflows Day CQ]**. Consultez la section [Configuration des notifications par e-mail dans Experience Manager](/help/sites-administering/notification.md). Vous pouvez cocher ou décocher les cases de l’option **[!UICONTROL Envoyer une notification pour les tâches arrêtées]** ou **[!UICONTROL Envoyer une notification pour les tâches terminées]**.
-
-* Pour les tâches de publication YouTube, procédez comme suit :
-
-1. Dans Experience Manager, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
-1. Sur la page Modèles de processus, sélectionnez **[!UICONTROL Publier sur YouTube]**, puis appuyez sur **[!UICONTROL Modifier]** dans la barre d’outils.
-1. Dans le coin supérieur droit du processus Publier vers YouTube, appuyez sur **[!UICONTROL Modifier]**.
-1. Pointez sur le composant Chargement YouTube, puis appuyez une fois pour afficher la barre d’outils intégrée.
-
-   ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
-
-1. Sur la barre d’outils intégrée, appuyez sur l’icône Configuration (en forme de clé). Cliquez sur l’onglet **[!UICONTROL Arguments]**.
-
-   ![6_5_publishtoyoutubeworkflow-configurationicon](assets/6_5_publishtoyoutubeworkflow-configurationicon.png)
-
-1. Dans la boîte de dialogue Processus de chargement sur YouTube – Propriétés des étapes, appuyez sur l’onglet **[!UICONTROL Arguments]**.
-
-   ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
-
-1. Vous pouvez cocher ou décocher les cases suivantes :
-
-   * Début de la publication
-   * Échec de la publication
-   * Publication terminée – comprend des informations sur les chaînes et les URL
-
-   Décocher une case signifie que vous ne recevrez pas de notifications par e-mail spécifiques au workflow de publication YouTube.
-
-   >[!NOTE]
-   >
-   >Ces e-mails sont spécifiques à YouTube et sont un complément aux notifications électroniques génériques des workflows. Par conséquent, vous pouvez recevoir deux ensembles de notifications électroniques : une notification générique disponible dans le **[!UICONTROL Service de notification par e-mail des workflows Day CQ]** et une notification spécifique à YouTube, en fonction de vos paramètres de configuration.
-
-1. Une fois que vous avez terminé, en haut à droite de la boîte de dialogue, appuyez sur l’icône **[!UICONTROL Terminé]** (coche).
-1. Sur la page du workflow Publier sur YouTube, en haut à droite, appuyez sur **[!UICONTROL Synchroniser]**.
-
 ## Affichage des rapports vidéo {#viewing-video-reports}
 
 >[!NOTE]
@@ -1023,7 +480,7 @@ Les rapports vidéo affichent plusieurs mesures agrégées sur une heure spécif
 
 * Lancements de vidéo
 * Taux d’achèvement
-* Temps moyen sur la vidéo
+* Durée moyenne de la vidéo
 * Durée totale sur la vidéo
 * Vidéos par visite
 
@@ -1037,7 +494,7 @@ Consultez également la section [Configuration des Services cloud Dynamic Media
 
 >[!NOTE]
 >
->Le suivi et les données de création de rapports reposent exclusivement sur l’utilisation du lecteur vidéo de Dynamic Media et du paramètre prédéfini du lecteur vidéo associé. Par conséquent, vous ne pouvez pas effectuer le suivi et créer de rapports sur les vidéos lues par d’autres lecteurs vidéo.
+>Le suivi et les données de création de rapports reposent exclusivement sur l’utilisation du lecteur vidéo de Dynamic Media et du paramètre prédéfini du lecteur vidéo associé. Vous ne pouvez donc pas effectuer le suivi et créer de rapports sur des vidéos qui sont lues par d’autres lecteurs vidéo.
 
 Par défaut, la première fois que vous utilisez l’option Rapports vidéo, le rapport affiche des données vidéo du premier jour du mois en cours jusqu’à la date du mois en cours. Vous pouvez toutefois remplacer la période par défaut par la vôtre. La prochaine fois que vous utiliserez l’option Rapports vidéo, la période que vous avez spécifiée sera utilisée.
 
@@ -1066,7 +523,7 @@ Utilisez le [guide de référence des visionneuses Dynamic Media](https://exper
 
 **Pour afficher des rapports vidéo reposant sur une visionneuse de vidéos créée à l’aide du SDK de visionneuse HTML5 Dynamic Media, procédez comme suit :**
 
-1. Accédez à une ressource vidéo publiée.
+1. Accédez à n’importe quelle ressource vidéo publiée.
 1. Près du coin supérieur gauche de la page du fichier, sélectionnez **[!UICONTROL Visionneuses]** dans la liste déroulante.
 1. Sélectionnez un paramètre prédéfini de visionneuse de vidéos et copiez le code intégré.
 1. Dans le code intégré, recherchez la ligne suivante :
@@ -1123,7 +580,7 @@ Utilisez le [guide de référence des visionneuses Dynamic Media](https://exper
 
 ## Ajout de légendes ou de sous-titres à la vidéo {#adding-captions-to-video}
 
-Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des légendes aux vidéos ou aux visionneuses de vidéos adaptatives. L’ajout de sous-titres codés vous évite d’avoir à dupliquer l’audio ou d’utiliser des locuteurs natifs pour enregistrer le son dans chaque langue. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langue étrangère s’affichent pour que les personnes parlant d’autres langues puissent néanmoins comprendre la partie audio.
+Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des légendes aux vidéos ou aux visionneuses de vidéos adaptatives. L’ajout de sous-titres codés vous évite d’avoir à dupliquer l’audio ou d’utiliser des locuteurs natifs pour enregistrer le son dans chaque langue. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langues étrangères s’affichent afin que les personnes de différentes langues puissent toujours comprendre la partie audio.
 
 Les légendes permettent également une plus grande accessibilité pour les personnes sourdes ou malentendantes.
 
@@ -1133,27 +590,27 @@ Les légendes permettent également une plus grande accessibilité pour les pers
 
 Consultez également la section [Accessibilité dans Dynamic Media](/help/assets/accessibility-dm.md).
 
-Dynamic Media convertit les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
+Dynamic Media convertit les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour faciliter la découverte des vidéos et donner aux clients des détails supplémentaires sur le contenu vidéo.
 
 Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, reportez-vous à la section [Service de contenu statique (hors images)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) dans l’*Aide de l’API de service et de rendu d’images de Dynamic Media*.
 
 **Pour ajouter des sous-titres à une vidéo :**
 
-1. Utilisez une application tierce ou un service de création de fichiers de sous-titres de vidéo.
+1. Utilisez une application ou un service tiers pour créer votre fichier de légende/sous-titre vidéo.
 
-   Assurez-vous que le fichier que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de fichier des fichiers de sous-titres est .vtt. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
+   Assurez-vous que le fichier que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de sous-titrage est .vtt. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
 
    Reportez-vous à la section [WebVTT : The web video text tracks format](https://w3c.github.io/webvtt/).
 
-   Il existe des outils et des services gratuits et payants que vous pouvez utiliser pour créer les fichiers de sous-titres en dehors de Dynamic Media. Par exemple, pour créer un fichier de sous-titres vidéo simple sans style, vous pouvez utiliser l’outil de création et de modification de sous-titres en ligne gratuit suivant :
+   Il existe des outils et des services gratuits et Premium que vous pouvez utiliser pour créer des fichiers de sous-titres ou de sous-titres en dehors de Dynamic Media. Par exemple, pour créer un fichier de sous-titres vidéo simple sans style, vous pouvez utiliser l’outil de création et de modification de sous-titres en ligne gratuit suivant :
 
    [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   Pour de meilleurs résultats, utilisez cet outil dans Internet Explorer 9 ou version ultérieure, dans Google Chrome ou Safari.
+   Pour de meilleurs résultats, utilisez l’outil dans Internet Explorer 9 ou version ultérieure, Google Chrome ou Safari.
 
    Dans l’outil, dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**, collez l’URL copiée de votre fichier vidéo, puis cliquez sur **[!UICONTROL Charger]**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**. Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
 
-   À présent, suivez les instructions à l’écran du site pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
+   Suivez maintenant les instructions à l’écran du site pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
 
    >[!NOTE]
    >
@@ -1268,13 +725,13 @@ Une miniature vidéo est une version en taille réduite d’une image vidéo ou 
 
 Toutes les vidéos dans Experience Manager doivent être associées à une miniature. Vous ne pouvez pas supprimer une miniature sans la remplacer. Par défaut, lorsque vous chargez une vidéo sur Experience Manager, la première image est utilisée comme miniature. Cependant, vous pouvez personnaliser la miniature à des fins de valorisation de marque ou de recherche visuelle, par exemple. Lorsque vous personnalisez une miniature vidéo, vous pouvez lire la vidéo et la mettre en pause sur l’image que vous souhaitez utiliser. Vous pouvez également sélectionner une ressource d’image que vous avez déjà chargée et *publiée* dans votre gestionnaire de ressources numériques.
 
-Une image de miniature vidéo personnalisée que vous sélectionnez dans une vidéo n’est pas extraite et enregistrée dans la gestion des ressources numériques sous la forme d’une ressource séparée et distincte. Toutefois, une miniature vidéo personnalisée que vous sélectionnez dans une ressource d’image existante est enregistrée dans le JCR. Le chemin d’accès de la ressource sélectionnée est stocké sous le nœud de la ressource vidéo, comme dans l’exemple suivant :
+Une image de miniature vidéo personnalisée que vous sélectionnez dans une vidéo n’est pas extraite et enregistrée dans la gestion des ressources numériques sous la forme d’une ressource séparée et distincte. Toutefois, une miniature vidéo personnalisée que vous sélectionnez dans une ressource d’image existante est enregistrée dans le JCR. Le chemin d’accès de la ressource sélectionnée est stocké sous le noeud de la ressource vidéo, comme dans l’exemple de chemin d’accès suivant :
 
 `/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
 
-Vous ne pouvez personnaliser une miniature vidéo qu’après avoir appliqué un profil vidéo au dossier dans lequel se trouve la vidéo.
+La possibilité de personnaliser une miniature vidéo n’est disponible qu’après avoir appliqué un profil vidéo au dossier où se trouve la vidéo.
 
-Voir aussi [À propos des miniatures vidéo dans le mode Hybride de Dynamic Media](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
+Voir aussi [A propos des miniatures vidéo dans Dynamic Media - mode hybride](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
 ### Ajout d’une miniature vidéo personnalisée {#adding-a-custom-video-thumbnail}
 
@@ -1282,41 +739,41 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode �
 
 **Pour ajouter une miniature vidéo personnalisée, procédez comme suit :**
 
-1. vérifiez que vous avez déjà :
+1. Assurez-vous que vous avez déjà effectué les opérations suivantes :
 
-   * créé un dossier pour vos ressources vidéo ;
+   * Création d’un dossier pour vos ressources vidéo.
    * [attribué un profil vidéo au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) ;
 
-   * [téléchargé vos vidéos dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+   * [Chargement des vidéos dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-1. Accédez à une ressource vidéo téléchargée dont vous souhaitez changer l’image miniature.
-1. Dans l’un des modes de sélection des ressources (mode **[!UICONTROL Liste]** ou **[!UICONTROL Carte]**), appuyez sur la ressource vidéo.
-1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Propriétés]** (icône en forme de cercle avec un « i » à l’intérieur).
+1. Accédez à une ressource vidéo chargée dont vous souhaitez modifier l’image miniature.
+1. En mode de sélection de ressources, soit **[!UICONTROL Mode Liste]** ou **[!UICONTROL Mode Carte]**, appuyez sur la ressource vidéo.
+1. Dans la barre d’outils, appuyez sur la **[!UICONTROL Propriétés]** icône (cercle contenant un &quot;i&quot;).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature]**.
-1. Sur la page Modifier la miniature, effectuez l’une des opérations suivantes :
+1. Sur la page Modifier la miniature, effectuez l’une des opérations suivantes :
 
-   * Pour utiliser une image de la vidéo comme nouvelle miniature :
+   * Pour utiliser une image de la vidéo comme nouvelle miniature :
 
-      * Sur la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une image dans la vidéo]**.
+      * Dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une image dans la vidéo]**.
       * Appuyez sur le bouton Lecture, puis sur le bouton Pause sur l’image à capturer comme nouvelle miniature de la vidéo.
-   * Pour utiliser une ressource d’image comme nouvelle miniature :
+   * Pour utiliser une ressource image comme nouvelle miniature :
 
-      * Sur la barre d’outils, appuyez sur **[!UICONTROL Sélectionner la miniature dans les ressources]**.
-      * Appuyez sur **[!UICONTROL Sélectionner la miniature]**.
+      * Dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une miniature dans Assets]**.
+      * Appuyer **[!UICONTROL Sélectionner la miniature]**.
       * Accédez à une ressource d’image précédemment chargée et publiée que vous souhaitez utiliser. La ressource est automatiquement redimensionnée afin de servir d’image miniature pour la vidéo.
-      * Sélectionnez la ressource d’image, puis appuyez sur **[!UICONTROL Sélectionner]**.
+      * Sélectionnez la ressource image, puis appuyez sur **[!UICONTROL Sélectionner]**.
 
 
 1. Sur la page Modifier la miniature, appuyez sur **[!UICONTROL Enregistrer la modification]**.
-1. Sur la page Propriétés de la vidéo, en haut à droite, appuyez sur **[!UICONTROL Enregistrer et Fermer]**.
+1. Sur la page Propriétés de la vidéo, dans le coin supérieur droit, appuyez sur **[!UICONTROL Enregistrer et fermer]**.
 
-## À propos des miniatures vidéo dans le mode Hybride de Dynamic Media {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+## A propos des miniatures vidéo dans Dynamic Media - mode hybride {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
 Vous pouvez choisir l’une des dix images miniatures générées automatiquement par Dynamic Media pour l’ajouter à votre vidéo. Le lecteur vidéo affiche votre miniature sélectionnée lorsqu’une ressource vidéo est utilisée avec le composant Dynamic Media dans l’environnement de création d’Experience Manager Sites, Experience Manager Mobile ou Experience Manager Screens. La miniature sert d’image statique pour représenter au mieux le contenu de votre vidéo complète et encourage davantage les utilisateurs à cliquer sur le bouton Lecture.
 
-En fonction de la durée totale de la vidéo, Dynamic Media capture dix images miniatures (par défaut). Les images sont capturées à 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % et 91 % dans la vidéo. Les dix miniatures restent, ce qui signifie que si vous décidez de sélectionner une miniature différente ultérieurement, vous n’avez pas besoin de générer de nouveau une série de miniatures. Vous prévisualisez les dix images miniatures, puis choisissez celle que vous souhaitez utiliser pour votre vidéo. Si vous souhaitez modifier cette option par défaut, vous pouvez utiliser CRXDE Lite pour configurer l’intervalle pour lequel les miniatures sont générées. Par exemple, si vous souhaitez uniquement générer une série de quatre miniatures également espacées dans votre vidéo, vous pouvez configurer l’intervalle à 24 %, 49 %, 74 % et 99 %.
+En fonction de la durée totale de la vidéo, Dynamic Media capture dix images miniatures (par défaut). Les images sont capturées à 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % et 91 % dans la vidéo. Les dix miniatures restent, ce qui signifie que si vous décidez de sélectionner une miniature différente ultérieurement, vous n’avez pas besoin de générer de nouveau une série de miniatures. Vous prévisualisez les dix images miniatures, puis choisissez celle que vous souhaitez utiliser pour votre vidéo. Si vous souhaitez modifier cette option par défaut, vous pouvez utiliser CRXDE Lite pour configurer l’intervalle pour lequel les miniatures sont générées. Par exemple, si vous souhaitez uniquement générer une série de quatre miniatures à espacement égal à partir de votre vidéo, vous pouvez configurer l’intervalle à 24 %, 49 %, 74 % et 99 %.
 
-Dans l’idéal, vous pouvez ajouter une miniature de vidéo à tout moment après avoir chargé votre vidéo, mais avant de la publier sur votre site web.
+Idéalement, vous pouvez ajouter une miniature vidéo à tout moment après avoir téléchargé votre vidéo, mais avant de la publier sur votre site web.
 
 Si vous préférez, vous pouvez charger une miniature personnalisée pour représenter votre vidéo au lieu d’en utiliser une générée par Dynamic Media. Par exemple, vous pouvez créer une miniature personnalisée qui porte le titre de votre vidéo, une image d’ouverture attrayante ou une image bien spécifique capturée dans votre vidéo. L’image de vidéo personnalisée que vous chargez doit avoir une résolution maximale de 1280 x 720 pixels (largeur minimale de 640 pixels) et ne pas dépasser 2 Mo.
 
@@ -1329,17 +786,17 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode h
 **Pour ajouter une miniature vidéo, procédez comme suit :**
 
 1. Accédez à une ressource vidéo téléchargée à laquelle vous souhaitez ajouter une miniature.
-1. Dans un des modes de sélection des ressources (mode Liste ou Carte), appuyez sur la ressource vidéo.
-1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** (icône en forme de cercle avec un « i » à l’intérieur).
+1. En mode de sélection des ressources, en mode Liste ou Carte, appuyez sur la ressource vidéo.
+1. Dans la barre d’outils, appuyez sur la **[!UICONTROL Afficher les propriétés]** icône (cercle contenant un &quot;i&quot;).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature]**.
-1. Sur la page Modifier la miniature, dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner l’image]**.
+1. Sur la page Modifier la miniature, dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une image]**.
 
    Dynamic Media génère une série de miniatures de votre vidéo, en fonction de l’intervalle par défaut ou personnalisé.
 
-1. Prévisualisez les miniatures générées, puis sélectionnez celle que vous souhaitez ajouter à votre vidéo.
-1. Appuyez sur **[!UICONTROL Enregistrer la modification]**.
+1. Prévisualisez les images miniatures générées, puis sélectionnez celle que vous souhaitez ajouter à votre vidéo.
+1. Appuyer **[!UICONTROL Enregistrer la modification]**.
 
-   La miniature de la vidéo est mise à jour afin d’utiliser la miniature que vous avez sélectionnée. Si vous décidez par la suite de modifier la miniature, vous pouvez revenir sur la page **[!UICONTROL Modifier la miniature]** et en sélectionner une autre.
+   La miniature de la vidéo est mise à jour afin d’utiliser la miniature que vous avez sélectionnée. Si vous décidez par la suite de modifier la miniature, vous pouvez revenir au **[!UICONTROL Modifier la miniature]** et sélectionnez-en une nouvelle.
 
    Si vous avez configuré des intervalles par défaut ou si vous avez chargé une nouvelle vidéo pour remplacer la vidéo existante, vous devrez générer de nouveau des miniatures via Dynamic Media.
 
@@ -1347,7 +804,7 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode h
 
 #### Configuration de l’intervalle par défaut pour la génération des miniatures de vidéo {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
-Lorsque vous configurez et enregistrez le nouvel intervalle par défaut, votre modification s’applique automatiquement et uniquement aux vidéos que vous chargerez par la suite. Il n’applique pas automatiquement le nouveau paramètre par défaut aux vidéos que vous avez précédemment chargées. Pour les vidéos existantes, vous devez de nouveau générer les miniatures.
+Lorsque vous configurez et enregistrez le nouvel intervalle par défaut, votre modification s’applique automatiquement et uniquement aux vidéos que vous chargerez par la suite. Il n’applique pas automatiquement le nouveau paramètre par défaut aux vidéos que vous avez précédemment chargées. Pour les vidéos existantes, vous devez régénérer les miniatures.
 
 Consultez la section [Ajout d’une miniature de vidéo](#adding-a-video-thumbnail).
 
@@ -1378,12 +835,12 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode h
 **Pour ajouter une miniature vidéo personnalisée, procédez comme suit :**
 
 1. Accédez à une ressource vidéo chargée à laquelle vous souhaitez ajouter une miniature vidéo personnalisée.
-1. Dans un des modes de sélection des ressources (mode Liste ou Carte), appuyez sur la ressource vidéo.
-1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** (icône en forme de cercle avec un « i » à l’intérieur).
+1. En mode de sélection des ressources, en mode Liste ou Carte, appuyez sur la ressource vidéo.
+1. Dans la barre d’outils, appuyez sur la **[!UICONTROL Afficher les propriétés]** icône (cercle contenant un &quot;i&quot;).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature]**.
 1. Sur la page Modifier la miniature, dans la barre d’outils, appuyez sur **[!UICONTROL Charger une nouvelle miniature]**.
 1. Accédez à une miniature que vous souhaitez utiliser, sélectionnez-la, puis appuyez sur **[!UICONTROL Ouvrir]** pour commencer à charger l’image dans Experience Manager. Après le téléchargement, veillez à publier l’image.
-1. Après avoir téléchargé et publié l’image, sur la page Modifier la miniature, appuyez sur **[!UICONTROL Enregistrer les modifications]**.
+1. Une fois l’image téléchargée et publiée, sur la page Modifier la miniature, appuyez sur **[!UICONTROL Enregistrer les modifications]**.
 
    La miniature personnalisée est ajoutée à votre vidéo.
 
