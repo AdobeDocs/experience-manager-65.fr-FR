@@ -19,7 +19,7 @@ ht-degree: 43%
 
 # Créer et gérer des tests A/B pour les formulaires adaptatifs{#create-and-manage-a-b-test-for-adaptive-forms}
 
-|Négatifs|[!BADGE Arrêt]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."}
+|Négatifs|[!BADGE Arrêt]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."}|
 <div class="preview"> Le test A/B pour la fonctionnalité de formulaires adaptatifs a atteint la fin de vie et n’est plus pris en charge. </div>
 
 ## Présentation {#overview-br}
