@@ -12,10 +12,10 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '6065'
-ht-degree: 40%
+source-wordcount: '6053'
+ht-degree: 39%
 
 ---
 
@@ -138,9 +138,9 @@ La création d’un contrôle de l’intégrité individuel comprend deux étape
 
 ### Création d’un contrôle de l’intégrité composite {#creating-a-composite-health-check}
 
-Le rôle d’un contrôle de l’intégrité composite est d’agréger plusieurs contrôles de l’intégrité individuels partageant un ensemble de fonctionnalités communes. Par exemple, le contrôle de l’intégrité composite de sécurité regroupe tous les contrôles d’intégrité individuels qui effectuent des vérifications liées à la sécurité. La première étape pour créer un contrôle composite consiste à ajouter une configuration OSGI. Pour qu’il s’affiche dans le tableau de bord des opérations, un nouveau noeud de configuration doit être ajouté, de la même manière que pour une vérification simple.
+Le rôle d’un contrôle de l’intégrité composite est d’agréger plusieurs contrôles de l’intégrité individuels partageant un ensemble de fonctionnalités communes. Par exemple, le contrôle de l’intégrité composite de sécurité regroupe tous les contrôles d’intégrité individuels qui effectuent des vérifications liées à la sécurité. La première étape pour créer un contrôle composite consiste à ajouter une configuration OSGI. Pour qu’il s’affiche dans le tableau de bord des opérations, un nouveau noeud de configuration doit être ajouté de la même manière qu’une vérification simple.
 
-1. Accédez au gestionnaire de configuration web dans la console OSGi. Vous pouvez effectuer cette opération à en accédant à `https://serveraddress:port/system/console/configMgr`.
+1. Accédez au gestionnaire de configuration web dans la console OSGi. Accédez à l’adresse `https://serveraddress:port/system/console/configMgr`
 1. Recherchez l’entrée **Apache Sling Composite Health Check**. Une fois que vous l’avez trouvé, deux configurations sont déjà disponibles : une pour les contrôles système et une autre pour les contrôles de sécurité.
 1. Créez une configuration en appuyant sur le bouton &quot;+&quot; sur le côté droit de la configuration. Une nouvelle fenêtre s’affiche, comme illustré ci-dessous :
 
@@ -153,7 +153,7 @@ Le rôle d’un contrôle de l’intégrité composite est d’agréger plusieur
    * **Nom (hc.name) :** nom du contrôle de l’intégrité composite. Un nom significatif est recommandé.
    * **Balises (hc.tags) :** balises de ce contrôle de l’intégrité. Si ce contrôle de l’intégrité composite est destiné à faire partie d’un autre contrôle de l’intégrité composite (dans une hiérarchie de contrôles de l’intégrité, par exemple), ajoutez les balises auxquelles ce contrôle composite est associé.
    * **Nom du MBean (hc.mbean.name) :** Nom du MBean Mbean fourni au MBean JMX de ce contrôle de l’intégrité composite.
-   * **Filtrer les balises (filter.tags) :** La propriété spécifique aux contrôles d’intégrité composites. Ce sont les balises que le contrôle composite doit agréger. Le contrôle de l’intégrité composite agrège sous son groupe tous les contrôles de l’intégrité qui ont une balise qui correspond à l’une des balises de filtre de ce contrôle composite. Par exemple, un contrôle d’intégrité composite comportant les balises de filtre **test** et **check**, agrège tous les contrôles de l’intégrité individuels et composites qui ont l’une des fonctions **test** et **check** balises dans leur propriété de balises ( `hc.tags`).
+   * **Filtrer les balises (filter.tags) :** La propriété spécifique aux contrôles d’intégrité composites. Ces balises sont agrégées par le composite. Le contrôle de l’intégrité composite agrège sous son groupe tous les contrôles de l’intégrité qui ont une balise qui correspond à l’une des balises de filtre de ce contrôle composite. Par exemple, un contrôle d’intégrité composite comportant les balises de filtre **test** et **check**, agrège tous les contrôles de l’intégrité individuels et composites qui ont l’une des fonctions **test** et **check** balises dans leur propriété de balises ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -180,7 +180,7 @@ Le rôle d’un contrôle de l’intégrité composite est d’agréger plusieur
 
    >[!NOTE]
    >
-   >Si vous créez des contrôles d’intégrité individuels qui appartiennent logiquement à un contrôle composite qui est déjà présent par défaut dans le tableau de bord, ils sont automatiquement capturés et regroupés sous le contrôle composite correspondant. Pour cette raison, il n’est pas nécessaire de créer un noeud de configuration pour ces contrôles.
+   >Si vous créez des contrôles d’intégrité individuels qui appartiennent logiquement à un contrôle composite qui est déjà présent par défaut dans le tableau de bord, ils sont automatiquement capturés et regroupés sous le contrôle composite correspondant. Il n’est donc pas nécessaire de créer un noeud de configuration pour ces contrôles.
    >
    >Par exemple, si vous créez un contrôle d’intégrité de sécurité individuel, affectez-lui le **sécurité**&quot; et il est installé. Il apparaît automatiquement sous le contrôle composite de sécurité dans le tableau de bord des opérations.
 
@@ -308,11 +308,11 @@ Le rôle d’un contrôle de l’intégrité composite est d’agréger plusieur
   </tr>
   <tr>
    <td>Vérification du cache du code</td>
-   <td><p>Il s’agit d’un contrôle de l’intégrité qui vérifie plusieurs conditions JVM pouvant déclencher un bogue CodeCache présent dans Java 7 :</p>
+   <td><p>Un contrôle de l’intégrité qui vérifie plusieurs conditions JVM pouvant déclencher un bogue CodeCache présent dans Java™ 7 :</p>
     <ul>
-     <li>renvoie "Avertir" si l’instance est en cours d’exécution sur Java 7, avec la purge du cache de code activée.</li>
-     <li>renvoie "Avertissement" si l’instance est en cours d’exécution sur Java 7 et que la taille du cache du code réservé est inférieure à un seuil minimum (la valeur par défaut est 90 Mo).</li>
-    </ul> <p>Le seuil <code>minimum.code.cache.size</code> est configurable. Pour plus d’informations sur ce bogue, <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">consultez cette page</a>.</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>renvoie "Avertir" si l’instance est en cours d’exécution sur Java™ 7, avec la purge du cache de code activée.</li>
+     <li>renvoie "Avertissement" si l’instance est en cours d’exécution sur Java™ 7 et que la taille du cache du code réservé est inférieure à un seuil minimum (la valeur par défaut est 90 Mo).</li>
+    </ul> <p>Le seuil <code>minimum.code.cache.size</code> est configurable. Pour plus d’informations sur le bogue, voir <a href="https://bugs.java.com/bugdatabase/"> puis effectuez une recherche sur l’ID de bogue 8012547</a>.</p> <p>Le MBean de ce contrôle de l’intégrité est <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Erreurs de chemin de recherche des ressources</td>
@@ -629,7 +629,7 @@ Vous pouvez planifier la tâche de maintenance Purge de version pour supprimer a
 
 ## Tâches de maintenance personnalisées {#custom-maintenance-tasks}
 
-Les tâches de maintenance personnalisées peuvent être mises en œuvre sous forme de services OSGi. Lorsque l’infrastructure des tâches de maintenance repose sur le traitement des tâches Apache Sling, une tâche de maintenance doit mettre en œuvre l’interface Java ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. De plus, pour être détectée comme tâche de maintenance, elle doit déclarer différentes propriétés d’enregistrement de service, comme indiqué ci-dessous :
+Les tâches de maintenance personnalisées peuvent être mises en œuvre sous forme de services OSGi. Comme l’infrastructure des tâches de maintenance est basée sur la gestion des tâches d’Apache Sling, une tâche de maintenance doit mettre en oeuvre l’interface Java™ ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. De plus, pour être détectée comme tâche de maintenance, elle doit déclarer différentes propriétés d’enregistrement de service, comme indiqué ci-dessous :
 
 <table>
  <tbody>
@@ -766,7 +766,7 @@ Vous pouvez également télécharger un `JSON` pour résumer les informations du
    <td>Système</td>
    <td>
     <ul>
-     <li>Système d’exploitation et version du système d’exploitation (par exemple, Mac OS X)</li>
+     <li>Système d’exploitation et version du système d’exploitation (par exemple, macOS X)</li>
      <li>Charge moyenne du système, extraite de <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
      <li>espace disque (sur la partition où se trouve le répertoire racine)</li>
      <li>Nombre maximal de segments de mémoire, renvoyé par <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
