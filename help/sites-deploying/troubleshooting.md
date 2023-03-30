@@ -1,7 +1,7 @@
 ---
 title: Résolution des problèmes
 seo-title: Troubleshooting
-description: Cet article aborde certains des problèmes d’installation pouvant survenir avec AEM.
+description: Cet article traite de certains des problèmes d’installation que vous pouvez rencontrer avec AEM.
 seo-description: This article covers some of the installation issues you might encounter with AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
@@ -10,22 +10,22 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 14%
 
 ---
 
 # Résolution des problèmes{#troubleshooting}
 
-Cette section comprend des informations détaillées sur les journaux qui vous permettent de résoudre les problèmes éventuels. Elle contient également des informations sur les problèmes que vous pouvez rencontrer avec AEM.
+Cette section comprend des informations détaillées sur les journaux disponibles pour vous aider à résoudre les problèmes et inclut également des informations sur certains des problèmes que vous pouvez rencontrer avec AEM.
 
-## Dépannage des performances d’auteur {#troubleshoot-author-performance}
+## Résolution des problèmes de performances de création {#troubleshoot-author-performance}
 
-L’analyse de la lenteur de la performance sur l’instance de création peut s’avérer compliquée. Il est tout d’abord nécessaire d’identifier sur quel niveau de la pile technologique la performance décroît.
+L’analyse des performances lentes sur l’instance de création peut devenir complexe. Dans un premier temps, il est nécessaire de déterminer à quel niveau de la pile technologique les performances diminuent.
 
-L’arborescence décisionnelle suivante fournit les directives nécessaires pour réduire le goulet d’étranglement.
+L’arbre de décision suivant fournit des conseils pour réduire le goulot d’étranglement.
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -35,47 +35,47 @@ L’arborescence décisionnelle suivante fournit les directives nécessaires pou
 
 ## Configuration des fichiers journaux et des journaux d’audit {#configuring-log-files-and-audit-logs}
 
-AEM enregistre des journaux détaillés que vous souhaiterez peut-être configurer pour résoudre les problèmes d’installation. Pour plus d’informations, consultez la section [Utilisation des enregistrements d’audit et des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
+AEM enregistre les journaux détaillés que vous pouvez configurer pour résoudre les problèmes d’installation. Pour plus d’informations, consultez la section [Utilisation des enregistrements d’audit et des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Utilisation de l’option d’informations détaillées (Verbose) {#using-the-verbose-option}
 
 Lorsque vous démarrez la gestion de contenu web AEM, vous pouvez ajouter l’option -v (verbose) à la ligne de commande, comme suit : java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
-L’option d’informations détaillées affiche une partie de la sortie du journal Quickstart sur la console. Elle peut donc être utilisée pour le dépannage.
+L’option verbose affiche une partie de la sortie du journal de démarrage rapide sur la console afin de pouvoir l’utiliser pour la résolution des problèmes.
 
 ## Problèmes d’installation courants {#common-installation-issues}
 
-La section ci-après décrit quelques problèmes d’installation et les solutions pour les résoudre.
+La section suivante décrit certains problèmes d’installation et leurs solutions.
 
-### Lorsque vous double-cliquez sur le fichier Quickstart jar, rien ne se produit ou le fichier s’ouvre dans un autre programme (par exemple, le gestionnaire d’archives). {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
+### Double-cliquer sur le fichier JAR Quickstart n’a aucun effet ou ouvre le fichier JAR avec un autre programme (par exemple, le gestionnaire d’archives). {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
-Cette situation indique généralement qu’il existe un problème lié à la configuration de l’environnement de poste de travail de votre système d’exploitation pour l’ouverture des fichiers dotés de l’extension .jar. Elle peut également indiquer que Java n’est pas installé sur votre ordinateur ou que vous utilisez une version de Java qui n’est pas prise en charge.
+Ce problème indique généralement un problème lié à la configuration de l’environnement de bureau de votre système d’exploitation pour l’ouverture de fichiers avec l’extension .jar. Il peut également indiquer que Java™ n’est pas installé ou que vous utilisez une version de Java™ non prise en charge.
 
-Comme les fichiers jar utilisent le format ZIP très répandu, certains programmes d’archivage peuvent automatiquement configurer le poste de travail pour qu’il ouvre les fichiers .jar en tant que fichiers d’archive.
+Comme les fichiers jar utilisent le format ZIP omniprésent, certains programmes d’archivage peuvent configurer automatiquement le bureau pour ouvrir les fichiers jar en tant que fichiers d’archive.
 
-Pour résoudre ce problème, procédez comme suit :
+Pour résoudre le problème, procédez comme suit :
 
-* Vérifiez que Java version 1.6 est au moins installé sur votre ordinateur.
-* Utilisez un menu contextuel (qui s’affiche généralement en cliquant avec le bouton droit de la souris) avec le fichier Quickstart de la gestion de contenu web AEM et sélectionnez la commande Ouvrir avec.
-* Vérifiez si Java ou Sun Java est répertorié. Si c’est le cas, essayez d’exécuter la gestion de contenu web AEM avec ce programme. Si plusieurs versions de Java sont installées sur votre ordinateur, sélectionnez la version qui est prise en charge.
+* Vérifiez que vous avez installé au moins Java™ version 1.6.
+* Essayez un menu contextuel (généralement avec le bouton droit de la souris) dans le Quickstart de la gestion de contenu web AEM, puis sélectionnez &quot;Ouvrir avec....&quot;
+* Vérifiez si Java™ ou Sun Java™ est répertorié et essayez d’exécuter AEM WCM avec celui-ci. Si plusieurs versions de Java™ sont installées, sélectionnez celle prise en charge.
 
-   À cette étape, si votre système d’exploitation affiche une option permettant de toujours utiliser le programme sélectionné pour exécuter les fichiers .jar; sélectionnez cette option. Lorsque vous double-cliquez sur le fichier .jar, il doit dorénavant s’ouvrir.
+   Si vous réussissez cette étape et que votre système d’exploitation offre la possibilité de toujours utiliser le programme sélectionné pour exécuter les fichiers .jar, sélectionnez-le. Le double-clic devrait désormais fonctionner.
 
-* Parfois, la réinstallation de la version de Java prise en charge peut permettre de restaurer l’association correcte.
-* Vous pouvez toujours exécuter CRX à partir d’une ligne de commande ou de scripts start/stop, comme décrit précédemment dans ce document.
+* Parfois, la réinstallation de la version Java™ prise en charge permet de restaurer l’association correcte.
+* Vous pouvez toujours exécuter CRX à l’aide de la ligne de commande ou des scripts start/stop comme décrit précédemment dans ce document.
 
 ### Mon application qui s’exécute sur CRX génère des erreurs de mémoire insuffisante. {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Voir également [Analyse des problèmes de mémoire](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+>Voir aussi [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
 
 
-CRX nécessite peu de mémoire. Si les exigences en matière de mémoire de l’application qui s’exécute dans CRX sont plus élevées ou si l’application demande des opérations qui consomment beaucoup de mémoire, (des transactions volumineuses, par exemple), l’instance JVM dans laquelle s’exécute CRX doit être démarrée avec les paramètres de mémoire adéquats.
+Le CRX lui-même a une faible empreinte mémoire. Si l’application s’exécutant dans CRX a des besoins de mémoire plus importants ou nécessite des opérations gourmandes en mémoire (par exemple, des transactions volumineuses), l’instance JVM où CRX s’exécute doit être démarrée avec les paramètres de mémoire appropriés.
 
-Utilisez les options de commande Java pour définir les paramètres de mémoire de JVM (par exemple, java -Xmx512m -jar crx&amp;ast;.jar pour définir la taille des segments de mémoire sur 512 Mo).
+Utilisez les options de commande Java™ pour définir les paramètres de mémoire de la JVM (par exemple, java -Xmx512m -jar crx&amp;ast;.jar pour définir la taille du tas sur 512 Mo).
 
-Spécifiez l’option de paramétrage de la mémoire lors du démarrage de la gestion de contenu web AEM à partir d’une ligne de commande. Les scripts start/stop de la gestion de contenu web AEM ou les scripts personnalisés pour la gestion du démarrage de la gestion de contenu web AEM peuvent être également modifiés afin de définir les paramètres de mémoire requis.
+Spécifiez l’option de paramètre de mémoire lors du démarrage AEM WCM à partir de la ligne de commande. Les scripts de démarrage/arrêt de la gestion de contenu web AEM ou les scripts personnalisés pour gérer AEM démarrage de la gestion de contenu web peuvent également être modifiés pour définir les paramètres de mémoire requis.
 
 Si vous avez déjà défini les segments de mémoire sur 512 Mo, vous souhaiterez peut-être continuer à analyser l’erreur de mémoire en créant un vidage de segments de mémoire :
 
@@ -83,25 +83,25 @@ Pour créer automatiquement un vidage de segments de mémoire lorsque la mémoir
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Cette commande génère un fichier de vidage de segments de mémoire (**java_...hprof**) dès que la mémoire du processus est insuffisante. Le processus peut continuer à s’exécuter après la génération du vidage de segments de mémoire. En règle générale, un fichier est suffisant pour analyser le problème.
+Cette méthode génère un fichier de vidage de tas (**java_...hprof**) chaque fois que le processus manque de mémoire. Le processus peut continuer à s’exécuter une fois le vidage de tas généré. En règle générale, un fichier de vidage de tas suffit à analyser le problème.
 
 ### Après avoir double-cliqué sur AEM Quickstart, l’écran d’accueil d’AEM ne s’affiche pas dans le navigateur. {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
-Dans certains cas, l’écran de bienvenue de la gestion de contenu web AEM ne s’affiche pas automatiquement bien que le référentiel s’exécute correctement. Ce problème peut être lié à la configuration du système d’exploitation ou du navigateur ou à d’autres facteurs similaires.
+Dans certains cas, les écrans de bienvenue de la gestion du contenu web AEM ne s’affichent pas automatiquement même si le référentiel s’exécute correctement. Ce problème peut dépendre de la configuration du système d’exploitation, de la configuration du navigateur ou de facteurs similaires.
 
-Dans ce cas, la fenêtre Quickstart affiche le message suivant : « Démarrage de la gestion de contenu web AEM. En attente du démarrage du serveur... » Si ce message s’affiche relativement longtemps, saisissez manuellement l’URL de la gestion de contenu web AEM dans la fenêtre du navigateur, en utilisant le port 4502 par défaut ou le port sur lequel s’exécute l’instance : http://localhost:4502/.
+Dans ce cas, la fenêtre Quickstart affiche le message suivant : « Démarrage de la gestion de contenu web AEM. En attente du démarrage du serveur... » Si ce message s’affiche pendant une période relativement longue, saisissez manuellement l’URL de gestion de contenu web AEM dans la fenêtre du navigateur, à l’aide du port 4502 par défaut, ou du port sur lequel l’instance est en cours d’exécution : http://localhost:4502/.
 
-Les journaux peuvent également indiquer la raison pour laquelle le navigateur ne démarre pas.
+En outre, les journaux peuvent indiquer la raison pour laquelle le navigateur ne démarre pas.
 
-Parfois, la fenêtre Quickstart de la gestion de contenu web AEM affiche le message « La gestion de contenu web AEM s’exécute sur http://localhost:port/ » et ne navigateur ne démarre pas automatiquement. Dans ce cas, cliquez sur l’URL dans la fenêtre Quickstart de la gestion de contenu web AEM (il s’agit d’un lien hypertexte) ou saisissez manuellement l’URL dans le navigateur.
+Parfois, la fenêtre de démarrage rapide de la gestion de contenu web d’AEM comporte le message &quot;AEM WCM s’exécutant sur http://localhost:port/&quot; et le navigateur ne démarre pas automatiquement. Dans ce cas, cliquez sur l’URL dans la fenêtre de démarrage rapide AEM WCM (il s’agit d’un lien hypertexte) ou saisissez manuellement l’URL dans le navigateur.
 
-Si toutes les autres solutions échouent, consultez les journaux pour déterminer ce qui s’est passé.
+Si tout le reste échoue, consultez les journaux pour savoir ce qui s’est passé.
 
-### Le site web ne se charge pas ou échoue par intermittence avec Java 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
+### Le site web ne charge pas ou échoue par intermittence avec Java™ 11 {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Il existe un problème connu avec AEM 6.5 exécuté sur Java 11 : le site web peut ne pas se charger ou son chargement échouer par intermittence.
+Il existe un problème connu avec AEM 6.5 s’exécutant sur Java™ 11, en raison duquel le site web ne se charge pas ou échoue par intermittence.
 
-Si cela se produit, procédez de la façon suivante :
+Si ce problème se produit, procédez comme suit :
 
 1. Ouvrez le fichier `sling.properties` dans le dossier `crx-quickstart/conf/`.
 1. Recherchez la ligne suivante :
@@ -114,34 +114,35 @@ Si cela se produit, procédez de la façon suivante :
 
 1. Redémarrez l’instance.
 
-## Résolutions des problèmes d’installation avec un serveur d’applications {#troubleshooting-installations-with-an-application-server}
+## Dépannage des installations avec un serveur d’applications {#troubleshooting-installations-with-an-application-server}
 
-### Lorsqu’une page geometrixx-outdoor est demandée, l’erreur Page introuvable est renvoyée. {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
+### Page introuvable lors de la demande d’une page geometrixx-outdoor {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
-**S’applique à WebLogic 10.3.5 et JBoss 5.1**
+**S’applique à WebLogic 10.3.5 et JBoss® 5.1**
 
-Lorsqu’une demande de page geometrixx-outdoors/en renvoie une erreur 404 (Page introuvable), vérifiez que vous avez défini la propriété sling supplémentaire dans le fichier sling.properties de ces serveurs d’applications.
+Lorsqu’une demande de page geometrixx-outdoors/en renvoie une erreur 404 (Page introuvable), vous pouvez vérifier à nouveau que vous avez défini la propriété sling supplémentaire dans le fichier sling.properties nécessaire pour ces serveurs d’applications spécifiques.
 
 Pour plus d’informations, reportez-vous à la procédure *Déployer une application web AEM*.
 
-### La taille de l’en-tête de réponse peut être supérieure à 4 Ko. {#response-header-size-can-be-greater-than-kb}
+### La taille de l’en-tête de réponse peut être supérieure à 4 Ko. {#response-header-size-can-be-greater-than-kb}
 
-Les erreurs 502 peuvent indiquer que le serveur web n’est pas en mesure de gérer la taille de l’en-tête de réponse HTTP AEM. AEM peut générer des en-têtes de réponse HTTP qui comprennent des cookies dont la taille est supérieure à 4 Ko. Vérifiez que le conteneur de servlets est configuré de sorte à ce que la taille d’en-tête de réponse maximale puisse dépasser 4 Ko.
+Les erreurs 502 peuvent indiquer que le serveur web ne peut pas gérer la taille de l’en-tête de réponse HTTP AEM. AEM peut générer des en-têtes de réponse HTTP qui incluent des cookies d’une taille supérieure à 4 Ko. Assurez-vous que votre conteneur de servlets est configuré de sorte que la taille maximale de l’en-tête de réponse puisse dépasser 4 Ko.
 
-Par exemple, pour Tomcat 7.0, l’attribut maxHttpHeaderSize du [connecteur HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) contrôle les limites de la taille d’en-tête.
+Par exemple, pour Tomcat 7.0, l’attribut maxHttpHeaderSize de [Connecteur HTTP](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) contrôle les limites de la taille de l’en-tête.
 
-## Désinstallation d’Adobe Experience Manager {#uninstalling-adobe-experience-manager}
+## Désinstallation d’Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
-Dans la mesure où AEM est installé dans un seul répertoire, un utilitaire de désinstallation n’est pas nécessaire. La désinstallation peut consister uniquement à supprimer l’intégralité du répertoire d’installation, bien que la désinstallation d’AEM dépende du résultat que vous souhaitez obtenir et du type de stockage persistent utilisé.
+Comme AEM installe dans un seul répertoire, un utilitaire de désinstallation n’est pas nécessaire. La désinstallation peut être aussi simple que la suppression de l’intégralité du répertoire d’installation, bien que la désinstallation AEM dépend de ce que vous souhaitez réaliser et du stockage persistant que vous utilisez.
 
-Si le stockage persistent est incorporé dans le répertoire d’installation (dans l’installation TarPM par défaut, par exemple), la suppression des dossiers entraîne également celle des données.
+Si le stockage persistant est incorporé dans le répertoire d’installation, par exemple dans l’installation par défaut de TarPM, la suppression de dossiers supprime également les données.
 
 >[!NOTE]
 >
->Adobe conseille vivement de sauvegarder le référentiel avant de supprimer AEM. Si vous supprimez l’intégralité du répertoire &lt;cq-installation-directory>, vous supprimez le référentiel. Pour conserver les données du référentiel avant la suppression, déplacez ou copiez le dossier &lt;cq-installation-directory>/crx-quickstart/repository dans un autre emplacement avant de supprimer les autres dossiers.
+>Adobe vous recommande de sauvegarder votre référentiel avant de supprimer AEM. Si vous supprimez l’intégralité de la variable &lt;cq-installation-directory>, vous supprimez également le référentiel. Pour conserver les données du référentiel avant de supprimer, déplacer ou copier la variable &lt;cq-installation-directory>dossier /crx-quickstart/repository ailleurs avant de supprimer les autres dossiers.
 
-Si votre installation AEM utilise un système de stockage externe, comme un serveur de base de données, la suppression du dossier n’entraîne pas la suppression automatique des données, mais elle supprime la configuration du stockage, ce qui rend difficile la restauration du contenu JCR.
+Si votre installation d’AEM utilise un stockage externe, par exemple un serveur de base de données, la suppression du dossier ne supprime pas automatiquement les données, mais supprime la configuration de stockage, ce qui rend difficile la restauration du contenu JCR.
 
-### Les fichiers JSP ne sont pas compilés sur JBoss. {#jsp-files-are-not-compiled-on-jboss}
+### Les fichiers JSP ne sont pas compilés sur JBoss® {#jsp-files-are-not-compiled-on-jboss}
 
-Si vous installez ou mettez à jour les fichiers JSP dans Experience Manager sur JBoss et si les servlets correspondants ne sont pas compilés, vérifiez que le compilateur JSP JBoss est correctement configuré. Pour plus d’informations, consultez l’article sur [les problèmes de compilation JSP dans JBoss](https://helpx.adobe.com/fr/experience-manager/kb/jsps-dont-compile-jboss.html).
+Si vous installez ou mettez à jour des fichiers JSP vers Experience Manager sur JBoss® et que les servlets correspondants ne sont pas compilés, assurez-vous que le compilateur JSP JBoss® est correctement configuré. Pour plus d’informations, voir
+[Problèmes de compilation JSP dans JBoss®](https://helpx.adobe.com/fr/experience-manager/kb/jsps-dont-compile-jboss.html) article.

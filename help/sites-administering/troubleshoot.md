@@ -1,7 +1,7 @@
 ---
 title: Résolution des incidents liés à AEM
 seo-title: Troubleshooting AEM
-description: Découvrez les problèmes de résolution des incidents liés à AEM.
+description: Découvrez les problèmes de dépannage avec AEM.
 seo-description: Learn about troubleshooting issues with AEM.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
@@ -11,38 +11,38 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
-workflow-type: ht
-source-wordcount: '547'
-ht-degree: 100%
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 34%
 
 ---
 
 # Résolution des incidents liés à AEM {#troubleshooting-aem}
 
-La section ci-dessous traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM, ainsi que des suggestions pour les résoudre.
+La section suivante décrit certains problèmes que vous pouvez rencontrer lors de l’utilisation d’AEM, ainsi que des suggestions pour les résoudre.
 
 >[!NOTE]
 >
->Si vous résolvez les problèmes liés à la création dans AEM, voir [Résolution des incidents pour les créateurs](/help/sites-authoring/troubleshooting.md).
+>Si vous résolvez les problèmes liés à la création dans AEM, reportez-vous à la section [Résolution des problèmes pour les auteurs.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->Si vous rencontrez des problèmes, il est également intéressant de consulter la liste des [problèmes connus](/help/release-notes/release-notes.md) relatifs à votre instance (packs de version et de services).
+>En cas de problème, il est également intéressant de consulter la liste des [Problèmes connus](/help/release-notes/release-notes.md) pour votre instance (Service Packs et version).
 
-## Scénarios de résolution des incidents pour les administrateurs {#troubleshooting-scenarios-for-administrators}
+## Scénarios de dépannage pour les administrateurs {#troubleshooting-scenarios-for-administrators}
 
-Le tableau ci-dessous contient une présentation des incidents que les administrateurs peuvent avoir à résoudre :
+Le tableau suivant présente un aperçu des problèmes que les administrateurs peuvent résoudre :
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Rôle(s)</strong></td>
+   <td><strong>Rôle</strong></td>
    <td><strong>Problème </strong></td>
   </tr>
   <tr>
    <td>Administrateur système</td>
-   <td><p>Lorsque vous double-cliquez sur le fichier Quickstart jar, rien ne se produit ou le fichier s’ouvre dans un autre programme (par exemple, le gestionnaire d’archives).</p> </td>
+   <td><p>Double-cliquer sur le fichier JAR Quickstart n’a aucun effet ou ouvre le fichier JAR avec un autre programme (par exemple, le gestionnaire d’archives).</p> </td>
   </tr>
   <tr>
    <td><p>Administrateur système</p> </td>
@@ -65,28 +65,28 @@ Le tableau ci-dessous contient une présentation des incidents que les administr
 
 ## Problèmes d’installation {#installation-issues}
 
-Pour plus d’informations sur les scénarios de résolution des incidents ci-dessous, voir [Problèmes d’installation fréquents](/help/sites-deploying/troubleshooting.md#common-installation-issues) :
+Voir [Problèmes d’installation courants](/help/sites-deploying/troubleshooting.md#common-installation-issues) pour plus d’informations sur les scénarios de dépannage suivants :
 
-* Un double clic sur le fichier .jar Quickstart n’a aucun effet, ou le fichier JAR est utilisé avec un autre programme (tel que le gestionnaire d’archive).
-* Les applications qui s’exécutent sur CRX génèrent des erreurs de mémoire insuffisante.
+* Double-cliquer sur le fichier Quickstart jar n’a aucun effet sur le fichier JAR avec un autre programme (tel que le gestionnaire d’archives).
+* Les applications s’exécutant sur CRX renvoient des erreurs de mémoire insuffisante.
 * Après avoir double-cliqué sur Quickstart AEM, l’écran d’accueil d’AEM ne s’affiche pas dans le navigateur.
 
-## Méthodes d’analyse de la résolution des incidents {#methods-for-troubleshooting-analysis}
+## Méthodes d’analyse de dépannage {#methods-for-troubleshooting-analysis}
 
 ### Créer une image mémoire des threads {#making-a-thread-dump}
 
-L’image mémoire des threads est une liste de toutes les unités d’exécution Java actuellement actives. Si AEM ne répond pas correctement, l’image mémoire des threads peut vous aider à identifier des verrouillages ou d’autres problèmes.
+Le thread dump est une liste de tous les threads Java™ actuellement principaux. Si AEM ne répond pas correctement, le thread dump peut vous aider à identifier les blocages ou d’autres problèmes.
 
-### Utilisation du programme d’image mémoire des threads Sling {#using-sling-thread-dumper}
+### Utilisation de Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. Ouvrez la **console web AEM**, par exemple, à l’adresse `https://localhost:4502/system/console/`.
+1. Ouvrez le **Console web d’AEM**; par exemple, à l’adresse `https://localhost:4502/system/console/`.
 1. Sélectionnez les **threads** dans l’onglet **Statut**.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
 ### Utilisation de jstack (ligne de commande) {#using-jstack-command-line}
 
-1. Recherchez le PID (ID de processus) de l’instance Java AEM.
+1. Recherchez le PID (ID de processus) de l’instance Java™ AEM.
 
    Vous pouvez, par exemple, utiliser `ps -ef` ou `jps`.
 
@@ -94,7 +94,7 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 
    `jstack <pid>`
 
-1. L’image mémoire des threads s’affiche.
+1. Affiche le vidage des threads.
 
 >[!NOTE]
 >
@@ -102,27 +102,27 @@ L’image mémoire des threads est une liste de toutes les unités d’exécutio
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://helpx.adobe.com/cq/kb/TakeThreadDump.html).
+Pour plus d’informations, consultez la section [Comment utiliser les images mémoire des threads d’une machine virtuelle Java (JVM)](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en).
 
 ### Contrôle des sessions JCR non fermées {#checking-for-unclosed-jcr-sessions}
 
-Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ouvrir des sessions JCR (cela s’apparente à l’ouverture d’une connexion de base de données). Si les sessions ouvertes ne sont jamais fermées, votre système peut rencontrer les symptômes suivants :
+Lorsque la fonctionnalité est développée pour AEM WCM, il est possible d’ouvrir des sessions JCR (cela s’apparente à l’ouverture d’une connexion de base de données). Si les sessions ouvertes ne sont jamais fermées, votre système peut présenter les symptômes suivants :
 
-* Le système est ralenti.
-* Vous constatez qu’il y a de nombreuses entrées CacheManager: resizeAll dans le fichier journal. Le nombre (size=&lt;x>) ci-dessous affiche le nombre de caches. Chaque session ouvre plusieurs caches.
+* Le système devient plus lent.
+* Vous pouvez voir une grande partie de CacheManager : resizeAll entrées dans le fichier journal ; le nombre suivant (size=&lt;x>) indique le nombre de caches. Chaque session ouvre plusieurs caches.
 * Parfois, la mémoire du système est saturée (après quelques heures, jours ou semaines, selon la gravité).
 
-Pour analyser les sessions non fermées et découvrir le code qui ne ferme pas une session, consulter l’article [Analyse des sessions non fermées](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html) de la base de connaissances.
+Pour analyser les sessions non fermées et déterminer le code qui ne ferme pas une session, reportez-vous à l’article de la base de connaissances [Analyse des sessions non fermées](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
-### Utilisation de la console web d’Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
+### Utilisation de la console web Adobe Experience Manager {#using-the-adobe-experience-manager-web-console}
 
-Le statut des lots OSGi peut également fournir une indication précoce de problèmes éventuels.
+L’état des lots OSGi peut également donner une indication précoce des problèmes possibles.
 
-1. Ouvrez la **console web AEM**, par exemple, à l’adresse `https://localhost:4502/system/console/`.
+1. Ouvrez le **Console web d’AEM**; par exemple, à l’adresse `https://localhost:4502/system/console/`.
 1. Sélectionnez **Lots** dans l’onglet **OSGI**.
 1. Vérifier :
 
-   * le statut des lots. Si le statut est Inactif ou Insatisfait, essayez d’arrêter et de redémarrer le lot. Si le problème persiste, un examen plus approfondi peut être nécessaire à l’aide d’autres méthodes.
-   * Si l’un des lots possède des dépendances manquantes. Ces informations peuvent être affichées en cliquant sur le nom de chaque lot, qui est un lien (l’exemple ci-dessous ne comporte aucun problème) :
+   * le statut des lots. Si certains sont inactifs ou insatisfaits, essayez d’arrêter et de redémarrer le lot. Si le problème persiste, recherchez d’autres méthodes.
+   * Si l’un des lots possède des dépendances manquantes. Ces détails sont visibles en cliquant sur le nom du lot individuel, qui est un lien (l’exemple suivant ne présente aucun problème) :
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
