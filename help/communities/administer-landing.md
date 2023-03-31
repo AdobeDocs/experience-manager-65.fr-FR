@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 9%
+source-wordcount: '430'
+ht-degree: 5%
 
 ---
 
@@ -26,9 +26,8 @@ Cette section s’adresse à ceux qui gèrent AEM Communities et se familiarisen
 
 Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
 
-* [Présentation d’AEM Communities](overview.md)
+* [Présentation d’AEM Communities](overview.md)
 * [Prise en main d’AEM Communities](getting-started.md)
-* [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md)
 
 ## Rubriques d’administration et de configuration {#administration-and-configuration-topics}
 
@@ -41,7 +40,6 @@ Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
       * [Groupes (sous-communautés)](groups.md)
    * [Modération](moderation.md)
    * [Gestion des membres et des groupes](members.md)
-   * [Ressources d’activation](resources.md)
    * [Rapports](reports.md)
 
 
@@ -50,7 +48,7 @@ Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
    * [Modèles de site](sites.md)
    * [Modèles de groupe](tools-groups.md)
    * [Fonctions de la communauté](functions.md)
-   * [Configuration du stockage](srp-config.md)
+   * [Stockage  Configuration](srp-config.md)
    * [Guide du composant](components-guide.md)
    * [Badges](badges.md)
 
@@ -78,12 +76,6 @@ L’une des principales fonctionnalités d’AEM Communities est la génération
 * [Abonnements](subscriptions.md): possibilité pour les membres d’interagir avec la communauté à l’aide de courriers électroniques externes.
 * [Messagerie](messaging.md): possibilité pour les membres d’interagir avec la communauté à l’aide de messages internes.
 
-### Fonctionnalités d’activation {#enablement-features}
-
-* [Configuration de l’activation](enablement.md): informations nécessaires pour configurer correctement les fonctions d’activation.
-* [Configuration d’Analytics](analytics.md): informations nécessaires pour activer les fonctionnalités Adobe Analytics for Communities.
-* [Balisage des ressources d’activation](tag-resources.md): nécessaire pour créer des catalogues d’activation.
-
 ### Déploiement {#deployment}
 
 La section Déploiement contient des informations spécifiques à AEM Communities.
@@ -98,7 +90,7 @@ Il est important d’installer la dernière version de Communities sur la platef
 
 Consultez la page de déploiement pour obtenir d’autres informations spécifiques à Communities, telles que [Mise à niveau](upgrade.md), [Dispatcher](dispatcher.md) et [Réplication](deploy-communities.md#replication-agents-on-author).
 
-## Documentation sur les communautés associée {#related-communities-documentation}
+## Documentation sur les communautés connexes {#related-communities-documentation}
 
 * Visite [Déploiement de communautés](deploy-communities.md) pour en savoir plus sur les déploiements recommandés.
 

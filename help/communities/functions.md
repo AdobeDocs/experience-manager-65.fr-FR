@@ -12,10 +12,10 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 9%
+source-wordcount: '2224'
+ht-degree: 6%
 
 ---
 
@@ -96,14 +96,6 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 
    Si cette option est sélectionnée, les pages Activités comprennent un onglet qui filtre les activités en fonction de celles que le membre actuel suit. La valeur par défaut est sélectionnée.
 
-### Fonction Affectations {#assignments-function}
-
-La fonction Affectations est la fonction de base qui définit une [site communautaire pour l’activation](/help/communities/overview.md#enablement-community). Il permet d’affecter des ressources d’activation aux membres de la communauté. Voir aussi [Notions fondamentales sur les affectations](/help/communities/essentials-assignments.md) pour les développeurs.
-
-Cette fonction est disponible en tant que fonctionnalité de la fonction [module complémentaire d’activation](/help/communities/enablement.md). Le module complémentaire d’activation nécessite des licences supplémentaires pour être utilisé dans un environnement de production.
-
-Lors de l’ajout à un modèle, la seule configuration est celle de la variable [Paramètres de titre et d’URL](#title-and-url-settings).
-
 ### Fonction Blog {#blog-function}
 
 La fonction de blog est une page avec une [Composant Blog](/help/communities/blog-feature.md) configuré pour le balisage, les chargements de fichiers, les suivants, les membres à modifier, le vote et la modération. Voir aussi [Notions fondamentales sur les blogs](/help/communities/blog-developer-basics.md) pour les développeurs.
@@ -159,25 +151,6 @@ La boîte de dialogue suivante s’ouvre lorsqu’elle est ajoutée à un modèl
 * **Autoriser le contenu proposé**
 
    Si cette option est sélectionnée, son contenu est identifié comme [contenu proposé](/help/communities/featured.md). La valeur par défaut est sélectionnée.
-
-### Fonction Catalogue {#catalog-function}
-
-La fonction catalog permet d’utiliser la fonction [communauté d&#39;activation](/help/communities/overview.md#enablement-community) membres pour parcourir les ressources d’activation qui ne leur sont pas affectées. Voir [Balisage des ressources d’activation](/help/communities/tag-resources.md) et [Notions fondamentales sur le catalogue](/help/communities/catalog-developer-essentials.md) pour les développeurs.
-
-Toutes les ressources d’activation et tous les parcours de formation du site de la communauté s’affichent dans tous les catalogues si leur propriété, ` [Show in Catalog](/help/communities/resources.md)`, est défini sur true. Pour inclure explicitement des ressources et des parcours d’apprentissage, il est nécessaire d’appliquer une [pre-filter](/help/communities/catalog-developer-essentials.md#pre-filters) au catalogue.
-
-Lorsqu’elle est ajoutée à un modèle, la configuration permet de spécifier le ou les espaces de noms de balise utilisés pour configurer le filtre de balise présenté aux visiteurs du site :
-
-![Fonction Catalog](assets/catalog-function.png)
-
-* [Paramètres de titre et d’URL](#title-and-url-settings)
-
-* **Sélectionner tous les espaces de noms**
-
-   Les espaces de noms de balise sélectionnés définissent les balises pouvant être sélectionnées par les visiteurs pour le filtrage de la liste des ressources d’activation répertoriées dans le catalogue.
-Si cette option est sélectionnée, tous les espaces de noms de balise autorisés pour le site de la communauté sont disponibles.
-Si cette option est désélectionnée, il est possible de sélectionner un ou plusieurs espaces de noms autorisés pour le site de la communauté.
-La valeur par défaut est sélectionnée.
 
 ### Fonction de contenu en vedette {#featured-content-function}
 

@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
@@ -28,8 +28,6 @@ L’infrastructure sous-jacente des balises appliquées dans l’environnement d
 * Voir [Balisage pour les développeurs](../../help/sites-developing/tags.md) pour plus d’informations sur le [framework de balisage](../../help/sites-developing/framework.md) ainsi que l’inclusion et l’extension de balises dans [applications personnalisées](../../help/sites-developing/building.md).
 
 * Voir [Utilisation de Social Tag Cloud](tagcloud.md) pour plus d’informations pour les auteurs sur la manière d’ajouter une `social tag cloud` à une page pour mettre en surbrillance les balises appliquées au contenu généré par l’utilisateur dans l’environnement de publication.
-
-* Voir [Balisage des ressources d’activation](tag-resources.md) pour plus d’informations sur le balisage des ressources pour les catalogues.
 
 Le balisage du contenu généré par l’utilisateur peut être activé lors de la configuration d’un [site communautaire](sites-console.md#tagging) ou l’une des fonctionnalités suivantes :
 

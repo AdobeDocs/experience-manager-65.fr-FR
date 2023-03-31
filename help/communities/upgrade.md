@@ -1,5 +1,5 @@
 ---
-title: Mise à niveau vers les communautés AEM 6.5
+title: Mise à niveau vers AEM 6.5 Communities
 seo-title: Upgrading to AEM 6.5 Communities
 description: Comment mettre à niveau une version antérieure vers AEM 6.5 Communities
 seo-description: How to upgrade from an earlier version to AEM 6.5 Communities
@@ -11,14 +11,14 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 4%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
-# Mise à niveau vers les communautés AEM 6.5 {#upgrading-to-aem-communities}
+# Mise à niveau vers AEM 6.5 Communities {#upgrading-to-aem-communities}
 
 Selon la topologie et les fonctionnalités de chaque site, les actions suivantes peuvent être nécessaires lors de la mise à niveau vers AEM Communities 6.5 ou de l’installation du dernier Feature Pack.
 
@@ -33,12 +33,6 @@ Lors de l’installation d’un nouveau Feature Pack Communities sur un déploie
 1. Installez le [dernier Feature Pack](/help/communities/deploy-communities.md#latestfeaturepack).
 1. Installez le [les derniers fichiers de configuration Solr](/help/communities/msrp.md#upgrading).
 1. Réindexation MSRP - section [Outil de réindexation MSRP](/help/communities/msrp.md#msrp-reindex-tool).
-
-### Activation 2.0 {#enablement}
-
-Depuis la version 6.3 d’AEM, les fonctionnalités d’activation ne stockent plus les informations de création de rapports dans MySQL. La dépendance MySQL est présente uniquement pour le suivi du contenu SCORM.
-
-Veuillez contacter [service clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir de l’aide sur la migration de contenu à partir d’Activation 1.0.
 
 ## Mise à niveau à partir d’AEM 6.0 {#upgrading-from-aem}
 

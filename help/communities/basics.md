@@ -1,5 +1,5 @@
 ---
-title: Notions fondamentales sur les composants d’AEM Communities
+title: Principes de base des composants des communautés
 seo-title: Communities Components Basics
 description: Ajout de fonctionnalités Communities à AEM sites en mode d’édition et configuration de composants
 seo-description: Add Communities features to AEM sites in edit mode and configure components
@@ -10,26 +10,26 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 58%
+source-wordcount: '361'
+ht-degree: 2%
 
 ---
 
-# Notions fondamentales sur les composants d’AEM Communities {#communities-components-basics}
+# Principes de base des composants des communautés {#communities-components-basics}
 
 ## Présentation {#overview}
 
-La section création de la documentation décrit l’ajout de fonctionnalités AEM Communities à AEM Sites en mode d’édition et décrit les configurations des composants.
+La section de création de la documentation décrit l’ajout de fonctionnalités Communities à AEM sites en mode d’édition de création, ainsi que la description des configurations de composant.
 
 Les composants peuvent être explorés à l’aide d’une instance AEM et de l’objet interactif [Guide des composants de communauté](components-guide.md).
 
-## Accès aux composants d’AEM Communities {#accessing-communities-components}
+## Accès aux composants Communities {#accessing-communities-components}
 
-Lors de la création du contenu de la page, si le modèle sous-jacent permet de modifier la conception de la page, il est possible d’activer des composants qui ne sont pas encore disponibles dans le navigateur de composants dans le cadre de la conception du site.
+Lors de la création du contenu d’une page, si le modèle sous-jacent permet de modifier la conception de la page, il est possible d’activer les composants qui ne sont pas déjà disponibles dans l’explorateur de composants dans le cadre de la conception du site.
 
-Les composants de communauté disponibles sont répertoriés [ici](author-communities.md#available-communities-components).
+Les composants de communauté disponibles sont répertoriés. [here](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Les composants de communauté disponibles sont répertoriés [ici](author-commun
 >
 >Si vous ne connaissez pas AEM, consultez la documentation sur [gestion de base](../../help/sites-authoring/basic-handling.md).
 
-### Accès au mode de conception {#entering-design-mode}
+### Accès au mode Conception {#entering-design-mode}
 
 Si une **Communautés** Le composant est introuvable dans l’explorateur de composants (sidekick), il sera nécessaire de saisir `Design Mode` pour ajouter d’autres composants Communities. [Bibliothèques côté client requises](#required-clientlibs) (clientlibs) doit également être ajouté.
 
@@ -47,15 +47,15 @@ Vous trouverez ci-dessous des images de la sélection de quelques composants Com
 
 ![component-design](assets/component-design.png)
 
-Les composants sélectionnés sont à présent disponibles dans le navigateur de composants :
+Les composants sélectionnés sont désormais disponibles dans l’explorateur de composants :
 
 ![component-design1](assets/component-design1.png)
 
-## Clientlibs requises {#required-clientlibs}
+## Clientlibs obligatoires {#required-clientlibs}
 
-Les [bibliothèques côté client](../../help/sites-developing/clientlibs.md) (clientlibs) sont nécessaires au fonctionnement (JavaScript) et au style (CSS) d’un composant.
+[Bibliothèques côté client](../../help/sites-developing/clientlibs.md) (clientlibs) sont nécessaires au bon fonctionnement (JavaScript) et au style (CSS) d’un composant.
 
-Lorsque vous ajoutez un composant de communauté à une page, s’il en résulte une erreur ou une apparence inattendue, la première chose à essayer consiste à ajouter les clientlibs nécessaires au composant de communauté. Pour plus d’informations, reportez-vous à la section [Clientlibs des composants de communauté](clientlibs.md).
+Lors de l’ajout d’un composant Communities à une page, si le résultat est une erreur ou une apparence inattendue, la première chose à essayer est d’ajouter les bibliothèques client requises pour le composant Communities. Pour plus d’informations, voir [Clientlibs des composants Communities](clientlibs.md).
 
 ### Exemple : Révisions placées initialement sans bibliothèques clientes... {#example-initially-placed-reviews-without-client-libraries}
 
@@ -67,26 +67,25 @@ Lorsque vous ajoutez un composant de communauté à une page, s’il en résulte
 
 ## Balisage {#tagging}
 
-De nombreuses fonctionnalités de communauté peuvent être configurées de manière à permettre aux membres de baliser le contenu entré (publié) dans l’environnement de publication.
+De nombreuses fonctionnalités de Communities peuvent être configurées pour permettre aux membres de baliser le contenu saisi (publié) dans l’environnement de publication.
 
-Si le balisage est autorisé, la configuration du site de communauté peut être définie pour limiter les espaces de noms présentés aux membres dans l’environnement de publication. Voir [Console Sites de communauté](sites-console.md#tagging).
+Si le balisage est autorisé, la configuration du site de la communauté peut être définie pour limiter les espaces de noms présentés aux membres dans l’environnement de publication. Voir [Console Sites de communauté](sites-console.md#tagging).
 
 Fonctionnalités qui permettent le balisage : [blog](blog-feature.md), [calendar](calendar.md), [bibliothèque de fichiers](file-library.md), [forum](forum.md)
 
-Fonctionnalités qui utilisent des balises : [catalogue](catalog.md), [search](search.md), [nuage de balises sociales](tagcloud.md)
+Fonctionnalités qui utilisent des balises : [search](search.md), [nuage de balises sociales](tagcloud.md)
 
-Pour les informations de création :
+Pour les informations de création :
 
 * [Utilisation des balises](../../help/sites-authoring/tags.md)
 
-Pour les informations administratives :
+Pour plus d’informations sur l’administration :
 
 * Création d’espaces de noms de balise (taxonomie) : [Administration des balises](../../help/sites-administering/tags.md)
 * Configuration du site de la communauté : see [BALISAGE](sites-console.md#tagging)
-* [Balisage de contenu généré par l’utilisateur](../../help/sites-authoring/tags.md)
-* [Balisage des ressources d’activation ](tag-resources.md)
+* [Balisage du contenu généré par l’utilisateur](../../help/sites-authoring/tags.md)
 
-Pour les informations de développement :
+Pour plus d’informations sur les développeurs :
 
-* [Cadre de balisage AEM](../../help/sites-developing/framework.md)
+* [Framework de balisage AEM](../../help/sites-developing/framework.md)
 * [Notions fondamentales sur le balisage](tag.md)

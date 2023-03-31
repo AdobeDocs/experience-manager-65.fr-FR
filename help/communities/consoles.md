@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 2%
+source-wordcount: '311'
+ht-degree: 1%
 
 ---
 
@@ -66,10 +66,6 @@ Pour accéder aux différentes consoles Communities, dans la navigation globale,
 * [Rapports](reports.md)
 
    La console Rapports permet de générer des rapports sur les affectations, les pages vues et le contenu publié (contenu généré) lorsqu’un site de communauté possède [activé Adobe Analytics](sites-console.md#analytics). La console n’est disponible que dans l’environnement de création.
-
-* [Ressources](resources.md)
-
-   Dans la console Ressources, [gestionnaires d&#39;activation](enablement.md#communitymanagers) créer, gérer et affecter des ressources aux membres d’une [site de la communauté d&#39;activation](overview.md#enablement-community). La console n’est disponible que dans l’environnement de création.
 
 ## Console Outils {#tools-console}
 

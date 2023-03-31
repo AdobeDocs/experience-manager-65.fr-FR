@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 11%
+source-wordcount: '385'
+ht-degree: 6%
 
 ---
 
@@ -27,9 +27,8 @@ La fondation d’un [site communautaire](overview.md#communitiessites) est la va
 
 Pour une présentation et des tutoriels de prise en main, rendez-vous sur :
 
-* [Présentation d’AEM Communities](overview.md)
+* [Présentation d’AEM Communities](overview.md)
 * [Prise en main d’AEM Communities](getting-started.md)
-* [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md)
 
 >[!NOTE]
 > 
@@ -91,7 +90,7 @@ Les composants, fonctions et fonctionnalités d’AEM Communities fournissent le
 * [Résolution des problèmes](troubleshooting.md)
 * [Problèmes connus](/help/release-notes/release-notes.md)
 
-## Documentation sur les communautés associée {#related-communities-documentation}
+## Documentation sur les communautés connexes {#related-communities-documentation}
 
 * Visite [Déploiement de communautés](deploy-communities.md) pour en savoir plus sur les déploiements recommandés et la configuration du dispatcher.
 

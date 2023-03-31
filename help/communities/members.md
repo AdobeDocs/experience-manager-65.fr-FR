@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '951'
+source-wordcount: '946'
 ht-degree: 4%
 
 ---
@@ -51,7 +51,7 @@ Dans l’environnement de création, pour accéder à la console Membres afin de
 
 ![member-console1](assets/member-console1.png)
 
-### Rechercher {#search-features}
+### Recherche {#search-features}
 
 Sélectionnez l’icône du panneau latéral sur le côté gauche de la `Members` pour ouvrir le panneau latéral de recherche.
 
@@ -95,7 +95,7 @@ Par défaut, l’ID est défini sur la valeur de l’adresse électronique requi
 (*Obligatoire*) Adresse électronique du membre.
 Le membre peut modifier son adresse email lors de la mise à jour de son profil. Si l&#39;identifiant est l&#39;adresse email par défaut, l&#39;identifiant sera *not* change lorsque l’adresse électronique est modifiée.
 
-* **[!UICONTROL Mot de passe]**
+* **[!UICONTROL Password]**
 
    (*Obligatoire*) Mot de passe de connexion.
 
@@ -117,7 +117,7 @@ Le membre peut modifier son adresse email lors de la mise à jour de son profil.
 
 Sous Paramètres du compte , un administrateur de communauté peut :
 
-* **[!UICONTROL État]**
+* **[!UICONTROL Statut]**
    * Interdit Un membre ne parvient pas à se connecter, ce qui l’empêche d’afficher des pages ou de participer à des activités nécessitant une connexion. Ils peuvent encore visiter anonymement un site communautaire ouvert.
 
    * Non interdit Un membre a un accès complet au site de la communauté.
@@ -162,9 +162,7 @@ Voir aussi [Notation et badges](implementing-scoring.md).
 
 ## Console Groupes {#groups-console}
 
-La console Groupes , disponible dans l’environnement de création, permet la création et la gestion des groupes de membres enregistrés dans l’environnement de publication. Elle est particulièrement utile pour :
-* [Groupes de membres privilégiés](users.md#privilegedmembersgroups)
-* Affectation basée sur un groupe de [ressources d&#39;activation](resources.md)
+La console Groupes , disponible dans l’environnement de création, permet la création et la gestion des groupes de membres enregistrés dans l’environnement de publication. Elle est particulièrement utile pour [Groupes de membres privilégiés](users.md#privilegedmembersgroups).
 
 Pour accéder à la console Groupes , procédez comme suit :
 * Dans la navigation globale, sélectionnez **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** > **[!UICONTROL Groupes]**.

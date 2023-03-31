@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 4%
+source-wordcount: '1601'
+ht-degree: 3%
 
 ---
 
@@ -78,11 +78,9 @@ Sélectionnez **Suivant**.
 
 ### Étape 3 : Paramètres {#step-settings}
 
-À l’étape Paramètres , avant de sélectionner `Next`, notez que sept sections donnent accès aux configurations impliquant la gestion des utilisateurs, le balisage, la modération, la gestion des groupes, l’analyse, la traduction et l’activation.
+À l’étape Paramètres , avant de sélectionner `Next`, notez que sept sections donnent accès aux configurations impliquant la gestion des utilisateurs, le balisage, la modération, la gestion des groupes, l’analyse et la traduction.
 
-Visitez le [Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md) tutoriel pour découvrir comment utiliser les fonctionnalités d’activation.
-
-#### Gestion des utilisateurs {#user-management}
+#### User Management {#user-management}
 
 Cochez toutes les cases pour [Gestion des utilisateurs](/help/communities/sites-console.md#user-management)
 
@@ -98,7 +96,7 @@ Cochez toutes les cases pour [Gestion des utilisateurs](/help/communities/sites-
 
 ![paramètres du site de communauté](assets/site-settings.png)
 
-#### Balisage {#tagging}
+#### BALISAGE {#tagging}
 
 Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant AEM espaces de noms précédemment définis via la variable [Console Balisage](/help/sites-administering/tags.md#tagging-console) (par exemple, [Espace de noms du tutoriel](/help/communities/setup.md#create-tutorial-tags)).
 
@@ -107,7 +105,7 @@ Il est facile de trouver des espaces de noms à l’aide d’une recherche par t
 * Type `tut`
 * Sélectionner `Tutorial`
 
-![tagging](assets/tagging.png)
+![balisage](assets/tagging.png)
 
 #### RÔLES {#roles}
 
@@ -118,7 +116,7 @@ Pour permettre à un membre (ou à un groupe de membres) d’expérimenter le si
 Par exemple,
 
 * Type `q`
-* Sélectionner [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Sélection de Quinn Harper
 
 >[!NOTE]
 >
@@ -152,16 +150,6 @@ Le [Paramètres de traduction](/help/communities/sites-console.md#translation) i
 * Laissez l’option de persistance par défaut
 
 ![translation-settings](assets/translation-settings.png)
-
-#### ACTIVATION {#enablement}
-
-Laissez vide lors de la création d’une communauté d’engagement.
-
-Pour un tutoriel similaire, créez rapidement une [communauté d&#39;activation](/help/communities/overview.md#enablement-community), voir [Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md).
-
-Sélectionnez **Suivant**.
-
-![activation](assets/enablement.png)
 
 ### Étape 4 : Créer un site de communautés {#step-create-communities-site}
 
@@ -222,11 +210,11 @@ Notez que le contenu généré par l’utilisateur n’est pas inclus dans le mo
 >1. En regard de **[!UICONTROL Paramètres]**, sélectionnez **[!UICONTROL Modifier]**.
 >1. Dans la boîte de dialogue contextuelle Paramètres de l’agent, sélectionnez **[!UICONTROL Transport]** .
 >1. Dans l’URI, remplacez le numéro de port, 4503, par le numéro de port souhaité. Par exemple, pour utiliser le port 6103 : https://localhost:6103/bin/receive?sling:authRequestLogin=1
->1. **[!UICONTROL Cliquez sur OK]**.
+>1. Sélectionnez **[!UICONTROL OK]**.
 >1. (Facultatif) Sélectionnez **[!UICONTROL Effacer]** ou **[!UICONTROL Forcer une nouvelle tentative]** pour réinitialiser la file d’attente de réplication.
 
 
-### Sélectionnez Publier {#select-publish}
+### Sélectionnez Publier . {#select-publish}
 
 Une fois que le serveur de publication est en cours d’exécution, sélectionnez l’icône mondiale pour publier le site de la communauté.
 
