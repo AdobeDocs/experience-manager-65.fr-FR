@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 3%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 Un modèle de site personnalisé peut être spécifié séparément pour chaque copie de langue d’un site de communauté.
 
-Pour ce faire :
+Procédez comme suit :
 
 * Créez un modèle personnalisé.
 * Recouvrez le chemin d’accès au modèle de site par défaut.
@@ -40,7 +40,7 @@ Pour ce faire :
 
 **Propriété**: page-template
 
-**Type** : String
+**Type**: Chaîne
 
 **Valeur**: `template-name` (aucune extension)
 
@@ -93,7 +93,6 @@ Depuis AEM Communities 6.3 Service Pack 1, l’icône Supprimer le site s’affi
 
 * [UGC](#user-generated-content)
 * [Groupes d’utilisateurs](#community-user-groups)
-* [Assets](#enablement-assets)
 * [Enregistrements de base de données](#database-records)
 
 ### Identifiant de site unique de la communauté {#community-unique-site-id}
@@ -134,18 +133,3 @@ Sur toutes les instances de création et de publication, à partir de [console d
 * Suivi de [identifiant de site unique](#community-unique-site-id)
 
 Par exemple, `community-engage-x0e11-members`.
-
-### Ressources d’activation {#enablement-assets}
-
-Dans la console principale :
-
-* Sélectionner **[!UICONTROL Ressources]**.
-* Entrée **[!UICONTROL Sélectionner]** mode .
-* Sélectionnez le dossier nommé avec la propriété [ID de site unique](#community-unique-site-id).
-* Sélectionner **[!UICONTROL Supprimer]** (peut nécessiter une sélection dans **[!UICONTROL Plus...]**).
-
-### Enregistrements de base de données {#database-records}
-
-Il n’existe pas d’outil permettant de supprimer de manière sélective les entrées de base de données d’un site spécifique de la communauté d’activation.
-
-Lorsque tous les sites de la communauté sont supprimés, supprimez enablementdb et scormenginedb à l’aide de MySQL Workbench.

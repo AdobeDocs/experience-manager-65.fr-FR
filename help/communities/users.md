@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -27,8 +27,6 @@ Dans AEM Communities, dans l’environnement de publication, les utilisateurs pe
 * Créez des sous-communautés dans le site de la communauté (voir [groupes communautaires](creating-groups.md)).
 
 * [Modérer](moderation.md) contenu généré par l’utilisateur.
-
-* Be [ressource d&#39;activation](resources.md) contacts.
 
 * Be [privilégié](#privileged-members-group) pour créer des entrées pour les blogs, les calendriers, les Q&amp;R et les forums.
 
@@ -76,12 +74,10 @@ Pour gérer les utilisateurs et les groupes d’utilisateurs enregistrés dans l
 
 | Si Membre du groupe... | Rôle Principal |
 |---|---|
-| administrators | Le groupe administrateurs comprend les administrateurs système qui disposent de toutes les fonctionnalités d’un administrateur de la communauté ainsi que de la possibilité de gérer le groupe Administrateurs de la communauté. |
+| administrateurs | Le groupe administrateurs comprend les administrateurs système qui disposent de toutes les fonctionnalités d’un administrateur de la communauté ainsi que de la possibilité de gérer le groupe Administrateurs de la communauté. |
 | Administrateurs de la communauté | Le groupe Administrateurs de la communauté devient automatiquement membre de tous les sites de la communauté et de tous les groupes de la communauté créés sur le site. Le groupe Administrateurs est un membre initial du groupe Administrateurs de la communauté. Dans l’environnement de création, les administrateurs de communauté peuvent créer des sites de communauté, gérer des sites, gérer les membres (ils peuvent interdire des membres de la communauté) et modérer le contenu. |
 | Communauté &lt;*nom du site*> Gestionnaire de sites | Le gestionnaire de contenu du site de la communauté peut effectuer des AEM classiques de création, de création de contenu et de modification de pages pour un site de la communauté. |
-| Chefs d’activation de la communauté | Le groupe Chefs d’activation de la communauté se compose d’utilisateurs pouvant être affectés à la gestion du groupe Gestionnaires d’activation d’un site de la communauté. |
-| Communauté &lt;*nom du site* > Gestionnaire de sites | Le groupe Chefs d’activation du site de la communauté est constitué d’utilisateurs chargés de gérer l’activation d’un site de la communauté. [ressources](resources.md). |
-| Aucune | Un visiteur anonyme du site ne peut pas accéder à l’environnement de création. |
+| Aucun | Un visiteur anonyme du site ne peut pas accéder à l’environnement de création. |
 
 ### Administrateurs système {#system-administrators}
 
@@ -120,7 +116,7 @@ Dans l’environnement de publication, en fonction de la variable [paramètres](
 | Communauté &lt;*nom du site*> &lt;*nom du groupe*> Membres | Un membre d’un groupe communautaire est un membre de la communauté qui a rejoint un groupe communautaire ouvert ou qui a été invité à un groupe communautaire fermé. Ils disposent des capacités d’un membre pour ce groupe de la communauté dans le site. |
 | Communauté &lt;*nom du site*> Administrateurs de groupes | Un administrateur de groupe de sites de communauté est un membre de communauté de confiance qui est chargé de créer et de gérer des sous-communautés (groupes) au sein d’un site de communauté. Il comprend la possibilité de fournir une modération contextuelle. |
 | *Groupe de sécurité des membres privilégiés* | Groupe d’utilisateurs créé et géré manuellement dans le but de limiter la création de contenu. Voir [Groupe de membres privilégiés](#privileged-members-group). |
-| Aucune | Un visiteur anonyme, qui découvre le site, peut afficher et rechercher des sites communautaires qui autorisent un accès anonyme. Pour participer et publier du contenu, l’utilisateur doit s’enregistrer (s’il y a lieu) et devenir membre de la communauté. |
+| Aucun | Un visiteur anonyme, qui découvre le site, peut afficher et rechercher des sites communautaires qui autorisent un accès anonyme. Pour participer et publier du contenu, l’utilisateur doit s’enregistrer (s’il y a lieu) et devenir membre de la communauté. |
 
 ### Affectation de membres aux rôles du groupe de publication {#assigning-members-to-publish-group-roles}
 
@@ -196,43 +192,11 @@ Quatre consoles distinctes sont disponibles uniquement dans l’environnement de
 | manage | utilisateurs sur l’auteur | groupes d’utilisateurs sur l’auteur | membres sur publication | groupes de membres lors de la publication |
 | require | autorisation d’administrateur | autorisation d’administrateur | autorisation d’administrateur, service tunnel, synchronisation des utilisateurs pour la ferme de publication | autorisation d’administrateur, service tunnel, synchronisation des utilisateurs pour la ferme de publication |
 
-### Rôle du gestionnaire d’activation de la communauté {#community-enablement-manager-role}
-
-La possibilité pour un visiteur du site de s’inscrire lui-même n’est généralement pas autorisée pour un [communauté d&#39;activation](overview.md#enablement-community) car chaque membre a des coûts. Les apprenants et les ressources d’activation sont gérés par un utilisateur affecté à la fonction [rôle](#author-group-roles) de `enablement manager` [lors de la création du site](sites-console.md#enablement) sur l’auteur (ajouté en tant que membre du groupe `Community <site-name> Siteenablementmanagers`). Le `enablement manager` est également responsable de [attribution de ressources d’apprentissage](resources.md) aux membres de la communauté sur l’auteur.
-
-Uniquement les utilisateurs qui sont membres du `Community Enablement Managers` peut être sélectionné en tant que `enablement manager` pour un site communautaire spécifique.
-
-Pour créer un utilisateur auquel le rôle peut être attribué `Community Site Enablement Manager`, utilisez la console de sécurité de l’IU classique pour spécifier le chemin d’accès :
-
-Sur une instance d’auteur :
-
-1. Connecté avec les privilèges d’administrateur, accédez à la console de sécurité de l’interface utilisateur classique.
-
-   Par exemple : [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-
-2. Dans le menu Modifier, sélectionnez **[!UICONTROL Créer un utilisateur]**.
-3. Renseignez les `Create User` boîte de dialogue.
-   * Le chemin doit être `/home/users/community`.
-4. Sélectionnez **[!UICONTROL Créer]**.
-
-   ![create-community-user](assets/create-community-user.png)
-
-* Dans le volet de gauche, recherchez l’utilisateur nouvellement créé et sélectionnez-le pour l’afficher dans le volet de droite.
-
-   ![community-user](assets/view-community-user.png)
-
-Dans le volet de gauche :
-
-1. Effacez la zone de recherche et sélectionnez **[!UICONTROL Masquer les utilisateurs]**.
-2. Localisez et faites glisser `community-enablementmanagers` au **[!UICONTROL Groupes]** de l’utilisateur affiché dans le volet de droite.
-
-   ![assign-group](assets/assign-group.png)
-
 ### Rôle Administrateurs de la communauté {#community-administrators-role}
 
 Comme indiqué dans la variable [Rôles du groupe de création](#author-group-roles) , les membres du groupe Administrateurs de la communauté peuvent créer des sites de la communauté, gérer les sites, gérer les membres (ils peuvent interdire des membres de la communauté) et modérer le contenu.
 
-Suivez les mêmes étapes que pour créer et affecter un utilisateur au rôle de [gestionnaire d&#39;activation](#communitysiteenablementmanagerrole), mais ajoutez c `ommunity-administrators` groupe sous l’onglet Groupes de l’utilisateur.
+Suivez les mêmes étapes que pour créer et affecter un utilisateur au rôle de gestionnaire d’activation, mais ajoutez c `ommunity-administrators` groupe sous l’onglet Groupes de l’utilisateur.
 
 ### Intégration LDAP {#ldap-integration}
 
@@ -250,7 +214,7 @@ Voici quelques détails de configuration spécifiques aux membres de la communau
    * Définissez les propriétés suivantes :
 
       * **[!UICONTROL Abonnement automatique des utilisateurs]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Préfixe de chemin d’accès utilisateur]**: `/community`
+      * **[!UICONTROL Préfixe du chemin d’accès de l’utilisateur]**: `/community`
       * **[!UICONTROL Préfixe de chemin d’accès au groupe]**: `/community`
 
 4. [Module de connexion externe](../../help/sites-administering/ldap-config.md#the-external-login-module)

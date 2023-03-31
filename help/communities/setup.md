@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '673'
 ht-degree: 3%
 
 ---
@@ -51,8 +51,6 @@ Ce tutoriel crée une [site de la communauté d&#39;engagement](overview.md#enga
 Pour vous assurer que le dernier Feature Pack est installé, rendez-vous sur :
 
 * [Dernières versions](deploy-communities.md#latest-releases)
-
-Pour un tutoriel qui crée un [site de la communauté d&#39;activation](overview.md#enablement-community), visite [Prise en main d’AEM Communities pour l’activation](getting-started-enablement.md).
 
 ## Configuration d’Analytics {#configure-analytics}
 
@@ -130,7 +128,7 @@ Voir [Connexion aux réseaux sociaux avec Facebook et Twitter](social-login.md).
 
 ## Créer des balises de tutoriel {#create-tutorial-tags}
 
-Créez des balises à utiliser pour les tutoriels d’engagement et d’activation, à l’aide de l’espace de noms de balise de `Tutorial`.
+Créez des balises à utiliser pour les tutoriels d’interaction, à l’aide de l’espace de noms de balise de `Tutorial`.
 
 Utilisez la variable [Console Balisage](../../help/sites-administering/tags.md#tagging-console) pour créer les balises suivantes :
 

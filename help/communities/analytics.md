@@ -12,10 +12,10 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0f7d4aba0b8c79039918e1338007a4277a5030f2
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '2731'
-ht-degree: 5%
+source-wordcount: '2694'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Analytics et Adobe Experience Manager (AEM) sont les deux solutions de Ado
 
 Adobe Analytics peut être configuré pour AEM Communities afin que, lorsqu’un membre interagit avec les fonctionnalités de communauté prises en charge, des événements soient envoyés à Adobe Analytics à partir duquel des rapports sont générés.
 
-Par exemple, lorsqu’un membre d’un site de communauté d’activation affiche une ressource vidéo qui lui est attribuée, le lecteur de ressources envoie des événements à Analytics, y compris des données de pulsation vidéo. Sur le site de la communauté, les administrateurs peuvent consulter divers rapports concernant la lecture de la vidéo.
+Par exemple, sur le site de la communauté, les administrateurs peuvent consulter divers rapports concernant la lecture de la vidéo.
 
 En outre, les analyses sont nécessaires pour :
 
@@ -44,7 +44,6 @@ En outre, les analyses sont nécessaires pour :
 
 Fonctionnalités de communautés prises en charge :
 
-* [Ressources d’activation](/help/communities/resources.md)
 * [Forum](/help/communities/forum.md)
 * [Q&amp;R](/help/communities/working-with-qna.md)
 * [Blog](/help/communities/blog-feature.md)
@@ -63,7 +62,7 @@ Cette section de la documentation décrit comment connecter une suite de rapport
 1. [Publier](#publish-community-site-and-analytics-cloud-service) site de la communauté
 1. Configurer [import de données de rapport](#obtaining-reports-from-analytics) d’Adobe Analytics au site de la communauté
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Pour configurer les fonctionnalités d’Analytics for Communities, il est nécessaire de travailler avec le représentant de votre compte pour configurer un compte Adobe Analytics et [suite de rapports](#adobe-analytics-report-suite-for-video-reporting). Une fois établies, les informations suivantes doivent être disponibles :
 
@@ -75,7 +74,7 @@ Pour configurer les fonctionnalités d’Analytics for Communities, il est néce
 
    Nom d’utilisateur de connexion de l’utilisateur autorisé à gérer le compte Analytics (doit inclure les privilèges d’accès au service Web).
 
-* **Mot de passe**
+* **Password**
 
    Mot de passe de connexion de l’utilisateur autorisé.
 
@@ -105,11 +104,11 @@ En vous connectant à [Adobe Experience Cloud](https://experienceleague.adobe.co
 
    * type **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * sauf **`Counter (no subrelations)`**
    * Peut réutiliser (renommer) des événements existants ou en créer de nouveaux à utiliser pour les fonctionnalités de communauté
 
 
-* [Gestion des vidéos](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Gestion des vidéos](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=fr)
 
    * Console Rapports vidéo
 
@@ -151,7 +150,7 @@ Pour activer la création de rapports Video Heartbeat après [configuration de l
 * Activer [Analytics pour un site communautaire](#enable-analytics-for-a-community-site)
 * Associez la variable `Marketing Cloud Org Id` avec le site de la communauté
 
-Le `Marketing Cloud Org Id` peut être saisie au moment de la [création de site communautaire](/help/communities/sites-console.md#enablement) ou plus tard [modification](/help/communities/sites-console.md#modifying-site-properties) les propriétés du site de la communauté.
+Le `Marketing Cloud Org Id` peut être saisie au moment de la [création de site communautaire](/help/communities/sites-console.md) ou plus tard [modification](/help/communities/sites-console.md#modifying-site-properties) les propriétés du site de la communauté.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -180,7 +179,7 @@ Dans la boîte de dialogue Créer une configuration , les valeurs à renseigner 
 * **Titre**
 
    (Obligatoire) Titre affiché de la configuration.
-Par exemple, saisissez *Analyses de la communauté d’activation*
+Par exemple, saisissez *Analyse de la communauté*
 
 * **Nom**
 
@@ -209,7 +208,7 @@ La création initiale d’une nouvelle configuration Analytics entraîne l’aff
 
    Nom d’utilisateur de connexion de l’utilisateur autorisé à gérer le compte Analytics.
 
-* **Mot de passe**
+* **Password**
 
    Mot de passe de connexion de l’utilisateur autorisé.
 
@@ -242,9 +241,9 @@ Pour enregistrer les paramètres :
       * Vérifiez que les entrées ne contiennent pas d’espaces de début.
       * Essayez un autre centre de données.
 
-* **Cliquez sur OK**.
+* Sélectionnez **OK**.
 
-   ![analytics-enablement-settings](assets/analytics-settings1.png)
+   ![analytics-settings](assets/analytics-settings1.png)
 
 ### Créer une structure {#create-framework}
 
@@ -256,7 +255,7 @@ Après une configuration réussie de la connexion de base à Adobe Analytics, il
 
 * **Titre**
 
-   (Obligatoire) Titre affiché de la structure. Par exemple, saisissez *Structure de la communauté d’activation*.
+   (Obligatoire) Titre affiché de la structure. Par exemple, saisissez *Cadre communautaire*.
 
 * **Nom**
 
@@ -275,7 +274,7 @@ La création de la structure Analytics ouvre la structure pour la configuration.
 
 L’objectif de la structure est de mapper AEM variables aux variables Analytics (eVars et événements). Les variables Analytics disponibles pour le mappage sont les suivantes : [défini dans la suite de rapports](#adobe-analytics-report-suite-for-video-reporting).
 
-![analytics-enablement-framework](assets/analytics-framework1.png)
+![analytics-framework](assets/analytics-framework1.png)
 
 ### Sélectionner une suite de rapports {#select-report-suite}
 
@@ -307,7 +306,7 @@ Le sidekick n’est pas nécessaire et peut être réduit afin de ne pas entrave
 
 1. Choisissez une `Run Mode`.
 
-1. Sélectionnez **Publier**.
+1. Sélectionner **Publier**.
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -389,7 +388,7 @@ Une fois le site de la communauté enregistré avec Analytics activé et la stru
 
 Si vous utilisez une suite de rapports existante qui a mappé l’une des variables d’evar1 à evar11 et event1 à event7, il sera nécessaire de [suppression des variables AEM](#modifying-analytics-variable-mapping) et restaurer le mappage d’origine.
 
-Voici un exemple de mappages par défaut après avoir suivi les [tutoriel de prise en main](/help/communities/getting-started-enablement.md):
+Voici un exemple de mappages par défaut :
 
 ![map-analytics](assets/map-analytics1.png)
 
@@ -425,7 +424,7 @@ Voici un exemple de mappages par défaut après avoir suivi les [tutoriel de pri
   </tr>
   <tr>
    <td><strong>event1<br /> Lecture de ressource</strong></td>
-   <td><em>(une)</em></td>
+   <td><em>(a)</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
@@ -438,7 +437,7 @@ Voici un exemple de mappages par défaut après avoir suivi les [tutoriel de pri
   </tr>
   <tr>
    <td><strong>event2<br /> SCFView</strong></td>
-   <td><em>(une)</em></td>
+   <td><em>(a)</em></td>
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>

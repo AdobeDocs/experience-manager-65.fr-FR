@@ -1,5 +1,5 @@
 ---
-title: Présentation d’AEM Communities
+title: Présentation d’AEM Communities
 seo-title: AEM Communities Overview
 description: Présentation des fonctionnalités et de la configuration d’AEM Communities
 seo-description: An overview of AEM Communities features and setup
@@ -11,20 +11,16 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 5%
+source-wordcount: '1273'
+ht-degree: 1%
 
 ---
 
-# Présentation d’AEM Communities {#aem-communities-overview}
+# Présentation d’AEM Communities {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Communities permet de créer rapidement un site de communauté local doté de performances et d’une gestion de sites améliorées, et qui encourage les visiteurs à devenir membres de la communauté.
-
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
+Adobe Experience Manager (AEM) Communities permet de créer rapidement un site de communauté on-premise qui améliore les performances, améliore la gestion du site et encourage la conversion des visiteurs du site en membres de la communauté de grande valeur.
 
 ## Fonctions de communauté {#communities-features}
 
@@ -40,11 +36,10 @@ AEM Communities permet le développement d’une relation avec les visiteurs du 
 * **Partage de fichiers**,
 * **Notifications** et **flux d’activités**,
 * Autorisations **balisage** (@mention) autres membres enregistrés dans Contenu généré par l’utilisateur, pour attirer leur attention.
-* Supports **navigation clavier** sur les composants d’activation (par exemple, Lecture de catalogue et de cours, Affectations, Bibliothèque de fichiers) .
 
 Les fonctionnalités de communauté peuvent être démontrées à l’aide de la fonction [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) disponible publiquement sur GitHub.com ou avec la nouvelle implémentation de référence We.Retail.
 
-## Sites communautaires {#community-sites}
+## Sites de la communauté {#community-sites}
 
 Un site communautaire est un site AEM créé à l’aide d’un assistant simple qui génère un site web avec de nombreuses fonctionnalités courantes pré-câblées dans le site.
 
@@ -58,7 +53,7 @@ Le [assistant de création de site](/help/communities/sites-console.md):
 * Utilise les paramètres à configurer :
 
    * modération
-   * Connexion
+   * connexion
    * traduction
 
 * Fournit les fonctionnalités essentielles :
@@ -98,14 +93,14 @@ Pour en savoir plus sur la persistance du contenu de la communauté et les dépl
 
 Dans l’environnement de création, la console de navigation globale permet d’accéder au [Console des communautés](/help/communities/consoles.md), qui contient :
 
-* La console [Sites](/help/communities/sites-console.md)
+* [Sites](/help/communities/sites-console.md) console
 
    * Création de site
    * Modification du site
    * Gestion de site
    * [Groupes communautaires](/help/communities/groups.md) console
 
-* [Console Modération](/help/communities/moderation.md)
+* [Modération](/help/communities/moderation.md) console
 
    * Interface utilisateur de modération en bloc courante pour les environnements de création et de publication.
    * Nouveaux critères de filtrage.
@@ -119,11 +114,6 @@ Dans l’environnement de création, la console de navigation globale permet d�
 * [Rapports](/help/communities/reports.md) console
 
    * Permet de générer des rapports sur les affectations, les publications et les vues.
-
-* [Ressources](/help/communities/resources.md) console
-
-   * Permet de créer des ressources d’activation et des parcours d’apprentissage.
-   * Permet d’accéder aux rapports sur les ressources d’activation et les parcours de formation.
 
 La console d’outils globale permet d’accéder aux outils Communities suivants :
 
@@ -183,21 +173,19 @@ Le [composants de communauté](/help/communities/author-communities.md) à parti
 
 Le [guide des composants de communauté](/help/communities/components-guide.md) est disponible pour l’exploration interactive des composants.
 
-## Types de communautés {#types-of-communities}
-
-### Communauté d’engagement {#engagement-community}
+## Communauté d’engagement {#engagement-community}
 
 Une communauté d’engagement est un site communautaire axé sur l’interaction entre les clients et leur permettant d’informer, de solliciter des commentaires et d’interagir en tant que membres de la communauté.
 
 Les caractéristiques d’une communauté d’engagement peuvent être les suivantes :
 
-* La connexion
+* Connexion
 * Message
 * Forums
 * Commentaires
 * Révisions
-* Evaluations
-* Vote
+* Évaluations
+* Votant
 * Blogs
 * Groupes
 * Calendriers
@@ -208,23 +196,6 @@ Les caractéristiques d’une communauté d’engagement peuvent être les suiva
 * Rapports Analytics
 
 Pour découvrir la facilité de création rapide d’une nouvelle communauté d’engagement, rendez-vous sur la page [Prise en main d’AEM Communities](/help/communities/getting-started.md).
-
-### Communauté d’activation {#enablement-community}
-
-Une communauté d’activation est un site communautaire qui comprend des fonctionnalités d’apprentissage en ligne.
-
-Les fonctionnalités d’une communauté d’activation peuvent être les suivantes :
-
-* Toutes les fonctionnalités d’une [communauté d&#39;engagement](#engagement-community).
-* la capacité d’attribuer du contenu et de l’apprentissage. aux membres et aux groupes de membres.
-* Prend en charge le contenu SCORM, comme les questionnaires et les tests.
-* Suivi de la fin des affectations.
-* Accès aux rapports et analyses.
-* La possibilité d’avoir une conversation sur une ressource d’apprentissage par le biais de forums, de messages, de commentaires et d’évaluations.
-
-Une communauté d’activation peut être créée lorsque la variable [Le module complémentaire d’activation est configuré.](/help/communities/enablement.md), qui nécessite des licences supplémentaires pour une utilisation dans un environnement de production. Un site de communauté d’activation comprend la variable [fonction d&#39;attribution](#community-functions).
-
-Pour découvrir la facilité de création d’une communauté d’activation, rendez-vous sur la page [Prise en main d’AEM Communities pour l’activation](/help/communities/getting-started-enablement.md).
 
 ## AEM Demo Machine {#aem-demo-machine}
 

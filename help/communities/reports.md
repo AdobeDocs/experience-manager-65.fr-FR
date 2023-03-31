@@ -1,5 +1,5 @@
 ---
-title: 'Console Rapports '
+title: Console Rapports
 seo-title: Reports Console
 description: Découvrez comment accéder aux rapports
 seo-description: Learn how to access reports
@@ -12,24 +12,20 @@ discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 8%
+source-wordcount: '381'
+ht-degree: 9%
 
 ---
 
-# Console Rapports  {#reports-console}
+# Console Rapports {#reports-console}
 
 ## Présentation {#overview}
 
 Pour AEM Communities, plusieurs rapports sont accessibles de plusieurs manières à partir de l’environnement de création.
 
 En général, les différents rapports sont les suivants :
-
-* [Rapport des affectations](#assignments-report)
-
-   Pour un [communauté d&#39;activation](/help/communities/overview.md#enablement-community), fournit un aperçu de l’avancement des apprenants sur leurs affectations, y compris un score associé lors de la mise en oeuvre de la norme SCORM.
 
 * [Rapport des vues](#views-report)
 
@@ -38,8 +34,6 @@ En général, les différents rapports sont les suivants :
 * [Rapport des publications](#posts-report)
 
    Fournit un graphique des différents types de publications par membres de la communauté sur n’importe quel site de la communauté.
-
-When [Adobe Analytics est activé](/help/communities/sites-console.md#analytics), les rapports comprennent le nombre de vues, lectures, commentaires et évaluations pour chaque ressource d’activation au fil du temps.
 
 Les rapports tabulaires peuvent être exportés au format .csv pour un traitement ultérieur.
 
@@ -64,59 +58,6 @@ Les rapports tabulaires peuvent être exportés au format .csv pour un traitemen
 
 
 ![rapports](assets/reports1.png)
-
-### Rapports pour les ressources d’activation et les chemins d’apprentissage {#reports-for-enablement-resources-and-learning-paths}
-
-* À partir de la navigation globale : **[!UICONTROL Navigation]** > **[!UICONTROL Communautés]** >  **[!UICONTROL Ressources]**
-
-* Sélectionnez un site de la communauté d’activation existant :
-
-   * Sélectionner **Rapport** pour générer des rapports couvrant toutes les ressources d&#39;activation.
-   * Sélectionnez un chemin d’apprentissage d’activation.
-   * Sélectionner **Rapport** pour générer des rapports pour :
-
-      * Ressources d’activation incluses.
-      * Les apprenants affectés au chemin d’apprentissage.
-
-* Ces rapports fournissent les éléments suivants :
-
-   * Données de tableau, téléchargeables au format CSV :
-
-      * Identification de l’apprenant
-      * Leur statut
-      * Attribué ou accessible par le biais du catalogue
-      * Nombre de commentaires effectués
-      * Note de l&#39;étoile donnée
-
-Pour plus d’informations, voir [Section Rapports](/help/communities/resources.md#report) de la console Ressources.
-
-## Rapport des affectations {#assignments-report}
-
-La console Affectations permet de filtrer les rapports par site de communauté d’activation, utilisateurs ou groupes, et par affectation.
-
-Le rapport fournit des informations sur leurs progrès ainsi que sur les commentaires ou évaluations fournis.
-
-![assignment-report](assets/assignment-report.png)
-
-Sélectionnez les critères du rapport :
-
-* **Site**
-
-   Sélectionnez un site de la communauté d’activation.
-
-* **Utilisateur ou groupe**
-   * Sélectionnez Utilisateur pour générer un rapport destiné à un apprenant.
-   * Sélectionnez Groupe pour générer un rapport pour un groupe d’apprenants.
-
-   Le service tunnel accède aux membres et aux groupes de membres à partir de l’environnement de publication.
-
-* **Affectation**
-
-   Faites votre choix parmi les ressources d’activation affectées aux apprenants sélectionnés.
-
-Sélectionner **Générer** pour créer le rapport :
-
-![generate-report](assets/generate-assignment-report.png)
 
 ## Rapport des vues {#views-report}
 

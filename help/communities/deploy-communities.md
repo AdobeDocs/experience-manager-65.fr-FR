@@ -11,16 +11,16 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 5%
+source-wordcount: '1699'
+ht-degree: 4%
 
 ---
 
 # Déploiement de Communities {#deploying-communities}
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 * [Plateforme AEM 6.5](/help/sites-deploying/deploy.md)
 
@@ -76,13 +76,6 @@ ht-degree: 5%
          * Contenu généré par l’utilisateur visible uniquement sur l’instance AEM ou la grappe dans laquelle il a été saisi
 
          * La valeur par défaut est JSRP
-   Pour le **[fonction d’activation](/help/communities/overview.md#enablement-community)**
-
-   * [Installation et configuration de FFmpeg](/help/communities/ffmpeg.md)
-   * [Installation du pilote JDBC pour MySQL](#jdbc-driver-for-mysql)
-   * [Installation d’AEM Communities SCORM-Engine](#scorm-package)
-   * [Installation et configuration de MySQL pour activation](/help/communities/mysql.md)
-
 
 
 
@@ -95,7 +88,7 @@ AEM 6.5 Communities GA inclut le package Communities. Pour en savoir plus sur le
 
 À compter de la version 6.4 d’AEM, les mises à jour apportées aux communautés sont fournies dans le cadre d’AEM Cumulative Fix Packs et Service Packs.
 
-Pour connaître les dernières mises à jour d’AEM 6.5, voir [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+Pour connaître les dernières mises à jour d’AEM 6.5, voir [Packs de correctifs cumulatifs et Service Packs Adobe Experience Manager 6.4](https://helpx.adobe.com/fr/experience-manager/aem-releases-updates.html).
 
 ### Historique des versions {#version-history}
 
@@ -103,9 +96,8 @@ Comme pour AEM 6.4 et versions ultérieures, les fonctionnalités et correctifs 
 
 ### Pilote JDBC pour MySQL {#jdbc-driver-for-mysql}
 
-Deux fonctionnalités de Communities utilisent une base de données MySQL :
+Une fonctionnalité Communities utilise une base de données MySQL :
 
-* Pour [activation](/help/communities/enablement.md): enregistrement des activités SCORM et des apprenants
 * Pour [DSRP](/help/communities/dsrp.md): stockage du contenu généré par l’utilisateur
 
 Le connecteur MySQL doit être obtenu et installé séparément.
@@ -138,28 +130,7 @@ Vous trouverez plus d’informations sur l’installation des lots sur la page [
 
 ![connector-bundle](assets/connector-bundle.png)
 
-### Package SCORM {#scorm-package}
 
-SCORM (Share Content Object Reference Model) est un ensemble de normes et de spécifications pour l’apprentissage en ligne. SCORM définit également la manière dont le contenu peut être compressé dans un fichier ZIP transférable.
-
-Le moteur SCORM AEM Communities est requis pour la variable [activation](/help/communities/overview.md#enablement-community) fonction . Packages de notation pris en charge sur AEM 6.5 Communities :
-
-* [cq-social-scorm-package, version 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) qui inclut la variable [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) moteur.
-
-**Pour installer un package SCORM**
-
-1. Installez le [cq-social-scorm-package, version 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)  du partage de modules.
-1. Télécharger `/libs/social/config/scorm/database_scormengine_data.sql` à partir de l’instance cq et exécutez-la dans le serveur mysql pour créer un schéma scormEngineDB mis à niveau.
-1. Ajouter `/content/communities/scorm/RecordResults` dans la propriété Chemins exclus du filtre CSRF de `https://<hostname>:<port>/system/console/configMgr` sur les éditeurs.
-
-
-#### Journalisation SCORM {#scorm-logging}
-
-Lors de l’installation, toutes les activités d’activation sont généreusement consignées dans la console système.
-
-Si vous le souhaitez, le niveau de journal peut être défini sur WARN pour la variable `RusticiSoftware.*` module.
-
-Pour utiliser les journaux, voir [Utilisation des enregistrements d’audit et des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ### AEM MLS avancés {#aem-advanced-mls}
 
@@ -394,13 +365,13 @@ En particulier, veillez à utiliser le nom de serveur correct, et non `localhost
 Si vous utilisez un Dispatcher, voir :
 
 * AEM [Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html) documentation
-* [Installation de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
+* [Installation de Dispatcher](https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher-install.html)
 * [Configuration de Dispatcher pour Communities](/help/communities/dispatcher.md)
 * [Problèmes connus](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
-## Documentation sur les communautés associée {#related-communities-documentation}
+## Documentation sur les communautés connexes {#related-communities-documentation}
 
-* Reportez-vous à la section [Administration des sites de communauté](/help/communities/administer-landing.md) pour en savoir plus sur la création d’un site de communauté, la configuration de modèles de sites de communauté, la modération du contenu de communauté, la gestion des membres et la configuration de la messagerie.
+* Visite [Administration des sites des communautés](/help/communities/administer-landing.md) pour en savoir plus sur la création d’un site communautaire, la configuration des modèles de site communautaire, la modération du contenu communautaire, la gestion des membres et la configuration de la messagerie.
 
 * Visite [Développement de communautés](/help/communities/communities.md) pour en savoir plus sur la structure de composants sociaux (SCF) et la personnalisation des composants et fonctionnalités des communautés.
 

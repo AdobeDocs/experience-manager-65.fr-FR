@@ -12,10 +12,10 @@ discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '3278'
-ht-degree: 5%
+source-wordcount: '3106'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +34,7 @@ Voir [Prise en main d’AEM Communities](/help/communities/getting-started.md) p
 >
 >Les menus principaux des communautés pour la création de [sites communautaires](/help/communities/sites-console.md), [modèles de site de communauté](/help/communities/sites.md), [modèles de groupe de communautés](/help/communities/tools-groups.md) et [fonctions de communauté](/help/communities/functions.md) sont utilisables uniquement dans l’environnement de création.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Avant de créer un site de communauté, il s’agit de *required* à :
 
@@ -62,10 +62,6 @@ La console Sites de communautés affiche tous les sites de communautés existant
 Pour créer un site de communauté, sélectionnez l’option **Créer** icône .
 
 Pour accéder à un site de communauté existant, afin de créer, modifier, publier, exporter ou ajouter un groupe imbriqué, sélectionnez l’icône de dossier du site.
-
-Par exemple, l’image suivante montre la console Sites des communautés principale affichant les dossiers de deux sites de communauté : [enable](/help/communities/getting-started-enablement.md) et [engager](/help/communities/getting-started.md):
-
-![site-console](assets/site-console.png)
 
 ## Création de site {#site-creation}
 
@@ -160,12 +156,11 @@ Lors de la création ou de la sélection d’une image, gardez à l’esprit les
 Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonctionnalités à configurer avant de passer à la dernière étape pour créer le site.
 
 * [GESTION DES UTILISATEURS](#user-management)
-* [Balisage](#tagging)
+* [BALISAGE](#tagging)
 * [RÔLES](#roles)
 * [MODÉRATION](#moderation)
 * [ANALYTICS](#analytics)
 * [TRADUCTION](#translation)
-* [ACTIVATION](#enablement)
 
 >[!NOTE]
 >
@@ -183,41 +178,35 @@ Le panneau Paramètres contient plusieurs sous-panneaux présentant les fonction
 
 ![createsitesettings](assets/createsitesettings.png)
 
->[!NOTE]
->
->Il est recommandé de : [sites de communauté d’activation](/help/communities/overview.md#enablement-community) être privé (contactez votre gestionnaire de compte pour plus d’informations).
->
->Un site communautaire est privé lorsque les visiteurs anonymes du site se voient refuser l’accès, qu’ils ne s’enregistrent pas eux-mêmes et qu’ils ne peuvent pas utiliser la connexion sociale.
-
 * **Autoriser l&#39;enregistrement d&#39;utilisateur**
 
    Si cette case est cochée, les visiteurs du site peuvent devenir membres de la communauté en s’inscrivant automatiquement.
 Si cette option n’est pas cochée, le site de la communauté est *restricted* et les visiteurs du site doivent être affectés au groupe des membres du site de la communauté, faire une demande ou recevoir une invitation par courrier électronique. Si cette option n’est pas cochée, l’accès anonyme ne doit pas être autorisé.
-Décochez une *private* site de la communauté. Cette option est cochée par défaut.
+Décochez une *private* site de la communauté. La valeur par défaut est cochée.
 
 * **Autoriser l&#39;accès anonyme**
 
    Si cette case est cochée, le site de la communauté est *ouvert* et tout visiteur du site peut y accéder.
 Si cette option n’est pas cochée, seuls les membres connectés peuvent accéder au site.
-Désélectionnez un site de communauté *privé*. Cette option est cochée par défaut.
+Désélectionnez un site de communauté *privé*. La valeur par défaut est cochée.
 
 * **Autoriser les messages**
 
    Si cette case est cochée, les membres peuvent envoyer des messages les uns aux autres et au groupe sur le site de la communauté.
 Si cette option n’est pas cochée, la messagerie n’est pas configurée pour la communauté.
-Cette option n’est pas cochée par défaut.
+La case par défaut est décochée.
 
 * **Autoriser les connexions sociales : Facebook**
 
    Si cette case est cochée, les visiteurs du site peuvent se connecter à l’aide des informations d’identification de leur compte Facebook. Le [Configuration du cloud facebook](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) doit être configuré pour ajouter des utilisateurs au groupe de membres du site de la communauté une fois le site de la communauté créé.
 Si cette option n’est pas cochée, aucune connexion Facebook n’est présentée.
-Laissez la case décochée pour un événement *private* site de la communauté. Cette option n’est pas cochée par défaut.
+Laissez la case décochée pour un événement *private* site de la communauté. La case par défaut est décochée.
 
 * **Autoriser les connexions sociales : Twitter**
 
    Si cette case est cochée, les visiteurs du site peuvent se connecter à l’aide des informations d’identification de leur compte Twitter. Le [Configuration du cloud twitter](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) doit être configuré pour ajouter des utilisateurs au groupe de membres du site de la communauté une fois le site de la communauté créé.
 Si cette option n’est pas cochée, aucune connexion Twitter n’est présentée.
-Laissez la case décochée pour un événement *private* site de la communauté. Cette option n’est pas cochée par défaut.
+Laissez la case décochée pour un événement *private* site de la communauté. La case par défaut est décochée.
 
 >[!NOTE]
 >
@@ -225,13 +214,13 @@ Laissez la case décochée pour un événement *private* site de la communauté.
 >
 >Bien que des exemples de configurations Facebook et Twitter puissent exister et être sélectionnables, pour un [environnement de production](/help/sites-administering/production-ready.md), il est nécessaire de créer des applications Facebook et Twitter personnalisées. Voir [Connexion aux réseaux sociaux avec Facebook et Twitter](/help/communities/social-login.md).
 
-#### Balisage {#tagging}
+#### BALISAGE {#tagging}
 
 ![site-tagging](assets/site-tagging.png)
 
 Les balises qui peuvent être appliquées au contenu de la communauté sont contrôlées en sélectionnant Espaces de noms de balise précédemment définis via la variable [Console Balisage](/help/sites-administering/tags.md#tagging-console).
 
-En outre, la sélection des espaces de noms de balise pour le site de la communauté limite la sélection présentée lors de la définition des catalogues et des ressources. Voir [Balisage des ressources d’activation](/help/communities/tag-resources.md) pour obtenir des informations importantes.
+En outre, la sélection des espaces de noms de balise pour le site de la communauté limite la sélection présentée lors de la définition des catalogues et des ressources.
 
 * zone de recherche de texte : Commencez à saisir pour identifier les balises pouvant être utilisées sur le site.
 
@@ -267,7 +256,7 @@ Le paramètre global de modération du contenu généré par l’utilisateur est
 
 * **Le contenu est prémodéré**
 
-   Si cette case est cochée, le contenu de la communauté publié n’apparaîtra pas tant qu’il n’aura pas été approuvé par un modérateur. Cette option n’est pas cochée par défaut. Pour plus d’informations, voir [Modération de contenu de la communauté](/help/communities/moderate-ugc.md#premoderation).
+   Si cette case est cochée, le contenu de la communauté publié n’apparaîtra pas tant qu’il n’aura pas été approuvé par un modérateur. La case par défaut est décochée. Pour plus d’informations, voir [Modération de contenu de la communauté](/help/communities/moderate-ugc.md#premoderation).
 
 * **Seuil de marquage avant que le contenu ne soit masqué**
 
@@ -280,7 +269,7 @@ Le paramètre global de modération du contenu généré par l’utilisateur est
 * **Enable Analytics (Activer Adobe Analytics)**
 
    Disponible uniquement lorsque Adobe Analytics a été [configuré](/help/communities/analytics.md) pour les fonctionnalités de Communities.
-Cette option n’est pas cochée par défaut. Lorsque cette case est cochée, un menu de sélection supplémentaire s’affiche :
+La case par défaut est décochée. Lorsque cette case est cochée, un menu de sélection supplémentaire s’affiche :
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -350,21 +339,6 @@ Si cette option est sélectionnée, le contenu n’est pas traduit tant qu’une
    * `Always show contributions in the original language` (par défaut)
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
-
-#### ACTIVATION {#enablement}
-
-![activation du site](assets/site-enablement.png)
-
-Le `ENABLEMENT`Les paramètres s’appliquent lorsque le modèle de site de communauté choisi inclut la variable [fonction d&#39;attribution](/help/communities/functions.md#assignments-function), disponible lorsque les fonctionnalités d’activation sont sous licence et [configuré](/help/communities/enablement.md). Le modèle de site de référence qui comprend la fonction Affectations est `Reference Structured Learning Site Template.`
-
-* **Chefs d’activation**
-(Obligatoire) Seuls les membres de la variable `Community Enablementmanagers` sont disponibles pour être sélectionnés afin de gérer cette communauté d’activation. Les gestionnaires d’activation sont chargés d’affecter des membres aux ressources. Voir aussi [Gestion des utilisateurs et des groupes d’utilisateurs](/help/communities/users.md).
-
-* **ID d’entreprise Marketing Cloud**
-
-   (facultatif) L’identifiant d’un [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) licence.
-
-* Sélectionnez **Suivant**.
 
 ### Étape 4 : Créer un site de communautés {#step-create-communities-site}
 
@@ -476,7 +450,7 @@ Le panneau CONCEPTION permet d’appliquer un nouveau thème :
 
 Le panneau PARAMÈTRES permet d’accéder à la plupart des paramètres sous les sous-panneaux de l’ Étape 3 de la création d’un site de communauté :
 
-* [Gestion des utilisateurs](#user-management)
+* [User Management](#user-management)
 * [Balises](#tagging)
 * [Modération](#moderation)
 * [Rôles des membres](#roles)
@@ -486,12 +460,6 @@ Le panneau PARAMÈTRES permet d’accéder à la plupart des paramètres sous le
 ### Modifier la miniature {#modify-thumbnail}
 
 Le panneau MINIATURE permet de charger une image représentant le site dans la console Sites des communautés .
-
-### Modifier l’activation {#modify-enablement}
-
-Le panneau ACTIVATION permet d’accéder aux paramètres fournis lors de la création du site de la communauté.
-
-Voir [ACTIVATION](#enablement) description.
 
 ## Publication du site {#publishing-the-site}
 

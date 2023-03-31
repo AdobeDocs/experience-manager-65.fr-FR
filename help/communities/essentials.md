@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 19%
+source-wordcount: '207'
+ht-degree: 18%
 
 ---
 
@@ -33,17 +33,15 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 
    * [Aimer](essentials-liking.md)
    * [Évaluation](rating-basics.md)
-   * [Vote](essentials-voting.md)
+   * [Votant](essentials-voting.md)
    * *Sondage (n’est plus disponible)*
 
 ## Composants avec fonctions {#components-with-functions}
 
 * [Flux d’activités](essentials-activities.md)
-* [Affectations](essentials-assignments.md)
 * [Blog](blog-developer-basics.md) ( `Journal`)
 
 * [Calendrier](calendar-basics-for-developers.md)
-* [Catalogue](catalog-developer-essentials.md)
 * [Contenu proposé](essentials-featured.md)
 * [Bibliothèque de fichiers](essentials-file-library.md)
 * [Forum](essentials-forum.md)
@@ -55,13 +53,13 @@ Vous trouverez ci-dessous des liens vers des informations essentielles pour les 
 ## Fonctions {#features}
 
 * [Bibliothèques clientes](clientlibs.md)
-* [Sites communautaires](sites-for-developers.md)
+* [Sites de la communauté](sites-for-developers.md)
 * [Événements OSGi des composants](events.md)
 * [Chargement partiel des composants](sideloading.md)
 * [Message](essentials-messaging.md)
 * [Éditeur de texte enrichi](rte.md)
 * [Notation et badges](configure-scoring.md)
-* [Rechercher](search-implementation.md)
+* [Recherche](search-implementation.md)
 * [Graphique des réseaux sociaux](essentials-socialgraph.md)
 * [Fournisseur de ressources de stockage](srp-and-ugc.md) `(SRP)`
 
