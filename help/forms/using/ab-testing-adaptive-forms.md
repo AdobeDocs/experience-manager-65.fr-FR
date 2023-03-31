@@ -10,16 +10,17 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: ccbb6a33c2ee8029d2e82d9098c07de18af166ac
+source-git-commit: 294d12e7d1b5293f165a164ff1fcc624f7b2b648
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1568'
 ht-degree: 43%
 
 ---
 
 # Créer et gérer des tests A/B pour les formulaires adaptatifs{#create-and-manage-a-b-test-for-adaptive-forms}
 
-|Négatifs|[!BADGE Arrêt]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."}|
+[!BADGE Arrêt]{type=negative tooltip="Cette fonctionnalité est désormais en fin de vie."}
+
 <div class="preview"> Le test A/B pour la fonctionnalité de formulaires adaptatifs a atteint la fin de vie et n’est plus pris en charge. </div>
 
 ## Présentation {#overview-br}
