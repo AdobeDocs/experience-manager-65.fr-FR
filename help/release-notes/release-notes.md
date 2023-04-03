@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: 676472125cf472d42b792fae87dffe263e499014
+source-git-commit: 72b3eaea279911569dbd6b9acf41527111e9e53c
 workflow-type: tm+mt
-source-wordcount: '2605'
-ht-degree: 45%
+source-wordcount: '2665'
+ht-degree: 44%
 
 ---
 
@@ -271,6 +271,17 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 Ce module est nécessaire pour les client(e)s utilisant GraphQL. Il leur permet d’ajouter la définition d’index requise en fonction des fonctionnalités qu’ils ou elles utilisent réellement.
 
 * Mettez à jour vos requêtes GraphQL qui peuvent avoir utilisé un nom d’API personnalisé pour votre modèle de contenu afin d’utiliser plutôt le nom par défaut du modèle de contenu.
+
+* Une requête GraphQL peut utiliser la variable `damAssetLucene` plutôt que l’index `fragments` index. Il peut en résulter l’échec des requêtes GraphQL ou l’exécution de celles-ci peut prendre beaucoup de temps.
+
+   Pour résoudre le problème, `damAssetLucene` doit être configuré pour inclure les deux propriétés suivantes :
+
+   * `contentFragment`
+   * `model`
+
+   Une fois la définition d’index modifiée, une réindexation est requise (`reindex` = `true`).
+
+   Après ces étapes, les requêtes GraphQL doivent être plus rapides.
 
 * [!DNL Microsoft®® Windows Server 2019] ne prend pas en charge [!DNL MySQL 5.7] et [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] ne prend donc pas en charge les installations clé en main pour [!DNL AEM Forms 6.5.10.0].
 
