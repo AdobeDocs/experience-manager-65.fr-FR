@@ -6,9 +6,9 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 74535a6ad78abf795f55f1ba4e1123b58802aefe
+source-git-commit: 64a15e970bc72114c14ed60e4bec3e694584eb16
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3546'
 ht-degree: 58%
 
 ---
@@ -101,7 +101,7 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines v
 | Azul Zulu OpenJDK 8 - 64 bits | A : pris en charge `[3]` |  |
 
 1. Oracle est passé à un modèle de support à long terme (LTS) pour les produits Oracle Java SE. Java 9, Java 10 et Java 12 sont des versions non-LTS fournies par Oracle (voir la [feuille de route de la prise en charge d’Oracle Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement d’exploitation, Adobe assure uniquement la prise en charge des versions LTS de Java. La prise en charge et la distribution du JDK Oracle Java SE, y compris toutes les mises à jour de maintenance des versions LTS après la fin des mises à niveau publiques, seront directement prises en charge par Adobe pour tous les clients AEM utilisant la technologie Oracle Java SE. Consultez la section [Stratégie de prise en charge Java pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf) pour plus d’informations.
-
+   **Important : Java 11 restera pris en charge jusqu’en septembre 2026 au minimum.**
 
 1. IBM JRE est pris en charge uniquement avec le serveur d’applications WebSphere.
 
