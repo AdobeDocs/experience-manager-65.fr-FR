@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1178'
 ht-degree: 32%
 
 ---
@@ -62,7 +62,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   <tr>
    <td><strong>Étape 0</strong></td>
    <td>Analyse du flux de requêtes</td>
-   <td><p>Vous pouvez utiliser l’analyse des requêtes HTTP standard dans le navigateur pour analyser le flux de requêtes. Pour plus d’informations sur la manière d’effectuer cette analyse sur Chrome, voir :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>Vous pouvez utiliser l’analyse des requêtes HTTP standard dans le navigateur pour analyser le flux de requêtes. Pour plus d’informations sur la manière d’effectuer cette analyse sur Chrome, voir :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 2</strong></td>
@@ -212,7 +212,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Service de synchronisation d’Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Instances multiples de gestion des ressources numériques</a></li>
-     <li>Articles contenant des conseils pratiques d’amélioration de la performance <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">ici</a> et <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">ici</a>.<br /> </li>
+     <li>Article de conseils sur l’optimisation des performances <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   <tr>
    <td><strong>Étape 31</strong></td>
    <td>Utilisation du réseau de diffusion de contenu devant Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Utilisation du Dispatcher avec un CDN</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn">Utilisation du Dispatcher avec un CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 32</strong></td>
@@ -240,11 +240,11 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
    <td>Activation de la mise en cache potentielle des demandes</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Configuration générale du Dispatcher</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr">Configuration générale du Dispatcher</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache">Configuration du cache du Dispatcher</a></li>
     </ol> <p>Comment améliorer le ratio de cache ; rendre les requêtes pouvant être mises en cache (bonnes pratiques de Dispatcher)</p> <p>Tenez également compte des paramètres ci-dessous pour optimiser vos configurations de mise en cache.<br /> </p>
     <ol>
-     <li>Définir une règle de non-mise en cache pour les requêtes HTTP qui ne sont pas GET</li>
+     <li>Définir une règle de non-mise en cache pour la requête HTTP qui n’est pas GET</li>
      <li>Configurer les chaînes de requête pour qu’elles ne puissent pas être mises en cache</li>
      <li>Ne pas mettre en cache les URL avec des extensions manquantes</li>
      <li>En-têtes d’authentification du cache (possibles depuis la version 4.1.10 de Dispatcher)</li>
@@ -277,7 +277,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   <tr>
    <td><strong>Étape 39</strong></td>
    <td>Utilisation de la préconnexion pour réduire la surcharge de connexion</td>
-   <td>Voir la session Gem ci-dessus. En outre, une documentation supplémentaire prése connecte sur W3c :<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>Voir la session Gem ci-dessus. En outre, d’autres documents de préconnexion sur le W3c :<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Étapes 40 et 41</strong><br /> </td>
