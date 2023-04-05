@@ -6,10 +6,10 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
+source-git-commit: 8d4ff8bcb7df4770bc1ed7e7c2cad27befe3d175
 workflow-type: tm+mt
-source-wordcount: '3856'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -365,5 +365,5 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 
    ![Échec de l’extraction des références distantes de la ressource](assets/reference-report-failure.png)
 
-
+* Si les cookies ne sont pas envoyés du serveur Sites au serveur Assets dans Google Chrome, c’est parce que la connexion aux ressources ne s’effectue pas par HTTPS. Si vous n’utilisez pas HTTPS sur l’instance Assets, la variable `SameSite=None` Une fois que vous êtes authentifié auprès du serveur Assets, l’en-tête ne peut pas être ajouté à la réponse.
 
