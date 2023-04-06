@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
-workflow-type: ht
-source-wordcount: '3467'
-ht-degree: 100%
+source-git-commit: 25fe5e240fd7404cb07375325e1f7b6a32923bfd
+workflow-type: tm+mt
+source-wordcount: '3494'
+ht-degree: 97%
 
 ---
 
@@ -136,7 +136,7 @@ Voir aussi le paramètre [IccRenderIntent](https://experienceleague.adobe.com/do
 | **[!UICONTROL Espace colorimétrique CMJN par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données CMJN. Si l’option **[!UICONTROL Aucune spécifiée]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source CMJN sont impliquées. Tous les espaces de travail CMJN dépendent des appareils, ce qui signifie qu’ils sont basés sur des combinaisons d’encre et de papier réelles. Les espaces de travail CMJN fournis par Adobe sont basés sur des conditions d’impression commerciales standard.<br> Voir aussi le paramètre [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Espace colorimétrique de niveaux de gris par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données en niveaux de gris. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source en niveaux de gris sont impliquées.<br>Voir aussi le paramètre [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Espace colorimétrique RGB par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données RGB. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images sources RGB sont impliquées. En règle générale, il est préférable de sélectionner **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, plutôt que le profil d’un périphérique spécifique (tel qu’un profil de moniteur). **[!UICONTROL sRGB]** est recommandé lorsque vous préparez des images pour le Web ou les appareils mobiles, car il définit l’espace colorimétrique du moniteur standard utilisé pour afficher les images sur le Web. **[!UICONTROL sRGB]** est également un bon choix lorsque vous travaillez avec des images provenant d’appareils photo numériques grand public, car la plupart de ces appareils utilisent sRGB comme espace colorimétrique par défaut.<br>Voir aussi le paramètre [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
-| **[!UICONTROL Intention de rendu de conversion des couleurs]** | **[!UICONTROL Perception]** : vise à préserver la relation visuelle entre les couleurs afin qu’elles soient perçues comme naturelles par l’œil humain, même si les valeurs de couleur elles-mêmes peuvent changer. Cette intention est adaptée aux images photographiques avec de nombreuses couleurs qui se situent hors de la gamme. Ce paramètre correspond à l’intention de rendu standard pour l’industrie japonaise de l’imprimerie. |
+| **[!UICONTROL Intention de rendu de conversion des couleurs]** | **[!UICONTROL Perception]** - vise à préserver la relation visuelle entre les couleurs afin qu’elles soient perçues comme naturelles pour l’oeil humain, même si les valeurs de couleur elles-mêmes peuvent changer. Cette intention est adaptée aux images photographiques avec de nombreuses couleurs qui se situent hors de la gamme. Ce paramètre correspond à l’intention de rendu standard pour l’industrie japonaise de l’imprimerie. |
 |  | **[!UICONTROL Colorimétrie relative]** : compare la mise en surbrillance extrême de l’espace colorimétrique source à celle de l’espace colorimétrique de destination et modifie toutes les couleurs en conséquence. Les couleurs hors gamme sont décalées vers la couleur reproductible la plus proche dans l’espace colorimétrique de destination. Le paramètre Colorimétrie relative conserve plus de couleurs d’origine dans une image que le paramètre Perception. Ce paramètre est l’intention de rendu standard pour l’impression en Amérique du Nord et en Europe. |
 |  | **[!UICONTROL Saturation]** : tente de produire des couleurs vives dans une image au détriment de la précision des couleurs. Cette intention de rendu convient aux graphiques professionnels tels que les graphiques ou les diagrammes, où les couleurs saturées et vives sont plus importantes que la relation exacte entre les couleurs. |
 |  | **[!UICONTROL Colorimétrie absolue]** : laisse inchangées les couleurs qui se trouvent dans la gamme de destination. Les couleurs hors gamme sont tronquées. Aucune mise à l’échelle des couleurs n’est effectuée vers le point blanc de destination. Cette intention vise à maintenir la précision des couleurs au détriment de la préservation des relations entre les couleurs. Elle est adaptée à la vérification afin de simuler la sortie d’un appareil particulier. Il s’agit d’une intention utile à la prévisualisation de l’impact de la couleur du papier sur les couleurs imprimées. |
@@ -145,7 +145,7 @@ Voir aussi le paramètre [IccRenderIntent](https://experienceleague.adobe.com/do
 
 Secure Testing vous permet de définir un environnement de test sécurisé et de créer une solution business-to-business robuste, basée sur un ensemble configurable d’adresses IP et de plages. Cette fonctionnalité vous permet de faire correspondre vos déploiements Adobe Dynamic Media avec l’architecture de votre système de gestion de contenu et de votre système d’entreprise.
 
-Grâce à Secure Testing, vous pouvez prévisualiser la version d’évaluation du site web avec du contenu non publié.
+Grâce à Secure Testing, vous pouvez prévisualiser la version d’évaluation du site web avec du contenu dépublié.
 
 Si vous le souhaitez, vous pouvez créer un environnement d’évaluation plutôt que de rendre les ressources disponibles publiquement, pour les raisons suivantes :
 
@@ -163,11 +163,11 @@ La plupart des entreprises utilisent Internet derrière un pare-feu. L’accès 
 
 À partir du réseau de votre entreprise, vous pouvez déterminer votre adresse IP publique à l’aide de sites web tels que [https://www.whatismyip.com/fr](https://www.whatismyip.com/fr/). Vous pouvez également obtenir ces informations auprès de la structure informatique de votre entreprise.
 
-Grâce à Secure Testing, Adobe Dynamic Media établit un serveur d’images dédié pour les environnements d’évaluation ou les applications internes. Toute requête sur ce serveur vérifie l’adresse IP d’origine. Si la requête entrante ne figure pas dans la liste approuvée des adresses IP, une réponse d’échec est renvoyée. L’administrateur d’entreprise Adobe Dynamic Media configure la liste approuvée des adresses IP pour l’environnement Secure Testing de l’entreprise.
+Grâce à Secure Testing, Adobe Dynamic Media établit un serveur d’images dédié pour les environnements d’évaluation ou les applications internes. Toute requête sur ce serveur vérifie l’adresse IP d’origine. Si la requête entrante ne figure pas dans la liste approuvée des adresses IP, une réponse d’échec est renvoyée. L’administrateur d’entreprise Adobe Dynamic Media configure la liste approuvée des adresses IP pour l’environnement de test sécurisé de son entreprise.
 
 L’emplacement de la requête d’origine devant être confirmé, le trafic du service Secure Testing n’est pas acheminé à travers un réseau de distribution de contenu tel que le trafic du serveur d’images Dynamic Media public. Les requêtes effectuées auprès du service Secure Testing présentent une latence légèrement plus élevée par rapport aux serveurs d’images Dynamic Media publics.
 
-Les ressources non publiées sont immédiatement disponibles à partir des services Secure Testing, sans avoir à les publier. Ainsi, vous pouvez exécuter un aperçu avant la publication des ressources sur leur serveur d’images public.
+Les ressources dépubliées sont immédiatement disponibles à partir des services Secure Testing, sans avoir à les publier. Ainsi, vous pouvez exécuter un aperçu avant la publication des ressources sur leur serveur d’images public.
 
 >[!NOTE]
 >
@@ -192,9 +192,13 @@ Les types de ressources et fonctionnalités suivants ne sont actuellement pas pr
 * Impression en ligne.
 * Services UGC (contenu créé par l’utilisateur).
 
->[!IMPORTANT]
->
->La prise en charge des ressources d’images vectorielles UGC nouvelles ou existantes dans Adobe Dynamic Media a pris fin le 30 septembre 2021.
+   >[!IMPORTANT]
+   >
+   >À compter du 1er mai 2023, les ressources UGC dans Dynamic Media pourront être utilisées pendant 60 jours à compter de la date de chargement. Au bout de 60 jours, les ressources seront supprimées.
+
+   >[!NOTE]
+   >
+   >La prise en charge des ressources d’images vectorielles UGC nouvelles ou existantes dans Adobe Dynamic Media a pris fin le 30 septembre 2021.
 
 ### Test du service Secure Testing {#test-secure-testing-service}
 
@@ -235,7 +239,7 @@ Contactez Adobe Care si le nom du serveur est manquant ou si l’URL du serveur 
 
 #### Préparation des variantes du site Web
 
-Vous avez besoin de deux variantes d’un site Web qui lie les ressources publiées et non publiées :
+Vous avez besoin de deux variantes d’un site web qui lie les ressources publiées et dépubliées :
 
 * Version publique : liez les ressources à l’aide de la syntaxe traditionnelle de l’URL Adobe Dynamic Media.
 * Version intermédiaire : liez les ressources en utilisant la même syntaxe, mais avec le nom du site de test sécurisé.
@@ -252,6 +256,6 @@ Exécutez les tests suivants :
 
 1. Depuis l’extérieur de votre réseau d’entreprise, vérifiez que les ressources non publiées (c’est-à-dire non marquées pour la publication) sont protégées contre l’accès par des tiers.
 
-   Accédez à votre réseau depuis l’extérieur (depuis votre ordinateur personnel, par exemple, ou via une connexion 4G/5G), puis vérifiez que la version publique du site affiche toutes les ressources publiées, mais aucun contenu non publié.
+   Accédez à votre réseau depuis l’extérieur (depuis votre ordinateur personnel, par exemple, ou via une connexion 4G/5G), puis vérifiez que la version publique du site affiche toutes les ressources publiées, mais aucun contenu dépublié.
 
    Vérifiez que la version intermédiaire n’affiche aucune ressource, car vous accédez au service Secure Testing depuis une adresse IP non approuvée.
