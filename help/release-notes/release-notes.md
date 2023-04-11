@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
+source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
 workflow-type: tm+mt
-source-wordcount: '2967'
+source-wordcount: '2983'
 ht-degree: 39%
 
 ---
@@ -111,7 +111,7 @@ Voir [Activation de DASH sur votre compte](/help/assets/video.md#enable-dash).
 * Lorsqu’un utilisateur prévisualise un formulaire adaptatif en tant que HTML sur le navigateur Microsoft Edge avec le mode de compatibilité IE, il ne s’affiche pas correctement.(CQ-4352216)
 * Le dictionnaire doit inclure de nouveaux paramètres régionaux avec des caractères spéciaux, tels que des traits de soulignement ou des tirets, pour permettre la traduction. (NPR-40088)
 
-Après avoir installé le Service Pack du module complémentaire Forms AEM 6.5.16.0, les clients étaient confrontés au problème suivant. Ainsi, une version mise à jour du Service Pack du module complémentaire Forms d’AEM 6.5.16.0 est publiée :
+Après avoir installé le Service Pack du module complémentaire Forms AEM 6.5.16.0, les clients étaient confrontés aux problèmes répertoriés ci-dessous. Par conséquent, une version mise à jour de [AEM 6.5.16.0 Service Pack du module complémentaire Forms - 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) est publiée. Adobe recommande d’utiliser le Service Pack mis à jour :
 * Lorsqu’un utilisateur tente de créer un formulaire adaptatif avec un utilisateur dans le groupe forms-users, l’option de sélection de modèle n’est pas présente et l’erreur similaire à celle-ci se produit : Erreur interne du serveur : java.lang.NullPointerException à com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) à java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:176) at java.base/java.util.Iterator.foreachRemaining(Iterator.java:133) (FORMS-7629)
 * Les modifications apportées aux règles de l’éditeur de code ne sont pas enregistrées.(FORMS-7532)
 
