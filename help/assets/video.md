@@ -12,10 +12,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '8091'
-ht-degree: 62%
+source-wordcount: '8098'
+ht-degree: 61%
 
 ---
 
@@ -278,7 +278,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
 
 >[!IMPORTANT]
 >
->*Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).)
+>*Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).
 
 ## Architecture de la solution vidéo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -445,7 +445,7 @@ Voici quelques avantages clés de l’activation du DASH sur votre compte :
 
    >[!IMPORTANT]
    >
-   >L’activation de DASH sur votre compte est actuellement disponible uniquement en Amérique du Nord.
+   >L’activation de DASH sur votre compte est actuellement disponible uniquement en Asie-Pacifique et en Amérique du Nord ; Bientôt en Europe, Moyen-Orient, Afrique.
 
 L’activation du DASH sur votre compte nécessite deux étapes :
 
@@ -476,7 +476,7 @@ L’activation du DASH sur votre compte nécessite deux étapes :
 >
 >Les rapports vidéo sont disponibles uniquement lorsque vous exécutez Dynamic Media en mode Hybride.
 
-Les rapports vidéo affichent plusieurs mesures agrégées sur une heure spécifiée pour vous permettre de vérifier que les vidéos individuelles et agrégées publiées ont les performances attendues. Les données des mesures principales suivantes sont agrégées pour toutes les vidéos publiées sur l’ensemble de votre site web :
+Les rapports vidéo affichent plusieurs mesures agrégées sur une période donnée pour vous aider à vérifier que la variable *publié* les vidéos individuelles et agrégées fonctionnent comme prévu. Les données des mesures principales suivantes sont agrégées pour toutes les vidéos publiées sur l’ensemble de votre site web :
 
 * Lancements de vidéo
 * Taux d’achèvement
