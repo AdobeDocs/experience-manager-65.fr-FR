@@ -1,8 +1,6 @@
 ---
 title: Éditeur d’image
-seo-title: Image Editor
-description: L’éditeur d’image est un élément essentiel d’AEM qui peut être exploité par des composants pour faciliter la manipulation des images par les auteurs de contenu.
-seo-description: The Image Editor is a core piece of AEM and can be leveraged by components to facilitate the manipulation of images by content authors.
+description: L’éditeur d’image est un élément d’AEM essentiel qui peut être utilisé par les composants pour faciliter la manipulation des images par les auteurs de contenu.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +8,20 @@ content-type: reference
 topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 84%
 
 ---
 
 # Éditeur d’image{#image-editor}
 
-L’éditeur d’image est un élément essentiel d’AEM qui peut être exploité par des composants pour faciliter la manipulation des images par les auteurs de contenu.
+L’éditeur d’image est un élément d’AEM essentiel qui peut être utilisé par les composants pour faciliter la manipulation des images par les auteurs de contenu.
 
 >[!CAUTION]
 >
->Pour pouvoir utiliser les fonctionnalités de l’éditeur d’image décrites dans cet article, vous devez installer le [pack de fonctionnalités 24267](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267).
+>Pour pouvoir utiliser les fonctionnalités de l’éditeur d’image décrites dans cet article, vous devez installer le [pack de fonctionnalités 24267](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/cq-6.4.0-featurepack-24267).
 
 ## Unités relatives pour la zone cliquable {#relative-units-for-image-map}
 

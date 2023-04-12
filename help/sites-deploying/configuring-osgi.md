@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 55f6aab3e41159735e332b2740e3a21c563c1157
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 37%
+source-wordcount: '1949'
+ht-degree: 36%
 
 ---
 
@@ -24,7 +24,7 @@ Le framework [OSGi](https://www.osgi.org/) est un élément fondamental de la pi
 
 OSGi &quot;*fournit les primitives normalisées qui permettent de construire des applications à partir de petits composants réutilisables et collaboratifs. Ces composants peuvent être créés dans une application et déployés* ».
 
-Cela permet une gestion facile des lots, car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://www.osgi.org/Specifications/HomePage)) est contenu dans l’un des différents lots.
+Cela permet une gestion facile des lots, car ils peuvent être arrêtés, installés et démarrés individuellement. Les interdépendances sont gérées automatiquement. Chaque composant OSGi (consultez [Spécification OSGi](https://docs.osgi.org/specification/)) est contenu dans l’un des différents lots.
 
 Vous pouvez gérer les paramètres de configuration de ces lots en effectuant l’une des opérations suivantes :
 

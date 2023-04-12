@@ -4,9 +4,9 @@ description: Liste des plateformes client et serveur prises en charge pour Adobe
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3498'
 ht-degree: 33%
 
 ---
@@ -214,7 +214,7 @@ Pour obtenir des recommandations sur le déploiement d’AEM sur Azure ou AWS, e
 
 ### Plateformes de Dispatcher (serveurs web) {#dispatcher-platforms-web-servers}
 
-Le Dispatcher est le composant de mise en cache et d’équilibrage de charge. [Téléchargez la dernière version de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 nécessite la version 4.3.2 ou une version ultérieure du Dispatcher.
+Dispatcher est le composant de mise en cache et d’équilibrage de charge. [Téléchargez la dernière version de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager 6.5 nécessite la version 4.3.2 ou une version ultérieure du Dispatcher.
 
 Les serveurs web suivants sont pris en charge pour une utilisation avec Dispatcher version 4.3.2 :
 
