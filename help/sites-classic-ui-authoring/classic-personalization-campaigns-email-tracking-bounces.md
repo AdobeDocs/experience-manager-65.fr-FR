@@ -1,7 +1,7 @@
 ---
 title: Suivi des e-mails rejetés
 seo-title: Tracking Bounced Emails
-description: Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds.
+description: Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste contient généralement des adresses électroniques non valides. L'envoi de newsletters à ces adresses rebondit. AEM peut gérer ces rebonds et cesser d’envoyer des newsletters à ces adresses une fois le compteur de rebonds configuré dépassé.
 seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '711'
-ht-degree: 100%
+source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 17%
 
 ---
 
@@ -23,80 +23,80 @@ ht-degree: 100%
 >
 >Adobe ne prévoit pas de continuer à améliorer le suivi des e-mails ouverts et des rebonds envoyés par le service SMTP AEM.
 >
->Nous vous recommandons d’[exploiter Adobe Campaign et son intégration AEM](/help/sites-administering/campaign.md).
+>La recommandation consiste à [utiliser Adobe Campaign et son intégration AEM ;](/help/sites-administering/campaign.md).
 
-Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste de diffusion comporte généralement plusieurs adresses électroniques non valides. Les newsletters envoyées à ces adresses sont rejetées. AEM est en mesure de gérer ces rebonds et d’arrêter l’envoi de newsletters vers ces adresses après le dépassement du compteur de rebonds. Par défaut, le taux de rebonds est défini sur 3, mais cette valeur est configurable.
+Lorsque vous envoyez une newsletter à de nombreux utilisateurs, la liste contient généralement des adresses électroniques non valides. L&#39;envoi de newsletters à ces adresses rebondit. AEM peut gérer ces rebonds et cesser d’envoyer des newsletters à ces adresses une fois le compteur de rebonds configuré dépassé. Par défaut, le taux de rebonds est défini sur 3, mais cette valeur est configurable.
 
-Pour configurer AEM en vue du suivi des messages rejetés, vous devez faire en sorte que le logiciel sonde une boîte aux lettres existante dans laquelle les messages rejetés sont reçus (il s’agit généralement de l’adresse indiquée pour l’envoi de la newsletter). AEM sonde cette boîte aux lettres et importe tous les messages sous le chemin indiqué dans la configuration de sondage. Un workflow est ensuite déclenché pour rechercher les adresses électroniques rejetées parmi les utilisateurs. La valeur de la propriété bounceCounter de l’utilisateur est mise à jour en conséquence. Une fois le nombre maximum de rebonds atteint, l’utilisateur est supprimé de la liste des newsletters.
+Pour configurer AEM pour effectuer le suivi des mails rebonds, configurez AEM pour interroger une boîte de messagerie existante dans laquelle les messages rebonds sont reçus. En règle générale, cet emplacement correspond à l’adresse électronique &quot;expéditeur&quot; que vous indiquez où vous envoyez la newsletter. AEM sonde cette boîte aux lettres et importe tous les messages sous le chemin indiqué dans la configuration de sondage. Un workflow est ensuite déclenché pour rechercher les adresses électroniques rejetées parmi les utilisateurs. La valeur de la propriété bounceCounter de l’utilisateur est mise à jour en conséquence. Une fois le nombre maximal de rebonds configuré dépassé, l’utilisateur est supprimé de la liste des newsletters.
 
-## Configuration de Feed Importer {#configuring-the-feed-importer}
+## Configuration de l’importateur de flux {#configuring-the-feed-importer}
 
-Feed Importer vous permet d’importer, dans votre référentiel, du contenu provenant de sources externes et ce, de manière itérative. Lorsque Feed Importer est configuré de la sorte, AEM recherche des messages rejetés dans la boîte aux lettres de l’expéditeur.
+L’importateur de flux vous permet d’importer du contenu provenant de sources externes de manière répétée dans votre référentiel. Avec cette configuration de l’importateur de flux, AEM recherche les mails rebonds dans la boîte aux lettres de l’expéditeur.
 
-Pour configurer Feed Importer en vue du suivi des messages rejetés, procédez comme suit :
+Pour configurer l’importateur de flux pour le suivi des messages rejetés, procédez comme suit :
 
-1. Sélectionnez Feed Importer dans **Outils**.
+1. Dans **Outils**, sélectionnez l’importateur de flux.
 
 1. Cliquez sur **Ajouter** pour créer une configuration.
 
    ![chlimage_1](assets/chlimage_1a.png)
 
-1. Ajoutez une nouvelle configuration en sélectionnant le type et en ajoutant des informations à l’URL de sondage afin de configurer l’hôte et le port. Vous devez, en outre, ajouter à la requête URL des paramètres spécifiques à la messagerie et au protocole. Définissez la configuration de telle sorte que le sondage soit effectué au moins une fois par jour.
+1. Ajoutez une configuration en sélectionnant le type et en ajoutant des informations à l’URL d’interrogation afin de pouvoir configurer l’hôte et le port. Ajoutez en outre des paramètres spécifiques au courrier et au protocole à la requête d’URL. Définissez la configuration pour qu’elle interroge au moins une fois par jour.
 
-   Les informations suivantes sont nécessaires pour toutes les configurations dans l’URL de sondage :
+   Toutes les configurations nécessitent des informations sur les éléments suivants dans l’URL d’interrogation :
 
-   `username` : nom d’utilisateur à utiliser pour la connexion.
+   `username`: Nom d’utilisateur utilisé pour la connexion
 
-   `password` : mot de passe à utiliser pour la connexion.
+   `password`: Mot de passe utilisé pour la connexion
 
-   En fonction du protocole, vous pouvez, en outre, configurer certains paramètres.
+   En outre, selon le protocole, vous pouvez configurer certains paramètres.
 
-   **Propriétés de la configuration POP3** :
+   **Propriétés de configuration POP3 :**
 
    `pop3.leave.on.server` : permet d’indiquer si des messages doivent être laissés ou non sur le serveur. Définissez la valeur sur « true » pour laisser les messages sur le serveur et sur « false » dans le cas contraire. La valeur par défaut est « true ».
 
-   **Exemples POP3** :
+   **Exemples POP3 :**
 
-   | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Utilisation de pop3 sur SSL pour se connecter à GMail sur le port 995 avec user/secret, en laissant les messages sur le serveur par défaut |
+   | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret | Utilisation de pop3 sur SSL pour se connecter à GMail sur le port 995 avec user/secret, laissant les messages sur le serveur par défaut |
    |---|---|
    | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false | pop3s://pop.gmail.com:995/INBOX?username=user&amp;password=secret&amp;pop3.leave.on.server=false |
 
-   **Propriétés de la configuration IMAP** :
+   **Propriétés de configuration IMAP :**
 
-   Permet de définir des indicateurs pour la recherche.
+   Permet de définir des indicateurs à rechercher.
 
    `imap.flag.SEEN` :« false » pour les nouveaux messages ou les messages non consultés ; « true » pour les messages déjà lus
 
-   Pour consulter la liste complète des indicateurs, reportez-vous à la page [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
+   Voir [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) pour obtenir la liste complète des indicateurs.
 
-   **Exemples IMAP** :
+   **Exemples IMAP :**
 
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Utilisation du protocole IMAP sur SSL pour se connecter à GMail sur le port 993 avec les identifiants user/secret. Par défaut, seuls les nouveaux messages sont récupérés. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret | Utilisation d’IMAP sur SSL pour se connecter à GMail sur le port 993 avec user/secret. Obtention de nouveaux messages uniquement par défaut. |
    |---|---|
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Utilisation du protocole IMAP sur SSL pour se connecter à GMail sur le port 993 avec les identifiants user/secret. Seuls les messages déjà lus sont récupérés. |
-   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Utilisation du protocole IMAP sur SSL pour se connecter à GMail sur le port 993 avec les identifiants user/secret. Seuls les nouveaux messages OU les messages déjà lus sont récupérés. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | Utilisation d’IMAP sur SSL pour se connecter à GMail 993 avec l’utilisateur/le secret, pour obtenir uniquement les messages déjà consultés. |
+   | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | Utilisation d’IMAP sur SSL pour se connecter à GMail 993 avec l’utilisateur/le secret, obtention de messages déjà lus OU nouveaux. |
 
 1. Enregistrez la configuration.
 
-## Configuration du composant Service de newsletter {#configuring-the-newsletter-service-component}
+## Configuration du composant du service de newsletter {#configuring-the-newsletter-service-component}
 
-Après avoir configuré Feed Importer, vous devez configurer l’adresse de l’expéditeur et le compteur de rebonds.
+Après avoir configuré l’importateur de flux, configurez l’adresse De et le compteur de rebonds.
 
-Pour configurer le service de newsletter, procédez comme suit :
+Pour configurer le service de newsletter :
 
-1. Entrez dans la console OSGi `<host>:<port>/system/console/configMgr` et accédez à **Newsletter MCM**.
+1. Dans la console OSGi, à l’adresse `<host>:<port>/system/console/configMgr`, accédez à **Newsletter MCM**.
 
 1. Configurez le service et enregistrez les modifications une fois cette opération terminée.
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-   Vous pouvez définir les configurations suivantes pour régler le fonctionnement :
+   Les configurations suivantes peuvent être définies pour ajuster le comportement :
 
-   | Bounce Counter Maximum (max.bounce.count) | (Nombre maximum de rebonds) Définit le nombre maximum de rebonds jusqu’à ce qu’un utilisateur soit omis lors de l’envoi d’une newsletter. Lorsque vous définissez cette valeur sur 0, la vérification des rebonds est complètement désactivée. |
+   | Compteur de rebond maximal (max.bounce.count) | Définit le nombre de rebonds jusqu’à ce qu’un utilisateur soit omis lors de l’envoi d’une newsletter. La définition de cette valeur sur 0 désactive complètement la vérification de rebond. |
    |---|---|
-   | Activity No Cache (sent.activity.nocache) | (Activité - Pas de cache) Définit le paramètre de cache à utiliser pour l’activité d’envoi des newsletters. |
+   | Activity No Cache (sent.activity.nocache) | Définit le paramètre de cache à utiliser pour l’activité d’envoi de newsletter |
 
-   Une fois enregistré, le service Newsletter MCM procède comme suit :
+   Une fois enregistré, le service de newsletter MCM effectue les opérations suivantes :
 
-   * Il écrit une activité sur le flux masqué des utilisateurs lors de l’envoi réussi d’une newsletter.
-   * Il écrit une activité si un rebond est détecté et le compteur de rebonds des utilisateurs est mis à jour.
+   * Écrit une activité dans le flux masqué des utilisateurs lors de l’envoi réussi d’une newsletter.
+   * Écrit une activité si un rebond est détecté et que le compteur de rebond des utilisateurs change.
