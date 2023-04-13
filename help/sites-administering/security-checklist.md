@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
+source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 36%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -389,6 +389,14 @@ Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vou
 >[!NOTE]
 >
 >Pour plus d’informations, voir la documentation d’Oak sur [Génération de nom de noeud autorisable](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+
+**Package de renforcement des autorisations anonymes**
+
+Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` ou `jcr:lastModifiedBy` en tant que propriétés de noeud, en regard du contenu normal, dans le référentiel. Selon la configuration et la configuration du contrôle d’accès, cela peut dans certains cas entraîner l’exposition des informations d’identification personnelle (PII), par exemple lorsque ces noeuds sont rendus au format JSON ou XML brut.
+
+Comme toutes les données de référentiel, ces propriétés sont arbitrées par la pile d’autorisations Oak. Leur accès doit être restreint conformément au principe du moindre privilège.
+
+Pour ce faire, Adobe fournit un module de renforcement des autorisations afin que les clients puissent s’en servir. Il fonctionne en installant une entrée de contrôle d’accès &quot;deny&quot; à la racine du référentiel, ce qui limite l’accès anonyme aux propriétés système couramment utilisées. Le module peut être téléchargé. [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) et peut être installé sur toutes les versions d’AEM prises en charge. Pour plus d’informations, voir les notes de mise à jour .
 
 ### Prévention du détournement de clic {#prevent-clickjacking}
 
