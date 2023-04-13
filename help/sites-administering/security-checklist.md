@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
+source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2986'
+ht-degree: 34%
 
 ---
 
@@ -390,7 +390,7 @@ Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vou
 >
 >Pour plus d’informations, voir la documentation d’Oak sur [Génération de nom de noeud autorisable](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
-**Package de renforcement des autorisations anonymes**
+### Package de renforcement des autorisations anonymes {#anonymous-permission-hardening-package}
 
 Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` ou `jcr:lastModifiedBy` en tant que propriétés de noeud, en regard du contenu normal, dans le référentiel. Selon la configuration et la configuration du contrôle d’accès, cela peut dans certains cas entraîner l’exposition des informations d’identification personnelle (PII), par exemple lorsque ces noeuds sont rendus au format JSON ou XML brut.
 
