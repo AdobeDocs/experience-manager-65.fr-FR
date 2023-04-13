@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
+source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '3025'
 ht-degree: 34%
 
 ---
@@ -396,7 +396,17 @@ Par défaut, AEM stocke les métadonnées système, telles que `jcr:createdBy` o
 
 Comme toutes les données de référentiel, ces propriétés sont arbitrées par la pile d’autorisations Oak. Leur accès doit être restreint conformément au principe du moindre privilège.
 
-Pour ce faire, Adobe fournit un module de renforcement des autorisations afin que les clients puissent s’en servir. Il fonctionne en installant une entrée de contrôle d’accès &quot;deny&quot; à la racine du référentiel, ce qui limite l’accès anonyme aux propriétés système couramment utilisées. Le module peut être téléchargé. [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) et peut être installé sur toutes les versions d’AEM prises en charge. Pour plus d’informations, voir les notes de mise à jour .
+Pour ce faire, Adobe fournit un module de renforcement des autorisations afin que les clients puissent s’en servir. Il fonctionne en installant une entrée de contrôle d’accès &quot;deny&quot; à la racine du référentiel, ce qui limite l’accès anonyme aux propriétés système couramment utilisées. Le module peut être téléchargé. [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) et peut être installé sur toutes les versions d’AEM prises en charge.
+
+Pour illustrer les modifications, nous pouvons comparer les propriétés du noeud qui peuvent être affichées anonymement avant d’installer le package :
+
+![Avant d’installer le package](/help/sites-administering/assets/before_resized.png)
+
+avec ceux qui sont visibles après l’installation du package, où `jcr:createdBy` et `jcr:lastModifiedBy` ne sont pas visibles :
+
+![Après l’installation du package](/help/sites-administering/assets/after_resized.png)
+
+Pour plus d’informations, consultez les notes de mise à jour du module .
 
 ### Prévention du détournement de clic {#prevent-clickjacking}
 
