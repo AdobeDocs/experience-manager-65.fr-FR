@@ -1,8 +1,6 @@
 ---
 title: Optimiser les performances
-seo-title: Performance Optimization
 description: Découvrez comment configurer certains aspects d’AEM pour optimiser les performances.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
 source-wordcount: '6503'
-ht-degree: 30%
+ht-degree: 29%
 
 ---
 
@@ -102,12 +100,12 @@ Cela signifie que le développeur qui met en oeuvre l’optimisation doit dispos
 
 ## Consignes de performances de base {#basic-performance-guidelines}
 
-De manière générale, vos demandes html non mises en cache doivent être inférieures à 100 ms. Plus précisément, ce qui suit peut servir de ligne directrice :
+En règle générale, conservez vos requêtes HTML non mises en cache à moins de 100 millisecondes. Plus précisément, ce qui suit peut servir de ligne directrice :
 
-* 70 % des demandes de pages doivent être traitées en moins de 100 ms.
-* 25 % des demandes de pages doivent recevoir une réponse dans un délai de 100 à 300 ms.
-* 4 % des demandes de pages doivent recevoir une réponse dans un délai de 300 à 500 ms.
-* 1 % des demandes de pages doivent recevoir une réponse dans un délai de 500 à 1000 ms.
+* 70 % des demandes de pages doivent être traitées en moins de 100 millisecondes.
+* 25 % des demandes de pages doivent obtenir une réponse dans les 100 millisecondes à 300 millisecondes.
+* 4 % des demandes de pages doivent obtenir une réponse dans les 300 millisecondes à 500 millisecondes.
+* 1 % des demandes de pages doivent obtenir une réponse dans les 500 millisecondes à 1 000 millisecondes.
 * Aucune page ne doit répondre plus d’une seconde.
 
 Les chiffres ci-dessus supposent les conditions suivantes :
@@ -459,14 +457,12 @@ Toutes les optimisations effectuées doivent être testées pour s’assurer :
 * qu’elles ne dégradent pas les fonctionnalités ;
 * qu’elles ont été vérifiées au moyen de tests de charge avant d’être appliquées.
 
-Une sélection d’outils est disponible pour vous aider dans la génération de la charge, la surveillance des performances et/ou l’analyse des résultats :
+Plusieurs outils sont disponibles pour vous aider à générer de la charge, à surveiller les performances et à analyser les résultats. Voici quelques-uns de ces outils :
 
 * [JMeter](https://jmeter.apache.org/)
 * [Load Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Profil interactif Java™](https://jiprof.sourceforge.net/)
-* beaucoup plus...
 
 Après l’optimisation, testez à nouveau pour confirmer l’impact.
 
@@ -691,7 +687,7 @@ Le chargement se compose des pages créées, des pages supprimées, des parcours
 
 L’impact de la charge sur les performances de sauvegarde peut être estimé par la différence entre les performances avec et sans cette charge applicative. L’impact de la sauvegarde sur le débit de l’application est détecté en comparant le débit du scénario dans les transactions par heure avec et sans sauvegarde simultanée en cours, et avec des sauvegardes fonctionnant avec différents paramètres de &quot;délai de sauvegarde&quot;.
 
-* **Définition du délai** - Pour plusieurs scénarios, le paramètre de délai de sauvegarde était également varié, en utilisant des valeurs de 10 ms (par défaut), 1 ms et 0 ms, afin d’explorer la manière dont ce paramètre affectait les performances des sauvegardes.
+* **Définition du délai** - Pour plusieurs scénarios, le paramètre de délai de sauvegarde était également varié, en utilisant des valeurs de 10 millisecondes (par défaut), 1 millisecondes et 0 millisecondes, afin d’explorer la manière dont ce paramètre affectait les performances des sauvegardes.
 * **Type de sauvegarde** - Toutes les sauvegardes étaient des sauvegardes externes du référentiel effectuées dans un répertoire de sauvegarde sans créer de fichier zip, sauf dans un cas pour comparaison où la commande tar a été utilisée directement. Étant donné que les sauvegardes incrémentielles ne peuvent pas être créées dans un fichier zip ou si la sauvegarde complète antérieure est un fichier zip, la méthode du répertoire de sauvegarde est la plus souvent utilisée dans des situations de exploitation.
 
 ### Résumé des résultats {#summary-of-results}
@@ -720,7 +716,7 @@ Le paramètre de délai de sauvegarde est fourni pour limiter la mesure dans laq
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Pour comparaison, le débit obtenu à l’aide d’une sauvegarde du système de fichiers (&quot;tar&quot;) pour sauvegarder les mêmes fichiers de référentiel. La performance du tar est comparable, mais légèrement supérieure à la sauvegarde avec un délai défini sur zéro. La définition d’un délai même minime réduit considérablement le débit de sauvegarde et le délai par défaut de 10 ms entraîne un débit considérablement réduit. Dans les cas où des sauvegardes peuvent être planifiées lorsque l’utilisation globale de l’application est faible ou que l’application peut être inactive, réduisez le délai sous la valeur par défaut pour permettre une sauvegarde plus rapide.
+Pour comparaison, le débit obtenu à l’aide d’une sauvegarde du système de fichiers (&quot;tar&quot;) pour sauvegarder les mêmes fichiers de référentiel. La performance du tar est comparable, mais légèrement supérieure à la sauvegarde avec un délai défini sur zéro. La définition d’un délai même minime réduit considérablement le débit de sauvegarde et le délai par défaut de 10 millisecondes entraîne un débit considérablement réduit. Dans les cas où des sauvegardes peuvent être planifiées lorsque l’utilisation globale de l’application est faible ou que l’application peut être inactive, réduisez le délai sous la valeur par défaut pour permettre une sauvegarde plus rapide.
 
 L’impact réel du débit d’application d’une sauvegarde en cours dépend des détails de l’application et de l’infrastructure. Le choix de la valeur de délai doit être effectué par une analyse empirique de l’application, mais doit être choisi aussi petit que possible, de sorte que les sauvegardes puissent être effectuées le plus rapidement possible. Comme il n’existe qu’une faible corrélation entre le choix de la valeur de délai et l’impact sur le débit de l’application, le choix du délai devrait favoriser des temps de sauvegarde globaux plus courts afin de minimiser l’impact global des sauvegardes. Une sauvegarde qui prend huit heures, mais affecte le débit de -20 %, risque d’avoir un impact global plus important que celui qui prend deux heures, mais affecte le débit de -30 %.
 

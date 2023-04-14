@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 46%
 
 ---
@@ -269,7 +269,7 @@ L’**Antispam Day CQ** configure le service anti-spam (Akismet) utilisé. Cett
 * Pour le développement JS (en particulier lors du débogage/du bogage de feu) :
 
    * disable **Minify**
-   * enable **Déboguer** pour séparer les fichiers à des fins de débogage et à utiliser avec firebug.
+   * enable **Déboguer** pour séparer les fichiers à des fins de débogage et les utiliser avec un bogue de déclenchement.
    * enable **Minutage** s’ils sont intéressés par le timing.
    * enable **Déboguer** pour afficher les messages du journal de la console JS.
 
@@ -382,7 +382,7 @@ Les autres modes sont accessibles depuis le sidekick. Vous pouvez également uti
 
 Le **Configurateur de vérification de lien de gestion de contenu web Day CQ** configure les éléments suivants :
 
-* **Liste des configurations de réécriture** pour spécifier une liste d’emplacements pour les configurations linkchecker basées sur le contenu. Les configurations peuvent être basées sur le mode d’exécution. Ce fait est important pour faire la distinction entre les environnements de création et de publication, car les paramètres de vérificateur de lien peuvent différer.
+* **Liste des configurations de réécriture** pour spécifier une liste d’emplacements pour les configurations de vérificateur de lien basé sur le contenu. Les configurations peuvent être basées sur le mode d’exécution. Ce fait est important pour faire la distinction entre les environnements de création et de publication, car les paramètres du vérificateur de liens peuvent différer.
 
 La **Fabrique du gestionnaire de pages de gestion de contenu web Day CQ** configure :
 
@@ -444,7 +444,7 @@ Une configuration d’usine permettant de configurer plusieurs instances.
 **Réécriture CDN** La communication entre AEM et un réseau de diffusion de contenu doit être assurée de sorte que les ressources/fichiers binaires soient diffusés à un utilisateur final de manière sécurisée. Ce processus implique les deux tâches suivantes :
 
 * Accédez à la ressource à partir d’AEM par le biais du réseau de diffusion de contenu la première fois (ou après son expiration dans le cache).
-* L’accès à la ressource mise en cache dans le réseau de diffusion de contenu est sécurisé, car une fois la ressource mise en cache dans le réseau de diffusion de contenu, la demande n’est pas envoyée à AEM, et tous les utilisateurs ayant accès à cette ressource sur doivent être diffusés à partir du réseau de diffusion de contenu.
+* Accédez à la ressource mise en cache dans le réseau de diffusion de contenu en toute sécurité. Une fois la ressource mise en cache dans le réseau de diffusion de contenu, la requête n’est pas envoyée à AEM, et tous les utilisateurs ayant accès à cette ressource sur doivent être diffusés à partir du réseau de diffusion de contenu.
 
 AEM fournit un module de réécriture permettant de réécrire les URL de ressources internes en URL CDN externes. Il réécrit les liens à transmettre au réseau de diffusion de contenu, y compris une signature JWS et un délai d’expiration pour permettre l’accès sécurisé à la ressource. Cette fonctionnalité doit être utilisée sur les instances d’auteur.
 

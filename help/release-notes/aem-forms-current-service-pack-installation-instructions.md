@@ -2,10 +2,10 @@
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
 description: Instructions d’installation du pack de services AEM Forms pour l’environnement OSGi et JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: b15581701aaff72db2fc0030b0062d2f12150d8f
+source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
 workflow-type: tm+mt
 source-wordcount: '1726'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -153,16 +153,15 @@ Le package est automatiquement installé.
 * Utilisez l’[API HTTP à partir du gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
 
    >[!NOTE]
-   >
-   >Le Service Pack du Experience Manager ne prend pas en charge l’installation du Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+   Le Service Pack du Experience Manager ne prend pas en charge l’installation du Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-**Validation de l’installation**
+   **Validation de l’installation**
 
-Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
+   Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés].<!-- UPDATE FOR EACH NEW RELEASE -->
-1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
-1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utilisez la console web : `/system/console/     bundles`).
+   1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés].<!-- UPDATE FOR EACH NEW RELEASE -->
+   1. Tous les bundles OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
+   1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utilisez la console web : `/system/console/     bundles`).
 
 +++
 
@@ -185,8 +184,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 1. Sauvegardez vos [référentiel CRX et schéma de base de données](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=fr).
 
 >[!NOTE]
->
-> Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
+Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
 
 +++
 
@@ -213,18 +211,17 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 * Utilisez l’[API HTTP à partir du gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
 
    >[!NOTE]
-   >
-   >Le Service Pack du Experience Manager ne prend pas en charge l’installation du Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+   Le Service Pack du Experience Manager ne prend pas en charge l’installation du Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-**Validation de l’installation**
+   **Validation de l’installation**
 
-Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
+   Pour connaître les plateformes certifiées pour travailler avec cette version, reportez-vous à la section des [exigences techniques](/help/sites-deploying/technical-requirements.md).
 
-1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->
+   1. La page d’informations sur les produits (`/system/console/productinfo`) affiche la chaîne de version mise à jour `Adobe Experience Manager (spversion)` sous [!UICONTROL Produits installés]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Tous les lots OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
+   1. Tous les lots OSGi sont au statut **[!UICONTROL ACTIF]** ou **[!UICONTROL FRAGMENT]** dans la console OSGi (utilisez la console web : `/system/console/bundles`).
 
-   1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utiliser la console Web : `/system/console/bundles`).
+      1. Le bundle OSGi `org.apache.jackrabbit.oak-core` est de la version 1.22.14 ou ultérieure (utiliser la console Web : `/system/console/bundles`).
 
 +++
 
