@@ -1,7 +1,7 @@
 ---
 title: Surveiller les déploiements d’AEM Forms
 seo-title: Monitoring AEM forms deployments
-description: Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Ce document vous permet d’en savoir plus sur la surveillance des déploiements d’AEM Forms.
+description: Vous pouvez surveiller les déploiements d’AEM forms au niveau du système et au niveau interne. Pour en savoir plus sur la surveillance des déploiements d’AEM forms, consultez ce document.
 seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
 uuid: 032b7a93-3069-4ad5-a8c6-4c160f290669
 contentOwner: admin
@@ -10,29 +10,29 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '605'
-ht-degree: 100%
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+workflow-type: tm+mt
+source-wordcount: '581'
+ht-degree: 30%
 
 ---
 
 # Surveiller les déploiements d’AEM Forms {#monitoring-aem-forms-deployments}
 
-Vous pouvez surveiller les déploiements d’AEM Forms, tant au niveau du système qu’au niveau interne. Utilisez pour cela des outils de gestion spécialisés tels que HP OpenView, IBM Tivoli et CA UniCenter, ainsi qu’un moniteur JMX tiers appelé *JConsole* et tout particulièrement dédié au contrôle de l’activité Java. L’implémentation d’une stratégie de surveillance améliore la disponibilité, la fiabilité et les performances des déploiements d’AEM Forms.
+Vous pouvez surveiller les déploiements d’AEM forms au niveau du système et au niveau interne. Vous pouvez utiliser des outils de gestion spécialisés tels que HP OpenView, IBM® Tivoli et CA UniCenter, ainsi qu’un moniteur JMX tiers appelé *JConsole* pour surveiller spécifiquement l’activité Java™. L’implémentation d’une stratégie de surveillance améliore la disponibilité, la fiabilité et les performances des déploiements d’AEM forms.
 
-Pour plus d’informations sur la surveillance des déploiements d’AEM Forms, voir le[ Guide technique pour la surveillance des déploiements d’AEM Forms](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf).
+<!-- For more information about monitoring AEM forms deployments, see [A technical guide for monitoring AEM forms deployments](https://www.adobe.com/devnet/livecycle/pdfs/lc_monitoring_wp_ue.pdf). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
-## Contrôle via les MBeans {#monitoring-using-mbeans}
+## Surveillance à l’aide des MBeans {#monitoring-using-mbeans}
 
-AEM forms propose deux MBeans qui fournissent des informations de navigation et des statistiques. Il s’agit des seuls MBeans pris en charge au niveau de l’intégration et de l’inspection :
+AEM Forms fournit deux MBeans enregistrés qui fournissent des informations de navigation et de statistiques. Ces parties sont les seuls MBeans pris en charge pour l’intégration et l’inspection :
 
 * **ServiceStatistic :** ce MBean fournit des informations sur le nom du service et sur sa version.
-* **OperationStatistic :** ce MBean fournit les statistiques de chaque service du serveur Forms. C’est là que les administrateurs peuvent obtenir des informations sur un service donné, par exemple l’heure d’appel, le nombre d’erreurs, etc.
+* **OperationStatistic :** Ce MBean fournit les statistiques de chaque service de serveur AEM Forms. Ce MBean permet aux administrateurs d’obtenir des informations sur un service particulier, comme l’heure d’appel et le nombre d’erreurs.
 
 ### Interfaces publiques de ServiceStatisticMbean {#servicestatisticmbean-public-interfaces}
 
-Vous pouvez accéder à ces interfaces publiques du MBean ServiceStatistic à des fins de test :
+Vous pouvez accéder à ces interfaces publiques du MBean ServiceStatistic à des fins de test :
 
 ```java
  public String getServiceId();
@@ -42,7 +42,7 @@ Vous pouvez accéder à ces interfaces publiques du MBean ServiceStatistic à de
 
 ### Interfaces publiques de OperationStatisticMbean {#operationstatisticmbean-public-interfaces}
 
-Vous pouvez accéder à ces interfaces publiques du MBean OperationStatistic à des fins de test :
+Vous pouvez accéder à ces interfaces publiques du MBean OperationStatistic à des fins de test :
 
 ```java
  // InvocationCount: The number of times the method is invoked.
@@ -68,11 +68,11 @@ Vous pouvez accéder à ces interfaces publiques du MBean OperationStatistic à 
  public void setExceptionMessage(String errorMessage);
 ```
 
-### Arborescence des MBeans et statistiques sur les opérations {#mbean-tree-operation-statistics}
+### Arborescence de MBean et statistiques des opérations {#mbean-tree-operation-statistics}
 
-Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une console JMX (JConsole). Ces statistiques sont des attributs de MBean et vous pouvez les parcourir dans l’arborescence suivante :
+À l’aide d’une console JMX (JConsole), les statistiques du MBean OperationStatistic sont disponibles. Ces statistiques sont des attributs de MBean et peuvent être naviguées sous l’arborescence suivante :
 
-**Arborescence de MBean**
+**Arborescence MBean**
 
 **Nom de domaine Adobe :** dépend du serveur d’applications. Si celui-ci ne définit pas le domaine, la valeur par défaut sera adobe.com.
 
@@ -84,7 +84,7 @@ Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une con
 
 **Statistiques des opérations**
 
-**Durée d’appel :** durée de l’exécution de la méthode. Cette valeur ne comprend pas le temps de sérialisation de la demande, de transfert du client vers le serveur et de désérialisation.
+**Durée d’appel :** durée de l’exécution de la méthode. Cette invocation n’inclut pas le moment où la requête est sérialisée, transférée du client au serveur et désérialisée.
 
 **Nombre d’appels :** nombre de fois où le service a été appelé.
 
@@ -102,16 +102,16 @@ Vous pouvez accéder aux statistiques du MBean OperationStatistic depuis une con
 
 **Unité de temps :** la valeur par défaut est la milliseconde.
 
-Pour activer le contrôle JMX, les serveurs d’applications ont généralement besoin d’être configurés. Veuillez consulter la documentation de votre serveur d’applications pour obtenir des informations détaillées.
+Pour activer la surveillance JMX, les serveurs d’applications ont généralement besoin d’une configuration. Consultez la documentation de votre serveur d’applications pour plus d’informations.
 
-### Exemples de configuration d’un accès JMX ouvert {#examples-of-how-to-set-up-open-jmx-access}
+### Exemples de configuration de l’accès JMX ouvert {#examples-of-how-to-set-up-open-jmx-access}
 
-**JBoss 4.0.3/4.2.0 - configuration du démarrage de la JVM**
+**JBoss® 4.0.3/4.2.0 - configuration du démarrage de la JVM**
 
-Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres de démarrage de la JVM du serveur d’applications JBoss. Assurez-vous que JBoss est démarré depuis le fichier run.bat/sh.
+Pour afficher les MBeans à partir de JConsole, configurez les paramètres de démarrage de la JVM du serveur d’applications JBoss. Assurez-vous que JBoss est démarré à partir du fichier run.bat/sh.
 
 1. Modifiez le fichier run.bat situé sous InstallJBoss/bin.
-1. Recherchez la ligne JAVA_OPTS et ajoutez le code suivant :
+1. Recherchez la ligne JAVA_OPTS et ajoutez les éléments suivants :
 
    ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
@@ -120,7 +120,7 @@ Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres 
 **WebLogic 9.2 /10 - configuration du démarrage de la JVM**
 
 1. Modifiez le fichier startWebLogic.bat se trouvant sous `[WebLogic home]/user_projects/domains/Adobe_Live_Cycle/bin`.
-1. Recherchez la ligne JAVA_OPTS et ajoutez le code suivant :
+1. Recherchez la ligne JAVA_OPTS et ajoutez les éléments suivants :
 
    ```shell
     -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=9088 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false
@@ -130,22 +130,22 @@ Pour afficher les MBeans depuis JConsole, vous devez configurer les paramètres 
 
 >[!NOTE]
 >
->pour WebLogic, vous pouvez accéder au MBean à distance ou via IIOP.
+>Pour WebLogic, vous pouvez accéder au MBean à distance ou IIOP.
 
 **Accès à distance au MBean**
 
-1. Lancez JConsole pour établir une nouvelle connexion et cliquez sur l’onglet Remote.
-1. Entrez le nom d’hôte et le port (9088, le nombre spécifié dans les options de démarrage de la JVM).
+1. Lancez JConsole pour une nouvelle connexion et cliquez sur l’onglet distant.
+1. Saisissez le nom d’hôte et le port (9088, le numéro que vous indiquez lors des options de démarrage de la JVM).
 
-**WebSphere 6.1 - configuration du démarrage de la JVM**
+**WebSphere® 6.1 - configuration du démarrage de la JVM**
 
-1. Dans la console d’administration (Serveur d’applications > server1 > Process Definition > JVM), ajoutez la ligne suivante dans le champ correspondant à Generic JVM Argument :
+1. Sur le Admin Console (Serveur d’applications > server1 > Process Definition > JVM), ajoutez la ligne suivante dans le champ pour Generic JVM Argument :
 
    ```shell
     -Djavax.management.builder.initial= -Dcom.sun.management.jmxremote
    ```
 
-1. Ajoutez les trois lignes suivantes (ou annulez leur mise en commentaires) dans le fichier /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;Votre JRE WebSphere>/lib/management/management.properties) :
+1. Ajoutez ou annulez la mise en commentaire des trois lignes suivantes dans le fichier /opt/IBM/WebSphere/AppServer/java/jre/lib/management/management.properties (ou &lt;your websphere=&quot;&quot; jre=&quot;&quot;>/ lib/management/management.properties) :
 
    ```shell
     com.sun.management.jmxremote.port=9999 //any port you like, but make sure you use this port when you connect

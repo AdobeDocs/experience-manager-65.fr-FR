@@ -1,8 +1,6 @@
 ---
 title: Prise en main de Process Reporting
-seo-title: Getting Started with Process Reporting
-description: Étapes à suivre pour commencer à utiliser le module Process Reporting d’AEM Forms on JEE
-seo-description: The steps you need to follow to get started with AEM Forms on JEE Process Reporting
+description: Procédure de prise en main du reporting des processus d’AEM Forms on JEE
 uuid: 685cad39-da2c-411d-a0b0-201917438bcf
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,10 +8,10 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1710'
-ht-degree: 100%
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+workflow-type: tm+mt
+source-wordcount: '1693'
+ht-degree: 74%
 
 ---
 
@@ -29,13 +27,13 @@ Cet article décrit les étapes à suivre pour activer la publication des donné
 
 Si vous utilisez actuellement Forms Workflow, la base de données AEM Forms peut contenir une grande quantité de données.
 
-Les services de publication Process Reporting publieront toutes les données AEM Forms actuellement disponibles dans la base de données. Par conséquent, si la base de données contient des données héritées pour lesquelles vous ne souhaitez pas exécuter de rapports et de requêtes, toutes ces données seront également publiées dans le référentiel, même si elles ne sont pas requises pour la création de rapports. Il est recommandé de purger ces données avant d’exécuter les services pour publier les données dans le référentiel Process Reporting. Vous améliorez ainsi les performances du service d’éditeur et du service qui interroge les données pour la création de rapports.
+Les services de publication Process Reporting publient toutes les données AEM Forms actuellement disponibles dans la base de données. Cela signifie que si la base de données contient des données héritées sur lesquelles vous ne souhaitez pas exécuter de rapports et de requêtes, toutes ces données seront également publiées dans le référentiel, même si elles ne sont pas requises pour la création de rapports. Il est recommandé de purger ces données avant d’exécuter les services pour publier les données dans le référentiel Process Reporting. Cela améliore les performances du service d’éditeur et du service qui interroge les données pour la création de rapports.
 
-Pour plus d’informations sur la purge des données de processus AEM Forms, voir [Purger les données de processus](https://help.adobe.com/fr_FR/livecycle/11.0/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7cb2.2.html).
+Pour plus d’informations sur la purge des données de processus AEM Forms, voir [Purger les données de processus](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
 
 >[!NOTE]
 >
->Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur la [purge des processus et des tâches](https://www.adobe.com/content/dam/Adobe/en/devnet/livecycle/pdfs/purging_processes_jobs.pdf).
+>Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur la [purge des processus et des tâches](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
 
 ## Configurer les services Process Reporting {#configuring-process-reporting-services}
 
@@ -43,60 +41,60 @@ Pour plus d’informations sur la purge des données de processus AEM Forms, voi
 
 Les services Process Reporting publient les données de la base de données AEM Forms dans le référentiel Process Reporting selon un calendrier précis.
 
-Cette opération peut nécessiter de nombreuses ressources et avoir un impact sur les performances des serveurs AEM Forms. Il est recommandé de planifier cette opération en dehors des créneaux horaires occupés de votre serveur AEM Forms.
+Cette opération peut nécessiter de nombreuses ressources et avoir un impact sur les performances des serveurs AEM Forms. Il est recommandé de planifier cette opération en dehors de vos créneaux horaires occupés sur le serveur AEM Forms.
 
 Par défaut, la publication des données est planifiée tous les jours à 02h00.
 
-Effectuez les étapes suivantes pour modifier le calendrier de publication :
+Pour modifier le planning de publication, procédez comme suit :
 
 >[!NOTE]
 >
 >Si vous réalisez la mise en œuvre d’AEM Forms sur un cluster, effectuez les étapes suivantes sur chaque nœud du cluster.
 
-1. Arrêtez l’instance du serveur AEM Forms.
+1. Arrêtez l’instance AEM Forms Server.
 1. &#x200B;
 
    * (Pour Windows) Ouvrez le fichier `[JBoss root]/bin/run.conf.bat` dans un éditeur.
-   * (Pour Linux, AIX et Solaris) Ouvrez le fichier `[JBoss root]/bin/run.conf.sh` dans un éditeur.
+   * (Pour Linux®, AIX® et Solaris™) `[JBoss root]/bin/run.conf.sh` dans un éditeur.
 
 1. Ajoutez l’argument JVM `-Dreporting.publisher.cron = <expression>.`
 
-   Exemple : l’expression cron suivante entraîne la publication par Process Reporting de données AEM Forms dans le référentiel Process Reporting toutes les 5 heures :
+   Exemple : L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les cinq heures :
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Enregistrez et fermez le fichier `run.conf.bat`.
 
-1. Redémarrez l’instance du serveur AEM Forms.
+1. Redémarrez l’instance AEM Forms Server.
 
-1. Arrêtez l’instance du serveur AEM Forms.
-1. Connectez-vous à la console d’administration WebSphere. Dans l’arborescence de navigation, cliquez sur **Serveurs** > **Serveurs d’applications**, puis sur le nom du serveur dans le volet de droite.
+1. Arrêtez l’instance AEM Forms Server.
+1. Connectez-vous à la console d’administration WebSphere®. Dans l’arborescence de navigation, cliquez sur **Serveurs** > **Serveurs d’application** puis, dans le volet de droite, cliquez sur le nom du serveur.
 
-1. Sous Server Infrastructure, cliquez sur **Java and Process Management** > **Process Definition**.
+1. Sous Server Infrastructure, cliquez sur **Java™ et gestion des processus** > **Définition du processus**.
 
-1. Sous Additional Properties, cliquez sur **Java Virtual Machine**.
+1. Sous Additional Properties, cliquez sur **Java™ Virtual Machine**.
 
    Dans la zone d’arguments JVM génériques, ajoutez l’argument `-Dreporting.publisher.cron = <expression>.`
 
-   **Exemple** : l’expression cron suivante entraîne la publication par Process Reporting de données AEM Forms dans le référentiel Process Reporting toutes les 5 heures :
+   **Exemple**: L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les cinq heures :
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Cliquez sur **Appliquer**, sur OK, puis sur **Enregistrer directement vers la configuration maître**.
-1. Redémarrez l’instance du serveur AEM Forms.
-1. Arrêtez l’instance du serveur AEM Forms.
+1. Redémarrez l’instance AEM Forms Server.
+1. Arrêtez l’instance AEM Forms Server.
 1. Connectez-vous à la console d’administration WebLogic. L’adresse par défaut de la console d’administration WebLogic `https://[hostname]:[port]/console`.
 1. Sous Centre des modifications, cliquez sur **Verrouiller et modifier**.
-1. Sous Domain Structure, cliquez sur **Environment** > **Servers** et, dans le volet de droite, cliquez sur le nom du serveur géré.
+1. Sous Domain Structure, cliquez sur **Environnement** > **Serveurs** et, dans le volet de droite, cliquez sur le nom du serveur géré.
 1. Dans l’écran suivant, cliquez sur les onglets **Configuration** > **Server Start**.
 1. Dans la zone Arguments, ajoutez l’argument JVM `-Dreporting.publisher.cron = <expression>`.
 
-   **Exemple** : l’expression cron suivante entraîne la publication par Process Reporting de données AEM Forms dans son référentiel. Cette action survient toutes les 5 heures :
+   **Exemple**: L’expression cron suivante entraîne la création de rapports de processus à publier des données AEM Forms dans le référentiel de création de rapports de processus toutes les cinq heures :
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. Cliquez sur **Save**, puis sur **Activate Changes**.
-1. Redémarrez l’instance du serveur AEM Forms.
+1. Redémarrez l’instance AEM Forms Server.
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
 
@@ -139,7 +137,7 @@ Le service ReportConfiguration est utilisé par Process Reporting pour configure
 1. Ouvrez le service **ReportingConfiguration**.
 1. **Nombre d’enregistrements**
 
-   Lors de l’exécution d’une requête sur le référentiel, un résultat peut potentiellement contenir un grand nombre d’enregistrements. Si le jeu de résultats est volumineux, l’exécution de la requête peut consommer des ressources serveur.
+   Lors de l’exécution d’une requête sur le référentiel, un résultat peut potentiellement contenir de nombreux enregistrements. Si le jeu de résultats est volumineux, l’exécution de la requête peut consommer des ressources serveur.
 
    Pour gérer les jeux de résultats volumineux, le service ReportConfiguration divise le traitement des requêtes en lots d’enregistrements. Cela réduit la charge du système.
 
@@ -153,10 +151,10 @@ Le service ReportConfiguration est utilisé par Process Reporting pour configure
 
    >[!NOTE]
    >
-   >Il s’agit du même emplacement que celui spécifié dans l’option **Dossier racine** de la configuration ProcessDataStorage.
+   >Cet emplacement est identique à celui spécifié dans l’option de configuration ProcessDataStorage . **Dossier racine**.
    >
    >
-   >Si vous mettez à jour l’option de dossier racine dans la configuration ProcessDataStorage, vous devez mettre à jour l’emplacement du chemin de stockage CRX dans le service ReportConfiguration.
+   >Si vous mettez à jour l’option Root Folder dans la configuration ProcessDataStorage, vous devez mettre à jour l’emplacement CRX Storage Path dans le service ReportConfiguration.
 
 1. Cliquez sur **Enregistrer** et fermez **CQ Configuration Manager**.
 
@@ -186,9 +184,7 @@ Vous pouvez également utiliser cette option pour désactiver la publication des
 
 **Intervalle de lot (sec.)**
 
-Chaque fois que le service ProcessDataPublisher s’exécute, il divise d’abord le temps depuis la dernière exécution du service par l’intervalle de lot. Le service traite ensuite séparément chaque intervalle de données AEM Forms.
-
-Cela permet de contrôler la taille des données que l’éditeur traite de bout en bout au cours de chaque exécution (lot) au cours d’un cycle.
+Chaque fois que le service ProcessDataPublisher s’exécute, il divise d’abord le temps depuis la dernière exécution du service par l’intervalle de lot. Le service traite ensuite séparément chaque intervalle de données AEM Forms afin de contrôler la taille des données que l’éditeur traite de bout en bout au cours de chaque exécution (lot) au cours d’un cycle.
 
 Par exemple, si l’éditeur s’exécute tous les jours, au lieu de traiter l’ensemble des données pendant un jour au cours d’une seule exécution, il divise par défaut le traitement en 24 lots d’une heure chacun.
 
@@ -212,7 +208,7 @@ L’environnement AEM Forms contient les données du moment où l’environnemen
 
 Par défaut, le service ProcessDataPublisher importe toutes les données de la base de données AEM Forms.
 
-En fonction de vos besoins de création de rapports, si vous prévoyez d’exécuter des rapports et des requêtes sur des données après une certaine date et heure, il est recommandé de spécifier la date et l’heure. Le service de publication publiera alors la date à partir de ce moment.
+En fonction de vos besoins de création de rapports, si vous prévoyez d’exécuter des rapports et des requêtes sur des données après une certaine date et heure, il est recommandé de spécifier la date et l’heure. Le service de publication publie ensuite la date à partir de cette date.
 
 `Default`: `01-01-1970 00:00:00`
 
@@ -230,7 +226,7 @@ Une fois que vous avez configuré Process Reporting, vous pouvez commencer à l�
 
 Lorsque vous accédez à l’URL Process Reporting (https://&lt;server>:&lt;port>/lc/pr), l’écran de connexion s’affiche.
 
-Indiquez vos informations d’identification pour vous connecter au module Process Reporting.
+Pour vous connecter au module Process Reporting, spécifiez vos informations d’identification.
 
 >[!NOTE]
 >

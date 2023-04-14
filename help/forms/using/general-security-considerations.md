@@ -11,10 +11,10 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 44%
+source-wordcount: '1059'
+ht-degree: 41%
 
 ---
 
@@ -65,7 +65,7 @@ Pour plus de détails sur la sécurité des systèmes d’exploitation pris en c
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Guide de sécurité pour la version 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Guide de sécurité pour la version 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -245,8 +245,8 @@ Le fichier lc_[database].xml ne doit pas contenir de mot de passe en texte clair
 >
 >Le programme d’installation clé en main d’AEM Forms on JEE JBoss® chiffre le mot de passe de la base de données.
 
-IBM® WebSphere® Application Server et Oracle WebLogic Server peuvent chiffrer les mots de passe de la source de données par défaut. Vérifiez ce point dans la documentation de votre serveur d’applications.
+IBM® WebSphere® Application Server et Oracle WebLogic Server peuvent chiffrer les mots de passe de la source de données par défaut. Toutefois, vous devez vérifier avec la documentation de votre serveur d’applications que cela se produit.
 
 ### Protection de la clé privée stockée dans Trust Store {#protecting-the-private-key-stored-in-trust-store}
 
-Les clés privées ou les informations d’identification importées dans Trust Store sont stockées dans la base de données d’AEM Forms on JEE. Prenez des mesures de sécurité appropriées pour sécuriser la base de données et limiter l’accès aux seuls administrateurs indiqués.
+Les clés privées ou les informations d’identification importées dans Trust Store sont stockées dans la base de données d’AEM Forms on JEE. Pour sécuriser la base de données et restreindre l&#39;accès aux administrateurs désignés uniquement, prenez les précautions adéquates.

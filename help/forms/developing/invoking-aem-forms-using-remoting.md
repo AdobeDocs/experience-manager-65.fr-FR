@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '4628'
-ht-degree: 100%
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+workflow-type: tm+mt
+source-wordcount: '4599'
+ht-degree: 93%
 
 ---
 
@@ -72,11 +72,11 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 [Créer des applications Flash Builder qui effectuent une authentification SSO à l’aide de jetons HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-Pour plus d’informations sur l’affichage des données de processus dans un contrôle graphique Flex, voir [Afficher des données de processus AEM Forms dans des graphiques Flex](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
+<!-- For information on how to display process data in a Flex graph control, see [Displaying AEM Forms process data in Flex graphs](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html). This URL is 404. No suitable replacement URL was found after a search. Do not make this link live if it is dead! -->
 
 >[!NOTE]
 >
->*Assurez-vous que le fichier crossdomain.xml est placé au bon endroit. Par exemple, si vous avez déployé AEM Forms sur JBoss, placez ce fichier à l’emplacement suivant : &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
+>*Veillez à placer le fichier crossdomain.xml au bon endroit. Par exemple, si vous avez déployé AEM Forms sur JBoss, placez ce fichier à l’emplacement suivant : &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
 
 ## Inclure le fichier de bibliothèque Flex AEM Forms {#including-the-aem-forms-flex-library-file}
 
@@ -98,15 +98,15 @@ Pour appeler par programmation les processus AEM Forms à l’aide de Remoting, 
 
 ## Gérer des documents avec Remoting {#handling-documents-with-remoting}
 
-L’un des types Java non primitifs les plus importants utilisés dans AEM Forms est la classe `com.adobe.idp.Document`. Un document est généralement nécessaire pour appeler une opération AEM Forms. Il s’agit principalement d’un document PDF, mais il peut contenir d’autres types de document tels que les documents SWF, HTML, XML ou un fichier DOC. (Voir [Transmettre des données vers les services AEM Forms à l’aide de l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+L’un des types Java™ non primitifs les plus importants utilisés dans AEM Forms est le suivant : `com.adobe.idp.Document` classe . Un document est généralement nécessaire pour appeler une opération AEM Forms. Il s’agit principalement d’un document PDF, mais il peut contenir d’autres types de document tels que les documents SWF, HTML, XML ou un fichier DOC. (Voir [Transmettre des données vers les services AEM Forms à l’aide de l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-Une application cliente créée avec Flex ne peut pas demander directement un document. Par exemple, vous ne pouvez pas lancer Adobe Reader pour demander une URL qui génère un fichier PDF. Les requêtes relatives aux types de documents, tels que les documents PDF et Microsoft Word, renvoient un résultat en forme d’URL. Il est de la responsabilité du client d’afficher le contenu de l’URL. Le service Document Management permet de générer les informations d’URL et de type de contenu. Les requêtes de documents XML renvoient le document XML complet dans le résultat.
+Une application cliente créée avec Flex ne peut pas demander directement un document. Par exemple, vous ne pouvez pas lancer Adobe Reader pour demander une URL qui génère un fichier PDF. Les requêtes relatives aux types de documents, tels que les documents PDF et Microsoft® Word, renvoient un résultat qui est une URL. Il est de la responsabilité du client d’afficher le contenu de l’URL. Le service Document Management permet de générer les informations d’URL et de type de contenu. Les requêtes de documents XML renvoient le document XML complet dans le résultat.
 
 ### Transmettre un document en tant que paramètre d’entrée {#passing-a-document-as-an-input-parameter}
 
 Une application cliente créée avec Flex ne peut pas transmettre directement un document à un processus AEM Forms. L’application cliente utilise plutôt une instance de la classe ActionScript `mx.rpc.livecycle.DocumentReference` pour transmettre des paramètres d’entrée à une opération qui attend une instance `com.adobe.idp.Document`. Une application cliente Flex offre plusieurs options de configuration d’un objet `DocumentReference` :
 
-* Lorsque le document se trouve sur le serveur et que son emplacement est connu, définissez la propriété referenceType de l’objet DocumentReference sur REF_TYPE_FILE. Définissez la propriété fileRef sur l’emplacement du fichier, comme le montre l’exemple suivant :
+* Lorsque le document se trouve sur le serveur et que l’emplacement de son fichier est connu, définissez la propriété referenceType de l’objet DocumentReference sur REF_TYPE_FILE. Définissez la propriété fileRef sur l’emplacement du fichier, comme le montre l’exemple suivant :
 
 ```java
  ... var docRef: DocumentReference = new DocumentReference(); 
@@ -122,18 +122,18 @@ docRef.referenceType = DocumentReference.REF_TYPE_URL; 
 docRef.url = "https://companyserver:8080/DocumentManager/116/7855"; ...
 ```
 
-* Pour créer un objet DocumentReference à partir d’une chaîne de textes dans l’application cliente, définissez la propriété referenceType de l’objet DocumentReference sur REF_TYPE_INLINE. Définissez la propriété text sur le texte à inclure dans l’objet, comme dans l’exemple suivant :
+* Pour créer un objet DocumentReference à partir d’une chaîne de texte dans l’application cliente, définissez la propriété referenceType de l’objet DocumentReference sur REF_TYPE_INLINE. Définissez la propriété text sur le texte à inclure dans l’objet, comme dans l’exemple suivant :
 
 ```java
 ... var docRef: DocumentReference = new DocumentReference(); 
 docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
-docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
+docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
 * Lorsque le document ne se trouve pas sur le serveur, utilisez le servlet de téléchargement Remoting pour charger un document sur AEM Forms. La nouvelle fonctionnalité d’AEM Forms est la possibilité de charger des documents sécurisés. Lors du chargement d’un document sécurisé, vous devez utiliser un utilisateur disposant du rôle *Utilisateur de l’application de chargement de document*. Sans ce rôle, l’utilisateur ne peut pas charger un document sécurisé. Il est recommandé d’utiliser l’authentification unique pour charger un document sécurisé. (Voir [Transmettre des documents sécurisés pour appeler des processus à l’aide de Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 >[!NOTE]
->Si AEM Forms est configuré pour autoriser le chargement de documents non sécurisés, vous pouvez utiliser un utilisateur qui ne dispose pas du rôle Utilisateur de l’application de chargement de documents pour charger un document. Un utilisateur peut également disposer de l’autorisation Chargement de document. Cependant, si AEM Forms est configuré pour autoriser uniquement les documents sécurisés, assurez-vous que l’utilisateur dispose du rôle Utilisateur de l’application de chargement de document ou de l’autorisation Chargement de document. (Voir [Configurer AEM Forms pour accepter des documents sécurisés et non sécurisés](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
+Si AEM Forms est configuré pour autoriser le chargement de documents non sécurisés, vous pouvez utiliser un utilisateur qui ne dispose pas du rôle Utilisateur de l’application de chargement de documents pour charger un document. Un utilisateur peut également disposer de l’autorisation Chargement de document. Cependant, si AEM Forms est configuré pour autoriser uniquement les documents sécurisés, assurez-vous que l’utilisateur dispose du rôle Utilisateur de l’application de chargement de document ou de l’autorisation Chargement de document. (Voir [Configurer AEM Forms pour accepter des documents sécurisés et non sécurisés](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 Vous utilisez les fonctionnalités de chargement Flash standard pour l’URL de chargement désignée : `https://SERVER:PORT/remoting/lcfileupload`. Vous pouvez ensuite utiliser l’objet `DocumentReference` où un paramètre d’entrée de type `Document` est attendu
 ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`Le didacticiel de mise en route de Remoting utilise le servlet de chargement Remoting pour transmettre un fichier PDF au processus `MyApplication/EncryptDocument`. (Voir [Appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
@@ -173,7 +173,7 @@ Le didacticiel de mise en route Remoting utilise le servlet de chargement Remoti
 
 ### Transmettre un document à une application cliente {#passing-a-document-back-to-a-client-application}
 
-Une application cliente reçoit un objet de type `mx.rpc.livecycle.DocumentReference` pour une opération de service qui renvoie une instance `com.adobe.idp.Document` comme paramètre de sortie. Étant donné qu’une application cliente traite des objets ActionScript et non Java, vous ne pouvez pas transmettre un objet Document basé sur Java à un client Flex. Au lieu de cela, le serveur génère une URL pour le document et la transmet au client. La propriété `referenceType` de l’objet `DocumentReference` indique si le contenu se trouve dans l’objet `DocumentReference` ou doit être récupéré à partir d’une URL dans la propriété `DocumentReference.url`. La propriété `DocumentReference.contentType` indique le type de graphique.
+Une application cliente reçoit un objet de type `mx.rpc.livecycle.DocumentReference` pour une opération de service qui renvoie une instance `com.adobe.idp.Document` comme paramètre de sortie. Étant donné qu’une application cliente traite des objets ActionScript et non Java, vous ne pouvez pas transmettre un objet Document basé sur Java à un client Flex. Au lieu de cela, le serveur génère une URL pour le document et la transmet au client. Le `DocumentReference` de `referenceType` indique si le contenu se trouve dans la propriété `DocumentReference` ou doit être récupéré à partir d’une URL dans la variable `DocumentReference.url` . La propriété `DocumentReference.contentType` indique le type de graphique.
 
 **Voir également**
 
@@ -197,7 +197,7 @@ Pour appeler un processus AEM Forms à partir d’une application créée avec F
 1. Gérez les valeurs de retour.
 
 >[!NOTE]
->Cette section explique comment appeler un processus AEM Forms et charger un document lorsqu’AEM Forms est configuré pour charger des documents non sécurisés. Pour plus d’informations sur l’appel des processus AEM Forms et le chargement de documents sécurisés, ainsi que sur la configuration d’AEM Forms pour accepter des documents sécurisés et non sécurisés, voir [Transmettre des documents sécurisés pour appeler des processus à l’aide de Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+Cette section explique comment appeler un processus AEM Forms et charger un document lorsqu’AEM Forms est configuré pour charger des documents non sécurisés. Pour plus d’informations sur l’appel des processus AEM Forms et le chargement de documents sécurisés, ainsi que sur la configuration d’AEM Forms pour accepter des documents sécurisés et non sécurisés, voir [Transmettre des documents sécurisés pour appeler des processus à l’aide de Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **Créer une instance mx:RemoteObject**
 
@@ -207,7 +207,7 @@ Vous créez une instance `mx:RemoteObject` pour appeler un processus AEM Forms c
 * **destination :** nom du processus AEM Forms à appeler. Par exemple, pour appeler le processus `MyApplication/EncryptDocument`, spécifiez `MyApplication/EncryptDocument`.
 * **result :** nom de la méthode Flex qui gère le résultat.
 
-Dans la balise `mx:RemoteObject`, indiquez une balise `<mx:method>` spécifiant le nom de la méthode d’appel du processus. En règle générale, le nom d’une méthode d’appel Forms est `invoke`.
+Dans le `mx:RemoteObject` balise, spécifiez une balise `<mx:method>` qui spécifie le nom de la méthode d’appel du processus. En règle générale, le nom d’une méthode d’appel Forms est `invoke`.
 
 L’exemple de code suivant crée une instance `mx:RemoteObject` qui appelle le processus `MyApplication/EncryptDocument`.
 
@@ -233,7 +233,7 @@ Une application cliente peut appeler AEM Forms en spécifiant un canal dans MXML
      ...
 ```
 
-Attribuez l’instance `ChannelSet` au champ `channelSet` de l’instance `mx:RemoteObject` (comme illustré dans l’exemple de code précédent). En règle générale, vous importez la classe de canal dans une instruction d’importation plutôt que de spécifier le nom complet lorsque vous appelez la méthode `ChannelSet.addChannel`.
+Attribuez le `ChannelSet` à l’instance `mx:RemoteObject` instance `channelSet` (comme illustré dans l’exemple de code précédent). En règle générale, vous importez la classe de canal dans une instruction d’importation plutôt que de spécifier le nom complet lorsque vous appelez la méthode `ChannelSet.addChannel`.
 
 **Transmission des valeurs d’entrée**
 
@@ -286,9 +286,9 @@ Vous pouvez appeler le processus `MyApplication/EncryptDocument` en procédant c
 
 1. Créez une instance `mx:RemoteObject` par ActionScript ou MXML. Voir Créer une instance mx:RemoteObject.
 1. Configurez une instance `ChannelSet` pour communiquer avec AEM Forms et l’associer à l’instance `mx:RemoteObject`. Voir Créer un canal vers AEM Forms.
-1. Appelez la méthode `login` de ChannelSet ou la méthode `setCredentials` du service pour spécifier la valeur de l’identifiant utilisateur et le mot de passe. (Voir [Utilisation de l’authentification unique](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. Appelez le canal `login` ou du service `setCredentials` pour spécifier la valeur de l’identifiant utilisateur et le mot de passe. (Voir [Utilisation de l’authentification unique](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Renseignez une instance `mx.rpc.livecycle.DocumentReference` avec un document PDF non sécurisé à transmettre au processus `MyApplication/EncryptDocument`. (Voir [Transmettre un document en tant que paramètre d’entrée](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. Chiffrez le document PDF en appelant la méthode `invoke` de l’instance `mx:RemoteObject`. Transmettez le `Object` contenant le paramètre d’entrée (qui est le document PDF non sécurisé). Voir Transmettre des valeurs d’entrée.
+1. Chiffrez le document du PDF en appelant la fonction `mx:RemoteObject` instance `invoke` . Transmettez le `Object` contenant le paramètre d’entrée (qui est le document PDF non sécurisé). Voir Transmettre des valeurs d’entrée.
 1. Récupérez le document PDF chiffré par mot de passe renvoyé par le processus. Voir Gérer des valeurs de retour.
 
 [Démarrage rapide : appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
@@ -302,14 +302,14 @@ L’authentification de base repose sur l’authentification de base J2EE standa
 Pour une authentification personnalisée, le serveur envoie une erreur au client pour indiquer qu’une authentification est requise.
 
 >[!NOTE]
->Pour plus d’informations à propos de l’authentification à l’aide de jetons HTTP, voir [Créer des applications Flash Builder qui effectuent une authentification SSO à l’aide de jetons HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
+Pour plus d’informations à propos de l’authentification à l’aide de jetons HTTP, voir [Créer des applications Flash Builder qui effectuent une authentification SSO à l’aide de jetons HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### Utiliser l’authentification personnalisée {#using-custom-authentication}
 
 Pour activer l’authentification personnalisée dans la console d’administration, basculez la méthode d’authentification de base sur personnalisée au niveau du point d’entrée de gestion à distance. Si vous utilisez l’authentification personnalisée, votre application cliente appelle la méthode `ChannelSet.login` pour la connexion et la méthode `ChannelSet.logout` pour la déconnexion.
 
 >[!NOTE]
->Dans la version précédente d’AEM Forms, vous avez envoyé des informations d’identification à une destination en appelant la méthode `RemoteObject.setCredentials`. La méthode `setCredentials` ne transmettait pas réellement les informations d’identification au serveur avant la première tentative du composant pour se connecter au serveur. Par conséquent, si le composant a généré un événement d’erreur, vous ne pouvez pas être certain que l’erreur s’est produite en raison d’une erreur d’authentification ou pour une autre raison. La méthode `ChannelSet.login` établit la connexion avec le serveur lorsque vous l’appelez afin que vous puissiez gérer un problème d’authentification immédiatement. Bien que vous puissiez continuer à utiliser la méthode `setCredentials`, il est recommandé d’utiliser la méthode `ChannelSet.login`.
+Dans la version précédente d’AEM Forms, vous avez envoyé des informations d’identification à une destination en appelant la méthode `RemoteObject.setCredentials`. La méthode `setCredentials` ne transmettait pas réellement les informations d’identification au serveur avant la première tentative du composant pour se connecter au serveur. Par conséquent, si le composant a généré un événement d’erreur, vous ne pouvez pas être certain que l’erreur s’est produite en raison d’une erreur d’authentification ou pour une autre raison. La méthode `ChannelSet.login` établit la connexion avec le serveur lorsque vous l’appelez afin que vous puissiez gérer un problème d’authentification immédiatement. Bien que vous puissiez continuer à utiliser la méthode `setCredentials`, il est recommandé d’utiliser la méthode `ChannelSet.login`.
 
 Comme plusieurs destinations peuvent utiliser les mêmes canaux et l’objet ChannelSet correspondant, la connexion à une destination entraîne l’ouverture d’une session de l’utilisateur vers toute autre destination qui utilise le même canal ou les mêmes canaux. Si deux composants appliquent des informations d’identification différentes au même objet ChannelSet, les dernières informations d’identification appliquées sont utilisées. Si plusieurs composants utilisent le même objet ChannelSet authentifié, l’appel de la méthode `logout` déconnecte tous les composants des destinations.
 
@@ -454,7 +454,7 @@ Les développeurs AEM Forms écrivent des applications clientes pour étendre le
 Lorsqu’un service AEM Forms est appelé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms), l’application cliente transmet le cookie d’authentification dans le cadre de la requête. Comme l’utilisateur s’est déjà authentifié, aucune connexion supplémentaire n’est requise pour établir une connexion entre l’application cliente et le service AEM Forms.
 
 >[!NOTE]
->Si un cookie n’est pas valide ou est manquant, il n’existe aucune redirection implicite vers une page de connexion. Par conséquent, vous pouvez toujours appeler un service anonyme.
+Si un cookie n’est pas valide ou est manquant, il n’existe aucune redirection implicite vers une page de connexion. Par conséquent, vous pouvez toujours appeler un service anonyme.
 
 Vous pouvez contourner le mécanisme d’authentification unique d’AEM Forms par l’écriture d’une application cliente qui se connecte et se déconnecte seule. Si vous ignorez le mécanisme d’authentification unique, vous pouvez utiliser une authentification de base ou personnalisée avec votre application.
 
@@ -548,7 +548,7 @@ Vous pouvez transmettre des documents sécurisés à AEM Forms lors de l’appel
 Lors de la transmission d’un document sécurisé, utilisez l’authentification unique et spécifiez un utilisateur d’AEM Forms doté de la fonction *Utilisateur de l’application de chargement de documents*. Sans ce rôle, l’utilisateur ne peut pas charger un document sécurisé. Vous pouvez attribuer par programmation un rôle à un utilisateur. (Voir [Gérer des rôles et des autorisations](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
->Lorsque vous créez un nouveau rôle et que vous souhaitez que les membres de ce rôle chargent des documents sécurisés, assurez-vous de spécifier l’autorisation de chargement de documents.
+Lorsque vous créez un nouveau rôle et que vous souhaitez que les membres de ce rôle chargent des documents sécurisés, assurez-vous de spécifier l’autorisation de chargement de documents.
 
 AEM Forms prend en charge une opération nommée `getFileUploadToken` qui renvoie un jeton transmis à la servlet de chargement. La méthode `DocumentReference.constructRequestForUpload` requiert une URL vers AEM Forms ainsi que le jeton renvoyé par la méthode `LC.FileUploadAuthenticator.getFileUploadToken`. Cette méthode renvoie un objet `URLRequest` qui est utilisé pour appeler au servlet de chargement. Le code suivant illustre cette logique d’application.
 
@@ -616,7 +616,7 @@ Vous pouvez utiliser la console d’administration pour définir si les document
 1. Assurez-vous que l’option Autoriser le chargement de documents non sécurisés à partir d’applications Flex n’est pas sélectionnée.
 
 >[!NOTE]
->Pour configurer AEM Forms de sorte qu’il accepte les documents non sécurisés, sélectionnez l’option Autoriser le chargement de documents non sécurisés à partir des applications Flex. Redémarrez ensuite une application ou un service pour vous assurer que le paramètre a pris effet.
+Pour configurer AEM Forms de sorte qu’il accepte les documents non sécurisés, sélectionnez l’option Autoriser le chargement de documents non sécurisés à partir des applications Flex. Redémarrez ensuite une application ou un service pour vous assurer que le paramètre a pris effet.
 
 ### Démarrage rapide : appeler un processus de courte durée en transmettant un document sécurisé à l’aide de Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
@@ -732,7 +732,7 @@ Si AEM Forms est configuré pour autoriser uniquement le chargement de documents
       // Called once the file is completely uploaded.
       private function completeHandler(event:DataEvent):void {
  
-        // Set the docRef’s url and referenceType parameters
+        // Set the docRef's url and referenceType parameters
         docRef.url = event.data as String;
         docRef.referenceType=DocumentReference.REF_TYPE_URL;
         executeInvokeProcess();
@@ -920,7 +920,7 @@ Le tableau suivant répertorie les contrôles compris dans cette application cli
   </tr>
   <tr>
    <td><p>txtState</p></td>
-   <td><p>Indique l’État du client. </p></td>
+   <td><p>Indique l’état du client. </p></td>
   </tr>
   <tr>
    <td><p>txtZIP</p></td>
@@ -932,7 +932,7 @@ Le tableau suivant répertorie les contrôles compris dans cette application cli
   </tr>
   <tr>
    <td><p>txtCustId</p></td>
-   <td><p>Indique la valeur de l’identifiant du client auquel appartient le nouveau compte. Cette zone de texte est renseignée par la valeur renvoyée par l’opération <code>createCustomer</code> du service client. </p></td>
+   <td><p>Indique la valeur de l’identifiant du client auquel appartient le nouveau compte. Cette zone de texte est renseignée par la valeur renvoyée par le <code>createCustomer</code> opération. </p></td>
   </tr>
  </tbody>
 </table>
@@ -969,18 +969,18 @@ Le type de données complet du type complexe AEM Forms est affecté à la balise
 Les champs de la classe ActionScript correspondent aux champs appartenant au type complexe AEM Forms. Les six champs situés dans la classe ActionScript client correspondent aux champs appartenant à `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
->Pour déterminer les noms de champ appartenant à un type complexe Forms, une méthode efficace consiste à afficher le WSDL d’un service dans un navigateur web. Un WSDL spécifie les types complexes d’un service ainsi que les membres de données correspondants. Le WSDL suivant est utilisé pour le service client : `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
+Pour déterminer les noms de champ appartenant à un type complexe Forms, une méthode efficace consiste à afficher le WSDL d’un service dans un navigateur web. Un WSDL spécifie les types complexes d’un service ainsi que les membres de données correspondants. Le WSDL suivant est utilisé pour le service client : `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
-La classe ActionScript client appartient à un module nommé Client. Il est recommandé de placer toutes les classes ActionScript qui correspondent à des types de données AEM Forms complexes dans leur propre package. Créez un dossier dans le dossier src du projet Flex et placez le fichier ActionScript dans le dossier, comme illustré ci-dessous.
+La classe ActionScript client appartient à un package nommé Client. Il est recommandé de placer toutes les classes ActionScript qui correspondent à des types de données AEM Forms complexes dans leur propre package. Créez un dossier dans le dossier src du projet Flex et placez le fichier ActionScript dans le dossier, comme illustré ci-dessous.
 
 ![iu_iu_customeras](assets/iu_iu_customeras.png)
 
 ### Démarrage rapide : appeler un service personnalisé client à l’aide de Remoting {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-L’exemple de code suivant appelle le service client et crée un nouveau client. Lorsque vous exécutez cet exemple de code, veillez à remplir toutes les zones de texte. Veillez également à créer le fichier Customer.as qui mappe sur `com.adobe.livecycle.sample.customer.Customer`.
+L’exemple de code suivant appelle le service client et crée un client. Lorsque vous exécutez cet exemple de code, veillez à remplir toutes les zones de texte. Veillez également à créer le fichier Customer.as qui mappe sur `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
->Avant de pouvoir exécuter ce démarrage rapide, vous devez créer et déployer le composant personnalisé Banque.
+Avant de pouvoir exécuter ce démarrage rapide, vous devez créer et déployer le composant personnalisé Banque.
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>

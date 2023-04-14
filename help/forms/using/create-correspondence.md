@@ -1,7 +1,7 @@
 ---
 title: Créer une correspondance
 seo-title: Create Correspondence
-description: Après la création d’un modèle de lettre, vous pouvez l’utiliser pour créer une correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
+description: Après avoir créé un modèle de lettre, vous pouvez l’utiliser pour créer de la correspondance dans AEM Forms en gérant les données, le contenu et les pièces jointes.
 seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
 uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,22 +10,22 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
-workflow-type: ht
-source-wordcount: '3867'
-ht-degree: 100%
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+workflow-type: tm+mt
+source-wordcount: '3855'
+ht-degree: 57%
 
 ---
 
 # Créer une correspondance{#create-correspondence}
 
-## Créez une correspondance dans l’interface utilisateur Création de correspondance {#create-correspondence-in-the-create-correspondence-user-interface}
+## Création de correspondance dans l’interface utilisateur de création de correspondance {#create-correspondence-in-the-create-correspondence-user-interface}
 
-Après la création d’un [modèle de lettre dans Correspondence Management](../../forms/using/create-letter.md), l’utilisateur / agent / expert en assurance final peut ouvrir la lettre dans l’interface utilisateur Création de correspondance et créer une correspondance en saisissant des données, en installant du contenu et en gérant les pièces jointes. Enfin, l’agent ou l’expert en assurance peut gérer le contenu en mode Aperçu et envoyer la lettre.
+Après la création d’un [modèle de lettre dans Correspondence Management](../../forms/using/create-letter.md), l’utilisateur / agent / expert en assurance final peut ouvrir la lettre dans l’interface utilisateur Création de correspondance et créer une correspondance en saisissant des données, en installant du contenu et en gérant les pièces jointes. Enfin, l’expert en assurance ou l’agent peut gérer le contenu en mode aperçu et envoyer la lettre.
 
-### Afficher l’aperçu d’une correspondance {#preview-a-correspondence}
+### Aperçu d’une correspondance {#preview-a-correspondence}
 
-Sélectionnez la lettre à prévisualiser en procédant comme suit :
+Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
 1. Sur la page Lettres, appuyez sur **Sélectionner**.
 1. Sélectionnez la lettre appropriée en appuyant dessus.
@@ -34,11 +34,11 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
    Sélectionner une lettre
 
-1. Pour une lettre basée sur un dictionnaire de données, sélectionnez **Prévisualisation** > **Prévisualisation**. Ou pour une lettre qui n’est pas basée sur un dictionnaire de données, sélectionnez **Aperçu**. Vous pouvez également survoler une lettre (sans la sélectionner) et appuyer sur l’icône d’aperçu de la lettre pour la prévisualiser.
+1. Pour une lettre basée sur un dictionnaire de données, sélectionnez **Prévisualisation** > **Prévisualisation**. Ou, pour une lettre non basée sur un dictionnaire de données, sélectionnez **Aperçu**. Vous pouvez également survoler une lettre (sans la sélectionner) avec la souris et appuyer sur l’icône Aperçu de la lettre pour la prévisualiser.
 
    >[!NOTE]
    >
-   >Si aucun dictionnaire de données n’est associé à la lettre, l’aperçu de la lettre s’affiche. Sinon, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options de prévisualisation et de personnalisation dans le menu Prévisualisation et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. Lorsque le [dictionnaire de données est associé à des données de test](../../forms/using/data-dictionary.md#p-working-with-test-data-p), en sélectionnant l’option de prévisualisation, l’écran d’aperçu classique s’ouvre avec les données de test renseignées.
+   >Si un dictionnaire de données n’est pas associé à la lettre, l’aperçu de la lettre s’ouvre. Sinon, si la lettre est basée sur un dictionnaire de données, Correspondence Management affiche les options de prévisualisation et de personnalisation dans le menu Prévisualisation et vous pouvez sélectionner l’une des deux options. Vous pouvez également associer des données de test à un dictionnaire de données. Lorsque le [dictionnaire de données est associé à des données de test](../../forms/using/data-dictionary.md#p-working-with-test-data-p), en sélectionnant l’option de prévisualisation, l’écran d’aperçu classique s’ouvre avec les données de test renseignées.
 
 1. Pour être en mesure de rendre une correspondance lors de la prévisualisation, vous devez être un administrateur ou un membre de l’un des groupes suivants :
 
@@ -55,17 +55,17 @@ Sélectionnez la lettre à prévisualiser en procédant comme suit :
 
    Pour plus d’informations sur les formulaires mobiles et les fonctionnalités qu’ils prennent en charge, consultez [Différences de caractéristiques entre les formulaires pour périphériques mobiles et les formulaires PDF](https://helpx.adobe.com/fr/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
-   Il existe trois onglets : données, contenu et pièces jointes. S’il n’existe pas d’éléments de données (variables d’espace réservé et champs de mise en page), la lettre s’ouvre alors directement dans l’onglet Contenu. L’onglet de pièces jointes est disponible uniquement lorsque des pièces jointes sont présentes ou que l’accès à la bibliothèque est activé.
+   Il existe trois onglets : données, contenu et pièces jointes. S’il n’existe pas d’éléments de données (variables d’espace réservé et champs de mise en page), la lettre s’ouvre alors directement dans l’onglet Contenu. L’onglet Pièces jointes est disponible uniquement lorsque des pièces jointes sont présentes ou que l’accès à la bibliothèque est activé.
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur le basculement entre le mode de rendu HTML et PDF de la prévisualisation de lettre, voir [Modifier le mode de rendu de lettre](#changerenditionmode). Pour plus d’informations sur la prise en charge du format PDF dans Correspondence Management et AEM, voir [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) et [Des formulaires PDF aux formulaires HTML5](https://helpx.adobe.com/fr/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >Pour plus d’informations sur le basculement entre le mode de rendu HTML et PDF de la prévisualisation de lettre, voir [Modifier le mode de rendu de lettre](#changerenditionmode). Pour plus d’informations sur la prise en charge des PDF dans Correspondence Management et AEM, voir [Arrêt des modules externes de navigateur NPAPI et son impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html). <!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### Saisir des données {#enterdata}
 
-Sous l’onglet Données, renseignez les champs de mise en page et les espaces réservés disponibles.
+Dans l’onglet Données , remplissez les champs de mise en page et les espaces réservés disponibles.
 
-1. Entrez les données et les variables de contenu dans les champs requis. Remplissez tous les champs obligatoires identifiés par un astérisque (&#42;) pour activer le bouton **Envoyer**.
+1. Saisissez les données et les variables de contenu dans les champs selon vos besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (&#42;) pour activer le bouton **Envoyer**.
 
    Appuyez sur une valeur de champ de données dans l’aperçu de lettre HTML pour mettre en surbrillance le champ de données correspondant dans l’onglet Données.
 
@@ -73,15 +73,15 @@ Sous l’onglet Données, renseignez les champs de mise en page et les espaces r
 
 ### Gérer le contenu {#managecontent}
 
-Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de documents et des variables de contenu dans la lettre.
+Dans l’onglet Contenu, gérez le contenu tel que les fragments de document et les variables de contenu dans la lettre.
 
 1. Sélectionnez **Contenu**. Correspondence Management affiche l’onglet de contenu de la lettre.
 
    ![Onglet Contenu - mettre en surbrillance le module dans le contenu](assets/3_content.png)
 
-1. Modifiez les modules de contenu, selon les besoins, dans l’onglet Contenu. Pour centrer l’attention sur le module de contenu approprié dans la hiérarchie des contenus, vous pouvez appuyer sur la ligne ou le paragraphe approprié dans l’aperçu de la lettre ou appuyer sur le module de contenu directement dans la hiérarchie Contenu.
+1. Modifiez les modules de contenu, selon les besoins, dans l&#39;onglet Contenu . Pour mettre l’accent sur le module de contenu approprié dans la hiérarchie de contenu, vous pouvez appuyer sur la ligne ou le paragraphe approprié dans l’aperçu de la lettre ou appuyer sur le module de contenu directement dans la hiérarchie Contenu .
 
-   Par exemple, la ligne « Nous avons passé en revue… » est choisie dans le graphique ci-dessous et le module de contenu approprié est choisi dans l’onglet Contenu.
+   Par exemple, la ligne &quot;Nous avons passé en revue...&quot; est sélectionnée dans le graphique ci-dessous et le module de contenu approprié est sélectionné dans l’onglet Contenu.
 
    ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
@@ -89,25 +89,25 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
    Pour plus d’informations sur les actions disponibles pour différents modules dans l’interface utilisateur Création de correspondance, consultez la section [Actions et informations disponibles dans l’interface utilisateur de création de correspondance](#actions-and-info-available-in-the-create-correspondence-content-tab).
 
-1. Pour localiser plusieurs modules de contenu, utilisez le champ Rechercher. Saisissez tout ou partie du nom ou titre du module de contenu pour le rechercher dans la correspondance.
+1. Pour localiser les modules de contenu, utilisez le champ Rechercher . Saisissez le nom ou le titre complet ou partiel du module de contenu pour le rechercher dans la correspondance.
 1. Appuyez sur l’icône Affichage (![display](assets/display.png)) devant une liste, un texte, une condition ou une zone cible pour l’afficher ou le/la masquer dans la lettre.
 1. Pour modifier un module de texte incorporé ou modifiable, appuyez sur l’icône **Modifier** (![edittextmodule](assets/edittextmodule.png)) ou cliquez deux fois sur le module de texte approprié dans la prévisualisation de la lettre.
 
    Le système affiche un éditeur de texte pour modifier et formater le texte.
 
-   Le vérificateur orthographique par défaut dans les vérifications orthographiques des navigateurs dans l’éditeur de texte. Pour gérer les vérifications d’orthographe et de grammaire, vous pouvez modifier les paramètres du vérificateur orthographique de votre navigateur ou installer des modules/adjonctions externes de navigateur pour vérifier l’orthographe et la grammaire.
+   Le vérificateur orthographique par défaut de votre navigateur vérifie l’orthographe dans l’éditeur de texte. Pour gérer l’orthographe et la grammaire, vous pouvez modifier les paramètres du vérificateur orthographique de votre navigateur ou installer des modules/modules externes de navigateur pour vérifier l’orthographe et la grammaire.
 
    Vous pouvez également utiliser les nombreux raccourcis clavier dans l’éditeur de texte pour gérer, modifier et mettre en forme le texte. Pour plus d’informations sur les raccourcis clavier de l’[Éditeur de texte](/help/forms/using/keyboard-shortcuts.md#correspondence-management) dans les Raccourcis clavier de Correspondence Management.
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
-   Vous souhaiterez peut-être réutiliser un ou plusieurs paragraphes de texte existant dans une autre application de document. Vous pouvez directement copier et coller du texte, par exemple du texte issu de MS Word, de pages HTML ou de toute autre application.
+   Vous pouvez réutiliser un ou plusieurs paragraphes de texte existant dans une autre application de document. Vous pouvez directement copier et coller du texte, provenant de MS Word, de pages de HTML ou de toute autre application, par exemple.
 
-   Vous pouvez copier et coller un ou plusieurs paragraphes de texte dans un module de texte modifiable. Par exemple, vous pouvez disposer d’un document MS Word contenant une liste à puces de preuves de résidence acceptables comme suit :
+   Vous pouvez copier et coller un ou plusieurs paragraphes de texte dans un module de texte modifiable. Par exemple, vous pouvez disposer d’un document MS Word avec une liste à puces de preuves de résidence acceptables, comme suit :
 
    ![pastetextmsword](assets/pastetextmsword.png)
 
-   Vous pouvez directement copier et coller le texte à partir du document MS Word vers un module de texte modifiable. La mise en forme, telle que la liste à puces, la police et la couleur du texte, est conservée dans le module de texte.
+   Vous pouvez directement copier et coller le texte du document MS Word dans un module de texte modifiable. La mise en forme, telle que la liste à puces, la police et la couleur du texte, est conservée dans le module de texte.
 
    ![pastetexteditablemodule](assets/pastetexteditablemodule.png)
 
@@ -115,7 +115,7 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
    >
    >Toutefois, la mise en forme du texte collé présente certaines [restrictions](https://helpx.adobe.com/fr/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-   Vous pouvez mettre le texte et les chiffres en retrait dans votre lettre à l’aide de la touche de tabulation. Par exemple, vous pouvez utiliser la touche de tabulation pour l’alignement de plusieurs colonnes de texte dans une liste dans un format tabulaire.
+   Vous pouvez mettre le texte et les nombres en retrait dans votre lettre à l’aide de la touche de tabulation. Par exemple, vous pouvez utiliser la touche de tabulation pour aligner plusieurs colonnes de texte d’une liste dans un format tabulaire.
 
    ![tabspaces](assets/tabspaces.png)
 
@@ -146,25 +146,25 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
    ![textbackgroundcolor](assets/textbackgroundcolor.png)
 
 1. Effectuez les modifications appropriées de contenu et de format, puis appuyez sur **Enregistrer**. Appuyez sur (![editnextmoduleccr](assets/editnextmoduleccr.png)) pour vous déplacer entre les modules de texte modifiables, ou cliquez sur **Enregistrer et suivant** pour enregistrer les modifications et passez au module de texte modifiable suivant.
-1. Le système affiche également les variables vides pour chacune des branches. Lorsqu’il n’y a aucune variable vide, le chiffre 0 est indiqué pour les variables vides. S’il y a des variables vides, vous pouvez appuyer sur une branche pour la développer et rechercher la variable vide. Utilisez la barre d’outils de contenu pour supprimer du contenu, augmenter ou diminuer le retrait du contenu, et insérer des sauts de page avant ou après le contenu.
+1. Le système affiche également les variables vides pour chacune des branches. S’il n’existe aucune variable vide, les variables vides sont présentées comme 0. S’il y a des variables vides, vous pouvez appuyer sur une branche pour la développer et rechercher la variable vide. Utilisez la barre d’outils de contenu pour supprimer du contenu, augmenter ou diminuer le retrait du contenu, et insérer des sauts de page avant ou après le contenu.
 
    Vous pouvez insérer des sauts de page au-dessus et en dessous des modules de données, même s’ils font partie de listes et de conditions.
 
 1. Appuyez sur Ouvrir/Fermer la variable de contenu (![opencontentvariables](assets/opencontentvariables.png)) pour ouvrir les variables de contenu et les remplir correctement.
 1. Lorsque vous renseignez la variable vide correctement, le nombre de variables vides est défini sur 0.
 
-   Dans l’interface utilisateur Création de correspondance, le nombre de variables vides est affiché à chaque niveau de la hiérarchie de tout module qui contient au moins une variable. Si un module contient des variables vides, le nombre est affiché au niveau de la variable, du module, de la zone cible et du modèle de lettre.
+   Dans l’interface utilisateur Création de correspondance, le nombre de variables vides est affiché à chaque niveau de la hiérarchie de tout module qui contient au moins une variable. Si un module contient des variables vides, le nombre s’affiche au niveau de la variable, du module, de la zone cible et du modèle de lettre.
 
-   Le nombre de variables vides inclut :
+   Le nombre de variables vides inclut :
 
-   * Uniquement des variables du dictionnaire de données non protégées et d’espace réservé. Le nombre de variables n’inclut pas les variables de mise en page ou du dictionnaire de données protégées.
+   * Uniquement des variables du dictionnaire de données non protégées et d’espace réservé. Le nombre de variables n’inclut pas les variables de mise en page ou de dictionnaire de données protégées.
    * Champs obligatoires.
    * Champs de mise en page s’ils sont obligatoires et liés à l’utilisateur.
-   * Uniquement les instances de variables uniques. Si un module, une zone de cible ou un modèle de lettre contient au moins deux instances de la même variable, le nombre affiché est 1 (un). Toutefois, pour chacune des instances, le nombre affiché est 1.
+   * Uniquement les instances de variables uniques. Si un module, une zone cible ou un modèle de lettre contient deux instances ou plus de la même variable, le nombre est affiché comme 1 (un). Cependant, pour chacune des instances, le nombre s’affiche comme 1.
 
-   Le nombre de variables vides ne comprend pas les modules non sélectionnés. Si un module est inclus dans un modèle de lettre, mais n’est pas dans la lettre, le nombre de variables vides de ce module n’est pas affiché.
+   Le nombre de variables vides ne comprend pas les modules non sélectionnés. Si un module est inclus dans un modèle de lettre mais ne figure pas dans la lettre, le nombre de variables vides dans ce module n’est pas affiché.
 
-   Pour la zone cible, le module et la variable, le nombre est affiché à droite de chaque objet dans le modèle de lettre. Cependant, pour le modèle complet, le nombre s’affiche dans la barre de statut de Création de correspondance.
+   Pour la zone cible, le module et la variable , le nombre s’affiche à droite de chaque objet du modèle de lettre. Cependant, pour le modèle complet, le nombre s’affiche dans la barre de statut de Création de correspondance.
 
    Les modules d’un modèle de lettre affichent le nombre de variables vides comme décrit ci-dessous :
 
@@ -186,31 +186,31 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 **Zone cible**
 
 * Insertion d’une ligne vide : permet d’insérer une nouvelle ligne vide.
-* Insertion de texte en ligne : permet d’insérer un nouveau module de texte.
-* Verrouillage d’ordre (information) : indique que l’ordre du contenu ne peut pas être modifié.
+* Insérer du texte incorporé : Insère un nouveau module de texte.
+* Verrouillage de commande (informations) : Indique que l’ordre du contenu ne peut pas être modifié.
 * Valeurs vides (information) : indique le nombre de variables vides dans la zone cible.
 
 **Module**
 
-* Sélection (icône représentant un œil) : permet d’inclure ou d’exclure le module de la lettre.
-* Ignorer les puces (applicable pour les modules de liste et leurs modules enfants) : ignore les puces dans un module particulier.
-* Saut de page avant (applicable pour les modules enfants de la zone cible) : insère un saut de page avant le module.
+* Sélection (icône représentant un oeil) : Inclut\exclut le module de la lettre.
+* Ignorer les puces (applicable pour les modules de liste et leurs modules enfants) : Ignore les puces dans un module particulier.
+* Saut de page avant (applicable pour les modules enfants de la zone cible) : Insère un saut de page avant le module.
 * Saut de page après (applicable pour les modules enfants de la zone cible) : insère un saut de page avant le module.
 * Valeurs vides (information) : indique le nombre de variables vides dans la zone cible.
-* Modification (modules de texte uniquement) : ouvrez l’éditeur de texte enrichi pour modifier le module de texte.
-* Panneau de données (modules de texte et de condition) : permet de déverrouiller toutes les variables du module.
+* Modifier (modules de texte uniquement) : Ouvrez l’éditeur de texte enrichi pour modifier le module de texte.
+* Panneau de données (modules de texte et de condition) : Ouvrez toutes les variables du module.
 
 **Module de liste**
 
 * Insertion d’une ligne vide : permet d’insérer une nouvelle ligne vide.
-* Bibliothèque de contenu : ouvre la bibliothèque de contenu pour ajouter des modules à la liste.
+* Bibliothèque de contenu : Ouvre la bibliothèque de contenu pour ajouter des modules à la liste.
 * Paramètre de liste (liste imbriquée uniquement) :
 * Verrouillage d’ordre (information) : indique que l’ordre des éléments de la liste ne peut pas être modifié.
 
 ### Gestion des pièces jointes {#manage-attachments}
 
 1. Sélectionnez **les pièces jointes**. Correspondence Management affiche les pièces jointes disponibles de la manière dont elles ont été configurées lors de la création du modèle de lettre.
-1. Vous pouvez choisir de ne pas envoyer une pièce jointe avec la lettre en appuyant sur l’icône Afficher et en appuyant sur la croix dans la pièce jointe pour la supprimer de la lettre. Pour les pièces jointes spécifiées, lors de la création d’un modèle de lettre, comme étant obligatoires, les icônes Afficher et Supprimer sont désactivées.
+1. Vous pouvez choisir de ne pas envoyer de pièce jointe avec la lettre en appuyant sur l’icône d’affichage et en appuyant sur la croix dans la pièce jointe pour la supprimer de la lettre. Pour les pièces jointes spécifiées, lors de la création d’un modèle de lettre, comme étant obligatoires, les icônes Afficher et Supprimer sont désactivées.
 1. Cliquer sur l’icône d’accès à la bibliothèque (![libraryaccess](assets/libraryaccess.png)) pour accéder à la bibliothèque de contenu et insérer des ressources DAM comme pièces jointes.
 
    >[!NOTE]
@@ -219,11 +219,11 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu tel que des fragments de 
 
 1. Si l’ordre des pièces jointes n’a pas été verrouillé lors de la création de la correspondance, vous pouvez réorganiser les pièces jointes en sélectionnant une pièce jointe et en appuyant sur les flèches montantes et descendantes.
 
-   Pour plus d’informations, consultez [Livraison des pièces jointes](#attachmentdelivery).
+   Pour plus d’informations, voir [Livraison des pièces jointes](#attachmentdelivery).
 
-### Gestion du contenu dans l’aperçu et envoi de la lettre {#manage-content-in-preview-and-submit-the-letter}
+### Gérer le contenu dans l’aperçu et envoyer la lettre {#manage-content-in-preview-and-submit-the-letter}
 
-Vous pouvez effectuer des modifications relatives à la mise en page et au contenu pour vous assurer que la lettre apparaît exactement comme vous le souhaitez et l’envoyer aux différents post-processus.
+Vous pouvez apporter des modifications liées à la mise en page et au contenu pour vous assurer que la lettre ressemble à ce que vous souhaitez et l’envoyer aux différents post-traitements.
 
 1. Pour mettre en surbrillance tout le contenu modifiable dans la lettre, cliquez sur **Mettre les sections modifiables en surbrillance**.
 
@@ -231,9 +231,9 @@ Vous pouvez effectuer des modifications relatives à la mise en page et au conte
 
    ![Mettre en surbrillance le contenu modifiable](assets/4_highlightmoduleincontent-1.png)
 
-1. Modifiez les modules de contenu, selon les besoins, dans l’onglet Contenu. Pour centrer l’attention sur le module de contenu approprié dans la hiérarchie des contenus, vous pouvez appuyer sur la ligne ou le paragraphe approprié dans l’aperçu de la lettre ou appuyer sur le module de contenu directement dans la hiérarchie Contenu.
+1. Modifiez les modules de contenu, selon les besoins, dans l&#39;onglet Contenu . Pour mettre l’accent sur le module de contenu approprié dans la hiérarchie de contenu, vous pouvez appuyer sur la ligne ou le paragraphe approprié dans l’aperçu de la lettre ou appuyer sur le module de contenu directement dans la hiérarchie Contenu .
 
-   Par exemple, la ligne « Pour accéder à… » est sélectionnée dans le graphique ci-dessous et le module de contenu correspondant est sélectionné dans l’onglet Contenu.
+   Par exemple, la ligne &quot;Pour nous permettre d’accéder à...&quot;. est sélectionné dans le graphique ci-dessous et le module de contenu correspondant est sélectionné dans l&#39;onglet Contenu .
 
    En cliquant sur Mettre les modules sélectionnés en surbrillance dans le contenu ( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)), vous pouvez activer ou désactiver la fonctionnalité de mise en surbrillance du module de contenu dans l’onglet Contenu lorsque le texte, le paragraphe ou le champ de données approprié est sélectionné dans la prévisualisation de la lettre.
 
@@ -241,35 +241,35 @@ Vous pouvez effectuer des modifications relatives à la mise en page et au conte
 
 1. Pour insérer un saut de page dans la lettre, cliquez à l’endroit où vous souhaitez insérer un saut de page et sélectionnez Saut de page avant ou Saut de page après ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   Un espace réservé explicite de saut de page est inséré dans la lettre. Pour voir comment un saut de page explicite affecte la lettre, reportez-vous à l’aperçu PDF aplati.
+   Un espace réservé de saut de page explicite est inséré dans la lettre. Pour voir comment un saut de page explicite affecte la lettre, consultez l’aperçu du PDF aplati.
 
    >[!NOTE]
    >
-   >Les formulaires mobiles ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. En revanche, vous pouvez définir explicitement les en-têtes et pieds de page dans la mise en page (par page) pour qu’ils s’affichent dans l’aperçu des formulaires mobiles. En outre, les pages vierges dans la lettre, le cas échéant, n’apparaissent pas dans l’aperçu de formulaires pour périphériques mobiles.
+   >Les formulaires mobiles ne prenant pas en charge les sauts de page, les en-têtes et les pieds de page n’apparaissent qu’une seule fois. Vous pouvez toutefois définir explicitement les en-têtes et pieds de page dans la mise en page (par page) pour qu’ils apparaissent dans l’aperçu des formulaires mobiles. En outre, les pages vierges de la lettre, le cas échéant, n’apparaissent pas dans l’aperçu des formulaires pour périphériques mobiles.
 
    ![Saut de page explicite](assets/8_pagebreak.png)
 
-1. Pour enregistrer la lettre en tant que brouillon, que vous pouvez continuer d’utiliser ultérieurement, appuyez sur Enregistrer en tant que brouillon. Pour utiliser cette option, votre lettre doit être[ publiée](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Pour plus d’informations, voir Instance Brouillon sous [Enregistrement de brouillons et envoi d’instances de lettre](#savingdrafts).
+1. Pour enregistrer la lettre en tant que brouillon, sur lequel vous pourrez continuer à travailler ultérieurement, appuyez sur Enregistrer en tant que brouillon. Pour utiliser cette option, votre lettre doit être [publié](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Pour plus d’informations, voir Instance Brouillon sous [Enregistrement de brouillons et envoi d’instances de lettre](#savingdrafts).
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   La boîte de dialogue Nom du brouillon de la lettre s’affiche avec l’ID d’instance de lettre. Vous pouvez également modifier cet ID. Notez l’ID de lettre, puis appuyez sur **Terminer**. Vous pouvez utiliser cet ID ultérieurement pour [recharger le brouillon de la lettre](submit-letter-topostprocess.md#reloaddraft).
+   La boîte de dialogue Nom du brouillon de lettre s’affiche avec l’ID de l’instance de lettre. Vous pouvez, éventuellement, modifier cet identifiant. Notez l’ID de lettre, puis appuyez sur **Terminé**. Vous pourrez ensuite utiliser cet identifiant pour [recharger le brouillon de la lettre](submit-letter-topostprocess.md#reloaddraft).
 
 1. Pour afficher la lettre sous forme de fichier PDF aplati, avec la disposition et les sauts de page exacts, comme elle sera envoyée, cliquez sur Prévisualisation ( ![preview](assets/preview.png)).
 
-   La lettre s’affiche sous forme de fichier PDF aplati. Le fichier PDF aplati est la représentation exacte de la lettre telle qu’elle sera envoyée, avec les polices, les pauses et la mise en page appropriées de la lettre.
+   La lettre apparaît comme un PDF aplati. Le PDF aplati est la représentation exacte de la lettre telle qu’elle sera envoyée avec les polices, les pauses et la mise en page correctes de la lettre.
 
    >[!NOTE]
    >
-   >Si vous utilisez le type de rendu Mozilla Firefox et HTML pour prévisualiser la lettre sous la forme d’un fichier PDF aplati, veillez à utiliser le module externe natif du navigateur et non le module externe d’Acrobat. Pour sélectionner le module externe natif du navigateur, accédez aux paramètres de Mozilla Firefox et, pour le type de contenu PDF, sélectionnez Aperçu dans Firefox.
+   >Si vous utilisez Mozilla Firefox et le type de rendu HTML, pour prévisualiser la lettre comme PDF aplati, veillez à utiliser le module externe de navigateur natif et non le module externe Acrobat. Pour sélectionner le module externe de navigateur natif, accédez aux paramètres de Mozilla Firefox et, pour le PDF de type de contenu, sélectionnez Aperçu dans Firefox.
 
 1. Si l’aperçu du fichier PDF aplati vous satisfait, cliquez sur **Envoyer** pour envoyer la lettre. Ou, pour apporter des modifications à la lettre, cliquez sur **Quitter la prévisualisation** pour rétablir l’aperçu de l’interface utilisateur Création de correspondance et y apporter des modifications. Lorsque vous appuyez sur Envoyer, si la configuration Gestion des instances de lettre est activée sur l’instance de publication, l’instance d’envoi de lettre est générée.
 
-   Pour plus d’informations, voir Instance Brouillon sous Enregistrement de brouillons et envoi d’instances de lettre.
+   Pour plus d’informations, voir Instance Brouillon sous Enregistrement des brouillons et envoi d’instances de lettre.
 
    Vous pouvez également enregistrer la lettre en tant que brouillon pour apporter des modifications à la lettre ultérieurement.
 
-   Après avoir apporté les modifications requises, vous pouvez envoyer la lettre depuis l’aperçu HTML5 ou appuyez de nouveau sur Aperçu pour revoir la sortie PDF aplati.
+   Après avoir apporté les modifications requises, vous pouvez envoyer la lettre à partir de l’aperçu HTML5 ou appuyer à nouveau sur Aperçu pour revoir la sortie du PDF aplati.
 
    Pour plus d’informations sur les différences entre les formulaires HTML5 et les formulaires PDF, voir [Différences de caractéristiques entre formulaires HTML5 et formulaires PDF](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
@@ -279,11 +279,11 @@ Lorsqu’une lettre est générée dans l’interface utilisateur Création de c
 
 Il existe deux types d’instances de lettre pouvant être enregistrées : instance Brouillon ou instance Envoyer.
 
-* **Instance Brouillon** : l’instance Brouillon capture l’état actuel de la lettre que vous prévisualisez. Pour enregistrer une instance Brouillon, assurez-vous d’abord que la lettre et tous les actifs auxquels la lettre fait référence sont à l’état Publié. Pour plus d’informations sur la publication d’une lettre, voir [Publication d’un actif](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Vous devez publier une lettre avant de pouvoir l’enregistrer en tant que brouillon, car lorsque vous publiez une lettre, vous créez une version de la lettre, de ses actifs dépendants et de données à ce stade. La version publiée d’une lettre ne peut pas être modifiée par vous ou un autre utilisateur et peut être restaurée ultérieurement sans aucune incompatibilité inattendue à partir de la version publiée. Vous pouvez retourner à cette instance plus tard et reprendre où vous en étiez.
+* **Instance de brouillon**: L’instance Brouillon capture l’état actuel de la lettre que vous prévisualisez. Pour enregistrer une instance de brouillon, assurez-vous d’abord que la lettre et tous les actifs auxquels la lettre fait référence sont à l’état Publié . Pour plus d’informations sur la publication d’une lettre, voir [Publication d’une ressource](../../forms/using/publishing-unpublishing-forms.md#publishanasset). Vous devez publier une lettre avant de pouvoir l’enregistrer en tant que brouillon, car lorsque vous publiez une lettre, vous créez une version de la lettre, de ses actifs dépendants et des données à ce stade. La version publiée d’une lettre ne peut pas être modifiée par vous ou un autre utilisateur et peut être restaurée ultérieurement sans incohérence inattendue de la version publiée. Vous pouvez revenir à cette instance plus tard et continuer à l’endroit où vous vous êtes arrêté.
 
-* **Instance Envoyer** : l’instance Envoyer capture l’état de la lettre envoyée. L’instance Envoyer stocke l’état PDF de l’instance de lettre après son post-traitement ainsi que les données saisies par l’utilisateur dans l’interface utilisateur Création de correspondance.
+* **Submit Instance**: Les instances Envoyer capturent l’état de la lettre lorsqu’elle est envoyée. L’instance Envoyer stocke l’état PDF de l’instance de lettre après son post-traitement ainsi que les données saisies par l’utilisateur dans l’interface utilisateur Création de correspondance.
 
-Ces instances peuvent être enregistrées uniquement lorsque la lettre est en cours de consultation sur l’instance Publication. Par défaut, l’enregistrement sur les instances est désactivé. Pour activer l’enregistrement des instances de lettre, effectuez les étapes suivantes.
+Ces instances ne peuvent être enregistrées que lorsque la lettre est en cours de consultation sur l’instance de publication. Par défaut, l’enregistrement sur les instances est désactivé. Pour activer l’enregistrement des instances de lettre, procédez comme suit.
 
 1. Dans AEM, ouvrez la configuration de la console web d’Adobe Experience Manager pour votre serveur via l’URL suivante : https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Localisez les **[!UICONTROL configurations de Correspondence Management]** et cliquez dessus.
@@ -315,7 +315,7 @@ Pour activer la fonction Enregistrer en tant que brouillon, remplacez l’URL ex
 
 ![Instance de publication](/help/forms/using/assets/correspondencemanagement.png)
 
-Lorsque l’enregistrement des instances de lettre est activé, vous avez la possibilité de sélectionner l’emplacement où enregistrer les instances de lettre. Il existe deux options pour enregistrer les instances de lettre : enregistrement local ou enregistrement à distance.
+Lorsque l’enregistrement des instances de lettre est activé, vous avez la possibilité de sélectionner l’emplacement où enregistrer les instances de lettre. Il existe deux options pour enregistrer les instances de lettre : Enregistrement local ou enregistrement à distance.
 
 ### Enregistrement local {#local-save}
 
@@ -323,7 +323,7 @@ Les instances de lettre sont enregistrées sur l’instance de publication et r�
 
 ### Enregistrement à distance {#remote-save}
 
-Cette option est destinée aux personnes ayant des inquiétudes quant à l’enregistrement des données utilisateur sur les instances Publication, ce qui est généralement le cas hors du pare-feu d’entreprise. Lorsque l’enregistrement à distance est activé, les instances de lettre ne sont pas enregistrées sur l’instance Publication mais sont enregistrées à distance sur l’auteur de traitement spécifié via les configurations LiveCycle Client SDK.
+Cette option est destinée aux personnes ayant des inquiétudes quant à l’enregistrement des données utilisateur sur les instances Publication, ce qui est généralement le cas hors du pare-feu d’entreprise. Lorsque l’enregistrement à distance est activé, les instances de lettre ne sont pas enregistrées sur l’instance de publication, mais sont enregistrées à distance sur l’auteur de traitement spécifié via les configurations du SDK client LiveCycle.
 
 #### Activer l’enregistrement à distance {#enable-remote-save}
 
@@ -348,22 +348,22 @@ Cette option est destinée aux personnes ayant des inquiétudes quant à l’enr
 #### Livraison des pièces jointes {#attachmentdelivery}
 
 * Les pièces jointes de la lettre sont disponibles après le processus dans le PDF, qui est créé après l’envoi de la lettre.
-* Si la lettre est rendue à l’aide des API côté serveur sous la forme d’un PDF, interactif ou non, alors le PDF rendu contient des pièces jointes au format PDF.
-* Si un post-traitement associé à un modèle de lettre est chargé dans le cadre des opérations d’envoi ou de finalisation de correspondance à l’aide de l’interface utilisateur Création de correspondance, les pièces jointes sont transmises en tant que liste &lt;com.adobe.idp.Document> dans le paramètre AttachmentDocs.
-* Les mécanismes de livraison prêts à l’emploi, tels que l’envoi par courrier électronique et l’impression, livrent les pièces jointes avec le PDF de la correspondance générée.
+* Lorsque le rendu de la lettre est effectué à l’aide d’API côté serveur en tant que PDF interactif ou non interactif, le PDF rendu contient des pièces jointes en tant que pièces jointes de PDF.
+* Lorsqu’un post-traitement associé à un modèle de lettre est chargé dans le cadre des opérations d’envoi ou de finalisation de correspondance à l’aide de l’interface utilisateur de création de correspondance, les pièces jointes sont transmises en tant que liste.&lt;com.adobe.idp.document> dans le paramètre AttachmentDocs .
+* Les mécanismes de diffusion d’usine, tels que l’envoi par courrier électronique et l’impression, livrent également les pièces jointes avec le PDF de la correspondance générée.
 
-## Modes de rendu d’aperçu de lettre : Aperçu de formulaires pour périphériques mobiles et aperçu au format PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## Modes de rendu de l’aperçu de lettre : Aperçu des formulaires pour périphériques mobiles et aperçu du PDF {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-Dans AEM Forms, la solution Correspondence Management affiche une lettre en tant que document HTML dans l’IU Création de correspondance. Toutefois, la solution Correspondence Management prend toujours en charge le retour à un aperçu au format PDF au lieu de l’aperçu HTML. Pour plus d’informations sur le basculement entre les modes d’aperçu HTML et PDF, consultez [Changement de mode de rendu de lettre](#changerenditionmode).
+AEM Forms Correspondence Management affiche une lettre en tant que HTML dans l’interface utilisateur de création de correspondance. Toutefois, Correspondence Management prend toujours en charge le rétablissement de l’aperçu du PDF au lieu de l’aperçu du HTML. Pour plus d’informations sur le basculement entre les modes d’aperçu HTML et PDF, consultez [Changement de mode de rendu de lettre](#changerenditionmode).
 
 Vous trouverez ci-dessous les avantages et les fonctionnalités disponibles dans l’aperçu HTML et PDF.
 
-**Avantages de l’aperçu HTML/formulaires mobile** 
+**Avantages de l’aperçu des HTMLS/formulaires mobiles**
 
-* **Appuyez sur une valeur de champ de données pour mettre en surbrillance le champ de données correspondant** : dans l’interface utilisateur Création de correspondance, vous pouvez appuyer sur une valeur de champ de données de la lettre pour mettre en surbrillance le champ de données correspondant dans l’onglet Données. Pour plus d’informations, consultez [Saisir des données](#enterdata).
+* **Appuyez sur une valeur de champ de données pour mettre en surbrillance le champ de données correspondant.**: Dans l’interface utilisateur de création de correspondance, vous pouvez appuyer sur une valeur de champ de données dans la lettre pour mettre en surbrillance le champ de données correspondant dans l’onglet Données . Pour plus d’informations, voir [Saisir des données](#enterdata).
 
-* **Prise en charge du navigateur** : retrait graduel de la prise en charge des navigateurs NPAPI, ce qui affecte l’aperçu PDF de la lettre. L’aperçu des formulaires mobiles/HTML d’une lettre n’est pas affecté par ce problème.
-* **Mettre en surbrillance le contenu modifiable dans une lettre** : dans l’interface utilisateur Création de correspondance, vous pouvez appuyer sur Mettre en surbrillance le contenu modifiable pour mettre en surbrillance tout le contenu modifiable de la lettre en gris. Pour plus d’informations, consultez [Gestion du contenu](#managecontent).
+* **Prise en charge des navigateurs**: Les navigateurs retirent progressivement la prise en charge de NPAPI, ce qui affecte l’aperçu PDF de la lettre. L’aperçu de la lettre pour les formulaires mobiles/HTML n’est pas affecté par ce problème.
+* **Mettre en surbrillance le contenu modifiable dans une lettre**: Dans l’interface utilisateur de création de correspondance, vous pouvez appuyer sur Mettre en surbrillance le contenu modifiable pour mettre en surbrillance tout le contenu modifiable de la lettre en gris. Pour plus d’informations, voir [Gestion du contenu](#managecontent).
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`  **Avantages de l’aperçu PDF**
@@ -375,11 +375,11 @@ Pour plus d’informations sur la prise en charge des scripts dans des formulair
 
 Pour plus d’informations sur la prise en charge des scripts dans des formulaires HTML5, reportez-vous à la section [Prise en charge des scripts pour les formulaires HTML5](/help/forms/using/scripting-support.md).
 
-### Changement du mode de rendu d’une lettre {#changerenditionmode}
+### Modifier le mode de rendu d’une lettre {#changerenditionmode}
 
-Par défaut, l’interface utilisateur Création de correspondance utilise des formulaires HTML ou des formulaires mobiles pour rendre l’aperçu d’une lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de prévisualisation d’une lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
+Par défaut, l’interface utilisateur de création de correspondance utilise le HTML ou les formulaires mobiles pour effectuer le rendu de l’aperçu de la lettre. L’aperçu des formulaires mobiles n’a aucun problème de rendu dans un navigateur, car il utilise le module externe natif du navigateur et ne requiert aucun module externe supplémentaire. Vous pouvez changer le mode de prévisualisation d’une lettre en PDF. Toutefois, les contraintes de navigateur peuvent créer des problèmes pour les différentes fonctionnalités de l’aperçu au format PDF interactif de la lettre.
 
-Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/fr/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Pour plus d’informations sur la compatibilité des navigateurs avec la prévisualisation de lettre, référez-vous à [Discontinuation des plug-ins du navigateur NPAPI et son impact](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html).
 
 Pour changer le mode d’aperçu de la lettre, effectuez les étapes suivantes :
 
