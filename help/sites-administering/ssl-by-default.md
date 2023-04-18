@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
+source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 53%
+source-wordcount: '853'
+ht-degree: 52%
 
 ---
 
@@ -40,7 +40,7 @@ Un utilisateur du service appelé « **ssl-service** » a été créé pour ce
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Une fois que vous avez saisi les informations d’identification, cliquez sur **Suivant** dans le coin supérieur droit de la page. Ensuite, chargez la clé privée et le certificat associés pour la connexion SSL.
+1. Une fois que vous avez saisi les informations d’identification, cliquez sur **Suivant** dans le coin supérieur droit de la page. Ensuite, chargez la clé privée et le certificat associés pour la connexion SSL/TLS.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -152,7 +152,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### Via un module {#via-package}
 
-Vous pouvez également automatiser la configuration SSL en chargeant un package qui contient déjà les éléments requis suivants :
+Vous pouvez également automatiser la configuration SSL/TLS en chargeant un package qui contient déjà les éléments requis suivants :
 
 * KeyStore de l’utilisateur ssl-service. Celui-ci se trouve sous */home/users/system/security/ssl-service/keystore* dans le référentiel.
 * La configuration `GraniteSslConnectorFactory`
@@ -178,7 +178,7 @@ Vous trouverez ci-dessous un exemple de création d’un certificat auto-signé 
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Générez le certificat SSL et signez-le avec la clé privée. Dans cet exemple, expire dans un an :
+1. Générez le certificat SSL/TLS et signez-le avec la clé privée. Dans cet exemple, expire dans un an :
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
