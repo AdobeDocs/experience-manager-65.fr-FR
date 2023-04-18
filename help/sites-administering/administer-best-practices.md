@@ -1,8 +1,6 @@
 ---
-title: Bonnes pratiques
-seo-title: Best Practices
-description: Découvrez les meilleures pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à être opérationnels.
-seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
+title: Bonnes pratiques pour aider les administrateurs à se familiariser avec les nouvelles technologies
+description: Découvrez les bonnes pratiques compilées par les équipes d’ingénierie et de conseil d’Adobe pour aider les administrateurs à se familiariser avec les nouvelles technologies.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 61%
 
 ---
 
 # Bonnes pratiques{#best-practices}
 
-La section Meilleures pratiques décrit comment développer, administrer ou utiliser AEM de la manière la plus efficace possible. Cette liste de rubriques, qui évolue constamment, inclut un grand nombre de zones dans AEM.
+La section Meilleures pratiques décrit comment développer, administrer ou utiliser AEM de la manière la plus efficace possible. Cette liste croissante de sujets englobe un large éventail de domaines dans AEM.
 
-Une documentation sur les meilleures pratiques est disponible pour les aspects suivants :
+La documentation relative aux bonnes pratiques est disponible dans les domaines suivants :
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -32,7 +30,7 @@ Pour connaître les bonnes pratiques concernant la création, le déploiement et
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de déploiement](/help/sites-deploying/best-practices.md)
 
-Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
+Les documents spécifiques sont décrits et associés dans les tables qui suivent.
 
 ## Assets {#assets}
 
@@ -48,20 +46,20 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
   <tr>
    <td>Comment organiser votre contenu (hiérarchie des dossiers)</td>
    <td><a href="/help/assets/organize-assets.md">Bonnes pratiques relatives à la gestion des fichiers</a></td>
-   <td>De nombreux profils de traitement basés sur des dossiers sous formes de vidéo, de métadonnées, de traitement d’image sont toujours appliquées aux dossiers. Ce document sur les meilleures pratiques décrit la procédure à suivre pour définir et configurer votre hiérarchie de dossiers. La hiérarchie a un impact considérable sur la manière dont le contenu est traité. </td>
+   <td>La plupart des profils de traitement reposent sur des dossiers, car les vidéos, les métadonnées et le traitement des images sont toujours appliqués aux dossiers. Ce document de bonnes pratiques décrit comment définir et configurer votre hiérarchie de dossiers, car la hiérarchie a un impact significatif sur le traitement du contenu. </td>
   </tr>
   <tr>
    <td>Intégration de Scene7 avec AEM</td>
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Bonnes pratiques pour intégrer Scene7 avec AEM</a></td>
-   <td><p>Indique quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct dans les ressources.</p> </td>
+   <td><p>Décrit quand activer l’importateur d’interrogations, comment tester votre intégration et quand utiliser l’explorateur de contenu plutôt qu’un téléchargement direct vers Assets.</p> </td>
   </tr>
   <tr>
    <td>Options des paramètres prédéfinis d’image</td>
    <td>Comprendre les <a href="/help/assets/managing-image-presets.md#understanding-image-presets">paramètres prédéfinis d’image</a> et <a href="/help/assets/managing-image-presets.md#image-preset-options">les bonnes pratiques en matière de paramètres prédéfinis d’image</a></td>
-   <td>Dans le cadre de la documentation sur <a href="/help/assets/managing-image-presets.md">la gestion des paramètres d’image prédéfinis</a>, ces rubriques décrivent ce que sont les paramètres d’image prédéfinis et les meilleures pratiques concernant les options des paramètres d’image prédéfinis.</td>
+   <td>Dans le cadre de la documentation sur <a href="/help/assets/managing-image-presets.md">Gestion des paramètres d’image prédéfinis</a>, ces rubriques décrivent les paramètres d’image prédéfinis et les bonnes pratiques concernant la sélection des options de paramètres d’image prédéfinis.</td>
   </tr>
   <tr>
-   <td>Dynamic Media par rapport à l’intégration directe avec Scene7</td>
+   <td>Dynamic Media et intégration directe à Scene7</td>
    <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Intégration de Scene7/AEM par rapport à Dynamic Media</a></td>
    <td>Indique quand est préférable d’utiliser la solution Dynamic Media, d’utiliser l’intégration S7 avec AEM ou d’utiliser les deux.</td>
   </tr>
@@ -70,7 +68,7 @@ Les bonnes pratiques concernant Assets, y compris les fonctionnalités Dynamic 
 
 ## Sites {#sites}
 
-Les meilleures pratiques en termes de création et de gestion du contenu de votre site web sont les suivantes :
+La gestion et la création du contenu de votre site web comportent les bonnes pratiques suivantes :
 
 <table>
  <tbody>
@@ -80,9 +78,9 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
    <td>Le règlement général sur la protection des données (RGPD) de l’Union européenne sur les droits de confidentialité des données entre en vigueur en mai 2018. AEM Sites est conforme au RGPD. Cette page guide les clients à travers les procédures de gestion des demandes RGPD dans AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.</td>
   </tr>
   <tr>
-   <td>Définissez l’IU par défaut pour votre instance.</td>
+   <td>Définissez l’interface utilisateur par défaut de votre instance.</td>
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">Configuration de l’IU par défaut pour votre instance</a></p> </td>
-   <td>AEM comporte deux interfaces utilisateur : une interface classique et une interface optimisée pour les écrans tactiles. Cette section décrit comment définir l’IU par défaut pour votre instance.</td>
+   <td>AEM comporte deux interfaces utilisateur : une interface classique et une interface optimisée pour les écrans tactiles. Cette section explique comment définir l’interface utilisateur par défaut de votre instance.</td>
   </tr>
   <tr>
    <td>Gestion multisite</td>
@@ -92,7 +90,7 @@ Les meilleures pratiques en termes de création et de gestion du contenu de votr
   <tr>
    <td>Traduction du contenu</td>
    <td><a href="/help/sites-administering/tc-bp.md">Bonnes pratiques en matière de traduction</a></td>
-   <td>Meilleures pratiques concernant la planification et la mise en œuvre de votre site multilingue.</td>
+   <td>Bonnes pratiques pour la planification et la mise en oeuvre de votre site multilingue.</td>
   </tr>
   <tr>
    <td>Administration des utilisateurs</td>

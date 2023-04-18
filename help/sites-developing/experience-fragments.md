@@ -1,8 +1,6 @@
 ---
-title: Présentation
-seo-title: Experience Fragments
+title: Fragments d’expérience dans le développement AEM Sites
 description: Découvrez comment personnaliser les fragments d’expérience.
-seo-description: Learn about customizing Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
-workflow-type: ht
-source-wordcount: '1784'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '1787'
+ht-degree: 94%
 
 ---
 
@@ -36,9 +34,9 @@ En l’absence de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`,
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
-Cela est possible à partir du navigateur. Cependant, le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du fragment d’expérience en utilisant uniquement l’URL.
+Cette option est disponible à partir du navigateur, mais son Principal objectif est d’autoriser d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) à accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL.
 
-Le rendu HTML brut ajoute le protocole, l’hôte et le chemin d’accès au contexte à des chemins qui :
+Le rendu en HTML brut ajoute le protocole, l’hôte et le chemin d’accès contextuel aux chemins suivants :
 
 * sont du type `src`, `href` ou `action` ;
 
@@ -50,7 +48,7 @@ Par exemple :
 
 >[!NOTE]
 >
->Les liens font toujours référence à l’instance de publication. Ils sont destinés à être utilisés par des tiers, de sorte qu’ils soient toujours appelés à partir de l’instance de publication, et non de l’auteur.
+>Les liens font toujours référence à l’instance de publication. Elles sont destinées à être utilisées par des tiers. Par conséquent, le lien sera toujours appelé à partir de l’instance de publication, et non de l’auteur.
 
 ![xf-14](assets/xf-14.png)
 
@@ -92,7 +90,7 @@ Pour ce faire, vous devez utiliser les propriétés suivantes :
 
    * `text`
 
-Les composants qui ne respectent pas cette convention ne sont pas pris en compte.
+Les composants qui n’utilisent pas cette convention ne sont pas pris en compte.
 
 ## Modèles de fragments d’expérience {#templates-for-experience-fragments}
 
