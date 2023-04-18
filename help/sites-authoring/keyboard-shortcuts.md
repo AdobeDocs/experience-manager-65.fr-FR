@@ -1,8 +1,6 @@
 ---
-title: Raccourcis clavier pour les consoles
-seo-title: Keyboard Shortcuts for Consoles
-description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
-seo-description: Save time when authoring by using these keyboard shortcuts
+title: Raccourcis clavier pour les consoles dans AEM
+description: Gagnez du temps lors de la création à l’aide de ces raccourcis clavier.
 uuid: 3b90570f-e187-4f09-9ccf-838e5657de2f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
-source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
-workflow-type: ht
-source-wordcount: '378'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 63%
 
 ---
 
@@ -36,7 +34,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Commerce, Scre
 |  | `Left Arrow` | Naviguer vers le haut de la structure de l’arborescence/réduire le nœud d’arborescence |
 |  | `Down Arrow` | Se déplacer vers le bas d’une liste de pages au même niveau |
 |  | `Up Arrow` | Se déplacer vers le haut d’une liste de pages au même niveau |
-| Console : mode Colonnes | `Shift-Up/Down Arrow` | Se déplacer vers le haut d’une liste de pages au même niveau |
+| Console : mode Colonnes | `Shift-Up/Down Arrow` | Se déplacer vers le haut d’une liste de pages au même niveau |
 |  | `Esc` | Se déplacer vers le haut d’une liste de pages au même niveau |
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-authoring/search.md) |
@@ -65,19 +63,19 @@ Les touches de modification utilisées pour les raccourcis clavier varient selon
 
 ## Navigateurs et raccourcis clavier {#browsers-and-keyboard-shortcuts}
 
-AEM évite les raccourcis courants déjà utilisés par les navigateurs les plus populaires, mais le comportement du navigateur par défaut n’est pas remplacé par les raccourcis AEM.
+AEM évite les raccourcis courants déjà utilisés par les navigateurs les plus populaires, mais le comportement par défaut du navigateur n’est pas remplacé par les raccourcis AEM.
 
-En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régionaux et toutes les dispositions de clavier.
+En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régionaux et toutes les mises en page au clavier.
 
 >[!NOTE]
 >
->Les raccourcis AEM ne remplacent pas le comportement du navigateur par défaut.
+>AEM raccourcis ne remplacent pas le comportement par défaut du navigateur.
 >
->En cas de conflits entre les raccourcis AEM et ceux du navigateur, les raccourcis AEM ne fonctionneront plus, afin de permettre l’utilisation de la fonctionnalité du navigateur.
+>Dans le cas où des conflits doivent se produire entre les raccourcis d’AEM et de navigateur, AEM raccourcis ne fonctionneront pas, en raison des fonctionnalités du navigateur.
 
 >[!CAUTION]
 >
->Les raccourcis clavier AEM pourraient entrer en conflit avec des lecteurs d’écran, certaines fonctions de navigateur et d’autres outils d’accessibilité.
+>AEM raccourcis clavier peuvent interférer avec les lecteurs d’écran, certaines fonctionnalités de navigateur et d’autres outils d’accessibilité.
 >
 >Adobe recommande de [désactiver les raccourcis clavier AEM](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) lors de l’utilisation d’un lecteur d’écran.
 
@@ -85,9 +83,9 @@ En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régi
 
 AEM propose des raccourcis clavier pour certaines des fonctions courantes (modification, propriétés, copier/coller, affichage de plusieurs menus de rail latéral, etc.).
 
-Pour les utilisateurs qui n’utilisent pas de raccourcis clavier ou ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
+Pour les utilisateurs qui n’utilisent pas de raccourcis clavier ou qui ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
 
-Vous pouvez désactiver les raccourcis clavier à deux emplacements :
+Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 
 * [Mes préférences](/help/sites-authoring/user-properties.md#my-preferences)
 * Le [menu Aide](/help/sites-authoring/basic-handling.md#accessing-help)

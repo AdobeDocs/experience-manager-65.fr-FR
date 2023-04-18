@@ -1,8 +1,6 @@
 ---
 title: Participation aux workflows
-seo-title: Participating in Workflows
-description: Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe.
-seo-description: Workflows typically include steps that require a person to perform an activity on a page or asset. The workflow selects a user or group to perform the activity and assigns a work item to that person or group.
+description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource. Le workflow sélectionne un utilisateur ou un groupe pour exécuter l’activité et affecte une tâche à cette personne ou à ce groupe.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +8,20 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '543'
-ht-degree: 100%
+ht-degree: 27%
 
 ---
 
 # Participation aux workflows{#participating-in-workflows}
 
-Les workflows incluent généralement les étapes qu’une personne doit suivre pour réaliser une activité sur une page ou sur une ressource. Le workflow sélectionne un utilisateur ou un groupe pour qu’il mette en œuvre l’activité en question et attribue un élément de travail à cette personne ou à ce groupe.
+Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource. Le workflow sélectionne un utilisateur ou un groupe pour exécuter l’activité et affecte une tâche à cette personne ou à ce groupe.
 
-## Traitement d’éléments de travail {#processing-your-work-items}
+## Traitement des éléments de travail {#processing-your-work-items}
 
-Vous pouvez effectuer les actions suivantes pour traiter un élément de travail :
+Vous pouvez effectuer les actions suivantes pour traiter un élément de travail :
 
 * **Terminé**
 
@@ -31,25 +29,25 @@ Vous pouvez effectuer les actions suivantes pour traiter un élément de travail
 
 * **Déléguer**
 
-   Si une étape vous a été affectée, mais que pour une raison quelconque, vous ne pouvez pas vous en charger, vous pouvez la déléguer à un autre utilisateur ou groupe.
+   Si une étape vous a été assignée, mais que vous ne pouvez pas effectuer d’action pour une raison quelconque, vous pouvez la déléguer à un autre utilisateur ou groupe.
 
-   Les utilisateurs à qui vous pouvez déléguer une étape dépendent de la personne à qui l’élément de travail a été attribué :
+   Les utilisateurs pouvant faire l’objet d’une délégation dépendent de la personne à qui l’élément de travail a été affecté :
 
-   * Si l’élément de travail a été attribué à un groupe, les membres du groupe sont disponibles.
+   * Si l’élément de travail a été affecté à un groupe, les membres du groupe sont disponibles.
    * Si l’élément de travail a été attribué à un groupe puis délégué à un utilisateur, les membres du groupe et le groupe sont disponibles.
    * Si l’élément de travail a été attribué à un utilisateur unique, l’élément de travail ne peut pas être délégué.
 
-* **Étape précédente**
+* **Revenir en arrière**
 
-   Si vous vous rendez compte qu’une étape ou qu’une série d’étapes doit être répétée, vous pouvez revenir en arrière. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow retourne à l’étape spécifiée et poursuit à partir de là.
+   Si vous découvrez qu’une étape, ou une série d’étapes, doit être répétée, vous pouvez prendre du recul. Cela vous permet de sélectionner une étape qui s’est produite plus tôt dans le workflow pour la traiter à nouveau. Le workflow revient à l’étape que vous spécifiez, puis passe de là.
 
-## Participation aux workflows {#participating-in-a-workflow}
+## Participation à un workflow {#participating-in-a-workflow}
 
-### Notifications d’actions de workflow attribués {#notifications-of-assigned-workflow-actions}
+### Notifications d’actions de workflow affectées {#notifications-of-assigned-workflow-actions}
 
 Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
-* La colonne **État** de la console Sites web indique quand une page fait partie d’un workflow :
+* Le **État** de la console Sites web indique lorsqu’une page se trouve dans un workflow :
 
    ![workflowstatus-1](assets/workflowstatus-1.png)
 
@@ -59,14 +57,14 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
-Lorsque vous avez suivi l’étape qui vous a été attribuée, vous pouvez finaliser l’élément de travail, ce qui permet au workflow de se poursuivre. Procédez comme suit pour finaliser l’élément de travail.
+Une fois que vous avez exécuté l’action indiquée, vous pouvez terminer l’élément de travail, ce qui permet au workflow de continuer. Procédez comme suit pour terminer l’élément de travail.
 
-1. Sélectionnez l’étape du workflow et cliquez sur **Terminé** dans la barre de navigation supérieure.
-1. Dans la boîte de dialogue qui s’ouvre, sélectionnez **Étape suivante**, c’est-à-dire l’étape à exécuter par la suite. Une liste déroulante affiche toutes les destinations correspondantes. Un **commentaire** peut également être rédigé.
+1. Sélectionnez l’étape du workflow et cliquez sur le bouton **Terminer** dans la barre de navigation supérieure.
+1. Dans la boîte de dialogue qui s’affiche, sélectionnez l’option **Étape suivante**; c’est-à-dire l’étape à exécuter ensuite. Une liste déroulante affiche toutes les destinations appropriées. A **Commentaire** peut également être saisie.
 
    ![workflowcomplete](assets/workflowcomplete.png)
 
-   Le nombre d’étapes indiqué dépend de la structure du modèle de workflow.
+   Le nombre d’étapes répertoriées dépend de la conception du modèle de workflow.
 
 1. Cliquez sur **OK** pour confirmer l’action.
 
@@ -75,7 +73,7 @@ Lorsque vous avez suivi l’étape qui vous a été attribuée, vous pouvez fina
 Procédez comme suit pour déléguer un élément de travail.
 
 1. Cliquez sur le bouton **Déléguer** dans la barre de navigation supérieure.
-1. Dans la boîte de dialogue, utilisez la liste déroulante pour sélectionner **l’utilisateur** auquel vous souhaitez déléguer l’élément de travail. Vous pouvez également rédiger un **commentaire**.
+1. Dans la boîte de dialogue, utilisez la liste déroulante pour sélectionner la variable **Utilisateur** pour déléguer l’élément de travail à . Vous pouvez également ajouter une **Commentaire**.
 
    ![workflowdelegate](assets/workflowdelegate.png)
 
@@ -86,7 +84,7 @@ Procédez comme suit pour déléguer un élément de travail.
 Procédez comme suit pour revenir en arrière.
 
 1. Cliquez sur le bouton Revenir en arrière dans la barre de navigation supérieure.
-1. Dans la boîte de dialogue qui s’ouvre, sélectionnez l’étape précédente, c’est-à-dire l’étape à exécuter par la suite, même s’il s’agit d’une étape qui se produit plus tôt dans le workflow. Une liste déroulante affiche toutes les destinations correspondantes.
+1. Dans la boîte de dialogue qui s’affiche, sélectionnez l’étape précédente ; en d’autres termes, l’étape à exécuter ensuite, même s’il s’agit d’une étape qui se produit plus tôt dans le workflow. Une liste déroulante affiche toutes les destinations appropriées.
 
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 

@@ -1,9 +1,9 @@
 ---
-title: Notes de mise à jour d’AEM Content and Commerce 2021
-description: Notes de mise à jour d’AEM Content and Commerce 2021
+title: Notes de mise à jour d’AEM Content and Commerce 2019
+description: Notes de mise à jour d’AEM Content and Commerce 2019
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '978'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 
 * Les sélecteurs de catégorie/produit ont été améliorés pour respecter la vue spécifiée pour le magasin Adobe Commerce dans une configuration multi-magasin.
 
-* Composants basés sur React disponibles sous la forme d’un module npm. Cela permet à l’équipe de développement d’utiliser le package Composants React comme dépendance pour un nouveau projet React afin de permettre la personnalisation des composants existants ou le développement de nouveaux composants React.
+* Composants basés sur React disponibles sous la forme d’un package npm. Cela permet à l’équipe de développement d’utiliser le package Composants React comme dépendance pour un nouveau projet React afin de permettre la personnalisation des composants existants ou le développement de nouveaux composants React.
 
 * Personnalisation simplifiée des requêtes GraphQL. Cela permet à l’équipe de développement de personnaliser les composants principaux CIF avec moins de code.
 

@@ -1,8 +1,6 @@
 ---
-title: Créer des pages
-seo-title: Authoring Pages
-description: Tâches impliquées dans la création d’une page de contenu
-seo-description: The tasks involved when authoring a content page
+title: Création de pages de contenu dans AEM
+description: Tâches impliquées dans la création d’une page de contenu.
 uuid: 454d94aa-da27-45cb-bbb2-7bfcef103806
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 85%
 
 ---
 
 # Créer des pages{#authoring-pages}
 
-Les pages suivantes fournissent deux types d’aperçu concernant la création avec AEM :
+Vous trouverez ci-dessous deux types d’aperçu de la création avec AEM :
 
 * [Premières étapes pour les auteurs](/help/sites-authoring/first-steps.md) : présentation à l’intention des nouveaux auteurs
 
@@ -30,9 +28,9 @@ Les pages suivantes fournissent deux types d’aperçu concernant la création a
 >
 >Cette section couvre les tâches impliquées dans la création d’une page de contenu. De nombreuses fonctions supplémentaires sont associées à la création de pages. Elles sont traitées dans des sections spécifiques du [Guide de création](/help/sites-authoring/home.md).
 
-## Aperçu rapide des fonctions utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
+## Présentation rapide des fonctionnalités utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
 
-Afin de vous aider à créer vos pages, l’environnement de création met à votre disposition plusieurs fonctions, notamment :
+Pour vous aider lors de la création de pages, l’environnement de création propose des fonctionnalités telles que :
 
 * **Glisser-déplacer**
 Il est possible de déplacer des composants (texte, image, etc.) et des ressources numériques (images, par exemple) sur la page en les faisant simplement glisser jusqu’à l’emplacement voulu.

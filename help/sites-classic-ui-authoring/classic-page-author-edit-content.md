@@ -1,8 +1,6 @@
 ---
-title: Modification du contenu de la page
-seo-title: Editing Page Content
-description: Le contenu est ajouté à l’aide des composants que vous pouvez déplacer sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
-seo-description: Content is added using components that can be dragged onto the page. These can then be edited in place, moved, or deleted.
+title: Editer le contenu d'une page
+description: Le contenu est ajouté à l’aide de composants qui peuvent être déplacés sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
 uuid: e7b65ceb-263c-46f2-91e3-11dec3a016fa
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '1755'
-ht-degree: 100%
+ht-degree: 39%
 
 ---
 
@@ -22,19 +20,19 @@ ht-degree: 100%
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
-Le contenu est ajouté à l’aide de [composants](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (appropriés au type de contenu) que vous pouvez déplacer sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
+Le contenu est ajouté à l’aide de [components](/help/sites-classic-ui-authoring/classic-page-author-default-components.md) (approprié au type de contenu) qui peut être glissé sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
 
 >[!NOTE]
 >
->Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et des [autorisations appropriés](/help/sites-administering/security.md#permissions) sur votre compte pour modifier les pages ; par exemple, pour ajouter, modifier ou supprimer des composants, ou pour les annotations et le déverrouillage.
+>Votre compte a besoin de la fonction [droits d’accès appropriés](/help/sites-administering/security.md) et [permissions](/help/sites-administering/security.md#permissions) pour modifier des pages ; par exemple, ajout, modification ou suppression de composants, annotation, déverrouillage.
 >
 >En cas de problème, contactez votre administrateur système.
 
 ## Sidekick {#sidekick}
 
-Le sidekick est un outil clé lors de la création de pages. Il est toujours visible (dans une fenêtre flottante) pendant la création d’une page.
+Le sidekick est un outil clé lors de la création de pages. Elle est flottante lors de la création d’une page. Elle est donc toujours visible.
 
-Plusieurs onglets et icônes sont disponibles, notamment :
+Plusieurs onglets et icônes sont disponibles, notamment :
 
 * Composants
 * Page
@@ -56,7 +54,7 @@ Donne accès à diverses fonctionnalités, par exemple :
 * [le changement de mode ;](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 * la [création](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), la [restauration](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) et la [comparaison](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) des versions ;
 
-* la [publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page) et l’[annulation de la publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) d’une page ;
+* la [publication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page) et la [dépublication](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) d’une page ;
 
 * [la modification des propriétés de page ;](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
@@ -70,26 +68,26 @@ Donne accès à diverses fonctionnalités, par exemple :
 
 Après avoir ouvert la page, vous pouvez commencer à ajouter du contenu. Pour ce faire, ajoutez des composants (également appelés paragraphes).
 
-Pour insérer un nouveau composant :
+Pour insérer un nouveau composant :
 
-1. Plusieurs méthodes permettent de sélectionner le type de paragraphe à insérer :
+1. Plusieurs méthodes permettent de sélectionner le type de paragraphe à insérer :
 
-   * Double-cliquez sur la zone nommée **Faire glisser des composants ou éléments ici...** ; la barre d’outils **Insérer un nouveau composant** s’ouvre alors. Sélectionnez un composant et cliquez sur **OK**.
+   * Double-cliquez sur la zone intitulée **Faites glisser des composants ou des ressources ici...** - le **Insérer un nouveau composant** s’ouvre. Sélectionnez un composant, puis cliquez sur **OK**.
 
-   * Faites glisser un composant à partir de la barre d’outils flottante (appelée sidekick) pour insérer un nouveau paragraphe.
-   * Cliquez avec le bouton droit sur un paragraphe existant et sélectionnez ensuite **Nouveau...** ; la barre d’outils Insérer un nouveau composant s’ouvre. Sélectionnez un composant et cliquez sur **OK**.
+   * Faites glisser un composant depuis la barre d’outils flottante (appelée sidekick) pour insérer un nouveau paragraphe.
+   * Cliquez avec le bouton droit de la souris sur un paragraphe existant, puis sélectionnez **Nouveau...** - La barre d’outils Insérer un nouveau composant s’ouvre. Sélectionnez un composant, puis cliquez sur **OK**.
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. La liste des composants (types de paragraphe) disponibles est affichée dans le sidekick et dans la barre d’outils **Insérer un nouveau composant**. Ils peuvent être divisés en plusieurs sections (par exemple : Général, Colonnes, etc.), qui peuvent être développées suivant les besoins.
+1. La liste des composants (types de paragraphe) disponibles est affichée dans le sidekick et dans la barre d’outils **Insérer un nouveau composant**. Elles peuvent être divisées en différentes sections (par exemple, Général, Colonnes, etc.), qui peuvent être développées selon les besoins.
 
-   Les options peuvent varier en fonction de l’environnement de production utilisé. Pour obtenir des informations complètes sur les composants, voir [Composants par défaut](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
+   Ces choix peuvent varier en fonction de votre environnement de production. Pour plus d’informations sur les composants, voir [Composants par défaut](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
 1. Insérez le composant de votre choix sur la page. Double-cliquez ensuite sur le paragraphe. Une fenêtre s’ouvre alors pour vous permettre de configurer votre paragraphe et d’ajouter du contenu.
 
-### Insertion d’un composant à l’aide de l’Outil de recherche de contenu {#inserting-a-component-using-the-content-finder}
+### Insertion d’un composant à l’aide de l’outil de recherche de contenu {#inserting-a-component-using-the-content-finder}
 
-Vous pouvez également ajouter un nouveau composant sur la page en faisant glisser un élément à partir de l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Un nouveau composant du type approprié (et contenant l’élément) est ainsi créé automatiquement.
+Vous pouvez également ajouter un nouveau composant à la page en faisant glisser une ressource depuis l’ [Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Cela crée automatiquement un nouveau composant du type approprié contenant la ressource.
 
 Cette procédure est valide pour les types de ressources suivants (certains dépendent du système de pages/paragraphes) :
 
@@ -102,31 +100,31 @@ Cette procédure est valide pour les types de ressources suivants (certains dép
 
 >[!NOTE]
 >
->Ce comportement peut être configuré pour votre installation. Pour plus d’informations, voir [Configuration d’un système de paragraphes de manière à faire glisser une ressource pour créer une instance de composant](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance).
+>Ce comportement peut être configuré pour votre installation. Voir [Configuration d’un système de paragraphes pour que le glissement d’une ressource crée une instance de composant](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) pour plus de détails.
 
 Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
 1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
-1. Ouvrez l’[Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. Faites glisser la ressource jusqu’à la position requise. L’[espace réservé du composant](#componentplaceholder) indique où le composant va être positionné.
+1. Ouvrez le [Outil de recherche de contenu](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
+1. Faites glisser la ressource vers la position requise. Le [espace réservé du composant](#componentplaceholder) vous indique où le composant sera positionné.
 
-   Un composant, du type de ressource approprié, est créé à l’emplacement requis. Il contient la ressource sélectionnée.
+   Un composant, adapté au type de ressource, est créé à l’emplacement requis ; il contient la ressource sélectionnée.
 
-1. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
+1. [Modifier](#editmovecopypastedelete) le composant si nécessaire.
 
 ## Modification d’un composant (contenu et propriétés) {#editing-a-component-content-and-properties}
 
-Pour modifier un paragraphe existant, procédez comme suit :
+Pour modifier un paragraphe existant, effectuez l’une des opérations suivantes :
 
-* **Double-cliquez** sur le paragraphe pour l’ouvrir. La fenêtre qui s’affiche est la même que celle présentée lorsque vous avez créé le paragraphe avec le contenu existant. Effectuez vos modifications, puis cliquez sur **OK**.
+* **Double-cliquez** le paragraphe pour l’ouvrir. Vous voyez la même fenêtre que lorsque vous avez créé le paragraphe avec le contenu existant. Apportez vos modifications et cliquez sur **OK**.
 
-* **Cliquez avec le bouton droit de la souris** sur le paragraphe, puis sélectionnez **Modifier**.
+* **Clic droit** le paragraphe et cliquez sur **Modifier**.
 
-* **Cliquez** deux fois sur le paragraphe (un double-clic lent) pour passer au mode d’édition statique. Vous pouvez alors modifier directement le texte sur la page, sans avoir à passer par une boîte de dialogue. Dans ce mode, une barre d’outils vous est fournie en haut de la page. Il suffit d’apporter les modifications et elles sont automatiquement enregistrées.
+* **Cliquez sur** deux fois sur le paragraphe (double-clic lent) pour passer en mode de modification statique. Vous pourrez modifier directement le texte sur la page, plutôt que dans une fenêtre de boîte de dialogue. Dans ce mode, une barre d’outils s’affiche en haut de la page. Il vous suffit d’apporter vos modifications ; elles seront automatiquement enregistrées.
 
 ## Déplacement d’un composant {#moving-a-component}
 
-Pour déplacer un paragraphe :
+Pour déplacer un paragraphe :
 
 >[!NOTE]
 >
@@ -136,20 +134,20 @@ Pour déplacer un paragraphe :
 
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
-1. Faites glisser le paragraphe vers son nouvel emplacement. AEM affiche une coche verte pour indiquer les destinations possibles. Déposez le paragraphe à l’emplacement souhaité.
+1. Faites glisser le paragraphe vers son nouvel emplacement : AEM indique où le paragraphe peut être déplacé avec une coche verte. Déposez-le à l’emplacement de votre choix.
 1. Votre paragraphe est déplacé :
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
 
 ## Supprimer un composant {#deleting-a-component}
 
-Pour supprimer un paragraphe :
+Pour supprimer un paragraphe :
 
-1. Sélectionnez le paragraphe et **cliquez avec le bouton droit** :
+1. Sélectionnez le paragraphe et **clic droit**:
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. Sélectionnez **Supprimer** dans le menu. AEM WCM vous invite à confirmer la suppression du paragraphe, dans la mesure où cette opération est irréversible.
+1. Sélectionner **Supprimer** dans le menu. AEM WCM vous invite à confirmer la suppression du paragraphe, car cette action ne peut pas être annulée.
 1. Cliquez sur **OK**.
 
 >[!NOTE]
@@ -176,12 +174,12 @@ Comme pour la [Suppression d’un composant](#deleting-a-component), vous pouvez
 
 Les composants hérités peuvent être le produit de divers scénarios :
 
-* [Gestion de plusieurs sites](/help/sites-administering/msm.md) ; également associé au mode [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Gestion de plusieurs sites](/help/sites-administering/msm.md); également en combinaison avec [scaffolding](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * Des [lancements](/help/sites-classic-ui-authoring/classic-launches.md) (quand basés sur une live copy)
 * Des composants spécifiques, par exemple le système de paragraphes hérité dans Geometrixx
 
-Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, cette option est disponible depuis :
+Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous pouvez y accéder à partir des éléments suivants :
 
 1. **Live Copy**
 
@@ -197,25 +195,25 @@ Vous pouvez annuler (puis réactiver) l’héritage. En fonction du composant, c
 
 1. **Un système de paragraphes hérité**
 
-   La boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité dans Geometrixx :
+   Boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité dans Geometrixx :
 
    ![chlimage_1-74](assets/chlimage_1-74.png)
 
 ## Ajout d’annotations {#adding-annotations}
 
-Les [Annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) permettent aux autres créateurs de fournir des commentaires sur votre contenu. Elles sont souvent utilisées à des fins de révision et de validation.
+[Annotations](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) autorisez d’autres auteurs à fournir des commentaires sur votre contenu. Il est souvent utilisé à des fins de révision et de validation.
 
 ## Aperçu des pages {#previewing-pages}
 
-Deux icônes disponibles dans la bordure inférieure du sidekick sont importantes pour afficher un aperçu des pages :
+Deux icônes sont importantes pour la prévisualisation des pages dans la bordure inférieure du sidekick :
 
 ![](do-not-localize/chlimage_1-5.png)
 
-* L’icône de crayon indique que vous êtes actuellement en mode d’édition, qui vous permet d’ajouter, de modifier, de déplacer ou de supprimer le contenu.
+* L’icône en forme de crayon indique que vous êtes actuellement en mode d’édition où vous pouvez ajouter, modifier, déplacer ou supprimer du contenu.
 
    ![](do-not-localize/chlimage_1-6.png)
 
-* L’icône de loupe vous permet de sélectionner le mode d’aperçu, qui affiche la page telle qu’elle sera dans l’environnement de publication (il est parfois nécessaire d’actualiser la page) :
+* L’icône en forme de loupe permet de sélectionner le mode d’aperçu où la page s’affiche telle qu’elle sera dans l’environnement de publication (une actualisation de page est parfois nécessaire) :
 
    ![](do-not-localize/chlimage_1-7.png)
 
@@ -225,21 +223,21 @@ Deux icônes disponibles dans la bordure inférieure du sidekick sont importante
 
 ## Rechercher et remplacer {#find-replace}
 
-Pour les modifications à plus grande échelle d’une même expression, utilisez l’option **[Rechercher et remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** pour rechercher et remplacer plusieurs instances d’une chaîne dans une section du site web.
+Pour des modifications à plus grande échelle de la même expression, une **[Chercher et Remplacer](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** l’option de menu vous permet de rechercher et de remplacer plusieurs instances d’une chaîne dans une section du site web.
 
 ## Verrouillage d’une page {#locking-a-page}
 
-AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Ceci s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
+AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
 >[!CAUTION]
 >
->Soyez prudent lorsque vous verrouillez une page, car seule la personne qui l’a verrouillée peut la déverrouiller (sauf s’il s’agit d’un compte avec des droits d’administrateur).
+>Le verrouillage d’une page doit être utilisé avec précaution, car la seule personne pouvant déverrouiller une page est la personne qui l’a verrouillée (ou un compte disposant de droits d’administrateur).
 
-Pour verrouiller une page :
+Pour verrouiller une page :
 
-1. Dans l’onglet **Sites web**, sélectionnez la page à verrouiller.
-1. Double-cliquez sur la page afin de l’ouvrir pour la modifier.
-1. Dans l’onglet **Page** du sidekick, sélectionnez **Verrouiller la page** :
+1. Dans le **Sites web** , sélectionnez la page à verrouiller.
+1. Double-cliquez sur la page pour l’ouvrir et la modifier.
+1. Dans le **Page** onglet du sidekick, sélectionnez **Verrouiller la page**:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
@@ -249,15 +247,15 @@ Pour verrouiller une page :
 
 ## Déverrouillage d’une page {#unlocking-a-page}
 
-Pour déverrouiller une page :
+Pour déverrouiller une page :
 
-1. Dans l’onglet **Sites web**, sélectionnez la page à déverrouiller.
+1. Dans le **Sites web** , sélectionnez la page à déverrouiller.
 1. Double-cliquez sur la page pour l’ouvrir.
-1. Dans l’onglet **Page** du sidekick, sélectionnez **Déverrouiller la page**.
+1. Dans le **Page** onglet du sidekick, sélectionnez **Déverrouiller la page**.
 
 ## Annulation et rétablissement des modifications de page {#undoing-and-redoing-page-edits}
 
-Utilisez les raccourcis clavier suivants lorsque le cadre de contenu de la page est actif :
+Utilisez les raccourcis clavier suivants lorsque le cadre de contenu de la page est ciblé :
 
 * Annuler : Ctrl+Z (Windows) ou Cmd+Z (Mac)
 * Rétablir : Ctrl+Y (Windows) ou Cmd+Y (Mac)
@@ -274,36 +272,36 @@ Lorsque vous annulez ou rétablissez une opération de suppression, d’ajout ou
 >
 >L’administrateur système peut [configurer divers aspects des fonctions Annuler/Rétablir](/help/sites-administering/config-undo.md) en fonction des exigences de votre instance.
 
-AEM stocke un historique des opérations effectuées, ainsi que l’ordre d’exécution. Par conséquent, plusieurs opérations sont annulées dans l’ordre dans lequel vous les avez exécutées. Vous pourrez ensuite utiliser la commande Rétablir pour appliquer à nouveau une ou plusieurs des actions. 
+AEM stocke un historique des actions que vous réalisez et la séquence selon laquelle vous les réalisez. Ainsi, vous annulez plusieurs actions dans l’ordre dans lequel vous les avez effectuées. Vous pouvez ensuite utiliser l’option Rétablir pour appliquer à nouveau une ou plusieurs des actions.
 
-Si un élément de la page de contenu (un composant de texte, par exemple) est sélectionné, les commandes Annuler et Rétablir s’appliquent à celui-ci.
+Si un élément de la page de contenu est sélectionné, les commandes Annuler et Rétablir s’appliquent à l’élément sélectionné, par exemple un composant de texte.
 
-Les commandes Annuler et Rétablir fonctionnent de la même manière que dans les autres logiciels. Utilisez ces commandes pour rétablir l’état récent de votre page web lorsque vous prenez des décisions quant au contenu. Par exemple, si vous repositionnez un paragraphe de texte sur la page, vous pouvez utiliser la commande Annuler pour le remettre à son emplacement initial. Si vous décidez ensuite de déplacer à nouveau le paragraphe, utilisez la commande Rétablir.
+Le comportement des commandes Annuler et Rétablir est similaire à celui des autres programmes logiciels. Utilisez les commandes pour restaurer l’état récent de votre page web lorsque vous prenez des décisions sur le contenu. Par exemple, si vous repositionnez un paragraphe de texte sur la page, vous pouvez utiliser la commande Annuler pour le remettre à son emplacement initial. Si vous décidez ensuite de déplacer à nouveau le paragraphe, utilisez la commande Rétablir .
 
 >[!NOTE]
 >
 >Vous pouvez :
 >
->* Rétablir des opérations pour autant qu’aucune modification de page n’ait été effectuée depuis la dernière utilisation de la commande Annuler.
->* Annuler jusqu’à 20 opérations de modification (paramètre par défaut).
->* Vous pouvez également utiliser les [raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour les opérations d’annulation et de rétablissement.
+>* rétablir les actions tant que vous n’avez pas modifié de page depuis que vous avez utilisé la commande annuler.
+>* annulez un maximum de 20 actions de modification (paramètre par défaut).
+>* également utiliser [Raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour annuler et rétablir.
 >
 
 
-Vous pouvez utiliser les commandes d’annulation et de rétablissement pour les types de modification suivants :
+Vous pouvez utiliser les options Annuler et Rétablir pour les types de modifications de page suivants :
 
 * Ajout, modification, suppression et déplacement de paragraphes
-* Modification statique du contenu de paragraphe
-* Copie, découpe et collage d’éléments sur une page
+* Modification statique du contenu des paragraphes
+* Copie, découpe et collage d’éléments dans une page
 * Copie, découpe et collage d’éléments entre plusieurs pages
 * Ajout, suppression et modification de fichiers et d’images
 * Ajout, suppression et modification d’annotations et d’esquisses
-* Modifications d’un modèle issu de la génération de modèles automatique
-* Ajout ou suppression de références
-* Modification des valeurs de propriété dans des boîtes de dialogue de composant
+* Modifications apportées à Scaffold
+* Ajout et suppression de références
+* Modification des valeurs de propriété dans les boîtes de dialogue de composant.
 
-Aucune valeur n’est censée être spécifiée pour les champs de formulaire dont le rendu est effectué par les composants de formulaire lors de la création de pages. Les commandes Annuler et Rétablir n’affectent donc pas les modifications que vous apportez aux valeurs des composants de ce type. Par exemple, vous ne pouvez pas annuler la sélection d’une valeur dans une liste déroulante.
+Les champs de formulaire dont le rendu des composants de formulaire est effectué ne sont pas censés contenir de valeurs spécifiées lors de la création de pages. Les commandes Annuler et Rétablir n’affectent donc pas les modifications que vous apportez aux valeurs des composants de ce type. Par exemple, vous ne pouvez pas annuler la sélection d’une valeur dans une liste déroulante.
 
 >[!NOTE]
 >
->Des autorisations spéciales sont nécessaires pour annuler et rétablir des modifications affectant des fichiers et des images. Ajoutons encore que l’historique des annulations relatif aux modifications apportées aux fichiers et aux images a une durée de vie minimale de dix heures. Au-delà de cette limite, l’annulation des modifications n’est plus garantie. Votre administrateur peut fournir des autorisations et modifier la durée par défaut de dix heures.
+>Des autorisations spéciales sont nécessaires pour annuler et rétablir des modifications affectant des fichiers et des images. En outre, l’historique des annulations des modifications apportées aux fichiers et aux images dure un minimum d’heures. Au-delà de cette période, l’annulation des modifications n’est toutefois pas garantie. Votre administrateur peut fournir des autorisations et modifier la durée par défaut de dix heures.

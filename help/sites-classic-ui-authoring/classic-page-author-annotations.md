@@ -1,8 +1,6 @@
 ---
 title: Annotations lors de la modification d’une page
-seo-title: Annotations when Editing a Page
-description: L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu permettent d’ajouter une annotation.
-seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
+description: L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette opération, de nombreux composants directement liés au contenu vous permettent d’ajouter une annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -11,16 +9,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 100%
+ht-degree: 31%
 
 ---
 
 # Annotations lors de la modification d’une page{#annotations-when-editing-a-page}
 
-L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette procédure, de nombreux composants directement liés au contenu (contrairement, par exemple, à la mise en page) permettent d’ajouter une annotation.
+L’ajout de contenu aux pages de votre site web est souvent l’objet de discussions avant la publication réelle. Pour faciliter cette opération, de nombreux composants directement liés au contenu (par opposition, à la mise en page, par exemple) vous permettent d’ajouter une annotation.
 
 Une annotation place une note autocollante colorée sur la page. L’annotation vous permet (ainsi qu’aux autres utilisateurs) de laisser des commentaires ou des questions à l’intention d’autres auteurs ou réviseurs.
 
@@ -30,7 +28,7 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 >[!NOTE]
 >
->Les annotations créées dans l’IU classique sont également affichées dans l’IU optimisée pour les écrans tactiles. Toutefois, les esquisses sont spécifiques à l’IU et ne s’affichent donc que dans l’interface dans laquelle elles ont été créées.
+>Les annotations créées dans l’IU classique s’affichent également dans l’IU optimisée pour les écrans tactiles. Toutefois, les esquisses sont spécifiques à l’interface utilisateur et ne s’affichent que dans l’interface dans laquelle elles ont été créées.
 
 >[!CAUTION]
 >
@@ -42,21 +40,21 @@ Une annotation place une note autocollante colorée sur la page. L’annotation 
 
 ## Annotations {#annotations}
 
-Selon la conception du paragraphe, une annotation est soit disponible en tant qu’option dans le menu contextuel (habituellement le bouton droit de la souris lorsqu’il est positionné au-dessus du paragraphe requis), soit en tant que bouton dans la barre d’édition du paragraphe.
+Selon la conception du paragraphe, l’annotation est disponible sous la forme d’une option dans le menu contextuel (généralement le bouton droit de la souris lorsqu’il est placé sur le paragraphe requis) ou d’un bouton dans la barre d’édition du paragraphe.
 
-Dans tous les cas, sélectionnez **Annoter**. Une annotation sur une étiquette autocollante colorée est appliquée au paragraphe et vous passez immédiatement en mode d’édition, ce qui vous permet d’ajouter directement du texte :
+Dans les deux cas, sélectionnez **Annoter**. Une annotation autocollante colorée est appliquée au paragraphe. Vous êtes immédiatement en mode d’ édition , ce qui vous permet d’ajouter directement du texte :
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-Vous pouvez déplacer l’annotation dans une nouvelle position sur la page. Cliquez sur le bord supérieur, puis maintenez le bouton de la souris enfoncé et faites glisser simultanément l’annotation sur la nouvelle position. La nouvelle position peut être partout sur la page, mais toutefois il convient généralement de maintenir la connexion avec le paragraphe d’une manière ou d’une autre.
+Vous pouvez déplacer l’annotation vers un nouvel emplacement sur la page. Cliquez sur la zone de bordure supérieure, puis maintenez la touche enfoncée et faites glisser simultanément l’annotation sur la nouvelle position. Cela peut être n’importe où sur la page, bien qu’il soit généralement utile de le garder connecté au paragraphe d’une manière ou d’une autre.
 
-Les annotations (y compris les schémas qui leur sont associés) sont également comprises dans toute action de copie, de découpe ou de suppression affectant le paragraphe auquel elles sont jointes ; pour les actions de copie et de découpe, la position de l’annotation (et des schémas qui lui sont associés) est conservée par rapport au paragraphe d’origine.
+Les annotations (y compris les schémas associés) sont également incluses dans toute action de copie, de découpe ou de suppression effectuée sur le paragraphe auquel elles sont jointes ; pour les actions de copie ou de découpe, la position de l’annotation (et des schémas associés) conserve leur position par rapport au paragraphe d’origine.
 
 La taille de l’annotation peut également être augmentée ou réduite, en faisant glisser le coin droit inférieur.
 
-À des fins de suivi, la ligne de pied de page indique l’utilisateur qui a créé l’annotation et la date. Les auteurs consécutifs peuvent modifier la même annotation (le pied de page est alors mis à jour), ou créer une nouvelle annotation pour le même paragraphe.
+À des fins de suivi, la ligne de pied de page indique l’utilisateur qui a créé l’annotation et la date. Les auteurs suivants peuvent modifier la même annotation (le pied de page sera mis à jour) ou créer une annotation pour le même paragraphe.
 
-Une confirmation est exigée lorsque vous choisissez de supprimer l’annotation (supprimer une annotation supprime également tout schéma qui lui est associé).
+Une confirmation est demandée lorsque vous choisissez de supprimer l’annotation (la suppression d’une annotation supprime également les schémas qui y sont associés).
 
 Les trois icônes dans la partie supérieure gauche vous permettent de minimiser l’annotation (ainsi que tout schéma qui lui est associé), de changer la couleur et d’ajouter des schémas.
 
@@ -70,36 +68,36 @@ Les trois icônes dans la partie supérieure gauche vous permettent de minimiser
 >
 >Les annotations ne peuvent pas être ajoutées à une page verrouillée par un autre utilisateur.
 
-## Schémas d’annotation {#annotation-sketches}
+## Esquisses d’annotation {#annotation-sketches}
 
 >[!NOTE]
 >
->Les schémas ne sont pas disponibles dans Internet Explorer, donc :
+>Les esquisses ne sont pas disponibles dans Internet Explorer :
 >
->* l’icône ne s’affiche pas ;
+>* l’icône ne s’affiche pas.
 >* les schémas existants, créés dans un autre navigateur, ne s’affichent pas.
 >
 
 
-Les schémas sont une fonctionnalité des annotations qui vous permet de créer des graphiques en courbes simples, n’importe où dans la fenêtre de navigateur (partie visible) :
+Les esquisses sont une fonction des annotations qui vous permet de créer des graphiques en courbes simples n’importe où dans la fenêtre du navigateur (partie visible) :
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-* Le curseur prend la forme d’une croix lorsque vous passez en mode de schéma. Vous pouvez tracer plusieurs lignes distinctes.
-* La ligne de schéma reflète la couleur de l’annotation et peut être :
+* Le curseur prend la forme d’un fil croisé lorsque vous êtes en mode d’esquisse. Vous pouvez tracer plusieurs lignes distinctes.
+* La ligne d’esquisse reflète la couleur de l’annotation et peut être :
 
-   * à main levée
+   * freehand
 
-      le mode par défaut ; terminez en relâchant le bouton de la souris.
+      le mode par défaut ; terminez en relâchant le bouton de la souris.
 
-   * droite :
+   * droite :
 
       maintenez la touche `ALT` enfoncée et cliquez sur les points de début et de fin ; terminez par un double-clic.
 
-* Une fois que vous avez quitté le mode de schéma, vous pouvez cliquer sur une courbe du schéma pour sélectionner celui-ci.
-* Déplacez un schéma en sélectionnant celui-ci, puis en le faisant glisser sur la position de votre choix.
-* Un schéma recouvre le contenu. Cela signifie qu’entre les 4 coins du schéma vous ne pouvez pas cliquer sur le paragraphe sous-jacent ; par exemple, pour modifier un lien ou y accéder. Si cela pose problème (par exemple, si un grand schéma couvre une large zone de la page), vous pouvez minimiser l’annotation appropriée, car vous minimisez alors également tous les schémas qui lui sont associés, vous procurant ainsi l’accès à la zone sous-jacente.
-* Pour supprimer un schéma individuel : sélectionnez le schéma requis, puis appuyez sur la touche **Supprimer** (**fn**-**Retour Arrière** sur un MAC).
+* Après avoir quitté le mode de schéma, vous pouvez cliquer sur une ligne de schéma pour sélectionner cette dernière.
+* Déplacez une esquisse en la sélectionnant, puis en la faisant glisser à l’emplacement souhaité.
+* Une esquisse superpose le contenu. Cela signifie que dans les 4 coins du schéma, vous ne pouvez pas cliquer sur le paragraphe sous-jacent. par exemple, si vous devez modifier un lien ou y accéder. Si cela pose problème (par exemple, si vous disposez d’un schéma couvrant une grande partie de la page), réduisez l’annotation appropriée, car cela réduit également tous les schémas associés, ce qui vous donne accès à la zone sous-jacente.
+* Pour supprimer une esquisse individuelle, sélectionnez-la, puis appuyez sur la touche **Supprimer** clé (**fn**-**backspace** sur MAC).
 
-* Si vous déplacez ou copiez un paragraphe, toutes les annotations qui lui sont associées, ainsi que leurs schémas, sont également déplacés ou copiés ; leur position par rapport au paragraphe demeure inchangée.
-* Si vous supprimez une annotation, tous les schémas qui lui sont associés sont également supprimés.
+* Si vous déplacez ou copiez un paragraphe, toutes les annotations associées et leurs schémas sont également déplacés ou copiés. leur position par rapport au paragraphe reste la même.
+* Si vous supprimez une annotation, tous les schémas qui y sont associés seront également supprimés.

@@ -1,8 +1,6 @@
 ---
-title: Modification des propriétés de page
-seo-title: Editing Page Properties
-description: Définissez les propriétés requises pour une page
-seo-description: Define the required properties for a page
+title: Modification des propriétés d’une page de contenu
+description: Définissez les propriétés requises pour une page.
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '1884'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '1885'
+ht-degree: 66%
 
 ---
 
 # Modification des propriétés de page{#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, et d’autres pas, et les informations Live Copy seront disponibles suivant le cas.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas et les informations de Live Copy seront disponibles, le cas échéant.
 
 ## Propriétés de page {#page-properties}
 
@@ -30,7 +28,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Titre**
 
-   Le titre de la page s’affiche à divers endroits. Par exemple, la liste de l’onglet **Sites web** et les modes Carte/Liste des **Sites**.
+   Le titre de la page s’affiche à divers endroits. Par exemple, la variable **Sites web** et la liste des onglets **Sites** modes Carte/Liste.
 
    Ce champ est obligatoire.
 
@@ -39,12 +37,12 @@ Les propriétés sont réparties sur plusieurs onglets.
    Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection :
 
    * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
-   * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
+   * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
 
       * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
-      * Elle s’affiche alors avec une petite étoile à droite indiquant qu’il s’agit d’une nouvelle balise.
-   * Vous pouvez faire votre choix parmi les balises existantes dans la liste déroulante.
-   * Un « x » apparaît lorsque vous passez le pointeur de la souris sur une entrée de balise dans la zone de sélection ; vous pouvez vous en servir pour supprimer cette balise de la page.
+      * La nouvelle balise s’affiche alors avec une petite étoile à droite indiquant qu’il s’agit d’une nouvelle balise.
+   * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
+   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisée pour supprimer cette balise pour cette page.
 
    Pour plus d’informations sur les balises, voir [Utilisation des balises](/help/sites-authoring/tags.md).
 
@@ -62,11 +60,11 @@ Les propriétés sont réparties sur plusieurs onglets.
       * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
 * **Titre de la page**
 
-   Titre à utiliser sur la page. Habituellement utilisé par les composants du titre. Si ce champ reste vide, le **titre** est utilisé.
+   Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si elle est vide, **Titre** sera utilisé.
 
 * **Titre de navigation**
 
-   Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si ce champ reste vide, le **titre** est utilisé.
+   Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si elle est vide, la variable **Titre** sera utilisé.
 
 * **Sous-titre**
 
@@ -80,17 +78,17 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Date et heure auxquelles la page publiée sera activée. Une fois publiée, cette page restera dormante jusqu’à l’heure indiquée.
 
-   Ne complétez pas ces champs pour les pages que vous souhaitez publier immédiatement (scénario normal).
+   Laissez ces champs vides pour les pages que vous souhaitez publier immédiatement (scénario normal).
 
 * **Heure de désactivation**
 
    Heure à laquelle la page publiée sera désactivée.
 
-   Ici encore, ne renseignez pas ces champs pour une action immédiate.
+   Laissez à nouveau ces champs vides pour une action immédiate.
 
-* **URL Vanity**
+* **URL de redirection**
 
-   Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
+   Permet de saisir une URL Vanity pour cette page, ce qui peut vous permettre d’avoir une URL plus courte et/ou plus expressive.
 
    Par exemple, si l’URL de redirection est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site Web `http://example.com,`, `http://example.com/welcome` sera l’URL de redirection de `http://example.com/content/v1.0/startpage`.
 
@@ -99,7 +97,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    >L’URL Vanity :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
-   >* ne prend pas en charge les modèles d’expression régulière.
+   >* Ne prenez pas en charge les modèles d’expression régulière.
    >* ne doit pas être définie sur une page existante.
 
 
@@ -117,38 +115,38 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Racine de la langue**
 
-   Cette option doit être activée si la page est la racine d’une copie de langue.
+   Doit être coché si la page est la racine d’une copie de langue.
 
 * **Rediriger**
 
-   Indique la page vers laquelle cette page doit être automatiquement redirigée.
+   Indiquez la page vers laquelle cette page doit automatiquement être redirigée.
 
 * **Conception**
 
-   Indique la [conception](/help/sites-developing/designer.md) à utiliser pour cette page.
+   Indiquez les [design](/help/sites-developing/designer.md) à utiliser pour cette page.
 
 * **Alias**
 
-   Indique un alias à utiliser avec cette page.
+   Indiquez un alias à utiliser avec cette page.
 
    * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
    * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
    * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-authoring/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
    * Pour plus d’informations, consultez [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/managing/seo-and-url-management.md#localized-page-names).
 
-* **Hérité de &lt;*chemin*>**
+* **Hérité de &lt;*path*>**
 
-   Indique si la page est héritée. et de qui.
+   Indique si la page est héritée. et d’où.
 
-* **Configuration du cloud**
+* **Configuration du cloud.**
 
    Chemin d’accès à la configuration.
 
 * **Modèles autorisés**
 
-   [Définissez la liste des modèles qui seront disponibles](/help/sites-authoring/templates.md#allowingatemplate) dans cette sous-branche.
+   [Définir la liste des modèles qui seront disponibles](/help/sites-authoring/templates.md#allowingatemplate) dans cette sous-branche.
 
-* **Activer** (exigence d’authentification)
+* **Activer** (Exigence d’authentification)
 
    Activez (ou désactivez) l’utilisation de l’authentification pour accéder à la page.
 
@@ -169,23 +167,23 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Exporter la configuration**
 
-   Indiquez une configuration d’exportation.
+   Spécifiez une configuration d’exportation.
 
 ### Miniature  {#thumbnail}
 
-Affiche l’image de la miniature de la page. Vous pouvez :
+Affiche la miniature de la page. Vous pouvez :
 
 * **Générer l’aperçu**
 
-   Génère un aperçu de la page à utiliser comme miniature.
+   Générez un aperçu de la page à utiliser comme miniature.
 
 * **Charger l’image**
 
-   Télécharge une image à utiliser comme miniature.
+   Téléchargez une image à utiliser comme miniature.
 
 * **Sélectionner une image**
 
-   Sélectionne une ressource existante à utiliser comme vignette.
+   Sélectionnez une ressource existante à utiliser comme miniature.
 
 * **Rétablir**
 
@@ -195,10 +193,10 @@ Affiche l’image de la miniature de la page. Vous pouvez :
 
 * **Partage sur les réseaux sociaux**
 
-   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://helpx.adobe.com/fr/experience-manager/core-components/using/sharing.html).
+   Définit les options de partage disponibles sur la page. Expose les options disponibles pour la variable [Partage du composant principal](https://helpx.adobe.com/fr/experience-manager/core-components/using/sharing.html).
 
-   * **Activer le partage utilisateur pour Facebook**
-   * **Activer le partage utilisateur pour Pinterest**
+   * **Activation du partage utilisateur pour Facebook**
+   * **Activation du partage utilisateur pour Pinterest**
    * **Variation de fragment d’expérience préférée**
 Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
 
@@ -206,13 +204,13 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
 * **Services cloud**
 
-   Définissez les propriétés des [services cloud](/help/sites-developing/extending-cloud-config.md).
+   Définition des propriétés pour [services cloud](/help/sites-developing/extending-cloud-config.md).
 
 ### Personnalisation {#personalization}
 
 * **Configurations ContextHub**
 
-   Sélectionnez la [configuration ContextHub](/help/sites-developing/ch-configuring.md) et le [chemin d’accès aux segments](/help/sites-administering/segmentation.md).
+   Sélectionnez la [Configuration ContextHub](/help/sites-developing/ch-configuring.md) et [Chemin d’accès aux segments](/help/sites-administering/segmentation.md).
 
 * **Configuration du ciblage**
 
@@ -225,7 +223,7 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
 * **Autorisations**
 
-   Sous cet onglet, vous pouvez :
+   Dans cet onglet, vous pouvez :
 
    * [Ajouter des autorisations](/help/sites-administering/user-group-ac-admin.md)
    * [Modifier le groupe d’utilisateurs fermé](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
@@ -240,19 +238,19 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
    >[!NOTE]
    >
-   >L’onglet Autorisation ne permet pas la création de groupes d’utilisateurs fermés vides, ce qui peut être utile pour refuser l’accès à tous les utilisateurs de façon simple. Pour ce faire, vous devez utiliser l’explorateur CRX. Pour plus d’informations, consultez le document [Administration des utilisateurs, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md).
+   >L’onglet Autorisations n’autorise pas la création de groupes de CUG vides, ce qui peut s’avérer utile comme un moyen simple de refuser l’accès à chaque utilisateur. Pour ce faire, l’Explorateur CRX doit être utilisé. Pour plus d’informations, consultez le document [Administration des utilisateurs, des groupes et des droits d’accès](/help/sites-administering/user-group-ac-admin.md).
 
 ### Plan directeur {#blueprint}
 
 * **Plan directeur**
 
-   Définissez les propriétés d’une page Blueprint dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
+   Définition des propriétés d’une page de plan directeur dans [gestion multisite](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
 ### Live Copy  {#live-copy}
 
 * **Live Copy**
 
-   Définissez les propriétés d’une page Live Copy dans le cadre de la [gestion multi-site](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
+   Définition des propriétés d’une page Live Copy dans [gestion multisite](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
 ### Structure du site  {#site-structure}
 
@@ -260,7 +258,7 @@ Définit la variation de fragment d’expérience utilisée pour générer les m
 
 ## Modification des propriétés de page {#editing-page-properties-1}
 
-Vous pouvez définir des propriétés de page :
+Vous pouvez définir les propriétés de page :
 
 * Dans la console **Sites** :
 
@@ -269,7 +267,7 @@ Vous pouvez définir des propriétés de page :
    * En cliquant ou en appuyant sur **Propriétés**
 
       * Pour une seule page
-      * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
+      * Pour plusieurs pages (seul un sous-ensemble des propriétés peut être modifié en masse)
 
 * À partir de l’éditeur de page :
 
@@ -315,14 +313,14 @@ Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utili
 
 >[!NOTE]
 >
->La modification en masse des propriétés est également disponible pour les ressources. La procédure est très semblable. Seuls quelques points sont différents. Pour plus d’informations, voir [Modification des propriétés de plusieurs ressources](/help/assets/metadata.md).
+>La modification en masse des propriétés est également disponible pour les ressources. La procédure est très semblable. Seuls quelques points sont différents. Voir [Modification des propriétés de plusieurs ressources](/help/assets/metadata.md) pour plus d’informations.
 >
->Il existe également un [outil de modification en masse](/help/sites-administering/bulk-editor.md) qui vous permet de rechercher du contenu provenant de plusieurs pages à l’aide du langage GQL (Google Query Language), puis de le modifier directement avant d’enregistrer les modifications dans les pages d’origine.
+>Il y a également la [Éditeur en bloc](/help/sites-administering/bulk-editor.md), qui vous permet de rechercher du contenu de plusieurs pages à l’aide de GQL (Google Query Language), puis de le modifier directement dans l’éditeur en bloc avant d’enregistrer les modifications dans les pages d’origine.
 
-Vous pouvez sélectionner plusieurs pages en vue d’une modification en masse de différentes façons :
+Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
 
-* Lors de l’exploration de la console **Sites**
-* Après avoir utilisé la fonction **Rechercher** pour localiser un ensemble de pages
+* Lorsque vous parcourez les **Sites** console
+* Après avoir utilisé **Rechercher** pour localiser un ensemble de pages
 
 ![epp-01](assets/epp-01.png)
 
@@ -341,14 +339,14 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 
 * **Mode**
 
-   Lors de l’affichage des propriétés de plusieurs pages, vous pouvez consulter :
+   Lorsque vous affichez les propriétés de page pour plusieurs pages, vous pouvez voir :
 
-   * La liste des pages affectées
+   * Liste des pages affectées
 
-      * Vous pouvez, au besoin, en sélectionner/désélectionner.
+      * Vous pouvez sélectionner/désélectionner si nécessaire.
    * Onglets
 
-      * Comme c’est le cas lors de l’affichage des propriétés d’une seule page, celles-ci sont organisées sous des onglets.
+      * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous onglets.
    * Un sous-ensemble de propriétés
 
       * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
@@ -362,12 +360,12 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 
 * **Modifier**
 
-   En cas de modification des propriétés de plusieurs pages :
+   Lors de la modification des propriétés de page pour plusieurs pages :
 
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
 
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une valeur ou supprimer une valeur commune.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
    * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
 
 

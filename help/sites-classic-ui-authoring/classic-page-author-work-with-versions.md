@@ -1,8 +1,6 @@
 ---
 title: Utilisation des versions de page
-seo-title: Working with Page Versions
 description: Le contrôle de version permet de créer un « instantané » d’une page à un moment donné.
-seo-description: Versioning creates a "snapshot" of a page at a specific point in time.
 uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 100%
+ht-degree: 49%
 
 ---
 
@@ -22,16 +20,16 @@ ht-degree: 100%
 
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
-* Créer une version d’une page donnée.
-* Restaurer la version précédente d’une page (pour annuler une modification apportée à une page, par exemple).
-* Comparer la version actuelle d’une page avec une version précédente (les différences dans le texte et les images sont mises en évidence).
+* Créez une version d’une page.
+* Restaurez une page à une version précédente afin d’annuler une modification que vous avez apportée à une page, par exemple.
+* Comparez la version actuelle d’une page à une version précédente avec les différences dans le texte et les images mises en surbrillance.
 
 ## Création d’une version   {#creating-a-new-version}
 
-Pour créer une version d’une page :
+Pour créer une version d’une page :
 
 1. Dans votre navigateur, ouvrez la page pour laquelle vous souhaitez créer une version.
-1. Dans le sidekick, sélectionnez l’onglet **Création de versions**, puis le sous-onglet **Créer la version**.
+1. Dans le sidekick, sélectionnez la variable **Contrôle de version** , puis le **Créer une version** sous-onglet.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -44,23 +42,23 @@ Version 1.2 créée pour : Chemises.
 >
 >Une version est automatiquement créée lorsque la page est activée.
 
-## Restauration de la version d’une page à partir du sidekick {#restoring-a-page-version-from-sidekick}
+## Restauration d’une version de page à partir du sidekick {#restoring-a-page-version-from-sidekick}
 
-Pour restaurer une version précédente de la page :
+Pour restaurer la page dans une version précédente :
 
-1. Ouvrez la page pour laquelle restaurer une version précédente.
-1. Dans le sidekick, sélectionnez l’onglet **Création de versions**, puis le sous-onglet **Restaurer la version**.
+1. Ouvrez la page pour laquelle vous souhaitez restaurer une version précédente.
+1. Dans le sidekick, sélectionnez la variable **Contrôle de version** , puis le **Restaurer la version** sous-onglet.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
 1. Sélectionnez la version à restaurer, puis cliquez/appuyez sur **Restaurer**.
 
-## Restauration de la version d’une page à partir de la console {#restoring-a-page-version-from-the-console}
+## Restauration d’une version de page à partir de la console {#restoring-a-page-version-from-the-console}
 
-Appliquez cette méthode pour restaurer une version de page. Vous pouvez également l’appliquer pour restaurer des pages qui ont été précédemment supprimées :
+Appliquez cette méthode pour restaurer une version de page. Il peut également être utilisé pour restaurer des pages qui ont été supprimées précédemment :
 
-1. Dans la console **Sites web**, accédez à la page à restaurer, puis sélectionnez-la.
-1. Dans le menu supérieur, sélectionnez **Outils**, puis **Restaurer** :
+1. Dans le **Sites web** , accédez à la page à restaurer, puis sélectionnez-la.
+1. Dans le menu supérieur, sélectionnez **Outils**, puis **Restaurer**:
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
@@ -68,25 +66,25 @@ Appliquez cette méthode pour restaurer une version de page. Vous pouvez égalem
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Sélectionnez la version à restaurer et cliquez sur **Restaurer**. AEM restaure la ou les versions (ou arborescences) sélectionnées.
+1. Sélectionnez la version à restaurer, puis cliquez sur **Restaurer**. AEM restaure la ou les versions (ou arborescences) sélectionnées.
 
 ### Restauration d’une arborescence à partir de la console {#restoring-a-tree-from-the-console}
 
-Appliquez cette méthode pour restaurer une version de page. Vous pouvez également l’appliquer pour restaurer des pages qui ont été précédemment supprimées :
+Appliquez cette méthode pour restaurer une version de page. Il peut également être utilisé pour restaurer des pages qui ont été supprimées précédemment :
 
-1. Dans la console **Sites web**, accédez au dossier à restaurer, puis sélectionnez-le.
-1. Dans le menu supérieur, sélectionnez **Outils**, puis **Restaurer** :
+1. Dans le **Sites web** , accédez au dossier à restaurer, puis sélectionnez-le.
+1. Dans le menu supérieur, sélectionnez **Outils**, puis **Restaurer**.
 1. Sélectionnez **Restaurer l’arborescence** pour afficher une boîte de dialogue qui permet de sélectionner l’arborescence à restaurer :
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
 1. Cliquez sur **Restaurer**. AEM restaure l’arborescence que vous avez sélectionnée.
 
-## Comparaison à une version précédente {#comparing-with-a-previous-version}
+## Comparaison avec une version précédente {#comparing-with-a-previous-version}
 
-Pour comparer la version actuelle de la page avec une version précédente :
+Pour comparer la version actuelle de la page à une version précédente :
 
-1. Dans votre navigateur, ouvrez la page pour laquelle vous souhaitez effectuer une comparaison avec une version précédente.
+1. Dans votre navigateur, ouvrez la page pour laquelle effectuer la comparaison avec une version précédente.
 1. Dans le sidekick, sélectionnez l’onglet **Création de versions**, puis le sous-onglet **Restaurer la version**.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
@@ -94,52 +92,52 @@ Pour comparer la version actuelle de la page avec une version précédente :
 1. Sélectionnez la version pour laquelle effectuer la comparaison, puis cliquez sur le bouton **Diff**.
 1. Les différences entre la version actuelle et la version sélectionnée sont signalées de la façon suivante :
 
-   * Le texte qui a été supprimé apparaît en rouge et est barré.
-   * Le texte qui été ajouté apparaît en vert et est souligné.
-   * Une image qui a été ajoutée ou supprimée apparaît dans un cadre vert.
+   * Le texte qui a été supprimé est rouge et est barré.
+   * Le texte qui a été ajouté est vert et mis en surbrillance.
+   * Les images qui ont été ajoutées ou supprimées sont entourées de vert.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Dans le sidekick, sélectionnez le sous-onglet **Restaurer la version**, puis cliquez sur le bouton **&lt;&lt;Précédent** pour afficher la version actuelle.
+1. Dans le sidekick, sélectionnez la variable **Restaurer la version** et cliquez sur le sous-onglet **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> pour afficher la version actuelle.**
 
 ## Distorsion du temps Timewarp {#timewarp}
 
 La fonction de distorsion du temps Timewarp permet de simuler l’état ***publié*** d’une page à des moments spécifiques dans le passé.
 
-L’objectif est de vous permettre d’effectuer le suivi d’un site web publié au moment sélectionné. Cette fonction utilise les activations de page pour déterminer l’état de l’environnement de publication.
+L’objectif est de vous permettre d’effectuer le suivi du site web publié au moment sélectionné. Cette opération utilise les activations de page pour déterminer l’état de l’environnement de publication.
 
 Pour ce faire :
 
-* Le système recherche la version de page qui était active à l’heure sélectionnée.
-* Cela signifie que la version affichée a été créée/activée *avant* le moment sélectionné dans Timewarp.
-* Si vous accédez à une page qui a été supprimée, celle-ci est également affichée, à condition toutefois que les anciennes versions de la page soient toujours disponibles dans le référentiel.
-* Si aucune version publiée n’a été trouvée, la fonction Timewarp revient à l’état actuel de la page sur l’environnement de création (et ce, afin d’éviter une erreur/page 404, ce qui rendrait impossible toute poursuite de la navigation).
+* Le système recherche la version de page principale à l’heure sélectionnée.
+* Cela signifie que la version affichée a été créée/activée. *before* point dans le temps sélectionné dans Timewarp.
+* Lorsque vous accédez à une page qui a été supprimée, celle-ci s’affiche également, à condition que les anciennes versions de la page soient toujours disponibles dans le référentiel.
+* Si aucune version publiée n’est trouvée, la fonction Timewarp revient à l’état actuel de la page dans l’environnement de création (ceci afin d’éviter une erreur/page 404, ce qui signifie que vous ne pouvez plus naviguer).
 
 >[!NOTE]
 >
->Si des versions sont supprimées du référentiel, Timewarp n’est pas en mesure d’afficher la vue correcte. De même, si des éléments (tels que du code, des feuilles css, des images, etc.) destinés au rendu du site web ont été modifiés, la vue sera différente de ce qu’elle était initialement, étant donné que ces éléments ne sont pas versionnés dans le référentiel.
+>Si des versions sont supprimées du référentiel, Timewarp ne peut pas afficher la vue correcte. En outre, si des éléments (tels que du code, des css, des images, etc.) pour le rendu du site web ont été modifiés, la vue sera différente de ce qu’elle était initialement, car ces éléments ne sont pas versionnés dans le référentiel.
 
 ### Utilisation du calendrier Timewarp {#using-the-timewarp-calendar}
 
-La fonctionnalité Timewarp est disponible à partir du sidekick.
+Timewarp est disponible à partir du sidekick.
 
-La version Calendrier est utilisée si vous souhaitez visualiser un jour spécifique :
+La version Calendrier est utilisée si vous avez un jour spécifique à afficher :
 
-1. Ouvrez l’onglet **Création de versions**, puis cliquez sur **Timewarp** (dans la partie inférieure du sidekick). La boîte de dialogue suivante s’ouvre :
+1. Ouvrez le **Contrôle de version** puis cliquez sur **Timewarp** (près du bas du sidekick). La boîte de dialogue suivante s’affiche :
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Utilisez les sélecteurs de date et d’heure pour indiquer la date/l’heure de votre choix, puis cliquez sur **Aller**.
+1. À l’aide des sélecteurs de date et d’heure, spécifiez la date/l’heure de votre choix, puis cliquez sur **Aller**.
 
-   Timewarp affiche la page telle qu’elle se présentait dans son état publié avant la date choisie ou à cette date.
-
-   >[!NOTE]
-   >
-   >Toutes les fonctionnalités de Timewarp ne sont disponibles que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
+   Timewarp affiche la page telle qu’elle se présentait dans son état publié avant/à la date choisie.
 
    >[!NOTE]
    >
-   >Si vous accédez à une page qui a été supprimée du référentiel, elle s’affiche correctement si d’anciennes versions sont toujours disponibles dans le référentiel.
+   >Timewarp ne fonctionne entièrement que si vous avez publié la page précédemment. Dans le cas contraire, Timewarp affiche la page en cours dans l’environnement de création.
+
+   >[!NOTE]
+   >
+   >Si vous accédez à une page qui a été supprimée du référentiel, elle sera correctement rendue si d’anciennes versions de la page sont toujours disponibles dans le référentiel.
 
    >[!NOTE]
    >
@@ -152,15 +150,15 @@ La version Calendrier est utilisée si vous souhaitez visualiser un jour spécif
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Utilisation de la frise chronologique Timewarp {#using-the-timewarp-timeline}
+### Utilisation de la chronologie Timewarp {#using-the-timewarp-timeline}
 
-Vous pouvez utiliser la version Frise chronologique si vous souhaitez afficher un aperçu des activités de publication sur la page.
+La version de la chronologie est utilisée si vous souhaitez afficher un aperçu des activités de publication sur la page.
 
-Pour afficher la frise chronologique du document :
+Si vous souhaitez afficher la chronologie du document :
 
-1. Pour afficher la frise chronologique, deux possibilités s’offrent à vous :
+1. Pour afficher la chronologie, vous pouvez effectuer l’une des opérations suivantes :
 
-   1. Ouvrez l’onglet **Création de versions**, puis cliquez sur **Timewarp** (dans la partie inférieure du sidekick). 
+   1. Ouvrez le **Contrôle de version** puis cliquez sur **Timewarp** (près du bas du sidekick).
 
    1. Utilisez la boîte de dialogue du sidekick qui s’affiche après avoir [utilisé le calendrier Timewarp](#using-the-timewarp-calendar).
 

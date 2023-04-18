@@ -1,8 +1,6 @@
 ---
-title: Création de page à partir de fragments de contenu
-seo-title: Page Authoring with Content Fragments
-description: Des fragments de contenu sont créés et gérés sous forme de ressources indépendantes de la page. Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi que des variations.
-seo-description: Content fragments are created and managed as page-independent assets. They allow you to create channel-neutral content, together with variations.
+title: Création de pages avec des fragments de contenu
+description: Les fragments de contenu sont créés et gérés en tant que ressources indépendantes de la page. Ils vous permettent de créer du contenu neutre pour les canaux, ainsi que des variantes.
 page-status-flag: de-activated
 uuid: 8e3bb1bc-8720-48e2-8d06-98fbab4dd4fd
 contentOwner: Chris Bohnert
@@ -11,10 +9,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '110'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 50%
 
 ---
 
@@ -26,6 +24,6 @@ Ils vous permettent de créer du contenu compatible avec tous les canaux, ainsi 
 
 >[!CAUTION]
 >
->Les fonctionnalités de gestion des fragments de contenu ne sont pas toutes disponibles dans l’IU classique. Consultez [Création de page à partir de fragments de contenu](/help/sites-authoring/content-fragments.md) dans la documentation de création standard.
+>La fonctionnalité complète de la gestion des fragments de contenu n’est pas disponible dans l’IU classique. Consultez [Création de page à partir de fragments de contenu](/help/sites-authoring/content-fragments.md) dans la documentation de création standard.
 >
->Le composant Fragment de contenu apparaît dans le sidekick de l’IU classique, mais les fonctions associées ne sont pas disponibles.
+>Le composant Fragment de contenu est visible dans le sidekick de l’IU classique, mais d’autres fonctions ne sont pas disponibles.

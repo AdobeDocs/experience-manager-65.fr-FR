@@ -1,9 +1,9 @@
 ---
-title: Notes de mise à jour d’AEM Content and Commerce 2021
-description: Notes de mise à jour d’AEM Content and Commerce 2021
+title: Notes de mise à jour d’AEM Content and Commerce 2020
+description: Notes de mise à jour d’AEM Content and Commerce 2020
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 100%
 
@@ -117,13 +117,13 @@ ht-degree: 100%
 
 * Ajout de la gestion des carnets d’adresses pour permettre aux utilisateurs connectés de gérer leurs adresses.
 
-* L’interface utilisateur de configuration du cloud CIF prend en charge les actions de publication ou d’annulation de la publication.
+* L’interface utilisateur de configuration du cloud CIF prend en charge les actions de publication ou de dépublication.
 
 ### Améliorations {#what-is-improved-july}
 
 * Composant de connexion déplacé vers la liste déroulante utilisateur pour un accès plus facile.
 
-* Simplification du module aem-core-cif-response-components.
+* Simplification du package aem-core-cif-response-components.
 
 * Plusieurs correctifs de bogues.
 

@@ -1,8 +1,6 @@
 ---
 title: Création de pages
-seo-title: Authoring Pages
 description: 'La création avec AEM offre deux vues d’ensemble. (1) Premières étapes pour les auteurs : une introduction pour les nouveaux auteurs et (2) le Guide rapide pour la création de pages : un guide rapide sur les principales actions (dans les grandes lignes).'
-seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -27,9 +25,9 @@ La section suivante fournit un aperçu de la création avec AEM :
 >
 >Cette section couvre les tâches impliquées dans la création d’une page de contenu. <!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
 
-## Aperçu rapide des fonctions utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
+## Présentation rapide des fonctionnalités utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
 
-Afin de vous aider à créer vos pages, l’environnement de création met à votre disposition plusieurs fonctions, notamment :
+Pour vous aider lors de la création de pages, l’environnement de création propose des fonctionnalités telles que :
 
 * **Glisser-déplacer**
 Il est possible de déplacer des composants (texte, image, etc.) et des ressources numériques (images, par exemple) sur la page en les faisant simplement glisser jusqu’à l’emplacement voulu.

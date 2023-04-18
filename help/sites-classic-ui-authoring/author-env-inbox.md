@@ -1,8 +1,6 @@
 ---
 title: Votre boîte de réception
-seo-title: Your Inbox
-description: Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
-seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
+description: Vous pouvez recevoir des notifications de différentes zones d’AEM, telles que des notifications sur des tâches ou des tâches qui représentent des actions que vous devez effectuer sur le contenu de la page.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,27 +9,27 @@ content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 100%
+ht-degree: 22%
 
 ---
 
 # Votre boîte de réception{#your-inbox}
 
-Vous pouvez recevoir des notifications de diverses sections d’AEM, comme des notifications au sujet des tâches correspondant à des opérations que vous devez exécuter sur le contenu de la page.
+Vous pouvez recevoir des notifications de différentes zones d’AEM, telles que des notifications sur des tâches ou des tâches qui représentent des actions que vous devez effectuer sur le contenu de la page.
 
-Ces notifications arrivent dans deux boîtes de réception, en fonction de leur type :
+Vous recevez ces notifications dans deux boîtes de réception, séparées par le type de notification :
 
-* Une boîte de réception dans laquelle parviennent les notifications liées à des abonnements, décrite à la section suivante.
+* Une boîte de réception où vous pouvez voir les notifications que vous recevez suite aux abonnements est décrite dans la section suivante.
 * Une boîte de réception spécialisée pour les éléments de workflow, décrite dans le document [Participer à des workflow](/help/sites-classic-ui-authoring/classic-workflows-participating.md).
 
-## Affichage des notifications {#viewing-your-notifications}
+## Affichage de vos notifications {#viewing-your-notifications}
 
-Pour afficher vos notifications, procédez comme suit :
+Pour afficher vos notifications :
 
-1. Ouvrez la boîte de réception de notifications : dans la console **Sites web**, cliquez sur le bouton de l’utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
+1. Ouvrez la boîte de réception de notification : dans le **Sites web** , cliquez sur le bouton de l’utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -42,7 +40,7 @@ Pour afficher vos notifications, procédez comme suit :
    >
    >` https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Vos notifications sont répertoriées. Vous pouvez agir comme suit :
+1. Vos notifications sont répertoriées. Vous pouvez agir selon vos besoins :
 
    * [Abonnement aux notifications](#subscribing-to-notifications)
    * [Traitement des notifications](#processing-your-notifications)
@@ -51,9 +49,9 @@ Pour afficher vos notifications, procédez comme suit :
 
 ## Souscrire à des notifications {#subscribing-to-notifications}
 
-Pour souscrire à des notifications :
+Pour vous abonner aux notifications :
 
-1. Ouvrez la boîte de réception de notifications : dans la console **Sites web**, cliquez sur le bouton de l’utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
+1. Ouvrez la boîte de réception de notification : dans le **Sites web** , cliquez sur le bouton de l’utilisateur dans le coin supérieur droit, puis sélectionnez **Boîte de réception de notifications**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
@@ -68,47 +66,47 @@ Pour souscrire à des notifications :
 
    ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
-1. Sélectionnez le canal de notification :
+1. Sélectionnez le canal de notification :
 
-   * **Boîte de réception** : les notifications seront affichées dans votre boîte de réception AEM.
-   * **Courrier électronique** : les notifications seront envoyées à l’adresse électronique définie dans votre profil utilisateur.
+   * **Boîte de réception**: les notifications s’affichent dans votre boîte de réception AEM.
+   * **Email**: les notifications seront envoyées par courrier électronique à l’adresse électronique définie dans votre profil utilisateur.
 
    >[!NOTE]
    >
-   >L’envoi de notifications par courrier électronique nécessite la configuration de certains paramètres. Il est également possible de personnaliser le modèle de courrier électronique ou d’ajouter un tel modèle pour une nouvelle langue. Pour configurer des notifications par courrier électronique dans AEM, reportez-vous à la section [Configuration des notifications électroniques](/help/sites-administering/notification.md#configuringemailnotification).
+   >Certains paramètres doivent être configurés pour être avertis par email. Il est également possible de personnaliser le modèle d&#39;email ou d&#39;ajouter un modèle d&#39;email pour une nouvelle langue. Reportez-vous à la section [Configuration des notifications par e-mail](/help/sites-administering/notification.md#configuringemailnotification) pour configurer les notifications électroniques dans AEM.
 
-1. Sélectionnez les actions de page pour lesquelles vous souhaitez recevoir une notification :
+1. Sélectionnez les actions de page pour lesquelles vous souhaitez être averti :
 
-   * Activé : lorsqu’une page a été activée.
-   * Désactivé : lorsqu’une page a été désactivée.
+   * Activé : lorsqu’une page a été activée.
+   * Désactivé : lorsqu’une page a été désactivée.
    * Supprimé (syndication) : lorsqu’une page a fait l’objet d’une réplication de suppression ; en d’autres termes, lorsqu’une action de suppression effectuée sur une page est répliquée.
-Lorsqu’une page est supprimée ou déplacée, une action de suppression est automatiquement répliquée : la page est supprimée sur l’instance source où a été effectuée l’action de suppression et sur l’instance cible définie par les agents de réplication.
+Lorsqu’une page est supprimée ou déplacée, une action de suppression est automatiquement répliquée : la page est supprimée sur l’instance source sur laquelle l’action de suppression a été effectuée, ainsi que sur l’instance de destination définie par les agents de réplication.
 
-   * Modifié : lorsqu’une page a été modifiée.
-   * Créé : lorsqu’une page a été créée.
-   * Supprimé : lorsqu’une page a été supprimée au moyen de l’action de suppression de page.
-   * Déployé : lorsqu’une page a été déployée.
+   * Modifié : lorsqu’une page a été modifiée.
+   * Créé : lorsqu’une page a été créée.
+   * Supprimé : lorsqu’une page a été supprimée via l’action de suppression de page.
+   * Déployé : lorsqu’une page a été déployée.
 
-1. Définissez les chemins d’accès des pages pour lesquelles vous recevrez une notification :
+1. Définissez les chemins d’accès des pages pour lesquelles vous serez averti :
 
    * Cliquez sur **Ajouter** pour ajouter une nouvelle ligne au tableau.
    * Cliquez sur la cellule de tableau **Chemin** et entrez le chemin d’accès, à savoir `/content/docs`.
 
    * Si vous souhaitez être averti pour toutes les pages appartenant à la sous-arborescence, définissez **Exact ?** sur **Non**.
-Si vous souhaitez n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** sur **Oui**.
+Pour n’être averti que pour les actions sur la page définie par le chemin d’accès, définissez **Exact ?** to **Oui**.
 
-   * Pour autoriser la règle, définissez **Règle** sur **Autoriser**. Si cette option est définie sur **Refuser**, la règle est refusée, mais elle n’est pas supprimée. Elle pourra être autorisée ultérieurement.
+   * Pour autoriser la règle, définissez **Règle** to **Autoriser**. Si la variable est définie sur **Refuser**, la règle est refusée, mais pas supprimée et peut être autorisée ultérieurement.
 
-   Pour supprimer une définition, sélectionnez la ligne en cliquant sur une cellule du tableau, puis cliquez sur **Supprimer**.
+   Pour supprimer une définition, sélectionnez la ligne en cliquant sur une cellule de tableau, puis cliquez sur **Supprimer**.
 
 1. Cliquez sur **OK** pour enregistrer la configuration.
 
 ## Traitement des notifications {#processing-your-notifications}
 
-Si vous avez choisi cette option, les notifications seront reçues et stockées dans votre boîte de réception AEM. Vous pouvez [afficher vos notifications](#viewing-your-notifications), puis sélectionner celles qui s’appliquent :
+Si vous avez choisi de recevoir des notifications dans votre boîte de réception AEM, les notifications seront alors ajoutées à votre boîte de réception. Vous pouvez [afficher vos notifications ;](#viewing-your-notifications) sélectionnez ensuite la ou les notifications requises pour :
 
-* Pour les approuver, cliquez sur **Approuver** : la valeur de la colonne **Lire** est alors définie sur **vrai**.
+* Approuvez-le en cliquant sur **Approuver**: la valeur de la variable **Lecture** est définie sur **true**.
 
-* supprimée en cliquant sur **Supprimer**.
+* Pour le supprimer, cliquez sur **Supprimer**.
 
 ![chlimage_1-5](assets/chlimage_1-5.jpeg)

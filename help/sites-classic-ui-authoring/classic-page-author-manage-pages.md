@@ -1,8 +1,6 @@
 ---
 title: Création et organisation des pages
-seo-title: Creating and Organizing Pages
-description: Cette section décrit comment créer et gérer des pages avec AEM pour pouvoir ensuite créer du contenu sur ces pages.
-seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
+description: Cette section décrit comment créer et gérer des pages avec AEM afin que vous puissiez ensuite créer du contenu sur ces pages.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +8,20 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '1910'
+ht-degree: 48%
 
 ---
 
 # Création et organisation des pages{#creating-and-organizing-pages}
 
-Cette section décrit comment créer et gérer des pages avec Adobe Experience Manager (AEM) pour pouvoir ensuite [créer du contenu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) sur ces pages.
+Cette section décrit comment créer et gérer des pages avec Adobe Experience Manager (AEM) afin que vous puissiez ensuite [créer du contenu](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) sur ces pages.
 
 >[!NOTE]
 >
->Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et [des autorisations appropriés](/help/sites-administering/security.md#permissions) sur votre compte pour agir sur les pages, notamment pour créer, copier, déplacer, modifier et supprimer du contenu.
+>Votre compte a besoin de la fonction [droits d’accès appropriés](/help/sites-administering/security.md) et [permissions](/help/sites-administering/security.md#permissions) pour agir sur les pages, par exemple, créer, copier, déplacer, modifier, supprimer.
 >
 >En cas de problème, contactez votre administrateur système.
 
@@ -70,7 +68,7 @@ Vous trouverez ci-dessous un extrait du site Geometrixx ; par exemple, où est 
     /...
 ```
 
-Cette structure est visible à partir de la console Sites Web, que vous pouvez utiliser pour [parcourir l’arborescence](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Cette structure est visible à partir de la console Sites web, que vous pouvez utiliser pour [parcourir l’arborescence](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -86,23 +84,23 @@ Lors de la création d’une page, il y a deux champs clés :
 * **[Nom](#name)** :
 
    * Il est utilisé pour générer l’URI.
-   * L’entrée utilisateur pour ce champ est facultative. Si le nom n’est pas spécifié, il est dérivé du titre.
+   * L’entrée utilisateur pour ce champ est facultative. S’il n’est pas spécifié, le nom est dérivé du titre.
 
 Lors de la création d’une page, AEM [valide le nom de la page en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
 La mise en œuvre et la liste des caractères autorisés diffère légèrement en fonction de l’IU (ils sont plus étendus pour l’IU activée pour les écrans tactiles), mais les caractères autorisés minimum sont les suivants :
 
-* « a » à « z »
-* « A » à « Z »
-* « 0 » à « 9 »
+* &quot;a&quot; à &quot;z&quot;
+* &quot;A&quot; à &quot;Z&quot;
+* &#39;0&#39; à &#39;9&#39;
 * _ (trait de soulignement)
 * `-` (tiret/signe moins)
 
-N’utilisez que ces caractères pour vous assurer qu’ils sont acceptés/utilisés (pour plus d’informations sur tous les caractères autorisés, reportez-vous à la section [Conventions de dénomination](/help/sites-developing/naming-conventions.md)).
+Utilisez uniquement ces caractères si vous souhaitez vous assurer qu’ils sont acceptés/utilisés (si vous avez besoin des détails complets de tous les caractères autorisés, reportez-vous à la section [les conventions de dénomination ;](/help/sites-developing/naming-conventions.md)).
 
 #### Titre {#title}
 
-Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Dans les deux types d’interfaces utilisateur (IU), le champ **Titre** contenant des caractères non valides est accepté, mais le nom est modifié en remplaçant les caractères non valides. Par exemple :
+Si vous n’indiquez qu’un **titre** de page lors de la création d’une page, AEM utilise le **nom** de la page de cette chaîne et [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR. Dans les deux interfaces utilisateur a **Titre** Le champ contenant des caractères non valides sera accepté, mais les caractères non valides seront remplacés pour le nom dérivé. Par exemple :
 
 | Titre | Nom dérivé |
 |---|---|
@@ -122,13 +120,13 @@ Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** 
 >
 >Évitez d’utiliser un code à deux lettres, tel que défini par la norme ISO-639-1, sauf s’il s’agit d’une racine de langue.
 >
->Pour plus d’informations, voir [Préparation du contenu pour la traduction](/help/sites-administering/tc-prep.md).
+>Voir [Préparation du contenu à traduire](/help/sites-administering/tc-prep.md) pour plus d’informations.
 
 ### Modèles {#templates}
 
-Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sera utilisé comme base pour n’importe quelle page créée.
+Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sera utilisé comme base pour toute nouvelle page en cours de création.
 
-Le modèle définit la structure d’une page, notamment une miniature ainsi que d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de sites et les informations de contact. Les modèles sont constitués de [composants](#components).
+Le modèle définit la structure d’une page ; y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les informations de contact. Les modèles se composent de [components](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles proposés dépendent du site web individuel et des informations qui doivent être fournies (lors de la création d’une page) de l’interface utilisée. Les champs clés sont les suivants :
 
@@ -147,9 +145,9 @@ Les composants sont les éléments fournis par AEM afin que vous puissiez ajoute
 
 * Texte
 * Image
-* Diaporama
+* Slideshow
 * Vidéo
-* etc.
+* beaucoup plus
 
 Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), disponibles dans le [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
 
@@ -157,33 +155,33 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 ### Création d’une page {#creating-a-new-page}
 
-Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf si toutes les pages ont été créées au préalable :
+Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à moins que toutes les pages n’aient été créées pour vous à l’avance :
 
-1. Dans la console **Sites web**, sélectionnez le niveau auquel créer une page.
+1. Dans la **Sites web** , sélectionnez le niveau auquel vous souhaitez créer une page.
 
-   Dans l’exemple suivant, vous créez une page sous le niveau **Produits**, affiché dans le volet de gauche ; le volet de droite présente les pages qui existent déjà au niveau situé sous **Produits**.
+   Dans l’exemple suivant, vous créez une page sous le niveau **Produits** - affiché dans le volet de gauche ; le volet de droite affiche les pages qui existent déjà au niveau sous **Produits**.
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. Dans le menu **Nouveau...** (cliquez sur la flèche en regard de **Nouveau...**), puis sélectionnez **Nouvelle page...** La fenêtre **Créer une page** s’ouvre.
+1. Dans le **Nouveau...** (cliquez sur la flèche en regard de l’option **Nouveau...**), sélectionnez **Nouvelle page...**. Le **Créer une page** s’ouvre.
 
-   Le fait de cliquer directement sur **Nouveau...** fait office de raccourci vers l’option **Nouvelle page...**.
+   Cliquer **Nouveau...** agit également comme un raccourci vers la fonction **Nouvelle page...** .
 
-1. La boîte de dialogue **Créer une page** vous permet d’effectuer les opérations suivantes :
+1. Le **Créer une page** vous permet d’effectuer les opérations suivantes :
 
-   * Fournir un **Titre** ; celui-ci est présenté à l’utilisateur.
-   * Fournir un **Nom** ; celui-ci est utilisé pour générer l’URI. Si le nom n’est pas spécifié, il est dérivé du titre.
+   * Fournissez une **Titre**; s’affiche pour l’utilisateur.
+   * Fournissez une **Nom**; il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
 
       * Si vous indiquez le **nom** d’une page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
       * Dans l’IU classique, vous **ne pouvez pas entrer de caractères non valides** dans le champ **Nom**.
-   * Cliquez sur le modèle que vous souhaitez utiliser pour créer la page.
+   * Cliquez sur le modèle à utiliser pour créer la page.
 
-      Le modèle sert de base à la nouvelle page ; pour déterminer, par exemple, la disposition de base d’une page de contenu.
+      Le modèle sert de base à la nouvelle page. par exemple, pour déterminer la mise en page de base d’une page de contenu.
    >[!NOTE]
    >
    >Voir [Conventions de dénomination des pages](#page-naming-conventions).
 
-   Pour créer une page, vous devez disposer au moins du **titre** et du modèle nécessaire.
+   Les informations minimales requises pour créer une page sont les suivantes : **Titre** et le modèle requis.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -191,9 +189,9 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
    >
    >Si vous souhaitez utiliser des caractères Unicode dans les URL, définissez la propriété d’alias (`sling:alias`) ([propriétés de page](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
 
-1. Cliquez sur **Créer** pour créer la page. Vous revenez alors à la console **Sites web** dans laquelle apparaît une entrée pour la nouvelle page.
+1. Cliquez sur **Créer** pour créer la page. Vous revenez au **Sites web** console où vous pouvez voir une entrée pour la nouvelle page.
 
-   Cette console donne des informations sur la page (la date de la dernière modification et la personne responsable, par exemple), lesquelles sont mises à jour suivant les besoins.
+   La console fournit des informations sur la page (par exemple, lorsqu’elle a été modifiée pour la dernière fois et par qui) qui est mise à jour selon les besoins.
 
    >[!NOTE]
    >
@@ -201,79 +199,79 @@ Vous devez créer une page avant de pouvoir commencer à créer du contenu, sauf
 
 ### Ouverture d’une page pour la modifier {#opening-a-page-for-editing}
 
-Vous pouvez ouvrir la page à [modifier](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) de l’une des façons suivantes :
+Vous pouvez ouvrir la page à [modifié](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) par l’une des méthodes suivantes :
 
-* Dans la console **Sites web**, **double-cliquez** sur l’entrée de la page pour l’ouvrir en vue de la modifier.
+* De **Sites web** console, vous pouvez **double-clic** l’entrée de page pour l’ouvrir en vue de la modifier.
 
-* Dans la console **Sites Web**, **cliquez avec le bouton droit** (menu contextuel) sur l’élément de page, puis sélectionnez **Ouvrir** dans le menu.
+* Dans la console **Sites web**, **cliquez avec le bouton droit** (menu contextuel) sur l’élément de page, puis sélectionnez **Ouvrir** dans le menu.
 
 * Après avoir ouvert une page, vous pouvez accéder à d’autres pages du site (en vue de les modifier) en cliquant sur des liens hypertexte.
 
 ### Copier et coller une page {#copying-and-pasting-a-page}
 
-Vous pouvez copier, au choix :
+Lors de la copie, vous pouvez copier :
 
-* une seule page,
-* une page ainsi que toutes ses pages secondaires.
+* une seule page
+* une page ainsi que toutes les sous-pages ;
 
-1. Dans la console **Sites web**, sélectionnez la page à copier.
+1. Dans la **Sites web** , sélectionnez la page à copier.
 
    >[!NOTE]
    >
-   >A ce stade, le fait que vous copiez une seule page ou les sous-pages sous-jacentes n’a pas d’importance.
+   >À ce stade, il n’est pas pertinent de copier une seule page ou les sous-pages sous-jacentes.
 
 1. Cliquez sur **Copier**.
 
-1. Accédez au nouvel emplacement et cliquez ensuite sur :
+1. Accédez au nouvel emplacement et cliquez sur :
 
-   * **Coller** pour coller la page, ainsi que toutes les sous pages.
-   * **Maj + Coller** pour coller uniquement la page sélectionnée.
+   * **Coller** - pour coller la page avec toutes les sous-pages
+   * **Maj + Coller** - pour coller uniquement la page sélectionnée
 
-   La ou les pages sont collées au nouvel emplacement.
-
-   >[!NOTE]
-   >
-   >Il se peut que le nom de la page soit modifié automatiquement si une page existante porte déjà le même nom.
+   Les pages sont collées au nouvel emplacement.
 
    >[!NOTE]
    >
-   >Utilisez l’option **Copier la page** dans l’onglet **Page** du sidekick. Dans la boîte de dialogue qui s’ouvre, vous pouvez spécifier la destination, etc.
+   >Le nom de la page peut être ajusté automatiquement si une page existante porte déjà le même nom.
 
-### Déplacer ou renommer une page {#moving-or-renaming-page}
+   >[!NOTE]
+   >
+   >Utilisez l’option **Copier la page** dans l’onglet **Page** du sidekick. Cela ouvre une boîte de dialogue dans laquelle vous pouvez spécifier la destination, etc.
+
+### Déplacement ou changement de nom de page {#moving-or-renaming-page}
 
 >[!NOTE]
 >
->L’attribution d’un nouveau nom à une page doit elle aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de la page.
+>Le changement de nom d’une page est également soumis au [Conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de page.
 
-La procédure de déplacement d’une page ou de modification du nom est identique. Effectuez la même opération pour :
+La procédure pour déplacer ou renommer une page est la même. Avec la même action, vous pouvez :
 
 * déplacer une page vers un nouvel emplacement ;
 * renommer une page au même emplacement ;
 * déplacer une page vers un nouvel emplacement et la renommer en même temps.
 
-AEM vous offre la possibilité de mettre à jour des liens internes vers la page dont la modification ou le changement de nom est en cours. Vous pouvez procéder page par page afin de bénéficier d’un confort d’utilisation optimal.
+AEM vous offre la possibilité de mettre à jour les liens internes vers la page renommée ou déplacée. Cette opération peut être effectuée page par page afin d’offrir une flexibilité totale.
 
-Pour déplacer ou renommer une page :
+Pour déplacer ou renommer une page :
 
-1. Plusieurs méthodes permettent de déclencher un déplacement :
+1. Plusieurs méthodes permettent de déclencher un déplacement :
 
-   * Dans la console **Sites Web**, cliquez sur la page pour la sélectionner, puis sélectionnez **Déplacer**.
-   * Dans la console **Sites web**, vous pouvez également sélectionner l’élément de page, puis **cliquer avec le bouton droit** et sélectionner **Déplacer**.
-   * Lors de la modification d’une page, sélectionnez **Déplacer la page** dans l’onglet **Page** du sidekick.
+   * Dans la console **Sites web**, cliquez sur la page pour la sélectionner, puis sélectionnez **Déplacer**.
+   * Dans la **Sites web** , vous pouvez également sélectionner l’élément de page, puis **clic droit** et sélectionnez **Déplacer..**
+   * Lorsque vous modifiez une page, vous pouvez sélectionner **Déplacer la page** de la **Page** de l’onglet du sidekick.
 
 1. La fenêtre **Déplacer** s’ouvre ; vous pouvez saisir un nouvel emplacement, un nouveau nom pour la page, ou les deux.
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   Cette fenêtre répertorie également les pages qui font référence à celle en cours de déplacement. En fonction de l’état de la page de référence, vous pourrez peut-être régler ces liens et/ou republier les pages.
+   La page répertorie également toutes les pages qui font référence à la page en cours de déplacement. Selon l’état de la page de référence, vous pouvez ajuster ces liens sur et/ou republier les pages.
 
-1. Complétez les champs suivants, selon le cas :
+1. Renseignez les champs suivants, selon le cas :
 
    * **Destination**
 
-      Utilisez le sitemap (disponible dans la liste déroulante) pour sélectionner la destination de la page.
+      Utilisez le plan du site (disponible via le sélecteur déroulant) pour sélectionner l’emplacement où la page doit être déplacée.
 
-      Si vous souhaitez simplement renommer la page, ignorez ce champ.
+      Si vous renommez uniquement la page, ignorez ce champ.
 
    * **Déplacer**
 
@@ -281,13 +279,13 @@ Pour déplacer ou renommer une page :
 
    * **Renommer en**
 
-      Le libellé de page en cours s’affiche par défaut. Indiquez le nouveau libellé de page, s’il y a lieu.
+      Le libellé de la page active s’affiche par défaut. Indiquez le nouveau libellé de page, le cas échéant.
 
    * **Régler**
 
-      Met à jour les liens de la page qui pointent vers la page déplacée : par exemple, si la page A contient des liens vers la page B, AEM ajuste les liens de la page A en cas de déplacement de la page B.
+      Mettez à jour les liens de la page répertoriée qui pointent vers la page déplacée : par exemple, si la page A contient des liens vers la page B, AEM ajuste les liens de la page A au cas où vous déplaceriez la page B.
 
-      Cette option peut être sélectionnée / désélectionnée pour chaque page de référence.
+      Cette option peut être sélectionnée/désélectionnée pour chaque page de référence.
 
    * **Republier**
 
@@ -304,21 +302,21 @@ Pour déplacer ou renommer une page :
 
 ### Suppression d’une page {#deleting-a-page}
 
-1. Vous pouvez supprimer une page à partir de différents emplacements :
+1. Vous pouvez supprimer une page à différents emplacements :
 
-   * Dans la console **Sites web**, cliquez sur la page pour la sélectionner, puis cliquez avec le bouton droit et sélectionnez **Supprimer** dans le menu contextuel.
-   * Dans la console **Sites web**, cliquez sur la page pour la sélectionner, puis sélectionnez **Supprimer** dans le menu de la barre d’outils.
-   * Dans le sidekick, utilisez l’onglet **Page** pour sélectionner **Supprimer la page** ; la page ouverte est alors supprimée.
+   * Dans le **Sites web** console, cliquez pour sélectionner la page, puis cliquez avec le bouton droit et sélectionnez **Supprimer** dans le menu qui s’affiche.
+   * Dans le **Sites web** console, cliquez pour sélectionner la page, puis sélectionnez **Supprimer** dans le menu de la barre d’outils.
+   * Dans le sidekick, utilisez **Page** pour sélectionner **Supprimer la page** : supprime la page actuellement ouverte.
 
-1. Après avoir choisi de supprimer une page, vous devez confirmer la demande (dans la mesure où l’opération est irréversible).
+1. Une fois que vous avez choisi de supprimer une page, vous devez confirmer la requête, car l’action ne peut pas être annulée.
 
    >[!NOTE]
    >
-   >Une fois la suppression effectuée, si la page a été publiée, vous pouvez restaurer la dernière version (ou une version spécifique). Notez cependant que le contenu peut être légèrement différent de votre dernière version si d’autres modifications ont été apportées. Pour plus d’informations, reportez-vous à la section [Restauration de pages](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages).
+   >Après la suppression, si la page a été publiée, vous pouvez restaurer la dernière version (ou une version spécifique), mais cela peut ne pas avoir exactement le même contenu que votre dernière version si d’autres modifications ont été apportées. Voir [Restauration de pages](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) pour plus de détails.
 
 >[!NOTE]
 >
->Si une page est déjà activée, elle est automatiquement désactivée avant d’être supprimée.
+>Si une page est déjà activée, elle est automatiquement désactivée avant suppression.
 
 ### Verrouillage d’une page    {#locking-a-page}
 
@@ -328,9 +326,9 @@ Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-classic-ui-auth
 
 >[!NOTE]
 >
->Les dossiers doivent eux aussi respecter les [conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom du dossier.
+>Les dossiers sont également soumis aux [Conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de dossier.
 
-1. Ouvrez la console **Sites web**, puis accédez à l’emplacement requis.
+1. Ouvrez le **Sites web** et accédez à l’emplacement requis.
 1. Dans le menu **Nouveau...** (cliquez sur la flèche en regard de l’option **Nouveau...**), sélectionnez **Nouveau dossier...**.
 1. La boîte de dialogue **Créer un dossier** s’affiche. Vous pouvez saisir un **nom** et un **titre** :
 

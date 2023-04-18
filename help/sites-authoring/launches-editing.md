@@ -1,8 +1,6 @@
 ---
-title: Modification de lancements
-seo-title: Editing Launches
-description: Après avoir créé un lancement pour votre page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement de la ou des pages.
-seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
+title: Modifier les lancements
+description: Après avoir créé un lancement pour votre page (ou un ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
 uuid: 1f2c2e53-73a3-4bd7-b2c7-425491bc0118
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: ht
-source-wordcount: '525'
-ht-degree: 100%
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 59%
 
 ---
 
@@ -26,7 +24,7 @@ ht-degree: 100%
 Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez modifier le contenu dans la copie de lancement correspondante.
 
 1. Accédez à [Lancement à partir des références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles.
-1. Sélectionnez **Aller à la page** pour ouvrir la page d’édition.
+1. Sélectionner **Accéder à la page** pour ouvrir la page à modifier.
 
 >[!NOTE]
 >
@@ -37,16 +35,16 @@ Après avoir créé un lancement pour une page (ou un jeu de pages), vous pouvez
 
 ### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
-Si votre lancement est basé sur une [Live Copy](/help/sites-administering/msm.md), vous :
+Si votre lancement est basé sur une [Live Copy](/help/sites-administering/msm.md) vous pourrez ensuite :
 
-* verrez des symboles de verrouillage (petits verrous) lors de la modification d’un composant (de son contenu et/ou de ses propriétés).
-* verrez l’onglet **Live Copy** dans **Propriétés de la page**.
+* voir symboles de verrouillage (petits verrous) lorsque vous modifiez un composant (contenu et/ou propriétés).
+* voir la **Live Copy** dans **Propriétés de la page**
 
 Une Live Copy est utilisée pour synchroniser le contenu *depuis* la branche source *vers* votre branche de lancement (afin que votre lancement soit à jour avec les modifications apportées à la source).
 
-Vous pouvez apporter des modifications de la même manière que vous pouvez modifier une Live Copy standard, par exemple :
+Vous pouvez apporter des modifications de la même manière que vous pouvez modifier une Live Copy standard ; par exemple :
 
-* Cliquer sur un cadenas fermé interrompt cette synchronisation et vous permet d’apporter de nouvelles mises à jour au contenu de votre lancement. Une fois le cadenas déverrouillé (ouvert), vos modifications ne seront remplacées par aucune modification effectuée au même emplacement dans la branche de source.
+* Cliquez sur un cadenas fermé pour interrompre cette synchronisation et vous permettre d’apporter de nouvelles mises à jour au contenu de votre lancement. Une fois déverrouillé (ouverture du cadenas), vos modifications ne seront pas remplacées par des modifications effectuées au même emplacement dans la branche source.
 * **Suspendre** (et **Reprendre**) l’héritage pour une page spécifique.
 
 Pour plus d’informations, voir [Modification du contenu d’une Live Copy](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
@@ -55,13 +53,13 @@ Pour plus d’informations, voir [Modification du contenu d’une Live Copy](/h
 
 Pour suivre les modifications que vous avez apportées, vous pouvez afficher le lancement dans **Références** et comparer la page de lancement à sa page source :
 
-1. Dans la console **Sites**, [accédez à la page source de votre lancement et sélectionnez-la](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
-1. Ouvrez le panneau **[Références](/help/sites-authoring/basic-handling.md#references)** et sélectionnez **Lancements**.
-1. Sélectionnez votre lancement spécifique, puis **Comparer à la source** :
+1. Dans le **Sites** console, [accédez à la page source de votre lancement et sélectionnez-la.](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources).
+1. Ouvrez le **[Références](/help/sites-authoring/basic-handling.md#references)** et sélectionnez **Lancements**.
+1. Sélectionnez votre lancement spécifique, puis **Comparaison avec la source**:
 
    ![screen-shot_2019-03-05at121952](assets/screen-shot_2019-03-05at121952.png)
 
-1. Les deux pages (de lancement et source) s’ouvrent côte à côte.
+1. Les deux pages (lancement et source) s’ouvrent côte à côte.
 
    Pour des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-authoring/page-diff.md).
 
@@ -71,7 +69,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
 
 1. Accédez au lancement et sélectionnez-le depuis, au choix :
 
-   * la [console Lancements](/help/sites-authoring/launches.md#the-launches-console) :
+   * la valeur [Console de lancements](/help/sites-authoring/launches.md#the-launches-console):
 
       * Sélectionnez **Modifier**.
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
@@ -84,7 +82,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
 
    >[!NOTE]
    >
-   >Pour ajouter des pages à un lancement, celles-ci doivent se trouver sous une racine de langue commune (c’est-à-dire, sur un seul site).
+   >Pour ajouter des pages à un lancement, elles doivent se trouver sous une racine de langue commune ; c’est-à-dire sur un seul site.
 
 ## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 
@@ -92,9 +90,9 @@ Vous pouvez à tout moment modifier les propriétés d’un lancement :
 
 1. Accédez au lancement et sélectionnez-le depuis, au choix :
 
-   * la [console Lancements](/help/sites-authoring/launches.md#the-launches-console) :
+   * la valeur [Console de lancements](/help/sites-authoring/launches.md#the-launches-console):
 
-      * Sélectionnez **Propriétés**.
+      * Sélectionner **Propriétés**.
    * [Références (console Sites)](/help/sites-authoring/launches.md#launches-in-references-sites-console) pour afficher les actions disponibles :
 
       * Sélectionnez **Modifier les propriétés**.

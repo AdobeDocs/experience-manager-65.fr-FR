@@ -1,8 +1,6 @@
 ---
 title: Génération de modèles automatique
-seo-title: Scaffolding
-description: Dans certains cas, il arrive que vous deviez créer un jeu volumineux dont les pages partagent la même structure, mais présentent un contenu différent. En mode Génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
-seo-description: Sometimes you may need to create a large set of pages that share the same structure but have differing content. With scaffolding you can create a form (a scaffold) with fields that reflect the structure you want for your pages and then use this form to easily create pages based on this structure.
+description: Il peut arriver que vous deviez créer un grand ensemble de pages partageant la même structure mais ayant un contenu différent. Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.
 uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,18 +9,18 @@ topic-tags: site-features
 discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 100%
+ht-degree: 41%
 
 ---
 
 # Génération de modèles automatique{#scaffolding}
 
-Dans certains cas, il arrive que vous deviez créer un jeu volumineux dont les pages partagent la même structure, mais présentent un contenu différent. Si vous utilisez l’interface AEM standard, vous devez créer chaque page, y faire glisser les composants appropriés, puis compléter chacune d’elles séparément.
+Il peut arriver que vous deviez créer un grand ensemble de pages partageant la même structure mais ayant un contenu différent. Par le biais de l’interface d’AEM standard, vous devez créer chaque page, faire glisser les composants appropriés sur la page et remplir chacune d’elles individuellement.
 
-En mode Génération de modèles automatique, vous pouvez créer un formulaire (que l’on désigne sous le nom de modèle automatique) dont les champs représentent la structure souhaitée pour vos pages, puis l’utiliser afin de créer aisément des pages sur la base de cette structure.
+Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.
 
 >[!NOTE]
 >
@@ -32,9 +30,9 @@ En mode Génération de modèles automatique, vous pouvez créer un formulaire (
 
 Les modèles automatiques sont stockés dans la console **Outils** de l’administrateur du site.
 
-* Ouvrez la console **Outils** et cliquez sur **Génération de modèles automatique de page par défaut**.
-* Cliquez ensuite sur **geometrixx**.
-* Sous **geometrixx**, une *page de modèles automatiques* intitulée **Actualités** est disponible. Double-cliquez sur cette page pour l’ouvrir.
+* Ouvrez le **Outils** puis cliquez sur **Génération de modèles automatique de page par défaut**.
+* Sous ce clic, **geometrixx**.
+* Sous **geometrixx** vous trouverez un *page scaffold* appelé **News**. Double-cliquez pour ouvrir cette page.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
@@ -42,23 +40,23 @@ Le modèle automatique est constitué d’un formulaire avec un champ pour chaqu
 
 ![pageprops](assets/pageprops.png)
 
-Les propriétés de la page de génération de modèles automatique sont les suivantes :
+Les propriétés de la page de génération de modèles automatique sont les suivantes :
 
-* **Texte du titre** : il s’agit du nom de la page de génération de modèles automatique proprement dite. Dans cet exemple, elle se nomme « Actualités ».
-* **Description** : cette description s’affiche sous le titre de la page de génération de modèles automatique.
-* **Modèle cible** : modèle que ce modèle automatique utilisera lors de la création d’une page. Dans cet exemple, il s’agit d’un modèle *Page de contenu Geometrixx*.
-* **Tracé de destination** : il s’agit du chemin de la page parente sous lequel ce modèle automatique créera des pages. Dans cet exemple, le chemin d’accès est */content/geometrixx/en/news*.
+* **Texte du titre**: Il s’agit du nom de cette page de génération de modèles automatique. Dans cet exemple, il s’appelle &quot;News&quot;.
+* **Description**: Celui-ci s’affiche sous le titre de la page de génération de modèles automatique.
+* **Modèle cible**: Il s’agit du modèle que ce modèle automatique utilisera lors de la création d’une page. Dans cet exemple, il s’agit d’une *Page de contenu Geometrixx* modèle.
+* **Chemin cible**: Il s’agit du chemin d’accès de la page parente au-dessous de laquelle ce modèle automatique créera de nouvelles pages. Dans cet exemple, le chemin d’accès est */content/geometrixx/en/news*.
 
 Le contenu du modèle automatique est le formulaire. Lorsqu’un utilisateur souhaite crée une page à l’aide du modèle automatique, il remplit le formulaire et clique sur *Créer*, au bas du formulaire. Dans l’exemple **Actualités** ci-dessus, le formulaire se compose des champs suivants :
 
-* **Titre** : il s’agit du nom de la page à créer. Ce champ est présent sur chaque modèle automatique.
-* **Texte** : ce champ correspond à un composant Texte sur la page qui en résulte.
+* **Titre**: Il s’agit du nom de la page à créer. Ce champ est toujours présent sur chaque modèle automatique.
+* **Texte**: Ce champ correspond à un composant Texte sur la page résultant du processus.
 * **Image** : ce champ correspond à un composant Image sur la page qui en résulte.
-* **Image / Avancé** : **Titre** : titre de l’image.
-* **Image / Avancé** : **Texte de remplacement** : texte de remplacement pour l’image.
+* **Image/Avancé**: **Titre**: Titre de l’image.
+* **Image/Avancé**: **Texte de remplacement**: Texte secondaire de l’image.
 * **Image / Avancé** : **Description** : description de l’image.
-* **Image / Avancé** : **Taille** : taille de l’image.
-* **Tags / Mots-clés** : métadonnées à affecter à cette page. Ce champ est présent sur chaque modèle automatique.
+* **Image/Avancé**: **Taille**: Taille de l’image.
+* **Balises/Mots-clés**: Métadonnées à attribuer à cette page. Ce champ est toujours présent sur chaque modèle automatique.
 
 ### Création d’un modèle automatique {#creating-a-scaffold}
 
@@ -70,15 +68,15 @@ Vous devez ensuite définir la structure de la page qui sera créée par ce mod�
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-Utilisez l’éditeur de boîte de dialogue pour définir les propriétés qui seront générées chaque fois qu’une page sera créée à l’aide de ce modèle automatique.
+À l’aide de l’éditeur de boîte de dialogue, spécifiez les propriétés qui seront créées chaque fois qu’une nouvelle page est créée à l’aide de ce modèle automatique.
 
-La définition de la boîte de dialogue d’un modèle automatique fonctionne de la même manière que celle d’un composant (voir [Composants](/help/sites-developing/components.md)). On remarque cependant quelques différences de taille :
+La définition de boîte de dialogue d’un modèle automatique fonctionne de la même manière que celle d’un composant (voir [Composants](/help/sites-developing/components.md)). Toutefois, quelques différences importantes s’appliquent :
 
-* Les définitions des boîtes de dialogue de composant sont rendues comme des boîtes de dialogue normales (comme illustré dans le volet du milieu de l’éditeur, par exemple). Les définitions des boîtes de dialogue de modèle automatique, en revanche, bien qu’elles apparaissent comme des boîtes de dialogue normales dans l’éditeur, sont rendues sur la page de modèle automatique sous la forme d’un formulaire de modèle automatique (comme illustré dans le modèle automatique **Actualités** ci-dessus).
-* Les boîtes de dialogue de composant proposent uniquement des champs pour les valeurs requises dans le cadre de la définition du contenu d’un seul composant spécifique. Une boîte de dialogue de modèle automatique doit fournir des champs pour chaque propriété, dans tous les paragraphes de la page à créer.
-* Dans le cas des boîtes de dialogue de composant, le composant utilisé pour le rendu du contenu spécifié est implicite. Par conséquent, la propriété `sling:resourceType` du paragraphe est complétée automatiquement lors de la création du paragraphe. Avec un modèle automatique, toutes les informations qui définissent à la fois le contenu et le composant affecté pour un paragraphe donné doivent être fournies par la boîte de dialogue proprement dite. Dans les boîtes de dialogue de modèle automatique, ces informations doivent être fournies en utilisant des champs *Masqué* afin de les rendre disponibles lors de la création de la page.
+* Les définitions de boîte de dialogue de composant sont rendues comme des boîtes de dialogue normales (comme illustré dans le volet central de l’éditeur de boîte de dialogue, par exemple), tandis que les définitions de boîte de dialogue de modèle automatique, bien qu’elles apparaissent comme des boîtes de dialogue normales dans l’éditeur de boîte de dialogue, sont rendues sur la page de modèle automatique sous la forme d’un formulaire de modèle automatique (comme illustré dans la section **News** scaffold ci-dessus).
+* Les boîtes de dialogue de composant ne contiennent que les champs nécessaires pour définir le contenu d’un seul composant spécifique. Une boîte de dialogue de modèle automatique doit fournir des champs pour chaque propriété de chaque paragraphe de la page à créer.
+* Dans le cas des boîtes de dialogue de composant, le composant utilisé pour le rendu du contenu spécifié est implicite. Par conséquent, la propriété `sling:resourceType` du paragraphe est complétée automatiquement lors de la création du paragraphe. Avec un modèle automatique, toutes les informations définissant le contenu et le composant affecté pour un paragraphe donné doivent être fournies par la boîte de dialogue elle-même. Dans les boîtes de dialogue de modèle automatique, ces informations doivent être fournies en utilisant *Masqué* champs pour envoyer ces informations lors de la création de la page.
 
-Pour bien comprendre ce procédé, observez la boîte de dialogue **Actualités** dans l’éditeur de boîte de dialogue. Basculez vers le mode de conception sur la page de modèle automatique et cliquez sur le lien de l’éditeur de boîte de dialogue.
+Un aperçu de l’exemple **News** la boîte de dialogue scaffold dans l’éditeur de boîte de dialogue permet d’expliquer comment cela fonctionne. Passez en mode de conception sur la page du modèle automatique, puis cliquez sur le lien de l’éditeur de boîte de dialogue.
 
 Cliquez à présent sur le champ de dialogue **Dialogue > Volet Onglets > Texte > Texte**, comme illustré ci-dessous :
 
@@ -88,20 +86,20 @@ La liste des propriétés de ce champ s’affiche sur le côté droit de l’éd
 
 ![list_of_properties](assets/list_of_properties.png)
 
-Notez la propriété name de ce champ. Elle porte la valeur suivante :
+Notez la propriété name de ce champ. Il a la valeur
 
 `./jcr:content/par/text/text`
 
-Il s’agit du nom de la propriété sur laquelle le contenu de ce champ sera écrit lorsque le modèle automatique sera utilisé pour créer une page. La propriété est indiquée comme chemin relatif à partir du nœud représentant la page à créer. Elle précise la propriété text, sous le nœud text, lequel se situe sous le nœud par, qui est lui-même un enfant du nœud jcr:content situé sous le nœud de page.
+Il s’agit du nom de la propriété à laquelle le contenu de ce champ sera écrit lorsque le modèle automatique est utilisé pour créer une page. La propriété est indiquée comme chemin relatif à partir du noeud représentant la page à créer. Il spécifie le texte de propriété, sous le texte du noeud, qui se trouve sous le noeud par, qui est lui-même un enfant du noeud jcr:content sous le noeud de page.
 
-Cela définit l’emplacement du stockage de contenu pour le texte qui sera saisi dans ce champ. Cependant, il convient également de spécifier deux caractéristiques supplémentaires pour ce contenu :
+Cela définit l’emplacement de stockage du contenu pour le texte qui sera saisi dans ce champ. Cependant, nous devons également spécifier deux caractéristiques supplémentaires pour ce contenu :
 
-* Le fait que la chaîne en cours de stockage doive être interprétée comme *rich text* et
-* le composant à utiliser pour rendre ce contenu sur la page qui en résulte.
+* Le fait que la chaîne en cours de stockage ici doit être interprétée comme *texte enrichi*, et
+* le composant à utiliser pour effectuer le rendu de ce contenu sur la page résultant du processus.
 
-Notez que, dans une boîte de dialogue de composant normale, vous ne devez pas spécifier ces informations, car elles sont implicites ; en ce sens, que la boîte de dialogue est déjà liée à un composant spécifique.
+Notez que dans une boîte de dialogue de composant normale, vous n’avez pas à spécifier ces informations, car elles sont implicites dans le fait que la boîte de dialogue est déjà liée à un composant spécifique.
 
-Pour spécifier ces deux informations, vous devez utiliser des champs masqués. Cliquez sur le premier champ masqué **Dialogue > Volet Onglets > Texte > Masqué**, comme illustré ci-dessous :
+Pour spécifier ces deux informations, vous utilisez des champs masqués. Cliquez sur le premier champ masqué **Dialogue > Volet Onglets > Texte > Masqué**, comme illustré ci-dessous :
 
 ![hidden](assets/hidden.png)
 
@@ -119,9 +117,9 @@ Puisque nous savons que le texte doit être interprété comme texte enrichi, no
 
 >[!CAUTION]
 >
->L’éditeur de boîte de dialogue permet à l’utilisateur de modifier les valeurs des propriétés *existantes* dans la définition de la boîte de dialogue. Pour ajouter une nouvelle propriété, l’utilisateur doit utiliser [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Par exemple, lorsqu’un nouveau champ masqué est ajouté à une définition de boîte de dialogue à l’aide de l’éditeur, il est dépourvu de la propriété *value* (c’est-à-dire, une propriété dont le nom est « value »). Si le champ masqué en question nécessite la définition d’une propriété *value* par défaut, cette dernière doit être ajoutée manuellement à l’aide de l’un des outils CRX. La valeur ne peut pas être ajoutée avec l’éditeur de boîte de dialogue proprement dit. Cependant, une fois la propriété présente, sa valeur peut être modifiée à l’aide de l’éditeur.
+>L’éditeur de boîte de dialogue permet à l’utilisateur de modifier les valeurs des propriétés *existantes* dans la définition de la boîte de dialogue. Pour ajouter une nouvelle propriété, l’utilisateur doit utiliser [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Par exemple, lorsqu’un nouveau champ masqué est ajouté à une définition de boîte de dialogue à l’aide de l’éditeur de boîte de dialogue, il n’a pas de *value* (c’est-à-dire, une propriété nommée &quot;valeur&quot;). Si le champ masqué en question nécessite une valeur par défaut *value* pour être définie, cette propriété doit être ajoutée manuellement avec l’un des outils CRX. La valeur ne peut pas être ajoutée avec l’éditeur de boîte de dialogue lui-même. Cependant, une fois la propriété présente, sa valeur peut être modifiée à l’aide de l’éditeur de boîte de dialogue.
 
-Vous pouvez afficher le second champ masqué en cliquant sur celui-ci comme ceci :
+Le second champ masqué est visible en cliquant dessus comme suit :
 
 ![hidden2](assets/hidden2.png)
 
@@ -154,9 +152,9 @@ Ces deux indications montrent que le composant ne peut pas être publié, tant q
 
 >[!NOTE]
 >
->C’est comparable aux [composants hérités lors de l’édition du contenu de la page](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
+>Cela peut être comparé à [composants hérités lors de la modification du contenu de la page](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui).
 
-Cliquez sur le cadenas ou sur l’icône représentant une image pour annuler l’héritage :
+Cliquez sur le symbole de verrouillage ou sur l’icône d’image pour rompre l’héritage :
 
 * Le symbole se transforme en cadenas ouvert. 
 * Une fois déverrouillé, vous pouvez modifier le contenu.

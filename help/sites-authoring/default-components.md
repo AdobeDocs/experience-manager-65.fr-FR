@@ -1,8 +1,6 @@
 ---
-title: Composants
-seo-title: Components
-description: AEM est fourni avec tout un éventail de composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites Web.
-seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
+title: Composants par défaut
+description: Adobe Experience Manager est fourni avec divers composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web.
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 65%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 100%
 
 Adobe Experience Manager (AEM) est fourni avec divers composants prêts à l’emploi qui procurent des fonctionnalités complètes aux créateurs de sites web. Ils sont disponibles lors de la [modification d’une page](/help/sites-authoring/editing-content.md) et sont regroupés par domaine fonctionnel principal (appelé groupe de composants) pour faciliter le filtrage.
 
-Les composants sont disponibles lors de la [modification d’une page](/help/sites-authoring/editing-content.md). Pour faciliter le filtrage, les composants sont regroupés par domaine fonctionnel principal (c’est-à-dire par groupe de composants).
+Les composants sont disponibles lorsque [modification d’une page](/help/sites-authoring/editing-content.md). Pour faciliter le filtrage, les composants sont regroupés par domaine fonctionnel principal (c’est-à-dire par groupe de composants).
 
 >[!NOTE]
 >
@@ -31,9 +29,9 @@ Les composants sont disponibles lors de la [modification d’une page](/help/sit
 
 ## Utilisation générale {#general-usage}
 
-Les composants sont disponibles dans l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page](/help/sites-authoring/editing-content.md).
+Les composants sont disponibles sur la page **Composants** dans le panneau latéral de l’éditeur de page lorsque [modification d’une page](/help/sites-authoring/editing-content.md).
 
-Vous pouvez sélectionner un composant et le faire glisser jusqu’à l’emplacement de votre choix sur la page. Vous pouvez ensuite le modifier à l’aide des options suivantes :
+Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page. Vous pouvez ensuite la modifier à l’aide de :
 
 * [Configurer les propriétés](/help/sites-authoring/editing-page-properties.md)
 * [Modifier le contenu](/help/sites-authoring/editing-content.md)
@@ -47,11 +45,11 @@ Les composants sont regroupés dans diverses catégories appelées groupes de co
 
 * **Commerce We.Retail** : inclut des composants de commerce tels que des cartes et grilles de produits.
 
-* **Général** : inclut le conteneur de mise en page et le composant Fragment d’expérience
+* **Général**: Inclut le conteneur de mises en page et le fragment d’expérience
 
 ## Présentation de tous les composants {#overview-of-all-components}
 
-La [console des composants](/help/sites-authoring/default-components-console.md) présente une vue d’ensemble des groupes de composants et des composants fournis par votre installation d’AEM. Vous pouvez afficher des informations clés sur des composants spécifiques et leur utilisation.
+Le [Console Composants](/help/sites-authoring/default-components-console.md) donne un aperçu des groupes de composants, et des composants, fournis par votre installation AEM. Vous pouvez afficher des informations clés sur des composants spécifiques et leur utilisation.
 
 ## Composants – Principaux domaines {#components-major-areas}
 
@@ -65,7 +63,7 @@ Les pages suivantes fournissent des liens vers des informations supplémentaires
 
 ### Configuration des composants {#configuring-components}
 
-Outre les composants auxquels les auteurs peuvent avoir accès dans une installation standard, divers autres composants sont également disponibles.
+Outre les composants auxquels les auteurs peuvent accéder dans une installation standard, divers autres composants sont également disponibles.
 
 * Si votre page est basée sur un modèle modifiable recommandé, vous pouvez [modifier le modèle](/help/sites-authoring/templates.md) pour activer/désactiver ces composants et modifier les paramètres d’éléments spécifiques.
 * Si votre page est basée sur un modèle statique, vous pouvez utiliser le [mode de conception](/help/sites-authoring/default-components-designmode.md#enable-disable-components) pour activer/désactiver ces composants et modifier les paramètres d’éléments spécifiques.
