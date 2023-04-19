@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 61%
+source-wordcount: '2230'
+ht-degree: 60%
 
 ---
 
@@ -264,7 +264,7 @@ Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez l
 
 ## Informations sur la page {#page-information}
 
-L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fournit également des détails sur la dernière modification et la dernière publication. Selon les caractéristiques de la page, de son site et de votre instance, d’autres options peuvent être disponibles :
+Le bouton Informations sur la page (icône d’égaliseur) ouvre un menu qui fournit également des détails sur la dernière modification et la dernière publication. Selon les caractéristiques de la page, de son site et de votre instance, d’autres options peuvent être disponibles :
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -277,7 +277,7 @@ L’icône Informations sur la page (icône d’égaliseur) ouvre un menu qui fo
 * [Modifier le modèle](/help/sites-authoring/templates.md) ; si la page est basée sur un [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates).
 
 * [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
-* [Afficher en administrateur](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* Afficher dans Admin ; ouvre la page dans le [console Sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Aide](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Par exemple, le cas échéant, **Informations sur la page** propose également les options suivantes :
