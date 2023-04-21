@@ -15,7 +15,7 @@ feature: Security
 source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
 source-wordcount: '3025'
-ht-degree: 34%
+ht-degree: 54%
 
 ---
 
@@ -33,9 +33,9 @@ Cette section traite des différentes étapes à suivre pour s’assurer que vot
 
 ## Principales mesures de sécurité {#main-security-measures}
 
-### Exécution de AEM en mode Prêt pour la production {#run-aem-in-production-ready-mode}
+### Exécuter AEM en mode Prêt pour la production {#run-aem-in-production-ready-mode}
 
-Pour plus d’informations, voir [Exécution d’AEM en mode Prêt pour la production](/help/sites-administering/production-ready.md).
+Pour plus d’informations, reportez-vous à la section [Exécution d’AEM en mode Prêt pour la production](/help/sites-administering/production-ready.md).
 
 ### Activation du protocole HTTPS pour la sécurité des couches de transfert {#enable-https-for-transport-layer-security}
 
@@ -47,9 +47,9 @@ Pour une instance sécurisée, il est obligatoire d’activer la couche de trans
 
 ### Installation des correctifs de sécurité {#install-security-hotfixes}
 
-Assurez-vous d’avoir installé la dernière [Correctifs de sécurité fournis par Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
+Assurez-vous d’avoir installé les derniers [correctifs de sécurité fournis par Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr).
 
-### Modification des mots de passe par défaut pour les comptes d’administration de la console OSGi et AEM {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Modifier les mots de passe par défaut pour les comptes d’administration de console OSGi et AEM {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 Adobe recommande, après l’installation, de modifier le mot de passe pour les [**AEM** `admin` comptes](#changing-the-aem-admin-password) (sur toutes les instances).
 
@@ -65,48 +65,48 @@ Ces comptes sont les suivants :
 
 Ces deux comptes utilisent des informations d’identification distinctes. Il est essentiel d’utiliser des mots de passe sécurisés distincts pour un déploiement sécurisé.
 
-#### Modification du mot de passe administrateur AEM {#changing-the-aem-admin-password}
+#### Modification du mot de passe d’administrateur AEM {#changing-the-aem-admin-password}
 
-Le mot de passe du compte administrateur AEM peut être modifié via le [Opérations Granite - Utilisateurs](/help/sites-administering/granite-user-group-admin.md) console.
+Le mot de passe du compte administrateur AEM peut être modifié via la console [Opérations Granite - Utilisateurs](/help/sites-administering/granite-user-group-admin.md).
 
 Vous pouvez modifier le compte `admin` et [modifier le mot de passe](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
 
 >[!NOTE]
 >
->La modification du compte administrateur modifie également le compte de la console web OSGi. Après avoir modifié le compte administrateur, vous devez modifier le compte OSGi en un autre compte.
+>La modification du compte administrateur modifie également le compte de la console web OSGi. Après avoir modifié le compte administrateur, vous devez modifier le compte OSGi.
 
 #### Importance de la modification du mot de passe de la console web OSGi {#importance-of-changing-the-osgi-web-console-password}
 
 En plus du compte `admin` d’AEM, si vous ne modifiez pas le mot de passe par défaut du mot de passe de la console web OSGi, cela peut entraîner :
 
-* Exposition du serveur avec un mot de passe par défaut au démarrage et à l’arrêt (ce qui peut prendre des minutes pour les serveurs volumineux) ;
-* Exposition du serveur lorsque le référentiel est en panne/redémarrage du lot - et qu’OSGI est en cours d’exécution.
+* Exposition du serveur avec un mot de passe par défaut au démarrage et à l’arrêt (ce qui peut prendre quelques minutes pour les serveurs volumineux) ;
+* Exposition du serveur lorsque le référentiel est en panne ou qu’il redémarre le bundle - et qu’OSGI est en cours d’exécution.
 
-Pour plus d’informations sur la modification du mot de passe de la console web, voir [Modification du mot de passe administrateur de la console web OSGi](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) ci-dessous.
+Pour plus d’informations sur la modification du mot de passe de la console Web, reportez-vous à la section [Modification du mot de passe d’administrateur de la console Web OSGi](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) ci-dessous.
 
-#### Modification du mot de passe administrateur de la console web OSGi {#changing-the-osgi-web-console-admin-password}
+#### Modification du mot de passe d’administrateur de la console Web OSGi {#changing-the-osgi-web-console-admin-password}
 
 Modifiez le mot de passe utilisé pour accéder à la console Web. Utilisez une [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour mettre à jour les propriétés suivantes de la variable **Console de gestion OSGi Apache Felix**:
 
 * **Nom d’utilisateur** et **Mot de passe**, les informations d’identification pour accéder à la console de gestion web Apache Felix.
-Le mot de passe doit être modifié. *after* l’installation initiale pour garantir la sécurité de votre instance.
+Le mot de passe doit être modifié *après* l’installation initiale pour garantir la sécurité de votre instance.
 
 >[!NOTE]
 >
->Voir [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration des paramètres OSGi.
+>Reportez-vous à la section [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) pour plus d’informations sur la configuration des paramètres OSGi.
 
 **Modification du mot de passe administrateur de la console web OSGi**:
 
-1. En utilisant la variable **Outils**, **Opérations** , ouvrez le menu **Console web** et accédez au **Configuration** .
-Par exemple, à l’adresse `<server>:<port>/system/console/configMgr`.
-1. Accédez à l’entrée et ouvrez-la pour **Console de gestion OSGi Apache Felix**.
-1. Modifiez la variable **nom d’utilisateur** et **password**.
+1. À l’aide du menu **Outils**, **Opérations**, ouvrez la **console Web** et accédez à la section **Configuration**.
+Par exemple, à `<server>:<port>/system/console/configMgr`.
+1. Accédez à l’entrée pour la **console de gestion OSGi Apache Felix** et ouvrez-la.
+1. Modifiez le **nom d’utilisateur** et le **mot de passe**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
 1. Sélectionnez **Enregistrer**.
 
-### Mise en oeuvre d’un gestionnaire d’erreurs personnalisé {#implement-custom-error-handler}
+### Mettre en oeuvre un gestionnaire d’erreurs personnalisé {#implement-custom-error-handler}
 
 Adobe recommande de définir des pages de gestionnaire d’erreurs personnalisées, en particulier pour les codes de réponse HTTP 404 et 500, afin d’éviter la divulgation d’informations.
 
@@ -114,31 +114,31 @@ Adobe recommande de définir des pages de gestionnaire d’erreurs personnalisé
 >
 >Voir [Comment créer des scripts personnalisés ou des gestionnaires d’erreurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) pour plus d’informations.
 
-### Liste de contrôle de sécurité complète de Dispatcher {#complete-dispatcher-security-checklist}
+### Compléter la liste de contrôle de sécurité de Dispatcher {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher est un élément essentiel de votre infrastructure. Adobe vous recommande de terminer la [Liste de contrôle de sécurité de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
 
 >[!CAUTION]
 >
->Avec Dispatcher, vous devez désactiver le sélecteur &quot;.form&quot;.
+>Avec Dispatcher, vous devez désactiver le sélecteur « form ».
 
 ## Étapes de vérification {#verification-steps}
 
-### Configuration des utilisateurs de réplication et de transport {#configure-replication-and-transport-users}
+### Configurer les utilisateurs et utilisatrices de réplication et de transfert {#configure-replication-and-transport-users}
 
-L’installation AEM standard spécifie `admin` comme utilisateur des informations d’identifications de transfert dans les [agents de réplication](/help/sites-deploying/replication.md) par défaut. En outre, l’utilisateur administrateur est utilisé pour la source de la réplication sur le système de création.
+L’installation AEM standard spécifie `admin` comme utilisateur des informations d’identifications de transfert dans les [agents de réplication](/help/sites-deploying/replication.md) par défaut. En outre, l’utilisateur administrateur ou l’utilisatrice administratrice est utilisé(e) pour obtenir la réplication sur le système de création.
 
-Pour des raisons de sécurité, ces deux éléments doivent être modifiés afin de tenir compte du cas d’utilisation particulier en question, en tenant compte des deux aspects suivants :
+Pour des raisons de sécurité, ces deux éléments doivent être modifiés afin de tenir compte du cas d’utilisation particulier en question, en prenant en considération les deux aspects suivants :
 
-* Le **utilisateur du transport** ne doit pas être l’utilisateur administrateur. Configurez plutôt un utilisateur sur le système de publication qui n’a accès qu’aux parties pertinentes du système de publication et qui utilise les informations d’identification de cet utilisateur pour le transport.
+* Le **utilisateur du transport** ne doit pas être l’utilisateur administrateur. Configurez plutôt un utilisateur ou une utilisatrice sur le système de publication qui n’a accès qu’aux parties pertinentes du système de publication et qui utilise les informations d’identification de cet utilisateur ou de cette utilisatrice pour le transfert.
 
    Vous pouvez partir de l’utilisateur de réception de la réplication en lot et configurer les droits d’accès de cet utilisateur afin qu’ils correspondent à votre situation.
 
 * Le **utilisateur de réplication** ou **Agent User Id** ne doit pas être l’utilisateur administrateur, mais un utilisateur qui ne peut voir que le contenu répliqué. L’utilisateur de la réplication permet de collecter le contenu à répliquer sur le système de création avant de l’envoyer au système de publication.
 
-### Vérification des contrôles de l’intégrité de la sécurité du tableau de bord des opérations {#check-the-operations-dashboard-security-health-checks}
+### Vérifier les contrôles de l’intégrité de la sécurité du tableau de bord des opérations {#check-the-operations-dashboard-security-health-checks}
 
-AEM 6 introduit le nouveau tableau de bord des opérations, destiné à aider les opérateurs système à résoudre les problèmes et à surveiller l’intégrité d’une instance.
+AEM 6 présente le nouveau tableau de bord des opérations, destiné à aider les opérateurs système à résoudre les problèmes et à surveiller l’intégrité d’une instance.
 
 Le tableau de bord est accompagné également d’une série de contrôles de l’intégrité de la sécurité. Il est recommandé de contrôler le statut de tous les contrôles d’intégrité de la sécurité avant de les publier grâce à votre instance de production. Pour plus d’informations, consultez la [documentation du tableau de bord des opérations](/help/sites-administering/operations-dashboard.md).
 
@@ -152,21 +152,21 @@ Tous les exemples de contenu et d’utilisateurs (par exemple, le projet de Geom
 
 Voir [Utilisation De Packages](package-manager.md).
 
-### Vérifiez si les lots de développement CRX sont présents {#check-if-the-crx-development-bundles-are-present}
+### Vérifier si les bundles de développement CRX sont présents {#check-if-the-crx-development-bundles-are-present}
 
-Ces lots OSGi de développement doivent être désinstallés sur les systèmes de création et de publication productifs avant de les rendre accessibles.
+Ces bundles OSGi de développement doivent être désinstallés sur les systèmes de création et de publication productifs avant de les rendre accessibles.
 
-* Adobe de la prise en charge de CRXDE (com.adobe.granite.crxde-support)
-* Adobe Explorateur CRX Granite (com.adobe.granite.crx-explorer)
-* Adobe du CRXDE Lite Granite (com.adobe.granite.crxde-lite)
+* Assistance CRXDE d’Adobe (com.adobe.granite.crxde-support)
+* Explorateur CRX Granite d’Adobe (com.adobe.granite.crx-explorer)
+* CRXDE Lite Granite d’Adobe (com.adobe.granite.crxde-lite)
 
-### Vérifiez si le lot de développement Sling est présent. {#check-if-the-sling-development-bundle-is-present}
+### Vérifier si le bundle de développement Sling est présent {#check-if-the-sling-development-bundle-is-present}
 
 Le [AEM Outils de développement](/help/sites-developing/aem-eclipse.md) déployez l’installation de prise en charge des outils Apache Sling (org.apache.sling.tooling.support.install).
 
-Ce lot OSGi doit être désinstallé sur les systèmes de création et de publication productifs avant de les rendre accessibles.
+Ce bundle OSGi doit être désinstallé sur les systèmes de création et de publication productifs avant de les rendre accessibles.
 
-### Protect contre la falsification de requête intersites {#protect-against-cross-site-request-forgery}
+### Se protéger contre les attaques CRSF {#protect-against-cross-site-request-forgery}
 
 #### Le Framework de protection CSRF {#the-csrf-protection-framework}
 
@@ -178,7 +178,7 @@ Pour résoudre les problèmes de sécurité connus avec Cross-Site Request Forge
 
 Le service de filtrage des référents est un service OSGi qui vous permet de configurer les éléments suivants :
 
-* les méthodes HTTP à filtrer
+* les méthodes HTTP à filtrer ;
 * si un en-tête de référent vide est permis ;
 * et une liste des serveurs autorisés, en plus de l’hôte de serveur.
 
@@ -227,16 +227,16 @@ Pour chacun des services suivants, les paramètres spécifiés doivent être mod
 
 * [Gestionnaire de bibliothèque HTML Adobe Granite](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager) :
 
-   * enable **Minify** (pour supprimer les caractères CRLF et les espaces blancs).
-   * enable **Gzip** (pour permettre l’extraction et l’accès aux fichiers avec une seule requête).
-   * disable **Déboguer**
-   * disable **Minutage**
+   * Activez **Minifier** (pour supprimer les caractères CRLF et les espaces blancs).
+   * Activez **Gzip** (pour permettre l’extraction et l’accès aux fichiers avec une seule requête).
+   * Désactivez **Déboguer**
+   * Désactivez **Minutage**
 
 * [Filtre de débogage de la gestion de contenu web Day CQ](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter) :
 
-   * uncheck **Activer**
+   * Décochez **Activer**
 
-* [Filtre WCM Day CQ](/help/sites-deploying/osgi-configuration-settings.md):
+* [Filtre de la gestion de contenu web Day CQ](/help/sites-deploying/osgi-configuration-settings.md) :
 
    * Lors de la publication uniquement, définissez le **Mode de gestion de contenu web** sur Désactivé.
 
@@ -253,9 +253,9 @@ Voir [Paramètres de configuration OSGi](/help/sites-deploying/osgi-configuratio
 
 Lorsque vous utilisez AEM, plusieurs méthodes permettent de gérer les paramètres de configuration de ces services. see [Configuration d’OSGi](/help/sites-deploying/configuring-osgi.md) pour plus d’informations et pour connaître les pratiques recommandées.
 
-## Autres lectures {#further-readings}
+## Informations complémentaires {#further-readings}
 
-### Atténuer les attaques par déni de service (DoS) {#mitigate-denial-of-service-dos-attacks}
+### Prévenir les attaques par déni de service (DoS) {#mitigate-denial-of-service-dos-attacks}
 
 Une attaque par déni de service (DoS) est une tentative de rendre une ressource informatique indisponible à ses utilisateurs ciblés. Cette attaque se fait souvent en surchargeant la ressource; par exemple :
 
@@ -291,12 +291,12 @@ Pour empêcher toute utilisation abusive des DE, vous pouvez effectuer les opér
 
 1. Incorporer des contrôles au niveau de l’application. En raison du nombre de variations possibles, une configuration par défaut n’est pas possible.
 
-   Dans votre application, vous devez :
+   Dans votre application, vous devez :
 
    * contrôler les sélecteurs dans votre application afin de ne proposer *que* les sélecteurs explicites nécessaires et de renvoyer un message `404` pour tous les autres ;
-   * Empêcher la sortie d’un nombre illimité de noeuds de contenu.
+   * Empêcher la sortie d’un nombre illimité de nœuds de contenu.
 
-1. Vérifiez la configuration des moteurs de rendu par défaut, ce qui peut poser problème.
+1. Vérifier la configuration des moteurs de rendu par défaut, ce qui peut poser problème.
 
    * En particulier, le moteur de rendu JSON transfère la structure de l’arborescence sur plusieurs niveaux.
 
@@ -346,7 +346,7 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 
 Désactivez WebDAV dans les environnements de création et de publication en arrêtant les lots OSGi appropriés.
 
-1. Connectez-vous au **Console de gestion Felix** s’exécutant sur :
+1. Connectez-vous à la **Console de gestion Felix** s’exécutant sur :
 
    `https://<*host*>:<*port*>/system/console`
 
@@ -388,7 +388,7 @@ Même si cela n’est pas recommandé, vous pouvez la désactiver au cas où vou
 
 >[!NOTE]
 >
->Pour plus d’informations, voir la documentation d’Oak sur [Génération de nom de noeud autorisable](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+>Pour plus d’informations, voir la documentation d’Oak dans [Générer un nom de nœud autorisable](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
 ### Package de renforcement des autorisations anonymes {#anonymous-permission-hardening-package}
 
@@ -414,7 +414,7 @@ Pour éviter le détournement de clics, Adobe vous recommande de configurer votr
 
 Pour plus d’informations sur le détournement de clic, voir [Site OWASP](https://www.owasp.org/index.php/Clickjacking).
 
-### Veillez À Répliquer Correctement Les Clés De Chiffrement Si Nécessaire. {#make-sure-you-properly-replicate-encryption-keys-when-needed}
+### Répliquer correctement les clés de chiffrement si nécessaire {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
 Certaines fonctionnalités d’AEM et certains schémas d’authentification exigent que vous répliquiez vos clés de chiffrement sur toutes les instances AEM.
 
@@ -422,9 +422,9 @@ Avant cela, la réplication des clés est effectuée différemment entre les ver
 
 Voir ci-dessous pour plus d’informations.
 
-#### Réplication des clés pour AEM 6.3 {#replicating-keys-for-aem}
+#### Réplication des clés pour AEM 6.3 {#replicating-keys-for-aem}
 
-Alors que dans les anciennes versions, les clés de réplication étaient stockées dans le référentiel, à partir d’AEM 6.3, elles sont stockées sur le système de fichiers.
+Alors que dans les anciennes versions, les clés de réplication étaient stockées dans le référentiel, à partir d’AEM 6.3, elles sont stockées sur le système de fichiers.
 
 Par conséquent, pour répliquer vos clés entre les instances, copiez-les de l’instance source vers l’emplacement des instances cibles sur le système de fichiers.
 
@@ -441,7 +441,7 @@ Plus précisément, vous devez effectuer les opérations suivantes :
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. Copiez les fichiers HMAC et maîtres.
+1. Copier les fichiers HMAC et maîtres.
 1. Ensuite, accédez à l’instance cible sur laquelle vous souhaitez dupliquer la clé HMAC, puis accédez au dossier des données. Par exemple :
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
@@ -460,12 +460,12 @@ Plus précisément, vous devez effectuer les opérations suivantes :
 
 Dans AEM 6.2 et les versions antérieures, les clés sont stockées dans le référentiel, sous le nœud `/etc/key`.
 
-La méthode recommandée pour répliquer en toute sécurité les clés sur toutes les instances est de ne répliquer que ce nœud. Vous pouvez répliquer les noeuds de manière sélective via CRXDE Lite :
+La méthode recommandée pour répliquer en toute sécurité les clés sur toutes les instances est de ne répliquer que ce nœud. Vous pouvez répliquer les nœuds de manière sélective via CRXDE Lite :
 
 1. Ouvrez CRXDE Lite en accédant à *`https://&lt;serveraddress&gt;:4502/crx/de/index.jsp`*.
 1. Sélectionnez le nœud `/etc/key`.
-1. Accédez au **Réplication** .
-1. Appuyez sur la touche **Réplication** bouton .
+1. Accédez à l’onglet **Réplication**.
+1. Appuyez sur le bouton **Réplication**.
 
 ### Test de pénétration {#perform-a-penetration-test}
 

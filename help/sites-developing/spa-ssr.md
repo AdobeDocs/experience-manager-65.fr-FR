@@ -14,7 +14,7 @@ exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 source-git-commit: f923a3b7d6821f63d059f310de783b11bf3e8ec3
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Voir le document [CI/CD pour les applications du créateur d’applications de projet](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) pour plus d’informations.
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements. Pour plus d’informations, consultez le document [CI/CD pour les applications de projet de créateur d’applications](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/).
 >
 >Un espace de travail distinct n’est pas nécessaire pour chaque instance (création, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
@@ -108,7 +108,7 @@ Avec le rendu côté serveur, le [workflow d’interaction des composants](/help
 
 ![server-side-rendering-cms-drivenaemnode-adobeio](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)
 
-## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
+## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
 La section précédente décrit l’implémentation standard et recommandée du rendu côté serveur dans le cadre des SPA dans AEM, AEM se chargeant du démarrage et du traitement du contenu.
 
@@ -234,7 +234,7 @@ Pour qu’un servlet récupère et renvoie du contenu pouvant être injecté dan
 1. Assurez-vous que votre serveur distant est accessible.
 1. Ajoutez l’un des fragments de code suivants au modèle HTL d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
-1. Parcourir le contenu de votre site
+1. Parcourir le contenu de votre site.
 
 En général, le modèle HTL d’un composant de page est le principal destinataire d’une telle fonctionnalité.
 

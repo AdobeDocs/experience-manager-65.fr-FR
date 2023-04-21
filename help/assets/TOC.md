@@ -9,7 +9,7 @@ user-guide-description: Créez, gérez, traitez et distribuez des ressources num
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 + [Guide de l’utilisateur d’[!DNL Assets]](home.md)
 + Notes de mise à jour d’[[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
-+ [À propos de la gestion des ressources numériques](assets.md)
++ [À propos de la gestion des DAM](assets.md)
 + [Bonnes pratiques pour les ressources](best-practices-for-assets.md)
 + [Accessibilité dans  [!DNL Assets]](accessibility.md)
 + Utilisation d’Experience Manager Assets {#using}

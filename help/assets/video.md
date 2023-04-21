@@ -15,7 +15,7 @@ exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 source-git-commit: c704397f08e163a58ee6ac1dbaefc3171298864e
 workflow-type: tm+mt
 source-wordcount: '8086'
-ht-degree: 73%
+ht-degree: 99%
 
 ---
 
@@ -58,12 +58,12 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/assets-formats.md#supported-multimedia-formats).
-   * Surveiller comment [codage vidéo en cours](#monitoring-video-encoding-and-youtube-publishing-progress) depuis la vue de la ressource ou du workflow.
+   * Surveillez comment [le codage vidéo en cours progresse](#monitoring-video-encoding-and-youtube-publishing-progress) depuis la vue de la ressource ou du workflow.
 
 
 
 
-1. **Gestion des vidéos Dynamic Media** en effectuant l’une des opérations suivantes :
+1. Pour **gérer vos vidéos Dynamic Media**, effectuez l’une des opérations suivantes :
 
    * Organisez, parcourez et recherchez des ressources vidéo
 
@@ -125,28 +125,28 @@ En savoir plus sur les [bonnes pratiques relatives à l’organisation des resso
 
 La vidéo dans Dynamic Media est une solution complète qui facilite la publication de vidéos adaptatives haute qualité pour la diffusion sur plusieurs écrans, notamment les postes de travail et les appareils mobiles iOS, Android™, BlackBerry® et Windows. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
 
-Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 3G, 4G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur les ordinateurs de bureau, les appareils mobiles ou les tablettes.
+Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 3G, 4G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur les ordinateurs, les appareils mobiles ou les tablettes.
 
-En outre, la qualité vidéo est automatiquement activée dynamiquement si les conditions réseau changent sur le bureau ou sur l’appareil mobile. De même, si un client ou une cliente passe en mode plein écran sur un bureau, la visionneuse de vidéos adaptative réagit en utilisant une meilleure résolution, améliorant ainsi l’expérience de visionnage. L’utilisation de visionneuses de vidéos adaptatives vous permet de lire le mieux possible la vidéo Dynamic Media sur plusieurs écrans et appareils.
+En outre, la qualité vidéo est modifiée automatiquement de manière dynamique si les conditions réseau changent sur l’ordinateur ou sur l’appareil mobile. De même, si un client ou une cliente passe en mode plein écran sur un ordinateur, la visionneuse de vidéos à débit adaptatif réagit en utilisant une meilleure résolution, améliorant l’expérience de visionnage du client ou de la cliente. L’utilisation des visionneuses de vidéos à débit adaptatif offre la meilleure lecture possible aux clientes et clients qui lisent des vidéos Dynamic Media sur plusieurs écrans et appareils.
 
-La logique utilisée par un lecteur vidéo pour déterminer la vidéo codée à lire ou à sélectionner au cours de la lecture repose sur l’algorithme suivant :
+La logique utilisée par un lecteur vidéo pour déterminer la vidéo codée à lire ou à sélectionner au cours de la lecture repose sur l’algorithme suivant :
 
-1. Le lecteur vidéo charge le fragment vidéo initial en fonction du débit le plus proche de la valeur définie pour le &quot;débit initial&quot; dans le lecteur lui-même.
-1. Le lecteur vidéo bascule sur les modifications apportées à la vitesse de bande passante à l’aide des critères suivants :
+1. Le lecteur vidéo charge le fragment vidéo initial en fonction du débit le plus proche de la valeur définie pour le « débit binaire initial » dans le lecteur lui-même.
+1. Le lecteur vidéo bascule en fonction des modifications apportées à la vitesse de bande passante à l’aide des critères suivants :
 
-   1. Le lecteur sélectionne la bande passante la plus élevée en dessous ou égale à la bande passante estimée.
+   1. Le lecteur sélectionne la bande passante la plus élevée inférieure ou égale à la bande passante estimée.
    1. Le lecteur prend uniquement en compte 80 % de la bande passante disponible. Cependant, s’il change, il est préférable que ce taux soit seulement de 70 % pour éviter toute surestimation et que le lecteur ne repasse au taux précédent.
 
 Pour obtenir des informations techniques détaillées sur l’algorithme, consultez la page [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
 
-Pour la gestion des visionneuses de vidéos adaptatives et uniques, les fonctions suivantes sont prises en charge :
+Pour la gestion des visionneuses de vidéos à débit adaptatif et uniques, les fonctions suivantes sont prises en charge :
 
-* Téléchargement de vidéos en différents formats vidéo et audio pris en charge et codage vidéo au format MP4 H.264 pour la lecture sur plusieurs écrans. Vous pouvez utiliser des paramètres prédéfinis de vidéo adaptative, des paramètres prédéfinis de codage vidéo unique ou personnaliser votre propre codage pour contrôler la qualité et la taille de la vidéo.
+* Téléchargement de vidéos en différents formats vidéo et audio pris en charge et codage vidéo au format MP4 H.264 pour la lecture sur plusieurs écrans. Vous pouvez utiliser des paramètres prédéfinis de vidéo à débit adaptatif ou de codage vidéo unique, ou personnaliser votre propre codage pour contrôler la qualité et la taille de la vidéo.
 
-   * Lorsqu’une visionneuse de vidéos adaptative est générée, elle comprend des vidéos MP4.
-   * **Remarque**: Les vidéos Principal/source ne sont pas ajoutées à la visionneuse de vidéos adaptative.
+   * Lorsqu’une visionneuse de vidéos à débit adaptatif est générée, elle comprend des vidéos MP4.
+   * **Remarque** : les vidéos principales/sources ne sont pas ajoutées à la visionneuse de vidéos à débit adaptatif.
 
-* Sous-titrage vidéo dans toutes les visionneuses de vidéos HTML5.
+* Sous-titrage vidéo dans toutes les visionneuses de vidéos HTML5.
 * Organisez, parcourez et recherchez des vidéos avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
 * Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android™, BlackBerry® et Windows Phone notamment).
 
@@ -154,7 +154,7 @@ La diffusion de vidéo adaptative en continu est prise en charge sur différente
 
 Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils BlackBerry® qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Médias pris en charge sur Windows Phone 8](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)
+Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Médias pris en charge sur Windows Phone 8](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs)
 
 
 
@@ -164,7 +164,7 @@ Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés
    * des visionneuses de médias mixtes combinant du contenu vidéo et des images.
 
 * Configurez les lecteurs vidéo pour répondre à vos besoins en matière de branding.
-* Intégrez la vidéo à votre site web, site mobile ou application mobile à l’aide d’une simple URL ou d’un code intégré.
+* Intégrez la vidéo à votre site Web ou mobile, ou à votre application mobile à l’aide d’une simple URL ou d’un code intégré.
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480) sample. -->
 
@@ -172,17 +172,17 @@ Consultez également la section [Visionneuses pour Experience Manager Assets e
 
 ## Bonne pratique : utilisation de la visionneuse de vidéos HTML5 {#best-practice-using-the-html-video-viewer}
 
-Les paramètres prédéfinis de la visionneuse de vidéos Dynamic Media HTML5 sont des lecteurs vidéo fiables. Vous pouvez les utiliser pour éviter de nombreux problèmes courants liés à la lecture vidéo HTML5. De plus, des problèmes liés aux appareils mobiles, tels que l’absence de diffusion en continu à débit adaptatif et une portée limitée du navigateur de bureau.
+Les paramètres prédéfinis de la visionneuse de vidéos HTML5 Dynamic Media sont des lecteurs vidéo fiables. Utilisez-les pour éviter la plupart des problèmes courants liés à la lecture des vidéos HTML5. De plus, ils minimisent également les problèmes liés aux appareils mobiles, comme l’absence de diffusion en continu à débit adaptatif et une portée limitée du navigateur de bureau.
 
-En ce qui concerne la conception du lecteur, vous pouvez concevoir les fonctionnalités du lecteur vidéo à l’aide d’outils de développement web standard. Vous pouvez, par exemple, concevoir les boutons, les commandes et les affiches personnalisées en arrière-plan au moyen du code HTML5 et CSS afin de mieux cibler les utilisateurs et les utilisatrices avec un aspect personnalisé.
+En ce qui concerne la conception du lecteur, vous pouvez créer des fonctionnalités à l’aide d’outils de développement Web standard. Par exemple, vous pouvez concevoir les boutons, les commandes et l’arrière-plan personnalisé de l’image d’affiche en utilisant HTML5 et CSS pour vous aider à atteindre vos clients et vos clientes à l’aide d’une apparence personnalisée.
 
-En ce qui concerne la relecture, la visionneuse détecte automatiquement les fonctionnalités vidéo du navigateur. Il diffuse ensuite la vidéo à l’aide de HLS (HTTP Live Streaming) ou DASH (Dynamic Adaptive Streaming over HTTP) , également appelé diffusion en continu à débit adaptatif. Si ces méthodes de distribution n’existent pas, la diffusion progressive HTML5 est utilisée à la place.
+En ce qui concerne la lecture, la visionneuse détecte automatiquement les fonctionnalités vidéo du navigateur. Elle diffuse ensuite la vidéo en utilisant HLS (HTTP Live Streaming) ou DASH (Dynamic Adaptive Streaming over HTTP), également appelé diffusion en continu à débit adaptatif. Si ces méthodes de distribution n’existent pas, la diffusion progressive HTML5 est utilisée à la place.
 
 En combinant dans un seul lecteur, vous avez accès aux les éléments suivants :
 
 * La possibilité de concevoir des composants de lecture à l’aide de HTML5 et CSS
 * Disposer de lecteurs incorporés
-* Utiliser la diffusion en continu adaptative et progressive selon les fonctionnalités du navigateur
+* Utiliser la diffusion en continu à débit adaptatif et progressive adaptée aux fonctionnalités du navigateur
 
 Vous pouvez étendre la portée de votre contenu multimédia aux utilisateurs d’ordinateurs de bureau et d’appareils mobiles et garantir ainsi une expérience vidéo fluide.
 
@@ -190,16 +190,16 @@ Consultez également la section [A propos des visionneuses HTML5](https://experi
 
 ### Lecture vidéo sur les ordinateurs de bureau et les appareils mobiles à l’aide de la visionneuse de vidéos HTML5 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
-Pour la diffusion en continu de la vidéo adaptative sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéo adaptative.
+Pour la diffusion en flux continu de la vidéo à débit adaptatif sur un poste de travail et un appareil mobile, les vidéos utilisées pour le changement de débit reposent sur toutes les vidéos MP4 dans la visionneuse de vidéos à débit adaptatif.
 
-La lecture vidéo se produit à l’aide de DASH ou HLS, ou du téléchargement vidéo progressif. Dans les versions antérieures d’Experience Manager, telles que 6.0, 6.1 et 6.2, les vidéos étaient diffusées via HTTP.
+La lecture vidéo se produit à l’aide d’un téléchargement vidéo DASH, HLS ou progressif. Dans les versions antérieures d’Experience Manager, telles que 6.0, 6.1 et 6.2, les vidéos étaient diffusées via HTTP.
 
-Dans Experience Manager 6.3 et versions ultérieures, les vidéos sont désormais diffusées en continu via HTTPS (c’est-à-dire, DASH ou HLS), car l’URL du service de passerelle DM utilise toujours HTTPS également. Il n’y a aucun impact pour le client dans ce comportement par défaut. En d’autres termes, la diffusion vidéo en continu s’effectue toujours par HTTPS, sauf si elle n’est pas prise en charge par le navigateur. (voir le tableau ci-dessous). Par conséquent,
+Toutefois, dans la version 6.3 et les versions ultérieures d’Experience Manager, les vidéos sont diffusées en continu via HTTPS (c’est-à-dire, DASH ou HLS), car l’URL du service de la passerelle DM utilise toujours HTTPS également. Il n’y a aucun impact pour le client ou la cliente dans ce comportement par défaut. Autrement dit, la diffusion en continu de vidéo s’effectue toujours via HTTPS, à moins qu’elle ne soit pas prise en charge par le navigateur. (voir le tableau ci-dessous). Par conséquent,
 
-* Si vous disposez d’un site web HTTPS avec diffusion vidéo en continu HTTPS, la diffusion en continu est correcte.
-* Si vous disposez d’un site web HTTP avec diffusion vidéo en continu HTTPS, la diffusion en continu est correcte et il n’y a aucun problème de contenu mixte à partir du navigateur web.
+* si vous disposez d’un site Web HTTPS avec diffusion vidéo en continu HTTPS, la diffusion en continu est correcte.
+* Si vous disposez d’un site web HTTP avec diffusion vidéo en continu HTTPS, la diffusion en continu est correcte et il n’y a aucun problème de contenu mixte à partir du navigateur Web.
 
-DASH est la norme internationale et HLS est une norme Apple. Les deux sont utilisés pour la diffusion en continu de vidéo adaptative. De plus, les deux technologies ajustent automatiquement la relecture en fonction de la capacité de bande passante du réseau. Elle permet aussi au client ou à la cliente de « rechercher » n’importe quel point de la vidéo sans avoir à attendre que le reste de la vidéo soit téléchargé.
+DASH est la norme internationale et HLS est une norme Apple. Elles sont utilisées toutes les deux pour la diffusion en continu de vidéo à débit adaptatif. De plus, ces deux technologies ajustent automatiquement la lecture en fonction de la capacité de bande passante du réseau. Elle permet aussi au client ou à la cliente de « rechercher » n’importe quel point de la vidéo sans avoir à attendre que le reste de la vidéo soit téléchargé.
 
 La vidéo progressive est fournie grâce au téléchargement et à l’enregistrement de la vidéo en local sur le système du poste de travail ou de l’appareil mobile de l’utilisateur ou de l’utilisatrice.
 
@@ -214,22 +214,22 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
   </tr>
   <tr>
    <td>Poste de travail</td>
-   <td>Internet Explorer 9 et 10</td>
+   <td>Internet Explorer 9 et 10</td>
    <td>Téléchargement progressif.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
    <td>Internet Explorer 11+</td>
-   <td>Sous Windows 8 et Windows 10 - Forcer l’utilisation de HTTPS chaque fois que DASH* ou HLS est demandé. Limites connues : HTTP sur DASH* ou HLS ne fonctionne pas dans cette combinaison navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Représente la logique standard pour sélectionner le protocole HTTP ou HTTPS.</td>
+   <td>Sous Windows 8 et Windows 10 – Forcer l’utilisation de HTTPS chaque fois que DASH* ou HLS est demandé. Limites connues : HTTP sur DASH* ou HLS ne fonctionne pas avec cette combinaison de navigateur/système d’exploitation<br /> <br /> Sous Windows 7 - Téléchargement progressif. Utilise la logique standard permettant de sélectionner le protocole HTTP ou HTTPS.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
-   <td>Firefox 23-44</td>
+   <td>Firefox 23-44</td>
    <td>Téléchargement progressif.</td>
   </tr>
   <tr>
    <td>Poste de travail</td>
-   <td>Firefox 45 ou version ultérieure</td>
+   <td>Firefox 45 ou version ultérieure</td>
    <td>Diffusion en continu à débit adaptatif DASH* ou HLS.</td>
   </tr>
   <tr>
@@ -277,7 +277,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
 
 >[!IMPORTANT]
 >
->*Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).
+>*Pour utiliser DASH pour vos vidéos, vous devez d’abord demander au support technique d’Adobe de l’activer sur votre compte. Voir [Activer DASH sur votre compte](#enable-dash).
 
 ## Architecture de la solution vidéo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -301,7 +301,7 @@ For advice about video encoding, see [Video Encoding Basics](https://www.adobe.c
 
 ### Fichiers vidéo source {#source-video-files}
 
-Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source de la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
+Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source de la meilleure qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés. En outre, un codage supplémentaire crée une vidéo de qualité inférieure.
 
 * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
 * Vous pouvez charger des fichiers vidéo de source principale d’une taille de 15 Go chacun au maximum.
@@ -310,13 +310,13 @@ Le tableau ci-dessous décrit la taille recommandée, le format et le débit min
 
 | Taille | Format | Débit minimal |
 |--- |--- |--- |
-| 1024 X 768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
-| 1280 X 720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
-| 1 920 x 1 080 | 16:9 | 6 000 à 8 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1024x768 | 4:3 | 4 500 Kbit/s pour la plupart des vidéos. |
+| 1280x720 | 16:9 | 3 000 à 6 000 Kbit/s, selon la quantité de mouvement dans la vidéo. |
+| 1 920 x 1 080 | 16:9 | 6 000 à 8 000 kbit/s, en fonction de la quantité de mouvement dans la vidéo. |
 
 ### Obtention des métadonnées d’un fichier {#obtaining-a-file-s-metadata}
 
-Vous pouvez obtenir les métadonnées d’un fichier en les affichant à l’aide d’un outil de modification vidéo ou d’une application conçue pour obtenir les métadonnées. Vous trouverez ci-après les instructions d’utilisation de MediaInfo, une application tierce permettant d’extraire les métadonnées d’un fichier vidéo :
+Vous pouvez récupérer les métadonnées d’un fichier à l’aide d’un outil de montage vidéo ou d’une application dédiée. Vous trouverez ci-dessous les instructions pour récupérer les métadonnées d’un fichier vidéo à l’aide de l’application tierce MediaInfo :
 
 1. Accédez à [Téléchargement MediaInfo](https://mediaarea.net/fr/MediaInfo/Download).
 1. Sélectionnez et téléchargez le programme d’installation pour la version avec l’interface graphique utilisateur, puis suivez les instructions d’installation.
@@ -326,13 +326,13 @@ Vous pouvez obtenir les métadonnées d’un fichier en les affichant à l’aid
 
 Lorsque vous choisissez ou créez un paramètre prédéfini de codage vidéo pour votre fichier vidéo issu de sources originales, assurez-vous que le paramètre prédéfini indique le même format que le fichier vidéo issu de sources originales. Le format fait référence au rapport largeur/hauteur de la vidéo.
 
-Pour déterminer le format d’un fichier vidéo, récupérez les métadonnées de ce fichier et notez les valeurs de largeur et de hauteur (voir Obtention des métadonnées d’un fichier ci-dessus). Utilisez ensuite cette formule pour déterminer le format :
+Pour déterminer le format d’un fichier vidéo, récupérez les métadonnées de ce fichier et notez les valeurs de largeur et de hauteur (consultez la section Obtenir les métadonnées d’un fichier ci-dessus). Effectuez ensuite le calcul suivant pour déterminer le format :
 
 largeur/hauteur = format
 
-Le tableau suivant décrit comment les résultats de la formule se traduisent par des choix de format courants :
+Le tableau suivant décrit les choix de format courants obtenus à partir des résultats du calcul :
 
-| Résultat de la formule | Format |
+| Résultat du calcul | Format |
 |--- |--- |
 | 1.33 | 4:3 |
 | 0.75 | 3:4 |
@@ -347,20 +347,20 @@ Le débit correspond à la quantité de données encodées pour produire une seu
 
 >[!NOTE]
 >
->Du fait que tous les codecs utilisent la compression avec perte, le débit de données est le facteur le plus important de la qualité vidéo. Quand vous utilisez la compression avec perte, plus vous compressez la vidéo, plus la qualité de l’image se dégrade. Pour cette raison, toutes les autres caractéristiques étant égales (résolution, débit d’image et codec), plus le débit est faible, plus la qualité du fichier compressé est faible.
+>Du fait que tous les codecs utilisent la compression avec perte, le débit de données est le facteur le plus important de la qualité vidéo. Quand vous utilisez la compression avec perte, plus vous compressez la vidéo, plus la qualité de l’image se dégrade. Pour cette raison, toutes les autres caractéristiques étant égales (résolution, cadence et codec), plus le débit est faible et plus la qualité du fichier compressé est faible.
 
-Lorsque vous sélectionnez un codage de débit binaire, vous pouvez choisir deux types :
+Lors de la sélection d’une vitesse de transmission, deux types de choix s’offrent à vous :
 
 * **[!UICONTROL Encodage à débit constant]** (CBR) : pendant l’encodage CBR, le débit ou le nombre de bits par seconde est conservé pendant tout le processus d’encodage. L’encodage CBR maintient le débit défini selon votre configuration sur l’intégralité de la vidéo. En outre, le codage CBR n’optimise pas la qualité des fichiers multimédias, mais économise de l’espace de stockage.
 Utilisez le codage CBR si votre vidéo présente globalement un niveau de mouvement similaire. Le codage CBR est le plus souvent utilisé pour diffuser le contenu vidéo en continu. Voir également [Utilisation de paramètres de codage vidéo personnalisés](/help/assets/video-profiles.md#using-custom-added-video-encoding-parameters).
 
-* **[!UICONTROL Codage à débit variable]** (VBR) - le codage VBR règle le débit en le diminuant et en l’augmentant selon la limite supérieure que vous avez définie, en fonction des données demandées par le compresseur. Cette fonctionnalité implique que lors d’un processus de codage VBR, le débit du fichier multimédia augmente ou diminue de manière dynamique en fonction des besoins du débit de fichiers multimédias.
+* **[!UICONTROL Codage de débit variable]** (VBR) : le codage VBR ajuste le débit en le diminuant et selon la limite supérieure que vous avez définie, en fonction des données demandées par le compresseur. Cette fonctionnalité implique que lors d’un processus de codage VBR, le débit du fichier multimédia augmente ou diminue de manière dynamique en fonction des besoins du débit de fichiers multimédias.
 Le VBR prend plus de temps au codage, mais garantit de meilleurs résultats, avec une qualité de fichier multimédia supérieure. Le codage VBR est couramment utilisé pour la diffusion http progressive de contenu vidéo.
 
 Dans quels cas utilisez-vous le VBR ou le CBR ?
 Lorsque vous devez choisir entre VBR et CBR, il est presque toujours recommandé d’utiliser le VBR pour vos fichiers multimédias. Le VBR vous garantit des fichiers de meilleure qualité à des débits compétitifs. Lorsque vous utilisez le VBR, assurez-vous d’utiliser le codage à deux passages, et définissez le débit maximal afin qu’il soit 1,5 fois supérieur au débit vidéo cible.
 
-Lorsque vous choisissez un paramètre prédéfini de codage vidéo, pensez à la vitesse de connexion de l’utilisateur final cible. Choisissez un paramètre prédéfini avec un débit de données correspondant à 80 % de cette vitesse. Par exemple, si la vitesse de connexion de l’utilisateur ou de l’utilisatrice final.e est de 1 000 Kbps, le meilleur paramètre prédéfini est celui qui comprend un débit vidéo de 800 Kbps.
+Lorsque vous choisissez un paramètre prédéfini de codage vidéo, tenez compte de la vitesse de connexion de votre audience. Choisissez un paramètre prédéfini avec un débit de données correspondant à 80 % de cette vitesse. Par exemple, si la vitesse de connexion de l’utilisateur ou de l’utilisatrice finale est de 1 000 kbit/s, le meilleur paramètre prédéfini est celui qui comprend un débit vidéo de 800 kbit/s.
 
 Ce tableau décrit le débit de données associé à des vitesses de connexion courantes.
 
@@ -369,34 +369,34 @@ Ce tableau décrit le débit de données associé à des vitesses de connexion c
 | 256 | Connexion d’accès à distance. |
 | 800 | Connexion mobile standard. Pour cette connexion, visez un débit de données de 400 à 800 kbit/s pour les expériences 3G. |
 | 2000 | Connexion haut débit standard de bureau. Pour cette connexion, visez un débit de données de 800 à 2 000 kbit/s, bien qu’un débit de 1 200 à 1 500 kbit/s convienne à la plupart des cibles. |
-| 5000 | Connexion haut débit standard. Il n’est pas recommandé de coder dans cette plage supérieure, car la diffusion vidéo à cette vitesse n’est pas disponible pour la plupart des consommateurs. |
+| 5000 | Connexion haut débit standard. Il n’est pas recommandé de coder dans cette plage supérieure, car la diffusion vidéo à cette vitesse n’est pas disponible pour la plupart des consommateurs et consommatrices. |
 
 ### Résolution {#resolution}
 
 La **résolution** décrit la hauteur et la largeur d’un fichier vidéo, exprimée en pixels. La plupart des vidéos sources sont stockées à une résolution élevée (par exemple, 1 920 x 1 080). À des fins de diffusion en flux continu, la vidéo source est compressée à une résolution inférieure (640 x 480, voire moins).
 
-La résolution et le débit de données sont deux facteurs étroitement liés qui déterminent la qualité vidéo. Pour maintenir la même qualité vidéo, plus le nombre de pixels dans un fichier vidéo est élevé (plus la résolution est élevée), plus le débit de données doit être élevé. Prenons l’exemple du nombre de pixels par image dans un fichier vidéo de résolution 320 x 240 et de résolution 640 x 480 :
+La résolution et le débit de données sont deux facteurs étroitement liés qui déterminent la qualité vidéo. Pour maintenir la même qualité vidéo, plus le nombre de pixels dans un fichier vidéo est élevé (plus la résolution est élevée), plus le débit de données doit être élevé. Prenons l’exemple du nombre de pixels par image dans un fichier vidéo de résolution 320 x 240 et de résolution 640 x 480 :
 
 | Résolution | Pixels par image |
 |--- |--- |
-| 320 x 240 | 76,800 |
-| 640 x 480 | 307,200 |
+| 320 x 240 | 76 800 |
+| 640 x 480 | 307 200 |
 
-Le fichier 640 x 480 a quatre fois plus de pixels par image. Pour obtenir le même débit de données pour ces deux exemples de résolution, vous appliquez quatre fois la compression au fichier 640 x 480, ce qui peut réduire la qualité de la vidéo. Par conséquent, un débit de données vidéo de 250 kbit/s produit un affichage de haute qualité à une résolution de 320 x 240 pixels, mais pas à une résolution de 640 x 480 pixels.
+Le fichier 640 x 480 a quatre fois plus de pixels par image. Pour obtenir le même débit de données pour ces deux exemples de résolution, vous appliquez quatre fois la compression au fichier 640 x 480, ce qui peut réduire la qualité de la vidéo. Par conséquent, un débit de données vidéo de 250 kbit/s produit un affichage de haute qualité à une résolution de 320 x 240 pixels, mais pas à une résolution de 640 x 480 pixels.
 
 En général, plus le débit de données que vous utilisez est élevé, plus la qualité de votre vidéo est bonne, et plus vous utilisez une résolution élevée, plus de débit de données dont vous avez besoin est élevé pour conserver la qualité de visionnage (en comparaison avec des résolutions plus basses).
 
 Du fait que la résolution et le débit de données sont liés, vous avez le choix entre deux options lors du codage vidéo :
 
-* Choisissez un débit de données, puis codez-le à la résolution la plus élevée qui convient au débit de données choisi.
+* Choisissez un débit de données, puis codez à la résolution la plus haute pour obtenir une vidéo de bonne qualité.
 * Choisir une résolution, puis coder au débit de données nécessaire pour que la qualité vidéo soit optimale à la résolution choisie.
 
 Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo pour votre fichier vidéo source original, utilisez ce tableau pour choisir la résolution cible appropriée :
 
 | Résolution | Hauteur (pixels) | Taille d’écran |
 |--- |--- |--- |
-| 240p | 240 | Minuscule écran |
-| 300p | 300 | Petit écran généralement pour les appareils mobiles |
+| 240p | 240 | Très petit écran |
+| 300p | 300 | Petit écran, généralement pour les appareils mobiles |
 | 360p | 360 | Petit écran |
 | 480p | 480 | Écran moyen |
 | 720p | 720 | Grand écran |
@@ -404,7 +404,7 @@ Lorsque vous choisissez (ou créez) un paramètre prédéfini de codage vidéo p
 
 ### Images par seconde  {#fps-frames-per-second}
 
-Aux États-Unis et au Japon, la plupart des vidéos sont tournées à 29,97 images par seconde (i/s) ; en Europe, la plupart des vidéos sont tournées à 25 ips. Le film est tourné à 24 ips.
+Aux États-Unis et au Japon, la plupart des vidéos sont tournées à 29,97 images par seconde (i/s) ; en Europe, elles sont tournées à 25 i/s. Les films sont tournés à 24 i/s.
 
 Choisissez un paramètre prédéfini de codage vidéo correspondant au nombre d’images par seconde de votre vidéo issue de sources originales. Par exemple, si le débit est de 25 ips pour la vidéo issue de sources originales, choisissez un paramètre prédéfini de 25 ips pour le codage. Par défaut, tous les codages personnalisés utilisent le nombre d’images par seconde de la vidéo issue de sources originales. C’est pourquoi il est inutile d’indiquer le nombre d’images par seconde lorsque vous créez un paramètre prédéfini de codage vidéo.
 
@@ -412,32 +412,32 @@ Choisissez un paramètre prédéfini de codage vidéo correspondant au nombre d�
 
 Pour des résultats optimaux, sélectionnez des dimensions de codage de sorte que la vidéo source soit un multiple entier de toutes vos vidéos codées.
 
-Pour ce faire, il suffit de diviser la largeur de la source par la largeur codée pour obtenir le rapport de largeur, Ensuite, vous divisez la hauteur de la source par la hauteur codée pour obtenir le rapport de hauteur.
+Pour ce faire, il suffit de diviser la largeur de la source par la largeur codée pour obtenir le rapport de largeur, Ensuite, vous divisez la hauteur de la source par la hauteur codée pour obtenir le rapport de la hauteur.
 
-Si le résultat est un nombre entier, cela signifie que la mise à l’échelle de la vidéo est optimale. Si le résultat n’est pas un nombre entier, la qualité vidéo s’en ressentira en raison de la présence d’artefacts vidéo (pixels résiduels). Cet effet est plus visible lorsque la vidéo comporte du texte.
+Si le résultat du rapport est un nombre entier, cela signifie que la mise à l’échelle de la vidéo est optimale. Si le résultat n’est pas un nombre entier, la qualité vidéo s’en ressentira en raison de la présence d’artefacts vidéo (pixels résiduels). Cet effet est plus visible lorsque la vidéo comporte du texte.
 
-Par exemple, supposons que la vidéo source soit 1 920 x 1 080. Dans le tableau suivant, les trois vidéos codées fournissent les paramètres de codage optimaux à utiliser.
+Par exemple, supposons que la vidéo source soit de 1 920x1 080. Dans le tableau suivant, les trois vidéos codées fournissent les paramètres de codage optimaux à utiliser.
 
 | Type de vidéo | Largeur x Hauteur | Rapport largeur | Rapport de hauteur |
 |--- |--- |--- |--- |
 | Source | 1 920 x 1 080 | 1 | 1 |
-| Codé | 960 x 540 | 2 | 2 |
-| Codé | 640 x 360 | 3 | 3 |
-| Codé | 480 x 270 | 4 | 4 |
+| Codé | 960x540 | 2 | 2 |
+| Codé | 640x360 | 3 | 3 |
+| Codé | 480x270 | 4 | 4 |
 
 ### Format de fichier vidéo codé {#encoded-video-file-format}
 
-Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, il fournit une vidéo de haute qualité, mais avec une taille de fichier compressée.
+Dynamic Media recommande d’utiliser les paramètres prédéfinis MP4 H.264 de codage vidéo. Comme les fichiers MP4 utilisent le codec vidéo H.264, une vidéo de haute qualité est fournie, mais avec une taille de fichier compressée.
 
-### Activer le DASH sur votre compte {#enable-dash}
+### Activer DASH sur votre compte {#enable-dash}
 
-DASH (« Digital Adaptive Streaming over HTTP ») est la norme internationale pour la diffusion en continu de vidéos et largement adoptée par les différentes visionneuses de vidéos. Lorsque le DASH est activé sur votre compte, vous avez la possibilité de choisir entre DASH ou HLS pour la diffusion en continu de vidéo adaptative. Vous pouvez également opter pour les deux avec le changement automatique de lecteur lorsque **[!UICONTROL auto]** est sélectionné comme type de lecture dans le paramètre prédéfini de la visionneuse.
+DASH (« Digital Adaptive Streaming over HTTP ») est la norme internationale pour le streaming de vidéos et est largement adoptée par les différentes visionneuses de vidéos. Lorsque DASH est activé sur votre compte, vous avez la possibilité de choisir entre DASH ou HLS pour le streaming de vidéo à débit adaptatif. Vous pouvez également opter pour les deux avec le changement automatique de lecteur lorsque **[!UICONTROL auto]** est sélectionné comme type de lecture dans le paramètre prédéfini de la visionneuse.
 
-Voici quelques avantages clés de l’activation du DASH sur votre compte :
+Voici quelques avantages clés de l’activation de DASH sur votre compte :
 
-* Module vidéo de flux DASH pour la diffusion en continu à débit adaptatif. Cette méthode permet d’améliorer l’efficacité de la diffusion. La diffusion en continu adaptative garantit la meilleure expérience de visionnage à vos clients et à vos clientes.
-* La diffusion en continu optimisée par le navigateur avec les lecteurs Dynamic Media bascule entre la diffusion en continu HLS et DASH pour garantir la meilleure qualité de service. Le lecteur vidéo passe automatiquement au HLS lorsqu’un navigateur Safari est utilisé.
-* Vous pouvez configurer votre méthode de diffusion en continu préférée (HLS ou DASH) en modifiant le paramètre prédéfini de la visionneuse de vidéos.
+* Package de diffusion vidéo DASH pour le streaming à débit adaptatif. Cette méthode permet d’accroître l’efficacité de la diffusion. Le streaming adaptatif garantit la meilleure expérience de visionnage à vos clients et à vos clientes.
+* Le streaming optimisé par le navigateur avec les lecteurs Dynamic Media bascule entre le streaming HLS et DASH pour garantir la meilleure qualité de service. Le lecteur vidéo passe automatiquement au HLS lorsqu’un navigateur Safari est utilisé.
+* Vous pouvez configurer votre méthode de streaming préférée (HLS ou DASH) en modifiant le paramètre prédéfini de la visionneuse de vidéos.
 * Le codage vidéo optimisé garantit qu’aucun stockage supplémentaire n’est utilisé lors de l’activation de la fonctionnalité DASH. Un seul ensemble de codes vidéo est créé pour HLS et DASH afin d’optimiser les coûts de stockage vidéo.
 * Permet de rendre la diffusion vidéo plus accessible à vos clientes et clients.
 * Vous pouvez également obtenir l’URL de streaming au moyen des API.
@@ -446,26 +446,26 @@ Voici quelques avantages clés de l’activation du DASH sur votre compte :
    >
    >L’activation de DASH sur votre compte est actuellement disponible uniquement en Asie-Pacifique et en Amérique du Nord ; Bientôt en Europe, Moyen-Orient, Afrique.
 
-L’activation du DASH sur votre compte nécessite deux étapes :
+L’activation de DASH sur votre compte nécessite deux étapes :
 
-* Configuration de Dynamic Media pour utiliser DASH, ce que vous pouvez facilement faire vous-même.
-* Configuration de Experience Manager 6.5 pour l’utilisation du DASH via un cas du service clientèle d’Adobe que vous créez et envoyez.
+* Configuration de Dynamic Media pour utiliser DASH, ce que vous pouvez facilement faire vous-même.
+* Configuration d’Experience Manager 6.5 pour utiliser DASH via un dossier d’assistance clientèle Adobe que vous créez et envoyez.
 
-**Pour activer le DASH sur votre compte :**
+**Pour activer DASH sur votre compte :**
 
-1. **Configuration de Dynamic Media** - Dans Dynamic Media sur Experience Manager 6.5, accédez à [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-1. Rechercher **Diffusion en continu avancée des vidéos AEM Assets Dynamic Media** indicateur de fonctionnalité.
+1. **Configurez Dynamic Media**. Dans Dynamic Media sur Experience Manager 6.5, accédez à [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. Recherchez l’indicateur de fonctionnalité **Diffusion en continu avancée des vidéos AEM Assets Dynamic Media**.
 1. Cochez la case pour activer DASH.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
-1. **Configuration de Experience Manager 6.5** - [Utilisez le Admin Console pour commencer la création d’un nouveau cas d’assistance.](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-1. Suivez les instructions pour créer un dossir de support en veillant à fournir les informations suivantes :
+1. **Configurez Experience Manager 6.5** - [Utilisez l’Admin Console pour commencer la création d’un nouveau dossier de support](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+1. Suivez les instructions pour créer un dossier de support. Vous devez fournir les informations suivantes :
 
    * nom, adresse électronique et numéro de téléphone du contact principal.
    * Nom de votre compte Dynamic Media.
-   * Indiquez que DASH doit être activé sur Experience Manager 6.5.
+   * Indiquez que DASH doit être activé sur Experience Manager 6.5.
 
-1. Le service clientèle d’Adobe vous inscrira sur la liste d’attente des clientes et clients en fonction de l’ordre dans lequel les demandes ont été envoyées.
-1. Dès qu’Adobe sera prêt à traiter votre demande, le service clientèle vous contactera afin de programmer une date cible d’activation du DASH.
+1. Le service clientèle d’Adobe vous inscrira sur la liste d’attente des clients et clientes DASH en se basant sur l’ordre dans lequel les demandes ont été envoyées.
+1. Dès qu’Adobe sera prêt à traiter votre demande, le service clientèle vous contactera pour se coordonner avec vous et programmer une date cible d’activation DASH.
 1. Une fois la procédure achevée, l’équipe du service clientèle vous en informera.
 1. Créez votre [paramètre prédéfini de visionneuse vidéo](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) comme d’habitude.
 
@@ -480,12 +480,12 @@ Les rapports vidéo affichent plusieurs mesures agrégées sur une période donn
 * Lancements de vidéo
 * Taux d’achèvement
 * Durée moyenne de la vidéo
-* Durée totale sur la vidéo
+* Durée totale de la vidéo
 * Vidéos par visite
 
 Un tableau de toutes les vidéos *publiées* est également fourni pour vous permettre de suivre les vidéos les plus visionnées sur votre site web en fonction du total des lancements de vidéo.
 
-Lorsque vous appuyez sur le nom d’une vidéo dans la liste, le rapport sur la rétention de l’audience (taux de déperdition) de la vidéo s’affiche sous la forme d’un graphique en courbes. Le graphique présente le nombre de vues pour un moment donné pendant la lecture vidéo. Lorsque vous lisez la vidéo, la barre verticale effectue un suivi en synchronisation avec l’indicateur temporel du lecteur. Les pertes de données du graphique en courbes indiquent où votre audience perd de son intérêt.
+Lorsque vous appuyez sur le nom d’une vidéo dans la liste, le rapport sur la rétention de l’audience (taux de déperdition) de la vidéo s’affiche sous la forme d’un graphique en courbes. Le graphique affiche le nombre de visionnages à tout moment de la lecture vidéo. Lorsque vous lisez la vidéo, la barre verticale effectue un suivi en synchronisation avec l’indicateur temporel du lecteur. Des baisses dans les données du graphique en courbes indiquent où le désintérêt de votre audience augmente.
 
 Si la vidéo a été codée en dehors d’Adobe Experience Manager Dynamic Media, le graphique sur la rétention de l’audience (taux de déperdition) et les données de pourcentage de lecture du tableau ne sont pas disponibles.
 
@@ -493,7 +493,7 @@ Consultez également la section [Configuration des Services cloud Dynamic Media
 
 >[!NOTE]
 >
->Le suivi et les données de rapport reposent exclusivement sur l’utilisation du propre lecteur vidéo de Dynamic Media et du paramètre de lecteur vidéo prédéfini associé. Vous ne pouvez donc pas effectuer le suivi et créer de rapports sur des vidéos qui sont lues par d’autres lecteurs vidéo.
+>Le suivi et les données de rapport reposent exclusivement sur l’utilisation du lecteur vidéo Dynamic Media et du paramètre prédéfini du lecteur vidéo associé. Vous ne pouvez donc pas effectuer le suivi et créer de rapports sur des vidéos qui sont lues par d’autres lecteurs vidéo.
 
 Par défaut, la première fois que vous utilisez l’option Rapports vidéo, le rapport affiche des données vidéo du premier jour du mois en cours jusqu’à la date du mois en cours. Vous pouvez toutefois remplacer la période par défaut par la vôtre. La prochaine fois que vous utiliserez l’option Rapports vidéo, la période que vous avez spécifiée sera utilisée.
 
@@ -512,13 +512,13 @@ Indiquez la période de début et de fin pour laquelle vous souhaitez obtenir le
 
    Le groupe Mesures principales identifie diverses mesures agrégées pour toutes les vidéos *publiées* sur votre site.
 
-1. Dans le tableau qui répertorie les vidéos les plus publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de la vidéo.
+1. Dans le tableau qui répertorie les principales vidéos publiées, appuyez sur le nom d’une vidéo pour la lire et afficher également le rapport sur la rétention de l’audience (taux de déperdition) de celle-ci.
 
 ### Affichage de rapports vidéo reposant sur une visionneuse de vidéos créée à l’aide du SDK de visionneuse HTML5 Dynamic Media {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Si vous utilisez une visionneuse de vidéos prête à l’emploi fournie par Dynamic Media ou si vous avez créé un paramètre prédéfini de visionneuse personnalisée reposant sur une visionneuse de vidéos prête à l’emploi, aucune autre étape n’est nécessaire pour afficher les rapports vidéo. En revanche, si vous avez créé votre propre visionneuse de vidéos en vous reposant sur l’API de SDK de visionneuse HTML5, suivez les étapes ci-après pour vous assurer que votre visionneuse de vidéos envoie des événements de suivi aux rapports vidéo Dynamic Media.
 
-Utilisez le [guide de référence des visionneuses Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr) et l’[API de SDK de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) pour créer vos propres visionneuses de vidéos.
+Utilisez le [guide de référence des visionneuses Adobe Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr) et l’[API de SDK de visionneuse HTML5](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html) pour créer vos propres visionneuses de vidéos.
 
 **Pour afficher des rapports vidéo reposant sur une visionneuse de vidéos créée à l’aide du SDK de visionneuse HTML5 Dynamic Media, procédez comme suit :**
 
@@ -579,7 +579,7 @@ Utilisez le [guide de référence des visionneuses Dynamic Media](https://exper
 
 ## Ajout de légendes ou de sous-titres à la vidéo {#adding-captions-to-video}
 
-Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des légendes aux vidéos ou aux visionneuses de vidéos adaptatives. En ajoutant des sous-titrages, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs pour réenregistrer la partie audio dans les différentes langues. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langues étrangères s’affichent afin que les personnes de différentes langues puissent toujours comprendre la partie audio.
+Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des légendes aux vidéos ou aux visionneuses de vidéos adaptatives. En ajoutant des sous-titrages, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs ou des locutrices natives pour réenregistrer la partie audio dans les différentes langues. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langues étrangères s’affichent afin que les personnes de différentes langues puissent toujours comprendre la partie audio.
 
 Les légendes permettent également une plus grande accessibilité pour les personnes sourdes ou malentendantes.
 
@@ -589,27 +589,27 @@ Les légendes permettent également une plus grande accessibilité pour les pers
 
 Consultez également la section [Accessibilité dans Dynamic Media](/help/assets/accessibility-dm.md).
 
-Dynamic Media convertit les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour faciliter la découverte des vidéos et donner aux clients des détails supplémentaires sur le contenu vidéo.
+Dynamic Media convertit les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux clients et clientes des informations supplémentaires sur le contenu des vidéos.
 
 Pour plus d’informations sur l’utilisation de la fonction JSON dans une URL, reportez-vous à la section [Service de contenu statique (hors images)](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=fr#image-serving-api) dans l’*Aide de l’API de service et de rendu d’images de Dynamic Media*.
 
 **Pour ajouter des sous-titres à une vidéo :**
 
-1. Utilisez une application tierce ou un service de création de fichiers de sous-titres vidéo.
+1. Utilisez une application ou un service tiers pour créer votre fichier de légendes/sous-titres vidéo.
 
-   Assurez-vous que le fichier que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de sous-titrage est .vtt. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
+   Assurez-vous que le fichier que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier pour les sous-titres est .VTT. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
 
    Reportez-vous à la section [WebVTT : The web video text tracks format](https://w3c.github.io/webvtt/).
 
-   Il existe des outils et des services gratuits et Premium que vous pouvez utiliser pour créer des fichiers de sous-titres ou de sous-titres en dehors de Dynamic Media. Par exemple, pour créer un fichier de sous-titres vidéo simple sans style, vous pouvez utiliser l’outil de création et de modification de sous-titres en ligne gratuit suivant :
+   Il existe des outils et des services gratuits et Premium que vous pouvez utiliser pour créer des fichiers de légendes ou de sous-titres en dehors de Dynamic Media. Par exemple, pour créer un fichier de légendes vidéo simple sans style, vous pouvez utiliser l’outil de création et de modification de légendes en ligne gratuit suivant :
 
    [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   Pour de meilleurs résultats, utilisez l’outil dans Internet Explorer 9 ou version ultérieure, Google Chrome ou Safari.
+   Pour de meilleurs résultats, utilisez l’outil dans Internet Explorer 9 ou une version ultérieure, Google Chrome ou Safari.
 
    Dans l’outil, dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**, collez l’URL copiée de votre fichier vidéo, puis cliquez sur **[!UICONTROL Charger]**. Voir [Obtention d’une URL pour une ressource](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) pour obtenir l’URL du fichier vidéo proprement dit, que vous pouvez coller ensuite dans le champ **[!UICONTROL Saisir l’URL du fichier vidéo]**. Internet Explorer, Chrome ou Safari peuvent alors lire la vidéo en mode natif.
 
-   Suivez maintenant les instructions à l’écran du site pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
+   Suivez maintenant les instructions du site à l’écran pour créer et enregistrer votre fichier WebVTT. Lorsque vous avez terminé, copiez le contenu du fichier de sous-titres et collez-le dans un éditeur de texte brut, puis enregistrez-le avec une extension de fichier `.vtt`.
 
    >[!NOTE]
    >
@@ -672,7 +672,7 @@ Chapter 4
 Cost-efficient access to rapidly evolving technology.
 ```
 
-Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre de `The bicycle store behind it all` est la description réelle du contenu du chapitre. L’identifiant de repère, l’heure de repère de départ et le titre du chapitre apparaissent tous dans une fenêtre contextuelle du lecteur vidéo lorsqu’un utilisateur place le pointeur de la souris sur un point de repère visuel dans la chronologie de la vidéo.
+Dans l’exemple ci-dessus, le `Chapter 1` est l’identifiant de repère et il est facultatif. La période de repère `00:00:000 --> 01:04:364` indique l’heure de début et l’heure de fin du chapitre au format `00:00:000`. Les trois derniers chiffres sont les millisecondes et peuvent être laissés sur `000`, selon vos préférences. Le titre du chapitre « `The bicycle store behind it all` » est la description réelle du contenu du chapitre. L’identifiant du repère, l’heure de début du repère, ainsi que le titre du chapitre s’affichent tous dans une fenêtre contextuelle du lecteur vidéo lorsque vous pointez la souris sur un point de repère visuel dans la chronologie de la vidéo.
 
 Étant donné que vous utilisez une visionneuse de vidéos HTML5, assurez-vous que le fichier de chapitres que vous créez est conforme à la norme WebVTT (Web Video Text Tracks). L’extension de nom de fichier de chapitres est `.vtt`. D’autres informations sur la norme de sous-titrage WebVTT sont disponibles.
 
@@ -724,13 +724,13 @@ Une miniature vidéo est une version en taille réduite d’une image vidéo ou 
 
 Toutes les vidéos dans Experience Manager doivent être associées à une miniature. Vous ne pouvez pas supprimer une miniature sans la remplacer. Par défaut, lorsque vous chargez une vidéo sur Experience Manager, la première image est utilisée comme miniature. Cependant, vous pouvez personnaliser la miniature à des fins de valorisation de marque ou de recherche visuelle, par exemple. Lorsque vous personnalisez une miniature vidéo, vous pouvez lire la vidéo et la mettre en pause sur l’image que vous souhaitez utiliser. Vous pouvez également sélectionner une ressource d’image que vous avez déjà chargée et *publiée* dans votre gestionnaire de ressources numériques.
 
-Une image de miniature vidéo personnalisée que vous sélectionnez dans une vidéo n’est pas extraite et enregistrée dans la gestion des ressources numériques sous la forme d’une ressource séparée et distincte. Toutefois, une miniature vidéo personnalisée que vous sélectionnez dans une ressource d’image existante est enregistrée dans le JCR. Le chemin d’accès de la ressource sélectionnée est stocké sous le noeud de la ressource vidéo, comme dans l’exemple de chemin d’accès suivant :
+Une image de miniature vidéo personnalisée que vous sélectionnez dans une vidéo n’est pas extraite et enregistrée dans la gestion des DAM sous la forme d’une ressource séparée et distincte. Toutefois, une miniature vidéo personnalisée que vous sélectionnez dans une ressource d’image existante est enregistrée dans le JCR. Le chemin d’accès de la ressource sélectionnée est stocké sous le nœud de la ressource vidéo, comme dans l’exemple de chemin d’accès suivant :
 
 `/content/dam/*<folder_name*>/<*video_name*>/jcr:content/manualThumbnail`
 
 La possibilité de personnaliser une miniature vidéo n’est disponible qu’après avoir appliqué un profil vidéo au dossier où se trouve la vidéo.
 
-Voir aussi [A propos des miniatures vidéo dans Dynamic Media - mode hybride](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
+Consultez également [À propos des miniatures vidéo dans Dynamic Media en mode hybride](#about-video-thumbnails-in-dynamic-media-hybrid-mode).
 
 ### Ajout d’une miniature vidéo personnalisée {#adding-a-custom-video-thumbnail}
 
@@ -738,39 +738,39 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode �
 
 **Pour ajouter une miniature vidéo personnalisée, procédez comme suit :**
 
-1. Assurez-vous que vous avez déjà effectué les opérations suivantes :
+1. Assurez-vous que vous avez déjà :
 
-   * Création d’un dossier pour vos ressources vidéo.
+   * Créé un dossier pour vos ressources vidéo.
    * [attribué un profil vidéo au dossier](/help/assets/video-profiles.md#applying-a-video-profile-to-folders) ;
 
-   * [Chargement des vidéos dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
+   * [Téléchargé vos vidéos dans le dossier](/help/assets/managing-video-assets.md#upload-and-preview-video-assets).
 
-1. Accédez à une ressource vidéo chargée dont vous souhaitez modifier l’image miniature.
-1. En mode de sélection de ressources, soit **[!UICONTROL Mode Liste]** ou **[!UICONTROL Mode Carte]**, appuyez sur la ressource vidéo.
-1. Dans la barre d’outils, appuyez sur la **[!UICONTROL Propriétés]** icône (cercle contenant un &quot;i&quot;).
+1. Accédez à une ressource vidéo chargée pour laquelle vous souhaitez modifier l’image miniature.
+1. En mode de sélection de ressources, soit **[!UICONTROL Vue liste]** soit **[!UICONTROL Vue carte]**, appuyez sur la ressource vidéo.
+1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Propriétés]** (cercle contenant un « i »).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature]**.
-1. Sur la page Modifier la miniature, effectuez l’une des opérations suivantes :
+1. Sur la page Modifier la miniature, effectuez l’une des opérations suivantes :
 
-   * Pour utiliser une image de la vidéo comme nouvelle miniature :
+   * Pour utiliser une image de la vidéo comme nouvelle miniature :
 
       * Dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une image dans la vidéo]**.
       * Appuyez sur le bouton Lecture, puis sur le bouton Pause sur l’image à capturer comme nouvelle miniature de la vidéo.
-   * Pour utiliser une ressource image comme nouvelle miniature :
+   * Pour utiliser une ressource image comme nouvelle miniature :
 
-      * Dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une miniature dans Assets]**.
-      * Appuyer **[!UICONTROL Sélectionner la miniature]**.
-      * Accédez à une ressource d’image précédemment chargée et publiée que vous souhaitez utiliser. La ressource est automatiquement redimensionnée afin de servir d’image miniature pour la vidéo.
+      * Dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une miniature dans Ressources]**.
+      * Appuyez sur **[!UICONTROL Sélectionner la miniature]**.
+      * Accédez à une ressource d’image téléchargée et publiée précédemment que vous souhaitez utiliser. La ressource est automatiquement redimensionnée afin de servir d’image miniature pour la vidéo.
       * Sélectionnez la ressource image, puis appuyez sur **[!UICONTROL Sélectionner]**.
 
 
 1. Sur la page Modifier la miniature, appuyez sur **[!UICONTROL Enregistrer la modification]**.
 1. Sur la page Propriétés de la vidéo, dans le coin supérieur droit, appuyez sur **[!UICONTROL Enregistrer et fermer]**.
 
-## A propos des miniatures vidéo dans Dynamic Media - mode hybride {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
+## À propos des miniatures vidéo dans Dynamic Media en mode hybride {#about-video-thumbnails-in-dynamic-media-hybrid-mode}
 
 Vous pouvez choisir l’une des dix images miniatures générées automatiquement par Dynamic Media pour l’ajouter à votre vidéo. Le lecteur vidéo affiche votre miniature sélectionnée lorsqu’une ressource vidéo est utilisée avec le composant Dynamic Media dans l’environnement de création d’Experience Manager Sites, Experience Manager Mobile ou Experience Manager Screens. La miniature sert d’image statique pour représenter au mieux le contenu de votre vidéo complète et encourage davantage les utilisateurs à cliquer sur le bouton Lecture.
 
-En fonction de la durée totale de la vidéo, Dynamic Media capture dix images miniatures (par défaut). Les images sont capturées à 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % et 91 % dans la vidéo. Les dix miniatures restent, ce qui signifie que si vous décidez de sélectionner une miniature différente ultérieurement, vous n’avez pas besoin de générer de nouveau une série de miniatures. Vous prévisualisez les dix images miniatures, puis choisissez celle que vous souhaitez utiliser pour votre vidéo. Si vous souhaitez modifier cette option par défaut, vous pouvez utiliser CRXDE Lite pour configurer l’intervalle pour lequel les miniatures sont générées. Par exemple, si vous souhaitez uniquement générer une série de quatre miniatures à espacement égal à partir de votre vidéo, vous pouvez configurer l’intervalle à 24 %, 49 %, 74 % et 99 %.
+En fonction de la durée totale de la vidéo, Dynamic Media capture dix images miniatures (par défaut). Les images sont capturées à 1 %, 11 %, 21 %, 31 %, 41 %, 51 %, 61 %, 71 %, 81 % et 91 % dans la vidéo. Les dix miniatures restent, ce qui signifie que si vous décidez de sélectionner une miniature différente ultérieurement, vous n’avez pas besoin de générer de nouveau une série de miniatures. Vous prévisualisez les dix images miniatures, puis choisissez celle que vous souhaitez utiliser pour votre vidéo. Si vous souhaitez modifier cette option par défaut, vous pouvez utiliser CRXDE Lite pour configurer l’intervalle pour lequel les miniatures sont générées. Par exemple, si vous souhaitez uniquement générer une série de quatre miniatures à espacement égal à partir de votre vidéo, vous pouvez configurer l’intervalle à 24 %, 49 %, 74 % et 99 %.
 
 Idéalement, vous pouvez ajouter une miniature vidéo à tout moment après avoir téléchargé votre vidéo, mais avant de la publier sur votre site web.
 
@@ -785,17 +785,17 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode h
 **Pour ajouter une miniature vidéo, procédez comme suit :**
 
 1. Accédez à une ressource vidéo téléchargée à laquelle vous souhaitez ajouter une miniature.
-1. En mode de sélection des ressources, en mode Liste ou Carte, appuyez sur la ressource vidéo.
-1. Dans la barre d’outils, appuyez sur la **[!UICONTROL Afficher les propriétés]** icône (cercle contenant un &quot;i&quot;).
+1. En mode de sélection des ressources, en vue Liste ou Carte, appuyez sur la ressource vidéo.
+1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** (cercle contenant un i).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature]**.
 1. Sur la page Modifier la miniature, dans la barre d’outils, appuyez sur **[!UICONTROL Sélectionner une image]**.
 
    Dynamic Media génère une série de miniatures de votre vidéo, en fonction de l’intervalle par défaut ou personnalisé.
 
 1. Prévisualisez les images miniatures générées, puis sélectionnez celle que vous souhaitez ajouter à votre vidéo.
-1. Appuyer **[!UICONTROL Enregistrer la modification]**.
+1. Appuyez sur **[!UICONTROL Enregistrer la modification]**.
 
-   La miniature de la vidéo est mise à jour afin d’utiliser la miniature que vous avez sélectionnée. Si vous décidez par la suite de modifier la miniature, vous pouvez revenir au **[!UICONTROL Modifier la miniature]** et sélectionnez-en une nouvelle.
+   La miniature de la vidéo est mise à jour afin d’utiliser la miniature que vous avez sélectionnée. Si vous décidez par la suite de modifier la miniature, vous pouvez revenir à la page **[!UICONTROL Modifier la miniature]** et en sélectionner une nouvelle.
 
    Si vous avez configuré des intervalles par défaut ou si vous avez chargé une nouvelle vidéo pour remplacer la vidéo existante, vous devrez générer de nouveau des miniatures via Dynamic Media.
 
@@ -834,18 +834,18 @@ Ces étapes s’appliquent uniquement à Dynamic Media s’exécutant en mode h
 **Pour ajouter une miniature vidéo personnalisée, procédez comme suit :**
 
 1. Accédez à une ressource vidéo chargée à laquelle vous souhaitez ajouter une miniature vidéo personnalisée.
-1. En mode de sélection des ressources, en mode Liste ou Carte, appuyez sur la ressource vidéo.
-1. Dans la barre d’outils, appuyez sur la **[!UICONTROL Afficher les propriétés]** icône (cercle contenant un &quot;i&quot;).
+1. En mode de sélection des ressources, en vue Liste ou Carte, appuyez sur la ressource vidéo.
+1. Dans la barre d’outils, appuyez sur l’icône **[!UICONTROL Afficher les propriétés]** (cercle contenant un i).
 1. Sur la page Propriétés de la vidéo, appuyez sur **[!UICONTROL Modifier la miniature]**.
 1. Sur la page Modifier la miniature, dans la barre d’outils, appuyez sur **[!UICONTROL Charger une nouvelle miniature]**.
-1. Accédez à une miniature que vous souhaitez utiliser, sélectionnez-la, puis appuyez sur **[!UICONTROL Ouvrir]** pour commencer à charger l’image dans Experience Manager. Après le téléchargement, veillez à publier l’image.
+1. Naviguez jusqu’à la miniature que vous souhaitez utiliser, sélectionnez-la, puis appuyez sur **[!UICONTROL Ouvrir]** pour commencer à charger l’image dans Experience Manager. Après le téléchargement, veillez à publier l’image.
 1. Une fois l’image téléchargée et publiée, sur la page Modifier la miniature, appuyez sur **[!UICONTROL Enregistrer les modifications]**.
 
    La miniature personnalisée est ajoutée à votre vidéo.
 
-## Modifier l’URL de Dynamic Media pour les ressources Dynamic Media {#manifest-urls}
+## Modifier l’URL Dynamic Media pour les ressources Dynamic Media {#manifest-urls}
 
-Les vidéos traitées dans Dynamic Media peuvent être utilisées par le biais de visionneuses prêtes à l’emploi, mais aussi en accédant directement aux URL de manifeste et en les lisant via vos propres visionneuses personnalisées. Le contenu ci-dessous vous présente l’API pour récupérer les URL de manifeste d’une vidéo.
+Les vidéos traitées dans Dynamic Media peuvent être utilisées par le biais de visionneuses prêtes à l’emploi, mais aussi en accédant directement aux URL de manifeste et en les lisant via vos propres visionneuses personnalisées. Voici l’API permettant de récupérer les URL de manifeste d’une vidéo.
 
 ### À propos de l’API getVideoManifestURI
 
@@ -875,7 +875,7 @@ Cette API utilise les trois paramètres suivants :
 | `manifestType` | Peut être `ManifestType.DASH` ou `ManifestType.HLS` |
 | `onlyIfPublished` | Définissez cette variable sur true au cas où l’uri de manifeste n’est générée que si elle est publiée et disponible au niveau de la diffusion. |
 
-Pour récupérer les URL de manifeste des vidéos à l’aide de la méthode ci-dessus, ajoutez un [profil de codage vidéo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) dans un dossier « charger des vidéos ». Dynamic Media traite ces vidéos en fonction des encodages trouvés dans le fichier de codage vidéo qui a été affecté au dossier. Vous pouvez maintenant appeler l’API ci-dessus pour récupérer les URL de manifeste pour les vidéos chargées.
+Pour récupérer les URL de manifeste des vidéos à l’aide de la méthode ci-dessus, ajoutez un [profil de codage vidéo](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming) dans un dossier « charger des vidéos ». Dynamic Media traite ces vidéos en fonction des codages trouvés dans le fichier de codage vidéo qui a été affecté au dossier. Vous pouvez maintenant appeler l’API ci-dessus pour récupérer les URL de manifeste pour les vidéos chargées.
 
 ### Scénarios d’erreur
 
@@ -883,16 +883,16 @@ L’API renvoie la valeur null en cas d’erreur. Les exceptions sont consignée
 
 * Une `IllegalArgumentException` est consignée pour l’un des éléments suivants :
 
-   * Le paramètre `resource` transmis est une valeur nulle.
+   * Le paramètre `resource` transmis est une valeur null.
    * Le paramètre `resource` transmis n’est pas une vidéo.
-   * Le paramètre `manifestType` transmis est une valeur nulle.
+   * Le paramètre `manifestType` transmis est une valeur null.
    * Le paramètre `onlyIfPublished` transmis est réel, mais la vidéo n’est pas publiée.
-   * La vidéo n’a pas été ingérée à l’aide d’une visionneuse de vidéos adaptatives provenant de Dynamic Media.
+   * La vidéo n’a pas été ingérée à l’aide d’une visionneuse de vidéos à débit adaptatif provenant de Dynamic Media.
 
 * `IOException` est consignée lorsqu’un problème de connexion à Dynamic Media se produit.
 * `UnsupportedOperationException` est consignée lorsqu’un paramètre `manifestType` transmis est `ManifestType.DASH`, alors que la vidéo n’a pas été traitée au format DASH.
 
-Voici un exemple de l’API ci-dessus utilisant des servlets écrits dans *HTTPWhiteBoard* spécification. Sélectionnez chaque onglet pour la syntaxe du code.
+Voici un exemple de l’API ci-dessus utilisant des servlets écrits dans la spécification *HTTPWhiteBoard*. Sélectionnez chaque onglet pour la syntaxe du code.
 
 >[!BEGINTABS]
 
@@ -1020,9 +1020,9 @@ public abstract class VideoResponse {
 
 +++
 
->[!TAB Fichier de constantes référencé dans le servlet]
+>[!TAB Fichier des constantes référencé dans le servlet]
 
-+++**Fichier de constantes référencé dans le servlet**
++++**Fichier des constantes référencé dans le servlet**
 
 ```java
 public final class Constants { 
@@ -1043,7 +1043,7 @@ public final class Constants {
 
 +++**ServletContext**
 
-Montez le servlet ci-dessus à l’aide d’une `servletContext`. Voici un exemple de `servletContext`.
+Montez le servlet ci-dessus à l’aide d’un `servletContext`. Voici un exemple de `servletContext`.
 
 ```java
 public class DMSampleApiHttpContext extends ServletContextHelper { 
@@ -1151,29 +1151,29 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 
 >[!ENDTABS]
 
-### Utilisation de l’exemple de servlet
+### Utiliser l’exemple de servlet
 
-Vous appelez le servlet en effectuant une `GET` operation `/dmSample/dynamicmedia/video/manifestUrl`. Les paramètres de requête suivants sont transmis :
+Vous appelez le servlet en effectuant une opération `GET` sur `/dmSample/dynamicmedia/video/manifestUrl`. Les paramètres de requête suivants sont transmis :
 
 | Paramètre de requête | Description |
 | --- | --- |
-| `assetPath` | Obligatoire. Chemin d’accès à la vidéo pour laquelle `manifestUrl` est généré. |
+| `assetPath` | Obligatoire. Chemin d’accès à la vidéo pour laquelle `manifestUrl` est générée. |
 | `manifestType` | Facultatif. Le paramètre peut être DASH ou HLS. S’il n’est pas transmis, la valeur par défaut est DASH. |
-| `onlyIfPublished` | Facultatif. Si elle est transmise, la variable `manifestUrl` est renvoyée uniquement si la vidéo est publiée. |
+| `onlyIfPublished` | Facultatif. S’il est transmis, l’`manifestUrl` est renvoyée uniquement si la vidéo est publiée. |
 
-Dans cet exemple, supposons la configuration suivante :
+Dans cet exemple, prenons la configuration suivante :
 
 * La société est `samplecompany`.
 * L’instance de création est `http://sample-aem-author.com`.
 * Le dossier `/content/dam/video-example` est associé à un profil de codage vidéo.
-* La vidéo `scenery.mp4` est chargé dans le dossier `/content/dam/video-example`.
+* La vidéo `scenery.mp4` est chargée dans le dossier `/content/dam/video-example`.
 
-Vous pouvez appeler le servlet de la manière suivante :
+Vous pouvez appeler le servlet de la manière suivante :
 
 | Type | Description |
 | :--- | --- |
-| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la diffusion DASH est activée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>Si la diffusion DASH est désactivée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
-| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la diffusion DASH est activée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>Si la diffusion DASH est désactivée :<br>`{}` |
-| Erreur : chemin d’accès à la ressource incorrect | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
+| HLS | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=HLS&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la diffusion DASH est activée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8?packagedStreaming=true"}`<br><br>Si la diffusion DASH est désactivée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.m3u8"}` |
+| DASH | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scenery.mp4`<br><br>Si la diffusion DASH est activée :<br>`{"manifestUrl":"https://s7d1.scene7.com/is/content/samplecompany/scenery-AVS.mpd"}`<br><br>Si la diffusion DASH est désactivée :<br>`{}` |
+| Erreur : chemin d’accès à la ressource incorrect | `http://sample-aem-author.com/dmSample/dynamicmedia/video/manifestUrl?manifestType=DASH&assetPath=/content/dam/video-example/scennnnnnery.mp4`<br><br>`{"errorString":"could not retrieve the resource from JCR"}` |
 
 

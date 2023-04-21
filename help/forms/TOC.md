@@ -11,7 +11,7 @@ role: User
 source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
 workflow-type: tm+mt
 source-wordcount: '3846'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -211,7 +211,7 @@ ht-degree: 97%
    + [Interaction de Backbone](using/backbone-interaction.md)
    + [Description des composants réutilisables](using/description-reusable-components.md)
    + [Détails du document pour le moteur de rendu](using/document-details-renderer.md)
-   + [Intégration des composants de l’espace de travail AEM Forms dans les applications web](using/integrating-html-ws-components-web.md)
+   + [Intégration des composants de l’espace de travail AEM Forms dans des applications Web](using/integrating-html-ws-components-web.md)
    + [Nouveau service de rendu et d’envoi](using/new-render-submit-service.md)
    + [Présentation de la structure de dossiers](using/folder-structure.md)
    + [Intégration d’applications tierces à l’espace de travail AEM Forms](using/integrating-correspondence-management-html-workspace.md)
@@ -225,8 +225,8 @@ ht-degree: 97%
    + [Personnalisation de la page Détails de la tâche](using/customizing-task-details-page.md)
    + [Personnalisation de la liste des instances de processus](using/customizing-listing-process-instances.md)
    + [Personnalisation des actions de tâche](using/customizing-task-actions.md)
-   + [Affichage de données supplémentaires dans la liste Tâches](using/display-additional-data-in-todo-list.md)
-   + [Obtention de variables de tâche dans l’URL de résumé](using/getting-task-variables-summary-url.md)
+   + [Affichage des données supplémentaires dans la liste de tâches](using/display-additional-data-in-todo-list.md)
+   + [Obtention des variables de tâche dans l’URL de résumé](using/getting-task-variables-summary-url.md)
    + [Personnalisation des images utilisées dans les actions d’itinéraire](using/images-route-actions.md)
    + [Minimisation des fichiers JavaScript](using/minification-javascript-files.md)
    + [Personnalisation des tableaux de suivi](using/sorting-tracking-tables-add-columns.md)
@@ -247,8 +247,8 @@ ht-degree: 97%
    + [Authentification unique et gestionnaires de temporisation](using/single-sign-timeout-handlers.md)
    + [Utilisation d’un formulaire adaptatif dans Workspace HTML](using/using-adaptive-form-html-workspace.md)
    + [Intégration d’AEM Forms Workspace à Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
-   + [Utilisation de listes de tâches](using/todo-lists.md)
-   + [Conseils de dépannage pour l’espace de travail AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
+   + [Utilisation des listes de tâches](using/todo-lists.md)
+   + [Conseils de dépannage pour l’espace de travail AEM Forms](using/troubleshooting-guidelines-html-workspace.md)
 + Application AEM Forms {#aem-forms-app}
    + [Présentation de l’application AEM Forms](using/aem-forms-app.md)
    + [Configuration de l’environnement de l’application AEM Forms](using/setup-environment-mobile-workspace.md)
@@ -351,8 +351,8 @@ ht-degree: 97%
    + [Utilisation de métadonnées dans une notification électronique](using/use-metadata-in-email-notifications.md)
 + Portail Formulaires {#use-forms-portal}
    + [Personnalisation de modèles pour les composants Forms Portal](using/customizing-templates-forms-portal-components.md)
-   + [Activation des composants de Forms Portal](using/enabling-forms-portal-components.md)
-   + [Création d’une page Forms Portal](using/creating-form-portal-page.md)
+   + [Activation des composants du portail Formulaires](using/enabling-forms-portal-components.md)
+   + [Création d’une page du portail Formulaires](using/creating-form-portal-page.md)
    + [API pour travailler avec des formulaires envoyés sur le portail de formulaires](using/report-submitted-data-forms.md)
    + [Stockage personnalisé pour le composant Brouillons et envois](using/adding-custom-storage-provider-forms.md)
 + Services de document {#use-document-services}
@@ -454,7 +454,7 @@ ht-degree: 97%
       + [Configuration des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Configuration de l’authentification oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Configuration des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [Configuration des points de fin Watched Folder](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+      + [Configuration des points d’entrée des dossiers de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Configuration des points de fin Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Types de points de fin](/help/forms/using/admin-help/types-endpoints.md)
    + Configuration des extensions d’Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
@@ -470,7 +470,7 @@ ht-degree: 97%
    + Utilisation de PDF Generator {#work-with-pdf-generator}
       + [Introduction à l’utilisation de PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Activation des conversions de fichiers multithreads](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
-      + [Configuration des paramètres Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
+      + [Configuration des paramètres Adobe PDF](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Configuration des paramètres de sécurité](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Configuration des paramètres de type de fichier](/help/forms/using/admin-help/configuring-file-type-settings.md)
       + [Importer et exporter les fichiers de configuration de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
@@ -528,7 +528,7 @@ ht-degree: 97%
    + Configuration de Workspace {#configure-workspace}
       + [Présentation de l’espace de travail](/help/forms/using/admin-help/overview-10.md)
       + [Importation et exportation des paramètres globaux](/help/forms/using/admin-help/importing-exporting-global-settings.md)
-      + [Définition du message du jour](/help/forms/using/admin-help/setting-message-day.md)
+      + [Configuration du message du jour](/help/forms/using/admin-help/setting-message-day.md)
       + [Personnalisation des modèles de recherche](/help/forms/using/admin-help/customizing-search-templates.md)
       + [Gestion des catégories affichées dans Workspace](/help/forms/using/admin-help/categories-displayed-workspace.md)
    + Health Monitor {#health-monitor}
@@ -689,7 +689,7 @@ ht-degree: 97%
    + [Impossible d’ouvrir les formulaires PDF XFA dans Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer ou Apple Safari.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [Impossible de restaurer le référentiel CRX.](/help/forms/using/restore-crx-repository.md)
    + [Erreurs de service indisponible après l’installation du pack de services AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
-   + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement Linux de JBoss](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
    + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)

@@ -5,7 +5,7 @@ exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '1335'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -269,7 +269,7 @@ Les modèles de fragment seront utilisés :
 
 ### Où tester vos requêtes {#where-to-test-your-queries}
 
-Les requêtes peuvent être saisies dans la variable [Interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), par exemple à l’adresse :
+Les requêtes peuvent être entrées dans l’[interface GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md), par exemple à l’adresse :
 
 * `http://localhost:4502/aem/graphiql.html`
 
@@ -348,7 +348,7 @@ query {
 Pour obtenir des détails complets sur l’utilisation de l’API AEM GraphQL, ainsi que la configuration des éléments nécessaires, vous pouvez vous référer aux sections suivantes :
 
 * Apprendre à utiliser GraphQL avec AEM ;
-* l’exemple de structure de fragment de contenu ;
+* L’exemple de structure de fragment de contenu ;
 * Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 
 ## Et après ? {#whats-next}
@@ -365,7 +365,7 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
 * [Apprendre à utiliser GraphQL avec AEM ;](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * [Activation de votre point d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
    * [Installation de l’interface AEM GraphiQL](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [l’exemple de structure de fragment de contenu ;](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [L’exemple de structure de fragment de contenu ;](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
    * [Exemple de requête – Un fragment de ville unique et spécifique](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
    * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
