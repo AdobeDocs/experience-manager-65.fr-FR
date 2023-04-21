@@ -8,9 +8,9 @@ role: User, Admin
 exl-id: 8aa779e0-cf76-45a7-a474-556fdfded31b
 feature: Collaboration,Dynamic Media Classic
 source-git-commit: a7f1f41d54663b753bc22c6e5d54b4cb621609fd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1077'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez les webinaires Skill Builder à la demande pour Dynamic Media Classic.
    * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
    * En savoir plus sur les audits gratuits Dynamic Media Classic d’Adobe.
-   * Respecter `Jon Monroe`, responsable de programme senior pour les solutions clients d’Adobe.
+   * Faites la connaissance de `Jon Monroe`, responsable de programme senior pour Adobe Customer Solutions.
 
 * **[Février 2020, numéro 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=fr)**
 
@@ -65,7 +65,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Explorez les puissantes fonctions de recadrage de Dynamic Media.
    * Profitez d’un audit gratuit d’Adobe pour vous aider à exploiter tout le potentiel de Dynamic Media Classic.
    * Découvrez la nouvelle interface utilisateur Dynamic Media Classic.
-   * Respecter `Georgia Myers` de l’équipe du compte d’Adobe pour Adobe Experience Cloud.
+   * Faites la connaissance de `Georgia Myers` de l’équipe du compte d’Adobe pour Adobe Experience Cloud.
 
 * **[Janvier 2020, numéro 1](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_01_2020_Jan.html?lang=fr)**
 
