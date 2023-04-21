@@ -1,16 +1,17 @@
 ---
 title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: tm+mt
+exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
+source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
+workflow-type: ht
 source-wordcount: '792'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Utilisation de l’IDE GraphiQL {#graphiql-ide}
 
-Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-http/#graphiql) standard est disponible pour une utilisation avec l’API GraphQL d’Adobe Experience Manager (AEM).
+Une mise en œuvre de l’IDE [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) standard est disponible pour une utilisation avec l’API GraphQL d’Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
@@ -131,7 +132,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## Publier des requêtes persistantes {#publishing-persisted-queries}
 
-Une fois que vous avez sélectionné votre [requête persistante](/help/sites-developing/headless/graphql-api/persisted-queries.md) dans la liste (panneau de gauche), vous pouvez utiliser la variable **Publier** et **Annuler la publication** actions. Cette opération les active dans votre environnement de publication (par exemple `dev-publish`) pour faciliter l’accès selon vos applications lors des tests.
+Une fois que vous avez sélectionné votre [requête persistante](/help/sites-developing/headless/graphql-api/persisted-queries.md) dans la liste (panneau de gauche), vous pouvez utiliser les actions **Publier** et **Dépublier**. Cette opération les active dans votre environnement de publication (par exemple `dev-publish`) pour faciliter l’accès selon vos applications lors des tests.
 
 >[!NOTE]
 >
