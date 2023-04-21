@@ -11,15 +11,15 @@ role: User, Admin
 exl-id: d62275f0-02a4-48c9-bfb1-e23d63b618c9
 feature: Configuration
 source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1279'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Liaison d’URL à votre application web {#linking-urls-to-your-web-application}
 
-Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Une fois que vous avez publié une ressource, Dynamic Media active une chaîne d’URL qui fait référence à la ressource. Vous pouvez coller ces URL dans un navigateur web à des fins de test.
+Vos applications et sites web accèdent aux services Dynamic Media par l’intermédiaire d’appels d’URL. Après la publication d’une ressource, Dynamic Media active une chaîne d’URL qui référence la ressource. Vous pouvez coller ces URL dans un navigateur Web à des fins de test.
 
 Vous ne pouvez lier ces URL que si vous *n’utilisez pas* Experience Manager pour la gestion de contenu web. La liaison, à la différence de l’intégration, est utilisée lorsque vous souhaitez présenter un lecteur vidéo dans une fenêtre contextuelle ou modale. Dans le cas contraire, [vous pouvez ajouter les ressources directement à votre page](adding-dynamic-media-assets-to-pages.md).
 
@@ -39,7 +39,7 @@ Consultez également la section [Chargement de ressources](manage-assets.md#uplo
 
 ## Obtention d’une URL pour une ressource {#obtaining-a-url-for-an-asset}
 
-Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’image prédéfini ou un paramètre prédéfini de la visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
+Vous pouvez obtenir une chaîne d’URL générée par un paramètre prédéfini d’image ou de visionneuse. Une fois que vous avez copié l’URL, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’ima
 >
 >Voir [Publication de paramètres d’image prédéfinis](managing-image-presets.md#publishing-image-presets).
 
-Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étapes ci-dessous ne vous présentent qu’une seule méthode.
+Il existe plusieurs manières d’obtenir une chaîne d’URL. Toutefois, les étapes ci-dessous ne vous montrent qu’une seule méthode que vous pouvez utiliser.
 
 **Obtention de l’URL d’une ressource :**
 
@@ -89,7 +89,7 @@ Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étape
 
 ## Obtention d’une URL pour une ressource statique {#obtaining-a-url-for-a-static-asset}
 
-Dynamic Media prend en charge le déploiement de ressources statiques, qui sont des ressources supplémentaires au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
+Dynamic Media prend en charge la diffusion de ressources statiques, qui sont des ressources supplémentaires au-delà des images et de la vidéo. Les formats de ressources statiques pris en charge pour la diffusion comprennent les formats suivants :
 
 * Fichiers 3D
 * GIF animé
@@ -158,7 +158,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Il s’agit de l’URL vidéo complète d’un rendu vidéo publié.
 
-## Obtention d’une URL de vidéo pour la diffusion en continu à débit adaptatif (DASH ou HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtenir une URL de vidéo pour la diffusion en continu à débit adaptatif (DASH ou HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud]** > **[!UICONTROL Services Cloud]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis sélectionnez **[!UICONTROL Afficher les configurations]**.
@@ -203,6 +203,6 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
 ## Utilisation de HTTP/2 pour diffuser vos ressources Dynamic Media {#using-http-to-deliver-your-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](http2.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
