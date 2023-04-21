@@ -3,7 +3,7 @@ title: AEM Content and Commerce
 description: Découvrez comment utiliser et administrer AEM Content and Commerce, avec nos articles utiles sur les intégrations et sur la prise en main d’AEM Storefront.
 exl-id: b5b074e7-6da7-49ed-9cdb-f7c37d08e08c
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '336'
 ht-degree: 100%
 
