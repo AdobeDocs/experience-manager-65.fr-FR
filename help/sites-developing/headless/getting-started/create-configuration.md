@@ -3,7 +3,7 @@ title: Guide de prise en main pour la création découplée d’une configuratio
 description: Créez une configuration comme première étape de prise en main d’AEM 6.5 en mode découplé.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
 ht-degree: 100%
 
