@@ -12,9 +12,9 @@ docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 source-git-commit: a98550c11405e6d0f43ff7ed8905644a3aedd78c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ AEM 6.5 Forms comporte plusieurs nouvelles fonctionnalités et améliorations 
 
 Vous pouvez mettre à niveau votre installation LiveCycle ou AEM Forms pour obtenir les nouvelles fonctionnalités et améliorations proposées dans AEM 6.5 Forms tout en conservant intactes les données, processus et actifs existants. Lors de la mise à niveau, les métadonnées et l’état des processus sont également conservés. Vous pouvez choisir un chemin de mise à niveau pour commencer la mise à niveau.
 
-Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on OSGi :
+Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on OSGi :
 
 ![](do-not-localize/osgi-upgrade-path.png)
 
@@ -39,7 +39,7 @@ Vous pouvez également effectuer une mise à niveau en plusieurs étapes depuis
 * AEM 6.1 Forms on OSGi
 * AEM 6.2 Forms on OSGi
 
-Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on JEE :
+Le diagramme suivant affiche les chemins de mise à niveau disponibles pour AEM Forms on JEE :
 
 ![](do-not-localize/jee-upgrade-6-5.png)
 
@@ -66,7 +66,7 @@ AEM 6.5.12.0 Forms on JEE fournit deux types de programme d’installation : l
 
 L’image suivante illustre les scénarios d’utilisation du programme d’installation complet et des correctifs.
 
-![Programme d’installation complet et correctif](/help/forms/using/assets/full-and-patch-installer.png)
+![Programme d’installation complet et programme d’installation de correctifs](/help/forms/using/assets/full-and-patch-installer.png)
 
 <!--
 [Work in Progress]
