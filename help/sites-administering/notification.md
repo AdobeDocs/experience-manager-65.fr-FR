@@ -1,7 +1,7 @@
 ---
 title: Configurer les notifications par e-mail
 seo-title: Configuring Email Notification
-description: Découvrez comment configurer les notifications électroniques dans AEM.
+description: Découvrez comment configurer la notification électronique dans AEM.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
@@ -10,25 +10,25 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
-workflow-type: ht
+source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
+workflow-type: tm+mt
 source-wordcount: '2116'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
 # Configurer les notifications par e-mail{#configuring-email-notification}
 
-AEM envoie des notifications aux utilisateurs qui :
+AEM envoie des notifications par e-mail aux utilisateurs qui :
 
 * Ont souscrit aux événements de pages, par exemple la modification ou la réplication. La section [Boîte de réception de notifications](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) décrit comment s’abonner à ces événements.
 
-* Ont souscrit aux événements de forums.
-* Doivent effectuer une opération dans un workflow. La section [Étape du participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher la notification électronique dans un workflow.
+* Ont souscrit aux événements de forum.
+* Doivent effectuer une opération dans un workflow. Le [Étape du participant](/help/sites-developing/workflows-step-ref.md#participant-step) décrit comment déclencher une notification électronique dans un workflow.
 
 Conditions préalables :
 
-* L’utilisateur doit disposer d’une adresse électronique valide définie dans son profil.
+* Une adresse email valide doit être définie dans son profil pour le ou les utilisateurs.
 * Le **Service de messagerie Day CQ** doit être correctement configuré.
 
 Lorsque l’utilisateur est averti, il reçoit un courrier électronique dans la langue définie dans son profil. Chaque langue possède son propre modèle, qui peut être personnalisé. De nouveaux modèles de courrier électronique peuvent être ajoutés pour de nouvelles langues.
@@ -67,11 +67,11 @@ Pour configurer l’adresse électronique De, ajoutez un nœud `sling:OsgiConfig
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` de type `sling:OsgiConfig`
 
-1. Ajoutez une propriété `String` au nœud nommé `email.from`. Pour la valeur, indiquez l’adresse électronique que vous souhaitez utiliser.
+1. Ajoutez une propriété `String` au nœud nommé `email.from`. Pour la valeur , indiquez l’adresse électronique à utiliser.
 
 1. Cliquez sur **Enregistrer tout**.
 
-Utilisez la procédure suivante pour définir le nœud dans vos dossiers sources de module de contenu :
+Procédez comme suit pour définir le noeud dans les dossiers source de votre package de contenu :
 
 1. Dans votre `jcr_root/apps/*app_name*/config folder`, créez un fichier nommé `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`.
 
@@ -84,15 +84,15 @@ Utilisez la procédure suivante pour définir le nœud dans vos dossiers sources
 
 ## Configuration du service de notification électronique de workflow {#configuring-the-workflow-email-notification-service}
 
-Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Dans ce cas, il est recommandé de conserver le changement dans le référentiel.
+Lorsque vous recevez des notifications électroniques de workflow, l’adresse électronique De et le préfixe URL hôte sont définis sur les valeurs par défaut. Vous pouvez modifier ces valeurs en configurant le **service de notification électronique de workflow Day CQ** dans la console Web. Si vous le faites, il est recommandé de conserver la modification dans le référentiel.
 
-La configuration par défaut se présente comme suit dans la console Web :
+La configuration par défaut se présente comme suit dans la console web :
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
 ### Modèles de courrier électronique pour la notification de page {#email-templates-for-page-notification}
 
-Les modèles de courrier électronique pour les notifications de page se trouvent à l’emplacement suivant :
+Les modèles de courrier électronique pour les notifications de page se trouvent ci-dessous :
 
 `/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
@@ -123,10 +123,10 @@ Pour personnaliser le modèle d’e-mail en anglais en vue de la notification de
 
    `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
-1. Modifiez le fichier en fonction de vos besoins.
+1. Modifiez le fichier selon vos besoins.
 1. Enregistrez les modifications.
 
-Le modèle doit avoir le format suivant :
+Le modèle doit avoir le format suivant :
 
 ```
  subject=<text_1>
@@ -135,7 +135,7 @@ Le modèle doit avoir le format suivant :
  footer=<text_4>
 ```
 
-&lt;text_x> pouvant combiner du texte statique et des variables de chaînes dynamiques. Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique pour les notifications de page :
+&lt;text_x> pouvant combiner du texte statique et des variables de chaînes dynamiques. Les variables suivantes peuvent être utilisées dans le modèle de courrier électronique pour les notifications de page :
 
 * `${time}`, la date et l’heure de l’événement.
 
@@ -152,7 +152,7 @@ Le modèle doit avoir le format suivant :
 
 ### Modèles de courrier électronique pour les notifications de forum {#email-templates-for-forum-notification}
 
-Les modèles de courrier électronique pour les notifications de forum se trouvent dans l’emplacement suivant :
+Les modèles de courrier électronique pour les notifications de forum se trouvent sous :
 
 `/etc/notification/email/default/com.day.cq.collab.forum`
 
@@ -181,10 +181,10 @@ Pour personnaliser le modèle d’e-mail en anglais en vue de la notification de
 
    `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
 
-1. Modifiez le fichier en fonction de vos besoins.
+1. Modifiez le fichier selon vos besoins.
 1. Enregistrez les modifications.
 
-Le modèle doit avoir le format suivant :
+Le modèle doit avoir le format suivant :
 
 ```
  subject=<text_1>
@@ -203,11 +203,11 @@ Les variables suivantes peuvent être utilisées dans le modèle d’e-mail pour
 
 ### Modèles de courrier électronique pour la notification de workflow {#email-templates-for-workflow-notification}
 
-Le modèle de courrier électronique pour les notifications de workflow (en anglais) se trouve à l’emplacement suivant :
+Le modèle de courrier électronique pour les notifications de workflow (en anglais) se trouve à l’adresse :
 
 `/libs/settings/workflow/notification/email/default/en.txt`
 
-Il est défini comme suit :
+Elle se définit comme suit :
 
 ```xml
 subject=Workflow notification: ${event.EventType}
@@ -228,7 +228,7 @@ View the overview in your ${host.prefix}/aem/inbox\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### Personnalisation des modèles de courrier électronique pour la notification de workflow {#customizing-email-templates-for-workflow-notification}
+#### Personnalisation des modèles de courrier électronique pour les notifications de workflow {#customizing-email-templates-for-workflow-notification}
 
 Pour personnaliser le modèle d’e-mail en anglais en vue de la notification d’événement de workflow :
 
@@ -236,10 +236,10 @@ Pour personnaliser le modèle d’e-mail en anglais en vue de la notification d�
 
    `/libs/settings/workflow/notification/email/default/en.txt`
 
-1. Modifiez le fichier en fonction de vos besoins.
+1. Modifiez le fichier selon vos besoins.
 1. Enregistrez les modifications.
 
-Le modèle doit avoir le format suivant :
+Le modèle doit avoir le format suivant :
 
 ```
 subject=<text_1>
@@ -288,7 +288,7 @@ Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
 ### Ajout d’un modèle de courrier électronique pour une nouvelle langue {#adding-an-email-template-for-a-new-language}
 
-Pour ajouter un modèle pour une nouvelle langue :
+Pour ajouter un modèle pour une nouvelle langue :
 
 1. Dans CRXDE, ajoutez un fichier `<language-code>.txt` ci-dessous :
 
@@ -303,13 +303,13 @@ Pour ajouter un modèle pour une nouvelle langue :
 >
 >Le `<language-code>` utilisé comme nom de fichier du modèle d’e-mail doit être un code de langue à deux lettres en minuscules reconnu par AEM. Pour les codes de langue, AEM s’appuie sur la norme ISO-639-1.
 
-## Configuration des notifications électroniques d’AEM Assets {#assetsconfig}
+## Configuration des notifications électroniques AEM Assets {#assetsconfig}
 
-Quand les collections dans AEM Assets sont partagées ou non, les utilisateurs peuvent recevoir des notifications électroniques de la part d’AEM. Pour configurer les notifications électroniques, procédez comme suit.
+Lorsque des collections dans AEM Assets sont partagées ou non partagées, les utilisateurs peuvent recevoir des notifications par e-mail d’AEM. Pour configurer les notifications par courrier électronique, procédez comme suit.
 
 1. Configurez le service de messagerie, comme décrit ci-dessus dans [Configuration du service de messagerie](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. Connectez-vous à AEM en tant qu’administrateur. Cliquez sur **Outils** > **Opérations** > **Console web** pour ouvrir la configuration de la console web.
-1. Modifiez la **servlet de collection de ressources de la gestion des actifs numériques Day CQ**. Sélectionnez **Envoyer un courrier électronique**. Cliquez sur **Enregistrer**.
+1. Modifier **Servlet de collecte des ressources de la gestion des actifs numériques Day CQ**. Sélectionner **envoyer un email**. Cliquez sur **Enregistrer**.
 
 ## Configuration d’OAuth {#setting-up-oauth}
 
@@ -464,6 +464,6 @@ Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant com
 Enfin, confirmez la configuration en procédant comme suit :
 
 1. Accédez à l’adresse de l’instance de publication et connectez-vous en tant qu’administrateur.
-1. Ouvrez un nouvel onglet dans le navigateur et accédez à `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Vous serez redirigé vers la page de votre fournisseur SMTP, dans ce cas Gmail.
+1. Ouvrez un nouvel onglet dans le navigateur et accédez à `http://serveraddress:serverport/services/mailer/oauth2/authorize`. Vous serez redirigé vers la page de votre fournisseur SMTP, dans ce cas Outlook.
 1. Connexion et consentement pour accorder les autorisations requises
 1. Une fois le consentement accordé, le jeton est stocké dans le référentiel. Vous pouvez y accéder sous `accessToken` en accédant directement à cette URL sur votre instance de publication : `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
