@@ -1,5 +1,5 @@
 ---
-title: Vidéo dans la création Sites Classic
+title: Vidéo de l’instance de création Sites Classic
 description: Les ressources fournissent une gestion du contenu vidéo centralisée où vous pouvez charger des vidéos directement dans les ressources pour un codage automatique sur Dynamic Media Classic et accéder aux vidéos Dy directement depuis les Assets à des fins de création de page.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1682'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,14 +25,14 @@ L’intégration vidéo de Dynamic Media Classic étend la portée de la vidé
 
 ## À propos de FFMPEG et Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une intégration basée sur FFMPEG aux profils vidéo. De ce fait, le workflow de [!UICONTROL mise à jour de la ressource de gestion des ressources numériques] prêt à l’emploi contient les deux étapes suivantes du workflow basé sur FFMPEG :
+Le workflow de codage vidéo par défaut est basé sur l’utilisation d’une intégration basée sur FFMPEG aux profils vidéo. De ce fait, le workflow de [!UICONTROL mise à jour de la ressource de gestion des DAM] prêt à l’emploi contient les deux étapes suivantes du workflow basé sur FFMPEG :
 
 * Miniatures FFMPEG
-* Codage FFMPEG
+* Encodage FFMPEG
 
-Gardez à l’esprit que l’activation et la configuration de l’intégration ne suppriment ou ne désactivent pas automatiquement ces deux étapes du workflow de [!UICONTROL mise à jour de la ressource de gestion des ressources numériques] prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans Adobe Experience Manager, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide d’Experience Manager Assets est codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration Dynamic Media Classic.
+Gardez à l’esprit que l’activation et la configuration de l’intégration ne suppriment ou ne désactivent pas automatiquement ces deux étapes du workflow de [!UICONTROL mise à jour de la ressource de gestion des DAM] prêt à l’emploi. Si vous utilisez déjà le codage vidéo FFMPEG dans Adobe Experience Manager, il est probable que FFMPEG soit installé dans vos environnements de création. Dans ce cas, une nouvelle vidéo ingérée à l’aide d’Experience Manager Assets est codée deux fois : une fois à partir de l’encodeur FFMPEG et une fois à partir de l’intégration Dynamic Media Classic.
 
-Si le codage vidéo FFMPEG est configuré dans Experience Manager et que FFMPEG est installé, Adobe recommande de supprimer les deux workflows FFMPEG des workflows de mise à jour des ressources de [!UICONTROL gestion des ressources numériques].
+Si le codage vidéo FFMPEG est configuré dans Experience Manager et que FFMPEG est installé, Adobe recommande de supprimer les deux workflows FFMPEG des workflows de mise à jour des ressources de [!UICONTROL gestion des DAM].
 
 ### Formats pris en charge {#supported-formats}
 
@@ -43,16 +43,16 @@ Les formats suivants sont pris en charge pour le composant vidéo Dynamic Media
 
 ### Choix de l’emplacement du chargement de la vidéo {#deciding-where-to-upload-your-video}
 
-Le choix de l’emplacement du téléchargement du contenu vidéo dépend des éléments suivants :
+Le choix de l’emplacement de chargement de vos ressources vidéo dépend des éléments suivants :
 
-* Avez-vous besoin d’un worfklow pour le contenu vidéo ?
-* Avez-vous besoin d’un contrôle des versions pour le contenu vidéo ?
+* Avez-vous besoin d’un workflow pour la ressource vidéo ?
+* Avez-vous besoin d’un contrôle de version pour la ressource vidéo ?
 
-Si la réponse est « oui » à l’une des questions ou aux deux, téléchargez la vidéo directement dans la gestion des actifs numériques d’Adobe. Si la réponse est « non » aux deux questions, chargez la vidéo directement dans Dynamic Media Classic. Le worfklow de chaque scénario est décrit dans la section suivante.
+Si la réponse à une ou deux de ces questions est « oui », téléchargez votre vidéo directement dans la gestion des DAM d’Adobe. Si la réponse est « non » aux deux questions, chargez la vidéo directement dans Dynamic Media Classic. Le workflow de chaque scénario est décrit dans la section suivante.
 
-#### Si vous téléchargez la vidéo directement dans Adobe Assets {#if-you-are-uploading-your-video-directly-to-adobe-assets}
+#### Si vous téléchargez la vidéo directement vers Adobe Assets {#if-you-are-uploading-your-video-directly-to-adobe-assets}
 
-Si vous avez besoin d’un worfklow ou d’une création de versions pour les ressources, vous devez tout d’abord les télécharger dans Adobe Assets. Vous trouverez ci-dessous le workflow recommandé :
+Si vous avez besoin d’un workflow ou d’un contrôle de versions pour vos ressources, vous devez tout d’abord les télécharger sur les ressources Adobe. Vous trouverez ci-dessous le workflow recommandé :
 
 1. Chargez la ressource vidéo dans Adobe Assets et codez-la, puis publiez-la automatiquement dans Dynamic Media Classic.
 1. Dans Experience Manager, accédez aux contenus vidéo dans la gestion de contenu web, dans l’onglet **[!UICONTROL Films]** de l’outil de recherche de contenu.
@@ -83,7 +83,7 @@ Si vous n’avez pas besoin d’un workflow ou d’une création de versions pou
    >
    >Adobe recommande de sélectionner les deux visionneuses de vidéos adaptatives lors de la configuration des paramètres prédéfinis ou de sélectionner l’option **[!UICONTROL Codage vidéo adaptatif]**.
 
-1. Les profils de codage sélectionnés sont automatiquement appliqués à toutes les vidéos téléchargées dans le dossier cible de la gestion des ressources numériques CQ que vous avez défini pour cette configuration cloud de Dynamic Media Classic. Vous pouvez définir plusieurs configurations cloud Dynamic Media Classic avec différents dossiers cibles afin d’appliquer différents profils de codage, selon vos besoins.
+1. Les profils de codage sélectionnés sont automatiquement appliqués à toutes les vidéos téléchargées dans le dossier cible de la gestion des DAM CQ que vous avez défini pour cette configuration cloud de Dynamic Media Classic. Vous pouvez définir plusieurs configurations cloud Dynamic Media Classic avec différents dossiers cibles afin d’appliquer différents profils de codage, selon vos besoins.
 
 ### Mise à jour de la visionneuse et des paramètres prédéfinis de codage {#updating-viewer-and-encoding-presets}
 
@@ -93,16 +93,16 @@ Mettez à jour la visionneuse et les paramètres prédéfinis de codage pour la 
 
 ### Chargement de la vidéo source principale {#uploading-your-master-video}
 
-Pour charger votre vidéo source principale vers Dynamic Media Classic à partir de la gestion des ressources numériques d’Adobe, procédez comme suit :
+Pour charger votre vidéo source principale vers Dynamic Media Classic à partir de la gestion des DAM d’Adobe, procédez comme suit :
 
-1. Accédez au dossier cible de la gestion des ressources numériques CQ dans lequel vous avez défini la configuration cloud avec les profils de codage Dynamic Media Classic.
-1. Sélectionnez **[!UICONTROL Charger]** pour charger une vidéo source principale. Le chargement et le codage de la vidéo sont terminés une fois que le workflow de [!UICONTROL mise à jour des ressources de gestion des ressources numériques] est achevé et que l’option **[!UICONTROL Publier sur Dynamic Media Classic]** comporte une coche.
+1. Accédez au dossier cible de la gestion des DAM CQ dans lequel vous avez défini la configuration cloud avec les profils de codage Dynamic Media Classic.
+1. Sélectionnez **[!UICONTROL Charger]** pour charger une vidéo source principale. Le chargement et le codage de la vidéo sont terminés une fois que le workflow de [!UICONTROL mise à jour des ressources de gestion des DAM] est achevé et que l’option **[!UICONTROL Publier sur Dynamic Media Classic]** comporte une coche.
 
    >[!NOTE]
    >
    >La génération des miniatures de vidéo peut prendre du temps.
 
-   Lorsque vous faites glisser la vidéo source principale de gestion des ressources numériques sur le composant vidéo, il accède à *tous* les rendus proxy codés de Dynamic Media Classic pour la diffusion.
+   Lorsque vous faites glisser la vidéo source principale de gestion des DAM sur le composant vidéo, il accède à *tous* les rendus proxy codés de Dynamic Media Classic pour la diffusion.
 
 ### Composant vidéo de base par rapport au composant vidéo Dynamic Media Classic {#foundation-video-component-versus-scene-video-component}
 
@@ -128,17 +128,17 @@ Le tableau suivant fournit une comparaison de haut niveau des fonctionnalités p
 
 |  | Vidéo de base Experience Manager | Vidéo de Dynamic Media Classic |
 |---|---|---|
-| Approche | Approche HTML5 en premier lieu. Flash n’est utilisé que pour le secours non HTML5. | Flash sur la plupart des ordinateurs de bureau. HTML5 est utilisé pour les mobiles et les tablettes. |
-| Diffusion | Progressive | Adaptative |
-| Suivi | Oui | Oui |
-| Evolutivité | Oui | Non |
-| Vidéo mobile | Oui | Oui |
+| Approche | Première approche HTML5. Flash n’est utilisé que pour la version de secours autre que HTML5. | Flash sur la plupart des ordinateurs de bureau. HTML5 est utilisé pour les appareils mobiles et les tablettes. |
+| Diffusion | Progressif | Diffusion en continu à débit adaptatif |
+| Tracking | Oui | Oui |
+| Extensibilité | Oui | Non |
+| Vidéo pour mobiles | Oui | Oui |
 
 ### Configuration {#setting-up}
 
 #### Création de profils vidéo {#creating-video-profiles}
 
-Les différents codages vidéo sont créés selon les paramètres prédéfinis de codage Dynamic Media Classic sélectionnés dans la configuration cloud Dynamic Media Classic. Pour que le composant vidéo de base les utilise, vous devez créer un profil vidéo pour chaque paramètre prédéfini de codage Dynamic Media Classic sélectionné. Cela permet au composant vidéo de sélectionner les rendus de la gestion des ressources numériques en conséquence.
+Les différents codages vidéo sont créés selon les paramètres prédéfinis de codage Dynamic Media Classic sélectionnés dans la configuration cloud Dynamic Media Classic. Pour que le composant vidéo de base les utilise, vous devez créer un profil vidéo pour chaque paramètre prédéfini de codage Dynamic Media Classic sélectionné. Cela permet au composant vidéo de sélectionner les rendus de la gestion des DAM en conséquence.
 
 >[!NOTE]
 >
@@ -151,15 +151,15 @@ Les différents codages vidéo sont créés selon les paramètres prédéfinis d
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. Modifiez le nouveau profil vidéo. Sélectionnez tout d’abord la configuration de cloud. Puis, sélectionnez le même paramètre prédéfini de codage que celui sélectionné dans la configuration de cloud.
+1. Modifiez le nouveau profil vidéo. Sélectionnez d’abord la configuration cloud. Sélectionnez ensuite le même paramètre prédéfini de codage que celui sélectionné dans la configuration cloud.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
    | Propriété | Description |
    |---|---|
    | Configuration cloud Dynamic Media Classic | Configuration cloud à utiliser pour les paramètres prédéfinis de codage. |
-   | Paramètre prédéfini de codage Dynamic Media Classic | Paramètre prédéfini de codage à associer à ce profil vidéo. |
-   | Type de vidéo HTML5 | Cette propriété vous permet de définir la valeur de la propriété du type de l’élément source vidéo HTML5. Ces informations ne sont pas fournies par les paramètres prédéfinis de codage Dynamic Media Classic mais elles sont requises pour effectuer correctement le rendu des vidéos en utilisant l’élément vidéo HTML5. Une liste des formats courants est fournie mais ils peuvent être remplacés par d’autres formats. |
+   | Paramètre prédéfini de codage Dynamic Media Classic | Paramètre prédéfini de codage avec lequel mapper ce profil vidéo. |
+   | Type vidéo HTML5 | Cette propriété vous permet de définir la valeur de la propriété du type de l’élément source vidéo HTML5. Ces informations ne sont pas fournies par les paramètres prédéfinis de codage Dynamic Media Classic mais elles sont requises pour effectuer correctement le rendu des vidéos en utilisant l’élément vidéo HTML5. Une liste des formats courants est fournie mais ils peuvent être remplacés par d’autres formats. |
 
    Répétez cette étape pour tous les paramètres prédéfinis de codage sélectionnés dans la configuration cloud que vous voulez utiliser dans le composant vidéo.
 
@@ -175,13 +175,13 @@ Le composant vidéo de base doit connaître les profils vidéo à utiliser afin 
 >
 >Les modifications apportées à la conception requièrent l’activation de la conception afin qu’elles prennent effet lors de la publication.
 
-1. Ouvrez la boîte de dialogue de conception des composants vidéo de base et sélectionnez l’onglet **[!UICONTROL Profils.]** Supprimez ensuite les profils prêts à l’emploi et ajoutez les nouveaux profils vidéo Dynamic Media Classic. L’ordre de la liste des profils de la boîte de dialogue de conception définit également l’ordre des sources vidéo lors du rendu.
-1. Pour les navigateurs ne prenant pas en charge HTML5, le composant vidéo permet de configurer Flash comme solution de secours. Ouvrez la boîte de dialogue de conception des composants vidéo et sélectionnez l’onglet **[!UICONTROL Flash.]** Configurez les paramètres du lecteur Flash et affectez un profil de secours au lecteur.
+1. Ouvrez la boîte de dialogue de conception des composants vidéo de base et sélectionnez l’onglet **[!UICONTROL Profils]**. Supprimez ensuite les profils prêts à l’emploi et ajoutez les nouveaux profils vidéo Dynamic Media Classic. L’ordre de la liste des profils de la boîte de dialogue de conception définit également l’ordre des sources vidéo lors du rendu.
+1. Pour les navigateurs ne prenant pas en charge HTML5, le composant vidéo permet de configurer Flash comme solution de secours. Ouvrez la boîte de dialogue de conception des composants vidéo et sélectionnez l’onglet **[!UICONTROL Flash]**. Configurez les paramètres du lecteur Flash Player et attribuez-lui un profil de secours.
 
 #### Liste de contrôle {#checklist}
 
 1. Créez une configuration cloud Dynamic Media Classic. Assurez-vous que les paramètres prédéfinis de codage vidéo sont définis et que l’importateur fonctionne.
 1. Créez un profil vidéo Dynamic Media Classic pour chaque paramètre prédéfini de codage vidéo sélectionné dans la configuration cloud.
 1. Les profils vidéo doivent être activés.
-1. Configurer la conception du composant vidéo de base sur votre page.
+1. Configurez la conception du composant vidéo de base sur votre page.
 1. Activez la conception une fois que vous avez terminé les modifications sur cette dernière.
