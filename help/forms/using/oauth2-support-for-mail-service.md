@@ -3,9 +3,9 @@ title: Configurer l’authentification basée sur OAuth2 pour les protocoles de 
 description: Configurer l’authentification basée sur OAuth2 pour les protocoles de serveur de messagerie Microsoft® Office 365
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 source-git-commit: d19de2955adef56570378a6d62ec0015718f9039
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '975'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ L’option **comptes dans n’importe quel répertoire de l’entreprise (n’im
    >[!NOTE]
    >
    > * Pour l’application **Comptes dans n’importe quel répertoire d’organisation (n’importe quel répertoire Azure AD - à plusieurs clients)**, il est recommandé d’utiliser un compte professionnel plutôt qu’un compte de messagerie personnel.
-   > * **Comptes Microsoft® personnels uniquement** L’application n’est pas prise en charge.
+   > * L’application **Comptes Microsoft® personnels uniquement** n’est pas prise en charge.
    > * Il est recommandé d’utiliser l’application **Compte Microsoft® à plusieurs clients et personnel**.
 
 
@@ -68,13 +68,13 @@ L’option **comptes dans n’importe quel répertoire de l’entreprise (n’im
 
 Ensuite, vous devez générer le code d’autorisation tel qu’indiqué dans les étapes suivantes :
 
-1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` avec le `<client_id>` et `redirect_uri` avec l’URI de redirection de votre application :
+1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` par le `<client_id>` et `redirect_uri` par l’URI de redirection de votre application :
 
    ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
 
    >[!NOTE]
    >
-   > Dans le cas d’une application client unique, remplacez `common` avec votre `[tenantid]` dans l’URL suivante pour générer le code d’autorisation : `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+   > Dans le cas d’une application à client(e) unique, remplacez `common` avec votre `[tenantid]` dans l’URL suivante pour générer le code d’autorisation : `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. Lorsque vous tapez l’URL ci-dessus, vous êtes redirigé(e) vers l’écran de connexion :
    ![Écran de connexion](/help/forms/using/assets/azure_loginscreen.png)
@@ -99,7 +99,7 @@ Vous devez ensuite générer le jeton d’actualisation tel qu’expliqué dans 
 
    >[!NOTE]
    >
-   > Dans une application client unique, pour générer un jeton d’actualisation, utilisez la commande cURL suivante et remplacez `common` avec le `[tenantid]` dans :
+   > Dans une application à client(e) unique, pour générer un jeton d’actualisation, utilisez la commande cURL suivante et remplacez `common` par le `[tenantid]` dans :
    >`curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Prenez note du jeton d’actualisation.
@@ -126,7 +126,7 @@ Vous devez maintenant configurer le service de messagerie électronique sur le d
    >[!NOTE]
    >
    >* Le protocole Transport Security possède des valeurs valides : « blank », « SSL » ou « TLS ». Vous devez définir les valeurs de **SMTP Transport Security** et **Receive Transport Security** sur **TLS** pour activer le service d’authentification oAuth.
-   >* **Protocole POP3** n’est pas pris en charge pour OAuth lors de l’utilisation de points de fin de courrier électronique.
+   >* Le **protocole POP3** n’est pas pris en charge pour OAuth lors de l’utilisation de points d’entrée d’e-mail.
 
 
    ![Paramètres de connexion](/help/forms/using/assets/oauth_connectionsettings.png)
@@ -155,7 +155,7 @@ Vous devez maintenant configurer le service de messagerie électronique sur le d
 
 ## Pour configurer le point d’entrée de l’e-mail, {#configure_email_endpoint}
 
-1. accédez à **Accueil** > **Services** > **Application et services** > **Gestion des points d’entrée**.
+1. Accédez à **Accueil** > **Services** > **Application et services** > **Gestion des points d’entrée**.
 1. Pour configurer le point d’entrée de l’e-mail, définissez les **Paramètres d’authentification oAuth 2.0** sur `True`.
 1. Copiez les valeurs d’**ID client** et de **Secret client** à partir d’Azure Portal.
 1. Copiez la valeur du **jeton d’actualisation** généré.
