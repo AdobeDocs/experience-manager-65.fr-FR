@@ -3,7 +3,7 @@ title: Prise en main d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3031'
 ht-degree: 100%
 
