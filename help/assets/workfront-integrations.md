@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 source-git-commit: d83242c8fa6a8cd627a6db24f3c45fcaeae45b2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1170'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -50,7 +50,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 
 | Fonctionnalité | Description | [!DNL Workfront] et [!DNL Assets Essentials] *Aucun connecteur (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Nécessite un connecteur* | Workfront et [!DNL Experience Manager as a Cloud Service] *Aucun connecteur (OOTB)* |
 |----|----|----|-----|-----|
-| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
+| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **Général** |
 | Envoyer des fichiers numériques depuis [!DNL Workfront] vers [!DNL Assets] | La dernière version d’un document WF peut être chargée vers AEM Assets, et sera liée en tant que nouvelle version du document. | ✓ | ✓ | ✓ |
 | Lier manuellement des dossiers AEM à des objets Workfront | Les dossiers AEM existants peuvent être liés en tant que dossier Workfront. Ses ressources enfants sont liées en tant que nouveaux documents Workfront. | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 | Rediriger les utilisateurs vers AEM en cas de clic sur les ressources liées dans Workfront | Les utilisateurs sont redirigés vers AEM pour prévisualiser une ressource liée dans Workfront. | ✓ | ✓ | À venir |
 | Créer automatiquement des dossiers AEM liés dans Workfront | Créez automatiquement des dossiers AEM liés dans Workfront à l’aide des statuts de projet. Configurez automatiquement les dossiers AEM en fonction des portfolios, programmes et projets Workfront. | Non | ✓ | Non |
 | Naviguer directement vers les référentiels AEM à partir de Workfront | Permet aux utilisateurs et utilisatrices de naviguer vers les référentiels AEM disponibles configurés dans Workfront. | ✓ | Non | ✓ |
-| Création de dossiers d’AEM liés dans Workfront | Créez manuellement des dossiers d’AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents . | ✓ | Non | ✓ |
+| Créer des dossiers AEM liés dans Workfront | Créez manuellement des dossiers AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents. | ✓ | Non | ✓ |
 | Synchronisation des commentaires | Synchroniser automatiquement les commentaires des ressources de [!DNL Workfront] vers [!DNL Assets] | Non | ✓ | Non |
 | Prendre en charge plusieurs environnements Workfront se connectant à un seul environnement AEM | Les utilisateurs et utilisatrices de plusieurs environnements Workfront peuvent se connecter à un seul environnement AEM. | ✓ | Non | ✓ |
 | Prendre en charge plusieurs environnements AEM se connectant à un seul environnement Workfront | Les utilisateurs et utilisatrices d’un seul environnement Workfront peuvent envoyer ou lier des ressources entre plusieurs environnements AEM. | ✓ | ✓ | ✓ |
