@@ -3,7 +3,7 @@ title: Développement découplé pour AEM 6.5 Sites
 description: Découvrez comment les puissantes fonctionnalités d’AEM 6.5, telles que les modèles de contenu, les fragments de contenu et l’API GraphQL, fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
 source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '493'
 ht-degree: 100%
 
