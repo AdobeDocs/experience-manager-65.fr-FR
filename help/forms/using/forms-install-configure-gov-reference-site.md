@@ -8,9 +8,9 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: d0233ba5358f961339317bc1d63d51f1826d8c13
 workflow-type: tm+mt
-source-wordcount: '4677'
+source-wordcount: '4670'
 ht-degree: 97%
 
 ---
@@ -749,7 +749,7 @@ Cette section contient des informations sur les fonctionnalités de démonstrati
 
 ### Activer le module complémentaire Chrome Test d’accessibilité {#enable-chrome-add-on}
 
-Pour effectuer les tests d’accessibilité, installez le module externe Chrome trouvé. [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=fr). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+Pour effectuer des tests d’accessibilité, installez le module externe Chrome disponible ici à l’adresse `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 Une fois installé, chargez la page que vous souhaitez tester dans le navigateur Chrome (Remarque : L’ouverture de plusieurs onglets peut avoir une incidence sur votre score. Il est préférable de n’ouvrir qu’un seul onglet.) Une fois la page chargée
 **faites un clic droit** sur la page et sélectionnez l’onglet **Contrôles**. Les développeurs peuvent sélectionner le type de contrôle à effectuer par le plug-in Accessibilité. Une fois toutes les options sélectionnées, l’utilisateur peut cliquer sur le bouton Générer le rapport . Cela génère un document PDF qui indique la note globale d’accessibilité ainsi que ce qui peut être fait pour augmenter la note globale d’accessibilité.
