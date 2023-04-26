@@ -3,10 +3,10 @@ title: API AEM GraphQL pour l’utilisation des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: cee709161100db6597bdb18ca03b3130d9e242f1
+source-git-commit: cf78742614fd2d35f59905895dfacb83190140cd
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3250'
+ht-degree: 97%
 
 ---
 
@@ -104,14 +104,14 @@ GraphQL permet de réaliser des requêtes pour renvoyer, au choix :
 
 * Une **[liste d’entrées](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM fournit des fonctionnalités de conversion des requêtes (des deux types) en [](/help/sites-developing/headless/graphql-api/persisted-queries.md)Requêtes persistantes, qui peuvent être mises en cache par Dispatcher et le réseau CDN.
+AEM fournit des fonctionnalités de conversion des requêtes (des deux types) en [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md), qui peuvent être mises en cache par Dispatcher et le réseau CDN.
 
 ### Bonnes pratiques en matière de requêtes GraphQL (Dispatcher et réseau CDN) {#graphql-query-best-practices}
 
 Il est recommandé d’utiliser les [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md) sur les instances de publication en raison des avantages suivants :
 
 * Elles sont mises en cache.
-* ils sont gérés de manière centralisée par AEM
+* Elles sont gérées de manière centralisée par AEM
 
 <!-- is this fully accurate? -->
 >[!NOTE]
@@ -239,7 +239,7 @@ Le schéma comporte des champs individuels de deux catégories de base :
 
 * Champs que vous générez.
 
-   Une sélection de [types de champs](#field-types) est utilisée pour créer des champs en fonction de la configuration du modèle de fragment de contenu. Les noms des champs proviennent du champ **Nom de la propriété** du **Type de données**.
+   Une sélection de [types de données](#data-types) est utilisée pour créer des champs en fonction de la configuration du modèle de fragment de contenu. Les noms des champs proviennent du champ **Nom de la propriété** du **Type de données**.
 
    * Il faut également tenir compte de la propriété **Rendre comme**, car les utilisateurs peuvent configurer certains types de données, par exemple comme une seule ligne de texte ou avec plusieurs champs.
 
@@ -247,21 +247,23 @@ Le schéma comporte des champs individuels de deux catégories de base :
 
    Ils servent à identifier un fragment de contenu ou à obtenir plus d’informations sur un fragment.
 
-### Types de champs {#field-types}
+### Types de données {#data-types}
 
 GraphQL pour AEM prend en charge une liste de types. Tous les types de données de modèles de fragments de contenu pris en charge et les types GraphQL correspondants sont représentés :
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
-| Une seule ligne de texte | Chaîne, [Chaîne] |  Utilisé pour les chaînes simples telles que les noms d’auteurs, les noms d’emplacements, etc.. |
-| Plusieurs lignes de texte | Chaîne |  Utilisé pour la sortie de texte, tel que le corps d’un article |
-| Nombre |  Flottant, [Flottant] | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
-| Booléen |  Booléen |  Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
-| Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8086 : Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
-| Énumération |  Chaîne |  Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
-|  Balises |  [Chaîne] |  Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
-| Référence de contenu |  Chaîne |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
-| Référence du fragment |  *Un type de modèle* |  Utilisé pour référencer un autre fragment de contenu d’un certain type de modèle, défini lors de la création du modèle |
+| Une seule ligne de texte | `String`, `[String]` |  Utilisé pour les chaînes simples telles que les noms de créateur ou de créatrice, les noms d’emplacements, etc. |
+| Plusieurs lignes de texte | `String` |  Utilisé pour la sortie de texte, tel que le corps d’un article |
+| Nombre |  `Float`, `[Float]` | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
+| Booléen |  `Boolean` |  Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
+| Date et heure | `Calendar` |  Utilisé pour afficher la date et l’heure au format ISO 8086. Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
+| Énumération |  `String` |  Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
+|  Balises |  `[String]` |  Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
+| Référence de contenu |  `String` |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
+| Référence du fragment |  *Un type de modèle* <br><br>Champ simple : `Model` - Type de modèle, référencé directement <br><br>Multichamp, avec un type référencé : `[Model]` - Tableau de type `Model`, référencé directement à partir du tableau <br><br>Multichamp, avec plusieurs types référencés : `[AllFragmentModels]` - Tableau de tous les types de modèle, référencé à partir d’un tableau avec type d’union |  Utilisé pour référencer un ou plusieurs fragments de contenu de certains types de modèle, définis lors de la création du modèle |
+
+{style="table-layout:auto"}
 
 ### Champs d’assistance {#helper-fields}
 
