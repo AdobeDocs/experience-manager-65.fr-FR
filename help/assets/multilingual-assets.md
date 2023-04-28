@@ -1,14 +1,14 @@
 ---
-title: Ressources multilingues et traduction des ressources
+title: Ressource multilingue
 description: Découvrez comment automatiser les workflows de traduction des ressources, y compris les fichiers binaires, les métadonnées et les balises, dans plusieurs langues.
 contentOwner: AG
 feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 68f9179222c55840c4edf8774687cd8fde8cde4b
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ Traduction humaine : les ressources traduites sont renvoyées et importées dan
 
 Traduction automatique : le service de traduction automatique traduit instantanément les métadonnées et les balises des ressources.
 
-La traduction des ressources inclut les éléments suivants :
+La traduction des ressources comprend les éléments suivants :
 
 1. [Connexion d’Experience Manager au fournisseur de services de traduction](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Création de configurations de frameworks d’intégration de traduction](/help/sites-administering/tc-tic.md)
