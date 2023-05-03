@@ -1,16 +1,17 @@
 ---
 title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
-source-git-commit: f4a3b7edc9187c1984afedb4e3b4c558354a4d84
+exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
+source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 73%
+source-wordcount: '1424'
+ht-degree: 72%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
-Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM) as a Cloud Service. Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une demande de GET peut être mise en cache aux couches Dispatcher et Content Delivery Network (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elles sont en cela différentes des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM). Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une demande de GET peut être mise en cache aux couches Dispatcher et Content Delivery Network (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elles sont en cela différentes des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
 
 <!--
 >[!NOTE]
@@ -261,7 +262,7 @@ Notez que `%3B` est l’encodage UTF-8 pour `;` et `%3D` est l’encodage pour `
 
 ## Mettre en cache vos requêtes persistantes {#caching-persisted-queries}
 
-Les requêtes persistantes sont recommandées, car elles peuvent être mises en cache au niveau de la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) et réseau de diffusion de contenu (CDN), améliorant ainsi les performances de l’application cliente requérant.
+Les requêtes persistantes sont recommandées, car elles peuvent être mises en cache au niveau de la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) et réseau de diffusion de contenu (CDN), améliorant ainsi les performances de l’application cliente requérant.
 
 Par défaut, AEM invalide le cache en fonction d’une définition de durée de vie (TTL). Ces TTL peuvent être définis par les paramètres suivants. Ces paramètres sont accessibles de plusieurs manières, avec des variantes dans les noms en fonction du mécanisme utilisé :
 
