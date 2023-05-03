@@ -3,10 +3,10 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requ
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '1530'
-ht-degree: 100%
+source-git-commit: e773990c6bd32df65c7f62060f7eca5547b7b614
+workflow-type: tm+mt
+source-wordcount: '1586'
+ht-degree: 97%
 
 ---
 
@@ -1306,15 +1306,15 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1323,16 +1323,42 @@ Cette requête interroge :
 
 ### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle multiple {#sample-wknd-nested-fragment-multiple-model}
 
+#### Type de modèle référencé unique
+
 Cette requête interroge :
 
 * à la recherche de différents fragments de contenu de type `bookmark` ;
-   * avec des références de fragments à d’autres fragments de types de modèles spécifiques `article` et `adventure`.
+   * avec des références de fragment à d’autres fragments du type de modèle spécifique `article`
 
 >[!NOTE]
 >
->Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
+>Le champ `fragments` possède le type de données `fragment-reference`, avec le modèle `Article` sélectionné. Requête : `fragments` sous la forme d’un tableau de `[Article]`.
 
-```xml
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Types de modèle référencés multiples
+
+Cette requête interroge :
+
+* à la recherche de différents fragments de contenu de type `bookmark` ;
+   * avec des références de fragments à d’autres fragments de types de modèles spécifiques `Article` et `Adventure`.
+
+>[!NOTE]
+>
+>Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés. Requête : `fragments` sous la forme d’un tableau de `[AllFragmentModels]`, qui est déréférencé avec le type d’union.
+
+```graphql
 {
   bookmarkList {
     items {
