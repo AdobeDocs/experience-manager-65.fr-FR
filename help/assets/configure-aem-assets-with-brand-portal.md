@@ -12,9 +12,9 @@ docset: aem65
 feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2076'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/configure-aem-assets-with-brand-portal.html?lang=fr) |
 
 Adobe Experience Manager Assets Brand Portal permet de publier des ressources de marque approuvées d’Adobe Experience Manager Assets vers Brand Portal et de les distribuer aux utilisateurs de Brand Portal.
 
@@ -52,7 +51,7 @@ Cette aide décrit les deux cas d’utilisation suivants :
 
 Cette aide s’adresse à un public familiarisé avec les technologies suivantes :
 
-* installation. et administration des modules Adobe Experience Manager et AEM ;
+* installation, configuration et administration des packages Adobe Experience Manager et AEM ;
 
 * utilisation des systèmes d’exploitation Linux et Microsoft Windows ;
 
@@ -84,7 +83,7 @@ Pour obtenir des instructions détaillées, consultez
 
 * [Notes de mise à jour du pack de services d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/service-pack/sp-release-notes.html?lang=fr)
 
-**Contactez l’assistance technique** si vous ne parvenez pas à trouver le dernier module AEM ou le pack de services.
+**Contactez l’assistance technique** si vous ne parvenez pas à trouver le dernier package AEM ou le pack de services.
 
 ## Création d’une configuration {#configure-new-integration-65}
 
@@ -332,7 +331,7 @@ Pour valider la configuration, procédez comme suit :
 
    ![](assets/test-integration4.png)
 
-   Un message s’affiche indiquant que votre *module de test a bien été livré*.
+   Un message s’affiche indiquant que votre *package de test a bien été livré*.
 
    ![](assets/test-integration5.png)
 

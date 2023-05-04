@@ -5,10 +5,10 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 83e9ab570fac686fd53c9c2594cbfb2c05a89a0c
-workflow-type: ht
-source-wordcount: '2262'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2245'
+ht-degree: 92%
 
 ---
 
@@ -93,7 +93,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Vous ne pouvez pas reno
 
 1. Connectez-vous en tant qu’administrateur à votre déploiement [!DNL Experience Manager]. Cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]**.
 
-1. Recherchez et cliquez sur l’utilisateur **[!UICONTROL dam-update-service]**. Cliquez sur l’onglet **[!UICONTROL KeyStore]**.
+1. Recherchez et cliquez sur l’utilisateur **[!UICONTROL dam-update-service]**. Cliquez sur **[!UICONTROL Keystore]** .
 
 1. Supprimez le fichier de stockage de clés **[!UICONTROL similaritysearch]** existant avec le certificat arrivé à expiration. Cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
@@ -106,7 +106,7 @@ Lorsque le certificat expire, il n’est plus approuvé. Vous ne pouvez pas reno
 
 1. Pour télécharger un certificat public, cliquez sur **[!UICONTROL Télécharger le certificat public pour l’intégration OAuth]**.
 
-1. Accédez à [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu intelligent existants sur la page **[!UICONTROL Intégrations]**. Téléchargez le nouveau certificat. Pour plus d’informations, consultez les instructions contenues dans [Création d’une intégration dans Adobe Developer Console](#create-adobe-i-o-integration).
+1. Accès [https://console.adobe.io](https://console.adobe.io) et accédez aux services de contenu dynamique existants sur la page **[!UICONTROL Intégrations]** page. Téléchargez le nouveau certificat. Pour plus d’informations, consultez les instructions contenues dans [Création d’une intégration dans Adobe Developer Console](#create-adobe-i-o-integration).
 
 ### Création de l’intégration de la console Adobe Developer {#create-adobe-i-o-integration}
 
@@ -139,7 +139,7 @@ Pour configurer l’intégration, utilisez les valeurs d’[!UICONTROL ID DE COM
 
 1. [!DNL Experience Manager]Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Services cloud hérités]** pour ouvrir la console [!UICONTROL Services cloud].
 
-1. Sous **[!UICONTROL Ressources – Balises intelligentes]**, ouvrez la configuration créée ci-dessus. Sur la page de paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
+1. Sous , **[!UICONTROL Balises intelligentes des ressources]**, ouvrez la configuration créée ci-dessus. Sur la page des paramètres du service, cliquez sur **[!UICONTROL Modifier]**.
 
 1. Dans la boîte de dialogue **[!UICONTROL Service de contenu dynamique AEM]**, utilisez les valeurs préremplies pour les champs **[!UICONTROL URL de service]** et **[!UICONTROL Serveur d’autorisation]**.
 
@@ -205,11 +205,11 @@ Le résultat de la validation s’affiche dans la même boîte de dialogue.
 
 ## Entraînement du service de contenu dynamique {#training-the-smart-content-service}
 
-Pour que le service de contenu dynamique reconnaisse votre taxonomie métier, exécutez-la sur une série de ressources qui incluent déjà des balises correspondant à votre entreprise. Pour baliser efficacement vos images de marque, le service de contenu dynamique requiert que les images d’entraînement respectent certaines instructions. Après l’entraînement, le service peut appliquer la même taxonomie sur un ensemble de ressources similaire.
+Pour que le service de contenu dynamique reconnaisse votre taxonomie métier, exécutez-la sur une série de ressources qui incluent déjà des balises correspondant à votre entreprise. Pour baliser efficacement vos images de marque, le service de contenu dynamique requiert que les images d’entraînement respectent certaines instructions. Après la formation, le service peut appliquer la même taxonomie sur un ensemble de ressources similaire.
 
-Vous pouvez entraîner plusieurs fois le service afin d’améliorer sa capacité à appliquer les balises appropriées. Après chaque cycle d’entraînement, exécutez un workflow de balisage et vérifiez que vos ressources sont correctement balisées.
+Vous pouvez entraîner le service plusieurs fois afin d’améliorer sa capacité à appliquer des balises pertinentes. Après chaque cycle de formation, exécutez un workflow de balisage et vérifiez si vos ressources sont correctement balisées.
 
-Vous pouvez entraîner le service de contenu dynamique périodiquement ou en fonction des besoins.
+Vous pouvez entraîner le service de contenu dynamique périodiquement ou selon les besoins.
 
 >[!NOTE]
 >
@@ -253,11 +253,11 @@ Vous pouvez activer le service de contenu dynamique afin qu’il s’entraîne p
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow d’entraînement s’exécute sur une base hebdomadaire à 0 h 30 le samedi.
+Lorsque cette option est sélectionnée pour un dossier, [!DNL Experience Manager] exécute automatiquement un workflow d’entraînement afin d’entraîner le service de contenu dynamique sur les ressources du dossier et leurs balises. Par défaut, le workflow de formation s’exécute toutes les semaines à 00h30 le samedi.
 
-### Entraînement à la demande {#on-demand-training}
+### Formation à la demande {#on-demand-training}
 
-Vous pouvez entraîner le service de contenu dynamique chaque fois que cela est nécessaire à partir de la console Processus.
+Vous pouvez entraîner le service de contenu dynamique lorsque cela s’avère nécessaire à partir de la console Processus.
 
 1. Dans l’interface d’[!DNL Experience Manager], accédez à **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
 1. Dans la page **[!UICONTROL Modèles de workflow]**, sélectionnez le workflow **[!UICONTROL Entraînement des balises intelligentes]**, puis cliquez sur **[!UICONTROL Démarrer le workflow]** dans la barre d’outils.
@@ -283,17 +283,17 @@ Pour vérifier que le service de contenu dynamique est entraîné sur vos balise
 
    Le rapport affiche le statut d’identification des balises que vous avez entraînées. La couleur verte de la colonne **[!UICONTROL État de l’entraînement]** indique que le service de contenu dynamique est entraîné pour la balise. La couleur jaune indique que le service n’est pas complètement entraîné pour une balise particulière. Dans ce cas, ajoutez d’autres images avec la balise particulière et exécutez le workflow d’entraînement pour l’entraînement complet du service sur la balise.
 
-   Si vous ne voyez pas vos balises dans ce rapport, lancez à nouveau le workflow d’entraînement pour ces balises.
+   Si vous ne voyez pas vos balises dans ce rapport, réexécutez le workflow d’entraînement pour ces balises.
 
 1. Pour télécharger le rapport, sélectionnez-le dans la liste, puis cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils. Le rapport est téléchargé sous la forme d’une feuille de calcul Microsoft Excel.
 
 ## Limites {#limitations}
 
-* Le balisage intelligent amélioré est basé sur des modèles d’apprentissage d’images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
+* Le balisage intelligent amélioré est basé sur des modèles d’apprentissage d’images et de leurs balises. Ces modèles ne sont pas toujours parfaits pour identifier les balises. La version actuelle du service de contenu dynamique présente les limites suivantes :
 
    * Impossibilité d’identifier des différences subtiles dans les images. Par exemple, des chemises coupe droite ou ajustée.
-   * Impossibilité d’identifier des balises basées sur des motifs/éléments minuscules d’une image. Par exemple, des logos sur des T-shirts.
-   * Le balisage est pris en charge dans les paramètres régionaux gérés par [!DNL Experience Manager]. Pour obtenir la liste des langues, consultez [Notes de mise à jour du service de contenu dynamique](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/smart-content-service-release-notes.html?lang=fr).
+   * Impossible d’identifier les balises en fonction de petits motifs/parties d’une image. Par exemple, des logos sur des T-shirts.
+   * Le balisage est pris en charge dans les paramètres régionaux gérés par [!DNL Experience Manager]. 
 
 * Pour rechercher des ressources à l’aide de balises intelligentes (standard ou améliorées), utilisez la recherche de texte intégral d’[!DNL Assets]. Il n’y a aucun prédicat de recherche distinct pour les balises intelligentes.
 

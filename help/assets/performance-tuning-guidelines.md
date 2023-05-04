@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
-workflow-type: ht
-source-wordcount: '2753'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2746'
+ht-degree: 83%
 
 ---
 
@@ -73,15 +73,15 @@ Définissez les paramètres JVM suivants :
 
 ### Configuration du magasin de données basé sur les fichiers {#file-data-store-configuration}
 
-Nous recommandons à tous les utilisateurs d’[!DNL Experience Manager Assets] de séparer le magasin de données et l’entrepôt de segments. En outre, la configuration des paramètres `maxCachedBinarySize` et `cacheSizeInMB` peut vous aider à optimiser les performances. Définissez le paramètre `maxCachedBinarySize` selon la plus petite taille de fichier pouvant être contenue dans le cache. Spécifiez la taille du cache en mémoire à utiliser pour l’entrepôt de données dans `cacheSizeInMB`. Adobe vous recommande de définir cette valeur entre 2 et 10 % de la taille totale du tas. Toutefois, le chargement ou le test des performances peuvent vous aider à déterminer le paramètre idéal.
+Nous recommandons à tous les utilisateurs d’[!DNL Experience Manager Assets] de séparer le magasin de données et l’entrepôt de segments. En outre, la configuration des paramètres `maxCachedBinarySize` et `cacheSizeInMB` peut vous aider à optimiser les performances. Définissez le paramètre `maxCachedBinarySize` selon la plus petite taille de fichier pouvant être contenue dans le cache. Spécifiez la taille du cache en mémoire à utiliser pour l’entrepôt de données dans `cacheSizeInMB`. Adobe vous recommande de définir cette valeur entre 2 et 10 % de la taille totale du tas. Toutefois, les tests de charge/performance peuvent vous aider à déterminer le paramètre idéal.
 
 ### Configuration de la taille maximale du cache d’images mis en mémoire tampon    {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Lors du chargement d’un grand nombre de ressources vers [!DNL Adobe Experience Manager], réduisez la taille maximale configurée du cache d’images mis en mémoire tampon. De cette façon, vous tiendrez compte des pics inattendus de consommation de la mémoire et éviterez l’échec de JVM du fait d’erreurs de mémoire insuffisante. Prenez l’exemple d’un système présentant un tas maximal (paramètre -`Xmx`) de 5 Go, un BlobCache Oak défini sur 1 Go et un cache de documents défini sur 2 Go. Dans ce cas, le cache mis en mémoire tampon prendrait au maximum 1,25 Go, ce qui laisserait seulement 0,75 Go pour les pics inattendus.
+Lors du chargement d’un grand nombre de ressources vers [!DNL Adobe Experience Manager], réduisez la taille maximale configurée du cache d’images mis en mémoire tampon. De cette façon, vous tiendrez compte des pics inattendus de consommation de la mémoire et éviterez l’échec de JVM du fait d’erreurs de mémoire insuffisante. Prenez l’exemple d’un système présentant un tas maximal (paramètre -`Xmx`) de 5 Go, un BlobCache Oak défini sur 1 Go et un cache de documents défini sur 2 Go. Dans ce cas, le cache mis en mémoire tampon prendrait 1,25 Go au maximum et la mémoire, ce qui laisserait seulement 0,75 Go de mémoire pour les pics inattendus.
 
 Configurez la taille du cache mis en mémoire tampon dans la console web OSGi. À l’emplacement `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`, définissez la propriété `cq.dam.image.cache.max.memory` en octets. Par exemple, 1073741824 représente 1 Go (1 024 x 1 024 x 1 024 = 1 Go).
 
-À partir du Pack de services 1 d’Experience Manager 6.1, si vous utilisez un nœud `sling:osgiConfig` pour configurer cette propriété, veillez à définir le type de données sur Long. Pour plus de détails, voir [CQBufferedImageCache utilise le tas pendant le téléchargement des ressources](https://helpx.adobe.com/fr/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+À partir du Pack de services 1 d’Experience Manager 6.1, si vous utilisez un nœud `sling:osgiConfig` pour configurer cette propriété, veillez à définir le type de données sur Long. Pour plus d’informations, voir [CQBufferedImageCache utilise le tas lors des chargements de ressources](https://helpx.adobe.com/fr/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
 ### Entrepôts de données partagés    {#shared-data-stores}
 
@@ -116,12 +116,12 @@ accessKey=<snip>
 
 Adobe recommande d’activer HTTPS, car de nombreuses entreprises qui possèdent des pare-feu analysent le trafic HTTP, ce qui a une incidence sur les chargements et endommage les fichiers. Pour les chargements de fichiers volumineux, assurez-vous que les utilisateurs disposent d’une connexion filaire au réseau, car les réseaux Wi-Fi saturent rapidement. Pour obtenir de l’aide sur l’identification des goulots d’étranglement du réseau, consultez le [Guide de dimensionnement des ressources](/help/assets/assets-sizing-guide.md). Pour évaluer les performances du réseau en analysant sa topologie, consultez les [Remarques sur le réseau des ressources](/help/assets/assets-network-considerations.md).
 
-Votre stratégie d’optimisation du réseau dépend essentiellement de la quantité de bande passante disponible et du chargement sur votre instance [!DNL Experience Manager]. Les options de configuration courantes, notamment les pare-feu ou les proxys, peuvent améliorer les performances du réseau. Voici quelques points essentiels à prendre en compte :
+Votre stratégie d’optimisation du réseau dépend essentiellement de la quantité de bande passante disponible et du chargement sur votre instance [!DNL Experience Manager]. Les options de configuration courantes, notamment les pare-feu ou les proxys, peuvent améliorer les performances du réseau. Voici quelques points essentiels à garder à l’esprit :
 
 * Selon votre type d’instance (petite, moyenne ou grande), vérifiez que vous disposez de suffisamment de bande passante réseau pour votre instance Experience Manager. L’allocation d’une bande passante appropriée est particulièrement importante si [!DNL Experience Manager] est hébergé sur AWS.
-* Si votre instance [!DNL Experience Manager] est hébergée sur AWS, vous pouvez tirer profit d’une stratégie de mise à l’échelle polyvalente. Augmentez la taille de l’instance si les utilisateurs prévoient une charge élevée. Réduisez-la pour une charge moyenne/faible.
-* HTTPS : la plupart des utilisateurs possèdent des pare-feu qui analysent le trafic HTTP, ce qui est susceptible d’avoir une incidence sur le chargement des fichiers ou même endommager des fichiers lors de l’opération de chargement.
-* Chargements volumineux : assurez-vous que les utilisateurs disposent d’une connexion filaire au réseau (les connexions Wi-Fi sont rapidement saturées).
+* Si votre instance [!DNL Experience Manager] est hébergée sur AWS, vous pouvez tirer profit d’une stratégie de mise à l’échelle polyvalente. Augmentez la taille de l’instance si les utilisateurs prévoient une charge élevée. Décompressez-le pour une charge moyenne/faible.
+* HTTPS : La plupart des utilisateurs disposent de pare-feu qui détectent le trafic HTTP, ce qui peut avoir un impact négatif sur le chargement des fichiers ou même endommager les fichiers lors de l’opération de chargement.
+* Chargements de fichiers volumineux : Assurez-vous que les utilisateurs disposent de connexions câblées au réseau (les connexions Wi-Fi se saturent rapidement).
 
 ## Workflows    {#workflows}
 
@@ -145,11 +145,11 @@ Dans les cas où les workflows transitoires ne peuvent pas être utilisés, exé
 
 En règle générale, exécutez les workflows de purge une fois par semaine. Toutefois, dans les scénarios qui requièrent un important nombre de ressources, comme l’assimilation de ressources à grande échelle, vous pouvez l’exécuter plus fréquemment.
 
-Pour configurer la purge des workflows, ajoutez une nouvelle configuration de purge de workflow d’Adobe Granite via la console OSGi. Configurez et planifiez ensuite le workflow dans le cadre de la période de maintenance hebdomadaire.
+Pour configurer la purge des workflows, ajoutez une nouvelle configuration de purge de workflow d’Adobe Granite via la console OSGi. Ensuite, configurez et planifiez le workflow dans le cadre de la fenêtre de maintenance hebdomadaire.
 
-Si la purge s’exécute trop longtemps, elle s’arrête. Par conséquent, vous devez vous assurer que vos tâches de purge se terminent pour éviter les cas où l’exécution de la purge des workflows échoue en raison du nombre élevé de workflows.
+Si la purge s’exécute trop longtemps, elle s’arrête. Par conséquent, vous devez vous assurer que vos tâches de purge sont terminées afin d’éviter les situations où la purge des workflows ne se termine pas en raison du nombre élevé de workflows.
 
-Par exemple, après l’exécution d’un grand nombre de workflows transitoires (ce qui crée des nœuds d’instance de workflow), vous pouvez exécuter l’[outil de suppression de workflow ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) sur une base ponctuelle. Il supprime les instances de workflow terminées et redondantes immédiatement sans attendre l’exécution du planificateur de purge de workflow d’Adobe Granite.
+Par exemple, après l’exécution d’un grand nombre de workflows transitoires (ce qui crée des nœuds d’instance de workflow), vous pouvez exécuter l’[outil de suppression de workflow ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) sur une base ponctuelle. Il supprime immédiatement les instances de workflow redondantes et terminées au lieu d’attendre que le planificateur de purge de workflow Granite Adobe s’exécute.
 
 ### Tâches parallèles maximales    {#maximum-parallel-jobs}
 
@@ -161,25 +161,25 @@ Par défaut, [!DNL Experience Manager] exécute un nombre maximal de tâches par
 
 1. Modifiez la valeur des **[!UICONTROL Tâches parallèles maximales]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
-Configurer une file d’attente à la moitié des processeurs disponibles est une solution exploitable pour commencer. Cependant, vous pouvez être amené à augmenter ou à réduire ce nombre pour atteindre un débit maximal et l’ajuster selon l’environnement. Il existe des files d’attente distinctes pour les workflows transitoires et non transitoires, ainsi que d’autres processus, tels que les workflows externes. Si plusieurs files d’attente configurées à 50 % des processeurs sont activées simultanément, le système peut devenir rapidement surchargé. Les files d’attente utilisées varient considérablement selon les différentes implémentations de l’utilisateur. Par conséquent, vous devrez peut-être les configurer de manière réfléchie pour un maximum d’efficacité sans sacrifier la stabilité des serveurs.
+Configurer une file d’attente à la moitié des processeurs disponibles est une solution exploitable pour commencer. Cependant, vous pouvez être amené à augmenter ou à réduire ce nombre pour atteindre un débit maximal et l’ajuster selon l’environnement. Il existe des files d’attente distinctes pour les workflows transitoires et non transitoires, ainsi que d’autres processus, tels que les workflows externes. Si plusieurs files d’attente configurées à 50 % des processeurs sont activées simultanément, le système peut devenir rapidement surchargé. Les files d’attente utilisées varient considérablement selon les différentes implémentations de l’utilisateur. Par conséquent, vous devrez peut-être les configurer de manière réfléchie pour une efficacité maximale sans sacrifier la stabilité du serveur.
 
 ### Configuration des ressources de mise à jour de gestion des ressources numériques {#dam-update-asset-configuration}
 
 Le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques] contient plusieurs étapes qui sont configurées pour les tâches, telles que la génération de Dynamic Media PTIFF et l’intégration d’[!DNL Adobe InDesign Server]. Cependant, plusieurs de ces étapes peuvent être inutiles à la plupart des utilisateurs. Adobe vous recommande de créer une copie personnalisée du modèle de workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], et de supprimer toutes les étapes inutiles. Dans ce cas, mettez à jour les lanceurs pour que la [!UICONTROL ressource de mise à jour de gestion des ressources numériques] pointent vers le nouveau modèle.
 
-L’exécution intensive du workflow [!UICONTROL Ressources de mise à jour de gestion des ressources numériques] peut augmenter de manière importante la taille de votre magasin de données basé sur les fichiers. Les résultats d’un test effectué par Adobe ont montré que la taille de l’entrepôt de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont exécutés pendant une période de 8 heures.
+L’exécution intensive du workflow [!UICONTROL Ressources de mise à jour de gestion des ressources numériques] peut augmenter de manière importante la taille de votre magasin de données basé sur les fichiers. Les résultats d’une expérience effectuée par Adobe ont montré que la taille de l’entrepôt de données peut augmenter d’environ 400 Go si environ 5 500 workflows sont effectués dans les 8 heures.
 
-Il s’agit d’une augmentation temporaire ; l’entrepôt de données est restauré à sa taille d’origine après avoir exécuté la tâche Nettoyage de la mémoire d’entrepôt de données.
+Il s’agit d’une augmentation temporaire, et la banque de données est restaurée à sa taille d’origine après l’exécution de la tâche de nettoyage de la mémoire d’entrepôt de données.
 
-En règle générale, la tâche Nettoyage de la mémoire d’entrepôt de données s’exécute chaque semaine avec d’autres tâches de maintenance planifiées.
+En règle générale, la tâche de nettoyage de la mémoire d’entrepôt de données s’exécute chaque semaine avec d’autres tâches de maintenance planifiées.
 
 Si vous disposez d’un espace disque limité et exécutez de façon intensive le workflow [!UICONTROL Ressource de mise à jour de gestion des ressources numériques], pensez à planifier la tâche de nettoyage plus fréquemment.
 
 #### Génération de rendus au moment de l’exécution {#runtime-rendition-generation}
 
-Les clients utilisent des images de tailles et de formats différents sur leur site web ou pour les distribuer à leurs partenaires professionnels. Étant donné que chaque rendu s’ajoute à l’encombrement d’une ressource dans le référentiel, Adobe recommande d’utiliser cette fonction judicieusement. Pour limiter le nombre de ressources nécessaires pour traiter et stocker des images, vous pouvez générer ces images au moment de l’exécution plutôt que comme rendus pendant l’assimilation.
+Les clients utilisent des images de tailles et de formats différents sur leur site web ou pour les distribuer à leurs partenaires professionnels. Étant donné que chaque rendu s’ajoute à l’encombrement d’une ressource dans le référentiel, Adobe recommande d’utiliser cette fonction judicieusement. Pour réduire la quantité de ressources nécessaires au traitement et au stockage des images, vous pouvez générer ces images au moment de l’exécution plutôt que sous forme de rendus lors de l’ingestion.
 
-De nombreux clients de sites mettent en œuvre un servlet d’image qui redimensionne ou recadre les images lorsque cela est nécessaire, ce qui a pour effet d’appliquer une charge supplémentaire à l’instance de publication. Toutefois, tant que ces images peuvent être mises en cache, le défi peut être plus facilement relevé.
+De nombreux clients de sites mettent en œuvre un servlet d’image qui redimensionne ou recadre les images lorsque cela est nécessaire, ce qui a pour effet d’appliquer une charge supplémentaire à l’instance de publication. Cependant, tant que ces images peuvent être mises en cache, le défi peut être atténué.
 
 Une autre approche consiste à utiliser la technologie Dynamic Media pour annuler entièrement la manipulation d’images. Vous pouvez également déployer Brand Portal, qui accepte non seulement les responsabilités de génération de rendu à partir de l’infrastructure d’[!DNL Experience Manager], mais également la totalité du niveau de publication.
 
@@ -218,27 +218,27 @@ Si vous utilisez [!DNL Experience Manager] dans Adobe Managed Services (AMS), 
 
 L’écriture différée XMP met à jour les ressources d’origine chaque fois que les métadonnées sont modifiées dans [!DNL Experience Manager], ce qui permet ce qui suit :
 
-* La ressource elle-même est modifiée
-* Une version de la ressource est créée
+* La ressource elle-même est modifiée.
+* Une version de la ressource est créée.
 * La [!UICONTROL Ressource de mise à jour de gestion des ressources numériques] est exécutée par rapport à la ressource.
 
-Les résultats répertoriés consomment une grande quantité de ressources. Par conséquent, Adobe recommande la désactivation de l’écriture différée XMP si elle n’est pas obligatoire. Pour plus d’informations, voir [Écriture différée XMP](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/xmp-writeback.html?lang=fr).
+Les résultats répertoriés consomment une grande quantité de ressources. Par conséquent, Adobe recommande la désactivation de l’écriture différée XMP si elle n’est pas obligatoire. Pour plus d’informations, voir [Écriture différée XMP](/help/assets/xmp-writeback.md).
 
-L’importation d’une grande quantité de métadonnées peut entraîner une activité d’écriture différée XMP gourmande en ressources si l’indicateur d’exécution de workflow est vérifié. Planifiez une importation de ce type quand le serveur est peu utilisé afin que les performances d’autres utilisateurs ne soient pas affectées.
+L’importation d’une grande quantité de métadonnées peut entraîner une activité d’écriture différée XMP gourmande en ressources si l’indicateur d’exécution des workflows est coché. Planifiez un tel import pendant l’utilisation du serveur afin que les performances des autres utilisateurs ne soient pas affectées.
 
 ## Réplication {#replication}
 
-Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation de sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance d’auteur est répliquée vers une instance de publication unique qui est répliquée à son tour vers d’autres instances de publication, ce qui libère l’instance d’auteur.
+Lors de la réplication des ressources vers un grand nombre d’instances de publication (par exemple, dans une implémentation de sites), Adobe vous recommande d’utiliser la réplication par chaîne. Dans ce cas, l’instance d’auteur se réplique sur une instance de publication unique qui, à son tour, se réplique sur les autres instances de publication, libérant ainsi l’instance d’auteur.
 
 ### Configuration de la réplication en chaîne    {#configure-chain-replication}
 
 1. Sélectionnez l’instance de publication vers laquelle vous souhaitez effectuer les réplications en chaîne
-1. Sur cette instance de publication, ajoutez des agents de réplication qui pointent vers d’autres instances de publication
-1. Sur chacun de ces agents de réplication, activez « À la réception » dans l’onglet « Déclencheurs »
+1. Sur cette instance de publication, ajoutez des agents de réplication qui pointent vers les autres instances de publication.
+1. Sur chacun de ces agents de réplication, activez &quot;À réception&quot; dans l’onglet &quot;Déclencheurs&quot;.
 
 >[!NOTE]
 >
->Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant que dernière étape d’un workflow, généralement Ressource de mise à jour de gestion des actifs numériques.
+>Adobe ne recommande pas d’activer automatiquement les ressources. Cependant, si nécessaire, Adobe recommande d’effectuer cette opération en tant qu’étape finale d’un workflow, généralement Ressource de mise à jour de gestion des actifs numériques.
 
 ## Recherche des index    {#search-indexes}
 
@@ -257,8 +257,8 @@ Certaines optimisations peuvent être effectuées sur les configurations d’ind
 
 Si vos utilisateurs n’ont pas besoin d’effectuer une recherche de texte intégral de ressources, par exemple, lorsqu’ils parcourent le texte des documents PDF, désactivez-la. Vous améliorez les performances de l’index en désactivant l’indexation de texte intégral. Pour désactiver l’extraction de texte [!DNL Apache Lucene], procédez comme suit :
 
-1. Dans l’interface d’[!DNL Experience Manager], accédez au [!UICONTROL Gestionnaire de modules].
-1. Téléchargez et installez le module disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
+1. Dans l’interface d’[!DNL Experience Manager], accédez au [!UICONTROL Gestionnaire de packages].
+1. Téléchargez et installez le package disponible à l’adresse [disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip).
 
 ### Paramètre guessTotal {#guess-total}
 
@@ -268,7 +268,7 @@ Lors de la création de requêtes qui génèrent d’importants ensembles de ré
 
 ### Fichiers volumineux {#large-files}
 
-Il existe deux problèmes importants connus relatifs aux fichiers volumineux dans [!DNL Experience Manager]. Lorsque la taille des fichiers est supérieure à 2 Go, la synchronisation de reprise progressive peut s’exécuter en cas de mémoire insuffisante. Dans certains cas, cela empêche la synchronisation de reprise de s’exécuter. Dans d’autres cas, cela entraîne le blocage de l’instance principale. Ce scénario s’applique à tous les fichiers dans [!DNL Experience Manager] dont la taille est supérieure à 2 Go, y compris les modules de contenu.
+Il existe deux problèmes importants connus relatifs aux fichiers volumineux dans [!DNL Experience Manager]. Lorsque la taille des fichiers est supérieure à 2 Go, la synchronisation de reprise progressive peut s’exécuter en cas de mémoire insuffisante. Dans certains cas, cela empêche la synchronisation de reprise de s’exécuter. Dans d’autres cas, cela entraîne le blocage de l’instance principale. Ce scénario s’applique à tous les fichiers dans [!DNL Experience Manager] dont la taille est supérieure à 2 Go, y compris les packages de contenu.
 
 De même, lorsque les fichiers atteignent 2 Go lors de l’utilisation d’un magasin de données S3 partagé, la restitution du fichier à partir du cache vers le système de fichiers peut prendre un certain temps. Par conséquent, lorsque vous avez recours à une réplication sans binaire, il est possible que les données binaires ne soient pas conservées avant la fin de la réplication. Cette situation peut entraîner des problèmes, surtout si la disponibilité des données est importante.
 
@@ -278,13 +278,13 @@ Pour chaque déploiement d’[!DNL Experience Manager], créez un régime de tes
 
 ### Test réseau    {#network-testing}
 
-Pour tous les problèmes liés aux performances du réseau du client, effectuez les tâches suivantes :
+Pour toutes les préoccupations de performances du réseau du client, effectuez les tâches suivantes :
 
-* Tester les performances du réseau sur le réseau du client
+* Tester les performances du réseau depuis le réseau client
 * Testez les performances du réseau sur le réseau Adobe. Pour les clients AMS, consultez votre CSE pour effectuer des tests sur le réseau Adobe.
-* Tester les performances du réseau depuis un autre point d’accès
-* En utilisant un outil localisateur de réseau
-* Tester par rapport au Dispatcher
+* Test des performances du réseau à partir d’un autre point d’accès
+* En utilisant un outil de référence de réseau
+* Test par rapport au Dispatcher
 
 ### Test de déploiement d’[!DNL Experience Manager] {#aem-deployment-testing}
 
@@ -297,8 +297,8 @@ Afin de réduire au maximum la latence et d’obtenir un débit élevé grâce �
 
 * Autoriser HTTPS à contourner tous les renifleurs de trafic HTTP d’entreprise.
 * Utilisez une connexion câblée pour le chargement de ressources volumineuses.
-* Déploiement sur Java 8.
-* Définition de paramètres JVM optimaux.
+* Déployez sur Java 8.
+* Définissez des paramètres JVM optimaux.
 * Configurez un magasin de données de système de fichiers ou un magasin de données S3.
 * Désactivez la génération de sous-ressources. Si elle est activée, le workflow d’AEM crée une ressource distincte pour chaque page dans une ressource multi-page. Chacune de ces pages est une ressource en elle-même, qui consomme de l’espace disque supplémentaire et requiert la création de versions et un traitement de workflow supplémentaire. Si vous n’avez pas besoin de pages séparées, désactivez les activités d’extraction de page et de génération de sous-ressources.
 * Activez les workflows transitoires.

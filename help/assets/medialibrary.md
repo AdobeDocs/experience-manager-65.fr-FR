@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: ht
-source-wordcount: '0'
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '574'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=fr) |
 
 La plateforme [!DNL Adobe Experience Manager] offre différentes fonctionnalités de gestion des ressources. Media Library permet aux utilisateurs de charger un petit nombre de ressources dans le référentiel, de les rechercher et de les utiliser dans les pages web et de réaliser des tâches de gestion simples des ressources.
 
@@ -35,7 +34,7 @@ Media Library est installé dans le cadre de Sites. Aucune licence ou package su
 
 ## [!DNL Assets] face à Media Library {#assets-and-media-library}
 
-Experience Manager Assets offre des fonctionnalités de gestion des actifs numériques d’entreprise. La fonctionnalité Assets est fournie avec [!DNL Experience Manager] dans un seul module. Toutefois, les utilisateurs qui n’ont pas acheté de licence Assets ne sont pas autorisés à utiliser les fonctionnalités avancées de gestion des actifs numériques. Sans licence Assets, seules les [fonctions Media Library](#use-media-library) sont disponibles.
+Experience Manager Assets offre des fonctionnalités de gestion des actifs numériques d’entreprise. La fonctionnalité Assets est fournie avec [!DNL Experience Manager] dans un seul package. Toutefois, les utilisateurs qui n’ont pas acheté de licence Assets ne sont pas autorisés à utiliser les fonctionnalités avancées de gestion des actifs numériques. Sans licence Assets, seules les [fonctions Media Library](#use-media-library) sont disponibles.
 
 Si vous souhaitez empêcher l’utilisation involontaire des fonctionnalités [!DNL Assets] qui ne font pas partie de la licence, supprimez tous les workflows, composants, taxonomies, options spécifiques à [!DNL Assets] et l’administrateur [!DNL Assets] d’[!DNL Experience Manager]. Cela empêche vos utilisateurs d’utiliser accidentellement des fonctionnalités d’[!DNL Assets] pour lesquelles vous ne disposez pas de licence.
 

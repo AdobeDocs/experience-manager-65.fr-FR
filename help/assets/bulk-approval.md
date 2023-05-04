@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '819'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '807'
+ht-degree: 81%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/bulk-approval.html?lang=fr) |
 
 Mettez en place des workflows de révision pour les ressources dans un dossier ou une collection et partagez ce workflow avec les réviseurs ou les partenaires de conception afin d’obtenir leurs commentaires.
 
@@ -26,9 +25,9 @@ Mettez en place des workflows de révision pour les ressources dans un dossier o
 
 Vous pouvez associer le workflow de révision à un projet ou créer une tâche de révision indépendante.
 
-Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
+Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires prévus de l&#39;achèvement de diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
 
-Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ressources), vous recevez une notification de fin de révision.
+Une fois que le réviseur a terminé la révision (approuve ou refuse les ressources), vous recevez une notification de fin de révision.
 
 ## Création d’une tâche de révision pour des dossiers {#creating-a-review-task-for-folders}
 
@@ -39,7 +38,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) apparaissent dans la liste **[!UICONTROL Projets]**.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -66,15 +65,15 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_task](assets/review_task.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis cliquez sur **[!UICONTROL Terminé]** pour confirmer.
-1. Accédez à l’interface utilisateur d’[!DNL Assets] et ouvrez le dossier. Les icônes de statut d’approbation des ressources s’affichent en mode Carte et Liste.
+1. Accédez à l’interface utilisateur d’[!DNL Assets] et ouvrez le dossier. Les icônes de statut d’approbation des ressources s’affichent dans les vues Carte et Liste.
 
    **Mode Carte**
 
    ![Statut de révision tel qu’affiché en mode Carte](assets/chlimage_1-404.png)
 
-   **Mode Liste**
+   **Vue Liste**
 
-   ![Statut de révision tel qu’affiché en mode Liste](assets/review_status_listview.png)
+   ![Statut de révision tel qu’affiché dans la vue Liste](assets/review_status_listview.png)
 
 ## Création d’une tâche de révision pour les collections {#creating-a-review-task-for-collections}
 
@@ -85,7 +84,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) apparaissent dans la liste **[!UICONTROL Projets]**.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -105,7 +104,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_task_collection](assets/review_task_collection.png)
 
 1. Cliquez sur **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis cliquez sur **[!UICONTROL Terminé]** pour confirmer.
-1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation pour les ressources apparaissent dans les modes Carte et Liste.
+1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation des ressources s’affichent en mode Carte et Liste.
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
@@ -113,4 +112,4 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
 
-   *Image : mode Liste.*
+   *Image : vue Liste.*

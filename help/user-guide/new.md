@@ -4,10 +4,10 @@ seo-title: Resources for New AEM Users
 description: Questions, réponses et ressources destinées aux utilisateurs qui découvrent AEM
 seo-description: Questions, answers, and resources for users new to AEM
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '402'
-ht-degree: 74%
+source-wordcount: '298'
+ht-degree: 56%
 
 ---
 
@@ -34,23 +34,9 @@ En tant que client sous licence, vous pouvez obtenir une assistance pour AEM dep
 
 ## Où se trouve la documentation concernant les autres versions d’AEM ? {#versions}
 
-Vous êtes au bon endroit pour consulter la documentation la plus récente d’AEM 6.5.
+Vous êtes au bon endroit pour la documentation AEM 6.5.
 
-Adobe contient également la documentation relative aux anciennes versions d’Adobe Experience Manager. Vous pouvez utiliser le composant de version sur n’importe quelle page pour passer d’une version à l’autre ou effectuer un choix dans cette liste.
-
-* [AEM 6.4](https://experienceleague.adobe.com/docs/experience-manager-64.html?lang=fr)
-* [AEM 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
-* [AEM 6.2](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [AEM 5.6.1](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [AEM 5.6](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [CQ 5.5](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [CQ 5.4](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [CQ 5.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-* [CRX 2.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)**
-
-** Indique les versions qui ne sont plus officiellement prises en charge par Adobe.
+Adobe contient également la documentation relative aux anciennes versions d’Adobe Experience Manager. Vous pouvez y jeter un oeil. [Anciennes versions de la documentation d’Adobe Experience Manager, de CQ et de CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour plus d’informations.
 
 ## Où se trouvent les notes de mise à jour de la version 6.5 d’AEM ? {#release-notes}
 

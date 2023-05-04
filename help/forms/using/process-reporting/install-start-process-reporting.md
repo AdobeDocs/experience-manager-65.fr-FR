@@ -8,10 +8,10 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 74%
+source-wordcount: '1673'
+ht-degree: 75%
 
 ---
 
@@ -29,11 +29,11 @@ Si vous utilisez actuellement Forms Workflow, la base de données AEM Forms peut
 
 Les services de publication Process Reporting publient toutes les données AEM Forms actuellement disponibles dans la base de données. Cela signifie que si la base de données contient des données héritées sur lesquelles vous ne souhaitez pas exécuter de rapports et de requêtes, toutes ces données seront également publiées dans le référentiel, même si elles ne sont pas requises pour la création de rapports. Il est recommandé de purger ces données avant d’exécuter les services pour publier les données dans le référentiel Process Reporting. Cela améliore les performances du service d’éditeur et du service qui interroge les données pour la création de rapports.
 
-Pour plus d’informations sur la purge des données de processus AEM Forms, voir [Purger les données de processus](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+Pour plus d’informations sur la purge des données de processus AEM Forms, voir [Purger les données de processus](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur la [purge des processus et des tâches](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>Pour obtenir des conseils et astuces sur l’utilitaire de purge, reportez-vous à l’article Adobe Developer Connection sur la [purge des processus et des tâches](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Configurer les services Process Reporting {#configuring-process-reporting-services}
 

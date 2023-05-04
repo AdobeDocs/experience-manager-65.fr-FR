@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1180'
-ht-degree: 18%
+source-wordcount: '1122'
+ht-degree: 19%
 
 ---
 
@@ -57,10 +57,10 @@ Si un noeud unique d’une grappe à plusieurs noeuds a échoué et que les noeu
 1. (WebSphere® Application Server) Si vous récupérez une nouvelle instance de WebSphere® Application Server, exécutez la commande restoreConfig.bat/sh.
 1. Récupérez la base de données d’AEM forms en exécutant d’abord une opération de restauration de base de données à l’aide des fichiers de sauvegarde de la base de données, puis en appliquant les journaux de rétablissement des transactions à la base de données récupérée. (Voir [AEM base de données forms](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Pour plus d’informations, consultez l’un des articles de la base de connaissances suivants :
 
-   * [Sauvegarde et récupération de DB2® pour AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
-   * [Oracle Backup and Recovery for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
-   * [Sauvegarde et récupération de Microsoft® SQL Server pour AEM forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
-   * [MySQL Backup and Recovery for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
+   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Oracle Backup and Recovery for AEM Forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
+   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [MySQL Backup and Recovery for AEM Forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Récupérez le répertoire de stockage global de documents en commençant par supprimer le contenu du répertoire de stockage global de documents sur l’installation existante d’AEM forms, puis en copiant le contenu du répertoire de stockage global de documents à partir du répertoire de stockage global de documents sauvegardé. Si vous avez modifié l’emplacement du répertoire de stockage global de documents, voir [Modification de l’emplacement du répertoire de stockage global de documents pendant la récupération](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Renommez le répertoire de sauvegarde du répertoire de stockage global de documents à restaurer, comme illustré dans les exemples suivants :

@@ -4,9 +4,9 @@ description: Configuration de  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '1749'
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '1737'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=fr) |
 
 Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experience Manager] configure le connecteur amélioré après son installation. Pour obtenir des instructions d’installation, consultez la section [Installation du connecteur](/help/assets/workfront-integrations.md).
 
@@ -27,7 +26,7 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
->* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
+>* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [Gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
 >
 >* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 

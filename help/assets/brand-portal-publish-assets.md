@@ -1,7 +1,7 @@
 ---
 title: Publication de ressources sur Brand Portal
 seo-title: Publish assets to Brand Portal
-description: Découvrez comment publier des ressources ou en annuler la publication sur Brand Portal.
+description: Découvrez comment publier ou dépublier des ressources sur Brand Portal.
 seo-description: Learn how to publish and unpublish assets to Brand Portal.
 uuid: 350beb85-c0fb-4a1c-8597-c03592c02d3d
 contentOwner: User
@@ -13,9 +13,9 @@ docset: aem65
 feature: Brand Portal
 role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: ht
-source-wordcount: '390'
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '378'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/brandportal/brand-portal-publish-assets.html?lang=fr) |
 
 En tant qu’administrateur d’Adobe Experience Manager (AEM) Assets, vous pouvez publier des ressources et des dossiers sur l’instance AEM Assets Brand Portal (ou planifier le workflow de planification à une date/heure ultérieure) pour votre organisation. Cependant, vous devez d’abord configurer AEM Assets avec Brand Portal. Pour plus de détails, voir [Configuration d’AEM Assets avec Brand Portal](/help/assets/configure-aem-assets-with-brand-portal.md).
 

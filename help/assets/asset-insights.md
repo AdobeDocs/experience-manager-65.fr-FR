@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '791'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/touch-ui-configuring-asset-insights.html?lang=fr) |
 
 La fonction Assets Insights vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’extraire les statistiques sur leurs performances et leur popularité.
 
@@ -37,12 +36,12 @@ Pour permettre à Assets Insights d’afficher les statistiques d’utilisation
 Vous pouvez afficher les scores de statistiques sur les ressources à partir de la page des métadonnées.
 
 1. Dans l’interface utilisateur d’[!DNL Assets], sélectionnez l’image, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
-1. Sur la page Propriétés, cliquez sur l’onglet **[!UICONTROL Statistiques]**.
+1. Sur la page Propriétés, cliquez sur le **[!UICONTROL Insights]** .
 1. Consultez les détails d’utilisation de la ressource dans l’onglet **[!UICONTROL Statistiques]**. La section **[!UICONTROL Score]** indique les scores totaux d’utilisation et de performances d’une ressource.
 
    Le score d’utilisation indique le nombre de fois que la ressource est utilisée dans diverses solutions.
 
-   Le score **[!UICONTROL Impressions]** correspond au nombre de fois que la ressource est chargée sur le site web. Le nombre affiché sous **[!UICONTROL Clics]** représente le nombre de fois que la ressource est cliquée.
+   Le **[!UICONTROL Impressions]** score correspond au nombre de fois où la ressource est chargée sur le site web. Le nombre affiché sous **[!UICONTROL Clics]** correspond au nombre de clics sur la ressource.
 
 1. Passez en revue la section **[!UICONTROL Statistiques d’utilisation]** pour savoir de quelles entités la ressource faisait partie et dans quelles solutions de création elle a récemment été utilisée. Plus l’utilisation est élevée, plus la ressource a de chances d’être populaire auprès des utilisateurs. Les données d’utilisation s’affichent sous les sections suivantes :
 
@@ -75,7 +74,7 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 
 1. Dans l’interface utilisateur d’[!DNL Assets], accédez au dossier contenant les ressources dont vous souhaitez consulter les statistiques.
 1. Cliquez sur Mise en page dans la barre d’outils, puis sélectionnez **[!UICONTROL Mode Insights]**.
-1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
+1. La page affiche les scores d’utilisation des ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
 ## Planification d’une tâche en arrière-plan {#scheduling-background-job}
 
@@ -86,4 +85,4 @@ La fonction Assets Insights extrait les données d’utilisation des ressources
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 
-1. Spécifiez la fréquence du planificateur et l’heure de début désirées pour la tâche dans l’expression de planificateur de propriété. Enregistrez les modifications.
+1. Spécifiez la fréquence du planificateur et l’heure de début de la tâche dans l’expression du planificateur de propriété. Enregistrez les modifications.

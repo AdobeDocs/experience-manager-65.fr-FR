@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '1433'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '1421'
+ht-degree: 92%
 
 ---
 
@@ -18,19 +18,18 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/drm.html?lang=fr) |
 
-Les ressources numériques sont souvent associées à une licence qui prévoit les conditions et la durée de leur utilisation. Dans la mesure où [!DNL Adobe Experience Manager Assets] est entièrement intégré à la plate-forme [!DNL Experience Manager], vous pouvez contrôler efficacement les informations sur l’expiration et l’état des ressources. Vous pouvez également associer des informations de licence à des ressources.
+Les ressources numériques sont souvent associées à une licence qui prévoit les conditions et la durée de leur utilisation. Dans la mesure où [!DNL Adobe Experience Manager Assets] est entièrement intégré à la plateforme [!DNL Experience Manager], vous pouvez contrôler efficacement les informations sur l’expiration et l’état des ressources. Vous pouvez également associer des informations de licence à des ressources.
 
 ## Expiration de ressources {#asset-expiration}
 
 L’expiration de ressources est un moyen efficace de faire respecter les exigences en matière de licence. Elle garantit que la ressource qui est publiée ne l’est plus lorsqu’elle arrive à expiration, ce qui évite tout risque de violation de licence. Sans autorisations d’administration, un utilisateur ne peut pas modifier, copier, déplacer, publier ni télécharger une ressource arrivée à expiration.
 
-Vous pouvez consulter le statut d’expiration d’une ressource dans la console [!DNL Assets] en mode d’affichage Carte comme en mode Liste.
+Vous pouvez consulter le statut d’expiration d’une ressource dans la console [!DNL Assets] dans la vue Carte comme dans la vue Liste.
 
 ![expired_flag_list](assets/expired_flag_list.png)
 
-*Image : en mode Liste, la colonne [!UICONTROL Statut] affiche la bannière [!UICONTROL Expiré].*
+*Image : dans la vue Liste, la colonne [!UICONTROL Statut] affiche la bannière [!UICONTROL Expiré].*
 
 Vous pouvez consulter le statut d’expiration d’une ressource dans la [!UICONTROL chronologie] du rail de gauche.
 
@@ -82,7 +81,7 @@ Pour que la console [!DNL Assets] affiche les ressources composites référencé
    >
    >Seul l’auteur de la ressource (la personne qui charge une ressource spécifique dans [!DNL Assets]) reçoit un e-mail lorsqu’elle arrive à expiration. Reportez-vous à la rubrique traitant de la [configuration de notifications par e-mail](/help/sites-administering/notification.md) pour en savoir plus sur la configuration de notifications par e-mail au niveau global d’[!DNL Experience Manager].
 
-1. Dans le champ **[!UICONTROL Notification préalable en secondes]**, indiquez l’intervalle de temps, en secondes, qui précède le moment auquel une ressource expire et pendant lequel vous souhaitez recevoir une notification concernant l’expiration. Les créateurs de ressources reçoivent un message avant l’expiration de la ressource les informant que la ressource va expirer après l’heure spécifiée. Une fois la ressource arrivée à expiration, vous recevez une notification par courrier électronique qui confirme l’expiration. En outre, les ressources expirées sont désactivées.
+1. Dans le champ **[!UICONTROL Notification préalable en secondes]**, indiquez l’intervalle de temps, en secondes, qui précède le moment auquel une ressource expire et pendant lequel vous souhaitez recevoir une notification concernant l’expiration. Les créateurs de ressources reçoivent un message avant l’expiration de la ressource les informant que la ressource va expirer après l’heure spécifiée. Une fois la ressource arrivée à expiration, vous recevez une autre notification qui confirme l’expiration. En outre, les ressources expirées sont désactivées.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -93,7 +92,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 1. Dans l’interface utilisateur [!DNL Assets], sélectionnez une ressource.
 1. Cliquez sur **[!UICONTROL Publier]** dans la barre d’outils. Si vous ne voyez pas l’option **Publier** dans la barre d’outils, cliquez sur **[!UICONTROL Plus]** dans la barre d’outils et recherchez l’option **[!UICONTROL Publier]** ![option Publier](assets/do-not-localize/publish-globe.png).
 1. Sélectionnez **[!UICONTROL Publier]** dans le menu, puis fermez la boîte de dialogue de confirmation.
-1. Quittez le mode de sélection. L’état de publication de la ressource s’affiche au bas de sa miniature en mode d’affichage Carte. En mode Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
+1. Quittez le mode de sélection. L’état de publication de la ressource s’affiche au bas de la miniature de la ressource en mode Carte. Dans la vue Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
@@ -106,13 +105,13 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
    *Image : onglet [!UICONTROL Avancé] de la page [!UICONTROL Propriétés] de ressource pour définir l’expiration de la ressource.*
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL Fermer]** pour afficher la console Ressources.
-1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. En mode Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
+1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. Dans la vue Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
 1. Dans la console [!DNL Assets], sélectionnez un dossier et créez une tâche de révision sur le dossier.
 1. Recherchez et approuvez/rejetez les ressources dans la tâche de révision, puis cliquez sur **[!UICONTROL Terminé]**.
-1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas du mode Carte. En mode Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
+1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas en mode Carte. Dans la vue Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
 
    ![chlimage_1-161](assets/chlimage_1-161.png)
 
@@ -130,7 +129,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Vous pouvez également rechercher des éléments en fonction de plusieurs statuts, sous diverses facettes de recherche. Par exemple, vous pouvez rechercher les ressources publiées qui ont été approuvées dans une tâche de révision et qui n’ont pas encore expiré, en sélectionnant les options correspondantes dans les facettes de recherche.
+1. Vous pouvez également rechercher des éléments en fonction de plusieurs statuts, sous diverses facettes de recherche. Par exemple, vous pouvez rechercher des ressources publiées qui ont été approuvées dans une tâche de révision et qui n’ont pas encore expiré en sélectionnant les options appropriées dans les facettes de recherche.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -142,7 +141,7 @@ Si vous sélectionnez une ressource protégée et que vous cliquez ensuite sur *
 
 Si la sélection contient plusieurs ressources protégées, sélectionnez-en une à la fois, acceptez le contrat de licence et procédez au téléchargement de la ressource.
 
-Une ressource est considérée comme protégée si l’une des conditions suivantes est remplie :
+Une ressource est considérée comme protégée si l’une de ces conditions est remplie :
 
 * La propriété de métadonnées de la ressource `xmpRights:WebStatement` pointe vers le chemin d’accès de la page qui contient le contrat de licence approprié.
 * La valeur de la propriété de métadonnées de la ressource `adobe_dam:restrictions` est un code HTML brut qui spécifie le contrat de licence.

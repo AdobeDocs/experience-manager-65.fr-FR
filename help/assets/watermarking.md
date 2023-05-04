@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '340'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 90%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/watermarking.html?lang=fr) |
 
 [!DNL Adobe Experience Manager Assets] vous permet d’ajouter un filigrane numérique aux ressources pour vérifier l’authenticité et la propriété des droits d’auteur de ces ressources. [!DNL Experience Manager Assets] prend en charge le texte à utiliser comme filigrane dans les fichiers PNG et JPEG.
 
@@ -37,8 +36,8 @@ Pour appliquer le filigrane sur les ressources, ajoutez l’étape d’ajout d�
    >
    >Placez l’étape [!UICONTROL Ajouter un filigrane] n’importe où avant l’étape [!UICONTROL Traitement de la miniature].
 
-1. Ouvrez l’étape **[!UICONTROL Ajouter un filigrane]** pour afficher ses propriétés.
-1. Sous l’onglet **[!UICONTROL Arguments]**, spécifiez des valeurs valides dans les différents champs, notamment le texte, le type de police, la taille, la couleur, l’emplacement, l’orientation, etc. Pour confirmer les modifications, cliquez sur **[!UICONTROL Terminé]**.
+1. Ouvrez le **[!UICONTROL Ajouter un filigrane]** pour afficher ses propriétés.
+1. Dans le **[!UICONTROL Arguments]** , spécifiez des valeurs valides dans les différents champs, notamment le texte, le type de police, la taille, la couleur, la position, l’orientation, etc. Pour confirmer les modifications, cliquez sur **[!UICONTROL Terminé]**.
 
    ![Indiquer les arguments dans l’étape Ajouter un filigrane dans [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 

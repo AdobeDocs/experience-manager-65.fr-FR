@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1474'
+source-wordcount: '1465'
 ht-degree: 38%
 
 ---
@@ -90,7 +90,7 @@ Si trop de modifications et de validations sont effectuées dans le référentie
 1. Pour éviter de dépasser les limites acceptables des files d’attente d’observation, il est recommandé de :
 
    * Réduisez le taux constant de validations. De courts pics de validations sont acceptables, mais le taux constant doit être réduit.
-   * Augmentez la taille de `DiffCache` tel que décrit dans [Conseils de réglages de performance > Réglage du stockage Mongo > Taille du cache des documents](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/configuring/configuring-performance.html?lang=en).
+   * Augmentez la taille de `DiffCache` tel que décrit dans [Conseils de réglages de performance > Réglage du stockage Mongo > Taille du cache des documents](/help/sites-deploying/configuring-performance.md).
 
 ## Identification et correction d’un processus de réindexation bloqué {#identifying-and-remediating-a-stuck-re-indexing-process}
 

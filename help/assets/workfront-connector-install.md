@@ -4,9 +4,9 @@ description: Installation de la version [!DNL Workfront for Experience Manager e
 role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '501'
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '489'
 ht-degree: 100%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-install.html?lang=fr) |
 
 Avec un accès administrateur dans [!DNL Adobe Experience Manager], vous pouvez installer le connecteur amélioré. Avant de procéder à l’installation, vérifiez la prise en charge de la plateforme et d’autres [conditions préalables pour le connecteur](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
@@ -27,7 +26,7 @@ Avec un accès administrateur dans [!DNL Adobe Experience Manager], vous pouvez 
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
->* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
+>* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, accédez au groupe `digital.hoodoo` disponible dans le volet de gauche du [Gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
 >
 >* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -45,7 +44,7 @@ Pour installer le connecteur, procédez comme suit :
    * `/apps/dam/cfm/models/editor/components/datatypeproperties`
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
-1. Installez le module téléchargé à l’aide du [!UICONTROL gestionnaire de modules]. Pour savoir comment installer des modules, consultez la [Documentation du gestionnaire de modules](/help/sites-administering/package-manager.md).
+1. Installez le package téléchargé à l’aide du [!UICONTROL gestionnaire de packages]. Pour savoir comment installer des packages, consultez la [Documentation du gestionnaire de packages](/help/sites-administering/package-manager.md).
 1. Créez `wf-workfront-users` dans Groupe d’utilisateurs [!DNL Experience Manager] et attribuez l’autorisation `jcr:all` dans `/content/dam`.
 
 Un utilisateur système `workfront-tools` est créé automatiquement et les autorisations requises sont gérées automatiquement. Toutes les personnes utilisant [!DNL Workfront] et le connecteur amélioré sont automatiquement ajoutées dans le cadre de ce groupe.
@@ -71,4 +70,4 @@ Experience Manager Assets vous permet de mettre à jour [!DNL Workfront for Ex
 Pour mettre à jour [!DNL Workfront for Experience Manager enhanced connector] vers la dernière version :
 
 1. Téléchargez la dernière version du connecteur amélioré à partir du lien [[!DNL Software Distribution] ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
-1. Installez le module téléchargé à l’aide du [!UICONTROL gestionnaire de modules]. Pour savoir comment installer des modules, consultez la [Documentation du gestionnaire de modules](/help/sites-administering/package-manager.md).
+1. Installez le package téléchargé à l’aide du [!UICONTROL gestionnaire de packages]. Pour savoir comment installer des packages, consultez la [Documentation du gestionnaire de packages](/help/sites-administering/package-manager.md).

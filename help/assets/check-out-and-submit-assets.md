@@ -5,10 +5,10 @@ contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '460'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici.](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/check-out-and-submit-assets.html?lang=fr) |
 
 [!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
@@ -34,7 +33,7 @@ Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
 
-   Sélectionnez la ressource. Notez que la barre d’outils n’affiche aucune option permettant de modifier, d’annoter, de publier ou de supprimer la ressource.
+   Sélectionnez la ressource. Notez que la barre d’outils n’affiche aucune option vous permettant de modifier, d’annoter, de publier ou de supprimer la ressource.
 
    ![chlimage_1-472](assets/chlimage_1-472.png)
 

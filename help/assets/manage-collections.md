@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2203'
+ht-degree: 90%
 
 ---
 
@@ -19,15 +19,14 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-collections-touch-ui.html?lang=fr) |
 
 Une collection est un ensemble de ressources dans [!DNL Adobe Experience Manager Assets]. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou dynamique basée sur les résultats de la recherche.
 
-Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
+Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager des collections avec différents utilisateurs auxquels sont attribués différents niveaux de privilèges, notamment l’affichage, la modification, etc.
 
-Vous pouvez partager plusieurs collections avec un utilisateur. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
+Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
-Selon la façon dont elles rassemblent les ressources, les collections sont des types suivants :
+Les collections sont des types suivants, en fonction de la manière dont elles collectent les ressources :
 
 * Collection contenant une liste de référence statique de ressources, dossiers et autres collections
 
@@ -43,11 +42,11 @@ Vous pouvez créer une collection contenant des [références statiques](#creati
 
 ### Création d’une collection avec des références statiques {#creating-a-collection-with-static-references}
 
-Vous pouvez créer une collection avec des références statiques, par exemple, une collection avec des références aux ressources, aux dossiers, aux collections, aux visionneuses à 360° et aux visionneuses d’images.
+Vous pouvez créer une collection avec des références statiques, par exemple une collection avec des références à des ressources, des dossiers, des collections, des visionneuses à 360° et des visionneuses d’images.
 
-1. Accédez à la console **[!UICONTROL Collections]**.
+1. Accédez au **[!UICONTROL Collections]** console.
 1. **[!UICONTROL Créer]**.
-1. Sur la page **[!UICONTROL Créer une collection]**, saisissez un titre et une description facultative pour la collection.
+1. Dans le **[!UICONTROL Créer une collection]** , saisissez un titre et une description facultative de la collection.
 1. Ajoutez des membres à la collection et affectez les autorisations appropriées. Vous pouvez également sélectionner **[!UICONTROL Collection publique]** pour permettre à tous les utilisateurs d’accéder à la collection.
 
    >[!NOTE]
@@ -81,7 +80,7 @@ Vous pouvez faire glisser des ressources de l’interface utilisateur d’[!DNL 
 
 ### Création d’une collection dynamique {#creating-a-smart-collection}
 
-Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers ou en utilisant des fichiers et des dossiers.
+Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers et non des dossiers ou des fichiers et des dossiers.
 
 Pour créer une collection dynamique, procédez comme suit :
 
@@ -95,7 +94,7 @@ Pour créer une collection dynamique, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**.
 
-1. Spécifiez le nom de la collection. Sélectionnez **[!UICONTROL Public]** pour ajouter le groupe Utilisateurs DAM avec le rôle Observateur à la collection dynamique.
+1. Attribuez un nom à la collection. Sélectionnez **[!UICONTROL Public]** pour ajouter le groupe Utilisateurs DAM avec le rôle Observateur à la collection dynamique.
 
    ![save_collection](assets/save_collection.png)
 
@@ -113,7 +112,7 @@ Pour créer une collection dynamique, procédez comme suit :
 
 ## Ajout de ressources à une collection {#adding-assets-to-a-collection}
 
-Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour rassembler les ressources. Pour cette raison, les références statiques aux ressources et dossiers ne s’appliquent pas à celles-ci.
+Vous pouvez ajouter des ressources à une collection qui comporte une liste de ressources ou de dossiers référencés. Les collections dynamiques utilisent une requête de recherche pour renseigner les ressources. Par conséquent, les références statiques aux ressources et aux dossiers ne s’appliquent pas à ces ressources.
 
 1. Dans l’interface utilisateur [!DNL A]ssets, sélectionnez la ressource, puis cliquez sur **[!UICONTROL À la collection]** ![ajouter à la collection](assets/do-not-localize/add-to-collection.png) dans la barre d’outils.
 Vous pouvez également faire glisser la ressource sur la zone **[!UICONTROL Déposer dans la collection]** dans l’interface. Ajoutez les ressources lorsque le libellé de la zone devient **[!UICONTROL Déposer pour ajouter]**.
@@ -140,7 +139,7 @@ Les collections dynamiques sont créées en enregistrant une recherche afin que 
 
    ![edit_smart_collectiondialog](assets/edit_smart_collectiondialog.png)
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**. La boîte de dialogue **[!UICONTROL Modif. collection dynam.]** s’affiche.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. Le **[!UICONTROL Modification de la collection dynamique]** s’affiche.
 1. Cliquez sur **[!UICONTROL Remplacer]** pour remplacer la collection dynamique d’origine par la collection modifiée. Sinon, sélectionnez **[!UICONTROL Enregistrer sous]** pour enregistrer la collection modifiée séparément.
 1. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Enregistrer]** pour terminer le processus.
 
@@ -154,7 +153,7 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 
 ## Modification en bloc des métadonnées de plusieurs collections {#editing-collection-metadata-in-bulk}
 
-Vous pouvez modifier simultanément les métadonnées de plusieurs collections. Cette fonctionnalité vous aide à répliquer rapidement des métadonnées communes dans plusieurs collections.
+Vous pouvez modifier les métadonnées de plusieurs collections simultanément. Cette fonctionnalité vous permet de répliquer rapidement des métadonnées communes dans plusieurs collections.
 
 1. Dans la console Collections, sélectionnez deux collections ou plus.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
@@ -217,7 +216,7 @@ Lorsque vous téléchargez une collection, la hiérarchie complète des ressourc
 
 1. Dans la console Collections, sélectionnez une ou plusieurs collections à télécharger.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Télécharger]**.
-1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. Sélectionnez l’option **[!UICONTROL Courrier électronique]** pour envoyer une notification électronique au propriétaire de la collection.
+1. Dans la boîte de dialogue **[!UICONTROL Télécharger]**, cliquez sur **[!UICONTROL Télécharger]**. Si vous souhaitez télécharger les rendus des ressources dans la collection, sélectionnez **[!UICONTROL Rendus]**. Sélectionnez la **[!UICONTROL Email]** pour envoyer une notification électronique au propriétaire de la collection.
 
    Lorsque vous sélectionnez une collection à télécharger, l’ensemble de la hiérarchie de dossiers sous cette collection est téléchargé. Pour inclure chaque collection que vous téléchargez (y compris les ressources figurant dans des collections enfant imbriquées dans la collection parent) dans un dossier individuel, sélectionnez **[!UICONTROL Créer un dossier distinct pour chaque ressource]**.
 
@@ -233,11 +232,11 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
    >
    >La collection mise le plus récemment à jour est sélectionnée par défaut sur la page **[!UICONTROL Ajouter à la collection]**.
 
-1. Cliquez sur **[!UICONTROL Ajouter]**. Un message confirme l’ajout de la collection à la collection cible sur la page **[!UICONTROL Sélectionner la destination.]** Fermez le message pour terminer le processus.
+1. Cliquez sur **[!UICONTROL Ajouter]**. Un message confirme l’ajout de la collection à la collection cible dans la variable **[!UICONTROL Sélectionner la destination]** page. Fermez le message pour terminer le processus.
 
 >[!NOTE]
 >
->Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, elles ne peuvent pas comporter d’autres collections.
+>Les collections dynamiques ne peuvent pas être imbriquées. En d’autres termes, les collections dynamiques ne peuvent pas contenir d’autres collections.
 
 ## Recherches enregistrées {#saved-searches}
 

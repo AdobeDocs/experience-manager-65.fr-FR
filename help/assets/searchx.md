@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
-workflow-type: ht
-source-wordcount: '838'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Vous pouvez également ajouter des onglets supplémentaires au panneau d’admin
 
 >[!CAUTION]
 >
->L’IU classique est obsolète depuis la version 6.4 d’[!DNL Experience Manager]. Pour consulter l’annonce correspondante, consultez la section [Fonctionnalités obsolètes et supprimées](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=fr). Adobe recommande d’utiliser l’IU optimisée pour les écrans tactiles. Pour les personnalisations, consultez la section [Facettes de recherche](/help/assets/search-facets.md).
+>L’IU classique est obsolète depuis la version 6.4 d’[!DNL Experience Manager]. Adobe recommande d’utiliser l’IU optimisée pour les écrans tactiles. Pour les personnalisations, consultez la section [Facettes de recherche](/help/assets/search-facets.md).
 
 ## Recouvrement {#overlaying}
 
@@ -53,11 +53,11 @@ En plus d’utiliser des prédicats préexistants, l’équipe de développement
 
 La création de prédicats personnalisés nécessite des connaissances de base sur la [structure des widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-La pratique recommandée consiste à copier un prédicat existant, puis à le modifier. Des exemples de prédicats sont disponibles dans le répertoire **/libs/cq/search/components/predicates**.
+Il est recommandé de copier un prédicat existant et de l’ajuster. Les exemples de prédicats se trouvent dans **/libs/cq/search/components/predicates**.
 
 ### Exemple : création d’un prédicat de propriété simple   {#example-build-a-simple-property-predicate}
 
-Pour créer un prédicat de propriété, procédez comme suit :
+Pour créer un prédicat de propriété :
 
 1. Créez un dossier de composant dans votre répertoire de projets, par exemple **/apps/weretail/components/titlepredicate**.
 1. Ajoutez **content.xml** :
@@ -140,7 +140,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
    ```
 
 1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** de type principal **cq:EditConfig**. Pour pouvoir supprimer des paragraphes, ajoutez une propriété **cq:actions** à plusieurs valeurs avec une seule valeur de **DELETE**.
-1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple **press.html**), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
+1. Accédez à votre navigateur et à votre page d’exemple (par exemple, **press.html**) passez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicat (par exemple, **left**).
 
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats** et saisissez un mot de recherche, par exemple **Diamant**, puis cliquez sur la loupe pour lancer la recherche.
 
@@ -150,7 +150,7 @@ Pour créer un prédicat de propriété, procédez comme suit :
 
 ### Exemple : création d’un prédicat de groupe simple {#example-build-a-simple-group-predicate}
 
-Pour créer un prédicat de groupe, procédez comme suit :
+Pour créer un prédicat de groupe :
 
 1. Créez un dossier de composant dans votre répertoire de projets, par exemple **/apps/weretail/components/picspredicate**.
 1. Ajoutez **content.xml** :
@@ -165,7 +165,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
        componentGroup="Search"/>
    ```
 
-1. Ajoutez **titlepredicate.jsp** :
+1. Ajouter **titlepredicate.jsp**:
 
    ```java
    <%--
@@ -244,7 +244,7 @@ Pour créer un prédicat de groupe, procédez comme suit :
    ```
 
 1. Pour rendre le composant accessible, vous devez être en mesure de le modifier. Pour rendre un composant modifiable, dans CRXDE, ajoutez un nœud **cq:editConfig** de type principal **cq:EditConfig**. Pour pouvoir supprimer des paragraphes, ajoutez une propriété **cq:actions** à plusieurs valeurs avec une seule valeur de **DELETE**.
-1. Accédez à votre navigateur puis, sur votre exemple de page (par exemple **press.html**), basculez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicats (par exemple **left**).
+1. Accédez à votre navigateur et à votre page d’exemple (par exemple, **press.html**) passez en mode de conception et activez votre nouveau composant pour le système de paragraphes de prédicat (par exemple, **left**).
 1. En mode d’**édition**, le nouveau composant est désormais disponible dans le sidekick (accessible dans le groupe **Recherche**). Insérez le composant dans la colonne **Prédicats**.
 
 ## Widgets de prédicats installés {#installed-predicate-widgets}

@@ -5,10 +5,10 @@ contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '5511'
-ht-degree: 87%
+source-wordcount: '5499'
+ht-degree: 99%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 87%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=fr) |
 | AEM 6.5 | Cet article |
-| AEM 6.4 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-video-assets.html?lang=fr) |
 
 Le format vidéo est un élément essentiel des ressources numériques d’une entreprise. [!DNL Adobe Experience Manager] propose des solutions et des fonctionnalités matures pour gérer l’ensemble du cycle de vie de vos ressources vidéo après leur création.
 
@@ -30,7 +29,7 @@ Découvrez comment gérer et modifier les ressources vidéo dans [!DNL Adobe Exp
 
 1. Dans le dossier Ressources numériques ou ses sous-dossiers, accédez à l’emplacement où vous souhaitez ajouter les ressources numériques.
 1. Pour charger le contenu, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](manage-assets.md#uploading-assets) pour plus d’informations.
-1. Pour prévisualiser une vidéo en mode carte, cliquez sur l’option **[!UICONTROL Lecture]** ![option de lecture](assets/do-not-localize/play.png) de la ressource vidéo. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les options [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue de liste.
+1. Pour prévisualiser une vidéo en mode carte, cliquez sur l’option **[!UICONTROL Lecture]** ![option de lecture](assets/do-not-localize/play.png) de la ressource vidéo. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les options [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue Liste.
 
 1. Pour prévisualiser la vidéo dans la page des détails de la ressource, cliquez sur **[!UICONTROL Modifier]** sur la carte. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
 
@@ -82,7 +81,7 @@ Vous pouvez publier des ressources vidéo Experience Manager on-premise directe
 
 Pour publier des ressources vidéo sur YouTube, configurez Experience Manager Assets avec des balises. Vous associez ces balises à une chaîne YouTube. Si la balise d’une ressource vidéo correspond à la balise d’une chaîne YouTube, la vidéo est publiée sur YouTube. La publication sur YouTube se produit avec une publication normale de la vidéo à condition qu’une balise associée soit utilisée.
 
-YouTube procède à son propre codage. Ainsi, le fichier vidéo d’origine qui a été chargé dans Experience Manager est publié sur YouTube au lieu de tout rendu vidéo créé par le codage Dynamic Media. Même s’il n’est pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est supposé qu’elles le sont si un paramètre prédéfini de visionneuse est nécessaire pour la lecture.
+YouTube procède à son propre codage. De ce fait, le fichier vidéo d’origine chargé dans Experience Manager est publié sur YouTube et non pas dans un rendu vidéo créé par le codage Dynamic Media. Même s’il n’est pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est supposé qu’elles le sont si un paramètre prédéfini de visionneuse est nécessaire pour la lecture.
 
 Lorsque vous ignorez le profil de traitement vidéo et que vous effectuez directement la publication sur YouTube, votre ressource vidéo ne dispose pas de miniature visible dans Experience Manager Assets. Cela signifie également que si vous utilisez le mode d’exécution `dynamicmedia` ou `dynamicmedia_scene7`, les vidéos non codées ne fonctionnent avec aucun des types de ressources Dynamic Media.
 
@@ -137,12 +136,12 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Dans le tableau de bord de votre projet, dans la carte Prise en main , appuyez sur **[!UICONTROL Exploration et activation des API]**.
+   * Dans le tableau de bord de votre projet, dans la vignette Prise en main, cliquez sur **[!UICONTROL Explorer et activer les API]**.
    * Dans le tableau de bord de votre projet, dans la carte API, appuyez sur **[!UICONTROL Accéder à l’aperçu des API]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. Dans la partie supérieure de la page APIs &amp; Services, appuyez sur **[!UICONTROL Activation des API et des services]**.
+1. En haut de la page API &amp; services, sélectionnez **[!UICONTROL Activer les API et les services]**.
 1. Sur la page Bibliothèque d’API, dans la partie gauche, sous **[!UICONTROL Catégorie]**, appuyez sur **[!UICONTROL YouTube]**. Sur le côté droit de la page, appuyez sur **[!UICONTROL YouTube Data API]**.
 1. Sur la page YouTube Data API v3, appuyez sur **[!UICONTROL Activer]**.
 
@@ -154,7 +153,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
 1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 1, procédez comme suit :
 
-   * Dans la **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL YouTube Data API v3]**.
+   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL YouTube Data API v3]**.
 
    * Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**.
 
@@ -162,7 +161,7 @@ Pour configurer les paramètres de Google Cloud, procédez comme suit :
 
    ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
 
-1. Appuyer **[!UICONTROL De quelles informations d’identification ai-je besoin ?]**
+1. Sélectionnez **[!UICONTROL De quels identifiants ai-je besoin ?]**
 1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 2, sous l’en-tête **[!UICONTROL Créer un ID client OAuth 2.0]**, dans le champ Nom, saisissez un nom unique si vous le souhaitez. Vous pouvez également utiliser le nom par défaut spécifié par Google.
 1. Dans le champ de texte sous l’en-tête **[!UICONTROL Origines JavaScript autorisées]**, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
 
@@ -257,7 +256,7 @@ Après avoir activé l’agent de réplication de publication YouTube, si vous s
 1. Dans le coin supérieur gauche, appuyez sur le logo Experience Manager, puis, dans le rail de gauche, appuyez sur **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration de la publication sur YouTube]**.
 1. Appuyez sur **[!UICONTROL global]** (sans sélectionner cette option).
 
-1. Dans le coin supérieur droit de la page globale, appuyez sur **[!UICONTROL Créer]**.
+1. Dans le coin supérieur droit de la page Global, appuyez sur **[!UICONTROL Créer]**.
 1. Sur la page Créer une configuration YouTube, sous Paramètres de plateforme Google Cloud, dans le champ **[!UICONTROL Nom de l’application]**, saisissez l’ID de projet Google.
 
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment configuré les paramètres de Google Cloud.
@@ -272,16 +271,16 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
 
    Configurez maintenant les canaux YouTube dans Experience Manager.
 
-1. Appuyer **[!UICONTROL Ajouter un canal]**.
+1. Appuyez sur **[!UICONTROL Ajouter un canal]**.
 1. Dans la boîte de dialogue Paramètres de chaîne, saisissez le nom de la chaîne que vous avez créée lors de la tâche **[!UICONTROL Ajout d’une ou plusieurs chaînes YouTube]** précédemment.
 
    Vous pouvez éventuellement ajouter une description.
 
 1. Appuyez sur **[!UICONTROL Ajouter]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté au compte Google Cloud, ignorez cette étape.
+1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Selon le nombre de canaux de votre compte, deux éléments ou plus sont affichés. Sélectionnez un canal. Ne sélectionnez pas l’adresse électronique ; ce n’est pas un canal.
+   * Deux éléments ou plus s’afficheront en fonction du nombre de canaux de votre compte. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’un canal.
    * Dans la page suivante, appuyez sur **[!UICONTROL Accepter]** pour autoriser l’accès à cette chaîne.
 
 1. Appuyez sur **[!UICONTROL Autoriser]**.
@@ -292,7 +291,7 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
 1. Appuyez sur l’icône de liste déroulante (flèche pointant vers le bas) pour afficher la liste des balises disponibles dans Experience Manager.
 1. Appuyez sur une ou plusieurs balises pour les ajouter.
 
-   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la, puis appuyez sur **[!UICONTROL X]**.
+   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la et appuyez sur **[!UICONTROL X]**.
 
 1. Lorsque vous avez terminé d’ajouter les balises souhaitées, appuyez sur **[!UICONTROL Enregistrer]**.
 
@@ -311,7 +310,7 @@ Laissez ouverte la page Créer une configuration YouTube ; vous allez y revenir
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/video.md#configuring-google-cloud-settings).
 Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y retournerez dans quelques instants.
 
-1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré plus tôt dans la tâche Configuration des paramètres du cloud Google .
+1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré plus tôt au cours de la tâche de configuration des paramètres de Google Cloud.
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
 1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. Appuyez sur **[!UICONTROL OK]**.
@@ -324,10 +323,10 @@ Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y reto
    Vous pouvez éventuellement ajouter une description.
 
 1. Appuyez sur **[!UICONTROL OK]**.
-1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté au compte Google Cloud, ignorez cette étape.
+1. L’authentification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Selon le nombre de canaux de votre compte, deux éléments ou plus sont affichés. Sélectionnez un canal. Ne sélectionnez pas l’adresse électronique ; ce n’est pas un canal.
+   * Deux éléments ou plus s’afficheront en fonction du nombre de canaux de votre compte. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’un canal.
    * Dans la page suivante, appuyez sur **[!UICONTROL Accepter]** pour autoriser l’accès à cette chaîne.
 
 1. Appuyez sur **[!UICONTROL Autoriser]**.
@@ -338,9 +337,9 @@ Laissez la boîte de dialogue Paramètres de compte YouTube ouverte. Vous y reto
 1. Appuyez sur l’icône de liste déroulante (flèche pointant vers le bas) pour afficher la liste des balises disponibles dans Experience Manager.
 1. Appuyez sur une ou plusieurs balises pour les ajouter.
 
-   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la, puis appuyez sur **X**.
+   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la et appuyez sur **X**.
 
-1. Lorsque vous avez terminé d’ajouter les balises souhaitées, appuyez sur **[!UICONTROL OK]**.
+1. Lorsque vous avez terminé d’ajouter les balises souhaitées, sélectionnez **[!UICONTROL OK]**.
 
    Vous allez à présent publier des vidéos sur votre chaîne YouTube.
 
@@ -371,7 +370,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de
    * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
 Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
-   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont regroupés en paires de deux. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
+   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont regroupés par paires. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
 Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
 1. Près du coin supérieur droit de la page Éditeur de schéma de métadonnées, cliquez sur **[!UICONTROL Annuler]**.
@@ -379,7 +378,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de
 
 1. Sur la page Profils de métadonnées, près du coin supérieur droit de la page, cliquez sur **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue Ajouter un profil de métadonnées, dans le champ de texte **[!UICONTROL Titre du profil]**, saisissez le nom `YouTube Video`, puis cliquez sur **[!UICONTROL Créer]**.
-1. Sur la page Éditeur de profil de métadonnées , cliquez sur le **[!UICONTROL Avance]** .
+1. Sur la page Éditeur de profil de métadonnées, sélectionnez l’onglet **[!UICONTROL Avancé]**.
 1. Ajoutez les valeurs de publication YouTube copiées au profil en procédant comme suit :
 
    * Dans la partie droite de la page, cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**.
@@ -391,7 +390,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de
    * Cliquez sur **[!UICONTROL Libellé du champ]** afin de sélectionner le composant.
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
-1. Ajoutez les valeurs de confidentialité YouTube copiées au profil en procédant comme suit :
+1. Ajoutez les valeurs copiées de confidentialité YouTube au profil en procédant comme suit :
 
    * Dans la partie droite de la page, cliquez sur l’onglet **[!UICONTROL Créer le formulaire]**.
    * (Facultatif) Faites glisser le composant appelé **[!UICONTROL En-tête de section]** vers la gauche et déposez-le dans la zone de formulaire.
@@ -413,7 +412,7 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 
 >[!NOTE]
 >
->Lors de l’exécution de Dynamic Media en mode Scene7, notez que le mode de publication Immédiatement ne publie pas automatiquement sur YouTube. Lorsque le mode Dynamic Media - Scene7 est configuré, vous avez le choix entre deux options de publication : **[!UICONTROL Immédiatement]** ou **[!UICONTROL Lors de l’activation]**.
+>Lors de l’exécution de Dynamic Media en mode Scene7, notez que le mode de publication Immédiatement ne publie pas automatiquement sur YouTube. Lorsque le mode Dynamic Media - Scene7 est configuré, il existe deux options de publication parmi lesquelles choisir : **[!UICONTROL Immédiatement]** ou **[!UICONTROL Lors de l’activation]**.
 >
 >Dans le mode de publication **[!UICONTROL Immédiatement]**, la ressource téléchargée (une fois synchronisée avec IPS) est automatiquement publiée sur le système de diffusion. Cela vaut pour Dynamic Media, mais pas pour YouTube. Pour publier sur YouTube, vous devez publier par le biais d’Experience Manager Author.
 
@@ -423,7 +422,7 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 >
 >Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que cette surveillance nécessite un accès administrateur.
+>Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
 
 **Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :**
 
@@ -431,13 +430,13 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans l’onglet De base, sous l’en-tête Métadonnées, cliquez sur **[!UICONTROL Boîte de dialogue Ouvrir la sélection]** à droite du champ Balises.
-1. Sur la page Sélectionner des balises , accédez aux balises à utiliser, puis sélectionnez une ou plusieurs balises.
+1. Sur la page Sélectionner des balises, accédez aux balises que vous souhaitez utiliser, puis sélectionnez une ou plusieurs balises.
 
    N’oubliez pas que les balises doivent être associées au canal YouTube.
 
 1. Dans le coin supérieur droit de la page, cliquez sur **[!UICONTROL Sélectionner]**.
 1. Dans le coin supérieur droit de la page des propriétés de la vidéo, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Publication rapide]**.
+1. Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**.
 
    Consultez également [Utilisation de la gestion de la publication avec Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=fr).
 
@@ -455,7 +454,7 @@ Au bout de huit heures, si un message de statut indiquant **[!UICONTROL Téléch
 
 ### Liaison d’URL YouTube à votre application web {#linking-youtube-urls-to-your-web-application}
 
-Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Lorsque vous copiez l’URL YouTube, elle se trouve dans le Presse-papiers, de sorte que vous puissiez la coller si nécessaire sur les pages de votre site web ou de votre application.
+Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Une fois que vous avez copié l’URL de YouTube, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site Web ou de votre application.
 
 >[!NOTE]
 >
@@ -463,7 +462,7 @@ Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée
 
 **Pour lier des URL YouTube à votre application web, procédez comme suit :**
 
-1. Accédez au *YouTube publié* ressource vidéo dont vous souhaitez copier l’URL, puis sélectionnez-la.
+1. Accédez à la ressource vidéo *publiée sur YouTube* dont vous souhaitez copier l’URL, puis sélectionnez-la.
 
    N’oubliez pas que les URL YouTube peuvent être copiées uniquement *après* la *publication* des ressources vidéo sur YouTube.
 
@@ -487,12 +486,12 @@ Lorsque vous dépubliez une ressource vidéo dans Experience Manager, la vidéo 
 
 **Pour dépublier des vidéos afin de les supprimer de YouTube, procédez comme suit :**
 
-1. Accédez aux ressources vidéo dont vous souhaitez annuler la publication sur votre canal YouTube.
+1. Accédez aux ressources vidéo dont vous souhaitez annuler la publication sur votre chaîne YouTube.
 1. Dans un mode de sélection de ressources, sélectionnez une ou plusieurs ressources vidéo publiées.
 1. Dans la barre d’outils, cliquez sur **[!UICONTROL Gérer la publication]**. Appuyez sur l’icône de points de suspension (. . .) dans la barre d’outils pour ouvrir **[!UICONTROL Gérer la publication]**.
-1. Sur la page Gérer la publication , appuyez sur . **[!UICONTROL Annuler la publication]**.
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Suivant]**.
-1. Dans le coin supérieur droit de la page, appuyez sur **[!UICONTROL Annuler la publication]**.
+1. Sur la page Gérer la publication, sélectionnez **[!UICONTROL Dépublier]**.
+1. Dans l’angle supérieur droit de la page, appuyez sur **[!UICONTROL Suivant]**.
+1. Dans l’angle supérieur droit de la page, sélectionnez **[!UICONTROL Dépublier]**.
 
 ## Surveillance du codage vidéo et de la progression de la publication sur YouTube {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -500,13 +499,13 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
 ### Surveillance de la progression {#monitoring-progress}
 
-1. Afficher la progression du codage vidéo dans votre dossier de ressources :
+1. Consultez la progression du codage vidéo dans votre dossier de ressources :
 
    * En mode Carte, la progression du codage vidéo s’affiche sur la ressource en pourcentage. En cas d’erreur, ces informations s’affichent également sur la ressource.
 
    ![chlimage_1-429](assets/chlimage_1-429.png)
 
-   * En mode Liste, la progression du codage vidéo s’affiche dans la colonne **[!UICONTROL État du traitement]**. Si une erreur se produit, le message suivant s’affiche dans la même colonne.
+   * Dans la vue Liste, la progression du codage vidéo s’affiche dans la colonne **[!UICONTROL État du traitement]**. Si une erreur se produit, le message suivant s’affiche dans la même colonne.
 
    ![chlimage_1-430](assets/chlimage_1-430.png)
 
@@ -525,8 +524,8 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
    >
    >    * Configuration de la file d’attente des tâches Apache Sling
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * File d’attente du workflow Granite
+   >    * Gestionnaire des tâches de processus externe du workflow Adobe Granite
+   >    * File d’attente d’expiration du workflow Granite
 
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
@@ -560,8 +559,8 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >
    >
    >    * Configuration de la file d’attente des tâches Apache Sling
-   >    * Adobe Granite Workflow External Process Job Handler
-   >    * File d’attente du workflow Granite
+   >    * Gestionnaire des tâches de processus externe du workflow Adobe Granite
+   >    * File d’attente d’expiration du workflow Granite
 
    >
    >
@@ -590,8 +589,8 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 * Pour les tâches de publication YouTube, procédez comme suit :
 
 1. Dans Experience Manager, appuyez sur **[!UICONTROL Outils]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modèles]**.
-1. Sur la page Modèles de processus , sélectionnez **[!UICONTROL Publication sur YouTube]**, puis appuyez sur **[!UICONTROL Modifier]** dans la barre d’outils.
-1. Dans le coin supérieur droit de la page de processus Publier sur YouTube , appuyez sur **[!UICONTROL Modifier]**.
+1. Sur la page Modèles du workflow, sélectionnez **[!UICONTROL Publier sur YouTube]**, puis appuyez sur **[!UICONTROL Modifier]** dans la barre d’outils.
+1. Dans le coin supérieur droit de la page du workflow Publier sur YouTube, appuyez sur **[!UICONTROL Modifier]**.
 1. Pointez sur le composant Chargement YouTube, puis appuyez une fois pour afficher la barre d’outils intégrée.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
@@ -604,11 +603,11 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 
    ![6_5_publishtoyoutubeworkflow-arguments-tab](assets/6_5_publishtoyoutubeworkflow-arguments-tab.png)
 
-1. Vous pouvez cocher ou décocher les cases suivantes :
+1. Vous pouvez cocher ou décocher les cases suivantes :
 
    * Début de publication
    * Échec de la publication
-   * Fin de la publication : comprend des informations sur les canaux et les URL.
+   * Fin de la publication : comprend des informations sur les canaux et les URL.
 
    Décocher une case signifie que vous ne recevrez pas de notifications par e-mail spécifiques au workflow de publication YouTube.
 
