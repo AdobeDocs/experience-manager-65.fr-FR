@@ -10,10 +10,10 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: bbb64f44c80e96bafcd53277f6d753d84acf5189
-workflow-type: ht
-source-wordcount: '3047'
-ht-degree: 100%
+source-git-commit: bb0658ef33736587fbc191738d57cf586e5cba9d
+workflow-type: tm+mt
+source-wordcount: '3045'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 >[!IMPORTANT]
 >
 >• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
->• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
+• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
 
 ## Options de recadrage {#crop-options}
 
@@ -63,11 +63,11 @@ Pour garder l’utilisation du recadrage intelligent sous contrôle et optimiser
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
 * Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
-Vous avez le choix entre deux options de recadrage d’image. Vous pouvez également choisir d’automatiser la création de nuanciers de couleurs et d’images ou de conserver le contenu de recadrage dans toutes les résolutions cibles.
+Vous avez le choix entre deux options de recadrage d’image : Recadrage de pixels ou recadrage intelligent. Vous pouvez également choisir d’automatiser la création d’échantillons de couleurs et d’images.
 
 >[!IMPORTANT]
->• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
->• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 | Option | Quand l’utiliser | Description |
 | --- | --- | --- |
@@ -80,7 +80,7 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
 Utilisez le masque **[!UICONTROL Accentuation]** pour affiner l’effet d’un filtre d’accentuation sur l’image finale sous-échantillonnée. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre *Accentuation* d’Adobe Photoshop.
 
 >[!NOTE]
->L’accentuation n’est appliquée qu’aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de taille supérieure à l’intérieur du ptiff ne sont pas affectés par l’accentuation tandis que les rendus de plus petite taille, comme les miniatures, sont modifiés (et accentués).
+L’accentuation n’est appliquée qu’aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de taille supérieure à l’intérieur du ptiff ne sont pas affectés par l’accentuation tandis que les rendus de plus petite taille, comme les miniatures, sont modifiés (et accentués).
 
 L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes :
 
@@ -185,7 +185,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 ## Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
->• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
+• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage intelligent d’une image afin d’affiner davantage son point focal.
 
@@ -215,7 +215,7 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
->• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
+• Le recadrage intelligent est disponible uniquement dans Dynamic Media en mode Scene7.
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
