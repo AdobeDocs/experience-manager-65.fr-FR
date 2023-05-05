@@ -364,6 +364,7 @@ Pour modifier les définitions par défaut, procédez comme suit :
       ```
              /apps/wcm/core/resources/languages
       ```
+
    Vous pouvez effectuer cette opération à l’aide de la console web OSGi :
 
    ```shell

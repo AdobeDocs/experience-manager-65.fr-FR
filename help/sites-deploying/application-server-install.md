@@ -211,6 +211,7 @@ Avant de procéder à un déploiement, lisez la [Description générale](#genera
          <user username="role1" password="tomcat" roles="role1"/>
          </tomcat-users>
          ```
+
    * Si vous souhaitez déployer AEM à l’aide de la racine du contexte « / », vous devez tout d’abord modifier la racine de contexte de l’application web ROOT existante :
 
       * Arrêtez et annulez le déploiement de l’application web ROOT.
