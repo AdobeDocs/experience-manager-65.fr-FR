@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: cd9d2bea-48d8-4a17-8544-ea25dcad69f3
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ Pour chaque plateforme, ADBMobileConfig doit être copié vers un emplacement sp
 
 Si vous créez avec l’interface de ligne de commande de PhoneGap, vous pouvez le faire avec des scripts de crochets de génération cordova. Vous pouvez le voir dans l’application Geometrixx Outdoors à l’adresse :*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Pour iOS, le fichier doit être copié dans le fichier du projet XCode **Ressources** répertoire (par ex. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Si l’application est ciblée pour Android, le chemin d’accès à copier est &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Pour plus d’informations sur l’utilisation des hooks pendant la génération de l’interface de ligne de commande PhoneGap, reportez-vous à la section [Trois hooks les besoins de votre projet Cordova/PhoneGap](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/).
+Pour iOS, le fichier doit être copié dans le fichier du projet XCode **Ressources** répertoire (par ex. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Si l’application est ciblée pour Android, le chemin d’accès à copier est &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Pour plus d’informations sur l’utilisation des hooks pendant la génération de l’interface de ligne de commande PhoneGap, reportez-vous à la section [Trois hooks les besoins de votre projet Cordova/PhoneGap](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

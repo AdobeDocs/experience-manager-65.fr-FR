@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2993'
+source-wordcount: '2995'
 ht-degree: 1%
 
 ---
@@ -255,7 +255,7 @@ Pour chaque type de configuration, une *Gestionnaire de mise à jour de contenu*
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface que tous les gestionnaires de mise à jour doivent implémenter
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Une classe abstraite qui simplifie le rendu des ressources à l’aide de Sling
 
-Enregistrez votre classe comme fabrique de composants OSGi et déployez-la dans le conteneur OSGi dans un lot. Pour ce faire, utilisez la méthode [Module externe Maven SCR](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) à l’aide de balises JavaDoc ou d’annotations. L’exemple suivant illustre la version de JavaDoc :
+Enregistrez votre classe comme fabrique de composants OSGi et déployez-la dans le conteneur OSGi dans un lot. Pour ce faire, utilisez la méthode [Module externe Maven SCR](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) à l’aide de balises JavaDoc ou d’annotations. L’exemple suivant illustre la version de JavaDoc :
 
 ```java
 /*

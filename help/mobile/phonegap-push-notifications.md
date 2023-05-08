@@ -1,8 +1,6 @@
 ---
 title: Notifications Push
-seo-title: Push Notifications
-description: Consultez cette page pour en savoir plus sur l’utilisation des notifications push dans une application AEM Mobile.
-seo-description: Follow this page to learn about how to use push notifications in an AEM Mobile app.
+description: Consultez cette page pour en savoir plus sur l’utilisation des notifications push dans une application Adobe Experience Manager Mobile.
 uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '3273'
-ht-degree: 2%
+source-wordcount: '3293'
+ht-degree: 1%
 
 ---
 
@@ -44,14 +42,14 @@ Cette version d’AEM prend en charge les appareils mobiles iOS et Android.
 
 Pour utiliser les notifications push dans une application AEM Mobile, les étapes de haut niveau suivantes doivent être effectuées.
 
-En règle générale, un développeur AEM :
+En règle générale, un développeur Experience Manager effectue les opérations suivantes :
 
 1. Enregistrement auprès des services de messagerie Apple et Google
 1. Enregistrez-vous avec un service de messagerie push et configurez-le.
 1. Ajout de la prise en charge des notifications push à l’application
 1. Préparation d’un téléphone pour le test
 
-Pendant qu’un administrateur AEM :
+Lorsqu’un administrateur Experience Manager effectue les opérations suivantes :
 
 1. Configuration des notifications push sur les applications AEM
 1. Création et déploiement de l’application
@@ -62,9 +60,9 @@ Pendant qu’un administrateur AEM :
 
 #### Utilisation du service de notification push Apple (APNS) {#using-the-apple-push-notification-service-apns}
 
-Accédez à la page Apple [here](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html) pour vous familiariser avec le service de notification push Apple.
+Accédez à la page Apple [here](https://developer.apple.com/documentation/usernotifications#//apple_ref/doc/uid/TP40008194-CH8-SW1) pour vous familiariser avec le service de notification push Apple.
 
-Pour utiliser APNS, vous aurez besoin d’une **Certificat** fichier (fichier .cer), un fichier push **Clé privée** (un fichier .p12) et un **Mot de passe de la clé privée** d’Apple. Vous trouverez des instructions pour le faire [here](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html).
+Pour utiliser les APNS, vous devez disposer d’un **Certificat** fichier (fichier .cer), un fichier push **Clé privée** (un fichier .p12) et un **Mot de passe de la clé privée** d’Apple. Vous trouverez des instructions pour le faire [here](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
 #### Utilisation du service Google Cloud Messaging (GCM) {#using-the-google-cloud-messaging-gcm-service}
 
@@ -217,7 +215,7 @@ Créez deux noeuds de contenu (un dans app-config et un dans app-config-dev) app
 * /content/`<your app>`/shell/jcr:content/page-app/app-config/notificationsConfig
 
 Avec ces propriétés (fichiers .content.xml ) :
-&lt;jcr:root xmlns:jcr=&quot; &lt;span id=&quot; translate=&quot;no&quot; />https://www.jcp.org/jcr/1.0](https://www.jcp.org/jcr/1.0)&quot; xmlns:nt=&quot; [https://www.jcp.org/jcr/nt/1.0](https://www.jcp.org/jcr/nt/1.0)&quot; jcr:primaryType=&quot;nt:unstructured&quot; excludeProperties=&quot;[appAPIActainToken]&quot; path=&quot;../../../...&quot;
+&lt;jcr:root xmlns:jcr=&quot; &lt;span id=&quot; translate=&quot;no&quot; />https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; jcr:primaryType=&quot;nt:unstructured&quot; excludeProperties=&quot;[appAPIActainToken]&quot; path=&quot;../../../...&quot;
 [
 targetRootDirectory=&quot;www&quot; type=&quot;notificationsconfig&quot;/>
 

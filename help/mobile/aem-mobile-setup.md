@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: 393cf504-917e-4bf6-9a8b-b7a5bd862c65
 exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '928'
 ht-degree: 4%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Les clients AEM Mobile Apps existants qui migrent d’AEM 6.2 ou 6.3 vers AEM 6.5 peuvent continuer à utiliser les applications AEM Mobile en téléchargeant une [Package à partir de PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). Toutefois, les nouvelles installations d’AEM 6.5 ne prendront pas en charge la fonctionnalité des applications AEM Mobile.
+>Les clients AEM Mobile Apps existants qui migrent d’AEM 6.2 ou 6.3 vers AEM 6.5 peuvent continuer à utiliser les applications AEM Mobile en téléchargeant un module à partir de PackageShare. Toutefois, les nouvelles installations d’AEM 6.5 ne prendront pas en charge la fonctionnalité des applications AEM Mobile.
 
 Pour utiliser AEM afin de produire du contenu pour les applications AEM Mobile, vous devez intégrer l’instance AEM au compte et aux projets AEM Mobile On-demand Services basés sur le cloud.
 
@@ -35,9 +35,9 @@ Suivez ces étapes pour configurer AEM Mobile et permettre ainsi à l’utilisat
 
 Pour commencer à configurer AEM Mobile, vous devez :
 
-* **Demande d’une clé API**: Pour accéder à l&#39;API On-Demand Services, vous devez demander une clé API. Pour demander la clé d’API, renseignez la variable [PDF form](https://helpx.adobe.com/digital-publishing-solution/help/integrating-dps.html). Envoyez le formulaire complété au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
+* **Demande d’une clé API**: Pour accéder à l&#39;API On-Demand Services, vous devez demander une clé API. Pour demander la clé d’API, renseignez la variable [PDF form](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html). Envoyez le formulaire complété au support Adobe Developer : [wwds@adobe.com](mailto:wwds@adobe.com)
 
-* **Génération de l’ID de périphérique et du jeton de périphérique**: Une fois que vous avez reçu votre clé API, vous pouvez générer l’identifiant de l’appareil et le jeton de l’appareil. Accédez à [https://aex.aemmobile.adobe.com](https://aex.aemmobile.adobe.com/) et procédez comme suit :
+* **Génération de l’ID de périphérique et du jeton de périphérique**: Une fois que vous avez reçu votre clé API, vous pouvez générer l’identifiant de l’appareil et le jeton de l’appareil. Accédez à `https://aex.aemmobile.adobe.com` et procédez comme suit :
 
    * Fournir la clé API
    * Connectez-vous à un projet Adobe ID que vous avez ajouté à un projet AEM Mobile avec les autorisations suivantes (voir les étapes ci-dessous pour créer un projet).
@@ -49,7 +49,7 @@ Si toutes les conditions sont remplies, un identifiant de périphérique et un j
 
 >[!NOTE]
 >
->L’accès à Adobe ID nécessaire doit être autorisé sur un projet AEM Mobile. Voir [Administration de comptes pour AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) dans l’aide en ligne.
+>L’accès à Adobe ID nécessaire doit être autorisé sur un projet AEM Mobile. Voir [Administration de comptes pour AEM Mobile](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) dans l’aide en ligne.
 
 ## Création de projets pour AEM Mobile {#creating-projects-for-aem-mobile}
 
@@ -65,7 +65,7 @@ Pour créer un projet, vous devez vous connecter au portail des services à la d
 
 AEM configuration implique les étapes suivantes pour la configuration du connecteur. Une fois la configuration du connecteur AEM Mobile terminée, l’utilisateur peut configurer des groupes d’utilisateurs et des autorisations.
 
-Le connecteur AEM Mobile On-Demand est utilisé pour lier du contenu géré AEM Mobile aux services On-Demand d’Adobe Experience Manager Mobile. Les auteurs de contenu peuvent ainsi créer et gérer du contenu pour les applications mobiles à l’aide des outils d’AEM, tout en utilisant les services On-Demand d’AEM Mobile pour une distribution facile du contenu mobile.
+Le connecteur AEM Mobile On-Demand est utilisé pour lier le contenu géré AEM Mobile aux services On-Demand d’Adobe Experience Manager Mobile. Cela permet aux auteurs de contenu de créer et de gérer du contenu pour les applications mobiles à l’aide d’outils AEM, tout en utilisant les services On-Demand d’AEM Mobile pour une distribution facile du contenu mobile.
 
 >[!NOTE]
 >

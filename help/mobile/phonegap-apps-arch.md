@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 1%
+source-wordcount: '2691'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ Les composants de page que vous créez pour votre application sont basés sur le
 * template.jsp
 * angular-module-list.js.jsp
 * header.jsp
-* footer.jsp 
+* footer.jsp
 * js_clientlibs.jsp
 * css_clientlibs.jsp
 
@@ -309,7 +309,7 @@ Il s’agit d’un répertoire masqué que vous ne verrez peut-être pas en fonc
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-Ce répertoire contient la variable [Hooks CLI](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). Les dossiers du répertoire hooks contiennent des scripts node.js exécutés exactement à des moments précis pendant la génération.
+Ce répertoire contient la variable [Hooks CLI](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). Les dossiers du répertoire hooks contiennent des scripts node.js exécutés exactement à des moments précis pendant la génération.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
