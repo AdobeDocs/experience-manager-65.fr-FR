@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans Adob
 description: Découvrez comment configurer l’éditeur de texte enrichi Adobe Experience Manager pour créer du contenu dans Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
+source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
 workflow-type: tm+mt
-source-wordcount: '3021'
-ht-degree: 78%
+source-wordcount: '2924'
+ht-degree: 76%
 
 ---
 
@@ -109,14 +109,14 @@ Le tableau suivant répertorie les modules externes actuels, avec les éléments
 | ID du module externe | features | Description |
 |--- |--- |--- |
 | edit | cut copy paste-default paste-plaintext paste-wordhtml | [Couper, copier et les trois modes de collage](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [findreplace](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | find replace | Rechercher et remplacer. |
-| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | bold italic underline | [Mise en forme de texte de base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Prise en charge de base des images (faire glisser à partir du contenu ou de l’outil de recherche de contenu). Selon le navigateur, la prise en charge présente différents comportements pour les auteurs |
-| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Pour définir cette valeur, voir [taille de tabulation](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifyleft justifycenter justifyright | Alignement des paragraphes. |
-| [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink anchor | [Hyperliens et ancres](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | ordered unordered indent outdent | Ce module externe contrôle à la fois la [mise en retrait et les listes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
-| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter toute une gamme de [caractères spéciaux](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
+| findreplace | find replace | Rechercher et remplacer. |
+| format | bold italic underline | [Mise en forme de texte de base](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| image | image | Prise en charge de base des images (faire glisser à partir du contenu ou de l’outil de recherche de contenu). Selon le navigateur, la prise en charge présente différents comportements pour les auteurs |
+| keys |  | Pour définir cette valeur, voir [taille de tabulation](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
+| justify | justifyleft justifycenter justifyright | Alignement des paragraphes. |
+| links | modifylink unlink anchor | [Hyperliens et ancres](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| lists | ordered unordered indent outdent | Ce module externe contrôle à la fois la [mise en retrait et les listes](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
+| misctools | specialchars sourceedit | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter toute une gamme de [caractères spéciaux](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
 | Paraformat | paraformat | Les formats de paragraphe par défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (`<p>`, `<h1>`, `<h2>` et `<h3>`). Vous pouvez [ajout de formats de paragraphe](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) ou étendez la liste. |
 | spellcheck | checktext | [Vérificateur orthographique prenant en compte la langue](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict). |
 | styles | styles | Prise en charge de l’application d’un style en utilisant une classe CSS. [Ajoutez de nouveaux styles de texte](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) si vous voulez ajouter (ou étendre) votre propre gamme de styles utilisables avec du texte. |
@@ -181,7 +181,7 @@ Pour obtenir des configurations détaillées des modules externes d’éditeur d
 
 >[!NOTE]
 >
->Le [composant textuel des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que stratégies de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
+>Le [composant textuel des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans une interface utilisateur graphique, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document.
 >
 >Pour plus d’informations, voir [Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu](/help/sites-administering/rich-text-editor.md) de ce document, ainsi que [Création de modèles de page](/help/sites-authoring/templates.md) et le [Documentation destinée aux développeurs sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
@@ -249,15 +249,15 @@ Les séparateurs (`|`) dans un groupe de boutons peuvent être spécifiés par l
 
 Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des éléments contextuels utilisés. Chaque nœud enfant sous le nœud « popovers » (éléments contextuels) est nommé en fonction du module externe (format, par exemple). Il possède des « éléments » de propriété contenant la liste des fonctions du module externe (format#bold, par exemple).
 
-## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu {#rtecontentpolicies}
+## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu {#rtecontentpolicies}
 
 Les administrateurs peuvent contrôler les options de l’éditeur de texte enrichi à l’aide de stratégies de contenu, par exemple au lieu d’effectuer la configuration comme décrit ci-dessus. Les stratégies de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’une [modèle modifiable](/help/sites-authoring/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la stratégie de contenu peut définir que l’option gras est disponible et que quelques options de mise en forme de paragraphe sont disponibles. Les stratégies de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
 
-Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les stratégies de contenu.
+Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les politiques de contenu.
 
-* Les paramètres de configuration de l’interface utilisateur définissent les options disponibles pour les stratégies de contenu.
-* Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la stratégie de contenu ne peut pas le configurer.
-* Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les stratégies de contenu.
+* Les paramètres de configuration de l’interface utilisateur définissent les options disponibles pour les politiques de contenu.
+* Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la politique de contenu ne peut pas le configurer.
+* Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les politiques de contenu.
 
 Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=en#the-text-component-and-the-rich-text-editor).
 
@@ -323,12 +323,12 @@ Sur une page, vous pouvez inclure la bibliothèque client (clientlib) d’édite
 
 ## Informations supplémentaires {#further-information}
 
-Pour plus d’informations sur la configuration de l’éditeur de texte enrichi, voir [API AEM Widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) référence.
+Pour plus d’informations sur la configuration de l’éditeur de texte enrichi, voir [API AEM Widget](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) référence.
 
 En particulier, pour afficher les modules externes et les options connexes disponibles :
 
-* Le [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) Le composant fournit un champ de formulaire pour la modification des informations de texte stylisé (texte enrichi). Pour connaître tous les paramètres disponibles pour le formulaire de texte enrichi, voir Options de configuration.
-* Le composant RichText fournit un large éventail de fonctionnalités grâce aux modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
+* Le [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText) Le composant fournit un champ de formulaire pour la modification des informations de texte stylisé (texte enrichi). Pour connaître tous les paramètres disponibles pour le formulaire de texte enrichi, voir Options de configuration.
+* Le composant RichText fournit un large éventail de fonctionnalités grâce aux modules externes répertoriés sous [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Pour chaque module externe :
 
    * consultez les fonctions pour plus d’informations sur les fonctionnalités qui peuvent être activées (ou désactivées) ;
    * Voir les Options de configuration pour tous les paramètres disponibles pour la configuration détaillée du module externe approprié.
@@ -351,8 +351,8 @@ La fonctionnalité AEM RTE présente les limites suivantes :
 
 ## Bonnes pratiques et astuces {#best-practices-and-tips}
 
-* Activation uniquement des modules externes sans déclenchement d’un pop-up pour une boîte de dialogue flottante. Les modules externes sans fenêtre contextuelle sont plus petits et sont les mieux adaptés aux boîtes de dialogue flottantes.
-* Activez les modules externes avec une fenêtre contextuelle plus grande, comme le module externe `Paste`, uniquement en mode Boîte de dialogue plein écran ou en mode Plein écran. Les modules externes possédant une grande fenêtre contextuelle nécessitent davantage d’espace sur l’écran pour offrir une expérience de création optimale.
+* Activation uniquement des modules externes sans déclenchement d’un pop-up pour une boîte de dialogue flottante. Les plug-ins sans pop-up sont plus petits et sont les mieux adaptés aux boîtes de dialogue flottantes.
+* Activez les plug-ins avec un pop-up plus grand, comme le plug-in `Paste`, uniquement en mode Boîte de dialogue plein écran ou en mode Plein écran. Les plug-ins possédant un grand pop-up nécessitent davantage d’espace sur l’écran pour offrir une expérience de création optimale.
 * Si vous employez des modules externes personnalisés pour l’éditeur de texte enrichi CoralUI3, utilisez la bibliothèque `rte.coralui3`.
 
 ## Résolution de problèmes fréquents avec l’éditeur de texte enrichi {#troubleshoot-issues-with-aem-rich-text-editor}
