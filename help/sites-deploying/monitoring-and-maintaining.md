@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
 workflow-type: tm+mt
 source-wordcount: '5934'
-ht-degree: 37%
+ht-degree: 38%
 
 ---
 
@@ -247,9 +247,9 @@ Contient des messages de journaux indiquant les événements pendant le démarra
 Fournit un journal de toutes les opérations de mise à niveau qui s’exécutent à partir de la des 
 packages `com.day.compat.codeupgrade` et `com.adobe.cq.upgradesexecutor`.
 
-* `<cq-installation-dir>/crx-quickstart/repository`
+* `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `revision.log`
+   * `journal.log`
 Informations sur la journalisation des révisions.
 
 >[!NOTE]
@@ -291,7 +291,7 @@ Dans certains cas, vous pouvez créer un fichier journal personnalisé avec un n
 1. S’il n’existe pas, créez un dossier de configuration ( `sling:Folder`) pour votre projet `/apps/<project-name>/config`.
 1. Sous `/apps/<project-name>/config`, créez un nœud pour la nouvelle [configuration de l’enregistreur de journaux Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingloggerconfigurationfactoryconfiguration) :
 
-   * Nom : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
+   * Nom : `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`.
 
       Où `<identifier>` est remplacé par du texte libre que vous devez entrer pour l’instance (vous ne pouvez pas omettre cette information).
 
@@ -1095,9 +1095,9 @@ Voici une liste de suggestions des éléments à vérifier si vous commencez à 
 
 >[!NOTE]
 Consultez les articles suivants pour plus d’informations :
-* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [Images mémoire de threads](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=fr)
+* [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
+* [Analyse à l’aide du profileur intégré](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=fr)
 * [Analyse des processus lents et bloqués](https://helpx.adobe.com/fr/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ Dans ce cas, vérifiez les éléments suivants :
 * Les paramètres JVM utilisés pour [lancer AEM](/help/sites-deploying/deploy.md#getting-started)
 * La base de connaissances :
 
-   * [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [Analyse des problèmes de mémoire](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr)
 
 ### E/S de disque {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ Si votre système manque d’espace disque ou que vous constatez une fragmentati
 * Si et comment vous avez configuré [la purge de version](/help/sites-deploying/version-purging.md)
 * La base de connaissances :
 
-   * [Trop de fichiers ouverts](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [Trop de fichiers ouverts](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=fr)
    * [Le journal consomme trop d’espace disque](https://helpx.adobe.com/fr/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### Dégradation régulière des performances {#regular-performance-degradation}
