@@ -2,10 +2,10 @@
 title: Intégration à Adobe Target à l’aide d’IMS
 description: Découvrez-en plus sur l’intégration d’AEM à Adobe Target.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: ht
-source-wordcount: '1500'
-ht-degree: 100%
+source-git-commit: 5c3de9c272030b3e258aea95899a58553c3b33db
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 98%
 
 ---
 
@@ -167,7 +167,7 @@ Pour revenir à AEM, vous pouvez terminer la configuration IMS en ajoutant les v
    * **Secret client** : générez-le dans la section [Présentation](#details-stored-for-the-ims-integration-project) et copiez-le.
    * **Payload** : copiez-le à partir de la section [Génération du JWT](#details-stored-for-the-ims-integration-project).
 
-   ![](assets/integrate-target-io-10.png)
+   ![Configuration du compte technique](assets/integrate-target-io-10.png)
 
 1. Confirmez en sélectionnant **Créer**.
 
@@ -238,9 +238,9 @@ La configuration peut désormais être référencée pour qu’un Cloud Service 
 
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration d’Analytics Cloud utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu. Si vous ne voyez pas votre configuration cloud, consultez la remarque à ce sujet dans [Définition de la configuration cloud A4T Analytics](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
-   * **Utiliser un ciblage précis** : par défaut, cette case est cochée. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque qui suit.
+   * **Utiliser un ciblage précis** : par défaut, cette case est cochée. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque suivante.
 
-   * **Synchroniser les segments à partir d’Adobe Target** : sélectionnez cette option pour télécharger les segments définis dans Target pour les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme « segment » d’AEM équivaut à « audience » dans Target.)
+   * **Synchroniser les segments à partir d’Adobe Target** : sélectionnez cette option pour télécharger les segments définis dans Target pour les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme AEM de &quot;segment&quot; équivaut à l’&quot;audience&quot; de Target.)
 
    * **Bibliothèque cliente** : indiquez si vous souhaitez utiliser la bibliothèque cliente AT.js ou mbox.js (obsolète).
 
