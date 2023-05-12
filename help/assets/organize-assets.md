@@ -5,7 +5,8 @@ contentOwner: AG
 role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 98%
@@ -47,7 +48,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 À l’aide de balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
 
-[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure d’apprentissage automatique, qui peuvent être formés à reconnaître et à appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure de machine learning, qui peuvent être entraînés pour reconnaître et pour appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
 Pour plus d’informations, consultez les articles suivants :
 

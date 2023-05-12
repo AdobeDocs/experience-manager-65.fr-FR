@@ -3,10 +3,11 @@ title: Prise en charge des fragments de contenu d’Adobe Experience Manager da
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 feature: Content Fragments,Assets HTTP API
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+workflow-type: tm+mt
+source-wordcount: '1957'
+ht-degree: 85%
 
 ---
 
@@ -24,10 +25,10 @@ Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets,
 
 >[!NOTE]
 >
->L’[API HTTP AEM Assets](/help/assets/mac-api-assets.md) englobe :
+>Le [API HTTP Assets](/help/assets/mac-api-assets.md) englobe les éléments suivants :
 >
->* l’API REST Assets,
->* y compris la prise en charge des fragments de contenu
+>* API REST Assets
+>* notamment la prise en charge des fragments de contenu ;
 >
 >L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
@@ -55,7 +56,7 @@ L’API REST Assets :
 
 ## Conditions préalables {#prerequisites}
 
-L’API REST Assets est disponible sur chaque installation prête à l’emploi d’une version AEM récente.
+L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version d’AEM récente.
 
 ## Concepts clés {#key-concepts}
 
@@ -88,7 +89,7 @@ La méthode HTTP détermine l’opération à exécuter :
 >
 >Le corps de la requête et/ou les paramètres URL peuvent être utilisés pour configurer certaines de ces opérations ; par exemple, spécifier qu’un dossier ou une ressource doivent être créés par une requête **POST**.
 
-Le format exact des requêtes prises en charge est défini dans la documentation [Référence d’API](/help/assets/assets-api-content-fragments.md#api-reference).
+Le format exact des requêtes prises en charge est défini dans la variable [Référence d’API](/help/assets/assets-api-content-fragments.md#api-reference) documentation.
 
 ### Comportement transactionnel {#transactional-behavior}
 
@@ -110,16 +111,16 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   <tr>
    <td>Cas d’utilisation pris en charge</td>
    <td>Objectif général.</td>
-   <td><p>Optimisé pour une utilisation dans une application sur une seule page (SPA) ou tout autre contexte (utilisant du contenu).</p> <p>Peut également contenir des informations de disposition.</p> </td>
+   <td><p>Optimisé pour une utilisation dans une application sur une seule page (SPA) ou tout autre contexte (utilisant du contenu).</p> <p>Peut également contenir des informations de mise en page.</p> </td>
   </tr>
   <tr>
    <td>Opérations prises en charge</td>
-   <td><p>Créer, Lire, Mettre à jour, Supprimer.</p> <p>Avec d’autres opérations selon le type d’entité.</p> </td>
+   <td><p>Créer, Lire, Mettre à jour, Supprimer</p> <p>Avec des opérations supplémentaires en fonction du type d’entité.</p> </td>
    <td>Lecture seule.</td>
   </tr>
   <tr>
    <td>Accès</td>
-   <td><p>Accessible directement.</p> <p>Utilise le point d’entrée <code>/api/assets </code>, mappé sur <code>/content/dam</code> (dans le référentiel).</p> 
+   <td><p>Vous pouvez y accéder directement.</p> <p>Utilise le point d’entrée <code>/api/assets </code>, mappé sur <code>/content/dam</code> (dans le référentiel).</p> 
    <p>Voici un exemple de chemin : <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
     <td><p>Doit être référencé via un composant AEM sur une page AEM.</p> <p>Utilise le sélecteur <code>.model</code> pour créer la représentation JSON.</p> <p>Voici un exemple de chemin :<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
@@ -127,18 +128,18 @@ Cela signifie que les requêtes suivantes (`write`) ne peuvent pas être combin�
   </tr>
   <tr>
    <td>Sécurité</td>
-   <td><p>Plusieurs options sont possibles.</p> <p>OAuth est proposé ; peut être configuré séparément de la configuration standard.</p> </td>
-   <td>Utilise la configuration standard d’AEM.</td>
+   <td><p>Plusieurs options sont possibles.</p> <p>OAuth est proposé; peut être configuré séparément de la configuration standard.</p> </td>
+   <td>Utilise AEM configuration standard.</td>
   </tr>
   <tr>
-   <td>Remarques sur l’architecture</td>
-   <td><p>L’accès en écriture résout généralement une instance d’auteur.</p> <p>Un accès en lecture peut également être redirigé vers une instance de publication.</p> </td>
+   <td>Remarques architecturales</td>
+   <td><p>L’accès en écriture concerne généralement une instance d’auteur.</p> <p>Un accès en lecture peut également être redirigé vers une instance de publication.</p> </td>
    <td>Comme cette approche est en lecture seule, elle est généralement utilisée pour les instances de publication.</td>
   </tr>
   <tr>
    <td>Sortie</td>
-   <td>Sortie SIREN basée sur JSON : détaillée mais puissante. Permet de naviguer dans le contenu.</td>
-   <td>Sortie propriétaire basée sur JSON ; configurable via les modèles Sling. La navigation dans la structure du contenu est difficile à mettre en œuvre (mais pas nécessairement impossible).</td>
+   <td>Sortie SIREN basée sur JSON : verbose, mais puissant. Permet de naviguer dans le contenu.</td>
+   <td>Sortie propriétaire basée sur JSON ; configurable via les modèles Sling. La navigation dans la structure de contenu est difficile à mettre en oeuvre (mais pas nécessairement impossible).</td>
   </tr>
  </tbody>
 </table>
@@ -160,9 +161,9 @@ Il est recommandé d’utiliser OAuth dans les environnements ayant des exigence
 
 ## Fonctionnalités disponibles {#available-features}
 
-Les fragments de contenu sont un type spécifique de ressource ; voir [Utilisation des fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+Les fragments de contenu sont un type spécifique de ressource. Voir [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md).
 
-Pour plus d’informations sur les fonctions disponibles dans l’API, voir :
+Pour plus d’informations sur les fonctionnalités disponibles via l’API, voir :
 
 * L’[API REST Assets](/help/assets/mac-api-assets.md)
 * [Types d’entité](/help/assets/assets-api-content-fragments.md#entity-types), où sont expliquées les fonctionnalités propres à chaque type pris en charge (en fonction des fragments de contenu).
@@ -202,7 +203,7 @@ La réponse contiendra les informations de pagination dans la section `propertie
 
 ### Dossiers {#folders}
 
-Les dossiers servent de conteneurs pour les ressources et d’autres dossiers. Ils reflètent la structure du référentiel de contenu AEM.
+Les dossiers servent de conteneurs pour les ressources et d’autres dossiers. Elles reflètent la structure du référentiel de contenu AEM.
 
 L’API REST Assets expose l’accès aux propriétés d’un dossier (par exemple, son nom, son titre, etc.). Les ressources sont exposées en tant qu’entités enfants de dossiers et de sous-dossiers.
 
@@ -231,11 +232,11 @@ Les fragments de contenu :
 * N’exposent aucune donnée binaire.
 * Sont entièrement contenus dans la sortie JSON (dans la propriété `properties`).
 
-* Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la charge utile d’un fragment.
+* Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la payload d’un fragment.
 
 #### Modèles et fragments de contenu {#content-models-and-content-fragments}
 
-Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). Font partie de la définition.
+Actuellement, les modèles qui définissent la structure d’un fragment de contenu ne sont pas exposés via une API HTTP. Par conséquent, le *consommateur* doit disposer d’informations sur le modèle d’un fragment (au moins un minimum), bien que la plupart des informations puissent être déduites de la charge utile (par exemple, les types de données, etc.). font partie de la définition.
 
 Pour créer un fragment de contenu, le chemin (référentiel interne) du modèle doit être indiqué.
 
@@ -248,9 +249,9 @@ Le contenu associé n’est actuellement pas exposé.
 L’utilisation peut varier selon que vous utilisez un environnement d’auteur ou de publication AEM dans votre cas d’utilisation spécifique.
 
 * Il est vivement recommandé de lier la création à une instance d’auteur ([et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API](/help/assets/assets-api-content-fragments.md#limitations)).
-* La diffusion est possible à partir des deux à la fois, car AEM traite le contenu demandé au format JSON uniquement.
+* La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
-   * Le stockage et la diffusion à partir d’une instance d’auteur AEM suffisent normalement pour les applications de bibliothèque multimédia opérant derrière le pare-feu.
+   * Le stockage et la diffusion depuis une instance d’auteur AEM doivent suffire pour les applications de bibliothèque multimédia situées derrière le pare-feu.
 
    * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
 
@@ -307,8 +308,8 @@ Mode d’utilisation :
 
 Il existe quelques restrictions :
 
-* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, l’interface utilisateur d’administration est le seul moyen d’obtenir un aperçu des modèles de fragment de contenu.
-* **Les références sont ignorées**. Il n’existe actuellement aucune vérification pour savoir si un fragment de contenu existant est référencé ou non. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
+* **Les modèles de fragment de contenu ne sont actuellement pas pris en charge** : ils ne peuvent pas être lus ni créés. Pour pouvoir créer un fragment de contenu, ou en mettre un existant à jour, les développeurs doivent connaître le chemin correct vers le modèle de fragment de contenu. Actuellement, la seule méthode pour obtenir un aperçu de ces éléments est via l’interface utilisateur d’administration.
+* **Les références sont ignorées**. Actuellement, il n’existe aucune vérification pour savoir si un fragment de contenu existant est référencé. Par conséquent, la suppression d’un fragment de contenu, par exemple, peut entraîner des problèmes sur une page contenant une référence au fragment de contenu en question.
 * **Type de données JSON** L’API REST définit actuellement la sortie du *type de données JSON* sur *chaîne de caractères*.
 
 ## Codes d’état et messages d’erreur {#status-codes-and-error-messages}
@@ -339,10 +340,10 @@ Affiché dans le scénario suivant :
    >Cette erreur est renvoyée :
    >
    >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
-   >* lorsque la charge utile donnée n’était pas valide.
+   >* lorsque la payload donnée n’était pas valide
 
 
-   L’exemple suivant répertorie les scénarios courants dans lesquels ce statut d’erreur est renvoyé, avec le message d’erreur (espacement fixe) généré :
+   L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (monospace) généré :
 
    * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
    * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant) ou ne peut être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :

@@ -5,7 +5,8 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 89%
@@ -21,7 +22,7 @@ ht-degree: 89%
 
 La fonction Assets Insights vous permet d’effectuer le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites Web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’extraire les statistiques sur leurs performances et leur popularité.
 
-[!DNL Assets] Insights capture les détails de l’activité des utilisateurs, comme le nombre de fois où une image est évaluée et a fait l’objet d’un clic, ainsi que le nombre d’impressions (nombre de fois où une image est chargée sur le site Web). Elle attribue des scores aux images en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les images populaires à inclure dans les catalogues, les campagnes marketing et ainsi de suite. Vous pouvez même formuler des stratégies de renouvellement de licence et d’archivage en fonction de ces statistiques.
+[!DNL Assets] Insights capture les détails de l’activité des utilisateurs, comme le nombre de fois où une image est évaluée et a fait l’objet d’un clic, ainsi que le nombre d’impressions (nombre de fois où une image est chargée sur le site Web). Elle attribue des scores aux images en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les images populaires à inclure dans les catalogues, les campagnes marketing et ainsi de suite. Vous pouvez même formuler des politiques de renouvellement de licence et d’archivage en fonction de ces statistiques.
 
 Pour que la fonction [!DNL Assets] Insights puisse capturer les statistiques d’utilisation des images à partir d’un site Web, vous devez inclure le code intégré de l’image dans celui du site Web.
 
