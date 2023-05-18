@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c704397f08e163a58ee6ac1dbaefc3171298864e
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '8086'
+source-wordcount: '8066'
 ht-degree: 99%
 
 ---
@@ -155,8 +155,6 @@ La diffusion de vidéo adaptative en continu est prise en charge sur différente
 Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils BlackBerry® qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Les terminaux Windows qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Médias pris en charge sur Windows Phone 8](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs)
-
-
 
 * Lecture de la vidéo à l’aide des paramètres prédéfinis de la visionneuse Dynamic Media Video, tels que :
 
@@ -442,10 +440,6 @@ Voici quelques avantages clés de l’activation de DASH sur votre compte :
 * Permet de rendre la diffusion vidéo plus accessible à vos clientes et clients.
 * Vous pouvez également obtenir l’URL de streaming au moyen des API.
 
-   >[!IMPORTANT]
-   >
-   >L’activation de DASH sur votre compte est actuellement disponible uniquement en Asie-Pacifique et en Amérique du Nord ; Bientôt en Europe, Moyen-Orient, Afrique.
-
 L’activation de DASH sur votre compte nécessite deux étapes :
 
 * Configuration de Dynamic Media pour utiliser DASH, ce que vous pouvez facilement faire vous-même.
@@ -455,10 +449,10 @@ L’activation de DASH sur votre compte nécessite deux étapes :
 
 1. **Configurez Dynamic Media**. Dans Dynamic Media sur Experience Manager 6.5, accédez à [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Recherchez l’indicateur de fonctionnalité **Diffusion en continu avancée des vidéos AEM Assets Dynamic Media**.
-1. Cochez la case pour activer DASH.
+1. Pour activer DASH, cochez la case.
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 1. **Configurez Experience Manager 6.5** - [Utilisez l’Admin Console pour commencer la création d’un nouveau dossier de support](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-1. Suivez les instructions pour créer un dossier de support. Vous devez fournir les informations suivantes :
+1. Pour créer un cas d’assistance, suivez les instructions tout en vous assurant de fournir les informations suivantes :
 
    * nom, adresse électronique et numéro de téléphone du contact principal.
    * Nom de votre compte Dynamic Media.
@@ -720,7 +714,7 @@ Reportez-vous à la section [WebVTT : The web video text tracks format](https:/
 
 ## À propos des miniatures vidéo dans Dynamic Media en mode Scene7 {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-Une miniature vidéo est une version en taille réduite d’une image vidéo ou d’une ressource d’image présentant la vidéo au client. La miniature doit inciter un client à cliquer sur la vidéo.
+Une miniature vidéo est une version en taille réduite d’une image vidéo ou d’une ressource d’image présentant la vidéo au client. La miniature permet d’encourager un client à sélectionner la vidéo.
 
 Toutes les vidéos dans Experience Manager doivent être associées à une miniature. Vous ne pouvez pas supprimer une miniature sans la remplacer. Par défaut, lorsque vous chargez une vidéo sur Experience Manager, la première image est utilisée comme miniature. Cependant, vous pouvez personnaliser la miniature à des fins de valorisation de marque ou de recherche visuelle, par exemple. Lorsque vous personnalisez une miniature vidéo, vous pouvez lire la vidéo et la mettre en pause sur l’image que vous souhaitez utiliser. Vous pouvez également sélectionner une ressource d’image que vous avez déjà chargée et *publiée* dans votre gestionnaire de ressources numériques.
 

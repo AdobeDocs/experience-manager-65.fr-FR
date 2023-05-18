@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fc7d3727-7cd4-47a4-8e75-840f9f9c0e62
-source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '2972'
 ht-degree: 85%
 
 ---
@@ -37,7 +37,7 @@ Prise en charge du nouveau protocole DASH (Dynamic Adaptive Streaming over HTTP)
 
 * La diffusion en continu à débit adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices finaux.
 * Largement adopté dans le secteur, DASH est le protocole standard international pour la diffusion en continu à débit adaptatif de vidéos.
-* Disponible désormais en Asie-Pacifique et en Amérique du Nord (qui pourra être activé au moyen d’un ticket de support); Bientôt en Europe, Moyen-Orient, Afrique.
+* Disponible maintenant en soumettant un ticket d’assistance.
 
 Voir [Activer DASH sur votre compte](/help/assets/video.md#enable-dash).
 

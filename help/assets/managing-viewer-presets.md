@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '4523'
-ht-degree: 99%
+source-wordcount: '4519'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Consultez la section [Bibliothèque d’images réactive](https://experienceleag
 
 >[!NOTE]
 >
->Notez que vous devez publier toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.
+>Publiez toutes les visionneuses prêtes à l’emploi avant de les utiliser pour la première fois.
 >Consultez la section [Publication de paramètres prédéfinis de visionneuse].(#publishing-viewer-presets)
 
 ### Compatibilité du système de paramètres prédéfinis de visionneuse  {#viewer-preset-system-compatibility}
@@ -72,7 +72,7 @@ Tous les paramètres prédéfinis de visionneuse prêts à l’emploi fournis av
 * Apple iPad
 * Smartphone Android™
 * Tablette Android™
-* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® ](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://docs.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
+* Pour la vidéo, la capacité de lecture MP4 supplémentaire est fournie pour [BlackBerry® ](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) et [Windows Phone](https://learn.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
 
 ### Types de médias riches pour les paramètres prédéfinis de visionneuse {#rich-media-types-for-viewer-presets}
 
@@ -498,7 +498,7 @@ Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > 
 
 **À propos des modes d’affichage des miniatures dans le panneau**
 
-Lorsque vous créez ou modifiez un paramètre de visionneuse prédéfini pour vidéo interactive, vous pouvez choisir le paramètre de mode d’affichage à utiliser lorsque vous sélectionnez `InteractiveSwatches` dans le menu déroulant **[!UICONTROL Composant sélectionné]** sous l’onglet **[!UICONTROL Comportement]**. Le mode d’affichage que vous choisissez affecte la façon dont les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez sélectionner le mode d’affichage `segment` (par défaut) ou le mode d’affichage `continuous`.
+Lorsque vous créez ou modifiez un paramètre de visionneuse prédéfini pour vidéo interactive, vous pouvez choisir le paramètre de mode d’affichage à utiliser lorsque vous sélectionnez `InteractiveSwatches` dans le menu déroulant **[!UICONTROL Composant sélectionné]** sous l’onglet **[!UICONTROL Comportement]**. Le mode d’affichage que vous choisissez affecte le mode d’affichage et le moment où les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez sélectionner le mode d’affichage `segment` (par défaut) ou le mode d’affichage `continuous`.
 
 <table>
  <tbody>
