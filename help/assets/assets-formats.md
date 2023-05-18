@@ -6,10 +6,11 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
+hide: true
+source-git-commit: c1878d6aadba9c795168459dbd5f09abfe0fc327
+workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -45,11 +46,11 @@ Les formats d’image matricielle pris en charge dans [!DNL Assets] sont les sui
 | PICT | − | − | − | − | − | − | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
-‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier de PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
 Outre les informations ci-dessus, tenez compte des points suivants :
 
-* La prise en charge des fichiers EPS s’applique uniquement aux images pixellisées. Par exemple, la génération de vignettes pour les images vectorielles EPS n’est pas prise en charge par défaut. Pour ajouter une prise en charge, [configurez ImageMagick](best-practices-for-imagemagick.md). Pour intégrer des outils tiers afin d’activer des fonctionnalités supplémentaires, consultez [Gestionnaire de médias en ligne de commande](media-handlers.md#command-line-based-media-handler).
+* La prise en charge des fichiers EPS s’applique uniquement aux images pixellisées. Par exemple, la génération de miniatures pour les images vectorielles EPS n’est pas prise en charge par défaut. Pour ajouter une prise en charge, [configurez ImageMagick](best-practices-for-imagemagick.md). Pour intégrer des outils tiers afin d’activer des fonctionnalités supplémentaires, consultez [Gestionnaire de médias en ligne de commande](media-handlers.md#command-line-based-media-handler).
 
 * L’écriture différée des métadonnées fonctionne pour le format PSB lorsqu’elle est ajoutée au gestionnaire `NComm`.
 
@@ -142,9 +143,9 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Formats d’archives pris en charge {#supported-archive-formats}
 
-Les formats d’archives pris en charge et l’applicabilité des flux de travail DAM courants sont traités dans le tableau suivant.
+Les formats d’archive pris en charge et l’applicabilité des workflows DAM communs sont abordés dans le tableau suivant.
 
-| Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
@@ -156,7 +157,7 @@ Les formats d’archives pris en charge et l’applicabilité des flux de travai
 
 L’applicabilité des fonctionnalités de gestion des ressources numériques habituelles pour quelques formats de fichiers spécifiques est décrite ci-dessous.
 
-| Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Livraison Dynamic Media |
+| Formats | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -236,17 +237,17 @@ Une liste des types MIME pris en charge est disponible dans CRXDE Lite à l’a
 
 | Extension de fichier vidéo | Conteneur | Codecs vidéo recommandés | Codecs vidéo non pris en charge |
 |---|---|---|---|
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
-| FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (fichiers d’animation vectorielle) |
-| M4V | Apple iTunes | H264/AVC | − |
+| AVI | Interleave A/V | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
+| FLV, F4V | Flash Adobe | H264/AVC, Flix VP6, H263, Sorenson | SWF (fichiers d’animation vectorielle) |
+| M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
 | MOV, QT | Apple QuickTime | H264/AVC, Apple ProRes422 et HQ, Sony XDCAM, Sony DVCAM, HDV, Panasonic DVCPro, Apple DV (DV25), Apple PhotoJPEG, Sorenson, Avid DNxHD, Avid AVR | Apple Intermediate, Apple Animation |
 | MP4 | MPEG-4 | H264/AVC (tous les profils) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
-| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
+| MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
 | OGV, OGG | Ogg | Theora, VP3, Dirac | − |
-| WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
+| WebM | WebM | Google VP8 | − |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
 ‡ Ce format vidéo n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media ou avec lʼannotation dans Experience Manager Assets.
 
@@ -266,7 +267,7 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 
 * Pour utiliser Dynamic Media de sorte à générer des rendus dynamiques pour des fichiers PDF, voir [Adobe Illustrator (AI), Postscript (EPS) et formats de fichier PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Pour utiliser Dynamic Media de sorte à prévisualiser et générer des rendus dynamiques pour des fichiers AI, voir [Adobe Illustrator (AI), Postscript (EPS) et les formats de fichier PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Pour utiliser Dynamic Media afin de prévisualiser et de générer des rendus dynamiques pour des fichiers AI, voir [Formats de fichiers Adobe Illustrator (AI), Postscript (EPS) et PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Pour utiliser Dynamic Media afin de générer des rendus dynamiques pour les fichiers INDD, consultez [Format de fichier InDesign (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format).
 
@@ -283,9 +284,9 @@ Outre les fonctionnalités ci-dessus, tenez compte des points suivants :
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | PICT | ✓ | − | − | − | − | − |
 
-‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
+‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par Adobe Photoshop et incluse dans le fichier de PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-* La prise en charge des fichiers EPS s’applique uniquement aux images pixellisées. Par exemple, la génération de vignettes pour les images vectorielles EPS n’est pas prise en charge par défaut. Pour ajouter une prise en charge, [configurez ImageMagick](best-practices-for-imagemagick.md). Pour intégrer des outils tiers afin d’activer des fonctionnalités supplémentaires, consultez [Gestionnaire de médias en ligne de commande](media-handlers.md#command-line-based-media-handler).
+* La prise en charge des fichiers EPS s’applique uniquement aux images pixellisées. Par exemple, la génération de miniatures pour les images vectorielles EPS n’est pas prise en charge par défaut. Pour ajouter une prise en charge, [configurez ImageMagick](best-practices-for-imagemagick.md). Pour intégrer des outils tiers afin d’activer des fonctionnalités supplémentaires, consultez [Gestionnaire de médias en ligne de commande](media-handlers.md#command-line-based-media-handler).
 
 * Pour utiliser [!DNL Dynamic Media] pour prévisualiser et générer des rendus dynamiques pour les fichiers EPS, consultez [Adobe Illustrator (AI), Postscript (EPS) et les formats de fichier PDF.](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
