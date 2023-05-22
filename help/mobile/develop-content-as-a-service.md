@@ -9,7 +9,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 3%
@@ -32,13 +32,13 @@ Cela inclut l’utilisation de ressources, de contenu de site, de contenu CaS (e
 
 Content Services fournit trois types principaux de contenu :
 
-1. **Ressources**
+1. **Assets**
 1. **Contenu HTML compressé (HTML/CSS/JS)**
 1. **Contenu indépendant des canaux**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## Assets {#assets}
+## Ressources {#assets}
 
 Les collections de ressources sont des éléments AEM qui contiennent des références à d’autres collections.
 

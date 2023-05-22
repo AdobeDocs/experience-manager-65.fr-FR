@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 100%
 
@@ -72,11 +72,11 @@ Consultez [cet article](msm-best-practices.md) pour plus d’informations à ce 
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 
-Aucun privilège de **déploiement** ne peut être défini ou supprimé pour les entités d’AEM (utilisateurs ou groupes).
+Aucun privilège de **déploiement** ne peut être défini ou supprimé pour les principaux d’AEM (utilisateurs ou groupes).
 
 Vous pouvez cependant :
 
-* modifier l’interface utilisateur du produit pour masquer les actions de déploiement pour une entité de sécurité donnée ;
+* modifier l’interface utilisateur du produit pour masquer les actions de déploiement pour un principal de sécurité donné ;
 * supprimer les privilèges d’écriture de l’arborescence Live Copy pour les auteurs qui ne sont pas autorisés à procéder à un déploiement.
 
 ### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_move » ?  {#moved-pages}

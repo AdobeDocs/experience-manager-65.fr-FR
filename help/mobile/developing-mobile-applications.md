@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '583'
-ht-degree: 11%
+ht-degree: 4%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 11%
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-AEM tire parti des solutions Adobe PhoneGap and Adobe Publishing, ce qui vous permet de créer et de gérer les applications mobiles riches en contenu multiplateformes basées sur des utilitaires:
+AEM exploite Adobe PhoneGap et les solutions de publication d’Adobe, ce qui vous permet de créer et de gérer des applications mobiles riches en contenu et basées sur des utilitaires sur plusieurs plateformes :
 
 * Gérez toutes les applications mobiles de vos entreprises au même endroit.
 * Passez en revue les applications dans les environnements de développement et d’évaluation sans connaître la complexité des profils de mise en service et sans avoir à créer et charger votre application pour le partage.
