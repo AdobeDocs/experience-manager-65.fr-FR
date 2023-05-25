@@ -7,10 +7,10 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: eac578f8c8ef3bfc3c94929814398486777094f0
+source-git-commit: b138bc434ecad849b2c588864868cab6666d50c9
 workflow-type: tm+mt
-source-wordcount: '5601'
-ht-degree: 94%
+source-wordcount: '5741'
+ht-degree: 92%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 94%
 
 Recherche de ressources numériques à l’aide du champ Omni-recherche situé en haut de la page [!DNL Experience Manager] interface web. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
 
-Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, l’état de la ressource, les données de renseignement et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
+Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, l’état de la ressource, les données d&#39;aperçu et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
 
 La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/manage-collections.md).
 
@@ -208,7 +208,7 @@ Voici quelques exemples de formats de recherche pour des requêtes complexes :
 
 ### Recherche de ressources numériques à partir du panneau Adobe Asset Link {#aal}
 
-Grâce à Adobe Asset Link, les professionnels de la création peuvent désormais accéder au contenu stocké dans [!DNL Experience Manager Assets], sans quitter les applications Adobe Creative Cloud prises en charge. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications [!DNL Adobe Creative Cloud] : [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign]. Asset Link permet également aux utilisateurs de rechercher des résultats visuellement similaires. Les résultats d’affichage de la recherche visuelle sont optimisés par les algorithmes d’apprentissage automatique d’Adobe Sensei et aident les utilisateurs à trouver des images à l’esthétique similaire. Voir [Rechercher et parcourir des ressources](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) à l’aide d’Adobe Asset Link.
+Grâce à Adobe Asset Link, les professionnels de la création peuvent désormais accéder au contenu stocké dans [!DNL Experience Manager Assets], sans quitter les applications Adobe Creative Cloud prises en charge. Ils peuvent parcourir, rechercher, extraire et archiver des ressources de manière transparente à l’aide du panneau intégré à l’application dans les applications [!DNL Adobe Creative Cloud] : [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign]. Asset Link permet également aux utilisateurs de rechercher des résultats visuellement similaires. Les résultats d’affichage de la recherche visuelle sont optimisés par les algorithmes de machine learning d’Adobe Sensei et aident les utilisateurs à trouver des images à l’esthétique similaire. Voir [Rechercher et parcourir des ressources](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) à l’aide d’Adobe Asset Link.
 
 ### Recherche de ressources numériques dans [!DNL Experience Manager] application de bureau {#desktop-app}
 
@@ -284,7 +284,7 @@ La fonctionnalité de recherche peut présenter des limitations de performances 
 ## Conseils de recherche {#tips}
 
 * Si vous surveillez l’état de révision des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
-* Utilisez le prédicat Statistiques pour rechercher les ressources prises en charge en fonction de leurs statistiques d’utilisation obtenues auprès de diverses applications Creative. Les données d’utilisation sont regroupées sous Note d’utilisation, Impressions, Clics et Canaux de médias où les ressources apparaissent dans des catégories.
+* Utilisez le prédicat Informations pour rechercher les ressources prises en charge en fonction de leurs statistiques d’utilisation obtenues auprès de diverses applications Creative. Les données d’utilisation sont regroupées sous Note d’utilisation, Impressions, Clics et Canaux de médias où les ressources apparaissent dans des catégories.
 * Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les ressources recherchées. [!DNL Experience Manager] affiche initialement 100 ressources dans la vue Carte et 200 ressources dans la vue Liste. Des ressources supplémentaires sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de ressources que les ressources chargées. Le nombre de ressources sélectionnées est affiché dans l’angle supérieur droit de la page des résultats de la recherche. Vous pouvez agir sur la sélection, par exemple télécharger les ressources sélectionnées, mettre à jour des propriétés de métadonnées en bloc pour les ressources sélectionnées ou ajouter les ressources sélectionnées à une collection. Lorsqu’il y a moins de ressources affichées que de ressources sélectionnées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources auxquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, veillez à ce que toutes les ressources soient sélectionnées explicitement.
 * Pour rechercher les ressources qui ne contiennent pas les métadonnées obligatoires, voir [Métadonnées obligatoires](#mandatorymetadata).
 * La recherche utilise tous les champs de métadonnées. Une recherche générique, telle que la recherche du nombre 12, renvoie généralement de nombreux résultats. Pour de meilleurs résultats, utilisez des guillemets doubles (et non des guillemets simples) ou assurez-vous que le nombre est attaché à un mot sans caractère spécial (par exemple, `shoe12`).
@@ -419,6 +419,10 @@ Vous pouvez effectuer les opérations suivantes avec les ressources que vous ave
 * Télécharger une ou plusieurs ressources
 * Utiliser les actions de bureau pour ouvrir ces ressources dans l’application de bureau
 * Créer des collections dynamiques
+* Création d’une version
+* démarrer un workflow.
+* Lier ou dissocier des ressources
+* Appliquez des filtres à l’aide du panneau Filtres qui s’affiche automatiquement après avoir effectué la recherche, afin de limiter les résultats de la recherche.
 
 ### Tri des résultats de la recherche {#sort}
 
@@ -458,6 +462,18 @@ Une collection est un ensemble ordonné de ressources pouvant inclure des ressou
 * Une liste dynamique (collection dynamique) qui peuple la collection de ressources en fonction de critères de recherche
 
 Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gestion des collections](/help/assets/manage-collections.md).
+
+### Création d’une version {#create-version}
+
+Créez une version pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Version]**. Ajoutez un libellé facultatif ou un commentaire, puis cliquez sur **[!UICONTROL Créer]**. Vous pouvez également sélectionner plusieurs ressources et créer simultanément des versions à leur intention.
+
+### Créer un workflow {#create-workflow}
+
+Tout comme la fonctionnalité de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Début]**.
+
+### Lier et dissocier des ressources {#relate-unrelate-assets}
+
+Lier et dissocier les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Relate]** ou **[!UICONTROL Sans relation]**.
 
 ## Résultats de recherche inattendus et problèmes {#unexpected-results}
 
