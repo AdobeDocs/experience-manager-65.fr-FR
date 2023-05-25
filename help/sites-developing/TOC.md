@@ -8,10 +8,10 @@ breadcrumb-title: Guide de développement
 user-guide-description: Ce guide explique comment créer votre instance AEM.
 feature: Developing
 role: Developer
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 99%
+source-wordcount: '1296'
+ht-degree: 98%
 
 ---
 
@@ -142,6 +142,8 @@ ht-degree: 99%
       + [Gestion des points de fin GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Optimisation des requêtes GraphQL.](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+      + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Authentification pour les requêtes AEM GraphQL distantes sur les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [API AEM GraphQL avec fragments de contenu – Exemple de contenu et requêtes](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Développement hybride et SPA AEM{#spas}
@@ -189,10 +191,10 @@ ht-degree: 99%
    + [Exemples de types de module d’IU ContextHub](ch-samplemodules.md)
    + [Diagnostic ContextHub](ch-diagnostics.md)
    + [Développement de composants pour du contenu ciblé](target.md)
-   + [Guide de référence pour l’API JavaScript ContextHub](contexthub-api.md)
+   + [Référence de l’API JavaScript ContextHub](contexthub-api.md)
    + ClientContext{#client-context}
       + [Présentation détaillée de ClientContext](client-context.md)
-      + [API Javascript pour ClientContext](ccjsapi.md)
+      + [API JavaScript ClientContext](ccjsapi.md)
 + Extension d’AEM{#extending-aem}
    + [Extension d’AEM à l’aide d’Adobe Developer App Builder](app-builder.md)
    + [Personnalisation de la création de pages](customizing-page-authoring-touch.md)

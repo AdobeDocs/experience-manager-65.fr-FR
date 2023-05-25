@@ -1,18 +1,18 @@
 ---
-title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
-description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
+title: Découvrez comment utiliser GraphQL avec AEM - Exemple de contenu et de requêtes
+description: Découvrez comment utiliser GraphQL avec des AEM pour diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
 source-wordcount: '1586'
-ht-degree: 97%
+ht-degree: 76%
 
 ---
 
 # Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
-Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
+Découvrez comment utiliser GraphQL avec des AEM pour diffuser du contenu sans interface en explorant des exemples de contenu et de requêtes.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode d�
 >* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
-Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
+Pour commencer à utiliser les requêtes GraphQL et leur utilisation avec les fragments de contenu AEM, vous pouvez consulter quelques exemples pratiques.
 
 Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 
@@ -38,7 +38,7 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 
 >[!NOTE]
 >
->Selon votre instance, vous pouvez accéder directement à l’[interface GraphiQL incluse avec l’API GraphQL d’AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) pour soumettre et tester des requêtes.
+>Selon votre instance, vous pouvez accéder directement à la variable [Interface GraphiQL incluse avec l’API GraphQL AEM](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
 >
 >Par exemple : `http://localhost:4502/content/graphiql.html`
 
@@ -48,11 +48,11 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 
 ### Exemple de requête - Tous les schémas et types de données disponibles {#sample-all-schemes-datatypes}
 
-Tous les `types` seront renvoyés pour tous les schémas disponibles.
+Cet exemple de requête renvoie tous les `types` pour tous les schémas disponibles.
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -65,7 +65,7 @@ Tous les `types` seront renvoyés pour tous les schémas disponibles.
 
 **Exemple de résultat**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -141,10 +141,10 @@ Tous les `types` seront renvoyés pour tous les schémas disponibles.
 
 ### Exemple de requête - Toutes les informations sur toutes les villes {#sample-all-information-all-cities}
 
-Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base :
+Pour récupérer toutes les informations sur toutes les villes, vous pouvez utiliser la requête de base :
 **Exemple de requête**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -152,9 +152,9 @@ Pour récupérer toutes les informations sur toutes les villes, vous pouvez util
 }
 ```
 
-Une fois l’exécution effectuée, le système développe automatiquement la requête pour inclure tous les champs :
+Lors de l’exécution, le système développe automatiquement la requête afin d’inclure tous les champs :
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -169,7 +169,7 @@ Une fois l’exécution effectuée, le système développe automatiquement la re
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -224,11 +224,11 @@ Une fois l’exécution effectuée, le système développe automatiquement la re
 
 ### Exemple de requête - Noms de toutes les villes {#sample-names-all-cities}
 
-Il s’agit d’une requête simple pour renvoyer l’élément `name`de toutes les entrées dans le schéma`city`.
+Cet exemple de requête est une requête simple pour renvoyer la variable `name`de toutes les entrées dans la variable `city`schéma.
 
 **Exemple de requête**
 
-```xml
+```xmgraphqll
 query {
   cityList {
     items {
@@ -240,7 +240,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -274,11 +274,11 @@ query {
 
 ### Exemple de requête – Un fragment de ville unique et spécifique {#sample-single-specific-city-fragment}
 
-Il s’agit d’une requête qui renvoie les détails d’une entrée de fragment unique vers un emplacement spécifique dans le référentiel.
+Cet exemple de requête est une requête permettant de renvoyer les détails d’une entrée de fragment unique à un emplacement spécifique dans le référentiel.
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -294,7 +294,7 @@ Il s’agit d’une requête qui renvoie les détails d’une entrée de fragmen
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -315,11 +315,11 @@ Il s’agit d’une requête qui renvoie les détails d’une entrée de fragmen
 
 ### Exemple de requête – Toutes les villes avec une variante nommée {#sample-cities-named-variation}
 
-Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin_centre`), pour Berlin en tant que `city`, vous pouvez utiliser une requête afin de renvoyer des détails sur la variante.
+Si vous créez une variation nommée &quot;Centre de Berlin&quot; (`berlin_centre`), pour la variable `city` Berlin, vous pouvez utiliser une requête pour renvoyer les détails de la variation.
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -335,7 +335,7 @@ Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -360,14 +360,14 @@ Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin
 
 Si vous :
 
-* créez une variété de balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
-* et que vous les affectez à la variation principale de diverses instances `City`,
+* créer différentes balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
+* et attribuer ces balises à la variation de Principal de différentes `City` instances
 
 vous pouvez alors utiliser une requête pour renvoyer les détails de `name` et de `tags` de toutes les entrées balisées comme des Escapades en ville dans le schéma `city`.
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -383,7 +383,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -414,7 +414,7 @@ Grâce à la structure des fragments imbriqués, cette requête renvoie tous les
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -443,7 +443,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -538,11 +538,11 @@ query {
 
 ### Exemple de Requête - Toutes les personnes qui portent le nom « Jobs » ou « Smith » {#sample-all-persons-jobs-smith}
 
-Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
+Cet exemple de requête filtre tous les `persons` pour tous ceux qui portent le nom `Jobs`ou `Smith`.
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -567,7 +567,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -592,11 +592,11 @@ query {
 
 ### Exemple de requête - Toutes les personnes qui ne portent pas le nom « Jobs » {#sample-all-persons-not-jobs}
 
-Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
+Cet exemple de requête filtre tous les `persons` pour tous ceux qui portent le nom `Jobs`ou `Smith`.
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -618,7 +618,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -663,7 +663,7 @@ Toutes les `adventures` où `_path` commence par un préfixe spécifique (`/cont
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -685,7 +685,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -702,13 +702,13 @@ query {
 }
 ```
 
-### Exemple de requête - Toutes les villes situées en Allemagne ou en Suisse et dont la population se situe entre 400 000 et 999 999 {#sample-all-cities-d-ch-population}
+### Exemple de requête : toutes les villes d’Allemagne ou de Suisse ayant une population de 400000 à 999999 {#sample-all-cities-d-ch-population}
 
-Ici, le filtrage concerne une combinaison de champs. Un opérateur `AND` (implicite) est utilisé pour sélectionner la plage `population`, tandis qu’un opérateur `OR` (explicite) est utilisé pour sélectionner les villes requises.
+Ici, une combinaison de champs est filtrée. Un opérateur `AND` (implicite) est utilisé pour sélectionner la plage `population`, tandis qu’un opérateur `OR` (explicite) est utilisé pour sélectionner les villes requises.
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -744,7 +744,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -771,7 +771,7 @@ Cette requête interroge toutes les villes dont le nom contient `SAN`, indépend
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -795,7 +795,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -822,7 +822,7 @@ Cette requête effectue un filtrage sur un tableau avec un élément (`city:na`)
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -846,7 +846,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -880,7 +880,7 @@ Cette requête effectue un filtrage sur une valeur de tableau exacte.
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -906,7 +906,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -932,7 +932,7 @@ Cette requête illustre le filtrage pour toute `person` portant le `name` « Sm
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -964,7 +964,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -998,7 +998,7 @@ Cette requête illustre le filtrage de trois fragments imbriqués : `company`, 
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -1040,7 +1040,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1090,7 +1090,7 @@ Cette requête illustre le filtrage de trois fragments imbriqués : `company`, 
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1117,7 +1117,7 @@ query {
 
 **Exemples de résultats**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1146,17 +1146,17 @@ query {
 
 ## Exemples de requêtes utilisant le projet WKND {#sample-queries-using-wknd-project}
 
-Ces exemples de requêtes sont basés sur le projet WKND. Il s’agit des éléments suivants :
+Ces exemples de requêtes sont basés sur le projet WKND. Il comporte les éléments suivants :
 
-* Modèles de fragments de contenu disponibles sous :
+* les modèles de fragments de contenu disponibles sous :
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
-* Fragments de contenu (et autres contenus) disponibles sous :
+* les fragments de contenu (et autres contenus) disponibles sous :
    `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
->Les résultats pouvant être volumineux, ils ne sont pas reproduits ici.
+>Comme les résultats peuvent être exhaustifs, ils ne sont pas reproduits ici.
 
 ### Exemple de requête pour tous les fragments de contenu d’un modèle donné avec les propriétés spécifiées {#sample-wknd-all-model-properties}
 
@@ -1167,7 +1167,7 @@ Cet exemple de requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   articleList {
     items {
@@ -1187,7 +1187,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1244,7 +1244,7 @@ Cette requête interroge :
 Cet exemple de requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * parmi cela, tous les formats de contenu :
+   * dans ce chemin, tous les formats de contenu :
       * HTML
       * Texte (Markdown)
       * Texte brut
@@ -1252,7 +1252,7 @@ Cet exemple de requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
@@ -1278,7 +1278,7 @@ Cet exemple de requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
     item {
@@ -1298,7 +1298,7 @@ Cet exemple de requête interroge :
 Cette requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * parmi cela, le chemin d’accès et l’auteur du fragment référencé (imbriqué).
+   * dans ce chemin, le chemin et l’auteur du fragment référencé (imbriqué).
 
 >[!NOTE]
 >
@@ -1393,7 +1393,7 @@ Ces requêtes interrogent :
 
 La requête suivante renvoie toutes les références de contenu en utilisant `_references` :
 
-```xml
+```graphql
 {
   bookmarkList {
      _references {
@@ -1427,13 +1427,13 @@ La requête suivante renvoie toutes les références de contenu en utilisant `_r
 
 #### Exemple de requête pour plusieurs fragments de contenu avec pièces jointes {#sample-wknd-multiple-fragments-attachments}
 
-La requête suivante renvoie tous les `attachments` – un champ spécifique (sous-groupe) de type `content-reference` :
+La requête suivante renvoie toutes les `attachments` : champ spécifique (sous-groupe) de type `content-reference`:
 
 >[!NOTE]
 >
 >Le champ `attachments` présente le type de données `content-reference`, avec différents formulaires sélectionnés.
 
-```xml
+```graphql
 {
   bookmarkList {
     items {
@@ -1477,7 +1477,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1515,11 +1515,11 @@ Cette requête interroge :
 Cette requête interroge :
 
 * à la recherche d’un fragment de contenu unique de type `article` avec un chemin spécifique ;
-   * à l’intérieur de cela, les données sont liées à la variation : `variation1`.
+   * dans ce chemin, les données liées à la variation : `variation1`
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
@@ -1544,7 +1544,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   articleList (variation: "variation1") {
     items {
@@ -1569,7 +1569,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1596,7 +1596,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
@@ -1625,7 +1625,7 @@ Cette requête interroge :
 
 **Exemple de requête**
 
-```xml
+```graphql
 { 
   articleList (_locale: "fr") {
     items {
@@ -1652,7 +1652,7 @@ Les exemples de requêtes sont basés sur la structure suivante, qui utilise :
 
 ### Exemples de modèles de fragments de contenu (schémas) {#sample-content-fragment-models-schemas}
 
-Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivants et leurs relations mutuelles (références ->) :
+Pour les exemples de requêtes, utilisez les modèles de contenu suivants et leurs interrelations (références ->) :
 
 * [Entreprise](#model-company)
 -> [Personne](#model-person)
@@ -1666,7 +1666,7 @@ Les champs de base définissant l’entreprise sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom de l’entreprise | Une seule ligne de texte |  |
+| Nom de l’entreprise | Texte sur une seule ligne |  |
 | PDG | Référence du fragment (unique) | [Personne](#model-person) |
 | Employés | Référence du fragment (champ multiple) | [Personne](#model-person) |
 
@@ -1676,8 +1676,8 @@ Champs définissant une personne, qui peut également être un employé :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Une seule ligne de texte |  |
-| Prénom | Une seule ligne de texte |  |
+| Nom | Texte sur une seule ligne |  |
+| Prénom | Texte sur une seule ligne |  |
 | Distinctions | Référence du fragment (champ multiple) | [Distinction](#model-award) |
 
 #### Distinction {#model-award}
@@ -1686,8 +1686,8 @@ Les champs définissant une distinction sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Raccourci/ID | Une seule ligne de texte |  |
-| Titre | Une seule ligne de texte |  |
+| Raccourci/ID | Texte sur une seule ligne |  |
+| Titre | Texte sur une seule ligne |  |
 
 #### Ville {#model-city}
 
@@ -1695,8 +1695,8 @@ Les champs permettant de définir une ville sont les suivants :
 
 | Nom du champ | Type de données | Référence |
 |--- |--- |--- |
-| Nom | Une seule ligne de texte |  |
-| Pays | Une seule ligne de texte |  |
+| Nom | Texte sur une seule ligne |  |
+| Pays | Texte sur une seule ligne |  |
 | Population | Nombre |  |
 | Catégories | Balises |  |
 
