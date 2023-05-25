@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: be028f116ccb83853cd46dc742438babd2207314
+source-git-commit: 325af649564d93beedfc762a8f5beacec47b1641
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 91%
+source-wordcount: '887'
+ht-degree: 67%
 
 ---
 
 # Créer le balisage dans une application AEM{#building-tagging-into-an-aem-application}
 
-Dans le but d’utiliser par programmation des balises ou d’étendre des balises dans une application d’AEM personnalisée, cette page décrit l’utilisation de la fonction
+Cette page décrit l’utilisation de la fonction
 
-* [l’API de balisage ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
+* [l’API de balisage ](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
 qui interagit avec le
 
@@ -30,12 +30,12 @@ qui interagit avec le
 
 Pour plus d’informations sur le balisage, consultez :
 
-* [Gestion des balises](/help/sites-administering/tags.md) pour savoir comment créer et gérer des balises et déterminer à quel contenu elles ont été appliquées ;
+* [Administration des balises](/help/sites-administering/tags.md) pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées.
 * [Utilisation des balises](/help/sites-authoring/tags.md) pour plus d’informations sur le balisage du contenu.
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le package [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le package [com.day.cq.tagging](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
 * JcrTagManagerFactory - Renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` – permet de résoudre et de créer des balises par chemins et noms.
@@ -43,7 +43,7 @@ L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) 
 
 ### Récupération d’un TagManager basé sur JCR {#getting-a-jcr-based-tagmanager}
 
-Pour récupérer une instance de TagManager, vous devez disposer d’une `Session` JRC et appeler `getTagManager(Session)` :
+Pour récupérer une instance TagManager, vous devez disposer d’un JCR. `Session` et à appeler `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -52,7 +52,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-Dans le contexte standard de Sling, vous pouvez également effectuer une adaptation à un `TagManager` à partir du `ResourceResolver` :
+Dans le contexte Sling classique, vous pouvez également vous adapter à un `TagManager` de la `ResourceResolver`:
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -60,7 +60,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Récupération d’un objet Tag {#retrieving-a-tag-object}
 
-Un objet `Tag` peut être récupéré à l’aide du `TagManager`, en résolvant une balise existante ou en créant une autre :
+A `Tag` peut être récupéré via le `TagManager`, en résolvant une balise existante ou en en créant une :
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -130,13 +130,13 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Balisage du côté client {#tagging-on-the-client-side}
 
-`CQ.tagging.TagInputField` est un widget de formulaire qui permet de saisir des balises. Il dispose d’un menu contextuel permettant de faire une sélection parmi les balises existantes, et inclut la saisie semi-automatique, ainsi que bien d’autres fonctions. Son xtype est `tags`.
+Le widget de formulaire `CQ.tagging.TagInputField` est destiné à la saisie de balises. Il dispose d’un menu contextuel permettant de faire une sélection parmi les balises existantes, et inclut la saisie semi-automatique, ainsi que bien d’autres fonctions. Son xtype est `tags`.
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et non utilisées sont des balises `/content/cq:tags` qui ont une propriété `cq:movedTo` et ne sont pas appliquées à un nœud de contenu. Leur nombre est nul. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
+Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et non utilisées sont des balises `/content/cq:tags` qui ont une propriété `cq:movedTo` et ne sont pas appliquées à un nœud de contenu. Leur nombre est nul. En utilisant ce processus de suppression différée, le noeud de contenu (c’est-à-dire, le `cq:tags` ) ne doit pas être mise à jour dans le cadre de l’opération de déplacement ou de fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par exemple via la boîte de dialogue des propriétés de la page.
 
-Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur :
+Tag Garbage Collector s’exécute par défaut une fois par jour. Vous pouvez le configurer à l’adresse suivante :
 
 ```xml
 http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector
@@ -152,13 +152,13 @@ La recherche de balises et l’obtention de la liste des balises fonctionnent co
 
 ## Balises dans différentes langues {#tags-in-different-languages}
 
-Comme le décrit la documentation relative à la gestion des balises, dans la section [Gestion des balises dans différentes langues](/help/sites-administering/tags.md#managing-tags-in-different-languages), une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. `<locale>` doit être une chaîne de caractères ISO du code langue en minuscules et utiliser &quot;_&quot; au lieu de &quot;-&quot;, par exemple : `de_ch`.
+Comme le décrit la documentation relative à la gestion des balises, dans la section [Gestion des balises dans différentes langues](/help/sites-administering/tags.md#managing-tags-in-different-languages), une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. Le `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser &quot;_&quot; au lieu de &quot;-&quot;, par exemple : `de_ch`.
 
 Lorsque la balise **Animals** est ajoutée à la page **Produits**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du nœud /content/geometrixx/fr/products/jcr:content. La traduction est référencée à partir du nœud de balise.
 
 L’API côté serveur dispose de méthodes liées à `title` localisées :
 
-* [com.day.cq.tagging.Tag](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
+* [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
    * getLocalizedTitle(Locale locale)
    * getLocalizedTitlePaths()
@@ -166,7 +166,7 @@ L’API côté serveur dispose de méthodes liées à `title` localisées :
    * getTitle(Locale locale)
    * getTitlePath(Locale locale)
 
-* [com.day.cq.tagging.TagManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/TagManager.html)
+* [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
    * canCreateTagByTitle(String tagTitlePath, Locale locale)
    * createTagByTitle(String tagTitlePath, Locale locale)
@@ -182,13 +182,13 @@ Dans AEM, la langue peut être identifiée à partir de la langue de la page ou 
 
    * `slingRequest.getLocale()`
 
-`currentPage` et `slingRequest` sont disponibles dans un JSP via la balise [&lt;cq:definedObjects>](/help/sites-developing/taglib.md).
+Le `currentPage` et `slingRequest` sont disponibles dans une JSP via la fonction [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) balise .
 
-Pour le balisage, la localisation dépend du contexte, car la balise `titles` peut être affichée dans la langue de la page, dans la langue de l’utilisateur ou dans toute autre langue.
+Pour le balisage, la localisation dépend du contexte comme balise . `titles`peut être affiché dans la langue de la page, dans la langue de l’utilisateur ou dans toute autre langue.
 
 ### Ajout d’une langue à la boîte de dialogue Modifier la balise {#adding-a-new-language-to-the-edit-tag-dialog}
 
-La procédure suivante décrit l’ajout d’une nouvelle langue (finnois) au **Modification de balise** dialog :
+La procédure suivante décrit l’ajout d’une langue (finnois) à la variable **Modification de balise** dialog :
 
 1. Dans **CRXDE**, modifiez la propriété multi-valeur `languages` du nœud `/content/cq:tags`.
 
@@ -198,7 +198,7 @@ La nouvelle langue (finnois) est désormais disponible dans la boîte de dialogu
 
 >[!NOTE]
 >
->La nouvelle langue doit faire partie de celles reconnues par AEM, c’est-à-dire qu’elle doit être disponible sous `/libs/wcm/core/resources/languages`.
+>La nouvelle langue doit être l&#39;une des langues AEM reconnues. En d’autres termes, il doit être disponible sous la forme d’un noeud . `/libs/wcm/core/resources/languages`.
 
 >[!CAUTION]
 >
