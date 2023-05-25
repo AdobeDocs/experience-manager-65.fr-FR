@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '875'
-ht-degree: 100%
+source-git-commit: be028f116ccb83853cd46dc742438babd2207314
+workflow-type: tm+mt
+source-wordcount: '903'
+ht-degree: 91%
 
 ---
 
 # Créer le balisage dans une application AEM{#building-tagging-into-an-aem-application}
 
-Dans un contexte de programmation par balises ou d’extension de balises dans une application AEM personnalisée, cette page décrit l’utilisation de
+Dans le but d’utiliser par programmation des balises ou d’étendre des balises dans une application d’AEM personnalisée, cette page décrit l’utilisation de la fonction
 
 * [l’API de balisage ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -35,7 +35,7 @@ Pour plus d’informations sur le balisage, consultez :
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le module [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
+L’implémentation du [cadre de balisage](/help/sites-developing/framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. TagManager garantit que les balises saisies en tant que valeurs dans la propriété de tableau de chaîne de caractères `cq:tags` ne sont pas dupliquées, supprime les TagID pointant vers des balises non existantes et met à jour les TagID pour les balises déplacées ou fusionnées. TagManager utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le package [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) :
 
 * JcrTagManagerFactory - Renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` – permet de résoudre et de créer des balises par chemins et noms.
@@ -188,7 +188,7 @@ Pour le balisage, la localisation dépend du contexte, car la balise `titles` pe
 
 ### Ajout d’une langue à la boîte de dialogue Modifier la balise {#adding-a-new-language-to-the-edit-tag-dialog}
 
-La procédure suivante décrit comment ajouter une langue (finnois) à la boîte de dialogue **Modifier la balise** :
+La procédure suivante décrit l’ajout d’une nouvelle langue (finnois) au **Modification de balise** dialog :
 
 1. Dans **CRXDE**, modifiez la propriété multi-valeur `languages` du nœud `/content/cq:tags`.
 
@@ -199,3 +199,7 @@ La nouvelle langue (finnois) est désormais disponible dans la boîte de dialogu
 >[!NOTE]
 >
 >La nouvelle langue doit faire partie de celles reconnues par AEM, c’est-à-dire qu’elle doit être disponible sous `/libs/wcm/core/resources/languages`.
+
+>[!CAUTION]
+>
+>L’installation d’un Service Pack réinitialise la propriété languages du noeud /content/cq:tags sur default. Il est donc nécessaire de l’ajouter à partir des propriétés avant l’installation.
