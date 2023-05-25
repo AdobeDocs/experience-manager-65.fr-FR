@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: f8af806bbb78623d5ba12379fc547a2cffc03841
+source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
 workflow-type: tm+mt
-source-wordcount: '2606'
+source-wordcount: '2620'
 ht-degree: 42%
 
 ---
@@ -70,6 +70,7 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * Impossible de déclencher un workflow pour plusieurs ressources sélectionnées qui se trouvent à l’aide de filtres de recherche. (ASSETS-7689)
 * Lorsque vous sélectionnez une ressource (ou plusieurs ressources) dans les résultats de recherche, l’option Mettre en relation ou Ne plus mettre en relation n’est pas visible. Mais cette option est disponible, sinon. (ASSETS-7679)
 * Le panneau Filtres de recherche ne s’ouvre qu’une seule fois après la connexion et ne s’ouvre pas si vous quittez la page de recherche et réexécutez la recherche. (ASSETS-7671)
+* La liste déroulante des emails n’affiche pas le rapport de contraste approprié lors du partage d’un lien. (ASSETS-17349)
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
