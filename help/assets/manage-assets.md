@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
 workflow-type: tm+mt
-source-wordcount: '9970'
+source-wordcount: '9993'
 ht-degree: 80%
 
 ---
@@ -106,7 +106,7 @@ Pour configurer la tâche de nettoyage pour les tâches de chargement de blocs n
 >* Chaque bloc se termine avant l’expiration des informations d’identification.
 
 
-Si vous transférez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous transférez la ressource, un message d’avertissement s’affiche.
+Si vous chargez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous chargez la ressource, un message d’avertissement s’affiche.
 
 Vous pouvez choisir de remplacer une ressource existante, de créer une autre version ou de garder les deux en renommant la nouvelle ressource téléchargée. Si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (par exemple les annotations et le recadrage) apportées à une ressource existante sont supprimées. Si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée en ajoutant le chiffre `1` à son nom.
 
@@ -204,7 +204,7 @@ Pour annuler une tâche de chargement en cours, cliquez sur **[!UICONTROL Annule
 | Décompresser les fichiers Zip ou Tar lors du téléchargement |  |  |
 | Options de tâche |  | Cliquez sur **[!UICONTROL Options de tâche]** afin d’ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche] et de sélectionner des options qui affectent l’ensemble de la tâche de chargement. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour charger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Sélectionnez l’option **[!UICONTROL Options de chargement par défaut]** pour ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche]. |
 |  | Quand | Sélectionnez Unique ou Récurrente. Pour définir une tâche récurrente, sélectionnez une option Répéter (Quotidienne, Hebdomadaire, Mensuelle ou Personnalisée) pour indiquer à quel moment la tâche de transfert FTP doit se répéter. Spécifiez ensuite les options de planification selon vos besoins. |
-|  | Inclure les sous-dossiers | Transférez tous les sous-dossiers dans le dossier que vous avez l’intention de charger. Les noms du dossier et des sous-dossiers transférés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
+|  | Inclure les sous-dossiers | Transférez tous les sous-dossiers dans le dossier que vous avez l’intention de charger. Les noms du dossier et des sous-dossiers chargés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
 |  | Options de recadrage | Pour recadrer manuellement les bords d’une image, sélectionnez le menu Recadrer, puis choisissez Manuel. Saisissez ensuite le nombre de pixels à recadrer d’un côté ou de chaque côté de l’image. La quantité de recadrage de l’image dépend du paramètre ppi (pixels par pouce) défini dans le fichier image. Par exemple, si l’image affiche 150 ppp et que vous entrez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** : sélectionnez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**Transparence** : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour un rognage en fonction de la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Ces options de recadrage sont non destructives. |
 |  | Options de profil colorimétrique | Choisissez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la diffusion :<ul><li>Conservation des couleurs par défaut : Conserve les couleurs de l’image source chaque fois que les images contiennent des informations sur l’espace colorimétrique ; il n’existe aucune conversion de couleur. Presque toutes les images d’aujourd’hui ont déjà un profil colorimétrique approprié incorporé. Cependant, si une image source CMJN ne contient pas de profil colorimétrique incorporé, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage des images sur les pages web.</li><li>Conserver l’espace colorimétrique d’origine : Conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion de couleurs est effectuée à l’aide des profils colorimétriques par défaut configurés dans les paramètres de publication. Les profils de couleurs peuvent ne pas correspondre à la couleur des fichiers créés avec cette option. Par conséquent, nous vous recommandons d’utiliser l’option Conservation des couleurs par défaut.</li><li>Personnaliser de > à<br> Ouvre les menus pour vous permettre de choisir un espace colorimétrique Convertir à partir de et Convertir en . Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
 |  | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Consultez la section [Définition des options de modification d’image au moment du chargement](#setting-image-editing-options-at-upload). |
@@ -311,7 +311,7 @@ Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Vidéo adaptative |  | Paramètre prédéfini de codage unique qui fonctionne avec n’importe quelles proportions pour créer des vidéos à diffuser sur mobile, tablette et ordinateur de bureau. Les vidéos source transférées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver le format de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
+| Vidéo adaptative |  | Paramètre prédéfini de codage unique qui fonctionne avec n’importe quelles proportions pour créer des vidéos à diffuser sur mobile, tablette et ordinateur de bureau. Les vidéos source chargées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver le format de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
 | Paramètres prédéfinis de codage unique | Tri des paramètres prédéfinis de codage | Sélectionnez **[!UICONTROL Nom]** ou **[!UICONTROL Taille]** si vous souhaitez trier les paramètres prédéfinis de codage répertoriés sous Bureau, Mobile et Tablette par leur nom ou leur taille de résolution. |
 |  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo progressive ou en flux continu sur les ordinateurs de bureau. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
 |  | Mobile | Créez un fichier MP4 à diffuser sur les appareils mobiles iPhone ou Android™. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
@@ -319,13 +319,13 @@ Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo
 
 #### Définition de paramètres prédéfinis d’ensemble par lot lors du chargement {#setting-batch-set-presets-at-upload}
 
-Si vous souhaitez créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir d’images transférées, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. 
+Si vous souhaitez créer automatiquement une visionneuse d’images ou une visionneuse à 360° à partir d’images chargées, cliquez sur la colonne Actif correspondant au paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. 
 
 Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 ### Chargements en continu {#streamed-uploads}
 
-Si vous chargez de nombreuses ressources vers Adobe Experience Manager, les requêtes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du chargement et peut même entraîner l’expiration de certaines tâches de chargement. [!DNL Experience Manager Assets] prend en charge le chargement de ressources en continu. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont directement transférées vers le référentiel. Ainsi, le temps de chargement des ressources volumineuses et la possibilité de dépassements de délai sont réduits. Le transfert en continu est activé par défaut dans [!DNL Assets].
+Si vous chargez de nombreuses ressources vers Adobe Experience Manager, les requêtes d’E/S vers le serveur augmentent considérablement, ce qui réduit l’efficacité du chargement et peut même entraîner l’expiration de certaines tâches de chargement. [!DNL Experience Manager Assets] prend en charge le chargement de ressources en continu. Le chargement en continu réduit les E/S de disque lors de l’opération de chargement en évitant de stocker les ressources dans un dossier temporaire sur le serveur avant de les copier dans le référentiel. Au lieu de cela, les données sont directement transférées vers le référentiel. Ainsi, le temps de chargement des ressources volumineuses et la possibilité de dépassements de délai sont réduits. Le chargement en continu est activé par défaut dans [!DNL Assets].
 
 >[!NOTE]
 >
@@ -403,6 +403,9 @@ Pour prévisualiser une ressource à l’aide du clavier, procédez comme suit 
 
    *Image : utilisez le sélecteur de date pour planifier l’activation de la ressource.*
 
+1. Vous devez vérifier **[!UICONTROL Heure d’activation/de désactivation atteinte]** si vous souhaitez mettre à jour les déclencheurs de l’agent de réplication dans les propriétés de métadonnées.
+   ![Paramètres d’agent](assets-dm/Agent-settings.png)
+
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ou via l’API HTTP.
 
 1. Sélectionnez une ou plusieurs balises dans le champ **[!UICONTROL Balises]**. Pour ajouter une balise personnalisée, saisissez son nom dans la zone appropriée et sélectionnez ensuite `Enter`. La nouvelle balise est enregistrée dans [!DNL Experience Manager]. [!DNL YouTube] A besoin de balises pour la publication. Reportez-vous à la section [Publication de vidéos sur YouTube](video.md#publishing-videos-to-youtube).
@@ -417,7 +420,7 @@ Pour prévisualiser une ressource à l’aide du clavier, procédez comme suit 
 
    Le score d’évaluation que vous affectez à la ressource s’affiche sous **[!UICONTROL Vos évaluations]**. Le score d’évaluation moyen que la ressource a reçu des utilisateurs qui ont évalué la ressource s’affiche sous **[!UICONTROL Évaluation]**. En outre, la ventilation des scores d’évaluation qui contribuent au score d’évaluation moyen s’affiche sous **[!UICONTROL Ventilation des évaluations]**. Vous pouvez rechercher des ressources en fonction de scores d’évaluation moyens.
 
-1. Pour afficher les statistiques d’utilisation de la ressource, cliquez sur l’onglet **[!UICONTROL Statistiques]**.
+1. Pour afficher les statistiques d’utilisation de la ressource, cliquez sur l’onglet **[!UICONTROL Insights]**.
 
    Les statistiques d’utilisation incluent :
 
