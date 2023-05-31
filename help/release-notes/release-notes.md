@@ -2,10 +2,11 @@
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
+exl-id: fed4e110-9415-4740-aba1-75da522039a9
+source-git-commit: efd2a41b6b53a72b941ac23386b6aa4c41c9da15
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 42%
+source-wordcount: '2683'
+ht-degree: 41%
 
 ---
 
@@ -103,6 +104,36 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * Lors de la conversion d’une configuration IMS Adobe Target en informations d’identification d’utilisateur dans les configurations cloud héritées, la variable `connectedWhen` ne change pas. Ce problème fait passer tous les appels comme si la configuration était toujours basée sur IMS. (CQ-4352810)
 * Ajouter `modifyProperties` autorisation d’accès `fd-cloudservice` utilisateur système pour la configuration Adobe Sign. (FORMS-6164)
 * Avec Experience Manager intégré à Adobe Target, lorsque vous créez une activité de test AB, elle ne synchronise pas les audiences qui lui sont associées, avec Target. (NPR-40085)
+
+## Oak{#oak-6517}
+
+Depuis le Service Pack 13 et les versions ultérieures, le journal d’erreur suivant a commencé à s’afficher, ce qui affecte le cache de persistance :
+
+```shell
+org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
+at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+    at org.h2.mvstore.MVStore.getUnsupportedWriteFormatException(MVStore.java:1059)
+    at org.h2.mvstore.MVStore.readStoreHeader(MVStore.java:878)
+    at org.h2.mvstore.MVStore.<init>(MVStore.java:455)
+    at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+    at org.h2.mvstore.db.Store.<init>(Store.java:129)
+```
+
+OU
+
+```shell
+org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.1.214/5].
+```
+
+Pour résoudre cette exception, procédez comme suit :
+
+1. Supprimez les deux dossiers suivants de `crx-quickstart/repository/`
+
+   * `cache`
+   * `diff-cache`
+
+1. Installez le Service Pack ou redémarrez Experience Manager as a Cloud Service.
+Nouveaux dossiers de `cache` et `diff-cache` sont automatiquement créés et vous ne voyez plus d’exception liée à `mvstore` dans le `error.log`.
 
 ## Plateforme{#platform-6517}
 
