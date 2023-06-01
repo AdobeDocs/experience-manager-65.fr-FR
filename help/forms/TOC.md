@@ -8,10 +8,10 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
+source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
 workflow-type: tm+mt
-source-wordcount: '3846'
-ht-degree: 100%
+source-wordcount: '3860'
+ht-degree: 99%
 
 ---
 
@@ -127,6 +127,7 @@ ht-degree: 100%
    + [Présentation de l’intégration des données AEM Forms](using/data-integration.md)
    + [Configuration des sources de données](using/configure-data-sources.md)
    + [Configuration du service OData de Microsoft Dynamics](using/ms-dynamics-odata-configuration.md)
+   + [Intégration de Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Création d’un modèle de données de formulaire](using/create-form-data-models.md)
    + [Utilisation d’un modèle de données de formulaire](using/work-with-form-data-model.md)
    + [Utilisation d’un modèle de données de formulaire](using/using-form-data-model.md)
@@ -368,7 +369,7 @@ ht-degree: 100%
 + Document Security {#use-document-security}
    + [Offres Document Security](using/document-security-offerings.md)
    + [Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire](using/enable-search-for-drm-protected-pdf-documents-in-aem.md)
-   + [Documents PDF protégés par une stratégie Reader Extension à l’aide de la bibliothèque de protection portable](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
+   + [Documents PDF protégés par une politique Reader Extension à l’aide de la bibliothèque de protection portable](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [Activer AEM pour rechercher des documents PDF protégés par la sécurité documentaire et des documents Microsoft Office](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protection d’un document au nom d’un autre utilisateur](using/protect-document-on-behalf-of-another-user.md)
 + Concepteur Forms {#use-forms-designer}
@@ -449,14 +450,14 @@ ht-degree: 100%
    + Gestion des services {#manage-services}
       + [Configuration des paramètres du service](/help/forms/using/admin-help/configure-service-settings.md)
       + [Démarrage et arrêt des services](/help/forms/using/admin-help/starting-stopping-services.md)
-   + Gestion des points de fin {#manage-endpoints}
-      + [Ajout, activation, modification ou suppression de points de fin](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
-      + [Configuration des points de fin de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
+   + Gestion des points d’entrée {#manage-endpoints}
+      + [Ajout, activation, modification ou suppression de points d’entrée](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
+      + [Configuration des points d’entrée de courrier électronique](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Configuration de l’authentification oAuth2.0](/help/forms/using/oauth2-support-for-mail-service.md)
-      + [Configuration des points de fin Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
+      + [Configuration des points d’entrée Remoting](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Configuration des points d’entrée des dossiers de contrôle](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Configuration des points de fin Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
-      + [Types de points de fin](/help/forms/using/admin-help/types-endpoints.md)
+      + [Configuration des points d’entrée Task Manager](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+      + [Types de points d’entrée](/help/forms/using/admin-help/types-endpoints.md)
    + Configuration des extensions d’Acrobat Reader DC {#configure-acrobat-reader-dc-extensions}
       + [Types de certificats utilisés par les extensions d’Acrobat Reader DC](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
       + [Identification des certificats valables et des certificats expirés dans les documents PDF](/help/forms/using/admin-help/recognizing-valid-expired-certificates-pdf.md)
@@ -489,11 +490,11 @@ ht-degree: 100%
       + [Envoi sécurisé de gros volumes d’information](/help/forms/using/admin-help/high-volume-secure-information-delivery.md)
       + [Configuration des options du client et du serveur](/help/forms/using/admin-help/configuring-client-server-options.md)
       + [Gestion des comptes d’utilisateurs invités et locaux](/help/forms/using/admin-help/invited-local-user-accounts.md)
-      + [Contrôle de l’accès à un document protégé par une stratégie](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
+      + [Contrôle de l’accès à un document protégé par une politique](/help/forms/using/admin-help/controlling-access-policy-protected-documents.md)
       + [Contrôle des événements](/help/forms/using/admin-help/monitoring-events.md)
-      + [Création et gestion des stratégies](/help/forms/using/admin-help/creating-policies.md)
+      + [Création et gestion des politiques](/help/forms/using/admin-help/creating-policies.md)
       + [Utilisation des pages Web de Document Security](/help/forms/using/admin-help/using-document-security-web-pages.md)
-      + [Création et gestion des jeux de stratégies](/help/forms/using/admin-help/creating-policy-sets.md)
+      + [Création et gestion des jeux de politiques](/help/forms/using/admin-help/creating-policy-sets.md)
       + [Enregistrement en tant qu’utilisateur](/help/forms/using/admin-help/registering-as-a-user.md)
    + Configuration du service Forms {#configure-forms}
       + [Principes de base des formulaires de configuration](/help/forms/using/admin-help/overview-7.md)
@@ -680,7 +681,7 @@ ht-degree: 100%
          + [Préparer AEM Forms pour la sauvegarde](developing/preparing-aem-forms-backup.md)
          + [Gestion des points d’entrée par programmation](developing/programmatically-endpoints.md)
          + [Gestion par programmation des nœuds de préférences](developing/programmatically-preferences-nodes.md)
-         + [Protéger des documents à lʼaide de stratégies](developing/protecting-documents-policies.md)
+         + [Protéger des documents à lʼaide de politiques](developing/protecting-documents-policies.md)
          + [Valider un document DDX à l’aide de l’API de service web](developing/validate-ddx-document-using-web.md)
 + Résolution des problèmes {#troubleshooting}
    + [Impossible d’utiliser certaines fonctionnalités de Forms avec certaines versions du JDK Oracle.](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
@@ -690,6 +691,7 @@ ht-degree: 100%
    + [Impossible de restaurer le référentiel CRX.](/help/forms/using/restore-crx-repository.md)
    + [Erreurs de service indisponible après l’installation du pack de services AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [Échec du déploiement des fichiers EAR sur JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
    + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)

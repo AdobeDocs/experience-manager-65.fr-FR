@@ -2,10 +2,10 @@
 title: Instructions d’installation du correctif AEM Forms pour AEM Forms
 description: Instructions d’installation du pack de services AEM Forms pour l’environnement OSGi et JEE
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
-workflow-type: ht
-source-wordcount: '1726'
-ht-degree: 100%
+source-git-commit: 57ead48ba3211075ae4b85801ba8cf6394582a9d
+workflow-type: tm+mt
+source-wordcount: '1728'
+ht-degree: 98%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 | Produit | Version |
 |---|---|
-| d’Adobe Experience Manager Forms 6.5 | 6.5.16.0 |
+| d’Adobe Experience Manager Forms 6.5 | 6.5.17.0 |
 | Type | Mise à jour du pack de services |
-| Date | 2 mars 2023 |
+| Date | 1er juin 2023 |
 | URL de téléchargement | [Dernières versions d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) |
 
 >[!NOTE]
@@ -153,7 +153,7 @@ Le package est automatiquement installé.
 * Utilisez l’[API HTTP à partir du gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
 
    >[!NOTE]
-   >Le Service Pack Experience Manager ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+   Le Service Pack Experience Manager ne prend pas en charge l’installation en Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
    **Validation de l’installation**
 
@@ -184,7 +184,7 @@ Le package est automatiquement installé.
 1. Sauvegardez vos [référentiel CRX et schéma de base de données](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=fr).
 
 >[!NOTE]
->Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
+Si vous installez le pack de services AEM Forms pour la base de données relationnelle, il est obligatoire de sauvegarder DB_schema.
 
 +++
 
@@ -211,7 +211,7 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 * Utilisez l’[API HTTP à partir du gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr). Utilisez `cmd=install&recursive=true` afin que les packages imbriqués soient installés.
 
    >[!NOTE]
-   >Le Service Pack Experience Manager ne prend pas en charge l’installation Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
+   Le Service Pack Experience Manager ne prend pas en charge l’installation Bootstrap. <!-- UPDATE FOR EACH NEW RELEASE -->
 
    **Validation de l’installation**
 
@@ -240,4 +240,4 @@ Vous pouvez utiliser deux méthodes différentes pour installer automatiquement 
 
 * Vérifiez toute activité dans les journaux du moniteur (error.log) une fois l’installation terminée quelle que soit l’activité. Patientez quelques minutes jusqu’à ce qu’il n’y ait plus aucune activité dans les journaux. Redémarrez l’instance AEM.
 
-* Au cas où vous obtiendriez une **erreur service-unavailable** après l’installation du dernier Service Pack AEM Forms 6.5.15.0, [installez le fragment de servlet et le bundle](/help/forms/using/aem-service-pack-installation-solution.md) pour corriger l’erreur.
+* Au cas où vous obtiendriez une **erreur service-unavailable** après l’installation du Service Pack AEM Forms 6.5.15.0 ou version ultérieure, [installation du fragment de servlet et du lot](/help/forms/using/aem-service-pack-installation-solution.md) pour corriger l’erreur.
