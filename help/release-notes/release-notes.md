@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
+source-git-commit: 7f152c3b7b80c78bb73b45e83cc566e9bbb0c393
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3494'
 ht-degree: 31%
 
 ---
@@ -54,7 +54,7 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * **Prise en charge de Adobe Acrobat Sign pour les administrations avec AEM Forms**: Autoriser une intégration sécurisée et conforme d’AEM Forms à Adobe Sign for Government (conforme à la norme FedRAMP).
 * **Activation de l’intégration de Salesforce avec AEM Forms pour l’échange de données**: Configurez l’intégration entre AEM forms et l’application Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0. Cela permet une authentification et une autorisation sécurisées et directes de l’application et une communication transparente sans intervention de l’utilisateur.
 * **Optimisation et fonctionnalité améliorée du moteur de workflow**: Augmentez les performances des moteurs de workflow en réduisant le nombre d’instances de workflow. En complément de `COMPLETED` et `RUNNING` valeurs d’état, le workflow prend également en charge trois nouvelles valeurs d’état : `ABORTED`, `SUSPENDED`, et `FAILED`.
-* **Prise en charge de la taille du papier pour la sortie ZPL**: Dans AEM Forms Designer, XMLFM génère une sortie ZPL avec des formats de papier différents, tels que Lettre, A4 et A5, pour les modèles basés sur XDP.
+
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -139,6 +139,7 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * Lorsqu’un utilisateur clique sur la variable `Configure` pour l’option `Form Container` , le navigateur ne répond plus (FORMS-7605).
 * Lorsqu’un utilisateur effectue la mise à jour vers le Service Pack AEM Forms 6.5.16.0 et tente de modifier la variable `LicenseType` to `Production`, les modifications ne sont pas reflétées. (FORMS-7594)
 * Lorsqu’un utilisateur tente d’appeler un processus LCA avec un PDF qui comprend la variable `Chinese Full Width Characters`, un problème se produit avec la variable `ValidateForm` processus. (FORMS-7464)
+* Dans AEM Forms Designer, XMLFM génère une sortie ZPL avec des formats de papier différents, tels que Lettre, A4 et A5, pour les modèles basés sur XDP.(FORMS-7898)
 
 ## Intégrations{#integrations-6517}
 
