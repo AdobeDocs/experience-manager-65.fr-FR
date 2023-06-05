@@ -527,7 +527,6 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
    >* File d’attente d’expiration du workflow Granite
-
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
@@ -560,7 +559,6 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
    >* Configuration de la file d’attente des tâches Apache Sling
    >* Gestionnaire de tâches de processus externe du workflow Adobe Granite
    >* File d’attente d’expiration du workflow Granite
-
    >
    >Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
