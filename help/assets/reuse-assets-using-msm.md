@@ -7,10 +7,10 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 76%
+source-wordcount: '3288'
+ht-degree: 75%
 
 ---
 
@@ -287,22 +287,6 @@ Si un dossier de Live Copy comporte plusieurs ressources, il peut être fastidie
    ![Mettez facilement à jour de nombreuses ressources dans les dossiers de Live Copy depuis la console Aperçu de la Live Copy](assets/livecopyconsole_update_many_assets.png)
 
    *Figure : Mettez facilement à jour de nombreuses ressources dans les dossiers de Live Copy depuis la console [!UICONTROL Aperçu de la Live Copy].*
-
-## Extension de MSM pour [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] permet d’étendre la fonctionnalité à l’aide des API Java MSM. Pour [!DNL Assets], l’extension fonctionne exactement de la même manière qu’avec MSM pour [!DNL Sites]. Pour plus d’informations, consultez [Extension de MSM](/help/sites-developing/extending-msm.md) et les sections suivantes pour en savoir plus sur des tâches spécifiques :
-
-* [Présentation des API](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Création d’une action de synchronisation](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Création d’une configuration de déploiement personnalisée](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Création et utilisation d’une classe LiveActionFactory simple](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* Le plan directeur dans MSM pour [!DNL Sites] est appelé Source Live Copy dans MSM pour [!DNL Assets].
->* La suppression de l’étape des chapitres dans l’assistant de création de site n’est pas prise en charge dans MSM pour [!DNL Assets].
->* La configuration des verrous MSM sur les propriétés de la page (IU tactile) n’est pas prise en charge dans MSM pour [!DNL Assets].
-
 
 ## Impact des tâches de gestion des ressources sur les Live Copies {#manage-assets}
 
