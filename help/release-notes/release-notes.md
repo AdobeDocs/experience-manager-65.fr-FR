@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 9bf19cd21db185229d565d684dbac9e44f236532
+source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
 workflow-type: tm+mt
-source-wordcount: '3586'
+source-wordcount: '3567'
 ht-degree: 30%
 
 ---
@@ -104,9 +104,8 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 
 ## [!DNL Forms]{#forms-6517}
 
-* Lorsqu’un utilisateur effectue une mise à niveau vers le Service Pack Experience Manager 6.5.16.0, le fichier joint n’est pas récupéré correctement. (FORMS-8906)
-* Après la mise à jour vers le Service Pack Experience Manager 6.5.15.0, les formulaires HTML5 ne fonctionnent pas ou ne se chargent pas correctement dans le navigateur Edge avec le mode de compatibilité IE. (FORMS-8526, FORMS-8523)
-* Lorsqu’un utilisateur applique le Service Pack Experience Manager 6.5.16.0, l’éditeur de règles ne s’ouvre pas. (FORMS-8290)
+* Après la mise à jour vers AEM Service Pack 6.5.15.0, les formulaires HTML5 ne fonctionnent pas ou ne se chargent pas correctement dans le navigateur Edge avec le mode de compatibilité IE. (FORMS-8526, FORMS-8523)
+* Lorsqu’un utilisateur applique AEM Service Pack 6.5.16.0, l’éditeur de règles ne s’ouvre pas. (FORMS-8290)
 * Lorsque la validation du nombre maximal de chiffres est appliquée à un composant de zone numérique, elle échoue. (FORMS-7938)
 * Lors de la création d’instructions de communication interactives, le composant de graphique dans le PDF n’est pas généré correctement. (FORMS-7827, FORMS-8297)
 * Le nettoyage de la mémoire Java™ ne peut pas effacer l’ancien tas de génération sur un serveur OSGi Experience Manager Forms. (FORMS-8207)
