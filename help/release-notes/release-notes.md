@@ -3,9 +3,9 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
+source-git-commit: 36edc2507d9acd7d5f94e433a654ccc1647bb58a
 workflow-type: tm+mt
-source-wordcount: '3567'
+source-wordcount: '3568'
 ht-degree: 30%
 
 ---
@@ -187,7 +187,7 @@ Nouveaux dossiers de `cache` et `diff-cache` sont automatiquement créés et vou
 * Les copies de langue d’une page n’étaient pas mises à jour comme prévu. (SITES-11191)
 * Ouverture d’un appel de pages hors campagne `targeteditor.html` inutilement. Supprimez le `targeteditor` appelez lorsque cela n’est pas nécessaire. (SITES-12469)
 * Les Live Copies ne peuvent pas être créées pour les pages avec des annotations. (SITES-12154)
-* Le déploiement des pages fonctionne sur Experience Manager 6.5.16. (SITES-12008)
+* Le déploiement des pages ne fonctionne pas sur Experience Manager 6.5.16. (SITES-12008)
 * Mémoire insuffisante; activité de nettoyage de la mémoire élevée en raison de `NotificationManagerImpl`. `NotificationManager` mise à niveau du lot vers Experience Manager 6.5. (SITES-11440)
 * Correction des tests WCM IT qui bloquaient le service pack 17. (SITES-13089)
 * La récupération des références Sites échoue sur le servlet. (SITES-10901)
