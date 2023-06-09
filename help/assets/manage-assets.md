@@ -7,10 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
+source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
 workflow-type: tm+mt
-source-wordcount: '9993'
-ht-degree: 80%
+source-wordcount: '10068'
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,6 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 >
 >* Le partage d’un dossier [!DNL Assets] du type `sling:OrderedFolder` n’est pas pris en charge lors du partage vers Experience Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
 >* [!DNL Experience Manager] n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites.
-
 
 1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier. Dans le menu, cliquez sur **[!UICONTROL Créer]**. Sélectionnez **[!UICONTROL Nouveau dossier]**.
 1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer la valeur par défaut et spécifier un autre nom de dossier.
@@ -58,6 +57,12 @@ Vous pouvez charger différents types de ressource (dont des images, des fichier
 >[!NOTE]
 >
 >Dans Dynamic Media en mode Scene7, la taille de fichier de chargement de ressource par défaut est de 2 Go ou moins. Pour configurer le chargement de ressources dont la taille est supérieure à 2 Go (jusque 15 Go), consultez la section [(Facultatif) Configuration de Dynamic Media en mode Scene7 pour le chargement de ressources d’une taille supérieure à 2 Go](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+
+>[!IMPORTANT]
+>
+>Les ressources que vous chargez dans Experience Manager dont le nom de fichier est supérieur à 100 caractères ont un nom raccourci lorsqu’elles sont utilisées dans Dynamic Media.
+>
+>Les 100 premiers caractères du nom de fichier sont utilisés tels quels ; les caractères restants sont remplacés par une chaîne alphanumérique. Cette méthode de changement de nom garantit un nom unique lorsque la ressource est utilisée dans Dynamic Media. Il est également prévu pour s’adapter à la longueur maximale de nom de fichier de ressource autorisée dans Dynamic Media.
 
 Vous pouvez choisir de charger des ressources dans des dossiers auxquels ou sans profil de traitement est affecté.
 
@@ -104,7 +109,6 @@ Pour configurer la tâche de nettoyage pour les tâches de chargement de blocs n
 >* Le chargement des blocs est activé pour les fichiers dont la taille risque de provoquer l’expiration des informations d’identification lorsque le chargement est en cours.
 >
 >* Chaque bloc se termine avant l’expiration des informations d’identification.
-
 
 Si vous chargez une ressource portant le même nom qu’une ressource déjà disponible à l’emplacement où vous chargez la ressource, un message d’avertissement s’affiche.
 
@@ -198,22 +202,22 @@ Pour annuler une tâche de chargement en cours, cliquez sur **[!UICONTROL Annule
 
 | Option de chargement | Sous-option | Description |
 |---|---|---|
-| Nom de la tâche |  | Le nom par défaut qui est prérempli dans le champ de texte comprend la portion du nom saisie par l’utilisateur, ainsi que l’horodatage. Vous pouvez utiliser le nom par défaut ou indiquer un nom personnalisé pour cette tâche de chargement. <br>Cette tâche, ainsi que les autres tâches de chargement et de publication, sont enregistrées sur la page Tâches, où vous pouvez vérifier leur statut. |
-| Publier après le chargement |  | Publie automatiquement les ressources que vous chargez. |
-| Remplacer dans un dossier, même nom de ressource de base, quelle que soit l’extension |  | Sélectionnez cette option si vous souhaitez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut être différent, en fonction des paramètres définis dans **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Téléchargement vers l’application]** > **[!UICONTROL Remplacer les images]**. |
-| Décompresser les fichiers Zip ou Tar lors du téléchargement |  |  |
-| Options de tâche |  | Cliquez sur **[!UICONTROL Options de tâche]** afin d’ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche] et de sélectionner des options qui affectent l’ensemble de la tâche de chargement. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour charger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Sélectionnez l’option **[!UICONTROL Options de chargement par défaut]** pour ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche]. |
-|  | Quand | Sélectionnez Unique ou Récurrente. Pour définir une tâche récurrente, sélectionnez une option Répéter (Quotidienne, Hebdomadaire, Mensuelle ou Personnalisée) pour indiquer à quel moment la tâche de transfert FTP doit se répéter. Spécifiez ensuite les options de planification selon vos besoins. |
-|  | Inclure les sous-dossiers | Transférez tous les sous-dossiers dans le dossier que vous avez l’intention de charger. Les noms du dossier et des sous-dossiers chargés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
-|  | Options de recadrage | Pour recadrer manuellement les bords d’une image, sélectionnez le menu Recadrer, puis choisissez Manuel. Saisissez ensuite le nombre de pixels à recadrer d’un côté ou de chaque côté de l’image. La quantité de recadrage de l’image dépend du paramètre ppi (pixels par pouce) défini dans le fichier image. Par exemple, si l’image affiche 150 ppp et que vous entrez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** : sélectionnez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**Transparence** : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour un rognage en fonction de la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Ces options de recadrage sont non destructives. |
-|  | Options de profil colorimétrique | Choisissez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la diffusion :<ul><li>Conservation des couleurs par défaut : Conserve les couleurs de l’image source chaque fois que les images contiennent des informations sur l’espace colorimétrique ; il n’existe aucune conversion de couleur. Presque toutes les images d’aujourd’hui ont déjà un profil colorimétrique approprié incorporé. Cependant, si une image source CMJN ne contient pas de profil colorimétrique incorporé, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage des images sur les pages web.</li><li>Conserver l’espace colorimétrique d’origine : Conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion de couleurs est effectuée à l’aide des profils colorimétriques par défaut configurés dans les paramètres de publication. Les profils de couleurs peuvent ne pas correspondre à la couleur des fichiers créés avec cette option. Par conséquent, nous vous recommandons d’utiliser l’option Conservation des couleurs par défaut.</li><li>Personnaliser de > à<br> Ouvre les menus pour vous permettre de choisir un espace colorimétrique Convertir à partir de et Convertir en . Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
-|  | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Consultez la section [Définition des options de modification d’image au moment du chargement](#setting-image-editing-options-at-upload). |
-|  | Options Postscript | Vous pouvez pixelliser des fichiers PostScript®, recadrer des fichiers, conserver des arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la méthode d’attribution des noms de calque, extraire du texte et indiquer le mode d’ancrage des images dans les modèles.<br> Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Consultez la section [Définition des options de chargement Photoshop](#setting-photoshop-upload-options). |
-|  | Options de PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace colorimétrique.<br>Les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Consultez la section [Définition des options de chargement PDF](#setting-pdf-upload-options).<br>**Remarque** : le nombre maximal de pages de PDF acceptable pour une extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md). |
-|  | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
-|  | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un paramètre vidéo prédéfini.<br> Consultez la section [Définition des options de chargement eVideo](#setting-evideo-upload-options). |
-|  | Paramètres prédéfinis de lot | Pour créer une visionneuse d’images ou une visionneuse à 360° à partir des fichiers chargés, cliquez sur la colonne Principale du paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Vous créez les paramètres prédéfinis sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Consultez la section [Définition de paramètres prédéfinis de lot lors du chargement](#setting-batch-set-presets-at-upload). |
+| Nom de la tâche | | Le nom par défaut qui est prérempli dans le champ de texte comprend la portion du nom saisie par l’utilisateur, ainsi que l’horodatage. Vous pouvez utiliser le nom par défaut ou indiquer un nom personnalisé pour cette tâche de chargement. <br>Cette tâche, ainsi que les autres tâches de chargement et de publication, sont enregistrées sur la page Tâches, où vous pouvez vérifier leur statut. |
+| Publier après le chargement | | Publie automatiquement les ressources que vous chargez. |
+| Remplacer dans un dossier, même nom de ressource de base, quelle que soit l’extension | | Sélectionnez cette option si vous souhaitez que les fichiers que vous téléchargez remplacent les fichiers existants portant le même nom. Le nom de cette option peut être différent, en fonction des paramètres définis dans **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]** > **[!UICONTROL Téléchargement vers l’application]** > **[!UICONTROL Remplacer les images]**. |
+| Décompresser les fichiers Zip ou Tar lors du téléchargement | | |
+| Options de tâche | | Cliquez sur **[!UICONTROL Options de tâche]** afin d’ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche] et de sélectionner des options qui affectent l’ensemble de la tâche de chargement. Ces options sont identiques pour tous les types de fichiers.<br>Vous pouvez choisir les options par défaut pour charger les fichiers en commençant sur la page Paramètres généraux de l’application. Pour ouvrir cette page, sélectionnez **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application.]**. Sélectionnez l’option **[!UICONTROL Options de chargement par défaut]** pour ouvrir la boîte de dialogue [!UICONTROL Charger les options de la tâche]. |
+| | Quand | Sélectionnez Unique ou Récurrente. Pour définir une tâche récurrente, sélectionnez une option Répéter (Quotidienne, Hebdomadaire, Mensuelle ou Personnalisée) pour indiquer à quel moment la tâche de transfert FTP doit se répéter. Spécifiez ensuite les options de planification selon vos besoins. |
+| | Inclure les sous-dossiers | Transférez tous les sous-dossiers dans le dossier que vous avez l’intention de charger. Les noms du dossier et des sous-dossiers chargés sont saisis automatiquement dans [!DNL Experience Manager Assets]. |
+| | Options de recadrage | Pour recadrer manuellement les bords d’une image, sélectionnez le menu Recadrer, puis choisissez Manuel. Saisissez ensuite le nombre de pixels à recadrer d’un côté ou de chaque côté de l’image. La quantité de recadrage de l’image dépend du paramètre ppi (pixels par pouce) défini dans le fichier image. Par exemple, si l’image affiche 150 ppp et que vous entrez 75 dans les zones de texte Haut, Droite, Bas et Gauche, un demi-pouce est rogné de chaque côté.<br> Pour supprimer automatiquement d’une image les pixels représentant des espaces blancs, sélectionnez le menu Recadrer, cliquez sur Manuel, puis saisissez les mesures en pixels dans les champs Haut, Droite, Bas et Gauche pour recadrer au niveau des bords. Vous pouvez également sélectionner Rognage dans le menu Recadrer et choisir les options suivantes :<br> **Rogner en fonction de** <ul><li>**Couleur** : sélectionnez l’option Couleur. Sélectionnez ensuite le menu Coin, puis choisissez l’angle de l’image présentant la couleur qui correspond le mieux à l’espace blanc à rogner.</li><li>**Transparence** : sélectionnez l’option Transparence.<br> **Tolérance** : faites glisser le curseur pour définir une tolérance de 0 à 1. Pour un rognage en fonction de la couleur, spécifiez 0 pour rogner les pixels uniquement s’ils correspondent exactement à la couleur sélectionnée dans le coin de l’image. Les valeurs qui se rapprochent de 1 autorisent une plus grande différence de couleurs.<br>Pour l’option de rognage en fonction de la transparence, indiquez 0 pour rogner les pixels seulement s’ils sont transparents. Les valeurs plus proches de 1 permettent une plus grande transparence.</li></ul><br>Ces options de recadrage sont non destructives. |
+| | Options de profil colorimétrique | Choisissez une conversion de couleurs lorsque vous créez des fichiers optimisés utilisés pour la diffusion :<ul><li>Conservation des couleurs par défaut : Conserve les couleurs de l’image source chaque fois que les images contiennent des informations sur l’espace colorimétrique ; il n’existe aucune conversion de couleur. Presque toutes les images d’aujourd’hui ont déjà un profil colorimétrique approprié incorporé. Cependant, si une image source CMJN ne contient pas de profil colorimétrique incorporé, les couleurs sont converties dans l’espace colorimétrique sRVB (Rouge Vert Bleu standard). sRVB est l’espace colorimétrique recommandé pour l’affichage des images sur les pages web.</li><li>Conserver l’espace colorimétrique d’origine : Conserve les couleurs d’origine sans conversion des couleurs au niveau du point. Pour les images sans profil colorimétrique incorporé, toute conversion de couleurs est effectuée à l’aide des profils colorimétriques par défaut configurés dans les paramètres de publication. Les profils de couleurs peuvent ne pas correspondre à la couleur des fichiers créés avec cette option. Par conséquent, nous vous recommandons d’utiliser l’option Conservation des couleurs par défaut.</li><li>Personnaliser de > à<br> Ouvre les menus pour vous permettre de choisir un espace colorimétrique Convertir à partir de et Convertir en . Cette option avancée remplace toutes les informations de couleur incorporées dans le fichier source. Sélectionnez cette option uniquement lorsque toutes les images que vous envoyez contiennent des données de profil de couleurs incorrectes ou manquantes.</li></ul> |
+| | Options d’édition d’images | Vous pouvez conserver les masques d’écrêtage dans les images et choisir un profil de couleurs.<br> Consultez la section [Définition des options de modification d’image au moment du chargement](#setting-image-editing-options-at-upload). |
+| | Options Postscript | Vous pouvez pixelliser des fichiers PostScript®, recadrer des fichiers, conserver des arrière-plans transparents, choisir une résolution et choisir un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Options Photoshop | Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, conserver les calques, définir la méthode d’attribution des noms de calque, extraire du texte et indiquer le mode d’ancrage des images dans les modèles.<br> Les modèles ne sont pas pris en charge dans [!DNL Experience Manager].<br> Consultez la section [Définition des options de chargement Photoshop](#setting-photoshop-upload-options). |
+| | Options de PDF | Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, générer automatiquement un catalogue électronique, définir la résolution et choisir un espace colorimétrique.<br>Les catalogues électroniques ne sont pas pris en charge dans [!DNL Experience Manager]. <br> Consultez la section [Définition des options de chargement PDF](#setting-pdf-upload-options).<br>**Remarque** : le nombre maximal de pages de PDF acceptable pour une extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite passera à 100 pages (pour tous les PDF). Consultez également la section [Limites de Dynamic Media](/help/assets/limitations.md). |
+| | Options Illustrator | Vous pouvez pixelliser les fichiers Adobe Illustrator®, conserver l’arrière-plan transparent, choisir une résolution et sélectionner un espace colorimétrique.<br> Consultez la section [Définition des options de chargement PostScript et Illustrator](#setting-postscript-and-illustrator-upload-options). |
+| | Options eVideo | Vous pouvez transcoder un fichier vidéo en sélectionnant un paramètre vidéo prédéfini.<br> Consultez la section [Définition des options de chargement eVideo](#setting-evideo-upload-options). |
+| | Paramètres prédéfinis de lot | Pour créer une visionneuse d’images ou une visionneuse à 360° à partir des fichiers chargés, cliquez sur la colonne Principale du paramètre prédéfini à utiliser. Vous pouvez sélectionner plusieurs paramètres prédéfinis. Vous créez les paramètres prédéfinis sur la page Configuration de l’application/Paramètres prédéfinis d’ensemble par lot de Dynamic Media Classic.<br>Pour en savoir plus sur la création de paramètres prédéfinis d’ensemble par lot, consultez la section [Configuration de paramètres prédéfinis d’ensemble par lot pour générer automatiquement des visionneuses d’images et des visionneuses à 360°](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Consultez la section [Définition de paramètres prédéfinis de lot lors du chargement](#setting-batch-set-presets-at-upload). |
 
 #### Définition d’options pour les modifications d’image lors du chargement {#setting-image-editing-options-at-upload}
 
@@ -247,14 +251,14 @@ Lorsque vous chargez des fichiers image PostScript (EPS) ou Illustrator (AI), vo
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Traitement |  | Choisir **[!UICONTROL Pixelliser]** pour convertir des graphiques vectoriels dans le fichier au format bitmap. |
-| Conserver l’arrière-plan transparent dans l’image rendue |  | Maintenez la transparence en arrière-plan du fichier. |
-| Résolution |  | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
-| Espace colorimétrique |  | Dans le menu Espace colorimétrique, sélectionnez l’une des options d’espace colorimétrique suivantes : |
-|  | Détecter automatiquement | Conserve l’espace colorimétrique du fichier. |
-|  | Forcer en RVB | Applique l’espace colorimétrique RVB. |
-|  | Forcer en CMJN | Applique l’espace colorimétrique CMJN. |
-|  | Forcer en Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
+| Traitement | | Choisir **[!UICONTROL Pixelliser]** pour convertir des graphiques vectoriels dans le fichier au format bitmap. |
+| Conserver l’arrière-plan transparent dans l’image rendue | | Maintenez la transparence en arrière-plan du fichier. |
+| Résolution | | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier. |
+| Espace colorimétrique | | Dans le menu Espace colorimétrique, sélectionnez l’une des options d’espace colorimétrique suivantes : |
+| | Détecter automatiquement | Conserve l’espace colorimétrique du fichier. |
+| | Forcer en RVB | Applique l’espace colorimétrique RVB. |
+| | Forcer en CMJN | Applique l’espace colorimétrique CMJN. |
+| | Forcer en Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
 #### Définition des options de chargement Photoshop {#setting-photoshop-upload-options}
 
@@ -270,15 +274,15 @@ Utilisez les [!UICONTROL options de recadrage] et de [!UICONTROL profil de coule
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Conserver les calques |  | Pixellise les calques du PSD, le cas échéant, dans des ressources individuelles. Les calques de ces fichiers restent associés au fichier PSD. Vous pouvez les afficher en ouvrant le fichier de PSD dans la vue Détails et en sélectionnant le panneau Calque. |
-| Créer un modèle |  | Crée un modèle à partir des calques du fichier PSD. |
-| Extraction de texte |  | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
-| Étendre les calques à la taille de l’arrière-plan |  | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
-| Nom de calque |  | Les calques du fichier PSD sont téléchargés comme des images distinctes. |
-|  | Nom de calque | Nomme les images en fonction de leur nom de calque dans le fichier de PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD. Ils ne sont pas nommés en fonction de leurs noms de calque par défaut. |
-|  | Photoshop et numéro de calque | Nomme les images en fonction de leur numéro de calque dans le fichier de PSD, en ignorant les noms de calque d’origine. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque annexé. Par exemple, le deuxième calque d’un fichier appelé Pub printemps.psd est appelé Pub printemps_2 même s’il portait un nom autre que celui par défaut dans Photoshop. |
-|  | Photoshop et nom de calque | Nomme les images après le fichier de PSD suivi du nom ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque appelé Balise de prix dans un fichier de PSD nommé SpringAd est nommé Balise de prix de publicité Printemps. Un calque portant le nom par défaut Calque 2 est appelé Pub printemps_2. |
-| Ancrer |  | Indiquez le mode d’ancrage des images dans les modèles générés à partir de la composition superposée produite à partir du fichier de PSD. Par défaut, l’ancre est le centre. Une ancre centrale permet aux images de remplacement de remplir au mieux le même espace, quel que soit le rapport L/H de l’image de remplacement. Les images avec un aspect différent qui remplacent cette image, lors du référencement du modèle et de l’utilisation de la substitution des paramètres, occupent effectivement le même espace. Définissez un autre paramètre si votre application nécessite que les images de remplacement remplissent l’espace alloué dans le modèle. |
+| Conserver les calques | | Pixellise les calques du PSD, le cas échéant, dans des ressources individuelles. Les calques de ces fichiers restent associés au fichier PSD. Vous pouvez les afficher en ouvrant le fichier de PSD dans la vue Détails et en sélectionnant le panneau Calque. |
+| Créer un modèle | | Crée un modèle à partir des calques du fichier PSD. |
+| Extraction de texte | | Extrait le texte pour permettre aux utilisateurs de rechercher une chaîne de caractères dans une visionneuse. |
+| Étendre les calques à la taille de l’arrière-plan | | Étend la taille des calques d’image pixellisés à celle du calque en arrière-plan. |
+| Nom de calque | | Les calques du fichier PSD sont téléchargés comme des images distinctes. |
+| | Nom de calque | Nomme les images en fonction de leur nom de calque dans le fichier de PSD. Par exemple, un calque nommé Étiquette de prix dans le fichier PSD d’origine devient une image nommée Étiquette de prix. Cependant, si les calques du fichier PSD portent les noms de calques Photoshop par défaut (Arrière-plan, Calque 1, Calque 2, etc.), les images sont nommées d’après leur numéro de calque dans le fichier PSD. Ils ne sont pas nommés en fonction de leurs noms de calque par défaut. |
+| | Photoshop et numéro de calque | Nomme les images en fonction de leur numéro de calque dans le fichier de PSD, en ignorant les noms de calque d’origine. Le nom des images est composé du nom de fichier Photoshop et d’un numéro de calque annexé. Par exemple, le deuxième calque d’un fichier appelé Pub printemps.psd est appelé Pub printemps_2 même s’il portait un nom autre que celui par défaut dans Photoshop. |
+| | Photoshop et nom de calque | Nomme les images après le fichier de PSD suivi du nom ou du numéro de calque. Le numéro de calque est utilisé si le nom du calque dans le fichier PSD est un nom de calque Photoshop par défaut. Par exemple, un calque appelé Balise de prix dans un fichier de PSD nommé SpringAd est nommé Balise de prix de publicité Printemps. Un calque portant le nom par défaut Calque 2 est appelé Pub printemps_2. |
+| Ancrer | | Indiquez le mode d’ancrage des images dans les modèles générés à partir de la composition superposée produite à partir du fichier de PSD. Par défaut, l’ancre est le centre. Une ancre centrale permet aux images de remplacement de remplir au mieux le même espace, quel que soit le rapport L/H de l’image de remplacement. Les images avec un aspect différent qui remplacent cette image, lors du référencement du modèle et de l’utilisation de la substitution des paramètres, occupent effectivement le même espace. Définissez un autre paramètre si votre application nécessite que les images de remplacement remplissent l’espace alloué dans le modèle. |
 
 #### Définition des options de chargement de PDF {#setting-pdf-upload-options}
 
@@ -296,14 +300,14 @@ Faites votre choix parmi les options suivantes :
 |---|---|---|
 | Traitement | Pixelliser | (Par défaut) Pixellise les pages du fichier PDF et convertit les graphiques vectoriels en images bitmap. Choisissez cette option si vous souhaitez créer un catalogue électronique. |
 | Extraire | Mots de recherche | Extrait les mots du fichier du PDF afin que le fichier puisse être recherché par mot-clé dans une visionneuse de catalogue électronique. |
-|  | Liens | Extrait les liens des fichiers du PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique. |
-| Génération automatique d’un catalogue électronique à partir de plusieurs PDF de page |  | Crée automatiquement un catalogue électronique à partir du fichier du PDF. Le catalogue électronique est nommé d’après le fichier de PDF que vous avez chargé. (Cette option n’est disponible que si vous pixellisez le fichier du PDF au fur et à mesure de son chargement.) |
-| Résolution |  | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier du PDF. La valeur par défaut est de 150. |
-| Espace colorimétrique |  | Sélectionnez le menu Espace colorimétrique et choisissez un espace colorimétrique pour le fichier de PDF. La plupart des fichiers de PDF comportent des images en couleur RGB et CMJN. L’espace colorimétrique du RGB est préférable pour l’affichage en ligne. |
-|  | Détecter automatiquement | Conserve l’espace colorimétrique du fichier de PDF. |
-|  | Forcer comme RVB | Applique l’espace colorimétrique RVB. |
-|  | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
-|  | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
+| | Liens | Extrait les liens des fichiers du PDF et les convertit en zones cliquables utilisées dans une visionneuse de catalogue électronique. |
+| Génération automatique d’un catalogue électronique à partir de plusieurs PDF de page | | Crée automatiquement un catalogue électronique à partir du fichier du PDF. Le catalogue électronique est nommé d’après le fichier de PDF que vous avez chargé. (Cette option n’est disponible que si vous pixellisez le fichier du PDF au fur et à mesure de son chargement.) |
+| Résolution | | Détermine le paramètre de résolution. Ce paramètre détermine le nombre de pixels affichés par pouce dans le fichier du PDF. La valeur par défaut est de 150. |
+| Espace colorimétrique | | Sélectionnez le menu Espace colorimétrique et choisissez un espace colorimétrique pour le fichier de PDF. La plupart des fichiers de PDF comportent des images en couleur RGB et CMJN. L’espace colorimétrique du RGB est préférable pour l’affichage en ligne. |
+| | Détecter automatiquement | Conserve l’espace colorimétrique du fichier de PDF. |
+| | Forcer comme RVB | Applique l’espace colorimétrique RVB. |
+| | Forcer comme CMJN | Applique l’espace colorimétrique CMJN. |
+| | Forcer comme Niveaux de gris | Applique l’espace colorimétrique Niveaux de gris. |
 
 #### Définition des options de chargement eVideo {#setting-evideo-upload-options}
 
@@ -311,11 +315,11 @@ Pour transcoder un fichier vidéo en choisissant parmi divers paramètres vidéo
 
 | Option | Sous-option | Description |
 |---|---|---|
-| Vidéo adaptative |  | Paramètre prédéfini de codage unique qui fonctionne avec n’importe quelles proportions pour créer des vidéos à diffuser sur mobile, tablette et ordinateur de bureau. Les vidéos source chargées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver le format de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
+| Vidéo adaptative | | Paramètre prédéfini de codage unique qui fonctionne avec n’importe quelles proportions pour créer des vidéos à diffuser sur mobile, tablette et ordinateur de bureau. Les vidéos source chargées qui sont codées à l’aide de ce paramètre prédéfini sont définies avec une hauteur fixe. Toutefois, la largeur est automatiquement mise à l’échelle pour conserver le format de la vidéo. <br>Il est recommandé d’utiliser le codage de vidéo adaptative. |
 | Paramètres prédéfinis de codage unique | Tri des paramètres prédéfinis de codage | Sélectionnez **[!UICONTROL Nom]** ou **[!UICONTROL Taille]** si vous souhaitez trier les paramètres prédéfinis de codage répertoriés sous Bureau, Mobile et Tablette par leur nom ou leur taille de résolution. |
-|  | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo progressive ou en flux continu sur les ordinateurs de bureau. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
-|  | Mobile | Créez un fichier MP4 à diffuser sur les appareils mobiles iPhone ou Android™. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
-|  | Tablette | Créez un fichier MP4 à diffuser sur les tablettes iPad ou Android™. Sélectionnez une ou plusieurs proportions avec la résolution et le débit cible de votre choix. |
+| | Poste de travail | Créez un fichier MP4 pour diffuser une expérience vidéo progressive ou en flux continu sur les ordinateurs de bureau. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
+| | Mobile | Créez un fichier MP4 à diffuser sur les appareils mobiles iPhone ou Android™. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
+| | Tablette | Créez un fichier MP4 à diffuser sur les tablettes iPad ou Android™. Sélectionnez un ou plusieurs proportions avec la taille de résolution et le débit de données cible de votre choix. |
 
 #### Définition de paramètres prédéfinis d’ensemble par lot lors du chargement {#setting-batch-set-presets-at-upload}
 
@@ -382,7 +386,6 @@ Pour prévisualiser une ressource à l’aide du clavier, procédez comme suit 
 >* [Aperçu de ressources Dynamic Media](/help/assets/previewing-assets.md).
 >* [Affichage des sous-ressources](managing-linked-subassets.md#viewing-subassets).
 
-
 ## Modification des propriétés et des métadonnées {#editing-properties}
 
 1. Accédez à l’emplacement de la ressource dont vous souhaitez modifier les métadonnées.
@@ -403,7 +406,7 @@ Pour prévisualiser une ressource à l’aide du clavier, procédez comme suit 
 
    *Image : utilisez le sélecteur de date pour planifier l’activation de la ressource.*
 
-1. Vous devez vérifier **[!UICONTROL Heure d’activation/de désactivation atteinte]** si vous souhaitez mettre à jour les déclencheurs de l’agent de réplication dans les propriétés de métadonnées.
+1. Vérifier **[!UICONTROL Heure d’activation/de désactivation atteinte]** si vous souhaitez mettre à jour les déclencheurs de l’agent de réplication dans les propriétés de métadonnées.
    ![Paramètres d’agent](assets-dm/Agent-settings.png)
 
 1. Pour désactiver la ressource après une durée spécifique, choisissez la date/l’heure de désactivation du sélecteur de date en regard du champ **[!UICONTROL Heure de désactivation]**. La date de désactivation doit être postérieure à la date d’activation de la ressource. Après l’[!UICONTROL heure de désactivation], une ressource et ses rendus ne sont plus disponibles via l’interface web [!DNL Assets] ou via l’API HTTP.
@@ -482,11 +485,11 @@ Pour déplacer des ressources ou des dossiers :
    * Spécifiez le nom de la ressource après l’avoir déplacée. Ensuite, cliquez sur **[!UICONTROL Suivant]** pour continuer.
 
    * Cliquez sur **[!UICONTROL Annuler]** pour arrêter le processus.
+
    >[!NOTE]
    >
    >* Vous pouvez spécifier le même nom pour la ressource si aucune ressource portant ce nom n’existe au nouvel emplacement. Cependant, vous devez utiliser un nom différent si vous déplacez la ressource vers un emplacement où il existe une ressource portant le même nom. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
    >* Lors du changement de nom, le nom du fichier ne contient pas d’espace.
-
 
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner la destination]**, procédez comme suit :
 
@@ -557,7 +560,7 @@ Le déplacement de ressources par glisser-déposer n’ouvre pas l’assistant [
    >
    >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
-Pour plus d’informations sur la génération et l’affichage de sous-ressources, consultez la section [gestion des sous-ressources](managing-linked-subassets.md#generate-subassets).
+Pour plus d’informations sur la génération et l’affichage de sous-ressources, voir [Gestion des sous-ressources](managing-linked-subassets.md#generate-subassets).
 
 ## Suppression des ressources {#deleting-assets}
 
@@ -567,7 +570,7 @@ Pour résoudre ou supprimer les références entrantes provenant d’autres page
 
 Pour supprimer une ressource ou un dossier contenant une ressource, procédez comme suit :
 
-1. Accédez à l’emplacement de la ressource ou du dossier que vous souhaitez supprimer.
+1. Accédez à l’emplacement de la ressource ou du dossier à supprimer.
 
 1. Sélectionnez la ressource et cliquez sur l’option **[!UICONTROL Supprimer]** ![Option Supprimer](assets/do-not-localize/deleteoutline.png) de la barre d’outils.
 
@@ -576,11 +579,11 @@ Pour supprimer une ressource ou un dossier contenant une ressource, procédez co
    * Si la ressource ne comporte aucune référence, elle est supprimée.
 
    * Si la ressource comporte des références, un message d’erreur vous informe qu’**une ou plusieurs ressources sont référencées.** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
+
    >[!NOTE]
    >
    >* Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. De plus, désactivez l’option Forcer la suppression à l’aide d’un recouvrement afin de prévenir la suppression de ressources référencées et la conservation de liens rompus.
    >* Il est possible de supprimer un *dossier* contenant des fichiers de ressources extraits. Avant de supprimer un dossier, assurez-vous qu’aucune ressource numérique n’ait été extraite par les utilisateurs.
-
 
 >[!NOTE]
 >
@@ -863,12 +866,12 @@ Voici un exemple de configuration d[!DNL Experience Manager] en vue d’imprimer
 
 1. Téléchargez les polices Google Noto CJK à partir des liens ci-dessous et enregistrez-les dans le répertoire des polices configuré dans le service Font Manager.
 
-   * Police tout-en-un Super CJK : [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (pour les langues européennes) : [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Polices Noto pour une langue de votre choix : [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
+   * All In One Super CJK font : [https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
+   * Noto Sans (pour les langues européennes) : [https://fonts.google.com/noto](https://fonts.google.com/noto)
+   * Polices Noto pour une langue de votre choix : [https://fonts.google.com/noto](https://fonts.google.com/noto)
 
 1. Configurez le fichier PDF d’annotation en définissant le paramètre font-family sur `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Cette configuration est disponible par défaut et fonctionne pour toutes les langues européennes et CJK.
-1. Si la langue de votre choix est différente de celles mentionnées à l’étape 2, ajoutez une entrée appropriée (séparée par des virgules) à la famille de polices font-family par défaut.
+1. Si la langue de votre choix diffère des langues mentionnées à l’étape 2, ajoutez une entrée appropriée (séparée par des virgules) à la famille de polices par défaut.
 
 ## Création, gestion, prévisualisation et rétablissement des versions de ressources {#asset-versioning}
 
@@ -879,7 +882,7 @@ Vous pouvez créer des versions dans [!DNL Experience Manager] dans les scénari
 * Vous chargez une ressource dont le nom de fichier existe au même emplacement. Il peut s’agir d’une nouvelle ressource ou d’une version modifiée de la même ressource.
 * Vous modifiez une image dans [!DNL Experience Manager] et enregistrez les modifications.
 * Vous modifiez les métadonnées d’une ressource.
-* Vous utilisez l’appli de bureau [!DNL Experience Manager] pour extraire une ressource existante, la modifier et [charger vos modifications](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#edit-assets-upload-updated-assets).
+* Utilisation [!DNL Experience Manager] l’appli de bureau pour extraire une ressource existante, la modifier et [charger vos modifications](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#edit-assets-upload-updated-assets).
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
@@ -895,9 +898,9 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
    * Cliquez sur **[!UICONTROL Enregistrer comme version]** pour créer une version de la ressource. Vous pouvez éventuellement ajouter un libellé et un commentaire.
    * Cliquez sur **[!UICONTROL Créer]** pour créer une version.
 
-      ![Création d’une version de ressource à partir de la barre latérale](assets/create-new-version-from-timeline.png)
+     ![Création d’une version de ressource à partir de la barre latérale](assets/create-new-version-from-timeline.png)
 
-      *Image : création d’une version d’une ressource à partir de la barre latérale gauche [!UICONTROL Chronologie].*
+     *Image : création d’une version d’une ressource à partir de la barre latérale gauche [!UICONTROL Chronologie].*
 
 1. Pour afficher une version d’une ressource :
 
@@ -911,9 +914,9 @@ Vous pouvez également activer le contrôle de version automatique à l’aide d
    * Cliquez sur une version de la ressource. Vous pouvez éventuellement ajouter un libellé et un commentaire.
    * Cliquez sur **[!UICONTROL Revenir à cette version]**.
 
-      ![Sélectionner une version pour y revenir](assets/select_version.png)
+     ![Sélectionner une version pour y revenir](assets/select_version.png)
 
-      *Image : sélectionnez une version et revenez-y. Il devient la version actuelle qui est ensuite disponible pour les utilisateurs de la gestion des ressources numériques.*
+     *Image : sélectionnez une version et revenez-y. Il devient la version actuelle qui est ensuite disponible pour les utilisateurs de la gestion des ressources numériques.*
 
 1. Pour comparer deux versions d’une image, procédez comme suit :
    * Cliquez sur la version à comparer à la version actuelle.
@@ -934,7 +937,7 @@ Une collection est un ensemble ordonné de ressources. Utilisez des collections 
 * Une collection peut inclure des ressources provenant de différents emplacements, car elle ne contient que des références à ces ressources. Chaque collection conserve l’intégrité référentielle des ressources.
 * Vous pouvez partager des collections avec plusieurs utilisateurs avec différents niveaux de privilèges, y compris la modification, l’affichage, etc.
 
-Pour plus d’informations sur la gestion des collections, voir [Gestion des collections](/help/assets/manage-collections.md).
+Pour plus d’informations sur la gestion des collections, voir [Gestion des collections de ressources numériques](/help/assets/manage-collections.md).
 
 ## Masquer les ressources parvenues à expiration lors de l’affichage de ressources dans l’appli de bureau ou Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -954,4 +957,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html).
