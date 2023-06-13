@@ -1,7 +1,7 @@
 ---
 title: Réplication à l’aide du SSL mutuel
 seo-title: Replicating Using Mutual SSL
-description: Découvrez comment configurer AEM de sorte qu’un agent de réplication sur instance d’auteur utilise le SSL mutuel (MSSL) pour pouvoir se connecter à l’instance de publication. En utilisant le MSSL, l’agent de réplication et le service HTTP sur l’instance de publication utilisent des certificats pour s’authentifier.
+description: Découvrez comment configurer AEM afin qu’un agent de réplication sur l’instance d’auteur utilise le protocole SSL mutuel (MSSL) pour se connecter à l’instance de publication. À l’aide de MSSL, l’agent de réplication et le service HTTP sur l’instance de publication utilisent des certificats pour s’authentifier mutuellement.
 seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
@@ -11,57 +11,57 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1409'
-ht-degree: 100%
+source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 29%
 
 ---
 
 # Réplication à l’aide du SSL mutuel{#replicating-using-mutual-ssl}
 
-Configurez AEM de sorte qu’un agent de réplication sur les instances d’auteur utilise le SSL mutuel (MSSL) pour se connecter à l’instance de publication. En utilisant le MSSL, l’agent de réplication et le service HTTP sur l’instance de publication utilisent des certificats pour s’authentifier.
+Configurez l’AEM de sorte qu’un agent de réplication sur l’instance de création utilise le protocole SSL mutuel (MSSL) pour se connecter à l’instance de publication. À l’aide de MSSL, l’agent de réplication et le service HTTP sur l’instance de publication utilisent des certificats pour s’authentifier mutuellement.
 
-La configuration du MSSL pour la réplication implique la rélalisation des étapes suivantes :
+La configuration de MSSL pour la réplication implique les étapes suivantes :
 
-1. Créez ou obtenez des clés privées et des certificats pour les instances d’auteur et de publication.
+1. Créez ou obtenez des clés privées et des certificats pour les instances de création et de publication.
 1. Installez les clés et les certificats sur les instances d’auteur et de publication :
 
-   * Auteur : La clé privée de l’auteur et le certificat de publication. 
-   * Publication : La clé privée de publication et le certificat de l’auteur. Le certificat est associé au compte d’utilisateur authentifié avec l’agent de réplication.
+   * Auteur : Clé privée de l’auteur et certificat de publication.
+   * Publier : Clé privée de publication et certificat de l’auteur. Le certificat est associé au compte utilisateur authentifié avec l’agent de réplication.
 
 1. Configurez le service HTTP basé sur Jetty sur l’instance de publication.
-1. Configurez le transport et les propriétés SSL de l’agent de réplication.
+1. Configurez les propriétés transport et SSL de l’agent de réplication.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Vous devez déterminer quel compte d’utilisateur exécute la réplication. Lors de la configuration du certificat d’auteur sur l’instance de publication, le certificat est associé à ce compte d’utilisateur.
+Vous devez déterminer le compte utilisateur qui effectue la réplication. Lors de l’installation du certificat de création approuvé sur l’instance de publication, le certificat est associé à ce compte utilisateur.
 
-## Obtenir ou créer des informations d’identification pour MSSL {#obtaining-or-creating-credentials-for-mssl}
+## Obtention ou création d’informations d’identification pour MSSL {#obtaining-or-creating-credentials-for-mssl}
 
-Vous avez besoin d’une clé privée et d’un certificat public pour les instances d’auteur et de publication :
+Vous avez besoin d’une clé privée et d’un certificat public pour les instances de création et de publication :
 
-* Les clés privées doivent être au format pkcs#12 ou JKS. 
-* Les certificats doivent être au format pkcs#12 ou JKS. En outre, le certificat contenu dans le format « CER » peut également être ajouté à Granite Truststore.
+* Les clés privées doivent être contenues au format pkcs#12 ou JKS.
+* Les certificats doivent être au format pkcs#12 ou JKS. De plus, un certificat contenu au format &quot;CER&quot; peut également être ajouté à Granite Truststore.
 * Les certificats peuvent être auto-signés ou signés par une autorité de certification reconnue.
 
 ### Format JKS {#jks-format}
 
-Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore, et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
+Générez une clé privée et un certificat au format JKS. La clé privée est stockée dans un fichier KeyStore et le certificat est stocké dans un fichier TrustStore. Utilisez l’utilitaire [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) pour les créer.
 
 Effectuez les étapes suivantes en utilisant l’utilitaire Java `keytool` pour créer la clé privée et les informations d’identification :
 
-1. Générez une paire de clés publiques/privées dans un Keystore. 
-1. Créez ou obtenez le certificat :
+1. Générez une paire de clés privée-publique dans un KeyStore.
+1. Créez ou obtenez le certificat :
 
-   * Autosigné : exportez le certificat à partir de Keystore.
-   * Signé par l’autorité de certification : générez une demande de certificat et envoyez-la à une autorité de certification. 
+   * Auto-signé : Exportez le certificat à partir de KeyStore.
+   * Signé par une autorité de certification : Générez une demande de certificat et envoyez-la à l’autorité de certification.
 
-1. Importez le certificat dans un TrustStore. 
+1. Importez le certificat dans un TrustStore.
 
-Utilisez la procédure suivante pour créer une clé privée et un certificat autosigné pour les instances d’auteur et de publication. Utilisez des valeurs différentes pour les options de commande en conséquence.
+Utilisez la procédure suivante pour créer une clé privée et un certificat auto-signé pour les instances de création et de publication. Utilisez des valeurs différentes pour les options de commande en conséquence.
 
-1. Ouvrez une fenêtre ou un terminal de ligne de commande. Pour créer la paire de clés publiques/privées, saisissez la commande suivante, à l’aide des valeurs d’option dans le tableau ci-dessous :
+1. Ouvrez une fenêtre de ligne de commande ou un terminal. Pour créer la paire de clés public-privé, saisissez la commande suivante, à l’aide des valeurs d’option du tableau ci-dessous :
 
    ```shell
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
@@ -86,9 +86,9 @@ Utilisez la procédure suivante pour créer une clé privée et un certificat au
 
 ### Format pkcs#12 {#pkcs-format}
 
-Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL](https://www.openssl.org/) pour les générer. Utilisez la procédure suivante pour générer une clé privée et une demande de certificat. Pour obtenir le certificat, signez la requête avec votre clé privée (certificat autosigné) ou envoyez la requête à une autorité de certification. Générez ensuite une archive pkcs#12 contenant la clé privée et le certificat.
+Générez une clé privée et un certificat au format pkcs#12. Utilisation [openSSL](https://www.openssl.org/) pour les générer. Utilisez la procédure suivante pour générer une clé privée et une demande de certificat. Pour obtenir le certificat, signez la demande avec votre clé privée (certificat auto-signé) ou envoyez la demande à une autorité de certification. Ensuite, générez l’archive pkcs#12 contenant la clé privée et le certificat.
 
-1. Ouvrez une fenêtre ou un terminal de ligne de commande. Pour créer la clé privée, saisissez la commande suivante à l’aide des valeurs d’option du tableau ci-dessous :
+1. Ouvrez une fenêtre de ligne de commande ou un terminal. Pour créer la clé privée, saisissez la commande suivante, à l’aide des valeurs d’option du tableau ci-dessous :
 
    ```shell
    openssl genrsa -out keyname.key 2048
@@ -109,9 +109,9 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
    | -key | author.key | publish.key |
    | -out | author_request.csr | publish_request.csr |
 
-   Signez la demande de certificat ou envoyez-la à une autorité de certification.
+   Signez la demande de certificat ou envoyez la demande à une autorité de certification.
 
-1. Pour signer la demande de certificat, saisissez la commande suivante à l’aide des valeurs d’option du tableau ci-dessous :
+1. Pour signer la demande de certificat, saisissez la commande suivante à l’aide des valeurs d’option du tableau ci-dessous :
 
    ```shell
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
@@ -138,18 +138,18 @@ Générez une clé privée et un certificat au format pkcs#12. Utilisez [openSSL
 
 ## Installation de la clé privée et du TrustStore sur l’auteur {#install-the-private-key-and-truststore-on-author}
 
-Installez les éléments suivants sur l’instance d’auteur :
+Installez les éléments suivants sur l’instance de création :
 
-* La clé privée de l’instance d’auteur.
+* Clé privée de l’instance d’auteur.
 * Le certificat de l’instance de publication.
 
-Pour exécuter la procédure ci-après, vous devez être connecté en tant qu’administrateur de l’instance d’auteur.
+Pour effectuer la procédure suivante, vous devez être connecté en tant qu’administrateur de l’instance d’auteur.
 
-### Installation de la clé d’auteur privée {#install-the-author-private-key}
+### Installation de la clé privée de création {#install-the-author-private-key}
 
 1. Ouvrez la page de gestion des utilisateurs pour l’instance d’auteur. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Pour ouvrir les propriétés de votre compte utilisateur, appuyez ou cliquez sur votre nom d’utilisateur.
-1. Si le lien Créer le TrustStore apparaît dans la zone Paramètres de compte, cliquez dessus. Configurez un mot de passe, puis cliquez sur OK. 
+1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez ou appuyez sur votre nom d’utilisateur.
+1. Si le lien Créer le KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
@@ -158,60 +158,59 @@ Pour exécuter la procédure ci-après, vous devez être connecté en tant qu’
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Cliquez sur Sélectionner le fichier du magasin de clés, puis recherchez et sélectionnez le fichier author.keystore ou author.pfx si vous utilisez pkcs#12, puis cliquez sur Ouvrir.
-1. Saisissez le nom de l’alias et le mot de passe du magasin de clés. Saisissez le nom de l’alias et le mot de passe de la clé privée, puis cliquez sur Envoyer.
-1. Fermez la boîte de dialogue Gestion du Keystore. 
+1. Cliquez sur Sélectionner le fichier Key Store , puis recherchez et sélectionnez le fichier author.keystore ou author.pfx si vous utilisez pkcs#12, puis cliquez sur Ouvrir.
+1. Saisissez le nom de l’alias et le mot de passe du magasin de clés. Saisissez l’alias et le mot de passe de la clé privée, puis cliquez sur Envoyer.
+1. Fermez la boîte de dialogue Gestion du KeyStore.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 ### Installation du certificat de publication {#install-the-publish-certificate}
 
 1. Ouvrez la page de gestion des utilisateurs pour l’instance d’auteur. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Pour ouvrir les propriétés de votre compte utilisateur, appuyez ou cliquez sur votre nom d’utilisateur.
-1. Si le lien Créer le TrustStore apparaît dans la zone Paramètres de compte, cliquez dessus, créez un mot de passe pour TrustSore, puis cliquez sur OK.
-1. Dans la zone Paramètres de compte, cliquez sur Gérer le TrustStore. 
-1. Cliquez sur Ajouter le certificat à partir du fichier CER.
+1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez ou appuyez sur votre nom d’utilisateur.
+1. Si le lien Créer TrustStore apparaît dans la zone Paramètres du compte, cliquez sur le lien, créez un mot de passe pour TrustStore, puis cliquez sur OK.
+1. Dans la zone Paramètres du compte, cliquez sur Gérer TrustStore.
+1. Cliquez sur Ajouter un certificat à partir du fichier CER.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Effacez l’option Associer le certificat à l’utilisateur. Cliquez sur Sélectionner le fichier de certificat, sélectionnez publish.cer, puis cliquez sur Ouvrir.
-1. Fermez la boîte de dialogue Gestion du Trust Store. 
+1. Désactivez l’option Mapper le certificat à l’utilisateur . Cliquez sur Select Certificate File, sélectionnez publish.cer, puis cliquez sur Open.
+1. Fermez la boîte de dialogue Trust Store Management.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## Installation de la clé privée et TrustStore sur la publication {#install-private-key-and-truststore-on-publish}
+## Installation de la clé privée et du TrustStore lors de la publication {#install-private-key-and-truststore-on-publish}
 
-Installez les éléments suivants sur l’instance de publication :
+Installez les éléments suivants sur l’instance de publication :
 
-* La clé privée de l’instance de publication.
-* Le certificat de l’instance d’auteur. Associez le certificat à l’utilisateur qui est utilisé pour exécuter des demandes de réplication. 
+* Clé privée de l’instance de publication.
+* Certificat de l’instance d’auteur. Associez le certificat à l’utilisateur utilisé pour exécuter les demandes de réplication.
 
-Pour exécuter la procédure suivante, vous devez être connecté en tant qu’administrateur de l’intance de publication.
+Pour effectuer la procédure suivante, vous devez être connecté en tant qu’administrateur de l’instance de publication.
 
-### Installation de la clé de publication privée {#install-the-publish-private-key}
+### Installation de la clé privée de publication {#install-the-publish-private-key}
 
-1. Ouvrez la page de gestion des utilisateurs pour l’instance de publication. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Pour ouvrir les propriétés de votre compte utilisateur, appuyez ou cliquez sur votre nom d’utilisateur. 
-1. Si le lien Créer le TrustStore apparaît dans la zone Paramètres de compte, cliquez dessus. Configurez un mot de passe, puis cliquez sur OK. 
+1. Ouvrez la page Gestion des utilisateurs de l’instance de publication. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Pour ouvrir les propriétés de votre compte d’utilisateur, cliquez ou appuyez sur votre nom d’utilisateur.
+1. Si le lien Créer le KeyStore apparaît dans la zone Paramètres du compte, cliquez sur le lien. Configurez un mot de passe, puis cliquez sur OK.
 1. Dans la zone Paramètres du compte, cliquez sur Gérer le KeyStore.
 1. Cliquez sur Ajouter la clé privée à partir du fichier du magasin de clés.
-1. Cliquez sur Sélectionner le fichier du magasin de clés, puis recherchez et sélectionnez le fichier publish.keystore ou publish.pfx si vous utilisez pkcs#12, puis cliquez sur Ouvrir.
-1. Saisissez le nom de l’alias et le mot de passe du magasin de clés. Saisissez le nom de l’alias et le mot de passe de la clé privée, puis cliquez sur Envoyer.
-1. Fermez la boîte de dialogue Gestion du Keystore. 
+1. Cliquez sur Sélectionner le fichier Key Store , puis recherchez et sélectionnez le fichier publish.keystore ou publish.pfx si vous utilisez pkcs#12, puis cliquez sur Ouvrir.
+1. Saisissez le nom de l’alias et le mot de passe du magasin de clés. Saisissez l’alias et le mot de passe de la clé privée, puis cliquez sur Envoyer.
+1. Fermez la boîte de dialogue Gestion du KeyStore.
 
-### Installation du certificat d’auteur {#install-the-author-certificate}
+### Installation du certificat de création {#install-the-author-certificate}
 
-1. Ouvrez la page de gestion des utilisateurs pour l’instance de publication. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Recherchez le compte utilisateur que vous utilisez pour exécuter les demandes de réplication et cliquez ou appuyez sur le nom de l’utilisateur.
-1. Si le lien Créer le TrustStore apparaît dans la zone Paramètres de compte, cliquez dessus, créez un mot de passe pour TrustSore, puis cliquez sur OK.
-1. Dans la zone Paramètres de compte, cliquez sur Gérer le TrustStore. 
-1. Cliquez sur Ajouter le certificat à partir du fichier CER.
-1. Assurez-vous que l’option Associer le certificat à l’utilisateur est sélectionnée. Cliquez sur Sélectionner le fichier de certificat, sélectionnez author.cer sélectionné, puis cliquez sur Ouvrir. 
-1. Cliquez sur Envoyer, puis fermez le boîte de dialogue Gestion de TrustStore. 
+1. Ouvrez la page Gestion des utilisateurs de l’instance de publication. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
+1. Si le lien Créer TrustStore apparaît dans la zone Trust Store globale, cliquez sur le lien, créez un mot de passe pour TrustStore, puis cliquez sur OK.
+1. Dans la zone Paramètres du compte, cliquez sur Gérer TrustStore.
+1. Cliquez sur Ajouter un certificat à partir du fichier CER.
+1. Assurez-vous que l’option Associer le certificat à l’utilisateur est sélectionnée. Cliquez sur Select Certificate File, sélectionnez author.cer, puis cliquez sur Open.
+1. Cliquez sur Envoyer, puis fermez la boîte de dialogue Gestion de TrustStore.
 
-## Configuration du service HTTP sur la publication {#configure-the-http-service-on-publish}
+## Configuration du service HTTP lors de la publication {#configure-the-http-service-on-publish}
 
-Configurez les propriétés du service HTTP basé sur Apache Felix Jetty sur l’instance de publication de sorte qu’il utilise HTTPS lors de l’accès à Granite Keystore. Le PID du service est `org.apache.felix.http`.
+Configurez les propriétés du service HTTP Apache Felix Jetty sur l’instance de publication afin qu’il utilise HTTPS lors de l’accès au KeyStore Granite. Le PID du service est `org.apache.felix.http`.
 
 Le tableau suivant répertorie les propriétés OSGi que vous devez configurer si vous utilisez la console web. 
 
@@ -224,9 +223,9 @@ Le tableau suivant répertorie les propriétés OSGi que vous devez configurer s
 
 ## Configuration de l’agent de réplication sur l’auteur {#configure-the-replication-agent-on-author}
 
-Configurez l’agent de réplication sur l’instance d’auteur pour utiliser le protocole HTTPS lors de la connexion à l’instance de publication. Pour obtenir des informations complètes sur la configuration des agents de réplication, reportez-vous à la rubrique [Configuration de vos agents de réplication](/help/sites-deploying/replication.md#configuring-your-replication-agents).
+Configurez l’agent de réplication sur l’instance de création pour utiliser le protocole HTTPS lors de la connexion à l’instance de publication. Pour obtenir des informations complètes sur la configuration des agents de réplication, voir [Configuration de vos agents de réplication](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
-Pour activer MSSL, configurez les propriétés sur l’onglet Transport en fonction du tableau suivant :
+Pour activer MSSL, configurez les propriétés dans l’onglet Transport selon le tableau suivant :
 
 <table>
  <tbody>
