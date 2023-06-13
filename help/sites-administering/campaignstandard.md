@@ -1,8 +1,6 @@
 ---
-title: Intégrer à Adobe Campaign Standard
-seo-title: Integrating with Adobe Campaign Standard
-description: Découvrez comment intégrer AEM à Adobe Campaign Standard.
-seo-description: Learn how to integrate AEM with Adobe Campaign Standard.
+title: Intégration d’AEM 6.5 à Adobe Campaign Standard
+description: Découvrez comment intégrer AEM 6.5 à Adobe Campaign Standard.
 uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +8,23 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: a0062ffbdd6477eca494fea4142d271f3015599a
-workflow-type: ht
-source-wordcount: '1807'
-ht-degree: 100%
+source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+workflow-type: tm+mt
+source-wordcount: '1834'
+ht-degree: 96%
 
 ---
 
 
-# Intégrer à Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
+# Intégration d’AEM 6.5 à Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
 
-Grâce à l’intégration d’AEM à Adobe Campaign, vous pouvez gérer la diffusion d’e-mail, le contenu et les formulaires directement dans AEM. Des étapes de configuration dans Adobe Campaign Standard et dans AEM sont nécessaires pour permettre la communication bidirectionnelle entre les solutions.
+En intégrant AEM 6.5 à Adobe Campaign Standard (ACS), vous pouvez gérer la diffusion d’emails, le contenu et les formulaires directement dans AEM. Des étapes de configuration dans Adobe Campaign Standard et dans AEM sont nécessaires pour permettre la communication bidirectionnelle entre les solutions.
 
 Cette intégration permet d’utiliser AEM et Adobe Campaign Standard indépendamment. Les spécialistes du marketing peuvent créer des campagnes et utiliser le ciblage dans Adobe Campaign, tandis qu’en parallèle, les créateurs et créatrices de contenu peuvent travailler sur la conception de contenu dans AEM. L’intégration permet à Adobe Campaign de cibler et de diffuser le contenu et la conception de la campagne créée dans AEM.
+
+>[!INFO]
+>
+>Ce document explique comment intégrer Adobe Campaign Standard à AEM 6.5. Pour les autres intégrations de Campaign, reportez-vous au document . [Intégration d’AEM 6.5 à Adobe Campaign.](campaign.md)
 
 ## Étapes d’intégration {#integration-steps}
 
@@ -163,17 +165,17 @@ Pour configurer la réplication de votre instance d’auteur AEM vers l’instan
 
 1. Connectez-vous à votre instance de création AEM en tant qu’administrateur.
 
-1. Dans le rail latéral de navigation globale, sélectionnez **Outils** > **Déploiement** > **Réplication** > **Agents sur l’instance d’auteur**, puis appuyez ou cliquez sur **Agent par défaut (publication)**.
+1. Dans le rail latéral de navigation générale, sélectionnez **Outils** > **Déploiement** > **Réplication** > **Agents sur l’instance d’auteur**, puis appuyez ou cliquez sur **Agent par défaut (publication)**.
 
    ![Configurer l’agent de réplication.](assets/acc-replication-config.png)
 
 1. Appuyez ou cliquez sur **Modifier**, puis sélectionnez l’onglet **Transport**.
 
-1. Configurez le champ **URI** en remplaçant la valeur par défaut `localhost` avec l’adresse IP de l’instance de publication AEM.
+1. Configurez le champ **URI** en remplaçant la valeur par défaut `localhost` avec l’adresse IP de l’instance de publication AEM.
 
-   ![Onglet Transport](assets/acc-transport-tab.png)
+   ![Onglet Transport.](assets/acc-transport-tab.png)
 
-1. Appuyez ou cliquez sur **OK** pour enregistrer les modifications apportées aux paramètres de l’agent.
+1. Appuyez ou cliquez sur **OK** pour enregistrer les modifications des paramètres de l’agent.
 
 Vous avez configuré la réplication sur l’instance de publication AEM afin que les destinataires de vos campagnes puissent accéder à votre contenu.
 
@@ -181,15 +183,15 @@ Vous avez configuré la réplication sur l’instance de publication AEM afin q
 >
 >Si vous ne souhaitez pas utiliser l’URL de réplication, mais plutôt l’URL publique, vous pouvez définir l’URL publique dans les paramètres de configuration suivants via OSGi.
 >
->Dans le rail latéral de navigation globale, sélectionnez **Outils** > **Opérations** > **Console web** > **Configuration OSGi** et recherchez **Intégration AEM Campaign - Configuration**. Modifiez la configuration et changez le champ **URL publique** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
+>Dans le rail latéral de navigation générale, sélectionnez **Outils** > **Opérations** > **Console web** > **Configuration OSGi** et recherchez **Intégration AEM Campaign - Configuration**. Modifiez la configuration ainsi que le champ **URL publique** (`com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl`).
 
 ## Configurer l’externaliseur AEM {#externalizer}
 
 [L’externaliseur](/help/sites-developing/externalizer.md) est un service OSGi d’AEM qui transforme un chemin d’accès aux ressources en URL externe et absolue, ce qui est nécessaire pour qu’AEM diffuse du contenu que Campaign peut utiliser. Vous devez le configurer pour que l’intégration de Campaign fonctionne.
 
 1. Connectez-vous à l’instance de création AEM en tant qu’administrateur.
-1. Dans le rail latéral de navigation globale, sélectionnez **Outils** > **Opérations** > **Console web** > **Configuration OSGi** et recherchez **Day CQ Link Externalizer**.
-1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Modifiez l’URL à partir de la valeur par défaut `http://localhost:4503` à votre instance de publication disponible publiquement.
+1. Dans le rail latéral de navigation générale, sélectionnez **Outils** > **Opérations** > **Console web** > **Configuration OSGi** et recherchez **Day CQ Link Externalizer**.
+1. Par défaut, la dernière entrée dans le champ **Domaines** est destinée à l’instance de publication. Remplacez l’URL de la valeur `http://localhost:4503` par défaut par votre instance de publication disponible publiquement.
 
    ![Configuration de l’externaliseur.](assets/acc-externalizer-config.png)
 
@@ -198,7 +200,8 @@ Vous avez configuré la réplication sur l’instance de publication AEM afin q
 Vous avez configuré l’externaliseur et Adobe Campaign peut désormais accéder à votre contenu.
 
 >[!NOTE]
->L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou sur un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’afficheront pas dans la console Adobe Campaign.
+>
+L’instance de publication doit être accessible à partir du serveur Adobe Campaign. S’il pointe vers `localhost:4503` ou un autre serveur auquel Adobe Campaign ne parvient pas à se connecter, les images d’AEM ne s’affichent pas dans la console Adobe Campaign.
 
 ## Configurer l’utilisateur distant de Campaign dans AEM {#campaign-remote-user}
 
