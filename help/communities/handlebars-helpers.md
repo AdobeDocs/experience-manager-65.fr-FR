@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 9%
+source-wordcount: '1509'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|
-|  | **[⇒ de personnalisation côté client](client-customize.md)** |
+|   | **[⇒ de personnalisation côté client](client-customize.md)** |
 
 Handlebars Helpers (helpers) sont des méthodes appelables à partir des scripts Handlebars pour faciliter l’utilisation des composants SCF.
 
@@ -49,19 +49,19 @@ Si safeString est défini sur true, la chaîne renvoyée est une SafeString.
 
 * **contexte**: Chaîne
 
-   (Facultatif) La valeur par défaut est la chaîne vide.
+  (Facultatif) La valeur par défaut est la chaîne vide.
 
 * **maxLength**: Nombre
 
-   (Facultatif) La valeur par défaut est la longueur du contexte.
+  (Facultatif) La valeur par défaut est la longueur du contexte.
 
 * **maxWords**: Nombre
 
-   (Facultatif) La valeur par défaut est le nombre de mots de la chaîne rognée.
+  (Facultatif) La valeur par défaut est le nombre de mots de la chaîne rognée.
 
 * **safeString**: Booléen
 
-   (Facultatif) Renvoie une valeur Handlebars.SafeString() si la valeur est true. La valeur par défaut est false.
+  (Facultatif) Renvoie une valeur Handlebars.SafeString() si la valeur est true. La valeur par défaut est false.
 
 ### Exemples {#examples}
 
@@ -97,23 +97,23 @@ Permet d’ajouter deux étendues sous une balise div, l’une pour le texte int
 
 * **contexte**: Chaîne
 
-   (Facultatif) La valeur par défaut est la chaîne vide.
+  (Facultatif) La valeur par défaut est la chaîne vide.
 
 * **numChars**: Nombre
 
-   (Facultatif) Nombre de caractères à afficher lorsque le texte intégral ne s’affiche pas. La valeur par défaut est 100.
+  (Facultatif) Nombre de caractères à afficher lorsque le texte intégral ne s’affiche pas. La valeur par défaut est 100.
 
 * **moreText**: Chaîne
 
-   (Facultatif) Texte à afficher indiquant qu’il y a plus de texte à afficher. La valeur par défaut est &quot;plus&quot;.
+  (Facultatif) Texte à afficher indiquant qu’il y a plus de texte à afficher. La valeur par défaut est &quot;plus&quot;.
 
 * **ellipsesText**: Chaîne
 
-   (Facultatif) Le texte à afficher indiquant qu’il y a du texte masqué. La valeur par défaut est &quot;...&quot;.
+  (Facultatif) Le texte à afficher indiquant qu’il y a du texte masqué. La valeur par défaut est &quot;...&quot;.
 
 * **safeString**: Booléen
 
-   (Facultatif) Valeur booléenne indiquant s’il faut appliquer Handlebars.SafeString() avant de renvoyer le résultat. La valeur par défaut est false.
+  (Facultatif) Valeur booléenne indiquant s’il faut appliquer Handlebars.SafeString() avant de renvoyer le résultat. La valeur par défaut est false.
 
 ### Exemple {#example}
 
@@ -137,11 +137,11 @@ Une aide permettant de renvoyer une chaîne de date formatée.
 
 * **contexte**: Nombre
 
-   (Facultatif) Décalage de valeur en millisecondes par rapport au 1er janvier 1970 (époque). La date par défaut est la date actuelle.
+  (Facultatif) Décalage de valeur en millisecondes par rapport au 1er janvier 1970 (époque). La date par défaut est la date actuelle.
 
 * **format**: Chaîne
 
-   (Facultatif) Format de date à appliquer. La valeur par défaut est &quot;AAAA-MM-JJTHH&quot;:mm:s.sssZ&quot; et le résultat apparaît sous la forme &quot;2015-03-18T18:17:13-07:00&quot;
+  (Facultatif) Format de date à appliquer. La valeur par défaut est &quot;AAAA-MM-JJTHH&quot;:mm:s.sssZ&quot; et le résultat apparaît sous la forme &quot;2015-03-18T18:17:13-07:00&quot;
 
 ### Exemples {#examples-1}
 
@@ -165,11 +165,11 @@ Un assistant pour renvoyer du contenu en fonction d’une condition d’égalit�
 
 * **lvalue**: Chaîne
 
-   Valeur de gauche à comparer.
+  Valeur de gauche à comparer.
 
 * **rvalue**: Chaîne
 
-   Valeur de droite à comparer.
+  Valeur de droite à comparer.
 
 ### Exemple {#example-1}
 
@@ -183,17 +183,17 @@ Un assistant pour renvoyer du contenu en fonction d’une condition d’égalit�
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) dans une liste de modes séparés par des chaînes.
+Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) dans une liste de modes séparés par des chaînes.
 
 ### Paramètres {#parameters-4}
 
 * **contexte**: Chaîne
 
-   (Facultatif) Chaîne à traduire. Obligatoire si aucune valeur par défaut n’est fournie.
+  (Facultatif) Chaîne à traduire. Obligatoire si aucune valeur par défaut n’est fournie.
 
 * **mode**: Chaîne
 
-   (Facultatif) Liste séparée par des virgules de [Modes WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) pour tester si défini.
+  (Facultatif) Liste séparée par des virgules de [Modes WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) pour tester si défini.
 
 ### Exemple {#example-2}
 
@@ -215,15 +215,15 @@ Voir aussi [Internationalisation de chaînes dans un code JavaScript](../../help
 
 * **contexte**: Chaîne
 
-   (Facultatif) Chaîne à traduire. Obligatoire si aucune valeur par défaut n’est fournie.
+  (Facultatif) Chaîne à traduire. Obligatoire si aucune valeur par défaut n’est fournie.
 
 * **default**: Chaîne
 
-   (Facultatif) Chaîne par défaut à traduire. Obligatoire si aucun contexte n’est fourni.
+  (Facultatif) Chaîne par défaut à traduire. Obligatoire si aucun contexte n’est fourni.
 
 * **comment**: Chaîne
 
-   (Facultatif) Conseil de traduction
+  (Facultatif) Conseil de traduction
 
 ### Exemple {#example-3}
 
@@ -246,27 +246,27 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 
 * **contexte**: Chaîne ou objet
 
-   (Facultatif, sauf si vous fournissez un chemin relatif)
+  (Facultatif, sauf si vous fournissez un chemin relatif)
 
-   Utilisation `this` pour transmettre le contexte actuel.
+  Utilisation `this` pour transmettre le contexte actuel.
 
-   Utilisation `this.id` pour obtenir la ressource à l’adresse `id` pour effectuer le rendu de resourceType demandé.
+  Utilisation `this.id` pour obtenir la ressource à l’adresse `id` pour effectuer le rendu de resourceType demandé.
 
 * **resourceType**: Chaîne
 
-   (Facultatif) le type de ressource est défini par défaut sur le type de ressource à partir du contexte.
+  (Facultatif) le type de ressource est défini par défaut sur le type de ressource à partir du contexte.
 
 * **modèle**: Chaîne
 
-   Chemin d’accès au script du composant.
+  Chemin d’accès au script du composant.
 
 * **path**: Chaîne
 
-   (Obligatoire) Chemin d’accès à la ressource. Si le chemin est relatif, un contexte doit être fourni, sinon la chaîne vide est renvoyée.
+  (Obligatoire) Chemin d’accès à la ressource. Si le chemin est relatif, un contexte doit être fourni, sinon la chaîne vide est renvoyée.
 
 * **authoringDisabled**: Booléen
 
-   (Facultatif) La valeur par défaut est false. usage interne uniquement.
+  (Facultatif) La valeur par défaut est false. Pour une utilisation interne uniquement.
 
 ### Exemple {#example-4}
 
@@ -286,19 +286,19 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 
 * **categories**: Chaîne
 
-   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
 
 * **thème**: Chaîne
 
-   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
 
 * **js**: Chaîne
 
-   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
 
 * **css**: Chaîne
 
-   (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
 
 ### Exemples {#examples-2}
 
@@ -353,11 +353,11 @@ Par exemple :
 
 * **contexte**: Nombre
 
-   Un temps dans le passé à comparer avec &quot;maintenant&quot;. Le temps est exprimé sous la forme d’un décalage de valeur en millisecondes par rapport au 1er janvier 1970 (époque).
+  Un temps dans le passé à comparer avec &quot;maintenant&quot;. Le temps est exprimé sous la forme d’un décalage de valeur en millisecondes par rapport au 1er janvier 1970 (époque).
 
 * **daysCutoff**: Nombre
 
-   Nombre de jours auparavant avant de passer à une date réelle. La valeur par défaut est 60.
+  Nombre de jours auparavant avant de passer à une date réelle. La valeur par défaut est 60.
 
 ### Exemple {#example-5}
 
@@ -385,7 +385,7 @@ REMARQUE : il ne s’agit pas d’un programme de validation et il ne doit pas �
 
 * **contexte**: objet
 
-   HTML à coder.
+  HTML à coder.
 
 ### Exemple {#example-6}
 
@@ -403,7 +403,7 @@ REMARQUE : il ne s’agit pas d’un programme de validation et il ne doit pas �
 
 * **contexte**: Objet
 
-   HTML à coder.
+  HTML à coder.
 
 ### Exemple {#example-7}
 
@@ -421,7 +421,7 @@ REMARQUE : il ne s’agit pas d’un validateur et ne doit pas être utilisé po
 
 * **contexte**: Objet
 
-   HTML à coder.
+  HTML à coder.
 
 ### Exemple {#example-8}
 
@@ -439,7 +439,7 @@ REMARQUE : cela peut renvoyer une chaîne vide
 
 * **contexte**: Objet
 
-   URL à assainir.
+  URL à assainir.
 
 ### Exemple {#example-9}
 
@@ -457,7 +457,7 @@ REMARQUE : cela peut renvoyer une chaîne vide
 * Le contexte peut être une chaîne, un nombre, une valeur booléenne ou un objet de données JSON.
 * Il est possible de transmettre un objet imbriqué dans le contexte actuel en tant que contexte, par exemple `this.url` ou `this.id` (voir les exemples suivants d’aides simples et par blocs).
 
-* Les assistants de bloc sont des fonctions qui peuvent être appelées à partir de n’importe quel emplacement du modèle. Ils peuvent appeler un bloc du modèle zéro ou plusieurs fois avec un contexte différent à chaque fois. Ils contiennent un contexte entre {{#*name*}} and {{/*name*}}.
+* Les assistants de bloc sont des fonctions qui peuvent être appelées à partir de n’importe quel emplacement du modèle. Ils peuvent appeler un bloc du modèle zéro ou plusieurs fois avec un contexte différent à chaque fois. Ils contiennent un contexte entre `{{#*name*}}` et `{{/*name*}}`.
 
 * Handlebars fournit un paramètre final aux assistants nommés &quot;options&quot;. L’objet spécial &quot;options&quot; inclut
 
@@ -603,4 +603,4 @@ Remarque : Les assistants SCF sont définis dans `/etc/clientlibs/social/commons
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|
-|  | **[⇒ de personnalisation côté client](client-customize.md)** |
+|   | **[⇒ de personnalisation côté client](client-customize.md)** |

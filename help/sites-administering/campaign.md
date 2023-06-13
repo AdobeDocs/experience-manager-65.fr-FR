@@ -1,8 +1,6 @@
 ---
 title: Intégrer à Adobe Campaign
-seo-title: Integrating with Adobe Campaign
-description: Découvrez comment intégrer AEM à Adobe Campaign.
-seo-description: Learn how to integrate AEM with Adobe Campaign.
+description: Découvrez la prise en charge par AEM as a Cloud Service des intégrations avec Adobe Campaign.
 uuid: 6113279e-d1f5-46c3-ac94-50270fa55060
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,29 +8,48 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '139'
-ht-degree: 100%
+source-git-commit: d02a8eaba853bf96c7f706e924b4286275d582aa
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 18%
 
 ---
 
+
 # Intégrer à Adobe Campaign{#integrating-with-adobe-campaign}
 
-Adobe Campaign est un ensemble de solutions qui permet de personnaliser les campagnes et de les diffuser via tous vos canaux en ligne et hors ligne.
+Découvrez la prise en charge par AEM as a Cloud Service des intégrations avec Adobe Campaign.
 
-Vous pouvez intégrer cette version d’AEM à l’une des versions suivantes d’Adobe Campaign :
+Adobe Campaign est un ensemble de solutions qui vous permet de personnaliser et de diffuser des campagnes sur l’ensemble de vos canaux en ligne et hors ligne.
 
-* Adobe Campaign 6.1, qui offre une solution On-Premise ;
-* Adobe Campaign Standard, qui est la solution par abonnement.
+## Intégrer à Adobe Campaign Classic {#acc}
 
-Cette documentation décrit comment intégrer AEM à Adobe Campaign. Selon si vous disposez de la solution sur abonnement ou On-Premise, les étapes d’intégration diffèrent légèrement.
+Il existe plusieurs versions de Adobe Campaign Classic (ACC). La prise en charge de l’intégration à AEM dépend de la version d’ACC que vous avez mise en oeuvre et si AEM est installé sur site dans Adobe Manage Services (AMS).
 
-* [Intégration à Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md)
-* [Intégration à Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
-* [Bonnes pratiques relatives aux modèles d’e-mail](/help/sites-administering/best-practices-for-email-templates.md)
-* [Résolution des incidents liés à votre intégration Adobe Campaign](/help/sites-administering/troubleshooting-campaignintegration.md)
+| Version ACC | Intégration à AEM 6.5 <br>Sur site | Intégration à AEM 6.5<br>AMS |
+|---|---|---|
+| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=fr) | Pris en charge | Pris en charge |
+| [v8](https://experienceleague.adobe.com/docs/campaign-v8.html) | Pris en charge | Pris en charge |
+| Interface utilisateur web* | Pris en charge | Pris en charge |
 
->[!NOTE]
->
->Pour consulter un article de la Communauté AEM lié à ce sujet, consultez : [Intégration d’Adobe Experience Manager et d’Adobe Campaign Standard pour créer des newsletters](https://helpx.adobe.com/fr/experience-manager/using/aem_campaign.html).
+*L’interface utilisateur web de Adobe Campaign Classic est prévue pour la fin de 2023.
+
+La documentation suivante décrit comment intégrer AEM à Adobe Campaign Classic.
+
+* [Intégrer à Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md)
+* [Email Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+* [Dépannage de votre intégration Adobe Campaign Classic](/help/sites-administering/troubleshooting-campaignintegration.md)
+
+## Intégrer à Adobe Campaign Standard {#acs}
+
+L’intégration d’Adobe Campaign Standard (ACS) à AEM dépend de l’installation d’AEM sur site dans Adobe Manager Services (AMS).
+
+| Intégration à AEM 6.5 <br>Sur site | Intégration à AEM 6.5<br>AMS |
+|---|---|
+| Pris en charge | Pris en charge |
+| Pris en charge | Pris en charge |
+
+La documentation suivante décrit comment intégrer AEM à Adobe Campaign Standard.
+
+* [Intégrer à Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)
+* [Email Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
