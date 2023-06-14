@@ -1,8 +1,6 @@
 ---
 title: Fonctionnalité Bibliothèque de fichiers
-seo-title: File Library Feature
 description: La fonctionnalité Bibliothèque de fichiers permet aux visiteurs connectés du site de télécharger, gérer et télécharger des fichiers.
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 10%
 
 ---
@@ -35,17 +33,17 @@ Pour ajouter une `File Library` pour accéder à une page en mode création, rec
 
 * `Communities / File Library`
 
-et faites-le glisser sur la page.
+Et faites-le glisser sur la page.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `File Library` apparaît :
+Lorsque la variable [bibliothèques côté client requises](/help/communities/essentials-file-library.md#essentials-for-client-side) sont incluses, c’est ainsi que la variable `File Library` Le composant apparaît :
 
 ![file-library1](assets/file-library1.png)
 
 ### Configuration de la bibliothèque de fichiers {#configuring-file-library}
 
-Sélectionnez le `File Library` pour accéder au composant et le sélectionner. `Configure` qui ouvre la boîte de dialogue de modification.
+Sélectionnez le `File Library` afin que vous puissiez accéder au `Configure` qui ouvre la boîte de dialogue de modification.
 
 ![configure-new](assets/configure-new.png)
 
@@ -61,7 +59,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
 * **Commentaires par page**
 
-  Limite le nombre de commentaires affichés par page ainsi que le nombre de réponses affichées. La valeur par défaut est **10**.
+  Limite le nombre de commentaires affichés par page et le nombre de réponses affichées. La valeur par défaut est **10**.
 
 * **Taille maximale du fichier**
 
@@ -73,7 +71,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
 * **Types de fichier autorisés**
 
-  Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple : .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, ceux qui ne sont pas spécifiés ne seront pas autorisés. La valeur par défaut n’est pas spécifiée de sorte que tous les types de fichiers soient autorisés.
+  Liste d’extensions de fichier séparées par des virgules avec le séparateur &quot;point&quot;. Par exemple, .jpg, .jpeg, .png, .doc, .docx, .pdf. Si des types de fichiers sont spécifiés, les types qui ne sont pas spécifiés ne sont pas autorisés. La valeur par défaut n’est pas spécifiée de sorte que tous les types de fichiers soient autorisés.
 
 * **Éditeur de texte enrichi**
 
@@ -89,7 +87,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
 * **Espaces de noms autorisés**
 
-  Si l’option Autoriser le balisage est cochée, les balises disponibles sont limitées aux espaces de noms cochés. Si aucun n’est coché, tous sont autorisés. La valeur par défaut est tous les espaces de noms.
+  Si l’option Autoriser le balisage est cochée, les balises disponibles sont limitées aux espaces de noms cochés. Si aucun espace de noms n’est coché, tous sont autorisés. La valeur par défaut est tous les espaces de noms.
 
 * **Limite de suggestions**
 
@@ -113,7 +111,7 @@ Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers c
 
 * **Modèle des mentions de l’IU**
 
-  Spécifiez la chaîne de modèle autorisée à baliser (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
+  Spécifiez la chaîne de modèle autorisée afin de marquer (@mention) l’utilisateur enregistré dans une publication. Par exemple, `~{{familyName}}{{givenName}}`.
 
 * **Autoriser les réponses à thème**
 
@@ -129,7 +127,7 @@ Sous , **Modération d’utilisateur** , configurez la modération des commentai
 
 * **Supprimer les commentaires**
 
-  Si cette case est cochée, le visiteur qui a publié le commentaire peut le supprimer. La valeur par défaut est cochée.
+  Si cette case est cochée, le visiteur qui a publié le commentaire peut le supprimer, si nécessaire. La valeur par défaut est cochée.
 
 * **Refuser les commentaires**
 
@@ -171,4 +169,4 @@ Vous trouverez plus d’informations sur la [Notions fondamentales sur la biblio
 
 Pour la modération des sujets et des commentaires publiés, voir [Modération de contenu généré par l’utilisateur](/help/communities/moderate-ugc.md).
 
-Pour baliser des sujets et des commentaires publiés, voir [Balisage du contenu généré par l’utilisateur](/help/communities/tag-ugc.md).
+Pour baliser des sujets et des commentaires publiés, voir [Balisage de contenu généré par l’utilisateur](/help/communities/tag-ugc.md).

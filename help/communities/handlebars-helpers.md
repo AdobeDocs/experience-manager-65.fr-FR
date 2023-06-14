@@ -1,8 +1,6 @@
 ---
 title: Assistant de Handlebars SCF
-seo-title: SCF Handlebars Helpers
 description: Méthodes Handlebars Helper pour faciliter le travail avec SCF
-seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,10 +8,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 8%
+source-wordcount: '1473'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +23,7 @@ ht-degree: 8%
 
 Handlebars Helpers (helpers) sont des méthodes appelables à partir des scripts Handlebars pour faciliter l’utilisation des composants SCF.
 
-L’implémentation comprend une définition côté client et une définition côté serveur. Il est également possible pour les développeurs de créer des assistants personnalisés.
+L’implémentation comprend une définition côté client et côté serveur. Il est également possible pour les développeurs de créer des assistants personnalisés.
 
 Les assistants SCF personnalisés fournis avec AEM Communities sont définis dans la variable [bibliothèque cliente](../../help/sites-developing/clientlibs.md):
 
@@ -183,7 +181,7 @@ Un assistant pour renvoyer du contenu en fonction d’une condition d’égalit�
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) dans une liste de modes séparés par des chaînes.
+Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) dans une liste de modes séparés par des chaînes.
 
 ### Paramètres {#parameters-4}
 
@@ -193,7 +191,7 @@ Une assistance par bloc qui teste la valeur actuelle de [Mode WCM](https://helpx
 
 * **mode**: Chaîne
 
-  (Facultatif) Liste séparée par des virgules de [Modes WCM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) pour tester si défini.
+  (Facultatif) Une liste séparée par des virgules de [Modes WCM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) pour tester si défini.
 
 ### Exemple {#example-2}
 
@@ -236,9 +234,9 @@ Voir aussi [Internationalisation de chaînes dans un code JavaScript](../../help
 
 Une aide pour inclure un composant en tant que ressource non existante dans un modèle.
 
-Cela permet à la ressource d’être personnalisée par programmation plus facilement qu’il n’est possible pour une ressource ajoutée en tant que noeud JCR. Voir [Ajout ou inclusion d’un composant Communautés](scf.md#add-or-include-a-communities-component).
+Cette méthode permet à la ressource d’être personnalisée par programmation plus facilement qu’il n’est possible pour une ressource ajoutée en tant que noeud JCR. Voir [Ajout ou inclusion d’un composant Communautés](scf.md#add-or-include-a-communities-component).
 
-Seuls quelques-uns des composants Communities sont incluables. Pour AEM 6.1, les inclusions sont [commentaires](essentials-comments.md), [note](rating-basics.md), [critiques](reviews-basics.md), et [vote](essentials-voting.md).
+Seuls quelques-uns des composants Communities sont disponibles à inclure. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
 Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnalités similaires à [cq:include](../../help/sites-developing/taglib.md) pour les scripts JSP.
 
@@ -254,7 +252,7 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 
 * **resourceType**: Chaîne
 
-  (Facultatif) le type de ressource est défini par défaut sur le type de ressource à partir du contexte.
+  (Facultatif) Le type de ressource est défini par défaut sur le type de ressource à partir du contexte.
 
 * **modèle**: Chaîne
 
@@ -274,7 +272,7 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Cela inclura un nouveau composant de commentaires à l’adresse `this.id` + /comments.
+Inclut un nouveau composant de commentaires à l’adresse `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
@@ -286,19 +284,19 @@ Cette assistance, appropriée uniquement côté serveur, fournit des fonctionnal
 
 * **categories**: Chaîne
 
-  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Incluez toutes les bibliothèques JavaScript et CSS pour les catégories données. Le nom du thème est extrait de la requête.
 
 * **thème**: Chaîne
 
-  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques (CSS et JS) relatives au thème pour les catégories données. Le nom du thème est extrait de la requête.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Incluez toutes les bibliothèques liées au thème (CSS et JS) pour les catégories données. Le nom du thème est extrait de la requête.
 
 * **js**: Chaîne
 
-  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques JavaScript et CSS pour les catégories données.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Inclut toutes les bibliothèques JavaScript pour les catégories données.
 
 * **css**: Chaîne
 
-  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Cela inclut toutes les bibliothèques CSS pour les catégories données.
+  (Facultatif) Une liste de catégories de bibliothèques clientes séparées par des virgules. Inclut toutes les bibliothèques CSS pour les catégories données.
 
 ### Exemples {#examples-2}
 
@@ -379,7 +377,7 @@ Depending on how long in the past, may return
 
 Une aide qui code une chaîne source pour le contenu d’élément de HTML afin de vous protéger contre XSS.
 
-REMARQUE : il ne s’agit pas d’un programme de validation et il ne doit pas être utilisé pour écrire des valeurs d’attribut.
+REMARQUE : Cet assistant n’est pas un programme de validation et ne doit pas être utilisé pour écrire des valeurs d’attribut.
 
 ### Paramètres {#parameters-9}
 
@@ -397,7 +395,7 @@ REMARQUE : il ne s’agit pas d’un programme de validation et il ne doit pas �
 
 Une aide qui code une chaîne source pour l’écriture sur une valeur d’attribut de HTML afin de vous aider à vous protéger contre XSS.
 
-REMARQUE : il ne s’agit pas d’un programme de validation et il ne doit pas être utilisé pour écrire des attributs activables (href, src, gestionnaires d’événements).
+REMARQUE : Cet assistant n’est pas un validateur et ne doit pas être utilisé pour écrire des attributs exploitables (href, src, gestionnaires d’événements).
 
 ### Paramètres {#parameters-10}
 
@@ -415,7 +413,7 @@ REMARQUE : il ne s’agit pas d’un programme de validation et il ne doit pas �
 
 Une aide qui code une chaîne source pour l’écriture dans du contenu de chaîne JavaScript afin de vous protéger contre XSS.
 
-REMARQUE : il ne s’agit pas d’un validateur et ne doit pas être utilisé pour écrire du code JavaScript arbitraire.
+REMARQUE : Cet assistant n’est pas un validateur et ne doit pas être utilisé pour écrire dans du code JavaScript arbitraire.
 
 ### Paramètres {#parameters-11}
 
@@ -433,7 +431,7 @@ var input = {{xss-jsString topic-title}}
 
 Une assistance qui assainit une URL pour écrire en tant que href HTML ou valeur d’attribut source afin de vous aider à vous protéger contre XSS.
 
-REMARQUE : cela peut renvoyer une chaîne vide
+REMARQUE : Cet assistant peut renvoyer une chaîne vide.
 
 ### Paramètres {#parameters-12}
 
@@ -450,7 +448,7 @@ REMARQUE : cela peut renvoyer une chaîne vide
 ## Présentation de base de Handlebars.js {#handlebars-js-basic-overview}
 
 * Un appel d’assistance Handlebars est un identifiant simple (le *name* de l’assistant), suivie de zéro ou plusieurs paramètres séparés par de l’espace.
-* Les paramètres peuvent être un simple objet String, Number, boolean ou JSON, ainsi qu’une séquence facultative de paires clé-valeur (arguments de hachage) comme dernier(s) paramètre(s).
+* Les paramètres peuvent être une simple chaîne, un nombre, un objet booléen ou JSON et une séquence facultative de paires clé-valeur (arguments de hachage) comme derniers paramètres.
 * Les clés des arguments de hachage doivent être des identifiants simples.
 * Les valeurs des arguments de hachage sont des expressions Handlebars : identifiants, chemins ou chaînes simples.
 * Le contexte actuel, `this`, est toujours disponible pour les assistants Handlebars.
@@ -459,7 +457,7 @@ REMARQUE : cela peut renvoyer une chaîne vide
 
 * Les assistants de bloc sont des fonctions qui peuvent être appelées à partir de n’importe quel emplacement du modèle. Ils peuvent appeler un bloc du modèle zéro ou plusieurs fois avec un contexte différent à chaque fois. Ils contiennent un contexte entre `{{#*name*}}` et `{{/*name*}}`.
 
-* Handlebars fournit un paramètre final aux assistants nommés &quot;options&quot;. L’objet spécial &quot;options&quot; inclut
+* Les Guidons fournissent un paramètre final aux assistants nommés &quot;options&quot;. L’objet spécial &quot;options&quot; inclut
 
    * Données privées facultatives (options.data)
    * Propriétés de clé-valeur facultatives de l’appel (options.hash)
@@ -526,7 +524,7 @@ Les assistants personnalisés doivent être implémentés côté serveur et côt
 
 ### Aide personnalisée côté serveur {#server-side-custom-helpers}
 
-Pour mettre en oeuvre et enregistrer un assistant SCF personnalisé côté serveur, il vous suffit de mettre en oeuvre l’interface Java. [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), faites en sorte qu’il soit [Service OSGi](../../help/sites-developing/the-basics.md#osgi) et installez-le dans le cadre d’un regroupement OSGi.
+Pour mettre en oeuvre et enregistrer un assistant SCF personnalisé côté serveur, il vous suffit de mettre en oeuvre l’interface Java™ [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), faites en sorte qu’il soit [Service OSGi](../../help/sites-developing/the-basics.md#osgi) et installez-le dans le cadre d’un regroupement OSGi.
 
 Par exemple :
 
