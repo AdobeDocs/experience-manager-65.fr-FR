@@ -1,18 +1,16 @@
 ---
 title: Personnaliser les services de données Drafts & Submission
-seo-title: Customizing Draft and Submission data services
-description: Par défaut, AEM Forms stocke des formulaires adaptatifs préliminaires (brouillons) et envoyés dans un nœud par défaut de l’instance de publication. Vous pouvez toutefois configurer les services Drafts & Submission d’AEM Forms afin de personnaliser le stockage des formulaires adaptatifs préliminaires et envoyés.
-seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
+description: AEM Forms, par défaut, stocke les formulaires adaptatifs préliminaires et envoyés, dans un noeud par défaut de l’instance de publication. Cependant, vous pouvez configurer les services de données de brouillon et d’envoi d’AEM Forms pour personnaliser le stockage des formulaires adaptatifs de brouillon et envoyés.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '276'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 28%
 
 ---
 
@@ -20,24 +18,24 @@ ht-degree: 100%
 
 ## Présentation {#overview}
 
-AEM Forms permettent aux utilisateurs d’enregistrer un formulaire adaptatif en tant que brouillon. La fonctionnalité de brouillon offre aux utilisateurs la possibilité de conserver un formulaire de travail en cours. L’utilisateur peut ensuite remplir et envoyer le formulaire à tout moment, depuis n’importe quel périphérique.
+AEM Forms permet aux utilisateurs d’enregistrer un formulaire adaptatif en tant que brouillon. La fonctionnalité de brouillon permet aux utilisateurs de conserver un formulaire de travail en cours. Un utilisateur peut ensuite remplir et envoyer le formulaire à tout moment à partir de n’importe quel périphérique.
 
-Par défaut, AEM Forms stocke les données utilisateur associées au service version préliminaire et soumission sur l’instance de publication dans le nœud `/content/forms/fp`.
+Par défaut, AEM Forms stocke les données utilisateur associées au brouillon et à l’envoi sur l’instance de publication dans le `/content/forms/fp` noeud .
 
-Cependant, les composants du portail AEM Forms fournissent des services de données qui vous permettent de personnaliser la mise en œuvre du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez, par exemple, stocker les données dans un entrepôt de données implémenté au sein de votre organisation.
+Cependant, les composants d’AEM Forms Portal fournissent des services de données qui vous permettent de personnaliser l’implémentation du stockage des données utilisateur pour les brouillons et les envois. Vous pouvez, par exemple, stocker les données dans un entrepôt de données implémenté au sein de votre organisation.
 
-Pour personnaliser le stockage des données utilisateur, vous devez implémenter les services de données [drafts](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) &amp; [submission](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
+Pour personnaliser le stockage des données utilisateur, vous devez mettre en oeuvre le [Brouillon de données](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) et [Données d’envoi](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) services.
 
 ## Prérequis {#prerequisites}
 
-* Activer des [Composants du portail de formulaires](/help/forms/using/enabling-forms-portal-components.md)
-* Créer une [page du portail de formulaires](/help/forms/using/creating-form-portal-page.md)
-* Activer les [formulaires adaptatifs pour le portail Formulaires](/help/forms/using/draft-submission-component.md)
+* Activer [Composants du portail Forms](/help/forms/using/enabling-forms-portal-components.md)
+* Créez un [Page du portail Forms](/help/forms/using/creating-form-portal-page.md)
+* Activer [formulaires adaptatifs pour Forms Portal](/help/forms/using/draft-submission-component.md)
 * En savoir plus sur les [détails d’implémentation du stockage personnalisé](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Service de données de brouillon {#draft-data-service}
 
-Pour personnaliser le stockage des données de brouillon, vous devez fournir une implémentation pour toutes les méthodes de l’interface `DraftAFDataService`.
+Pour personnaliser le stockage des données de brouillon utilisateur, vous devez fournir une mise en oeuvre de toutes les méthodes de la variable `DraftAFDataService` .
 
 Vous trouverez une description des méthodes et de leurs arguments dans l’échantillon de code suivant de l’interface :
 
@@ -84,9 +82,9 @@ public interface DraftAFDataService {
 
 ## Service Submission Data {#submission-data-service}
 
-Pour personnaliser le stockage des données d’envoi des utilisateurs, vous devez fournir une implémentation pour toutes les méthodes de l’interface `SubmittedAFDataService`.
+Pour personnaliser le stockage des données d’envoi des utilisateurs, vous devez fournir une implémentation pour toutes les méthodes de la variable `SubmittedAFDataService` .
 
-Vous trouverez une description des méthodes et de leurs arguments dans l’échantillon de code suivant de l’interface : 
+Vous trouverez une description des méthodes et de leurs arguments dans l’échantillon de code suivant de l’interface :
 
 ```java
 public interface SubmittedAFDataService {

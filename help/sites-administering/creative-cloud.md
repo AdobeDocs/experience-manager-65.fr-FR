@@ -1,8 +1,6 @@
 ---
-title: Partage de dossiers avec Adobe Creative Cloud
-seo-title: Folder sharing with Adobe Creative Cloud
-description: Découvrez comment partager un dossier avec Adobe Creative Cloud.
-seo-description: Learn about sharing folder with Adobe Creative Cloud
+title: Partage de dossiers avec Adobe Creative Cloud
+description: En savoir plus sur le partage de dossier avec Adobe Creative Cloud
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +8,19 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
-workflow-type: ht
-source-wordcount: '66'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 48%
 
 ---
 
 
-# Partage de dossiers avec Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
+# Partage de dossiers avec Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Les clients sont fortement invités à utiliser les nouvelles fonctionnalités, telles qu’[Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou l’[application de bureau AEM](https://helpx.adobe.com/fr/experience-manager/desktop-app/aem-desktop-app.html). En savoir plus sur les [bonnes pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>La fonction de partage de dossiers entre AEM et Creative Cloud est obsolète. Il est conseillé aux clients d’utiliser des fonctionnalités plus récentes, telles que [Adobe d’un lien de ressource](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) ou [Application de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr). En savoir plus sur les [bonnes pratiques d’intégration d’AEM et de Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

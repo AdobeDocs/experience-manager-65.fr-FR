@@ -1,8 +1,6 @@
 ---
 title: Notions fondamentales sur la qualité de vie
-seo-title: QnA Essentials
 description: Fonctionnalité de forum Questions et réponses
-seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,10 +8,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 3%
+source-wordcount: '239'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +28,7 @@ Cette page fournit les informations essentielles pour utiliser la fonction de fo
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">incluable</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">inclure</a></td>
    <td>Non</td>
   </tr>
   <tr>
@@ -56,22 +54,22 @@ Cette page fournit les informations essentielles pour utiliser la fonction de fo
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API Q&amp;R](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [API Q&amp;R](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [Points de fin Q&amp;R](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [Points de fin Q&amp;R](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
 ### Fonction Q&amp;R {#qna-function}
 
-Une structure de site de communauté qui inclut [Fonction Q&amp;R](functions.md#qna-function) dispose d’un `QnA` , ainsi que les paramètres affectant la modération et le balisage. La fonction Q&amp;R prend en charge l’identification d’une [groupe d’utilisateurs de membres privilégiés](users.md#privileged-members-group).
+Une structure de site de communauté qui inclut [Fonction Q&amp;R](functions.md#qna-function) dispose d’un `QnA` et les paramètres affectant la modération et le balisage. La fonction Q&amp;R prend en charge l’identification d’une [groupe d’utilisateurs de membres privilégiés](users.md#privileged-members-group).
 
 ### Accès aux publications du forum Q&amp;R (UGC) {#accessing-qna-forum-posts-ugc}
 
 Le contenu généré par l’utilisateur doit être modéré à l’aide de l’une des méthodes standard de modération.
 Voir [Modération de contenu généré par l’utilisateur](moderate-ugc.md).
 
-À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès programmatique au contenu généré par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
+À partir de AEM 6.1 Communities, utilisez un [magasin commun](working-with-srp.md) pour le contenu généré par l’utilisateur inclut l’accès par programmation au contenu créé par l’utilisateur, quelle que soit l’option de stockage choisie (comme ASRP, MSRP ou JSRP).
 
 **L’emplacement et le format du contenu créé par l’utilisateur dans le référentiel peuvent être modifiés sans avertissement.**.
 

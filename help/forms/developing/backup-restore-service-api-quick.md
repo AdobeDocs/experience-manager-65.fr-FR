@@ -1,6 +1,5 @@
 ---
 title: Démarrage rapide de l’API du service de sauvegarde et de restauration
-seo-title: Backup and Restore Service APIQuick Starts
 description: Démarrage rapide de l’API du service de sauvegarde et de restauration
 uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
 contentOwner: admin
@@ -10,10 +9,10 @@ topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '250'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 40%
 
 ---
 
@@ -21,21 +20,21 @@ ht-degree: 100%
 
 **Les exemples et les échantillons de ce document sont réservés à l’environnement AEM Forms sur JEE.**
 
-Le démarrage rapide de l’API Java (SOAP) est disponible pour l’API du service de sauvegarde et de restauration.
+L’API Java™ Quick Start (SOAP) est disponible pour l’API du service de sauvegarde et de restauration.
 
-[Démarrage rapide : passer en mode de sauvegarde à l’aide de l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Démarrage rapide : Passage en mode de sauvegarde à l’aide du Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Démarrage rapide : quitter le mode de sauvegarde à l’aide de l’API Java (SOAP)](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Démarrage rapide : Quitter le mode de sauvegarde à l’aide du Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée d’AEM Forms et le mode de connexion doit être défini sur SOAP.
+Les opérations AEM Forms peuvent être effectuées à l’aide de l’API fortement typée dʼAEM Forms et le mode de connexion doit être défini sur SOAP.
 
 >[!NOTE]
 >
->Les tutoriels de démarrage rapide situés dans Programmer avec AEM Forms sont basés sur le système d’exploitation Forms. Toutefois, si vous utilisez un autre système dʼexploitation, tel quʼUNIX, remplacez les emplacements spécifiques à Windows par des emplacements pris en charge par le système dʼexploitation utilisé. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Les didacticiels de mise en route de la programmation avec AEM Forms sont basés sur le système d’exploitation Forms. Cependant, si vous utilisez un autre système d’exploitation, comme UNIX®, remplacez les chemins spécifiques à Windows par ceux pris en charge par le système d’exploitation approprié. De même, si vous utilisez un autre serveur d’applications J2EE, veillez à spécifier des propriétés de connexion valides. Voir [Réglage des propriétés de la connexion](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Démarrage rapide (mode SOAP) : passer en mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Passage en mode de sauvegarde à l’aide de l’API Java™ {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-L’exemple de code Java suivant passe en mode de sauvegarde avec un libellé unique pendant deux heures. Une fois le délai de sauvegarde expiré ou si le mode de sauvegarde est explicitement quitté, le serveur Forms revient à la purge des fichiers du stockage global de documents. (Voir [Activer le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
+L’exemple de code Java™ suivant passe en mode de sauvegarde avec un libellé unique de deux heures. Une fois l’heure de sauvegarde expirée ou si le mode de sauvegarde est explicitement quitté, le serveur Forms revient à la purge des fichiers du stockage global de documents. (Voir [Passage en mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -123,7 +122,7 @@ L’exemple de code Java suivant passe en mode de sauvegarde avec un libellé un
              // Enter backup mode on the forms server server
              BackupModeEntryResult backupResult = backup.enterBackupMode(backUpLabel,minsInBackupMode, continousCoverage);
  
-             // Get information from entering backup mode ontheforms server server.
+             // Get information from entering backup mode on the forms server server.
              if (backupResult != null)
              {
                  System.out.println("Start time is: " + backupResult.getStartTime());
@@ -148,9 +147,9 @@ L’exemple de code Java suivant passe en mode de sauvegarde avec un libellé un
  
 ```
 
-## Démarrage rapide (mode SOAP) : quitter le mode de sauvegarde à l’aide de l’API Java {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Démarrage rapide (mode SOAP) : Quitter le mode de sauvegarde à l’aide de l’API Java™ {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-L’exemple de code Java suivant amène de façon explicite le serveur Forms à quitter le mode de sauvegarde et à revenir à la purge des fichiers du stockage global de documents. (Voir [Quitter le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
+L’exemple de code Java™ suivant entraîne explicitement un serveur Forms à quitter le mode de sauvegarde et à revenir à la purge des fichiers du stockage global de documents. (Voir [Quitter le mode de sauvegarde sur le serveur Forms](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*

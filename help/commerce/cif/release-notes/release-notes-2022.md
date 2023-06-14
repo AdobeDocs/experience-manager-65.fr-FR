@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’AEM Content and Commerce 2022
 description: Notes de mise à jour d’AEM Content and Commerce 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
-workflow-type: ht
-source-wordcount: '812'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '816'
+ht-degree: 82%
 
 ---
 
@@ -13,15 +13,15 @@ ht-degree: 100%
 
 ## Présentation de la configuration système requise
 
-Passez en revue la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
+Examinez la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
 
 | Composant | Configuration requise |
 |:-------|:-----:|
-| Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Magento 2.3.5 |
+| Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Adobe Commerce 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Date de publication : septembre 2022
+## Date de publication : Septembre 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -36,7 +36,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 * Prise en charge des composants Peregrine 12.5
 * Prise en charge du chargement des prix côté client dans le teaser de produit et le carrousel
 
-## Date de publication : juillet 2022
+## Date de publication : Juillet 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -45,9 +45,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 ### Nouveautés {#what-is-new-july}
 
 * Association des pages AEM aux produits et aux catégories à l’aide des propriétés de page AEM et aperçu dans le cockpit de produits
-   ![Association de page du cockpit de produits](/help/assets/CIF/product_cockpit_page_association.png)
+  ![Association de page du cockpit de produits](/help/assets/CIF/product_cockpit_page_association.png)
 
-## Date de publication : juin 2022
+## Date de publication : Juin 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -57,7 +57,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-june}
 
-* L’enrichissement du catalogue de produits prend désormais en charge les pages AEM. Cela permet aux auteurs et autrices de gérer l’association page-produit.
+* L’enrichissement du catalogue de produits prend désormais en charge AEM pages, ce qui permet aux auteurs de gérer l’association page - produit.
 
 * Diverses améliorations du composant principal CIF
 
@@ -65,9 +65,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Ajouter un jeton de connexion à la récupération des prix côté client
 
-* Composant de page incorrect dans la couche de données
+* Composant de page incorrect dans la couche de données.
 
-## Date de publication : mai 2022
+## Date de publication : Mai 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -81,17 +81,17 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ![Présentation des propriétés du cockpit du produit](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
+* Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
 
-* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, pour définir le comportement de mise en cache personnalisée)
+* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définir le comportement de mise en cache personnalisée)
 
 ### Correctifs {#bug-fixes-may}
 
-* Le champ de sélecteur de produits à plusieurs valeurs affiche le second produit et les produits supplémentaires comme non valides.
+* Le champ de sélecteur de produits à plusieurs valeurs affiche les produits secondaires et supplémentaires comme non valides
 
 * Le sélecteur de produit est parfois masqué derrière les composants.
 
-## Date de publication : avril 2022
+## Date de publication : Avril 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -103,13 +103,13 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Accès rapide au cockpit du produit : accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de Sites.
 
-   ![Activation de la liste de souhaits](/help/assets/CIF/enable-wishlist.png)
+  ![Activation de la liste de souhaits](/help/assets/CIF/enable-wishlist.png)
 
 * Prise en charge de composants commerciaux marketing supplémentaires : les composants peuvent être configurés pour afficher un appel à l’action de type « Ajouter au panier » et « Ajouter à une liste de souhaits ».
 
-   ![Raccourci de l’éditeur de Sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Raccourci de l’éditeur de Sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Date de publication : février 2022
+## Date de publication : Février 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -121,11 +121,11 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Version bêta : le composant principal de Recherche CIF AEM prend en charge Commerce LiveSearch.
 * Optimisation du référencement pour les scénarios multi-magasin : les formats d’URL pour PDP/PLP peuvent désormais être configurés au niveau du magasin via les propriétés de configuration cloud CIF.
-* Le sélecteur de produits prend en charge les produits intermédiaires par le biais d’une nouvelle option de filtre dans l’interface utilisateur. Cela permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
+* Le sélecteur de produits prend en charge les produits intermédiaires par le biais de la nouvelle option de filtre de l’interface utilisateur. Permet aux spécialistes du contenu de préparer la gestion de contenu des produits pour les lancements de produits à venir
 * Simplification de la gestion de la configuration et de la gestion des erreurs CIF à l’aide du nom de configuration cloud CIF au lieu de l’URL du proxy de configuration.
-* Sélection manuelle de catégories pour la liste de produits et les composants de carrousel. Cela permet aux spécialistes du contenu d’utiliser ces composants sur les pages de contenu, en dehors de l’expérience de catalogue.
+* Sélection manuelle de catégories pour la liste de produits et les composants de carrousel. Permet aux spécialistes du contenu d’utiliser ces composants sur les pages de contenu, en dehors de l’expérience de catalogue.
 
-## Date de publication : janvier 2022
+## Date de publication : Janvier 2022
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -140,7 +140,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 * **Liste de souhaits**
    * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
    * La gestion de la liste des souhaits et de ses produits est possible via Mon compte.
-   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une stratégie (par exemple un teaser de produit ou les informations de produit).
+   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une politique (par exemple un teaser de produit ou les informations de produit).
    * Disponible en tant que composant principal et dans AEM Venia Storefront
 
 ![Liste de souhaits](/help/assets/CIF/wishlist.png)

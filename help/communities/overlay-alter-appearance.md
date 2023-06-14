@@ -1,8 +1,6 @@
 ---
 title: Modification de l’aspect
-seo-title: Alter the Appearance
 description: Modification du script
-seo-description: Modify the script
 uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 1%
 
 ---
@@ -35,7 +33,7 @@ Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
 
 1. Ouvrir le recouvert `comment.hbs`
 
-   * Double-cliquez sur le noeud `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Noeud double-clic `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Recherchez les lignes suivantes et supprimez-les ou mettez-les en commentaire :
 
@@ -44,7 +42,7 @@ Pour ne pas afficher l’avatar en regard de chaque commentaire publié :
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Supprimez les lignes ou entourez-les de `<!--` et `-->` pour les commenter. En outre, les caractères &quot;xxx&quot; sont ajoutés comme indicateur visuel de l’emplacement de l’avatar.
+Supprimez les lignes ou entourez-les de `<!--` et `-->` alors vous les commentez. En outre, les caractères &quot;xxx&quot; sont ajoutés comme indicateur visuel de l’emplacement de l’avatar.
 
 ```xml
    xxx
@@ -63,7 +61,7 @@ Poussez le composant de commentaires superposés vers l’instance de publicatio
 
 Dans la navigation globale, sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]** et cliquez sur **[!UICONTROL Activer l’arborescence]**.
 
-Pour le champ Chemin de début , saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
+Pour Chemin de début, saisissez `/apps/social/commons` et sélectionnez **[!UICONTROL Activer]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 
@@ -71,6 +69,6 @@ Pour le champ Chemin de début , saisissez `/apps/social/commons` et sélectionn
 
 Si vous vous connectez à l’instance de publication en tant qu’administrateur, par exemple https://localhost:4503/crx/de en tant qu’administrateur/administrateur, vous pouvez vérifier que les composants superposés sont présents.
 
-Si vous vous déconnectez et vous reconnectez en tant que `aaron.mcdonald@mailinator.com/password` et actualisez la page. Vous remarquerez que le commentaire publié ne s’affiche plus avec un avatar, mais avec un simple &quot;xxx&quot;.
+Si vous vous déconnectez, puis connectez-vous comme `aaron.mcdonald@mailinator.com/password` et actualisez la page. Notez qu’un avatar n’est pas affiché avec le commentaire publié. Un simple &quot;xxx&quot; s’affiche à la place.
 
 ![create-template-component](assets/create-template-component.png)
