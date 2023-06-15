@@ -11,10 +11,10 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '1925'
-ht-degree: 52%
+source-wordcount: '1915'
+ht-degree: 50%
 
 ---
 
@@ -26,33 +26,28 @@ AEM Forms prend en charge CAPTCHA dans les formulaires adaptatifs. Vous pouvez u
 
 >[!NOTE]
 >
->* AEM Forms prend en charge reCaptcha v2 et Enterprise. Toute autre version n’est pas prise en charge.
->* Le service CAPTCHA par défaut AEM est obsolète.
+>* AEM Forms prend en charge reCAPTCHA v2 et Enterprise. Toute autre version n’est pas prise en charge.
 >* CAPTCHA dans les formulaires adaptatifs n’est pas pris en charge en mode hors ligne sur l’application AEM Forms.
->
 
-## Configuration du service reCAPTCHA par Google {#google-recaptcha}
+## Configuration du service reCAPTCHA par Google pour Forms adaptatif {#google-reCAPTCHA}
 
-Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour implémenter CAPTCHA dans les formulaires adaptatifs. Il offre des fonctionnalités CAPTCHA avancées pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, voir [Google reCAPTCHA](https://developers.google.com/recaptcha/). Le service reCAPTCHA, y compris reCAPTCHA v2 et reCAPTCHA Enterprise, est intégré à AEM forms. Selon vos besoins, vous pouvez configurer le service reCAPTCHA pour activer :
+Les utilisateurs d’AEM Forms peuvent utiliser le service reCAPTCHA de Google pour implémenter CAPTCHA dans les formulaires adaptatifs. Il offre des fonctionnalités CAPTCHA avancées pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, voir [Google reCAPTCHA](https://developers.google.com/reCAPTCHA/). Le service reCAPTCHA, y compris reCAPTCHA v2 et reCAPTCHA Enterprise, est intégré à AEM Forms. Selon vos besoins, vous pouvez configurer le service reCAPTCHA pour activer :
 
-* [reCAPTCHA Entreprise dans AEM forms](#steps-to-implement-recaptcha-enterprise-in-forms)
-* [reCAPTCHA v2 dans AEM forms](#steps-to-implement-recaptcha-v2-in-forms)
+* [reCAPTCHA Enterprise dans AEM Forms](#steps-to-implement-reCAPTCHA-enterprise-in-forms)
+* [reCAPTCHA v2 dans AEM Forms](#steps-to-implement-reCAPTCHA-v2-in-forms)
 
-![Recaptcha](assets/recaptcha_new.png)
+![reCAPTCHA](/help/forms/using/assets/recaptcha_new.png)
 
-## Procédure de mise en oeuvre de reCAPTCHA Enterprise dans Forms  {#steps-to-implement-recaptcha-enterprise-in-forms}
+### Configuration de reCAPTCHA Enterprise  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. Créer [projet d’entreprise reCAPTCHA](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) activé avec [API d’entreprise reCaptcha](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
+1. Créez un [Projet d’entreprise reCAPTCHA](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) activé avec [API d’entreprise reCAPTCHA](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-reCAPTCHA-enterprise-api).
 1. [Obtenir](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) Identifiant de projet.
-1. Créez un [Clé API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) et un [clé de site pour les sites web](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
+1. Créez un [Clé API](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) et un [clé de site pour les sites web](https://cloud.google.com/reCAPTCHA-enterprise/docs/create-key#create-key).
 1. Créez un conteneur de configuration pour les services cloud.
 
-   1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
-      * Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
+   1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**. Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
    1. Procédez comme suit pour activer le dossier global pour les configurations cloud ou ignorez cette étape pour créer et configurer un autre dossier pour les configurations de service cloud.
-
       1. Dans le navigateur de configuration, sélectionnez le dossier **[!UICONTROL global]** et appuyez sur **[!UICONTROL Propriétés]**.
-
       1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
       1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 
@@ -65,28 +60,26 @@ Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour 
    1. Appuyer **[!UICONTROL reCAPTCHA]**. La page Configurations s’ouvre. Sélectionnez le conteneur de configuration créé à l’étape précédente et appuyez sur **[!UICONTROL Créer]**.
    1. Sélectionnez la version reCAPTCHA Enterprise et indiquez le nom. ID de projet, clé du site et clé API (Obtenue aux étapes 2 et 3) pour le service d’entreprise reCAPTCHA.
    1. Sélectionnez le type de clé, le type de clé doit être identique à la clé de site configurée dans le projet google cloud, par exemple : **Clé de site de case à cocher** ou **Clé de site basée sur les scores**.
-   1. Spécifiez un score de seuil compris entre 0 et 1 ([Cliquez pour en savoir plus sur le score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Les scores supérieurs ou égaux au seuil identifient l’interaction humaine, considérée autrement comme une interaction de robots.
+   1. Spécifiez un score de seuil compris entre 0 et 1 ([Cliquez pour en savoir plus sur le score](https://cloud.google.com/reCAPTCHA-enterprise/docs/interpret-assessment#interpret_scores)). Les scores supérieurs ou égaux au seuil identifient l’interaction humaine, considérée autrement comme une interaction de robots.
 
       > Remarque :
       >
-      > * Les auteurs de formulaires peuvent spécifier un score dans la plage adaptée à l’envoi de formulaire non interrompu.
+      > * Les auteurs de formulaires peuvent spécifier un score dans la plage adaptée à l’envoi ininterrompu de formulaire.
 
    1. Appuyer **[!UICONTROL Créer]** pour créer la configuration du service cloud.
 
    1. Dans la boîte de dialogue Modifier le composant, spécifiez le nom, l’ID de projet, la clé du site, la clé API (obtenue aux étapes 2 et 3), sélectionnez le type de clé et saisissez le score de seuil. Appuyer **[!UICONTROL Paramètres d’enregistrement]** puis appuyez sur **[!UICONTROL OK]** pour terminer la configuration.
 
-Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé dans les formulaires adaptatifs. Voir [utilisation de CAPTCHA dans les formulaires adaptatifs](#using-recaptcha).
+Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé dans les formulaires adaptatifs. Voir [utilisation de CAPTCHA dans les formulaires adaptatifs](#using-reCAPTCHA).
 
-![Entreprise Recaptcha](assets/recaptcha1-enterprise.png)
+![reCAPTCHA Enterprise](/help/forms/using/assets/recaptcha1-enterprise.png)
 
 
-## Procédure de mise en oeuvre de reCAPTCHA v2 dans les formulaires {#steps-to-implement-recaptcha-v2-in-forms}
+## Configuration de Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
-1. Obtenir [paire de clés API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Il comprend un **clé du site** et un **clé secrète**.
+1. Obtenir [paire de clés API reCAPTCHA](https://www.google.com/reCAPTCHA/admin) de Google. Il comprend un **clé du site** et un **clé secrète**.
 1. Créez un conteneur de configuration pour les services cloud.
-
-   1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**.
-      * Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
+   1. Accédez à **[!UICONTROL Outils > Général > Navigateur de configuration]**. Pour plus d’informations, consultez la documentation relative au [Navigateur de configuration](/help/sites-administering/configurations.md).
    1. Procédez comme suit pour activer le dossier global pour les configurations cloud ou ignorez cette étape pour créer et configurer un autre dossier pour les configurations de service cloud.
 
       1. Dans le navigateur de configuration, sélectionnez le dossier **[!UICONTROL global]** et appuyez sur **[!UICONTROL Propriétés]**.
@@ -107,10 +100,10 @@ Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé
 
    Une fois le service reCAPTCHA configuré, il peut être utilisé dans les formulaires adaptatifs. Pour plus d’informations, voir [utilisation de CAPTCHA dans les formulaires adaptatifs](#using-captcha).
 
-![Recaptcha v2](assets/recaptcha-v2.png)
+![reCAPTCHA v2](/help/forms/using/assets/recaptcha-v2.png)
 
 
-## Utiliser reCAPTCHA dans les formulaires adaptatifs {#using-recaptcha}
+## Utiliser reCAPTCHA dans les formulaires adaptatifs {#using-reCAPTCHA}
 
 Pour utiliser reCAPTCHA dans les formulaires adaptatifs :
 
@@ -130,9 +123,9 @@ Pour utiliser reCAPTCHA dans les formulaires adaptatifs :
    >
    >Captcha est sensible au temps et arrive à expiration dans une minute. Par conséquent, il est recommandé de placer le composant Captcha juste avant le bouton Envoyer dans le formulaire adaptatif.
 
-1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/cmppr.png) pour modifier ses propriétés.
+1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/cmppr.png) pour modifier ses propriétés.
 1. Indiquez un titre pour le widget CAPTCHA. La valeur par défaut est **Captcha**. Sélectionnez **Masquer le titre** si vous ne voulez pas que le titre apparaisse.
-1. Dans le menu déroulant **Service Captcha**, sélectionnez **reCaptcha** pour activer le service reCAPTCHA si vous l’avez configuré comme décrit dans [Service ReCAPTCHA de Google](#google-recaptcha).
+1. Dans la **Service Captcha** menu déroulant, sélectionnez **reCAPTCHA** pour activer le service reCAPTCHA si vous l’avez configuré comme décrit à la section [Service reCAPTCHA par Google](#google-reCAPTCHA).
 1. Sélectionnez une configuration dans la liste déroulante Paramètres.
 1. **Si la configuration sélectionnée comporte la version reCAPTCHA Enterprise**:
    1. Vous pouvez sélectionner la configuration de cloud reCAPTCHA avec **type de clé** as **checkbox**. Dans le type de clé de case à cocher, le message d’erreur personnalisé s’affiche en ligne si la validation du captcha échoue. Vous pouvez sélectionner la taille **[!UICONTROL Normal]** et **[!UICONTROL Compact]**.
@@ -145,7 +138,7 @@ Pour utiliser reCAPTCHA dans les formulaires adaptatifs :
           <afUnboundData>
               <data>
                   <captcha16820607953761>
-                      <captchaType>reCaptchaEnterprise</captchaType>
+                      <captchaType>reCAPTCHAEnterprise</captchaType>
                       <captchaScore>0.9</captchaScore>
                   </captcha16820607953761>
               </data>
@@ -189,7 +182,7 @@ Pour utiliser reCAPTCHA dans les formulaires adaptatifs :
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                   <PersonalDetails>
                       <SSN>
-                          <captchaType>reCaptchaEnterprise</captchaType>
+                          <captchaType>reCAPTCHAEnterprise</captchaType>
                           <captchaScore>0.9</captchaScore>
                       </SSN>
                       <FirstName>Sarah</FirstName>
@@ -216,7 +209,7 @@ Pour utiliser reCAPTCHA dans les formulaires adaptatifs :
    **Si la configuration sélectionnée comporte la version reCAPTCHA v2**:
    1. Sélectionnez la taille comme **[!UICONTROL Normal]** ou **[!UICONTROL Compact]** pour le widget reCAPTCHA. Vous pouvez également sélectionner l’option **[!UICONTROL Invisible]** pour ne montrer le test CAPTCHA que dans le cas d’une activité suspecte. Le **protégé par reCAPTCHA** Le badge, affiché ci-dessous, s’affiche sur les formulaires protégés.
 
-      ![Badge protégé par reCAPTCHA de Google](assets/google-recaptcha-v2.png)
+      ![Badge protégé par reCAPTCHA de Google](/help/forms/using/assets/google-recaptcha-v2.png)
 
 
    Le service reCAPTCHA est activé sur le formulaire adaptatif. Vous pouvez prévisualiser le formulaire et voir le fonctionnement de CAPTCHA.
@@ -261,9 +254,10 @@ Pour valider un CAPTCHA en fonction des conditions et des actions des utilisateu
 1. Dans la section **[!UICONTROL Valider le CAPTCHA]**, sélectionnez **[!UICONTROL Valider le CAPTCHA sur une action utilisateur]**.
 1. Appuyez sur ![Terminé](assets/save_icon.svg) pour enregistrer les propriétés du composant.
 
-   > Remarque :
+   >[!NOTE]
    >
-   > * Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme **[!UICONTROL Invisible]** ou les clés basées sur un score reCAPTCHA Enterprise, puis Captcha valide sur une action de l’utilisateur ne s’appliquent pas.
+   >
+   > Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme **[!UICONTROL Invisible]** ou les clés basées sur un score reCAPTCHA Enterprise, puis Captcha valide sur une action de l’utilisateur ne s’appliquent pas.
 
 [!DNL Experience Manager Forms] fournit une API `ValidateCAPTCHA` pour valider le CAPTCHA à l’aide de conditions prédéfinies. Vous pouvez appeler l’API à l’aide d’une action d’envoi personnalisée ou en définissant des règles sur les composants d’un formulaire adaptatif.
 
@@ -271,7 +265,7 @@ Voici un exemple d’API `ValidateCAPTCHA` permettant de valider le CAPTCHA à l
 
 ```javascript
 if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
-    	GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
+        GuideCaptchaValidatorProvider apiProvider = sling.getService(GuideCaptchaValidatorProvider.class);
         String formPath = slingRequest.getResource().getPath();
         String captchaData = slingRequest.getParameter(GuideConstants.GUIDE_CAPTCHA_DATA);
         if (!apiProvider.validateCAPTCHA(formPath, captchaData).isCaptchaValid()){
@@ -341,4 +335,4 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` fait référence au chemin des ressources du composant CAPTCHA dans le référentiel Sling. Utilisez cette propriété pour inclure des détails spécifiques au composant CAPTCHA. Par exemple, `captchaPropertyNodePath` contient des informations pour la configuration du cloud reCAPTCHA configurée sur le composant CAPTCHA. Les informations de configuration du cloud fournissent les paramètres **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour la mise en œuvre du service reCAPTCHA.
 
-`userResponseToken` fait référence au `g_recaptcha_response` qui est généré après la résolution d’un CAPTCHA dans un formulaire.
+`userResponseToken` fait référence au `g_reCAPTCHA_response` qui est généré après la résolution d’un CAPTCHA dans un formulaire.

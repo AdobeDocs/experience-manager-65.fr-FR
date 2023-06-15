@@ -2,19 +2,15 @@
 title: Création ou ajout d’un formulaire adaptatif à une page AEM Sites
 description: Découvrez comment créer ou ajouter facilement un formulaire adaptatif à votre page AEM Sites sans effort. Découvrez les techniques et les bonnes pratiques étape par étape pour intégrer des formulaires dynamiques et personnalisables à votre site web, en optimisant vos expériences numériques pour un impact maximum.
 feature: Adaptive Forms
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2862'
 ht-degree: 1%
 
 ---
 
 
 # Création ou ajout d’un formulaire adaptatif à une page AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
-
-[!BADGE documentation de version préliminaire]{type=Caution tooltip="État jaune"}
-
-<span class="preview"> Il s’agit d’une documentation préliminaire qui peut être modifiée.</span>
 
 Avec AEM Forms, vous pouvez facilement incorporer des formulaires adaptatifs dans vos pages web. Cela permet à vos visiteurs de remplir et d’envoyer facilement des formulaires sans jamais quitter la page sur laquelle ils se trouvent. Ce faisant, ils peuvent rester en contact sans effort avec d’autres éléments du site web tout en interagissant activement avec le formulaire.
 
@@ -236,8 +232,6 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
    ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Sélectionner un modèle de données de formulaire. Ouvrez le **[!UICONTROL De base]** . Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage du brouillon du portail Forms]**.
-
-
 1. Cliquez sur **[!UICONTROL Terminé]**.
 
 ## Rediriger l’utilisateur vers un nouvel utilisateur lors de l’envoi du formulaire ou afficher un message de remerciement
