@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 0019e367-8edc-4a23-bfa4-5beda266ace6
 exl-id: 385f7924-e8ab-4dcb-83f0-7b81bead3dda
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '190'
 ht-degree: 12%
 
 ---
@@ -31,7 +31,7 @@ Le [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen
 
 Le code source de chacun de ces composants de l’API d’appareil est : [disponible sur Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Pour plus d’informations sur l’utilisation de chaque API, je vous recommande de jeter un coup d’oeil au [Documentation du module externe Cordova](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html).
+Pour plus d’informations sur l’utilisation de chaque API, je vous recommande de consulter la documentation du plug-in Cordova (`https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html`).
 
 ## Les étapes suivantes {#the-next-steps}
 

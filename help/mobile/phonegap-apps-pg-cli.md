@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 2%
 
 ---
@@ -27,17 +27,17 @@ Pour exécuter les exemples suivants, vous avez besoin d’un système exécutan
 
 ## Bootstrap de votre environnement de développement {#bootstrap-your-development-environment}
 
-[Configuration de l’interface de ligne de commande PhoneGap](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+Configuration de l’interface de ligne de commande PhoneGap (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
 Pour iOS : Pour développer pour iPhone et iPad, vous avez besoin d’Apple Xcode IDE.
 
 * Téléchargez-le gratuitement [here](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
-* [Guide de la plateforme PhoneGap iOS](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
+* Guide de la plateforme PhoneGap iOS (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Pour Android™ : Pour développer pour iPhone et iPad, vous avez besoin de Google Android™ Stuido IDE.
 
 * Téléchargez-le gratuitement [here](https://developer.android.com/studio).
-* [Guide de la plateforme PhoneGap Android™](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* Guide de la plateforme PhoneGap Android™ (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## Téléchargement de la source {#download-the-source}
 
@@ -67,7 +67,7 @@ L’interface de ligne de commande de PhoneGap peut créer un projet de platefor
 
 >[!NOTE]
 >
->Vous pouvez effectuer toutes ces étapes séparément, voir [Documentation de l’interface de ligne de commande PhoneGap](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>Vous pouvez effectuer toutes ces étapes séparément, voir la documentation sur la ligne de commande de PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. Vérifiez que vous avez installé l’interface de ligne de commande PhoneGap, voir ci-dessus.
 1. Dans une fenêtre de console (ou de terminal), accédez au répertoire racine de la source extraite.

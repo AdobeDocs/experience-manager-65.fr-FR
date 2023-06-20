@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3280'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,6 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
    1. Cliquez sur l’onglet Informations d’identification de sécurité .
    1. Vous voyez ici vos clés et créez de nouvelles clés. Enregistrez les clés pour une utilisation ultérieure.
 
-
 1. **Création d’une rubrique**
 
    1. Cliquez sur **Création d’une rubrique** et choisissez un nom de rubrique. Enregistrez tous les champs tels que Topic ARN, Topic Owner, Region, Display name.
@@ -150,8 +149,8 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
 
       1. Pour APNS, un fichier P12, un mot de passe, un certificat et une clé privée doivent tous être renseignés. Elles doivent avoir été obtenues à l’étape *Utilisation du service de notification push Apple (APNS)* ci-dessus.
       1. Pour GCM, une clé API doit être saisie. Cela aurait dû être obtenu à l’étape *Utilisation du service Google Cloud Messaging (GCM)* ci-dessus.
-   1. Répétez l’étape ci-dessus une fois pour chaque plateforme que vous prendrez en charge. Pour pouvoir envoyer des notifications push vers iOS et Android, deux applications Platform doivent être créées.
 
+   1. Répétez l’étape ci-dessus une fois pour chaque plateforme que vous prendrez en charge. Pour pouvoir envoyer des notifications push vers iOS et Android, deux applications Platform doivent être créées.
 
 1. **Création d’un pool d’identités**
 
@@ -178,7 +177,6 @@ Pour configurer Amazon SNS pour les notifications push, procédez comme suit :
     </table>
 
    1. Cliquez sur **Appliquer la stratégie**
-
 
 #### Utilisation du service de messagerie Pushwoosh {#using-the-pushwoosh-messaging-service}
 
@@ -276,9 +274,9 @@ Il existe deux manières de créer et déployer votre application à l’aide de
 
 **Remarque :** Pour les tests de notification push, les émulateurs ne suffiront pas, car les notifications push utilisent un protocole distinct entre le fournisseur push (Apple ou Google) et l’appareil. Les émulateurs et le matériel Mac/PC actuels ne prennent pas en charge cette fonctionnalité.
 
-1. *PhoneGap Build* est un service proposé par PhoneGap qui crée votre application pour vous sur leurs serveurs et vous permet de la télécharger directement sur votre appareil. Reportez-vous à la section [Documentation du PhoneGap Build](https://build.phonegap.com/) pour apprendre à configurer et à utiliser le PhoneGap Build.
+1. *PhoneGap Build* est un service proposé par PhoneGap qui crée votre application pour vous sur leurs serveurs et vous permet de la télécharger directement sur votre appareil. Voir la documentation PhoneGap Build à l’adresse `https://build.phonegap.com/` pour apprendre à configurer et à utiliser le PhoneGap Build.
 
-1. *Interface de ligne de commande PhoneGap* (interface de ligne de commande) vous permet d’utiliser un vaste ensemble de commandes PhoneGap sur votre ligne de commande pour créer, déboguer et déployer votre application. Reportez-vous à la section [Documentation destinée aux développeurs PhoneGap](https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface) pour savoir comment configurer et utiliser l’interface de ligne de commande de PhoneGap.
+1. *Interface de ligne de commande PhoneGap* (interface de ligne de commande) vous permet d’utiliser un vaste ensemble de commandes PhoneGap sur votre ligne de commande pour créer, déboguer et déployer votre application. Reportez-vous à la documentation destinée aux développeurs PhoneGap (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) pour savoir comment configurer et utiliser l’interface de ligne de commande de PhoneGap.
 
 ### Étape 7 : Envoi d’une notification push {#step-send-a-push-notification}
 

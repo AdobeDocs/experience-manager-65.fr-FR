@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Si votre code côté client est étroitement lié à un composant spécifique, p
 
 ## Configuration PhoneGap {#phonegap-configuration}
 
-Chaque application AEM Mobile contient un répertoire qui héberge les fichiers de configuration utilisés par PhoneGap. [interface de ligne de commande](https://github.com/phonegap/phonegap-cli) et [Build PhoneGap](https://build.phonegap.com/) pour transformer votre contenu web en application exécutable. Dans l’exemple de Geometrixx, par exemple, ce répertoire (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) fait partie de l’environnement. une décision de conception prise en raison du fait qu’elle contient uniquement du contenu qui ne peut pas être mis à jour en direct, comme des modules externes qui traitent des API d’appareil et de la configuration de l’application elle-même.
+Chaque application AEM Mobile contient un répertoire qui héberge les fichiers de configuration utilisés par PhoneGap. [interface de ligne de commande](https://github.com/phonegap/phonegap-cli) et PhoneGap Build à l’adresse `https://build.phonegap.com/` pour transformer votre contenu web en application exécutable. Dans l’exemple de Geometrixx, par exemple, ce répertoire (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) fait partie de l’environnement. une décision de conception prise en raison du fait qu’elle contient uniquement du contenu qui ne peut pas être mis à jour en direct, comme des modules externes qui traitent des API d’appareil et de la configuration de l’application elle-même.
 
 Dans ce répertoire, vous trouverez également un certain nombre de [Hooks Cordova](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) qui peuvent être utilisés pour installer des modules externes, placer des fichiers de ressources à des emplacements spécifiques à leur plateforme, ainsi que d’autres actions qui doivent être exécutées dans le cadre de la génération. Remarque : au lieu de télécharger chaque module externe dans le cadre de la génération, vous pouvez suivre le modèle de l’application Kitchen Sink et [inclure le code source du module externe](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) avec le reste de votre projet d’application.
 

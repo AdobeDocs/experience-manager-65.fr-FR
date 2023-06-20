@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 2%
+source-wordcount: '1023'
+ht-degree: 3%
 
 ---
 
@@ -29,7 +29,7 @@ Lors du développement d’une application mobile, il existe de nombreuses nouve
 
 * Fonctionnel : toutes les exigences sont-elles respectées par votre application ?
 * Fonctionnalité : l’application est-elle facile à utiliser et à comprendre par votre client ?
-* Performances : que se passe-t-il lors d’un pic d’utilisation ? Les éléments de l’application, tels que les glissières et les carrousels, sont-ils rapides et ne vous détournent pas de l’expérience ?
+* Performances : que se passe-t-il lors d’un pic d’utilisation ? Les éléments de l’application, tels que les glissières et les carrousels, sont-ils rapides et ne détournent pas l’expérience de l’expérience ?
 * Échec ou interruption - Que se passe-t-il en cas d’appel ou de notification entrant pendant l’exécution de votre application ? Que se passe-t-il en cas de panne de réseau ou de panne de courant ?
 * Installation et mises à jour - Comment se passe l’installation ? Comment les mises à jour sont-elles publiées ?
 * Technique - Votre application consomme-t-elle trop d’énergie d’un appareil ?
@@ -46,7 +46,7 @@ Un certain degré de test automatisé doit être effectué pour couvrir la vari�
 
 ## Test manuel {#manual-testing}
 
-Outre les tests automatisés, votre application doit passer par un cycle de tests manuels. Les clients exécutant l’application sur un appareil réel ne peuvent pas être dupliqués par un script. Ici aussi, vous avez de nombreuses options. Vous pouvez utiliser une plateforme, telle que HockeyApp, pour définir qui a accès et recueillir des commentaires. Vous pouvez également déléguer l’ensemble du processus à un service tel que UTest, ElusiveStars ou Testin. Si vous disposez d’un groupe de testeurs internes, mais que vous ne disposez pas de variantes d’appareils, il existe des services cloud où vous pouvez effectuer des tests manuels sur leur groupe de périphériques. L&#39;un de ces services est SauceLabs. Vous pouvez également créer des applications à distance sur PhoneGap Enterprise et les installer sur des périphériques locaux sous la forme de tests d’acceptation ou de démonstration. Voir [PhoneGap](https://phonegap.com/) site web pour connaître les dernières fonctionnalités et la documentation la plus récente. Quelle que soit l&#39;approche, les tests manuels devraient être effectués;
+Outre les tests automatisés, votre application doit passer par un cycle de tests manuels. Les clients exécutant l’application sur un appareil réel ne peuvent pas être dupliqués par un script. Ici aussi, vous avez de nombreuses options. Vous pouvez utiliser une plateforme, telle que HockeyApp, pour définir qui a accès et recueillir des commentaires. Vous pouvez également déléguer l’ensemble du processus à un service tel que UTest, ElusiveStars ou Testin. Si vous disposez d’un groupe de testeurs internes, mais que vous ne disposez pas de variantes d’appareils, il existe des services cloud où vous pouvez effectuer des tests manuels sur leur groupe de périphériques. L&#39;un de ces services est SauceLabs. Vous pouvez également créer des applications à distance sur PhoneGap Enterprise et les installer sur des périphériques locaux sous la forme de tests d’acceptation ou de démonstration. Voir PhoneGap (`https://phonegap.com/`) pour consulter la documentation la plus récente. Quelle que soit l&#39;approche, les tests manuels devraient être effectués;
 
 * atteindre une cible importante de testeurs,
 * tester par rapport à un grand groupe d’appareils (idéalement des appareils réels, mais des simulateurs/émulateurs si des appareils réels ne sont pas disponibles),
@@ -70,7 +70,7 @@ Un large éventail d’outils est disponible pour tester les applications mobile
 * SeleniumGrid redirige les tests entre les noeuds pour les tests parallèles.
 * L’IDE Selenium permet de réduire l’écriture de cas de test.
 
-Pour plus d’informations, voir [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Pour plus d’informations, consultez [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
 
 **Testdroid**
 

@@ -1,7 +1,7 @@
 ---
 title: Développer des composants AEM (IU classique)
 seo-title: Developing AEM Components (Classic UI)
-description: L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparence aux composants. HTL n’est pas le langage de script recommandé pour AEM.
+description: L’IU classique utilise ExtJS pour créer des widgets qui donnent une apparence aux composants. HTL n’est pas le langage de script recommandé pour AEM.
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
 uuid: ed53d7c6-5996-4892-81a4-4ac30df85f04
 contentOwner: User
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: ht
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+workflow-type: tm+mt
 source-wordcount: '2392'
-ht-degree: 100%
+ht-degree: 57%
 
 ---
 
 # Développer des composants AEM (IU classique){#developing-aem-components-classic-ui}
 
-L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparence aux composants. Compte tenu de la nature de ces widgets, il existe des différences entre la façon dont les composants interagissent avec l’interface utilisateur classique et l’[interface utilisateur classique tactile](/help/sites-developing/developing-components.md).
+L’IU classique utilise ExtJS pour créer des widgets qui donnent une apparence aux composants. En raison de la nature de ces widgets, il existe des différences entre la manière dont les composants interagissent avec l’IU classique et la [IU tactile](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
@@ -34,11 +34,11 @@ L’IU classique utilise ExtJS pour créer des widgets qui donnent leur apparenc
 
 ## Structure {#structure}
 
-La structure de base d’un composant est traitée à la page [Principes de base des composants AEM](/help/sites-developing/components-basics.md#structure) qui s’applique aux interfaces utilisateur classique et tactile. Même si vous ne devez pas utiliser les paramètres de l’IU tactile dans votre nouveau composant, il est intéressant de les connaître lorsque vous héritez des composants existants.
+La structure de base d’un composant est traitée à la page [Principes de base des composants AEM](/help/sites-developing/components-basics.md#structure) qui s’applique aux interfaces utilisateur classique et tactile. Même si vous n’avez pas besoin d’utiliser les paramètres de l’interface utilisateur tactile dans votre nouveau composant, il peut être utile de les connaître lors de l’héritage de composants existants.
 
 ## Scripts JSP {#jsp-scripts}
 
-Les servlets ou scripts JSP peuvent être utilisés pour le rendu des composants. Selon les règles de traitement des requêtes de Sling, le nom du script par défaut est :
+Les scripts ou servlets JSP peuvent être utilisés pour effectuer le rendu des composants. Selon les règles de traitement des requêtes de Sling, le nom du script par défaut est :
 
 `<*componentname*>.jsp`
 
@@ -81,37 +81,37 @@ Résumé :
 
 ### Accès au contenu {#accessing-content}
 
-Il existe trois méthodes pour accéder au contenu dans AEM WCM :
+Il existe trois méthodes pour accéder au contenu dans AEM WCM :
 
 * Par le biais de l’objet de propriétés introduit dans `global.jsp` :
 
-   L’objet de propriétés est une instance d’une ValueMap (voir [API Sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) et contient toutes les propriétés de la ressource active.
+  L’objet de propriétés est une instance d’une ValueMap (voir [API Sling](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) et contient toutes les propriétés de la ressource active.
 
-   Exemple : `String pageTitle = properties.get("jcr:title", "no title");` utilisé dans le script de rendu d’un composant de page.
+  Exemple : `String pageTitle = properties.get("jcr:title", "no title");` utilisé dans le script de rendu d’un composant de page.
 
-   Exemple : `String paragraphTitle = properties.get("jcr:title", "no title");` utilisé dans le script de rendu d’un composant de paragraphe standard.
+  Exemple : `String paragraphTitle = properties.get("jcr:title", "no title");` utilisé dans le script de rendu d’un composant de paragraphe standard.
 
 * Par le biais de l’objet `currentPage` introduit dans `global.jsp` :
 
-   L’objet `currentPage` est une instance d’une page (voir [API AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). La classe de page fournit plusieurs méthodes d’accès au contenu.
+  L’objet `currentPage` est une instance d’une page (voir [API AEM](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). La classe de page fournit plusieurs méthodes d’accès au contenu.
 
-   Exemple : `String pageTitle = currentPage.getTitle();`
+  Exemple : `String pageTitle = currentPage.getTitle();`
 
 * Par le biais de l’objet `currentNode` introduit dans `global.jsp` :
 
-   L’objet `currentNode` est une instance d’un nœud (voir [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Les propriétés d’un nœud sont accessibles via la méthode `getProperty()`.
+  L’objet `currentNode` est une instance d’un nœud (voir [API JCR](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). Les propriétés d’un nœud sont accessibles via la méthode `getProperty()`.
 
-   Exemple : `String pageTitle = currentNode.getProperty("jcr:title");`
+  Exemple : `String pageTitle = currentNode.getProperty("jcr:title");`
 
-## Bibliothèques de balises JSP {#jsp-tag-libraries}
+## Bibliothèques de balises JSP {#jsp-tag-libraries}
 
-Les bibliothèques de balises CQ et Sling vous donnent accès à des fonctions spécifiques à utiliser dans le script JSP de vos modèles et composants.
+Les bibliothèques de balises CQ et Sling vous donnent accès à des fonctions spécifiques à utiliser dans le script JSP de vos modèles et composants.
 
 Pour plus d’informations, consultez le document [Bibliothèques de balises](/help/sites-developing/taglib.md).
 
-## Utilisation de bibliothèques HTML côté client {#using-client-side-html-libraries}
+## Utilisation de bibliothèques de HTMLS côté client {#using-client-side-html-libraries}
 
-Les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
+Les sites web modernes reposent principalement sur un traitement côté client piloté par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
 Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté client** qui permettent de stocker le code côté client dans le référentiel, de le classer par catégorie et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
 
@@ -119,13 +119,13 @@ Pour plus d’informations, consultez le document [Utilisation de bibliothèques
 
 ## Boîte de dialogue {#dialog}
 
-Votre composant a besoin d’une boîte de dialogue pour que les auteurs puissent ajouter et configurer le contenu.
+Votre composant aura besoin d’une boîte de dialogue pour que les auteurs puissent ajouter et configurer le contenu.
 
 Pour plus d’informations, consultez [Composants AEM – Principes de base](/help/sites-developing/components-basics.md#dialogs).
 
 ## Configuration du comportement de modification {#configuring-the-edit-behavior}
 
-Vous pouvez configurer le comportement de modification d’un composant. Cela inclut les attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur statique et les écouteurs associés aux événements sur le composant. La configuration est commune aux interfaces utilisateur tactile et classique, avec cependant quelques différences spécifiques.
+Vous pouvez configurer le comportement de modification d’un composant. Cela inclut les attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur statique et les écouteurs liés aux événements sur le composant. La configuration est commune aux IU tactile et classique, bien qu’avec certaines différences spécifiques.
 
 La [configuration du comportement de modification d’un composant](/help/sites-developing/components-basics.md#edit-behavior) s’effectue en ajoutant un nœud `cq:editConfig` de type `cq:EditConfig` sous le nœud de composant (de type `cq:Component`), ainsi qu’en ajoutant des nœuds enfants et des propriétés spécifiques.
 
@@ -135,38 +135,39 @@ Pour plus d’informations, consultez [Utilisation et extension de widgets ExtJS
 
 ## Utilisation de xtypes pour les widgets ExtJS {#using-xtypes-for-extjs-widgets}
 
-Pour plus d’informations, voir [Utilisation de xtypes](/help/sites-developing/xtypes.md).
+Voir [Utilisation de xtypes](/help/sites-developing/xtypes.md) pour plus d’informations.
 
 ## Développement de nouveaux composants {#developing-new-components}
 
-Cette section vous explique comment créer vos propres composants et les ajouter au système de paragraphes.
+Cette section décrit comment créer vos propres composants et les ajouter au système de paragraphes.
 
 Pour commencer rapidement, une méthode consiste à copier un élément existant, puis à effectuer les modifications de votre choix.
 
-Le développement d’un composant est décrit en détail dans la section [Extension du composant texte et image – Exemple](#extending-the-text-and-image-component-an-example).
+Un exemple de développement d’un composant est décrit en détail dans la section [Extension du composant Texte et image - Exemple.](#extending-the-text-and-image-component-an-example)
 
 ### Développement d’un nouveau composant (adaptation d’un composant existant) {#develop-a-new-component-adapt-existing-component}
 
-Pour développer un nouveau composant pour AEM sur la base d’un composant existant, vous pouvez copier ce composant, créer un fichier JavaScript pour le nouveau composant et le stocker dans un emplacement accessible à AEM (voir [Personnalisation des composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)) :
+Pour développer de nouveaux composants pour AEM en fonction du composant existant, vous pouvez copier le composant, créer un fichier JavaScript pour le nouveau composant et le stocker dans un emplacement accessible à AEM (voir également [Personnalisation des composants et autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)) :
 
-1. À l’aide de CRXDE Lite, créez un dossier de composants dans :
+1. À l’aide de CRXDE Lite, créez un dossier de composants dans :
 
    / `apps/<myProject>/components/<myComponent>`
 
-   Recréez la structure de nœud comme dans libs, puis copiez la définition d’un composant existant, tel que le composant Texte. Par exemple, pour personnaliser le composant Texte, copiez :
+   Recréez la structure de noeud comme dans libs, puis copiez la définition d’un composant existant, tel que le composant Texte . Par exemple, pour personnaliser le composant Texte, copiez :
 
    * de `/libs/foundation/components/text`
    * vers `/apps/myProject/components/text`
 
 1. Modifiez le `jcr:title` en tenant compte de son nouveau nom.
-1. Ouvrez le nouveau dossier de composants et effectuez les modifications voulues. Supprimez également toute information superflue du dossier.
+1. Ouvrez le nouveau dossier de composants et apportez les modifications nécessaires. Supprimez également toutes les informations superflues contenues dans le dossier.
 
-   Vous pouvez effectuer les modifications suivantes :
+   Vous pouvez apporter des modifications telles que :
 
-   * Ajouter un nouveau champ dans la boîte de dialogue
+   * ajout d’un nouveau champ dans la boîte de dialogue
 
       * `cq:dialog` : boîte de dialogue pour l’interface utilisateur tactile
       * `dialog` : boîte de dialogue pour l’interface utilisateur classique
+
    * Remplacer le fichier `.jsp` (lui donner le nom du nouveau composant) ou
    * Retravailler complètement le composant, si vous le souhaitez
 
@@ -177,14 +178,13 @@ Pour développer un nouveau composant pour AEM sur la base d’un composant exis
    >Un composant pour :
    >
    >* l’interface utilisateur tactile utilise des composants [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) ;
-   >* l’interface utilisateur classique utilise des [widgets ExtJS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
-
+   >* L’interface utilisateur classique utilise [Widgets ExtJS](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 
    >[!NOTE]
    >
-   >Une boîte de dialogue définie pour l’interface utilisateur classique fonctionne dans l’interface utilisateur tactile.
+   >Une boîte de dialogue définie pour l’IU classique fonctionnera dans l’IU tactile.
    >
-   >En revanche, une boîte de dialogue définie pour l’interface utilisateur tactile ne fonctionne pas dans l’interface utilisateur classique.
+   >Une boîte de dialogue définie pour l’IU tactile ne fonctionnera pas dans l’IU classique.
    >
    >En fonction de l’instance et de l’environnement de création, vous pouvez définir les deux types de boîte de dialogue pour votre composant.
 
@@ -198,53 +198,53 @@ Pour développer un nouveau composant pour AEM sur la base d’un composant exis
 1. Activez le nouveau composant dans votre système de paragraphes en effectuant l’une des opérations suivantes :
 
    * Utilisez CRXDE Lite pour ajouter la valeur `<path-to-component>` (par exemple : `/apps/geometrixx/components/myComponent`) à la propriété Composants du nœud `/etc/designs/geometrixx/jcr:content/contentpage/par`.
-   * Suivez les instructions de la section [Ajout de nouveaux composants aux systèmes de paragraphes](#adding-a-new-component-to-the-paragraph-system-design-mode).
+   * suivez les instructions de la section [Ajout de nouveaux composants aux systèmes de paragraphes](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. Dans AEM WCM, ouvrez une page de votre site web et insérez un nouveau paragraphe du type que vous venez de créer pour vous assurer que le composant fonctionne correctement.
+1. Dans AEM WCM, ouvrez une page de votre site web et insérez un nouveau paragraphe du type que vous venez de créer pour vous assurer que le composant fonctionne correctement.
 
 >[!NOTE]
 >
 >Pour afficher des statistiques de durée pour le chargement d’une page, vous pouvez utiliser la combinaison de touches Ctrl+Maj+U, avec `?debugClientLibs=true` défini dans l’URL.
 
-### Ajout d’un nouveau composant au système de paragraphes (mode Création) {#adding-a-new-component-to-the-paragraph-system-design-mode}
+### Ajout d’un nouveau composant au système de paragraphes (mode de conception) {#adding-a-new-component-to-the-paragraph-system-design-mode}
 
-Une fois que le composant a été développé, vous l’ajoutez au système de paragraphes, ce qui permet aux auteurs de le sélectionner et de l’utiliser lors de la modification d’une page.
+Une fois le composant développé, vous l’ajoutez au système de paragraphes, ce qui permet aux auteurs de sélectionner et d’utiliser le composant lors de la modification d’une page.
 
 1. Accédez à une page de votre environnement de création qui utilise le système de paragraphes ; par exemple, `<contentPath>/Test.html`.
 1. Pour basculer vers le mode Création, effectuez l’une des opérations suivantes :
 
    * Ajoutez `?wcmmode=design` à la fin de l’URL et accédez-y à nouveau. Par exemple :
 
-      `<contextPath>/ Test.html?wcmmode=design`
+     `<contextPath>/ Test.html?wcmmode=design`
 
-   * Cliquez sur Conception dans le sidekick.
+   * en cliquant sur Conception dans Sidekick
 
-   Vous êtes maintenant en mode Création et vous pouvez modifier le système de paragraphes.
+   Vous êtes désormais en mode de conception et pouvez modifier le système de paragraphes.
 
 1. Cliquez sur Modifier.
 
-   La liste des composants appartenant au système de paragraphes est affichée. Votre nouveau composant est également répertorié.
+   Une liste des composants appartenant au système de paragraphes s’affiche. Votre nouveau composant est également répertorié.
 
    Les composants peuvent être activés (ou désactivés) pour déterminer lesquels sont proposés à l’auteur lors de la modification d’une page.
 
-1. Activez votre composant, puis revenez au mode d’édition normal pour vérifier qu’il est bien disponible.
+1. Activez votre composant, puis revenez au mode d’édition normal pour confirmer qu’il est disponible.
 
-### Extension du composant Texte et image – Exemple {#extending-the-text-and-image-component-an-example}
+### Extension du composant Texte et image - Exemple {#extending-the-text-and-image-component-an-example}
 
-Cette section vous explique comment étendre le composant Texte et image standard (un composant couramment utilisé) avec une fonctionnalité de placement d’images configurable.
+Cette section fournit un exemple d’extension du composant standard Texte et Image, largement utilisé, avec une fonctionnalité de placement d’image configurable.
 
-L’extension du composant Texte et image permet aux éditeurs d’utiliser toutes les fonctionnalités existantes du composant et leur offre, en outre, la possibilité de positionner l’image :
+L’extension au composant texte et image permet aux éditeurs d’utiliser toutes les fonctionnalités existantes du composant et d’avoir une option supplémentaire pour spécifier l’emplacement de l’image :
 
 * Sur le côté gauche du texte (comportement actuel et nouvelle valeur par défaut)
 * Ainsi que sur le côté droit
 
-Après avoir étendu ce composant, vous pouvez configurer le positionnement des images au moyen de la boîte de dialogue correspondante.
+Après avoir étendu ce composant, vous pouvez configurer le placement d’image par le biais de la boîte de dialogue du composant.
 
-Les techniques suivantes sont décrites dans cet exercice :
+Les techniques suivantes sont décrites dans cet exercice :
 
-* Copie du nœud de composant existant et modification de ses métadonnées
+* Copie d’un noeud de composant existant et modification de ses métadonnées
 * Modification de la boîte de dialogue du composant, y compris l’héritage des widgets des boîtes de dialogue parentes
-* Modification du script du composant pour mettre en œuvre la nouvelle fonctionnalité
+* Modification du script du composant pour mettre en oeuvre la nouvelle fonctionnalité
 
 >[!NOTE]
 >
@@ -275,16 +275,17 @@ Pour créer le composant, nous allons nous baser sur le composant textimage stan
    >* Interface utilisateur optimisée pour les écrans tactiles : `textimage/cq:dialog`
    >* Interface utilisateur classique : `textimage/dialog`
 
-
 1. Modifiez les métadonnées du composant :
 
    * Nom du composant
 
       * Définissez `jcr:description` sur `Text Image Component (Extended)`.
       * Définissez `jcr:title` sur `Text Image (Extended)`.
+
    * Groupe où le composant est répertorié dans le sidekick (laisser tel quel)
 
       * Conservez la définition de `componentGroup` sur `General`.
+
    * Composant parent pour le nouveau composant (le composant textimage standard)
 
       * Définissez `sling:resourceSuperType` sur `foundation/components/textimage`.
@@ -297,20 +298,21 @@ Pour créer le composant, nous allons nous baser sur le composant textimage stan
 
    De cette manière, lorsqu’une image est déposée sur le composant de la page, la propriété `sling:resourceType` du composant textimage étendu est définie sur `geometrixx/components/textimage.`.
 
-1. Modifiez la boîte de dialogue du composant afin d’inclure la nouvelle option. Le nouveau composant hérite des sections de la boîte de dialogue qui sont identiques à l’original. Le seul ajout que nous effectuons consiste à étendre l’onglet **Avancé**, en ajoutant une liste déroulante **Position d’image**, avec les options **Gauche** et **Droite** :
+1. Modifiez la boîte de dialogue du composant pour inclure la nouvelle option. Le nouveau composant hérite des parties de la boîte de dialogue qui sont identiques à celles de l’original. Le seul ajout que nous faisons est d&#39;étendre la variable **Avancé** , ajout d’un **Position de l’image** liste déroulante, avec options **Left** et **Right**:
 
    * Laissez les propriétés `textimage/dialog` telles quelles.
 
    Notez que `textimage/dialog/items` comporte quatre sous-nœuds, tab1 à tab4, qui représentent les quatre onglets de la boîte de dialogue textimage.
 
-   * Pour les deux premiers onglets (tab1 et tab2) :
+   * Pour les deux premiers onglets (tab1 et tab2) :
 
-      * Changez xtype en cqinclude (pour hériter du composant standard).
+      * Modifiez xtype en cqinclude (pour hériter du composant standard).
       * Ajoutez une propriété path avec les valeurs `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` et `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectivement.
-      * Supprimez toutes les autres propriétés ou tous les autres sous-nœuds.
-   * Pour tab3 :
+      * Supprimez toutes les autres propriétés ou sous-noeuds.
 
-      * Ne modifiez pas les autres propriétés et sous-nœuds.
+   * Pour tab3 :
+
+      * Ne modifiez pas les propriétés et les sous-noeuds.
       * Ajoutez une nouvelle définition de champ à `tab3/items`, la position du nœud de type `cq:Widget`.
       * Définissez les propriétés suivantes (du type String) pour le nouveau nœud `tab3/items/position` :
 
@@ -318,9 +320,11 @@ Pour créer le composant, nous allons nous baser sur le composant textimage stan
          * `xtype`: `selection`
          * `fieldLabel`: `Image Position`
          * `type`: `select`
+
       * Ajoutez un sous-nœud `position/options` de type `cq:WidgetCollection` pour représenter les deux options de positionnement d’images. En dessous, créez deux nœuds, o1 et o2, de type `nt:unstructured`.
       * Pour le nœud `position/options/o1`, définissez les propriétés : `text` sur `Left` et `value` sur `left.`
       * Pour le nœud `position/options/o2`, définissez les propriétés : `text` sur `Right` et `value` sur `right`.
+
    * Supprimez tab4.
 
    La position de l’image est conservée dans le contenu en tant que propriété `imagePosition` du nœud représentant le paragraphe `textimage`. Après avoir suivi ces étapes, la boîte de dialogue du composant ressemble à ceci :
@@ -352,20 +356,20 @@ Pour créer le composant, nous allons nous baser sur le composant textimage stan
 
 #### Vérification du nouveau composant {#checking-the-new-component}
 
-Une fois que le composant a été développé, vous pouvez l’ajouter au système de paragraphes, ce qui permet aux auteurs de le sélectionner et de l’utiliser lors de la modification d’une page. Les étapes suivantes vous permettent de tester le composant.
+Une fois le composant développé, vous pouvez l’ajouter au système de paragraphes, ce qui permet aux auteurs de sélectionner et d’utiliser le composant lors de la modification d’une page. Ces étapes vous permettent de tester le composant.
 
-1. Ouvrez une page dans Geometrixx ; English / Company, par exemple.
-1. Basculez vers le mode Création en cliquant sur Conception dans le sidekick.
-1. Modifiez la conception du système de paragraphes en cliquant sur Modifier dans le système de paragraphes au milieu de la page. La liste des composants qui peuvent être placés dans le système de paragraphes s’affiche alors. Elle doit inclure le composant que vous venez de développer, à savoir Texte Image (Étendu). Activez-le pour le système de paragraphes en le sélectionnant et en cliquant sur OK.
+1. Ouvrez une page en Geometrixx, par exemple en anglais/société.
+1. Passez en mode de conception en cliquant sur Conception dans Sidekick.
+1. Modifiez la conception du système de paragraphes en cliquant sur Modifier dans le système de paragraphes au milieu de la page. Une liste des composants, qui peuvent être placés dans le système de paragraphes, s’affiche. Elle doit inclure votre nouveau composant, Texte Image (Étendu) . Activez-le pour le système de paragraphes en le sélectionnant et en cliquant sur OK .
 1. Revenez au mode d’édition.
-1. Ajoutez le paragraphe Texte Image (Étendu) au système de paragraphes, puis initialisez le texte et l’image avec l’échantillon de contenu. Enregistrez les modifications.
-1. Ouvrez la boîte de dialogue du paragraphe de texte et d’image, définissez la position de l’image sur Droite dans l’onglet Avancé, puis cliquez sur OK pour enregistrer les modifications.
-1. Le rendu du paragraphe est effectué avec l’image sur la droite.
+1. Ajoutez le paragraphe Image texte (étendue) au système de paragraphes, initialisez le texte et l’image avec un exemple de contenu. Enregistrez les modifications.
+1. Ouvrez la boîte de dialogue du paragraphe de texte et d’image, définissez la position de l’image dans l’onglet Avancé sur Droite , puis cliquez sur OK pour enregistrer les modifications.
+1. Le rendu du paragraphe est effectué avec l’image à droite.
 1. Le composant est maintenant prêt à l’emploi.
 
-Le composant stocke son contenu dans un paragraphe sur la page Company.
+Le composant stocke son contenu dans un paragraphe sur la page Société.
 
-### Désactivation de la fonctionnalité Téléchargement du composant image {#disable-upload-capability-of-the-image-component}
+### Désactivation de la fonctionnalité de téléchargement du composant Image {#disable-upload-capability-of-the-image-component}
 
 Pour désactiver cette fonctionnalité, nous allons utiliser le composant image standard et le modifier. Nous allons stocker le nouveau composant dans l’exemple d’application Geometrixx.
 
@@ -387,11 +391,11 @@ Pour désactiver cette fonctionnalité, nous allons utiliser le composant image 
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
 1. Cliquez sur **Enregistrer tout**. Le composant est prêt à être testé.
-1. Ouvrez une page dans Geometrixx ; English / Company, par exemple.
-1. Basculez vers le mode Création et activez Image (Étendu).
-1. Revenez au mode d’édition et ajoutez-le au système de paragraphes. Sur les images suivantes, vous pouvez voir les différences entre le composant image d’origine et celui que vous venez de créer.
+1. Ouvrez une page en Geometrixx, par exemple en anglais/société.
+1. Passez en mode de conception et activez Image (étendu).
+1. Revenez au mode d’édition et ajoutez-le au système de paragraphes. Sur les images suivantes, vous pouvez voir les différences entre le composant d’image d’origine et celui que vous venez de créer.
 
-   Composant image d’origine :
+   Composant image d’origine :
 
    ![chlimage_1-64](assets/chlimage_1-64a.png)
 

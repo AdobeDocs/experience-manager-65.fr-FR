@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ Le corps d’une page d’Angular est rendu différemment selon que wcmMode est 
 
 En mode création, chaque page individuelle est rendue séparément. Angular ne gère pas le routage entre les pages, pas plus qu’un mode ng n’est utilisé pour charger un modèle partiel contenant les composants de la page. Au lieu de cela, le contenu du modèle de page (template.jsp) est inclus du côté serveur via l’événement `cq:include` balise .
 
-Cette stratégie active les fonctionnalités de création (telles que l’ajout et la modification de composants dans le système de paragraphes, le sidekick, le mode de conception, etc.) pour fonctionner sans modification. Les pages qui reposent sur le rendu côté client, comme celles des applications, ne fonctionnent pas correctement en mode de création AEM.
+Cette stratégie active les fonctionnalités de création (telles que l’ajout et la modification de composants dans le système de paragraphes, le Sidekick, le mode de conception, etc.) pour fonctionner sans modification. Les pages qui reposent sur le rendu côté client, comme celles des applications, ne fonctionnent pas correctement en mode de création AEM.
 
 Notez que l’inclusion template.jsp est encapsulée dans une `div` qui contient l’élément `ng-controller` . Cette structure permet de lier le contenu DOM au contrôleur. Par conséquent, bien que les pages qui s’affichent du côté client échouent, les composants individuels qui le font fonctionnent correctement (voir la section sur les composants ci-dessous).
 
@@ -369,7 +369,7 @@ Le répertoire www contient tout le contenu web (fichiers HTML, JS et CSS) qui m
 
 #### www/config.xml {#www-config-xml}
 
-Le [Documentation PhoneGap](https://docs.phonegap.com) fait référence à ce fichier en tant que &quot;fichier de configuration global&quot;. Le fichier config.xml contient de nombreuses propriétés d’application, telles que le nom de l’application, les &quot;préférences&quot; de l’application (par exemple, si un affichage Web iOS permet de surfaire le défilement) et les dépendances de module externe qui sont *only* consommé par la version PhoneGap.
+Documentation PhoneGap (`https://docs.phonegap.com`) fait référence à ce fichier en tant que &quot;fichier de configuration global&quot;. Le fichier config.xml contient de nombreuses propriétés d’application, telles que le nom de l’application, les &quot;préférences&quot; de l’application (par exemple, si un affichage Web iOS permet de surfaire le défilement) et les dépendances de module externe qui sont *only* consommé par la version PhoneGap.
 
 Le fichier config.xml est un fichier statique dans AEM et est exporté en l’état par synchronisation de contenu.
 
@@ -381,7 +381,7 @@ Le fichier config.xml contient la variable `content` element:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-Dans [la documentation de PhoneGap ;](https://docs.phonegap.com), cet élément est décrit comme &quot;l’élément facultatif &lt;content> définit la page de début de l’application dans le répertoire des ressources web de niveau supérieur. La valeur par défaut est index.html, qui s’affiche généralement dans le répertoire www de niveau supérieur d’un projet.&quot;
+Dans la documentation PhoneGap (`https://docs.phonegap.com`), cet élément est décrit comme &quot;facultatif &lt;content> définit la page de début de l’application dans le répertoire des ressources web de niveau supérieur. La valeur par défaut est index.html, qui s’affiche généralement dans le répertoire www de niveau supérieur d’un projet.&quot;
 
 La version de PhoneGap échoue si un fichier index.html n’est pas présent. Par conséquent, ce fichier est inclus.
 
