@@ -3,10 +3,10 @@ title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Mana
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+source-git-commit: 1077aeabacb1dbb489dbc7222c45da0a35b8cf16
 workflow-type: tm+mt
-source-wordcount: '3738'
-ht-degree: 29%
+source-wordcount: '3777'
+ht-degree: 28%
 
 ---
 
@@ -400,6 +400,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * Sur la plateforme JBoss® 7.1.4, lorsque l’utilisateur installe Experience Manager 6.5.16.0 ou un Service Pack ultérieur, `adobe-livecycle-jboss.ear` échec du déploiement.
 * Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic JEE.
+* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par la variable ```org.apache.servicemix.bundles.rhino``` Le lot a un nouveau comportement d’hébergement. Scripts qui utilisent le mode strict (```use strict;```) doivent déclarer correctement leurs variables, sinon elles ne seront pas exécutées, mais génèrent une erreur d’exécution.
 
 ## Bundles OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
