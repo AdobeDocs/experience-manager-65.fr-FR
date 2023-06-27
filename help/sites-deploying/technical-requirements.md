@@ -3,9 +3,9 @@ title: Exigences techniques
 description: Liste des plateformes client et serveur prises en charge pour Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: fe9c77644daf3669df8cca18e65fb0f6918f853b
+source-git-commit: 3b08d5001e7d3c683caa021ecf051f44762bb9ac
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '3526'
 ht-degree: 58%
 
 ---
@@ -39,7 +39,6 @@ Configuration minimale requise pour exécuter Adobe Experience Manager :
 >* Les cas d’utilisation des ressources numériques nécessitent davantage de mémoire de base. Voir [Déploiement et maintenance](/help/sites-deploying/deploy.md#default-local-install) pour plus d’informations.
 >* [Le package complémentaire AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) nécessite 15 Go d’espace temporaire.
 >
-
 
 Pour plus d’informations, voir [Consignes de dimensionnement du matériel](/help/managing/hardware-sizing-guidelines.md).
 
@@ -95,8 +94,8 @@ Adobe Experience Manager fonctionne avec les versions suivantes des machines vir
 | Oracle Java™ SE 8 JDK - 64 bits | A : pris en charge `[1]` | [Télécharger](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM® J9 VM - build 2.9, JRE 1.8.0 | A : pris en charge de `[2]` |
 | IBM® J9 VM - build 2.8, JRE 1.8.0 | A : pris en charge de `[2]` |
-| Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` |  |
-| Azul Zulu OpenJDK 8 - 64 bits | A : pris en charge de `[3]` |  |
+| Azul Zulu OpenJDK 11 - 64 bits | A : pris en charge de `[3]` | |
+| Azul Zulu OpenJDK 8 - 64 bits | A : pris en charge de `[3]` | |
 
 1. Oracle est passé à un modèle &quot;Long Term Support&quot; (LTS) pour les produits Oracle Java™ SE. Java™ 9, Java™ 10 et Java™ 12 sont des versions non-LTS par Oracle (voir [Feuille de route du support Oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Pour déployer AEM dans un environnement d’exploitation, Adobe assure uniquement la prise en charge des versions LTS de Java™. La prise en charge et la distribution du JDK Oracle Java™ SE, y compris toutes les mises à jour de maintenance des versions LTS au-delà de la fin des mises à jour publiques, sont directement prises en charge par Adobe pour tous les clients AEM qui utilisent la technologie Oracle Java™ SE. Voir [Stratégie de prise en charge de Java™ pour Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Important : Oracle Java™ 11 est pris en charge jusqu’en septembre 2026 au minimum. La prise en charge d’Oracle Java™ 17 est en cours de préparation.**
@@ -135,19 +134,29 @@ Il existe différentes options pour déployer le référentiel d’Adobe Experi
 1. Pris en charge pour les clients et clientes de mise à niveau d’AEM Forms. Non pris en charge pour les nouvelles installations.
 
 >[!NOTE]
+>
 Consultez la section [Déploiement de Communities](/help/communities/deploy-communities.md) pour plus d’informations sur les fonctionnalités d’AEM Communities.
 
 >[!NOTE]
+>
 MongoDB est un logiciel tiers non inclus dans le package de licence d’AEM. Pour plus d’informations, voir [Politique de licence MongoDB](https://www.mongodb.com/community/licensing) page.
+>
 Pour tirer pleinement parti de votre déploiement AEM avec MongoDB, Adobe conseille d’utiliser la version MongoDB Enterprise sous licence afin de bénéficier d’une assistance professionnelle. Consultez la section [Déploiements recommandées](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) pour plus d’informations.
+>
 La licence comprend un ensemble de répliques, composé d’une instance principale et de deux instances secondaires qui peuvent être utilisées pour les déploiements de création ou de publication.
+>
 Si vous souhaitez exécuter les instances de création et de publication sur MongoDB, deux licences distinctes doivent être achetées.
+>
 L’assistance clientèle d’Adobe aide à résoudre les problèmes admissibles liés à l’utilisation de MongoDB avec AEM.
+>
 Pour plus d’informations, consultez la page [MongoDB pour Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 >[!NOTE]
+>
 Les bases de données relationnelles prises en charge, telles que répertoriées ci-dessus, sont des logiciels tiers qui ne sont pas inclus dans le package de licence d’AEM.
+>
 Pour exécuter AEM 6.5 avec une base de données relationnelle prise en charge, un contrat d’assistance distinct auprès d’un fournisseur de base de données est requis. L’assistance clientèle d’Adobe aide à résoudre les problèmes admissibles liés à l’utilisation des bases de données relationnelles avec AEM 6.5.
+>
 **La plupart des bases de données relationnelles sont actuellement prises en charge au niveau R sur AEM 6.5, qui comprend des critères et un programme de prise en charge, comme indiqué dans la description du niveau R ci-dessus.**
 
 ### Moteurs de servlet/serveurs d’applications {#servlet-engines-application-servers}
@@ -192,11 +201,14 @@ Adobe Experience Manager fonctionne avec les plateformes de serveur suivantes 
 1. AEM Forms est pris en charge sur Microsoft® Window Server sans les restrictions de niveau de prise en charge R.
 
 >[!NOTE]
+>
 Si vous installez AEM Forms 6.5, assurez-vous d’avoir installé le redistribuable Microsoft® Visual C++ 32 bits suivant.
+>
 * Redistribuable Microsoft® Visual C++ 2008
 * Redistribuable Microsoft® Visual C++ 2010
 * Redistribuable Microsoft® Visual C++ 2012
-* Redistribuable Microsoft® Visual C++ 2013 (à partir de la version 6.5)
+* Redistribuable Microsoft® Visual C++ 2013
+* Redistribuable Microsoft® Visual C++ 2019 (VC14.28 ou version ultérieure)
 
 
 
@@ -240,7 +252,9 @@ L’interface utilisateur d’Adobe Experience Manager fonctionne avec les pla
 L’interface utilisateur d’AEM est optimisée pour les grands écrans (généralement les notebooks et les ordinateurs de bureau) et le format de tablette (par exemple Apple iPad ou Microsoft® Surface). Le format de téléphone n’est pas pris en charge.
 
 >[!NOTE]
+>
 **Prise en charge des navigateurs avec des cycles de version rapides :**
+>
 La version Mozilla Firefox, Google Chrome et Microsoft® Edge est mise à jour tous les quelques mois. Adobe s’engage à fournir des mises à jour pour qu’Adobe Experience Manager conserve le niveau de prise en charge, comme indiqué ci-dessous avec les versions à venir de ces navigateurs.
 
 <table>
@@ -344,7 +358,9 @@ Par défaut, AEM Dynamic Media est désactivé. Rendez-vous ici pour [activer 
 Lorsque Dynamic Media est activé, des exigences techniques supplémentaires sont d’application.
 
 >[!NOTE]
+>
 Ces configurations système s’appliquent **uniquement** si vous utilisez Dynamic Media en mode hybride ; ce mode comprend un serveur d’images intégré qui n’est certifié que sur certains systèmes d’exploitation.
+>
 Pour les clients Dynamic Media qui exécutent le mode Dynamic Media - Scene7 (c’est-à-dire : **dynamicmedia_scene7** en mode d’exécution), aucune configuration système supplémentaire n’est requise ; configuration requise identique à celle d’AEM. L’architecture du mode Scene7 de Dynamic Media utilise le service d’images basé sur le cloud et non le service incorporé dans AEM.
 
 #### Matériel {#hardware}
@@ -364,19 +380,27 @@ Si vous utilisez Dynamic Media sous Linux®, les conditions préalables suivante
 * SELinux désactivé (voir la note ci-dessous)
 
 >[!NOTE]
+>
 Si les paramètres régionaux sont définis de sorte que LC_CTYPE n’est pas égal à `en_US.UTF-8`, cela empêchera Dynamic Media de fonctionner. Pour connaître sa valeur, saisissez &quot;locale&quot; à l’invite de commande. S’il n’est pas correctement défini, définissez la variable d’environnement LC_CTYPE sur la chaîne vide en saisissant &quot;export LC_CTYPE=&quot; avant d’exécuter AEM.
 
 >[!NOTE]
+>
 **Désactivation de SELinux :** la diffusion d’images ne fonctionne pas lorsque SELinux est activé. Cette option est activée par défaut. Pour résoudre ce problème, modifiez le fichier **/etc/selinux/config** et modifiez la valeur SELinux à partir de :
+>
 `SELINUX=enforcing` **vers** `SELINUX=disabled`
 
 >[!NOTE]
+>
 **Architecture NUMA :** Les systèmes dotés de processeurs AMD64 et Intel® EM64T sont généralement configurés en tant que plates-formes NUMA (Non Uniform Memory Architecture). En d’autres termes, le noyau construit plusieurs noeuds de mémoire au moment du démarrage plutôt que de construire un seul noeud de mémoire.
+>
 La construction de plusieurs nœuds peut entraîner un épuisement de la mémoire sur un ou plusieurs nœuds avant que d’autres nœuds ne s’épuisent. Lorsque l’épuisement de la mémoire se produit, le noyau peut décider d’interrompre les processus (par exemple, la diffusion d’images ou le serveur de plateformes) même s’il existe de la mémoire disponible.
+>
 Par conséquent, si vous exécutez un tel système, Adobe recommande de désactiver NUMA à l’aide de l’option de démarrage **numa=off** pour éviter que le noyau n’arrête ces processus.
 
 >[!NOTE]
+>
 **La résolution du nom d’hôte du serveur doit être effectuée :** assurez-vous que le nom d’hôte du serveur est résolvable sur une adresse IP. Si cela s’avère impossible, ajoutez le nom d’hôte complet et l’adresse IP à **/etc/hosts** :
+>
 `<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
@@ -461,20 +485,22 @@ Pour Windows x86 :
 </table>
 
 >[!NOTE]
+>
 PDF Generator ne prend en charge que les versions allemande, anglaise, française et japonaise des systèmes d’exploitation et des applications pris en charge.
+>
 En outre,
+>
 * PDF Generator requiert la version 32 bits d’[Acrobat 2020 (suivi Classic) version 20.004.30006](https://helpx.adobe.com/fr/acrobat/release-note/release-notes-acrobat-reader.html) ou d’Acrobat 2017 version 17.011.30078 pour effectuer la conversion.
 * Les conversions de PDF Generator pour OpenOffice sont uniquement prises en charge sous Windows et Linux®.
 * PDF Generator ne prend en charge que la version commerciale 32 bits de Microsoft® Office Professional Plus et d’autres logiciels requis pour la conversion sur le système d’exploitation Windows.
 * PDF Generator prend en charge les versions 32 et 64 bits d’OpenOffice sous Linux® système d’exploitation.
 * PDF Generator ne prend pas en charge Microsoft® Office 365.
 * Les fonctionnalités OCR PDF, Optimize PDF et Export PDF sont uniquement prises en charge sous Windows.
-* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. Accédez par programmation à la version groupée uniquement avec AEM Forms, pendant la durée de la licence AEM Forms, pour l’utiliser avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+* Une version d’Acrobat est fournie avec AEM Forms pour activer la fonctionnalité PDF Generator. Accédez par programmation à la version groupée uniquement avec AEM Forms, pendant la durée de la licence AEM Forms, à utiliser avec AEM Forms PDF Generator. Pour plus d’informations, voir la description du produit AEM Forms selon votre déploiement ([On-Premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html) ou [Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 * Le service PDF Generator ne prend pas en charge Microsoft® Windows 10.
 * PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Visio 2019. Vous pouvez continuer à utiliser Microsoft® Visio 2016 pour la conversion. `.VSD` et `.VSDX` fichiers .
 * PDF Generator ne parvient pas à convertir les fichiers à l’aide de Microsoft® Project 2019. Vous pouvez continuer à utiliser Microsoft® Project 2016 pour effectuer une conversion. `.VSD` et `.VSDX` fichiers .
 >
-
 
 ### Conditions requises pour AEM Forms Designer {#requirements-for-aem-forms-designer}
 
@@ -486,8 +512,9 @@ En outre,
 * 2,35 Go d’espace disponible sur le disque dur
 * Résolution d’écran de 1 024 x 768 pixels ou plus
 * Accélération matérielle de la vidéo (facultatif)
-* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
-* Droits d’administrateur pour l’installation de Designer.
+* Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC
+* Droits d’administrateur pour l’installation de Designer
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
 
 ### Conditions requises pour l’écriture différée des métadonnées AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 
