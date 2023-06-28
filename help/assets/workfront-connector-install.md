@@ -5,10 +5,10 @@ role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=fr) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | Cet article |
 
 Avec un accès administrateur dans [!DNL Adobe Experience Manager], vous pouvez installer le connecteur amélioré. Avant de procéder à l’installation, vérifiez la prise en charge de la plateforme et d’autres [conditions préalables pour le connecteur](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
@@ -31,12 +31,11 @@ Avec un accès administrateur dans [!DNL Adobe Experience Manager], vous pouvez 
 >
 >* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 Pour installer le connecteur, procédez comme suit :
 
 1. Téléchargez le connecteur à partir du lien [[!DNL Software Distribution] ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 1. [Configuration du pare-feu](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=fr).
-1. Sur le répartiteur, autorisez les en-têtes HTTP nommés `authorization`, `username`, et `apikey`. Autorisez les requêtes `GET`, `POST`, et `PUT` à `/bin/workfront-tools`.
+1. Sur Dispatcher, autorisez les en-têtes HTTP nommés `authorization`, `username`, et `apikey`. Autorisez les requêtes `GET`, `POST`, et `PUT` à `/bin/workfront-tools`.
 1. Assurez-vous que les chemins d’accès suivants n’existent pas dans le référentiel [!DNL Experience Manager] :
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
