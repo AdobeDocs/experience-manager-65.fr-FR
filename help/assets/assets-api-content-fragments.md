@@ -2,9 +2,10 @@
 title: Prise en charge des fragments de contenu d’Adobe Experience Manager dans l’API Assets HTTP
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 feature: Content Fragments,Assets HTTP API
+role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 48131c5accfe73b83197bd581ed5a22bc4890a56
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 85%
@@ -76,7 +77,6 @@ Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`,
 >
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
 >* `/content/path/to/page` **nécessite** l’utilisation du sélecteur `.model`.
-
 
 La méthode HTTP détermine l’opération à exécuter :
 
@@ -155,7 +155,6 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >* [CORS/AEM expliqué](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr)
 >* [Vidéo – Développement pour CORS et AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=fr)
 >
-
 
 Il est recommandé d’utiliser OAuth dans les environnements ayant des exigences d’authentification spécifiques.
 
@@ -335,49 +334,52 @@ Affiché dans le scénario suivant :
 
 * **500** (Erreur interne du serveur)
 
-   >[!NOTE]
-   >
-   >Cette erreur est renvoyée :
-   >
-   >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
-   >* lorsque la payload donnée n’était pas valide
+  >[!NOTE]
+  >
+  >Cette erreur est renvoyée :
+  >
+  >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
+  >* lorsque la payload donnée n’était pas valide
 
-
-   L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (monospace) généré :
+  L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (monospace) généré :
 
    * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
    * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant) ou ne peut être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Impossible de créer le fragment de contenu (problème d’autorisation potentiel) :
 
       * `Could not create content fragment`
+
    * Le titre et/ou la description n’ont pas pu être mis à jour :
 
       * `Could not set value on content fragment`
+
    * Impossible de définir les métadonnées :
 
       * `Could not set metadata on content fragment`
+
    * Élément de contenu introuvable ou impossible à mettre à jour
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
+  Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## Référence d’API {#api-reference}
 
