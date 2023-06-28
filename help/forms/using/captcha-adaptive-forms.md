@@ -11,10 +11,10 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
+source-git-commit: 294a7de1c777c49acf8590ec0900b0342f01e7eb
 workflow-type: tm+mt
 source-wordcount: '1915'
-ht-degree: 50%
+ht-degree: 49%
 
 ---
 
@@ -75,7 +75,7 @@ Une fois que le service reCAPTCHA Enterprise est activé, il peut être utilisé
 ![reCAPTCHA Enterprise](/help/forms/using/assets/recaptcha1-enterprise.png)
 
 
-## Configuration de Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
+### Configuration de Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. Obtenir [paire de clés API reCAPTCHA](https://www.google.com/recaptcha/admin) de Google. Il comprend un **clé du site** et un **clé secrète**.
 1. Créez un conteneur de configuration pour les services cloud.
@@ -333,6 +333,6 @@ public interface GuideCaptchaValidator {
 }
 ```
 
-`captchaPropertyNodePath` fait référence au chemin des ressources du composant CAPTCHA dans le référentiel Sling. Utilisez cette propriété pour inclure des détails spécifiques au composant CAPTCHA. Par exemple, `captchaPropertyNodePath` contient des informations pour la configuration du cloud reCAPTCHA configurée sur le composant CAPTCHA. Les informations de configuration du cloud fournissent les paramètres **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour la mise en œuvre du service reCAPTCHA.
+`captchaPropertyNodePath` Fait référence au chemin d’accès à la ressource du composant CAPTCHA dans le référentiel Sling. Utilisez cette propriété pour inclure des détails spécifiques au composant CAPTCHA. Par exemple, `captchaPropertyNodePath` contient des informations pour la configuration du cloud reCAPTCHA configurée sur le composant CAPTCHA. Les informations de configuration du cloud fournissent les paramètres **[!UICONTROL Clé du site]** et **[!UICONTROL Clé secrète]** pour la mise en œuvre du service reCAPTCHA.
 
-`userResponseToken` fait référence au `g_reCAPTCHA_response` qui est généré après la résolution d’un CAPTCHA dans un formulaire.
+`userResponseToken` Se rapporte à la variable `g_reCAPTCHA_response` qui est généré après la résolution d’un CAPTCHA dans un formulaire.
