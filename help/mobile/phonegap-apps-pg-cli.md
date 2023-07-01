@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
@@ -89,10 +89,10 @@ phonegap run ios
 >1. Accédez à ce nouveau dossier (test cd)
 >1. Exécutez `phonegap create helloWorld`.
 >1. Accédez à helloWorld (cd helloWorld).
->1. Exécuter `phonegap run android` (ou remplacez android par iOS comme ci-dessus).
->1. L’émulateur s’ouvre lors de l’exécution de votre application PhoneGap nouvellement créée, indiquant &quot;Prêt pour le périphérique&quot; si le pont JavaScript vers natif est opérationnel.
+>1. Exécuter `phonegap run android` (ou remplacez Android™ par iOS comme ci-dessus).
+1. L’émulateur s’ouvre lors de l’exécution de votre application PhoneGap nouvellement créée, indiquant &quot;Prêt pour le périphérique&quot; si le pont JavaScript vers natif est opérationnel.
 >
->Ce dépannage vérifie que l’environnement de développement de l’interface de ligne de commande de PhoneGap s’exécute correctement.
+Ce dépannage vérifie que l’environnement de développement de l’interface de ligne de commande de PhoneGap s’exécute correctement.
 
 ## Débogage de JavaScript avec Safari et débogage IOS {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -147,13 +147,13 @@ Vous pouvez définir des points d’arrêt n’importe où dans votre source. Lo
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-* Utilisez les boutons de contrôle pour continuer l’exécution, passer à l’étape supérieure, entrer et sortir des méthodes :
+* Utilisez les boutons de contrôle pour continuer l’exécution, passer à l’étape suivante, entrer et sortir des méthodes :
 
-![](do-not-localize/chlimage_1-4.png)
+![Cinq boutons de contrôle fonctionnels différents alignés sur une ligne horizontale.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
->Pour afficher les valeurs des variables, dans la méthode actuelle, pointez avec la souris.
+Pour afficher les valeurs des variables, dans la méthode actuelle, pointez avec la souris.
 
 ## Les étapes suivantes {#the-next-steps}
 

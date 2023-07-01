@@ -1,8 +1,6 @@
 ---
 title: Responsive Design pour les pages web
-seo-title: Responsive design for web pages
-description: Avec une conception réactive, les mêmes pages peuvent être affichées efficacement sur plusieurs appareils selon plusieurs orientations.
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: Avec une conception réactive, les mêmes pages peuvent être affichées efficacement sur plusieurs appareils avec plusieurs orientations.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '5336'
+source-wordcount: '5375'
 ht-degree: 42%
 
 ---
@@ -23,6 +21,7 @@ ht-degree: 42%
 >[!NOTE]
 >
 >Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, _React_). [En savoir plus](/help/sites-developing/spa-overview.md)
+>
 
 >[!NOTE]
 >
@@ -201,7 +200,7 @@ Par exemple, pour créer un nœud ` [sling:OsgiConfig](/help/sites-deploying/con
 * Dossier parent : `/apps/application_name/config`
 * Nom : `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   Le suffixe - `*alias*` est requis, car MobileEmulatorProvider est un service de fabrique. Utilisez un alias unique pour cette fabrique.
+  Le suffixe - `*alias*` est requis, car MobileEmulatorProvider est un service de fabrique. Utilisez un alias unique pour cette fabrique.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -211,12 +210,12 @@ Ajoutez la propriété de nœud suivante :
 * Type : `String[]`
 * Valeur : chemins d’accès aux composants de page qui effectuent le rendu de vos pages web. Par exemple, l’application geometrixx-media utilise les valeurs suivantes :
 
-   ```
-   geometrixx-media/components/page
-    geometrixx-unlimited/components/pages/page
-    geometrixx-unlimited/components/pages/coverpage
-    geometrixx-unlimited/components/pages/issue
-   ```
+  ```
+  geometrixx-media/components/page
+   geometrixx-unlimited/components/pages/page
+   geometrixx-unlimited/components/pages/coverpage
+   geometrixx-unlimited/components/pages/issue
+  ```
 
 ### Définition des groupes d’appareils {#specifying-the-device-groups}
 
@@ -235,6 +234,7 @@ Utilisez la console Outils pour [création et modification de groupes d’appare
 >[!NOTE]
 >
 >Pour les groupes d’appareils que vous utilisez pour la conception réactive, modifiez le groupe d’appareils puis, dans l’onglet Général , sélectionnez Désactiver l’émulateur. Cette option empêche l’affichage du carrousel de l’émulateur, qui n’est pas pertinent pour la conception en responsive design.
+>
 
 ## Utilisation d’images adaptatives {#using-adaptive-images}
 
@@ -326,6 +326,7 @@ L’exemple de HTML suivant sélectionne deux rendus DAM d’une même image.
 >* Script qui génère le HTML : `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >Vous trouverez plus d’informations sur ce composant à la section suivante.
+>
 
 ### Présentation du rendu d’images dans AEM {#understanding-image-rendering-in-aem}
 
@@ -366,6 +367,7 @@ Le composant doit effectuer les tâches suivantes :
 >[!NOTE]
 >
 >Le client web utilise les bibliothèques JavaScript matchMedia et Picturefill (ou des bibliothèques similaires) pour évaluer les sélecteurs de médias.
+>
 
 Le servlet qui traite la demande d’image doit effectuer les tâches suivantes :
 
@@ -573,18 +575,18 @@ Les valeurs suivantes sont prises en charge par défaut (widthheight) :
 
 * 256x192
 * 370x150
-* 480x200
+* 480 x 200
 * 127x127
-* 770x360
+* 770 x 360
 * 620x290
-* 480x225
+* 480 x 225
 * 320x150
 * 375x175
 * 303x142
 * 1170x400
 * 940x340
 * 770x300
-* 480x190
+* 480 x 190
 
 Les valeurs suivantes pour la qualité d’image sont prises en charge :
 
@@ -657,6 +659,7 @@ La classe `ImageReferenceModificationServlet` remplace la méthode `createLayer`
 
 >[!NOTE]
 >Remarque : la classe [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) fournit la méthode getFileReference.
+>
 
 ## Développement d’une grille fluide {#developing-a-fluid-grid}
 
@@ -698,6 +701,7 @@ Par exemple, l’exemple d’application geometrixx-media contient le composant 
 >[!NOTE]
 >
 >Remarque : lorsqu’un composant comprend plusieurs éléments `cq:include` qui font référence au composant parsys, chaque attribut `path` doit avoir une valeur différente.
+>
 
 #### Mise à l’échelle de la grille du composant de page {#scaling-the-page-component-grid}
 
@@ -862,13 +866,13 @@ Pour chaque plage de largeurs de fenêtre que vous ciblez, utilisez une largeur 
 
 Utilisez des grilles pour mettre à l’échelle des blocs de contenu afin de les adapter à différentes tailles de fenêtre d’affichage. Les blocs de contenu s’étendent sur un nombre spécifique de colonnes. À mesure que les largeurs de colonne augmentent ou diminuent pour s’adapter à différentes tailles de fenêtre d’affichage, les largeurs des blocs de contenu augmentent ou diminuent en conséquence. La mise à l’échelle peut prendre en charge des fenêtres d’affichage de grande et moyenne taille suffisamment larges pour accueillir le positionnement côte à côte des blocs de contenu.
 
-![](do-not-localize/chlimage_1-1a.png)
+![Image de deux grilles, l’une plus petite que l’autre.](do-not-localize/chlimage_1-1a.png)
 
 #### Repositionnement du contenu dans la grille {#repositioning-content-in-the-grid}
 
 La taille des blocs de contenu peut être limitée par une largeur minimale, au-delà de laquelle la mise à l’échelle n’est plus efficace. Pour les fenêtres d’affichage plus petites, la grille peut être utilisée pour répartir les blocs de contenu verticalement plutôt qu’horizontalement.
 
-![](do-not-localize/chlimage_1-2a.png)
+![Image de deux grilles, l’une qui est repositionnée plus petite que l’autre.](do-not-localize/chlimage_1-2a.png)
 
 ### Conception de la grille {#designing-the-grid}
 
@@ -953,7 +957,7 @@ Utilisez le style flottant du `.row-fluid` afin que vous puissiez contrôler si 
 
 Ajoutez le style au sélecteur `.row-fluid` à l’intérieur de chaque requête de média. Définissez la valeur en fonction de la mise en page que vous utilisez pour cette requête de média. Par exemple, le diagramme suivant illustre une ligne qui répartit le contenu horizontalement pour les fenêtres larges et verticalement pour les fenêtres étroites.
 
-![](do-not-localize/chlimage_1-3a.png)
+![Deux images de blocs de contenu dans une ligne, la deuxième image affichant la ligne repositionnée.](do-not-localize/chlimage_1-3a.png)
 
 Le CSS suivant peut implémenter ce comportement :
 

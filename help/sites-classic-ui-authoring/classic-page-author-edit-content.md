@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 39%
+source-wordcount: '1836'
+ht-degree: 37%
 
 ---
 
@@ -207,19 +207,19 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
 Deux icônes sont importantes pour la prévisualisation des pages dans la bordure inférieure du sidekick :
 
-![](do-not-localize/chlimage_1-5.png)
+![Bordure inférieure du sidekick avec une ligne horizontale de sept icônes. Deux des icônes au début de la rangée, l’icône d’édition et l’icône de mode d’aperçu, sont indiquées respectivement par un symbole de crayon et un symbole de loupe.](do-not-localize/chlimage_1-5.png)
 
 * L’icône en forme de crayon indique que vous êtes actuellement en mode d’édition où vous pouvez ajouter, modifier, déplacer ou supprimer du contenu.
 
-   ![](do-not-localize/chlimage_1-6.png)
+  ![Icône Modifier indiquée par un symbole de crayon.](do-not-localize/chlimage_1-6.png)
 
 * L’icône en forme de loupe permet de sélectionner le mode d’aperçu où la page s’affiche telle qu’elle sera dans l’environnement de publication (une actualisation de page est parfois nécessaire) :
 
-   ![](do-not-localize/chlimage_1-7.png)
+  ![Icône du mode Aperçu indiquée par un symbole de loupe.](do-not-localize/chlimage_1-7.png)
 
-   En mode d’aperçu, le sidekick est réduit. Cliquez sur l’icône de flèche bas pour revenir au mode d’édition :
+  En mode d’aperçu, le sidekick est réduit. Cliquez sur l’icône de flèche bas pour revenir au mode d’édition :
 
-   ![](do-not-localize/chlimage_1-8.png)
+  ![Barre avec AEM titre et icône de mode d’édition à droite du titre, indiquée par une flèche vers le bas.](do-not-localize/chlimage_1-8.png)
 
 ## Rechercher et remplacer {#find-replace}
 
@@ -286,7 +286,6 @@ Le comportement des commandes Annuler et Rétablir est similaire à celui des au
 >* annulez un maximum de 20 actions de modification (paramètre par défaut).
 >* également utiliser [Raccourcis clavier](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) pour annuler et rétablir.
 >
-
 
 Vous pouvez utiliser les options Annuler et Rétablir pour les types de modifications de page suivants :
 

@@ -1,8 +1,6 @@
 ---
 title: Création et modification d’applications à l’aide de la console Applications
-seo-title: Creating and Editing Apps Using the Apps Console
 description: Consultez cette page pour en savoir plus sur la création et la modification d’applications à l’aide de la console d’applications.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2615'
-ht-degree: 2%
+source-wordcount: '2695'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Le processus de développement des applications mobiles d’AEM reconnaît que des utilisateurs de différentes compétences contribuent au développement des applications mobiles. Le mappage de processus suivant illustre l’ordre général dans lequel les auteurs de contenu et les développeurs d’applications effectuent des tâches.
 
@@ -62,7 +60,7 @@ La page Langue a deux objectifs :
 
 ### Page d’accueil {#the-home-page}
 
-La page d’accueil, ou la page index.html d’une variante linguistique d’une application s’affiche à l’ouverture de celle-ci. La page d’accueil propose aux utilisateurs un menu de liens vers différentes pages de l’application. Le système de paragraphes permet d’ajouter des composants à la page pour créer du contenu.
+La page d’accueil, ou la page index.html d’une variante de langue d’une application s’affiche à l’ouverture de l’application. La page d’accueil propose aux utilisateurs un menu de liens vers différentes pages de l’application. Le système de paragraphes permet d’ajouter des composants à la page pour créer du contenu.
 
 ## Création d’une application mobile {#creating-a-mobile-application}
 
@@ -89,9 +87,9 @@ Il existe des onglets supplémentaires (et facultatifs) pour créer le service c
 La procédure suivante utilise l’interface utilisateur tactile pour créer une application mobile.
 
 1. Sur le rail, cliquez sur Applications.
-1. Cliquez ou appuyez sur l’icône Créer .
+1. Cliquez sur l’icône Créer .
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![Icône Créer indiquée par un signe plus dans un carré.](do-not-localize/chlimage_1-7.png)
 
 1. (Facultatif) Dans l’onglet Avancé , fournissez une description de l’application et modifiez l’URL du serveur si nécessaire.
 1. (Facultatif) Si vous utilisez PhoneGap Build pour compiler l’application, dans l’onglet Créer , sélectionnez la configuration à utiliser.
@@ -114,30 +112,30 @@ Après avoir créé une application mobile, vous pouvez modifier ses propriété
 1. Sur le rail, cliquez ou appuyez sur Applications.
 1. Sélectionnez l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de page .
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Icône Afficher les propriétés de page indiquée par la lettre I dans un cercle.](do-not-localize/chlimage_1-8.png)
 
 1. Pour modifier les valeurs de propriété, cliquez ou appuyez sur l’icône Modifier .
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![L’icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-9.png)
 
 1. Configurez les propriétés de base et avancées, puis cliquez ou appuyez sur l’icône Terminé .
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![Icône Terminé indiquée par une coche.](do-not-localize/chlimage_1-10.png)
 
 #### Configuration d’une variation de langue de l’application {#configure-a-language-variation-of-the-application}
 
-1. Sur le rail, cliquez ou appuyez sur Applications.
-1. Cliquez pour accéder à l’application mobile que vous souhaitez modifier dans l’Admin Console des applications. Sélectionnez la version linguistique de l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de l’application .
+1. Sur le rail, cliquez sur Applications.
+1. Cliquez pour accéder à l’application mobile que vous souhaitez modifier dans le Admin Console d’applications. Sélectionnez la version linguistique de l’application à configurer, puis cliquez sur l’icône Afficher les propriétés de l’application .
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![Icône Afficher les propriétés de l’application indiquée par la lettre I dans un cercle.](do-not-localize/chlimage_1-11.png)
 
 1. Pour modifier les valeurs de propriété, cliquez ou appuyez sur l’icône Modifier .
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![L’icône Modifier indiquée par un crayon.](do-not-localize/chlimage_1-12.png)
 
 1. Configurez les propriétés dans les onglets De base, Avancé, Créer et Analytics, puis cliquez ou appuyez sur l’icône Terminé.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![Icône Terminé indiquée par une coche.](do-not-localize/chlimage_1-13.png)
 
 ### Création du contenu d’une application mobile {#authoring-the-content-of-a-mobile-application}
 
@@ -167,7 +165,7 @@ Procédez comme suit sur l’instance où vous souhaitez mettre à jour le cache
 1. Sur le rail, cliquez ou appuyez sur Applications, puis sur votre application.
 1. Sélectionnez la page de démarrage, puis cliquez ou appuyez sur l’icône Mettre à jour le cache .
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![L’icône Mettre à jour le cache est indiquée par une barre répartie par une bande avec un symbole de recyclage.](do-not-localize/chlimage_1-14.png)
 
 ### Utilisation des modèles d’application {#using-app-templates}
 
@@ -195,7 +193,7 @@ Procédure de création d’une application basée sur un modèle d’applicatio
 1. Cliquez sur Suivant.
 1. Fournissez un ID d’application et un titre, mais vous pouvez également inclure un nom et une description.
 
-   1. En outre, vous pouvez fournir un fichier PNG (format d’icône PhoneGap pris en charge) en tant qu’icône en parcourant AEM ressources.
+   1. Vous pouvez également fournir un fichier PNG (format d’icône PhoneGap pris en charge) en tant qu’icône en parcourant AEM ressources.
    1. N’oubliez pas que vous pouvez modifier tous ces champs une fois l’application créée dans la mosaïque Gérer l’application . À l’exception de l’ID d’application, une fois l’ID d’application défini, vous ne pouvez pas le modifier.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -222,7 +220,7 @@ Pour ouvrir l’application, cliquez sur Applications mobiles dans le rail, puis
 Chaque page de l’application mobile comprend les fonctionnalités suivantes :
 
 * Bouton Retour permettant de revenir à la page parente. Notez que le bouton Retour n’apparaît pas sur la page d’accueil.
-* Un rail extensible qui offre un menu de commandes et de liens :
+* Un rail extensible qui propose un menu de commandes et de liens :
 
    * Ouvrez la page Emplacements .
    * Ouvrez le panier.
@@ -242,16 +240,16 @@ Le contenu de la page d’accueil se compose des outils de navigation suivants :
 
 La page Engrenage permet aux utilisateurs d’accéder aux pages de produits. Un composant de liste de menus permet d’accéder aux pages enfants de la page d’engrenage. Les pages enfants sont des catégories de produits que le site web propose.
 
-* Saison
+* Saison 
 * Vêtements
 * Sexe
-* Activité
+* Activity
 
 Chaque page de catégorie utilise la même structure de contenu que la page d’engrenage. Le carrousel permet d’accéder aux pages enfants qui sont des sous-catégories de produits. Les pages de sous-catégorie contiennent des listes de produits qui fournissent des liens vers les pages de produits.
 
 ### Page Produits - Application mobile Geometrixx {#the-products-page-geometrixx-mobile-app}
 
-La page Produits et son hiérarchie de pages enfants implémentent un système de classification pour les pages de produits. Les pages les plus basses de chaque branche de l’hiérarchie sont une page de produit qui contient un composant Produit ng .
+La page Produits et sa hiérarchie de pages enfants implémentent un système de classification pour les pages de produits. Les pages les plus basses de chaque branche de la hiérarchie sont une page de produit qui contient un composant Produit ng .
 
 La page Produits n’est pas disponible pour les utilisateurs de l’application. La page Engrenage permet d’accéder à chaque page de produit.
 
@@ -269,7 +267,7 @@ Lors de l’utilisation de l’application, la page Actualités est disponible d
 
 ### Page À Propos De Nous - Application Mobile Geometrixx {#the-about-us-page-geometrixx-mobile-app}
 
-La page À propos de nous contient plusieurs composants de ligne à deux colonnes. Chaque colonne contient un composant Image ou Texte . Les composants sont modifiables et le système de paragraphes vous permet d’ajouter des composants.
+La page A propos de nous contient plusieurs composants de ligne à deux colonnes. Chaque colonne contient un composant Image ou Texte . Les composants sont modifiables et le système de paragraphes vous permet d’ajouter des composants.
 
 Lors de l’utilisation de l’application, la page À propos de nous est disponible dans le carrousel sur la page en anglais.
 
@@ -281,7 +279,7 @@ Lors de l’utilisation de l’application, la page Emplacements est disponible 
 
 ## Exemples de composants mobiles {#sample-mobile-components}
 
-Plusieurs composants sont immédiatement disponibles dans le sidekick lors de la création des pages d’une application mobile. Les composants appartiennent au groupe de composants PhoneGap.
+Plusieurs composants sont immédiatement disponibles dans Sidekick lors de la création des pages d’une application mobile. Les composants appartiennent au groupe de composants PhoneGap.
 
 ### Carrousel de balayage {#swipe-carousel}
 

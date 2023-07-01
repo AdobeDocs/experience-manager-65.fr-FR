@@ -1,8 +1,6 @@
 ---
 title: Consoles de gestion des membres et des groupes
-seo-title: Members & Groups Management Consoles
 description: Accès aux consoles de gestion des membres et des groupes
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '942'
 ht-degree: 4%
 
 ---
@@ -55,7 +53,7 @@ Dans l’environnement de création, pour accéder à la console Membres afin de
 
 Sélectionnez l’icône du panneau latéral sur le côté gauche de la `Members` pour ouvrir le panneau latéral de recherche.
 
-![](assets/leftpanel-icon.png)
+![Icône du panneau latéral de recherche.](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
@@ -76,7 +74,7 @@ Les en-têtes de colonne sont :
 
 ## Créer un membre {#create-new-member}
 
-Sélectionner `Create Member` afin de créer un utilisateur dans l’environnement de publication.
+Sélectionner `Create Member` pour créer un utilisateur dans l’environnement de publication.
 
 ![create-member1](assets/create-member1.png)
 
@@ -97,21 +95,21 @@ Le membre peut modifier son adresse email lors de la mise à jour de son profil.
 
 * **[!UICONTROL Password]**
 
-   (*Obligatoire*) Mot de passe de connexion.
+  (*Obligatoire*) Mot de passe de connexion.
 
 * **[!UICONTROL Confirmer le mot de passe]**
 
-   (*Obligatoire*) Saisissez à nouveau le mot de passe à vérifier.
+  (*Obligatoire*) Saisissez à nouveau le mot de passe à vérifier.
 
 * **[!UICONTROL Ajouter le membre aux sites]**
 
-   (*Facultatif*) Sélectionnez parmi les sites de la communauté existants pour ajouter le membre au groupe de membres du site de la communauté.
+  (*Facultatif*) Sélectionnez sur les sites de la communauté existants pour ajouter le membre au groupe de membres du site de la communauté.
 
 * **[!UICONTROL Ajouter un membre aux groupes]**
 
-   (*Facultatif*) Effectuez une sélection parmi les groupes de membres existants pour ajouter le membre à ce groupe.
+  (*Facultatif*) Effectuez une sélection parmi les groupes de membres existants pour ajouter le membre à ce groupe.
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ### GÉNÉRAL - Paramètres du compte {#general-account-settings}
 
@@ -122,17 +120,17 @@ Sous Paramètres du compte , un administrateur de communauté peut :
 
    * Non interdit Un membre a un accès complet au site de la communauté.
 
-   La valeur par défaut est `Not Banned`.
+  La valeur par défaut est `Not Banned`.
 
 * **[!UICONTROL Limites de contribution]**
 
-   Si cette case est cochée, la capacité du membre à publier du contenu est limitée.
+  Si cette case est cochée, la capacité du membre à publier du contenu est limitée.
 La valeur par défaut dépend de la configuration des limites de contribution.
 Voir [Limites des contributions des membres](limits.md).
 
 * **[!UICONTROL Modifier le mot de passe]**
 
-   Lien présent lors de la modification d’un membre existant. Permet à un administrateur de la communauté de réinitialiser un mot de passe pour un membre.
+  Lien présent lors de la modification d’un membre existant. Permet à un administrateur de la communauté de réinitialiser un mot de passe pour un membre.
 
 ### GÉNÉRAL - Photo {#general-photo}
 
@@ -173,7 +171,7 @@ Pour accéder à la console Groupes , procédez comme suit :
 
 ### Créer un groupe {#create-new-group}
 
-Sélectionner `Add Group` afin de créer un groupe dans l’environnement de publication.
+Sélectionner `Add Group` pour créer un groupe dans l’environnement de publication.
 
 ![group-console1](assets/group-console1.png)
 
@@ -181,25 +179,25 @@ Les champs requis pour créer un groupe de membres côté publication sont les s
 
 * **[!UICONTROL ID]**
 
-   (*Obligatoire*) Identifiant unique du groupe.
+  (*Obligatoire*) Identifiant unique du groupe.
 
-   *Une fois créé, l&#39;identifiant ne peut plus être modifié.*
+  *Une fois créé, l&#39;identifiant ne peut plus être modifié.*
 
 * **[!UICONTROL Nom]**
 
-   (*Facultatif*) Nom d’affichage du groupe.
+  (*Facultatif*) Nom d’affichage du groupe.
 
-   La valeur par défaut est l’ID.
+  La valeur par défaut est l’ID.
 
 * **[!UICONTROL Description]**
 
-   (*Facultatif*) Description de l’objectif et des autorisations du groupe.
+  (*Facultatif*) Description de l’objectif et des autorisations du groupe.
 
 * **[!UICONTROL Ajouter des membres au groupe]**
 
-   (*Facultatif*) Sélectionnez les membres côté publication à inclure en tant que membres initiaux du groupe.
+  (*Facultatif*) Sélectionnez les membres côté publication à inclure en tant que membres initiaux du groupe.
 
-* Sélectionnez **[!UICONTROL Enregistrer]**
+* Sélectionnez **[!UICONTROL Enregistrer]**.
 
 ## Administrateurs autorisés {#authorized-administrators}
 
