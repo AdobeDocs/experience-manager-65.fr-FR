@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 44%
+source-wordcount: '913'
+ht-degree: 43%
 
 ---
 
@@ -68,13 +68,13 @@ Pour activer ou désactiver un composant :
 
 1. Cliquez ou appuyez sur l’icône **Parent**.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![Parent](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    Cela a pour effet de sélectionner le système de paragraphes contenant le composant actif.
 
 1. L’icône **Configurer** du système de paragraphes s’affiche dans la barre d’outils du parent. 
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configurer](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Sélectionnez cette icône pour afficher la boîte de dialogue.
 
@@ -121,7 +121,7 @@ Pour activer ou désactiver un composant :
 
 1. Utilisez l’icône **Configurer** pour ouvrir la boîte de dialogue.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Icône Configurer](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    Dans la boîte de dialogue de conception, vous pouvez configurer le composant en fonction des paramètres de conception disponibles.
 
@@ -151,12 +151,12 @@ Pour activer ou désactiver un composant :
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Utilisez l’icône **Supprimer** pour supprimer une entrée de la liste de dialogue à entrées multiples.
+   Utilisez la variable **Supprimer** pour supprimer une entrée d’une liste de dialogue à entrées multiples.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Supprimer](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Utilisez la variable **Déplacer** pour réorganiser l’ordre des entrées dans une liste de dialogue à entrées multiples.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![Déplacer](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Cliquez ou appuyez sur **Terminé** pour enregistrer et fermer la boîte de dialogue.

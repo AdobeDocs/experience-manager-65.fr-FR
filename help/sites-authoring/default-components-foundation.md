@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '7200'
-ht-degree: 43%
+source-wordcount: '7210'
+ht-degree: 44%
 
 ---
 
@@ -75,7 +75,7 @@ Vous pouvez définir un lien avec un titre et une description.
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) au lieu de .
 
 Le composant d’image adaptative génère des images dimensionnées en fonction de la fenêtre dans laquelle s’ouvre la page web. Pour utiliser le composant, vous devez fournir une image issue du système de fichiers ou du gestionnaire des actifs numériques. Une fois la page web ouverte, le navigateur télécharge une copie de l’image qui a été redimensionnée afin qu’elle convienne à la fenêtre active.
 
@@ -158,7 +158,7 @@ Pour plus d’informations sur la personnalisation du composant Image adaptative
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal du carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal du carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=fr) au lieu de .
 
 Le composant Carrousel vous permet d’afficher des images associées à des pages individuelles :
 
@@ -184,7 +184,7 @@ Diverses options sont disponibles dans un menu déroulant ; par exemple, les bo
 
 * **Liste**
 
-   Vous spécifiez ici la manière dont les pages sont incluses dans votre carrousel :
+  Vous spécifiez ici la manière dont les pages sont incluses dans votre carrousel :
 
    * **Créer la liste à l’aide de**
 Il existe plusieurs façons de créer une liste de pages : Pages enfants, Liste fixe, Recherche ou Recherche avancée (toutes décrites ci-dessous). Quelle que soit la méthode choisie, les pages que vous incluez dans votre liste doivent déjà être associées à une image. C’est cette image qui s’affiche dans le carrousel. S’il n’existe aucune image pour une page donnée sous les Propriétés de page de cette page, vous devez associer une image à la page avant de commencer. Dans le cas contraire, le carrousel affiche une page principalement vierge. Voir [Modification des propriétés de page](/help/sites-authoring/editing-page-properties.md).
@@ -194,11 +194,12 @@ Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 
          * **Page parente**
 Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laissez vide pour utiliser la page actuelle comme page parente.
+
       * **Options de la liste fixe**
 
          * **Pages**
-Sélectionnez une liste de pages. Utilisez 
-`+` pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
+Sélectionnez une liste de pages. Utilisation `+` pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
+
       * **Options de recherche**
 
          * **Démarrer dans**
@@ -206,21 +207,18 @@ Spécifiez un chemin de départ manuellement ou à l’aide du sélecteur.
 
          * **Requête de recherche**
 Entrez une requête de recherche en texte brut.
+
       * **Options de la recherche avancée**
 
          * **Notation des prédicats de QueryBuilder**
 Entrez une requête de recherche à l’aide de la notation des prédicats de QueryBuilder. Par exemple, entrez « fulltext=Marketing » pour afficher dans le carrousel toutes les pages comportant le terme « Marketing » dans leur contenu.
 Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour consulter une étude complète sur les expressions de requête et d’autres exemples.
+
    * **Classer par**
-Sélectionnez 
-`jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` dans le menu déroulant.
+Sélectionnez `jcr:title`, `jcr:created`, `cq:lastModified` ou `cq:template` dans le menu déroulant.
 
    * **Limite**
 Facultatif. Nombre maximal d’éléments que vous souhaitez utiliser dans le carrousel.
-
-
-
-
 
 >[!NOTE]
 >
@@ -265,7 +263,7 @@ L’exemple suivant illustre des données de graphique suivies de l’histogramm
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) au lieu de .
 
 [Fragments de contenu](/help/sites-authoring/content-fragments.md) sont créées et gérées en tant que ressources indépendantes de la page. Vous pouvez ensuite utiliser ces fragments et leurs variantes lors de la création de vos pages de contenu.
 
@@ -310,9 +308,9 @@ Le composant d’intégration d’application externe (**Externe**) permet d’i
    * **Application cible**
 Indiquez l’URL de l’application Web à intégrer, par exemple :
 
-      ```
-      https://en.wikipedia.org/wiki/Main_Page
-      ```
+     ```
+     https://en.wikipedia.org/wiki/Main_Page
+     ```
 
    * **Transmettre les paramètres**
 Cochez les cases correspondant aux paramètres à transmettre à l’application, lorsque cela s’avère nécessaire.
@@ -344,43 +342,43 @@ Le composant Flash vous permet de charger une animation Flash. Vous pouvez faire
 
    * **Animation Flash**
 
-      Fichier d’animation Flash. Faites glisser une ressource à partir de l’outil de recherche de contenu ou cliquez pour ouvrir une fenêtre de navigation.
+     Fichier d’animation Flash. Faites glisser une ressource à partir de l’outil de recherche de contenu ou cliquez pour ouvrir une fenêtre de navigation.
 
    * **Taille**
 
-      Dimensions en pixels de la zone d’affichage contenant l’animation.
+     Dimensions en pixels de la zone d’affichage contenant l’animation.
 
 * **Image de remplacement**
 
-   Autre image à afficher.
+  Autre image à afficher.
 
 * **Avancé**
 
    * **Menu contextuel**
 
-      Indique si le menu contextuel doit être affiché ou masqué.
+     Indique si le menu contextuel doit être affiché ou masqué.
 
    * **Mode Fenêtre**
 
-      Permet de spécifier comment la fenêtre doit apparaître (opaque, transparente ou comme une fenêtre distincte, par exemple).
+     Permet de spécifier comment la fenêtre doit apparaître (opaque, transparente ou comme une fenêtre distincte, par exemple).
 
    * **Couleur d’arrière-plan**
 
-      Couleur de fond sélectionnée à partir de la palette de couleurs fournie.
+     Couleur de fond sélectionnée à partir de la palette de couleurs fournie.
 
    * **Version minimale**
 
-      Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La valeur par défaut est 9.0.0.
+     Version minimale d’Adobe Flash Player requise pour exécuter l’animation. La valeur par défaut est 9.0.0.
 
    * **Attributs**
 
-      Tous les autres attributs requis.
+     Tous les autres attributs requis.
 
 ### Image {#image}
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) au lieu de .
 
 Le composant Image affiche une image et le texte qui l’accompagne selon les paramètres définis.
 
@@ -392,7 +390,7 @@ Vous pouvez faire glisser et déposer une image à partir du [Explorateur de res
 
 Une fois l’image téléchargée (et pas avant), vous pouvez utiliser [modification statique](/help/sites-authoring/editing-content.md#edit-content) pour recadrer/faire pivoter l’image selon les besoins :
 
-![](do-not-localize/chlimage_1-15.png)
+![Barre d’outils d’édition statique](do-not-localize/chlimage_1-15.png)
 
 >[!NOTE]
 >
@@ -402,7 +400,7 @@ Une fois l’image téléchargée (et pas avant), vous pouvez utiliser [modifica
 
 Différentes autres options sont disponibles en mode Plein écran. Par exemple, Carte et Zoom :
 
-![](do-not-localize/chlimage_1-16.png)
+![Mode de modification plein écran - carte et zoom](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
 >
@@ -416,39 +414,39 @@ Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
 * **Map**
 
-   Pour mapper une image, sélectionnez Mapper. Vous pouvez spécifier ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement sur lequel la zone doit pointer.
+  Pour mapper une image, sélectionnez Mapper. Vous pouvez spécifier ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement sur lequel la zone doit pointer.
 
 * **Recadrer**
 
-   Pour supprimer une partie d’une image, sélectionnez Recadrer. Utilisez la souris pour effectuer le recadrage.
+  Pour supprimer une partie d’une image, sélectionnez Recadrer. Utilisez la souris pour effectuer le recadrage.
 
 * **Rotation**
 
-   Pour faire pivoter une image, sélectionnez Rotation. Répétez l’opération jusqu’à ce que l’image ait pivoté comme vous le souhaitez.
+  Pour faire pivoter une image, sélectionnez Rotation. Répétez l’opération jusqu’à ce que l’image ait pivoté comme vous le souhaitez.
 
 * **Effacer**
 
-   Permet de supprimer l’image actuelle.
+  Permet de supprimer l’image actuelle.
 
 * **Titre**
 
-   Titre de l’image.
+  Titre de l’image.
 
 * **Texte de remplacement**
 
-   Texte de remplacement à utiliser lors de la création de contenu accessible.
+  Texte de remplacement à utiliser lors de la création de contenu accessible.
 
 * **Lier à**
 
-   Créez un lien vers les ressources ou d’autres pages de votre site Web.
+  Créez un lien vers les ressources ou d’autres pages de votre site Web.
 
 * **Description**
 
-   Description de l’image.
+  Description de l’image.
 
 * **Taille**
 
-   Permet de définir la hauteur et la largeur de l’image.
+  Permet de définir la hauteur et la largeur de l’image.
 
 >[!NOTE]
 >
@@ -466,7 +464,7 @@ Ce composant fournit un système de paragraphes/grille qui permet d’ajouter et
 
 >[!NOTE]
 >
->Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr).
+>Ce composant a été mis en œuvre avec le [langage de modèle HTML (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr).
 
 ### Liste {#list}
 
@@ -480,7 +478,7 @@ Le composant Liste vous permet de configurer des critères de recherche pour l�
 
    * **Construire la liste avec**
 
-      Indiquez ici où la liste récupère son contenu. Il existe plusieurs méthodes :
+     Indiquez ici où la liste récupère son contenu. Il existe plusieurs méthodes :
 
    * Selon l’élément que vous choisissez, un nouveau panneau s’affiche :
 
@@ -488,55 +486,55 @@ Le composant Liste vous permet de configurer des critères de recherche pour l�
 
          * **Enfants de** (Page parente)
 
-            Spécifiez un chemin manuellement ou à l’aide du sélecteur. Laisser ce champ vide pour utiliser la page active en tant que Parent.
+           Spécifiez un chemin manuellement ou à l’aide du sélecteur. Laisser ce champ vide pour utiliser la page active en tant que Parent.
+
       * **Options de la liste fixe**
 
          * **Pages**
 
-            Sélectionnez une liste de pages. Utilisez + pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
+           Sélectionnez une liste de pages. Utilisez + pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
+
       * **Options de recherche**
 
          * Démarrer dans
 
-            Spécifiez un chemin de départ manuellement ou à l’aide du sélecteur.
+           Spécifiez un chemin de départ manuellement ou à l’aide du sélecteur.
 
          * Requête de recherche
 
-            Vous pouvez entrer une requête de recherche en texte brut.
+           Vous pouvez entrer une requête de recherche en texte brut.
+
       * **Options de la recherche avancée**
 
          * **Notation des prédicats de QueryBuilder**
 
-            Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de QueryBuilder. Par exemple, vous pouvez saisir « fulltext=Marketing » pour que toutes les pages comportant « Marketing » dans leur contenu s’affichent dans le carrousel.
+           Vous pouvez saisir une requête de recherche à l’aide de la notation de prédicat de QueryBuilder. Par exemple, vous pouvez saisir « fulltext=Marketing » pour que toutes les pages comportant « Marketing » dans leur contenu s’affichent dans le carrousel.
 
-            Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour découvrir une étude complète sur les expressions de requête et d’autres exemples.
+           Consultez [API QueryBuilder](/help/sites-developing/querybuilder-api.md) pour découvrir une étude complète sur les expressions de requête et d’autres exemples.
+
       * **Balises**
 
-         Spécifiez la variable **Page parente**, **Balises/Mots-clés** et vos critères de correspondance requis.
+        Spécifiez la variable **Page parente**, **Balises/Mots-clés** et vos critères de correspondance requis.
+
    * **Afficher comme**
 
-      Permet de spécifier comment les éléments doivent être répertoriés (Liens, Teasers et Actualités).
+     Permet de spécifier comment les éléments doivent être répertoriés (Liens, Teasers et Actualités).
 
    * **Classer par**
 
-      Permet de spécifier si la liste doit être classée. Si c’est le cas, indique les critères à utiliser pour le tri. Vous pouvez saisir un critère ou en sélectionner un dans la liste déroulante fournie à cet effet.
+     Permet de spécifier si la liste doit être classée. Si c’est le cas, indique les critères à utiliser pour le tri. Vous pouvez saisir un critère ou en sélectionner un dans la liste déroulante fournie à cet effet.
 
    * **Limite**
 
-      Permet de spécifier le nombre maximal d’éléments à afficher dans la liste.
+     Permet de spécifier le nombre maximal d’éléments à afficher dans la liste.
 
    * **Activer le flux**
 
-      Indique si un flux RSS doit être activé pour la liste.
+     Indique si un flux RSS doit être activé pour la liste.
 
    * **Paginer après**
 
-      Vous pouvez indiquer ici le nombre d’éléments de la liste à afficher simultanément. Une liste comportant plus d’éléments que spécifié utilise la pagination pour afficher la liste en plusieurs parties.
-
-
-
-
-
+     Vous pouvez indiquer ici le nombre d’éléments de la liste à afficher simultanément. Une liste comportant plus d’éléments que spécifié utilise la pagination pour afficher la liste en plusieurs parties.
 
 L’exemple suivant illustre une **Liste** de la façon dont elle peut afficher une liste de pages enfants (la conception est contrôlée par les définitions CSS personnalisées d’une conception de site).
 
@@ -562,29 +560,29 @@ Vous pouvez configurer :
 
    * Libellé de section
 
-      Texte d’introduction pour les champs de saisie.
+     Texte d’introduction pour les champs de saisie.
 
    * Libellé du nom de l’utilisateur
 
-      Texte pour étiqueter le champ de nom d’utilisateur.
+     Texte pour étiqueter le champ de nom d’utilisateur.
 
    * Libellé du mot de passe
 
-      Texte pour étiqueter le champ du mot de passe.
+     Texte pour étiqueter le champ du mot de passe.
 
    * Libellé du bouton Se connecter
 
-      Texte du bouton de connexion.
+     Texte du bouton de connexion.
 
    * Rediriger vers
 
-      Vous pouvez spécifier la page de votre site Web qui doit s’ouvrir une fois l’utilisateur connecté.
+     Vous pouvez spécifier la page de votre site Web qui doit s’ouvrir une fois l’utilisateur connecté.
 
 * Déjà connecté
 
    * Libellé du bouton Continuer
 
-      Texte pour indiquer que l’utilisateur est déjà connecté.
+     Texte pour indiquer que l’utilisateur est déjà connecté.
 
 ### Statut de la commande {#order-status}
 
@@ -596,15 +594,15 @@ Vous pouvez configurer :
 
    * **Titre**
 
-      Spécifiez le texte du titre à afficher.
+     Spécifiez le texte du titre à afficher.
 
    * **Lien**
 
-      Spécifiez la page (produit) pour laquelle le statut de la commande doit être affiché.
+     Spécifiez la page (produit) pour laquelle le statut de la commande doit être affiché.
 
    * **Type / Taille**
 
-      Faites votre choix dans la sélection fournie.
+     Faites votre choix dans la sélection fournie.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -612,7 +610,7 @@ Vous pouvez configurer :
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr) au lieu de .
 
 Le **Référence** vous permet de référencer du texte à partir d’une autre page de votre site web AEM (dans l’instance active). Le contenu du paragraphe référencé s’affiche alors comme s’il se trouvait sur la page active. Le contenu est mis à jour lorsque le paragraphe source change (une actualisation de la page peut s’avérer nécessaire).
 
@@ -620,7 +618,7 @@ Le **Référence** vous permet de référencer du texte à partir d’une autre 
 
    * **Référence**
 
-      Spécifiez le chemin d’accès à la page et au paragraphe à référencer (y compris le contenu).
+     Spécifiez le chemin d’accès à la page et au paragraphe à référencer (y compris le contenu).
 
 Pour spécifier le chemin d’accès à un paragraphe, vous devez ajouter le suffixe suivant :
 
@@ -656,52 +654,52 @@ Vous pouvez configurer :
 
    * **Types de nœuds**
 
-      Si la recherche doit se limiter à un type de nœud spécifique, indiquez-le ici. Par exemple, `cq:Page`.
+     Si la recherche doit se limiter à un type de nœud spécifique, indiquez-le ici. Par exemple, `cq:Page`.
 
    * **Chemin d’accès de la recherche**
 
-      Indiquez la page racine de la branche que vous souhaitez rechercher.
+     Indiquez la page racine de la branche que vous souhaitez rechercher.
 
    * **Texte du bouton de recherche**
 
-      Nom affiché sur le bouton de recherche actuel.
+     Nom affiché sur le bouton de recherche actuel.
 
    * **Texte des statistiques**
 
-      Texte affiché au-dessus des résultats de la recherche.
+     Texte affiché au-dessus des résultats de la recherche.
 
    * **Texte Aucun résultat**
 
-      Si la recherche ne renvoie aucun résultat, le texte entré ici est affiché.
+     Si la recherche ne renvoie aucun résultat, le texte entré ici est affiché.
 
    * **Vérifier l’orthographe du texte**
 
-      Si une personne saisit un terme similaire, ce texte est affiché devant le terme.
+     Si une personne saisit un terme similaire, ce texte est affiché devant le terme.
 Par exemple, si vous saisissez `Geometrixxe`, le système affiche &quot;Voulez-vous dire ? Geometrixx&quot;.
 
    * **Texte Pages similaires**
 
-      Texte affiché à côté d’un résultat pour des pages similaires. Pour afficher les pages ayant un contenu similaire, cliquez sur ce lien.
+     Texte affiché à côté d’un résultat pour des pages similaires. Pour afficher les pages ayant un contenu similaire, cliquez sur ce lien.
 
    * **Texte Recherches connexes**
 
-      Texte affiché à côté des recherches de termes et sujets associés.
+     Texte affiché à côté des recherches de termes et sujets associés.
 
    * **Texte Tendances des recherches**
 
-      Titre situé au-dessus des termes de recherche entrés par un utilisateur.
+     Titre situé au-dessus des termes de recherche entrés par un utilisateur.
 
    * **Libellé Pages de résultats**
 
-      Texte qui apparaît en bas de cette liste avec des liens vers d’autres pages de résultats.
+     Texte qui apparaît en bas de cette liste avec des liens vers d’autres pages de résultats.
 
    * **Libellé Précédent**
 
-      Nom qui apparaît sur le lien vers les pages de recherche précédentes.
+     Nom qui apparaît sur le lien vers les pages de recherche précédentes.
 
    * **Libellé Suivant**
 
-      Nom qui apparaît sur le lien vers les pages de recherche suivantes.
+     Nom qui apparaît sur le lien vers les pages de recherche suivantes.
 
 L’exemple ci-dessous montre le composant Recherche après une recherche du mot *`geometrixx`* dans le répertoire racine d’une installation standard. Il illustre également la pagination des résultats :
 
@@ -727,13 +725,13 @@ Au besoin, vous pouvez configurer les éléments suivants :
 
    * **Chemin racine**
 
-      Chemin d’accès à partir duquel la liste doit commencer.
+     Chemin d’accès à partir duquel la liste doit commencer.
 
 ### Slideshow {#slideshow}
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal du carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal du carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=fr) au lieu de .
 
 >[!CAUTION]
 >
@@ -747,17 +745,17 @@ Vous pouvez configurer :
 
    * **Nouvelle diapositive**
 
-      Spécifiez une sélection de diapositives à l’aide des boutons **Ajouter** (et **Supprimer**).
+     Spécifiez une sélection de diapositives à l’aide des boutons **Ajouter** (et **Supprimer**).
 
    * **Titre**
 
-      Si nécessaire, indiquez un titre. Le titre est superposé sur la diapositive appropriée.
+     Si nécessaire, indiquez un titre. Le titre est superposé sur la diapositive appropriée.
 
 * **Avancé**
 
    * **Taille**
 
-      Permet de spécifier la largeur et la hauteur en pixels.
+     Permet de spécifier la largeur et la hauteur en pixels.
 
 Le composant Diaporama affiche ensuite de manière répétée chacune d’elles de manière séquentielle, pendant une courte période, avant de passer à la diapositive suivante :
 
@@ -767,7 +765,7 @@ Le composant Diaporama affiche ensuite de manière répétée chacune d’elles 
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=fr) au lieu de .
 
 >[!NOTE]
 >
@@ -800,15 +798,15 @@ Lorsque vous configurez le composant Nuage de balises, vous pouvez spécifier le
 
 * **Balises à afficher**
 
-   Emplacement à partir duquel les balises à afficher sont rassemblées. Faites votre choix entre une page, une page avec tous les enfants ou toutes les balises.
+  Emplacement à partir duquel les balises à afficher sont rassemblées. Faites votre choix entre une page, une page avec tous les enfants ou toutes les balises.
 
 * **Page**
 
-   Sélectionnez la page à référencer.
+  Sélectionnez la page à référencer.
 
 * **Aucun lien sur les balises**
 
-   Permet de spécifier si les balises affichées doivent se comporter comme des liens.
+  Permet de spécifier si les balises affichées doivent se comporter comme des liens.
 
 Pour plus d’informations sur l’application de balises, voir [Utilisation des balises](/help/sites-authoring/tags.md).
 
@@ -816,7 +814,7 @@ Pour plus d’informations sur l’application de balises, voir [Utilisation des
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=fr) au lieu de .
 
 >[!NOTE]
 >
@@ -845,7 +843,7 @@ Outre le mode d’édition de texte enrichi basé sur une boîte de dialogue, AE
 
 >[!CAUTION]
 >
->Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) et [Composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) au lieu de .
+>Ce composant de base est obsolète. Adobe recommande d’utiliser la variable [Image](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=fr) et [Composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=fr) au lieu de .
 
 Le composant Texte et image permet d’ajouter un bloc de texte et une image. Vous pouvez également ajouter et modifier du texte et des images séparément. Voir [Texte](#text) et [Image](#image) composants pour plus de détails.
 
@@ -855,35 +853,35 @@ Vous pouvez configurer :
 
 * **Styles de composant** (**Styles**)
 
-   Vous pouvez aligner ici l’image à droite ou à gauche. Le paramètre par défaut est aligné à **Gauche**, avec l’image à gauche.
+  Vous pouvez aligner ici l’image à droite ou à gauche. Le paramètre par défaut est aligné à **Gauche**, avec l’image à gauche.
 
 * **Propriétés de l’image** (**Propriétés d’image avancées**)
 
-   Sous cet onglet, vous pouvez spécifier les paramètres suivants :
+  Sous cet onglet, vous pouvez spécifier les paramètres suivants :
 
    * **Ressource image**
 
-      Téléchargez l’image requise.
+     Téléchargez l’image requise.
 
    * **Titre**
 
-      Titre du bloc, affiché en pointant la souris.
+     Titre du bloc, affiché en pointant la souris.
 
    * **Texte de remplacement**
 
-      Texte de remplacement à afficher lorsque l’image ne peut pas être affichée. Si rien n’est indiqué, le titre est utilisé.
+     Texte de remplacement à afficher lorsque l’image ne peut pas être affichée. Si rien n’est indiqué, le titre est utilisé.
 
    * **Lier à**
 
-      Spécifiez un chemin cible.
+     Spécifiez un chemin cible.
 
    * **Description**
 
-      Description de l’image.
+     Description de l’image.
 
    * **Taille**
 
-      Définit la hauteur et la largeur de l’image.
+     Définit la hauteur et la largeur de l’image.
 
 L’exemple suivant illustre un composant Image de texte qui affiche l’image alignée à gauche :
 
@@ -904,15 +902,15 @@ Vous pouvez configurer :
 
 * **Titre**
 
-   Si vous voulez utiliser un nom différent du titre de la page, saisissez-le ici.
+  Si vous voulez utiliser un nom différent du titre de la page, saisissez-le ici.
 
 * **Lien**
 
-   URI si le titre doit se comporter comme un lien.
+  URI si le titre doit se comporter comme un lien.
 
 * **Type / Taille**
 
-   Sélectionnez Petit ou Grand dans la liste déroulante. Petit est généré en tant qu’image. L’option Grand est générée sous forme de texte.
+  Sélectionnez Petit ou Grand dans la liste déroulante. Petit est généré en tant qu’image. L’option Grand est générée sous forme de texte.
 
 L’exemple suivant illustre une **Titre** composant affiché ; la conception est déterminée par le CSS spécifique au site.
 
@@ -938,11 +936,11 @@ Après avoir placé une instance du composant sur votre page, vous pouvez config
 
    * **Ressource vidéo**
 
-      Transférez ou déposez la ressource vidéo.
+     Chargez ou déposez la ressource vidéo.
 
    * **Taille**
 
-      La taille native de la vidéo (largeur x hauteur en pixels) apparaît dans les zones en regard de Taille (voir ci-dessus). Saisissez ici manuellement la largeur et la hauteur pour remplacer les dimensions natives de la vidéo. Sélection **OK** ferme la boîte de dialogue.
+     La taille native de la vidéo (largeur x hauteur en pixels) apparaît dans les zones en regard de Taille (voir ci-dessus). Saisissez ici manuellement la largeur et la hauteur pour remplacer les dimensions natives de la vidéo. Sélection **OK** ferme la boîte de dialogue.
 
 >[!NOTE]
 >
@@ -951,7 +949,6 @@ Après avoir placé une instance du composant sur votre page, vous pouvez config
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (Flash video)
-
 
 ## Colonnes {#columns}
 
@@ -977,7 +974,7 @@ Le composant Contrôle de colonne permet aux utilisateurs de sélectionner la ma
 
    * **Disposition des colonnes**
 
-      Sélectionnez le nombre de colonnes à rendre. Une fois créée, chaque colonne dispose de son propre lien pour faire glisser des composants ou des ressources lors de l’ajout de contenu.
+     Sélectionnez le nombre de colonnes à rendre. Une fois créée, chaque colonne dispose de son propre lien pour faire glisser des composants ou des ressources lors de l’ajout de contenu.
 
 ## Formulaire {#form}
 
@@ -995,15 +992,15 @@ Forms est constitué de plusieurs composants différents :
 
 * **Formulaire**
 
-   Le composant Formulaire définit le début et la fin d’un nouveau formulaire dans la page. D’autres composants peuvent ensuite être placés entre ces éléments, tels que des tableaux et des téléchargements.
+  Le composant Formulaire définit le début et la fin d’un nouveau formulaire dans la page. D’autres composants peuvent ensuite être placés entre ces éléments, tels que des tableaux et des téléchargements.
 
 * **Champs et éléments de formulaire**
 
-   Les champs de formulaire et les éléments peuvent inclure des zones de texte, des boutons radio et des images. L’utilisateur exécute souvent une action dans un champ de formulaire (saisie de texte, par exemple). Pour plus d’informations, reportez-vous à la section Eléments de formulaire individuels .
+  Les champs de formulaire et les éléments peuvent inclure des zones de texte, des boutons radio et des images. L’utilisateur exécute souvent une action dans un champ de formulaire (saisie de texte, par exemple). Pour plus d’informations, reportez-vous à la section Eléments de formulaire individuels .
 
 * **Composants de profil**
 
-   Les composants de profil se rapportent aux profils du visiteur utilisés pour la collaboration sociale et d’autres domaines dans lesquels la personnalisation des visiteurs est requise.
+  Les composants de profil se rapportent aux profils du visiteur utilisés pour la collaboration sociale et d’autres domaines dans lesquels la personnalisation des visiteurs est requise.
 
 Vous trouverez ci-dessous un exemple de formulaire. Il se compose de la variable **Formulaire** composant (début et fin), avec deux **Formulaire** **Texte** champs utilisés pour la saisie, un **Général** **Texte** champ utilisé pour le texte du prospect et une **Envoyer** bouton .
 
@@ -1021,19 +1018,19 @@ Lors de la configuration de l’un des composants de formulaire, les onglets sui
 
 * **Titre et texte**
 
-   Vous devez y indiquer les informations de base, telles que le titre du formulaire et le texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations clés, telles que si le champ peut être sélectionné plusieurs fois et si des éléments peuvent être sélectionnés.
+  Vous devez y indiquer les informations de base, telles que le titre du formulaire et le texte d’accompagnement. Le cas échéant, il vous permet également de définir d’autres informations clés, telles que si le champ peut être sélectionné plusieurs fois et si des éléments peuvent être sélectionnés.
 
 * **Valeurs initiales**
 
-   Permet de spécifier une valeur par défaut.
+  Permet de spécifier une valeur par défaut.
 
 * **Contraintes**
 
-   Vous pouvez indiquer ici si un champ est obligatoire et y placer des contraintes (par exemple, doit être numérique).
+  Vous pouvez indiquer ici si un champ est obligatoire et y placer des contraintes (par exemple, doit être numérique).
 
 * **Style**
 
-   Indique la taille et le style des champs.
+  Indique la taille et le style des champs.
 
 >[!NOTE]
 >
@@ -1045,57 +1042,57 @@ Ces onglets vous fournissent les paramètres nécessaires. Les onglets peuvent d
 
    * **Nom de l’élément**
 
-      Nom de l’élément de formulaire. Il indique où, dans le référentiel, les données sont stockées.
+     Nom de l’élément de formulaire. Il indique où, dans le référentiel, les données sont stockées.
 Ce champ est obligatoire et ne doit contenir que les caractères suivants :
 
       * caractères alphanumériques
       * `_ . / : -`
+
    * **Titre**
 
-      Titre affiché avec le champ. Si rien n’est indiqué, le titre par défaut s’affiche.
+     Titre affiché avec le champ. Si rien n’est indiqué, le titre par défaut s’affiche.
 
    * **Description**
 
-      Vous permet de fournir des informations supplémentaires à l’utilisateur, si nécessaire. Sur le formulaire, il s’affiche sous le champ, dans une police plus petite que le titre.
+     Vous permet de fournir des informations supplémentaires à l’utilisateur, si nécessaire. Sur le formulaire, il s’affiche sous le champ, dans une police plus petite que le titre.
 
    * **Afficher/Masquer**
 
-      Détermine le moment où le champ est visible.
-
+     Détermine le moment où le champ est visible.
 
 * **Valeurs initiales**
 
    * **Valeur par défaut**
 
-      Valeur affichée dans le champ à l’ouverture du formulaire. C’est-à-dire avant que l’utilisateur n’ait saisi des données.
+     Valeur affichée dans le champ à l’ouverture du formulaire. C’est-à-dire avant que l’utilisateur n’ait saisi des données.
 
 * **Contraintes**
 
    * **Requis**
 
-      Les contraintes dépendent du type de composant de formulaire, mais fournit une ou plusieurs zones de clic pour indiquer que ce champ est obligatoire ou que certaines parties de ce champ sont obligatoires.
+     Les contraintes dépendent du type de composant de formulaire, mais fournit une ou plusieurs zones de clic pour indiquer que ce champ est obligatoire ou que certaines parties de ce champ sont obligatoires.
 
    * **Message obligatoire**
 
-      Message informant les utilisateurs que ce champ est obligatoire. Un champ obligatoire est également marqué d’un astérisque.
+     Message informant les utilisateurs que ce champ est obligatoire. Un champ obligatoire est également marqué d’un astérisque.
 
    * **Contrainte**
 
-      Les contraintes disponibles pour la sélection dépendent du type de composant de formulaire.
+     Les contraintes disponibles pour la sélection dépendent du type de composant de formulaire.
 
    * **Message de contrainte**
 
-      Message qui informe les utilisateurs de ce qui est obligatoire.
+     Message qui informe les utilisateurs de ce qui est obligatoire.
 
 * **Style**
 
    * **Taille**
 
-      En lignes et en colonnes.
+     En lignes et en colonnes.
 
    * **Largeur**
 
-      En pixels.
+     En pixels.
 
    * **CSS**
 
@@ -1123,17 +1120,17 @@ Ce composant définit le début d’un nouveau formulaire sur une page. Vous pou
 
    * **Page de remerciement**
 
-      Page à référencer pour remercier les visiteurs pour leur message. Si rien n’est indiqué, le formulaire s’affiche de nouveau après envoi.
+     Page à référencer pour remercier les visiteurs pour leur message. Si rien n’est indiqué, le formulaire s’affiche de nouveau après envoi.
 
    * **Démarrer le workflow**
 
-      Détermine quel workflow est déclenché une fois le formulaire envoyé.
+     Détermine quel workflow est déclenché une fois le formulaire envoyé.
 
 * **Avancé**
 
    * **Type d’action**
 
-      Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains ont besoin d’une **Configuration d’action**.
+     Un formulaire requiert une action. L’action définit l’opération déclenchée avec les données soumises par l’utilisateur (semblable à action= en langage HTML). Certains ont besoin d’une **Configuration d’action**.
 Plusieurs types d’action sont inclus dans une installation AEM standard :
 
       * **Demande de compte**
@@ -1153,149 +1150,149 @@ Plusieurs types d’action sont inclus dans une installation AEM standard :
       * **Définir le mot de passe**
       * **Stocker le contenu**
 
-         Type d’action par défaut.
+        Type d’action par défaut.
 
       * **Stocker le contenu avec les chargements**
       * **Envoyer la commande**
       * **Désabonner l’abonné**
       * **Mettre à jour la commande**
+
    * **Identifiant de formulaire**
 
-      L’identifiant du formulaire l’identifie de façon unique. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
+     L’identifiant du formulaire l’identifie de façon unique. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
 
    * **Chemin de chargement**
 
-      Chemin d’accès aux propriétés de nœud, utilisé pour charger les valeurs prédéfinies dans les champs du formulaire.
+     Chemin d’accès aux propriétés de nœud, utilisé pour charger les valeurs prédéfinies dans les champs du formulaire.
 
-      Champ facultatif qui spécifie le chemin d’accès à un noeud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
+     Champ facultatif qui spécifie le chemin d’accès à un noeud dans le référentiel. Lorsque ce nœud comporte des propriétés qui correspondent aux noms des champs, les champs adéquats du formulaire sont préchargés avec la valeur de ces propriétés. S’il n’existe aucune correspondance, le champ contient la valeur par défaut.
 
-      Le champ **Chemin de chargement** vous permet de précharger des valeurs dans les champs obligatoires du formulaire. Consultez [Préchargement des valeurs de formulaire](/help/sites-developing/developing-forms.md#preloading-form-values).
+     Le champ **Chemin de chargement** vous permet de précharger des valeurs dans les champs obligatoires du formulaire. Consultez [Préchargement des valeurs de formulaire](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **Validation du client**
 
-      Indique si la validation du client est requise pour ce formulaire (validation du serveur) *always* se produit). La validation du client peut être réalisée à l’aide de la fonction **Captcha Forms** composant.
+     Indique si la validation du client est requise pour ce formulaire (validation du serveur) *always* se produit). La validation du client peut être réalisée à l’aide de la fonction **Captcha Forms** composant.
 
    * **Type de ressource de validation**
 
-      Définit le type de ressource de validation si vous souhaitez valider la totalité du formulaire (et non des champs séparés). Si vous validez le formulaire dans son intégralité, vous devez également inclure l’un des éléments suivants :
+     Définit le type de ressource de validation si vous souhaitez valider la totalité du formulaire (et non des champs séparés). Si vous validez le formulaire dans son intégralité, vous devez également inclure l’un des éléments suivants :
 
       * Un script pour la validation du client
 
-         `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
+        `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
 
       * Un script pour la validation du côté serveur
 
-         `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+        `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+
    * **Configuration de l’action**
 
-      Les options disponibles dans **Configuration d’action** dépendent de la sélection **Type d’action**:
+     Les options disponibles dans **Configuration d’action** dépendent de la sélection **Type d’action**:
 
       * **Demande de compte**
 
          * **Page Créer un compte**
 
-            Page utilisée lors de la création d’un compte.
+           Page utilisée lors de la création d’un compte.
+
       * **Créer le contenu**
 
          * Chemin d’accès au contenu
 
-            Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
+           Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
 
-            `/forms/feedback/`
+           `/forms/feedback/`
 
          * **Type**
 
-            Sélectionnez le type requis.
+           Sélectionnez le type requis.
 
          * **Formulaire**
 
-            Spécifiez le formulaire.
+           Spécifiez le formulaire.
 
          * **Rendu avec**
 
-            Sélectionnez l’option désirée dans la liste.
+           Sélectionnez l’option désirée dans la liste.
 
          * **Type de ressource**
 
-            S’il est défini, il est ajouté à chaque commentaire sous la forme `sling:resourceType`
+           S’il est défini, il est ajouté à chaque commentaire sous la forme `sling:resourceType`
 
          * **Sélecteur d’affichage**
+
       * **Créer un prospect**
 
          * **Le prospect est ajouté à cette liste.**
 
-            Spécifiez la liste de prospects requise.
+           Spécifiez la liste de prospects requise.
+
       * **Créer un compte et le mettre à jour**
 
          * **Groupe initial**
 
-            Groupe auquel affecter un nouvel utilisateur.
+           Groupe auquel affecter un nouvel utilisateur.
 
          * **Accueil**
 
-            Page à afficher après une connexion réussie.
+           Page à afficher après une connexion réussie.
 
          * **Chemin**
 
-            Chemin (relatif) vers l’emplacement de création et de stockage du nouveau compte.
+           Chemin (relatif) vers l’emplacement de création et de stockage du nouveau compte.
 
          * **Afficher des données...**
 
-            Lorsque vous sélectionnez ce bouton, les informations relatives aux résultats du formulaire sont accessibles dans l’éditeur en bloc. Vous avez alors la possibilité d’exporter les informations vers un fichier `.tsv` (séparé par des tabulations) (en vue de l’utiliser, par exemple, dans une feuille de calcul Excel).
+           Lorsque vous sélectionnez ce bouton, les informations relatives aux résultats du formulaire sont accessibles dans l’éditeur en bloc. Vous avez alors la possibilité d’exporter les informations vers un fichier `.tsv` (séparé par des tabulations) (en vue de l’utiliser, par exemple, dans une feuille de calcul Excel).
+
       * **Courrier**
 
          * **De**
 
-            Saisissez l’adresse électronique d’où doit provenir le courrier électronique.
+           Saisissez l’adresse électronique d’où doit provenir le courrier électronique.
 
          * **Envoyer à**
 
-            Entrez une ou plusieurs adresses électroniques auxquelles le formulaire est envoyé.
+           Entrez une ou plusieurs adresses électroniques auxquelles le formulaire est envoyé.
 
          * **CC**
 
-            Saisissez une ou plusieurs adresses électroniques en copie carbone invisible.
+           Saisissez une ou plusieurs adresses électroniques en copie carbone invisible.
 
          * **CCI**
 
-            Saisissez une ou plusieurs adresses email en Cci.
+           Saisissez une ou plusieurs adresses email en Cci.
 
          * **Objet**
 
-            Saisissez l’objet du courrier électronique.
+           Saisissez l’objet du courrier électronique.
+
       * **Réinitialiser le mot de passe**
 
          * **Page Changer le mot de passe**
 
-            Page utilisée lors de la modification du mot de passe.
+           Page utilisée lors de la modification du mot de passe.
+
       * **Stocker le contenu**
 
          * **Chemin d’accès au contenu**
 
-            Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
-            `/forms/feedback/`
+           Chemin d’accès à tout type de contenu utilisé par le formulaire. Saisissez un chemin qui se termine par une barre oblique `/`. La barre oblique signifie que, pour chaque port de formulaire, un nouveau nœud est créé à l’emplacement indiqué, par exemple :
+           `/forms/feedback/`
 
          * **Afficher des données...**
 
-            Cliquez sur ce bouton pour accéder aux informations relatives aux résultats de formulaire dans l’éditeur en bloc. À partir de là, vous pouvez exporter les informations vers un fichier .tsv (séparé par des tabulations) (à utiliser dans une feuille de calcul Excel, par exemple).
+           Cliquez sur ce bouton pour accéder aux informations relatives aux résultats de formulaire dans l’éditeur en bloc. À partir de là, vous pouvez exporter les informations vers un fichier .tsv (séparé par des tabulations) (à utiliser dans une feuille de calcul Excel, par exemple).
+
       * **Stocker le contenu avec les chargements**
 
-         Dispose des mêmes options que **Stocker le contenu**.
+        Dispose des mêmes options que **Stocker le contenu**.
 
       * **Désabonner l’abonné**
 
          * **La piste est supprimée de cette liste.**
 
-            Spécifiez la liste de prospects requise.
-
-
-
-
-
-
-
-
-
+           Spécifiez la liste de prospects requise.
 
 #### Fin de formulaire {#end-of-form}
 
@@ -1305,27 +1302,27 @@ Marque la fin du formulaire. Vous pouvez configurer les éléments suivants :
 
    * **Afficher le bouton Envoyer**
 
-      Indique si un bouton Envoyer doit être affiché ou non.
+     Indique si un bouton Envoyer doit être affiché ou non.
 
    * **Envoyer le nom**
 
-      Identifiant si vous utilisez plusieurs boutons d’envoi dans un formulaire.
+     Identifiant si vous utilisez plusieurs boutons d’envoi dans un formulaire.
 
    * **Envoyer le titre**
 
-      Nom qui s’affiche sur le bouton, tel que Envoyer ou Envoyer.
+     Nom qui s’affiche sur le bouton, tel que Envoyer ou Envoyer.
 
    * **Afficher le bouton Réinitialiser**
 
-      Si vous cochez cette case, le bouton Réinitialiser est visible.
+     Si vous cochez cette case, le bouton Réinitialiser est visible.
 
    * **Réinitialiser le titre**
 
-      Nom qui s’affiche sur le bouton Réinitialiser .
+     Nom qui s’affiche sur le bouton Réinitialiser .
 
    * **Description**
 
-      Informations qui s’affichent sous le bouton.
+     Informations qui s’affichent sous le bouton.
 
 ### Nom de compte {#account-name}
 

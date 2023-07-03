@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 68%
+source-wordcount: '1805'
+ht-degree: 69%
 
 ---
 
@@ -40,11 +40,11 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
 * Composant [**Conteneur de mises en page**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Ce composant, qui est disponible dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser), fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
+  Ce composant, qui est disponible dans l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser), fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
 
 * [**Mode Mise en page**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser le mode **Mise en page** pour placer le contenu dans la grille réactive.
+  Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser le mode **Mise en page** pour placer le contenu dans la grille réactive.
 
 * [**Émulateur**](#selecting-a-device-to-emulate)
 Permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
@@ -101,7 +101,7 @@ Par exemple, lorsque vous sélectionnez le périphérique **iPhone 6 Plus** (dé
 
 1. Sélectionnez l’icône **Émulateur** dans la barre d’outils supérieure :
 
-   ![](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Emulateur](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. La barre d’outils de l’émulateur s’ouvre.
 
@@ -109,13 +109,13 @@ Par exemple, lorsque vous sélectionnez le périphérique **iPhone 6 Plus** (dé
 
    La barre d’outils de l’émulateur affiche des options de mise en page supplémentaires :
 
-   * **Rotation du périphérique** - Permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage) et inversement.
+   * **Rotation du périphérique** : permet de faire pivoter un appareil de l’orientation verticale (portrait) à l’orientation horizontale (paysage), et inversement.
 
-   ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Rotation du périphérique](do-not-localize/screen_shot_2018-03-23at084612.png) ![Rotation du périphérique](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Sélectionner un appareil** : permet de sélectionner un appareil spécifique à émuler dans une liste (pour plus d’informations, voir l’étape suivante).
 
-   ![](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Sélectionner un périphérique](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
@@ -138,8 +138,6 @@ Par exemple, lorsque vous sélectionnez le périphérique **iPhone 6 Plus** (dé
    * Le pli peut également être considéré comme un saut de ligne de page (à ne pas confondre avec le [points d’arrêt](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à des fins pratiques pour indiquer la partie du contenu que l’utilisateur verra sur l’appareil avant de faire défiler l’écran.
    * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
    * Le pli est affiché pour faciliter le travail de l’auteur et n’apparaît pas sur la page publiée.
-
-
 
 ## Ajout d’un conteneur de mises en page et de son contenu (mode d’édition) {#adding-a-layout-container-and-its-content-edit-mode}
 
@@ -172,7 +170,7 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 
    Vous devez sélectionner l’option **Parent**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Option parente](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Si le composant de mise en page est imbriqué, sélectionnez l’option **Parent** présente une sélection déroulante, ce qui vous permet de sélectionner le conteneur de mises en page imbriqué ou ses parents.
 
@@ -212,62 +210,63 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
 * Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’aligne toujours sur la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
 
-   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
+  ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
-   >[!NOTE]
-   >
-   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
+  >[!NOTE]
+  >
+  >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
 
 * Cliquez ou appuyez sur un composant de contenu. La barre d’outils propose les options suivantes :
 
    * **Parent**
 
-      Permet de sélectionner l’intégralité du composant Conteneur de mises en pages pour effectuer une opération.
+     Permet de sélectionner l’intégralité du composant Conteneur de mises en pages pour effectuer une opération.
 
    * **Flotter sur une nouvelle ligne**
 
-      Le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
+     Le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
 
    * **Masquer le composant**
 
-      Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
-   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
+     Le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
+
+  ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils de ce mode s’affiche.
 
-   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
+  La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 
    * **Parent** : permet de sélectionner le composant parent.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090823.png)
+     ![Parent](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Afficher les composants masqués** - Affiche tous les composants, ou individuellement certains composants. Ce nombre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091007.png)
+     ![Afficher les composants masqués](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Rétablir la disposition du point d’arrêt** : rétablit la mise en page par défaut. Aucune mise en page personnalisée n’est donc imposée.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Redéfinir la disposition du point d’arrêt](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Flotter sur une nouvelle ligne** : déplace le composant d’une position vers le haut si l’espace est suffisant.
 
-   ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Masquer le composant** : masque le composant actif.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090834.png)
+     ![Masquer le composant](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-   >[!NOTE]
-   >
-   >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
+     >[!NOTE]
+     >
+     >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
    * **Afficher les composants**
-Sélectionnez les composants parents pour afficher la barre d’outils comportant 
-l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
-   ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+Sélectionnez les composants parents pour afficher la barre d’outils comportant l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
 
-   Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
+     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
-   ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+  Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
 
-   Sélectionnez **Restaurer tout** pour afficher tous les composants masqués.
+  ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+
+  Sélectionnez **Restaurer tout** pour afficher tous les composants masqués.
