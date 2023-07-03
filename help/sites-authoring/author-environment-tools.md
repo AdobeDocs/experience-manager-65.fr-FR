@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2242'
 ht-degree: 60%
 
 ---
@@ -69,21 +69,21 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 * **Appareils mobiles (p. ex. iPad)**
 
-   L’explorateur de composants couvre entièrement la page en cours de modification.
+  L’explorateur de composants couvre entièrement la page en cours de modification.
 
-   Pour ajouter un composant à votre page, maintenez appuyé le composant requis et déplacez-le vers la droite (l’explorateur de composants se ferme pour afficher à nouveau la page) où vous pouvez positionner le composant.
+  Pour ajouter un composant à votre page, maintenez appuyé le composant requis et déplacez-le vers la droite (l’explorateur de composants se ferme pour afficher à nouveau la page) où vous pouvez positionner le composant.
 
-   ![ateat-04](assets/ateat-04.png)
+  ![ateat-04](assets/ateat-04.png)
 
 * **Poste de travail**
 
-   L’explorateur de composants s’ouvre sur le côté gauche de la fenêtre.
+  L’explorateur de composants s’ouvre sur le côté gauche de la fenêtre.
 
-   Pour ajouter un composant à votre page, cliquez sur le composant requis et faites-le glisser vers l’emplacement requis.
+  Pour ajouter un composant à votre page, cliquez sur le composant requis et faites-le glisser vers l’emplacement requis.
 
-   ![ateat-05](assets/ateat-05.png)
+  ![ateat-05](assets/ateat-05.png)
 
-   Les composants sont représentés par
+  Les composants sont représentés par
 
    * Nom du composant
    * Groupe de composants (en gris)
@@ -92,16 +92,16 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
       * Les icônes des composants standard sont monochromes.
       * Les abréviations sont toujours les deux premiers caractères du nom du composant.
 
-   Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
+  Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
 
    * Filtrer les composants par nom
    * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante
 
-   Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **conteneur de mise en page** :
+  Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **conteneur de mise en page** :
 
-   ![ateat-06](assets/ateat-06.png)
+  ![ateat-06](assets/ateat-06.png)
 
-   Pour plus d’informations sur les composants disponibles, voir [Console Composants](/help/sites-authoring/default-components-console.md).
+  Pour plus d’informations sur les composants disponibles, voir [Console Composants](/help/sites-authoring/default-components-console.md).
 
 ## Explorateur de ressources {#assets-browser}
 
@@ -150,23 +150,23 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 * **Appareil mobile tel qu’iPad**
 
-   L’explorateur de ressources couvre entièrement la page en cours de modification.
+  L’explorateur de ressources couvre entièrement la page en cours de modification.
 
-   Pour ajouter une ressource à votre page, maintenez appuyé la ressource requise, puis déplacez-la vers la droite : l’explorateur de ressources se ferme pour afficher à nouveau la page, où vous pouvez ajouter la ressource au composant requis.
+  Pour ajouter une ressource à votre page, maintenez appuyé la ressource requise, puis déplacez-la vers la droite : l’explorateur de ressources se ferme pour afficher à nouveau la page, où vous pouvez ajouter la ressource au composant requis.
 
-   ![ateat-09](assets/ateat-09.png)
+  ![ateat-09](assets/ateat-09.png)
 
 * **Poste de travail**
 
-   L’explorateur de ressources s’ouvre sur le côté gauche de la fenêtre.
+  L’explorateur de ressources s’ouvre sur le côté gauche de la fenêtre.
 
-   Pour ajouter une ressource à votre page, cliquez sur la ressource requise et faites-la glisser vers le composant ou l’emplacement requis.
+  Pour ajouter une ressource à votre page, cliquez sur la ressource requise et faites-la glisser vers le composant ou l’emplacement requis.
 
-   ![ateat-10](assets/ateat-10.png)
+  ![ateat-10](assets/ateat-10.png)
 
 Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeur de ressources](/help/assets/manage-assets.md) directement depuis l’explorateur de ressources en cliquant sur l’icône Modifier affichée en regard du nom de la ressource.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Explorateur de ressources Périphérique de bureau](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Arborescence de contenu {#content-tree}
 
@@ -174,7 +174,7 @@ Le **Arborescence de contenu** donne un aperçu de tous les composants de la pag
 
 L’arborescence de contenu est un onglet du panneau latéral (ainsi que l’explorateur de composants et de ressources). Pour ouvrir (ou fermer) le panneau latéral, utilisez l’icône en haut à gauche de la barre d’outils :
 
-![](do-not-localize/screen_shot_2018-03-22at142042.png)
+![Arborescence de contenu](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Arborescence de contenu** si nécessaire. Une fois ouvert, vous pouvez voir une représentation en arborescence de votre page ou modèle, de sorte qu’il soit plus facile de comprendre comment son contenu est structuré de manière hiérarchique. En outre, sur une page complexe, il est plus facile de passer d’un composant à l’autre de la page.
 
@@ -196,19 +196,19 @@ Cliquez sur le composant pour le mettre en surbrillance dans l’éditeur de pag
 
 * Par exemple, une page de base :
 
-   `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
-   ![ateat-12](assets/ateat-12.png)
+  ![ateat-12](assets/ateat-12.png)
 
-   Si le composant sur lequel vous cliquez est éditable, une icône de clé à molette s’affiche à droite du nom. Cliquez sur cette icône pour lancer directement la boîte de dialogue de modification du composant.
+  Si le composant sur lequel vous cliquez est éditable, une icône de clé à molette s’affiche à droite du nom. Cliquez sur cette icône pour lancer directement la boîte de dialogue de modification du composant.
 
-   ![](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Icône de clé à molette - Modifier](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Ou une page qui fait partie d’un [livecopy](/help/sites-administering/msm.md), où les composants sont hérités d’une autre page ; par exemple :
 
-   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-   ![ateat-13](assets/ateat-13.png)
+  ![ateat-13](assets/ateat-13.png)
 
 ## Fragments – Explorateur de contenu associé {#fragments-associated-content-browser}
 
@@ -320,7 +320,6 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
 >
 
-
 ## Sélection du chemin d’accès {#path-selection}
 
 Lors de la création, il est souvent nécessaire de sélectionner une autre ressource, par exemple lors de la définition d&#39;un lien vers une autre page ou ressource ou de la sélection d&#39;une image. Pour sélectionner facilement un chemin, [Champs de chemin](/help/sites-authoring/author-environment-tools.md#path-fields) la saisie automatique de l’offre et la variable [explorateur de chemins d’accès](/help/sites-authoring/author-environment-tools.md#path-browser) permet une sélection plus robuste.
@@ -333,7 +332,7 @@ Les champs de chemin d’accès disposent désormais d’une fonctionnalité de 
 
 Si vous cliquez sur le bouton **Ouvrir la boîte de dialogue de sélection** dans le champ de chemin d’accès, la boîte de dialogue [Explorateur de chemins d’accès](/help/sites-authoring/author-environment-tools.md#path-browser) s’ouvre pour vous permettre d’accéder à des options de sélection plus détaillées.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Boîte de dialogue Ouvrir la sélection](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Vous pouvez également effectuer une saisie dans le champ de chemin d’accès. AEM vous proposera alors les chemins d’accès correspondants au fil de la saisie.
 
@@ -351,7 +350,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 * Vous pouvez à tout moment utiliser le champ de recherche en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.
 * Pour affiner votre recherche, vous pouvez afficher les options de filtre et filtrer vos résultats en fonction du chemin d’accès.
 
-   ![ateat-21](assets/ateat-21.png)
+  ![ateat-21](assets/ateat-21.png)
 
 ## Raccourcis clavier {#keyboard-shortcuts}
 

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3082'
 ht-degree: 56%
 
 ---
@@ -46,51 +46,51 @@ La barre d&#39;outils permet d&#39;accéder à de nombreuses options. Selon votr
 
 * **Activer/désactiver le panneau latéral**
 
-   Cela ouvre/ferme le panneau latéral, qui contient la balise [Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser), [Explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser), et [Arborescence de contenu](/help/sites-authoring/author-environment-tools.md#content-tree).
+  Cela ouvre/ferme le panneau latéral, qui contient la balise [Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser), [Explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser), et [Arborescence de contenu](/help/sites-authoring/author-environment-tools.md#content-tree).
 
-   ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![Activer/désactiver le panneau latéral](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Informations sur la page**
 
-   Permet d’accéder au [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information) menu comprenant les détails de la page et les actions qui peuvent être entreprises sur la page, notamment l’affichage et la modification des informations de la page, l’affichage des propriétés de la page et la publication/annulation de la publication de la page.
+  Permet d’accéder au [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information) menu comprenant les détails de la page et les actions qui peuvent être entreprises sur la page, notamment l’affichage et la modification des informations de la page, l’affichage des propriétés de la page et la publication/annulation de la publication de la page.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![Informations sur la page](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulateur**
 
-   Active/désactive la variable [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), qui est utilisé pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
+  Active/désactive la variable [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), qui est utilisé pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Emulateur](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-   Ouvre la [hub contextuel](/help/sites-authoring/ch-previewing.md). Uniquement disponible en mode Aperçu.
+  Ouvre la [hub contextuel](/help/sites-authoring/ch-previewing.md). Uniquement disponible en mode Aperçu.
 
-   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Titre de la page**
 
-   C&#39;est purement informatif.
+  C&#39;est purement informatif.
 
-   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **Sélecteur de mode**
 
-   Affiche le [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Modifier, Disposition, Timewarp ou Ciblage.
+  Affiche le [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Modifier, Disposition, Timewarp ou Ciblage.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![chlimage_1-120](assets/chlimage_1-120.png)
 
 * **Aperçu**
 
-   Permet d’activer le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode). Cette option affiche la page telle qu’elle apparaîtra une fois publiée.
+  Permet d’activer le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode). Cette option affiche la page telle qu’elle apparaîtra une fois publiée.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![chlimage_1-121](assets/chlimage_1-121.png)
 
 * **Annoter**
 
-   Permet d’ajouter des [annotations](/help/sites-authoring/annotations.md) sur la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
+  Permet d’ajouter des [annotations](/help/sites-authoring/annotations.md) sur la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![Annoter](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### Notification de statut {#status-notification}
 
@@ -122,11 +122,11 @@ L’espace réservé du composant est un indicateur qui indique où un composant
 
 * Lors de l’ajout d’un nouveau composant à la page (en le faisant glisser depuis l’explorateur de composants) :
 
-   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * Lors du déplacement d’un composant existant :
 
-   ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
 
 ## Insertion d’un composant {#inserting-a-component}
 
@@ -230,77 +230,77 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Modifier**
 
-   [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez [en modifier le contenu](#edit-content). Une barre d’outils est souvent disponible.
+  [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez [en modifier le contenu](#edit-content). Une barre d’outils est souvent disponible.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![Modifier](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configurer**
 
-   [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez modifier et configurer ses propriétés. En général, une boîte de dialogue s’ouvre.
+  [En fonction du type de composant](/help/sites-authoring/default-components.md), vous pouvez modifier et configurer ses propriétés. En général, une boîte de dialogue s’ouvre.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configurer](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Copier**
 
-   Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine reste.
+  Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine reste.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![Copier](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Couper**
 
-   Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine est supprimé.
+  Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine est supprimé.
 
-   ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **Supprimer**
 
-   Cela supprime le composant de la page avec votre confirmation.
+  Cela supprime le composant de la page avec votre confirmation.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![Supprimer](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Insérer le composant**
 
-   La boîte de dialogue s’ouvre alors pour [ajouter un nouveau composant](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  La boîte de dialogue s’ouvre alors pour [ajouter un nouveau composant](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![Insérer le composant](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Coller**
 
-   Le composant est alors collé du Presse-papiers sur la page. Si l’original est conservé, cela dépend de l’utilisation de la copie ou de la coupure.
+  Le composant est alors collé du Presse-papiers sur la page. Si l’original est conservé, cela dépend de l’utilisation de la copie ou de la coupure.
 
    * Vous pouvez effectuer un collage sur la même page ou sur une autre.
    * L’élément collé est collé au-dessus de l’élément dans lequel vous sélectionnez l’action de collage.
    * L’action Pate ne s’affiche que si du contenu se trouve dans le Presse-papiers.
 
-   ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
-   >[!NOTE]
-   >
-   >Si vous effectuez un collage sur une autre page qui était déjà ouverte avant l’opération de couper/copier, vous devez actualiser la page pour afficher le contenu collé.
+  >[!NOTE]
+  >
+  >Si vous effectuez un collage sur une autre page qui était déjà ouverte avant l’opération de couper/copier, vous devez actualiser la page pour afficher le contenu collé.
 
 * **Groupe**
 
-   Vous pouvez ainsi sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide d’une **Ctrl+Clic** ou **Commande + clic**.
+  Vous pouvez ainsi sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide d’une **Ctrl+Clic** ou **Commande + clic**.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![Groupe](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Parent**
 
-   Permet de sélectionner le composant parent du composant sélectionné.
+  Permet de sélectionner le composant parent du composant sélectionné.
 
-   ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
 * **Mise en page**
 
-   Cela vous permet de modifier la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas la fonction [Mode Mise en page](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
+  Cela vous permet de modifier la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas la fonction [Mode Mise en page](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Mise en page](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Convertir en variation de fragment d’expérience**
 
-   Permet de créer un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) à partir du composant sélectionné ou de l’ajouter à un fragment d’expérience existant.
+  Permet de créer un [fragment d’expérience](/help/sites-authoring/experience-fragments.md) à partir du composant sélectionné ou de l’ajouter à un fragment d’expérience existant.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![Convertir en variation de fragment d’expérience](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Modifier le contenu {#edit-content}
 
@@ -317,28 +317,28 @@ Les options de modification exactes dépendent du composant. Pour certains compo
 
 * [Composant textuel](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-   ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
 
 * Composant d’image
 
-   ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
 
-   >[!NOTE]
-   >
-   >L’édition ne fonctionne pas sur un composant d’image vide.
-   >
-   >
-   >Vous devez [faire glisser ou charger une image (à l’aide de Configurer) ;](/help/sites-authoring/default-components-foundation.md#image) avant de commencer à le modifier.
+  >[!NOTE]
+  >
+  >L’édition ne fonctionne pas sur un composant d’image vide.
+  >
+  >
+  >Vous devez [faire glisser ou charger une image (à l’aide de Configurer) ;](/help/sites-authoring/default-components-foundation.md#image) avant de commencer à le modifier.
 
 * Composant d’image - Plein écran
 
-   [Le passage en mode Plein écran](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
+  [Le passage en mode Plein écran](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
 
-   ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
 * Les composants construits à partir de plusieurs composants de base, tels que le [composant de base Texte et image](/help/sites-authoring/default-components-foundation.md#text-image), vous demandent tout d’abord de confirmer le jeu d’options de modification désiré :
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Faire glisser et déposer des éléments dans des composants {#drag-and-drop-assets-into-component}
 
@@ -356,7 +356,7 @@ Pour des types de composants spécifiques, vous pouvez faire glisser et déposer
 
 Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitter) avec :
 
-![](do-not-localize/chlimage_1-20.png)
+![Modifier le mode Plein écran](do-not-localize/chlimage_1-20.png)
 
 Par exemple, le composant **Texte** :
 
@@ -391,7 +391,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
    Cliquez ou appuyez sur l’action **Disposition** pour ajuster la mise en page du composant.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![Barre d’outils de composants](do-not-localize/chlimage_1-21.png)
 
 1. Une fois l’action Disposition sélectionnée :
 
@@ -405,7 +405,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
 1. Après avoir effectué les modifications nécessaires au niveau de la mise en page, cliquez sur le bouton **Fermer** dans le menu des actions du composant pour arrêter la session de modification. La barre d’outils du composant revient à son état d’édition normal.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![Fermer](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -425,27 +425,27 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
 * **Live Copy**
 
-   La barre d’outils du composant, si celui-ci est situé sur une page qui fait partie d’une Live Copy ou d’un lancement (basé sur une Live Copy). Par exemple :
+  La barre d’outils du composant, si celui-ci est situé sur une page qui fait partie d’une Live Copy ou d’un lancement (basé sur une Live Copy). Par exemple :
 
-   ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
-   L’option Annuler l’héritage est disponible :
+  L’option Annuler l’héritage est disponible :
 
-   ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![Annuler l’héritage](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-   Ou réactivez l’héritage en cas d’annulation :
+  Ou réactivez l’héritage en cas d’annulation :
 
-   ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Réactiver l’héritage](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   L’action de déploiement est également disponible dans le plan directeur ou la source de Live Copy :
+  L’action de déploiement est également disponible dans le plan directeur ou la source de Live Copy :
 
-   ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![Déployer](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **Un système de paragraphes hérité**
 
-   Boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité :
+  Boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité :
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## Modification du modèle de page {#editing-the-page-template}
 
@@ -485,7 +485,6 @@ Deux options sont disponibles pour prévisualiser une page :
 >* Utilisez le [raccourci clavier](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` pour basculer entre le mode Aperçu et le dernier mode sélectionné.
 >
 
-
 >[!NOTE]
 >
 >Le cookie WCM Mode est défini pour les deux options.
@@ -517,7 +516,7 @@ Une page peut être verrouillée à partir de :
    1. Sélectionnez la page avec [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Sélectionnez l’icône de verrouillage.
 
-   ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Éditeur de page**
 
@@ -552,7 +551,7 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 
 Les icônes suivantes permettent d’annuler ou de rétablir une opération. Celles-ci s’affichent dans la barre d’outils le cas échéant :
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Annuler et rétablir](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
@@ -584,7 +583,6 @@ Le comportement des commandes Annuler et Rétablir est similaire à celui des au
 >* Annulez un maximum de 20 actions de modification (paramètre par défaut).
 >* Utilisez également [Raccourcis clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour annuler et rétablir.
 >
-
 
 Vous pouvez utiliser les options Annuler et Rétablir pour les types de modifications de page suivants :
 
