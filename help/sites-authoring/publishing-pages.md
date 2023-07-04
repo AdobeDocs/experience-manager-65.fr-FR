@@ -10,23 +10,23 @@ discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1662'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
 # Publication de pages {#publishing-pages}
 
-Après avoir créé et révisé votre contenu dans l’environnement de création, [le rendre disponible sur votre site web public ;](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (votre environnement de publication).
+Une fois le contenu créé et révisé dans l’environnement de création, [vous devez le rendre disponible sur votre site web public](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (votre environnement de publication).
 
-On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle d’annulation de publication. Lorsque vous publiez et annulez la publication, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
+On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle de dépublication. Lorsque vous publiez et dépubliez, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
 
-Vous pouvez également publier/annuler la publication d’une page immédiatement ou à une date/heure prédéfinies.
+Vous pouvez publier/dépublier une page tout de suite ou à une date/heure postérieures prédéfinies.
 
 >[!NOTE]
 >
->Certains termes liés à la publication peuvent être déroutés :
+>Certains termes liés à la publication peuvent être déroutants :
 >
 >* **Publier/dépublier**
    >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
@@ -41,10 +41,10 @@ Vous pouvez également publier/annuler la publication d’une page immédiatemen
 
 >[!NOTE]
 >
->Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
+>Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
 >
 >* Un workflow sera déclenché pour informer la personne appropriée de votre demande de publication.
->* Ceci [workflow peut avoir été personnalisé](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) par votre équipe de développement.
+>* Ce [workflow a peut-être été personnalisé](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) par votre équipe de développement.
 >* Un message s’affiche brièvement pour vous informer que le workflow a été déclenché.
 >
 
@@ -100,9 +100,9 @@ La console Sites propose deux options de publication :
 
 #### Publication rapide {#quick-publish}
 
-L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. Pour cette raison, toute référence non publiée sera également publiée automatiquement.
+L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. Pour cette raison, toutes les références non publiées seront également publiées automatiquement.
 
-Pour publier une page avec publication rapide :
+Pour publier une page avec publication rapide :
 
 1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Publication rapide**.
 
@@ -116,7 +116,7 @@ Pour publier une page avec publication rapide :
 
 >[!NOTE]
 >
->La publication rapide est une publication superficielle, c’est-à-dire que seule la ou les pages sélectionnées sont publiées et que les pages enfants ne le sont pas.
+>La publication rapide est une publication superficielle, c’est-à-dire que seules la ou les pages sélectionnées sont publiées alors que les pages enfants ne le sont pas.
 
 #### Gérer la publication {#manage-publication}
 
@@ -131,9 +131,9 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 1. L’assistant **Gérer la publication** démarre. La première étape, **Options**, vous permet d’effectuer les opérations suivantes :
 
    * Publier ou dépublier des pages sélectionnées.
-   * Choisissez d’effectuer cette action maintenant ou ultérieurement.
+   * Vous pouvez choisir d’effectuer cette action maintenant ou ultérieurement.
 
-   La publication différée lance un workflow pour publier la ou les pages sélectionnées à l’heure indiquée. A l’inverse, l’annulation de la publication différée lance un workflow pour annuler la publication de la ou des pages sélectionnées à un moment précis.
+   La publication différée lance un workflow pour publier la ou les pages sélectionnées à un moment précis. A l’inverse, la dépublication différée lance un workflow pour dépublier la ou les pages sélectionnées à un moment précis.
 
    Pour annuler une publication/dépublier ultérieurement, rendez-vous dans la [console Workflow](/help/sites-administering/workflows.md) pour mettre un terme au workflow correspondant.
 
@@ -151,11 +151,11 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    Sélectionnez les pages souhaitées, puis cliquez sur **Sélectionner** pour ajouter du contenu à l’assistant ou sur **Annuler** pour annuler la sélection et revenir à l’assistant.
 
-   De retour dans l’assistant, vous pouvez sélectionner un élément de la liste pour configurer ses autres options, telles que :
+   De retour dans l’assistant, vous pouvez sélectionner un élément de la liste pour configurer ses autres options, telles que :
 
    * Inclure ses enfants.
-   * Supprimez-le de la sélection.
-   * Gestion des références publiées.
+   * Le supprimer de la sélection.
+   * Gérer ses références publiées.
 
    ![pp-03](assets/pp-03.png)
 
@@ -193,7 +193,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
    >
    >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur. Pour plus d’informations, reportez-vous à la [remarque précédente sur cette page](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) concernant les privilèges de publication, ainsi qu’aux sections [Gestion de l’accès aux workflows](/help/sites-administering/workflows-managing.md) et [Application de workflows aux pages](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd).
 
-   Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
+   Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 
    * Définissez le titre du workflow.
    * conserver le package de workflow, à condition que le workflow dispose d’une [prise en charge multi-ressource](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) ;
@@ -233,30 +233,30 @@ De la même façon que vous [utilisez l’option Gérer la publication pour publ
 
    Pour annuler une publication/dépublier ultérieurement, rendez-vous dans la [console Workflow](/help/sites-administering/workflows.md) pour mettre un terme au workflow correspondant.
 
-1. Pour terminer l’annulation de la publication, passez par l’assistant comme vous le feriez pour : [publier la page ;](/help/sites-authoring/publishing-pages.md#manage-publication).
+1. Pour finaliser la dépublication, complétez les différentes étapes de l’assistant, comme vous le feriez pour [publier la page](/help/sites-authoring/publishing-pages.md#manage-publication).
 
 ## Publication et dépublication d’une arborescence {#publishing-and-unpublishing-a-tree}
 
 Lorsque vous avez saisi ou mis à jour un nombre considérable de pages de contenu (toutes résidant sous la même page racine), il peut s’avérer plus facile de publier l’arborescence entière en une seule action.
 
-Vous pouvez utiliser la variable [Gérer la publication](/help/sites-authoring/publishing-pages.md#manage-publication) sur la console sites.
+Vous pouvez utiliser l’option [Gérer la publication](/help/sites-authoring/publishing-pages.md#manage-publication) sur la console des sites.
 
 1. Dans la console Sites, sélectionnez la page racine de l’arborescence que vous souhaitez publier ou dépublier, puis sélectionnez **Gérer la publication**.
-1. L’assistant **Gérer la publication** démarre. Choisissez la publication ou l’annulation de la publication, puis sélectionnez **Suivant** pour continuer.
-1. Dans le **Portée** , sélectionnez la page racine et sélectionnez **Inclure les enfants**.
+1. L’assistant **Gérer la publication** démarre. Choisissez la publication ou la dépublication, puis sélectionnez **Suivant** pour continuer.
+1. À l’étape **Portée**, sélectionnez la page racine et sélectionnez **Inclure les enfants**.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. Dans le **Inclure les enfants** , désélectionnez les options suivantes :
+1. Dans la boîte de dialogue **Inclure les enfants**, désélectionnez les options suivantes :
 
    * Inclure seulement les enfants immédiats
    * Inclure seulement les pages déjà publiées
 
-   Ces options sont sélectionnées par défaut. N’oubliez pas de les désélectionner. Cliquez sur **Ajouter** pour confirmer et ajouter le contenu à la publication/annulation de la publication.
+   Ces options sont sélectionnées par défaut. Vous devez donc penser à les désélectionner. Cliquez sur **Ajouter** pour confirmer et ajouter le contenu à l’opération de publication ou de dépublication.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
-1. Le **Gérer la publication** L’assistant répertorie le contenu de l’arborescence à réviser. Vous pouvez personnaliser davantage la sélection en ajoutant des pages supplémentaires ou en supprimant celles sélectionnées.
+1. L’assistant **Gérer la publication** répertorie le contenu de l’arborescence à réviser. Vous pouvez personnaliser davantage la sélection en ajoutant des pages supplémentaires ou en supprimant celles sélectionnées.
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
@@ -266,7 +266,7 @@ Vous pouvez utiliser la variable [Gérer la publication](/help/sites-authoring/p
 
 ## Définition du statut de publication {#determining-publication-status}
 
-Vous pouvez déterminer l’état de publication d’une page :
+Vous pouvez déterminer le statut de publication d’une page :
 
 * dans les [informations d’aperçu des ressources de la console Sites](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) ;
 
