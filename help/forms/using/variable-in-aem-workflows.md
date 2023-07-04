@@ -1,7 +1,7 @@
 ---
 title: Variables dans les workflows AEM Forms
 seo-title: Variables in AEM Forms Workflows
-description: Créez une variable, définissez une valeur pour la variable et utilisez-la dans les étapes de processus AEM Forms.
+description: Créez une variable, donnez-lui une valeur et utilisez-la dans les étapes d’AEM Forms Workflow.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -11,9 +11,9 @@ discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2208'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou 
 
 ### Étapes de processus avec prise en charge des variables {#workflow-steps-with-support-for-variables}
 
-L’étape d’accès, l’étape de division OU et toutes les étapes de processus AEM Forms prennent en charge les variables.
+L’étape Accéder à, l’étape Division OU et toutes les étapes de d’AEM Forms Workflow prennent en charge les variables.
 
 #### OU étape Fractionner {#or-split-step}
 
@@ -277,7 +277,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Stocker des données utilisateur sensibles en dehors de JCR à l’aide de variables de workflow {#jcr-independent-persistance}
 
-Les données traitées à l’aide de Forms Workflow peuvent contenir des données utilisateur sensibles, telles que des informations d’identification personnelle et des informations personnelles sensibles. Les entreprises peuvent choisir de stocker les données, qui sont traitées par différentes étapes de workflow (et transmises à l’aide de variables de workflow), à partir du stockage JCR vers un entrepôt de données externe dont elles sont propriétaires et qu’elles gèrent. Pour en savoir plus sur la conservation des données de workflow dans un stockage externe, voir [Utilisation de variables de workflow pour les entrepôts de données détenus par le client](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Les données traitées à l’aide de Forms Workflow peuvent contenir des données utilisateur sensibles, telles que des informations d’identification personnelles et des informations personnelles sensibles. Les entreprises peuvent choisir de stocker les données, qui sont traitées par différentes étapes de workflow (et transmises à l’aide de variables de workflow), à partir du stockage JCR vers un entrepôt de données externe dont elles sont propriétaires et qu’elles gèrent. Pour en savoir plus sur la conservation des données de workflow dans un stockage externe, voir [Utilisation de variables de workflow pour les entrepôts de données détenus par le client](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] fournit l’API de workflow [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) pour stocker des variables de workflow dans des entrepôts Azure Blob externes. Pour plus d’informations sur l’utilisation de l’API, voir [Utiliser les variables de workflow pour paramétrer les données sensibles et les stocker dans des entrepôts de données externes](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Modification d’une variable {#edit-a-variable}
@@ -298,4 +298,4 @@ Pour supprimer une variable, procédez comme suit :
 
 ## Références {#references}
 
-Pour plus d’exemples sur l’utilisation des variables dans les étapes de processus AEM Forms, voir [Variables dans les processus AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).
+Pour plus d’exemples sur l’utilisation des variables dans les étapes de d’AEM Forms Workflow, voir [Variables dans les workflows d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).
