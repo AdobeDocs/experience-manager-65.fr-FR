@@ -1,6 +1,6 @@
 ---
-title: Création de pages de contenu avec des fragments de contenu
-description: Les fragments de contenu AEM vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages.
+title: Créer du contenu de page à partir de fragments de contenu
+description: Les fragments de contenu d’AEM vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages.
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1140'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 >
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-authoring/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
 >
->* **Fragments de contenu** sont du contenu éditorial, principalement du texte et des images associées. Il s’agit de contenu pur, sans conception ni mise en page.
+>* Les **fragments de contenu** sont du contenu éditorial, principalement du texte et des images associées. Il s’agit de contenu pur, sans conception ni mise en page.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
@@ -37,31 +37,31 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 >
 >Cette page doit être consultée en complément de la page [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md) (et des pages annexes), car elle présente la terminologie et les concepts de base, ainsi que la création et la gestion de fragments.
 
-Les fragments de contenu permettent :
+Les fragments de contenu permettent ce qui suit :
 
 * **Stratégie de marketing et de campagne**
 
-   * Examinez le contenu par le biais de fragments de contenu gérés de manière centralisée.
+   * Examen du contenu par le biais de fragments de contenu gérés de manière centralisée.
 
-* **Creative Pro**
+* **Créateurs et créatrices professionnels**
 
-   * Suivi des ressources créatives via des collections associées à des fragments de contenu.
+   * Suivi des ressources de création via des collections associées à des fragments de contenu.
 
-* **Copier les rédacteurs**
+* **Rédacteurs et rédactrices**
 
-   * Écrivez dans l’éditeur de fragments de contenu AEM.
-   * Peut créer des variations de contenu.
-   * Peut associer du contenu pertinent au fragment de contenu.
-   * Peut utiliser le contrôle de version/workflow.
-   * Peut partager un fragment de contenu.
-   * Peut gérer les traductions de manière centralisée.
+   * Écriture dans l’éditeur de fragments de contenu d’AEM.
+   * Possibilité de créer des variations de contenu.
+   * Possibilité d’associer du contenu pertinent au fragment de contenu.
+   * Possibilité d’utiliser le contrôle de version/workflow.
+   * Possibilité de partager un fragment de contenu.
+   * Possibilité de gérer les traductions de manière centralisée.
 
 * **Producteurs et responsable parcours**
 
-   * Effectuez une sélection à partir de fragments et de variations prédéfinis avec la création dans AEM.
-   * Peuvent compter sur la mise à jour constante des fragments et du contenu associé à mesure que les auteurs et créatifs effectuent leurs mises à jour dans des fragments et des ressources gérés de manière centralisée.
-   * Peuvent compter sur le contenu multimédia associé traité pour être pertinent.
-   * Peut créer des variations de contenu ad hoc à la volée tout en s’assurant que ces variations restent gérées de manière centralisée dans le fragment.
+   * Sélection à partir de fragments et de variations prédéfinis avec la création dans AEM.
+   * Possibilité de compter sur la mise à jour en continu des fragments et du contenu associé à mesure que les rédacteurs et les rédactrices, et les créateurs et créatrices, effectuent leurs mises à jour dans des ressources et des fragments gérés de manière centralisée.
+   * Possibilité de compter sur un contenu multimédia associé traité pour être pertinent.
+   * Possibilité de créer des variations de contenu ad hoc à la volée tout en s’assurant que celles-ci restent gérées de manière centralisée dans le fragment.
 
 ## Ajout d’un fragment de contenu à une page {#adding-a-content-fragment-to-your-page}
 
@@ -71,9 +71,9 @@ Les fragments de contenu permettent :
 
 1. Vous pouvez effectuer l’une des actions suivantes :
 
-   * Ouvrir l’explorateur de **ressources** et filtrer sur **Fragments de contenu** (la valeur par défaut est Images). Faites ensuite glisser le fragment requis sur l’instance de composant.
+   * Ouvrir l’explorateur de **ressources** et filtrer sur **Fragments de contenu** (la valeur par défaut est Images). Faire ensuite glisser le fragment requis sur l’instance du composant.
 
-   * Sélectionnez le composant de fragment de contenu, puis **Configurer** dans la barre d’outils. Dans la boîte de dialogue, vous pouvez ouvrir la boîte de dialogue de sélection afin de rechercher et de sélectionner le **fragment de contenu** requis.
+   * Sélectionner le composant de fragment de contenu, puis **Configurer** dans la barre d’outils. Dans la boîte de dialogue, vous pouvez ouvrir la boîte de dialogue de sélection afin de rechercher et de sélectionner le **fragment de contenu** requis.
    >[!NOTE]
    >
    >L’autre méthode consiste à faire glisser un fragment de contenu directement sur la page. Le composant associé est ainsi automatiquement créé (Fragment de contenu).
@@ -96,7 +96,7 @@ Les fragments de contenu permettent :
 
 Ouvrez la boîte de dialogue **Configuration** du fragment pour configurer le fragment à utiliser dans la page active. La boîte de dialogue peut dépendre du composant utilisé.
 
-Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionner les paramètres disponibles, notamment :
+Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionner les paramètres disponibles, notamment :
 
 * **Fragment de contenu**
 
@@ -110,7 +110,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
 * **Élément**
 
-   * La valeur par défaut **Principal** sera toujours disponible.
+   * L’élément **Principal** par défaut sera toujours disponible.
    * Une sélection est disponible si le fragment a été créé avec un modèle approprié.
 
    >[!NOTE]
@@ -120,9 +120,9 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 * **Variation**
 
    * Le **maître** par défaut sera toujours disponible.
-   * Une sélection est disponible si des variations ont été créées pour le fragment.
+   * La sélection est disponible si vous avez créé des variations pour le fragment.
 
-* **Paragraphes**: spécifier la plage de paragraphes à inclure :
+* **Paragraphes** : spécifier la plage de paragraphe(s) à inclure :
 
    * **Tous**
    * **Plage** : par exemple, `1`, `3-5`, `9-*`
@@ -141,14 +141,14 @@ Vous pouvez ouvrir la source du fragment à modifier (la ressource) à l’aide 
 
 ### Ajout de contenu intermédiaire {#adding-in-between-content}
 
-Lorsqu’un fragment de contenu spécifique est ajouté à la page, un événement **Faire glisser des composants ici** espace réservé entre chaque paragraphe de HTML (et en haut/en bas) du fragment.
+Lorsqu’un fragment de contenu spécifique est ajouté à la page, il y a un espace réservé **Faire glisser des composants ici** entre chaque paragraphe de HTML (et en haut/en bas) du fragment.
 
-Vous pouvez ainsi ajouter du contenu supplémentaire. [intermédiaire (contenu intermédiaire)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) le contenu du fragment (à l’un des points disponibles), sans avoir à modifier le fragment racine.
+Vous pouvez ainsi ajouter du contenu supplémentaire [(contenu intermédiaire)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) dans le contenu du fragment (à l’un des points disponibles), sans avoir à modifier le fragment racine.
 
-Pour le contenu intermédiaire, vous pouvez :
+Pour le contenu intermédiaire, vous pouvez :
 
-* Ajoutez des composants à partir du [Explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
-* Ajout de ressources à partir de la fonction [Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
+* Ajouter des composants à partir de l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser).
+* Ajouter des ressources à partir de l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
 * Utiliser du [contenu associé](#using-associated-content) comme source de contenu intermédiaire.
 
 >[!CAUTION]
@@ -159,9 +159,9 @@ Pour le contenu intermédiaire, vous pouvez :
 
 >[!NOTE]
 >
->Vous pouvez également [insérer des ressources visuelles (images) dans le fragment lui-même ;](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Vous pouvez également [insérer des ressources visuelles (images) dans le fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->Les ressources visuelles insérées dans le fragment sont jointes au paragraphe précédent dans le fragment. Cela signifie que vous ne pouvez pas placer le contenu intermédiaire entre une ressource visuelle et le paragraphe précédent.
+>Les ressources visuelles insérées sont liées au paragraphe précédent dans le fragment. Cela signifie que vous ne pouvez pas placer le contenu intermédiaire entre une ressource visuelle et le paragraphe précédent.
 
 >[!CAUTION]
 >
@@ -169,7 +169,7 @@ Pour le contenu intermédiaire, vous pouvez :
 >
 >Si cela se produit, le contenu intermédiaire est conservé tel quel :
 >
->* Les composants intermédiaires ont une position absolue dans la séquence de composants dans le flux de fragment. Cette position ne change pas, même lorsque le contenu des paragraphes du fragment change.
+>* Les composants intermédiaires ont une position absolue dans la séquence de composants dans le flux du fragment. Cette position ne change pas, même lorsque le contenu des paragraphes du fragment change.
 >
 >  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
 >* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
@@ -182,11 +182,11 @@ Si vous avez [associé du contenu](/help/assets/content-fragments/content-fragme
 
 >[!NOTE]
 >
->Plusieurs méthodes d’ajout [ressources visuelles (images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Vous pouvez ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page de plusieurs manières différentes.
 
 >[!NOTE]
 >
->Si une page contient plusieurs fragments de contenu, la variable **Contenu associé** affiche les ressources appropriées à tous les fragments.
+>Si une page contient plusieurs fragments de contenu, l’onglet **Contenu associé** affiche les ressources appropriées à tous les fragments.
 
 Une fois que vous avez ajouté un fragment avec du contenu associé à votre page, un nouvel onglet (**Contenu associé**) s’ouvre dans le panneau latéral.
 
@@ -202,10 +202,10 @@ Dans le cas d’une image, par exemple, vous pouvez effectuer les opérations su
 
 * Recadrer, faire pivoter ou retourner l’image.
 * Ajouter un titre ou un texte secondaire.
-* Spécifiez une taille.
+* Spécifier une taille.
 * Vous pouvez également configurer la mise en page.
 
-D’autres modifications, telles que le déplacement, la copie et la suppression, doivent être effectuées dans l’éditeur de fragment.
+D’autres modifications telles que le déplacement, la copie et la suppression, doivent être effectuées dans l’éditeur de fragments.
 
 ### Publication {#publishing}
 
