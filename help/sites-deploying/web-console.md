@@ -1,5 +1,5 @@
 ---
-title: Console web dans Adobe Experience Manager
+title: Console web dans Adobe Experience Manager
 seo-title: Web Console
 description: Découvrez comment utiliser la console web d’AEM.
 seo-description: Learn how to use the AEM web console.
@@ -12,27 +12,27 @@ discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '722'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Console web{#web-console}
 
-La console Web d’AEM est basée sur la variable [Console de gestion Web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est un effort de la communauté pour mettre en oeuvre la plateforme de service OSGi R4, qui inclut la structure OSGi et les services standard.
+La console web d’AEM est basée sur la [Console de gestion web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix est un travail de la communauté pour mettre en œuvre la plateforme de service OSGi R4, qui inclut le cadre OSGi et les services standard.
 
 >[!NOTE]
 >
->Dans la console Web, toutes les descriptions qui mentionnent les paramètres par défaut sont liées aux valeurs par défaut de Sling.
+>Dans la console web, toutes les descriptions qui mentionnent les paramètres par défaut sont liées aux valeurs Sling par défaut.
 >
->AEM ayant ses propres paramètres par défaut, ces derniers peuvent être différents de ceux répertoriés dans la console. 
+>AEM ayant ses propres paramètres par défaut, ces derniers peuvent être différents de ceux répertoriés dans la console.
 
-La console web propose une sélection d’onglets pour la maintenance des lots OSGi, notamment :
+La console web propose une sélection d’onglets pour la maintenance des lots OSGi, notamment :
 
-* [Configuration](#configuration): utilisé pour configurer les lots OSGi et est donc le mécanisme sous-jacent pour configurer les paramètres système AEM
-* [Lots](#bundles): utilisé pour installer des lots
-* [Composants](#components): utilisé pour contrôler l’état des composants requis pour AEM
+* [Configuration](#configuration) : utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM
+* [Lots](#bundles) : utilisé pour installer des lots
+* [Composants](#components) : utilisé pour contrôler le statut des composants requis pour AEM
 
 Toutes les modifications apportées sont immédiatement appliquées au système en cours d’exécution. Aucun redémarrage n’est requis.
 
@@ -42,7 +42,7 @@ Cette console est accessible à partir de `../system/console` ; par exemple :
 
 ## Configuration {#configuration}
 
-Le **Configuration** est utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM.
+L’onglet **Configuration** est utilisé pour configurer les lots OSGi. Il s’agit donc du mécanisme sous-jacent pour configurer les paramètres système d’AEM.
 
 >[!NOTE]
 >
@@ -65,13 +65,13 @@ Une liste des configurations s’affiche :
 Il existe deux types de configurations disponibles à partir des listes déroulantes de cet écran :
 
 * **Configurations**
-Vous permet de mettre à jour les configurations existantes. Ils possèdent une identité persistante (PID) et peuvent être :
+Vous permet de mettre à jour les configurations existantes. Elles possèdent une identité persistante (PID) et peuvent être :
 
-   * la norme et l&#39;intégralité de l&#39;AEM; si elles sont supprimées, les valeurs retournent aux paramètres par défaut.
-   * les instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateur, la suppression supprime l’instance.
+   * standard ou intégrales pour AEM. Elles sont nécessaires ; si elles sont supprimées, les valeurs sont renvoyées aux paramètres par défaut.
+   * les instances créées à partir des configurations d’usine ; ces instances sont créées par l’utilisateurou l’utilisatrice et la suppression supprime l’instance.
 
 * **Configurations d’usine**
-Vous permet de créer une instance de l’objet de la fonctionnalité requise. 
+Vous permet de créer une instance de l’objet de la fonctionnalité requise.
 
    Elles se verront attribuer une identité permanente, puis seront répertoriées dans les configurations de la liste déroulante.
 
@@ -85,7 +85,7 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
    Enregistrez les modifications apportées.
 
-   Pour une configuration d’usine, cela crée une instance avec une identité permanente. La nouvelle instance est ensuite répertoriée sous Configurations. 
+   Pour une configuration d’usine, cela crée une instance avec une identité permanente. La nouvelle instance est ensuite répertoriée sous Configurations.
 
 * **Réinitialiser**
 
@@ -93,7 +93,7 @@ Vous pouvez mettre à jour les paramètres selon vos besoins et :
 
 * **Supprimer**
 
-   Supprime la configuration actuelle. Si elles sont standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle est créée à partir d’une configuration d’usine, l’instance spécifique est supprimée.
+   Supprime la configuration actuelle. Si elle est standard, les paramètres sont renvoyés aux paramètres par défaut. Si elle est créée à partir d’une configuration d’usine, l’instance spécifique est supprimée.
 
 * **Dissocier**
 
@@ -153,7 +153,7 @@ En utilisant cet onglet vous pouvez réaliser les opérations suivantes :
 
 >[!NOTE]
 >
->Après **Mettre à jour** il est recommandé d’effectuer une **Actualisation des modules**.
+>Après la **mise à jour**, il est recommandé d’effectuer une **actualisation des packs**.
 
 ## Composants {#components}
 
@@ -167,11 +167,11 @@ L’onglet **Composants** vous permet d’activer et de désactiver divers compo
 
    `http://localhost:4502/system/console/components`
 
-Une liste de composants s’affiche. Plusieurs icônes sont disponibles pour vous permettre d’activer, de désactiver ou (le cas échéant) d’ouvrir les détails de la configuration pour un composant spécifique. 
+Une liste de composants s’affiche. Plusieurs icônes sont disponibles pour vous permettre d’activer, de désactiver ou (le cas échéant) d’ouvrir les détails de la configuration pour un composant spécifique.
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Cliquer sur le nom d’un composant spécifique affiche des informations supplémentaires sur son état. Vous pouvez également activer, désactiver ou recharger le composant.
+Cliquer sur le nom d’un composant spécifique affiche des informations supplémentaires sur son statut. Vous pouvez également activer, désactiver ou recharger le composant.
 
 ![chlimage_1-22](assets/chlimage_1-22a.png)
 
