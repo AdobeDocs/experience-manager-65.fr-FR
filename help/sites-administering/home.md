@@ -3,7 +3,7 @@ title: Guide de l’utilisateur pour l’administration dans AEM 6.5
 description: Découvrez comment administrer AEM 6.5. Ces guides portent sur les fonctionnalités du site, les opérations de déploiement, les fonctionnalités de sécurité, la personnalisation, l’intégration, etc.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
 ht-degree: 100%
 
