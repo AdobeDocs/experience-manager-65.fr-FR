@@ -10,19 +10,19 @@ topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '307'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Personnaliser les images utilisées dans les actions d’itinéraire {#customize-images-used-in-route-actions}
 
-Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez la procédure décrite à la section [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md) suivi des étapes décrites dans cet article.
+Pour personnaliser les images utilisées dans les actions d’itinéraire, suivez la procédure décrite à la section [Procédure générique de personnalisation](/help/forms/using/generic-steps-html-workspace-customization.md), suivie des étapes décrites dans cet article.
 
 ## Images pour les actions d’itinéraire {#images-for-route-actions}
 
-1. Ajoutez les styles définissant les images dans le CSS à l’emplacement suivant pour les nouvelles actions d’itinéraire :
+1. Ajoutez les styles définissant les images dans le CSS à l’emplacement suivant pour les nouvelles actions d’itinéraire :
 
    `/apps/ws/css/newStyle.css`
 
@@ -44,7 +44,7 @@ Pour personnaliser les images utilisées dans les actions d’itinéraire, suive
        }
    ```
 
-## Fenêtre contextuelle d’action de tâche Liste de tâches {#task-list-task-action-popup}
+## Fenêtre contextuelle d’action de la liste des tâches {#task-list-task-action-popup}
 
 1. Créez un menu déroulant d’actions de liste de tâches, voir [Création du code de l’espace de travail AEM Forms](introduction-customizing-html-workspace.md#building-html-workspace-code). Vous devez utiliser le package de développement.
 
