@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 >[!NOTE]
 >
->Les utilisateurs disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [AEM de dépannage (pour les administrateurs)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur système pour connaître les AEM de dépannage.
+>Les utilisateurs et utilisatrices disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [Dépannage dans AEM (pour les administrateurs et administratrices)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur ou administratrice système pour en savoir plus sur le dépannage dans AEM.
 
 ## Ancienne version de la page toujours visible sur le site de publication {#old-page-version-still-on-published-site}
 
 * **Problème** :
 
-   * Vous avez apporté des modifications à une page et répliqué la page sur le site de publication, mais l’événement *old* La version de la page est toujours affichée sur le site de publication.
+   * Vous avez réalisé des modifications sur une page et répliqué la page sur le site de publication, mais c’est toujours l’*ancienne* version de la page qui s’affiche sur le site de publication.
 
 * **Raison** :
 
-   * Cela peut avoir plusieurs causes, le plus souvent le cache (votre navigateur local ou Dispatcher), bien que cela puisse parfois poser un problème avec la file d’attente de réplication.
+   * Cela peut être dû à plusieurs raisons, le plus souvent le cache (votre navigateur local ou le Dispatcher), bien que cela puisse parfois venir d’un problème avec la file d’attente de réplication.
 
 * **Solutions** :
 
-   * Il existe différentes possibilités :
+   * Il existe alors plusieurs possibilités :
    * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
    * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
@@ -57,7 +57,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 * **Raison** :
 
-   * Dans de rares cas, une action précédente peut avoir un impact sur la barre d’outils.
+   * Dans de rares cas, une action précédente peut avoir eu un impact sur la barre d’outils.
 
 * **Solution** :
 
