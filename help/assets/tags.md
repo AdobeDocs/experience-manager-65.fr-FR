@@ -11,9 +11,9 @@ feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 source-git-commit: cd797b1a5edd05715761f5914ebc64fdb64745af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6631'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media ne fonctionne pas dans le nœud d’auteur d’Experience Manager. Vous ne pouvez pas afficher de suivi à partir d’une page WCM tant qu’elle n’est pas publiée.
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media n’est pas prise en charge pour le mode de fonctionnement « pop-up », où l’URL de la visionneuse est obtenue à l’aide du bouton URL de la page de détails de la ressource.
 * L’intégration Experience Platform Tags ne peut pas être utilisée simultanément avec l’intégration des visionneuses Analytics héritées (au moyen du paramètre `config2=`).
-* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=fr). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 * La configuration de la durée de stockage n’est pas prise en charge pour les éléments de données à l’aide de l’extension *Visionneuses Dynamic Media*. La durée de stockage doit être définie sur **[!UICONTROL Aucune]**.
 
 ### Cas d’utilisation de l’intégration {#use-cases-for-the-integration}
@@ -133,7 +133,7 @@ Lorsqu’un compte Experience Cloud est abonné pour utiliser Adobe Analytics 
 
 Voir [Installation et configuration des extensions](#installing-and-setup-of-extensions).
 
-À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=en). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=fr). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 
 ## Utilisation de l’extension Visionneuses Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -422,7 +422,7 @@ Vous allez utiliser les produits Adobe suivants pour configurer votre intégrati
 
 En outre, si cette solution d’intégration est utilisée avec Experience Manager Sites, vous devez également effectuer la configuration suivante :
 
-* [!DNL Adobe Developer Console] - l’intégration est créée pour les balises Experience Platform.
+* [!DNL Adobe Developer Console] : l’intégration est créée pour les balises Experience Platform.
 * Nœud d’auteur Experience Manager – Configuration IMS et configuration de cloud Experience Platform Tags.
 
 Pour la configuration, assurez-vous d’avoir accès à une société dans Adobe Experience Cloud pour laquelle Adobe Analytics et Experience Platform Tags déjà activés.
@@ -683,7 +683,7 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
 
    Le message d’informations suivant s’affiche :
 
-   *Pour récupérer un jeton d’accès valide, la nouvelle clé publique du certificat est ajoutée au compte technique de la console Adobe Developer.*
+   *Afin de récupérer un jeton d’accès valide, la nouvelle clé publique du certificat doit être ajoutée au compte technique sur l’Adobe Developer Console.*
 
    Pour fermer la boîte de dialogue Info, sélectionnez **[!UICONTROL OK]**.
 
@@ -697,9 +697,9 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Dans un nouvel onglet du navigateur, accédez à [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/integrations).
+1. Dans un nouvel onglet du navigateur, accédez à l’[[!DNL Adobe Developer Console]](https://developer.adobe.com/console/integrations).
 
-1. Dans la **[!UICONTROL Intégrations de la console Adobe Developer]** , près du coin supérieur droit, sélectionnez **[!UICONTROL Nouvelle intégration]**.
+1. Sur la page **[!UICONTROL intégrations de l’Adobe Developer Console]**, près du coin supérieur droit, sélectionnez **[!UICONTROL Nouvelle intégration]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une intégration]**, vérifiez que le bouton radio **[!UICONTROL Accès à une API]** est sélectionné, puis sélectionnez **[!UICONTROL Continuer]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -854,4 +854,4 @@ Elle est toutefois prise en charge dans le nœud de publication Experience Mana
 
 Il est possible de contourner cette limitation. Spécifiez l’URL de développement ou d’évaluation de la bibliothèque Platform Tags dans la configuration cloud d’Experience Platform Tags pour la publication Experience Manager ci-dessus. Ainsi, le nœud de publication d’Experience Manager utilise la version de développement ou d’évaluation de la bibliothèque Experience Platform Tags.
 
-Consultez la section [Intégration d’Experience Manager aux balises Experience Platform par le biais d’ [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html) pour plus d’informations sur la configuration cloud des balises Experience Platform.
+Consultez la section [Intégration d’Experience Manager aux balises Experience Platform par le biais d’ [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr) pour plus d’informations sur la configuration cloud des balises Experience Platform.
