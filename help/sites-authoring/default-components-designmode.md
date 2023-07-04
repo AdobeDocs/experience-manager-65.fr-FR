@@ -11,23 +11,23 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 43%
+ht-degree: 98%
 
 ---
 
 # Configuration des composants par défaut en mode de conception{#configuring-components-in-design-mode}
 
-Lorsque l’instance d’AEM est installée d’usine, une sélection de composants est immédiatement disponible dans l’explorateur de composants.
+Pour les installations prêtes à l’emploi de l’instance d’AEM, une sélection de composants est immédiatement disponible dans l’explorateur de composants.
 
 D’autres composants sont également disponibles. Vous pouvez utiliser le mode de conception pour [activer/désactiver ces composants](#enable-disable-components). Une fois ces composants activés et situés sur votre page, utilisez le mode de conception pour [configurer différents aspects de la conception](#configuring-the-design-of-a-component) en modifiant les paramètres d’attribut.
 
 >[!NOTE]
 >
->Soyez prudent lors de la modification de ces composants. Les paramètres de conception font souvent partie intégrante de la conception de l’ensemble du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges et de l’expérience appropriés, souvent un administrateur ou un développeur. Pour plus d’informations, consultez [Développement de composants](/help/sites-developing/components.md).
+>La modification de ces composants doit être effectuée avec soin. Les paramètres de conception font souvent partie intégrante de la conception de l’ensemble du site web. Ils ne doivent donc être modifiés que par une personne disposant des privilèges et de l’expérience appropriés, souvent un administrateur ou une administratrice ou un développeur ou une développeuse. Pour plus d’informations, consultez [Développement de composants](/help/sites-developing/components.md).
 
 >[!NOTE]
 >
->Le mode de conception n’est disponible que pour les modèles statiques. Les modèles créés avec des modèles modifiables doivent être modifiés à l’aide du [éditeur de modèles](/help/sites-authoring/templates.md).
+>Le mode de conception n’est disponible que pour les modèles statiques. Les modèles créés avec des modèles modifiables doivent être modifiés à l’aide de l’[éditeur de modèles](/help/sites-authoring/templates.md).
 
 >[!NOTE]
 >
@@ -35,14 +35,14 @@ D’autres composants sont également disponibles. Vous pouvez utiliser le mode 
 >
 >À partir d’AEM 6.4, il est recommandé de stocker les conceptions en tant que données de configuration sous `/apps` pour prendre en charge les scénarios de déploiement continus. Les conceptions stockées sous `/apps` ne sont pas modifiables à l’exécution, et les utilisateurs non administrateurs n’auront pas accès au mode de conception pour les modèles en question.
 
-Pour ce faire, vous devrez ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Le système de paragraphes permet aux auteurs d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphe. Chaque type de paragraphe est représenté en tant que composant.
+Pour ce faire, vous devrez ajouter ou supprimer les composants autorisés dans le système de paragraphes de la page. Le système de paragraphes (`parsys`) est un composant composite qui contient tous les autres composants de paragraphes. Le système de paragraphes permet aux auteurs ou autrices d’ajouter des composants de différents types à une page, car il contient tous les autres composants de paragraphe. Chaque type de paragraphe est représenté en tant que composant.
 
-Par exemple, le contenu d’une page de produits peut contenir un système de paragraphes contenant les éléments suivants :
+Par exemple, le contenu d’une page produit peut contenir un système de paragraphes contenant les éléments suivants :
 
 * Une image du produit (sous la forme d’une image ou d’un paragraphe textimage)
-* Description du produit (sous forme de paragraphe de texte)
+* La description du produit (sous forme de paragraphe de texte)
 * Un tableau contenant des données techniques (sous la forme d’un paragraphe de tableau)
-* Un formulaire rempli par les utilisateurs (au début du formulaire, à l’élément de formulaire et au paragraphe de fin du formulaire)
+* Un formulaire rempli par les utilisateurs et utilisatrices (au début du formulaire, à l’élément de formulaire et au paragraphe de fin du formulaire)
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ Par exemple, le contenu d’une page de produits peut contenir un système de pa
 >
 >La modification de conceptions dans CRX DE, par exemple, n’est pas recommandée et l’application de ces conceptions risque de provoquer un comportement imprévu. Pour plus d’informations, consultez le document [Modèles de page - Statiques](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied), à l’attention du développeur.
 
-## Activation/désactivation de composants {#enable-disable-components}
+## Activer/désactiver des composants {#enable-disable-components}
 
-Pour activer ou désactiver un composant :
+Pour activer ou désactiver un composant :
 
 1. Sélectionnez le mode **Conception**.
 
@@ -72,7 +72,7 @@ Pour activer ou désactiver un composant :
 
    Cela a pour effet de sélectionner le système de paragraphes contenant le composant actif.
 
-1. L’icône **Configurer** du système de paragraphes s’affiche dans la barre d’outils du parent. 
+1. L’icône **Configurer** du système de paragraphes s’affiche dans la barre d’outils du parent.
 
    ![Configurer](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -82,7 +82,7 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103329](assets/screen_shot_2018-03-22at103329.png)
 
-   La boîte de dialogue comporte deux onglets :
+   La boîte de dialogue comporte deux onglets :
 
    * Composants autorisés
    * Paramètres
@@ -101,11 +101,11 @@ Pour activer ou désactiver un composant :
 
    >[!NOTE]
    >
-   >Les composants de formulaire adaptatif sont conçus pour fonctionner dans le conteneur de formulaires adaptatifs afin d’exploiter l’écosystème de Forms. Par conséquent, ces composants doivent être utilisés uniquement dans l’éditeur de formulaire adaptatif et ne fonctionneront pas dans l’éditeur de page Sites.
+   >Les composants de formulaires adaptatifs sont conçus pour fonctionner dans le conteneur de formulaires adaptatifs afin de tirer profit de l’écosystème Forms. Par conséquent, ces composants doivent être utilisés uniquement dans l’éditeur de formulaires adaptatifs et ne fonctionneront pas dans l’éditeur de page Sites.
 
    **Paramètres**
 
-   Sur le **Paramètres** vous pouvez définir d’autres options, telles que dessiner une ancre pour chaque composant et définir la marge intérieure des cellules de chaque conteneur.
+   Sur l’onglet **Paramètres**, vous pouvez définir d’autres options telles que dessiner une ancre pour chaque composant et définir la dilatation des cellules de chaque conteneur.
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
 
@@ -115,7 +115,7 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Appuyez ou cliquez sur un composant avec une bordure bleue. Dans cet exemple, un composant d’image principale est sélectionné.
+1. Appuyez ou cliquez sur un composant avec une bordure bleue. Dans cet exemple, un composant d’image de premier plan est sélectionné.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -127,7 +127,7 @@ Pour activer ou désactiver un composant :
 
    ![screen_shot_2018-03-22at103530](assets/screen_shot_2018-03-22at103530.png)
 
-   La boîte de dialogue comporte trois onglets :
+   La boîte de dialogue se compose de trois onglets :
 
    * Principal
    * Fonctions
@@ -135,7 +135,7 @@ Pour activer ou désactiver un composant :
 
    **Propriétés**
 
-   Le **Propriétés** vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant d’image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
+   L’onglet **Propriétés** vous permet de configurer les paramètres de conception importants du composant. Par exemple, pour un composant d’image, vous pouvez définir la taille maximale et minimale de l’image autorisée.
 
    **Fonctions**
 
@@ -143,7 +143,7 @@ Pour activer ou désactiver un composant :
 
    **Styles**
 
-   Le **Styles** vous permet de définir les classes et les styles CSS à utiliser avec le composant.
+   L’onglet **Styles** vous permet de définir les classes et les styles CSS à utiliser avec le composant.
 
    ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
 
@@ -155,8 +155,8 @@ Pour activer ou désactiver un composant :
 
    ![Supprimer](do-not-localize/screen_shot_2018-03-22at103809.png)
 
-   Utilisez la variable **Déplacer** pour réorganiser l’ordre des entrées dans une liste de dialogue à entrées multiples.
+   Utilisez l’icône **Déplacer** pour réorganiser l’ordre des entrées dans une liste de boîte de dialogue à entrées multiples.
 
    ![Déplacer](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Cliquez ou appuyez sur **Terminé** pour enregistrer et fermer la boîte de dialogue.
+1. Cliquez ou appuyez sur l’icône **Terminé** pour enregistrer et fermer la boîte de dialogue.

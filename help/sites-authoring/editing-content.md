@@ -1,6 +1,6 @@
 ---
-title: Editer le contenu des pages
-description: Une fois la page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
+title: Modifier le contenu des pages
+description: Une fois votre page créée, vous pouvez en modifier le contenu pour effectuer les mises à jour nécessaires.
 uuid: 5b4f0a8f-5196-42ea-8413-203783a0b77b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
 source-wordcount: '3082'
-ht-degree: 56%
+ht-degree: 99%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 56%
 
 Une fois la page créée (une nouvelle page ou dans le cadre d’un lancement ou d’une Live Copy), vous pouvez modifier le contenu pour effectuer toute mise à jour dont vous avez besoin.
 
-Le contenu est ajouté à l’aide de [components](/help/sites-authoring/default-components-console.md) (approprié au type de contenu) qui peut être glissé sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
+Le contenu est ajouté à l’aide des [composants](/help/sites-authoring/default-components-console.md) (appropriés au type de contenu) qui peuvent être glissés sur la page. Ils peuvent ensuite être modifiés sur place, déplacés ou supprimés.
 
 >[!NOTE]
 >
->Votre compte a besoin de la fonction [droits d’accès appropriés](/help/sites-administering/security.md) et [permissions](/help/sites-administering/security.md#permissions) pour modifier des pages.
+>Vous devez disposer des [droits d’accès](/help/sites-administering/security.md) et des [autorisations](/help/sites-administering/security.md#permissions) appropriés pour modifier des pages.
 >
 >En cas de problème, contactez votre administrateur système.
 
@@ -42,35 +42,35 @@ La barre d’outils Page permet d’accéder à la fonctionnalité appropriée, 
 
 ![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
 
-La barre d&#39;outils permet d&#39;accéder à de nombreuses options. Selon votre contexte et votre configuration actuels, certaines options peuvent ne pas être disponibles.
+La barre d’outils permet d’accéder à de nombreuses options. Selon votre contexte et votre configuration actuels, certaines options peuvent ne pas être disponibles.
 
 * **Activer/désactiver le panneau latéral**
 
-  Cela ouvre/ferme le panneau latéral, qui contient la balise [Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser), [Explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser), et [Arborescence de contenu](/help/sites-authoring/author-environment-tools.md#content-tree).
+  Cette action ouvre/ferme le panneau latéral, qui contient l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser), l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser) et l’[arborescence de contenu](/help/sites-authoring/author-environment-tools.md#content-tree).
 
   ![Activer/désactiver le panneau latéral](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Informations sur la page**
 
-  Permet d’accéder au [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information) menu comprenant les détails de la page et les actions qui peuvent être entreprises sur la page, notamment l’affichage et la modification des informations de la page, l’affichage des propriétés de la page et la publication/annulation de la publication de la page.
+  Permet d’accéder au menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information) comprenant les détails de la page et les actions qui peuvent être entreprises sur la page, notamment l’affichage et la modification des informations de la page, l’affichage des propriétés de la page et la publication/annulation de la publication de la page.
 
   ![Informations sur la page](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulateur**
 
-  Active/désactive la variable [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), qui est utilisé pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
+  Fait basculer la [barre d’outils de l’émulateur](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate) utilisée pour émuler l’aspect de la page sur un autre dispositif. Cette option est automatiquement basculée en mode de mise en page.
 
   ![Emulateur](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-  Ouvre la [hub contextuel](/help/sites-authoring/ch-previewing.md). Uniquement disponible en mode Aperçu.
+  Ouvre [ContextHub](/help/sites-authoring/ch-previewing.md). Uniquement disponible en mode Aperçu.
 
   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Titre de la page**
 
-  C&#39;est purement informatif.
+  Ceci est à titre purement informatif.
 
   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
@@ -100,9 +100,9 @@ Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/
 
 >[!NOTE]
 >
->La barre d’état n’est visible que pour les comptes d’utilisateurs disposant des privilèges appropriés.
+>La barre de statut n’est visible que pour les comptes d’utilisateurs ou d’utilisatrices disposant des privilèges appropriés.
 
-La notification répertorie le workflow qui s’exécute sur la page. Si l’utilisateur est impliqué dans l’étape de workflow actuelle, les options pour [affecte l’état du workflow](/help/sites-authoring/workflows-participating.md) et obtenir plus d’informations sur le workflow sont également disponibles, par exemple :
+La notification répertorie le workflow qui s’exécute sur la page. Si l’utilisateur ou l’utilisatrice est impliqué dans l’étape de workflow en cours, les options pour [affecter le statut du workflow](/help/sites-authoring/workflows-participating.md) et obtenir plus d’informations sur le workflow sont également disponibles, par exemple :
 
 * **Terminer** : ouvre la boîte de dialogue **Terminer l’élément de travail**.
 
@@ -118,9 +118,9 @@ Si la page est soumise à plusieurs workflows, leur nombre est indiqué à droit
 
 ## Espace réservé du composant {#component-placeholder}
 
-L’espace réservé du composant est un indicateur qui indique où un composant sera positionné lorsque vous le déposez, au-dessus du composant que vous survolez actuellement.
+L’espace réservé indique le positionnement du composant que vous déposez. Pour l’afficher, survolez le composant.
 
-* Lors de l’ajout d’un nouveau composant à la page (en le faisant glisser depuis l’explorateur de composants) :
+* Lors de l’ajout d’un nouveau composant à la page (en le faisant glisser depuis l’explorateur de composants) :
 
   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
@@ -142,16 +142,16 @@ Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de comp
 
 >[!NOTE]
 >
->Sur un appareil mobile, l’explorateur de composants remplit tout l’écran. Une fois que vous commencez à faire glisser un composant, l’explorateur se ferme pour afficher à nouveau la page afin que vous puissiez placer le composant.
+>Sur un appareil mobile, l’explorateur de composants remplit tout l’écran. Quand vous faites glisser un composant, l’explorateur se ferme pour afficher à nouveau la page afin que vous puissiez placer le composant.
 
 ### Insertion d’un composant à partir du système de paragraphes {#inserting-a-component-from-the-paragraph-system}
 
 Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser les composants ici** du système de paragraphes :
 
 1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-authoring/author-environment-tools.md#page-modes).
-1. Il existe deux façons de sélectionner et d’ajouter un nouveau composant à partir du système de paragraphes :
+1. Il existe deux façons de sélectionner et d’ajouter un nouveau composant à partir du système de paragraphes :
 
-   * Sélectionnez la **Insérer un composant** (+) à partir de la barre d’outils d’un composant existant ou de la fonction **Faire glisser des composants ici** de la boîte.
+   * Sélectionnez l’option **Insérer le composant** (+) depuis la barre d’outils d’un composant existant ou dans la zone **Faire glisser les composants ici**.
 
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
@@ -200,23 +200,23 @@ Cette procédure est valide pour les types de ressources suivants (certains dép
 
 >[!NOTE]
 >
->Ce comportement peut être configuré pour votre installation. Voir [Configuration d’un système de paragraphes pour que le glissement d’une ressource crée une instance de composant](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) pour plus de détails.
+>Ce comportement peut être configuré pour votre installation. Voir [Configuration d’un système de paragraphe afin que le glissement d’une ressource crée une instance de composant](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) pour plus de détails.
 
 Pour créer un composant en faisant glisser l’un des types de ressources ci-dessus, suivez ces étapes :
 
 1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-authoring/author-environment-tools.md#page-modes).
-1. Ouvrez le [explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. Faites glisser la ressource vers la position requise. Le [espace réservé du composant](#component-placeholder) vous indique où le composant sera positionné.
+1. Ouvrez l’[explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assets-browser).
+1. Faites glisser le composant jusqu’à la position requise. L’[espace réservé du composant](#component-placeholder) vous indique où sera positionné le composant.
 
-   Un composant, adapté au type de ressource, est créé à l’emplacement requis ; il contient la ressource sélectionnée.
+   Un composant, adapté au type de ressource, est créé à l’emplacement requis. Il contient la ressource sélectionnée.
 
-1. [Modifier](#editmovecopypastedelete) le composant si nécessaire.
+1. [Modifiez](#editmovecopypastedelete) le composant si nécessaire.
 
 >[!NOTE]
 >
->Sur un appareil mobile, l’explorateur de ressources remplit tout l’écran. Une fois que vous commencez à faire glisser une ressource, l’explorateur se ferme pour afficher à nouveau la page afin que vous puissiez la placer.
+>Sur un appareil mobile, l’explorateur de ressources remplit tout l’écran. Quand vous faites glisser une ressource, l’explorateur se ferme pour afficher à nouveau la page. Vous pouvez alors placer la ressource.
 
-Si, lors de l’exploration des ressources, vous estimez que vous devez apporter une modification rapide à une ressource, vous pouvez lancer la variable [éditeur de ressources](/help/assets/manage-assets.md) directement à partir du navigateur en cliquant sur l’icône de modification en regard du nom de la ressource.
+Si, lors de l’exploration des ressources, vous estimez qu’il est nécessaire d’apporter une modification rapide à l’une d’elles, vous pouvez lancer directement l’[éditeur de ressources](/help/assets/manage-assets.md) à partir du navigateur en cliquant sur l’icône d’édition située en regard de son nom.
 
 ![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
 
@@ -242,35 +242,35 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Copier**
 
-  Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine reste.
+  Le composant est copié dans le presse-papiers. Après l’action de collage, le composant d’origine reste.
 
   ![Copier](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Couper**
 
-  Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine est supprimé.
+  Le composant est copié dans le presse-papiers. Après l’action de collage, le composant d’origine est supprimé.
 
   ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **Supprimer**
 
-  Cela supprime le composant de la page avec votre confirmation.
+  Après confirmation de votre part, le composant de la page est supprimé.
 
   ![Supprimer](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Insérer le composant**
 
-  La boîte de dialogue s’ouvre alors pour [ajouter un nouveau composant](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  La boîte de dialogue s’ouvre, permettant d’[ajouter un nouveau composant](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
   ![Insérer le composant](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Coller**
 
-  Le composant est alors collé du Presse-papiers sur la page. Si l’original est conservé, cela dépend de l’utilisation de la copie ou de la coupure.
+  Le composant est collé du presse-papiers à la page. L’original est conservé ou non, selon la fonction que vous avez utilisée (Couper ou Coller).
 
-   * Vous pouvez effectuer un collage sur la même page ou sur une autre.
-   * L’élément collé est collé au-dessus de l’élément dans lequel vous sélectionnez l’action de collage.
-   * L’action Pate ne s’affiche que si du contenu se trouve dans le Presse-papiers.
+   * Vous pouvez coller les composants sur la même page ou sur une autre.
+   * L’élément collé est collé au-dessus de l’élément pour lequel vous avez sélectionné l’action de collage.
+   * L’action de collage ne s’affiche que si du contenu se trouve dans le presse-papiers.
 
   ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
@@ -280,19 +280,19 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 * **Groupe**
 
-  Vous pouvez ainsi sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide d’une **Ctrl+Clic** ou **Commande + clic**.
+  Cette option permet de sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide des commandes **Ctrl-clic** ou **Commande-clic**.
 
   ![Groupe](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Parent**
 
-  Permet de sélectionner le composant parent du composant sélectionné.
+  Cette option permet de sélectionner le composant parent du composant sélectionné.
 
   ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
 * **Mise en page**
 
-  Cela vous permet de modifier la variable [layout](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas la fonction [Mode Mise en page](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
+  Cette option permet de modifier la [disposition](/help/sites-authoring/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas le [mode de disposition](/help/sites-authoring/author-environment-tools.md#page-modes) pour la page entière.
 
   ![Mise en page](do-not-localize/screen_shot_2018-03-22at113044.png)
 
@@ -306,14 +306,14 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
 Deux méthodes permettent d’ajouter et/ou de modifier le contenu dans les composants :
 
-* Ouvrez le [boîte de dialogue de composant pour la modification](#component-edit-dialog).
+* Ouvrez la [boîte de dialogue du composant pour la modification](#component-edit-dialog).
 * [Faites glisser et déposez un élément](#draganddropintocomponent) depuis l’explorateur de ressources pour ajouter directement du contenu.
 
 ### Boîte de dialogue de modification du composant {#component-edit-dialog}
 
 Vous pouvez ouvrir un composant pour modifier le contenu à l’aide de l’icône [Modifier (crayon) de la barre d’outils du composant](#edit-configure-copy-cut-delete-paste).
 
-Les options de modification exactes dépendent du composant. Pour certains composants [toutes les actions ne sont disponibles qu’en mode plein écran.](#edit-content-full-screen-mode). Par exemple :
+Les options de modification exactes dépendent du composant. Pour certains composants [toutes les actions ne sont disponibles qu’en mode plein écran](#edit-content-full-screen-mode). Par exemple :
 
 * [Composant textuel](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
@@ -328,7 +328,7 @@ Les options de modification exactes dépendent du composant. Pour certains compo
   >L’édition ne fonctionne pas sur un composant d’image vide.
   >
   >
-  >Vous devez [faire glisser ou charger une image (à l’aide de Configurer) ;](/help/sites-authoring/default-components-foundation.md#image) avant de commencer à le modifier.
+  >Vous devez [faire glisser ou charger une image (à l’aide de l’option Configurer)](/help/sites-authoring/default-components-foundation.md#image) avant de commencer à la modifier.
 
 * Composant d’image - Plein écran
 
@@ -342,7 +342,7 @@ Les options de modification exactes dépendent du composant. Pour certains compo
 
 ### Faire glisser et déposer des éléments dans des composants {#drag-and-drop-assets-into-component}
 
-Pour des types de composants spécifiques, vous pouvez faire glisser et déposer des ressources depuis l’explorateur de ressources directement dans le composant pour mettre à jour le contenu :
+Pour certains types de composants, vous pouvez effectuer un glisser-déposer des ressources depuis l’explorateur de ressources directement dans le composant pour mettre à jour le contenu :
 
 | **Type de ressource** | **Type de composant** |
 |---|---|
@@ -352,7 +352,7 @@ Pour des types de composants spécifiques, vous pouvez faire glisser et déposer
 | Vidéo | Flash |
 | Fragment de contenu | Fragment de contenu |
 
-## Modifier le mode Plein écran (contenu) {#edit-content-full-screen-mode}
+## Modifier (du contenu) - Mode Plein écran {#edit-content-full-screen-mode}
 
 Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitter) avec :
 
@@ -364,13 +364,13 @@ Par exemple, le composant **Texte** :
 
 >[!NOTE]
 >
->Pour certains composants, le mode Plein écran comporte plus d’options disponibles que l’éditeur statique de base.
+>Pour certains composants, le mode Plein écran dispose d’un plus grand nombre d’options disponibles que l’éditeur en place de base.
 
 ## Déplacement d’un composant {#moving-a-component}
 
 Pour déplacer un composant de paragraphe :
 
-1. Sélectionnez le paragraphe à déplacer en maintenant la pression enfoncée ou en cliquant et en maintenant la pression enfoncée.
+1. Sélectionnez le paragraphe à déplacer en appuyant ou en cliquant longuement.
 1. Faites glisser le paragraphe vers son nouvel emplacement. AEM indique où le paragraphe peut être déposé. Déposez-le à l’emplacement de votre choix.
 
    ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
@@ -393,11 +393,11 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
    ![Barre d’outils de composants](do-not-localize/chlimage_1-21.png)
 
-1. Une fois l’action Disposition sélectionnée :
+1. Une fois l’action de disposition sélectionnée :
 
    * Les poignées de redimensionnement du composant s’affichent.
    * La barre d’outils de l’émulateur s’affiche en haut de l’écran.
-   * Les actions de mise en page au lieu des actions de modification standard s’affichent dans la barre d’outils du composant.
+   * Les actions de disposition au lieu des actions de modification standard s’affichent dans la barre d’outils du composant.
 
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
@@ -421,7 +421,7 @@ Les composants hérités peuvent être le produit de divers scénarios :
 * [Lancements](/help/sites-authoring/launches.md) (quand basés sur une Live Copy)
 * Des composants spécifiques ; par exemple, le système de paragraphes hérité dans Geometrixx
 
-Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous pouvez y accéder à partir des éléments suivants :
+Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous pouvez effectuer cette opération depuis :
 
 * **Live Copy**
 
@@ -429,11 +429,11 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
   ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
-  L’option Annuler l’héritage est disponible :
+  L’option Annuler l’héritage est disponible :
 
   ![Annuler l’héritage](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-  Ou réactivez l’héritage en cas d’annulation :
+  Ou réactivez l’héritage en cas d’annulation :
 
   ![Réactiver l’héritage](do-not-localize/screen_shot_2018-03-22at134417.png)
 
@@ -443,13 +443,13 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
 * **Un système de paragraphes hérité**
 
-  Boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité :
+  Boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité :
 
   ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## Modification du modèle de page {#editing-the-page-template}
 
-Si la page est basée sur une [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez facilement passer à l’ [éditeur de modèles](/help/sites-authoring/templates.md#editing-templates-template-authors) en sélectionnant **Modifier le modèle** dans le [Menu Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information).
+Si la page est basée sur un [modèle modifiable](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez facilement passer à l’[éditeur de modèles](/help/sites-authoring/templates.md#editing-templates-template-authors) en sélectionnant **Modifier le modèle** dans le [menu Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information).
 
 Si la page est basée sur un [modèle statique](/help/sites-authoring/templates.md#editable-and-static-templates), vous pouvez basculer vers le [mode de création](/help/sites-authoring/default-components-designmode.md) à l’aide du [sélecteur du mode de page](/help/sites-authoring/author-environment-tools.md#page-modes) de la barre d’outils afin d’activer ou de désactiver les composants à utiliser sur la page.
 
@@ -457,10 +457,10 @@ Vous pouvez déterminer facilement le modèle sur lequel la page est basée en s
 
 ## Statut de la Live Copy {#live-copy-status}
 
-Le [Mode de page État de Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) vous permet d’obtenir un aperçu rapide de l’état de Live Copy et des composants qui sont/ne sont pas hérités :
+Le [mode de la page du statut de la Live Copy](/help/sites-authoring/author-environment-tools.md#page-modes) vous donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités :
 
-* Bordure verte : Hérité
-* Bordure rose : L’héritage a été annulé
+* Bordure verte : hérité
+* Bordure rose : l’héritage a été annulé
 
 Par exemple :
 
@@ -476,52 +476,52 @@ Deux options sont disponibles pour prévisualiser une page :
 
 * [Mode Aperçu](#preview-mode) : aperçu rapide et statique
 
-* [Afficher comme publié(e)](#view-as-published) : aperçu complet qui ouvre la page dans un nouvel onglet
+* [Afficher comme publié](#view-as-published) : aperçu complet qui ouvre la page dans un nouvel onglet
 
 >[!NOTE]
 >
->* Les liens dans le contenu sont visibles, mais ne sont pas accessibles en mode d’ édition .
+>* Les liens dans le contenu sont visibles, mais ne sont pas accessibles en mode d’édition.
 >* Si vous souhaitez naviguer à l’aide des liens, utilisez l’une des options d’aperçu.
 >* Utilisez le [raccourci clavier](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` pour basculer entre le mode Aperçu et le dernier mode sélectionné.
 >
 
 >[!NOTE]
 >
->Le cookie WCM Mode est défini pour les deux options.
+>Le cookie de mode WCM est défini pour les deux options.
 
 ### Mode Aperçu {#preview-mode}
 
-Lorsque vous modifiez du contenu, vous pouvez prévisualiser la page à l’aide de l’aperçu. [mode](/help/sites-authoring/author-environment-tools.md#page-modes). Ce mode :
+Lorsque vous modifiez du contenu, vous pouvez prévisualiser la page à l’aide du [mode](/help/sites-authoring/author-environment-tools.md#page-modes) Aperçu. Ce mode :
 
 * Masque les différents mécanismes de modification pour vous donner un aperçu rapide de l’apparence de la page publiée.
 * Permet d’utiliser des liens pour naviguer.
-* Does **not** actualisez le contenu de la page.
+* **N’actualise pas** le contenu de la page.
 
-Lors de la création, le mode Aperçu est disponible à l’aide de l’icône située en haut à droite de l’éditeur de page :
+Lors de la création, le mode Aperçu est disponible à l’aide de l’icône située en haut à droite de l’éditeur de page :
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
 ### Afficher comme publié(e) {#view-as-published}
 
-Le **Afficher comme publié(e)** est disponible à partir de la [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information) . La page s’ouvre alors dans un nouvel onglet, actualise le contenu et affiche la page telle qu’elle apparaîtra dans l’environnement de publication.
+L’option **Afficher comme publié(e)** est disponible à partir du menu [Informations sur la page](/help/sites-authoring/author-environment-tools.md#page-information). La page s’ouvre alors dans un nouvel onglet, actualise le contenu et affiche la page telle qu’elle apparaîtra dans l’environnement de publication.
 
 ## Verrouillage d’une page  {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
-Une page peut être verrouillée à partir de :
+Une page peut être verrouillée à partir de :
 
-* **Sites** console
+* La console **Sites**
 
-   1. Sélectionnez la page avec [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Sélectionnez l’icône de verrouillage.
+   1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+   1. Sélectionnez l’icône de verrou.
 
   ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Éditeur de page**
 
-   1. Sélectionnez la **Informations sur la page** pour ouvrir le menu.
-   1. Sélectionnez la **Verrouiller la page** .
+   1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu.
+   1. Sélectionnez l’option **Verrouiller la page**.
 
 Une fois la page verrouillée, les informations d’affichage de la console sont mises à jour et, lors de la modification, le symbole d’un verrou s’affiche dans la barre d’outils.
 
@@ -529,7 +529,7 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous [empruntez l’identité d’un utilisateur](/help/sites-administering/security.md#impersonating-another-user). Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par l’utilisateur emprunté à l’identité ou par l’utilisateur administrateur.
+>Le verrouillage d’une page peut être réalisé lorsque vous [empruntez l’identité d’un utilisateur](/help/sites-administering/security.md#impersonating-another-user). Cependant, une page verrouillée de cette manière peut ensuite uniquement être déverrouillée par l’utilisateur ou l’utilisatrice dont l’identité a été empruntée ou par l’utilisateur ou l’utilisatrice admin.
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 
@@ -543,7 +543,7 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous [empruntez l’identité d’un utilisateur](/help/sites-administering/security.md#impersonating-another-user). Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par l’utilisateur emprunté à l’identité ou par l’utilisateur administrateur.
+>Le verrouillage d’une page peut être réalisé lorsque vous [empruntez l’identité d’un utilisateur](/help/sites-administering/security.md#impersonating-another-user). Cependant, une page verrouillée de cette manière peut ensuite uniquement être déverrouillée par l’utilisateur ou l’utilisatrice dont l’identité a été empruntée ou par l’utilisateur ou l’utilisatrice admin.
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 
@@ -573,21 +573,21 @@ AEM stocke un historique des actions que vous réalisez, ainsi que la séquence 
 
 Si un élément de la page de contenu est sélectionné (un composant de texte, par exemple), les commandes Annuler et Rétablir s’appliquent à celui-ci.
 
-Le comportement des commandes Annuler et Rétablir est similaire à celui des autres programmes logiciels. Utilisez les commandes pour restaurer l’état récent de votre page web lorsque vous prenez des décisions sur le contenu. Par exemple, si vous repositionnez un paragraphe de texte sur la page, vous pouvez utiliser la commande Annuler pour le remettre à son emplacement initial. Si vous décidez alors que la position précédente était meilleure, utilisez la commande redo pour &quot;annuler l’annulation&quot;.
+Le comportement des commandes Annuler et Rétablir est similaire à celui des autres logiciels. Utilisez ces commandes pour restaurer l’état récent de votre page web lorsque vous prenez des décisions sur le contenu. Par exemple, si vous repositionnez un paragraphe de texte sur la page, vous pouvez utiliser la commande Annuler pour le remettre à son emplacement initial. Si vous décidez alors que la position précédente était meilleure, utilisez la commande Rétablir pour « annuler l’annulation ».
 
 >[!NOTE]
 >
 >Vous pouvez :
 >
 >* Rétablir les actions tant que vous n’avez pas effectué de modification de page depuis que vous avez utilisé l’option Annuler.
->* Annulez un maximum de 20 actions de modification (paramètre par défaut).
->* Utilisez également [Raccourcis clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour annuler et rétablir.
+>* Annuler un maximum de 20 actions de modification (paramètre par défaut).
+>* Utilisez également les [raccourcis clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) pour annuler et rétablir.
 >
 
-Vous pouvez utiliser les options Annuler et Rétablir pour les types de modifications de page suivants :
+Vous pouvez utiliser les options Annuler et Rétablir pour les types de modifications de page suivants :
 
 * Ajout, modification, suppression et déplacement de paragraphes
-* Modification statique du contenu des paragraphes
+* Modification sur place du contenu des paragraphes
 * Copie, découpe et collage d’éléments dans une page
 
 Les champs de formulaire dont le rendu des composants de formulaire est effectué ne sont pas censés contenir de valeurs spécifiées lors de la création de pages. Les commandes Annuler et Rétablir n’affectent donc pas les modifications que vous apportez aux valeurs des composants de ce type. Par exemple, vous ne pouvez pas annuler la sélection d’une valeur dans une liste déroulante.
@@ -598,4 +598,4 @@ Les champs de formulaire dont le rendu des composants de formulaire est effectu�
 
 >[!NOTE]
 >
->L’historique des modifications apportées aux fichiers et aux images dure au moins dix heures. Au-delà de cette période, l’annulation des modifications n’est toutefois pas garantie. Votre administrateur peut modifier l’heure par défaut de dix heures.
+>L’historique des modifications apportées aux fichiers et aux images dure au moins dix heures. Au-delà de cette période, l’annulation des modifications n’est toutefois pas garantie. Votre administrateur ou administratrice peut modifier la durée par défaut de dix heures.

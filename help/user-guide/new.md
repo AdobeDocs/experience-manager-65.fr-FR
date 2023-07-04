@@ -5,7 +5,7 @@ exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 44%
+ht-degree: 72%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 44%
 
 ## Qu’est-ce qu’Adobe Experience Manager (AEM) et où obtenir de la documentation ? {#what-is-aem}
 
-Adobe Experience Manager (AEM) est un système client-serveur web qui permet de créer, gérer et déployer des sites web commerciaux et des services associés. Il combine plusieurs fonctions au niveau de l’infrastructure et de l’application en un seul module intégré.
+Adobe Experience Manager (AEM) est un système client-serveur basé sur le web qui permet de créer, de gérer et de déployer des sites web commerciaux et des services associés. Cette solution associe dans un seul package intégré plusieurs fonctions de niveau application et de niveau infrastructure.
 
-* [Consultez la documentation pour plus d’informations](/help/sites-deploying/home.md)
-* [Mises à jour récentes de la documentation pour AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [Pour plus d’informations, consultez la documentation.](/help/sites-deploying/home.md)
+* [Mises à jour récentes de la documentation pour AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr)
 
 ## Où puis-je télécharger le logiciel AEM ? {#download}
 
@@ -24,17 +24,17 @@ Les clients qui disposent d’un contrat d’assistance et de maintenance valide
 
 [Plus d’informations sur le déploiement du logiciel AEM](/help/sites-deploying/home.md)
 
-Visite [Hub de subsistance AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) pour plus d’informations sur les versions d’AEM.
+Consultez [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=fr) pour plus d’informations sur les mises à jour d’AEM.
 
 ## Comment puis-je obtenir une assistance officielle pour AEM ? {#official-support}
 
-En tant que client sous licence, vous pouvez obtenir une assistance pour AEM depuis [Équipe d’assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support). Vous pouvez également nous poser des questions dans la section [Communauté AEM](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) ou sur la gestion Twitter d’AdobeExpCare à l’adresse `https://twitter.com/adobeexpcare`.
+Si vous disposez d’une licence, vous pouvez bénéficier d’une assistance pour AEM en vous adressant à notre [équipe d’assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support). Vous pouvez également nous poser des questions dans la section [Communauté AEM](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) ou sur la gestion Twitter d’AdobeExpCare à l’adresse `https://twitter.com/adobeexpcare`.
 
 ## Où se trouve la documentation concernant les autres versions d’AEM ? {#versions}
 
 Vous êtes au bon endroit pour la documentation AEM 6.5.
 
-Adobe contient également la documentation relative aux anciennes versions d’Adobe Experience Manager. Vous pouvez y jeter un oeil. [Anciennes versions de la documentation d’Adobe Experience Manager, de CQ et de CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour plus d’informations.
+Nous disposons également de la documentation pour les anciennes versions d’Adobe Experience Manager. Vous pouvez y jeter un oeil. [Anciennes versions de la documentation d’Adobe Experience Manager, de CQ et de CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr) pour plus d’informations.
 
 ## Où se trouvent les notes de mise à jour de la version 6.5 d’AEM ? {#release-notes}
 

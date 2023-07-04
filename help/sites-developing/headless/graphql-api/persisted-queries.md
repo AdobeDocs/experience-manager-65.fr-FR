@@ -1,17 +1,17 @@
 ---
 title: Requêtes GraphQL persistantes
-description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
+description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
 source-wordcount: '1424'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
-Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM). Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une demande de GET peut être mise en cache aux couches Dispatcher et Content Delivery Network (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elles sont en cela différentes des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM). Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une requête GET peut être mise en cache au niveau du Dispatcher et du réseau de diffusion de contenu (CDN), ce qui améliore finalement les performances de l’application cliente qui la demande. Elle est en cela différente de la requête GraphQL standard, qui est exécutée à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
 
 <!--
 >[!NOTE]
@@ -19,7 +19,7 @@ Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stock
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 -->
 
-L’[IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md) est disponible dans AEM pour que vous puissiez le développer, le tester et conserver vos requêtes GraphQL, avant de [le transférer vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, lorsque [personnalisation du cache](/help/sites-developing/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; voir l’exemple cURL fourni dans [Comment conserver une requête GraphQL](#how-to-persist-query).
+L’[IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md) est disponible dans AEM pour que vous puissiez le développer, le tester et conserver vos requêtes GraphQL, avant de [le transférer vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, pour la [personnalisation du cache](/help/sites-developing/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; consultez l’exemple de cURL fourni dans [Conservation d’une requête GraphQL](#how-to-persist-query).
 
 ## Requêtes et points d’entrée persistants {#persisted-queries-and-endpoints}
 
@@ -40,9 +40,9 @@ Par exemple, pour créer une requête persistante spécifique à la configuratio
 Par exemple, s’il existe une requête spécifique appelée `my-query`, qui utilise un modèle `my-model` de la configuration Sites `my-conf` :
 
 * Vous pouvez créer une requête à l’aide du point d’entrée `my-conf` spécifique, puis la requête sera enregistrée comme suit :
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * Vous pouvez créer la même requête à l’aide du point d’entrée `global`, mais elle sera dans ce cas enregistrée comme suit :
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -57,10 +57,10 @@ Il est recommandé d’appliquer des requêtes persistantes dans un environnemen
 Il existe différentes méthodes pour créer des requêtes persistantes, notamment :
 
 * IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/sites-developing/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (méthode préférée)
-* cURL - voir l’exemple suivant
+* cURL - Consultez l’exemple suivant
 * Autres outils, notamment [Postman](https://www.postman.com/)
 
-L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes. Pour conserver une requête donnée à l’aide de la fonction **cURL** outil de ligne de commande :
+L’IDE GraphiQL est la méthode **préférée** pour les requêtes persistantes. Pour conserver une requête donnée à l’aide de l’outil de ligne de commande **cURL** :
 
 1. Préparez la requête avec une commande PUT sur l’URL du nouveau point d’entrée `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -262,11 +262,11 @@ Notez que `%3B` est l’encodage UTF-8 pour `;` et `%3D` est l’encodage pour `
 
 ## Mettre en cache vos requêtes persistantes {#caching-persisted-queries}
 
-Les requêtes persistantes sont recommandées, car elles peuvent être mises en cache au niveau de la variable [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) et réseau de diffusion de contenu (CDN), améliorant ainsi les performances de l’application cliente requérant.
+Les requêtes persistantes sont recommandées, car elles peuvent être mises en cache au niveau des couches [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) et réseau de diffusion de contenu (CDN), ce qui améliore les performances de l’application cliente effectuant les requêtes.
 
-Par défaut, AEM invalide le cache en fonction d’une définition de durée de vie (TTL). Ces TTL peuvent être définis par les paramètres suivants. Ces paramètres sont accessibles de plusieurs manières, avec des variantes dans les noms en fonction du mécanisme utilisé :
+Par défaut, AEM invalide le cache en fonction d’une définition de durée de vie (TTL). Ces TTL peuvent être définies par les paramètres suivants. Ces paramètres sont accessibles de plusieurs manières, avec des variantes dans les noms en fonction du mécanisme utilisé :
 
-| Type de cache | [En-tête HTTP](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | Configuration OSGi  |
+| Type de cache | [En-tête HTTP](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control) | cURL | Configuration OSGi  |
 |--- |--- |--- |--- |
 | Navigateur | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | Réseau de diffusion de contenu | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
@@ -277,17 +277,17 @@ Par défaut, AEM invalide le cache en fonction d’une définition de durée de 
 
 ### Instances de création {#author-instances}
 
-Pour les instances d’auteur, les valeurs par défaut sont les suivantes :
+Pour les instances de création, les valeurs par défaut sont les suivantes :
 
-* `max-age`  : 60
-* `s-maxage` : 60
-* `stale-while-revalidate` : 86400
-* `stale-if-error` : 86400
+* `max-age` : 60
+* `s-maxage` : 60
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
-Celles-ci :
+Celles-ci :
 
-* ne peut pas être remplacé par une configuration OSGi
-* peut être remplacé par une requête qui définit les paramètres d’en-tête HTTP à l’aide de cURL ; Elle doit inclure des paramètres appropriés pour `cache-control` et/ou `surrogate-control`; pour consulter des exemples, voir [Gestion du cache au niveau de la requête persistante](#cache-persisted-query-level)
+* ne peuvent pas être remplacées par une configuration OSGi.
+* peuvent être remplacées par une requête qui définit les paramètres d’en-tête HTTP à l’aide de cURL. La requête doit inclure des paramètres appropriés pour `cache-control` et/ou `surrogate-control`. Pour consulter des exemples, voir [Gestion du cache au niveau de la requête persistante](#cache-persisted-query-level).
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -295,16 +295,16 @@ Celles-ci :
 * can be overwritten if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-### Publication d’instances {#publish-instances}
+### Instances de publication {#publish-instances}
 
-Pour les instances de publication, les valeurs par défaut sont les suivantes :
+Pour les instances de publication, les valeurs par défaut sont les suivantes :
 
-* `max-age`  : 60
-* `s-maxage` : 7200
-* `stale-while-revalidate` : 86400
-* `stale-if-error` : 86400
+* `max-age` : 60
+* `s-maxage` : 7200
+* `stale-while-revalidate` : 86400
+* `stale-if-error` : 86400
 
-Ils peuvent être remplacés :
+Elles peuvent être remplacées :
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready -->
@@ -312,9 +312,9 @@ Ils peuvent être remplacés :
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [au niveau de requête persistante](#cache-persisted-query-level); cela implique de publier la requête sur AEM à l’aide de cURL dans votre interface de ligne de commande et de publier la requête persistante.
+* [Au niveau de la requête persistante](#cache-persisted-query-level) ; cela implique de publier la requête sur AEM à l’aide de cURL dans votre interface de ligne de commande et de publier la requête persistante.
 
-* [avec une configuration OSGi](#cache-osgi-configration)
+* [Par une configuration OSGi.](#cache-osgi-configration)
 
 <!-- CQDOC-20186 -->
 <!-- keep for future use; check link -->
@@ -326,9 +326,9 @@ The GraphiQL IDE - see [Saving Persisted Queries](/help/sites-developing/headles
 
 ### Gestion du cache au niveau de la requête persistante {#cache-persisted-query-level}
 
-Cela implique de publier la requête sur AEM à l’aide de cURL dans votre interface de ligne de commande.
+Cela implique de publier la requête dans AEM à l’aide de cURL dans votre interface de ligne de commande.
 
-Pour un exemple de la méthode PUT (create) :
+Pour un exemple de la méthode PUT (création) :
 
 ```bash
 curl -u admin:admin -X PUT \
@@ -337,7 +337,7 @@ curl -u admin:admin -X PUT \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-Pour un exemple de la méthode POST (update) :
+Pour un exemple de la méthode POST (mise à jour) :
 
 ```bash
 curl -u admin:admin -X POST \
@@ -346,11 +346,11 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-Le `cache-control` peut être défini au moment de la création (PUT) ou ultérieurement (par exemple, via une demande de POST). Le contrôle du cache est facultatif lors de la création de la requête persistante car AEM peut fournir la valeur par défaut. Voir [Comment conserver une requête GraphQL](#how-to-persist-query), par exemple pour conserver une requête à l’aide de cURL.
+Le `cache-control` peut être défini au moment de la création (PUT) ou ultérieurement (par exemple, via une demande de POST). Le contrôle du cache est facultatif lors de la création de la requête persistante car AEM peut fournir la valeur par défaut. Consultez [Conservation d’une requête GraphQL](#how-to-persist-query), par exemple pour conserver une requête à l’aide de cURL.
 
 ### Gestion du cache avec une configuration OSGi {#cache-osgi-configration}
 
-Pour gérer le cache globalement, vous pouvez : [configuration des paramètres OSGi](/help/sites-deploying/configuring-osgi.md) pour le **Configuration de Query Service persistante**. Sinon, cette configuration OSGi utilise la variable [valeurs par défaut pour les instances de publication](#publish-instances).
+Pour gérer le cache globalement, vous pouvez [configurer les paramètres OSGi](/help/sites-deploying/configuring-osgi.md) pour la **configuration du service de requête persistante**. Autrement, la configuration OSGi utilise les [valeurs par défaut des instances de publication](#publish-instances).
 
 >[!NOTE]
 >
@@ -400,7 +400,7 @@ Création d’un package :
 1. Créez un nouveau package en appuyant sur **Créer un package**. Une boîte de dialogue s’ouvre alors pour définir le package.
 1. Dans la boîte de dialogue Définition de package, sous **Général**, saisissez un **Nom** comme « wknd-persistent-queries ».
 1. Saisissez un numéro de version comme « 1.0 ».
-1. Sous **Filtres** ajoutez un nouveau **Filtre**. Utilisez l’outil de recherche de chemin pour sélectionner le dossier `persistentQueries` sous la configuration. Par exemple, pour la configuration `wknd` le chemin d&#39;accès complet sera `/conf/wknd/settings/graphql/persistentQueries`.
+1. Sous **Filtres** ajoutez un nouveau **Filtre**. Utilisez l’outil de recherche de chemin pour sélectionner le dossier `persistentQueries` sous la configuration. Par exemple, pour la configuration `wknd` le chemin d’accès complet sera `/conf/wknd/settings/graphql/persistentQueries`.
 1. Appuyez sur **Enregistrer** pour enregistrer la nouvelle définition de package et fermez la boîte de dialogue.
 1. Appuyez sur le bouton **Créer** dans la définition de package nouvellement créée.
 

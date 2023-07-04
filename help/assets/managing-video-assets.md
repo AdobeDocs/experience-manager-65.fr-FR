@@ -626,7 +626,7 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 
    ![Recherche d’une heure dans une vidéo à ignorer pendant les secondes spécifiées](assets/seek-in-video.png)
 
-1. Pour l’afficher dans le journal, cliquez sur une annotation. Pour supprimer l’annotation du journal, cliquez sur **[!UICONTROL Supprimer]**.
+1. Pour l’afficher dans la chronologie, cliquez sur une annotation. Pour supprimer l’annotation de la chronologie, cliquez sur **[!UICONTROL Supprimer]**.
 
    ![Affichage des annotations et des détails dans la chronologie](assets/timeline-view-annotation.png)
 
@@ -635,4 +635,3 @@ La façon dont vous configurez les notifications varie si vous souhaitez recevoi
 >* [Gestion des ressources numériques dans Experience Manager Assets](/help/assets/manage-assets.md)
 >* [Gestion des collections dans Experience Manager Assets](/help/assets/manage-collections.md)
 >* [Documentation vidéo de Dynamic Media](/help/assets/video.md).
-

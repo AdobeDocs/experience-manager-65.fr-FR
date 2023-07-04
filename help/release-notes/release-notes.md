@@ -6,7 +6,7 @@ exl-id: fed4e110-9415-4740-aba1-75da522039a9
 source-git-commit: d244fb50ad0f165d31bc51ee671b80bdd13c860e
 workflow-type: tm+mt
 source-wordcount: '3777'
-ht-degree: 28%
+ht-degree: 31%
 
 ---
 
@@ -310,7 +310,7 @@ Pour connaître les plateformes certifiées pour travailler avec cette version, 
 
 Pour obtenir des instructions sur l’installation du Service Pack sur Experience Manager Forms, voir [Instructions d’installation du Service Pack Experience Manager Forms](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
-### Installation du package d’index GraphQL pour les fragments de contenu Experience Manager{#install-aem-graphql-index-add-on-package}
+### Installer le package d’index GraphQL pour les fragments de contenu d’Experience Manager{#install-aem-graphql-index-add-on-package}
 
 Les clients qui utilisent GraphQL doivent installer la variable [Fragment de contenu Experience Manager avec package d’index GraphQL 1.1.1](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/cfm-graphql-index-def-1.1.1.zip).
 
@@ -362,14 +362,14 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Mettez à jour vos requêtes GraphQL qui peuvent avoir utilisé un nom d’API personnalisé pour votre modèle de contenu afin d’utiliser plutôt le nom par défaut du modèle de contenu.
 
-* Une requête GraphQL peut utiliser la variable `damAssetLucene` plutôt que l’index `fragments` index. Cette action peut entraîner l’échec des requêtes GraphQL ou un long délai d’exécution.
+* Une requête GraphQL peut utiliser l’index `damAssetLucene` plutôt que l’index `fragments`. Cette action peut entraîner l’échec des requêtes GraphQL ou un long délai d’exécution.
 
-  Pour résoudre le problème, `damAssetLucene` doit être configuré pour inclure les deux propriétés suivantes :
+  Pour résoudre le problème, `damAssetLucene` doit être configuré pour inclure les deux propriétés suivantes :
 
    * `contentFragment`
    * `model`
 
-  Une fois la définition d’index modifiée, une réindexation est requise (`reindex` = `true`).
+  Une fois la définition d’index modifiée, une réindexation est nécessaire (`reindex` = `true`).
 
   Après ces étapes, les requêtes GraphQL doivent être plus rapides.
 

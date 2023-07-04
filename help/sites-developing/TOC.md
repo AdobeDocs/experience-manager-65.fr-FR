@@ -42,7 +42,7 @@ ht-degree: 98%
    + [Bibliothèques de balises](taglib.md)
    + Modèles{#templates}
       + [Modèles](templates.md)
-      + [Modèles de pages – Modifiables ](page-templates-editable.md)
+      + [Modèles de pages – Modifiables](page-templates-editable.md)
       + [Modèles de page - Statiques](page-templates-static.md)
       + [Modèles de fragment de contenu](content-fragment-templates.md)
       + [Rendu de modèle adaptatif](templates-adaptive-rendering.md)
@@ -139,7 +139,7 @@ ht-degree: 98%
       + [API HTTP Assets](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/mac-api-assets.html?lang=fr)
       + [API REST de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/extending/assets-api-content-fragments.html?lang=fr)
       + [API GraphQL de fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
-      + [Gestion des points de fin GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
+      + [Gestion des points d’entrée GraphQL](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [Utilisation de l’IDE GraphiQL](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)
       + [Optimisation des requêtes GraphQL.](/help/sites-developing/headless/graphql-api/graphql-optimization.md)

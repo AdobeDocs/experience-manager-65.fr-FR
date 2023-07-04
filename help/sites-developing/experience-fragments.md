@@ -1,5 +1,5 @@
 ---
-title: Fragments d’expérience dans le développement AEM Sites
+title: Fragments d’expérience dans l’instance de développement d’AEM Sites
 description: Découvrez comment personnaliser les fragments d’expérience.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
@@ -12,7 +12,7 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
 source-wordcount: '1781'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -34,9 +34,9 @@ En l’absence de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`,
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
-Cette option est disponible à partir du navigateur, mais son Principal objectif est d’autoriser d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) à accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL.
+Même s’il est directement disponible dans le navigateur, son principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du fragment d’expérience à l’aide de l’URL uniquement.
 
-Le rendu en HTML brut ajoute le protocole, l’hôte et le chemin d’accès contextuel aux chemins suivants :
+Le rendu HTML brut ajoute le protocole, l’hôte et le chemin de contexte aux chemins suivants :
 
 * sont du type `src`, `href` ou `action` ;
 
@@ -48,7 +48,7 @@ Par exemple :
 
 >[!NOTE]
 >
->Les liens font toujours référence à l’instance de publication. Elles sont destinées à être utilisées par des tiers. Par conséquent, le lien sera toujours appelé à partir de l’instance de publication, et non de l’auteur.
+>Les liens font toujours référence à l’instance de publication. Ils sont destinés à être utilisés par des tiers. Par conséquent, le lien sera toujours appelé à partir de l’instance de publication, et non de l’instance de création.
 
 ![xf-14](assets/xf-14.png)
 
@@ -90,7 +90,7 @@ Pour ce faire, vous devez utiliser les propriétés suivantes :
 
    * `text`
 
-Les composants qui n’utilisent pas cette convention ne sont pas pris en compte.
+Les composants qui ne respectent pas cette convention ne sont pas pris en compte.
 
 ## Modèles de fragments d’expérience {#templates-for-experience-fragments}
 
@@ -109,11 +109,9 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
 
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
-Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments en tant que 
-propriété `cq:allowedTemplates` de ce dossier qui comprend tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
-
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
@@ -127,7 +125,7 @@ propriété `cq:allowedTemplates` de ce dossier qui comprend tous les modèles d
 
 Les [composants de développement](/help/sites-developing/components.md) à utiliser avec ou dans les fragments d’expérience sont conformes aux pratiques standard.
 
-La seule configuration supplémentaire consiste à s’assurer que les composants sont [autorisés sur ce modèle. Pour ce faire, la stratégie de contenu est utilisée](/help/sites-developing/page-templates-editable.md#content-policies).
+La seule configuration supplémentaire consiste à s’assurer que les composants sont [autorisés sur ce modèle. Pour ce faire, la politique de contenu est utilisée](/help/sites-developing/page-templates-editable.md#content-policies).
 
 ## Fournisseur de réécriture de liens de fragments d’expérience – HTML {#the-experience-fragment-link-rewriter-provider-html}
 
@@ -281,7 +279,7 @@ Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants 
 * Uniquement les attributs `href`
 
 * Pour un fragment d’expérience spécifique :
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Les autres fragments d’expérience transitant par le système Exporter vers Target sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
 
@@ -294,8 +292,7 @@ S’agissant de la variation du fragment d’expérience concernée par le proce
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-La 
-représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+Représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément HTML en cours de traitement.

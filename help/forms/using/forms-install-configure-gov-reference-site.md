@@ -11,7 +11,7 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
 source-wordcount: '4663'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -56,12 +56,12 @@ Le [package de démonstration AEM Forms We.Gov](https://experience.adobe.com/#/d
       * **core.wcm.components.all-2.0.4.zip** : *collection d’exemples de composants WCM.*
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** : *package de disposition Grille AEM Sites pour le contrôle des colonnes des pages Sites.*
+
    * **we-gov-forms.ui.content-&lt;version>.zip** : *contient l’ensemble du contenu, des pages, des images, des formulaires, des ressources de communication interactive, etc.*
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** : *contient toutes les données d’analyse de formulaires We.Gov à stocker dans le référentiel.*
 
    * **we-gov-forms.config.public-&lt;version>.zip** : *contient tous les nœuds de configuration par défaut, y compris les configurations cloud d’espace réservé, pour éviter les problèmes de modèle de données de formulaire et de liaison de service.*
-
 
 Les ressources incluses dans ce package sont les suivantes :
 
@@ -84,8 +84,8 @@ Cette section contient des informations sur l’installation du package de démo
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
-1. Dans le **[!UICONTROL Filtres]** section :
-   1. Sélectionner **[!UICONTROL Forms]** de la **[!UICONTROL Solution]** liste déroulante.
+1. Dans la section **[!UICONTROL Filtres]** :
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Appuyez sur le nom du package **we-gov-forms.pkg.all-&lt;version>.zip**, sélectionnez **[!UICONTROL Accepter les termes du contrat de licence utilisateur final]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
@@ -256,8 +256,8 @@ Cette section contient des détails et des instructions sur la configuration clo
       1. Portée de l’autorisation (**openid**)
       1. En-tête d’authentification (**porteur d’autorisation**)
       1. Ressource (par exemple `https://msdynamicsserver.api.crm3.dynamics.com`)
-   1. Cliquez sur « Connexion à OAuth ».
 
+   1. Cliquez sur « Connexion à OAuth ».
 
 1. Une fois l’authentification terminée, cliquez sur « Enregistrer et fermer » pour terminer l’intégration.
 
@@ -281,7 +281,7 @@ Les étapes détaillées dans cette section vous permettent de localiser l’ID 
 1. Pour localiser l’URL de ressource/l’URL racine du service, accédez au tableau de bord de l’instance MS Dynamics.
 1. Dans la barre de navigation supérieure, cliquez sur « Ventes » ou sur votre propre type d’instance, puis sur « Sélectionner les paramètres ».
 1. Cliquez sur « Personnalisations » et « Ressources pour les développeurs » en bas à droite.
-1. Vous y trouverez l’URL racine du service : e.g
+1. Vous y trouverez l’URL racine du service, par exemple :
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -311,9 +311,11 @@ Une fois la configuration du cloud terminée, vous pouvez tester le modèle de d
 1. Testez les services pour vérifier qu’ils se connectent à la source de données configurée.
 
    >[!NOTE]
+   >
    Une fois les services testés, cliquez sur **Annuler** pour vous assurer que les modifications involontaires ne sont pas propagées au modèle de données de formulaire.
 
    >[!NOTE]
+   >
    Un redémarrage du serveur AEM est nécessaire pour que la source de données soit correctement liée à FDM.
 
 #### Tester le modèle de données de formulaire (Derby) {#test-fdm-derby}
@@ -418,6 +420,7 @@ Les administrateurs peuvent accorder aux utilisateurs des autorisations AEM Anal
 #### Afficher les rapports sur les sites Adobe Analytics {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
+>
 Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration d’Adobe Analytics Cloud si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud principale.
 
 1. Accédez à *https://&lt;aemserver>:&lt;port>/sites.html/content*
@@ -446,6 +449,7 @@ Les données AEM Forms Analytics sont disponibles hors ligne ou sans configurati
 #### Afficher les rapports de formulaires Adobe Analytics {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
+>
 Les données AEM Forms Analytics sont disponibles hors ligne ou sans configuration Adobe Analytics Cloud si le package `we-gov-forms.ui.analytics-<version>.zip` est installé, mais les données AEM Sites nécessitent une configuration cloud active.
 
 1. Accédez à
@@ -492,6 +496,7 @@ Manager en haut à gauche > Outils > Sécurité > Configuration Adobe IMS.
 1. Ne procédez pas à la suite de la configuration. Consultez la section [Créer une intégration dans Adobe I/O](#create-integration-adobeio).
 
 >[!NOTE]
+>
 Le certificat créé dans cette section va être servir à créer le service d’intégration dans Adobe I/O. Une fois ceci fait, les utilisateurs peuvent utiliser ces informations depuis Adobe I/O pour terminer la configuration.
 
 #### Créer une intégration dans Adobe I/O {#create-integration-adobeio}
@@ -666,7 +671,7 @@ Ce site comprend également des bibliothèques clientes, dont l’une importe le
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/clientlibs/clientlib-base/css/bootstrap*
 
-Les modèles modifiables inclus dans ce package sont également préconfigurés avec des stratégies de modèle/page qui utilisent les classes CSS Bootstrap 4 pour la pagination, le style, etc. Toutes les classes n’ont pas été ajoutées aux stratégies de modèle, mais toute classe prise en charge par le Bootstrap 4 peut être ajoutée aux stratégies. Consultez la page de prise en main pour obtenir la liste des classes disponibles :
+Les modèles modifiables inclus dans ce package sont également préconfigurés avec des politiques de modèle/page qui utilisent les classes CSS Bootstrap 4 pour la pagination, le style, etc. Toutes les classes n’ont pas été ajoutées aux politiques de modèle, mais toute classe prise en charge par le Bootstrap 4 peut être ajoutée aux politiques. Consultez la page de prise en main pour obtenir la liste des classes disponibles :
 
 [https://getbootstrap.com/docs/4.1/getting-started/introduction/](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
@@ -738,7 +743,7 @@ Cette section contient des informations sur les fonctionnalités de démonstrati
 ### Considérations relatives aux démonstrations {#demo-considerations}
 
 * Conformément à l’AGRS-159, assurez-vous que le nom (prénom, deuxième prénom et nom de famille) du contact utilisé dans le formulaire adaptatif d’inscription est unique.
-* Le formulaire adaptatif d’inscription enverra le courrier électronique Adobe Sign à l’adresse électronique spécifiée dans le champ de courrier électronique du formulaire. Cette adresse électronique ne peut pas être la même que celle utilisée pour la configuration cloud d’Adobe Sign.
+* Le formulaire adaptatif d’inscription enverra l’e-mail Adobe Sign à l’adresse e-mail spécifiée dans le champ d’adresse e-mail du formulaire. Cette adresse électronique ne peut pas être la même que celle utilisée pour la configuration cloud d’Adobe Sign.
 
 ### Problèmes connus {#known-issues}
 
@@ -751,10 +756,10 @@ Cette section contient des informations sur les fonctionnalités de démonstrati
 
 Pour effectuer des tests d’accessibilité, installez le module externe Chrome disponible ici à l’adresse `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Une fois installé, chargez la page que vous souhaitez tester dans le navigateur Chrome (Remarque : L’ouverture de plusieurs onglets peut avoir une incidence sur votre score. Il est préférable de n’ouvrir qu’un seul onglet.) Une fois la page chargée
-**faites un clic droit** sur la page et sélectionnez l’onglet **Contrôles**. Les développeurs peuvent sélectionner le type de contrôle à effectuer par le plug-in Accessibilité. Une fois toutes les options sélectionnées, l’utilisateur peut cliquer sur le bouton Générer le rapport . Cela génère un document PDF qui indique la note globale d’accessibilité ainsi que ce qui peut être fait pour augmenter la note globale d’accessibilité.
+Une fois installé, chargez la page que vous souhaitez tester dans le navigateur Chrome. (Note : étant donné que l’ouverture de plusieurs onglets peut avoir une incidence sur votre score, il est préférable de n’ouvrir qu’un seul onglet). Une fois la page chargée
+**faites un clic droit** sur la page et sélectionnez l’onglet **Contrôles**. Les développeurs peuvent sélectionner le type de contrôle à effectuer par le plug-in Accessibilité. Une fois toutes les options sélectionnées, l’utilisateur ou l’utilisatrice peut cliquer sur le bouton Générer le rapport. Cela génère un document PDF qui indique la note globale d’accessibilité ainsi que ce qui peut être fait pour augmenter la note globale d’accessibilité.
 
-Une fois le rapport exécuté, les utilisateurs peuvent s’attendre à voir les éléments suivants :
+Une fois le rapport exécuté, les utilisateurs et utilisatrices peuvent s’attendre à voir les éléments suivants :
 
 ![Rapport d’accessibilité](assets/aftia-accessibility.jpg)
 
@@ -791,6 +796,7 @@ Pour les configurer afin qu’ils soient activés dans le workflow, les utilisat
 1. Ouvrez la définition de service et activez les services sélectionnés à appeler dans le workflow.
 
    >[!NOTE]
+   >
    Un utilisateur active le service dans la page Configuration Manager. Par conséquent, les utilisateurs doivent toujours configurer un service pour communiquer avec les services externes demandés.
 
    ![Package WeGov Forms](assets/aftia-configuration-options.jpg)

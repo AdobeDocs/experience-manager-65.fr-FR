@@ -13,7 +13,7 @@ exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
 source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
 source-wordcount: '431'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 65%
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 
-Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
+Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
 * [des applications sur une seule page ;](spa-walkthrough.md)
 * des applications mobiles natives ;
 * d’autres canaux et points de contact externes à AEM.
 
-Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez fournir des services de contenu à l’aide de l’exportateur JSON pour diffuser le contenu de n’importe quelle page AEM au format de modèle de données JSON. Cette méthode peut ensuite être utilisée par vos propres applications.
+Puisque les fragments de contenu utilisent du contenu structuré, vous pouvez fournir des services de contenu à l’aide de l’exportateur JSON pour diffuser le contenu de toute page AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
 >[!NOTE]
 >
@@ -35,47 +35,47 @@ Avec les fragments de contenu qui utilisent du contenu structuré, vous pouvez f
 
 ## Exportateur JSON avec les composants principaux des fragments de contenu {#json-exporter-with-content-fragment-core-components}
 
-À l’aide de l’exportateur JSON AEM, vous pouvez diffuser le contenu de n’importe quelle page AEM au format du modèle de données JSON. Cette méthode peut ensuite être utilisée par vos propres applications.
+Grâce à l’exportateur JSON AEM, vous pouvez diffuser le contenu des pages AEM au format du modèle de données JSON. Ce contenu peut ensuite être utilisé dans vos propres applications.
 
-Dans AEM, la diffusion est réalisée à l’aide du sélecteur . `model` et `.json` extension .
+Avec AEM, la diffusion s’effectue à l’aide du sélecteur `model` et de l’extension `.json`.
 
 `.model.json`
 
-1. Par exemple, une URL telle que :
+1. Par exemple, une URL telle que :
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. Diffuse du contenu tel que :
+1. Diffuse du contenu tel que :
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-Vous pouvez également diffuser le contenu d’un fragment de contenus structuré en le ciblant spécifiquement.
+Vous pouvez également diffuser le contenu d’un fragment de contenu structuré en le ciblant spécifiquement.
 
-Utilisez le chemin d’accès complet au fragment (au moyen de la fonction `jcr:content`); par exemple, avec un suffixe tel que .
+Utilisez le chemin d’accès complet au fragment (au moyen de la fonction `jcr:content`) ; par exemple, avec un suffixe tel que :
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
 Votre page peut contenir un fragment de contenu unique ou plusieurs composants de différents types. Vous pouvez également utiliser des mécanismes tels que des composants de liste pour rechercher automatiquement du contenu pertinent.
 
-* Par exemple, une URL telle que :
+* Par exemple, une URL telle que :
 
-   ```shell
-   http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
+  ```
 
-* Diffuse du contenu tel que :
+* Diffuse du contenu tel que :
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+  ![chlimage_1-193](assets/chlimage_1-193.png)
 
-   >[!NOTE]
-   >
-   >Vous pouvez [adapter vos propres composants](/help/sites-developing/json-exporter-components.md) pour accéder à ces données et les utiliser.
+  >[!NOTE]
+  >
+  >Vous pouvez [adapter vos propres composants](/help/sites-developing/json-exporter-components.md) pour accéder à ces données et les utiliser.
 
-   >[!NOTE]
-   >
-   >Bien qu’il ne s’agisse pas d’une implémentation standard, [plusieurs sélecteurs sont pris en charge,](json-exporter-components.md#multiple-selectors) mais `model` doit être le premier.
+  >[!NOTE]
+  >
+  >Bien qu’il ne s’agisse pas d’une implémentation standard, [plusieurs sélecteurs sont pris en charge,](json-exporter-components.md#multiple-selectors) mais `model` doit être le premier.
 
 ### Informations supplémentaires {#further-information}
 
@@ -89,7 +89,7 @@ Voir également :
 
    * [Modèles Sling – Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
-* AEM avec JSON :
+* AEM avec JSON :
 
    * [Obtention d’informations sur la page au format JSON](/help/sites-developing/pageinfo.md)
 
@@ -103,4 +103,4 @@ Pour plus d’informations, consultez les ressources suivantes :
 * [Création à l’aide de fragments de contenu](/help/sites-authoring/content-fragments.md)
 * [Activation de l’exportateur JSON pour un composant](/help/sites-developing/json-exporter-components.md)
 
-* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=fr)

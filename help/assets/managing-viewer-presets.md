@@ -15,7 +15,7 @@ exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
 source-wordcount: '4519'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -82,7 +82,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
  <tbody>
   <tr>
    <td><strong>Ensemble de carrousel</strong><br /> </td>
-   <td><p>Les zones sensibles ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Vous pouvez faire défiler les images vers la gauche ou la droite, puis cliquer sur une zone réactive ou sur une image pour obtenir des informations supplémentaires ou réaliser un achat directement depuis une page de catégorie, d’accueil ou d’entrée d’un site web.</p> </td>
+   <td><p>Les zones sensibles ou cliquables, ou les deux, sont ajoutées à une série de deux images ou plus. Vous pouvez faire défiler les images vers la gauche ou la droite, puis cliquer sur une zone réactive ou sur une image pour obtenir des informations supplémentaires ou réaliser un achat directement depuis une page de catégorie, d’accueil ou de destination d’un site web.</p> </td>
   </tr>
   <tr>
    <td><strong>Dimensionnel</strong><br /> </td>
@@ -102,11 +102,11 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
   </tr>
   <tr>
    <td><strong>Image interactive</strong></td>
-   <td>Des zones réactives sont ajoutées aux parties d’une image. Vous pouvez alors les sélectionnez pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages d’entrée, d’accueil ou de catégorie d’un site web.</td>
+   <td>Des zones réactives sont ajoutées aux parties d’une image. Vous pouvez alors les sélectionnez pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
   </tr>
   <tr>
    <td><strong>Vidéo interactive</strong></td>
-   <td>Des miniatures sont ajoutées aux segments de montage d’une vidéo. Le client peut alors la sélectionner pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages d’entrée, d’accueil ou de catégorie d’un site web.</td>
+   <td>Des miniatures sont ajoutées aux segments de montage d’une vidéo. Le client peut alors la sélectionner pour obtenir des détails supplémentaires ou pour réaliser directement un achat sur les pages de destination, d’accueil ou de catégorie d’un site web.</td>
   </tr>
   <tr>
    <td><strong>Supports variés</strong></td>
@@ -439,15 +439,16 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
    * Dans le menu déroulant **[!UICONTROL Type sélectionné]**, sélectionnez un composant dont vous souhaitez personnaliser la conception visuelle. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le sélectionner pour le configurer.
 
-      L’éditeur visuel vous permet de voir l’effet d’une propriété spécifique sur un style. Définissez ou modifiez une propriété pour immédiatement en visualiser l’effet sur la visionneuse en utilisant l’échantillon à la gauche de l’éditeur.
+     L’éditeur visuel vous permet de voir l’effet d’une propriété spécifique sur un style. Définissez ou modifiez une propriété pour immédiatement en visualiser l’effet sur la visionneuse en utilisant l’échantillon à la gauche de l’éditeur.
 
-      Les propriétés de style CSS de chaque type de paramètre prédéfini de visionneuse sont décrites dans la rubrique d’aide Personnalisation de la visionneuse *`<viewer name>`* dans le [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, si vous créez un paramètre prédéfini de visionneuse de type `Mixed_Media`, consultez [Personnalisation des visionneuses de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=fr) pour une liste et une description de chaque propriété.
+     Les propriétés de style CSS de chaque type de paramètre prédéfini de visionneuse sont décrites dans la rubrique d’aide Personnalisation de la visionneuse *`<viewer name>`* dans le [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, si vous créez un paramètre prédéfini de visionneuse de type `Mixed_Media`, consultez [Personnalisation des visionneuses de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=fr) pour une liste et une description de chaque propriété.
 
    * Si vous avez défini des paramètres de style dans un fichier CSS distinct, vous pouvez charger le fichier CSS dans AEM Assets. Sélectionnez **[!UICONTROL Importer CSS]** en dessous du menu déroulant **[!UICONTROL Type sélectionné]** (si nécessaire, faites défiler la page vers le haut pour le voir) afin de trouver le fichier CSS chargé et de l’associer aux paramètres prédéfinis de visionneuse.
 
-      Lorsque vous importez un fichier CSS, l’éditeur visuel vérifie que le CSS utilise des marqueurs de visionneuse adaptés. Si vous créez par exemple une visionneuse de zoom, toutes les règles CSS que vous importez doivent être définies à l’aide de son nom de classe de visionneuse `.s7mixedmediaviewer` défini sur un élément de visionneuse parent.
+     Lorsque vous importez un fichier CSS, l’éditeur visuel vérifie que le CSS utilise des marqueurs de visionneuse adaptés. Si vous créez par exemple une visionneuse de zoom, toutes les règles CSS que vous importez doivent être définies à l’aide de son nom de classe de visionneuse `.s7mixedmediaviewer` défini sur un élément de visionneuse parent.
 
-      Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, pour en savoir plus sur les marqueurs CSS de la visionneuse de zoom, reportez-vous à [Personnalisation de la visionneuse de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS reste fonctionnel.
+     Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, pour en savoir plus sur les marqueurs CSS de la visionneuse de zoom, reportez-vous à [Personnalisation de la visionneuse de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS reste fonctionnel.
+
    >[!NOTE]
    >
    >Si vous préférez modifier le CSS directement dans sa forme brute, sélectionnez **[!UICONTROL Afficher/masquer CSS]** sous le menu déroulant Type sélectionné (si nécessaire, faites défiler l’éditeur visuel pour le voir).
@@ -463,7 +464,7 @@ Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > 
 
    * **[!UICONTROL dash]** - Diffusion de vidéos en tant que dash uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner le type **[!UICONTROL hls]** à la place.
    * **[!UICONTROL hls]** - Diffusion de vidéos en tant que hsl uniquement.
-   * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe vous recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu sous la forme d’un tiret, d’un cadran ou d’une vidéo progressive, comme dans l’ordre de lecture suivant :
+   * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe vous recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu en tant que DASH, HLS ou progressives, comme dans l’exemple suivant :
       * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée en premier lieu.
       * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée, ensuite.
       * Si le navigateur ne prend en charge ni DASH ni HLS, la lecture progressive est utilisée en dernier lieu.
@@ -492,7 +493,7 @@ Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > 
 
    >[!IMPORTANT]
    >
-   >Pour les anciennes vidéos qui utilisent un profil de diffusion en continu à débit adaptatif, l’URL continue de fonctionner normalement (avec diffusion en continu HLS) jusqu’à ce que vous [retraitiez les ressources vidéo](/help/assets/processing-profiles.md#reprocessing-assets). Après le retraitement, la même URL continue de fonctionner, mais désormais avec *both* Diffusion en continu DASH et HLS activée.
+   >Pour les anciennes vidéos qui utilisent un profil de diffusion en continu à débit adaptatif, l’URL continue de fonctionner normalement (avec diffusion en continu HLS) jusqu’à ce que vous [retraitiez les ressources vidéo](/help/assets/processing-profiles.md#reprocessing-assets). Après le retraitement, la même URL continuera à fonctionner, mais en activant désormais *les deux types* de streaming DASH et HLS.
 
 ### Remarques spéciales sur la création d’un paramètre prédéfni de visionneuse interactive {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -552,7 +553,7 @@ En reprenant l’exemple du tableau ci-dessus, 30 secondes/3 sous-segments vid
 
 Lors de la création de paramètres prédéfinis de visionneuse de bannière de carrousel, le style des zones réactives est modifiable comme suit :
 
-|  | **Description** | **Actions** |
+| | **Description** | **Actions** |
 |---|---|---|
 | **[!UICONTROL Icône Zone réactive]** | Modification de l’icône utilisée pour la zone réactive | Pour modifier l’image de l’icône de zone réactive, dans l’onglet **[!UICONTROL Apparence]**, dans **[!UICONTROL Composant sélectionné]**, sélectionnez **[!UICONTROL ImageMapEffect]**. Sous **[!UICONTROL Icône]**, sélectionnez **[!UICONTROL Arrière-plan]** et naviguez dans le champ **[!UICONTROL Image]** jusqu’à trouver l’image souhaitée. |
 
