@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '731'
-ht-degree: 100%
+source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 97%
 
 ---
 
@@ -137,11 +137,11 @@ AEM e-commerce fournit :
    * Bons
    * et autres
 
-   ![](/help/sites-administering/assets/chlimage_1-130.png)
+  ![exemple de composants geometrixx](/help/sites-administering/assets/chlimage_1-130.png)
 
-   >[!NOTE]
-   >
-   >Le framework d’intégration fourni par AEM vous permet également de créer des composants AEM supplémentaires pour les fonctionnalités commerciales, indépendamment de votre moteur e-commerce spécifique.
+  >[!NOTE]
+  >
+  >Le framework d’intégration fourni par AEM vous permet également de créer des composants AEM supplémentaires pour les fonctionnalités commerciales, indépendamment de votre moteur e-commerce spécifique.
 
 * **Rechercher** avec :
 
@@ -150,28 +150,28 @@ AEM e-commerce fournit :
    * Une recherche tierce
    * Ou une combinaison de ces trois fonctions
 
-   ![](/help/sites-administering/assets/chlimage_1-131.png)
+  ![exemple de recherche](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Utilise les capacités d’AEM de **présenter du contenu sur plusieurs canaux**, qu’il s’agisse d’une fenêtre de navigateur ou d’un appareil mobile. Ainsi, vous proposez votre contenu au format adapté pour vos visiteurs.
 
-   ![](/help/sites-administering/assets/chlimage_1-132.png)
+  ![exemple de vue mobile](/help/sites-administering/assets/chlimage_1-132.png)
 
 * La possibilité de **développer votre propre mise en œuvre de l’intégration en fonction du [framework d’AEM eCommerce](#the-framework)**.
 
-   Les deux mises en œuvre actuellement disponibles reposent sur la même base et complètent l’API générale (la structure). La mise en œuvre d’une nouvelle intégration implique seulement de mettre en œuvre les fonctionnalités dont votre intégration a besoin. Les composants frontaux peuvent être utilisés par les nouvelles mises en œuvre puisqu’ils utilisent des interfaces (et sont donc indépendants de la mise en œuvre).
+  Les deux mises en œuvre actuellement disponibles reposent sur la même base et complètent l’API générale (la structure). La mise en œuvre d’une nouvelle intégration implique seulement de mettre en œuvre les fonctionnalités dont votre intégration a besoin. Les composants frontaux peuvent être utilisés par les nouvelles mises en œuvre puisqu’ils utilisent des interfaces (et sont donc indépendants de la mise en œuvre).
 
 * Possibilité de développer un **commerce axé sur l’expérience en fonction des données et de l’activité des acheteurs**, Vous pouvez ainsi réaliser de nombreux scénarios :
 
    * Par exemple, une réduction des frais de livraison proposée lorsque le montant total d’une commande dépasse un montant spécifique.
    * Autre exemple : la possibilité de proposer des offres à certaines occasions à partir des informations de profil (tel le lieu). Elles peuvent ensuite être mises en évidence, selon d’autres facteurs, le cas échéant.
 
-   Dans l’exemple ci-dessous, un teaser est affiché, car le contenu du panier est inférieur à 75 $ :
+  Dans l’exemple ci-dessous, un teaser est affiché, car le contenu du panier est inférieur à 75 $ :
 
-   ![](/help/sites-administering/assets/chlimage_1-133.png)
+  ![panier avec contexte client](/help/sites-administering/assets/chlimage_1-133.png)
 
-   Cela peut être modifié lorsque le contenu du panier est supérieur à 75 $ :
+  Cela peut être modifié lorsque le contenu du panier est supérieur à 75 $ :
 
-   ![](/help/sites-administering/assets/chlimage_1-134.png)
+  ![panier avec contexte client après modification](/help/sites-administering/assets/chlimage_1-134.png)
 
 * Et d’autres fonctionnalités, notamment :
 
