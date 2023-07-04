@@ -11,26 +11,26 @@ discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
 source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 # Lecteurs d’écran pour les formulaires HTML5 {#screen-readers-for-html-forms}
 
-Les composants de HTML5 forms génèrent un modèle de formulaire XFA au format HTML5. Tous les navigateurs standard prenant en charge HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire dans les formulaires PDF et HTML5, la mise en page des PDF forms est conservée dans les formulaires HTML5.
+Les composants de formulaires HTML5 rendent des modèles de formulaires XFA au format HTML5. Tous les navigateurs standard prenant en charge HTML5 peuvent générer ces formulaires. Pour prendre en charge une expérience de capture de données similaire dans les formulaires PDF et HTML5, la mise en page des formulaires PDF est conservée dans les formulaires HTML5.
 
 Les formulaires HTML5 utilisent des constructions HTML standard, ce qui permet d’utiliser les outils d’accessibilité usuels du format HTML avec ces formulaires. Si un formulaire est conçu selon les bonnes pratiques relatives aux formulaires accessibles, il fonctionne avec n’importe quel lecteur d’écran pris en charge. En outre, ces formulaires sont activés pour la navigation au clavier.
 
 ## Normes d’accessibilité {#accessibility-standards}
 
-Les formulaires HTML5 sont conformes à la section 508 pour l’accessibilité avec des exceptions connues. Voir [VPAT pour les formulaires HTML5](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) pour plus d’informations.
+Les formulaires HTML5 sont conformes à la section 508 concernant l’accessibilité avec des exceptions connues. Voir [VPAT pour les formulaires HTML5](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf) pour plus d’informations.
 
 ## Lecteurs d’écran certifiés pour les formulaires HTML5 {#certified-screen-readers-for-html-forms}
 
-* JAWS 14.0 sous Microsoft® Windows
-* Voix off sur macOS X et iPad
+* JAWS 14.0 sur Microsoft® Windows
+* VoiceOver sur macOS X et iPad
 
 ### JAWS {#jaws}
 
@@ -38,7 +38,7 @@ Toutes les combinaisons de touches et tous les raccourcis par défaut fonctionne
 
 ### Voix off {#voiceover}
 
-HTML5 prend en charge toutes les combinaisons de touches et tous les mouvements par défaut de la voix off. Pour plus d’informations sur la configuration et l’utilisation de VoiceOver, voir [https://www.apple.com/accessibility/vision/](https://www.apple.com/accessibility/vision/).
+HTML5 prend en charge toutes les combinaisons de touches et tous les mouvements par défaut de la voix off. Pour plus d’informations sur la configuration et l’utilisation de VoiceOver, consultez le site [https://www.apple.com/fr/accessibility/vision/](https://www.apple.com/fr/accessibility/vision/).
 
 ## Problèmes connus {#known-issues}
 
