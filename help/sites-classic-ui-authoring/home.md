@@ -5,7 +5,7 @@ description: Ce guide recouvre les concepts de création dans AEM dans l’inter
 seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '327'
 ht-degree: 100%
 
