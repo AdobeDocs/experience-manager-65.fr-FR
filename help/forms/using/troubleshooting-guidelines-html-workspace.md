@@ -1,7 +1,7 @@
 ---
-title: Conseils de dépannage pour l’espace de travail AEM Forms
+title: Conseils de dépannage pour l’espace de travail AEM Forms
 seo-title: Troubleshooting guidelines for AEM Forms workspace
-description: Activez les journaux et utilisez le débogueur dans le navigateur pour résoudre les problèmes liés à l’espace de travail AEM Forms.
+description: Activez les journaux et utilisez le débogueur dans le navigateur pour résoudre les problèmes liés à l’espace de travail AEM Forms.
 seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
 uuid: 07b8c8ed-f1ff-4be5-8005-251ff7b2ac85
 contentOwner: robhagat
@@ -11,23 +11,23 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
-# Conseils de dépannage pour l’espace de travail AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Conseils de dépannage pour l’espace de travail AEM Forms {#troubleshooting-guidelines-for-aem-forms-workspace}
 
-Cet article explique comment déboguer l’espace de travail AEM Forms en activant la journalisation et en utilisant le débogueur dans un navigateur. Il explique également certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de l’espace de travail AEM Forms et leurs solutions.
+Cet article explique comment déboguer l’espace de travail AEM Forms en activant la journalisation et en utilisant le débogueur dans un navigateur. Il décrit également certains problèmes courants que vous pouvez rencontrer lors de l’utilisation de l’espace de travail AEM Forms et leurs solutions.
 
-## Impossible d’installer le package de l’espace de travail AEM Forms {#unable-to-install-aem-forms-workspace-package}
+## Impossible d’installer le package de l’espace de travail AEM Forms {#unable-to-install-aem-forms-workspace-package}
 
-Après avoir installé le correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur « Aucune ressource trouvée », ouvrez le gestionnaire de packages CRX, puis réinstallez le package `adobe-lc-workspace-pkg-<version>.zip`.
+Une fois que vous avez installé le correctif, ouvrez l’espace de travail AEM Forms. Si vous rencontrez l’erreur « Aucune ressource trouvée », ouvrez le gestionnaire de packages CRX, puis réinstallez le package `adobe-lc-workspace-pkg-<version>.zip`.
 
 Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`, procédez comme suit :
 
-1. Connectez-vous à CRXDE Lite. L’URL par défaut est `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. Connectez-vous à CRXDE Lite. L’URL par défaut est `https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. Supprimez le nœud suivant :
 
    `/home/groups/P/PERM_WORKSPACE_USER`
@@ -36,9 +36,9 @@ Lors de l’installation du package, si vous rencontrez une erreur `javax.jcr.no
 1. Recherchez et installez le package `adobe-lc-workspace-pkg-[version].zip`.
 1. Redémarrez le serveur d’applications.
 
-## Journalisation de l’espace de travail AEM Forms {#aem-forms-workspace-nbsp-logging}
+## Journalisation de l’espace de travail AEM Forms {#aem-forms-workspace-nbsp-logging}
 
-Vous pouvez générer des journaux à différents niveaux pour la résolution optimale des erreurs. Par exemple, dans une application complexe, la journalisation au niveau du composant permet de déboguer et de résoudre les problèmes liés à des composants spécifiques.
+Vous pouvez générer des journaux à différents niveaux pour la résolution optimale des erreurs. Prenez l’exemple d’une application complexe. La journalisation au niveau du composant permet de déboguer et de résoudre les problèmes liés à des composants spécifiques.
 
 Dans l’espace de travail AEM Forms :
 
@@ -52,9 +52,9 @@ Dans l’espace de travail AEM Forms :
 >
 >Par défaut, le niveau de journal de tous les composants est défini sur INFO.
 
-* Le niveau de journal défini par l’utilisateur est conservé uniquement pour cette session de navigateur. Lorsque l’utilisateur actualise la page, le niveau de journal est défini sur sa valeur initiale pour tous les composants.
+* Le niveau de journal défini par l’utilisateur est conservé uniquement pour cette session de navigateur. Lorsque l’utilisateur ou l’utilisatrice actualise la page, le niveau de journal est défini sur sa valeur initiale pour tous les composants.
 
-### Liste des fichiers de composant dans l’espace de travail AEM Forms {#list-of-component-files-in-nbsp-aem-forms-workspace}
+### Liste des fichiers de composant dans l’espace de travail AEM Forms {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
 <table>
  <tbody>
@@ -141,7 +141,7 @@ Dans l’espace de travail AEM Forms :
  </tbody>
 </table>
 
-### Niveaux de journal disponibles dans l’espace de travail AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
+### Niveaux de journal disponibles dans l’espace de travail AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATAL
 * ERROR
@@ -155,42 +155,42 @@ Dans l’espace de travail AEM Forms :
 
 Les scripts et les styles peuvent être débogués dans différents navigateurs.
 
-* **Débogage dans IE**: Pour déboguer l’espace de travail AEM Forms dans IE, voir : [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **Débogage dans IE** : pour déboguer l’espace de travail AEM Forms dans IE, voir [https://learn.microsoft.com/fr-fr/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/fr-fr/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Débogage dans Chrome**: Pour ouvrir le débogueur dans Chrome, utilisez le raccourci : Ctrl+Maj+I. Pour plus d’informations, voir : [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **Débogage dans Chrome** : pour ouvrir le débogueur dans Chrome, utilisez le raccourci clavier Ctrl+Maj+I. Pour plus d’informations, consultez le lien [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Débogage dans Firefox** : plusieurs modules complémentaires sont disponibles pour déboguer des scripts et des styles dans Firefox. Par exemple, Firebug est un utilitaire de débogage de ce type ([https://getfirebug.com](https://getfirebug.com)).
 
 ## FAQ {#faqs}
 
-1. Le formulaire PDF n’est pas rendu ou envoyé dans Google Chrome.
+1. Le formulaire PDF n’est pas rendu ou envoyé dans Google Chrome.
 
-   1. Installez le module externe Adobe® Reader®.
-   1. Dans Chrome, ouvrez chrome://plugins pour afficher les modules externes disponibles.
-   1. Désactivez le module de visionneuse du PDF Chrome et activez le module externe Adobe Reader.
+   1. Installez le plug-in Adobe® Reader®.
+   1. Dans Chrome, ouvrez chrome://plugins pour afficher les plug-ins disponibles.
+   1. Désactivez le plug-in PDF Viewer de Chrome et activez le plug-in Adobe Reader.
 
-1. Le formulaire ou le guide du SWF n’est pas rendu dans Google Chrome.
+1. Le formulaire SWF ou le guide n’est pas rendu dans Google Chrome.
 
-   1. Dans Chrome, ouvrez chrome://plugins pour afficher les modules externes disponibles.
-   1. Voir les détails du module externe du lecteur Adobe Flash®.
-   1. Désactivez PepperFlash sous le plug-in Adobe Flash Player.
+   1. Dans Chrome, ouvrez chrome://plugins pour afficher les plug-ins disponibles.
+   1. Consultez les détails du plug-in Adobe Flash® Player.
+   1. Désactivez PepperFlash sous le plug-in Adobe Flash Player.
 
-1. J’ai personnalisé l’espace de travail AEM Forms, mais je ne parviens pas à voir les modifications.
+1. J’ai personnalisé l’espace de travail AEM Forms, mais je ne parviens pas à voir les modifications.
 
-   Effacez le cache de votre navigateur, puis accédez à l’espace de travail AEM Forms.
+   Effacez le cache de votre navigateur, puis accédez à l’espace de travail AEM Forms.
 
-1. Que doit faire l’utilisateur pour permettre le rendu du formulaire en HTML lorsqu’il est ouvert dans le bureau ?
+1. Que doit faire la personne utilisatrice pour permettre le rendu du formulaire en HTML lors de son ouverture dans le bureau ?
 
-   Sélectionnez le bouton radio HTML du profil par défaut à l’étape Affecter une tâche lors de l’utilisation de Workbench.
+   Sélectionnez le bouton radio HTML du profil par défaut, à l’étape Affecter une tâche, tout en utilisant Workbench.
 
 1. La pièce jointe ne s’affiche pas lorsque vous cliquez dessus.
 
    Pour afficher les pièces jointes, activez les fenêtres contextuelles dans votre navigateur.
 
-1. Un utilisateur est connecté à une application de formulaires. Si l’utilisateur tente de se connecter à l’espace de travail, il se peut qu’il ne se charge pas, si l’utilisateur ne dispose pas des autorisations d’espace de travail.
+1. Une personne utilisatrice est connectée à une application Forms. Si la personne utilisatrice tente de se connecter à l’espace de travail, il se peut que ce dernier ne se charge pas si la personne utilisatrice ne dispose pas des autorisations d’espace de travail.
 
-   Déconnectez-vous de l’autre application de formulaires, puis connectez-vous à l’espace de travail.
+   Déconnectez-vous de l’autre application Forms, puis connectez-vous à l’espace de travail.
 
-1. Lorsqu’ils sont rendus dans l’espace de travail AEM Forms, les formulaires de HTML, qui utilisent les propriétés de processus dans leur conception, affichent le bouton Envoyer à l’intérieur du formulaire.
+1. Lors du rendu des formulaires HTML dans l’espace de travail AEM Forms, qui utilisent les propriétés de processus dans leur conception, le bouton Envoyer s’affiche à l’intérieur du formulaire.
 
-   Lors de la conception de formulaires, lorsque vous utilisez Propriétés du processus, un bouton Envoyer est ajouté à l’intérieur du formulaire. Lorsqu’il est rendu en tant que PDF dans l’espace de travail AEM Forms, le bouton Envoyer n’est pas visible par l’utilisateur final. Cependant, lors du rendu en tant que formulaire de HTML dans l’espace de travail AEM Forms, le bouton Envoyer est visible par l’utilisateur final. Le fait de cliquer sur ce bouton Envoyer à l’intérieur du formulaire ne déclenche aucune action. Cliquez sur le bouton Envoyer au bas de l’espace de travail AEM Forms, en dehors du formulaire, pour terminer la tâche.
+   Lorsque vous utilisez les propriétés du processus pendant la conception de formulaires, un bouton Envoyer est ajouté à l’intérieur du formulaire. Lorsqu’il est rendu en tant que fichier PDF dans l’espace de travail AEM Forms, le bouton Envoyer n’est pas visible par la personne utilisatrice finale. Cependant, lors du rendu en tant que formulaire HTML dans l’espace de travail AEM Forms, le bouton Envoyer est visible par la personne utilisatrice finale. Si vous cliquez sur ce bouton Envoyer à l’intérieur du formulaire, rien ne se passe. Cliquez sur le bouton Envoyer au bas de l’espace de travail AEM Forms, en dehors du formulaire, pour terminer la tâche.
