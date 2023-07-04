@@ -1,11 +1,11 @@
 ---
-title: Compression et décompression de fichiers à l’aide d’un DSC personnalisé d’AEM Forms on JEE
-description: Découvrez comment compresser et décompresser des fichiers à l’aide d’un DSC personnalisé d’AEM Forms on JEE
+title: Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE
+description: Découvrez comment compresser et décompresser des fichiers à l’aide d’un DSC personnalisé d’AEM Forms sur JEE.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '485'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
