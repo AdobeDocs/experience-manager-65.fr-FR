@@ -1,7 +1,7 @@
 ---
 title: Consoles Outils
 seo-title: Tools Consoles
-description: Découvrez les différentes consoles d’outils dans AEM.
+description: Découvrez les différentes consoles Outils dans AEM.
 seo-description: Learn about the different tools consoles throughout AEM.
 uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
@@ -12,15 +12,15 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Consoles Outils {#tools-consoles}
 
-Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Il existe actuellement deux versions du **Outils** console en fonction de l’interface utilisateur que vous utilisez :
+Les consoles **Outils** permettent d’accéder à différents outils spécialisés pour administrer des sites web, des ressources numériques et d’autres aspects du référentiel de contenu. Il existe actuellement deux versions de la console **Outils** en fonction de l’interface utilisateur que vous utilisez :
 
 * [Outils – IU optimisée pour les écrans tactiles](#tools-touch-optimized-ui)
 * [Outils – IU classique](#tools-classic-ui)
@@ -33,7 +33,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
 
 >[!NOTE]
 >
->Comme les cartes de l’interface utilisateur fournissent des détails sur l’objectif de chaque option, ce tableau fournit simplement une référence rapide quant à l’emplacement des fonctionnalités dans l’arborescence.
+>De même que les cartes de l’interface utilisateur fournissent des détails sur la fonction de chaque option, ce tableau fournit simplement une référence rapide quant à l’emplacement des fonctionnalités dans le panneau Outils.
 
 <table>
  <tbody>
@@ -355,7 +355,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td> </td>
-   <td>Modes d'expédition</td>
+   <td>Modes d’expédition</td>
   </tr>
  </tbody>
 </table>
@@ -369,7 +369,7 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
    <th>Objectif</th>
   </tr>
   <tr>
-   <td>Centre de contrôle MSM</td>
+   <td>MSM Control Center</td>
    <td>Point centralisé pour la gestion de vos multiples sites.</td>
   </tr>
   <tr>
@@ -378,11 +378,11 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Configuration des services cloud<br /> </td>
-   <td>Contient des configurations liées à l’intégration à Adobe Marketing Cloud.</td>
+   <td>Contient des configurations liées à l’intégration à Adobe Marketing Cloud.</td>
   </tr>
   <tr>
-   <td>Paramètres du cloud<br /> </td>
-   <td>Paramètres de Configuration Manager.</td>
+   <td>Paramètres cloud<br /> </td>
+   <td>Paramètres de Configuration Manager.</td>
   </tr>
   <tr>
    <td>Commerce</td>
@@ -394,15 +394,15 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Tableaux de bord</td>
-   <td>Permet de créer des tableaux de bord de rapports ; ils offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td>
+   <td>Permet de créer des tableaux de bord de rapports. Ces derniers offrent un moyen personnalisable de définir des pages qui affichent des données consolidées.</td>
   </tr>
   <tr>
    <td>Documentation personnalisée</td>
-   <td>Utilisé lors de l’extension de la documentation et de l’aide en ligne.</td>
+   <td>Utilisé lors de l’optimisation de la documentation et de l’aide en ligne.</td>
   </tr>
   <tr>
    <td>fd</td>
-   <td>Aucune principale fonctionnalité liée à cette entrée.</td>
+   <td>Aucune fonctionnalité active liée à cette entrée.</td>
   </tr>
   <tr>
    <td>Envois de formulaire</td>
@@ -426,31 +426,31 @@ Les consoles **Outils** permettent d’accéder à différents outils spécialis
   </tr>
   <tr>
    <td>Réplication - Agents de réplication</td>
-   <td>Utilisé pour répliquer les données de l’auteur à publier lors de la publication de pages ou avec la réplication inverse pour renvoyer les commentaires des utilisateurs de l’environnement de publication à l’auteur.</td>
+   <td>Utilisés pour répliquer les données de l’environnement de création à l’environnement de publication lors de la publication des pages ou avec la réplication inverse pour renvoyer à l’environnement de création les commentaires des utilisateurs et utilisatrices à partir de l’environnement de publication.</td>
   </tr>
   <tr>
    <td>Rapports</td>
-   <td>AEM fournit toute une gamme de rapports personnalisés, vous permet de créer des rapports personnalisés et/ou de développer vos propres rapports.</td>
+   <td>AEM fournit toute une gamme de rapports personnalisés, vous permettant de créer des rapports personnalisés et/ou de développer vos propres rapports.</td>
   </tr>
   <tr>
    <td>Génération de modèles automatique de page par défaut</td>
-   <td>Avec la génération de modèles automatique, vous pouvez créer un formulaire (un modèle automatique) avec des champs qui reflètent la structure souhaitée pour vos pages, puis utiliser ce formulaire pour créer facilement des pages en fonction de cette structure.</td>
+   <td>Grâce à la fonction de génération de modèles automatique, vous pouvez créer un formulaire (un modèle) avec des champs qui reflètent la structure que vous souhaitez pour vos pages, puis utiliser ce formulaire pour créer facilement des pages basées sur cette structure.</td>
   </tr>
   <tr>
    <td>Sécurité – Configuration en libre-service </td>
-   <td>Permet de configurer les courriers électroniques que les utilisateurs reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et de confirmer qu’un mot de passe a été réinitialisé.</td>
+   <td>Permet de configurer les e-mails que les utilisateurs et utilisatrices reçoivent automatiquement lorsqu’ils créent un compte ou réinitialisent un mot de passe et de confirmer qu’un mot de passe a été réinitialisé.</td>
   </tr>
   <tr>
    <td>Segmentation</td>
-   <td>Les visiteurs du site ont des intérêts et des objectifs différents lorsqu’ils se rendent sur un site. Comprendre ces objectifs et répondre aux attentes est un facteur de réussite important pour le marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur ou la visiteuse.<br /> </td>
+   <td>Les visiteurs et visiteuses de site se rendent sur un site en fonction d’intérêts et d’objectifs divers. La compréhension des objectifs et la satisfaction des attentes des visiteurs et visiteuses est un important facteur de réussite en matière de marketing en ligne. La segmentation permet d’y parvenir en analysant et en profilant le visiteur ou la visiteuse.<br /> </td>
   </tr>
   <tr>
-   <td>clients</td>
-   <td>Aucune principale fonctionnalité liée à cette entrée.</td>
+   <td>clientes et clients</td>
+   <td>Aucune fonctionnalité active liée à cette entrée.</td>
   </tr>
   <tr>
    <td>truststore</td>
-   <td>Aucune principale fonctionnalité liée à cette entrée.</td>
+   <td>Aucune fonctionnalité active liée à cette entrée.</td>
   </tr>
   <tr>
    <td>Contrôle de version - Purger les versions</td>
