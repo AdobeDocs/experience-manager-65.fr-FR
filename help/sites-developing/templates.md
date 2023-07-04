@@ -1,6 +1,6 @@
 ---
 title: Modèles
-description: Les modèles sont utilisés lors de la création d’une page qui sert de base à la nouvelle page.
+description: Les modèles sont utilisés lors de la création d’une page qui servira de base à la nouvelle page.
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +10,19 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 # Modèles{#templates}
 
-Les modèles sont utilisés à divers endroits dans AEM :
+Les modèles sont souvent utilisés dans AEM :
 
-* [Lorsque vous créez une page, vous sélectionnez un modèle.](#templates-pages). Ce modèle sert de base à la nouvelle page. Le modèle définit la structure de la page, tout contenu initial et le [components](/help/sites-authoring/default-components.md) qui peut être utilisé (propriétés de conception).
+* [Lorsque vous créez une page, vous sélectionnez un modèle](#templates-pages). Ce modèle est utilisé comme base pour la nouvelle page. Le modèle définit la structure de la page, le contenu initial et les [composants](/help/sites-authoring/default-components.md) qui peuvent être utilisés (propriétés de conception).
 
-* [Lorsque vous créez un fragment de contenu, vous sélectionnez également un modèle.](#templates-content-fragments). Ce modèle définit la structure, les éléments initiaux et les variations.
+* [Lorsque vous créez un fragment de contenu, vous sélectionnez également un modèle](#templates-content-fragments). Ce modèle définit la structure, les éléments initiaux et les variations.
 
 Les modèles suivants sont décrits en détail :
 
@@ -33,44 +33,44 @@ Les modèles suivants sont décrits en détail :
 
 ## Modèles - Pages {#templates-pages}
 
-AEM propose désormais deux types de modèles de base pour la création de pages :
+AEM propose désormais deux types de modèles de base pour la création de pages :
 
 >[!NOTE]
 >
->Lors de l’utilisation d’un modèle pour [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), il n’y a aucune différence visible (pour l’auteur de la page) et aucune indication du type de modèle utilisé.
+>Lorsque vous utilisez un modèle pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page), il n’y a pas de différence visible (dans la page de création) et aucune indication du type de modèle utilisé.
 
 ### Modèles modifiables {#editable-templates}
 
 Les modèles modifiables font aujourd’hui partie des bonnes pratiques de développement avec AEM.
 
-Les avantages des modèles modifiables :
+Les avantages des modèles modifiables sont les suivants :
 
-* Peut être [created](/help/sites-authoring/templates.md#creating-a-new-template-template-author) et [modifié](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) par vos auteurs.
+* ils peuvent être [créés](/help/sites-authoring/templates.md#creating-a-new-template-template-author) et [modifiés](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) par vos auteurs et autrices.
 
-* Ont été introduites pour vous permettre de définir les éléments suivants pour toutes les pages créées avec le modèle :
+* ils permettent de définir les éléments suivants, et ce pour toutes les pages créées avec le modèle :
 
-   * la structure
-   * le contenu initial
-   * stratégies de contenu
+   * la structure ;
+   * le contenu initial ;
+   * les politiques de contenu.
 
-* Une fois la nouvelle page créée, une connexion dynamique est conservée entre la page et le modèle. Ce lien signifie que les modifications apportées à la structure du modèle sont répercutées sur toutes les pages créées avec ce modèle ; les modifications apportées au contenu initial ne sont pas répercutées.
+* Une fois la page créée, une connexion dynamique est conservée entre la page et le modèle. Ce lien signifie que les modifications apportées à la structure du modèle sont reflétées sur toutes les pages créées avec ce modèle. Les modifications apportées au contenu initial ne sont pas reflétées.
 * Utilisent des stratégies de contenu (modifiés à partir de l’éditeur de modèles) pour conserver les propriétés de conception (n’utilise pas le mode Conception dans l’éditeur de page).
 * Sont stockés sous `/conf`.
-* Consultez les [Modèles modifiables](/help/sites-developing/page-templates-editable.md) pour plus d’informations. 
+* Consultez les [Modèles modifiables](/help/sites-developing/page-templates-editable.md) pour plus d’informations.
 
 >[!NOTE]
 >
->Voir [Utilisation de modèles de page modifiables pour développer un site de Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
+>Consultez la section [Utiliser les modèles de page modifiables pour développer un site Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=fr).
 
 ### Modèles statiques {#static-templates}
 
 Modèles statiques :
 
-* Doit être défini et configuré par vos développeurs.
-* Système de création de modèles d’AEM disponible pour de nombreuses versions.
-* Un modèle statique est une hiérarchie de noeuds ayant la même structure que la page à créer, mais sans contenu réel.
-* sont copiés pour créer la page ; aucune connexion dynamique n’existe par la suite.
-* Utilisations [Mode de conception](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
+* ils doivent être définis et configurés par vos développeurs et développeuses.
+* Le système de création de modèles d’AEM d’origine, disponible depuis de nombreuses versions.
+* Un modèle statique est une hiérarchie de nœuds ayant la même structure que la page à créer, mais sans contenu réel.
+* Ils sont copiés pour créer la page, aucune connexion dynamique n’existe par la suite.
+* Ils utilisent le [Mode de conception](/help/sites-authoring/default-components-designmode.md) pour conserver les propriétés de conception.
 * Sont stockés sous `/apps`.
 * Consultez les [Modèles statiques](/help/sites-developing/page-templates-static.md) pour plus d’informations.
 
@@ -84,7 +84,7 @@ Modèles statiques :
 
 >[!CAUTION]
 >
->AEM offre plusieurs propriétés pour contrôler les modèles autorisés sous **Sites**. Cependant, leur combinaison peut conduire à des règles complexes difficiles à suivre et à gérer.
+>AEM offre plusieurs propriétés pour contrôler les modèles autorisés sous **Sites**. Cependant, leur combinaison peut conduire à des règles très complexes, difficiles à suivre et à gérer.
 >
 >Par conséquent, Adobe vous recommande de commencer simplement, en définissant :
 >
@@ -94,13 +94,13 @@ Modèles statiques :
 >
 >Pour consulter un exemple, reportez-vous à la section We.Retail : `/content/we-retail/jcr:content`
 >
->Les propriétés `allowedPaths`, `allowedParents` et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, le *many* plus simple à définir `cq:allowedTemplates` propriétés des sous-sections du site si des restrictions supplémentaires des modèles autorisés s’imposent.
+>Les propriétés `allowedPaths`, `allowedParents` et `allowedChildren` peuvent également être placées sur les modèles pour définir des règles plus élaborées. Cependant, dans la mesure du possible, il est *beaucoup* plus simple de définir d’autres propriétés `cq:allowedTemplates` dans des sous-sections du site si des restrictions supplémentaires des modèles autorisés s’imposent.
 >
->Un autre avantage est que la variable `cq:allowedTemplates` Les propriétés peuvent être mises à jour par un auteur dans la variable **Avancé** de l’onglet **Propriétés de la page**. Les autres propriétés de modèle ne peuvent pas être mises à jour à l’aide de l’interface utilisateur (standard). Il faudrait donc qu’un développeur conserve les règles et qu’un déploiement du code soit effectué pour chaque modification.
+>Un autre avantage est que les propriétés `cq:allowedTemplates` peuvent être mises à jour par un auteur ou une autrice dans l’onglet **Avancé** des **Propriétés de la page**. Les autres propriétés de modèle ne peuvent pas être mises à jour à l’aide de l’interface utilisateur (standard). Il faudrait donc qu’un développeur ou une développeuse conserve les règles et qu’un déploiement du code soit effectué pour chaque modification.
 
 Lors de la création d’une page dans l’interface d’administration du site, la liste des modèles disponibles dépend de l’emplacement de la nouvelle page et des restrictions d’emplacement spécifiées dans chaque modèle.
 
-Les propriétés suivantes déterminent si un modèle `T` est utilisé pour qu’une nouvelle page soit placée en tant qu’enfant de la page. `P`. Chacune de ces propriétés est une chaîne à valeurs multiples contenant aucune ou plusieurs expressions régulières utilisées pour la correspondance avec les chemins :
+Les propriétés suivantes déterminent si un modèle `T` peut être utilisé pour qu’une nouvelle page soit placée en tant qu’enfant de la page `P`. Chacune de ces propriétés est une chaîne à valeurs multiples contenant aucune ou plusieurs expressions régulières utilisées pour la correspondance avec les chemins :
 
 * La propriété `cq:allowedTemplates` du sous-nœud `jcr:content` de `P` ou un ancêtre de `P`.
 
@@ -134,8 +134,8 @@ Pour limiter les modèles servant à créer des pages enfants sous une page donn
 
 Vous pouvez appliquer la propriété `cq:allowedTemplates` sur le nœud `jcr:content` du modèle pour que cette configuration soit appliquée à toutes les pages nouvellement créées qui utilisent ce modèle.
 
-Si vous souhaitez ajouter d’autres contraintes, par exemple, concernant la hiérarchie des modèles, vous pouvez utiliser la variable `allowedParents/allowedChildren` sur le modèle. Vous pouvez ensuite spécifier explicitement que les pages créées à partir d’un modèle T doivent être des parents/enfants de pages créées à partir d’un modèle T.
+Si vous souhaitez ajouter d’autres contraintes, par exemple concernant la hiérarchie des modèles, vous pouvez appliquer les propriétés `allowedParents/allowedChildren` sur le modèle. Vous pouvez ensuite spécifier explicitement que les pages créées à partir d’un modèle T doivent être des parents/enfants de pages créées à partir d’un modèle T.
 
 ## Modèles - Fragments de contenu {#templates-content-fragments}
 
-Voir [Modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md).
+Voir [Modèles de fragments de contenu](/help/sites-developing/content-fragment-templates.md).
