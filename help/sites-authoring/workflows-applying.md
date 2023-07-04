@@ -1,5 +1,5 @@
 ---
-title: Application de workflows aux pages de contenu
+title: Appliquer des workflows aux pages de contenu
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
@@ -10,13 +10,13 @@ discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '649'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# Application de workflows aux pages{#applying-workflows-to-pages}
+# Appliquer des workflows aux pages{#applying-workflows-to-pages}
 
 Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 
@@ -24,10 +24,10 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 
 * Le workflow à appliquer.
 Vous pouvez appliquer n’importe quel workflow (auquel vous avez accès, selon les affectations réalisées par votre administrateur AEM).
-* Éventuellement, un titre qui permet d’identifier l’instance de workflow dans la boîte de réception d’un utilisateur.
-* la charge utile du workflow ; il peut s’agir d’une ou de plusieurs pages.
+* Éventuellement, un titre qui permet d’identifier l’instance de workflow dans la boîte de réception d’une personne utilisatrice.
+* La payload du workflow. Il peut s’agir d’une ou de plusieurs pages.
 
-Les workflows peuvent être démarrés à partir des éléments suivants :
+Les workflows peuvent être démarrés à partir des interfaces suivantes :
 
 * [via la console Sites](#starting-a-workflow-from-the-sites-console).
 * [lors de la modification d’une page, via Informations sur la page](#starting-a-workflow-from-the-page-editor).
@@ -43,7 +43,7 @@ Les workflows peuvent être démarrés à partir des éléments suivants :
 
 >[!NOTE]
 >
->AEM administrateurs peuvent [démarrer des workflows à l’aide de plusieurs autres méthodes ;](/help/sites-administering/workflows-starting.md).
+>L’administration AEM [dispose de nombreuses méthodes pour démarrer des workflows](/help/sites-administering/workflows-starting.md).
 
 ## Démarrage d’un workflow à partir de la console Sites {#starting-a-workflow-from-the-sites-console}
 
@@ -52,9 +52,9 @@ Vous pouvez démarrer un workflow des deux manières suivantes :
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Dans les deux cas, vous devrez :
+Dans les deux cas, vous devez :
 
-* [Spécification des détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [indiquer les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Démarrage d’un workflow à partir de la barre d’outils Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -81,28 +81,28 @@ Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la re
 
 ### Spécification des détails du workflow dans l’assistant Créer un workflow {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-Le **Créer un workflow** L’assistant vous aidera à sélectionner le workflow et à spécifier les détails requis.
+L’assistant **Créer un workflow** vous aide à sélectionner le workflow et à indiquer les détails requis.
 
-Après avoir ouvert la **Créer un workflow** à partir de l’un des éléments suivants :
+Ouvrez l’assistant **Créer un workflow** de l’une des manières suivantes :
 
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Vous pouvez spécifier les détails suivants :
+Indiquez les détails suivants :
 
-1. Dans le **Propriétés** , les options de base du workflow sont définies :
+1. L’étape **Propriétés** permet de définir les options de base du workflow :
 
    * **Modèle de workflow**
    * **Titre du workflow**
 
-      * Vous pouvez spécifier un titre pour cette instance afin de l’identifier ultérieurement.
+      * Vous pouvez donner un titre à l’instance afin de l’identifier plus tard.
 
-   Selon le modèle de workflow, les options suivantes sont également disponibles. Ils permettent de conserver le module créé en tant que charge utile une fois le workflow terminé.
+   Selon le modèle de workflow, les options suivantes sont également disponibles. Elles permettent de conserver le package créé en tant que payload une fois le workflow terminé.
 
-   * **Conserver le module de processus**
-   * **Titre de module**
+   * **Conserver le package de workflow**
+   * **Titre de package**
 
-      * Pour faciliter l’identification, vous pouvez spécifier un titre pour le module.
+      * Donnez un titre au package afin de l’identifier plus tard.
    >[!NOTE]
    >
    >L’option **Conserver le package de workflow** est disponible lorsque le workflow a été configuré pour la [prise en charge multi-ressource](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) et que plusieurs ressources ont été sélectionnées.
@@ -138,6 +138,6 @@ Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection s
 
 ## Démarrage d’un workflow à partir de l’éditeur de page {#starting-a-workflow-from-the-page-editor}
 
-Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant comporte l’option . **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
+Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
 ![wf-54](assets/wf-54.png)
