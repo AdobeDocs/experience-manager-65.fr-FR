@@ -1,6 +1,6 @@
 ---
 title: Votre boîte de réception pour gérer les tâches
-description: Gestion de vos tâches avec la boîte de réception.
+description: Gérez vos tâches avec la boîte de réception.
 uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,34 +9,34 @@ content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1143'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
 # Votre boîte de réception{#your-inbox}
 
-Vous pouvez recevoir des notifications de différentes zones d’AEM, y compris des workflows et des projets ; par exemple, à propos de :
+Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris des workflows et des projets, par exemple sur des :
 
 * Tâches :
 
-   * elles peuvent également être créées à différents endroits de l’interface utilisateur d’AEM, par exemple, sous **Projets**,
-   * ils peuvent être le produit d’un workflow **Créer une tâche** ou **Créer une tâche de projet** étape .
+   * Elles peuvent également être créées à différents endroits de l’interface utilisateur d’AEM (par exemple, sous **Projets**).
+   * Elles peuvent être le produit de l’étape **Créer une tâche** ou **Créer une tâche de projet** d’un workflow.
 
 * Workflows :
 
-   * les tâches qui représentent les actions que vous devez effectuer sur le contenu de la page ;
+   * Éléments de travail correspondant à des actions que vous devez effectuer sur le contenu de la page.
 
-      * ils sont le produit du workflow **Participant** étapes
-   * éléments d’échec, pour permettre aux administrateurs de relancer l’étape ayant échoué.
+      * Ils sont le produit des étapes **Participant** du workflow.
+   * Éléments d’échec, pour permettre aux administrateurs et administratrices d’effectuer à nouveau l’étape qui a échoué.
 
 
-Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et agir.
+Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et prendre des mesures.
 
 >[!NOTE]
 >
->L’AEM d’usine est préchargée avec des tâches administratives affectées au groupe d’utilisateurs administrateurs. Voir [Tâches administratives prêtes à l’emploi](#out-of-the-box-administrative-tasks) pour plus d’informations.
+>Prêt à l’emploi, AEM est préchargé avec des tâches administratives affectées au groupe d’administrateurs et administratrices. Voir [Tâches administratives prêtes à l’emploi](#out-of-the-box-administrative-tasks) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
 
-Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide à la ou aux pages nécessitant une ou plusieurs actions ou un accès à la boîte de réception :
+Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide aux pages nécessitant des actions ou un accès à la boîte de réception :
 
 ![wf-80](assets/wf-80.png)
 
@@ -61,7 +61,7 @@ Dans les deux consoles, le nombre actuel d’éléments présents dans votre bo�
 
 ## Tâches administratives prêtes à l’emploi  {#out-of-the-box-administrative-tasks}
 
-L’AEM d’usine est préchargée avec quatre tâches affectées au groupe d’utilisateurs administrateurs.
+Prêt à l’emploi, AEM est préchargé avec quatre tâches affectées au groupe d’administrateurs et administratrices.
 
 * [Configurer Analytics et Targeting](/help/sites-administering/opt-in.md)
 * [Appliquer la liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md)
@@ -77,7 +77,7 @@ Pour ouvrir la boîte de réception des notifications AEM :
 1. Sélectionnez **Afficher tout**. La **boîte de réception AEM** s’ouvre. La boîte de réception affiche les éléments des workflows, des projets et des tâches.
 1. La vue par défaut est [Liste](#inbox-list-view), mais vous pouvez également passer à la vue [Calendrier](#inbox-calendar-view). Pour ce faire, utilisez le sélecteur de vue (barre d’outils, en haut à droite).
 
-   Pour les deux vues, vous pouvez également définir [Paramètres d’affichage](#inbox-view-settings); les options disponibles dépendent de la vue actuelle.
+   Vous pouvez également définir les [paramètres d’affichage](#inbox-view-settings) pour ces deux vues. Les options disponibles dépendent de l’affichage actuel.
 
    ![wf-79](assets/inbox-list-view.png)
 
@@ -87,36 +87,36 @@ Pour ouvrir la boîte de réception des notifications AEM :
 
 ### Boîte de réception – Vue Liste {#inbox-list-view}
 
-Cette vue répertorie tous les éléments, ainsi que les principales informations pertinentes :
+Cette vue affiche tous les éléments, ainsi que des informations importantes :
 
 ![wf-82](assets/wf-82.png)
 
 ### Boîte de réception – Mode Calendrier {#inbox-calendar-view}
 
-Ce mode présente les éléments en fonction de leur position dans le calendrier et de la vue précise que vous avez sélectionnée :
+Cette vue présente les éléments en fonction de leur position dans le calendrier et de la vue précise que vous avez sélectionnée :
 
 ![wf-93](assets/wf-93.png)
 
 Vous pouvez :
 
-* sélectionner une vue spécifique ; **Chronologie**, **Colonne**, **Liste**
+* sélectionner une vue spécifique (**Chronologie**, **Colonne**, **Liste**) ;
 
-* spécifier les tâches à afficher en fonction de **Planification**; **Tous**, **Planifié**, **En cours**, **Échéance proche**, **Échéance passée**
+* spécifier les tâches à afficher selon **Planning** : **Tous**, **Prévus**, **En cours**, **Échéance proche** et **Échéance dépassée** ;
 
-* descendre dans la hiérarchie pour obtenir des informations plus détaillées sur un élément ;
-* sélectionnez une période pour cibler la vue :
+* analyser en profondeur pour obtenir plus d’informations sur un élément ;
+* sélectionner une période sur laquelle cibler la vue :
 
 ![wf-91](assets/wf-91.png)
 
 ### Boîte de réception - Paramètres {#inbox-view-settings}
 
-Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres :
+Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres :
 
 * **Vue Calendrier**
 
-   Pour **Vue Calendrier** vous pouvez configurer les éléments suivants :
+   Pour la **vue Calendrier**, vous pouvez configurer les éléments suivants :
 
-   * **Group by**
+   * **Regrouper par**
    * **Planification** ou **Aucun**
    * **Taille des cartes**
 
@@ -124,7 +124,7 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
 
 * **Vue Liste**
 
-   Pour **Mode Liste** vous pouvez configurer le mécanisme de tri :
+   Pour la **vue Liste**, vous pouvez configurer le mécanisme de tri :
 
    * **Champ de tri**
    * **Ordre de tri**
@@ -168,19 +168,19 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 >Bien qu’il soit possible de sélectionner plusieurs éléments, des actions ne peuvent être entreprises que sur un seul élément à la fois.
 
 
-1. Pour agir sur un élément, sélectionnez la miniature de l’élément approprié. Les icônes des actions applicables à cet élément s’affichent dans la barre d’outils :
+1. Pour agir sur un élément, sélectionnez la miniature de l’élément approprié. Les icônes des actions applicables à cet élément s’affichent dans la barre d’outils :
 
    ![wf-84](assets/wf-84.png)
 
    Les actions disponibles varient selon l’élément et incluent les opérations suivantes :
 
    * **Terminer** l’action ; par exemple une tâche ou un élément de workflow.
-   * **Réaffecter**/**Déléguer** un élément .
-   * **Ouvrir** un article ; selon le type d’élément , cette action peut :
+   * **Réaffecter**/**Déléguer** un élément.
+   * **Ouvrir** un élément ; selon le type d’élément, cette action permet d’effectuer les opérations suivantes :
 
-      * afficher les propriétés de l’élément ;
-      * ouvrir un tableau de bord ou un assistant approprié pour effectuer d’autres actions ;
-      * Ouvrir la documentation associée
+      * afficher les propriétés de l’élément ;
+      * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions ;
+      * ouvrir la documentation connexe.
    * **Revenir** à une étape précédente.
    * Afficher le payload pour un workflow.
    * Créer un projet à partir de l’élément.
@@ -192,36 +192,36 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
    >* Éléments de workflow – [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
 
 
-1. En fonction de l’élément sélectionné, une action est lancée. par exemple :
+1. Une action démarre en fonction de l’élément sélectionné, par exemple :
 
-   * une boîte de dialogue correspondant à l’action s’ouvre.
-   * un assistant d&#39;action démarre.
+   * une boîte de dialogue correspondant à l’opération s’ouvre ;
+   * un assistant d’action démarre ;
    * une page de documentation s’ouvre.
 
-   Par exemple : **Réaffecter** ouvre une boîte de dialogue :
+   Par exemple, **Déléguer** ouvre une boîte de dialogue :
 
    ![wf-85](assets/wf-85.png)
 
    Selon qu’une boîte de dialogue, une page de documentation ou un assistant a été ouvert, vous pouvez :
 
-   * confirmer l’action appropriée ; Par exemple, Réaffecter.
+   * Confirmer l’action appropriée, par exemple Réaffecter.
    * Annuler l’action.
-   * Flèche vers l’arrière ; par exemple, si une page de documentation ou un assistant d’action a été ouvert, vous pouvez revenir à la boîte de réception.
+   * Flèche vers l’arrière ; par exemple, si une page de documentation ou un assistant d’action a été ouvert, vous pouvez revenir à la boîte de réception.
 
 
 ## Création d’une tâche {#creating-a-task}
 
-Vous pouvez créer des tâches à partir de la boîte de réception :
+Vous pouvez créer des tâches à partir de la boîte de réception :
 
 1. Sélectionner **Créer**, puis **Tâche**.
-1. Renseignez les champs nécessaires de la section **De base** et **Avancé** onglets ; uniquement **Titre** est obligatoire, tous les autres sont facultatifs :
+1. Renseignez les champs nécessaires dans les onglets **De base** et **Avancé** (seul le **titre** est obligatoire, tous les autres sont facultatifs) :
 
    * **De base** :
 
       * **Titre**
       * **Projet**
       * **Cessionnaire**
-      * **Contenu**; similaire à Payload, il s’agit d’une référence de la tâche à un emplacement dans le référentiel.
+      * **Contenu** : similaire à payload, il s’agit d’une référence de la tâche à un emplacement dans le référentiel.
       * **Description**
       * **Priorité de la tâche**
       * **Date de début**
@@ -231,7 +231,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
    * **Avancé**
 
-      * **Nom**: il sera utilisé pour former l’URL ; Si ce champ est vide, il est basé sur la variable **Titre**.
+      * **Nom** : ce champ est utilisé pour former l’URL ; s’il est vide, le nom est basé sur le champ **titre**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -239,7 +239,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
 ## Création d’un projet {#creating-a-project}
 
-Pour certaines tâches, vous pouvez créer une [Projet](/help/sites-authoring/projects.md) en fonction de cette tâche :
+Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/projects.md) en fonction de cette tâche :
 
 1. Sélectionnez la tâche appropriée en appuyant/cliquant sur la miniature.
 
@@ -250,8 +250,8 @@ Pour certaines tâches, vous pouvez créer une [Projet](/help/sites-authoring/pr
    >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
 1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
-1. Sélectionnez le modèle approprié, puis **Suivant**.
-1. Spécifiez les propriétés requises :
+1. Sélectionnez le modèle requis, puis **Suivant** :
+1. Spécifiez les propriétés requises :
 
    * **De base**
 
@@ -267,7 +267,7 @@ Pour certaines tâches, vous pouvez créer une [Projet](/help/sites-authoring/pr
    >
    >Voir [Création d’un projet](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) pour obtenir des informations complètes.
 
-1. Sélectionner **Créer** pour confirmer l’action.
+1. Sélectionnez **Créer** pour confirmer l’action.
 
 ## Filtrage des éléments dans la boîte de réception AEM {#filtering-items-in-the-aem-inbox}
 
