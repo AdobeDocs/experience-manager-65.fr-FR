@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >Sélection multiple sur un ordinateur de bureau :
 >
 >* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
->* Mac : Cmd+clic sur les composants requis.
+>* Mac : Cmd+clic sur les composants requis.
 >
 
 
@@ -99,7 +99,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>Affiche la variable <a href="/help/sites-administering/client-context.md">contexte client</a>.</td>
+   <td>Affiche le <a href="/help/sites-administering/client-context.md">ClientContext</a>.</td>
   </tr>
   <tr>
    <td>Éditeur de texte enrichi<br /> </td>
@@ -117,34 +117,34 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
    <td>Souligné</td>
   </tr>
   <tr>
-   <td>Outil de recherche de contenu - Zone de recherche</td>
+   <td>Outil de recherche de contenu : zone de recherche</td>
    <td><strong><code>down-arrow</code></strong></td>
-   <td>Déclenchez une liste de suggestions. Nécessaire lorsque trop peu de caractères ont été saisis pour déclencher automatiquement la liste (cela se produit lorsque 2 caractères ou plus ont été saisis).</td>
+   <td>Déclencher une liste de suggestions. Nécessaire lorsque trop peu de caractères ont été saisis pour déclencher automatiquement la liste (cela se produit lorsque 2 caractères ou plus ont été saisis).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>right-arrow</code></strong><br /> (sur un chemin d’accès suggéré)</td>
-   <td>Sélectionner un élément et déclencher des suggestions pour le chemin sélectionné.</td>
+   <td>Sélectionner un élément et déclencher des suggestions pour le chemin d’accès sélectionné.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>left-arrow</code></strong><br /> (sur un chemin d’accès suggéré)</td>
-   <td>Sélectionnez un élément et déclenchez des suggestions pour ses ancêtres (comme pour les frères d’un parent).</td>
+   <td>Sélectionner un élément et déclencher des suggestions pour ses ancêtres (éléments parents ayant le même parent).</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Enter</code></strong><br /> (sur un chemin d’accès suggéré)</td>
-   <td>Sélectionnez un élément et déclenchez la recherche.</td>
+   <td>Sélectionner un élément et déclencher la recherche.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Esc</code></strong></td>
-   <td>Fermez le calque de suggestions.</td>
+   <td>Fermer le calque de suggestions.</td>
   </tr>
   <tr>
    <td>Outil de recherche de contenu<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
-   <td><p>Faites glisser des ressources et déposez-les sur la destination.</p> <p>L’action de dépôt produit un nouveau paragraphe ; au lieu de remplacer la ressource dans la destination.</p> </td>
+   <td><p>Faire glisser les ressources, les déposer sur la destination.</p> <p>L’action de déposer une ressource crée un nouveau paragraphe au lieu de remplacer la ressource dans la destination.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -153,7 +153,7 @@ Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d
 
 ## Raccourcis clavier pour le développement {#keyboard-shortcuts-for-development}
 
-D’autres raccourcis clavier sont disponibles pour les développeurs d’ordinateur de bureau qui utilisent l’éditeur de page.
+D’autres raccourcis clavier sont disponibles pour les développeurs et développeuses Desktop qui utilisent l’éditeur de page.
 
 <table>
  <tbody>
