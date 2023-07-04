@@ -1,7 +1,7 @@
 ---
 title: Ajout d’une action personnalisée à la vue Liste des ressources
 seo-title: Add custom action to the Asset Listing view
-description: Cet article explique comment ajouter une action personnalisée à la vue Liste des ressources
+description: Cet article explique comment ajouter une action personnalisée à la vue liste des ressources.
 seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
@@ -12,9 +12,9 @@ docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -22,28 +22,28 @@ ht-degree: 72%
 
 ## Présentation {#overview}
 
-La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur de gestion des actifs.
+La solution Correspondence Management vous permet d’ajouter des actions personnalisées à l’interface utilisateur Gérer les ressources.
 
-Vous pouvez ajouter une action personnalisée à la vue Liste des ressources pour :
+Vous pouvez ajouter une action personnalisée à la vue liste des ressources pour :
 
-* Un ou plusieurs types de ressources ou lettres
-* Exécution (l’action/la commande devient principale) lors de la sélection de plusieurs ressources/lettres uniques ou sans sélection
+* un ou plusieurs types de ressources ou lettres ;
+* l’exécution (l’action/la commande devient active) lors de la sélection de plusieurs ressources/lettres uniques ou sans sélection.
 
-Cette personnalisation est illustrée par le scénario qui ajoute une commande &quot;Télécharger le PDF plat&quot; à la vue Liste des ressources pour les lettres. Ce scénario de personnalisation permet à vos utilisateurs de télécharger le PDF aplati d’une lettre simple.
+Cette personnalisation est illustrée par le scénario qui ajoute une commande « Télécharger le PDF aplati » à la vue liste des ressources pour les lettres. Ce scénario de personnalisation permet à vos utilisateurs de télécharger le PDF aplati d’une lettre simple.
 
 ### Prérequis {#prerequisites}
 
-Pour réaliser le scénario suivant ou un scénario similaire, vous devez connaître :
+Pour réaliser le scénario suivant ou un scénario similaire, vous devez connaître :
 
 * CRX 
 * JavaScript
 * Java™
 
-## Scénario : Ajout d’une commande à l’interface utilisateur de liste de lettres pour télécharger la version PDF aplatie d’une lettre {#addcommandtoletters}
+## Scénario : ajouter une commande à l’interface utilisateur Liste de lettres pour télécharger la version PDF aplatie d’une lettre. {#addcommandtoletters}
 
-Les étapes ci-dessous ajoutent une commande &quot;Télécharger le PDF plat&quot; à la vue Liste des ressources pour les lettres et permettent à vos utilisateurs de télécharger le PDF plat de la lettre sélectionnée. À l’aide de ces étapes avec le code et les paramètres appropriés, vous pouvez ajouter d’autres fonctionnalités pour une ressource différente, comme des dictionnaires de données ou des textes.
+Les étapes ci-dessous ajoutent une commande « Télécharger le PDF aplati » à la vue liste des ressources pour les lettres et permettent à vos utilisateurs et utilisatrices de télécharger la version PDF aplatie de la lettre sélectionnée. En suivant ces étapes avec le code et les paramètres appropriés, vous pouvez ajouter d’autres fonctionnalités pour une ressource différente, comme des dictionnaires de données ou des textes.
 
-Pour personnaliser Correspondence Management afin de permettre à vos utilisateurs de télécharger un PDF de lettres aplati, procédez comme suit :
+Pour personnaliser Correspondence Management afin de permettre à vos utilisateurs et utilisatrices de télécharger une version PDF aplatie de lettres, procédez comme suit :
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/crx/de` et connectez-vous en tant qu’administrateur.
 
@@ -55,7 +55,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisateu
 
       >[!NOTE]
       >
-      >Ce chemin d’accès est spécifique à la création d’une action qui fonctionne avec la sélection d’une ou de plusieurs ressources/lettres. Si vous souhaitez créer une action qui fonctionne sans sélection, créez un noeud de recouvrement pour le chemin suivant et effectuez les étapes restantes en conséquence :
+      >Ce chemin d’accès est spécifique à la création d’une action qui fonctionne avec la sélection d’une ou de plusieurs ressources/lettres. Si vous souhaitez créer une action qui fonctionne sans sélection, créez un nœud de recouvrement pour le chemin suivant et effectuez les étapes restantes en conséquence :
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -86,7 +86,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisateu
 
       **Type :** nt:unstructured
 
-   1. Cliquez sur le nouveau noeud que vous avez créé (ici downloadFlatPDF). CRX affiche les propriétés du nœud.
+   1. Cliquez sur le nœud que vous avez créé (ici downloadFlatPDF). CRX affiche les propriétés du nœud.
 
    1. Ajoutez les propriétés suivantes au nœud (ici downloadFlatPDF) et cliquez sur **Enregistrer tout** :
 
@@ -98,7 +98,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisateu
         <td><strong>Valeur et description</strong></td>
         </tr>
         <tr>
-        <td>catégorie</td>
+        <td>class</td>
         <td>Chaîne</td>
         <td>foundation-collection-action</td>
         </tr>
@@ -108,7 +108,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisateu
         <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> peut être unique ou multiple pour autoriser les sélections de ressources uniques ou multiples sur lesquelles effectuer une action personnalisée.</p> <p><strong>type</strong> peut être unique ou multiple (entrées multiples séparées par des virgules) : LETTER,TEXT,LIST,CONDITION,DATADICTIONARY</p> </td>
         </tr>
         <tr>
-        <td>icône</td>
+        <td>icon</td>
         <td>Chaîne</td>
         <td>icône-téléchargement<br /> <br /> Icône affichée par Correspondence Management sur le côté gauche de la commande/du menu. Pour connaître les icônes et paramètres disponibles, voir la <a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr" target="_blank">documentation relative aux icônes CoralUI</a>.<br /> </td>
         </tr>
@@ -130,7 +130,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisateu
         <tr>
         <td>text</td>
         <td>Chaîne</td>
-        <td>Télécharger le PDF plat (ou toute autre étiquette)<br /> <br /> Commande qui apparaît dans l’interface de liste des ressources</td>
+        <td>Télécharger le PDF aplati (ou toute autre libellé)<br /> <br /> La commande qui apparaît dans l’interface de la liste des ressources</td>
         </tr>
         <tr>
         <td>titre</td>
@@ -226,7 +226,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisateu
       '</div>';
       ```
 
-      Le code que vous ajoutez à cette étape remplace le code sous le dossier libs . Par conséquent, copiez le code précédent dans le fichier formaction.js dans la branche /apps . La copie du code de la branche /libs vers la branche /apps garantit que la fonctionnalité précédente fonctionne également.
+      Le code que vous ajoutez à cette étape remplace le code sous le dossier libs. Par conséquent, copiez le code précédent dans le fichier formaction.js dans la branche /apps. La copie du code de la branche /libs vers la branche /apps garantit que la fonctionnalité précédente fonctionne également.
 
       Le code ci-dessus est destiné au traitement des actions spécifiques aux lettres de la commande créée dans cette procédure. Pour gérer les actions d’autres ressources, modifiez le code JavaScript.
 
@@ -279,7 +279,7 @@ Pour personnaliser Correspondence Management afin de permettre à vos utilisateu
    1. Double-cliquez sur le fichier **POST.jsp** pour l’ouvrir dans CRX.
    1. Ajoutez le code suivant au fichier POST.jsp et cliquez sur **Enregistrer tout** :
 
-      Ce code est spécifique au service de rendu de lettre. Pour toute autre ressource, ajoutez les bibliothèques Java™ de cette ressource à ce code. Pour plus d’informations sur les API AEM Forms, voir [API AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
+      Ce code est spécifique au service de rendu de lettre. Pour toute autre ressource, ajoutez les bibliothèques Java™ de ladite ressource à ce code. Pour plus d’informations sur les API d’AEM Forms, reportez-vous à [API d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr).
 
       Pour plus d’informations sur les bibliothèques d’AEM, consultez la section relatives aux [Composants](/help/sites-developing/components.md) AEM.
 
@@ -354,7 +354,7 @@ Après avoir ajouté la fonctionnalité personnalisée pour télécharger un fic
 
 1. Accédez à `https://'[server]:[port]'/[ContextPath]/projects.html` et connectez-vous.
 
-1. Sélectionnez **Formulaires > Lettres**. Correspondence Management répertorie les lettres disponibles dans le système.
+1. Sélectionnez **Formulaires > Lettres**. Correspondence Management répertorie les lettres disponibles dans le système.
 1. Cliquez sur **Sélectionner**, puis sur une lettre pour la sélectionner.
 1. Sélectionnez **plus** > **&lt;Télécharger un PDF aplati>** (soit la fonctionnalité personnalisées créée à l’aide des instructions fournies dans cet article). La boîte de dialogue Télécharger la lettre en tant que PDF s’affiche.
 
