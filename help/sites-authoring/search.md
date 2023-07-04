@@ -1,6 +1,6 @@
 ---
 title: Recherche complète
-description: Trouvez votre contenu plus rapidement grâce à une recherche exhaustive.
+description: Trouvez votre contenu plus rapidement grâce à une recherche complète.
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '504'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ L’environnement de création d’AEM comporte divers mécanismes de recherche 
 
 >[!NOTE]
 >
->En dehors de l’environnement de création, d’autres mécanismes sont également disponibles pour la recherche, tels que le [Query Builder](/help/sites-developing/querybuilder-api.md) et [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>En dehors de l’environnement de création, d’autres méthodes de recherche sont également disponibles, telles que le [Query Builder](/help/sites-developing/querybuilder-api.md) et [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Principes de base de la recherche {#search-basics}
 
@@ -44,7 +44,7 @@ Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
 Pour rechercher et filtrer vos ressources :
 
-1. Ouvrir **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Des suggestions sont faites et peuvent être sélectionnées :
+1. Ouvrez **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Des suggestions sont faites et peuvent être sélectionnées :
 
    ![s-01](assets/s-01.png)
 
@@ -63,23 +63,23 @@ Pour rechercher et filtrer vos ressources :
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
-   Selon le type de ressource, la recherche affiche une sélection prédéfinie de critères de recherche/filtrage.
+   Selon le type de ressource, la fonction Recherche affiche une sélection prédéfinie de critères de recherche/filtrage.
 
-   Le panneau latéral vous permet de sélectionner les éléments suivants :
+   Le panneau latéral vous permet de sélectionner les éléments suivants :
 
    * Recherches enregistrées
    * Répertoire de recherche
    * Balises
-   * Critères de recherche, par exemple, les dates de modification, l’état de publication, l’état LiveCopy. 
+   * Critères de recherche, par exemple, les dates de modification, l’état de publication, l’état LiveCopy.
 
    >[!NOTE]
    >
-   >Les critères de recherche peuvent varier :
+   >Les critères de recherche peuvent varier :
    >
    >
    >
-   >    * Selon le type de ressource que vous avez sélectionné ; par exemple, les critères Ressources et Communautés sont, de manière compréhensible, spécialisés.
-   >    * Votre instance en tant que [Rechercher dans Forms](/help/sites-administering/search-forms.md) peut être personnalisé (en fonction de l’emplacement dans AEM).
+   >    * selon le type de ressource que vous avez sélectionné ; par exemple, les critères Assets et Communities sont spécialisé, de manière compréhensible.
+   >    * Votre instance en tant que [Formulaires de recherche](/help/sites-administering/search-forms.md) peut être personnalisée (en fonction de l’emplacement dans AEM).
 
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
@@ -98,7 +98,7 @@ Pour rechercher et filtrer vos ressources :
 
 ## Recherches enregistrées {#saved-searches}
 
-Outre la recherche par un large éventail de facettes, vous pouvez enregistrer une configuration de recherche spécifique à récupérer et à utiliser ultérieurement :
+Outre la recherche à partir de nombreuses facettes, vous pouvez enregistrer une configuration de recherche spécifique pour la récupérer et l’utiliser ultérieurement :
 
 1. Définissez vos critères de recherche et sélectionnez **Enregistrer**.
 
@@ -112,7 +112,7 @@ Outre la recherche par un large éventail de facettes, vous pouvez enregistrer u
 
    ![screen-shot_2019-03-05at102927](assets/screen-shot_2019-03-05at102927.png)
 
-1. Une fois enregistré, vous pouvez :
+1. Une fois l’enregistrement effectué, vous pouvez :
 
    * cliquer sur la **croix** (à côté du nom de la recherche enregistrée) pour lancer une nouvelle requête (la recherche enregistrée elle-même ne sera pas supprimée) ;
    * **modifier la recherche enregistrée**, modifier les critères de recherche, puis **enregistrer** la recherche une nouvelle fois.
