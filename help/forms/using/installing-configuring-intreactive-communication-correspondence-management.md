@@ -10,9 +10,9 @@ docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1382'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -20,21 +20,21 @@ ht-degree: 55%
 
 ## Présentation {#introduction}
 
-AEM Forms permet de centraliser la création, l’assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que des correspondances commerciales, des documents, des récapitulatifs, des avis de prestations, des courriers marketing, des factures et des kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le module complémentaire est déployé sur une instance d’auteur ou de publication d’AEM.
+AEM Forms permet de centraliser la création, l’assemblage, la gestion et la diffusion de documents sécurisés et interactifs tels que des correspondances commerciales, des documents, des récapitulatifs, des avis de prestations, des courriers marketing, des factures et des kits de bienvenue. Cette fonctionnalité est appelée communication interactive. Cette fonctionnalité est incluse dans le package du module complémentaire AEM Forms. Le module complémentaire est déployé sur une instance de création ou de publication d’AEM.
 
-Vous pouvez utiliser la fonctionnalité de communication interactive pour produire une communication dans plusieurs formats. Par exemple, web et PDF. Vous pouvez intégrer la communication interactive à AEM Workflow pour traiter et diffuser la communication assemblée aux clients sur le canal de leur choix. Par exemple, envoyer une communication à l’utilisateur final par courrier électronique.
+Vous pouvez utiliser la fonctionnalité de communication interactive pour produire une communication dans plusieurs formats. Par exemple, les formats web et PDF. Vous pouvez intégrer la communication interactive au workflow d’AEM Workflow pour traiter et diffuser la communication assemblée aux clients et clientes sur le canal de leur choix. Par exemple, envoyer une communication à l’utilisateur final ou l’utilisatrice finale par e-mail.
 
 Si vous effectuez une mise à niveau depuis une version précédente et que vous avez déjà investi dans la gestion des correspondances, vous pouvez installer le [package de compatibilité](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) pour continuer à utiliser la gestion des correspondances. Pour plus d’informations sur les différences entre la communication interactive et la gestion des correspondances, voir [Présentation de la communication interactive](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
-AEM Forms est une plateforme d’entreprise performante. La communication interactive n’est qu’une des fonctionnalités d’AEM Forms. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms est une plateforme d’entreprise performante. La communication interactive ne constitue que l’une des nombreuses fonctionnalités d’AEM Forms. Pour obtenir la liste complète des fonctionnalités, voir [Présentation d’AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Topologie de déploiement {#deployment-topology}
 
-Le module complémentaire AEM Forms est une application déployée sur AEM. Vous ne avez besoin que d’un minimum d’une instance de création et de traitement AEM pour exécuter la fonctionnalité de communications interactives. La topologie suivante est une topologie indicatif pour exécuter les fonctionnalités AEM Forms Interactive Communications, Correspondence Management, AEM Forms Data Capture et Forms-Centric Workflow on OSGi. Pour plus d’informations sur la topologie, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
+Le module complémentaire AEM Forms est une application déployée sur AEM. Vous avez juste besoin d’au moins une instance de création et de traitement AEM pour exécuter la fonctionnalité de communications interactives. La topologie suivante est fournie à titre indicatif pour exécuter les fonctionnalités de communications interactives AEM Forms, Correspondence Management, capture de données AEM Forms et des workflows basés sur des formulaires sur OSGi. Pour plus d’informations sur la topologie, voir [Topologies d’architecture et de déploiement pour AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![recommended-topology](assets/recommended-topology.png)
 
-Les communications interactives AEM Forms exécutent des interfaces utilisateur d’administration, de création et d’agent sur les instances d’auteur d’AEM Forms. Les instances de publication hébergent la version finale des communications interactives prêtes à être utilisées par les utilisateurs finaux.
+Les communications interactives AEM Forms exécutent des interfaces utilisateur d’administration, de création et d’agent sur les instances de création AEM Forms. Les instances de publication hébergent la version finale des communications interactives prêtes à être utilisées par les utilisateurs finaux et les utilisatrices finales.
 
 ## Configuration requise {#system-requirements}
 
@@ -45,17 +45,17 @@ Avant de commencer à installer et à configurer les fonctionnalités de communi
 * Le chemin d’installation de l’instance AEM ne contient pas d’espaces.
 * Une instance AEM est en cours d’exécution. Dans la terminologie AEM, une « instance » est une copie d’AEM s’exécutant sur un serveur en mode de création ou de publication. Vous avez besoin d’au moins une instance d’AEM (auteur ou de traitement) pour exécuter les fonctionnalités de communication interactive et de gestion des correspondances d’AEM Forms :
 
-   * **Auteur**: Instance d’AEM utilisée pour créer, télécharger et modifier du contenu et administrer le site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
-   * **Traitement :** Une instance de traitement est une [Auteur AEM sécurisé](/help/forms/using/hardening-securing-aem-forms-environment.md) instance. Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
+   * **Création** : instance AEM utilisée pour créer, télécharger et modifier du contenu et assurer l’administration du site web. Une fois que le contenu est publié, il est répliqué sur l’instance de publication.
+   * **Traitement :** une instance de [création AEM renforcée](/help/forms/using/hardening-securing-aem-forms-environment.md). Vous pouvez configurer une instance de création et renforcer sa sécurité après avoir effectué l’installation.
 
-   * **Publier**: Une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
+   * **Publication** : une instance AEM qui diffuse le contenu publié au public sur Internet ou sur un réseau interne.
 
 * Les exigences de mémoire sont respectées. Le package complémentaire AEM Forms nécessite :
 
    * 15 Go d’espace temporaire pour les installations Microsoft® Windows.
    * 6 Go d’espace temporaire pour les installations Unix.
 
-* Configuration requise supplémentaire pour les systèmes UNIX : Si vous utilisez un système d’exploitation UNIX, installez les packages suivants à partir du support d’installation du système d’exploitation correspondant.
+* Configuration requise supplémentaire pour les systèmes UNIX : si vous utilisez un système d’exploitation UNIX, installez les packages suivants à partir du support d’installation du système d’exploitation correspondant.
 
 <table>
  <tbody>
@@ -92,8 +92,8 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
 1. Ouvrez la [Distribution de logiciels](https://experience.adobe.com/downloads). Vous avez besoin d’un Adobe ID pour vous connecter à la Distribution de logiciels.
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** disponible dans le menu d’en-tête.
-1. Dans le **[!UICONTROL Filtres]** section :
-   1. Sélectionner **[!UICONTROL Forms]** de la **[!UICONTROL Solution]** liste déroulante.
+1. Dans la section des **[!UICONTROL filtres]** :
+   1. Sélectionnez **[!UICONTROL Forms]** dans la liste déroulante **[!UICONTROL Solution]**.
    2. Sélectionnez la version et le type du package. Vous pouvez également utiliser l’option **[!UICONTROL Rechercher des téléchargements]** pour filtrer les résultats.
 1. Appuyez sur le nom de package applicable à votre système d’exploitation, sélectionnez **[!UICONTROL Accepter les conditions du CLUF]**, puis appuyez sur **[!UICONTROL Télécharger]**.
 1. Ouvrez [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr) et cliquez sur **[!UICONTROL Télécharger le package]** pour télécharger le package.
@@ -101,12 +101,12 @@ Le module complémentaire AEM Forms est une application déployée sur AEM. Le p
 
    Vous pouvez également télécharger le package via le lien direct répertorié dans l’article [Version d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr).
 
-1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED et ServiceEvent UNREGISTERED cessent d’apparaître dans la variable [AEM-Installation-Directory]/crx-quickstart/logs/error.log et le journal est stable.
+1. Une fois le package installé, vous êtes invité à redémarrer l’instance AEM. **Ne redémarrez pas immédiatement le serveur.** Avant d’arrêter le serveur AEM Forms, attendez que les messages ServiceEvent REGISTERED and ServiceEvent UNREGISTERED cessent d’apparaître dans le fichier [AEM-Installation-Directory]/crx-quickstart/logs/error.log et que le journal soit stable.
 1. Répétez les étapes 1 à 7 sur toutes les instances de création et de publication.
 
 ## Configurations post-installation {#post-installation-configurations}
 
-AEM Forms comporte quelques configurations obligatoires et facultatives. Les configurations obligatoires incluent la configuration des bibliothèques BouncyCastle et de l’agent de sérialisation. Les configurations facultatives incluent la configuration de Dispatcher et d’Adobe Target.
+AEM Forms comporte des configurations obligatoires et facultatives. Les configurations obligatoires incluent la configuration des bibliothèques BouncyCastle et de l’agent de sérialisation. Les configurations facultatives incluent la configuration de Dispatcher et d’Adobe Target.
 
 ### Configurations post-installation obligatoires {#mandatory-post-installation-configurations}
 
@@ -117,7 +117,7 @@ Pour déléguer le démarrage des bibliothèques, procédez comme suit sur toute
 1. Arrêtez l’instance AEM sous-jacente.
 1. Ouvrez le fichier [répertoire d’installation AEM]\crx-quickstart\conf\sling.properties pour le modifier.
 
-   Si vous avez utilisé [Répertoire d’installation AEM]\crx-quickstart\bin\start.bat pour commencer AEM, puis modifiez le fichier sling.properties à l’adresse [AEM_root]\crx-quickstart\.
+   Si vous utilisiez [AEM installation directory]\crx-quickstart\bin\start.bat pour démarrer AEM, modifiez le fichier sling.properties à [AEM_root]\crx-quickstart\.
 
 1. Ajoutez les propriétés suivantes au fichier sling.properties :
 
@@ -137,11 +137,11 @@ Pour autoriser le package, procédez comme suit sur toutes les instances dʼaute
 1. Ajoutez le package **sun.util.calendar** au champ **Placer sur la liste autorisée**. Cliquez sur Enregistrer.
 1. Répétez les étapes 1 à 3 sur toutes les instances de création et de publication.
 
-### Configurations optionnelles de post-installation {#optional-post-installation-configurations}
+### Configurations facultatives après l’installation {#optional-post-installation-configurations}
 
 #### Installer le package de compatibilité {#install-compatibility-package}
 
-La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM 6.5 Forms. Si vous avez mis à niveau ou migré depuis une version précédente et envisagez de continuer à utiliser des lettres (gestion des correspondances), installez le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+La communication interactive est l’approche par défaut et recommandée pour créer des communications client dans AEM 6.5 Forms. Si vous avez mis à niveau ou migré depuis une version précédente et envisagez de continuer à utiliser des lettres (gestion des correspondances), installez le [package de compatibilité AEMFD](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=fr).
 
 Le package de compatibilité AEMFD vous permet d’utiliser les ressources suivantes d’AEM 6.4 Forms, d’AEM 6.3 Forms et d’AEM 6.2 Forms sur AEM 6.5 Forms :
 
@@ -152,27 +152,27 @@ Le package de compatibilité AEMFD vous permet d’utiliser les ressources suiva
 
 #### La configuration de Dispatcher {#configure-dispatcher}
 
-Dispatcher est un outil de mise en cache et d’équilibrage de charge Adobe Experience Manager utilisé avec un serveur web de niveau élevé. Si vous utilisez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr), effectuez les configurations suivantes pour AEM Forms :
+Le Dispatcher est l’outil de mise en cache et d’équilibrage de charge d’Adobe Experience Manager, qui peut être utilisé conjointement avec un serveur web d’entreprise. Si vous utilisez [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr), effectuez les configurations suivantes pour AEM Forms :
 
 1. Configurez l’accès à AEM Forms:
 
-   Ouvrez le fichier dispatcher.any pour le modifier. Accédez à la section filter et ajoutez le filtre suivant à la section filter :
+   Ouvrez le fichier dispatcher.any en mode d’édition. Accédez à la section des filtres et ajoutez le filtre suivant à la section des filtres :
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Enregistrez et fermez le fichier. Pour plus d’informations sur les filtres, voir [Documentation de Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr).
+   Enregistrez et fermez le fichier. Pour plus d’informations sur les filtres, consultez la [documentation relative à Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr).
 
-1. Configurez le service de filtrage des référents :
+1. Pour configurer le service de filtrage de référent, procédez comme suit :
 
-   Connectez-vous au gestionnaire de configuration Apache Felix en tant qu’administrateur. L’URL par défaut du gestionnaire de configuration est https://&#39;server&#39;:[port_number]/system/console/configMgr. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Autoriser les hôtes , saisissez le nom d’hôte de Dispatcher pour l’autoriser en tant que référent, puis cliquez sur **Enregistrer**. Le format de l’entrée est https://&#39;[server]:[port]&#39;.
+   Connectez-vous au gestionnaire de configuration Apache Felix en tant qu’administrateur ou administratrice. L’URL par défaut du gestionnaire de configuration est https://&#39;server&#39;:[port_number]/system/console/configMgr. Dans le menu **Configurations**, sélectionnez l’option **Apache Sling Referrer Filter.** Dans le champ Autoriser des hôtes, saisissez le nom d’hôte du Dispatcher afin de l’activer comme référent, puis cliquez sur **Enregistrer**. Le format de l’entrée est https://&#39;[server]:[port]&#39;.
 
-#### Intégration d’Adobe Target {#integrate-adobe-target}
+#### Intégrer Adobe Target {#integrate-adobe-target}
 
-Vos clients sont susceptibles d’abandonner une communication interactive si l’expérience qu’ils offrent n’est pas engageante. Bien que cela soit frustrant pour les clients, cela augmente également le volume et le coût de l’assistance pour votre entreprise. Il est essentiel et difficile d’identifier et de fournir l’expérience client appropriée qui augmente le taux de conversion. AEM forms détient la clé de ce problème.
+Vos clients et clientes pourraient abandonner une communication interactive si l’expérience qu’elle offre n’est pas captivante. En plus d’être frustrante pour les clients et les clientes, cette situation augmente également le volume et le coût de l’assistance pour votre entreprise. Il est essentiel et difficile d’identifier et de fournir l’expérience client appropriée qui augmente le taux de conversion. AEM Forms est la solution à ce problème.
 
-AEM forms s’intègre à Adobe Target, une solution Adobe Experience Cloud, pour offrir des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. Pour utiliser Adobe Target avec une communication interactive, [intégrez Adobe Target à AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM Forms s’intègre à Adobe Target, une solution Adobe Experience Cloud, pour offrir des expériences client personnalisées et attrayantes sur plusieurs canaux numériques. Pour utiliser Adobe Target avec une communication interactive, [intégrez Adobe Target à AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
 
-#### Configuration de la communication SSL pour le modèle de données de formulaire  {#configure-ssl-communcation-for-form-data-model}
+#### Configurer la communication SSL pour le modèle de données de formulaire  {#configure-ssl-communcation-for-form-data-model}
 
 Vous pouvez activer la communication SSL pour le modèle de données de formulaire. Pour activer la communication SSL pour le modèle de données de formulaire, avant de démarrer une instance AEM Forms, ajoutez des certificats au Trust Store Java™ de toutes les instances. Vous pouvez exécuter la commande ci-dessous pour ajouter les certificats :
 
