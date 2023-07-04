@@ -1,15 +1,15 @@
 ---
 title: Configurer les magasins de nœuds et les entrepôts de données dans AEM 6
-description: Découvrez comment configurer les entrepôts de noeuds et de données et comment effectuer le nettoyage de la mémoire d’entrepôt de données.
+description: Découvrez comment configurer les magasins de nœuds et de données et comment effectuer la récupération de l’espace mémoire.
 content-type: reference
 topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3521'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -17,22 +17,22 @@ ht-degree: 62%
 
 ## Présentation {#introduction}
 
-Dans Adobe Experience Manager (AEM), les données binaires peuvent être stockées indépendamment des noeuds de contenu. Les données binaires sont stockées dans un entrepôt de données, tandis que les noeuds de contenu sont stockés dans un magasin de noeuds.
+Dans Adobe Experience Manager (AEM), les données binaires peuvent être stockées indépendamment des nœuds de contenu. Les données binaires sont stockées dans un magasin de données, tandis que les nœuds de contenu sont stockés dans un magasin de nœuds.
 
-Les entrepôts de données et les entrepôts de noeuds peuvent être configurés à l’aide de la configuration OSGi. Chaque configuration OSGi est référencée à l’aide d’un identifiant persistant (PID).
+Les magasins de données et de nœuds peuvent être configurés à l’aide de la configuration OSGi. Chaque configuration OSGi est référencée à l’aide d’un identifiant persistant (PID).
 
-## Etapes de configuration {#configuration-steps}
+## Étapes de configuration {#configuration-steps}
 
-Pour configurer l’entrepôt de noeuds et l’entrepôt de données, procédez comme suit :
+Pour configurer les magasins de nœuds et de données, procédez comme suit :
 
-1. Copiez le fichier JAR de démarrage rapide AEM dans son répertoire d’installation.
+1. Copiez le fichier JAR de démarrage rapide d’AEM dans son répertoire d’installation.
 1. Créez un dossier `crx-quickstart/install` dans le répertoire d’installation.
 1. Configurez tout d’abord le magasin de nœuds en créant un fichier de configuration avec le nom de l’option de magasin de nœuds que vous voulez utiliser dans le répertoire `crx-quickstart/install`.
 
    Par exemple, le magasin de nœuds Document (qui constitue la base de l’implémentation de MongoMK d’AEM) utilise le fichier `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`.
 
 1. Modifiez le fichier et définissez vos options de configuration.
-1. Créez un fichier de configuration avec le PID de l’entrepôt de données que vous souhaitez utiliser. Modifiez le fichier pour définir les options de configuration. 
+1. Créez un fichier de configuration avec le PID du magasin de données que vous souhaitez utiliser. Modifiez le fichier pour définir les options de configuration.
 
    >[!NOTE]
    >
@@ -40,19 +40,19 @@ Pour configurer l’entrepôt de noeuds et l’entrepôt de données, procédez 
 
 1. Démarrez AEM.
 
-## Configurations de magasin de noeuds {#node-store-configurations}
+## Configurations des magasins de nœuds {#node-store-configurations}
 
 >[!CAUTION]
 >
->Les nouvelles versions d’Oak utilisent un nouveau modèle de dénomination et un nouveau format pour les fichiers de configuration OSGi. Le nouveau modèle de dénomination nécessite que le fichier de configuration soit nommé **.config** et le nouveau format nécessite que les valeurs soient saisies et est [documenté ici](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Les nouvelles versions d’Oak utilisent un nouveau modèle de dénomination et un nouveau format pour les fichiers de configuration OSGi. Le nouveau modèle de dénomination nécessite que le fichier de configuration soit nommé **.config**. Le nouveau format nécessite que les valeurs soient saisies et [documentées ici](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
 >Si vous effectuez une mise à niveau à partir d’une version plus ancienne d’Oak, veillez d’abord à sauvegarder le dossier `crx-quickstart/install`. Après la mise à niveau, restaurez les contenus du dossier à l’installation mise à niveau, puis modifiez l’extension des fichiers de configuration de **.cfg** en **.config**.
 >
->Si vous lisez cet article en vue d’une mise à niveau à partir d’un **AEM 5.x** installation, assurez-vous de consulter la [upgrade](https://experienceleague.adobe.com/docs/?lang=fr) la documentation d’abord.
+>Si vous lisez cet article en vue d’une mise à niveau à partir d’une installation **AEM 5.x**, assurez-vous de consulter d’abord la documentation de [mise à niveau](https://experienceleague.adobe.com/docs/?lang=fr).
 
-### Magasin de noeuds de segment {#segment-node-store}
+### Magasin de nœuds de segments {#segment-node-store}
 
-Le magasin de noeuds de segment est la base de l’implémentation de TarMK d’Adobe dans AEM6. Il utilise le PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` pour la configuration.
+Le magasin de nœuds de segments est la base de l’implémentation de TarMK d’Adobe dans AEM6. Il utilise le PID `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` pour la configuration.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ Le magasin de noeuds de segment est la base de l’implémentation de TarMK d’
 
 Vous pouvez configurer les options suivantes :
 
-* `repository.home` : chemin vers le répertoire racine du référentiel dans lequel sont stockées les données associées au référentiel. Par défaut, les fichiers de segment sont stockés dans le répertoire `crx-quickstart/segmentstore`. 
+* `repository.home` : chemin vers le répertoire racine du référentiel dans lequel sont stockées les données associées au référentiel. Par défaut, les fichiers de segment sont stockés dans le répertoire `crx-quickstart/segmentstore`.
 
 * `tarmk.size` : taille maximale d’un segment, en Mo. La valeur maximale par défaut étant de 256 Mo.
 * `customBlobStore` : valeur booléenne indiquant qu’un magasin de données personnalisé est utilisé. La valeur par défaut est définie sur true pour AEM 6.3 et pour les versions ultérieures. Pour les versions antérieures à AEM 6.3, la valeur par défaut était false.
@@ -105,19 +105,19 @@ db="aem-author"
 customBlobStore=B"false"
 ```
 
-## Configurations de l’entrepôt de données {#data-store-configurations}
+## Configuration du magasin de données {#data-store-configurations}
 
-Lorsque vous traitez un grand nombre de fichiers binaires, il est recommandé d’utiliser un entrepôt de données externe au lieu des entrepôts de noeuds par défaut afin d’optimiser les performances.
+Lorsque vous traitez un grand nombre de fichiers binaires, il est recommandé d’utiliser un magasin de données externe au lieu du magasin de nœuds par défaut afin d’optimiser la performance.
 
-Par exemple, si votre projet nécessite de nombreuses ressources multimédias, les stocker sous le File ou le S3 Data Store permet d’y accéder plus rapidement que de les stocker directement dans une MongoDB.
+Par exemple, si votre projet nécessite un grand nombre de ressources multimédias, leur stockage dans le magasin de données Fichiers ou S3 rendra leur accès plus rapide que leur stockage direct dans un MongoDB.
 
-L’entrepôt de données basé sur les fichiers offre de meilleures performances que MongoDB. Les opérations de sauvegarde et de restauration Mongo sont également plus lentes avec un grand nombre de ressources.
+Le magasin de données basé sur les fichiers offre de meilleures performances que la base de données Mongo. Les opérations de sauvegarde et de restauration Mongo sont également plus lentes avec un grand nombre de ressources.
 
-Vous trouverez ci-dessous des informations détaillées sur les différents entrepôts de données et configurations.
+Vous trouverez ci-dessous des informations détaillées sur les différents magasins de données et configurations.
 
 >[!NOTE]
 >
->Pour activer les entrepôts de données personnalisés, vous devez vous assurer que `customBlobStore` est défini sur `true` dans le fichier de configuration de magasin de noeuds correspondant ([magasin de noeuds de segment](/help/sites-deploying/data-store-config.md#segment-node-store) ou [magasin de noeuds document](/help/sites-deploying/data-store-config.md#document-node-store)).
+>Pour activer les magasins de données personnalisés, vous devez vérifier que `customBlobStore` est défini sur `true` dans le fichier de configuration de magasin de nœuds correspondant ([magasin de nœuds de segment](/help/sites-deploying/data-store-config.md#segment-node-store) ou [magasin de nœuds de document](/help/sites-deploying/data-store-config.md#document-node-store)).
 
 ### Fichier Magasin de données {#file-data-store}
 
@@ -133,17 +133,17 @@ Voici les options de configuration disponibles :
 
 >[!NOTE]
 >
->Lorsque vous utilisez un NAS pour stocker des entrepôts de données de fichiers partagés, veillez à n’utiliser que des périphériques hautement performants afin d’éviter des problèmes de performances.
+>Lorsque vous utilisez un NAS pour stocker des magasins de données de fichiers partagés, veillez à n’utiliser que des périphériques hautement performants afin d’éviter des problèmes de performances.
 
 ## Entrepôt de données Amazon S3 {#amazon-s-data-store}
 
 AEM peut être configuré pour stocker des donnés dans le service Simple Storage Service (S3) d’Amazon. Celui-ci utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` pour la configuration.
 
-Pour activer la fonctionnalité d’entrepôt de données S3, un Feature Pack contenant le connecteur d’entrepôt de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). En outre, vous devez télécharger et installer le dernier Service Pack d’AEM, comme indiqué sur la page [Notes de mise à jour d’AEM 6.5](/help/release-notes/release-notes.md) page.
+Pour activer la fonctionnalité du magasin de données S3, un pack de fonctionnalités contenant le connecteur du magasin de données S3 doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/), puis téléchargez la dernière version des versions 1.10.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.s3connector-1.10.0.zip). En outre, vous devez également télécharger et installer le dernier pack de services AEM, comme indiqué à la page [Notes de mise à jour d’AEM 6.5](/help/release-notes/release-notes.md).
 
 >[!NOTE]
 >
->Lorsque vous utilisez AEM avec TarMK, les fichiers binaires sont stockés par défaut dans `FileDataStore`. Pour utiliser TarMK avec l’entrepôt de données S3, vous devez commencer AEM à utiliser la variable `crx3tar-nofds` runmode, par exemple :
+>Lorsque vous utilisez AEM avec TarMK, les fichiers binaires sont stockés par défaut dans `FileDataStore`. Pour utiliser TarMK avec le magasin de données S3, vous devez lancer AEM à l’aide du mode d’exécution `crx3tar-nofds`, par exemple :
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -153,7 +153,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. Extrayez le contenu du fichier ZIP du pack de fonctionnalités dans un dossier temporaire.
 
-1. Accédez au dossier temporaire et accédez à l’emplacement suivant :
+1. Accédez au dossier temporaire et à l’emplacement suivant :
 
    ```xml
    jcr_root/libs/system/install
@@ -161,7 +161,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    Copiez l’intégralité du contenu de l’emplacement ci-dessus vers `<aem-install>/crx-quickstart/install.`.
 
-1. Si AEM est déjà configuré pour fonctionner avec le stockage Tar ou MongoDB, supprimez tous les fichiers de configuration existants du ***&lt;aem-install>***/*crx-quickstart*/*install* avant de continuer. Les fichiers qui doivent être supprimés sont les suivants :
+1. Si AEM est déjà configuré pour fonctionner avec le stockage Tar ou MongoDB, supprimez tous les fichiers de configuration existants du dossier ***&lt;aem-install>***/*crx-quickstart*/*install* avant de continuer. Les fichiers qui doivent être supprimés sont les suivants :
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -178,14 +178,14 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    >[!NOTE]
    >
-   >Dans une configuration en grappe, effectuez les étapes ci-dessus sur tous les noeuds de la grappe un par un. Veillez également à utiliser les mêmes paramètres S3 pour tous les noeuds.
+   >Dans une configuration en grappe, effectuez les étapes ci-dessus sur tous les nœuds de la grappe un par un. Veillez également à utiliser les mêmes paramètres S3 pour tous les nœuds.
 
 1. Modifiez le fichier et ajoutez les options de configuration requises par votre configuration.
 1. Démarrez AEM.
 
 ## Mise à nouveau vers une nouvelle version du connecteur S3 1.10.x {#upgrading-to-a-new-version-of-the-s-connector}
 
-Pour effectuer la mise à niveau vers une nouvelle version du connecteur S3 1.10.x (par exemple, de 1.10.0 à 1.10.4), procédez comme suit :
+Si vous devez effectuer une mise à niveau vers une nouvelle version du connecteur S3 1.10.x (par exemple, de la version 1.10.0 vers la version 1.10.4), procédez comme suit :
 
 1. Désactivez l’instance AEM.
 
@@ -234,13 +234,13 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 | secretKey | Clé d’accès secrète de l’utilisateur IAM ayant accès au compartiment. |  | Oui, lorsque vous n’utilisez pas les rôles IAM. |
 | cacheSize | Taille (en octets) du cache local. | 64 Go | Nombre |
 | connectionTimeout | Définissez la durée d’attente (en millisecondes) avant l’expiration lors de l’établissement initial d’une connexion. | 10 000 | Nombre |
-| maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) sont stockés dans le cache de mémoire. | 17 408 (17 Ko) | Nombre |
+| maxCachedBinarySize | Les fichiers binaires dont la taille est inférieure ou égale à cette valeur (en octets) seront stockés dans le cache de mémoire. | 17 408 (17 Ko) | Nombre |
 | maxConnections | Définissez le nombre maximal de connexions HTTP ouvertes autorisées. | 50 | Nombre |
 | maxErrorRetry | Définissez le nombre maximal de nouvelles tentatives pour les requêtes (pouvant être retentées) ayant échoué. | 3 | Nombre |
 | minRecordLength | Taille minimale d’un objet (en octets) devant être enregistré dans l’entrepôt de données. | 16384 | Nombre |
 | path | Chemin d’accès local de l’entrepôt de données AEM. | `crx-quickstart/repository/datastore` | Nombre |
-| proxyHost | Définissez l’hôte proxy facultatif par lequel le client se connecte. |  | Nombre |
-| proxyPort | Définissez le port proxy facultatif par lequel le client se connecte. |  | Nombre |
+| proxyHost | Définissez l’hôte proxy facultatif par lequel le client ou la cliente se connectera. |  | Nombre |
+| proxyPort | Définissez le port proxy facultatif par lequel le client ou la cliente se connectera. |  | Nombre |
 | s3Bucket | Nom du compartiment S3. |  | Oui |
 | s3EndPoint | Point d’entrée de l’API REST S3. |  | Nombre |
 | s3Region | Région où réside le compartiment. Consultez cette [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) pour plus de détails. | Région dans laquelle l’instance AWS est en cours d’exécution. | Nombre |
@@ -298,7 +298,7 @@ Vous pouvez utiliser le fichier de configuration avec les options présentées c
 >
 >Les implémentations de `S3DataStore`, du magasin de données `CachingFileDataStore` et d’`AzureDataStore` prennent en charge la mise en cache du système de fichiers local. L’implémentation du `CachingFileDataStore` est utile lorsque le magasin de données est sur le système NFS (Network File System).
 
-Lors d’une mise à niveau à partir d’une mise en oeuvre de cache plus ancienne (avant Oak 1.6), il existe une différence de structure du répertoire de cache du système de fichiers local. Dans l’ancienne structure de cache, les fichiers téléchargés et téléchargés étaient placés directement sous le chemin d’accès au cache. La nouvelle structure permet d’isoler les chargements des téléchargements afin de les stocker dans deux répertoires nommés `upload` et `download` dans le chemin du cache. Le processus de mise à niveau doit être transparent et les chargements en attente doivent être programmés pour le chargement et tous les fichiers précédemment téléchargés dans le cache sont placés dans le cache lors de l’initialisation.
+Quand la mise à niveau est effectuée à partir d’une mise en œuvre de cache plus ancienne (avant Oak 1.6), la structure du répertoire du cache du système de fichiers local est différente. Dans l’ancienne structure de cache, les fichiers téléchargés et chargés étaient placés directement sous le chemin d’accès au cache. La nouvelle structure permet d’isoler les chargements des téléchargements afin de les stocker dans deux répertoires nommés `upload` et `download` dans le chemin du cache. Le processus de mise à niveau doit être transparent et tout chargement en attente doit être planifié. De plus, les fichiers précédemment chargés dans le cache seront placés dans le cache lors de l’initialisation.
 
 Il est également possible de mettre le cache à niveau hors ligne à l’aide de la commande oak-run `datastorecacheupgrade`. Pour plus d’informations sur l’exécution de la commande, consultez le fichier [lisez-moi](https://svn.apache.org/repos/asf/jackrabbit/oak/trunk/oak-run/README.md ) du module oak-run.
 
@@ -306,11 +306,11 @@ Le cache est soumis à une limite de taille qui peut être configurée à l’ai
 
 #### Téléchargements {#downloads}
 
-Le cache local est vérifié pour l’enregistrement du fichier/blob demandé avant d’y accéder à partir de DataStore. Lorsque le cache dépasse la limite configurée (voir `cacheSize` ) lors de l’ajout d’un fichier dans le cache, certains fichiers sont expulsés pour libérer de l’espace.
+Le cache local sera vérifié pour l’enregistrement du fichier/blob demandé avant de pouvoir y accéder à partir du magasin de données. Lorsque la taille du cache dépasse la limite configurée (voir le paramètre `cacheSize`) lors de l’ajout d’un fichier, certains des fichiers seront évincés pour récupérer de l’espace.
 
 #### Téléchargement asynchrone {#async-upload}
 
-Le cache prend en charge les téléchargements asynchrones vers DataStore. Les fichiers sont mis en scène localement, dans le cache (sur le système de fichiers) et une tâche asynchrone commence à télécharger le fichier. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. En outre, le pourcentage de cache disponible pour les téléchargements est calculé comme suit : **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
+Le cache prend en charge les téléchargements asynchrones vers le magasin de données. Les fichiers sont stockés temporairement en local, dans le cache (sur le système de fichiers) et un traitement asynchrone commence à télécharger le fichier. Le nombre de téléchargements asynchrones est limité par la taille du cache intermédiaire. La taille du cache intermédiaire est configurée à l’aide du paramètre `stagingSplitPercentage`. Ce paramètre définit le pourcentage de taille de cache à utiliser pour le cache intermédiaire. En outre, le pourcentage de cache disponible pour les téléchargements est calculé comme suit : **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 Les chargements asynchrones sont multithread et le nombre de thread est configuré à l’aide du paramètre `uploadThreads`.
 
@@ -318,14 +318,14 @@ Les fichiers sont déplacés vers le cache de téléchargement principal une foi
 
 Les chargements ayant échoué (en raison d’une interruption du réseau, par exemple) sont placés dans une file d’attente pour effectuer régulièrement de nouvelles tentatives. L’intervalle de nouvelle tentative est configuré à l’aide du `stagingRetryInterval parameter`.
 
-#### Configuration de la réplication sans binaires avec Amazon S3 {#configuring-binaryless-replication-with-amazon-s}
+#### Configurer la réplication sans binaires avec Amazon S3 {#configuring-binaryless-replication-with-amazon-s}
 
-Pour configurer la réplication sans binaires avec S3, les étapes suivantes sont requises :
+Pour configurer la réplication sans binaires avec S3, les étapes suivantes sont requises :
 
 1. Installez les instances de création et de publication et assurez-vous qu’elles sont correctement démarrées.
 1. Accédez aux paramètres de l’agent de réplication, en ouvrant une page sur *https://localhost:4502/etc/replication/agents.author/publish.html*.
 1. Appuyez sur le bouton **Modifier** dans la section **Paramètres**.
-1. Modifiez l’option **Type de sérialisation** en **Sans fichier binaire**. 
+1. Modifiez l’option **Type de sérialisation** en **Sans fichier binaire**.
 
 1. Ajoutez le paramètre « `true`=`binaryless` » dans l’URI de transport. Après la modification, l’URI doit ressembler à ce qui suit :
 
@@ -333,9 +333,9 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
 
 1. Redémarrez toutes les instances de création et de publication pour que les modifications soient prises en compte.
 
-#### Création d’une grappe à l’aide de S3 et de MongoDB {#creating-a-cluster-using-s-and-mongodb}
+#### Créer une grappe à l’aide de S3 et de MongoDB {#creating-a-cluster-using-s-and-mongodb}
 
-1. Décompressez le démarrage rapide de CQ à l’aide de la commande suivante :
+1. Décompressez le démarrage rapide de CQ à l’aide de la commande suivante :
 
    `java -jar cq-quickstart.jar -unpack`
 
@@ -349,25 +349,25 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
 
    Une fois les fichiers créés, ajoutez les options de configuration nécessaires.
 
-1. Installez les deux lots requis pour l’entrepôt de données S3, comme expliqué ci-dessus.
+1. Installez les deux lots requis pour le magasin de données S3, comme expliqué ci-dessus.
 1. Vérifiez que MongoDB est installé et qu’une instance de `mongod` est en cours d’exécution.
 1. Démarrez AEM à l’aide de la commande suivante :
 
    `java -Xmx1024m -jar cq-quickstart.jar -r crx3,crx3mongo`
 
 1. Répétez les étapes 1 à 4 pour la deuxième instance AEM.
-1. Démarrez la seconde instance AEM.
+1. Démarrez la deuxième instance AEM.
 
-#### Configuration d’un entrepôt de données partagé {#configuring-a-shared-data-store}
+#### Configuration d’un magasin de données partagé {#configuring-a-shared-data-store}
 
-1. Créez tout d’abord le fichier de configuration de l’entrepôt de données sur chaque instance requise pour partager l’entrepôt de données :
+1. Créez tout d’abord le fichier de configuration du magasin de données sur chaque instance requise pour partager le magasin de données :
 
    * Si vous utilisez `FileDataStore`, créez un fichier nommé `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`, puis placez-le dans le dossier `<aem-install>/crx-quickstart/install`.
 
    * Si vous utilisez S3 comme magasin de données, créez un fichier nommé `rg.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` dans le dossier `<aem-install>/crx-quickstart/install`, comme ci-dessus.
 
-1. Modifiez les fichiers de configuration de l’entrepôt de données sur chaque instance afin qu’ils pointent vers le même entrepôt de données. Pour plus d’informations, voir [cet article](/help/sites-deploying/data-store-config.md#data-store-configurations).
-1. Si l’instance a été clonée à partir d’un serveur existant, vous devez supprimer la variable `clusterId` de la nouvelle instance en utilisant le dernier outil oak-run alors que le référentiel est hors ligne. La commande que vous devez exécuter est la suivante :
+1. Modifiez les fichiers de configuration du magasin de données sur chaque instance afin qu’ils pointent vers le même magasin de données. Pour plus d’informations, consultez [cet article](/help/sites-deploying/data-store-config.md#data-store-configurations).
+1. Si l’instance a été clonée à partir d’un serveur existant, vous devez supprimer le `clusterId` de la nouvelle instance à l’aide du dernier outil oak-run lorsque le référentiel est hors ligne. La commande que vous devez exécuter est la suivante :
 
    ```xml
    java -jar oak-run.jar resetclusterid < repository path | Mongo URI >
@@ -375,7 +375,7 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
 
    >[!NOTE]
    >
-   >Si un magasin de noeuds de segment est configuré, le chemin du référentiel doit être spécifié. Par défaut, le chemin est `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Si un magasin de nœuds de document est configuré, vous pouvez utiliser une [URI de chaîne de connexion Mongo](https://docs.mongodb.org/manual/reference/connection-string/).
+   >Si un magasin de nœuds de segment est configuré, le chemin du référentiel doit être spécifié. Par défaut, le chemin est `<aem-install-folder>/crx-quickstart/repository/segmentstore.` Si un magasin de nœuds de document est configuré, vous pouvez utiliser une [URI de chaîne de connexion Mongo](https://docs.mongodb.org/manual/reference/connection-string/).
 
    >[!NOTE]
    >
@@ -385,7 +385,7 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
-   >Différentes versions de l’outil doivent être utilisées en fonction de la version Oak que vous utilisez avec votre installation AEM. Consultez la liste des exigences de version ci-dessous avant d’utiliser l’outil :
+   >Différentes versions de l’outil doivent être utilisées selon la version Oak que vous utilisez avec votre installation d’AEM. Consultez la liste des exigences de version ci-dessous avant d’utiliser l’outil :
    >
    >
    >
@@ -393,24 +393,24 @@ Pour configurer la réplication sans binaires avec S3, les étapes suivantes son
    >    * Pour des versions d’Oak **plus récentes que celle ci-dessus**, utilisez la version d’Oak-run qui correspond au système Oak de votre installation AEM.
 
 
-1. Enfin, validez la configuration. Pour valider, recherchez un fichier unique ajouté à l’entrepôt de données par chaque référentiel qui le partage. Le format des fichiers est `repository-[UUID]`, où l’UUID est l’identifiant unique de chaque référentiel.
+1. Enfin, validez la configuration. Pour valider, recherchez un fichier unique ajouté au magasin de données par chaque référentiel qui le partage. Le format des fichiers est `repository-[UUID]`, où l’UUID est l’identifiant unique de chaque référentiel.
 
-   Par conséquent, une configuration appropriée doit comporter autant de fichiers uniques que de référentiels partageant l’entrepôt de données.
+   Par conséquent, une configuration appropriée doit comporter autant de fichiers uniques que de référentiels partageant le magasin de données.
 
-   Les fichiers sont stockés différemment selon l’entrepôt de données :
+   Les fichiers sont stockés différemment selon le magasin de données :
 
    * Pour le `FileDataStore`, les fichiers sont créés sous le chemin racine du dossier du magasin de données.
    * Pour `S3DataStore`, les fichiers sont créés dans le compartiment S3 configuré sous le dossier `META`.
 
-## Entrepôt de données Azure {#azure-data-store}
+## Magasin de données Azure {#azure-data-store}
 
 AEM peut être configuré pour stocker des données dans le service de stockage Azure de Microsoft®. Celui-ci utilise le PID `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` pour la configuration.
 
-Pour activer la fonctionnalité de magasin de données Azure, un Feature Pack contenant le connecteur Azure doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/), puis téléchargez la dernière version des versions 1.6.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Pour activer la fonctionnalité du magasin de données Azure, un pack de fonctionnalités contenant le connecteur Azure doit être téléchargé et installé. Accédez au [référentiel Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/), puis téléchargez la dernière version des versions 1.6.x du pack de fonctionnalités (par exemple, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
->Lors de l’utilisation d’AEM avec TarMK, les fichiers binaires sont stockés par défaut dans FileDataStore. Pour utiliser TarMK avec Azure DataStore, vous devez commencer AEM à utiliser le `crx3tar-nofds` runmode, par exemple :
+>Lorsque vous utilisez AEM avec TarMK, les fichiers binaires sont stockés par défaut dans FileDataStore. Pour utiliser TarMK avec le magasin de données Azure, vous devez lancer AEM à l’aide du mode d’exécution `crx3tar-nofds`, par exemple :
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
@@ -421,9 +421,9 @@ Une fois téléchargé, vous pouvez installer et configurer le connecteur Azure 
 1. Extrayez le contenu du fichier zip du pack de fonctionnalités dans un dossier temporaire.
 
 1. Accédez au dossier temporaire et copiez le contenu de `jcr_root/libs/system/install` vers le dossier `<aem-install>crx-quickstart/install`.
-1. Si AEM est déjà configuré pour fonctionner avec le stockage Tar ou MongoDB, supprimez tous les fichiers de configuration existants du dossier `/crx-quickstart/install` avant de continuer. Les fichiers qui doivent être supprimés sont les suivants :
+1. Si AEM est déjà configuré pour fonctionner avec le stockage Tar ou MongoDB, supprimez tous les fichiers de configuration existants du dossier `/crx-quickstart/install` avant de continuer. Les fichiers qui doivent être supprimés sont les suivants :
 
-   ForMongoMK :
+   Pour MongoMK :
 
    `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
@@ -435,24 +435,24 @@ Une fois téléchargé, vous pouvez installer et configurer le connecteur Azure 
 1. Modifiez le fichier de configuration et ajoutez les options de configuration requises par votre configuration.
 1. Démarrez AEM.
 
-Vous pouvez utiliser le fichier de configuration avec les options suivantes :
+Vous pouvez utiliser le fichier de configuration avec les options suivantes :
 
-* azureSas=&quot;&quot; : dans la version 1.6.3 du connecteur, la signature d’accès partagé Azure (SAS) est pris en charge. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
+* azureSas=&quot;&quot; : dans la version 1.6.3 du connecteur, la signature d’accès partagé Azure (SAS) est pris en charge. **Si les informations d’identification SAS et de stockage figurent dans le fichier de configuration, SAS a la priorité.** Pour plus d’informations sur SAS, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-sas-overview). Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
 
 * azureBlobEndpoint=&quot;&quot; : point d’entrée Blob Azure. Par exemple, https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la section [documentation officielle](https://azure.microsoft.com/fr-fr/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot; : nom du compte de stockage. Pour plus d’informations sur les informations d’identification de l’authentification Microsoft® Azure, reportez-vous à la [documentation officielle](https://azure.microsoft.com/fr-fr/documentation/articles/storage-create-storage-account).
 
 * secretKey=&quot;&quot; : clé d’accès au stockage. Assurez-vous que le caractère ’=’ est placé dans une séquence d’échappement telle que ’\=’.
-* container=&quot;&quot;&quot;: Nom du conteneur de stockage blob Microsoft® Azure. Le conteneur est un groupe d’un ensemble de objets Blob. Pour plus d’informations, lisez le [documentation officielle](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
-* maxConnections=&quot;&quot;: Nombre simultané de requêtes simultanées par opération. La valeur par défaut est 1.
+* container=&quot;&quot; : nom du conteneur de stockage d’objets blob Microsoft® Azure. Le conteneur est le regroupement d’un ensemble d’objets blob. Pour plus d’informations, consultez la [documentation officielle](https://learn.microsoft.com/fr-fr/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
+* maxConnections=&quot;&quot; : nombre simultané de requêtes simultanées par opération. La valeur par défaut est 1.
 * maxErrorRetry=&quot;&quot; : nombre de nouvelles tentatives par demande. La valeur par défaut est 3.
 * socketTimeout=&quot;&quot; : intervalle d’expiration, en millisecondes, utilisé pour la demande. la valeur par défaut est de 5 minutes.
 
 En plus des paramètres ci-dessus, les paramètres suivants peuvent également être configurés :
 
 * path : chemin d’accès du magasin de données. La valeur par défaut est `<aem-install>/repository/datastore.`.
-* RecordLength : taille minimale d’un objet devant être enregistré dans le magasin de données. La valeur par défaut est de 16 Ko. 
-* maxCachedBinarySize : Les fichiers binaires dont la taille est inférieure ou égale à cette taille sont stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est 1 7408 (17 Ko).
+* RecordLength : taille minimale d’un objet devant être enregistré dans le magasin de données. La valeur par défaut est de 16 Ko.
+* maxCachedBinarySize : les fichiers binaires dont la taille est inférieure ou égale à cette taille sont stockés dans le cache mémoire. La taille est en octets. La valeur par défaut est de 17 408 (17 Ko).
 * cacheSize : taille du cache. La valeur est exprimée en octets. La valeur par défaut est 64 Go.
 * secret : à utiliser uniquement si la réplication sans binaire est utilisée pour la configuration du magasin de données partagé.
 * stagingSplitPercentage : pourcentage de la taille du cache configuré afin d’être utilisé pour les chargements asynchrones intermédiaires. La valeur par défaut est 10.
@@ -475,42 +475,42 @@ Le processus de nettoyage de la mémoire du magasin de données est utilisé pou
 
 Vous pouvez exécuter le nettoyage de la mémoire du magasin de données en :
 
-1. Accédez à la console JMX à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
+1. En accédant à la console JMX qui se trouve à l’adresse *https://&lt;serveraddress:port>/system/console/jmx*
 1. Recherchant **RepositoryManagement.** Une fois que vous aurez trouvé le gestionnaire de référentiel MBean, cliquez dessus pour afficher les options disponibles.
-1. Faites défiler la page jusqu’à la fin, puis cliquez sur le bouton **startDataStoreGC(boolean markOnly)** lien.
+1. Faites défiler la page jusqu’à la fin, puis cliquez sur le lien **startDataStoreGC(boolean markOnly)**.
 1. Dans la boîte de dialogue suivante, saisissez `false` pour le paramètre `markOnly`, puis cliquez sur **Invoquer** :
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
    >[!NOTE]
    >
-   >Le `markOnly` indique si la phase de balayage du nettoyage s’exécute ou non.
+   >Le paramètre `markOnly` indique si la phase de balayage de récupération de l’espace mémoire sera exécutée ou non.
 
-## Nettoyage de la mémoire d’entrepôt de données pour un entrepôt de données partagé {#data-store-garbage-collection-for-a-shared-data-store}
-
->[!NOTE]
->
->Lors de l’exécution du nettoyage de la mémoire dans un entrepôt de données partagé ou en grappe, la configuration (avec Mongo ou Segment Tar) du journal peut afficher des avertissements sur l’impossibilité de supprimer certains ID d’objets blob. Les identifiants Blob supprimés dans un nettoyage précédent sont à nouveau référencés de manière incorrecte par d’autres noeuds de cluster ou partagés qui ne disposent pas d’informations sur les suppressions d’ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
+## Récupération de l’espace mémoire du magasin de données pour un magasin de données partagé {#data-store-garbage-collection-for-a-shared-data-store}
 
 >[!NOTE]
 >
->Si vous utilisez une configuration de magasin de données partagée et que le nettoyage de la mémoire du magasin de données est désactivé, l’exécution de la tâche de nettoyage du binaire Lucene peut soudainement augmenter l’espace disque utilisé. Envisagez de désactiver BlobTracker sur toutes les instances de création et de publication en procédant comme suit :
+>Lorsque la récupération de l’espace mémoire est effectuée dans une configuration de magasin de données partagé ou en cluster (avec Mongo ou Segment Tar), le journal peut afficher des avertissements sur l’impossibilité de supprimer certains ID de blob. Les ID de blob supprimés au cours d’une récupération de l’espace mémoire antérieure sont à nouveau référencés de manière incorrecte par d’autres nœuds partagés ou en cluster qui n’ont pas d’informations sur les suppressions des ID. Lorsque le nettoyage est effectué, un avertissement est donc enregistré dans le journal après une tentative de suppression d’un ID qui avait déjà été supprimé lors du précédent nettoyage. Ce comportement n’a toutefois aucune incidence sur les performances ou la fonctionnalité.
+
+>[!NOTE]
+>
+>Si vous utilisez une configuration de magasin de données partagée et que le nettoyage de la mémoire du magasin de données est désactivé, l’exécution de la tâche de nettoyage du binaire Lucene peut soudainement augmenter l’espace disque utilisé. Envisagez de désactiver BlobTracker sur toutes les instances de création et de publication en procédant comme suit :
 >
 >1. Désactivez l’instance AEM.
 >2. Ajoutez le paramètre `blobTrackSnapshotIntervalInSecs=L"0"` dans le fichier `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`. Ce paramètre nécessite Oak 1.12.0, 1.10.2 ou une version ultérieure.
 >3. Redémarrez l’instance AEM.
 
 
-Avec des versions plus récentes d’AEM, le nettoyage de la mémoire du magasin de données peut également être effectué sur des magasins de données partagés par plusieurs référentiels. Pour pouvoir exécuter le nettoyage de la mémoire d’entrepôt de données sur un entrepôt de données partagé, procédez comme suit :
+Avec des versions plus récentes d’AEM, le nettoyage de la mémoire du magasin de données peut également être effectué sur des magasins de données partagés par plusieurs référentiels. Pour pouvoir exécuter la récupération de l’espace mémoire dumagasin de données sur un magasin de données partagé, procédez comme suit :
 
 1. Vérifiez que les tâches de maintenance configurées pour le nettoyage de la mémoire du magasin de données sont désactivées sur toutes les instances de référentiel partageant le magasin de données.
 1. Exécutez les étapes mentionnées dans [Nettoyage de la mémoire binaire](/help/sites-deploying/data-store-config.md#data-store-garbage-collection) sur **toutes** les instances de référentiel partageant le magasin de données. Veillez toutefois à saisir `true` pour le paramètre `markOnly` avant de cliquer sur le bouton Invoquer :
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-1. Après avoir exécuté la procédure ci-dessus sur toutes les instances, exécutez à nouveau le nettoyage de la mémoire d’entrepôt de données depuis **any** des instances :
+1. Après avoir exécuté la procédure ci-dessus sur toutes les instances, exécutez à nouveau la récupération de l’espace mémoire du magsin de données à partir de **n’importe quelle** instance :
 
    1. Accédez à la console JMX, puis sélectionnez le gestionnaire de référentiel MBean.
-   1. Cliquez sur le bouton **Cliquez sur startDataStoreGC(boolean markOnly)** lien.
+   1. Cliquez sur le lien **Cliquez sur startDataStoreGC(boolean markOnly)**.
    1. Dans la boîte de dialogue suivante, saisissez à nouveau `false` pour le paramètre `markOnly`.
-   Tous les fichiers trouvés sont rassemblés à l’aide de la phase de marquage utilisée avant et supprimez les autres fichiers inutilisés de l’entrepôt de données.
+   Cela permettra d’assembler tous les fichiers trouvés à l’aide de la phase de repérage utilisée précédemment et de supprimer ensuite le reste de fichiers non utilisés du magasin de données.
