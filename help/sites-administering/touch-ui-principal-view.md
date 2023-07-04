@@ -1,7 +1,7 @@
 ---
 title: Affichage principal de la gestion des autorisations
 seo-title: Principal View for Permissions Management
-description: Découvrez la nouvelle interface utilisateur tactile qui facilite la gestion des autorisations.
+description: Découvrez la nouvelle interface de l’interface utilisateur tactile qui facilite la gestion des autorisations.
 seo-description: Learn about the new Touch UI interface that facilitates permissions management.
 uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '699'
-ht-degree: 100%
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+workflow-type: tm+mt
+source-wordcount: '760'
+ht-degree: 40%
 
 ---
 
@@ -28,79 +28,79 @@ AEM 6.5 introduit la gestion des autorisations pour les utilisateurs et pour le
 
 ### Accès à l’interface utilisateur {#accessing-the-ui}
 
-La nouvelle gestion des autorisations basée sur l’interface utilisateur est accessible via la carte Autorisations sous Sécurité, comme illustré ci-dessous :
+La nouvelle gestion des autorisations basée sur l’interface utilisateur est accessible via la carte Autorisations sous Sécurité , comme illustré ci-dessous :
 
-![](assets/screen_shot_2019-03-17at63333pm.png)
+![Interface utilisateur de gestion des autorisations](assets/screen_shot_2019-03-17at63333pm.png)
 
-Le nouvel affichage facilite la consultation de l’ensemble des privilèges et restrictions pour un principal donné pour tous les chemins d’accès pour lesquels les autorisations ont été accordées explicitement. Il n’est désormais plus nécessaire d’accéder à
+Le nouvel affichage facilite la consultation de l’ensemble des privilèges et restrictions pour un principal donné pour tous les chemins d’accès pour lesquels les autorisations ont été accordées explicitement. Cela supprime la nécessité d’accéder à
 
-CRXDE pour gérer les privilèges et les restrictions avancés. L’affichage a été fusionné. L’affichage par défaut est le groupe « Tout le monde ».
+CRXDE pour gérer les privilèges et les restrictions avancés. L’affichage a été fusionné. La vue est définie par défaut sur Groupe &quot;tout le monde&quot;.
 
-![](assets/unu-1.png)
+![Vue du groupe &quot;tout le monde&quot;](assets/unu-1.png)
 
-Il existe un filtre permettant à l’utilisateur de sélectionner le type de principaux au sein desquels chercher : **Utilisateurs** ou **Groupes**, ou **Tous** pour faire une recherche parmi l’ensemble des principaux **.**
+Il existe un filtre qui permet à l’utilisateur de sélectionner le type d’entités à examiner. **Utilisateurs**, **Groupes** ou **Tous** et rechercher n’importe quelle entité&#x200B;**.**
 
-![](assets/image2019-3-20_23-52-51.png)
+![Recherche de types d’entités principales](assets/image2019-3-20_23-52-51.png)
 
-### Affichage des autorisations pour un principal {#viewing-permissions-for-a-principal}
+### Affichage des autorisations pour un entité de sécurité {#viewing-permissions-for-a-principal}
 
-Le cadre de gauche permet aux utilisateurs de faire défiler la page vers le bas pour rechercher un principal, un groupe ou un utilisateur selon le filtre sélectionné, comme illustré ci-dessous :
+Le cadre de gauche permet aux utilisateurs de faire défiler l’écran vers le bas pour trouver l’entité principale ou rechercher un Groupe ou un Utilisateur en fonction du filtre sélectionné, comme illustré ci-dessous :
 
-![](assets/doi-1.png)
+![Affichage des autorisations pour un entité de sécurité](assets/doi-1.png)
 
-Cliquez sur le nom pour afficher les autorisations attribuées sur la droite. Le volet Autorisations affiche la liste des entrées de contrôle d’accès sur des chemins d’accès spécifiques, ainsi que les restrictions configurées.
+Cliquez sur le nom pour afficher les autorisations attribuées sur la droite. Le volet Autorisations affiche la liste des entrées de contrôle d’accès sur des chemins spécifiques, ainsi que les restrictions configurées.
 
-![](assets/trei-1.png)
+![Afficher la liste ACL](assets/trei-1.png)
 
-### Ajout d’une nouvelle entrée de contrôle d’accès pour un principal {#adding-new-access-control-entry-for-a-principal}
+### Ajout d’une nouvelle entrée de contrôle d’accès pour une entité de sécurité {#adding-new-access-control-entry-for-a-principal}
 
-Vous pouvez créer des autorisations supplémentaires en ajoutant un nouvel accès contrôlant l’entrée, en cliquant sur le bouton Ajouter une nouvelle entrée de contrôle d’accès.
+De nouvelles autorisations peuvent être ajoutées en ajoutant une nouvelle entrée de contrôle d’accès en cliquant sur le bouton Ajouter ACE .
 
-![](assets/patru.png)
+![Ajout d’une liste de contrôle d’accès pour un principal](assets/patru.png)
 
 La fenêtre ci-dessous apparaît alors. L’étape suivante consiste à choisir le chemin d’accès pour lequel l’autorisation doit être configurée.
 
-![](assets/cinci-1.png)
+![Configuration du chemin d’accès aux autorisations](assets/cinci-1.png)
 
 Sur cet exemple, nous sélectionnons un chemin pour lequel configurer une autorisation pour les **dam-users** :
 
-![](assets/sase-1.png)
+![Exemple de configuration pour dam-users](assets/sase-1.png)
 
 Une fois le chemin sélectionné, le workflow revient sur l’écran depuis lequel un ou plusieurs privilèges peuvent être sélectionnés parmi les espaces de noms disponibles (comme `jcr`, `rep` ou `crx`), comme indiqué ci-dessous.
 
-Vous pouvez ajouter des privilèges en les recherchant à l’aide du champ de texte, puis en les sélectionnant dans la liste.
+Vous pouvez ajouter des privilèges en effectuant une recherche à partir du champ de texte, puis en effectuant une sélection dans la liste.
 
 >[!NOTE]
 >
->Pour obtenir la liste complète des privilèges et descriptions, consultez [cette page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Pour obtenir la liste complète des privilèges et descriptions, reportez-vous à la section [cette page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Permission de recherche d’un chemin donné](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
 
-Une fois la liste des privilèges constituée, l’utilisateur peut choisir le type d’autorisation : Refuser ou Autoriser, comme illustré ci-dessous.
+Une fois la liste des privilèges sélectionnée, l’utilisateur peut choisir le Type d’autorisation : Refuser ou autoriser, comme illustré ci-dessous.
 
-![](assets/screen_shot_2019-03-17at63938pm.png) ![](assets/screen_shot_2019-03-17at63947pm.png)
+![Sélectionner l’autorisation](assets/screen_shot_2019-03-17at63938pm.png) ![Sélectionner l’autorisation](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Utilisation des restrictions {#using-restrictions}
 
-Outre la liste des privilèges et le type d’autorisation pour un chemin d’accès donné, cet écran permet également d’ajouter des restrictions pour un contrôle d’accès plus précis, comme illustré ci-dessous :
+Outre la liste des privilèges et le type d’autorisation sur un chemin donné, cet écran permet également d’ajouter des restrictions pour un contrôle d’accès affiné, comme illustré ci-dessous :
 
-![](assets/image2019-3-21_1-4-14.png)
+![Ajout de restrictions](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
 >Pour plus d’informations sur la signification de chaque restriction, consultez la [Documentation Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-Vous pouvez ajouter des restrictions en sélectionnant le type de restriction, en entrant la valeur et en appuyant sur l’icône **+**, comme on peut voir ci-dessous.
+Vous pouvez ajouter des restrictions comme illustré ci-dessous en choisissant le type de restriction, en entrant la valeur et en appuyant sur la variable **+** icône .
 
-![](assets/sapte-1.png) ![](assets/opt-1.png)
+![Ajouter le type de restriction](assets/sapte-1.png) ![Ajouter le type de restriction](assets/opt-1.png)
 
 La nouvelle entrée de contrôle d’accès est reflétée dans la liste de contrôle d’accès, comme illustré ci-dessous. Notez que `jcr:write` est une autorisation agrégée qui inclut `jcr:removeNode`, qui a été ajouté précédemment, mais qui n’apparaît pas ci-dessous, car il se trouve sous `jcr:write`.
 
-### Modification des entrées de contrôle d’accès {#editing-aces}
+### Modification des ACE {#editing-aces}
 
-Pour modifier les entrées de contrôle d’accès, sélectionnez un principal et l’entrée de contrôle d’accès à modifier.
+Les entrées de contrôle d’accès peuvent être modifiées en sélectionnant une entité et en choisissant l’entrée de contrôle d’accès que vous souhaitez modifier.
 
-Par exemple, ici, nous pouvons modifier l’entrée ci-dessous pour les **utilisateurs DAM** en cliquant sur l’icône en forme de crayon sur la droite :
+Par exemple, ici, nous pouvons modifier l’entrée ci-dessous pour **dam-users** en cliquant sur l’icône en forme de crayon à droite :
 
 ![Ajouter une restriction](assets/image2019-3-21_0-35-39.png)
 
@@ -110,29 +110,29 @@ Les entrées de contrôle d’accès configurées présélectionnées apparaisse
 
 Ici, nous ajoutons l’autorisation `addChildNodes` pour les **dam-users** sur le chemin donné.
 
-![](assets/image2019-3-21_0-45-35.png)
+![Ajout d’un privilège](assets/image2019-3-21_0-45-35.png)
 
-Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite. Les modifications se répercuteront sur les nouvelles autorisations pour les **dam-users**, comme illustré ci-dessous :
+Les modifications peuvent être enregistrées en cliquant sur le bouton **Enregistrer** en haut à droite, et les modifications seront répercutées dans les nouvelles autorisations pour **dam-users** comme illustré ci-dessous :
 
-![](assets/zece-1.png)
+![Enregistrez les modifications](assets/zece-1.png)
 
-### Suppression des entrées de contrôle d’accès {#deleting-aces}
+### Suppression des ACE {#deleting-aces}
 
-Vous pouvez supprimer des entrées de contrôle d’accès pour supprimer l’ensemble des autorisations accordées à un principal sur un chemin spécifique. Vous pouvez utiliser l’icône X en regard de l’entrée de contrôle d’accès pour la supprimer, comme illustré ci-dessous :
+Vous pouvez supprimer des entrées de contrôle d’accès pour supprimer l’ensemble des autorisations accordées à un principal sur un chemin spécifique. L’icône X en regard de ACE peut être utilisée pour la supprimer, comme illustré ci-dessous :
 
-![](assets/image2019-3-21_0-53-19.png) ![](assets/unspe.png)
+![Suppression d’ACE](assets/image2019-3-21_0-53-19.png) ![Suppression d’ACE](assets/unspe.png)
 
-### Combinaisons d’autorisations de l’interface utilisateur classique {#classic-ui-privilege-combinations}
+### Combinaisons de privilèges de l’interface utilisateur classique {#classic-ui-privilege-combinations}
 
-Notez que la nouvelle interface utilisateur d’autorisations utilise explicitement l’ensemble d’autorisations de base plutôt que des combinaisons prédéfinies qui ne reflètent pas réellement les autorisations sous-jacentes qui ont été accordées.
+Notez que la nouvelle interface utilisateur des autorisations utilise explicitement l’ensemble de base de privilèges au lieu de combinaisons prédéfinies qui ne reflétaient pas vraiment les privilèges sous-jacents exacts qui ont été accordés.
 
-Ceci entraînait une certaine confusion quant à la configuration exacte. Le tableau suivant répertorie le mappage entre les combinaisons d’autorisations de l’interface utilisateur classique et les autorisations réelles qui les composent :
+Ceci entraînait une certaine confusion quant à la configuration exacte. Le tableau suivant répertorie le mappage entre les combinaisons de privilèges de l’interface utilisateur classique et les privilèges réels qui les constituent :
 
 <table>
  <tbody>
   <tr>
-   <th>Combinaisons d’autorisations de l’interface utilisateur classique</th>
-   <th>Privilèges accordés par l’interface utilisateur d’autorisations</th>
+   <th>Combinaisons de privilèges de l’interface utilisateur classique</th>
+   <th>Privilège de l’interface utilisateur Autorisations</th>
   </tr>
   <tr>
    <td>Lecture</td>

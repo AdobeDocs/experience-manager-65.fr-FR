@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5402'
 ht-degree: 49%
 
 ---
@@ -284,14 +284,14 @@ Voici des recommandations sur la gestion des listes de contrôle d’accès :
 
 * N’affectez pas d’autorisations directement aux utilisateurs. Affectez-les uniquement aux groupes.
 
-   Cela simplifie la maintenance, dans la mesure où le nombre de groupes est beaucoup plus petit que le nombre d’utilisateurs, et également moins volatile.
+  Cela simplifie la maintenance, dans la mesure où le nombre de groupes est beaucoup plus petit que le nombre d’utilisateurs, et également moins volatile.
 
 * Si vous souhaitez qu’un groupe/utilisateur puisse uniquement modifier les pages, ne lui affectez pas de droits de création ou de refus. Accordez-leur uniquement des droits de modification et de lecture.
 * Utilisez l’autorisation Refuser avec modération. Dans la mesure du possible, utilisez uniquement Autoriser.
 
-   L’utilisation de l’autorisation Autoriser peut avoir des effets inattendus si les autorisations sont appliquées dans un ordre différent de l’ordre prévu. Si un utilisateur est membre de plusieurs groupes, les instructions Refuser d’un groupe peuvent annuler l’instruction Autoriser d’un autre groupe ou de l’autre manière. Il est difficile de garder un aperçu lorsqu’une telle chose se produit et peut facilement donner des résultats imprévus, alors que les affectations Autoriser ne provoquent pas de tels conflits.
+  L’utilisation de l’autorisation Autoriser peut avoir des effets inattendus si les autorisations sont appliquées dans un ordre différent de l’ordre prévu. Si un utilisateur est membre de plusieurs groupes, les instructions Refuser d’un groupe peuvent annuler l’instruction Autoriser d’un autre groupe ou de l’autre manière. Il est difficile de garder un aperçu lorsqu’une telle chose se produit et peut facilement donner des résultats imprévus, alors que les affectations Autoriser ne provoquent pas de tels conflits.
 
-   Adobe vous recommande d’utiliser Autoriser plutôt que Refuser . [Bonnes pratiques](#best-practices).
+  Adobe vous recommande d’utiliser Autoriser plutôt que Refuser . [Bonnes pratiques](#best-practices).
 
 Avant de modifier l’une des autorisations, assurez-vous de comprendre son fonctionnement et ses interactions. Consultez la documentation CRX qui illustre comment AEM WCM [évalue les droits d’accès](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), ainsi que des exemples sur la configuration des listes de contrôle d’accès.
 
@@ -391,7 +391,7 @@ Pour accéder à AEM sécurité WCM, effectuez l’une des opérations suivantes
 
 * Dans l’écran d’accueil ou à différents emplacements d’AEM, cliquez sur l’icône de sécurité :
 
-![](do-not-localize/wcmtoolbar.png)
+![Onglet Sécurité WCM AEM](do-not-localize/wcmtoolbar.png)
 
 * Accédez directement à `https://<server>:<port>/useradmin`. Assurez-vous de vous connecter à AEM avec des droits d’administration.
 
@@ -640,7 +640,6 @@ Le droit de réplication est le droit de publier du contenu, qui peut être déf
 >* Les privilèges de réplication d’un utilisateur remplacent les privilèges de réplication d’un groupe.
 >* Les droits de réplication Autoriser ont une priorité supérieure aux droits de réplication Refuser. Consultez la section [Autorisations dans AEM](#permissions-in-aem) pour plus d’informations.
 >
-
 
 Pour définir les privilèges de réplication :
 

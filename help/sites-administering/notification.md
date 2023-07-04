@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2026'
 ht-degree: 85%
 
 ---
@@ -144,11 +144,11 @@ Le modèle doit avoir le format suivant :
 * `${userId}`, l’ID de l’utilisateur ayant déclenché l’événement.
 * `${modifications}`, le type de l’événement de page et le chemin de page au format suivant :
 
-   &lt;page event type> => &lt;page path>
+  &lt;page event type> => &lt;page path>
 
-   Par exemple :
+  Par exemple :
 
-   PageModified => /content/geometrixx/en/products
+  PageModified => /content/geometrixx/en/products
 
 ### Modèles de courrier électronique pour la notification de workflow {#email-templates-for-workflow-notification}
 
@@ -342,7 +342,7 @@ Enfin, confirmez la configuration en procédant comme suit :
 1. Recherchez le **répertoire Azure principal** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Cliquez sur **Enregistrement de l’application** - **Nouvel enregistrement**
 
-   ![](assets/oauth-outlook1.png)
+   ![Configuration de Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Renseignez les informations selon vos besoins, puis cliquez sur **Enregistrer**
 1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**
@@ -397,7 +397,7 @@ Ensuite, intégrez vos paramètres OAuth2 à AEM :
 
 Une fois configurés, les paramètres doivent se présenter comme suit :
 
-![](assets/oauth-outlook-smptconfig.png)
+![Vue des configurations AEM côté](assets/oauth-outlook-smptconfig.png)
 
 Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant comme suit :
 

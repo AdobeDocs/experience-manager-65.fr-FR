@@ -1,7 +1,7 @@
 ---
 title: Opérations Granite - Administration des utilisateurs et des groupes
 seo-title: Granite Operations - User and Group Administration
-description: En savoir plus sur l’administration des utilisateurs et des groupes Granite.
+description: Découvrez l’administration des utilisateurs et des groupes Granite.
 seo-description: Learn about Granite user and group administration.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
@@ -11,54 +11,54 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: ht
-source-wordcount: '923'
-ht-degree: 100%
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+workflow-type: tm+mt
+source-wordcount: '945'
+ht-degree: 72%
 
 ---
 
 # Opérations Granite - Administration des utilisateurs et des groupes{#granite-operations-user-and-group-administration}
 
-Au fur et à mesure que Granite intègre l’implémentation du référentiel CRX de la spécification API JCR, il applique sa propre administration des utilisateurs et des groupes.
+Granite intègre l’implémentation du référentiel CRX de la spécification API JCR. Elle dispose de sa propre administration utilisateur et de groupe.
 
-Ces comptes sont la base des [comptes AEM](/help/sites-administering/security.md) et les modifications de compte apportées avec l’administration Granite sont reflétées si/lorsque l’accès aux comptes s’effectue à partir de la [console AEM Users](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). La console AEM Users vous permet également de gérer les autorisations et autres éléments spécifiques à AEM.
+Ces comptes sont la base des [comptes AEM](/help/sites-administering/security.md) et les modifications de compte apportées avec l’administration Granite sont reflétées si/lorsque l’accès aux comptes s’effectue à partir de la [console AEM Users](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (par exemple, `http://localhost:4502/useradmin`). Dans la console Utilisateurs d’AEM, vous pouvez également gérer les privilèges et d’autres détails d’AEM.
 
-Les consoles d’administration des utilisateurs et des groupes Granite sont disponibles via la console **[Outils](/help/sites-administering/tools-consoles.md)** de l’interface utilisateur optimisée pour les écrans tactiles :
+Les consoles d’administration des utilisateurs et des groupes Granite sont toutes deux disponibles dans la **[Outils](/help/sites-administering/tools-consoles.md)** console de l’IU optimisée pour les écrans tactiles :
 
 ![chlimage_1-72](assets/chlimage_1-72a.png)
 
-Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la console adéquate. Dans chaque console, vous pouvez agir en utilisant la case à cocher, puis les actions de la barre d’outils ou en ouvrant les détails de compte par le biais du lien situé sous **Nom**.
+Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la console adéquate. Dans les deux, vous pouvez agir soit en utilisant la case à cocher, puis les actions de la barre d’outils, soit en ouvrant les détails du compte via le lien situé sous **Nom**.
 
 * [Administration des utilisateurs](#user-administration)
 
-   ![chlimage_1-73](assets/chlimage_1-73a.png)
+  ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-   La console **Utilisateurs** répertorie :
+  Le **Utilisateurs** listes console :
 
-   * le nom de l’utilisateur
+   * nom d’utilisateur
    * l’identifiant de connexion de l’utilisateur (nom de compte)
    * tout titre attribué au compte
 
 * [Administration des groupes](#group-administration)
 
-   ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-   La console **Groupes** répertorie :
+  Le **Groupes** listes console :
 
-   * le nom du groupe
-   * la description du groupe
-   * le nombre d’utilisateurs/de groupes dans le groupe
+   * nom du groupe
+   * la description du groupe ;
+   * le nombre d’utilisateurs/de groupes dans le groupe ;
 
 ## Administration des utilisateurs {#user-administration}
 
 ### Ajout d’un nouvel utilisateur {#adding-a-new-user}
 
-1. Utilisez l’icône **Ajouter un utilisateur** :
+1. Utilisez la variable **Ajouter un utilisateur** icon :
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Ajouter un utilisateur](do-not-localize/chlimage_1-1.png)
 
-1. Le formulaire **Créer un utilisateur** s’ouvre :
+1. Le **Créer un utilisateur** Le formulaire s’ouvre :
 
    ![chlimage_1-75](assets/chlimage_1-75a.png)
 
@@ -66,16 +66,16 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
    * **ID**
 
-       Il s’agit de l’identifiant unique du compte utilisateur. Il est obligatoire et ne peut pas contenir d’espaces.
+      Il s’agit de l’identifiant unique du compte utilisateur. Il est obligatoire et ne peut pas contenir d’espaces.
 
    * **Adresse électronique**
    * **Mot de passe**
 
-      Le mot de passe est obligatoire.
+     Le mot de passe est obligatoire.
 
    * **Confirmer le mot de passe**
 
-      Ce champ est obligatoire car nécessaire à la confirmation du mot de passe.
+     Ce champ est obligatoire car nécessaire à la confirmation du mot de passe.
 
    * **Prénom**
    * **Nom**
@@ -93,28 +93,27 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **Paramètres du compte**
 
       * **Statut**
-Vous pouvez marquer le compte comme 
-**actif** ou **inactif**.
+Vous pouvez marquer le compte comme **actif** ou **inactif**.
+
    * **Photo**
 
-      Vous pouvez ici charger une photo à utiliser comme avatar.
+     Vous pouvez ici charger une photo à utiliser comme avatar.
 
-      Types de fichiers acceptés : `.jpg .png .tif .gif`
+     Types de fichiers acceptés : `.jpg .png .tif .gif`
 
-      Taille préférée : `240x240px`
+     Taille préférée : `240x240px`
 
    * **Ajouter un utilisateur aux groupes**
 
-      Utilisez le menu déroulant de sélection pour sélectionner les groupes dont l’utilisateur doit être membre. Pour les groupes déjà sélectionnés, utilisez le **X** à côté du nom pour les désélectionner avant d’enregistrer.
+     Utilisez le menu déroulant de sélection pour sélectionner les groupes dont l’utilisateur doit être membre. Pour les groupes déjà sélectionnés, utilisez le **X** à côté du nom pour les désélectionner avant d’enregistrer.
 
    * **Groupes**
 
-      Liste des groupes dont l’utilisateur est actuellement membre. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+     Liste des groupes dont l’utilisateur est actuellement membre. Utilisez la variable **X** par le nom à désélectionner avant l’enregistrement.
 
+1. Lorsque vous avez défini le compte utilisateur, utilisez :
 
-1. Lorsque vous avez défini le compte d’utilisateur, utilisez :
-
-   * **Annuler** pour abandonner l’enregistrement.
+   * **Annuler** pour annuler l’enregistrement.
    * **Enregistrer** pour terminer l’enregistrement. La création du compte d’utilisateur est confirmée par un message.
 
 ### Modification d’un utilisateur existant {#editing-an-existing-user}
@@ -141,12 +140,12 @@ Vous pouvez marquer le compte comme
 
    Un message confirme que le mot de passe a été modifié.
 
-### Affectation rapide de groupes {#quick-group-assignment}
+### Attribution de groupes rapides {#quick-group-assignment}
 
 1. Utilisez la case à cocher pour marquer un ou plusieurs utilisateurs.
 1. Utilisez l’icône **Groupes** :
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Utilisation de l’icône Groupes](do-not-localize/chlimage_1-2.png)
 
    Pour ouvrir le menu déroulant de sélection de groupe :
 
@@ -164,7 +163,7 @@ Vous pouvez marquer le compte comme
 1. Utilisez la case à cocher pour marquer un ou plusieurs utilisateurs.
 1. Utilisez l’icône **Supprimer** pour supprimer les détails de l’utilisateur :
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Suppression des détails d’utilisateur existants](do-not-localize/chlimage_1-3.png)
 
 1. Vous êtes invité(e) à confirmer la suppression, puis un message confirme que la suppression a eu lieu.
 
@@ -172,11 +171,11 @@ Vous pouvez marquer le compte comme
 
 ### Ajout d’un nouveau groupe {#adding-a-new-group}
 
-1. Utilisez l’icône Ajouter un groupe :
+1. Utilisez l’icône Ajouter un groupe :
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Ajouter un nouveau groupe](do-not-localize/chlimage_1-4.png)
 
-1. Le formulaire **Créer un groupe** s’ouvre :
+1. Le **Créer un groupe** Le formulaire s’ouvre :
 
    ![chlimage_1-79](assets/chlimage_1-79a.png)
 
@@ -184,27 +183,27 @@ Vous pouvez marquer le compte comme
 
    * **ID**
 
-      Il s’agit d’un identifiant unique pour le groupe. Il est obligatoire et ne peut pas contenir d’espaces.
+     Il s’agit d’un identifiant unique pour le groupe. Il est obligatoire et ne peut pas contenir d’espaces.
 
    * **Nom**
 
-      Nom du groupe. Il est affiché dans la console Groupes.
+     Nom du groupe. Il est affiché dans la console Groupes.
 
    * **Description**
 
-      Description du groupe.
+     Description du groupe.
 
    * **Ajouter des membres au groupe**
 
-      Utilisez le menu déroulant de sélection pour sélectionner un ou des utilisateurs à ajouter au groupe. Pour les groupes déjà sélectionnés, utilisez le **X** à côté du nom pour les désélectionner avant d’enregistrer.
+     Utilisez le menu déroulant de sélection pour sélectionner un ou des utilisateurs à ajouter au groupe. Pour les groupes déjà sélectionnés, utilisez le **X** à côté du nom pour les désélectionner avant d’enregistrer.
 
    * **Membres du groupe**
 
-      Liste des utilisateurs figurant dans le groupe. Utilisez le **X** situé à côté du nom pour le désélectionner avant l’enregistrement.
+     Liste des utilisateurs figurant dans le groupe. Utilisez la variable **X** par le nom à désélectionner avant l’enregistrement.
 
-1. Lorsque vous avez défini le groupe, utilisez :
+1. Lorsque vous avez défini le groupe, utilisez :
 
-   * **Annuler** pour abandonner l’enregistrement.
+   * **Annuler** pour annuler l’enregistrement.
    * **Enregistrer** pour terminer l’enregistrement. La création du groupe est confirmée par un message.
 
 ### Modification d’un groupe existant {#editing-an-existing-group}
@@ -218,7 +217,7 @@ Vous pouvez marquer le compte comme
 1. Utilisez la case à cocher pour marquer un groupe.
 1. Utilisez l’icône **Copier** pour copier les détails du groupe :
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Copier un groupe existant](do-not-localize/chlimage_1-5.png)
 
 1. Le formulaire **Modifier les paramètres de groupe** s’ouvre.
 
@@ -231,6 +230,6 @@ Vous pouvez marquer le compte comme
 1. Utilisez la case à cocher pour marquer un ou plusieurs groupes.
 1. Utilisez l’icône **Supprimer** pour supprimer les détails du groupe :
 
-   ![](do-not-localize/chlimage_1-6.png)
+   ![Suppression d’un groupe existant](do-not-localize/chlimage_1-6.png)
 
-1. Vous êtes invité à confirmer la suppression, puis un message confirme que la suppression a eu lieu.
+1. Vous êtes invité(e) à confirmer la suppression, puis un message confirme que la suppression a eu lieu.
