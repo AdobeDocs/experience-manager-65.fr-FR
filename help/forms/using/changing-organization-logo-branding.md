@@ -1,7 +1,7 @@
 ---
 title: Modifier le logo de l’organisation pour l’identité graphique
 seo-title: Changing the organization logo for branding
-description: Pour attribuer une marque à l’espace de travail AEM Forms, fournissez le logo de votre organisation en personnalisant le logo par défaut.
+description: Pour attribuer une marque à l’espace de travail AEM Forms, remplacez le logo par défaut par celui de votre organisation.
 seo-description: To brand AEM Forms workspace provide the logo of your organization by customizing the default logo.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
@@ -11,21 +11,21 @@ topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 exl-id: 49572f2a-f3ec-4ee6-98b8-2563de1cf96c
 source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '133'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 # Modifier le logo de l’organisation pour l’identité graphique {#changing-the-organization-logo-for-branding}
 
-Le logo de l’organisation s’affiche dans le coin supérieur gauche de l’espace de travail AEM Forms. Pour mettre à jour le logo, suivez le [Étapes génériques de la personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) puis les étapes suivantes.
+Le logo de l’organisation s’affiche dans le coin supérieur gauche de l’espace de travail AEM Forms. Pour mettre à jour le logo, suivez les [Étapes génériques de personnalisation de l’espace de travail AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization), puis les étapes ci-après.
 
 1. Créez un logo et nommez le fichier `NewWorkspace.png`. Placez le fichier image dans le dossier /apps/ws/images à l’aide d’un client WebDAV.
 
    >[!NOTE]
    >
-   >La taille recommandée de l’image de logo est de 218 px × 20 px.
+   >La taille recommandée de l’image de logo est de 218 px × 20 px.
 
    >[!NOTE]
    >
