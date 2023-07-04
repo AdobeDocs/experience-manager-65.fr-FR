@@ -1,5 +1,5 @@
 ---
-title: Création de pages
+title: Créer des pages
 description: 'La création avec AEM offre deux vues d’ensemble. (1) Premières étapes pour les auteurs : une introduction pour les nouveaux auteurs et (2) le Guide rapide pour la création de pages : un guide rapide sur les principales actions (dans les grandes lignes).'
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ La section suivante fournit un aperçu de la création avec AEM :
 >
 >Cette section couvre les tâches impliquées dans la création d’une page de contenu. <!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
 
-## Présentation rapide des fonctionnalités utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
+## Vue d’ensemble rapide des fonctionnalités utilisées pour la création de pages {#quick-overview-of-features-used-for-authoring-pages}
 
-Pour vous aider lors de la création de pages, l’environnement de création propose des fonctionnalités telles que :
+Pour vous aider lors de la création de pages, l’environnement de création propose des fonctionnalités telles que :
 
 * **Glisser-déplacer**
 Il est possible de déplacer des composants (texte, image, etc.) et des ressources numériques (images, par exemple) sur la page en les faisant simplement glisser jusqu’à l’emplacement voulu.
