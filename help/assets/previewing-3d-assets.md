@@ -8,7 +8,7 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '580'
 ht-degree: 100%
 
@@ -33,10 +33,10 @@ L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
-| GLB | Transmission GL binaire | model/gltf-binary |  |
+| GLB | Transmission GL binaire | model/gltf-binary | |
 | GLTF | Format de transmission GL | model/gltf+json | Consultez **la remarque** ci-dessous. |
-| OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
-| STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
+| OBJ | Fichier d’objet 3D WaveFront | application/x-tgif | |
+| STL | Stéréolithographie | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
 | USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
 
@@ -82,7 +82,7 @@ Consultez les sections [Formats pris en charge pour la prévisualisation 3D](#su
    | **Effectuer un panoramique avec la caméra** | Vous pouvez effectuer un panoramique vers la gauche, la droite, le haut ou le bas. | Clic droit + glisser. | Appuyez avec deux doigts + glisser. |
    | **Faire un zoom avec la caméra** | Se déplacer dans et hors des zones de la scène 3D. | Roue de défilement. | Appuyer avec deux doigts en les rapprochant. |
    | **Recentrer la caméra** | Recentrez la caméra sur un point d’un objet dans la scène 3D. | Double-cliquer. | Double appui. |
-   | **Réinitialiser** | Près du coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre du fichier 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
-   | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, sélectionnez l’icône Plein écran. |  |  |
+   | **Réinitialiser** | Près du coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre du fichier 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |   |   |
+   | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, sélectionnez l’icône Plein écran. |   |   |
 
 1. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Fermer]**.
