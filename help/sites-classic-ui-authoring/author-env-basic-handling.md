@@ -1,6 +1,6 @@
 ---
 title: Gestion de base
-description: Présentation de la gestion de base lors de l’utilisation de l’environnement de création AEM. Il s’appuie sur la console Sites.
+description: Vue d’ensemble de la gestion de base lors de l’utilisation de l’environnement de création d’AEM. Il s’appuie sur la console Sites.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1194'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->* Cette page est conçue pour donner un aperçu des opérations de gestion de base lors de l’utilisation de l’environnement de création AEM. Il s’appuie sur la console **Sites**.
+>* Ce document donne une vue d’ensemble des opérations de gestion de base dans l’environnement de création d’AEM. Il s’appuie sur la console **Sites**.
 >
->* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et/ou des fonctionnalités supplémentaires sont disponibles dans certaines consoles. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées seront traitées plus en détail sur d’autres pages.
+>* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles. En outre, des fonctionnalités supplémentaires sont disponibles dans certaines consoles. Vous trouverez des informations spécifiques et plus détaillées sur les consoles individuelles et leurs fonctionnalités associées sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et de la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 
-## L&#39;écran de bienvenue {#the-welcome-screen}
+## L’écran de bienvenue {#the-welcome-screen}
 
-L’IU classique propose une sélection de consoles, qui utilisent des mécanismes connus pour parcourir et initier des actions, notamment cliquer, double-cliquer et [menus contextuels](#context-menus).
+L’IU classique propose une sélection de consoles, qui utilisent des mécanismes connus pour parcourir et initier des actions comme cliquer et double-cliquer, ou encore des [menus contextuels](#context-menus).
 
-Lors de la connexion, l’écran de bienvenue s’affiche. Il fournit une liste de liens vers les consoles et services :
+Lors de la connexion, l’écran de bienvenue s’affiche. Il fournit une liste de liens vers les consoles et services :
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -83,7 +83,7 @@ Les principales consoles sont les suivantes :
  </tbody>
 </table>
 
-Le **Sites web** La console propose deux volets grâce auxquels vous pouvez parcourir et gérer vos pages :
+La console **Sites web** propose deux volets grâce auxquels vous pouvez parcourir et gérer vos pages :
 
 * Volet de gauche
 
@@ -95,32 +95,32 @@ Le **Sites web** La console propose deux volets grâce auxquels vous pouvez parc
 
    Présente les pages (à l’emplacement sélectionné dans le volet de gauche) et permet d’utiliser des actions.
 
-À partir de là, vous pouvez [gestion des pages](/help/sites-authoring/managing-pages.md) à l’aide de la barre d’outils, d’un menu contextuel ou en ouvrant une page pour d’autres actions.
+À partir de là, vous pouvez [gérer vos pages](/help/sites-authoring/managing-pages.md) à l’aide de la barre d’outils ou d’un menu contextuel, ou encore en ouvrant une page afin de réaliser d’autres actions.
 
 >[!NOTE]
 >
->Dans toutes les consoles, la gestion de base est la même. Cette section se concentre sur le **Sites web** console, car il s’agit de la Principale console utilisée lors de la création.
+>Dans toutes les consoles, la gestion de base est la même. Cette section traite de la console **Sites web**, car il s’agit de la principale console utilisée lors de la création.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
 ## Accès à l’Aide {#accessing-help}
 
-Sur diverses consoles (par exemple, Sites Web), il existe également **Aide** est disponible. Il ouvre Package Share ou le site de documentation.
+Sur diverses consoles (par exemple, la console Sites web), le bouton **Aide** est également disponible et permet d’ouvrir le partage de packages ou le site de documentation.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-Lors de la modification d’une page, la variable [sidekick comporte également un bouton d’accès à l’aide](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Lors de la modification d’une page, le [sidekick a également un bouton permettant d’accéder à l’aide](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
-## Navigation dans la console Sites web {#navigating-with-the-websites-console}
+## Naviguer dans la console Sites web {#navigating-with-the-websites-console}
 
-Le **Sites web** La console répertorie vos pages de contenu dans une arborescence (volet de gauche). Pour faciliter la navigation, les sections de l’arborescence peuvent être développées (+) ou réduites (-) selon les besoins :
+La console **Sites web** répertorie vos pages de contenu dans une arborescence (volet de gauche). Pour faciliter la navigation, les sections de l’arborescence peuvent être développées (+) ou réduites (-), selon les besoins :
 
-* Un seul clic sur le nom de la page (dans le volet de gauche) permet d’effectuer les opérations suivantes :
+* Un seul clic sur le nom de la page (dans le volet de gauche) aura l’effet suivant :
 
-   * Répertorier les pages enfants dans le volet de droite
-   * Développez également la structure dans le volet de gauche.
+   * répertorier les pages enfants dans le volet de droite.
+   * Cela développe également la structure dans le volet de gauche.
 
-      Pour des raisons de performances, cette action dépend du nombre de noeuds enfants. Avec une installation standard, cette méthode d’extension fonctionne avec un nombre de nœuds enfants inférieur ou égal à `30`.
+      Pour des raisons de performances, cette action dépend du nombre de nœuds enfants. Avec une installation standard, cette méthode d’extension fonctionne avec un nombre de nœuds enfants inférieur ou égal à `30`.
 
 * Un double-clic sur le nom de la page (volet de gauche) développe également l’arborescence. Cependant, étant donné que la page est ouverte en même temps, cet effet est moins visible.
 
@@ -128,24 +128,24 @@ Le **Sites web** La console répertorie vos pages de contenu dans une arborescen
 >
 >Cette valeur par défaut (`30`) peut être modifiée pour chaque console dans les configurations du widget siteadmin spécifiques à votre application :
 >
->Sur le noeud siteadmin :
+>Sur le nœud siteadmin :
 >
->Définissez la valeur de la propriété :
+>définissez la valeur de la propriété :
 >`treeAutoExpandMax`
 >Sur :
 >`/apps/wcm/core/content/siteadmin`
 >
->Ou globalement dans le thème :
->Définissez la valeur de :
+>ou globalement dans le thème :
+>définissez la valeur de :
 >`TREE_AUTOEXPAND_MAX`
 >dans :
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Voir [SiteAdmin dans l’API CQ Widget](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) pour plus d’informations.
+>Voir [SiteAdmin dans l’API Widget CQ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) pour plus d’informations.
 
 ## Informations sur la page dans la console Sites web {#page-information-on-the-websites-console}
 
-Le volet de droite de la **Sites web** La console fournit un mode Liste avec des informations sur les pages :
+Le volet de droite de la console **Sites web** fournit une vue de liste avec des informations sur les pages :
 
 ![page-info](assets/page-info.png)
 
@@ -163,19 +163,19 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
   </tr>
   <tr>
    <td>Titre</td>
-   <td>Titre qui s’affiche sur la page.</td>
+   <td>Le titre qui s’affiche sur la page.</td>
   </tr>
   <tr>
    <td>Nom</td>
-   <td>Le nom AEM fait référence à la page.</td>
+   <td>Le nom qu’AEM attribue à la page.</td>
   </tr>
   <tr>
    <td>Publié</td>
-   <td>Indique si la page a été publiée et indique la date et l’heure de publication.</td>
+   <td>Indique si la page a été publiée et donne la date et l’heure de publication.</td>
   </tr>
   <tr>
    <td>Modifié</td>
-   <td>Indique si la page a été modifiée et fournit la date et l’heure de modification. Pour enregistrer toute modification, vous devez activer la page.</td>
+   <td>Indique si la page a été modifiée et donne la date et l’heure de modification. Pour enregistrer toute modification, vous devez activer la page.</td>
   </tr>
   <tr>
    <td>Publication Scene7</td>
@@ -183,7 +183,7 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
   </tr>
   <tr>
    <td>Statut</td>
-   <td>Indique l’état actuel de la page, par exemple si la page fait partie d’un workflow ou d’une Live Copy, ou si une page est actuellement verrouillée.</td>
+   <td>Indique le statut actuel de la page, par exemple si la page fait partie d’un workflow ou d’une Live Copy, ou si une page est actuellement verrouillée.</td>
   </tr>
   <tr>
    <td>Impressions</td>
@@ -210,21 +210,21 @@ Les informations suivantes sont disponibles ; un sous-ensemble de ces champs s�
 
 >[!NOTE]
 >
->Pour sélectionner les colonnes visibles, pointez avec votre souris sur leurs titres. Un menu déroulant s’affiche. Vous pouvez utiliser la variable **Colonnes** .
+>Pour sélectionner les colonnes visibles, pointez avec votre souris sur leurs titres. Un menu déroulant s’affiche, à partir duquel vous pouvez utiliser l’option **Colonnes**.
 
-Couleurs en regard des pages dans la variable **Publié** et **Modifié** les colonnes indiquent l’état de publication :
+Les couleurs en regard des pages dans les colonnes **Publié** et **Modifié** indiquent le statut de la publication :
 
 | **Colonne** | **Couleur** | **Description** |
 |---|---|---|
 | Publié | Vert | Publication réussie. Le contenu est publié. |
-| Publié | Jaune | Publication en attente. Le système n&#39;a pas encore reçu la confirmation de publication. |
+| Publié | Jaune | Publication en attente. Le système n’a pas encore reçu la confirmation de la publication. |
 | Publié | Rouge | Échec de la publication. Il n’existe aucune connexion avec l’instance de publication. Cela peut également signifier que le contenu a été désactivé. |
-| Publié | *blank* | Cette page n&#39;a jamais été publiée. |
+| Publié | *blank* | La page n’a jamais été publiée. |
 | Modifié | Bleu | La page a été modifiée depuis la dernière publication. |
-| Modifié | *blank* | Cette page n&#39;a jamais été modifiée ou n&#39;a pas été modifiée depuis la dernière publication. |
+| Modifié | *blank* | Cette page n’a jamais été modifiée ou n’a pas été modifiée depuis la dernière publication. |
 
 ## Menus contextuels {#context-menus}
 
-L’IU classique applique des mécanismes courants pour la navigation et le déclenchement des opérations, notamment clic et double-clic. En fonction de la situation actuelle, divers menus contextuels (généralement ouverts avec le bouton droit de la souris) sont également disponibles :
+L’IU classique applique des mécanismes courants pour la navigation et le déclenchement des opérations, notamment clic et double-clic. En fonction de la situation actuelle, divers menus contextuels (généralement ouverts avec le bouton droit de la souris) sont également disponibles :
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)
