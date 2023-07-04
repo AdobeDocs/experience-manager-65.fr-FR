@@ -1,6 +1,6 @@
 ---
-title: Conventions de dénomination des noeuds dans le référentiel de contenu Java
-description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository
+title: Conventions de dénomination des nœuds dans le référentiel de contenu Java
+description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination du référentiel de contenu Java.
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -21,22 +21,22 @@ Les nœuds dans le référentiel sont soumis aux conventions de dénomination de
 
 ## Conventions de dénomination pour les pages {#naming-conventions-for-pages}
 
-Ces conventions de dénomination sont mises en oeuvre à différents niveaux :
+Ces conventions de dénomination sont implémentées à différents niveaux :
 
-* JcrUtil : la mise en oeuvre AEM de la [Utilitaires JCR](#jcr-utilities).
-* PageManager : la valeur [Gestionnaire de pages](#page-manager) fournit des méthodes pour les opérations au niveau de la page.
-* Selon l’interface utilisateur utilisée :
+* JcrUtil : l’implémentation AEM des [utilitaires JCR](#jcr-utilities).
+* PageManager : le [Gestionnaire de pages](#page-manager) fournit des méthodes pour les opérations au niveau de la page.
+* Selon l’interface utilisateur utilisée :
 
    * [IU tactile standard](#standard-ui)
    * [Interface utilisateur classique](#classic-ui)
 
 ### Utilitaires JCR {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères qu’il contrôle et les validations suivantes présentent un intérêt particulier pour la validation des noms :
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) est l’implémentation AEM des utilitaires JCR. Les mappages de caractères qu’il contrôle et les validations suivantes présentent un intérêt particulier pour la validation des noms :
 
 * `isValidName`
 
-   * Vérifie si le nom n’est pas vide et contient uniquement des caractères valides.
+   * Vérifie si le nom n’est pas vide et s’il contient uniquement des caractères valides.
    * Peut être utilisé pour vérifier si un nom proposé est valide.
 
 * `createValidName`
@@ -50,26 +50,26 @@ Ces conventions de dénomination sont mises en oeuvre à différents niveaux :
 
 ### Interface utilisateur standard {#standard-ui}
 
-L’IU tactile standard :
+L’interface utilisateur tactile standard :
 
-* Valide le nom en fonction des restrictions imposées par PageManager lorsque :
+* Valide le nom en fonction des restrictions imposées par PageManager quand :
 
-   * un titre de page est fourni pour la conversion dans le nom de noeud.
-   * un nom de noeud explicite est fourni.
+   * un titre de page est fourni pour être converti en nom de nœud ;
+   * un nom de nœud explicite est fourni.
 
 ### Interface utilisateur classique {#classic-ui}
 
-L’IU classique impose des restrictions plus strictes :
+L’IU classique impose des restrictions plus strictes :
 
-* Valide le nom lorsqu’un nom de noeud explicite se présente dans l’une des situations suivantes :
+* Valide le nom lorsqu’un nom de nœud explicite se présente dans l’une des situations suivantes :
 
-   * un titre de page est fourni pour la conversion dans le nom de noeud.
-   * un nom de noeud explicite est fourni.
+   * un titre de page est fourni pour être converti en nom de nœud ;
+   * un nom de nœud explicite est fourni.
 
 * Caractères valides (seuls ces caractères sont effectivement valides lorsqu’une page est créée dans l’IU classique, même si `PageManagerImpl` autorise des caractères supplémentaires) :
 
-   * &#39;a&#39; à &#39;z&#39;
-   * &quot;A&quot; à &quot;Z&quot;
-   * &#39;0&#39; à &#39;9&#39;
+   * « a » à « z »
+   * « A » à « Z »
+   * « 0 » à « 9 »
    * _ (trait de soulignement)
    * `-` (tiret/moins)
