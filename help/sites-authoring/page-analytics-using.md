@@ -1,7 +1,7 @@
 ---
-title: Affichage des données d’analyse de page pour mesurer l’efficacité du contenu de page
+title: Afficher les données d’analyse de page pour mesurer l’efficacité du contenu de page
 seo-title: Seeing Page Analytics Data
-description: Utilisez les données d’analyse de page pour évaluer l’efficacité du contenu de leur page.
+description: Utilisez les données d’analyse de page pour évaluer l’efficacité de leur contenu de page.
 seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
@@ -13,58 +13,58 @@ docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Affichage des données d’analyse de page{#seeing-page-analytics-data}
 
-Utilisez les données d’analyse de page pour évaluer l’efficacité du contenu de la page.
+Utilisez les données d’analyse de page pour évaluer l’efficacité du contenu de page.
 
-## Analytics visible à partir de la console {#analytics-visible-from-the-console}
+## Analyse visible à partir de la console {#analytics-visible-from-the-console}
 
 ![spad-01](assets/spad-01.png)
 
-Les données d’analyse de page s’affichent dans [Mode Liste](/help/sites-authoring/basic-handling.md#list-view) de la console Sites. Lorsque les pages sont affichées au format liste, les colonnes suivantes sont disponibles par défaut :
+Les données d’analyse de page s’affichent dans la [vue liste](/help/sites-authoring/basic-handling.md#list-view) de la console Sites. Lorsque les pages sont affichées au format liste, les colonnes suivantes sont disponibles par défaut :
 
 * Pages vues
-* Visiteurs uniques
+* Visiteurs et visiteuses uniques
 * Temps sur la page
 
-Chaque colonne indique une valeur pour la période de création de rapports actuelle et indique également si la valeur a augmenté ou diminué depuis la période de création de rapports précédente. Les données que vous voyez sont mises à jour toutes les 12 heures.
+Chaque colonne indique une valeur pour la période de création de rapports actuelle et indique également si la valeur a augmenté ou diminué depuis la période de création de rapports précédente. Les données affichées sont mises à jour toutes les 12 heures.
 
 >[!NOTE]
 >
->Pour modifier la période de mise à jour, [configuration de l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Pour modifier la période de mise à jour, [configurez l’intervalle d’importation](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Ouvrez la console **Sites**, par exemple, [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
 1. À l’extrême droite de la barre d’outils (dans le coin supérieur droit), appuyez ou cliquez sur l’icône pour sélectionner **Vue Liste** (l’icône affichée dépendra de la [vue actuelle](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Encore une fois, à l’extrémité droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez sur l’icône, puis sélectionnez **Paramètres d’affichage**. Le **Configuration des colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
+1. À l’extrémité droite de la barre d’outils (coin supérieur droit), cliquez ou appuyez à nouveau sur l’icône, puis sélectionnez **Paramètres d’affichage**. La boîte de dialogue **Configurer les colonnes** s’ouvre. Apportez les modifications requises et confirmez-les avec la commande **Mettre à jour**.
 
    ![spad-02](assets/spad-02.png)
 
-### Sélection de la période de création de rapports {#selecting-the-reporting-period}
+### Sélectionner la période de création de rapports {#selecting-the-reporting-period}
 
-Sélectionnez la période de création de rapports pour laquelle les données Analytics apparaissent sur la console Sites :
+Sélectionnez la période de création de rapports pour laquelle les données Analytics apparaissent sur la console Sites :
 
 * Données des 30 derniers jours
 * Données des 90 derniers jours
 * Données de cette année
 
-La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez le menu déroulant pour sélectionner la période de création de rapports requise. 
+La période de création de rapports actuelle apparaît sur la barre d’outils de la console Sites (à droite dans la barre d’outils supérieure). Utilisez le menu déroulant pour sélectionner la période de création de rapports requise.
 
 ![aa-05](assets/aa-05.png)
 
-### Configuration des colonnes de données disponibles {#configuring-available-data-columns}
+### Configurer les colonnes de données disponibles {#configuring-available-data-columns}
 
-Les membres du groupe d’utilisateurs analytics-administrateurs peuvent configurer la console Sites pour permettre aux auteurs d’afficher des colonnes Analytics supplémentaires.
+Les membres du groupe d’utilisateurs et d’utilisatrices d’administration d’Analytics peuvent configurer la console Sites pour permettre aux auteurs et aux autrices d’afficher des colonnes Analytics supplémentaires.
 
 >[!NOTE]
 >
->Lorsqu’une arborescence de pages contient des enfants associés à différentes configurations de cloud Adobe Analytics, vous ne pouvez pas configurer les colonnes de données disponibles pour les pages.
+>Lorsqu’une arborescence de pages contient des enfants associés à différentes configurations d’Adobe Analytics Cloud, vous ne pouvez pas configurer les colonnes de données disponibles pour les pages.
 
 1. Dans la vue Liste, utilisez les sélecteurs de vue (à droite de la barre d’outils), sélectionnez **Afficher les paramètres**, puis **Ajouter des données d’analyse personnalisées**.
 
@@ -80,8 +80,8 @@ Les membres du groupe d’utilisateurs analytics-administrateurs peuvent configu
 
 Ouvrez [Content Insight](/help/sites-authoring/content-insights.md) à partir de la console Sites pour continuer à évaluer en détail l’efficacité des pages.
 
-1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez afficher Content Insights.
-1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommendations .
+1. Dans la console Sites, sélectionnez la page pour laquelle vous souhaitez afficher des Insights sur le contenu.
+1. Dans la barre d’outils, cliquez sur l’icône Analytics et Recommendations.
 
    ![](do-not-localize/chlimage_1-14.png)
 
