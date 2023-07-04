@@ -1,7 +1,7 @@
 ---
 title: Modes d’exécution
 seo-title: Run Modes
-description: Découvrez comment régler votre instance AEM à des fins spécifiques à l’aide des modes d’exécution.
+description: Découvrez comment ajuster votre instance d’AEM à des fins spécifiques à l’aide des modes d’exécution.
 seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
 uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
@@ -12,15 +12,15 @@ discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Modes d’exécution{#run-modes}
 
-Les modes d’exécution vous permettent d’ajuster votre instance AEM à des fins spécifiques. par exemple, auteur ou publication, test, développement, intranet ou autre.
+Les modes d’exécution vous permettent d’ajuster votre instance d’AEM à des fins spécifiques. par exemple, pour la création ou la publication, le test, le développement, l’intranet et plus encore.
 
 Vous pouvez :
 
@@ -28,7 +28,7 @@ Vous pouvez :
 
    Un ensemble de paramètres de configuration de base est appliqué à tous les modes d’exécution, puis vous pouvez ajuster les ensembles ajoutés en fonction de l’objectif de votre environnement spécifique. Ils sont appliqués selon les besoins.
 
-* [Définir des lots supplémentaires à installer pour un mode particulier](#defining-additional-bundles-to-be-installed-for-a-run-mode).
+* [Définition de lots supplémentaires à installer pour un mode spécifique](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
 L’ensemble des paramètres et des définitions sont stockés dans le référentiel et activé en définissant le **mode d’exécution**.
 
@@ -51,13 +51,13 @@ Voici deux paires de modes d’exécution qui sont mutuellement exclusifs. Par e
 
 >[!CAUTION]
 >
->Lors de l’utilisation de l’un des modes d’exécution ci-dessus (author, publish, samplecontent, nosamplecontent), la valeur utilisée au moment de l’installation définit le mode d’exécution pour la variable *durée complète* de cette installation.
+>Lors de l’utilisation de l’un des modes d’exécution ci-dessus (auteur, publication, samplecontent, nosamplecontent), la valeur utilisée au moment de l’installation définit le mode d’exécution pour la *durée de vie complète* de cette installation.
 >
->Pour ces modes d’exécution : *cannot* modifiez-les après l’installation.
+>Vous *ne pouvez pas* modifier ces modes d’exécution après l’installation.
 
 ## Modes d’exécution personnalisés {#customized-run-modes}
 
-Vous pouvez également créer vos propres modes d’exécution personnalisés. Elles peuvent être combinées pour couvrir des scénarios tels que :
+Vous pouvez également créer vos propres modes d’exécution personnalisés. Ils peuvent être combinés pour prendre en charge des scénarios tels que :
 
 * `author` + `development`
 
@@ -71,9 +71,9 @@ Vous pouvez également créer vos propres modes d’exécution personnalisés. E
 
 Les modes d’exécution personnalisés peuvent également être sélectionnés à chaque démarrage.
 
-## Utilisation de samplecontent et nosamplecontent {#using-samplecontent-and-nosamplecontent}
+## Utiliser samplecontent et nosamplecontent {#using-samplecontent-and-nosamplecontent}
 
-Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L’exemple de contenu est défini avant la création du démarrage rapide et peut inclure des modules, des configurations, etc :
+Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L’exemple de contenu est défini avant la création du démarrage rapide et peut inclure des packages, des configurations, etc :
 
 * Le mode d’exécution `samplecontent` (mode par défaut) installe ce contenu.
 
@@ -81,11 +81,11 @@ Ces modes permettent de contrôler l’utilisation d’un exemple de contenu. L�
 
 Le mode d’exécution nosamplecontent est conçu pour les installations de production.
 
-## Définition des propriétés de configuration pour un mode d’exécution {#defining-configuration-properties-for-a-run-mode}
+## Définir des propriétés de configuration pour un mode d’exécution {#defining-configuration-properties-for-a-run-mode}
 
-Une collection de valeurs pour les propriétés de configuration, utilisée pour un mode d’exécution particulier, peut être enregistrée dans le référentiel.
+Une collection de valeurs pour les propriétés de configuration, utilisée pour un mode d’exécution spécifique, peut être enregistrée dans le référentiel.
 
-Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous pouvez ainsi stocker toutes les configurations dans un seul référentiel sous la forme . Par exemple :
+Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous pouvez ainsi stocker toutes les configurations dans un seul référentiel. Par exemple :
 
 * `config`
 
@@ -103,24 +103,24 @@ Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous p
 
    Utilisé pour le mode d’exécution applicable, par exemple « config »
 
-Voir [Configuration OSGi dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) pour plus d’informations sur la définition des différents noeuds de configuration dans ces dossiers et sur la création de configurations pour des combinaisons de plusieurs modes d’exécution.
+Voir [Configuration d’OSGi dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) pour plus d’informations sur la définition des différents nœuds de configuration dans ces dossiers et sur la création de configurations pour des combinaisons de plusieurs modes d’exécution.
 
 >[!NOTE]
 >
->Pour [Modes d’exécution d’installation](#installation-run-modes) (auteur, par exemple) le mode d’exécution ne peut pas être modifié après l’installation. Toutefois, les modifications apportées aux propriétés de configuration individuelles prennent effet au redémarrage.
+>Pour les [Modes d’exécution d’installation](#installation-run-modes) (auteur, par exemple) le mode d’exécution ne peut pas être modifié après l’installation. Toutefois, les modifications apportées aux propriétés de configuration individuelles prennent effet au redémarrage.
 
-## Définition des lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
+## Définir des lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
-Vous pouvez également spécifier des lots supplémentaires qui doivent être installés pour un mode d’exécution particulier. Pour ces définitions, les dossiers d’installation sont utilisés pour contenir les lots. Là aussi, le mode d’exécution est indiqué par un préfixe :
+Vous pouvez également spécifier des lots supplémentaires qui doivent être installés pour un mode d’exécution spécifique. Pour ces définitions, les dossiers d’installation sont utilisés pour contenir les lots. Là aussi, le mode d’exécution est indiqué par un préfixe :
 
 * `install.author`
 * `install.publish`
 
 Ces dossiers sont de type `nt:folder` et doivent contenir le lot approprié.
 
-## Démarrage de CQ avec un mode d’exécution spécifique {#starting-cq-with-a-specific-run-mode}
+## Démarrer CQ avec un mode d’exécution spécifique {#starting-cq-with-a-specific-run-mode}
 
-Si vous avez défini des configurations pour plusieurs modes d’exécution, vous devez définir celle qui doit être utilisée au démarrage. Il existe plusieurs méthodes pour spécifier le mode d’exécution à utiliser. l’ordre de résolution est le suivant :
+Si vous avez défini des configurations pour plusieurs modes d’exécution, vous devez définir celui qui doit être utilisé au démarrage. Il existe plusieurs méthodes pour spécifier le mode d’exécution à utiliser. L’ordre de résolution est le suivant :
 
 1. [Propriétés système (](#using-a-system-property-in-the-start-script)
 1. [ ](#using-the-sling-properties-file)
@@ -164,7 +164,7 @@ Les deux modes d’exécution d’installation ci-dessous peuvent être activés
 * publication
 * auteur
 
-Le fichier jar doit utiliser la convention d’affectation des noms :
+Le fichier jar doit utiliser la convention de dénomination :
 
 `cq5-<run-mode>-p<port-number>`
 
@@ -172,9 +172,9 @@ Par exemple, définissez le mode d’exécution `publish` en nommant le fichier�
 
 `cq5-publish-p4503`
 
-### Définition du mode d’exécution dans web.xml (avec le serveur d’applications) {#defining-the-run-mode-in-web-xml-with-application-server}
+### Définir le mode d’exécution au format web.xml (avec le serveur d’applications) {#defining-the-run-mode-in-web-xml-with-application-server}
 
-Lorsque vous utilisez un serveur d’applications, vous pouvez également configurer la propriété :
+Lorsque vous utilisez un serveur d’applications, vous pouvez également configurer la propriété :
 
 `sling.run.modes`
 
