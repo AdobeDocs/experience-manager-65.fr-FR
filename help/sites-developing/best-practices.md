@@ -1,6 +1,6 @@
 ---
-title: Bonnes pratiques pour les développeurs d’AEM
-description: Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs AEM.
+title: Bonnes pratiques pour les développeurs et développeuses d’AEM
+description: Les équipes d’ingénierie et de conseil d’Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs et développeuses d’AEM.
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,17 +9,17 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '466'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
 # Bonnes pratiques{#best-practices}
 
-## Bonnes pratiques pour les développeurs - Prise en main {#best-practices-for-developers-getting-started}
+## Bonnes pratiques pour les développeurs et développeuses - Prise en main {#best-practices-for-developers-getting-started}
 
-Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs AEM. Les développeurs d’Adobes se conforment à ces bonnes pratiques lorsqu’ils développent des mises à jour de base AEM produits et du code client pour les implémentations client.
+Les équipes d’ingénierie et de conseil Adobe ont développé un ensemble complet de bonnes pratiques pour les développeurs AEM. Les développeurs et développeuses d’Adobe se conforment à ces bonnes pratiques lorsqu’ils développent des mises à jour de base pour les produits d’AEM et du code client pour les implémentations client.
 
 Avant de commencer votre projet de développement AEM, passez en revue ces bonnes pratiques :
 
@@ -40,9 +40,9 @@ Les aspects suivants sont couverts par une documentation spécifique pour le dé
 * [Communities](/help/sites-developing/best-practices.md#communities)
 * [Outillage/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-Les documents spécifiques sont décrits et associés dans les tables qui suivent.
+Les documents spécifiques sont décrits et associés dans les tableaux qui suivent.
 
-Pour connaître les bonnes pratiques en matière d’administration, de déploiement, de maintenance ou de création, voir l’une des rubriques suivantes :
+Pour connaître les bonnes pratiques en matière d’administration, de déploiement, de maintenance ou de création, reportez-vous à l’une des ressources suivantes :
 
 * [Bonnes pratiques d’administration](/help/sites-administering/administer-best-practices.md)
 * [Bonnes pratiques de création](/help/sites-authoring/best-practices.md)
@@ -50,7 +50,7 @@ Pour connaître les bonnes pratiques en matière d’administration, de déploie
 
 ## Sites {#sites}
 
-La gestion et la création du contenu de votre site web comportent les bonnes pratiques suivantes :
+La gestion et la création du contenu de votre site web comportent les bonnes pratiques suivantes :
 
 <table>
  <tbody>
@@ -62,17 +62,17 @@ La gestion et la création du contenu de votre site web comportent les bonnes pr
   <tr>
    <td>IU tactile : personnalisation des consoles </td>
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">Personnalisation des consoles d’IU tactile</a></td>
-   <td>Ce document décrit la meilleure manière d’étendre les consoles pour l’IU tactile.</td>
+   <td>Ce document décrit la meilleure manière d’optimiser les consoles pour l’IU tactile.</td>
   </tr>
   <tr>
-   <td>Interface utilisateur tactile : Personnalisation de la création de pages</td>
+   <td>Interface utilisateur tactile : personnaliser la création de pages</td>
    <td><a href="/help/sites-developing/customizing-page-authoring-touch.md">Personnalisation de la création de pages pour l’IU tactile</a></td>
-   <td>Décrit comment étendre la création de pages pour l’interface utilisateur tactile.</td>
+   <td>Décrit comment optimiser la création de pages pour l’interface utilisateur tactile.</td>
   </tr>
   <tr>
    <td>Workflows</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">Développement et extension des workflows</a></td>
-   <td><p>Les workflows vous permettent d’automatiser les activités Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement qui se produit dans un environnement AEM. Il est donc vivement recommandé de planifier soigneusement vos implémentations de workflows.</p> </td>
+   <td><p>Les workflows vous permettent d’automatiser les activités d’Adobe Experience Manager (AEM) et peuvent représenter une grande partie du traitement qui se produit dans un environnement AEM. Il est donc hautement recommandé de planifier et de configurer avec soin les implémentations de workflows.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -90,12 +90,12 @@ Vous trouverez ici certaines bonnes pratiques pour AEM Communities :
 
 ## Outillage/HTL {#tooling-htl}
 
-Le langage de modèle de HTML (HTL) est un nouveau système de modèle de HTML, introduit avec AEM 6.0. Il remplace JSP et ESP en tant que système de modèle préféré d’AEM.
+Le langage de modèle HTML (HTL) est un nouveau système de modèle HTML, introduit avec AEM 6.0. Il remplace JSP et ESP en tant que système de modèle préféré d’AEM.
 
 |  |  |  |
 |---|---|---|
-| Présentation de HTL | [Présentation et syntaxe HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Ce document décrit ce qu’est HTL, comment passer à HTL, un exemple de projet, de syntaxe, d’expressions et d’instructions. |
-| Utilisation de l’API dans java | [Use-API Java HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/use-api.html) | L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. |
+| Présentation de HTL | [Vue d’ensemble et syntaxe HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) | Ce document décrit ce qu’est HTL, comment passer à HTL, un exemple de projet, une syntaxe, des expressions et des instructions. |
+| Utiliser l’API dans Java | [Use-API Java HTL](https://helpx.adobe.com/fr/experience-manager/htl/using/use-api.html) | L’Use-API Java HTL permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. |
 
 >[!NOTE]
 >
