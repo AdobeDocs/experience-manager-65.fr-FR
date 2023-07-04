@@ -1,6 +1,6 @@
 ---
-title: Utilisation des versions de page de contenu
-description: Création, comparaison et restauration de versions d’une page
+title: Utiliser les versions de page de contenu
+description: Créer, comparer et restaurer des versions d’une page
 uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -21,27 +21,27 @@ ht-degree: 75%
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
 * Créez une version d’une page.
-* Restaurez une page à une version précédente afin d’annuler une modification que vous avez apportée à une page, par exemple.
-* Comparez la version actuelle d’une page à une version précédente avec les différences dans le texte et les images mises en surbrillance.
+* Restaurez une page à une version précédente afin par exemple d’annuler une modification que vous avez apportée à une page.
+* Comparez la version actuelle d’une page à une version précédente avec les différences mises en surbrillance dans le texte et les images.
 
 ## Création d’une version   {#creating-a-new-version}
 
 Vous pouvez créer une version de votre ressource depuis :
 
-* la valeur [Rail de chronologie](#creating-a-new-version-timeline)
-* la valeur [Créer](#creating-a-new-version-create-with-a-selected-resource) option (lorsqu’une ressource est sélectionnée)
+* le [rail chronologie](#creating-a-new-version-timeline) ;
+* l’option [Créer](#creating-a-new-version-create-with-a-selected-resource) (lorsqu’une ressource est sélectionnée).
 
 ### Création d’une version – Chronologie {#creating-a-new-version-timeline}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Ouvrez le **Chronologie** colonne .
-1. Cliquez/appuyez sur la pointe de la flèche près du champ de commentaire pour afficher les options :
+1. Ouvrez la colonne **Chronologie**.
+1. Cliquez ou appuyez sur la flèche près du champ de commentaire pour afficher les options :
 
    ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
 
-1. Sélectionner **Enregistrer comme version**.
-1. Saisissez un **Libellé** et **Commentaire** si nécessaire.
+1. Sélectionnez **Enregistrer comme version**.
+1. Saisissez un **Libellé** et un **Commentaire** si nécessaire.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -53,7 +53,7 @@ Vous pouvez créer une version de votre ressource depuis :
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Sélectionnez la **Créer** dans la barre d’outils.
+1. Sélectionnez l’option **Créer** dans la barre d’outils.
 1. Une boîte de dialogue s’ouvre. Vous pouvez saisir un **libellé** et un **commentaire** si nécessaire :
 
    ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
@@ -90,7 +90,7 @@ Une fois que vous avez créé une version de votre page, différentes méthodes 
 >1. Les libellés et les noms de nœud de version initiaux sont 1.0, 1.1, 1.2, etc.
 >1. Rétablissez la première version, soit 1.0.
 >1. Créez à nouveau de nouvelles versions.
->1. Les libellés et noms de noeud générés seront désormais 1.0.0, 1.0.1, 1.0.2, etc.
+>1. Les libellés et noms de nœud générés seront désormais 1.0.0, 1.0.1, 1.0.2, etc.
 
 
 ### Rétablissement d’une version {#revert-to-a-version}
@@ -100,11 +100,11 @@ Pour **rétablir** la version précédente d’une page sélectionnée :
 1. Naviguez pour afficher la page pour laquelle restaurer une ancienne version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**. Les versions de la page sélectionnée sont répertoriées.
-1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
+1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
 
    ![Revenir à cette version](assets/screen-shot_2019-03-05at112505.png)
 
-1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations de la chronologie sont mises à jour.
+1. Sélectionnez **Revenir à cette version**. La version sélectionnée sera restaurée et les informations de la chronologie seront mises à jour.
 
 ### Restaurer la version {#restore-version}
 
@@ -164,12 +164,12 @@ Cette méthode permet de restaurer une version d’une arborescence à une date 
 
 ## Aperçu d’une version {#previewing-a-version}
 
-Vous pouvez prévisualiser une version spécifique :
+Vous pouvez prévisualiser une version spécifique :
 
-1. Accédez à la page à comparer.
+1. Accédez à la page que vous souhaitez comparer.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**.
-1. Les versions de la page sont répertoriées. Sélectionnez la version à prévisualiser :
+1. Les versions de la page sont répertoriées. Sélectionnez la version que vous souhaitez prévisualiser :
 
    ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
 
@@ -177,23 +177,23 @@ Vous pouvez prévisualiser une version spécifique :
 
    >[!CAUTION]
    >
-   >Si une page a été déplacée, vous ne pouvez plus effectuer d’aperçu sur les versions antérieures au déplacement.
+   >Si une page a été déplacée, vous ne pouvez plus afficher l’aperçu des versions antérieures au déplacement.
    >
-   >* Si vous rencontrez des problèmes avec un aperçu, vérifiez la variable [Chronologie](/help/sites-authoring/basic-handling.md#timeline) pour la page afin de voir si la page a été déplacée.
+   >* Si vous rencontrez des problèmes avec un aperçu, vérifiez la variable [Journal](/help/sites-authoring/basic-handling.md#timeline) de la page afin de voir si la page a été déplacée.
 
 
 ## Comparaison d’une ancienne version avec la page actuelle {#comparing-a-version-with-current-page}
 
-Pour comparer une version précédente à la page active :
+Pour comparer une version précédente à la page actuelle :
 
-1. Accédez à la page à comparer.
+1. Accédez à la page que vous souhaitez comparer.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**.
-1. Les versions de la page sont répertoriées. Sélectionnez la version à comparer :
+1. Les versions de la page sont répertoriées. Sélectionnez la version que vous souhaitez comparer :
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Sélectionner **Comparer à actuel**. Le [comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre et affiche les différences.
+1. Sélectionner **Comparer avec la version actuelle**. La [comparaison des pages](/help/sites-authoring/page-diff.md) s’ouvre et affiche les différences.
 
 ## Distorsion du temps Timewarp {#timewarp}
 
@@ -207,14 +207,14 @@ La création de contenu étant un processus continu et collaboratif, l’objecti
 
 Pour ce faire :
 
-* Le système recherche la version de page principale à l’heure sélectionnée.
-* Cela signifie que la version affichée a été créée/activée. *before* point dans le temps sélectionné dans Timewarp.
+* Le système recherche la version de page qui était active à l’heure sélectionnée.
+* Ceci signifie que la version affichée a été créée/activée *avant* l’heure sélectionnée dans Timewarp.
 * Si vous accédez à une page qui a été supprimée, celle-ci est également affichée, à condition toutefois que les anciennes versions de la page soient toujours disponibles dans le référentiel.
 * Si aucune version publiée n’a été trouvée, la fonction Timewarp revient à l’état actuel de la page dans l’environnement de création (et ce, afin d’éviter une erreur/page 404, ce qui rendrait impossible toute poursuite de la navigation).
 
 ### Utilisation de Timewarp {#using-timewarp}
 
-Timewarp est une [mode](/help/sites-authoring/author-environment-tools.md#page-modes) de l’éditeur de page. Pour le démarrer, il vous suffit de le basculer comme vous le feriez pour tout autre mode.
+Timewarp est un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) de l’éditeur de page. Pour le démarrer, il vous suffit de l’activer comme vous le feriez pour tout autre mode.
 
 1. Démarrez l’éditeur de la page sur laquelle vous souhaitez démarrer Timewarp, puis sélectionnez **Timewarp** dans la sélection de mode.
 
@@ -224,7 +224,7 @@ Timewarp est une [mode](/help/sites-authoring/author-environment-tools.md#page-m
 
    ![wwpv-02](assets/wwpv-02.png)
 
-1. La page s’affiche en fonction du jeu de dates. Le mode Timewarp est indiqué à partir de la barre d’état bleue située en haut de la fenêtre. Utilisez les liens de la barre d’état pour sélectionner une nouvelle date cible ou quitter le mode Timewarp.
+1. La page s’affiche en fonction de la date définie. Le mode Timewarp est indiqué à partir de la barre d’état bleue située en haut de la fenêtre. Utilisez les liens de la barre d’état pour sélectionner une nouvelle date cible ou quitter le mode Timewarp.
 
    ![wwpv-03](assets/wwpv-03.png)
 
