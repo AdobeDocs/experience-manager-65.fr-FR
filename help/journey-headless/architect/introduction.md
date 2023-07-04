@@ -1,11 +1,11 @@
 ---
-title: parcours d’architecture de contenu sans affichage Adobe Experience Manager
+title: Parcours d’architecte de contenu découplé Adobe Experience Manager
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager et explique comment modéliser le contenu de votre projet.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '704'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
