@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 exl-id: 8cc9200e-981d-468f-b2bd-cd44e9a02bb5
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >
 >* Windows : maintenez la touche **Ctrl** enfoncée tout en **cliquant** sur les composants requis.
 >
->* Mac : **Cmd**+**click** sur les composants requis.
+>* Mac : **Cmd**+**clic** sur les composants requis.
 >
 
 
