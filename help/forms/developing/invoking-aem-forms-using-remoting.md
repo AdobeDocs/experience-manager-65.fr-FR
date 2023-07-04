@@ -12,9 +12,9 @@ discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
 source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4599'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 1. Obtient le document PDF non sécurisé transmis en tant que valeur d’entrée. Cette action est basée sur l’opération `SetValue`. Le nom du paramètre d’entrée est `inDoc` et son type de données est `document`. (Le type de données `document` est disponible dans Workbench.)
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le nom de la valeur de sortie de ce processus est `outDoc` et représente le document PDF chiffré par mot de passe. Le type de données de outDoc est `document`.
-1. Enregistrer le document PDF protégé par mot de passe sous forme de fichier PDF dans le système de fichiers local. Cette action est basée sur l’opération `WriteDocument`. 
+1. Enregistrer le document PDF protégé par mot de passe sous forme de fichier PDF dans le système de fichiers local. Cette action est basée sur l’opération `WriteDocument`.
 
 >[!NOTE]
 >
@@ -76,11 +76,11 @@ Lorsque ce processus est appelé, il effectue les actions suivantes :
 
 >[!NOTE]
 >
->*Veillez à placer le fichier crossdomain.xml au bon endroit. Par exemple, si vous avez déployé AEM Forms sur JBoss, placez ce fichier à l’emplacement suivant : &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
+>*Assurez-vous que le fichier crossdomain.xml est placé au bon endroit. Par exemple, si vous avez déployé AEM Forms sur JBoss, placez ce fichier à l’emplacement suivant : &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war.*
 
 ## Inclure le fichier de bibliothèque Flex AEM Forms {#including-the-aem-forms-flex-library-file}
 
-Pour appeler par programmation les processus AEM Forms à l’aide de Remoting, ajoutez le fichier adobe-remoting-provider.swc au chemin d’accès de classe de votre projet Flex. Ce fichier SWC se trouve à l’emplacement suivant :
+Pour appeler par programmation les processus d’AEM Forms à l’aide de Remoting, ajoutez le fichier adobe-remoting-provider.swc au chemin d’accès de classe de votre projet Flex. Ce fichier SWC se trouve à l’emplacement suivant :
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
@@ -98,15 +98,15 @@ Pour appeler par programmation les processus AEM Forms à l’aide de Remoting, 
 
 ## Gérer des documents avec Remoting {#handling-documents-with-remoting}
 
-L’un des types Java™ non primitifs les plus importants utilisés dans AEM Forms est le suivant : `com.adobe.idp.Document` classe . Un document est généralement nécessaire pour appeler une opération AEM Forms. Il s’agit principalement d’un document PDF, mais il peut contenir d’autres types de document tels que les documents SWF, HTML, XML ou un fichier DOC. (Voir [Transmettre des données vers les services AEM Forms à l’aide de l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+L’un des types Java non primitifs les plus importants utilisés dans AEM Forms est la classe `com.adobe.idp.Document`. Un document est généralement nécessaire pour appeler une opération AEM Forms. Il s’agit principalement d’un document PDF, mais il peut contenir d’autres types de document tels que les documents SWF, HTML, XML ou un fichier DOC. (Voir [Transmettre des données vers les services AEM Forms à l’aide de l’API Java](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-Une application cliente créée avec Flex ne peut pas demander directement un document. Par exemple, vous ne pouvez pas lancer Adobe Reader pour demander une URL qui génère un fichier PDF. Les requêtes relatives aux types de documents, tels que les documents PDF et Microsoft® Word, renvoient un résultat qui est une URL. Il est de la responsabilité du client d’afficher le contenu de l’URL. Le service Document Management permet de générer les informations d’URL et de type de contenu. Les requêtes de documents XML renvoient le document XML complet dans le résultat.
+Une application cliente créée avec Flex ne peut pas demander directement un document. Par exemple, vous ne pouvez pas lancer Adobe Reader pour demander une URL qui génère un fichier PDF. Les requêtes relatives aux types de documents, tels que les documents PDF et Microsoft® Word, renvoient un résultat sous forme d’URL. Il est de la responsabilité du client ou de la cliente d’afficher le contenu de l’URL. Le service Document Management permet de générer les informations d’URL et de type de contenu. Les requêtes de documents XML renvoient le document XML complet dans le résultat.
 
 ### Transmettre un document en tant que paramètre d’entrée {#passing-a-document-as-an-input-parameter}
 
 Une application cliente créée avec Flex ne peut pas transmettre directement un document à un processus AEM Forms. L’application cliente utilise plutôt une instance de la classe ActionScript `mx.rpc.livecycle.DocumentReference` pour transmettre des paramètres d’entrée à une opération qui attend une instance `com.adobe.idp.Document`. Une application cliente Flex offre plusieurs options de configuration d’un objet `DocumentReference` :
 
-* Lorsque le document se trouve sur le serveur et que l’emplacement de son fichier est connu, définissez la propriété referenceType de l’objet DocumentReference sur REF_TYPE_FILE. Définissez la propriété fileRef sur l’emplacement du fichier, comme le montre l’exemple suivant :
+* Lorsque le document se trouve sur le serveur et que son emplacement est connu, définissez la propriété referenceType de l’objet DocumentReference sur REF_TYPE_FILE. Définissez la propriété fileRef sur l’emplacement du fichier, comme le montre l’exemple suivant :
 
 ```java
  ... var docRef: DocumentReference = new DocumentReference(); 
@@ -173,7 +173,7 @@ Le didacticiel de mise en route Remoting utilise le servlet de chargement Remoti
 
 ### Transmettre un document à une application cliente {#passing-a-document-back-to-a-client-application}
 
-Une application cliente reçoit un objet de type `mx.rpc.livecycle.DocumentReference` pour une opération de service qui renvoie une instance `com.adobe.idp.Document` comme paramètre de sortie. Étant donné qu’une application cliente traite des objets ActionScript et non Java, vous ne pouvez pas transmettre un objet Document basé sur Java à un client Flex. Au lieu de cela, le serveur génère une URL pour le document et la transmet au client. Le `DocumentReference` de `referenceType` indique si le contenu se trouve dans la propriété `DocumentReference` ou doit être récupéré à partir d’une URL dans la variable `DocumentReference.url` . La propriété `DocumentReference.contentType` indique le type de graphique.
+Une application cliente reçoit un objet de type `mx.rpc.livecycle.DocumentReference` pour une opération de service qui renvoie une instance `com.adobe.idp.Document` comme paramètre de sortie. Étant donné qu’une application cliente traite des objets ActionScript et non Java, vous ne pouvez pas transmettre un objet Document basé sur Java à un client Flex. Au lieu de cela, le serveur génère une URL pour le document et la transmet au client. La propriété `referenceType` de l’objet `DocumentReference` indique si le contenu se trouve dans l’objet `DocumentReference` ou doit être récupéré à partir d’une URL dans la propriété `DocumentReference.url`. La propriété `DocumentReference.contentType` indique le type de graphique.
 
 **Voir également**
 
@@ -207,7 +207,7 @@ Vous créez une instance `mx:RemoteObject` pour appeler un processus AEM Forms c
 * **destination :** nom du processus AEM Forms à appeler. Par exemple, pour appeler le processus `MyApplication/EncryptDocument`, spécifiez `MyApplication/EncryptDocument`.
 * **result :** nom de la méthode Flex qui gère le résultat.
 
-Dans le `mx:RemoteObject` balise, spécifiez une balise `<mx:method>` qui spécifie le nom de la méthode d’appel du processus. En règle générale, le nom d’une méthode d’appel Forms est `invoke`.
+Dans la balise `mx:RemoteObject`, indiquez une balise `<mx:method>` spécifiant le nom de la méthode d’appel du processus. En règle générale, le nom d’une méthode d’appel Forms est `invoke`.
 
 L’exemple de code suivant crée une instance `mx:RemoteObject` qui appelle le processus `MyApplication/EncryptDocument`.
 
@@ -233,7 +233,7 @@ Une application cliente peut appeler AEM Forms en spécifiant un canal dans MXML
      ...
 ```
 
-Attribuez le `ChannelSet` à l’instance `mx:RemoteObject` instance `channelSet` (comme illustré dans l’exemple de code précédent). En règle générale, vous importez la classe de canal dans une instruction d’importation plutôt que de spécifier le nom complet lorsque vous appelez la méthode `ChannelSet.addChannel`.
+Attribuez l’instance `ChannelSet` au champ `channelSet` de l’instance `mx:RemoteObject` (comme illustré dans l’exemple de code précédent). En règle générale, vous importez la classe de canal dans une instruction d’importation plutôt que de spécifier le nom complet lorsque vous appelez la méthode `ChannelSet.addChannel`.
 
 **Transmission des valeurs d’entrée**
 
@@ -286,9 +286,9 @@ Vous pouvez appeler le processus `MyApplication/EncryptDocument` en procédant c
 
 1. Créez une instance `mx:RemoteObject` par ActionScript ou MXML. Voir Créer une instance mx:RemoteObject.
 1. Configurez une instance `ChannelSet` pour communiquer avec AEM Forms et l’associer à l’instance `mx:RemoteObject`. Voir Créer un canal vers AEM Forms.
-1. Appelez le canal `login` ou du service `setCredentials` pour spécifier la valeur de l’identifiant utilisateur et le mot de passe. (Voir [Utilisation de l’authentification unique](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. Appelez la méthode `login` de ChannelSet ou la méthode `setCredentials` du service pour spécifier la valeur de l’identifiant d’utilisation et le mot de passe. (Voir [Utilisation de l’authentification unique](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
 1. Renseignez une instance `mx.rpc.livecycle.DocumentReference` avec un document PDF non sécurisé à transmettre au processus `MyApplication/EncryptDocument`. (Voir [Transmettre un document en tant que paramètre d’entrée](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. Chiffrez le document du PDF en appelant la fonction `mx:RemoteObject` instance `invoke` . Transmettez le `Object` contenant le paramètre d’entrée (qui est le document PDF non sécurisé). Voir Transmettre des valeurs d’entrée.
+1. Chiffrez le document PDF en appelant la méthode `invoke` de l’instance `mx:RemoteObject`. Transmettez le `Object` contenant le paramètre d’entrée (qui est le document PDF non sécurisé). Voir Transmettre des valeurs d’entrée.
 1. Récupérez le document PDF chiffré par mot de passe renvoyé par le processus. Voir Gérer des valeurs de retour.
 
 [Démarrage rapide : appeler un processus de courte durée en transmettant un document non sécurisé à l’aide d’AEM Forms Remoting (obsolète pour AEM Forms)](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
@@ -521,7 +521,7 @@ Dans la requête suivante de l’application cliente, AEM Forms détecte que le 
 
 **Déconnexion**
 
-Pour vous déconnecter d’AEM Forms et invalider une session, le cookie d’authentification doit être supprimé de l’ordinateur du client. L’authentification unique ayant pour but de permettre à l’utilisateur de se connecter une seule fois, vous ne souhaitez pas qu’une application cliente supprime le cookie. Cette action déconnecte effectivement l’utilisateur.
+Pour vous déconnecter d’AEM Forms et invalider une session, le cookie d’authentification doit être supprimé de l’ordinateur du client ou de la cliente. L’authentification unique ayant pour but de permettre à l’utilisateur de se connecter une seule fois, vous ne souhaitez pas qu’une application cliente supprime le cookie. Cette action déconnecte effectivement l’utilisateur.
 
 Par conséquent, appeler la méthode `RemoteObject.logout` dans une application cliente génère un message d’erreur sur le client indiquant que la session n’est pas déconnectée. À la place, l’utilisateur peut utiliser le service de connexion centralisé pour se déconnecter et supprimer le cookie d’authentification.
 
@@ -904,35 +904,35 @@ Le tableau suivant répertorie les contrôles compris dans cette application cli
  <tbody>
   <tr>
    <td><p>txtFirst</p></td>
-   <td><p>Indique le prénom du client. </p></td>
+   <td><p>Indique le prénom du client ou de la cliente. </p></td>
   </tr>
   <tr>
    <td><p>txtLast</p></td>
-   <td><p>Indique le nom du client. </p></td>
+   <td><p>Indique le nom du client ou de la cliente. </p></td>
   </tr>
   <tr>
    <td><p>txtPhone</p></td>
-   <td><p>Indique le numéro de téléphone du client.</p></td>
+   <td><p>Indique le numéro de téléphone du client ou de la cliente.</p></td>
   </tr>
   <tr>
    <td><p>txtStreet</p></td>
-   <td><p>Indique le nom de la rue du client.</p></td>
+   <td><p>Indique le nom de la rue du client ou de la cliente.</p></td>
   </tr>
   <tr>
    <td><p>txtState</p></td>
-   <td><p>Indique l’état du client. </p></td>
+   <td><p>Indique l’État du client ou de la cliente. </p></td>
   </tr>
   <tr>
    <td><p>txtZIP</p></td>
-   <td><p>Indique le code postal du client. </p></td>
+   <td><p>Indique le code postal du client ou de la cliente. </p></td>
   </tr>
   <tr>
    <td><p>txtCity</p></td>
-   <td><p>Indique la ville du client.</p></td>
+   <td><p>Indique la ville du client ou de la cliente.</p></td>
   </tr>
   <tr>
    <td><p>txtCustId</p></td>
-   <td><p>Indique la valeur de l’identifiant du client auquel appartient le nouveau compte. Cette zone de texte est renseignée par la valeur renvoyée par le <code>createCustomer</code> opération. </p></td>
+   <td><p>Indique la valeur de l’identifiant du client auquel appartient le nouveau compte. Cette zone de texte est renseignée par la valeur renvoyée par l’opération <code>createCustomer</code> du service clientèle. </p></td>
   </tr>
  </tbody>
 </table>
@@ -977,7 +977,7 @@ La classe ActionScript client appartient à un package nommé Client. Il est rec
 
 ### Démarrage rapide : appeler un service personnalisé client à l’aide de Remoting {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-L’exemple de code suivant appelle le service client et crée un client. Lorsque vous exécutez cet exemple de code, veillez à remplir toutes les zones de texte. Veillez également à créer le fichier Customer.as qui mappe sur `com.adobe.livecycle.sample.customer.Customer`.
+L’exemple de code suivant appelle le service clientèle et crée un client ou une cliente. Lorsque vous exécutez cet exemple de code, veillez à remplir toutes les zones de texte. Veillez également à créer le fichier Customer.as qui mappe sur `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 Avant de pouvoir exécuter ce démarrage rapide, vous devez créer et déployer le composant personnalisé Banque.
