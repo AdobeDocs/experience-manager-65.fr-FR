@@ -10,9 +10,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1178'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 32%
 
 ## Portée {#scope}
 
-Le diagramme suivant est destiné à fournir des conseils sur les étapes à suivre pour résoudre les problèmes de performances. Elle est divisée en cinq sections afin de faciliter la lecture.
+Le diagramme suivant est destiné à fournir des conseils sur les étapes à suivre pour résoudre les problèmes de performances. Il est divisé en cinq sections afin de faciliter la lecture.
 
 Chaque étape du diagramme est associée à une ressource ou à une recommandation.
 
-## Prérequis et hypothèses {#prerequisites-and-assumptions}
+## Conditions préalables et hypothèses {#prerequisites-and-assumptions}
 
-L’hypothèse est qu’un problème de performance est observé sur une page donnée (une console AEM ou une page web) et peut être reproduit de manière cohérente. Disposer d’un moyen de tester ou de surveiller les performances est une condition préalable à l’ouverture de l’enquête.
+L’hypothèse est qu’un problème de performance est observé sur une page donnée (une console d’AEM ou une page web) et peut être reproduit de manière cohérente. Disposer d’un moyen de tester ou de surveiller les performances est une condition préalable à l’ouverture de l’enquête.
 
-L’analyse commence à l’étape 0. L’objectif est de déterminer l’entité (Dispatcher, hôte externe ou AEM) responsable du problème de performances, puis de déterminer la zone (serveur ou réseau) à étudier.
+L’analyse commence à l’étape 0. L’objectif est de déterminer quelle entité (Dispatcher, hôte externe ou AEM) est responsable du problème de performance, puis de découvrir la zone (serveur ou réseau) qui doit être étudiée.
 
 ### Section 1 {#section}
 
@@ -61,33 +61,33 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   </tr>
   <tr>
    <td><strong>Étape 0</strong></td>
-   <td>Analyse du flux de requêtes</td>
-   <td><p>Vous pouvez utiliser l’analyse des requêtes HTTP standard dans le navigateur pour analyser le flux de requêtes. Pour plus d’informations sur la manière d’effectuer cette analyse sur Chrome, voir :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td>Analyser le flux de requêtes</td>
+   <td><p>Vous pouvez utiliser l’analyse des requêtes HTTP standard dans le navigateur pour analyser le flux de requêtes. Pour plus d’informations sur la manière d’effectuer cette analyse sur Chrome, veuillez consulter :<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 2</strong></td>
-   <td>Les demandes proviennent-elles d’hôtes externes ?</td>
+   <td>Les requêtes proviennent-elles d’hôtes externes ?</td>
    <td>Vous pouvez utiliser l’analyse des requêtes HTTP standard dans le navigateur pour analyser le flux de requêtes. Consultez les liens ci-dessus pour savoir comment effectuer cette analyse sur Chrome.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 3</strong></td>
-   <td>Les requêtes peuvent-elles être mises en cache ?</td>
-   <td>Pour plus d’informations sur les requêtes pouvant être mises en cache et pour obtenir des conseils généraux sur l’optimisation des performances de Dispatcher, voir <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Optimisation des performances du Dispatcher</a>.</td>
+   <td>Les requêtes peuvent-elles être mises en cache ?</td>
+   <td>Pour plus d’informations sur les requêtes pouvant être mises en cache et pour obtenir des conseils généraux sur l’optimisation des performances du Dispatcher, veuillez consulter <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Optimisation des performances du Dispatcher</a>.</td>
   </tr>
   <tr>
    <td><strong>Étape 4</strong></td>
    <td>Les demandes proviennent-elles du Dispatcher ?</td>
-   <td><p>Pour vérifier si les requêtes sont correctement mises en cache, vérifiez la variable <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Documentation sur le débogage de Dispatcher</a>.<br /> </p> </td>
+   <td><p>Pour vérifier si les requêtes sont correctement mises en cache, veuillez consulter la <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#debugging">documentation sur le débogage du Dispatcher</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 5</strong></td>
    <td>Le Dispatcher essaie-t-il d’authentifier chaque demande via AEM ?</td>
-   <td>Vérifiez si Dispatcher envoie <code>HEAD</code> demande à AEM pour authentification avant de diffuser la ressource mise en cache. Rechercher <code>HEAD</code> requêtes dans l’AEM <code>access.log</code>. Pour plus d’informations, consultez la section <a href="/help/sites-deploying/configure-logging.md">Journalisation</a>.<br /> </td>
+   <td>Vérifiez si le Dispatcher envoie les requêtes <code>HEAD</code> à AEM pour authentification avant de diffuser la ressource mise en cache. Recherchez les requêtes <code>HEAD</code> dans le <code>access.log</code> d’AEM. Pour plus d’informations, consultez la section <a href="/help/sites-deploying/configure-logging.md">Journalisation</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 6</strong></td>
-   <td>L’emplacement géographique de Dispatcher est-il éloigné des utilisateurs ?</td>
-   <td>Rapprochez Dispatcher les utilisateurs.</td>
+   <td>L’emplacement géographique du Dispatcher est-il éloigné des utilisateurs et utilisatrices ?</td>
+   <td>Rapprochez le Dispatcher des utilisateurs et utilisatrices.</td>
   </tr>
   <tr>
    <td><strong>Étape 7</strong></td>
@@ -96,18 +96,18 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   </tr>
   <tr>
    <td><strong>Étape 8</strong></td>
-   <td>La lenteur est-elle reproductible avec une instance locale ?</td>
-   <td><br /> <p>Utilisation <a href="/help/sites-developing/tough-day.md">Tough Day</a> pour répliquer des conditions "réelles" à partir des instances de production. Si ce scénario n’est pas réaliste pour l’espace de votre développement, veillez à tester l’instance de production (ou une instance d’évaluation identique) dans un contexte réseau différent.<br /> </p> </td>
+   <td>La lenteur est-elle reproductible avec une instance locale ?</td>
+   <td><br /> <p>Utiliser <a href="/help/sites-developing/tough-day.md">Tough Day</a> pour répliquer des conditions « réelles » à partir des instances de production. Si ce scénario n’est pas réaliste pour l’espace de votre développement, veillez à tester l’instance de production (ou une instance d’évaluation identique) dans un contexte réseau différent.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 9</strong></td>
-   <td>La position géographique du serveur est-elle éloignée des utilisateurs ?</td>
-   <td>Rapprochez le serveur des utilisateurs.</td>
+   <td>L’emplacement géographique du serveur est-il éloigné des utilisateurs et utilisatrices ?</td>
+   <td>Rapprochez le serveur des utilisateurs et utilisatrices.</td>
   </tr>
   <tr>
    <td><strong>Étapes 10 et 29</strong></td>
-   <td>Recherche de la couche réseau</td>
-   <td><p>Examinez la couche réseau pour détecter les problèmes de saturation et de latence.</p> <p>Pour le niveau auteur, il est recommandé que la latence ne dépasse pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">à cette page</a>.</p> </td>
+   <td>Examiner la couche réseau</td>
+   <td><p>Examinez la couche réseau pour détecter les problèmes de saturation et de latence.</p> <p>Pour le niveau de création, il est recommandé que la latence ne dépasse pas 100 millisecondes.</p> <p>Pour plus d’informations sur les conseils d’optimisation des performances, reportez-vous <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">à cette page</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Étape 11</strong></td>
@@ -116,13 +116,13 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   </tr>
   <tr>
    <td><strong>Étape 12</strong></td>
-   <td>Résolution des problèmes liés au serveur AEM</td>
+   <td>Résoudre les problèmes liés au serveur AEM</td>
    <td>Pour plus d’informations, consultez les sous-étapes suivantes du diagramme.</td>
   </tr>
   <tr>
    <td><strong>Étape 13</strong></td>
-   <td>Vérification des exigences matérielles</td>
-   <td>Consultez la documentation sur <a href="/help/managing/hardware-sizing-guidelines.md">Instructions de dimensionnement du matériel</a>.<br /> </td>
+   <td>Vérifier les exigences matérielles</td>
+   <td>Consultez la documentation sur les <a href="/help/managing/hardware-sizing-guidelines.md">Instructions de dimensionnement du matériel</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 14</strong></td>
@@ -132,12 +132,12 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   <tr>
    <td><strong>Étape 15</strong></td>
    <td>Identification des demandes lentes</td>
-   <td><p>Vous pouvez rechercher des requêtes lentes en analysant la variable <code>request.log</code> ou en utilisant <code>rlog.jar</code>.</p> <p>Pour plus d’informations sur l’utilisation de rlog.jar, consultez cette page.</p> <p>Voir <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Recherche de requêtes avec de longues durées à l’aide de rlog.jar</a>.<br /> </p> <p> </p> </td>
+   <td><p>Vous pouvez identifier les requêtes lentes en analysant le <code>request.log</code> ou à l’aide de <code>rlog.jar</code>.</p> <p>Pour plus d’informations sur l’utilisation de rlog.jar, consultez cette page.</p> <p>Voir <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Recherche de requêtes avec de longues durées à l’aide de rlog.jar</a>.<br /> </p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 16</strong></td>
    <td>Serveur de profil</td>
-   <td><p>Pour plus d’informations sur les outils de profilage que vous pouvez utiliser avec AEM, voir <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Outils de surveillance et d’analyse des performances</a>.<br /> </p> </td>
+   <td><p>Pour plus d’informations sur les outils de création de profils utilisateur que vous pouvez utiliser avec AEM, consultez <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Outils de surveillance et d’analyse des performances</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 17</strong></td>
@@ -146,8 +146,8 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   </tr>
   <tr>
    <td><strong>Étape 18</strong></td>
-   <td>Scénarios courants de profilage</td>
-   <td>Voir <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Analyse de scénarios spécifiques</a> dans la section Optimisation des performances .<br /> </td>
+   <td>Scénarios courants de création de profils utilisateur</td>
+   <td>Voir <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Analyse de scénarios spécifiques</a> dans la section Optimisation des performances.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 19</strong></td>
@@ -161,13 +161,13 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Mémoire insuffisante</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">Mon application renvoie des erreurs de mémoire insuffisante</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">Analyse des problèmes de mémoire</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=fr">Analysez les problèmes de mémoire.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Étape 21</strong></td>
    <td>E/S de disque</td>
-   <td><p>Voir <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">E/S de disque</a> dans la documentation Surveillance et maintenance.</p> </td>
+   <td><p>Voir la section <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">E/S de disque</a> dans la documentation Surveillance et maintenance.</p> </td>
   </tr>
   <tr>
    <td><strong>Étapes 22 et 22.1</strong></td>
@@ -212,7 +212,7 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Service de synchronisation d’Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Instances multiples de gestion des ressources numériques</a></li>
-     <li>Article de conseils sur l’optimisation des performances <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
+     <li>Article présentant des conseils sur l’optimisation des performances disponible <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">ici</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -222,17 +222,17 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   </tr>
   <tr>
    <td><strong>Étape 30</strong></td>
-   <td>Rapprocher Dispatcher (ajouter une par "région" ?)</td>
+   <td>Rapprochement du Dispatcher (ajout d’un Dispatcher par « région » ?)</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Étape 31</strong></td>
-   <td>Utilisation du réseau de diffusion de contenu devant Dispatcher</td>
+   <td>Utilisation d’un réseau CDN devant le Dispatcher</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn">Utilisation du Dispatcher avec un CDN</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 32</strong></td>
-   <td>Pour décharger le serveur AEM, utilisez la gestion de session au niveau de Dispatcher.</td>
+   <td>Pour décharger le serveur AEM, utilisez la gestion de session au niveau du Dispatcher.</td>
    <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#enabling-secure-sessions-sessionmanagement">Activation de sessions sécurisées</a></p> </td>
   </tr>
   <tr>
@@ -242,22 +242,22 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
     <ol>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr">Configuration générale du Dispatcher</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-the-dispatcher-cache-cache">Configuration du cache du Dispatcher</a></li>
-    </ol> <p>Comment améliorer le ratio de cache ; rendre les requêtes pouvant être mises en cache (bonnes pratiques de Dispatcher)</p> <p>Tenez également compte des paramètres ci-dessous pour optimiser vos configurations de mise en cache.<br /> </p>
+    </ol> <p>Comment améliorer le ratio de cache ; faire en sorte que les requêtes puissent être mises en cache (bonnes pratiques du Dispatcher)</p> <p>Tenez également compte des paramètres ci-dessous pour optimiser vos configurations de mise en cache.<br /> </p>
     <ol>
-     <li>Définir une règle de non-mise en cache pour la requête HTTP qui n’est pas GET</li>
-     <li>Configurer les chaînes de requête pour qu’elles ne puissent pas être mises en cache</li>
-     <li>Ne pas mettre en cache les URL avec des extensions manquantes</li>
-     <li>En-têtes d’authentification du cache (possibles depuis la version 4.1.10 de Dispatcher)</li>
+     <li>Définissez une règle de non-mise en cache pour une requête HTTP qui n’est pas GET.</li>
+     <li>Configurez les chaînes de requête pour qu’elles ne puissent pas être mises en cache.</li>
+     <li>Ne mettez pas en cache les URL avec des extensions manquantes.</li>
+     <li>En-têtes d’authentification du cache (possibles depuis la version 4.1.10 du Dispatcher)</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Étape 34</strong></td>
-   <td>Mise à niveau de la version de Dispatcher</td>
-   <td><p>Vous pouvez télécharger la dernière version de Dispatcher à cet emplacement :</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en">Lien de suivi</a></p> </td>
+   <td>Mettre à niveau la version du Dispatcher</td>
+   <td><p>Vous pouvez télécharger la dernière version du Dispatcher à cet emplacement :</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=fr">Suivez le lien.</a></p> </td>
   </tr>
   <tr>
    <td><strong>Étape 35</strong></td>
-   <td>La configuration de Dispatcher</td>
+   <td>Configuration du Dispatcher</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr">Configuration du Dispatcher</a><br /> </td>
   </tr>
   <tr>
@@ -265,23 +265,23 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
    <td>Vérification de l’invalidation du cache</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidation du cache pour le niveau d’auteur ;</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-the-authoring-environment">Invalidation du cache pour le niveau de création</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance">Invalidation du cache pour le niveau de publication.</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Étapes 37 et 38</strong></td>
    <td>Chargement différé</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">Suivez la session Gem sur la performance web d’AEM.</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=fr">Suivez la session Gem sur la performance web d’AEM.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Étape 39</strong></td>
-   <td>Utilisation de la préconnexion pour réduire la surcharge de connexion</td>
-   <td>Voir la session Gem ci-dessus. En outre, d’autres documents de préconnexion sur le W3c :<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>Utilisation de la pré-connexion pour réduire la surcharge de connexion</td>
+   <td>Reportez-vous à la session Gem ci-dessus. Vous pouvez également accéder à d’autres documents sur la pré-connexion sur W3c : <a href="https://html.spec.whatwg.org/#linkTypes">https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Étapes 40 et 41</strong><br /> </td>
-   <td>Latence des hôtes externes et temps de réponse</td>
+   <td>Latence et temps de réponse des hôtes externes</td>
    <td>Examinez la latence et le temps de réponse des hôtes externes.</td>
   </tr>
   <tr>
@@ -291,17 +291,17 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   </tr>
   <tr>
    <td><strong>Étape 49</strong></td>
-   <td>Réduire la taille de la payload</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activer Gzip</a> et <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">réduire la taille de l’image ;</a>.<br /> </td>
+   <td>Réduction de la taille d’une payload</td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Activez Gzip</a> et <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=fr">réduisez la taille de l’image</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Étapes 42 et 43</strong></td>
    <td>Keep-Alive</td>
-   <td><p>est la variable <code>Keep-Alive</code> en-tête présent dans les différentes demandes de réutilisation des connexions ? Sinon, cela signifie que chaque demande conduit à un autre établissement de connexion, qui introduit des frais supplémentaires inutiles. (Analyse des requêtes HTTP standard dans le navigateur)</p> <p>Vous pouvez vérifier les <a href="/help/sites-administering/proxy-jar.md">Outil Serveur proxy</a> pour vérifier les connexions Keep-Alive.<br /> </p> </td>
+   <td><p>L’en-tête <code>Keep-Alive</code> est-il présent dans les différentes requêtes de réutilisation des connexions ? Dans le cas contraire, cela signifie que chaque requête mène à établir une nouvelle connexion, entraînant ainsi une surcharge inopportune. (Analyse des requêtes HTTP standard dans le navigateur)</p> <p>Vous pouvez accéder à l’<a href="/help/sites-administering/proxy-jar.md">Outil Serveur proxy</a> pour vérifier les connexions Keep-alive.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Étape 44</strong></td>
-   <td>Combien de demandes sont-elles effectuées ?</td>
+   <td>Combien de requêtes sont-elles effectuées ?</td>
    <td>Exécutez l’analyse des requêtes HTTP standard dans le navigateur.</td>
   </tr>
   <tr>
@@ -309,8 +309,8 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
    <td>Réduction du nombre de requêtes</td>
    <td>
     <ol>
-     <li>Concaténer des ressources (images, sprites CSS, JSON)<br /> </li>
-     <li>Intégration de Clientlibs :
+     <li>Concaténation de ressources (images, sprites CSS, JSON)<br /> </li>
+     <li>Incorporation de bibliothèques clientes
       <ol>
        <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Création de dossiers dans la bibliothèque cliente</a> : consultez la section Utilisation d’incorporations pour réduire les demandes.</li>
       </ol> </li>
@@ -318,13 +318,13 @@ L’analyse commence à l’étape 0. L’objectif est de déterminer l’entit�
   </tr>
   <tr>
    <td><strong>Étape 48</strong></td>
-   <td>Quelle est la taille de la payload ?</td>
+   <td>Quelle est la taille de la payload ?</td>
    <td>Analyse des requêtes HTTP standard dans le navigateur</td>
   </tr>
   <tr>
    <td><strong>Étapes 50 et 51</strong></td>
    <td>Blocage du code JS</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=fr">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=fr</a></td>
   </tr>
  </tbody>
 </table>
