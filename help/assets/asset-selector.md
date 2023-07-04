@@ -1,14 +1,14 @@
 ---
 title: Sélecteur de ressources
-description: Découvrez comment utiliser le sélecteur de ressources pour rechercher, filtrer, parcourir et récupérer les métadonnées des ressources dans Adobe Experience Manager Assets. Découvrez également comment personnaliser l’interface du sélecteur de ressources.
+description: Découvrez comment utiliser le sélecteur de ressources pour rechercher, filtrer, parcourir et récupérer les métadonnées des ressources dans Adobe Experience Manager Assets. Découvrez également comment personnaliser l’interface du sélecteur de ressources.
 contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
 source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 36%
 
 >[!NOTE]
 >
->Le sélecteur de ressources a été appelé [Sélecteur de ressources](https://helpx.adobe.com/fr/experience-manager/6-2/assets/using/asset-picker.html) dans les versions antérieures de [!DNL Experience Manager].
+>Le sélecteur de ressources s’appelait [Asset Picker](https://helpx.adobe.com/fr/experience-manager/6-2/assets/using/asset-picker.html) dans les versions antérieures d’[!DNL Experience Manager].
 
-Le sélecteur de ressources vous permet de parcourir, rechercher et filtrer des ressources dans [!DNL Adobe Experience Manager] Ressources. Vous pouvez également récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Pour personnaliser l’interface du sélecteur de ressources, vous pouvez la lancer avec les paramètres de requête pris en charge. Ces paramètres définissent le contexte du sélecteur de ressources pour un scénario particulier.
+Le sélecteur de ressources vous permet de parcourir, rechercher et filtrer des ressources dans [!DNL Adobe Experience Manager] Assets. Vous pouvez également récupérer les métadonnées des ressources sélectionnées à l’aide du sélecteur de ressources. Pour personnaliser l’interface du sélecteur de ressources, vous pouvez la lancer avec les paramètres de requête pris en charge. Ces paramètres définissent le contexte du sélecteur de ressources pour un scénario particulier.
 
-Actuellement, vous pouvez transmettre les paramètres de requête. `assettype` (*Image/Vidéo/Texte*) et sélection `mode` (*Mono/multiple*) comme informations contextuelles pour le sélecteur de ressources, qui reste intact tout au long de la sélection.
+Actuellement, vous pouvez transmettre les paramètres de requête `assettype` (*Image/Vidéo/Texte*) et sélectionner `mode` (*Mono/Multiple*) comme informations contextuelles pour le sélecteur de ressources, qui reste intact tout au long de la sélection.
 
-Le sélecteur de ressources utilise HTML5 **Window.postMessage** message pour envoyer au destinataire les données de la ressource sélectionnée.
+Le sélecteur de ressources utilise le message **HTML5 Window.postMessage** pour envoyer au ou à la destinataire les données correspondant à la ressource sélectionnée.
 
-Le sélecteur de ressources utilise le vocabulaire d’interface foundation picker de Granite. Par défaut, le sélecteur de ressources fonctionne en mode de navigation. Cependant, vous pouvez appliquer des filtres à l’aide de l’expérience Omni-recherche pour affiner votre recherche de ressources spécifiques.
+Le sélecteur de ressources utilise le vocabulaire d’interface Foundation Picker de Granite. Par défaut, le sélecteur de ressources fonctionne en mode de navigation. Cependant, vous pouvez appliquer des filtres à l’aide de l’expérience Omnisearch pour affiner votre recherche de ressources spécifiques.
 
 Vous pouvez intégrer n’importe quelle page web (qu’elle fasse partie ou non du conteneur CQ) au sélecteur de ressources (`https://[AEM_server]:[port]/aem/assetpicker.html`).
 
@@ -38,11 +38,11 @@ Vous pouvez transmettre les paramètres de requête suivants dans une URL pour d
 | mode | single, multiple | `http://localhost:4502/aem/assetpicker.html`<br>`?mode=multiple` <br> `http://localhost:4502/aem/assetpicker.html`<br>`?mode=single` | En mode multiple, vous pouvez sélectionner plusieurs ressources simultanément à l’aide du sélecteur de ressources. |
 | boîte de dialogue | true, false | `http://localhost:4502/aem/assetpicker.html`<br>`?dialog=true` | Utilisez ces paramètres pour ouvrir le sélecteur de ressources en tant que boîte de dialogue Granite. Cette option ne peut être appliquée qu’au démarrage du sélecteur de ressources via le champ Chemin de Granite, en la configurant comme URL pickerSrc. |
 | root | `<folder_path>` | `http://localhost:4502/aem/`<br>`assetpicker.html?assettype=images`<br>`&root=/content/dam/we-retail/en/activities` | Utilisez cette option pour spécifier le dossier racine du sélecteur de ressources. Dans ce cas, le sélecteur de ressources vous permet de sélectionner uniquement les ressources enfants (directes/indirectes) sous le dossier racine. |
-| viewmode | de recherches |  | Pour lancer le sélecteur de ressources en mode de recherche, avec les paramètres de type de ressource et de type MIME. |
-| assettype (S) | images, documents, multimédia, archives | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | Utilisez cette option pour filtrer les types de ressources en fonction de la valeur transmise. |
-| mimetype | Type(s) MIME (`/jcr:content/metadata/dc:format`) d’une ressource (le caractère générique est également pris en charge) | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | Utilisez-le pour filtrer les ressources en fonction du ou des types MIME |
+| viewmode | search |  | Pour lancer le sélecteur de ressources en mode recherche, avec les paramètres assettype et mimetype. |
+| assettype (S) | images, documents, multimedia, archives | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | Utilisez cette option pour filtrer les types de ressources en fonction de la valeur transmise. |
+| mimetype | Type(s) MIME (`/jcr:content/metadata/dc:format`) d’une ressource (le caractère générique est également pris en charge) | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | Utilisez-le pour filtrer les ressources basées sur le ou les types MIME |
 
-## Utilisation du sélecteur de ressources {#using-the-asset-selector}
+## Utiliser le sélecteur de ressources {#using-the-asset-selector}
 
 1. Pour accéder à l’interface du sélecteur de ressources, accédez à `https://[AEM_server]:[port]/aem/assetpicker`.
 1. Recherchez le dossier souhaité, puis sélectionnez une ou plusieurs ressources.
@@ -53,7 +53,7 @@ Vous pouvez transmettre les paramètres de requête suivants dans une URL pour d
 
    ![chlimage_1-442](assets/chlimage_1-442.png)
 
-   Si vous recherchez des ressources à l’aide de la zone Omni-recherche, vous pouvez sélectionner différents filtres dans la variable **[!UICONTROL Filtres]** pour affiner votre recherche.
+   Si vous recherchez des ressources à l’aide de la zone OmniSearch, vous pouvez sélectionner différents filtres dans le volet **[!UICONTROL Filtres]** pour affiner votre recherche.
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
