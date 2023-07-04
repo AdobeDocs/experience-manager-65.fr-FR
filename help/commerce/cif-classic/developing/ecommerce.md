@@ -1,5 +1,5 @@
 ---
-title: Couche d’intégration eCommerce avec une API
+title: Couche d’intégration e-commerce avec une API
 description: La structure d’intégration comprend une couche d’intégration avec une API.
 uuid: 48e01bbb-8f9e-489c-bbe4-24563e84ff35
 contentOwner: Guillaume Carlino
@@ -9,18 +9,18 @@ topic-tags: platform
 docset: aem65
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # eCommerce{#ecommerce}
 
-La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi :
+La structure d’intégration comprend une couche d’intégration avec une API. Vous pouvez ainsi effectuer les opérations suivantes :
 
-* connecter un système eCommerce et extraire des données de produit dans AEM
-* créer des composants AEM pour les fonctionnalités commerciales, indépendamment du moteur eCommerce spécifique ;
+* connecter un système e-commerce et extraire des données de produit dans AEM ;
+* créer des composants AEM pour les fonctionnalités de commerce indépendamment du moteur d’e-commerce spécifique.
 
 Pour en savoir plus, voir :
 
@@ -37,9 +37,9 @@ Pour en savoir plus, voir :
 >
 >Pour plus d’informations sur les concepts et l’administration des implémentations eCommerce, consultez [Administration d’eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
 
-## Documentation API {#api-documentation}
+## Documentation de l’API {#api-documentation}
 
-L’API eCommerce est fournie par les modules :
+L’API e-commerce est disponible dans les packages suivantes :
 
 `com.adobe.cq.commerce.*`
 
