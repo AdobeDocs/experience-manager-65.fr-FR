@@ -1,5 +1,5 @@
 ---
-title: Dépannage AEM lors de la création
+title: Résoudre les problèmes d’AEM lors de la création
 description: La section suivante traite de certains problèmes susceptibles d’être rencontrés lorsque vous utilisez AEM, ainsi que des suggestions pour résoudre ces problèmes.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
 >[!NOTE]
 >
->Les utilisateurs disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [AEM de dépannage (pour les administrateurs)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur système pour connaître les AEM de dépannage.
+>Les utilisateurs et utilisatrices disposant de droits d’administrateur et souhaitant résoudre les problèmes liés à AEM peuvent utiliser les méthodes de dépannage décrites dans la section [Dépannage dans AEM (pour les administrateurs ou administratrices)](/help/sites-administering/troubleshoot.md). Si vous ne disposez pas des privilèges suffisants, contactez votre administrateur ou administratrice système pour en savoir plus sur le dépannage dans AEM.
 
 ## Ancienne version de la page toujours visible sur le site de publication {#old-page-version-still-on-published-site}
 
 * **Problème** :
 
-   * Vous avez apporté des modifications à une page et répliqué la page sur le site de publication, mais l’événement *old* La version de la page est toujours affichée sur le site de publication.
+   * Vous avez réalisé des modifications sur une page et répliqué la page sur le site de publication, mais c’est toujours l’*ancienne* version de la page qui s’affiche sur le site de publication.
 
 * **Raison** :
 
-   * Cela peut avoir plusieurs causes, le plus souvent le cache (votre navigateur local ou Dispatcher), bien que cela puisse parfois poser un problème avec la file d’attente de réplication.
+   * Cela peut être dû à plusieurs raisons, le plus souvent le cache (votre navigateur local ou le Dispatcher), bien que cela puisse parfois venir d’un problème avec la file d’attente de réplication.
 
 * **Solutions** :
 
-   * Il existe différentes possibilités :
+   * Il existe alors plusieurs possibilités :
    * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
    * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
@@ -64,7 +64,7 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 
    * Fermez votre session en cours et rouvrez-la. Le sidekick revient à la position par défaut.
 
-## Chercher et Remplacer : toutes les instances ne sont pas remplacées {#find-replace-not-all-instances-are-replaced}
+## Chercher et remplacer : toutes les instances ne sont pas remplacées {#find-replace-not-all-instances-are-replaced}
 
 * **Problème :**
 
