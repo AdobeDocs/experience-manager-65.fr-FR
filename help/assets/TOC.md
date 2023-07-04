@@ -7,9 +7,9 @@ user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -96,11 +96,11 @@ ht-degree: 94%
    + [Extension de l’éditeur de ressources](asseteditorx.md)
    + [API HTTP [!DNL Assets]](mac-api-assets.md)
    + [Prise en charge des fragments de contenu dans l’API HTTP  [!DNL Assets] ](assets-api-content-fragments.md)
-   + [API GraphQL pour les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
-   + [Utilisation de l’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
-   + [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
-   + [Authentification pour les requêtes GraphQL distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
-   + [API GraphQL avec fragments de contenu – Exemple de contenu et requêtes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
+   + [API GraphQL pour les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html?lang=fr)
+   + [Utilisation de l’IDE GraphiQL](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html?lang=fr)
+   + [Requêtes persistantes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html?lang=fr)
+   + [Authentification pour les requêtes GraphQL distantes sur les fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html?lang=fr)
+   + [API GraphQL avec fragments de contenu – Exemples de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html?lang=fr)
    + [Développement de proxy [!DNL Assets]](proxy.md)
 + Administration d’Assets {#administer}
    + [Formats de fichiers pris en charge](assets-formats.md)
