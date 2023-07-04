@@ -1,6 +1,6 @@
 ---
 title: Modification des propriétés de page
-description: Les propriétés d’une page peuvent varier en fonction de la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, tandis que d’autres ne le sont pas, et les informations de Live Copy seront disponibles, le cas échéant.
+description: Les propriétés d’une page peuvent varier en fonction de la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, tandis que d’autres ne le sont pas, et les informations de Live Copy seront disponibles, le cas échéant.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,15 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Modification des propriétés de page{#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas et les informations de Live Copy seront disponibles, le cas échéant.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas, et les informations de Live Copy seront disponibles, le cas échéant.
 
 ## Propriétés de page {#page-properties}
 
@@ -27,7 +27,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Titre**
 
-   Le titre de la page s’affiche à divers endroits. Par exemple, la variable **Sites web** et la liste des onglets **Sites** modes Carte/Liste.
+   Le titre de la page s’affiche à divers endroits. Par exemple, la liste d’onlget **Sites web** et les vues liste/carte **Sites**.
 
    Ce champ est obligatoire.
 
@@ -41,7 +41,7 @@ Les propriétés sont réparties sur plusieurs onglets :
       La nouvelle balise est en réalité créée lorsque vous appuyez sur Entrée. Elle s’affiche alors dans un cadre et est marquée à droite d’une petite étoile indiquant qu’il s’agit d’une nouvelle balise.
 
    * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
-   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection. vous pouvez l’utiliser pour supprimer cette balise pour cette page.
+   * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise de cette page.
 
 * **Masquer dans la navigation**
 
@@ -53,7 +53,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Titre de navigation**
 
-   Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si elle est vide, la variable **Titre** sera utilisé.
+   Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si le champ est vide, le **Titre** sera utilisé.
 
 * **Sous-titre**
 
@@ -77,7 +77,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **URL de redirection**
 
-   Permet de saisir une URL Vanity pour cette page. Cela vous permet d’avoir une URL plus courte et plus expressive.
+   Permet de saisir une URL de redirection pour cette page. Cela vous permet d’avoir une URL plus courte et plus expressive.
 
    Par exemple, si l’URL de redirection est définie sur w`elcome` sur la page identifiée par le chemin / `v1.0/startpage` pour le site Web h`ttp://example.com,`, `ttp://example.com/welcome` devient alors l’URL de redirection de `ttp://example.com/content/v1.0/startpage`.
 
@@ -85,11 +85,11 @@ Les propriétés sont réparties sur plusieurs onglets :
    >
    >URL de redirection :
    >
-   >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
+   >* doivent être uniques pour vous assurer que la valeur n’est pas déjà utilisée par une autre page ;
    >* ne prennent pas en charge les modèles regex.
 
 
-* **Rediriger l’URL Vanity**
+* **Rediriger l’URL de redirection**
 
    Indique si vous souhaitez que la page utilise l’URL Vanity.
 
@@ -101,15 +101,15 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Rediriger**
 
-   Indiquez la page vers laquelle cette page doit automatiquement être redirigée.
+   Indiquez la page vers laquelle cette page doit rediriger automatiquement.
 
 * **Conception**
 
-   Indiquez les [design](/help/sites-developing/designer.md) à utiliser pour cette page.
+   Indiquez la [conception](/help/sites-developing/designer.md) à utiliser pour cette page.
 
 * **Alias**
 
-   Indiquez un alias à utiliser avec cette page.
+   Indiquez un alias à utiliser pour cette page.
 
 * **Activer le groupe d’utilisateurs fermé**
 
@@ -117,7 +117,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Page de connexion**
 
-   Page à utiliser pour la connexion.
+   La page à utiliser pour se connecter.
 
 * **Groupes admis**
 
@@ -125,17 +125,17 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Domaine**
 
-   Nom de domaine du CUG.
+   Nom de domaine du groupe d’utilisateurs fermé.
 
 * **Exporter la configuration**
 
-   Spécifiez une configuration d’exportation.
+   Indiquez une configuration d’exportation.
 
 ### Miniature  {#thumbnail}
 
 * **Miniature de page**
 
-   Affiche la miniature de la page. Vous pouvez :
+   Affiche l’image miniature de la page. Vous pouvez :
 
    * **Générer l’aperçu**
 
@@ -143,13 +143,13 @@ Les propriétés sont réparties sur plusieurs onglets :
 
    * **Charger l’image**
 
-      Téléchargez une image à utiliser comme miniature.
+      Chargez une image à utiliser comme miniature.
 
 ### Services cloud {#cloud-services}
 
 * **Services cloud**
 
-   Définition des propriétés pour [services cloud](/help/sites-developing/extending-cloud-config.md).
+   Définissez des propriétés pour les [services cloud](/help/sites-developing/extending-cloud-config.md).
 
 ### Personnalisation {#personalization}
 
@@ -167,13 +167,13 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 * **Plan directeur**
 
-   Définition des propriétés d’une page de plan directeur dans [gestion multisite](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
+   Définissez des propriétés pour une page de plan directeur dans [gestion multi-sites](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
 ### Live Copy  {#live-copy}
 
 * **Live Copy**
 
-   Définition des propriétés d’une page Live Copy dans [gestion multisite](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
+   Définissez des propriétés pour une page Live Copy dans [gestion multi-sites](/help/sites-administering/msm.md). Détermine les circonstances dans lesquelles les modifications seront propagées à partir du plan directeur.
 
 ### Structure du site  {#site-structure}
 
@@ -185,7 +185,7 @@ Les propriétés sont réparties sur plusieurs onglets :
 
 Les propriétés de page définissent les différentes propriétés de la page, telles que les titres, lorsqu’elles apparaissent sur le site web, etc.
 
-1. Ouvrez la page à modifier.
+1. Ouvrez la page que vous voulez modifier.
 
 1. Dans le sidekick, ouvrez l’onglet **Page**, puis sélectionnez **Propriétés de la page…**
 
