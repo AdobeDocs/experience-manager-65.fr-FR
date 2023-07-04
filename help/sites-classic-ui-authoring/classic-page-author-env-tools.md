@@ -10,9 +10,9 @@ discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ L’environnement de création d’AEM comprend divers mécanismes permettant d�
 
 ## Administration de sites {#site-administration}
 
-Le **Sites web** La console vous permet de gérer et de parcourir votre site web. La structure de votre site web peut être développée à l’aide des deux volets et des actions peuvent être entreprises sur l’élément requis :
+La console **Sites web** vous permet de gérer et de parcourir votre site web. En utilisant les deux volets, la structure de votre site web peut être développée et des actions peuvent être entreprises sur l’élément requis.
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -36,13 +36,13 @@ L’IU classique comporte un éditeur de page distinct, qui utilise l’outil de
 
 ## Accès à l’Aide {#accessing-help}
 
-Divers **Aide** Les ressources sont directement accessibles depuis AEM :
+Plusieurs ressources d’**aide** peuvent être directement accessibles depuis AEM :
 
-Outre les [barres d’outils de la console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), vous pouvez également accéder à l’aide à partir du sidekick (à l’aide de ) lors de la modification d’une page :
+Outre les [barres d’outils de la console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), vous pouvez également accéder à l’aide à partir du sidekick (à l’aide de l’icône ?) lors de la modification d’une page :
 
 ![](do-not-localize/sidekick-collapsed-2.png)
 
-Ou en utilisant la variable **Aide** dans la boîte de dialogue de modification de composants spécifiques ; l’aide contextuelle s’affiche.
+Ou en utilisant le bouton **Aide** dans la boîte de dialogue de modification de composants spécifiques pour que l’aide contextuelle s’affiche.
 
 ## Sidekick {#sidekick}
 
@@ -50,11 +50,11 @@ Dans l’onglet **Composants** du sidekick, vous pouvez parcourir les composants
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
-## Outil de recherche de contenu {#the-content-finder}
+## L’outil de recherche de contenu {#the-content-finder}
 
 L’outil de recherche de contenu est un moyen simple et rapide de rechercher des ressources et/ou du contenu dans le référentiel lors de la modification d’une page.
 
-Utilisez l’outil de recherche de contenu pour localiser une plage de ressources. Le cas échéant, vous pouvez faire glisser un élément et le déposer dans un paragraphe de la page :
+Utilisez l’outil de recherche de contenu pour localiser une plage de ressources. Le cas échéant, vous pouvez faire glisser un élément et le déposer dans un paragraphe de votre page :
 
 * [Images](#finding-images)
 * [Documents](#finding-documents)
@@ -66,7 +66,7 @@ Utilisez l’outil de recherche de contenu pour localiser une plage de ressource
 * [Produits](#products)
 * Ou pour [parcourir le site Web par structure de référentiel](#the-content-finder)
 
-Avec toutes les options, vous pouvez [recherche d’éléments spécifiques ;](#the-content-finder).
+Avec toutes les options, vous pouvez [rechercher des éléments spécifiques](#the-content-finder).
 
 ### Recherche d’images {#finding-images}
 
@@ -86,7 +86,7 @@ Après avoir créé un paragraphe Télécharger sur votre page, vous pouvez fair
 
 ### Recherche de films {#finding-movies}
 
-Cet onglet répertorie tous les films (par exemple, les éléments de Flash) du référentiel.
+Cet onglet répertorie tous les films (par exemple, les éléments Flash) du référentiel.
 
 Après avoir créé un paragraphe approprié (par exemple, Flash) sur votre page, vous pouvez faire glisser un élément et le déposer dans le paragraphe.
 
@@ -106,11 +106,11 @@ Cet onglet présente toutes les pages. Double-cliquez sur une page pour l’ouvr
 
 ### Référencement de paragraphes à partir d’autres pages {#referencing-paragraphs-from-other-pages}
 
-Cet onglet vous permet de rechercher une autre page. Tous les paragraphes de cette page sont répertoriés. Vous pouvez ensuite faire glisser un paragraphe sur la page active, ce qui crée une référence au paragraphe d’origine.
+Cet onglet vous permet de rechercher une autre page. Tous les paragraphes de cette page seront répertoriés. Vous pouvez ensuite faire glisser un paragraphe sur la page active, ce qui crée une référence au paragraphe d’origine.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-### Utilisation de la vue de référentiel complète {#using-the-full-repository-view}
+### Utilisation de la vue intégrale de référentiel {#using-the-full-repository-view}
 
 Cet onglet affiche toutes les ressources du référentiel.
 
@@ -118,11 +118,11 @@ Cet onglet affiche toutes les ressources du référentiel.
 
 ### Utilisation de la recherche avec l’explorateur de contenu {#using-search-with-the-content-browser}
 
-Vous pouvez rechercher des éléments spécifiques pour toutes les options. Toutes les balises et ressources correspondant au modèle de recherche sont répertoriées :
+Avec toutes les options, vous pouvez rechercher des éléments spécifiques. Toutes les balises et ressources correspondant au modèle de recherche sont répertoriées :
 
 ![screen_shot_2012-02-08at100746am](assets/screen_shot_2012-02-08at100746am.png)
 
-Vous pouvez également utiliser des caractères génériques pour la recherche. Les caractères génériques pris en charge sont les suivants :
+Vous pouvez également utiliser des caractères génériques pour la recherche. Les caractères génériques pris en charge sont les suivants :
 
 * `*`
 Correspond à une suite de zéro ou de plusieurs caractères.
@@ -151,13 +151,13 @@ Vous pouvez utiliser un nombre indéfini de caractères génériques dans une re
 >
 >Vous pouvez également utiliser la recherche [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html).
 
-## Affichage des références {#showing-references}
+## Affichage de références {#showing-references}
 
-AEM vous permet de voir quelles pages sont liées à la page sur laquelle vous travaillez actuellement.
+AEM vous permet de voir les pages liées à la page sur laquelle vous travaillez actuellement.
 
-Pour afficher les références de page directes :
+Pour afficher les références de page directes :
 
-1. Dans le sidekick, sélectionnez la variable **Page** icône de tabulation.
+1. Dans le sidekick, sélectionnez l’icone d’onglet **Page**.
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
@@ -172,7 +172,7 @@ Dans certains cas, le sidekick permet d’exécuter d’autres actions, notammen
 
 * [Plan directeur](/help/sites-administering/msm-best-practices.md)
 
-Autre [les relations interpages sont visibles dans la console Sites web .](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
+D’autres [relations interpages sont visibles dans la console Sites web](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console).
 
 ## Journal d’audit {#audit-log}
 
@@ -207,7 +207,7 @@ Dans ce mode, vous avez la possibilité de modifier la conception de la page en 
 >
 >* [Génération de modèles automatique](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
->* Sites web : ouvre la console Sites web .
+>* Sites web : ouvre la console Sites web.
 >* Recharger - Actualise la page.
 
 
