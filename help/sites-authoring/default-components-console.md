@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 61%
 
 ---
 
 # Console des composants{#components-console}
 
-La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
+La console Composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés de chaque composant.
 
-Elle est accessible via **Outils** -> **Général** -> **Composants**. Dans la console, les modes Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
+Elle est accessible via **Outils** -> **Général** -> **Composants**. Dans la console, les vues Carte et Liste sont disponibles. Comme il n’existe pas de structure d’arborescence pour les composants, le mode Colonnes n’est pas disponible.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -38,39 +38,41 @@ Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir l
 
 ### Détails des composants {#component-details}
 
-Pour afficher les détails correspondant à un composant spécifique, appuyez/cliquez sur la ressource requise. Trois onglets fournissent :
+Pour afficher des détails sur un composant spécifique, appuyez/cliquez sur la ressource requise. Trois onglets sont proposés :
 
 * **Propriétés**
 
-   ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
+  ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
 
-   L’onglet Propriétés vous permet d’effectuer les opérations suivantes :
+  L’onglet Propriétés vous permet d’effectuer les opérations suivantes :
 
    * Afficher les propriétés générales du composant.
-   * Observez comment l’[icône ou l’abréviation a été définie](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour le composant.
+   * Afficher le mode de [une icône ou une abréviation a été définie.](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour le composant.
 
       * Cliquez sur la source de l’icône pour accéder à ce composant.
-   * Affichez le **Type de ressource** et le **Type de super-ressource** (s’il est défini) du composant.
+
+   * Afficher la variable **Type de ressource** et **Resource Super Type** (s’il est défini) pour le composant.
 
       * Cliquez sur le type de super-ressource pour accéder à ce composant.
-   >[!NOTE]
-   >
-   >Étant donné que les `/apps` ne sont pas modifiables à l’exécution, la console Composants est en lecture seule.
 
-* **Stratégies**
+  >[!NOTE]
+  >
+  >Étant donné que les `/apps` ne sont pas modifiables à l’exécution, la console Composants est en lecture seule.
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+* **Politiques**
+
+  ![Politiques](assets/chlimage_1-169.png)
 
 * **Utilisation en direct**
 
-   ![chlimage_1-170](assets/chlimage_1-170.png)
+  ![Utilisation en direct](assets/chlimage_1-170.png)
 
-   >[!CAUTION]
-   >
-   >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps.
+  >[!CAUTION]
+  >
+  >En raison de la nature des informations collectées pour cette vue, la collecte/l’affichage de ces informations peut nécessiter un certain temps.
 
 * **Documentation**
 
-   Si le développeur a fourni la [documentation du composant](/help/sites-developing/developing-components.md#documenting-your-component), elle apparaîtra dans l’onglet **Documentation**. Si aucune documentation n’est disponible, l’onglet **Documentation** n’est pas affiché.
+  Si le développeur a fourni [documentation du composant](/help/sites-developing/developing-components.md#documenting-your-component), il apparaîtra sur le **Documentation** . Si aucune documentation n’est disponible, l’onglet **Documentation** n’est pas affiché.
 
-   ![chlimage_1-171](assets/chlimage_1-171.png)
+  ![Documentation](assets/chlimage_1-171.png)

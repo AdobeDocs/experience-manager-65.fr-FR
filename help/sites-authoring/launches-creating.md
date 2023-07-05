@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 96%
+source-wordcount: '1040'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    Recommencez l’étape selon vos besoins.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Sélection de la source et ajout de pages](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    Poursuivez en cliquant sur **Suivant**.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Spécifier l’inclusion des pages](assets/chlimage_1-226.png)
 
 1. À l’étape **Propriétés** de l’assistant, vous pouvez définir les paramètres suivants :
 
@@ -91,7 +91,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour l’exploitation**. Voir [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Spécification des propriétés](assets/chlimage_1-227.png)
 
 1. Cliquez ou appuyez sur **Créer** pour terminer le processus et créer votre lancement. La boîte de dialogue de confirmation vous demandera si vous souhaitez ouvrir le lancement immédiatement.
 
@@ -102,22 +102,20 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
 ### Création d’un lancement avec un nouveau modèle {#create-launch-with-new-template}
 
-Lors de la [création d’un lancement](/help/sites-authoring/launches-creating.md#create-launch-with-new-template), vous pouvez décider d’utiliser un nouveau modèle :
-
-**en utilisant un nouveau modèle pour remplacer la page.**
+When [création d’un lancement](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) vous pouvez choisir d’utiliser un nouveau modèle avec l’option : **utilisation d’un nouveau modèle pour remplacer la page**
 
 >[!CAUTION]
 >
 >Cette option est uniquement disponible lors de la création d’un lancement à partir de la console **Sites**. Elle n’est pas disponible lors de la création d’un lancement depuis la console **Lancements**.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![Utiliser un nouveau modèle pour remplacer la page](assets/chlimage_1-228.png)
 
 La sélection de cette option va :
 
 * mettre à jour les autres options disponibles et
 * inclure une nouvelle étape dans laquelle vous pouvez sélectionner le modèle requis.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Sélectionner un modèle](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -140,11 +138,11 @@ La création d’un lancement imbriqué à partir de la console **Lancements** e
 1. Dans la console **Lancements**, sélectionnez **Créer**.
 1. Sélectionnez **Ajouter des pages**, puis accédez à la branche de lancements en spécifiant `/content/launches` dans le filtre. Sélectionnez la branche requise et confirmez avec **Sélectionner** :
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Sélectionner le lancement](assets/chlimage_1-230.png)
 
 1. Continuez avec **Suivant** et indiquez les **propriétés**, comme pour tout autre lancement.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![Spécification des propriétés](assets/chlimage_1-231.png)
 
 #### Création d’un lancement imbriqué – Console Sites {#creating-a-nested-launch-sites-console}
 

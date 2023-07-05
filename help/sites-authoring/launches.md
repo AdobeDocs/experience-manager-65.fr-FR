@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 
       * Les pages source peuvent provenir de plusieurs branches (distinctes).
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![Présentation des actions de lancement](assets/chlimage_1-111.png)
 
 * Modifier la configuration de lancement :
 
@@ -67,32 +67,32 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
       * Effectuez la promotion de votre contenu de lancement dans la **cible** (pages source) lorsqu’elles sont prêtes à être publiées.
       * Publiez le contenu à partir des pages source (après leur promotion).
       * Effectuez la promotion de toutes les pages ou uniquement des pages modifiées.
+
    * Automatiquement, ce qui implique les étapes suivantes :
 
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
 
       * L’indicateur **Prêt pour la production** : cette option ne peut être définie que lors de la modification d’un lancement.
       * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
-         Si aucune date n’a été définie, l’indicateur n’a aucun effet.
-
+        Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 
 * Mettez à jour vos pages source et de lancement en parallèle :
 
    * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+  ![Présentation des mises à jour](assets/chlimage_1-112.png)
 
 * [Créer un lancement imbriqué](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) (un lancement dans un autre lancement) :
 
    * La source est un lancement existant.
    * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) à toute cible ; il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+  ![Présentation du lancement imbriqué](assets/chlimage_1-113.png)
 
-   >[!CAUTION]
-   >
-   >La suppression d’un lancement supprime le lancement lui-même et tous les lancements imbriqués qui en sont des descendants.
+  >[!CAUTION]
+  >
+  >La suppression d’un lancement supprime le lancement lui-même et tous les lancements imbriqués qui en sont des descendants.
 
 >[!NOTE]
 >
@@ -121,8 +121,8 @@ La console Lancements fournit un aperçu de vos lancements et permet d’appliqu
 1. Ouvrez le rail **Références** et sélectionnez la page source.
 1. Sélectionner **Lancements**, le ou les lancements existants seront répertoriés :
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Onglet Référence - Lancements](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Sélectionner le lancement pour afficher les actions possibles](assets/screen-shot_2019-03-05at121952-1.png)

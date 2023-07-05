@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 78%
 
 ---
 
@@ -22,19 +22,19 @@ ht-degree: 100%
 
 ## Concept de création (et de publication) {#concept-of-authoring-and-publishing}
 
-AEM vous propose deux environnements :
+AEM fournit deux environnements :
 
 * Création
 * Publication
 
-Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent le lire.
+Ces fonctions interagissent pour vous permettre de rendre le contenu disponible sur votre site web, de sorte que vos visiteurs puissent le lire.
 
-L’environnement de création fournit les mécanismes de création, de mise à jour et de révision de ce contenu avant de le publier :
+L’environnement de création fournit les mécanismes de création, de mise à jour et de révision de ce contenu avant de le publier :
 
 * Un auteur crée et révise le contenu (qui peut être de plusieurs types, par exemple des pages, des ressources, des publications, etc.)
 * qui, à un moment donné, sera publié sur votre site Web.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![Présentation des environnements](assets/chlimage_1-132.png)
 
 Dans l’environnement de création, les fonctions d’AEM sont accessibles dans deux interfaces utilisateur. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs.
 
@@ -44,33 +44,33 @@ L’auteur travaille dans ce qu’on appelle l’**environnement de création**.
 
 >[!NOTE]
 >
->Votre compte doit disposer des droits d’accès appropriés pour la création, la modification ou la publication de contenu.
+>Votre compte doit disposer des droits d’accès appropriés pour créer, modifier ou publier du contenu.
 
-En fonction de la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer diverses tâches sur votre contenu, par exemple :
+Selon la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer de nombreuses tâches sur votre contenu, notamment (entre autres) :
 
-* générer un nouveau contenu ou modifier le contenu existant sur une page
+* générer du nouveau contenu ou modifier du contenu existant sur une page ;
 * utiliser les modèles prédéfinis pour créer des pages de contenu ;
 * créer, modifier et gérer vos ressources et collections ;
 * créer, modifier et gérer vos publications ;
 * développer vos campagnes et les ressources associées ;
 * développer et gérer des sites communautaires ;
 * déplacer, copier ou supprimer des pages de contenu, des ressources, etc. ;
-* publier des pages, des ressources, etc. (ou annuler leur publication).
+* publier (ou annuler la publication) des pages, des ressources, etc.
 
 Certaines tâches administratives peuvent aussi vous aider à gérer votre contenu :
 
-* workflow qui déterminent le mode de gestion des modifications ; par exemple, appliquer une révision avant une publication.
-* projets qui coordonnent des tâches individuelles.
+* workflow qui déterminent le mode de gestion des modifications ; par exemple, application d’une révision avant publication
+* projets qui coordonnent des tâches individuelles
 
 >[!NOTE]
 >
->Pour la plupart des tâches, l’environnement de création permet également d’[administrer](/help/sites-administering/home.md) AEM.
+>AEM est également [administré](/help/sites-administering/home.md) (pour la plupart des tâches) à partir de l’environnement de création.
 
 #### Environnement de publication {#publish-environment}
 
 Une fois prêt, le contenu du site AEM est publié dans l’**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
-Dans le cas d’un site web ordinaire, l’environnement de publication est situé à l’intérieur de la zone DMZ ; en d’autres termes, il est disponible sur Internet, mais il ne bénéficie plus de la protection absolue de votre réseau interne.
+En règle générale, l’environnement de publication se trouve à l’intérieur de la zone démilitarisée ; en d&#39;autres termes, disponible sur l&#39;internet, mais plus sous la pleine protection du réseau interne.
 
 Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), ou inclut des [composants de Communities](/help/communities/author-communities.md), des utilisateurs (membres) connectés peuvent interagir avec les fonctions de Communities. Par exemple, ils peuvent interagir sur un forum, publier un commentaire ou suivre d’autres membres. Les membres peuvent être autorisés à effectuer des activités normalement réservées à l’environnement de création, telles que la création de nouvelles pages (groupes de communautés), d’articles de blog et la modération des publications d’autres membres.
 
@@ -78,16 +78,15 @@ Lorsque le site AEM est un [site communautaire](/help/communities/overview.md), 
 >
 >Il existe malheureusement une interférence dans la terminologie utilisée. Cela peut se produire avec les fonctions suivantes :
 >
->* **Publier/Annuler la publication**
+>* **Publier/dépublier**
 >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
->  Ces termes sont synonymes de publication/annulation de la publication.
+>  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
 >  Ces termes techniques décrivent le déplacement des données (par exemple de contenu de la page, de fichiers, de code, de commentaires de l’utilisateur) d’un environnement à un autre ; par ex., lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
 >
-
 
 #### Dispatcher {#dispatcher}
 

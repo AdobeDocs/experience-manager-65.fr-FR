@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '2575'
-ht-degree: 99%
+source-wordcount: '2583'
+ht-degree: 98%
 
 ---
 
@@ -49,13 +49,13 @@ La gestion multisite se compose des packages suivants :
 
 Les principaux objets API MSM interagissent comme suit (voir également [Termes utilisés](/help/sites-administering/msm.md#terms-used)) :
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![Principaux objets de l’API MSM](assets/chlimage_1-73.png)
 
 * **`Blueprint`**
 
   Un `Blueprint` (comme dans une [configuration de plan directeur](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) spécifie les pages à partir desquelles une Live Copy peut hériter du contenu.
 
-  ![chlimage_1-74](assets/chlimage_1-74.png)
+  ![Plan directeur](assets/chlimage_1-74.png)
 
    * L’utilisation d’une configuration de plan directeur (`Blueprint`) est facultative, mais :
 
@@ -634,7 +634,7 @@ La liste des langues est stockée sous le nœud `/libs/wcm/core/resources/langua
 * La propriété `country` du nœud stocke le nom complet du pays pour le code.
 * Lorsque le nom de nœud consiste uniquement en un code de langue (`en`, par exemple), la propriété de pays est `*` et une propriété supplémentaire `defaultCountry` stocke le code langue-pays pour indiquer le pays à utiliser.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![Définition de la langue](assets/chlimage_1-76.png)
 
 Pour modifier les langues :
 
@@ -643,7 +643,7 @@ Pour modifier les langues :
 
    Nommez le nouveau dossier `wcm`.
 
-1. Répétez l’étape précédente pour créer l’arborescence de dossiers `/apps/wcm/core`. Créez un nœud de type `sling:Folder` dans `core` appelé `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
+1. Répétez l’étape précédente pour créer l’arborescence de dossiers `/apps/wcm/core`. Créez un nœud de type `sling:Folder` dans `core` appelé `resources`. <!-- ![Resources](assets/chlimage_1-77.png) -->
 
 1. Cliquez avec le bouton droit sur le nœud `/libs/wcm/core/resources/languages` et cliquez sur **Copier**.
 1. Cliquez avec le bouton droit sur le dossier `/apps/wcm/core/resources` et cliquez sur **Coller**. Modifiez les nœuds enfants selon les besoins.
@@ -651,7 +651,7 @@ Pour modifier les langues :
 1. Cliquez sur **Outils**, **Opérations** puis **Console Web**. Dans cette console, cliquez sur **OSGi**, puis **Configuration**.
 1. Recherchez et cliquez sur le **Gestionnaire de langues de gestion de contenu Web Day CQ** et redéfinissez la valeur de **Liste de langues** sur `/apps/wcm/core/resources/languages`, puis cliquez sur **Enregistrer**.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![Gestionnaire de langues de la gestion du contenu web Day CQ](assets/chlimage_1-78.png)
 
 ## Configurer des verrous MSM sur les propriétés de page (IU tactile) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 

@@ -1,7 +1,7 @@
 ---
 title: Conditions préalables à l’intégration à Adobe Target
 seo-title: Prerequisites for Integrating with Adobe Target
-description: Découvrez les conditions requises pour l’intégration avec Adobe Target.
+description: Découvrez les conditions préalables à l’intégration à Adobe Target.
 seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '555'
-ht-degree: 100%
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 76%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 100%
 
 Dans le cadre de l’[intégration d’AEM et Adobe Target](/help/sites-administering/target.md), vous devez vous inscrire à Adobe Target, configurer l’agent de réplication et sécuriser les paramètres d’activité sur le nœud de publication.
 
-## Inscription à Adobe Target {#registering-with-adobe-target}
+## Enregistrement auprès d’Adobe Target {#registering-with-adobe-target}
 
-Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des permissions de niveau **approbateur**. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client et de vos nom d’utilisateur et mot de passe Adobe Target pour connecter AEM à Adobe Target.
+Pour intégrer AEM à Adobe Target, vous devez disposer d’un compte Adobe Target valide. Ce compte doit disposer au minimum des permissions de niveau **approbateur**. Lorsque vous vous inscrivez à Adobe Target, vous recevez un code client. Vous avez besoin du code client ainsi que de votre nom d’utilisateur et de votre mot de passe Adobe Target pour vous connecter AEM à Adobe Target.
 
-Le code client identifie le compte client Adobe Target en appelant le serveur Adobe Target.
+Le code client identifie le compte client Adobe Target lors de l’appel du serveur Adobe Target.
 
 >[!NOTE]
 >
@@ -38,10 +38,10 @@ Le code client identifie le compte client Adobe Target en appelant le serveur A
 
 L’[agent de réplication](/help/sites-deploying/replication.md) Test&amp;Target doit être activé sur l’instance de création. Notez que cet agent de réplication n’est pas activé par défaut si vous utilisez le mode d’exécution [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) pour installer AEM. Pour plus d’informations sur la sécurisation de votre environnement de production, voir [Liste de contrôle de sécurité](/help/sites-administering/security-checklist.md).
 
-1. Sur la page d’accueil d’AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
+1. Sur la page d’accueil AEM, cliquez ou appuyez sur **Outils** > **Déploiement** > **Réplication**.
 1. Cliquez ou appuyez sur **Agents sur l’auteur**.
-1. Cliquez ou appuyez sur l’agent de réplication **Test&amp;Target**, puis cliquez ou appuyez sur **Modifier**.
-1. Sélectionnez l’option Activé, puis cliquez ou appuyez sur **OK**.
+1. Cliquez ou appuyez sur **Test et cible (test et cible)** agent de réplication, puis cliquez ou appuyez sur **Modifier**.
+1. Sélectionnez l’option Activé , puis cliquez ou appuyez sur **OK**.
 
    >[!NOTE]
    >
@@ -57,9 +57,9 @@ Le nœud **cq:ActivitySettings** est disponible dans CRXDE Lite sous `/content/
 
 Le nœud **cq:ActivitySettings** sous le nœud jcr:content de l’activité est protégé par les listes ACL suivantes :
 
-* Tout refuser pour tout le monde
-* Autoriser jcr:read,rep:write pour target-activity-authors (l’auteur est membre de ce groupe par défaut)
-* Autoriser jcr:read,rep:write pour targetservice
+* Refuser tout pour tous
+* Autoriser jcr:read,rep:write pour &quot;target-activity-authors&quot; (l’auteur est membre de ce groupe prêt à l’emploi)
+* Autoriser jcr:read,rep:write pour &quot;targetservice&quot;
 
 Ces paramètres permettent de garantir que les utilisateurs ordinaires n’ont pas accès aux propriétés de nœud. Utilisez les mêmes listes ACL sur les instances de création et de publication. Consultez la section [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) pour plus d’informations.
 
@@ -80,4 +80,4 @@ Pour configurer l’externaliseur AEM, procédez comme suit :
 1. Accédez à la console web OSGi : **https://&lt;server>:&lt;port>/system/console/configMgr.**
 1. Recherchez **Externalisateur de lien Day CQ** et saisissez le domaine du nœud de création.
 
-   ![chlimage_1-120](assets/aem-externalizer-01.png)
+   ![Day CQ Link Externalizer](assets/aem-externalizer-01.png)

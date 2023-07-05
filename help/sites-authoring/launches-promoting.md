@@ -10,10 +10,10 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '754'
-ht-degree: 100%
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,6 @@ Vous devez convertir des pages de lancement afin de renvoyer le contenu dans la 
 >* [Lancements – Ordre des événements](/help/sites-authoring/launches.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
 >
 
-
 Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la console **Lancements** :
 
 1. Ouvrez :
@@ -60,17 +59,18 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
       1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements spécifiques.
       1. Sélectionnez le lancement pour afficher les actions disponibles.
       1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
+
    * la console **Lancements** :
 
       1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
       1. Sélectionnez **Convertir**.
-
 
 1. Dans la première étape, vous pouvez spécifier :
 
    * **Cible**
 
       * **Supprimer le lancement après la promotion**
+
    * **Portée**
 
       * **Promouvoir le lancement complet**
@@ -89,7 +89,7 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 1. Sélectionnez **Suivant** pour continuer.
 1. Vous pouvez passer en revue les pages à convertir. Elles dépendent de la plage de pages sélectionnée :
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![Pages de révision à promouvoir](assets/chlimage_1-102.png)
 
 1. Sélectionnez **Convertir**.
 
@@ -97,7 +97,7 @@ Vous pouvez promouvoir des lancements à partir de la console **Sites** ou de la
 
 Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement** est également disponible dans les **informations sur la page**. Cette action ouvre l’assistant pour collecter les informations nécessaires.
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![Convertir le lancement](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Lorsque vous modifiez une page de lancement, l’action **Convertir le lancement
 
 Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages source, y compris la source racine (en exploitation).
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![Présentation de la promotion d’un lancement imbriqué](assets/chlimage_1-104.png)
 
 1. Comme pour la [création d’un lancement imbriqué](#creatinganestedlaunchlaunchwithinalaunch), recherchez et sélectionnez le lancement en question dans la console de **lancements** ou le rail de **références**.
 1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
@@ -121,6 +121,7 @@ Vous pouvez convertir un lancement vers n’importe quelle source.
 
       * **Supprimer le lancement après la conversion**
 Après la conversion, le lancement sélectionné et les lancements imbriqués seront automatiquement supprimés.
+
    * **Portée**
 Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans ce dernier cas, vous pouvez choisir d’inclure ou d’exclure les sous-pages. La configuration par défaut consiste à promouvoir uniquement les modifications de la page active :
 
@@ -129,12 +130,12 @@ Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement o
       * **Promouvoir la page active**
       * **Promouvoir la page active et les sous-pages**
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![Paramètres de promotion d’un lancement](assets/chlimage_1-105.png)
 
 1. Sélectionnez **Suivant**.
 1. Vérifiez les détails de la conversion avant de sélectionner **Convertir** :
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![Détails de la révision et promotion](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
@@ -142,7 +143,7 @@ Ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement o
 
 1. Vos modifications prendront effet et seront reflétées dans la console **Lancements** :
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![Console de lancements](assets/chlimage_1-107.png)
 
 ## Traitement de pages converties à l’aide du workflow AEM {#processing-promoted-pages-using-aem-workflow}
 
@@ -156,4 +157,4 @@ Pour lancer automatiquement un workflow lors de la conversion de pages, [configu
 
 Par exemple, vous pouvez générer automatiquement des requêtes d’activation de page lorsque les personnes créant du contenu convertissent des pages de lancement. Configurez un lanceur de workflow pour démarrer le workflow Demander l’activation lorsque le nœud du package est modifié.
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![Lanceur de workflow](assets/chlimage_1-108.png)

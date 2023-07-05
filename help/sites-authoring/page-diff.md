@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 52%
+source-wordcount: '578'
+ht-degree: 50%
 
 ---
 
@@ -52,7 +52,7 @@ Par exemple, si vous comparez des versions, la version actuelle est affichée à
 
 La source des deux pages s’affiche clairement dans la barre d’en-tête située en haut de la fenêtre du navigateur.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![Source affichée dans l’en-tête](assets/chlimage_1-109.png)
 
 L’outil de comparaison détecte les modifications effectuées sur les composants et le code HTML. Les éléments qui ont été modifiés sont mis en surbrillance avec des couleurs différentes.
 
@@ -78,7 +78,7 @@ Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez clique
 
 Le côté sélectionné s’affiche dans la totalité de la fenêtre, mais la barre d’en-tête reste disponible en haut de la fenêtre pour vous permettre de basculer d’une page à l’autre si vous le souhaitez.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![La barre supérieure vous permet de basculer entre les pages.](assets/chlimage_1-110.png)
 
 Vous pouvez également quitter le mode plein écran en cliquant sur l’icône de fermeture du mode plein écran.
 
