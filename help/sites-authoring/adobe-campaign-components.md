@@ -9,10 +9,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '2828'
-ht-degree: 100%
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+workflow-type: tm+mt
+source-wordcount: '2839'
+ht-degree: 99%
 
 ---
 
@@ -83,9 +83,9 @@ Vous pouvez faire glisser et déposer une image à partir de l’[explorateur de
 >
 >Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement**.
 
-Une fois l’image transférée (pas avant), vous pouvez utiliser la [modification statique](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) pour recadrer/faire pivoter l’image, au besoin :
+Une fois l’image chargée (pas avant), vous pouvez utiliser la [modification statique](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) pour recadrer/faire pivoter l’image, au besoin :
 
-![](do-not-localize/chlimage_1-10.png)
+![Barre d’outils d’édition statique](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,18 +95,18 @@ Une fois l’image transférée (pas avant), vous pouvez utiliser la [modificati
 
 Différentes autres options sont disponibles en mode Plein écran. Par exemple, Carte et Zoom :
 
-![](do-not-localize/chlimage_1-11.png)
+![Mode de modification plein écran](do-not-localize/chlimage_1-11.png)
 
 Lorsqu’une image est chargée, vous pouvez configurer ce qui suit :
 
-* **Mapper**
-Pour faire correspondre une image, sélectionnez Mapper. Vous spécifiez ensuite comment créer l’image interactive (rectangle, polygone, etc.) et l’emplacement où doit pointer la zone.
+* **Map**
+Pour mapper une image, sélectionnez Mapper. Vous pouvez spécifier ensuite comment créer la zone cliquable (rectangle, polygone, etc.) et l’emplacement sur lequel la zone doit pointer.
 
 * **Recadrer**
-Sélectionnez cette option pour recadrer une image à l’aide de la souris.
+Sélectionnez recadrer pour effectuer un recadrage d’une image. Utilisez la souris pour effectuer le recadrage.
 
 * **Rotation**
-Pour faire pivoter une image, sélectionnez Rotation, à plusieurs reprises si nécessaire.
+Pour faire pivoter une image, sélectionnez Rotation. Répétez l’opération jusqu’à ce que l’image ait pivoté comme vous le souhaitez.
 
 * **Effacer**
 Permet de supprimer l’image actuelle.
@@ -133,6 +133,7 @@ Permet de définir la hauteur et la largeur de l’image.
 >Pour enregistrer l’image, vous devez renseigner le champ **Texte de remplacement** sur l’**onglet Avancé**. Sinon, le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’exemple ci-dessous présente le composant Image (Campaign) affiché.
 
@@ -151,8 +152,7 @@ Légende du lien. Il s’agit du texte que les utilisateurs voient.
 Ajoute des informations supplémentaires sur l’utilisation du lien.
 
 * **LinkType**
-Dans la liste déroulante, sélectionnez entre une 
-**URL personnalisée** et un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
+Dans la liste déroulante, sélectionnez entre une **URL personnalisée** et un **Document adaptatif**. Ce champ est obligatoire. Si vous sélectionnez URL personnalisée, vous pouvez fournir l’URL du lien. Si vous sélectionnez Document adaptatif, vous pouvez fournir le chemin du document.
 
 * **Paramètre d’URL supplémentaire**
 Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un élément pour ajouter plusieurs éléments.
@@ -162,6 +162,7 @@ Ajoutez des paramètres d’URL supplémentaires. Cliquez sur Ajouter un éléme
 >Pour enregistrer le composant, vous devez renseigner le champ **Type de lien** sur l’onglet **Informations sur l’URL**. Autrement, le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’exemple ci-dessous présente le composant Lien (Campaign) affiché.
 
@@ -197,11 +198,11 @@ Lorsque vous cliquez pour configurer le composant, sélectionnez Texte ou Image.
 
 La sélection du composant **Texte** affiche un éditeur en ligne :
 
-![](do-not-localize/chlimage_1-12.png)
+![Barre d’outils Texte](do-not-localize/chlimage_1-12.png)
 
 La sélection du composant **Image** affiche l’éditeur statique pour les images :
 
-![](do-not-localize/chlimage_1-13.png)
+![Barre d’outils Image](do-not-localize/chlimage_1-13.png)
 
 Voir [Composant Image (Campaign)](#image-campaign) pour plus d’informations sur l’utilisation des images. Voir [Composant Texte et personnalisation (Campaign)](#text-personalization-campaign) pour plus d’informations sur l’utilisation de textes.
 
@@ -236,6 +237,7 @@ Permet de définir la hauteur et la largeur de l’image.
 >Le champ **Texte de remplacement** sur l’onglet **Avancé** est obligatoire. Autrement, vous ne pouvez pas enregistrer le composant, et le message d’erreur ci-dessous s’affiche :
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 L’exemple ci-dessous présente le composant Texte et image (Campaign) affiché.
 
@@ -266,7 +268,7 @@ Dans l’éditeur statique, vous pouvez ajouter du texte, modifier la justificat
 
 ## Composants Formulaire d’Adobe Campaign {#adobe-campaign-form-components}
 
-Vous utilisez les composants Adobe Campaign pour créer un formulaire que les utilisateurs et utilisatrices remplissent pour s’abonner ou se désinscrire d’une newsletter, ou mettre à jour leurs profils utilisateur. Voir [Création de formulaires Adobe Campaign](/help/sites-authoring/adobe-campaign-forms.md) pour plus d’informations.
+Vous utilisez les composants Adobe Campaign pour créer un formulaire que les utilisateurs et utilisatrices remplissent pour s’abonner ou se désinscrire d’une newsletter, ou mettre à jour leurs profils utilisateur. Voir [Création de formulaires Adobe Campaign](/help/sites-authoring/adobe-campaign-forms.md) pour plus d’informations.
 
 Chaque champ de composant peut être associé à un champ de base de données Adobe Campaign. Les champs disponibles varient en fonction du type de données qu’ils contiennent, comme décrit dans la section [Composants et type de données](#components-and-data-type). Si vous étendez votre schéma de destinataires dans Adobe Campaign, les nouveaux champs seront disponibles dans les composants dont les types de données correspondent.
 
@@ -379,7 +381,7 @@ Indiquez les classes CSS à utiliser pour ce composant.
 
 Le composant Case à cocher (Campaign) permet à l’utilisateur ou à l’utilisatrice de modifier les champs de profil Adobe Campaign qui sont de type données booléennes. Par exemple, vous pouvez avoir un composant Case à cocher (Campaign) qui permet au destinataire ou à la destinataire d’indiquer qu’il ou elle ne souhaite être contacté(e) via aucun canal.
 
-Vous pouvez [configurer des paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components) dans le composant Case à cocher (Campaign).
+Vous pouvez [configurer des paramètres communs à la plupart des composants d’Adobe Campaign](#settings-common-to-most-components) dans le composant Case à cocher (Campaign).
 
 L’exemple ci-dessous présente le composant Case à cocher (Campaign) affiché.
 
@@ -403,9 +405,9 @@ L’exemple ci-dessous présente le composant Champ de date (Campaign), dont la 
 
 ### Clé primaire chiffrée (Campaign) {#encrypted-primary-key-campaign}
 
-Ce composant définit le nom du paramètre d’URL qui contiendra l’identifiant d’un profil Adobe Campaign (**Identifiant de ressource principal** ou **Clé primaire chiffrée** dans Adobe Campaign Standard et la version 6.1, respectivement).
+Ce composant définit le nom du paramètre d’URL qui contiendra l’identifiant d’un profil Adobe Campaign (**Identifiant de ressource principal** ou **Clé primaire chiffrée** dans Adobe Campaign Standard et la version 6.1, respectivement).
 
-Chaque formulaire affichant et modifiant les données de profil Adobe Campaign **doit** inclure un composant Clé primaire chiffrée.
+Chaque formulaire affichant et modifiant les données de profil Adobe Campaign **doit** inclure un composant Clé primaire chiffrée.
 
 Vous pouvez configurer les éléments ci-dessous dans le composant Clé primaire chiffrée (Campaign) :
 
@@ -457,7 +459,7 @@ L’exemple ci-dessous présente le composant Champ numérique (Campaign), dont 
 
 Cette liste déroulante vous permet de sélectionner une option. Par exemple, le genre ou le statut d’un ou une destinataire.
 
-Vous pouvez [configurer des paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components) dans le composant Champ d’option (Campaign). Pour remplir la liste déroulante, sélectionnez le champ approprié dans les champs de personnalisation d’Adobe Campaign en cliquant ou en appuyant sur le symbole Adobe Campaign et en accédant au champ.
+Vous pouvez [configurer des paramètres communs à la plupart des composants d’Adobe Campaign](#settings-common-to-most-components) dans le composant Champ d’option (Campaign). Pour remplir la liste déroulante, sélectionnez le champ approprié dans les champs de personnalisation d’Adobe Campaign en cliquant ou en appuyant sur le symbole Adobe Campaign et en accédant au champ.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -475,7 +477,7 @@ Lorsque vous ajoutez ce composant à un formulaire, il affiche tous les abonneme
 >
 >Le composant ne vérifie pas les services auxquels l’utilisateur est déjà abonné/dont il est désabonné.
 
-Vous pouvez [configurer des paramètres communs à la plupart des composants Adobe Campaign](#settings-common-to-most-components) dans le composant Liste de contrôle des abonnements (Campaign). (Aucune configuration Adobe Campaign n’est disponible pour ce composant.)
+Vous pouvez [configurer des paramètres communs à la plupart des composants d’Adobe Campaign](#settings-common-to-most-components) dans le composant Liste de contrôle des abonnements (Campaign). (Aucune configuration Adobe Campaign n’est disponible pour ce composant.)
 
 L’exemple ci-dessous montre l’affichage du composant Liste de contrôle des abonnements (Campaign).
 

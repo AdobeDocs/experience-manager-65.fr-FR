@@ -1,7 +1,7 @@
 ---
 title: Offres Target
 seo-title: Target offers
-description: Création d’offres Target
+description: Créer des offres cibles
 seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
@@ -10,21 +10,21 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '91'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 66%
 
 ---
 
 # Offres Target{#target-offers}
 
-## Création d’une expérience Offre Test&amp;Target {#creating-a-test-target-offer-experience}
+## Création d’une expérience d’offre Test&amp;Target {#creating-a-test-target-offer-experience}
 
-1. Sélectionnez votre nouvelle campagne dans le volet de gauche ou double-cliquez sur celle-ci dans le volet de droite.
-1. Sélectionnez le mode Liste à l’aide de l’icône :
+1. Sélectionnez votre nouvelle campagne dans le volet de gauche ou double-cliquez dessus dans le volet de droite.
+1. Sélectionnez la vue Liste à l’aide de l’icône :
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![Vue Liste](do-not-localize/chlimage_1-11.png)
 
 1. Cliquez sur **Nouveau ...**
 1. Vous pouvez indiquer le **Titre**, le **Nom** et le type d’expérience à créer ; dans ce cas, Offre Test&amp;Target.
@@ -35,7 +35,7 @@ ht-degree: 100%
 
    >[!NOTE]
    >
-   >Les expériences Test&amp;Target ne sont actuellement pas répertoriées dans MCM. Elles sont accessibles à partir de la console **Sites Web**, sous Campagnes.
+   >Les expériences Test&amp;Target ne sont actuellement pas répertoriées dans MCM. Elles sont accessibles à partir de la console **Sites web**, sous Campagnes.
 
 ## Intégration à Adobe Target {#integrating-with-adobe-target}
 

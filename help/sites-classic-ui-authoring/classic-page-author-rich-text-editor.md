@@ -1,30 +1,30 @@
 ---
 title: Éditeur de texte enrichi
-description: L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM.
+description: L’éditeur de texte enrichi est un élément de base de la saisie de contenu texte dans AEM.
 uuid: 4bcce45a-e14f-41b7-8c6f-89d1e1bb595c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1801'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '1841'
+ht-degree: 43%
 
 ---
 
 # Éditeur de texte enrichi {#rich-text-editor}
 
-L’éditeur de texte enrichi est une composante essentielle à la saisie de contenu texte dans AEM. Il constitue la base de divers composants, dont :
+L’éditeur de texte enrichi est un élément de base de la saisie de contenu texte dans AEM. Il constitue la base de divers composants, notamment :
 
 * Texte
-* Texte et Image
+* Image du texte
 * Tableau
 
 ## Éditeur de texte enrichi {#rich-text-editor-1}
 
-La boîte de dialogue d’édition WYSIWYG (tel écrit, tel écran) fournit un large éventail de fonctionnalités :
+La boîte de dialogue de modification WYSIWYG offre un large éventail de fonctionnalités :
 
 ![cq55_rte_basicchars](assets/cq55_rte_basicchars.png)
 
@@ -34,53 +34,53 @@ La boîte de dialogue d’édition WYSIWYG (tel écrit, tel écran) fournit un l
 
 ## Édition statique {#in-place-editing}
 
-Outre le mode d’édition de texte enrichi basé sur la boîte de dialogue, AEM propose un mode d’édition statique qui permet l’édition directe du texte tel qu’il est affiché dans la mise en page.
+Outre le mode d’édition de texte enrichi basé sur une boîte de dialogue, AEM fournit également le mode d’édition statique, qui permet de modifier directement le texte tel qu’il est affiché dans la mise en page.
 
-Cliquez deux fois sur un paragraphe (double-clic lent) pour passer en mode d’édition statique (le bord du composant devient orange).
+Cliquez deux fois sur un paragraphe (double-clic lent) pour passer en mode d’édition statique (la bordure du composant devient orange).
 
-Vous aurez la possibilité de modifier directement le texte sur la page, au lieu de passer par une boîte de dialogue. Il vous suffit d’effectuer vos modifications pour qu’elles soient enregistrées automatiquement.
+Vous pourrez modifier directement le texte sur la page, plutôt que dans une boîte de dialogue. Il vous suffit d’apporter vos modifications qui seront automatiquement enregistrées.
 
 ![cq55_rte_inlineediting](assets/cq55_rte_inlineediting.png)
 
 >[!NOTE]
 >
->Si l’outil de recherche de contenu est ouvert, une barre d’outils comportant les options de mise en forme de l’éditeur de texte enrichi s’affiche en haut de l’onglet (comme illustré ci-dessus).
+>Si l’outil de recherche de contenu est ouvert, une barre d’outils avec les options de mise en forme de l’éditeur de texte enrichi s’affiche en haut de l’onglet (comme ci-dessus).
 >
->Dans le cas contraire, la barre d’outils ne s’affiche pas.
+>Si l’outil de recherche de contenu n’est pas ouvert, la barre d’outils ne s’affiche pas.
 
-Pour l’heure, le mode Modifier statique est activé pour les éléments de page générés par les composants **Texte** et **Titre**.
+Actuellement, le mode d’édition statique est activé pour les éléments de page générés par la variable **Texte** et **Titre** composants.
 
 >[!NOTE]
 >
->Le composant [!UICONTROL Titre] a été conçu pour contenir un texte court sans saut de ligne. Lorsque vous modifiez un titre en mode d’édition statique, saisir un saut de ligne entraîne l’ouverture d’un nouveau composant **Texte** sous le titre.
+>Le [!UICONTROL Titre] est conçu pour contenir un texte court sans sauts de ligne. Lorsque vous modifiez un titre en mode d’édition statique, la saisie d’un saut de ligne ouvre une nouvelle **Texte** sous le titre.
 
-## Fonctions de l’Editeur de texte enrichi {#features-of-the-rich-text-editor}
+## Fonctions de l’éditeur de texte enrichi {#features-of-the-rich-text-editor}
 
 L’éditeur de texte enrichi fournit diverses fonctions, [selon la configuration](/help/sites-administering/rich-text-editor.md) du composant. Ces fonctions sont disponibles dans les deux interfaces utilisateur (classique et optimisée pour les écrans tactiles).
 
 ### Formats de caractères de base {#basic-character-formats}
 
-![](do-not-localize/cq55_rte_basicchars.png)
+![Barre d’outils Format de caractère](do-not-localize/cq55_rte_basicchars.png)
 
-Ces options vous permettent d’appliquer une mise en forme aux caractères que vous avez sélectionnés (mis en surbrillance). Certaines d’entre elles disposent également de touches de raccourci :
+Vous pouvez y appliquer une mise en forme aux caractères que vous avez sélectionnés (mis en surbrillance). certaines options comportent également des touches de raccourci :
 
 * Gras (Ctrl+B)
 * Italique (Ctrl+I)
-* Souligné (Ctrl+U)
+* Souligné (Ctrl-U)
 * Indice
 * Exposant
 
 ![cq55_rte_basicchars_use](assets/cq55_rte_basicchars_use.png)
 
-Toutes ces options fonctionnent selon le principe de bascule, ce qui signifie qu’une nouvelle sélection supprime la mise en forme.
+Tous fonctionnent comme un bouton d’activation/désactivation. La résélection supprime donc le format.
 
 ### Styles et formats prédéfinis {#predefined-styles-and-formats}
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Votre installation peut inclure des styles et des mises en forme prédéfinis. Ils sont disponibles dans les listes déroulantes **[!UICONTROL Style]** et **[!UICONTROL Format]**, et peuvent être appliqués au texte que vous avez sélectionné.
+Votre installation peut inclure des styles et des formats prédéfinis. Ils sont disponibles avec les **[!UICONTROL Style]** et **[!UICONTROL Format]** liste déroulante et peut être appliqué au texte que vous avez sélectionné.
 
-Un style peut être appliqué à une chaîne spécifique (un style est mis en corrélation avec CSS) :
+Un style peut être appliqué à une chaîne spécifique (un style correspond à CSS) :
 
 ![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
@@ -88,19 +88,19 @@ Tandis qu’une disposition est appliquée à l’intégralité d’un paragraph
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
-Une mise en forme spécifique peut uniquement être modifiée (la valeur par défaut est **[!UICONTROL Paragraphe]**).
+Un format spécifique ne peut être modifié que (la valeur par défaut est **[!UICONTROL Paragraphe]**).
 
-Un style peut être supprimé ; placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône de suppression :
+Un style peut être supprimé. placez le curseur dans le texte auquel le style a été appliqué, puis cliquez sur l’icône Supprimer :
 
 >[!CAUTION]
 >
->Abstenez-vous de resélectionner une partie du texte auquel le style a été appliqué. Cela entraînerait, en effet, la désactivation de l’icône.
+>Ne sélectionnez pas à nouveau le texte auquel le style a été appliqué ou l’icône sera désactivée.
 
 ### Couper, Copier, Coller {#cut-copy-paste}
 
-![](do-not-localize/cq55_rte_cutcopypaste.png)
+![Couper, Copier, Coller, barre d’outils](do-not-localize/cq55_rte_cutcopypaste.png)
 
-Les fonctions **[!UICONTROL Couper]** et **[!UICONTROL Copier]** standard sont disponibles. Plusieurs versions de la fonction **[!UICONTROL Coller]** sont fournies afin de pourvoir aux différents formats.
+Les fonctions standard de **[!UICONTROL Couper]** et **[!UICONTROL Copier]** sont disponibles. Plusieurs versions de **[!UICONTROL Coller]** sont fournis pour prendre en charge différents formats.
 
 * Couper (Ctrl-X)
 * Copier (Ctrl-C)
@@ -113,53 +113,53 @@ Mécanisme de collage par défaut (Ctrl-V) pour le composant ; dans le cas d’
 
 ### Annuler, Rétablir {#undo-redo}
 
-![](do-not-localize/cq55_rte_undoredo.png)
+![Annuler, barre d’outils Rétablir](do-not-localize/cq55_rte_undoredo.png)
 
-AEM conserve un historique des 50 dernières actions effectuées dans le composant en cours, classées par ordre chronologique. Au besoin, ces opérations peuvent être annulées (puis rétablies) dans un ordre strictement défini.
+AEM conserve un historique de vos 50 dernières actions dans le composant actuel, dans l’ordre chronologique. Si nécessaire, ces actions peuvent être annulées (puis rétablies) dans un ordre strict.
 
 >[!CAUTION]
 >
->L’historique est conservé uniquement pour la session d’édition en cours ; il est redémarré à chaque fois que vous ouvrez le composant en vue de le modifier.
+>L’historique n’est conservé que pour la session de modification actuelle. Il est redémarré chaque fois que vous ouvrez le composant en vue de le modifier.
 
 >[!NOTE]
 >
->Le nombre de tâches par défaut est limité à 50 ; il se peut toutefois que cette valeur soit différente pour votre installation.
+>Cinquante est le nombre de tâches par défaut. Il peut s’agir d’une opération différente pour votre installation.
 
 ### Alignement {#alignment}
 
-![](do-not-localize/cq55_rte_alignment.png)
+![Barre d’outils d’alignement](do-not-localize/cq55_rte_alignment.png)
 
-Le texte peut être aligné à gauche, au centre ou à droite.
+Votre texte peut être aligné à gauche, au centre ou à droite.
 
 ![cq55_rte_alignment_use](assets/cq55_rte_alignment_use.png)
 
 ### Indentation {#indentation}
 
-![](do-not-localize/cq55_rte_indent.png)
+![Barre d’outils de retrait](do-not-localize/cq55_rte_indent.png)
 
-La mise en retrait d’un paragraphe peut être augmentée ou réduite. Lorsque le paragraphe sélectionné est mis en retrait, tout nouveau texte saisi conserve le niveau de mise en retrait actuel.
+La mise en retrait d’un paragraphe peut être augmentée ou réduite. Le paragraphe sélectionné est mis en retrait, tout nouveau texte saisi conserve le niveau de mise en retrait actuel.
 
 ![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
 
 ### Listes {#lists}
 
-![](do-not-localize/cq55_rte_lists.png)
+![Barre d’outils Listes](do-not-localize/cq55_rte_lists.png)
 
-Vous pouvez créer des listes à puces et numérotées dans votre texte. Vous pouvez soit sélectionner le type de liste et commencer la saisie, soit mettre en surbrillance le texte à convertir. Dans les deux cas, un saut de ligne génère un nouvel élément de liste.
+Vous pouvez créer des listes à puces et numérotées dans votre texte. Sélectionnez le type de liste et commencez à saisir ou mettez en surbrillance le texte à convertir. Dans les deux cas, un flux de ligne lance un nouvel élément de liste.
 
 Vous pouvez créer des listes imbriquées en mettant en retrait un ou plusieurs éléments de liste.
 
-Vous pouvez modifier le style d’une liste en positionnant simplement le curseur dans la liste, puis en sélectionnant un autre style. Une sous-liste peut également présenter un style différent de sa liste parent ; vous pouvez lui appliquer ce style après l’avoir créée (par mise en retrait).
+Vous pouvez modifier le style d’une liste en positionnant simplement le curseur dans la liste, puis en sélectionnant l’autre style. Une sous-liste peut également avoir un style différent de la liste contenante. Vous pouvez l’appliquer une fois la sous-liste créée (par mise en retrait).
 
 ![cq55_rte_lists_use](assets/cq55_rte_lists_use.png)
 
 ### Liens {#links}
 
-![](do-not-localize/cq55_rte_links.png)
+![Barre d’outils Liens](do-not-localize/cq55_rte_links.png)
 
 Pour générer un lien vers une URL (que ce soit à l’intérieur de votre site Web ou un emplacement externe) mettez en surbrillance le texte requis, puis cliquez sur l’icône Lien hypertexte :
 
-![](do-not-localize/chlimage_1-9.png)
+![Icône Hyperlien](do-not-localize/chlimage_1-9.png)
 
 Une boîte de dialogue vous permet de spécifier l’URL cible, ainsi que de déterminer si elle doit s’ouvrir dans une nouvelle fenêtre.
 
@@ -175,19 +175,19 @@ Vous pouvez :
 
 >[!NOTE]
 >
->Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces protocoles sont `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront refusés et marqués comme non valides.
+>Vous pouvez faire précéder l’URI de l’un des protocoles configurés pour votre installation. Dans une installation standard, ces protocoles sont `https://`, `ftp://` et `mailto:`. Les protocoles non configurés pour votre installation seront rejetés et marqués comme non valides.
 
-Pour rompre le lien, placez le curseur dans le texte du lien et cliquez ensuite sur l’icône [!UICONTROL Rompre le lien] : 
+Pour rompre le lien, placez le curseur n’importe où dans le texte du lien et cliquez sur le bouton [!UICONTROL Dissocier] icon :
 
-![](do-not-localize/chlimage_1-10.png)
+![Icône Dissocier](do-not-localize/chlimage_1-10.png)
 
-### Ancres {#anchors}
+### Ancre {#anchors}
 
-![](do-not-localize/cq55_rte_anchor.png)
+![Barre d’outils Ancres](do-not-localize/cq55_rte_anchor.png)
 
-Une ancre peut être créée n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur l’icône **Ancre** pour ouvrir la boîte de dialogue.
+Une ancre peut être créée n’importe où dans le texte en positionnant le curseur ou en sélectionnant du texte. Cliquez ensuite sur le bouton **Ancre** pour ouvrir la boîte de dialogue.
 
-Saisissez le nom de l’ancre et cliquez ensuite sur **OK** pour l’enregistrer.
+Saisissez le nom de l’ancre, puis cliquez sur **OK** pour enregistrer.
 
 ![cq55_rte_anchor_use](assets/cq55_rte_anchor_use.png)
 
@@ -197,13 +197,13 @@ L’ancre s’affiche lorsque le composant est en cours d’édition ; elle peu
 
 ### Rechercher et remplacer {#find-and-replace}
 
-![](do-not-localize/cq55_rte_findreplace.png)
+![Barre d’outils Rechercher et remplacer](do-not-localize/cq55_rte_findreplace.png)
 
-AEM met à votre disposition une fonction de **recherche** et de **remplacement** (Rechercher et remplacer).
+AEM fournit à la fois une **Rechercher** et un **Remplacer** (rechercher et remplacer).
 
-Ces deux fonctions sont pourvues d’un bouton **Rechercher le suivant** permettant de rechercher le texte spécifié dans le composant ouvert. Vous pouvez également indiquer s’il faut tenir compte de la casse (respect des majuscules / minuscules) dans la recherche.
+Les deux ont une **Rechercher suivant** pour rechercher le texte spécifié dans le composant ouvert. Vous pouvez également indiquer si la casse (supérieure/inférieure) doit être mise en correspondance.
 
-La recherche commence toujours à la position du curseur dans le texte. Arrivé à la fin du composant, un message vous informe que l’opération de recherche suivante commencera au début.
+La recherche commence toujours à partir de la position actuelle du curseur dans le texte. Lorsque la fin du composant est atteinte, un message vous informe que la prochaine opération de recherche démarre à partir du haut.
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
@@ -213,7 +213,7 @@ L’option **Remplacer** permet de **rechercher**, puis de **remplacer** une ins
 
 ### Images {#images}
 
-Vous pouvez faire glisser des images à partir de l’Outil de recherche de contenu afin de les ajouter au texte.
+Vous pouvez faire glisser des images à partir de l’outil de recherche de contenu pour les ajouter au texte.
 
 ![cq55_rte_image_use](assets/cq55_rte_image_use.png)
 
@@ -223,7 +223,7 @@ Vous pouvez faire glisser des images à partir de l’Outil de recherche de cont
 
 ### Vérificateur orthographique {#spelling-checker}
 
-![](do-not-localize/cq55_rte_spellchecker.png)
+![Vérificateur orthographique](do-not-localize/cq55_rte_spellchecker.png)
 
 Le vérificateur orthographique vérifie l’intégralité du texte dans le composant actif.
 
@@ -237,19 +237,19 @@ Toute faute d’orthographe est mise en surbrillance :
 
 ### Tableaux {#tables}
 
-Des tableaux sont disponibles :
+Les tableaux sont disponibles dans les deux cas :
 
-* en tant que composant **Tableau**
+* Comme la variable **Tableau** component
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+  ![Composant du tableau](assets/chlimage_1-105.png)
 
 * à l’intérieur du composant **Texte**
 
-   ![](do-not-localize/chlimage_1-11.png)
+  ![Barre d’outils Texte](do-not-localize/chlimage_1-11.png)
 
-   >[!NOTE]
-   >
-   >Bien que les tableaux soient disponibles dans l’éditeur de texte enrichi, il est conseillé d’utiliser le composant **Tableau** lors de leur création.
+  >[!NOTE]
+  >
+  >Bien que les tableaux soient disponibles dans l’éditeur de texte enrichi, il est conseillé d’utiliser le composant **Tableau** lors de leur création.
 
 Dans les composants **Texte** et **Tableau**, la fonctionnalité de tableau est accessible par le biais du menu contextuel (qui s’ouvre généralement à l’aide du bouton droit de la souris) ; par exemple :
 
@@ -257,9 +257,9 @@ Dans les composants **Texte** et **Tableau**, la fonctionnalité de tableau est 
 
 >[!NOTE]
 >
->Une barre d’outils spécialisée est également disponible dans le composant **Tableau**. Elle contient plusieurs fonctions standard de l’éditeur de texte enrichi, ainsi qu’un sous-ensemble de fonctions spécifiques au tableau.
+>Dans le **Tableau** , une barre d’outils spécialisée est également disponible, notamment diverses fonctions standard de l’éditeur de texte enrichi, ainsi qu’un sous-ensemble de fonctions spécifiques au tableau.
 
-Les fonctions spécifiques au tableau sont les suivantes :
+Les fonctions spécifiques au tableau sont les suivantes :
 
 * [Propriétés du tableau](#table-properties)
 * [Propriétés de la cellule](#cell-properties)
@@ -316,53 +316,52 @@ Les propriétés d’une cellule spécifique ou d’une série de cellules peuve
 
 ![cq55_rte_rows](assets/cq55_rte_rows.png)
 
-Vous pouvez ajouter des lignes au-dessus ou sous la ligne en cours.
+Les lignes peuvent être ajoutées au-dessus ou au-dessous de la ligne actuelle.
 
-La ligne en cours peut également être supprimée.
+La ligne actuelle peut également être supprimée.
 
 #### Ajouter ou supprimer des colonnes {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
-Vous pouvez ajouter des colonnes à gauche ou à droite de la colonne en cours.
+Vous pouvez ajouter des colonnes à gauche ou à droite de la colonne active.
 
-La colonne en cours peut également être supprimée.
+La colonne actuelle peut également être supprimée.
 
 #### Sélectionner des lignes ou colonnes entières {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-Cette option sélectionne toute la ligne ou la colonne en cours. Vous pouvez alors exécuter des actions spécifiques (fusionner des éléments, par exemple).
+Sélectionne toute la ligne ou la colonne active. Des actions spécifiques (par exemple, fusion) sont alors disponibles.
 
 #### Fusionner des cellules {#merge-cells}
 
 ![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
-* Si vous avez sélectionné un groupe de cellules, vous pouvez toutes les fusionner en une seule.
-* Si une seule cellule est sélectionnée, vous pouvez la fusionner avec celle située à sa droite ou en dessous.
+* Si vous avez sélectionné un groupe de cellules, vous pouvez les fusionner en une seule.
+* Si une seule cellule est sélectionnée, vous pouvez la fusionner avec la cellule à droite ou en dessous.
 
 #### Diviser des cellules {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
-Sélectionnez une seule cellule pour la diviser :
+Sélectionnez une seule cellule pour la fractionner :
 
-* La division d’une cellule dans le sens horizontal génère une nouvelle cellule à droite de la cellule actuelle, dans la colonne en cours.
-* La division d’une cellule dans le sens vertical génère une nouvelle cellule sous la cellule actuelle, mais dans la ligne en cours.
+* Le fractionnement horizontal d’une cellule génère une nouvelle cellule à droite de la cellule active, dans la colonne active.
+* Le fractionnement vertical d’une cellule génère une nouvelle cellule sous la cellule active, mais dans la ligne actuelle.
 
 #### Création de tableaux imbriqués {#creating-nested-tables}
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-La création d’un tableau imbriqué génère un nouveau tableau autonome dans la cellule en cours.
+La création d’un tableau imbriqué crée un tableau autonome dans la cellule active.
 
 >[!NOTE]
 >
->Certaines opérations supplémentaires dépendent du navigateur :
+>Certains comportements supplémentaires dépendent du navigateur :
 >
->* Windows IE : utilisez la combinaison Ctrl + bouton principal de la souris (il s’agit généralement du bouton gauche) pour sélectionner plusieurs cellules.
+>* Windows IE : Utilisez les touches Ctrl+Principal-clic-bouton-souris (généralement gauche) pour sélectionner plusieurs cellules.
 >* Firefox : faites glisser le pointeur pour sélectionner une plage de cellules.
-
 
 #### Supprimer le tableau {#remove-table}
 
@@ -372,21 +371,21 @@ Utilisez cette option pour supprimer le tableau du composant **[!UICONTROL Texte
 
 ### Caractères spéciaux {#special-characters}
 
-![](do-not-localize/cq55_rte_specialchars.png)
+![Barre d’outils Caractères spéciaux](do-not-localize/cq55_rte_specialchars.png)
 
-Des caractères spéciaux peuvent être mis à la disposition de votre éditeur de texte enrichi ; ces caractères peuvent varier en fonction de l’installation.
+Des caractères spéciaux peuvent être mis à la disposition de votre éditeur de texte enrichi ; elles peuvent varier en fonction de votre installation.
 
 ![cq55_rte_specialchars_use](assets/cq55_rte_specialchars_use.png)
 
-Survolez un caractère à l’aide du pointeur de la souris pour en afficher une version agrandie, puis cliquez pour l’insérer à l’emplacement actuel dans votre texte.
+Pointez la souris pour afficher une version agrandie du caractère, puis cliquez pour qu’il soit inclus à l’emplacement actuel dans votre texte.
 
-### Mode d’édition de source {#source-editing-mode}
+### Mode d’édition de la source {#source-editing-mode}
 
-![](do-not-localize/cq55_rte_sourceedit.png)
+![Barre d’outils du mode d’édition source](do-not-localize/cq55_rte_sourceedit.png)
 
-Le mode d’édition source vous permet d’afficher et de modifier le code HTML sous-jacent du composant.
+Le mode d’édition source vous permet d’afficher et de modifier le HTML sous-jacent du composant.
 
-Par conséquent, le texte :
+Donc le texte :
 
 ![cq55_rte_sourcemode_1](assets/cq55_rte_sourcemode_1.png)
 
@@ -396,4 +395,4 @@ Se présentera comme suit dans le mode source (la source étant bien souvent plu
 
 >[!CAUTION]
 >
->Lors de la sortie du mode source, AEM effectue certains contrôles de validation (pour s’assurer, par exemple, que le texte est contenu/imbriqué correctement dans des blocs). Cela peut avoir une incidence sur les modifications que vous avez effectuées.
+>Lors de la sortie du mode source, AEM effectue certaines vérifications de validation (par exemple, s’assurer que le texte est correctement contenu/imbriqué dans des blocs). Cela peut entraîner des modifications de vos modifications.

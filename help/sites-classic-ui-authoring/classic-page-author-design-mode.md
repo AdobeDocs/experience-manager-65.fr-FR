@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 98%
 
 ---
 
@@ -45,7 +45,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
 1. Pour passer en mode de conception, ouvrez une page à modifier et cliquez sur l’icône du sidekick :
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Mode de conception](do-not-localize/chlimage_1.png)
 
 1. Cliquez sur **Modifier** dans le système de paragraphes (**Conception de paragraphe**).
 
@@ -59,7 +59,7 @@ En mode de conception, le sidekick est réduit et vous avez la possibilité de c
 
 1. Le sidekick se réduit en mode de conception. En cliquant sur la flèche, vous pouvez agrandir le sidekick et revenir au mode d’édition :
 
-   ![](do-not-localize/sidekick-collapsed.png)
+   ![Sidekick réduit](do-not-localize/sidekick-collapsed.png)
 
 ## Configurer la conception d’un composant {#configuring-the-design-of-a-component}
 
@@ -67,7 +67,7 @@ En mode de conception, vous pouvez également configurer des attributs pour les 
 
 1. Pour passer en mode de conception, ouvrez une page à modifier et cliquez sur l’icône du sidekick :
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Mode de conception - Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. Vous pouvez configurer la conception des composants.
 
@@ -79,4 +79,4 @@ En mode de conception, vous pouvez également configurer des attributs pour les 
 
 1. Le sidekick se réduit en mode de conception. En cliquant sur la flèche, vous pouvez agrandir le sidekick et revenir au mode d’édition :
 
-   ![](do-not-localize/sidekick-collapsed-1.png)
+   ![Sidekick réduit](do-not-localize/sidekick-collapsed-1.png)

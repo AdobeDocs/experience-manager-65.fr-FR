@@ -1,7 +1,7 @@
 ---
 title: Guide rapide pour la création de pages
 seo-title: Quick Guide to Authoring Pages
-description: Guide rapide de haut niveau des principales actions à entreprendre pour créer le contenu d’une page
+description: Guide rapide de haut niveau sur les principales actions de création de contenu de page
 seo-description: A quick, high-level guide to the key actions of authoring page content
 uuid: ef7ab691-f80d-4eeb-9f4a-afbf1bc83669
 contentOwner: Chris Bohnert
@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1573'
-ht-degree: 100%
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+workflow-type: tm+mt
+source-wordcount: '1580'
+ht-degree: 67%
 
 ---
 
 # Guide rapide pour la création de pages{#quick-guide-to-authoring-pages}
 
-Considérez ces procédures comme un guide rapide (de haut niveau) des principales actions à entreprendre pour créer le contenu d’une page dans AEM.
+Ces procédures sont conçues comme un guide rapide (de haut niveau) des principales actions de création de contenu de page dans AEM.
 
-Elles :
+Ils :
 
-* ne doivent pas être considérées comme une couverture exhaustive ;
-* fournissent des liens vers une documentation détaillée.
+* ne sont pas destinées à assurer une couverture exhaustive ;
+* Fournissez des liens vers la documentation détaillée.
 
 Pour obtenir des détails complets sur la création dans AEM, consultez :
 
@@ -34,7 +34,7 @@ Pour obtenir des détails complets sur la création dans AEM, consultez :
 
 ## Quelques conseils rapides {#a-few-quick-hints}
 
-Avant de donner un aperçu des détails, voici quelques conseils et astuces qu’il convient de prendre en compte.
+Avant de vous donner un aperçu des détails, voici une petite collection de conseils et d&#39;astuces généraux qui méritent d&#39;être gardés à l&#39;esprit.
 
 ### La console Sites {#sites-console}
 
@@ -44,18 +44,18 @@ Avant de donner un aperçu des détails, voici quelques conseils et astuces qu�
 
 * Réorganisation des pages dans un dossier
 
-   * Cette opération peut être effectuée en [mode Liste](/help/sites-authoring/basic-handling.md#list-view). Les changements seront appliqués et visibles dans d’autres modes.
+   * Cette opération peut être effectuée dans la vue [Liste](/help/sites-authoring/basic-handling.md#list-view). Les changements seront appliqués et visibles dans d’autres vues.
 
 #### Création de pages {#page-authoring}
 
 * Liens de navigation
 
-   * ***Les liens ne sont pas disponibles pour la navigation*** lorsque vous êtes en mode d’**édition**. Pour naviguer à l’aide de liens, vous devez [afficher un aperçu de la page](/help/sites-authoring/editing-content.md#previewing-pages) à l’aide de l’une des fonctionnalités suivantes :
+   * ***Les liens ne sont pas disponibles pour la navigation*** lorsque vous êtes en mode d’**édition**. Pour naviguer avec des liens, vous devez [prévisualiser la page ;](/help/sites-authoring/editing-content.md#previewing-pages) en utilisant :
 
       * [Mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode)
       * [Afficher comme publié(e)](/help/sites-authoring/editing-content.md#view-as-published)
 
-* Les versions ne sont pas lancées/créées à partir de l’éditeur de pages. Cette opération s’effectue dans la console Sites (via l’option **Créer** ou [Chronologie](/help/sites-authoring/basic-handling.md#timeline) pour une ressource sélectionnée).
+* Les versions ne sont pas lancées/créées à partir de l’éditeur de page ; cela est maintenant effectué à partir de la console Sites (via l’une des méthodes suivantes : **Créer** ou [Chronologie](/help/sites-authoring/basic-handling.md#timeline) pour une ressource sélectionnée).
 
 >[!NOTE]
 >
@@ -64,7 +64,6 @@ Avant de donner un aperçu des détails, voici quelques conseils et astuces qu�
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 >
-
 
 ### Recherche de votre page {#finding-your-page}
 
@@ -89,7 +88,7 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 Pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) :
 
 1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
-1. Cliquez sur l’icône **Créer** et sélectionnez **Page** dans la liste :
+1. Utilisez la variable **Créer** puis sélectionnez **Page** dans la liste :
 
    ![qgtap-02](assets/qgtap-02.png)
 
@@ -97,28 +96,29 @@ Pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-pa
 
 ### Sélection de la page pour d’autres actions {#selecting-your-page-for-further-action}
 
-Sélectionnez une page pour y effectuer des actions. Ce faisant, la barre d’outils est automatiquement mise à jour afin de présenter les actions appropriées pour cette ressource.
+Vous pouvez sélectionner une page afin d’agir sur celle-ci. La sélection d’une page met automatiquement à jour la barre d’outils afin que les actions relatives à cette ressource s’affichent.
 
-La méthode de sélection d’une page dépend du mode d’affichage dans la console :
+La sélection d’une page dépend du mode utilisé dans la console :
 
 1. Mode Colonnes :
 
    * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
 
-1. Mode Liste :
+1. Vue Liste :
 
    * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
 
 1. Mode Carte :
 
-   * Passez en mode de sélection en [sélectionnant la ressource demandée](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) de la façon suivante :
+   * Activez le mode de sélection en [sélection de la ressource requise](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) par :
 
-      * Périphérique mobile : en appuyant et maintenant la pression.
+      * Appareil mobile : appuyez et maintenez appuyé
       * Ordinateur de bureau : en cliquant sur l’icône d’[action rapide](/help/sites-authoring/basic-handling.md#quick-actions) en forme de coche (illustrée ci-dessous).
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
    * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
+
    >[!NOTE]
    >
    >En mode de sélection, l’icône **Sélectionner** (coche) est transformée en icône **Désélectionner** (croix).
@@ -146,35 +146,39 @@ Pour modifier votre page :
    * [Actions rapides (mode Carte/Bureau uniquement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
    * La barre d’outils [une fois la page sélectionnée](#selectiingyourpageforfurtheraction).
 
-1. Quand l’éditeur s’ouvre, vous pouvez accomplir ce qui suit :
+1. Lorsque l’éditeur s’ouvre, vous pouvez :
 
-   * [Ajoutez un nouveau composant à votre page](/help/sites-authoring/editing-content.md#inserting-a-component) comme suit :
+   * [Ajouter un nouveau composant à votre page](/help/sites-authoring/editing-content.md#inserting-a-component) par :
 
-      * en ouvrant le panneau latéral ;
-      * en sélectionnant l’onglet des composants (l’[explorateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser)) ;
-      * en faisant glisser le composant requis sur la page.
+      * ouverture du panneau latéral
+      * en sélectionnant l’onglet composants (l’onglet [navigateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser))
+      * faire glisser le composant requis sur votre page.
 
-      Vous pouvez ouvrir (et fermer) le panneau latéral en cliquant sur l’icône suivante :
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+     Vous pouvez ouvrir (et fermer) le panneau latéral en cliquant sur l’icône suivante :
 
-   * [Modifiez le contenu d’un composant existant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sur la page :
+     ![Ouvrir le panneau latéral](do-not-localize/screen_shot_2018-03-21at160738.png)
 
-      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Ouvrez la boîte de dialogue à l’aide de l’icône **Modifier** (crayon).
-      * Ouvrez l’éditeur statique du composant (appuyez et maintenez enfoncé ou double-clic lent). Les actions disponibles s’affichent (peuvent être limitées pour certains composants).
-      * Pour afficher toutes les actions disponibles, passez en mode plein écran en cliquant sur l’icône suivante :
+   * [Modifier le contenu d’un composant existant](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) sur la page :
 
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Utilisez la variable **Modifier** (crayon) pour ouvrir la boîte de dialogue.
+      * Ouvrez l’éditeur statique pour le composant en appuyant longuement ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, il s’agit d’une sélection limitée).
+      * Pour afficher toutes les actions disponibles, passez en mode plein écran à l’aide de :
+
+     ![Mode Plein écran](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [Configurez les propriétés d’un composant existant :](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * Ouvrez la barre d’outils du composant en appuyant/cliquant dessus. Utilisez l’icône **Configurer** (clé) pour ouvrir la boîte de dialogue.
-   * [Déplacez un composant](/help/sites-authoring/editing-content.md#moving-a-component) de l’une des façons suivantes :
+      * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Utilisez la variable **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
 
-      * Faites glisser le composant requis jusqu’à son nouvel emplacement.
+   * [Déplacer un composant](/help/sites-authoring/editing-content.md#moving-a-component) soit :
+
+      * Faites glisser le composant vers son nouvel emplacement.
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Couper** puis **Coller** suivant vos besoins.
+
    * [Copiez (et collez)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
+
    >[!NOTE]
    >
    >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
@@ -182,16 +186,18 @@ Pour modifier votre page :
    * [Supprimer](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) un composant :
 
       * Ouvrez la barre d’outils du composant (en appuyant ou en cliquant), puis cliquez sur l’icône **Supprimer**.
+
    * [Ajouter des annotations](/help/sites-authoring/annotations.md#annotations) à la page :
 
       * En mode **Annotation** (icône de bulle), ajoutez des annotations à l’aide de l’icône **Ajouter une annotation** (plus). Quittez le mode Annotation en cliquant sur la croix (X) en haut à droite.
 
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+     ![Annoter](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Prévisualiser une page](/help/sites-authoring/editing-content.md#preview-mode) (pour vérifier comment elle apparaîtra dans l’environnement de publication) :
 
-      * Sélectionnez **Aperçu** dans la barre d’outils.
-   * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide du sélecteur déroulant **Modifier**.
+      * Sélectionner **Aperçu** dans la barre d’outils.
+
+   * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide de la fonction **Modifier** sélecteur déroulant.
 
    >[!NOTE]
    >
@@ -199,65 +205,64 @@ Pour modifier votre page :
 
 ### Modification des propriétés de page {#editing-the-page-properties}
 
-Vous pouvez [modifier les propriétés de page](/help/sites-authoring/editing-page-properties.md) de deux (principales) façons :
+Il existe deux (principales) méthodes de [modification des propriétés de page](/help/sites-authoring/editing-page-properties.md):
 
 * Dans la console **Sites** :
 
-   1. [Accédez à la page](#finding-your-page) à publier.
-   1. Cliquez sur l’icône **Propriétés** dans :
+   1. [Accédez à la page](#finding-your-page) vous voulez publier.
+   1. Sélectionnez la **Propriétés** à partir de :
 
       * [Actions rapides (mode Carte/Bureau uniquement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
       * La barre d’outils [une fois la page sélectionnée](#selectiingyourpageforfurtheraction).
 
-   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
+  ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
    1. Les propriétés de la page s’affichent. Vous pouvez effectuer des mises à jour selon les besoins, puis les enregistrer à l’aide de la fonction Enregistrer.
 
+* When [modification de votre page](#editing-your-page-content):
 
-* Lors de la [modification d’une page](#editing-your-page-content) :
+   1. Ouvrez le **Informations sur la page** .
+   1. Sélectionner **Ouvrir les propriétés** pour ouvrir la boîte de dialogue de modification des propriétés.
 
-   1. Ouvrez le menu **Informations sur la page**.
-   1. Sélectionnez **Ouvrir les propriétés** pour ouvrir la boîte de dialogue permettant de modifier les propriétés.
+  ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
-   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
+### Publication de la page (ou dépublication) {#publishing-your-page-or-unpublishing}
 
-### Publication de la page (ou annulation de la publication) {#publishing-your-page-or-unpublishing}
-
-Il existe deux méthodes principales pour [publier une page](/help/sites-authoring/publishing-pages.md) (et pour annuler sa publication) :
+Il existe deux méthodes principales : [publication de votre page](/help/sites-authoring/publishing-pages.md) (ainsi que de l’annulation de la publication) :
 
 * Dans la console **Sites** :
 
-   1. [Accédez à la page](#finding-your-page) à publier.
+   1. [Accédez à la page](#finding-your-page) vous voulez publier.
    1. Cliquez sur l’icône **Publication rapide** dans :
 
       * [Actions rapides (mode Carte/Bureau uniquement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
       * La barre d’outils, [une fois votre page sélectionnée](#selectiingyourpageforfurtheraction) (permet également d’accéder à l’option [Publier ultérieurement](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
+  ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
-* Lors de la [modification d’une page](#editing-your-page-content) :
+* When [modification de votre page](#editing-your-page-content):
 
-   1. Ouvrez le menu **Informations sur la page**.
-   1. Sélectionnez **Publier la page**.
+   1. Ouvrez le **Informations sur la page** .
+   1. Sélectionner **Publier la page**.
 
-   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
+  ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
-* L’annulation de la publication d’une page à partir de la console ne peut se faire que par l’intermédiaire de l’option **Gérer la publication**, disponible uniquement sur la barre d’outils (et non via les actions rapides).
+* La dépublication d’une page à partir de la console ne peut se faire que par l’intermédiaire de l’option **Gérer la publication**, disponible uniquement sur la barre d’outils (et non via les actions rapides).
 
-   L’option **Annuler la publication de la page** reste accessible via le menu **Informations sur la page** de l’éditeur.
+  Le **Annuler la publication de la page** est toujours disponible via l&#39;option **Informations sur la page** dans l’éditeur.
 
-   ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
+  ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
-   Pour plus d’informations, voir [Publication de pages](/help/sites-authoring/publishing-pages.md#unpublishing-pages).
+  Voir [Publication de pages](/help/sites-authoring/publishing-pages.md#unpublishing-pages) pour plus d’informations.
 
 ### Déplacement, copier-coller ou suppression d’une page {#move-copy-and-paste-or-delete-your-page}
 
-Ces actions peuvent être déclenchées en procédant comme suit :
+Ces actions peuvent toutes être déclenchées par :
 
-1. [Accédez à la page](#finding-your-page) à déplacer, à copier-coller ou à supprimer.
+1. [Accédez à la page](#finding-your-page) vous souhaitez déplacer, copier-coller ou supprimer.
 1. Sélectionnez l’icône de copie (puis de collage), de déplacement ou de suppression selon vos besoins à l’aide de l’une des méthodes suivantes :
 
-   * Les [actions rapides (mode Carte/Bureau seulement)](#quick-actions-card-view-desktop-only) pour la ressource appropriée.
+   * [Actions rapides (mode Carte/Bureau uniquement)](#quick-actions-card-view-desktop-only) pour la ressource requise.
    * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
 
    Ensuite, en fonction de l’action sélectionnée :
@@ -265,12 +270,15 @@ Ces actions peuvent être déclenchées en procédant comme suit :
    * Copier :
 
       * Vous devez ensuite accéder au nouvel emplacement et coller la page.
+
    * Déplacer :
 
       * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions à l’écran.
+
    * Supprimer :
 
       * Vous serez alors invité à confirmer l’opération.
+
    >[!NOTE]
    >
    >La suppression n’est pas proposée comme action rapide.
@@ -325,11 +333,12 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    Si une version de votre page a déjà été enregistrée, elle sera répertoriée dans la chronologie.
 
-1. Appuyez ou cliquez sur la version à restaurer ; des boutons d’action supplémentaires s’affichent :
+1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
 
    * **Revenir à cette version**
 
       * La version est restaurée.
+
    * **Afficher les différences**
 
-      * La page s’ouvre avec les différences (entre les deux versions) surlignées.
+      * La page s’ouvre avec les différences (entre les deux versions) mises en surbrillance.

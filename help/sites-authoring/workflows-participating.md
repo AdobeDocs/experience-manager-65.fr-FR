@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1524'
-ht-degree: 100%
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+workflow-type: tm+mt
+source-wordcount: '1526'
+ht-degree: 99%
 
 ---
 
@@ -33,11 +33,11 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
 
 * Votre indicateur de [notification](/help/sites-authoring/inbox.md) (barre d’outils) sera incrémenté :
 
-   ![](do-not-localize/wf-57.png)
+  ![Indicateur de notification](do-not-localize/wf-57.png)
 
 * L’élément est répertorié dans votre [boîte de réception](/help/sites-authoring/inbox.md) de notifications :
 
-   ![wf-58](assets/wf-58.png)
+  ![wf-58](assets/wf-58.png)
 
 * Lorsque vous utilisez l’éditeur de page, la barre d’état affiche :
 
@@ -48,18 +48,18 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
       * utiliser les flèches gauche/droite pour parcourir les informations sur le statut des différents workflows ;
       * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
 
-   ![wf-59](assets/wf-59.png)
+  ![wf-59](assets/wf-59.png)
 
-   >[!NOTE]
-   >
-   >La barre d’état est uniquement visible pour les utilisateurs disposant de droits de workflow ; par exemple, les membres du groupe `workflow-users`.
-   >
-   >
-   >Les actions s’affichent lorsque la personnes utilisatrice actuelle est directement impliquée dans l’étape du workflow en cours.
+  >[!NOTE]
+  >
+  >La barre d’état est uniquement visible pour les utilisateurs disposant de droits de workflow ; par exemple, les membres du groupe `workflow-users`.
+  >
+  >
+  >Les actions s’affichent lorsque la personnes utilisatrice actuelle est directement impliquée dans l’étape du workflow en cours.
 
 * Lorsque la **chronologie** est ouverte pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez ou appuyez sur la bannière d’alerte, les actions disponibles s’affichent également :
 
-   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+  ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
@@ -229,19 +229,19 @@ Les détails du workflow sont affichés dans les onglets et les actions appropri
 
 * Onglet **ÉLÉMENT DE TRAVAIL** :
 
-   ![wf-72](assets/wf-72.png)
+  ![wf-72](assets/wf-72.png)
 
 * Onglet **INFOS DU WORKFLOW** :
 
-   ![wf-73](assets/wf-73.png)
+  ![wf-73](assets/wf-73.png)
 
-   Si des [étapes de workflow](/help/sites-developing/workflows.md#workflow-stages) ont été configurées pour le modèle, vous pouvez afficher la progression en fonction de ces éléments :
+  Si des [étapes de workflow](/help/sites-developing/workflows.md#workflow-stages) ont été configurées pour le modèle, vous pouvez afficher la progression en fonction de ces éléments :
 
-   ![wf-107](assets/wf-107.png)
+  ![wf-107](assets/wf-107.png)
 
 * Onglet **COMMENTAIRES** :
 
-   ![wf-75](assets/wf-75.png)
+  ![wf-75](assets/wf-75.png)
 
 Vous pouvez ouvrir les détails de l’élément de travail à partir de :
 

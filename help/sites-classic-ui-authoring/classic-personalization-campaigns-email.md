@@ -1,7 +1,7 @@
 ---
 title: Marketing par e-mail
 seo-title: E-mail Marketing
-description: Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
+description: Le marketing par e-mail (par exemple, les newsletters) est une partie importante de toute campagne marketing, car vous l’utilisez pour pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1758'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '1760'
+ht-degree: 25%
 
 ---
 
@@ -25,42 +25,42 @@ ht-degree: 100%
 >Adobe ne prévoit pas de continuer à mettre à jour le suivi des ouvertures et rebonds des e-mails (non livrable) envoyé par le service SMTP AEM.
 > Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
-Le marketing par messagerie électronique (les newsletters, par exemple) constitue une partie importante de toute campagne de marketing, car il vous sert à pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
+Le marketing par e-mail (par exemple, les newsletters) est une partie importante de toute campagne marketing, car vous l’utilisez pour pousser du contenu vers vos pistes. Dans AEM, vous pouvez créer des newsletters à partir de contenu AEM existant et ajouter un nouveau contenu, spécifique aux newsletters.
 
-Une fois créées, vous pouvez envoyer les newsletters à des groupes spécifiques d’utilisateurs immédiatement ou à un autre moment planifié (à l’aide d’un workflow). En outre, les utilisateurs peuvent s’abonner aux newsletters dans le format de leur choix.
+Une fois créées, vous pouvez envoyer les newsletters à des groupes spécifiques d’utilisateurs immédiatement ou à un autre moment planifié (à l’aide d’un workflow). En outre, les utilisateurs peuvent s’abonner à des newsletters au format de leur choix.
 
-Par ailleurs, AEM vous permet d’administrer la fonctionnalité de newsletter, y compris la gestion des sujets, l’archivage des newsletters et l’affichage des statistiques qui concernent ces dernières.
+En outre, AEM vous permet d’administrer la fonctionnalité de newsletter, notamment la gestion des rubriques, l’archivage des newsletters et l’affichage des statistiques sur les newsletters.
 
 >[!NOTE]
 >
->Dans Geometrixx, le modèle de newsletter affiche automatiquement l’éditeur de messagerie électronique. Vous pouvez utiliser l’éditeur de messagerie électronique dans d’autres modèles dans lesquels vous souhaitez envoyer des courriers électroniques, par exemple, des invitations. L’éditeur de messagerie électronique s’affiche chaque fois qu’une page est héritée de **mcm/components/newsletter/page**.
+>Dans Geometrixx, le modèle de newsletter ouvre automatiquement l’éditeur d’email. Vous pouvez utiliser l’éditeur d’email dans d’autres modèles dans lesquels vous souhaitez envoyer des emails, par exemple des invitations. L’éditeur de courrier électronique s’affiche chaque fois qu’une page est héritée de **mcm/components/newsletter/page**.
 
-Ce document décrit les notions fondamentales de la création de newsletters dans AEM. Pour plus d’informations sur l’utilisation du marketing par messagerie électronique, voir les documents suivants :
+Ce document décrit les principes de base de la création de newsletters dans AEM. Pour plus d’informations sur l’utilisation du marketing par e-mail, consultez les documents suivants :
 
-* [Création d’une page d’entrée efficace pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [Création d’une page de destination efficace pour une newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [Gestion des abonnements](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 * [Publication d’un e-mail sur des services de messagerie](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
 * [Suivi des e-mails rejetés](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
->Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
+>Si vous mettez à jour les fournisseurs de messagerie, effectuez un test en ligne ou envoyez une newsletter, ces opérations échouent si la newsletter n’est pas publiée au préalable sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit en cours d’exécution.
 
-## Création d’une expérience Newsletter {#creating-a-newsletter-experience}
+## Création d’une expérience de newsletter {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
->Les notifications électroniques doivent être configurées par l’intermédiaire de la configuration OSGi. Voir [Configuration des notifications électroniques](/help/sites-administering/notification.md). 
+>Les notifications électroniques doivent être configurées via la configuration osgi. Voir [Configuration des notifications par e-mail.](/help/sites-administering/notification.md)
 
-1. Sélectionnez votre nouvelle campagne dans le volet de gauche ou double-cliquez sur celle-ci dans le volet de droite.
+1. Sélectionnez votre nouvelle campagne dans le volet de gauche ou double-cliquez dessus dans le volet de droite.
 
-1. Sélectionnez la vue de liste à l’aide de l’icône :
+1. Sélectionnez la vue Liste à l’aide de l’icône :
 
-   ![](do-not-localize/mcm_icon_listview-1.png)
+   ![Vue Liste](do-not-localize/mcm_icon_listview-1.png)
 
 1. Cliquez sur **Nouveau...**
 
-   Vous pouvez indiquer le **Titre**, le **Nom** et le type d’expérience à créer ; dans ce cas, Newsletter.
+   Vous pouvez spécifier la variable **Titre**, **Nom** et le type d&#39;expérience à créer ; dans ce cas, Newsletter.
 
    ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
 
@@ -92,46 +92,47 @@ Heure d’activation pour l’envoi de la newsletter.
 
    * **Liste des destinataires par défaut**
 Liste par défaut des destinataires qui doivent recevoir la newsletter.
-   Ces segments pourront être mis à jour ultérieurement à partir de la boîte de dialogue **Propriétés...**
+
+   Elles peuvent être mises à jour ultérieurement à partir de la variable **Propriétés...** boîte de dialogue.
 
 1. Cliquez sur **OK** pour enregistrer.
 
-## Ajout de contenu à des newsletters {#adding-content-to-newsletters}
+## Ajout de contenu aux newsletters {#adding-content-to-newsletters}
 
-Vous pouvez ajouter du contenu, notamment du contenu dynamique, à vos newsletters, comme c’est le cas dans tout composant AEM. Dans Geometrixx, le modèle Newsletter dispose de certains composants disponibles pour l’ajout et la modification de contenu dans les newsletters.
+Vous pouvez ajouter du contenu, y compris du contenu dynamique, à votre newsletter comme vous le feriez dans n’importe quel composant AEM. Dans Geometrixx, certains composants du modèle Newsletter sont disponibles pour l’ajout et la modification de contenu dans les newsletters.
 
-1. Dans le MCM, cliquez sur l’onglet **Campagnes** et double-cliquez sur la newsletter à laquelle vous souhaitez ajouter du contenu ou que vous voulez modifier. La newsletter s’affiche.
+1. Dans le MCM, cliquez sur le **Campagnes** et double-cliquez sur la newsletter à laquelle vous souhaitez ajouter du contenu ou que vous souhaitez modifier. La newsletter s’ouvre.
 
-1. Si des composants ne sont pas visibles, passez en mode de conception et activez les composants nécessaires (par exemple, les composants de newsletter) avant de commencer les modifications.
-1. Saisissez tout nouveau texte, toute nouvelle image ou tout autre composant le cas échéant. Dans l’exemple Geometrixx, 4 composants sont disponibles : Texte, Image, En-tête et 2 colonnes. Votre newsletter peut avoir davantage ou moins de composants, selon la manière dont vous l’avez définie.
+1. Si les composants ne sont pas visibles, accédez à la vue Conception et activez les composants nécessaires (par exemple, les composants Newsletter) avant de commencer la modification.
+1. Saisissez le texte, les images ou d’autres composants appropriés. Dans l’exemple de Geometrixx, 4 composants sont disponibles : Texte, Image, En-tête et 2 colonnes. Votre newsletter peut comporter plus ou moins de composants selon la manière dont vous la configurez.
 
    >[!NOTE]
    >
-   >Vous personnalisez les newsletters à l’aide de variables. Dans la newsletter Geometrixx, les variables sont disponibles dans le composant de texte. Les valeurs pour les variables sont héritées des informations contenues dans le profil utilisateur.
+   >Vous personnalisez des newsletters à l’aide de variables. Dans la newsletter Geometrixx, les variables sont disponibles dans le composant Texte . Les valeurs des variables sont héritées des informations du profil utilisateur.
 
    ![mcm_newsletter_content](assets/mcm_newsletter_content.png)
 
-1. Pour insérer des variables, sélectionnez la variable dans la liste et cliquez sur **Insérer**. Les variables sont renseignées à partir du profil.
+1. Pour insérer des variables, sélectionnez la variable dans la liste, puis cliquez sur **Insérer**. Les variables sont renseignées à partir du profil.
 
-## Personnalisation de newsletters {#personalizing-newsletters}
+## Personnalisation des newsletters {#personalizing-newsletters}
 
-Vous personnalisez les newsletters en insérant des variables prédéfinies dans le composant de texte des newsletters dans Geometrixx. Les valeurs pour les variables sont héritées des informations contenues dans le profil utilisateur.
+Vous personnalisez les newsletters en insérant des variables prédéfinies dans le composant Texte des newsletters dans Geometrixx. Les valeurs des variables sont héritées des informations du profil utilisateur.
 
-Vous pouvez également simuler la manière dont une newsletter est personnalisée en utilisant ClientContext et en chargeant un profil.
+Vous pouvez également simuler la manière dont une newsletter est personnalisée en utilisant le contexte client et en chargeant un profil.
 
-Personnalisation d’une newsletter et simulation de son aperçu :
+Pour personnaliser une newsletter et simuler son aspect :
 
-1. Depuis le MCM, ouvrez la newsletter dont vous voulez personnaliser les paramètres.
+1. Dans MCM, ouvrez la newsletter pour laquelle vous souhaitez personnaliser les paramètres.
 
-1. Ouvrez le composant de texte à personnaliser.
+1. Ouvrez le composant Texte que vous souhaitez personnaliser.
 
-1. Placez le curseur à l’endroit où vous voulez que la variable s’affiche et sélectionnez une variable dans la liste déroulante, puis cliquez sur **Insérer**. Répétez cette procédure pour chaque variable dont vous avez besoin, puis cliquez sur **OK**.
+1. Placez le curseur à l’endroit où vous souhaitez que la variable apparaisse, sélectionnez une variable dans la liste déroulante, puis cliquez sur **Insérer**. Effectuez cette opération pour autant de variables que nécessaire et cliquez sur **OK**.
 
    ![mcm_newsletter_variables](assets/mcm_newsletter_variables.png)
 
-1. Pour simuler un aperçu de la variable lorsqu’elle est envoyée, appuyez sur les touches CTRL+ALT+C pour ouvrir ClientContext, puis sélectionnez **Charger**. Sélectionnez dans la liste l’utilisateur dont vous souhaitez charger le profil, puis cliquez sur **OK**.
+1. Pour simuler l’aspect de la variable lorsqu’elle est envoyée, appuyez sur CTRL+ALT+c pour ouvrir le contexte client et sélectionnez **Chargement**. Sélectionnez l’utilisateur dans la liste dont vous souhaitez charger le profil, puis cliquez sur **OK**.
 
-   Les informations du profil chargé renseignent les variables.
+   Les informations du profil que vous avez chargé renseignent les variables.
 
    ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
 
@@ -143,22 +144,22 @@ Personnalisation d’une newsletter et simulation de son aperçu :
 >
 >Par défaut, la valeur du paramètre est `localhost:4502` et l’opération ne peut pas être menée à bien en cas de modification du port d’exécution de l’instance.
 
-Basculez entre les clients de messagerie courants pour afficher un aperçu de la newsletter telle qu’elle sera présentée à vos pistes. Par défaut, votre newsletter s’ouvre avec l’un des clients de messagerie sélectionnés.
+Basculer entre les clients de messagerie courants pour afficher un aperçu de la newsletter telle qu’elle sera présentée à vos leads. Par défaut, votre newsletter s’ouvre avec aucun des clients de messagerie sélectionnés.
 
-Actuellement, vous pouvez afficher les newsletters dans les clients de messagerie suivants :
+Actuellement, vous pouvez afficher des newsletters dans les clients de messagerie suivants :
 
-* Yahoo! mail
+* Courrier Yahoo
 * Gmail
 * Hotmail
 * Thunderbird
-* Microsoft Outlook 2007
+* Microsoft Outlook 2007
 * Apple Mail
 
-Pour basculer entre les clients, cliquez sur l’icône correspondante pour afficher la newsletter dans ce client de messagerie :
+Pour basculer entre les clients, cliquez sur l’icône correspondante pour afficher la newsletter dans ce client de messagerie :
 
-1. Depuis le MCM, ouvrez la newsletter dont vous voulez personnaliser les paramètres.
+1. Dans MCM, ouvrez la newsletter pour laquelle vous souhaitez personnaliser les paramètres.
 
-1. Cliquez sur un client de messagerie dans la barre supérieure pour voir un aperçu de la newsletter telle qu’elle s’affiche dans ce client.
+1. Cliquez sur un client de messagerie dans la barre supérieure pour voir à quoi ressemblerait la newsletter dans ce client.
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -168,53 +169,53 @@ Pour basculer entre les clients, cliquez sur l’icône correspondante pour affi
 
 ## Personnalisation des paramètres de newsletter {#customizing-newsletter-settings}
 
-Bien que seuls les utilisateurs autorisés puissent envoyer une newsletter, il convient de personnaliser ce qui suit :
+Bien que seuls les utilisateurs autorisés puissent envoyer une newsletter, vous devez personnaliser les éléments suivants :
 
-* La ligne d’objet, pour inciter les utilisateurs à ouvrir votre courrier électronique et pour que votre newsletter ne soit pas désignée comme courrier indésirable.
-* L’adresse De, par exemple noreply@geometrixx.com, pour que les utilisateurs reçoivent des courriers électroniques d’une adresse spécifiée.
+* L’objet, de sorte que les utilisateurs souhaitent ouvrir votre email et s’assurer que votre newsletter ne sera pas marquée comme du spam.
+* L’adresse de l’expéditeur, par exemple noreply@geometrixx.com, de sorte que les utilisateurs reçoivent un e-mail d’une adresse spécifiée.
 
-Personnalisation des paramètres de newsletter :
+Pour personnaliser les paramètres de newsletter :
 
-1. Depuis le MCM, ouvrez la newsletter dont vous voulez personnaliser les paramètres.
+1. Dans MCM, ouvrez la newsletter pour laquelle vous souhaitez personnaliser les paramètres.
 
    ![mcm_newsletter_open](assets/mcm_newsletter_open.png)
 
 1. En haut de la newsletter, cliquez sur **Paramètres**.
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
-1. Saisissez l’adresse électronique **De**.
+1. Saisissez le **De** adresse électronique
 
-1. Modifiez l’**Objet** du courrier électronique, le cas échéant.
+1. Modifiez le **Objet** du courrier électronique, le cas échéant.
 
 1. Sélectionnez une **Liste des destinataires par défaut** dans la liste déroulante.
 
 1. Cliquez sur **OK**.
 
-   Lorsque vous testez ou envoyez la newsletter, les destinataires reçoivent des courriers électroniques avec l’adresse électronique et l’objet spécifiés.
+   Lorsque vous testez ou envoyez la newsletter, les destinataires reçoivent des emails avec l’adresse email et l’objet spécifiés.
 
-## Test envoi newsletters {#flight-testing-newsletters}
+## Newsletters des tests de vol {#flight-testing-newsletters}
 
-Même si le test envoi n’est pas obligatoire, il convient, avant d’envoyer une newsletter, de la tester pour s’assurer qu’elle s’affiche telle que vous le souhaitez.
+Bien que les tests en vol ne soient pas obligatoires, avant d’envoyer une newsletter, vous pouvez la tester pour vous assurer qu’elle s’affiche comme vous le souhaitez.
 
-Un test envoi vous permet ce qui suit :
+Le test en vol permet d&#39;effectuer les opérations suivantes :
 
-* Afficher la newsletter dans [tous les clients visés](#testing-newsletters-in-different-e-mail-clients)
-* Assurer que le serveur de messagerie est correctement configuré
-* Déterminer si votre courrier électronique est signalé comme courrier indésirable (veillez à vous inclure dans la liste des destinataires)
+* Consultez la newsletter dans [tous les clients prévus](#testing-newsletters-in-different-e-mail-clients).
+* Vérifiez que le serveur de messagerie est correctement configuré.
+* Déterminez si votre email est signalé comme indésirable. (Veillez à vous inclure dans la liste des destinataires.)
 
 >[!NOTE]
 >
->Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
+>Si vous mettez à jour les fournisseurs de messagerie, effectuez un test en ligne ou envoyez une newsletter, ces opérations échouent si la newsletter n’est pas publiée au préalable sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit en cours d’exécution.
 
-Test envoi des newsletters :
+Pour tester les newsletters :
 
-1. Dans le MCM, ouvrez la newsletter à tester et envoyer.
+1. Dans MCM, ouvrez la newsletter que vous souhaitez tester et envoyer.
 
-1. En haut de la newsletter, cliquez sur **Tester** pour tester avant l’envoi.
+1. Dans la partie supérieure de la newsletter, cliquez sur **Test** à tester avant l’envoi.
 
    ![mcm_newsletter_testsettings](assets/mcm_newsletter_testsettings.png)
 
-1. Saisissez l’adresse électronique de test à laquelle vous souhaitez envoyer la newsletter, puis cliquez sur **Envoyer**. Pour changer de profil, chargez-en un autre dans ClientContext. Procédez en appuyant sur les touches CTRL+ALT+c et en sélectionnant Charger pour charger un profil.
+1. Saisissez l’adresse électronique de test à laquelle vous souhaitez envoyer la newsletter, puis cliquez sur **Envoyer**. Si vous souhaitez modifier le profil, vous chargez un autre profil dans le contexte client. Pour ce faire, appuyez sur CTRL+ALT+c et sélectionnez Charger et charger un profil.
 
 ## Envoi de newsletters {#sending-newsletters}
 
@@ -223,7 +224,7 @@ Test envoi des newsletters :
 >Adobe ne prévoit pas de continuer à mettre à jour le suivi des ouvertures et rebonds des e-mails (non livrable) envoyé par le service SMTP AEM.
 > Il est conseillé d’[utiliser Adobe Campaign et l’intégration à AEM](/help/sites-administering/campaign.md).
 
-Vous pouvez envoyer une newsletter à partir de la newsletter ou à partir de la liste. Les deux procédures sont décrites.
+Vous pouvez envoyer une newsletter à partir de la newsletter ou de la liste. Les deux procédures sont décrites.
 
 >[!NOTE]
 >
@@ -233,11 +234,11 @@ Vous pouvez envoyer une newsletter à partir de la newsletter ou à partir de la
 
 >[!NOTE]
 >
->Si vous mettez à jour vos fournisseurs de messagerie, que vous effectuez un test envoi ou que vous envoyez une newsletter, ces opérations échouent si la newsletter n’est pas au préalable publiée sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit activée.
+>Si vous mettez à jour les fournisseurs de messagerie, effectuez un test en ligne ou envoyez une newsletter, ces opérations échouent si la newsletter n’est pas publiée au préalable sur l’instance de publication ou si l’instance de publication n’est pas disponible. Veillez à publier votre newsletter et à ce que l’instance de publication soit en cours d’exécution.
 
 ### Envoi de newsletters à partir d’une campagne {#sending-newsletters-from-a-campaign}
 
-Envoi d’une newsletter à partir d’une campagne :
+Pour envoyer une newsletter à partir de la campagne :
 
 1. Dans MCM, ouvrez la newsletter à envoyer.
 
@@ -248,9 +249,9 @@ Envoi d’une newsletter à partir d’une campagne :
    >
    >Il est recommandé d’effectuer un [test envoi](#flight-testing-newsletters) de la newsletter avant de l’envoyer.
 
-1. En haut de la newsletter, cliquez sur **Envoyer**. L’Assistant de newsletter s’affiche.
+1. Dans la partie supérieure de la newsletter, cliquez sur **Envoyer**. L’assistant Newsletter s’ouvre.
 
-1. Dans la liste des destinataires, sélectionnez la liste de ceux qui doivent recevoir la newsletter, puis cliquez sur **Suivant**.
+1. Dans la liste des destinataires, sélectionnez la liste à laquelle vous souhaitez envoyer la newsletter, puis cliquez sur **Suivant**.
 
    ![mcm_newslettersend](assets/mcm_newslettersend.png)
 
@@ -260,17 +261,17 @@ Envoi d’une newsletter à partir d’une campagne :
 
    >[!NOTE]
    >
-   >Assurez-vous que vous êtes l’un des destinataires pour vérifier que la newsletter a bien été reçue.
+   >Assurez-vous d’être l’un des destinataires pour vous assurer que la newsletter a été reçue.
 
 ### Envoi de newsletters à partir d’une liste {#sending-newsletters-from-a-list}
 
-Envoi d’une newsletter à partir d’une liste :
+Pour envoyer une newsletter à partir d’une liste :
 
-1. Dans MCM, cliquez sur **Listes** dans le volet de gauche.
+1. Dans le MCM, cliquez sur **Listes** dans le volet de gauche.
 
    >[!NOTE]
    >
-   >Avant l’envoi, assurez-vous d’avoir personnalisé l’objet de la newsletter et l’adresse électronique de l’expéditeur en [personnalisant ses paramètres](#customizing-newsletter-settings). Il n’est pas possible de tester une newsletter si vous l’envoyez à partir de la liste. Vous pouvez effectuer un [test envoi](#flight-testing-newsletters) si vous l’envoyez à partir de la newsletter.
+   >Avant l’envoi, assurez-vous d’avoir personnalisé l’objet de la newsletter et l’adresse électronique de l’expéditeur en [personnalisant ses paramètres](#customizing-newsletter-settings). Vous ne pouvez pas tester une newsletter si vous l’envoyez à partir de la liste ; vous pouvez [test en vol](#flight-testing-newsletters) si vous l’envoyez à partir de la newsletter.
 
 1. Cochez la case en regard de la liste des prospects auxquels vous souhaitez envoyer la newsletter.
 
@@ -294,10 +295,10 @@ Cette section décrit comment s’abonner à une newsletter.
 
 ### Abonnement à une newsletter {#subscribing-to-a-newsletter-1}
 
-S’abonner à une newsletter (en utilisant le site Web Geometrixx comme exemple) :
+Pour vous abonner à une newsletter (à l’aide du site web de Geometrixx comme exemple) :
 
-1. Cliquez sur **Sites Web** et accédez à la **Barre d’outils** Geometrixx, puis ouvrez-la.
+1. Cliquez sur **Sites web** et accédez au Geometrixx **Barre d’outils** et ouvrez-le.
 
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
-1. Dans le champ **Sign Up** (S’inscrire) de la Newsletter Geometrixx, saisissez votre adresse électronique, puis cliquez sur **Sign Up**. Vous êtes maintenant abonné à la newsletter.
+1. Dans la newsletter Geometrixx **S’inscrire** , saisissez votre adresse électronique et cliquez sur **S’inscrire**. Vous êtes maintenant abonné à la newsletter.

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 99%
 
 ---
 
@@ -53,14 +53,13 @@ Un [mode](/help/sites-authoring/author-environment-tools.md#page-modes) spécial
 >* [Annotation de ressources vidéo](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
-
 ### Annotation d’un composant {#annotating-a-component}
 
 Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des annotations sur votre contenu.
 
 1. Pour activer le mode Annotation, cliquez sur l’icône dans la barre d’outils (en haut à droite) lorsque vous modifiez une page :
 
-   ![](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![Annoter](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    Vous pouvez maintenant afficher les annotations existantes.
 
@@ -83,16 +82,17 @@ Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des a
    * Saisir le texte de l’annotation.
    * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
-      Le curseur prend la forme d’une croix lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
-   ![](do-not-localize/screen_shot_2018-03-22at110640.png)
+     Le curseur prend la forme d’une croix lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
+
+     ![Esquisse](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Choisissez/changez la couleur :
 
-   ![](do-not-localize/chlimage_1-19.png)
+     ![Choisir/modifier la couleur](do-not-localize/chlimage_1-19.png)
 
    * Supprimez l’annotation.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110647.png)
+     ![Supprimer l’annotation](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Pour fermer la boîte de dialogue de l’annotation, cliquez ou appuyez en dehors de la boîte de dialogue. Une vue tronquée (le premier mot) de l’annotation s’affiche avec les schémas :
 
@@ -103,12 +103,12 @@ Le mode Annotation vous permet de créer, modifier, déplacer ou supprimer des a
    * Cliquez ou appuyez sur le marqueur de texte pour ouvrir l’annotation. Une fois ouverte, vous pouvez afficher tout le texte, apporter des modifications ou supprimer l’annotation.
 
       * Les esquisses ne peuvent pas être supprimées indépendamment de l’annotation.
+
    * Repositionner la marque de texte.
    * Cliquez/appuyez sur un trait du schéma pour le sélectionner et le faire glisser jusqu’à la position voulue.
    * Déplacer ou copier un composant.
 
       * Toutes les annotations qui lui sont associées, ainsi que leurs esquisses, sont également déplacées ou copiées, mais leur position par rapport au paragraphe demeure inchangée.
-
 
 1. Pour quitter le mode Annotation et revenir au mode précédent, appuyez/cliquez sur l’icône Annoter (symbole x) à droite de la barre d’outils supérieure.
 

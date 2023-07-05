@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '898'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Plusieurs ressources d’**aide** peuvent être directement accessibles depuis A
 
 Outre les [barres d’outils de la console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), vous pouvez également accéder à l’aide à partir du sidekick (à l’aide de l’icône ?) lors de la modification d’une page :
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick réduit](do-not-localize/sidekick-collapsed-2.png)
 
 Ou en utilisant le bouton **Aide** dans la boîte de dialogue de modification de composants spécifiques pour que l’aide contextuelle s’affiche.
 
@@ -188,7 +188,7 @@ La console Sites Web [fournit également des informations sur le statut actuel d
 
 Lors de la modification d’une page dans l’IU classique, plusieurs modes sont accessibles à l’aide des icônes au bas du sidekick :
 
-![](do-not-localize/chlimage_1-12.png)
+![Modes de page](do-not-localize/chlimage_1-12.png)
 
 La rangée d’icônes située au bas du sidekick permet de changer de mode pour le traitement des pages :
 
@@ -209,7 +209,6 @@ Dans ce mode, vous avez la possibilité de modifier la conception de la page en 
 >* [ClientContext](/help/sites-administering/client-context.md)
 >* Sites web : ouvre la console Sites web.
 >* Recharger - Actualise la page.
-
 
 ## Raccourcis clavier {#keyboard-shortcuts}
 

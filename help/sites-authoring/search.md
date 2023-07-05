@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '504'
-ht-degree: 100%
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ L’environnement de création d’AEM comporte divers mécanismes de recherche 
 
 La recherche est disponible dans la barre d’outils supérieure :
 
-![](do-not-localize/chlimage_1-17.png)
+![Recherche](do-not-localize/chlimage_1-17.png)
 
 Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
@@ -61,7 +61,7 @@ Pour rechercher et filtrer vos ressources :
 
 1. Si vous souhaitez accéder à plus d’options, sélectionnez le symbole représentant un rail (en haut à gauche) pour ouvrir le panneau latéral **Filtres et options**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![Filtres et options](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    Selon le type de ressource, la fonction Recherche affiche une sélection prédéfinie de critères de recherche/filtrage.
 
@@ -80,7 +80,8 @@ Pour rechercher et filtrer vos ressources :
    >
    >    * selon le type de ressource que vous avez sélectionné ; par exemple, les critères Assets et Communities sont spécialisé, de manière compréhensible.
    >    * Votre instance en tant que [Formulaires de recherche](/help/sites-administering/search-forms.md) peut être personnalisée (en fonction de l’emplacement dans AEM).
-
+   >
+   >
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
