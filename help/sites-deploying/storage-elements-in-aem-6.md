@@ -120,7 +120,7 @@ Red Hat® Linux® utilise un algorithme de gestion de la mémoire appelé Tran
 >Reportez-vous aux ressources suivantes :
 >
 >* Pour plus d’informations sur Transparent Huge Pages sur Red Hat® Linux®, reportez-vous à cet [article](https://access.redhat.com/solutions/46111).
-* Pour obtenir des conseils sur l’optimisation sous Linux®, reportez-vous à cet [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr).
+>* Pour obtenir des conseils sur l’optimisation sous Linux®, reportez-vous à cet [article](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=fr).
 >
 
 

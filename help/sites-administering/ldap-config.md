@@ -222,7 +222,7 @@ Les options de configuration suivantes sont disponibles :
 | **Nom du gestionnaire de synchronisation** | Nom du gestionnaire de synchronisation. |
 
 >[!NOTE]
-Si vous envisagez plusieurs configurations LDAP avec votre instance d’AEM, vous devez créer des fournisseurs d’identité et des gestionnaires de synchronisation distincts pour chaque configuration.
+>Si vous envisagez plusieurs configurations LDAP avec votre instance d’AEM, vous devez créer des fournisseurs d’identité et des gestionnaires de synchronisation distincts pour chaque configuration.
 
 ## Configurer LDAP sur SSL {#configure-ldap-over-ssl}
 

@@ -325,12 +325,13 @@ Pour plus de détails sur les options de configuration disponibles, consultez la
 >
 >
 >
+
 ### Rechercher {#search-features}
 
 Les fournisseurs d’index personnalisés utilisés avec AEM sont répertoriés dans cette section. Pour en savoir plus sur l’indexation, consultez la section [Requêtes Oak et indexation](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
-Adobe recommande d’utiliser l’index Lucene dans la plupart des déploiements. Solr est réservé aux déploiements spécialisés et complexes qui demandent de l’évolutivité.
+>Adobe recommande d’utiliser l’index Lucene dans la plupart des déploiements. Solr est réservé aux déploiements spécialisés et complexes qui demandent de l’évolutivité.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -368,7 +369,7 @@ Pour plus d’informations sur le développement sur AEM, consultez la section [
 ### Scénarios de référence {#benchmark-scenarios}
 
 >[!NOTE]
-Les tests présentés sur cette page ont été réalisés dans un environnement de laboratoire.
+>Les tests présentés sur cette page ont été réalisés dans un environnement de laboratoire.
 
 Les scénarios de test présentés ci-dessous sont utilisés pour les sections de référence des chapitres TarMK, MongoMk et TarMK contre MongoMk. Pour identifier le scénario qui a été utilisé pour un test comparatif particulier, consultez le champ de scénario du tableau [Caractéristiques techniques](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark).
 
@@ -405,7 +406,7 @@ Pour plus d’informations sur TarMK, consultez les [Scénarios de déploiement]
 ### Recommandations sur l’architecture minimale de TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
-Les recommandations relatives à l’architecture minimale présentées ci-dessous concernent les environnements de production et les sites à trafic élevé. Ces recommandations ne sont **pas** les [spécifications minimales](/help/sites-deploying/technical-requirements.md#prerequisites) requises pour exécuter AEM.
+>Les recommandations relatives à l’architecture minimale présentées ci-dessous concernent les environnements de production et les sites à trafic élevé. Ces recommandations ne sont **pas** les [spécifications minimales](/help/sites-deploying/technical-requirements.md#prerequisites) requises pour exécuter AEM.
 
 Pour obtenir de bonnes performances lors de l’utilisation de TarMK, commencez par l’architecture suivante :
 
@@ -416,7 +417,7 @@ Pour obtenir de bonnes performances lors de l’utilisation de TarMK, commencez 
 Vous trouverez, dans l’exemple ci-dessous, les recommandations sur l’architecture d’AEM Sites et AEM Assets.
 
 >[!NOTE]
-La réplication sans binaires doit être **ACTIVÉE** si le magasin de données du fichier est partagé.
+>La réplication sans binaires doit être **ACTIVÉE** si le magasin de données du fichier est partagé.
 
 **Recommandations sur l’architecture Tar pour AEM Sites**
 
@@ -506,7 +507,7 @@ Les tests comparatifs ont été réalisés selon les spécifications suivantes 
 #### Résultats de l’évaluation des performances {#performance-benchmark-results}
 
 >[!NOTE]
-Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas les chiffres de débit réels.
+>Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas les chiffres de débit réels.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
@@ -526,10 +527,10 @@ Pour tirer le meilleur parti des performances de MongoMK, commencez par l’artc
 * deux Dispatchers.
 
 >[!NOTE]
-Dans les environnements de production, MongoDB est toujours utilisé comme ensemble de répliques avec une instance principale et deux instances secondaires. L’instance principale gère les tâches de lecture et d’écriture, tandis que les instances secondaires peuvent s’occuper des opérations de lecture. Si le stockage n’est pas disponible, l’une des instances secondaires peut être remplacée par un arbitre, mais les ensembles de répliques de MongoDB doivent toujours être composés d’un nombre impair d’instances.
+>Dans les environnements de production, MongoDB est toujours utilisé comme ensemble de répliques avec une instance principale et deux instances secondaires. L’instance principale gère les tâches de lecture et d’écriture, tandis que les instances secondaires peuvent s’occuper des opérations de lecture. Si le stockage n’est pas disponible, l’une des instances secondaires peut être remplacée par un arbitre, mais les ensembles de répliques de MongoDB doivent toujours être composés d’un nombre impair d’instances.
 
 >[!NOTE]
-La réplication sans binaires doit être **ACTIVÉE** si le magasin de données du fichier est partagé.
+>La réplication sans binaires doit être **ACTIVÉE** si le magasin de données du fichier est partagé.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
@@ -613,7 +614,7 @@ Les tests comparatifs ont été réalisés selon les spécifications suivantes 
 ### Résultats de l’évaluation des performances {#performance-benchmark-results-1}
 
 >[!NOTE]
-Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas les chiffres de débit réels.
+>Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas les chiffres de débit réels.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
@@ -646,7 +647,7 @@ Pour plus d’informations sur la comparaison de TarMK et MongoMK, voir [Déploi
 ### Références concernant la comparaison de TarMK et MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
-Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas des chiffres de débit réels.
+>Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence et ne sont pas des chiffres de débit réels.
 
 ### Spécifications techniques du scénario 1 {#scenario-technical-specifications}
 
@@ -734,7 +735,7 @@ Les chiffres présentés ci-dessous ont été normalisés à 1 comme référence
 ### Spécifications techniques du scénario 2 {#scenario-technical-specifications-1}
 
 >[!NOTE]
-Pour permettre le même nombre d’instances de création avec MongoDB qu’avec un système TarMK, vous avez besoin d’un cluster composé de deux nœuds AEM. Un cluster MongoDB à quatre nœuds peut gérer 1,8 fois plus d’instances de création qu’une instance TarMK. Un cluster MongoDB à huit nœuds peut gérer 2,3 fois plus d’instances de création qu’une instance TarMK.
+>Pour permettre le même nombre d’instances de création avec MongoDB qu’avec un système TarMK, vous avez besoin d’un cluster composé de deux nœuds AEM. Un cluster MongoDB à quatre nœuds peut gérer 1,8 fois plus d’instances de création qu’une instance TarMK. Un cluster MongoDB à huit nœuds peut gérer 2,3 fois plus d’instances de création qu’une instance TarMK.
 
 <table>
  <tbody>

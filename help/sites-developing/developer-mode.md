@@ -38,8 +38,8 @@ Ils aident les développeurs à :
 >
 >* n’est disponible que dans l’interface utilisateur tactile (lors de la modification de pages) ;
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
-   >
-   >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
+>
+>   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
 >* n’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
 
 

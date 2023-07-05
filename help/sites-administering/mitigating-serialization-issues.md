@@ -76,8 +76,8 @@ La configuration de pare-feu est dynamique et peut être changée à tout moment
 1. recherchant **Configuration du pare-feu de désérialisation** et en cliquant dessus.
 
    >[!NOTE]
-   Vous pouvez également accéder directement à la page de configuration en accédant à l’URL :
-   * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+   >Vous pouvez également accéder directement à la page de configuration en accédant à l’URL :
+   >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
 Cette configuration contient la liste autorisée, la liste bloquée et la journalisation de désérialisation.
@@ -109,7 +109,7 @@ Lorsque vous accédez à l’URL, une liste des contrôles de l’intégrité as
 Pour plus d’informations sur la résolution des problèmes avec l’agent, voir [Gestion des erreurs avec le chargement dynamique de l’agent](#handling-errors-with-dynamic-agent-loading) ci-dessous.
 
 >[!NOTE]
-Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, le contrôle de l’intégrité échoue toujours.
+>Si vous ajoutez `org.apache.commons.collections.functors` à la liste autorisée, le contrôle de l’intégrité échoue toujours.
 
 ## Gérer les erreurs avec le chargement dynamique de l’agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -124,10 +124,10 @@ Pour charger l’agent manuellement, procédez comme suit :
    ```
 
    >[!NOTE]
-   Requiert que vous utilisiez également l’option -nofork CQ/AEM, ainsi que les paramètres de mémoire JVM appropriés, car l’agent n’est pas activé sur une JVM dupliquée.
+   >Requiert que vous utilisiez également l’option -nofork CQ/AEM, ainsi que les paramètres de mémoire JVM appropriés, car l’agent n’est pas activé sur une JVM dupliquée.
 
    >[!NOTE]
-   La distribution Adobe du fichier JAR de l’agent NotSoSerial réside dans le dossier `crx-quickstart/opt/notsoserial/` pour votre installation AEM.
+   >La distribution Adobe du fichier JAR de l’agent NotSoSerial réside dans le dossier `crx-quickstart/opt/notsoserial/` pour votre installation AEM.
 
 1. Arrêtez et redémarrez la JVM.
 

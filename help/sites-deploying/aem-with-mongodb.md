@@ -550,7 +550,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 La sortie du second test devrait être considérablement plus élevée que la première, indiquant les performances du transfert mémoire.
 
 >[!NOTE]
-Lorsque vous effectuez les tests, vérifiez les statistiques d’utilisation des E/S pour les machines virtuelles en question dans votre système de surveillance du système d’exploitation. Si elles indiquent des valeurs inférieures à 100 % pour les lectures d’E/S, il se peut qu’il y ait un problème avec votre machine virtuelle.
+>Lorsque vous effectuez les tests, vérifiez les statistiques d’utilisation des E/S pour les machines virtuelles en question dans votre système de surveillance du système d’exploitation. Si elles indiquent des valeurs inférieures à 100 % pour les lectures d’E/S, il se peut qu’il y ait un problème avec votre machine virtuelle.
 
 **Tester les performances d’écriture de l’instance MongoDB principale**
 
@@ -660,7 +660,7 @@ Il est souhaitable de limiter l’emplacement de chargement des ressources pour 
 La CSP permet d’affiner les politiques. Toutefois, dans une application complexe, les en-têtes CSP doivent être développés avec soin, car les politiques trop restrictives peuvent rompre certaines parties de l’interface utilisateur.
 
 >[!NOTE]
-Pour plus d’informations sur son fonctionnement, voir [Page OWASP sur la politique de sécurité du contenu](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Pour plus d’informations sur son fonctionnement, voir [Page OWASP sur la politique de sécurité du contenu](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionnement {#sizing}
 
@@ -683,4 +683,4 @@ Pour contourner ce problème, assurez-vous d’exécuter l’installation avec u
 Si AEM est exécuté sur un déploiement de gestionnaire de persistance MongoMK[, les noms de page sont limités à 150 caractères.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
-Consultez la [documentation de MongoDB](https://docs.mongodb.com/manual/reference/limits/) pour vous familiariser avec les limites et les seuils connus de MongoDB.
+>Consultez la [documentation de MongoDB](https://docs.mongodb.com/manual/reference/limits/) pour vous familiariser avec les limites et les seuils connus de MongoDB.

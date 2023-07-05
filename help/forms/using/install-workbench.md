@@ -159,12 +159,12 @@ Avant d’installer Workbench, vérifiez que votre environnement inclut les logi
 1. (Facultatif) Sélectionnez Installer Adobe Designer si vous avez besoin de cet outil pour créer et modifier des formulaires.
 
    >[!NOTE]
-   Vous pouvez continuer à utiliser Designer installé avec Acrobat 10 en laissant cette option désactivée.
+   >Vous pouvez continuer à utiliser Designer installé avec Acrobat 10 en laissant cette option désactivée.
 
 1. Acceptez le répertoire par défaut proposé comme indiqué ou cliquez sur Choisir et accédez au répertoire dans lequel vous désirez installer Workbench, puis cliquez sur Suivant.
 
    >[!NOTE]
-   Le chemin d’accès du répertoire d’installation ne doit pas contenir les caractères # (livre) et $ (dollar).
+   >Le chemin d’accès du répertoire d’installation ne doit pas contenir les caractères # (livre) et $ (dollar).
 
 1. Vérifiez le compte-rendu de préinstallation, puis cliquez sur Installer. Le programme d’installation affiche la progression de l’installation.
 1. Vérifiez le récapitulatif de l’installation. Sélectionnez Démarrer AEM Forms Workbench pour lancer Workbench, puis cliquez sur Suivant.
@@ -183,7 +183,7 @@ Les processus AEM Forms sur JEE peuvent être mis à niveau vers les applicati
 Pour utiliser Workbench, vous devez disposer d’une instance AEM Forms en cours d’exécution, généralement sur un ordinateur distinct. Vous devez disposer d’un nom d’utilisateur et d’un mot de passe pour vous connecter à AEM Forms, ainsi que des détails concernant l’emplacement du serveur.
 
 >[!NOTE]
-Si vous avez configuré AEM Forms pour utiliser le fournisseur de référentiels EMC Documentum® ou IBM® FileNet et que vous voulez vous connecter à un référentiel autre que le référentiel configuré par défaut dans la console d’administration d’AEM Forms, indiquez le nom d’utilisateur au format nom_utilisateur@Repository.
+>Si vous avez configuré AEM Forms pour utiliser le fournisseur de référentiels EMC Documentum® ou IBM® FileNet et que vous voulez vous connecter à un référentiel autre que le référentiel configuré par défaut dans la console d’administration d’AEM Forms, indiquez le nom d’utilisateur au format nom_utilisateur@Repository.
 
 ### Configurer les paramètres de délai d’expiration {#configuring-timeout-settings}
 
@@ -194,7 +194,7 @@ Par défaut, Workbench arrive à expiration après deux heures, peu importe l’
 Pour connecter Workbench au serveur AEM Forms via HTTPS, assurez-vous que l’autorité de certification (CA) émettrice de la clé publique sera identifiée comme approuvée par Workbench. Si le certificat n’est pas reconnu comme provenant d’une source approuvée, vous devez mettre à jour le fichier cacert situé dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security.
 
 >[!NOTE]
-[Workbench_EMPLACEMENT] représente le répertoire où vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
+>[Workbench_EMPLACEMENT] représente le répertoire où vous avez installé Workbench. L’emplacement par défaut est C:\Program Files (x86)\Adobe Experience Manager Forms Workbench.
 
 Assurez-vous de vous connecter à HTTPS en utilisant le nom spécifié dans le certificat. Ce nom est généralement le nom d’hôte complet.
 
@@ -202,7 +202,7 @@ Assurez-vous de vous connecter à HTTPS en utilisant le nom spécifié dans le c
 1. Assurez-vous que vous disposez d’une copie du certificat SSL (Secure Sockets Layer). Contactez l’administrateur ou l’administratrice qui a configuré le serveur SSL ou exportez le certificat à l’aide d’un navigateur web.
 
    >[!NOTE]
-   Pour exporter le certificat, ouvrez un navigateur web et connectez-vous à la console d’administration, installez le certificat dans le navigateur, puis exportez-le du navigateur vers un emplacement de stockage temporaire (ou directement dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security).
+   >Pour exporter le certificat, ouvrez un navigateur web et connectez-vous à la console d’administration, installez le certificat dans le navigateur, puis exportez-le du navigateur vers un emplacement de stockage temporaire (ou directement dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security).
 
 1. Copiez le certificat dans le répertoire [Workbench_EMPLACEMENT]/workbench/jre/lib/security.
 

@@ -120,7 +120,6 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
    >
    >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
    >* ou aucune des pages du dossier ne comporte de version,
-
    >
    >l’affichage sera vide, car aucune version n’est applicable.
 

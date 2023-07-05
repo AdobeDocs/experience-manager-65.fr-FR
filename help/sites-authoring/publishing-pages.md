@@ -29,13 +29,13 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >Certains termes liés à la publication peuvent être déroutants :
 >
 >* **Publier/dépublier**
-   >  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
+>  Termes principalement utilisés pour évoquer les opérations qui rendent votre contenu publiquement accessible dans votre environnement de publication (ou non).
 >
 >* **Activer/Désactiver**
-   >  Ces termes sont synonymes de publication/dépublication.
+>  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
-   >  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
+>  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
 >
 
 
