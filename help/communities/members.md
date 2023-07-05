@@ -9,16 +9,17 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '961'
 ht-degree: 4%
 
 ---
 
+
 # Consoles de gestion des membres et des groupes {#members-groups-management-consoles}
 
-## Présentation {#overview}
+## Vue d’ensemble {#overview}
 
 Les fonctionnalités AEM Communities nécessitent souvent que les visiteurs du site soient enregistrés et connectés avant de participer à une communauté dans l’environnement de publication. Leur enregistrement d’utilisateur n’a besoin d’exister que dans l’environnement de publication ; il est généralement appelé *members* pour les distinguer de *utilisateurs* enregistré dans l’environnement de création.
 
@@ -47,7 +48,7 @@ Dans l’environnement de création, pour accéder à la console Membres afin de
 >
 >Il ne sera pas possible d’utiliser la console Membres si la variable [service tunnel](deploy-communities.md#tunnel-service-on-author) n’est pas activé.
 
-![member-console1](assets/member-console1.png)
+![La console des membres](assets/member-console1.png)
 
 ### Recherche {#search-features}
 
@@ -56,7 +57,7 @@ Sélectionnez l’icône du panneau latéral sur le côté gauche de la `Members
 ![Icône du panneau latéral de recherche.](assets/leftpanel-icon.png)
 
 
-![member-console2](assets/member-console2.png)
+![Options de filtrage de la console membre](assets/member-console2.png)
 
 Sélectionnez l’icône de recherche sur le côté gauche de la `Members` pour fermer le panneau latéral de recherche.
 
@@ -76,7 +77,7 @@ Les en-têtes de colonne sont :
 
 Sélectionner `Create Member` pour créer un utilisateur dans l’environnement de publication.
 
-![create-member1](assets/create-member1.png)
+![Fenêtre Créer un nouveau membre](assets/create-member1.png)
 
 ### GÉNÉRAL - Détails du membre {#general-member-details}
 
@@ -150,7 +151,7 @@ Le `BADGES` panneau permet d’attribuer manuellement des badges et de les révo
 
 Voir aussi [Notation et badges](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![Fenêtre Modifier les paramètres d’appartenance](assets/create-member2.png)
 
 * **[!UICONTROL Ajouter des badges]**
    * Commencer à saisir pour effectuer une sélection dans [badges disponibles](badges.md). Une fois qu’un badge est sélectionné, sélectionnez chaque site, ou tous les sites, sur lesquels le badge doit s’afficher avec l’avatar du membre.
@@ -173,7 +174,7 @@ Pour accéder à la console Groupes , procédez comme suit :
 
 Sélectionner `Add Group` pour créer un groupe dans l’environnement de publication.
 
-![group-console1](assets/group-console1.png)
+![Fenêtre Créer un groupe](assets/group-console1.png)
 
 Les champs requis pour créer un groupe de membres côté publication sont les suivants :
 

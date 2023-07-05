@@ -10,12 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 93dfac20bbb761abd580a004741ade20dc4ee2fe
 workflow-type: tm+mt
-source-wordcount: '2026'
-ht-degree: 99%
+source-wordcount: '2068'
+ht-degree: 96%
 
 ---
+
 
 # Configurer les notifications par e-mail{#configuring-email-notification}
 
@@ -54,7 +55,7 @@ Pour résoudre plus facilement un problème avec le **service de messagerie Day�
 
 La configuration ressemble à ce qui suit dans la console web :
 
-![chlimage_1-276](assets/chlimage_1-276.png)
+![Fenêtre de configuration OSGi du service de messagerie Day CQ](assets/chlimage_1-276.png)
 
 ## Configuration du canal de notification par e-mail {#configuring-the-email-notification-channel}
 
@@ -88,7 +89,7 @@ Lorsque vous recevez des notifications électroniques de workflow, l’adresse �
 
 La configuration par défaut se présente comme suit dans la console web :
 
-![chlimage_1-277](assets/chlimage_1-277.png)
+![Fenêtre de configuration du service de notification électronique de workflow Day CQ](assets/chlimage_1-277.png)
 
 ### Modèles d’e-mail pour les notifications de page {#email-templates-for-page-notification}
 
@@ -233,7 +234,7 @@ Les variables suivantes peuvent être utilisées dans le modèle d’e-mail :
 
 * `${payload.type}`, type de payload
 * `${payload.path}`, chemin d’accès au payload
-* `${host.prefix}`, préfixe hôte, par exemple, http://localhost:4502
+* `${host.prefix}`, préfixe d’hôte, par exemple : `http://localhost:4502`
 
 ### Ajouter un modèle d’e-mail pour une nouvelle langue {#adding-an-email-template-for-a-new-language}
 
@@ -297,7 +298,7 @@ Tout d’abord, configurez le service de messagerie :
    * Cochez les cases correspondant à **SMPT utilise StarTLS** et **SMTP exige StarTLS**.
    * Vérifiez le **Flux OAuth** et cliquez sur **Enregistrer**.
 
-Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-dessous :
+Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-dessous :
 
 1. Ouvrez la console web AEM en accédant à `http://serveraddress:serverport/system/console/configMgr`.
 1. Recherchez puis cliquez sur **Fournisseur SMTP OAuth2 de messagerie CQ**.
@@ -310,11 +311,11 @@ Ensuite, configurez votre fournisseur SMTP OAuth en suivant la procédure ci-de
    * Actualiser l’expiration du jeton : jamais
 1. Cliquez sur **Enregistrer**.
 
-<!-- clarify refresh token expiry, currrently not present in the UI -->
+<!-- clarify refresh token expiry, currently not present in the UI -->
 
 Une fois configurés, les paramètres doivent se présenter comme suit :
 
-![fournisseur smtp oauth](assets/oauth-smtpprov2.png)
+![Fenêtre de configuration du fournisseur SMTP Oauth2 du courrier CQ](assets/oauth-smtpprov2.png)
 
 Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant comme suit :
 
@@ -324,7 +325,7 @@ Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant com
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Appuyez sur l’icône Lecture à gauche des composants.
 
-   ![composants](assets/oauth-components-play.png)
+   ![Liste des composants affichant OAuthCodeGenerateServlet et OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
 
 Enfin, confirmez la configuration en procédant comme suit :
 
@@ -342,7 +343,7 @@ Enfin, confirmez la configuration en procédant comme suit :
 1. Recherchez le **répertoire Azure principal** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Cliquez sur **Enregistrement de l’application** - **Nouvel enregistrement**
 
-   ![Configuration de Microsoft Outlook](assets/oauth-outlook1.png)
+   ![Le nouveau bouton d’enregistrement lors de la configuration de Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Renseignez les informations selon vos besoins, puis cliquez sur **Enregistrer**
 1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**
@@ -397,7 +398,7 @@ Ensuite, intégrez vos paramètres OAuth2 à AEM :
 
 Une fois configurés, les paramètres doivent se présenter comme suit :
 
-![Vue des configurations AEM côté](assets/oauth-outlook-smptconfig.png)
+![Configuration SMTP OAuth2 de CQ Mailer terminée](assets/oauth-outlook-smptconfig.png)
 
 Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant comme suit :
 
@@ -407,7 +408,7 @@ Maintenant, activez les composants OAuth. Vous pouvez le faire en procédant com
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Appuyez sur l’icône Lecture à gauche des composants.
 
-![components2](assets/oauth-components-play.png)
+![Fragment de liste de composants contenant OAuthCodeGenerateServlet et OAuthCodeAccessTokenGenerator](assets/oauth-components-play.png)
 
 Enfin, confirmez la configuration en procédant comme suit :
 

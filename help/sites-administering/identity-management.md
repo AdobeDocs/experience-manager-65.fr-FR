@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 67%
+source-wordcount: '1250'
+ht-degree: 64%
 
 ---
+
 
 # Identity Management{#identity-management}
 
@@ -61,11 +62,11 @@ A [formulaire](/help/sites-authoring/default-components.md#form-component) peut 
 Par exemple, les utilisateurs peuvent demander un nouveau profil à l’aide de la page Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![registerform](assets/registerform.png)
+![Exemple de formulaire d&#39;enregistrement](assets/registerform.png)
 
 Lors de l’envoi de la demande, la page de profil s’affiche lorsque l’utilisateur peut fournir des détails personnels.
 
-![profilepage](assets/profilepage.png)
+![Exemple de page de profil](assets/profilepage.png)
 
 Le nouveau compte est également visible dans la [console Utilisateurs](/help/sites-administering/security.md).
 
@@ -79,7 +80,7 @@ Par exemple, les utilisateurs peuvent se connecter ou créer un compte à l’ai
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![connexion](assets/login.png)
+![Exemple de page de connexion](assets/login.png)
 
 ## Déconnexion {#logging-out}
 
@@ -106,13 +107,13 @@ Vous pouvez afficher un autre profil à l’aide du [contexte du client](/help/s
 1. Press **control-alt-C** pour ouvrir le contexte client.
 1. Dans le coin supérieur gauche du contexte client, cliquez sur le bouton **Chargement d’un profil** bouton .
 
-   ![Bouton Charger un profil](do-not-localize/loadprofile.png)
+   ![Icône Chargement d’un profil](do-not-localize/loadprofile.png)
 
 1. Sélectionnez un autre profil dans la liste déroulante de la boîte de dialogue ; par exemple, **Alison Parker**.
 1. Cliquez sur **OK**.
 1. Cliquez de nouveau sur **Mon profil**. Le formulaire sera mis à jour avec les détails d’Alison.
 
-   ![profilealison](assets/profilealison.png)
+   ![Exemple de profil d’Alison](assets/profilealison.png)
 
 1. Vous pouvez désormais utiliser **Modifier le profil** ou **Modifier le mot de passe** pour mettre à jour les détails.
 
@@ -136,11 +137,11 @@ Vous pouvez ajouter des champs à la définition d’un profil. Par exemple, pou
 
    La prochaine fois que vous affichez un profil, vous pouvez choisir une couleur préférée :
 
-   ![aparkerfavcolour](assets/aparkerfavcolour.png)
+   ![Champ d’exemple de couleur préféré d’Alison Parker](assets/aparkerfavcolour.png)
 
    Le champ est enregistré dans la section **profil** du compte utilisateur approprié :
 
-   ![aparkercrxdelite](assets/aparkercrxdelite.png)
+   ![Données d’Alison Parker dans CRXDE](assets/aparkercrxdelite.png)
 
 ## États du profil {#profile-states}
 
@@ -188,7 +189,7 @@ Les profils sont stockés dans le référentiel de contenu, au sein du [compte u
 
 Le profil se trouve sous `/home/users/geometrixx` :
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![Profils affichés dans CRXDE](assets/chlimage_1-138.png)
 
 Dans une configuration standard (création ou publication), chacun possède un accès en lecture à toutes les informations de profil de tous les utilisateurs. Chacun est un *groupe intégré contenant automatiquement tous les utilisateurs et groupes existants. La liste des membres ne peut pas être modifiée.*&quot;.
 
@@ -205,7 +206,7 @@ Si cet accès n’est pas adapté à votre installation, vous pouvez modifier ce
 
 À cet effet, utilisez l’onglet **[Contrôle d’accès](/help/sites-administering/user-group-ac-admin.md#access-right-management)** :
 
-![aclmanager](assets/aclmanager.png)
+![Gestion des listes de contrôle d’accès dans CRXDE](assets/aclmanager.png)
 
 ## Composants de profil {#profile-components}
 
@@ -215,27 +216,27 @@ Plusieurs composants de profil sont également disponibles pour définir les exi
 
 Ce composant vous donne deux champs pour :
 
-* saisie d’un mot de passe
+* la saisie d’un mot de passe
 * une vérification pour confirmer que le mot de passe a été saisi correctement.
 
 Avec les paramètres par défaut, le composant s’affiche comme suit :
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![Boîte de dialogue Vérifier le mot de passe](assets/dc_profiles_checkedpassword.png)
 
 ### Photo de l’avatar du profil {#profile-avatar-photo}
 
 Ce composant fournit à l’utilisateur un mécanisme permettant de sélectionner et de charger un fichier photo d’avatar.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![Sélecteur d’avatar](assets/dc_profiles_avatarphoto.png)
 
 ### Nom détaillé du profil {#profile-detailed-name}
 
 Ce composant permet à l’utilisateur de saisir un nom détaillé.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![Boîte de dialogue de nom détaillé](assets/dc_profiles_detailedname.png)
 
 ### Sexe du profil {#profile-gender}
 
 Ce composant permet à l’utilisateur de saisir son sexe.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![Sélecteur de genre](assets/dc_profiles_gender.png)

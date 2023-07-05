@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 72%
+source-wordcount: '958'
+ht-degree: 71%
 
 ---
+
 
 # Opérations Granite - Administration des utilisateurs et des groupes{#granite-operations-user-and-group-administration}
 
@@ -26,7 +27,7 @@ Ces comptes sont la base des [comptes AEM](/help/sites-administering/security.md
 
 Les consoles d’administration des utilisateurs et des groupes Granite sont toutes deux disponibles dans la **[Outils](/help/sites-administering/tools-consoles.md)** console de l’IU optimisée pour les écrans tactiles :
 
-![chlimage_1-72](assets/chlimage_1-72a.png)
+![Console Outils](assets/chlimage_1-72a.png)
 
 Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la console adéquate. Dans les deux, vous pouvez agir soit en utilisant la case à cocher, puis les actions de la barre d’outils, soit en ouvrant les détails du compte via le lien situé sous **Nom**.
 
@@ -42,7 +43,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
 * [Administration des groupes](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![Console de gestion des utilisateurs](assets/chlimage_1-74a.png)
 
   Le **Groupes** listes console :
 
@@ -56,11 +57,11 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
 
 1. Utilisez la variable **Ajouter un utilisateur** icon :
 
-   ![Ajouter un utilisateur](do-not-localize/chlimage_1-1.png)
+   ![Icône Ajouter un utilisateur](do-not-localize/chlimage_1-1.png)
 
 1. Le **Créer un utilisateur** Le formulaire s’ouvre :
 
-   ![chlimage_1-75](assets/chlimage_1-75a.png)
+   ![Formulaire de détails utilisateur](assets/chlimage_1-75a.png)
 
    Vous pouvez y saisir les détails de l’utilisateur pour le compte (la plupart sont des détails standard et explicites) :
 
@@ -88,7 +89,7 @@ Choisir entre **Utilisateurs** ou **Groupes** dans la console Outils ouvre la co
    * **Pays**
    * **État**
    * **Titre**
-   * **Sexe**
+   * **Genre**
    * **À propos**
    * **Paramètres du compte**
 
@@ -132,11 +133,11 @@ Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
 1. Vous pouvez à présent modifier les détails comme indiqué dans la rubrique [Ajout d’un nouvel utilisateur](#adding-a-new-user). Sous **Paramètres du compte** se trouve un lien permettant de **Modifier le mot de passe**.
 
-   ![chlimage_1-76](assets/chlimage_1-76a.png)
+   ![Boîte de dialogue Paramètres du compte](assets/chlimage_1-76a.png)
 
 1. La boîte de dialogue **Modifier le mot de passe** s’ouvre. Saisissez et confirmez le nouveau mot de passe, ainsi que votre mot de passe. Cliquez sur **OK** pour confirmer les modifications.
 
-   ![chlimage_1-77](assets/chlimage_1-77a.png)
+   ![Boîte de dialogue Modifier le mot de passe](assets/chlimage_1-77a.png)
 
    Un message confirme que le mot de passe a été modifié.
 
@@ -149,7 +150,7 @@ Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
    Pour ouvrir le menu déroulant de sélection de groupe :
 
-   ![chlimage_1-78](assets/chlimage_1-78a.png)
+   ![Sélecteur de groupes](assets/chlimage_1-78a.png)
 
 1. Dans la boîte de dialogue de sélection, vous pouvez sélectionner ou désélectionner les groupes auxquels le compte utilisateur doit appartenir.
 
@@ -177,7 +178,7 @@ Vous pouvez marquer le compte comme **actif** ou **inactif**.
 
 1. Le **Créer un groupe** Le formulaire s’ouvre :
 
-   ![chlimage_1-79](assets/chlimage_1-79a.png)
+   ![Formulaire Détails du groupe](assets/chlimage_1-79a.png)
 
    Vous pouvez y saisir les détails du groupe :
 

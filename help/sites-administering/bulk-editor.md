@@ -11,16 +11,17 @@ content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1143'
-ht-degree: 100%
+source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 65%
 
 ---
 
+
 # Éditeur en bloc{#the-bulk-editor}
 
-L’éditeur en bloc permet une modification très efficace lorsque le contexte visuel de la page n’est pas nécessaire, car il permet :
+L’éditeur en bloc permet une modification très efficace lorsque le contexte visuel de la page n’est pas nécessaire, car il vous permet d’effectuer les opérations suivantes :
 
 * de chercher (et d’afficher) le contenu de plusieurs pages, à l’aide du langage de requête de Google (Google Query Language, GQL) ;
 * de modifier directement ce contenu dans l’éditeur en bloc ;
@@ -29,45 +30,45 @@ L’éditeur en bloc permet une modification très efficace lorsque le contexte 
 
 >[!NOTE]
 >
->Vous pouvez également importer du contenu dans le référentiel, mais il est désactivé par défaut pour l’éditeur en bloc selon sa disponibilité dans la console **Outils**.
+>Vous pouvez également importer du contenu dans le référentiel, mais cette option est désactivée par défaut pour l’éditeur en bloc comme disponible dans la variable **Outils** console.
 
 Cette section décrit comment utiliser l’éditeur en bloc dans la console **Outils**. En général, les administrateurs utilisent l’éditeur en bloc pour chercher et modifier différents éléments. Cette opération est effectuée en renseignant le tableau à l’aide d’une requête GQL, puis en sélectionnant les éléments de contenu sur lesquels travailler. Les créateurs utilisent généralement l’éditeur en bloc dans le cadre d’une application d’éditeur en bloc personnalisée par le biais du composant [Liste de produits](/help/sites-authoring/default-components.md#productlist).
 
 >[!CAUTION]
 >
->Avec l’[abandon de l’IU classique](/help/release-notes/deprecated-removed-features.md) dans AEM 6.4, l’éditeur en bloc a également été abandonné et Adobe ne prévoit donc pas de l’améliorer.
+>Avec le [abandon de l’interface utilisateur classique](/help/release-notes/deprecated-removed-features.md) dans AEM 6.4, l’éditeur en bloc a également été abandonné et, par conséquent, Adobe ne prévoit pas d’améliorer davantage l’éditeur en bloc.
 
 ## Exemple de cas d’utilisation pour l’éditeur en bloc {#example-use-case-for-the-bulk-editor}
 
-Si, par exemple, vous avez besoin de l’ensemble des noms et des adresses électroniques des utilisateurs qui ont rempli une enquête particulière, l’éditeur en bloc peut fournir ces informations, et vous pouvez les exporter dans une feuille de calcul.
+Par exemple, si vous avez besoin de tous les noms et adresses électroniques des utilisateurs qui ont rempli une enquête spécifique, l’éditeur en bloc peut fournir ces informations et vous pouvez les exporter dans une feuille de calcul.
 
-Le site web Geometrixx est un exemple de cas d’utilisation :
+Le site web de Geometrixx fournit un exemple illustrant ce cas pratique :
 
-1. Accédez à la page **Support**, puis à l’enquête de **satisfaction des clients vis-à-vis du service**.
-1. **Modifiez** le paragraphe **Début du formulaire**. Dans la boîte de dialogue, cliquez sur l’onglet **Avancé**, développez la **Configuration de l’action**, puis cliquez sur **Afficher les données...**.
+1. Accédez au **Assistance** puis à la page **Satisfaction de la clientèle** enquête.
+1. **Modifiez** le paragraphe **Début du formulaire**. Dans la boîte de dialogue, cliquez sur **Avancé** , développez l’onglet **Configuration d’action**, puis cliquez sur **Afficher les données...**.
 
-   ![](assets/custsatsurvey.png)
+   ![Exemple d&#39;enquête sur la satisfaction client](assets/custsatsurvey.png)
 
 1. L’éditeur en bloc est entièrement personnalisable, même si, dans cet exemple, il ne permet pas aux utilisateurs de modifier le contenu, mais seulement d’exporter les informations vers une feuille de calcul.
 
-   ![](assets/bulkeditor.png)
+   ![Console de l’éditeur en bloc](assets/bulkeditor.png)
 
 ## Utilisation de l’éditeur en bloc {#how-to-use-the-bulk-editor}
 
-L’éditeur en bloc permet ce qui suit :
+L’éditeur en bloc vous permet d’effectuer les opérations suivantes :
 
 * [de rechercher du contenu en fonction de paramètres de requête afin d’afficher les propriétés spécifiées des résultats dans des colonnes, de modifier ce contenu et d’enregistrer les modifications ;](#searching-and-editing-content)
 * [d’exporter ce contenu vers une feuille de calcul de données séparées par des tabulations ;](#exporting-content)
 
 * [d’importer le contenu d’une feuille de calcul de données séparées par des tabulations.](#importing-content)
 
-### Recherche et modification du contenu {#searching-and-editing-content}
+### Recherche et modification de contenu {#searching-and-editing-content}
 
-Pour utiliser l’éditeur en bloc pour modifier simultanément différents éléments, procédez comme suit :
+Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simultanément :
 
-1. Dans la console **Outils**, cliquez sur le dossier **Importateurs** pour le développer.
-1. Double-cliquez sur l’**éditeur en bloc** pour l’ouvrir.
-1. Saisissez les exigences de sélection :
+1. Dans le **Outils** , cliquez sur la console **Importateurs** pour le développer.
+1. Double-cliquez sur le **Éditeur en bloc** pour l’ouvrir.
+1. Saisissez vos exigences de sélection :
 
 <table>
  <tbody>
@@ -89,27 +90,27 @@ Pour utiliser l’éditeur en bloc pour modifier simultanément différents él�
   </tr>
   <tr>
    <td>Propriétés/Colonnes</td>
-   <td>Cochez les cases correspondant aux propriétés que l’éditeur en bloc doit renvoyer. Les propriétés que vous sélectionnez sont les titres de colonne dans le volet de résultats. Par défaut, le chemin d’accès au nœud est affiché dans les résultats.</td>
+   <td>Cochez les cases correspondant aux propriétés que l’éditeur en bloc doit renvoyer. Les propriétés que vous sélectionnez sont les titres de colonne dans le volet de résultats. Par défaut, le chemin du noeud est affiché dans les résultats.</td>
   </tr>
   <tr>
    <td>Propriétés / Colonnes personnalisées</td>
-   <td>Saisissez d’autres propriétés qui ne sont pas répertoriées dans le champ <strong>Propriétés/Colonnes</strong>. Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i>Remarque :</i> si vous ajoutez une propriété personnalisée qui n’existe pas encore, la gestion de contenu Web AEM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété qui vient d’être créée doit respecter les contraintes de type de nœud et les espaces de noms des propriétés.</td>
+   <td>Saisissez d’autres propriétés qui ne sont pas répertoriées dans le champ <strong>Propriétés/Colonnes</strong>. Ces propriétés personnalisées s’affichent dans le volet de résultats. Vous pouvez ajouter plusieurs propriétés en les séparant par des virgules. <i>Remarque :</i> si vous ajoutez une propriété personnalisée qui n’existe pas encore, la gestion de contenu Web AEM affiche une cellule vide. Lorsque vous modifiez la cellule vide et que vous l’enregistrez, la propriété est ajoutée au nœud. La propriété nouvellement créée doit respecter les contraintes de type de noeud et les espaces de noms de propriété.</td>
   </tr>
  </tbody>
 </table>
 
 Par exemple :
 
-![](assets/searchfilter.png)
+![Options de filtre de l’éditeur en bloc](assets/searchfilter.png)
 
 1. Cliquez sur **Rechercher**. L’éditeur en bloc affiche les résultats.
 Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de recherche sont renvoyées et affichées avec les colonnes demandées.
 
-   ![](assets/chlimage_1-39.png)
+   ![Résultats de l’éditeur en bloc](assets/chlimage_1-39.png)
 
 1. Apportez les modifications nécessaires en double-cliquant dans une cellule.
 
-   ![](assets/srchresultedit.png)
+   ![Modification en bloc](assets/srchresultedit.png)
 
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications (le bouton **Enregistrer** est activé une fois que vous avez modifié une cellule).
 
@@ -120,39 +121,39 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
 * **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
-* **type :** renvoie uniquement les nœuds des types déterminés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les nœuds correspondant à l’un des types spécifiés.
+* **type :** renvoie uniquement les nœuds des types déterminés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les noeuds de l’un des types spécifiés.
 * **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriété séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple : order:-nom. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également le l’ordre par défaut.
 * **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple : limit:10..20. Notez que l’intervalle est basé sur zéro, le début étant inclusif et la fin, exclusive. Vous pouvez également spécifier un intervalle ouvert :limit:10.. ou limit:..20. Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie, au maximum, ce nombre de résultats. Par exemple : limit:10 (renvoie les 10 premiers résultats).
 
 ### Exportation de contenu {#exporting-content}
 
-Vous pouvez avoir besoin d’exporter du contenu et d’y apporter des modifications dans une feuille de calcul Excel. Vous souhaitez, par exemple, exporter une liste de diffusion et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ajouter des lignes supplémentaires, etc.
+Vous pouvez avoir besoin d’exporter du contenu et d’y apporter des modifications dans une feuille de calcul Excel. Par exemple, vous pouvez exporter une liste de diffusion et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ajouter des lignes supplémentaires, etc.
 
-Pour exporter du contenu, procédez comme suit :
+Pour exporter du contenu :
 
-1. Recherchez le contenu, comme indiqué dans la section [Recherche et modification du contenu](#searching-and-editing-content).
-1. Cliquez sur **Exporter** pour exporter les modifications dans une feuille de calcul Excel de données séparées par des tabulations. La gestion de contenu web AEM vous invite à indiquer l’emplacement où télécharger le fichier.
+1. Recherchez du contenu comme décrit dans [Recherche et modification de contenu](#searching-and-editing-content).
+1. Cliquez sur **Exporter** pour exporter les modifications dans une feuille de calcul Excel de données séparées par des tabulations. AEM WCM vous demande où vous souhaitez télécharger le fichier.
 
    >[!NOTE]
    >
    >Par défaut, les modifications sont codées en [Windows-1252](https://fr.wikipedia.org/wiki/Windows-1252) (également appelé « CP-1252 »). Vous pouvez cocher UTF-8 pour exporter les modifications au format UTF-8.
 
-   ![](assets/srchrsesultexport.png)
+   ![Exporter les résultats](assets/srchrsesultexport.png)
 
 1. Sélectionnez l’emplacement et confirmez que vous souhaitez télécharger le fichier.
-1. Une fois que vous avez téléchargé le fichier, vous pouvez l’ouvrir dans votre tableur, par exemple, Microsoft Excel. Le tableur importe le fichier et le convertit au format de la feuille de calcul.
+1. Une fois que vous avez téléchargé le fichier, vous pouvez l’ouvrir dans votre tableur, par exemple, Microsoft Excel. Le tableur importe le fichier et le convertit au format tableur.
 
-   ![](assets/exportinexcel.png)
+   ![Résultats exportés dans une feuille de calcul](assets/exportinexcel.png)
 
 ### Importation de contenu {#importing-content}
 
-Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il suffit d’ajouter le paramètre `hib=false` à l’adresse URL pour afficher le bouton **Importer** dans la page Éditeur en bloc. Vous pouvez importer du contenu à partir de n’importe quel fichier de données séparées par des tabulations (`.tsv`). Pour que l’importation fonctionne correctement, les titres de colonne (première ligne des cellules) doivent correspondre aux titres de colonne du tableau dans lequel vous importez le contenu.
+Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il suffit d’ajouter le paramètre `hib=false` à l’adresse URL pour afficher le bouton **Importer** dans la page Éditeur en bloc. Vous pouvez importer du contenu à partir de n’importe quel fichier de données séparées par des tabulations (`.tsv`). Pour que l’importation fonctionne correctement, les en-têtes de colonne (première ligne de cellules) doivent correspondre aux en-têtes de colonne du tableau dans lequel vous importez.
 
 >[!NOTE]
 >
 >Lorsque vous réimportez le contenu, vous effacez le contenu existant de ces nœuds. Veillez à ne pas remplacer des informations importantes.
 
-Pour importer du contenu, procédez comme suit :
+Pour importer du contenu :
 
 1. Ouvrez l’éditeur en bloc.
 1. Ajoutez `?hib=false` à l’URL, par exemple :

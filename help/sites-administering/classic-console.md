@@ -1,7 +1,7 @@
 ---
 title: Console Balisage de l’interface utilisateur (IU) classique
 seo-title: Classic UI Tagging Console
-description: Découvrez la console Balisage de l’interface utilisateur classique.
+description: Découvrez la console de balisage de l’interface utilisateur classique.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
@@ -11,66 +11,63 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '860'
-ht-degree: 100%
+source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
+workflow-type: tm+mt
+source-wordcount: '889'
+ht-degree: 53%
 
 ---
 
+
 # Console Balisage de l’interface utilisateur (IU) classique{#classic-ui-tagging-console}
 
-Cette section est réservée à la console Balisage de l’interface utilisateur classique.
+Cette section concerne la console de balisage de l’interface utilisateur classique.
 
-La console Balisage de l’interface utilisateur optimisée pour les écrans tactiles se trouve [ici](/help/sites-administering/tags.md#tagging-console).
+La console de balisage de l’interface utilisateur optimisée pour les écrans tactiles est [here](/help/sites-administering/tags.md#tagging-console).
 
-Pour accéder à la console Balisage de l’interface utilisateur classique :
+Pour accéder à la console Balisage de l’interface utilisateur classique :
 
 * en mode de création
-* Connectez-vous avec des droits d’administrateur.
+* connexion avec droits d’administrateur
 * Accédez à la console par exemple, [https://localhost:4502/tagging](https://localhost:4502/tagging).
 
-![](assets/managing_tags_usingthetagasministrationconsole.png)
+![Fenêtre de console classique](assets/managing_tags_usingthetagasministrationconsole.png)
 
-## Créations de balises et d’espaces de noms {#creating-tags-and-namespaces}
+## Création de balises et d’espaces de noms {#creating-tags-and-namespaces}
 
-1. En fonction du niveau de départ, vous pouvez créer une balise ou un espace de noms à l’aide de l’option **Nouveau** :
+1. Selon le niveau à partir duquel vous commencez, vous pouvez créer une balise ou un espace de noms à l’aide de **Nouveau**:
 
-   Si vous sélectionnez **Balises**, vous pouvez créer un espace de noms :
+   Si vous sélectionnez **Balises** vous pouvez créer un espace de noms :
 
-   ![](assets/creating_tags_andnamespaces.png)
+   ![Création d’une boîte de dialogue d’espace de noms](assets/creating_tags_andnamespaces.png)
 
-   Si vous sélectionnez un espace de noms (**Demo**, par exemple), vous pouvez y créer une balise :
+   Si vous sélectionnez un espace de noms (par exemple **Démonstration**) vous pouvez créer une balise dans cet espace de noms :
 
-   ![](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![Création d’une boîte de dialogue de balise](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. Dans les deux cas, saisissez
 
    * **Titre**
-(
-*Obligatoire*) Titre affiché pour la balise. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
+(*Obligatoire*) Titre affiché pour la balise. Même s’il est possible d’utiliser n’importe quel caractère, il est recommandé de ne pas utiliser ces caractères spéciaux :
 
       * `colon (:)` - Délimiteur d’espace de noms
       * `forward slash (/)` - Délimiteur de sous-balises
 
-      Si vous saisissez ces caractères, ils ne s’affichent pas.
+     Si vous saisissez ces caractères, ils ne s’affichent pas.
 
    * **Nom**
-(
-*Obligatoire*) Nom du nœud pour la balise.
+(*Obligatoire*) Nom du nœud pour la balise.
 
    * **Description**
-(
-*Facultatif*) Description de la balise.
+(*Facultatif*) Description de la balise.
 
-   * Sélectionnez **Créer**.
+   * select **Créer**
 
-
-## Modification de balises {#editing-tags}
+## Modification des balises {#editing-tags}
 
 1. Dans le volet de droite, sélectionnez la balise à modifier.
 1. Cliquez sur **Modifier**.
-1. Vous pouvez modifier le **Titre** et la **Description**.
+1. Vous pouvez modifier la variable **Titre** et le **Description**.
 1. Cliquez sur **Enregistrer** pour fermer la boîte de dialogue.
 
 ## Suppression des balises {#deleting-tags}
@@ -81,62 +78,62 @@ Pour accéder à la console Balisage de l’interface utilisateur classique :
 
    La balise ne doit plus être répertoriée.
 
-## Activation et désactivation de balises {#activating-and-deactivating-tags}
+## Activation et désactivation des balises {#activating-and-deactivating-tags}
 
-1. Dans le volet de droite, sélectionnez l’espace de noms ou la balise à activer (publication) ou à désactiver (annulation de la publication).
-1. Cliquez sur **Activer** ou **Désactiver**, suivant les besoins.
+1. Dans le volet de droite, sélectionnez l’espace de noms ou la balise que vous souhaitez activer (publier) ou désactiver (annuler la publication).
+1. Cliquez sur **Activer** ou **Désactiver** selon les besoins.
 
-## Liste : indiquant où les balises sont référencées {#list-showing-where-tags-are-referenced}
+## Liste : indiquant l’emplacement de référence des balises {#list-showing-where-tags-are-referenced}
 
-L’option **Liste** ouvre une nouvelle fenêtre qui présente les chemins d’accès de toutes les pages utilisant la balise mise en surbrillance :
+**Liste** ouvre une nouvelle fenêtre affichant les chemins de toutes les pages à l’aide de la balise mise en surbrillance :
 
-![](assets/list_showing_wheretagsarereferenced.png)
+![Recherche de l’emplacement où les balises sont référencées](assets/list_showing_wheretagsarereferenced.png)
 
 ## Déplacement des balises {#moving-tags}
 
-Pour aider les administrateurs et les développeurs de balises à nettoyer la taxonomie ou à renommer un ID de balise, il est possible de déplacer une balise vers un nouvel emplacement :
+Pour aider les administrateurs et les développeurs de balises à nettoyer la taxonomie ou à renommer un ID de balise, il est possible de déplacer une balise vers un nouvel emplacement :
 
-1. Ouvrez la console **Tagging**.
-1. Sélectionnez le tag et cliquez sur **Déplacer...** dans la barre d’outils supérieure (ou dans le menu contextuel).
-1. Dans la boîte de dialogue **Déplacer le tag**, définissez :
+1. Ouvrez le **Balisage** console.
+1. Sélectionnez la balise et cliquez sur **Déplacer..** dans la barre d’outils supérieure (ou dans le menu contextuel).
+1. Dans le **Déplacer la balise** dialog, définissez :
 
-   * **vers**, le nœud de destination.
-   * **Renommer en**, le nouveau nom du nœud.
+   * **to**, le noeud de destination.
+   * **Renommer en**, le nouveau nom du noeud.
 
 1. Cliquez sur **Déplacer**.
 
-La boîte de dialogue **Déplacer le tag** se présente comme suit :
+Le **Déplacer la balise** dialog se présente comme suit :
 
-![](assets/move_tag.png)
+![Déplacement d’une balise](assets/move_tag.png)
 
 >[!NOTE]
 >
 >Les créateurs ne doivent pas déplacer les balises ou renommer l’ID de balise. Lorsque cela est nécessaire, les créateurs doivent seulement [modifier le titre des balises](#editing-tags).
 
-## Fusion des balises {#merging-tags}
+## Fusion de balises {#merging-tags}
 
-Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B, et la balise A n’est plus disponible pour les auteurs.
+Il est également possible de recourir à la fusion de balises lorsqu’une taxonomie comporte des doublons. Lorsque la balise A est fusionnée dans la balise B, toutes les pages balisées avec la balise A sont balisées avec la balise B et la balise A n’est plus disponible pour les auteurs.
 
-Pour fusionner un tag dans un autre :
+Pour fusionner une balise dans une autre balise :
 
-1. Ouvrez la console **Tagging**.
-1. Sélectionnez le tag et cliquez sur **Fusionner...** dans la barre d’outils supérieure (ou dans le menu contextuel).
-1. Dans la boîte de dialogue **Fusionner le tag**, définissez :
+1. Ouvrez le **Balisage** console.
+1. Sélectionnez la balise et cliquez sur **Fusionner..** dans la barre d’outils supérieure (ou dans le menu contextuel).
+1. Dans le **Fusionner la balise** dialog, définissez :
 
-   * **en**, le nœud de destination.
+   * **into**, le noeud de destination.
 
-1. Cliquez sur **Fusionner**.
+1. Cliquez sur **Fusion**.
 
 La boîte de dialogue **Fusionner la balise** se présente de la manière suivante :
 
-![](assets/mergetag.png)
+![Fusion d’une balise](assets/mergetag.png)
 
-## Compte d’utilisation des balises {#counting-usage-of-tags}
+## Comptage de l’utilisation des balises {#counting-usage-of-tags}
 
-Pour afficher le nombre d’utilisations d’un tag :
+Pour savoir combien de fois une balise est utilisée :
 
-1. Ouvrez la console **Tagging**.
-1. Cliquez sur **Compteur d’utilisations** dans la barre d’outils supérieure : la colonne Décompte affiche le résultat.
+1. Ouvrez le **Balisage** console.
+1. Cliquez sur **Utilisation des nombres** dans la barre d’outils supérieure : la colonne Nombre affiche le résultat.
 
 ## Gestion des balises dans différentes langues {#managing-tags-in-different-languages}
 
@@ -148,17 +145,17 @@ La procédure ci-dessous indique comment traduire le `title` de la balise **Anim
 
 1. Accédez à la console **Balisage**.
 1. Modifiez la balise **Animals** située sous **Balises** > **Images de photothèque**.
-1. Ajoutez les traductions dans les langues suivantes :
+1. Ajoutez les traductions dans les langues suivantes :
 
-   * **Anglais** : Animals
-   * **Allemand** : Tiere
-   * **Français** : Animaux
+   * **Anglais**: Animals
+   * **Allemand**: Tiere
+   * **Français**: Animaux
 
 1. Enregistrez les modifications.
 
-La boîte de dialogue se présente comme suit :
+La boîte de dialogue se présente comme suit :
 
-![](assets/edit_tag.png)
+![Modification d’une balise](assets/edit_tag.png)
 
 La console Balisage utilise la langue du créateur, dès lors, pour la balise « Animals », « Animaux » s’affiche si l’utilisateur définit la langue sur Français dans les propriétés de l’utilisateur.
 
@@ -175,11 +172,11 @@ Par défaut, les `titles` des balises dans les propriétés de page sont affich�
 
    Sélectionnez la balise **Animals** (**Animaux**) et cliquez en dehors de la boîte de dialogue pour la fermer et ajouter la balise aux propriétés de la page.
 
-   ![](assets/french_tag.png)
+   ![Modification d’une autre balise](assets/french_tag.png)
 
 Par défaut, la boîte de dialogue Propriétés de page affiche le `titles` des balises en fonction de la langue de la page.
 
-En général, la langue de la balise est celle de la page si elle est disponible. Si le [widget `tag`](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
+En général, la langue de la balise est celle de la page si elle est disponible. Si le [`tag`widget ](/help/sites-developing/building.md#tagging-on-the-client-side) est utilisé dans d’autres cas (dans des formulaires ou des boîtes de dialogue, par exemple), la langue de la balise dépend du contexte.
 
 >[!NOTE]
 >

@@ -13,12 +13,13 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 100%
+source-wordcount: '2124'
+ht-degree: 97%
 
 ---
+
 
 # Configuration d’AEM Assets avec Brand Portal {#configure-integration-65}
 
@@ -103,6 +104,7 @@ La configuration d’AEM Assets avec Brand Portal nécessite des configuration
 >Une instance auteur AEM Assets ne doit être configurée qu’avec un seul client Brand Portal.
 
 Effectuez les étapes suivantes dans l’ordre indiqué si vous configurez AEM Assets avec Brand Portal pour la première fois :
+
 1. [Obtention d’un certificat public](#public-certificate)
 1. [Création d’une connexion au compte de service (JWT)](#createnewintegration)
 1. [Configuration du compte IMS](#create-ims-account-configuration)
@@ -274,7 +276,7 @@ Effectuez les étapes suivantes pour configurer le compte IMS.
 
    Cliquez sur **[!UICONTROL Vérifier]** dans la boîte de dialogue. Une fois la configuration réussie, un message s’affiche avec la mention *Jeton récupéré avec succès*.
 
-   ![](assets/create-new-integration5.png)
+   ![Boîte de dialogue de confirmation de configuration saine](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -298,7 +300,7 @@ Pour configurer le service cloud Brand Portal, procédez comme suit :
 
    Dans le champ **[!UICONTROL URL du service]**, entrez l’adresse URL de votre client Brand Portal (organisation).
 
-   ![](assets/create-cloud-service.png)
+   ![Fenêtre de configuration Brand Portal](assets/create-cloud-service.png)
 
 1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. La configuration cloud est alors créée.
 
@@ -312,17 +314,17 @@ Pour valider la configuration, procédez comme suit :
 
 1. Dans les **Outils** du panneau ![Outils](assets/do-not-localize/tools.png), accédez à **[!UICONTROL Déploiement]** > **[!UICONTROL Réplication]**.
 
-   ![](assets/test-integration1.png)
+   ![Panneau Outils](assets/test-integration1.png)
 
 1. Sur la page Réplication, cliquez sur **[!UICONTROL Agents sur l’auteur]**.
 
-   ![](assets/test-integration2.png)
+   ![Page Réplication](assets/test-integration2.png)
 
    Vous voyez les quatre agents de réplication pour votre client Brand Portal.
 
    Recherchez les agents de réplication de votre client Brand Portal et cliquez sur l’URL de l’agent de réplication.
 
-   ![](assets/test-integration3.png)
+   ![Configuration de la réplication des ressources](assets/test-integration3.png)
 
    >[!NOTE]
    >
@@ -330,11 +332,11 @@ Pour valider la configuration, procédez comme suit :
 
 1. Pour vérifier la connexion entre AEM Assets et Brand Portal, cliquez sur l’icône **[!UICONTROL Tester la connexion]**.
 
-   ![](assets/test-integration4.png)
+   ![Vérification des paramètres de réplication des ressources](assets/test-integration4.png)
 
    Un message s’affiche indiquant que votre *package de test a bien été livré*.
 
-   ![](assets/test-integration5.png)
+   ![Sortie de confirmation de test](assets/test-integration5.png)
 
 1. Vérifiez les résultats du test sur les quatre agents de réplication.
 
@@ -362,6 +364,7 @@ Pour plus d’informations, voir [Publication de balises sur Brand Portal](http
 ## Mise à niveau de la configuration {#upgrade-integration-65}
 
 Effectuez les étapes suivantes dans l’ordre indiqué pour mettre à niveau vos configurations existantes vers la console Adobe Developer :
+
 1. [Vérification des tâches en cours](#verify-jobs)
 1. [Suppression des configurations existantes](#delete-existing-configuration)
 1. [Création d’une configuration](#configure-new-integration-65)
@@ -376,13 +379,13 @@ Assurez-vous qu’aucune tâche de publication n’est en cours d’exécution s
 
 1. Sur la page Réplication, cliquez sur **[!UICONTROL Agents sur l’auteur]**.
 
-   ![](assets/test-integration2.png)
+   ![Agents de réplication pour les ressources](assets/test-integration2.png)
 
 1. Localisez les agents de réplication de votre client Brand Portal.
 
    Assurez-vous que **La file d’attente est inactive** pour tous les agents de réplication, qu’aucune tâche de publication n’est active.
 
-   ![](assets/test-integration3.png)
+   ![Paramètres de file d’attente de réplication](assets/test-integration3.png)
 
 ### Suppression des configurations existantes {#delete-existing-configuration}
 
@@ -395,15 +398,15 @@ Vous devez exécuter la liste de contrôle suivante lors de la suppression des c
 
 1. Accédez à `/etc/replications/agents.author` et supprimez les quatre agents de réplication de votre client Brand Portal.
 
-   ![](assets/delete-replication-agent.png)
+   ![Agent de réplication dans CRXDE](assets/delete-replication-agent.png)
 
 1. Accédez à `/etc/cloudservices/mediaportal` et supprimez la configuration du service cloud Brand Portal.
 
-   ![](assets/delete-cloud-service.png)
+   ![Détail de l’agent de réplication dans CRXDE](assets/delete-cloud-service.png)
 
 1. Accédez à `/home/users/mac` et supprimez la variable **Utilisateur Mac** de votre client Brand Portal.
 
-   ![](assets/delete-mac-user.png)
+   ![Plus de détails sur l’agent de réplication dans CRXDE](assets/delete-mac-user.png)
 
 
 Vous pouvez désormais [créer une configuration](#configure-new-integration-65) via la console Adobe Developer sur votre instance d’auteur AEM 6.5.
