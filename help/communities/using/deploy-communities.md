@@ -5,9 +5,9 @@ description: Comment déployer AEM Communities
 seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1755'
 ht-degree: 4%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # Déploiement de Communities{#deploying-communities}
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 * [Plateforme AEM 6.5](/help/sites-deploying/deploy.md)
 
@@ -53,27 +53,27 @@ ht-degree: 4%
       * [Installation et configuration de MongoDB](/help/communities/msrp.md#mongodb-configuration)
       * [Configuration de Solr](/help/communities/solr.md)
       * [Sélectionner MSRP](/help/communities/srp-config.md)
+
    * Si SRP de base de données relationnelle [(DSRP)](/help/communities/dsrp.md)
 
       * [Installation du pilote JDBC pour MySQL](#jdbc-driver-for-mysql)
       * [Installation et configuration de MySQL pour DSRP](/help/communities/dsrp-mysql.md)
       * [Configuration de Solr](/help/communities/solr.md)
       * [Sélectionner DSRP](/help/communities/srp-config.md)
+
    * Si Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
       * Contactez le gestionnaire de compte pour la mise en service.
       * [Sélectionner ASRP](/help/communities/srp-config.md)
+
    * Si JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
       * Pas un magasin UGC partagé :
 
          * Le contenu généré par l’utilisateur n’est jamais répliqué.
          * Le contenu généré par l’utilisateur n’est visible que sur l’instance AEM ou la grappe dans laquelle il a été saisi.
+
       * La valeur par défaut est JSRP
-
-
-
-
 
 
 ## Dernières versions {#latest-releases}
@@ -124,7 +124,7 @@ Vous trouverez plus d’informations sur l’installation des lots sur la page [
 
 #### Exemple : Bundle MySQL Connector installé {#example-installed-mysql-connector-bundle}
 
-![](../assets/mysql-connector.png)
+![Bundle MySQL Connector de la console web Adobe Experience Manager](../assets/mysql-connector.png)
 
 ### AEM MLS avancés {#aem-advanced-mls}
 
@@ -186,7 +186,7 @@ Par défaut, la variable `AEM Communities Publisher Configuration` La configurat
 
 Par conséquent, il est nécessaire de **modifier la configuration sur toutes les instances de publication secondaires ;** pour décocher la variable **`Primary Publisher`** .
 
-![](../assets/primary-publisher.png)
+![Boîte de dialogue Configuration de l’éditeur AEM Communities présentant la case à cocher Éditeur Principal](../assets/primary-publisher.png)
 
 Pour toutes les autres instances de publication (secondaires) dans une ferme de publication :
 
@@ -198,7 +198,7 @@ Pour toutes les autres instances de publication (secondaires) dans une ferme de 
 * Recherchez la variable `AEM Communities Publisher Configuration`
 * Sélectionner l’icône de modification
 * Décochez la case **Éditeur Principal** case à cocher
-* Sélectionnez **Enregistrer**
+* Sélectionnez **Enregistrer**.
 
 ### Agents de réplication sur l’auteur {#replication-agents-on-author}
 
@@ -234,7 +234,7 @@ Les images suivantes montrent les résultats du changement de port de 4503 à 61
 
 #### Agent de réplication inverse (publication inversée) {#reverse-replication-agent-publish-reverse}
 
-![](../assets/reverse-replication-agent.png)
+![Agent de réplication inverse (réactifs de publication) indiquant qu’il est activé ou activé.](../assets/reverse-replication-agent.png)
 
 ### Service Tunnel sur l’auteur {#tunnel-service-on-author}
 
@@ -256,7 +256,7 @@ Pour activer le service tunnel :
 * Sélectionnez la **enable** case à cocher
 * Sélectionnez **Enregistrer**.
 
-![](../assets/tunnel-service.png)
+![Service tunnel de publication AEM Communities affichant la case à cocher &quot;Activer&quot;, sélectionnée ou cochée.](../assets/tunnel-service.png)
 
 ### Réplication de la clé de chiffrement {#replicate-the-crypto-key}
 
@@ -270,25 +270,25 @@ Pour copier les documents clés de l’auteur vers toutes les autres instances, 
 
    * Localisez le lot `com.adobe.granite.crypto.file` dans le système de fichiers local
 
-      Par exemple,
+     Par exemple,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Le `bundle.info` identifie le lot
+
    * Accédez au dossier de données, par exemple :
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * Copiez les fichiers de noeud hmac et Principaux.
-
-
 
 * Pour chaque instance AEM cible
 
    * Accédez au dossier de données, par exemple :
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * Coller les 2 fichiers précédemment copiés
    * Il est nécessaire de [actualiser le lot Crypto Granite](#refresh-the-granite-crypto-bundle) si l’instance AEM cible est en cours d’exécution.
-
 
 >[!CAUTION]
 >
@@ -315,7 +315,7 @@ Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [actualiser le lot Crypto Granite](#refresh-the-granite-crypto-bundle)
 
-![](../assets/replicare-repository.png)
+![CRXDE Lite affichant le chemin /etc/key dans le panneau de gauche et l’onglet Réplication sélectionné dans le panneau inférieur droit.](../assets/replicare-repository.png)
 
 #### Actualisation du lot de chiffrement Granite {#refresh-the-granite-crypto-bundle}
 
@@ -326,10 +326,10 @@ Utilisation [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Localiser `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Sélectionner **Actualiser**
 
-![](../assets/refresh-granite-bundle.png)
+![Actualisation du lot de prise en charge de Granite Crypto Adobe.](../assets/refresh-granite-bundle.png)
 
 * Après un moment, une **Succès** La boîte de dialogue doit s’afficher :
-   `Operation completed successfully.`
+  `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}
 

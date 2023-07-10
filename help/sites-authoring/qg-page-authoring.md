@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 67%
+source-wordcount: '1558'
+ht-degree: 56%
 
 ---
 
@@ -40,11 +40,11 @@ Avant de vous donner un aperçu des détails, voici une petite collection de con
 
 * **Créer**
 
-   * Ce bouton est disponible dans de nombreuses consoles ; les options présentées sont contextuelles et peuvent varier en fonction du scénario.
+   * Ce bouton est disponible dans de nombreuses consoles. Les options présentées sont contextuelles et peuvent varier en fonction du scénario.
 
 * Réorganisation des pages dans un dossier
 
-   * Cette opération peut être effectuée dans la vue [Liste](/help/sites-authoring/basic-handling.md#list-view). Les changements seront appliqués et visibles dans d’autres vues.
+   * Vous pouvez le faire dans [Mode Liste](/help/sites-authoring/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres vues.
 
 #### Création de pages {#page-authoring}
 
@@ -59,7 +59,7 @@ Avant de vous donner un aperçu des détails, voici une petite collection de con
 
 >[!NOTE]
 >
->Il existe plusieurs raccourcis clavier qui peuvent faciliter l’expérience de création.
+>Plusieurs raccourcis clavier peuvent faciliter la création.
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -69,7 +69,7 @@ Avant de vous donner un aperçu des détails, voici une petite collection de con
 
 Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, soit effectuer une recherche en procédant comme suit :
 
-1. Ouvrez la console **Sites** (à l’aide de l’option **Sites** dans [Navigation globale](/help/sites-authoring/basic-handling.md#global-navigation), déclenchée (dans une liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche)).
+1. Ouvrez le **Sites** (à l’aide de la console **Sites** dans le [Navigation globale](/help/sites-authoring/basic-handling.md#global-navigation)) : ceci est déclenché (par liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
 
 1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend du mode d’affichage activé : [Carte, Liste ou Colonnes](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) :
 
@@ -85,14 +85,14 @@ Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, so
 
 ### Création d’une page {#creating-a-new-page}
 
-Pour [créer une page](/help/sites-authoring/managing-pages.md#creating-a-new-page) :
+À [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Accédez à l’emplacement](#finding-your-page) où créer la page.
+1. [Accédez à l’emplacement](#finding-your-page) où vous souhaitez créer la page.
 1. Utilisez la variable **Créer** puis sélectionnez **Page** dans la liste :
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. Un assistant s’ouvre, qui vous aidera à collecter les informations nécessaires lors de la [création de votre page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions à l’écran.
+1. L’assistant s’ouvre, qui vous guidera tout au long de la collecte des informations nécessaires lorsque [création d’une page](/help/sites-authoring/managing-pages.md#creating-a-new-page). Suivez les instructions affichées à l’écran.
 
 ### Sélection de la page pour d’autres actions {#selecting-your-page-for-further-action}
 
@@ -134,8 +134,6 @@ Les [actions rapides](/help/sites-authoring/basic-handling.md#quick-actions) son
 
 ### Modification du contenu de votre page {#editing-your-page-content}
 
-Pour modifier votre page :
-
 1. [Accédez à la page](#finding-your-page) que vous souhaitez modifier.
 1. [Ouvrez la page pour modification](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) à l’aide de l’icône Modifier (crayon) :
 
@@ -148,7 +146,7 @@ Pour modifier votre page :
 
 1. Lorsque l’éditeur s’ouvre, vous pouvez :
 
-   * [Ajouter un nouveau composant à votre page](/help/sites-authoring/editing-content.md#inserting-a-component) par :
+   * [Ajouter un nouveau composant à votre page](/help/sites-authoring/editing-content.md#inserting-a-component) en procédant comme suit :
 
       * ouverture du panneau latéral
       * en sélectionnant l’onglet composants (l’onglet [navigateur de composants](/help/sites-authoring/author-environment-tools.md#components-browser))
@@ -201,7 +199,7 @@ Pour modifier votre page :
 
    >[!NOTE]
    >
-   >Pour naviguer en suivant les liens figurant dans le contenu, vous devez utiliser le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
+   >Pour naviguer à l’aide de liens dans le contenu, vous devez utiliser [Mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Modification des propriétés de page {#editing-the-page-properties}
 
@@ -269,15 +267,15 @@ Ces actions peuvent toutes être déclenchées par :
 
    * Copier :
 
-      * Vous devez ensuite accéder au nouvel emplacement et coller la page.
+      * Accédez au nouvel emplacement et collez-le.
 
    * Déplacer :
 
-      * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions à l’écran.
+      * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions affichées à l’écran.
 
    * Supprimer :
 
-      * Vous serez alors invité à confirmer l’opération.
+      * Vous êtes invité à confirmer l’action.
 
    >[!NOTE]
    >
@@ -288,7 +286,7 @@ Ces actions peuvent toutes être déclenchées par :
 Le [verrouillage d’une page](/help/sites-authoring/editing-content.md#locking-a-page) empêche d’autres auteurs de travailler dessus en même temps que vous. L’icône/le bouton Verrouiller (et Déverrouiller) est accessible :
 
 * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
-* Dans le [menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
+* Le [Menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
 * Dans la barre d’outils de la page lors de la modification d’une page (si la page est verrouillée).
 
 Par exemple, l’icône de verrouillage se présente comme suit :
@@ -297,7 +295,7 @@ Par exemple, l’icône de verrouillage se présente comme suit :
 
 ### Accès aux références de page {#accessing-page-references}
 
-Un [accès rapide aux références](/help/sites-authoring/author-environment-tools.md#references) depuis et vers une page est possible dans le rail de références.
+[Accès rapide aux références](/help/sites-authoring/author-environment-tools.md#references) sur une page ou à partir d’une page sont disponibles dans le rail de références.
 
 1. Sélectionnez les **Références** à l’aide de l’icône de la barre d’outils (avant ou après la [sélection d’une page](#selecting-your-page-for-further-action)) :
 
@@ -331,7 +329,7 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   Si une version de votre page a déjà été enregistrée, elle sera répertoriée dans la chronologie.
+   Si une version de votre page a déjà été enregistrée, elle est répertoriée dans la chronologie.
 
 1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
 

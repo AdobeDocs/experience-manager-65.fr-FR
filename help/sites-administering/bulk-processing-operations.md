@@ -8,10 +8,10 @@ uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
 discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: 4b965d8f7814816126601f6366c1ba313e404538
-workflow-type: ht
-source-wordcount: '377'
-ht-degree: 100%
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 69%
 
 ---
 
@@ -43,42 +43,42 @@ Sélectionnez ensuite l’un des modes ci-dessous :
 
 ### Mode Carte {#card-view}
 
-![](assets/unu.png)
+![Mode Carte affichant les miniatures de différentes ressources d’image.](assets/unu.png)
 
 ### Sélection en bloc en mode Carte {#bulk-selection-in-card-view}
 
 Les ressources ou les pages peuvent être sélectionnées en bloc à l’aide du bouton **Tout sélectionner** en haut à droite :
 
-![](assets/doi.png) ![](assets/trei.png)
+![Bouton Sélectionner tout affiché dans le coin supérieur droit du mode Carte.](assets/doi.png) ![Toutes les images miniatures des ressources d’image en mode Carte s’affichent comme sélectionnées avec des coches.](assets/trei.png)
 
-### Mode Liste {#list-view}
+### Vue Liste {#list-view}
 
-Il en va de même pour le mode Liste :
+Il en va de même pour le mode Liste :
 
-![](assets/patru_modified.png)
+![L’option Tout sélectionner dans le coin supérieur droit du mode Liste est mise en surbrillance.](assets/patru_modified.png)
 
-### Sélection en bloc en mode liste {#bulk-selection-in-list-view}
+### Sélection en bloc dans la vue Liste {#bulk-selection-in-list-view}
 
-En mode Liste, utilisez le bouton **Tout sélectionner** ou utilisez la case à cocher située à gauche pour utiliser la sélection en bloc.
+Dans la vue Liste, utilisez le bouton **Tout sélectionner** ou utilisez la case à cocher située à gauche pour utiliser la sélection en bloc.
 
-![](assets/cinci.png) ![](assets/sase.png)
+![En mode réel, les miniatures des ressources d’image s’affichent dans des lignes horizontales.](assets/cinci.png) ![Zone de liste affichant les miniatures des ressources d’image et une case à cocher située à gauche de Nom.](assets/sase.png)
 
 ### Mode Colonnes {#column-view}
 
-![](assets/sapte.png)
+![Mode Colonnes affichant les images miniatures des ressources d’images affichées en colonnes verticales.](assets/sapte.png)
 
 ### Sélection en bloc en mode Colonnes {#bulk-selection-in-column-view}
 
-![](assets/opt.png)
+![Toutes les images miniatures des ressources d’image en mode Colonnes s’affichent avec des coches.](assets/opt.png)
 
 ## Opérations activées en bloc {#bulk-enabled-operations}
 
-Une fois la sélection effectuée, l’une de ces trois actions activées en bloc peut être effectuée : **Déplacer**, **Copier** ou **Supprimer**.
+Une fois la sélection effectuée, l’une des trois actions activées en bloc peut être effectuée : **Déplacer**, **Copier** ou **Supprimer**.
 
 Ici, l’opération **Déplacer** est effectuée sur les ressources sélectionnées ci-dessus. Dans n’importe quel de ces modes, toutes les ressources sont alors déplacées vers l’emplacement choisi et pas seulement vers celles qui sont chargées à l’écran.
 
-![](assets/noua.png)
+![Déplacez les ressources présentant un dossier sélectionné en mode Colonnes.](assets/noua.png)
 
 Pour les autres opérations qui ne sont pas activées en bloc, comme **Télécharger**, un avertissement s’affiche indiquant que seuls les éléments chargés dans le navigateur seront inclus dans l’opération.
 
-![](assets/zece.png)
+![Affichage des ressources affiche les ressources d’image sélectionnées, ainsi que la boîte de dialogue contextuelle &quot;Action en bloc non prise en charge&quot;.](assets/zece.png)

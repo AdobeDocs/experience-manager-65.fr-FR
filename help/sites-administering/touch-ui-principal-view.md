@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: ddd908ed8287d77d9009633399c1e0bc1a12fe1b
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '760'
-ht-degree: 40%
+source-wordcount: '774'
+ht-degree: 39%
 
 ---
 
@@ -75,7 +75,7 @@ Vous pouvez ajouter des privilèges en effectuant une recherche à partir du cha
 >
 >Pour obtenir la liste complète des privilèges et descriptions, reportez-vous à la section [cette page](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Permission de recherche d’un chemin donné](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Permission de recherche d’un chemin donné.](assets/image2019-3-21_0-5-47.png) ![Ajoutez une nouvelle entrée pour &quot;dam-users&quot; comme illustré par un chemin sélectionné en colonnes verticales.](assets/image2019-3-21_0-6-53.png)
 
 Une fois la liste des privilèges sélectionnée, l’utilisateur peut choisir le Type d’autorisation : Refuser ou autoriser, comme illustré ci-dessous.
 
