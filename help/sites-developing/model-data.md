@@ -1,19 +1,15 @@
 ---
 title: Modélisation des données – Modèle de David Nuescheler
-seo-title: Data Modeling - David Nuescheler's Model
-description: Recommandations de David Nuescheler sur le plan de la modélisation de contenu
-seo-description: David Nuescheler's content modelling recommendations
-uuid: acb27e81-9143-4e0d-a37a-ba26491a841f
+description: Recommandations de modélisation de contenu de David Nuescheler
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1818'
-ht-degree: 100%
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+workflow-type: tm+mt
+source-wordcount: '1795'
+ht-degree: 16%
 
 ---
 
@@ -21,23 +17,23 @@ ht-degree: 100%
 
 ## Source {#source}
 
-Les informations suivantes sont des suggestions et des commentaires formulés par David Nuescheler.
+Les détails suivants sont des idées et des commentaires exprimés par David Nuescheler.
 
-David Nuescheler est l’un des fondateurs de Day Software AG, principal fournisseur de logiciels d’infrastructure de contenu et de gestion de contenu global, racheté par Adobe en 2010. Il occupait également le poste de directeur de la technologie au sein de cette société. Il est aujourd’hui vice-président de la technologie d’entreprise chez Adobe et dirige le développement de l’interface JSR-170, l’API JCR (Java Content Repository), qui est la technologie standard pour la gestion du contenu.
+David a été co-fondateur et responsable technique de Day Software AG, un fournisseur leader de logiciels d’infrastructure de contenu et de gestion de contenu mondial, racheté par Adobe en 2010. Il est désormais membre et vice-président de la technologie d’entreprise à Adobe et dirige également le développement de JSR-170, l’interface de programmation d’application (API) de Java™ Content Repository (JCR), la norme technologique pour la gestion de contenu.
 
 Vous trouverez d’autres informations à l’adresse suivante : [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
-## Introduction de David Nuescheler {#introduction-from-david}
+## Présentation de David {#introduction-from-david}
 
-Au cours de différentes discussions, j’ai pu constater que les développeurs étaient quelque peu mal à l’aise avec les fonctionnalités présentées par JCR sur le plan de la modélisation du contenu. Il n’existe, pour l’heure, aucune indication sur la façon de modéliser du contenu dans un référentiel et très peu d’experts se sont exprimés sur les avantages d’un modèle de contenu par rapport à un autre.
+Au cours de diverses discussions, j’ai constaté que les développeurs sont un peu mal à l’aise avec les fonctionnalités présentées par JCR lors de la modélisation de contenu. Il n’y a pas encore de guide et peu d’expérience sur la façon de modéliser le contenu dans un référentiel et pourquoi un modèle de contenu est meilleur que l’autre.
 
-Bien que, dans le contexte relationnel, la modélisation des données soit largement documentée dans l’industrie du logiciel, nous n’en sommes qu’au tout début dans le domaine du référentiel de contenu.
+Bien que dans le monde relationnel, le secteur du logiciel dispose d’une grande expérience sur la façon de modéliser les données, nous en sommes encore aux premiers stades pour l’espace de référentiel de contenu.
 
-J’aimerais combler cette lacune en exprimant mon opinion personnelle sur la façon de modéliser le contenu, en espérant qu’un jour cela puisse se transformer en quelque chose de plus significatif pour la communauté des développeurs. Je tiens toutefois à ajouter qu’il ne s’agit pas simplement de mon opinion, mais de quelque chose de plus généralement applicable. Veuillez donc considérer cela comme une première tentative de réponse, appelée à évoluer rapidement.
+Je voudrais commencer à combler ce vide en exprimant mes opinions sur la façon dont le contenu devrait être modélisé, en espérant qu&#39;un jour cela pourrait devenir quelque chose de plus significatif pour la communauté des développeurs, qui n&#39;est pas seulement &quot;mon opinion&quot; mais quelque chose de plus largement applicable. Considérez que c&#39;est mon premier coup de poignet qui évolue rapidement.
 
 >[!NOTE]
 >
->Clause de non-responsabilité : ces lignes directrices sont l’expression de mes opinions personnelles, qui sont parfois sujettes à controverse. Je suis impatient d’en discuter et de les affiner.
+>Clause de non-responsabilité : ces lignes directrices sont l’expression de mes opinions personnelles, qui sont parfois sujettes à controverse. Je suis impatient de débattre de ces directives et de les affiner.
 
 ## Sept règles simples {#seven-simple-rules}
 
@@ -45,17 +41,17 @@ J’aimerais combler cette lacune en exprimant mon opinion personnelle sur la fa
 
 #### Explication {#explanation-1}
 
-Je recommande de ne pas s’inquiéter d’une structure de données déclarée, du point de vue de l’ERD. Du moins, au début.
+Je vous recommande de ne pas vous soucier d&#39;une structure de données déclarée au sens de l&#39;ERD. Initialement.
 
-Apprenez à aimer nt:unstructured (et ses amis) au cours du développement.
+Apprenez à aimer nt:unstructured (&amp; amis) dans le développement.
 
-Je pense que Stefano résume cela assez bien.
+Je pense que Stefano résume bien celui-ci.
 
-Je vais vous livrer le fond de ma pensée : la structure est onéreuse et, dans bien des cas, il est parfaitement inutile de déclarer explicitement la structure au stockage sous-jacent.
+Mon bilan : La structure est coûteuse et il est souvent totalement inutile de déclarer explicitement la structure au stockage sous-jacent.
 
-Il existe un contrat implicite au sujet de la structure que votre application utilise par nature. Supposons que je stocke la date de modification d’un article de blog dans une propriété lastModified. Mon application sera, à nouveau, en mesure de lire automatiquement la date de modification à partir de cette même propriété ; il n’est donc vraiment pas nécessaire de la déclarer explicitement.
+Il existe un contrat implicite sur la structure que votre application utilise par nature. Supposons que je stocke la date de modification d’une publication de blog dans une propriété lastModified. Mon application saura automatiquement lire à nouveau la date de modification à partir de cette même propriété. Il n’est vraiment pas nécessaire de la déclarer explicitement.
 
-Des contraintes de données supplémentaires, comme des contraintes de type ou de valeur, ou des contraintes obligatoires, ne doivent être appliquées que si cela s’avère nécessaire à des fins d’intégrité des données.
+D’autres contraintes sur les données, telles que les contraintes obligatoires ou de type et de valeur, ne doivent être appliquées que si nécessaire pour des raisons d’intégrité des données.
 
 #### Exemple {#example-1}
 
@@ -65,23 +61,23 @@ L’exemple d’utilisation de la propriété de date `lastModified` sur un nœu
 
 #### Explication {#explanation-2}
 
-La hiérarchie de contenu est une ressource très précieuse. Ne laissez pas simplement les choses se faire, prenez en main la conception ! Si vous ne disposez pas d’un nom facilement lisible pour un nœud, vous devriez y réfléchir un peu plus. Un nombre arbitraire constitue rarement un « nom acceptable ».
+La hiérarchie de contenu est une ressource précieuse. Ne laissez pas simplement les choses se faire, prenez en main la conception ! Si vous ne disposez pas d’un nom facilement lisible pour un nœud, vous devriez y réfléchir un peu plus. Les nombres arbitraires ne sont pratiquement jamais un &quot;bon nom&quot;.
 
-S’il peut s’avérer extrêmement simple de placer rapidement un modèle relationnel existant dans un modèle hiérarchique, ce processus doit faire l’objet d’une certaine réflexion.
+Bien qu&#39;il soit facile de placer rapidement un modèle relationnel existant dans un modèle hiérarchique, il faut y réfléchir.
 
-D’expérience, je peux dire que le contrôle d’accès et le confinement sont généralement deux éléments favorables pour la hiérarchie du contenu. Pensez-y comme s’il s’agissait de votre système de fichiers. Peut-être même pouvez-vous utiliser des fichiers et des dossiers afin de le modéliser sur votre disque dur local.
+D&#39;après mon expérience, si l&#39;on pense au contrôle d&#39;accès et au confinement, il s&#39;agit généralement de bons pilotes pour la hiérarchie du contenu. Pensez-y comme si c&#39;était votre système de fichiers. Vous pouvez peut-être même utiliser des fichiers et des dossiers pour le modéliser sur votre disque local.
 
-Personnellement, je préfère, dans la majorité des cas, utiliser les conventions de hiérarchie plutôt que le système de définition de type de nœud au début, et introduire le typage par la suite.
+Personnellement, dans de nombreux cas, je préfère les conventions de hiérarchie plutôt que le système de saisie de noeuds, et j&#39;introduis la saisie plus tard.
 
 >[!CAUTION]
 >
->La structure d’un référentiel de contenu peut également se répercuter sur les performances. Pour de meilleures performances, le nombre de nœuds enfants associés à des nœuds individuels dans un référentiel de contenu doit généralement être inférieur à 1 000.
+>La structure d’un référentiel de contenu peut également avoir un impact sur les performances. Pour de meilleures performances, le nombre de noeuds enfants associés à des noeuds individuels dans un référentiel de contenu ne doit pas dépasser 1 000.
 >
 >Pour plus d’informations, reportez-vous à la section [Quelle quantité de données CRX peut-il traiter ?](https://helpx.adobe.com/fr/experience-manager/kb/CrxLimitation.html) pour plus d’informations.
 
 #### Exemple {#example-2}
 
-Je vais modéliser un simple système de blogage comme suit. Vous constaterez qu’au début, je ne me soucie même pas des types de nœud respectifs que j’utilise.
+Je modéliserais un simple système de blogs comme suit. Notez qu’au départ, je ne me soucie même pas des types de noeuds respectifs que j’utilise à ce stade.
 
 ```xml
 /content/myblog
@@ -95,50 +91,50 @@ Je vais modéliser un simple système de blogage comme suit. Vous constaterez qu
 
 Il est évident que nous comprenons tous la structure du contenu sur la base de l’exemple, sans qu’aucune autre explication ne soit nécessaire.
 
-Au début, le fait que je ne stocke pas les « commentaires » avec l’article peut sembler étonnant. Cela est dû au contrôle d’accès que je souhaite appliquer d’une manière hiérarchique raisonnable.
+Ce qui peut être inattendu dans un premier temps, c&#39;est pourquoi je ne stockerais pas les &quot;commentaires&quot; avec le &quot;post&quot;, ce qui est dû au contrôle d&#39;accès que je voudrais appliquer d&#39;une manière raisonnablement hiérarchique.
 
-Grâce au modèle de contenu ci-dessus, je peux facilement autoriser l’utilisateur « anonyme » à « créer » des commentaires, tout en le limitant à un accès en lecture seule sur le reste de l’espace de travail.
+En utilisant le modèle de contenu ci-dessus, je peux facilement permettre à l’utilisateur &quot;anonyme&quot; de &quot;créer&quot; des commentaires, mais de garder l’utilisateur anonyme en lecture seule pour le reste de l’espace de travail.
 
-### Règle n° 3 : Les espaces de travail sont réservés aux méthodes clone(), merge() et update(). {#rule-workspaces-are-for-clone-merge-and-update}
+### Règle #3 : Les espaces de travail sont destinés à clone(), merge() et update(). {#rule-workspaces-are-for-clone-merge-and-update}
 
 #### Explication {#explanation-3}
 
 Si vous n’utilisez pas de méthode `clone()`, `merge()` ou `update()` dans votre application, l’espace de travail unique est probablement la voie à suivre.
 
-La « correspondance des nœuds » est un concept défini dans la spécification JCR. Il s’agit, en fait, de nœuds qui représentent le même contenu dans ce que l’on désigne comme des espaces de travail différents.
+&quot;Noeuds correspondants&quot; est un concept défini dans la spécification JCR. Essentiellement, il se résume à des noeuds qui représentent le même contenu, dans différents soi-disant espaces de travail.
 
-JCR introduit le concept très abstrait d’espace de travail dont bon nombre de développeurs ne comprennent pas très bien la finalité. J’aimerais que vous teniez compte de ce qui suit pour tester votre utilisation des espaces de travail.
+JCR introduit le concept abstrait des espaces de travail, ce qui laisse de nombreux développeurs dans l’incertitude sur la manière de les utiliser. Je vous propose de mettre à l’épreuve votre utilisation des espaces de travail comme suit.
 
-Si vous constatez un chevauchement important des nœuds « correspondants » (essentiellement des nœuds portant le même UUID) dans plusieurs espaces de travail, il est probable que vous en fassiez un bon usage.
+Si vous avez un chevauchement considérable des noeuds &quot;correspondants&quot; (essentiellement les noeuds ayant le même UUID) dans plusieurs espaces de travail, vous pouvez probablement utiliser les espaces de travail à bon escient.
 
-En l’absence de chevauchement des nœuds portant le même UUID, il est probable que vous utilisiez les espaces de travail à mauvais escient.
+S’il n’existe aucun chevauchement de noeuds avec le même UUID, vous abusez probablement des espaces de travail.
 
-Les espaces de travail ne doivent pas être utilisés pour le contrôle d’accès. La visibilité du contenu pour un groupe d’utilisateurs donné ne constitue pas un argument valable pour séparer les éléments dans des espaces de travail différents. À cette fin, JCR propose un « contrôle d’accès » dans le référentiel de contenu.
+N’utilisez pas d’espaces de travail pour le contrôle d’accès. La visibilité du contenu pour un groupe d’utilisateurs spécifique n’est pas un bon argument pour séparer les éléments dans différents espaces de travail. JCR propose un &quot;contrôle d’accès&quot; dans le référentiel de contenu pour y répondre.
 
-Les espaces de travail constituent une frontière pour les références et les requêtes.
+Les espaces de travail sont la limite des références et des requêtes.
 
 #### Exemple {#example-3}
 
-Utilisez des espaces de travail pour les éléments suivants :
+Utilisez des espaces de travail pour des éléments tels que :
 
-* v1.2 de votre projet par rapport à une v1.3 de votre projet
-* Un état « publié », « développement » ou « QA » du contenu
+* v1.2 de votre projet par rapport à la version v1.3 de votre projet
+* un &quot;développement&quot;, un &quot;contrôle qualité&quot; et un état de contenu &quot;publié&quot; ;
 
-N’utilisez pas d’espaces de travail pour les éléments suivants :
+N’utilisez pas d’espaces de travail pour des éléments tels que :
 
-* Répertoires personnels de l’utilisateur
-* Contenu distinct pour différentes audiences cibles, telles que public, privé, local, etc.
-* Boîtes de réception pour différents utilisateurs
+* répertoires d’accueil des utilisateurs
+* contenu distinct pour différentes audiences cibles, telles que public, privé, local, etc.
+* boîtes de réception pour différents utilisateurs
 
-### Règle n° 4 : Méfiez-vous des SNS (Same Name Siblings) {#rule-beware-of-same-name-siblings}
+### Règle #4 : Attention aux frères du même nom. {#rule-beware-of-same-name-siblings}
 
 #### Explication {#explanation-4}
 
-Bien que les SNS (Same Name Siblings) aient été introduits dans la spécification pour permettre la compatibilité avec des structures de données conçues pour et exprimées par le biais de XML, ce qui les rend particulièrement utiles pour JCR, ils entraînent une augmentation sensible de la surcharge et de la complexité pour le répertoire.
+Bien que Same Name Siblings (SNS) ait été introduit dans la spécification pour permettre la compatibilité avec des structures de données conçues et exprimées au moyen de XML et qui sont donc utiles pour JCR, SNS s’accompagne d’une surcharge et d’une complexité importantes pour le référentiel.
 
-Tout chemin d’accès d’un répertoire de contenu dont l’un des segments contient un SNS devient beaucoup moins stable, si ce SNS est supprimé ou réorganisé, ce qui aura une incidence sur les chemins de tous les autres SNS et leurs enfants.
+Tout chemin d’accès dans le référentiel de contenu qui contient un SNS dans l’un de ses segments de chemin devient beaucoup moins stable. Si un SNS est supprimé ou réorganisé, il a un impact sur les chemins de tous les autres SNS et de leurs enfants.
 
-Dans le cas d’une importation de code XML ou d’une interaction avec un code XML existant, un SNS peut s’avérer nécessaire et utile. Cependant, je n’en ai jamais utilisé dans mes nouveaux modèles de données, et je ne compte pas le faire.
+Pour l&#39;import de code XML ou l&#39;interaction avec des codes SNS XML existants peut-être nécessaire et utile, mais je n&#39;ai jamais utilisé de code SNS, et je ne le ferai jamais dans mes modèles de données &quot;champ vert&quot;.
 
 #### Exemple {#example-4}
 
@@ -149,52 +145,52 @@ Utilisez
 /content/myblog/posts/iphone_shipping
 ```
 
-au lieu de
+Au lieu de
 
 ```xml
 /content/blog[1]/post[1]
 /content/blog[1]/post[2]
 ```
 
-### Règle n° 5 : Les références sont considérées comme dangereuses. {#rule-references-considered-harmful}
+### Règle #5 : Les références sont considérées comme nocives. {#rule-references-considered-harmful}
 
 #### Explication {#explanation-5}
 
-Les références supposent une intégrité référentielle. Je trouve qu’il est important de comprendre que les références n’entraînent pas seulement une augmentation des coûts pour le référentiel qui gère l’intégrité référentielle. Elles s’avèrent également coûteuses sur le plan de la flexibilité du contenu.
+Les références impliquent une intégrité référentielle. Je trouve important de comprendre que les références ajoutent des coûts supplémentaires pour le référentiel qui gère l’intégrité référentielle, mais qu’elles sont également coûteuses du point de vue de la flexibilité du contenu.
 
-Personnellement, je veille à n’utiliser des références que lorsqu’il m’est véritablement impossible de traiter une « référence pendouillante » (dangling reference) et d’utiliser un chemin d’accès, un nom ou un UUID de chaîne pour faire référence à un autre nœud.
+Personnellement, je m’assure que je n’utilise jamais de références que lorsque je ne peux vraiment pas gérer une référence agrafante et utiliser autrement un chemin, un nom ou un UUID de chaîne pour faire référence à un autre noeud.
 
 #### Exemple {#example-5}
 
-Supposons que j’autorise des « références» d’un document (a) vers un autre document (b). Si je modélise cette relation à l’aide de propriétés de référence, cela signifie que les deux documents sont liés au niveau du référentiel. Je ne peux pas exporter/importer le document (a) isolément, étant donné que la cible de la propriété de référence n’existe peut-être pas. D’autres opérations, telles qu’une fusion, une mise à jour, une restauration ou un clonage, sont également affectées.
+Supposons que j’autorise les &quot;références&quot; d’un document (a) à un autre document (b). Si je modélise cette relation à l’aide de propriétés de référence, cela signifie que les deux documents sont liés au niveau du référentiel. Je ne peux pas exporter/importer le document (a) individuellement, car la cible de la propriété de référence n’existe peut-être pas. D’autres opérations telles que la fusion, la mise à jour, la restauration ou le clonage sont également affectées.
 
-Par conséquent, je vais soit modéliser ces références sous la forme de « références faibles » (dans JCR v1.0, cela se résume principalement à des propriétés de chaîne contenant l’UUID du nœud cible), soit utiliser simplement un chemin d’accès. Parfois, il est préférable de commencer par le chemin d’accès.
+Je vais donc soit modéliser ces références comme &quot;références faibles&quot; (dans JCR v1.0, cela se résume essentiellement aux propriétés de chaîne qui contiennent l’uuid du noeud cible), soit utiliser simplement un chemin d’accès. Parfois, le chemin est plus significatif pour commencer.
 
-Je pense qu’il est des situations dans lesquelles il est impossible qu’un système fonctionne si une référence est « pendouillante ». Cependant, il ne me vient, en ce moment, aucun exemple simple qui pourrait illustrer ce type de situation.
+Je pense qu&#39;il y a des cas d&#39;utilisation où un système ne peut vraiment pas fonctionner si une référence est pendouillante, mais je ne peux simplement pas trouver un bon exemple &quot;réel&quot; mais simple de mon expérience directe.
 
 ### Règle n°6 : des fichiers sont des fichiers. {#rule-files-are-files}
 
 #### Explication {#explanation-6}
 
-Si un modèle de contenu expose quelque chose qui, même de loin, *ressemble* à un fichier ou un dossier, j’essaie d’utiliser (ou de développer à partir de) `nt:file`, `nt:folder` et `nt:resource`.
+Si un modèle de contenu expose quelque chose qui ressemble même de loin à un fichier ou à un dossier, j’essaie d’utiliser (ou d’étendre à partir de) `nt:file`, `nt:folder`, et `nt:resource`.
 
-Avec l’expérience, j’ai constaté que de nombreuses applications génériques autorisaient implicitement une interaction avec nt:folder et nt:files, et savaient comment traiter et afficher ces événements s’ils étaient enrichis de méta-informations supplémentaires. Par exemple, une interaction directe avec des implémentations de serveurs de fichiers, comme CIFS ou WebDAV au-dessus de JCR, deviennent implicites.
+D’après mon expérience, de nombreuses applications génériques permettent d’interagir implicitement avec nt:folder et nt:files et savent gérer et afficher ces événements s’ils sont enrichis de méta-informations supplémentaires. Par exemple, une interaction directe avec des implémentations de serveur de fichiers comme CIFS ou WebDAV assis sur JCR devient implicite.
 
-Je pense qu’il est judicieux d’appliquer la méthode suivante : si vous devez stocker le nom de fichier et le type MIME, `nt:resource`/`nt:file` convient parfaitement. Si vous pouvez avoir plusieurs « fichiers », nt:folder constitue l’emplacement de stockage idéal.
+Je pense qu&#39;en règle générale, on pourrait utiliser ce qui suit : Si vous devez stocker le nom de fichier et le type MIME, `nt:file`/ `nt:resource` est une bonne correspondance. Si vous pouvez avoir plusieurs « fichiers », nt:folder constitue l’emplacement de stockage idéal.
 
-Si vous devez ajouter des méta-informations pour votre ressource (une propriété « description » ou « auteur », par exemple), étendez `nt:resource` et non `nt:file`. J’étends rarement un nt:file, mais souvent un `nt:resource`.
+Si vous devez ajouter des méta-informations pour votre ressource, supposons qu’il s’agisse d’une propriété &quot;author&quot; ou &quot;description&quot;, étendez `nt:resource` not the `nt:file`. J’étends rarement un nt:file, mais souvent un `nt:resource`.
 
 #### Exemple {#example-6}
 
-Supposons qu’un utilisateur souhaite télécharger une image dans une entrée de blog à l’adresse :
+Supposons que quelqu’un souhaite télécharger une image dans une entrée de blog à l’adresse :
 
 ```xml
 /content/myblog/posts/iphone_shipping
 ```
 
-Peut-être la réaction instinctive initiale sera-t-elle d’ajouter une propriété binaire contenant l’image.
+Et peut-être que la première réaction intestinale serait d&#39;ajouter une propriété binaire contenant l&#39;image.
 
-Bien qu’il existe certainement des scénarios dans lesquels l’utilisation d’une simple propriété binaire se justifie (par exemple, lorsque le nom n’est pas pertinent et que le type MIME est implicite), je recommanderais la structure suivante pour mon exemple de blog.
+Bien qu’il existe certainement de bons cas d’utilisation pour utiliser uniquement une propriété binaire (supposons que le nom n’est pas pertinent et que le type MIME soit implicite), je recommande dans ce cas la structure suivante pour mon exemple de blog.
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments [nt:folder]
@@ -202,21 +198,21 @@ Bien qu’il existe certainement des scénarios dans lesquels l’utilisation d�
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### Règle n° 7 : Les ID, c’est le mal ! {#rule-ids-are-evil}
+### Règle #7 : Les identifiants sont mauvais. {#rule-ids-are-evil}
 
 #### Explication {#explanation-7}
 
-Dans les bases de données relationnelles, les ID sont nécessaires pour exprimer des relations. Les utilisateurs ont donc tendance à les employer également dans des modèles de contenu, mais principalement pour de mauvaises raisons. 
+Dans les bases de données relationnelles, les identifiants sont un moyen nécessaire pour exprimer les relations. Les gens ont donc tendance à les utiliser également dans les modèles de contenu. Surtout pour les mauvaises raisons.
 
-Si votre modèle de contenu regorge de propriétés qui se terminent par « Id », il est probable que vous n’utilisiez pas correctement la hiérarchie.
+Si votre modèle de contenu est plein de propriétés qui se terminent par &quot;Id&quot;, vous n’utilisez probablement pas correctement la hiérarchie.
 
-Il est vrai que certains nœuds ont besoin d’une identification stable tout au long de leur cycle de vie. Cependant, ils sont bien moins nombreux que vous ne le pensez. mix:referenceable fournit un tel mécanisme intégré dans le référentiel. Il n’est donc pas nécessaire d’ajouter une autre méthode pour identifier un nœud de manière stable.
+Il est vrai que certains noeuds ont besoin d’une identification stable tout au long de leur cycle de vie. Beaucoup moins que ce que vous pourriez penser. mix:referenceable fournit un tel mécanisme intégré dans le référentiel, il n’est donc pas nécessaire de trouver un moyen supplémentaire d’identifier un noeud de manière stable.
 
-Gardez également à l’esprit que les éléments peuvent être identifiés par un chemin d’accès et, autant il est judicieux d’utiliser des « liens symboliques » plutôt que des liens matériels dans un système de fichiers UNIX, autant l’utilisation d’un chemin d’accès semble logique dans la plupart des applications pour faire référence à un nœud cible.
+Gardez également à l’esprit que les éléments peuvent être identifiés par le chemin d’accès. Et, même si les &quot;symlinks&quot; ont plus de sens pour la plupart des utilisateurs que les liens durs dans un système de fichiers UNIX®, un chemin d’accès a un sens pour la plupart des applications pour faire référence à un noeud cible.
 
-Plus important encore : **mix**:referenceable signifie qu’il peut être appliqué à un nœud au moment où il est vraiment nécessaire de le référencer.
+Plus important encore, il s’agit de **mix**:référenceable, ce qui signifie qu’il peut être appliqué à un noeud au moment où vous devez le référencer.
 
-Dès lors, ce n’est pas parce que vous aimeriez être en mesure de référencer un nœud de type « Document » que votre type de nœud « Document » doit s’étendre de manière statique depuis mix:referenceable, car il peut être ajouté de façon dynamique à n’importe quelle instance du « Document ».
+Supposons donc que ce n’est pas parce que vous souhaitez pouvoir potentiellement référencer un noeud de type &quot;Document&quot; que votre type de noeud &quot;Document&quot; doit s’étendre de mix:referenceable de manière statique, car il peut être ajouté dynamiquement à n’importe quelle instance du &quot;Document&quot;.
 
 #### Exemple {#example-7}
 
@@ -226,7 +222,7 @@ Utilisez :
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
 ```
 
-au lieu de :
+Au lieu de :
 
 ```xml
 [Blog]

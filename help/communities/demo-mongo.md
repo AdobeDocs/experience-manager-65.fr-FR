@@ -1,9 +1,6 @@
 ---
 title: Configuration de MongoDB pour la démonstration
-seo-title: How to Setup MongoDB for Demo
 description: Comment configurer MSRP pour une instance d’auteur et une instance de publication
-seo-description: How to setup MSRP for one author instance and one publish instance
-uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,20 +8,20 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '767'
 ht-degree: 1%
 
 ---
 
 # Configuration de MongoDB pour la démonstration {#how-to-setup-mongodb-for-demo}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Ce tutoriel décrit la configuration [MSRP](msrp.md) pour *un auteur* instance et *publication unique* instance.
 
-Avec cette configuration, le contenu de la communauté est accessible à partir des environnements de création et de publication sans avoir à transférer ou à répliquer à l’envers le contenu généré par l’utilisateur.
+Grâce à cette configuration, le contenu de la communauté est accessible à partir des environnements de création et de publication sans avoir à transférer ou à répliquer de manière inverse le contenu généré par l’utilisateur.
 
 Ce paramétrage est adapté aux *hors production* des environnements tels que pour le développement et/ou la démonstration.
 
@@ -38,17 +35,17 @@ Ce paramétrage est adapté aux *hors production* des environnements tels que po
 
 ### Installation de MongoDB {#install-mongodb}
 
-* Télécharger MongoDB depuis [https://www.mongodb.org/](https://www.mongodb.org/)
+* Télécharger MongoDB depuis [https://www.mongodb.com/](https://www.mongodb.com/)
 
    * Choix du système d’exploitation :
 
-      * Linux
+      * Linux®
       * Mac 10.8
-      * Windows 7
+      * Windows 7
+
    * Choix de la version :
 
       * Utilisez au minimum la version 2.6.
-
 
 * Configuration de base
 
@@ -56,9 +53,9 @@ Ce paramétrage est adapté aux *hors production* des environnements tels que po
    * Configuration pour mongod :
 
       * Il n’est pas nécessaire de configurer les mongos ou le partage.
-   * Le dossier MongoDB installé est appelé &lt;mongo-install>.
-   * Le chemin d’accès au répertoire de données défini sera appelé &lt;mongo-dbpath>.
 
+   * Le dossier MongoDB installé est appelé &lt;mongo-install>.
+   * Le chemin d’accès au répertoire de données défini est appelé &lt;mongo-dbpath>.
 
 * MongoDB peut s’exécuter sur le même hôte qu’AEM ou à distance.
 
@@ -66,7 +63,7 @@ Ce paramétrage est adapté aux *hors production* des environnements tels que po
 
 * &lt;mongo-install>/bin/mongod —dbpath &lt;mongo-dbpath>
 
-Cela démarrera un serveur MongoDB à l’aide du port par défaut 27017.
+Cela démarre un serveur MongoDB à l’aide du port par défaut 27017.
 
 * Pour Mac, augmentez ulimit avec l’arg de début &#39;ulimit -n 2048&#39;.
 
@@ -100,7 +97,7 @@ Les commandes suivantes constituent un exemple de configuration d’un ensemble 
 
    * Adapté à tous les systèmes d’exploitation.
    * Solr version 7.0.
-   * Solr requiert Java 1.7 ou version ultérieure.
+   * Solr requiert Java™ 1.7 ou version ultérieure.
 
 * Configuration de base
 
@@ -122,20 +119,21 @@ La méthode d’exécution de Solr peut varier en fonction de la version et du m
 Pour plus de simplicité, à l’aide de la version 4.10, démarrez Solr en mode autonome :
 
 * cd à &lt;solrinstall>/example
-* java -jar start.jar
+* Java™ -jar start.jar
 
-Cela lancera un serveur HTTP Solr en utilisant le port par défaut 8983. Vous pouvez accéder à la console Solr pour obtenir une console Solr à des fins de test.
+Ce processus démarre un serveur HTTP Solr à l’aide du port par défaut 8983. Vous pouvez accéder à la console Solr pour obtenir une console Solr à des fins de test.
 
 * console Solr par défaut : [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
->Si la console Solr n’est pas disponible, vérifiez les journaux sous &lt;solrinstall>/exemple/logs. Vérifiez si SOLR tente de se lier à un nom d’hôte spécifique qui ne peut pas être résolu (par exemple : &quot;user-macbook-pro&quot;).
-Si tel est le cas, mettez à jour le fichier etc/hosts avec une nouvelle entrée pour ce nom d’hôte (par exemple, 127.0.0.1 user-macbook-pro) et Solr démarrera correctement.
+>Si la console Solr n’est pas disponible, vérifiez les journaux sous &lt;solrinstall>/exemple/logs. Vérifiez si SOLR tente de se lier à un nom d’hôte spécifique qui ne peut pas être résolu (par exemple, &quot;user-macbook-pro&quot;).
+>
+Si tel est le cas, mettre à jour `etc/hosts` avec une nouvelle entrée pour ce nom d’hôte (par exemple, 127.0.0.1 user-macbook-pro) afin d’afficher correctement Solr.
 
 ### SolrCloud {#solrcloud}
 
-Pour exécuter une configuration solrCloud de base (et non de production), commencez solder par :
+Pour exécuter une configuration solrCloud de base (et non de production), commencez solr par :
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
@@ -147,7 +145,7 @@ Si AEM était en cours d’exécution avant le démarrage de MongoDB, les instan
 
 Suivez les instructions de la page de documentation principale : [MSRP - Magasin commun MongoDB](msrp.md)
 
-## Test {#test}
+## Tester {#test}
 
 Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l’instance de publication et affichez-le sur l’instance d’auteur, ainsi que le contenu créé par l’utilisateur dans MongoDB et Solr :
 
@@ -161,7 +159,7 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
    ![view-comment](assets/view-comment.png)
 
-   Remarque : Bien qu’il existe des noeuds JCR sous *asipath* sur l’auteur, ils sont destinés à la structure SCF. Le contenu généré par l’utilisateur réel n’est pas dans JCR, mais dans MongoDB.
+   Remarque : Bien qu’il existe des noeuds JCR sous *asipath* sur l’auteur, ces noeuds sont destinés à la structure SCF. Le contenu généré par l’utilisateur réel n’est pas dans JCR, mais dans MongoDB.
 
 1. Afficher le contenu généré par l’utilisateur dans mongodb **[!UICONTROL Communautés]** > **[!UICONTROL Collections]** > **[!UICONTROL Contenu]**
 
@@ -182,11 +180,11 @@ Pour tester et vérifier le magasin commun MongoDB, publiez un commentaire sur l
 
 1. Assurez-vous que MongoDB est installé et exécuté correctement.
 
-1. Vérifiez que MSRP a été configuré comme fournisseur par défaut :
+1. Assurez-vous que MSRP a été configuré comme fournisseur par défaut :
 
-   * Sur toutes les instances d’AEM de création et de publication, consultez à nouveau la [Console de configuration de stockage](srp-config.md) ou vérifiez le référentiel AEM :
+   * Sur toutes les instances d’AEM de création et de publication, consultez à nouveau la [Console de configuration de stockage](srp-config.md)ou vérifiez le référentiel AEM :
 
    * Dans JCR, si [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) ne contient pas d’objet [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) , cela signifie que le fournisseur de stockage est JSRP.
    * Si le noeud srpc existe et contient le noeud [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), les propriétés de la configuration par défaut doivent définir MSRP comme fournisseur par défaut.
 
-1. Assurez-vous que AEM a été redémarré une fois que MSRP a été sélectionné.
+1. Assurez-vous que l’AEM a été redémarré une fois que MSRP a été sélectionné.

@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|
-|  | **[Aide-mémoire SCF ⇒](handlebars-helpers.md)** |
+|   | **[Aide-mémoire SCF ⇒](handlebars-helpers.md)** |
 
 Plusieurs méthodes permettent de personnaliser l’aspect et/ou le comportement d’un composant AEM Communities côté client.
 
@@ -63,9 +63,9 @@ Pour lier un composant, l’intégralité du script du composant doit être incl
 
 * `data-component-id`=&quot;{{id}}&quot;
 
-   résout la propriété id du contexte.
+  résout la propriété id du contexte.
 
-* `data-scf-component`=&quot;*&lt;resourceType>*
+* `data-scf-component`=&quot;*&lt;resourcetype>*
 
 Par exemple, de `/apps/weretail/components/hbs/rating/rating.hbs`:
 
@@ -87,13 +87,13 @@ Toutes les propriétés définies sur un composant/une ressource sont accessible
 
 ## Esquisse de CSS {#skinning-css}
 
-Il est possible de personnaliser les composants pour qu’ils correspondent au thème global du site web en &quot;peignant&quot; : en changeant dans une certaine mesure les couleurs, polices, images, boutons, liens, espacements et même le positionnement.
+Il est possible de personnaliser les composants pour qu’ils correspondent au thème global du site web en les &quot;peignant&quot; : en modifiant dans une certaine mesure les couleurs, les polices, les images, les boutons, les liens, l’espacement et même le positionnement.
 
-L’habillage peut être réalisé en remplaçant sélectivement les styles de structure ou en écrivant des feuilles de style entièrement nouvelles. Les composants SCF définissent des classes CSS sémantiques sémantiques, modulaires et à espaces de noms qui affectent les différents éléments qui constituent un composant.
+L’habillage peut être réalisé en remplaçant sélectivement les styles de structure ou en écrivant des feuilles de style entièrement nouvelles. Les composants SCF définissent des classes CSS sémantiques, modulaires et avec espace de noms qui affectent les différents éléments qui constituent un composant.
 
 Pour appliquer l’habillage d’un composant :
 
-1. Identifiez les éléments que vous souhaitez modifier (par exemple, la zone de compositeur, les boutons de la barre d’outils, la police du message, etc.).
+1. Identifiez les éléments à modifier (par exemple, la zone de compositeur, les boutons de la barre d’outils, la police du message, etc.).
 1. Identifiez la classe/les règles CSS qui affectent ces éléments.
 1. Créez un fichier de feuille de style (.css).
 1. Inclure la feuille de style dans un dossier de bibliothèque cliente ([clientlibs](#clientlibs-for-scf)) pour votre site et assurez-vous qu’il est inclus dans vos modèles et pages avec [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
@@ -106,7 +106,7 @@ Les styles personnalisés remplacent désormais les styles de structure par déf
 >
 >Tout nom de classe CSS précédé du préfixe `scf-js` a une utilisation spécifique dans le code JavaScript. Ces classes affectent l’état d’un composant (par exemple, basculez de masqué à visible) et ne doivent pas être remplacées ni supprimées.
 >
->Lorsque la variable `scf-js` Les classes n’affectent pas les styles, les noms de classe peuvent être utilisés dans les feuilles de style avec l’avertissement que, lorsqu’elles contrôlent l’état des éléments, il peut y avoir des effets secondaires.
+>Lorsque la variable `scf-js` Les classes n’affectent pas les styles, les noms de classe peuvent être utilisés dans les feuilles de style avec l’avertissement que, lorsqu’elles contrôlent les états des éléments, il peut y avoir des effets secondaires.
 
 ## Extension de JavaScript {#extending-javascript}
 
@@ -151,7 +151,7 @@ Les balises de script dans les scripts SCF ne doivent pas être supprimées lors
 
 ## Clientlibs pour SCF {#clientlibs-for-scf}
 
-L’utilisation de [bibliothèques côté client](../../help/sites-developing/clientlibs.md) (clientlibs) fournit un moyen d’organiser et d’optimiser le code JavaScript et le code CSS utilisés pour le rendu du contenu sur le client.
+L’utilisation de [bibliothèques côté client](../../help/sites-developing/clientlibs.md) (clientlibs) permet d’organiser et d’optimiser le code JavaScript et CSS utilisé pour le rendu du contenu sur le client.
 
 Les clientlibs pour SCF suivent un modèle de dénomination très spécifique pour deux variantes, qui varie uniquement en fonction de la présence de &quot;author&quot; dans le nom de la catégorie :
 
@@ -200,10 +200,10 @@ Les clientlibs d’auteur requises peuvent être identifiées en insérant &quot
 
 Chaque site est différent dans la manière dont il gère les bibliothèques clientes. Plusieurs facteurs sont les suivants :
 
-* Vitesse globale : Peut-être que le site souhaite être réactif, mais il est acceptable que la première page soit un peu lente à se charger. Si la plupart des pages utilisent le même code JavaScript, les différents scripts JavaScript peuvent être incorporés dans une bibliothèque cliente et référencés à partir de la première page à charger. Le code JavaScript de ce téléchargement unique reste mis en cache, ce qui réduit la quantité de données à télécharger pour les pages suivantes.
+* Vitesse globale : Peut-être que le site souhaite être réactif, mais il est acceptable que la première page soit un peu lente à se charger. Si la plupart des pages utilisent le même code JavaScript, les différents codes JavaScript peuvent être incorporés dans une bibliothèque cliente et référencés à partir de la première page à charger. Le code JavaScript de ce téléchargement unique reste mis en cache, ce qui réduit la quantité de données à télécharger pour les pages suivantes.
 * Temps court jusqu’à la première page : Peut-être que le désir est que la première page se charge rapidement. Dans ce cas, le code JavaScript se trouve dans plusieurs petits fichiers à référencer uniquement lorsque cela s’avère nécessaire.
 * Équilibre entre le premier chargement de page et les téléchargements ultérieurs.
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|
-|  | **[Aide-mémoire SCF ⇒](handlebars-helpers.md)** |
+|   | **[Aide-mémoire SCF ⇒](handlebars-helpers.md)** |
