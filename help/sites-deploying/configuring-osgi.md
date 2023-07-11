@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: ht
-source-wordcount: '1949'
-ht-degree: 100%
+source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
+workflow-type: tm+mt
+source-wordcount: '1973'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ L’une ou l’autre des méthodes peut être utilisée bien qu’il existe des 
 
    * La console web est l’interface standard pour la configuration d’OSGi. Elle fournit une interface utilisateur permettant la modification des différentes propriétés, dans laquelle les valeurs possibles peuvent être sélectionnées à partir de listes prédéfinies.
 
-      De ce fait, il s’agit de la méthode la plus simple à utiliser.
+     De ce fait, il s’agit de la méthode la plus simple à utiliser.
 
    * Toutes les configurations effectuées avec la console Web sont appliquées immédiatement et s’appliquent à l’instance en cours, quel que soit le mode d’exécution en cours ou toute modification ultérieure du mode d’exécution.
 
@@ -86,11 +86,12 @@ Pour mettre à jour une configuration avec la console web :
 
    * Ouvrant la console web à partir du lien du menu **Outil -> Opérations**. Après votre connexion à la console, vous pouvez utiliser le menu déroulant :
 
-      **OSGi >**
+     **OSGi >**
 
    * L’URL directe ; par exemple :
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`
+
    Une liste s’affiche.
 
 1. Sélectionnez le lot que vous souhaitez configurer en :
@@ -124,7 +125,9 @@ Ces fichiers peuvent être inclus dans des packages de contenu et réutilisés d
 
 >[!NOTE]
 >
->Le format des fichiers de configuration est très spécifique. Pour plus d’informations, consultez la [documentation de Sling Apache](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Le format des fichiers de configuration est spécifique. Reportez-vous à la documentation Apache Sling pour :
+>* détails complets de [le modèle d’approvisionnement Apache Sling et Apache SlingStart ;](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* tutoriels et exemples [Obtention de ressources et de propriétés dans Sling](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >Pour cette raison, il est recommandé de créer et de gérer le fichier de configuration en apportant des modifications réelles dans la console web.
 
@@ -230,7 +233,8 @@ Pour ajouter réellement la nouvelle configuration au référentiel :
    * Type : `sling:OsgiConfig`
    * Nom : l’identité persistante (PID) ;
 
-      par exemple, pour le Gestionnaire de versions de gestion de contenu Web d’AEM, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`.
+     par exemple, pour le Gestionnaire de versions de gestion de contenu Web d’AEM, utilisez `com.day.cq.wcm.core.impl.VersionManagerImpl`.
+
    >[!NOTE]
    >
    >Lors de la configuration d’usine, ajoutez `-<identifier>` au nom.
@@ -309,15 +313,15 @@ La liste suivante présente une petite sélection des configurations disponibles
 
 * Auteur - Filtre de gestion de contenu Web d’AEM :
 
-   `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
 * Publication - Filtre de gestion de contenu Web d’AEM :
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
 * Publication - Statistiques de page de gestion de contenu Web d’AEM :
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
 >[!NOTE]
 >
@@ -331,25 +335,25 @@ Pour répertorier tous les nœuds de configuration de votre instance, utilisez l
 
 * Si vous modifiez une configuration par l’intermédiaire de la console Web, elle est (généralement) enregistrée dans le référentiel :
 
-   `/apps/{somewhere}`
+  `/apps/{somewhere}`
 
    * Par défaut, `{somewhere}` est `system/config`, la configuration est donc enregistrée sur
 
-      `/apps/system/config`
+     `/apps/system/config`
 
    * Cependant, si vous modifiez une configuration qui provient initialement d’un autre emplacement du référentiel : par exemple :
 
-      /libs/foo/config/someconfig
+     /libs/foo/config/someconfig
 
-      La configuration mise à jour est ensuite enregistrée à l’emplacement d’origine ; par exemple :
+     La configuration mise à jour est ensuite enregistrée à l’emplacement d’origine ; par exemple :
 
-      `/apps/foo/config/someconfig`
+     `/apps/foo/config/someconfig`
 
 * Les paramètres modifiés par `admin` sont enregistrés dans les fichiers `*.config` sous :
 
-   ```
-      /crx-quickstart/launchpad/config
-   ```
+  ```
+     /crx-quickstart/launchpad/config
+  ```
 
    * Cette zone correspond aux données privée de l’administration de la configuration OSGi et contient tous les détails de la configuration spécifiés par `admin`, quel que soit leur mode d’entrée dans le système.
    * Cette zone est un détail d’implémentation et vous ne devez jamais modifier directement ce répertoire.
@@ -357,11 +361,11 @@ Pour répertorier tous les nœuds de configuration de votre instance, utilisez l
 
       * Console de gestion OSGi Apache Felix
 
-         `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
       * Référentiel client CRX Sling
 
-         `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >
