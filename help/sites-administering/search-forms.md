@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 90%
 
 ---
@@ -397,7 +397,7 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 ### Création et ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
 
-1. Accédez à **Outils**, **Général**, **Formulaires de recherche**.
+1. Accédez à **Outils** &quot;  **Général** &quot; **Rechercher dans Forms**.
 
 1. Sélectionnez la configuration que vous souhaitez personnaliser.
 1. Utilisez la variable **Modifier** pour ouvrir la configuration à mettre à jour.
@@ -440,7 +440,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 1. Sélectionnez l’icône Aperçu :
 
-   ![Icône Aperçu](do-not-localize/chlimage_1-31.png)
+   ![Aperçu des formulaires de recherche](do-not-localize/chlimage_1-31.png)
 
 1. Les formulaires de recherche s’affichent tels qu’ils apparaissent (totalement développés) dans la colonne Rechercher de la console appropriée.
 

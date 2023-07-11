@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
-workflow-type: ht
-source-wordcount: '638'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 76%
 
 ---
 
@@ -43,6 +43,7 @@ Vous pouvez appuyer sur l’icône **Configurer** ![configurer](assets/configure
 >[!NOTE]
 >
 >Les signatures sont toujours enregistrées au format PNG.
+>
 
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -54,34 +55,36 @@ Vous pouvez appuyer sur l’icône **Configurer** ![configurer](assets/configure
    >[!NOTE]
    >
    >Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature.
+   >
 
-1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![](/help/forms/using/assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et décochez l’option **Activer Adobe Sign**. Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications.
+1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![configure](/help/forms/using/assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign** . Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications.
 
    >[!NOTE]
    >
    >Lorsque vous ajoutez un composant Étape de signature à un formulaire adaptatif, l’option Activer Adobe Sign est sélectionnée automatiquement.
+   >
 
-1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
+1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Il ouvre l’explorateur de propriétés et affiche les propriétés de l’étape Signature. Configurez les propriétés suivantes :
 
    * **Nom de l’élément** : spécifiez le nom du composant.
 
-   * **Titre :** indiquez le titre unique du composant.
-   * **Message du modèle :** indiquez le message à afficher lorsque la signature PDF est chargée. Les services Adobe Sign mettent un certain temps à préparer et charger la signature PDF.
+   * **Titre :** Spécifiez le titre unique du composant.
+   * **Message du modèle :** Spécifiez le message à afficher pendant le chargement du PDF de signatures. Les services Adobe Sign prennent du temps pour préparer et charger le PDF de signatures.
    * **Service de signature :** sélectionnez l’option **Signature tactile**.
 
    * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Il est recommandé d’utiliser des [thèmes](../../forms/using/themes.md) et des [styles en ligne](../../forms/using/inline-style-adaptive-forms.md) au lieu de la classe CSS.
 
    Appuyez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer les modifications. La signature est configurée correctement.
 
-   Désormais, lorsque vous remplissez un formulaire, une version PDF du formulaire adaptatif est affichée et les options pour signer le document PDF sont fournies. Pour plus d’informations, voir [Signature d’un formulaire adaptatif en utilisant la signature tactile](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
+   Désormais, lorsque vous remplissez un formulaire, une version PDF du formulaire adaptatif s’affiche et des options pour signer le document du PDF sont fournies. Pour plus d’informations, voir [Signature d’un formulaire adaptatif en utilisant la signature tactile](../../forms/using/signing-forms-using-scribble.md#sign-an-adaptive-form-using-scribble-signature).
 
-## Signature d’un formulaire adaptatif en utilisant la signature tactile {#sign-an-adaptive-form-using-scribble-signature}
+## Signature d’un formulaire adaptatif à l’aide de la signature tactile {#sign-an-adaptive-form-using-scribble-signature}
 
-1. Une fois que vous avez renseigné le formulaire adaptatif et que vous avez atteint la page Étape de signature, l’écran de signature s’affiche.
+1. Une fois que vous avez rempli un formulaire adaptatif et atteint la page Étape de signature, l’écran de signature s’affiche.
 
    ![Boîte de dialogue de signature tactile](/help/forms/using/assets/esignscribblesign.jpg)
 
-1. Cliquez sur **[!UICONTROL Signer]**. La boîte de dialogue de signature tactile apparaît. Signez le formulaire et cliquez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer la signature.
+1. Cliquez sur **[!UICONTROL Sign]**. La boîte de dialogue de signature tactile s’affiche. Signez le formulaire et cliquez sur l’icône Terminé ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour enregistrer la signature.
 
    ![Boîte de dialogue de signature tactile](/help/forms/using/assets/scribblewidget.png)
 

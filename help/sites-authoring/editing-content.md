@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3082'
-ht-degree: 99%
+source-wordcount: '3080'
+ht-degree: 97%
 
 ---
 
@@ -40,7 +40,7 @@ Le contenu est ajouté à l’aide des [composants](/help/sites-authoring/defaul
 
 La barre d’outils Page permet d’accéder à la fonctionnalité appropriée, en fonction de la configuration de la page.
 
-![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
+![Barre d’outils Page](assets/screen_shot_2018-03-22at111338.png)
 
 La barre d’outils permet d’accéder à de nombreuses options. Selon votre contexte et votre configuration actuels, certaines options peuvent ne pas être disponibles.
 
@@ -66,25 +66,25 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
   Ouvre [ContextHub](/help/sites-authoring/ch-previewing.md). Uniquement disponible en mode Aperçu.
 
-  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![Context Hub](assets/screen_shot_2018-03-22at111543.png)
 
 * **Titre de la page**
 
   Ceci est à titre purement informatif.
 
-  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![Titre de la page](assets/screen_shot_2018-03-22at111554.png)
 
 * **Sélecteur de mode**
 
   Affiche le [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Modifier, Disposition, Timewarp ou Ciblage.
 
-  ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![Sélecteur de mode](assets/chlimage_1-120.png)
 
 * **Aperçu**
 
   Permet d’activer le [mode Aperçu](/help/sites-authoring/editing-content.md#preview-mode). Cette option affiche la page telle qu’elle apparaîtra une fois publiée.
 
-  ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![Mode Aperçu](assets/chlimage_1-121.png)
 
 * **Annoter**
 
@@ -96,7 +96,7 @@ La barre d’outils permet d’accéder à de nombreuses options. Selon votre co
 
 Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-authoring/workflows.md), ces informations s’affichent dans une barre de notification située en haut de l’écran lorsque vous la modifiez.
 
-![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
+![notification des workflows](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ L’utilisation de la barre de notification pour terminer et déléguer des éta
 
 Si la page est soumise à plusieurs workflows, leur nombre est indiqué à droite de la notification, avec des chevrons, pour vous permettre de les parcourir.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![Notification du nombre de workflows](assets/chlimage_1-122.png)
 
 ## Espace réservé du composant {#component-placeholder}
 
@@ -122,11 +122,11 @@ L’espace réservé indique le positionnement du composant que vous déposez. P
 
 * Lors de l’ajout d’un nouveau composant à la page (en le faisant glisser depuis l’explorateur de composants) :
 
-  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![ajout d’un nouveau composant](assets/screen_shot_2018-03-22at111928.png)
 
 * Lors du déplacement d’un composant existant :
 
-  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![déplacement d’un composant existant](assets/screen_shot_2018-03-22at112445.png)
 
 ## Insertion d’un composant {#inserting-a-component}
 
@@ -153,13 +153,13 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
    * Sélectionnez l’option **Insérer le composant** (+) depuis la barre d’outils d’un composant existant ou dans la zone **Faire glisser les composants ici**.
 
-   ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
+   ![Insérer une sélection de composant](assets/screen_shot_2018-03-22at112536.png)
 
    * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur la zone **Faire glisser les composants ici**.
 
    La boîte de dialogue **Insérer un nouveau composant** s’affiche pour vous permettre de sélectionner le composant nécessaire :
 
-   ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
+   ![Insertion d’un nouveau composant.](assets/screen_shot_2018-03-22at112650.png)
 
 1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#editmovecopypastedelete) le composant selon les besoins.
 
@@ -218,7 +218,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
 Si, lors de l’exploration des ressources, vous estimez qu’il est nécessaire d’apporter une modification rapide à l’une d’elles, vous pouvez lancer directement l’[éditeur de ressources](/help/assets/manage-assets.md) à partir du navigateur en cliquant sur l’icône d’édition située en regard de son nom.
 
-![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
+![icône de modification](assets/screen_shot_2018-03-22at112735.png)
 
 ## Modifier/Configurer/Copier/Couper/Supprimer/Coller {#edit-configure-copy-cut-delete-paste}
 
@@ -226,7 +226,7 @@ La sélection d’un composant ouvre la barre d’outils, qui permet d’accéde
 
 Les actions disponibles pour l’utilisateur sont affichées comme il convient ; ces actions ne peuvent pas toutes être décrites ici.
 
-![screen_shot_2018-03-22at112909](assets/screen_shot_2018-03-22at112909.png)
+![options de la barre d’outils des composants](assets/screen_shot_2018-03-22at112909.png)
 
 * **Modifier**
 
@@ -250,7 +250,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
   Le composant est copié dans le presse-papiers. Après l’action de collage, le composant d’origine est supprimé.
 
-  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![Couper](assets/screen_shot_2018-03-22at113007.png)
 
 * **Supprimer**
 
@@ -272,7 +272,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
    * L’élément collé est collé au-dessus de l’élément pour lequel vous avez sélectionné l’action de collage.
    * L’action de collage ne s’affiche que si du contenu se trouve dans le presse-papiers.
 
-  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![Coller](assets/screen_shot_2018-03-22at113553.png)
 
   >[!NOTE]
   >
@@ -288,7 +288,7 @@ Les actions disponibles pour l’utilisateur sont affichées comme il convient 
 
   Cette option permet de sélectionner le composant parent du composant sélectionné.
 
-  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![Parent](assets/screen_shot_2018-03-22at113028.png)
 
 * **Mise en page**
 
@@ -317,11 +317,11 @@ Les options de modification exactes dépendent du composant. Pour certains compo
 
 * [Composant textuel](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![Composant textuel](assets/screen_shot_2018-03-22at120215.png)
 
 * Composant d’image
 
-  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![Composant d’image](assets/screen_shot_2018-03-22at120252.png)
 
   >[!NOTE]
   >
@@ -334,11 +334,11 @@ Les options de modification exactes dépendent du composant. Pour certains compo
 
   [Le passage en mode Plein écran](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
 
-  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![Composant d’image plein écran](assets/screen_shot_2018-03-22at120529.png)
 
 * Les composants construits à partir de plusieurs composants de base, tels que le [composant de base Texte et image](/help/sites-authoring/default-components-foundation.md#text-image), vous demandent tout d’abord de confirmer le jeu d’options de modification désiré :
 
-  ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![Options de modification des composants](assets/chlimage_1-123.png)
 
 ### Faire glisser et déposer des éléments dans des composants {#drag-and-drop-assets-into-component}
 
@@ -360,7 +360,7 @@ Pour tous les composants, vous pouvez accéder au mode Plein écran (ou le quitt
 
 Par exemple, le composant **Texte** :
 
-![screen_shot_2018-03-22at121616](assets/screen_shot_2018-03-22at121616.png)
+![Éditeur de texte](assets/screen_shot_2018-03-22at121616.png)
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ Pour déplacer un composant de paragraphe :
 1. Sélectionnez le paragraphe à déplacer en appuyant ou en cliquant longuement.
 1. Faites glisser le paragraphe vers son nouvel emplacement. AEM indique où le paragraphe peut être déposé. Déposez-le à l’emplacement de votre choix.
 
-   ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
+   ![déplacement du composant de paragraphe](assets/screen_shot_2018-03-22at121821.png)
 
 1. Votre paragraphe est déplacé.
 
@@ -387,7 +387,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
 1. Lorsque le mode **Modifier** de la console Sites est actif, la sélection d’un composant déclenche l’affichage de sa barre d’outils.
 
-   ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
+   ![Mode d’édition dans le formulaire](assets/screen_shot_2018-03-22at133756.png)
 
    Cliquez ou appuyez sur l’action **Disposition** pour ajuster la mise en page du composant.
 
@@ -399,7 +399,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
    * La barre d’outils de l’émulateur s’affiche en haut de l’écran.
    * Les actions de disposition au lieu des actions de modification standard s’affichent dans la barre d’outils du composant.
 
-   ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
+   ![Aperçu du formulaire sur plusieurs périphériques](assets/screen_shot_2018-03-22at133843.png)
 
    Vous pouvez à présent modifier la mise en page du composant, comme vous le feriez dans le [mode de mise en page](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -427,7 +427,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
   La barre d’outils du composant, si celui-ci est situé sur une page qui fait partie d’une Live Copy ou d’un lancement (basé sur une Live Copy). Par exemple :
 
-  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![Live Copy](assets/screen_shot_2018-03-22at134339.png)
 
   L’option Annuler l’héritage est disponible :
 
@@ -445,7 +445,7 @@ Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, vous po
 
   Boîte de dialogue de configuration. Par exemple, comme avec le système de paragraphes hérité :
 
-  ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![Système de paragraphe hérité](assets/chlimage_1-124.png)
 
 ## Modification du modèle de page {#editing-the-page-template}
 
@@ -464,7 +464,7 @@ Le [mode de la page du statut de la Live Copy](/help/sites-authoring/author-env
 
 Par exemple :
 
-![screen_shot_2018-03-22at134820](assets/screen_shot_2018-03-22at134820.png)
+![État de l’héritage de la Live Copy](assets/screen_shot_2018-03-22at134820.png)
 
 ## Ajout d’annotations {#adding-annotations}
 
@@ -499,7 +499,7 @@ Lorsque vous modifiez du contenu, vous pouvez prévisualiser la page à l’aide
 
 Lors de la création, le mode Aperçu est disponible à l’aide de l’icône située en haut à droite de l’éditeur de page :
 
-![chlimage_1-125](assets/chlimage_1-125.png)
+![Aperçu](assets/chlimage_1-125.png)
 
 ### Afficher comme publié(e) {#view-as-published}
 
@@ -516,7 +516,7 @@ Une page peut être verrouillée à partir de :
    1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Sélectionnez l’icône de verrou.
 
-  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![Icône cadenas](assets/screen_shot_2018-03-22at134928.png)
 
 * **Éditeur de page**
 
@@ -525,7 +525,7 @@ Une page peut être verrouillée à partir de :
 
 Une fois la page verrouillée, les informations d’affichage de la console sont mises à jour et, lors de la modification, le symbole d’un verrou s’affiche dans la barre d’outils.
 
-![screen_shot_2018-03-22at135010](assets/screen_shot_2018-03-22at135010.png)
+![Symbole de verrouillage](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
@@ -539,7 +539,7 @@ Le déverrouillage d’une page est une procédure très similaire au [verrouill
 
 Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme une option et l’icône Verrouiller dans la console Sites est remplacée par l’icône **Déverrouiller**.
 
-![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
+![Déverrouiller](assets/screen_shot_2018-03-22at134942.png)
 
 >[!CAUTION]
 >

@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
-workflow-type: ht
-source-wordcount: '2208'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '2209'
+ht-degree: 99%
 
 ---
 
@@ -50,7 +50,7 @@ Vous avez besoin du [Package de modules complémentaires AEM Forms](https://exp
 
 Pour créer une variable, procédez comme suit :
 
-1. Sur une instance AEM, accédez à Outils ![](/help/forms/using/assets/hammer.png) > Processus > Modèles.
+1. Sur une instance AEM, accédez à Outils . ![Outils](/help/forms/using/assets/hammer.png) > Workflow > Modèles.
 1. Appuyez sur **[!UICONTROL Créer]** et spécifiez le titre et un nom facultatif pour le modèle de processus. Sélectionnez le modèle et appuyez sur **[!UICONTROL Modifier]**.
 1. Appuyez sur l’icône de variables disponible dans le sidekick du modèle de processus et appuyez sur **[!UICONTROL Ajouter une variable]**.
 
@@ -154,7 +154,7 @@ Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou 
 
 ### Étapes de processus avec prise en charge des variables {#workflow-steps-with-support-for-variables}
 
-L’étape Accéder à, l’étape Division OU et toutes les étapes de d’AEM Forms Workflow prennent en charge les variables.
+L’étape d’accès, l’étape de Division OU et toutes les étapes de workflow d’AEM Forms prennent en charge les variables.
 
 #### OU étape Fractionner {#or-split-step}
 

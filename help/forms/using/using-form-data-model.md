@@ -1,7 +1,7 @@
 ---
 title: Utilisation d’un modèle de données de formulaire
 seo-title: Use form data model
-description: Découvrez comment utiliser un modèle de données de formulaire pour créer et utiliser des formulaires adaptatifs et des communications interactives.
+description: Découvrez comment utiliser le modèle de données de formulaire pour créer et utiliser des formulaires adaptatifs et des communications interactives.
 seo-description: Learn how to use form data model to create and work with adaptive forms and interactive communications.
 uuid: 9d8d8f43-9a50-4905-a6ef-a5ea3b9c11f7
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,18 +10,18 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1252'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 52%
 
 ---
 
 # Utilisation d’un modèle de données de formulaire{#use-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![hero-image](do-not-localize/data-integration.png)
 
-L’intégration de données d’AEM Forms vous permet d’utiliser des sources de données backend pour créer un modèle de données de formulaire que vous pouvez utiliser comme schéma dans divers processus de formulaires adaptatifs et de communications interactives. Elle nécessite la configuration des sources de données et la création d’un modèle de données de formulaire basé sur les objets et services de modèle de données disponibles dans les sources de données. Pour plus d’informations, consultez les sections suivantes :
+L’intégration de données AEM Forms vous permet d’utiliser des sources de données principales disparates pour créer un modèle de données de formulaire que vous pouvez utiliser comme schéma dans divers formulaires adaptatifs et processus de communication interactive. Elle nécessite la configuration des sources de données et la création d’un modèle de données de formulaire basé sur les objets et services de modèle de données disponibles dans les sources de données. Pour plus d’informations, consultez les sections suivantes :
 
 * [Intégration des données AEM Forms](../../forms/using/data-integration.md)
 * [Configuration des sources de données](../../forms/using/configure-data-sources.md)
@@ -39,7 +39,7 @@ Un modèle de données de formulaire est une extension du schéma JSON que vous 
 
 ## Créer des formulaires adaptatifs et des fragments {#create-af}
 
-Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et des [fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) en fonction du modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données du formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
+Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adaptive-form.md) et [Fragments de formulaire adaptatif](../../forms/using/adaptive-form-fragments.md) selon un modèle de données de formulaire. Procédez comme suit pour utiliser un modèle de données de formulaire lors de la création d’un formulaire adaptatif ou d’un fragment de formulaire adaptatif :
 
 1. Dans l’onglet Modèle de formulaire de l’écran Ajouter des propriétés, sélectionnez **[!UICONTROL Modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**.
 
@@ -47,11 +47,11 @@ Vous pouvez créer des [formulaires adaptatifs](../../forms/using/creating-adapt
 
 1. Appuyez pour développer le **[!UICONTROL modèle de données de formulaire sélectionné]**. Tous les modèles de données de formulaire disponibles sont répertoriés.
 
-   Sélectionnez un modèle de données de formulaire.
+   Sélectionnez un modèle de données à partir de .
 
    ![create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Fragments de formulaire adaptatif uniquement**) Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développez la liste déroulante **[!UICONTROL Définitions de modèle de données de formulaire]**. Elle répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.
+1. (**Fragments de formulaire adaptatif uniquement**) Vous pouvez créer un fragment de formulaire adaptatif basé sur un seul objet de modèle de données dans un modèle de données de formulaire. Développer **[!UICONTROL Définitions de modèle de données de formulaire]** menu déroulant. Il répertorie tous les objets de modèle de données dans le modèle de données de formulaire spécifié. Sélectionnez un objet de modèle de données dans la liste.
 
    ![create-af-3](assets/create-af-3.png)
 
@@ -63,13 +63,13 @@ Une fois le formulaire adaptatif ou le fragment de formulaire adaptatif basé su
 
 ![data-model-objects-tab](assets/data-model-objects-tab.png)
 
-Vous pouvez glisser-déposer des objets de modèle de données sur le formulaire adaptatif ou le fragment pour ajouter des champs de formulaire. Les champs de formulaire ajoutés conservent les propriétés des métadonnées et la liaison avec les propriétés de l’objet de modèle de données. La liaison garantit que les valeurs de champ sont mises à jour dans les sources de données correspondantes lors de l’envoi du formulaire et préremplies lorsque le formulaire est rendu.
+Vous pouvez glisser-déposer des objets de modèle de données sur le formulaire adaptatif ou le fragment pour ajouter des champs de formulaire. Les champs de formulaire ajoutés conservent les propriétés de métadonnées et la liaison avec les propriétés de l’objet de modèle de données. La liaison permet de s’assurer que les valeurs de champ sont mises à jour dans les sources de données correspondantes lors de l’envoi du formulaire et préremplies lors de la génération du formulaire.
 
 ## Créer des communications interactives {#create-ic}
 
-Vous pouvez créer une communication interactive basée sur un modèle de données de formulaire que vous pouvez utiliser pour préremplir une communication interactive avec des données provenant de sources de données configurées. En outre, les blocs de construction d’une communication interactive, tels que les fragments de texte, de liste et de condition, peuvent se baser sur un modèle de données de formulaire.
+Vous pouvez créer une communication interactive basée sur un modèle de données de formulaire que vous pouvez utiliser pour préremplir la communication interactive avec des données provenant de sources de données configurées. En outre, les blocs de création d’une communication interactive, tels que les fragments de texte, de liste et de condition, peuvent être basés sur un modèle de données de formulaire.
 
-Vous pouvez choisir un modèle de données de formulaire lors de la création d’une communication interactive ou d’un fragment de document. L’image suivante représente l’onglet Général de la boîte de dialogue Créer une communication interactive.
+Vous pouvez choisir un modèle de données de formulaire lors de la création d’une communication interactive ou d’un fragment de document. L’image suivante présente l’onglet Général de la boîte de dialogue Créer une communication interactive.
 
 ![create-ic](assets/create-ic.png)
 
@@ -89,7 +89,7 @@ Pour en savoir plus, voir:
 
 L’éditeur de modèle de données de formulaire vous permet de générer et de modifier des exemples de données pour les objets de modèle de données dans le modèle de données de formulaire. Vous pouvez utiliser ces données pour prévisualiser et tester les communications interactives et les formulaires adaptatifs. Vous devez générer les exemples de données avant la prévisualisation, comme décrit dans la section [Utilisation d’un modèle de données de formulaire](../../forms/using/work-with-form-data-model.md#sample).
 
-Pour prévisualiser une communication interactive avec des exemples de données du modèle de données de formulaire :
+Pour prévisualiser une communication interactive avec des exemples de données de modèle de données de formulaire :
 
 1. Dans l’instance d’auteur AEM, accédez à **[!UICONTROL Formulaires > Formulaires et documents]**.
 1. Sélectionnez une communication interactive et appuyez sur **[!UICONTROL Aperçu]** dans la barre d’outils pour sélectionner **[!UICONTROL Canal web]**, **[!UICONTROL Canal d’impression]** ou **[!UICONTROL Les deux canaux]** pour prévisualiser la communication interactive.
@@ -101,11 +101,11 @@ La communication interactive s’ouvre avec des exemples de données préremplie
 
 De même, pour prévisualiser un formulaire adaptatif avec des exemples de données, ouvrez le formulaire adaptatif en mode création et appuyez sur **[!UICONTROL Aperçu]**.
 
-## Pré-remplir à l’aide du service de modèle de données de formulaire {#prefill}
+## Préremplissage à l’aide du service de modèle de données de formulaire {#prefill}
 
-AEM Forms fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les formulaires adaptatifs et les communications interactives basé(e)s sur un modèle de données de formulaire. Le service de préremplissage récupère les sources de données des objets de modèle de données dans le formulaire adaptatif et la communication interactive et préremplit les données en conséquence lors du rendu du formulaire ou de la communication.
+AEM Forms fournit un service de préremplissage de modèle de données de formulaire prêt à l’emploi que vous pouvez activer pour les formulaires adaptatifs et les communications interactives basées sur le modèle de données de formulaire. Le service de préremplissage interroge les sources de données pour les objets de modèle de données dans le formulaire adaptatif et la communication interactive et préremplit en conséquence les données lors du rendu du formulaire ou de la communication.
 
-Pour activer le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif, ouvrez les propriétés du conteneur de formulaire adaptatif et sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]** dans la liste déroulante **[!UICONTROL Service de préfiltrage]** de l’accordéon De base. Ensuite, enregistrez les propriétés.
+Pour activer le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]** de la **[!UICONTROL Service de préremplissage]** menu déroulant dans l’accordéon De base . Ensuite, enregistrez les propriétés.
 
 ![prefill-service](assets/prefill-service.png)
 
@@ -113,32 +113,32 @@ Pour configurer le service de préremplissage du modèle de données de formulai
 
 ![edit-ic-props](assets/edit-ic-props.png)
 
-Boîte de dialogue Modifier les propriétés pour une communication interactive
+Boîte de dialogue Modifier les propriétés d’une communication interactive
 
-## Écrire les données de formulaires adaptatifs envoyés dans les sources de données {#write-af}
+## Écrire les données de formulaire adaptatif envoyées dans les sources de données {#write-af}
 
-Lorsqu’un utilisateur envoie un formulaire basé sur un modèle de données de formulaire, vous pouvez configurer le formulaire pour écrire les données envoyées pour un objet de modèle de données dans ses sources de données. Pour réaliser ce cas d’utilisation, AEM Forms fournit une [action d’envoi de modèle de données de formulaire](../../forms/using/configuring-submit-actions.md), disponible par défaut uniquement pour les formulaires adaptatifs basés sur un modèle de données de formulaire. Elle écrit les données envoyées pour un objet de modèle de données dans sa source de données.
+Lorsqu’un utilisateur envoie un formulaire basé sur un modèle de données de formulaire, vous pouvez configurer le formulaire pour écrire les données envoyées pour un objet de modèle de données dans ses sources de données. Pour réaliser ce cas d’utilisation, AEM Forms fournit [Action d’envoi du modèle de données de formulaire](../../forms/using/configuring-submit-actions.md), disponible en standard uniquement pour les formulaires adaptatifs basés sur un modèle de données de formulaire. Elle écrit les données envoyées pour un objet de modèle de données dans sa source de données.
 
 Pour configurer l’action d’envoi de modèle de données de formulaire, ouvrez les propriétés du conteneur de formulaires adaptatifs et sélectionnez **[!UICONTROL Envoyer à l’aide du modèle de données de formulaire]** dans la liste déroulante Action d’envoi sous l’accordéon Envoi. Ensuite, recherchez et sélectionnez un objet de modèle de données dans la liste **[!UICONTROL Nom de l’objet de modèle de données à envoyer]**. Enregistrez les propriétés.
 
-Lors de l’envoi d’un formulaire, les données de l’objet de modèle de données configuré sont écrites dans la source de données respectives.
+Lors de l’envoi du formulaire, les données de l’objet de modèle de données configuré sont écrites dans la source de données correspondante.
 
 ![data-submission](assets/data-submission.png)
 
-Vous pouvez également envoyer des pièces jointes de formulaire à une source de données à l’aide de la propriété d’objet de modèle de données binaire. Procédez comme suit pour envoyer des pièces jointes à une source de données JDBC :
+Vous pouvez également envoyer des pièces jointes de formulaire à une source de données à l’aide de la propriété d’objet de modèle de données binaire. Procédez comme suit pour envoyer des pièces jointes à une source de données JDBC :
 
-1. Ajoutez un objet de modèle de données qui inclut une propriété binaire dans le modèle de données de formulaire.
+1. Ajoutez un objet de modèle de données qui inclut une propriété binaire au modèle de données de formulaire.
 1. Dans le formulaire adaptatif, faites glisser le composant **[!UICONTROL Pièce jointe]** depuis l’explorateur Composants vers le formulaire adaptatif.
 1. Appuyez pour sélectionner le composant ajouté et appuyez sur ![paramètres-icône](assets/settings_icon.png) pour ouvrir l’explorateur Propriétés du composant.
 1. Dans le champ Référence de liaison, appuyez sur ![foldersearch_18](assets/foldersearch_18.png) et naviguez pour sélectionner la propriété binaire que vous avez ajoutée dans le modèle de données de formulaire. Configurez d’autres propriétés en fonction de vos besoins.
 
    Appuyez sur ![check-button](assets/check-button.png) pour enregistrer les propriétés. Le champ de pièce jointe est maintenant lié à la propriété binaire du modèle de données de formulaire.
 
-1. Dans la section Envoi des propriétés du conteneur de formulaires adaptatifs, activez l’option **[!UICONTROL Envoyer les pièces jointes de formulaire]**. Elle permet d’envoyer la pièce jointe du champ de propriété binaire à la source de données lors de l’envoi du formulaire.
+1. Dans la section Envoi des propriétés du conteneur de formulaires adaptatifs, activez l’option **[!UICONTROL Envoyer les pièces jointes de formulaire]**. Elle envoie la pièce jointe dans le champ de propriété binaire à la source de données lors de l’envoi du formulaire.
 
 ## Appeler des services dans des formulaires adaptatifs à l’aide de règles {#invoke-services}
 
-Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](../../forms/using/rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. L’opération **[!UICONTROL Appeler des services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser le type de règle **Définir la valeur** pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
+Dans un formulaire adaptatif basé sur un modèle de données de formulaire, vous pouvez [créer des règles](../../forms/using/rule-editor.md) pour appeler les services configurés dans le modèle de données de formulaire. L’opération **[!UICONTROL Appeler des services]** dans une règle répertorie tous les services disponibles dans le modèle de données de formulaire et vous permet de sélectionner des champs d’entrée et de sortie pour le service. Vous pouvez également utiliser la variable **Définir la valeur** type de règle pour appeler un service de modèle de données de formulaire et définir la valeur d’un champ sur la sortie renvoyée par le service.
 
 Par exemple, la règle suivante appelle un service get qui utilise l’ID d’employé comme entrée et les valeurs renvoyées sont renseignées dans les champs ID, Nom, Prénom et Sexe correspondants du formulaire.
 

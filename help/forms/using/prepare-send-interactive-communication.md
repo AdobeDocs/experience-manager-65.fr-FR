@@ -1,7 +1,7 @@
 ---
 title: Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent
 seo-title: Prepare and send Interactive Communication using the Agent UI
-description: L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer la communication interactive au post-traitement. L’agent apporte les modifications nécessaires dans la mesure du possible et envoie la communication interactive en post-traitement, comme un courrier électronique ou une impression.
+description: L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent apporte les modifications requises autorisées et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
 seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '2021'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 82%
 
 ---
 
 # Préparer et envoyer une communication interactive à l’aide de l’interface utilisateur de l’agent {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
-L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer la communication interactive au post-traitement. L’agent apporte les modifications nécessaires dans la mesure du possible et envoie la communication interactive en post-traitement, comme un courrier électronique ou une impression.
+L’interface utilisateur de l’agent permet aux agents de préparer et d’envoyer une communication interactive au post-traitement. L’agent apporte les modifications requises autorisées et envoie la communication interactive à un post-traitement, comme un courrier électronique ou une impression.
 
 ## Présentation {#overview}
 
@@ -26,7 +26,7 @@ Après la création d’une communication interactive, l’agent peut ouvrir la 
 
 Tout en préparant la communication interactive à l’aide de l’interface utilisateur de l’agent, l’agent gère les aspects suivants de la communication interactive dans l’interface utilisateur de l’agent avant de l’envoyer en post-traitement :
 
-* **Données** : l’onglet Données de l’interface utilisateur de l’agent affiche toutes les variables modifiables par l’agent et les propriétés du modèle de données du formulaire non verrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de documents inclus dans la communication interactive. L’onglet Données comprend également tous les champs intégrés dans le modèle de canal d’impression/XDP. L’onglet Données n’apparaît que lorsque des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive peuvent être modifiés par l’agent.
+* **Données**: L’onglet Données de l’interface utilisateur de l’agent affiche toutes les variables modifiables par l’agent et les propriétés de modèle de données de formulaire déverrouillées dans la communication interactive. Ces variables/propriétés sont créées lors de la modification ou de la création de fragments de document inclus dans la communication interactive. L’onglet Données comprend également tous les champs créés dans le modèle de canal XDP/impression. L’onglet Données n’apparaît que lorsque des variables, des propriétés de modèle de données de formulaire ou des champs de la communication interactive peuvent être modifiés par l’agent.
 * **Contenu** : dans l’onglet Contenu, l’agent gère le contenu, tel que des fragments de documents et des variables de contenu dans la communication interactive. L’agent peut effectuer les modifications dans le fragment de document, comme autorisé, tout en créant la communication interactive dans les propriétés de ces fragments de document. L’agent peut également réorganiser, ajouter/supprimer un fragment de document et ajouter des sauts de page, si cela est autorisé.
 * **Pièces jointes** : l’onglet Pièces jointes apparaît dans l’interface utilisateur de l’agent uniquement si la communication interactive comporte des pièces jointes ou si l’agent a accès à la bibliothèque. L’agent peut être autorisé ou non à modifier les pièces jointes.
 
@@ -49,13 +49,13 @@ Tout en préparant la communication interactive à l’aide de l’interface uti
 
 ### Saisir des données {#enter-data}
 
-1. Dans l’onglet Données, saisissez les données pour les variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (*) pour activer le bouton **Envoyer**.
+1. Dans l’onglet Données , saisissez les données des variables, les propriétés du modèle de données de formulaire et les champs du modèle d’impression (XDP), selon les besoins. Remplissez tous les champs obligatoires identifiés par un astérisque (*) pour activer le bouton **Envoyer**.
 
    Appuyez sur une valeur de champ de données dans l’aperçu de la communication interactive pour mettre en surbrillance le champ de données correspondant dans l’onglet Données et vice versa.
 
 ### Gérer le contenu {#manage-content}
 
-Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de documents et des variables de contenu dans la communication interactive.
+Dans l’onglet Contenu , gérez le contenu tel que les fragments de document et les variables de contenu dans la communication interactive.
 
 1. Sélectionnez **[!UICONTROL Contenu]**. L’onglet des Contenus de la communication interactive s’affiche.
 
@@ -69,12 +69,13 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de
 
    Dans l’onglet Contenu ou Données, en appuyant sur Mettre en surbrillance les modules sélectionnés dans les Contenus (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) dans le coin supérieur gauche de l’aperçu, vous pouvez activer ou désactiver la fonctionnalité d’accès au fragment de document lorsque le texte, le paragraphe ou le champ de données approprié est sélectionné dans l’aperçu.
 
-   Les fragments qui peuvent être modifiés par l’agent lors de la création de la communication interactive comportent l’icône Modifier le contenu sélectionné (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Appuyez sur l’icône Modifier le contenu sélectionné pour lancer le fragment en mode édition et y apporter des modifications. Utilisez les options suivantes pour formater et gérer le texte :
+   Les fragments qui peuvent être modifiés par l’agent lors de la création de la communication interactive comportent l’icône Modifier le contenu sélectionné (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Appuyez sur l’icône Modifier le contenu sélectionné pour lancer le fragment en mode d’édition et y apporter des modifications. Utilisez les options suivantes pour mettre en forme et gérer le texte :
 
    * [Options de mise en forme](#formattingtext)
 
       * [Copier-coller du texte formaté depuis d’autres applications](#pasteformattedtext)
       * [Parties du texte en surbrillance](#highlightemphasize)
+
    * [Caractères spéciaux](#specialcharacters)
    * [Raccourcis clavier](/help/forms/using/keyboard-shortcuts.md)
 
@@ -82,11 +83,11 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de
 
 1. Pour insérer un saut de page sur la communication interactive imprimée, placez le curseur à l’endroit où vous souhaitez insérer un saut de page et sélectionnez Saut de page avant ou Saut de page après (![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   Un espace réservé explicite de saut de page est inséré dans la communication interactive. Pour voir comment un saut de page explicite affecte la communication interactive, reportez-vous à l’aperçu avant impression.
+   Un espace réservé de saut de page explicite est inséré dans la communication interactive. Pour voir comment un saut de page explicite affecte la communication interactive, consultez l’aperçu avant impression.
 
    ![explicitpagebreak](assets/explicitpagebreak.png)
 
-   Procédez à la gestion des pièces jointes de la communication interactive.
+   Passez à la gestion des pièces jointes de la communication interactive.
 
 ### Gestion des pièces jointes {#manage-attachments}
 
@@ -107,9 +108,9 @@ Dans l’onglet Contenu, vous pouvez gérer du contenu, tel que des fragments de
 
    Si vous trouvez les aperçus satisfaisants, appuyez sur **[!UICONTROL Envoyer]** pour soumettre/envoyer la communication interactive en post-traitement. Sinon, quittez l’aperçu pour revenir aux modifications.
 
-## Formatage du texte {#formattingtext}
+## Formatage de texte {#formattingtext}
 
-Lors de l’édition d’un fragment de texte dans l’interface utilisateur de l’agent, la barre d’outils change en fonction du type d’édition que vous choisissez d’effectuer (Police, Paragraphe ou Liste) :
+Lors de la modification d’un fragment de texte dans l’interface utilisateur de l’agent, la barre d’outils change en fonction du type de modifications à effectuer : Police, paragraphe ou liste :
 
 ![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Barre d’outils des polices](do-not-localize/fonttoolbar.png)
 
@@ -123,9 +124,9 @@ Barre d’outils Paragraphe
 
 Barre d’outils de la liste
 
-### Mettre des parties de texte en surbrillance/en évidence {#highlightemphasize}
+### Mettre des parties de texte en surbrillance/mettre en surbrillance {#highlightemphasize}
 
-Pour mettre des parties de texte en surbrillance\en évidence dans un fragment modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
+Pour mettre en surbrillance/mettre en évidence des parties de texte dans un fragment modifiable, sélectionnez le texte et appuyez sur Couleur de surbrillance.
 
 ![surlignttextagentui](assets/highlighttextagentui.png)
 
@@ -135,21 +136,21 @@ Pour mettre des parties de texte en surbrillance\en évidence dans un fragment m
 
 ### Insérer des caractères spéciaux dans le texte {#specialcharacters}
 
-L’interface utilisateur de l’agent offre une prise en charge intégrée de 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation](/help/forms/using/custom-special-characters.md).
+L’interface utilisateur de l’agent prend en charge 210 caractères spéciaux. L’administrateur peut [ajouter la prise en charge de plus de caractères/de caractères spéciaux grâce à la personnalisation](/help/forms/using/custom-special-characters.md).
 
 #### Livraison des pièces jointes {#attachmentdelivery}
 
 * Si la communication interactive est générée à l’aide des API côté serveur sous la forme d’un PDF, interactif ou non, alors le PDF généré contient des pièces jointes au format PDF.
 * Si un post-traitement associé à une communication interactive est chargé dans le cadre des opérations d’envoi à l’aide de l’interface utilisateur de l’agent, les pièces jointes sont transmises en tant que paramètre List&lt;com.adobe.idp.Document> inAttachmentDocs.
-* Les processus du mécanisme de livraison, tels que l’envoi par courrier électronique et l’impression, livrent les pièces jointes avec la version PDF de la communication interactive.
+* Les workflows du mécanisme de diffusion, tels que l’envoi par courrier électronique et l’impression, livrent également les pièces jointes avec la version PDF de la communication interactive.
 
 ## Actions et informations disponibles dans l’interface utilisateur de l’agent {#actionsagentui}
 
 ### Fragments de document {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![document-fragments-ui-operations](do-not-localize/contentoptionsdocfragments.png)
 
-* **Flèches haut/bas** : flèches permettant de déplacer les fragments de document vers le haut ou vers le bas dans la communication interactive.
+* **Flèches haut/bas**: Flèches permettant de déplacer des fragments de document vers le haut ou vers le bas dans la communication interactive.
 * **Supprimer** : si cela est autorisé, supprimez le fragment de document de la communication interactive.
 * **Saut de page avant** (applicable aux modules enfant de la zone cible) : insère un saut de page avant le fragment de document.
 * **Retrait** : augmente ou réduit le retrait d’un fragment de document.
@@ -162,7 +163,7 @@ L’interface utilisateur de l’agent offre une prise en charge intégrée de 2
 * Sélection (icône représentant un œil) : inclut\exclut le fragment de document de la communication interactive.
 * Valeurs vides (information) : indique le nombre de variables vides dans le fragment de document.
 
-### Fragments de document de la liste {#list-document-fragments}
+### Lister des fragments de document {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -324,20 +325,20 @@ Le tableau suivant explique l’exemple `ccrDocumentInstance` d’implémentatio
   <td><p><strong>Exemples de services de base de données</strong></p></td> 
    </tr>
   <tr>
-   <td><p>Vous pouvez créer un brouillon pour une communication interactive ou l’envoyer directement. L’API de l’opération d’enregistrement vérifie si la communication interactive est envoyée en tant que brouillon et inclut un nom de brouillon. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec l’étape Enregistrer en tant que méthode d’entrée.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>Le service mySQLDataBaseServiceCRUD vérifie l’étape Enregistrer en tant que méthode d’entrée et génère un ID de brouillon généré automatiquement et le renvoie à AEM. La logique de génération d’un ID de brouillon peut varier en fonction de la base de données.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Vous pouvez créer un brouillon pour une communication interactive ou l’envoyer directement. L’API de l’opération d’enregistrement vérifie si la communication interactive est envoyée en tant que brouillon et inclut un nom de brouillon. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec l’étape Enregistrer en tant que méthode d’entrée.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie l’étape Enregistrer en tant que méthode d’entrée et génère un ID de brouillon généré automatiquement et le renvoie à AEM. La logique de génération d’un ID de brouillon peut varier en fonction de la base de données.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
-   <td><p>L’API pour l’opération de mise à jour récupère l’état du brouillon de communication interactive et vérifie si la communication interactive inclut un nom de brouillon. L’API appelle le service mySQLDataBaseServiceCRUD pour mettre à jour cet état dans la base de données.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>L’API pour l’opération de mise à jour récupère l’état du brouillon de communication interactive et vérifie si la communication interactive inclut un nom de brouillon. L’API appelle le service mySQLDataBaseServiceCRUD pour mettre à jour cet état dans la base de données.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
    <td><p>Le service mySQLDataBaseServiceCRUD vérifie l’étape Mettre à jour en tant que méthode d’entrée et enregistre l’état du brouillon de communication interactive dans la base de données.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>L’API de l’opération GET vérifie si la communication interactive inclut un ID de brouillon. L’API appelle ensuite le service mySQLDataBaseServiceCRUD avec l’étape Get en tant que méthode d’entrée pour récupérer les données de la communication interactive.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>Le service mySQLDataBaseServiceCRUD vérifie l’étape Get en tant que méthode d’entrée et récupère les données de la communication interactive en fonction de l’ID de brouillon.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>Le service mySQLDataBaseServiceCRUD vérifie l’étape Get en tant que méthode d’entrée et récupère les données de la communication interactive en fonction de l’ID de brouillon.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>L’API de l’opération getAll appelle le service mySQLGetALLData pour récupérer les données de toutes les communications interactives enregistrées dans la base de données.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>Le service mySQLGetALLData récupère des données pour toutes les communications interactives enregistrées dans la base de données.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>Le service mySQLGetALLData récupère des données pour toutes les communications interactives enregistrées dans la base de données.</p></br><img src="assets/getall-operation-service.png"/></td>
    </tr>
   </tbody>
 </table>

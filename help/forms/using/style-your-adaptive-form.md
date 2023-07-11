@@ -1,7 +1,7 @@
 ---
-title: Application d’un style à votre formulaire adaptatif
+title: Donner un style à votre formulaire adaptatif
 seo-title: Style your adaptive form
-description: Apprenez à créer un thème personnalisé, à appliquer un style à des composants individuels et à utiliser les polices web dans un thème.
+description: Découvrez comment créer un thème personnalisé, mettre en forme des composants individuels et utiliser des polices web dans un thème
 seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme
 page-status-flag: de-activated
 uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
@@ -9,45 +9,45 @@ topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2037'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '2038'
+ht-degree: 66%
 
 ---
 
-# Application d’un style à votre formulaire adaptatif {#do-not-publish-style-your-adaptive-form}
+# Donner un style à votre formulaire adaptatif {#do-not-publish-style-your-adaptive-form}
 
-Apprenez à créer un thème personnalisé, à appliquer un style à des composants individuels et à utiliser les polices web dans un thème.
+Découvrez comment créer un thème personnalisé, mettre en forme des composants individuels et utiliser des polices web dans un thème
 
-![](do-not-localize/08-style_your_adaptiveformmain.png)
+![hero-image](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce tutoriel fait partie de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et accomplir le cas d’utilisation complet du tutoriel.
 
-## À propos du didacticiel  {#about-the-tutorial}
+## À propos du tutoriel  {#about-the-tutorial}
 
-Vous pouvez utiliser des thèmes pour donner une apparence et un style uniques à un formulaire adaptatif. Vous pouvez appliquer des thèmes prêts à l’emploi fournis avec l’éditeur de formulaires adaptatifs ou créer vos propres thèmes. AEM [!DNL Forms] fournit un [éditeur de thème](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html) pour créer des thèmes personnalisés. Un seul thème peut conférer une apparence différente au même formulaire adaptatif ouvert sur un mobile, une tablette ou un ordinateur de bureau. Aucune connaissance préalable de CSS ou de LESS n’est nécessaire pour utiliser l’éditeur de thèmes, mais cela est préférable.
+Vous pouvez utiliser des thèmes pour donner un aspect et un style uniques à un formulaire adaptatif. Vous pouvez appliquer des thèmes prêts à l’emploi fournis avec l’éditeur de formulaires adaptatifs ou créer vos propres thèmes personnalisés. AEM [!DNL Forms] fournit un [éditeur de thème](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html) pour créer des thèmes personnalisés. Un seul thème peut donner une apparence différente au même formulaire adaptatif ouvert sur un appareil mobile, une tablette ou un ordinateur de bureau. Aucune connaissance préalable de CSS ou LESS n’est requise pour utiliser l’éditeur de thème, mais elle est souhaitée.
 
-À la fin du didacticiel, vous découvrirez comment :
+À la fin du tutoriel, vous apprendrez à :
 
-* Appliquer un thème prêt à l’emploi à un formulaire adaptatif
-* Créer un thème pour formulaire adaptatif à l’aide de l’éditeur de thème
+* Application d’un thème prêt à l’emploi à un formulaire adaptatif
+* Création d’un thème pour le formulaire adaptatif à l’aide de l’éditeur de thème
 * Style des composants individuels
-* Section bonus : utilisation des polices web dans un thème personnalisé
+* Section bonus : Utilisation des polices web dans un thème personnalisé
 
-Lorsque vous aurez terminé le didacticiel, le modèle de données de formulaire se présentera comme ceci :
+Une fois le tutoriel terminé, le formulaire se présente comme suit :
 
 ![Formulaire avec un thème personnalisé](assets/styled-adaptive-form.png)
 
 ## Avant de commencer {#before-you-start}
 
-Téléchargez sur votre ordinateur local les images de style d’en-tête et de logo présentées ci-dessous. L’en-tête du formulaire adaptatif `shipping-address-add-update-form` utilise les images de style d’en-tête et de logo. L’image de style d’en-tête s’affiche à droite de l’en-tête.
+Téléchargez les images de style d’en-tête et de logo, comme illustré ci-dessous, sur votre ordinateur local. L’en-tête du formulaire adaptatif `shipping-address-add-update-form` utilise les images de style d’en-tête et de logo. L’image de style d’en-tête s’affiche à droite de l’en-tête.
 
 [Obtenir le fichier](assets/header-style.png)
 
 [Obtenir le fichier](assets/logo-1.png)
 
-## Étape 1 : appliquer un thème à votre formulaire adaptatif {#step-apply-a-theme-to-your-adaptive-form}
+## Étape 1 : Application d’un thème à votre formulaire adaptatif {#step-apply-a-theme-to-your-adaptive-form}
 
 L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’emploi. Si vous envisagez de ne pas utiliser de style personnalisé pour votre formulaire adaptatif, vous pouvez également publier vos formulaires adaptatifs avec un thème prêt à l’emploi. Les thèmes sont indépendants des formulaires adaptatifs. Vous pouvez appliquer le même thème à plusieurs formulaires adaptatifs. Pour appliquer un thème à un formulaire adaptatif :
 
@@ -55,8 +55,8 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-1. Ouvrez les propriétés du **[!UICONTROL conteneur de formulaires adaptatifs]**. Dans le navigateur de propriétés, accédez à **[!UICONTROL De base]** > **[!UICONTROL Thème de formulaire adaptatif]**. Le champ **[!UICONTROL Thème de formulaire adaptatif]** répertorie tous les thèmes prêts à l’emploi et personnalisés. Par défaut, le thème Zone de travail est appliqué.
-1. Sélectionnez votre thème dans le champ **[!UICONTROL Thème de formulaire adaptatif]**. Par exemple, **Thème Enquête**. Cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour appliquer le thème sélectionné.
+1. Ouvrir les propriétés de **[!UICONTROL Conteneur de formulaires adaptatifs]**. Dans l’explorateur de propriétés, accédez à **[!UICONTROL De base]** > **[!UICONTROL Thème de formulaire adaptatif]**. Le champ **[!UICONTROL Thème de formulaire adaptatif]** répertorie tous les thèmes prêts à l’emploi et personnalisés. Par défaut, le thème Zone de travail est appliqué.
+1. Sélectionnez un thème dans la **[!UICONTROL Thème de formulaire adaptatif]** champ . Par exemple : **Thème Enquête**. Cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) pour appliquer le thème sélectionné.
 
    ![Formulaire adaptatif avec le thème par défaut](assets/default-adaptive-form.png)
 
@@ -66,13 +66,13 @@ L’éditeur de formulaires adaptatifs fournit plusieurs thèmes prêts à l’e
 
    **Illustration :** *formulaire adaptatif avec le thème Enquête*.
 
-## Étape 2 : mettre à jour votre formulaire adaptatif {#step-update-your-adaptive-form}
+## Étape 2 : Mettre à jour votre formulaire adaptatif {#step-update-your-adaptive-form}
 
-La conception présentée ci-dessus nécessite des modifications du texte et du logo de l’espace réservé de votre formulaire adaptatif existant. Effectuez les étapes suivantes pour faire les changements nécessaires :
+La conception affichée ci-dessus nécessite des modifications du texte et du logo de l’espace réservé de votre formulaire adaptatif existant. Effectuez les étapes suivantes pour faire les changements nécessaires :
 
-1. Modifiez le logo existant et le texte de l’en-tête. Pour supprimer le logo :
+1. Modifiez le logo existant et le texte de l’en-tête. Pour supprimer le logo :
 
-   1. Ouvrez le formulaire dans l’éditeur de formulaires.
+   1. Ouvrez le formulaire dans l’éditeur de formulaire.
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
@@ -91,21 +91,21 @@ La conception présentée ci-dessus nécessite des modifications du texte et du 
 
       ![updated-adaptive-form](assets/updated-adaptive-form.png)
 
-## Étape 3 : créer un thème personnalisé pour votre formulaire adaptatif {#step-create-a-custom-theme-for-your-adaptive-form}
+## Étape 3 : Création d’un thème personnalisé pour votre formulaire adaptatif {#step-create-a-custom-theme-for-your-adaptive-form}
 
-Vous pouvez utiliser un [éditeur de thèmes](/help/forms/using/themes.md) pour créer des thèmes personnalisés. L’éditeur de thèmes est un éditeur WYSIWYG très puissant. Il s’agit d’une méthode visuelle permettant d’appliquer un style CSS à divers composants d’un formulaire adaptatif. Il fournit des commandes plus précises aux composants de style et aux panneaux d’un formulaire adaptatif.
+Vous pouvez utiliser [éditeur de thèmes](/help/forms/using/themes.md) pour créer des thèmes personnalisés. L’éditeur de thèmes est un éditeur WYSIWYG tout puissant. Il s’agit d’une méthode visuelle pour appliquer une page CSS à différents composants d’un formulaire adaptatif. Il fournit des commandes plus précises pour appliquer un style aux composants et aux panneaux d’un formulaire adaptatif.
 
-Un thème est une entité distincte au même titre que les formulaires adaptatifs. Il contient des styles (CSS) pour les composants et les panneaux d’un formulaire adaptatif. Ces styles incluent des propriétés CSS telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié est appliqué aux composants correspondants d’un formulaire adaptatif.
+Un thème est une entité distincte comme les formulaires adaptatifs. Il contient des styles (CSS) pour les composants et les panneaux d’un formulaire adaptatif. Les styles incluent les propriétés CSS telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié est appliqué aux composants correspondants d’un formulaire adaptatif.
 
-Dans ce didacticiel, vous allez appliquer un style aux en-têtes et aux pieds de page, aux composants texte et numériques, aux composants de pièces jointes et aux boutons. Commençons par la création d’ un thème :
+Dans ce tutoriel, vous allez mettre en forme l’en-tête et le pied de page, les composants texte et numériques, les composants de pièce jointe et les boutons. Commençons par la création d’ un thème :
 
 ### Création d’un thème {#create-a-theme}
 
 1. Connectez vous à l’instance de création AEM et accédez à **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Thèmes]**. L’URL par défaut est [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Appuyez sur **[!UICONTROL Créer]** et sélectionnez **[!UICONTROL Thème]**. La page [!UICONTROL Créer un thème] s’affiche avec les champs requis pour créer un thème. Les champs **[!UICONTROL Titre]** et **[!UICONTROL Nom]** sont obligatoires :
 
-   * **Titre :** spécifiez le titre du thème. Par exemple, **Thème global.** Le titre vous permet d’identifier le thème dans la liste des thèmes.
-   * **Nom :** spécifiez le nom du thème. Par exemple, **Thème-global.** Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
+   * **Titre :** spécifiez le titre du thème. Par exemple : **Thème global.** Le titre vous permet d’identifier le thème dans la liste des thèmes.
+   * **Nom :** spécifiez le nom du thème. Par exemple : **Thème global.** Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des traits d’union et des traits de soulignement. Toutes les entrées non valides sont remplacées par un trait d’union.
 
 1. Appuyez sur **[!UICONTROL Créer]**. Un thème est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche. Cliquez sur **[!UICONTROL Ouvrir]** pour ouvrir le thème créé dans un nouvel onglet. Le thème s’ouvre dans l’éditeur de thèmes. Pour le style, l’éditeur de thèmes utilise un formulaire adaptatif prêt à l’emploi fourni avec AEM [!DNL Forms].
 
@@ -121,11 +121,11 @@ Dans ce didacticiel, vous allez appliquer un style aux en-têtes et aux pieds de
 
    **Illustration :** *formulaire adaptatif avec le formulaire par défaut*.
 
-### Application d’un style à l’en-tête et au pied de page {#style-header-and-footer}
+### En-tête et pied de page de style {#style-header-and-footer}
 
-L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un formulaire adaptatif. En général, l’en-tête contient le logo et le nom de l’organisation, le pied de page contient des informations de copyright. Ces éléments restent identiques dans plusieurs formulaires d’une organisation. Pour appliquer un style à l’en-tête et au pied de page du formulaire adaptatif shipping-address-add-update-form :
+L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un formulaire adaptatif. En règle générale, l’en-tête contient le logo et le nom de l’organisation, le pied de page contient des informations de copyright, qui restent identiques dans plusieurs formes d’une organisation. Pour mettre en forme l’en-tête et le pied de page du formulaire adaptatif shipping-address-add-update-form :
 
-1. Accédez à l’option **[!UICONTROL En-tête]** > **[!UICONTROL Texte]** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, appuyez sur le panneau latéral Activer/désactiver ![toggle-side-panel](assets/toggle-side-panel.png).
+1. Accédez au **[!UICONTROL En-tête]** > **[!UICONTROL Texte]** dans le panneau Sélecteurs. Le panneau Sélecteurs se trouve à gauche de l’éditeur de thèmes. Si le panneau n’est pas visible, appuyez sur le panneau latéral Activer/désactiver ![toggle-side-panel](assets/toggle-side-panel.png).
 
 1. Définissez les propriétés suivantes dans l’accordéon **[!UICONTROL Texte]** et cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -133,7 +133,7 @@ L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un 
    |---|---|
    | Famille de polices | Arial |
    | Couleur de la police | FFFFFF |
-   | Taille de la police | 54px |
+   | Taille de police | 54 px |
 
 1. Cliquez sur le widget [!UICONTROL d’en-tête], puis sur **[!UICONTROL En-tête]**. Les options permettant d’appliquer un style au widget En-tête s’affichent à gauche. Développez l’accordéon **[!UICONTROL Dimensions et position]**, définissez la **[!UICONTROL Hauteur]** sur `120px`, puis cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Développez l’accordéon **[!UICONTROL Arrière-plan]** du widget d’en-tête, définissez la **[!UICONTROL couleur d’arrière-plan]** sur `F6921E.`.
@@ -158,23 +158,23 @@ L’en-tête et le pied de page donnent un aspect cohérent et distinctif à un 
       <td>Marge</td> 
       <td> 
        <ul> 
-        <li>Haut : 1,5 rem</li> 
-        <li>Bas : -35 px</li> 
+        <li>Haut : 1,5 rem</li> 
+        <li>Bas : -35px</li> 
         <li>Gauche : 1 rem<strong><br /> </strong></li> 
        </ul> <p><strong>Conseil :</strong> appuyez sur l’<img src="assets/link.png">icône de lien pour fournir une valeur différente à chaque champ.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Hauteur</td> 
-      <td>4,75 rem</td> 
+      <td>4.75rem</td> 
      </tr> 
     </tbody> 
    </table>
 
 1. Appuyez sur le widget de pied de page, puis sur **[!UICONTROL Pied de page]**. Développez l’accordéon **[!UICONTROL Arrière-plan]**, définissez la **[!UICONTROL Couleur d’arrière-plan]** sur `F6921E`, puis cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-### Application d’un style au composant de capture de données et application d’un arrière-plan au formulaire adaptatif {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
+### Donner un style au composant de capture de données et appliquer un arrière-plan au formulaire adaptatif {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capturer des données. Par exemple, zone de texte et zone numérique. Vous pouvez fournir un style identique à tous les composants de capture de données ou un style distinct pour chaque composant. Dans ce didacticiel, un style identique est appliqué aux zones numériques (ID client, Code postal) et aux zones de texte (ID client, Nom, Adresse de livraison, État, Adresse électronique). Pour appliquer un style aux composants de capture de données :
+Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capturer des données. Par exemple, la zone de texte et la zone numérique. Vous pouvez fournir un style identique à tous les composants de capture de données ou un style distinct pour chaque composant. Dans ce didacticiel, un style identique est appliqué aux zones numériques (ID client, Code postal) et aux zones de texte (ID client, Nom, Adresse de livraison, État, Adresse électronique). Pour appliquer un style aux composants de capture de données :
 
 1. Cliquez sur le champ **[!UICONTROL ID de client]** et sur l’option **[!UICONTROL Widget de champ]**. Définissez les propriétés suivantes et cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -195,10 +195,10 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
       <td>Rayon de bordure </td> 
       <td> 
        <ul> 
-        <li>Haut : 7 px<br /> </li> 
-        <li>Droite : 7 px<br /> </li> 
-        <li>Bas : 7 px<br /> </li> 
-        <li>Gauche : 7 px<br /> </li> 
+        <li>Haut : 7 px<br /> </li> 
+        <li>Droite : 7 px<br /> </li> 
+        <li>Bas : 7 px<br /> </li> 
+        <li>Left : 7 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -213,8 +213,8 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
      </tr> 
      <tr> 
       <td>Texte</td> 
-      <td>Taille de la police</td> 
-      <td>18px</td> 
+      <td>Taille de police</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Dimensions et position</td> 
@@ -264,10 +264,10 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
       <td>Rayon de bordure </td> 
       <td> 
        <ul> 
-        <li>Haut : 7 px<br /> </li> 
-        <li>Droite : 7 px<br /> </li> 
-        <li>Bas : 7 px<br /> </li> 
-        <li>Gauche : 7 px</li> 
+        <li>Haut : 7 px<br /> </li> 
+        <li>Droite : 7 px<br /> </li> 
+        <li>Bas : 7 px<br /> </li> 
+        <li>Left : 7 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -282,19 +282,19 @@ Vous pouvez utiliser un thème personnalisé pour appliquer un style identique �
      </tr> 
      <tr> 
       <td>Texte</td> 
-      <td>Taille de la police</td> 
-      <td>18px</td> 
+      <td>Taille de police</td> 
+      <td>18 px</td> 
      </tr> 
     </tbody> 
    </table>
 
-1. [Appliquez le thème personnalisé](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form), Thème global, à votre formulaire adaptatif. Si le style ne se reflète pas sur le formulaire adaptatif, videz le cache du navigateur et réessayez.
+1. [Application du thème personnalisé](/help/forms/using/style-your-adaptive-form.md#step-apply-a-theme-to-your-adaptive-form), Thème global, à votre formulaire adaptatif. Si le style ne se reflète pas sur le formulaire adaptatif, videz le cache du navigateur et réessayez.
 
    ![style-data-capture-components](assets/style-data-capture-components.png)
 
-## Étape 4 : appliquer un style à des composants individuels {#step-style-individual-components}
+## Étape 4 : Style des composants individuels {#step-style-individual-components}
 
-Certains styles ne s’appliquent qu’à un composant spécifique. Un style est appliqué à ces composants dans l’éditeur de formulaires adaptatifs.
+Certains styles s’appliquent uniquement à un composant spécifique. Ces composants sont stylisés dans l’éditeur de formulaires adaptatifs.
 
 1. Ouvrez le formulaire adaptatif pour le modifier. [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/change-billing-shipping-address.html)
 1. Dans la barre supérieure, sélectionnez l’option **[!UICONTROL Style]**.
@@ -332,20 +332,20 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
       <td>Remplissage</td> 
       <td> 
        <ul> 
-        <li>Gauche : 10 px</li> 
+        <li>Left : 10 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Dimensions et position</td> 
       <td>Hauteur</td> 
-      <td>40px</td> 
+      <td>40 px</td> 
      </tr> 
      <tr> 
       <td>Dimensions et position<br /> </td> 
       <td>Marge</td> 
       <td><br /> 
        <ul> 
-        <li>Droite : 2 rem</li> 
+        <li>Droite : 2rem</li> 
         <li>Gauche : 10 rem </li> 
        </ul> </td> 
      </tr> 
@@ -357,12 +357,12 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
      <tr> 
       <td>Bordure</td> 
       <td>Largeur de bordure</td> 
-      <td>1px</td> 
+      <td>1 px</td> 
      </tr> 
      <tr> 
       <td>Bordure</td> 
       <td>Style de la bordure</td> 
-      <td>Pleine</td> 
+      <td>Solide</td> 
      </tr> 
      <tr> 
       <td>Bordure</td> 
@@ -372,7 +372,7 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
      <tr> 
       <td>Bordure</td> 
       <td>Rayon de bordure</td> 
-      <td>7px</td> 
+      <td>7 px</td> 
      </tr> 
      <tr> 
       <td>Texte</td> 
@@ -386,8 +386,8 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
      </tr> 
      <tr> 
       <td>Texte</td> 
-      <td>Taille de la police</td> 
-      <td>18px</td> 
+      <td>Taille de police</td> 
+      <td>18 px</td> 
      </tr> 
      <tr> 
       <td>Texte</td> 
@@ -417,10 +417,10 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
       <td>Marge</td> 
       <td> 
        <ul> 
-        <li>Haut : 5 rem</li> 
-        <li>Droite : 14 rem</li> 
-        <li>Bas : 20 px</li> 
-        <li>Gauche : 20 px<br /> </li> 
+        <li>Haut : 5rem</li> 
+        <li>Droite : 14 rem</li> 
+        <li>Bas : 20 px</li> 
+        <li>Left : 20 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -438,9 +438,9 @@ Certains styles ne s’appliquent qu’à un composant spécifique. Un style est
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Étape 5 : section bonus : utilisation des polices web dans un thème personnalisé {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Étape 5 : Section bonus : Utilisation de polices web dans un thème personnalisé {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Tous les périphériques sur lesquels le formulaire adaptatif est visualisé peuvent ne pas utiliser les polices pour concevoir le formulaire adaptatif. Vous pouvez utiliser un service de polices web pour fournir les polices requises à lʼappareil cible.
+Vous pouvez utiliser différentes polices pour concevoir un formulaire adaptatif. Les polices utilisées pour concevoir le formulaire adaptatif peuvent ne pas être utilisées pour tous les périphériques sur lesquels le formulaire adaptatif est affiché. Vous pouvez utiliser un service de polices web pour fournir les polices requises à lʼappareil cible.
 
 [!DNL Adobe Fonts] est un service de polices web. Vous pouvez configurer et utiliser le service avec les formulaires adaptatifs. Pour utiliser [!DNL Adobe Fonts] dans un formulaire adaptatif, procédez comme suit :
 

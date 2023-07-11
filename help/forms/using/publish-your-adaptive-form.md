@@ -10,20 +10,20 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 99%
 
 ---
 
 # Tutoriel : publier votre formulaire adaptatif {#tutorial-publish-your-adaptive-form}
 
-![](do-not-localize/13-publish-your-adaptive-form-small.png)
+![Hero-image](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Ce didacticiel est une étape de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et démontrer le cas d’utilisation complet du didacticiel.
+Ce tutoriel fait partie de la série [Création de votre premier formulaire adaptatif](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Il est recommandé de suivre la série dans l’ordre chronologique pour comprendre, exécuter et accomplir le cas d’utilisation complet du tutoriel.
 
-Une fois que le formulaire adaptatif est prêt, vous pouvez le publier pour le mettre à la disposition des utilisateurs finaux. Les utilisateurs finaux peuvent ouvrir le formulaire publié sur n’importe quel périphérique et navigateur Internet. Lorsqu’un formulaire adaptatif est publié, le formulaire et le contenu associé sont copiés d’une instance d’auteur AEM à une instance de publication AEM. Le formulaire est mis à la disposition de l’utilisateur final via l’instance de publication.
+Une fois que le formulaire adaptatif est prêt, vous pouvez le publier pour le mettre à la disposition des utilisateurs finaux. Les utilisateurs finaux peuvent ouvrir le formulaire publié sur n’importe quel appareil et navigateur Internet. Lorsqu’un formulaire adaptatif est publié, le formulaire et le contenu associé sont copiés d’une instance d’auteur AEM à une instance de publication AEM. Le formulaire est mis à la disposition de l’utilisateur final via l’instance de publication.
 
 Pour publier un formulaire adaptatif, utilisez lʼune des méthodes suivantes :
 
@@ -69,7 +69,8 @@ AEM [!DNL Forms] fournit un composant, le conteneur AEM [!DNL Forms], pour incor
    * Si vous modifiez uniquement le formulaire incorporé à une page de site publiée, publiez le formulaire d’origine et les modifications seront répercutées sur la page de site publiée. La page de site publiée comprend une référence au formulaire et n’exige pas de republier la page.
    * Si vous modifiez la page [!DNL Sites] et le formulaire incorporé, republiez la page [!DNL Sites] et le formulaire.
 
-      ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
+     ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
+
    Ajout du formulaire de changement d’adresse d’expédition et de facturation à une page AEM [!DNL Sites].
 
 ## Incorporer le formulaire adaptatif dans une page web externe {#embed-the-adaptive-form-in-an-external-webpage}

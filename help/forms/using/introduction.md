@@ -10,41 +10,41 @@ discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '414'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '417'
+ht-degree: 50%
 
 ---
 
 # Présentation des formulaires HTML5{#introduction-to-html-forms}
 
-Les formulaires HTML5 sont une nouvelle fonctionnalité du logiciel Adobe Experience Manager 6.0 (AEM 6.0) qui offre le rendu des modèles de formulaires XFA au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les périphériques mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature tactile, pour les appareils mobiles.
+Les formulaires HTML5 sont une nouvelle fonctionnalité du logiciel Adobe Experience Manager 6.0 (AEM 6.0) qui offre le rendu des modèles de formulaires XFA au format HTML5. Cette fonctionnalité permet le rendu des formulaires sur les appareils mobiles et les navigateurs de bureau ne prenant pas en charge les documents XFA en PDF. Les formulaires HTML5 prennent non seulement en charge les fonctionnalités existantes des modèles de formulaires XFA, mais ajoutent également de nouvelles fonctionnalités, telles que la signature tactile, pour les appareils mobiles.
 
 Les formulaires HTML5 génèrent des documents basés sur des éléments HTML5 standards. Vous pouvez afficher les formulaires HTML5 dans tous les navigateurs récents prenant en charge le format HTML5. Il n’est pas nécessaire d’installer de module externe de navigateur supplémentaire pour les navigateurs. Pour plus d’informations sur les navigateurs pris en charge, consultez la section [Plateformes clientes prises en charge](https://adobe.com/go/learn_aemforms_supportedplatforms_63_fr).
 
-![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![Aperçu du formulaire HTML5](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Fonctionnalités essentielles des formulaires HTML5 {#key-capabilities-of-html-forms-br}
 
-* Rendu de formulaires XFA existants au format HTML5 pris en charge par tous les navigateurs compatibles.
-* Exploitation des fonctionnalités standard de conception des formulaires XFA pour les appliquer aux formulaires sur périphériques mobiles.
-* Utilisation des fonctionnalités XFA dynamiques au format HTML5.
-* Utilisation de la mise en page haute précision SVG (SVG 1.1) pour une correspondance parfaite avec la mise en page de textes PDF.
+* Rendu des formulaires XFA existants dans HTML5 pris en charge sur tous les navigateurs compatibles.
+* tire parti des fonctionnalités standard de conception de formulaire XFA pour cibler des formulaires pour les périphériques mobiles.
+* Utilise les fonctionnalités XFA dynamiques au format HTML5.
+* Utilise une disposition de texte de SVG très précise (SVG 1.1) pour correspondre à la disposition de texte de PDF.
 * Prise en charge de Javascript et de FormCalc.
-* Assemblage dynamique de fragments dans des formulaires interactifs en fonction d’événements basés sur des données ou des entrées saisies par l’utilisateur.
-* Prise en charge des CSS personnalisées pour correspondre à l’aspect standard des formulaires de votre entreprise.
-* Prise en charge de widgets personnalisés pour une expérience de capture de données riche.
+* Assemblage dynamique de fragments dans des formulaires interactifs en fonction d’événements pilotés par les données ou d’entrées utilisateur.
+* Prise en charge des CSS personnalisées pour correspondre à l’apparence des formulaires selon les normes de votre entreprise.
+* Permet aux widgets personnalisés d’offrir une expérience de capture de données riche.
 * Prise en charge de l’intégration avec des applications Web.
 
 ### Publication multicanal {#multichannel-publishing}
 
-Les développeurs de formulaires peuvent utiliser un modèle XFA pour effectuer le rendu des formulaires aux formats PDF et HTML5. Cette fonctionnalité peut s’avérer utile dans les cas où vous avez un jeu de formulaires XFA important nécessitant des modifications mineures pour s’adapter aux pratiques de conception des formulaires HTML5. Vous pouvez générer les formulaires XFA existants au format HTML5 pour cibler différents périphériques ne prenant pas encore en charge le format PDF basé sur XFA.
+Les développeurs de formulaires peuvent utiliser un modèle XFA pour générer des formulaires aux formats PDF et HTML5. Cette fonctionnalité peut s’avérer utile dans les cas où vous avez un jeu de formulaires XFA important nécessitant des modifications mineures pour s’adapter aux pratiques de conception des formulaires HTML5. Vous pouvez rendre les formulaires XFA existants sur HTML5 pour cibler divers périphériques pour lesquels le PDF basé sur XFA n’est pas encore pris en charge.
 
 ## Gestion des formulaires HTML5 {#manage-html-forms}
 
-AEM fournit également un affichage unifié permettant de répertorier et gérer tous les modèles de formulaires à l’aide de l’interface utilisateur AEM Forms. Vous pouvez activer, désactiver, publier et prévisualiser des formulaires. Pour en savoir plus, voir [Présentation de la gestion des formulaires](../../forms/using/introduction-managing-forms.md).
+AEM fournit également un affichage unifié permettant de répertorier et gérer tous les modèles de formulaires à l’aide de l’interface utilisateur AEM Forms. Vous pouvez activer, désactiver, publier et prévisualiser des formulaires. Pour plus d’informations, voir [Présentation de la gestion des formulaires](../../forms/using/introduction-managing-forms.md).
 
-### Personnalisation des formulaires {#forms-customization}
+### Personnalisation de Forms {#forms-customization}
 
-Mobile Forms effectue le rendu des modèles de formulaires à l’aide d’éléments HTML5 standard. Cela facilite la personnalisation et l’extension des formulaires au format HTML5 à l’aide de technologies Web, principalement CSS et JavaScript. Vous pouvez facilement personnaliser l’apparence de widgets existants, créer vos propres widgets personnalisés ou utiliser des styles personnalisés dans les formulaires. Pour plus d’informations sur la création de widgets personnalisés et la personnalisation de widgets existants, consultez la section [Ajout de widgets personnalisés aux formulaires HTML5](../../forms/using/custom-widgets.md).
+Mobile Forms effectue le rendu des modèles de formulaires à l’aide d’éléments HTML5 standard. Cela facilite la personnalisation et l’extension de formulaires au format HTML5 à l’aide de technologies web, principalement CSS et JavaScript. Vous pouvez facilement personnaliser l’aspect des widgets existants, créer vos propres widgets personnalisés ou utiliser des styles personnalisés dans les formulaires. Pour plus d’informations sur la création de widgets personnalisés et la personnalisation de widgets existants, consultez la section [Ajout de widgets personnalisés aux formulaires HTML5](../../forms/using/custom-widgets.md).
