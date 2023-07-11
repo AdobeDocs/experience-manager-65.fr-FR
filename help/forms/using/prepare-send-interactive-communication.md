@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
 workflow-type: tm+mt
-source-wordcount: '2022'
+source-wordcount: '2021'
 ht-degree: 82%
 
 ---
@@ -148,7 +148,7 @@ L’interface utilisateur de l’agent prend en charge 210 caractères spéciaux
 
 ### Fragments de document {#document-fragments}
 
-![document-fragments-ui-operations](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **Flèches haut/bas**: Flèches permettant de déplacer des fragments de document vers le haut ou vers le bas dans la communication interactive.
 * **Supprimer** : si cela est autorisé, supprimez le fragment de document de la communication interactive.
