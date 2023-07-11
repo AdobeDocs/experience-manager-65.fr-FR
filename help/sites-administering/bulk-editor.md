@@ -1,30 +1,26 @@
 ---
 title: Éditeur en bloc
-seo-title: The Bulk Editor
 description: Découvrez comment utiliser l’éditeur en bloc.
-seo-description: Learn how to use the Bulk Editor.
-uuid: 5f5e4190-d9b2-40a6-8cf4-4b7aebe35ad3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 65%
+source-wordcount: '1159'
+ht-degree: 39%
 
 ---
 
 
 # Éditeur en bloc{#the-bulk-editor}
 
-L’éditeur en bloc permet une modification très efficace lorsque le contexte visuel de la page n’est pas nécessaire, car il vous permet d’effectuer les opérations suivantes :
+L’éditeur en bloc permet une modification efficace lorsque le contexte visuel de la page n’est pas nécessaire, car il vous permet d’effectuer les opérations suivantes :
 
 * de chercher (et d’afficher) le contenu de plusieurs pages, à l’aide du langage de requête de Google (Google Query Language, GQL) ;
-* de modifier directement ce contenu dans l’éditeur en bloc ;
+* modifier ce contenu directement dans l’éditeur en bloc ;
 * d’enregistrer les modifications (dans les pages d’origine) ;
 * d’exporter ce contenu vers un fichier de feuille de calcul de données séparées par des tabulations (.tsv).
 
@@ -32,7 +28,7 @@ L’éditeur en bloc permet une modification très efficace lorsque le contexte 
 >
 >Vous pouvez également importer du contenu dans le référentiel, mais cette option est désactivée par défaut pour l’éditeur en bloc comme disponible dans la variable **Outils** console.
 
-Cette section décrit comment utiliser l’éditeur en bloc dans la console **Outils**. En général, les administrateurs utilisent l’éditeur en bloc pour chercher et modifier différents éléments. Cette opération est effectuée en renseignant le tableau à l’aide d’une requête GQL, puis en sélectionnant les éléments de contenu sur lesquels travailler. Les créateurs utilisent généralement l’éditeur en bloc dans le cadre d’une application d’éditeur en bloc personnalisée par le biais du composant [Liste de produits](/help/sites-authoring/default-components.md#productlist).
+Cette section décrit comment utiliser l’éditeur en bloc dans le **Outils** console. En règle générale, les administrateurs utilisent l’éditeur en bloc pour rechercher et modifier plusieurs éléments. Cette opération est effectuée en renseignant le tableau à l’aide d’une requête GQL, puis en sélectionnant les éléments de contenu sur lesquels travailler. Les auteurs utilisent généralement l’éditeur en bloc dans le cadre d’une application personnalisée de l’éditeur en bloc accessible par le biais de la [liste de produits](/help/sites-authoring/default-components.md#productlist) composant.
 
 >[!CAUTION]
 >
@@ -49,7 +45,7 @@ Le site web de Geometrixx fournit un exemple illustrant ce cas pratique :
 
    ![Exemple d&#39;enquête sur la satisfaction client](assets/custsatsurvey.png)
 
-1. L’éditeur en bloc est entièrement personnalisable, même si, dans cet exemple, il ne permet pas aux utilisateurs de modifier le contenu, mais seulement d’exporter les informations vers une feuille de calcul.
+1. L’éditeur en bloc est entièrement personnalisable. Cependant, dans cet exemple, il ne permet pas aux utilisateurs de modifier le contenu, mais seulement d’exporter les informations vers une feuille de calcul.
 
    ![Console de l’éditeur en bloc](assets/bulkeditor.png)
 
@@ -78,11 +74,11 @@ Pour utiliser l’éditeur en bloc afin de modifier plusieurs éléments simulta
   </tr>
   <tr>
    <td>Chemin racine</td>
-   <td>Indique le chemin racine que recherche l’éditeur en bloc.<br /> Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue une recherche dans tous les nœuds enfants.</td>
+   <td>Indique le chemin racine que recherche l’éditeur en bloc.<br /> Par exemple, <code>/content/geometrixx/en</code>. L’éditeur en bloc effectue des recherches sur tous les noeuds enfants.</td>
   </tr>
   <tr>
    <td>Paramètres de requête</td>
-   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel ; par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot « professional » et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est « English ». Vous pouvez rechercher uniquement des chaînes.</td>
+   <td>À l’aide des paramètres GQL, saisissez la chaîne de recherche que l’éditeur en bloc doit rechercher dans le référentiel. par exemple, <code>type:Page</code> recherche toutes les pages du chemin racine, <code>text:professional</code> recherche toutes les pages qui contiennent le mot "professionnel", et <code>"jcr:title":English</code> recherche toutes les pages dont le titre est "Anglais". Vous pouvez rechercher uniquement des chaînes.</td>
   </tr>
   <tr>
    <td>Case à cocher Mode Contenu</td>
@@ -108,7 +104,7 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 
    ![Résultats de l’éditeur en bloc](assets/chlimage_1-39.png)
 
-1. Apportez les modifications nécessaires en double-cliquant dans une cellule.
+1. Effectuez les modifications nécessaires en double-cliquant dans une cellule.
 
    ![Modification en bloc](assets/srchresultedit.png)
 
@@ -120,14 +116,14 @@ Pour l’exemple ci-dessus, toutes les pages qui correspondent aux critères de 
 
 #### Paramètres de requête GQL supplémentaires {#additional-gql-query-parameters}
 
-* **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin d’accès, seul le dernier terme sera pris en compte.
-* **type :** renvoie uniquement les nœuds des types déterminés. Cela inclut le type principal, ainsi que les types Mixin. Vous pouvez spécifier plusieurs types de nœuds séparés par des virgules. GQL renvoie les noeuds de l’un des types spécifiés.
-* **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriété séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple : order:-nom. Si vous utilisez un signe « + » (plus), le résultat est renvoyé dans l’ordre ascendant, qui est également le l’ordre par défaut.
-* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple : limit:10..20. Notez que l’intervalle est basé sur zéro, le début étant inclusif et la fin, exclusive. Vous pouvez également spécifier un intervalle ouvert :limit:10.. ou limit:..20. Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie, au maximum, ce nombre de résultats. Par exemple : limit:10 (renvoie les 10 premiers résultats).
+* **path :** effectue une recherche uniquement sur les nœuds sous ce chemin d’accès. Si vous spécifiez plusieurs termes avec un préfixe de chemin, seul le dernier est pris en compte.
+* **type :** renvoie uniquement les nœuds des types déterminés. Cela inclut les types Principal et mixin. Vous pouvez spécifier plusieurs types de noeuds séparés par des virgules. GQL renvoie les noeuds de l’un des types spécifiés.
+* **order :** organise le résultat en fonction des propriétés données. Vous pouvez spécifier plusieurs noms de propriétés séparés par des virgules. Pour contrôler le résultat dans l’ordre descendant, ajoutez simplement le préfixe « - » (moins) au nom de la propriété. Par exemple, order:-name. L’utilisation d’un signe plus renvoie le résultat dans l’ordre croissant, qui est également la valeur par défaut.
+* **limit :** limite le nombre de résultats à l’aide d’un intervalle. Par exemple, limit:10.20 L’intervalle est de base zéro, le début est inclusif et la fin est exclusive. Vous pouvez également spécifier un intervalle ouvert :limit:10.. ou limit:..20. Si les points sont omis et qu’une seule valeur est spécifiée, GQL renvoie, au maximum, ce nombre de résultats. Par exemple, limit:10 (renvoie les dix premiers résultats).
 
 ### Exportation de contenu {#exporting-content}
 
-Vous pouvez avoir besoin d’exporter du contenu et d’y apporter des modifications dans une feuille de calcul Excel. Par exemple, vous pouvez exporter une liste de diffusion et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ajouter des lignes supplémentaires, etc.
+Vous pouvez avoir besoin d’exporter du contenu et d’y apporter des modifications dans une feuille de calcul Excel. Par exemple, vous pouvez exporter une liste de diffusion et modifier l’indicatif régional de tous les numéros de téléphone répertoriés directement dans Excel, ou ajouter des lignes supplémentaires, etc.
 
 Pour exporter du contenu :
 
@@ -141,22 +137,22 @@ Pour exporter du contenu :
    ![Exporter les résultats](assets/srchrsesultexport.png)
 
 1. Sélectionnez l’emplacement et confirmez que vous souhaitez télécharger le fichier.
-1. Une fois que vous avez téléchargé le fichier, vous pouvez l’ouvrir dans votre tableur, par exemple, Microsoft Excel. Le tableur importe le fichier et le convertit au format tableur.
+1. Une fois le fichier téléchargé, vous pouvez l’ouvrir à partir de votre tableur, par exemple Microsoft® Excel. Le tableur importe le fichier et le convertit au format tableur.
 
    ![Résultats exportés dans une feuille de calcul](assets/exportinexcel.png)
 
 ### Importation de contenu {#importing-content}
 
-Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il suffit d’ajouter le paramètre `hib=false` à l’adresse URL pour afficher le bouton **Importer** dans la page Éditeur en bloc. Vous pouvez importer du contenu à partir de n’importe quel fichier de données séparées par des tabulations (`.tsv`). Pour que l’importation fonctionne correctement, les en-têtes de colonne (première ligne de cellules) doivent correspondre aux en-têtes de colonne du tableau dans lequel vous importez.
+Par défaut, la fonctionnalité d’importation est masquée lorsque vous ouvrez l’éditeur en bloc. Il vous suffit d’ajouter le paramètre . `hib=false` L’URL affiche la variable **Importer** sur la page Éditeur en bloc. Vous pouvez importer du contenu à partir de n’importe quel fichier de données séparées par des tabulations (`.tsv`). Pour que l’importation fonctionne correctement, les en-têtes de colonne (première ligne de cellules) doivent correspondre aux en-têtes de colonne du tableau dans lequel vous importez.
 
 >[!NOTE]
 >
->Lorsque vous réimportez le contenu, vous effacez le contenu existant de ces nœuds. Veillez à ne pas remplacer des informations importantes.
+>Lorsque vous réimportez du contenu, vous effacez le contenu précédent de ces noeuds. Veillez à ne pas remplacer des informations importantes.
 
 Pour importer du contenu :
 
 1. Ouvrez l’éditeur en bloc.
-1. Ajoutez `?hib=false` à l’URL, par exemple :
+1. Ajouter `?hib=false` à l’URL, par exemple :
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Cliquez sur **Importer**.
 1. Sélectionnez le fichier `.tsv`. Les données sont importées dans le référentiel.

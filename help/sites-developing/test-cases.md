@@ -1,103 +1,97 @@
 ---
 title: Définir vos cas de test
-seo-title: Defining your Test Cases
-description: Vos cas de test doivent être basés sur des cas d’utilisation et le cahier des charges détaillé
-seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
-uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
+description: Vos cas de test doivent être basés sur les cas d’utilisation et la spécification des exigences détaillées.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 33%
 
 ---
 
 # Définir vos cas de test{#defining-your-test-cases}
 
-Les cas de test doivent être basés sur les éléments suivants :
+Vos cas de test doivent être basés sur les éléments suivants :
 
 **Cas d’utilisation**
 
-* Ceux-ci définissent les fonctionnalités requises en termes d’interaction entre les acteurs (rôles qui déclenchent certaines actions) et le système.
+* Ces fonctions définissent les fonctionnalités requises en termes d’interaction entre les acteurs (rôles qui déclenchent certaines actions) et le système.
 * Les cas d’utilisation doivent être définis par le client.
 
-**Cahier des charges détaillé**
+**Spécification détaillée des exigences**
 
 * Toutes les exigences fonctionnelles et de performance doivent être testées.
 
-Les tests devraient définir clairement :
+Les tests doivent définir clairement :
 
-* Les conditions préalables : peuvent porter sur des systèmes spécifiques, des configurations ou l’expérience des testeurs.
-* Les étapes à suivre à un niveau de détail approprié.
-* Les résultats attendus.
-* Des critères clairs en matière de réussite ou d’échec.
+* les conditions préalables; il peut s’agir de systèmes, de configurations ou d’expériences de test spécifiques.
+* les étapes à suivre; à un niveau de détail approprié.
+* Résultats attendus.
+* Des critères clairs pour réussir ou échouer.
 
-L’idée d’automatiser les cas de test est évidemment intéressante car on peut ainsi éliminer les tâches répétitives.
+La perspective d’automatiser les cas de test est attrayante car elle élimine les tâches répétitives.
 
-## Tests manuels ou tests automatisés {#manual-versus-automated-tests}
+## Tests manuels ou automatisés {#manual-versus-automated-tests}
 
-Cependant, l’automatisation des cas de test est un lourd investissement. Il faut donc prendre en compte certains aspects :
+L’automatisation des cas de test constitue toutefois un investissement important. Il convient donc de prendre en compte certains aspects :
 
-* Demande du temps, des efforts et de l’expérience pour l’installation et la configuration.
-* Si les tests sont basés sur un navigateur, il existe un risque accru que des problèmes surviennent au moment où les mises à jour du navigateur sont installées. Il faut donc plus de temps pour le débogage.
-* Réellement réalisable pour les projets de grande taille seulement.
-* Intéressant si plusieurs versions sont générées pour les tests ou dans le plan de diffusion de versions à long terme.
+* La configuration et l’installation nécessitent du temps, des efforts et de l’expérience.
+* Si le navigateur est basé sur un navigateur, le risque de problèmes augmente lorsque les mises à jour du navigateur sont installées ; nécessite davantage de temps pour corriger.
+* Seulement pour les projets de grande envergure.
+* Ceci est utile lorsque plusieurs versions sont générées à des fins de test ou dans le plan de mise à jour à long terme.
 
 ## Test d’aspects spécifiques {#testing-specific-aspects}
 
-Lors du test d’AEM, certains détails sont particulièrement intéressants :
+Lors du test d’AEM, certains détails spécifiques présentent un intérêt particulier :
 
 **Environnements de création et de publication**
 
-Bien que le sujet soit traité dans [Environnements](/help/sites-developing/the-basics.md#environments), il convient de souligner un facteur déterminant dans AEM pour ce qui concerne les choix de types de tests.
+Bien que couvert par [Environnements](/help/sites-developing/the-basics.md#environments), il est intéressant de souligner un facteur décisif d’AEM concernant les tests.
 
-Vous devez traiter AEM comme s’il s’agissait de deux applications séparées :
+Considérez AEM comme deux applications :
 
 * L’environnement *Auteur*
 Cette instance permet aux auteurs de saisir et de publier du contenu.
 Elle comporte un plus petit nombre prévisible d’utilisateurs et d’utilisatrices, pour qui des fonctionnalités et des performances spécifiques sont indispensables.
 
-* l’environnement de *publication*
+* la valeur *Publier* environnement Cette instance présente le site web sous sa forme publiée pour l’accès des visiteurs.
+Elle comporte généralement un plus grand nombre d’utilisateurs pour lequel le volume de trafic n’est pas toujours prévisible à 100 %. La performance est toujours cruciale lors de la réponse aux demandes. Tenez également compte de la mise en cache et de l’équilibrage de charge.
 
-Cette instance affiche le site web sous sa forme publiée pour que les visiteurs puissent y accéder.
-Elle comporte généralement un plus grand nombre d’utilisateurs pour lequel le volume de trafic n’est pas toujours prévisible à 100 %. La performance est toujours cruciale lors de la réponse aux demandes. La mise en cache et l’équilibrage de charge doivent également être pris en compte.
+Bien que le même logiciel soit utilisé, ils :
 
-Bien qu’il s’agisse du même logiciel, les deux instances :
+* servir différents objectifs ;
+* ont des exigences différentes en ce qui concerne les fonctionnalités et les performances ;
+* sont configurés différemment ;
+* sont affinées séparément ;
+* chacun possède son propre ensemble de tests d’acceptation
 
-* ont une finalité différente
-* sont associées à des exigences différentes en ce qui concerne les fonctionnalités et les performances
-* sont configurées différemment
-* sont paramétrées séparément
-* comportent chacune leur propre ensemble de tests d’acceptation
-
-En d’autres termes, elles doivent être testées séparément et avec différents cas de test.
+En d’autres termes, ils doivent être testés séparément et avec des cas de test différents.
 
 **Personnalisation**
 
-Lors du test de personnalisation, chaque cas d’utilisation doit être répété en utilisant plusieurs comptes d’utilisateurs pour prouver le comportement.
+Lors du test de la personnalisation, chaque cas d’utilisation doit être répété à l’aide de plusieurs comptes d’utilisateurs afin de prouver son comportement.
 
-La mise en cache doit également être vérifiée pour déterminer si son comportement est normal.
+Vérifiez également que la mise en cache présente un comportement correct.
 
 **Le Dispatcher**
 
-La plupart des projets installent le dispatcher pour la mise en cache et l’équilibrage de charge.
+La plupart des projets installent Dispatcher pour la mise en cache et l’équilibrage de charge.
 
-Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
+Les tests sont difficiles (la mise en cache se fait à différents niveaux et à divers endroits) et doivent être réalisés en boîte noire. Les aspects clés à tester sont les suivants :
 
 * **Précision**
-Assurez-vous que les mises à jour du contenu sont visibles pour les visiteurs sur le site.
+Vérifie que les mises à jour du contenu sont visibles par le visiteur du site web.
 
 * **Continuité**
 Assurez-vous que le site web est toujours disponible lorsqu’un serveur est arrêté.
 
 * **Clusters**
-Les clusters sont utilisés pour garantir :
+Utilisé pour fournir les éléments suivants :
 
    * **Basculement**
 Si un serveur tombe en panne, les autres serveurs du cluster prennent le relais.

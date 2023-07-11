@@ -1,17 +1,17 @@
 ---
-source-git-commit: 99d38dddbcd06fecb82c744d446b9cef981e0781
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 66%
 
 ---
 # Instructions relatives à la contribution à la documentation d’Adobe Experience Manager
 
 ## Philosophie de la documentation
 
-Nous savons que les utilisateurs d’Adobe Experience Manager travaillent dans des environnements très concurrentiels, afin de créer des expériences numériques qui les distingueront de leurs concurrents. Par conséquent, lorsqu’Adobe fournit de nouveaux outils avancés dans AEM, il est essentiel que ces outils soient complétés par une documentation précise et claire pour permettre au client d’exploiter immédiatement son investissement AEM et maximiser le ROI.
+Adobe sait que les utilisateurs d’Adobe Experience Manager travaillent dans des environnements très concurrentiels, afin de créer des expériences numériques qui les distinguent de leurs concurrents. Par conséquent, il est essentiel que, lorsque Adobe fournit de nouveaux outils avancés dans AEM, ces outils soient complétés par une documentation précise et claire pour permettre au client d’utiliser immédiatement son investissement AEM et maximiser le ROI.
 
-L’objectif de la documentation AEM est de la placer entre les mains des utilisateurs d’AEM dès que possible. Nous privilégions donc une documentation précise et utilisable, et nous la mettons à jour et l’améliorons constamment.
+L’objectif de la documentation AEM est de la placer entre les mains des utilisateurs d’AEM dès que possible. Par conséquent, Adobe donne la priorité à une documentation précise et utilisable et s’efforce de la mettre à jour et de l’améliorer continuellement.
 
 ## Contributions à la documentation
 
@@ -19,17 +19,17 @@ Afin d’améliorer continuellement la documentation d’AEM, toute la communaut
 
 ## Normes de la documentation
 
-Bien que nous nous félicitions des contributions à notre documentation, toute contribution à la documentation d’AEM, sous la forme d’une requête d’extraction ou d’un problème, doit être conforme à nos normes de contribution et de documentation.
+Bien qu’Adobe accueille favorablement les contributions à notre documentation, toute contribution à la documentation d’AEM, sous la forme d’une demande d’extraction ou d’un problème, doit être conforme à nos normes de contribution et de documentation.
 
 Les contributions qui ne satisfont pas à ces normes peuvent être rejetées.
 
-### Nous documenterons les cas d’utilisation standard.
+### Cas d’utilisation standard du document.
 
 La documentation d’AEM couvre les cas d’utilisation standard. Les cas d’utilisation au-delà de la portée de l’installation et de l’utilisation standard du produit ne font pas partie de la documentation AEM.
 
-### En général, nous ne documentons pas les bogues ni leurs solutions.
+### La documentation ne documente généralement pas les bogues ni leurs solutions.
 
-La documentation d’AEM couvre les cas d’utilisation standard. Pour cette raison, les bogues, leurs effets et leurs solutions ne sont généralement pas documentés.
+La documentation d’AEM couvre les cas d’utilisation standard. Pour cette raison, les bogues, les effets causés par les bogues et les solutions aux bogues ne sont généralement pas documentés.
 
 Les exceptions à cette règle concernent les notes de mise à jour qui répertorient les problèmes connus ainsi que les solutions possibles après approbation par l’équipe de gestion des produits AEM.
 
@@ -37,15 +37,15 @@ Les exceptions à cette règle concernent les notes de mise à jour qui réperto
 
 Toute opinion susceptible d’améliorer la documentation AEM est la bienvenue sous forme de contributions. Toutefois, les commentaires, les demandes et les demandes d’extraction sont destinés uniquement aux *contributions*. Leur finalité n’est pas de répondre à vos questions sur l’utilisation et la mise en œuvre d’AEM ou la résolution de problèmes techniques.
 
-Toute question relative à l’utilisation d’AEM ou à la résolution d’erreurs techniques doit être soumise au moyen du processus d’assistance classique via le [Portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) ou posée à la [communauté Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Toute question relative à l’utilisation d’AEM ou à la résolution d’erreurs techniques doit être soumise au moyen du processus d’assistance classique via le [Portail d’assistance d’Experience Manager](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=fr#support) ou posée à la [communauté Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr).
 
 ***Les contributions à la documentation d’AEM ne remplacent pas celles du service clientèle Adobe*** et toute contribution de ce type qui recherche des réponses aux questions liées au support technique sera rejetée.
 
 ### Les contributions doivent clairement référencer les pages de documentation concernées.
 
-Si vous créez une demande pour suggérer des améliorations à la documentation, vous devez inclure des liens vers les pages concernées. Si vous créez un problème à l’aide du lien **Modifier cette page** sur une page de documentation, le problème sera créé automatiquement avec un lien vers la page.
+Si vous créez une demande pour suggérer des améliorations à la documentation, vous devez inclure des liens vers les pages concernées. Si vous créez un problème en utilisant la variable **Modifier cette page** sur une page de documentation, le problème est automatiquement créé avec un lien vers la page.
 
-Cette méthode ne s’applique pas aux requêtes d’extraction qui, par nature, font référence à la page ou aux pages concernées.
+Cette méthode ne s’applique pas aux requêtes d’extraction qui, par nature, font référence aux pages concernées.
 
 ## Directives relatives à la documentation
 
@@ -61,11 +61,11 @@ Suivre ces directives facilite la révision et l’intégration rapide de votre 
 * Veillez à ce que les expressions restent le plus simple possible.
 * Restez clair et concis.
 
-Souvenez-vous que les lecteurs de la documentation AEM sont internationaux et peuvent ne pas être des locuteurs anglais natifs ou bilingues. Évitez les expressions familières et restez aussi clair et simple que possible.
+N’oubliez pas que les lecteurs de la documentation AEM sont internationaux et ne peuvent pas être des locuteurs anglais natifs ou bilingues. Évitez les expressions familières et restez aussi clair et simple que possible.
 
-#### Suivi du guide de style Microsoft
+#### Suivez le guide de style de Microsoft®
 
-[Le guide de style Microsoft](https://docs.microsoft.com/fr-fr/style-guide/welcome/) est gratuit et concerne la documentation logicielle. Il s’applique à la documentation AEM, dans la mesure du possible.
+[Le guide de style de Microsoft®](https://learn.microsoft.com/en-us/style-guide/welcome/) est un guide de style de documentation gratuit qui se concentre sur la documentation logicielle et AEM documentation suit ce guide dans la mesure du possible.
 
 ### Mise en forme
 
