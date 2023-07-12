@@ -1,19 +1,15 @@
 ---
 title: Ajout de bibliothèques clientes
-seo-title: Add Clientlibs
 description: Ajout d’un dossier ClientLibraryFolder
-seo-description: Add a ClientLibraryFolder
-uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 7%
 
 ---
@@ -30,7 +26,7 @@ Le `categories` La valeur de propriété donnée à cette bibliothèque cliente 
 
 1. Clic droit `an-scf-sandbox` et sélectionnez `Create Node`
 
-   * Nom : `clientlibs`
+   * Nom : `clientlibs`.
    * Type : `cq:ClientLibraryFolder`
 
 1. Cliquez sur **OK**
@@ -39,13 +35,13 @@ Le `categories` La valeur de propriété donnée à cette bibliothèque cliente 
 
 Dans le **Propriétés** pour le nouvel onglet `clientlibs` , saisissez le **categories** property:
 
-* Nom :**catégories**
-* Type : **Chaîne**
+* Nom : **categories**
+* Type :**chaîne**
 * Valeur : **apps.an-scf-sandbox**
 * Cliquez sur **Ajouter**
 * Cliquez sur **Enregistrer tout**
 
-Remarque : la préface de la valeur categories avec &quot;apps&quot;. est une convention permettant d’identifier &quot;l’application propriétaire&quot; comme se trouvant dans le dossier /apps, et non /libs.  IMPORTANT : Ajouter un espace réservé `js.tx`t et **`css.txt`** fichiers . (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans ces éléments.)
+Remarque : la préface de la valeur categories avec &quot;apps&quot;. est une convention permettant d’identifier &quot;l’application propriétaire&quot; comme se trouvant dans le dossier /apps, et non /libs. IMPORTANT : Ajouter un espace réservé `js.tx`t et **`css.txt`** fichiers . (Il ne s’agit pas officiellement d’un cq:ClientLibraryFolder sans ces éléments.)
 
 1. Faites un clic-droit **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Sélectionner **Créer un fichier...**
@@ -77,7 +73,7 @@ Créez ensuite un fichier sous clientlibs nommé style.css et définissez le con
 
 Dans le **Propriétés** pour la `clientlibs` , saisissez la propriété String à plusieurs valeurs. **embed**. Cela incorpore les [bibliothèques côté client (clientlibs) pour les composants SCF](/help/communities/client-customize.md#clientlibs-for-scf). Pour ce tutoriel, de nombreuses clientlibs nécessaires aux composants Communities sont ajoutées.
 
-**Remarque** qu’il s’agit ou non de l’approche souhaitée à utiliser pour un site de production, car il y a des considérations pratiques par rapport à la taille/vitesse des clientlibs téléchargées pour chaque page.
+Il peut s’agir de l’approche souhaitée pour un site de production, car il y a des considérations pratiques par rapport à la taille/vitesse des clientlibs téléchargées pour chaque page.
 
 Si vous utilisez une seule fonction sur une page, vous pouvez inclure la bibliothèque cliente complète de cette fonction directement sur la page, par exemple :
 
@@ -85,7 +81,7 @@ Si vous utilisez une seule fonction sur une page, vous pouvez inclure la bibliot
 
 Dans ce cas, incluez-les toutes et ainsi, les clientlibs SCF les plus basiques qui sont les clientlibs de création sont préférées :
 
-* Nom : **`embed`**
+* Nom : **`embed`**.
 * Type : **`String`**
 * Cliquez sur **`Multi`**
 * Valeur : **`cq.social.scf`**
@@ -110,7 +106,7 @@ Voici comment `/etc/designs/an-scf-sandbox/clientlibs` doit maintenant apparaît
 
 ### Inclure les bibliothèques clientes dans le modèle PlayPage {#include-clientlibs-in-playpage-template}
 
-Sans inclure la variable `apps.an-scf-sandbox` Dans la catégorie ClientLibraryFolder de la page, les composants SCF ne seront ni fonctionnels ni stylisés, car le ou les codes JavaScript et le ou les styles nécessaires ne seront pas disponibles.
+Sans inclure la variable `apps.an-scf-sandbox` Catégorie ClientLibraryFolder sur la page, les composants SCF ne sont pas fonctionnels ni mis en forme, car le code JavaScript et les styles nécessaires ne sont pas disponibles.
 
 Par exemple, sans inclure les clientlibs, le composant de commentaires SCF apparaît sans style :
 
@@ -153,18 +149,18 @@ Chargez votre site web dans le navigateur et vérifiez si l’arrière-plan n’
 
 ### Sauver votre travail jusqu&#39;à présent {#saving-your-work-so-far}
 
-À ce stade, il existe un environnement de test minimaliste. Il peut être intéressant d’enregistrer sous la forme d’un package. Ainsi, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez recommencer, vous pouvez désactiver votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, sans avoir à répéter ces étapes les plus élémentaires.
+À ce stade, il existe un environnement de test minimaliste. Il peut être intéressant de l’enregistrer sous la forme d’un package. Ainsi, lors de la lecture, si votre référentiel est corrompu et que vous souhaitez recommencer, vous pouvez désactiver votre serveur, renommer ou supprimer le dossier crx-quickstart/, activer votre serveur, télécharger et installer ce package enregistré, sans avoir à répéter ces étapes les plus basiques.
 
-Ce module existe sur la variable [Création d’un exemple de page](/help/communities/create-sample-page.md) tutoriel pour ceux qui ne peuvent pas attendre d&#39;entrer et de commencer à jouer !..
+Ce module existe sur la variable [Création d’un exemple de page](/help/communities/create-sample-page.md) tutoriel pour ceux qui ne peuvent pas attendre d’entrer et de commencer à jouer !...
 
 Pour créer un package :
 
 * Dans le CRXDE Lite, cliquez sur [Icône Package](https://localhost:4502/crx/packmgr/)
-* Cliquez sur **Créer un module**
+* Cliquez sur **Créer un package**
 
    * Nom du module : an-scf-sandbox-minimal-pkg
    * Version : 0,1
-   * Groupe: `leave as default`
+   * Groupe : `leave as default`
    * Cliquez sur **OK**
 
 * Cliquez sur **Modifier**
@@ -180,9 +176,9 @@ Pour créer un package :
       * Cliquez sur **Ajouter un filtre**
       * Chemin racine : accédez à `/content/an-scf-sandbox**`
       * Cliquez sur **Terminé**
+
    * Cliquez sur **Enregistrer**
 
+* Cliquez sur **Concevoir**
 
-* Cliquez sur **Build**
-
-Maintenant, vous pouvez sélectionner **Télécharger** pour l’enregistrer sur le disque et **Télécharger le module** ailleurs, puis sélectionnez **Plus > Répliquer** afin de pousser l’environnement de test vers une instance de publication localhost pour développer le domaine de votre environnement de test.
+Maintenant, vous pouvez sélectionner **Télécharger** pour l’enregistrer sur le disque et **Télécharger le module** ailleurs, puis sélectionnez **Plus > Répliquer** pour envoyer l’environnement de test vers une instance de publication localhost afin de développer le domaine de votre environnement de test.

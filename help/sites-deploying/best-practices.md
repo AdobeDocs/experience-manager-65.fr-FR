@@ -1,29 +1,25 @@
 ---
 title: Meilleures pratiques de déploiement
-seo-title: Deploying Best Practices
-description: Meilleures pratiques de déploiement et de maintenance.
-seo-description: Deploying and maintaining best practices.
-uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
+description: Bonnes pratiques en matière de déploiement et de maintenance.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '430'
-ht-degree: 100%
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 80%
 
 ---
 
 # Meilleures pratiques de déploiement{#deploying-best-practices}
 
-Les meilleures pratiques de déploiement expliquent comment déployer ou maintenir AEM de la façon la plus efficace possible. Cette liste croissante de rubriques inclut une variété d’aspects dans AEM.
+Les bonnes pratiques de déploiement décrivent comment déployer ou gérer Adobe Experience Manager (AEM) de la manière la plus efficace possible. Cette liste croissante de sujets englobe divers domaines d’AEM.
 
 Les recommandations et meilleures pratiques de déploiement et de maintenance sont documentées pour les aspects suivants :
 
-* [OAK](#oak)
+* [Oak](#oak)
 * [Communities](#communities)
 * [Interface utilisateur](#ui)
 * [Performances](#performance)
@@ -34,9 +30,9 @@ Pour les bonnes pratiques d’administration, de développement ou de création,
 * [Bonnes pratiques de développement](/help/sites-developing/best-practices.md)
 * [Bonnes pratiques de création](/help/sites-authoring/best-practices.md)
 
-Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont reliés.
+Les documents spécifiques sont décrits et associés dans les tableaux qui suivent.
 
-## OAK {#oak}
+## Oak {#oak}
 
 [Oak](/help/sites-deploying/platform.md) est un référentiel de contenu hiérarchique évolutif et performant qui constitue la base d’AEM.
 
@@ -48,7 +44,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
    <td>Livre blanc sur l’agilité technique, les performances élevées et les fonctionnalités fiables de reprise après sinistre.</td>
   </tr>
   <tr>
-   <td>Déploiements OAK recommandés</td>
+   <td>Déploiements Oak recommandés</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Déploiements recommandés</a></td>
    <td>Décrit les scénarios de déploiement</td>
   </tr>
@@ -60,10 +56,10 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
   <tr>
    <td>Options de magasin de données</td>
    <td><a href="/help/sites-deploying/data-store-config.md">Configuration des entrepôts de nœuds et des magasins de données</a></td>
-   <td>Ce document explique les bonnes pratiques relatives au stockage de données binaires et de nœuds de contenu. Inclut des informations sur l’utilisation du magasin de données Amazon S3.</td>
+   <td>Ce document explique les bonnes pratiques relatives au stockage de données binaires et de nœuds de contenu. Inclut des informations sur l’utilisation de l’entrepôt de données Amazon S3.</td>
   </tr>
   <tr>
-   <td>Recherche dans OAK</td>
+   <td>Recherche dans Oak</td>
    <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Bonnes pratiques relatives aux requêtes et à l’indexation</a><br /> </td>
    <td>Décrit les bonnes pratiques relatives à l’indexation du contenu.</td>
   </tr>
@@ -74,7 +70,7 @@ Des documents spécifiques sont décrits dans les tableaux qui suivent et y sont
 
 AEM Communities simplifie la création et la gestion des communautés sur site. Les bonnes pratiques pour AEM Communities sont présentées ici :
 
-[Stockage de contenu de la communauté](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité de stockage partagé pour le contenu généré par l’utilisateur et des considérations à prendre en compte pour le choix de la [topologie](/help/communities/topologies.md) sous-jacente.
+[Community Content Store](/help/communities/working-with-srp.md) - Discute de la nouvelle fonctionnalité de stockage partagé pour le contenu généré par l’utilisateur et des considérations à prendre en compte pour le choix du sous-jacent [topologie](/help/communities/topologies.md).
 
 [Déploiements recommandés pour les communautés](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Décrit les déploiements recommandés pour les communautés. |
 
@@ -88,18 +84,18 @@ AEM dispose actuellement de deux interfaces utilisateur : l’IU classique et l
 
 ## Performances {#performance}
 
-Les meilleures pratiques relatives à la performance sont répertoriées ici :
+Les bonnes pratiques relatives aux performances sont répertoriées ici :
 
 <table>
  <tbody>
   <tr>
    <td>Bonnes pratiques pour l’assurance qualité</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Bonnes pratiques pour l’assurance qualité</a></td>
-   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Cela s’adresse principalement aux ingénieur(e)s en assurance qualité, aux chefs de projet et aux administrateurs et administratrices système.</td>
+   <td>Un aperçu normalisé des problèmes liés à la définition d’un concept de test, en particulier pour les tests de performance sur votre environnement de <em>publication</em>. Cette s’adresse principalement aux ingénieures et ingénieurs en assurance qualité, aux cheffes et chefs de projet et aux administrateurs et administratrices système.</td>
   </tr>
   <tr>
    <td>Utilisation de Dispatcher avec un CDN</td>
-   <td><a href="https://helpx.adobe.com/fr/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr#using-dispatcher-with-a-cdn">Utilisation de Dispatcher avec un CDN</a></td>
    <td>Un réseau de distribution de contenu (CDN), par exemple Akamai Edge Delivery ou Amazon Cloud Front, distribue du contenu à partir d’un emplacement proche de l’utilisateur final.</td>
   </tr>
   <tr>

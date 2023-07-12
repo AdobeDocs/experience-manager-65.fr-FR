@@ -1,24 +1,19 @@
 ---
 title: Création D’Un Environnement De Test SCF
-seo-title: Create An SCF Sandbox
-description: Ce tutoriel est principalement destiné aux développeurs qui découvrent AEM et qui souhaitent utiliser des composants SCF.  Il passe en revue la création d’un site Sandbox SCF.
-seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
+description: Ce tutoriel est principalement destiné aux développeurs qui découvrent AEM et qui souhaitent utiliser des composants SCF. Il passe en revue la création d’un site Sandbox SCF.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 1%
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
 # Création D’Un Environnement De Test SCF  {#create-an-scf-sandbox}
-
 
 À partir de AEM 6.1 Communities, le moyen le plus simple de créer rapidement un environnement de test est de créer un site de communauté. Voir [Prise en main d’AEM Communities](getting-started.md).
 
@@ -26,7 +21,7 @@ Un autre outil utile pour les développeurs est : [Guide des composants de commu
 
 L’exercice de création d’un site web peut s’avérer utile pour comprendre la structure d’un site web d’AEM qui peut inclure des fonctionnalités de communauté, tout en fournissant des pages simples sur lesquelles explorer l’utilisation des [structure de composants sociaux (SCF)](scf.md).
 
-Ce tutoriel est principalement destiné aux développeurs qui découvrent AEM et qui souhaitent utiliser des composants SCF. Il décrit la création d’un site Sandbox SCF, semblable au tutoriel pour [Création d’un site web complet](../../help/sites-developing/website.md) qui se concentre sur les structures du site, telles que la navigation, le logo, la recherche, la barre d’outils et la liste des pages enfants.
+Ce tutoriel est principalement destiné aux développeurs qui découvrent AEM et qui souhaitent utiliser des composants SCF. Il décrit la création d’un site Sandbox SCF, semblable au tutoriel pour [Création d’un site web complet](../../help/sites-developing/website.md) qui met l’accent sur les structures sur site, telles que la navigation, le logo, la recherche, la barre d’outils et la liste des pages enfants.
 
 Le développement a lieu sur une instance d’auteur, tandis que l’expérimentation du site est préférable sur une instance de publication.
 
@@ -41,7 +36,7 @@ Les étapes de ce tutoriel sont les suivantes :
 
 >[!CAUTION]
 >
->Ce tutoriel ne crée pas de site de communauté avec la fonctionnalité créée à l’aide de la fonction [Console Sites Communities](sites-console.md). Par exemple, ce tutoriel ne décrit pas comment configurer la connexion, l’auto-inscription, [connexion sociale](social-login.md), messagerie, profils, etc.
+>Ce tutoriel ne crée pas de site de communauté avec la fonctionnalité créée à l’aide de la fonction [Console Sites Communities](sites-console.md). Par exemple, ce tutoriel ne décrit pas comment configurer la connexion, l’enregistrement automatique, [connexion sociale](social-login.md), messagerie, profils, etc.
 >
 >Si vous préférez un site communautaire simple, suivez la [Création d’un exemple de page](create-sample-page.md) tutoriel .
 
@@ -74,13 +69,13 @@ Une fois connecté avec des privilèges d’administrateur, vous pouvez accéder
 
    Par exemple, sur une instance d’auteur locale : [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-Pour travailler avec CRXDE Lite, vous devez vous connecter avec les privilèges de développeur ou d’administrateur. Pour l’instance localhost par défaut, vous pouvez vous connecter avec
+Pour travailler avec CRXDE Lite, vous devez vous connecter avec des privilèges de développeur ou d’administrateur. Pour l’instance localhost par défaut, vous pouvez vous connecter avec
 
 * `username: admin`
 * `password: admin`
 
 
-**Soyez conscient** que cette connexion expire et que vous devez vous reconnecter régulièrement à l’aide du menu déroulant situé à droite de la barre d’outils CRXDe Lite.
+Cette connexion expire et vous devez vous reconnecter régulièrement à l’aide du menu déroulant situé à l’extrémité droite de la barre d’outils du CRXDE Lite.
 
 Si vous ne vous connectez pas, vous ne pourrez pas parcourir le référentiel JCR ni effectuer des opérations de modification/enregistrement.
 
