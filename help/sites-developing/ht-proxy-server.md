@@ -1,42 +1,38 @@
 ---
 title: Utilisation de l’outil de serveur proxy
-seo-title: How to use the Proxy Server Tool
 description: Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur
-seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
-uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '943'
-ht-degree: 100%
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 26%
 
 ---
 
 # Utilisation de l’outil de serveur proxy{#how-to-use-the-proxy-server-tool}
 
-Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Il effectue le suivi de toutes les interactions client/serveur et crée un journal de l’ensemble de la communication TCP. Vous pouvez ainsi surveiller ce qui se passe, sans avoir à accéder au serveur principal.
+Le serveur proxy joue le rôle d’un serveur intermédiaire qui relaie les demandes entre un client et un serveur. Le serveur proxy effectue le suivi de toutes les interactions client-serveur et génère un journal de l’ensemble de la communication TCP. Vous pouvez ainsi contrôler ce qui se passe exactement, sans avoir à accéder au serveur principal.
 
 Dans votre installation AEM, le serveur proxy figure à cet emplacement :
 
 `crx-quickstart/opt/helpers/proxy-2.1.jar`
 
-Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions client/serveur, quel que soit le protocole de communication sous-jacent. Vous pouvez, par exemple, surveiller les protocoles suivants :
+Vous pouvez utiliser le serveur proxy pour surveiller toutes les interactions client/serveur, quel que soit le protocole de communication sous-jacent. Par exemple, vous pouvez surveiller les protocoles suivants :
 
 * HTTP pour les pages web
-* HTTPS pour les pages web sécurisées
-* SMTP pour les messages électroniques
+* HTTPS pour les pages Web sécurisées
+* SMTP pour les emails
 * LDAP pour la gestion des utilisateurs
 
-Vous pouvez, par exemple, placer le serveur proxy entre deux applications qui communiquent par un réseau TCP/IP, par exemple, un navigateur web et AEM. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page CQ.
+Par exemple, vous pouvez positionner le serveur proxy entre deux applications qui communiquent via un réseau TCP/IP ; par exemple, un navigateur web et un AEM. Vous pouvez ainsi surveiller ce qui se passe exactement lorsque vous demandez une page CQ.
 
 ## Démarrage de l’outil de serveur proxy {#starting-the-proxy-server-tool}
 
-Démarrez le serveur à l’aide d’une ligne de commande :
+Démarrez le serveur sur la ligne de commande :
 
 `java -jar proxy-2.1.jar <host> <remoteport> <localport> [options]`
 
@@ -44,7 +40,7 @@ Démarrez le serveur à l’aide d’une ligne de commande :
 
 `<host>`
 
-Il s’agit de l’adresse de l’hôte de l’instance CRX à laquelle vous souhaitez vous connecter. Si l’instance se trouve sur votre ordinateur local, il s’agit de `localhost`.
+Il s’agit de l’adresse de l’hôte de l’instance CRX à laquelle vous souhaitez vous connecter. Si l’instance se trouve sur votre ordinateur local, voici la `localhost`.
 
 `<remoteport>`
 
@@ -52,29 +48,29 @@ Il s’agit du port de l’hôte de l’instance CRX cible. Par exemple, le port
 
 `<localport>`
 
-Il s’agit du port de votre ordinateur local auquel vous souhaitez vous connecter pour accéder à l’instance CRX par le biais du proxy.
+Il s’agit du port sur votre ordinateur local que vous souhaitez connecter pour accéder à l’instance CRX via le proxy.
 
 **Options**
 
 `-q` (mode silencieux)
 
-N’écrit pas la sortie dans la fenêtre de la console. Utilisez cette option si vous ne souhaitez pas ralentir la connexion ou si vous voulez consigner la sortie dans un journal (voir l’option -logfile).
+N’écrit pas la sortie dans la fenêtre de la console. Utilisez cette option si vous ne souhaitez pas ralentir la connexion ou si vous enregistrez la sortie dans un fichier (voir option -logfile ).
 
 `-b` (mode binaire)
 
-Si vous recherchez des combinaisons de bits spécifiques dans le trafic, activez le mode binaire. La sortie contient alors la sortie sous forme hexadécimale et de caractères.
+Si vous recherchez des combinaisons d’octets spécifiques dans le trafic, activez le mode binaire. La sortie contiendra alors la sortie hexadécimale et la sortie de caractères.
 
 `-t` (horodatage des entrées du journal)
 
-Ajoute un horodatage à chaque sortie du journal. L’horodatage est en secondes. Il n’est donc peut-être pas adapté à la recherche de demandes uniques. Utilisez cette option pour rechercher des événements qui se sont produits à une heure spécifique si vous utilisez le serveur proxy pendant une longue période.
+Ajoute un horodatage à chaque sortie de journal. L’horodatage est en secondes. Il n’est donc peut-être pas adapté à la recherche de demandes uniques. Utilisez-le pour localiser les événements qui se sont produits à un moment spécifique si vous utilisez le serveur proxy sur une période plus longue.
 
 `-logfile <filename>` (pour écrire dans le fichier journal)
 
-Écrit la communication client-serveur dans un fichier journal. Ce paramètre fonctionne également en mode silencieux.
+Écrit la conversation client-serveur dans un fichier journal. Ce paramètre fonctionne également en mode silencieux.
 
 **`-i <numIndentions>`** (pour ajouter une mise en retrait)
 
-Chaque connexion active est mise en retrait pour une plus grande lisibilité. La valeur par défaut est de 16 niveaux. Cette fonctionnalité a été ajoutée à `proxy.jar version 1.16`.
+Chaque connexion principale est mise en retrait pour une meilleure lisibilité. La valeur par défaut est de 16 niveaux. Cette fonctionnalité a été ajoutée à `proxy.jar version 1.16`.
 
 ### Format du journal {#log-format}
 
@@ -82,13 +78,13 @@ Toutes les entrées du journal générées par proxy-2.1.jar ont le format suiva
 
 `[timestamp (optional)] [Client|Server]-[ConnectionNumber]-[BytePosition] ->[Character Stream]`
 
-Une demande de page web peut par exemple ressembler à cette entrée :
+Par exemple, une requête pour une page Web peut se présenter comme suit :
 
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
-* C signifie que cette entrée provient du client (il s’agit d’une demande de page web).
-* 0 correspond au nombre de connexions (le nombre de connexions commence à 0).
-* 00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
+* C signifie que cette entrée provient du client (il s’agit d’une demande de page Web).
+* 0 est le numéro de connexion (le compteur de connexions commence à 0)
+* #00000 correspond au décalage dans le flux de bits. Comme il s’agit de la première entrée, le décalage est de 0.
 * `[GET <?>]` correspond au contenu de la demande. Dans cet exemple, il s’agit de l’un des en-têtes HTTP (url).
 
 Lorsqu’une connexion se ferme, les informations suivantes sont consignées :
@@ -98,19 +94,19 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Elles indiquent le nombre de bits passés entre le client (`C`) et le serveur (`S`) au cours de la 6e connexion et à la vitesse moyenne.
+Cela indique le nombre d’octets transmis entre le client ( `C`) et le serveur ( `S`) sur la sixième connexion et à la vitesse moyenne.
 
 **Exemple de sortie de journal**
 
-À titre d’exemple, prenez une page qui génère le code suivant lors de la demande :
+Prenons l’exemple d’une page qui génère le code suivant si nécessaire :
 
 ### Exemple {#example}
 
-À titre d’exemple, prenez un document html très simple situé dans le référentiel dans :
+Par exemple, prenez un document HTML simple dans le référentiel à l’adresse
 
 `/content/test.html`
 
-avec un fichier image situé dans
+En plus d’un fichier image sur
 
 `/content/test.jpg`
 
@@ -128,26 +124,26 @@ Le contenu de `test.html` est le suivant :
 </html>
 ```
 
-En supposant que l’instance AEM s’exécute sur `localhost:4502`, le proxy est démarré de la manière suivante :
+En supposant que l’instance AEM est en cours d’exécution `localhost:4502`, le proxy est démarré comme suit :
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-L’instance CQ/CRX est maintenant accessible via le proxy à `localhost:4444`. Toutes les communications via ce port sont consignées dans `test.log`.
+L’instance CQ/CRX est maintenant accessible via le proxy à l’adresse `localhost:4444` et toute communication via ce port est connectée à `test.log`.
 
-La sortie du proxy montre l’interaction entre le navigateur et l’instance AEM.
+Si vous observez maintenant la sortie du proxy, vous voyez l’interaction entre le navigateur et l’instance AEM.
 
-Au démarrage, le proxy génère la sortie suivante :
+Au démarrage, le proxy génère les résultats suivants :
 
 ```xml
 starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-Nous ouvrons ensuite un navigateur et nous accédons à la page de test :
+Ouvrez maintenant un navigateur et accédez à la page de test :
 
 `http://localhost:4444/content/test.html`
 
-Nous pouvons voir que le navigateur effectue une demande `GET` pour la page :
+Et vous voyez que le navigateur crée une `GET` requête pour la page :
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -188,17 +184,17 @@ S-0-#000319 -> [</html>]
 
 ### Utilisations du serveur proxy {#uses-of-the-proxy-server}
 
-Les scénarios suivants montrent à quelles fins le serveur proxy peut être utilisé :
+Les scénarios suivants illustrent quelques-uns des objectifs pour lesquels le serveur proxy peut être utilisé :
 
-**Recherche de cookies et de leur valeur**
+**Rechercher les cookies et leurs valeurs**
 
-L’entrée de journal suivante montre tous les cookies et leur valeur envoyés par le client à la sixième connexion ouverte depuis le démarrage du proxy :
+L’exemple d’entrée de journal suivant montre tous les cookies et leurs valeurs envoyés par le client lors de la sixième connexion ouverte depuis le démarrage du proxy :
 
 `C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]`
 
 **Recherche d’en-têtes et de leur valeur**
 
-L’entrée de journal suivante montre que le serveur est capable d’effectuer une connexion persistante et que l’en-tête de longueur du contenu est configuré correctement :
+L’exemple d’entrée de journal suivant montre que le serveur peut établir une connexion persistante et que l’en-tête de longueur du contenu a été correctement défini :
 
 ```
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -208,27 +204,27 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Vérification du fonctionnement de la connexion persistante**
 
-Une connexion persistante est une fonctionnalité HTTP qui permet de réutiliser une connexion TCP au serveur pour effectuer plusieurs demandes (pour le code de page, les images, les feuilles de style, etc.). Sans connexion persistante, le client doit établir une nouvelle connexion pour chaque demande.
+La connexion persistante est une fonctionnalité de HTTP qui permet à un client de réutiliser la connexion TCP au serveur pour effectuer plusieurs requêtes (pour le code de page, les images, les feuilles de style, etc.). Sans persistance, le client doit établir une nouvelle connexion pour chaque demande.
 
-Pour vérifier si la connexion persistante fonctionne :
+Pour vérifier si la persistance fonctionne :
 
 * Démarrez le serveur proxy.
 * Demandez une page.
-* Si la connexion persistante fonctionne, le nombre de connexions ne doit pas dépasser 5 à 10.
-* Si la connexion persistante ne fonctionne pas, le nombre de connexions augmente rapidement.
+* Si la connexion persistante fonctionne, le compteur de connexions ne doit jamais dépasser 5 à 10 connexions.
+* Si la connexion persistante ne fonctionne pas, le compteur de connexions augmente rapidement.
 
-**Recherche de demandes perdues**
+**Recherche de requêtes perdues**
 
-Si vous perdez des demandes dans une configuration de serveur complexe (avec un pare-feu et un répartiteur, par exemple), vous pouvez utiliser le serveur proxy pour déterminer où les demandes ont été perdues. Dans le cas d’un pare-feu :
+Si vous perdez des requêtes dans un paramètre de serveur complexe, par exemple avec un pare-feu et un Dispatcher, vous pouvez utiliser le serveur proxy pour déterminer où la requête a été perdue. S’il existe un pare-feu :
 
-* Démarrez un proxy avant un pare-feu.
-* Démarrez un autre proxy avant un pare-feu.
-* Déterminez jusqu’où vont les demandes.
+* Démarrage d’un proxy avant un pare-feu
+* Démarrage d’un autre proxy après un pare-feu
+* Utilisez-les pour voir jusqu’où vont les demandes.
 
 **Demandes en suspens**
 
-Si, de temps en temps, des demandes sont en suspens :
+Si vous rencontrez des requêtes de blocage de temps en temps :
 
 * Démarrez le proxy.
-* Patientez ou écrivez le journal des accès dans un fichier en horodatant chaque entrée.
-* Lorsque la demande est suspendue, vous pouvez déterminer le nombre de connexions ouvertes et la demande à la source du problème.
+* Attendez ou écrivez le journal des accès dans un fichier avec chaque entrée ayant un horodatage.
+* Lorsque la requête commence à être suspendue, vous pouvez voir le nombre de connexions ouvertes et la requête qui pose problème.

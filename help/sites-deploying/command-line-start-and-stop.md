@@ -1,29 +1,25 @@
 ---
 title: Démarrer et arrêter AEM à partir de la ligne de commande
-seo-title: Command Line Start and Stop
-description: Découvrez comment démarrer et arrêter AEM à partir de la ligne de commande.
-seo-description: Learn how to start and stop AEM from the command line.
-uuid: 585f071c-2286-4a2c-af07-404bf298cba8
+description: Découvrez comment démarrer et arrêter Adobe Experience Manager à partir de la ligne de commande.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 40%
 
 ---
 
 # Démarrer et arrêter AEM à partir de la ligne de commande{#command-line-start-and-stop}
 
-## Démarrage d’Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
+## Démarrage d’Adobe Experience Manager à partir de la ligne de commande {#starting-adobe-experience-manager-from-the-command-line}
 
-Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour Unix et Windows. Le script démarre l’instance installée dans le répertoire *&lt;cq-installation>*.
+Le script `start` est disponible dans le répertoire *&lt;cq-installation>/bin*. Les versions UNIX® et Windows sont fournies. Le script démarre l’instance installée dans *&lt;cq-installation>* répertoire .
 
-Les deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et configurer l’instance AEM.
+Ces deux versions prennent en charge une liste de variables d’environnement qui peuvent être utilisées pour démarrer et optimiser l’instance Adobe Experience Manager (AEM).
 
 <table>
  <tbody>
@@ -45,7 +41,7 @@ Les deux versions prennent en charge une liste de variables d’environnement qu
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
-   <td>Mode(s) d’exécution séparé(s) par une virgule.<br /> </td>
+   <td>Modes d’exécution séparés par une virgule<br /> </td>
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
@@ -68,7 +64,7 @@ Les deux versions prennent en charge une liste de variables d’environnement qu
 
 >[!CAUTION]
 >
->Remarque : Certains modes d’exécution, comme création et publication, doivent être définis avant le premier démarrage d’AEM. Ils ne peuvent pas être modifiés par la suite. Avant de configurer une instance AEM à utiliser en production, consultez la [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
+>Certains modes d’exécution, dont l’auteur et la publication, doivent être définis avant le premier AEM de démarrage et ne peuvent pas être modifiés par la suite. Avant de configurer une instance AEM utilisée en production, voir [documentation sur les modes d’exécution](/help/sites-deploying/configure-runmodes.md) pour plus d’informations.
 
 ### Exemple de script start.bat pour la plateforme Windows {#windows-platform-start-bat-script-example}
 
@@ -76,7 +72,7 @@ Les deux versions prennent en charge une liste de variables d’environnement qu
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Exemple de script start pour la plateforme Unix {#unix-platform-start-script-example}
+### Exemple de script de démarrage de plateforme UNIX® {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -86,24 +82,24 @@ CQ_PORT=1234 ./start
 >
 >Le script start lance le déploiement Quickstart AEM installé dans le dossier *&lt;cq-installation>/app*.
 
-## Arrêt d’Adobe Experience Manager {#stopping-adobe-experience-manager}
+## Arrêt d’Adobe Experience Manager {#stopping-adobe-experience-manager}
 
-Pour arrêter AEM, effectuez l’une des opérations suivantes :
+Pour arrêter AEM, effectuez l’une des opérations suivantes :
 
-* Selon la plateforme que vous utilisez :
+* Selon la plateforme que vous utilisez :
 
    * Si vous avez démarré AEM à partir d’un script ou d’une ligne de commande, appuyez sur **Ctrl + C** pour arrêter le serveur.
-   * Si vous avez utilisé le script start sous UNIX, vous devez utiliser le script stop pour arrêter AEM.
+   * Si vous avez utilisé le script start sous UNIX®, vous devez utiliser le script stop pour arrêter AEM.
 
-* Si vous avez démarré AEM en double-cliquant sur le fichier jar, cliquez sur le bouton **Activé** dans la fenêtre de démarrage (le bouton se transforme alors en **Désactivé**) pour arrêter le serveur.
+* Si vous avez commencé AEM en double-cliquant sur le fichier jar, cliquez sur le bouton **Activé** dans la fenêtre de démarrage (le bouton devient alors **Off**) pour arrêter le serveur.
 
-   ![chlimage_1-63](assets/chlimage_1-63.png)
+  ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Arrêt d’Adobe Experience Manager à partir de la ligne de commande {#stopping-adobe-experience-manager-from-the-command-line}
 
-Le script `stop` est disponible dans le répertoire *&lt;cq-installation>/bin*. Des versions sont fournies pour Unix et Windows. Le script arrête l’instance en cours d’exécution installée dans le répertoire *&lt;cq-installation>*.
+Le script `stop` est disponible dans le répertoire *&lt;cq-installation>/bin*. Les versions UNIX® et Windows sont fournies. Le script arrête l’instance en cours d’exécution installée dans le répertoire *&lt;cq-installation>*.
 
-### Exemple de script stop pour la plateforme Unix {#unix-platform-stop-script-example}
+### Exemple de script d’arrêt de plateforme UNIX® {#unix-platform-stop-script-example}
 
 ```shell
 ./stop
@@ -115,9 +111,9 @@ Le script `stop` est disponible dans le répertoire *&lt;cq-installation>/bin*. 
 ./stop.bat
 ```
 
-Si vous souhaitez uniquement préconfigurer le référentiel (sans le déplacer), vous devez simplement :
+Si vous souhaitez uniquement préconfigurer le référentiel (sans le relocaliser), il vous suffit d’effectuer les opérations suivantes :
 
-* extraire `repository.xml` à l’emplacement requis ;
+* Extract `repository.xml` à l’emplacement requis.
 
 * mettre à jour `repository.xml` selon les besoins ;
 
