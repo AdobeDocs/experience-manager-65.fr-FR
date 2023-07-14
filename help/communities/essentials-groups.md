@@ -1,19 +1,15 @@
 ---
 title: Notions fondamentales sur les groupes de communautés
-seo-title: Community Group Essentials
 description: Création dynamique de sites communautaires
-seo-description: Creating community sites dynamically
-uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 2%
+source-wordcount: '407'
+ht-degree: 1%
 
 ---
 
@@ -79,9 +75,9 @@ La fonctionnalité de groupes de communautés permet à une sous-communauté d�
 
 ## Principes élémentaires pour le côté serveur {#essentials-for-server-side}
 
-* [API du groupe de communautés](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [API du groupe de communautés](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Points de terminaison du groupe de communautés](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Points de terminaison du groupe de communautés](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Personnalisations côté serveur](server-customize.md)
 
@@ -89,7 +85,7 @@ La fonctionnalité de groupes de communautés permet à une sous-communauté d�
 
 Une structure de site communautaire qui comprend [Fonction Groupes](functions.md#groups-function) prend en charge la création de `community groups` dans les environnements de publication et de création. Le groupe de communauté créé comprend une `community groups member list` qui répertorie les membres du groupe.
 
-Un ou plusieurs [modèles de groupe de communautés](tools-groups.md), qui fournissent la conception des pages de groupes de communautés, peut être configuré pour la fonction Groupes lorsque la fonction est ajoutée à une [modèle de site communautaire](sites.md) ou imbriqué dans un modèle de groupe de communautés.
+Un ou plusieurs [modèles de groupe de communautés](tools-groups.md), qui fournissent la conception des pages de groupe de communautés, peut être configuré pour la fonction Groupes lorsque la fonction est ajoutée à une [modèle de site communautaire](sites.md) ou imbriqué dans un modèle de groupe de communautés.
 
 L’inclusion de plusieurs modèles de groupe de communautés entraîne la présentation d’une conception à l’utilisateur autorisé au moment de la création d’un groupe de communautés pour le site de la communauté, comme illustré dans la section sur [groupes communautaires](creating-groups.md) pour les auteurs.
 
@@ -103,7 +99,7 @@ Lorsqu’un site de communauté ou un modèle de groupe comprend la fonction Gro
 
 * Créez un groupe dans l’environnement de publication, lorsqu’il est configuré pour l’autoriser.
 
-Lors de la création d’un groupe dans l’environnement de création, vous devez d’abord publier le site de la communauté, puis publier le groupe. La publication du site de la communauté permet de publier les pages du groupe, sans créer les groupes de membres de la sous-communauté auxquels des listes de contrôle d’accès sont définies. Ainsi, un groupe restreint (secret) peut être visible jusqu’à ce que le groupe soit publié explicitement.
+Lors de la création d’un groupe dans l’environnement de création, vous devez d’abord publier le site de la communauté, puis publier le groupe. La publication du site de la communauté publie les pages du groupe, sans créer les groupes de membres de la sous-communauté auxquels des listes de contrôle d’accès sont définies. Ainsi, un groupe restreint (secret) peut être visible jusqu’à ce que le groupe soit publié explicitement.
 
 ## Liens et informations connexes {#links-and-related-information}
 
