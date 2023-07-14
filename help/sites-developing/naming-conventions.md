@@ -1,5 +1,5 @@
 ---
-title: Conventions de dénomination des nœuds dans le référentiel de contenu Java
+title: Conventions de dénomination des noeuds dans le référentiel de contenu Java
 description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination du référentiel de contenu Java.
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
@@ -8,14 +8,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
+source-git-commit: 8cfc42dc8fdf4dc0bfd3f002385f100c81b15993
+workflow-type: tm+mt
 source-wordcount: '308'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Conventions de dénomination{#naming-conventions}
+# Conventions de dénomination {#naming-conventions}
 
 Les nœuds dans le référentiel sont soumis aux conventions de dénomination de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Toutefois, AEM impose d’autres conventions pour le nom des nœuds de page.
 

@@ -1,5 +1,5 @@
 ---
-title: Utiliser les balises pour classer le contenu d’un site web
+title: Utilisation des balises
 description: Les balises sont une méthode rapide et facile pour classer le contenu dans un site web.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
@@ -9,14 +9,15 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '575'
+source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
+workflow-type: tm+mt
+source-wordcount: '569'
 ht-degree: 100%
 
 ---
 
-# Utilisation des balises{#using-tags}
+
+# Utilisation des balises {#using-tags}
 
 Les balises sont une méthode rapide et facile pour classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des libellés pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
 
@@ -54,7 +55,7 @@ Comme avec les pages, il est possible d’effectuer les opérations suivantes su
 
 * Activez individuellement des balises.
 
-   A l’instar des pages, les nouvelles balises doivent être activées avant d’être disponibles dans l’environnement de publication.
+  A l’instar des pages, les nouvelles balises doivent être activées avant d’être disponibles dans l’environnement de publication.
 
 >[!NOTE]
 >
