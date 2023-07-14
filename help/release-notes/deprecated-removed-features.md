@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: ht
-source-wordcount: '1675'
-ht-degree: 100%
+source-git-commit: 11e848d93964b5f8e45ccd7388a48953a3148e35
+workflow-type: tm+mt
+source-wordcount: '1727'
+ht-degree: 93%
 
 ---
 
@@ -26,9 +26,9 @@ Cette section répertorie les fonctionnalités qui ont été signalées comme é
 
 Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionnalité dans leur déploiement actuel et de prévoir la modification de leur mise en œuvre de façon à utiliser l’alternative proposée.
 
-| Zone | Fonctionnalité | Remplacement | Version  (SP) |
+| Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |---|---|---|---|
-| [!DNL Sites] | Propriétés des fragments d’expérience pour l’**État des médias sociaux**. |  | 6.5.11.0 |
+| [!DNL Sites] | Propriétés des fragments d’expérience pour l’**État des médias sociaux**. |   | 6.5.11.0 |
 | [!DNL Sites] | Modèles de fragment de contenu, pour la création de fragments de contenu simples. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. | 6.5.11.0 |
 | Intégration de Creative Cloud | Le partage de dossiers d’AEM vers Creative Cloud a été ajouté dans AEM 6.2 afin de permettre aux utilisateurs créatifs d’accéder aux ressources d’AEM pour qu’ils puissent les ouvrir dans les applications [!DNL Creative Cloud], charger de nouveaux fichiers ou enregistrer les modifications apportées à AEM. Adobe Asset Link, une nouvelle fonctionnalité proposée dans l’application Creative Cloud, offre une expérience utilisateur améliorée et un accès plus puissant aux ressources d’AEM directement à partir de Photoshop, InDesign et Illustrator. Adobe n’envisage pas d’apporter d’autres améliorations à l’intégration du partage de dossiers d’AEM à Creative Cloud. Bien que cette fonctionnalité soit incluse dans AEM, nous recommandons aux client(e)s d’utiliser des solutions de remplacement. | Il est conseillé aux clients de passer à de nouvelles fonctionnalités d’intégration de Creative Cloud, notamment Adobe Asset Link ou l’application de bureau AEM. |  |
 | Assets | `AssetDownloadServlet` est désactivé par défaut pour les instances de publication. Pour plus de détails, consultez la [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md). | Configuration décrite dans la [Liste de contrôle de sécurité AEM](/help/sites-administering/security-checklist.md). |  |
@@ -50,24 +50,24 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 |Développeurs|Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. Jusqu’à la version AEM 6.4, YUI était l’option par défaut pour réduire les bibliothèques JavaScript avec l’option permettant de basculer vers Google Closure Compiler (GCC). À partir d’AEM 6.5, GCC est l’option par défaut.|Adobe recommande aux client(e)s qui effectuent la mise à niveau vers AEM 6.5 de passer à GCC pour leur implémentation.||
 |Développeurs|Éditeur de boîte de dialogue de l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue de l’interface utilisateur classique fourni dans le cadre de la distribution (Quickstart)| Aucun remplacement n’est disponible. ||
 |Forms|L’intégration d’AEM Forms à AEM Mobile est obsolète. | Aucun remplacement n’est disponible. ||Développeurs|Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue de l’interface utilisateur classique fourni dans le cadre de la distribution (Quickstart)| Aucun remplacement n’est disponible. ||
-|Développeurs|Bibliothèque cliente Lodash/Underscore. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lodash/Underscore fournie dans le cadre de la distribution (Quickstart) | Adobe recommande aux client(e)s qui ont encore besoin de Lodash/Underscore pour leur code de l’ajouter à leur base de code de projet. ||
+|Développeurs|Bibliothèque cliente Lodash/Underscore. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lodash/Underscore fournie dans le cadre de la distribution (Quickstart) | Adobe recommande aux client(e)s qui ont encore besoin de Lodash/Underscore pour leur code de l’ajouter à leur base de code de projet. || |Screens|Adobe ne prévoit pas de gérer ni de mettre à jour le lot com.adobe.cq.screens.mq.activemq et les configurations associées utilisés pour la configuration des éditeurs 2D.| Adobe recommande aux clients qui nécessitent encore la configuration de 2 éditeurs d’utiliser [load-balancer](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=screens&amp;title=AEM+Screens+publish+environment+horizontal+scaling+through+Load+Balancer+session+stickiness) approche. ||
 
 ## Fonctionnalités supprimées {#removed-features}
 
 Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM 6.5. Ces fonctionnalités ont été signalées comme étant obsolètes dans les versions antérieures.
 
-| Zone | Fonctionnalité | Remplacement | Version  (SP) |
+| Domaine | Fonctionnalité | Remplacement | Version (SP) |
 |--- |--- |--- |--- |
 | Intégration à [!DNL Experience Cloud] | Vous pouvez synchroniser vos ressources avec [!DNL Experience Cloud] en utilisant un paramétrage à l’aide d’[!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] était précédemment appelé [!DNL Adobe Experience Cloud]. | Si vous avez des questions, [contactez le service clientèle d’Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support). |  |
-| Activity Map dans Analytics | Version d’Activity Map incluse dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le [Plug-in d’Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr). |  |
+| Activity Map Analytics | Version du Activity Map inclus dans AEM. | En raison de modifications de sécurité dans l’API Adobe Analytics, il n’est plus possible d’utiliser la version d’Activity Map incluse dans AEM. Utilisez le [Plug-in d’Activity Map fourni par Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=fr). |  |
 | Intégrations | L’intégration d’ExactTarget a été supprimée de la distribution par défaut (Quickstart) et elle n’est plus disponible. | Aucun remplacement. |  |
-| Intégrations | L’intégration de l’API Salesforce a été supprimée de la distribution par défaut (Quickstart) et est désormais proposée dans un module supplémentaire à installer à partir de la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | La fonctionnalité est toujours disponible. |
-| Forms | La prise en charge du service de passerelle d’Adobe Central Migration n’est plus assurée, car le produit Adobe Central n’est plus pris en charge. | Aucun remplacement. |  |
+| Intégrations | L’intégration de l’API Salesforce a été supprimée de la distribution par défaut (Quickstart) et est désormais proposée dans un package supplémentaire à installer à partir de la [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | La fonctionnalité est toujours disponible. |
+| Forms | La prise en charge du service Adobe Central Migration Bridge a été supprimée, car le produit Adobe Central n’est plus pris en charge. | Aucun remplacement. |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Aucun remplacement. |  |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Aucun remplacement. |  |
 | Forms | La mise à niveau en un seul bond de LiveCycle ES4 SP1 vers AEM 6.5 Forms on JEE n’est pas disponible. | Consultez les [chemins de mise à niveau disponibles](../forms/using/upgrade.md) dans la documentation de mise à niveau d’AEM Forms. |  |
 | Forms | Suppression de la prise en charge de la mise en grappe basée sur UPD d’AEM Forms on JEE | Vous ne pouvez utiliser que la mise en grappe basée sur TCP dans AEM Forms on JEE. Si vous mettez à niveau un serveur de multidiffusion UDP d’une version précédente vers AEM 5.5 Forms on JEE, effectuez des configurations manuelles pour passer à la mise en grappe de gemfire basée sur TCP. Pour obtenir des instructions détaillées, consultez [Mise à niveau vers AEM Forms 6.5 sous JEE](../forms/using/upgrade-forms-jee.md). |  |
-| Développeurs | Firebug Lite a été supprimé de la distribution par défaut (Quickstart). | Utilisez les consoles de développement intégrées au navigateur. |
+| Développeurs | Firebug Lite a été supprimé de la distribution par défaut (Quickstart). | Utilisation des consoles de développement intégrées au navigateur |
 | Développeurs | Supprimez la prise en charge de `customJavaScriptPath` dans le gestionnaire de bibliothèque client HTML. | Aucun remplacement. |  |
 | [!DNL Assets] | La fonction de déchargement des ressources est supprimée dans [!DNL Adobe Experience Manager] 6.5. | Aucun remplacement n’est disponible. |  |
 | Cache | `system/console/slingjsp` n’est plus disponible dans AEM 6.5. | Les classes et le cache Slightly sont stockés sous le lot Apache Sling Commons FileSystem ClassLoader. Vous pouvez vérifier le numéro de lot dans la console Web d’AEM et supprimer le dossier de cache directement du système de fichiers (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
@@ -76,6 +76,6 @@ Cette section répertorie les fonctionnalités qui ont été supprimées d’AEM
 
 Cette section permet d’annoncer au préalable les modifications à venir dans les prochaines versions. Les modifications annoncées ne sont pas encore effectives, mais auront une incidence sur les clients. Par exemple, les fonctionnalités ne sont pas encore obsolètes, mais auront un impact sur les utilisateurs et utilisatrices après leur obsolescence. Elles sont fournies à des fins de planification.
 
-| Zone | Fonctionnalité | Annonce |
+| Domaine | Fonctionnalité | Annonce |
 |--- |--- |--- |
-| Foundation | Structure de l’IU | Adobe prévoit de rendre obsolète les composants de l’interface utilisateur Coral 2 en 2019. L’interface utilisateur Coral 3 a été introduite avec AEM 6.2, et AEM 6.5 est entièrement basé sur Coral 3. Adobe recommande à ses clients et partenaires qui ont créé des interfaces utilisateur personnalisées avec Coral 2 de les restructurer avec Coral 3. Adobe fournit un outil permettant de convertir les boîtes de dialogue Coral 2 en Coral 3 - [En savoir plus](/help/sites-developing/modernization-tools.md). |
+| Foundation | Structure de l’interface utilisateur | Adobe prévoit de rendre obsolète les composants de l’interface utilisateur Coral 2 en 2019. L’interface utilisateur Coral 3 a été introduite avec AEM 6.2, et AEM 6.5 est entièrement basé sur Coral 3. Adobe recommande à ses clients et partenaires qui ont créé des interfaces utilisateur personnalisées avec Coral 2 de les restructurer avec Coral 3. Adobe fournit un outil pour convertir les boîtes de dialogue Coral 2 en Coral 3 - [En savoir plus](/help/sites-developing/modernization-tools.md). |
