@@ -1,18 +1,16 @@
 ---
 title: Utiliser les versions de page de contenu
 description: Créer, comparer et restaurer des versions d’une page
-uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 0a06837576e102d0e46f7afd0f5a197c292ddae7
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 59%
+source-wordcount: '1497'
+ht-degree: 58%
 
 ---
 
@@ -56,7 +54,7 @@ Vous pouvez créer une version de votre ressource depuis :
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Sélectionnez la **Créer** dans la barre d’outils pour ouvrir la boîte de dialogue.
-1. Dans la boîte de dialogue, vous pouvez saisir une **Libellé** et un **Commentaire** si nécessaire :
+1. Dans la boîte de dialogue, vous pouvez saisir une **Libellé** et un **Commentaire**, si nécessaire :
 
    ![Saisir un libellé et un commentaire ;](assets/screen_shot_2012-02-15at105050am.png)
 
@@ -89,7 +87,7 @@ Une fois que vous avez créé une version de votre page, différentes méthodes 
 >Illustration :
 >
 >1. Créez des versions d’une page.
->1. Les libellés et les noms de nœud de version initiaux sont 1.0, 1.1, 1.2, etc.
+>1. Les libellés et les noms de noeud de version initiaux sont 1.0, 1.1, 1.2, etc.
 >1. Rétablissez la première version ; dans ce cas, 1.0.
 >1. Créez à nouveau des versions.
 >1. Les libellés et les noms de noeud générés seront désormais 1.0.0, 1.0.1, 1.0.2, etc.

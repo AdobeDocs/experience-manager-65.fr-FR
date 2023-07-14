@@ -1,85 +1,81 @@
 ---
-title: Étendre et configurer l’importateur de conception pour les pages d’entrée
-seo-title: Extending and Configuring the Design Importer for Landing Pages
-description: Découvrez comment configurer l’importateur de conception pour les pages d’entrée.
-seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
+title: Extension et configuration de l’importateur de conception pour les pages de destination
+description: Découvrez comment configurer l’importateur de conception pour les landing pages.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '3503'
-ht-degree: 100%
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+workflow-type: tm+mt
+source-wordcount: '3502'
+ht-degree: 46%
 
 ---
 
-# Étendre et configurer l’importateur de conception pour les pages d’entrée{#extending-and-configuring-the-design-importer-for-landing-pages}
+# Extension et configuration de l’importateur de conception pour les pages de destination{#extending-and-configuring-the-design-importer-for-landing-pages}
 
-Cette section décrit la configuration et, si vous le souhaitez, l’extension de l’importateur de conception pour les pages d’entrée. L’utilisation de pages d’entrée après l’importation est décrite dans la section [Pages d’entrée](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+Cette section décrit la configuration et, si vous le souhaitez, l’extension de l’importateur de conception pour les pages de destination. L’utilisation de pages d’entrée après l’importation est traitée dans [Pages d’entrée.](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
 **Faire en sorte que l’importateur de conception extraie votre composant personnalisé**
 
-Voici les étapes logiques à suivre pour faire en sorte que l’importateur reconnaisse votre composant personnalisé.
+Voici les étapes logiques pour que l’importateur de conception reconnaisse votre composant personnalisé.
 
 1. Création d’un gestionnaire de balises
 
-   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le « type » des balises HTML que votre TagHandler peut traiter est défini au moyen de la propriété OSGi « tagpattern.name » de TagHandlerFactory. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise &lt;div> contenant une balise &lt;p> imbriquée, la balise &lt;p> est également envoyée vers le gestionnaire de balises. Il vous appartiendra alors d’en déterminer le mode de traitement.
-   * L’interface du gestionnaire de balises est semblable à une interface de gestion de contenu SAX. Elle reçoit des événements SAX pour chaque balise HTML. En votre qualité de fournisseur de gestionnaire de balises, vous devez mettre en œuvre certaines méthodes de cycle de vie qui sont appelées automatiquement par le cadre de l’importateur de conception.
+   * Un gestionnaire de balises est un POJO (Plain Old Java Object) qui traite les balises HTML d’un type spécifique. Le &quot;type&quot; des balises de HTML que votre TagHandler peut gérer est défini via la propriété OSGi de TagHandlerFactory &quot;tagpattern.name&quot;. Cette propriété OSGi est en réalité une expression régulière (regex) qui doit correspondre à la balise HTML en entrée que vous souhaitez traiter. Toutes les balises imbriquées sont envoyées pour traitement à votre gestionnaire de balises. Par exemple, si vous enregistrez une balise div contenant une balise imbriquée &lt;p> , la balise &lt;p> est également envoyée à votre gestionnaire de balises. C’est à vous de décider comment vous souhaitez vous en charger.
+   * L’interface du gestionnaire de balises est semblable à une interface de gestion de contenu SAX. Elle reçoit des événements SAX pour chaque balise HTML. En tant que fournisseur de gestionnaire de balises, vous devez mettre en oeuvre certaines méthodes de cycle de vie qui sont automatiquement appelées par la structure de l’importateur de conception.
 
 1. Créez le composant TagHandlerFactory correspondant.
 
-   * TagHandlerFactory est un composant OSGi (singleton) responsable du déclenchement d’instances sur votre gestionnaire de balises.
+   * La fabrique de gestionnaires de balises est un composant OSGi (singleton) responsable de la génération d’instances de votre gestionnaire de balises.
    * Votre TagHandlerFactory doit exposer une propriété OSGi appelée « tagpattern.name » dont la valeur est comparée à la balise HTML d’entrée.
    * Si plusieurs gestionnaires de balises correspondent à la balise HTML en entrée, celui dont le classement est le plus élevé est celui choisi. Le classement proprement dit est exposé sous forme de propriété OSGi **service.ranking**.
-   * TagHandlerFactory est un composant OSGi. Toute référence que vous souhaitez attribuer à votre TagHandler doit l’être par ce biais.
+   * TagHandlerFactory est un composant OSGi. Toutes les références que vous souhaitez fournir à votre TagHandler doivent être fournies via cette fabrique.
 
 1. Assurez-vous que votre composant TagHandlerFactory présente un meilleur classement si vous souhaitez ignorer la valeur par défaut.
 
 >[!CAUTION]
 >
->L’importateur de conception, utilisé pour importer des pages d’entrée, [est obsolète avec AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>l’importateur de conception, utilisé pour importer des landing pages, [a été abandonné avec AEM 6.5.](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
-## Préparation du fichier HTML pour l’importation {#preparing-the-html-for-import}
+## Préparation du HTML pour l’importation {#preparing-the-html-for-import}
 
-Après avoir créé une page d’importation, vous pouvez importer votre page d’entrée HTML dans son intégralité. Pour importer votre page d’entrée HTML, vous devez d’abord compresser son contenu dans un module de conception. Le module de conception contient votre page d’entrée HTML, ainsi que les ressources référencées (images, css, icônes, scripts, etc.).
+Après avoir créé une page d’importation, vous pouvez importer votre page de destination HTML dans son intégralité. Pour importer votre page de destination HTML, vous devez d’abord compresser son contenu dans un module de conception. Le module de conception contient votre page d’entrée de HTML avec les ressources référencées (images, css, icônes, scripts, etc.).
 
-L’aide-mémoire ci-dessous décrit la préparation de votre fichier HTML en vue de l’importation :
+La feuille de calcul suivante fournit un exemple de préparation de votre HTML pour l’importation :
 
-Aide-mémoire de page d’entrée
+Aide-mémoire pour la page d’entrée
 
 [Obtenir le fichier](assets/cheatsheet.zip)
 
-### Disposition du fichier ZIP et exigences {#zip-file-layout-and-requirements}
+### Disposition et exigences du fichier Zip {#zip-file-layout-and-requirements}
 
 >[!NOTE]
 >
->Pour l’heure, les fichiers zip ne peuvent contenir qu’une seule page HTML ou une partie de page.
+>À ce stade, les fichiers ZIP ne peuvent contenir qu’une page de HTML ou une partie d’une page.
 
-Voici un exemple de disposition de fichier ZIP :
+Voici un exemple de mise en page du fichier zip :
 
-* /index.html -> fichier HTML de page d’entrée
-* /css -> à ajouter dans la bibliothèque client CSS
-* /img -> ensemble des images et des actifs
-* /js -> à ajouter à la bibliothèque client JS
+* /index.html -> fichier de HTML de landing page
+* /css -> à ajouter à la bibliothèque cliente CSS
+* /img -> toutes les images et tous les actifs
+* /js -> à ajouter à la bibliothèque cliente JS
 
 La disposition s’appuie sur les bonnes pratiques HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 >[!NOTE]
 >
->Le module de conception **doit** contenir, au minimum, un fichier **index.html** au niveau racine. Au cas où la page d’entrée à importer comporterait également une version pour mobiles, le fichier ZIP doit contenir un fichier **mobile.index.html** en complément du fichier **index.html** au niveau racine.
+>Le package de conception **doit** contenir, au minimum, un fichier **index.html** au niveau racine. Si la landing page à importer comporte également une version mobile, le fichier zip doit contenir un **mobile.index.html** avec **index.html** au niveau racine.
 
-### Préparation du fichier HTML de la page d’entrée {#preparing-the-landing-page-html}
+### Préparation du HTML de page d’entrée {#preparing-the-landing-page-html}
 
-Pour qu’il soit possible d’importer le fichier HTML, vous devez ajouter une balise &lt;div> de canevas au fichier HTML de la page d’entrée.
+Pour pouvoir importer le HTML, vous devez ajouter une balise div de canevas au HTML de page d’entrée.
 
 La balise &lt;div> du canevas est une balise **div** html avec `id="cqcanvas"`, qui doit être insérée dans la balise `<body>` HTML et doit encapsuler le contenu destiné à la conversion.
 
-Vous trouverez, ci-dessous, un exemple de fragment de code du fichier HTML de la page d’entrée de la balise &lt;div> du canevas :
+Voici un exemple de fragment de HTML de page d’entrée après l’ajout de la balise div de canevas :
 
 ```xml
 <!doctype html>
@@ -97,23 +93,23 @@ Vous trouverez, ci-dessous, un exemple de fragment de code du fichier HTML de la
 </html>
 ```
 
-### Préparation du fichier HTML en vue d’inclure des composants AEM modifiables {#preparing-the-html-to-include-editable-aem-components}
+### Préparation du HTML pour l’inclusion de composants AEM modifiables {#preparing-the-html-to-include-editable-aem-components}
 
-Lorsque vous importez une page d’entrée, vous pouvez choisir de l’importer telle quelle. Cela signifie qu’une fois la page importée, vous ne pourrez modifier aucun des éléments importés dans AEM (vous pourrez toutefois ajouter des composants AEM sur la page).
+Lorsque vous importez une page d’entrée, vous avez la possibilité d’importer la page telle quelle, ce qui signifie qu’une fois la page d’entrée importée, vous ne pouvez plus modifier aucun des éléments importés dans AEM (vous pouvez toujours ajouter des composants AEM supplémentaires sur la page).
 
-Avant d’importer la page d’entrée, vous pouvez en convertir certaines parties pour en faire des composants AEM modifiables. Cela vous permettra de modifier rapidement des parties de la page d’entrée, même après en avoir importé la conception.
+Avant d’importer la page de destination, vous pouvez en convertir certaines parties pour en faire des composants AEM modifiables. Cela vous permettra de modifier rapidement des parties de la page de destination, même après en avoir importé la conception.
 
 Pour ce faire, ajoutez `data-cq-component` au composant approprié dans le fichier HTML importé.
 
-La section suivante décrit la modification de votre fichier HTML de manière à convertir certaines parties de vos pages d’entrée en différents composants AEM modifiables. Les composants sont décrits en détail dans la section [Composants Pages d’entrée](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+La section suivante décrit la modification de votre fichier HTML de manière à convertir certaines parties de vos pages de destination en différents composants AEM modifiables. Les composants sont décrits en détail à la section [Composants de pages d’entrée](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
->Les balises HTML destinées à la conversion de parties de la page d’entrée en composants AEM comportent une déclaration de balises de forme longue et de forme courte. Toutes deux sont décrites pour chaque composant.
+>Les balises HTML destinées à la conversion de parties de la page de destination en composants AEM comportent une déclaration de balises de forme longue et de forme courte. Les deux sont décrits pour chaque composant.
 
 ### Limites {#limitations}
 
-Avant de procéder à l’importation, veuillez tenir compte des restrictions suivantes :
+Avant l’importation, veuillez noter les restrictions suivantes :
 
 ### Les attributs, tels que class ou id, appliqués à la balise &amp;lt;body> ne sont pas conservés. {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
@@ -121,25 +117,25 @@ Si un attribut d’id ou de classe est appliqué à la balise &lt;body>, par exe
 
 ### Transfert de fichiers ZIP par glisser-déposer {#drag-and-drop-zip}
 
-Le chargement de fichiers ZIP par glisser-déposer n’est pas pris en charge par les versions 3.6 et inférieures d’Internet Explorer et Firefox. Pour télécharger une conception à l’aide de ces navigateurs, cliquez sur la zone de déplacement de fichiers afin d’ouvrir une boîte de dialogue de téléchargement et de l’utiliser pour réaliser le transfert.
+Le chargement de fichiers ZIP par glisser-déposer n’est pas pris en charge par les versions 3.6 et inférieures d’Internet Explorer et Firefox. Pour charger une conception lors de l’utilisation de ces navigateurs, cliquez sur la zone de dépôt pour ouvrir une boîte de dialogue de téléchargement de fichier et chargez votre conception à l’aide de cette boîte de dialogue.
 
-Les navigateurs qui prennent en charge le « glisser-déposer » du fichier ZIP de conception sont Chrome, Safari 5.x, Firefox 4 et versions ultérieures.
+Les navigateurs qui prennent en charge le &quot;glisser-déposer&quot; du fichier compressé de conception sont Chrome, Safari 5.x, Firefox 4 et versions ultérieures.
 
 ### Modernizr n’est pas pris en charge {#modernizr-is-not-supported}
 
-`Modernizr.js` est un outil JavaScript qui détecte les fonctionnalités natives des navigateurs et détermine si elles sont adaptées ou non aux éléments HTML5. Les conceptions qui utilisent Modernizr pour améliorer la prise en charge dans les versions plus anciennes des différents navigateurs peuvent entraîner des problèmes d’importation dans la solution de page d’entrée. Les scripts `Modernizr.js` ne sont pas pris en charge avec l’importateur de conception.
+`Modernizr.js` est un outil JavaScript qui détecte les fonctionnalités natives des navigateurs et détecte s’ils sont adaptés ou non aux éléments html5. Les conceptions qui utilisent Modernizr pour améliorer la prise en charge dans les versions plus anciennes des différents navigateurs peuvent entraîner des problèmes d’importation dans la solution de page de destination. Les scripts `Modernizr.js` ne sont pas pris en charge avec l’importateur de conception.
 
-### Les propriétés de page ne sont pas conservées lors de l’importation du module de conception {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
+### Les propriétés de page ne sont pas conservées au moment de l’importation du module de conception. {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-Toute propriété de page (par exemple, Custom Domain, Enforcing HTTPS, etc.) définie pour une page (qui utilise le modèle Page d’entrée vierge) avant d’importer le module de conception est perdue une fois l’importation réalisée. Il est donc conseillé de définir les propriétés de la page après l’importation du module de conception.
+Toute propriété de page (par exemple, Domaine personnalisé, Application HTTPS, etc.) définie pour une page (qui utilise le modèle Page d’entrée vierge) avant d’importer le module de conception est perdue une fois la conception importée. Par conséquent, la pratique recommandée consiste à définir les propriétés de page après l’importation du module de conception.
 
-### Balises HTML {#html-only-markup-assumed}
+### Balisage en HTML seul supposé {#html-only-markup-assumed}
 
-Lors de lʼimportation, le balisage est nettoyé pour des raisons de sécurité et afin dʼéviter lʼimportation et la publication de balisage non valide. Cela suppose que les balises HTML et que toutes les autres formes dʼéléments, tels que les SVG ou les composants web intégrés, seront filtrés.
+Lors de l’importation, les balises sont assainies pour des raisons de sécurité et pour éviter d’importer et de publier des balises non valides. Cela suppose que les balises HTML uniquement et que toutes les autres formes d’éléments tels que les SVG en ligne ou les composants web soient filtrées.
 
 ### Texte {#text}
 
-Balise HTML permettant d’insérer un composant texte (`foundation/components/text`) dans le fichier HTML à l’intérieur du module de conception :
+Balise HTML permettant d’insérer un composant texte (`foundation/components/text`) dans le fichier HTML à l’intérieur du package de conception :
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
@@ -147,10 +143,10 @@ Balise HTML permettant d’insérer un composant texte (`foundation/components/t
 
 L’insertion des balises ci-dessus dans le fichier HTML produit les effets suivants :
 
-* Crée un composant texte AEM modifiable (`sling:resourceType=foundation/components/text`) dans la page d’entrée créée après l’importation du module de conception.
+* Crée un composant texte AEM modifiable (`sling:resourceType=foundation/components/text`) dans la page de destination créée après l’importation du module de conception.
 * Définit la propriété `text` du composant texte créé sur le code HTML placé entre les balises `div`.
 
-**Forme courte de la déclaration de balise du composant** :
+**Déclaration courte des balises de composant**:
 
 ```xml
 <p data-cq-component="text">Text component shorthand</p>
@@ -158,12 +154,12 @@ L’insertion des balises ci-dessus dans le fichier HTML produit les effets suiv
 
 **Texte avec liste**
 
-Pour ajouter du texte avec une liste, procédez comme suit :
+Pour ajouter un texte avec une liste :
 
-* 1er
-* 2e
+* 1st
+* 2nd
 
-pouvant être modifié dans l’éditeur RTE :
+qui peuvent être modifiés dans l’éditeur d’éditeur de texte enrichi :
 
 ```xml
 <div data-cq-component="text"><p>This is text with a list:</p><ul><li>1st</li><li>2nd</li></ul><p>It can be edited with the RTE editor</p></div>
@@ -171,7 +167,7 @@ pouvant être modifié dans l’éditeur RTE :
 
 **Texte avec couleur**
 
-Pour ajouter du texte de couleur rose pouvant être modifié dans l’éditeur RTE
+Pour ajouter un texte de couleur (rose) qui peut être modifié dans l’éditeur de texte enrichi :
 
 ```xml
 <div class="pink" data-cq-component="text"><p>This is pink text.</p><p>It can be edited with the RTE editor</p></div>
@@ -179,7 +175,7 @@ Pour ajouter du texte de couleur rose pouvant être modifié dans l’éditeur R
 
 ### Titre {#title}
 
-Balise HTML permettant d’insérer un composant de titre (`wcm/landingpage/components/title`) dans le fichier HTML à l’intérieur du module de conception :
+Balise HTML permettant d’insérer un composant de titre (`wcm/landingpage/components/title`) dans le fichier HTML à l’intérieur du package de conception :
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -187,13 +183,13 @@ Balise HTML permettant d’insérer un composant de titre (`wcm/landingpage/comp
 
 L’insertion des balises ci-dessus dans le fichier HTML produit les effets suivants :
 
-* Crée un composant de titre AEM modifiable (`sling:resourceType=wcm/landingpage/components/title`) dans la page d’entrée créée après l’importation du module de conception.
+* Crée un composant de titre AEM modifiable (`sling:resourceType=wcm/landingpage/components/title`) dans la page de destination créée après l’importation du module de conception.
 * Définition de la propriété `jcr:title` du composant de titre créé sur le texte dans la balise d’en-tête placée entre les balises div.
 * Définit la propriété `type` sur la balise d’en-tête, dans ce cas `h1`.
 
-Le composant Titre prend en charge 7 types - `h1, h2, h3, h4, h5, h6` et `default`.
+Le composant Titre prend en charge sept types : `h1, h2, h3, h4, h5, h6` et `default`.
 
-**Forme courte de la déclaration de balise du composant** :
+**Déclaration courte des balises de composant**:
 
 ```xml
 <h1 data-cq-component="title">Title component shorthand</h1>
@@ -201,7 +197,7 @@ Le composant Titre prend en charge 7 types - `h1, h2, h3, h4, h5, h6` et `defau
 
 ### Image {#image}
 
-Balise HTML permettant d’insérer un composant image (foundation/components/image) dans le fichier HTML à l’intérieur du module de conception :
+Balisage de HTML pour insérer un composant d’image (foundation/components/image) dans le HTML dans le module de conception :
 
 ```xml
 <div data-cq-component="image">
@@ -211,20 +207,20 @@ Balise HTML permettant d’insérer un composant image (foundation/components/im
 
 L’insertion des balises ci-dessus dans le fichier HTML produit les effets suivants :
 
-* Crée un composant image AEM modifiable (`sling:resourceType=foundation/components/image`) dans la page d’entrée créée après l’importation du module de conception.
+* Crée un composant image AEM modifiable (`sling:resourceType=foundation/components/image`) dans la page de destination créée après l’importation du module de conception.
 * Définit la propriété `fileReference` du composant image créé sur le chemin d’importation de l’image spécifiée dans l’attribut src.
 * Définit la propriété `alt` sur la valeur de l’attribut alt dans la balise &lt;img>.
 * Définit la propriété `title` sur la valeur de l’attribut title dans la balise &lt;img>.
 * Définit la propriété `width` sur la valeur de l’attribut width dans la balise &lt;img>.
 * Définit la propriété `height` sur la valeur de l’attribut height dans la balise &lt;img>.
 
-**Forme courte de la déclaration de balise du composant** :
+**Déclaration courte des balises du composant :**
 
 ```xml
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
 ```
 
-#### Source d’image d’URL absolue non prise en charge dans la balise &lt;div> du composant image {#absolute-url-img-src-not-supported-within-image-component-div}
+#### Image d’URL absolue non prise en charge dans la balise Div du composant Image {#absolute-url-img-src-not-supported-within-image-component-div}
 
 Si une balise `<img>` avec une adresse URL &lt;src> absolue est utilisée pour la conversion d’un composant, une exception **UnsupportedTagContentException** appropriée est générée. Par exemple, le code suivant n’est pas pris en charge :
 
@@ -234,26 +230,26 @@ Si une balise `<img>` avec une adresse URL &lt;src> absolue est utilisée pour 
 
 `</div>`
 
-Sinon, les images URL absolues sont prises en charge pour les balises img qui ne font pas partie d’une balise &lt;div> de composant image.
+Dans le cas contraire, les images URL absolues sont prises en charge pour les balises img qui ne font pas partie de la balise div du composant d’image.
 
-### Composants CTA (Appel à l’action) {#call-to-action-components}
+### Composants d’appel à l’action {#call-to-action-components}
 
-Vous pouvez marquer une partie de la page d’entrée pour l’importation sous forme de « composant CTA modifiable ». Les composants de ce type peuvent être modifiés après l’importation de la page d’entrée. AEM inclut les composants CTA suivants :
+Vous pouvez marquer une partie de la page de destination pour l’importation sous forme de « composant CTA modifiable ». Les composants de ce type peuvent être modifiés après l’importation de la page de destination. AEM comprend les composants CTA suivants :
 
-* Lien des clics publicitaires - Permet d’ajouter un lien texte cliquable qui dirige l’utilisateur vers une URL cible.
-* Lien graphique : permet d’ajouter une image cliquable qui redirige l’utilisateur vers une URL cible.
+* Lien des clics publicitaires : permet d’ajouter un lien texte qui, lorsqu’un utilisateur clique dessus, dirige le visiteur vers une URL cible.
+* Lien graphique : permet d’ajouter une image qui, lorsqu’un utilisateur clique dessus, dirige le visiteur vers une URL cible.
 
 #### Lien des clics publicitaires {#click-through-link}
 
-Vous pouvez utiliser ce composant CTA pour ajouter le lien texte sur la page d’entrée.
+Ce composant CTA peut être utilisé pour ajouter un lien texte sur la page d’entrée.
 
 Propriétés prises en charge
 
-* Libellé, avec les options « gras », « italique » et « souligné »
-* URL cible, prise en charge d’URL tierces et AEM
+* Libellé, avec options de gras, d’italique et de soulignement
+* URL Target, prend en charge l’URL tierce et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
-Balise HTML permettant d’inclure le composant « clics publicitaires » dans le fichier ZIP importé. Dans ce cas, &lt;href> est mis en correspondance avec l’adresse URL cible. « Afficher les détails du produit » est mis en correspondance avec le libellé, etc.
+Balise HTML permettant d’inclure le composant « clics publicitaires » dans le fichier ZIP importé. Dans le cas présent, href mappe sur l’URL cible, &quot;Afficher les détails du produit&quot; mappe sur l’étiquette, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -267,9 +263,9 @@ Balise HTML permettant d’inclure le composant « clics publicitaires » dans
 </div>
 ```
 
-Ce composant peut être utilisé dans n’importe quelle application autonome ou importé à partir du fichier ZIP.
+Ce composant peut être utilisé dans n’importe quelle application autonome ou importé à partir de ZIP.
 
-**Forme courte de la déclaration de balise du composant** :
+**Déclaration courte des balises de composant**:
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughLink">Click Through Link shorthand</a>
@@ -277,16 +273,16 @@ Ce composant peut être utilisé dans n’importe quelle application autonome ou
 
 #### Lien graphique {#graphical-link}
 
-Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un lien sur la page d’entrée. Il peut s’agir d’un simple bouton ou d’une image en arrière-plan. Lorsque l’utilisateur clique sur l’image, il accède à l’URL cible spécifiée dans les propriétés du composant. Elle fait partie du groupe « Appel à l’action ».
+Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un lien sur la page de destination. Il peut s’agir d’un simple bouton ou d’une image en arrière-plan. Lorsque l’utilisateur clique sur l’image, il est amené à l’URL cible spécifiée dans les propriétés du composant. Il fait partie du groupe &quot;Appel à l’action&quot;.
 
 Propriétés prises en charge
 
-* Recadrage et rotation d’images
-* Test de pointage, description, taille en pixels
-* URL cible, prise en charge d’URL tierces et AEM
+* Recadrage d’image, rotation
+* Texte de survol, description, taille en px
+* URL Target, prend en charge l’URL tierce et AEM
 * Options de rendu de page (même fenêtre, nouvelle fenêtre, etc.)
 
-Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Dans le cas présent, &lt;href> est mis en correspondance avec l’adresse URL cible, &lt;img src> est l’image de rendu, « titre » est utilisé comme texte affiché au survol, etc.
+Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici href mappe sur l’URL cible, img src est l’image de rendu, &quot;titre&quot; est utilisé comme texte de survol, etc.
 
 ```xml
 <div id="cqcanvas">
@@ -294,7 +290,7 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 </div>
 ```
 
-**Forme courte de la déclaration de balise du composant** :
+**Déclaration courte des balises de composant**:
 
 ```xml
 <a href="/somelink.html" data-cq-component="clickThroughGraphicalLink"><img src="linkimage.png" alt="Click Through Graphical Link shorthand"/></a>
@@ -304,9 +300,9 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 >
 >Pour créer un lien graphique à cliquer, vous devez encapsuler une balise &lt;anchor> et la balise d’image dans une balise &lt;div> avec l’attribut `data-cq-component="clickthroughgraphicallink"`.
 >
->Par exemple `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Par exemple, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`.
 >
->Les autres méthodes d’association d’une image avec une balise anchor à l’aide de CSS ne sont pas prises en charge. Ainsi, les balises suivantes ne fonctionnent pas :
+>Les autres méthodes d’association d’une image à une balise d’ancrage à l’aide de CSS ne sont pas prises en charge. Par exemple, les balises suivantes ne fonctionnent pas :
 >
 >`<div data-cq-component="clickthroughgraphicallink">`
 >
@@ -315,27 +311,28 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 >`</div>`
 >
 >par un `css .hasbackground { background-image: pathtoimage }` lié
+>
 
-### Formulaire de piste {#lead-form}
+### Formulaire de prospect {#lead-form}
 
-Le formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/prospect. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Il s’agit généralement du titre, du nom, de l’adresse électronique, de la date de naissance, de l’adresse, du centre d’intérêt, etc. Il fait partie du groupe « Formulaire de prospect CTA ».
+Le formulaire de piste est utilisé pour collecter des informations sur le profil d’un visiteur/prospect. Ces informations pourront être stockées et exploitées ultérieurement pour mener une campagne marketing efficace. Ces informations comprennent généralement le titre, le nom, l’adresse électronique, la date de naissance, l’adresse, l’intérêt, etc. Il fait partie du groupe « Formulaire de prospect CTA ».
 
 **Fonctionnalités prises en charge**
 
 * Champs de prospect prédéfinis : les boutons Prénom, Nom, Adresse, Fonction, À propos de, ID utilisateur, ID d’e-mail et Envoyer sont disponibles dans le Sidekick. Il vous suffit de faire glisser le composant requis dans votre formulaire de prospect.
-* Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur peut ajouter des champs à l’aide des champs de formulaire de prospect cq:form ou cta, les nommer et les concevoir en fonction des besoins.
+* Grâce à ces composants, l’auteur peut concevoir un formulaire de prospect autonome. Ces champs correspondent à ceux du formulaire de prospect. Dans une application ZIP importée ou autonome, l’utilisateur peut ajouter des champs supplémentaires à l’aide des champs de formulaire de piste cq:form ou cta, les nommer et les concevoir selon les besoins.
 * Mettez en correspondance les champs de formulaire de prospect à l’aide de noms prédéfinis spécifiques du formulaire de prospect CTA ; par exemple, firstName pour first-name dans le formulaire de prospect, etc.
-* Les champs qui ne sont pas mis en correspondance avec un formulaire de piste le sont avec des composants cq:form : texte, case d’option, case à cocher, liste déroulante, masqué, mot de passe.
+* Les champs qui ne sont pas mappés à des composants de formulaire de piste sont mappés à cq:form - texte, radio, case à cocher, liste déroulante, masqué, mot de passe.
 * L’utilisateur ou l’utilisatrice peut fournir le titre à l’aide de la balise « label » et indiquer le style en utilisant l’attribut de style « class » (disponible uniquement pour les composants du formulaire de prospect CTA).
 * La page de remerciements et la liste d’abonnements peuvent être fournies sous forme de paramètre masqué du formulaire (présent dans le fichier index.htm) ou être ajoutées ou modifiées dans la barre de modification de « Début du formulaire de prospect ».
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
 * Des contraintes (telles qu’« Obligatoire ») peuvent être fournies à partir de la configuration de modification de chaque composant.
 
-Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. En l’occurrence, « firstName » est mis en correspondance avec le formulaire de piste firstName etc., à l’exception des cases à cocher. Ces deux cases à cocher sont mises en correspondance avec le composant Liste déroulante cq:form.
+Balise HTML permettant d’inclure le composant « lien graphique » dans le fichier ZIP importé. Ici, &quot;firstName&quot; est mappé sur firstName du formulaire de piste, etc., à l’exception des cases à cocher : ces deux cases à cocher sont mappées sur le composant déroulant cq:form .
 
 ```xml
 <div id="cqcanvas">
@@ -368,11 +365,11 @@ Balise HTML permettant d’inclure le composant « lien graphique » dans le f
 
 ### Parsys {#parsys}
 
-Le composant parsys d’AEM est un composant conteneur qui peut contenir d’autres composants AEM. Il est possible d’ajouter un composant parsys dans le fichier HTML importé. Cela permet à l’utilisateur d’ajouter des composants AEM modifiables à la page d’entrée, ou de les supprimer, après l’importation.
+Le composant parsys d’AEM est un composant conteneur qui peut contenir d’autres composants AEM. Il est possible d’ajouter un composant parsys dans le fichier HTML importé. Cela permet à l’utilisateur d’ajouter/supprimer des composants d’AEM modifiables à la page d’entrée, même après son importation.
 
-Le système de paragraphes offre aux utilisateurs la possibilité d’ajouter des composants à l’aide du Sidekick.
+Le système de paragraphes permet aux utilisateurs d’ajouter des composants à l’aide du sidekick.
 
-Balise HTML permettant d’insérer un composant parsys (`foundation/components/parsys`) dans le fichier HTML à l’intérieur du module de conception :
+Balise HTML permettant d’insérer un composant parsys (`foundation/components/parsys`) dans le fichier HTML à l’intérieur du package de conception :
 
 ```xml
 <div data-cq-component="parsys">
@@ -381,17 +378,17 @@ Balise HTML permettant d’insérer un composant parsys (`foundation/components/
 </div>
 ```
 
-L’insertion des balises ci-dessus dans le fichier HTML produit les effets suivants :
+L’inclusion des balises ci-dessus dans le HTML effectue les opérations suivantes :
 
-* Insertion d’un composant parsys AEM (foundation/components/parsys) dans la page d’entrée créée après l’importation du module de conception.
-* Initialisation du Sidekick avec des composants par défaut. Il est possible d’ajouter de nouveaux composants à la page d’entrée en les faisant glisser depuis le Sidekick vers le composant parsys.
-* Deux composants titre font également partie du système de paragraphes (parsys).
+* Insère un composant parsys d’AEM (foundation/components/parsys) dans la page d’entrée créée après l’importation du module de conception.
+* Initialisation du Sidekick avec des composants par défaut. De nouveaux composants peuvent être ajoutés à la page d’entrée en faisant glisser les composants du sidekick vers le composant parsys.
+* Deux composants de titre font également partie du système de paragraphes (parsys).
 
 ### Cible {#target}
 
-Le composant cible affiche le contenu d’une expérience sur la page : Il se peut que de nombreuses expériences aient été créées dans une campagne et que le composant cible affiche, de manière dynamique, le contenu issu de diverses expériences aux différents internautes qui consultent la page.
+Le composant cible affiche le contenu d’une expérience sur la page : Il peut y avoir de nombreuses expériences créées dans une campagne et le composant cible peut afficher dynamiquement le contenu de différentes expériences aux différents utilisateurs qui visitent la page.
 
-Balise HTML permettant d’insérer un composant cible et aussi de créer différentes expériences dans une campagne :
+Balise HTML permettant d’insérer un composant cible et de créer différentes expériences dans une campagne :
 
 ```xml
 <div data-cq-component="target">
@@ -411,25 +408,25 @@ Balise HTML permettant d’insérer un composant cible et aussi de créer diffé
 
 ## Options d’importation supplémentaires {#additional-importing-options}
 
-Outre l’identification des composants importés comme étant des composants AEM modifiables ou non, vous pouvez configurer les éléments suivants avant d’importer le module de conception :
+Outre la spécification de l’AEM des composants importés modifiables, vous pouvez également configurer les éléments suivants avant d’importer le module de conception :
 
-* Définition des propriétés de page en extrayant les métadonnées définies dans le fichier HTML importé.
-* Indication du codage du jeu de caractères dans le fichier HTML.
-* Recouvrement du modèle de page d’importation.
+* Définition des propriétés de page en extrayant les métadonnées définies dans le HTML importé.
+* Spécification du codage du jeu de caractères dans le HTML.
+* Recouvrement du modèle de page de l’importateur.
 
-### Définition des propriétés de page en extrayant les métadonnées définies dans le fichier HTML importé {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
+### Définition des propriétés de page en extrayant les métadonnées définies dans le HTML importé {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-Les métadonnées ci-dessous déclarées dans l’en-tête du fichier HTML importé doivent être extraites et conservées par l’importateur de conception sous forme de propriété « jcr:description » :
+Les métadonnées suivantes déclarées dans l’en-tête du HTML importé doivent être extraites et conservées par l’importateur de conception en tant que propriété &quot;jcr:description&quot; :
 
 * &lt;meta name=&quot;description&quot; content=&quot;&quot;>
 
-L’attribut Lang défini dans la balise HTML doit être extrait et conservé par l’importateur de conception sous forme de propriété « jcr:language » :
+L’attribut Lang défini dans la balise de HTML doit être extrait et conservé par l’importateur de conception en tant que propriété &quot;jcr:language&quot;.
 
 * &lt;html lang=&quot;en&quot;>
 
-### Indication du codage du jeu de caractères dans le fichier HTML {#specifying-the-charset-encoding-in-the-html}
+### Spécification du codage du jeu de caractères dans le fichier HTML {#specifying-the-charset-encoding-in-the-html}
 
-L’importateur de conception lit le codage spécifié dans le fichier HTML importé. Le codage peut être spécifié comme suit :
+L’importateur de conception lit le codage spécifié dans le fichier HTML importé. Le codage peut être spécifié comme suit :
 
 `<meta charset="UTF-8">`
 
@@ -437,39 +434,39 @@ L’importateur de conception lit le codage spécifié dans le fichier HTML impo
 
 `<meta http-equiv="content-type" content="text/html;charset=utf-8">`
 
-Si aucun codage n’est spécifié dans le fichier HTML importé, le codage par défaut défini par l’importateur de conception est UTF-8.
+Si aucun codage n’est spécifié dans le HTML importé, le codage par défaut défini par l’importateur de conception est UTF-8.
 
-### Recouvrement du modèle {#overlaying-template}
+### Recouvrement d’un modèle {#overlaying-template}
 
-Vous pouvez recouvrir le modèle Page d’entrée vierge en créant un autre, sous : `/apps/<appName>/designimporter/templates/<templateName>`
+Vous pouvez recouvrir le modèle Page de destination vierge en créant un autre, sous : `/apps/<appName>/designimporter/templates/<templateName>`
 
 Vous trouverez [ici](/help/sites-developing/templates.md) la procédure de création d’un modèle dans AEM.
 
 ### Référencement d’un composant à partir de la page d’entrée {#referring-a-component-from-landing-page}
 
-Supposons que vous souhaitiez référencer un composant dans votre fichier HTML à l’aide de l’attribut data-cq-component, de telle sorte que l’importateur de conception effectue le rendu d’un composant include à cet emplacement. Vous souhaitez, par exemple, référencer le composant table (`resourceType = /libs/foundation/components/table`). Vous devez ajouter ce qui suit dans le fichier HTML :
+Supposons que vous souhaitiez référencer un composant dans votre fichier HTML à l’aide de l’attribut data-cq-component, de telle sorte que l’importateur de conception effectue le rendu d’un composant include à cet emplacement. Par exemple, vous souhaitez référencer le composant de tableau ( `resourceType = /libs/foundation/components/table`). Vous devez ajouter ce qui suit dans le fichier HTML :
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
-Le chemin d’accès dans l’attribut data-cq-component doit être le resourceType du composant.
+Le chemin d’accès dans le composant data-cq-component doit être resourceType du composant.
 
 ### Bonnes pratiques {#best-practices}
 
-L’utilisation de sélecteurs CSS semblables à ceux présentés ci-dessous est déconseillée avec des éléments marqués pour la conversion de composants lors de l’importation.
+L’utilisation de sélecteurs CSS similaires aux suivants n’est pas recommandée avec les éléments marqués pour la conversion de composants lors de l’importation.
 
 | E > F | un élément F immédiatement précédé par un élément E | [Combinateur enfant](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
 | E + F | un élément F qui est le fils d’un élément E | [Combinateur frère adjacent](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
-| E ~ F | un élément F précédé par un élément E | [Combinateur frère général](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E:root | un élément E, racine du document | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-child(n) | un élément E qui est le n-ième enfant de son parent | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-child(n) | un élément E qui est le n-ième enfant de son parent en comptant depuis le dernier enfant | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-of-type(n) | un élément E qui est le n-ième enfant de son parent et de ce type | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E:nth-last-of-type(n) | un élément E qui est le n-ième enfant de son parent et de ce type en comptant depuis le dernier enfant | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E ~ F | un élément F précédé d’un élément E ; | [Combinateur frère général](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
+| E:root | un élément E, racine du document ; | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) | un élément E, le n-ième enfant de son parent ; | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) | un élément E, le n-ième enfant de son parent, en comptant à partir du dernier | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-of-type(n) | un élément E, le n-ième frère de son type | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-of-type(n) | un élément E, le n-ième frère de son type, en comptant à partir du dernier | [Pseudo-classes structurelles](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-Cela est dû au fait que d’autres éléments HTML, comme la balise &lt;div>, sont ajoutés au fichier HTML généré après l’importation.
+En effet, des éléments HTML supplémentaires tels que &lt;div> Les balises sont ajoutées au fichier Html généré après l’importation.
 
-* L’utilisation de scripts organisés selon une structure semblable à celle décrite ci-dessus est déconseillée avec des éléments marqués en vue d’une conversion en composants AEM.
+* Les scripts reposant sur la structure similaire à ci-dessus ne sont pas non plus recommandés pour une utilisation avec des éléments marqués pour conversion en composants AEM.
 * Il est déconseillé d’utiliser des styles sur les balises de mise en forme pour la conversion d’un composant, comme &lt;div data-cq-component=&quot;&amp;ast;&quot;>.
 * La disposition de conception doit suivre les bonnes pratiques relatives au modèle HTML5 Boilerplate. Pour en savoir plus, consultez [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
@@ -478,11 +475,11 @@ Cela est dû au fait que d’autres éléments HTML, comme la balise &lt;div>, 
 Les composants qui exposent des propriétés configurables par le biais de la console OSGI sont les suivants :
 
 * Importateur de conception de page d’entrée
-* Générateur de pages d’entrée
-* Générateur de pages d’entrée pour mobiles
-* Préprocesseur de saisie de pages d’entrée
+* Générateur de page d’entrée
+* Générateur de page d’entrée pour mobile
+* Préprocesseur de saisie de page d’entrée
 
-Vous trouverez dans le tableau ci-dessous une brève description des propriétés :
+Le tableau ci-dessous décrit brièvement les propriétés :
 
 <table>
  <tbody>
@@ -493,86 +490,88 @@ Vous trouverez dans le tableau ci-dessous une brève description des propriété
   </tr>
   <tr>
    <td>Importateur de conception de page d’entrée</td>
-   <td>Filtre exact</td>
+   <td>Extraire le filtre</td>
    <td>Liste des expressions régulières à utiliser pour le filtrage des fichiers de l’extraction. <br />Les entrées zip correspondant à l’un des modèles spécifiés sont exclues de l’extraction.</td>
   </tr>
   <tr>
-   <td>Générateur de pages d’entrée</td>
+   <td>Générateur de page d’entrée</td>
    <td>Modèle de fichier</td>
-   <td>Le générateur de pages d’entrée peut être configuré pour traiter les fichiers HTML correspondant à une expression régulière, tel que défini par le modèle de fichier.</td>
+   <td>Le générateur de pages de destination peut être configuré pour traiter les fichiers HTML correspondant à une expression régulière, tel que défini par le modèle de fichier.</td>
   </tr>
   <tr>
-   <td>Générateur de pages d’entrée pour mobiles</td>
+   <td>Générateur de page d’entrée pour mobile</td>
    <td>Modèle de fichier</td>
-   <td>Le générateur de pages d’entrée peut être configuré pour traiter les fichiers HTML correspondant à une expression régulière, tel que défini par le modèle de fichier.</td>
+   <td>Le générateur de pages de destination peut être configuré pour traiter les fichiers HTML correspondant à une expression régulière, tel que défini par le modèle de fichier.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Groupes de périphériques</td>
-   <td>Liste des groupes de périphériques à prendre en charge.</td>
+   <td>Liste des groupes d’appareils à prendre en charge.</td>
   </tr>
   <tr>
-   <td>Préprocesseur de saisie de pages d’entrée</td>
+   <td>Préprocesseur de saisie de page d’entrée</td>
    <td>Motif de recherche </td>
    <td>Motif à rechercher, dans le contenu d’entrée de l’archive. Dans le cas de cette expression régulière, une correspondance est effectuée, ligne par ligne, avec le contenu de l’entrée. En cas de correspondance, le texte concerné est remplacé par le modèle de remplacement spécifié.<br /> <br /> Reportez-vous à la remarque ci-dessous concernant les limitations actuelles du préprocesseur de saisie de pages d’entrée.</td>
   </tr>
   <tr>
    <td> </td>
    <td>Modèle de remplacement</td>
-   <td>Modèle qui remplace les correspondances trouvées. Vous pouvez utiliser des références de groupe regex, telles que $1, $2. En outre, ce modèle prend en charge des mots-clés tels que {designPath}, qui sont résolus avec leur valeur réelle au cours de l’importation.</td>
+   <td>Modèle qui remplace les correspondances trouvées. Vous pouvez utiliser des références de groupe regex, telles que $1, $2. Ce modèle prend également en charge des mots-clés tels que {designPath} qui sont résolus avec la valeur réelle pendant l’importation.</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
 >
->**Limitations actuelles du préprocesseur de saisie de pages d’entrée :**
->S’il s’avère nécessaire d’apporter des modifications au modèle de recherche, lors de l’ouverture de l’éditeur de propriétés felix, vous devez ajouter manuellement des barres obliques inversées (\) pour appliquer un échappement aux métacaractères regex. Si vous n’ajoutez pas manuellement ces barres obliques inversées, l’expression régulière (regex) est considérée comme non valide et ne remplace pas la plus ancienne.
+>**Limites actuelles du préprocesseur de saisie de page d’entrée :**
+>Si vous devez apporter des modifications au modèle de recherche, lorsque vous ouvrez l’éditeur de propriétés felix, vous devez ajouter manuellement des barres obliques inversées pour échapper les métacaractères regex. Si vous n’ajoutez pas manuellement de barre oblique inverse, l’expression régulière est considérée comme non valide et ne remplacera pas l’ancienne.
 >
->Par exemple, si la configuration par défaut est :
->`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>Par exemple, si la configuration par défaut est
 >
->Et vous devez remplacer >`CQ_DESIGN_PATH` par `VIPURL` dans le motif de recherche, celui-ci doit se présenter comme suit :
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>
+>Et vous devez remplacer `CQ_DESIGN_PATH`par `VIPURL` dans le motif de recherche, celui-ci doit se présenter comme suit :
+>
 >`/\* *VIPURL *\*/ *(['"])`
 
 ## Résolution des problèmes {#troubleshooting}
 
-Plusieurs erreurs peuvent être générées lors de l’importation du module de conception. Elles sont décrites dans cette section.
+Lors de l’import du module de conception, plusieurs erreurs peuvent se produire, décrites dans cette section.
 
-### Initialisation du Sidekick avec des composants relatifs à la page d’entrée {#initialization-of-sidekick-with-landing-page-relevant-components}
+### Initialisation du sidekick avec les composants pertinents de la page d’entrée {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-Si le module de conception contient des balises de composant parsys, le Sidekick commence à afficher les composants relatifs à la page d’entrée après l’importation. Vous pouvez faire glisser de nouveaux composants sur le composant parsys à l’intérieur de votre page d’entrée. Vous pouvez également passer en mode de conception et ajouter de nouveaux composants au Sidekick.
+Si le package de conception contient des balises de composant parsys, le Sidekick commence à afficher les composants relatifs à la page d’entrée après l’importation. Vous pouvez faire glisser de nouveaux composants sur le composant parsys à l’intérieur de votre page de destination. Vous pouvez également accéder au mode de conception et ajouter de nouveaux composants au sidekick.
 
 ### Messages d’erreur affichés au cours de l’importation {#error-messages-displayed-during-import}
 
-En cas d’erreurs (le module importé n’est pas un fichier ZIP valide, par exemple), l’importateur de conception n’importe pas le module et affiche, à la place, un message d’erreur dans la partie supérieure de la page, juste au-dessus de la zone de glisser-déposer. Des exemples de scénarios d’erreur sont présentés ici. Une fois l’erreur corrigée, vous pouvez réimporter le fichier ZIP mis à jour sur la même page d’entrée vierge. Vous trouverez, ci-dessous, différents scénarios entraînant la génération d’erreurs :
+En cas d’erreur (par exemple, le package importé n’est pas un fichier zip valide), l’importation de conception n’importe pas le package. Un message d’erreur s’affiche en haut de la page, juste au-dessus de la zone de glisser-déposer. Des exemples de scénarios d’erreur sont présentés ici. Après avoir corrigé l’erreur, vous pouvez réimporter le fichier compressé mis à jour sur la même page d’entrée vierge. Les différents scénarios où des erreurs sont générées sont les suivants :
 
-* Le module de conception importé n’est pas une archive ZIP valide.
-* Le module de conception importé ne comporte pas de fichier index.html au niveau supérieur.
+* Le package de conception importé n’est pas une archive ZIP valide.
+* Le package de conception importé ne comporte pas de fichier index.html au niveau supérieur.
 
 ### Avertissements affichés après l’importation {#warnings-displayed-after-import}
 
-Si des avertissements sont générés (par exemple, le fichier HTML fait référence à des images qui n’existent pas dans le module), l’importateur de conception importe le fichier ZIP, mais affiche, en même temps, une liste d’erreurs/avertissements dans le volet Résultat. Si vous cliquez sur le lien Problèmes, une liste d’avertissements, qui indique les problèmes éventuels survenus dans le module de conception, s’affiche. Voici différents scénarios dans lesquels l’importateur de conception a intercepté et affiché des avertissements :
+S’il existe des avertissements (par exemple, HTML fait référence à des images qui n’existent pas dans le module), l’importateur de conception importe le fichier zip, mais affiche en même temps une liste de problèmes/avertissements dans le volet Résultat. Cliquez sur le lien Problèmes pour afficher une liste d’avertissements qui indiquent les problèmes éventuels dans le module de conception. Voici différents scénarios dans lesquels l’importateur de conception a intercepté et affiché des avertissements :
 
-* Le fichier HTML fait référence à des images qui n’existent pas dans le module.
-* Le fichier HTML fait référence à des scripts qui n’existent pas dans le module.
-* Le fichier HTML fait référence à des styles qui n’existent pas dans le module.
+* Le fichier HTML fait référence à des images qui n’existent pas dans le package.
+* Le fichier HTML fait référence à des scripts qui n’existent pas dans le package.
+* Le fichier HTML fait référence à des styles qui n’existent pas dans le package.
 
-### Où les fichiers de l’archive ZIP sont-ils stockés dans AEM ? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
+### Où les fichiers du fichier ZIP sont-ils stockés dans AEM ? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-Une fois la page d’entrée importée, les fichiers (images, css, js, etc.) qui se trouvent dans le module de conception sont stockés à l’emplacement AEM suivant :
+Une fois la page d’entrée importée, les fichiers (images, css, js, etc.) du module de conception sont stockés à l’emplacement suivant dans AEM :
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Supposons que la page d’entrée soit créée sous la campagne We.Retail et que son nom soit **myBlankLandingPage**, l’emplacement de stockage des fichiers ZIP est le suivant :
+Supposons que la page d’entrée soit créée sous la campagne We.Retail et que le nom de la page d’entrée soit **myBlankLandingPage** alors l’emplacement où les fichiers zip sont stockés est le suivant :
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
-### La mise en forme n’est pas conservée {#formatting-not-preserved}
+### Mise en forme non conservée {#formatting-not-preserved}
 
-Lorsque vous créez votre CSS, veuillez tenir compte des limitations suivantes :
+Lors de la création de votre CSS, tenez compte des limites suivantes :
 
-Si un texte et une image (modifiable) se présentent comme suit :
+Si un texte et une image (modifiable) se présentent comme suit :
 
 ```xml
 <div class="box">
@@ -589,7 +588,7 @@ avec une feuille de style CSS appliquée à la classe `box`, comme suit :
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-`box img` est utilisé dans l’importateur de conception, la page d’entrée qui en résulte semble ne pas avoir conservé la mise en forme. Pour contourner ce problème, sachez qu’AEM ajoute des balises &lt;div> dans le CSS et réécrit le code en conséquence. Dans le cas contraire, certaines règles CSS ne seront pas valides.
+Alors `box img` est utilisé dans l’importateur de conception, la page d’entrée qui en résulte ne semble pas avoir conservé la mise en forme. Pour contourner ce problème, AEM ajoute des balises div dans le CSS et réécrivez le code en conséquence. Dans le cas contraire, certaines règles CSS ne seront pas valides.
 
 ```xml
 .box img
@@ -598,4 +597,5 @@ avec une feuille de style CSS appliquée à la classe `box`, comme suit :
 ```
 
 >[!NOTE]
+>
 >Les concepteurs doivent également tenir compte du fait que l’importateur ne reconnaît que le code placé à l’intérieur de la balise **id=cqcanvas**, autrement la conception n’est pas conservée.

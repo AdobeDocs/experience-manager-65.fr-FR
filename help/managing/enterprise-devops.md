@@ -1,38 +1,34 @@
 ---
 title: Opérations de développement d’entreprise (DevOps)
-seo-title: Enterprise DevOps
-description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
-seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
-uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
+description: Découvrez les processus, les méthodes et la communication nécessaires pour faciliter le déploiement et simplifier la collaboration.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
-discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '989'
-ht-degree: 100%
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+workflow-type: tm+mt
+source-wordcount: '983'
+ht-degree: 31%
 
 ---
 
 # Opérations de développement d’entreprise (DevOps){#enterprise-devops}
 
-Les opérations de développement couvrent les processus, les méthodes et les communications requis pour :
+DevOps couvre les processus, méthodes et communication requis pour :
 
-* simplifier le déploiement de votre logiciel sur les différents environnements ;
-* simplifier la collaboration entre les équipes de développement, de test et de déploiement.
+* Facilitez le déploiement de votre logiciel dans les différents environnements.
+* Simplifiez la collaboration entre les équipes de développement, de test et de déploiement.
 
-Les opérations de développement visent à éviter les problèmes tels que :
+Les opérations de développement visent à éviter les problèmes tels que :
 
-* les erreurs manuelles ;
-* les éléments oubliés, par exemple, des fichiers ou des détails de configuration ;
+* Erreurs manuelles.
+* les éléments oubliés; par exemple, fichiers, détails de configuration.
 * les incohérences, par exemple, entre l’environnement local d’un développeur et d’autres environnements.
 
 ## Environnements {#environments}
 
-Un déploiement d’Adobe Experience Manager (AEM) implique généralement plusieurs environnements, utilisés à diverses fins à différents niveaux :
+Un déploiement Adobe Experience Manager (AEM) se compose généralement de plusieurs environnements, utilisés à des fins différentes à différents niveaux :
 
 * [Développement](#development)
 * [Assurance qualité](#quality-assurance)
@@ -47,13 +43,13 @@ Un déploiement d’Adobe Experience Manager (AEM) implique généralement plu
 
 ### Développement {#development}
 
-Les développeurs sont chargés de développer et de personnaliser le projet proposé (qu’il s’agisse d’un site web, d’applications mobiles, d’une mise en œuvre de gestion des actifs numériques, etc.) avec toutes les fonctionnalités nécessaires. Ils :
+Les développeurs sont chargés de développer et de personnaliser le projet proposé (qu’il s’agisse d’un site web, d’applications mobiles, de la mise en oeuvre de la gestion des actifs numériques, etc.), avec toutes les fonctionnalités requises. Ils :
 
-* développent et personnalisent les éléments nécessaires, par exemple, les modèles, les composants, les workflows et les applications ;
+* développer et personnaliser les éléments nécessaires ; par exemple, modèles, composants, workflows, applications
 * réalisent la conception ;
 * développent les services et les scripts nécessaires pour mettre en œuvre les fonctionnalités requises.
 
-La configuration de l’environnement de [développement](/help/sites-developing/best-practices.md) peut dépendre de nombreux facteurs, bien qu’elle soit généralement composée des éléments suivants :
+La configuration de la variable [development](/help/sites-developing/best-practices.md) L’environnement peut dépendre de divers facteurs, bien qu’il se compose des éléments suivants :
 
 * Un système de développement intégré avec contrôle de version pour fournir une base de code intégrée. Il est utilisé pour fusionner et consolider le code des différents environnements de développement utilisés par chaque développeur.
 * Un environnement personnel pour chaque développeur, résidant habituellement sur son ordinateur local. Le code est synchronisé avec le système de contrôle de version à des intervalles appropriés.
@@ -62,15 +58,15 @@ Selon l’échelle de votre système, l’environnement de développement peut c
 
 ### Assurance qualité {#quality-assurance}
 
-Cet environnement est utilisé par l’équipe d’assurance qualité afin de [tester](/help/sites-developing/test-plan.md) entièrement votre nouveau système, autant sur sa conception que ses fonctions. Il devrait comprendre des environnements de création et de publication, avec le contenu approprié, et fournir tous les services nécessaires pour réaliser une suite complète de tests.
+Cet environnement est utilisé par l’équipe d’assurance qualité afin de [tester](/help/sites-developing/test-plan.md) entièrement votre nouveau système, autant sur sa conception que ses fonctions. Il doit comporter des environnements de création et de publication, avec du contenu approprié, et fournir tous les services nécessaires pour activer une suite complète de tests.
 
 ### Évaluation  {#staging}
 
-L’environnement intermédiaire doit être un miroir de l’environnement de production, en matière de configuration, de code et de contenu :
+L’environnement d’évaluation doit être un miroir de l’environnement de production : configuration, code et contenu :
 
-* Il permet de tester les scripts utilisés pour mettre en œuvre le déploiement.
-* Il peut servir pour les tests finaux (de conception, des fonctionnalités et des interfaces) avant le déploiement sur les environnements de production.
-* L’environnement intermédiaire ne peut pas toujours être identique à l’environnement de production ; toutefois, il doit s’en rapprocher le plus possible afin de permettre les tests de performance et de charge.
+* Il est utilisé pour tester les scripts utilisés pour mettre en oeuvre le déploiement réel.
+* Il peut être utilisé pour les tests finaux (conception, fonctionnalités et interfaces) avant le déploiement dans les environnements de production.
+* Bien qu’il ne soit pas toujours possible que l’environnement d’évaluation soit identique à l’environnement de production, il doit être aussi proche que possible pour activer les tests de performance et de charge.
 
 ### Production : création et publication  {#production-author-and-publish}
 
@@ -81,47 +77,47 @@ Un environnement de production comprend au moins une instance de création et un
 * Une instance de [création](#author) pour la saisie du contenu.
 * Une instance de [publication](#publish) pour le contenu mis à la disposition de vos visiteurs/utilisateurs.
 
-En fonction de l’échelle du projet, il se compose bien souvent de plusieurs instances de création et/ou de publication. À un niveau inférieur, le référentiel peut également être mis en grappe sur plusieurs instances.
+Selon l’échelle du projet, il se compose souvent de plusieurs instances d’auteur, de plusieurs instances de publication ou des deux. À un niveau inférieur, le référentiel peut également être mis en grappe sur plusieurs instances.
 
 #### Création {#author}
 
-Les instances de création sont généralement situées derrière le pare-feu interne. Il s’agit de l’environnement dans lequel vos collègues et vous-même effectuez les tâches de création, telles que :
+Les instances d’auteur se trouvent généralement derrière le pare-feu interne. Il s’agit de l’environnement dans lequel vous et vos collègues effectuerez des tâches de création, telles que :
 
-* Administration du système
-* Saisie du contenu
-* Configuration de la mise en page et conception du contenu
-* Activation du contenu dans l’environnement de publication
+* administrer l’ensemble du système ;
+* saisir votre contenu ;
+* configurer la mise en page et la conception de votre contenu ;
+* activer votre contenu dans l’environnement de publication ;
 
-Le contenu qui a été activé est regroupé en module et placé dans la file d’attente de réplication de l’environnement de création. Le processus de réplication transporte alors ce contenu vers l’environnement de publication.
+Le contenu qui a été activé est mis en package et placé dans la file d’attente de réplication de l’environnement de création. Le processus de réplication transporte ensuite ce contenu dans l’environnement de publication.
 
-De façon à répliquer à l’inverse les données dans un environnement de publication vers l’environnement de création, un écouteur de réplication dans l’environnement de création interroge l’environnement de publication et récupère le contenu dans la boîte d’envoi de la réplication inverse de l’environnement de publication.
+Pour répliquer à l’inverse les données générées dans un environnement de publication vers l’environnement de création, un écouteur de réplication dans l’environnement de création interroge l’environnement de publication et récupère ce contenu dans la boîte d’envoi de réplication inverse de l’environnement de publication.
 
-#### Publication  {#publish}
+#### Publier {#publish}
 
-L’environnement de publication est généralement situé dans la zone démilitarisée (DMZ). Il s’agit de l’environnement dans lequel les visiteurs accèdent à votre contenu (par exemple, par le biais d’un site web ou sous forme d’application mobile) et interagissent avec lui, qu’il soit public ou se trouve sur votre réseau intranet. Un environnement de publication :
+Un environnement de publication se trouve dans la zone démilitarisée (DMZ). Il s’agit de l’environnement dans lequel les visiteurs accèdent à votre contenu (par exemple, via un site web ou sous la forme d’une application mobile) et interagissent avec celui-ci ; qu’il soit public ou dans votre intranet. Un environnement de publication :
 
-* présente du contenu répliqué à partir de l’environnement de création ;
-* met ce contenu à la disposition des visiteurs ;
-* stocke les données utilisateur générées par vos visiteurs, telles que les commentaires ou les autres soumissions de formulaires ;
-* peut être configuré pour ajouter ces données utilisateur à une boîte d’envoi pour la réplication inverse vers l’environnement de création.
+* contient du contenu répliqué à partir de l’environnement de création ;
+* met ce contenu à la disposition des visiteurs
+* stocke les données utilisateur générées par vos visiteurs, telles que les commentaires ou autres envois de formulaire ;
+* peut être configuré pour ajouter de telles données utilisateur à une boîte d’envoi, afin que la réplication inverse soit rétablie dans l’environnement de création.
 
-L’environnement de publication génère du contenu de manière dynamique et en temps réel, et le contenu peut être personnalisé pour chaque utilisateur.
+L’environnement de publication génère votre contenu dynamiquement en temps réel et le contenu peut être personnalisé pour chaque utilisateur.
 
 ## Mouvement de code  {#code-movement}
 
-Le code doit toujours être propagé du bas vers le haut :
+toujours propager le code du bas vers le haut :
 
-* Le code est développé initialement dans l’environnement de développement local puis dans les environnements de développement intégrés.
-* Par la suite, il fait l’objet d’un test complet dans le ou les environnements d’assurance qualité.
-* Il est ensuite testé dans les environnements intermédiaires.
+* Le code est initialement développé sur les environnements de développement locaux puis intégrés.
+* suivi de tests approfondis sur les environnements d’assurance qualité
+* puis effectuer de nouveau les tests sur les environnements intermédiaires.
 * À ce stade seulement, le code doit être déployé dans les environnements de production.
 
-Le code (par exemple, les fonctionnalités d’applications web et les modèles de conception personnalisés) est généralement transféré en exportant et en important des modules entre les différents référentiels de contenu. Le cas échéant, cette réplication peut être configurée en tant que processus automatique.
+Le code (par exemple, la fonctionnalité d’application web personnalisée et les modèles de conception) est transféré en exportant et en important des modules entre les différents référentiels de contenu. Lorsque c’est approprié, cette réplication peut être configurée en tant que processus automatique.
 
-Les projets AEM déclenchent souvent le déploiement du code :
+Les projets AEM déclenchent souvent le déploiement du code :
 
 * Automatiquement : pour le transfert vers les environnements de développement et d’assurance qualité.
-* Manuellement : les déploiements sur les environnements d’évaluation et de production sont effectués de manière plus contrôlée, souvent manuelle ; l’automatisation reste toutefois possible, si nécessaire.
+* Manuellement : les déploiements dans les environnements d’évaluation et de production sont effectués de manière plus contrôlée, souvent manuelle; bien que l’automatisation soit possible, si nécessaire.
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -135,11 +131,11 @@ Le contenu de production doit être déplacé à partir de l’environnement de 
 
 >[!NOTE]
 >
->Cela ne signifie pas que le contenu intermédiaire doit être continuellement synchronisé avec la production, les mises à jour régulières étant suffisantes, sauf avant de tester une nouvelle itération de code. Il n’est pas nécessaire de mettre à jour le contenu des environnements d’assurance qualité et de développement aussi fréquemment ; il doit simplement bien représenter le contenu de production.
+>Cela ne signifie pas que le contenu intermédiaire doit être continuellement synchronisé avec la production, les mises à jour régulières sont suffisantes, mais surtout avant de tester une nouvelle itération du code. Le contenu des environnements d’assurance qualité et de développement n’a pas besoin d’être mis à jour aussi fréquemment. Il doit s’agir d’une bonne représentation du contenu de production.
 
-Le contenu peut être transféré :
+Le contenu peut être transféré :
 
-* entre les différents environnements, en exportant et en important des modules ;
-* entre différentes instances, en répliquant directement (par [réplication AEM](/help/sites-deploying/replication.md)) le contenu (à l’aide d’une connexion HTTP ou HTTPS).
+* Entre les différents environnements, en exportant et en important des packages.
+* entre différentes instances, en répliquant directement ([Réplication AEM](/help/sites-deploying/replication.md)), le contenu (à l’aide d’une connexion HTTP ou HTTPS).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
