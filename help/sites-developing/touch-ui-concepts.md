@@ -1,26 +1,22 @@
 ---
-title: Concepts de l’interface utilisateur (IU) tactile d’AEM
-seo-title: Concepts of the AEM Touch-Enabled UI
-description: Adobe a lancé, avec AEM 5.6, une nouvelle interface utilisateur optimisée pour les écrans tactiles. Cette interface s’accompagne également de la technologie responsive design pour l’environnement de création.
-seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
-uuid: 401c5a65-6ddc-4942-ab8e-395016f9c629
+title: Concepts de l’interface utilisateur tactile d’Adobe Experience Manager
+description: Avec Adobe Experience Manager 5.6, Adobe a introduit une nouvelle interface utilisateur optimisée pour les écrans tactiles avec une conception adaptée à l’environnement de création.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2176'
-ht-degree: 100%
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+workflow-type: tm+mt
+source-wordcount: '2167'
+ht-degree: 26%
 
 ---
 
-# Concepts de l’interface utilisateur (IU) tactile d’AEM{#concepts-of-the-aem-touch-enabled-ui}
+# Concepts de l’interface utilisateur tactile d’Adobe Experience Manager{#concepts-of-the-aem-touch-enabled-ui}
 
-AEM dispose d’une interface utilisateur tactile avec [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçu pour fonctionner sur les appareils tactiles et de bureau.
+Adobe Experience Manager (AEM) offre une interface utilisateur tactile [responsive design](/help/sites-authoring/responsive-layout.md) pour l’environnement de création conçu pour fonctionner sur les périphériques tactiles et de bureau.
 
 >[!NOTE]
 >
@@ -31,83 +27,83 @@ L’interface utilisateur tactile se compose des éléments suivants :
 * L’en-tête de la suite qui :
    * affiche le logo,
    * fournit un lien vers la navigation globale,
-   * fournit le lien vers d’autres actions génériques, comme Rechercher, Aide, Solutions Marketing Cloud, Notifications et Paramètres utilisateur.
+   * fournit un lien vers d’autres actions génériques ; tels que Rechercher, Aide, Solutions Experience Cloud, Notifications et Paramètres utilisateur.
 * Le rail de gauche (affiché lorsque cela s’avère nécessaire et pouvant être masqué) qui peut afficher les options suivantes :
    * Chronologie
    * Références
    * Filtres
-* L’en-tête de navigation, qui dépend du contexte et peut afficher les éléments suivants :
-   * La console en cours d’utilisation et/ou la position au sein de cette console
-   * Sélection pour le rail de gauche
+* L’en-tête de navigation, qui est à nouveau contextuel et peut afficher :
+   * Indique la console que vous utilisez actuellement, ou votre emplacement, ou les deux, dans cette console.
+   * Sélection du rail de gauche
    * Chemin de navigation
    * Accès aux actions **Créer** appropriées
-   * Sélections de vues
-* La zone de contenu qui :
-   * répertorie les éléments de contenu (qu’il s’agisse de pages, de ressources, d’articles de forum, etc.),
-   * peut être formatée suivant les besoins (colonne, carte ou liste, par exemple),
-   * utilise la technologie responsive design (l’affichage est redimensionné automatiquement en fonction de la taille du terminal et/ou de la fenêtre),
-   * utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés sur une seule fenêtre).
+   * Affichage des sélections
+* Zone de contenu qui :
+   * Répertorie les éléments de contenu (qu’il s’agisse de pages, de ressources, de publications de forum, etc.)
+   * Peut être formaté selon les besoins, par exemple, colonne, carte ou liste
+   * utilise la technologie responsive design (l’affichage est redimensionné automatiquement en fonction de la taille de l’appareil et/ou de la fenêtre),
+   * Utilise le défilement infini (plus de pagination, tous les éléments sont répertoriés dans une seule fenêtre)
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
 >[!NOTE]
 >
->Presque toutes les fonctionnalités d’AEM ont été adaptées à l’interface utilisateur tactile. Cependant, pour quelques fonctions, l’IU classique est rétablie. Pour plus d’informations, voir [État des fonctionnalités de l’interface utilisateur tactile](/help/release-notes/touch-ui-features-status.md).
+>Presque toutes les fonctionnalités d’AEM ont été transférées vers l’interface utilisateur tactile. Cependant, dans certains cas, la fonctionnalité revient à l’IU classique. Voir [État des fonctionnalités de l’interface utilisateur tactile](/help/release-notes/touch-ui-features-status.md) pour plus d’informations.
 
-L’interface utilisateur tactile a été conçue par Adobe pour garantir une expérience utilisateur homogène entre plusieurs produits. Elle repose sur les éléments suivants :
+L’interface utilisateur tactile a été conçue par Adobe pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. Elle est basée sur :
 
-* **IU Coral** : implémentation du style vidéo d’Adobe pour l’interface utilisateur tactile. L’IU Coral fournit tous les éléments dont votre produit/projet/application web a besoin pour adopter le style visuel de l’interface utilisateur.
-* Les composants de l’**IU Granite** sont créés avec l’IU Coral.
+* **IU Coral** (CUI) une mise en oeuvre du style visuel de l’Adobe pour l’interface utilisateur tactile. L’interface utilisateur Coral fournit tout ce dont votre produit, projet ou application web a besoin pour adopter le style visuel de l’interface utilisateur.
+* **IU Granite** Les composants sont créés avec l’interface utilisateur Coral.
 
-Les principes de base dans l’IU tactile sont les suivants :
+Les principes de base de l’interface utilisateur tactile sont les suivants :
 
-* Le mobile d’abord (en gardant toutefois à l’esprit l’environnement bureautique)
-* Responsive Design
+* Mobile d’abord (en gardant à l’esprit l’ordinateur de bureau)
+* Responsive design
 * Affichage contextuel
-* Possibilité de réutilisation
-* Inclure la documentation de référence intégrée
-* Inclure des tests intégrés
-* Approche ascendante pour garantir l’application de ces principes à tous les éléments et composants
+* Réutilisable
+* Inclure la documentation de référence incorporée
+* Inclure des tests incorporés
+* Une conception de bas en haut pour s’assurer que ces principes sont appliqués à chaque élément et composant
 
-Pour une présentation plus détaillée de la structure de l’interface utilisateur tactile, reportez-vous à l’article [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md).
+Pour une présentation plus détaillée de la structure de l’interface utilisateur tactile, voir [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md).
 
 ## Pile technologique AEM {#aem-technology-stack}
 
-AEM utilise la plate-forme Granite qui inclut, entre autres, Java Content Repository.
+AEM utilise la plateforme Granite comme base et la plateforme Granite inclut, entre autres, le référentiel de contenu Java™.
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
 ## Granite {#granite}
 
-Granite est la pile web ouverte d’Adobe. Elle fournit divers composants, parmi lesquels :
+Granite est la pile Open Web de l’Adobe, qui fournit divers composants, notamment :
 
-* Un lanceur d’applications
-* Une structure OSGi dans laquelle tous les éléments sont déployés
-* Plusieurs services du compendium OSGi pour la prise en charge de la création d’applications
+* Lanceur d’applications
+* une structure OSGi dans laquelle tout est déployé ;
+* Plusieurs services de compendium OSGi pour la prise en charge de la création d’applications
 * Une structure de journalisation complète fournissant diverses API de journalisation
-* Une implémentation du référentiel CRX de la spécification d’API JCR
-* La structure web Apache Sling
-* Des parties supplémentaires du produit CRX actuel
+* Implémentation du référentiel CRX de la spécification API JCR
+* Structure web Apache Sling
+* Parties supplémentaires du produit CRX actuel
 
 >[!NOTE]
 >
->Granite est exécuté en tant que projet de développement ouvert dans Adobe : les contributions au code, les discussions et la résolution des problèmes proviennent de l’ensemble de l’entreprise.
+>Granite est exécuté en tant que projet de développement ouvert dans Adobe : les contributions au code, aux discussions et aux problèmes proviennent de l’ensemble de l’entreprise.
 >
->Cependant, Granite n’est **pas** un projet Open Source. Il dépend très largement de plusieurs projets Open Source (Apache Sling, Felix, Jackrabbit et Lucene, en particulier), mais Adobe distingue clairement l’aspect public du contenu interne.
+>Cependant, Granite est **not** un projet open source. Il est fortement basé sur plusieurs projets open source (Apache Sling, Felix, Jackrabbit, et Lucene en particulier), mais l&#39;Adobe trace une ligne claire entre ce qui est public et ce qui est interne.
 
 ## IU Granite {#granite-ui}
 
-La plate-forme engineering de Granite fournit également une structure d’IU de base. Les principaux objectifs de cette plate-forme sont les suivants :
+La plateforme d’ingénierie Granite fournit également une structure d’interface utilisateur de base. Les principaux objectifs sont les suivants :
 
 * Fournir des widgets d’IU détaillés
-* Mettre en œuvre les concepts d’IU et illustrer les meilleures pratiques (rendu de listes contenant de nombreux éléments, filtrage de listes, opérations CRUD sur les objets, assistants CUD, etc.)
-* Fournir une interface d’administration extensible basée sur un module externe
+* Mettez en oeuvre les concepts de l’interface utilisateur et illustrez les bonnes pratiques (rendu de listes longues, filtrage par listes, CRUD d’objet, assistants CUD, etc.).
+* Fournir une interface utilisateur d’administration extensible basée sur des modules externes
 
-Ces objectifs sont conformes aux exigences suivantes :
+Ils respectent les exigences suivantes :
 
-* Respecter le principe « Le mobile d’abord »
+* Respecter &quot;le mobile d&#39;abord&quot;
 * Être extensible
-* Être facile à remplacer
+* Soyez facile à remplacer
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 GraniteUI.pdf
@@ -115,13 +111,13 @@ GraniteUI.pdf
 [Obtenir le fichier](assets/graniteui.pdf)
 L’IU Granite :
 
-* utilise l’architecture RESTful de Sling,
-* implémente des bibliothèques de composants destinées à la création d’applications web axées sur le contenu,
-* fournit des widgets d’IU détaillés,
-* fournit une IU standardisée par défaut,
-* est extensible,
-* est conçue à la fois pour les appareils mobiles et les ordinateurs de bureau (respect du principe « Le mobile d’abord »),
-* peut être utilisée dans n’importe quel produit/plate-forme/projet basé sur Granite ; AEM, par exemple.
+* Utilise l’architecture RESTful de Sling
+* Mise en oeuvre de bibliothèques de composants destinées à la création d’applications web centrées sur le contenu
+* Fournit des widgets d’IU détaillés
+* Fournit une interface utilisateur normalisée par défaut.
+* Extensible
+* Il est conçu pour les appareils mobiles et de bureau (respecte d’abord le mobile).
+* Peut être utilisé dans n’importe quel projet/plateforme/produit/projet basé sur Granite ; par exemple, AEM
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -129,40 +125,40 @@ L’IU Granite :
 Cette bibliothèque de composants de base peut être utilisée ou étendue par d’autres bibliothèques.
 * [Composants d’administration de l’IU Granite](#granite-ui-administration-components)
 
-### Côté client / côté serveur {#client-side-vs-server-side}
+### Côté client et côté serveur {#client-side-vs-server-side}
 
-La communication client-serveur au sein de l’IU Granite est constituée d’éléments hypertexte, et non d’objets. Il n’est donc pas nécessaire pour le client de comprendre la logique métier.
+La communication client-serveur dans l’interface utilisateur Granite se compose d’hypertexte, et non d’objets. Il n’est donc pas nécessaire que le client comprenne la logique commerciale.
 
-* Le serveur enrichit le code HTML avec des données sémantiques.
-* Le client enrichit l’hypertexte avec des hypermédias (interaction).
+* Le serveur enrichit le HTML de données sémantiques
+* Le client enrichit l&#39;hypertexte avec hypermédia (interaction)
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
 #### Côté client {#client-side}
 
-Dans ce cas, une extension du vocabulaire HTML est utilisée, de sorte que l’auteur puisse exprimer son intention de créer une application web interactive. Il s’agit d’une approche similaire à [WAI-ARIA](https://www.w3.org/TR/wai-aria/) et [microformats](https://microformats.org/).
+Cela utilise une extension du vocabulaire de HTML, à condition que l’auteur puisse exprimer son intention de créer une application web interactive. Il s’agit d’une approche similaire à la [WAI-ARIA](https://www.w3.org/TR/wai-aria/) et [microformats](https://microformats.org/).
 
-Il est essentiellement constitué d’un ensemble de schémas d’interaction (envoi d’un formulaire de manière asynchrone, par exemple) qui sont interprétés par des codes JS et CSS, et exécutés du côté client. Le rôle du côté client consiste à améliorer le balisage (fourni en tant que capacité hypermédia par le serveur) pour garantir l’interactivité.
+Il se compose principalement d’un ensemble de modèles d’interaction (par exemple, l’envoi asynchrone d’un formulaire) interprétés par des codes JS et CSS, exécutés côté client. Le rôle du côté client est d’améliorer le balisage (fourni comme support hypermédia par le serveur) pour l’interactivité.
 
-Le côté client est indépendant de toute technologie serveur. Tant que le serveur fournit le balisage approprié, le côté client peut remplir son rôle.
+Le côté client est indépendant de toute technologie de serveur. Tant que le serveur fournit le balisage approprié, le côté client peut remplir son rôle.
 
-Actuellement, les codes JS et CSS sont fournis en tant que [clientlibs](/help/sites-developing/clientlibs.md) (bibliothèques clientes) Granite sous la catégorie suivante :
+Actuellement, les codes JS et CSS sont fournis en tant que Granite. [clientlibs](/help/sites-developing/clientlibs.md) sous la catégorie :
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
-Elles sont distribuées dans le cadre du module de contenu :
+Elles sont distribuées dans le cadre du package de contenu :
 
 `granite.ui.content`
 
 #### Côté serveur {#server-side}
 
-Il est formé par un ensemble de composants sling qui permettent à l’auteur de *composer* rapidement une application web. Le développeur élabore les composants et l’auteur les assemble pour former une application web. Le rôle du côté serveur consiste à attribuer la capacité hypermédia (balisage) au client.
+Il est formé par une collection de composants Sling qui permettent à l’auteur de *composer* une application web rapide. Le développeur développe des composants, l’auteur les assemble pour en faire une application web. Le rôle du côté serveur est de donner au client l’accès hypermédia (balisage).
 
-Actuellement, les composants résident dans le référentiel Granite à l’adresse :
+Actuellement, les composants se trouvent dans le référentiel Granite à l’adresse :
 
 `/libs/granite/ui/components/foundation`
 
-Il est distribué dans le cadre du module de contenu :
+Il est distribué dans le cadre du package de contenu :
 
 `granite.ui.content`
 
@@ -178,7 +174,7 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
   </tr>
   <tr>
    <td>Appel de procédure à distance<br /> </td>
-   <td>Transmissions de statuts</td>
+   <td>Transitions d’état</td>
   </tr>
   <tr>
    <td>Objets de transfert de données</td>
@@ -199,19 +195,19 @@ Il est aussi intéressant d’examiner les différences entre l’IU Granite et 
  </tbody>
 </table>
 
-### Composants de base de l’IU Granite {#granite-ui-foundation-components}
+### Composants de base de l’IU Granite {#granite-ui-foundation-components}
 
-Les [composants de base de l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les éléments nécessaires à la création d’une interface utilisateur. Ils comprennent, entre autres, les éléments suivants :
+Le [Composants de base de l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) fournissent les blocs de création de base nécessaires à la création d’une interface utilisateur. Ils incluent, entre autres :
 
 * Bouton
 * Lien hypertexte
 * Avatar de l’utilisateur
 
-Les composants de base se trouvent à l’emplacement suivant :
+Les composants de base se trouvent sous :
 
 `/libs/granite/ui/components/foundation`
 
-Cette bibliothèque contient un composant IU Granite pour chaque élément Coral. Un composant est axé sur le contenu et sa configuration réside dans le référentiel. Cela permet de composer une application IU Granite sans écrire manuellement de balises HTML.
+Cette bibliothèque contient un composant d’IU Granite pour chaque élément Coral. Un composant est piloté par le contenu, sa configuration résidant dans le référentiel. Cela permet de composer une application IU Granite sans écrire manuellement de balises HTML.
 
 Objectif :
 
@@ -221,15 +217,15 @@ Objectif :
 
 Mise en œuvre :
 
-* Composition et configuration basées sur un répertoire
-* Utilisation des fonctionnalités de test fournies par la plate-forme Granite
-* Création de modèles JSP
+* Composition et configuration basées sur un référentiel
+* Utilisation des fonctionnalités de test fournies par la plateforme Granite
+* Modèle JSP
 
 Cette bibliothèque de composants de base peut être utilisée ou étendue par d’autres bibliothèques.
 
-### ExtJS et composants IU Granite correspondants {#extjs-and-corresponding-granite-ui-components}
+### ExtJS et composants d’IU Granite correspondants {#extjs-and-corresponding-granite-ui-components}
 
-Lors de la mise à niveau du code ExtJS afin d’utiliser l’IU Granite, la liste ci-dessous fournit un aperçu des types de nœud et xtypes ExtJS, accompagnés des types de ressources IU Granite équivalents.
+Lors de la mise à niveau du code ExtJS pour utiliser l’interface utilisateur Granite, la liste suivante fournit un aperçu pratique des xtypes ExtJS et des types de noeuds avec leurs types de ressources d’interface utilisateur Granite équivalents.
 
 | **ExtJS xtype** | **Type de ressource de l’IU Granite** |
 |---|---|
@@ -258,7 +254,7 @@ Lors de la mise à niveau du code ExtJS afin d’utiliser l’IU Granite, la li
 
 ### Composants d’administration de l’IU Granite {#granite-ui-administration-components}
 
-Les [composants d’administration de l’IU Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) dépendent des composants de base pour fournir les éléments génériques que toute application d’administration peut implémenter. Ils comprennent, entre autres, les éléments suivants :
+Les [composants d’administration de l’IU Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) dépendent des composants de base pour fournir les éléments génériques que toute application d’administration peut implémenter. Il s’agit, entre autres :
 
 * Barre de navigation globale
 * Rail (squelette)
@@ -267,67 +263,66 @@ Les [composants d’administration de l’IU Granite](https://helpx.adobe.com/f
 Objectif :
 
 * Apparence unifiée pour les applications d’administration
-* Développement accéléré (RAD) pour les applications d’administration
+* Rad pour les applications d’administration
 
 Mise en œuvre :
 
-* Composants prédéfinis à l’aide des composants de base.
-* Les composants peuvent être personnalisés.
+* Composants prédéfinis à l’aide des composants de base
+* Les composants peuvent être personnalisés
 
 ## IU Coral {#coral-ui}
 
 CoralUI.pdf
 
 [Obtenir le fichier](assets/coralui.pdf)
-L’interface utilisateur (IU) Coral est une implémentation du style visuel d’Adobe pour l’interface utilisateur tactile. Elle a été conçue par Adobe pour garantir une expérience utilisateur homogène entre plusieurs produits. Elle comprend tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
+L’IU Coral (CUI) est une implémentation du style visuel de l’Adobe pour l’IU tactile conçue pour assurer la cohérence de l’expérience utilisateur sur plusieurs produits. L’interface utilisateur Coral fournit tout ce dont vous avez besoin pour adopter le style visuel utilisé dans l’environnement de création.
 
 >[!CAUTION]
 >
->L’IU Coral est une bibliothèque d’IU mise à la disposition des clients AEM pour créer des applications et des interfaces web dans les limites d’utilisation du produit définies par leur licence.
+>L’interface utilisateur Coral est une bibliothèque d’interface utilisateur mise à la disposition des clients AEM pour qu’ils puissent créer des applications et des interfaces web dans les limites de leur utilisation sous licence du produit.
 >
 >L’utilisation de l’IU Coral est autorisée uniquement dans les cas suivants :
 >
 >
->* Lorsqu’elle a été distribuée et fournie avec AEM.
->* Lors de l’extension de l’IU existante de l’environnement de création.
+>* Lorsqu’il a été expédié et regroupé avec AEM.
+>* À utiliser lors de l’extension de l’interface utilisateur existante de l’environnement de création.
 >* Documents marketing, publicités et présentations Adobe.
->* Interface utilisateur des applications de marque Adobe (la police ne doit pas être facilement accessible à d’autres fins).
->* Personnalisations mineures.
+>* Interface utilisateur des applications de marque Adobe (la police ne doit pas être facilement disponible pour d’autres utilisations).
+>* Avec des personnalisations mineures.
 >
->Vous devez éviter d’utiliser l’IU Coral dans les cas suivants :
+>L’utilisation de l’IU Coral doit être évitée dans :
 >
->* Documents et autres éléments non liés à Adobe.
->* Environnements de création de contenu (dans lesquels les éléments précédents peuvent être générés par des tiers).
->* Applications/composants/pages web qui ne sont pas clairement associés à Adobe.
+>* Documents et autres éléments non liés à l’Adobe.
+>* Environnements de création de contenu (où les éléments précédents peuvent être générés par d’autres personnes).
+>* Applications/composants/pages web qui ne sont pas clairement connectés à l’Adobe.
 >
-
 
 L’IU Coral est un ensemble de composantes de base destinées au développement d’applications web.
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-Conçu dès le début dans une optique de modularité, chaque module forme une couche distincte en fonction de son rôle principal. Bien que les couches aient été conçues pour une prise en charge mutuelle, elles peuvent, au besoin, être utilisées de manière indépendante. Cela permet d’implémenter l’expérience utilisateur de Coral dans n’importe quel environnement compatible HTML.
+Conçu pour être modulaire dès le départ, chaque module forme une couche distincte en fonction de son rôle Principal. Bien que les calques aient été conçus pour se soutenir les uns les autres, ils peuvent également être utilisés indépendamment si nécessaire. Cela permet de mettre en oeuvre l’expérience utilisateur de Coral dans n’importe quel environnement compatible avec les HTMLS.
 
-L’IU Coral n’exige pas l’utilisation d’un modèle, ni d’une plate-forme de développement spécifique. L’objectif principal de Coral est de fournir un balisage HTML5 net et unifié, indépendant de la méthode utilisée pour émettre les balises. Ce balisage peut être utilisé pour le rendu côté client ou serveur, les modèles, JSP, PHP ou encore les applications RIA Adobe Flash, pour ne citer que quelques exemples.
+Avec l’interface utilisateur Coral, il n’est pas obligatoire d’utiliser un modèle de développement et/ou une plateforme spécifique. L’objectif Principal de Coral est de fournir un balisage HTML5 unifié et propre, indépendamment de la méthode utilisée pour émettre ce balisage. Il peut être utilisé pour le rendu côté client ou côté serveur, les modèles, JSP, PHP ou même les applications RIA Flash Adobe, pour n’en citer que quelques-unes.
 
-### Éléments HTML – Calque de balisage {#html-elements-the-markup-layer}
+### Éléments de HTML - Calque de balisage {#html-elements-the-markup-layer}
 
-Les éléments HTML offrent une apparence commune pour tous les éléments d’interface de base (y compris la barre de navigation, les boutons, les menus, le rail, etc.).
+Les éléments de HTML offrent un aspect commun à tous les éléments de l’interface utilisateur de base (y compris la barre de navigation, les boutons, le menu, le rail, etc.).
 
-Au niveau le plus bas, un élément HTML est une balise HTML avec un nom de classe dédié. Les éléments plus complexes peuvent être composés de plusieurs balises, imbriquées les unes dans les autres (d’une manière spécifique).
+Au niveau le plus élémentaire, un élément de HTML est une balise de HTML avec un nom de classe dédié. Les éléments plus complexes peuvent être composés de plusieurs balises, imbriquées les unes dans les autres (d’une manière spécifique).
 
-Le code CSS est utilisé pour définir l’apparence réelle. Pour qu’il soit possible de personnaliser facilement l’apparence (dans le cas d’une valorisation de marque, par exemple), les valeurs de style proprement dites sont déclarées en tant que variables qui sont étendues par le préprocesseur [LESS](https://lesscss.org/) lors de la phase d’exécution.
+Le code CSS est utilisé pour définir l’apparence réelle. Pour permettre de personnaliser facilement l’apparence (par exemple, dans le cas d’une valorisation de marque), les valeurs de style réelles sont déclarées en tant que variables qui sont développées par la variable [MOINS](https://lesscss.org/) préprocesseur pendant l’exécution.
 
 Objectif :
 
-* Uniformiser l’apparence au niveau des éléments d’interface de base
+* Fournir des éléments d’interface utilisateur de base avec une apparence commune
 * Fournir le système de grille par défaut
 
 Mise en œuvre :
 
-* Balises HTML dont les styles sont inspirés par [bootstrap](https://twitter.github.com/bootstrap/).
-* Les classes sont définies dans des fichiers LESS.
-* Les icônes sont définies sous la forme de sprites de police.
+* Balises de HTML avec styles inspirés de [Bootstrap](https://twitter.github.com/bootstrap/)
+* Les classes sont définies dans les fichiers LESS.
+* Les icônes sont définies comme des sprites de police.
 
 Par exemple, le balisage suivant :
 
@@ -362,22 +357,22 @@ Les valeurs réelles sont définies dans un fichier de variables LESS (l’extra
 
 ### Modules externes d’éléments {#element-plugins}
 
-Plusieurs des éléments HTML devront se comporter de façon dynamique ; en ouvrant et en fermant des menus contextuels, par exemple. Il s’agit du rôle des modules externes d’élément, qui exécutent ces tâches en manipulant le modèle DOM à l’aide de JavaScript.
+La plupart des éléments de HTML doivent présenter un comportement dynamique, tel que l’ouverture et la fermeture des menus contextuels. Il s’agit du rôle des modules externes d’élément, qui exécutent de telles tâches en manipulant le DOM à l’aide de JavaScript.
 
-Un module externe est soit :
+Un module externe est :
 
 * Conçu pour fonctionner sur un élément DOM spécifique. Par exemple, un module externe de boîte de dialogue s’attend à trouver `DIV class=dialog`.
 * Générique par nature. Par exemple, un gestionnaire de mises en page fournit la disposition pour toute liste d’éléments `DIV` ou `LI`.
 
-Le comportement du module externe peut être personnalisé en utilisant l’une des méthodes suivantes :
+Le comportement du module externe peut être personnalisé avec des paramètres, en effectuant l’une des opérations suivantes :
 
-* Transmission des paramètres via un appel JavaScript
+* Transmission des paramètres avec un appel JavaScript
 * Utilisation d’attributs `data-*` dédiés liés au balisage HTML
 
 Bien que le développeur puisse choisir la méthode la mieux adaptée à chaque module externe, le principe de base consiste à utiliser les éléments suivants :
 
-* Des attributs `data-*` pour les options relatives à la mise en page HTML ; pour indiquer le nombre de colonnes, par exemple.
-* Des options/classes API pour les fonctionnalités liées aux données ; pour créer la liste des éléments à afficher, par exemple.
+* Des attributs `data-*` pour les options relatives à la mise en page HTML ; Par exemple, pour spécifier le nombre de colonnes
+* Options/classes d’API pour les fonctionnalités liées aux données. Par exemple, construire la liste des éléments à afficher
 
 Le même concept est utilisé pour implémenter la validation de formulaire. Pour un élément qui doit être validé, vous devez spécifier le formulaire de saisie requis sous la forme d’un attribut `data-*` personnalisé. Cet attribut est ensuite utilisé comme option pour un module externe de validation.
 
@@ -387,14 +382,14 @@ Le même concept est utilisé pour implémenter la validation de formulaire. Pou
 
 Objectif :
 
-* Indiquer le comportement dynamique pour les éléments HTML
-* Fournir des dispositions personnalisées impossibles à obtenir avec du code PSS pur
-* Effectuer la validation de formulaire
-* Effectuer une manipulation DOM avancée
+* Fournir un comportement dynamique pour les éléments de HTML
+* Fournir des mises en page personnalisées non possibles avec du code CSS pur
+* Validation de formulaire
+* Exécution d’une manipulation DOM avancée
 
 Mise en œuvre :
 
-* Module externe jQuery, lié à un ou plusieurs éléments DOM spécifiques.
+* Module externe jQuery, lié à des éléments DOM spécifiques
 * Utilisation d’attributs `data-*` pour personnaliser le comportement
 
 Extrait de l’exemple de balisage (notez les options spécifiées sous la forme d’attributs data-&#42;) :
@@ -424,29 +419,29 @@ Extrait de l’exemple de balisage (notez les options spécifiées sous la forme
 Appel au module externe jQuery :
 
 ```
-$(‘.cards’).cardlayout ();
+$('.cards').cardlayout ();
 ```
 
-Le résultat obtenu est le suivant :
+Cela se présente comme suit :
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-Le module externe `cardLayout` dispose les éléments `UL` entre crochets sur leurs hauteurs respectives, en tenant également compte de la largeur du parent.
+Le `cardLayout` Le module externe met en forme l’objet `UL` en fonction de leurs hauteurs respectives et en tenant également compte de la largeur du parent.
 
-### Widgets d’éléments HTML {#html-elements-widgets}
+### Widgets d’éléments de HTML {#html-elements-widgets}
 
-Un widget combine un ou plusieurs éléments de base avec un module externe JavaScript afin de former des éléments d’interface de « niveau supérieur ». Ils peuvent implémenter un comportement plus complexe, ainsi qu’une apparence plus complexe que celle présentée par un seul élément. Le sélecteur de balises et les widgets de rail constituent deux bons exemples.
+Un widget combine un ou plusieurs éléments de base avec un module externe JavaScript pour former des éléments d’IU de &quot;niveau supérieur&quot;. Elles peuvent implémenter un comportement plus complexe, ainsi qu’un aspect plus complexe que celui qu’un seul élément peut fournir. Le sélecteur de balises et les widgets de rail constituent deux bons exemples.
 
-Un widget peut se déclencher et écouter des événements personnalisés pour coopérer avec d’autres widgets sur la page. Certains widgets sont, en fait, des widgets jQuery natifs qui utilisent les éléments HTML Coral.
+Un widget peut se déclencher et écouter des événements personnalisés pour coopérer avec d’autres widgets sur la page. Certains widgets sont des widgets jQuery natifs qui utilisent les éléments de HTML Coral.
 
 Objectif :
 
-* Implémenter des éléments d’IU de niveau supérieur présentant un comportement complexe
-* Déclencher et gérer des événements
+* Mise en oeuvre d’éléments d’interface utilisateur de niveau supérieur présentant un comportement complexe
+* Déclenchement et gestion des événements
 
 Mise en œuvre :
 
-* Module externe jQuery + balises HTML
+* Module externe jQuery + balisage de HTML
 * Peut utiliser des modèles côté client/serveur
 
 Voici un exemple de balisage :
@@ -455,14 +450,14 @@ Voici un exemple de balisage :
 <input type="text" name="tags" placeholder="Tags" class="tagManager"/>
 ```
 
-Appel au module externe jQuery (avec options) :
+L’appel au module externe jQuery (avec options) :
 
 ```
 $(".tagManager").tagsManager({
         prefilled: ["Pisa", "Rome"] })
 ```
 
-Le module externe émet des balises HTML (ce balisage utilise des éléments de base, lesquels peuvent, à leur tour, utiliser d’autres modules externes en interne) :
+Le module externe émet un balisage de HTML (ce balisage utilise des éléments de base, qui peuvent utiliser d’autres modules externes en interne) :
 
 ```
 <span>Pisa</code>
@@ -478,25 +473,25 @@ Le module externe émet des balises HTML (ce balisage utilise des éléments de 
        autocomplete="off">
 ```
 
-Le résultat obtenu est le suivant :
+Cela se présente comme suit :
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-### Bibliothèque Utility {#utility-library}
+### Bibliothèque d’utilitaires {#utility-library}
 
-Cette bibliothèque rassemble des fonctions et/ou modules externes d’assistance JavaScript qui sont :
+Cette bibliothèque est une collection de modules externes et/ou de fonctions d’assistance JavaScript qui sont les suivants :
 
-* indépendants de l’interface utilisateur,
-* mais indispensables pour créer des applications web riches en fonctionnalités.
+* Interface utilisateur indépendante
+* Toutefois indispensable pour créer des applications web complètes
 
 Il s’agit notamment de la gestion XSS et du bus d’événements.
 
-Bien que les widgets et les modules externes d’éléments HTML puissent dépendre des fonctionnalités fournies par la bibliothèque Utility, cette dernière ne peut pas présenter de dépendance dure envers les éléments, ni envers les widgets proprement dits.
+Bien que les modules externes et les widgets des éléments de HTML puissent dépendre des fonctionnalités fournies par la bibliothèque d’utilitaires, celle-ci ne peut pas avoir de dépendance stricte vis-à-vis des éléments ou des widgets eux-mêmes.
 
 Objectif :
 
 * Fourniture de fonctionnalités communes
-* Implémentation du bus d’événements
+* Mise en oeuvre du bus d’événements
 * Modèles côté client
 * XSS
 

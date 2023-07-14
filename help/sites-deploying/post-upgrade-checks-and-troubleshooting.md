@@ -1,29 +1,25 @@
 ---
 title: Vérifications et dépannage après une mise à niveau
-seo-title: Post Upgrade Checks and Troubleshooting
-description: Découvrez comment résoudre les problèmes qui peuvent apparaître à la suite d’une mise à niveau.
-seo-description: Learn how to troubleshoot issues that might appear after an upgrade.
-uuid: 3f525f2c-8d25-4bb8-a57e-3adf667edde8
+description: Découvrez comment résoudre les problèmes qui peuvent apparaître après une mise à niveau.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: 5a67aa9f-e5eb-4d7e-89da-2ee1a45eb8ce
 docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1813'
-ht-degree: 100%
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+workflow-type: tm+mt
+source-wordcount: '1785'
+ht-degree: 15%
 
 ---
 
 # Vérifications et dépannage après une mise à niveau{#post-upgrade-checks-and-troubleshooting}
 
-## Vérifications après une mise à niveau  {#post-upgrade-checks}
+## Vérifications après mise à niveau {#post-upgrade-checks}
 
-Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), les activités suivantes doivent être exécutées pour finaliser la mise à niveau. Nous partons du principe qu’AEM a été démarré avec le jar 6.5 et que la base de code mis à niveau a été déployée.
+En procédant comme suit : [Mise à niveau statique](/help/sites-deploying/in-place-upgrade.md) les activités suivantes doivent être exécutées pour finaliser l&#39;upgrade. On suppose que AEM a été démarré avec le jar 6.5 et que la base de code mise à niveau a été déployée.
 
 * [Vérification des journaux pour la réussite de la mise à niveau](#main-pars-header-290365562)
 
@@ -44,24 +40,24 @@ Après la [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md), 
 
 * [Activation des tâches planifiées personnalisées](#main-pars-header-244535083)
 
-* [Exécutez le plan de test](#main-pars-header-1167972233)
+* [Exécution du plan de test](#main-pars-header-1167972233)
 
-### Vérification des journaux pour la réussite de la mise à niveau  {#verify-logs-for-upgrade-success}
+### Vérification des journaux pour la réussite de la mise à niveau {#verify-logs-for-upgrade-success}
 
 **upgrade.log**
 
-Auparavant, la vérification de l’état de votre instance après la mise à niveau nécessitait une inspection soignée des différents fichiers de journal, des parties du référentiel et du pavé de lancement. La génération d’un rapport après la mise à niveau peut aider à détecter des mises à niveau défectueuses avant de les publier.
+Auparavant, la vérification de l’état de votre instance après la mise à niveau nécessitait une inspection minutieuse de divers fichiers journaux, de parties du référentiel et du pavé de lancement. La génération d’un rapport après la mise à niveau peut aider à détecter les mises à niveau défectueuses avant la mise en service.
 
-Le principal objectif de cette fonction est de réduire le besoin d’interprétation manuelle ou d’analyse logique complexe sur plusieurs points de terminaison nécessaires pour juger la réussite d’une mise à niveau. La solution vise à fournir des informations non ambiguës permettant aux systèmes externes d’automatisation de réagir en fonction de la réussite ou de l’échec identifié d’une mise à niveau.
+L’objectif principal de cette fonctionnalité est de réduire la nécessité d’une interprétation manuelle ou d’une logique d’analyse complexe sur plusieurs points de terminaison requis pour que la mise à niveau soit réussie. La solution vise à fournir des informations non ambiguës pour que les systèmes d’automatisation externes réagissent au succès ou à l’échec identifié d’une mise à jour.
 
-Plus spécifiquement, cela garantit que :
+Plus précisément, il garantit que :
 
-* Les échecs de mise à niveau détectés par la structure de mise à niveau sont centralisés dans un seul rapport de mise à niveau ;
-* Le rapport de mise à niveau inclut des indicateurs sur une intervention manuelle nécessaire.
+* Les échecs de mise à niveau détectés par la structure de mise à niveau sont centralisés dans un seul rapport de mise à niveau ;
+* Le rapport de mise à niveau comprend des indicateurs sur l’intervention manuelle nécessaire.
 
-Pour cela, les modifications ont été apportées à la façon dont les journaux sont générés dans le fichier `upgrade.log`.
+Pour ce faire, des modifications ont été apportées à la manière dont les journaux sont générés dans la variable `upgrade.log` fichier .
 
-Voici un exemple de rapport n’affichant aucune erreur lors de la mise à niveau :
+Voici un exemple de rapport qui ne présente aucune erreur lors de la mise à niveau :
 
 ![1487887443006](assets/1487887443006.png)
 
@@ -71,111 +67,111 @@ Voici un exemple de rapport affichant un lot n’ayant pas été installé lors 
 
 **error.log**
 
-Le fichier error.log doit être soigneusement passé en revue pendant et après le démarrage d’AEM à l’aide du jar de la version cible. Les avertissements ou les erreurs doivent être vérifiés. En général, il est conseillé de rechercher les problèmes au début du journal. Les erreurs qui surviennent par la suite dans le journal peuvent en réalité être des effets secondaires d’une cause principale signalée tôt au début du fichier. Si des erreurs et des avertissements s’affichent à plusieurs reprises, voir la section ci-dessous [Analyse des problèmes avec la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
+Le fichier error.log doit être soigneusement examiné pendant et après le démarrage de l’AEM à l’aide du fichier jar de la version cible. Les avertissements ou erreurs doivent être examinés. En général, il est préférable de rechercher les problèmes au début du journal. Les erreurs qui se produisent plus tard dans le journal peuvent être des effets secondaires d’une cause racine appelée plus tôt dans le fichier. En cas d’erreurs répétées et d’avertissements, reportez-vous à la section ci-dessous pour [Analyse des problèmes liés à la mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
 
 ### Vérification des lots OSGi {#verify-osgi-bundles}
 
-Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n’ont pas démarré. Si des lots sont installés, consultez le fichier `error.log` pour identifier le problème racine.
+Accédez à la console OSGi `/system/console/bundles` et vérifiez si des lots n’ont pas démarré. Si des lots sont à l’état installé, consultez la section `error.log` pour déterminer le problème racine.
 
 ### Vérification de la version Oak {#verify-oak-version}
 
-Après la mise à niveau, vous devez constater qu’Oak a été mis à jour vers la version **1.10.2**. Pour vérifier la version Oak, accédez à la console OSGi et inspectez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
+Après la mise à niveau, vous devriez constater que la version d’Oak a été mise à jour vers **1.10.2**. Pour vérifier la version d’Oak, accédez à la console OSGi et observez la version associée aux lots Oak : Oak Core, Oak Commons, Oak Segment Tar.
 
 ### Inspection du dossier PreUpgradeBackup {#inspect-preupgradebackup-folder}
 
-Pendant la mise à niveau, AEM essaiera de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous avez peut-être besoin d’[activer temporairement CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+Pendant la mise à niveau, AEM tente de sauvegarder les personnalisations et de les stocker sous `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. Pour afficher ce dossier dans CRXDE Lite, vous devrez peut-être [activation temporaire du CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
 
-Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED`. Le dossier **to-process** doit être vide et le nœud **overwritten** (remplacé) indique les nœuds qui ont été remplacés lors de la mise à niveau. Le contenu sous le nœud **leftovers** indique le contenu qui ne peut pas être fusionné en toute sécurité lors de la mise à niveau. Si votre implémentation dépend de nœuds enfants (pas déjà installés par votre module de code mis à niveau), ils doivent être fusionnés manuellement.
+Le dossier avec l’horodatage doit posséder une propriété nommée `mergeStatus` avec la valeur `COMPLETED`. Le **to-process** Le dossier doit être vide et la variable **écrasé** indique les noeuds qui ont été remplacés lors de la mise à niveau. Le contenu situé sous le noeud leftovers indique le contenu qui n’a pas pu être fusionné en toute sécurité pendant la mise à niveau. Si votre mise en oeuvre dépend de l’un des noeuds enfants (et non déjà installé par votre package de code mis à niveau), ils doivent être fusionnés manuellement.
 
-Désactivez CRXDE Lite après cet exercice si vous êtes dans un environnement intermédiaire ou de production.
+Désactivez le CRXDE Lite suivant cet exercice dans un environnement d’évaluation ou de production.
 
 ### Validation initiale des pages {#initial-validation-of-pages}
 
-Effectuez une première validation de plusieurs pages dans AEM. En cas de mise à niveau d’un environnement de création, ouvrez la page de démarrage et la page d’accueil ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Dans les environnements de création et de publication, ouvrez quelques pages d’application et testez-les pour vous assurer qu’elles fonctionnent correctement. En cas de problème, veuillez consulter le fichier `error.log` pour un dépannage.
+Effectuez une validation initiale sur plusieurs pages dans AEM. En cas de mise à niveau d’un environnement de création, ouvrez la page de démarrage et la page d’accueil ( `/aem/start.html`, `/libs/cq/core/content/welcome.html`). Dans les environnements Auteur et Publication, ouvrez quelques pages d’application et testez-les pour qu’ils s’affichent correctement. En cas de problème, veuillez consulter le fichier `error.log` pour un dépannage.
 
 ### Application de packs de service AEM {#apply-aem-service-packs}
 
-Appliquez tout Service Pack AEM 6.5 qui a été publié, le cas échéant.
+Appliquez les Service Packs AEM 6.5 appropriés s’ils ont été publiés.
 
-### Migration des fonctions AEM {#migrate-aem-features}
+### Migration des fonctionnalités AEM {#migrate-aem-features}
 
-Plusieurs fonctions AEM requièrent des étapes supplémentaires après la mise à niveau. Une liste complète de ces fonctions et les étapes permettant de les migrer dans AEM 6.5 se trouve sur la page [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md).
+Plusieurs fonctions d’AEM nécessitent des étapes supplémentaires après la mise à niveau. Vous trouverez une liste complète de ces fonctionnalités et étapes pour les migrer dans AEM 6.5 sur la page [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) page.
 
 ### Vérification des configurations de maintenance planifiées {#verify-scheduled-maintenance-configurations}
 
 #### Activation du nettoyage de la mémoire d’entrepôt de données {#enable-data-store-garbage-collection}
 
-Si vous utilisez un entrepôt de données de fichiers, assurez-vous que la tâche de nettoyage de la mémoire d’entrepôt de données est activée et ajoutée à la liste de maintenance hebdomadaire. Suivez les instructions [suivantes](/help/sites-administering/data-store-garbage-collection.md).
+Si vous utilisez un entrepôt de données basé sur les fichiers, assurez-vous que la tâche de nettoyage de la mémoire d’entrepôt de données est activée et ajoutée à la liste de maintenance hebdomadaire. Suivez les instructions [suivantes](/help/sites-administering/data-store-garbage-collection.md).
 
 >[!NOTE]
 >
->Cette méthode n’est pas recommandée pour les installations d’entrepôt des données personnalisées s3 ni lors de l’utilisation d’un entrepôt de données partagé.
+>Ceci n’est pas recommandé pour les installations de magasin de données personnalisé S3 ou lors de l’utilisation d’un entrepôt de données partagé.
 
 #### Activation du nettoyage des révisions en ligne {#enable-online-revision-cleanup}
 
-Si vous utilisez MongoMK ou le nouveau format de segment TarMK, assurez-vous que la tâche de nettoyage des révisions est activée et ajoutée à la liste de maintenance quotidienne. Les instructions sont décrites [ici](/help/sites-deploying/revision-cleanup.md).
+Si vous utilisez MongoMK ou le nouveau format de segment TarMK, assurez-vous que la tâche de nettoyage de révision est activée et ajoutée à la liste de maintenance quotidienne. Instructions décrites [here](/help/sites-deploying/revision-cleanup.md).
 
 ### Exécution du plan de test {#execute-test-plan}
 
-Exécutez le plan de test détaillé tel que défini dans [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) dans la section **Procédure de test**.
+Exécuter le plan de test détaillé par rapport à tel que défini [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md) sous le **Procédure de test** .
 
 ### Activation des agents de réplication {#enable-replication-agents}
 
-Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents peuvent se connecter aux instances de publication respectives. Consultez la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus de détails sur l’ordre des événements. 
+Une fois que l’environnement de publication a été entièrement mis à niveau et validé, activez les agents de réplication dans l’environnement de création. Vérifiez que les agents sont en mesure de se connecter aux instances de publication respectives. Consultez la section [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md) pour plus de détails sur l’ordre des événements. 
 
 ### Activation des tâches planifiées personnalisées {#enable-custom-scheduled-jobs}
 
-Toutes les tâches planifiées dans le cadre de la base de code peuvent être activées.
+À ce stade, toutes les tâches planifiées faisant partie de la base de code peuvent être activées.
 
-## Analyse des problèmes de la mise à niveau {#analyzing-issues-with-upgrade}
+## Analyse des problèmes liés à la mise à niveau {#analyzing-issues-with-upgrade}
 
-Cette section comporte des scénarios de problèmes que l’on peut rencontrer au cours d’une procédure de mise à niveau vers AEM 6.3.
+Cette section contient des scénarios de problèmes que vous pouvez rencontrer lors de la procédure de mise à niveau vers AEM 6.3.
 
-Ces scénarios doivent vous permettre de trouver la cause première des problèmes de mise à niveau et d’identifier des problèmes spécifiques à un projet ou un produit.
+Ces scénarios doivent vous aider à déterminer la cause principale des problèmes liés à la mise à niveau et à identifier les problèmes spécifiques au projet ou au produit.
 
 ### Échec de la migration du référentiel  {#repository-migration-failing-}
 
-La migration des données de CRX2 à Oak doit être réalisable en toutes situations, à commencer par les instances source basées sur CQ 5.4. Assurez-vous de suivre de près les instructions de mise à niveau de ce document, y compris la préparation du fichier `repository.xml`. Ainsi, vous garantissez qu’aucun authentificateur personnalisé ne puisse démarrer via JAAS et que l’instance a été testée pour éviter les incohérences avant de démarrer la migration.
+La migration des données de CRX2 vers Oak doit être possible pour tout scénario commençant par les instances source basées sur CQ 5.4. Veillez à suivre exactement les instructions de mise à niveau de ce document qui incluent la préparation de la `repository.xml`, assurez-vous qu’aucun authentificateur personnalisé n’est démarré via JAAS et que l’instance a été vérifiée pour détecter des incohérences avant de démarrer la migration.
 
-Si la migration est toujours en échec, vous pouvez déterminer la cause première en consultant le fichier `upgrade.log`. Si le problème n’est pas encore connu, signalez-le au service clientèle.
+Si la migration échoue toujours, vous pouvez déterminer la cause principale en examinant la variable `upgrade.log`. Si le problème n’est pas encore connu, signalez-le au service clientèle.
 
-### Échec de l’exécution de la mise à niveau {#the-upgrade-did-not-run}
+### La mise à niveau n’a pas été exécutée {#the-upgrade-did-not-run}
 
-Avant de lancer les étapes de préparation, assurez-vous d’abord de lancer l’instance **source** en l’exécutant avec la commande Java aem-quickstart.jar. Cela est nécessaire pour vous assurer que le fichier quickstart.properties est généré correctement. Autrement, la mise à niveau ne peut pas fonctionner. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, le démarrage d’AEM pour lancer la mise à niveau doit être exécuté avec la commande Java -jar aem-quickstart.jar. Le lancement à partir d’un script de démarrage ne permettra pas de démarrer AEM en mode de mise à niveau.
+Avant de commencer les étapes de préparation, veillez à exécuter la **source** d’abord en l’exécutant avec la commande Java™ -jar aem-quickstart.jar . Cela est nécessaire pour s’assurer que le fichier quickstart.properties est généré correctement. S’il est manquant, la mise à niveau ne fonctionnera pas. Vous pouvez également vérifier si le fichier est présent en regardant sous `crx-quickstart/conf` dans le dossier d’installation de l’instance source. En outre, lorsque vous lancez AEM mise à niveau, elle doit être exécutée avec la commande Java™ -jar aem-quickstart.jar . Le démarrage à partir d’un script de démarrage ne démarre pas AEM en mode de mise à niveau.
 
-### Échec de la mise à jour des modules et des lots  {#packages-and-bundles-fail-to-update-}
+### Échec de la mise à jour des packages et des lots  {#packages-and-bundles-fail-to-update-}
 
-Si l’installation des modules échoue au cours de la mise à niveau, les lots qu’ils contiennent ne sont également pas mis à jour. Ce type d’erreur provient généralement d’une mauvaise configuration du magasin de données. Il apparaît sous la forme de messages nommés **ERROR** et **WARN** dans le journal error.log. Comme, dans la plupart des cas, la connexion par défaut ne fonctionne pas, vous pouvez utiliser CRXDE directement afin d’inspecter et de rechercher les problèmes de configuration.
+Si l’installation des packages échoue pendant la mise à niveau, les lots qu’ils contiennent ne seront pas mis à jour non plus. Cette catégorie de problèmes est due à une mauvaise configuration de l’entrepôt de données. Elles apparaissent également comme **ERROR** et **WARN** messages dans le fichier error.log. Comme dans la plupart de ces cas, la connexion par défaut peut échouer, vous pouvez utiliser CRXDE directement pour examiner et trouver les problèmes de configuration.
 
-### Certains lots AEM ne passent pas à l’état actif {#some-aem-bundles-are-not-switching-to-the-active-state}
+### Certains lots AEM ne passent pas à l’état Principal {#some-aem-bundles-are-not-switching-to-the-active-state}
 
-En présence de lots qui ne démarrent pas, vous devez rechercher des dépendances non respectées.
+Si des lots ne démarrent pas, recherchez des dépendances insatisfaites.
 
-Si ce problème est présent mais qu’il est basé sur une installation de module défaillante qui a empêché la mise à niveau des lots, ces derniers ne sont pas compatibles avec la nouvelle version. Pour plus d’informations sur la résolution de ce problème, voir **Échec de la mise à jour de modules et de lots** ci-dessus.
+Si ce problème est présent, mais qu’il est basé sur une installation de package ayant échoué et qui a entraîné la non-mise à niveau des lots, ils seront considérés comme incompatibles pour la nouvelle version. Pour plus d’informations sur la manière de résoudre ce problème, voir **Échec de la mise à jour des packages et des lots** ci-dessus.
 
-Il est également recommandé de comparer la liste des lots d’une instance AEM 6.5 neuve avec celle de l’instance mise à niveau afin de détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
+Il est également recommandé de comparer la liste de lots d’une nouvelle instance d’AEM 6.5 avec celle mise à niveau pour détecter les lots qui n’ont pas été mis à niveau. Cela permettra de réduire le champ des recherches dans le fichier `error.log`.
 
-### Les lots personnalisés ne passent pas à l’état actif {#custom-bundles-not-switching-to-the-active-state}
+### Lots personnalisés sans basculement vers l’état Principal {#custom-bundles-not-switching-to-the-active-state}
 
-Si les lots personnalisés ne passent pas à l’état actif, il est probable qu’une partie du code ne procède pas à l’importation de l’API de modification, ce qui conduit le plus souvent à des dépendances non respectées.
+Si vos lots personnalisés ne passent pas à l’état principal, il est probable qu’il y ait du code qui n’importe pas l’API de modification. Cela entraîne le plus souvent des dépendances insatisfaites.
 
-L’API qui a été supprimée doit être marquée comme obsolète dans l’une des versions précédentes. Vous trouverez des instructions sur une migration directe du code dans la notice d’obsolescence. Adobe cherche à obtenir une création de versions sémantique, le cas échéant, afin que les versions puissent indiquer les modifications de rupture.
+Les API supprimées doivent être marquées comme obsolètes dans l’une des versions précédentes. Vous trouverez des instructions sur la migration directe de votre code dans cet avis d’obsolescence. Adobe vise le contrôle de version sémantique lorsque cela est possible afin que les versions puissent indiquer les modifications entraînant une rupture.
 
-Il est également recommandé de vérifier si la modification qui a causé le problème était absolument nécessaire et l’annuler si ce n’est pas le cas. Vérifiez également si l’augmentation de version de l’exportation du module a été plus importante que nécessaire, en suivant une création de versions sémantique.
+Il est également préférable de vérifier si la modification qui a causé le problème était nécessaire et de l’annuler si ce n’est pas le cas. Vérifiez également si l’augmentation de version de l’exportation du package a été plus élevée que nécessaire, suite au contrôle de version sémantique strict.
 
-### Dysfonctionnement de l’interface utilisateur de la plate-forme {#malfunctioning-platform-ui}
+### Interface utilisateur de Platform dysfonctionnelle {#malfunctioning-platform-ui}
 
-Lorsque certaines fonctionnalités de l’interface utilisateur ne fonctionnent pas correctement après la mise à niveau, vous devez tout d’abord vérifier les recouvrements personnalisés de l’interface. Certaines structures peuvent avoir changé et le recouvrement peut nécessiter une mise à jour ou est obsolète.
+Si certaines fonctionnalités de l’interface utilisateur ne fonctionnent pas correctement après la mise à niveau, vous devez d’abord vérifier les superpositions personnalisées de l’interface. Certaines structures peuvent avoir changé et la superposition peut nécessiter une mise à jour ou est obsolète.
 
-Ensuite, recherchez les erreurs Javascript qui peuvent être attribuées à des extensions ajoutées personnalisées qui sont raccrochées à clientlibs. Il en va de même avec le CSS personnalisé qui peut poser problèmes au recouvrement AEM.
+Ensuite, recherchez les erreurs JavaScript pouvant être suivies jusqu’à des extensions ajoutées personnalisées qui sont connectées aux bibliothèques clientes. Il en va de même pour les CSS personnalisées qui peuvent poser des problèmes à la mise en page AEM.
 
-Enfin, recherchez une configuration incorrecte que Javascript n’arrive pas à gérer. C’est généralement le cas avec des extensions incorrectement désactivées.
+Enfin, recherchez les erreurs de configuration que JavaScript peut ne pas être en mesure de gérer. C’est généralement le cas avec des extensions incorrectement désactivées.
 
-### Dysfonctionnement de composants, modèles ou extensions de l’interface utilisateur personnalisée {#malfunctioning-custom-components-templates-or-ui-extensions}
+### Fonctionnement des composants personnalisés, des modèles ou des extensions de l’interface utilisateur {#malfunctioning-custom-components-templates-or-ui-extensions}
 
-Dans la plupart des cas, les causes premières de ces problèmes sont les mêmes que pour les lots qui ne sont pas démarrés ou les modules non installés avec pour seule différence que les problèmes commencent à se produire lors de la première utilisation des composants.
+En règle générale, les causes profondes de ces problèmes sont les mêmes que pour les lots qui ne sont pas démarrés ou les packages qui ne sont pas installés avec la seule différence que les problèmes commencent à se produire lors de la première utilisation des composants.
 
-La manière de gérer le code personnalisé erroné consiste à réaliser en premier lieu un test de détection de fumée afin d’identifier la cause. Une fois que vous l’avez trouvée, consultez les recommandations de cette section de la [rubrique] pour obtenir des moyens de corriger le problème.
+Pour gérer un code personnalisé erroné, vous devez d’abord effectuer des tests de détection de fumée pour identifier la cause. Une fois que vous l’avez trouvée, consultez les recommandations de cette section de la [rubrique] pour obtenir des moyens de corriger le problème.
 
 ### Personnalisations manquantes sous /etc {#missing-customizations-under-etc}
 
@@ -183,15 +179,15 @@ Les `/apps` et `/libs` sont correctement gérés par la mise à niveau mais les 
 
 ### Analyse des journaux error.log et upgrade.log  {#analyzing-the-error.log-and-upgrade.log}
 
-Dans la plupart des cas, les journaux doivent être consultés à la recherche d’erreurs afin de trouver la cause d’un problème. Néanmoins, dans le cas d’une mise à niveau, il est également requis de surveiller les problèmes de dépendance car des lots anciens n’ont peut-être pas été mis à niveau correctement.
+Dans la plupart des cas, les logs doivent être consultés pour détecter la cause d&#39;un problème. Toutefois, avec les mises à niveau, il est également nécessaire de surveiller les problèmes de dépendance, car les anciens lots peuvent ne pas être mis à niveau correctement.
 
-Cette surveillance consiste à éplucher le journal error.log en supprimant tous les messages qui ne sont pas liés au problème auquel vous êtes confronté. Vous pouvez réaliser cette opération à l’aide d’un outil comme grep, en utilisant la ligne de code :
+Pour ce faire, la meilleure méthode consiste à supprimer le fichier error.log en supprimant tous les messages qui ne sont pas liés au problème auquel vous êtes confronté. Vous pouvez le faire via un outil comme grep, en utilisant :
 
 ```shell
 grep -v UnrelatedErrorString
 ```
 
-Certains messages d’erreur peuvent ne pas être immédiatement explicatifs. Dans ce cas, l’étude du contexte dans lequel ils se sont produits peut également aider à comprendre où l’erreur a été créée. Vous pouvez séparer l’erreur à l’aide de :
+Certains messages d’erreur peuvent ne pas être immédiatement explicatifs. Dans ce cas, la consultation du contexte dans lequel elles se produisent peut également aider à comprendre où l’erreur a été créée. Vous pouvez séparer l&#39;erreur à l&#39;aide des éléments suivants :
 
 * `grep -B` pour l’ajout de lignes avant l’erreur
 
@@ -199,8 +195,8 @@ ou
 
 * `grep -A` pour l’ajout de lignes après l’erreur.
 
-Dans quelques rares cas, vous rencontrez des messages WARN accompagnant l’erreur. En effet, l’erreur peut provenir d’un problème réel et l’application n’est pas toujours en mesure de déterminer s’il s’agit d’une véritable erreur. Assurez-vous de consulter également ces messages.
+Dans certains cas, des erreurs peuvent également être trouvées dans les messages AVERTISSEMENT, car il peut y avoir des cas valides menant à cet état et l’application n’est pas toujours en mesure de décider s’il s’agit d’une erreur réelle. Veillez également à consulter ces messages.
 
 ### Contacter le support technique d’Adobe {#contacting-adobe-support}
 
-Si vous avez consulté les recommandations de cette page, mais continuez toujours à avoir des problèmes, veuillez vous adresser au support technique d’Adobe. Pour fournir le plus d’information possible au technicien d’assistance qui s’occupe de votre cas, veillez à inclure le fichier upgrade.log de votre mise à niveau.
+Si vous avez suivi les conseils de cette page et que vous rencontrez toujours des problèmes, contactez le support Adobe. Pour fournir le plus d’informations possible à l’ingénieur du support qui travaille sur votre dossier, veillez à inclure le fichier upgrade.log de votre mise à niveau.
