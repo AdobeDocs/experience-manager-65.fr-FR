@@ -3,10 +3,10 @@ title: Création ou ajout d’un formulaire adaptatif à une page AEM Sites
 description: Découvrez comment créer ou ajouter facilement un formulaire adaptatif à votre page AEM Sites sans effort. Découvrez les techniques et les bonnes pratiques étape par étape pour intégrer des formulaires dynamiques et personnalisables à votre site web, en optimisant vos expériences numériques pour un impact maximum.
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '2883'
-ht-degree: 1%
+source-wordcount: '2913'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ Vous pouvez utiliser AEM éditeur de page pour créer et ajouter rapidement plus
 
 AEM Forms fournit des composants Adaptive Form Container (Conteneur de formulaires adaptatifs) et Adaptive Forms (Incorporer). Vous pouvez utiliser le conteneur de formulaires adaptatifs pour créer un formulaire dans un fragment d’expérience ou une page AEM Sites, tandis que le composant Forms adaptatif - Incorporer permet d’ajouter un formulaire adaptatif existant ou de créer un formulaire à l’aide de l’éditeur de Forms adaptatif.
 
-![](/help/forms/using/assets/adaptive-form-in-sites-page.png)
+![Formulaire adaptatif dans la page de sites](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
 ## Avantages de l’utilisation du composant Conteneur de formulaire adaptatif dans AEM éditeur de page ou de fragment d’expérience
 
@@ -121,7 +121,7 @@ Pour activer la fonctionnalité complète du composant Conteneur de Forms adapta
 
 +++ Activer le conteneur Forms adaptatif
 
-Pour activer [!UICONTROL Conteneur Forms adaptatif] dans la stratégie du modèle, procédez comme suit :
+Pour activer le composant [!UICONTROL Conteneur de formulaires adaptatifs] dans la politique du modèle, procédez comme suit :
 
 1. Ouvrez la page AEM Sites ou le fragment d’expérience à modifier. Pour ouvrir la page à modifier, sélectionnez-la, puis cliquez sur Modifier.
 1. Ouvrez le modèle de votre page Sites ou Fragment d’expérience . Pour ouvrir le modèle, accédez au [!UICONTROL Informations sur la page] ![Informations sur la page](/help/forms/using/assets/Smock_Properties_18_N.svg) > [!UICONTROL Modifier le modèle]. Il ouvre le modèle correspondant dans l’éditeur de modèles.
@@ -148,7 +148,7 @@ Vous pouvez utiliser le composant Conteneur de formulaires adaptatifs dans AEM �
 
 Pour créer un formulaire adaptatif dans une page Sites :
 
-1. Ouvrez la page AEM Sites en mode d’édition.
+1. Ouvrez la page AEM Sites en mode d’édition.
 1. Faites glisser et déposez le **[!UICONTROL Conteneur Forms adaptatif]** du navigateur de composants vers la page Sites. Un espace est alors créé sur la page pour le formulaire. Vous pouvez modifier la taille de l’espace conteneur à l’aide du mode Mise en page.
 1. Faites glisser et déposez les composants principaux de formulaire adaptatif dans l’espace conteneur pour créer le formulaire.
 1. Ajoutez le bouton Envoyer .
@@ -177,7 +177,7 @@ Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’e
 1. Ouvrez la page AEM Sites contenant le formulaire adaptatif (dans le composant Conteneur de Forms adaptatif) en mode d’édition.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Dans la barre de menus, sélectionnez l’option ![Icône Convertir en variation de fragment d’expérience](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Icône de variation Convertir en fragment d’expérience .
-   ![](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![Convertir un formulaire dans une page de sites en fragment d’expérience](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Une boîte de dialogue pour convertir le conteneur de formulaires adaptatifs en un nouveau fragment d’expérience ou l’ajouter à un fragment d’expérience existant s’affiche.
 1. Dans la boîte de dialogue Convertir en variation de fragment d’expérience , définissez les valeurs des options suivantes :
@@ -195,7 +195,7 @@ Une action Envoyer vous permet de choisir la destination des données capturées
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre pour configurer les actions d’envoi.
-   ![](/help/forms/using/assets/adaptive-forms-container.png)
+   ![Conteneur de formulaires adaptatifs](/help/forms/using/assets/adaptive-forms-container.png)
 1. Sélectionnez et configurez une action Envoyer en fonction de vos besoins. Pour plus d’informations sur les actions d’envoi, voir [Action d’envoi de formulaire adaptatif](configuring-submit-actions.md)
 
 
@@ -213,7 +213,7 @@ Pour configurer un schéma JSON ou un modèle de données de formulaire pour vot
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
-   ![](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
+   ![Conteneur de formulaires adaptatifs de modèle de données de formulaire](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
 1. Sélectionnez et configurez un schéma JSON ou un modèle de données de formulaire, en fonction de vos besoins. Pour plus d’informations sur les actions d’envoi, voir [Action d’envoi de formulaire adaptatif](configuring-submit-actions.md).
 
    * Lorsque vous sélectionnez la variable **[!UICONTROL Modèle de formulaire]** , utilisez l’option **[!UICONTROL Sélectionner un modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire préconfiguré.
@@ -235,7 +235,7 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
-   ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+   ![Préremplissage du formulaire de service de l’éditeur de page aem sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Sélectionner un modèle de données de formulaire. Ouvrez le **[!UICONTROL De base]** . Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage du brouillon du portail Forms]**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
 

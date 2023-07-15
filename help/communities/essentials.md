@@ -1,16 +1,12 @@
 ---
 title: Notions fondamentales sur les composants, les fonctions et les fonctionnalités
-seo-title: Component, Function and Feature Essentials
 description: Fonctionnement des sites, modèles et groupes de communautés
-seo-description: How community sites, templates, and groups function
-uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 18%
@@ -19,9 +15,9 @@ ht-degree: 18%
 
 # Notions fondamentales sur les composants, les fonctions et les fonctionnalités  {#component-function-and-feature-essentials}
 
-Les fonctionnalités AEM Communities exigent que les visiteurs du site deviennent membres et se connectent au [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, [modèles de site de communauté](sites.md), à partir de laquelle un site communautaire est [created](sites-console.md), sont conçues pour inclure une fonction de connexion, ainsi que des profils utilisateur, des messages, des recherches, de la modération et des traductions.
+Les fonctionnalités d’Adobe Experience Manager (AEM) Communities exigent que les visiteurs du site deviennent membres et se connectent au [site communautaire](overview.md#communitiessites) avant de pouvoir publier du contenu. Ainsi, [modèles de site de communauté](sites.md), à partir de laquelle un site communautaire est [created](sites-console.md), sont conçues pour inclure une fonction de connexion et des profils utilisateur, la messagerie, la recherche, la modération et la traduction.
 
-Un site communautaire permet aux membres de créer des groupes communautaires lorsque la variable [fonction de groupes communautaires](functions.md#groups-function) est inclus dans le modèle de site de la communauté sélectionné.
+Un site communautaire prend en charge les membres qui créent des groupes communautaires lorsque [fonction de groupes communautaires](functions.md#groups-function) est inclus dans le modèle de site de la communauté sélectionné.
 
 Vous trouverez ci-dessous des liens vers des informations essentielles pour les composants, fonctions et fonctionnalités de Communities.
 

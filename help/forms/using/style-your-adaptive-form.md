@@ -9,9 +9,9 @@ topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2041'
 ht-degree: 66%
 
 ---
@@ -97,7 +97,7 @@ Vous pouvez utiliser [éditeur de thèmes](/help/forms/using/themes.md) pour cr�
 
 Un thème est une entité distincte comme les formulaires adaptatifs. Il contient des styles (CSS) pour les composants et les panneaux d’un formulaire adaptatif. Les styles incluent les propriétés CSS telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié est appliqué aux composants correspondants d’un formulaire adaptatif.
 
-Dans ce tutoriel, vous allez mettre en forme l’en-tête et le pied de page, les composants texte et numériques, les composants de pièce jointe et les boutons. Commençons par la création d’ un thème :
+Dans ce tutoriel, vous allez mettre en forme l’en-tête et le pied de page, les composants texte et numériques, les composants de pièce jointe et les boutons. Commençons par créer un thème :
 
 ### Création d’un thème {#create-a-theme}
 
@@ -234,7 +234,7 @@ Vous pouvez utiliser plusieurs composants dans un formulaire adaptatif pour capt
 
 1. Cliquez sur la zone vide au-dessus du champ **[!UICONTROL ID de client]**, puis sur **[!UICONTROL Conteneur de panneau en responsive design]**. Définissez **[!UICONTROL Arrière-plan]** > **[!UICONTROL Couleur d’arrière-plan]** sur F1F2F2. Cliquez sur ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   ![](do-not-localize/responsive-panel-container.png)
+   ![Conteneur de panneau réactif](do-not-localize/responsive-panel-container.png)
 
 ### Application d’un style aux boutons {#style-the-buttons}
 

@@ -11,9 +11,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1973'
 ht-degree: 61%
 
 ---
@@ -143,7 +143,7 @@ La connexion d’AEM Forms à Adobe Acrobat Sign Solutions for Government est un
 * Réception des informations d’identification de l’équipe Adobe Sign
 * Utilisation des informations d’identification reçues pour connecter AEM Forms à Adobe Acrobat Sign Solutions for Government
 
-![](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
+![adobe-acrobat-sign-govt-workflow](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
 
 ### Avant de commencer {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 
@@ -168,7 +168,7 @@ Avant de commencer à connecter AEM Forms à la solution Adobe Acrobat Sign,
 >[!NOTE]
 >
 >
-* A `re-direct URL` doit contenir un [Niveau supérieur](https://en.wikipedia.org/wiki/Top-level_domain) domaine. Par exemple, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+* A `re-direct URL` doit contenir un [Niveau supérieur](https://en.wikipedia.org/wiki/Top-level_domain) domaine. Par exemple, `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
 * N’utilisez pas d’URL locale comme `re-direct URL`. Par exemple, `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
 
 

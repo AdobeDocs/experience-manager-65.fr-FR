@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '898'
 ht-degree: 29%
 
 ---
@@ -96,7 +96,7 @@ La capture des données hors ligne et la synchronisation de celles-ci lors de vo
 * Tableaux de bord personnalisables pour un aperçu en temps réel des opérations commerciales
 * API pour la connexion à des outils de reporting tiers
 
-![](do-not-localize/3rd-draft.gif)
+![Troisième version](do-not-localize/3rd-draft.gif)
 
 ## Communication personnalisée {#personalized-communication}
 
@@ -115,6 +115,6 @@ Les documents personnalisés, tels que les reçus, les kits de bienvenue et les 
 * Prise en charge des signatures numériques pour valider l’intégrité du contenu et l’identité du signataire
 * Module complémentaire de sécurité des documents pour AEM Forms comprenant le chiffrement, les politiques d’utilisation, le suivi et l’audit
 
-![](do-not-localize/layout-02.png)
+![Disposition deux](do-not-localize/layout-02.png)
 
 Processus de communication personnalisée rationalisée

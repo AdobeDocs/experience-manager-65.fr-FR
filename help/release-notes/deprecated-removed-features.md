@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 11e848d93964b5f8e45ccd7388a48953a3148e35
+source-git-commit: 9be9bb1706df750ede3f804012442bd73dc462ee
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 93%
+source-wordcount: '1730'
+ht-degree: 92%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 93%
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
-Pour communiquer la suppression ou le remplacement imminent de fonctionnalités d’AEM, les règles suivantes s’appliquent :
+Pour signaler la suppression ou le remplacement imminent de fonctionnalités Adobe Experience Manager (AEM), les règles suivantes s’appliquent :
 
 1. L’annonce de la suppression arrive en premier. Bien qu’elles soient obsolètes, les fonctionnalités sont toujours disponibles, mais ne sont pas améliorées.
 1. La suppression des fonctionnalités obsolètes se produit au plus tôt dans la version majeure suivante. La date précise de suppression sera annoncée.

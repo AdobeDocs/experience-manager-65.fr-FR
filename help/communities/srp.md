@@ -1,27 +1,23 @@
 ---
 title: Présentation du fournisseur de ressources de stockage
-seo-title: Storage Resource Provider Overview
 description: Stockage commun pour les communautés
-seo-description: Common storage for Communities
-uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '1133'
-ht-degree: 2%
+source-wordcount: '1125'
+ht-degree: 0%
 
 ---
 
 # Présentation du fournisseur de ressources de stockage {#storage-resource-provider-overview}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
-Depuis AEM Communities 6.1, le contenu de la communauté, communément appelé contenu généré par l’utilisateur (UGC), est stocké dans un seul magasin commun fourni par une [fournisseur de ressources de stockage](working-with-srp.md) (SRP).
+Depuis Adobe Experience Manager (AEM) Communities 6.1, le contenu de la communauté, communément appelé contenu généré par l’utilisateur (UGC), est stocké dans un seul magasin commun fourni par une [fournisseur de ressources de stockage](working-with-srp.md) (SRP).
 
 Il existe plusieurs options de SRP, qui accèdent toutes au contenu généré par l’utilisateur par le biais d’une nouvelle interface AEM Communities, la [API SocialResourceProvider](srp-and-ugc.md) (API SRP), qui inclut toutes les opérations CRUD (création, lecture, mise à jour et suppression).
 
@@ -31,7 +27,7 @@ Tous les composants SCF sont implémentés à l’aide de l’API SRP, ce qui pe
 
 >[!NOTE]
 >
->**Composants personnalisés**: Pour les clients sous licence d’AEM Communities, l’API SRP est disponible pour les développeurs de composants personnalisés dans le but d’accéder au contenu généré par l’utilisateur sans tenir compte de la topologie sous-jacente. Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md).
+>**Composants personnalisés**: Pour les clients sous licence d’AEM Communities, l’API SRP est disponible pour les développeurs de composants personnalisés pour accéder au contenu créé par l’utilisateur sans tenir compte de la topologie sous-jacente. Voir [Principes de base de la SRP et du contenu généré par l’utilisateur](srp-and-ugc.md).
 
 Voir également :
 
@@ -41,17 +37,17 @@ Voir également :
 
 ## À propos du référentiel {#about-the-repository}
 
-Pour comprendre la SRP, il est utile de comprendre le rôle du référentiel AEM (OAK) dans un site de communauté AEM.
+Pour comprendre la SRP, il est utile de comprendre le rôle du référentiel AEM (Oak) dans un site de la communauté AEM.
 
-**Java Content Repository (JCR)**
-Cette norme définit un modèle de données et une interface de programmation d’application ([API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) pour les référentiels de contenu. Il combine les caractéristiques des systèmes de fichiers classiques avec celles des bases de données relationnelles et ajoute un certain nombre de fonctions supplémentaires dont les applications de contenu ont souvent besoin.
+**Référentiel de contenu Java™ (JCR)**
+Cette norme définit un modèle de données et une interface de programmation d’application ([API JCR](https://jackrabbit.apache.org/jcr/jcr-api.html)) pour les référentiels de contenu. Il combine les caractéristiques des systèmes de fichiers classiques avec celles des bases de données relationnelles et ajoute plusieurs fonctions supplémentaires dont les applications de contenu ont souvent besoin.
 
-Une implémentation de JCR est le référentiel AEM, OAK.
+Une implémentation de JCR est le référentiel AEM, Oak.
 
-**Apache Jackrabbit Oak (OAK)**
-[OAK](../../help/sites-deploying/platform.md) est une implémentation de JCR 2.0 qui est un système de stockage de données spécialement conçu pour les applications centrées sur le contenu. Il s’agit d’un type de base de données hiérarchique conçu pour les données non structurées et semi-structurées. Le référentiel stocke le contenu affiché aux utilisateurs et l’ensemble du code, des modèles et des données internes utilisés par l’application. L’interface utilisateur d’accès au contenu est [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+**Apache Jackrabbit Oak**
+[Oak](../../help/sites-deploying/platform.md) est une implémentation de JCR 2.0 qui est un système de stockage de données conçu pour les applications centrées sur le contenu. Il s’agit d’un type de base de données hiérarchique conçu pour les données non structurées et semi-structurées. Le référentiel stocke non seulement le contenu destiné à l’utilisateur, mais également l’ensemble du code, des modèles et des données internes utilisés par l’application. L’interface utilisateur d’accès au contenu est [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-JCR et OAK sont généralement utilisés pour faire référence au référentiel AEM.
+JCR et Oak sont généralement utilisés pour faire référence au référentiel AEM.
 
 Après avoir développé le contenu du site dans l’environnement de création privé, il doit être copié dans l’environnement de publication public. Cela se fait souvent au moyen d’une opération appelée *[réplication](deploy-communities.md#replication-agents-on-author)*. Cela se produit sous le contrôle de l’auteur/du développeur/de l’administrateur.
 
@@ -71,7 +67,7 @@ Lorsque le contenu créé par l’utilisateur est enregistré dans le stockage p
 
 ### ASRP {#asrp}
 
-Dans le cas d’ASRP, le contenu créé par l’utilisateur n’est pas stocké dans JCR, il est stocké dans un service cloud hébergé et géré par Adobe. Le contenu généré par l’utilisateur stocké dans ASRP ne peut ni être affiché avec le CRXDE Lite, ni accessible à l’aide de l’API JCR.
+S’il existe un ASRP, le contenu généré par l’utilisateur n’est pas stocké dans JCR, il est stocké dans un service cloud hébergé et géré par Adobe. Le contenu généré par l’utilisateur stocké dans ASRP ne peut pas être affiché avec le CRXDE Lite ni accessible à l’aide de l’API JCR.
 
 Voir [ASRP - Fournisseur de ressources de stockage d’Adobe](asrp.md).
 
@@ -81,7 +77,7 @@ ASRP utilise Adobe Cloud pour les requêtes.
 
 ### MSRP {#msrp}
 
-Dans le cas de MSRP, le contenu généré par l’utilisateur n’est pas stocké dans JCR, mais dans MongoDB. Le contenu généré par l’utilisateur stocké dans MSRP ne peut pas être affiché avec CRXDE Lite ni accessible à l’aide de l’API JCR.
+Si tel est le cas, MSRP, UGC n’est pas stocké dans JCR, il est stocké dans MongoDB. Le contenu généré par l’utilisateur stocké dans MSRP ne peut pas être affiché avec CRXDE Lite ni accessible à l’aide de l’API JCR.
 
 Voir [MSRP - Fournisseur de ressources de stockage MongoDB](msrp.md).
 
@@ -91,11 +87,11 @@ MSRP utilise Solr pour les requêtes.
 
 ### JSRP {#jsrp}
 
-JSRP est le fournisseur par défaut pour accéder à tout le contenu créé par l’utilisateur sur une seule instance AEM. Il permet de tester rapidement AEM Communities 6.1 sans avoir à configurer MSRP ou ASRP.
+JSRP est le fournisseur par défaut pour accéder à tout le contenu créé par l’utilisateur sur une seule instance AEM. Il vous permet de tester rapidement AEM Communities 6.1 sans avoir à configurer MSRP ou ASRP.
 
 Voir [JSRP - Fournisseur de ressources de stockage JCR](jsrp.md).
 
-Dans le cas de JSRP, alors que le contenu créé par l’utilisateur est stocké dans JCR et accessible via l’API CRXDE Lite et JCR, il est vivement recommandé de ne jamais utiliser l’API JCR pour le faire, sinon les modifications futures peuvent affecter le code personnalisé.
+S’il existe une JSRP, alors que le contenu créé par l’utilisateur est stocké dans JCR et accessible par le biais de l’API CRXDE Lite et JCR, il est recommandé de ne jamais utiliser l’API JCR pour le faire, sinon les modifications futures peuvent affecter le code personnalisé.
 
 En outre, le référentiel pour les environnements de création et de publication n’est pas partagé. Bien qu’un cluster d’instances de publication génère un référentiel de publication partagé, le contenu créé par l’utilisateur entré lors de la publication ne sera pas visible sur l’auteur, ce qui empêche la gestion du contenu créé par l’auteur. Le contenu généré par l’utilisateur n’est conservé que dans le référentiel AEM (JCR) de l’instance sur laquelle il a été saisi.
 
@@ -136,13 +132,13 @@ Voici un exemple de noeud fantôme, à l’aide de la propriété [Composant Com
 
 * Le composant existe dans le référentiel local à l’adresse :
 
-   `/content/community-components/en/comments/jcr:content/content/includable/comments`
+  `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * Le noeud fantôme correspondant existe dans le référentiel local à l’adresse :
 
-   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
+  `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-Aucun contenu généré par l’utilisateur ne sera trouvé sous le noeud fantôme.
+Aucun contenu généré par l’utilisateur n’est trouvé sous le noeud fantôme.
 
 Le comportement par défaut consiste à configurer des noeuds fantômes sur une instance de publication chaque fois que la sous-arborescence appropriée est référencée pour une lecture ou une écriture.
 
