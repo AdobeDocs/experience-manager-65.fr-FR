@@ -1,16 +1,14 @@
 ---
 title: Communauté de dépannage
 description: Dépannage de la communauté, y compris les problèmes connus
-uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -49,13 +47,13 @@ Par conséquent, tout code utilisant l’API RelativeTimeFormat() doit changer :
 
 L’échec est différent sur l’auteur et la publication. Sur l’auteur, il échoue silencieusement et n’affiche simplement pas les sujets du forum. Une fois la publication effectuée, l’erreur est renvoyée sur la page.
 
-Voir [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API pour plus d’informations.
+Voir [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API pour plus d’informations.
 
 ## Préoccupations communes {#common-concerns}
 
 ### Avertissement dans les journaux : Handlebars obsolètes {#warning-in-logs-handlebars-deprecated}
 
-Au démarrage (et non au premier démarrage), l’avertissement suivant apparaît dans les journaux :
+Au démarrage (pas le premier, mais tous les suivants), l’avertissement suivant apparaît dans les journaux :
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` a été remplacé par `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
@@ -63,7 +61,7 @@ Cet avertissement peut être ignoré en toute sécurité en tant que `jknack.han
 
 ### Avertissement dans les journaux : OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-La publication de plusieurs rubriques de forum Communautés de réseaux sociaux peut entraîner un grand nombre de logs d’avertissement et d’informations provenant d’OakResourceListener processOsgiEventQueue.
+La publication de plusieurs rubriques de forum Communautés de réseaux sociaux peut entraîner un très grand nombre de logs d’avertissement et d’informations provenant d’OakResourceListener processOsgiEventQueue.
 
 Ces avertissements peuvent être ignorés en toute sécurité.
 
