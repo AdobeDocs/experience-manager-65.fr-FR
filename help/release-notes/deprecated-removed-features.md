@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées de la version 6.5 d’Adobe Experience Manager.
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans Adobe Experience Manager 6.5
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 9be9bb1706df750ede3f804012442bd73dc462ee
+source-git-commit: 728069a863fb93b1bebcb1f243ebffc6ec833464
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 92%
+source-wordcount: '1712'
+ht-degree: 93%
 
 ---
 
@@ -50,7 +50,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 |Développeurs|Utilisation de YUI pour compresser/réduire les bibliothèques clientes JavaScript. Adobe ne prévoit pas de mettre à jour la bibliothèque YUI. Jusqu’à la version AEM 6.4, YUI était l’option par défaut pour réduire les bibliothèques JavaScript avec l’option permettant de basculer vers Google Closure Compiler (GCC). À partir d’AEM 6.5, GCC est l’option par défaut.|Adobe recommande aux client(e)s qui effectuent la mise à niveau vers AEM 6.5 de passer à GCC pour leur implémentation.||
 |Développeurs|Éditeur de boîte de dialogue de l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue de l’interface utilisateur classique fourni dans le cadre de la distribution (Quickstart)| Aucun remplacement n’est disponible. ||
 |Forms|L’intégration d’AEM Forms à AEM Mobile est obsolète. | Aucun remplacement n’est disponible. ||Développeurs|Éditeur de boîte de dialogue pour l’interface utilisateur classique dans CRXDE Lite. Adobe ne prévoit pas d’améliorer l’éditeur de boîte de dialogue de l’interface utilisateur classique fourni dans le cadre de la distribution (Quickstart)| Aucun remplacement n’est disponible. ||
-|Développeurs|Bibliothèque cliente Lodash/Underscore. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lodash/Underscore fournie dans le cadre de la distribution (Quickstart) | Adobe recommande aux client(e)s qui ont encore besoin de Lodash/Underscore pour leur code de l’ajouter à leur base de code de projet. || |Screens|Adobe ne prévoit pas de gérer ni de mettre à jour le lot com.adobe.cq.screens.mq.activemq et les configurations associées utilisés pour la configuration des éditeurs 2D.| Adobe recommande aux clients qui nécessitent encore la configuration de 2 éditeurs d’utiliser [load-balancer](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=screens&amp;title=AEM+Screens+publish+environment+horizontal+scaling+through+Load+Balancer+session+stickiness) approche. ||
+|Développeurs|Bibliothèque cliente Lodash/Underscore. Adobe ne prévoit pas de gérer ni de mettre à jour la bibliothèque cliente Lodash/Underscore fournie dans le cadre de la distribution (Quickstart) | Adobe recommande aux client(e)s qui ont encore besoin de Lodash/Underscore pour leur code de l’ajouter à leur base de code de projet. || |Screens|Adobe ne prévoit pas de gérer ni de mettre à jour le lot com.adobe.cq.screens.mq.activemq et les configurations associées utilisés pour la configuration des éditeurs 2D.| Adobe recommande aux clients qui nécessitent toujours la configuration de 2Publishers d’utiliser l’approche de l’équilibreur de charge. ||
 
 ## Fonctionnalités supprimées {#removed-features}
 
