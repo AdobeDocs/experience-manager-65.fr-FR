@@ -8,9 +8,9 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '3870'
+source-wordcount: '3881'
 ht-degree: 99%
 
 ---
@@ -127,10 +127,13 @@ ht-degree: 99%
    + [Présentation de l’intégration des données AEM Forms](using/data-integration.md)
    + [Configuration des sources de données](using/configure-data-sources.md)
    + [Configuration du service OData de Microsoft Dynamics](using/ms-dynamics-odata-configuration.md)
-   + [Intégration de Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Création d’un modèle de données de formulaire](using/create-form-data-models.md)
    + [Utilisation d’un modèle de données de formulaire](using/work-with-form-data-model.md)
    + [Utilisation d’un modèle de données de formulaire](using/using-form-data-model.md)
++ Forms adaptatif - Composants principaux {#adaptive-forms-core-components}
+   + [Activation des composants principaux pour votre environnement](/help/forms/using/enable-adaptive-forms-core-components.md)
+   + [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
+   + [Création de thèmes pour le Forms adaptatif basé sur les composants principaux](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Formulaires adaptatifs - Création de base {#adaptive-forms-basic-authoring}
    + [Meilleures pratiques pour travailler avec les formulaires adaptatifs](using/adaptive-forms-best-practices.md)
    + [Création d’un formulaire adaptatif](using/creating-adaptive-form.md)
@@ -199,7 +202,7 @@ ht-degree: 99%
    + [Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi](using/aem-forms-workflow-step-reference.md)
    + [Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Actions et fonctionnalités des processus AEM sur OSGi et des processus AEM Forms JEE](using/capabilities-osgi-jee-workflows.md)
-   + [Lancement des API de Services de document à partir d’un flux de travail AEM](using/initiating-document-services-apis-aem.md)
+   + [Lancement des API de Services de document à partir d’un workflow AEM](using/initiating-document-services-apis-aem.md)
    + [Journalisation des workflows AEM Forms](/help/forms/using/forms-workflow-logs.md)
    + [Variables dans les workflows d’AEM](using/variable-in-aem-workflows.md)
    + [Partage et demande d’accès aux éléments de la boîte de réception d’un utilisateur](using/configure-shared-queues-osgi.md)
@@ -692,7 +695,6 @@ ht-degree: 99%
    + [Impossible de restaurer le référentiel CRX.](/help/forms/using/restore-crx-repository.md)
    + [Erreurs de service indisponible après l’installation du pack de services AEM 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Problème d’installation du Service Pack d’AEM Forms JEE 6.5.15.0 dans l’environnement JBoss Linux](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [Échec du déploiement des fichiers EAR sur JEE WebLogic Server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Documentation héritée {#legacy-documentation}
    + [Utiliser le service Execute Script dans AEM Forms on JEE Workbench pour créer des données XML](developing/building-xml.md)
    + [Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE](developing/compressing-decompressing-custom-dsc.md)

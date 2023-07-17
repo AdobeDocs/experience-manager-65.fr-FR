@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 6%
@@ -150,6 +150,6 @@ Lorsque les composants principaux de Forms adaptatif sont activés pour votre en
 ## Prochaines étapes
 
 * [Création d’un formulaire adaptatif basé sur des composants principaux](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Création ou ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Création ou ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Création de thèmes pour le Forms adaptatif basé sur les composants principaux](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Création d’un modèle pour le Forms adaptatif basé sur les composants principaux](template-editor.md)
