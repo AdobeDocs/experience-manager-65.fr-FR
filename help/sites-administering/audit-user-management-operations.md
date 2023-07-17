@@ -1,56 +1,52 @@
 ---
-title: Comment contrôler les opérations de gestion des utilisateurs dans AEM
-seo-title: How to Audit User Management Operations in AEM
-description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans AEM.
-seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+title: Contrôle des opérations de gestion des utilisateurs dans Adobe Experience Manager
+description: Découvrez comment contrôler les opérations de gestion des utilisateurs dans Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: ht
-source-wordcount: '308'
-ht-degree: 100%
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 24%
 
 ---
 
-# Comment contrôler les opérations de gestion des utilisateurs dans AEM{#how-to-audit-user-management-operations-in-aem}
+# Contrôle des opérations de gestion des utilisateurs dans Adobe Experience Manager (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Présentation {#introduction}
 
-AEM a introduit la possibilité de journaliser les modifications des autorisations afin qu’elles puissent être contrôlées ultérieurement.
+AEM a introduit la possibilité de consigner les modifications des autorisations afin que vous puissiez les contrôler ultérieurement.
 
-Cette amélioration permet de contrôler la création, la lecture, la mise à jour et la suppression des autorisations et des affectations collectives des utilisateurs. Plus spécifiquement, elle journalise :
+Cette amélioration permet de contrôler la création, la lecture, la mise à jour et la suppression des autorisations et des affectations collectives des utilisateurs. Plus précisément, il consigne :
 
-* la création d’un nouvel utilisateur ;
-* l’ajout d’un utilisateur à un groupe ;
-* les modifications des autorisations d’un utilisateur ou d’un groupe existant.
+* Création d’un utilisateur
+* Un utilisateur ajouté à un groupe
+* Modifications des autorisations d’un utilisateur ou d’un groupe existant
 
-Par défaut, les entrées sont écrites dans le fichier `error.log`. Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct. Vous trouverez plus d’informations sur la marche à suivre dans le paragraphe ci-dessous.
+Par défaut, les entrées sont écrites dans la variable `error.log` fichier . Pour faciliter la surveillance, il est recommandé de les rediriger vers un fichier journal distinct. Pour plus d’informations sur la manière de procéder, reportez-vous au paragraphe ci-dessous.
 
 ## Redirection de la sortie vers un fichier journal distinct {#redirecting-the-output-to-a-separate-log-file}
 
-Pour rediriger la sortie de la journalisation vers un fichier journal distinct, vous devez créer une configuration **Enregistreur de journalisation Apach Sling**. Dans l’exemple ci-dessous, nous utilisons `useraudit.log` comme nom de fichier distinct.
+Pour rediriger la sortie de journalisation vers un fichier journal distinct, créez une **Enregistreur de journalisation Apache Sling** configuration. Utilisons `useraudit.log` comme nom du fichier distinct dans l’exemple ci-dessous.
 
 1. Accédez à la console Web en vous rendant sur *https://serveraddress:serverport/system/console/configMgr*.
-1. Recherchez la **Configuration de l’enregistreur de journalisation Apache Sling**. Ensuite, appuyez sur « + » dans la partie droite de l’entrée afin de créer une configuration d’usine.
+1. Recherchez la **Configuration de l’enregistreur de journalisation Apache Sling**. Ensuite, appuyez sur &quot;+&quot; dans la partie droite de l’entrée pour créer une configuration de fabrique.
 1. Créez la configuration suivante :
 
-   * **Niveau de journal :** informations
-   * **Fichier journal :** logs/useraudit.log
+   * **Niveau de journal :** Informations
+   * **Fichier journal :** logs/useraudit.log
    * **Modèle de message :** conservez la valeur par défaut
    * **Enregistreur :** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Pour afficher les deux enregistreurs dans le champ **Enregistreur**, vous devez saisir le nom du premier enregistreur, puis créer un autre champ en cliquant sur le bouton « + » et en entrant le nom du second enregistreur.
+   Pour entrer les deux enregistreurs dans le **Enregistreur** , vous devez saisir le nom du premier champ, puis créer un autre champ en appuyant sur le bouton &quot;+&quot; et en saisissant le nom du second journal.
 
 ## Exemple de sortie {#example-output}
 
-Si la configuration est correcte, la sortie doit se présenter comme suit :
+Si la configuration est correcte, la sortie doit se présenter comme suit :
 
 ```xml
 19.05.2017 15:15:08.933 *INFO* [0:0:0:0:0:0:0:1 [1495196108932] POST /libs/granite/security/post/authorizables.html HTTP/1.1] com.adobe.granite.security.user.internal.servlets.AuthorizableServlet Create Group 'group1' operation initiated by User 'admin' (administrator)
@@ -84,7 +80,7 @@ Si la configuration est correcte, la sortie doit se présenter comme suit :
 
 ## Interface utilisateur classique {#classic-ui}
 
-Dans l’IU classique, les informations sur les opérations de création, lecture, mise à jour et suppression enregistrées dans le journal d’audit concernant l’ajout et la suppression d’utilisateurs sont limitées à l’ID de l’utilisateur affecté et à la date de modification.
+Dans l’interface utilisateur classique, les informations sur les opérations CRUD enregistrées dans le journal d’audit relatives à l’ajout et la suppression d’utilisateurs sont limitées à l’identifiant de l’utilisateur concerné et au moment où la modification s’est produite.
 
 Par exemple :
 

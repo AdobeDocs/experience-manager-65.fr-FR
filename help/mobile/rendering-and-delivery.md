@@ -1,18 +1,14 @@
 ---
 title: Rendu et diffusion
-seo-title: Rendering and Delivery
 description: Rendu et diffusion
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 11%
+source-wordcount: '580'
+ht-degree: 7%
 
 ---
 
@@ -20,13 +16,13 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-AEM contenu peut facilement être rendu via [Servlets par défaut Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) au rendu [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) et d’autres formats.
+Le contenu Adobe Experience Manager (AEM) peut facilement être rendu au moyen de [Servlets par défaut Sling](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) au rendu [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) et d’autres formats.
 
 Ces rendus prêts à l’emploi parcourent généralement le référentiel et renvoient le contenu tel quel.
 
-AEM, via Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés pour prendre le contrôle total du schéma et du contenu rendus.
+AEM, par le biais de Sling, prend également en charge le développement et le déploiement de rendus sling personnalisés pour prendre le contrôle total du schéma et du contenu rendus.
 
 Les rendus par défaut de Content Services comblent l’écart entre les valeurs par défaut Sling prêtes à l’emploi et le développement personnalisé, ce qui permet la personnalisation et le contrôle de nombreux aspects du contenu rendu sans aucun développement.
 
@@ -101,14 +97,14 @@ Le tableau suivant affiche les propriétés des configurations d’exportation :
    <td>excludeProperties</td>
    <td>Chaîne[]</td>
    <td>exclude</td>
-   <td>Noms des propriétés</td>
+   <td>Noms de propriété</td>
    <td>exclure des propriétés spécifiées de l’exportation JSON</td>
   </tr>
   <tr>
    <td>includeProperties</td>
    <td>Chaîne[]</td>
    <td>inclure tout</td>
-   <td>Noms des propriétés</td>
+   <td>Noms de propriété</td>
    <td><p>if excludePropertyPrefixes set<br /> cela inclut les propriétés spécifiées même si le préfixe correspondant a été exclu,</p> <p>else (exclure les propriétés ignorées) n’incluent que ces propriétés</p> </td>
   </tr>
   <tr>

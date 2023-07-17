@@ -1,17 +1,15 @@
 ---
 title: Prise en main des services On-Demand mobiles Adobe Experience Manager
-description: Commencez à administrer AEM application mobile On-Demand Services. Il donne un aperçu des rôles et responsabilités d’un administrateur AEM pour les services On-Demand.
-uuid: fd99c032-287a-489b-9690-b18980c55c29
+description: Commencez à administrer l’application Adobe Experience Manager (AEM) mobile On-Demand Services. Il donne un aperçu des rôles et responsabilités d’un administrateur AEM pour les services On-Demand.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
-discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: ff7e37f24990a94510331a33cb05b7b44b3bfe85
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 8%
+source-wordcount: '298'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +17,11 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Si vous n’utilisez pas AEM comme source de gestion de contenu, reportez-vous à la section [Aide d’AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Si vous n’utilisez pas Adobe Experience Manager (AEM) comme source de gestion de contenu, reportez-vous à la section [Aide d’AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## Administrateur AEM {#aem-administrator}
 
@@ -33,15 +31,15 @@ ht-degree: 8%
 >
 >Avant de commencer à configurer votre environnement pour AEM Mobile On-demand Services, reportez-vous à la section [Tableau de bord des applications AEM Mobile ou centre de contrôle](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Un ***Administrateur AEM*** est chargé d’ajouter une nouvelle application au catalogue AEM Mobile, soit en créant une nouvelle application à l’aide de l’assistant de création, soit en important une application existante. AEM administrateurs qui créent une application à l’aide d’AEM Mobile *assistant de création* sélectionnez généralement l’un des modèles d’application souhaités, soit parmi nos exemples de référence prêts à l’emploi, soit (dans la plupart des cas) un modèle d’application personnalisé créé par *AEM développeurs.*
+Un ***Administrateur AEM*** est chargé d’ajouter une application au catalogue AEM Mobile, soit en créant une application à l’aide de l’assistant de création, soit en important une application existante. AEM administrateurs qui créent une application à l’aide d’AEM Mobile *assistant de création* sélectionnez généralement l’un des modèles d’application souhaités dans les exemples de référence d’usine de l’Adobe ou (généralement) un modèle d’application personnalisé créé par *AEM développeurs.*
 
 >[!NOTE]
 >
 >Pour plus d’informations sur la configuration des groupes AEM et des autorisations, cliquez sur [Création de rôles utilisateur et octroi d’accès](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) dans l’aide en ligne.
 
-Lors de la création d’une application à l’aide d’AEM Mobile On-demand Services, un administrateur d’AEM est responsable des tâches suivantes :
+Lors de la création d’une application à l’aide d’AEM Mobile On-demand Services, un administrateur AEM est responsable des tâches suivantes :
 
-* [Configuration d’AEM Mobile](/help/mobile/aem-mobile-setup.md), qui couvre
+* [Configuration d’AEM Mobile](/help/mobile/aem-mobile-setup.md) qui couvre
 
    * Approvisionnement d’AEM Mobile
    * Création de projets pour AEM Mobile

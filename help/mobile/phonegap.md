@@ -1,16 +1,14 @@
 ---
-title: Création pour Adobe PhoneGap Enterprise dans AEM
+title: Création pour Adobe PhoneGap Enterprise dans Adobe Experience Manager
 description: PhoneGap
-uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 13%
+ht-degree: 4%
 
 ---
 
@@ -18,7 +16,7 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile n’est qu’un pilier qui constitue l’ensemble de la plateforme AEM.
 

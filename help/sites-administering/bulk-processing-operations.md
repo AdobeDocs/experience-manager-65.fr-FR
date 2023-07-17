@@ -1,17 +1,13 @@
 ---
 title: Opérations de traitement en bloc
-seo-title: Bulk Processing Operations
 description: null
-seo-description: null
 page-status-flag: never-activated
-uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
-discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 69%
+source-wordcount: '503'
+ht-degree: 34%
 
 ---
 
@@ -20,15 +16,15 @@ ht-degree: 69%
 
 ## Présentation {#introduction}
 
-Avec la version la plus récente d’AEM, le bouton Tout sélectionner a été étendu à tous les modes : Liste, Colonnes et Carte. Le bouton Tout sélectionner sélectionne désormais tout le contenu d’un dossier ou d’une collection donnée, et pas seulement les ressources et les pages chargées et visibles dans le navigateur client.
+Avec la dernière version d&#39;Adobe Experience Manager (AEM), le bouton Tout sélectionner a été étendu à toutes les vues : Mode Liste, Colonne et Carte. Le bouton Tout sélectionner sélectionne désormais tout le contenu d’un dossier ou d’une collection donnée, et pas seulement les ressources et les pages chargées et visibles dans le navigateur client.
 
-Les actions principales ont été activées pour l’opération en bloc : **Déplacer**, **Supprimer** et **Copier**. Une nouvelle boîte de dialogue informera les clients des actions pour lesquelles le traitement en bloc n’est pas disponible.
+Les actions clés ont été activées pour l’opération en bloc : **Déplacer**, **Supprimer**, et **Copier**. Une nouvelle boîte de dialogue permet aux clients de connaître les actions pour lesquelles le traitement en masse n’est pas disponible.
 
 ## Utilisation {#how-to-use}
 
 Un nouveau bouton appelé **Tout sélectionner** a été ajouté aux modes Carte, Liste ou Colonnes. Ce bouton peut être utilisé dans n’importe quelle vue pour sélectionner tous les éléments du jeu de données.
 
-Dans les versions précédentes d’AEM, la sélection était limitée à ce qui était chargé dans le navigateur client. Ces nouvelles modifications ont été introduites pour éviter toute confusion concernant le nombre d’éléments sur lesquels une opération en bloc est effectuée.
+Dans les versions précédentes d’AEM, la sélection était limitée à ce qui était chargé dans le navigateur client. Cette nouvelle modification a été introduite afin d’éviter toute confusion concernant le nombre d’éléments sur lesquels une opération en bloc est effectuée.
 
 Pour l’instant, trois opérations ont été ajoutées au traitement en bloc :
 
@@ -37,7 +33,7 @@ Pour l’instant, trois opérations ont été ajoutées au traitement en bloc :
 * Supprimer
 
 La prise en charge d’autres opérations sera ajoutée à l’avenir.
-Pour utiliser cette fonction, vous devez accéder au dossier ou à la collection où vous souhaitez effectuer des opérations en bloc sur les pages ou sur les ressources.
+Pour utiliser cette fonction, accédez au dossier ou à la collection dans lequel vous souhaitez effectuer des opérations en bloc sur les pages ou sur les ressources.
 
 Sélectionnez ensuite l’un des modes ci-dessous :
 
@@ -75,10 +71,10 @@ Dans la vue Liste, utilisez le bouton **Tout sélectionner** ou utilisez la case
 
 Une fois la sélection effectuée, l’une des trois actions activées en bloc peut être effectuée : **Déplacer**, **Copier** ou **Supprimer**.
 
-Ici, l’opération **Déplacer** est effectuée sur les ressources sélectionnées ci-dessus. Dans n’importe quel de ces modes, toutes les ressources sont alors déplacées vers l’emplacement choisi et pas seulement vers celles qui sont chargées à l’écran.
+Ici, l’opération **Déplacer** est effectuée sur les ressources sélectionnées ci-dessus. Dans n’importe quel affichage, toutes les ressources sont alors déplacées vers l’emplacement choisi et pas seulement vers celles qui sont chargées à l’écran.
 
 ![Déplacez les ressources présentant un dossier sélectionné en mode Colonnes.](assets/noua.png)
 
-Pour les autres opérations qui ne sont pas activées en bloc, comme **Télécharger**, un avertissement s’affiche indiquant que seuls les éléments chargés dans le navigateur seront inclus dans l’opération.
+Pour les autres opérations qui ne sont pas activées en bloc, comme **Télécharger,** un avertissement s’affiche indiquant que seuls les éléments chargés dans le navigateur sont inclus dans l’opération.
 
 ![Affichage des ressources affiche les ressources d’image sélectionnées, ainsi que la boîte de dialogue contextuelle &quot;Action en bloc non prise en charge&quot;.](assets/zece.png)
