@@ -1,37 +1,33 @@
 ---
 title: Développer l’éditeur en bloc
-seo-title: Developing the Bulk Editor
 description: Le balisage permet de catégoriser et d’organiser le contenu.
-seo-description: Tagging allows content to be categorized and organized
-uuid: 3cd04c52-5bdb-47f6-9fa3-d7a4937e8e20
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1837'
-ht-degree: 100%
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+workflow-type: tm+mt
+source-wordcount: '1836'
+ht-degree: 54%
 
 ---
 
 # Développer l’éditeur en bloc{#developing-the-bulk-editor}
 
-Cette section explique comment développer l’outil d’éditeur en masse et comment étendre le composant Liste de produits, lui-même basé sur l’éditeur en masse.
+Cette section décrit le développement de l’outil d’éditeur en bloc et l’extension du composant Liste de produits , basé sur l’éditeur en bloc.
 
-## Paramètres de requête de l’éditeur en masse {#bulk-editor-query-parameters}
+## Paramètres de requête de l’éditeur en bloc {#bulk-editor-query-parameters}
 
-Lorsque vous travaillez avec l’éditeur en masse, plusieurs paramètres de requête peuvent être ajoutés à l’URL pour appeler l’éditeur en masse avec une configuration spécifique. Pour que l’éditeur en masse soit toujours utilisé avec une certaine configuration, par exemple, comme dans le composant Liste de produits, vous devez modifier bulkeditor.jsp (situé dans /libs/wcm/core/components/bulkeditor) ou créer un composant avec la configuration spécifique. Les modifications apportées à l’aide des paramètres de requête ne sont pas permanentes.
+Lorsque vous utilisez l’éditeur en bloc, vous pouvez ajouter plusieurs paramètres de requête à l’URL pour appeler l’éditeur en bloc avec une configuration spécifique. Si vous souhaitez que l’éditeur en bloc soit toujours utilisé avec une certaine configuration, par exemple, comme dans le composant Liste de produits, vous devez modifier . `bulkeditor.jsp` (dans /libs/wcm/core/components/bulkeditor) ou créez un composant avec la configuration spécifique. Les modifications effectuées à l’aide des paramètres de requête ne sont pas permanentes.
 
-Par exemple, si vous tapez ce qui suit dans l’URL de votre navigateur :
+Par exemple, si vous entrez les informations suivantes dans l’URL de votre navigateur :
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-l’éditeur en masse s’affiche sans le champ **Chemin de base** car hrp=true masque le champ. Avec le paramètre hrp=false, le champ est affiché (valeur par défaut).
+L’éditeur en bloc s’affiche sans le paramètre **Chemin racine** comme hrp=true masque le champ. Avec le paramètre hrp=false, le champ s’affiche (valeur par défaut).
 
-Voici une liste des paramètres de requête de l’éditeur en masse :
+Voici une liste des paramètres de requête de l’éditeur en bloc :
 
 >[!NOTE]
 >
@@ -162,20 +158,20 @@ Voici une liste des paramètres de requête de l’éditeur en masse :
  </tbody>
 </table>
 
-### Développement d’un composant basé sur l’éditeur en masse : le composant Liste de produits {#developing-a-bulk-editor-based-component-the-product-list-component}
+### Développement d’un composant basé sur l’éditeur en bloc : Composant Liste de produits {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Cette section présente l’utilisation de l’éditeur en masse et décrit le composant Geometrixx existant en fonction de l’éditeur en masse : le composant Liste de produits.
+Cette section présente un aperçu de l’utilisation de l’éditeur en bloc et donne une description du composant de Geometrixx existant en fonction de l’éditeur en bloc : le composant Liste de produits .
 
-Le composant Liste de produits permet aux utilisateurs d’afficher et de modifier une table de données. Par exemple, vous pouvez utiliser le composant Liste de produits pour représenter les produits d’un catalogue. Les informations sont présentées dans un tableau HTML standard et toute modification est effectuée dans la boîte de dialogue **Modifier**, qui contient un widget BulkEditor. (Cet éditeur en masse est exactement le même que celui accessible sur /etc/importers/bulkeditor.html ou via le menu Outils). Le composant Liste de produits a été configuré pour des fonctionnalités d’éditeur en masse limitées spécifiques. Chaque partie de l’éditeur en masse (ou des composants dérivés de l’éditeur en masse) peut être configurée.
+Le composant Liste de produits permet aux utilisateurs d’afficher et de modifier une table de données. Par exemple, vous pouvez utiliser le composant Liste de produits pour représenter les produits d’un catalogue. Les informations sont présentées dans un tableau de HTML standard et toute modification est effectuée dans la variable **Modifier** qui contient un widget BulkEditor. (Cet éditeur en bloc est identique à celui accessible à l’adresse /etc/importers/bulkeditor.html ou via le menu Outils). Le composant Liste de produits a été configuré pour des fonctionnalités spécifiques et limitées de l’éditeur en bloc. Chaque partie de l’éditeur en bloc (ou les composants dérivés de l’éditeur en bloc) peut être configurée.
 
-Avec l’éditeur en masse, vous pouvez ajouter, modifier, supprimer, filtrer et exporter les lignes, enregistrer les modifications et importer un ensemble de lignes. Chaque ligne est stockée en tant que nœud sous l’instance du composant Liste de produits elle-même. Chaque cellule est une propriété de chaque nœud. C’est un choix de conception qui peut être facilement modifié. Par exemple, vous pouvez stocker des nœuds ailleurs dans le référentiel. Le rôle du servlet de requête est de renvoyer la liste des nœuds à afficher. Le chemin de recherche est défini comme une instance Liste de produits.
+Avec l’éditeur en bloc, vous pouvez ajouter, modifier, supprimer, filtrer et exporter les lignes, enregistrer les modifications et importer un ensemble de lignes. Chaque ligne est stockée en tant que nœud sous l’instance du composant Liste de produits elle-même. Chaque cellule est une propriété de chaque nœud. C’est un choix de conception qui peut être facilement modifié. Par exemple, vous pouvez stocker des nœuds ailleurs dans le référentiel. Le rôle du servlet de requête est de renvoyer la liste des noeuds à afficher ; le chemin de recherche est défini comme une instance Liste de produits.
 
-Le code source AEM du composant Liste de produits est disponible dans le référentiel sous /apps/geometrixx/components/productlist et est composé de plusieurs parties comme tous les composants AEM :
+Le code source du composant Liste de produits est disponible dans le référentiel à l’adresse /apps/geometrixx/components/productlist et est composé de plusieurs parties comme tous les composants Adobe Experience Manager (AEM) :
 
-* Rendu HTML : le rendu est effectué dans un fichier JSP (/apps/geometrixx/components/productlist/productlist.jsp). Le JSP lit les sous-nœuds du composant Liste de produits en cours et affiche chacun d’entre eux sous la forme d’une ligne d’une table HTML.
-* Boîte de dialogue Modifier dans laquelle vous définissez la configuration de l’éditeur en masse. Configurez la boîte de dialogue de sorte à répondre aux besoins du composant : colonnes disponibles et actions possibles effectuées sur la grille ou sur la recherche. Voir [propriétés de configuration de l’éditeur en masse ](#bulk-editor-configuration-properties)pour plus d’informations sur toutes les propriétés de configuration.
+* Rendu HTML : le rendu est effectué dans un fichier JSP (/apps/geometrixx/components/productlist/productlist.jsp). Le JSP lit les sous-noeuds du composant Liste de produits actuel et les affiche chacun sous la forme d’une ligne d’un tableau de HTML.
+* Boîte de dialogue Modifier dans laquelle vous définissez la configuration de l’éditeur en masse. Configurez la boîte de dialogue de sorte à répondre aux besoins du composant : colonnes disponibles et actions possibles effectuées sur la grille ou sur la recherche. Voir [Propriétés de configuration de l’éditeur en bloc](#bulk-editor-configuration-properties) pour plus d’informations sur toutes les propriétés de configuration.
 
-Voici une représentation XML des sous-nœuds de la boîte de dialogue :
+Voici une représentation XML des sous-noeuds de boîte de dialogue :
 
 ```xml
         <editor
@@ -266,9 +262,9 @@ Voici une représentation XML des sous-nœuds de la boîte de dialogue :
         </editor>
 ```
 
-### Propriétés de configuration de l’éditeur en masse {#bulk-editor-configuration-properties}
+### Propriétés de configuration de l’éditeur en bloc {#bulk-editor-configuration-properties}
 
-Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivant répertorie toutes les propriétés de configuration pour l’éditeur en masse.
+Chaque partie de l’éditeur en bloc peut être configurée. Le tableau suivant répertorie toutes les propriétés de configuration de l’éditeur en bloc.
 
 <table>
  <tbody>
@@ -294,7 +290,7 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
   </tr>
   <tr>
    <td>extraCols</td>
-   <td>Propriétés recherchées supplémentaires (affichées dans une zone de texte séparée par des virgules)</td>
+   <td>Propriétés recherchées supplémentaires (affichées dans un champ séparé par des virgules)</td>
   </tr>
   <tr>
    <td>initialSearch</td>
@@ -446,24 +442,24 @@ Chaque partie de l’éditeur en masse peut être configurée. Le tableau suivan
  </tbody>
 </table>
 
-### Configuration des métadonnées de colonnes {#columns-metadata-configuration}
+### Configuration des métadonnées des colonnes {#columns-metadata-configuration}
 
-Vous pouvez configurer pour chaque colonne :
+Vous pouvez configurer pour chaque colonne :
 
 * les propriétés d’affichage : style html, classe CSS et lecture seule 
 
 * une case à cocher
 * une position forcée
 
-le CSS et les colonnes en lecture seule
+Colonnes CSS et lecture seule
 
-L’éditeur en masse comporte trois configurations de colonnes :
+L’éditeur en bloc comporte trois configurations de colonne :
 
-* Nom de la classe CSS de la cellule (cellCls) : nom de classe CSS ajouté à chaque cellule de la colonne configurée.
-* Style de cellule (cellStyle) : style HTML ajouté à chaque cellule de la colonne configurée.
-* Lecture seule (readOnly) : la lecture seule est définie pour chaque cellule de la colonne configurée.
+* Nom de classe CSS de la cellule (cellCls) : un nom de classe CSS ajouté à chaque cellule de la colonne configurée.
+* Style de cellule (cellStyle) : style de HTML ajouté à chaque cellule de la colonne configurée.
+* Lecture seule (readOnly) : lecture seule est définie pour chaque cellule de la colonne configurée.
 
-La configuration doit être définie comme suit :
+La configuration doit être définie comme suit :
 
 ```
 "colsMetadata": {
@@ -475,7 +471,7 @@ La configuration doit être définie comme suit :
 }
 ```
 
-L’exemple suivant est disponible dans le composant Liste de produits (/apps/geometrixx/components/productlist/dialog/items/editor/colsMetadata) :
+L’exemple suivant se trouve dans le composant de liste de produits (/apps/geometrixx/components/productlist/dialog/items/editor/colsMetadata) :
 
 ```xml
             <colsMetadata jcr:primaryType="nt:unstructured">
@@ -510,30 +506,30 @@ L’exemple suivant est disponible dans le composant Liste de produits (/apps/ge
             </colsMetadata>
 ```
 
-**Case**
+**Case à cocher**
 
 Si la propriété de configuration de case à cocher est définie sur true, toutes les cellules de la colonne sont affichées sous forme de cases à cocher. Une case cochée envoie **true** au servlet Save du serveur, **false** dans le cas contraire. Dans le menu d’en-tête, vous pouvez également **tout sélectionner** ou **ne rien sélectionner**. Ces options sont activées si l’en-tête sélectionné est l’en-tête d’une colonne de case à cocher.
 
-Dans l’exemple précédent, la colonne de sélection contient uniquement des cases à cocher de type checkbox=&quot;true&quot;.
+Dans le premier exemple, la colonne de sélection contient uniquement des cases à cocher comme case=&quot;true&quot;.
 
 **Position forcée**
 
 La métadonnée de position forcée forcedPosition vous permet de spécifier l’endroit où la colonne est placée dans la grille : 0 est la première place et &lt;nombre de colonnes>-1 est la dernière position. Toute autre valeur est ignorée.
 
-Dans le premier exemple, la colonne de sélection est la première colonne configurée avec forcedPosition=&quot;0&quot;.
+Dans le premier exemple, la colonne de sélection est la première colonne sous la forme forcedPosition=&quot;0&quot;.
 
-### Servlet Query {#query-servlet}
+### Query Servlet {#query-servlet}
 
 Par défaut, le servlet Query est disponible dans `/libs/wcm/core/components/bulkeditor/json.java`. Vous pouvez configurer un autre chemin pour récupérer les données.
 
-Le servlet Query fonctionne comme suit : il reçoit une requête GQL et les colonnes à renvoyer, calcule les résultats et renvoie les résultats à l’éditeur en masse sous forme de flux JSON.
+Le servlet Query fonctionne comme suit : il reçoit une requête GQL et les colonnes à renvoyer, calcule les résultats et renvoie les résultats à l’éditeur en bloc sous la forme d’un flux JSON.
 
-Dans le cas du composant Liste de produits, les deux paramètres envoyés au servlet Query sont les suivants :
+Dans le cas du composant Liste de produits , les deux paramètres envoyés au servlet Query sont les suivants :
 
-* query : &quot;path:/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
-* cols : &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
+* query : &quot;path:/content/geometrixx/fr/customers/jcr:content/par/productlist Cube&quot;
+* cols : &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
-et le flux JSON retourné est le suivant :
+Et le flux JSON est renvoyé comme suit :
 
 ```
 {
@@ -550,28 +546,28 @@ et le flux JSON retourné est le suivant :
 }
 ```
 
-Chaque hit correspond à un nœud et ses propriétés, et est affiché comme une ligne dans la grille.
+Chaque accès correspond à un noeud et à ses propriétés, et s’affiche sous la forme d’une ligne dans la grille.
 
 Vous pouvez étendre le servlet Query de sorte à renvoyer un modèle d’héritage complexe ou à renvoyer des nœuds stockés dans un emplacement logique spécifique. Le servlet Query peut être utilisé pour effectuer n’importe quel type de calcul complexe. La grille peut ensuite afficher les lignes qui sont un agrégat de plusieurs nœuds dans le référentiel. La modification et l’enregistrement de ces lignes doivent dans ce cas être gérés par le servlet Save.
 
-### Servlet Save {#save-servlet}
+### Save Servlet {#save-servlet}
 
-Dans la configuration par défaut de l’éditeur en masse, chaque ligne est un nœud et le chemin de ce nœud est stocké dans l’enregistrement de ligne. L’éditeur en masse conserve le lien entre la ligne et le nœud via le chemin jcr. Lorsqu’un utilisateur modifie la grille, une liste de toutes les modifications est créée. Lorsqu’un utilisateur clique sur **Enregistrer**, une requête POST est envoyée à chaque chemin avec les valeurs de propriétés mises à jour. C’est la base du concept Sling. Ce mécanisme fonctionne bien si chaque cellule est une propriété du nœud. Mais si le servlet Query est implémenté de manière à effectuer le calcul d’héritage, ce modèle ne peut pas fonctionner car une propriété renvoyée par le servlet Query peut être héritée d’un autre nœud.
+Dans la configuration par défaut de l’éditeur en bloc, chaque ligne est un noeud et le chemin de ce noeud est stocké dans l’enregistrement de ligne. L’éditeur en bloc conserve le lien entre la ligne et le noeud via le chemin jcr. Lorsqu’un utilisateur modifie la grille, une liste de toutes les modifications est créée. Lorsqu’un utilisateur clique sur **Enregistrer**, une requête POST est envoyée à chaque chemin avec les valeurs de propriétés mises à jour. C’est la base du concept Sling. Ce mécanisme fonctionne bien si chaque cellule est une propriété du nœud. Mais si le servlet Query est implémenté pour effectuer le calcul d’héritage, ce modèle ne peut pas fonctionner en tant que propriété renvoyée par le servlet Query peut être héritée d’un autre noeud.
 
-Le concept du servlet Save est le suivant : les modifications ne sont pas directement publiées sur chaque nœud, mais sont envoyées à un servlet qui effectue la tâche d’enregistrement. Ce servlet peut ainsi analyser les modifications et enregistrer les propriétés sur le bon nœud.
+Le concept du servlet Save est le suivant : les modifications ne sont pas directement publiées sur chaque nœud, mais sont envoyées à un servlet qui effectue la tâche d’enregistrement. Cela permet à ce servlet d’analyser les modifications et d’enregistrer les propriétés sur le noeud droit.
 
-Chaque propriété mise à jour est envoyée au servlet au format suivant :
+Chaque propriété mise à jour est envoyée au servlet au format suivant :
 
 * Nom du paramètre : &lt;chemin jcr>/&lt;nom de propriété>
 
-   Exemple : /content/geometrixx/fr/products/jcr:content/par/productlist/1258674859000/SellingSku
+  Exemple : /content/geometrixx/fr/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * Valeur : &lt;valeur>
 
-   Exemple : 12123
+  Exemple : 12123
 
 Le servlet doit connaître l’emplacement de stockage de la propriété catalogCode.
 
 Une implémentation par défaut du servlet Save est disponible dans /libs/wcm/bulkeditor/save/POST.jsp et est utilisée dans le composant Liste de produits. Il prend tous les paramètres de la requête (au format &lt;chemin jcr>/&lt;nom de propriété>) et écrit des propriétés sur les nœuds à l’aide de l’API JCR. Il crée également un nœud s’il n’existe pas (lignes insérées dans la grille).
 
-Le code par défaut ne doit pas être utilisé tel quel, car il réimplémente ce que le serveur fait nativement (un POST sur &lt;chemin jcr>/&lt;nom de propriété>) et n’est donc qu’un bon point de départ pour créer un servlet Save qui gèrera un modèle d’héritage de propriété.
+Le code par défaut ne doit pas être utilisé tel quel car il réimplémente ce que le serveur fait nativement (un POST sur &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) et n’est donc qu’un bon point de départ pour créer une servlet Save capable de gérer un modèle d’héritage de propriétés.

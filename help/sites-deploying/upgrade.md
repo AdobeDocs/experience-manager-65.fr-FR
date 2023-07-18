@@ -1,8 +1,6 @@
 ---
-title: Mettre à niveau vers AEM 6.5
-seo-title: Upgrading to AEM 6.5
-description: Découvrez les principes de base de la mise à niveau d’une installation AEM plus ancienne vers AEM 6.5.
-seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
+title: Mise à niveau vers Adobe Experience Manager 6.5
+description: Découvrez les principes de base de la mise à niveau d’une ancienne installation Adobe Experience Manager (AEM) vers AEM 6.5.
 contentOwner: sarchiz
 topic-tags: upgrading
 content-type: reference
@@ -10,22 +8,21 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 57%
+source-wordcount: '678'
+ht-degree: 32%
 
 ---
 
-# Mettre à niveau vers AEM 6.5 {#upgrading-to-aem}
+# Mise à niveau vers Adobe Experience Manager (AEM) 6.5 {#upgrading-to-aem}
 
-Dans cette section, nous présentons la mise à niveau d’une installation AEM vers AEM 6.5 :
+Cette section décrit la mise à niveau d’une installation AEM vers AEM 6.5 :
 
 * [Planification de la mise à niveau](/help/sites-deploying/upgrade-planning.md)
 * [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)
 * [Compatibilité ascendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-
-   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+  <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Procédure de mise à niveau](/help/sites-deploying/upgrade-procedure.md)
 * [Mise à niveau du code et des personnalisations](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
@@ -50,11 +47,11 @@ Voici les principales modifications à noter au cours des dernières versions d�
 
 AEM 6.0 a introduit le nouveau référentiel Jackrabbit Oak. Les gestionnaires de persistance ont été remplacés par [Noyaux micro](/help/sites-deploying/platform.md#contentbody_title_4). À partir de la version 6.1, CRX2 n’est plus pris en charge. Un outil de migration appelé crx2oak doit être exécuté pour migrer les référentiels CRX2 à partir des instances 5.6.1. Pour plus d’informations, voir [Utilisation de l’outil de migration CRX2OAK](/help/sites-deploying/using-crx2oak.md).
 
-Si vous utilisez Assets Insights et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et doivent posséder des ID générés via un bean JMX. Lors de nos tests internes, 125 000 ressources ont été migrées en 1 heure dans un environnement TarMK, mais les résultats peuvent varier. 
+Si Assets Insights est utilisé et que vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.2, les ressources doivent être migrées et avoir des identifiants générés via un bean JMX. Pour les tests internes d’Adobe, 125 000 ressources dans un environnement TarMK ont été migrées en une heure, mais vos résultats peuvent varier.
 
-La version 6.3 a introduit un nouveau format `SegmentNodeStore`, qui est la base de cette implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, une migration du référentiel est nécessaire dans le cadre de la mise à niveau, ce qui implique des interruptions du système.
+La version 6.3 a introduit un nouveau format `SegmentNodeStore`, qui est la base de cette implémentation de TarMK. Si vous effectuez une mise à niveau à partir d’une version antérieure à AEM 6.3, cela nécessite une migration du référentiel dans le cadre de la mise à niveau, impliquant des temps d’arrêt du système.
 
-L’équipe technique d’Adobe estime la durée du processus à environ 20 minutes. Veuillez noter que la réindexation n’est pas requise. En outre, une nouvelle version de l’outil crx2oak a été publiée pour fonctionner avec le nouveau format de référentiel.
+L’équipe technique d’Adobe estime la durée du processus à environ 20 minutes. La réindexation n’est pas nécessaire. En outre, une nouvelle version de l’outil crx2oak a été publiée pour fonctionner avec le nouveau format de référentiel.
 
 **Cette migration n’est pas nécessaire dans le cas d’une mise à niveau d’AEM 6.3 vers AEM 6.5.**
 
@@ -80,9 +77,9 @@ La mise à niveau d’AEM est un processus à plusieurs étapes, parfois sur plu
 
 ## Flux de mise à niveau {#upgrade-overview-1}
 
-Le diagramme ci-dessous capture le flux global recommandé pour mettre en évidence l’approche de mise à niveau. Veuillez noter la référence aux nouvelles fonctionnalités que nous avons introduites. La mise à niveau doit commencer par l’outil de détection des motifs (voir [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)) qui vous permet de déterminer la voie à emprunter pour la compatibilité avec AEM 6.4 sur la base des modèles du rapport généré.
+Le diagramme ci-dessous capture le flux global recommandé pour mettre en évidence l’approche de mise à niveau. Notez la référence aux nouvelles fonctionnalités introduites par Adobe. La mise à niveau doit commencer par l’outil de détection des motifs (voir [Évaluation de la complexité de la mise à niveau à l’aide de l’outil de détection des motifs](/help/sites-deploying/pattern-detector.md)) qui vous permet de déterminer la voie à emprunter pour la compatibilité avec AEM 6.4 sur la base des modèles du rapport généré.
 
-Dans la version 6.5, nous avons mis un point d’honneur à ce que toutes les fonctionnalités soient rétrocompatibles. Cependant, si vous constatez des problèmes de rétrocompatibilité, le mode de compatibilité vous permet de différer temporairement le développement, de sorte que votre code personnalisé reste compatible avec la version 6.5. Cette approche vous dispense des activités de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+Dans la version 6.5, une attention particulière a été portée au maintien de la rétrocompatibilité de toutes les nouvelles fonctionnalités. Cependant, lorsque des problèmes de rétrocompatibilité se produisent, le mode de compatibilité vous permet de différer temporairement le développement pour que votre code personnalisé reste compatible avec la version 6.5. Cette approche vous permet d’éviter les efforts de développement immédiatement après la mise à niveau (voir [Compatibilité descendante dans AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
 Enfin, dans le cadre de votre cycle de développement 6.5, les fonctionnalités ajoutées sous Mises à niveau possibles (voir [Mises à niveau possibles](/help/sites-deploying/sustainable-upgrades.md)) vous aident à suivre les bonnes pratiques afin de rendre les prochaines mises à niveau encore plus simples et transparentes.
 

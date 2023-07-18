@@ -1,57 +1,53 @@
 ---
 title: Créer un composant de champ d’IU Granite
-seo-title: Creating a New Granite UI Field Component
-description: L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires, appelés champs.
-seo-description: Granite UI provides a range of components designed to be used in forms, called fields
-uuid: cf26e057-4b0c-45f4-8975-2c658517f20e
+description: L’interface utilisateur Granite fournit toute une gamme de composants conçus pour être utilisés dans les formulaires, appelés champs.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '539'
-ht-degree: 100%
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+workflow-type: tm+mt
+source-wordcount: '527'
+ht-degree: 28%
 
 ---
 
 # Créer un composant de champ d’IU Granite{#creating-a-new-granite-ui-field-component}
 
-L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires. Ils sont appelés *champs* selon la terminologie de l’IU Granite. Les composants de formulaire Granite standard sont disponibles sous :
+L’IU Granite fournit toute une gamme de composants conçus pour être utilisés dans des formulaires. Ils sont appelés *champs* selon la terminologie de l’IU Granite. Les composants de formulaire Granite standard sont disponibles sous :
 
 `/libs/granite/ui/components/foundation/form/*`
 
 >[!NOTE]
 >
->Ces champs de formulaire d’IU Granite présentent un intérêt particulier dans la mesure où ils sont utilisés pour les [boîtes de dialogue de composant](/help/sites-developing/developing-components.md).
+>Ces champs de formulaire de l’IU Granite sont particulièrement intéressants, car ils sont utilisés pour [boîtes de dialogue de composant](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
->Pour plus d’informations sur les champs, consultez la [documentation de l’IU Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Pour plus d’informations sur les champs, voir [Documentation de l’interface utilisateur Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Utilisez la structure de base de l’IU Granite pour développer et/ou étendre les composants Granite. Elle comprend deux éléments :
+Utilisez la structure de base de l’IU Granite pour développer et/ou étendre les composants Granite. Celui-ci comporte deux éléments :
 
-* Côté serveur :
+* côté serveur :
 
-   * Une collection de composants de base
+   * un ensemble de composants de base ;
 
-      * Base : modulaires, composables, pouvant être disposés en couche, réutilisables
+      * foundation : modulaire, composable, lisible, réutilisable
       * Composants : composants Sling
-   * Des aides au développement d’applications
 
+   * aide au développement des applications
 
-* Côté client :
+* côté client :
 
-   * Une collection de clientlibs fournissant un certain vocabulaire (c’est-à-dire une extension du langage HTML) pour obtenir des motifs génériques d’interaction via une IU pilotée par hypermédia.
+   * un ensemble de clientlibs fournissant un certain vocabulaire (c’est-à-dire une extension du langage de HTML) pour obtenir des modèles d’interaction génériques par le biais d’une interface utilisateur pilotée par Hypermedia.
 
 Le composant d’IU Granite générique `field` se compose de deux fichiers d’intérêt :
 
-* `init.jsp` : gère le traitement générique ; le balisage et la description, et fournit la valeur de formulaire dont vous aurez besoin lors du rendu du champ.
-* `render.jsp` : il s’agit de l’emplacement où le rendu du champ est effectué, il doit être remplacé pour votre champ personnalisé ; il est inclus par `init.jsp`.
+* `init.jsp`: gère le traitement générique ; l’étiquetage, la description et fournissent la valeur de formulaire dont vous avez besoin lors du rendu de votre champ.
+* `render.jsp`: c’est là que le rendu réel du champ est effectué et doit être remplacé pour votre champ personnalisé ; est inclus par `init.jsp`.
 
-Reportez-vous à la [documentation de l’IU Granite – champ](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) si vous souhaitez plus de détails.
+Voir [Documentation de l’IU Granite - Champ](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) pour plus d’informations.
 
 Pour consulter des exemples, voir :
 
@@ -63,15 +59,15 @@ Pour consulter des exemples, voir :
 
 >[!NOTE]
 >
->Ce mécanisme utilisant JSP, i18n et XSS ne sont pas fournis prêts à l’emploi. Cela signifie que vous devez internationaliser et placer les chaînes dans des séquences d’échappement. Le répertoire suivant contient les champs génériques d’une instance standard. Vous pouvez les utiliser comme référence :
+>Ce mécanisme utilisant JSP, i18n et XSS ne sont pas fournis prêts à l’emploi. Cela signifie que vous devez internationaliser et échapper vos chaînes. Le répertoire suivant contient les champs génériques d&#39;une instance standard. Vous pouvez les utiliser comme référence :
 >
 >Référentiel `/libs/granite/ui/components/foundation/form`
 
 ## Création du script côté serveur pour le composant {#creating-the-server-side-script-for-the-component}
 
-Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vous fournissez le balisage de votre composant. Vous pouvez considérer le JSP (c’est-à-dire le script de rendu) comme un wrapper pour votre balisage.
+Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vous fournissez le balisage de votre composant. Vous pouvez considérer le JSP (c’est-à-dire le script de rendu) comme un wrapper pour vos balises.
 
-1. Créez un composant qui utilise la propriété `sling:resourceSuperType` à hériter de :
+1. Créez un composant qui utilise la variable `sling:resourceSuperType` pour hériter de :
 
    `/libs/granite/ui/components/foundation/form/field`
 
@@ -79,7 +75,7 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
 
    `render.jsp`
 
-   Dans ce script, vous devez générer le balisage hypermédia (par exemple, le balisage enrichi contenant l’affordance hypermédia), de sorte que le client sache interagir avec l’élément généré. Cela doit suivre le style de codage côté serveur de l’IU Granite.
+   Dans ce script, générez le balisage hypermédia (c’est-à-dire enrichi, contenant l’abordage hypermédia) afin que le client sache interagir avec l’élément généré. Cela doit respecter le style de codage côté serveur de l’IU Granite.
 
    Lors de la personnalisation, vous *devez* avoir lu la valeur du formulaire (initialisée dans `init.jsp`) à partir de la requête à l’aide de :
 
@@ -89,15 +85,15 @@ Le champ personnalisé doit remplacer uniquement le script `render.jsp`, où vou
    vm.get("value, String.class");
    ```
 
-   Pour plus d’informations, consultez la mise en œuvre des champs prêts à l’emploi de l’IU Granite, par exemple, `/libs/granite/ui/components/foundation/form/textfield`.
+   Pour plus d’informations, reportez-vous à la mise en oeuvre des champs d’interface utilisateur Granite prêts à l’emploi ; par exemple, `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
-   >Pour le moment, JSP est la méthode de script préférée, car il n’est pas aisé de transmettre des informations d’un composant à l’autre (ce qui est assez fréquent dans le cadre du formulaire/des champs) en HTL.
+   >Actuellement, JSP est la méthode de script préférée, car la transmission d’informations d’un composant à un autre (fréquente dans le contexte d’un formulaire/de champs) n’est pas facile à réaliser dans HTL.
 
-## Création de la bibliothèque cliente pour le composant {#creating-the-client-library-for-the-component}
+## Création de la bibliothèque-client pour le composant {#creating-the-client-library-for-the-component}
 
-Pour ajouter un comportement côté client spécifique à votre composant :
+Pour ajouter un comportement client spécifique à votre composant :
 
 1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog`.
 1. Créez une bibliothèque cliente de la catégorie `cq.authoring.dialog` et définissez votre `CSS`/`JS` à l’intérieur de celle-ci.
@@ -106,4 +102,4 @@ Pour ajouter un comportement côté client spécifique à votre composant :
 
    >[!NOTE]
    >
-   >Actuellement, l’IU Granite ne propose aucun écouteur ou crochet de dialogue prêt à l’emploi que vous pouvez utiliser directement pour ajouter un comportement JS. Ainsi, pour ajouter un comportement JS supplémentaire à votre composant, vous devez mettre en œuvre un crochet JS sur une classe personnalisée que vous attribuez ensuite à votre composant lors de la génération du balisage.
+   >Actuellement, l’interface utilisateur Granite ne fournit aucun écouteur ou crochets prêts à l’emploi que vous pouvez utiliser directement pour ajouter un comportement JS. Ainsi, pour ajouter un comportement JS supplémentaire à votre composant, vous devez implémenter un crochet JS à une classe personnalisée que vous affectez ensuite à votre composant pendant la génération du balisage.

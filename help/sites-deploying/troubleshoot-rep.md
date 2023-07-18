@@ -1,21 +1,17 @@
 ---
 title: Résolution des problèmes liés à la réplication
-seo-title: Troubleshooting Replication
 description: Cet article fournit des informations sur la manière de résoudre les problèmes de réplication.
-seo-description: This article provides information on how to troubleshoot replication issues.
-uuid: 1662bf60-b000-4eb2-8834-c6da607128fe
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 0d055be7-7189-4587-8c7c-2ce34e22a6ad
 docset: aem65
 feature: Configuring
 exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1243'
-ht-degree: 100%
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+workflow-type: tm+mt
+source-wordcount: '1227'
+ht-degree: 22%
 
 ---
 
@@ -25,91 +21,91 @@ Cette page fournit des informations sur la manière de résoudre les problèmes 
 
 ## Problème {#problem}
 
-La réplication (réplication non inversée) échoue pour quelque raison que ce soit.
+La réplication (réplication non inverse) échoue pour une raison quelconque.
 
 ## Résolution {#resolution}
 
-Il existe diverses facteurs pouvant mener à l’échec d’une réplication. Cet article explique l’approche que l’on peut prendre en analysant de ces problèmes.
+Il existe plusieurs raisons pour lesquelles la réplication échoue. Cet article explique l’approche que vous pouvez adopter lors de l’analyse de ces problèmes.
 
-**Les réplications sont-elles déclenchées en cliquant sur le bouton d’activation ? Si la réponse est NON, procédez comme suit :**
+**Les réplications sont-elles déclenchées en cliquant sur le bouton d’activation ? Dans le cas contraire, procédez comme suit :**
 
 1. Accédez à /crx/explorer et connectez-vous en tant qu’administrateur.
-1. Ouvrez « Content Explorer » (l’explorateur de contenu).
-1. Vérifiez si un nœud /bin/replicate ou /bin/replicate.json existe. Si le noeud existe, supprimez-le puis enregistrez les modifications.
+1. Ouvrez &quot;Content Explorer&quot;.
+1. Vérifiez si un noeud /bin/replicate ou /bin/replicate.json existe. Si le noeud existe, supprimez-le et enregistrez-le.
 
-**Les réplications sont-elles alignées dans les files d’attente des agents de réplication ?**
+**Les réplications sont-elles mises en file d’attente dans les files d’attente de l’agent de réplication ?**
 
-Vérifiez si c’est le cas en vous rendant sur /etc/replication/agents.author.html, puis cliquez sur les agents de réplication pour vérifier les éléments suivants.
+Vérifiez cela en accédant à /etc/replication/agents.author.html , puis cliquez sur les agents de réplication à vérifier.
 
 **Si une ou plusieurs files d’attente sont bloquées :**
 
-1. Le statut de la file d’attente est-t-il **blocked** ? Le cas échéant, l’instance de publication n’est-elle pas en cours d’éxécution ou a-t-elle cessé totalement de répondre ? Vérifiez l’instance de publication pour détecter le problème (c’est-à-dire vérifiez les journaux pour voir s’il existe une erreur OutOfMemory ou un autre problème). S’il s’agit d’une lenteur générale, prenez des thread dumps et analysez-les.
-1. Le statut de la file d’attente est-t-il **Queue is active - # pending** ? La tâche de réplication peut être simplement bloquée dans une fiche, en attente d’une instance de publication ou du dispatcher pour répondre. Il se peut également que l’instance de publication ou le dispatcher subisse un chargement élevé ou qu’il soit coincé dans un verrouillage. Prenez les thread dumps de l’auteur et de la publication dans ce cas.
+1. Le statut de la file d’attente est-t-il **blocked** ? Si tel est le cas, l’instance de publication ne s’exécute-t-elle pas ou ne répond-elle pas ? Vérifiez l’instance de publication pour voir ce qui ne va pas avec elle. En d’autres termes, vérifiez les journaux et vérifiez s’il existe une erreur OutOfMemory ou un autre problème. Si c&#39;est juste lent, prenez les images mémoire de threads et analysez-les.
+1. Le statut de la file d’attente est-t-il **Queue is active - # pending** ? Fondamentalement, la tâche de réplication peut être bloquée dans une lecture de socket en attente de réponse de l’instance de publication ou de Dispatcher. Cela peut signifier que l’instance de publication ou Dispatcher est en charge élevée ou bloquée dans un verrou. Dans ce cas, prenez les thread dumps de l’auteur et de la publication.
 
-   * Ouvrez les thread dumps de l’auteur dans un programme d’analyse de thread dump, vérifiez s’il indique que la tâche sling eventing de l’agent de réplication est boquée dans un socketRead.
-   * Ouvrez les thread dumps de la publication dans un programme d’analyse de thread dump, analysez ce qui peut causer le manque de réaction de l’instance de publication. Vous devez voir un thread dont le nom comporte : POST /bin/receive. Il s’agit du thread recevant la réplication de l’auteur.
+   * Ouvrez les thread dumps de l’auteur dans un analyseur de thread dump , vérifiez s’il indique que la tâche sling eventing de l’agent de réplication est bloquée dans un socketRead.
+   * Ouvrez les thread dumps de la publication dans un analyseur de thread dump, analysez ce qui peut empêcher l’instance de publication de répondre. Vous devriez voir un thread avec le POST /bin/receive dans son nom qui est le thread recevant la réplication de l’auteur.
 
 **Si toutes les files d’attente de l’agent sont bloquées**
 
 1. Il est possible qu’un certain élément du contenu ne puisse pas être sérialisé sous /var/replication/data à cause de la corruption du référentiel ou d’un autre problème. Vérifiez les journaux /error.log pour détecter une erreur correspondante. Pour supprimer un élément de réplication défectueux, procédez comme suit :
 
    1. Accédez à https://&lt;hôte>:&lt;port>/crx/de et connectez-vous en tant qu’utilisateur administrateur.
-   1. Cliquez sur « Outils » dans le menu supérieur.
-   1. Cliquez sur le bouton représentant une loupe.
-   1. Sélectionnez « XPath » comme type.
+   1. Cliquez sur &quot;Outils&quot; dans le menu supérieur.
+   1. Cliquez sur le bouton de loupe.
+   1. Sélectionnez &quot;XPath&quot; comme type.
    1. Dans la boîte de dialogue « Requête », saisissez cette requête : /jcr:root/var/eventing/jobs//element(, slingevent:Job) order by @slingevent:created&#42;
-   1. Cliquez sur « Search » (Rechercher).
-   1. Les résultats affichés dans la partie supérieure de la page correspondent aux dernières tâches sling eventing. Cliquez sur chacune d’entre elles et recherchez les réplications bloquées qui correspondent aux résultats visibles dans la partie supérieure de la file d’attente.
+   1. Cliquez sur &quot;Rechercher&quot;.
+   1. Dans les résultats, les principaux éléments sont les dernières tâches Sling eventing. Cliquez sur chacune d’elles et recherchez les réplications bloquées qui correspondent à ce qui apparaît en haut de la file d’attente.
 
-1. Il peut exister un problème avec les files d’attente des tâches de structure de sling eventing. Essayez de redémarrer le lot org.apache.sling.event dans la console du système.
-1. Le traitement des tâches peut être complètement désactivé. Vous pouvez vérifier cela dans Console Felix, sur l’onglet Sling Eventing. Vérifiez si « Apache Sling Eventing (JOB PROCESSING IS DISABLED!) » s’affiche.
+1. Il se peut qu’il y ait un problème avec les files d’attente de tâche de structure sling eventing. Essayez de redémarrer le lot org.apache.sling.event dans le répertoire /system/console.
+1. Il se peut que le traitement des tâches soit désactivé. Vous pouvez vérifier cela sous la console Felix dans l’onglet Sling Eventing. Vérifiez s’il s’affiche - Événement Apache Sling (LE TRAITEMENT DES TÂCHES EST DÉSACTIVÉ).
 
-   * Si c’est le cas, vérifiez le gestionnaire Apache Sling Job Event sous l’onglet de configuration de la Console Felix. Il se peut que la case « Job processing Enabled » (Traitement des tâches activé) ne soit pas été cochée. Si la case est cochée et que le message « job processing is disabled » s’affiche toujours, vérifiez s’il y a une incrustation sous /apps/system/config qui désactive le traitement de tâche. Essayez de créer un nœud osgi:config pour jobmanager.enabled avec une valeur booléenne de true. Revérifiez ensuite si l’activation est déclenchée et s’il n’y a plus de tâches dans la file d’attente.
+   * Si oui, cochez Apache Sling Job Event Handler sous l’onglet Configuration dans la console Felix. Il se peut que la case &quot;Traitement des tâches activé&quot; ne soit pas cochée. Si cette option est cochée et qu’elle affiche toujours que &quot;le traitement des tâches est désactivé&quot;, vérifiez s’il existe un recouvrement sous /apps/system/config qui désactive le traitement des tâches. Essayez de créer un noeud osgi:config pour jobmanager.enabled avec une valeur booléenne égale à true et vérifiez à nouveau si l’activation a commencé et qu’il n’y a plus de tâches dans la file d’attente.
 
-1. Il se peut également que la configuration DefaultJobManager ait cessé de fonctionner normalement. Cela peut avoir lieu lorsqu’une personne modifie manuellement la configuration du gestionnaire Apache Sling Job Event via la console OSGi (par exemple, en désactivant et en réactivant la propriété « Job Processing Enabled », puis en enregistrant la configuration).
+1. Il se peut également que la configuration DefaultJobManager se trouve dans un état incohérent. Cela peut se produire lorsqu’une personne modifie manuellement la configuration &quot;Apache Sling Job Event Handler&quot; via la console OSGiconsole (par exemple, désactivez et réactivez la propriété &quot;Job Processing Enabled&quot; et enregistrez la configuration).
 
-   * À ce stade, la configuration de DefaultJobManager stockée sur crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config cesse de fonctionner normalement. Même si la case « Job Processing Enabled » de la propriété « Apache Sling Job Event Handler » est cochée, lorsque l’on accède à l’onglet Sling Eventing, le message suivant s’affiche : « JOB PROCESSING IS DISABLED » (Le traitement des tâches est désactivé) et la réplication ne fonctionne pas.
-   * Pour résoudre ce problème, il faut se rendre sur la page de configuration de la console OSGi et supprimer la configuration « Gestionnaire d’événements de tâche Apache Sling ». Relancez ensuite le noeud maître du cluster pour que la configuration revienne à un état stable. Cela devrait résoudre le problème et faire fonctionner de nouveau la réplication.
+   * À ce stade, la configuration DefaultJobManager stockée à l’adresse crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config se trouve dans un état incohérent. Et même si la propriété &quot;Apache Sling Job Event Handler&quot; indique que l’état &quot;Job Processing Enabled&quot; est coché, lorsque l’on accède à l’onglet Sling Eventing, le message - JOB PROCESSING IS DISABLED (TRAITEMENT DES TÂCHES EST DÉSACTIVÉ) s’affiche et la réplication ne fonctionne pas.
+   * Pour résoudre ce problème, accédez à la page Configuration de la console OSGi et supprimez la configuration &quot;Gestionnaire d’événements de tâche Apache Sling&quot;. Redémarrez ensuite le noeud de Principal de la grappe afin de rétablir la configuration dans un état cohérent. Cela devrait résoudre le problème et la réplication recommence à fonctionner.
 
-**Création de replication.log**
+**Création d’un fichier replication.log**
 
-Il est parfois très utile de programmer toute la journalisation de la réplication de sorte qu’elle soit ajouté à un fichier journal séparé au niveau de DEBUG. Pour ce faire :
+Il est parfois utile de définir toutes les journaux de réplication à ajouter dans un fichier journal distinct au niveau DEBUG. Pour ce faire :
 
 1. Accédez à https://host:port/system/console/configMgr et connectez-vous en tant qu’administrateur.
-1. Identifiez la fabrique Enregistreur de connexion Sling Apache et créez une instance en cliquant sur le bouton **+** à droite de la configuration de la fabrique. Cela entraîne la création d’un enregistreur de connexions.
-1. Définissez la configuration comme suit :
+1. Identifiez la fabrique Enregistreur de connexion Sling Apache et créez une instance en cliquant sur le bouton **+** à droite de la configuration de la fabrique. Cela crée un nouveau journal de journalisation.
+1. Définissez la configuration comme suit :
 
    * Niveau de connexion : DÉBOGUER
    * Chemin du fichier journal : logs/replication.log
    * Catégories : com.day.cq.replication
 
-1. Si vous soupçonnez que le problème est lié de quelque manière que ce soit à sling eventing/jobs, vous pouvez également ajouter ce module Java sous categories:org.apache.sling.event.
+1. Si vous pensez que le problème est lié de quelque manière que ce soit à sling eventing/jobs, vous pouvez également ajouter ce module Java™ sous categories:org.apache.sling.event.
 
-## Mise en pause de la file d’attentre des agents de réplication  {#pausing-replication-agent-queue}
+## Suspension de la file d’attente de l’agent de réplication  {#pausing-replication-agent-queue}
 
-Parfois, il vaut mieux mettre la file d’attente de réplication en pause pour réduire le chargement sur le système de création, sans le désactiver. Actuellement, cela est uniquement possible par le biais d’une configuration temporaire d’un port non valide. À partir de la version 5.4, vous pourrez voir un bouton pause dans la file d’attente des agents de réplication, mais avec certaines limites.
+Parfois, il peut être judicieux de suspendre la file d’attente de réplication afin de réduire la charge sur le système de création, sans la désactiver. Actuellement, cela n’est possible que par le piratage de la configuration temporaire d’un port non valide. À partir de la version 5.4, vous pouvez voir un bouton de pause dans la file d’attente de l’agent de réplication, qui présente certaines limites.
 
-1. L’état n’est pas stable, c’est-à-dire que si vous redémarrez un serveur si un lot est réutilisé, il repasse en mode d’exécution.
-1. La pause reste inactive durant une période plus courte (sans travail 1ִ heure après qu’aucune activité avec la réplication par d’autres threads ne soit enregistrée) et pas une minute de plus. Il existe en effet une fonction dans sling qui permet d’éviter les threads inactifs. Vérifiez si un thread de file d’attente des tâches a été inutilisé pour une période plus longue. Le cas échéant, cela déclenche les cycles de nettoyage. En raison du cycle de nettoyage, le thread est arrêté, et le paramètre mis sur pause est perdu. Étant donné que les tâches sont conservées, un nouveau thread est lancé pour traiter la file d’attente qui ne contient pas de détails sur la configuration mise en pause. En conséquence, la file d’attente passe en mode d’exécution.
+1. L’état n’est pas conservé, ce qui signifie que si vous redémarrez un serveur ou que le lot de réplication est recyclé, il revient à l’état en cours d’exécution.
+1. La pause est inactive pendant une période plus courte (OOB 1 heure après aucune activité avec réplication par d’autres threads) et non pendant une période plus longue. Parce qu’il existe une fonctionnalité dans sling qui permet d’éviter les threads inactifs. Vérifiez essentiellement si un thread de file d’attente de tâches a été inutilisé pendant une plus longue période, le cas échéant, il déclenche les cycles de nettoyage. En raison du cycle de nettoyage, le thread est arrêté et le paramètre en pause est donc perdu. Comme les tâches sont conservées, il lance un nouveau thread pour traiter la file d’attente qui ne contient pas les détails de la configuration suspendue. En raison de cette file d’attente, l’état d’exécution se transforme.
 
-## Les autorisations de page ne sont pas répliquées lors de l’activation des utilisateurs {#page-permissions-are-not-replicated-on-user-activation}
+## Les autorisations de page ne sont pas répliquées lors de l’activation de l’utilisateur {#page-permissions-are-not-replicated-on-user-activation}
 
 Les autorisations de page ne sont pas répliquées car elles sont stockées sous les nœuds auxquels l’accès est accordé, pas avec l’utilisateur.
 
-En général, des autorisations de page ne doivent pas être répliquées depuis l’instance d’auteur vers l’instance de publication, et ne sont pas définies par défaut. Cela est dû au fait que les droits d’accès doivent être différents dans ces deux environnements. Par conséquent, il est recommandé de configurer les listes de contrôle d’accès de la publication séparément de l’auteur.
+En règle générale, les autorisations de page ne doivent pas être répliquées de l’auteur vers la publication et ne le sont pas par défaut. En effet, les droits d’accès doivent être différents dans ces deux environnements. Par conséquent, Adobe vous recommande de configurer les listes de contrôle d’accès lors de la publication, indépendamment de l’auteur.
 
-## La file d’attente de réplication est bloquée lors de la réplication des informations sur les espaces de noms depuis l’auteur vers la publication. {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## File d’attente de réplication bloquée lors de la réplication des informations d’espace de noms de l’auteur à la publication {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-Dans certains cas, la file d’attente de réplication est bloquée lors de la tentative de réplication des informations sur les espaces de noms depuis l’instance d’auteur vers l’instance de publication. Ce problème se produit car l’utilisateur de la réplication ne dispose pas du privilège `jcr:namespaceManagement`. Pour éviter ce problème, vérifiez les points suivants :
+Parfois, la file d’attente de réplication est bloquée lors de la tentative de réplication des informations d’espace de noms de l’instance de création vers l’instance de publication. Ce problème se produit car l’utilisateur de la réplication ne dispose pas du privilège `jcr:namespaceManagement`. Pour éviter ce problème, vérifiez les points suivants :
 
 * L’utilisateur de la réplication (tel que configuré sous l’onglet [Transfert](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) > Utilisateur) existe également sur l’instance de publication.
 * L’utilisateur dispose des privilèges de lecture et d’écriture sur le chemin où le contenu est installé.
 * L’utilisateur possède le privilège `jcr:namespaceManagement` au niveau du référentiel. Vous pouvez accorder le privilège comme suit :
 
-1. Connectez-vous à CRX/DE (`https://localhost:4502/crx/de/index.jsp`) en tant qu’administrateur.
+1. Connectez-vous à CRX/DE ( `https://localhost:4502/crx/de/index.jsp`) en tant qu’administrateur.
 1. Cliquez sur l’onglet **Contrôle d’accès**.
-1. Sélectionnez **Référentiel**.
-1. Cliquez sur **Ajouter une entrée** (icône Plus).
-1. Entrez le nom de l’utilisateur.
+1. Sélectionner **Référentiel**.
+1. Cliquez sur **Ajouter une entrée** (icône plus).
+1. Saisissez le nom de l’utilisateur.
 1. Sélectionnez `jcr:namespaceManagement` dans la liste des privilèges.
-1. Cliquez sur OK.
+1. Cliquez sur **OK**.
