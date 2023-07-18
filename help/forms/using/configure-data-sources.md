@@ -10,14 +10,20 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 82%
+source-wordcount: '2112'
+ht-degree: 84%
 
 ---
 
 # Configuration des sources de données{#configure-data-sources}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM 6.5 | Cet article |
+
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
@@ -29,14 +35,14 @@ L’intégration de données AEM Forms permet de configurer des sources de donn
 * Services web SOAP
 * Services OData 
 
-L’intégration des données prend en charge OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), les types d’authentification de base et de clé API prêts à l’emploi et permettent de mettre en oeuvre une authentification personnalisée pour l’accès aux services web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
+L’intégration de données prend en charge l’authentification OAuth2.0, ([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), l’authentification de base ou l’authentification par clé API (prêtes à l’emploi). Elle permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Alors que les services RESTful, SOAP et OData sont configurés dans les services cloud AEM, JDBC pour les bases de données relationnelles et Connector pour le profil utilisateur AEM sont configurés dans la console Web AEM.
 
 ## Configurer la base de données relationnelle {#configure-relational-database}
 
 Vous pouvez configurer des bases de données relationnelles à l’aide de la configuration de la console Web d’AEM. Procédez comme suit :
 
 1. Accédez à la console web AEM à l’adresse `https://server:host/system/console/configMgr`.
-1. Rechercher **[!UICONTROL Source de données en pool de la connexion Apache Sling]** configuration. Appuyez pour ouvrir la configuration en mode édition.
+1. Rechercher **[!UICONTROL Source de données en pool de la connexion Apache Sling]** configuration. Appuyez pour ouvrir la configuration en mode d’édition.
 1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, tels que :
 
    * Nom de la source de données
@@ -51,7 +57,6 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    >
    > 1. Accédez à https://&#39;[server]:[port]&#39;/system/console/crypto.
    > 1. Dans le champ **[!UICONTROL Texte brut]**, indiquez le mot de passe ou toute chaîne à chiffrer et cliquez sur **[!UICONTROL Protéger]**.
-
    >
    >Le texte chiffré apparaît dans le champ Texte protégé que vous pouvez spécifier dans la configuration.
 
@@ -131,7 +136,8 @@ Procédez comme suit pour configurer les services RESTful :
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source Swagger.
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
       * Chemin d’accès de base : le préfixe d’URL de tous les chemins d’API. Ce champ est facultatif.\
-         Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
+        Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
+
    * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, clé API, authentification personnalisée ou authentification mutuelle : pour accéder au service RESTful et fournir en conséquence des détails pour l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
@@ -176,10 +182,10 @@ Les services web SOAP sont décrits à l’aide des [spécifications WSDL (Web S
    * Point d’entrée du service. Spécifiez une valeur dans ce champ pour remplacer le point d’entrée du service mentionné dans WSDL.
    * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, Authentification personnalisée, Jeton X509 ou Authentification mutuelle pour accéder au service SOAP et fournir en conséquence les détails de l’authentification.
 
-      Si vous sélectionnez **[!UICONTROL Jeton X509]** comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configurer des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     Si vous sélectionnez **[!UICONTROL Jeton X509]** comme type d’authentification, configurez le certificat X509. Pour plus d’informations, voir [Configurer des certificats](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Indiquez l’alias KeyStore du certificat X509 dans le champ **[!UICONTROL Alias Key]**. Indiquez la durée, en secondes, pendant laquelle la demande d’authentification reste valide, dans le champ **[!UICONTROL Durée de vie]**. Vous pouvez également choisir de signer le corps du message ou l’en-tête d’horodatage, voire les deux.
 
-      Si vous sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification, reportez-vous à [Authentification mutuelle basée sur des certificats pour les services Web RESTful et SOAP](#mutual-authentication).
+     Si vous sélectionnez **[!UICONTROL Authentification mutuelle]** comme type d’authentification, reportez-vous à [Authentification mutuelle basée sur des certificats pour les services Web RESTful et SOAP](#mutual-authentication).
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service web SOAP.
 

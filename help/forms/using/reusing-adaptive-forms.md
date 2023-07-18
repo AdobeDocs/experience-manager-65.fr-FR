@@ -1,7 +1,7 @@
 ---
 title: Réutiliser des formulaires adaptatifs
 seo-title: Reusing adaptive forms
-description: Vous pouvez réutiliser un formulaire adaptatif existant afin d’en créer de nouveaux.
+description: Vous pouvez réutiliser un formulaire adaptatif existant pour créer de nouveaux formulaires adaptatifs.
 seo-description: You can reuse an existing adaptive form to create new adaptive forms.
 uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,26 +9,31 @@ topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptive Forms
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '538'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 65%
 
 ---
 
 # Réutiliser des formulaires adaptatifs {#reusing-adaptive-forms}
 
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/reusing-adaptive-forms.html) |
+| AEM 6.5 | Cet article |
+
 ## Présentation {#introduction}
 
-Si vous souhaitez utiliser certaines des propriétés d’un formulaire adaptatif existant pour en générer un nouveau, il vous suffit d’utiliser la fonctionnalité de copier-coller. Vous pouvez, en outre, coller le nouveau formulaire adaptatif dans le dossier de votre choix. Toutes les propriétés de métadonnées sont répliquées ; les XFA et XSD relatifs aux formulaires adaptatifs basés sur XFA et XSD sont également copiés.
+Si vous souhaitez utiliser certaines des propriétés d’un formulaire adaptatif existant pour en générer un nouveau, vous pouvez simplement utiliser la fonctionnalité de copier-coller. En outre, vous pouvez coller le nouveau formulaire adaptatif au chemin du dossier souhaité. Toutes les propriétés de métadonnées sont répliquées ; les XFA et XSD relatifs aux formulaires adaptatifs basés sur XFA et XSD sont également copiés.
 
 >[!NOTE]
 >
->L’état et les détails de révision ne sont pas copiés. Par exemple, si votre formulaire adaptatif est copié après avoir été publié, le formulaire collé se trouve dans l’état « non publié ». De même, si un élément copié est en cours de révision, l’élément collé ne se trouve pas sous la même révision.
+>L’état et les détails de révision ne sont pas copiés. Par exemple, si votre formulaire adaptatif est publié, puis que vous le copiez, le formulaire adaptatif collé est à l’état non publié. De même, si un élément copié est en cours de révision, l’élément collé ne se trouve pas sous la même révision.
 
-### Copie d’un formulaire adaptatif {#copy-an-adaptive-form}
+### Copier un formulaire adaptatif {#copy-an-adaptive-form}
 
-Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
+Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
 1. Cliquez sur l’icône de copie ![aem6forms_copy](assets/aem6forms_copy.png) dans les actions rapides.
 
@@ -40,7 +45,7 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
    Si le mode d’affichage Vignette est activé, accédez au mode de sélection en cliquant sur l’icône de sélection ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis cliquez sur tous les formulaires adaptatifs à copier.
 
-   Si le mode Liste est actif, cochez les cases à cocher de tous les formulaires adaptatifs pour les sélectionner.
+   Si la vue Liste est active, cochez les cases à cocher de tous les formulaires adaptatifs pour les sélectionner.
 
    >[!NOTE]
    >
@@ -58,7 +63,7 @@ Cliquer sur l’icône de collage ![aem6forms_paste](assets/aem6forms_paste.png)
 
 ### Modification du contenu du nouveau formulaire adaptatif {#change-contents-of-new-adaptive-form}
 
-Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant les méthodes suivantes en vue de le rendre différent du formulaire copié :
+Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant les méthodes suivantes pour le rendre différent du formulaire copié :
 
 1. **Modification des propriétés de métadonnées :**
 
@@ -66,8 +71,8 @@ Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant l
 
 1. **Modification de XFA/XSD pour les formulaires adaptatifs basés sur XFA/XSD :**
 
-   Vous pouvez modifier le XFA/XSD utilisé dans les formulaires adaptatifs. Pour savoir comment ces formulaires adaptatifs peuvent être modifiés, reportez-vous à la section [Gestion des métadonnées de formulaire](/help/forms/using/manage-form-metadata.md) 
+   Vous pouvez modifier le XFA/XSD utilisé dans les formulaires adaptatifs. Pour savoir comment ces formulaires adaptatifs peuvent être modifiés, voir [Gestion des métadonnées de formulaire](/help/forms/using/manage-form-metadata.md)
 
 1. **Republication :**
 
-   L’élément collé est différent de celui qui a été copié. Vous pouvez le publier en tant que nouvel élément afin de le mettre à la disposition des utilisateurs finaux. Pour savoir comment publier un élément, reportez-vous à la section [Publication et annulation de publication de formulaires](/help/forms/using/publishing-unpublishing-forms.md).
+   La ressource collée est différente de la ressource copiée. Vous pouvez le publier en tant que nouvelle ressource pour le rendre disponible pour les utilisateurs finaux. Pour savoir comment publier une ressource, voir [Publication et annulation de la publication de formulaires](/help/forms/using/publishing-unpublishing-forms.md)

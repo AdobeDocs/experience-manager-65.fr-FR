@@ -11,14 +11,20 @@ content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '292'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 89%
 
 ---
 
 # Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html) |
+| AEM 6.5 | Cet article |
+
 
 L’intégration d’Adobe Analytics et d’AEM vous permet de suivre votre activité de pages Web :
 
@@ -44,7 +50,7 @@ Vous pouvez également utiliser l’[assistant de souscription](/help/sites-admi
 
 >[!NOTE]
 >
->Voir également l’article de procédures : [Intégration d’AEM avec Adobe Target et Analytics à l’aide de la gestion dynamique des balises](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Voir aussi l’article pratique : [Intégration d’AEM à Adobe Target et Adobe Analytics à l’aide de DTM](https://helpx.adobe.com/fr/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Informations supplémentaires {#further-information}
 
@@ -63,4 +69,3 @@ Voir :
 >* **Apache HTTP Components Proxy Configuration** pour configurer l’API 4.x ;
 >  par exemple, [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-

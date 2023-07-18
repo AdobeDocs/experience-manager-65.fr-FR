@@ -3,15 +3,21 @@ title: Intégration de Salesforce avec AEM Forms à l’aide du flux d’informa
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Procédure d’intégration de Salesforce à AEM Forms à l’aide du flux d’informations d’identification du client OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
+exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: '524'
+ht-degree: 3%
 
 ---
 
-
 # Intégration de Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0  {#configure-salesforce-with-ouath-2.0-client-credential}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM 6.5 | Cet article |
+
 
 Pour intégrer AEM Forms à l’application Salesforce, le flux d’informations d’identification du client OAuth 2.0 est utilisé. Il s’agit d’une méthode de communication directe normalisée et sécurisée sans intervention de l’utilisateur. Dans ce flux, l’application cliente (AEM formulaire) échange les informations d’identification du client, définies dans l’application connectée Salesforce, pour obtenir un jeton d’accès. Les informations d’identification client requises incluent la clé client et le secret client.
 
@@ -22,7 +28,7 @@ AEM Forms prend en charge l’intégration de Salesforce avec le flux de code d�
 * Un maximum de cinq connexions par utilisateur est autorisé. D’autres connexions révoquent automatiquement les anciennes connexions.
 * Si un utilisateur est désactivé, perd l’accès ou met à jour un mot de passe, la configuration AEM source de données cesse de fonctionner.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour récupérer et récupérer des données entre les environnements Salesforce et AEM, certaines conditions préalables doivent être remplies avant de poursuivre :
 
@@ -74,5 +80,3 @@ Swagger est un ensemble open source de règles, de spécifications et d’outils
 1. Si la connexion réussit, cliquez sur le bouton **[!UICONTROL Créer]** bouton .
 
 Maintenant, vous pouvez [création du modèle de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) pour intégrer la source de données configurée à votre formulaire adaptatif.
-
-

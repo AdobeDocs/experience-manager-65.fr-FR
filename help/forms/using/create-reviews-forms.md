@@ -8,14 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
-source-git-commit: 0ca7d76d0f5a3e440e5df9c986e3bb0efec368c1
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 30%
+source-wordcount: '673'
+ht-degree: 55%
 
 ---
 
 # Création et gestion de révisions des formulaires{#creating-and-managing-reviews-to-forms}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html) |
+| AEM 6.5 | Cet article |
 
 ## Révision {#review}
 
@@ -39,13 +45,12 @@ Une révision est un mécanisme qui permet à un ou plusieurs réviseurs de comm
    >* L’administrateur peut accéder à tous les groupes associés aux utilisateurs du formulaire.
    >* Le groupe Utilisateurs et utilisatrices de service ne peut pas être sélectionné pour la révision.
 
-
 ### Actions survenant lorsqu’une révision est configurée {#actions-that-occur-when-a-review-is-set-up}
 
 Cette section décrit ce qui se produit lorsqu’une révision est créée ou configurée.
 
 1. Une tâche de révision est créée et affectée à la personne qui vient d’être ajoutée.
-1. Une tâche de révision est affectée à tous les réviseurs. La tâche apparaît dans la section Notifications. Un réviseur peut cliquer sur une notification ou accéder à la boîte de réception pour afficher la tâche. Le réviseur peut cliquer pour ouvrir la tâche de révision, afficher le formulaire et commencer à ajouter des commentaires.
+1. Une tâche de révision est affectée à toute l’équipe de révision. La tâche apparaît dans sa section Notifications. Un réviseur ou une réviseuse peut soit cliquer sur une notification soit accéder à sa boîte de réception pour afficher la tâche. Le réviseur peut cliquer pour ouvrir la tâche de révision, afficher le formulaire et commencer à ajouter des commentaires.
 
    ![Alerte de notification du réviseur](assets/review-notification-img.png)
 
@@ -59,7 +64,6 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 >
 >* Seules les révisions en cours peuvent être modifiées.
 >* Les révisions terminées ne peuvent pas être modifiées.
-
 
 1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
 
@@ -77,7 +81,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
    * **Échéance** : ce champ peut être modifié. Vous pouvez modifier l’échéance selon n’importe quelle date et heure au-delà de la date et de l’heure actuelles.
 
-   * **Réviseurs**: Disponible pour modification. Vous pouvez ajouter ou supprimer des réviseurs. Si une tâche est en retard, vous ne pouvez ajouter des réviseurs qu&#39;après avoir prolongé l&#39;échéance au-delà de la date actuelle.
+   * **Réviseurs**: Disponible pour modification. Vous pouvez ajouter ou supprimer des réviseurs et réviseuses. Si une tâche est échue, vous ne pourrez ajouter des réviseurs et des réviseuses qu’après avoir étendu l’échéance au-delà de la date actuelle.
 
 1. Pour mettre fin à la révision, cliquez sur **Fin**.
 
@@ -94,7 +98,7 @@ Cette section décrit ce qui se passe dans **Mise à jour/fin de révision**:
 
    Suppression d’un réviseur
 
-   1. Si elle est incomplète, la tâche affectée est arrêtée.
+   1. Si la tâche affectée est incomplète, elle est terminée.
    1. Le réviseur ou la réviseuse ne peut plus ajouter de commentaires dans le formulaire.
 
 1. Si un réviseur est ajouté :
@@ -103,12 +107,13 @@ Cette section décrit ce qui se passe dans **Mise à jour/fin de révision**:
 
    Ajout d’un réviseur
 
-   1. Une tâche de révision est créée et affectée au réviseur qui vient d’être ajouté.
+   1. Une tâche de révision est créée et affectée à la personne qui vient d’être ajoutée.
    1. Le nouveau réviseur ou la nouvelle réviseuse peut ajouter des commentaires à propos du formulaire.
 
 1. Lorsqu’une révision est terminée :
 
-   1. **Réviseurs**: Pour chaque validant, la tâche incomplète associée à la révision est terminée. La tâche n’apparaît plus comme &quot;En attente&quot; dans la section Notifications du réviseur.
-   1. **Initiateur**: La tâche affectée à l’initiateur de la révision est marquée comme étant terminée. La tâche est supprimée de la section Notification de l’initiateur de la révision.
-   1. **Tous**: La révision s’affiche dans la section Révisions précédentes . Aucun autre commentaire ne peut être ajouté.
+   1. **Réviseurs et réviseuses** : pour chaque réviseur et réviseuse, il est mis fin à la tâche incomplète associée à la révision. La tâche n’apparaît plus avec l’état « en attente » dans la section Notifications du réviseur ou de la réviseuse.
+   1. **Initiateur ou initiatrice** : la tâche affectée à l’initiateur ou l’initiatrice de la révision est marquée comme étant terminée. La tâche est supprimée de la section Notification de l’initiateur ou l’initiatrice de la révision.
+   1. **Toutes** : la révision s’affiche dans la section des révisions précédentes. Plus aucun commentaire ne peut être ajouté.
+
    ![Révision terminée](assets/review-complete-imgg.png).

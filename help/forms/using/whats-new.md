@@ -9,16 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1224'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 99%
 
 ---
 
 # Résumé des nouvelles fonctionnalités | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 ## Rapports de transaction {#transaction-reports}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
+| AEM 6.5 | Cet article |
+
 
 Les rapports de transaction vous permettent de capturer et de suivre le nombre de formulaires envoyés, de documents traités et de documents rendus. L’objectif derrière le suivi de ces transactions est de prendre une décision éclairée concernant l’utilisation du produit et de réévaluer les investissements en matériel et en logiciels. Voici quelques exemples de transactions :
 
@@ -121,7 +127,7 @@ Les fonctionnalités de journalisation des étapes de workflows basés sur l’u
 Vous pouvez maintenant effectuer les tâches suivantes :
 
 * [Valider les données d’entrée](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) en fonction dʼune liste de contraintes. Cela permet de s’assurer que seules des données valides sont envoyées à la source de données.
-* [Remplacer le point de terminaison par défaut](../../forms/using/configure-data-sources.md#configure-soap-web-services) défini dans un fichier WSDL (Web Services Description Language).
+* [Remplacer le point d’entrée par défaut](../../forms/using/configure-data-sources.md#configure-soap-web-services) défini dans un fichier WSDL (Web Services Description Language).
 
 * [Remplacer le [schéma, lʼhôte et le chemin dʼaccès de base](../../forms/using/configure-data-sources.md#configure-restful-web-services) par défaut](../../forms/using/configure-data-sources.md#configure-restful-web-services) définis dans le fichier de définition Swagger.
 

@@ -3,14 +3,20 @@ title: Utilisation du mode Disposition pour redimensionner les composants des fo
 description: Définissez la position des composants à l’aide de la grille réactive disponible en mode Mise en page
 feature: Adaptive Forms
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '1068'
+ht-degree: 99%
 
 ---
 
 # Utilisation du mode Mise en page pour redimensionner les composants {#use-layout-mode-to-resize-components}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/resize-using-layout-mode.html?) |
+| AEM 6.5 | Cet article |
+
 
 L’interface de création de formulaires adaptatifs vous permet de redimensionner des composants en utilisant le mode Disposition. Faites glisser et déposez des points bleus dans les colonnes pour définir les points de départ et d’arrivée afin de positionner les composants. Les points bleus s’affichent après avoir appuyé sur le composant dans la grille réactive. La grille réactive est composée de 12 colonnes égales. L’ombrage blanc et bleu différencie une colonne d’une l’autre.
 
@@ -116,7 +122,7 @@ Vous pouvez désactiver le mode Mise en page pour les formulaires avec une ancie
 Pour désactiver le mode Mise en page, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Édition]**.
-1. Sélectionnez le conteneur de document dans le volet de gauche et appuyez sur **[!UICONTROL Stratégie.]**
+1. Sélectionnez le conteneur de document dans le volet de gauche et appuyez sur **[!UICONTROL Politique.]**
 
    ![Désactivation du mode Mise en page](assets/policy_disable_layout_mode.png)
 

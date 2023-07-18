@@ -1,7 +1,7 @@
 ---
-title: Activation des composants de Forms Portal
+title: Activation des composants du portail Formulaires
 seo-title: Enabling forms portal components
-description: Les composants du portail de formulaires prêts à l’emploi sont désactivés par défaut. Activez les groupes Services de document et Prédicats de services de document pour activer les composants du portail de formulaires.
+description: Les composants Forms Portal prêts à l’emploi sont désactivés. Activez les groupes Services de document et Prédicats de services de document pour activer les composants du portail Forms.
 seo-description: Out of the box, Forms Portal components are disabled. Enable Document Services and Document Services Predicates groups to enable Forms Portal components.
 uuid: 92d25da6-f1df-4ac0-bf84-2edf9e2722b3
 content-type: reference
@@ -10,16 +10,21 @@ topic-tags: publish
 discoiquuid: 4d318908-c724-4582-a82b-6e9b1c55705b
 feature: Forms Portal
 exl-id: 572194b7-063b-4c38-af43-aba78e9c51c6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 77%
 
 ---
 
-# Activation des composants de Forms Portal {#enabling-forms-portal-components}
+# Activation des composants du portail Formulaires {#enabling-forms-portal-components}
 
-Les composants Forms Portal ne sont pas disponibles pour une utilisation immédiate. Pour que les composants apparaissent dans la liste des composants disponibles dans AEM sidekick, procédez comme suit :
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html) |
+| AEM 6.5 | Cet article |
+
+Les composants Forms Portal prêts à l’emploi ne sont pas disponibles. Pour que les composants apparaissent dans la liste des composants disponibles dans AEM sidekick, procédez comme suit :
 
 1. Connectez-vous à l’instance d’auteur de votre site web et ouvrez une page AEM Sites.
 
@@ -37,7 +42,7 @@ Les composants Forms Portal ne sont pas disponibles pour une utilisation immédi
 
 >[!NOTE]
 >
->Vous pouvez également activer des éléments spécifiques de ces catégories en sélectionnant les composants individuellement. Pour plus d’informations sur les composants et leur utilisation, voir [Création d’une page de portail de formulaires](/help/forms/using/creating-form-portal-page.md) et [Intégration du composant Link dans une page](/help/forms/using/embedding-link-component-page.md).
+>Vous pouvez également activer des composants spécifiques de ces catégories en les sélectionnant. Pour plus d’informations sur les composants et leur utilisation, voir [Création d’une page de portail de formulaires](/help/forms/using/creating-form-portal-page.md) et [Incorporation du composant Link dans une page](/help/forms/using/embedding-link-component-page.md).
 
 Désormais, les catégories de composant Services de document et Prédicats de services de document sont disponibles dans l’explorateur de composants. Les composants sont activés pour toutes les pages qui utilisent le même modèle.
 

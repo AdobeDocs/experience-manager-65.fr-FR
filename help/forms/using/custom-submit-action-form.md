@@ -10,14 +10,19 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '1616'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 99%
 
 ---
 
 # Créer une action Envoyer personnalisée pour les formulaires adaptatifs{#writing-custom-submit-action-for-adaptive-forms}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
+| AEM 6.5 | Cet article |
 
 Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les données spécifiées par lʼutilisateur. Une action Envoyer détermine la tâche effectuée sur les données envoyées à lʼaide dʼun formulaire adaptatif. Adobe Experience Manager (AEM) contient des [actions Envoyer prêtes à l’emploi](../../forms/using/configuring-submit-actions.md) qui montrent les tâches personnalisées que vous pouvez effectuer à l’aide des données envoyées par l’utilisateur. Vous pouvez par exemple effectuer des tâches comme envoyer un courrier électronique ou stocker les données.
 
@@ -25,7 +30,7 @@ Les formulaires adaptatifs requièrent des actions Envoyer pour traiter les donn
 
 Le diagramme de flux présente le workflow d’une action Envoyer qui est déclenchée lorsque vous cliquez sur le bouton **[!UICONTROL Envoyer]** d’un formulaire adaptatif. Les fichiers du composant Pièce jointe sont chargés sur le serveur et les données de formulaire sont mises à jour avec les URL des fichiers chargés. Chez le client ou la cliente, les données sont stockées au format JSON. Le client ou la cliente envoie une requête Ajax à une servlet interne qui transforme les données spécifiées et les renvoie au format XML. Le client assemble ces données avec des champs d’action. Il envoie les données à la servlet finale (servlet Guide Submit) par lʼintermédiaire dʼune action Envoyer le formulaire. La servlet transfère ensuite le contrôle à l’action Envoyer. L’action Envoyer peut transférer la requête vers une ressource sling différente ou rediriger le navigateur vers une autre URL.
 
-![Organigramme décrivant le flux de l’action Envoyer](assets/diagram1.png)
+![Organigramme décrivant le workflow de l’action Envoyer](assets/diagram1.png)
 
 ### Format des données XML {#xml-data-format}
 
@@ -61,7 +66,7 @@ Un script peut fournir les valeurs des champs `startTime` et `endTime` lors du r
 
 ### Pièces jointes {#file-attachments}
 
-Les actions Envoyer peuvent également utiliser les pièces jointes que vous joignez à l’aide du composant Pièce jointe. Les scripts des actions Envoyer peuvent accéder à ces fichiers à l’aide de la chaîne [RequestParameter](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). La méthode [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) de l’API permet de déterminer si le paramètre de requête correspond à un fichier ou à un champ de formulaire. Vous pouvez effectuer une itération sur les paramètres de requête dans une action Envoyer pour identifier les paramètres de pièce jointe.
+Les actions Envoyer peuvent également utiliser les pièces jointes que vous chargez à l’aide du composant Pièce jointe. Les scripts des actions Envoyer peuvent accéder à ces fichiers à l’aide de la chaîne [RequestParameter](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html). La méthode [isFormField](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#isFormField()) de l’API permet de déterminer si le paramètre de requête correspond à un fichier ou à un champ de formulaire. Vous pouvez effectuer une itération sur les paramètres de requête dans une action Envoyer pour identifier les paramètres de pièce jointe.
 
 L’exemple de code ci-après identifie les pièces jointes de la requête. Il lit ensuite les données du fichier à l’aide de [Get API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/request/RequestParameter.html#get()). Il crée enfin un objet Document à l’aide des données et l’ajoute à la liste.
 

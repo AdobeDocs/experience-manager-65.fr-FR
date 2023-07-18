@@ -4,14 +4,20 @@ seo-title: AEM 6.5 Forms Guide
 description: Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettre à jour des formulaires numériques. Trouvez de l’aide sur l’installation, la mise à niveau et la configuration, et découvrez comment créer des formulaires adaptatifs.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '348'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 97%
 
 ---
 
 # Guide d’Adobe Experience Manager Forms 6.5
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html) |
+| AEM 6.5 | Cet article |
+
 
 Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettre à jour des formulaires numériques. Trouvez de l’aide sur l’installation, la mise à niveau et la configuration, et découvrez comment créer des formulaires adaptatifs.
 
@@ -33,7 +39,7 @@ Utilisez ce guide d’AEM 6.5 pour créer, gérer, publier et mettre à jour des
 | [Guide d’administration](/help/sites-administering/home.md) | Problèmes courants et solutions liés à l’installation |
 | [Guide de création](/help/sites-authoring/home.md) | Ce guide explique les concepts de création dans AEM. |
 | [Guide de création dans l’interface utilisateur classique](/help/sites-classic-ui-authoring/home.md) | Ce guide explique les concepts de création dans AEM dans l’interface utilisateur classique. |
-| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour publier des expériences numériques dynamiques et interactives. |
+| [Guide de l’utilisateur de Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr) | Découvrez la solution de signalétique numérique pour publier des expériences digitales dynamiques et interactives. |
 | [Guide de l’utilisateur du déploiement](/help/sites-deploying/home.md) | Ce guide vous présente les principes de base d’AEM. |
 | [Guide de l’utilisateur pour le développement](/help/sites-developing/home.md) | Découvrez comment créer l’instance AEM. |
 | [Guide de l’utilisateur pour la gestion](/help/managing/home.md) | Ce guide décrit comment gérer un projet AEM avec succès. |

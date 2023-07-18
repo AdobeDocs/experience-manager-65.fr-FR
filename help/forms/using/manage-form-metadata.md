@@ -11,34 +11,39 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '1972'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '1995'
+ht-degree: 61%
 
 ---
 
 # Gérer les métadonnées de formulaire{#manage-form-metadata}
 
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
+| AEM 6.5 | Cet article |
+
 ## Présentation  {#overview-nbsp}
 
 Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
 
-Par défaut, AEM Forms fournit un ensemble défini de métadonnées pour chaque type de ressource. En plus des métadonnées par défaut, vous pouvez ajouter des métadonnées personnalisées à chaque type de ressources. AEM Forms permet également de créer, gérer et échanger efficacement toutes ces métadonnées pour vos formulaires.
+AEM Forms fournit par défaut un ensemble défini de métadonnées pour chaque type de ressource. En plus des métadonnées par défaut, vous pouvez ajouter des métadonnées personnalisées à chaque type de ressources. AEM Forms vous fournit également les moyens adéquats pour créer, gérer et échanger efficacement toutes ces métadonnées pour vos formulaires.
 
-Si vous êtes développeur ou propriétaire d’un site, vous pouvez personnaliser Forms Portal, l’interface utilisateur pour AEM Forms, afin qu’il reflète les métadonnées utilisées dans votre entreprise. Pour plus d’informations sur Forms Portal, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
+Si vous êtes développeur ou propriétaire d’un site, vous pouvez personnaliser Forms Portal, l’interface utilisateur d’AEM Forms pour refléter les métadonnées que vous utilisez dans votre entreprise. Pour plus d’informations sur Forms Portal, reportez-vous à la section [Présentation de la publication de formulaires sur un portail](../../forms/using/introduction-publishing-forms.md).
 
 ## Métadonnées dans AEM Forms {#metadata-in-aem-forms}
 
-Dans AEM Forms, la liste des propriétés de métadonnées associées à une ressource dépend du type de cette dernière. En outre, si vous ajoutez une propriété de métadonnées personnalisée, celle-ci est ajoutée pour toutes les ressources du même type.
+Dans AEM Forms, la liste des propriétés de métadonnées associées à une ressource dépend de son type. En outre, si vous ajoutez une propriété de métadonnées personnalisée, celle-ci est ajoutée pour toutes les ressources du même type.
 
 ### Types de ressources {#asset-types}
 
 Les types de ressources suivants sont pris en charge dans les AEM Forms :
 
 * Modèles de formulaire (formulaires XFA)
-* Formulaires PDF
-* Document (fichiers PDF aplatis)
+* PDF forms
+* Document (PDF plats)
 * Formulaires adaptatifs
 * Ressources
 * XFS
@@ -56,21 +61,21 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   </tr> 
   <tr> 
    <td>Titre</td> 
-   <td>Tout type, à l’exception du type ressource</td> 
+   <td>Tous sauf ressource</td> 
    <td>Nom d’affichage du formulaire.<br /> </td> 
   </tr> 
   <tr> 
    <td>Description</td> 
-   <td>Tout type, à l’exception du type ressource</td> 
+   <td>Tous sauf ressource</td> 
    <td>Description du formulaire. L’utilisateur peut spécifier cette valeur.<br /> </td> 
   </tr> 
   <tr> 
    <td>Type</td> 
    <td>Tous</td> 
-   <td><p>Valeur en lecture seule indiquant le type de ressource. Il peut avoir l’une des valeurs suivantes :</p> 
+   <td><p>Valeur en lecture seule spécifiant le type de ressource. Il peut avoir l’une des valeurs suivantes :</p> 
     <ul> 
      <li>Modèle de formulaire</li> 
-     <li>Formulaire PDF, formulaire PDF (AcroForm) ou formulaire PDF (signé)</li> 
+     <li>Formulaire de PDF, formulaire de PDF (Acroform) ou formulaire de PDF (signé)</li> 
      <li>Document, document (signé)</li> 
      <li>Formulaire adaptatif</li> 
      <li>Ressource</li> 
@@ -84,12 +89,12 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   <tr> 
    <td>Date de la dernière modification</td> 
    <td>Tous</td> 
-   <td>Valeur en lecture seule indiquant la date de dernière modification de la ressource.</td> 
+   <td>Valeur en lecture seule indiquant l’heure de la dernière modification de la ressource.</td> 
   </tr> 
   <tr> 
    <td>Création</td> 
-   <td>Tout type, à l’exception du type ressource</td> 
-   <td><p>Valeur en lecture seule qui est automatiquement calculée selon le type de formulaire.</p> 
+   <td>Tous sauf ressource</td> 
+   <td><p>Valeur en lecture seule qui est automatiquement calculée en fonction du type de formulaire.</p> 
     <ul> 
      <li>PDF/Modèle de formulaire/Document – extrait du fichier binaire téléchargé.</li> 
      <li>Formulaire adaptatif : utilisateur connecté au moment de la création du formulaire.</li> 
@@ -97,47 +102,47 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   </tr> 
   <tr> 
    <td>État</td> 
-   <td>Tout type, à l’exception du type ressource</td> 
+   <td>Tous sauf ressource</td> 
    <td><p> Valeur en lecture seule qui définit l’un des états suivants d’un formulaire :</p> 
     <ul> 
-     <li>Aucune valeur : si un formulaire n’a jamais été publié.</li> 
-     <li>Publié : lorsqu’un formulaire est publié.</li> 
-     <li>Modifié : lorsqu’un formulaire est modifié après avoir été publié une fois.</li> 
+     <li>Aucune valeur : Si un formulaire n’a jamais été publié.</li> 
+     <li>Publié : Lorsqu’un formulaire est publié.</li> 
+     <li>Modifié : Lorsqu’un formulaire a été modifié après avoir été publié une fois.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>Date de dernière publication</td> 
-   <td>Tout type, à l’exception du type ressource</td> 
+   <td>Tous sauf ressource</td> 
    <td>Valeur en lecture seule indiquant la date de dernière publication du formulaire.</td> 
   </tr> 
   <tr> 
-   <td>Date de publication/d’annulation de la publication</td> 
-   <td>Tout type, à l’exception du type ressource</td> 
-   <td><p>Date à laquelle la publication/l’annulation de la publication automatique est planifiée pour le formulaire. L’utilisateur définit cette valeur lors de la modification des métadonnées.</p> 
+   <td>Heure d’activation/de désactivation de la publication</td> 
+   <td>Tous sauf ressource</td> 
+   <td><p>Heure à laquelle la publication/l’annulation de publication automatique du formulaire est planifiée. L’utilisateur définit cette valeur lors de la modification des métadonnées.</p> 
     <ul> 
-     <li>La date de publication et d’annulation de la publication doit être antérieure à la date actuelle. </li> 
+     <li>L’heure d’activation et de désactivation de la publication doit être au-delà de la date actuelle. </li> 
      <li>La date d’annulation de la publication doit être antérieure à celle de la publication. </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>URL d’envoi</td> 
-   <td><p>Modèle de formulaire</p> <p>Formulaire PDF</p> </td> 
-   <td><p>Pour configurer une URL d’envoi spécifiée par l’utilisateur afin d’envoyer les données d’un formulaire vers une servlet.</p> <p>L’URL d’envoi peut être configurée selon l’une des méthodes suivantes, classées par ordre de priorité :</p> 
+   <td>Submit URL</td> 
+   <td><p>Modèle de formulaire</p> <p>PDF form</p> </td> 
+   <td><p>Pour configurer une URL spécifiée par l’utilisateur afin d’envoyer des données de formulaire à un servlet.</p> <p>L’URL d’envoi peut être configurée à l’aide de l’une des méthodes suivantes, répertoriées par ordre de priorité :</p> 
     <ul> 
-     <li>Spécifiez une URL d’envoi directement dans un modèle de formulaire à l’aide du bouton d’envoi via HTTP lorsque vous créez un formulaire XFA dans AEM Forms Designer.</li> 
+     <li>Spécifiez une URL d’envoi directement dans un modèle de formulaire à l’aide du bouton Envoyer via HTTP lors de la création d’un formulaire XFA dans AEM Forms Designer.</li> 
      <li>Dans l’interface utilisateur AEM Forms, sélectionnez un formulaire et spécifiez une URL d’envoi lors de la modification des propriétés de métadonnées.</li> 
-     <li>Dans le portail de formulaires, modifiez le composant Recherche et énumérateur et spécifiez une URL d’envoi dans l’onglet Lien de formulaire.</li> 
+     <li>Dans Forms Portal, modifiez le composant Search &amp; Lister et spécifiez une URL d’envoi sous l’onglet Lien de formulaire .</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Profil de rendu HTML</td> 
+   <td>Profil de rendu de HTML</td> 
    <td>Modèle de formulaire</td> 
-   <td>Profil de rendu HTML utilisé lors du rendu d’un modèle de formulaire au format HTML.</td> 
+   <td>Profil de rendu de HTML utilisé lors du rendu d’un modèle de formulaire au format HTML.</td> 
   </tr> 
   <tr> 
-   <td>Format du rendu</td> 
+   <td>Format de rendu</td> 
    <td><p>Modèle de formulaire</p> <p>Formulaire adaptatif</p> </td> 
-   <td><p>Cette option permet à l’utilisateur de spécifier le format de rendu du formulaire lorsque celui-ci est publié :</p> 
+   <td><p>Cette option permet à l’utilisateur de spécifier le format de rendu du formulaire lors de la publication des formulaires :</p> 
     <ul> 
      <li>HTML</li> 
      <li>PDF</li> 
@@ -146,29 +151,29 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
   </tr> 
   <tr> 
    <td>Balises</td> 
-   <td>Tout type, à l’exception du type ressource</td> 
+   <td>Tous sauf ressource</td> 
    <td>Étiquettes associées au formulaire pour faciliter la recherche.</td> 
   </tr> 
   <tr> 
    <td>Références</td> 
    <td><p>Formulaire adaptatif</p> <p>Modèle de formulaire</p> <p>Ressource</p> </td> 
-   <td><p>Liste des ressources (formulaires ou ressources) auxquelles ce formulaire est associé. Ces ressources peuvent appartenir à deux catégories :</p> 
+   <td><p>Liste des actifs (autres formulaires ou ressources) auxquels ce formulaire est associé. Ces ressources peuvent appartenir à deux catégories :</p> 
     <ul> 
-     <li>Fait référence : ressources auxquelles le formulaire actuel fait référence.</li> 
-     <li>Référencé par : ressources faisant référence à la ressource actuelle.</li> 
-    </ul> <p>Ces ressources sont affichées sous forme de liens, et leurs métadonnées sont accessibles en cliquant dessus.<br /> </p> </td> 
+     <li>Fait référence : Ressources auxquelles le formulaire actuel fait référence.</li> 
+     <li>Référencé par : Ressources qui font référence à la ressource actuelle.</li> 
+    </ul> <p>Ces ressources sont affichées sous forme de liens et leurs métadonnées sont accessibles en cliquant dessus.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>Sélection du modèle de formulaire (XDP/XSD)</td> 
    <td>Formulaire adaptatif</td> 
-   <td><p>Indique quel modèle de formulaire est utilisé lors de la création du formulaire adaptatif. Cette propriété peut avoir les valeurs suivantes :</p> 
+   <td><p>Indique le modèle de formulaire utilisé lors de la création du formulaire adaptatif. Cette propriété peut avoir les valeurs suivantes :</p> 
     <ul> 
-     <li>Modèle de formulaire : un modèle de formulaire est sélectionné parmi ceux figurant dans le référentiel. Cette valeur peut être mise à jour.</li> 
-     <li>Schéma XML : un fichier XSD est téléchargé. Cette valeur peut être mise à jour.</li> 
+     <li>Modèle de formulaire : Un modèle de formulaire est sélectionné parmi ceux qui existent dans le référentiel. Cette valeur peut être mise à jour.</li> 
+     <li>Schéma XML : Un fichier XSD est téléchargé. Cette valeur peut être mise à jour.</li> 
      <li>Aucune</li> 
     </ul> 
     <div>
-      Un modèle de formulaire sélectionné peut être mis à jour mais pas supprimé. 
+      Un modèle de formulaire sélectionné peut être mis à jour, mais pas supprimé. 
     </div> </td> 
   </tr> 
  </tbody> 
@@ -176,7 +181,7 @@ Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées
 
 ## Affichage des métadonnées de formulaire {#view-form-metadata}
 
-Les ressources possèdent des valeurs de propriété qui peuvent être affichées en mode lecture seule. Ces métadonnées proviennent du téléchargement ou de la création d’un formulaire.
+Les ressources ont des valeurs de propriété existantes, qui peuvent être affichées en mode lecture seule. Ces métadonnées sont générées au moment du téléchargement ou de la création du formulaire.
 
 1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez afficher les métadonnées.
 
@@ -193,7 +198,7 @@ Les ressources possèdent des valeurs de propriété qui peuvent être affichée
 
 1. La page de propriétés qui s’ouvre affiche un schéma contenant uniquement les propriétés de métadonnées comportant des valeurs.
 
-   La page de propriétés comporte une barre d’outils dotée de deux icônes d’action :
+   La page Propriétés comporte une barre d’outils contenant deux icônes d’action :
 
    * Modifier : ![aem6forms_edit](assets/aem6forms_edit.png) permet de modifier des valeurs de propriété des métadonnées.
    * Afficher : ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) permet d’accéder à la page Détails du formulaire, qui ouvre le formulaire en mode Prévisualisation.
@@ -202,7 +207,6 @@ Les ressources possèdent des valeurs de propriété qui peuvent être affichée
 
    * Le panneau de gauche contient une vignette du formulaire.
    * Le panneau de droite contient les propriétés de métadonnées en mode lecture seule, réparties dans différents onglets.
-
 
 ## Ajout/mise à jour de valeurs de métadonnées de formulaire {#add-update-form-metadata-values}
 
@@ -229,18 +233,17 @@ Vous pouvez modifier les valeurs des propriétés de métadonnées existantes ou
 
 ### Mise à jour de la vignette du formulaire {#update-the-form-thumbnail}
 
-Dans la page de propriétés, le panneau de gauche affiche la vignette du formulaire. Par défaut, la miniature affichée est celle qui a été générée au moment de la création du formulaire (formulaire adaptatif) ou du téléchargement du formulaire.
+Dans la page de propriétés, le panneau de gauche affiche la vignette du formulaire. Par défaut, la miniature affichée est celle générée au moment de la création du formulaire (formulaire adaptatif) ou du téléchargement du formulaire.
 
 Pour tous les types de formulaires, vous avez la possibilité de télécharger une image en cliquant sur **[!UICONTROL Télécharger l’image]** et en accédant à un fichier image dans le répertoire local. L’image sélectionnée remplace la vignette par défaut.
 
-Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité de générer une miniature en tant qu’instantané de l’aperçu du formulaire adaptatif actuel. Comme AEM Forms prend également en charge la création de formulaires adaptatifs, l’aperçu d’un formulaire adaptatif peut être modifié chaque fois que vous changez ce dernier. Cette possibilité de générer une miniature permet d’obtenir une miniature mise à jour du formulaire adaptatif selon l’état de l’aperçu actuel. Cliquez sur **[!UICONTROL Générer l’aperçu]** pour exécuter cette action.
+Pour les formulaires adaptatifs, une fonctionnalité supplémentaire est fournie, qui permet à l’utilisateur de générer une miniature en tant qu’instantané de l’aperçu actuel du formulaire adaptatif. Comme AEM Forms prend également en charge la création de formulaires adaptatifs, l’aperçu du formulaire adaptatif peut changer chaque fois que vous le modifiez. Cette fonctionnalité de génération de miniature vous permet d’obtenir une nouvelle miniature pour le formulaire adaptatif en fonction de l’état d’aperçu actuel. Cliquez sur **[!UICONTROL Générer l’aperçu]** pour effectuer cette action.
 
 >[!NOTE]
 >
->* Utilisez une image carrée pour la vignette. Lorsque vous utilisez une image qui n’est pas carrée et affichez la vignette dans une vue de liste, la vignette apparaît tronquée.
+>* Utilisez une image carrée pour la vignette. Lorsque vous utilisez une image qui n’est pas carrée et affichez la miniature dans une vue Liste, la miniature apparaît tronquée.
 >* Une fois qu’une nouvelle image est téléchargée ou générée, la vignette est remplacée par celle-ci et l’image précédente ne peut pas être rétablie.
 >
-
 
 ## Ajout de métadonnées personnalisées {#add-custom-metadata}
 
@@ -293,16 +296,16 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
 
 1. Cliquez sur un composant que vous venez de déplacer. Dans l’onglet Paramètres qui s’affiche dans le panneau de droite, renseignez les champs suivants :
 
-   1. Fournissez un libellé de champ qui sera utilisé comme nom d’affichage au-dessus du champ placé dans le schéma (Service, par exemple).
-   1. Sous le champ Associer à la propriété, vous pouvez voir une valeur prérenseignée **’./jcr:content/metadata/default&#39;**. Remplacez « **default** » par le nom de propriété de votre choix, qui sera utilisé pour stocker la propriété dans le référentiel crx (par exemple, &#39;./jcr:content/metadata/department&#39;)
+   1. Indiquez un libellé de champ qui sera utilisé comme nom d’affichage au-dessus du champ placé dans le schéma (par exemple : Service)
+   1. Sous le champ Associer à la propriété , vous pouvez voir une valeur préremplie. **&#39;./jcr:content/metadata/default&#39;**. Remplacez « **default** » par le nom de propriété de votre choix, qui sera utilisé pour stocker la propriété dans le référentiel crx (par exemple, &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Ne modifiez pas le préfixe « ./jcr:content/metadata/ » car il définit le chemin où la propriété est stockée.
+      >Ne modifiez pas le préfixe ‘./jcr:content/metadata/&quot; car il définit le chemin d’accès où la propriété est stockée.
       >
-      >En outre, le nom de propriété doit être unique pour éviter d’écrire des valeurs pour deux propriétés ou davantage au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur « default ».
+      >En outre, le nom de la propriété doit être unique pour éviter d’écrire des valeurs pour plusieurs propriétés au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur &quot;default&quot;.
 
-   1. Remplissez les autres paramètres selon vos besoins. Sélectionnez par exemple l’option Obligatoire si vous souhaitez que le champ soit obligatoire.
+   1. Remplissez les autres paramètres en fonction des besoins. Sélectionnez par exemple l’option Obligatoire si vous souhaitez que le champ soit obligatoire.
    1. Pour supprimer un champ que vous avez ajouté, sélectionnez-le, puis cliquez sur l’icône Supprimer ![delete-1](assets/delete-1.png).
 
 1. Si nécessaire, suivez les étapes 1 à 3 pour ajouter une autre propriété.
@@ -310,4 +313,4 @@ AEM Forms exposent les schémas de métadonnées des types de formulaires pris e
 
    Vous venez d’ajouter une propriété de métadonnées personnalisée.
 
-Tous les formulaires adaptatifs d’AEM Forms contiennent maintenant cette autre propriété de métadonnées. Vous pouvez la modifier dans la page de propriétés.
+Tous les formulaires adaptatifs d’AEM Forms contiennent désormais cette propriété de métadonnées supplémentaire. Vous pouvez la modifier dans la page de propriétés.
