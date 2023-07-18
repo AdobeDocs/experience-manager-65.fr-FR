@@ -1,20 +1,16 @@
 ---
 title: Souscription à la collecte de statistiques d’utilisation agrégées
-seo-title: Opting Into Aggregated Usage Statistics Collection
 description: Découvrez comment souscrire aux statistiques d’utilisation agrégées.
-seo-description: Learn how to opt into aggregated usage statistics.
-uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 51%
 
 ---
 
@@ -22,9 +18,9 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-Vous pouvez aider à améliorer Adobe Marketing Cloud en envoyant à Adobe des statistiques concernant la façon dont vous interagissez avec AEM. Ces informations ne contiennent aucune donnée sur les visiteurs du site de votre entreprise et sont uniquement utilisées afin d’aider Adobe à créer, gérer et optimiser l’expérience utilisateur.
+Vous pouvez contribuer à améliorer Adobe Experience Cloud en envoyant des statistiques d’Adobe sur la manière dont vous interagissez avec Adobe Experience Manager (AEM). Ces informations ne contiennent aucune donnée sur les visiteurs du site de votre société et sont uniquement utilisées pour aider à fournir, prendre en charge et améliorer votre expérience utilisateur.
 
-Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide de l’IU tactile ou de la console web.
+Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide de l’interface utilisateur tactile ou de la console web.
 
 >[!NOTE]
 >
@@ -34,13 +30,13 @@ Vous pouvez souscrire à la collecte de statistiques d’utilisation à l’aide
 
 >[!NOTE]
 >
->Vous pouvez également vous exclure à tout moment à l’aide de la [Console web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) ou en ne sélectionnant pas l’option de souscription sur l’écran de souscription AEM.
+>Vous pouvez vous exclure à tout moment en utilisant la variable [Console web](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) ou en ne sélectionnant pas l’option de souscription sur l’écran de souscription d’AEM.
 
-## Souscription à l’aide de l’IU tactile {#opt-in-by-using-the-touch-ui}
+## Souscription à l’aide de l’interface utilisateur tactile {#opt-in-by-using-the-touch-ui}
 
-La première fois que vous démarrez AEM, vous pouvez souscrire à l’aide de l’IU tactile, comme suit :
+La première fois que vous AEM, vous pouvez vous inscrire à l’aide de l’interface utilisateur tactile comme suit :
 
-1. Sur l’écran de navigation AEM, cliquez sur l’icône **Boîte de réception** (en forme de cloche).
+1. Dans l’écran de navigation AEM, cliquez sur le bouton **Boîte de réception** (cloche).
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
@@ -52,11 +48,11 @@ La première fois que vous démarrez AEM, vous pouvez souscrire à l’aide de l
 
    ![usage_statisticsopt-inscreen](assets/usage_statisticsopt-inscreen.png)
 
-1. Cliquez sur **Terminé**.
+1. Cliquez sur &quot;**Terminé**&quot;.
 
-## Souscription à l’aide de la console web {#opt-in-by-using-the-web-console}
+## Opt-in à l’aide de la console web {#opt-in-by-using-the-web-console}
 
-Vous pouvez souscrire (ou vous exclure) à l’aide de la console web, comme suit :
+Vous pouvez souscrire (ou vous exclure) à l’aide de la console web comme suit :
 
 1. Sur l’écran de navigation AEM, cliquez sur **Outils**, puis sur **Opérations**.
 

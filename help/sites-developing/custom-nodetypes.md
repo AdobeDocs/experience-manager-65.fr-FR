@@ -1,30 +1,26 @@
 ---
 title: Types de nœuds personnalisés
-seo-title: Custom Node Types
-description: AEM est architecturé autour de Sling et utilise un référentiel JCR avec des types de nœuds proposés par les deux plates-formes. Cependant, AEM fournit également un éventail de types de nœuds personnalisés.
-seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
-uuid: f2022504-e433-4b42-9cc1-eef41086483a
+description: Adobe Experience Manager (AEM) est basé sur Sling et utilise un référentiel JCR avec les types de noeuds proposés par les deux, mais AEM fournit également un éventail de types de noeuds personnalisés.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: ht
-source-wordcount: '1877'
-ht-degree: 100%
+source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+workflow-type: tm+mt
+source-wordcount: '1883'
+ht-degree: 91%
 
 ---
 
 # Types de nœuds personnalisés{#custom-node-types}
 
-AEM est architecturé autour de Sling et utilise un référentiel JCR. Aussi, les types de nœuds proposés par ces deux plateformes sont-ils disponibles :
+Comme Adobe Experience Manager (AEM) est basé sur Sling et utilise un référentiel JCR, les types de noeuds proposés par ces deux solutions peuvent être utilisés :
 
 * [Types de nœuds JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
-* [Types de nœuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
+* [Types de noeuds Sling](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-De plus, AEM propose un éventail de types de nœuds personnalisés.
+En plus de ceux-ci. AEM propose un éventail de types de nœuds personnalisés.
 
 ## Audit {#audit}
 
@@ -318,7 +314,7 @@ Définit la configuration de la barre d’édition.
 
 **Description**
 
-Configure une cible de dépôt d’un composant. Le nom de ce nœud est utilisé comme ID pour l’opération de glisser-déposer.
+Configure une cible de dépôt d’un composant. Le nom de ce noeud sera utilisé comme identifiant pour le glisser-déposer.
 
 * `@prop accept` - Liste des types MIME acceptés par cette cible de dépôt ; par exemple, `["image/*"]`
 * `@prop groups` - Liste des groupes de déplacement qui acceptent une source
@@ -336,7 +332,7 @@ Configure une cible de dépôt d’un composant. Le nom de ce nœud est utilisé
 
 **Description**
 
-Définit un composant CQ virtuel. Actuellement, ces options sont uniquement utilisées pour le nouvel assistant de déplacement des composants par glisser-déposer.
+Définit un composant CQ virtuel. Ils sont actuellement utilisés uniquement pour le nouvel assistant de glisser-déposer des composants.
 
 * `@prop jcr:title` - Titre de ce composant
 * `@prop jcr:description` - Description de ce composant
@@ -365,7 +361,7 @@ Définit un composant CQ virtuel. Actuellement, ces options sont uniquement util
 
 **Description**
 
-Définit les écouteurs (côté client) à exécuter sur un événement de modification. Les valeurs doivent soit faire référence à une fonction d’écoute côté client valide, soit contenir un raccourci prédéfini :
+Définit les écouteurs (côté client) à exécuter sur un événement d’édition. Les valeurs doivent faire référence à une fonction d’écouteur côté client valide ou contenir un raccourci prédéfini :
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -429,7 +425,7 @@ Miniature représentant une ressource de gestion des ressources numériques.
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Liste des conteneurs de diffusion {#delivery-container-list}
+## Liste des conteneurs de diffusions {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
