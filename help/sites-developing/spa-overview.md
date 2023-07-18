@@ -11,22 +11,22 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
-workflow-type: ht
-source-wordcount: '1657'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1659'
+ht-degree: 87%
 
 ---
 
 # Présentation de l’éditeur de SPA{#spa-editor-overview}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de ces structures.
 
-L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cette page fournit un aperçu de la structure de la prise en charge des SPA dans AEM, du fonctionnement de l’éditeur de SPA et de la synchronisation entre la structure SPA et AEM.
+L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cette page donne une vue d’ensemble de la structure de la prise en charge SPA dans AEM, du fonctionnement de l’Éditeur d’Adobe, ainsi que de la manière dont la structure de  et l’ se synchronisent.
 
 >[!NOTE]
 >
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -34,16 +34,16 @@ Les sites créés à l’aide de frameworks SPA courantes, telles que React et A
 
 Pour activer la modification d’applications sur une seule page dans AEM, il faut qu’il y ait une correspondance entre la sortie JSON de l’application et le modèle de contenu dans le répertoire AEM afin d’enregistrer les modifications apportées au contenu.
 
-La prise en charge des applications sur une seule page dans AEM s’accompagne d’une fine couche JS qui interagit avec le code JS de l’application lorsqu’elle est chargée dans l’éditeur de pages avec lequel des événements peuvent être envoyés. L’emplacement des commandes d’édition peut être activé pour permettre une modification en contexte. Cette fonction repose sur le concept de point de terminaison de l’API Content Services, étant donné que le contenu de l’application sur une seule page doit être chargé par le biais de Content Services.
+La prise en charge des applications sur une seule page dans AEM s’accompagne d’une fine couche JS qui interagit avec le code JS de l’application lorsqu’elle est chargée dans l’éditeur de pages avec lequel des événements peuvent être envoyés. L’emplacement des commandes d’édition peut être activé pour permettre une modification en contexte. Cette fonction repose sur le concept de point d’entrée de l’API Content Services, étant donné que le contenu de l’application sur une seule page doit être chargé par le biais de Content Services.
 
-Pour de plus amples informations sur les SPA dans AEM, consultez les documents suivants :
+Pour plus d’informations sur SPA dans AEM, consultez les documents suivants :
 
 * [Plan directeur d’applications sur une seule page (SPA)](/help/sites-developing/spa-blueprint.md) pour connaître les exigences techniques d’une SPA
 * [Prise en main des SPA dans AEM](/help/sites-developing/spa-getting-started-react.md) pour une présentation rapide d’une SPA simple
 
 ## Conception {#design}
 
-Le composant de page d’une application sur une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement permet de différencier la composition initiale du corps du composant de page à partir d’équivalents non SPA.
+Le composant de page d’une application sur une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement différencie la composition initiale du corps du composant de page de ses équivalents non SPA.
 
 ### Gestion du modèle de page {#page-model-management}
 
@@ -51,7 +51,7 @@ La résolution et la gestion du modèle de page sont déléguées à une bibliot
 
 Si le composant de page SPA hérite du composant principal de la page, deux options sont possibles pour faire en sorte que la catégorie de la bibliothèque cliente `cq.authoring.pagemodel.messaging` soit disponible :
 
-* Si le modèle est modifiable, ajoutez-le à la stratégie de page.
+* Si le modèle est modifiable, ajoutez-le à la politique de page.
 * Vous pouvez également ajouter les catégories via `customfooterlibs.html`.
 
 Pour chaque ressource du modèle exporté, la SPA mappe un composant réel chargé d’effectuer le
@@ -64,7 +64,7 @@ rendu. Le modèle, représenté sous la forme JSON, est ensuite rendu à l’aid
 
 ### Type de données de communication {#communication-data-type}
 
-Lorsque la catégorie `cq.authoring.pagemodel.messaging` est ajoutée à la page, elle envoie un message à l’éditeur de page afin de créer un type de données de communication JSON. Lorsque le type de données de communication est défini sur JSON, les requêtes GET communiquent avec les points de terminaison du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite l’application sur une seule page des mises à jour.
+Lorsque la catégorie `cq.authoring.pagemodel.messaging` est ajoutée à la page, elle envoie un message à l’éditeur de page afin de créer un type de données de communication JSON. Lorsque le type de données de communication est défini sur JSON, les demandes de GET communiquent avec les points d’extrémité du modèle Sling d’un composant. À la suite d’une mise à jour dans l’éditeur de page, la représentation JSON du composant mis à jour est envoyée à la bibliothèque modèle de page. Celle-ci informe ensuite l’application sur une seule page des mises à jour.
 
 ![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
@@ -72,9 +72,9 @@ Lorsque la catégorie `cq.authoring.pagemodel.messaging` est ajoutée à la page
 
 Pour vous représenter le flux de l’interaction entre une SPA et AEM, vous pouvez considérer l’éditeur de SPA comme un intermédiaire entre les deux.
 
-* La communication s’effectue au format JSON au lieu du format HTML.
+* La communication entre l’éditeur de page et le SPA est effectuée à l’aide de JSON au lieu de HTML.
 * L’éditeur de page fournit la dernière version du modèle de page à l’application sur une seule page par le biais de l’API de messagerie et de l’iFrame.
-* Le gestionnaire de modèles de pages informe l’éditeur qu’il est prêt pour le montage et transmet le modèle de page sous la forme d’une structure JSON.
+* Le gestionnaire de modèles de page informe l’éditeur qu’il est prêt à être modifié et transmet le modèle de page sous la forme d’une structure JSON.
 * L’éditeur ne modifie pas la structure DOM de la page en cours de création ; en fait, il n’y accède même pas. Au lieu de cela, il fournit le modèle de page le plus récent.
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
@@ -103,7 +103,6 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 >* En cours de production (publication), l’éditeur de SPA n’est jamais chargé.
 >
 
-
 ### Workflow d’édition de pages client-serveur {#client-server-page-editing-workflow}
 
 Cette section donne un aperçu plus détaillé de l’interaction client-serveur lors de l’édition d’une SPA.
@@ -117,7 +116,7 @@ Cette section donne un aperçu plus détaillé de l’interaction client-serveur
 1. La SPA instancie ses composants sur la base du modèle de page.
 1. **6a** Le contenu informe l’éditeur qu’il est prêt pour la création.
 
-   **6b** L’éditeur de page demande les configurations de création du composant.
+   **6b** L’éditeur de page demande les configurations de création de composants.
 
    **6c** L’éditeur de page reçoit les configurations de composant.
 1. Lorsque l’auteur modifie un composant, l’éditeur de page envoie une demande de modification au servlet POST par défaut.
@@ -184,7 +183,7 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
 1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du contenu d’exemple Journal WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
-1. Définissez la propriété `editElementQuery` sur la configuration `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
+1. Définissez la configuration `editElementQuery` sur la `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
 Pour obtenir un exemple de la façon dont cela est fait, reportez-vous à la section [Exemple de contenu Journal WKND.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 

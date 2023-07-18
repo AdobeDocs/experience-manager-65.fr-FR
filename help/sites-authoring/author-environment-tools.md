@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2245'
 ht-degree: 99%
 
 ---
@@ -67,7 +67,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 >
 >Un appareil mobile est détecté lorsque la largeur est inférieure à 1 024 px. Cela peut également être le cas pour une petite fenêtre de bureau.
 
-* **Appareils mobiles (p. ex. iPad)**
+* **Appareil mobile (par exemple, iPad)**
 
   L’explorateur de composants couvre entièrement la page en cours de modification.
 
@@ -252,7 +252,7 @@ Par exemple, vous pouvez corriger une référence rompue dans un composant Réf�
 
 ## Événements – Chronologie {#events-timeline}
 
-Pour accéder aux ressources appropriées (par ex. des pages de la console **Sites** ou des ressources de la console **Ressources**), utilisez la [chronologie afin d’afficher l’activité récente d’un élément sélectionné](/help/sites-authoring/basic-handling.md#timeline).
+Pour les ressources appropriées (par exemple, des pages de la console **Sites** ou des ressources de la console **Ressources**), utilisez la [chronologie afin d’afficher l’activité récente d’un élément sélectionné](/help/sites-authoring/basic-handling.md#timeline).
 
 Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez la **Chronologie** à l’aide de :
 
@@ -317,7 +317,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Selon les caractéristiques de la page, certains modes peuvent ne pas être disponibles.
 >* L’accès à certains modes nécessite les autorisations/privilèges appropriés.
 >* Le mode Développeur n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
->* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
+>* Utilisez le [raccourci clavier](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour basculer entre le mode **Prévisualisation** et le mode actuellement sélectionné (par exemple, **Modifier**, **Disposition**, etc.).
 >
 
 ## Sélection du chemin d’accès {#path-selection}

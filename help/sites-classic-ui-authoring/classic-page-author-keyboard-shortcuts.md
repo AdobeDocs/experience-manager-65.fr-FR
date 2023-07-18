@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '313'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,6 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >* Windows : maintenez la touche Ctrl enfoncée tout en cliquant sur les composants requis.
 >* Mac : Cmd+clic sur les composants requis.
 >
-
 
 ## Raccourcis clavier d’édition {#editing-keyboard-shortcuts}
 
@@ -64,17 +63,17 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Copiez le(s) paragraphe(s) sélectionné(s).</td>
+   <td>Copier les paragraphes sélectionnés.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Coupez le(s) paragraphe(s) sélectionné(s). <strong><br />Remarque</strong> : le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement.</td>
+   <td>Couper les paragraphes sélectionnés. <strong><br />Remarque</strong> : le paragraphe coupé ne disparaît pas tant qu’il n’a pas été collé à un autre emplacement.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Collez un paragraphe à partir du Presse-papiers.</td>
+   <td>Collez des paragraphes à partir du Presse-papiers.</td>
   </tr>
   <tr>
    <td> </td>
@@ -84,12 +83,12 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Supprimez le(s) paragraphe(s) sélectionné(s).</td>
+   <td>Supprimer les paragraphes sélectionnés.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Supprimez le(s) paragraphe(s) sélectionné(s).</td>
+   <td>Supprimer les paragraphes sélectionnés.</td>
   </tr>
   <tr>
    <td> </td>

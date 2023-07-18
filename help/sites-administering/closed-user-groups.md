@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '6845'
 ht-degree: 59%
@@ -229,7 +229,7 @@ while (it.hasNext()) {
 }
 
 if (cugPolicy == null) {
-   log.debug("no applicable policy"); // path not supported or no applicable policy (e.g.
+   log.debug("no applicable policy"); // path not supported or no applicable policy (for example,
                                                    // the policy was set before)
    return;
 }
@@ -422,7 +422,7 @@ session.save();
 
 Il n’existe aucune API publique dédiée pour lire toutes les exigences d’authentification effectives enregistrées auprès de l’authentificateur Apache Sling. Toutefois, la liste est exposée dans la console système à l’adresse `https://<serveraddress>:<serverport>/system/console/slingauth` dans la section « **Configuration des exigences d’authentification** ».
 
-L’image suivante illustre les exigences d’authentification d’une instance de publication AEM avec du contenu de démonstration. Le chemin d’accès en surbrillance de la page de la communauté illustre la façon dont une exigence ajoutée par l’implémentation décrite dans ce document est reflétée dans l’authentificateur Apache Sling.
+L’image suivante illustre les exigences d’authentification d’une instance de publication AEM avec du contenu de démonstration. Le chemin mis en surbrillance de la page de la communauté illustre la façon dont une exigence ajoutée par l’implémentation décrite dans ce document est reflétée dans l’authentificateur Apache Sling.
 
 >[!NOTE]
 >

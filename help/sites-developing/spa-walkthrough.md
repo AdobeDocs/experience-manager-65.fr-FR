@@ -4,23 +4,23 @@ description: Cet article présente les concepts d’une SPA et décrit l’utili
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
-workflow-type: ht
-source-wordcount: '1966'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1967'
+ht-degree: 94%
 
 ---
 
 
 # Introduction et présentation des applications monopage (SPA) {#spa-introduction-and-walkthrough}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Le souhait de l’équipe de développement est de pouvoir créer des sites avec des cadres SPA. L’équipe de création, pour sa part, souhaite modifier facilement du contenu dans AEM pour un site conçu à l’aide de tels cadres.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de ces structures.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
 >[!NOTE]
 >
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -50,7 +50,7 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 
 ### Qu’est-ce qu’une SPA ?  {#what-is-a-spa}
 
-Une application sur une seule page (SPA) diffère d’une page conventionnelle en cela qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre la page à jour dynamiquement. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
+Une application d’une seule page (SPA) diffère d’une page conventionnelle en ce qu’elle est rendue côté client et qu’elle est principalement pilotée par JavaScript, en utilisant les appels Ajax pour charger les données et mettre à jour dynamiquement la page. La plupart ou la totalité du contenu est récupérée une fois au chargement d’une seule page avec des ressources supplémentaires chargées de manière asynchrone, selon les besoins, en fonction de l’interaction de l’utilisateur avec la page.
 
 Cela limite la nécessité d’actualiser la page et offre à l’utilisateur une expérience harmonieuse, rapide et rappelant davantage l’expérience d’une application native.
 
@@ -183,7 +183,7 @@ La section suivante, [Chargement d’une application SPA](#loading-an-spa-applic
 
 1. Basculez vers l’onglet **Réseau** des outils de développement et chargez à nouveau la page.
 
-   Sans tenir compte des requêtes d’image, notez que les principales ressources chargées pour la page sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances, ainsi que les données JSON de la page.
+   Ignorant les demandes d’image, notez que les Principales ressources chargées pour la page sont la page elle-même, le code CSS, le code JavaScript React, ses dépendances, ainsi que les données JSON de la page.
 
    ![Étape 5](assets/spa-walkthrough-step-1-5.png)
 

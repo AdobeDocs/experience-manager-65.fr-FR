@@ -11,8 +11,8 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: 7f1f49e6-028c-47b6-a24d-a83bed40242e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '1796'
 ht-degree: 100%
 
@@ -130,7 +130,7 @@ L’illustration suivante fournit une représentation visuelle de l’applicatio
 
 >[!NOTE]
 >
->Remarquez qu’il existe deux packs nommés um et views. Lorsque vous créez l’application client, veillez à placer les fichiers dans les packs appropriés. Veillez également à ajouter le fichier adobe-remoting-provider.swc au chemin d’accès des classes de votre projet. (Voir [Inclure le fichier de la bibliothèque AEM Forms Flex](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
+>Remarquez qu’il existe deux packages nommés um et views. Lorsque vous créez l’application client, veillez à placer les fichiers dans les packages appropriés. Veillez également à ajouter le fichier adobe-remoting-provider.swc au chemin d’accès des classes de votre projet. (Voir [Inclure le fichier de la bibliothèque AEM Forms Flex](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
 
 ### Créer le fichier SSOStandalone.mxml {#creating-the-ssostandalone-mxml-file}
 
@@ -410,7 +410,7 @@ Le code suivant représente le fichier SSOManager.as.
          /**
           * Constructs an SSOManager with the given server url.
           *
-          * @param serverUrl - The uri of the server to connect to. it must be without any context path e.g
+          * @param serverUrl - The uri of the server to connect to. it must be without any context path for example,
           * http://localhost:8080/. The SSOManager would directly append the path of UM exposed SSO url to it
           * for its operations
           */

@@ -1,7 +1,7 @@
 ---
 title: Personnalisation de mouvement
 seo-title: Gesture customization
-description: Personnaliser les mouvements sur votre application AEM Forms
+description: Personnalisation des mouvements sur votre application AEM Forms
 seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -47,29 +47,29 @@ Dans l’application AEM Forms, un glissement vers la gauche permet d’ouvrir u
 
    `"EventName Selector": "Function"`
 
-   Lorsque vous déclenchez un événement Javascript appelé `EventName` dans un élément HTML spécifié par `Selector`, la fonction `Function` est appelée.
+   Lorsque vous déclenchez un événement JavaScript nommé `EventName`sur un élément de HTML spécifié par `Selector`, la variable `Function`est appelée.
 
 1. Rechercher
 
    * &quot;tap .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .task-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
+     &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
+
    et remplacer par
 
    * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe .task-content&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
-
+     &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 1. Enregistrez et fermez le fichier `task.js`.
-1. Générez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir une tâche en faisant glisser votre doigt vers la gauche et la droite.
+1. Créez et exécutez l’application AEM Forms. Vous pouvez désormais ouvrir un à l’aide d’un glissement vers la gauche et vers la droite.
 
 De même, vous pouvez apporter des modifications dans les autres vues pour différentes combinaisons de mouvements, d’éléments HTML et de fonctions.

@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5903'
-ht-degree: 100%
+source-wordcount: '5902'
+ht-degree: 99%
 
 ---
 
@@ -182,7 +182,7 @@ Dans certains cas, l’alternance entre le modes de compression complète et par
   </tr>
   <tr>
    <td><strong>Que se passe-t-il si j’exécute accidentellement le mauvais format de référentiel ?</strong></td>
-   <td>Si vous essayez d’exécuter le module oak-segment sur un référentiel oak-segment-tar (ou inversement), le démarrage échoue avec une <em>IllegalStateException</em>, avec le message « Format de segment invalide ». Il n’y aura aucune corruption de données.</td>
+   <td>Si vous essayez d’exécuter le module oak-segment sur un référentiel oak-segment-tar (ou à l’inverse), le démarrage échoue avec une <em>IllegalStateException</em> avec le message "Format de segment non valide". Il n’y aura aucune corruption de données.</td>
    <td> </td>
   </tr>
   <tr>

@@ -2,9 +2,9 @@
 title: Créer et organiser des pages avec AEM
 description: Comment créer et organiser des pages avec AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '2525'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2526'
 ht-degree: 100%
 
 ---
@@ -37,10 +37,10 @@ La structure d’un site web peut être comparée à celle d’un arbre qui sou
 Vous trouverez ci-dessous un exemple provenant du site We.Retail, qui permet d’accéder à une page de shorts de randonnée (`desert-sky-shorts`) :
 
 * Environnement de création
-   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Environnement de publication
-   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Selon la configuration de votre instance, le segment `/content` peut être facultatif dans l’environnement de publication.
 
@@ -102,7 +102,7 @@ Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais i
 >
 >Lorsque vous définissez un nom de page, une règle de base à respecter consiste à faire en sorte que le nom de la page reste court, mais aussi significatif que possible pour faciliter la compréhension du lecteur. Consultez le [Guide de style W3C](https://www.w3.org/Provider/Style/TITLE.html) sur l’élément `title` pour obtenir des informations supplémentaires.
 >
->N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique de garder les noms de pages courts.
+>N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique à garder les noms de pages courts.
 
 Lors de la création d’une page, AEM [valide son nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
@@ -145,7 +145,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sera utilisé comme base pour toute nouvelle page créée.
 
-Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles se composent de [composants](#components).
+Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 
@@ -209,12 +209,14 @@ Avant de pouvoir commencer à créer du contenu, vous devez créer une page, à 
    * **Titre** :
 
       * Il est visible par la personne utilisatrice et est obligatoire.
+
    * **Nom** :
 
       * Il est utilisé pour générer l’URI. S’il n’est pas spécifié, le nom est dérivé du titre.
       * Si vous indiquez un **nom** de page lors de la création d’une page, AEM [valide le nom en fonction des conventions](/help/sites-developing/naming-conventions.md) imposées par AEM et JCR.
 
       * Vous **ne pouvez pas utiliser de caractères non valides** dans le champ **Nom**. Lorsqu’AEM détecte des caractères non valides, le champ est mis en surbrillance et un message d’explication s’affiche et indique les caractères à supprimer/remplacer.
+
    >[!NOTE]
    >
    >Voir [Conventions de dénomination de page](#page-naming-conventions).
@@ -341,6 +343,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
       * Sélectionnez la destination en cliquant sur sa miniature.
       * Cliquez sur **Suivant** pour continuer.
+
    * Utilisez **Précédent** pour revenir à la spécification du nom de page.
 
    >[!NOTE]
@@ -386,7 +389,7 @@ Cependant, si le nombre de pages affectées est supérieur à une limite défini
       * **Maintenant** : l’exécution de la tâche asynchrone commence immédiatement.
       * **Plus tard** : l’utilisateur peut définir le moment où la tâche asynchrone débutera.
 
-         ![Déplacement de page asynchrone](assets/asynchronous-page-move.png)
+        ![Déplacement de page asynchrone](assets/asynchronous-page-move.png)
 
 L’état des tâches asynchrones peut être vérifié dans le [**tableau de bord État des tâches asynchrones**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) en sélectionnant **Navigation globale** -> **Outils** -> **Opérations** -> **Tâches**.
 
@@ -441,7 +444,6 @@ Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 >* Les opérations standard (déplacer, copier, coller, supprimer, publier, dépublier et afficher/modifier les propriétés) peuvent être effectuées sur un dossier.
 >* Dans une Live Copy, les dossiers ne peuvent pas être sélectionnés.
 >
-
 
 1. Ouvrez la console **Sites** et accédez à l’emplacement requis.
 1. Pour ouvrir la liste des options, sélectionnez **Créer** dans la barre d’outils

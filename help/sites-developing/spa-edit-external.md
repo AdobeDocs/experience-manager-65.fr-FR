@@ -2,9 +2,9 @@
 title: Modification d’un SPA externe dans Adobe Experience Manager
 description: Ce document décrit les étapes recommandées pour télécharger un SPA autonome vers une instance Adobe Experience Manager, ajouter des sections de contenu modifiables et activer la création.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2440'
 ht-degree: 78%
 
 ---
@@ -343,7 +343,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 1. Ajoutez des assistants pour le routage de la SPA.
 
-   * La page nouvellement créée n’affichera pas encore le contenu attendu dans AEM. Cette absence est due au fait que le routeur cherche le chemin d’accès `/test` alors que le chemin d’accès principal d’AEM est `/wknd-spa-react/us/en/test`. Pour prendre en compte la partie spécifique à AEM de l’URL, nous devons ajouter des fonctions d’aide côté SPA.
+   * La page nouvellement créée n’effectue pas encore le rendu du contenu attendu dans AEM. Cette absence est due au fait que le routeur cherche le chemin d’accès `/test` alors que le chemin d’accès principal d’AEM est `/wknd-spa-react/us/en/test`. Pour prendre en compte la partie spécifique à AEM de l’URL, nous devons ajouter des fonctions d’aide côté SPA.
 
    ![Fonction d’aide au routage](assets/external-spa-router-helper.png)
 

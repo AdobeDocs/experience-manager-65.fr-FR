@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '455'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 95%
 
 ---
 
@@ -76,27 +76,27 @@ La configuration OSGi est la suivante :
   <tr>
    <td><strong>Type de ressource</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Le type de ressource à enregistrer ; par exemple, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Le type de ressource à enregistrer ; par exemple, <br />. <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Propriété de référence</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Nom de la propriété qui contient la référence au fragment ; par exemple, <code>fragmentPath</code> ou <code>fileReference</code></td>
+   <td>Le nom de la propriété qui contient la référence au fragment ; par exemple, <code>fragmentPath</code> ou <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Propriété d’élément(s)</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>Nom de la propriété qui contient le ou les noms des éléments dont le rendu doit être effectué ; par exemple,<code>elementName</code></td>
+   <td>Le nom de la propriété qui contient le ou les noms des éléments dont le rendu doit être effectué ; par exemple,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Propriété de variation</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>Nom de la propriété qui contient le nom de la variation dont le rendu doit être effectué ; par exemple,<code>variationName</code></td>
+   <td>Le nom de la propriété qui contient le nom de la variation dont le rendu doit être effectué ; par exemple,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
 
-Pour certaines fonctionnalités (par exemple, pour effectuer le rendu d’une seule plage de paragraphes), vous devez respecter certaines conventions :
+Pour certaines fonctionnalités (par exemple, pour effectuer le rendu d’une seule plage de paragraphes), vous devez respecter certaines conventions :
 
 <table>
  <tbody>

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2393'
 ht-degree: 57%
 
 ---
@@ -109,9 +109,9 @@ Les bibliothèques de balises CQ et Sling vous donnent accès à des fonctions s
 
 Pour plus d’informations, consultez le document [Bibliothèques de balises](/help/sites-developing/taglib.md).
 
-## Utilisation de bibliothèques de HTMLS côté client {#using-client-side-html-libraries}
+## Utiliser les bibliothèques HTML côté client {#using-client-side-html-libraries}
 
-Les sites web modernes reposent principalement sur un traitement côté client piloté par du code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
+Les sites web modernes reposent largement sur un traitement côté client piloté par un code JavaScript et CSS complexe. Organiser et optimiser la diffusion de ce code est une opération qui peut se révéler complexe.
 
 Pour résoudre ce problème, AEM fournit des **dossiers de bibliothèques côté client** qui permettent de stocker le code côté client dans le référentiel, de le classer par catégorie et de définir quand et comment chaque catégorie de code doit être diffusée au client. Le système de bibliothèque côté client se charge alors de la génération des liens appropriés dans la page Web finale pour charger le code correct.
 
@@ -123,7 +123,7 @@ Votre composant aura besoin d’une boîte de dialogue pour que les auteurs puis
 
 Pour plus d’informations, consultez [Composants AEM – Principes de base](/help/sites-developing/components-basics.md#dialogs).
 
-## Configuration du comportement de modification {#configuring-the-edit-behavior}
+## Configurer le comportement de modification {#configuring-the-edit-behavior}
 
 Vous pouvez configurer le comportement de modification d’un composant. Cela inclut les attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur statique et les écouteurs liés aux événements sur le composant. La configuration est commune aux IU tactile et classique, bien qu’avec certaines différences spécifiques.
 
@@ -192,7 +192,7 @@ Pour développer de nouveaux composants pour AEM en fonction du composant exista
 
    * `cq:dialog` : boîte de dialogue pour l’interface utilisateur tactile
    * `dialog` : boîte de dialogue pour l’interface utilisateur classique
-   * `cq:editConfig` : comportement des composants dans l’environnement de modification (glisser-déposer, par exemple)
+   * `cq:editConfig` : comportement des composants dans l’environnement de modification (par exemple, glisser-déposer)
    * `design_dialog` : boîte de dialogue pour le mode Création (interface utilisateur classique uniquement)
 
 1. Activez le nouveau composant dans votre système de paragraphes en effectuant l’une des opérations suivantes :

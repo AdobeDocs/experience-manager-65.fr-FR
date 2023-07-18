@@ -2,10 +2,10 @@
 title: Comment configurer et résoudre les problèmes liés à un cluster de serveurs AEM Forms on JEE ?
 description: Découvrez comment configurer et résoudre les problèmes liés à un cluster de serveurs AEM Forms on JEE.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: ht
-source-wordcount: '4033'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '4032'
+ht-degree: 99%
 
 ---
 
@@ -69,7 +69,7 @@ Plusieurs problèmes peuvent se produire avec le cache Gemfire. Voici deux scén
 
 Si vous avez des nœuds à mettre en cluster, il est essentiel qu’ils se retrouvent les uns les autres sur le réseau. Par défaut, ils le font au moyen de messages UDP à diffusion multiple. Chaque nœud envoie des messages de diffusion afin de signaler sa présence, et tout nœud qui reçoit un tel message commence à communiquer avec les autres nœuds qu’il rencontre. Ce genre de méthode de découverte automatique est très courant, et de nombreux types de logiciels et d’appareils le font.
 
-Un problème courant avec la découverte automatique est que les messages à diffusion multiple peuvent être filtrés par le réseau dans le cadre de la stratégie réseau ou en raison de règles de pare-feu logiciel, ou peuvent tout simplement ne pas être en mesure de naviguer sur le réseau existant entre les nœuds. En raison de la difficulté générale à obtenir la découverte automatique du portail UDP pour fonctionner dans des réseaux complexes, il est courant que les déploiements de production utilisent une autre méthode de découverte : les services de localisation TCP. Vous trouverez une discussion générale sur les services de localisation TCP dans les références.
+Un problème courant avec la découverte automatique est que les messages à diffusion multiple peuvent être filtrés par le réseau dans le cadre de la politique réseau ou en raison de politiques de pare-feu logiciel, ou peuvent tout simplement ne pas être en mesure de naviguer sur le réseau existant entre les nœuds. En raison de la difficulté générale à obtenir la découverte automatique du portail UDP pour fonctionner dans des réseaux complexes, il est courant que les déploiements de production utilisent une autre méthode de découverte : les services de localisation TCP. Vous trouverez une discussion générale sur les services de localisation TCP dans les références.
 
 **Comment savoir si j’utilise des services de localisation ou UDP ?**
 
@@ -219,7 +219,7 @@ En fonction de votre serveur d’applications, il peut être naturel que la conn
 
 Le problème inverse est plus courant : il concerne une situation où plusieurs nœuds autonomes (ou en grappe) d’AEM Forms sur JEE pointent accidentellement vers le même schéma alors qu’ils ne sont pas censés le faire. Cela se produit le plus souvent lorsqu’un DBA donne les informations de connexion d’une seule base de données AEM Forms sur JEE aux équipes de configuration DEV (développement) et QA (assurance qualité), sans se rendre compte que les instances de développement DEV et QA nécessitent des bases de données distinctes.
 
-## Grappe de serveurs d’applications {#application-server-cluster-1}
+## Cluster de serveurs d’applications {#application-server-cluster-1}
 
 Pour réussir un cluster AEM Forms sur JEE, il est essentiel que le serveur d’applications soit configuré et fonctionne correctement en tant que cluster. Dans WebSphere et Weblogic, il s’agit d’un processus simple et bien documenté. Dans JBoss, la configuration du cluster est un peu plus complexe. S’assurer que les nœuds sont configurés pour agir en tant que cluster et quʼils se trouvent et communiquent entre eux peut être une tâche ardue. JBoss repose en interne sur JGroups, qui utilise la multidiffusion UDP pour trouver et coordonner les nœuds pairs, et certains des problèmes mentionnés avec GemFire peuvent se produire, comme des nœuds qui ne se trouvent pas les uns les autres alors qu’ils le devraient et inversément.
 
@@ -267,7 +267,7 @@ Pour déterminer comment Quartz s’est configuré, vous devez examiner les mess
 INFO `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad
 Il est important de repérer cette première ligne dans les journaux, car certains serveurs d’applications utilisent également Quartz, et leurs instances Quartz ne doivent pas être confondues avec l’instance utilisée par le service Planificateur d’AEM Forms on JEE. C’est l’indication que le service Planificateur démarre, et les lignes qui le suivent vous diront si oui ou non il démarre correctement en mode cluster. Plusieurs messages s’affichent dans cette séquence, et c’est le dernier message « started » qui révèle comment Quartz est configuré :
 
-Voici le nom de l’instance Quartz : `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Le nom de l’instance Quartz du planificateur commence toujours par la chaîne `IDPSchedulerService_$_`. La chaîne ajoutée à la fin de cette chaîne vous indique si Quartz est exécuté ou non en mode cluster. L’identifiant unique long généré à partir du nom d’hôte du nœud et d’une longue chaîne de chiffres, ici `ap-hp8.ottperflab.adobe.com1312883903975`, indique qu’il fonctionne en cluster. S’il fonctionne comme un nœud unique, l’identifiant sera un nombre à deux chiffres, « 20 » :
+Voici le nom de l’instance Quartz : `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. Le nom de l’instance Quartz du planificateur commence toujours par la chaîne `IDPSchedulerService_$_`. La chaîne ajoutée à la fin de cette chaîne vous indique si Quartz est exécuté ou non en mode cluster. L’identifiant unique long généré à partir du nom d’hôte du nœud et d’une longue chaîne de chiffres, ici `ap-hp8.ottperflab.adobe.com1312883903975`, indique qu’il fonctionne en cluster. S’il fonctionne comme un nœud unique, l’identifiant sera un nombre à deux chiffres, « 20 » :
 
 INFO `[org.quartz.core.QuartzScheduler]` Planificateur `IDPSchedulerService_$_20` démarré.
 Cette vérification doit être effectuée séparément sur tous les nœuds du cluster, car le planificateur de chaque nœud détermine indépendamment s’il doit fonctionner en mode cluster.

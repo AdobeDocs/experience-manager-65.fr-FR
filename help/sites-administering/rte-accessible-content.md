@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer des pages web et des
 description: Configurez l’éditeur de texte enrichi pour créer des pages web et des sites accessibles.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 92%
 
 ---
 
@@ -45,21 +45,21 @@ En configurant un module externe dans la sous-branche `rtePlugins` appropriée d
 
 ### Exemple : spécification des formats de paragraphes disponibles dans le champ de sélection de l’éditeur de texte enrichi {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-De nouveaux formats de bloc sémantique peuvent être rendus disponibles pour la sélection comme suit :
+De nouveaux formats de bloc sémantique peuvent être mis à disposition pour sélection par :
 
 1. Selon votre éditeur de texte enrichi, déterminez son [emplacement de configuration](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) et accédez-y.
-1. [Activez le champ de sélection Paragraphe](/help/sites-administering/rich-text-editor.md). En [activant le module externe](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md).
+1. [Activation du champ de sélection Paragraphes](/help/sites-administering/rich-text-editor.md); par [activation du module externe](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Spécifiez les formats qui doivent être disponibles dans le champ de sélection Paragraphes .](/help/sites-administering/rich-text-editor.md).
 1. Les formats de paragraphe sont ensuite à la disposition de l’auteur du contenu des champs de sélection dans l’éditeur de texte enrichi. Ils sont accessibles :
 
    * à l’aide du paragraphe pied-de-mouche dans l’IU optimisée pour les écrans tactiles ;
-   * en utilisant le champ **Format** (sélecteur déroulant) dans l’IU classique.
+   * en utilisant le champ **Format** (sélecteur pop-up) dans l’IU classique.
 
-Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Ceci garantit une mise en forme nette, de meilleures options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et un contenu correctement structuré.
+Avec les éléments structurels disponibles dans l’éditeur de texte enrichi via les options de format de paragraphe, AEM constitue une bonne base pour le développement de contenu accessible. Les auteurs de contenu ne peuvent pas utiliser l’éditeur de texte enrichi pour formater la taille de la police ou les couleurs ou d’autres attributs associés, ce qui empêche toute création de formatage en ligne. À la place, ils doivent sélectionner les éléments structurels appropriés comme les en-têtes et utiliser des styles globaux choisis via l’option Styles. Cela garantit un balisage propre, de plus grandes options pour les utilisateurs qui naviguent avec leurs propres feuilles de style et du contenu correctement structuré.
 
 ## Utilisation de la fonction de modification de la source {#use-of-the-source-edit-feature}
 
-Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. Vous pouvez spécifier la [ fonctionnalité `sourceedit` dans le plugin `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
+Dans certains cas, les auteurs de contenu constateront qu’il est nécessaire d’examiner et d’ajuster le code source HTML créé à l’aide de l’éditeur de texte enrichi. Par exemple, un élément de contenu créé dans l’éditeur de texte enrichi peut nécessiter une mise en forme supplémentaire pour être conforme à la norme WCAG 2.0. Ceci peut s’effectuer avec l’option [Modification de la source](/help/sites-administering/rich-text-editor.md#aboutplugins) de l’éditeur de texte enrichi. Vous pouvez spécifier la fonction [`sourceedit` du module externe `misctools`](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -83,7 +83,7 @@ Dans le composant **Tableau**, vous devez définir ou supprimer explicitement l�
 
 ### Exemple : créer un HTML accessible lors de l’utilisation de la mise en évidence dans le texte {#create-accessible-html-for-text}
 
-L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoutez le nœud suivant en tant que frère pour les nœuds `uiSettings` et `rtePlugins` dans la boîte de dialogue.
+L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la place de `b` et `i`. Ajoutez le noeud suivant en tant que frère à la propriété `uiSettings` et `rtePlugins` dans la boîte de dialogue.
 
 ```HTML
 <htmlRules jcr:primaryType="nt:unstructured">
@@ -100,7 +100,7 @@ L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la p
 
 ### Instructions détaillées {#step-by-step-instructions}
 
-1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Démarrez CRXDE Lite. Par exemple : [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Copier :
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
@@ -193,9 +193,7 @@ L’éditeur de texte enrichi peut utiliser les balises `strong` et `em` à la p
 >* Que la propriété `itemId` de chaque champ correspondant est définie sur le nom de l’attribut DOM approprié (`TablePropertiesDialog`).
 >* Que l’attribut est défini et/ou supprimé sur l’élément DOM de manière explicite (`Table`).
 
-
 >[!MORELIKETHIS]
 >
 >* [Guide rapide relatif à WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Création d’un contenu accessible (conformité WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
-

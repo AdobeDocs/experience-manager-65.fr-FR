@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 13%
+source-wordcount: '598'
+ht-degree: 5%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Vous pouvez gérer le contenu de votre application et de votre application mobile à partir du tableau de bord de l’application AEM Mobile ou du centre de contrôle.
 
-Vous pouvez passer en revue chaque mosaïque du Centre de contrôle pour afficher ou modifier ses détails en cliquant sur « … » dans le coin inférieur droit.
+Vous pouvez parcourir chaque mosaïque du Centre de contrôle pour afficher ou modifier les détails en cliquant sur &quot;...&quot;. dans le coin inférieur droit.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -37,14 +37,14 @@ La gestion du contenu des applications nécessite un effort collectif des dével
 
 Enfin, les administrateurs publient stratégiquement le contenu de l’application mis à jour.
 
-## Mosaïque Gestion de l’application {#the-manage-app-tile}
+## Mosaïque Gérer l’application {#the-manage-app-tile}
 
 Le **Gérer l’application** La mosaïque affiche les informations d’application disponibles :
 
 * Titre
 * Description
 * Icône
-* Dernière modification
+* Date de dernière modification
 * Dernière modification par
 
 ![chlimage_1-55](assets/chlimage_1-55.png)

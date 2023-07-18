@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1423'
+ht-degree: 99%
 
 ---
 
@@ -64,14 +64,14 @@ Cette procédure est similaire à l’[ajout de ressources en tant que référen
 ### Création de références dans les ressources en exportant un fichier ZIP {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. Pour créer un workflow, suivez la procédure décrite dans [Création de modèles de workflows](/help/sites-developing/workflows-models.md).
-1. Utilisez l’option [Assemblage](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) d’[!DNL Adobe InDesign] pour exporter le document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un assemblage. Dans ce cas, le dossier exporté contient un dossier `Links` dans lequel se trouvent des sous-ressources dans le fichier [!DNL InDesign]. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
+1. Utilisez la fonctionnalité [Package](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) d’[!DNL Adobe InDesign] pour exporter le document. [!DNL Adobe InDesign] peut exporter un document et les ressources liées sous la forme d’un package. Dans ce cas, le dossier exporté contient un dossier `Links` dans lequel se trouvent des sous-ressources dans le fichier [!DNL InDesign]. Le dossier `Links` est présent dans le même dossier que le fichier INDD.
 1. Créez un fichier ZIP et chargez-le dans le référentiel [!DNL Experience Manager].
 1. Lancez le workflow `Unarchiver`.
 1. Une fois le workflow terminé, les références du dossier Liens sont automatiquement référencées en tant que sous-ressources. Pour afficher la liste des ressources auxquelles il est fait référence, accédez à la page des détails de la référence de la ressource [!DNL InDesign] et fermez le [rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## [!DNL Adobe Photoshop] : ajout de ressources numériques en tant que références {#refps}
 
-1. Utilisez l’application de bureau [!DNL Experience Manager] pour accéder à [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la fonctionnalité [!UICONTROL Placer les liens] dans [!DNL Adobe Photoshop]. Consultez la section [Placement de ressources dans l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#place-assets-in-native-documents).
+1. Utilisez l’application de bureau [!DNL Experience Manager] pour accéder à [!DNL Experience Manager Assets]. Téléchargez et affichez les ressources sur le système de fichiers local. Utilisez la variable [!UICONTROL Placer les liens] fonctionnalité dans [!DNL Adobe Photoshop]. Consultez la section [Placement de ressources dans l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#place-assets-in-native-documents).
 
 1. Enregistrez le fichier [!DNL Photoshop] sur le lecteur monté ou [chargez-le](/help/assets/manage-assets.md#uploading-assets) vers le référentiel [!DNL Experience Manager].
 1. Une fois le workflow terminé, les références aux ressources existantes dans [!DNL Experience Manager] sont répertoriées dans la page des détails de la ressource.
@@ -144,4 +144,3 @@ Les options suivantes sont disponibles dans la barre d’outils, dans le rail de
 >* [Configuration des actions de bureau dans Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#desktopactions-v2)
 >* [Création d’objets dynamiques liés dans Adobe Photoshop](https://helpx.adobe.com/fr/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Placement de graphiques dans Adobe InDesign](https://helpx.adobe.com/fr/indesign/using/placing-graphics.html)
-

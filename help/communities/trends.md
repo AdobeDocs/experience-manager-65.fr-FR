@@ -1,5 +1,5 @@
 ---
-title: Tendances d’activité
+title: Tendances des activités
 seo-title: Activity Trends
 description: Ajout d’un composant Liste d’activités de la communauté à une page
 seo-description: Adding a Community Activity List component to a page
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 30%
+source-wordcount: '345'
+ht-degree: 7%
 
 ---
 
-# Tendances d’activité {#activity-trends}
+# Tendances des activités {#activity-trends}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Le `Community Activity List` offre la possibilité d’ajouter des informations de tendance concernant les publications et les vues par les membres, ainsi que les publications et les vues de contenu.
 
@@ -46,7 +46,7 @@ et faites-le glisser sur la page.
 
 Pour obtenir les informations nécessaires, consultez la section [Principes de base des composants des communautés](/help/communities/basics.md).
 
-Placé pour la première fois sur une page d’un site de communauté, voici à quoi ressemble le composant :
+Lorsqu’il est placé pour la première fois sur une page d’un site de communauté, voici comment le composant apparaît :
 
 ![communauté-activité](assets/community-activity.png)
 
@@ -56,45 +56,45 @@ Sélectionnez le `Community Activity List` pour accéder au composant et le sél
 
 ![configure](assets/configure-new.png)
 
-Dans l’onglet **Commentaires**, indiquez si et comment les commentaires pour les fichiers transférés apparaissent :
+Sous , **Commentaires** , indiquez si et comment les commentaires des fichiers chargés apparaissent :
 
 ![propriétés](assets/activity-list-properties.png)
 
 * **Type**
 
-   Indiquez s’il faut afficher les données concernant les membres de la communauté ou le contenu généré par l’utilisateur.
+  Indiquez si vous souhaitez afficher les données concernant les membres de la communauté ou le contenu généré par l’utilisateur.
 
-   Faites un choix parmi 
+  Faites un choix parmi les éléments suivants :
 
    * `Members`
    * `Content`
 
-   La valeur par défaut est `Members`.
+  La valeur par défaut est `Members`.
 
 * **Titre affiché**
 
-   Titre descriptif à afficher au-dessus des données, tel que `Trending Content`.
-Par défaut, il n’existe aucun titre.
+  Titre descriptif à afficher au-dessus des données, tel que `Trending Content`.
+La valeur par défaut n’est pas le titre.
 
 * **Nombre d’affichages**
 
-   Nombre d’éléments à répertorier.
+  Nombre d’éléments à répertorier.
 La valeur par défaut est 10.
 
 * **Type d’activité**
 
-   Sélectionnez l’une des options suivantes :
+  Sélectionnez l’une des options suivantes :
 
    * `Views`(visites de page)
    * `Posts`(création du contenu généré par l’utilisateur)
    * `Follows`
    * `Likes`
 
-   La valeur par défaut est Vues.
+  La valeur par défaut est Vues.
 
 * **Période**
 
-   Sélectionnez l’une des options suivantes :
+  Sélectionnez l’une des options suivantes :
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -103,21 +103,21 @@ La valeur par défaut est 10.
    * `This year (since Jan 1st)`
    * `Total`
 
-   La valeur par défaut est `Total`.
+  La valeur par défaut est `Total`.
 
 * **Chemin d’accès au contexte**
 
-   Permet d’étendre l’activité à un sous-ensemble du site, tel qu’un blog spécifique.
-La valeur par défaut est le site de la communauté entier.
+  Permet d’étendre l’activité à un sous-ensemble du site, tel qu’un blog spécifique.
+La valeur par défaut est l’ensemble du site de la communauté.
 
 * **Agrégation du nombre de membres**
 
-   Si cette option est désélectionnée (désactivée), seules les publications de niveau supérieur sont comptabilisées. Par exemple, si le contexte est la page racine (valeur par défaut), une `Activity Type` de `Posts` n’affichera jamais d’activité, car il n’est pas possible de publier du contenu sur la page racine. Lorsque cette option est cochée, les nombres sur toutes les pages descendantes sont inclus.
-Cette option est cochée par défaut.
+  Si cette option est désélectionnée (désactivée), seules les publications de niveau supérieur sont comptabilisées. Par exemple, si le contexte est la page racine (valeur par défaut), une `Activity Type` de `Posts` n’affichera jamais d’activité, car il n’est pas possible de publier du contenu sur la page racine. Lorsque cette case est cochée, les décomptes de toutes les pages descendantes sont inclus.
+La valeur par défaut est cochée.
 
-### Exemple de page avec 4 composants {#example-page-with-components}
+### Exemple de page avec 4 composants {#example-page-with-components}
 
-**Principaux visiteurs** config : Type = Membres, Type d’activité = Vues
+**Meilleurs visiteurs** config : Type = Membres, Type d’activité = Vues
 
 **Principaux contributeurs** config : Type = Membres, Type d’activité = Publications
 
@@ -125,4 +125,4 @@ Cette option est cochée par défaut.
 
 **Contenu de tendance** config : Type = Contenu, Type d’activité = Publications
 
-![components](assets/activity-list-components.png)
+![composants](assets/activity-list-components.png)

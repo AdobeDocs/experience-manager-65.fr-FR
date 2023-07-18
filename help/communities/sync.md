@@ -12,16 +12,16 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 12%
+source-wordcount: '2482'
+ht-degree: 9%
 
 ---
 
 # Synchronisation des utilisateurs des communautés {#communities-user-synchronization}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Dans AEM Communities, depuis l’environnement de publication (en fonction des autorisations configurées), *visiteurs du site* peut devenir *members*, créez *groupes d’utilisateurs*, puis modifiez leurs *profil du membre* .
 
@@ -53,13 +53,13 @@ Pour obtenir des instructions détaillées, détaillées sur la manière d’act
 
 * **package vlt**
 
-   Il s’agit d’un fichier zip de toutes les modifications apportées à un éditeur, qui doit être distribué entre les éditeurs. Les modifications sur un éditeur génèrent des événements qui sont sélectionnés par l’écouteur d’événement change. Cela crée un module vlt contenant toutes les modifications.
+  Il s’agit d’un fichier zip de toutes les modifications apportées à un éditeur, qui doit être distribué entre les éditeurs. Les modifications sur un éditeur génèrent des événements qui sont sélectionnés par l’écouteur d’événement change. Cela crée un module vlt contenant toutes les modifications.
 
 * **package de distribution**
 
-   Il contient des informations de distribution pour Sling. Il s’agit d’informations sur l’endroit où le contenu doit être distribué et le moment où il a été distribué en dernier.
+  Il contient des informations de distribution pour Sling. Il s’agit d’informations sur l’endroit où le contenu doit être distribué et le moment où il a été distribué en dernier.
 
-## Ce qui se produit si… {#what-happens-when}
+## Que se passe-t-il lorsque ... {#what-happens-when}
 
 ### Publier le site à partir de la console Sites des communautés {#publish-site-from-communities-sites-console}
 
@@ -69,7 +69,7 @@ Lorsqu’un site communautaire est publié à partir de la variable [Console Sit
 
 Par conception, les utilisateurs et les profils créés dans l’environnement de publication (par exemple par auto-inscription, connexion sociale, authentification LDAP) n’apparaissent pas dans l’environnement de création.
 
-Lorsque la topologie est une [batterie de publication](/help/communities/topologies.md) et la synchronisation des utilisateurs a été correctement configurée, la variable *user* et *profil utilisateur* est synchronisé dans la ferme de publication à l’aide de la distribution Sling.
+Lorsque la topologie consiste en une [batterie de publication](/help/communities/topologies.md) et que la synchronisation des utilisateurs a été correctement configurée, l’*utilisateur* et le *profil utilisateur* sont synchronisés dans la batterie de publication à l’aide de la distribution Sling.
 
 ### Un nouveau groupe de communautés est créé lors de la publication. {#new-community-group-is-created-on-publish}
 
@@ -77,9 +77,9 @@ Bien qu’elle soit lancée à partir d’une instance de publication, la créat
 
 Dans le cadre du processus, les nouvelles pages du site sont répliquées vers toutes les instances de publication. Le groupe d’utilisateurs de la communauté créé dynamiquement et ses membres sont Sling distribués à toutes les instances de publication.
 
-### Les utilisateurs ou les groupes d’utilisateurs sont créés à l’aide de la console Sécurité. {#users-or-user-groups-are-created-using-security-console}
+### La création d’utilisateurs ou de groupes d’utilisateurs s’effectue dans la console de sécurité {#users-or-user-groups-are-created-using-security-console}
 
-Par défaut, les données utilisateur créées dans l’environnement de publication ne sont pas visibles dans l’environnement de création, et vice versa.
+Par conception, les données utilisateur créées dans l’environnement de publication n’apparaissent pas dans l’environnement de création et inversement.
 
 Lorsque la console [Administration et sécurité des utilisateurs](/help/sites-administering/security.md) est utilisée pour ajouter de nouveaux utilisateurs dans l’environnement de publication, la synchronisation des utilisateurs synchronise les nouveaux utilisateurs et leur appartenance à un groupe sur d’autres instances de publication, si nécessaire. La synchronisation des utilisateurs synchronise également les groupes d’utilisateurs créés via la console de sécurité.
 
@@ -89,9 +89,9 @@ Pour le contenu généré par l’utilisateur, les données saisies sur une inst
 
 ## Bonnes pratiques {#bestpractices}
 
-Par défaut, la synchronisation des utilisateurs est **désactivée**. Activer la synchronisation des utilisateurs implique de modifier les configurations OSGi *existantes.* Aucune configuration nouvelle ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs.
+Par défaut, la synchronisation des utilisateurs est **disabled**. L’activation de la synchronisation des utilisateurs implique de modifier *existant* Configurations OSGi. Aucune nouvelle configuration ne doit être ajoutée suite à l’activation de la synchronisation des utilisateurs.
 
-La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création.
+La synchronisation des utilisateurs repose sur l’environnement de création pour gérer les distributions de données utilisateur, même si les données utilisateur ne sont pas créées en mode de création .
 
 **Conditions préalables**
 
@@ -99,14 +99,14 @@ La synchronisation des utilisateurs repose sur l’environnement de création po
 
    Une fois la synchronisation des utilisateurs activée, seuls les utilisateurs et les groupes nouvellement créés sont synchronisés .
 
-1. Vérifiez que le code le plus récent a été installé :
+1. Assurez-vous que la dernière version du code a été installée :
 
-   * [Mise à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
-   * [Mises à jour d’AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
+   * [Mises à jour de la plateforme AEM](https://helpx.adobe.com/fr/experience-manager/kb/aem62-available-hotfixes.html)
+   * [Mises à jour d’AEM Communities](/help/communities/deploy-communities.md#latestfeaturepack)
 
 Les paramétrages suivants sont nécessaires pour permettre la synchronisation des utilisateurs sur AEM Communities. Assurez-vous que ces configurations sont correctes pour empêcher l’échec de la distribution de contenu sling.
 
-### Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
+### Agent de distribution Apache Sling - Fabrique d’agents de synchronisation {#apache-sling-distribution-agent-sync-agents-factory}
 
 Cette configuration récupère le contenu à synchroniser dans les éditeurs. La configuration se trouve sur l’instance d’auteur . L’auteur doit effectuer le suivi de tous les éditeurs présents et où synchroniser toutes les informations.
 
@@ -124,16 +124,17 @@ Pour configurer la configuration des agents de synchronisation Apache Sling :
 
    * Sélectionnez la configuration existante à ouvrir pour modification (icône représentant un crayon).
 
-      Vérifiez le nom : **socialpubsync.**
+     Vérifiez le nom : **socialpubsync.**
 
-   * Sélectionnez la **Activé** .
+   * Cochez la case **Activé**.
    * Sélectionner **Utilisez plusieurs files d’attente.**
    * Spécifier **Points de fin de l’exportateur** et **Points de terminaison de l’importateur** (vous pouvez ajouter d’autres points de fin d’exportateur et d’importateur).
 
-      Ces points de terminaison définissent l’emplacement d’où vous souhaitez obtenir le contenu et l’emplacement où vous souhaitez pousser le contenu. L’auteur récupère le contenu à partir du point de terminaison de l’exportateur spécifié et envoie le contenu aux éditeurs (autres que l’éditeur à partir duquel il a récupéré le contenu).
+     Ces points de terminaison définissent l’emplacement d’où vous souhaitez obtenir le contenu et l’emplacement où vous souhaitez pousser le contenu. L’auteur récupère le contenu à partir du point de terminaison de l’exportateur spécifié et envoie le contenu aux éditeurs (autres que l’éditeur à partir duquel il a récupéré le contenu).
+
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Distribution Adobe Granite - Fournisseur secret du transport de mot de passe chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Distribution Granite des Adobes - Fournisseur secret de transport de mot de passe chiffré {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Il permet à l’auteur d’identifier l’utilisateur autorisé, comme ayant l’autorisation de synchroniser les données utilisateur de l’auteur à la publication.
 
@@ -197,7 +198,7 @@ Pour garantir la synchronisation des membres :
 
    Vérifier **nom de l’agent : socialpubsync -reverse**.
 
-1. Sélectionnez la **Activé** .
+1. Cochez la case **Activé**.
 1. Spécifier **rep:members** comme description de propertyName dans **noms des propriétés look** et enregistrez.
 
    ![diff-obs](assets/diff-obs.png)
@@ -216,7 +217,7 @@ Pour modifier l’intervalle d’interrogation :
 
    * Sélectionnez la configuration existante à ouvrir pour modification (icône représentant un crayon).
 
-      Vérifier **socialpubsync-scheduled-trigger**
+     Vérifier **socialpubsync-scheduled-trigger**
 
    * Définissez l’intervalle en secondes sur l’intervalle souhaité, puis enregistrez.
 
@@ -276,7 +277,7 @@ Sur chaque instance de publication AEM :
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
-### Identifiant Sling unique. {#unique-sling-id}
+### Identifiant Sling unique {#unique-sling-id}
 
 AEM instance d’auteur utilise l’identifiant Sling pour identifier à partir de quel endroit les données arrivent et vers quels éditeurs elle doit (ou ne doit pas) renvoyer le module.
 
@@ -307,7 +308,7 @@ Pour garantir un identifiant Sling unique des éditeurs dans la ferme de publica
 
 Répétez ces étapes jusqu’à ce que toutes les instances de publication aient un identifiant Sling unique.
 
-### Fabrique Vault Package Builder {#vault-package-builder-factory}
+### Fabrique de générateur de module vault {#vault-package-builder-factory}
 
 Pour que les mises à jour soient correctement synchronisées, il est nécessaire de modifier le créateur de modules Vault pour la synchronisation des utilisateurs.
 Dans `/home/users`, un `*/rep:cache` est créé. Il s’agit d’un cache qui permet de trouver que si nous effectuons une requête sur le nom principal d’un noeud, ce cache peut être utilisé directement.
@@ -321,7 +322,7 @@ Pour vous assurer que les mises à jour sont correctement synchronisées entre l
    Par exemple : [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr).
 1. Recherchez la variable **Module de distribution Apache Sling - Fabrique Vault Package Builder**
 
-   Nom du créateur : socialpubsync-vlt.
+   Nom du créateur : socialpubsync-vlt.
 
 1. Sélectionnez l’icône de modification.
 1. Ajoutez deux filtres de noeuds de module :

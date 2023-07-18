@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1806'
 ht-degree: 99%
 
 ---
@@ -24,7 +24,7 @@ Cette fonctionnalité fournit un système de paragraphes qui permet de positionn
 Le conteneur de mise en page :
 
 * Permet un alignement horizontal sur la grille, ainsi que la possibilité de placer côte à côte les composants dans la grille et de définir quand ils doivent être réduits/développés.
-* Utilise des points d’arrêt prédéfinis (pour téléphone ou tablette, par exemple), pour que vous puissiez définir le comportement du contenu pour l’orientation ou les appareils associés.
+* Il utilise des points d’arrêt prédéfinis (pour téléphone ou tablette, par exemple) pour que vous puissiez définir le comportement du contenu pour l’orientation ou les appareils associés.
 
    * Par exemple, vous pouvez personnaliser la taille du composant ou décider s’il peut être affiché sur des appareils spécifiques.
 

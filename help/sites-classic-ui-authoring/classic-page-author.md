@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '298'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Fenêtre d’inspection flottante qui s’ouvre sur la page à modifier. Depuis 
 Sur le côté gauche de chaque page à créer, l’outil de recherche de contenu fournit un accès rapide à diverses ressources, y compris des ressources numériques (autres images, éléments Flash et documents, par exemple), d’autres pages et des paragraphes. Ces éléments peuvent être déplacés sur la page, par exemple pour positionner les ressources ou créer des liens vers d’autres pages.
 
 * **Menu contextuel**
-Cliquez avec le bouton droit sur la plupart des éléments à l’écran (par exemple, des paragraphes sur la page) pour afficher un menu contextuel avec les options appropriées.
+Cliquez avec le bouton droit de la souris sur la plupart des éléments à l’écran (par exemple, paragraphes sur la page) pour afficher un menu contextuel avec les options d’action appropriées.
 
 * **Recherche en cours de frappe**
 Dans certains cas (par exemple, lors de la sélection d’un chemin d’accès dans les boîtes de dialogue de modification), la recherche de contenu dans l’interface d’AEM présente des correspondances dynamiques en cours de saisie de la requête.

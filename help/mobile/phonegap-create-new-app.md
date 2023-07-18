@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 5%
+source-wordcount: '637'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Les applications AEM Mobile sont basées sur un plan directeur qui définit une structure et des propriétés de page. Vous pouvez configurer les propriétés de l’application suivantes :
 
@@ -69,8 +69,8 @@ Renseignez les détails de votre nouvelle application si nécessaire, y compris 
 
 Consultez les ressources suivantes pour en savoir plus sur les autres rôles de création :
 
-* [Mosaïque Gestion de l’application](/help/mobile/phonegap-app-details-tile.md)
-* [Modification de métadonnées d’application](/help/mobile/phonegap-editmetadata.md)
+* [Mosaïque Gérer l’application](/help/mobile/phonegap-app-details-tile.md)
+* [Modification des métadonnées d’application](/help/mobile/phonegap-editmetadata.md)
 * [Définitions des applications](/help/mobile/phonegap-app-definitions.md)
 * [Importation d’une application hybride existante](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Content Services](/help/mobile/develop-content-as-a-service.md)

@@ -1,7 +1,7 @@
 ---
 title: Activer l’accès à l’IU classique
 seo-title: Enabling Access to Classic UI
-description: Découvrez comment activer l’accès à l’IU classique.
+description: Découvrez comment activer l’accès à l’interface utilisateur classique.
 seo-description: Lear how to enable access to Classic UI.
 uuid: 08698023-6e0d-4160-8c4d-d282e74182bc
 contentOwner: Chris Bohnert
@@ -10,16 +10,16 @@ topic-tags: operations
 content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
 exl-id: e25f0b7f-5f12-4363-b302-e51c81035c7d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '86'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '85'
+ht-degree: 37%
 
 ---
 
 # Activer l’accès à l’IU classique{#enabling-access-to-classic-ui}
 
-Avec la fonctionnalité tactile désormais au même niveau, voire dépassant l’IU classique dans de nombreux aspects d’AEM, l’accès à l’IU classique via l’interface tactile est désormais désactivé par défaut. Les pages suivantes expliquent comment réactiver cet accès si nécessaire.
+La fonctionnalité tactile atteignant la parité avec l’IU classique dans de nombreuses zones d’AEM, et dépassant en fait celle de cette dernière, l’accès à l’interface classique par le biais de l’interface tactile est désormais désactivé par défaut. Les pages suivantes expliquent comment réactiver cet accès si nécessaire.
 
 * [Éditeur](/help/sites-administering/enable-classic-ui-editor.md)
 * [Consoles d’administration](/help/sites-administering/enable-classic-ui-admin.md)

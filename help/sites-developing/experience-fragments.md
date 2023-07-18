@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1780'
 ht-degree: 99%
 
 ---
@@ -64,7 +64,7 @@ Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le 
    * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
    * Cela s’avère utile si le client ou la cliente souhaite supprimer certaines classes CSS spécifiques.
 * `allowedTags`
-   * Une liste des balises HTML autorisées dans le rendu final.
+   * Liste des balises de HTML à autoriser dans le rendu final.
    * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script.
 
 Il est recommandé de configurer la réécriture à l’aide d’un recouvrement. Voir [Recouvrements](/help/sites-developing/overlays.md)

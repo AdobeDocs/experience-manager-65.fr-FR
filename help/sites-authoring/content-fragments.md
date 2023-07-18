@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1140'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 97%
 
 ---
 
@@ -74,6 +74,7 @@ Les fragments de contenu permettent ce qui suit :
    * Ouvrir l’explorateur de **ressources** et filtrer sur **Fragments de contenu** (la valeur par défaut est Images). Faire ensuite glisser le fragment requis sur l’instance du composant.
 
    * Sélectionner le composant de fragment de contenu, puis **Configurer** dans la barre d’outils. Dans la boîte de dialogue, vous pouvez ouvrir la boîte de dialogue de sélection afin de rechercher et de sélectionner le **fragment de contenu** requis.
+
    >[!NOTE]
    >
    >L’autre méthode consiste à faire glisser un fragment de contenu directement sur la page. Le composant associé est ainsi automatiquement créé (Fragment de contenu).
@@ -90,7 +91,8 @@ Les fragments de contenu permettent ce qui suit :
    >
    >    * [Mise en page réactive](/help/sites-authoring/responsive-layout.md)
    >    * [Modification du contenu de la page](/help/sites-authoring/editing-content.md)
-
+   >
+   >
 
 ### Sélection de l’élément ou de la variation {#selecting-the-element-or-variation}
 
@@ -100,7 +102,7 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
 
 * **Fragment de contenu**
 
-   Indiquez le fragment à utiliser.
+  Indiquez le fragment à utiliser.
 
 * **Mode d’affichage** :
 
@@ -113,16 +115,16 @@ Dans la boîte de dialogue de configuration appropriée, vous pouvez sélectionn
    * L’élément **Principal** par défaut sera toujours disponible.
    * Une sélection est disponible si le fragment a été créé avec un modèle approprié.
 
-   >[!NOTE]
-   >
-   >Les éléments disponibles dépendent du modèle utilisé.
+  >[!NOTE]
+  >
+  >Les éléments disponibles dépendent du modèle utilisé.
 
 * **Variation**
 
    * Le **maître** par défaut sera toujours disponible.
    * La sélection est disponible si vous avez créé des variations pour le fragment.
 
-* **Paragraphes** : spécifier la plage de paragraphe(s) à inclure :
+* **Paragraphes**: spécifiez la plage de paragraphes à inclure :
 
    * **Tous**
    * **Plage** : par exemple, `1`, `3-5`, `9-*`
@@ -174,7 +176,6 @@ Pour le contenu intermédiaire, vous pouvez :
 >  Cela peut donner l’impression que le positionnement relatif a changé, dans la mesure où les paragraphes intermédiaires n’ont aucune relation contextuelle avec les paragraphes (de fragment) près desquels ils sont placés.
 >* À moins que ces deux structures de paragraphes ne soient en conflit ; dans ce cas, le contenu intermédiaire n’est pas affiché (bien qu’il soit toujours présent en interne).
 >
-
 
 ### Utilisation de contenu associé {#using-associated-content}
 

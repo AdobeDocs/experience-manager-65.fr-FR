@@ -3,9 +3,9 @@ title: Présentation et aperçu
 description: Présentation et aperçu de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) est le modèle recommandé par Adobe pour intégrer et étendre les services commerciaux disponibles à partir d’Adobe Commerce et d’autres solutions de commerce tierces avec Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
-source-wordcount: '870'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '871'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant
 * enrichir et différencier leurs expériences pour chacun de leurs clients ;
 * simplifier la création pour les auteurs de contenu en leur offrant un accès aux données commerciales.
 
-## Présentation de Commerce Integration Framework (CIF) d’AEM  {#cif-intro}
+## Présentation de Commerce Integration Framework (CIF) d’AEM {#cif-intro}
 
 Ces projets doivent gérer toute la complexité de l’intégration d’une solution de commerce. Une solution de commerce peut être n’importe quelle solution commerciale telle qu’Adobe Commerce ou un ensemble de services commerciaux personnalisés. L’intégration dépend fortement des cas d’utilisation et de l’écosystème du projet. Il touche généralement différents endroits et se présente sous des formes différentes :
 
@@ -64,7 +64,7 @@ CIF est conçu vous permettre d’innover en continu grâce à un module complé
 
 ### Intégrations
 
-Connectez votre écosystème (une solution de commerce, par exemple) à Experience Cloud à l’aide d’[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS sans serveur basé sur microservice, et de [l’implémentation de référence de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Connectez votre réseau (une solution de commerce, par exemple) à Experience Cloud à l’aide d’[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS sans serveur basé sur micro-service, et de l’[implémentation de référence de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Modèles et bonnes pratiques éprouvés
 

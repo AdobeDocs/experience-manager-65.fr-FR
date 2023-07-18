@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1191'
-ht-degree: 3%
+source-wordcount: '1190'
+ht-degree: 4%
 
 ---
 
@@ -35,7 +35,7 @@ Voir aussi [Caractéristiques des options SRP](working-with-srp.md#characteristi
    * Il est vivement recommandé d’utiliser un [ensemble de réplications](#mongoreplicaset)
    * Peut s’exécuter sur le même hôte que AEM ou à distance
 
-* [Apache Solr](https://lucene.apache.org/solr/):
+* [Apache Solr](https://lucene.apache.org/solr/):
 
    * Solr version 7.0
    * Solr nécessite Java 1.7 ou version ultérieure
@@ -64,41 +64,39 @@ Le [Console de configuration de stockage](srp-config.md) permet de sélectionner
 
    * **[!UICONTROL URI de mongoDB]**
 
-      *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+     *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
    * **[!UICONTROL Base de données mongoDB]**
 
-      *default*: communities
+     *default*: communities
 
    * **[!UICONTROL Collection UGC mongoDB]**
 
-      *default*: content
+     *default*: content
 
    * **[!UICONTROL Collection de pièces jointes mongoDB]**
 
-      *default*: attachments
+     *default*: attachments
 
 * **[!UICONTROL SolrConfiguration]**
 
    * **[](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)Hôte Zookeeper**
 
-      Lors de l’exécution de [Mode SolrCloud](solr.md#solrcloud-mode) avec un ZooKeeper externe, définissez cette valeur sur la variable `HOST:PORT` pour le ZooKeeper, par exemple *my.server.com:2181*
+     Lors de l’exécution de [Mode SolrCloud](solr.md#solrcloud-mode) avec un ZooKeeper externe, définissez cette valeur sur la variable `HOST:PORT` pour le ZooKeeper, par exemple *my.server.com:2181*
 
-      Pour un ensemble ZooKeeper, saisissez des valeurs séparées par des virgules. `HOST:PORT` des valeurs, telles que *host1:2181,host2:2181*
+     Pour un ensemble ZooKeeper, saisissez des valeurs séparées par des virgules. `HOST:PORT` des valeurs, telles que *host1:2181,host2:2181*
 
-      Laissez vide si Solr est exécuté en mode autonome à l’aide du ZooKeeper interne.
-      *Par défaut*: *&lt;blank>*
+     Laissez vide si Solr est exécuté en mode autonome à l’aide du ZooKeeper interne.
+     *Par défaut*: *&lt;blank>*
 
       * **[!UICONTROL URL Solr]**
 URL utilisée pour communiquer avec Solr en mode autonome.
 Laissez vide si vous exécutez en mode SolrCloud.
-
-         *Par défaut*: https://127.0.0.1:8983/solr/
+        *Par défaut*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Collection Solr]**
 Nom de la collection Solr.
-
-         *Par défaut*: collection1
+        *Par défaut*: collection1
 
 * Sélectionnez **[!UICONTROL Envoyer]**
 
@@ -198,7 +196,7 @@ cURL -u *signature* -d *data* *reindex-url*
 *path* = emplacement racine de l’arborescence du contenu généré par l’utilisateur à réindexer.
 
 * Pour réindexer tout le contenu généré par l’utilisateur, spécifiez la valeur de la variable `asipath`de
-   `/etc/socialconfig/srpc/defaultconfiguration`
+  `/etc/socialconfig/srpc/defaultconfiguration`
 * Pour limiter l’index à un contenu généré par l’utilisateur, spécifiez une sous-arborescence de `asipath`
 
 *reindex-url* = point de terminaison de la réindexation de la SRP

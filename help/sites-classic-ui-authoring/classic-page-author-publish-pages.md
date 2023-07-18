@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 97%
 
 ---
 
@@ -35,9 +35,8 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >  Ces termes sont synonymes de publication/dépublication.
 >
 >* **Répliquer/Réplication**
->  Termes techniques indiquant le déplacement des données (contenu de la page, fichiers, code et commentaires de l’utilisateur, par exemple) d’un environnement à un autre ; lors de la publication ou de la réplication inverse des commentaires utilisateur, par exemple.
+>  Il s’agit de termes techniques décrivant le déplacement des données (contenu de page, fichiers, code, commentaires d’utilisateur, par exemple) d’un environnement à un autre, comme lors de la publication ou de la réplication inverse des commentaires d’utilisateur.
 >
-
 
 >[!NOTE]
 >
@@ -46,7 +45,6 @@ Vous pouvez publier/dépublier une page tout de suite ou à une date/heure post�
 >* Un workflow sera déclenché pour informer la personne appropriée de votre demande de publication.
 >* Un message s’affichera (pendant une courte période) pour vous en informer.
 >
-
 
 ## Publier une page {#publishing-a-page}
 
@@ -73,6 +71,8 @@ Vous pouvez activer des pages dans la console Sites web. Après avoir ouvert une
    >[!NOTE]
    >
    >Si nécessaire, AEM demande d’activer ou de réactiver les ressources liées à la page. Vous pouvez cocher ou décocher les cases pour activer ces ressources.
+   >
+   >
 
 1. Si nécessaire, AEM demande d’activer ou de réactiver les ressources liées à la page. Vous pouvez cocher ou décocher les cases pour activer ces ressources.
 

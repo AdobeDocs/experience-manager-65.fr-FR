@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '3324'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '3327'
+ht-degree: 98%
 
 ---
 
@@ -137,8 +137,8 @@ Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité
 
 La requête est décomposée et les informations nécessaires sont extraites. Recherche du référentiel pour la ressource demandée (nœud de contenu) :
 
-* D’abord, Sling vérifie si un nœud existe à l’emplacement spécifié dans la requête. Par exemple, `../content/corporate/jobs/developer.html`. 
-* Si aucun nœud n’est identifié, l’extension est supprimée et la recherche recommence ; par exemple, `../content/corporate/jobs/developer`. 
+* first Sling vérifie si un noeud existe à l’emplacement spécifié dans la requête ; par exemple, `../content/corporate/jobs/developer.html`
+* si aucun noeud n’est trouvé, l’extension est supprimée et la recherche est répétée ; par exemple, `../content/corporate/jobs/developer`
 * Si aucun nœud n’est identifié, Sling renvoie le code 404 (Not Found).
 
 Sling permet également à des éléments autres que des nœuds JCR d’être des ressources, mais il s’agit là d’une fonctionnalité avancée.
@@ -152,7 +152,7 @@ Le chemin spécifié par le `sling:resourceType` peut être :
 * absolu
 * relatif à un paramètre de configuration
 
-   Les chemins relatifs sont recommandés par Adobe car ils contribuent à plus de portabilité.
+  Les chemins relatifs sont recommandés par Adobe car ils contribuent à plus de portabilité.
 
 Tous les scripts Sling sont stockés dans des sous-dossiers `/apps` ou `/libs` qui font l’objet d’une recherche dans cet ordre (voir [Personnalisation de composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -175,39 +175,39 @@ En reprenant l’exemple ci-dessus, si `sling:resourceType` est `hr/jobs` alors 
 
 * Les requêtes GET/HEAD et les URL se terminant par .htmp (types de requête par défaut, format par défaut)
 
-   Le script sera /apps/hr/jobs/jobs.esp ; la dernière section de sling:resourceType forme le nom du fichier.
+  Le script sera /apps/hr/jobs/jobs.esp ; la dernière section de sling:resourceType forme le nom du fichier.
 
 * Requêtes POST (tous les types de requête, à l’exclusion des GET/HEAD, le nom de la méthode doit être en majuscules)
 
-   POST sera utilisé dans le nom du script.
+  POST sera utilisé dans le nom du script.
 
-   Le script est `/apps/hr/jobs/jobs.POST.esp`.
+  Le script est `/apps/hr/jobs/jobs.POST.esp`.
 
 * URL dans d’autres formats, qui ne se terminent pas par .html
 
-   Par exemple, `../content/corporate/jobs/developer.pdf`
+  Par exemple, `../content/corporate/jobs/developer.pdf`
 
-   Le script sera `/apps/hr/jobs/jobs.pdf.esp` ; le suffixe est ajouté au nom du script.
+  Le script sera `/apps/hr/jobs/jobs.pdf.esp` ; le suffixe est ajouté au nom du script.
 
 * URL avec sélecteurs
 
-   Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple une version imprimable, un flux rss ou un résumé.
+  Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple une version imprimable, un flux rss ou un résumé.
 
-   Si nous étudions une version adaptée à l’imprimante dans laquelle le sélecteur peut être *print* ; comme dans `../content/corporate/jobs/developer.print.html`.
+  Si nous étudions une version adaptée à l’imprimante dans laquelle le sélecteur peut être *print* ; comme dans `../content/corporate/jobs/developer.print.html`.
 
-   Le script sera `/apps/hr/jobs/jobs.print.esp` ; le sélecteur est ajouté au nom du script.
+  Le script sera `/apps/hr/jobs/jobs.print.esp` ; le sélecteur est ajouté au nom du script.
 
 * Si aucun sling:resourceType n’a été défini :
 
    * Le chemin d’accès au contenu est utilisé pour rechercher un script correspondant (si le ResourceTypeProvider basé sur un chemin est actif) ;
 
-      par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/` ;
+     par exemple, le script pour `../content/corporate/jobs/developer.html` génère une recherche dans `/apps/content/corporate/jobs/` ;
 
    * Le type de nœud principal est utilisé.
 
 * Si aucun script n’est trouvé, le script par défaut est utilisé.
 
-   Le rendu par défaut est actuellement pris en charge sous la forme de texte brut (.txt), HTML (.html) et JSON (.json) qui répertorie toutes les propriétés du nœud (correctement mises en forme). Le rendu par défaut pour l’extension .res, ou les requêtes sans extension de requête, consiste à spouler la ressource (si possible).
+  Le rendu par défaut est actuellement pris en charge sous la forme de texte brut (.txt), HTML (.html) et JSON (.json) qui répertorie toutes les propriétés du nœud (correctement mises en forme). Le rendu par défaut pour l’extension .res, ou les requêtes sans extension de requête, consiste à spouler la ressource (si possible).
 * Pour la gestion des erreurs http (codes 403 ou 404), Sling recherche un script dans :
 
    * l’emplacement /apps/sling/servlet/errorhandler pour les [scripts personnalisés](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -249,19 +249,19 @@ Par exemple :
    * b
 
       * sling:resourceSuperType = a
+
    * c
 
       * sling:resourceSuperType = b
+
    * x
 
       * sling:resourceType = c
+
    * y
 
       * sling:resourceType = c
       * sling:resourceSuperType = a
-
-
-
 
 La hiérarchie de type de :
 
@@ -328,7 +328,7 @@ Vous pouvez ainsi effectuer les actions suivantes sur l’un des packages de vot
 * mise à jour
 * désinstallation
 * voir le statut actuel
-* Accédez à des informations plus détaillées (par exemple, nom symbolique, version, emplacement, etc.) pour des lots spécifiques.
+* accéder à des informations plus détaillées (par exemple, nom symbolique, version, emplacement, etc.) sur les lots spécifiques ;
 
 Pour plus d’informations, reportez-vous aux sections [Console web](/help/sites-deploying/web-console.md), [Configuration OSGI](/help/sites-deploying/configuring-osgi.md) et [Paramètres de configuration OSGi](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -419,29 +419,29 @@ La liste suivante propose une vue d’ensemble de la structure que vous verrez d
 
 * `/apps`
 
-    Application connexe qui inclut des définitions de composants spécifiques à votre site web. Les composants que vous développez peuvent être basés sur les composants prêts à l’emploi disponibles dans `/libs/foundation/components`.
+   Application connexe qui inclut des définitions de composants spécifiques à votre site web. Les composants que vous développez peuvent être basés sur les composants prêts à l’emploi disponibles dans `/libs/foundation/components`.
 
 * `/content`
 
-   Contenu créé pour votre site web.
+  Contenu créé pour votre site web.
 
 * `/etc`
 
 * `/home`
 
-   Informations sur les utilisateurs et les groupes.
+  Informations sur les utilisateurs et les groupes.
 
 * `/libs`
 
-    Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers dans `/libs` représentent les fonctionnalités d’AEM prêtes à l’emploi telles que la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement d’AEM. Les fonctionnalités spécifiques à votre site web doivent être développées sous `/apps` (voir [Personnalisation de composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   Bibliothèques et définitions appartenant au noyau d’AEM. Les sous-dossiers dans `/libs` représentent les fonctionnalités d’AEM prêtes à l’emploi telles que la recherche ou la réplication. Le contenu de `/libs` ne doit pas être modifié car il affecte le fonctionnement d’AEM. Les fonctionnalités spécifiques à votre site web doivent être développées sous `/apps` (voir [Personnalisation de composants et d’autres éléments](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
-   Espace de travail temporaire.
+  Espace de travail temporaire.
 
 * `/var`
 
-   Fichiers qui évoluent et sont mis à jour par le système, tels que les journaux d’audit, les statistiques, la gestion des événements.
+  Fichiers qui évoluent et sont mis à jour par le système, tels que les journaux d’audit, les statistiques, la gestion des événements.
 
 ## Environnements {#environments}
 

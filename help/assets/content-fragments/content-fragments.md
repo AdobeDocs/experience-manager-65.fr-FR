@@ -4,9 +4,9 @@ description: Découvrez comment les fragments de contenu dans Adobe Experience�
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '1989'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1991'
 ht-degree: 100%
 
 ---
@@ -55,10 +55,9 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 >* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/assets-api-content-fragments.md)
 >* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 
-* Canal physique ; par exemple, bureau, mobile.
+* Canal physique (par exemple, bureau ou mobile).
 * Forme de diffusion dans un canal physique (par exemple, la « page de détails du produit », la « page de catégorie de produit » pour le bureau, ou le « web mobile » et « l’application mobile » pour le mobile).
 
 Cependant, vous ne souhaitez (probablement) pas utiliser exactement le même contenu pour tous les canaux ; vous devez optimiser votre contenu en fonction du canal spécifique.
@@ -156,9 +155,9 @@ Les ressources peuvent être utilisées avec un fragment de contenu de plusieurs
    * Définissent la position de la ressource.
    * Reportez-vous à la section [Insertion de ressources dans votre fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) dans l’éditeur de fragments pour plus d’informations.
 
-   >[!NOTE]
-   >
-   >Les ressources visuelles insérées dans le fragment de contenu sont liées au paragraphe précédent. Lorsque le fragment est ajouté à une page, ces ressources sont déplacées avec le paragraphe en question lorsque du contenu intermédiaire est ajouté.
+  >[!NOTE]
+  >
+  >Les ressources visuelles insérées dans le fragment de contenu sont liées au paragraphe précédent. Lorsque le fragment est ajouté à une page, ces ressources sont déplacées avec le paragraphe en question lorsque du contenu intermédiaire est ajouté.
 
 * **Contenu associé**
 
@@ -204,13 +203,13 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
    * Peuvent uniquement être ajoutées aux éléments de texte multiligne (tout type de fragment).
    * Sont liées au texte précédent (paragraphe).
 
-      >[!CAUTION]
-      >
-      >Des ressources peuvent être supprimées (par inadvertance) d’un fragment lors du passage au format texte brut.
+     >[!CAUTION]
+     >
+     >Des ressources peuvent être supprimées (par inadvertance) d’un fragment lors du passage au format texte brut.
 
-      >[!NOTE]
-      >
-      >Les ressources peuvent également être ajoutées en tant que [contenu supplémentaire (intermédiaire)](/help/sites-authoring/content-fragments.md#using-associated-content) lors de l’utilisation d’un fragment sur une page ; à l’aide du contenu associé ou des ressources de l’explorateur de ressources.
+     >[!NOTE]
+     >
+     >Les ressources peuvent également être ajoutées en tant que [contenu supplémentaire (intermédiaire)](/help/sites-authoring/content-fragments.md#using-associated-content) lors de l’utilisation d’un fragment sur une page ; à l’aide du contenu associé ou des ressources de l’explorateur de ressources.
 
 * **Contenu associé**
 
@@ -233,9 +232,9 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
          * En affichant/modifiant les **Propriétés** du fragment depuis la console
          * En modifiant les **Métadonnées** dans l’éditeur de fragments
 
-   >[!CAUTION]
-   >
-   >Les profils de traitement des métadonnées ne s’appliquent pas aux fragments de contenu.
+  >[!CAUTION]
+  >
+  >Les profils de traitement des métadonnées ne s’appliquent pas aux fragments de contenu.
 
 * **Maître**
 
@@ -243,9 +242,9 @@ Les ressources de fragment de contenu se composent des parties suivantes (direct
 
       * Chaque fragment de contenu comporte une instance de Principal.
       * Le Principal ne peut pas être supprimé.
+
    * L’instance maître est accessible dans l’éditeur de fragment sous **[Variations](/help/assets/content-fragments/content-fragments-variations.md)**.
    * L’instance maître n’est pas une variation en tant que telle, mais plutôt la base de toutes les variations.
-
 
 * **Variations**
 

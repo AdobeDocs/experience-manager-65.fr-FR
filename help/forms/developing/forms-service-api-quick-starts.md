@@ -11,8 +11,8 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 100%
 
@@ -1974,7 +1974,7 @@ L’exemple de code suivant préremplit un formulaire avec une source de donnée
 * `convertDataSource` : convertit un objet `org.w3c.dom.Document` en un objet `com.adobe.idp.Document`. Cette méthode accepte un objet `org.w3c.dom.Document` en tant que paramètre d’entrée et renvoie un objet `com.adobe.idp.Document`.
 * `renderPOForm` : utilise l’API Java du service Forms pour générer un formulaire de bon de commande dynamique. L’objet `com.adobe.idp.Document` qui a été renvoyé par la méthode `convertDataSource` est utilisé pour préremplir le formulaire.
 
-   Toutes ces méthodes sont appelées à partir de la méthode `doPost` du servlet Java. (Voir [Préremplir les formulaires avec des dispositions souples](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
+  Toutes ces méthodes sont appelées à partir de la méthode `doPost` du servlet Java. (Voir [Préremplir les formulaires avec des dispositions souples](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
 
 ```java
 /*
@@ -2346,7 +2346,7 @@ L’exemple de code suivant traite un formulaire contenant un script de calcul e
              if (processState == 1)
              {
  
-                 //Write the data back to to the client web browser
+                 //Write the data back to the client web browser
                  ServletOutputStream oOutput = resp.getOutputStream();
                  Document calData = formOut.getOutputContent();
  

@@ -4,10 +4,10 @@ description: Découvrez comment la fonctionnalité de contenu associé d’AEM a
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ La fonctionnalité de contenu associé d’AEM assure la connexion afin que les 
 
 >[!NOTE]
 >
->Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Vous pouvez ajouter des [ressources visuelles (des images, par exemple)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page de plusieurs manières différentes.
 
 Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
 
@@ -44,9 +44,9 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 ## Modification du contenu associé {#editing-associated-content}
 
-Une fois que vous avez associé une collection, vous pouvez effectuer les opérations suivantes :
+Une fois que vous avez associé une collection, vous pouvez :
 
 * **Supprimer** l’association.
 * **Ajouter des ressources** à la collection.
-* Sélectionner une ressource en vue d’effectuer d’autres opérations.
-* Modifier la ressource.
+* Sélectionnez une ressource pour effectuer d’autres actions.
+* Modifiez la ressource.

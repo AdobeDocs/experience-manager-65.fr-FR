@@ -5,16 +5,16 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Activation d’Assets Insights via la gestion dynamique des balises {#enable-asset-insights-through-dtm}
 
-La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou la gestion dynamique des balises pour insérer des balises Assets Insights. Insights n’est pris en charge et fourni que pour les images.
+La gestion dynamique des balises Adobe est un outil permettant d’activer vos outils de marketing numérique. Il est fourni gratuitement aux clients d’Adobe Analytics. Vous pouvez personnaliser votre code de suivi pour permettre aux solutions CMS tierces d’utiliser Assets Insights ou la gestion dynamique des balises pour insérer des balises Assets Insights. Les informations sont uniquement prises en charge et fournies pour les images.
 
 >[!CAUTION]
 >
@@ -45,7 +45,7 @@ Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamiq
    ![chlimage_1-59](assets/chlimage_1-195.png)
 
 1. Cliquez sur le logo d’Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]**.
-1. Cliquez sur **[!UICONTROL Dispositif de suivi de la page Insights]**, copiez le code de suivi, puis collez-le dans la boîte de dialogue Script que vous avez ouverte à l’étape 6. Enregistrez les modifications.
+1. Cliquez sur **[!UICONTROL Dispositif de suivi de la page d’informations]**, copiez le code de suivi, puis collez-le dans la boîte de dialogue Script que vous avez ouverte à l’étape 6. Enregistrez les modifications.
 
    >[!NOTE]
    >
@@ -53,7 +53,6 @@ Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamiq
    >* L’appel à `assetAnalytics.dispatcher.init()` est supprimé. La fonction devrait être appelée une fois le chargement de l’outil de gestion dynamique des balises Adobe Analytics terminé.
    >* Selon l’endroit où est hébergé le dispositif de suivi de la page Assets Insights (par exemple, Experience Manager, CDN, etc.), il se peut que vous deviez apporter des modifications à l’origine de la source du script.
    >* Pour le dispositif de suivi de la page hébergé sur Experience Manager, la source doit indiquer une instance de publication utilisant le nom d’hôte de l’instance du Dispatcher.
-
 
 1. Accédez à l’adresse `https://dtm.adobe.com`. Cliquez sur **[!UICONTROL Aperçu]** dans la propriété web et cliquez sur **[!UICONTROL Ajouter un outil]**, ou ouvrez un outil Adobe Analytics existant. Pendant la création de l’outil, vous pouvez définir la **[!UICONTROL méthode de configuration]** sur **[!UICONTROL Automatique]**.
 
@@ -91,10 +90,10 @@ Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamiq
              "",  /** RSID to send tracking-call to */
              "",  /** Tracking Server to send tracking-call to */
              "",  /** Visitor Namespace to send tracking-call to */
-             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, e.g. 'listVar1' */
-             "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
-             "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
-             "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
+             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, for example, 'listVar1' */
+             "",  /** eVar to put Asset ID for Asset Click Events in, for example, 'eVar3' */
+             "",  /** event to include in tracking-calls for Asset Impression Events, for example, 'event8' */
+             "",  /** event to include in tracking-calls for Asset Click Events, for example, 'event7' */
              sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
@@ -109,9 +108,9 @@ Effectuez ces étapes pour activer Assets Insights grâce à la gestion dynamiq
 
    * La règle de chargement de page dans la gestion dynamique des balises inclut uniquement le code `pagetracker.js`. Tous les champs `assetAnalytics` sont considérés comme des remplacements des valeurs par défaut. Ils ne sont pas requis par défaut.
    * Le code appelle `assetAnalytics.dispatcher.init()` après s’être assuré que `_satellite.getToolsByType('sc')[0].getS()` est initialisé et que `assetAnalytics,dispatcher.init` est disponible. Par conséquent, vous pouvez ignorer son ajout à l’étape 11.
-   * Comme indiqué dans les commentaires dans le code du dispositif de suivi de la page Insights (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page Insights]**), lorsque le dispositif de suivi de la page ne crée pas d’objet `AppMeasurement`, les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.\
-      Les arguments restants correspondent à ce qui est configuré sur la page Configuration des statistiques (**[!UICONTROL Outils > Ressources > Configuration d’Insights]**).
-   * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont triées en fonction des outils SiteCatalyst disponibles dans l’interface de gestion dynamique des balises.
+   * Comme indiqué dans les commentaires dans le code du dispositif de suivi de la page d’informations (**[!UICONTROL Outils > Ressources > Dispositif de suivi de la page d’informations]**), lorsque le dispositif de suivi de la page ne crée pas d’objet `AppMeasurement`, les trois premiers arguments (RSID, Serveur de suivi et Espace de noms du visiteur) ne sont pas pertinents. Des chaînes vides sont transmises à la place pour mettre ceci en évidence.\
+     Les arguments restants correspondent à ce qui est configuré sur la page Configuration d’Insights (**[!UICONTROL Outils > Ressources > Configuration d’Insights]**).
+   * L’objet AppMeasurement est récupéré en interrogeant `satelliteLib` pour tous les moteurs SiteCatalyst disponibles. Si plusieurs balises sont configurées, modifiez l’index du sélecteur de tableau de manière appropriée. Les entrées du tableau sont classées selon les outils par SiteCatalyst disponibles dans l’interface de DTM.
 
 1. Enregistrez et fermez la fenêtre Éditeur de code, puis enregistrez les modifications dans la configuration Outil.
 1. Dans l’onglet **[!UICONTROL Approbations]**, validez les deux approbations en attente. La balise DTM est prête à être insérée sur votre page web.

@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 2%
+source-wordcount: '1160'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-Demand fournit un modèle d’application entièrement configuré, un modèle d’article et des composants d’article.
 
@@ -62,10 +62,11 @@ Une fois que vous avez créé une application à l’aide de ce modèle, vous po
 >Le ***redirectTarget*** est calculé dans le cadre de l’opération de création d’application et tente de résoudre un chemin d’accès, si une propriété redirectTarget est disponible dans le modèle d’application et que la valeur de redirectTarget est définie comme relative. Lorsque le processus de création d’application trouve une valeur relative pour redirectTarget dans le modèle d’application, la valeur est ajoutée à l’emplacement résolu de l’emplacement de création de l’application.
 >
 >Par exemple, si un modèle d’application définit une ***redirectTarget*** avec la valeur &quot;*language-masters/fr*&quot;, et l’application a été créée dans &quot;*/content/mobileapps/fooApp*&quot;, la valeur finale de redirectTarget après la création de l’application sera &quot;*/content/mobileapps/fooApp/language-masters/en*&quot;.
+>
 
 ## Création de modèles de contenu {#creating-content-templates}
 
-Chaque type d’entité comporte deux modèles d’usine. à savoir :
+Chaque type d’entité comporte deux modèles d’usine. Ces éléments sont les suivants :
 
 * **Modèles par défaut :** utilisé pour la création de contenu avec les propriétés/la structure par défaut applicables
 * **Modèles importés :** utilisé pour importer du contenu à partir d’AEM Mobile avec les propriétés/la structure par défaut applicables
@@ -124,6 +125,7 @@ Un composant simple est inclus dans le référentiel de code, dont la source se 
 >[!NOTE]
 >
 >Actuellement, aucun composant prêt à l’emploi n’est fourni pour AEM Mobile.
+>
 
 Vous pouvez ajouter des composants à votre page. Tout composant peut être utilisé dans une application AEM Mobile, mais lorsqu’il est appliqué, son rendu risque de ne pas être correct.
 

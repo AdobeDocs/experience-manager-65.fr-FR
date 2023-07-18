@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '784'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 La gestion des modèles implique la création et la gestion de modèles dans le but de les associer à des objets de données éventuels. Chaque modèle comprend toutes les propriétés et définitions de champ nécessaires pour faciliter la création et le rendu des objets.
 
@@ -49,6 +49,7 @@ Les modèles sont utilisés pour déterminer comment les entités sont créées.
 >[!NOTE]
 >
 >Il existe un modèle en dehors d’une application, car plusieurs applications peuvent l’utiliser.
+>
 
 Voir **[Modèles](/help/mobile/administer-mobile-apps.md)** pour créer et gérer des modèles dans le tableau de bord et le référentiel.
 
@@ -65,6 +66,7 @@ Voir **[Utilisation d’entités](/help/mobile/spaces-and-entities.md)** pour cr
 >[!NOTE]
 >
 >Si le modèle ne correspond pas à un contenu d’AEM existant, tel que le client a créé un nouveau modèle, il y aura une interface utilisateur pour qu’un client puisse créer une nouvelle entité.
+>
 
 ### Espaces dans le modèle de contenu {#spaces-in-content-model}
 

@@ -1,7 +1,7 @@
 ---
 title: Gérer les catégories affichées dans Workspace
 seo-title: Managing the categories displayed in Workspace
-description: Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans les catégories du volet de navigation gauche. Découvrez comment gérer ces catégories affichées dans l’espace de travail.
+description: Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans des catégories dans le volet de navigation de gauche. Découvrez comment gérer ces catégories affichées dans Workspace.
 seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
 uuid: c2a275f5-872e-467f-9f07-4b130631e8a8
 contentOwner: admin
@@ -10,45 +10,45 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '481'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 9%
 
 ---
 
 # Gérer les catégories affichées dans Workspace {#managing-the-categories-displayed-in-workspace}
 
-Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans les catégories du volet de navigation gauche. Vous pouvez configurer les catégories dans Administration Console, ou alors les concepteurs de processus peuvent les configurer dans Workbench. Lorsque les concepteurs de processus créent des processus, ils les affectent à des catégories.
+Dans Workspace, les processus qu’un utilisateur peut démarrer s’affichent dans des catégories dans le volet de navigation de gauche. Vous pouvez configurer les catégories dans Administration Console ou les concepteurs de processus peuvent les configurer dans Workbench. Lorsque les concepteurs de processus créent des processus, ils les affectent à des catégories.
 
-Lorsque vous spécifiez des noms de catégorie, vous devez les créer afin qu’ils s’affichent correctement dans le volet de navigation de Workspace. Par défaut, le volet de navigation gauche a une largeur fixe de 210 pixels, soit environ 24 caractères. Si le nom de catégorie que vous indiquez est trop long pour tenir dans la largeur définie du volet de navigation gauche, ce nom est tronqué. Le nom complet ne s’affiche que si le pointeur de la souris est posé dessus. Evitez d’utiliser des noms de catégorie qui seront tronqués. Les deux exemples suivants illustrent les noms de catégories qui conviennent et ceux qui sont tronqués :
+Lorsque vous spécifiez des noms de catégorie, créez-les afin qu’ils s’affichent correctement dans le volet de navigation de Workspace. Par défaut, le volet de navigation de gauche a une largeur fixe de 210 pixels, soit environ 24 caractères. Si le nom de la catégorie que vous indiquez est trop long pour tenir dans la largeur fixe du volet de navigation de gauche, il est tronqué. Le nom complet s’affiche uniquement lorsque le pointeur de la souris le survole. Evitez de tronquer les noms de catégorie. Les exemples suivants illustrent les noms de catégorie qui conviennent et ceux qui sont tronqués :
 
 **Nom de la catégorie qui est adapté :** présence et absence.
 
 **Nom de la catégorie qui est tronqué :** présence et absence (France).
 
-Dans Workspace, les processus d’une catégorie s’affichent en général sous forme de cartes dans la page Démarrer le processus. En général, l’écran peut afficher six cartes pour une catégorie avant que l’utilisateur ne doive le faire défiler afin de visualiser les autres cartes. Comme le défilement de l’écran rend la recherche d’un processus plus difficile, pensez à limiter chaque catégorie à six processus ou, en fonction de votre résolution, au nombre de processus susceptibles d’être affichés à l’écran sans avoir recours au défilement.
+Dans Workspace, les processus d’une catégorie sont généralement affichés sous forme de cartes sur la page Start Process. En règle générale, il est possible d’afficher six cartes pour une catégorie avant que l’utilisateur n’ait à faire défiler l’écran pour afficher les cartes restantes. Comme le défilement rend la recherche d’un processus plus difficile, pensez à limiter chaque catégorie à six processus ou, selon votre résolution, au nombre de processus pouvant être affichés à l’écran sans avoir besoin de défilement.
 
-Lorsque vous utilisez MySQL en tant que base de données AEM forms, Administration Console n’est pas en mesure de différencier les noms des deux catégories qui ne diffèrent que par l’utilisation de caractères étendus. Par exemple, si vous créez une catégorie appelée abcde et une autre appelée âbcdè, elles sont considérées comme identiques.
+Si vous utilisez MySQL comme base de données d’AEM forms, Administration Console ne peut pas distinguer deux noms de catégorie qui ne diffèrent que par l’utilisation de caractères étendus. Par exemple, si vous créez une catégorie nommée abcde et une autre appelée âbcdè, elles sont considérées comme identiques.
 
-## Ajout d’une catégorie {#add-a-category}
+## Ajouter une catégorie {#add-a-category}
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
-1. Cliquez sur Ajouter. Si vous souhaitez ajouter une sous-catégorie, sélectionnez une catégorie et cliquez ensuite sur Ajouter.
-1. Dans la zone Nom, saisissez le nom de la catégorie, puis dans la zone Description, saisissez une description.
-1. Cliquez sur Ajouter. La catégorie s’affiche dans la page Gestion des catégories.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
+1. Cliquez sur Ajouter. Si vous souhaitez ajouter une sous-catégorie, sélectionnez une catégorie, puis cliquez sur Ajouter.
+1. Dans la zone Name, saisissez le nom de la catégorie, puis, dans la zone Description, saisissez une description de la catégorie.
+1. Cliquez sur Ajouter. La catégorie s’affiche sur la page Gestion des catégories .
 
    ***Remarque ** : vous êtes limité à cinq niveaux de hiérarchie lorsque vous créez des catégories.*
 
-## Modification d’une catégorie {#edit-a-category}
+## Modifier une catégorie {#edit-a-category}
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
-1. Sélectionnez la catégorie que vous souhaitez modifier et cliquez sur Modifier. Vous pouvez également cliquer deux fois sur une catégorie pour la modifier.
-1. Modifiez le nom de la catégorie dans la zone Nom.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
+1. Sélectionnez la catégorie à modifier, puis cliquez sur Modifier. Vous pouvez également double-cliquer sur une catégorie à modifier.
+1. Editez le nom de la catégorie dans la zone Nom .
 
-## Suppression d’une catégorie {#remove-a-category}
+## Supprimer une catégorie {#remove-a-category}
 
-Vous ne pouvez supprimer que les catégories que vous n’utilisez pas.
+Vous pouvez supprimer uniquement les catégories qui ne sont pas utilisées.
 
-1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
-1. Dans la page Gestion des catégories, cochez la case correspondant à la catégorie à supprimer, puis cliquez sur Supprimer. Cette catégorie n’est plus affichée.
+1. Dans Administration Console, cliquez sur Services > Applications et services > Gestion des catégories.
+1. Sur la page Gestion des catégories, cochez la case correspondant à la catégorie à supprimer, puis cliquez sur Supprimer. La catégorie n’est plus affichée.

@@ -8,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1143'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 99%
 
 ---
 
@@ -29,8 +29,8 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris d
    * Éléments de travail correspondant à des actions que vous devez effectuer sur le contenu de la page.
 
       * Ils sont le produit des étapes **Participant** du workflow.
-   * Éléments d’échec, pour permettre aux administrateurs et administratrices d’effectuer à nouveau l’étape qui a échoué.
 
+   * Éléments d’échec, pour permettre aux administrateurs et administratrices d’effectuer à nouveau l’étape qui a échoué.
 
 Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et prendre des mesures.
 
@@ -47,7 +47,6 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >* [Workflows](/help/sites-authoring/workflows.md)
 >* [Formulaires](/help/forms/home.md)
 >
-
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
 
@@ -114,22 +113,22 @@ Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres 
 
 * **Vue Calendrier**
 
-   Pour la **vue Calendrier**, vous pouvez configurer les éléments suivants :
+  Pour la **vue Calendrier**, vous pouvez configurer les éléments suivants :
 
    * **Regrouper par**
    * **Planification** ou **Aucun**
    * **Taille des cartes**
 
-   ![wf-92](assets/wf-92.png)
+  ![wf-92](assets/wf-92.png)
 
 * **Vue Liste**
 
-   Pour la **vue Liste**, vous pouvez configurer le mécanisme de tri :
+  Pour la **vue Liste**, vous pouvez configurer le mécanisme de tri :
 
    * **Champ de tri**
    * **Ordre de tri**
 
-   ![wf-83](assets/inbox-settings.png)
+  ![wf-83](assets/inbox-settings.png)
 
 ### Boîte de réception - Contrôle d’administration {#inbox-admin-control}
 
@@ -149,7 +148,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
    * **Supprimer la colonne** : appuyez sur le l’icône ![supprimer](assets/delete_updated.svg) pour supprimer la colonne de la boîte de réception d’AEM.
    * **Déplacer la colonne** : faites glisser l’icône ![déplacer](assets/move_updated.svg) pour déplacer une colonne vers un nouvel emplacement dans la boîte de réception d’AEM.
 
-   ![admin-control](assets/admin-control-column-customize.png)
+  ![admin-control](assets/admin-control-column-customize.png)
 
 * **Personnalisation de l’image de marque**
 
@@ -181,6 +180,7 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
       * afficher les propriétés de l’élément ;
       * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions ;
       * ouvrir la documentation connexe.
+
    * **Revenir** à une étape précédente.
    * Afficher le payload pour un workflow.
    * Créer un projet à partir de l’élément.
@@ -190,7 +190,6 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
    >Pour plus d’informations, voir :
    >
    >* Éléments de workflow – [Participation aux workflows](/help/sites-authoring/workflows-participating.md)
-
 
 1. Une action démarre en fonction de l’élément sélectionné, par exemple :
 
@@ -204,10 +203,9 @@ L’option Contrôle d’administration n’est visible que pour les membres du 
 
    Selon qu’une boîte de dialogue, une page de documentation ou un assistant a été ouvert, vous pouvez :
 
-   * Confirmer l’action appropriée, par exemple Réaffecter.
+   * confirmer l’action appropriée ; par exemple, Réaffecter.
    * Annuler l’action.
    * Flèche vers l’arrière ; par exemple, si une page de documentation ou un assistant d’action a été ouvert, vous pouvez revenir à la boîte de réception.
-
 
 ## Création d’une tâche {#creating-a-task}
 
@@ -260,9 +258,11 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-authoring/pro
       * **Date de début**
       * **Date d’échéance**
       * **Utilisateur** et rôle
+
    * **Avancé**
 
       * **Nom**
+
    >[!NOTE]
    >
    >Voir [Création d’un projet](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) pour obtenir des informations complètes.

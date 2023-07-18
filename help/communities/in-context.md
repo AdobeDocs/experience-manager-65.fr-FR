@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,11 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
    * Sélectionner une nouvelle publication
    * Saisie de l’objet
 
-      Quand changer le nectar dans le mangeur d&#39;oiseaux Humming
+     Quand changer le nectar dans le mangeur d&#39;oiseaux Humming
 
    * Entrez le texte du corps
 
-      Je n&#39;ai pas eu beaucoup de succès quand je raccroche une mangeoire d&#39;oiseaux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Ai-je besoin de le modifier plus tôt ?
+     Je n&#39;ai pas eu beaucoup de succès quand je raccroche une mangeoire d&#39;oiseaux colibris chaque année. Il semble qu&#39;ils viennent un jour ou deux alors c&#39;est tout. Je le change une fois par semaine est-ce trop long ? Ai-je besoin de le modifier plus tôt ?
 
    * Sélectionner une publication
    * Sélectionner Déconnexion
@@ -71,7 +71,7 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
    * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
-      Je change la mienne une fois par semaine et je les reçois de mai à octobre.
+     Je change la mienne une fois par semaine et je les reçois de mai à octobre.
 
    * Sélectionner une réponse
    * Sélectionner Déconnexion
@@ -79,10 +79,10 @@ Pour plus d’informations sur les groupes d’utilisateurs de la communauté, c
 * Connectez-vous en tant qu’Andrew Schaeffer (andrew.schaeffer@trashymail.com)
 
    * Sélectionner un forum
-   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus
+   * Pour la rubrique &quot;Hummingbird&quot;, sélectionnez En savoir plus.
    * Saisissez le commentaire correspondant à la fonction Publier la réponse .
 
-      Je vends du nectar et des mangeoires - visitez https://my.viral.url/
+     Je vends du nectar et des mangeoires - visitez https://my.viral.url/
 
    * Sélectionner une réponse
    * Sélectionner Déconnexion

@@ -11,26 +11,26 @@ content-type: reference
 discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
-workflow-type: ht
-source-wordcount: '546'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 83%
 
 ---
 
 # Mise en œuvre d’un composant React pour SPA {#implementing-a-react-component-for-spa}
 
-Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de structures SPA.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente un exemple d’adaptation d’un composant React simple et existant pour le faire fonctionner avec l’éditeur de SPA d’AEM.
 
 >[!NOTE]
 >
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Présentation {#introduction}
 
-Grâce à un contrat simple et léger requis par AEM et établi entre la SPA et l’éditeur de SPA d’Adobe, il est facile d’utiliser une application JavaScript existante et de l’adapter à une SPA dans AEM.
+Grâce au contrat simple et léger qui est requis par AEM et établi entre l’SPA et l’éditeur d’Adobe, l’adaptation d’une application JavaScript existante pour l’utiliser avec un  dans l’ est simple.
 
 Cet article illustre l’exemple du composant Météo de la SPA d’exemple We.Retail Journal.
 

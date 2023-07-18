@@ -8,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 100%
 >* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles. En outre, des fonctionnalités supplémentaires sont disponibles dans certaines consoles. Vous trouverez des informations spécifiques et plus détaillées sur les consoles individuelles et leurs fonctionnalités associées sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) et de la [modification de pages](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
-
 
 ## L’écran de bienvenue {#the-welcome-screen}
 
@@ -87,13 +86,13 @@ La console **Sites web** propose deux volets grâce auxquels vous pouvez parcour
 
 * Volet de gauche
 
-   Présente l’arborescence de vos sites Web et les pages dans ces sites Web.
+  Présente l’arborescence de vos sites Web et les pages dans ces sites Web.
 
-   Présente également des informations sur d’autres aspects d’AEM, y compris les projets, les plans directeurs et les ressources.
+  Présente également des informations sur d’autres aspects d’AEM, y compris les projets, les plans directeurs et les ressources.
 
 * Volet de droite
 
-   Présente les pages (à l’emplacement sélectionné dans le volet de gauche) et permet d’utiliser des actions.
+  Présente les pages (à l’emplacement sélectionné dans le volet de gauche) et permet d’utiliser des actions.
 
 À partir de là, vous pouvez [gérer vos pages](/help/sites-authoring/managing-pages.md) à l’aide de la barre d’outils ou d’un menu contextuel, ou encore en ouvrant une page afin de réaliser d’autres actions.
 
@@ -105,7 +104,7 @@ La console **Sites web** propose deux volets grâce auxquels vous pouvez parcour
 
 ## Accès à l’Aide {#accessing-help}
 
-Sur diverses consoles (par exemple, la console Sites web), le bouton **Aide** est également disponible et permet d’ouvrir le partage de packages ou le site de documentation.
+Sur diverses consoles (par exemple, Sites web), il existe également **Aide** est disponible. Il ouvre Package Share ou le site de documentation.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -120,9 +119,9 @@ La console **Sites web** répertorie vos pages de contenu dans une arborescence 
    * répertorier les pages enfants dans le volet de droite.
    * Cela développe également la structure dans le volet de gauche.
 
-      Pour des raisons de performances, cette action dépend du nombre de nœuds enfants. Avec une installation standard, cette méthode d’extension fonctionne avec un nombre de nœuds enfants inférieur ou égal à `30`.
+     Pour des raisons de performances, cette action dépend du nombre de nœuds enfants. Avec une installation standard, cette méthode d’extension fonctionne avec un nombre de nœuds enfants inférieur ou égal à `30`.
 
-* Un double-clic sur le nom de la page (volet de gauche) développe également l’arborescence. Cependant, étant donné que la page est ouverte en même temps, cet effet est moins visible.
+* Un double-clic sur le nom de la page (volet de gauche) développe également l’arborescence, mais comme la page est ouverte en même temps, cet effet n’est pas si évident.
 
 >[!NOTE]
 >

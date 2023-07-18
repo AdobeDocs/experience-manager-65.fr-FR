@@ -1,7 +1,7 @@
 ---
 title: Composants AEM – Notions de base
 seo-title: AEM Components - The Basics
-description: Lorsque vous commencez à développer de nouveaux composants, vous devez comprendre les bases de leur structure et de leur configuration.
+description: Lorsque vous commencez à développer de nouveaux composants, vous devez comprendre les principes de base de leur structure et de leur configuration.
 seo-description: When you start to develop new components you need to understand the basics of their structure and configuration
 uuid: 0225b34d-5ac4-40c3-b226-0c9b24bdf782
 contentOwner: Chris Bohnert
@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: ht
-source-wordcount: '4948'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '4953'
+ht-degree: 84%
 
 ---
 
 # Composants AEM – Notions de base{#aem-components-the-basics}
 
-Lorsque vous commencez à développer de nouveaux composants, vous devez comprendre les bases de leur structure et de leur configuration.
+Lorsque vous commencez à développer de nouveaux composants, vous devez comprendre les principes de base de leur structure et de leur configuration.
 
-Ce processus implique de lire la théorie et d’étudier le vaste éventail d’implémentations de composants possibles dans une instance AEM standard. Cette dernière approche est légèrement compliquée dans la mesure où AEM prend toujours en charge l’IU classique même s’il offre désormais une nouvelle IU tactile, moderne et standard.
+Ce processus implique de lire la théorie et d’étudier le vaste éventail d’implémentations de composants possibles dans une instance AEM standard. Cette dernière approche est légèrement compliquée par le fait que, bien que AEM soit passée à une nouvelle interface utilisateur standard, moderne et tactile, elle continue de prendre en charge l’IU classique.
 
 ## Présentation {#overview}
 
@@ -37,23 +37,23 @@ Avant de commencer à configurer ou coder votre composant, vous devez vous poser
 * Devez-vous créer votre composant de toutes pièces ou pouvez-vous hériter des bases d’un composant existant ?
    * Inutile de réinventer la roue.
    * Dans AEM, plusieurs mécanismes permettent d’hériter et d’étendre les détails d’une définition d’un autre composant, y compris le remplacement, le recouvrement et le module de fusion de ressources Sling ([Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)).
-* Votre composant demande-t-il une logique pour sélectionner/manipuler le contenu ?
+* Votre composant aura-t-il besoin d’une logique pour sélectionner/manipuler le contenu ?
    * La logique doit rester distincte de la couche de l’interface utilisateur. HTL est conçu pour faciliter cette distinction.
-* Votre composant a-t-il besoin d’une mise en forme CSS ?
-   * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments HTML afin de pouvoir les modifier au moyen de fichiers CSS externes.
-* Quels aspects de sécurité dois-je prendre en considération ?
+* Votre composant aura-t-il besoin d’une mise en forme CSS ?
+   * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments HTML afin que vous puissiez les modifier via des fichiers CSS externes.
+* Quels aspects de sécurité dois-je prendre en compte ?
    * Consultez [Liste de contrôle de sécurité - Bonnes pratiques de développement](/help/sites-administering/security-checklist.md#development-best-practices) pour plus de détails.
 
-### IU tactile vs IU classique {#touch-enabled-vs-classic-ui}
+### IU tactile ou classique {#touch-enabled-vs-classic-ui}
 
-Avant toute considération sérieuse sur le développement de composants, vous devez savoir quelle IU vos auteurs vont utiliser :
+Avant toute discussion sérieuse sur le développement de composants, vous devez savoir quelle interface utilisateur vos auteurs utiliseront :
 
 * **Interface utilisateur optimisée pour les écrans tactiles**
-   L’[interface utilisateur standard](/help/sites-developing/touch-ui-concepts.md) repose sur l’expérience utilisateur unifiée d’Adobe Marketing Cloud, et utilise les technologies sous-jacentes de l’[IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) et de l’[IU Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
+  L’[interface utilisateur standard](/help/sites-developing/touch-ui-concepts.md) repose sur l’expérience utilisateur unifiée d’Adobe Marketing Cloud, et utilise les technologies sous-jacentes de l’[IU Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui) et de l’[IU Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 * **IU classique**
 Interface utilisateur basée sur la technologie ExtJS introduite avec CQ 6.4.
 
-Voir [Recommandations d’IU destinées aux clients](/help/sites-deploying/ui-recommendations.md) pour plus de détails.
+Voir [Recommendations de l’interface utilisateur pour les clients](/help/sites-deploying/ui-recommendations.md) pour plus d’informations.
 
 Les composants peuvent être implémentés de manière à prendre en charge l’IU tactile, l’IU classique ou les deux. Si vous étudiez une instance standard, vous pouvez également remarquer la présence de composants prêts à l’emploi qui ont été conçus à l’origine pour l’IU classique ou l’IU tactile, ou les deux.
 
@@ -65,15 +65,15 @@ Pour cette raison, nous allons aborder dans cette page les notions de base des d
 
 ### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
-Il est recommandé de garder le code responsable du balisage et du rendu distinct de celui qui contrôle la logique utilisée pour sélectionner le contenu du composant.
+Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
 Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Cette logique (facultative) est appelée à partir de HTL avec une commande spécifique. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
 
-### HTL vs JSP {#htl-vs-jsp}
+### HTL et JSP {#htl-vs-jsp}
 
-HTL est un langage de modèle HTML introduit avec AEM 6.0.
+HTL est un langage de modèle HTML introduit avec AEM 6.0.
 
-Le choix entre l’utilisation de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) ou de JSP (Java Server Pages) lors du développement de vos propres composants devrait être simple à faire dans la mesure où HTL est aujourd’hui le langage de script recommandé pour AEM.
+La discussion sur l’utilisation [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) ou JSP (Java Server Pages) lors du développement de vos propres composants doit être simple, car HTL est désormais le langage de script recommandé pour AEM.
 
 HTL et JSP peuvent être utilisés pour développer des composants de l’IU classique et de l’IU tactile. Bien que la tendance laisse à supposer que HTL est réservé à l’IU tactile et JSP à l’IU classique, c’est une idée reçue que l’on attribue à une synchronisation fortuite. L’IU tactile et HTL ont été intégrés à AEM à peu près en même temps. Puisque HTL est aujourd’hui le langage recommandé, il est utilisé pour les nouveaux composants, qui sont plus souvent développés pour l’IU tactile.
 
@@ -83,41 +83,41 @@ HTL et JSP peuvent être utilisés pour développer des composants de l’IU cla
 
 ### Développer ses propres composants {#developing-your-own-components}
 
-Pour créer vos propres composants à utiliser dans une IU donnée, voir (après avoir lu la présente page) :
+Pour créer vos propres composants pour l’interface utilisateur appropriée, voir (après avoir lu cette page) :
 
 * [Composants AEM pour l’IU tactile](/help/sites-developing/developing-components.md)
 * [Composants AEM pour l’IU classique](/help/sites-developing/developing-components-classic.md)
 
-Pour commencer rapidement, une méthode consiste à copier un élément existant, puis à effectuer les modifications de votre choix. Pour apprendre à créer vos propres composants et les ajouter au système de paragraphes, voir :
+Pour commencer rapidement, une méthode consiste à copier un élément existant, puis à effectuer les modifications de votre choix. Pour savoir comment créer vos propres composants et les ajouter au système de paragraphes, voir :
 
-* [Développement de composants](/help/sites-developing/developing-components-samples.md) (axé sur l’IU tactile)
+* [Développement de composants](/help/sites-developing/developing-components-samples.md) (axé sur l’interface utilisateur tactile)
 
 ### Déplacement de composants vers l’instance de publication {#moving-components-to-the-publish-instance}
 
 Les composants de rendu de contenu doivent être déployés sur la même instance AEM que le contenu. Par conséquent, tous les composants utilisés pour la création et le rendu des pages sur l’instance d’auteur doivent être déployés sur l’instance de publication. Une fois déployés, les composants sont disponibles pour le rendu des pages activées.
 
-Utilisez les outils suivants pour déplacer vos composants vers l’instance de publication :
+Utilisez les outils suivants pour déplacer vos composants vers l’instance de publication :
 
-* [Utilisez le gestionnaire de modules](/help/sites-administering/package-manager.md) pour ajouter vos composants à un module et les déplacer vers une autre instance AEM.
-* [Utilisez l’outil de réplication Activer l’arborescence](/help/sites-authoring/publishing-pages.md#manage-publication) pour répliquer les composants.
+* [Utilisez le gestionnaire de packages](/help/sites-administering/package-manager.md) pour ajouter vos composants à un package et les déplacer vers une autre instance AEM.
+* [Utilisation de l’outil de réplication Activer l’arborescence](/help/sites-authoring/publishing-pages.md#manage-publication) pour répliquer les composants.
 
 >[!NOTE]
 >
->Ces mécanismes servent également à transférer votre composant entre d’autres instances, par exemple de l’instance de développement vers celle de test.
+>Ces mécanismes peuvent également être utilisés pour le transfert de votre composant entre d’autres instances, par exemple, de votre développement vers votre instance de test.
 
-### Les composants à identifier dès le départ {#components-to-be-aware-of-from-the-start}
+### Composants à connaître dès le début {#components-to-be-aware-of-from-the-start}
 
 * Page :
 
    * AEM comporte le composant *page* (`cq:Page`).
-   * C’est un type spécifique de ressource important dans la gestion de contenu.
-      * Le composant page correspond à une page Web où est stocké du contenu pour votre site Web.
+   * Il s’agit d’un type spécifique de ressource important pour la gestion de contenu.
+      * Une page correspond à une page web contenant du contenu pour votre site web.
 
 * Systèmes de paragraphes :
 
-   * Le système de paragraphe est un composeur majeur d’un site Web car il gère une liste de paragraphes. Il sert à contenir et à structurer les composants individuels qui stockent le contenu réel.
-   * Vous pouvez créer, déplacer, copier et supprimer des paragraphes dans le système de paragraphe.
-   * Vous pouvez également sélectionner les composants pouvant être utilisés dans un système de paragraphe spécifique.
+   * Le système de paragraphe est un composeur majeur d’un site Web car il gère une liste de paragraphes. Il est utilisé pour contenir et structurer les composants individuels qui contiennent le contenu réel.
+   * Vous pouvez créer, déplacer, copier et supprimer des paragraphes dans le système de paragraphes.
+   * Vous pouvez également sélectionner les composants à utiliser dans un système de paragraphes spécifique.
    * Il existe différents systèmes de paragraphes disponibles dans une instance standard (par exemple `parsys`, ` [responsivegrid](/help/sites-authoring/responsive-layout.md)`).
 
 ## Structure {#structure}
@@ -139,7 +139,7 @@ Le type de ressource est un élément clé de la structure.
 * La structure du contenu déclare les intentions.
 * Le type de ressource les implémente.
 
-Ceci est une abstraction qui permet de s’assurer que même lorsque l’aspect change au fil du temps, l’intention reste la durée.
+Il s’agit d’une abstraction qui permet de s’assurer que même lorsque l’apparence change au fil du temps, l’intention reste le temps.
 
 ### Définition du composant {#component-definition}
 
@@ -148,7 +148,7 @@ Ceci est une abstraction qui permet de s’assurer que même lorsque l’aspect 
 La définition d’un composant peut être décomposée comme suit :
 
 * Les composants AEM sont basés sur [Sling](https://sling.apache.org/documentation.html).
-* Les composants AEM sont (généralement) stockés sous :
+* Les composants AEM se trouvent (généralement) sous :
 
    * HTL : `/libs/wcm/foundation/components`
    * JSP : `/libs/foundation/components`
@@ -161,15 +161,15 @@ La définition d’un composant peut être décomposée comme suit :
 
    * Propriétés jcr :
 
-      Liste de propriétés jcr. Celles-ci sont variables et certaines peuvent être facultatives si la structure de base d’un nœud de composant, ses propriétés et ses sous-nœuds sont définis par la définition `cq:Component`.
+     Liste de propriétés jcr. Celles-ci sont variables et certaines peuvent être facultatives si la structure de base d’un nœud de composant, ses propriétés et ses sous-nœuds sont définis par la définition `cq:Component`.
 
    * Ressources :
 
-      Elles définissent les éléments statiques utilisés par le composant.
+     Elles définissent les éléments statiques utilisés par le composant.
 
    * Scripts :
 
-   Utilisés pour implémenter le comportement de l’instance résultante du composant.
+  Utilisés pour implémenter le comportement de l’instance résultante du composant.
 
 * **Nœud racine** :
 
@@ -183,27 +183,27 @@ La définition d’un composant peut être décomposée comme suit :
 
       * `icon.png` - Icône du composant.
       * `thumbnail.png` - Vignette affichée si le composant est listé dans le système de paragraphe.
+
    * IU tactile
 
-      * Voir la section [Icône de composant dans l’IU tactile](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour plus de détails.
-
+      * Voir la section [Icône de composant dans l’interface utilisateur tactile](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) pour plus d’informations.
 
 * **Nœuds enfants essentiels** :
 
    * `cq:editConfig (cq:EditConfig)` - Définit les propriétés de modification du composant et permet au composant d’apparaître dans le navigateur de composants ou le sidekick.
 
-      Remarque : si le composant possède une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
+     Remarque : si le composant possède une boîte de dialogue, elle apparaît automatiquement dans le navigateur de composants ou le sidekick, même si le cq:editConfig n’existe pas.
 
    * `cq:childEditConfig (cq:EditConfig)` – Contrôle les aspects de l’IU de création pour les composants enfants qui ne définissent pas leur propre `cq:editConfig`.
    * Interface utilisateur optimisée pour les écrans tactiles :
 
       * `cq:dialog` (`nt:unstructured`) - Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
       * `cq:design_dialog` (`nt:unstructured`) - Modification de la conception du composant.
+
    * Interface utilisateur classique :
 
       * `dialog` (`cq:Dialog`) - Boîte de dialogue pour ce composant. Définit l’interface permettant à l’utilisateur de configurer le composant et/ou de modifier le contenu.
       * `design_dialog` (`cq:Dialog`) - Modification de la conception du composant.
-
 
 #### Icône de composant dans l’IU tactile {#component-icon-in-touch-ui}
 
@@ -214,12 +214,12 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
 1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
-      * Par exemple « Im » pour Image
-      * Le titre localisé sera utilisé pour construire l’abréviation.
+      * Par exemple, « Im » pour « Image »
+      * Le titre localisé sera utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
-   * La taille des icônes des composants standard est de 20 x 20 pixels.
-      * Les icônes plus grandes sont réduites (côté client).
+   * La taille des icônes des composants standard est de 20 x 20 pixels.
+      * Les icônes plus grandes seront réduites (côté client).
    * La couleur recommandée est rgb(112, 112, 112) > # 707070
    * L’arrière-plan des icônes de composants standard est transparent.
    * Seuls les fichiers `.png` et `.svg` sont pris en charge.
@@ -284,7 +284,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   </tr>
   <tr>
    <td><code>cq:dialog</code></td>
-   <td><code>nt:unstructured</code> </td>
+   <td><code>nt:unstructured</code><br /> </td>
    <td>Définition de la boîte de dialogue de modification pour l’IU tactile.</td>
   </tr>
   <tr>
@@ -315,7 +315,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>Si elle est définie, cette propriété sert d’ID de cellule. Pour plus d’informations, reportez-vous à <a href="https://helpx.adobe.com/fr/experience-manager/kb/DesigneCellId.html">l’article de la base de connaissances sur la création d’ID de cellule de conception</a>.<br /> </td>
+   <td>Si elle est définie, cette propriété sert d’ID de cellule. Pour plus d’informations, reportez-vous à l’article de la base de connaissances <a href="https://helpx.adobe.com/fr/experience-manager/kb/DesigneCellId.html">Comment les ID de cellule de conception sont-ils créés ?</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -345,7 +345,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>Chemin d’accès à un nœud à utiliser comme modèle de contenu lorsque le composant est ajouté depuis le navigateur de composants ou le sidekick. Doit être un chemin absolu, non relatif au nœud du composant.<br />Sauf si vous souhaitez réutiliser du contenu déjà disponible ailleurs, cela n’est pas obligatoire, et <code>cq:template</code> est suffisant (voir ci-dessous).</td>
+   <td>Chemin d’accès à un nœud à utiliser comme modèle de contenu lorsque le composant est ajouté depuis le navigateur de composants ou le sidekick. Il doit s’agir d’un chemin d’accès absolu, et non relatif au noeud de composant.<br />Sauf si vous souhaitez réutiliser du contenu déjà disponible ailleurs, cela n’est pas obligatoire, et <code>cq:template</code> est suffisant (voir ci-dessous).</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -374,7 +374,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   </tr>
   <tr>
    <td><code>&lt;breadcrumb.jsp&gt;</code></td>
-   <td><code>nt:file</code> </td>
+   <td><code>nt:file</code><br /> </td>
    <td>Fichier de script.<br /> </td>
   </tr>
   <tr>
@@ -385,20 +385,20 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
   <tr>
    <td><code>thumbnail.png</code></td>
    <td><code>nt:file</code></td>
-   <td>Vignette facultative affichée lorsque le composant est déplacé depuis le sidekick.<br /> </td>
+   <td>Miniature facultative affichée lorsque le composant est déplacé à partir de Sidekick.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-Si nous nous intéressons au composant **Text** (l’une ou l’autre des versions), nous pouvons voir ces éléments :
+Si nous regardons le **Texte** (l’une ou l’autre des versions), nous pouvons voir ces éléments :
 
 * HTL (`/libs/wcm/foundation/components/text`)
 
-   ![chlimage_1-241](assets/chlimage_1-241.png)
+  ![chlimage_1-241](assets/chlimage_1-241.png)
 
 * JSP (`/libs/foundation/components/text`)
 
-   ![screen_shot_2012-02-13at60457pm](assets/screen_shot_2012-02-13at60457pm.png)
+  ![screen_shot_2012-02-13at60457pm](assets/screen_shot_2012-02-13at60457pm.png)
 
 Les propriétés d’intérêt particulier sont les suivantes :
 
@@ -421,66 +421,64 @@ Les nœuds d’enfant d’un intérêt particulier sont les suivants :
 
 ### Boîtes de dialogue {#dialogs}
 
-Les boîtes de dialogue constituent un élément majeur de votre composant car elles fournissent une interface permettant aux auteurs de configurer et de commenter ce composant.
+Les boîtes de dialogue sont un élément clé de votre composant, car elles fournissent une interface permettant aux auteurs de configurer et de fournir des informations sur ce composant.
 
-En fonction de la complexité du composant, la boîte de dialogue peut nécessiter un ou plusieurs onglets pour s’assurer qu’elle soit de petite taille et pour trier les champs de saisie.
+Selon la complexité du composant, votre boîte de dialogue peut avoir besoin d’un ou de plusieurs onglets, afin de garder la boîte de dialogue courte et de trier les champs d’entrée.
 
-Les définitions de boîte de dialogue sont spécifiques à l’IU :
+Les définitions de boîte de dialogue sont spécifiques à l’interface utilisateur :
 
 >[!NOTE]
 >
->* Pour des raisons de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique, si aucune boîte de dialogue n’a été définie pour l’IU tactile.
+>* À des fins de compatibilité, l’IU tactile peut utiliser la définition d’une boîte de dialogue d’IU classique lorsqu’aucune boîte de dialogue n’a été définie pour l’IU tactile.
 >* Les [outils de modernisation d’AEM](/help/sites-developing/modernization-tools.md) servent à étendre/convertir les composants pour lesquels les boîtes de dialogue sont seulement définies pour l’IU classique.
 >
-
 
 * Interface utilisateur optimisée pour les écrans tactiles
    * Les nœuds `cq:dialog` (`nt:unstructured`) :
       * définissent la boîte de dialogue pour la modification du contenu de ce composant ;
-      * sont spécifiques à l’IU tactile
-      * sont définis à l’aide de composants de l’IU Granite
+      * spécifique à l’IU tactile.
+      * sont définis à l’aide des composants de l’IU Granite ;
       * ont une propriété `sling:resourceType`, comme structure de contenu Sling standard ;
       * peuvent avoir une propriété `helpPath` pour définir la ressource d’aide contextuelle (chemin absolu ou relatif) accessible lorsque l’icône d’aide (l’icône ? ) est sélectionnée.
          * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
          * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
 
-   ![chlimage_1-242](assets/chlimage_1-242.png)
+  ![chlimage_1-242](assets/chlimage_1-242.png)
 
-   Dans la boîte de dialogue, chaque champ est défini :
+  Dans la boîte de dialogue, chaque champ est défini :
 
-   ![screen_shot_2012-02-13at60937pm](assets/screen_shot_2012-02-13at60937pm.png)
+  ![screen_shot_2012-02-13at60937pm](assets/screen_shot_2012-02-13at60937pm.png)
 
 * Interface utilisateur classique
    * Les nœuds `dialog` (`cq:Dialog`) :
       * définissent la boîte de dialogue pour la modification du contenu de ce composant ;
-      * spécifiques à l’IU classique
-      * sont définis à l’aide de widgets ExtJS
+      * spécifique à l’IU classique
+      * sont définis à l’aide des widgets ExtJS ;
       * possèdent une propriété `xtype` qui fait référence à ExtJS ;
       * peuvent avoir une propriété `helpPath` pour définir la ressource d’aide contextuelle (chemin absolu ou relatif) accessible lorsque le bouton **Aide** est sélectionné.
          * Pour les composants prêts à l’emploi, il s’agit souvent d’une page dans la documentation.
          * Si aucun `helpPath` n’est spécifié, l’URL par défaut (page de présentation de la documentation) est affichée.
 
-   ![chlimage_1-243](assets/chlimage_1-243.png)
+  ![chlimage_1-243](assets/chlimage_1-243.png)
 
-   Dans la boîte de dialogue, chaque champ est défini :
+  Dans la boîte de dialogue, chaque champ est défini :
 
-   ![chlimage_1-244](assets/chlimage_1-244.png)
+  ![chlimage_1-244](assets/chlimage_1-244.png)
 
-   Dans une boîte de dialogue classique :
+  Dans une boîte de dialogue classique :
 
    * vous pouvez créer une boîte de dialogue définie en tant que `cq:Dialog` qui fournira un seul onglet (comme dans le composant text). Si vous avez besoin de plusieurs onglets, comme dans le composant textimage, la boîte de dialogue peut être définie comme `cq:TabPanel`.
    * un `cq:WidgetCollection` (`items`) sert de base pour les champs de saisie (`cq:Widget`) ou d’autres onglets (`cq:Widget`). Cette hiérarchie peut être étendue.
 
-
 ### Boîtes de dialogue de conception {#design-dialogs}
 
-Les boîtes de dialogue de conception sont très similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent une interface permettant aux auteurs de configurer et de fournir des détails de conception pour ce composant.
+Les boîtes de dialogue de conception sont très similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent l’interface permettant aux auteurs de configurer et de fournir des détails de conception pour ce composant.
 
-[Les boîtes de dialogue de conception sont disponibles en mode Conception](/help/sites-authoring/default-components-designmode.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, les composants **Title** et **Image** ont tous deux des boîtes de dialogue de conception, alors que le composant **Text** n’en a pas.
+[Les boîtes de dialogue de conception sont disponibles en mode de conception](/help/sites-authoring/default-components-designmode.md), bien qu’ils ne soient pas nécessaires pour tous les composants, par exemple : **Titre** et **Image** toutes deux comportent des boîtes de dialogue de conception, alors que **Texte** ne le fait pas.
 
-La boîte de dialogue de conception pour le système de paragraphe (par exemple parsys) est un cas particulier. Elle permet à l’utilisateur de définir d’autres composants spécifiques à rendre sélectionnables (depuis le navigateur de composants ou le sidekick) sur la page.
+La boîte de dialogue de conception du système de paragraphes (par exemple, parsys) est un cas particulier, car elle permet à l’utilisateur de sélectionner d’autres composants spécifiques (depuis l’explorateur de composants ou le sidekick) sur la page.
 
-### Ajout d’un composant au système de paragraphe {#adding-your-component-to-the-paragraph-system}
+### Ajout de votre composant au système de paragraphes {#adding-your-component-to-the-paragraph-system}
 
 Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour rendre un composant sélectionnable dans un système de paragraphes, vous pouvez :
 
@@ -501,11 +499,11 @@ Si nous créons et configurons une instance du composant **Titre** sur la page 
 
 * Interface utilisateur optimisée pour les écrans tactiles
 
-   ![chlimage_1-246](assets/chlimage_1-246.png)
+  ![chlimage_1-246](assets/chlimage_1-246.png)
 
 * Interface utilisateur classique
 
-   ![screen_shot_2012-02-01at34257pm](assets/screen_shot_2012-02-01at34257pm.png)
+  ![screen_shot_2012-02-01at34257pm](assets/screen_shot_2012-02-01at34257pm.png)
 
 Ensuite, nous pouvons voir la structure du contenu créé dans le référentiel :
 
@@ -520,15 +518,15 @@ En particulier, si vous vous intéressez au texte actuel d’un composant **Titr
 
 * dans le contenu, ceci génère la propriété `jcr:title` qui stocke le contenu de l’auteur.
 
-Les propriétés définies dépendent des définitions individuelles. Bien qu’elles puissent être plus complexes que dans les exemples ci-dessus, elles suivent toujours les mêmes principes simples.
+Les propriétés définies dépendent des définitions individuelles. Bien qu’elles puissent être plus complexes qu’auparavant, elles suivent toujours les mêmes principes de base.
 
 ## Hiérarchie et héritage des composants {#component-hierarchy-and-inheritance}
 
-Les composants d’AEM sont soumis à trois hiérarchies différentes :
+Les composants d’AEM sont soumis à 3 hiérarchies différentes :
 
 * **Hiérarchie du type de ressource**
 
-   Elle est utilisée pour étendre des composants à l’aide de la propriété `sling:resourceSuperType`. Cela permet au composant d’hériter d’attributs. Par exemple, un composant Text hérite de divers attributs du composant standard.
+  Elle est utilisée pour étendre des composants à l’aide de la propriété `sling:resourceSuperType`. Cela permet au composant d’hériter d’attributs. Par exemple, un composant Text hérite de divers attributs du composant standard.
 
    * scripts (résolus par Sling)
    * boîtes de dialogue
@@ -536,49 +534,49 @@ Les composants d’AEM sont soumis à trois hiérarchies différentes :
 
 * **Hiérarchie des conteneurs**
 
-   Cette option permet de renseigner les paramètres de configuration du composant enfant. Elle est généralement utilisée dans un scénario parsys.
+  Cette option permet de renseigner les paramètres de configuration du composant enfant. Elle est généralement utilisée dans un scénario parsys.
 
-   Par exemple, les paramètres de configuration des boutons de la barre de modification, la disposition de jeux de contrôles (barres de modification, survol), la disposition des boîtes de dialogue (ancrée, flottante) peuvent être définis sur le composant parent.
+  Par exemple, les paramètres de configuration des boutons de la barre de modification, la disposition de jeux de contrôles (barres de modification, survol), la disposition des boîtes de dialogue (ancrée, flottante) peuvent être définis sur le composant parent.
 
-   Les paramètres de configuration (liés à la fonctionnalité de modification) dans `cq:editConfig` et `cq:childEditConfig` sont propagés.
+  Les paramètres de configuration (liés à la fonctionnalité de modification) dans `cq:editConfig` et `cq:childEditConfig` sont propagés.
 
 * **Hiérarchie d’inclusion**
 
-   Paramètre imposé lors de l’exécution par la séquence d’inclusions.
+  Paramètre imposé lors de l’exécution par la séquence d’inclusions.
 
-   Cette hiérarchie est utilisée par le concepteur, qui à son tour sert de base pour divers aspects de conception du rendu, notamment les informations de disposition, les informations css, les composants disponibles dans un parsys, etc.
+  Cette hiérarchie est utilisée par le concepteur, qui à son tour sert de base pour divers aspects de conception du rendu, notamment les informations de disposition, les informations css, les composants disponibles dans un parsys, etc.
 
 ## Comportement de modification {#edit-behavior}
 
-Cette section explique comment configurer le comportement de modification d’un composant. Cela inclut les attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur local et les écouteurs liés aux événements sur le composant.
+Cette section explique comment configurer le comportement de modification d’un composant. Cela inclut les attributs tels que les actions disponibles pour le composant, les caractéristiques de l’éditeur statique et les écouteurs liés aux événements sur le composant.
 
-La configuration est commune à l’IU tactile et à l’IU classique, à l’exception de certaines différences.
+La configuration est commune aux interfaces utilisateur tactile et classique, avec toutefois certaines différences spécifiques.
 
 Le comportement de modification d’un composant est configuré en ajoutant un nœud `cq:editConfig` de type `cq:EditConfig` en dessous du nœud de composant (de type `cq:Component`) et en ajoutant des propriétés spécifiques et des nœuds enfants. Les propriétés et les nœuds enfants suivants sont disponibles :
 
-* [Propriétés du nœud `cq:editConfig`](#configuring-with-cq-editconfig-properties) :
+* Propriétés du nœud [`cq:editConfig`](#configuring-with-cq-editconfig-properties) :
 
    * `cq:actions` (`String array`) : définit les actions pouvant être effectuées sur le composant.
    * `cq:layout` (`String`) : définit la façon dont le composant est modifié dans l’IU classique.
    * `cq:dialogMode` (`String`) : définit le mode d’ouverture de la boîte de dialogue des composants dans l’IU classique.
 
       * Dans l’IU tactile, les boîtes de dialogue flottent toujours en mode bureau et s’ouvrent automatiquement en mode plein écran sur mobile.
+
    * `cq:emptyText` (`String`) : définit le texte qui est affiché quand aucun contenu visuel n’est présent.
    * `cq:inherit` (`Boolean`) : définit si les valeurs manquantes sont héritées du composant.
    * `dialogLayout` (chaîne) : définit le mode d’ouverture de la boîte de dialogue.
 
-
-* [Nœuds enfants `cq:editConfig`](#configuring-with-cq-editconfig-child-nodes) :
+* Nœuds enfants [`cq:editConfig`](#configuring-with-cq-editconfig-child-nodes) :
 
    * `cq:dropTargets` (type de nœud `nt:unstructured`) : définit une liste de cibles de dépôt pouvant accepter une ressource déposée à partir de l’outil de recherche de contenu.
 
       * Les cibles de dépôt multiples sont uniquement disponibles dans l’IU classique.
       * Dans l’IU tactile, une seule cible est autorisée.
+
    * `cq:actionConfigs` (type de nœud `nt:unstructured`) : définit une liste de nouvelles actions ajoutées à la liste cq:actions.
    * `cq:formParameters` (type de nœud `nt:unstructured`) : définit des paramètres supplémentaires qui sont ajoutés au formulaire de la boîte de dialogue.
    * `cq:inplaceEditing` (type de nœud `cq:InplaceEditingConfig`) : définit une configuration de modification en place pour le composant.
    * `cq:listeners` (type de nœud `cq:EditListenersConfig`) : définit ce qui se passe avant ou après une action sur le composant.
-
 
 >[!NOTE]
 >
@@ -596,15 +594,15 @@ Le comportement de modification d’un composant est configuré en ajoutant un n
 </jcr:root>
 ```
 
-Il existe de nombreuses configurations dans le référentiel. Vous pouvez facilement rechercher des propriétés spécifiques ou des nœuds enfants :
+Il existe de nombreuses configurations dans le référentiel. Vous pouvez facilement rechercher des propriétés spécifiques ou des noeuds enfants :
 
-* Pour rechercher une propriété du nœud `cq:editConfig`, par exemple `cq:actions`, vous pouvez utiliser l’outil de requête dans **CRXDE Lite** et faire une recherche avec la chaîne de requête XPath suivante :
+* Pour rechercher une propriété de la variable `cq:editConfig` noeud, par exemple : `cq:actions`, vous pouvez utiliser l’outil Requête dans **CRXDE Lite** et effectuez une recherche avec la chaîne de requête XPath suivante :
 
-   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
+  `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Pour rechercher un nœud enfant de `cq:editConfig`, par exemple, vous pouvez rechercher `cq:dropTargets`, qui est de type `cq:DropTargetConfig`, vous pouvez utiliser l’outil de requête dans **CRXDE Lite** et faire une recherche avec la chaîne de requête XPath suivante :
+* Pour rechercher un noeud enfant de `cq:editConfig`, par exemple, vous pouvez rechercher `cq:dropTargets`, de type `cq:DropTargetConfig`; vous pouvez utiliser l’outil de requête dans** CRXDE Lite** et effectuer une recherche avec la chaîne de requête XPath suivante :
 
-   `//element(cq:dropTargets, cq:DropTargetConfig)`
+  `//element(cq:dropTargets, cq:DropTargetConfig)`
 
 ### Espaces réservés de composant {#component-placeholders}
 
@@ -1031,7 +1029,6 @@ Le nœud `cq:listeners` (type de nœud `cq:EditListenersConfig`) définit ce qui
 >* Pour les composants imbriqués, les valeurs des propriétés *doivent* être `REFRESH_PAGE` : >
 >  * `aftermove`
 >  * `aftercopy`
-
 
 Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple (où `project.customerAction` est une méthode statique) :
 

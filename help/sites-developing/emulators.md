@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '631'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 64%
 
 ---
 
@@ -22,34 +22,34 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page, comme un appareil mobile ou un client de messagerie électronique.
+Adobe Experience Manager (AEM) permet aux auteurs d’afficher une page dans un émulateur qui simule l’environnement dans lequel un utilisateur final consulte la page, par exemple sur un appareil mobile ou dans un client de messagerie.
 
 Le framework de l’émulateur AEM :
 
-* fournit des fonctions de création de contenu dans une interface utilisateur (IU) simulée, par exemple, un appareil mobile ou un client de messagerie électronique (utilisé pour rédiger des bulletins d’information) ;
+* Permet la création de contenu dans une interface utilisateur (IU) simulée, par exemple, un appareil mobile ou un client de messagerie électronique (utilisé pour créer des newsletters).
 * adapte le contenu de la page selon l’IU simulée ;
 * permet de créer des émulateurs personnalisés.
 
 >[!CAUTION]
 >
->Cette fonction est uniquement prise en charge dans l’IU classique.
+>Cette fonctionnalité est prise en charge uniquement dans l’interface utilisateur classique.
 
 ## Caractéristiques des émulateurs {#emulators-characteristics}
 
-Un émulateur :
+Un émulateur :
 
-* repose sur ExtJS ;
-* fonctionne sur le DOM de la page ;
-* a une apparence définie via CSS ;
-* prend en charge les modules externes (par exemple, le module externe de rotation sur des appareils mobiles) ;
-* est uniquement actif sur l’auteur ;
+* est basé sur ExtJS ;
+* Fonctionne sur le DOM de la page.
+* Son aspect est réglé au moyen de CSS.
+* Prend en charge les modules externes (par exemple, le module externe de rotation de l’appareil mobile).
+* est principal seulement sur l’auteur ;
 * possède son composant de base à l’adresse `/libs/wcm/emulator/components/base`.
 
-### Transformation du contenu par l’émulateur {#how-the-emulator-transforms-the-content}
+### Comment l’émulateur transforme le contenu {#how-the-emulator-transforms-the-content}
 
-L’émulateur fonctionne en encapsulant les contenus du corps HTML dans des balises div d’émulateurs. Par exemple, le code HTML qui suit :
+L’émulateur fonctionne en encapsulant le contenu du corps du HTML dans des DIV de l’émulateur. Par exemple, le code HTML qui suit :
 
 ```xml
 <body>
@@ -91,49 +91,49 @@ Deux balises div ont été ajoutées :
 
 * La balise div avec l’ID `cq-emulator` contenant l’ensemble de l’émulateur.
 
-* La balise div avec l’ID `cq-emulator-content` représentant la zone viewport/screen/content du périphérique où réside le contenu de la page.
+* La balise div avec l’ID `cq-emulator-content` représentant la zone viewport/screen/content de l’appareil où réside le contenu de la page.
 
 De nouvelles classes CSS sont également attribuées aux nouvelles balises div d’émulateurs : elles représentent le nom de l’émulateur actuel.
 
-Les modules externes d’un émulateur peuvent développer la liste des classes CSS attribuées, comme dans l’exemple du module externe de rotation qui insère une classe « vertical » ou « horizontal » en fonction de la rotation du périphérique actif.
+Les modules externes d’un émulateur peuvent développer la liste des classes CSS attribuées, comme dans l’exemple du module externe de rotation qui insère une classe « vertical » ou « horizontal » en fonction de la rotation de l’appareil actif.
 
 De cette manière, l’aspect complet de l’émulateur peut être contrôlé à l’aide de classes CSS correspondant aux ID et classes CSS des balises div d’émulateurs.
 
 >[!NOTE]
 >
->Il est recommandé que le projet HTML encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, les résultats peuvent être imprévisibles.
+>Il est recommandé que le HTML du projet encapsule le contenu du corps dans une seule balise div, comme dans l’exemple ci-dessus. Si le contenu du corps contient plusieurs balises, des résultats imprévisibles peuvent s’afficher.
 
 ### Émulateurs mobiles {#mobile-emulators}
 
-Les émulateurs mobiles existants :
+Les émulateurs mobiles existants :
 
-* se trouvent sous /libs/wcm/mobile/components/emulators ;
+* Sont sous /libs/wcm/mobile/components/emulators.
 * sont disponibles par le biais de la servlet JSON à l’adresse :
 
-   http://localhost:4502/bin/wcm/mobile/emulators.json
+  http://localhost:4502/bin/wcm/mobile/emulators.json
 
 Lorsque le composant de page s’appuie sur le composant de page mobile (`/libs/wcm/mobile/components/page`), la fonctionnalité d’émulateur est automatiquement intégrée dans la page par le mécanisme suivant :
 
-* Le composant de page mobile `head.jsp` inclut le composant init de l’émulateur associé au groupe de périphériques (uniquement en mode de création) et le CSS de rendu du groupe de périphériques via :
+* Le composant de page mobile `head.jsp` inclut le composant init de l’émulateur associé au groupe d’appareils (uniquement en mode de création) et le CSS de rendu du groupe d’appareils via :
 
-   `deviceGroup.drawHead(pageContext);`
+  `deviceGroup.drawHead(pageContext);`
 
 * La méthode `DeviceGroup.drawHead(pageContext)` inclut le composant init de l’émulateur, c’est-à-dire qu’elle appelle le `init.html.jsp` du composant d’émulateur. Si le composant d’émulateur ne possède pas son propre `init.html.jsp` et s’appuie sur l’émulateur mobile de base (`wcm/mobile/components/emulators/base)`, le script init de l’émulateur mobile de base est appelé (`/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* Le script init de l’émulateur mobile de base définit par le biais d’un code JavaScript :
+* Le script init de l’émulateur de base mobile définit via JavaScript :
 
    * la configuration de tous les émulateurs qui sont définis pour la page (emulatorConfigs) ;
    * le gestionnaire d’émulateur qui intègre la fonctionnalité de l’émulateur dans la page via :
 
-      `emulatorMgr.launch(config)` ;
+     `emulatorMgr.launch(config)` ;
 
-      Le gestionnaire d’émulateur est défini par :
+     Le gestionnaire d’émulateur est défini par :
 
-      `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### Création d’un émulateur mobile personnalisé {#creating-a-custom-mobile-emulator}
 
-Pour créer un émulateur mobile personnalisé :
+Pour créer un émulateur mobile personnalisé :
 
 1. En-dessous de `/apps/myapp/components/emulators`, créez le composant ; `myemulator` (type de nœud : `cq:Component`).
 
@@ -152,4 +152,5 @@ Pour créer un émulateur mobile personnalisé :
    * Nom = `canRotate`, Type = `Boolean`, Valeur = `true` : pour inclure la fonctionnalité de rotation.
 
    * Nom = `touchScrolling`, type = `Boolean`, valeur = `true` : pour inclure la fonctionnalité de défilement tactile.
+
    Plus de fonctionnalités peuvent être ajoutées en définissant vos propres modules externes.

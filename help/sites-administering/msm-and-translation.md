@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '351'
 ht-degree: 47%
 
 ---
@@ -40,7 +40,7 @@ Vous pouvez créer efficacement du contenu pour les sites internationaux et mult
 * Utilisez [Multi Site Manager](/help/sites-administering/msm.md) pour effectuer les tâches suivantes :
 
    * Réutilisez le contenu du site maître et les traductions pour créer des sites pour d’autres pays et cultures.
-   * Veillez à limiter l’utilisation de Multi Site Manager au contenu dans une langue, par exemple le gabarit anglais -> branches de langue anglaise dans les sites de pays, le gabarit français -> branches de langue française dans les sites de pays.
+   * Veillez à limiter l’utilisation de Multi Site Manager au contenu dans une langue, par exemple, le gabarit anglais -> branches de langue anglaise dans les sites de pays, le gabarit français -> branches de langue française dans les sites de pays.
    * Si nécessaire, désolidarisez des éléments des Live Copies pour ajouter des détails de localisation.
 
 Le diagramme suivant illustre la manière dont les principaux concepts sont en corrélation (mais n’affiche pas tous les niveaux/éléments impliqués) :
@@ -51,7 +51,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 >
 >Dans ces scénarios et dans d’autres scénarios comparables, MSM ne gère pas les différentes versions de langues en tant que telles.
 >
->* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (un gabarit global, par exemple) vers les Live Copies (les sites locaux, par exemple), dans les limites d’une langue.
+>* [MSM](/help/sites-administering/msm.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit global) vers les Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
 >* Le [translation](/help/sites-administering/translation.md) les fonctionnalités d’intégration d’AEM, en association avec des services de gestion de traduction tiers, gèrent les langues et la traduction de contenu dans ces différentes langues.
 >
 >Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.

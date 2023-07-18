@@ -8,10 +8,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '1228'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1227'
+ht-degree: 99%
 
 ---
 
@@ -50,6 +50,7 @@ Tout d’abord, vérifiez que la connexion entre les instances de création et d
 >[!NOTE]
 >
 >Vérifiez que la propriété **acMapping** sur le nœud **jcr:content** de la page est définie sur **mapRecipient** ou **profile**, lorsque vous utilisez respectivement Adobe Campaign 6.1.x ou Adobe Campaign Standard.
+>
 
 ### Création d’un formulaire {#creating-a-form}
 
@@ -79,7 +80,7 @@ Les formulaires dédiés à Adobe Campaign comportent des composants spécifiqu
 Cette section présente uniquement les liens spécifiques à Adobe Campaign. Pour plus d’informations sur l’utilisation des formulaires dans Adobe Experience Manager, consultez [Composants en mode création](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md).
 
 1. Accédez au formulaire que vous souhaitez modifier.
-1. Dans la boîte à outils, sélectionnez **Page** > **Propriétés de page…** et accédez ensuite à l’onglet **Services cloud** de la fenêtre contextuelle.
+1. Dans la boîte à outils, sélectionnez **Page** > **Propriétés de page…** et accédez ensuite à l’onglet **Services cloud** de la fenêtre pop-up.
 1. Ajoutez le service Adobe Campaign en cliquant sur **Ajouter un service** et en choisissant ensuite la configuration qui correspond à votre instance Adobe Campaign dans la liste déroulante du service. Cette configuration est effectuée lors de la configuration de la connexion entre les différentes instances. Pour plus d’informations, consultez [Connexion d’AEM à Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign).
 
    >[!NOTE]
@@ -100,7 +101,7 @@ Cette section présente uniquement les liens spécifiques à Adobe Campaign. Po
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Configurez les champs ajoutés en cliquant deux fois dessus. L’onglet **Adobe Campaign** vous permet de lier le champ à un champ dans le tableau de destinataires Adobe Campaign. Vous pouvez également indiquer si le champ fait partie de la clé de réconciliation qui permet aux destinataires qui sont déjà présents dans la base de données Adobe Campaign d’être reconnus.
+1. Paramétrez les champs ajoutés en double-cliquant dessus. L’onglet **Adobe Campaign** vous permet de lier le champ à un champ dans le tableau de destinataires Adobe Campaign. Vous pouvez également indiquer si le champ fait partie de la clé de réconciliation qui permet aux destinataires qui sont déjà présents dans la base de données Adobe Campaign d’être reconnus.
 
    >[!CAUTION]
    >

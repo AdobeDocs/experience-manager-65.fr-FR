@@ -2,9 +2,9 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '891'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '895'
 ht-degree: 100%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 Pour réduire l’impact négatif sur les performances, Adobe Experience Manager traite de manière asynchrone certaines opérations de longue durée et requérant de nombreuses ressources système. Le traitement asynchrone implique de mettre plusieurs tâches en file d’attente et de les exécuter en série selon la disponibilité des ressources système.
 
-Ces opérations incluent :
+Ces opérations comprennent :
 
-* Suppression de nombreuses ressources
+* La suppression de nombreuses ressources
 * Déplacement de nombreuses ressources ou de ressources avec de nombreuses références
 * Exportation/importation de métadonnées de ressources en masse
 * Récupération des ressources dépassant la limite de seuil définie à partir d’un déploiement Experience Manager distant
@@ -32,7 +32,7 @@ Vous pouvez afficher l’état des tâches asynchrones à partir du tableau de b
 
 ## Surveillance du statut des opérations asynchrones {#monitor-the-status-of-asynchronous-operations}
 
-Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-authoring/inbox.md) et par email (si activé).
+Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-authoring/inbox.md) et par e-mail (si activé).
 
 Pour afficher l’état des opérations asynchrones en détail, accédez à la page **[!UICONTROL État des tâches asynchrones]**.
 
@@ -42,11 +42,11 @@ Pour afficher l’état des opérations asynchrones en détail, accédez à la p
 
    ![État et détails des opérations asynchrones](assets/async-operation-status.png)
 
-   Pour déterminer la progression d’une opération particulière, reportez-vous à la valeur dans la colonne **[!UICONTROL État]**. Selon la progression, l’un des états suivants s’affiche :
+   Pour déterminer la progression d’une opération particulière, reportez-vous à la valeur dans la colonne **[!UICONTROL État]**. Selon la progression, l’un des statuts suivants s’affiche :
 
-   * **[!UICONTROL Actif]** : l’opération est en cours de traitement.
+   * **[!UICONTROL Active]** : l’opération est en cours de traitement.
 
-   * **[!UICONTROL Réussite]** : l’opération est terminée.
+   * **[!UICONTROL Succès]** : l’opération est terminée.
 
    * **[!UICONTROL Échec]** ou **[!UICONTROL Erreur]** : l’opération n’a pas pu être traitée.
 
@@ -74,7 +74,7 @@ Pour afficher l’état des opérations asynchrones en détail, accédez à la p
 
 AEM exécute une tâche de purge quotidienne à 1 h du matin afin de supprimer les tâches asynchrones terminées depuis plus d’un jour.
 
-Vous pouvez modifier la planification de la tâche de purge et la durée de conservation des détails des tâches terminées avant leur suppression. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles les détails sont conservés à un moment donné dans le temps.
+Vous pouvez modifier la planification de la tâche de purge et la durée pendant laquelle les détails des tâches terminées sont conservés avant d’être supprimées. Vous pouvez également configurer le nombre maximal de tâches terminées pour lesquelles des détails sont conservés à tout moment.
 
 1. Dans la navigation globale, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Ouvrez la **[!UICONTROL Tâche planifiée de purge des tâches asynchrones Adobe Granite]**.
@@ -101,7 +101,7 @@ Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil,
 
    ![Seuil de suppression des ressources](assets/async-delete-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de déplacement de ressources asynchrones {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 
    ![Seuil de déplacement des ressources](assets/async-move-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de déplacement de page asynchrones {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 
    ![Seuil de déplacement de page](assets/async-page-move.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de MSM asynchrones {#configuring-asynchronous-msm-operations}
 
 1. Dans la navigation globale, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement de page asynchrones.]**
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès ou échec.
 
    ![Configuration MSM](assets/async-msm.png)
 
@@ -148,4 +148,3 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 >* [Importation de métadonnées de ressources](/help/assets/metadata.md#import-metadata).
 >* [Exportation de métadonnées de ressources](/help/assets/metadata.md#export-metadata).
 >* [Utilisez les ressources connectées pour partager des ressources de gestion des ressources numériques issues de déploiements distants](/help/assets/use-assets-across-connected-assets-instances.md).
-

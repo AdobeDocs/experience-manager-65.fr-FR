@@ -1,7 +1,7 @@
 ---
 title: API Query Builder
 seo-title: Query Builder API
-description: La fonctionnalité du Query Builder Asset Share est exposée via une API Java et une API REST.
+description: Les fonctionnalités du Query Builder Asset Share sont exposées par le biais d’une API Java et d’une API REST.
 seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
 contentOwner: msm-service
@@ -12,32 +12,32 @@ discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
-workflow-type: ht
-source-wordcount: '2313'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2315'
+ht-degree: 72%
 
 ---
 
 # API Query Builder{#query-builder-api}
 
-La fonctionnalité du [Query Builder Asset Share](/help/assets/assets-finder-editor.md) est exposée via une API Java et une API REST. Cette section décrit ces API.
+La fonctionnalité de la variable [Générateur de requêtes de partage de ressources](/help/assets/assets-finder-editor.md) est exposée par le biais d’une API Java et d’une API REST. Cette section décrit ces API.
 
 Query Builder côté serveur ([`QueryBuilder`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html)) accepte une description de requête, crée et exécute une requête XPath, filtre éventuellement le jeu de résultats et, si vous le souhaitez, extrait également des facettes.
 
 La description de requête correspond simplement à un ensemble de prédicats ([`Predicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/Predicate.html)). Par exemple, un prédicat de texte intégral correspond à la fonction `jcr:contains()` dans XPath.
 
-Pour chaque type de prédicat, il existe un composant Évaluateur ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) qui sait comment en effectuer la gestion pour XPath, pour le filtrage et pour l’extraction de facettes. Il est très facile de créer des évaluateurs personnalisés, qui sont activés via l’exécutable du composant OSGi.
+Pour chaque type de prédicat, il existe un composant Évaluateur ([`PredicateEvaluator`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html)) qui sait comment en effectuer la gestion pour XPath, pour le filtrage et pour l’extraction de facettes. Il est très facile de créer des évaluateurs personnalisés, qui sont connectés via le composant OSGi runtime.
 
-L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP, les réponses étant envoyées au format JSON.
+L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP avec les réponses envoyées dans JSON.
 
 >[!NOTE]
 >
->L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager en utilisant l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Adobe Experience Manager à l’aide de l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=fr).
+>L’API QueryBuilder est créée à l’aide de l’API JCR. Vous pouvez également interroger le JCR Adobe Experience Manager à l’aide de l’API JCR depuis un lot OSGi. Pour plus d’informations, voir [Adobe Experience Manager à l’aide de l’API JCR](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=fr).
 
 ## Session Gem {#gem-session}
 
-[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=fr) est une série de sessions techniques approfondies sur Adobe Experience Manager, dispensées par des experts Adobe. Cette session consacrée à Query Builder s’avère très utile pour se familiariser avec l’outil.
+[AEM Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=fr) est une série de sessions techniques approfondies sur Adobe Experience Manager, dispensées par des experts Adobe. Cette session dédiée au Query Builder est très utile pour une vue d’ensemble et l’utilisation de l’outil.
 
 >[!NOTE]
 >
@@ -47,11 +47,11 @@ L’API REST permet d’accéder exactement aux mêmes fonctionnalités via HTTP
 
 Ces exemples sont fournis dans la notation de style des propriétés Java. Pour les utiliser avec l’API Java, utilisez un `HashMap` Java comme dans l’exemple d’API suivant.
 
-Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre installation CQ locale (à l’emplacement par défaut, `http://localhost:4502`). Notez que vous devez vous connecter à votre instance CQ avant d’utiliser ces liens.
+Pour le servlet JSON `QueryBuilder`, chaque exemple comprend un lien vers votre installation CQ locale (à l’emplacement par défaut, `http://localhost:4502`). Notez que vous devez vous connecter à votre instance CQ avant d’utiliser ces liens.
 
 >[!CAUTION]
 >
->Par défaut, le servlet JSON Query Builder affiche un maximum de 10 accès.
+>Par défaut, le servlet json du Query Builder affiche un maximum de 10 accès.
 >
 >L’ajout du paramètre suivant permet au servlet d’afficher tous les résultats de la requête :
 >
@@ -90,9 +90,9 @@ orderby=path
 
 ### Utilisation de p.guessTotal pour renvoyer les résultats {#using-p-guesstotal-to-return-the-results}
 
-L’objectif du paramètre `p.guessTotal` est de renvoyer le nombre approprié de résultats pouvant être affichés en combinant les plus petites valeurs p.offset et p.limit possibles. Utilisé avec des jeux de résultats de grande taille, ce paramètre offre des performances encore meilleures. Cela vous évite de calculer le total (en appelant result.getSize(), par exemple) et de lire tout le jeu de résultats, optimisé jusqu’à l’index et au moteur OAK. Cela peut constituer une différence importante lorsqu’il y a des centaines de milliers de résultats, tant sur le plan de la durée d’exécution que de l’utilisation de la mémoire.
+L’objectif du paramètre `p.guessTotal` est de renvoyer le nombre approprié de résultats pouvant être affichés en combinant les plus petites valeurs p.offset et p.limit possibles. Utilisé avec des jeux de résultats de grande taille, ce paramètre offre des performances encore meilleures. Cela permet d’éviter de calculer le total (par exemple, d’appeler result.getSize()) et de lire l’ensemble de résultats, optimisé jusqu’au moteur et à l’index OAK. Il peut s’agir d’une différence significative lorsqu’il y a 100 000 résultats, à la fois en termes de temps d’exécution et d’utilisation de la mémoire.
 
-L’inconvénient de ce paramètre est que les utilisateurs ne voient pas le total exact. Vous pouvez toutefois définir une valeur minimale, telle que p.guessTotal=1000, de sorte que la lecture soit toujours effectuée jusqu’à 1 000. Vous obtiendrez ainsi des totaux exacts pour des jeux de résultats plus petits. En revanche, pour des résultats supérieurs, vous pouvez simplement afficher « et plus ».
+L’inconvénient de ce paramètre est que les utilisateurs ne voient pas le total exact. Cependant, vous pouvez définir un nombre minimum comme p.guessTotal=1000 afin qu’il soit toujours lu jusqu’à 1 000, de sorte que vous obteniez des totaux exacts pour les jeux de résultats plus petits, mais s’il est plus que cela, vous pouvez uniquement afficher &quot;et plus&quot;.
 
 Ajoutez `p.guessTotal=true` à la requête ci-dessous pour voir comment cela fonctionne :
 
@@ -131,11 +131,11 @@ Elle renvoie la même limite par défaut de 10 résultats avec un décalage de�
 "offset": 0,
 ```
 
-### Mise en œuvre de la pagination {#implementing-pagination}
+### Implémentation de la pagination {#implementing-pagination}
 
-Par défaut, Query Builder fournit également le nombre d’accès. Suivant la taille du résultat, cette opération peut prendre un certain temps, étant donné qu’il est nécessaire de vérifier le contrôle d’accès pour chaque résultat afin de déterminer le nombre exact. Le total est essentiellement utilisé pour implémenter la pagination pour l’IU de l’utilisateur final. Déterminer le nombre exact peut s’avérer particulièrement lent. Aussi, est-il conseillé d’utiliser la fonctionnalité guessTotal pour implémenter la pagination.
+Par défaut, Query Builder fournit également le nombre d’accès. Selon la taille du résultat, cette opération peut prendre un certain temps, car déterminer le nombre exact implique de vérifier chaque résultat pour le contrôle d’accès. Le total est principalement utilisé pour implémenter la pagination pour l’interface utilisateur de l’utilisateur final. Comme la détermination du nombre exact peut être lente, il est recommandé d’utiliser la fonction guessTotal pour mettre en oeuvre la pagination.
 
-L’interface utilisateur peut, par exemple, adapter la méthode suivante :
+Par exemple, l’interface utilisateur peut adapter l’approche suivante :
 
 * Obtenez et affichez le nombre exact d’accès totaux ([SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches) ou le total dans la réponse querybuilder.json) qui est inférieur ou égal à 100 ;
 * Définissez `guessTotal` sur 100 tout en effectuant l’appel vers Query Builder.
@@ -143,7 +143,7 @@ L’interface utilisateur peut, par exemple, adapter la méthode suivante :
 * La réponse peut générer le résultat suivant :
 
    * `total=43`, `more=false` – Indique que le nombre total d’accès est de 43. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les trois pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte descriptif tel que **« 43 résultats trouvés »**.
-   * `total=100`, `more=true` – Indique que le nombre total d’accès est supérieur à 100 et que le nombre exact est inconnu. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les dix pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte tel que **« plus de 100 résultats trouvés »**. Lorsque l’utilisateur accède aux pages suivantes, les appels effectués vers Query Builder augmentent la limite de `guessTotal`, ainsi que celle des paramètres `offset` et `limit`.
+   * `total=100`, `more=true` – Indique que le nombre total d’accès est supérieur à 100 et que le nombre exact est inconnu. L’interface utilisateur peut afficher jusqu’à dix pages dans le cadre de la première page et fournir une pagination pour les dix pages suivantes. Vous pouvez également l’utiliser pour afficher du texte comme **&quot;plus de 100 résultats trouvés&quot;**. Lorsque l’utilisateur accède aux pages suivantes, les appels effectués vers Query Builder augmentent la limite de `guessTotal`, ainsi que celle des paramètres `offset` et `limit`.
 
 Il est également conseillé d’utiliser `guessTotal` lorsque l’IU doit appliquer un défilement infini, afin d’empêcher Query Builder de déterminer le nombre exact d’accès.
 
@@ -325,7 +325,7 @@ séparées par un espace :
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -425,13 +425,13 @@ Pour ces propriétés principales, vous pouvez raccourcir la requête et utilise
 
 >[!NOTE]
 >
->Pour savoir comment créer un lot OSGi qui utilise l’API Query Builder et utiliser ce lot dans une application Adobe Experience Manager, reportez-vous à la section [Création de lots OSGi Adobe CQ qui utilisent l’API Query Builder](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html).
+>Pour savoir comment créer un lot OSGi qui utilise l’API QueryBuilder et utiliser ce lot OSGi dans une application Adobe Experience Manager, voir [Création de lots OSGi Adobe CQ qui utilisent l’API Query Builder](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I.
 
 La même requête exécutée sur HTTP à l’aide du servlet Query Builder (JSON) :
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&type=cq:Page&group.p.or=true&group.1_fulltext=Geometrixx&group.1_fulltext.relPath=jcr:content&group.2_fulltext=Geometrixx&group.2_fulltext.relPath=jcr:content/@cq:tags&p.offset=0&p.limit=20`
 
-## Stockage et chargement de requêtes {#storing-and-loading-queries}
+## Stocker et charger des requêtes {#storing-and-loading-queries}
 
 Les requêtes peuvent être stockées dans le référentiel de manière à pouvoir les utiliser ultérieurement. `QueryBuilder` fournit la méthode `storeQuery` avec la signature suivante :
 
@@ -459,7 +459,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 ## Tests et débogage {#testing-and-debugging}
 
-Pour exécuter et déboguer des requêtes Query Builder, vous pouvez utiliser la console de débogage Query Builder à l’adresse suivante :
+Pour lire et déboguer des requêtes QueryBuilder, vous pouvez utiliser la console du débogueur QueryBuilder à l’adresse
 
 `http://localhost:4502/libs/cq/search/content/querydebug.html`
 
@@ -471,56 +471,56 @@ Une autre solution consiste à utiliser le servlet JSON Query Builder à l’ad
 
 ### Recommandations générales en matière de débogage {#general-debugging-recommendations}
 
-### Obtention d’une requête XPath explicable par le biais de la journalisation {#obtain-explain-able-xpath-via-logging}
+### Obtention d’un XPath explicable via la journalisation {#obtain-explain-able-xpath-via-logging}
 
-Expliquez **toutes** les requêtes pendant le cycle de développement par rapport au jeu d’index cible.
+Expliquer **all** requêtes au cours du cycle de développement par rapport à l’ensemble d’index cible.
 
-* Autorisation des journaux DEBUG pour Query Builder afin d’obtenir la requête XPath explicable sous-jacente
+* Activez les journaux DEBUG pour QueryBuilder afin d’obtenir une requête XPath explicable sous-jacente.
 
    * Accédez à https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Créez un enregistreur pour `com.day.cq.search.impl.builder.QueryImpl` au niveau de **DEBUG**.
 
 * Une fois que DEBUG a été activé pour la classe ci-dessus, les journaux affichent la requête XPath générée par Query Builder.
-* Copiez la requête XPath à partir de l’entrée de journal pour la requête Query Builder associée. Par exemple :
+* Copiez la requête XPath à partir de l’entrée de journal pour la requête QueryBuilder associée. Par exemple :
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath afin d’obtenir le plan de requête.
 
-### Obtention de la requête XPath explicable via le débogueur Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
+### Obtention d’un XPath explicable via le débogueur Query Builder {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Utilisez le débogueur AEM Query Builder pour générer une requête XPath explicable :
+* Utilisez le débogueur QueryBuilder AEM pour générer une requête XPath explicable :
 
-Expliquez **toutes** les requêtes pendant le cycle de développement par rapport au jeu d’index cible.
+Expliquer **all** requêtes au cours du cycle de développement par rapport à l’ensemble d’index cible.
 
-**Obtention d’une requête XPath explicable par le biais de la journalisation**
+**Obtention d’un XPath explicable via la journalisation**
 
-* Autorisation des journaux DEBUG pour Query Builder afin d’obtenir la requête XPath explicable sous-jacente
+* Activez les journaux DEBUG pour QueryBuilder afin d’obtenir une requête XPath explicable sous-jacente.
 
    * Accédez à https://&lt;serveraddress>:&lt;serverport>/system/console/slinglog. Créez un enregistreur pour `com.day.cq.search.impl.builder.QueryImpl` au niveau de **DEBUG**.
 
 * Une fois que DEBUG a été activé pour la classe ci-dessus, les journaux affichent la requête XPath générée par Query Builder.
-* Copiez la requête XPath à partir de l’entrée de journal pour la requête Query Builder associée. Par exemple :
+* Copiez la requête XPath à partir de l’entrée de journal pour la requête QueryBuilder associée. Par exemple :
 
    * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * Collez la requête XPath dans [Expliquer la requête](/help/sites-administering/operations-dashboard.md#explain-query) en tant que XPath afin d’obtenir le plan de requête.
 
-**Obtention de la requête XPath explicable via le débogueur Query Builder**
+**Obtention d’un XPath explicable via le débogueur Query Builder**
 
-* Utilisez le débogueur AEM Query Builder pour générer une requête XPath explicable :
+* Utilisez le débogueur QueryBuilder AEM pour générer une requête XPath explicable :
 
 ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. Indiquez la requête Query Buidler dans le débogueur Query Buidler.
-1. Exécutez la recherche.
-1. Récupérez la requête XPath générée.
+1. Fournissez la requête Query Buidler dans le débogueur Query Builder.
+1. Exécution de la recherche
+1. Obtention du XPath généré
 1. Collez la requête XPath dans Explain Query en tant que XPath afin d’obtenir le plan de requête
 
 >[!NOTE]
 >
->Les requêtes non Query Builder (XPath, JCR-SQL2) peuvent être fournies directement à Explain Query.
+>Les requêtes non Query Builder (XPath, JCR-SQL2) peuvent être fournies directement pour expliquer la requête.
 
-Pour un aperçu du débogage des requêtes avec Query Builder, visionnez la vidéo ci-dessous.
+Pour un aperçu de la procédure de débogage des requêtes avec QueryBuilder, reportez-vous à la vidéo ci-dessous.
 
 >[!NOTE]
 >
@@ -532,7 +532,7 @@ Pour un aperçu du débogage des requêtes avec Query Builder, visionnez la vid
 >
 >La configuration des enregistreurs est décrite à la section [Création de vos propres enregistreurs et rédacteurs](/help/sites-deploying/configure-logging.md#creating-your-own-loggers-and-writers).
 
-Sortie de journal (niveau INFO) de l’implémentation Query Builder lors de l’exécution de la requête décrite à la section Tests et débogage :
+La sortie du journal (niveau INFO) de l’implémentation du Query Builder lors de l’exécution de la requête décrite dans Test et débogage :
 
 ```xml
 com.day.cq.search.impl.builder.QueryImpl executing query (predicate tree):

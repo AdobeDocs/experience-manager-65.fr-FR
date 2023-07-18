@@ -2,10 +2,10 @@
 title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
-workflow-type: ht
-source-wordcount: '792'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 98%
 
 ---
 
@@ -20,18 +20,18 @@ Une mise en œuvre de l’IDE [GraphiQL](https://graphql.org/learn/serving-over-
 >Dans les versions précédentes, un package était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut désormais être supprimé.
 
 >[!NOTE]
->Vous devez avoir [configuré vos points de fin](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
+>Vous devez avoir [configuré vos points d’entrée](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
 L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
 
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
 * créer et accéder aux **[Requêtes persistantes](/help/sites-developing/headless/graphql-api/persisted-queries.md)** ;
-* exécuter vos requêtes pour afficher immédiatement les résultats ;
+* Exécutez vos requêtes pour afficher immédiatement les résultats.
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
 * publier ou dépublier des **Requêtes persistantes** (par exemple : vers et à partir de `dev-publish`) ;
-* Afficher l’**Historique** de vos requêtes précédentes ;
+* afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
 Vous pouvez accéder à l’éditeur de requêtes à partir de :

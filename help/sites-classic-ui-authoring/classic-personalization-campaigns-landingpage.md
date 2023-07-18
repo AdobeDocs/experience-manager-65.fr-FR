@@ -1,5 +1,5 @@
 ---
-title: Pages d’entrée
+title: Pages de destination
 seo-title: Landing Pages
 description: La fonction landing pages permet d’importer rapidement et facilement une conception et un contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur ou une développeuse web pourront être importés, en intégralité ou partiellement.
 seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3335'
-ht-degree: 47%
+ht-degree: 46%
 
 ---
 
-# Pages d’entrée{#landing-pages}
+# Pages de destination{#landing-pages}
 
 La fonction landing pages permet d’importer rapidement et facilement une conception et un contenu directement dans une page AEM. Le code HTML et les ressources connexes préparés par un développeur web pourront être importés, en intégralité ou partiellement. Cette fonctionnalité est utile pour créer des landing pages marketing qui ne sont principales que pendant une durée limitée et qui doivent être créées rapidement.
 
@@ -62,11 +62,11 @@ Voici un exemple de landing page dans AEM :
 
 ### Pages d’entrée mobiles {#mobile-landing-pages}
 
-Une landing page peut également avoir une version mobile de la page. Pour disposer d’une version mobile distincte de la page d’entrée, la conception de l’importation doit comporter deux fichiers HTML : *index.htm(l)* et *mobile.index.htm(l)*.
+Une landing page peut également avoir une version mobile de la page. Pour disposer d’une version mobile distincte de la page de destination, la conception de l’importation doit comporter deux fichiers HTML : *index.htm(l)* et *mobile.index.htm(l)*.
 
-La procédure d’importation de ces pages d’entrée est identique à celle d’une page d’entrée normale ; la conception de page d’entrée est associée à un fichier HTML supplémentaire correspondant à la page d’entrée pour mobiles. Ce fichier HTML doit, lui aussi, disposer d’une balise `div` de canevas avec `id=cqcanvas`, comme c’est le cas pour la page d’entrée pour ordinateurs de bureau. De plus, il prend en charge tous les composants modifiables décrits pour la page d’entrée pour ordinateurs de bureau.
+La procédure d’importation de ces pages de destination est identique à celle d’une page de destination normale ; la conception de page de destination est associée à un fichier HTML supplémentaire correspondant à la page de destination pour mobiles. Ce fichier HTML doit, lui aussi, disposer d’une balise `div` de canevas avec `id=cqcanvas`, comme c’est le cas pour la page de destination pour ordinateurs de bureau. De plus, il prend en charge tous les composants modifiables décrits pour la page de destination pour ordinateurs de bureau.
 
-La page d’entrée pour mobiles est créée en tant que page enfant de la page d’entrée pour ordinateurs de bureau. Pour l’ouvrir, accédez à la page d’entrée dans Sites web et ouvrez la page enfant.
+La page de destination pour mobiles est créée en tant que page enfant de la page de destination pour ordinateurs de bureau. Pour l’ouvrir, accédez à la page d’entrée dans Sites web et ouvrez la page enfant.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -97,7 +97,7 @@ Le composant Texte vous permet de saisir un bloc de texte à l’aide d’un éd
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-Voici un exemple de composant Texte sur une page d’entrée :
+Voici un exemple de composant Texte sur une page de destination :
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -107,7 +107,7 @@ Le composant Titre vous permet d’afficher un titre et de configurer la taille 
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
-Voici un exemple de composant Titre sur une page d’entrée :
+Voici un exemple de composant Titre sur une page de destination :
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
@@ -117,7 +117,7 @@ Le composant d’image affiche une image que vous pouvez faire glisser à partir
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
-Voici un exemple de composant Image sur une page d’entrée :
+Voici un exemple de composant Image sur une page de destination :
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -159,7 +159,7 @@ Voici un exemple de lien de clics publicitaires :
 
 #### Lien graphique {#graphical-link}
 
-Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un lien sur la page d’entrée. Il peut s’agir d’un simple bouton ou d’une image en arrière-plan. Lorsque l’utilisateur clique sur l’image, il est amené à l’URL cible spécifiée dans les propriétés du composant. Cela fait partie de la **Appel à l’action** groupe.
+Vous pouvez utiliser ce composant CTA pour ajouter une image graphique avec un lien sur la page de destination. Il peut s’agir d’un simple bouton ou d’une image en arrière-plan. Lorsque l’utilisateur clique sur l’image, il est amené à l’URL cible spécifiée dans les propriétés du composant. Cela fait partie de la **Appel à l’action** groupe.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -263,7 +263,7 @@ La section suivante décrit les composants disponibles pour les formulaires de p
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-**Formulaire de prospect** Ajoutez ce composant afin d’ajouter un formulaire de prospect à votre page d’entrée. Un formulaire de prospect comprend automatiquement un champ Début du formulaire de prospect et un champ Fin de formulaire de prospect. Entre les deux, vous ajoutez les composants « Formulaire de prospect » décrits dans cette section.
+**Formulaire de prospect** Ajoutez ce composant afin d’ajouter un formulaire de prospect à votre page de destination. Un formulaire de prospect comprend automatiquement un champ Début du formulaire de prospect et un champ Fin de formulaire de prospect. Entre les deux, vous ajoutez les composants « Formulaire de prospect » décrits dans cette section.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -271,7 +271,7 @@ Le composant Formulaire de prospect définit le début et la fin d’un formulai
 
 Après avoir ajouté le formulaire de piste, vous pouvez configurer le début ou la fin du formulaire en cliquant sur **Modifier** dans la barre correspondante.
 
-**Début du formulaire de piste**
+**Début du formulaire de lead**
 
 Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé** :
 
@@ -287,8 +287,8 @@ Deux onglets sont disponibles pour la configuration, **Formulaire** et **Avancé
 
 * Créer un prospect
 * Service de messagerie électronique : Créer un abonné et l’ajouter à la liste : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
-* Service de messagerie électronique : envoyer un message de répondeur automatique. Sélectionnez cette option si vous utilisez un fournisseur de services de messagerie, comme ExactTarget.
-* Service de messagerie électronique : désabonner l’utilisateur de la liste. Sélectionnez cette option si vous utilisez un fournisseur de services de messagerie, comme ExactTarget.
+* Service de messagerie électronique : Envoyer un message de répondeur automatique : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
+* Service de messagerie électronique : Désabonner l’utilisateur de la liste : à utiliser si vous utilisez un fournisseur de services de messagerie tel qu’ExactTarget.
 * Désabonner l’utilisateur
 
 **L’identifiant de formulaire** L’identifiant de formulaire d’un prospect l’identifie de façon unique. Utilisez cet identifiant si plusieurs formulaires figurent sur une seule page ; assurez-vous qu’ils présentent des identifiants différents.
@@ -304,10 +304,10 @@ Il s’agit d’un champ facultatif qui permet de spécifier le chemin à un nœ
 Si vous validez le formulaire dans son intégralité, vous devez également inclure l’un des éléments suivants :
 
 * Un script pour la validation du client
-   ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
 * Un script pour la validation du côté serveur
-   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
 **Configuration de l’action** La Configuration de l’action change en fonction des sélections effectuées dans Options de publication. Lorsque vous sélectionnez, par exemple, Créer un prospect, vous pouvez configurer la liste à laquelle le prospect est ajouté.
 
@@ -355,7 +355,7 @@ Avant de pouvoir importer votre conception de page d’entrée, vous devez crée
 
 >[!NOTE]
 >
->Par défaut, une page d’importateur ne peut être créée que sous les campagnes. Vous pouvez toutefois superposer ce modèle afin de créer une page d’entrée sous `/content/mysite`.
+>Par défaut, une page d’importateur ne peut être créée que sous les campagnes. Vous pouvez toutefois superposer ce modèle afin de créer une page de destination sous `/content/mysite`.
 
 Pour créer une landing page :
 
@@ -383,7 +383,7 @@ En supposant que le module de conception soit prêt, les étapes suivantes décr
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Faites glisser et déposez le module de conception dans la zone de dépôt. Notez que la flèche change de direction lorsqu’un package est glissé dessus.
-1. Après avoir effectué un glisser-déposer, la page d’entrée s’affiche à la place de la page d’importateur. La page d’entrée HTML a bien été importée.
+1. Après avoir effectué un glisser-déposer, la page d’entrée s’affiche à la place de la page d’importateur. La page de destination HTML a bien été importée.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
@@ -431,15 +431,15 @@ Si le module de conception importé présente certains problèmes, par exemple s
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
-### Réinitialisation d’une page d’entrée {#resetting-a-landing-page}
+### Réinitialisation d’une page de destination {#resetting-a-landing-page}
 
-Si vous souhaitez réimporter votre package de conception de la page d’entrée après y avoir apporté des modifications, vous pouvez « effacer » la page d’entrée en cliquant sur **Effacer** dans la partie supérieure de la page d’entrée dans l’interface utilisateur classique ou en cliquant sur Effacer dans le menu Paramètres de l’interface utilisateur optimisée pour les écrans tactiles. La page d’entrée importée est alors supprimée et une page d’importateur vierge est créée.
+Si vous souhaitez réimporter votre module de conception de la page de destination après y avoir apporté des modifications, vous pouvez « effacer » la page de destination en cliquant sur **Effacer** dans la partie supérieure de la page de destination dans l’interface utilisateur classique ou en cliquant sur Effacer dans le menu Paramètres de l’interface utilisateur optimisée pour les écrans tactiles. La page de destination importée est alors supprimée et une page d’importateur vierge est créée.
 
-Lors de l’effacement de la page d’entrée, vous pouvez supprimer les modifications du contenu. Si vous cliquez sur **Non**, les modifications du contenu sont conservées. En d’autres termes, la structure sous-jacente de `jcr:content/importer` est conservée, et seuls le composant de page d’importateur et les ressources situées dans `etc/design` sont supprimés. En revanche, si vous cliquez sur **Oui**, `jcr:content/importer` est également supprimé.
+Lors de l’effacement de la page de destination, vous pouvez supprimer les modifications du contenu. Si vous cliquez sur **Non**, les modifications du contenu sont conservées. En d’autres termes, la structure sous-jacente de `jcr:content/importer` est conservée, et seuls le composant de page d’importateur et les ressources situées dans `etc/design` sont supprimés. En revanche, si vous cliquez sur **Oui**, `jcr:content/importer` est également supprimé.
 
 >[!NOTE]
 >
->Si vous décidez de supprimer les modifications du contenu, toutes les modifications que vous avez effectuées sur la page d’entrée importée, ainsi que toutes les propriétés de page, seront perdues lorsque vous cliquerez sur **Effacer**.
+>Si vous décidez de supprimer les modifications du contenu, toutes les modifications que vous avez effectuées sur la page de destination importée, ainsi que toutes les propriétés de page, seront perdues lorsque vous cliquerez sur **Effacer**.
 
 ### Modification et ajout de composants sur une page d’entrée {#modifying-and-adding-components-on-a-landing-page}
 
@@ -459,7 +459,7 @@ La seule exception est que lorsque vous supprimez une landing page pour ordinate
 
 ### Publier une landing page {#publishing-a-landing-page}
 
-Vous pouvez publier la page d’entrée et toutes ses dépendances comme vous publieriez une page normale.
+Vous pouvez publier la page de destination et toutes ses dépendances comme vous publieriez une page normale.
 
 >[!NOTE]
 >

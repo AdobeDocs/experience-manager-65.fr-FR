@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '222'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 87%
 
 ---
 
@@ -27,14 +27,14 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Permet de basculer entre le mode **Aperçu** et le [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> actuellement sélectionné (par exemple : **Édition**, **Mise en page**, etc.)* |
+| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Permet de basculer entre le mode **Aperçu** et le [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> actuellement sélectionné (par exemple : **Éditer**, **Disposition**, etc.)* |
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |
-|  | `Ctrl-c` | Copier le(s) paragraphe(s) sélectionné(s) |
-|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaîtront pas de l’interface utilisateur tant qu’ils ne seront pas collés) |
+|  | `Ctrl-c` | Copie de paragraphes sélectionnés |
+|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaîtront pas de l’interface utilisateur tant qu’ils ne seront pas collés). |
 |  | `Ctrl-v` | Coller les paragraphes précédemment coupés ou copiés |
-|  | `Ctrl-Backspace` | Supprimer le(s) paragraphe(s) sélectionné(s) |
+|  | `Ctrl-Backspace` | Supprimer les paragraphes sélectionnés |
 | Mode d’**édition** – Éditeur de texte enrichi | `Ctrl-b` | Gras |
 |  | `Ctrl-I` | Italique |
 |  | `Ctrl-u` | Souligné |

@@ -4,9 +4,9 @@ description: Installez, configurez et personnalisez un package de démonstration
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4626'
 ht-degree: 68%
 
 ---
@@ -155,8 +155,8 @@ Cette section contient des informations détaillées et des instructions sur la 
 
 1. Configurez le service pour qu’il se connecte au serveur SMTP de votre choix :
 
-   1. **Nom d’hôte du serveur SMTP** : par exemple (smtp.gmail.com)
-   1. **Port du serveur** : par exemple (465) pour gmail utilisant SSL
+   1. **SMTP Server hostname**: par exemple, (smtp.gmail.com)
+   1. **Port du serveur**: par exemple, (465) pour gmail utilisant SSL
    1. **Utilisateur SMTP** : demo@ &lt;nom_entreprise> .com
    1. **Adresse « De »** : aemformsdemo@adobe.com
 
@@ -240,7 +240,7 @@ Cette section contient des informations détaillées et des instructions sur la 
 1. Accédez à l’onglet « Paramètres d’authentification ».
 1. Saisissez les informations suivantes :
 
-   1. **Racine du service :** par exemple `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
+   1. **Racine du service :** par exemple, `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Type d’authentification :** OAuth 2.0
    1. **Paramètres d’authentification** (voir [Paramètres de configuration cloud MS® Dynamics](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) pour collecter ces informations) :
 
@@ -251,7 +251,7 @@ Cette section contient des informations détaillées et des instructions sur la 
       1. URL du jeton d’accès : par exemple, [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Portée de l’autorisation (**openid**)
       1. En-tête d’authentification (**porteur d’autorisation**)
-      1. Ressource (par exemple `https://msdynamicsserver.api.crm3.dynamics.com`)
+      1. Ressource, par exemple : `https://msdynamicsserver.api.crm3.dynamics.com`
 
    1. Cliquez sur « Connexion à OAuth ».
 
@@ -277,7 +277,7 @@ Les étapes détaillées dans cette section sont incluses pour vous aider à loc
 1. Pour localiser l’URL de ressource/l’URL racine du service, accédez au tableau de bord de l’instance MS® Dynamics.
 1. Dans la barre de navigation supérieure, cliquez sur « Ventes » ou sur votre propre type d’instance, puis sur « Sélectionner les paramètres ».
 1. Cliquez sur &quot;Personnalisations&quot; et &quot;Ressources pour les développeurs&quot; en bas à droite.
-1. Vous y trouverez l’URL racine du service : e.g
+1. Vous y trouverez l’URL racine du service : par exemple,
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 

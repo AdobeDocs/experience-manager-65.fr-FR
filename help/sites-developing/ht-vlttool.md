@@ -1,7 +1,7 @@
 ---
 title: Utilisation de l’outil VLT
 seo-title: How to use the VLT Tool
-description: L’outil Jackrabbit FileVault (VLT) est un outil développé par The Apache Foundation qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers
+description: L’outil Jackrabbit FileVault (VLT) est développé par The Apache Foundation qui mappe le contenu d’une instance Jackrabbit/AEM à votre système de fichiers.
 seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
 uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
@@ -10,16 +10,16 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2718'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2716'
+ht-degree: 86%
 
 ---
 
 # Utilisation de l’outil VLT {#how-to-use-the-vlt-tool}
 
-L’outil Jackrabbit FileVault (VLT) est un outil développé par [The Apache Foundation](https://www.apache.org/) qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers. L’outil VLT propose des fonctions similaires à celles d’un client de système de gestion des versions du code source (par exemple, un client Subversion SVN) pour mettre en œuvre de simples opérations d’archivage, d’extraction et de gestion, ainsi que des options de configuration facilitant la représentation du contenu d’un projet.
+L’outil Jackrabbit FileVault (VLT) est un outil développé par [The Apache Foundation](https://www.apache.org/) qui mappe le contenu d’une instance Jackrabbit/AEM à un système de fichiers. L’outil VLT dispose de fonctions similaires comme client du système de contrôle de code source (tel qu’un client Subversion (SVN)), offrant des opérations normales d’archivage, d’extraction et de gestion, ainsi que des options de configuration pour une représentation flexible du contenu du projet.
 
 L’outil VLT s’exécute à partir de la ligne de commande. Ce document explique comment utiliser l’outil, notamment le démarrer et obtenir de l’aide. Il décrit également toutes les [commandes](#vlt-commands) et [options](#vlt-global-options) disponibles.
 
@@ -29,13 +29,13 @@ Consultez la page [Présentation de Filevault](https://jackrabbit.apache.org/fil
 
 ## Prise en main de VLT {#getting-started-with-vlt}
 
-Pour utiliser VLT, vous devez effectuer les opérations suivantes :
+Pour commencer à utiliser VLT, procédez comme suit :
 
-1. Installer VLT, mettre à jour les variables d’environnement et mettre à jour les fichiers Subversion globaux ignorés.
-1. Configurer le référentiel AEM (si ce n’est pas déjà fait).
-1. Extraire le référentiel AEM.
+1. Installez VLT, mettez à jour les variables d’environnement et mettez à jour les fichiers de subversion globaux ignorés.
+1. Configurez le référentiel AEM (si ce n’est pas déjà fait).
+1. Extrayez le référentiel AEM.
 1. Synchroniser avec le référentiel.
-1. Vérifier si la synchronisation a fonctionné.
+1. Vérifiez si la synchronisation a fonctionné.
 
 ### Installation de l’outil VLT {#installing-the-vlt-tool}
 
@@ -123,7 +123,7 @@ svn co https://svn.server.com/repos/myproject
 Vous devez synchroniser filevault avec le référentiel. Pour ce faire :
 
 1. Dans la ligne de commande, accédez à `content/jcr_root`.
-1. Extrayez le référentiel en tapant ce qui suit (en remplaçant votre numéro de port par **4502** et vos mots de passe administrateur) :
+1. Extrayez le référentiel en saisissant ce qui suit (en substituant votre numéro de port à **4502** et vos mots de passe administrateur) :
 
    ```shell
    vlt --credentials admin:admin co --force http://localhost:4502/crx
@@ -146,9 +146,9 @@ Pour tester la synchronisation :
 1. Validez les modifications : `vlt ci test.jsp`.
 1. Rechargez une page contenant un composant Texte et déterminez si vos modifications ont bien été appliquées.
 
-## Accès à l’aide avec l’outil VLT {#getting-help-with-the-vlt-tool}
+## Obtention d’une aide avec l’outil VLT {#getting-help-with-the-vlt-tool}
 
-Après avoir installé l’outil VLT, vous pouvez accéder à son fichier d’aide à partir de la ligne de commande :
+Après avoir installé l’outil VLT, vous pouvez accéder à son fichier d’aide à partir de la ligne de commande :
 
 ```shell
 vlt --help
@@ -213,7 +213,7 @@ Options:
   <local-path>            the local path
 ```
 
-## Tâches courantes possibles dans VLT {#common-tasks-performed-in-vlt}
+## Tâches courantes exécutées dans VLT {#common-tasks-performed-in-vlt}
 
 Voici quelques tâches courantes effectuées dans VLT. Pour des informations détaillées sur chaque commande, reportez-vous à la description individuelle des [commandes](#vlt-commands).
 
@@ -291,7 +291,7 @@ vlt [options] <command> [arg1 [arg2 [arg3] ..]]
 
 Les options et commandes sont décrites en détail dans les sections suivantes.
 
-## Options globales de VLT {#vlt-global-options}
+## Options globales VLT {#vlt-global-options}
 
 Voici une liste des options VLT disponibles pour toutes les commandes. Reportez-vous à la description individuelle de chaque commande pour plus d’informations sur les autres options disponibles.
 
@@ -318,7 +318,7 @@ Le tableau suivant décrit toutes les commandes VLT disponibles. Reportez-vous �
 | `export` |  | Exporte à partir d’un référentiel JCR (système de fichiers Vault) vers le système de fichiers local, sans fichiers de contrôle. |
 | `import` |  | Importe un système de fichiers local dans un référentiel JCR (système de fichiers Vault). |
 | `checkout` | `co` | Extrait un système de fichiers Vault. Utilisez cette option pour un référentiel JCR initial dans le système de fichiers local. (Remarque : vous devez d’abord extraire le référentiel dans Subversion.) |
-| `analyze` |  | Analyse les modules. |
+| `analyze` |  | Analyse les packages. |
 | `status` | `st` | Imprime le statut des fichiers et des répertoires de travail. |
 | `update` | `up` | Importe les modifications du référentiel dans la copie de travail. |
 | `info` |  | Affiche des informations relatives à un fichier local. |
@@ -362,7 +362,7 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 vlt export http://localhost:4502/crx /apps/geometrixx myproject
 ```
 
-### Import {#import}
+### Importer {#import}
 
 Importe le système de fichiers local (en commençant par `<local-path>` dans le système de fichiers Vault sur `<uri>`. Vous pouvez définir un `<jcr-path>` en tant que racine d’importation. Si `--sync` est défini, les fichiers importés sont automatiquement soumis à un contrôle Vault.
 
@@ -388,9 +388,9 @@ import -v|-s <uri> <local-path> <jcr-path>
 vlt import http://localhost:4502/crx . /
 ```
 
-### Extraction (co) {#checkout-co}
+### Passage en caisse (co) {#checkout-co}
 
-Effectue une extraction initiale à partir d’un référentiel JCR en commençant par &lt;uri> dans le système de fichiers local sur &lt;local-path>. Vous pouvez également ajouter un argument &lt;jcrPath> pour extraire un sous-répertoire de l’arborescence distante. Vous pouvez spécifier des filtres d’espace de travail copiés dans le répertoire META-INF.
+Effectue une extraction initiale à partir d’un référentiel JCR en commençant par &lt;uri> dans le système de fichiers local sur &lt;local-path>. Vous pouvez également ajouter un argument &lt;jcrPath> pour extraire un sous-répertoire de l’arborescence distante. Les filtres Workspace peuvent être spécifiés et copiés dans le répertoire META-INF.
 
 #### Syntaxe {#syntax-2}
 
@@ -432,7 +432,7 @@ vlt --credentials admin:admin co http://localhost:8080/crx
 
 ### Analyse {#analyze}
 
-Analyse les modules.
+Analyse les packages.
 
 #### Syntaxe {#syntax-3}
 
@@ -554,7 +554,7 @@ Annule le statut **conflictuel** des fichiers ou répertoires de travail.
 
 >[!NOTE]
 >
->Cette commande ne résout pas sémantiquement les conflits ni ne supprime les marqueurs de conflit. Elle supprime simplement les fichiers d’artefacts liés au conflit et permet à PATH d’être à nouveau validé.
+>Cette commande ne résout pas sémantiquement les conflits ni ne supprime les marqueurs de conflit. il supprime simplement les fichiers d’artefact liés au conflit et permet à PATH d’être à nouveau validé.
 
 #### Syntaxe {#syntax-9}
 
@@ -571,7 +571,7 @@ resolved -q|-R|--force <file1> [<file2> ...]
 | `--force` | Résout l’élément, même s’il existe des marqueurs de conflit. |
 | `<file> [<file> ...]` | fichier ou répertoire à résoudre |
 
-### Propget {#propget}
+### Propager {#propget}
 
 Imprime la valeur d’une propriété dans des fichiers ou répertoires.
 
@@ -618,7 +618,7 @@ Définit la valeur d’une propriété sur des fichiers ou répertoires.
 >
 >`vlt:mime-type`
 >
->Le type MIME du fichier. Utilisé pour déterminer s’il faut fusionner le fichier. Un type MIME commençant par &#39;text/&#39; (ou un type MIME absent) est traité comme du texte. Tout le reste est traité comme des données binaires.
+>Le type MIME du fichier. Utilisé pour déterminer s’il faut fusionner le fichier. Un type MIME commençant par &#39;text/&#39; (ou un type MIME absent) est traité comme du texte. Tout le reste est traité comme binaire.
 
 #### Syntaxe {#syntax-12}
 
@@ -675,7 +675,7 @@ delete -v|-q|--force <file1> [<file2> ...]
 | `--force` | Force l’exécution de l’opération. |
 | `<file> [<file> ...]` | fichier ou répertoire local à supprimer |
 
-### Diff {#diff}
+### Diff. {#diff}
 
 Affiche les différences entre deux chemins.
 
@@ -744,9 +744,9 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 >
 >`vlt rcp -e ".*\.txt" -r`
 
-### Sync {#sync}
+### Synchronisation {#sync}
 
-Permet de contrôler le service de synchronisation Vault. Sans aucun argument, cette commande tente de soumettre le répertoire de travail en cours au contrôle de synchronisation. Si elle est exécutée dans une extraction vlt, elle utilise le filtre et l’hôte respectifs pour configurer la synchronisation. Si elle est exécutée en dehors d’une extraction vlt, cette commande ajoute le dossier actif à la synchronisation, à condition que le répertoire soit vide.
+Permet de contrôler le service de synchronisation Vault. Sans aucun argument, cette commande tente de soumettre le répertoire de travail en cours au contrôle de synchronisation. Si elle est exécutée dans une extraction vlt, elle utilise le filtre et l’hôte respectifs pour configurer la synchronisation. S’il est exécuté en dehors d’un passage en caisse vlt, il n’enregistre le dossier actif que si le répertoire est vide.
 
 #### Syntaxe {#syntax-18}
 
@@ -781,19 +781,19 @@ Les codes d’état utilisés par VLT sont les suivants :
 
 ## Configuration de la synchronisation FileVault {#setting-up-filevault-sync}
 
-Le service de synchronisation Vault sert à synchroniser le contenu du référentiel avec une représentation locale du système de fichiers et vice versa. Pour cela, il faut installer un service OSGi qui écoutera les modifications du référentiel et analysera le contenu du système de fichiers périodiquement. Il utilise le même format de sérialisation que Vault pour mapper le contenu du référentiel avec le disque.
+Le service de synchronisation Vault est utilisé pour synchroniser le contenu du référentiel avec une représentation locale du système de fichiers et inversement. Pour cela, il faut installer un service OSGi qui écoutera les modifications du référentiel et analysera le contenu du système de fichiers périodiquement. Il utilise le même format de sérialisation que Vault pour mapper le contenu du référentiel avec le disque.
 
 >[!NOTE]
 >
->Le service de synchronisation Vault étant un outil de développement, il est fortement déconseillé de l’utiliser sur un système en production. Notez également que le service peut uniquement être synchronisé avec le système de fichiers local et ne peut pas servir à des activités de développement à distance.
+>Le service de synchronisation Vault étant un outil de développement, il est fortement déconseillé de l’utiliser sur un système en production. Notez également que le service ne peut être synchronisé qu’avec le système de fichiers local et ne peut pas être utilisé pour le développement à distance.
 
-### Installation du service avec vlt {#installing-the-service-using-vlt}
+### Installation du service à l’aide de vlt {#installing-the-service-using-vlt}
 
 La commande `vlt sync install` peut être utilisée pour installer automatiquement le lot de services de synchronisation Vault et sa configuration.
 
-Le lot est installé sous `/libs/crx/vault/install` et le nœud de configuration est créé sous `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Au départ, le service est activé mais aucune racine de synchronisation n’est configurée.
+Le lot est installé sous `/libs/crx/vault/install` et le nœud de configuration est créé sous `/libs/crx/vault/com.day.jcr.sync.impl.VaultSyncServiceImpl`. Au départ, le service est activé, mais aucune racine de synchronisation n’est configurée.
 
-L’exemple suivant installe le service de synchronisation sur l’instance CRX accessible par l’uri spécifié.
+L’exemple suivant installe le service de synchronisation sur l’instance CRX accessible par l’uri donnée.
 
 ```shell
 $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
@@ -847,7 +847,7 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 #### Configuration du service {#service-configuration}
 
-Une fois le service actif, il peut être configuré avec les paramètres suivants :
+Une fois le service en cours d’exécution, il peut être configuré avec les paramètres suivants :
 
 * `vault.sync.syncroots` : un ou plusieurs chemins de système de fichiers locaux qui définissent les racines de synchronisation.
 
@@ -944,8 +944,8 @@ Pour configurer un environnement de développement selon un dossier de synchroni
    ***
    ```
 
-Votre dossier local est désormais synchronisé avec le référentiel. La synchronisation est bidirectionnelle, de sorte que toute modification du référentiel est appliquée au dossier de synchronisation local, et vice versa. 
+Votre dossier local est désormais synchronisé avec le référentiel. La synchronisation est bidirectionnelle, de sorte que la modification du référentiel est appliquée à votre dossier de synchronisation local et inversement.
 
 >[!NOTE]
 >
->La fonction de synchronisation VLT prend uniquement en charge des fichiers et dossiers simples, mais détecte les fichiers sérialisés Vault spéciaux (.content.xml, dialog.xml, etc.) et les ignore silencieusement. Ainsi, il est possible d’utiliser la synchronisation Vault sur une extraction vlt par défaut.
+>La fonction de synchronisation VLT prend uniquement en charge des fichiers et dossiers simples, mais détecte les fichiers sérialisés Vault spéciaux (.content.xml, dialog.xml, etc.) et les ignore silencieusement. Il est donc possible d’utiliser la synchronisation Vault sur un passage en caisse vlt par défaut.

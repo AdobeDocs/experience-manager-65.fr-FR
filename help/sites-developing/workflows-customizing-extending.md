@@ -10,32 +10,32 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
-workflow-type: ht
-source-wordcount: '3583'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '3584'
+ht-degree: 73%
 
 ---
 
 # Extension des fonctionnalités de workflows{#extending-workflow-functionality}
 
-Cette rubrique explique comment créer des composants d’étape personnalisée pour des processus et interagir avec eux par programmation.
+Cette rubrique décrit le développement de composants d’étape personnalisés pour vos workflows, puis comment interagir par programmation avec les workflows.
 
-La création d’une étape personnalisée de processus implique les tâches suivantes :
+La création d’une étape de workflow personnalisée implique les activités suivantes :
 
-* Développer le composant de l’étape de processus.
-* Mettre en œuvre la fonctionnalité de l’étape sous forme de service OSGi ou de script ECMA.
+* Développez le composant d’étape de workflow.
+* Mettez en oeuvre la fonctionnalité d’étape en tant que service OSGi ou script ECMA.
 
-Vous pouvez également [interagir avec vos processus à partir de vos programmes et scripts](/help/sites-developing/workflows-program-interaction.md).
+Vous pouvez également [interagir avec les workflows de vos programmes et scripts](/help/sites-developing/workflows-program-interaction.md).
 
-## Composants d’étape de processus - Notions de base {#workflow-step-components-the-basics}
+## Composants d’étape de workflow - Principes de base {#workflow-step-components-the-basics}
 
-Un composant d’étape de processus définit l’apparence et le comportement de l’étape lors de la création de modèles de processus :
+Un composant d’étape de workflow définit l’aspect et le comportement de l’étape lors de la création de modèles de workflow :
 
-* Catégorie et nom de l’étape dans le sidekick de processus.
-* Aspect de l’étape dans des modèles de processus.
-* Boîte de dialogue de modification servant à configurer les propriétés du composant.
-* Service ou le script exécuté à l’exécution.
+* Nom de catégorie et d’étape dans le sidekick du processus.
+* Apparence de l’étape dans les modèles de workflow.
+* Boîte de dialogue de modification pour la configuration des propriétés du composant.
+* Service ou script exécuté au moment de l’exécution.
 
 Comme avec [tous les composants](/help/sites-developing/components.md), les composants de l’étape de workflow héritent du composant indiqué pour la propriété `sling:resourceSuperType`. Le diagramme suivant présente la hiérarchie des nœuds `cq:component` qui constituent la base de tous les composants des étapes de workflow. Le diagramme inclut également les composants **Étape du processus**, **Étape du participant** et **Étape du participant dynamique**, car il s’agit des points de départ les plus courants (et les plus simples) pour développer des composants d’étape personnalisée.
 
@@ -52,27 +52,26 @@ Comme avec [tous les composants](/help/sites-developing/components.md), les comp
 >1. Recréez l’élément requis (tel qu’il existe dans `/libs` sous `/apps`).
 >2. Apportez les modifications désirées dans `/apps`.
 
-
 Le composant `/libs/cq/workflow/components/model/step` est l’ancêtre commun le plus proche de l’**Étape du processus**, l’**Étape du participant** et l’**Étape du participant dynamique**, qui héritent tous des éléments suivants :
 
 * `step.jsp`
 
-   Le script `step.jsp` affiche le titre du composant d’étape lorsqu’il est ajouté à un modèle.
+  Le script `step.jsp` affiche le titre du composant d’étape lorsqu’il est ajouté à un modèle.
 
-   ![wf-22-1](assets/wf-22-1.png)
+  ![wf-22-1](assets/wf-22-1.png)
 
 * [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
-   Une boîte de dialogue avec les onglets suivants :
+  Une boîte de dialogue avec les onglets suivants :
 
-   * **Courant** : pour modifier le titre et la description.
-   * **Avancé** : pour modifier les propriétés de notification par courrier électronique.
+   * **Courant**: pour modifier le titre et la description.
+   * **Avancé**: pour modifier les propriétés des notifications électroniques.
 
-   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
+  ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
-   >[!NOTE]
-   >
-   >Lorsque les onglets de la boîte de dialogue de modification d’un composant d’étape ne correspondent pas à cette apparence par défaut, le composant d’étape a défini des scripts, des propriétés de nœud ou des onglets de dialogue qui remplacent ces onglets hérités.
+  >[!NOTE]
+  >
+  >Lorsque les onglets de la boîte de dialogue de modification d’un composant d’étape ne correspondent pas à cette apparence par défaut, le composant d’étape a défini des scripts, des propriétés de noeud ou des onglets de boîte de dialogue qui remplacent ces onglets hérités.
 
 ### Scripts ECMA {#ecma-scripts}
 
@@ -88,17 +87,17 @@ Les objets suivants sont disponibles (en fonction du type d’étape) dans les s
 
 ### MetaDataMaps {#metadatamaps}
 
-Vous pouvez utiliser les métadonnées de processus pour conserver les informations requises pendant la durée de vie du processus. De manière générale, avec les étapes de processus, il faut conserver les données pour les utiliser ultérieurement dans le processus ou récupérer les données persistantes.
+Vous pouvez utiliser les métadonnées de processus pour conserver les informations requises pendant la durée de vie du processus. Les étapes d’un workflow sont généralement nécessaires pour conserver les données en vue d’une utilisation ultérieure dans le workflow ou pour récupérer les données persistantes.
 
 Il existe trois types d’objets MetaDataMap pour les objets `Workflow`, `WorkflowData` et `WorkItem`. Ils ont tous la même fonction : stocker les métadonnées.
 
-Un objet WorkItem possède son propre objet MetaDataMap qui peut être utilisé uniquement pendant l’exécution de cet élément de travail (l’étape en question).
+Un élément de travail possède sa propre carte MetaData qui ne peut être utilisée que pendant l’exécution de cet élément de travail (par exemple, l’étape).
 
 Les objets MetaDataMap `Workflow` et `WorkflowData` sont partagés sur l’ensemble du workflow. Pour ces cas, il est recommandé d’utiliser uniquement l’objet MetaDataMap `WorkflowData`.
 
-## Création de composants d’étape de processus personnalisée {#creating-custom-workflow-step-components}
+## Création de composants d’étape de processus personnalisés {#creating-custom-workflow-step-components}
 
-Les composants d’étape de processus se [créent comme tout autre composant](/help/sites-developing/components.md).
+Les composants d’étape de workflow peuvent être [créé de la même manière que tout autre composant](/help/sites-developing/components.md).
 
 Pour hériter de l’un des composants de l’étape de base (existante), ajoutez la propriété suivante au nœud `cq:Component` :
 
@@ -112,11 +111,11 @@ Pour hériter de l’un des composants de l’étape de base (existante), ajoute
 
 ### Spécification du titre et de la description par défaut pour les instances d’étape {#specifying-the-default-title-and-description-for-step-instances}
 
-Utilisez la procédure suivante pour spécifier les valeurs par défaut des champs **Titre** et **Description** dans l’onglet **Courant**.
+Procédez comme suit pour spécifier les valeurs par défaut de la variable **Titre** et **Description** dans le champ **Courant** .
 
 >[!NOTE]
 >
->Les valeurs de champ apparaissent sur l’instance d’étape lorsque les deux conditions suivantes sont remplies :
+>Les valeurs de champ s’affichent sur l’instance d’étape lorsque les deux exigences suivantes sont satisfaites :
 >
 >* La boîte de dialogue de modification de l’étape stocke le titre et la description dans les emplacements suivants :  >
 >* `./jcr:title`
@@ -125,7 +124,6 @@ Utilisez la procédure suivante pour spécifier les valeurs par défaut des cham
 >  Cette exigence est satisfaite lorsque la boîte de dialogue de modification utilise l’onglet Commun que le composant `/libs/cq/flow/components/step/step` implémente.
 >
 >* Le composant d’étape ou un ancêtre du composant ne remplace pas le script `step.jsp` que le composant `/libs/cq/flow/components/step/step` implémente.
-
 
 1. Sous le nœud `cq:Component`, ajoutez le nœud suivant :
 
@@ -146,11 +144,11 @@ Utilisez la procédure suivante pour spécifier les valeurs par défaut des cham
    * `jcr:title` : la valeur remplit le champ **Titre** de l’onglet **Commun**.
    * `jcr:description` : la valeur remplit le champ **Description** de l’onglet **Commun**.
 
-### Enregistrement des valeurs de propriété dans les métadonnées de processus {#saving-property-values-in-workflow-metadata}
+### Enregistrement des valeurs de propriété dans les métadonnées de workflow {#saving-property-values-in-workflow-metadata}
 
 >[!NOTE]
 >
->Voir [Persistance et accès aux données](#persisting-and-accessing-data). En particulier, pour plus d’informations sur l’accès à la valeur de la propriété lors de l’exécution, reportez-vous à la section [Accès aux valeurs des propriétés de boîte de dialogue au moment de l’exécution](#accessing-dialog-property-values-at-runtime).
+>Voir [Persistance et accès aux données](#persisting-and-accessing-data). En particulier, pour plus d’informations sur l’accès à la valeur de propriété au moment de l’exécution, voir [Accès aux valeurs des propriétés de boîte de dialogue au moment de l’exécution](#accessing-dialog-property-values-at-runtime).
 
 La propriété de nom des éléments `cq:Widget` spécifie le nœud JCR qui stocke la valeur du widget. Lorsque des widgets dans la boîte de dialogue de composant de l’étape du workflow stockent des valeurs sous la balise `./metaData`, la valeur est ajoutée au workflow `MetaDataMap`.
 
@@ -174,16 +172,16 @@ Chaque composant d’étape de base permet à l’équipe de développement des 
 
 * Étape du processus : service ou script ECMA à exécuter au moment de l’exécution.
 * Participant : ID de l’utilisateur auquel est affecté l’élément de travail généré.
-* Étape choix dynamique de participant : script de service ou ECMA qui sélectionne l’ID de l’utilisateur auquel est affecté l’élément de travail.
+* Étape choix dynamique de participant : Le service ou script ECMA qui sélectionne l’identifiant de l’utilisateur auquel est affecté l’élément de travail.
 
-Pour utiliser le composant dans un scénario de processus spécifique, configurez la fonctionnalité clé au moment de la conception et empêchez les développeurs de modèles de la modifier.
+Pour cibler le composant en vue de l’utiliser dans un scénario de workflow spécifique, configurez la fonction clé dans la conception et supprimez la possibilité pour les développeurs de modèles de la modifier.
 
-1. Sous le nœud cq:component, ajoutez le nœud suivant :
+1. Sous le noeud cq:component , ajoutez le noeud suivant :
 
    * Nom : `cq:editConfig`
    * Type : `cq:EditConfig`
 
-   Pour plus d’informations sur le nœud cq:editConfig, voir [Configuration du comportement de modification d’un composant](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
+   Pour plus d’informations sur le noeud cq:editConfig , voir [Configuration du comportement de modification d’un composant](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Sous le nœud cq:EditConfig, ajoutez le nœud suivant :
 
@@ -235,9 +233,9 @@ Effectuez la procédure suivante sur votre nouveau composant (voir [Création de
 
    * Nom : `DIALOG_PATH`
    * Type : `String`
-   * Valeur : chemin d’accès qui résout la boîte de dialogue
+   * Valeur : Chemin d’accès résolu sur la boîte de dialogue
 
-### Configuration du comportement à l’exécution de l’étape de processus {#configuring-the-workflow-step-runtime-behavior}
+### Configuration du comportement d’exécution de l’étape de workflow {#configuring-the-workflow-step-runtime-behavior}
 
 Sous le nœud `cq:Component`, ajoutez un nœud `cq:EditConfig`. En dessous, ajoutez un nœud `nt:unstructured` (doit être nommé `cq:formParameters`) et ajoutez à ce nœud les propriétés suivantes :
 
@@ -252,19 +250,19 @@ Sous le nœud `cq:Component`, ajoutez un nœud `cq:EditConfig`. En dessous, ajou
 * Nom : `DO_NOTIFY`
 
    * Type : `Boolean`
-   * Valeur : indique si les notifications par e-mail doivent être envoyées pour les étapes de participation de l’utilisateur (et suppose que le serveur de messagerie est correctement configuré)
+   * Valeur : indique si des notifications électroniques doivent être envoyées pour les étapes de participation de l’utilisateur (et suppose que le serveur de messagerie est correctement configuré) ;
 
 ## Persistance et accès aux données {#persisting-and-accessing-data}
 
-### Données persistantes pour les étapes de processus suivantes {#persisting-data-for-subsequent-workflow-steps}
+### Données persistantes pour les étapes de workflow suivantes {#persisting-data-for-subsequent-workflow-steps}
 
-Vous pouvez utiliser les métadonnées de processus pour conserver les informations requises pendant la durée de vie du processus et entre les étapes. De manière générale, avec les étapes de processus, il faut rendre les données persistantes pour les utiliser ultérieurement ou récupérer les données persistantes à partir d’étapes précédentes.
+Vous pouvez utiliser les métadonnées de processus pour conserver les informations requises pendant la durée de vie du processus et entre les étapes. Les étapes d’un workflow sont généralement nécessaires pour conserver les données en vue d’une utilisation ultérieure ou pour récupérer les données persistantes des étapes précédentes.
 
 Les métadonnées de processus sont stockées dans un objet [`MetaDataMap`](#metadatamaps). L’API Java fournit la méthode [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) pour renvoyer un objet [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) qui fournit l’objet `MetaDataMap` approprié. Cet objet `WorkflowData` `MetaDataMap` est disponible pour le service OSGi ou le script ECMA d’un composant d’étape.
 
 #### Java {#java}
 
-La méthode d’exécution de l’implémentation `WorkflowProcess` est transmise à l’objet `WorkItem`. Utilisez cet objet afin d’obtenir l’objet `WorkflowData` pour l’instance de workflow active. L’exemple suivant ajoute un élément à l’objet workflow `MetaDataMap`, puis enregistre chaque élément. L’élément (&quot;mykey&quot;, &quot;My Step Value&quot;) est disponible pour les étapes suivantes du processus.
+La méthode d’exécution de l’implémentation `WorkflowProcess` est transmise à l’objet `WorkItem`. Utilisez cet objet afin d’obtenir l’objet `WorkflowData` pour l’instance de workflow active. L’exemple suivant ajoute un élément à l’objet workflow `MetaDataMap`, puis enregistre chaque élément. L’élément (&quot;mykey&quot;, &quot;My Step Value&quot;) est disponible pour les étapes suivantes du workflow.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -288,7 +286,7 @@ La variable `graniteWorkItem` est la représentation de script ECMA de l’objet
 
 >[!NOTE]
 >
->La variable `metaData` immédiatement disponible pour le script de l’étape est la métadonnée de l’étape. Les métadonnées d’étape sont différentes des métadonnées de processus.
+>La variable `metaData` immédiatement disponible pour le script de l’étape est la métadonnée de l’étape. Les métadonnées d’étape sont différentes des métadonnées de workflow.
 
 ```
 var currentDateInMillis = new Date().getTime();
@@ -304,7 +302,7 @@ while (iterator.hasNext()){
 }
 ```
 
-### Accès aux valeurs de propriété de boîte de dialogue au moment de l’exécution {#accessing-dialog-property-values-at-runtime}
+### Accès aux valeurs des propriétés de boîte de dialogue au moment de l’exécution {#accessing-dialog-property-values-at-runtime}
 
 L’objet `MetaDataMap` des instances de workflow est utile pour stocker et récupérer des données tout au long de la durée de vie du workflow. Dans le cas d’implémentations de composants d’étape de workflow, l’objet `MetaDataMap` est particulièrement utile pour récupérer les valeurs de propriété de composant au moment de l’exécution.
 
@@ -338,7 +336,7 @@ public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) th
     }
 ```
 
-Lorsqu’une étape de processus qui utilise cette implémentation Java s’exécute, le journal contient l’entrée suivante :
+Lorsqu’une étape de processus qui utilise cette implémentation Java s’exécute, le journal contient l’entrée suivante :
 
 ```xml
 16.02.2018 12:07:39.566 *INFO* [JobHandler: /var/workflow/instances/server0/2018-02-16/model_855140139900189:/content/we-retail/de] com.adobe.example.workflow.impl.process.LogArguments workflow metadata for key PROCESS_ARGS and value argument1, argument2
@@ -346,7 +344,7 @@ Lorsqu’une étape de processus qui utilise cette implémentation Java s’exé
 
 #### Script ECMA {#ecma-script-1}
 
-Le script ECMA suivant est utilisé comme processus pour **Étape du processus**. Il consigne le nombre d’arguments et les valeurs des arguments :
+Le script ECMA suivant est utilisé comme processus pour **Étape du processus**. Il consigne le nombre d’arguments et les valeurs d’argument :
 
 ```
 var iterator = graniteWorkItem.getWorkflowData().getMetaDataMap().keySet().iterator();
@@ -360,7 +358,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 >[!NOTE]
 >
->Cette section explique comment utiliser les arguments pour les étapes de processus. L’information s’applique également aux programmes de sélection des participants.
+>Cette section explique comment utiliser les arguments pour les étapes de processus. Les informations s’appliquent également aux programmes de sélection des participants dynamiques.
 
 >[!NOTE]
 >Pour un autre exemple de stockage des propriétés de composant dans les métadonnées de workflow, consultez l’Exemple : Créer une étape de workflow de logger. Cet exemple comporte un journal qui associe la valeur des métadonnées à une clé autre que PROCESS_ARGS.
@@ -371,17 +369,17 @@ Dans un script pour un composant **Étape du processus**, les arguments sont dis
 
 Lors de la création d’un composant d’étape personnalisée, l’objet `metaData` est disponible dans un script. Cet objet est limité à un seul argument de chaîne.
 
-## Développement d’implémentations d’étapes de processus {#developing-process-step-implementations}
+## Développement de mises en oeuvre d’étapes de processus {#developing-process-step-implementations}
 
-Lorsque les étapes de processus sont lancées au cours du traitement d’un processus, les étapes envoient une requête à un service OSGi ou exécutent un script ECMA. Développez le service ou le script ECMA qui effectue les actions requises par votre processus.
+Lorsque les étapes de processus sont lancées au cours du traitement d’un processus, les étapes envoient une requête à un service OSGi ou exécutent un script ECMA. Développez le service ou le script ECMA qui effectue les actions requises par votre workflow.
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’association de votre composant Étape du processus avec le service ou le script, reportez-vous à [Étape du processus](/help/sites-developing/workflows-step-ref.md#process-step) ou [Remplacement de la mise en œuvre de l’étape](#overriding-the-step-implementation).
+>Pour plus d’informations sur l’association de votre composant Étape du processus au service ou au script, voir [Étape du processus](/help/sites-developing/workflows-step-ref.md#process-step) ou [Remplacement de la mise en oeuvre de l’étape](#overriding-the-step-implementation).
 
-### Implémentation d’une étape de processus avec une classe Java {#implementing-a-process-step-with-a-java-class}
+### Mise en oeuvre d’une étape de processus avec une classe Java {#implementing-a-process-step-with-a-java-class}
 
-Pour définir une étape de processus en tant que composant de service OSGI (bundle Java) :
+Pour définir une étape de processus en tant que composant de service OSGI (lot Java) :
 
 1. Créez le bundle et déployez-le dans le conteneur OSGI. Reportez-vous à la documentation sur la création d’un bundle avec [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) ou [Eclipse](/help/sites-developing/howto-projects-eclipse.md).
 
@@ -391,15 +389,15 @@ Pour définir une étape de processus en tant que composant de service OSGI (bun
 
    >[!NOTE]
    >
-   >Le nom du module doit être ajouté à la section `<*Private-Package*>` de la configuration `maven-bundle-plugin`.
+   >Le nom du package doit être ajouté à la section `<*Private-Package*>` de la configuration `maven-bundle-plugin`.
 
 1. Ajoutez la propriété SCR `process.label` et définissez sa valeur selon vos besoins. Il s’agit du nom sous lequel votre étape de processus est listée lorsque vous utilisez le composant générique **Étape du processus**. Voir l’exemple ci-dessous.
 1. Dans l’éditeur de **Modèles**, ajoutez l’étape de traitement au workflow à l’aide du composant générique **Étape du processus**.
 1. Dans la boîte de dialogue de modification (de l’**étape du processus**), accédez à l’onglet **Processus** et sélectionnez votre implémentation de processus.
 1. Si vous utilisez des arguments dans votre code, définissez les **Arguments du processus**. Par exemple : false.
-1. Enregistrez les modifications, à la fois pour l’étape et le modèle de processus (angle supérieur gauche de l’éditeur de modèle).
+1. Enregistrez les modifications, tant pour l’étape que pour le modèle de workflow (coin supérieur gauche de l’éditeur de modèles).
 
-Les méthodes java, respectivement les classes implémentant la méthode Java exécutable, sont enregistrées en tant que services OSGI, ce qui vous permet d’ajouter des méthodes à tout moment pendant l’exécution.
+Les méthodes java, respectivement les classes qui implémentent la méthode Java exécutable, sont enregistrées en tant que services OSGI, ce qui vous permet d’ajouter des méthodes à tout moment pendant l’exécution.
 
 Le composant OSGI suivant ajoute la propriété `approved` au nœud de contenu de page lorsque la charge est une page :
 
@@ -465,13 +463,13 @@ public class MyProcess implements WorkflowProcess {
 
 >[!NOTE]
 >
->Si le processus échoue trois fois de suite, un élément est placé dans la boîte de réception de l’administrateur de processus.
+>Si le processus échoue trois fois de suite, un élément est placé dans la boîte de réception de l’administrateur de workflow.
 
 ### Utilisation d’ECMAScript {#using-ecmascript}
 
-Les scripts ECMA permettent aux développeurs de scripts d’implémenter des étapes de processus. Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet endroit.
+Les scripts ECMA permettent aux développeurs de scripts d’implémenter des étapes de processus. Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet emplacement.
 
-Le tableau suivant répertorie les variables qui sont immédiatement disponibles pour traiter les scripts, en fournissant l’accès aux objets de l’API Java de processus.
+Le tableau suivant répertorie les variables immédiatement disponibles pour traiter les scripts, ce qui permet d’accéder aux objets de l’API Java du workflow.
 
 | Classe Java | Nom de variable de script | Description |
 |---|---|---|
@@ -538,26 +536,26 @@ Pour utiliser le script, procédez comme suit :
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Nom à afficher dans la boîte de dialogue de modification. |
 
-1. Modifiez l’instance **Étape du processus** et spécifiez le script à utiliser.
+1. Modifiez la variable **Étape du processus** et indiquez le script à utiliser.
 
-## Développement de programmes de sélection de participants {#developing-participant-choosers}
+## Développement de sélecteurs de participant {#developing-participant-choosers}
 
-Vous pouvez développer des programmes de sélection de participant pour les composants **Étape choix dynamique de participant**.
+Vous pouvez développer des programmes de sélection des participants pour **Étape choix dynamique de participant** composants.
 
 Lorsqu’un composant **Étape de participant dynamique** est démarré pendant un workflow, l’étape doit déterminer le participant auquel l’élément de travail généré peut être attribué. Pour ce faire, l’étape :
 
 * envoie une requête à un service OSGi ou
-* exécute un script ECMA pour sélectionner le participant
+* exécute un script ECMA pour sélectionner le participant.
 
-Vous pouvez développer un service ou un script ECMA qui sélectionne le participant en fonction des exigences de votre processus.
+Vous pouvez développer un service ou un script ECMA qui sélectionne le participant en fonction des exigences de votre workflow.
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’association de votre composant **Étape choix dynamique de participant** au service ou au script, voir [Étape choix dynamique de participant](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) ou [Remplacement de la mise en œuvre de l’étape](#persisting-and-accessing-data).
+>Pour plus d’informations sur l’association de votre **Étape choix dynamique de participant** avec le service ou le script, voir [Étape choix dynamique de participant](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) ou [Remplacement de la mise en oeuvre de l’étape](#persisting-and-accessing-data).
 
-### Développement d’un programme de sélection de participants à l’aide d’une classe Java {#developing-a-participant-chooser-using-a-java-class}
+### Développement d’un sélecteur de participant à l’aide d’une classe Java {#developing-a-participant-chooser-using-a-java-class}
 
-Pour définir une étape de participant en tant que composant de service OSGI (classe Java) :
+Pour définir une étape de participant en tant que composant de service OSGI (classe Java) :
 
 1. Le composant OSGI doit implémenter l’interface `ParticipantStepChooser` avec sa méthode `getParticipant()`. Voir l’exemple de code ci-dessous.
 
@@ -615,15 +613,15 @@ Pour définir une étape de participant en tant que composant de service OSGI (c
 1. Dans l’éditeur de **Modèles**, ajoutez l’étape de participant dynamique au workflow à l’aide du composant **Étape de participant dynamique** générique.
 1. Dans la boîte de dialogue de modification, sélectionnez l’onglet **Programme de sélection des participants** et choisissez votre implémentation de programme de sélection.
 1. Si vous utilisez des arguments dans votre code, définissez les **Arguments du processus**. Pour cet exemple : `/content/we-retail/de`.
-1. Enregistrez les modifications, à la fois pour l’étape et le modèle de processus.
+1. Enregistrez les modifications pour l’étape et le modèle de workflow.
 
-### Développement d’un programme de sélection de participant à l’aide d’un script ECMA {#developing-a-participant-chooser-using-an-ecma-script}
+### Développement d’un sélecteur de participant à l’aide d’un script ECMA {#developing-a-participant-chooser-using-an-ecma-script}
 
 Vous pouvez créer un script ECMA qui sélectionne l’utilisateur auquel est affecté l’élément de travail généré par **Étape du participant**. Le script doit inclure une fonction nommée `getParticipant` qui ne nécessite aucun argument et renvoie une `String` contenant l’ID d’un utilisateur ou d’un groupe.
 
-Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet endroit.
+Les scripts sont situés dans le référentiel JCR et exécutés à partir de cet emplacement.
 
-Le tableau suivant répertorie les variables qui fournissent un accès immédiat aux objets Java de processus dans vos scripts.
+Le tableau suivant répertorie les variables qui permettent un accès immédiat aux objets Java de workflow dans vos scripts.
 
 | Classe Java | Nom de variable de script |
 |---|---|
@@ -657,26 +655,25 @@ function getParticipant() {
 
 1. Modifiez l’instance [Étape de participant dynamique](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) et spécifiez le script à utiliser.
 
-## Gestion des modules de processus {#handling-workflow-packages}
+## Gestion des packages de workflow {#handling-workflow-packages}
 
-[Les modules de processus](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) peuvent être transmis à un processus pour traitement. Les modules de processus contiennent des références à des ressources telles que des pages et des éléments.
+[Les packages de workflow](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) peuvent être transmis à un workflow pour traitement. Les modules de workflow contiennent des références à des ressources telles que des pages et des ressources.
 
 >[!NOTE]
 >
->Les étapes de traitement de processus suivantes acceptent les modules de processus pour l’activation de page en masse :
+>Les étapes de processus de workflow suivantes acceptent les modules de processus pour l’activation de pages en bloc :
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
+Vous pouvez développer des étapes de workflow qui obtiennent et traitent les ressources de package. Les membres suivants du package `com.day.cq.workflow.collection` donnent accès aux packages de workflow :
 
-Vous pouvez développer des étapes de workflow qui obtiennent et traitent les ressources de module. Les membres suivants du module `com.day.cq.workflow.collection` donnent accès aux modules de workflow :
-
-* `ResourceCollection` : classe de module de workflow.
+* `ResourceCollection` : classe de package de workflow.
 * `ResourceCollectionUtil` : permet de récupérer des objets ResourceCollection.
 * `ResourceCollectionManager` : crée et récupère des collections. Une implémentation est déployée en tant que service OSGi.
 
-L’exemple de classe Java suivant montre comment obtenir des ressources de module :
+L’exemple de classe Java suivant montre comment obtenir des ressources de package :
 
 ```java
 package com.adobe.example;
@@ -780,15 +777,15 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 }
 ```
 
-## Exemple : création d’une étape personnalisée {#example-creating-a-custom-step}
+## Exemple : Création d’une étape personnalisée {#example-creating-a-custom-step}
 
-Pour commencer facilement à créer votre propre étape personnalisée, copiez une étape existante à partir de :
+Pour commencer facilement à créer votre propre étape personnalisée, copiez une étape existante à partir de :
 
 `/libs/cq/workflow/components/model`
 
 ### Création de l’étape de base {#creating-the-basic-step}
 
-1. Recréez le chemin sous /apps, par exemple :
+1. Recréez le chemin sous /apps ; par exemple :
 
    `/apps/cq/workflow/components/model`
 
@@ -804,9 +801,9 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
 
    >[!NOTE]
    >
-   >Cette étape ne s’applique pas à l’éditeur de modèle de l’IU classique.
+   >Cette étape ne s’applique pas à l’éditeur de modèle d’IU classique.
 
-1. Placez ensuite l’étape copiée dans votre dossier /apps, par exemple comme :
+1. Placez ensuite l’étape copiée dans votre dossier /apps ; par exemple, comme :
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -826,27 +823,27 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
 
    * `sling:resourceSuperType`
 
-      Doit hériter d’une étape existante.
+     Doit hériter d’une étape existante.
 
-      Dans cet exemple, nous héritons de l’étape de base à partir de `cq/workflow/components/model/step`, mais vous pouvez utiliser d’autres super types comme `participant`, `process`, etc.
+     Dans cet exemple, nous héritons de l’étape de base à partir de `cq/workflow/components/model/step`, mais vous pouvez utiliser d’autres super types comme `participant`, `process`, etc.
 
    * `jcr:title`
 
-      Le titre est-il affiché lorsque le composant est répertorié dans le navigateur d’étapes (panneau de gauche de l’éditeur de modèle de workflow).
+     Le titre est-il affiché lorsque le composant est répertorié dans le navigateur d’étapes (panneau de gauche de l’éditeur de modèle de workflow).
 
    * `cq:icon`
 
-      Permet de spécifier une [icône Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) pour l’étape.
+     Permet de spécifier une [icône Coral](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) pour l’étape.
 
    * `componentGroup`
 
-      Doit être l’un des éléments suivants :
+     Doit être l’un des éléments suivants :
 
       * Processus de collaboration
-      * Gestion des actifs numériques du processus
+      * Processus de gestion des actifs numériques
       * Workflows de formulaires
       * Projets
-      * Processus de gestion de contenu web
+      * Processus WCM
       * Workflow
 
    ![wf-35](assets/wf-35.png)
@@ -865,7 +862,7 @@ Pour commencer facilement à créer votre propre étape personnalisée, copiez u
 
 #### Définition de la boîte de dialogue Configuration de l’étape {#defining-the-step-configure-dialog}
 
-Après avoir suivi la procédure [Création de l’étape de base](#creating-the-basic-step), définissez la boîte de dialogue **Configurer** comme suit :
+Après [Création de l’étape de base](#creating-the-basic-step), définir l’étape **Configurer** de la boîte de dialogue comme suit :
 
 1. Configurez les propriétés sur le nœud `cq:editConfig` comme suit :
 
@@ -873,11 +870,12 @@ Après avoir suivi la procédure [Création de l’étape de base](#creating-the
 
    * `cq:inherit`
 
-      Si sa valeur est `true`, votre composant d’étape hérite des propriétés de l’étape spécifiée dans `sling:resourceSuperType`.
+     Si sa valeur est `true`, votre composant d’étape hérite des propriétés de l’étape spécifiée dans `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
-      Définissez-la selon vos besoins.
+     Définissez-la selon vos besoins.
+
    ![wf-39](assets/wf-39.png)
 
 1. Configurez les propriétés sur le nœud `cq:formsParameter` comme suit :
@@ -886,7 +884,7 @@ Après avoir suivi la procédure [Création de l’étape de base](#creating-the
 
    * `jcr:title`
 
-      Définit le titre par défaut sur la carte étape dans la carte modèle et dans le champ **Titre** de la boîte de dialogue de configuration **Mes propriétés d’étape personnalisées**.
+     Définit le titre par défaut sur la carte étape dans la carte modèle et dans le champ **Titre** de la boîte de dialogue de configuration **Mes propriétés d’étape personnalisées**.
 
    * Vous pouvez également définir vos propres propriétés personnalisées.
 
@@ -1026,7 +1024,7 @@ Exemple de `_cq_dialog/.content.xml` utilisé dans ce cas de figure :
 
 >[!NOTE]
 >
->Notez les nœuds communs et de processus dans la définition de la boîte de dialogue. Ils sont hérités de l’étape de processus que nous avons utilisée comme supertype pour notre étape personnalisée :
+>Notez les nœuds communs et de processus dans la définition de la boîte de dialogue. Ils sont hérités de l’étape de processus que nous avons utilisée comme supertype pour notre étape personnalisée :
 >
 >`sling:resourceSuperType : cq/workflow/components/model/process`
 

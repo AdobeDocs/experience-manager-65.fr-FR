@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1677'
 ht-degree: 3%
 
 ---
@@ -60,15 +60,15 @@ Pour accéder à la console Groupes , procédez comme suit :
    * La structure du site de la communauté doit inclure une fonction de groupe.
    * Ces captures d’écran proviennent du tutoriel Prise en main suivant [création de groupes lors de la publication](/help/communities/published-site.md).
 
-   ![create-group](assets/create-group.png)
+  ![create-group](assets/create-group.png)
 
 * Sélectionnez la **Dossier Groupes** pour l’ouvrir.
 
-   Une fois ouverts, tous les groupes existants, qu’ils soient créés dans l’instance de création ou de publication, s’affichent.
+  Une fois ouverts, tous les groupes existants, qu’ils soient créés dans l’instance de création ou de publication, s’affichent.
 
-   Dans cette console Groupes , il est possible de créer des groupes.
+  Dans cette console Groupes , il est possible de créer des groupes.
 
-   ![create-new-group](assets/create-new-group.png)
+  ![create-new-group](assets/create-new-group.png)
 
 * Sélectionnez la **Créer un groupe** bouton .
 
@@ -78,34 +78,34 @@ Pour accéder à la console Groupes , procédez comme suit :
 
 * **Titre de groupe de communautés**
 
-   Titre affiché pour le groupe.
+  Titre affiché pour le groupe.
 Le titre apparaît sur le site publié pour le groupe.
 
 * **Description du groupe de communautés**
 
-   Description du groupe.
+  Description du groupe.
 
 * **Racine du groupe de communautés**
 
-   Chemin d’accès racine au groupe.
+  Chemin d’accès racine au groupe.
 La racine par défaut est le site parent, mais elle peut être déplacée à n’importe quel emplacement du site web. Il n’est pas recommandé de le modifier.
 
 * **Langues de groupe communautaire disponibles supplémentaires** menu
 
-   Utilisez le menu déroulant pour sélectionner la ou les langues des groupes de communautés disponibles. Le menu affiche toutes les langues dans lesquelles le site de la communauté parent est créé. Les utilisateurs peuvent sélectionner l’une de ces langues pour créer des groupes dans plusieurs paramètres régionaux au cours de cette seule étape. Un même groupe est créé dans plusieurs langues spécifiées dans la console Groupes des sites de communauté respectifs.
+  Utilisez le menu déroulant pour sélectionner la ou les langues des groupes de communautés disponibles. Le menu affiche toutes les langues dans lesquelles le site de la communauté parent est créé. Les utilisateurs peuvent sélectionner l’une de ces langues pour créer des groupes dans plusieurs paramètres régionaux au cours de cette seule étape. Un même groupe est créé dans plusieurs langues spécifiées dans la console Groupes des sites de communauté respectifs.
 
 * **Nom du groupe de communautés**
 
-   Nom de la page racine du groupe qui apparaît dans l’URL. Évitez d’utiliser des caractères de soulignement (_) et des mots-clés tels que des ressources et une configuration dans le nom du groupe.
+  Nom de la page racine du groupe qui apparaît dans l’URL. Évitez d’utiliser des caractères de soulignement (_) et des mots-clés tels que des ressources et une configuration dans le nom du groupe.
 
    * Vérifiez deux fois le nom, car il n’est pas facilement modifié une fois le groupe créé.
    * L’URL de base s’affiche sous le `Community Group Name`.
    * Pour une URL valide, ajoutez &quot;.html&quot;
-      *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+     *par exemple*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Modèle de groupe de communautés** menu
 
-   Utilisez la liste déroulante pour sélectionner une [modèle de groupe de communautés](/help/communities/tools.md).
+  Utilisez la liste déroulante pour sélectionner une [modèle de groupe de communautés](/help/communities/tools.md).
 
 ### Étape 2 : Conception {#step-design}
 
@@ -166,17 +166,17 @@ Le paramètre d’appartenance permet de sélectionner l’une des trois méthod
 
 * **Abonnement facultatif**
 
-   Si cette option est sélectionnée, le groupe de communautés est un groupe public. Les membres du site peuvent participer au groupe et publier sans rejoindre explicitement le groupe. La valeur par défaut est sélectionnée.
+  Si cette option est sélectionnée, le groupe de communautés est un groupe public. Les membres du site peuvent participer au groupe et publier sans rejoindre explicitement le groupe. La valeur par défaut est sélectionnée.
 
 * **Abonnement requis**
 
-   Si cette option est sélectionnée, le groupe de communautés est un groupe ouvert. Les membres de la communauté peuvent afficher le contenu du groupe, mais doivent rejoindre le groupe pour publier du contenu. Les membres se joignent en sélectionnant `Join` dans l’environnement de publication. La valeur par défaut n’est pas sélectionnée.
+  Si cette option est sélectionnée, le groupe de communautés est un groupe ouvert. Les membres de la communauté peuvent afficher le contenu du groupe, mais doivent rejoindre le groupe pour publier du contenu. Les membres se joignent en sélectionnant `Join` dans l’environnement de publication. La valeur par défaut n’est pas sélectionnée.
 
 * **Abonnement restreint**
 
-   Si cette option est sélectionnée, le groupe de communautés est un groupe secret. Les membres de la communauté doivent être invités explicitement. Les membres invités sont saisis dans la zone de recherche. Les membres peuvent être ajoutés ultérieurement à l’aide du [Consoles Membres et Groupes](/help/communities/members.md) l’environnement de création. La valeur par défaut n’est pas sélectionnée.
+  Si cette option est sélectionnée, le groupe de communautés est un groupe secret. Les membres de la communauté doivent être invités explicitement. Les membres invités sont saisis dans la zone de recherche. Les membres peuvent être ajoutés ultérieurement à l’aide du [Consoles Membres et Groupes](/help/communities/members.md) l’environnement de création. La valeur par défaut n’est pas sélectionnée.
 
-**Miniature**
+**VIGNETTE**
 
 ![communauté-groupe-miniature](assets/community-group-thumbnail.png)
 

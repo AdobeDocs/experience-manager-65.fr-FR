@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 97%
 
 ---
 
@@ -37,11 +37,10 @@ Ils aident les développeurs à :
 >Le mode Développeur :
 >
 >* n’est disponible que dans l’interface utilisateur tactile (lors de la modification de pages) ;
->* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
+>* n’est pas disponible sur les appareils mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
 >
 >   * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
 >* n’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
-
 
 >[!CAUTION]
 >
@@ -61,7 +60,6 @@ Ils aident les développeurs à :
 >* l’article de la base de connaissances [Résolution des problèmes liés à l’IU tactile d’AEM](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html) pour découvrir d’autres conseils et outils.
 >* Session AEM Gems concernant le [mode Développeur d’AEM 6.0](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=fr).
 >
-
 
 ## Ouvrir le mode Développeur {#opening-developer-mode}
 
@@ -105,7 +103,7 @@ Chaque entrée de composant peut afficher (par exemple) :
    * tous les scripts de composants utilisés pour le rendu du composant ;
    * le chemin du contenu de référentiel pour ce composant spécifique.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Modifier le script** : un lien qui :
 
@@ -116,7 +114,7 @@ Chaque entrée de composant peut afficher (par exemple) :
    * la hiérarchie au sein du composant sélectionné ;
    * les temps de rendu pour le composant sélectionné de manière isolée, tous les composants individuels imbriqués qu’il contient, ainsi que le total combiné.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >

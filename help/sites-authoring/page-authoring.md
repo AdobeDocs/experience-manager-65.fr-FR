@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '315'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 91%
 
 ---
 
@@ -47,8 +47,8 @@ Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page
 * **[Explorateur de ressources](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
 Depuis un explorateur coulissant qui s’ouvre sur le côté gauche d’une page à modifier, vous pouvez faire glisser des ressources sur la page, par exemple placer des ressources ou créer des liens vers d’autres pages.
 
-* **Barre d’outils de composants**
-Cliquez ou appuyez une fois ou lentement deux fois pour afficher la barre d’outils appropriée (une fois pour la barre d’outils du mode d’édition statique, deux fois lentement pour la barre d’outils complète).
+* **Barre d’outils de composant**
+Un double-clic ou un double-clic lent ou un double-clic lent affiche la barre d’outils appropriée (une seule pour la barre d’outils d’édition statique, puis deux lents pour la barre d’outils complète).
 
 * **[Mise en page réactive](/help/sites-authoring/responsive-layout.md)**
 Cette fonction fournit un système de paragraphes qui permet de positionner des composants sur une grille réactive.

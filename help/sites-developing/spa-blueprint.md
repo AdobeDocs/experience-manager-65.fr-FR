@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
-workflow-type: ht
-source-wordcount: '2079'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2080'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Pour permettre à l’auteur d’utiliser l’éditeur de SPA AEM en vue de modi
 
 >[!NOTE]
 >
->L’éditeur de SPA est la solution recommandée pour les projets nécessitant un rendu côté client basé sur un framework de SPA (par exemple React ou Angular).
+>L’éditeur SPA est la solution recommandée pour les projets qui nécessitent SPA rendu côté client basé sur une structure (par exemple, React ou Angular).
 
 ## Présentation {#introduction}
 
@@ -31,7 +31,7 @@ Ce document décrit le contrat général que tout framework de SPA devrait respe
 
 >[!NOTE]
 >
->Les exigences suivantes sont indépendantes de la structure. Si ces exigences sont satisfaites, un calque spécifique à l’infrastructure, constitué de modules, de composants et de services, peut être fourni.
+>Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, une couche spécifique à la structure composée de modules, composants et services peut être fournie.
 >
 >**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous voulez mettre en œuvre un autre framework à utiliser avec AEM.
 
@@ -47,7 +47,7 @@ La bibliothèque `PageModelManager` est fournie sous la forme d’un package NPM
 
 Au nom de l’application sur une seule page, il extrait la récupération et la gestion de la structure JSON qui représente la structure de contenu proprement dite. Il assure également la synchronisation avec l’application sur une seule page, en lui faisant savoir à quel moment un nouveau rendu de ses composants doit être effectué.
 
-Voir le module NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+Voir le package NPM [@adobe/aem-spa-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 Lors de l’initialisation de `PageModelManager`, la bibliothèque commence par charger le modèle racine fourni de l’application (par l’intermédiaire d’un paramètre, d’une méta-propriété ou de l’URL active). Si la bibliothèque identifie que le modèle de la page active ne fait pas partie du modèle racine, elle le récupère et l’inclut comme modèle d’une page enfant.
 
@@ -61,7 +61,7 @@ Chaque élément présent dans le modèle contient un champ `:type` qui expose u
 
 #### Mappage dynamique de modèle à composant {#dynamic-model-to-component-mapping}
 
-Vous trouverez des explications sur le mappage dynamique de modèle à composant dans le SDK SPA JavaScript pour AEM dans l’article [Mappage dynamique de modèle à composant pour SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Pour plus d’informations sur la façon dont le mappage du modèle dynamique avec les composants se produit dans le SDK SPA JavaScript pour AEM voir l’article [Mappage du modèle dynamique avec le composant pour SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Couche spécifique au framework {#framework-specific-layer}
 
@@ -118,7 +118,7 @@ Les entités suivantes devraient être mises en œuvre conformément aux directi
 
 Les composants du projet doivent déléguer l’accès aux fragments d’un modèle à un fournisseur de modèles. Le fournisseur de modèles assure alors l’écoute des modifications apportées au fragment spécifié du modèle et le retour du modèle mis à jour au composant délégateur.
 
-Le fournisseur de modèles doit pour cela être inscrit auprès de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. Ensuite, lorsqu’une modification se produit, il la reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. L’implémentation peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
+Le fournisseur de modèles doit pour cela être inscrit auprès de ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)`. Ensuite, lorsqu’une modification se produit, elle reçoit et transmet les données mises à jour au composant délégateur. Par convention, la propriété mise à la disposition du composant délégateur qui transportera le fragment de modèle est nommée `cqModel`. L’implémentation peut fournir cette propriété au composant, mais doit tenir compte d’aspects tels que l’intégration à l’architecture du framework, la capacité de découverte et la facilité d’utilisation.
 
 ### Le décorateur HTML du composant {#the-component-html-decorator}
 
@@ -185,7 +185,6 @@ Par exemple :
 >* `"aem-Grid-newComponent"` : normalise le composant pour la création de dispositions.
 >
 
-
 #### Mappage de composant {#component-mapping}
 
 La bibliothèque [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) sous-jacente et sa fonction `MapTo` peuvent être encapsulées et étendues afin de fournir les fonctionnalités relatives à la configuration d’édition fournie avec la classe de composants actuelle.
@@ -237,7 +236,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Les composants de projet doivent générer au minimum les attributs de données suivants pour permettre à l’éditeur d’interagir avec eux.
 
-* `data-cq-data-path` : chemin d’accès relatif du composant, tel qu’il est fourni par `PageModel` (`"root/responsivegrid/image"`, par exemple). Cet attribut ne doit pas être ajouté aux pages.
+* `data-cq-data-path`: Chemin d’accès relatif du composant tel qu’il est fourni par la variable `PageModel` (par exemple, `"root/responsivegrid/image"`). Cet attribut ne doit pas être ajouté aux pages.
 
 En résumé, pour pouvoir être identifié comme modifiable par l’éditeur de page, un composant de projet doit respecter le contrat suivant :
 

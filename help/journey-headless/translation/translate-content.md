@@ -2,10 +2,10 @@
 title: Traduction du contenu
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2173'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ Pour les gestionnaires de projets de traduction, il est souvent nécessaire de s
 
    ![Onglet De base du projet](assets/project-basic-tab.png)
 
-1. Dans l’onglet **Avancé**, utilisez le menu déroulant **Langue cible** pour sélectionner la ou les langues dans lesquelles votre contenu doit être traduit. Appuyez ou cliquez sur **Créer**.
+1. Sur le **Avancé** , utilisez l’onglet **Langue cible** pour sélectionner les langues dans lesquelles votre contenu doit être traduit. Appuyez ou cliquez sur **Créer**.
 
    ![Onglet Avancé du projet](assets/project-advanced-tab.png)
 

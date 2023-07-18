@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
-workflow-type: ht
-source-wordcount: '747'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Vous pouvez :
 
 * [Définition de collections de paramètres de configuration pour chaque mode d’exécution](#defining-configuration-properties-for-a-run-mode).
 
-   Un ensemble de paramètres de configuration de base est appliqué à tous les modes d’exécution, puis vous pouvez ajuster les ensembles ajoutés en fonction de l’objectif de votre environnement spécifique. Ils sont appliqués selon les besoins.
+  Un ensemble de paramètres de configuration de base est appliqué à tous les modes d’exécution, puis vous pouvez ajuster les ensembles ajoutés en fonction de l’objectif de votre environnement spécifique. Ils sont appliqués selon les besoins.
 
 * [Définition de lots supplémentaires à installer pour un mode spécifique](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
@@ -89,25 +89,25 @@ Le mode d’exécution est indiqué par un suffixe sur le nom du dossier. Vous p
 
 * `config`
 
-   Applicable à tous les modes d’exécution
+  Applicable à tous les modes d’exécution
 
 * `config.author`
 
-   Utilisé pour le mode d’exécution auteur
+  Utilisé pour le mode d’exécution auteur
 
 * `config.publish`
 
-   Utilisé pour le mode d’exécution de publication
+  Utilisé pour le mode d’exécution de publication
 
 * `config.<run-mode>`
 
-   Utilisé pour le mode d’exécution applicable, par exemple « config »
+  Utilisé pour le mode d’exécution applicable, par exemple « config »
 
 Voir [Configuration d’OSGi dans le référentiel](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) pour plus d’informations sur la définition des différents nœuds de configuration dans ces dossiers et sur la création de configurations pour des combinaisons de plusieurs modes d’exécution.
 
 >[!NOTE]
 >
->Pour les [Modes d’exécution d’installation](#installation-run-modes) (auteur, par exemple) le mode d’exécution ne peut pas être modifié après l’installation. Toutefois, les modifications apportées aux propriétés de configuration individuelles prennent effet au redémarrage.
+>Pour [Modes d’exécution d’installation](#installation-run-modes) (par exemple, author) le mode d’exécution ne peut pas être modifié après l’installation. Toutefois, les modifications apportées aux propriétés de configuration individuelles prennent effet au redémarrage.
 
 ## Définir des lots supplémentaires à installer pour un mode d’exécution {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -123,8 +123,8 @@ Ces dossiers sont de type `nt:folder` et doivent contenir le lot approprié.
 Si vous avez défini des configurations pour plusieurs modes d’exécution, vous devez définir celui qui doit être utilisé au démarrage. Il existe plusieurs méthodes pour spécifier le mode d’exécution à utiliser. L’ordre de résolution est le suivant :
 
 1. [Propriétés système (](#using-a-system-property-in-the-start-script)
-1. [ ](#using-the-sling-properties-file)
-1. [ ](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [Détection du nom de fichier](#filename-detection-renaming-the-jar-file)
 
 Lorsque vous utilisez un serveur d’application, vous pouvez également [définir le mode d’exécution dans web.xml](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -155,7 +155,7 @@ Une propriété système dans le script de démarrage peut être utilisée pour 
 
 * Par exemple, utilisez le code ci-dessous pour lancer une instance de publication d’exploitation localisée aux États-Unis :
 
-   `-Dsling.run.modes=publish,prod,us`
+  `-Dsling.run.modes=publish,prod,us`
 
 ### Détection de nom de fichier : attribution d’un nouveau nom au fichier JAR {#filename-detection-renaming-the-jar-file}
 

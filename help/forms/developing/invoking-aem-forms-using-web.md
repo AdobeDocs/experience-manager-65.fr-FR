@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '9905'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '9902'
+ht-degree: 98%
 
 ---
 
@@ -231,7 +231,7 @@ Le protocole de transmission pour les objets `BLOB` renvoyés dépend de plusieu
 
    * Le paramètre de point d’entrée SOAP du service Default Protocol for Output Blob Objects est défini sur Smart.
 
-      Pour chaque service ayant un point d’entrée SOAP, la console d’administration vous offre la possibilité de spécifier le protocole de transmission pour les objets Blob renvoyés. (Voir [Aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
+     Pour chaque service ayant un point d’entrée SOAP, la console d’administration vous offre la possibilité de spécifier le protocole de transmission pour les objets Blob renvoyés. (Voir [Aide d’administration](https://www.adobe.com/go/learn_aemforms_admin_63_fr).)
 
    * Le service AEM Forms prend un ou plusieurs documents en entrée.
 
@@ -576,7 +576,7 @@ La section « Appeler AEM Forms en utilisant le codage Base64 » traite de l�
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
 ### Créer un assemblage client .NET utilisant le codage Base64 {#creating-a-net-client-assembly-that-uses-base64-encoding}
@@ -683,9 +683,9 @@ Vous pouvez appeler un service AEM Forms à l’aide des classes proxy Java et 
 1. Créez un objet `MyApplicationEncryptDocument` en appelant la méthode `getEncryptDocument` de lʼobjet `MyApplicationEncryptDocumentService`.
 1. Définissez les valeurs de connexion requises pour appeler AEM Forms en affectant des valeurs aux membres de données suivants :
 
-   * Attribuez le point de terminaison WSDL et le type de codage au champ `ENDPOINT_ADDRESS_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`. Pour appeler le service `MyApplication/EncryptDocument` en utilisant le codage Base64, spécifiez la valeur dʼURL suivante :
+   * Attribuez le point d’entrée WSDL et le type de codage au champ `ENDPOINT_ADDRESS_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`. Pour appeler le service `MyApplication/EncryptDocument` en utilisant le codage Base64, spécifiez la valeur dʼURL suivante :
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
    * Attribuez lʼutilisateur AEM Forms au champ `USERNAME_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
    * Attribuez la valeur du mot de passe correspondant au champ `PASSWORD_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
@@ -728,7 +728,7 @@ La discussion ici porte sur l’utilisation de MTOM pour appeler le processus de
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
 >[!NOTE]
@@ -842,7 +842,7 @@ La discussion ici porte sur l’appel du processus de courte durée Forms suivan
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
 >[!NOTE]
@@ -880,7 +880,7 @@ Pour appeler le processus `MyApplication/EncryptDocument` en utilisant des fichi
 
    * Affectez le point d’entrée WSDL et le type de codage au champ `ENDPOINT_ADDRESS_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`. Pour appeler le service `MyApplication/EncryptDocument` à l’aide du codage SwaRef, spécifiez la valeur d’URL suivante :
 
-      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
+     ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
    * Affectez l’utilisateur d’AEM forms au champ `USERNAME_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
    * Attribuez la valeur du mot de passe correspondant au champ `PASSWORD_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
@@ -927,7 +927,7 @@ Vous pouvez appeler des services AEM Forms à l’aide de services web et en tra
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
 >[!NOTE]
@@ -1003,7 +1003,7 @@ Vous pouvez appeler un service AEM Forms à l’aide de classes proxy Java et de
 
    * Affectez le point d’entrée WSDL et le type de codage au champ `ENDPOINT_ADDRESS_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`. Pour appeler le service `MyApplication/EncryptDocument` à l’aide de l’encodage BLOB sur HTTP, spécifiez la valeur d’URL suivante :
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
    * Affectez l’utilisateur d’AEM forms au champ `USERNAME_PROPERTY` de l’objet `javax.xml.ws.BindingProvider`.
    * Attribuez la valeur du mot de passe correspondant au champ `PASSWORD_PROPERTY` de lʼobjet `javax.xml.ws.BindingProvider`.
@@ -1034,7 +1034,7 @@ Vous pouvez appeler des services AEM Forms à l’aide de SOAP avec des pièces 
 
 Lorsque ce processus est appelé, il effectue les actions suivantes :
 
-1. Obtention du document PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
+1. Obtient le document de PDF non sécurisé transmis au processus. Cette action est basée sur l’opération `SetValue`. Le paramètre d’entrée pour ce processus est une variable de processus `document` désignée par `inDoc`.
 1. Chiffrement du document PDF avec un mot de passe. Cette action est basée sur l’opération `PasswordEncryptPDF`. Le document PDF chiffré avec un mot de passe est retourné dans une variable de processus nommée `outDoc`.
 
 Ce processus n’est pas basé sur un processus AEM Forms existant. Pour suivre des exemple de code, créez un processus désigné par `MyApplication/EncryptDocument` à l’aide de Workbench. (Voir [Utilisation de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_fr).)
@@ -1337,7 +1337,7 @@ Vous pouvez appeler un service Forms à l’aide d’un assemblage client .NET e
 >
 >La section DIME utilise WSE 2.0. Pour utiliser l’authentification SAML, suivez les instructions similaires décrites dans la section DIME. Veillez cependant à remplacer WSE 2.0 par WSE 3.0 et à lʼinstaller sur votre ordinateur de développement, puis à lʼintégrer à Microsoft Visual Studio .NET. Téléchargez Web Services Enhancements 3.0 depuis le [Centre de téléchargement Microsoft](https://www.microsoft.com/fr-fr/download/default.aspx).
 
-L’architecture WSE utilise les types de données Policies, Assertions et SecurityToken. En résumé, pour un appel de service web, spécifiez une stratégie. Cette dernière peut avoir plusieurs assertions. Chaque assertion peut contenir des filtres. Un filtre est appelé à certaines étapes d’un appel de service web et, à ce moment-là, il peut modifier la requête SOAP. Pour plus d’informations, consultez la documentation de WSE 3.0.
+L’architecture WSE utilise les types de données Policies, Assertions et SecurityToken. En résumé, pour un appel de service web, spécifiez une politique. Cette dernière peut avoir plusieurs assertions. Chaque assertion peut contenir des filtres. Un filtre est appelé à certaines étapes d’un appel de service web et, à ce moment-là, il peut modifier la requête SOAP. Pour plus d’informations, consultez la documentation de WSE 3.0.
 
 **Créer lʼassertion et le filtre**
 

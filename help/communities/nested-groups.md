@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '584'
-ht-degree: 5%
+source-wordcount: '583'
+ht-degree: 4%
 
 ---
 
@@ -71,15 +71,15 @@ Passez aux autres panneaux avec les paramètres suivants :
    * **[!UICONTROL Modération]**
 
       * Laissez vide (hériter du site parent).
+
    * **[!UICONTROL Abonnement]**
 
       * Utiliser la valeur par défaut `Optional Membership.`
 
       * **[!UICONTROL Miniature]**
          * `optional.*`
+
       * **[!UICONTROL Sélectionnez Suivant]**.
-
-
 
 * Sélectionnez **[!UICONTROL Créer]**.
 
@@ -103,21 +103,21 @@ Le `arts` Le groupe doit également contenir un `groups` , mais vide et dans leq
 
 1. **[!UICONTROL Visuel]**
 
-   * Titre: `Visual Arts`
+   * Titre : `Visual Arts`
    * Nom : `visual`
    * Modèle: `Reference Group`
    * Adhésion : select `Optional Membership`, un groupe public, ouvert à tous les membres.
 
 1. **[!UICONTROL Auditoire]**
 
-   * Titre: `Auditory Arts`
+   * Titre : `Auditory Arts`
    * Nom : `auditory`
    * Modèle: `Reference Group`
    * Adhésion : select `Required Membership`, un groupe ouvert, accessible aux membres.
 
 1. **[!UICONTROL Historique]**
 
-   * Titre: `Art History`
+   * Titre : `Art History`
    * Nom : `history`
    * Modèle: `Reference Group`
    * Adhésion : select `Restricted Membership`, un groupe secret, visible uniquement pour les membres invités. Par exemple, invitez [utilisateur de démonstration](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 70%
 
 ---
 
@@ -28,11 +28,11 @@ Accédez tout d’abord à l’option [Utilisateur](/help/sites-authoring/user-p
 
 ## Paramètres utilisateur {#user-settings}
 
-La boîte de dialogue **Paramètres utilisateur** donne accès aux options suivantes :
+Le **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
 
 * Se faire passer pour
 
-   * La fonction [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) permet à un utilisateur de travailler au nom d’un autre.
+   * Avec le [Se faire passer pour](/help/sites-administering/security.md#impersonating-another-user) fonctionnalité qu’un utilisateur peut utiliser au nom d’un autre utilisateur.
 
 * Profil
 
@@ -54,38 +54,38 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Langue**
 
-   Définit la langue à utiliser dans l’IU de l’environnement de création. Sélectionnez la langue de votre choix dans la liste des langues disponibles.
+  Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue souhaitée dans la liste disponible.
 
-   Cette configuration est également utilisée dans l’IU classique.
+  Cette configuration est également utilisée pour l’IU classique.
 
 * **Gestion des fenêtres**
 
-   Définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
+  Cela définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
 
-   * **Fenêtres multiples** (par défaut)
+   * **Fenêtres multiples** (Par défaut)
 
       * Les pages s’ouvrent dans une nouvelle fenêtre.
+
    * **Une seule fenêtre**
 
-      * Les pages s’ouvrent dans la fenêtre actuelle.
-
+      * Les pages s’ouvrent dans la fenêtre active.
 
 * **Afficher les actions de bureau pour Assets**
 
-   Cette option nécessite l’utilisation de l’application de bureau AEM.
+  Cette option nécessite l’utilisation de l’appli de bureau AEM.
 
 * **Couleur de l’annotation**
 
-   Cette opération définit la couleur par défaut utilisée pour les annotations.
+  Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
-   * Cliquez sur le bloc de couleurs pour ouvrir le sélecteur d’échantillon afin de choisir une couleur.
+   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons afin de sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
-   Pour améliorer la lisibilité, AEM effectue le rendu des dates parmi les sept derniers jours comme des dates relatives (par exemple, il y a trois jours) et des dates antérieures comme des dates précises (par exemple, le 20 mars 2017).
+  Pour améliorer la lisibilité, AEM effectue le rendu des dates parmi les sept derniers jours en tant que dates relatives (par exemple, il y a trois jours) et des dates antérieures en tant que dates précises (par exemple, le 20 mars 2017).
 
-   Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
+  Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
 
    * **Toujours afficher la date exacte** : la date exacte est toujours affichée (ce n’est jamais une date relative).
    * **1 jour** : la date relative s’affiche pour les dates correspondant au jour même ; dans le cas contraire, une date exacte est affichée.
@@ -100,21 +100,21 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Activer les raccourcis**
 
-   AEM prend en charge un certain nombre de raccourcis clavier qui rendent la création plus efficace.
+  AEM prend en charge un certain nombre de raccourcis clavier qui rendent la création plus efficace.
 
    * [Raccourcis clavier lors de la modification de pages](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Raccourcis clavier pour les consoles](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Cette option active les raccourcis clavier. Ils sont activés par défaut, mais il est possible de les désactiver, par exemple si un utilisateur a certaines exigences d’accessibilité.
+  Cette option active les raccourcis clavier. Par défaut, elles sont activées, mais peuvent être désactivées, par exemple si un utilisateur a certaines exigences d’accessibilité.
 
 * **Utilisez une expérience de création de contenu classique**.
 
-   Cette option permet la création de pages basée sur l’[IU classique](/help/sites-classic-ui-authoring/home.md). Par défaut, l’IU standard est utilisée.
+  Cette option permet la création de pages basée sur l’[IU classique](/help/sites-classic-ui-authoring/home.md). Par défaut, l’IU standard est utilisée.
 
 * **Activer la page d’accueil des ressources**
 
-   Cette option est disponible uniquement si l’administrateur système a activé l’environnement Page d’accueil des ressources pour l’ensemble de l’entreprise.
+  Cette option est disponible uniquement si l’administrateur système a activé l’environnement Page d’accueil des ressources pour l’ensemble de l’entreprise.
 
 * **Configuration Stock**
 
-   Cette option permet de définir la configuration Adobe Stock préférée. Elle n’est disponible que si l’administrateur système a activé l’[intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Cette option permet de spécifier la configuration Adobe Stock préférée. Elle n’est disponible que si votre administrateur système a activé . [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

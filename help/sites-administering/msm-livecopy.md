@@ -3,9 +3,9 @@ title: Création et synchronisation de Live Copies
 description: Découvrez comment créer et synchroniser des Live Copies.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4229'
 ht-degree: 73%
 
 ---
@@ -154,7 +154,7 @@ Pour créer une Live Copy d’un site à partir d’une configuration de plan di
 
    ![Sélectionner la configuration de plan directeur comme source de Live Copy](assets/blueprint-configuration-select.png)
 
-1. Utilisez la variable **Langues initiales** sélecteur pour spécifier la ou les langues du site de plan directeur à utiliser pour la Live Copy.
+1. Utilisez la variable **Langues initiales** sélecteur permettant de spécifier les langues du site de plan directeur à utiliser pour la Live Copy.
 
    Toutes les langues disponibles sont sélectionnées par défaut. Pour supprimer une langue, cliquez ou appuyez sur le bouton **X** qui s’affiche en regard de la langue.
 

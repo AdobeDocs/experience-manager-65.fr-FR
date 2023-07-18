@@ -1,5 +1,5 @@
 ---
-title: Configuration de votre service cloud Adobe Mobile Services
+title: Configuration de votre Cloud Service Mobile Services Adobe
 seo-title: Configure your Adobe Mobile Services Cloud Service
 description: Consultez cette page pour configurer votre Cloud Service Mobile Services Adobe.
 seo-description: Follow this page to configure your Adobe Mobile Services Cloud Service.
@@ -11,26 +11,26 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 32%
+source-wordcount: '451'
+ht-degree: 1%
 
 ---
 
-# Configuration de votre service cloud Adobe Mobile Services {#configure-your-adobe-mobile-services-cloud-service}
+# Configuration de votre Cloud Service Mobile Services Adobe {#configure-your-adobe-mobile-services-cloud-service}
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Le **Mosaïque Mesures mobiles** sur le centre de commande fournit des analyses en temps réel pour votre application mobile.
 
-Le SDK [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) est disponible via un plug-in PhoneGap. Les mesures sont collectées et mises en cache sur le périphérique jusqu’à ce que ce dernier soit connecté, moment auquel les données sont transférées vers le service cloud Adobe Mobile Services à des fins de rapports et d’analyses.
+Le [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) Le SDK est rendu disponible par le biais d’un module externe PhoneGap. Les mesures sont collectées et mises en cache sur l’appareil jusqu’à ce que l’appareil soit connecté. Les données sont alors transmises à Adobe Mobile Services Cloud pour création de rapports et analyse.
 
-Le SDK Adobe Mobile Analytics fournit les éléments suivants :
+Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
-1. **Collecte de données pour les canaux mobiles** : collectez des données complètes pour vos sites web et applications mobiles sur tous les grands systèmes d’exploitation.
+1. **Collecte de données pour les canaux mobiles** - Collectez des données complètes pour vos sites web et applications mobiles sur tous les principaux systèmes d’exploitation.
 1. **Analyse de l&#39;engagement mobile** - Comprendre l’engagement des utilisateurs dans votre application mobile, votre site web ou votre vidéo, notamment la fréquence à laquelle les clients lancent le canal, s’ils effectuent des achats sur celui-ci, etc.
 1. **Tableaux de bord et rapports d’applications mobiles** - Obtenez des rapports d’utilisation qui contiennent des mesures de cycle de vie pour vos applications et des mesures de boutique d’applications. Consultez les tendances pour les utilisateurs, les lancements, la durée de session moyenne, la durée de rétention et les blocages.
 1. **Analyse de campagne mobile** - Quantifiez l’efficacité des campagnes spécifiques aux mobiles telles que les SMS, les annonces de recherche mobile, les annonces d’affichage mobile et les codes QR.
@@ -43,11 +43,11 @@ Le SDK Adobe Mobile Analytics fournit les éléments suivants :
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-Mosaïque Mesures du centre de commande AEM
+AEM mosaïque Mesures du centre de commandes
 
-## Configuration du service cloud {#configuring-the-cloud-service}
+## Configuration du Cloud Service {#configuring-the-cloud-service}
 
-Pour exploiter pleinement Adobe Mobile Services Analytics, vous devez configurer le service cloud AEM Mobile Analytics avec les informations de votre compte Adobe Analytics.
+Pour tirer parti d’Adobe Mobile Services Analytics, vous devez configurer le service AEM Mobile Analytics Cloud avec les informations de votre compte Adobe Analytics.
 
 1. Cliquez sur l’icône en haut à droite pour ajouter ou modifier les Cloud Services à partir du **Gestion des Cloud Services** à partir du tableau de bord de l’application.
 

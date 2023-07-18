@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 2%
+source-wordcount: '1194'
+ht-degree: 1%
 
 ---
 
@@ -81,7 +81,7 @@ Cette expérience suppose que [Aaron McDonald](/help/communities/tutorials.md#de
 
 Dans le coin supérieur droit, sélectionnez `Log in`et signez avec le nom d’utilisateur (aaron.mcdonald@mailinator.com) et le mot de passe (mot de passe). Vous pouvez vous connecter à l’aide des informations d’identification Twitter ou Facebook.
 
-![Connexion](assets/login.png)
+![connexion](assets/login.png)
 
 Une fois connecté en tant que membre de la communauté enregistré, remarquez les options de menu suivantes pour cliquer et explorer votre site de communauté :
 
@@ -107,7 +107,6 @@ Notez que la page Calendrier est la page d’accueil, car le modèle de site de 
 >* [Composants Communities](/help/communities/author-communities.md) (pour les auteurs)
 >* [Principes fondamentaux des composants, fonctions et fonctionnalités](/help/communities/essentials.md) (pour les développeurs)
 
-
 ### Lien du forum {#forum-link}
 
 Pour afficher la fonction de base du forum, cliquez sur le lien Forum .
@@ -131,10 +130,10 @@ Les groupes peuvent également être créés dans l’environnement de création
 Création d’un groupe de référence :
 
 1. Sélectionner **Nouveau groupe**
-1. **Onglet Settings**
+1. **Onglet Paramètres**
 
-   * Nom du groupe : `Sports`
-   * Description : `A parent group for various sporting groups`.
+   * Nom de groupe : `Sports`
+   * Description : `A parent group for various sporting groups`
    * Nom de l’URL de groupe : `sports`
    * Sélectionner `Open Group` (autoriser tout membre de la communauté à y participer en y rejoignant)
 

@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 97%
+source-wordcount: '753'
+ht-degree: 93%
 
 ---
 
@@ -90,7 +90,7 @@ Adobe propose deux versions de framework d’intégration de Commerce :
   </tr>
   <tr>
    <td>Quand l’utiliser</td>
-   <td>Cas d’utilisation limités : dans le cas de scénarios dans lesquels de petits catalogues statiques doivent être importés</td>
+   <td>Cas d’utilisation limités : Par exemple, dans les cas où de petits catalogues statiques peuvent avoir besoin d’être importés.</td>
    <td>Solution préférée dans la plupart des cas d’utilisation</td>
   </tr>
  </tbody>
@@ -163,7 +163,7 @@ AEM e-commerce fournit :
 * Possibilité de développer un **commerce axé sur l’expérience en fonction des données et de l’activité des acheteurs**, Vous pouvez ainsi réaliser de nombreux scénarios :
 
    * Par exemple, une réduction des frais de livraison proposée lorsque le montant total d’une commande dépasse un montant spécifique.
-   * Autre exemple : la possibilité de proposer des offres à certaines occasions à partir des informations de profil (tel le lieu). Elles peuvent ensuite être mises en évidence, selon d’autres facteurs, le cas échéant.
+   * Une autre peut vous permettre de fournir des offres saisonnières qui utilisent les données de profil (par exemple, la localisation). Elles peuvent ensuite être mises en évidence, selon d’autres facteurs, le cas échéant.
 
   Dans l’exemple ci-dessous, un teaser est affiché, car le contenu du panier est inférieur à 75 $ :
 

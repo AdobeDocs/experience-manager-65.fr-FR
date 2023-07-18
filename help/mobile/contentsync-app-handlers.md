@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 2%
+source-wordcount: '1410'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe recommande d’utiliser l’éditeur d’application d’une seule page (SPA) pour les projets nécessitant un rendu côté client basé sur la structure SPA (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
+>Adobe recommande d’utiliser l’éditeur de SPA pour les projets qui nécessitent un rendu côté client basé sur la structure d’application d’une seule page (par exemple, React). [En savoir plus](/help/sites-developing/spa-overview.md).
 
 Consultez les instructions suivantes pour le développement de gestionnaires de synchronisation de contenu :
 
@@ -52,7 +52,7 @@ La liste suivante répertorie les gestionnaires d’applications prêts à l’e
 
 * ***includeModifiedPagesOnly - Booléen*** - Si la valeur est false ou si elle est omise, toutes les pages sont rendues et vérifiez les mises à jour dans le rendu. Si la valeur est true, la base diffère des modifications apportées à une page lastModified.
 * ***+ rewrite (noeud)***
-   ***- relativeParentPath - String*** : chemin d’accès pour écrire tous les autres chemins d’accès relatifs à .
+  ***- relativeParentPath - String*** : chemin d’accès pour écrire tous les autres chemins d’accès relatifs à .
 
 >[!NOTE]
 >

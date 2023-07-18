@@ -1,7 +1,7 @@
 ---
 title: Tableaux de bord
 seo-title: Dashboards
-description: Apprenez à créer, configurer et développer de nouveaux tableaux de bord AEM.
+description: Découvrez comment créer, configurer et développer de nouveaux tableaux de bord AEM.
 seo-description: Learn how to create, configure and develop new AEM dashboards.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
@@ -10,20 +10,20 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '835'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '839'
+ht-degree: 55%
 
 ---
 
 # Tableaux de bord{#dashboards}
 
-Lorsque vous utilisez AEM, vous avez la possibilité de gérer du contenu de nombreux types différents (pages, éléments, etc.). Les tableaux de bord AEM vous permettent de définir facilement et de manière personnalisée des pages affichant des données consolidées.
+Lorsque vous utilisez AEM, vous pouvez gérer de nombreux contenus de différents types (par exemple, des pages, des ressources). AEM Les tableaux de bord offrent un moyen simple d’utilisation et personnalisable de définir des pages qui affichent des données consolidées.
 
 >[!NOTE]
 >
->Ces tableaux de bord sont créés pour chaque utilisateur en particulier. Par conséquent, un utilisateur ne peut accéder qu’à son propre tableau de bord.
+>AEM Les tableaux de bord sont créés par utilisateur, de sorte qu’un utilisateur ne peut accéder qu’à son propre tableau de bord.
 >
 >Cependant, les [modèles de tableau de bord](#creating-a-dashboard-template) peuvent être utilisés pour créer une disposition et une configuration commune à tous les de tableaux de bord.
 
@@ -31,62 +31,62 @@ Lorsque vous utilisez AEM, vous avez la possibilité de gérer du contenu de nom
 
 ## Administration des tableaux de bord {#administering-dashboards}
 
-### Création d’un tableau de bord {#creating-a-dashboard}
+### Création D’Un Tableau De Bord {#creating-a-dashboard}
 
-Pour créer un tableau de bord, procédez comme suit :
+Pour créer un tableau de bord, procédez comme suit :
 
-1. Dans la section **Outils**, cliquez sur **Console de configuration**.
+1. Dans le **Outils** , cliquez sur **Console de configuration**.
 1. Dans l’arborescence, double-cliquez sur **Tableau de bord**.
 1. Cliquez sur **Nouveau tableau de bord**.
-1. Entrez le **Titre** (Mon tableau de bord, par exemple) et le **Nom**.
+1. Saisissez le **Titre** (Mon tableau de bord, par exemple) et la variable **Nom**.
 1. Cliquez sur **Créer**.
 
-### Clonage d’un tableau de bord {#cloning-a-dashboard}
+### Clonage D’Un Tableau De Bord {#cloning-a-dashboard}
 
-Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin de consulter rapidement des informations sur votre contenu depuis différentes vues. Pour faciliter la création d’un tableau de bord, AEM propose une fonctionnalité de clonage que vous pouvez utiliser pour dupliquer un tableau de bord existant. Pour cloner un tableau de bord, procédez comme suit :
+Vous pouvez, si vous le souhaitez, disposer de plusieurs tableaux de bord afin de consulter rapidement des informations sur votre contenu depuis différentes vues. Pour faciliter la création d’un tableau de bord, AEM propose une fonctionnalité de clonage que vous pouvez utiliser pour dupliquer un tableau de bord existant. Pour cloner un tableau de bord, procédez comme suit :
 
-1. Dans la section **Outils**, cliquez sur **Console de configuration**.
+1. Dans le **Outils** , cliquez sur **Console de configuration**.
 
-1. Dans l’arborescence, double-cliquez sur **Tableau de bord**.
+1. Dans l’arborescence, cliquez sur **Tableau de bord**.
 1. Cliquez sur le tableau de bord que vous souhaitez cloner.
 
 1. Cliquez sur **Cloner**.
 
-1. Entrez le **Nom** de votre nouveau tableau de bord.
+1. Saisissez le **Nom** de votre nouveau tableau de bord.
 
-### Suppression d’un tableau de bord {#removing-a-dashboard}
+### Suppression D’Un Tableau De Bord {#removing-a-dashboard}
 
-1. Dans la section **Outils**, cliquez sur **Console de configuration**.
+1. Dans le **Outils** , cliquez sur **Console de configuration**.
 
-1. Dans l’arborescence, double-cliquez sur **Tableau de bord**.
-1. Cliquez sur le tableau de bord que vous souhaitez supprimer.
+1. Dans l’arborescence, cliquez sur **Tableau de bord**.
+1. Cliquez sur le tableau de bord à supprimer.
 
 1. Cliquez sur **Supprimer**.
 
 1. Cliquez sur **Oui** pour confirmer.
 
-## Composants du tableau de bord {#dashboard-components}
+## Composants de tableau de bord {#dashboard-components}
 
 ### du commerce électronique {#overview}
 
-Les composants de tableau de bord ne sont rien de plus que des [composants AEM](/help/sites-developing/developing-components-samples.md) standard. Cette section décrit les composants de génération de rapports fournis avec AEM.
+Les composants de tableau de bord ne sont rien de plus que des [composants AEM](/help/sites-developing/developing-components-samples.md) standard. Cette section décrit les composants de création de rapports fournis avec AEM.
 
-### Composants de génération de rapports sur les analyses web {#web-analytics-reporting-components}
+### Composants de création de rapports Web Analytics {#web-analytics-reporting-components}
 
-AEM est fourni avec un ensemble de composants qui effectuent le rendu de plusieurs mesures de vos données [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Ces composants sont répertoriés dans le Sidekick, sous la section **Tableau de bord**.
+AEM est fourni avec un ensemble de composants qui effectuent le rendu de plusieurs mesures de vos données [SiteCatalyst](/help/sites-administering/adobeanalytics.md). Ces composants sont répertoriés dans le Sidekick sous le **Tableau de bord** .
 
-Chacun de ces composants comprend au moins trois onglets :
+Chaque composant de création de rapports comporte au moins trois onglets :
 
-* **De base** : contient la configuration principale.
+* **De base**: contient la configuration principale.
 
-* **Rapport** : contient la configuration propre à chaque rapport.
-* **Style** : contient la configuration du style, telle que la taille du graphique et la marge.
+* **Rapport :** contient la configuration propre à chaque rapport.
+* **Style**: contient une configuration de style, telle que la taille du graphique et la marge.
 
-Les composants de génération de rapports sont initialisés avec une configuration par défaut qui vous aide à configurer rapidement votre tableau de bord.
+Les composants de création de rapports sont initialisés avec une configuration par défaut qui vous permet de configurer rapidement votre tableau de bord.
 
 #### Configuration de base {#basic-configuration}
 
-L’onglet **De base** vous donne accès aux entrées de configuration suivantes :
+Le **De base** donne accès aux entrées de configuration suivantes :
 
 **Titre** - Titre affiché sur le tableau de bord.
 
@@ -96,13 +96,13 @@ L’onglet **De base** vous donne accès aux entrées de configuration suivantes
 
 **Identifiant de suite de rapports (facultatif)** Suite de rapports de SiteCatalyst que vous souhaitez utiliser pour générer le graphique.
 
-#### Configuration du rapport {#report-configuration}
+#### Configuration des rapports {#report-configuration}
 
-Pour pouvoir afficher des statistiques web, vous devez définir la plage de dates des données à récupérer. L’onglet **Rapport** met à votre disposition deux champs pour définir cette plage.
+Pour pouvoir afficher des statistiques web, vous devez définir la plage de dates des données à récupérer. Le **Rapport** fournit deux champs pour définir cette plage.
 
 >[!NOTE]
 >
->La définition d’une plage de dates étendue a pour effet de diminuer la réactivité du tableau de bord.
+>La définition d’une plage de dates étendue peut diminuer la réactivité du tableau de bord.
 
 **Date à partir de** - Date absolue ou relative à partir de laquelle les données sont récupérées.
 
@@ -114,7 +114,7 @@ Chaque composant définit également des paramètres spécifiques.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Granularité de la date** - Unité de temps de l’axe des x (jour ou heure, par exemple).
+**Granularité des dates** Unité de temps de l’axe X (par exemple, jour, heure).
 
 **Mesures** - Liste des événements à afficher.
 
@@ -140,7 +140,7 @@ Chaque composant définit également des paramètres spécifiques.
 
 #### Rapport de section du site supérieur {#top-site-section-report}
 
-Ce composant affiche un graphique qui présente la section la plus visitée d’un site web en fonction de la configuration suivante.
+Ce composant affiche un graphique présentant la section la plus visitée d’un site web selon la configuration suivante.
 
 ![chlimage_1-29](assets/chlimage_1-29a.png)
 
@@ -150,7 +150,7 @@ Ce composant affiche un graphique qui présente la section la plus visitée d’
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Granularité de la date** Unité de temps de l’axe des x (jour ou heure, par exemple).
+**Granularité des dates** Unité de temps de l’axe X (par exemple, jour, heure).
 
 **Mesures** L’événement que vous souhaitez afficher.
 
@@ -164,7 +164,7 @@ Les tableaux de bord sont des pages normales (`cq:Page`). N’importe quel compo
 
 Un groupe de composants par défaut, `Dashboard`, contient les composants de génération de rapports d’analyse activés par défaut sur le modèle.
 
-### Création d’un modèle de tableau de bord {#creating-a-dashboard-template}
+### Création D’Un Modèle De Tableau De Bord {#creating-a-dashboard-template}
 
 Un modèle définit le contenu par défaut d’un nouveau tableau de bord. Vous pouvez utiliser plusieurs modèles pour créer différents types de tableaux de bord.
 
@@ -176,7 +176,7 @@ Ces modèles sont créés de la même manière que les autres modèles de page, 
 
 ### Développement d’un composant Tableau de bord {#developing-a-dashboard-component}
 
-Le développement d’un composant Tableau de bord consiste à créer un composant AEM ordinaire. Cette section illustre un composant qui affiche les 10 principaux contributeurs.
+Le développement d’un composant Tableau de bord consiste à créer un composant AEM ordinaire. Cette section décrit un exemple de composant qui affiche les 10 premiers contributeurs.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
@@ -188,7 +188,7 @@ Le composant « Auteurs principaux » est stocké dans le référentiel, sous 
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-Le fichier JavaScript suivant est défini dans la bibliothèque cliente`geout.reporting.topauthors` [&#128279;](/help/sites-developing/clientlibs.md) en tant qu’enfant du composant lui-même.
+Le fichier JavaScript suivant est défini dans la variable `geout.reporting.topauthors` [Bibliothèque cliente](/help/sites-developing/clientlibs.md) en tant qu’enfant du composant lui-même.
 
 Le composant [QueryBuilder](/help/sites-developing/querybuilder-api.md) est utilisé pour interroger le référentiel afin de lire les nœuds `cq:AuditEvent`. Le résultat de la requête est un objet JSON duquel sont extraites les contributions de l’auteur.
 
