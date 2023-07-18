@@ -1,6 +1,6 @@
 ---
 title: Enrichissement des données de produit avec le contenu AEM associé
-description: Découvrez comment les professionnels du marketing peuvent enrichir les données de produit avec du contenu associé à partir d’Adobe Experience Manager. Le contenu, comme les ressources et les fragments d’expérience dans AEM, peut être associé à des produits commerciaux. Une fois associés, ces types de contenu peuvent être insérés dynamiquement dans un espace réservé dans une page de produit ou de catégorie. Les marketeurs ont ainsi la possibilité de cibler des pages de produits spécifiques avec du contenu supplémentaire, comme des images et des vidéos.
+description: Découvrez comment les marketeurs peuvent enrichir les données de produit avec du contenu associé à partir d’Adobe Experience Manager, en ajoutant dynamiquement du contenu marketing aux pages de produit. Les marketeurs ont ainsi la possibilité de cibler des pages de produits spécifiques avec du contenu supplémentaire, tel que des images et des vidéos.
 sub-product: Commerce
 version: 6.5
 doc-type: feature-video
@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
-source-wordcount: '375'
-ht-degree: 100%
+source-git-commit: a600acb7d65fbfa1806ef582642a6c5ac7859890
+workflow-type: tm+mt
+source-wordcount: '350'
+ht-degree: 87%
 
 ---
 
@@ -25,7 +25,7 @@ Découvrez comment les professionnels du marketing peuvent enrichir les données
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Les ressources numériques peuvent être associées à un ou plusieurs SKU de produit. Une fois associée, la ressource numérique peut être découverte avec des recherches de mots clés basées sur le SKU. La ressource s’affiche également automatiquement en tant que contenu associé lors de la modification d’une page qui comprend le produit approprié, ce qui facilite encore la création de votre prochaine expérience numérique.
+Les ressources numériques peuvent être associées à un ou plusieurs SKU de produit. Une fois associée, la ressource numérique peut être découverte avec des recherches de mots clés basées sur le SKU. La ressource s’affiche également automatiquement en tant que contenu associé lors de la modification d’une page qui comprend le produit approprié, ce qui facilite encore la création de votre prochaine expérience digitale.
 
 ## Fragments d’expérience
 
