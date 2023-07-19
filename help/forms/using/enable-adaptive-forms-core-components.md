@@ -8,15 +8,24 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 6%
+source-wordcount: '911'
+ht-degree: 7%
 
 ---
 
 
 # Activation des composants principaux de Forms adaptatif sur AEM Forms 6.5 {#enable-adaptive-forms-core-components}
+
+<span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’une Forms adaptative à une page AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | Cet article |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+
+**S’applique à :** ✅ Composants principaux de formulaire adaptatif ❎ Composants de base de formulaire adaptatif.
 
 L’activation des composants principaux de Forms adaptatif vous permet de commencer à créer, publier et diffuser des [Forms adaptatif basé sur les composants principaux](create-an-adaptive-form-core-components.md) et [Forms adaptatif sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr) de votre environnement Forms 6.5 AEM.
 

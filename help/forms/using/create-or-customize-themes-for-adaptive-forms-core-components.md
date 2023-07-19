@@ -8,26 +8,30 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 11%
+source-wordcount: '1988'
+ht-degree: 8%
 
 ---
 
 
-# Présentation du thème {#introduction-to-theme}
+# Création ou personnalisation d’un thème de formulaire adaptatif {#introduction-to-theme}
+
+<span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’une Forms adaptative à une page AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | Cet article |
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
+**S’applique à :** ✅ Composants principaux de formulaire adaptatif ❎ [Composants de base de formulaires adaptatifs](/help/forms/using/themes.md).
+
 Dans AEM Forms 6.5, un thème est une bibliothèque cliente AEM que vous utilisez pour définir les styles (apparence) d’un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs Forms adaptatives.
 
-## Thèmes de référence disponibles {#available-reference-theme}
+## Thèmes disponibles {#available-standard-theme}
 
-L’environnement AEM 6.5 fournit les thèmes de référence ci-dessous pour le Forms adaptatif basé sur les composants principaux :
+L’environnement AEM 6.5 fournit les thèmes répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux :
 
 * [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
@@ -49,13 +53,13 @@ Un thème est un module qui englobe le fichier CSS, les fichiers JavaScript et l
 
 ## Création d’un thème
 
-AEM Forms 6.5 fournit les thèmes de référence répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux.
+AEM Forms 6.5 fournit les thèmes standard répertoriés ci-dessous pour les Forms adaptatif basés sur les composants principaux.
 
 * [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Vous pouvez [personnaliser l’un de ces thèmes de référence pour créer un thème ;](#customize-a-theme-core-components).
+Vous pouvez [personnaliser l’un de ces thèmes standard pour créer un thème ;](#customize-a-theme-core-components).
 
 ## Personnalisation d’un thème {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -90,26 +94,27 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 La création ou la personnalisation d’un thème est un processus à plusieurs étapes. Effectuez les étapes dans l’ordre indiqué pour créer/personnaliser le thème :
 
-1. [Clonage d’un thème de référence](#clone-git-repo-of-theme)
+1. [Clonage d’un thème standard](#clone-git-repo-of-theme)
 1. [Personnaliser l’aspect du thème](#customize-the-theme)
 1. [Préparer le thème pour le déploiement local](#generate-the-clientlib)
-1. [Déployer le thème dans un environnement de test local](#deploy-the-theme-on-a-local-testing-environment)
-1. [Tester le thème avec un formulaire adaptatif local](#test-the-theme-with-a-local-adaptive-form)
-1. Déployer le thème dans l’environnement de production
+1. [Déployer le thème sur un environnement local](#deploy-the-theme-on-a-local-environment)
+1. [Déployer le thème dans l’environnement de production](#5-deploy-a-theme-on-your-production-environment)
 
-![Workflow de personnalisation du thème](/help/forms/using/assets/custom-theme-steps.png)
+<!--
+ ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
+-->
 
-Les exemples fournis dans le document reposent sur la variable **Canevas** mais vous pouvez cloner n’importe quel thème de référence et le personnaliser en suivant les mêmes instructions. Ces instructions s’appliquent à n’importe quel thème, ce qui vous permet de modifier des thèmes en fonction de vos besoins spécifiques.
+Les exemples fournis dans le document reposent sur la variable **Canevas** mais vous pouvez cloner n’importe quel thème standard et le personnaliser en suivant les mêmes instructions. Ces instructions s’appliquent à n’importe quel thème, ce qui vous permet de modifier des thèmes en fonction de vos besoins spécifiques.
 
 #### 1. Cloner le référentiel Git du thème {#clone-git-repo-of-theme}
 
-Pour cloner un thème de référence pour le Forms adaptatif basé sur les composants principaux, choisissez l’un des thèmes de référence suivants :
+Pour cloner un thème standard pour Forms adaptatif basé sur les composants principaux, choisissez l’un des thèmes standard suivants :
 
 * [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Suivez les instructions suivantes pour cloner un thème de référence :
+Suivez les instructions suivantes pour cloner un thème standard :
 
 1. Ouvrez l’invite de commande ou la fenêtre de terminal dans votre environnement de développement local.
 
@@ -206,7 +211,7 @@ Pour déployer un thème sur une instance AEM, il doit être converti en bibliot
 
    ![Emplacement de la bibliothèque cliente](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Déployer le thème dans un environnement de test local {#deploy-the-theme-on-a-local-testing-environment}
+#### 4. Déployer le thème sur un environnement local {#deploy-the-theme-on-a-local-environment}
 
 Pour déployer le thème dans votre environnement de développement ou de test local, procédez comme suit :
 
@@ -222,38 +227,40 @@ Pour déployer le thème dans votre environnement de développement ou de test l
 
    ![Version de bibliothèque cliente](/help/forms/using/assets/mvndeploy.png)
 
-#### 5. Tester le thème avec un formulaire adaptatif local {#test-the-theme-with-a-local-adaptive-form}
+<!--
 
-Pour appliquer et tester le thème personnalisé avec un formulaire adaptatif :
+#### 5. Test the theme with a local Adaptive Form {#test-the-theme-with-a-local-adaptive-form}
 
-**Appliquer le thème lors de la création d’un formulaire adaptatif**
+To apply and test the customized theme with an Adaptive Form:
 
-1. Connectez-vous à votre instance de création AEM Forms.
+**Apply theme while creating an Adaptive Form**
 
-1. Appuyez sur **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Log in to your AEM Forms author instance. 
 
-1. Cliquez sur **Créer** > **Formulaires adaptatifs**. L’assistant de création de formulaires adaptatifs s’ouvre.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Sélectionnez le modèle de composant principal dans l’onglet **Source**.
-1. Sélectionnez le thème dans le **Style** .
-1. Cliquez sur **Créer**.
+1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
-Un formulaire adaptatif avec le thème sélectionné est créé.
+1. Select the core component template in the **Source** tab.
+1. Select the theme in the **Style** tab.
+1. Click **Create**.
 
-**Appliquer le thème à un formulaire adaptatif existant**
+An Adaptive Form with the selected theme is created. 
 
-1. Connectez-vous à votre instance de création AEM Forms.
+**Apply theme to an existing Adaptive Form**
 
-1. Appuyez sur **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Log in to your AEM Forms author instance. 
 
-1. Sélectionnez un formulaire adaptatif et cliquez sur Propriétés.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Pour le **Bibliothèque cliente du thème** , sélectionnez le thème.
+1. Select an Adaptive Form and click Properties. 
 
-1. Cliquez sur **Enregistrer et fermer**.
+1. For the **Theme Client Library** option, select the theme. 
 
-Le thème sélectionné est appliqué au formulaire adaptatif.
+1. Click **Save & Close**.
 
+The selected theme is applied to the Adaptive Form. 
+-->
 
 #### 5. Déployez un thème sur votre environnement de production {#deploy-theme}
 
@@ -278,14 +285,17 @@ Une fois le package installé, le thème peut être sélectionné.
 
 Les étapes pour appliquer un thème à un formulaire adaptatif sont les suivantes :
 
-1. Connectez-vous à votre instance de création AEM Forms.
+1. Connectez-vous à votre instance d’auteur d’AEM locale.
+1. Entrez vos informations d’identification dans la page de connexion d’Experience Manager. Appuyez sur **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+1. Cliquez sur **Créer** > **Formulaires adaptatifs**.
+1. Sélectionnez un modèle de composants principaux de Forms adaptatif et cliquez sur **Suivant**. Le **Ajouter des propriétés** apparaît
+1. Spécifiez la variable **Nom** pour votre formulaire adaptatif.
 
-1. Appuyez sur **Adobe Experience Manager** > **Formulaires** > **Formulaires et documents**.
+   >[!NOTE]
+   >
+   > * Par défaut, la variable `adaptiveform.theme.canvas3` Le thème est sélectionné.
+   > * Vous pouvez choisir un thème différent dans la **Bibliothèque cliente du thème** menu déroulant.
 
-1. Cliquez sur **Créer** > **Formulaires adaptatifs**. L’assistant de création de formulaires adaptatifs s’ouvre.
-
-1. Sélectionnez le modèle de composant principal dans l’onglet **Source**.
-1. Sélectionnez le thème dans le **Style** .
 1. Cliquez sur **Créer**.
 
 Les thèmes de formulaire adaptatif sont utilisés dans le cadre d’un modèle de formulaire adaptatif pour définir le style lors de la création d’un formulaire adaptatif.
