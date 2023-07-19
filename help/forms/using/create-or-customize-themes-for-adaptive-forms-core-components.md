@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 9%
@@ -179,10 +179,9 @@ Vous avez également la possibilité de personnaliser la police, la couleur, la 
 
 -->
 
->
+>[!NOTE]
 >
 > Lorsqu’un style est défini au niveau du thème et du composant, le style défini au niveau du composant est prioritaire.
-
 
 #### 3. Préparer le thème pour le déploiement {#generate-the-clientlib}
 
@@ -275,9 +274,10 @@ Une fois le package installé, le thème peut être sélectionné.
 
 ![Bibliothèque cliente de thème](/help/forms/using/assets/themeclientlibrary.png)
 
+>[!NOTE]
 >
 >
->Si vous rencontrez des difficultés pour accéder à la boîte de dialogue de connexion sur une instance de publication afin d’installer le module via le gestionnaire de modules, essayez de vous connecter à l’aide de l’URL suivante : `http://[Publish Server URL]:[PORT]/system/console`. Cela vous permet d’accéder à l’instance de publication et de poursuivre le processus d’installation.
+> Si vous rencontrez des difficultés pour accéder à la boîte de dialogue de connexion sur une instance de publication afin d’installer le module via le gestionnaire de modules, essayez de vous connecter à l’aide de l’URL suivante : `http://[Publish Server URL]:[PORT]/system/console`. Cela vous permet d’accéder à l’instance de publication et de poursuivre le processus d’installation.
 
 ## Application d’un thème à un formulaire adaptatif {#using-theme-in-adaptive-form}
 
