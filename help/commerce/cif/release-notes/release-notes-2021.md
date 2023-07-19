@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour d’AEM Content and Commerce 2021
-description: Notes de mise à jour d’AEM Content and Commerce 2021
+title: Notes de mise à jour d’Adobe Experience Manager Content and Commerce 2021
+description: Notes de mise à jour d’Adobe Experience Manager Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 86%
 
 ---
 
@@ -13,15 +13,15 @@ ht-degree: 100%
 
 ## Présentation de la configuration système requise
 
-Passez en revue la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
+Examinez la configuration système minimale requise dans le tableau ci-dessous pour la version CIF que vous utilisez actuellement ou que vous prévoyez d’utiliser à l’avenir.
 
 | Composant | Configuration requise |
 |:-------|:-----:|
-| Module complémentaire CIF | Minimum : AEM 6.5.7, schémas GraphQL Adobe Commerce 2.3.5 |
+| Module complémentaire CIF | Minimum : Adobe Experience Manager (AEM) 6.5.7, schémas GraphQL Adobe Commerce 2.3.5 |
 | Composants principaux CIF | [Configuration requise](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Archétype de projet AEM | [Configuration requise](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Date de publication : novembre 2021
+## Date de publication : Novembre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -39,7 +39,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Prise en charge des cartes-cadeaux dans la vitrine AEM
 
-## Date de publication : octobre 2021
+## Date de publication : Octobre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -51,15 +51,15 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Le module complémentaire CIF prend en charge la dernière version de Commerce v2.4.3 avec de nouveaux schémas et API GraphQL.
 
-* Les auteurs peuvent ajouter des liens vers les pages de produits et de catalogues dans les champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
+* Les auteurs peuvent ajouter des liens vers les pages de produits et de catalogues dans les champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour permettre aux sélecteurs de rechercher rapidement et de sélectionner le produit ou la catégorie sans quitter le contexte.
 
-* Les fenêtres contextuelles de panier et de passage en caisse existantes ont été remplacées par des pages de panier et de passage en caisse AEM dédiées. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
+* Les fenêtres pop-up de panier et de passage en caisse existantes ont été remplacées par des pages de panier et de passage en caisse AEM dédiées. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
 
 * Les commerces peuvent masquer certaines catégories de catalogues de produits lors de la navigation à l’aide du serveur principal de Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de Commerce « inclure dans le menu » pour afficher/masquer les catégories dans la navigation.
 
 * Le storefront Venia d’AEM renvoie une erreur HTTP 404 si la catégorie ou page produit est introuvable.
 
-## Date de publication : septembre 2021
+## Date de publication : Septembre 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -71,11 +71,11 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Le nouvel onglet « Contenu commercial associé » dans l’éditeur de sites améliore l’efficacité de la création en permettant d’accéder rapidement au contenu produit AEM approprié pour le contexte actuel.
 
-   ![Contenu commercial associé](/help/assets/CIF/associated-commerce-content.png)
+  ![Contenu commercial associé](/help/assets/CIF/associated-commerce-content.png)
 
-* Amélioration de l’interface utilisateur du sélecteur de produits pour une meilleure expérience utilisateur, et l’optimisation de l’efficacité et de la prise en charge du catalogue de produits complexe
+* Amélioration de l’interface utilisateur du sélecteur de produits pour une meilleure expérience utilisateur, une efficacité accrue et la prise en charge d’un catalogue de produits complexe
 
-   ![Nouveau sélecteur de produits](/help/assets/CIF/product-picker.png)
+  ![Nouveau sélecteur de produits](/help/assets/CIF/product-picker.png)
 
 * Respect de la propriété « include_in_menu » dans le composant de navigation
 
@@ -83,11 +83,11 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * La purge du cache du menu ne fonctionne pas comme prévu.
 
-* Erreurs JS lors de l’étape de déploiement d’AEM CS et lorsque vous n’utilisez pas les composants côté client
+* Erreurs JS lors de l’étape de déploiement d’AEM CS et lorsque vous n’utilisez pas de composants côté client
 
 * Impossible de créer une configuration cloud CIF dans les dossiers comportant un nœud sling:configs
 
-## Date de publication : août 2021
+## Date de publication : Août 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -97,9 +97,9 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-august}
 
-* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, efficacité améliorée et meilleure prise en charge pour les catalogues complexes de produits
+* Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, une efficacité accrue et une meilleure prise en charge d’un catalogue de produits complexe
 
-   ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
+  ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
 
 * Meilleure prise en charge d’A11Y pour les composants principaux CIF
 
@@ -113,7 +113,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Correction de l’accès aux produits bruts pour les éléments de liste de produits mappés
 
-## Date de publication : juillet 2021
+## Date de publication : Juillet 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -130,7 +130,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Prise en charge de la [recommandation de produit Adobe Commerce Sensei, optimisée par Adobe Sensei](https://business.adobe.com/fr/products/magento/product-recommendations.html) dans le storefront AEM à l’aide de recommandations prédéfinies ou créées à la volée
 
-## Date de publication : juin 2021
+## Date de publication : Juin 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -147,7 +147,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 * Amélioration des URL compatibles avec les moteurs de recherche pour les pages de catégorie
 * Prise en charge des en-têtes HTTP personnalisés par site/configuration
 
-## Date de publication : mai 2021
+## Date de publication : Mai 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -165,7 +165,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Le chemin de navigation réinitialise les données d’aperçu dans la console de produit
 
-## Date de publication : avril 2021
+## Date de publication : Avril 2021
 
 | Composant | Version | Détails |
 |:-------|:-----:|---------------------:|
@@ -175,7 +175,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 ### Nouveautés {#what-is-new-april}
 
-* Prise en charge de l’UID de catégorie – Cette option ouvre les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
+* Prise en charge de l’UID de catégorie : cette fonctionnalité déclenche les intégrations commerciales tierces pour les systèmes qui utilisent des chaînes pour les ID de catégorie.
 
 * Extension AEM pour PWA Studio, avec un exemple d’intégration
 
@@ -185,7 +185,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Le champ de catégorie racine n’était pas affiché sous l’onglet Commerce dans les propriétés de page des pages de catégorie.
 
-## Date de publication : mars 2021 {#what-is-new-march}
+## Date de publication : Mars 2021 {#what-is-new-march}
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -205,7 +205,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Plusieurs correctifs de bogues.
 
-## Date de publication : février 2021
+## Date de publication : Février 2021
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
@@ -225,7 +225,7 @@ Passez en revue la configuration système minimale requise dans le tableau ci-de
 
 * Plusieurs correctifs de bogues.
 
-## Date de publication : janvier 2021
+## Date de publication : Janvier 2021
 
 | GitHub | Version | Notes de mise à jour détaillées |
 |:-------|:-----:|---------------------:|
