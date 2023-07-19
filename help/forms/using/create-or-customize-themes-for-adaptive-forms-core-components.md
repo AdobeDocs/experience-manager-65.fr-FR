@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
+source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1961'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 Dans AEM Forms 6.5, un thème est une bibliothèque cliente AEM que vous utilisez pour définir les styles (apparence) d’un formulaire adaptatif. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Un thème est géré indépendamment sans référence à un formulaire adaptatif et peut être réutilisé dans plusieurs Forms adaptatives.
 
-## Thèmes disponibles {#available-standard-theme}
+## Thèmes disponibles {#available-theme}
 
 L’environnement AEM 6.5 fournit les thèmes répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux :
 
@@ -51,13 +51,13 @@ Un thème est un module qui englobe le fichier CSS, les fichiers JavaScript et l
 
 ## Création d’un thème
 
-AEM Forms 6.5 fournit les thèmes standard répertoriés ci-dessous pour les Forms adaptatif basés sur les composants principaux.
+AEM Forms 6.5 fournit les thèmes répertoriés ci-dessous pour le Forms adaptatif basé sur les composants principaux.
 
 * [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Vous pouvez [personnaliser l’un de ces thèmes standard pour créer un thème ;](#customize-a-theme-core-components).
+Vous pouvez [personnaliser l’un de ces thèmes pour créer un thème ;](#customize-a-theme-core-components).
 
 ## Personnalisation d’un thème {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -92,7 +92,7 @@ La personnalisation d’un thème fait référence au processus de modification 
 
 La création ou la personnalisation d’un thème est un processus à plusieurs étapes. Effectuez les étapes dans l’ordre indiqué pour créer/personnaliser le thème :
 
-1. [Clonage d’un thème standard](#clone-git-repo-of-theme)
+1. [Clonage d’un thème](#clone-git-repo-of-theme)
 1. [Personnaliser l’aspect du thème](#customize-the-theme)
 1. [Préparer le thème pour le déploiement local](#generate-the-clientlib)
 1. [Déployer le thème sur un environnement local](#deploy-the-theme-on-a-local-environment)
@@ -102,17 +102,17 @@ La création ou la personnalisation d’un thème est un processus à plusieurs 
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-Les exemples fournis dans le document reposent sur la variable **Canevas** mais vous pouvez cloner n’importe quel thème standard et le personnaliser en suivant les mêmes instructions. Ces instructions s’appliquent à n’importe quel thème, ce qui vous permet de modifier des thèmes en fonction de vos besoins spécifiques.
+Les exemples fournis dans le document reposent sur la variable **Canevas** mais vous pouvez cloner n’importe quel thème et le personnaliser en suivant les mêmes instructions. Ces instructions s’appliquent à n’importe quel thème, ce qui vous permet de modifier des thèmes en fonction de vos besoins spécifiques.
 
 #### 1. Cloner le référentiel Git du thème {#clone-git-repo-of-theme}
 
-Pour cloner un thème standard pour Forms adaptatif basé sur les composants principaux, choisissez l’un des thèmes standard suivants :
+Pour cloner un thème pour Forms adaptatif basé sur les composants principaux, choisissez l’un des thèmes suivants :
 
 * [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas)
 * [Thème WKND](https://github.com/adobe/aem-forms-theme-wknd)
 * [Thème EASEL](https://github.com/adobe/aem-forms-theme-easel)
 
-Suivez les instructions suivantes pour cloner un thème standard :
+Suivez les instructions suivantes pour cloner un thème :
 
 1. Ouvrez l’invite de commande ou la fenêtre de terminal dans votre environnement de développement local.
 
