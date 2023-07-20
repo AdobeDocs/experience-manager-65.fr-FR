@@ -11,10 +11,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 53ea2cf7-d633-4ab9-a869-ce76eb1c01e5
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Consultez également la section [Configuration de Dynamic Media en mode Scene7]
 **Pour installer le pack de fonctionnalités 18912 pour la migration en bloc de ressources :**
 
 1. Dans votre instance Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Sécurité]** > **[!UICONTROL Utilisateurs]** et sélectionnez **[!UICONTROL Créer un utilisateur]**. Cet utilisateur de service doit disposer des autorisations de *lecture/écriture* sur `/content/dam.`.
-1. Dans les champs **[!UICONTROL ID]** et **[!UICONTROL Mot de passe]**, saisissez un nom d’utilisateur et un mot de passe ; par exemple, **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur qui a créé cette ressource. Lorsqu’une ressource est transférée à partir du FTP, elle est considérée comme créée lorsqu’elle est transférée sur le serveur FTP et envoyée vers Experience Manager.
+1. Dans le **[!UICONTROL ID]** et **[!UICONTROL Mot de passe]** , saisissez un nom d’utilisateur et un mot de passe ; par exemple, **Utilisateur FTP**. Ce nom apparaît dans la chronologie en tant qu’utilisateur ayant créé la ressource. Lorsqu’une ressource est chargée à partir du FTP, elle est considérée comme créée lorsqu’elle est chargée sur le serveur FTP et envoyée vers Experience Manager.
 1. Contactez l’[assistance clientèle Adobe pour Experience Manager](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support) pour demander l’accès au pack de fonctionnalités 18912 pour le téléchargement. Vous aurez peut-être besoin des informations suivantes lorsque vous contactez l’assistance :
 
    * L’adresse IP du serveur de l’instance d’auteur, y compris le numéro de port (4502 par défaut)
@@ -46,4 +46,4 @@ Consultez également la section [Configuration de Dynamic Media en mode Scene7]
 1. L’assistance clientèle d’Adobe pour Experience Manager vous fournit les informations d’identification au FTP et l’accès au pack de fonctionnalités 18912.
 1. Une fois reçu le pack de fonctionnalités 18912, installez-le.
 
-   Pour plus d’informations sur l’utilisation des modules et de la distribution logicielle dans Experience Manager, consultez ](/help/sites-administering/package-manager.md)Utilisation des modules[.
+   Pour plus d’informations sur l’utilisation des packages et de la distribution logicielle dans Experience Manager, consultez ](/help/sites-administering/package-manager.md)Utilisation des packages[.

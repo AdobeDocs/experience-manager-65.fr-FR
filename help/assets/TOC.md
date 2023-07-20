@@ -6,8 +6,10 @@ audience: end-user
 user-guide-title: Guide d’Assets
 breadcrumb-title: Guide d’Assets
 user-guide-description: Créez, gérez, traitez et distribuez des ressources numériques.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
+role: User
+feature: Asset Management
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 100%
 
@@ -17,7 +19,7 @@ ht-degree: 100%
 # Guide d’Assets {#assets}
 
 + [Guide de l’utilisateur d’[!DNL Assets]](home.md)
-+ [Notes de mise à jour d’[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
++ Notes de mise à jour d’[[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
 + [À propos de la gestion des DAM](assets.md)
 + [Bonnes pratiques pour les ressources](best-practices-for-assets.md)
 + [Accessibilité dans  [!DNL Assets]](accessibility.md)
