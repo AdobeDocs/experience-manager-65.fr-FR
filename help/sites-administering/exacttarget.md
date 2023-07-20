@@ -1,26 +1,22 @@
 ---
-title: Intégration à ExactTarget
-seo-title: Integrating with ExactTarget
-description: Découvrez comment intégrer AEM à ExactTarget.
-seo-description: Learn how to integrate AEM with ExactTarget.
-uuid: a53bbdaa-98f7-4035-b842-aa7ea63712ca
+title: Intégrer à ExactTarget
+description: Découvrez comment intégrer Adobe Experience Manager à ExactTarget.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 5b2f624d-e5b8-4484-a773-7784ebce58bd
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '457'
-ht-degree: 59%
+source-wordcount: '469'
+ht-degree: 43%
 
 ---
 
-# Intégration à ExactTarget{#integrating-with-exacttarget}
+# Intégrer à ExactTarget{#integrating-with-exacttarget}
 
-L’intégration d’AEM à ExactTarget permet de gérer et d’envoyer un e-mail créé dans AEM par le biais d’ExactTarget. Cela permet également d’utiliser les fonctionnalités de gestion de prospect d’ExactTarget par le biais de formulaires AEM dans des pages AEM.
+L’intégration d’Adobe Experience Manager (AEM) à ExactTarget vous permet de gérer et d’envoyer des emails créés dans AEM par le biais d’ExactTarget. Il vous permet également d’utiliser les fonctionnalités de gestion des pistes d’ExactTarget au moyen d’AEM de formulaires sur les pages AEM.
 
 L’intégration offre les fonctionnalités suivantes :
 
@@ -31,9 +27,9 @@ Une fois ExactTarget configuré, vous pouvez publier des newsletters ou des cour
 
 ## Création d’une configuration ExactTarget {#creating-an-exacttarget-configuration}
 
-Il est possible d’ajouter des configurations ExactTarget par le biais d’outils ou de services cloud. Les deux méthodes sont décrites dans cette section.
+Les configurations ExactTarget peuvent être ajoutées au moyen des services cloud ou des outils. Les deux méthodes sont décrites dans cette section.
 
-### Configuration d’ExactTarget via Cloud Services {#configuring-exacttarget-via-cloudservices}
+### Configuration d’ExactTarget au moyen des services cloud {#configuring-exacttarget-via-cloudservices}
 
 Pour créer une configuration ExactTarget en Cloud Services :
 
@@ -46,8 +42,8 @@ Pour créer une configuration ExactTarget en Cloud Services :
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
-1. Saisissez le nom d’utilisateur et le mot de passe, puis sélectionnez un point de terminaison API (par exemple, **https://webservice.exacttarget.com/Service.asmx**).
-1. Cliquez sur **Connectez-vous à ExactTarget.** Une boîte de dialogue s’affiche pour confirmer que vous êtes bien connecté. Cliquez sur **OK** pour fermer la fenêtre.
+1. Saisissez le nom d’utilisateur et le mot de passe, puis sélectionnez un point de fin API (par exemple, **https://webservice.exacttarget.com/Service.asmx**).
+1. Cliquez sur **Connectez-vous à ExactTarget.** Une fois que vous êtes connecté, une boîte de dialogue de réussite s’affiche. box Click **OK** pour quitter la fenêtre.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -61,7 +57,7 @@ Pour créer une configuration ExactTarget en Cloud Services :
 
    ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-### Configuration d’ExactTarget via les outils {#configuring-exacttarget-via-tools}
+### Configuration d’ExactTarget au moyen des outils {#configuring-exacttarget-via-tools}
 
 Pour créer une configuration ExactTarget dans les outils :
 
@@ -74,9 +70,9 @@ Pour créer une configuration ExactTarget dans les outils :
 1. Saisissez le **Titre** et éventuellement la variable **Nom**, puis cliquez sur **Créer**.
 1. Saisissez les informations de configuration conformément à l’étape 4 de la procédure précédente. Suivez cette procédure pour terminer la configuration d’ExactTarget.
 
-### Ajout de plusieurs configurations {#adding-multiple-configurations}
+### Ajouter plusieurs configurations {#adding-multiple-configurations}
 
-Pour ajouter plusieurs configurations :
+Pour ajouter plusieurs configurations :
 
-1. Sur la page d’accueil, cliquez sur **Services cloud** puis sur **ExactTarget**. Cliquez sur le bouton **Afficher les configurations** visible si une ou plusieurs configurations ExactTarget sont disponibles. Toutes les configurations disponibles sont répertoriées.
+1. Sur la page d’accueil, cliquez sur **Services cloud** puis sur **ExactTarget**. Cliquez sur **Afficher les configurations** qui s’affiche si une ou plusieurs configurations ExactTarget sont disponibles. Toutes les configurations disponibles sont répertoriées.
 1. Cliquez sur le lien **+** en regard de Configurations disponibles. Cette action ouvre la fenêtre **Créer une configuration**. Suivez la procédure de configuration précédente pour créer une configuration.

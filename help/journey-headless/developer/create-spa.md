@@ -2,10 +2,10 @@
 title: Facultatif - Comment créer des applications d’une seule page (SPA) avec Adobe Experience Manager
 description: Dans cette suite facultative du Parcours de développement Adobe Experience Manager (AEM) sans interface utilisateur, vous découvrez comment AEM peut combiner une diffusion sans interface avec des fonctionnalités CMS en pile complète traditionnelles et comment créer des données modifiables à l’aide de la structure de l’éditeur d’.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 63%
+source-wordcount: '1264'
+ht-degree: 60%
 
 ---
 
@@ -24,9 +24,9 @@ Dans cette suite facultative de la [AEM Parcours de développement sans affichag
 * Comment récupérer et mettre à jour du contenu découplé dans AEM
 * La mise en ligne d’un projet découplé AEM
 
-Vous avez donc soit mis en ligne avec votre premier projet découplé AEM, soit vous disposez de toutes les connaissances nécessaires pour le faire. Félicitations !
+Vous avez donc soit mis en ligne avec votre premier projet AEM sans tête, soit vous avez les connaissances pour le faire. Félicitations !
 
-Alors pourquoi lire cette section supplémentaire et facultative du parcours ? Vous vous souvenez sans doute que dans la [Prise en main](getting-started.md#integration-levels) nous avons discuté brièvement de la manière dont AEM prend non seulement en charge la livraison sans interface utilisateur et les modèles traditionnels de pile complète, mais peut également prendre en charge les modèles hybrides qui combinent les avantages des deux. Bien qu’il ne s’agisse pas de modèles découplés classiques, de tels modèles hybrides peuvent offrir une flexibilité sans précédent à certains projets.
+Alors pourquoi lire cette section supplémentaire et facultative du parcours ? Vous vous souvenez sans doute que dans la [Prise en main](getting-started.md#integration-levels)En outre, il y a eu une brève discussion sur la façon dont AEM non seulement prend en charge la livraison sans interface et les modèles traditionnels de pile complète, mais peut également prendre en charge les modèles hybrides qui combinent les avantages des deux. Bien qu’il ne s’agisse pas de modèles découplés classiques, de tels modèles hybrides peuvent offrir une flexibilité sans précédent à certains projets.
 
 Cet article s’appuie sur vos connaissances d’AEM sans affichage en explorant en profondeur la manière dont vous pouvez créer vos propres applications d’une seule page (SPA) modifiables dans l’Adobe Experience Platform. Ainsi, vous pouvez créer du contenu et le diffuser intégralement vers un SPA, mais ce SPA reste modifiable dans l’.
 
@@ -72,7 +72,7 @@ Pour obtenir une description complète des SPA et des raisons de leur utilisatio
 
 ## Comment AEM gère les SPA
 
-Le développement d’applications sur une seule page sur AEM suppose que le développeur front-end respecte les bonnes pratiques standard lors de la création d’une SPA. Si, en tant que développeur front-end, vous suivez ces bonnes pratiques générales et quelques principes spécifiques à AEM, votre SPA sera fonctionnel avec l’AEM et ses fonctionnalités de création de contenu.
+Le développement d’applications sur une seule page sur AEM suppose que le développeur front-end respecte les bonnes pratiques standard lors de la création d’une SPA. En tant que développeur front-end, si vous suivez ces bonnes pratiques générales et quelques principes spécifiques à AEM, votre SPA sera fonctionnel avec l’AEM et ses fonctionnalités de création de contenu.
 
 * **Portabilité** : comme pour tout composant, les composants de SPA créés doivent être aussi portables que possible. La SPA doit être créée avec des composants portables et réutilisables.
 * **AEM détermine la structure du site** - Le développeur front-end crée des composants et possède leur structure interne, mais s’appuie sur AEM pour définir la structure de contenu du site.
@@ -125,6 +125,6 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Développement de SPA pour AEM](/help/sites-developing/spa-architecture.md) : consignes sur la manière de développer des SPA pour AEM
 * [Aperçu sur l’éditeur de SPA](/help/sites-developing/spa-overview.md) : informations détaillées sur le fonctionnement de l’éditeur de SPA
 * [Rendu côté serveur](/help/sites-developing/spa-ssr.md) - Comment configurer le rendu côté serveur pour AEM SPA
-* [Documents de référence pour les SPA](/help/sites-developing/spa-reference-materials.md) : références et liens de l’API JavaScript vers les projets GitHub de SPA AEM open source
+* [Documents de référence SPA](/help/sites-developing/spa-reference-materials.md) - Références de l’API JavaScript et liens vers les AEM Open Source SPA projets GitHub
 * [Fragments de contenu](/help/assets/content-fragments/content-fragments.md) : comment créer des fragments de contenu
 * [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) : modèle Maven qui crée un projet Adobe Experience Manager (AEM) minimal qui s’appuie sur des bonnes pratiques pour démarrer votre site web

@@ -1,18 +1,14 @@
 ---
 title: Modèles et composants d’application
-seo-title: App Templates and Components
 description: Consultez cette page pour en savoir plus sur les modèles d’application et les composants. Il fournit des informations détaillées sur la structure des modèles.
-seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 23%
 
 ---
@@ -32,7 +28,7 @@ Chaque modèle vous présente une sélection de composants disponibles.
 
 >[!NOTE]
 >
->Pour savoir comment développer votre application AEM à l’aide de CRXDE Lite, voir [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Pour savoir comment développer votre application Adobe Experience Manager (AEM) à l’aide de CRXDE Lite, voir [Développement avec CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Un modèle sert de fondement pour une page.
 
@@ -54,7 +50,7 @@ Différentes propriétés peuvent être définies, notamment :
 * **jcr:title** - titre du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
 * **jcr:description** - description du modèle ; s’affiche dans la boîte de dialogue lors de la création d’une page.
 
-Ce noeud contient *un jcr:content (cq:PageContent)* Noeud servant de base au noeud de contenu des pages résultantes ; cette référence, à l’aide de *sling:resourceType*, composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
+Ce noeud contient *un jcr:content (cq:PageContent)* qui sert de base au noeud de contenu des pages créées. Cette référence, à l’aide de *sling:resourceType*, composant à utiliser pour le rendu du contenu réel d’une nouvelle page.
 
 >[!NOTE]
 >
