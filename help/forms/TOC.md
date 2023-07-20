@@ -8,10 +8,10 @@ user-guide-title: Guide de Forms Adobe Experience Manager 6.5
 breadcrumb-title: Guide de Forms
 user-guide-description: Créez, gérez, publiez et mettez à jour des formulaires numériques.
 role: User
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
 workflow-type: tm+mt
-source-wordcount: '3881'
-ht-degree: 99%
+source-wordcount: '3889'
+ht-degree: 98%
 
 ---
 
@@ -127,6 +127,7 @@ ht-degree: 99%
    + [Présentation de l’intégration des données AEM Forms](using/data-integration.md)
    + [Configuration des sources de données](using/configure-data-sources.md)
    + [Configuration du service OData de Microsoft Dynamics](using/ms-dynamics-odata-configuration.md)
+   + [Intégration de Salesforce à l’aide de l’autorisation de flux d’informations d’identification du client OAuth 2.0](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Création d’un modèle de données de formulaire](using/create-form-data-models.md)
    + [Utilisation d’un modèle de données de formulaire](using/work-with-form-data-model.md)
    + [Utilisation d’un modèle de données de formulaire](using/using-form-data-model.md)
