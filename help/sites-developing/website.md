@@ -1,18 +1,16 @@
 ---
 title: Création d’un site web complet (JSP)
-description: Ce tutoriel vous permet de créer un site web complet avec AEM
-uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
+description: Ce tutoriel vous explique comment créer un site web complet avec Adobe Experience Manager (AEM).
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '4935'
-ht-degree: 50%
+source-wordcount: '4941'
+ht-degree: 44%
 
 ---
 
@@ -20,9 +18,9 @@ ht-degree: 50%
 
 >[!NOTE]
 >
->Cet article décrit comment créer un site web à l’aide de JSP et en fonction de l’IU classique. Adobe vous recommande de tirer parti des technologies AEM les plus récentes pour vos sites Web. Vous en trouverez une description détaillée dans l’article [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
+>Cet article décrit comment créer un site web à l’aide de JSP et en fonction de l’IU classique. Adobe recommande d’utiliser les technologies Adobe Experience Manager (AEM) les plus récentes pour vos sites web, comme décrit en détail dans l’article . [Prise en main du développement d’AEM Sites](/help/sites-developing/getting-started.md).
 
-Ce tutoriel vous permet de créer un site web complet avec Adobe Experience Manager (AEM). Le site web est basé sur un site web générique et est principalement destiné aux développeurs web. Tout développement a lieu dans un environnement de création.
+Ce tutoriel vous permet de créer un site web complet avec AEM. Le site web est basé sur un site web générique et est principalement destiné aux développeurs web. Tout développement a lieu dans un environnement de création.
 
 Ce tutoriel explique comment :
 
@@ -42,7 +40,7 @@ Ce tutoriel explique comment :
 
 1. Incluez divers composants de base.
 
-Une fois toutes les étapes effectuées, vos pages se présentent comme suit :
+Une fois toutes les étapes effectuées, vos pages doivent se présenter comme suit :
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -50,7 +48,7 @@ Une fois toutes les étapes effectuées, vos pages se présentent comme suit :
 
 Pour suivre le tutoriel plutôt que d’effectuer les exercices, téléchargez le site web-1.0.zip. Ce fichier est un module de contenu AEM qui contient les résultats de ce tutoriel. Utilisation [Gestionnaire de modules](/help/sites-administering/package-manager.md) pour installer le module sur votre instance de création.
 
-**REMARQUE** : l’installation de ce package écrase toutes les ressources de votre instance de création que vous avez créées à l’aide de ce tutoriel.
+**REMARQUE :** L’installation de ce package remplace toutes les ressources que vous avez créées sur votre instance de création à l’aide de ce tutoriel.
 
 Package de contenu de site web
 
@@ -110,9 +108,9 @@ Exemple de fichier static.css et d’images
 
 Dans cette section, vous créez les éléments suivants :
 
-* Modèle contentpage qui sera utilisé pour créer des pages de contenu dans l’exemple de site web
-* Composant contentpage qui sera utilisé pour effectuer le rendu des pages de contenu
-* Le script contentpage
+* Modèle contentpage utilisé pour créer des pages de contenu dans l’exemple de site web.
+* Composant contentpage utilisé pour effectuer le rendu des pages de contenu.
+* Script contentpage.
 
 #### Création du modèle contentpage {#creating-the-contentpage-template}
 
@@ -139,7 +137,7 @@ Un modèle définit le contenu par défaut d’une nouvelle page. Les sites web 
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   La valeur de la propriété de chemin autorisée est une *expression régulière.* Les pages dont le chemin d’accès correspond à cette expression peuvent utiliser le modèle. Dans ce cas, l’expression régulière correspond au chemin du dossier **/content** et à toutes ses sous-pages.
+   La valeur de la propriété de chemin autorisée est une *expression régulière.* Les pages dont le chemin d’accès correspond à cette expression peuvent utiliser le modèle. Dans ce cas, l’expression régulière correspond au chemin d’accès de la variable **/content** et toutes les sous-pages.
 
    Lorsqu’un auteur crée une page sous /content, le modèle **contentpage** apparaît dans la liste des modèles pouvant être utilisés.
 
@@ -229,26 +227,26 @@ Dans cette section, vous allez créer les pages suivantes qui utilisent toutes l
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
 1. Cliquez sur **Créer**. Dans l’arborescence, sélectionnez la page **/Websites/My Website/**, puis cliquez sur **Nouveau** > **Nouvelle page**.
-1. Dans la boîte de dialogue Créer une page, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur Créer :
+1. Dans la boîte de dialogue Créer une page , saisissez les valeurs de propriété suivantes, puis cliquez sur Créer :
 
    * Titre : Anglais
    * Nom : fr
    * Sélectionnez My Website Content Page Template.
 
 1. Dans l’arborescence, sélectionnez la page **/Websites/My Website/English**, puis cliquez sur **Nouveau** > **Nouvelle page**.
-1. Dans la boîte de dialogue **Créer une page**, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur **Créer** :
+1. Dans le **Créer une page** , saisissez les valeurs de propriété suivantes, puis cliquez sur **Créer**:
 
    * Titre : Products
    * Sélectionnez My Website Content Page Template.
 
 1. Dans l’arborescence, sélectionnez la page **/Websites/My Website/English**, puis cliquez sur **Nouveau** > **Nouvelle page**.
-1. Dans la boîte de dialogue **Créer une page**, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur **Créer** :
+1. Dans le **Créer une page** , saisissez les valeurs de propriété suivantes, puis cliquez sur **Créer**:
 
    * Titre : Services
    * Sélectionnez My Website Content Page Template.
 
 1. Dans l’arborescence, sélectionnez la page **/Websites/My Website/English**, puis cliquez sur **Nouveau** > **Nouvelle page**.
-1. Dans la boîte de dialogue **Créer une page**, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur **Créer** :
+1. Dans le **Créer une page** , saisissez les valeurs de propriété suivantes, puis cliquez sur **Créer**:
 
    * Titre : Customers
    * Sélectionnez My Website Content Page Template.
@@ -273,7 +271,7 @@ Dans cette section, vous allez créer les pages suivantes qui utilisent toutes l
 
 Cette section décrit comment améliorer le script contentpage à l’aide des scripts AEM composant foundation et en écrivant vos propres scripts.
 
-Le **Produits** se présente comme suit :
+Lorsque vous avez terminé, la variable **Produits** La page doit se présenter comme suit :
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -311,7 +309,7 @@ Par exemple, dans le code JSP de votre composant, vous pouvez référencer les s
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Ouvrez la source de la page pour afficher les éléments JavaScript et HTML générés par les scripts head.jsp et body.jsp Le fragment de script suivant ouvre le Sidekick lorsque vous ouvrez la page :
+   Ouvrez la source de la page pour afficher les éléments JavaScript et de HTML générés par les scripts head.jsp et body.jsp. Le fragment de script suivant ouvre le Sidekick lorsque vous ouvrez la page :
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -407,9 +405,9 @@ Dans cette section, vous créez plusieurs scripts qui génèrent chacun une part
 
 Dans cette section, vous créez un composant qui affiche des liens vers toutes les pages de niveau supérieur du site web afin de faciliter la navigation. Ce contenu de composant s’affiche en haut de toutes les pages créées à l’aide du modèle contentpage .
 
-Dans la première version du composant de navigation supérieur (topnav), les éléments de navigation sont des liens de texte uniquement. Dans la deuxième version, vous implémentez topnav avec des liens de navigation d’image.
+Dans la première version du composant de navigation supérieur (topnav), les éléments de navigation sont des liens de texte uniquement. Dans la seconde version, vous implémentez topnav avec des liens de navigation d’image.
 
-Votre navigation supérieure se présente comme suit :
+Lorsque vous avez terminé, la navigation supérieure doit se présenter comme suit :
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -518,7 +516,7 @@ Dans le cadre de cet exercice, Sling fait correspondre ces URL au script /apps/m
 1. Cliquez avec le bouton droit sur le nœud `/apps/mywebsite/components/contentpage`, puis cliquez sur **Créer** > **Créer un fichier**.
 1. Dans la fenêtre **Créer un fichier**, dans le champ **Nom**, saisissez `navimage.png.java`.
 
-   L’extension de nom de fichier .java indique à Sling que la prise en charge Java des scripts Apache Sling doit être utilisée pour compiler le script et créer un servlet.
+   L’extension de nom de fichier .java indique à Sling que la prise en charge Java™ de script Apache Sling doit être utilisée pour compiler le script et créer une servlet.
 
 1. Copiez le code suivant dans `navimage.png.java.`Le code étend la classe AbstractImageServlet :
 
@@ -712,7 +710,7 @@ Créez deux pages situées sous la page Produits . Pour chaque page qui décrit 
 Pour créer le composant listchildren, procédez comme suit :
 
 1. Dans CRXDE Lite, cliquez avec le bouton droit sur `/apps/mywebsite/components`, puis sélectionnez **Créer** et **Créer un composant**.
-1. Dans la boîte de dialogue, entrez les valeurs de propriété ci-dessous et cliquez ensuite sur Suivant :
+1. Dans la boîte de dialogue, saisissez les valeurs de propriété suivantes, puis cliquez sur Suivant :
 
    * Libellé : listchildren.
    * Titre : My Listchildren Component.
@@ -822,7 +820,7 @@ Pour inclure le composant listchildren dans votre composant contentpage, procéd
 
 #### Affichage de la liste des enfants dans une page {#viewing-list-children-in-a-page}
 
-Pour afficher l’intégralité du fonctionnement de ce composant, vous pouvez afficher la page Produits :
+Pour afficher l’ensemble du fonctionnement de ce composant, vous pouvez afficher la page Produits :
 
 * lorsque la page parente (&quot;Chemin de la racine de liste&quot;) n’est pas définie.
 * lorsque la page parente (&quot;Chemin de la racine de liste&quot;) est définie.
@@ -844,9 +842,9 @@ Créez un composant qui affiche le logo de l’entreprise et fournit un lien ver
 * Les valeurs de propriété s’appliquent à toutes les instances du composant ajoutées aux pages qui utilisent la conception.
 * Les propriétés peuvent être configurées à l’aide de n’importe quelle instance du composant se trouvant sur une page qui utilise la conception.
 
-Votre boîte de dialogue de mode de conception contient des propriétés pour définir l’image et le chemin du lien. Le composant Logo sera placé dans le coin supérieur gauche de toutes les pages du site web.
+Votre boîte de dialogue de mode de conception contient des propriétés pour définir l’image et le chemin du lien. Le composant Logo est placé dans la partie supérieure gauche de toutes les pages du site web.
 
-Il se présente comme suit :
+Lorsque vous avez terminé, il doit se présenter comme suit :
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -921,7 +919,7 @@ Créez la boîte de dialogue pour configurer votre composant Logo en mode Concep
       * **Titre :** `Logo (Design)`
 
 1. Cliquez avec le bouton droit sur le noeud tab1 dans la branche design_dialog et cliquez sur Supprimer. Cliquez sur Enregistrer tout.
-1. Sous le nœud `design_dialog/items/items`, créez un nœud nommé `img` du type `cq:Widget`. Ajoutez les propriétés suivantes et cliquez ensuite sur Enregistrer tout :
+1. Sous , `design_dialog/items/items`noeud, créez un noeud nommé `img` de type `cq:Widget`. Ajoutez les propriétés suivantes et cliquez ensuite sur Enregistrer tout :
 
    | Nom | Type | Valeur |
    |---|---|---|
@@ -1050,7 +1048,7 @@ Cette section décrit comment définir une image comme logo à l’aide de la bo
 
 Dans cette section, vous incluez le composant Chemin de navigation, qui est l’un des composants de base.
 
-1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier `center.jsp` et remplacez :
+1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier . `center.jsp`et remplacez :
 
    ```java
    <div>trail</div>
@@ -1071,7 +1069,7 @@ Dans cette section, vous incluez le composant Chemin de navigation, qui est l’
 
 Dans cette section, vous incluez le composant Titre, qui est l’un des composants de base.
 
-1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier `center.jsp` et remplacez :
+1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier . `center.jsp`et remplacez :
 
    ```xml
    <div>title</div>
@@ -1096,7 +1094,7 @@ Le système de paragraphes (parsys) est une partie importante d’un site web, c
 
 Ajoutez le composant parsys (l’un des composants de base) à votre composant contentpage.
 
-1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier `center.jsp` et recherchez la ligne de code suivante :
+1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier . `center.jsp`et recherchez la ligne de code suivante :
 
    ```xml
    <div>parsys</div>
@@ -1211,12 +1209,12 @@ Dans cette section, vous ajoutez l’icône à afficher en regard du composant d
 
 #### Utilisation du composant Image {#using-the-image-component}
 
-Dans cette section, vous allez afficher la page **Products** et ajouter votre composant Image au système de paragraphes.
+Dans cette section, vous pouvez afficher la variable **Produits** et ajoutez votre composant image au système de paragraphes.
 
 1. Dans votre navigateur, rechargez la page **Products**. 
 1. Dans le Sidekick, cliquez sur le **mode de conception** icône .
 1. Cliquez sur le bouton Modifier pour modifier la boîte de dialogue de conception de par.
-1. Dans la boîte de dialogue, une liste de **Composants autorisés** s’affiche ; accéder à **MyWebsite**, sélectionnez la variable **Mon composant d’image** et cliquez sur **OK.**
+1. Dans la boîte de dialogue, une liste de **Composants autorisés** s’affiche ; accéder à **MyWebsite**, sélectionnez la variable **Mon composant d’image**, puis cliquez sur **OK.**
 1. Revenir à **mode d’édition.**
 1. Double-cliquez sur le cadre du système de paragraphes (activé) **Faire glisser des composants ou des ressources ici**). Le **Insérer un nouveau composant** et **Sidekick** les sélecteurs se présentent comme suit :
 
@@ -1228,7 +1226,7 @@ Dans cette section, vous incluez le composant de barre d’outils, qui est l’u
 
 Vous disposez de plusieurs options, en mode d’édition et en mode de conception.
 
-1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier `body.jsp` et recherchez ensuite le code suivant :
+1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le `body.jsp` et recherchez le code suivant :
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1264,7 +1262,7 @@ Vous disposez de plusieurs options, en mode d’édition et en mode de conceptio
 
 Dans cette section, vous créez le composant pour rechercher du contenu sur le site web. Ce composant de recherche peut être placé dans le système de paragraphes de n’importe quelle page (par exemple, sur une page de résultats de recherche spécialisée).
 
-Votre zone de saisie des termes de recherche se présentera comme suit sur la page **English** :
+Lorsque vous avez terminé, la zone de saisie de la recherche doit se présenter comme suit sur la page **Anglais** page :
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -1500,7 +1498,7 @@ Dans cette section, vous ajoutez votre composant de recherche au système de par
 1. Dans votre navigateur, ouvrez la page Search.
 1. Dans le Sidekick, cliquez sur l’icône du mode de conception.
 1. Dans le bloc Conception de par (sous le titre Recherche), cliquez sur Modifier.
-1. Dans la boîte de dialogue, faites défiler la liste vers le bas jusqu’au groupe **Mes sites web**, sélectionnez **Mon composant de recherche**, puis cliquez sur **OK**.
+1. Dans la boîte de dialogue, faites défiler l’écran jusqu’au  **Mes sites web** groupe, sélectionnez **Mon composant Recherche**, puis cliquez sur **OK**.
 1. Sur Sidekick, cliquez sur le triangle pour revenir au mode d’édition.
 1. Faites glisser Mon composant de recherche du Sidekick vers le cadre de parsys. Il se présente comme suit :
 
@@ -1516,7 +1514,7 @@ Dans cette section, vous incluez le composant Système de paragraphe d’hérita
 
 Pour ce composant, vous pouvez définir plusieurs paramètres en mode d’édition et en mode de conception.
 
-1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier `right.jsp` et remplacez :
+1. Dans CRXDE Lite, accédez à `/apps/mywebsite/components/contentpage`, ouvrez le fichier . `right.jsp`et remplacez :
 
    ```java
    <div>iparsys</div>

@@ -1,36 +1,32 @@
 ---
 title: Internationaliser des chaînes d’interface utilisateur
-seo-title: Internationalizing UI Strings
-description: Les API Java et JavaScript vous permettent d’internationaliser des chaînes
-seo-description: Java and JavaScript APIs enable you to internationalize strings
-uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
+description: Java&trade; Les API JavaScript et vous permettent d’internationaliser des chaînes
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 41%
+source-wordcount: '1097'
+ht-degree: 32%
 
 ---
 
 # Internationaliser des chaînes d’interface utilisateur {#internationalizing-ui-strings}
 
-Les API Java et JavaScript vous permettent d’internationaliser des chaînes dans les types de ressources suivants :
+Les API Java™ et JavaScript vous permettent d’internationaliser des chaînes dans les types de ressources suivants :
 
-* Fichiers source Java.
+* Fichiers source Java™.
 * Scripts JSP.
 * JavaScript dans les bibliothèques côté client ou dans la source de la page.
 * Valeurs des propriétés de noeud JCR utilisées dans les propriétés de configuration des boîtes de dialogue et des composants.
 
 Pour un aperçu du processus d’internationalisation et de localisation, voir [Internationalisation des composants](/help/sites-developing/i18n.md).
 
-## Internationalisation de chaînes dans le code Java et JSP {#internationalizing-strings-in-java-and-jsp-code}
+## Internationalisation de chaînes dans le code Java™ et JSP {#internationalizing-strings-in-java-and-jsp-code}
 
-Le package Java `com.day.cq.i18n` vous permet d’afficher des chaînes localisées dans l’interface utilisateur. La classe `I18n` fournit une méthode `get` qui récupère des chaînes localisées du dictionnaire AEM. Le seul paramètre requis de la méthode `get` est le littéral de chaîne en langue anglaise. L’anglais est la langue par défaut de l’interface utilisateur. L’exemple suivant localise le mot `Search` :
+Le `com.day.cq.i18n` Le package Java™ vous permet d’afficher les chaînes localisées dans votre interface utilisateur. Le `I18n` fournit la classe `get` qui récupère les chaînes localisées du dictionnaire Adobe Experience Manager (AEM). Le seul paramètre requis de la méthode `get` est le littéral de chaîne en langue anglaise. L’anglais est la langue par défaut de l’interface utilisateur. L’exemple suivant localise le mot `Search` :
 
 `i18n.get("Search");`
 
@@ -48,7 +44,7 @@ Il existe deux manières de déterminer la langue préférée par l’utilisateu
 
 La propriété language du compte utilisateur est la méthode préférée, car elle est plus fiable. Cependant, l’utilisateur doit être connecté pour utiliser cette méthode.
 
-#### Création de l’objet Java I18n {#creating-the-i-n-java-object}
+#### Création de l’objet Java™ I18n {#creating-the-i-n-java-object}
 
 La classe I18n fournit deux constructeurs. La manière dont vous déterminez la langue préférée de l’utilisateur détermine le constructeur à utiliser.
 
@@ -60,7 +56,7 @@ I18n i18n = new I18n(slingRequest);
 
 Le constructeur utilise l’objet `SlingHTTPRequest` pour récupérer le paramètre de langue de l’utilisateur.
 
-Pour utiliser les paramètres régionaux de la page afin de déterminer la langue, vous devez d’abord obtenir le ResourceBundle pour la langue de la page demandée :
+Pour utiliser les paramètres régionaux de la page afin de déterminer la langue, obtenez d’abord le ResourceBundle pour la langue de la page demandée :
 
 ```java
 Locale pageLang = currentPage.getLanguage(false);
@@ -86,7 +82,7 @@ i18n.get("Enter a search keyword");
 
 Spécifiez l’[indice de traduction](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) de la chaîne internationalisée afin de faire la distinction entre les chaînes en double dans le dictionnaire. Utilisez le deuxième paramètre facultatif de la méthode `get` pour fournir l’indice de traduction. L’indice de traduction doit correspondre exactement à la propriété « Comment » de l’élément dans le dictionnaire.
 
-Par exemple, le dictionnaire contient deux occurrences de la chaîne `Request` : l’une sous la forme d’un verbe et l’autre sous la forme d’un substantif. Le code suivant inclut l’indice de traduction en tant qu’argument dans la méthode `get` :
+Par exemple, le dictionnaire contient la chaîne `Request` deux fois : une fois comme verbe et une fois comme nom. Le code suivant inclut l’indice de traduction en tant qu’argument dans la méthode `get` :
 
 ```java
 i18n.get("Request","A noun, as in a request for a web page");
@@ -94,7 +90,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Inclusion de variables dans des phrases localisées {#including-variables-in-localized-sentences}
 
-Incluez des variables dans la chaîne localisée pour créer une signification contextuelle dans une phrase. Par exemple, après vous être connecté à une application web, la page d’accueil affiche le message &quot;Bienvenue à l’administrateur. Vous avez 2 messages dans votre boîte de réception.&quot; Le contexte de la page détermine le nom d’utilisateur et le nombre de messages.
+Incluez des variables dans la chaîne localisée pour créer une signification contextuelle dans une phrase. Par exemple, après vous être connecté à une application web, la page d’accueil affiche le message &quot;Bienvenue à l’administrateur. Vous avez deux messages dans votre boîte de réception.&quot; Le contexte de la page détermine le nom d’utilisateur et le nombre de messages.
 
 [Dans le dictionnaire](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings), les variables sont représentées dans des chaînes sous la forme d’index entre crochets. Indiquez les valeurs des variables en tant qu’arguments de la méthode `get`. Les arguments sont placés à la suite de l’indice de traduction, et les index correspondent à l’ordre des arguments :
 
@@ -106,7 +102,7 @@ La chaîne internationalisée et l’indice de traduction doivent correspondre e
 
 #### Utilisation de méthode Get statique {#using-the-static-get-method}
 
-La classe `I18N` définit une méthode `get` statique qui s’avère utile lorsque vous devez localiser un petit nombre de chaînes. Outre les paramètres de la méthode `get` d’un objet, la méthode statique nécessite l’objet `SlingHttpRequest` ou le `ResourceBundle` que vous utilisez, suivant la manière dont vous déterminez la langue par défaut de l’utilisateur :
+Le `I18N` définit une classe statique. `get` qui s’avère utile lorsque vous devez localiser quelques chaînes. Outre les paramètres de la méthode `get` d’un objet, la méthode statique nécessite l’objet `SlingHttpRequest` ou le `ResourceBundle` que vous utilisez, suivant la manière dont vous déterminez la langue par défaut de l’utilisateur :
 
 * Utilisation de la préférence de langue de l’utilisateur : indiquez l’objet SlingHttpRequest comme premier paramètre.
 
@@ -117,11 +113,11 @@ La classe `I18N` définit une méthode `get` statique qui s’avère utile lorsq
 
 ### Internationalisation de chaînes dans un code JavaScript {#internationalizing-strings-in-javascript-code}
 
-L’API JavaScript vous permet de localiser des chaînes sur le client. Comme avec [Java et JSP](#internationalizing-strings-in-java-and-jsp-code) , l’API JavaScript vous permet d’identifier les chaînes à localiser, de fournir des conseils de localisation et d’inclure des variables dans les chaînes localisées.
+L’API JavaScript vous permet de localiser des chaînes sur le client. Comme avec [Java™ et JSP](#internationalizing-strings-in-java-and-jsp-code) , l’API JavaScript vous permet d’identifier les chaînes à localiser, de fournir des conseils de localisation et d’inclure des variables dans les chaînes localisées.
 
 Le `granite.utils` [dossier de bibliothèque cliente](/help/sites-developing/clientlibs.md) fournit l’API JavaScript. Pour utiliser l’API, vous devez inclure ce dossier sur votre page. Les fonctions de localisation utilisent l’espace de noms `Granite.I18n`.
 
-Avant de présenter les chaînes localisées, vous devez définir le paramètre régional à l’aide de la fonction `Granite.I18n.setLocale`. Pour cette fonction, le code de langue du paramètre régional doit être défini comme argument :
+Avant de présenter des chaînes localisées, définissez les paramètres régionaux à l’aide de la variable `Granite.I18n.setLocale` fonction . Pour cette fonction, le code de langue du paramètre régional doit être défini comme argument :
 
 ```
 Granite.I18n.setLocale("fr");
@@ -140,13 +136,13 @@ Granite.I18n.setLocale("fr");
 Granite.I18n.get("string to localize", [variables], "localization hint");
 ```
 
-Les paramètres de la fonction sont différents de la méthode Java I18n.get :
+Les paramètres de la fonction sont différents de la méthode Java™ I18n.get :
 
 * Le premier paramètre est le littéral de chaîne à localiser.
 * Le deuxième paramètre est un tableau de valeurs à injecter dans le littéral de chaîne.
 * Le troisième paramètre est l’indice de localisation.
 
-L’exemple suivant utilise JavaScript pour localiser &quot;Welcome back Administrator. Vous avez 2 messages dans votre boîte de réception.&quot; phrase :
+L’exemple suivant utilise JavaScript pour localiser &quot;Welcome back Administrator. Vous avez deux messages dans votre boîte de réception.&quot; phrase :
 
 ```
 Granite.I18n.setLocale("fr");
@@ -166,7 +162,7 @@ L’exemple de script JSP suivant récupère la propriété `jcr:title` du réf�
 
 #### Spécification de conseils de traduction pour les noeuds JCR {#specifying-translation-hints-for-jcr-nodes}
 
-Similaire à [Conseils de traduction dans l’API Java](#using-translation-hints), vous pouvez fournir des conseils de traduction pour distinguer les chaînes en double dans le dictionnaire. Fournissez l’indice de traduction en tant que propriété du noeud qui contient la propriété internationalisée. Le nom de la propriété hint est composé du nom de la propriété internationalisée avec le suffixe `_commentI18n` :
+Similaire à [Conseils de traduction dans l’API Java™](#using-translation-hints), vous pouvez fournir des conseils de traduction pour distinguer les chaînes en double dans le dictionnaire. Fournissez l’indice de traduction en tant que propriété du noeud qui contient la propriété internationalisée. Le nom de la propriété hint est composé du nom de la propriété internationalisée avec la propriété `_commentI18n` suffix :
 
 `${prop}_commentI18n`
 
@@ -174,7 +170,7 @@ Par exemple, un nœud `cq:page` comprend la propriété jcr:title en cours de lo
 
 ### Test de la couverture d’internationalisation {#testing-internationalization-coverage}
 
-Vérifiez si vous avez internationalisé toutes les chaînes de votre interface utilisateur. Pour voir quelles chaînes sont couvertes, définissez la langue de l’utilisateur sur zz_ZZ et ouvrez l’interface utilisateur dans le navigateur web. Les chaînes internationalisées apparaissent avec une traduction &quot;stub&quot; au format suivant :
+Vérifiez si vous avez internationalisé toutes les chaînes de votre interface utilisateur. Pour voir quelles chaînes sont couvertes, définissez la langue de l’utilisateur sur zz_ZZ et ouvrez l’interface utilisateur dans le navigateur web. Les chaînes internationalisées apparaissent avec une traduction en stub au format suivant :
 
 `USR_*Default-String*_尠`
 

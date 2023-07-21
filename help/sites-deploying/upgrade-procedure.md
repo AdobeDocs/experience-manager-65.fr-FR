@@ -1,22 +1,18 @@
 ---
 title: Procédure de mise à niveau
-seo-title: Upgrade Procedure
-description: Découvrez la procédure à suivre pour mettre à niveau AEM.
-seo-description: Learn about the procedure you need to follow in order to upgrade AEM.
-uuid: 81126a70-c082-4f01-a1ad-7152182da88b
+description: Découvrez la procédure de mise à niveau d’Adobe Experience Manager (AEM).
 contentOwner: sarchiz
 topic-tags: upgrading
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: 5c035d4c-6e03-48b6-8404-800b52d659b8
 docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '820'
-ht-degree: 100%
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 21%
 
 ---
 
@@ -24,9 +20,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->La mise à niveau nécessite un temps d’interruption au niveau de l’auteur, car la plupart des mises à niveau d’AEM sont exécutées sur place. En suivant ces bonnes pratiques, vous pouvez réduire ou éliminer le temps d’interruption au niveau de la publication.
+>La mise à niveau nécessite un temps d’arrêt pour le niveau Auteur, car la plupart des mises à niveau d’Adobe Experience Manager (AEM) sont effectuées sur place. En suivant ces bonnes pratiques, vous pouvez réduire ou éliminer le temps d’arrêt du niveau Publication.
 
-Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre les environnements de création et de publication afin de limiter le temps d’interruption pour vos auteurs et vos utilisateurs finaux. Cette page décrit une procédure de haut niveau pour améliorer une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Étant donné que la procédure diffèrent entre les niveaux d’auteur et de publication, ainsi que les déploiements basés sur Mongo et TarMK, chaque niveau et micronoyau a été répertorié dans une section distincte. Lors du déploiement, nous vous conseillons d’abord de mettre à niveau votre environnement de création, de déterminer les critères de réussite, puis de passer aux environnments de publication.
+Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des différences d’approche entre la mise à niveau des environnements de création ou de publication afin de minimiser les temps d’arrêt pour vos auteurs et vos utilisateurs finaux. Cette page décrit la procédure de haut niveau pour mettre à niveau une topologie AEM en cours d’exécution sur une version d’AEM 6.x. Comme le processus diffère entre les niveaux de création et de publication, ainsi que les déploiements basés sur Mongo et TarMK, chaque niveau et micro-noyau a été répertorié dans une section distincte. Lors de l’exécution de votre déploiement, Adobe recommande d’abord de mettre à niveau votre environnement de création, de déterminer la réussite, puis de passer aux environnements de publication.
 
 <!--
 >[!IMPORTANT]
@@ -34,11 +30,11 @@ Lors de la mise à niveau de vos environnements AEM, vous devez tenir compte des
 >The downtime during the upgrade can be significally reduced by indexing the repository before performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)
 -->
 
-## Niveau d’auteur TarMK {#tarmk-author-tier}
+## Niveau de création TarMK {#tarmk-author-tier}
 
 ### Démarrage de la topologie {#starting-topology}
 
-La topologie utilisée pour cette section se compose d’un serveur s’exécutant sur TarMK avec Cold Standby. La réplication se produit du serveur de l’auteur à la ferme de publication TarMK. Bien que cela ne soit pas illustré ici, cette approche peut également être utilisée pour les déploiements qui utilisent le déchargement. Assurez-vous d’effectuer la mise à niveau ou de reconstituer une instance de chargement sur la nouvelle version après avoir désactivé les agents de réplication sur l’instance d’auteur et avant de les autoriser à nouveau.
+La topologie utilisée pour cette section consiste en un serveur d’auteur s’exécutant sur TarMK avec un Secondaire Cold. La réplication se produit du serveur d’auteur à la ferme de publication TarMK. Bien qu’elle ne soit pas illustrée ici, cette approche peut également être utilisée pour les déploiements qui utilisent le déchargement. Veillez à mettre à niveau ou à recréer l’instance de déchargement sur la nouvelle version après avoir désactivé les agents de réplication sur l’instance d’auteur et avant de les réactiver.
 
 ![tarmk_starting_topology](assets/tarmk_starting_topology.jpg)
 
@@ -46,32 +42,32 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 ![upgrade-preparation-author](assets/upgrade-preparation-author.png)
 
-1. Arrêtez la création de contenu.
+1. Arrêtez la création de contenu..
 
-1. Arrêtez l’instance de secours.
+1. Arrêtez l’instance Secondaire.
 
 1. Désactivez les agents de réplication sur l’auteur.
 
-1. Exécutez les [tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
+1. Exécutez la variable [tâches de maintenance préalables à la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md).
 
 ### Exécution de la mise à niveau {#upgrade-execution}
 
 ![execute_upgrade](assets/execute_upgrade.jpg)
 
-1. Exécutez la [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md).
-1. Mettez à jour le module du Dispatcher *si nécessaire*.
+1. Exécutez la [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md)..
+1. Mise à jour du module Dispatcher *si nécessaire*.
 
 1. Le contrôle qualité valide la mise à niveau.
 
-1. Fermez l’instance d’auteur.
+1. Arrêtez l’instance d’auteur.
 
 ### En cas de réussite {#if-successful}
 
 ![if_successful](assets/if_successful.jpg)
 
-1. Copiez l’instance mise à niveau pour créer une nouvelle instance Cold Standby.
+1. Copiez l’instance mise à niveau pour créer un Secondaire Cold.
 
-1. Lancez l’instance d’auteur.
+1. Démarrez l’instance d’auteur.
 
 1. Démarrez l’instance de secours.
 
@@ -79,15 +75,15 @@ La topologie utilisée pour cette section se compose d’un serveur s’exécuta
 
 ![restauration](assets/rollback.jpg)
 
-1. Démarrez l’instance Cold Standby en tant que nouvelle instance principale.
+1. Démarrez l’instance Cold Standby en tant que nouvelle instance principale..
 
 1. Recréez l’environnement de création depuis l’instance Cold Standby.
 
-## Cluster d’auteurs MongoMK {#mongomk-author-cluster}
+## Grappe d’auteurs MongoMK {#mongomk-author-cluster}
 
 ### Démarrage de la topologie {#starting-topology-1}
 
-La topologie utilisée pour cette section se compose d’un groupe d’auteurs MongoMK avec au moins deux instances d’auteur AEM, prises en charge par au moins deux bases de données MongoMK. Toutes les instances d’auteur partagent une banque de données. Ces étapes doivent s’appliquer aux entrepôts de données de fichier et S3. La réplication se produit des serveurs d’auteur à la ferme de publication TarMK.
+La topologie supposée de cette section est constituée d’un cluster d’auteur MongoMK avec au moins deux instances d’auteur AEM, prises en charge par au moins deux bases de données MongoMK. Toutes les instances d’auteur partagent une banque de données. Ces étapes doivent s’appliquer aux entrepôts de données S3 et File. La réplication se produit des serveurs d’auteur à la ferme de publication TarMK.
 
 ![mongo-topology](assets/mongo-topology.jpg)
 
@@ -95,33 +91,33 @@ La topologie utilisée pour cette section se compose d’un groupe d’auteurs M
 
 ![mongo-upgrade_prep](assets/mongo-upgrade_prep.jpg)
 
-1. Arrêtez la création de contenu.
-1. Clonez le magasin de données pour la sauvegarde.
-1. Arrêtez toutes les instances d’auteur AEM sauf une, votre instance d’auteur principale.
-1. Conservez uniquement un nœud MongoDB du jeu de réplication, votre instance Mongo principale.
-1. Mettez à jour le fichier `DocumentNodeStoreService.cfg` sur l’auteur principal pour qu’il reflète votre jeu de réplication à un seul membre.
-1. Redémarrez l’auteur principal pour vous assurer qu’il redémarre correctement.
-1. Désactivez les agents de réplication sur l’auteur principal.
-1. Exécutez les [tâches de maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur l’instance d’auteur principale.
-1. Si nécessaire, mettez à niveau MongoDB vers la version 3.2 sur l’instance principale Mongo avec WiredTiger.
+1. Arrêtez la création de contenu..
+1. Cloner l’entrepôt de données à des fins de sauvegarde.
+1. Arrêtez toutes les instances d’auteur AEM sauf une, votre Principal auteur.
+1. Supprimez tous les noeuds MongoDB de l’ensemble de réplication, votre Principale instance Mongo.
+1. Mettez à jour le `DocumentNodeStoreService.cfg` sur l’auteur Principal pour refléter votre jeu de réplications de membre unique.
+1. Redémarrez l’auteur Principal pour vous assurer qu’il redémarre correctement.
+1. Désactivez les agents de réplication sur l’auteur Principal.
+1. Exécuter [tâches de maintenance préalables à la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur l’instance d’auteur Principale.
+1. Si nécessaire, mettez à niveau MongoDB sur l’Principale instance Mongo vers la version 3.2 avec WiredTiger.
 
 ### Exécution de la mise à niveau {#Upgrade-execution-1}
 
 ![mongo-execution](assets/mongo-execution.jpg)
 
-1. Exécutez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md) sur l’auteur principal.
-1. Mettez à jour le Dispatcher ou le module web *si nécessaire*.
+1. Exécutez une [mise à niveau sur place](/help/sites-deploying/in-place-upgrade.md) sur l’auteur principal..
+1. Mise à jour de Dispatcher ou du module web *si nécessaire*.
 1. Le contrôle qualité valide la mise à niveau.
 
 ### En cas de réussite {#if-successful-1}
 
 ![mongo-secondaries](assets/mongo-secondaries.jpg)
 
-1. Créez de nouvelles instances d’auteur 6.5, connectées à votre instance de mise à niveau Mongo.
+1. Créez de nouvelles instances d’auteur 6.5, connectées à votre instance de mise à niveau Mongo..
 
-1. Recréez les nœuds MongoDB qui ont été supprimés du cluster.
+1. Recréez les noeuds MongoDB qui ont été supprimés de la grappe.
 
-1. Mettez à jour les fichiers `DocumentNodeStoreService.cfg` pour qu’ils reflètent le jeu de réplication complet.
+1. Mettez à jour le `DocumentNodeStoreService.cfg` pour refléter l’ensemble de réplication complet.
 
 1. Redémarrez les instances d’auteur, une par une.
 
@@ -131,25 +127,25 @@ La topologie utilisée pour cette section se compose d’un groupe d’auteurs M
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
-1. Reconfigurez les instances d’auteur secondaires pour établir la connexion au magasin de données cloné.
+1. Reconfigurez les instances d’auteur secondaires pour établir la connexion au magasin de données cloné..
 
-1. Désactivez l’instance d’auteur principale mise à niveau.
+1. Arrêtez l’instance Principale d’auteur mise à niveau.
 
 1. Désactivez l’instance principale Mongo mise à niveau.
 
-1. Démarrez les instances secondaires Mongo, l’une d’entre elles faisant office d’instance principale.
+1. Démarrez les instances secondaires Mongo, l’une d’entre elles faisant office d’instance principale..
 
-1. Configurez les fichiers `DocumentNodeStoreService.cfg` sur les instances d’auteur secondaires pour indiquer l’ensemble de réplication des instances Mongo qui ne sont pas encore mises à niveau.
+1. Configurez la variable `DocumentNodeStoreService.cfg` sur les instances d’auteur secondaires pour pointer vers l’ensemble de réplication des instances Mongo non encore mises à niveau.
 
 1. Démarrez les instances d’auteur secondaires.
 
-1. Nettoyez les instances d’auteur, le nœud Mongo et l’entrepôt de données mis à niveau.
+1. Nettoyez les instances d’auteur, le noeud Mongo et l’entrepôt de données mis à niveau.
 
 ## Ferme de publication TarMK {#tarmk-publish-farm}
 
 ### Ferme de publication TarMK {#tarmk-publish-farm-1}
 
-La topologie utilisée pour cette section se compose de deux instances de publication TarMK, devancés par des dispatchers, eux-mêmes devancés par un équilibreur de charge. La réplication se produit du serveur de l’auteur à la ferme de publication TarMK.
+La topologie supposée de cette section est composée de deux instances de publication TarMK, devant lesquelles les dispatchers sont eux-mêmes devancés par un équilibreur de charge. La réplication se produit du serveur de création à la ferme de publication TarMK.
 
 ![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
@@ -157,45 +153,45 @@ La topologie utilisée pour cette section se compose de deux instances de public
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
-1. Arrêtez le trafic de l’instance de publication 2 à l’équilibreur de charge.
-1. Exécutez la [maintenance d’avant mise à jour](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur l’instance de publication 2.
-1. Exécutez [la mise à jour sur place](/help/sites-deploying/in-place-upgrade.md) sur l’instance de publication 2.
-1. Mettez à jour le Dispatcher ou le module web *si nécessaire*.
-1. Videz le cache du Dispatcher.
-1. Le contrôle qualité valide l’instance de publication 2 via le Dispatcher, derrière le pare-feu.
-1. Désactivez l’instance de publication 2.
-1. Copiez l’instance de publication 2.
-1. Démarrez l’instance de publication 2.
+1. Arrêtez le trafic de l’instance de publication 2 à l’équilibreur de charge..
+1. Exécuter [maintenance avant la mise à niveau](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) sur la publication 2.
+1. Exécutez une [mise à niveau statique](/help/sites-deploying/in-place-upgrade.md) sur la publication 2.
+1. Mise à jour de Dispatcher ou du module web *si nécessaire*.
+1. Videz le cache de Dispatcher.
+1. Le contrôle qualité valide la publication 2 via Dispatcher, derrière le pare-feu.
+1. Arrêter la publication 2.
+1. Copiez l’instance de publication 2.
+1. Démarrez la publication 2.
 
 ### En cas de réussite {#if-successful-2}
 
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
-1. Activez le trafic vers l’instance de publication 2.
-1. Arrêtez le trafic vers l’instance de publication 1.
-1. Arrêtez l’instance de publication 1.
-1. Remplacez l’instance de publication 1 avec une copie de l’instance de publication 2.
-1. Mettez à jour le Dispatcher ou le module web *si nécessaire*.
-1. Videz le cache du Dispatcher pour l’instance de publication 1.
-1. Démarrez l’instance de publication 1.
-1. Le contrôle qualité valide l’instance de publication 1 via le Dispatcher, derrière le pare-feu.
+1. Activez le trafic vers l’instance de publication 2..
+1. Arrêtez le trafic vers la publication 1.
+1. Arrêtez l’instance de publication 1.
+1. Remplacez l’instance de publication 1 par une copie de la publication 2.
+1. Mise à jour de Dispatcher ou du module web *si nécessaire*.
+1. Videz le cache de Dispatcher pour la publication 1.
+1. Démarrez la publication 1.
+1. Le contrôle qualité valide la publication 1 via Dispatcher, derrière le pare-feu.
 
 ### En cas d’échec (restauration) {#if-unsuccessful-rollback-1}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
-1. Créez une copie de l’instance de publication 1.
-1. Remplacez l’instance de publication 2 avec une copie de l’instance de publication 1.
-1. Videz le cache du Dispatcher pour l’instance de publication 2.
-1. Démarrez l’instance de publication 2.
-1. Le contrôle qualité valide l’instance de publication 2 via le Dispatcher, derrière le pare-feu.
-1. Activez le trafic vers l’instance de publication 2.
+1. Créez une copie de l’instance de publication 1..
+1. Remplacez l’instance de publication 2 par une copie de la publication 1.
+1. Videz le cache de Dispatcher pour la publication 2.
+1. Démarrez la publication 2.
+1. Le contrôle qualité valide la publication 2 via Dispatcher, derrière le pare-feu.
+1. Activez le trafic vers la publication 2.
 
 ## Dernières étapes de mise à niveau {#final-upgrade-steps}
 
-1. Activez le trafic vers l’instance de publication 1.
-1. Le contrôle qualité procède à la validation finale à partir d’une URL publique
-1. Activez les agents de réplication de l’environnement de création.
+1. Activez le trafic vers l’instance de publication 1..
+1. Le contrôle qualité procède à la validation finale à partir d’une URL publique.
+1. Activez les agents de réplication à partir de l’environnement de création.
 1. Reprenez la création de contenu.
 1. Effectuez les [vérifications d’après mise à niveau](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
 

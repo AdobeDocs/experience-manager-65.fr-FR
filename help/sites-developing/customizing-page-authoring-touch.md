@@ -1,19 +1,15 @@
 ---
 title: Personnaliser la création de pages
-seo-title: Customizing Page Authoring
-description: AEM fournit divers mécanismes pour vous permettre de personnaliser les fonctionnalités de création de pages.
-seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
-uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
+description: Adobe Experience Manager (AEM) fournit divers mécanismes pour vous permettre de personnaliser les fonctionnalités de création de pages.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1357'
-ht-degree: 65%
+source-wordcount: '1340'
+ht-degree: 47%
 
 ---
 
@@ -23,11 +19,11 @@ ht-degree: 65%
 >
 >Ce document décrit comment personnaliser la création de pages dans l’IU tactile moderne et ne s’applique pas à l’IU classique.
 
-AEM fournit divers mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages (et la fonction [consoles](/help/sites-developing/customizing-consoles-touch.md)) de votre instance de création.
+Adobe Experience Manager (AEM) fournit divers mécanismes pour vous permettre de personnaliser la fonctionnalité de création de pages (et la fonction [consoles](/help/sites-developing/customizing-consoles-touch.md)) de votre instance de création.
 
 * Clientlibs
 
-   Les bibliothèques clientes (clientlibs) vous permettent d’étendre l’implémentation par défaut afin d’obtenir la nouvelle fonctionnalité, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` La nouvelle bibliothèque cliente doit :
+  Les bibliothèques côté client vous permettent d’étendre l’implémentation par défaut pour créer de nouvelles fonctionnalités, tout en réutilisant les fonctions, objets et méthodes standard. Lors de la personnalisation, vous pouvez créer votre propre bibliothèque cliente sous `/apps.` La nouvelle bibliothèque cliente doit :
 
    * dépendre de la bibliothèque cliente de création `cq.authoring.editor.sites.page` ;
    * faire partie de la catégorie `cq.authoring.editor.sites.page.hook` appropriée.
@@ -38,30 +34,30 @@ AEM fournit divers mécanismes pour vous permettre de personnaliser la fonctionn
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Jeu de documentation JS](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>Pour plus d’informations, voir [Jeu de documentation JS](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Elles peuvent être utilisées de différentes manières pour étendre la fonctionnalité de création de pages dans votre instance AEM. Une sélection est présentée ci-dessous (à un niveau élevé).
 
 >[!NOTE]
 >
->Pour plus d’informations, voir :
+>Pour plus d’informations, voir :
 >
 >* Utilisation et création [clientlibs](/help/sites-developing/clientlibs.md).
 >* Utilisation et création [superpositions](/help/sites-developing/overlays.md).
->* [Granite](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structure de l’interface utilisateur tactile d’AEM](/help/sites-developing/touch-ui-structure.md) pour plus d’informations sur les zones structurelles utilisées pour la création de pages.
 >
 
 
 >[!CAUTION]
 >
->Vous ne devez ***rien*** modifier dans le chemin `/libs`.
+>****** Ne modifiez rien dans le chemin d’accès `/libs`. 
 >
->En effet, le contenu de `/libs` est remplacé dès que vous mettez à niveau votre instance (et risque de l’être si vous appliquez un correctif ou un Feature Pack).
+>La raison en est que le contenu de `/libs` est remplacé, la prochaine fois que vous mettez à niveau votre instance (et peut être remplacée lorsque vous appliquez un correctif ou un Feature Pack).
 >
 >La méthode recommandée pour la configuration et d’autres modifications est la suivante :
 >
->1. Recréez l’élément requis (tel qu’il existe dans `/libs`) sous `/apps`.
+>1. Recréez l’élément requis (c’est-à-dire, tel qu’il existe dans `/libs`) sous `/apps`
 >1. Apportez les modifications désirées dans `/apps`.
 
 ## Ajouter un nouveau calque (mode) {#add-new-layer-mode}
@@ -70,9 +66,9 @@ Lorsque vous modifiez une page, il existe plusieurs [modes](/help/sites-authorin
 
 ### Exemple de calque : État de Live Copy {#layer-example-live-copy-status}
 
-Une instance d’AEM standard fournit la couche MSM. Il accède aux données relatives à [gestion multi-site](/help/sites-administering/msm.md) et le surligne dans le calque.
+Une instance d’AEM standard fournit la couche MSM. Il accède aux données relatives à [gestion multisite](/help/sites-administering/msm.md) et le surligne dans le calque.
 
-Pour obtenir une démonstration, vous pouvez modifier toute page [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou n’importe quelle autre page Live Copy) et sélectionner le mode **Statut de Live Copy**.
+Pour l’afficher en action, vous pouvez modifier n’importe quel [Copie de langue We.Retail](/help/sites-developing/we-retail-globalized-site-structure.md) (ou toute autre page Live Copy) et sélectionnez **État de Live Copy** mode .
 
 Vous trouverez la définition du calque MSM (pour référence) à l’emplacement suivant :
 
@@ -80,7 +76,7 @@ Vous trouverez la définition du calque MSM (pour référence) à l’emplacemen
 
 ### Exemple de code {#code-sample}
 
-Il s’agit d’un exemple de package montrant comment créer un nouveau calque (mode), qui est un nouveau calque pour la vue MSM.
+Il s’agit d’un exemple de package montrant comment créer un calque (mode), qui est un nouveau calque pour la vue MSM.
 
 CODE SUR GITHUB
 
@@ -91,11 +87,11 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 ## Ajout d’une nouvelle catégorie de sélection à l’explorateur de ressources {#add-new-selection-category-to-asset-browser}
 
-L’explorateur de ressources affiche des ressources de différents types/catégories (par exemple, image, documents, etc.). Les ressources peuvent également être filtrées par ces catégories.
+L’explorateur de ressources affiche des ressources de différents types/catégories (par exemple, des images et des documents). Les ressources peuvent également être filtrées par ces catégories.
 
 ### Exemple de code {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` est un exemple de package qui montre comment ajouter un nouveau groupe à l’outil de recherche de ressources. Cet exemple se connecte au flux public de [Flickr](https://www.flickr.com) et l’affiche dans le panneau latéral.
+`aem-authoring-extension-assetfinder-flickr` est un exemple de module montrant comment ajouter un groupe à l’outil de recherche de ressources. Cet exemple se connecte à [Flickr](https://www.flickr.com)est un flux public et les affiche dans le panneau latéral.
 
 CODE SUR GITHUB
 
@@ -106,11 +102,11 @@ Vous pouvez trouver le code de cette page sur GitHub.
 
 ## Filtrage des ressources {#filtering-resources}
 
-Lors de la création de pages, l’utilisateur doit souvent sélectionner parmi des ressources (par exemple, des pages, des composants, des ressources, etc.). Cela peut prendre la forme d’une liste, par exemple à partir de laquelle l’auteur doit choisir un élément.
+Lors de la création de pages, l’utilisateur doit souvent effectuer une sélection parmi des ressources (par exemple, des pages, des composants et des ressources). Cela peut prendre la forme d’une liste, par exemple, à partir de laquelle l’auteur doit choisir un élément.
 
-Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
+Pour maintenir la liste à une taille raisonnable et adaptée au cas d’utilisation, un filtre peut être mis en oeuvre sous la forme d’un prédicat personnalisé. Par exemple, si le composant [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) est utilisé pour permettre à l’utilisateur de sélectionner le chemin d’accès à une ressource spécifique, les chemins d’accès présentés peuvent être filtrés comme suit :
 
-* Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html).
+* Mettez en œuvre le prédicat personnalisé en implémentant l’interface [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html).
 * Spécifiez un nom pour le prédicat et faites-y référence lors de l’utilisation de `pathbrowser`.
 
 Pour plus d’informations sur la création d’un prédicat personnalisé, consultez [cet article](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -157,11 +153,11 @@ Dans une installation AEM standard :
 
          * property : `editorType`
 
-           Définit le type d’éditeur intégré qui sera utilisé lorsque la modification statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
+           Définit le type d’éditeur intégré utilisé lorsque la modification statique est déclenchée pour ce composant ; par exemple, `text`, `textimage`, `image`, `title`.
 
-1. Les informations de configuration supplémentaires de l’éditeur peuvent être définies à l’aide d’un nœud `config` contenant des configurations, ainsi qu’un nœud `plugin` additionnel pour contenir les informations nécessaires à la configuration du module externe.
+1. Vous pouvez configurer d’autres détails de configuration de l’éditeur à l’aide d’un `config` noeud contenant des configurations et un `plugin` pour contenir les détails de configuration du module externe nécessaires.
 
-   Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant d’image. Notez que, dans la mesure où la taille d’écran peut être très limitée, les proportions de recadrage ont été déplacées vers l’éditeur plein écran et ne sont visibles qu’à cet endroit.
+   Voici un exemple de définition des proportions pour le module externe de recadrage d’image du composant d’image. En raison de la taille d’écran limitée, les proportions de recadrage ont été déplacées vers l’éditeur plein écran et ne peuvent être vues qu’à cet endroit.
 
    ```xml
    <cq:inplaceEditing
@@ -185,7 +181,7 @@ Dans une installation AEM standard :
 
    >[!CAUTION]
    >
-   >Nous attirons également votre attention sur le fait que, dans AEM, les rapports de recadrage, tels qu’ils sont définis par la propriété `ratio`, sont définis sous la forme **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur. Cette différence a été créée pour des raisons de compatibilité héritée. Les utilisateurs chargés de la création ne percevront aucune différence, à condition que vous définissiez clairement la propriété `name`, car c’est cette dernière qui s’affiche dans l’interface utilisateur.
+   >AEM les rapports de recadrage, tels que définis par `ratio` sont définies comme **hauteur/largeur**. Cela diffère de la définition conventionnelle de la largeur/hauteur. Cela a été créée pour des raisons de compatibilité héritée. Les utilisateurs chargés de la création ne percevront aucune différence, à condition que vous définissiez clairement la propriété `name`, car c’est cette dernière qui s’affiche dans l’interface utilisateur.
 
 #### Création d’un éditeur statique {#creating-a-new-in-place-editor}
 
@@ -209,7 +205,7 @@ Pour mettre en œuvre un nouvel éditeur statique (au sein de votre bibliothèqu
 
 #### Exemple de code pour la création d’un éditeur statique {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` est un exemple de package qui montre comment créer un éditeur statique dans AEM.
+`aem-authoring-extension-inplace-editor` est un exemple de package montrant comment créer un éditeur statique dans AEM.
 
 CODE SUR GITHUB
 
@@ -243,9 +239,9 @@ Le workflow d’usine, **Demande d’activation** :
 
 * apparaît automatiquement dans le menu approprié lorsqu’un auteur de contenu **n’a pas** les droits de réplication appropriés, mais **dispose** de l’abonnement des utilisateurs et auteurs de la gestion des ressources numériques ;
 
-* sinon, rien ne s’affichera, car les droits de réplication ont été supprimés.
+* Sinon, rien ne s’affiche, car les droits de réplication ont été supprimés.
 
-Pour bénéficier d’un comportement personnalisé lors d’une telle activation, vous pouvez incruster le workflow **Demander l’activation** :
+Pour appliquer un comportement personnalisé à une telle activation, vous pouvez superposer la variable **Demande d’activation** workflow :
 
 1. Dans `/apps`, recouvrez l’assistant **Sites** :
 
