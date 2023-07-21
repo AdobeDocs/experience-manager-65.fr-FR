@@ -5,16 +5,18 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 6ab2538dd8095304a55433c15c8c3d095499d92c
+source-git-commit: f620966974b0f535d30a17a5fa3175a593e52fec
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 53%
+source-wordcount: '1913'
+ht-degree: 52%
 
 ---
 
 # Création d’un formulaire adaptatif {#creating-an-adaptive-form}
 
-<span class="preview"> Cet article décrit une approche plus ancienne du Forms adaptatif. Adobe recommande d’utiliser [Composants principaux de Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) pour créer de nouveaux formulaires. Ces composants représentent une [avancée significative dans la création de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr), ce qui garantit des expériences utilisateur impressionnantes.</span>
+<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+
+
 
 ## Création d’un formulaire adaptatif {#strong-create-an-adaptive-form-strong}
 
