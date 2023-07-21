@@ -1,7 +1,7 @@
 ---
 title: Utiliser les journaux
 seo-title: Working with Logs
-description: Découvrez comment résoudre les problèmes d’AEM à l’aide des journaux.
+description: Découvrez comment résoudre les problèmes d’AEM en utilisant les journaux.
 seo-description: Learn how to troubleshoot AEM by working with logs.
 uuid: af8b7f50-c8d4-4760-9f00-3feb0b79ee4c
 contentOwner: Guillaume Carlino
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '234'
-ht-degree: 100%
+source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 75%
 
 ---
 
@@ -22,7 +22,14 @@ ht-degree: 100%
 
 Cette section contient des informations détaillées sur les journaux disponibles pour vous aider à résoudre les problèmes.
 
-CRX enregistre des journaux détaillés. Après avoir décompressé et démarré Quickstart, vous pouvez retrouver les journaux dans les emplacements suivants :
+>[!NOTE]
+>
+>Pour plus d’informations sur les journaux, voir :
+>
+>* [Maintenance du journal d’audit dans AEM ](/help/sites-administering/operations-audit-log.md)
+>* [Utilisation des enregistrements d’audit et des fichiers journaux](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
+
+CRX enregistre des journaux détaillés. Après avoir décompressé et démarré Quickstart, vous pouvez trouver les journaux aux emplacements suivants :
 
 * crx-quickstart/launchpad/logs
 * crx-quickstart/server/logs
@@ -32,7 +39,7 @@ CRX enregistre des journaux détaillés. Après avoir décompressé et démarré
 
 Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DÉBOGUER ne sont pas consignés.
 
-Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX afin de définir
+Pour activer le niveau de journalisation DEBUG, utilisez l’explorateur CRX pour définir la variable
 
 ```xml
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
@@ -46,7 +53,7 @@ Une ligne dans le fichier de débogage commence généralement par DEBUG, puis f
 DEBUG 3 WebApp Panel: WebApp successfully deployed
 ```
 
-Les niveaux de journalisation sont les suivants :
+Les niveaux de journal sont les suivants :
 
 | 0 | Erreur fatale | L’action a échoué et le programme d’installation ne peut pas continuer. |
 |---|---|---|
