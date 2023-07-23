@@ -5,35 +5,37 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '1073'
-ht-degree: 100%
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 41%
 
 ---
 
 # Création de formulaires adaptatifs à l’aide d’un schéma XML {#creating-adaptive-forms-using-xml-schema}
 
+<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+
 ## Prérequis {#prerequisites}
 
-La création d’un formulaire adaptatif à l’aide d’un schéma XML en tant que modèle de formulaire requiert des connaissances de base en matière de schémas XML. Il est également recommandé de lire le contenu suivant avant cet article.
+La création d’un formulaire adaptatif à l’aide d’un schéma XML en tant que modèle de formulaire nécessite une compréhension de base des schémas XML. Il est également recommandé de lire le contenu suivant avant cet article.
 
 * [Création d’un formulaire adaptatif](creating-adaptive-form.md)
 * [Schéma XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Utilisation d’un schéma XML en tant que modèle de formulaire {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma XML existant en tant que modèle de formulaire. Ce schéma XML représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre organisation.
+[!DNL Experience Manager Forms] prend en charge la création d’un formulaire adaptatif en utilisant un schéma XML existant en tant que modèle de formulaire. Ce schéma XML représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre entreprise.
 
-Les principales fonctionnalités de l’utilisation d’un schéma XML sont les suivantes :
+Les principales fonctionnalités de l&#39;utilisation d&#39;un schéma XML sont les suivantes :
 
-* La structure du modèle XSD s’affiche sous forme d’arborescence sous l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie XSD dans le formulaire adaptatif.
-* Vous pouvez préremplir le formulaire avec du code XML conforme au schéma associé.
-* Au moment de l’envoi, les données saisies par l’utilisateur sont envoyées au format XML approprié pour le schéma associé.
+* La structure du schéma XSD s’affiche sous forme d’arborescence dans l’onglet Outil de recherche de contenu en mode création pour un formulaire adaptatif. Vous pouvez faire glisser et ajouter un élément de la hiérarchie XSD dans le formulaire adaptatif.
+* Vous pouvez préremplir le formulaire à l’aide d’un code XML conforme au schéma associé.
+* Lors de l’envoi, les données saisies par l’utilisateur sont envoyées au format XML qui s’aligne sur le schéma associé.
 
-Un schéma XML se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés vers un formulaire adaptatif, ils sont automatiquement mis en correspondance avec les composants de formulaires adaptatifs correspondants.
+Un schéma XML se compose de types d’éléments simples et complexes. Les éléments possèdent des attributs qui ajoutent des règles à ceux-ci. Lorsque ces éléments et attributs sont déplacés sur un formulaire adaptatif, ils sont automatiquement mappés au composant de formulaire adaptatif correspondant.
 
-Cette mise en correspondance des éléments XML avec les composants de formulaires adaptatifs est la suivante :
+Ce mappage des éléments XML avec les composants de formulaire adaptatif est le suivant :
 
 <table>
  <tbody>
@@ -78,7 +80,7 @@ Cette mise en correspondance des éléments XML avec les composants de formulair
 
 ## Exemple de schéma XML {#sample-xml-schema}
 
-Vous trouverez ci-dessous un exemple de schéma XML.
+Voici un exemple de schéma XML.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -122,7 +124,7 @@ Vous trouverez ci-dessous un exemple de schéma XML.
 
 >[!NOTE]
 >
->Veillez à ce que votre schéma XML ne comporte qu’un seul élément racine. Un schéma XML comportant plusieurs éléments racines n’est pas pris en charge.
+>Assurez-vous que votre schéma XML ne comporte qu’un seul élément racine. Un schéma XML comportant plusieurs éléments racine n’est pas pris en charge.
 
 ## Ajout de propriétés spéciales aux champs à l’aide d’un schéma XML {#adding-special-properties-to-fields-using-xml-schema}
 
@@ -161,10 +163,10 @@ Vous pouvez ajouter les attributs suivants aux éléments de schéma XML pour aj
 
 >[!NOTE]
 >
->Lorsque vous faites glisser un élément de schéma jusqu’à un formulaire adaptatif, une légende par défaut est générée par :
+>Lorsque vous faites glisser un élément de schéma vers un formulaire adaptatif, une légende par défaut est générée par :
 >
->* la mise en majuscule du premier caractère du nom de l’élément ;
->* l’insertion d’un espace entre la casse mixte.
+>* Capitalisation du premier caractère du nom de l’élément
+>* Insertion d’espace blanc aux limites de la casse mixte.
 >
 >Par exemple, si vous ajoutez l’élément de schéma `userFirstName`, la légende générée dans le formulaire adaptatif est `User First Name`.
 
@@ -183,7 +185,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>totalDigits</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Spécifie le nombre maximal de chiffres autorisés dans un composant. Le nombre de chiffres spécifié doit être supérieur à zéro.</p> </td>
+   <td><p>Indique le nombre maximal de chiffres autorisés dans un composant. Le nombre de chiffres spécifié doit être supérieur à zéro.</p> </td>
    <td>
     <ul>
      <li>Zone numérique</li>
@@ -204,7 +206,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>minimum</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Définit la limite inférieure pour les valeurs numériques et les dates. Par défaut, la valeur minimale est incluse.</p> </td>
+   <td><p>Indique la limite inférieure pour les valeurs numériques et les dates. Par défaut, la valeur minimale est incluse.</p> </td>
    <td>
     <ul>
      <li>Zone numérique</li>
@@ -215,7 +217,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>exclusiveMaximum</code></p> </td>
    <td><p>Booléen</p> </td>
-   <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit inférieure ou égale à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> </td>
+   <td><p>Si la valeur est true, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être inférieure à la valeur numérique ou la date spécifiée pour la propriété maximum.</p> <p>Si la valeur est false, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être inférieure ou égale à la valeur numérique ou à la date spécifiée pour la propriété maximum.</p> </td>
    <td>
     <ul>
      <li>Zone numérique</li>
@@ -226,7 +228,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>exclusiveMinimum</code></p> </td>
    <td><p>Booléen</p> </td>
-   <td><p>Si elle est définie sur true, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> <p>Si elle est définie sur false, la valeur numérique ou la date spécifiée dans le composant de formulaire doit être supérieure ou égale à la valeur numérique ou la date spécifiée pour la propriété minimum.</p> </td>
+   <td><p>Si la valeur est true, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être supérieure à la valeur numérique ou à la date spécifiée pour la propriété minimum.</p> <p>Si la valeur est false, la valeur numérique ou la date spécifiée dans le composant du formulaire doit être supérieure ou égale à la valeur numérique ou à la date spécifiée pour la propriété minimale.</p> </td>
    <td>
     <ul>
      <li>Zone numérique</li>
@@ -246,7 +248,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>maxLength</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Spécifie le nombre maximal de caractères autorisés dans un composant. La longueur maximale doit être supérieure à zéro.</p> </td>
+   <td><p>Indique le nombre maximal de caractères autorisés dans un composant. La longueur maximale doit être supérieure à zéro.</p> </td>
    <td>
     <ul>
      <li>Zone de texte</li>
@@ -255,7 +257,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>length</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Spécifie le nombre exact de caractères autorisés dans un composant. La longueur doit être égale ou supérieure à zéro.</p> </td>
+   <td><p>Indique le nombre exact de caractères autorisés dans un composant. La longueur doit être égale ou supérieure à zéro.</p> </td>
    <td>
     <ul>
      <li>Zone de texte</li>
@@ -264,7 +266,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Spécifie le nombre maximal de décimales autorisées dans un composant. La valeur de fractionDigits doit être égale ou supérieure à zéro.</p> </td>
+   <td><p>Indique le nombre maximal de décimales autorisées dans un composant. La fractionDigits doit être égale ou supérieure à zéro.</p> </td>
    <td>
     <ul>
      <li> Zone numérique avec type de données flottant ou décimal</li>
@@ -273,7 +275,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
   <tr>
    <td><p><code>pattern</code></p> </td>
    <td><p>Chaîne</p> </td>
-   <td><p>Spécifie la séquence de caractères. Un composant accepte les caractères si les caractères sont conformes au modèle spécifié.</p> <p>Les propriétés de motif mappent vers le motif de validation du composant de formulaire adaptatif correspondant.</p> </td>
+   <td><p>Indique la séquence des caractères. Un composant accepte les caractères si les caractères sont conformes au modèle spécifié.</p> <p>La propriété pattern correspond au modèle de validation du composant de formulaire adaptatif correspondant.</p> </td>
    <td>
     <ul>
      <li>Tous les composants de formulaires adaptatifs qui sont mappés vers un schéma XSD </li>
@@ -284,13 +286,13 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma XML pou
 
 ## Questions fréquemment posées  {#frequently-asked-questions}
 
-**Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
+**Comment savoir quel élément de l’arborescence est associé à quel élément XML ?**
 
-Lorsque vous double-cliquez sur un élément dans l’Outil de recherche de contenu, une fenêtre contextuelle affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
+Lorsque vous double-cliquez sur un élément dans l’Outil de recherche de contenu, une fenêtre pop-up affiche un nom de champ et une propriété appelée `bindRef`. Cette propriété met en correspondance l’élément de l’arborescence avec l’élément ou l’attribut du schéma.
 
 ![Champ bindref d’un élément de schéma XML](assets/dblclick.png)
 
-Le champ bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
+Le <code>bindRef</code> affiche l’association entre un élément de l’arborescence et un élément ou un attribut d’un schéma.
 
 >[!NOTE]
 >
@@ -300,13 +302,13 @@ Le champ bindRef</code> affiche l’association entre un élément de l’arbore
 
 Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire complet. Si vous souhaitez uniquement des champs sélectifs, utilisez la structure entière et supprimez les champs indésirables.
 
-**Je dispose d’une longue structure complexe dans l’Outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
+**J’ai une longue structure complexe dans l’outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
 
-Vous disposez de deux options :
+Vous disposez de deux options :
 
 * Parcourez la structure de l’arborescence.
 * Utilisez la zone Rechercher pour rechercher un élément.
 
-**Qu’est-ce qu’un bindRef ?**
+**Qu’est-ce qu’un bindRef ?**
 
 Un `bindRef` est le lien entre un composant de formulaire adaptatif et un élément ou un attribut de schéma. Il détermine le `XPath` où la valeur capturée à partir de ce composant ou champ est disponible dans le code XML de sortie. Un `bindRef` sert également au préremplissage d’une valeur de champ d’un code XML prérempli.

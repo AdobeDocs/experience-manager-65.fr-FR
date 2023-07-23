@@ -10,22 +10,24 @@ discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 66%
 
 ---
 
 # Ajout d’informations issues de données utilisateur aux métadonnées d’envoi de formulaire{#adding-information-from-user-data-to-form-submission-metadata}
 
-Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire pour calculer les champs de métadonnées d’un brouillon ou d’un envoi de formulaire. Les métadonnées vous permettent de filtrer le contenu en fonction des données utilisateur. Par exemple, un utilisateur entre John Doe dans le champ de nom du formulaire. Vous pouvez utiliser ces informations pour calculer les métadonnées pouvant classer cet envoi par catégorie sous les initiales JD.
+<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
-Pour calculer les champs de métadonnées avec des valeurs saisies par l’utilisateur, ajoutez les éléments de votre formulaire aux métadonnées. Lorsqu’un utilisateur entre une valeur dans cet élément, un script utilise la valeur pour calculer les informations. Ces informations sont ajoutées dans les métadonnées. Lorsque vous ajoutez un élément sous la forme d’un champ de métadonnées, vous fournissez la clé correspondante. La clé est ajoutée en tant que champ dans les métadonnées, et les informations calculées sont enregistrées en fonction de cette clé.
+Vous pouvez utiliser des valeurs saisies dans un élément de votre formulaire pour calculer les champs de métadonnées d’un brouillon ou d’un envoi de formulaire. Les métadonnées vous permettent de filtrer le contenu en fonction des données utilisateur. Par exemple, un utilisateur saisit John Doe dans le champ de nom de votre formulaire. Vous pouvez utiliser ces informations pour calculer les métadonnées qui peuvent classer cet envoi sous les initiales JD.
 
-Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce formulaire, un champ capture l’âge des utilisateurs finaux. Le client souhaite vérifier tous les envois correspondant à une tranche d’âge spécifique après qu’un certain nombre d’utilisateurs a envoyé le formulaire. Plutôt que de parcourir toutes les données qui deviennent complexes à mesure que le nombre de formulaires augmente, des métadonnées supplémentaires aident le client. L’auteur du formulaire peut configurer quelles propriétés/données remplies par l’utilisateur final sont stockées au niveau supérieur afin de faciliter la recherche. Les métadonnées supplémentaires sont des informations remplies par l’utilisateur stockées au niveau supérieur du nœud de métadonnées, tel que configuré par l’auteur.
+Pour calculer les champs de métadonnées avec des valeurs saisies par l’utilisateur, ajoutez les éléments de votre formulaire aux métadonnées. Lorsqu’un utilisateur entre une valeur dans cet élément, un script utilise la valeur pour calculer les informations. Ces informations sont ajoutées dans les métadonnées. Lorsque vous ajoutez un élément sous la forme d’un champ de métadonnées, vous fournissez la clé correspondante. La clé est ajoutée en tant que champ dans les métadonnées et les informations calculées sont enregistrées en fonction de celle-ci.
 
-Prenons un autre exemple d’un formulaire qui capture l’ID d’adresse électronique et le numéro de téléphone. Lorsqu’un utilisateur visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur peut configurer le formulaire afin que l’ID d’adresse électronique et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’ID d’adresse électronique sont stockés dans le nœud de métadonnées du brouillon. Un cas illustrant cette configuration est le tableau de bord de gestion des prospects.
+Par exemple, une compagnie d’assurance maladie publie un formulaire. Dans ce formulaire, un champ capture l’âge des utilisateurs finaux. Le client souhaite vérifier tous les envois dans une tranche d’âge spécifique après qu’un certain nombre d’utilisateurs ont envoyé le formulaire. Plutôt que de parcourir toutes les données qui deviennent complexes à mesure que le nombre de formulaires augmente, des métadonnées supplémentaires aident le client. L’auteur du formulaire peut configurer quelles propriétés/données remplies par l’utilisateur final sont stockées au niveau supérieur afin de faciliter la recherche. Les métadonnées supplémentaires sont des informations remplies par l’utilisateur stockées au niveau supérieur du noeud de métadonnées, tel que l’auteur les a configurées.
+
+Prenons un autre exemple de formulaire qui capture l’ID de courrier électronique et le numéro de téléphone. Lorsqu’un utilisateur visite ce formulaire de manière anonyme et abandonne le formulaire, l’auteur peut configurer le formulaire afin que l’ID d’adresse électronique et le numéro de téléphone soient automatiquement enregistrés. Ce formulaire est enregistré automatiquement et le numéro de téléphone et l’ID d’adresse électronique sont stockés dans le nœud de métadonnées du brouillon. Le tableau de bord de la gestion des leads est un cas d’utilisation de cette configuration.
 
 ## Ajout d’éléments de formulaire aux métadonnées {#adding-form-elements-to-metadata}
 
@@ -52,7 +54,7 @@ Une fois qu’un utilisateur a saisi des données dans l’élément sélectionn
 
 ## Affichage des métadonnées d’envoi de formulaire mises à jour : {#seeing-updated-form-nbsp-submission-metadata}
 
-Pour l’exemple ci-dessus, les métadonnées sont conservées dans le référentiel CRX. Les métadonnées présentent l’aspect suivant :
+Pour l’exemple ci-dessus, les métadonnées sont stockées dans le référentiel CRX. Les métadonnées présentent l’aspect suivant :
 
 ![Métadonnées](assets/metadata_entry_new.png)
 
@@ -66,4 +68,4 @@ Vous sélectionnez le conteneur de formulaires adaptatifs et dans les propriét�
 
 >[!NOTE]
 >
->L’exemple ci-dessus est fourni uniquement à des fins d’apprentissage. Assurez-vous que vous recherchez des métadonnées à l’emplacement correct, tel que configuré dans votre implémentation AEM Forms.
+>L’exemple ci-dessus est fourni uniquement à des fins d’apprentissage. Assurez-vous de rechercher les métadonnées à l’emplacement correct configuré dans votre mise en oeuvre AEM Forms.

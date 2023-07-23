@@ -1,7 +1,7 @@
 ---
 title: Prévisualisation d’un formulaire
 seo-title: Previewing a form
-description: Vous pouvez prévisualiser vos formulaires avant de les publier ou de les activer pour vérifier qu’ils répondent à vos attentes. Les options d’aperçu peuvent varier en fonction des types de formulaire pris en charge.
+description: Vous pouvez prévisualiser vos formulaires avant de les publier ou de les activer pour vous assurer qu’ils répondent aux attentes. Les options d’aperçu peuvent varier selon les types de formulaire pris en charge.
 seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,20 +9,22 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 feature: Adaptive Forms
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 29%
 
 ---
 
 # Prévisualisation d’un formulaire {#previewing-a-form}
 
+<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
+
 ## Présentation {#overview}
 
-Dans AEM Forms, vous pouvez prévisualiser les formulaires et les documents figurant dans le référentiel. En procédant de la sorte, vous pouvez déterminer exactement l’apparence et le comportement des formulaires lorsqu’ils sont publiés pour les utilisateurs finaux.
+Dans AEM Forms, vous pouvez prévisualiser les formulaires et documents présents dans le référentiel. L’aperçu permet de savoir exactement à quoi les formulaires ressemblent et se comportent lorsqu’ils sont publiés pour les utilisateurs finaux.
 
-Lorsque vous prévisualisez des formulaires, ils sont rendus dans une interface interactive et l’utilisateur peut les remplir avec des données. Lorsque vous prévisualisez des documents, ils sont rendus en mode non interactif et l’utilisateur peut uniquement les afficher. Pour les formulaires, une option supplémentaire d’aperçu personnalisé est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données provenant d’un fichier XML. Ces données remplissent certains champs ou tous les champs du formulaire prévisualisé.
+Lors de la prévisualisation de formulaires, ils sont rendus dans l’interface interactive et l’utilisateur peut les remplir avec des données. Lors de la prévisualisation de documents, ils sont rendus en mode non interactif et l’utilisateur peut uniquement afficher le document. Pour les formulaires, une option supplémentaire d’aperçu personnalisé est disponible. Grâce à cette option, vous pouvez prévisualiser le formulaire à l’aide des données d’un fichier XML. Les données remplissent certains ou tous les champs du formulaire prévisualisé.
 
 Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les différents types de formulaire pris en charge :
 
@@ -34,15 +36,15 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
   </tr>
   <tr>
    <td>Document</td>
-   <td>Aperçu au format PDF</td>
+   <td>Aperçu du PDF</td>
   </tr>
   <tr>
    <td>Formulaire PDF</td>
    <td>Aperçu au format PDF et aperçu avec des données<br /> </td>
   </tr>
   <tr>
-   <td>Formulaire adaptatif</td>
-   <td>Aperçu au format HTML et aperçu au format HTML avec des données</td>
+   <td>formulaire adaptatif</td>
+   <td>Aperçu des HTMLs et aperçu des HTMLS avec des données</td>
   </tr>
   <tr>
    <td>Modèle de formulaire</td>
@@ -57,19 +59,19 @@ Le tableau ci-dessous répertorie les options d’aperçu disponibles pour les d
 
    >[!NOTE]
    >
-   >Pour sélectionner une ressource, passez en mode Liste à partir de la vue Carte par défaut. Cliquez sur ![aem6forms_viewlist](assets/aem6forms_viewlist.png) ou ![aem6forms_viewcard](assets/aem6forms_viewcard.png) pour changer de vue.
+   >Pour sélectionner une ressource, basculez vers la vue Liste à partir de la vue Carte par défaut. Cliquez sur ![aem6forms_viewlist](assets/aem6forms_viewlist.png) ou ![aem6forms_viewcard](assets/aem6forms_viewcard.png) pour changer de vue.
 
-1. Lorsque vous cliquez sur Aperçu, les options d’aperçu applicables pour le type d’actif sélectionné sont affichées. Cliquez sur l’option souhaitée pour effectuer le rendu de l’actif sélectionné dans un nouvel onglet.
+1. Cliquez sur Aperçu pour afficher la liste des options d’aperçu applicables au type de ressource sélectionné. Cliquez sur l’option souhaitée pour effectuer le rendu de la ressource sélectionnée dans un nouvel onglet.
 
    Vous avez le choix entre :
 
-   * Aperçu au format HTML
+   * Aperçu en tant que HTML
    * Aperçu avec des données
    * Aperçu au format PDF (disponible pour les modèles de formulaire)
 
 ## Aperçu avec des données {#preview-with-data}
 
-Lorsque vous sélectionnez **Aperçu avec des données**, vous pouvez voir à quoi ressemble le formulaire avec des données réelles saisies. L’option Aperçu avec des données vous permet de télécharger un fichier XML contenant des exemples de données d’utilisateurs. Les exemples de données d’utilisateurs sont utilisées pour renseigner le formulaire d’aperçu au format que vous choisissez.
+Lorsque vous sélectionnez **Aperçu avec données**, vous pouvez voir à quoi ressemble le formulaire avec des données réelles saisies. L&#39;option Aperçu avec données permet de télécharger un fichier XML contenant des exemples de données utilisateur. Les exemples de données utilisateur sont utilisés pour remplir le formulaire d’aperçu au format que vous choisissez.
 
 1. Sélectionnez une ressource, cliquez sur Aperçu ![aem6forms_preview](assets/aem6forms_preview.png), puis sélectionnez **Aperçu avec des données**.
-1. Dans la boîte de dialogue Aperçu du formulaire, fournissez FormData en tant que fichier XML. Cliquez sur Aperçu pour effectuer le rendu du formulaire avec les données fusionnées du fichier XML.
+1. Dans la boîte de dialogue Aperçu du formulaire, fournissez FormData en tant que fichier XML. Cliquez sur Aperçu pour effectuer le rendu du formulaire avec les données fusionnées du code XML.

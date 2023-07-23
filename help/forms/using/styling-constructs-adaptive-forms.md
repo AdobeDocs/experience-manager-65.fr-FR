@@ -1,7 +1,7 @@
 ---
 title: Mettre en forme des éléments pour les formulaires adaptatifs
 seo-title: Styling constructs for adaptive forms
-description: La structure LESS permet de personnaliser l’aspect des formulaires adaptatifs.
+description: Utilisez la structure LESS pour personnaliser l’aspect des formulaires adaptatifs.
 seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,16 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2308'
-ht-degree: 100%
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+workflow-type: tm+mt
+source-wordcount: '2365'
+ht-degree: 74%
 
 ---
 
 # Mettre en forme des éléments pour les formulaires adaptatifs{#styling-constructs-for-adaptive-forms}
+
+<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
 ## Prérequis {#prerequisites}
 
@@ -25,16 +27,16 @@ Connaissances en matière de CSS et structure LESS.
 
 ## Éléments personnalisables {#what-can-be-customized}
 
-Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez tirer parti de ces classes pour appliquer un style aux divers composants d’un formulaire adaptatif. La définition de style des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne rentre pas dans le cadre de cet article. Utilisez ces mises en forme des éléments pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas appliquer un style aux composants à l’aide de l’[éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
+Cet article répertorie les classes CSS de formulaires adaptatifs disponibles publiquement. Vous pouvez tirer parti de ces classes pour appliquer un style aux divers composants d’un formulaire adaptatif. La mise en forme des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne fait pas partie de cet article. Utilisez ces éléments de style pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas mettre en forme des composants à l’aide de [éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
 
 ## Personnalisation des styles dans les formulaires adaptatifs {#customizing-styles-in-adaptive-forms}
 
-La structure LESS simplifie l’utilisation pour personnaliser les styles dans les formulaires adaptatifs. La structure vous permet de définir des styles à l’aide d’un ensemble de variables et de fonctions (mixins). La structure LESS aide à réduire la taille du code imbriqué et augmente sa capacité de réutilisation.
+La structure LESS simplifie le cas d’utilisation pour personnaliser les styles dans les formulaires adaptatifs. La structure vous permet de définir des styles à l’aide d’un ensemble de variables et de fonctions (mixins). La structure LESS aide à réduire la taille du code regroupé et augmente sa capacité de réutilisation.
 
-Vous pouvez personnaliser les styles des formulaires adaptatifs des manières suivantes :
+Vous pouvez personnaliser les styles des formulaires adaptatifs comme suit :
 
 * Modification du thème
-* Modification du style d’un composant
+* Modifier le style du composant
 
 ## Modification du thème {#changing-theme}
 
@@ -42,17 +44,17 @@ Vous pouvez modifier le thème d’un formulaire adaptatif pour vous assurer que
 
 Les modifications de l’aspect général du formulaire adaptatif via les propriétés CSS font généralement partie des modifications du thème. Les principales modifications de la convivialité du formulaire adaptatif, telles que les modifications de disposition et le positionnement des composants, ne sont pas considérées comme des modifications du thème.
 
-Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème d’une page Web :
+Selon l’amorçage, l’ensemble suivant de propriétés CSS définit le thème d’une page web :
 
 * Couleur d’arrière-plan
 * Bordure (type, couleur, épaisseur)
 * Couleur de la police
 * Remplissage
 * Marge
-* Taille de la police
-* Hauteur de ligne
+* Taille de police
+* LineHeight
 
-Actuellement, les variables LESS sont définies uniquement pour ces propriétés des différents éléments dans un formulaire adaptatif.
+Actuellement, les variables LESS sont définies uniquement pour ces propriétés des différents éléments d’un formulaire adaptatif.
 
 ## Modification du style de composant {#changing-component-style}
 
@@ -62,7 +64,7 @@ Pour appliquer un style à un formulaire adaptatif, ouvrez le formulaire adaptat
 
 ## Composants {#components}
 
-Les composants décrits dans cet article ont leurs classes CSS prédéfinies. Vous pouvez modifier les variables pour modifier les styles dans les classes CSS. Sinon, vous pouvez réécrire la classe entière. Cette section décrit les classes dans les composants et les styles que vous pouvez modifier à l’aide de variables.
+Les composants décrits dans cet article possèdent leurs classes CSS prédéfinies. Vous pouvez modifier les variables pour modifier les styles dans les classes CSS. Vous pouvez également réécrire la classe entière. Cette section décrit les classes dans les composants et les styles que vous pouvez modifier à l’aide de variables.
 
 ## Définition de style du conteneur {#container-styling}
 
@@ -104,7 +106,7 @@ Un conteneur est le composant de niveau supérieur. D’autres panneaux et champ
 
 ## Définition de style du champ {#field-styling}
 
-Les formulaires adaptatifs incluent divers types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. Le champ possède également un nom de classe commun `guideFieldNode`.
+Les formulaires adaptatifs incluent différents types de champs. Chaque champ a un nom de classe unique, qui est le nom du champ. Le champ possède également un nom de classe commun `guideFieldNode`.
 
 Les champs incluent des libellés, des widgets, des descriptions d’aide (descriptions longues et courtes), ainsi que des icônes d’aide de champ (point d’interrogation).
 
@@ -184,7 +186,7 @@ Les règles CSS pour le libellé sont appliquées à l’aide de la classe **gui
 
 ## Définition de style des widgets {#widgets-styling}
 
-Selon leur type, les widgets contiennent également des classes. En règle générale, les widgets incluent la classe `guideFieldWidget`. Les widgets fournis avec HTML utilisent normalement les éléments HTML standard input et select. La définition de style s’effectue en conséquence. Vous ne pouvez pas modifier le style d’un widget personnalisé en modifiant les variables.
+Selon leur type, les widgets contiennent également des classes. En règle générale, les widgets incluent la classe `guideFieldWidget`. Les widgets fournis avec HTML utilisent normalement l’entrée standard de l’élément de HTML et sélectionnent . Le style est effectué en conséquence. Vous ne pouvez pas mettre en forme un widget personnalisé en modifiant les variables.
 
 <table>
  <tbody>
@@ -286,11 +288,11 @@ Selon leur type, les widgets contiennent également des classes. En règle gén�
 
 ### Restrictions de la définition de style de widget {#limitations-in-widget-styling}
 
-La définition du style des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Toutefois, vous pouvez le modifier en remplaçant les styles. La restriction à l’aide de variables est fournie principalement pour garder un œil sur le nombre de variables. La restriction peut être relâchée si l’aspect d’un champ change considérablement car il est dans l’un des états décrits précédemment.
+La mise en forme des champs ciblés, obligatoires et désactivés est limitée à l’aide de variables. Vous pouvez toutefois la modifier en remplaçant les styles. La restriction utilisant des variables est principalement fournie pour garder le nombre de variables sous contrôle. La restriction peut être relâchée si l’aspect d’un champ change considérablement car il est dans l’un des états décrits précédemment.
 
 ## Description d’aide {#help-description}
 
-Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de composants de descriptions longue et courte. Les deux composants ont une classe commune `.guideHelpDescription` et une autre classe `.short`/`.long`, en fonction du type de description. Le contenu d’aide est intégré dans un élément de paragraphe pour remplacer la définition de style de la description. La description d’aide (longue et courte) est modifiée à l’aide de variables commençant par widgetshelp, comme indiqué dans le tableau suivant :
+Un auteur peut spécifier le contenu d’aide dans les champs à l’aide de composants de descriptions longue et courte. Les deux composants ont une classe commune `.guideHelpDescription` et une autre classe `.short`/`.long`, en fonction du type de description. Le contenu d’aide est intégré dans un élément de paragraphe pour remplacer la définition de style de la description. La description de l’aide (longue et courte) est modifiée à l’aide de variables commençant par widgetshelp, comme indiqué dans le tableau suivant :
 
 <table>
  <tbody>
@@ -352,13 +354,13 @@ Le widget des termes et conditions (TnC`` ``) vous permet de spécifier les term
 
 ## Bouton {#button}
 
-Les boutons sont également des widgets. Toutefois, leur définition de style est légèrement différente des widgets. Dans les formulaires adaptatifs, n’importe lequel des éléments suivants constitue un bouton :
+Les boutons sont également des widgets. Toutefois, leur style est légèrement différent des widgets. Dans les formulaires adaptatifs, l’un des éléments suivants constitue un bouton :
 
 * input[type = text]
 * Bouton
 * élément avec la classe .button
 
-Code HTML du bouton :
+Code HTML du bouton :
 
 `<button type="button" >`
 
@@ -480,7 +482,7 @@ Code HTML du bouton :
 
 ## Point d’interrogation {#question-mark}
 
-Pour les widgets, un point d’interrogation est affiché lorsque l’auteur ajoute une description longue dans le contenu d’aide. L’icône par défaut fournie dans l’amorçage est utilisée. Pour utiliser une icône personnalisée, vous pouvez personnaliser les icônes de l’amorçage.
+Pour les widgets, un point d’interrogation s’affiche lorsqu’un auteur ajoute une description longue dans le contenu de l’aide. L’icône par défaut fournie dans l’amorçage est utilisée. Pour utiliser une icône personnalisée, vous pouvez personnaliser les icônes d’amorçage.
 
 <table>
  <tbody>
@@ -535,7 +537,7 @@ Vous pouvez modifier le thème de couleur de l’en-tête et des rangées de con
 
 ## Pièce jointe {#file-attachment}
 
-Le widget de pièce jointe des formulaires adaptatifs vous permet de télécharger des fichiers. Vous pouvez également personnaliser le widget à l’aide des variables.
+Le widget Pièce jointe des formulaires adaptatifs vous permet de télécharger des fichiers. Vous pouvez également personnaliser le widget à l’aide des variables.
 
 <table>
  <tbody>
@@ -572,7 +574,7 @@ Le widget de pièce jointe des formulaires adaptatifs vous permet de télécharg
 
 ## Styles de navigateur {#navigator-styles}
 
-Il existe quatre types d’onglet de navigateur. Il s’agit des onglets sur la gauche, en haut, de l’assistant et en accordéon. Chaque navigateur possède une classe différente.
+Il existe quatre types d’onglets de navigateur. Il s’agit notamment des onglets à gauche, en haut, dans l’assistant et en accordéon. Chaque navigateur possède une classe différente.
 
 <table>
  <tbody>
@@ -599,7 +601,7 @@ Il existe quatre types d’onglet de navigateur. Il s’agit des onglets sur la 
  </tbody>
 </table>
 
-Voici le code HTML pour l’élément de navigateur d’onglet (similaire aux onglets d’amorçage) :
+Voici le code de HTML de l’élément de navigateur d’onglets (similaire aux onglets d’amorçage) :
 
 `<li>`
 
@@ -703,7 +705,7 @@ En outre, il existe des classes pour définir le style des navigateurs d’ongle
   </tr>
   <tr>
    <td><p><code>nested_false</code></p> </td>
-   <td><p>Navigateurs d’onglets (gauche et haut) qui n’ont pas de navigateur imbriqué/enfant/sous-navigateur</p> </td>
+   <td><p>Navigateurs d’onglets (gauche et haut) qui n’ont pas de navigateurs imbriqués/enfants/sous-navigateurs</p> </td>
   </tr>
  </tbody>
 </table>
@@ -942,7 +944,7 @@ Un panneau comporte une barre d’outils facultative et son contenu.
  </tbody>
 </table>
 
-Le nœud du panneau est divisé en navigateurs et contenu. Il `` ``n’y a pas de composant de définition du style séparé pour le contenu. Les variables décrites sont appliquées sur le navigateur ainsi que sur le contenu.
+Le noeud du panneau est divisé en navigateurs et en contenu. Il `` ``n’y a pas de composant de définition du style séparé pour le contenu. Les variables décrites sont appliquées sur le navigateur ainsi que sur le contenu.
 
 Le panneau supérieur (RootPanel) ne dispose pas de cette classe.
 
@@ -950,7 +952,7 @@ Le panneau supérieur (RootPanel) ne dispose pas de cette classe.
 
 ## Barre d’en-tête {#header-bar}
 
-Ces variables influent sur la barre d’en-tête visible sur un périphérique mobile ou équipé qui contient un titre de panneau et les navigateurs Suivant et Précédent.
+Ces variables influent sur la barre d’en-tête visible sur un appareil mobile ou équipé qui contient un titre de panneau et les navigateurs Suivant et Précédent.
 
 <table>
  <tbody>
@@ -984,7 +986,7 @@ Ces variables influent sur la barre d’en-tête visible sur un périphérique m
 
 ## Indicateur de défilement {#scroll-indicator}
 
-Ces variables influent sur l’indicateur de défilement, qui est une flèche orange qui s’affiche sur un périphérique mobile ou équipé d’un petit écran. Un indicateur de défilement indique la présence de contenu au-delà de la partie visible à l’écran. Vous pouvez faire défiler l’écran pour l’afficher. Lorsque vous atteignez la fin du contenu, la flèche disparaît.
+Ces variables influent sur l’indicateur de défilement, qui est une flèche orange qui s’affiche sur un périphérique mobile ou un petit écran. Un indicateur de défilement indique qu’il existe du contenu au-delà de la partie visible de l’écran. Vous pouvez faire défiler l’écran vers le bas pour le voir. Lorsque vous atteignez la fin du contenu, la flèche disparaît.
 
 <table>
  <tbody>
@@ -1041,19 +1043,19 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
   </tr>
   <tr>
    <td><p><code>mobileToolbarBottom</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis le bas</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis le bas</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarTop</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis le haut</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis le haut</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarLeft</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis la gauche</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis la gauche</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileToolbarRight</code></p> </td>
-   <td><p>Position fixe de la barre d’outils, sur un périphérique mobile, depuis la droite</p> </td>
+   <td><p>Position fixe de la barre d’outils, sur un appareil mobile, depuis la droite</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileButtonIconTopMargin</code></p> </td>
@@ -1061,15 +1063,15 @@ Ces variables dans le tableau suivant influent sur la disposition de la barre d�
   </tr>
   <tr>
    <td><p><code>mobileButtonIconWidth</code></p> </td>
-   <td><p>Largeur de l’icône des boutons de la barre d’outils sur un périphérique mobile</p> </td>
+   <td><p>Largeur de l’icône des boutons de la barre d’outils sur un appareil mobile</p> </td>
   </tr>
   <tr>
    <td><p><code>mobileButtonIconHeight</code></p> </td>
-   <td><p>Hauteur de l’icône des boutons de la barre d’outils sur un périphérique mobile</p> </td>
+   <td><p>Hauteur de l’icône des boutons de la barre d’outils sur un appareil mobile</p> </td>
   </tr>
   <tr>
    <td><p><code>mobilefixedtoolbarbgcolor</code></p> </td>
-   <td><p>Couleur d’arrière-plan de la barre d’outils sur un périphérique mobile</p> </td>
+   <td><p>Couleur d’arrière-plan de la barre d’outils sur un appareil mobile</p> </td>
   </tr>
  </tbody>
 </table>
