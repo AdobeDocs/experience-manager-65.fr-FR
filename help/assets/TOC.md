@@ -19,7 +19,7 @@ ht-degree: 100%
 # Guide d’Assets {#assets}
 
 + [Guide de l’utilisateur d’[!DNL Assets]](home.md)
-+ Notes de mise à jour d’[[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
++ [Notes de mise à jour d’[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=fr)
 + [À propos de la gestion des DAM](assets.md)
 + [Bonnes pratiques pour les ressources](best-practices-for-assets.md)
 + [Accessibilité dans  [!DNL Assets]](accessibility.md)
