@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: f620966974b0f535d30a17a5fa3175a593e52fec
+source-git-commit: 654dcb7c9bbb73420df7494b21fddb8cb4fdd39a
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 52%
+source-wordcount: '1936'
+ht-degree: 53%
 
 ---
 
@@ -16,7 +16,10 @@ ht-degree: 52%
 
 <span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/using/create-an-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
-
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html) |
+| AEM 6.5 | Cet article |
 
 ## Création d’un formulaire adaptatif {#strong-create-an-adaptive-form-strong}
 
@@ -48,7 +51,7 @@ Pour créer un formulaire adaptatif, procédez comme suit.
    * [Schéma XML ou JSON](#create-an-adaptive-form-based-on-xml-or-json-schema)
    * Aucun ou sans modèle de formulaire
 
-   Vous pouvez les configurer à partir du **[!UICONTROL Modèle de formulaire]** sur l’onglet **[!UICONTROL Ajouter des propriétés]** page. Par défaut, le modèle de formulaire sélectionné est **[!UICONTROL Aucun]**.
+   Vous pouvez les configurer à partir du **[!UICONTROL Modèle de formulaire]** sur l’ **[!UICONTROL Ajouter des propriétés]** page. Par défaut, le modèle de formulaire sélectionné est **[!UICONTROL Aucun]**.
 
 1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et une boîte de dialogue pour ouvrir le formulaire à modifier s’affiche.
 
@@ -58,7 +61,7 @@ Pour créer un formulaire adaptatif, procédez comme suit.
 
 1. Appuyez sur **[!UICONTROL Ouvrir]** pour ouvrir le formulaire nouvellement créé dans un nouvel onglet. Le formulaire s’ouvre pour modification et affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
 
-   Selon le type de formulaire adaptatif, les éléments de formulaire présents dans le modèle de formulaire XFA, le schéma XML ou le schéma JSON associé sont affichés dans la variable **[!UICONTROL Objets de modèle de données]** de l’onglet **[!UICONTROL Explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
+   Selon le type de formulaire adaptatif, les éléments de formulaire présents dans le modèle de formulaire XFA, le schéma XML ou le schéma JSON associé sont affichés dans la variable **[!UICONTROL Objets de modèle de données]** de la **[!UICONTROL Explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
 
    Pour plus d’informations sur l’interface de création de formulaires adaptatifs et les composants disponibles, voir [Présentation de la création de formulaires adaptatifs](introduction-forms-authoring.md).
 
@@ -149,7 +152,7 @@ En outre, vous pouvez utiliser l’éditeur de modèles pour créer vos propres 
 
 >[!NOTE]
 >
->Lorsque vous ouvrez un formulaire adaptatif créé à l’aide du modèle avancé pour le modifier, un message d’erreur s’affiche. Le modèle avancé comporte un composant Étape de signature et Adobe Sign est activé par défaut pour celui-ci. Créez et sélectionnez un [Configuration cloud Adobe Sign](adobe-sign-integration-adaptive-forms.md) et [configuration d’un signataire](working-with-adobe-sign.md#addsignerstoanadaptiveform) pour résoudre l’erreur.
+>Lorsque vous ouvrez un formulaire adaptatif créé à l’aide du modèle avancé pour le modifier, un message d’erreur s’affiche. Le modèle avancé comporte un composant Étape de signature et Adobe Sign est activé par défaut pour celui-ci. Créez et sélectionnez un [Configuration cloud Adobe Sign](adobe-sign-integration-adaptive-forms.md) et [configurer un signataire](working-with-adobe-sign.md#addsignerstoanadaptiveform) pour résoudre l’erreur.
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 
@@ -174,7 +177,7 @@ Par défaut, le contenu d’un formulaire adaptatif est enregistré sur une acti
 
 ### Activation de l’enregistrement automatique d’un formulaire adaptatif {#enable-auto-save-for-an-adaptive-form}
 
-Par défaut, l’option d’enregistrement automatique n’est pas activée. Vous pouvez activer l’option d’enregistrement automatique à partir de l’onglet Enregistrement automatique d’un formulaire adaptatif. L’onglet Enregistrement automatique fournit également plusieurs autres options de configuration. Effectuez les étapes suivantes afin d’activer et de configurer l’option d’enregistrement automatique pour un formulaire adaptatif :
+Par défaut, l’option d’enregistrement automatique n’est pas activée. Vous pouvez activer l’option d’enregistrement automatique dans l’onglet Enregistrement automatique d’un formulaire adaptatif. L’onglet Enregistrement automatique fournit également plusieurs autres options de configuration. Effectuez les étapes suivantes afin d’activer et de configurer l’option d’enregistrement automatique pour un formulaire adaptatif :
 
 1. Pour accéder à la section d’enregistrement automatique dans les propriétés, sélectionnez un composant, puis cliquez sur ![field-level](assets/field-level.png) > **[!UICONTROL Conteneur de formulaires adaptatifs]**, puis cliquez sur ![cmppr](assets/cmppr.png).
 1. Dans le **[!UICONTROL Enregistrement automatique]** , **[!UICONTROL Activer]** l’option d’enregistrement automatique.
