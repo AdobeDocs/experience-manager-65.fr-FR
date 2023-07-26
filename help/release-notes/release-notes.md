@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour de la version 6.5 d’ [!DNL Adobe Experience Manager]
 description: Consultez les informations sur la mise à jour, y compris les nouveautés, la procédure d’installation et une liste complète des modifications pour  [!DNL Adobe Experience Manager]  6.5.
-mini-toc-levels: 3
+mini-toc-levels: 4
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: ea0f4096ac76ed11ee84a3769725f527c13fb461
 workflow-type: tm+mt
-source-wordcount: '3777'
+source-wordcount: '3786'
 ht-degree: 31%
 
 ---
@@ -50,21 +50,63 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * **Diffusion DASH en continu avec Dynamic Media** - Nouvelle prise en charge du protocole (DASH - Dynamic Adaptive Streaming over HTTP) pour la diffusion en continu adaptative dans les diffusions vidéo Dynamic Media (avec CMAF activé). Disponible maintenant pour toutes les régions, [activé au moyen d’un ticket d’assistance](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
 * **Intégration de Experience Manager Sites et de fragments de contenu à Assets Next-Generation Dynamic Media** - Les utilisateurs d’Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media peuvent désormais utiliser ces ressources hébergées dans le cloud pour la création et la diffusion avec des instances on-premise ou Managed Services de Experience Manager Sites 6.5.
 
-**AEM Forms**
+## Améliorations du Service Pack 17 {#enhancements-sp17}
 
-* **[Forms adaptatif dans AEM éditeur de page](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: Vous pouvez désormais utiliser AEM éditeur de page pour créer et ajouter rapidement plusieurs formulaires aux pages de vos sites. Cette fonctionnalité permet aux auteurs de contenu de créer des expériences de capture de données transparentes dans les pages Sites à l’aide de la puissance des composants de formulaires adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. Vous pouvez :
+### Forms{#aem-forms-6517}
+
+* **[Forms adaptatif dans AEM éditeur de page](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: vous pouvez désormais utiliser AEM éditeur de page pour créer et ajouter rapidement plusieurs formulaires aux pages de vos sites. Cette fonctionnalité permet aux auteurs de contenu de créer des expériences de capture de données transparentes dans les pages Sites à l’aide de la puissance des composants de formulaires adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. Vous pouvez :
    * Créez un formulaire adaptatif en faisant glisser les composants de formulaire vers le composant de conteneur de Forms adaptatif dans l’éditeur AEM Sites ou les fragments d’expérience.
    * Utilisez l’assistant de Forms adaptatif dans l’éditeur AEM Sites pour créer des formulaires indépendants de n’importe quelle page Sites, ce qui vous permet de réutiliser ces formulaires sur plusieurs pages.
    * Ajoutez plusieurs formulaires à une page Sites, en rationalisant l’expérience utilisateur et en offrant une plus grande flexibilité.
-* **[Prise en charge de reCAPTCHA Enterprise dans Experience Manager Forms](/help/forms/using/captcha-adaptive-forms.md)**: Ajout de la prise en charge de reCAPTCHA Enterprise dans Experience Manager Forms, offrant une meilleure protection contre les activités frauduleuses et les spams, en plus de la prise en charge existante de Google reCAPTCHA v2.
+* **[Prise en charge de reCAPTCHA Enterprise dans Experience Manager Forms](/help/forms/using/captcha-adaptive-forms.md)**: ajout de la prise en charge de reCAPTCHA Enterprise dans Experience Manager Forms, offrant une meilleure protection contre les activités frauduleuses et les spams, en plus de la prise en charge existante de Google reCAPTCHA v2.
 * **[Prise en charge de Adobe Acrobat Sign pour les administrations avec Experience Manager Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**: AEM Forms s’intègre désormais à Adobe Acrobat Sign for Government (compatible avec FedRAMP). Cette intégration offre un niveau avancé de conformité et de sécurité pour les signatures électroniques avec les envois de formulaires adaptatifs pour les comptes associés au gouvernement (ministères et organismes gouvernementaux). L’intégration à Adobe Acrobat Sign for Government permet aux partenaires d’Adobe et aux clients gouvernementaux d’utiliser des signatures électroniques dans Adaptive Forms pour certains secteurs d’activité les plus critiques et les plus sensibles. Cette couche supplémentaire de sécurité garantit que toutes les signatures électroniques sont entièrement conformes à la conformité FedRAMP Modérate, offrant ainsi une certaine tranquillité d’esprit aux clients gouvernementaux de l’Adobe.
-* **Activation de l’intégration de Salesforce avec Experience Manager Forms pour l’échange de données**: Configurez l’intégration entre Experience Manager Forms et l’application Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0. Cette fonctionnalité permet une authentification et une autorisation sécurisées et directes de l’application et permet une communication transparente sans intervention de l’utilisateur.
-* **Optimisation et fonctionnalité améliorée du moteur de workflow**: Augmentez les performances des moteurs de workflow en réduisant le nombre d’instances de workflow. En complément de `COMPLETED` et `RUNNING` valeurs d’état, le workflow prend également en charge trois nouvelles valeurs d’état : `ABORTED`, `SUSPENDED`, et `FAILED`.
+* **Activation de l’intégration de Salesforce avec Experience Manager Forms pour l’échange de données**: configurez l’intégration entre Experience Manager Forms et l’application Salesforce à l’aide du flux d’informations d’identification du client OAuth 2.0. Cette fonctionnalité permet une authentification et une autorisation sécurisées et directes de l’application et permet une communication transparente sans intervention de l’utilisateur.
+* **Optimisation et fonctionnalité améliorée du moteur de workflow**: augmentez les performances des moteurs de workflow en réduisant le nombre d’instances de workflow. En complément de `COMPLETED` et `RUNNING` valeurs d’état, le workflow prend également en charge trois nouvelles valeurs d’état : `ABORTED`, `SUSPENDED`, et `FAILED`.
 
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## [!DNL Assets]{#assets-6517}
+## Correction de problèmes dans le Service Pack 17 {#fixed-issues}
+
+### [!DNL Sites]{#sites-6517}
+
+* Baisse des performances dans LinkCheckerTransformer. (SITES-11661)
+* Les copies de langue d’une page n’étaient pas mises à jour comme prévu. (SITES-11191)
+* Ouverture d’un appel de pages hors campagne `targeteditor.html` inutilement. Supprimez le `targeteditor` appelez lorsqu’il n’est pas nécessaire. (SITES-12469)
+* Les Live Copies ne peuvent pas être créées pour les pages avec des annotations. (SITES-12154)
+* Le déploiement des pages ne fonctionne pas sur Experience Manager 6.5.16. (SITES-12008)
+* Mémoire insuffisante ; activité de nettoyage de la mémoire élevée due à `NotificationManagerImpl`. `NotificationManager` mise à niveau du lot vers Experience Manager 6.5. (SITES-11440)
+* Correction des tests WCM IT qui bloquaient le service pack 17. (SITES-13089)
+* La récupération des références Sites échoue sur le servlet. (SITES-10901)
+
+#### Interface utilisateur d’administration{#sites-adminui-6517}
+
+* La fenêtre d’aperçu du sélecteur d’images miniatures ne peut pas être fermée. (SITES-10459)
+
+#### [!DNL Content Fragments]{#sites-contentfragments-6517}
+
+* Configuration pour la connexion à l’objet de service Polaris (URL, informations d’identification, rappel, etc.). (SITES-12149)
+* Utilisation de `SemanticDataType.REFERENCE` doit prendre en charge &quot;Remote-Asset-IDs&quot;. (SITES-12127)
+* Intégrez le sélecteur de ressources Polaris à l’éditeur de fragment de contenu. (SITES-12125)
+* Un en-tête http obligatoire était nécessaire pour accéder au point d’entrée du service de métadonnées. (SITES-13068)
+* La mise en oeuvre de GraphQL 6.5 n’était pas conforme avec Cloud Service (Principal) ; les problèmes identifiés ont été corrigés. (SITES-13096)
+* La pagination/le tri GraphQL et le filtrage hybride doivent être disponibles sur Experience Manager 6.5/AMS. (SITES-9154)
+
+#### Composants principaux{#sites-core-components-6517}
+
+* La propriété `cq-msm-lockable` a une valeur de redirection incorrecte dans le composant de page Foundation. (SITES-10904)
+* Le sélecteur de ressources distant redirige toujours vers l’environnement intermédiaire IMS. (SITES-13433)
+
+#### [!DNL Experience Fragments]{#sites-experiencefragments-6517}
+
+* Lorsque vous sélectionnez une configuration Externalizer dans un fragment d’expérience lors de l’exportation vers Adobe Target, une URL externalisée incorrecte est envoyée. (SITES-12402)
+* Supprimez les termes non inclusifs et appliquez les directives des termes inclusifs. (SITES-11244)
+
+#### Éditeur de page{#sites-pageeditor-6517}
+
+* Aucune miniature n’est affichée pour un ensemble de carrousel dans le rail latéral de l’outil de recherche de contenu du Experience Manager. (SITES-8593)
+
+### [!DNL Assets]{#assets-6517}
 
 * Lorsque vous publiez plus de 40 PDF simultanément, [!DNL Experience Manager] arrête de répondre et devient indisponible pendant un certain temps. (ASSETS-21789)
 * Si vous êtes connecté en tant qu’utilisateur test, vous ne pouvez pas voir les ressources liées à une ressource spécifique lorsque vous cliquez sur les propriétés d’une ressource. (ASSETS-21648)
@@ -77,13 +119,13 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * Les éléments utilisent des attributs ARIA sans rôle. (ASSETS-17325, ASSETS-17323)
 * Le lien n’est pas descriptif lorsque vous développez `Notifications`. (ASSETS-17283)
 * Lorsque vous naviguez et développez l’événement [!DNL Smart Crop] , le contenu apparaît comme une liste, mais il n’est pas marqué comme une liste non ordonnée. Par conséquent, le lecteur d’écran ne reconnaît pas la liste non ordonnée et la lit comme du texte brut. (ASSETS-17247)
-* Le `Sort By` n’est pas associé à la liste déroulante correspondante. Par conséquent, le lecteur d’écran ne reconnaît pas les options de liste déroulante. (ASSETS-17239)
+* La variable `Sort By` n’est pas associé à la liste déroulante correspondante. Par conséquent, le lecteur d’écran ne reconnaît pas les options de liste déroulante. (ASSETS-17239)
 * Impossible d’avancer ou de reculer à l’aide de l’onglet du clavier ou des touches fléchées lorsque vous essayez d’ajouter un utilisateur à l’aide de la fonction `Add user` liste déroulante. (ASSETS-17233)
 * Le lecteur d’écran ne transmet pas correctement les informations de l’étape Workflows (ASSETS-17285).
 * Lorsque vous accédez à `Saved Searches` liste modifiable, les noms et les rôles ne sont associés à aucun libellé. (ASSETS-17329)
 * Lorsque vous naviguez `Collection` et passez la souris sur le texte. *Membres*, le texte n’apparaît pas comme marqué. Par conséquent, le lecteur d’écran ne reconnaît pas le texte du titre et le lit comme du texte brut. (ASSETS-17245)
 * Impossible d’accéder à `View Settings` à l’aide de la touche de défilement du clavier vers le bas ou vers le haut. (ASSETS-17257)
-* Impossible de déclencher un workflow pour plusieurs ressources sélectionnées qui se trouvent à l’aide de filtres de recherche. (ASSETS-7689)
+* Impossible de déclencher un workflow pour plusieurs ressources sélectionnées à l’aide de filtres de recherche. (ASSETS-7689)
 * Lorsque vous sélectionnez une ressource (ou plusieurs ressources) dans les résultats de recherche, l’option Mettre en relation ou Ne plus mettre en relation n’est pas visible. Mais cette option est disponible, sinon. (ASSETS-7679)
 * Le panneau Filtres de recherche ne s’ouvre qu’une seule fois après la connexion et ne s’ouvre pas si vous quittez la page de recherche et réexécutez la recherche. (ASSETS-7671)
 * La liste déroulante des emails n’affiche pas le rapport de contraste approprié lors du partage d’un lien. (ASSETS-17349)
@@ -92,7 +134,7 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
 * When you navigate to `Smart Crop` option, the screen reader does not announce the expand or collapse state of the button. (ASSETS-17335)-->
 
-## [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
+#### [!DNL Assets] - [!DNL Dynamic Media]{#dm-6517}
 
 * La connexion à Dynamic Media est interrompue lorsqu’une configuration de cloud Dynamic Media existe déjà. (ASSETS-23057)
 * Les performances accrues lors de la navigation dans des dossiers contenant de nombreuses vidéos Dynamic Media et résolus ne parviennent pas à charger le problème en mode Carte de dossiers. (ASSETS-23016)
@@ -101,14 +143,10 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * Le mode hybride de Dynamic Media est désormais compatible avec la version 8.0.1 de l’agent New Relic (ASSETS-22578).
 * Les listes de contrôle d’accès de Experience Manager (Access Control List) sont désormais respectées lors de la prévisualisation de fichiers Dynamic Media sur Experience Manager. (ASSETS-21628)
 * Les lecteurs d’écran ne naviguent pas vers un élément masqué lorsque l’utilisateur tente de naviguer à l’aide de la touche Flèche vers le bas ou de la touche de tabulation. (ASSETS-5617)
-* Interface utilisateur du profil d’image limitée pour les recadrages intelligents portant le même nom, la même dimension ou les deux. (ASSETS-16997)
+* L’interface utilisateur du profil d’image est limitée pour les recadrages intelligents portant le même nom, la même dimension ou les deux. (ASSETS-16997)
 * La largeur et la hauteur par défaut sont désormais définies sur 50 pixels pour les recadrages intelligents sur l’interface utilisateur du profil d’image. (ASSETS-16997)
 
-## [!DNL Commerce]{#commerce-6517}
-
-* Les balises déplacées sont nettoyées mais sont toujours référencées par les produits sous `/var`. (CQ-4351337)
-
-## [!DNL Forms]{#forms-6517}
+### [!DNL Forms]{#forms-6517}
 
 * Après la mise à jour vers AEM Service Pack 6.5.15.0, les formulaires HTML5 ne fonctionnent pas ou ne se chargent pas correctement dans le navigateur Edge avec le mode de compatibilité IE. (FORMS-8526, FORMS-8523)
 * Lorsqu’un utilisateur applique AEM Service Pack 6.5.16.0, l’éditeur de règles ne s’ouvre pas. (FORMS-8290)
@@ -141,19 +179,24 @@ Certaines des fonctionnalités et améliorations clés de cette version sont les
 * Après la mise à niveau vers le Service Pack Experience Manager 6.5.14.0, les processus de Workbench pour déplacer un noeud CRX d’un emplacement à un autre ne fonctionnent pas. L’erreur se produit comme suit : `ALC-CRX-30000-000: com.adobe.ep.crx.client.exceptions.CRCException: ALC-CRX-030-000-[Internal Server Error]`. (FORMS-7713)
 * Lorsqu’un utilisateur effectue la mise à jour vers le Service Pack Experience Manager 6.5.16.0, la variable `Usage Rights` ne s’applique pas. (FORMS-7892)
 * Lorsqu’un utilisateur tente de générer un document de PDF, la validation PDF/A-1b échoue. (FORMS-7615)
-* Lorsqu’un utilisateur clique sur la variable `Configure` pour l’option `Form Container` , le navigateur ne répond plus. (FORMS-7605)
+* Lorsqu’un utilisateur clique sur la variable `Configure` pour l’ `Form Container` , le navigateur ne répond plus. (FORMS-7605)
 * Lorsqu’un utilisateur effectue la mise à jour vers Experience Manager Forms 6.5.16.0 Service Pack et tente de modifier la variable `LicenseType` to `Production`, les modifications ne sont pas reflétées. (FORMS-7594)
 * Lorsqu’un utilisateur tente d’appeler un processus LCA avec un PDF qui comprend la variable `Chinese Full Width Characters`, un problème se produit avec la variable `ValidateForm` processus. (FORMS-7464)
 * Dans Experience Manager Forms Designer, XMLFM génère une sortie ZPL avec des formats de papier différents, tels que Lettre, A4 et A5, pour les modèles basés sur XDP. (FORMS-7898)
 
+### [!DNL Commerce]{#commerce-6517}
 
-## Intégrations{#integrations-6517}
+* Les balises déplacées sont nettoyées mais sont toujours référencées par les produits sous `/var`. (CQ-4351337)
+
+### Foundation{#foundation-6517}
+
+#### Intégrations{#integrations-6517}
 
 * Lors de la conversion d’une configuration IMS Adobe Target en informations d’identification d’utilisateur dans les configurations cloud héritées, la variable `connectedWhen` ne change pas. Ce problème fait passer tous les appels comme si la configuration était toujours basée sur IMS. (CQ-4352810)
-* Ajouter `modifyProperties` autorisation d’accès `fd-cloudservice` utilisateur système pour la configuration Adobe Sign. (FORMS-6164)
-* Avec Experience Manager intégré à Adobe Target, lorsque vous créez une activité de test AB, elle ne synchronise pas les audiences qui lui sont associées, avec Target. (NPR-40085)
+* Ajouter `modifyProperties` autorisation de `fd-cloudservice` utilisateur système pour la configuration Adobe Sign. (FORMS-6164)
+* Une fois Experience Manager intégré à Adobe Target, lorsque vous créez une activité de test AB, elle ne synchronise pas les audiences qui lui sont associées, vers Target. (NPR-40085)
 
-## Oak{#oak-6517}
+#### Oak{#oak-6517}
 
 Depuis le Service Pack 13 et les versions ultérieures, le journal d’erreur suivant a commencé à s’afficher, ce qui affecte le cache de persistance :
 
@@ -183,67 +226,29 @@ Pour résoudre cette exception, procédez comme suit :
 1. Installez le Service Pack ou redémarrez Experience Manager as a Cloud Service.
 Nouveaux dossiers de `cache` et `diff-cache` sont automatiquement créés et vous ne voyez plus d’exception liée à `mvstore` dans le `error.log`.
 
-## Plateforme{#platform-6517}
+#### Plateforme{#platform-6517}
 
 * Dans l’interface utilisateur de Experience Manager Tag Management (/aem/tags/), les espaces de noms et les balises s’affichent dans l’ordre dans lequel ils ont été créés. Cependant, lorsqu’il existe de nombreux espaces de noms et balises, la possibilité de les afficher et de les gérer est difficile. Ce problème est dû au fait qu’ils ne peuvent pas être triés d’une autre manière. (NPR-39620)
 * La mise à jour de la version de fermeture de Google est nécessaire, car Minification js ne fonctionne pas pour certaines bibliothèques clientes. (NPR-40043)
 
-## [!DNL Sites]{#sites-6517}
-
-* Baisse des performances dans LinkCheckerTransformer. (SITES-11661)
-* Les copies de langue d’une page n’étaient pas mises à jour comme prévu. (SITES-11191)
-* Ouverture d’un appel de pages hors campagne `targeteditor.html` inutilement. Supprimez le `targeteditor` appelez lorsque cela n’est pas nécessaire. (SITES-12469)
-* Les Live Copies ne peuvent pas être créées pour les pages avec des annotations. (SITES-12154)
-* Le déploiement des pages ne fonctionne pas sur Experience Manager 6.5.16. (SITES-12008)
-* Mémoire insuffisante; activité de nettoyage de la mémoire élevée en raison de `NotificationManagerImpl`. `NotificationManager` mise à niveau du lot vers Experience Manager 6.5. (SITES-11440)
-* Correction des tests WCM IT qui bloquaient le service pack 17. (SITES-13089)
-* La récupération des références Sites échoue sur le servlet. (SITES-10901)
-
-### [!DNL Sites] - Interface utilisateur d’administration{#sites-adminui-6517}
-
-* La fenêtre d’aperçu du sélecteur d’images miniatures ne peut pas être fermée. (SITES-10459)
-
-### [!DNL Sites] - [!DNL Content Fragments]{#sites-contentfragments-6517}
-
-* Configuration pour la connexion à l’objet de service Polaris (URL, informations d’identification, rappel, etc.). (SITES-12149)
-* Utilisation de `SemanticDataType.REFERENCE` doit prendre en charge &quot;Remote-Asset-IDs&quot;. (SITES-12127)
-* Intégrez le sélecteur de ressources Polaris à l’éditeur de fragment de contenu. (SITES-12125)
-* Un en-tête http obligatoire était nécessaire pour accéder au point d’entrée du service de métadonnées. (SITES-13068)
-* La mise en oeuvre GraphQL de la version 6.5 n’était pas conforme avec Cloud Service (Principal); les problèmes identifiés ont été corrigés. (SITES-13096)
-* La pagination/le tri GraphQL et le filtrage hybride doivent être disponibles sur Experience Manager 6.5/AMS. (SITES-9154)
-
-### [!DNL Sites] - Composants principaux{#sites-core-components-6517}
-
-* La propriété `cq-msm-lockable` a une valeur de redirection incorrecte dans le composant de page Foundation. (SITES-10904)
-* Le sélecteur de ressources distant redirige toujours vers l’environnement intermédiaire IMS. (SITES-13433)
-
-### [!DNL Sites] - [!DNL Experience Fragments]{#sites-experiencefragments-6517}
-
-* Lorsque vous sélectionnez une configuration Externalizer dans un fragment d’expérience lors de l’exportation vers Adobe Target, une URL externalisée incorrecte est envoyée. (SITES-12402)
-* Supprimer les termes non inclusifs ; appliquez les directives relatives aux termes inclusifs. (SITES-11244)
-
-### [!DNL Sites] - Éditeur de page{#sites-pageeditor-6517}
-
-* Aucune miniature n’est affichée pour un ensemble de carrousel dans le rail latéral de l’outil de recherche de contenu du Experience Manager. (SITES-8593)
-
-## Sling{#sling-6517}
+#### Sling{#sling-6517}
 
 * Sling `ResourceMerger` consomme une grande quantité de processeur lorsqu’il est fourni avec un chemin fictif, ce qui entraîne un déni de service. (NPR-40338)
 
-## Projets de traduction{#translation-6517}
+#### Projets de traduction{#translation-6517}
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST * The `translationrules.xml` is sorted poorly when adding a rule to a property by way of the translation configuration user interface. (NPR-40431) -->
 * La copie de langue n’est pas créée lorsque l’utilisateur ne configure pas de champs non obligatoires. (NPR-40036)
 
-## Interface utilisateur{#ui-6517}
+#### Interface utilisateur{#ui-6517}
 
-* Le bouton Annuler dans les propriétés de page est inactif ; vous devriez accéder à l’interface utilisateur Administration de sites . (NPR-40501)
+* Le bouton Annuler des propriétés de la page est inactif ; il doit vous amener à l’interface utilisateur d’administration de site. (NPR-40501)
 
 <!-- ## WCM{#wcm-6517}
 
 * TEXT -->
 
-## Workflow{#workflow-6517}
+#### Workflow{#workflow-6517}
 
 * Modifications de la console Processus. (NPR-40502)
 * `SegmentNotfound errors` dans les journaux d’une instance d’auteur de production, provoquée par le résolveur de ressources non fermé dans la classe . `com.day.cq.workflow.impl.email.EMailNotificationServic`. (NPR-40187)
@@ -320,7 +325,7 @@ L’échec de l’installation de ce package peut entraîner des requêtes Graph
 
 >[!NOTE]
 >
->N’installez ce package qu’une seule fois par instance ; il n’est pas nécessaire de le réinstaller avec chaque Service Pack.
+>N’installez ce package qu’une seule fois par instance ; il n’a pas besoin d’être réinstallé avec chaque Service Pack.
 
 ### UberJar{#uber-jar}
 
@@ -349,7 +354,7 @@ Vérifiez si vous utilisez une de ces fonctionnalités dans un déploiement. Env
 
 | Domaine | Fonctionnalité | Remplacement |
 |---|---|---|
-| Intégrations | L’écran **[!UICONTROL Accord préalable des Experience Manager Cloud Services]** est obsolète, car la variable [!DNL Experience Manager] et [!DNL Adobe Target] l’intégration est mise à jour dans [!DNL Experience Manager] 6.5. L’intégration prend en charge l’API Adobe Target Standard. L’API utilise l’authentification au moyen d’Adobe IMS et d’[!DNL Adobe I/O Runtime]. Elle prend en charge le rôle croissant d’Adobe Launch pour utiliser les pages [!DNL Experience Manager] à des fins d’analyse et de personnalisation, l’assistant d’accord préalable n’a donc aucune utilité sur le plan fonctionnel. | Configurez des connexions système, l’authentification Adobe IMS et les intégrations d’[!DNL Adobe I/O Runtime] à l’aide des services cloud [!DNL Experience Manager] correspondants. |
+| Intégrations | L’écran **[!UICONTROL Accord préalable des Experience Manager Cloud Services]** est obsolète, car la variable [!DNL Experience Manager] et [!DNL Adobe Target] intégration mise à jour dans [!DNL Experience Manager] 6.5. L’intégration prend en charge l’API Adobe Target Standard. L’API utilise l’authentification au moyen d’Adobe IMS et d’[!DNL Adobe I/O Runtime]. Elle prend en charge le rôle croissant d’Adobe Launch pour utiliser les pages [!DNL Experience Manager] à des fins d’analyse et de personnalisation, l’assistant d’accord préalable n’a donc aucune utilité sur le plan fonctionnel. | Configurez des connexions système, l’authentification Adobe IMS et les intégrations d’[!DNL Adobe I/O Runtime] à l’aide des services cloud [!DNL Experience Manager] correspondants. |
 | Connecteurs | Adobe JCR Connector for Microsoft® SharePoint 2010 et Microsoft® SharePoint 2013 est obsolète dans [!DNL Experience Manager] 6.5. | S/O |
 
 ## Problèmes connus{#known-issues}
@@ -401,7 +406,7 @@ Pour garantir le bon fonctionnement de cette opération, vous devez ajouter les 
 
 * Sur la plateforme JBoss® 7.1.4, lorsque l’utilisateur installe Experience Manager 6.5.16.0 ou un Service Pack ultérieur, `adobe-livecycle-jboss.ear` échec du déploiement.
 * Les versions de JDK supérieures à 1.8.0_281 ne sont pas prises en charge pour le serveur WebLogic JEE.
-* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par la variable ```org.apache.servicemix.bundles.rhino``` Le lot a un nouveau comportement d’hébergement. Scripts qui utilisent le mode strict (```use strict;```) doivent déclarer correctement leurs variables, sinon elles ne seront pas exécutées, mais génèrent une erreur d’exécution.
+* À partir de la version 6.5.15 d’AEM, le moteur JavaScript Rhino fourni par la variable ```org.apache.servicemix.bundles.rhino``` Le lot a un nouveau comportement d’hébergement. Scripts qui utilisent le mode strict (```use strict;```) doivent déclarer correctement leurs variables, sinon elles ne sont pas exécutées, mais génèrent une erreur d’exécution.
 
 ## Bundles OSGi et modules de contenu inclus{#osgi-bundles-and-content-packages-included}
 
