@@ -4,7 +4,7 @@ description: Découvrez comment créer ou ajouter facilement un formulaire adapt
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
+source-git-commit: 600dcc52829ff2c5e54176bda7631845ef24f986
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 2%
@@ -45,17 +45,17 @@ L’utilisation du conteneur de formulaires adaptatifs dans AEM éditeur de page
 
 Vous pouvez tirer pleinement parti de cette fonctionnalité en utilisant les options suivantes :
 
-* **Ajoutez un formulaire adaptatif personnalisé à une page AEM Sites :** Créez entièrement un nouveau formulaire, en le adaptant spécifiquement à vos besoins et préférences de conception.
+* **[Ajoutez un formulaire adaptatif personnalisé à une page AEM Sites :](#create-an-adaptive-form-in-sites-editor)** Créez entièrement un nouveau formulaire, en le adaptant spécifiquement à vos besoins et préférences de conception.
 
-* **Ajouter un formulaire adaptatif personnalisé à un fragment d’expérience :** Étendez la portée de vos formulaires en les ajoutant aux fragments d’expérience AEM, ce qui permet une réutilisation transparente sur plusieurs pages ou sites.
+* **[Ajouter un formulaire adaptatif personnalisé à un fragment d’expérience :](#create-an-adaptive-form-in-experience-fragment)** Étendez la portée de vos formulaires en les ajoutant aux fragments d’expérience AEM, ce qui permet une réutilisation transparente sur plusieurs pages ou sites.
 
-* **Ajouter plusieurs formulaires à une page AEM Sites ou à un fragment d’expérience :**  Ajoutez plusieurs formulaires à une page afin de proposer aux utilisateurs plusieurs choix en fonction de leurs préférences et de leurs besoins. Il peut s’agir d’une combinaison de formulaires entièrement nouveaux et de formulaires existants.
-
-* **Convertir un formulaire adaptatif en fragment d’expérience :** Convertissez un formulaire adaptatif ajouté à une page AEM Sites en un fragment d’expérience pour réutiliser le formulaire sur plusieurs pages AEM Sites.
+* **[Convertir un formulaire adaptatif en fragment d’expérience :](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Convertissez un formulaire adaptatif ajouté à une page AEM Sites en un fragment d’expérience pour réutiliser le formulaire sur plusieurs pages AEM Sites.
 
 * **Créez et ajoutez des formulaires basés sur des modèles approuvés dans une page AEM Sites :** Tirez parti des modèles prévalidés pour créer rapidement des formulaires conformes aux directives de marque et aux normes de conception de votre entreprise. Cette option est disponible uniquement pour les Forms adaptatives créées avec l’éditeur de Forms adaptatif ou le composant Forms adaptatif - Incorporer .
 
 * **Ajouter des formulaires existants à une page AEM Sites :** Intégrez facilement des formulaires que vous avez déjà créés dans vos sites web, ce qui permet aux visiteurs d’interagir directement avec eux. Cette option est disponible uniquement pour les Forms adaptatives créées avec l’éditeur de Forms adaptatif ou le composant Forms adaptatif - Incorporer .
+
+* **Ajouter plusieurs formulaires à une page AEM Sites ou à un fragment d’expérience :**  Ajoutez plusieurs formulaires à une page afin de proposer aux utilisateurs plusieurs choix en fonction de leurs préférences et de leurs besoins. Il peut s’agir d’une combinaison de formulaires entièrement nouveaux et de formulaires existants.
 
 ## Considérations {#consideration}
 
