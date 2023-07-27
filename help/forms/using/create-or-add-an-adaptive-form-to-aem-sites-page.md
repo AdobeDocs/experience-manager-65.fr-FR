@@ -1,9 +1,10 @@
 ---
 title: Création ou ajout d’un formulaire adaptatif à une page AEM Sites
 description: Découvrez comment créer ou ajouter facilement un formulaire adaptatif à votre page AEM Sites sans effort. Découvrez les techniques et les bonnes pratiques étape par étape pour intégrer des formulaires dynamiques et personnalisables à votre site web, en optimisant vos expériences numériques pour un impact maximum.
+Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 2%
@@ -31,7 +32,7 @@ AEM Forms fournit des composants Adaptive Form Container (Conteneur de formulair
 
 L’utilisation du conteneur de formulaires adaptatifs dans AEM éditeur de page vous permet de créer des expériences de capture de données transparentes dans une page Sites à l’aide de la puissance des composants de Forms adaptatif, notamment le comportement dynamique, les validations, l’intégration de données, ainsi que de générer un document d’enregistrement et l’automatisation des processus d’entreprise. Il vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples, ce qui améliore l’expérience globale de création et de gestion de formulaires. Examinons quelques-unes de ces fonctionnalités :
 
-* **Contrôle de version :** Offre de pages AEM Sites [fonctionnalités de contrôle de version fiables](/help/sites-authoring/working-with-page-versions.md), ce qui vous permet de suivre et de gérer différentes versions de vos formulaires. Vous pouvez ainsi apporter des modifications et des améliorations aux formulaires tout en conservant la possibilité de restaurer des versions précédentes si nécessaire. Le contrôle de version garantit une approche contrôlée et organisée du développement et de l’évolution des formulaires.
+* **Contrôle de version :** Offre de pages AEM Sites [des fonctionnalités de contrôle de version fiables ;](/help/sites-authoring/working-with-page-versions.md), ce qui vous permet de suivre et de gérer différentes versions de vos formulaires. Vous pouvez ainsi apporter des modifications et des améliorations aux formulaires tout en conservant la possibilité de restaurer des versions précédentes si nécessaire. Le contrôle de version garantit une approche contrôlée et organisée du développement et de l’évolution des formulaires.
 * **Ciblage (intégration à Adobe Target) :** Avec les fonctionnalités de ciblage des pages AEM Sites, vous pouvez également [personnaliser l’expérience du formulaire pour différentes audiences ;](/help/sites-administering/target.md). En exploitant les segments d’utilisateurs et les critères de ciblage, vous pouvez personnaliser le contenu, la conception ou le comportement du formulaire en fonction de groupes d’utilisateurs spécifiques. Cela vous permet de fournir une expérience de formulaire personnalisée et pertinente, ce qui augmente l’engagement et les taux de conversion.
 * **Traduction :** AEM Sites [intégration transparente avec les services de traduction](/help/sites-administering/translation.md), ce qui vous permet de traduire facilement des formulaires en plusieurs langues. Cette fonctionnalité simplifie le processus de localisation, en veillant à ce que vos formulaires soient accessibles à une audience globale. Vous pouvez gérer efficacement les traductions dans AEM projets de traduction, ce qui réduit le temps et les efforts requis pour la prise en charge des formulaires multilingues. Pour plus d’informations sur la traduction, reportez-vous à la section Remarques .
 * **Gestion multisite et Live Copy :** AEM Sites offre une fonctionnalité robuste [Fonctionnalités de gestion multisite et de Live Copy](/help/sites-administering/msm.md), vous permettant de créer et de gérer plusieurs sites web au sein d’un seul environnement. Cette fonctionnalité vous permet désormais de réutiliser des formulaires sur différents sites, ce qui assure la cohérence et réduit les efforts de duplication. Grâce à un contrôle et une gestion centralisés, vous pouvez gérer et mettre à jour efficacement les formulaires sur plusieurs sites web.
@@ -177,7 +178,7 @@ Vous pouvez convertir un formulaire adaptatif existant dans un éditeur de page 
 Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience :
 
 1. Ouvrez la page AEM Sites contenant le formulaire adaptatif (dans le composant Conteneur de Forms adaptatif) en mode d’édition.
-1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
+1. Ouvrez l’arborescence de contenu, puis sélectionnez la **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Dans la barre de menus, sélectionnez l’option ![Icône Convertir en variation de fragment d’expérience](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Icône de variation Convertir en fragment d’expérience .
    ![Convertir un formulaire dans une page de sites en fragment d’expérience](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
@@ -195,8 +196,8 @@ Pour convertir un formulaire adaptatif dans une page AEM Sites en fragment d’e
 Une action Envoyer vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Les formulaires adaptatifs incluent certaines actions d’envoi prêtes à l’emploi. Vous pouvez également étendre une action d’envoi par défaut pour créer votre propre action d’envoi personnalisée. Pour configurer une action Envoyer pour votre formulaire :
 
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
-1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
-1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre pour configurer les actions d’envoi.
+1. Ouvrez l’arborescence de contenu, puis sélectionnez la **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
+1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre pour configurer les actions d’envoi.
    ![Conteneur de formulaires adaptatifs](/help/forms/using/assets/adaptive-forms-container.png)
 1. Sélectionnez et configurez une action Envoyer en fonction de vos besoins. Pour plus d’informations sur les actions d’envoi, voir [Action d’envoi de formulaire adaptatif](configuring-submit-actions.md)
 
@@ -213,8 +214,8 @@ Avant de connecter un formulaire à un schéma ou à un modèle de données de f
 Pour configurer un schéma JSON ou un modèle de données de formulaire pour votre formulaire :
 
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
-1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
-1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
+1. Ouvrez l’arborescence de contenu, puis sélectionnez la **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
+1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
    ![Conteneur de formulaires adaptatifs de modèle de données de formulaire](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
 1. Sélectionnez et configurez un schéma JSON ou un modèle de données de formulaire, en fonction de vos besoins. Pour plus d’informations sur les actions d’envoi, voir [Action d’envoi de formulaire adaptatif](configuring-submit-actions.md).
 
@@ -232,11 +233,11 @@ Vous pouvez utiliser le service de préremplissage pour remplir automatiquement 
 
 ### Utilisation du service de préremplissage de modèle de données de formulaire {#fdm-prefill-service}
 
-Vous pouvez utiliser le service de préremplissage de modèle de données de formulaire pour préremplir les champs d’un formulaire à l’aide d’un modèle de données de formulaire configuré. Le service Form Data Model Prefill utilise la méthode [Obtention du service du modèle de données de formulaire configuré](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) pour récupérer des données. Pour utiliser le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif :
+Vous pouvez utiliser le service de préremplissage de modèle de données de formulaire pour préremplir les champs d’un formulaire à l’aide d’un modèle de données de formulaire configuré. Le service de préremplissage de modèle de données de formulaire utilise la méthode [Obtention du service du modèle de données de formulaire configuré](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) pour récupérer des données. Pour utiliser le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif :
 
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
-1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
-1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
+1. Ouvrez l’arborescence de contenu, puis sélectionnez la **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
+1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
    ![Préremplissage du formulaire de service de l’éditeur de page aem sites](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Sélectionner un modèle de données de formulaire. Ouvrez le **[!UICONTROL De base]** . Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage du brouillon du portail Forms]**.
 1. Cliquez sur **[!UICONTROL Terminé]**.
@@ -246,8 +247,8 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers une autre page web ou un message. Pour rediriger l’utilisateur ou configurer le message de remerciement :
 
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
-1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
-1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
+1. Ouvrez l’arborescence de contenu, puis sélectionnez la **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
+1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/using/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
 1. Ouvrez le **[!UICONTROL Envoi]** .
 
    * Pour configurer une URL de redirection, pour l’option Lors de l’envoi, sélectionnez l’option Rediriger vers l’URL , puis fournissez une adresse absolue, une URL de redirection ou le chemin relatif d’une page AEM Sites.
