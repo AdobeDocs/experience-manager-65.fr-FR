@@ -4,9 +4,9 @@ seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credenti
 description: Procédure d’intégration de Salesforce à AEM Forms à l’aide du flux d’informations d’identification du client OAuth 2.0
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
-source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
+source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '424'
 ht-degree: 3%
 
 ---
@@ -15,37 +15,27 @@ ht-degree: 3%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html) |
 | AEM 6.5 | Cet article |
 
+Vous pouvez utiliser les informations d’identification du client OAuth 2.0 pour intégrer AEM Forms à l’application Salesforce. Les informations d’identification du client OAuth 2.0 sont une méthode standard et sécurisée de communication directe sans intervention de l’utilisateur.
 
-Pour intégrer AEM Forms à l’application Salesforce, le flux d’informations d’identification du client OAuth 2.0 est utilisé. Il s’agit d’une méthode de communication directe normalisée et sécurisée sans intervention de l’utilisateur. Dans ce flux, l’application cliente (AEM formulaire) échange les informations d’identification du client, définies dans l’application connectée Salesforce, pour obtenir un jeton d’accès. Les informations d’identification client requises incluent la clé client et le secret client.
+![Workflow lors de la définition de la communication entre AEM Forms et l’application Salesforce](/help/forms/using/assets/salesforce-workflow.png)
 
-## Avantages de l’intégration de Salesforce à AEM Forms à l’aide du flux d’informations d’identification du client OAuth 2.0 {#advantages-of-integrating-saleforce-aemforms}
+AEM Forms échange les informations d’identification du client (clé client et secret client), définies dans l’application connectée Salesforce, pour obtenir un jeton d’accès.
 
-AEM Forms prend en charge l’intégration de Salesforce avec le flux de code d’autorisation, en plus du flux d’informations d’identification du client OAuth 2.0. Dans le flux Code d’autorisation OAuth 2.0, l’application cliente (AEM Forms) obtient un accès aux ressources pour le compte d’un utilisateur Salesforce, ce qui présente certaines limites :
+L’utilisation des informations d’identification du client OAuth 2.0 présente plusieurs avantages pour l’authentification par rapport à l’authentification Flux de code d’autorisation :
 
-* Un maximum de cinq connexions par utilisateur est autorisé. D’autres connexions révoquent automatiquement les anciennes connexions.
-* Si un utilisateur est désactivé, perd l’accès ou met à jour un mot de passe, la configuration AEM source de données cesse de fonctionner.
+* L’authentification des informations d’identification du client OAuth 2.0 permet plus de cinq connexions par utilisateur.
+* AEM configuration de la source de données continue à fonctionner sur la désactivation, les modifications d’accès et la mise à jour du mot de passe pour un utilisateur AEM.
 
 ## Conditions préalables {#prerequisites}
 
-Pour récupérer et récupérer des données entre les environnements Salesforce et AEM, certaines conditions préalables doivent être remplies avant de poursuivre :
+Avant de définir la communication entre une application Salesforce et un environnement AEM :
 
-+++ **Configuration d’une application connectée à Saleforce avec un flux d’informations d’identification client et un utilisateur API uniquement**
+* Créez un [Application connectée à Salesforce avec flux d’informations d’identification client OAuth 2.0](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5) et un utilisateur API uniquement pour votre organisation et obtenez la clé client et le secret client pour l’application.
 
-Il est obligatoire de créer une application Salesforce connectée à l’aide du flux d’informations d’identification du client OAuth 2.0 et d’un utilisateur API uniquement pour votre organisation. Pour obtenir des instructions détaillées, reportez-vous à l’article [Flux d’informations d’identification client OAuth 2.0 pour l’intégration serveur à serveur](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&amp;type=5). Ces étapes vous aident à obtenir la clé du consommateur et le secret du consommateur.
-
->[!NOTE]
->
-> Veillez à noter la clé du consommateur et le secret du consommateur, car ils sont requis lors de la création d’une configuration de source de données AEM.
-
-+++
-
-+++ **Création d’un fichier Swagger**
-
-Swagger est un ensemble open source de règles, de spécifications et d’outils permettant de développer et de décrire des API RESTful. [Création d’un fichier swagger](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) avant d’intégrer Salesforce à AEM Forms.
-
+* Assurez-vous que votre fichier Swagger est correctement configuré pour correspondre aux API de votre entreprise. Vous pouvez également choisir de [créer un fichier Swagger ;](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) à partir de zéro, adapté à l’utilisation dans votre environnement AEM.
 >[!NOTE]
 >
 > AEM 6.5 prend uniquement en charge les spécifications de fichier Swagger 2.0.
@@ -57,17 +47,17 @@ Swagger est un ensemble open source de règles, de spécifications et d’outils
 1. Connectez-vous à votre instance d’auteur .
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Sources de données]**.
 1. Sélectionnez le dossier de configuration.
-1. Cliquez sur **[!UICONTROL Créer]** et le **[!UICONTROL Création d’une configuration de source de données]** apparaît.
+1. Cliquez sur **[!UICONTROL Créer]** et la variable **[!UICONTROL Création d’une configuration de source de données]** apparaît.
 1. Spécifiez la variable **[!UICONTROL Titre]** et sélectionnez la variable **[!UICONTROL Type de service]** as **[!UICONTROL Service RESTful]**.
 1. Cliquez sur **[!UICONTROL Suivant]**.
-1. Sélectionnez la **[!UICONTROL Source Swagger]** as **[!UICONTROL Fichier].**
+1. Sélectionnez la variable **[!UICONTROL Source Swagger]** as **[!UICONTROL Fichier].**
    >[!NOTE]
    >
    > Dès que le fichier swagger est sélectionné, le schéma, le nom de l’hôte et le chemin d’accès de base sont automatiquement renseignés.
 
 1. Chargez le fichier swagger créé à partir de votre ordinateur local en cliquant sur **[!UICONTROL Parcourir]**.
-1. Sélectionnez la **[!UICONTROL Type d’authentification]** as **[!UICONTROL OAuth 2.0]** et le **[!UICONTROL Paramètres d’authentification]** s’affiche.
-1. Sélectionnez la **[!UICONTROL Type d’octroi]** as **[!UICONTROL Informations d’identification client]**.
+1. Sélectionnez la variable **[!UICONTROL Type d’authentification]** as **[!UICONTROL OAuth 2.0]** et la variable **[!UICONTROL Paramètres d’authentification]** s’affiche.
+1. Sélectionnez la variable **[!UICONTROL Type d’octroi]** as **[!UICONTROL Informations d’identification client]**.
 1. Spécifiez la variable **[!UICONTROL ID client]** et **[!UICONTROL Secret du client]** obtenu à partir de l’application connectée Salesforce.
 1. Spécifiez la variable **[!UICONTROL URL du jeton d’accès]** au format
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
