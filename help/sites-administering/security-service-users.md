@@ -7,12 +7,13 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 49%
+source-wordcount: '1797'
+ht-degree: 46%
 
 ---
+
 
 # Utilisateurs du service dans Adobe Experience Manager (AEM) {#service-users-in-aem}
 
@@ -24,7 +25,7 @@ Toutefois, aucune de ces méthodes n’a été conçue selon le [principe de moi
 
 ## Comment supprimer les sessions d’administration {#how-to-phase-out-admin-sessions}
 
-### Priorité 0 : La fonctionnalité est-elle principale/nécessaire/abandonnée ? {#priority-is-the-feature-active-needed-derelict}
+### Priorité 0 : la fonctionnalité est-elle principale/nécessaire/abandonnée ? {#priority-is-the-feature-active-needed-derelict}
 
 Il peut y avoir des cas où la session d’administration n’est pas utilisée, ou la fonction est complètement désactivée. Si tel est le cas avec votre mise en œuvre, assurez-vous de supprimer la fonction entièrement ou accompagnez-la d’une [instruction nulle](https://fr.wikipedia.org/wiki/Instruction_nulle).
 
@@ -32,7 +33,7 @@ Il peut y avoir des cas où la session d’administration n’est pas utilisée,
 
 Lorsque cela est possible, refactorisez votre fonction de sorte que la session de requête authentifiée donnée puisse être utilisée pour écrire ou lire du contenu. Si cela n&#39;est pas possible, il est souvent possible d&#39;y parvenir en appliquant les priorités suivantes.
 
-### Priorité 2 : Restructurer le contenu {#priority-restructure-content}
+### Priorité 2 : Restructuration du contenu {#priority-restructure-content}
 
 De nombreux problèmes peuvent être résolus en restructurant le contenu. Gardez ces règles simples à l’esprit lorsque vous effectuez la restructuration :
 
@@ -79,7 +80,12 @@ Si vous appliquez le contrôle d’accès lors de la restructuration du contenu 
 
 ## Utilisateurs de services et mises en correspondance {#service-users-and-mappings}
 
-En cas d’échec de la procédure ci-dessus, Sling 7 offre un service de mappage des utilisateurs de services qui permet de configurer un mappage des lots à utilisateur et deux méthodes d’API correspondantes : ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` et ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` qui renvoient un résolveur de session/ressource avec uniquement les privilèges d’un utilisateur configuré. Ces méthodes présentent les caractéristiques suivantes :
+Si ce qui précède échoue, Sling 7 propose un service de mappage des utilisateurs de service, qui permet de configurer un mappage de lot à utilisateur et deux méthodes d’API correspondantes :
+
+* [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
+* [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
+
+Les méthodes renvoient un résolveur de session/ressource avec les privilèges d’un utilisateur configuré uniquement. Ces méthodes présentent les caractéristiques suivantes :
 
 * Elles permettent de mettre en correspondance les services avec les utilisateurs.
 * Ils permettent de définir des utilisateurs de sous-services.
@@ -120,7 +126,7 @@ Vous pouvez créer des utilisateurs de services de la façon suivante :
 
 1. En vous rendant dans l’explorateur de référentiel sur *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*.
 1. Connectez-vous en tant qu’administrateur en appuyant sur la touche **Connexion** dans le coin supérieur gauche de l’écran.
-1. Ensuite, créez et nommez votre utilisateur système. Pour créer l’utilisateur en tant qu’utilisateur système, définissez le chemin intermédiaire comme `system` et ajoutez des sous-dossiers facultatifs selon vos besoins :
+1. Ensuite, créez et nommez votre utilisateur système. Pour créer l’utilisateur en tant qu’utilisateur système, définissez le chemin intermédiaire comme `system` et ajoutez des sous-dossiers facultatifs en fonction de vos besoins :
 
    ![chlimage_1-102](assets/chlimage_1-102a.png)
 
@@ -145,7 +151,7 @@ En ajoutant le fichier content.xml correspondant au contenu du lot, assurez-vous
 
 ## Ajout d’une modification de configuration à la configuration ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Pour ajouter un mappage de votre service aux utilisateurs système correspondants, créez une configuration de fabrique pour la variable ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` service. Pour conserver ce module, une telle configuration peut être fournie à l’aide de la variable [Mécanisme de modification Sling](https://issues.apache.org/jira/browse/SLING-3578). La méthode recommandée pour installer de telles configurations avec votre lot consiste à utiliser [Chargement initial du contenu Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Pour ajouter un mappage de votre service aux utilisateurs système correspondants, créez une configuration de fabrique pour la variable [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) service. Pour conserver ce module, une telle configuration peut être fournie à l’aide de la variable [Mécanisme de modification Sling](https://issues.apache.org/jira/browse/SLING-3578). La méthode recommandée pour installer de telles configurations avec votre lot consiste à utiliser [Chargement initial du contenu Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Créez un sous-dossier SLING-INF/content sous le dossier src/main/resources de votre lot.
 1. Dans ce dossier, créez un fichier nommé org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml avec le contenu de votre configuration d’usine (y compris tous les mappages utilisateur de sous-service). Exemple :
@@ -210,7 +216,7 @@ La première méthode est préférable.
 
 ## Événements de traitement, préprocesseurs de réplication et tâches {#processing-events-replication-preprocessors-and-jobs}
 
-Lors du traitement d’événements ou de tâches, et parfois de workflows, la session correspondante qui a déclenché l’événement est perdue. Il en résulte que les gestionnaires d’événements et les processeurs de tâches utilisent souvent des sessions administratives pour effectuer leurs tâches. Il existe différentes approches possibles pour résoudre ce problème, chacune présentant ses avantages et ses inconvénients :
+Lors du traitement d’événements ou de tâches, et parfois de workflows, la session correspondante qui a déclenché l’événement est perdue. Il en résulte que les gestionnaires d’événements et les processeurs de tâches utilisent souvent des sessions administratives pour effectuer leurs tâches. Il existe différentes approches concevables pour résoudre ce problème, chacune présentant ses avantages et ses inconvénients :
 
 1. Transmettez l’`user-id` dans le payload de l’événement et utilisez l’emprunt d’identité.
 
@@ -240,4 +246,4 @@ Pour résoudre ces problèmes, il est recommandé d’utiliser les mêmes métho
 
 ## Traitateurs de POST Sling et pages supprimées {#sling-post-processors-and-deleted-pages}
 
-Plusieurs sessions administratives sont utilisées dans les mises en œuvre de processeur POST Sling. En règle générale, les sessions administratives sont utilisées pour accéder aux nœuds qui sont en attente de suppression dans le POST en cours de traitement. Par conséquent, ils ne sont plus disponibles via la session de requête. Un noeud en attente de suppression peut être accessible pour révéler des métadonnées qui, autrement, ne devraient pas être accessibles.
+Plusieurs sessions administratives sont utilisées dans les mises en œuvre de processeur POST Sling. En règle générale, les sessions administratives sont utilisées pour accéder aux nœuds qui sont en attente de suppression dans le POST en cours de traitement. Par conséquent, ils ne sont plus disponibles via la session de requête. Un noeud en attente de suppression peut être accessible pour révéler des métadonnées qui ne devraient pas être accessibles dans le cas contraire.
