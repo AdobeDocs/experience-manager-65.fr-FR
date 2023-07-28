@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: cd797b1a5edd05715761f5914ebc64fdb64745af
-workflow-type: ht
-source-wordcount: '6631'
+source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
+workflow-type: tm+mt
+source-wordcount: '6622'
 ht-degree: 100%
 
 ---
@@ -36,7 +36,7 @@ Pour en savoir plus sur les extensions d’Adobe ou les extensions tierces, voir
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media ne fonctionne pas dans le nœud d’auteur d’Experience Manager. Vous ne pouvez pas afficher de suivi à partir d’une page WCM tant qu’elle n’est pas publiée.
 * L’intégration Experience Platform Tags pour les visionneuses Dynamic Media n’est pas prise en charge pour le mode de fonctionnement « pop-up », où l’URL de la visionneuse est obtenue à l’aide du bouton URL de la page de détails de la ressource.
 * L’intégration Experience Platform Tags ne peut pas être utilisée simultanément avec l’intégration des visionneuses Analytics héritées (au moyen du paramètre `config2=`).
-* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=fr). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+* La prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=fr). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 * La configuration de la durée de stockage n’est pas prise en charge pour les éléments de données à l’aide de l’extension *Visionneuses Dynamic Media*. La durée de stockage doit être définie sur **[!UICONTROL Aucune]**.
 
 ### Cas d’utilisation de l’intégration {#use-cases-for-the-integration}
@@ -133,7 +133,7 @@ Lorsqu’un compte Experience Cloud est abonné pour utiliser Adobe Analytics 
 
 Voir [Installation et configuration des extensions](#installing-and-setup-of-extensions).
 
-À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-av-playback/track-core-overview.html?lang=fr). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
+À l’heure actuelle, la prise en charge du suivi vidéo se limite au suivi de la lecture principale uniquement, comme décrit dans la section [Présentation du suivi](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=fr). En particulier, le suivi de la qualité de service, des publicités, des chapitres/segments et des erreurs n’est pas pris en charge.
 
 ## Utilisation de l’extension Visionneuses Dynamic Media {#using-the-dynamic-media-viewers-extension}
 
@@ -301,7 +301,7 @@ Le tableau suivant répertorie les événements de visionneuse Dynamic Media et
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -756,7 +756,7 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
    * **[!UICONTROL Titre]** : entrez un titre de compte descriptif.
    * **[!UICONTROL Serveur d’autorisation]** : revenez à la page Informations concernant l’intégration que vous avez ouverte précédemment. Sélectionnez l’onglet **[!UICONTROL JWT]**. Copiez le nom du serveur (sans le chemin d’accès), comme indiqué ci-dessous.
 
-(ce nom de serveur est seulement un exemple)   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
+   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
 Par exemple : `https://ims-na1.adobelogin.com/`
 (ce nom de serveur est seulement un exemple)
 
@@ -816,6 +816,7 @@ Par exemple : `https://ims-na1.adobelogin.com/`
    * **[!UICONTROL Société]** : dans la liste déroulante **[!UICONTROL Société]**, sélectionnez votre société Experience Cloud. La liste est renseignée automatiquement.
 
    * **[!UICONTROL Propriété]** : dans la liste déroulante Propriété, sélectionnez la propriété Experience Platform Tags que vous avez créée précédemment. La liste est renseignée automatiquement.
+
    Après avoir rempli tous les champs, la page **[!UICONTROL Général]** se présente comme suit :
 
    ![image2019-7-15_14-34-23](assets/image2019-7-15_14-34-23.png)

@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: 48540664fa80ac7ecc94a2d9dc56682ceaf67206
+source-git-commit: 78842fb50d5aa5e5c22801389713cb3c69cac4bf
 workflow-type: tm+mt
-source-wordcount: '6491'
+source-wordcount: '6489'
 ht-degree: 91%
 
 ---
@@ -236,7 +236,7 @@ Lorsque vous exécutez Dynamic Media en mode Scene7 sur AEM, il transfère actue
 
 1. Sur la page **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name**, cochez la case correspondant aux deux paramètres suivants :
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Lorsque cette option est activée, ce paramètre met en cache les résultats des autorisations pendant 120 secondes ou deux minutes (par défaut) à enregistrer.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Lorsque cette option est activée, ce paramètre met en cache les résultats des autorisations pendant 120 secondes (deux minutes) (par défaut) à enregistrer.
    * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Lorsqu’il est activé, ce paramètre valide l’accès d’un utilisateur lorsqu’il prévisualise des ressources au moyen du serveur d’images Dynamic Media.
 
    ![Activation des paramètres de liste de contrôle d’accès en mode Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
@@ -703,7 +703,7 @@ Le paramètre de connexion de chargement vers Scene7 synchronise les ressources 
 
    Le paramètre **[!UICONTROL Nombre de connexions]** contrôle le nombre maximal de connexions HTTP autorisées pour le chargement d’Experience Manager vers Dynamic Media. En règle générale, la valeur prédéfinie de dix connexions est suffisante.
 
-   Le paramètre **[!UICONTROL Active job timeout]** détermine le temps d’attente avant que les ressources Dynamic Media chargées ne soient publiées sur le serveur de diffusion. Cette valeur est de 2 100 secondes ou 35 minutes, par défaut.
+   Le paramètre **[!UICONTROL Active job timeout]** détermine le temps d’attente avant que les ressources Dynamic Media chargées ne soient publiées sur le serveur de diffusion. Cette valeur est de 2 100 secondes (35 minutes) par défaut.
 
    Dans la plupart des cas d’utilisation, le paramètre de 2 100 est suffisant.
 
