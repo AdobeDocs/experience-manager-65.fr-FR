@@ -1,6 +1,6 @@
 ---
-title: Aperçu des ressources
-description: Découvrez comment prévisualiser des ressources dans Dynamic Media.
+title: Prévisualiser des ressources
+description: Découvrez comment prévisualiser des ressources, telles que des vidéos et des images, dans Dynamic Media, en appliquant des paramètres d’image prédéfinis et des paramètres de visionneuse prédéfinis.
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,10 +11,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1368'
-ht-degree: 86%
+source-wordcount: '1380'
+ht-degree: 85%
 
 ---
 

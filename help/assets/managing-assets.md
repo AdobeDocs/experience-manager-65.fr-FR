@@ -1,6 +1,6 @@
 ---
 title: À propos de la gestion des ressources Dynamic Media
-description: Découvrez comment utiliser des ressources Dynamic Media.
+description: Découvrez comment utiliser des ressources Dynamic Media., telles que les vidéos et les images, une fois qu’elles ont été téléchargées. Vous pouvez prévisualiser, télécharger ou publier des ressources.
 uuid: 9c7f9d4e-caab-434f-a1ae-eca16c883461
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: a323bf5a-b5b2-4b15-bcf8-48d0fe819512
 feature: Asset Management
 role: User, Admin
 exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 67%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 La gestion des ressources Dynamic Media (images, vidéos et ressources interactives) après leur chargement implique de nombreuses tâches, dont la prévisualisation, le téléchargement ou la publication.
 
-Lors de l’aperçu, vous pouvez également appliquer des paramètres d’image prédéfinis (pour les images uniquement) ou des paramètres prédéfinis de visionneuse (pour la vidéo et les images). Vous ne pouvez pas appliquer les deux à une ressource. Voir [Application de paramètres prédéfinis de visionneuse](/help/assets/viewer-presets.md) et [Application de paramètres d’image prédéfinis](/help/assets/image-sets.md).
+Lors de la prévisualisation, vous pouvez également appliquer des paramètres d’image prédéfinis (pour les images uniquement) ou des paramètres prédéfinis de visionneuse (pour la vidéo et les images). Vous ne pouvez pas appliquer les deux à une ressource. Voir [Application des paramètres prédéfinis de visionneuse](/help/assets/viewer-presets.md) et [Application de paramètres d’image prédéfinis](/help/assets/image-sets.md).
 
 Vous trouverez des informations générales sur la gestion des ressources dans la section [Gestion des ressources](/help/assets/manage-assets.md).
 

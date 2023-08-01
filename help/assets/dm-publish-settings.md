@@ -1,6 +1,6 @@
 ---
 title: Configurer la configuration de publication Dynamic Media pour Image Server
-description: Découvrez comment configurer une publication dans Dynamic Media.
+description: Découvrez comment configurer la configuration de la publication Dynamic Media pour Image Server afin de pouvoir publier des ressources. Vous pouvez également tester vos ressources avant de les rendre publiques.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 25fe5e240fd7404cb07375325e1f7b6a32923bfd
-workflow-type: ht
-source-wordcount: '3494'
-ht-degree: 100%
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+workflow-type: tm+mt
+source-wordcount: '3511'
+ht-degree: 99%
 
 ---
 
@@ -86,7 +86,7 @@ Ces paramètres concernent l’aspect par défaut des images.
 | **[!UICONTROL Limite de taille des images de réponse]** | Requis.<br>Pour les nouveaux comptes Dynamic Media uniquement, la taille d’affichage par défaut est automatiquement définie sur Largeur : `3000` et Hauteur : `3000` pour la **[!UICONTROL Diffusion d’images]** et la **[!UICONTROL Diffusion d’images test]**.<br>Spécifie la largeur et la hauteur maximales de l’image de réponse renvoyée au client. Le serveur renvoie une erreur si une requête provoque une image de réponse dont la largeur, ou la hauteur, ou les deux, est supérieure à ce paramètre.<br>Voir aussi le paramètre [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Mode d’obfuscation de requête]** | Activez cette option si vous souhaitez qu’un codage base64 soit appliqué aux requêtes valides.<br>Voir aussi le paramètre [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Mode de verrouillage de requête]** | Activez cette option si vous souhaitez qu’un simple verrou de hachage soit inclus dans les requêtes.<br>Voir aussi le paramètre [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
-| **[!UICONTROL Attributs de requête par défaut]** |  |
+| **[!UICONTROL Attributs de requête par défaut]** | |
 | **[!UICONTROL Suffixe de fichier image par défaut]** | Requis.<br>Extension de fichier de données par défaut ajoutée aux valeurs des champs Path et MaskPath du catalogue si le chemin d’accès ne contient pas de suffixe de fichier.<br>Voir aussi le paramètre [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Nom de police par défaut]** | Indique la police utilisée si aucune police n’est fournie par une requête de calque de texte. S’il est spécifié, il doit s’agir d’une valeur de nom de police valide dans le mappage de polices de ce catalogue d’images ou dans le mappage de polices du catalogue par défaut.<br>Voir aussi le paramètre [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Image par défaut]** | Fournit une image par défaut à renvoyer en réponse à une demande pour laquelle l’image demandée est introuvable.<br>Voir aussi le paramètre [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media.<br>**REMARQUE** : si votre compte Dynamic Media Classic possède déjà une **[!UICONTROL Image par défaut]** sélectionnée (comme défini dans **[!UICONTROL Configuration]** > **[!UICONTROL Application]** > **[!UICONTROL Configuration de la publication]**, sous le groupe **[!UICONTROL Attributs de requête par défaut]**), votre compte Dynamic Media sur Experience Manager récupère le fichier à partir de Dynamic Media Classic. Le fichier est ensuite stocké et rendu disponible dans ce champ lorsque vous ouvrez la page **[!UICONTROL Configuration de la publication Dynamic Media]** pour la première fois. |
@@ -120,7 +120,7 @@ Ces paramètres déterminent les profils de couleurs ICC utilisés pour les imag
 Un mode de rendu de conversion des couleurs permet de remplacer l’intention de rendu par défaut des profils de travail afin de déterminer comment les couleurs sources sont ajustées. Utilisé lorsque :
 
 1. L’un des profils ICC par défaut correspond à l’espace colorimétrique cible d’une conversion de couleurs.
-1. Un périphérique de sortie (imprimante ou moniteur) est caractérisé par ce profil.
+1. Un appareil de sortie (imprimante ou moniteur) est caractérisé par ce profil.
 1. Et l’intention de rendu spécifiée est valide pour ce profil.
 
 Les différents modes de rendu utilisent des règles différentes pour déterminer comment les couleurs source sont ajustées.
@@ -135,7 +135,7 @@ Voir aussi le paramètre [IccRenderIntent](https://experienceleague.adobe.com/do
 | --- | --- |
 | **[!UICONTROL Espace colorimétrique CMJN par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données CMJN. Si l’option **[!UICONTROL Aucune spécifiée]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source CMJN sont impliquées. Tous les espaces de travail CMJN dépendent des appareils, ce qui signifie qu’ils sont basés sur des combinaisons d’encre et de papier réelles. Les espaces de travail CMJN fournis par Adobe sont basés sur des conditions d’impression commerciales standard.<br> Voir aussi le paramètre [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Espace colorimétrique de niveaux de gris par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données en niveaux de gris. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source en niveaux de gris sont impliquées.<br>Voir aussi le paramètre [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
-| **[!UICONTROL Espace colorimétrique RGB par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données RGB. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images sources RGB sont impliquées. En règle générale, il est préférable de sélectionner **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, plutôt que le profil d’un périphérique spécifique (tel qu’un profil de moniteur). **[!UICONTROL sRGB]** est recommandé lorsque vous préparez des images pour le Web ou les appareils mobiles, car il définit l’espace colorimétrique du moniteur standard utilisé pour afficher les images sur le Web. **[!UICONTROL sRGB]** est également un bon choix lorsque vous travaillez avec des images provenant d’appareils photo numériques grand public, car la plupart de ces appareils utilisent sRGB comme espace colorimétrique par défaut.<br>Voir aussi le paramètre [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
+| **[!UICONTROL Espace colorimétrique RGB par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données RGB. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images sources RGB sont impliquées. En règle générale, il est préférable de sélectionner **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, plutôt que le profil d’un appareil spécifique (tel qu’un profil de moniteur). **[!UICONTROL sRGB]** est recommandé lorsque vous préparez des images pour le Web ou les appareils mobiles, car il définit l’espace colorimétrique du moniteur standard utilisé pour afficher les images sur le Web. **[!UICONTROL sRGB]** est également un bon choix lorsque vous travaillez avec des images provenant d’appareils photo numériques grand public, car la plupart de ces appareils utilisent sRGB comme espace colorimétrique par défaut.<br>Voir aussi le paramètre [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Intention de rendu de conversion des couleurs]** | **[!UICONTROL Perception]** : vise à préserver la relation visuelle entre les couleurs afin qu’elles soient perçues comme naturelles par l’œil humain, même si les valeurs de couleur elles-mêmes peuvent changer. Cette intention est adaptée aux images photographiques avec de nombreuses couleurs qui se situent hors de la gamme. Ce paramètre correspond à l’intention de rendu standard pour l’industrie japonaise de l’imprimerie. |
 |  | **[!UICONTROL Colorimétrie relative]** : compare la mise en surbrillance extrême de l’espace colorimétrique source à celle de l’espace colorimétrique de destination et modifie toutes les couleurs en conséquence. Les couleurs hors gamme sont décalées vers la couleur reproductible la plus proche dans l’espace colorimétrique de destination. Le paramètre Colorimétrie relative conserve plus de couleurs d’origine dans une image que le paramètre Perception. Ce paramètre est l’intention de rendu standard pour l’impression en Amérique du Nord et en Europe. |
 |  | **[!UICONTROL Saturation]** : tente de produire des couleurs vives dans une image au détriment de la précision des couleurs. Cette intention de rendu convient aux graphiques professionnels tels que les graphiques ou les diagrammes, où les couleurs saturées et vives sont plus importantes que la relation exacte entre les couleurs. |
@@ -192,13 +192,13 @@ Les types de ressources et fonctionnalités suivants ne sont actuellement pas pr
 * Impression en ligne.
 * Services UGC (contenu créé par l’utilisateur).
 
-   >[!IMPORTANT]
-   >
-   >À compter du 1er mai 2023, les ressources UGC (contenu créé par l’utilisateur ou l’utilisatrice) dans Dynamic Media pourront être utilisées pendant 60 jours à compter de la date de téléchargement. Au bout de 60 jours, les ressources seront supprimées.
+  >[!IMPORTANT]
+  >
+  >À compter du 1er mai 2023, les ressources UGC (contenu créé par l’utilisateur ou l’utilisatrice) dans Dynamic Media pourront être utilisées pendant 60 jours à compter de la date de téléchargement. Au bout de 60 jours, les ressources seront supprimées.
 
-   >[!NOTE]
-   >
-   >La prise en charge des ressources d’images vectorielles UGC nouvelles ou existantes dans Adobe Dynamic Media a pris fin le 30 septembre 2021.
+  >[!NOTE]
+  >
+  >La prise en charge des ressources d’images vectorielles UGC nouvelles ou existantes dans Adobe Dynamic Media a pris fin le 30 septembre 2021.
 
 ### Test du service Secure Testing {#test-secure-testing-service}
 
