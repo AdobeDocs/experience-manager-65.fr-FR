@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -61,16 +61,16 @@ La valeur de la variable `data-scf-component` peut être la valeur par défaut, 
 
 Pour lier un composant, l’intégralité du script du composant doit être incluse dans une balise &lt;div> avec les attributs suivants :
 
-* `data-component-id`=&quot;{{id}}&quot;
+* `data-component-id`=&quot;`{{id}}`&quot;
 
   résout la propriété id du contexte.
 
 * `data-scf-component`=&quot;*&lt;resourcetype>*
 
-Par exemple, de `/apps/weretail/components/hbs/rating/rating.hbs`:
+Par exemple, à partir de `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
-<div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
+<div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
 
      <!-- HTML with HBS accessing the rating component -->
 
@@ -118,7 +118,7 @@ Pour étendre une implémentation JavaScript de composants, vous devez :
 1. Étendez la méthode .
 1. Utilisez SCF.registerComponent() pour enregistrer toutes les méthodes avec les valeurs par défaut ou les objets et vues personnalisés.
 
-### forum.js : Exemple d’extension de forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js : exemple d’extension de forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -147,7 +147,7 @@ Pour étendre une implémentation JavaScript de composants, vous devez :
 
 Les balises de script font partie intégrante de la structure côté client. Il s’agit de la colle qui permet de lier les balises générées côté serveur aux modèles et aux vues côté client.
 
-Les balises de script dans les scripts SCF ne doivent pas être supprimées lors du recouvrement ou du remplacement de composants. Les balises de script SCF créées automatiquement pour injecter du code JSON dans le HTML sont identifiées par l’attribut . `data-scf-json=true`.
+Les balises de script dans les scripts SCF ne doivent pas être supprimées lors du recouvrement ou du remplacement de composants. Les balises de script SCF créées automatiquement pour injecter JSON dans le HTML sont identifiées par l’attribut . `data-scf-json=true`.
 
 ## Clientlibs pour SCF {#clientlibs-for-scf}
 
@@ -173,7 +173,7 @@ Par exemple :
 * Noeud de dossier client : `/etc/clientlibs/social/hbs/forum`
 * Propriété Categories : `cq.social.hbs.forum`
 
-Le [Guide des composants de communauté](components-guide.md) répertorie les bibliothèques client complètes requises pour chaque composant SCF.
+La variable [Guide des composants de communauté](components-guide.md) répertorie les bibliothèques client complètes requises pour chaque composant SCF.
 
 [Clientlibs des composants Communities](clientlibs.md) décrit comment ajouter des bibliothèques client à une page.
 
@@ -192,17 +192,17 @@ Par exemple :
 * Noeud de dossier client : `/libs/social/forum/hbs/forum/clientlibs`
 * Propriété Categories : `cq.social.author.hbs.forum`
 
-Remarque : bien que les bibliothèques clientes d’auteur n’incorporent jamais d’autres bibliothèques, elles répertorient leurs dépendances. Lorsqu’elles sont incorporées dans d’autres bibliothèques, les dépendances ne sont pas automatiquement extraites et doivent également être incorporées.
+Remarque : bien que les bibliothèques clientes de création n’incorporent jamais d’autres bibliothèques, elles répertorient leurs dépendances. Lorsqu’elles sont incorporées dans d’autres bibliothèques, les dépendances ne sont pas automatiquement extraites et doivent également être incorporées.
 
 Les clientlibs d’auteur requises peuvent être identifiées en insérant &quot;author&quot; dans les clientlibs répertoriées pour chaque composant SCF dans la variable [Guide des composants de communauté](components-guide.md).
 
 ### Considérations sur l’utilisation {#usage-considerations}
 
-Chaque site est différent dans la manière dont il gère les bibliothèques clientes. Plusieurs facteurs sont les suivants :
+Chaque site est différent dans la manière dont il gère les bibliothèques clientes. Les facteurs suivants sont à prendre en compte :
 
-* Vitesse globale : Peut-être que le site souhaite être réactif, mais il est acceptable que la première page soit un peu lente à se charger. Si la plupart des pages utilisent le même code JavaScript, les différents codes JavaScript peuvent être incorporés dans une bibliothèque cliente et référencés à partir de la première page à charger. Le code JavaScript de ce téléchargement unique reste mis en cache, ce qui réduit la quantité de données à télécharger pour les pages suivantes.
-* Temps court jusqu’à la première page : Peut-être que le désir est que la première page se charge rapidement. Dans ce cas, le code JavaScript se trouve dans plusieurs petits fichiers à référencer uniquement lorsque cela s’avère nécessaire.
-* Équilibre entre le premier chargement de page et les téléchargements ultérieurs.
+* Vitesse globale : peut-être que le site souhaite être réactif, mais qu’il est acceptable que la première page soit un peu lente à charger. Si la plupart des pages utilisent le même code JavaScript, les différents codes JavaScript peuvent être incorporés dans une bibliothèque cliente et référencés à partir de la première page à charger. Le code JavaScript de ce téléchargement unique reste mis en cache, ce qui réduit la quantité de données à télécharger pour les pages suivantes.
+* Temps court jusqu’à la première page : peut-être que le désir est que la première page se charge rapidement. Dans ce cas, le code JavaScript se trouve dans plusieurs petits fichiers à référencer uniquement lorsque cela s’avère nécessaire.
+* Équilibre entre le chargement de la première page et les téléchargements ultérieurs.
 
 | **[⇐ Notions fondamentales sur les fonctionnalités](essentials.md)** | **[⇒ de personnalisation côté serveur](server-customize.md)** |
 |---|---|

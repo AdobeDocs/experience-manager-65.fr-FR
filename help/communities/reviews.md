@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 4%
@@ -19,9 +19,9 @@ ht-degree: 4%
 
 # Utilisation des révisions et du résumé des révisions (affichage) {#using-reviews-and-reviews-summary-display}
 
-Le `Reviews` est un composant composite de [Commentaires](comments.md) et [Évaluation](rating.md) composants prêts à l’emploi.
+La variable `Reviews` est un composant composite de [Commentaires](comments.md) et [Évaluation](rating.md) composants prêts à l’emploi.
 
-Le `Reviews Summary (Display)` fournit un résumé d’une instance principale ou fermée d’une `Reviews` à afficher ailleurs sur le site.
+La variable `Reviews Summary (Display)` fournit un résumé d’une instance principale ou fermée d’une `Reviews` à afficher ailleurs sur le site.
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Sous , **[!UICONTROL Résumé de la révision]** tab
 
 * `Review Path`
 
-  accédez à l’instance placée du `reviews`à résumer, par exemple, s’il est ajouté à la page Web de la fonction [site Geometrixx Engage,](getting-started.md) le chemin serait :
+  accédez à l’instance placée du `reviews`à résumer, par exemple, s’il est ajouté à la page Web de la fonction [site Geometrixx Engage,](getting-started.md) le chemin serait le suivant :
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -213,7 +213,7 @@ Sous , **[!UICONTROL Types de ressources]** , spécifiez le type de ressource pe
 
 * **[!UICONTROL Type de ressource système de commentaires]**
 
-  Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [{{include}} assistance](handlebars-helpers.md#include).
+  Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [`{{include}}` assistance](handlebars-helpers.md#include).
 
 ## Expérience du visiteur du site {#site-visitor-experience}
 

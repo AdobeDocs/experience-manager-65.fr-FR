@@ -7,7 +7,7 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 7%
@@ -145,7 +145,7 @@ Sous , **Paramètres de tri** , indiquez comment les commentaires publiés sont 
 
 * **Champ de tri**
 
-  Menu déroulant pour sélectionner l’un des `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`ou `Most Liked`.
+  Menu déroulant pour sélectionner l’un des `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, ou `Most Liked`.
 
 * **Ordre de tri**
 
@@ -175,7 +175,7 @@ Sous , **Types de ressources** , spécifiez le type de ressource personnalisé p
 
 * **Type de ressource système de commentaires**
 
-  Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [{{include}} assistance](/help/communities/handlebars-helpers.md#include).
+  Accédez au resourceType d’une extension `comments`(système de commentaires) dans /apps. Laissez vide, sauf si le modèle de page [inclut dynamiquement](/help/communities/scf.md#add-or-include-a-communities-component) le système de commentaires dans le script sous-jacent au lieu d’être ajouté à la page en tant que ressource (noeud de commentaires). En savoir plus en lisant les [`{{include}}` assistance](/help/communities/handlebars-helpers.md#include).
 
 ### Expérience du visiteur du site {#site-visitor-experience}
 
