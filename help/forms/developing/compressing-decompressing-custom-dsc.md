@@ -2,10 +2,10 @@
 title: Compresser et décompresser des fichiers à l’aide d’un DSC personnalisé AEM Forms sur JEE
 description: Découvrez comment compresser et décompresser des fichiers à l’aide d’un DSC personnalisé d’AEM Forms sur JEE.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 90%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 100%
 
 ## Connaissances préalables {#prerequisites}
 
-Expérience avec AEM Forms sur JEE Process Management, programmation Java de base et création de composants personnalisés.
+Expérience avec la gestion des processus d’AEM Forms on JEE, programmation Java™ de base et création de composants personnalisés.
 
 **Autres produits nécessaires**
 
-Éditeur Java, par exemple [Eclipse](https://www.eclipse.org/) ou [Netbeans IDE](https://netbeans.apache.org/)
+Éditeur Java™ tel que [Eclipse](https://www.eclipse.org/) ou [IDE Netbeans](https://netbeans.apache.org/)
 
 ## Niveau d’utilisateur {#user-level}
 
@@ -187,7 +187,7 @@ Le fichier component.xml est affiché ci-dessous :
 
 ## Regrouper et déployer le composant {#packaging-deploying-component}
 
-1. Compiler le projet java et créer un fichier .JAR
+1. Compilez le projet Java™ et créez un fichier .JAR.
 1. Déployer le composant (fichier .JAR) sur le runtime AEM Forms sur JEE via Workbench
 1. Démarrer le service à partir de Workbench (voir lʼillustration ci-dessous)
 
@@ -213,10 +213,10 @@ Vous pouvez utiliser ce service ZIP dans les cas d’utilisation suivants :
 
 * Rechercher tous les fichiers dans un dossier donné et les renvoyer sous forme de document compressé
 
-* Fournir un fichier ZIP contenant plusieurs documents PDF auxquels des extensions Reader peuvent être ajoutées après leur décompression. Ceci nécessite le module Reader Extensions pour AEM Forms sur JEE
+* Fournissez un fichier ZIP contenant plusieurs documents de PDF qui peuvent être complétés par le lecteur après les avoir décompressés. Ceci nécessite le module Reader Extensions pour AEM Forms sur JEE
 
 * Fournir un fichier ZIP contenant un type hétérogène de document qui peut être décompressé et converti en document PDF à l’aide du service Generate PDF
 
-* La stratégie protège une liste de documents et renvoie un fichier ZIP
+* La politique protège une liste de documents et renvoie un fichier ZIP
 
 * Permettre aux utilisateurs de télécharger toutes les pièces jointes d’une instance de processus sous la forme d’un fichier ZIP unique
