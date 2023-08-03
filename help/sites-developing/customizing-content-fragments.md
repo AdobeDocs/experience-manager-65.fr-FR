@@ -1,15 +1,15 @@
 ---
 title: Personnalisation et extensions de fragments de contenu
 seo-title: Customizing and Extending Content Fragments
-description: Un fragment de contenu étend une ressource standard.
-seo-description: A content fragment extends a standard asset.
+description: Un fragment de contenu étend une ressource standard. Découvrez comment les personnaliser.
+seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ada61b87753f3f3e70acdca0e946428511bd7b00
 workflow-type: tm+mt
-source-wordcount: '2782'
+source-wordcount: '2788'
 ht-degree: 58%
 
 ---
@@ -61,10 +61,10 @@ Selon le type de fragment, des modèles sont également utilisés :
 
    * utilisés pour définir des fragments de contenu simples.
    * Les modèles définissent la structure (de base, texte uniquement) d’un fragment de contenu lors de sa création.
-   * Le modèle est copié dans le fragment lors de sa création ; ainsi, les modifications supplémentaires apportées au modèle ne seront pas répercutées dans les fragments existants.
+   * Le modèle est copié dans le fragment lors de sa création. De ce fait, les modifications supplémentaires apportées au modèle ne seront pas répercutées dans les fragments existants.
    * Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
    * [Modèles de fragment de contenu](/help/sites-developing/content-fragment-templates.md) fonctionnent différemment des autres mécanismes de création de modèles au sein de l’écosystème AEM (par exemple, les modèles de page, etc.). Par conséquent, elles doivent être prises en compte séparément.
-   * Lorsque le type MIME du contenu est basé sur un modèle, il est géré à partir du contenu réel. cela signifie que chaque élément et variation peuvent avoir un type MIME différent.
+   * Lorsqu’il est basé sur un modèle, le type MIME du contenu est géré sur le contenu réel ; cela signifie que chaque élément et variation peuvent avoir un type MIME différent.
 
 ### Intégration à Assets {#integration-with-assets}
 
@@ -137,7 +137,7 @@ Les fragments de contenu peuvent être référencés à partir des pages d’AEM
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
 * Le composant vous permet de sélectionner la variation à afficher.
-* En outre, une plage de paragraphes peut être sélectionnée pour limiter la sortie ; par exemple, cela peut être utilisé pour la sortie multi-colonnes.
+* En outre, une plage de paragraphes peut être sélectionnée pour limiter la sortie ; par exemple, elle peut être utilisée pour la sortie à plusieurs colonnes.
 * Le composant permet [contenu intermédiaire](/help/sites-developing/components-content-fragments.md#in-between-content):
 
    * Ici, le composant vous permet de placer d’autres ressources (images, etc.) entre les paragraphes du fragment référencé.
@@ -150,13 +150,13 @@ Les fragments de contenu peuvent être référencés à partir des pages d’AEM
 >
 >**Modèle de fragment de contenu :**
 >
->Lors de l’utilisation d’un fragment de contenu qui a été basé sur un modèle de fragment de contenu sur une page, le modèle est référencé. Cela signifie que si le modèle n’a pas été publié lorsque vous publiez la page, celui-ci est marqué et le modèle ajouté aux ressources à publier avec la page.
+>Lors de l’utilisation d’un fragment de contenu basé sur un modèle de fragment de contenu sur une page, le modèle est référencé. Cela signifie que si le modèle n’a pas été publié lorsque vous publiez la page, celui-ci est marqué et le modèle ajouté aux ressources à publier avec la page.
 >
 >**Modèle de fragment de contenu :**
 >
 >Lors de l’utilisation d’un fragment de contenu qui était basé sur un modèle de fragment de contenu sur une page, il n’y a aucune référence car le modèle a été copié lors de la création du fragment.
 
-#### Configuration à l’aide de la console OSGi {#configuration-using-osgi-console}
+#### Configuration avec la console OSGi {#configuration-using-osgi-console}
 
 L’implémentation principale des fragments de contenu est, par exemple, chargée de rendre les instances d’un fragment utilisé sur une page consultable ou de gérer le contenu multimédia mixte. Cette implémentation doit savoir quels composants sont utilisés pour le rendu des fragments et comment le rendu est paramétré.
 
@@ -170,7 +170,7 @@ Une liste de propriétés peut être configurée pour spécifier l’emplacement
 
 >[!NOTE]
 >
->Il n’existe aucun mappage direct entre la propriété et le type de composant.
+>Il n’existe pas de mappage direct entre la propriété et le type de composant.
 >
 >AEM utilise simplement la première propriété disponible sur un paragraphe. Vous devez donc choisir les propriétés avec soin.
 
@@ -199,9 +199,9 @@ Les fragments de contenu peuvent être intégrés avec :
 
 * **Des traductions**
 
-  Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-administering/tc-manage.md). Au niveau architectural, cela signifie :
+  Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-administering/tc-manage.md). Sur le plan architectural, cela signifie :
 
-   * Les traductions individuelles d’un fragment de contenu sont en fait des fragments distincts ; par exemple :
+   * Les traductions individuelles d’un fragment de contenu sont en fait des fragments distincts, par exemple :
 
       * elles se trouvent sous différentes racines de langue :
 
@@ -417,7 +417,7 @@ Les conditions pour contrôler une session de modification sont les suivantes :
 
 * La modification d’un fragment de contenu qui peut être réparti sur plusieurs vues (= pages HTML) doit être atomique.
 * La modification doit également être *transactionnel*; à la fin de la session de modification, les modifications doivent être validées (enregistrées) ou restaurées (annulées).
-* Les cas Edge doivent être gérés correctement ; il s’agit notamment de situations dans lesquelles l’utilisateur quitte la page en saisissant une URL manuellement ou en utilisant la navigation globale.
+* Les cas Edge doivent être gérés correctement, notamment lorsque l’utilisateur quitte la page en saisissant une URL manuellement ou en utilisant la navigation globale.
 * Un enregistrement automatique périodique (toutes les x minutes) doit être disponible pour empêcher la perte de données.
 * Si un fragment de contenu est modifié simultanément par deux utilisateurs, ils ne doivent pas remplacer les modifications de l’autre.
 
@@ -455,7 +455,7 @@ Les actions possibles sont les suivantes :
 
 * Saisie d’une page
 
-   * Vérifiez si une session de modification est déjà présente ; en vérifiant le cookie correspondant.
+   * Vérifiez si une session de modification est déjà présente en vérifiant le cookie correspondant.
 
       * S’il en existe un, vérifiez que la session de modification a été lancée pour le fragment de contenu en cours de modification.
 
