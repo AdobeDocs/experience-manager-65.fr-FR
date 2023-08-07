@@ -10,9 +10,9 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1836'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -207,11 +207,11 @@ Les [annotations](/help/sites-classic-ui-authoring/classic-page-author-annotatio
 
 Lors de l’aperçu des pages, les deux icônes situées dans la bordure inférieure du sidekick offrent de précieux renseignements :
 
-![Bordure inférieure du sidekick avec une ligne horizontale de sept icônes. Deux des icônes au début de la rangée, l’icône d’édition et l’icône de mode d’aperçu, sont indiquées respectivement par un symbole de crayon et un symbole de loupe.](do-not-localize/chlimage_1-5.png)
+![Bordure inférieure du sidekick avec une ligne horizontale de sept icônes. Deux icônes au début de la ligne, l’icône Modifier et l’icône du mode Aperçu, sont représentées respectivement par un symbole de crayon et un symbole de loupe.](do-not-localize/chlimage_1-5.png)
 
 * L’icône en forme de crayon indique que vous êtes actuellement en mode d’édition. Vous pouvez alors ajouter, modifier, déplacer ou supprimer du contenu.
 
-  ![Icône Modifier indiquée par un symbole de crayon.](do-not-localize/chlimage_1-6.png)
+  ![Icône Modifier représentée par un symbole de crayon.](do-not-localize/chlimage_1-6.png)
 
 * L’icône en forme de loupe permet de sélectionner le mode d’aperçu. La page s’affiche alors telle qu’elle sera rendue dans l’environnement de publication (une actualisation de page peut s’avérer nécessaire) :
 
@@ -219,7 +219,7 @@ Lors de l’aperçu des pages, les deux icônes situées dans la bordure inféri
 
   En mode d’aperçu, le sidekick est réduit. Cliquez sur l’icône de flèche bas pour revenir au mode d’édition :
 
-  ![Barre avec AEM titre et icône de mode d’édition à droite du titre, indiquée par une flèche vers le bas.](do-not-localize/chlimage_1-8.png)
+  ![Barre avec AEM en titre et l’icône du mode de modification à droite du titre, indiquée par une flèche vers le bas.](do-not-localize/chlimage_1-8.png)
 
 ## Rechercher et remplacer {#find-replace}
 
