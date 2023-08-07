@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1162'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 92%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles sur l’utilisation de votre système, la manière dont les utilisateurs interagissent avec les ressources et les ressources téléchargées et partagées.
+Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs et utilisatrices interagissent avec les ressources et les ressources téléchargées et partagées.
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’[!DNL Assets] au sein de votre entreprise et par les clients.
 
 Le framework de création de rapports [!DNL Assets] exploite des tâches [!DNL Sling] de façon à traiter de manière asynchrone les demandes de rapports en respectant l’ordre. Il est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports augmente l’efficacité et la vitesse de génération des rapports.
 
-L’interface de gestion des rapports est intuitive et contient des options et des contrôles précis pour accéder aux rapports archivés et afficher les états d’exécution des rapports (succès, échec et mise en file d’attente).
+L’interface de gestion des rapports est intuitive et contient des options et des contrôles précis pour accéder aux rapports archivés et afficher les statuts d’exécution des rapports (succès, échec et mise en file d’attente).
 
-Lorsqu’un rapport est généré, vous êtes averti par un email (facultatif) et une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
+Lorsqu’un rapport est généré, vous en êtes informé par un e-mail (facultatif) et une notification dans votre boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
 ## Prérequis {#prerequisite-for-reporting}
 
@@ -121,7 +121,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 ## Ajout de colonnes personnalisées  {#add-custom-columns}
 
-Vous pouvez ajouter des colonnes personnalisées aux rapports suivants afin d’afficher plus de données selon vos besoins :
+Vous pouvez également ajouter des colonnes personnalisées à ces rapports pour adapter l’affichage des données à vos besoins :
 
 * Chargement
 * Téléchargement
