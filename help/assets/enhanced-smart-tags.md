@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1567'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 85%
 | AEM as a Cloud Service | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=fr) |
 | AEM 6.5 | Cet article |
 
-Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il s’agit essentiellement d’une liste de mots-clés que les employés, les partenaires et les clients utilisent couramment pour faire référence aux ressources numériques d’une classe particulière et les rechercher. Le balisage des ressources avec un vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources sont facilement identifiées et récupérées.
+Les entreprises qui traitent des ressources numériques utilisent de plus en plus le vocabulaire contrôlé par taxonomie dans les métadonnées des ressources. Il s’agit essentiellement d’une liste des mots-clés que les employés, les partenaires et les clients et clientes utilisent fréquemment pour mentionner et rechercher des ressources numériques d’une classe particulière. Le balisage des ressources avec un vocabulaire contrôlé par taxonomie permet de s’assurer que les ressources sont facilement identifiées et récupérées.
 
 Comparé aux vocabulaires des langages naturels, le balisage des ressources numériques basé sur la taxonomie métier aide à les aligner avec les activités d’une entreprise et à assurer que les ressources les mieux adaptées apparaissent dans les recherches.
 
@@ -34,11 +34,11 @@ En arrière-plan, le service de contenu dynamique utilise le framework d’intel
 
 Le service de contenu dynamique est un service cloud hébergé sur [!DNL Adobe Developer Console]. Pour l’utiliser dans [!DNL Adobe Experience Manager], l’administrateur système doit intégrer votre déploiement [!DNL Experience Manager] avec [!DNL Adobe Developer Console].
 
-En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
+En résumé, voici les principales étapes pour utiliser le service de contenu dynamique :
 
 * Intégration
-* Vérification de ressources et de balises (définition de taxonomie)
-* Entraînement du service de contenu dynamique
+* Vérification des ressources et des balises (définition de taxonomie)
+* Formation au service de contenu dynamique
 * Balisage automatique
 
 ![Organigramme](assets/flowchart.gif)
@@ -92,14 +92,13 @@ Après l’intégration, commencez par identifier un ensemble de balises qui dé
 
 Ensuite, passez en revue les images de façon à identifier une série d’images qui représentent le mieux votre produit pour un besoin particulier de votre entreprise. Vérifiez que les ressources figurant dans la série sélectionnée sont conformes aux [instructions d’entraînement du service de contenu dynamique](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 
-Ajoutez les ressources à un dossier et appliquez les balises à chaque ressource à partir de la page des propriétés. Exécutez ensuite le workflow d’entraînement sur ce dossier. L’ensemble de ressources traité permet au service de contenu dynamique d’entraîner efficacement plus de ressources à l’aide de vos définitions de taxonomie.
+Ajoutez les ressources à un dossier et appliquez les balises à chaque ressource à partir de la page des propriétés. Exécutez ensuite le workflow de formation sur ce dossier. L’ensemble des ressources traitées permet au service de contenu dynamique de former efficacement plus de ressources à l’aide de vos définitions de taxonomie.
 
 >[!NOTE]
 >
->1. La formation est un processus irrévocable. Adobe vous recommande de passer en revue les balises de l’ensemble de ressources traité bien avant d’entraîner le service de contenu dynamique sur les balises.
+>1. La formation est un processus irrévocable. Adobe vous recommande de passer en revue les balises de l’ensemble des ressources traitées bien avant de former le service de contenu dynamique sur les balises.
 >1. Avant de vous entraîner pour une balise, reportez-vous à [Instructions de formation pour le service de contenu dynamique](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Lorsque vous entraînez le service de contenu dynamique pour la première fois, Adobe recommande de réaliser l’entraînement sur au moins deux balises distinctes.
-
 
 ## Comprendre les résultats de recherche [!DNL Experience Manager] avec les balises intelligentes {#understandsearch}
 
@@ -109,7 +108,7 @@ Par défaut, la recherche [!DNL Experience Manager] associe les termes de recher
 
 * ressources dotées de balises dynamiques avec l’un des mots-clés.
 
-Les résultats de recherche qui correspondent à tous les termes de recherche des champs de métadonnées sont affichés en premier, suivis des résultats de recherche qui correspondent à l’un des termes de recherche des balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
+Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche dans les balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
 
 1. Correspondances de `woman running` dans les différents champs de métadonnées.
 1. Correspondances de `woman running` dans les balises intelligentes.
@@ -121,13 +120,13 @@ Les résultats de recherche qui correspondent à tous les termes de recherche de
 
 ## Balisage automatique de ressources {#tagging-assets-automatically}
 
-Après avoir entraîné le service de contenu dynamique, vous pouvez déclencher le workflow de balisage pour appliquer automatiquement les balises appropriées à un autre ensemble de ressources similaires.
+Après avoir entraîné le service de contenu dynamique, vous pouvez déclencher le workflow de balisage pour appliquer automatiquement les balises appropriées sur un autre ensemble de ressources similaires.
 
-Vous pouvez exécuter le workflow de balisage périodiquement ou si nécessaire.
+Vous pouvez exécuter le workflow de balisage périodiquement ou en fonction des besoins.
 
 >[!NOTE]
 >
->Le workflow de balisage s’exécute sur les ressources et les dossiers.
+>Le workflow de balisage s’exécute aussi bien sur les ressources que sur les dossiers.
 
 ### Balisage périodique {#periodic-tagging}
 
@@ -176,7 +175,7 @@ Vous pouvez déclencher le workflow de balisage à partir de la console de workf
 
 Vous pouvez organiser les balises intelligentes pour supprimer toute balise non pertinente qui pourrait avoir été attribuée à vos ressources de marque, afin que seules les balises les plus pertinentes s’affichent.
 
-La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela permet d’éliminer les risques d’affichage d’images sans rapport dans les résultats de recherche.
+La modération de balises intelligentes contribue également à affiner les résultats des recherches d’images basées sur des balises, en garantissant que votre image apparaisse dans les résultats de la recherche pour les balises les plus pertinentes. Essentiellement, cela réduit les risques que des images sans lien apparaissent dans les résultats de la recherche.
 
 Vous pouvez également attribuer un rang supérieur à une balise afin d’accroître son degré de pertinence par rapport à une image. La promotion d’une balise pour une image augmente la probabilité que cette image apparaisse dans les résultats de recherche lorsque cette balise spécifique est recherchée.
 
