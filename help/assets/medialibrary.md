@@ -7,7 +7,7 @@ feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '574'
 ht-degree: 100%
 
@@ -96,4 +96,3 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 >* [Fonctionnalités de gestion des ressources numériques dans  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=fr)
 >* Description du produit [[!DNL Experience Manager]  6.5 Managed Services](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-managed-services.html)
 >* Description du produit [[!DNL Experience Manager]  6.5 on-premise](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-on-premise.html)
-
