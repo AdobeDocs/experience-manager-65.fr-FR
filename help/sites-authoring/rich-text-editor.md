@@ -10,9 +10,9 @@ discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Si vous sélectionnez un composant textuel en cliquant ou appuyant une seule foi
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double appui/clic lent pour ouvrir la modification statique, qui possède sa propre barre d’outils. Vous pouvez y modifier le contenu et apporter des modifications de base à la mise en forme.
+Appuyez/cliquez de nouveau ou sélectionnez initialement le composant avec un double appui/clic lent pour ouvrir la modification sur place, qui possède sa propre barre d’outils. De là, vous pouvez modifier le contenu et apporter des modifications de base à la mise en forme.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -46,7 +46,7 @@ Cette barre d’outils propose les options suivantes :
 
 ## Modification en plein écran {#full-screen-editing}
 
-Pour les composants basés sur du texte, appuyez sur le mode Plein écran dans la barre d’outils. ![Mode de modification plein écran](do-not-localize/screen_shot_2018-03-21at163236.png) ouvre l’éditeur de texte enrichi et masque le reste du contenu de la page.
+Dans le cas des composants texte, si vous sélectionnez le mode Plein écran dans la barre d’outils, ![Mode de modification en plein écran](do-not-localize/screen_shot_2018-03-21at163236.png), l’éditeur de texte enrichi s’ouvre et le reste du contenu de la page est masqué.
 
 Le mode Plein écran affiche toutes les options configurées que vous pouvez utiliser pour la création. La disponibilité des options [dépend de la configuration](/help/sites-administering/rich-text-editor.md).
 
