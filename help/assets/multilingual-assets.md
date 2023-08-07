@@ -7,9 +7,9 @@ role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Traduction humaine : les ressources traduites sont renvoyées et importées dan
 
 Traduction automatique : le service de traduction automatique traduit instantanément les métadonnées et les balises des ressources.
 
-La traduction des ressources comprend les éléments suivants :
+La traduction des ressources comprend les éléments suivants :
 
 1. [Connexion d’Experience Manager au fournisseur de services de traduction](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Création de configurations de frameworks d’intégration de traduction](/help/sites-administering/tc-tic.md)
