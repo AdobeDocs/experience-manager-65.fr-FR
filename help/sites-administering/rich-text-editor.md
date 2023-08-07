@@ -4,9 +4,9 @@ description: Découvrez comment configurer l’éditeur de texte enrichi Adobe 
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 source-git-commit: 53a18ec48331f1c25c15e8f7a59bd57e95639895
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2924'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
