@@ -10,9 +10,9 @@ discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3532'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Pour plus d’informations sur l’utilisation des composants vidéo avec Experi
 
 >[!NOTE]
 >
->Si les ressources Dynamic Media Classic (Scene7) ne s’affichent pas correctement, assurez-vous que la variable [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) puis actualisez la page.
+>Si les ressources de Dynamic Media Classic (Scene7) ne s’affichent pas correctement, assurez-vous que Dynamic Media est [désactivé](/help/assets/config-dynamic.md#disabling-dynamic-media), puis actualisez la page.
 
 ## Publication manuelle dans Dynamic Media Classic (Scene7) à partir d’Assets {#manually-publishing-to-scene-from-assets}
 
@@ -57,7 +57,7 @@ Vous pouvez effectuer une publication sur Dynamic Media Classic (Scene7) à pa
 
 1. Dans l’interface utilisateur classique d’Experience Manager, sélectionnez **[!UICONTROL Ressources numériques]** pour accéder au gestionnaire de ressources numériques.
 
-1. Sélectionnez la ou les ressources ou le dossier dans le dossier cible que vous souhaitez publier dans Dynamic Media Classic (Scene7), cliquez avec le bouton droit de la souris et sélectionnez **[!UICONTROL Publication sur Dynamic Media Classic (Scene7)]**. Vous pouvez également sélectionner **[!UICONTROL Publier vers Dynamic Media Classic (Scene7)]** à partir du menu **[!UICONTROL Tools]**.
+1. Sélectionnez, depuis le dossier cible, la ressource (ou les ressources) ou le dossier que vous souhaitez publier sur Dynamic Media Classic (Scene7), puis cliquez avec le bouton droit et sélectionnez **[!UICONTROL Publier sur Dynamic Media Classic (Scene7)]**. Vous pouvez également sélectionner **[!UICONTROL Publier vers Dynamic Media Classic (Scene7)]** à partir du menu **[!UICONTROL Tools]**.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -204,7 +204,7 @@ Vous définissez ces options de configuration en ouvrant (double-cliquant) un co
 
 Le composant Zoom HTML5 affiche une image plus grande lorsque vous appuyez sur le bouton +.
 
-L’élément comporte des outils de zoom dans sa partie inférieure. Sélectionnez **[!UICONTROL +]** pour agrandir l’image. Sélectionnez **[!UICONTROL -]** pour réduire l’image. En sélectionnant le **[!UICONTROL x]** ou la flèche de réinitialisation du zoom rétablit la taille d’origine de l’image importée. Sélectionnez les flèches diagonales pour l’afficher en plein écran. Sélectionnez **[!UICONTROL Modifier]** pour pouvoir configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
+L’élément comporte des outils de zoom dans sa partie inférieure. Sélectionnez **[!UICONTROL +]** pour agrandir l’image. Sélectionnez **[!UICONTROL -]** pour réduire l’image. Pour rétablir l’image à sa taille d’origine au moment de son importation, sélectionnez **[!UICONTROL x]** ou cliquez sur la flèche de réinitialisation du zoom. Sélectionnez les flèches diagonales pour l’afficher en plein écran. Sélectionnez **[!UICONTROL Modifier]** pour pouvoir configurer le composant. Avec ce composant, vous pouvez configurer les [paramètres communs à tous les composants Dynamic Media Classic (Scene7)](#settings-common-to-all-scene-components).
 
 ![Image de fleurs de tulipes dans le composant Zoom HTML5.](do-not-localize/chlimage_1-3.png)
 
@@ -224,7 +224,7 @@ Dans le composant Fenêtre déroulante HTML5, l’élément s’affiche sous la 
 
 Le composant d’image Dynamic Media Classic (Scene7) vous permet d’ajouter une fonctionnalité Dynamic Media Classic (Scene7) à vos images, comme les modificateurs Dynamic Media Classic (Scene7), les paramètres d’image ou de visionneuse prédéfinis et l’accentuation. Le composant d’image Dynamic Media Classic (Scene7) est similaire aux autres composants d’image dans Experience Manager avec des fonctionnalités spécifiques à Dynamic Media Classic (Scene7). Dans cet exemple, l’image dispose du modificateur d’URL Dynamic Media Classic (Scene7) `&op_invert=1` appliqué.
 
-![Image d’une sphère dans le composant d’image Dynamic Media Classic (Scene 7)](do-not-localize/chlimage_1-4.png)
+![Image d’une sphère dans le composant d’image Dynamic Media Classic (Scene7)](do-not-localize/chlimage_1-4.png)
 
 **Titre, Text secondaire** - Dans l’onglet Avancé, ajoutez un titre à l’image et au texte de remplacement destinés aux utilisateurs pour lesquels les graphiques sont désactivés.
 
@@ -234,7 +234,7 @@ Le composant d’image Dynamic Media Classic (Scene7) vous permet d’ajouter 
 
 **Paramètre prédéfini de la visionneuse** : sélectionnez un paramètre prédéfini de visionneuse existant. Si le paramètre prédéfini de visionneuse que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres prédéfinis de visionneuse. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
-**Configuration de Dynamic Media Classic (Scene7)** - Sélectionnez la configuration Dynamic Media Classic (Scene7) que vous souhaitez utiliser pour récupérer les paramètres d’image prédéfinis principaux à partir de SPS.
+**Configuration de Dynamic Media Classic (Scene7)** - Sélectionnez la configuration Dynamic Media Classic (Scene7) que vous souhaitez utiliser pour récupérer les paramètres prédéfinis d’image principaux à partir de SPS.
 
 **Paramètre prédéfini d’image** : sélectionnez un paramètre prédéfini d’image existant. Si le paramètre prédéfini d’image que vous recherchez n’est pas visible, vous devez le rendre visible. Voir Gestion des paramètres d’image prédéfinis. Si vous utilisez un paramètre prédéfini d’image, vous ne pouvez pas sélectionner de paramètre prédéfini de visionneuse, et inversement.
 
@@ -313,7 +313,7 @@ Pour plus d’informations sur le fonctionnement des vidéos avec l’intégrati
 
 ### Limitations connues du composant vidéo {#known-limitations-for-the-video-component}
 
-Adobe DAM et WCM indiquent si une vidéo source Principale est téléchargée. Elles n’affichent pas les éléments proxy suivants :
+La gestion des ressources numériques et la gestion de contenu web d’Adobe indiquent si une vidéo source principale est chargée. Elles n’affichent pas les éléments proxy suivants :
 
 * Rendus codés Dynamic Media Classic (Scene7)
 * Visionneuses de vidéos adaptatives Dynamic Media Classic (Scene7)
@@ -344,7 +344,7 @@ Vous pouvez modifier la configuration à laquelle vous accédez en la sélection
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Comme avec l’outil de recherche de contenu pour les ressources, vous pouvez rechercher des ressources et filtrer les résultats. Toutefois, contrairement à l’outil de recherche de ressources, lorsque vous saisissez un mot-clé dans la variable **S7** onglet, nom du fichier **commence par** la chaîne que vous avez saisie, plutôt que **contain** le mot-clé dans le nom du fichier.
+Comme avec l’outil de recherche de contenu pour les ressources, vous pouvez rechercher des ressources et filtrer les résultats. Toutefois, contrairement à l’outil de recherche de ressources, lorsque vous saisissez un mot-clé dans l’onglet **S7**, le nom du fichier **commence par** la chaîne que vous avez saisie, au lieu de **contenir** le mot-clé.
 
 Par défaut, les ressources sont affichées par nom de fichier. Cependant, vous pouvez également filtrer les résultats par type de ressource.
 
@@ -361,15 +361,15 @@ Par défaut, les ressources sont affichées par nom de fichier. Cependant, vous 
 
 La recherche de ressources Dynamic Media Classic (Scene7) est similaire à la recherche de ressources Experience Manager. La seule chose qui change est que lorsque vous effectuez une recherche, une vue distante des ressources s’affiche dans le système Dynamic Media Classic (Scene7), plutôt que d’avoir besoin de les importer directement dans Experience Manager.
 
-Vous pouvez utiliser l’IU classique ou l’IU optimisée pour les écrans tactiles pour afficher et rechercher des ressources. Selon l’interface, la manière dont vous effectuez des recherches diffère légèrement.
+Vous pouvez utiliser l’interface utilisateur classique ou l’interface utilisateur optimisée pour les écrans tactiles pour afficher et rechercher des ressources. Selon l’interface, la manière dont vous effectuez des recherches diffère légèrement.
 
 Lors d’une recherche dans l’une ou l’autre des interfaces, vous pouvez filtrer selon les critères suivants (présentés ici dans l’interface utilisateur optimisée pour les écrans tactiles) :
 
-**Entrez des mots-clés** - Vous pouvez rechercher des ressources par nom. Lors de la recherche par mots-clés, vous saisissez le début du nom du fichier. Par exemple, la saisie du mot « swimming » recherche tous les noms de fichier qui commencent par ces lettres, dans cet ordre. Veillez à sélectionner `Enter` après avoir tapé le terme pour rechercher la ressource.
+**Entrez des mots-clés** - Vous pouvez rechercher des ressources par nom. Lors de la recherche par mots-clés, vous saisissez le début du nom du fichier. Par exemple, la saisie du mot « swimming » recherche tous les noms de fichier qui commencent par ces lettres, dans cet ordre. Veillez à sélectionner `Enter` après avoir tapé le terme de recherche de la ressource.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-**Dossier/chemin** - Le nom du dossier est basé sur la configuration que vous avez sélectionnée. Vous pouvez descendre vers des niveaux inférieurs en sélectionnant l’icône du dossier et en sélectionnant un sous-dossier, puis en sélectionnant la coche pour le sélectionner.
+**Dossier/chemin d’accès** - Le nom du dossier qui apparaît est basé sur la configuration que vous avez sélectionnée. Vous pouvez descendre vers des niveaux inférieurs en sélectionnant l’icône du dossier et en sélectionnant un sous-dossier, puis en sélectionnant la coche pour le sélectionner.
 
 Si vous saisissez un mot-clé et sélectionnez un dossier, Experience Manager recherche dans ce dossier et tous les sous-dossiers. Néanmoins, si vous ne saisissez pas de mots-clés lors de la recherche, la sélection du dossier n’affiche que les éléments de ce dossier et n’inclut pas les sous-dossiers.
 
