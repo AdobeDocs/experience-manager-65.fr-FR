@@ -7,9 +7,9 @@ feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Pour créer et partager un dossier privé, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**. En fonction du rôle attribué, l’utilisateur se voit attribuer un ensemble de privilèges sur votre dossier privé lorsqu’il se connecte à [!DNL Assets].
 1. Cliquez sur **[!UICONTROL OK]** pour fermer le message de confirmation.
-1. L’utilisateur avec lequel vous partagez le dossier reçoit une notification de partage. Connectez-vous à [!DNL Assets] à l’aide des informations d’identification de l’utilisateur pour afficher la notification.
+1. L’utilisateur ou l’utilisatrice avec lequel ou laquelle vous partagez le dossier reçoit une notification de partage. Connectez-vous à [!DNL Assets] à l’aide des informations d’identification de l’utilisateur pour afficher la notification.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
