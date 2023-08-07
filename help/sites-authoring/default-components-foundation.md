@@ -14,9 +14,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7210'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -199,7 +199,7 @@ Spécifiez un chemin d’accès manuellement ou à l’aide du sélecteur. Laiss
       * **Options de la liste fixe**
 
          * **Pages**
-Sélectionnez une liste de pages. Utilisation `+` pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
+Sélectionnez une liste de pages. Utilisez `+` pour ajouter d’autres entrées et les boutons haut/bas pour ajuster l’ordre.
 
       * **Options de recherche**
 
@@ -391,7 +391,7 @@ Vous pouvez faire glisser et déposer une image à partir de l’[Explorateur de
 
 Une fois l’image chargée (et pas avant), utilisez la [modification sur place](/help/sites-authoring/editing-content.md#edit-content) pour recadrer/faire pivoter l’image si nécessaire :
 
-![Barre d’outils d’édition statique](do-not-localize/chlimage_1-15.png)
+![Barre d’outils de modification sur place](do-not-localize/chlimage_1-15.png)
 
 >[!NOTE]
 >
@@ -399,9 +399,9 @@ Une fois l’image chargée (et pas avant), utilisez la [modification sur place]
 >
 >Selon votre instance, des restrictions minimales et maximales peuvent aussi être imposées par la [conception de la page](/help/sites-developing/designer.md). Ces restrictions sont développées lors de la mise en œuvre du projet.
 
-Différentes autres options sont disponibles en mode Plein écran. Par exemple, Carte et Zoom :
+Plusieurs autres options sont disponibles en mode Plein écran. Par exemple, Carte et Zoom :
 
-![Mode de modification plein écran - carte et zoom](do-not-localize/chlimage_1-16.png)
+![Mode d’édition Plein écran : Carte et Zoom](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
 >
